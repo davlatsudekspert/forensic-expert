@@ -211,36 +211,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "To‘rt tur solishtirmasi",
-        "nodes": [],
-        "header": [
-          "Tur",
-          "Donor kim",
-          "Misol"
+        "kind": "tree",
+        "root": "Transplantatsiya turlari",
+        "children": [
+          {
+            "label": "Autotransplantatsiya",
+            "items": [
+              "Donor — retsipientning o‘zi",
+              "Kuygan joyga sog‘ teri"
+            ]
+          },
+          {
+            "label": "Izotransplantatsiya",
+            "items": [
+              "Tuxumdosh egizak (genetik bir xil)",
+              "Egizakdan a‘zo yoki to‘qima"
+            ]
+          },
+          {
+            "label": "Allotransplantatsiya",
+            "items": [
+              "Genetik jihatdan boshqa odam",
+              "Boshqa odamdan a‘zo"
+            ]
+          },
+          {
+            "label": "Ksenotransplantatsiya",
+            "items": [
+              "Boshqa biologik tur hayvoni",
+              "Hayvondan olingan a‘zo"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Autotransplantatsiya",
-            "Retsipientning o‘zi",
-            "Kuygan joyga sog‘ qismdan teri"
-          ],
-          [
-            "Izotransplantatsiya",
-            "Tuxumdosh egizak (genetik bir xil)",
-            "Egizakdan a‘zo yoki to‘qima"
-          ],
-          [
-            "Allotransplantatsiya",
-            "Genetik jihatdan boshqa odam",
-            "Boshqa inson organizmidan a‘zo"
-          ],
-          [
-            "Ksenotransplantatsiya",
-            "Boshqa biologik tur hayvoni",
-            "Hayvondan olingan a‘zo"
-          ]
-        ]
+        "caption": "Donor kimligi bo‘yicha"
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Qaysi turda donor va retsipient bir shaxs? 2) Hayvondan a‘zo olish qaysi turga kiradi? Doskada: jadvalni talabalar bilan birga to‘ldiring. Tipik xato: izotransplantatsiyani allotransplantatsiya bilan aralashtirish. Egizak donor genetik jihatdan aynan o‘xshash. Manbada izotransplantatsiya uchun aniq klinik misol berilmagan."
     },
@@ -405,31 +408,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Cheklovlar guruhlari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Misol"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Tibbiy cheklovlar",
+            "items": [
+              "Donorni immunologik saralash",
+              "Retsipientning salomatlik ko‘rsatkichlari",
+              "Immunosupressiv terapiya"
+            ]
+          },
+          {
+            "title": "Etik-huquqiy cheklovlar",
+            "items": [
+              "O‘limni tasdiqlash",
+              "A‘zoni olish va taqsimlash",
+              "Tijoratlashtirish"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Tibbiy",
-            "Donorni immunologik saralash"
-          ],
-          [
-            "Tibbiy",
-            "Retsipientning salomatlik ko‘rsatkichlari"
-          ],
-          [
-            "Tibbiy",
-            "Keyingi immunosupressiv terapiya"
-          ],
-          [
-            "Etik-huquqiy",
-            "O‘lim tasdig‘i, olish, taqsimlash, tijorat"
-          ]
-        ]
+        "caption": "Cheklovlar guruhlari"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama savollari: nima uchun tibbiy omillar bor, lekin eng katta qiyinchilik etik-huquqiy deyilgan? Immunosupressiv terapiya nima uchun kerak (immunitetni susaytirish, rad etishning oldini olish)? Doskada ikki ustunli jadval chizdiring: tibbiy va etik-huquqiy cheklovlar. Tipik xato: tijoratlashtirishni faqat a’zo sotish deb tushunish; manbada bu faoliyatni foydaga bo‘ysundirish sifatida ta’riflangan."
     },
@@ -511,29 +509,97 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Uch asosiy muammo",
-        "nodes": [],
-        "header": [
-          "Muammo",
-          "Mazmuni"
+        "kind": "tree",
+        "root": "Murda donorlik muammolari",
+        "children": [
+          {
+            "label": "O‘limni tasdiqlash",
+            "items": [
+              "Inson o‘lgani qachon qayd etiladi"
+            ]
+          },
+          {
+            "label": "Ixtiyoriy voz kechish",
+            "items": [
+              "O‘limdan keyin a‘zodan voz kechish"
+            ]
+          },
+          {
+            "label": "Diniy yo‘l qo‘yilish",
+            "items": [
+              "Dinga ko‘ra tanadan foydalanish"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "O‘limni tasdiqlash",
-            "Inson o‘lgani qachon qayd etiladi"
-          ],
-          [
-            "Ixtiyoriy voz kechish",
-            "O‘limdan keyin a‘zodan voz kechish istagi"
-          ],
-          [
-            "Diniy yo‘l qo‘yilish",
-            "Dinga ko‘ra tanadan foydalanish mumkinmi"
-          ]
-        ]
+        "caption": "Uch asosiy muammo"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun murdadan olish eng keng tarqalgan tur? 2) Uch muammodan qaysi biri eng murakkab va nega? Doskada: jadvalni chizib, har qatorga o‘zingiz bir misol yozing. Tipik xato: tirik donor va murda donorni aralashtirish. Tirik donorda asosiy muammo donorga yetadigan zarar, murda donorda esa o‘limni tasdiqlash, rozilik va din masalalari."
+    },
+    {
+      "title": "Tirik va o‘lik donorlik: asosiy farqlar",
+      "bullets": [
+        {
+          "text": "Tirik donordan a’zo olish uning sog‘lig‘iga zarar bilan bog‘liq; shifokor «zarar yetkazma» qoidasiga to‘la rioya qila olmaydi.",
+          "source": {
+            "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+            "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+            "page": "33-43"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dilemma foyda va zararni solishtirib hal etiladi: olinadigan foyda yetkaziladigan zarardan yuqori bo‘lishi kerak.",
+          "source": {
+            "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+            "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+            "page": "33-43"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Murdadan a’zo olish donorlikning eng keng tarqalgan turi; u etik, huquqiy va diniy muammolar bilan bog‘liq.",
+          "source": {
+            "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+            "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+            "page": "33-43"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tirik donorlar doirasini har davlat qonun bilan belgilaydi: yaqin qarindoshlar ham, qarindosh bo‘lmaganlar ham bo‘lishi mumkin.",
+          "source": {
+            "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+            "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+            "page": "33-43"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Tirik donor",
+            "items": [
+              "Donor sog‘lig‘iga zarar yetadi",
+              "«Zarar yetkazma» qoidasi buziladi",
+              "Foyda zarardan yuqori bo‘lsin",
+              "Doirani qonun belgilaydi"
+            ]
+          },
+          {
+            "title": "O‘lik donor",
+            "items": [
+              "Eng keng tarqalgan donorlik",
+              "O‘limni tasdiqlash muammosi",
+              "Ixtiyoriy voz kechish masalasi",
+              "Diniy yo‘l qo‘yilish masalasi"
+            ]
+          }
+        ],
+        "caption": "Tirik va o‘lik donor"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nima uchun tirik donorda asosiy dilemma zarar, o‘lik donorda esa o‘limni tasdiqlash? Doskada: ikki ustun. Tipik xato: ikki holat muammolarini aralashtirish."
     },
     {
       "title": "Voqea tahlili: tirik donor tanlovi",
@@ -548,7 +614,7 @@
           "uncertain": false
         },
         {
-          "text": "Tirik donor yaqin qarindosh (aka-uka, ota-ona va b.) ham, qarindosh bo‘lmagan shaxs (do‘st, yaqin tanish) ham bo‘lishi mumkin; doirani har davlat qonun bilan belgilaydi.",
+          "text": "Tirik donor yaqin qarindosh (aka-uka, ota-ona) ham, qarindosh bo‘lmagan shaxs (do‘st, tanish) ham bo‘lishi mumkin; doirani qonun belgilaydi.",
           "source": {
             "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
             "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
@@ -620,6 +686,78 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega o‘lim vaqti masalasi aynan reanimatsiya va transplantatsiya rivojlangach keskinlashdi? 2) Tirik va o‘lik donorda asosiy muammolar qanday farqlanadi? Doskada: ikki ustunli sxema chizing — «tirik donor» va «o‘lik donor», har biriga asosiy muammoni yozing. Tipik xato: talabalar o‘limni aniqlashni faqat tibbiy masala deb o‘ylashadi."
+    },
+    {
+      "title": "Reanimatsiya: terminal holatlar va klinik o‘lim",
+      "bullets": [
+        {
+          "text": "Preagoniya bir necha daqiqadan bir necha kungacha davom etadi: hush xiralashadi, arterial bosim tushadi, nafas va qon aylanishi buziladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "217"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Terminal pauzada nafas to‘satdan to‘xtaydi, qorachiq kengayadi; u bir necha soniyadan 3-4 daqiqagacha davom etadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "217"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Klinik o‘lim yurak to‘xtagach boshlanadi, odatda 5-6 daqiqagacha; past haroratda 30 daqiqagacha cho‘zilishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "218"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Klinik o‘limda faoliyatni tiklash mumkinligi reanimatologiya fani paydo bo‘lishiga asos bo‘ldi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "218"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Terminal pauza",
+            "value": "3-4 gacha",
+            "unit": "daqiqa"
+          },
+          {
+            "label": "Klinik o‘lim",
+            "value": "5–6 gacha",
+            "unit": "daqiqa"
+          },
+          {
+            "label": "Klinik o‘lim (sovuqda)",
+            "value": "30 gacha",
+            "unit": "daqiqa"
+          },
+          {
+            "label": "Qisqa agoniya",
+            "value": "4–5",
+            "unit": "daqiqa"
+          },
+          {
+            "label": "Agoniyasiz o‘lim",
+            "value": "bir zumda"
+          }
+        ],
+        "caption": "Reanimatsiya imkoniyati oynasi"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega 5-6 daqiqadan keyin reanimatsiya imkoniyati keskin kamayadi? Doskada: terminal holatlar zanjiri. Tipik xato: klinik o‘limni biologik o‘lim bilan aralashtirish."
     },
     {
       "title": "Miya o‘limi tushunchasi",
@@ -800,6 +938,153 @@
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Apparat nafasi bemorning tirik ekanini bildiradimi, yoki miya o‘limi mezoni hal qiladimi? 2) Bu vaziyatda yana qaysi shartlar kerak (rozilik masalasi keyingi slaydda)? Doskada: bemor holati belgilarini ustunga yozib, «miya o‘limi» mezonlari bilan solishtiring. Tipik xato: koma va miya o‘limini bir xil deb hisoblash. Koma qaytishi mumkin, miya o‘limi esa qaytmasdir."
     },
     {
+      "title": "Miya o‘limi: ikki darslik ta’rifi",
+      "bullets": [
+        {
+          "text": "Bioetika darsligida miya o‘limi — qaytmas behushlik, mustaqil nafas to‘xtashi va ustun reflekslari yo‘qolishi bilan butun miyaning nobud bo‘lishi.",
+          "source": {
+            "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+            "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+            "page": "33-43"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sud tibbiyoti darsligida bosh miya po‘stlog‘ining o‘limi biologik o‘limning boshlanishi, «miya o‘limi» sifatida qabul qilinadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Po‘stloq o‘limi bilan boshqa a’zolar o‘limi orasidagi oraliq 20 soatga yaqin; a’zo olish shunga asoslangan.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Miya o‘limini Sog‘liqni saqlash vazirligi belgilagan tartibda, odatda reanimatolog va nevrologlar aniqlaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "220"
+          },
+          "uncertain": true
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Bioetika (Yuldashev)",
+            "items": [
+              "Qaytmas behushlik",
+              "Mustaqil nafas to‘xtaydi",
+              "Miya ustuni reflekslari yo‘q",
+              "Butun miya nobud bo‘ladi"
+            ]
+          },
+          {
+            "title": "Sud tibbiyoti (G‘iyosov)",
+            "items": [
+              "Po‘stloq o‘limi = miya o‘limi",
+              "«Individual o‘lim» (Durwald, 1981)",
+              "Boshqa a’zolargacha ≈ 20 soat",
+              "Aniqlaydi: reanimatolog, nevrolog"
+            ]
+          }
+        ],
+        "caption": "Ikki manba, ikki urg‘u"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: butun miya va po‘stloq o‘limi ta’riflari nima bilan farq qiladi? Doskada: ikki ustun. Tipik xato: bitta ta’rifni ikkinchisining o‘rniga qo‘yish. Ikki darslik turli urg‘u beradi; amaldagi mezonlar Sog‘liqni saqlash vazirligi tartibida belgilanadi.",
+      "diagram_note": "Ikki manba ta’rifi turlicha urg‘u beradi (butun miya va po‘stloq); amaldagi tartib vazirlik hujjatida, darslikda mezonlar sanalmagan."
+    },
+    {
+      "title": "Evtanaziya va reanimatsiyani to‘xtatish",
+      "bullets": [
+        {
+          "text": "Evtanaziya atamasini XVI asrda F.Bekon kiritgan; tub ma’nosi o‘limga mahkum bemorning azobini yengillashtirish.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "218"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bevosita aktiv evtanaziya qotillik yoki o‘z-o‘zini o‘ldirish; bilvosita turda o‘limni tezlashtirish maqsadi yo‘q.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "218-219"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Passiv evtanaziya (ortotanaziya) — yordamni cheklash yoki to‘xtatish; jinoyat qonunchiligida xizmat vazifasini bajarmaslik sanaladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "219"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Medikotanaziya azobni dori bilan yengillashtiradi; distanaziya hayotni palliativ va radikal muolajalar bilan maksimal uzaytiradi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "219"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Evtanaziya",
+        "children": [
+          {
+            "label": "Bevosita aktiv",
+            "items": [
+              "Qotillik yoki o‘z-o‘zini o‘ldirish"
+            ]
+          },
+          {
+            "label": "Bilvosita aktiv",
+            "items": [
+              "Maqsad yo‘q",
+              "Ehtiyotsizlik yoki baxtsiz hodisa"
+            ]
+          },
+          {
+            "label": "Passiv (ortotanaziya)",
+            "items": [
+              "Yordamni cheklash yoki to‘xtatish"
+            ]
+          },
+          {
+            "label": "Medikotanaziya",
+            "items": [
+              "Azobni dori bilan yengillashtirish"
+            ]
+          },
+          {
+            "label": "Distanaziya",
+            "items": [
+              "Hayotni maksimal uzaytirish"
+            ]
+          }
+        ],
+        "caption": "Turlari va huquqiy baho"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: reanimatsiyani to‘xtatish qaysi tur evtanaziyaga kiradi va nega huquqiy baho beriladi? Doskada: tur daraxti. Tipik xato: bilvosita aktiv va passiv turni aralashtirish."
+    },
+    {
       "title": "Murdadan a’zo olishning uch usuli",
       "bullets": [
         {
@@ -831,31 +1116,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Uch usul solishtirmasi",
-        "nodes": [],
-        "header": [
-          "Usul",
-          "Asosiy qoida"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Eski usul",
+            "text": "O‘limdan keyin tana davlat mulki"
+          },
+          {
+            "title": "Rozilik prezumptsiyasi",
+            "text": "Norozilik bildirilmasa, a’zo olish mumkin"
+          },
+          {
+            "title": "Norozilik prezumptsiyasi",
+            "text": "Hayotlikda rozilik hujjati kerak"
+          },
+          {
+            "title": "Hozirgi amaliyot",
+            "text": "Rozilik yoki norozilik prezumptsiyasi"
+          }
         ],
-        "rows": [
-          [
-            "Eski usul",
-            "O‘limdan keyin tana davlat mulki"
-          ],
-          [
-            "Rozilik prezumptsiyasi",
-            "Norozilik bildirilmasa, olish mumkin"
-          ],
-          [
-            "Norozilik prezumptsiyasi",
-            "Hayotlikda rozilik hujjati kerak"
-          ],
-          [
-            "Hozirgi amaliyot",
-            "Rozilik yoki norozilik prezumptsiyasi"
-          ]
-        ]
+        "caption": "Murdadan a’zo olishning uch usuli"
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Rozilik va norozilik prezumptsiyasida isbotlash yuki kimda? 2) Qaysi usul donor a’zolar tanqisligini kamaytirishi mumkin va nega? Doskada: ikki ustunli «Rozilik / Norozilik prezumptsiyasi» jadvalini chizdiring. Tipik xato: rozilik prezumptsiyasi va norozilik prezumptsiyasini aralashtirish. Diqqat: rozilik prezumptsiyasi ≠ norozilik prezumptsiyasi."
     },
@@ -891,36 +1171,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "A vs B: prezumptsiyalar",
-        "nodes": [],
-        "header": [
-          "Jihat",
-          "Rozilik",
-          "Norozilik"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Rozilik prezumptsiyasi",
+            "items": [
+              "Rozilik oldindan berilgan deb olinadi",
+              "Rozi bo‘lmagan norozilik bildiradi",
+              "Hujjat yo‘q bo‘lsa, olishga huquq beradi",
+              "Norozilik muassasaga xabar qilinadi"
+            ]
+          },
+          {
+            "title": "Norozilik prezumptsiyasi",
+            "items": [
+              "Norozilik oldindan bor deb olinadi",
+              "Rozi bo‘lgan rozilik rasmiylashtiradi",
+              "Rasmiy rozilik bo‘lmasa, olinmaydi",
+              "Namuna: AQSHda donor-karta"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Asosiy faraz",
-            "Rozilik oldindan berilgan deb olinadi",
-            "Norozilik oldindan bor deb olinadi"
-          ],
-          [
-            "Kim harakat qiladi",
-            "Rozi bo‘lmagan norozilik bildiradi",
-            "Rozi bo‘lgan rozilik rasmiylashtiradi"
-          ],
-          [
-            "Hujjat yo‘q bo‘lsa",
-            "A’zo olishga huquq beradi",
-            "Rasmiy rozilik bo‘lmasa, olinmaydi"
-          ],
-          [
-            "Namuna",
-            "Norozilik muassasaga xabar qilinadi",
-            "AQSHda donor-karta"
-          ]
-        ]
+        "caption": "A vs B: prezumptsiyalar"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Jim qolish nima uchun ikki tizimda turlicha oqibat beradi? 2) Qaysi tizim shaxs erkinligini ko‘proq himoya qiladi? Doskada: ikki ustunli jadval chizdiring (A — rozilik, B — norozilik) va har ustunga ‘kim nima qilishi kerak’ni yozdiring. Tipik xato: talabalar ikki prezumptsiyani aralashtirib, jim turishni har ikkala tizimda rozilik deb hisoblaydi."
     },
@@ -956,36 +1228,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Davlatlar bo‘yicha taqsimot",
-        "nodes": [],
-        "header": [
-          "Yondashuv",
-          "Davlatlar",
-          "Qoida"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Rozilik prezumptsiyasi",
+            "items": [
+              "Avstriya, Belgiya, Ispaniya",
+              "Vengriya, Chexiya",
+              "Norozilik bildirilmasa — olish mumkin"
+            ]
+          },
+          {
+            "title": "Norozilik prezumptsiyasi",
+            "items": [
+              "AQSH, Germaniya, Kanada",
+              "Fransiya, Italiya",
+              "Yuridik rozilik bo‘lmasa — mumkin emas"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Rozilik",
-            "Avstriya, Belgiya, Ispaniya",
-            "Norozilik bildirilmasa — olish mumkin"
-          ],
-          [
-            "Rozilik",
-            "Vengriya, Chexiya",
-            "Huquqiy normalar shunga moslangan"
-          ],
-          [
-            "Norozilik",
-            "AQSH, Germaniya, Kanada",
-            "Yuridik rozilik bo‘lmasa — mumkin emas"
-          ],
-          [
-            "Norozilik",
-            "Fransiya, Italiya",
-            "“So‘rab olingan rozilik” deyiladi"
-          ]
-        ]
+        "caption": "Davlatlar bo‘yicha taqsimot"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nima uchun G‘arbiy Yevropa davlatlari turli prezumptsiyani tanlagan bo‘lishi mumkin? 2) Qonunchilikdagi farq donorlar soniga qanday ta’sir qilishi mumkin? Doskada: ikki guruhga bo‘lingan davlatlar ro‘yxatini yozdiring. Tipik xato: Fransiya va Germaniyani Avstriya bilan bir guruhga qo‘yish (G‘arbiy Yevropa bir xil emas). Eslatma: o‘zbek qonunchiligi haqida ma’lumot manbada yo‘q."
     },
@@ -1054,7 +1316,7 @@
           "uncertain": false
         },
         {
-          "text": "Norozilik prezumptsiyasi (“so‘rab olingan rozilik”): yuridik rasmiylashtirilgan rozilik bo‘lmasa, a’zodan foydalanib bo‘lmaydi. AQSH, Germaniya, Kanada, Fransiya, Italiyada amal qiladi.",
+          "text": "Norozilik prezumptsiyasi («so‘rab olingan rozilik»): rasmiy rozilik bo‘lmasa, a’zo olinmaydi. AQSH, Germaniya, Kanada, Fransiya, Italiyada amal qiladi.",
           "source": {
             "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
             "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
@@ -1107,31 +1369,35 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Tanqislik yechimlari",
-        "nodes": [],
-        "header": [
-          "Yo‘l",
-          "Mohiyati"
+        "kind": "tree",
+        "root": "Tanqislik yechimlari",
+        "children": [
+          {
+            "label": "Ixtiyoriy berish",
+            "items": [
+              "Rozilik hayotlikda rasmiylashtiriladi"
+            ]
+          },
+          {
+            "label": "Sun’iy a’zo",
+            "items": [
+              "Mexanik; bioelektronika, nanotexnologiya"
+            ]
+          },
+          {
+            "label": "Hujayra kulturasi",
+            "items": [
+              "Somatik o‘zak hujayradan to‘qima"
+            ]
+          },
+          {
+            "label": "Hayvon donorligi",
+            "items": [
+              "Hayvon a’zolarini olish usullari"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Ixtiyoriy berish",
-            "Rozilik hayotlikda rasmiylashtiriladi"
-          ],
-          [
-            "Sun’iy a’zo",
-            "Mexanik; bioelektronika, nanotexnologiya"
-          ],
-          [
-            "Hujayra kulturasi",
-            "Somatik o‘zak hujayradan to‘qima o‘stirish"
-          ],
-          [
-            "Hayvon donorligi",
-            "Hayvon a’zolarini olish usullari ishlanmoqda"
-          ]
-        ]
+        "caption": "Taxminan 35% muhtoj a’zo ololmaydi"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega faqat ixtiyoriy berish tanqislikni yecha olmaydi? 2) Qaysi yo‘l etik jihatdan eng qulay? Doskada: tanqislik markazda, to‘rt yechim yo‘lini strelkalar bilan chizdiring. Tipik xato: talabalar hujayra kulturasi usulini amaliyotga joriy etilgan deb o‘ylaydi, aslida u hali ilmiy tadqiqot bosqichida."
     },
@@ -1477,31 +1743,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Xristian oqimlari qarashi",
-        "nodes": [],
-        "header": [
-          "Cherkov",
-          "Qarash",
-          "Cheklov"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Pravoslav",
+            "items": [
+              "Savdo mumkin emas",
+              "Qurbonlik ixtiyoriy",
+              "Donor hayotiga xavf — nojoiz"
+            ]
+          },
+          {
+            "title": "Katolik",
+            "items": [
+              "Rahmdillik va axloqiy burch",
+              "Muqobil davo yo‘q bo‘lsa mumkin"
+            ]
+          },
+          {
+            "title": "Protestant",
+            "items": [
+              "Olingan a’zoning qonuniyligi tan olinadi",
+              "A’zo sotish — axloqsizlik"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Pravoslav",
-            "Savdo mumkin emas; qurbonlik ixtiyoriy",
-            "Donor hayotiga xavf — nojoiz"
-          ],
-          [
-            "Katolik",
-            "Rahmdillik va axloqiy burch",
-            "Muqobil davo yo‘q bo‘lsa mumkin"
-          ],
-          [
-            "Protestant",
-            "Olingan a’zoning qonuniyligi tan olinadi",
-            "A’zo sotish — axloqsizlik"
-          ]
-        ]
+        "caption": "Xristian oqimlari qarashi"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega pravoslav cherkovi rozilik prezumptsiyasini erkinlik buzilishi deb hisoblaydi? 2) Katolik va protestant qarashlari qayerda farq qiladi? Doskada: uch ustunli jadvalni talabalar bilan birga to‘ldiring. Tipik xato: xristianlikning barcha oqimlari bir xil fikrda deb o‘ylash."
     },
@@ -1695,7 +1962,7 @@
           [
             "Ksenotransplantatsiya",
             "Infeksiya, virus o‘tishi; moslik",
-            "Hayvon huquqi; o‘zini inson deb his etish"
+            "Hayvon huquqi; o‘zini inson his etish"
           ],
           [
             "Transgenez",
@@ -1720,7 +1987,7 @@
       "title": "Xulosa va asosiy tezislar",
       "bullets": [
         {
-          "text": "Transplantatsiya turlari: auto-, izo-, allo- va ksenotransplantatsiya. Murdadan a’zo olish eng keng tarqalgan donorlik bo‘lib, eng ko‘p etik-huquqiy muammo tug‘diradi.",
+          "text": "Turlari: auto-, izo-, allo-, ksenotransplantatsiya. Murdadan a’zo olish eng keng tarqalgan donorlik bo‘lib, eng ko‘p etik-huquqiy muammo tug‘diradi.",
           "source": {
             "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
             "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
@@ -1738,7 +2005,7 @@
           "uncertain": false
         },
         {
-          "text": "Tanqislik: AQSH (Amerika Qo‘shma Shtatlari) va Yevropada muhtojlarning taxminan 35 foizi a’zo ololmaydi. Yechim: sun’iy a’zolar, ksenotransplantatsiya, terapevtik klonlash.",
+          "text": "Tanqislik: AQSH va Yevropada muhtojlarning taxminan 35 foizi a’zo ololmaydi. Yechim: sun’iy a’zolar, ksenotransplantatsiya, terapevtik klonlash.",
           "source": {
             "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
             "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
@@ -1747,7 +2014,7 @@
           "uncertain": false
         },
         {
-          "text": "Tijoratlashtirishga qarshi zarar yetkazmaslik, xabardor ixtiyoriy rozilik va ijtimoiy adolat prinsiplari turadi. Dinlar savdoni qoralaydi, ko‘pi ixtiyoriy donorlikka ruxsat beradi.",
+          "text": "Tijoratlashtirishga qarshi: zarar yetkazmaslik, xabardor ixtiyoriy rozilik, ijtimoiy adolat. Dinlar savdoni qoralaydi, ko‘pi ixtiyoriy donorlikka ruxsat beradi.",
           "source": {
             "author": "Muhamedova Z.M.",
             "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
@@ -1925,11 +2192,11 @@
       "question": "Mamlakatda rozilik prezumptsiyasi amal qiladi. Vafot etgan shaxs ham, uning yaqinlari ham hayotlik chog‘ida norozilik bildirmagan. Bu holatda nima ruxsat etiladi?",
       "options": [
         "A’zolarni olish faqat yaqinlarning yozma roziligi bilan mumkin",
-        "Marhumdan a’zo va to‘qimalarni olishga huquq beriladi",
+        "A’zolarni olishga faqat sud qarori bilan ruxsat beriladi",
         "A’zolarni olish har qanday holatda mutlaqo taqiqlanadi",
-        "A’zolarni olishga faqat sud qarori bilan ruxsat beriladi"
+        "Marhumdan a’zo va to‘qimalarni olishga huquq beriladi"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Rozilik prezumptsiyasida rozilik oldindan berilgan deb hisoblanadi. Norozilik sog‘liqni saqlash muassasasiga bildirilmagan bo‘lsa, a’zo va to‘qimalarni olishga huquq beriladi.",
       "source": {
         "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
@@ -1989,11 +2256,11 @@
       "question": "Terapevtik klonlash va o‘zak hujayralar yo‘li etika nuqtayi nazaridan nima uchun yoqimli deb baholanadi?",
       "options": [
         "U hayvonlarni donor sifatida o‘ldirishni talab qiladi",
-        "Organizmni a’zo olish maqsadida yorib kirishni talab qilmaydi",
         "U sun’iy mexanik a’zolarni to‘liq almashtirishga asoslangan",
+        "Organizmni a’zo olish maqsadida yorib kirishni talab qilmaydi",
         "U a’zolarni faqat o‘lgan donorlardan olishga asoslangan"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Darslikka ko‘ra bu yo‘l biror organizmni a’zo olish uchun yorib kirishni talab qilmaydi. Boshlang‘ich material insonning o‘z somatik hujayralari bo‘lgani uchun immunologik moslik muammosi ham hal bo‘lishi mumkin.",
       "source": {
         "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
@@ -2004,12 +2271,12 @@
     {
       "question": "Moddiy qiyinchilik tufayli bir kishi o‘z buyragini sotishga qaror qildi va qora bozorda xaridor topdi. Bu holat transplantologiyaning qaysi axloqiy muammosiga misol bo‘ladi?",
       "options": [
-        "Inson o‘limini tasdiqlash muammosiga misol",
         "Transplantologiyani tijoratlashtirish muammosi",
+        "Inson o‘limini tasdiqlash muammosiga misol",
         "Retsipientlarni kutish varaqasiga kiritish muammosi",
         "Hayvon a’zosini odamga ko‘chirish muammosi"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Tijoratlashtirishda inson a’zolari mahsulotga, tanqislik sharoitida esa tanqis va qimmat mahsulotga aylanadi. Qora bozorda moddiy sabab bilan juft a’zolardan biri sotiladi, eng mashhuri buyrakdir. Bu transplantologiyaning gumanizm g‘oyasiga zid.",
       "source": {
         "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
@@ -2136,6 +2403,12 @@
       "title": "Bioetika (o‘quv qo‘llanma, falsafa fakulteti), Toshkent, 2006",
       "year": 2006,
       "pages": "II bob 3-bo‘lim oxiri: a’zo va to‘qimalarni ko‘chirib o‘tkazishdagi axloqiy muammolar"
+    },
+    {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+      "year": 2018,
+      "pages": "b. 217-220"
     }
   ]
 }

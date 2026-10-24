@@ -5,7 +5,7 @@
       "title": "Go‘dak murdasi ekspertizasi: holatlar va savollar",
       "bullets": [
         {
-          "text": "Ekspertiza zo‘ravon o‘lim alomatlari yoki unga shubha bo‘lganda: onasi noma’lum go‘dak murdasi topilsa, davolash muassasasidan tashqarida o‘lik tug‘ilsa, homilador ayolga yordamga shikoyat bo‘lsa.",
+          "text": "Ekspertiza zo‘ravon o‘lim alomatlari yoki shubha bo‘lganda: onasi noma’lum go‘dak murdasi, muassasadan tashqarida o‘lik tug‘ilish, yordamga shikoyat.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -32,7 +32,43 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Go‘dak murdasi ekspertizasi",
+        "children": [
+          {
+            "label": "Tayinlash holatlari",
+            "items": [
+              "Onasi noma’lum go‘dak murdasi",
+              "Muassasadan tashqari o‘lik tug‘ilish",
+              "Yordamga shikoyat"
+            ]
+          },
+          {
+            "label": "Maxsus savollar",
+            "items": [
+              "Yangi tug‘ilganmi?",
+              "Tirik tug‘ilganmi?",
+              "Gestatsion yosh, layoqat"
+            ]
+          },
+          {
+            "label": "Qo‘shimcha savollar",
+            "items": [
+              "Qancha yashagan?",
+              "Qarov bo‘lganmi?"
+            ]
+          },
+          {
+            "label": "Odatdagi savollar",
+            "items": [
+              "O‘lim sababi va muddati",
+              "Jarohat mexanizmi"
+            ]
+          }
+        ],
+        "caption": "Ekspertiza savollari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: nega go‘dak ekspertizasiga alohida savollar qo‘yiladi? Doskada: 6 ta maxsus savol. Tipik xato: faqat o‘lim sababiga e’tibor berish."
     },
     {
@@ -67,27 +103,22 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Yangi tug‘ilganlik davri",
-        "nodes": [],
-        "header": [
-          "Soha",
-          "Davr"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Sud tibbiyoti",
+            "value": "24 soat"
+          },
+          {
+            "label": "Akusherlik-ginekologiya",
+            "value": "7 kun"
+          },
+          {
+            "label": "Pediatriya",
+            "value": "4 hafta"
+          }
         ],
-        "rows": [
-          [
-            "Sud tibbiyoti",
-            "24 soat"
-          ],
-          [
-            "Akusherlik-ginekologiya",
-            "7 kun"
-          ],
-          [
-            "Pediatriya",
-            "4 hafta"
-          ]
-        ]
+        "caption": "Yangi tug‘ilganlik davri"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: nega davr ta’rifi fanlar bo‘yicha farq qiladi? Doskada: 24 soat, 7 kun, 4 hafta. Tipik xato: pediatriya davrini sud tibbiyotiga qo‘llash."
     },
@@ -113,7 +144,7 @@
           "uncertain": false
         },
         {
-          "text": "Kefalogematoma — suyak usti pardasi ostiga qon quyilishi; bir yoki bir necha suyak proeksiyasida, choklar bilan chegaralangan, 2 hafta va undan ortiq muddatda so‘riladi.",
+          "text": "Kefalogematoma — suyak usti pardasi ostiga qon quyilishi; suyak proeksiyasida, choklar bilan chegaralangan, 2 hafta va undan ortiq so‘riladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -122,7 +153,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Tug‘ruq shishi",
+            "items": [
+              "Bosh, ba’zan dumba sohasida",
+              "Yumshoq; 2–3 kunda so‘riladi",
+              "Choklar proeksiyasida ham"
+            ]
+          },
+          {
+            "title": "Kefalogematoma",
+            "items": [
+              "Suyak usti pardasi ostiga qon",
+              "Choklar bilan chegaralangan",
+              "2 hafta va undan ortiq"
+            ]
+          }
+        ],
+        "caption": "Ikki shish"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: tug‘ruq shishi va kefalogematomani nima ajratadi? Doskada: choklar bilan chegaralanishi. Tipik xato: ikkalasini bir xil deb bilish."
     },
     {
@@ -156,7 +208,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Mekoniy",
+            "text": "To‘q-yashil massa; 1–2 kunda chiqadi (norasolarda 3–4)"
+          },
+          {
+            "title": "Kindik (raso)",
+            "text": "Uzunligi 50–60 sm, qalinligi 1,5–2 sm"
+          },
+          {
+            "title": "Demarkatsion halqa",
+            "text": "Bir necha soatdan, ba’zan birinchi kun oxirida"
+          },
+          {
+            "title": "Kindik ajralishi",
+            "text": "5–7 kundan so‘ng"
+          }
+        ],
+        "caption": "Mekoniy va kindik dinamikasi"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: demarkatsion halqa nimani bildiradi? Doskada: 1 kun, 5–7 kun. Tipik xato: mekoniy chiqishini doim bir sutka deb olish."
     },
     {
@@ -190,7 +263,27 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Mutloq ishonchli",
+            "items": [
+              "O‘pka birlamchi atelektazi",
+              "Demarkatsion halqa yo‘q yoki dastlabki",
+              "Ajratilmagan kindik"
+            ]
+          },
+          {
+            "title": "Nisbiy belgilar",
+            "items": [
+              "Hayotning 2-kunida ham topiladi",
+              "Qon izlari, mo‘msimon qoplama"
+            ]
+          }
+        ],
+        "caption": "Absolyut va nisbiy"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: nega mekoniy yoki mo‘msimon qoplama mutlaq belgi emas? Doskada: 3 ta absolyut belgi. Tipik xato: nisbiy belgiga tayanib xulosa qilish."
     },
     {
@@ -224,7 +317,27 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Nafas olmagan o‘pka",
+            "value": "1,05–1,06",
+            "unit": "solish."
+          },
+          {
+            "label": "Nafas olgan o‘pka",
+            "value": "<1,0",
+            "unit": "solish."
+          },
+          {
+            "label": "Shreer o‘pka sinamasi",
+            "value": "1681",
+            "unit": "yil"
+          }
+        ],
+        "caption": "O‘pka sinamasi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: sinama nimaga asoslanadi? Doskada: 1,05–1,06 va <1,0. Tipik xato: sinamani yagona mezon deb bilish."
     },
     {
@@ -259,23 +372,24 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Sinamadagi xatolar",
-        "nodes": [],
-        "header": [
-          "Natija",
-          "Sabab"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Soxta musbat",
+            "items": [
+              "Chirish gazlari",
+              "Sun’iy nafas oldirish",
+              "Muzlagan o‘pka"
+            ]
+          },
+          {
+            "title": "Soxta manfiy",
+            "items": [
+              "Ikkilamchi atelektaz"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Soxta musbat",
-            "Chirish, sun’iy nafas, muzlash"
-          ],
-          [
-            "Soxta manfiy",
-            "Ikkilamchi atelektaz"
-          ]
-        ]
+        "caption": "O‘pka sinamasi xatolari"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: chirish gazlari natijani qanday buzadi? Doskada: soxta musbat va soxta manfiy sabablari. Tipik xato: chirigan murdada sinamaga tayanish."
     },
@@ -310,7 +424,17 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Ligaturalar qo‘yiladi",
+          "Oshqozon-ichak suvga solinadi",
+          "Havo bor joylar suzadi",
+          "Qancha yashaganini baholash",
+          "Rentgenologik sinama — qo‘llanmaydi"
+        ],
+        "caption": "Breslau sinamasi (1865)"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: chirigan murdada nega bu sinama tavsiya etilmaydi? Doskada: 1865 va 1939. Tipik xato: rentgenologik sinamani hozir ham qo‘llash."
     },
     {
@@ -345,31 +469,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "O‘pka belgilari",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Nafas olmagan",
-          "Nafas olgan"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Nafas olmagan",
+            "items": [
+              "Ko‘krak qafasi: Yassi",
+              "Diafragma: IV–V qobirg‘a",
+              "Vazni: 55–60 g"
+            ]
+          },
+          {
+            "title": "Nafas olgan",
+            "items": [
+              "Ko‘krak qafasi: Bochkasimon",
+              "Diafragma: VI–VII qobirg‘a",
+              "Vazni: 85–90 g"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Ko‘krak qafasi",
-            "Yassi",
-            "Bochkasimon"
-          ],
-          [
-            "Diafragma",
-            "IV–V qobirg‘a",
-            "VI–VII qobirg‘a"
-          ],
-          [
-            "Vazni",
-            "55–60 g",
-            "85–90 g"
-          ]
-        ]
+        "caption": "O‘pka belgilari"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: o‘pka vazni nima uchun oshadi? Javob: qon aylanishi boshlanishi hisobiga. Doskada: 55–60 va 85–90 g. Tipik xato: faqat sinamaga tayanish."
     },
@@ -404,7 +523,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Rasolik va yetuklik",
+        "children": [
+          {
+            "label": "Rasolik",
+            "items": [
+              "Homiladorlik 280 kun",
+              "37–42 hafta (JSST)",
+              "Uzunlik 50–54 sm, 3000–3500 g"
+            ]
+          },
+          {
+            "label": "Yetuklik",
+            "items": [
+              "Uzunlik 45 sm va undan ortiq",
+              "Vazn 2500 g dan kam emas"
+            ]
+          },
+          {
+            "label": "Gialin membranalar",
+            "items": [
+              "Bir necha soat yashaganda",
+              "Nafas olmaganda bo‘lmaydi"
+            ]
+          }
+        ],
+        "caption": "Gestatsion yosh asoslari"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: rasolik va yetuklik farqi? Doskada: 37–42 hafta. Tipik xato: rasolik va yetuklikni sinonim deb bilish."
     },
     {
@@ -439,41 +586,30 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Kindik va yo‘ldosh (jadval 10.1)",
-        "nodes": [],
-        "header": [
-          "Homila oyi",
-          "Kindik (sm)",
-          "Yo‘ldosh (g)"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "VI",
+            "text": "38 — 250"
+          },
+          {
+            "title": "VII",
+            "text": "42 — 340"
+          },
+          {
+            "title": "VIII",
+            "text": "46 — 410"
+          },
+          {
+            "title": "IX",
+            "text": "47 — 470"
+          },
+          {
+            "title": "X",
+            "text": "50 — 500"
+          }
         ],
-        "rows": [
-          [
-            "VI",
-            "38",
-            "250"
-          ],
-          [
-            "VII",
-            "42",
-            "340"
-          ],
-          [
-            "VIII",
-            "46",
-            "410"
-          ],
-          [
-            "IX",
-            "47",
-            "470"
-          ],
-          [
-            "X",
-            "50",
-            "500"
-          ]
-        ]
+        "caption": "Kindik va yo‘ldosh (jadval 10.1)"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: formulalarni mashq qilish. Doskada: 16 sm va 40 sm misollari. Tipik xato: formulalarni birinchi va ikkinchi yarim uchun almashtirish."
     },
@@ -508,7 +644,37 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Tovon suyagi o‘zagi",
+            "value": "V",
+            "unit": "homila oyi"
+          },
+          {
+            "label": "G‘altaksimon suyak",
+            "value": "VII",
+            "unit": "homila oyi"
+          },
+          {
+            "label": "Son epifizi (Beklyar)",
+            "value": "IX",
+            "unit": "homila oyi"
+          },
+          {
+            "label": "Layoqatsiz: uzunlik",
+            "value": "<25",
+            "unit": "sm"
+          },
+          {
+            "label": "Layoqatsiz: vazn",
+            "value": "<500",
+            "unit": "g"
+          }
+        ],
+        "caption": "Suyaklanish va layoqat"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: tashqi nuqsonlar topilsa nima qilinadi? Javob: ichki nuqsonlarni istisno qilish uchun miya va ichki a’zolar sinchiklab tekshiriladi. Doskada: 25 sm, 500 g. Tipik xato: o‘ta norasoda ham to‘liq yorish."
     },
     {
@@ -543,31 +709,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Hayot davomiyligi belgilari",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Muddat"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Gialin membrana",
+            "value": "Kamida 1–2 soat"
+          },
+          {
+            "label": "Ikkilamchi atelektaz",
+            "value": "Kamida 5–6 soat"
+          },
+          {
+            "label": "Havo faqat oshqozonda",
+            "value": "3 soatdan kam"
+          },
+          {
+            "label": "Havo yo‘g‘on ichakda",
+            "value": "6 soatdan so‘ng"
+          }
         ],
-        "rows": [
-          [
-            "Gialin membrana",
-            "Kamida 1–2 soat"
-          ],
-          [
-            "Ikkilamchi atelektaz",
-            "Kamida 5–6 soat"
-          ],
-          [
-            "Havo faqat oshqozonda",
-            "3 soatdan kam"
-          ],
-          [
-            "Havo yo‘g‘on ichakda",
-            "6 soatdan so‘ng"
-          ]
-        ]
+        "caption": "Hayot davomiyligi belgilari"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: muddatlar nega taxminiy? Javob: ko‘p belgi inobatga olinadi. Doskada: soatlar ketma-ketligi. Tipik xato: bitta belgi bo‘yicha aniq muddat berish."
     },
@@ -584,7 +745,7 @@
           "uncertain": false
         },
         {
-          "text": "Antenatal nozo‘raki o‘lim: yo‘ldosh oldin joylashishi, infarkti, ko‘chishi, kindik siqilishi yoki o‘ralib qolishi, chin tugun — shu sabab yo‘ldosh va kindik ham tekshiriladi.",
+          "text": "Antenatal nozo‘raki o‘lim: yo‘ldosh oldin joylashishi, infarkti, ko‘chishi, kindik siqilishi, chin tugun — shu sabab yo‘ldosh va kindik ham tekshiriladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -602,7 +763,29 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Qarov belgilari",
+            "items": [
+              "Yo‘rgak, kiyim",
+              "Kindik kesilib boylangan",
+              "Qon va qoplamadan tozalangan",
+              "Oshqozonda sut"
+            ]
+          },
+          {
+            "title": "O‘lim sabablari",
+            "items": [
+              "Antenatal: yo‘ldosh, kindik, chin tugun",
+              "Intranatal: tug‘ruq travmasi",
+              "Tepa va peshona suyaklari shikasti"
+            ]
+          }
+        ],
+        "caption": "Qarov va o‘lim"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: tug‘ruq travmasini boshqa jarohatdan nima farqlaydi? Doskada: tashqi jarohat yo‘qligi. Tipik xato: tug‘ruq travmasida yara kutish."
     },
     {
@@ -636,7 +819,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Aktiv zo‘ravonlik",
+            "items": [
+              "Bo‘g‘ish, nafas teshiklarini yopish",
+              "Cho‘ktirish, qisish",
+              "Mexanik jarohat, olovga tashlash"
+            ]
+          },
+          {
+            "title": "Passiv zo‘ravonlik",
+            "items": [
+              "Qarovsiz qoldirish",
+              "Kindikdan qon ketish",
+              "Sovuq qotish, ochlik"
+            ]
+          }
+        ],
+        "caption": "Postnatal davr"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: og‘iz burchaklari yorilishi nimani ko‘rsatadi? Javob: manbaga ko‘ra, tug‘ayotgan ayolning o‘z qo‘llari bilan yetkazgan shikasti belgisi bo‘lishi mumkin. Doskada: aktiv/passiv. Tipik xato: aktiv-passiv farqni huquqiy asos deb bilish."
     },
     {
@@ -670,7 +874,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Tashqi",
+            "text": "Antropometriya, qon izi, mekoniy, tirnoq"
+          },
+          {
+            "title": "Ichki boshlanishi",
+            "text": "Ko‘krak va qorindan boshlanadi"
+          },
+          {
+            "title": "Og‘iz kesmasi",
+            "text": "Pastki labdan boshlanadi"
+          },
+          {
+            "title": "Kalla",
+            "text": "Gumbazda darchalar ochiladi"
+          },
+          {
+            "title": "Material",
+            "text": "Gistologik va sud-biologik uchun bo‘lakchalar"
+          }
+        ],
+        "caption": "Tekshiruv ketma-ketligi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: kesma nega pastki labdan boshlanadi? Javob: tanglayning holatini o‘rganish uchun. Doskada: kesma yo‘nalishi. Tipik xato: kesmani iyakdan boshlash."
     },
     {
@@ -704,7 +933,37 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Gipoksiya turlari",
+        "children": [
+          {
+            "label": "Ekzogen",
+            "items": [
+              "Gipoksik",
+              "Giperoksik",
+              "Giperkapnik"
+            ]
+          },
+          {
+            "label": "Endogen",
+            "items": [
+              "Respirator, gemik",
+              "Sirkulyator",
+              "Sitotoksik, fiziologik"
+            ]
+          },
+          {
+            "label": "Jadalligi",
+            "items": [
+              "Yashinsimon (soniyalar)",
+              "O‘tkir (daqiqalar)",
+              "Biroz o‘tkir, surunkali"
+            ]
+          }
+        ],
+        "caption": "MNT: 5–10 daqiqada qaytmas"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: nega yashinsimon va o‘tkir gipoksiya sud tibbiyotiga ahamiyatli? Doskada: jadvallar. Tipik xato: surunkali gipoksiyani ekspertiza ob’ekti deb bilish."
     },
     {
@@ -739,27 +998,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Mexanik asfiksiya turlari",
-        "nodes": [],
-        "header": [
-          "Tur",
-          "Kichik turlar"
+        "kind": "tree",
+        "root": "Mexanik asfiksiya turlari",
+        "children": [
+          {
+            "label": "Qisilishdan",
+            "items": [
+              "Strangulyasion; kompression"
+            ]
+          },
+          {
+            "label": "Yopilishdan",
+            "items": [
+              "Teshiklar; yo‘llar; cho‘kish"
+            ]
+          },
+          {
+            "label": "Cheklangan muhit",
+            "items": [
+              "Yopiq yoki to‘liq emas yopiq muhit"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Qisilishdan",
-            "Strangulyasion; kompression"
-          ],
-          [
-            "Yopilishdan",
-            "Nafas teshiklari; nafas yo‘llari; cho‘kish"
-          ],
-          [
-            "Cheklangan muhit",
-            "Yopiq yoki to‘liq emas yopiq muhit"
-          ]
-        ]
+        "caption": "Mexanik asfiksiya turlari"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: autoasfiksiofiliyada hodisa joyida nimaga e’tibor beriladi? Javob: jinsiy chetlanishni tasdiqlovchi ashyolar. Doskada: tasnif sxemasi. Tipik xato: bunday o‘limni qotillik deb baholash."
     },
@@ -840,7 +1101,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Nafas qisqa to‘xtashi",
+            "value": "30–40",
+            "unit": "soniya"
+          },
+          {
+            "label": "Terminal nafas",
+            "value": "≤5",
+            "unit": "daqiqa"
+          },
+          {
+            "label": "Yurak urishi davomi",
+            "value": "3–10",
+            "unit": "daqiqa"
+          },
+          {
+            "label": "Reflektor to‘xtash",
+            "value": "≤30",
+            "unit": "soniya"
+          }
+        ],
+        "caption": "Asfiksiya davrlari"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: reflektor to‘xtashda murdada nima topiladi? Javob: asfiksiya belgilari bo‘lmasligi mumkin. Doskada: 30 soniya. Tipik xato: belgisiz murdada asfiksiyani inkor qilish."
     },
     {
@@ -875,31 +1161,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Postasfiktik davrlar",
-        "nodes": [],
-        "header": [
-          "Davr",
-          "Mazmun"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1",
+            "text": "Asfiktik koma"
+          },
+          {
+            "title": "2",
+            "text": "Karaxtlik"
+          },
+          {
+            "title": "3",
+            "text": "Dezorientatsiya, xotira buzilishi"
+          },
+          {
+            "title": "4",
+            "text": "Qoldiq oqibatlar"
+          }
         ],
-        "rows": [
-          [
-            "1",
-            "Asfiktik koma"
-          ],
-          [
-            "2",
-            "Karaxtlik"
-          ],
-          [
-            "3",
-            "Dezorientatsiya, xotira buzilishi"
-          ],
-          [
-            "4",
-            "Qoldiq oqibatlar"
-          ]
-        ]
+        "caption": "Postasfiktik davrlar"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: klinitsist hujjatlari nega muhim? Javob: tana jarohati og‘irligi va o‘lim sababini aniqlashda. Doskada: 4 davr. Tipik xato: komani yagona holat deb bilish."
     },
@@ -934,7 +1215,38 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Tashqi belgilar",
+        "children": [
+          {
+            "label": "Sianoz",
+            "items": [
+              "Yuz va bo‘yinda; turg‘un emas"
+            ]
+          },
+          {
+            "label": "Murda dog‘lari",
+            "items": [
+              "Ko‘kimtir-binafsha; 1 soatgacha"
+            ]
+          },
+          {
+            "label": "Qon quyilish",
+            "items": [
+              "Subkonyunktival ekximozlar"
+            ]
+          },
+          {
+            "label": "Boshqa",
+            "items": [
+              "Qorachiq kengayishi",
+              "Ixtiyorsiz siydik, axlat"
+            ]
+          }
+        ],
+        "caption": "Umumasfiktik belgilar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: nega bu belgilar spetsifik emas? Javob: tez o‘limning boshqa turlarida ham uchraydi. Doskada: belgilar ro‘yxati. Tipik xato: sianozga tayanib tashxis qo‘yish."
     },
     {
@@ -968,7 +1280,39 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Ichki belgilar",
+        "children": [
+          {
+            "label": "Yurak, qon",
+            "items": [
+              "To‘q qizil suyuq qon",
+              "Asfiktik yurak (o‘ng yarim to‘la)"
+            ]
+          },
+          {
+            "label": "A’zolar",
+            "items": [
+              "Venoz to‘laqonlik",
+              "Qisman o‘pka emfizemasi"
+            ]
+          },
+          {
+            "label": "Dog‘lar",
+            "items": [
+              "Tarde: 2–3 mm, plevra, epikard ostida"
+            ]
+          },
+          {
+            "label": "Taloq",
+            "items": [
+              "Kamqon, qisqargan (Sabinskiy)"
+            ]
+          }
+        ],
+        "caption": "Umumasfiktik belgilar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: qaysi belgilar nisbatan patognomik? Javob: asfiktik yurak, kamqon va qisqargan taloq. Doskada: Tarde 2–3 mm. Tipik xato: bitta belgiga tayanish; ular majmuasi hisobga olinadi."
     },
     {
@@ -1002,7 +1346,26 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Tipik osilish",
+            "items": [
+              "Tana erkin osilib turadi",
+              "Tugun orqada"
+            ]
+          },
+          {
+            "title": "Notipik osilish",
+            "items": [
+              "Tananing bir qismi tayanchda",
+              "Tugun old yoki yon tomonda"
+            ]
+          }
+        ],
+        "caption": "Osilish turlari (65–70 %)"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: yotgan holatda ham osilish bo‘lishi mumkinmi? Javob: ha, sirtmoq bosh massasiga teng kuch bilan tortiladi. Doskada: tizzalarga tayanganda tana massasining 20 %. Tipik xato: osilishni doim to‘liq osilish deb bilish."
     },
     {
@@ -1036,7 +1399,38 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Sirtmoq",
+        "children": [
+          {
+            "label": "Yumshoq",
+            "items": [
+              "Sochiq, sharf, galstuk"
+            ]
+          },
+          {
+            "label": "Yarim qattiq",
+            "items": [
+              "Arqon, kamar"
+            ]
+          },
+          {
+            "label": "Qattiq",
+            "items": [
+              "Sim, zanjir"
+            ]
+          },
+          {
+            "label": "Tugun",
+            "items": [
+              "Kesib olinadi, buzilmaydi",
+              "Kriminalistik ahamiyatli"
+            ]
+          }
+        ],
+        "caption": "Sirtmoq turlari"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: sirtmoq nega tugun yonidan kesilmaydi? Doskada: tipik/atipik. Tipik xato: sirtmoqni tugunidan yechish."
     },
     {
@@ -1070,7 +1464,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Havo yo‘li",
+            "text": "Til asosi siljishi, torayish"
+          },
+          {
+            "title": "Venalar",
+            "text": "Bo‘yinturuq venalari qisiladi, kalla ichi bosimi oshadi"
+          },
+          {
+            "title": "Reflekslar",
+            "text": "Adashgan nerv, sinokarotid tugun"
+          },
+          {
+            "title": "Yurak",
+            "text": "Reflektor to‘xtashi mumkin"
+          }
+        ],
+        "caption": "O‘lim mexanizmlari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: yurak-qon tomir kasalligi bo‘lganda qaysi mexanizm ustun? Doskada: 3 omil. Tipik xato: o‘limni faqat havo yo‘li yopilishiga bog‘lash."
     },
     {
@@ -1104,7 +1519,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Tipik osilishda",
+            "items": [
+              "Egat yuqorida, til osti suyagidan baland",
+              "Qiyshiq-vertikal",
+              "10–15 kun saqlanadi"
+            ]
+          },
+          {
+            "title": "Material ta’siri",
+            "items": [
+              "Qattiq sirtmoq: zichroq, chuqurroq",
+              "Yumshoq: teri egati ko‘rinmaydi",
+              "Ichkarida «mis sim» (Kasper)"
+            ]
+          }
+        ],
+        "caption": "Strangulyasion egat"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: egat nima uchun sirtmoq bilan taqqoslanadi? Doskada: tasnif mezonlari. Tipik xato: egat yo‘q bo‘lsa, osilishni istisno qilish."
     },
     {
@@ -1138,14 +1574,39 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Qo‘shimcha belgilar",
+        "children": [
+          {
+            "label": "Anizokoriya",
+            "items": [
+              "Qisilgan tomonda qorachiq kengroq"
+            ]
+          },
+          {
+            "label": "Brouardel",
+            "items": [
+              "Halqum orti qon quyilishi"
+            ]
+          },
+          {
+            "label": "Cho‘zilish belgilari",
+            "items": [
+              "Amyuss: uyqu arteriyasi intimasi",
+              "Martin, Valxer, Simon"
+            ]
+          }
+        ],
+        "caption": "Osilishda"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: cho‘zilish belgilari qaysi sharoitda uchraydi? Doskada: eponimlar. Tipik xato: bu belgilarni doim kutish."
     },
     {
       "title": "Egatning hayotiyligi",
       "bullets": [
         {
-          "text": "Teri laxtagi yog‘dan tozalanib, ikki oynacha orasida yorug‘likda ko‘riladi; burmacha sohasida to‘laqonlik, qon quyilishi — hayotiylik belgisi (Bokarius sinamasi).",
+          "text": "Teri laxtagi yog‘dan tozalanib, ikki oynacha orasida yorug‘likda ko‘riladi; burmachada to‘laqonlik, qon quyilishi — hayotiylik belgisi (Bokarius).",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1163,7 +1624,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Bokarius sinamasi",
+            "text": "Teri laxtagi yog‘dan tozalanib, yorug‘likda"
+          },
+          {
+            "title": "Makroskopik",
+            "text": "Burmachada to‘laqonlik, qon quyilishi"
+          },
+          {
+            "title": "Neyding belgisi",
+            "text": "Qon aylanishi buzilishi (mikroskop)"
+          },
+          {
+            "title": "Kasyanov belgisi",
+            "text": "Reaktiv yallig‘lanish"
+          }
+        ],
+        "caption": "Egat hayotiyligi"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: nega hayotiylik masalasi muhim? Javob: ayrim bahsli holatlarda o‘ta ahamiyatli. Doskada: 3 usul. Tipik xato: hayotiylikni faqat makroskopik baholash."
     },
     {
@@ -1197,7 +1679,29 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Sirtmoq bilan bo‘g‘ish",
+            "items": [
+              "Bo‘ynida egat gorizontal",
+              "Qalqonsimon tog‘ay sathida, pastroq",
+              "Ko‘pincha tutashgan",
+              "Kurash jarohatlari"
+            ]
+          },
+          {
+            "title": "Osilish",
+            "items": [
+              "Egat qiyshiq-vertikal",
+              "Til osti suyagidan baland",
+              "Tutashmagan, tugun joyida uzilgan"
+            ]
+          }
+        ],
+        "caption": "Egatni solishtirish"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: egat yo‘nalishi osilishdan nimasi bilan farqlanadi? Doskada: gorizontal va qiyshiq. Tipik xato: baxtsiz hodisani inkor qilish (kiyim ilashib qolishi mumkin)."
     },
     {
@@ -1222,7 +1726,7 @@
           "uncertain": false
         },
         {
-          "text": "Pozitsion asfiksiya: bosh bukilgan holatda uzoq qolish; egat bo‘lmaydi, til osti suyagi va hiqildoq tog‘aylari shikastlanmaydi; tashxis hodisa tafsiloti va boshqa sabablarni istisno qilishga asoslanadi.",
+          "text": "Pozitsion asfiksiya: bosh bukilib uzoq qolish; egat yo‘q, til osti suyagi va tog‘aylar shikastlanmaydi; tashxis boshqa sabablarni istisno qilishga tayanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1231,7 +1735,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Boshqa bo‘g‘ish turlari",
+        "children": [
+          {
+            "label": "Qo‘l bilan bo‘g‘ish",
+            "items": [
+              "Barmoq izlari: dumaloq, oval qontalash",
+              "Tirnoq shilinmalari"
+            ]
+          },
+          {
+            "label": "Ichki jarohat",
+            "items": [
+              "Til osti suyagi, tog‘aylar sinishi",
+              "Bo‘yin to‘qimalariga qon quyilishi"
+            ]
+          },
+          {
+            "label": "Pozitsion asfiksiya",
+            "items": [
+              "Egat bo‘lmaydi",
+              "Tog‘aylar shikastlanmaydi"
+            ]
+          }
+        ],
+        "caption": "Bo‘yin qisilishi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: ikki qo‘l bilan old tomondan bo‘g‘ishda izlar qanday joylashadi? Javob: har tarafda old yuzada bittadan, orqa yuzada 2–4 tadan. Doskada: izlar sxemasi. Tipik xato: tashqi izlar yo‘qligidan bo‘g‘ishni inkor qilish (yumshoq jism ustidan izlar kam bo‘ladi)."
     },
     {
@@ -1265,14 +1796,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Obturatsion asfiksiya",
+        "children": [
+          {
+            "label": "Nafas teshiklari",
+            "items": [
+              "Qarshilik bo‘lmasa belgisiz",
+              "Qarshilikda og‘iz-burun qontalash"
+            ]
+          },
+          {
+            "label": "Nafas yo‘llari",
+            "items": [
+              "Yot jism: danak, tugma, protez",
+              "Qon, qusuq",
+              "Aksariyat baxtsiz hodisa"
+            ]
+          }
+        ],
+        "caption": "Teshik va yo‘llar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: tish protezi nafas yo‘llarini yopishi mumkinmi? Javob: manbada yot jismlar qatorida ko‘rsatilgan. Doskada: yot jism turlari. Tipik xato: nafas yo‘lidagi qusuqni har doim obturatsiya sababi deb bilish."
     },
     {
       "title": "Nafas yo‘llari yopilishi: aspiratsiya, belgilar",
       "bullets": [
         {
-          "text": "Alkogol va narkotik mastligi, kalla-miya jarohati yutish va yo‘tal reflekslarini buzadi; burun-halqum qon ketishi, kalla asosi sinishida qon aspiratsiyasi mumkin.",
+          "text": "Alkogol va narkotik mastligi, kalla-miya jarohati yutish va yo‘tal reflekslarini buzadi; burun-halqum qon ketishi, kalla asosi sinishida qon aspiratsiyasi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1299,7 +1851,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Aspiratsiya",
+            "items": [
+              "Mastlik, kalla jarohati sababchi",
+              "Qusuq: nordon muhit",
+              "Bronx va alveolalarga yetadi"
+            ]
+          },
+          {
+            "title": "Boshqa holatlar",
+            "items": [
+              "Reanimatsiya, transport, chirish",
+              "Massa oz",
+              "Kichik bronxlarga yetmaydi"
+            ]
+          }
+        ],
+        "caption": "Qusuq massa"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: agonal va o‘limdan keyingi aspiratsiyani qanday farqlash mumkin? Doskada: miqdor va chuqurlik. Tipik xato: qusuq topilishini yagona belgi deb bilish."
     },
     {
@@ -1334,27 +1907,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Cho‘kish turlari",
-        "nodes": [],
-        "header": [
-          "Tur",
-          "Mohiyati"
+        "kind": "tree",
+        "root": "Cho‘kish turlari",
+        "children": [
+          {
+            "label": "Chin",
+            "items": [
+              "Suv alveolalargacha"
+            ]
+          },
+          {
+            "label": "Asfiktik",
+            "items": [
+              "Hiqildoq spazmi, suv o‘tmaydi"
+            ]
+          },
+          {
+            "label": "Aralash",
+            "items": [
+              "Ikkalasi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Chin",
-            "Suv alveolalargacha"
-          ],
-          [
-            "Asfiktik",
-            "Hiqildoq spazmi, suv o‘tmaydi"
-          ],
-          [
-            "Aralash",
-            "Ikkalasi"
-          ]
-        ]
+        "caption": "Cho‘kish turlari"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: nega bolalarda asfiktik tur ko‘proq? Doskada: ikki tur taqqoslash. Tipik xato: umumasfiktik belgilar faqat bir turda deb o‘ylash."
     },
@@ -1389,14 +1964,46 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Chin cho‘kish",
+        "children": [
+          {
+            "label": "Ko‘pik",
+            "items": [
+              "Mayda pufakli oq (Krushevskiy)"
+            ]
+          },
+          {
+            "label": "O‘pka",
+            "items": [
+              "Xamirsimon, hajmi ortgan",
+              "Marmarsimon"
+            ]
+          },
+          {
+            "label": "Dog‘lar",
+            "items": [
+              "Rasskazov–Lukomskiy–Paltauf"
+            ]
+          },
+          {
+            "label": "Suyuqlik",
+            "items": [
+              "Qorinda ≈100 ml (Moro)",
+              "Oshqozonda 300 ml gacha (Fegerlund)"
+            ]
+          }
+        ],
+        "caption": "Belgilari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: dengiz suvida cho‘kishda nima o‘zgaradi? Javob: qon quyuqlashadi va Rasskazov-Lukomskiy-Paltauf dog‘lari hosil bo‘lmaydi. Doskada: eponimlar. Tipik xato: Tarde va Rasskazov dog‘larini aralashtirish."
     },
     {
       "title": "Asfiktik cho‘kish va laboratoriya usullari",
       "bullets": [
         {
-          "text": "Asfiktikda nafas yo‘llarida suv bo‘lmaydi, o‘pka quruq, emfizema; faqat Tarde dog‘lari; oshqozonda 1 l gacha suv; kalla asosi bo‘shlig‘ida 5–15 ml suyuqlik (Sveshnikov belgisi).",
+          "text": "Asfiktikda nafas yo‘llarida suv yo‘q, o‘pka quruq, emfizema; faqat Tarde dog‘lari; oshqozonda 1 l gacha suv; kalla asosida 5–15 ml suyuqlik (Sveshnikov).",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1414,7 +2021,7 @@
           "uncertain": false
         },
         {
-          "text": "Hayotiylik: diatom planktoni (parenximatoz a’zolar, suyak miyada; 15–50 mk), psevdoplankton, bakteriologik, krioskopik usullar; o‘pkadagi diatom diagnostik emas.",
+          "text": "Hayotiylik: diatom planktoni (parenximatoz a’zo, suyak miya; 15–50 mk), psevdoplankton, bakteriologik, krioskopik usullar; o‘pkadagi diatom diagnostik emas.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1423,7 +2030,27 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Oshqozondagi suv",
+            "value": "1 gacha",
+            "unit": "l"
+          },
+          {
+            "label": "Kalla asosi suyuqligi",
+            "value": "5–15",
+            "unit": "ml"
+          },
+          {
+            "label": "Diatom o‘lchami",
+            "value": "15–50",
+            "unit": "mk"
+          }
+        ],
+        "caption": "Asfiktik cho‘kish"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: diatom nega faqat parenximatoz a’zolarda ahamiyatli? Javob: o‘pkada o‘limdan keyin ham bo‘lishi mumkin. Doskada: namuna olish (1 l suv). Tipik xato: o‘pkadagi diatomga tayanish."
     },
     {
@@ -1458,31 +2085,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Suvda bo‘lish muddati",
-        "nodes": [],
-        "header": [
-          "Muddat",
-          "O‘zgarish"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Bir necha soat",
+            "text": "Barmoqlar oqarib bujmayadi"
+          },
+          {
+            "title": "2–5 kun",
+            "text": "Kaft sohasi"
+          },
+          {
+            "title": "5–8 kun",
+            "text": "Tovon sohasi"
+          },
+          {
+            "title": "10–15 kun",
+            "text": "Sochlar oson sug‘uriladi"
+          }
         ],
-        "rows": [
-          [
-            "Bir necha soat",
-            "Barmoqlar oqarib bujmayadi"
-          ],
-          [
-            "2–5 kun",
-            "Kaft sohasi"
-          ],
-          [
-            "5–8 kun",
-            "Tovon sohasi"
-          ],
-          [
-            "10–15 kun",
-            "Sochlar oson sug‘uriladi"
-          ]
-        ]
+        "caption": "Suvda bo‘lish muddati"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: bu belgilar nimani ko‘rsatadi? Javob: murdaning suvda bo‘lish davomiyligini, cho‘kishni emas. Doskada: 2–5, 5–8, 10–15. Tipik xato: bu belgilarni cho‘kish belgisi deb bilish."
     },
@@ -1517,7 +2139,30 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Kompression asfiksiya",
+            "items": [
+              "Ko‘krak, qorin harakati cheklanadi",
+              "Frontal qisilish xavfliroq",
+              "Ekximotik niqob (Olive-Danjer)",
+              "Karmin shishishi (Lakkasan)"
+            ]
+          },
+          {
+            "title": "Cheklangan muhit",
+            "items": [
+              "Karbonat angidrid 0,5 %: nafas tezlashadi",
+              "Kattalarda 8–10 %",
+              "Bolalarda 2,0–2,5 %",
+              "Spetsifik belgi yo‘q"
+            ]
+          }
+        ],
+        "caption": "Ikki turi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: bolalarda nega xavf past konsentratsiyada boshlanadi? Doskada: 0,5 %, 8–10 %, 2,0–2,5 %. Tipik xato: cheklangan muhit uchun xos o‘zgarish kutish."
     }
   ],
@@ -1680,6 +2325,166 @@
         "author": "G‘iyosov Z.A.",
         "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
         "page": "130"
+      }
+    },
+    {
+      "question": "Chaqaloq boshidagi yumshoq shish suyaklararo choklar proeksiyasida ham aniqlanadi va 2–3 kunda so‘riladi. Bu qaysi holat?",
+      "options": [
+        "Kefalogematoma",
+        "Subdural gematoma",
+        "Mo‘msimon qoplama",
+        "Tug‘ruq shishi"
+      ],
+      "correct_index": 3,
+      "explanation": "Tug‘ruq shishi choklar proeksiyasida ham aniqlanadi va 2–3 kunda so‘riladi; kefalogematoma esa choklar bilan chegaralangan va 2 hafta va undan ortiq so‘riladi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "257"
+      }
+    },
+    {
+      "question": "Raso chaqaloqda mekoniy (birlamchi najas) odatda tug‘ruqdan keyin qancha muddatda chiqib ketadi?",
+      "options": [
+        "Bir necha soatda",
+        "5–7 kunda",
+        "1–2 kunda",
+        "2 haftada"
+      ],
+      "correct_index": 2,
+      "explanation": "Mekoniy to‘q-yashil yarim suyuq massa bo‘lib, rasolarda odatda 1–2 kunda, norasolarda 3–4 kungacha chiqadi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "257"
+      }
+    },
+    {
+      "question": "Nafas olmagan chaqaloq o‘pkasining solishtirma og‘irligi qancha bo‘ladi?",
+      "options": [
+        "0,5–0,6",
+        "1,3–1,4",
+        "Taxminan 0,9",
+        "1,05–1,06"
+      ],
+      "correct_index": 3,
+      "explanation": "Nafas olmagan o‘pka solishtirma og‘irligi 1,05–1,06, nafas olganniki 1,0 dan past; shu sababli nafas olgan o‘pka suvda suzadi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "259"
+      }
+    },
+    {
+      "question": "Breslau sinamasi (1865) chaqaloq murdasida nimani aniqlashga asoslangan?",
+      "options": [
+        "Havoning oshqozon-ichakka o‘tganligini",
+        "Qonning tarkibini",
+        "O‘pka gistologiyasini",
+        "Kindik pulsatsiyasini"
+      ],
+      "correct_index": 0,
+      "explanation": "Breslau sinamasi nafas olganda havoning bir qismi qizilo‘ngach orqali oshqozon va ichakka o‘tishiga asoslangan; ligaturalangan a’zolar suvga solinadi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "260"
+      }
+    },
+    {
+      "question": "Gestatsion yoshni aniqlashda tovon suyagida suyaklanish o‘zagi qaysi homila oyida paydo bo‘ladi?",
+      "options": [
+        "VII oyda",
+        "IX oyda",
+        "III oyda",
+        "V oyda"
+      ],
+      "correct_index": 3,
+      "explanation": "Suyaklanish o‘zaklari tovon suyagida V, g‘altaksimon suyakda VII, son pastki epifizida (Beklyar yadrosi) IX homila oyida paydo bo‘ladi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "263"
+      }
+    },
+    {
+      "question": "JSST ta’rifiga ko‘ra qaysi o‘lcham va vazndagi go‘dak o‘ta norasolik tufayli hayotga layoqatsiz hisoblanadi?",
+      "options": [
+        "Uzunligi 35 sm dan, vazni 1500 g dan kam",
+        "Uzunligi 45 sm dan, vazni 2500 g dan kam",
+        "Uzunligi 25 sm dan, vazni 500 g dan kam",
+        "Uzunligi 50 sm dan, vazni 3000 g dan kam"
+      ],
+      "correct_index": 2,
+      "explanation": "JSST bo‘yicha uzunligi 25 sm dan, vazni 500 g dan kam go‘dak o‘ta norasolik tufayli hayotga layoqatsiz hisoblanadi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "263"
+      }
+    },
+    {
+      "question": "Asfiksiyada nafas to‘liq to‘xtagandan so‘ng yurak necha daqiqa urib turishi mumkin?",
+      "options": [
+        "Faqat 10–20 soniya",
+        "Bir necha soat",
+        "30–40 daqiqa",
+        "3–10 daqiqa"
+      ],
+      "correct_index": 3,
+      "explanation": "Terminal nafas 5 daqiqagacha davom etadi; nafas to‘liq to‘xtagandan so‘ng yurak yana 3–10 daqiqa urib turishi mumkin.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "107"
+      }
+    },
+    {
+      "question": "Tipik osilishda sirtmoq tuguni odatda qayerda joylashadi?",
+      "options": [
+        "Ensada (orqada)",
+        "Old tomonda",
+        "Chap yonda",
+        "Faqat iyak ostida"
+      ],
+      "correct_index": 0,
+      "explanation": "Tugun orqada joylashsa tipik, old yoki yon tomonda joylashsa atipik hisoblanadi; tugun kriminalistik ahamiyatga ega.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "112"
+      }
+    },
+    {
+      "question": "Asfiktik cho‘kishda murda tekshiruvida kalla asosi bo‘shlig‘ida qancha suyuqlik topilishi mumkin (Sveshnikov belgisi)?",
+      "options": [
+        "100 ml",
+        "300 ml",
+        "1 litr",
+        "5–15 ml"
+      ],
+      "correct_index": 3,
+      "explanation": "Suv burun bo‘shliqlari orqali kalla asosi bo‘shlig‘iga o‘tishi sababli bu bo‘shliqda 5–15 ml suyuqlik aniqlanishi mumkin (Sveshnikov belgisi).",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "124"
+      }
+    },
+    {
+      "question": "Qisilgan jabrlanuvchida yuz, bo‘yin va ko‘krakning yuqori qismida terida qon quyilishlar topildi. Bu qaysi belgi?",
+      "options": [
+        "Tarde dog‘lari",
+        "Sabinskiy belgisi",
+        "Ekximotik niqob (Olive-Danjer belgisi)",
+        "Moro belgisi"
+      ],
+      "correct_index": 2,
+      "explanation": "Kompression asfiksiyada yuz shishi va ko‘kimtirligi bilan birga yuz, bo‘yin, ko‘krak yuqori qismi terisiga qon quyilishlar — ekximotik niqob (Olive-Danjer belgisi).",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "129"
       }
     }
   ],

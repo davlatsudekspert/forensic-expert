@@ -134,7 +134,7 @@
       "title": "Sinish epidemiologiyasi va klinik muammo",
       "bullets": [
         {
-          "text": "AQShda yiliga taxminan 2 million sinish qayd etiladi: deyarli yarim million kasalxonaga yotqizish, 2,5 million shifokor qabuli va 180 000 hamshiralik uyiga yotqizish.",
+          "text": "AQShda yiliga taxminan 2 million sinish: deyarli yarim million kasalxonaga yotqizish, 2,5 million shifokor qabuli, 180 000 hamshiralik uyiga yotqizish.",
           "source": {
             "author": "Bikle D va boshq.",
             "title": "Fracture healing: cellular mechanisms and impact of parathyroid hormone and its analogs, Frontiers in Endocrinology",
@@ -170,7 +170,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Yangi sinish (2019)",
+            "value": "178 mln"
+          },
+          {
+            "label": "Mavjud sinish (2019)",
+            "value": "455 mln"
+          },
+          {
+            "label": "Son sinishi ulushi",
+            "value": "14 %"
+          },
+          {
+            "label": "Son sinishi: o‘lim",
+            "value": "20–30 %",
+            "unit": "1 yilda"
+          },
+          {
+            "label": "Bitmaslik/kechikish",
+            "value": "5–10 %"
+          }
+        ],
+        "caption": "Sinish yuki: raqamlar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: nega son suyagi sinishi kam uchrasa ham xarajatning katta qismini beradi? Nega sinish yuki keksalar sonining oshishi bilan ortishi kutiladi? Doskaga: sinishning uchta oqibati (xarajat, kasallanish, o‘lim) ustunlarini chizdiring. Tipik xato: son sinishining ulushi (14%) bilan uning xarajat ulushini aralashtirish. Raqamlar AQSh ma‘lumoti ekanini ta‘kidlang."
     },
     {
@@ -213,7 +239,24 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Nonunion/kechikish",
+            "value": "5–10 %"
+          },
+          {
+            "label": "Kechikkan bitish",
+            "value": "3–6 oydan keyin"
+          },
+          {
+            "label": "Nonunion tashxisi",
+            "value": "6–9 oydan keyin"
+          }
+        ],
+        "caption": "Kechikish va nonunion"
+      },
       "teacher_notes": "Vaqt: 3 daq. Avval savolni o‘qing, talabalar javob variantlarini ovoz bilan tanlasin, keyin javobni oching. Muhokama: diabet va chekish bitishga qanday ta‘sir qilishi mumkin? Nega muammo kam resursli sharoitda og‘irlashadi? Doskaga: delayed union va nonunion uchun vaqt o‘qini (3–6 va 6–9 oy) chizdiring. Tipik xato: ikkala atamani sinonim deb o‘ylash."
     },
     {
@@ -248,27 +291,22 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Uch bosqich qisqacha",
-        "nodes": [],
-        "header": [
-          "Bosqich",
-          "Asosiy hodisa"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Yallig‘lanish",
+            "text": "Gematoma va immun hujayralar kelishi"
+          },
+          {
+            "title": "Kallus",
+            "text": "Yumshoq, so‘ng qattiq kallus hosil bo‘lishi"
+          },
+          {
+            "title": "Remodellanish",
+            "text": "To‘qilgan suyak lamellarga almashadi"
+          }
         ],
-        "rows": [
-          [
-            "Yallig‘lanish",
-            "Gematoma va immun hujayralar kelishi"
-          ],
-          [
-            "Kallus",
-            "Yumshoq, so‘ng qattiq kallus hosil bo‘lishi"
-          ],
-          [
-            "Remodellanish",
-            "To‘qilgan suyak lamellarga almashadi"
-          ]
-        ]
+        "caption": "Klassik uch bosqich"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: nega bosqichlar qat‘iy ajratilmagan, qoplanishi nimani anglatadi? Nega remodellanish eng uzun? Doskaga: uch bosqichni qoplanuvchi uchta strelka sifatida chizdiring. Qo‘shimcha: Bikle to‘rt bosqichli tasnifni beradi (kallus ikkiga bo‘linadi), bu klassik uch bosqichga zid emas. Tipik xato: bosqichlarni qat‘iy ketma-ket va bir-biridan ajralgan deb o‘ylash."
     },
@@ -304,16 +342,26 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Sinish bitishining to‘rt fazasi",
-        "nodes": [
-          "1. Gematoma va yallig‘lanish",
-          "2. Xondro-, osteo-, angiogenez",
-          "3. Kallus mineralizatsiyasi",
-          "4. Remodellanish"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Gematoma, yallig‘lanish",
+            "text": "≈5 kun: trombotsit, neytrofil, monotsit; M1"
+          },
+          {
+            "title": "2. Yumshoq kallus",
+            "text": "≈5 kun: angiogenez, xondrogenez, osteogenez"
+          },
+          {
+            "title": "3. Qattiq kallus",
+            "text": "Bir necha hafta: xondrotsitlar mineralizatsiyasi"
+          },
+          {
+            "title": "4. Remodellanish",
+            "text": "3–4 haftadan keyin, oylar–yillar: lamellyar suyak"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Bikle bo‘yicha to‘rt faza"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: nega yallig‘lanishsiz ildiz hujayralar faollashmaydi? Yallig‘lanish bosqichi bitishda qanday rol o‘ynaydi? Doskada to‘rt fazani o‘qlar bilan chizdiring va har fazaga bitta asosiy hujayra yozing. Tipik xato: fazalarni qat’iy ajratilgan deb o‘ylash, aslida ular bir-biriga o‘tadi."
     },
@@ -409,31 +457,31 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Uch joyni solishtirish",
-        "nodes": [],
-        "header": [
-          "Joy",
-          "Jarayon",
-          "Xaftaga"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "1: periost bo‘ylab",
+            "items": [
+              "Jarayon: intramembranoz",
+              "Xaftaga kerak emas"
+            ]
+          },
+          {
+            "title": "2: sinish oralig‘ida",
+            "items": [
+              "Jarayon: endoxondral",
+              "Xaftaga orqali o‘tadi"
+            ]
+          },
+          {
+            "title": "3: ilik ichida",
+            "items": [
+              "Jarayon: intramedullyar",
+              "Xaftaga kerak emas"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "1: periost bo‘ylab",
-            "Intramembranoz",
-            "Kerak emas"
-          ],
-          [
-            "2: sinish oralig‘ida",
-            "Endoxondral",
-            "Bor, xaftaga orqali"
-          ],
-          [
-            "3: ilik ichida",
-            "Intramedullyar",
-            "Kerak emas"
-          ]
-        ]
+        "caption": "Suyak hosil bo‘lishining uch joyi"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: nima uchun sayt 2 o‘sish plastinkasidagi suyak hosil bo‘lishiga o‘xshaydi? Pin qo‘yilsa sayt 3 ga nima bo‘ladi? Doskada uzun suyak sinishini chizib, uch joyni raqamlang. Tipik xato: xaftaga bosqichi barcha joylarda bor deb o‘ylash, aslida u faqat sayt 2 da bor."
     },
@@ -625,7 +673,7 @@
           "uncertain": false
         },
         {
-          "text": "Erta M1 makrofaglar to‘qimani tozalaydi va mikroblardan himoya qiladi. Keyingi M2 makrofaglar yallig‘lanishni so‘ndiradi, angiogenez va progenitorlar differensiatsiyasini qo‘llaydi.",
+          "text": "Erta M1 makrofaglar to‘qimani tozalaydi, mikroblardan himoya qiladi. Keyingi M2 makrofaglar yallig‘lanishni so‘ndirib, angiogenezni qo‘llaydi.",
           "source": {
             "author": "Flurina Staubli va boshq.",
             "title": "Fracture healing: from molecular and cellular mechanisms to therapeutic strategies, Signal Transduction and Targeted Therapy",
@@ -652,7 +700,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "M1 (tozalovchi)",
+            "items": [
+              "To‘qimani tozalaydi",
+              "Mikroblardan himoya qiladi",
+              "Gipoksik gematomada sitokin ajratadi"
+            ]
+          },
+          {
+            "title": "M2 (quruvchi)",
+            "items": [
+              "Yallig‘lanishni so‘ndiradi",
+              "IL-10 ajratadi",
+              "VEGF: angiogenezni qo‘llaydi"
+            ]
+          }
+        ],
+        "caption": "M1 → M2 o‘tishi"
+      },
       "teacher_notes": "Vaqt: 4 daq. Tezkor savol: “Qaysi makrofag angiogenezni qo‘llaydi?” Muhokama: M1/M2 sxemasi nega soddalashtirilgan hisoblanadi? Doskada ikki ustunli ro‘yxat yozdiring: M1 vazifalari va M2 vazifalari. Tipik xato: M1 va M2 ni doimiy, o‘zgarmas hujayra turlari deb tushunish."
     },
     {
@@ -677,7 +746,7 @@
           "uncertain": false
         },
         {
-          "text": "Mezenximal o‘zak hujayralar (MSC) ham yallig‘lanishni bostiradi: to‘g‘ridan-to‘g‘ri kontakt va TGFβ (transformatsiyalovchi o‘sish omili beta) orqali Treg ni induksiya qiladi.",
+          "text": "MSC ham yallig‘lanishni bostiradi: to‘g‘ridan-to‘g‘ri kontakt va TGFβ (transformatsiyalovchi o‘sish omili beta) orqali Treg ni induksiya qiladi.",
           "source": {
             "author": "Bikle D va boshq.",
             "title": "Fracture healing: cellular mechanisms and impact of parathyroid hormone and its analogs, Frontiers in Endocrinology",
@@ -819,36 +888,37 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Taqdir omillari",
-        "nodes": [],
-        "header": [
-          "Omil",
-          "Yo‘nalish",
-          "Natija"
+        "kind": "tree",
+        "root": "Hujayra taqdiri",
+        "children": [
+          {
+            "label": "Kislorod + barqarorlik",
+            "items": [
+              "Osteogenez",
+              "Kortikal yuzada intramembranoz suyak"
+            ]
+          },
+          {
+            "label": "Gipoksiya yoki zo‘riqish",
+            "items": [
+              "Xondrogenez",
+              "Xaftagali yumshoq kallus"
+            ]
+          },
+          {
+            "label": "Runx2",
+            "items": [
+              "Osteoblast rivojlanishi"
+            ]
+          },
+          {
+            "label": "Sox9",
+            "items": [
+              "Xondrotsit dasturi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Kislorod + barqarorlik",
-            "Osteogenez",
-            "Kortikal yuzada intramembranoz suyak"
-          ],
-          [
-            "Gipoksiya yoki zo‘riqish",
-            "Xondrogenez",
-            "Xaftagali yumshoq kallus"
-          ],
-          [
-            "Runx2",
-            "Osteogenez",
-            "Osteoblast rivojlanishi"
-          ],
-          [
-            "Sox9",
-            "Xondrogenez",
-            "Xondrotsit dasturi"
-          ]
-        ]
+        "caption": "Taqdir omillari"
       },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Fiksatsiya beqaror bo‘lsa, kallusda qaysi yo‘nalish ustun bo‘ladi? 2) Nega xondrotsitlar oxirgi hujayra emas deb hisoblanadi? Doskada chizish: MSC dan ikki shoxli sxema, bir shox Runx2 → osteoblast, ikkinchisi Sox9 → xondrotsit. Tipik xato: Runx2 va Sox9 ni aralashtirish; Runx2 suyak, Sox9 xaftaga dasturi."
     },
@@ -917,7 +987,7 @@
           "uncertain": false
         },
         {
-          "text": "Gipertrofik xondrotsitlarda sox9 va X tur kollagen kamayadi, runx2 va β-katenin ortadi. So‘ng ishqoriy fosfataza, osterix, osteopontin va osteokalsin paydo bo‘ladi.",
+          "text": "Gipertrofik xondrotsitlarda sox9 va X tur kollagen kamayadi, runx2, β-katenin ortadi; so‘ng ishqoriy fosfataza, osterix, osteopontin, osteokalsin paydo bo‘ladi.",
           "source": {
             "author": "Bikle D va boshq.",
             "title": "Fracture healing: cellular mechanisms and impact of parathyroid hormone and its analogs, Frontiers in Endocrinology",
@@ -926,7 +996,7 @@
           "uncertain": false
         },
         {
-          "text": "MMP13 (matriks metalloproteinaza-13) matriksni parchalaydi, noggin esa pasayishi kerak. Dastlab to‘qima suyagi (woven bone) hosil bo‘ladi, 4-fazada u plastinkali suyakka almashadi.",
+          "text": "MMP13 matriksni parchalaydi, noggin esa pasayishi kerak. Dastlab to‘qima suyagi (woven bone) hosil bo‘ladi, 4-fazada u plastinkali suyakka almashadi.",
           "source": {
             "author": "Bikle D va boshq.",
             "title": "Fracture healing: cellular mechanisms and impact of parathyroid hormone and its analogs, Frontiers in Endocrinology",
@@ -1069,11 +1139,11 @@
         "rows": [
           [
             "Osteoklast",
-            "Mineral va organik matritsani rezorbsiya qiladi"
+            "Mineral va matritsani rezorbsiya qiladi"
           ],
           [
             "Osteoblast",
-            "Osteoid ajratadi va uni mineralizatsiya qiladi"
+            "Osteoid ajratadi, mineralizatsiya qiladi"
           ],
           [
             "Osteotsit",
@@ -1081,7 +1151,7 @@
           ],
           [
             "Qoplovchi hujayra",
-            "Nofaol yuzani qoplaydi, yangi suyak boshlanishiga yordam beradi"
+            "Nofaol yuzani qoplaydi"
           ]
         ]
       },
@@ -1127,8 +1197,174 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "RANKL",
+            "items": [
+              "Osteoblast, osteotsit, stromal, T hujayra",
+              "RANK ga bog‘lanadi",
+              "Rezorbsiyani kuchaytiradi"
+            ]
+          },
+          {
+            "title": "OPG",
+            "items": [
+              "Tuzoq (decoy) retseptor",
+              "RANKL ni tutib qoladi",
+              "Osteoklast hosil bo‘lishini cheklaydi"
+            ]
+          }
+        ],
+        "caption": "RANKL/OPG o‘qi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama savoli: RANKL/OPG nisbati oshsa suyak almashinuvi qaysi tomonga siljiydi? Estrogen tanqisligi bu nisbatga qanday ta’sir qilishi mumkin? Doskada chizing: tarozi — bir pallada RANKL (rezorbsiya), ikkinchisida OPG (tutib qolish). Tipik xato: OPG ni osteoklastni qo‘zg‘atuvchi omil deb o‘ylash yoki faqat RANKL miqdoriga qarab xulosa chiqarish."
+    },
+    {
+      "title": "Osteoklast–osteoblast bog‘lanishi: ephrin, S1P, Sema3A",
+      "bullets": [
+        {
+          "text": "RANKL (osteoblast, osteotsit, stromal va T hujayra) osteoklast prekursoridagi RANK ga bog‘lanib, NF-κB, NFATc1 va MAPK orqali rezorbsiyani boshlaydi.",
+          "source": {
+            "author": "Flurina Staubli va boshq.",
+            "title": "Fracture healing: from molecular and cellular mechanisms to therapeutic strategies, Signal Transduction and Targeted Therapy",
+            "page": "PMID 42768017, «Matrix turnover and coupling» bo‘limi"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Osteoblastdagi EphB4 orqali oldinga signal matriks yig‘ilishini, osteoklastdagi ephrinB2 orqali teskari signal NFATc1 bog‘liq osteoklastogenezni bostiradi.",
+          "source": {
+            "author": "Flurina Staubli va boshq.",
+            "title": "Fracture healing: from molecular and cellular mechanisms to therapeutic strategies, Signal Transduction and Targeted Therapy",
+            "page": "PMID 42768017, «Matrix turnover and coupling» bo‘limi"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "S1P (osteoklast va endoteliydan) osteoblastni rezorbsiya joyiga chaqiradi va omon qolishini qo‘llaydi.",
+          "source": {
+            "author": "Flurina Staubli va boshq.",
+            "title": "Fracture healing: from molecular and cellular mechanisms to therapeutic strategies, Signal Transduction and Targeted Therapy",
+            "page": "PMID 42768017, «Matrix turnover and coupling» bo‘limi"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sema3A (asosan osteoblast va osteotsit) osteoklast differensiatsiyasini to‘sadi va osteoblast faolligini oshiradi.",
+          "source": {
+            "author": "Flurina Staubli va boshq.",
+            "title": "Fracture healing: from molecular and cellular mechanisms to therapeutic strategies, Signal Transduction and Targeted Therapy",
+            "page": "PMID 42768017, «Matrix turnover and coupling» bo‘limi"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Osteoblast tomoni",
+            "items": [
+              "EphB4: matriks cho‘kishini rag‘batlantiradi",
+              "S1PR: S1P bilan jalb qilinadi, omon qoladi",
+              "Sema3A ajratadi: osteoklastni to‘sadi",
+              "RANKL va OPG ajratadi"
+            ]
+          },
+          {
+            "title": "Osteoklast tomoni",
+            "items": [
+              "RANK + RANKL: NF-κB, NFATc1, MAPK",
+              "ephrinB2: NFATc1 ni bostiradi",
+              "S1P ajratadi"
+            ]
+          }
+        ],
+        "caption": "Rezorbsiya → shakllanish aloqasi"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega rezorbsiya va shakllanish o‘zaro bog‘liq? 2) Sema3A qanday ikki tomonlama ta’sir ko‘rsatadi? Doskaga chizing: ikki hujayra va signal o‘qlari. Tipik xato: osteoklastni faqat «yemiruvchi» deb hisoblash.",
+      "source_note_removed": null
+    },
+    {
+      "title": "Matriks parchalanishi: MMP, TIMP va ADAMTS",
+      "bullets": [
+        {
+          "text": "Kallusning yuk ko‘taruvchi suyakka aylanishi uchun muvozanatli matriks parchalanishi kerak: MMP va ADAMTS proteazalari boshqaradi.",
+          "source": {
+            "author": "Flurina Staubli va boshq.",
+            "title": "Fracture healing: from molecular and cellular mechanisms to therapeutic strategies, Signal Transduction and Targeted Therapy",
+            "page": "PMID 42768017, «Matrix turnover and coupling» bo‘limi"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "MMP-9 (osteoklast, immun hujayra, endoteliy) tomir kirishi va xaftaga yo‘qolishini, MMP-13 xaftaga–suyak o‘tishini ta’minlaydi.",
+          "source": {
+            "author": "Flurina Staubli va boshq.",
+            "title": "Fracture healing: from molecular and cellular mechanisms to therapeutic strategies, Signal Transduction and Targeted Therapy",
+            "page": "PMID 42768017, «Matrix turnover and coupling» bo‘limi"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "MMP-2 keyingi matriks takomillashuviga yordam beradi; TIMP lar MMP faolligini cheklaydi; ADAMTS4/5 agrekanni parchalaydi.",
+          "source": {
+            "author": "Flurina Staubli va boshq.",
+            "title": "Fracture healing: from molecular and cellular mechanisms to therapeutic strategies, Signal Transduction and Targeted Therapy",
+            "page": "PMID 42768017, «Matrix turnover and coupling» bo‘limi"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Proteoliz yetarli bo‘lmasa tomir kirishi va xaftaga tozalanishi kechikadi, ortiqcha yoki vaqtsiz bo‘lsa yangi to‘qima beqaror bo‘ladi.",
+          "source": {
+            "author": "Flurina Staubli va boshq.",
+            "title": "Fracture healing: from molecular and cellular mechanisms to therapeutic strategies, Signal Transduction and Targeted Therapy",
+            "page": "PMID 42768017, «Matrix turnover and coupling» bo‘limi"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Ferment",
+          "Manba",
+          "Vazifasi"
+        ],
+        "rows": [
+          [
+            "MMP-9",
+            "Osteoklast, immun hujayra, endoteliy",
+            "Tomir kirishi, xaftaga yo‘qolishi"
+          ],
+          [
+            "MMP-13",
+            "Gipertrofik xondrotsit, osteoblast",
+            "Kollagen parchalanishi; xaftaga→suyak"
+          ],
+          [
+            "MMP-2",
+            "Osteoblast, fibroblast",
+            "Keyingi matriks takomili"
+          ],
+          [
+            "TIMP",
+            "Mezenximal, stromal hujayra",
+            "MMP larni cheklaydi"
+          ],
+          [
+            "ADAMTS4/5",
+            "Xondrotsit, fibroblast",
+            "Agrekanni parchalaydi"
+          ]
+        ],
+        "caption": "Proteolitik o‘qlar"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega proteoliz ortiqcha bo‘lsa ham xavfli? 2) TIMP lar qanday rol o‘ynaydi? Doskaga chizing: ferment–manba–vazifa jadvali. Tipik xato: bitmaslikni faqat osteogenez yetishmovchiligi deb o‘ylash.",
+      "source_note_removed": null
     },
     {
       "title": "Voqea tahlili: remodellanish va dori",
@@ -1205,31 +1441,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Hujayra manbalari",
-        "nodes": [],
-        "header": [
-          "Manba",
-          "Roli",
-          "Muhim jihat"
+        "kind": "tree",
+        "root": "Hujayra manbalari",
+        "children": [
+          {
+            "label": "Periost",
+            "items": [
+              "Asosiy manba",
+              "Ichki kambiy qavatida"
+            ]
+          },
+          {
+            "label": "Suyak iligi",
+            "items": [
+              "LepR+ hujayralar",
+              "Perivaskulyar stromal hujayra"
+            ]
+          },
+          {
+            "label": "Mushak",
+            "items": [
+              "Yordamchi manba",
+              "FAP hujayralari; Pax7 emas"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Periost",
-            "Asosiy manba",
-            "Ichki kambiy qavatida joylashgan"
-          ],
-          [
-            "Suyak iligi",
-            "LepR+ hujayralar",
-            "Perivaskulyar stromal hujayralar"
-          ],
-          [
-            "Mushak",
-            "Yordamchi manba",
-            "FAP hujayralari; Pax7 emas"
-          ]
-        ]
+        "caption": "Skelet progenitorlari manbalari"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega bitta o‘zak hujayra g‘oyasi shubha ostida? 2) Periost hujayralari ilik hujayralaridan nimasi bilan ustun? Doskada: sinish joyi atrofida periost, ilik va mushakni chizib, har biridan strelka qo‘ying. Tipik xato: Pax7 yo‘ldosh hujayralarni mushakdagi FAP hujayralari bilan adashtirish. Diqqat: FAP hujayralari hissa qo‘shadi, Pax7 yo‘ldosh hujayralar esa yo‘q."
     },
@@ -1373,38 +1610,106 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Bitmaslik turlari",
-        "nodes": [],
-        "header": [
-          "Turi",
-          "Kallus",
-          "Ma’nosi"
+        "kind": "tree",
+        "root": "Bitmaslik turlari",
+        "children": [
+          {
+            "label": "Gipertrofik",
+            "items": [
+              "Kallus ko‘p, ko‘prik yo‘q",
+              "Barqarorlik yetishmaydi"
+            ]
+          },
+          {
+            "label": "Atrofik",
+            "items": [
+              "Kallus juda kam",
+              "Qon tomir, hujayra faolligi buzilgan"
+            ]
+          },
+          {
+            "label": "Oligotrofik",
+            "items": [
+              "Oraliq belgilar"
+            ]
+          },
+          {
+            "label": "Past sifatli bitish",
+            "items": [
+              "Uzluksizlik bor, mustahkamlik kam"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Gipertrofik",
-            "Kallus ko‘p, ko‘prik yo‘q",
-            "Biologiya bor, barqarorlik yetishmaydi"
-          ],
-          [
-            "Atrofik",
-            "Kallus juda kam",
-            "Qon tomir yoki hujayra faolligi buzilgan"
-          ],
-          [
-            "Oligotrofik",
-            "Oraliq belgilar",
-            "Gipertrofik va atrofik o‘rtasida"
-          ],
-          [
-            "Past sifatli bitish",
-            "Uzluksizlik bor, mustahkamlik kam",
-            "Oddiy rasmda bilinmasligi mumkin"
-          ]
-        ]
+        "caption": "Bitmaslik turlari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Gipertrofik va atrofik bitmaslikning sababi qanday farq qiladi? 2) Nega vaqt chegaralari taxminiy? Doskada chizing: 3 oy – 6 oy – 9 oy vaqt chizig‘i va ustiga kechikish/bitmaslik. Tipik xato: kechikkan bitish ≠ bitmaslik; birinchisida jarayon davom etadi, ikkinchisida to‘xtagan."
+    },
+    {
+      "title": "Bitishni buzuvchi tizimli omillar: qarish va gormonlar",
+      "bullets": [
+        {
+          "text": "Qarishda MSC ning osteogen qobiliyati kamayadi, Wnt/β-katenin, IGF-1 va BMP/TGF-β signallari o‘zgaradi, mexanotransduksiya va angiogen javob susayadi.",
+          "source": {
+            "author": "Flurina Staubli va boshq.",
+            "title": "Fracture healing: from molecular and cellular mechanisms to therapeutic strategies, Signal Transduction and Targeted Therapy",
+            "page": "PMID 42768017, Modulators of fracture healing (1-jadval)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Natija: kallus mineralizatsiyasi sekin, tomir va anabolik javob zaif; kechikkan bitish va past sifatli regenerat xavfi.",
+          "source": {
+            "author": "Flurina Staubli va boshq.",
+            "title": "Fracture healing: from molecular and cellular mechanisms to therapeutic strategies, Signal Transduction and Targeted Therapy",
+            "page": "PMID 42768017, Modulators of fracture healing (1-jadval)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Jinsiy gormon tanqisligida osteoblast–osteoklast muvozanati, RANKL/OPG, oksidlovchi stress va NF-κB o‘zgaradi; sklerostin orqali Wnt susayadi.",
+          "source": {
+            "author": "Flurina Staubli va boshq.",
+            "title": "Fracture healing: from molecular and cellular mechanisms to therapeutic strategies, Signal Transduction and Targeted Therapy",
+            "page": "PMID 42768017, Modulators of fracture healing (1-jadval)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Estrogen tanqisligi modellarida kallus kechikishi va mineral yig‘ilishi hamda mexanik tiklanishi to‘liq bo‘lmasligi mumkin.",
+          "source": {
+            "author": "Flurina Staubli va boshq.",
+            "title": "Fracture healing: from molecular and cellular mechanisms to therapeutic strategies, Signal Transduction and Targeted Therapy",
+            "page": "PMID 42768017, Modulators of fracture healing (1-jadval)"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Qarish",
+            "items": [
+              "MSC osteogen qobiliyati kamayadi",
+              "Wnt, IGF-1, BMP/TGF-β o‘zgaradi",
+              "Mexanotransduksiya, angiogenez susayadi",
+              "Kallus mineralizatsiyasi sekinlashadi"
+            ]
+          },
+          {
+            "title": "Jinsiy gormon tanqisligi",
+            "items": [
+              "RANKL/OPG muvozanati buziladi",
+              "Oksidlovchi stress, NF-κB ↑",
+              "Sklerostin orqali Wnt ingibitsiyasi",
+              "Mineral yig‘ilishi to‘liq bo‘lmasligi mumkin"
+            ]
+          }
+        ],
+        "caption": "Tizimli modulyatorlar"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega qariganda kallus mineralizatsiyasi sekinlashadi? 2) Estrogen tanqisligi qaysi signal o‘qlarini buzadi? Doskaga chizing: ikki ustunli modulyatorlar jadvali. Tipik xato: faqat bitta omilga qarab bitish natijasini bashorat qilish.",
+      "source_note_removed": null
     },
     {
       "title": "Bitishni buzuvchi omillar",
@@ -1454,12 +1759,12 @@
           ],
           [
             "Diabet",
-            "Mikrotomir buzilishi, qon tomir omili kam",
+            "Mikrotomir buzilishi, tomir omili kam",
             "Kallus kichik, kam mineralli"
           ],
           [
             "Infeksiya",
-            "Doimiy yallig‘lanish, tomir kirishi buziladi",
+            "Doimiy yallig‘lanish, tomir buzilishi",
             "Bitmaslik, infeksiyali sinish"
           ],
           [
@@ -1475,7 +1780,7 @@
       "title": "Diqqat: radiografik bitish ≠ to‘liq mexanik tiklanish",
       "bullets": [
         {
-          "text": "Mexanik jihatdan past bitish mumkin: suyak uzluksizligi tiklangan, lekin yangi qism zaif. Mineral zichligi past, mikroarxitekturasi o‘zgargan yoki mustahkamligi kam bo‘ladi.",
+          "text": "Mexanik jihatdan past bitish mumkin: uzluksizlik tiklangan, lekin yangi qism zaif — mineral zichligi past, mikroarxitektura o‘zgargan yoki mustahkamligi kam.",
           "source": {
             "author": "Flurina Staubli va boshq.",
             "title": "Fracture healing: from molecular and cellular mechanisms to therapeutic strategies, Signal Transduction and Targeted Therapy",
@@ -1493,7 +1798,7 @@
           "uncertain": false
         },
         {
-          "text": "Osteotsitlar zo‘riqish va mikrozararni sezadi. Shu sabab mexanik muhit va biologik bitish sifati bog‘liq; rentgenda bitish to‘liq mexanik tiklanishni anglatmaydi.",
+          "text": "Osteotsitlar zo‘riqish va mikrozararni sezadi. Shu sabab mexanik muhit va bitish sifati bog‘liq; rentgenda bitish to‘liq mexanik tiklanish emas.",
           "source": {
             "author": "Flurina Staubli va boshq.",
             "title": "Fracture healing: from molecular and cellular mechanisms to therapeutic strategies, Signal Transduction and Targeted Therapy",
@@ -1502,7 +1807,7 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: xato qilish xavfi. Tez radiografik bitish ≠ yaxshi suyak sifati. Miya jarohatida kallus tez hosil bo‘lishi mumkin, lekin yakuniy suyak sifati optimal bo‘lmasligi mumkin.",
+          "text": "Diqqat: tez radiografik bitish ≠ yaxshi suyak sifati. Miya jarohatida kallus tez hosil bo‘lishi mumkin, lekin suyak sifati optimal bo‘lmasligi mumkin.",
           "source": {
             "author": "Flurina Staubli va boshq.",
             "title": "Fracture healing: from molecular and cellular mechanisms to therapeutic strategies, Signal Transduction and Targeted Therapy",
@@ -1527,7 +1832,7 @@
           "uncertain": false
         },
         {
-          "text": "Diabetda ilg‘or glikatsiya mahsulotlari (AGE) retseptori faollashadi, oksidativ stress oshadi, qon tomir endotelial o‘sish omili (VEGF) kamayadi, mikrotomirlar zararlanadi.",
+          "text": "Diabetda AGE retseptori faollashadi, oksidativ stress oshadi, VEGF kamayadi, mikrotomirlar zararlanadi.",
           "source": {
             "author": "Flurina Staubli va boshq.",
             "title": "Fracture healing: from molecular and cellular mechanisms to therapeutic strategies, Signal Transduction and Targeted Therapy",
@@ -1618,10 +1923,77 @@
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun klinik sinovlar natijasi bir xil emas? 2) PTH retseptori nega deyarli barcha bitishda ishtirok etuvchi hujayralarda muhim? Doskada chizish: PTH → retseptor → to‘rt yo‘l → bitishni rag‘batlantirish sxemasi. Tipik xato: davolash «bitmaslikni kamaytiradi» deb o‘ylash; manbada faqat bitish tezlashishi ko‘rsatilgan, bitmaslik soni kamaymagan."
     },
     {
+      "title": "PTH tajribasi va abaloparatid",
+      "bullets": [
+        {
+          "text": "Teriparatid (PTH 1–34) sinish bitishini tezlashtirishda hayvon va ayrim klinik tadqiqotlarda samarali, lekin odam uchun bu maqsadda FDA tasdiqlamagan.",
+          "source": {
+            "author": "Bikle D va boshq.",
+            "title": "Fracture healing: cellular mechanisms and impact of parathyroid hormone and its analogs, Frontiers in Endocrinology",
+            "page": "PMID 41334438, Clinical and animal studies"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gorter sharhidagi 41 hayvon tadqiqotida PTH alendronat kabi antirezorbtivlardan ustun: kallus, mustahkamlik va bitish ko‘rsatkichi yaxshiroq.",
+          "source": {
+            "author": "Bikle D va boshq.",
+            "title": "Fracture healing: cellular mechanisms and impact of parathyroid hormone and its analogs, Frontiers in Endocrinology",
+            "page": "PMID 41334438, Clinical and animal studies"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Klinik natijalar bir xil emas: ayrim tadqiqotlarda bitish tezlashgan, lekin bitmaslik soni kamaymagan.",
+          "source": {
+            "author": "Bikle D va boshq.",
+            "title": "Fracture healing: cellular mechanisms and impact of parathyroid hormone and its analogs, Frontiers in Endocrinology",
+            "page": "PMID 41334438, Clinical and animal studies"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Abaloparatid PTHrP ning sintetik 36 aminokislotali analogi; PTH retseptorining RG shakliga selektivroq — anabolik ta’sir kuchliroq, katabolik kamroq.",
+          "source": {
+            "author": "Bikle D va boshq.",
+            "title": "Fracture healing: cellular mechanisms and impact of parathyroid hormone and its analogs, Frontiers in Endocrinology",
+            "page": "PMID 41334438, Clinical and animal studies"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Teriparatid (PTH 1–34)",
+            "items": [
+              "Retseptor bilan bog‘lanishi R° ga moyilroq",
+              "Uzoqroq signal",
+              "RANKL ga ta’siri ko‘proq",
+              "Bitishni tezlatadi, bitmaslik kamaymagan"
+            ]
+          },
+          {
+            "title": "Abaloparatid",
+            "items": [
+              "PTHrP ning 36 a.k. analogi (76 % gomologiya)",
+              "RG shakliga selektivroq",
+              "Tezroq, qisqaroq signal: ko‘proq anabolik",
+              "RANKL ga ta’siri kamroq"
+            ]
+          }
+        ],
+        "caption": "PTH analoglari"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Retseptorning R° va RG shakli nimani belgilaydi? 2) Nega hayvon natijalari klinikaga o‘tmaydi? Doskaga chizing: ikki dori taqqoslash. Tipik xato: PTH ni bitishga tasdiqlangan davo deb hisoblash.",
+      "source_note_removed": null
+    },
+    {
       "title": "Xulosa va mustahkamlash",
       "bullets": [
         {
-          "text": "Tuzalish 4 bosqichda o‘tadi: gematoma va yallig‘lanish, yumshoq kallus, qattiq kallus, remodellanish. Dastlabki ikki bosqich taxminan 5 kundan, oxirgisi oylar-yillar davom etadi.",
+          "text": "Tuzalish 4 bosqichda: gematoma va yallig‘lanish, yumshoq kallus, qattiq kallus, remodellanish. Dastlabki ikkisi ≈5 kun, oxirgisi oylar–yillar davom etadi.",
           "source": {
             "author": "Bikle D va boshq.",
             "title": "Fracture healing: cellular mechanisms and impact of parathyroid hormone and its analogs, Frontiers in Endocrinology",
@@ -1639,7 +2011,7 @@
           "uncertain": false
         },
         {
-          "text": "Ildiz hujayralar periost, ilik va mushakdan keladi; periost asosiy manba. Remodellanishda osteoklastlar yigma suyakni so‘radi, osteoblastlar plastinkasimon suyakni tiklaydi.",
+          "text": "O‘zak hujayralar periost, ilik, mushakdan keladi (periost asosiy). Remodellanishda osteoklast yigma suyakni so‘radi, osteoblast lamellyar suyakni tiklaydi.",
           "source": {
             "author": "Bikle D va boshq.",
             "title": "Fracture healing: cellular mechanisms and impact of parathyroid hormone and its analogs, Frontiers in Endocrinology",
@@ -1648,7 +2020,7 @@
           "uncertain": false
         },
         {
-          "text": "Doimiy yallig‘lanish, qon tomir yetishmovchiligi, infeksiya, beqarorlik, diabet va chekish bitishni kechiktiradi. Davo: o‘sish omillari, hujayra va gen terapiyasi, biomateriallar.",
+          "text": "Doimiy yallig‘lanish, tomir yetishmovchiligi, infeksiya, beqarorlik, diabet, chekish bitishni kechiktiradi. Davo: o‘sish omillari, hujayra/gen terapiyasi.",
           "source": {
             "author": "Flurina Staubli va boshq.",
             "title": "Fracture healing: from molecular and cellular mechanisms to therapeutic strategies, Signal Transduction and Targeted Therapy",
@@ -1666,11 +2038,11 @@
       "question": "Klinikada ko‘p sonli sinish bemorlari, jumladan uzun naysimon suyak sinishlari davolanmoqda. Zamonaviy yordamga qaramay, ularning qancha qismida bitishning kechikishi yoki bitmasligi (nonunion) kutiladi?",
       "options": [
         "Taxminan 1–2 foizida",
-        "Taxminan 5–10 foizida",
+        "Taxminan 60–70 foizida",
         "Taxminan 30–40 foizida",
-        "Taxminan 60–70 foizida"
+        "Taxminan 5–10 foizida"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Mualliflar ko‘pchilik sinishlar zamonaviy davoda bitishini, taxminan 5–10 foizida esa (ayniqsa uzun naysimon suyaklarda) bitish kechikishi yoki nonunion rivojlanishini ko‘rsatadi.",
       "source": {
         "author": "Flurina Staubli va boshq.",
@@ -1697,12 +2069,12 @@
     {
       "question": "Sinishdan 2 kun o‘tgan bemorning sinish joyida eritrotsit va trombotsitlardan gematoma hosil bo‘lgan, unga neytrofil va monotsitlar kirgan. Bikle bo‘yicha bu qaysi faza?",
       "options": [
-        "1-faza: gematoma va yallig‘lanish",
-        "2-faza: angiogenez va yumshoq kallus",
         "3-faza: yumshoq kallus mineralizatsiyasi",
+        "2-faza: angiogenez va yumshoq kallus",
+        "1-faza: gematoma va yallig‘lanish",
         "4-faza: kallusning qayta shakllanishi"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "1-fazaga gematoma hosil bo‘lishi, unga neytrofil va monotsitlarning kirishi va yallig‘lanish javobi xos. Bu faza taxminan 5 kun davom etadi.",
       "source": {
         "author": "Bikle D va boshq.",
@@ -1820,22 +2192,6 @@
         "author": "Bikle D va boshq.",
         "title": "Fracture healing: cellular mechanisms and impact of parathyroid hormone and its analogs, Frontiers in Endocrinology",
         "page": "PMID 41334438"
-      }
-    },
-    {
-      "question": "Uzun suyak sinishida sinish uchlari orasidagi ko‘prik zonasida avval tog‘aysimon, keyin mineralizatsiyalanayotgan to‘qima topildi. Bu zonada suyak qaysi yo‘l bilan hosil bo‘lmoqda?",
-      "options": [
-        "Intramembranoz yo‘l bilan, tog‘ay oraliq bosqichisiz",
-        "Endoxondral yo‘l bilan, tog‘ay oraliq bosqichi orqali",
-        "Intramedullyar yo‘l bilan, ilik bo‘shlig‘ining ichida",
-        "To‘g‘ridan-to‘g‘ri periostda, xondrotsit bosqichisiz"
-      ],
-      "correct_index": 1,
-      "explanation": "Sinish uchlari orasidagi ko‘prik hududi (2-sayt) endoxondral suyak hosil bo‘lishi bilan rivojlanadi va suyak taraqqiyotini eslatadi. Periostdagi intramembranoz va ilikdagi intramedullyar suyak hosil bo‘lishi tog‘ay bosqichisiz kechadi.",
-      "source": {
-        "author": "Bikle D va boshq.",
-        "title": "Fracture healing: cellular mechanisms and impact of parathyroid hormone and its analogs, Frontiers in Endocrinology",
-        "page": "PMID 41334438; DOI 10.3389/fendo.2025.1703129"
       }
     },
     {

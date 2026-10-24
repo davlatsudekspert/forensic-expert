@@ -1,0 +1,586 @@
+{
+ "topic_id": "ktp26-u-41",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "O'tkir alkogol intoksikatsiyasining sud-tibbiy diagnostikasi",
+  "ru": "O'tkir alkogol intoksikatsiyasining sud-tibbiy diagnostikasi",
+  "en": "O'tkir alkogol intoksikatsiyasining sud-tibbiy diagnostikasi"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "ktp26-u-41-q01",
+   "question_i18n": {
+    "uz": "Zo‘raki o‘lim tarkibida zaharlanishlar qaysi o‘rinni egallaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Barcha sabablar ichida eng so‘nggi o‘rinda",
+     "Mexanik jarohatlardan keyin ikkinchi o‘rinda",
+     "Mexanik asfiksiyadan oldin birinchi o‘rinda",
+     "Mexanik jarohat va asfiksiyadan keyin uchinchi o‘rinda"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Darslikda zaharlanishlar zo‘raki o‘lim tarkibida mexanik jarohatlar va mexanik asfiksiyadan keyin uchinchi o‘rinda turishi aytilgan."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "132"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-41-q02",
+   "question_i18n": {
+    "uz": "Ekspert zaharlanishdan o‘lim holatlarini voqea tafsiloti bo‘yicha tahlil qilmoqda. Qaysi turi aksariyatni tashkil etadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Zaharlash yo‘li bilan qilingan qotillik",
+     "Zaharlanish orqali o‘z-o‘zini o‘ldirish",
+     "Qasddan sodir etilgan zaharlash holatlari",
+     "Tasodifan yuz bergan baxtsiz hodisalar"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Sud-tibbiy ekspertiza ma’lumotlariga ko‘ra aksariyat holatlar baxtsiz hodisa. Ikkinchi o‘rinda o‘z-o‘zini o‘ldirish turadi, qotillik esa kamdan-kam uchraydi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "132"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-41-q03",
+   "question_i18n": {
+    "uz": "Yozda yopiq, issiq va nam xonada alkogol ichgan shaxs zaharlandi. Qaysi omillar guruhi xavfni oshirgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Zaharlanish paytidagi tashqi shart-sharoit",
+     "Zaharli moddaning kimyoviy xususiyatlari",
+     "Organizmning individual xususiyatlari",
+     "Zaharning organizmga kirish yo‘li"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Alkogol va is gazi bilan zaharlanishga yopiq, harorati baland, namligi katta muhit moyillik yaratadi. Bu tashqi shart-sharoit omillari guruhiga kiradi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "135"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-41-q04",
+   "question_i18n": {
+    "uz": "Bir xil miqdordagi zahar katta yoshli odamga va kichik bolaga tushdi. Bolaning sezgirligi yuqori bo‘lishining asosiy sababi nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bolalarda oshqozon massasi har doim ko‘p bo‘ladi",
+     "Bolalar jinsiga ko‘ra zaharga ko‘proq sezgir bo‘ladi",
+     "Bolalarda zahar organizmdan juda tez chiqib ketadi",
+     "Vazni kichik va umumiy qarshilik tizimi to‘liq shakllanmagan"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Bolalar kattalarga nisbatan sezgirroq. Buni vaznining kichikligi va umumiy qarshilik ko‘rsatish tizimining to‘liq shakllanmaganligi bilan tushuntiriladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "134"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-41-q05",
+   "question_i18n": {
+    "uz": "Mutaxassis hodisa joyida dori idishlari, ishlatilgan shpritslar va qusuq moddalarni topdi. Bu zaharlanish diagnostikasining qaysi bosqichiga mos?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ikkinchi bosqich — murdani tashqi va ichki tekshirish",
+     "Uchinchi bosqich — qo‘shimcha laboratoriya tekshiruvlari",
+     "Birinchi bosqich — hodisa joyini ko‘zdan kechirish",
+     "Murdaning gistologik tekshiruvidan keyingi bosqich"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Birinchi bosqichda hodisa joyi mutaxassis ishtirokida ko‘zdan kechiriladi. Dori idishlari, shpritslar, qusuq moddalarga e’tibor beriladi, ashyoviy dalillar olinadi va tibbiy hujjatlar o‘rganiladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "135"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-41-q06",
+   "question_i18n": {
+    "uz": "Murda ko‘zdan kechirilganda murda dog‘lari yorqin olcha rangda, ichki a’zolardan achchiq bodom hidi keldi. Qaysi moddadan zaharlanishga shubha qilinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Is gazi (uglerod monooksidi) bilan",
+     "Sianid kislotasi yoki uning tuzi",
+     "Metgemoglobin hosil qiluvchi zahar",
+     "Gemoliz chaqiruvchi zahar moddasi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Sianid kislotasi yoki uning tuzlari bilan zaharlanganda murda dog‘lari yorqin olcha rangda bo‘ladi, ichki a’zolardan achchiq bodom hidi keladi. Is gazida dog‘lar pushti, metgemoglobin hosil qiluvchilarda jigarrang-qo‘ng‘ir, gemoliz chaqiruvchilarda sarg‘ish bo‘ladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "136"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-41-q07",
+   "question_i18n": {
+    "uz": "Zahar og‘iz orqali qabul qilingan, asosan jigarga ta’sir etgan va siydik orqali chiqqan. “Uch nuqta” qoidasiga ko‘ra murdadan qaysi namunalar olinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Oshqozon massasi, jigar bo‘lagi, buyrak",
+     "Bosh miya, yurak qoni va taloq bo‘lagi",
+     "Teri, soch, suyak va o‘pka bo‘lagi",
+     "O‘pka, yo‘g‘on ichak va mushak bo‘lagi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "“Uch nuqta” qoidasiga ko‘ra namunalar zahar kirgan joydan (oshqozon massasi), asosan ta’sir etgan joydan (jigar bo‘lagi) va chiqqan joydan (butun buyrak siydik bilan) olinadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "136"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-41-q08",
+   "question_i18n": {
+    "uz": "Metil spirti ichgan jabrlanganda dastlab kuchsiz narkotik ta’sir, keyin kardio-, nefro- va neyrotoksik o‘zgarishlar rivojlandi. Keyingi o‘zgarishlar qaysi metabolit bilan tushuntiriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Atsetaldegid (etil spirtidan)",
+     "Oksalat kislotasi (glikoldan)",
+     "Sirka kislotasi (atsetaldegiddan)",
+     "Formaldegid (metil spirtidan)"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Metil spirtining butun molekulasi narkotik ta’sir qiladi. Keyingi kardiotoksik, nefrotoksik va neyrotoksik o‘zgarishlar uning metaboliti formaldegid ta’siri bilan tushuntiriladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "138"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-41-q09",
+   "question_i18n": {
+    "uz": "Ekspert etil spirti va barbituratlar bilan zaharlanishni funksional zaharlarning qaysi guruhchasiga kiritadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Markaziy nerv tizimini falajlovchi",
+     "Markaziy nerv tizimini qo‘zg‘atuvchi",
+     "Markaziy nerv tizimini so‘ndiruvchi",
+     "Periferik nerv tizimiga ta’sir etuvchi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Sud-tibbiy tasnifda etil va boshqa spirtlar, uyqu dorilari (barbituratlar) va trankvilizatorlar funksional zaharlarning markaziy nerv tizimini so‘ndiruvchi guruhchasiga kiradi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "140"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-41-q10",
+   "question_i18n": {
+    "uz": "Qaysi holatda organizmdagi endogen alkogol miqdori odatdagidan ko‘payadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kuchli ruhiy ta’sirlanish paytida",
+     "Gipoksiya holatida bo‘lganda",
+     "Sovuq yeyishdan keyin",
+     "Jismoniy zo‘riqish natijasida"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Endogen alkogol miqdori kuchli ruhiy ta’sirlanish, travma, sovuq yeyish va jismoniy zo‘riqishda kamayadi. Ijobiy emotsiyalarda va gipoksiya holatida esa ko‘payadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "156"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-41-q11",
+   "question_i18n": {
+    "uz": "Bemor och qoringa etil spirti ichgan. Uning qanchasi bog‘lanib, qonga so‘rilmaydi (tiklanmaydigan defitsit)?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Taxminan 40 foizi",
+     "Taxminan 5 foizi",
+     "Taxminan 20 foizi",
+     "Taxminan 80 foizi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Och qoringa qabul qilinganda etil spirtining 5 foizga yaqini bog‘lanib, qonga so‘rilmaydi. Oshqozon to‘la bo‘lsa, taxminan 40 foizi vaqtincha bog‘lanadi va so‘rilish kechikadi. 20 foiz va 80 foiz esa oshqozon hamda ichakda so‘rilish ulushlari."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "157"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-41-q12",
+   "question_i18n": {
+    "uz": "Tireotoksikozi bor bemor spirtli ichimlik ichdi. Uning rezorbsiya davri odatda qanday o‘zgaradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Rezorbsiya davri qisqaradi",
+     "Rezorbsiya davri uzayadi",
+     "Rezorbsiya davri o‘zgarmaydi",
+     "Rezorbsiya davri bo‘lmaydi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Rezorbsiya davri odatda 1-2 soat davom etadi. Modda almashinuvi kuchli bo‘lganda (masalan, tireotoksikozda) u qisqaradi. To‘la oshqozon, giperatsid gastrit va stress esa uni uzaytiradi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "157"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-41-q13",
+   "question_i18n": {
+    "uz": "Etil spirti metabolizmining birinchi bosqichida qaysi ferment ta’sirida qaysi modda hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Katalaza ta’sirida karbonat angidridi",
+     "Aldegiddegidrogenaza ta’sirida atsetaldegid",
+     "Alkogoldegidrogenaza ta’sirida atsetaldegid",
+     "Alkogoldegidrogenaza ta’sirida sirka kislotasi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Birinchi bosqichda alkogoldegidrogenaza etil spirtini atsetaldegidga aylantiradi. Ikkinchi bosqichda aldegiddegidrogenaza atsetaldegidni oksidlab sirka kislotasiga o‘tkazadi, keyin suv va karbonat angidridi hosil bo‘ladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "157"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-41-q14",
+   "question_i18n": {
+    "uz": "Shaxsda alkogoldegidrogenaza aktivligi juda baland, aldegiddegidrogenaza yetishmaydi. Qonda spirt kam bo‘lsa-da, intoksikatsiya kuchli. Sababi nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Spirtning oshqozonda bog‘lanib qolishi",
+     "Spirtning siydik orqali sekin ajralishi",
+     "Endogen alkogol miqdorining keskin oshishi",
+     "Atsetaldegidning organizmda tez to‘planishi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Fermentlarning atipik shaklida spirt atsetaldegidga tez aylanadi, atsetaldegid esa sekin oksidlanadi. Natijada toksik atsetaldegid to‘planib, qonda spirt konsentratsiyasi baland bo‘lmasa ham kuchli intoksikatsiya, ba’zan o‘lim kuzatiladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "157"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-41-q15",
+   "question_i18n": {
+    "uz": "Tekshiruvda qondagi etil spirti konsentratsiyasi pasaymoqda, siydikdagisi esa baland. Bu qaysi davrga mos keladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Rezorbsiya davri",
+     "Takroriy qabul davri",
+     "Eliminatsiya davri",
+     "Endogen alkogol davri"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Eliminatsiya davrida qondagi konsentratsiya pasayadi, siydikdagisi esa baland bo‘ladi. Rezorbsiya davrida aksincha: qondagi konsentratsiya siydikdagidan baland va oshib boradi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "159"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-41-q16",
+   "question_i18n": {
+    "uz": "Tirik shaxs chuqur uyqu holatida, spirt eliminatsiyasi davrida. Vidmark konstantasi (P) qaysi oraliqda bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,20–0,24 promille/soat",
+     "0,10–0,12 promille/soat",
+     "0,15–0,18 promille/soat",
+     "0,30–0,40 promille/soat"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Uyqu holatida spirt kamayish tezligi pastroq bo‘ladi (0,10–0,12), koma holatida esa 0,10 dan ham past. 0,15–0,18 o‘rtacha jismoniy yuklamaga, 0,20–0,24 kuchli yuklamaga, 0,30–0,40 esa alkogolga tolerantlikka xos."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "159"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-41-q17",
+   "question_i18n": {
+    "uz": "Vidmark–Balyakin formulasi bilan hisoblashda ozg‘in odam uchun reduksiya omili (r) qaysi oraliqda olinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,55–0,65 oralig‘ida",
+     "0,10–0,13 oralig‘ida",
+     "0,70–0,75 oralig‘ida",
+     "0,20–0,24 oralig‘ida"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Ozg‘in odamlarda reduksiya omili balandroq (0,70–0,75), to‘la odamlarda pastroq (0,55–0,65). 0,10–0,13 va 0,20–0,24 Vidmark konstantasiga tegishli, reduksiya omiliga emas."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "160"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-41-q18",
+   "question_i18n": {
+    "uz": "Tirik shaxsning qonida 2,0 promille etil spirti topildi. Amaldagi qoidalarga ko‘ra bu qaysi holat?"
+   },
+   "options_i18n": {
+    "uz": [
+     "O‘rta darajali mastlik",
+     "Engil darajali mastlik",
+     "Kuchli darajali mastlik",
+     "Etil spirtidan zaharlanish"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "1,5 dan 2,5 promillegacha o‘rta daraja hisoblanadi. 0,5–1,5 engil, 2,5–3,0 kuchli daraja, 3,0 dan yuqori esa zaharlanish deb baholanadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "160"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-41-q19",
+   "question_i18n": {
+    "uz": "Simpson bo‘yicha spirt eliminatsiyasining median tezligi taxminan qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "≈ 15 mg%/soat",
+     "≈ 5 mg%/soat",
+     "≈ 30 mg%/soat",
+     "≈ 50 mg%/soat"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Eliminatsiya har kimda doimiy tezlikda; BAC pasayishining median tezligi taxminan 15 mg%/soat, oraliq 10–20, ko‘pchilikda 13–18 mg%/soat."
+   },
+   "source": {
+    "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+    "title": "Simpson's Forensic Medicine, 13th ed.",
+    "page": "189"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-41-q20",
+   "question_i18n": {
+    "uz": "Kishi etil spirti o‘rniga metil spirti ichdi. Organizmda oksidlanish natijasida qaysi kuchli toksik metabolitlar hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Atsetaldegid va sirka kislotasi",
+     "Formaldegid va chumoli kislotasi",
+     "Glikol aldegid va oksalat kislotasi",
+     "Aseton va sut kislotasi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Metanol alkogoldegidrogenaza va katalaza ta’sirida formaldegid va chumoli kislotasiga aylanadi, atsidoz rivojlanadi. Atsetaldegid va sirka kislotasi etil spirtining, glikol aldegid va oksalat kislotasi etilenglikolning metabolitlaridir."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "161"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "G‘iyosov Z.A.",
+   "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti"
+  },
+  {
+   "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+   "title": "Simpson's Forensic Medicine, 13th ed."
+  }
+ ]
+}

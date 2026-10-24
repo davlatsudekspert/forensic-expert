@@ -1,0 +1,590 @@
+{
+ "topic_id": "ktp26-u-58",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Tizimli yallig'lanish reaksiyasi sindromining morfologiyasi va patogenezi",
+  "ru": "Tizimli yallig'lanish reaksiyasi sindromining morfologiyasi va patogenezi",
+  "en": "Tizimli yallig'lanish reaksiyasi sindromining morfologiyasi va patogenezi"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "ktp26-u-58-q01",
+   "question_i18n": {
+    "uz": "SIRS ta’rifiga ko‘ra, u qanday javob hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat bakteriyalar chaqiradigan antigenga xos spetsifik javob",
+     "Faqat shikastlangan to‘qima ichida cheklangan mahalliy javob",
+     "Faqat o‘sma hujayralarida kechadigan autoimmun yallig‘lanish",
+     "Infeksion va noinfeksion omillar chaqiradigan nospetsifik, haddan oshgan himoya javobi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "SIRS infeksion yoki noinfeksion stressorlar (travma, kuyish, operatsiya, ishemiya va reperfuziya, o‘sma) chaqiradigan nospetsifik, haddan oshgan himoya javobidir. U nazoratdan chiqsa, tizimli zarar yetkazadi."
+   },
+   "source": {
+    "author": "Jingjing Ye va boshq.",
+    "title": "The role of mtDAMPs in the trauma-induced systemic inflammatory response syndrome, Frontiers in Immunology",
+    "page": "PMID 37533869, Abstract va Introduction"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-58-q02",
+   "question_i18n": {
+    "uz": "Keng kuyish olgan bemorda yallig‘lanish jarayoni boshlandi. Kuyishdan zararlangan to‘qimadan ajralib, makrofaglarni dastlab qo‘zg‘atadigan molekulalar qaysilar?"
+   },
+   "options_i18n": {
+    "uz": [
+     "PAMP — patogenga xos molekulyar naqshlar",
+     "IL-1ra — IL-1 retseptor antagonisti",
+     "DAMP — zararlanish bilan bog‘liq molekulyar naqshlar",
+     "sTNFR — eruvchan TNF retseptorlari"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Kuyish kasalligida zararlangan to‘qimadan ajralgan DAMP lar makrofaglarni qo‘zg‘atadi. Natijada neytrofillar, fibroblastlar va endoteliy hujayralari endogen mediatorlarni ko‘p ishlab chiqaradi. Travma chaqirgan SIRS asosan DAMP lar orqali vujudga keladi, PAMP lar esa infeksion SIRS bilan bog‘liq."
+   },
+   "source": {
+    "author": "Sikora JP va boshq.",
+    "title": "Neutrophils and the Systemic Inflammatory Response Syndrome (SIRS), International Journal of Molecular Sciences",
+    "page": "PMID 37686271, 2.1-bo‘lim (Immune Response to Infectious and Noninfectious Stimuli)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-58-q03",
+   "question_i18n": {
+    "uz": "Bemorda yallig‘lanish omili kuchli, organizmning moslashuvchan antiinflammator mexanizmlari esa yetarli emas. Jarayon nima bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Yallig‘lanish o‘z-o‘zidan so‘nadi va belgilar asta-sekin yo‘qoladi",
+     "Yallig‘lanish faqat jarohat atrofida cheklanib qoladi",
+     "Faqat antiinflammator sitokinlar sintezi kuchayib, immun javob yo‘qoladi",
+     "Proinflammator mediatorlar qonga o‘tib, uzoq to‘qimalarni ham zararlaydi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Nazoratdagi yallig‘lanishda proinflammator mediatorlar antiinflammator sitokinlar hosil bo‘lishiga olib keladi va belgilar so‘nadi. Omil kuchli, organizm esa zaif bo‘lsa, jarayon umumlashadi. Mediatorlar tizimli qon oqimiga o‘tib, uzoq to‘qimalarga halokatli ta’sir qiladi. Klinik jihatdan bu SIRS dir."
+   },
+   "source": {
+    "author": "Sikora JP va boshq.",
+    "title": "Neutrophils and the Systemic Inflammatory Response Syndrome (SIRS), International Journal of Molecular Sciences",
+    "page": "PMID 37686271, 1-bo‘lim (Introduction)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-58-q04",
+   "question_i18n": {
+    "uz": "Bemorda giperfaollik (SIRS) va immunosupressiya (CARS) davrlari vaqti-vaqti bilan almashinib turibdi. Bu holat qanday nomlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "MARS — aralash antagonistik javob sindromi",
+     "CARS — kompensator antiinflammator javob sindromi",
+     "DIC — tomir ichida tarqoq ivish sindromi",
+     "MODS — ko‘p a’zolar disfunksiyasi sindromi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Yallig‘lanish va antiinflammator omillar muvozanati buzilsa, MARS rivojlanishi mumkin. Bu immunologik dissonans bo‘lib, unda SIRS giperfaolligi va CARS immunosupressiyasi davriy ravishda almashadi. Og‘ir holatda MODS, septik shok yoki anergiyaga olib keladi."
+   },
+   "source": {
+    "author": "Sikora JP va boshq.",
+    "title": "Neutrophils and the Systemic Inflammatory Response Syndrome (SIRS), International Journal of Molecular Sciences",
+    "page": "PMID 37686271, 1-bo‘lim (Introduction)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-58-q05",
+   "question_i18n": {
+    "uz": "CD4 Th2 limfotsitlari qaysi antiinflammator sitokinlarni sintez qiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "TNF-α va IL-1 sitokinlarini",
+     "IL-8 va IL-12 sitokinlarini",
+     "IL-10 va IL-13 sitokinlarini",
+     "IFN-γ va IL-2 sitokinlarini"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Proinflammator javob teskari aloqa orqali antiinflammator mexanizmlarni yoqadi. Natijada Th2 limfotsitlari IL-10 va IL-13 kabi antiinflammator sitokinlarni sintez qiladi. TNF-α, IL-1, IL-8 va IL-12 proinflammator sitokinlar. IFN-γ va IL-2 ni Th1 limfotsitlari ishlab chiqaradi."
+   },
+   "source": {
+    "author": "Sikora JP va boshq.",
+    "title": "Neutrophils and the Systemic Inflammatory Response Syndrome (SIRS), International Journal of Molecular Sciences",
+    "page": "PMID 37686271, 2-bo‘lim (Pathomechanism of Immune Response in SIRS)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-58-q06",
+   "question_i18n": {
+    "uz": "Shifokor to‘qimaga yallig‘lantiruvchi ta’sir bo‘lgandan bir necha daqiqa o‘tgach yallig‘lanish o‘chog‘ini tekshirdi. Qaysi professional fagotsit hujayralar o‘choqda birinchi paydo bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Neytrofil granulotsitlar",
+     "Makrofaglar va monotsitlar",
+     "Dendritik hujayralar",
+     "Treg limfotsitlar"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Neytrofillar professional fagotsitlar orasida birinchi bo‘lib, ta’sirdan bir necha daqiqa o‘tgach paydo bo‘ladi. Makrofaglar bir necha soatdan keyin keladi va o‘choqda uzoqroq qoladi."
+   },
+   "source": {
+    "author": "Sikora JP va boshq.",
+    "title": "Neutrophils and the Systemic Inflammatory Response Syndrome (SIRS), International Journal of Molecular Sciences",
+    "page": "PMID 37686271, 2.2-bo‘lim"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-58-q07",
+   "question_i18n": {
+    "uz": "TNF-α va IL-1 ta’sirida neytrofillar tomir devoriga yopishmoqda. Endoteliy yuzasida bu yopishuvni ta’minlovchi qaysi molekulalar induksiyalanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "ICAM-1 va ICAM-2 molekulalari",
+     "fMLP va C5a xemoatraktantlari",
+     "Perforin va granzim oqsillari",
+     "Superoksiddismutaza fermenti"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Endoteliyda ICAM-1 va ICAM-2 induksiyalanadi, neytrofillarda integrinlar bo‘ladi, selektinlar esa ikkala hujayrada ifodalanadi. fMLP va C5a xemotaksisni ta’minlaydi, adgeziyani emas."
+   },
+   "source": {
+    "author": "Sikora JP va boshq.",
+    "title": "Neutrophils and the Systemic Inflammatory Response Syndrome (SIRS), International Journal of Molecular Sciences",
+    "page": "PMID 37686271, 2.5-bo‘lim"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-58-q08",
+   "question_i18n": {
+    "uz": "Qon aylanishidagi neytrofil TNF-α ta’sirida «primed» holatga o‘tdi. Keyingi qo‘zg‘atuvchiga uning javobi qanday bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Javobi susayadi, ROS hosil bo‘lishi kamayadi",
+     "Javobi o‘zgarmaydi, hujayra tinch qoladi",
+     "Javobi kuchayadi, ROS ko‘p hosil bo‘ladi",
+     "Javobi susayadi, apoptozi tezlashadi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Primed granulotsit qo‘zg‘atuvchilarga ancha kuchli javob beradi. ROS va yallig‘lanish sitokinlari ortiqcha hosil bo‘ladi, apoptoz esa tormozlanadi. Eng kuchli priming beruvchi endogen omil TNF-α hisoblanadi."
+   },
+   "source": {
+    "author": "Sikora JP va boshq.",
+    "title": "Neutrophils and the Systemic Inflammatory Response Syndrome (SIRS), International Journal of Molecular Sciences",
+    "page": "PMID 37686271, 2.5–2.6-bo‘limlar"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-58-q09",
+   "question_i18n": {
+    "uz": "Nima uchun neytrofillarni apoptoz yo‘li bilan zararsizlantirish nekrozdan xavfsizroq hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Hujayra tarkibi atrofga chiqib, makrofaglarni faollashtiradi",
+     "Hujayra umri uzayib, bakteritsid kuchi ortadi",
+     "Hujayra shishib yorilib, proteazalar to‘qimaga tarqaladi",
+     "Hujayra tarkibi tashqariga chiqmay, makrofaglar uni olib tashlaydi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Apoptozda hujayra o‘z o‘limini nazorat qiladi: membrana butun qoladi va zaharli tarkib tashqariga chiqmaydi. Makrofaglar apoptotik neytrofillarni olib tashlaydi. Nekrozda esa hujayra tarkibi chiqib, to‘qimani shikastlashi mumkin."
+   },
+   "source": {
+    "author": "Sikora JP va boshq.",
+    "title": "Neutrophils and the Systemic Inflammatory Response Syndrome (SIRS), International Journal of Molecular Sciences",
+    "page": "PMID 37686271, 2.3-bo‘lim"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-58-q10",
+   "question_i18n": {
+    "uz": "Septitsemiyali bemorda TNF-α va IL-1 endoteliy yuzasida qaysi omil ekspressiyasini oshirib, ivish jarayonini boshlaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faollashgan protein C",
+     "To‘qima omili (tissue factor)",
+     "Azot oksidi sintezi",
+     "To‘qima omili ingibitori"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "TNF-α va IL-1 endoteliy, monotsit va neytrofillarda to‘qima omili ekspressiyasini oshiradi. U VII omilni faollashtirib, trombin va fibrin hosil bo‘lishiga olib keladi. Qolgan variantlar antikoagulyant xossalarga ega."
+   },
+   "source": {
+    "author": "Sikora JP va boshq.",
+    "title": "Neutrophils and the Systemic Inflammatory Response Syndrome (SIRS), International Journal of Molecular Sciences",
+    "page": "PMID 37686271, 3.1 va 3.3-bo‘limlar"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-58-q11",
+   "question_i18n": {
+    "uz": "Sepsisli bemorda mikrosirkulyatsiyada tromblar paydo bo‘ldi, qon ketish va ivish birga kechmoqda (DIC). Endoteliyning tizimli zararlanishida bunga qaysi o‘zgarish sabab bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ivish susayadi, fibrinoliz esa kuchayadi",
+     "Ivish kuchayadi, fibrinoliz esa tormozlanadi",
+     "Ivish ham, fibrinoliz ham bir xil susayadi",
+     "Ivish susayadi, fibrinoliz ham tormozlanadi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Sitokinlar endoteliyga tizimli ta‘sir qilib, ivishni rag‘batlantiradi va tabiiy fibrinolizni tormozlaydi. Natijada mikrosirkulyatsiyada tromboz rivojlanadi va a‘zolar zararlanishi kuchayadi. Tarqalgan tomir ichi ivishi sindromida (DIC) qon ketish va ivish bir vaqtda kuzatiladi."
+   },
+   "source": {
+    "author": "Sikora JP va boshq.",
+    "title": "Neutrophils and the Systemic Inflammatory Response Syndrome (SIRS), International Journal of Molecular Sciences",
+    "page": "PMID 37686271"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-58-q12",
+   "question_i18n": {
+    "uz": "Faollashgan neytrofilda NADPH-oksidaza kompleksi yig‘ilishi uchun p47phox bo‘lagi qaysi ferment ta‘sirida fosforillanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Superoksiddismutaza (SOD)",
+     "Mieloperoksidaza (MPO)",
+     "Protein kinaza C (PKC)",
+     "Ksantinoksidaza (XO)"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Tinch holatda p40, p47 va p67phox sitozolda, p22phox va gp91phox esa membranada alohida turadi, shuning uchun ferment nofaol bo‘ladi. Faollashganda p47phox protein kinaza C ishtirokida fosforillanadi va butun kompleks membranaga o‘tib sitoxrom b558 bilan birlashadi."
+   },
+   "source": {
+    "author": "Sikora JP va boshq.",
+    "title": "Neutrophils and the Systemic Inflammatory Response Syndrome (SIRS), International Journal of Molecular Sciences",
+    "page": "PMID 37686271"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-58-q13",
+   "question_i18n": {
+    "uz": "Shokdan so‘ng to‘qima anoksiyaga uchradi, keyin qon oqimi tiklandi (reperfuziya). Superoksid anion radikalining asosiy manbai nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Dehidrogenazaning ksantinoksidazaga aylanishi",
+     "Superoksiddismutazaning keskin faollashuvi",
+     "Glutation peroksidazaning keskin faollashuvi",
+     "Mieloperoksidazaning faoliyati to‘xtashi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Sog‘lom to‘qimada dehidrogenaza ustun turadi. Anoksiyada u ksantinoksidazaga aylanadi, ushbu ferment molekulyar kislorodni ishlatib superoksid anion radikalini hosil qiladi. Bu reaksiya reperfuziyadan keyingi reaktiv kislorod turlarining (ROS) asosiy manbai hisoblanadi."
+   },
+   "source": {
+    "author": "Sikora JP va boshq.",
+    "title": "Neutrophils and the Systemic Inflammatory Response Syndrome (SIRS), International Journal of Molecular Sciences",
+    "page": "PMID 37686271"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-58-q14",
+   "question_i18n": {
+    "uz": "Travmadan keyin bemorda infeksiya belgilari yo‘q, ammo SIRS rivojlandi. Bu holat asosan qaysi molekulalar orqali vositalanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "PAMP — patogenlarga xos molekulyar naqshlar",
+     "Faqat tashqaridan kirgan bakterial endotoksinlar",
+     "Faqat adaptiv immunitet antitanachalari va T-hujayralar",
+     "DAMP — shikastlangan to‘qima chiqargan xavf signallari"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Infeksiyadan kelib chiqqan SIRS patogenga xos molekulyar naqshlar (PAMP) bilan vositalanadi. Travmatik SIRS esa asosan shikastlanish bilan bog‘liq molekulyar naqshlar (DAMP) orqali rivojlanadi, ular orasida mitoxondrial DAMPlar (mtDAMP) ham bor."
+   },
+   "source": {
+    "author": "Jingjing Ye va boshq.",
+    "title": "The role of mtDAMPs in the trauma-induced systemic inflammatory response syndrome, Frontiers in Immunology",
+    "page": "PMID 37533869"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-58-q15",
+   "question_i18n": {
+    "uz": "Mitoxondrial DNK (mtDNK) signal yo‘llaridan qaysi biri oksidlangan mtDNKni afzal ko‘radi va kaspaza-1 orqali IL-1β ni yetiltiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "cGAS–STING signal yo‘li",
+     "NLRP3 inflamasomasi yo‘li",
+     "FPR1 retseptori signal yo‘li",
+     "TLR9–MyD88 signal yo‘li"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "cGAS oksidlangan ham, oksidlanmagan mtDNKni bog‘laydi. NLRP3 esa oksidlangan mtDNKni afzal ko‘radi. NLRP3 faollashgach kaspaza-1 IL-1β va IL-18 prekursorlarini yetuk shaklga o‘tkazadi."
+   },
+   "source": {
+    "author": "Jingjing Ye va boshq.",
+    "title": "The role of mtDAMPs in the trauma-induced systemic inflammatory response syndrome, Frontiers in Immunology",
+    "page": "PMID 37533869"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-58-q16",
+   "question_i18n": {
+    "uz": "Kuyishdan so‘ng o‘tkir o‘pka shikastlanishi (ALI) rivojlangan sichqonlarda plazma mtDNA darajasi oshgan, o‘pkada neytrofillar ko‘paygan. mtDNA neytrofil infiltratsiyasini qaysi yo‘llar orqali kuchaytiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat TGF-β va kollagen cho‘kishi orqali",
+     "cGAS/STING hamda NLRP3 signal yo‘llari orqali",
+     "Faqat FPR3 va kardiolipin signali orqali",
+     "Faqat PINK1 bog‘liq mitofagiya yo‘li orqali"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Kuyishdan keyingi ALI modellarida plazma mtDNA oshishi neytrofil infiltratsiyasini cGAS/STING va NLRP3 yo‘llari orqali kuchaytirgan. TGF-β fibrozga, FPR3 esa neytrofil faollashuviga tegishli. PINK1 mitofagiyasi esa mexanik ventilyatsiya modelida mtDNA chiqishiga olib kelgan."
+   },
+   "source": {
+    "author": "Jingjing Ye va boshq.",
+    "title": "The role of mtDAMPs in the trauma-induced systemic inflammatory response syndrome, Frontiers in Immunology",
+    "page": "PMID 37533869, «Lung» bo‘limi"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-58-q17",
+   "question_i18n": {
+    "uz": "Itning o‘pka gistologiyasida shikastdan 5 kun o‘tgach II tur pnevmotsitlar giperplaziyasi va fibroblastlar proliferatsiyasi topildi. Bu diffuz alveolyar shikastlanish (DAD) ning qaysi bosqichi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ekssudativ (o‘tkir) bosqich",
+     "Fibrozlanuvchi (surunkali) bosqich",
+     "Rezolyutsiya (tiklanish) bosqichi",
+     "Proliferativ (tashkillanuvchi) bosqich"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Proliferativ bosqich shikastdan 3–7 kun o‘tgach boshlanadi: II tur pnevmotsitlar giperplaziyasi 2–3 kunda paydo bo‘lib, 7 kunda keng tarqaladi. Ekssudativ bosqich 0–7 kun, gialin membranalar bilan; fibroz esa 14-kunga kelib keng bo‘ladi."
+   },
+   "source": {
+    "author": "Wong HE va boshq.",
+    "title": "Diffuse alveolar damage, acute respiratory distress syndrome (ARDS), and non-cardiogenic pulmonary edema. Part 1: ARDS endotypes, including systemic inflammatory response syndrome and sepsis, with dog and cat examples, Journal of Veterinary Diagnostic Investigation: Official Publication of the American Association of Veterinary Laboratory Diagnosticians",
+    "page": "PMID 41782298, DAD bosqichlari bo‘limi"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-58-q18",
+   "question_i18n": {
+    "uz": "Itda oshqozonning kislotali mazmuni aspiratsiya bo‘ldi. Mualliflar fikricha, dastlabki kislotali shikast ARDSning qaysi endotipiga mansub?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Epiteliy endotipi — alveolyar epiteliy shikasti",
+     "Angiopatiya endotipi — tizimli mikrotromboz",
+     "Endoteliy endotipi — tomir devorining birlamchi shikasti",
+     "Tizimli endotip — uzoq o‘choq mediatorlari ta’siri"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Mualliflar dastlabki kislotali shikastni epiteliy endotipi deb hisoblaydi, ayniqsa pH juda past mazmun ko‘p hajmda aspiratsiya bo‘lsa. Keyingi neytrofil oqimi esa mahalliy yallig‘lanish endotipiga tegishli deb taklif qilingan."
+   },
+   "source": {
+    "author": "Wong HE va boshq.",
+    "title": "Diffuse alveolar damage, acute respiratory distress syndrome (ARDS), and non-cardiogenic pulmonary edema. Part 1: ARDS endotypes, including systemic inflammatory response syndrome and sepsis, with dog and cat examples, Journal of Veterinary Diagnostic Investigation: Official Publication of the American Association of Veterinary Laboratory Diagnosticians",
+    "page": "PMID 41782298, «Acid aspiration» bo‘limi"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-58-q19",
+   "question_i18n": {
+    "uz": "Tocilizumab va sarilumab kabi IL-6 blokatorlari sitokin chiqarilish sindromida qanday mexanizm bilan ta’sir qiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "IL-6 ishlab chiqaruvchi neytrofillarni apoptozga uchratadi",
+     "NADPH oksidazani bevosita faollashtirib ROS ni kamaytiradi",
+     "IL-6 retseptoriga antitana bo‘lib, IL-6 bog‘lanishini to‘sadi",
+     "TLR9 ni mtDNA bilan bog‘lanishga majburlab inhibe qiladi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "IL-6 blokatorlari IL-6 retseptoriga qarshi rekombinant gumanizatsiyalangan monoklonal antitanalar bo‘lib, IL-6 ning retseptorga bog‘lanishini raqobatli ravishda to‘sadi va CRS belgilarini yengillashtiradi. Bu davo simptomatik, hiperaktivatsiya sababiga qaratilmagan."
+   },
+   "source": {
+    "author": "Sikora JP va boshq.",
+    "title": "Neutrophils and the Systemic Inflammatory Response Syndrome (SIRS), International Journal of Molecular Sciences",
+    "page": "PMID 37686271, «IL-6 Antagonists in Sepsis and COVID-19 Therapy» bo‘limi"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-58-q20",
+   "question_i18n": {
+    "uz": "Odam bemorida o‘tkir pankreatit boshlandi va tizimli yallig‘lanish rivojlanmoqda. Pankreatitga bog‘liq ARDS odatda boshlanishidan qancha vaqt o‘tgach rivojlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Dastlabki 24 soat ichida",
+     "Boshlanishidan 2–7 kun o‘tgach",
+     "Boshlanishidan 3–4 hafta o‘tgach",
+     "Boshlanishidan 2 oy o‘tgach"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Odamlarda ARDS odatda pankreatit boshlanishidan 2–7 kun o‘tib rivojlangan va kasalxonaga yotqizilishdan oldingi o‘limlarga katta hissa qo‘shgan. Pankreatit tizimli yallig‘lanish endotipiga kiritiladi: ARDS tizimli tomir disregulyatsiyasidan ikkilamchi rivojlanadi."
+   },
+   "source": {
+    "author": "Wong HE va boshq.",
+    "title": "Diffuse alveolar damage, acute respiratory distress syndrome (ARDS), and non-cardiogenic pulmonary edema. Part 1: ARDS endotypes, including systemic inflammatory response syndrome and sepsis, with dog and cat examples, Journal of Veterinary Diagnostic Investigation: Official Publication of the American Association of Veterinary Laboratory Diagnosticians",
+    "page": "PMID 41782298, «Pancreatitis» bo‘limi"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Jingjing Ye va boshq.",
+   "title": "The role of mtDAMPs in the trauma-induced systemic inflammatory response syndrome, Frontiers in Immunology"
+  },
+  {
+   "author": "Sikora JP va boshq.",
+   "title": "Neutrophils and the Systemic Inflammatory Response Syndrome (SIRS), International Journal of Molecular Sciences"
+  },
+  {
+   "author": "Wong HE va boshq.",
+   "title": "Diffuse alveolar damage, acute respiratory distress syndrome (ARDS), and non-cardiogenic pulmonary edema. Part 1: ARDS endotypes, including systemic inflammatory response syndrome and sepsis, with dog and cat examples, Journal of Veterinary Diagnostic Investigation: Official Publication of the American Association of Veterinary Laboratory Diagnosticians"
+  }
+ ]
+}

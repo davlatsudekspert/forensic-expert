@@ -137,7 +137,7 @@
       "title": "Chap qorincha soxta tolalari (LVFT)",
       "bullets": [
         {
-          "text": "Biriktiruvchi to‘qima displaziyasi (BTD) kollagen sintezi buzilishi bilan bog‘liq. Yurakda, asosan chap qorinchada soxta tolalar (LVFT) paydo bo‘lib, nasos funksiyasini normaga yaqin tutadi.",
+          "text": "BTD kollagen sintezi buzilishi bilan bog‘liq. Yurakda, asosan chap qorinchada, soxta tolalar (LVFT) paydo bo‘lib, nasos funksiyasini normaga yaqin tutadi.",
           "source": {
             "author": "Vinokurova K va boshq.",
             "title": "Cardiovascular Functioning Features in Individuals with Connective Tissue Dysplasia Engaged in Sports for the Disabled, Sports",
@@ -164,7 +164,7 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: LVFT ≠ kasallik. Dam olishda yurak funksiyasi normada, shuning uchun LVFT patologik topilma deb hisoblanmaydi. Lekin u mexanik asinxroniya ortishi bilan bog‘liq.",
+          "text": "Diqqat: LVFT ≠ kasallik. Dam olishda yurak funksiyasi normada, shuning uchun LVFT patologik topilma emas; lekin mexanik asinxroniya ortishi bilan bog‘liq.",
           "source": {
             "author": "Vinokurova K va boshq.",
             "title": "Cardiovascular Functioning Features in Individuals with Connective Tissue Dysplasia Engaged in Sports for the Disabled, Sports",
@@ -173,7 +173,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "LVFT soni",
+            "value": "2–5"
+          },
+          {
+            "label": "O‘rtacha",
+            "value": "3,4 ± 1"
+          },
+          {
+            "label": "Qalinligi",
+            "value": ">2 mm"
+          },
+          {
+            "label": "Topilish",
+            "value": "100 %"
+          }
+        ],
+        "caption": "Chap qorincha soxta tolalari"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega LVFT ni BTD ning kuchli belgisi deb hisoblash mumkin? 2) Dam olishda funksiya normal bo‘lsa, yuklamada nima o‘zgaradi? Doskada: chap qorincha kesimini chizib, ko‘ndalang tolani to‘siq va erkin devor orasiga tortilgan holda ko‘rsating, qalinlik >2 mm deb belgilang. Tipik xato: talaba LVFT ni avtomatik patologiya yoki o‘tkir kasallik deb hisoblaydi; maqolada u patologik topilma deb sanalmaydi. Manbadagi o‘xshatish: ko‘prik konstruksiyasini ko‘ndalang to‘sinlar mustahkamlaydi."
     },
     {
@@ -273,19 +294,105 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Skrining bosqichlari",
-        "nodes": [
-          "Anketa va antropometriya",
-          "12 yo‘nalishli EKG (dam)",
-          "Exokardiografiya (TTE)",
-          "Impedans kardiografiya",
-          "Yuklama sinovi (VO2max)"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Anketa, antropometriya",
+            "text": "Kasallik tarixi anketasi, tana tarkibi"
+          },
+          {
+            "title": "12 yo‘nalishli EKG",
+            "text": "Dam holatida, QTc o‘lchanadi"
+          },
+          {
+            "title": "Exokardiografiya",
+            "text": "TTE: hajmlar, EF, soxta tolalar"
+          },
+          {
+            "title": "Impedans kardiografiya",
+            "text": "Yotgan va tik holatda gemodinamika"
+          },
+          {
+            "title": "Yuklama sinovi",
+            "text": "VO2max, ergometr"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Skrining bosqichlari"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega aralash (to‘g‘ridan va hisoblab) VO2max o‘lchovi cheklov hisoblanadi? 2) Nega g‘ildirakli kresloda o‘tirgan ishtirokchilarda ortotest o‘tkazilmadi? Manbaga ko‘ra, ularda (n = 60) gemodinamika faqat yotgan holatda o‘lchandi. Doskada: besh bosqichli zanjirni chizing va har biriga bittadan o‘lchanadigan ko‘rsatkich yozing (EKG: QTc; TTE: EF; yuklama: VO2max). Tipik xato: EKG ni yuklama sinovi bilan aralashtirish; manbada dam olishdagi EKG alohida, yuklama sinovi esa EKG nazoratida o‘tadi."
+    },
+    {
+      "title": "EKG topilmalari va QTc xavfi",
+      "bullets": [
+        {
+          "text": "Butun guruhda QTc 417,3 ± 26,8 (334–524) ms, PQ 142,1 ± 20 (90–230) ms, QRS 93,3 ± 10,8 (68–136) ms.",
+          "source": {
+            "author": "Vinokurova K va boshq.",
+            "title": "Cardiovascular Functioning Features in Individuals with Connective Tissue Dysplasia Engaged in Sports for the Disabled, Sports",
+            "page": "PMID 41745671, 3.2-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "QTc qorincha elektr faolligini aks ettiradi va umumiy aholidagidan yuqori qiymatlari e’tiborni tortgan.",
+          "source": {
+            "author": "Vinokurova K va boshq.",
+            "title": "Cardiovascular Functioning Features in Individuals with Connective Tissue Dysplasia Engaged in Sports for the Disabled, Sports",
+            "page": "PMID 41745671, 3.2-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "QTc aniq uzayishi mashq paytida hayot uchun xavfli aritmiya va to‘satdan yurak to‘xtashi xavfi omili.",
+          "source": {
+            "author": "Vinokurova K va boshq.",
+            "title": "Cardiovascular Functioning Features in Individuals with Connective Tissue Dysplasia Engaged in Sports for the Disabled, Sports",
+            "page": "PMID 41745671, 3.2-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ishtirokchilarning 1 foizdan kami (n = 3) da QTc aniq uzaygan; belgi va oilaviy anamnez bo‘lmasa-da, chuqur tekshiruv tavsiya etilgan.",
+          "source": {
+            "author": "Vinokurova K va boshq.",
+            "title": "Cardiovascular Functioning Features in Individuals with Connective Tissue Dysplasia Engaged in Sports for the Disabled, Sports",
+            "page": "PMID 41745671, 3.2-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "QTc (o‘rtacha)",
+            "value": "417,3 ± 26,8",
+            "unit": "ms"
+          },
+          {
+            "label": "QTc oraliq",
+            "value": "334–524",
+            "unit": "ms"
+          },
+          {
+            "label": "PQ interval",
+            "value": "142,1 ± 20",
+            "unit": "ms"
+          },
+          {
+            "label": "QRS davomiyligi",
+            "value": "93,3 ± 10,8",
+            "unit": "ms"
+          },
+          {
+            "label": "Aniq QTc uzayishi",
+            "value": "<1 % (n=3)"
+          }
+        ],
+        "caption": "12 yo‘nalishli EKG natijalari"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega QTc uzayishi sportchi uchun xavfli? 2) Belgisiz ishtirokchiga nima tavsiya etilgan? Doskaga chizing: EKG intervallari. Tipik xato: QTc ni formulani tanlamasdan baholash.",
+      "source_note_removed": null
     },
     {
       "title": "Tezkor savol: BTD va LVFT",
@@ -362,31 +469,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "QTc formulalari va o‘lchash",
-        "nodes": [],
-        "header": [
-          "Formula",
-          "YUUT",
-          "Ifoda"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Bazett",
+            "items": [
+              "YUUT 60–100 urish/daq",
+              "QTc = QT/√(RR)",
+              "Eng ko‘p qo‘llanadi"
+            ]
+          },
+          {
+            "title": "Framingham",
+            "items": [
+              "YUUT <60 yoki >100",
+              "QTc = QT + 0,154 × (1 − RR)"
+            ]
+          },
+          {
+            "title": "O‘lchash",
+            "items": [
+              "II yoki V5 ulanishda, qo‘lda",
+              "T to‘lqin oxiri: chegara usuli"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Bazett",
-            "60–100 urish/daq",
-            "QTc = QT/√(RR)"
-          ],
-          [
-            "Framingham",
-            "<60 yoki >100 urish/daq",
-            "QTc = QT + 0,154 × (1 − RR)"
-          ],
-          [
-            "O‘lchash",
-            "II yoki V5 ulanishda, qo‘lda",
-            "T to‘lqin oxiri — chegara usuli"
-          ]
-        ]
+        "caption": "QTc formulalari va o‘lchash"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: (1) Nega avtomatik o‘lchashdan keyin qo‘lda qayta o‘lchash kerak? (2) YUUT 55 urish/daq bo‘lsa qaysi formula tanlanadi? Doskada: YUUT o‘qi bo‘yicha ikki zonali sxema chizing (<60, 60–100, >100). Tipik xato: Bazettni hamma YUUT uchun qo‘llash. Qo‘shimcha: QTc o‘rtacha 417,3 ± 26,8 ms; 3 nafar (<1%) da aniq uzayish bo‘lgan va chuqur tekshiruv tavsiya etilgan."
     },
@@ -456,6 +564,72 @@
       "teacher_notes": "Vaqt: 6 daq. Muhokama: (1) Nega barcha ko‘rsatkichlarning diapazoni keng? (2) Ortotestda EDI ning kamayishi nimani bildiradi? Doskada: EDV − ESV = SV munosabatini chizing va EF ni hisoblang. Tipik xato: yotgan va tik holat ma’lumotlarini aralashtirish; g‘ildirakli kresloda 60 nafar ishtirokchida ortotest o‘tkazilmagan, faqat yotgan holatda o‘lchangan."
     },
     {
+      "title": "Gemodinamik monitoring: yotgan va tik holat",
+      "bullets": [
+        {
+          "text": "Impedans kardiografiya (MARG 10-01) faol ortotestda o‘tkazildi; ko‘rsatkichlar yotgan va tik holatda yozildi.",
+          "source": {
+            "author": "Vinokurova K va boshq.",
+            "title": "Cardiovascular Functioning Features in Individuals with Connective Tissue Dysplasia Engaged in Sports for the Disabled, Sports",
+            "page": "PMID 41745671, 2.6-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Aravachadagi 60 ishtirokchida ortotest bajarilmadi, o‘lchovlar faqat yotgan holatda olindi.",
+          "source": {
+            "author": "Vinokurova K va boshq.",
+            "title": "Cardiovascular Functioning Features in Individuals with Connective Tissue Dysplasia Engaged in Sports for the Disabled, Sports",
+            "page": "PMID 41745671, 2.6-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yotgan holatda EDI 80,6 ± 14,6 (42–118) mL/m², EF 62,03 ± 3,6 %, SV 80,8 ± 23,3 mL — ko‘pi kutilganidan past.",
+          "source": {
+            "author": "Vinokurova K va boshq.",
+            "title": "Cardiovascular Functioning Features in Individuals with Connective Tissue Dysplasia Engaged in Sports for the Disabled, Sports",
+            "page": "PMID 41745671, 3.3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tik holatda EDI o‘rtacha 16,2 ± 10,4 ga kamaydi (1,1–63,0 %), tik holatdagi EDI 67,8 ± 14,3 mL/m².",
+          "source": {
+            "author": "Vinokurova K va boshq.",
+            "title": "Cardiovascular Functioning Features in Individuals with Connective Tissue Dysplasia Engaged in Sports for the Disabled, Sports",
+            "page": "PMID 41745671, 3.3-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Yotgan holat",
+            "items": [
+              "EDI 80,6 ± 14,6 mL/m²",
+              "EF 62,03 ± 3,6 %",
+              "SV 80,8 ± 23,3 mL",
+              "Kutilganidan past ko‘rsatkichlar"
+            ]
+          },
+          {
+            "title": "Tik holat (ortotest)",
+            "items": [
+              "EDI 67,8 ± 14,3 mL/m²",
+              "EDI o‘rtacha 16,2 ± 10,4 ga kamaydi",
+              "O‘zgaruvchanlik 1,1–63,0 %"
+            ]
+          }
+        ],
+        "caption": "Impedans kardiografiya natijalari"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega aravachadagilarda faqat yotgan holat o‘lchandi? 2) EDI tik holatda nega kamayadi? Doskaga chizing: ikki holat taqqoslash. Tipik xato: ortotestsiz o‘lchovni tik holat ko‘rsatkichi bilan solishtirish.",
+      "source_note_removed": null
+    },
+    {
       "title": "Yuklama sinovi va VO2max",
       "bullets": [
         {
@@ -487,27 +661,31 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ergometr turlari",
-        "nodes": [],
-        "header": [
-          "Ergometr",
-          "Qo‘llanilishi"
+        "kind": "tree",
+        "root": "Ergometr turlari",
+        "children": [
+          {
+            "label": "Step-test (zinapoya)",
+            "items": [
+              "12 yoshgacha bolalar (n = 183)"
+            ]
+          },
+          {
+            "label": "Velosiped, RAMP",
+            "items": [
+              "Yuk ½ tana vazni/daq",
+              "80 ayl/daq"
+            ]
+          },
+          {
+            "label": "Qo‘l ergometri",
+            "items": [
+              "Aravachadagilar (n = 37)",
+              "Oyog‘i cheklanganlar"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Step-test (zinapoya)",
-            "12 yoshgacha bolalar (n = 183)"
-          ],
-          [
-            "Velosiped, RAMP protokoli",
-            "Yuk ½ tana vazni Vt/daq, 80 ayl/daq"
-          ],
-          [
-            "Qo‘l ergometri",
-            "Aravachadagilar va oyog‘i cheklanganlar (n = 37)"
-          ]
-        ]
+        "caption": "Yuklama sinovi vositalari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: (1) Nega barcha ishtirokchilarda bir xil ergometr ishlatib bo‘lmadi? (2) To‘g‘ridan-to‘g‘ri va bilvosita o‘lchashni aralashtirish natijaga qanday xavf tug‘diradi (muallifler buni cheklov deb ko‘rsatgan)? Doskada chizish: ergometr tanlash zanjiri — yosh/nogironlik turi → ergometr → VO2max. Tipik xato: bilvosita hisoblangan VO2max ni to‘g‘ridan-to‘g‘ri o‘lchangan qiymat bilan bir xil deb o‘ylash. Eslatma: past maksimal yurak urishi yurak zaxirasi har xil safarbar bo‘lishini ko‘rsatadi."
     },
@@ -608,36 +786,30 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Effekt hajmi: omillar solishtiruvi",
-        "nodes": [],
-        "header": [
-          "Bog‘liqlik",
-          "Effekt (η²/ε²)",
-          "Talqin"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Sport → VO2max",
+            "value": "0,158",
+            "unit": "o‘rta"
+          },
+          {
+            "label": "Sport → QTc",
+            "value": "0,146",
+            "unit": "o‘rta"
+          },
+          {
+            "label": "Nosologiya → VO2max",
+            "value": "0,072",
+            "unit": "kichik"
+          },
+          {
+            "label": "Nosologiya → QTc",
+            "value": "0,018",
+            "unit": "juda kichik"
+          }
         ],
-        "rows": [
-          [
-            "Sport turi → VO2max",
-            "0,158",
-            "O‘rta"
-          ],
-          [
-            "Sport turi → QTc",
-            "0,146",
-            "O‘rta"
-          ],
-          [
-            "Nosologiya → VO2max",
-            "0,072",
-            "Kichik"
-          ],
-          [
-            "Nosologiya → QTc",
-            "0,018",
-            "Juda kichik"
-          ]
-        ]
+        "caption": "Effekt hajmi (η²/ε²)"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: (1) Nega statistik ahamiyatli (p < 0,05) natija har doim klinik ahamiyatli emas? (2) Mashg‘ulot yuklamasini belgilashda bu xulosa nimani anglatadi (VO2max va QTc bo‘yicha individual kardiologik skrining)? Doskada chizish: to‘rt ustunli effekt hajmi diagrammasi, balandligi bo‘yicha tartiblangan. Izoh: η² (eta-kvadrat) ANOVA uchun, ε² (epsilon-kvadrat) Kruskal-Wallis uchun effekt hajmi. Tipik xato: p qiymati kichik bo‘lsa, effekt ham katta deb o‘ylash. Diqqat: nosologiya → QTc ta’siri juda kichik, ya’ni p < 0,05 ≠ katta effekt."
     },
@@ -767,7 +939,40 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Marfan sindromi",
+        "children": [
+          {
+            "label": "Genetika",
+            "items": [
+              "Autosom dominant",
+              "FBN1 geni"
+            ]
+          },
+          {
+            "label": "Klassik triada",
+            "items": [
+              "Yurak-qon tomir",
+              "Ko‘z",
+              "Tayanch-harakat"
+            ]
+          },
+          {
+            "label": "Tarqalishi",
+            "items": [
+              "Taxminan 1:5000–10 000"
+            ]
+          },
+          {
+            "label": "Penetrantlik",
+            "items": [
+              "Yoshga bog‘liq; 20 yoshdan keyin ham"
+            ]
+          }
+        ],
+        "caption": "Marfan sindromi: tavsif"
+      },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama savoli: 1) Yoshga bog‘liq penetrantlik bola oilasi bilan maslahatda nimani o‘zgartiradi? 2) Nega genotipi musbat, fenotipi manfiy bolada ham kuzatuv kerak? Doskada chizish topshirig‘i: Marfan triadasini uchta doira (yurak-qon tomir, ko‘z, skelet) ko‘rinishida chizing. Tipik xato: Marfan (FBN1 geni) bilan qon tomir Ehlers-Danlos sindromini (COL3A1 geni) adashtirish; bular turli genlar bilan bog‘liq turli kasalliklar."
     },
     {
@@ -860,7 +1065,7 @@
           [
             "Manfiy",
             "Z ≥ 2",
-            "Linza ektopiyasi, FBN1 yoki tizimli ball ≥7"
+            "Linza ektopiyasi, FBN1 yoki ball ≥7"
           ],
           [
             "Musbat, 20 yoshdan katta",
@@ -908,36 +1113,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "eoMFS va klassik MFS",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "eoMFS",
-          "Klassik MFS"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "eoMFS (erta shakl)",
+            "items": [
+              "Boshlanishi: perinatal–dastlabki yillar",
+              "Sabab: regurgitatsiya → yurak yetishmovchiligi",
+              "Oilaviy anamnez ko‘pincha manfiy (62–78%)",
+              "Prognoz yomon; o‘rtacha 16,3 oy"
+            ]
+          },
+          {
+            "title": "Klassik MFS",
+            "items": [
+              "Boshlanishi: bolalik, yoshga bog‘liq",
+              "Aorta dissektsiyasi/yorilishi muhim",
+              "Oilaviy skrining orqali ham aniqlanadi",
+              "Dori va kuzatuv umrga ta’sir qiladi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Boshlanishi",
-            "Perinatal davrdan dastlabki yillargacha",
-            "Bolalik; yoshga bog‘liq penetrans"
-          ],
-          [
-            "Asosiy o‘lim sababi",
-            "Regurgitatsiya → yurak yetishmovchiligi",
-            "Aorta dissektsiyasi/yorilishi muhim"
-          ],
-          [
-            "Oilaviy anamnez",
-            "Ko‘pincha manfiy (62–78%), de novo",
-            "Oilaviy skrining orqali ham aniqlanadi"
-          ],
-          [
-            "Prognoz",
-            "Yomon; o‘rtacha yashash 16,3 oy",
-            "Dori va kuzatuv umrga ta’sir qiladi"
-          ]
-        ]
+        "caption": "eoMFS va klassik MFS"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: eoMFS da o‘lim sababi nima uchun aorta emas? Nega ekzon 24–32 varianti ham ball bilan tasdiqlanishi kerak? Doskada: eoMFS da klapan regurgitatsiyasi → yurak yetishmovchiligi zanjirini chizing. Tipik xato: eoMFS ni ham aorta yorilishidan o‘ladi deb o‘ylash. Eslatma: eoMFS ilgari neonatal MFS (nMFS) deb atalgan."
     },
@@ -973,27 +1170,22 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Z-ball chegaralari",
-        "nodes": [],
-        "header": [
-          "Ko‘rsatkich",
-          "Ahamiyati"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Aholida Z-ball >2",
+            "value": "2,3 %"
+          },
+          {
+            "label": "Aholida Z-ball >3",
+            "value": "0,13 %"
+          },
+          {
+            "label": "Ghent 2010, bolalar",
+            "value": "Z ≥ 3"
+          }
         ],
-        "rows": [
-          [
-            "Umumiy aholida Z-ball >2",
-            "Aholining 2,3 % ida uchraydi"
-          ],
-          [
-            "Umumiy aholida Z-ball >3",
-            "Aholining 0,13 % ida uchraydi"
-          ],
-          [
-            "Ghent 2010, bolalar uchun",
-            "Tashxis chegarasi 3 deb olingan"
-          ]
-        ]
+        "caption": "Z-ball chegaralari"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega bolada mutlaq diametr yetarli emas? 2) Nega nomogrammani almashtirmaslik kerak? Doskada chizish: Z-ball shkalasi (0, 2, 3) va unda aholining 2,3 % hamda 0,13 % ulushlarini belgilang. Tipik xato: Z-ballni millimetrdagi diametr bilan adashtirish; bir bemorda turli nomogramma ishlatish."
     },
@@ -1037,7 +1229,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Sog‘lom aorta ildizi",
+            "value": "0,1",
+            "unit": "mm/yil"
+          },
+          {
+            "label": "MFS bolalar",
+            "value": "0,5–0,8",
+            "unit": "mm/yil"
+          },
+          {
+            "label": "MFS kattalar",
+            "value": "0,3–0,7",
+            "unit": "mm/yil"
+          },
+          {
+            "label": "BAV umumiy aholida",
+            "value": "1–2 %"
+          },
+          {
+            "label": "BAV MFS da",
+            "value": "≈1,8 %"
+          }
+        ],
+        "caption": "Aorta o‘sishi va BAV"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega o‘sish tezligini yil sayin kuzatish muhim? 2) BAV MFS bilan birga kelsa, qaysi qismga e’tibor beriladi? Doskada chizish: aorta ildizi, ko‘tariluvchi aorta va yoyni chizib, MFS va BAV kengayish joylarini turli rangda belgilang. Tipik xato: MFS va BAV aortopatiyasida kengayish joyini bir xil deb o‘ylash."
     },
     {
@@ -1133,7 +1353,7 @@
           ],
           [
             "ARB + β-blokator",
-            "Kamida yarmiga sekinlashdi, operatsiya kechikdi"
+            "Kamida yarmiga; operatsiya kechikdi"
           ]
         ]
       },
@@ -1143,7 +1363,7 @@
       "title": "Jismoniy faollik va turmush tarzi",
       "bullets": [
         {
-          "text": "Zo‘riqish yoki Valsalva talab qiladigan izometrik mashqlar, kontakt sportlar va og‘ir mashqlardan qochiladi; aorta devoriga kuchlanish kengayishni tezlashtirishi mumkin.",
+          "text": "Zo‘riqish yoki Valsalva talab qiladigan izometrik mashqlar, kontakt sportlar va og‘ir mashqlardan qochiladi; aorta kengayishi tezlashishi mumkin.",
           "source": {
             "author": "Anwar Baban va boshq.",
             "title": "Unique Features of Cardiovascular Involvement and Progression in Children with Marfan Syndrome Justify Dedicated Multidisciplinary Care, Journal of Cardiovascular Development and Disease",
@@ -1161,7 +1381,7 @@
           "uncertain": false
         },
         {
-          "text": "Imkoni borlarga yengil-o‘rtacha aerob mashqlar, yengil dam olish sportlari va yengil toshlar (zo‘riqmasdan ko‘p takror) tavsiya etiladi; ko‘pchilik ~50% quvvatda mashq qiladi.",
+          "text": "Imkoni borlarga yengil-o‘rtacha aerob mashqlar, yengil dam olish sportlari va yengil toshlar (zo‘riqmasdan ko‘p takror) tavsiya; ko‘pchilik ~50% quvvatda.",
           "source": {
             "author": "Anwar Baban va boshq.",
             "title": "Unique Features of Cardiovascular Involvement and Progression in Children with Marfan Syndrome Justify Dedicated Multidisciplinary Care, Journal of Cardiovascular Development and Disease",
@@ -1170,7 +1390,7 @@
           "uncertain": false
         },
         {
-          "text": "Puflab chalinadigan cholg‘ular professional darajada Valsalva orqali aorta kengayishiga ta’sir qilishi mumkin; bu shaxsiy kuzatuv, tasdiqlash uchun tadqiqot kerak.",
+          "text": "Puflab chalinadigan cholg‘ular professional darajada Valsalva orqali aorta kengayishiga ta’sir qilishi mumkin; bu shaxsiy kuzatuv, tadqiqot kerak.",
           "source": {
             "author": "Anwar Baban va boshq.",
             "title": "Unique Features of Cardiovascular Involvement and Progression in Children with Marfan Syndrome Justify Dedicated Multidisciplinary Care, Journal of Cardiovascular Development and Disease",
@@ -1214,31 +1434,36 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Operatsiya chegaralari",
-        "nodes": [],
-        "header": [
-          "Holat",
-          "Ko‘rsatma"
+        "kind": "tree",
+        "root": "Aorta operatsiyasi ko‘rsatmasi",
+        "children": [
+          {
+            "label": "Kattalar, xavf omilisiz",
+            "items": [
+              "Diametr ≥50 mm"
+            ]
+          },
+          {
+            "label": "Kattalar, xavf omili bor",
+            "items": [
+              "Pastroq chegara: ≥45 mm"
+            ]
+          },
+          {
+            "label": "Xavf omili misollari",
+            "items": [
+              "Oilada dissektsiya",
+              "O‘sish >3 mm/yil"
+            ]
+          },
+          {
+            "label": "Bolalar",
+            "items": [
+              "Yagona qo‘llanma yo‘q"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Kattalar, xavf omilisiz",
-            "Aorta diametri ≥50 mm"
-          ],
-          [
-            "Kattalar, xavf omili bor",
-            "Pastroq chegara: ≥45 mm"
-          ],
-          [
-            "Xavf omili misollari",
-            "Oilada dissektsiya, >3 mm/yil o‘sish"
-          ],
-          [
-            "Bolalar",
-            "Yagona qo‘llanma yo‘q"
-          ]
-        ]
+        "caption": "Operatsiya chegaralari"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega bolalar uchun kattalar chegarasini to‘g‘ridan-to‘g‘ri qo‘llab bo‘lmaydi? 2) Qaysi xavf omillari chegarani 45 mm gacha tushiradi (homilador bo‘lishi mumkin ayollar, gipertoniya, og‘ir regurgitatsiya va h.k.)? Doskada chizing: 50 mm va 45 mm chegaralarni ko‘rsatuvchi sodda qaror daraxti. Tipik xato: 50 mm chegarani bolalarga ham qo‘llash — manbada bolalar uchun yagona qo‘llanma yo‘q, ayrim ekspertlar kattalar ildizini moslashtirishni taklif qiladi."
     },
@@ -1274,31 +1499,30 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "TVP yosh bo‘yicha",
-        "nodes": [],
-        "header": [
-          "Yosh",
-          "TVP, %"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "TVP: 0–10 yosh",
+            "value": "4 %"
+          },
+          {
+            "label": "TVP: 10–20 yosh",
+            "value": "17 %"
+          },
+          {
+            "label": "TVP: 20–30 yosh",
+            "value": "29 %"
+          },
+          {
+            "label": "TVP: 30–40 yosh",
+            "value": "32 %"
+          },
+          {
+            "label": "MVP bolalarda",
+            "value": "32–38 %"
+          }
         ],
-        "rows": [
-          [
-            "0–10 yosh",
-            "4%"
-          ],
-          [
-            "10–20 yosh",
-            "17%"
-          ],
-          [
-            "20–30 yosh",
-            "29%"
-          ],
-          [
-            "30–40 yosh",
-            "32%"
-          ]
-        ]
+        "caption": "Klapan prolapsi chastotasi"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: nega TVPni echokardiografiyada muntazam baholash kerak? MVP yosh bilan qanday o‘zgaradi? Doskada: TVPning yosh bo‘yicha o‘sish chizig‘ini chizdiring. Tipik xato: TVPni Marfanga xos belgi deb o‘ylash; manbada u tashxis mezoni emas, balki ehtimoliy og‘irlik belgisi."
     },
@@ -1333,7 +1557,7 @@
           "uncertain": false
         },
         {
-          "text": "Xavfni baholashda qorincha ektopiyasi, qorinchalar taxikardiyasi, sistolik disfunksiya va NT-proBNP (miya natriuretik peptidi) hisobga olinadi; NT-proBNP eng kuchli.",
+          "text": "Xavfni baholashda qorincha ektopiyasi, qorinchalar taxikardiyasi, sistolik disfunksiya va NT-proBNP hisobga olinadi; NT-proBNP eng kuchli.",
           "source": {
             "author": "Anwar Baban va boshq.",
             "title": "Unique Features of Cardiovascular Involvement and Progression in Children with Marfan Syndrome Justify Dedicated Multidisciplinary Care, Journal of Cardiovascular Development and Disease",
@@ -1342,7 +1566,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Kardiomiopatiya",
+            "value": "3–68 %"
+          },
+          {
+            "label": "Xavfli aritmiya",
+            "value": "7–9 %"
+          },
+          {
+            "label": "To‘satdan yurak o‘limi",
+            "value": "≤4 %"
+          },
+          {
+            "label": "QTc >440: bolalar",
+            "value": "9–20 %"
+          },
+          {
+            "label": "QTc >440: kattalar",
+            "value": "16–20 %"
+          }
+        ],
+        "caption": "Marfan: yurak ritmi va miokard"
+      },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: nega Marfan kardiomiopatiyasini faqat klapan regurgitatsiyasi bilan tushuntirib bo‘lmaydi? QTc uzayishi bolada qanday amaliy ehtiyotkorlik talab qiladi? Doskada: aritmiya xavfini baholash parametrlari ro‘yxatini yozdiring. Tipik xato: bolalarda ham aritmiya tarqalishi aniq deb o‘ylash; manbada bolalar bo‘yicha ko‘p markazli ma’lumot kam."
     },
     {
@@ -1385,7 +1634,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Linza siljishi, bolalar",
+            "value": "49 %"
+          },
+          {
+            "label": "Linza siljishi, kattalar",
+            "value": "≈60 %"
+          },
+          {
+            "label": "Miopiya >3 D, bolalar",
+            "value": "34,9 %"
+          },
+          {
+            "label": "Ko‘krak deformatsiyasi",
+            "value": "43 → 62 %"
+          },
+          {
+            "label": "Skolioz",
+            "value": "16 → 59 %"
+          }
+        ],
+        "caption": "Marfan: ko‘z va skelet"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: nega bolalarda belgilar yosh bilan paydo bo‘ladi (yoshga bog‘liq penetrantlik)? Nega miopiya mezoni bolada yashirin qolishi mumkin? Doskada: ko‘z, skelet va yurak uchun kuzatuv jadvalini chizdiring. Tipik xato: gavhar siljishini Marfanning patognomonik belgisi deb hisoblash; u boshqa kasalliklarda ham uchraydi."
     },
     {
@@ -1444,7 +1718,7 @@
           "uncertain": false
         },
         {
-          "text": "Xavf: o‘rta va yirik arteriyalar, ichak, homilador bachadon, jigar va taloq yorilishi mumkin. Homiladorlikda aorta yorilishi ayollarda o‘limning eng ko‘p sababi.",
+          "text": "Xavf: o‘rta va yirik arteriyalar, ichak, homilador bachadon, jigar va taloq yorilishi mumkin. Homiladorlikda aorta yorilishi ayollar o‘limining eng ko‘p sababi.",
           "source": {
             "author": "Omar R va boshq.",
             "title": "Four decades in the making: Collagen III and mechanisms of vascular Ehlers Danlos Syndrome, Matrix Biology Plus",
@@ -1462,7 +1736,7 @@
           "uncertain": true
         },
         {
-          "text": "Belgilar: oson ko‘karish, yupqa shaffof teri, ko‘rinib turuvchi venalar, o‘ziga xos yuz, spontan pnevmotoraks, erta varikoz, kichik bo‘g‘imlar giperharakatchanligi.",
+          "text": "Belgilar: oson ko‘karish, yupqa shaffof teri, ko‘rinib turuvchi venalar, o‘ziga xos yuz, spontan pnevmotoraks, erta varikoz, kichik bo‘g‘imlar giperharakati.",
           "source": {
             "author": "Omar R va boshq.",
             "title": "Four decades in the making: Collagen III and mechanisms of vascular Ehlers Danlos Syndrome, Matrix Biology Plus",
@@ -1471,7 +1745,37 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "vEDS asoratlari",
+        "children": [
+          {
+            "label": "Yorilish xavfi",
+            "items": [
+              "O‘rta, yirik arteriyalar",
+              "Ichak, homilador bachadon",
+              "Jigar, taloq"
+            ]
+          },
+          {
+            "label": "Teri va tomir",
+            "items": [
+              "Oson ko‘karish",
+              "Yupqa shaffof teri",
+              "Erta varikoz"
+            ]
+          },
+          {
+            "label": "Boshqa belgilar",
+            "items": [
+              "Spontan pnevmotoraks",
+              "Kichik bo‘g‘im giperharakati",
+              "Milk mo‘rtligi"
+            ]
+          }
+        ],
+        "caption": "vEDS: xavf va belgilar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega vEDS yurak-qon tomir patologiyasi nuqtai nazaridan eng xavfli EDS turlaridan biri? 2) Homilador ayolda qanday xavf bor va u kimga maslahat berishni talab qiladi? Doskada: yorilish xavfi bo‘lgan a’zolar (arteriya, ichak, bachadon, jigar, taloq) sxemasini chizing. Tipik xato: vEDS ni faqat teri va bo‘g‘im giperharakatchanligi kasalligi deb o‘ylash; asosiy xavf — qon tomir va ichki a’zolar yorilishi."
     },
     {
@@ -1506,17 +1810,30 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "III tip kollagen yo‘li",
-        "nodes": [
-          "Uchta proα1(III) zanjir sintezi",
-          "ER: gidroksillanish, buklanish",
-          "Uch spiral: C→N yo‘nalishda",
-          "Golji/ECM: propeptid kesilishi",
-          "I:III heterotipik fibrilla"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Sintez",
+            "text": "Uchta proα1(III) zanjir sintezlanadi"
+          },
+          {
+            "title": "2. ER",
+            "text": "Gidroksillanish va buklanish"
+          },
+          {
+            "title": "3. Uch spiral",
+            "text": "C→N yo‘nalishda yig‘iladi"
+          },
+          {
+            "title": "4. Golji/ECM",
+            "text": "Propeptid kesiladi"
+          },
+          {
+            "title": "5. Fibrilla",
+            "text": "I:III heterotipik fibrilla hosil bo‘ladi"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "III tip kollagen yo‘li"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega glitsin o‘rnini boshqa aminokislota egallasa, uch spiral buziladi? 2) Kollagen III kamayishi qon tomir devoriga qanday ta’sir qilishi mumkin? Doskada: besh bosqichli zanjirni chizib, har bosqichda mutatsiya buzishi mumkin bo‘lgan joyni belgilang. Tipik xato: III tip kollagenni I tip bilan aralashtirish; III tip alohida emas, I tip bilan birga fibrilla hosil qiladi."
     },
@@ -1581,6 +1898,79 @@
       "teacher_notes": "Vaqt: 8 daq. Muhokama: nega glitsin uch spiral hosil bo‘lishida muhim? Nega nol-mutatsiya yengilroq kechadi? Doskada chizish: Gly-Xaa-Yaa takrori va mutatsiya turlarini og‘irlik bo‘yicha shkalaga joylashtiring. Tipik xato: barcha glitsin almashinuvlarini bir xil og‘ir deb o‘ylash; radikal hajmi muhim. Genotip-fenotip bog‘liqligining molekulyar asosi hali yaxshi aniqlanmagan."
     },
     {
+      "title": "vEDS: sichqon modellari",
+      "bullets": [
+        {
+          "text": "Col3a1−/− sichqonda teri yaralari bor, aorta mediasida kollagen fibrillalari kamaygan yoki yo‘q.",
+          "source": {
+            "author": "Omar R va boshq.",
+            "title": "Four decades in the making: Collagen III and mechanisms of vascular Ehlers Danlos Syndrome, Matrix Biology Plus",
+            "page": "PMID 34849481, Animal models"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Col3a1+/− sichqonlar normal yashaydi, lekin aorta va ichakda kollagen III kam, devor mustahkamligi pasaygan.",
+          "source": {
+            "author": "Omar R va boshq.",
+            "title": "Four decades in the making: Collagen III and mechanisms of vascular Ehlers Danlos Syndrome, Matrix Biology Plus",
+            "page": "PMID 34849481, Animal models"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Glitsin mutatsiyali modellarda (G209S, G938D) to‘satdan o‘limga olib keluvchi aorta yorilishi bor; C-uchga yaqin mutatsiya og‘irroq.",
+          "source": {
+            "author": "Omar R va boshq.",
+            "title": "Four decades in the making: Collagen III and mechanisms of vascular Ehlers Danlos Syndrome, Matrix Biology Plus",
+            "page": "PMID 34849481, Animal models"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tsk2/+ (Cys33Ser) sichqonda teri qalinlashgan, kollagen III ko‘p — vEDS dan keskin farq qiladi.",
+          "source": {
+            "author": "Omar R va boshq.",
+            "title": "Four decades in the making: Collagen III and mechanisms of vascular Ehlers Danlos Syndrome, Matrix Biology Plus",
+            "page": "PMID 34849481, Animal models"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "table",
+        "header": [
+          "Model",
+          "Asosiy topilma"
+        ],
+        "rows": [
+          [
+            "Col3a1−/−",
+            "Teri yarasi, aorta mediada kollagen yo‘q"
+          ],
+          [
+            "Col3a1+/−",
+            "Normal umr; devor mustahkamligi past"
+          ],
+          [
+            "Tg-G182S",
+            "Yupqa teri, mo‘rt aorta; yorilish yo‘q"
+          ],
+          [
+            "G209S/+, G938D/+",
+            "Aorta yorilishi; G938D og‘irroq"
+          ],
+          [
+            "Tsk2/+ (Cys33Ser)",
+            "Qalin teri, kollagen III ko‘p"
+          ]
+        ],
+        "caption": "vEDS sichqon modellari"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega Col3a1+/− sichqon kasallik darajasi odamnikidan yengil? 2) Tsk2/+ modeli nimani ko‘rsatadi? Doskaga chizing: model-fenotip jadvali. Tipik xato: barcha modellarni vEDS ning to‘liq nusxasi deb hisoblash.",
+      "source_note_removed": null
+    },
+    {
       "title": "vEDS patogenezi va davo yondashuvlari",
       "bullets": [
         {
@@ -1627,6 +2017,82 @@
       "teacher_notes": "Vaqt: 10 daq. Muhokama: nega yagona universal davo ehtimoli past? Selioprolol sichqonlarning turli modellarida nega qarama-qarshi natija berdi? Doskada chizish: zanjirning ustiga dori nishonlarini yozing (selioprolol, doksisiklin, ruboxistaurin, kobimetinib, gidralazin). Tipik xato: β-blokerlarni bir-birining o‘rniga ishlatish mumkin deb o‘ylash (selioprolol ≠ bisoprolol). PLC/IP3/PKC/ERK yo‘li ma’lumotlari sichqonlardan olingan, odamda tasdiqlanishi kerak."
     },
     {
+      "title": "vEDS: tajriba bosqichidagi davo nishonlari",
+      "bullets": [
+        {
+          "text": "PLC/IP3/PKC/ERK yo‘li glitsin mutatsiyali ikki modelda aniqlangan; ruboxistaurin (PKCβ), kobimetinib (MEK) va gidralazin ta’siri sinalgan.",
+          "source": {
+            "author": "Omar R va boshq.",
+            "title": "Four decades in the making: Collagen III and mechanisms of vascular Ehlers Danlos Syndrome, Matrix Biology Plus",
+            "page": "PMID 34849481, Therapeutic approaches"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gidralazin himoyasi balog‘atda, ayniqsa erkaklarda yo‘qolgan; spironolakton bilan birga bu o‘lim bartaraf etilgan.",
+          "source": {
+            "author": "Omar R va boshq.",
+            "title": "Four decades in the making: Collagen III and mechanisms of vascular Ehlers Danlos Syndrome, Matrix Biology Plus",
+            "page": "PMID 34849481, Therapeutic approaches"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Keng spektrli MMP ingibitori doksisiklin Col3a1+/− sichqonda aorta o‘zgarishlarini kamaytirgan.",
+          "source": {
+            "author": "Omar R va boshq.",
+            "title": "Four decades in the making: Collagen III and mechanisms of vascular Ehlers Danlos Syndrome, Matrix Biology Plus",
+            "page": "PMID 34849481, Therapeutic approaches"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "RNK interferensiyasi bemor fibroblastlarida mutant COL3A1 mRNK ni nishonga olib, kollagen fibrilla hosil bo‘lishini yaxshilagan.",
+          "source": {
+            "author": "Omar R va boshq.",
+            "title": "Four decades in the making: Collagen III and mechanisms of vascular Ehlers Danlos Syndrome, Matrix Biology Plus",
+            "page": "PMID 34849481, Therapeutic approaches"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "vEDS: tajribaviy nishonlar",
+        "children": [
+          {
+            "label": "PLC/IP3/PKC/ERK yo‘li",
+            "items": [
+              "Ruboxistaurin (PKCβ)",
+              "Kobimetinib (MEK)",
+              "Gidralazin (IP3, PKCβ)"
+            ]
+          },
+          {
+            "label": "Androgen signali",
+            "items": [
+              "Spironolakton himoyani tikladi"
+            ]
+          },
+          {
+            "label": "MMP ingibitori",
+            "items": [
+              "Doksisiklin aorta lezyasini kamaytirdi"
+            ]
+          },
+          {
+            "label": "Gen terapiyasi",
+            "items": [
+              "RNKi: mutant COL3A1 mRNK nishonda"
+            ]
+          }
+        ],
+        "caption": "Hozircha faqat tadqiqot bosqichi"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega faqat qon bosimini tushirish yetarli emas? 2) Allelga xos natija nimani anglatadi? Doskaga chizing: davo nishonlari daraxti. Tipik xato: sichqon natijasini bemorlar uchun tasdiqlangan davo deb taqdim etish.",
+      "source_note_removed": null
+    },
+    {
       "title": "Voqea tahlili: vEDS va homiladorlik",
       "bullets": [
         {
@@ -1639,7 +2105,7 @@
           "uncertain": false
         },
         {
-          "text": "Sichqonlarda PLC/IP3/PKC/ERK yo‘li homiladorlik va laktatsiyada kuchaydi; oksitotsin retseptori antagonisti va bolalarni darhol olib qo‘yish 95% tirik qolishni berdi.",
+          "text": "Sichqonlarda PLC/IP3/PKC/ERK yo‘li homiladorlik va laktatsiyada kuchaydi; oksitotsin retseptori antagonisti va bolalarni olib qo‘yish 95% tirik qolishni berdi.",
           "source": {
             "author": "Omar R va boshq.",
             "title": "Four decades in the making: Collagen III and mechanisms of vascular Ehlers Danlos Syndrome, Matrix Biology Plus",
@@ -1673,7 +2139,7 @@
       "title": "Xulosa va asosiy xabarlar",
       "bullets": [
         {
-          "text": "BTDda chap qorincha yolg‘on iplari (LVFT) uchraydi. Yuklamani belgilashdan oldin VO2max (maksimal kislorod iste’moli) va QTc (tuzatilgan QT) ga urg‘u bilan individual skrining zarur.",
+          "text": "BTDda chap qorincha yolg‘on iplari (LVFT) uchraydi. Yuklamani belgilashdan oldin VO2max va QTc ga urg‘u bilan individual skrining zarur.",
           "source": {
             "author": "Vinokurova K va boshq.",
             "title": "Cardiovascular Functioning Features in Individuals with Connective Tissue Dysplasia Engaged in Sports for the Disabled, Sports",
@@ -1691,7 +2157,7 @@
           "uncertain": false
         },
         {
-          "text": "Marfanda (FBN1) aorta ildizi kengayadi, mitral prolaps va aritmiya uchraydi. β-blokator va angiotenzin retseptorlari blokatorlari (ARB) kengayishni sekinlashtiradi.",
+          "text": "Marfanda (FBN1) aorta ildizi kengayadi, mitral prolaps va aritmiya uchraydi. β-blokator va ARB kengayishni sekinlashtiradi.",
           "source": {
             "author": "Anwar Baban va boshq.",
             "title": "Unique Features of Cardiovascular Involvement and Progression in Children with Marfan Syndrome Justify Dedicated Multidisciplinary Care, Journal of Cardiovascular Development and Disease",
@@ -1718,11 +2184,11 @@
       "question": "Para-sportchining exokardiografiyasida chap qorinchada 3 ta yo‘g‘on ko‘ndalang soxta tola topildi, tinch holatda yurak funksiyasi normada. Bu topilma qanday baholanadi?",
       "options": [
         "O‘tkir miokardit belgisi, sportdan darhol chetlatish shart",
-        "BTD belgisi; tinch holatda funksiya normada, patologiya emas",
+        "Qon tomir devori yorilishining aniq va yagona belgisi",
         "Qorinchalararo to‘siqning tug‘ma teshigi, jarrohlik zarur",
-        "Qon tomir devori yorilishining aniq va yagona belgisi"
+        "BTD belgisi; tinch holatda funksiya normada, patologiya emas"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Soxta tolalar biriktiruvchi to‘qima displaziyasining (BTD) kuchli markeri hisoblanadi. Zamonaviy kardiologiya ularni patologik topilma deb bilmaydi, chunki tinch holatda yurak funksiyasi normada qoladi. Farq yuklama paytida, yurakning funksional zahirasida seziladi.",
       "source": {
         "author": "Vinokurova K va boshq.",
@@ -1765,29 +2231,13 @@
     {
       "question": "Talaba tadqiqotga kiritish mezonini so‘radi. Chap qorinchada kamida nechta ko‘ndalang yoki qiyshiq soxta tola bo‘lishi kerak edi?",
       "options": [
-        "Kamida bitta",
-        "Kamida uchta",
         "Kamida ikkita",
+        "Kamida uchta",
+        "Kamida bitta",
         "Kamida beshta"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "explanation": "Tadqiqot guruhiga 6 yoshdan 60 yoshgacha bo‘lgan 610 nafar nogironligi bor shaxs kiritilgan. Ularning har birining chap qorinchasida kamida ikkita ko‘ndalang va/yoki qiyshiq soxta tola bo‘lgan. Topilgan tolalar soni 2 dan 5 gacha (o‘rtacha 3,4 ± 1) bo‘lgan.",
-      "source": {
-        "author": "Vinokurova K va boshq.",
-        "title": "Cardiovascular Functioning Features in Individuals with Connective Tissue Dysplasia Engaged in Sports for the Disabled, Sports",
-        "page": "PMID 41745671; DOI 10.3390/sports14020069"
-      }
-    },
-    {
-      "question": "Nogironlik aravachasidagi sportchida ortotest o‘tkazib bo‘lmadi. Gemodinamik monitoring qaysi tana holatida o‘lchandi?",
-      "options": [
-        "Faqat tik turgan holatda",
-        "Faqat yotgan holatda",
-        "Faqat o‘tirgan holatda",
-        "Yotgan va tik holatda ikkalasida"
-      ],
-      "correct_index": 1,
-      "explanation": "Impedans kardiografiya faol ortotestda o‘tkazilgan. Aravachadagi 60 nafar ishtirokchida ortotestni bajarib bo‘lmagani uchun gemodinamik o‘lchovlar faqat yotgan holatda olingan.",
       "source": {
         "author": "Vinokurova K va boshq.",
         "title": "Cardiovascular Functioning Features in Individuals with Connective Tissue Dysplasia Engaged in Sports for the Disabled, Sports",
@@ -2044,22 +2494,6 @@
       ],
       "correct_index": 1,
       "explanation": "Maqolada og‘ir miopiyani linza ektopiyasi (ectopia lentis) uchun ‘qizil bayroq’ deb hisoblash kerakligi aytilgan. Linza siljishi ko‘rish o‘tkirligini pasaytirib, miopiya va astigmatizm chaqirishi mumkin. Marfan sindromli bolalarda to‘r parda ajralishi qayd etilmagan, glaukoma esa faqat bitta bolada shubha qilingan.",
-      "source": {
-        "author": "Anwar Baban va boshq.",
-        "title": "Unique Features of Cardiovascular Involvement and Progression in Children with Marfan Syndrome Justify Dedicated Multidisciplinary Care, Journal of Cardiovascular Development and Disease",
-        "page": "PMID 38667733"
-      }
-    },
-    {
-      "question": "Marfan sindromli bola uchun mitral klapan prolapsi haqida qaysi fikr to‘g‘ri?",
-      "options": [
-        "Bolalarda uchramaydi, faqat kattalarda aniqlanadi",
-        "Bolalarning taxminan 32–38% ida uchraydi, yoshga bog‘liq",
-        "Umumiy aholidagi kabi 1–2% hollarda uchraydi",
-        "Faqat o‘g‘il bolalarda uchraydi, qizlarda kuzatilmaydi"
-      ],
-      "correct_index": 1,
-      "explanation": "Marfan sindromli bolalarda mitral klapan prolapsi 32–38% hollarda uchraydi va uning tarqalishi yoshga bog‘liq. Kattalarda bu ko‘rsatkich 40–68%, umumiy aholida esa 1–2%. Qizlarda prolaps va mitral regurgitatsiya o‘g‘il bolalarga qaraganda ko‘proq kuzatilgan.",
       "source": {
         "author": "Anwar Baban va boshq.",
         "title": "Unique Features of Cardiovascular Involvement and Progression in Children with Marfan Syndrome Justify Dedicated Multidisciplinary Care, Journal of Cardiovascular Development and Disease",

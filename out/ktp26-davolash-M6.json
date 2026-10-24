@@ -32,7 +32,42 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Normal tana harorati",
+            "value": "36–37",
+            "unit": "°C"
+          },
+          {
+            "label": "Xavfli past/yuqori",
+            "value": "<22–25 / >43–44",
+            "unit": "°C"
+          },
+          {
+            "label": "Nurlanish bilan chiqadi",
+            "value": "55",
+            "unit": "%"
+          },
+          {
+            "label": "Ter bilan",
+            "value": "27",
+            "unit": "%"
+          },
+          {
+            "label": "O‘tkazish bilan",
+            "value": "15",
+            "unit": "%"
+          },
+          {
+            "label": "Ajratmalar bilan",
+            "value": "3",
+            "unit": "%"
+          }
+        ],
+        "caption": "Issiqlik almashinuvi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi yo‘l bilan issiqlik eng ko‘p chiqadi? Doskada: Issiqlik ajralishi foizlari. Tipik xato: Mahalliy va umumiy ta’sirni adashtirish."
     },
     {
@@ -66,7 +101,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Issiq urish",
+        "children": [
+          {
+            "label": "Sharoit",
+            "items": [
+              "Yuqori harorat va namlik",
+              "Shamolsizlik, issiq sex",
+              "Og‘ir jismoniy ish"
+            ]
+          },
+          {
+            "label": "Moyillik",
+            "items": [
+              "Havo o‘tkazmaydigan kiyim",
+              "Yurak-tomir kasalligi, semizlik",
+              "Qalqonsimon bez giperfunksiyasi"
+            ]
+          },
+          {
+            "label": "Bolalar",
+            "items": [
+              "1 yoshgacha juda sezgir"
+            ]
+          }
+        ],
+        "caption": "Issiq urish sharoitlari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Kimlar xavf guruhida? Doskada: Moyillik omillari ro‘yxati. Tipik xato: Issiq urishni faqat yozda kutish."
     },
     {
@@ -92,13 +155,30 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Issiq urishning uch davri",
-        "nodes": [
-          "MNT susayish davri",
-          "Qo‘zg‘alish davri",
-          "Holsizlik davri (predagonal)"
-        ]
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1: MNT susayishi",
+            "text": "Hush xiralashadi"
+          },
+          {
+            "title": "2: Qo‘zg‘alish",
+            "text": "Qo‘zg‘alish davri"
+          },
+          {
+            "title": "3: Holsizlik",
+            "text": "Predagonal davr"
+          },
+          {
+            "title": "O‘tkir shakl",
+            "text": "Hush yo‘qolishi, koma, qisqa muddatda o‘lim"
+          },
+          {
+            "title": "42–43 °C dan yuqori",
+            "text": "Nafas birlamchi to‘xtaydi"
+          }
+        ],
+        "caption": "Issiq urishning kechishi"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Uch davrni tartibda ayting. Doskada: Davrlar zanjiri. Tipik xato: O‘tkir va uzaytirilgan shaklni aralashtirish."
     },
@@ -133,7 +213,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Quyosh urishi",
+            "items": [
+              "Bosh kiyimsiz quyoshda",
+              "Bosh og‘rig‘i, talvasa",
+              "Harorat ko‘tarilishi xos emas"
+            ]
+          },
+          {
+            "title": "Murda manzarasi",
+            "items": [
+              "Issiq va quyosh urishida o‘xshash",
+              "Miya to‘laqonligi, shishi, qon quyilishi",
+              "Qotish tez; dog‘lar kech va oz"
+            ]
+          }
+        ],
+        "caption": "Quyosh urishi va murda belgilari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega issiq urishda tashxis qiyin? Doskada: Belgilar jadvali. Tipik xato: Quyosh urishida yuqori harorat kutish."
     },
     {
@@ -167,7 +268,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Termik kuyish",
+        "children": [
+          {
+            "label": "Chegara",
+            "items": [
+              "Teri harorati 45–50 °C dan oshsa"
+            ]
+          },
+          {
+            "label": "Manbalar",
+            "items": [
+              "Alanga, qaynoq quyushqoq moddalar",
+              "60 °C dan yuqori suv, bug‘",
+              "Qizdirilgan jism"
+            ]
+          },
+          {
+            "label": "Xususiyat",
+            "items": [
+              "Yupqa teri sohasida chuqurroq"
+            ]
+          }
+        ],
+        "caption": "Termik kuyish sabablari"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Qaysi omillar chuqurlikni belgilaydi? Doskada: Manba turlari. Tipik xato: Barcha sohalarda kuyishni bir xil chuqurlikda deb baholash."
     },
     {
@@ -193,30 +320,30 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Termik kuyish darajalari",
-        "header": [
-          "Daraja",
-          "Asosiy belgi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "I daraja",
+            "text": "Eritema, shish; 3–4 kunda o‘tadi"
+          },
+          {
+            "title": "II daraja",
+            "text": "Pufaklar; 10–20 kunda tuzaladi"
+          },
+          {
+            "title": "IIIA",
+            "text": "Epidermis va derma yuza qavati nekrozi"
+          },
+          {
+            "title": "IIIB",
+            "text": "To‘liq nekroz; chandiq"
+          },
+          {
+            "title": "IV daraja",
+            "text": "Chuqur to‘qimalar; alanga"
+          }
         ],
-        "rows": [
-          [
-            "I",
-            "Eritema, shish; 3–4 kun"
-          ],
-          [
-            "II",
-            "Pufaklar; 10–20 kun"
-          ],
-          [
-            "III",
-            "Nekroz; chandiq"
-          ],
-          [
-            "IV",
-            "Chuqur to‘qimalar; alanga"
-          ]
-        ]
+        "caption": "Kuyish darajalari"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Daraja qaysi belgi bilan ajratiladi? Doskada: Darajalar jadvali. Tipik xato: IV darajali kuyishni qaynoq suvdan ham kutish."
     },
@@ -251,7 +378,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Issiq suyuqlik",
+            "items": [
+              "Soch, kiyim shikastlanmaydi",
+              "Yuzaki, oqma shaklida"
+            ]
+          },
+          {
+            "title": "Alanga",
+            "items": [
+              "Soch va kiyim shikastlanadi",
+              "Tilsimon chuqur yara, qurum"
+            ]
+          },
+          {
+            "title": "Qizdirilgan jism",
+            "items": [
+              "Chuqur, cheklangan kuyish",
+              "Shakli kontaktga mos"
+            ]
+          }
+        ],
+        "caption": "Manbani aniqlash"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi belgi qaysi manbaga xos? Doskada: Uch manba jadvali. Tipik xato: Oqma izlarni alangaga bog‘lash."
     },
     {
@@ -277,42 +430,40 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "To‘qqizliklar qoidasi",
-        "header": [
-          "Soha",
-          "Ulush"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Bosh va bo‘yin",
+            "value": "9",
+            "unit": "%"
+          },
+          {
+            "label": "Qo‘l",
+            "value": "9",
+            "unit": "%"
+          },
+          {
+            "label": "Old yuza",
+            "value": "18",
+            "unit": "%"
+          },
+          {
+            "label": "Orqa yuza",
+            "value": "18",
+            "unit": "%"
+          },
+          {
+            "label": "Son; boldir va tovon",
+            "value": "9",
+            "unit": "%"
+          },
+          {
+            "label": "Oraliq",
+            "value": "1",
+            "unit": "%"
+          }
         ],
-        "rows": [
-          [
-            "Bosh va bo‘yin",
-            "9%"
-          ],
-          [
-            "Qo‘l",
-            "9%"
-          ],
-          [
-            "Old yuza",
-            "18%"
-          ],
-          [
-            "Orqa yuza",
-            "18%"
-          ],
-          [
-            "Son",
-            "9%"
-          ],
-          [
-            "Boldir va tovon",
-            "9%"
-          ],
-          [
-            "Oraliq",
-            "1%"
-          ]
-        ]
+        "caption": "To‘qqizliklar qoidasi"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Qoidani qo‘llab maydonni hisoblang. Doskada: Tana sohalarining foizlari. Tipik xato: Faqat chuqurlikka qarab og‘irlikni baholash."
     },
@@ -347,7 +498,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "III–IV daraja",
+            "value": ">10",
+            "unit": "% yuza"
+          },
+          {
+            "label": "III daraja",
+            "value": ">15",
+            "unit": "% yuza"
+          },
+          {
+            "label": "II daraja",
+            "value": ">20",
+            "unit": "% yuza"
+          },
+          {
+            "label": "Nafas yo‘llari kuyishi",
+            "value": "xavfli"
+          },
+          {
+            "label": "Diagnoz yozuvi",
+            "value": "kasr: yuza/daraja"
+          }
+        ],
+        "caption": "Hayot uchun xavfli kuyish chegaralari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Diagnozni kasr shaklida yozing. Doskada: Misol yozuvi. Tipik xato: Kuyish darajasini yozib, maydonini unutish."
     },
     {
@@ -381,7 +560,16 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "cycle",
+        "nodes": [
+          "Shok (2–3 sutka)",
+          "Intoksikatsiya (1–2 hafta)",
+          "Asoratlar davri",
+          "Tiklanish"
+        ],
+        "caption": "Kuyish kasalligining 4 davri"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Davrlarning muddatini ayting. Doskada: Davrlar zanjiri. Tipik xato: Kichik bolalarda yengilroq kechadi deb o‘ylash."
     },
     {
@@ -415,7 +603,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Alanga hayotiyligi",
+        "children": [
+          {
+            "label": "Yong‘inda",
+            "items": [
+              "Ko‘pincha is gazidan o‘lim",
+              "O‘limdan keyin murda ko‘mirlanadi"
+            ]
+          },
+          {
+            "label": "Qurum",
+            "items": [
+              "Nafas yo‘llari, qizilo‘ngach",
+              "Oshqozonda — hayotiy belgi"
+            ]
+          },
+          {
+            "label": "Karboksigemoglobin",
+            "items": [
+              "Murda alangasida ≤20%",
+              "Hayotiy ta’sirda 60% gacha"
+            ]
+          }
+        ],
+        "caption": "Alanga hayotiyligi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega chuqur tomirlardan qon olinadi? Doskada: Karboksigemoglobin 20% va 60%. Tipik xato: Qurumni murdada doimo hayotiy belgi deb bilmaslik."
     },
     {
@@ -449,7 +664,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Hayotiylik belgilari",
+        "children": [
+          {
+            "label": "«G‘oz panjasi»",
+            "items": [
+              "Qovoq terisi yoyilganda"
+            ]
+          },
+          {
+            "label": "Ichki belgilar",
+            "items": [
+              "Nafas yo‘llari kuyishi",
+              "Ko‘p ivigan qon",
+              "Arterial tromboz, yog‘ emboliyasi"
+            ]
+          },
+          {
+            "label": "Pufak suyuqligi",
+            "items": [
+              "Oqsil ikki barobar ko‘p"
+            ]
+          }
+        ],
+        "caption": "Hayotiylikning boshqa belgilari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi belgi hayotiylikni tasdiqlaydi? Doskada: Belgilar jadvali. Tipik xato: Faqat tashqi ko‘rinishga tayanish."
     },
     {
@@ -483,7 +724,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Epidural gematoma",
+            "items": [
+              "Travmatik: urchuqsimon, birikkan",
+              "Alangadan: o‘roqsimon, birikmagan"
+            ]
+          },
+          {
+            "title": "Poza",
+            "items": [
+              "Mushaklar zichlashib kaltalanadi",
+              "«Bokser pozasi»"
+            ]
+          },
+          {
+            "title": "Kulga aylanish",
+            "items": [
+              "Go‘daklar 2–3 soatda",
+              "Kattalar ~20 soatda"
+            ]
+          }
+        ],
+        "caption": "Yongan murda"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Epidural gematomani qanday ajratamiz? Doskada: Ikki gematoma qiyosi. Tipik xato: Yong‘indan keyingi gematomani doim travma deb baholash."
     },
     {
@@ -499,7 +766,7 @@
           "uncertain": false
         },
         {
-          "text": "Sovuq suvda o‘lim 1–1,5 soatda kelishi mumkin; to‘satdan sovuq suvga tushishda chuqur gipotermiyagacha ham qon tomir kollapsi yoki sovuq shokdan o‘lim bo‘lishi mumkin.",
+          "text": "Sovuq suvda o‘lim 1–1,5 soatda kelishi mumkin; sovuq suvga to‘satdan tushganda chuqur gipotermiyagacha ham tomir kollapsi yoki sovuq shokdan o‘lim bo‘ladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -508,7 +775,7 @@
           "uncertain": false
         },
         {
-          "text": "Tana harorati 30–28 °C gacha pasayganda bosh miya po‘stlog‘i funksiyalari buziladi; yakuniy bosqichda +25…+22 °C da o‘lim ko‘pincha nafasning birlamchi to‘xtashidan.",
+          "text": "Tana harorati 30–28 °C gacha pasayganda po‘stloq funksiyasi buziladi; yakuniy bosqichda +25…+22 °C da o‘lim ko‘pincha nafasning birlamchi to‘xtashidan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -517,7 +784,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Past harorat",
+        "children": [
+          {
+            "label": "Kuchaytiruvchi",
+            "items": [
+              "Sovuq, namlik, shamol",
+              "Charchoq, ochlik, mastlik"
+            ]
+          },
+          {
+            "label": "Sovuq suvda",
+            "items": [
+              "Hayot 1–1,5 soatda tugashi mumkin",
+              "Sovuq shok, kollaps"
+            ]
+          },
+          {
+            "label": "Tana harorati",
+            "items": [
+              "30–28 °C: po‘stloq funksiyasi buziladi",
+              "+25…+22 °C: nafas to‘xtashi"
+            ]
+          }
+        ],
+        "caption": "Past haroratning umumiy ta’siri"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Mastlik nega xavf? Doskada: Harorat bosqichlari. Tipik xato: Sovuq qotishni faqat manfiy haroratda kutish."
     },
     {
@@ -551,7 +845,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Tashqi belgilar",
+        "children": [
+          {
+            "label": "Poza",
+            "items": [
+              "Qo‘l ko‘krakda, oyoq qoringa"
+            ]
+          },
+          {
+            "label": "Ochiq sohalar",
+            "items": [
+              "Ko‘kimtir, shishinqiragan",
+              "Muz sumalaklari, qirov (Rayskiy)"
+            ]
+          },
+          {
+            "label": "Boshqa",
+            "items": [
+              "«G‘oz terisi»",
+              "Moyak qisqarishi (Puparev)",
+              "Dog‘lar pushti-qizg‘ish"
+            ]
+          }
+        ],
+        "caption": "Sovuq qotish: tashqi belgilar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega murda dog‘lari pushti? Doskada: Belgilar jadvali. Tipik xato: Qor tagidagi muzni sovuq qotishning spetsifik belgisi deb bilish."
     },
     {
@@ -585,7 +906,39 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Ichki belgilar",
+        "children": [
+          {
+            "label": "To‘laqonlik",
+            "items": [
+              "Ichki a’zolar to‘laqon",
+              "Oshqozon bo‘sh (Puxnarevich)"
+            ]
+          },
+          {
+            "label": "Buyrak",
+            "items": [
+              "Jomlarda qon quyilishi (Fabrikantov)"
+            ]
+          },
+          {
+            "label": "Vishnevskiy dog‘lari",
+            "items": [
+              "Oshqozon, o‘n ikki barmoqli ichak",
+              "80–90% holatda; 6–9 oydan keyin ham"
+            ]
+          },
+          {
+            "label": "Tez o‘limda",
+            "items": [
+              "Dog‘lar kam yoki yo‘q"
+            ]
+          }
+        ],
+        "caption": "Sovuq qotishning ichki belgilari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Vishnevskiy dog‘lari qanday paydo bo‘ladi? Doskada: Belgi—ma’no jadvali. Tipik xato: Dog‘larning yo‘qligidan sovuq qotishni inkor etish."
     },
     {
@@ -610,7 +963,7 @@
           "uncertain": false
         },
         {
-          "text": "Muzlagan murdada bosh miya hajmi kattalashib, kalla suyaklari sinishi va choklar ajralishi mumkin; murda xona haroratida eritiladi (+50 °C gacha iliq havo yoki suv).",
+          "text": "Muzlagan murdada miya hajmi kattalashib, kalla suyaklari sinishi va choklar ajralishi mumkin; murda xona haroratida yoki +50 °C gacha iliq havo/suvda eritiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -619,7 +972,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Mikroskopiya va muzlash",
+        "children": [
+          {
+            "label": "Mikroskopiya",
+            "items": [
+              "Mikrotsirkulyator spazm, shish",
+              "Kasyanov: buyrak epiteliysi o‘sishi"
+            ]
+          },
+          {
+            "label": "Mastlik",
+            "items": [
+              "Qonda alkogol past, siydikda baland"
+            ]
+          },
+          {
+            "label": "Muzlagan murda",
+            "items": [
+              "Miya hajmi kattalashadi",
+              "Kalla suyagi sinishi, choklar ajralishi",
+              "Eritish: +50 °C gacha iliq havo/suv"
+            ]
+          }
+        ],
+        "caption": "Muzlagan murda"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Muzlash jarohatlarini hayotiydan qanday farqlaymiz? Doskada: Muzlatish—eritish. Tipik xato: Tez eritish gemolizga ta’sir qilmaydi deb o‘ylash."
     },
     {
@@ -645,30 +1025,30 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Sovuq urish darajalari",
-        "header": [
-          "Daraja",
-          "Muddat/belgi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "I daraja",
+            "text": "Qizg‘ish-ko‘kimtir; 3–7 kun"
+          },
+          {
+            "title": "II daraja",
+            "text": "Pufaklar; 10–20 kun"
+          },
+          {
+            "title": "III daraja",
+            "text": "Nekroz; 1–2 oy"
+          },
+          {
+            "title": "IV daraja",
+            "text": "Suyakgacha nekroz"
+          },
+          {
+            "title": "Asoratlar",
+            "text": "Flegmona, osteomielit, sepsis"
+          }
         ],
-        "rows": [
-          [
-            "I",
-            "Qizg‘ish-ko‘kimtir; 3–7 kun"
-          ],
-          [
-            "II",
-            "Pufaklar; 10–20 kun"
-          ],
-          [
-            "III",
-            "Nekroz; 1–2 oy"
-          ],
-          [
-            "IV",
-            "Suyakgacha nekroz"
-          ]
-        ]
+        "caption": "Sovuq urish darajalari"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Sovuq urish darajalarini ayting. Doskada: Darajalar jadvali. Tipik xato: Sovuq urishni kuyish bilan bir xil davolash."
     },
@@ -703,7 +1083,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Elektrotravma",
+        "children": [
+          {
+            "label": "Ulushi",
+            "items": [
+              "Shikastlanishlarning 1–2,5%",
+              "Nogironlik/o‘limda yetakchi"
+            ]
+          },
+          {
+            "label": "Sabab",
+            "items": [
+              "Aksariyat baxtsiz hodisa",
+              "Yashin juda kam"
+            ]
+          },
+          {
+            "label": "Xususiyat",
+            "items": [
+              "Tok o‘tgan yo‘lda shikastlanadi",
+              "Energiya boshqa turga aylanadi"
+            ]
+          }
+        ],
+        "caption": "Elektrotravma"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega ta’sir qisqa, oqibat og‘ir bo‘lishi mumkin? Doskada: Xususiyatlar ro‘yxati. Tipik xato: Elektrotravmani kam xavfli deb baholash."
     },
     {
@@ -728,7 +1135,7 @@
           "uncertain": false
         },
         {
-          "text": "50 mA tok yurak-qon tomir va nafas yetishmovchiligini, 100 mA aksariyat hollarda o‘limni keltiradi; 40–60 Hz chastota o‘ta xavfli, 10 000 Hz dan yuqori shikastlamaydi.",
+          "text": "50 mA tok yurak-tomir va nafas yetishmovchiligini, 100 mA aksariyat o‘limni keltiradi; 40–60 Hz chastota o‘ta xavfli, 10 000 Hz dan yuqori shikastlamaydi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -737,7 +1144,40 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Xavfsiz kuchlanish",
+            "value": "24",
+            "unit": "V"
+          },
+          {
+            "label": "Ko‘p o‘lim",
+            "value": "220–380",
+            "unit": "V"
+          },
+          {
+            "label": "50 mA tok",
+            "value": "yetishmovchilik"
+          },
+          {
+            "label": "100 mA tok",
+            "value": "ko‘pincha o‘lim"
+          },
+          {
+            "label": "Xavfli chastota",
+            "value": "40–60",
+            "unit": "Hz"
+          },
+          {
+            "label": "Shikastlamaydi",
+            "value": ">10 000",
+            "unit": "Hz"
+          }
+        ],
+        "caption": "Tok xususiyatlari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi parametr eng xavfli? Doskada: Parametrlar jadvali. Tipik xato: Yuqori kuchlanishni doim o‘limga olib keladi deb o‘ylash."
     },
     {
@@ -753,7 +1193,7 @@
           "uncertain": false
         },
         {
-          "text": "Qarshilik ortib borish tartibi: qon, shilliq qavat, jigar, buyrak, mushak, miya, o‘pka, boylam, tog‘ay, nerv, suyak, teri; morfologik o‘zgarishlar suyak va teri sohasida.",
+          "text": "Qarshilik ortishi: qon, shilliq qavat, jigar, buyrak, mushak, miya, o‘pka, boylam, tog‘ay, nerv, suyak, teri; morfologik o‘zgarish suyak va teri sohasida.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -771,7 +1211,39 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Organizm va sharoit",
+        "children": [
+          {
+            "label": "Sezgirlar",
+            "items": [
+              "Bolalar, keksalar, homilador"
+            ]
+          },
+          {
+            "label": "Qarshilikni pasaytiradi",
+            "items": [
+              "Yurak kasalligi, gipoksiya",
+              "Mastlik, issiq urish"
+            ]
+          },
+          {
+            "label": "Nam teri",
+            "items": [
+              "Terlash tokka qulaylik: yozda ko‘proq"
+            ]
+          },
+          {
+            "label": "Tok kuchi",
+            "items": [
+              ">25 mA: nafas mushaklari talvasasi",
+              "80 mA: fibrillyatsiya"
+            ]
+          }
+        ],
+        "caption": "Organizm va sharoit"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega elektromonterlarda kam uchraydi? Doskada: Qarshilik tartibi. Tipik xato: Quruq teri va nam terini bir xil deb baholash."
     },
     {
@@ -805,7 +1277,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Tok yo‘li va qadam kuchlanishi",
+        "children": [
+          {
+            "label": "Bir qutbli ulanish",
+            "items": [
+              "Izolyatsiyada odatda xavfsiz"
+            ]
+          },
+          {
+            "label": "Xavfli tok sirtmoqlari",
+            "items": [
+              "Yuqori, chap, chap egri",
+              "Chap to‘liq"
+            ]
+          },
+          {
+            "label": "Qadam kuchlanishi",
+            "items": [
+              "0,8 m qadam potensiallar farqi",
+              "10 m dan yaqin bormaslik"
+            ]
+          }
+        ],
+        "caption": "Tok sirtmoqlari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Qadam kuchlanishidan qanday saqlanamiz? Doskada: Tok sirtmoqlari sxemasi. Tipik xato: Qadam kuchlanishini kontakt shikastlanishi deb bilish."
     },
     {
@@ -839,7 +1337,40 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Tokning ta’siri",
+        "children": [
+          {
+            "label": "Umumiy",
+            "items": [
+              "Qorincha fibrillyatsiyasi",
+              "Elektrogen asfiksiya, shok"
+            ]
+          },
+          {
+            "label": "Kimyoviy",
+            "items": [
+              "Anodda koagulyatsion nekroz",
+              "Katodda kolliqvatsion nekroz"
+            ]
+          },
+          {
+            "label": "Termik",
+            "items": [
+              "Kuyish",
+              "Suyakda «marvarid marjonlari»"
+            ]
+          },
+          {
+            "label": "Mexanik",
+            "items": [
+              "Bo‘g‘im chiqishi, suyak sinishi"
+            ]
+          }
+        ],
+        "caption": "Tokning ta’sir turlari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: O‘lim mexanizmlarini sanang. Doskada: Spetsifik va nospetsifik ta’sir. Tipik xato: Faqat termik ta’sirni hisobga olish."
     },
     {
@@ -864,7 +1395,7 @@
           "uncertain": false
         },
         {
-          "text": "Metallizatsiya rangi o‘tkazgichga bog‘liq: mis — havorang-yashil, temir — sariq-qora, alyuminiy — kulrang. Yupqa yoki nam teri holatlarining 10–20% ida tamg‘a hosil bo‘lmaydi.",
+          "text": "Metallizatsiya rangi o‘tkazgichga bog‘liq: mis — havorang-yashil, temir — sariq-qora, alyuminiy — kulrang. Yupqa/nam teri holatining 10–20% ida tamg‘a yo‘q.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -873,7 +1404,36 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Hosil bo‘lishi",
+            "items": [
+              "Kirish va chiqish joyida",
+              "Mahalliy harorat 120 °C gacha",
+              "Kaft va tovonda yaqqol"
+            ]
+          },
+          {
+            "title": "Ko‘rinishi",
+            "items": [
+              "Dumaloq/oval, zich",
+              "Chekkasi ko‘tarilgan, markazi kraterli",
+              "Soch kuymaydi"
+            ]
+          },
+          {
+            "title": "Metallizatsiya",
+            "items": [
+              "Mis — havorang-yashil",
+              "Temir — sariq-qora",
+              "Alyuminiy — kulrang"
+            ]
+          }
+        ],
+        "caption": "Elektr tamg‘a"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Elektr tamg‘ani qanday aniqlaymiz? Doskada: Belgilar jadvali. Tipik xato: Tamg‘a yo‘qligidan elektrotravmani inkor etish."
     },
     {
@@ -898,7 +1458,7 @@
           "uncertain": false
         },
         {
-          "text": "O‘lim turlari (Avdeev): o‘ta tez, sekin, uzilgan va kech o‘lim; soxta o‘lim (vita minima) holatlarida murda dog‘lari paydo bo‘lguncha reanimatsiya tavsiya etiladi.",
+          "text": "O‘lim turlari (Avdeev): o‘ta tez, sekin, uzilgan, kech; soxta o‘lim (vita minima)da murda dog‘lari paydo bo‘lguncha reanimatsiya tavsiya etiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -907,7 +1467,40 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Elektr kuyish va o‘lim turlari",
+        "children": [
+          {
+            "label": "Elektr kuyish",
+            "items": [
+              "120 °C dan yuqori",
+              "Barcha qavat nekrozi, og‘riqsiz"
+            ]
+          },
+          {
+            "label": "Kattaligi",
+            "items": [
+              "2–3 haftadan so‘ng ayon",
+              "Dastlabkidan bir necha barobar katta"
+            ]
+          },
+          {
+            "label": "O‘lim turlari (Avdeev)",
+            "items": [
+              "O‘ta tez, sekin",
+              "Uzilgan, kech"
+            ]
+          },
+          {
+            "label": "Soxta o‘lim",
+            "items": [
+              "Dog‘lar paydo bo‘lguncha reanimatsiya"
+            ]
+          }
+        ],
+        "caption": "Elektr kuyish va o‘lim turlari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega uzilgan o‘lim xavfli? Doskada: To‘rt tur. Tipik xato: Hushiga kelganni xavfsiz deb hisoblash."
     },
     {
@@ -941,7 +1534,40 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Yashin",
+        "children": [
+          {
+            "label": "Kattaliklar",
+            "items": [
+              "Million volt, yuz ming amper"
+            ]
+          },
+          {
+            "label": "Omillar",
+            "items": [
+              "Tok, yorug‘lik",
+              "Tovush va zarb to‘lqini"
+            ]
+          },
+          {
+            "label": "Belgilar",
+            "items": [
+              "Teri yorilishi, soch kuyishi",
+              "Metall qismlarning erishi"
+            ]
+          },
+          {
+            "label": "«Yashin figurasi»",
+            "items": [
+              "Daraxtsimon qizil-pushti",
+              "Soatlar–sutkada yo‘qoladi"
+            ]
+          }
+        ],
+        "caption": "Yashin ta’siri"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Yashin figurasi nega muhim? Doskada: Belgi xususiyatlari. Tipik xato: Figurani doimiy belgi deb o‘ylash."
     },
     {
@@ -975,7 +1601,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Barotravma",
+        "children": [
+          {
+            "label": "Sharoitlar",
+            "items": [
+              "G‘avvoslik, parvoz",
+              "Portlash, baland tog‘, barokamera"
+            ]
+          },
+          {
+            "label": "Mexanik",
+            "items": [
+              "Dekompression kasallik",
+              "O‘pka-quloq-burun barotravmasi"
+            ]
+          },
+          {
+            "label": "Biologik",
+            "items": [
+              "O2 yoki CO2 zaharlanishi",
+              "Gipoksiya, azot narkozi"
+            ]
+          }
+        ],
+        "caption": "Barometrik bosim ta’siri"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Mexanik va biologik ta’sir farqi? Doskada: Ikki ta’sir jadvali. Tipik xato: Barotravmani faqat suv ostida kutish."
     },
     {
@@ -1000,7 +1653,7 @@
           "uncertain": false
         },
         {
-          "text": "Havo o‘pka venalari orqali yurakka o‘tib, arterial havo emboliyasi (ayniqsa miya arteriyalarida) o‘limga olib keladi; o‘lim ikki tomonlama pnevmotoraksdan ham bo‘lishi mumkin.",
+          "text": "Havo o‘pka venalari orqali yurakka o‘tib, arterial havo emboliyasi (ayniqsa miya arteriyalarida) o‘limga olib keladi; ikki tomonlama pnevmotoraks ham mumkin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1009,7 +1662,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Bosim",
+            "text": "10 m — 2 atm, 20 m — 3 atm"
+          },
+          {
+            "title": "Akvalang",
+            "text": "80% o‘pka barotravmasi, 20% cho‘kish"
+          },
+          {
+            "title": "Ko‘tarilish",
+            "text": "Nafas to‘xtatilsa bosim 80–100 mm.Hg oshadi"
+          },
+          {
+            "title": "Yorilish",
+            "text": "Bronx va alveolalar yoriladi"
+          },
+          {
+            "title": "Emboliya",
+            "text": "Arterial havo emboliyasi; pnevmotoraks"
+          }
+        ],
+        "caption": "O‘pka barotravmasi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega ko‘tarilishda nafasni to‘xtatish xavfli? Doskada: Bosim zanjiri. Tipik xato: Niqob-naycha bilan sho‘ng‘ishni xuddi akvalang kabi baholash."
     },
     {
@@ -1025,7 +1703,7 @@
           "uncertain": false
         },
         {
-          "text": "Karbonat angidrid bilan zaharlanish — nafas havosida CO2 3% va undan ortiq; azot yog‘da qonga nisbatan 5 barobar yaxshi eriydi, alkogol mastligiga o‘xshash holat beradi.",
+          "text": "CO2 bilan zaharlanish — nafas havosida CO2 3% va undan ortiq; azot yog‘da qonga nisbatan 5 barobar yaxshi eriydi, alkogol mastligiga o‘xshash holat beradi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1034,7 +1712,7 @@
           "uncertain": false
         },
         {
-          "text": "Tez ko‘tarilishda qon va to‘qimalarda erigan azot gaz pufaklari hosil qiladi — dekompression (kesson) kasallik; murdada yurak o‘ng kameralari va venalarda gazli qon laxtalari.",
+          "text": "Tez ko‘tarilishda erigan azot gaz pufaklari hosil qiladi — dekompression (kesson) kasallik; murdada yurak o‘ng kameralari, venalarda gazli qon laxtalari.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1043,14 +1721,47 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Gazlar va dekompressiya",
+        "children": [
+          {
+            "label": "Kislorod",
+            "items": [
+              "Neyrotoksik: >2,5–3,0 MPa",
+              "O‘pka shakli: 1,0–1,5 MPa, >2 soat"
+            ]
+          },
+          {
+            "label": "CO2",
+            "items": [
+              "Havoda ≥3%"
+            ]
+          },
+          {
+            "label": "Azot",
+            "items": [
+              "Yog‘da qondan 5 barobar eriydi",
+              "Mastlikka o‘xshash holat"
+            ]
+          },
+          {
+            "label": "Kesson kasalligi",
+            "items": [
+              "Gaz pufaklari",
+              "Yurak o‘ng qismida gazli laxta"
+            ]
+          }
+        ],
+        "caption": "Gazlar va dekompression kasallik"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Dekompression kasallik qanday hosil bo‘ladi? Doskada: Bosim pasayishi zanjiri. Tipik xato: Gazlar bilan zaharlanishda spetsifik morfologiya kutish."
     },
     {
       "title": "Past bosim va balandlik kasalligi",
       "bullets": [
         {
-          "text": "Balandlik kasalligi o‘rganmaganlarda 3500–4000 m balandlikda kuzatiladi; 5000–7000 m da kompensatsiyalanmagan gipoksiya, 6000–8000 m da dekompression buzilishlar qo‘shiladi.",
+          "text": "Balandlik kasalligi o‘rganmaganlarda 3500–4000 m da; 5000–7000 m da kompensatsiyalanmagan gipoksiya, 6000–8000 m da dekompression buzilishlar qo‘shiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1077,7 +1788,31 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Balandlik kasalligi",
+            "value": "3500–4000",
+            "unit": "m"
+          },
+          {
+            "label": "Gipoksiya",
+            "value": "5000–7000",
+            "unit": "m"
+          },
+          {
+            "label": "Dekompression buzilish",
+            "value": "6000–8000",
+            "unit": "m"
+          },
+          {
+            "label": "Suyuqlik «qaynashi»",
+            "value": "6 kPa (18000 m)"
+          }
+        ],
+        "caption": "Balandlik va past bosim"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi balandlikda nima kuzatiladi? Doskada: Balandlik—belgi jadvali. Tipik xato: Tog‘dagi o‘limni doim balandlik kasalligi deb baholash."
     },
     {
@@ -1103,30 +1838,33 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Nurlanish shakllari",
-        "header": [
-          "Doza",
-          "Shakl"
+        "kind": "tree",
+        "root": "Nur shikastlanishi",
+        "children": [
+          {
+            "label": "Nurlar",
+            "items": [
+              "Alfa, beta zarracha",
+              "Neytron, gamma, rentgen"
+            ]
+          },
+          {
+            "label": "Eng sezgir",
+            "items": [
+              "Suyak ko‘migi, teri",
+              "Ichak, jinsiy bezlar"
+            ]
+          },
+          {
+            "label": "Shakllar (doza)",
+            "items": [
+              "≤10 Gy: suyak ko‘migi",
+              "10–20 Gy: ichak",
+              "20–80 Gy: toksemik; >80: serebral"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "10 Gy gacha",
-            "Suyak ko‘migi"
-          ],
-          [
-            "10–20 Gy",
-            "Ichak"
-          ],
-          [
-            "20–80 Gy",
-            "Toksemik"
-          ],
-          [
-            "80 Gy dan ko‘p",
-            "Serebral"
-          ]
-        ]
+        "caption": "Radiatsiya ta’siri"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Dozaga qarab shakllarni ayting. Doskada: Doza—shakl jadvali. Tipik xato: Gray va radni adashtirish (1 Gy = 100 rad)."
     },
@@ -1161,7 +1899,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Birlamchi reaksiya",
+            "text": "3–4 sutkagacha"
+          },
+          {
+            "title": "Latent davr",
+            "text": "2–4 hafta"
+          },
+          {
+            "title": "Klinik davr",
+            "text": "Yaqqol belgilar; infeksion asorat"
+          },
+          {
+            "title": "Murdada",
+            "text": "Qon quyilishlar, ko‘mik, limfa, taloq"
+          },
+          {
+            "title": "Ekspertiza",
+            "text": "Omil, doza, vaqt, jarohat og‘irligi"
+          }
+        ],
+        "caption": "O‘tkir nur kasalligi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Ekspert qaysi hujjatlarga tayanadi? Doskada: Vazifalar ro‘yxati. Tipik xato: Nur kasalligini faqat klinik belgilar bilan baholash."
     },
     {
@@ -1177,7 +1940,7 @@
           "uncertain": false
         },
         {
-          "text": "Holatlar: tan jarohatlarining xarakteri va og‘irligi; jinsiy holatlar; jinsiy jinoyatlar; salomatlik holati, simulyatsiya, dissimulyatsiya, aggravatsiya, sun’iy kasallik; yoshni aniqlash.",
+          "text": "Holatlar: tan jarohati xarakteri, og‘irligi; jinsiy holatlar, jinoyatlar; salomatlik holati, simulyatsiya, dissimulyatsiya, aggravatsiya, sun’iy kasallik; yosh.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1195,7 +1958,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Tirik shaxs ekspertizasi",
+        "children": [
+          {
+            "label": "Asos",
+            "items": [
+              "Jinoiy, fuqarolik, ma’muriy ish"
+            ]
+          },
+          {
+            "label": "Holatlar",
+            "items": [
+              "Tan jarohati, jinsiy holatlar",
+              "Simulyatsiya, aggravatsiya",
+              "Yoshni aniqlash"
+            ]
+          },
+          {
+            "label": "Joyi",
+            "items": [
+              "Ambulatoriya, bo‘limlar"
+            ]
+          }
+        ],
+        "caption": "Tirik shaxslar ekspertizasi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi holatda ekspertiza kerak? Doskada: Holatlar ro‘yxati. Tipik xato: Faqat tan jarohatlari bo‘yicha tayinlanadi deb o‘ylash."
     },
     {
@@ -1229,18 +2018,46 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Tan jarohatlari: masalalar",
+        "children": [
+          {
+            "label": "Hal etiladi",
+            "items": [
+              "Turi, joylashuvi, xususiyati",
+              "Qurol turi, mexanizmi",
+              "Muddati, og‘irlik darajasi"
+            ]
+          },
+          {
+            "label": "JK tasnifi",
+            "items": [
+              "Og‘ir",
+              "O‘rtacha og‘ir (JK 105)",
+              "Yengil"
+            ]
+          },
+          {
+            "label": "O‘rtacha og‘ir",
+            "items": [
+              ">21 kun yoki 10–33% yo‘qotish"
+            ]
+          }
+        ],
+        "caption": "Tan jarohatlari tasnifi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Masalalarni sanang. Doskada: Beshta savol. Tipik xato: Og‘irlikni faqat davolanish muddatiga qarab baholash."
     },
     {
       "title": "Og‘irlik darajasi mezonlari",
       "bullets": [
         {
-          "text": "Mezonlar: hayot uchun xavf, sog‘liq buzilishi davomiyligi, mehnat qobiliyatining turg‘un yo‘qotilishi, a’zo funksiyasi yo‘qotilishi, ruhiy buzilish, homiladorlikning uzilishi, tiklanmaydigan badburushlik.",
+          "text": "Mezonlar: hayot uchun xavf, sog‘liq buzilishi davomiyligi, turg‘un mehnat yo‘qotish, a’zo funksiyasi yo‘qolishi, ruhiy buzilish, homila uzilishi, badburushlik.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "277"
+            "page": "277–280"
           },
           "uncertain": false
         }
@@ -1255,7 +2072,7 @@
         "rows": [
           [
             "Og‘ir",
-            "Hayot uchun xavf; ≥33% yo‘qotish; a’zo yo‘qotilishi"
+            "Hayot xavfi; ≥33%; a’zo yo‘qotilishi"
           ],
           [
             "O‘rtacha og‘ir",
@@ -1292,16 +2109,34 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Ekspertiza algoritmi",
-        "nodes": [
-          "Hodisa tafsiloti",
-          "Tibbiy hujjatlar",
-          "So‘rov",
-          "Ko‘rik",
-          "Qo‘shimcha tekshiruv",
-          "Xulosa"
-        ]
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Hodisa tafsiloti",
+            "text": "Tushunib olish"
+          },
+          {
+            "title": "Tibbiy hujjatlar",
+            "text": "Asl nusxalar"
+          },
+          {
+            "title": "So‘rov",
+            "text": "Shikast tafsilotlari"
+          },
+          {
+            "title": "Ko‘rik",
+            "text": "Jarohatni o‘rganish"
+          },
+          {
+            "title": "Qo‘shimcha tekshiruv",
+            "text": "Zarur bo‘lsa"
+          },
+          {
+            "title": "Xulosa",
+            "text": "Hujjatlashtirish"
+          }
+        ],
+        "caption": "Ekspertiza algoritmi"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Algoritmni tartibda ayting. Doskada: Olti qadam zanjiri. Tipik xato: Ko‘rikdan oldin hujjatlarni o‘rganmaslik."
     },
@@ -1336,14 +2171,41 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Hujjat, shaxs, so‘rov",
+        "children": [
+          {
+            "label": "Hujjatlar",
+            "items": [
+              "Asl nusxalar taqdim etiladi",
+              "Ishonchlilikka tayinlagan shaxs javob"
+            ]
+          },
+          {
+            "label": "Shaxs",
+            "items": [
+              "Pasport, harbiy bilet, guvohnoma",
+              "Jinsiy holatda 2 ta fotosurat"
+            ]
+          },
+          {
+            "label": "So‘rov",
+            "items": [
+              "Qachon, qayerda, kim, nima bilan",
+              "Necha marta; shikoyatlar"
+            ]
+          }
+        ],
+        "caption": "Hujjatlar, shaxsni tasdiqlash va so‘rov"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: So‘rovda qaysi savollar beriladi? Doskada: Savollar ro‘yxati. Tipik xato: Hujjatlar nusxasiga tayanib ko‘rikni boshlash."
     },
     {
       "title": "Ko‘rik, qo‘shimcha tekshiruv va ishtirokchilar",
       "bullets": [
         {
-          "text": "Ko‘rikda jarohatning turi, joylashuvi, shakli, o‘lchamlari, rangi, ifloslanishi va atrof terining holati o‘rganiladi; suratga olish faqat shaxsning ruxsati bilan.",
+          "text": "Ko‘rikda jarohat turi, joylashuvi, shakli, o‘lchami, rangi, ifloslanishi va atrof teri holati o‘rganiladi; suratga olish faqat shaxs ruxsati bilan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1352,7 +2214,7 @@
           "uncertain": false
         },
         {
-          "text": "Boshqa jinsdagi shaxs yalang‘ochlanganda tergovchi xonadan chiqadi; balog‘atga yetmaganlar ota-ona yoki pedagog, muomalaga layoqatsizlar qonuniy vakil ishtirokida ko‘rikdan o‘tadi.",
+          "text": "Boshqa jinsdagi shaxs yalang‘ochlanganda tergovchi chiqadi; balog‘atga yetmaganlar ota-ona/pedagog, muomalaga layoqatsizlar qonuniy vakil ishtirokida ko‘riladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1361,7 +2223,7 @@
           "uncertain": false
         },
         {
-          "text": "Davolanayotgan shaxs ko‘rigi sog‘lig‘i imkon bergandagina, davolash muassasasi xodimi ishtirokida; kasallik tarixida qayd etiladi. Zarurat bo‘lsa klinitsist-mutaxassislar maslahat beradi.",
+          "text": "Davolanayotgan shaxs ko‘rigi sog‘lig‘i imkon bergandagina, muassasa xodimi ishtirokida; kasallik tarixida qayd etiladi. Klinitsist maslahat beradi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1370,7 +2232,36 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Ko‘rik va ishtirokchilar",
+        "children": [
+          {
+            "label": "Ko‘rikda",
+            "items": [
+              "Turi, joyi, shakli, o‘lchami",
+              "Rangi, ifloslanishi",
+              "Surat: faqat ruxsat bilan"
+            ]
+          },
+          {
+            "label": "Ishtirokchilar",
+            "items": [
+              "Boshqa jins: tergovchi chiqadi",
+              "Voyaga yetmagan: ota-ona/pedagog",
+              "Layoqatsiz: qonuniy vakil"
+            ]
+          },
+          {
+            "label": "Davolanayotgan",
+            "items": [
+              "Sog‘liq imkon bersa",
+              "Kasallik tarixida qayd"
+            ]
+          }
+        ],
+        "caption": "Ko‘rik tartibi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Ko‘rikda kimlar ishtirok etadi? Doskada: Ishtirokchilar jadvali. Tipik xato: Bemorning ruxsatisiz suratga olish."
     }
   ],
@@ -1379,11 +2270,11 @@
       "question": "Issiqlikning eng katta qismi tanadan qaysi yo‘l bilan chiqariladi?",
       "options": [
         "Ter (27%)",
-        "Nurlanish (55%)",
+        "Ajratmalar (3%)",
         "O‘tkazish (15%)",
-        "Ajratmalar (3%)"
+        "Nurlanish (55%)"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Issiqlikning 55% nurlanish orqali chiqariladi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1411,11 +2302,11 @@
       "question": "«To‘qqizliklar qoidasi»ga ko‘ra tananing old yuzasi necha foizni egallaydi?",
       "options": [
         "9%",
-        "18%",
+        "1%",
         "27%",
-        "1%"
+        "18%"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Tananing old yuzasi 18%, orqa yuzasi 18%.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1427,11 +2318,11 @@
       "question": "Yong‘inda alanga hayotiy ta’sir qilganini qaysi belgi tasdiqlaydi?",
       "options": [
         "Bokser pozasi",
-        "Nafas yo‘llarida qurum",
+        "Teri darz ketishi",
         "Murdaning ko‘mirlanishi",
-        "Teri darz ketishi"
+        "Nafas yo‘llarida qurum"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Nafas yo‘llari, qizilo‘ngach va oshqozondagi qurum hayotiy ta’sirdan dalolat beradi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1443,11 +2334,11 @@
       "question": "Vishnevskiy dog‘lari qayerda aniqlanadi?",
       "options": [
         "Buyrak jomlarida",
-        "Oshqozon va o‘n ikki barmoqli ichak shilliq qavatida",
+        "O‘pka plevrasida",
         "Yurak ostida",
-        "O‘pka plevrasida"
+        "Oshqozon va o‘n ikki barmoqli ichak shilliq qavatida"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Vishnevskiy dog‘lari oshqozon va o‘n ikki barmoqli ichak shilliq qavatidagi mayda qon quyilishlar.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1459,11 +2350,11 @@
       "question": "Xavfsiz kuchlanishning xalqaro me’yori qancha?",
       "options": [
         "12 V",
-        "24 V",
         "110 V",
+        "24 V",
         "220 V"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Organizm uchun xavfsiz kuchlanish xalqaro me’yori 24 V.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1475,11 +2366,11 @@
       "question": "Elektr tamg‘a hosil bo‘lishida yetakchi omil qaysi?",
       "options": [
         "Mexanik ta’sir",
-        "Elektr tokining termik ta’siri",
+        "Nurlanish",
         "Kimyoviy ta’sir",
-        "Nurlanish"
+        "Elektr tokining termik ta’siri"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Elektr tamg‘a hosil bo‘lishida elektr tokining termik ta’siri yetakchi o‘rin tutadi; mahalliy harorat 120 °C gacha.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1533,6 +2424,166 @@
         "author": "G‘iyosov Z.A.",
         "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
         "page": "299–300"
+      }
+    },
+    {
+      "question": "Quyosh urishiga qaysi belgi xos emas?",
+      "options": [
+        "Bosh og‘rig‘i",
+        "Hush xiralashuvi",
+        "Tana haroratining salmoqli ko‘tarilishi",
+        "Talvasa"
+      ],
+      "correct_index": 2,
+      "explanation": "Quyosh urishida bosh og‘rig‘i, hush xiralashuvi, talvasa bo‘ladi; tana haroratining salmoqli ko‘tarilishi xos emas.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "184"
+      }
+    },
+    {
+      "question": "«Qo‘l kafti qoidasi»ga ko‘ra kaft yuzasi tana yuzasining taxminan necha foizi?",
+      "options": [
+        "1%",
+        "5%",
+        "9%",
+        "18%"
+      ],
+      "correct_index": 0,
+      "explanation": "Kaft yuzasi tana yuzasining taxminan 1% ini tashkil etadi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "187"
+      }
+    },
+    {
+      "question": "Kuyish kasalligining birinchi davri qaysi?",
+      "options": [
+        "Intoksikatsiya",
+        "Shok",
+        "Asoratlar",
+        "Tiklanish"
+      ],
+      "correct_index": 1,
+      "explanation": "Davrlar: shok (2–3 sutkagacha), intoksikatsiya (1–2 hafta), asoratlar davri va tiklanish.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "188"
+      }
+    },
+    {
+      "question": "Karboksigemoglobin o‘limdan keyingi alangada qancha foizdan oshmaydi?",
+      "options": [
+        "5%",
+        "20%",
+        "60%",
+        "90%"
+      ],
+      "correct_index": 1,
+      "explanation": "Karboksigemoglobin o‘limdan keyingi alangada 20% dan oshmaydi, hayotiy ta’sirda 60% gacha.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "189"
+      }
+    },
+    {
+      "question": "Rayskiy belgilari sovuq qotishda nimani anglatadi?",
+      "options": [
+        "Moyak qisqarishi",
+        "Og‘iz-burun atrofida muz sumalaklari, qosh va kipriklarda qirov",
+        "Oshqozon bo‘shligi",
+        "Buyrak jomlarida qon quyilishi"
+      ],
+      "correct_index": 1,
+      "explanation": "Og‘iz-burun atrofida muz sumalaklari, qosh va kipriklarda qirov — Rayskiy belgilari.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "192"
+      }
+    },
+    {
+      "question": "Puparev belgisi nima?",
+      "options": [
+        "Erkaklarda moyak qisqarishi, yorg‘oqning chov kanaliga tortilishi",
+        "Oshqozonda qon quyilishi",
+        "Buyrak epiteliysi o‘sishi",
+        "Terida pushti dog‘lar"
+      ],
+      "correct_index": 0,
+      "explanation": "Erkaklarda moyak qisqargan, yorg‘oq chov kanaliga tortilgan (Puparev belgisi).",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "192"
+      }
+    },
+    {
+      "question": "Uzilib tushgan yuqori kuchlanishli o‘tkazgichga necha metrdan kam masofaga yaqinlashish «qadam kuchlanishi» tufayli xavfli?",
+      "options": [
+        "1 m",
+        "3 m",
+        "10 m",
+        "50 m"
+      ],
+      "correct_index": 2,
+      "explanation": "«Qadam kuchlanishi»dan shikastlanmaslik uchun uzilgan o‘tkazgich joyiga 10 m dan kam masofaga yaqinlashmaslik kerak.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "200"
+      }
+    },
+    {
+      "question": "Mis o‘tkazgichdan hosil bo‘lgan elektr tamg‘a metallizatsiyasi qanday rangda?",
+      "options": [
+        "Havorang-yashil",
+        "Sariq-qora",
+        "Kulrang",
+        "Qizil"
+      ],
+      "correct_index": 0,
+      "explanation": "Metallizatsiya rangi o‘tkazgichga bog‘liq: mis — havorang-yashil, temir — sariq-qora, alyuminiy — kulrang.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "202"
+      }
+    },
+    {
+      "question": "«Yashin figurasi» qanday ko‘rinadi?",
+      "options": [
+        "Daraxtsimon qizil-pushti shakl",
+        "Dumaloq chuqur krater",
+        "Qora ko‘mir",
+        "Oq dog‘"
+      ],
+      "correct_index": 0,
+      "explanation": "«Yashin figurasi» — daraxtsimon qizil-pushti shakl, spetsifik; bir necha soat-sutkada yo‘qoladi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "205"
+      }
+    },
+    {
+      "question": "O‘tkir nur kasalligida birlamchi reaksiya qancha davom etadi?",
+      "options": [
+        "3–4 sutkagacha",
+        "2–4 hafta",
+        "6 oy",
+        "1 soat"
+      ],
+      "correct_index": 0,
+      "explanation": "O‘tkir nur kasalligi: birlamchi reaksiya (3–4 sutkagacha), latent davr (2–4 hafta), yaqqol klinik belgilar davri.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "213"
       }
     }
   ],

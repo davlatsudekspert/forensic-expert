@@ -1,2056 +1,2422 @@
 {
-  "topic": "OITSning axloqiy va huquqiy masalalari: OIV bilan yashovchilar huquqlari, eksperimental davolash, tibbiyot xodimlarining kasbiy xavflari (M9; A9)",
-  "slides": [
+ "topic": "OITSning axloqiy va huquqiy masalalari: OIV bilan yashovchilar huquqlari, eksperimental davolash, tibbiyot xodimlarining kasbiy xavflari (M9; A9)",
+ "slides": [
+  {
+   "title": "Kirish: mavzu va uning dolzarbligi",
+   "bullets": [
     {
-      "title": "Kirish: mavzu va uning dolzarbligi",
-      "bullets": [
-        {
-          "text": "OIV (odamning immunitet tanqisligi virusi) va OITS (orttirilgan immunitet tanqisligi sindromi) muammosi zamonaviy tibbiyotning deyarli barcha axloqiy muammolariga daxldor.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "201"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ba’zi axloqiy muammolar faqat OIV infeksiyasiga xos. Biotibbiyotning ko‘plab an’anaviy tamoyillari aynan shu infeksiya misolida sinovdan o‘tadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "201"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "«Zarar yetkazma!» tamoyili sinovda: ko‘p mamlakatlarda shifokorlar OIV bilan kasallanganlarga yordamdan ommaviy bosh tortadi, sababi – shaxsiy xavfsizlik.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "201"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Dars rejasi: xalqaro javob, tushunchalar, tamoyillar sinovi, OIV bilan yashovchilar huquqlari, eksperimental davolash va tibbiyot xodimlarining xavfi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "201-210"
-          },
-          "uncertain": true
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega OIV bioetikaning ‘sinov maydoni’ deyiladi? 2) Shifokorning shaxsiy xavfsizligi va bemorga yordam burchi to‘qnashsa, nima qilish kerak? Doskaga chizish: markazda ‘OIV/OITS’, atrofida 4 ta tarmoq (tamoyillar, huquqlar, davolash, kasbiy xavf). Tipik xato: OIV muammosini faqat tibbiy muammo deb qarash, huquqiy va ijtimoiy jihatlarni unutish."
-    },
-    {
-      "title": "Xalqaro javob: BMT deklaratsiyasi va UNAIDS",
-      "bullets": [
-        {
-          "text": "BMT (Birlashgan Millatlar Tashkiloti) Bosh Assambleyasi 2006 yil 2 iyunda OIV bo‘yicha siyosiy deklaratsiyani qabul qildi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "201"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Profilaktika kurash asosi: tushunarli tilda ta’lim, xavfli xulqni kamaytirish, dori ta’minoti.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "201"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "UNAIDS – BMTning OIV/OITS bo‘yicha Qo‘shma dasturi; huquqlar va gender tengligini himoya qiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "201"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "UNAIDS strategiyasi yo‘nalishlari",
-        "nodes": [
-          "Profilaktika",
-          "Davolash",
-          "Parvarish qilish",
-          "Qo‘llab-quvvatlash",
-          "Huquq va gender tengligi"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega deklaratsiya ta’limni ‘tushunarli tilda’ olib borishni talab qiladi? 2) Mahalliy axloqiy va madaniy qadriyatlar profilaktikada qanday hisobga olinadi? Doskaga chizish: UNAIDS yo‘nalishlari zanjirini daftarga ko‘chiring. Tipik xato: deklaratsiya sanasini va UNAIDS ning to‘liq nomini aralashtirish."
-    },
-    {
-      "title": "OIV va OITS: tushunchalarni farqlash",
-      "bullets": [
-        {
-          "text": "OIV retroviruslar guruhiga kiradi: uning genetik materiali DNK emas, RNK.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "203"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "OITS mustaqil nozologik birlik sifatida ajratiladi, aslida esa OIV infeksiyasi bosqichlaridan biri.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "203"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Diqqat: xato qilish xavfi! OIV ≠ OITS – virusni kasallik bosqichi bilan aralashtirmang.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "203"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "OIV va OITS solishtirmasi",
-        "nodes": [],
-        "header": [
-          "Tushuncha",
-          "OIV",
-          "OITS"
-        ],
-        "rows": [
-          [
-            "To‘liq nomi",
-            "Odamning immunitet tanqisligi virusi",
-            "Orttirilgan immunitet tanqisligi sindromi"
-          ],
-          [
-            "Mohiyati",
-            "Virus (retrovirus guruhi)",
-            "Sindrom, mustaqil nozologik birlik"
-          ],
-          [
-            "Genetik material",
-            "RNK (DNK emas)",
-            "Virusning o‘zi emas"
-          ],
-          [
-            "Bog‘liqligi",
-            "Infeksiya qo‘zg‘atuvchisi",
-            "OIV infeksiyasi bosqichlaridan biri"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega ‘OIV bilan yashovchi’ va ‘OITS bemori’ bir xil ma’noga ega emas? 2) Atamalarni noto‘g‘ri qo‘llash stigmaga qanday ta’sir qiladi? Doskaga chizish: OIV → OIV infeksiyasi → OITS bosqichi strelkasini chizing. Tipik xato: OITSni virusning nomi deb atash yoki ikkala atamani sinonim sifatida ishlatish."
-    },
-    {
-      "title": "Bioetika tamoyillari OIV sinovida",
-      "bullets": [
-        {
-          "text": "Bioetikaning ko‘plab an’anaviy tamoyillari va me’yorlari aynan OIV infeksiyasi misolida sinovdan o‘tkaziladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "201"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "OIV/OITS muammolari zamonaviy tibbiyotning barcha axloqiy masalalariga tegadi, ayrimlari esa faqat OIV infeksiyasiga xos.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "201"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Diqqat: OIV ≠ OITS. OIV – odamning immunitet tanqisligi virusi; OITS – orttirilgan immunitet tanqisligi sindromi, OIV infeksiyasi bosqichlaridan biri.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "203"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Keyingi slaydlar rejasi: “Zarar yetkazma!”, “Yaxshilik qil!”, so‘ng adolat va inson qadr-qimmati tamoyillari.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "201-203"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega aynan OIV infeksiyasi bioetik tamoyillarni ‘sinovdan o‘tkazadi’? 2) OIV va OITS farqi nimada? Doskada: ‘OIV → OITS’ strelkasini chizib, OITS OIV infeksiyasining bosqichi ekanini ko‘rsating. Tipik xato: OIV va OITS so‘zlarini sinonim sifatida ishlatish."
-    },
-    {
-      "title": "“Zarar yetkazma!” tamoyili va yordamni rad etish",
-      "bullets": [
-        {
-          "text": "Zarar faqat jismoniy bo‘lmaydi: bemorga yordam bermaslik ham zarar shakli hisoblanadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "201"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ba’zi mamlakatlarda shifokorlar OIV bilan kasallanganlarga yordam berishdan ommaviy bosh tortgan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "201"
-          },
-          "uncertain": true
-        },
-        {
-          "text": "Rad etishning sababi – tibbiyot xodimlarining o‘z shaxsiy xavfsizligi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "201"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Rad etish zanjiri",
-        "nodes": [
-          "OIV bilan kasallangan bemor",
-          "Shifokor uchun yuqish xavfi",
-          "Shaxsiy xavfsizlik qo‘rquvi",
-          "Yordamni ommaviy rad etish",
-          "Zarar: yordam berilmaydi"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Yordam bermaslik qachon zarar bo‘ladi? 2) Shaxsiy xavfsizlik rad etishni oqlaydimi? Doskada: rad etish zanjirini 5 bosqichda chizdiring. Tipik xato: ‘zarar’ ni faqat jarrohlik yoki dori asoratlari deb tushunish."
-    },
-    {
-      "title": "“Yaxshilik qil!” tamoyilidagi ichki ziddiyat",
-      "bullets": [
-        {
-          "text": "Shifokorning “yaxshilik” faoliyati faqat OIV bilan kasallangan bemorning o‘ziga qaratilmaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "202"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "U bemorning yaqinlari orasida OIV infeksiyasining oldini olish masalalarini ham qamrab oladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "202"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Buni anglagan xodimda ichki ziddiyat va kasbiy tafakkurda bo‘linish yuzaga keladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "202"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "“Yaxshilik” doirasi",
-        "header": [
-          "Vaziyat",
-          "Mazmuni"
-        ],
-        "rows": [
-          [
-            "Odatdagi holat",
-            "Bir bemorning salomatligini saqlash"
-          ],
-          [
-            "OIV holatida",
-            "Atrofdagilarni ham infeksiyadan saqlash"
-          ],
-          [
-            "Shifokor ichida",
-            "Kasbiy tafakkurda bo‘linish"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Bemor manfaati va atrofdagilar xavfsizligi to‘qnashsa, shifokor nima qilishi kerak? 2) Ichki ziddiyat nimadan kelib chiqadi? Doskada: markazda bemor, atrofida yaqinlari doirasini chizing. Tipik xato: ‘yaxshilik qil’ ni faqat bemorni davolash deb tushunish."
-    },
-    {
-      "title": "Adolat tamoyili: huquqiy va axloqiy jihat",
-      "bullets": [
-        {
-          "text": "OIV (odamning immunitet tanqisligi virusi) bilan kasallanganlar xalqaro huquq va milliy qonunga ko‘ra teng huquqli.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "202"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "OITS (orttirilgan immunitet tanqisligi sindromi) bemorlariga tenglikni amalda ta’minlash muammoli.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "202"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tibbiyot jamoasida bunday bemorga tabaqalashtirilgan yondashuv mavjud.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "202"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Tenglik: qog‘ozda va amalda",
-        "nodes": [],
-        "header": [
-          "Jihat",
-          "Mazmuni"
-        ],
-        "rows": [
-          [
-            "Huquqiy (rasmiy)",
-            "Boshqa fuqarolar bilan teng huquq"
-          ],
-          [
-            "Axloqiy (substantiv)",
-            "Tenglikni so‘zsiz amalga oshirish muammoli"
-          ],
-          [
-            "Tibbiyot jamoasida",
-            "Bemorga tabaqalashtirilgan yondashuv"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 6-7 daqiqa. Muhokama: 1) “Qonun oldida tenglik” va “amaldagi tenglik” nima bilan farq qiladi? 2) Tabaqalashtirilgan yondashuv bemor ishonchiga qanday ta’sir qiladi? Doskada chizish: ikki ustunli “huquqiy – axloqiy” jadvalni talabalar mustaqil to‘ldirsin. Tipik xato: huquqiy tenglik bor bo‘lsa, amalda ham muammo yo‘q deb o‘ylash."
-    },
-    {
-      "title": "Xavf guruhlari va tabaqalashtirilgan munosabat",
-      "bullets": [
-        {
-          "text": "Manbada OIV xavfi yuqori guruhlar sanaladi: gomoseksual va biseksual shaxslar, tomir ichiga giyohvand yuboruvchilar, fohishalik bilan shug‘ullanuvchilar, donorlar.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "202"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kasallanganlar orasida noto‘g‘ri turmush tarzi ustun bo‘lgani uchun tibbiyot xodimlari ko‘pincha OITSni “noto‘g‘ri xatti-harakat uchun jazo” deydi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "202"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bunday qarashdagi mutaxassislar turli xavf guruhidagi bemorlarni tabaqalashtirib davolay boshlaydi, bu ko‘pincha nizo keltirib chiqaradi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "203"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Diqqat: xato qilish xavfi. Xavf guruhi ≠ “jazoga loyiq bemor”. Bunday farqlash adolat tamoyiliga zid.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "203"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) “Jazo” qarashi shifokor-bemor munosabatiga qanday ta’sir qiladi? 2) Xavf guruhini bilish nima uchun kerak, lekin nima uchun davolashda farq qilish asos emas? Doskada chizish: “guruh → qarash → tabaqalashtirish → nizo” zanjirini chizing. Tipik xato: xavf guruhiga mansublikni bemorni baholash mezoni deb tushunish."
-    },
-    {
-      "title": "Voqea tahlili 1: yordamni rad etish",
-      "bullets": [
-        {
-          "text": "Vaziyat: shifokor OIV bilan kasallangan bemorga yordam berishdan shaxsiy xavfsizligi sababli bosh tortmoqchi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "201"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Manbaga ko‘ra, yordam bermaslik ham zarar shakli. Ko‘p mamlakatlarda shifokorlar shaxsiy xavfsizlik sababli ommaviy rad etgan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "201"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "“Yaxshilik qil” tamoyilida shifokor faoliyati boshqalar hayoti va sog‘lig‘ini saqlashga ham qaratilishi kerak. Bu ichki ziddiyat tug‘diradi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "202"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Savol: shaxsiy xavfsizlik sababi “Zarar yetkazma!” va adolat tamoyillari bilan qanday uyg‘unlashadi? Rad etish qachon asosli?",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "201-203"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 8 daqiqa (3 daqiqa kichik guruhda, 5 daqiqa umumiy muhokama). Muhokama: 1) Yordamni rad etish qaysi tamoyillarni buzadi? 2) Shifokorning o‘z xavfsizligi va bemor huquqi o‘rtasida muvozanat qanday topiladi? Doskada chizish: “shifokor xavfsizligi – bemor huquqi” tarozisini chizib, dalillarni ikki pallaga yozing. Tipik xato: rad etishni faqat shaxsiy tanlov deb qarash, bemorga yetadigan zararni inobatga olmaslik."
-    },
-    {
-      "title": "Tezkor savol 1",
-      "bullets": [
-        {
-          "text": "Savol 1: Nega ko‘p mamlakatlarda shifokorlar OIV bilan yashovchiga yordamdan bosh tortadi va bu qaysi tamoyilga zid? Javob: shaxsiy xavfsizlik sababli; “Zarar yetkazma” tamoyiliga zid.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "201"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Savol 2: “Yaxshilik qil” tamoyili faqat OIV bilan kasallangan bemorga qaratilganmi? Javob: yo‘q, bemor atrofidagi odamlarni yuqtirishdan saqlashni ham qamraydi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "202"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Savol 3: Adolat tamoyili nimani talab qiladi? Javob: huquqan OIV bemorlari boshqalar bilan teng huquqli, amalda esa tibbiyot jamoasida tabaqalashtirilgan munosabat uchraydi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "202-203"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Diqqat: OIV ≠ OITS. OIV — RNKli retrovirus; OITS — orttirilgan immun tanqisligi sindromi, OIV infeksiyasi bosqichlaridan biri.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "203"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Savollarni og‘zaki so‘rang, 2-3 talabadan javob oling. Muhokama: shifokorning shaxsiy xavfsizligi va yordam ko‘rsatish burchi qanday uyg‘unlashadi? Doskada chizish: “OIV → OITS” strelkasini chizing va OITS OIV infeksiyasi bosqichlaridan biri ekanini yozing. Tipik xato: OIV va OITSni bir xil tushuncha deb bilish."
-    },
-    {
-      "title": "Axloqiy masalalar xaritasi",
-      "bullets": [
-        {
-          "text": "Jamoat salomatligi: profilaktika butun davlat miqyosida, OAV va ta’lim orqali tizimli olib boriladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Shifokor — murabbiy va sirdosh; u bemorning qaror qabul qilish huquqini hurmat qiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sherikka yuqish xavfi haqiqiy bo‘lib, bemor aytmasa, maxfiylikni buzish mumkin; bu o‘ta chora.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204-205"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Asosiy axloqiy masalalar",
-        "nodes": [],
-        "header": [
-          "Masala",
-          "Mohiyati"
-        ],
-        "rows": [
-          [
-            "Xabardor rozilik",
-            "Qon olish va davolash — bemor roziligi bilan"
-          ],
-          [
-            "Siyosiylashuv",
-            "Ijtimoiy tengsizlik, qashshoqlik bilan bog‘liq"
-          ],
-          [
-            "Stigmatizatsiya",
-            "Ko‘pincha maxfiylik buzilishidan kelib chiqadi"
-          ],
-          [
-            "Maxfiylik",
-            "Hamma bemorlarga xos, istisno — xavf ostidagi sherik"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 7 daq. Muhokama: nega stigmatizatsiya ko‘pincha tibbiyot xodimlarining maxfiylikni buzishidan kelib chiqadi? Sherikka xabar berish qachon oqlanadi? Doskada chizish: oltita masalaning (xabardor rozilik, jamoat salomatligi, siyosiylashuv, stigmatizatsiya, shifokor-bemor munosabati, maxfiylik) markazda “OIV/OITS” bo‘lgan xaritasini chizdiring. Tipik xato: maxfiylikni mutlaq deb o‘ylash; manbada sherikka xavf bo‘lganda istisno ko‘rsatilgan."
-    },
-    {
-      "title": "Xabardor rozilik va inson huquqlari yondashuvi",
-      "bullets": [
-        {
-          "text": "Qon olish va davolash faqat ixtiyoriy, xabardor rozilik bilan amalga oshiriladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "203-204"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bu tamoyil inson huquqlari va biotibbiyot bo‘yicha Yevropa Kengashi hujjatida ifodalangan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204"
-          },
-          "uncertain": true
-        },
-        {
-          "text": "OIV bilan yashovchilar — strategiya ishlab chiqishda ishtirok etadigan to‘laqonli fuqarolar.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Rozilik zanjiri",
-        "nodes": [
-          "Bemorga ma’lumot beriladi",
-          "Ixtiyoriy rozilik olinadi",
-          "Tekshiruv uchun qon olinadi",
-          "Davolash ham rozilik bilan"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: rozilik “xabardor” bo‘lishi nimani anglatadi? OIV bilan yashovchini epidemiyaga qarshi kurash sherigi sifatida ko‘rish amaliyotga qanday ta’sir qiladi? Doskada chizish: rozilik zanjirini yozib, har bosqichda bemor “yo‘q” deyishi mumkinligini ko‘rsating. Tipik xato: qon olishga rozilikni davolashga ham avtomatik rozilik deb hisoblash. Manbadagi Yevropa Kengashi hujjati matni OCRda xira, nomini tekshirib oling."
-    },
-    {
-      "title": "Jamoat salomatligi va kasallikning siyosiylashuvi",
-      "bullets": [
-        {
-          "text": "OIV profilaktikasi butun davlat miqyosini qamrab olishi kerak.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ommaviy axborot vositalari, ta’lim muassasalari, ish joyi va reklama orqali tizimli va har tomonlama targ‘ibot olib borish zarur.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "OIV/OITS muammosi ijtimoiy tartib masalalari, masalan, ijtimoiy tengsizlik bilan chambarchas bog‘liq.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sharqiy Afrikada (Keniya) kasallik jamiyatning barcha qatlamlari va oilalariga kirib borgan. Sabablari: qashshoqlik, ayollar huquqining yo‘qligi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daq. Muhokama: 1) Nega profilaktika faqat tibbiyot xodimlarining ishi emas? 2) Qashshoqlik va ayollar huquqsizligi kasallik tarqalishiga qanday ta’sir qiladi? Doskaga chizish: «targ‘ibot kanallari» (OAV, ta’lim, ish joyi, reklama) sxemasini chizdiring. Tipik xato: OIV/OITSni faqat tibbiy muammo deb qarash, ijtimoiy tengsizlik bilan bog‘liqligini unutish."
-    },
-    {
-      "title": "Stigmatizatsiya",
-      "bullets": [
-        {
-          "text": "OITS bilan kasallangan odam boshqalar nazarida “moxov” kabi qaraladi. Bu stigmatizatsiya, ya’ni bemorga ijtimoiy “tamg‘a” bosish.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Stigmatizatsiya ko‘pincha sog‘liqni saqlash xodimlari tomonidan maxfiylik qoidalarining buzilishi natijasida yuzaga keladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Diqqat: xato qilish xavfi — stigmani faqat jamiyat keltirib chiqaradi deb o‘ylash. Manbada uning sabablaridan biri xodimlar tomonidan maxfiylikning buzilishi deb ko‘rsatilgan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daq. Muhokama: 1) Bemor ma’lumoti oshkor bo‘lsa, uning hayotida nima o‘zgaradi? 2) Tibbiyot xodimi stigmaning oldini olishda qanday rol o‘ynaydi? Doskaga chizish: «maxfiylik buzilishi → stigma» sababiyat zanjirini chizdiring. Tipik xato: stigmatizatsiya va kamsitishni bir xil tushuncha deb olish."
-    },
-    {
-      "title": "Shifokor va bemor: murabbiy va sirdosh",
-      "bullets": [
-        {
-          "text": "Ko‘plab shifokorlar jamiyatda keng tarqalgan asossiz stereotiplar ta’siri ostida bo‘lishi mumkin.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "OITSning yangi holatlariga duch kelgan xodimlar bemorlarga nisbatan maxfiylik tuyg‘usini rivojlantirishi va xavf guruhlarining ishonchi uchun kurashishi kerak.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Shifokor bemori xavfli kasallikka qarshi kurashda bo‘lajak ittifoqchisi ekanini bilishi va bemorning qaror qabul qilish huquqini hurmat qilishi lozim.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Eslab qoling: bu vaziyatda shifokor murabbiy va sirdosh rolini bajaradi va bemorga kasallik bilan kurashishda yordam beradi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daq. Muhokama: 1) Shifokorning stereotiplari bemor bilan muloqotga qanday ta’sir qiladi? 2) “Murabbiy” va “sirdosh” rollari amalda nimani anglatadi? Doskaga chizish: markazda «bemor», atrofida «ittifoqchi», «murabbiy», «sirdosh» so‘zlarini yozdiring. Tipik xato: shifokor bemor uchun qarorni o‘zi qabul qiladi deb o‘ylash. Manbaga ko‘ra, qaror qabul qilish huquqi bemorda qoladi."
-    },
-    {
-      "title": "Maxfiylik va uning istisnosi",
-      "bullets": [
-        {
-          "text": "OITS bemori ham boshqa bemorlar kabi sir saqlash huquqiga ega; bunda uning jinsiy sherigi xavf ostida bo‘lishi mumkin.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Yuqish xavfi haqiqiy bo‘lsa va bemor sherigiga aytishdan bosh tortsa, shifokor sirni buzishi mumkin.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204-205"
-          },
-          "uncertain": true
-        },
-        {
-          "text": "Diqqat: sirni oshkor qilish istisno va o‘ta keskin chora, odatiy qoida emas.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "205"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Maxfiylik va istisno",
-        "nodes": [
-          "Sir saqlash — asosiy qoida",
-          "Sherikka yuqish xavfi aniq",
-          "Avval bemor o‘zi xabar bersin",
-          "Bemor xabar berishni rad etadi",
-          "Shifokor sirni buzishi mumkin"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega sir saqlash ishonch uchun muhim? 2) Qaysi holatda istisno o‘rinli? Doskada: sxemani 5 qadamda chizdiring va har qadamga bittadan dalil yozdiring. Tipik xato: talabalar sirni buzishni bemorning roziligisiz har doim mumkin deb o‘ylaydi; manbada bu faqat haqiqiy xavf va rad etish holati."
-    },
-    {
-      "title": "Shaxs huquqlari va jamiyat xavfsizligi",
-      "bullets": [
-        {
-          "text": "OIV/OITS epidemiyasi insonning shaxsiy huquqlari bilan jamiyat xavfsizligi manfaatlari nisbati muammosini dolzarb qiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "205"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "O‘z sog‘lig‘iga mas’uliyatsizlik va xavfli vaziyatlarda xulq-atvor me’yorlarini ataylab buzish boshqalarning xavfsizlik va sog‘liq huquqini buzadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "205"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Inson huquqlari va erkinliklarini himoya qiluvchi barcha davlat tuzilmalari OIV/OITS masalalariga alohida e’tibor qaratishi zarur.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "205"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Diqqat: shaxsiy huquq ≠ jamiyat xavfsizligi manfaati; ularning nisbati alohida muammo sifatida qaraladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "205"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Bemorning shaxsiy huquqi qayerda boshqalarning huquqi bilan to‘qnashadi? 2) Davlat tuzilmalari bu muvozanatda qanday rol o‘ynaydi? Doskada: ikki pallali tarozi chizing (chapda shaxs huquqi, o‘ngda jamiyat xavfsizligi). Tipik xato: bir tomonni mutlaq ustun deb hisoblash."
-    },
-    {
-      "title": "Voqea tahlili 2: sherikni xabardor qilish",
-      "bullets": [
-        {
-          "text": "Vaziyat: OIV bilan yashovchi bemorning jinsiy sherigida yuqish xavfi haqiqiy, ammo bemor sherigiga xabar berishdan bosh tortadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204-205"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Shifokor sherikni zarardan himoya qilishga intiladi, lekin axborotni oshkor qilish juda katta o‘lchov hisoblanadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "205"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "“Terapevtik hamkorlik” — shifokor bilan hamkorlikda bemorning o‘zi sherigini xabardor qilishi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "205"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Savol: oshkor qilishdan oldin shifokor nimaga intilishi kerak? Oshkor qilishning qanday salbiy oqibati bo‘lishi mumkin?",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "205"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Bemorning o‘zi sherigiga aytishi nega afzal? 2) Oshkor qilishda bemorning yaqinlariga nisbatan “yomon munosabat” shakllanishi xavfi nimani anglatadi? Doskada: ‘terapevtik hamkorlik’ so‘zidan boshlab qadamlar zanjirini chizing. Tipik xato: shifokorning birinchi harakati sirni buzish deb o‘ylash."
-    },
-    {
-      "title": "Tezkor savol 2",
-      "bullets": [
-        {
-          "text": "Savol: OIV (odamning immunitet tanqisligi virusi) tekshiruvi uchun qon qanday olinadi? Javob: faqat ixtiyoriy, xabardor rozilik bilan. Davolash ham bemor roziligi bilan olib boriladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "203-204"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Savol: stigmatizatsiya nega paydo bo‘ladi? Javob: OITS (orttirilgan immunitet tanqisligi sindromi) kasaliga \"mohov\" kabi qaraladi. Ko‘pincha sababi tibbiyot xodimlari maxfiylikni buzishidir.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Savol: maxfiylik qachon buzilishi mumkin? Javob: infeksiya yuqish xavfi real bo‘lsa va bemor sherigiga xabar berishdan bosh tortsa, shifokor sherikni ogohlantiradi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204-205"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Diqqat: maxfiylikni ochish juda og‘ir chora. Avval bemorning o‘zi sherigini xabardor qilishiga erishish, ya’ni terapevtik hamkorlik kerak.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "205"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Maxfiylikni buzish qachon oqlanadi? 2) Shifokor sherikni xabardor qilishdan oldin nima qilishi kerak? Doskada: \"rozilik – maxfiylik – istisno\" zanjirini chizdiring. Tipik xato: talabalar maxfiylikni mutlaq qoida deb, istisnoni esa oddiy hol deb o‘ylaydi. Istisno faqat real xavf va bemor rad etganda qo‘llanadi.",
-      "diagram_note": null
-    },
-    {
-      "title": "O‘zbekiston qonunchiligi: asosiy hujjatlar",
-      "bullets": [
-        {
-          "text": "Bazaviy hujjat — OIV (odamning immunitet tanqisligi virusi) infeksiyasi tarqalishiga qarshi kurashish to‘g‘risidagi qonun.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "206"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qonunga OIV yuqtirganlar va boshqa zaif guruhlar huquqlarini himoya qilishning asosiy xalqaro standartlari joriy etilgan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "206"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kurash chora-tadbirlari Mingyillik va Dublin deklaratsiyalaridagi majburiyatlarga amal qilgan holda olib boriladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "205"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Asosiy hujjatlar",
-        "nodes": [],
-        "header": [
-          "Hujjat",
-          "Qayd"
-        ],
-        "rows": [
-          [
-            "BMT Mingyillik deklaratsiyasi",
-            "2000 yil 8 sentyabr, 55/2-rezolyutsiya"
-          ],
-          [
-            "Dublin deklaratsiyasi",
-            "2004 yil, Yevropa va Markaziy Osiyo"
-          ],
-          [
-            "OIV infeksiyasi to‘g‘risidagi qonun",
-            "2013 yil 23 sentyabr, bazaviy hujjat"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega xalqaro hujjatlar milliy qonunga ta’sir qiladi? 2) Qonun qaysi sohalarga tayanadi (sog‘liqni saqlash, ijtimoiy himoya, narkotiklarga qarshi kurash)? Doskada: uch hujjatni vaqt chizig‘i shaklida joylashtiring. Tipik xato: BMT — Birlashgan Millatlar Tashkiloti ekanini va deklaratsiya yillarini chalkashtirish.",
-      "diagram_note": null
-    },
-    {
-      "title": "OIVga tibbiy tekshiruv: uch tartib",
-      "bullets": [
-        {
-          "text": "Tekshiruv — shaxs sog‘lig‘ini o‘rganish va baholash. Bunda OIV bor yoki yo‘qligi aniqlanadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "206"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tekshiruvdan oldin va keyin maslahatlashuv o‘tkaziladi; voyaga yetmaganlarda qonuniy vakil roziligi kerak.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "206"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Diqqat: majburiy ≠ g‘ayriixtiyoriy. Ikkinchisi roziliksiz, qaror yoki sud ajrimi bilan o‘tadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "207-208"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Uch tartibni solishtirish",
-        "nodes": [],
-        "header": [
-          "Tartib",
-          "Asosiy belgi",
-          "Misol / asos"
-        ],
-        "rows": [
-          [
-            "Ixtiyoriy",
-            "Xohish bilan, maxfiy; anonim bo‘lishi mumkin",
-            "Shaxsning o‘z iltimosi"
-          ],
-          [
-            "Majburiy",
-            "Qonunda sanalgan toifalar uchun",
-            "Donorlar, homilador ayollar va b."
-          ],
-          [
-            "G‘ayriixtiyoriy",
-            "Roziliksiz, rasmiy qaror asosida",
-            "Tergov qarori yoki sud ajrimi"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Majburiy va g‘ayriixtiyoriy tekshiruv nimasi bilan farq qiladi? 2) Nega maslahatlashuv tekshiruvdan oldin ham, keyin ham kerak? Doskada: uch ustunli jadvalni talabalar bilan to‘ldiring. Tipik xato: majburiy tekshiruvni \"roziliksiz\" deb tushunish. Majburiy toifalar qonunda sanab o‘tilgan. Eslatma: OCR matnida g‘ayriixtiyoriy tekshiruvni buyuruvchi mansabdorlardan biri aniq o‘qilmadi; jadvalda faqat tergov qarori va sud ajrimi keltirilgan.",
-      "diagram_note": null
-    },
-    {
-      "title": "Tekshiruv jarayoni bosqichlari",
-      "bullets": [
-        {
-          "text": "OIV (odamning immunitet tanqisligi virusi) tekshiruvida shaxs bilan dastlabki va keyingi maslahatlashuv o‘tkaziladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "206"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "OIV aniqlangan shaxs boshqalarga yuqtirganlik uchun jinoiy javobgarlik haqida yozma ogohlantiriladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "206-207"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Iltimosga ko‘ra OIV yo‘qligi sertifikati — OITS (orttirilgan immun tanqislik sindromi) markazida, pullik.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "207"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Tekshiruv zanjiri",
-        "nodes": [
-          "Dastlabki maslahatlashuv",
-          "Laboratoriya tekshiruvi",
-          "Natijani berish",
-          "Aniqlansa: yozma ogohlantirish",
-          "Sertifikat (iltimosga ko‘ra)"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega tekshiruvdan oldin ham, keyin ham maslahat kerak? 2) Yozma ogohlantirish shaxsga qanday ta’sir qiladi? Doskada: 5 bosqichli zanjirni chizdirib, har bosqichga mas’ul shaxsni yozdiring. Tipik xato: sertifikatni majburiy va bepul deb o‘ylash — u iltimosga ko‘ra, pullik beriladi."
-    },
-    {
-      "title": "Majburiy tekshiruv o‘tkaziladigan toifalar",
-      "bullets": [
-        {
-          "text": "Majburiy tekshiruvdan qon va biologik suyuqliklar donorlari, ellik yoshgacha nikohlanuvchilar va homilador ayollar o‘tadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "207"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Yana in’ektsiya yo‘li bilan giyohvand modda iste’mol qilishda gumon qilinganlar va OIV yuqtirgan onalardan tug‘ilgan bolalar tekshiriladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "207"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qon, organ va to‘qimalar bilan ishlovchi tibbiyot xodimlari hamda jinsiy sherigida OIV aniqlanganlar ham majburiy tekshiriladi. Ayrim kasblar uchun 15-modda qo‘llanadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "207"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Diqqat: majburiy ≠ g‘ayriixtiyoriy. G‘ayriixtiyoriy tekshiruv shaxs yoki qonuniy vakil roziligisiz, faqat surishtiruvchi, tergovchi qarori yoki sud ajrimi bilan o‘tadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "207-208"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun tibbiyot xodimlari ro‘yxatda? 2) Majburiylik shaxs huquqlariga qanday zid kelishi mumkin? Doskada: 7 toifani ro‘yxat qilib yozdiring, ularni ’tibbiy xavf’ va ’ijtimoiy xavf’ ustunlariga ajrating. Tipik xato: ’majburiy’ va ’g‘ayriixtiyoriy’ tekshiruvni bir narsa deb olish."
-    },
-    {
-      "title": "Voyaga yetmaganlar va muomalaga layoqatsizlar",
-      "bullets": [
-        {
-          "text": "Voyaga yetmagan, muomalaga layoqatsiz yoki layoqati cheklangan shaxslar qonuniy vakillarining roziligi bilan tekshiriladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "206"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Davlat laboratoriyasi natijasi bunday shaxsning o‘ziga emas, uning qonuniy vakillariga beriladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "206"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "OIV aniqlansa, tibbiy muassasa xodimlari qonuniy vakillarni va shaxs turgan muassasani xabardor qiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "207"
-          },
-          "uncertain": true
-        },
-        {
-          "text": "G‘ayriixtiyoriy tekshiruv shaxsning yoki qonuniy vakilning roziligisiz, surishtiruvchi, tergovchi qarori yoki sud ajrimi asosida o‘tadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "207-208"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Natijani bolaning o‘ziga bermaslik axloqan qanday baholanadi? 2) Qonuniy vakil rozilik bermasa nima bo‘ladi? Doskada: rozilik, natija va xabardor qilish yo‘nalishlarini ko‘rsatuvchi strelkali sxema chizdiring. Tipik xato: natijani voyaga yetmagan shaxsning o‘ziga beriladi deb o‘ylash."
-    },
-    {
-      "title": "OIV bilan yashovchilarning qonuniy huquqlari",
-      "bullets": [
-        {
-          "text": "Qonun OIV yuqtirgan va yuqish xavfi ostidagi shaxslarning huquqlarini mustahkamlab qo‘ygan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "208"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Shaxs boshqalarga OIV yuqtirgani uchun javobgarlik haqida ham xabardor qilinadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "208"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "OIV munosabati bilan bepul tibbiy yordam olish va davolanish huquqi ham berilgan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "208"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Huquqlar guruhi",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Mazmuni"
-        ],
-        "rows": [
-          [
-            "Tekshiruv va maslahat",
-            "OIVga tekshiruvdan o‘tish, maslahat olish"
-          ],
-          [
-            "Hujjat",
-            "Natija haqida yozma javob (sertifikat)"
-          ],
-          [
-            "Maxfiylik",
-            "Tekshiruv sir saqlanadi, anonim bo‘lishi mumkin"
-          ],
-          [
-            "Yordam va axborot",
-            "Bepul yordam; huquq va davo usullari haqida xabar"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega tekshiruvning anonim bo‘lishi muhim? 2) Bemor huquqi bilan javobgarlik haqida ogohlantirish qanday bog‘lanadi? Doskada jadvalni chizdiring va talabalar har guruhga misol keltirsin. Tipik xato: huquqlar ro‘yxatini «faqat bepul davolanish» deb qisqartirish."
-    },
-    {
-      "title": "Bolalarni ijtimoiy qo‘llab-quvvatlash",
-      "bullets": [
-        {
-          "text": "18 yoshga to‘lmagan OIV yuqtirganlar kasallik bosqichidan qat’i nazar oylik ijtimoiy nafaqa va nogiron bolalar imtiyozlarini oladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "208"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ota-onasi yoki vasiylari ishdan vaqtincha ozod bo‘ladi va nafaqa olgan holda bola bilan statsionarda birga bo‘lish huquqiga ega.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "208"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Voyaga yetmaganda OIV aniqlansa, tibbiyot xodimlari uning qonuniy vakillarini xabardor qiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "207"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Diqqat: nafaqa huquqi uchun kasallik bosqichi (OIV yoki OITS, ya’ni orttirilgan immunitet tanqisligi sindromi) ahamiyatsiz.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "208"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega ota-onaga bola bilan statsionarda bo‘lish huquqi berilgan? 2) Bolaning ma’lumoti kimga beriladi va nima uchun? Doskada «bola – nafaqa – ota-ona» sxemasini chizdiring. Tipik xato: nafaqani faqat OITS bosqichidagi bolalarga tegishli deb o‘ylash."
-    },
-    {
-      "title": "Kamsitishga yo‘l qo‘yilmaydigan holatlar",
-      "bullets": [
-        {
-          "text": "Qonun OIV bilan yashovchilarga nisbatan to‘rt turdagi kamsitishga yo‘l qo‘ymaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "209"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Turar joy huquqi OIV yuqtirgan shaxsning o‘zi va oila a’zolari uchun ham saqlanadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "209"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Diqqat: taqiq mutlaq emas, ayrim kasblar va ta’lim turlari istisno.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "209"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Taqiq va istisno",
-        "nodes": [],
-        "header": [
-          "Taqiq",
-          "Istisno"
-        ],
-        "rows": [
-          [
-            "Ishdan bo‘shatish, ishga olmaslik",
-            "Vazirlik ro‘yxatidagi ayrim kasblar"
-          ],
-          [
-            "Ta’lim muassasasiga qabul qilmaslik",
-            "Qonunda belgilangan ayrim turlar"
-          ],
-          [
-            "Tibbiy muassasaga qabul qilmaslik",
-            "Istisno ko‘rsatilmagan"
-          ],
-          [
-            "Turar joy va boshqa huquqni cheklash",
-            "Istisno ko‘rsatilmagan"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega tibbiy yordamni rad etish eng og‘ir axloqiy buzilish hisoblanadi? 2) Istisno kasblar ro‘yxati nima uchun kerak? Doskada «taqiq – istisno» jadvalini chizdiring. Tipik xato: barcha kasblarga OIV bilan ishlashga ruxsat bor deb o‘ylash."
-    },
-    {
-      "title": "Cheklovlar: donorlik va kasblar ro‘yxati",
-      "bullets": [
-        {
-          "text": "Odam immunitet tanqisligi virusi (OIV) yuqtirganlar qon va biologik suyuqliklar donori bo‘la olmaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "209"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Adliya vazirligining 2014 yil 7 maydagi ro‘yxati OIV yuqtirganlarga 9 turdagi kasbiy faoliyatni taqiqlaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "209"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ro‘yxatdagi ishlarga ruxsat bergan tashkilot rahbari javobgar bo‘ladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "209"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Eski ro‘yxatdan chiqarilgan ishlar",
-        "nodes": [],
-        "header": [
-          "Faoliyat turi",
-          "Holati"
-        ],
-        "rows": [
-          [
-            "Tibbiy yordam ko‘rsatish ishlari",
-            "Ro‘yxatdan chiqarilgan"
-          ],
-          [
-            "Vaksina, farmatsevtika ishlab chiqarish",
-            "Ro‘yxatdan chiqarilgan"
-          ],
-          [
-            "Massaj muolajalari",
-            "Ro‘yxatdan chiqarilgan"
-          ],
-          [
-            "Sportning kontakt turlari",
-            "Ro‘yxatdan chiqarilgan"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega donorlik taqiqi saqlanib qolgan? 2) Tibbiy ishlar ro‘yxatdan chiqarilishi nimani anglatadi? Doskada chizing: ikki ustunli jadval ‘taqiqlangan / taqiqlanmagan’ va unga misollarni joylang. Tipik xato: talabalar ‘OIV bilan yashovchi hech qayerda ishlay olmaydi’ deb o‘ylaydi. Aslida taqiq faqat ro‘yxatdagi 9 tur uchun amal qiladi."
-    },
-    {
-      "title": "Voqea tahlili 3: ishga qabul va kasb cheklovi",
-      "bullets": [
-        {
-          "text": "Vaziyat: OIV bilan yashovchi xodim avvalgi tashkilotida ishlayapti. Uning ishi taqiqlangan kasblar ro‘yxatiga kirmaydi, lekin rahbar uni bo‘shatmoqchi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "209"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qonun OIV bilan yashovchilarning mehnat shartnomasini bekor qilishni va ishga qabul qilishni rad etishni taqiqlaydi. Ayrim kasblar bundan mustasno.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "209"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Diqqat: xato qilish xavfi! ‘OIV bor’ ≠ ‘har qanday ishda ishlay olmaydi’. Taqiq faqat ro‘yxatdagi faoliyat turlariga tegishli.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "209"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Savol: rahbarning qarori qonunga mosmi? Xodim ro‘yxatdagi kasbda ishlasa, ruxsat bergan rahbar qanday mas’uliyat oladi?",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "209"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Bo‘shatish qachon qonunga zid bo‘ladi? 2) Ro‘yxatdagi kasbda ishlayotgan xodim bilan nima qilish kerak? Kutiladigan javob: ro‘yxatda yo‘q ishda bo‘shatish qonunga zid. Ro‘yxatdagi ishda cheklov qo‘llanadi va ruxsat bergan rahbar javobgar. Doskada chizing: ikki shoxli sxema ‘ish ro‘yxatda bor / yo‘q’. Tipik xato: talabalar cheklovni barcha OIV bilan yashovchilarga tatbiq qiladi."
-    },
-    {
-      "title": "“Fuqarolar sog‘lig‘ini saqlash to‘g‘risida”gi qonun",
-      "bullets": [
-        {
-          "text": "Fuqarolar sog‘liqqa ta’sir etuvchi omillar, yashash hududining sanitariya holati, ovqatlanish me’yorlari va xizmatlar xavfsizligi haqida o‘z vaqtida, aniq axborot oladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "210"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kasallik yoki mehnat layoqati yo‘qolganda tibbiy-ijtimoiy yordam huquqi bor: davolash, tiklash, sanatoriy, protez yordami va vaqtinchalik mehnatga layoqatsizlik nafaqasi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "210"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Murojaat qilgani, sog‘liq holati, tashxis va tekshiruv-davolash chog‘ida olingan ma’lumotlar sir saqlanadi. Bu tibbiy sir huquqi qonunda mustahkamlangan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "210"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tibbiy yordam paytida sog‘liqqa zarar yetkazilsa, zarar qonunda belgilangan tartibda qoplanadi. OIV bilan yashovchi ham bemor sifatida shu huquqlarga ega.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "210"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Tibbiy sir buzilsa, bemor qanday huquqlarga tayanadi? 2) OIV bilan yashovchining bemor sifatidagi huquqlari boshqa fuqarolarnikidan farq qiladimi? Doskada chizing: markazda ‘bemor’, atrofida to‘rt huquq (axborot, yordam, sir, zararni qoplash). Tipik xato: talabalar OIV bilan yashovchilarni alohida ‘kam huquqli’ guruh deb hisoblaydi. Qonun ularga umumiy bemor huquqlarini ham beradi."
-    },
-    {
-      "title": "Eksperimental davolash: plasebosiz sinov",
-      "bullets": [
-        {
-          "text": "Ayrim mamlakatlarda odamning immunitet tanqisligi virusi (OIV) dorilari plasebosiz sinalishi mumkin.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "203"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Agonal holatdagi OITS (orttirilgan immunitet tanqisligi sindromi) bemoriga yordam — axloqiy muammo.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "203"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Og‘ir holatlarda inson qadr-qimmati tamoyilini amalga oshirish masalasi keskinlashadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "203"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Qadr-qimmat masalasi zanjiri",
-        "nodes": [
-          "Kasallikning og‘ir bosqichi",
-          "Og‘ir jismoniy, ruhiy holat",
-          "Qadr-qimmat masalasi keskin",
-          "Agonal holatda yordam muammosi"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Dori samaradorligini plasebosiz sinashga ruxsat berilishi qanday axloqiy savollar tug‘diradi? 2) Agonal holatdagi bemorga yordam ko‘rsatishda qadr-qimmat qanday saqlanadi? Doskada chizish: to‘rt tugunli zanjirni talabalar bilan birga chizing. Tipik xato: OIV va OITSni bir xil tushunish; manbaga ko‘ra OITS — OIV infeksiyasi bosqichlaridan biri. Manbada plasebosiz sinov qaysi mamlakatlarda ruxsat etilgani aytilmagan, shuning uchun aniq mamlakat nomlamang."
-    },
-    {
-      "title": "Yaxlitlik tamoyili va yangi tibbiy texnologiyalar",
-      "bullets": [
-        {
-          "text": "OIV/OITS tibbiyotning hozircha kam o‘rganilgan sohasi bo‘lib qolmoqda.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "203"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tadqiqotlar soni erishilgan ijobiy amaliy natijalar sonidan sezilarli ko‘p.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "203"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Yangi texnologiya klinikada shaxsning jismoniy va ruhiy yaxlitligiga tahdidni oshirishi mumkin.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "203"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Yaxlitlikka xavf yo‘li",
-        "nodes": [
-          "Kam o‘rganilgan soha",
-          "Ko‘p tadqiqot, kam natija",
-          "Yangi texnologiya yaratiladi",
-          "Klinikada qo‘llash: xavf ortadi"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nega tadqiqotlar soni natijalardan ko‘p bo‘lishi xavfni oshiradi? 2) Jismoniy va ruhiy yaxlitlik nimani anglatadi? Doskada chizish: zanjirni chizib, har bosqichga bittadan misol so‘rang. Tipik xato: yangi texnologiya o‘z-o‘zidan foydali deb o‘ylash; manbada klinik qo‘llash xavfni oshirishi mumkinligi aytilgan."
-    },
-    {
-      "title": "Voqea tahlili 4: eksperimental davolash",
-      "bullets": [
-        {
-          "text": "Vaziyat: OIV bilan yashovchi bemorga kam o‘rganilgan sohada yaratilgan yangi dori bilan davolanish taklif etildi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "203"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Manbaga ko‘ra, davolash ham bemorning ixtiyoriy, xabardor roziligi bilan olib borilishi lozim.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Yangi texnologiya shaxsning jismoniy va ruhiy yaxlitligiga tahdidni oshirishi mumkin.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "203"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Savol: shifokor rozilik olayotganda bemorga qanday xavflarni tushuntirishi kerak va nima uchun?",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "203-204"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 7 daqiqa (3 daqiqa guruhda, 4 daqiqa umumiy muhokama). Muhokama: 1) Bemor rad etsa, shifokor qanday yo‘l tutishi kerak? 2) Rozilik va yaxlitlik tamoyili qanday bog‘lanadi? Doskada chizish: ‘Taklif — tushuntirish — rozilik — davolash’ ketma-ketligini chizing. Tipik xato: rozilikni faqat qon tekshiruvi uchun kerak deb hisoblash; manbada davolash ham bemor roziligi bilan amalga oshirilishi aytilgan. Vaziyat o‘quv maqsadida manbadagi ma’lumotlardan tuzilgan."
-    },
-    {
-      "title": "Tibbiyot xodimlarining kasbiy xavflari",
-      "bullets": [
-        {
-          "text": "Ko‘p mamlakatlarda shifokorlar OIV bilan kasallanganlarga yordam berishdan ommaviy bosh tortadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "201"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qon, biologik suyuqlik, organ va to‘qima bilan ishlovchi xodimlar OIVga majburiy tekshiriladi (15-modda).",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "207"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kasbiy majburiyatni bajarmagan yoki yomon bajargan xodim yetkazilgan zararni qoplashi shart.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "209"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Kasbiy xavf: asosiy jihatlar",
-        "nodes": [],
-        "header": [
-          "Masala",
-          "Qoida"
-        ],
-        "rows": [
-          [
-            "Rad etish sababi",
-            "Xodimning shaxsiy xavfsizligi"
-          ],
-          [
-            "Majburiy tekshiruv",
-            "Qon va to‘qima bilan ishlovchilar"
-          ],
-          [
-            "Zararni qoplash",
-            "Majburiyatni buzgan xodim to‘laydi"
-          ],
-          [
-            "Axloqiy baho",
-            "Yordam bermaslik ham zarar"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Shaxsiy xavfsizlik yordamni rad etishga axloqiy asos bo‘la oladimi? 2) Nega xodimlarning o‘zi ham majburiy tekshiruvdan o‘tadi? Doskada: ’Shaxsiy xavf – rad etish – zarar yetkazma tamoyili’ zanjirini chizdiring. Tipik xato: rad etishni ’zarar emas’ deb hisoblash; manbaga ko‘ra yordam bermaslik ham zarar shakli. Diqqat: xavf sezish ≠ yordamdan bosh tortishga huquq."
-    },
-    {
-      "title": "Xulosa: asosiy xulosalar va tezkor savol",
-      "bullets": [
-        {
-          "text": "2013-yilgi qonun OIV (odam immunitet tanqisligi virusi) bilan yashovchilarga bepul yordam, sertifikat va ish huquqini kafolatlaydi (istisnolar bilan).",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "206-209"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Maxfiylik va rozilik: tekshiruv ixtiyoriy, maslahat bilan va maxfiy. Sherikka xabar berish faqat haqiqiy xavfda va bemor rad etganda.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "204-208"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Eksperimental davolash va kasbiy xavf: yangi texnologiya shaxs yaxlitligiga xavf solishi mumkin; xodimlar esa shaxsiy xavf tufayli rad etadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "201-203"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tezkor savol: nega yordamdan bosh tortish ham “Zarar yetkazma!” tamoyilini buzishi mumkin?",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "201"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Tenglik huquqiy jihatdan bor, amalda-chi? 2) Maxfiylikni buzish qachon oqlanadi? Doskada: mavzuning 4 tayanchini (tenglik, maxfiylik, rozilik, kafolat) chizing. Tipik xato: majburiy tekshiruvni barcha uchun deb o‘ylash; u faqat qonunda sanalgan guruhlarga tegishli. Tezkor savol javobi: manbaga ko‘ra yordam bermaslik ham zarar shakli."
-    }
-  ],
-  "mcq": [
-    {
-      "question": "Talaba seminarda: «OITS — virusning o‘zi», dedi. Qaysi tuzatish manba ma’lumotiga mos keladi?",
-      "options": [
-        "OITS virusning o‘zi, OIV esa uning so‘nggi bosqichi",
-        "OIV va OITS bir xil atama bo‘lib, farqi umuman yo‘q",
-        "OITS — OIV infeksiyasi bosqichlaridan biri bo‘lgan sindrom",
-        "OIV — DNK virusi, OITS esa uning DNK nusxasidir"
-      ],
-      "correct_index": 2,
-      "explanation": "OIV — odamning immunitet tanqisligi virusi, retrovirus bo‘lib, genetik materiali RNK. OITS — orttirilgan immunitet tanqisligi sindromi. U alohida nozologik birlik sifatida ajratiladi, lekin aslida OIV infeksiyasi bosqichlaridan biridir.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "203"
-      }
-    },
-    {
-      "question": "Shifokor shaxsiy xavfsizligi uchun OIV bilan kasallangan bemorni qabul qilishdan bosh tortdi. Bu holatda «Zarar yetkazma!» tamoyili qaysi shaklda buzilgan?",
-      "options": [
-        "Bemorga yordam ko‘rsatmaslik shaklida buzilgan",
-        "Bemorga dorini ortiqcha berish shaklida buzilgan",
-        "Bemorning sirini oshkor qilish shaklida buzilgan",
-        "Noto‘g‘ri tashxis qo‘yish shaklida buzilgan"
-      ],
-      "correct_index": 0,
-      "explanation": "Manbada zararning bu shakli bemorga yordam bermaslik deb ko‘rsatilgan. Ko‘p mamlakatlarda shifokorlarning OIV bilan kasallanganlarga yordamni ommaviy rad etishi kuzatiladi. Sababi tibbiyot xodimlarining shaxsiy xavfsizligi bilan bog‘liq.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "201"
-      }
-    },
-    {
-      "question": "Shifokor OIV bilan kasallangan bemorni davolayotib, uning yaqinlarini ham yuqishdan asrash kerakligini his qilib, ichki ziddiyatga tushdi. Bu qaysi tamoyil bilan bog‘liq?",
-      "options": [
-        "«Zarar yetkazma!» tamoyili bilan bog‘liq",
-        "Adolat tamoyili bilan bog‘liq",
-        "Yaxlitlik tamoyili bilan bog‘liq",
-        "«Yaxshilik qil!» tamoyili bilan bog‘liq"
-      ],
-      "correct_index": 3,
-      "explanation": "OIV bilan bog‘liq vaziyatda «Yaxshilik qil!» tamoyili faqat bemorni davolashga qaratilmaydi. U bemor atrofidagi shaxslarni yuqishdan saqlashni ham qamrab oladi. Shifokor bunda ichki ziddiyatga tushadi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "202"
-      }
-    },
-    {
-      "question": "Manbaga ko‘ra, huquqiy (rasmiy) jihatdan OIV bilan kasallangan bemorlar sog‘liqni saqlash va tibbiy yordamga nisbatan qanday huquqqa ega?",
-      "options": [
-        "Tibbiy yordamni faqat to‘lov evaziga olish huquqiga ega",
-        "Boshqa fuqarolar bilan teng huquqqa ega",
-        "Faqat maxsus markazlarda davolanish huquqiga ega",
-        "Davolanishni boshqa fuqarolardan keyin olish huquqiga ega"
-      ],
-      "correct_index": 1,
-      "explanation": "Huquqiy jihatdan bu toifadagi bemorlar xalqaro huquq va milliy qonunchilikka muvofiq, boshqa fuqarolar bilan sog‘liqni saqlash va tibbiy yordamga teng huquqqa ega. Axloqiy jihatdan esa bu tenglikni to‘liq amalga oshirish muammoli.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "202"
-      }
-    },
-    {
-      "question": "Shifokor «OITS — noto‘g‘ri xatti-harakat uchun jazo» deb hisoblab, xavf guruhidan kelgan bemorlarni boshqacha davolay boshladi. U qaysi tamoyilni buzmoqda?",
-      "options": [
-        "Maxfiylik tamoyilini buzmoqda",
-        "Bemor avtonomiyasi tamoyilini buzmoqda",
-        "Adolat tamoyilini buzmoqda",
-        "Yaxlitlik tamoyilini buzmoqda"
-      ],
-      "correct_index": 2,
-      "explanation": "Manbada tibbiyot xodimlari ko‘pincha OITSni noto‘g‘ri xatti-harakat uchun jazo deb hisoblashi aytilgan. Natijada turli xavf guruhlaridan kelgan bemorlar tabaqalashtirilgan tarzda davolanadi. Bunday farqlash adolat tamoyiliga zid keladi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "202-203"
-      }
-    },
-    {
-      "question": "Shifokor shaxsiy xavfsizligidan qo‘rqib, OIV (odam immunitet tanqisligi virusi) bilan kasallangan bemorga yordam berishni rad etdi. “Zarar yetkazma!” tamoyiliga ko‘ra bu holatda zarar nimada namoyon bo‘ladi?",
-      "options": [
-        "Bemorga qo‘shimcha dori yozib berishda",
-        "Bemorga zarur tibbiy yordam ko‘rsatilmaganda",
-        "Bemor tashxisi boshqalarga oshkor etilganda",
-        "Bemorga noto‘g‘ri tashxis qo‘yilganda"
-      ],
-      "correct_index": 1,
-      "explanation": "Manbaga ko‘ra, OIV infeksiyasida zararning shakli bemorga yordam bermaslikdir. Ko‘p mamlakatlarda shifokorlarning ommaviy rad etishi shaxsiy xavfsizlik bilan izohlanadi, lekin bu tamoyilga zid. Qolgan variantlar boshqa holatlarni tasvirlaydi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "201"
-      }
-    },
-    {
-      "question": "OIV retroviruslar guruhiga kiradi. Uning genetik materiali qanday molekuladan iborat?",
-      "options": [
-        "Peptid zanjiri shaklidagi genetik material",
-        "Ko‘pchilik hujayralardagi kabi DNK molekulasi",
-        "Polisaxarid zanjiri shaklidagi genetik material",
-        "DNK emas, balki RNK molekulasi"
-      ],
-      "correct_index": 3,
-      "explanation": "Manbada OIV retroviruslarga mansub, genetik materiali ko‘pchilik hujayralardagidek DNK emas, RNK ekanligi aytilgan. Shuning uchun DNK varianti noto‘g‘ri.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "203"
-      }
-    },
-    {
-      "question": "Bemordan OIV ga tekshirish uchun qon olinishi kerak. Axloqiy tamoyilga ko‘ra qon olish qaysi shartda mumkin?",
-      "options": [
-        "Bemor ixtiyoriy xabardor rozilik bergan bo‘lsa",
-        "Bemorning yaqinlari rozilik bergan bo‘lsa",
-        "Shifokor tekshiruvni zarur deb topgan bo‘lsa",
-        "Atrofdagilar xavfsizligi buni talab qilsa"
-      ],
-      "correct_index": 0,
-      "explanation": "Manbada OIV/OITS (orttirilgan immunitet tanqisligi sindromi) bilan kasallangan bemordan qon faqat ixtiyoriy xabardor rozilik bilan olinishi, davolash ham bemor roziligi bilan o‘tkazilishi aytilgan. Bu inson huquqlari va Biotibbiyot bo‘yicha Yevropa Kengashida ifodalangan tamoyildir.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "203-204"
-      }
-    },
-    {
-      "question": "Hamshira bemorning OIV tashxisini uning qo‘shnilariga aytib yubordi, natijada atrofdagilar bemorga “moxov”dek qarashdi. Bu hodisa qanday ataladi?",
-      "options": [
-        "Kasallikning siyosiylashuvi",
-        "Xabardor rozilik olish",
-        "Stigmatizatsiya",
-        "Jamoat salomatligi chorasi"
-      ],
-      "correct_index": 2,
-      "explanation": "Manbaga ko‘ra, OITS bilan kasallangan odam boshqalar nazarida “moxov”dek ko‘riladi. Bu stigmatizatsiya bo‘lib, ko‘pincha sog‘liqni saqlash xodimlarining maxfiylik qoidalarini buzishi natijasidir.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "204"
-      }
-    },
-    {
-      "question": "Bemorning jinsiy sherigiga OIV yuqish xavfi haqiqiy, ammo bemor sherigiga xabar berishdan bosh tortmoqda. Shifokorning mos harakati qaysi?",
-      "options": [
-        "Bemorni ogohlantirmay sherikka xabar berish",
-        "Bemorni oldindan ogohlantirib, maxfiylikni buzish",
-        "Maxfiylikni har qanday holatda saqlab qolish",
-        "Bemorni davolashni to‘xtatib qo‘yish"
-      ],
-      "correct_index": 1,
-      "explanation": "Manbada infeksiyaning haqiqiy xavfi bo‘lsa va bemor sherigiga xabar berishdan bosh tortsa, shifokor bemorni oldindan xabardor qilib maxfiylikni buzishi mumkinligi aytilgan. Bu o‘ta chora bo‘lib, avval bemorning o‘zi sherigini xabardor qilishi (terapevtik hamkorlik) afzal ko‘riladi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "204-205"
-      }
-    },
-    {
-      "question": "OIV/OITS epidemiyasi qaysi masalani, ayniqsa, dolzarblashtiradi?",
-      "options": [
-        "Davolash narxi va sug‘urta to‘lovlari nisbati",
-        "Shifokorlar soni va bemorlar soni nisbati",
-        "Shaxsiy huquqlar va jamiyat xavfsizligi nisbati",
-        "Ilmiy tadqiqotlar va amaliy natijalar nisbati"
-      ],
-      "correct_index": 2,
-      "explanation": "Manbaga ko‘ra, OIV/OITS epidemiyasi insonning shaxsiy huquqlari va jamiyat xavfsizligi manfaatlari nisbati muammosini dolzarblashtiradi. Boshqa variantlar bu o‘rinda gap bo‘layotgan masala emas.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "205"
-      }
-    },
-    {
-      "question": "Bemorda OIV bor. Jinsiy sherigiga yuqish xavfi haqiqiy, ammo u sherigiga aytishdan bosh tortmoqda. Manbaga ko‘ra, shifokorga nima ruxsat etiladi?",
-      "options": [
-        "Sherikni oldindan xabardor qilish va maxfiylikni buzish",
-        "Sherikka aytmay, faqat bemorni kuzatib borish xolos",
-        "Ma’lumotni bemorning ish joyiga xabar qilib qo‘yish",
-        "Ma’lumotni bemorning barcha qarindoshlariga yetkazish"
-      ],
-      "correct_index": 0,
-      "explanation": "Yuqish xavfi haqiqiy bo‘lsa va bemor rad etsa, shifokor sherikni oldindan xabardor qilishi, ya’ni maxfiylikni buzishi mumkin. Biroq bu juda katta o‘lchov, shuning uchun avval bemorning o‘zi sherigiga aytishiga erishish afzal.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "204-205"
-      }
-    },
-    {
-      "question": "Qon topshirmoqchi bo‘lgan fuqaro OIVga qanday tartibda tekshiriladi? Bu qonunda qon donorlari uchun nazarda tutilgan.",
-      "options": [
-        "Faqat ixtiyoriy va anonim tartibda",
-        "Faqat g‘ayriixtiyoriy tartibda",
-        "Tekshiruvsiz qon topshirishi mumkin",
-        "Majburiy tartibda tekshiruvdan o‘tadi"
-      ],
-      "correct_index": 3,
-      "explanation": "Qonunga ko‘ra, qon va biologik suyuqliklar donorlari OIVga majburiy tekshiruvdan o‘tadi. Ro‘yxatda homilador ayollar va tibbiyot xodimlari ham bor.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "207"
-      }
-    },
-    {
-      "question": "Tergovchi qarori bilan shaxs o‘z roziligisiz OIVga tekshirilmoqda. Bu qaysi tekshiruv tartibi?",
-      "options": [
-        "Ixtiyoriy tartib (shaxs xohishiga ko‘ra)",
-        "G‘ayriixtiyoriy tartib (qaror asosida)",
-        "Majburiy tartib (ro‘yxat bo‘yicha)",
-        "Anonim tartib (ismi ko‘rsatilmasdan)"
-      ],
-      "correct_index": 1,
-      "explanation": "G‘ayriixtiyoriy tekshiruv shaxsning yoki qonuniy vakilining roziligisiz, surishtiruvchi, tergovchi qarori yoki sud ajrimi asosida o‘tkaziladi. Majburiy tekshiruv esa qonundagi toifalar ro‘yxatiga tegishli.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "207-208"
-      }
-    },
-    {
-      "question": "Shifokorga 16 yoshli o‘smir OIVga tekshirilish uchun keldi. Tekshiruv kimning roziligi bilan o‘tkaziladi?",
-      "options": [
-        "Maktab direktorining roziligi bilan",
-        "Tibbiyot hamshirasining roziligi bilan",
-        "Qonuniy vakillarining roziligi bilan",
-        "Sinf rahbarining roziligi bilan"
-      ],
-      "correct_index": 2,
-      "explanation": "Qonunga ko‘ra, voyaga yetmaganlar va muomalaga layoqatsiz yoki cheklangan shaxslar qonuniy vakillarining roziligi bilan tekshiriladi. Natija ham qonuniy vakillarga beriladi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "206"
-      }
-    },
-    {
-      "question": "16 yoshli Dilnoza OIV (odamning immunitet tanqisligi virusi) yuqtirgan. Qonunga ko‘ra u kasallik bosqichidan qat’i nazar nimaga haqli?",
-      "options": [
-        "Faqat ixtiyoriy tibbiy ko‘rikdan o‘tish huquqiga",
-        "Har oylik ijtimoiy nafaqa va imtiyozlar olishga",
-        "Davlat xizmatiga imtiyozli qabul qilinishga",
-        "Ota-onasi bilan birga ishlash huquqiga"
-      ],
-      "correct_index": 1,
-      "explanation": "18 yoshga to‘lmagan OIV yuqtirganlar kasallik bosqichidan qat’i nazar har oylik ijtimoiy nafaqa va nogiron bolalar uchun imtiyozlar olish huquqiga ega. Boshqa variantlar manbada bunday huquq sifatida keltirilmagan.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "208"
-      }
-    },
-    {
-      "question": "Korxona xodimida OIV aniqlandi, uning kasbi taqiqlangan ro‘yxatda yo‘q. Qonunga ko‘ra rahbarga qaysi harakat YO‘L QO‘YILMAYDI?",
-      "options": [
-        "Xodimning tibbiy sirini qonun asosida saqlash",
-        "Unga tibbiy yordam olishga imkon yaratish",
-        "Uni davolanish uchun maxsus markazga yuborish",
-        "Faqat shu sababli mehnat shartnomasini bekor qilish"
-      ],
-      "correct_index": 3,
-      "explanation": "Qonun OIV bilan yashovchilar bilan mehnat shartnomasini bekor qilishga va ishga qabul qilishni rad etishga yo‘l qo‘ymaydi. Istisno faqat Sog‘liqni saqlash vazirligi ro‘yxatidagi ayrim kasblar uchun.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "209"
-      }
-    },
-    {
-      "question": "Qonunga ko‘ra OIV yuqtirgan shaxslar qaysi faoliyat bilan shug‘ullana olmaydi?",
-      "options": [
-        "Qon va biologik suyuqliklar donori bo‘lish",
-        "Tibbiy yordam muassasasiga murojaat qilish",
-        "Oilasi bilan avvalgi turar joyida yashash",
-        "Davolanishni bepul olishni davom ettirish"
-      ],
-      "correct_index": 0,
-      "explanation": "Qonun OIV yuqtirgan shaxslar huquqlari cheklanadigan holatni belgilaydi: ular qon va biologik suyuqliklar donori bo‘la olmaydi. Qolgan variantlar ularning saqlanadigan huquqlariga kiradi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "209"
-      }
-    },
-    {
-      "question": "OITS (orttirilgan immunitet tanqisligi sindromi) davosida yangi texnologiyalar qo‘llanganda yaxlitlik tamoyili muammosi nima bilan bog‘liq?",
-      "options": [
-        "Dori vositalarining narxi juda yuqori ekani bilan",
-        "Bemorlar sonining tez kamayib borishi bilan",
-        "Soha tibbiyotda kam o‘rganilgan qolayotgani bilan",
-        "Shifokorlarning ilmiy ishlarga qiziqmasligi bilan"
-      ],
-      "correct_index": 2,
-      "explanation": "Muallif muammoni OIV/OITS tibbiyotning kam o‘rganilgan sohasi bo‘lib qolayotgani bilan bog‘laydi. Yangi texnologiyani klinikada qo‘llash jismoniy va ruhiy yaxlitlikka potensial tahdidni oshiradi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "203"
-      }
-    },
-    {
-      "question": "Ayrim mamlakatlarda shifokorlar OIV bilan kasallangan odamlarga yordam berishni ommaviy rad etmoqda. Kitobga ko‘ra rad etishning asosiy sababi nima?",
-      "options": [
-        "Ish haqining pastligi va ish yukining ko‘pligi",
-        "Bemorlarning davolanishga kelmay qo‘yishi",
-        "Tibbiyot xodimlarining shaxsiy xavfsizligi",
-        "Davolash uchun malakaning yetishmasligi"
-      ],
-      "correct_index": 2,
-      "explanation": "Manbaga ko‘ra rad etishning sababi tibbiyot xodimlarining shaxsiy xavfsizligidir. Bu ‘Zarar yetkazma!’ tamoyili nuqtai nazaridan axloqiy muammo, chunki yordam bermaslik ham zarar shaklidir.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "201"
-      }
-    }
-  ],
-  "extras": [
-    {
-      "text": "Eslab qoling: OIV — virus, OITS — sindrom. OIV ribonuklein kislotali (RNK) retrovirus. OITS esa OIV infeksiyasi bosqichlaridan biri, lekin alohida nozologik birlik sifatida ajratiladi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "203"
-      }
-    },
-    {
-      "text": "Hodisa tahlili: ko‘p mamlakatlarda shifokorlar OIV bilan kasallanganlarga yordam berishni ommaviy rad etgan. Sababi shaxsiy xavfsizlikdan qo‘rqish. Yordam bermaslik ham «Zarar yetkazma!» tamoyilini buzadi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "201"
-      }
-    },
-    {
-      "text": "Maxfiylik chegarasi: jinsiy sherikka infeksiya yuqishi xavfi haqiqiy bo‘lib, bemor xabar berishdan bosh tortsa, shifokor maxfiylikni buzishi mumkin. Lekin bu juda katta chora, avval bemorning o‘zi xabar berishi kutiladi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "204-205"
-      }
-    },
-    {
-      "text": "2013-yil 23-sentyabrdagi qonunga ko‘ra majburiy tekshiruvdan donorlar, homilador ayollar, ellik yoshgacha nikohlanuvchilar va qon bilan ishlovchi tibbiyot xodimlari o‘tadi. Ro‘yxatda boshqa guruhlar ham bor.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "206-207"
-      }
-    },
-    {
-      "text": "Taqiqlangan kasblar ro‘yxati (Adliya vazirligi, 2014-yil 7-may) 9 turdagi faoliyatni qamragan. Oldingi ro‘yxatdan farqli, undan tibbiy yordam ko‘rsatish, massaj va kontakt sport olib tashlangan.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "209"
-      }
-    }
-  ],
-  "sources": [
-    {
+     "text": "OIV va OITS muammosi zamonaviy tibbiyotning deyarli barcha axloqiy muammolariga daxldor.",
+     "source": {
       "author": "G‘iyosov Z.A., Indiaminov S.I.",
       "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-      "year": 2022,
-      "pages": "XVII bob (OIV/OITS), kitob betlari 201-211"
+      "page": "201"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ba’zi axloqiy muammolar faqat OIV infeksiyasiga xos. Biotibbiyotning ko‘plab an’anaviy tamoyillari aynan shu infeksiya misolida sinovdan o‘tadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "201"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "«Zarar yetkazma!» tamoyili sinovda: ko‘p mamlakatlarda shifokorlar OIV bilan kasallanganlarga yordamdan ommaviy bosh tortadi, sababi – shaxsiy xavfsizlik.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "201"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Dars rejasi: xalqaro javob, tushunchalar, tamoyillar sinovi, OIV bilan yashovchilar huquqlari, eksperimental davolash va tibbiyot xodimlarining xavfi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "201-210"
+     },
+     "uncertain": true
     }
-  ]
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega OIV bioetikaning ‘sinov maydoni’ deyiladi? 2) Shifokorning shaxsiy xavfsizligi va bemorga yordam burchi to‘qnashsa, nima qilish kerak? Doskaga chizish: markazda ‘OIV/OITS’, atrofida 4 ta tarmoq (tamoyillar, huquqlar, davolash, kasbiy xavf). Tipik xato: OIV muammosini faqat tibbiy muammo deb qarash, huquqiy va ijtimoiy jihatlarni unutish."
+  },
+  {
+   "title": "Xalqaro javob: BMT deklaratsiyasi va UNAIDS",
+   "bullets": [
+    {
+     "text": "BMT (Birlashgan Millatlar Tashkiloti) Bosh Assambleyasi 2006 yil 2 iyunda OIV bo‘yicha siyosiy deklaratsiyani qabul qildi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "201"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Profilaktika kurash asosi: tushunarli tilda ta’lim, xavfli xulqni kamaytirish, dori ta’minoti.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "201"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "UNAIDS – BMTning OIV/OITS bo‘yicha Qo‘shma dasturi; huquqlar va gender tengligini himoya qiladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "201"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Xalqaro javob",
+    "children": [
+     {
+      "label": "Profilaktika",
+      "items": [
+       "Tushunarli tilda ta’lim"
+      ]
+     },
+     {
+      "label": "Davolash"
+     },
+     {
+      "label": "Parvarish qilish"
+     },
+     {
+      "label": "Qo‘llab-quvvatlash"
+     },
+     {
+      "label": "Huquq va gender tengligi",
+      "items": [
+       "UNAIDS himoya qiladi"
+      ]
+     }
+    ],
+    "caption": "BMT deklaratsiyasi (2006) va UNAIDS"
+   },
+   "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega deklaratsiya ta’limni ‘tushunarli tilda’ olib borishni talab qiladi? 2) Mahalliy axloqiy va madaniy qadriyatlar profilaktikada qanday hisobga olinadi? Doskaga chizish: UNAIDS yo‘nalishlari zanjirini daftarga ko‘chiring. Tipik xato: deklaratsiya sanasini va UNAIDS ning to‘liq nomini aralashtirish."
+  },
+  {
+   "title": "OIV va OITS: tushunchalarni farqlash",
+   "bullets": [
+    {
+     "text": "OIV retroviruslar guruhiga kiradi: uning genetik materiali DNK emas, RNK.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "203"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "OITS mustaqil nozologik birlik sifatida ajratiladi, aslida esa OIV infeksiyasi bosqichlaridan biri.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "203"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Diqqat: xato qilish xavfi! OIV ≠ OITS – virusni kasallik bosqichi bilan aralashtirmang.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "203"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "OIV",
+      "items": [
+       "To‘liq nomi: Odamning immunitet tanqisligi virusi",
+       "Mohiyati: Virus (retrovirus guruhi)",
+       "Genetik material: RNK (DNK emas)",
+       "Bog‘liqligi: Infeksiya qo‘zg‘atuvchisi"
+      ]
+     },
+     {
+      "title": "OITS",
+      "items": [
+       "To‘liq nomi: Orttirilgan immunitet tanqisligi sindromi",
+       "Mohiyati: Sindrom, mustaqil nozologik birlik",
+       "Genetik material: Virusning o‘zi emas",
+       "Bog‘liqligi: OIV infeksiyasi bosqichlaridan biri"
+      ]
+     }
+    ],
+    "caption": "OIV ≠ OITS"
+   },
+   "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega ‘OIV bilan yashovchi’ va ‘OITS bemori’ bir xil ma’noga ega emas? 2) Atamalarni noto‘g‘ri qo‘llash stigmaga qanday ta’sir qiladi? Doskaga chizish: OIV → OIV infeksiyasi → OITS bosqichi strelkasini chizing. Tipik xato: OITSni virusning nomi deb atash yoki ikkala atamani sinonim sifatida ishlatish."
+  },
+  {
+   "title": "Bioetika tamoyillari OIV sinovida",
+   "bullets": [
+    {
+     "text": "Bioetikaning ko‘plab an’anaviy tamoyillari va me’yorlari aynan OIV infeksiyasi misolida sinovdan o‘tkaziladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "201"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "OIV/OITS muammolari zamonaviy tibbiyotning barcha axloqiy masalalariga tegadi, ayrimlari esa faqat OIV infeksiyasiga xos.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "201"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Diqqat: OIV ≠ OITS. OIV – odamning immunitet tanqisligi virusi; OITS – orttirilgan immunitet tanqisligi sindromi, OIV infeksiyasi bosqichlaridan biri.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "203"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Keyingi slaydlar rejasi: “Zarar yetkazma!”, “Yaxshilik qil!”, so‘ng adolat va inson qadr-qimmati tamoyillari.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "201-203"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega aynan OIV infeksiyasi bioetik tamoyillarni ‘sinovdan o‘tkazadi’? 2) OIV va OITS farqi nimada? Doskada: ‘OIV → OITS’ strelkasini chizib, OITS OIV infeksiyasining bosqichi ekanini ko‘rsating. Tipik xato: OIV va OITS so‘zlarini sinonim sifatida ishlatish."
+  },
+  {
+   "title": "“Zarar yetkazma!” tamoyili va yordamni rad etish",
+   "bullets": [
+    {
+     "text": "Zarar faqat jismoniy bo‘lmaydi: bemorga yordam bermaslik ham zarar shakli hisoblanadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "201"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ba’zi mamlakatlarda shifokorlar OIV bilan kasallanganlarga yordam berishdan ommaviy bosh tortgan.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "201"
+     },
+     "uncertain": true
+    },
+    {
+     "text": "Rad etishning sababi – tibbiyot xodimlarining o‘z shaxsiy xavfsizligi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "201"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Rad etish zanjiri",
+    "nodes": [
+     "OIV bilan kasallangan bemor",
+     "Shifokor uchun yuqish xavfi",
+     "Shaxsiy xavfsizlik qo‘rquvi",
+     "Yordamni ommaviy rad etish",
+     "Zarar: yordam berilmaydi"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Yordam bermaslik qachon zarar bo‘ladi? 2) Shaxsiy xavfsizlik rad etishni oqlaydimi? Doskada: rad etish zanjirini 5 bosqichda chizdiring. Tipik xato: ‘zarar’ ni faqat jarrohlik yoki dori asoratlari deb tushunish."
+  },
+  {
+   "title": "“Yaxshilik qil!” tamoyilidagi ichki ziddiyat",
+   "bullets": [
+    {
+     "text": "Shifokorning “yaxshilik” faoliyati faqat OIV bilan kasallangan bemorning o‘ziga qaratilmaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "202"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "U bemorning yaqinlari orasida OIV infeksiyasining oldini olish masalalarini ham qamrab oladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "202"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Buni anglagan xodimda ichki ziddiyat va kasbiy tafakkurda bo‘linish yuzaga keladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "202"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Odatdagi holat",
+      "text": "Bir bemorning salomatligini saqlash"
+     },
+     {
+      "title": "OIV holatida",
+      "text": "Atrofdagilarni ham infeksiyadan saqlash"
+     },
+     {
+      "title": "Shifokor ichida",
+      "text": "Kasbiy tafakkurda bo‘linish"
+     }
+    ],
+    "caption": "Ichki ziddiyat"
+   },
+   "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Bemor manfaati va atrofdagilar xavfsizligi to‘qnashsa, shifokor nima qilishi kerak? 2) Ichki ziddiyat nimadan kelib chiqadi? Doskada: markazda bemor, atrofida yaqinlari doirasini chizing. Tipik xato: ‘yaxshilik qil’ ni faqat bemorni davolash deb tushunish."
+  },
+  {
+   "title": "Adolat tamoyili: huquqiy va axloqiy jihat",
+   "bullets": [
+    {
+     "text": "OIV (odamning immunitet tanqisligi virusi) bilan kasallanganlar xalqaro huquq va milliy qonunga ko‘ra teng huquqli.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "202"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "OITS (orttirilgan immunitet tanqisligi sindromi) bemorlariga tenglikni amalda ta’minlash muammoli.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "202"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tibbiyot jamoasida bunday bemorga tabaqalashtirilgan yondashuv mavjud.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "202"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Adolat tamoyili",
+    "children": [
+     {
+      "label": "Huquqiy (rasmiy)",
+      "items": [
+       "Boshqa fuqarolar bilan teng huquq"
+      ]
+     },
+     {
+      "label": "Axloqiy (substantiv)",
+      "items": [
+       "Tenglikni so‘zsiz amalga oshirish qiyin"
+      ]
+     },
+     {
+      "label": "Tibbiyot jamoasida",
+      "items": [
+       "Bemorga tabaqalashtirilgan yondashuv"
+      ]
+     }
+    ],
+    "caption": "Adolat tamoyili"
+   },
+   "teacher_notes": "Vaqt: 6-7 daqiqa. Muhokama: 1) “Qonun oldida tenglik” va “amaldagi tenglik” nima bilan farq qiladi? 2) Tabaqalashtirilgan yondashuv bemor ishonchiga qanday ta’sir qiladi? Doskada chizish: ikki ustunli “huquqiy – axloqiy” jadvalni talabalar mustaqil to‘ldirsin. Tipik xato: huquqiy tenglik bor bo‘lsa, amalda ham muammo yo‘q deb o‘ylash."
+  },
+  {
+   "title": "Avtonomiya tamoyili OIV/OITS holatida",
+   "bullets": [
+    {
+     "text": "OIV/OITS holatida bemor avtonomiyasi miqdori uning harakatlari natijasiga ta’sir etuvchi tashqi sharoitlar bilan cheklangan.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "155"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Asosiy tashqi sharoit — bemorning potensial ijtimoiy xavfi; shuning uchun axloqiy tanlov bu xavfni anglash bilan belgilanadi.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "155"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bemor erkinligi darajasi yuqori axloqiy va huquqiy (hatto jinoiy) mas’uliyat bilan cheklanadi.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "155"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kasallikning ma’lum bosqichida og‘ir jismoniy va ruhiy holat tufayli bemor avtonom harakatga qodir bo‘lmasligi mumkin.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "155"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Avtonomiya chegaralari",
+    "children": [
+     {
+      "label": "Ijtimoiy xavf",
+      "items": [
+       "Bemor potensial xavf manbai"
+      ]
+     },
+     {
+      "label": "Mas’uliyat",
+      "items": [
+       "Axloqiy, huquqiy, hatto jinoiy"
+      ]
+     },
+     {
+      "label": "Kasallik bosqichi",
+      "items": [
+       "Avtonom harakatga qodir emas"
+      ]
+     },
+     {
+      "label": "Inson qadr-qimmati",
+      "items": [
+       "Agonal holatda yordam masalasi"
+      ]
+     }
+    ],
+    "caption": "Avtonomiyani cheklovchi omillar"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: avtonomiya mutlaqmi? Bemor huquqi va boshqalar xavfsizligi qanday muvozanatlanadi?"
+  },
+  {
+   "title": "Zaiflik tamoyili va BMT deklaratsiyasi (2001)",
+   "bullets": [
+    {
+     "text": "OIV/OITS bilan kasallangan bemorlarga nisbatan zaiflik tamoyilini amalga oshirish muammosi bor.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "156"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "2001-yil 27-iyundagi BMT deklaratsiyasi zaif guruhlarga ustuvor ahamiyat berilishi kerakligini belgilagan.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "156"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ayollarning imkoniyatlarini kengaytirish zaiflikni kamaytirish uchun juda muhim hisoblanadi.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "156"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Zaiflikni oshiruvchi omillar: qashshoqlik, ta’lim va axborot yetishmasligi, savodsizlik, ijtimoiy begonalashuv, kamsitish, jinsiy ekspluatatsiya.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "156"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Zaiflik omillari",
+    "children": [
+     {
+      "label": "Qashshoqlik",
+      "items": [
+       "Iqtisodiy xavfsizlik yo‘qligi"
+      ]
+     },
+     {
+      "label": "Ta’lim va axborot",
+      "items": [
+       "Savodsizlik, axborot yetishmasligi"
+      ]
+     },
+     {
+      "label": "Ijtimoiy begonalashuv",
+      "items": [
+       "Kamsitish"
+      ]
+     },
+     {
+      "label": "Jinsiy ekspluatatsiya",
+      "items": [
+       "Ayollar, qizlar, o‘g‘il bolalar"
+      ]
+     },
+     {
+      "label": "Ayollar imkoniyati",
+      "items": [
+       "Kengaytirish zaiflikni kamaytiradi"
+      ]
+     }
+    ],
+    "caption": "Zaiflikni oshiradigan omillar"
+   },
+   "teacher_notes": "Vaqt: 4 daq. Savol: nega ayollarga alohida e’tibor qaratiladi? (156-bet: epidemiyaning gender jihati)."
+  },
+  {
+   "title": "Xavf guruhlari va tabaqalashtirilgan munosabat",
+   "bullets": [
+    {
+     "text": "Manbada xavfi yuqori guruhlar: gomoseksual va biseksual shaxslar, tomir ichiga giyohvand yuboruvchilar, fohishalik bilan shug‘ullanuvchilar, donorlar.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "202"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kasallanganlar orasida noto‘g‘ri turmush tarzi ustun bo‘lgani uchun tibbiyot xodimlari ko‘pincha OITSni “noto‘g‘ri xatti-harakat uchun jazo” deydi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "202"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bunday qarashdagi mutaxassislar turli xavf guruhidagi bemorlarni tabaqalashtirib davolay boshlaydi, bu ko‘pincha nizo keltirib chiqaradi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "203"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Diqqat: xato qilish xavfi. Xavf guruhi ≠ “jazoga loyiq bemor”. Bunday farqlash adolat tamoyiliga zid.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "203"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) “Jazo” qarashi shifokor-bemor munosabatiga qanday ta’sir qiladi? 2) Xavf guruhini bilish nima uchun kerak, lekin nima uchun davolashda farq qilish asos emas? Doskada chizish: “guruh → qarash → tabaqalashtirish → nizo” zanjirini chizing. Tipik xato: xavf guruhiga mansublikni bemorni baholash mezoni deb tushunish."
+  },
+  {
+   "title": "Voqea tahlili 1: yordamni rad etish",
+   "bullets": [
+    {
+     "text": "Vaziyat: shifokor OIV bilan kasallangan bemorga yordam berishdan shaxsiy xavfsizligi sababli bosh tortmoqchi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "201"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Manbaga ko‘ra, yordam bermaslik ham zarar shakli. Ko‘p mamlakatlarda shifokorlar shaxsiy xavfsizlik sababli ommaviy rad etgan.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "201"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "“Yaxshilik qil” tamoyilida shifokor faoliyati boshqalar hayoti va sog‘lig‘ini saqlashga ham qaratilishi kerak. Bu ichki ziddiyat tug‘diradi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "202"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Savol: shaxsiy xavfsizlik sababi “Zarar yetkazma!” va adolat tamoyillari bilan qanday uyg‘unlashadi? Rad etish qachon asosli?",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "201-203"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 8 daqiqa (3 daqiqa kichik guruhda, 5 daqiqa umumiy muhokama). Muhokama: 1) Yordamni rad etish qaysi tamoyillarni buzadi? 2) Shifokorning o‘z xavfsizligi va bemor huquqi o‘rtasida muvozanat qanday topiladi? Doskada chizish: “shifokor xavfsizligi – bemor huquqi” tarozisini chizib, dalillarni ikki pallaga yozing. Tipik xato: rad etishni faqat shaxsiy tanlov deb qarash, bemorga yetadigan zararni inobatga olmaslik."
+  },
+  {
+   "title": "Tezkor savol 1",
+   "bullets": [
+    {
+     "text": "Savol 1: nega shifokorlar OIV bilan yashovchiga yordamdan bosh tortadi? Javob: shaxsiy xavfsizlik sababli; bu “Zarar yetkazma” tamoyiliga zid.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "201"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Savol 2: “Yaxshilik qil” tamoyili faqat OIV bilan kasallangan bemorga qaratilganmi? Javob: yo‘q, bemor atrofidagi odamlarni yuqtirishdan saqlashni ham qamraydi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "202"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Savol 3: adolat nimani talab qiladi? Javob: huquqan OIV bemorlari teng huquqli, amalda esa tibbiyot jamoasida tabaqalashtirilgan munosabat uchraydi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "202-203"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Diqqat: OIV ≠ OITS. OIV — RNKli retrovirus; OITS — orttirilgan immun tanqisligi sindromi, OIV infeksiyasi bosqichlaridan biri.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "203"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daq. Savollarni og‘zaki so‘rang, 2-3 talabadan javob oling. Muhokama: shifokorning shaxsiy xavfsizligi va yordam ko‘rsatish burchi qanday uyg‘unlashadi? Doskada chizish: “OIV → OITS” strelkasini chizing va OITS OIV infeksiyasi bosqichlaridan biri ekanini yozing. Tipik xato: OIV va OITSni bir xil tushuncha deb bilish."
+  },
+  {
+   "title": "Axloqiy masalalar xaritasi",
+   "bullets": [
+    {
+     "text": "Jamoat salomatligi: profilaktika butun davlat miqyosida, OAV va ta’lim orqali tizimli olib boriladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Shifokor — murabbiy va sirdosh; u bemorning qaror qabul qilish huquqini hurmat qiladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sherikka yuqish xavfi haqiqiy bo‘lib, bemor aytmasa, maxfiylikni buzish mumkin; bu o‘ta chora.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204-205"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Axloqiy masalalar",
+    "children": [
+     {
+      "label": "Xabardor rozilik",
+      "items": [
+       "Qon olish, davolash — roziligi bilan"
+      ]
+     },
+     {
+      "label": "Siyosiylashuv",
+      "items": [
+       "Ijtimoiy tengsizlik, qashshoqlik"
+      ]
+     },
+     {
+      "label": "Stigmatizatsiya",
+      "items": [
+       "Maxfiylik buzilishidan chiqadi"
+      ]
+     },
+     {
+      "label": "Maxfiylik",
+      "items": [
+       "Istisno — xavf ostidagi sherik"
+      ]
+     }
+    ],
+    "caption": "Axloqiy masalalar xaritasi"
+   },
+   "teacher_notes": "Vaqt: 7 daq. Muhokama: nega stigmatizatsiya ko‘pincha tibbiyot xodimlarining maxfiylikni buzishidan kelib chiqadi? Sherikka xabar berish qachon oqlanadi? Doskada chizish: oltita masalaning (xabardor rozilik, jamoat salomatligi, siyosiylashuv, stigmatizatsiya, shifokor-bemor munosabati, maxfiylik) markazda “OIV/OITS” bo‘lgan xaritasini chizdiring. Tipik xato: maxfiylikni mutlaq deb o‘ylash; manbada sherikka xavf bo‘lganda istisno ko‘rsatilgan."
+  },
+  {
+   "title": "Xabardor rozilik va inson huquqlari yondashuvi",
+   "bullets": [
+    {
+     "text": "Qon olish va davolash faqat ixtiyoriy, xabardor rozilik bilan amalga oshiriladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "203-204"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bu tamoyil inson huquqlari va biotibbiyot bo‘yicha Yevropa Kengashi hujjatida ifodalangan.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204"
+     },
+     "uncertain": true
+    },
+    {
+     "text": "OIV bilan yashovchilar — strategiya ishlab chiqishda ishtirok etadigan to‘laqonli fuqarolar.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Rozilik zanjiri",
+    "nodes": [
+     "Bemorga ma’lumot beriladi",
+     "Ixtiyoriy rozilik olinadi",
+     "Tekshiruv uchun qon olinadi",
+     "Davolash ham rozilik bilan"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 6 daq. Muhokama: rozilik “xabardor” bo‘lishi nimani anglatadi? OIV bilan yashovchini epidemiyaga qarshi kurash sherigi sifatida ko‘rish amaliyotga qanday ta’sir qiladi? Doskada chizish: rozilik zanjirini yozib, har bosqichda bemor “yo‘q” deyishi mumkinligini ko‘rsating. Tipik xato: qon olishga rozilikni davolashga ham avtomatik rozilik deb hisoblash. Manbadagi Yevropa Kengashi hujjati matni OCRda xira, nomini tekshirib oling."
+  },
+  {
+   "title": "Jamoat salomatligi va kasallikning siyosiylashuvi",
+   "bullets": [
+    {
+     "text": "OIV profilaktikasi butun davlat miqyosini qamrab olishi kerak.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ommaviy axborot vositalari, ta’lim muassasalari, ish joyi va reklama orqali tizimli va har tomonlama targ‘ibot olib borish zarur.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "OIV/OITS muammosi ijtimoiy tartib masalalari, masalan, ijtimoiy tengsizlik bilan chambarchas bog‘liq.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sharqiy Afrikada (Keniya) kasallik jamiyatning barcha qatlamlari va oilalariga kirib borgan. Sabablari: qashshoqlik, ayollar huquqining yo‘qligi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 4 daq. Muhokama: 1) Nega profilaktika faqat tibbiyot xodimlarining ishi emas? 2) Qashshoqlik va ayollar huquqsizligi kasallik tarqalishiga qanday ta’sir qiladi? Doskaga chizish: «targ‘ibot kanallari» (OAV, ta’lim, ish joyi, reklama) sxemasini chizdiring. Tipik xato: OIV/OITSni faqat tibbiy muammo deb qarash, ijtimoiy tengsizlik bilan bog‘liqligini unutish."
+  },
+  {
+   "title": "Stigmatizatsiya",
+   "bullets": [
+    {
+     "text": "OITS bilan kasallangan odam boshqalar nazarida “moxov” kabi qaraladi. Bu stigmatizatsiya, ya’ni bemorga ijtimoiy “tamg‘a” bosish.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Stigmatizatsiya ko‘pincha sog‘liqni saqlash xodimlari tomonidan maxfiylik qoidalarining buzilishi natijasida yuzaga keladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Diqqat: stigmani faqat jamiyat keltirib chiqaradi deb o‘ylamang. Sabablardan biri — xodimlar tomonidan maxfiylikning buzilishi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 3 daq. Muhokama: 1) Bemor ma’lumoti oshkor bo‘lsa, uning hayotida nima o‘zgaradi? 2) Tibbiyot xodimi stigmaning oldini olishda qanday rol o‘ynaydi? Doskaga chizish: «maxfiylik buzilishi → stigma» sababiyat zanjirini chizdiring. Tipik xato: stigmatizatsiya va kamsitishni bir xil tushuncha deb olish."
+  },
+  {
+   "title": "Qo‘rquv, spidofobiya va kurash yo‘nalishlari",
+   "bullets": [
+    {
+     "text": "Qo‘rquv uch omilga tayanadi: OIV/OITS haqida axborot yo‘qligi, o‘limning muqarrarligi va jamiyatning bemorlarga salbiy munosabati.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "158"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sharmandalik, jim turish, kamsitish va maxfiylik yetishmasligi profilaktika va parvarishga putur yetkazadi.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "159"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "OITS bilan kurash uch yo‘nalishda: ma’rifat, salbiy ijtimoiy munosabatni o‘zgartirish va ilmiy tadqiqotlarni chuqurlashtirish.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "159"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Haddan tashqari qo‘rquv spidofobiyaga (OITS dan qo‘rqish) olib kelishi mumkin.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "158"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Qo‘rquv omillari",
+      "items": [
+       "Axborot yo‘qligi",
+       "O‘limning muqarrarligi",
+       "Bemorlarga salbiy munosabat"
+      ]
+     },
+     {
+      "title": "Kurash yo‘nalishlari",
+      "items": [
+       "Ma’rifat",
+       "Ijtimoiy munosabatni o‘zgartirish",
+       "Ilmiy tadqiqotlarni chuqurlashtirish"
+      ]
+     }
+    ],
+    "caption": "Qo‘rquvdan kurashga"
+   },
+   "teacher_notes": "Vaqt: 4 daq. Esda tuting: stigma — jamiyat va tibbiyot muammosi; ma’rifat uning birinchi dorisi."
+  },
+  {
+   "title": "Shifokor va bemor: murabbiy va sirdosh",
+   "bullets": [
+    {
+     "text": "Ko‘plab shifokorlar jamiyatda keng tarqalgan asossiz stereotiplar ta’siri ostida bo‘lishi mumkin.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "OITSning yangi holatlariga duch kelgan xodimlar bemorlarga nisbatan maxfiylik tuyg‘usini rivojlantirishi va xavf guruhlarining ishonchi uchun kurashishi kerak.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Shifokor bemori xavfli kasallikka qarshi kurashda bo‘lajak ittifoqchisi ekanini bilishi va bemorning qaror qabul qilish huquqini hurmat qilishi lozim.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Eslab qoling: bu vaziyatda shifokor murabbiy va sirdosh rolini bajaradi va bemorga kasallik bilan kurashishda yordam beradi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 4 daq. Muhokama: 1) Shifokorning stereotiplari bemor bilan muloqotga qanday ta’sir qiladi? 2) “Murabbiy” va “sirdosh” rollari amalda nimani anglatadi? Doskaga chizish: markazda «bemor», atrofida «ittifoqchi», «murabbiy», «sirdosh» so‘zlarini yozdiring. Tipik xato: shifokor bemor uchun qarorni o‘zi qabul qiladi deb o‘ylash. Manbaga ko‘ra, qaror qabul qilish huquqi bemorda qoladi."
+  },
+  {
+   "title": "Maxfiylik va uning istisnosi",
+   "bullets": [
+    {
+     "text": "OITS bemori ham boshqa bemorlar kabi sir saqlash huquqiga ega; bunda uning jinsiy sherigi xavf ostida bo‘lishi mumkin.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Yuqish xavfi haqiqiy bo‘lsa va bemor sherigiga aytishdan bosh tortsa, shifokor sirni buzishi mumkin.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204-205"
+     },
+     "uncertain": true
+    },
+    {
+     "text": "Diqqat: sirni oshkor qilish istisno va o‘ta keskin chora, odatiy qoida emas.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "205"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Maxfiylik va istisno",
+    "nodes": [
+     "Sir saqlash — asosiy qoida",
+     "Sherikka yuqish xavfi aniq",
+     "Avval bemor o‘zi xabar bersin",
+     "Bemor xabar berishni rad etadi",
+     "Shifokor sirni buzishi mumkin"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega sir saqlash ishonch uchun muhim? 2) Qaysi holatda istisno o‘rinli? Doskada: sxemani 5 qadamda chizdiring va har qadamga bittadan dalil yozdiring. Tipik xato: talabalar sirni buzishni bemorning roziligisiz har doim mumkin deb o‘ylaydi; manbada bu faqat haqiqiy xavf va rad etish holati."
+  },
+  {
+   "title": "Shaxs huquqlari va jamiyat xavfsizligi",
+   "bullets": [
+    {
+     "text": "OIV/OITS epidemiyasi insonning shaxsiy huquqlari bilan jamiyat xavfsizligi manfaatlari nisbati muammosini dolzarb qiladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "205"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "O‘z sog‘lig‘iga mas’uliyatsizlik va xavfli vaziyatlarda xulq-atvor me’yorlarini ataylab buzish boshqalarning xavfsizlik va sog‘liq huquqini buzadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "205"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Inson huquqlari va erkinliklarini himoya qiluvchi barcha davlat tuzilmalari OIV/OITS masalalariga alohida e’tibor qaratishi zarur.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "205"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Diqqat: shaxsiy huquq ≠ jamiyat xavfsizligi manfaati; ularning nisbati alohida muammo sifatida qaraladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "205"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Bemorning shaxsiy huquqi qayerda boshqalarning huquqi bilan to‘qnashadi? 2) Davlat tuzilmalari bu muvozanatda qanday rol o‘ynaydi? Doskada: ikki pallali tarozi chizing (chapda shaxs huquqi, o‘ngda jamiyat xavfsizligi). Tipik xato: bir tomonni mutlaq ustun deb hisoblash."
+  },
+  {
+   "title": "Voqea tahlili 2: sherikni xabardor qilish",
+   "bullets": [
+    {
+     "text": "Vaziyat: OIV bilan yashovchi bemorning jinsiy sherigida yuqish xavfi haqiqiy, ammo bemor sherigiga xabar berishdan bosh tortadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204-205"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Shifokor sherikni zarardan himoya qilishga intiladi, lekin axborotni oshkor qilish juda katta o‘lchov hisoblanadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "205"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "“Terapevtik hamkorlik” — shifokor bilan hamkorlikda bemorning o‘zi sherigini xabardor qilishi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "205"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Savol: oshkor qilishdan oldin shifokor nimaga intilishi kerak? Oshkor qilishning qanday salbiy oqibati bo‘lishi mumkin?",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "205"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Bemorning o‘zi sherigiga aytishi nega afzal? 2) Oshkor qilishda bemorning yaqinlariga nisbatan “yomon munosabat” shakllanishi xavfi nimani anglatadi? Doskada: ‘terapevtik hamkorlik’ so‘zidan boshlab qadamlar zanjirini chizing. Tipik xato: shifokorning birinchi harakati sirni buzish deb o‘ylash."
+  },
+  {
+   "title": "Tezkor savol 2",
+   "bullets": [
+    {
+     "text": "Savol: OIV tekshiruvi uchun qon qanday olinadi? Javob: faqat ixtiyoriy, xabardor rozilik bilan. Davolash ham bemor roziligi bilan olib boriladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "203-204"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Savol: stigmatizatsiya nega paydo bo‘ladi? Javob: OITS bemoriga “moxov” kabi qaraladi; ko‘pincha sabab — xodimlarning maxfiylikni buzishi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Savol: maxfiylik qachon buzilishi mumkin? Javob: yuqish xavfi real bo‘lib, bemor sherigiga aytishdan bosh tortsa, shifokor sherikni ogohlantiradi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204-205"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Diqqat: maxfiylikni ochish juda og‘ir chora. Avval bemorning o‘zi sherigini xabardor qilishiga erishish, ya’ni terapevtik hamkorlik kerak.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "205"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Maxfiylikni buzish qachon oqlanadi? 2) Shifokor sherikni xabardor qilishdan oldin nima qilishi kerak? Doskada: \"rozilik – maxfiylik – istisno\" zanjirini chizdiring. Tipik xato: talabalar maxfiylikni mutlaq qoida deb, istisnoni esa oddiy hol deb o‘ylaydi. Istisno faqat real xavf va bemor rad etganda qo‘llanadi.",
+   "diagram_note": null
+  },
+  {
+   "title": "O‘zbekiston qonunchiligi: asosiy hujjatlar",
+   "bullets": [
+    {
+     "text": "Bazaviy hujjat — OIV (odamning immunitet tanqisligi virusi) infeksiyasi tarqalishiga qarshi kurashish to‘g‘risidagi qonun.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "206"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qonunga OIV yuqtirganlar va boshqa zaif guruhlar huquqlarini himoya qilishning asosiy xalqaro standartlari joriy etilgan.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "206"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kurash chora-tadbirlari Mingyillik va Dublin deklaratsiyalaridagi majburiyatlarga amal qilgan holda olib boriladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "205"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Asosiy hujjatlar",
+    "nodes": [],
+    "header": [
+     "Hujjat",
+     "Qayd"
+    ],
+    "rows": [
+     [
+      "BMT Mingyillik deklaratsiyasi",
+      "2000 yil 8 sentyabr, 55/2-rezolyutsiya"
+     ],
+     [
+      "Dublin deklaratsiyasi",
+      "2004 yil, Yevropa va Markaziy Osiyo"
+     ],
+     [
+      "OIV infeksiyasi to‘g‘risidagi qonun",
+      "2013 yil 23 sentyabr, bazaviy hujjat"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega xalqaro hujjatlar milliy qonunga ta’sir qiladi? 2) Qonun qaysi sohalarga tayanadi (sog‘liqni saqlash, ijtimoiy himoya, narkotiklarga qarshi kurash)? Doskada: uch hujjatni vaqt chizig‘i shaklida joylashtiring. Tipik xato: BMT — Birlashgan Millatlar Tashkiloti ekanini va deklaratsiya yillarini chalkashtirish.",
+   "diagram_note": null
+  },
+  {
+   "title": "OIVga tibbiy tekshiruv: uch tartib",
+   "bullets": [
+    {
+     "text": "Tekshiruv — shaxs sog‘lig‘ini o‘rganish va baholash. Bunda OIV bor yoki yo‘qligi aniqlanadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "206"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tekshiruvdan oldin va keyin maslahatlashuv o‘tkaziladi; voyaga yetmaganlarda qonuniy vakil roziligi kerak.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "206"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Diqqat: majburiy ≠ g‘ayriixtiyoriy. Ikkinchisi roziliksiz, qaror yoki sud ajrimi bilan o‘tadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "207-208"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Tekshiruv tartiblari",
+    "children": [
+     {
+      "label": "Ixtiyoriy",
+      "items": [
+       "Xohish bilan, maxfiy, anonim",
+       "Shaxsning o‘z iltimosi"
+      ]
+     },
+     {
+      "label": "Majburiy",
+      "items": [
+       "Qonunda sanalgan toifalar",
+       "Donorlar, homilador ayollar"
+      ]
+     },
+     {
+      "label": "G‘ayriixtiyoriy",
+      "items": [
+       "Roziliksiz, rasmiy qaror bilan",
+       "Tergov qarori yoki sud ajrimi"
+      ]
+     }
+    ],
+    "caption": "Uch tartib"
+   },
+   "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Majburiy va g‘ayriixtiyoriy tekshiruv nimasi bilan farq qiladi? 2) Nega maslahatlashuv tekshiruvdan oldin ham, keyin ham kerak? Doskada: uch ustunli jadvalni talabalar bilan to‘ldiring. Tipik xato: majburiy tekshiruvni \"roziliksiz\" deb tushunish. Majburiy toifalar qonunda sanab o‘tilgan. Eslatma: OCR matnida g‘ayriixtiyoriy tekshiruvni buyuruvchi mansabdorlardan biri aniq o‘qilmadi; jadvalda faqat tergov qarori va sud ajrimi keltirilgan.",
+   "diagram_note": null
+  },
+  {
+   "title": "Tekshiruv jarayoni bosqichlari",
+   "bullets": [
+    {
+     "text": "OIV (odamning immunitet tanqisligi virusi) tekshiruvida shaxs bilan dastlabki va keyingi maslahatlashuv o‘tkaziladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "206"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "OIV aniqlangan shaxs boshqalarga yuqtirganlik uchun jinoiy javobgarlik haqida yozma ogohlantiriladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "206-207"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Iltimosga ko‘ra OIV yo‘qligi sertifikati — OITS (orttirilgan immun tanqislik sindromi) markazida, pullik.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "207"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Tekshiruv zanjiri",
+    "nodes": [
+     "Dastlabki maslahatlashuv",
+     "Laboratoriya tekshiruvi",
+     "Natijani berish",
+     "Aniqlansa: yozma ogohlantirish",
+     "Sertifikat (iltimosga ko‘ra)"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega tekshiruvdan oldin ham, keyin ham maslahat kerak? 2) Yozma ogohlantirish shaxsga qanday ta’sir qiladi? Doskada: 5 bosqichli zanjirni chizdirib, har bosqichga mas’ul shaxsni yozdiring. Tipik xato: sertifikatni majburiy va bepul deb o‘ylash — u iltimosga ko‘ra, pullik beriladi."
+  },
+  {
+   "title": "Samarali javob elementlari",
+   "bullets": [
+    {
+     "text": "OIV/OITSga qarshi kurashda ixtiyoriy va maxfiy maslahat hamda test tizimiga kirishni kengaytirish katta ahamiyatga ega.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "160"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Xavfsiz donor qoni bilan ta’minlash va jinsiy yo‘l bilan yuqadigan kasalliklarni erta, samarali davolash zarur.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "160"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Donor qoni skriningi muayyan ko‘rsatkichlar, jumladan OIV-1 va OIV-2 antigenlari bo‘yicha amalga oshiriladi.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "160"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Parvarish, qo‘llab-quvvatlash va davolash — antiretrovirus terapiyadan samarali foydalanish asosida eng yuqori standart ishlab chiqilmoqda.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "160"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "1. Maslahat va test",
+      "text": "Ixtiyoriy va maxfiy"
+     },
+     {
+      "title": "2. Xavfsiz qon",
+      "text": "Donor qoni skriningi"
+     },
+     {
+      "title": "3. JYYK davosi",
+      "text": "Erta va samarali davolash"
+     },
+     {
+      "title": "4. Parvarish",
+      "text": "Qo‘llab-quvvatlash, davolash"
+     },
+     {
+      "title": "5. Antiretrovirus terapiya",
+      "text": "Yuqori davolash standarti"
+     }
+    ],
+    "caption": "Muxamedova (2021), 160-bet"
+   },
+   "teacher_notes": "Vaqt: 4 daq. JYYK — jinsiy yo‘l bilan yuqadigan kasalliklar. Oldini olish: ma’lumot va sanitariya ta’limi muhim (159-bet)."
+  },
+  {
+   "title": "Majburiy tekshiruv o‘tkaziladigan toifalar",
+   "bullets": [
+    {
+     "text": "Majburiy tekshiruvdan qon va biologik suyuqliklar donorlari, ellik yoshgacha nikohlanuvchilar va homilador ayollar o‘tadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "207"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Yana in’ektsiya yo‘li bilan giyohvand modda iste’mol qilishda gumon qilinganlar va OIV yuqtirgan onalardan tug‘ilgan bolalar tekshiriladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "207"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qon, organ va to‘qimalar bilan ishlovchi xodimlar hamda jinsiy sherigida OIV aniqlanganlar ham majburiy tekshiriladi. Ayrim kasblar uchun 15-modda qo‘llanadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "207"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Diqqat: majburiy ≠ g‘ayriixtiyoriy. G‘ayriixtiyoriy tekshiruv roziliksiz, faqat surishtiruvchi, tergovchi qarori yoki sud ajrimi bilan o‘tadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "207-208"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun tibbiyot xodimlari ro‘yxatda? 2) Majburiylik shaxs huquqlariga qanday zid kelishi mumkin? Doskada: 7 toifani ro‘yxat qilib yozdiring, ularni ’tibbiy xavf’ va ’ijtimoiy xavf’ ustunlariga ajrating. Tipik xato: ’majburiy’ va ’g‘ayriixtiyoriy’ tekshiruvni bir narsa deb olish."
+  },
+  {
+   "title": "Voyaga yetmaganlar va muomalaga layoqatsizlar",
+   "bullets": [
+    {
+     "text": "Voyaga yetmagan, muomalaga layoqatsiz yoki layoqati cheklangan shaxslar qonuniy vakillarining roziligi bilan tekshiriladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "206"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Davlat laboratoriyasi natijasi bunday shaxsning o‘ziga emas, uning qonuniy vakillariga beriladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "206"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "OIV aniqlansa, tibbiy muassasa xodimlari qonuniy vakillarni va shaxs turgan muassasani xabardor qiladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "207"
+     },
+     "uncertain": true
+    },
+    {
+     "text": "G‘ayriixtiyoriy tekshiruv shaxsning yoki qonuniy vakilning roziligisiz, surishtiruvchi, tergovchi qarori yoki sud ajrimi asosida o‘tadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "207-208"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Natijani bolaning o‘ziga bermaslik axloqan qanday baholanadi? 2) Qonuniy vakil rozilik bermasa nima bo‘ladi? Doskada: rozilik, natija va xabardor qilish yo‘nalishlarini ko‘rsatuvchi strelkali sxema chizdiring. Tipik xato: natijani voyaga yetmagan shaxsning o‘ziga beriladi deb o‘ylash."
+  },
+  {
+   "title": "OIV bilan yashovchilarning qonuniy huquqlari",
+   "bullets": [
+    {
+     "text": "Qonun OIV yuqtirgan va yuqish xavfi ostidagi shaxslarning huquqlarini mustahkamlab qo‘ygan.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "208"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Shaxs boshqalarga OIV yuqtirgani uchun javobgarlik haqida ham xabardor qilinadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "208"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "OIV munosabati bilan bepul tibbiy yordam olish va davolanish huquqi ham berilgan.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "208"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "OIV bilan yashovchi huquqlari",
+    "children": [
+     {
+      "label": "Tekshiruv va maslahat",
+      "items": [
+       "Tekshiruvdan o‘tish, maslahat"
+      ]
+     },
+     {
+      "label": "Hujjat",
+      "items": [
+       "Yozma javob (sertifikat)"
+      ]
+     },
+     {
+      "label": "Maxfiylik",
+      "items": [
+       "Sir saqlanadi, anonim mumkin"
+      ]
+     },
+     {
+      "label": "Yordam va axborot",
+      "items": [
+       "Bepul yordam; huquqlar haqida xabar"
+      ]
+     }
+    ],
+    "caption": "Qonuniy huquqlar"
+   },
+   "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega tekshiruvning anonim bo‘lishi muhim? 2) Bemor huquqi bilan javobgarlik haqida ogohlantirish qanday bog‘lanadi? Doskada jadvalni chizdiring va talabalar har guruhga misol keltirsin. Tipik xato: huquqlar ro‘yxatini «faqat bepul davolanish» deb qisqartirish."
+  },
+  {
+   "title": "Bolalarni ijtimoiy qo‘llab-quvvatlash",
+   "bullets": [
+    {
+     "text": "18 yoshga to‘lmagan OIV yuqtirganlar kasallik bosqichidan qat’i nazar oylik ijtimoiy nafaqa va nogiron bolalar imtiyozlarini oladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "208"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ota-onasi yoki vasiylari ishdan vaqtincha ozod bo‘ladi va nafaqa olgan holda bola bilan statsionarda birga bo‘lish huquqiga ega.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "208"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Voyaga yetmaganda OIV aniqlansa, tibbiyot xodimlari uning qonuniy vakillarini xabardor qiladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "207"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Diqqat: nafaqa huquqi uchun kasallik bosqichi (OIV yoki OITS, ya’ni orttirilgan immunitet tanqisligi sindromi) ahamiyatsiz.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "208"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega ota-onaga bola bilan statsionarda bo‘lish huquqi berilgan? 2) Bolaning ma’lumoti kimga beriladi va nima uchun? Doskada «bola – nafaqa – ota-ona» sxemasini chizdiring. Tipik xato: nafaqani faqat OITS bosqichidagi bolalarga tegishli deb o‘ylash."
+  },
+  {
+   "title": "Kamsitishga yo‘l qo‘yilmaydigan holatlar",
+   "bullets": [
+    {
+     "text": "Qonun OIV bilan yashovchilarga nisbatan to‘rt turdagi kamsitishga yo‘l qo‘ymaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "209"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Turar joy huquqi OIV yuqtirgan shaxsning o‘zi va oila a’zolari uchun ham saqlanadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "209"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Diqqat: taqiq mutlaq emas, ayrim kasblar va ta’lim turlari istisno.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "209"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Taqiq",
+      "items": [
+       "Ishdan bo‘shatish, ishga olmaslik",
+       "Ta’lim muassasasiga qabul qilmaslik",
+       "Tibbiy muassasaga qabul qilmaslik",
+       "Turar joy va boshqa huquqni cheklash"
+      ]
+     },
+     {
+      "title": "Istisno",
+      "items": [
+       "Vazirlik ro‘yxatidagi ayrim kasblar",
+       "Qonunda belgilangan ayrim turlar",
+       "Istisno ko‘rsatilmagan",
+       "Istisno ko‘rsatilmagan"
+      ]
+     }
+    ],
+    "caption": "Taqiq va istisno"
+   },
+   "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega tibbiy yordamni rad etish eng og‘ir axloqiy buzilish hisoblanadi? 2) Istisno kasblar ro‘yxati nima uchun kerak? Doskada «taqiq – istisno» jadvalini chizdiring. Tipik xato: barcha kasblarga OIV bilan ishlashga ruxsat bor deb o‘ylash."
+  },
+  {
+   "title": "Cheklovlar: donorlik va kasblar ro‘yxati",
+   "bullets": [
+    {
+     "text": "Odam immunitet tanqisligi virusi (OIV) yuqtirganlar qon va biologik suyuqliklar donori bo‘la olmaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "209"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Adliya vazirligining 2014 yil 7 maydagi ro‘yxati OIV yuqtirganlarga 9 turdagi kasbiy faoliyatni taqiqlaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "209"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ro‘yxatdagi ishlarga ruxsat bergan tashkilot rahbari javobgar bo‘ladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "209"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Eski ro‘yxatdan chiqarilgan ishlar",
+    "nodes": [],
+    "header": [
+     "Faoliyat turi",
+     "Holati"
+    ],
+    "rows": [
+     [
+      "Tibbiy yordam ko‘rsatish ishlari",
+      "Ro‘yxatdan chiqarilgan"
+     ],
+     [
+      "Vaksina, farmatsevtika ishlab chiqarish",
+      "Ro‘yxatdan chiqarilgan"
+     ],
+     [
+      "Massaj muolajalari",
+      "Ro‘yxatdan chiqarilgan"
+     ],
+     [
+      "Sportning kontakt turlari",
+      "Ro‘yxatdan chiqarilgan"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega donorlik taqiqi saqlanib qolgan? 2) Tibbiy ishlar ro‘yxatdan chiqarilishi nimani anglatadi? Doskada chizing: ikki ustunli jadval ‘taqiqlangan / taqiqlanmagan’ va unga misollarni joylang. Tipik xato: talabalar ‘OIV bilan yashovchi hech qayerda ishlay olmaydi’ deb o‘ylaydi. Aslida taqiq faqat ro‘yxatdagi 9 tur uchun amal qiladi."
+  },
+  {
+   "title": "Voqea tahlili 3: ishga qabul va kasb cheklovi",
+   "bullets": [
+    {
+     "text": "Vaziyat: OIV bilan yashovchi xodim avvalgi tashkilotida ishlayapti. Uning ishi taqiqlangan kasblar ro‘yxatiga kirmaydi, lekin rahbar uni bo‘shatmoqchi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "209"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qonun OIV bilan yashovchilarning mehnat shartnomasini bekor qilishni va ishga qabul qilishni rad etishni taqiqlaydi. Ayrim kasblar bundan mustasno.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "209"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Diqqat: xato qilish xavfi! ‘OIV bor’ ≠ ‘har qanday ishda ishlay olmaydi’. Taqiq faqat ro‘yxatdagi faoliyat turlariga tegishli.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "209"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Savol: rahbarning qarori qonunga mosmi? Xodim ro‘yxatdagi kasbda ishlasa, ruxsat bergan rahbar qanday mas’uliyat oladi?",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "209"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Bo‘shatish qachon qonunga zid bo‘ladi? 2) Ro‘yxatdagi kasbda ishlayotgan xodim bilan nima qilish kerak? Kutiladigan javob: ro‘yxatda yo‘q ishda bo‘shatish qonunga zid. Ro‘yxatdagi ishda cheklov qo‘llanadi va ruxsat bergan rahbar javobgar. Doskada chizing: ikki shoxli sxema ‘ish ro‘yxatda bor / yo‘q’. Tipik xato: talabalar cheklovni barcha OIV bilan yashovchilarga tatbiq qiladi."
+  },
+  {
+   "title": "“Fuqarolar sog‘lig‘ini saqlash to‘g‘risida”gi qonun",
+   "bullets": [
+    {
+     "text": "Fuqarolar sog‘liqqa ta’sir etuvchi omillar, hudud sanitariya holati, ovqatlanish me’yorlari va xizmatlar xavfsizligi haqida o‘z vaqtida, aniq axborot oladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "210"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kasallik yoki mehnat layoqati yo‘qolganda tibbiy-ijtimoiy yordam huquqi bor: davolash, tiklash, sanatoriy, protez va vaqtinchalik nafaqa.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "210"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Murojaat qilgani, sog‘liq holati, tashxis va tekshiruv-davolash chog‘ida olingan ma’lumotlar sir saqlanadi. Bu tibbiy sir huquqi qonunda mustahkamlangan.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "210"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tibbiy yordam paytida sog‘liqqa zarar yetkazilsa, zarar qonunda belgilangan tartibda qoplanadi. OIV bilan yashovchi ham bemor sifatida shu huquqlarga ega.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "210"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Tibbiy sir buzilsa, bemor qanday huquqlarga tayanadi? 2) OIV bilan yashovchining bemor sifatidagi huquqlari boshqa fuqarolarnikidan farq qiladimi? Doskada chizing: markazda ‘bemor’, atrofida to‘rt huquq (axborot, yordam, sir, zararni qoplash). Tipik xato: talabalar OIV bilan yashovchilarni alohida ‘kam huquqli’ guruh deb hisoblaydi. Qonun ularga umumiy bemor huquqlarini ham beradi."
+  },
+  {
+   "title": "Eksperimental davolash: plasebosiz sinov",
+   "bullets": [
+    {
+     "text": "Ayrim mamlakatlarda odamning immunitet tanqisligi virusi (OIV) dorilari plasebosiz sinalishi mumkin.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "203"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Agonal holatdagi OITS (orttirilgan immunitet tanqisligi sindromi) bemoriga yordam — axloqiy muammo.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "203"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Og‘ir holatlarda inson qadr-qimmati tamoyilini amalga oshirish masalasi keskinlashadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "203"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Qadr-qimmat masalasi zanjiri",
+    "nodes": [
+     "Kasallikning og‘ir bosqichi",
+     "Og‘ir jismoniy, ruhiy holat",
+     "Qadr-qimmat masalasi keskin",
+     "Agonal holatda yordam muammosi"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Dori samaradorligini plasebosiz sinashga ruxsat berilishi qanday axloqiy savollar tug‘diradi? 2) Agonal holatdagi bemorga yordam ko‘rsatishda qadr-qimmat qanday saqlanadi? Doskada chizish: to‘rt tugunli zanjirni talabalar bilan birga chizing. Tipik xato: OIV va OITSni bir xil tushunish; manbaga ko‘ra OITS — OIV infeksiyasi bosqichlaridan biri. Manbada plasebosiz sinov qaysi mamlakatlarda ruxsat etilgani aytilmagan, shuning uchun aniq mamlakat nomlamang."
+  },
+  {
+   "title": "Tibbiy yutuqlar, dori narxi va haqqoniylik",
+   "bullets": [
+    {
+     "text": "OITS bemorlari kasallikning salbiy oqibati muqarrarligini biladi, shuning uchun yangi dori haqidagi har qanday axborotga sezgir.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "157"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "«OIV proteaza ingibitori» davosi yiliga kamida 20 000 dollar turadi; hamma bemor uni sotib ololmaydi, bu xabar berish muammosini keltiradi.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "157"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Yangi diagnostika test tizimlari OIV antikorlarini 1–5 daqiqada ajratadi; birinchi bosqich klinik sinovdan to‘rtta vaktsina o‘tmoqda.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "159"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "OIVga qarshi yuqori faol 50 dan ortiq yangi kimyoterapiya dorisi klinik sinovda.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "159"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Tezkor test",
+      "value": "1–5 daq"
+     },
+     {
+      "label": "Dori narxi",
+      "value": "≥20 000",
+      "unit": "dollar/yil"
+     },
+     {
+      "label": "Sinovdagi vaktsina",
+      "value": "4",
+      "unit": "ta"
+     },
+     {
+      "label": "Yangi dorilar (sinovda)",
+      "value": "50+",
+      "unit": "ta"
+     }
+    ],
+    "caption": "Yutuqlar va narx"
+   },
+   "teacher_notes": "Vaqt: 4 daq. Muhokama: qimmat dori mavjud bo‘lsa, shifokor bemorni xabardor qilishi shartmi? Haqqoniylik va adolat to‘qnashadi."
+  },
+  {
+   "title": "Yaxlitlik tamoyili va yangi tibbiy texnologiyalar",
+   "bullets": [
+    {
+     "text": "OIV/OITS tibbiyotning hozircha kam o‘rganilgan sohasi bo‘lib qolmoqda.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "203"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tadqiqotlar soni erishilgan ijobiy amaliy natijalar sonidan sezilarli ko‘p.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "203"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Yangi texnologiya klinikada shaxsning jismoniy va ruhiy yaxlitligiga tahdidni oshirishi mumkin.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "203"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Yaxlitlikka xavf yo‘li",
+    "nodes": [
+     "Kam o‘rganilgan soha",
+     "Ko‘p tadqiqot, kam natija",
+     "Yangi texnologiya yaratiladi",
+     "Klinikada qo‘llash: xavf ortadi"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nega tadqiqotlar soni natijalardan ko‘p bo‘lishi xavfni oshiradi? 2) Jismoniy va ruhiy yaxlitlik nimani anglatadi? Doskada chizish: zanjirni chizib, har bosqichga bittadan misol so‘rang. Tipik xato: yangi texnologiya o‘z-o‘zidan foydali deb o‘ylash; manbada klinik qo‘llash xavfni oshirishi mumkinligi aytilgan."
+  },
+  {
+   "title": "Voqea tahlili 4: eksperimental davolash",
+   "bullets": [
+    {
+     "text": "Vaziyat: OIV bilan yashovchi bemorga kam o‘rganilgan sohada yaratilgan yangi dori bilan davolanish taklif etildi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "203"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Manbaga ko‘ra, davolash ham bemorning ixtiyoriy, xabardor roziligi bilan olib borilishi lozim.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Yangi texnologiya shaxsning jismoniy va ruhiy yaxlitligiga tahdidni oshirishi mumkin.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "203"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Savol: shifokor rozilik olayotganda bemorga qanday xavflarni tushuntirishi kerak va nima uchun?",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "203-204"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 7 daqiqa (3 daqiqa guruhda, 4 daqiqa umumiy muhokama). Muhokama: 1) Bemor rad etsa, shifokor qanday yo‘l tutishi kerak? 2) Rozilik va yaxlitlik tamoyili qanday bog‘lanadi? Doskada chizish: ‘Taklif — tushuntirish — rozilik — davolash’ ketma-ketligini chizing. Tipik xato: rozilikni faqat qon tekshiruvi uchun kerak deb hisoblash; manbada davolash ham bemor roziligi bilan amalga oshirilishi aytilgan. Vaziyat o‘quv maqsadida manbadagi ma’lumotlardan tuzilgan."
+  },
+  {
+   "title": "Tibbiyot xodimlarining kasbiy xavflari",
+   "bullets": [
+    {
+     "text": "Ko‘p mamlakatlarda shifokorlar OIV bilan kasallanganlarga yordam berishdan ommaviy bosh tortadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "201"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qon, biologik suyuqlik, organ va to‘qima bilan ishlovchi xodimlar OIVga majburiy tekshiriladi (15-modda).",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "207"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kasbiy majburiyatni bajarmagan yoki yomon bajargan xodim yetkazilgan zararni qoplashi shart.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "209"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Kasbiy xavflar",
+    "children": [
+     {
+      "label": "Rad etish sababi",
+      "items": [
+       "Xodimning shaxsiy xavfsizligi"
+      ]
+     },
+     {
+      "label": "Majburiy tekshiruv",
+      "items": [
+       "Qon va to‘qima bilan ishlovchilar"
+      ]
+     },
+     {
+      "label": "Zararni qoplash",
+      "items": [
+       "Majburiyatni buzgan xodim to‘laydi"
+      ]
+     },
+     {
+      "label": "Axloqiy baho",
+      "items": [
+       "Yordam bermaslik ham zarar"
+      ]
+     }
+    ],
+    "caption": "Kasbiy xavf: asosiy jihatlar"
+   },
+   "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Shaxsiy xavfsizlik yordamni rad etishga axloqiy asos bo‘la oladimi? 2) Nega xodimlarning o‘zi ham majburiy tekshiruvdan o‘tadi? Doskada: ’Shaxsiy xavf – rad etish – zarar yetkazma tamoyili’ zanjirini chizdiring. Tipik xato: rad etishni ’zarar emas’ deb hisoblash; manbaga ko‘ra yordam bermaslik ham zarar shakli. Diqqat: xavf sezish ≠ yordamdan bosh tortishga huquq."
+  },
+  {
+   "title": "Xulosa: asosiy xulosalar va tezkor savol",
+   "bullets": [
+    {
+     "text": "2013-yilgi qonun OIV (odam immunitet tanqisligi virusi) bilan yashovchilarga bepul yordam, sertifikat va ish huquqini kafolatlaydi (istisnolar bilan).",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "206-209"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Maxfiylik va rozilik: tekshiruv ixtiyoriy, maslahat bilan va maxfiy. Sherikka xabar berish faqat haqiqiy xavfda va bemor rad etganda.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "204-208"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Eksperimental davolash va kasbiy xavf: yangi texnologiya shaxs yaxlitligiga xavf solishi mumkin; xodimlar esa shaxsiy xavf tufayli rad etadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "201-203"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tezkor savol: nega yordamdan bosh tortish ham “Zarar yetkazma!” tamoyilini buzishi mumkin?",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "201"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Tenglik huquqiy jihatdan bor, amalda-chi? 2) Maxfiylikni buzish qachon oqlanadi? Doskada: mavzuning 4 tayanchini (tenglik, maxfiylik, rozilik, kafolat) chizing. Tipik xato: majburiy tekshiruvni barcha uchun deb o‘ylash; u faqat qonunda sanalgan guruhlarga tegishli. Tezkor savol javobi: manbaga ko‘ra yordam bermaslik ham zarar shakli."
+  }
+ ],
+ "mcq": [
+  {
+   "question": "Talaba seminarda: «OITS — virusning o‘zi», dedi. Qaysi tuzatish manba ma’lumotiga mos keladi?",
+   "options": [
+    "OITS — OIV infeksiyasi bosqichlaridan biri bo‘lgan sindrom",
+    "OIV va OITS bir xil atama bo‘lib, farqi umuman yo‘q",
+    "OITS virusning o‘zi, OIV esa uning so‘nggi bosqichi",
+    "OIV — DNK virusi, OITS esa uning DNK nusxasidir"
+   ],
+   "correct_index": 0,
+   "explanation": "OIV — odamning immunitet tanqisligi virusi, retrovirus bo‘lib, genetik materiali RNK. OITS — orttirilgan immunitet tanqisligi sindromi. U alohida nozologik birlik sifatida ajratiladi, lekin aslida OIV infeksiyasi bosqichlaridan biridir.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "203"
+   }
+  },
+  {
+   "question": "Shifokor shaxsiy xavfsizligi uchun OIV bilan kasallangan bemorni qabul qilishdan bosh tortdi. Bu holatda «Zarar yetkazma!» tamoyili qaysi shaklda buzilgan?",
+   "options": [
+    "Bemorga yordam ko‘rsatmaslik shaklida buzilgan",
+    "Bemorga dorini ortiqcha berish shaklida buzilgan",
+    "Bemorning sirini oshkor qilish shaklida buzilgan",
+    "Noto‘g‘ri tashxis qo‘yish shaklida buzilgan"
+   ],
+   "correct_index": 0,
+   "explanation": "Manbada zararning bu shakli bemorga yordam bermaslik deb ko‘rsatilgan. Ko‘p mamlakatlarda shifokorlarning OIV bilan kasallanganlarga yordamni ommaviy rad etishi kuzatiladi. Sababi tibbiyot xodimlarining shaxsiy xavfsizligi bilan bog‘liq.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "201"
+   }
+  },
+  {
+   "question": "Shifokor OIV bilan kasallangan bemorni davolayotib, uning yaqinlarini ham yuqishdan asrash kerakligini his qilib, ichki ziddiyatga tushdi. Bu qaysi tamoyil bilan bog‘liq?",
+   "options": [
+    "«Zarar yetkazma!» tamoyili bilan bog‘liq",
+    "Adolat tamoyili bilan bog‘liq",
+    "Yaxlitlik tamoyili bilan bog‘liq",
+    "«Yaxshilik qil!» tamoyili bilan bog‘liq"
+   ],
+   "correct_index": 3,
+   "explanation": "OIV bilan bog‘liq vaziyatda «Yaxshilik qil!» tamoyili faqat bemorni davolashga qaratilmaydi. U bemor atrofidagi shaxslarni yuqishdan saqlashni ham qamrab oladi. Shifokor bunda ichki ziddiyatga tushadi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "202"
+   }
+  },
+  {
+   "question": "Manbaga ko‘ra, huquqiy (rasmiy) jihatdan OIV bilan kasallangan bemorlar sog‘liqni saqlash va tibbiy yordamga nisbatan qanday huquqqa ega?",
+   "options": [
+    "Tibbiy yordamni faqat to‘lov evaziga olish huquqiga ega",
+    "Boshqa fuqarolar bilan teng huquqqa ega",
+    "Faqat maxsus markazlarda davolanish huquqiga ega",
+    "Davolanishni boshqa fuqarolardan keyin olish huquqiga ega"
+   ],
+   "correct_index": 1,
+   "explanation": "Huquqiy jihatdan bu toifadagi bemorlar xalqaro huquq va milliy qonunchilikka muvofiq, boshqa fuqarolar bilan sog‘liqni saqlash va tibbiy yordamga teng huquqqa ega. Axloqiy jihatdan esa bu tenglikni to‘liq amalga oshirish muammoli.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "202"
+   }
+  },
+  {
+   "question": "Shifokor «OITS — noto‘g‘ri xatti-harakat uchun jazo» deb hisoblab, xavf guruhidan kelgan bemorlarni boshqacha davolay boshladi. U qaysi tamoyilni buzmoqda?",
+   "options": [
+    "Maxfiylik tamoyilini buzmoqda",
+    "Bemor avtonomiyasi tamoyilini buzmoqda",
+    "Adolat tamoyilini buzmoqda",
+    "Yaxlitlik tamoyilini buzmoqda"
+   ],
+   "correct_index": 2,
+   "explanation": "Manbada tibbiyot xodimlari ko‘pincha OITSni noto‘g‘ri xatti-harakat uchun jazo deb hisoblashi aytilgan. Natijada turli xavf guruhlaridan kelgan bemorlar tabaqalashtirilgan tarzda davolanadi. Bunday farqlash adolat tamoyiliga zid keladi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "202-203"
+   }
+  },
+  {
+   "question": "Shifokor shaxsiy xavfsizligidan qo‘rqib, OIV (odam immunitet tanqisligi virusi) bilan kasallangan bemorga yordam berishni rad etdi. “Zarar yetkazma!” tamoyiliga ko‘ra bu holatda zarar nimada namoyon bo‘ladi?",
+   "options": [
+    "Bemorga qo‘shimcha dori yozib berishda",
+    "Bemorga zarur tibbiy yordam ko‘rsatilmaganda",
+    "Bemor tashxisi boshqalarga oshkor etilganda",
+    "Bemorga noto‘g‘ri tashxis qo‘yilganda"
+   ],
+   "correct_index": 1,
+   "explanation": "Manbaga ko‘ra, OIV infeksiyasida zararning shakli bemorga yordam bermaslikdir. Ko‘p mamlakatlarda shifokorlarning ommaviy rad etishi shaxsiy xavfsizlik bilan izohlanadi, lekin bu tamoyilga zid. Qolgan variantlar boshqa holatlarni tasvirlaydi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "201"
+   }
+  },
+  {
+   "question": "OIV retroviruslar guruhiga kiradi. Uning genetik materiali qanday molekuladan iborat?",
+   "options": [
+    "Peptid zanjiri shaklidagi genetik material",
+    "Ko‘pchilik hujayralardagi kabi DNK molekulasi",
+    "Polisaxarid zanjiri shaklidagi genetik material",
+    "DNK emas, balki RNK molekulasi"
+   ],
+   "correct_index": 3,
+   "explanation": "Manbada OIV retroviruslarga mansub, genetik materiali ko‘pchilik hujayralardagidek DNK emas, RNK ekanligi aytilgan. Shuning uchun DNK varianti noto‘g‘ri.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "203"
+   }
+  },
+  {
+   "question": "Bemordan OIV ga tekshirish uchun qon olinishi kerak. Axloqiy tamoyilga ko‘ra qon olish qaysi shartda mumkin?",
+   "options": [
+    "Bemor ixtiyoriy xabardor rozilik bergan bo‘lsa",
+    "Bemorning yaqinlari rozilik bergan bo‘lsa",
+    "Shifokor tekshiruvni zarur deb topgan bo‘lsa",
+    "Atrofdagilar xavfsizligi buni talab qilsa"
+   ],
+   "correct_index": 0,
+   "explanation": "Manbada OIV/OITS (orttirilgan immunitet tanqisligi sindromi) bilan kasallangan bemordan qon faqat ixtiyoriy xabardor rozilik bilan olinishi, davolash ham bemor roziligi bilan o‘tkazilishi aytilgan. Bu inson huquqlari va Biotibbiyot bo‘yicha Yevropa Kengashida ifodalangan tamoyildir.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "203-204"
+   }
+  },
+  {
+   "question": "Hamshira bemorning OIV tashxisini uning qo‘shnilariga aytib yubordi, natijada atrofdagilar bemorga “moxov”dek qarashdi. Bu hodisa qanday ataladi?",
+   "options": [
+    "Kasallikning siyosiylashuvi",
+    "Xabardor rozilik olish",
+    "Stigmatizatsiya",
+    "Jamoat salomatligi chorasi"
+   ],
+   "correct_index": 2,
+   "explanation": "Manbaga ko‘ra, OITS bilan kasallangan odam boshqalar nazarida “moxov”dek ko‘riladi. Bu stigmatizatsiya bo‘lib, ko‘pincha sog‘liqni saqlash xodimlarining maxfiylik qoidalarini buzishi natijasidir.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "204"
+   }
+  },
+  {
+   "question": "Bemorning jinsiy sherigiga OIV yuqish xavfi haqiqiy, ammo bemor sherigiga xabar berishdan bosh tortmoqda. Shifokorning mos harakati qaysi?",
+   "options": [
+    "Bemorni ogohlantirmay sherikka xabar berish",
+    "Bemorni oldindan ogohlantirib, maxfiylikni buzish",
+    "Maxfiylikni har qanday holatda saqlab qolish",
+    "Bemorni davolashni to‘xtatib qo‘yish"
+   ],
+   "correct_index": 1,
+   "explanation": "Manbada infeksiyaning haqiqiy xavfi bo‘lsa va bemor sherigiga xabar berishdan bosh tortsa, shifokor bemorni oldindan xabardor qilib maxfiylikni buzishi mumkinligi aytilgan. Bu o‘ta chora bo‘lib, avval bemorning o‘zi sherigini xabardor qilishi (terapevtik hamkorlik) afzal ko‘riladi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "204-205"
+   }
+  },
+  {
+   "question": "OIV/OITS epidemiyasi qaysi masalani, ayniqsa, dolzarblashtiradi?",
+   "options": [
+    "Davolash narxi va sug‘urta to‘lovlari nisbati",
+    "Shifokorlar soni va bemorlar soni nisbati",
+    "Shaxsiy huquqlar va jamiyat xavfsizligi nisbati",
+    "Ilmiy tadqiqotlar va amaliy natijalar nisbati"
+   ],
+   "correct_index": 2,
+   "explanation": "Manbaga ko‘ra, OIV/OITS epidemiyasi insonning shaxsiy huquqlari va jamiyat xavfsizligi manfaatlari nisbati muammosini dolzarblashtiradi. Boshqa variantlar bu o‘rinda gap bo‘layotgan masala emas.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "205"
+   }
+  },
+  {
+   "question": "Bemorda OIV bor. Jinsiy sherigiga yuqish xavfi haqiqiy, ammo u sherigiga aytishdan bosh tortmoqda. Manbaga ko‘ra, shifokorga nima ruxsat etiladi?",
+   "options": [
+    "Sherikni oldindan xabardor qilish va maxfiylikni buzish",
+    "Sherikka aytmay, faqat bemorni kuzatib borish xolos",
+    "Ma’lumotni bemorning ish joyiga xabar qilib qo‘yish",
+    "Ma’lumotni bemorning barcha qarindoshlariga yetkazish"
+   ],
+   "correct_index": 0,
+   "explanation": "Yuqish xavfi haqiqiy bo‘lsa va bemor rad etsa, shifokor sherikni oldindan xabardor qilishi, ya’ni maxfiylikni buzishi mumkin. Biroq bu juda katta o‘lchov, shuning uchun avval bemorning o‘zi sherigiga aytishiga erishish afzal.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "204-205"
+   }
+  },
+  {
+   "question": "Qon topshirmoqchi bo‘lgan fuqaro OIVga qanday tartibda tekshiriladi? Bu qonunda qon donorlari uchun nazarda tutilgan.",
+   "options": [
+    "Faqat ixtiyoriy va anonim tartibda",
+    "Faqat g‘ayriixtiyoriy tartibda",
+    "Tekshiruvsiz qon topshirishi mumkin",
+    "Majburiy tartibda tekshiruvdan o‘tadi"
+   ],
+   "correct_index": 3,
+   "explanation": "Qonunga ko‘ra, qon va biologik suyuqliklar donorlari OIVga majburiy tekshiruvdan o‘tadi. Ro‘yxatda homilador ayollar va tibbiyot xodimlari ham bor.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "207"
+   }
+  },
+  {
+   "question": "Tergovchi qarori bilan shaxs o‘z roziligisiz OIVga tekshirilmoqda. Bu qaysi tekshiruv tartibi?",
+   "options": [
+    "Ixtiyoriy tartib (shaxs xohishiga ko‘ra)",
+    "G‘ayriixtiyoriy tartib (qaror asosida)",
+    "Majburiy tartib (ro‘yxat bo‘yicha)",
+    "Anonim tartib (ismi ko‘rsatilmasdan)"
+   ],
+   "correct_index": 1,
+   "explanation": "G‘ayriixtiyoriy tekshiruv shaxsning yoki qonuniy vakilining roziligisiz, surishtiruvchi, tergovchi qarori yoki sud ajrimi asosida o‘tkaziladi. Majburiy tekshiruv esa qonundagi toifalar ro‘yxatiga tegishli.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "207-208"
+   }
+  },
+  {
+   "question": "Shifokorga 16 yoshli o‘smir OIVga tekshirilish uchun keldi. Tekshiruv kimning roziligi bilan o‘tkaziladi?",
+   "options": [
+    "Maktab direktorining roziligi bilan",
+    "Tibbiyot hamshirasining roziligi bilan",
+    "Qonuniy vakillarining roziligi bilan",
+    "Sinf rahbarining roziligi bilan"
+   ],
+   "correct_index": 2,
+   "explanation": "Qonunga ko‘ra, voyaga yetmaganlar va muomalaga layoqatsiz yoki cheklangan shaxslar qonuniy vakillarining roziligi bilan tekshiriladi. Natija ham qonuniy vakillarga beriladi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "206"
+   }
+  },
+  {
+   "question": "16 yoshli Dilnoza OIV (odamning immunitet tanqisligi virusi) yuqtirgan. Qonunga ko‘ra u kasallik bosqichidan qat’i nazar nimaga haqli?",
+   "options": [
+    "Faqat ixtiyoriy tibbiy ko‘rikdan o‘tish huquqiga",
+    "Har oylik ijtimoiy nafaqa va imtiyozlar olishga",
+    "Davlat xizmatiga imtiyozli qabul qilinishga",
+    "Ota-onasi bilan birga ishlash huquqiga"
+   ],
+   "correct_index": 1,
+   "explanation": "18 yoshga to‘lmagan OIV yuqtirganlar kasallik bosqichidan qat’i nazar har oylik ijtimoiy nafaqa va nogiron bolalar uchun imtiyozlar olish huquqiga ega. Boshqa variantlar manbada bunday huquq sifatida keltirilmagan.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "208"
+   }
+  },
+  {
+   "question": "Korxona xodimida OIV aniqlandi, uning kasbi taqiqlangan ro‘yxatda yo‘q. Qonunga ko‘ra rahbarga qaysi harakat YO‘L QO‘YILMAYDI?",
+   "options": [
+    "Xodimning tibbiy sirini qonun asosida saqlash",
+    "Unga tibbiy yordam olishga imkon yaratish",
+    "Uni davolanish uchun maxsus markazga yuborish",
+    "Faqat shu sababli mehnat shartnomasini bekor qilish"
+   ],
+   "correct_index": 3,
+   "explanation": "Qonun OIV bilan yashovchilar bilan mehnat shartnomasini bekor qilishga va ishga qabul qilishni rad etishga yo‘l qo‘ymaydi. Istisno faqat Sog‘liqni saqlash vazirligi ro‘yxatidagi ayrim kasblar uchun.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "209"
+   }
+  },
+  {
+   "question": "Qonunga ko‘ra OIV yuqtirgan shaxslar qaysi faoliyat bilan shug‘ullana olmaydi?",
+   "options": [
+    "Qon va biologik suyuqliklar donori bo‘lish",
+    "Tibbiy yordam muassasasiga murojaat qilish",
+    "Oilasi bilan avvalgi turar joyida yashash",
+    "Davolanishni bepul olishni davom ettirish"
+   ],
+   "correct_index": 0,
+   "explanation": "Qonun OIV yuqtirgan shaxslar huquqlari cheklanadigan holatni belgilaydi: ular qon va biologik suyuqliklar donori bo‘la olmaydi. Qolgan variantlar ularning saqlanadigan huquqlariga kiradi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "209"
+   }
+  },
+  {
+   "question": "OITS (orttirilgan immunitet tanqisligi sindromi) davosida yangi texnologiyalar qo‘llanganda yaxlitlik tamoyili muammosi nima bilan bog‘liq?",
+   "options": [
+    "Dori vositalarining narxi juda yuqori ekani bilan",
+    "Bemorlar sonining tez kamayib borishi bilan",
+    "Soha tibbiyotda kam o‘rganilgan qolayotgani bilan",
+    "Shifokorlarning ilmiy ishlarga qiziqmasligi bilan"
+   ],
+   "correct_index": 2,
+   "explanation": "Muallif muammoni OIV/OITS tibbiyotning kam o‘rganilgan sohasi bo‘lib qolayotgani bilan bog‘laydi. Yangi texnologiyani klinikada qo‘llash jismoniy va ruhiy yaxlitlikka potensial tahdidni oshiradi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "203"
+   }
+  },
+  {
+   "question": "Ayrim mamlakatlarda shifokorlar OIV bilan kasallangan odamlarga yordam berishni ommaviy rad etmoqda. Kitobga ko‘ra rad etishning asosiy sababi nima?",
+   "options": [
+    "Ish haqining pastligi va ish yukining ko‘pligi",
+    "Bemorlarning davolanishga kelmay qo‘yishi",
+    "Tibbiyot xodimlarining shaxsiy xavfsizligi",
+    "Davolash uchun malakaning yetishmasligi"
+   ],
+   "correct_index": 2,
+   "explanation": "Manbaga ko‘ra rad etishning sababi tibbiyot xodimlarining shaxsiy xavfsizligidir. Bu ‘Zarar yetkazma!’ tamoyili nuqtai nazaridan axloqiy muammo, chunki yordam bermaslik ham zarar shaklidir.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "201"
+   }
+  }
+ ],
+ "extras": [
+  {
+   "text": "Eslab qoling: OIV — virus, OITS — sindrom. OIV ribonuklein kislotali (RNK) retrovirus. OITS esa OIV infeksiyasi bosqichlaridan biri, lekin alohida nozologik birlik sifatida ajratiladi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "203"
+   }
+  },
+  {
+   "text": "Hodisa tahlili: ko‘p mamlakatlarda shifokorlar OIV bilan kasallanganlarga yordam berishni ommaviy rad etgan. Sababi shaxsiy xavfsizlikdan qo‘rqish. Yordam bermaslik ham «Zarar yetkazma!» tamoyilini buzadi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "201"
+   }
+  },
+  {
+   "text": "Maxfiylik chegarasi: jinsiy sherikka infeksiya yuqishi xavfi haqiqiy bo‘lib, bemor xabar berishdan bosh tortsa, shifokor maxfiylikni buzishi mumkin. Lekin bu juda katta chora, avval bemorning o‘zi xabar berishi kutiladi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "204-205"
+   }
+  },
+  {
+   "text": "2013-yil 23-sentyabrdagi qonunga ko‘ra majburiy tekshiruvdan donorlar, homilador ayollar, ellik yoshgacha nikohlanuvchilar va qon bilan ishlovchi tibbiyot xodimlari o‘tadi. Ro‘yxatda boshqa guruhlar ham bor.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "206-207"
+   }
+  },
+  {
+   "text": "Taqiqlangan kasblar ro‘yxati (Adliya vazirligi, 2014-yil 7-may) 9 turdagi faoliyatni qamragan. Oldingi ro‘yxatdan farqli, undan tibbiy yordam ko‘rsatish, massaj va kontakt sport olib tashlangan.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "209"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "G‘iyosov Z.A., Indiaminov S.I.",
+   "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+   "year": 2022,
+   "pages": "XVII bob (OIV/OITS), kitob betlari 201-211"
+  }
+ ]
 }

@@ -76,36 +76,25 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Nevropatologiya va sud patologiyasi",
-        "nodes": [],
-        "header": [
-          "Jihat",
-          "Nevropat.",
-          "Sud pat."
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Nevropatologiya",
+            "items": [
+              "Mayda namunalarni batafsil tahlil",
+              "Gistologiya, IGK, sekvenirlash"
+            ]
+          },
+          {
+            "title": "Sud patologiyasi",
+            "items": [
+              "Makroskopik topilma, vaziyat bahosi",
+              "Maqsad: o‘lim sababi va usuli",
+              "Muammo: xolislik, takrorlanuvchanlik"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Yondashuv",
-            "Mayda namunalarni batafsil tahlil",
-            "Makroskopik topilma va vaziyat bahosi"
-          ],
-          [
-            "Usullar",
-            "Gistologiya, immunogistokimyo, sekvenirlash",
-            "Makroskopik ko‘rik"
-          ],
-          [
-            "Maqsad",
-            "—",
-            "O‘lim sababi va usulini aniqlash"
-          ],
-          [
-            "Muammo",
-            "—",
-            "Xolislik, takrorlanuvchanlik shubhasi"
-          ]
-        ]
+        "caption": "Nevropatologiya va sud patologiyasi"
       },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama savollari: 1) Makroskopik topilmaga tayanish qanday xavf tug‘diradi? 2) Ikki fanni birlashtirish nima beradi? Doskada chizish: ikki doira (Venn diagrammasi) chizib, kesishmasiga sud nevropatologiyasini yozing. Tipik xato: sud patologiyasi mikroskopik usullarni umuman qo‘llamaydi deb o‘ylash. Manbada faqat asosiy tayanch usul ko‘rsatilgan. Jadvalda tanqid qatori sud patologiyasiga tegishli."
     },
@@ -230,31 +219,30 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Nashrlar: asosiy ko‘rsatkichlar",
-        "nodes": [],
-        "header": [
-          "Ko‘rsatkich",
-          "Qiymat"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Yiliga maqola soni",
+            "value": "3–17"
+          },
+          {
+            "label": "Evropadan",
+            "value": "39,3 %"
+          },
+          {
+            "label": "Osiyodan",
+            "value": "36,1 %"
+          },
+          {
+            "label": "Sud-tibbiyot jurnallari",
+            "value": "57,4 %"
+          },
+          {
+            "label": "Median impakt-faktor",
+            "value": "2,3"
+          }
         ],
-        "rows": [
-          [
-            "Yiliga maqola soni",
-            "3–17 ta"
-          ],
-          [
-            "Evropadan maqolalar",
-            "39,3%"
-          ],
-          [
-            "Osiyodan maqolalar",
-            "36,1%"
-          ],
-          [
-            "Sud-tibbiyot jurnallari",
-            "57,4%"
-          ]
-        ]
+        "caption": "Nashrlar: asosiy ko‘rsatkichlar"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega sud nevropatologiyasi klinik nevropatologiyadan orqada qolgan (klinikaning translyatsion imkoniyati va klinitsistlar bilan hamkorlik)? 2) Qaysi mintaqalarda tadqiqot yetishmaydi va nega (resurs va siyosat to‘siqlari)? Qo‘shimcha: klinik jurnallar 23,0%, patologiya jurnallari 8,2%, impakt-faktorsiz jurnallar 11,5%. Doskada: jadvaldagi ulushlardan oddiy ustunli diagramma chizing. Tipik xato: Evropa va Osiyo ulushini nashr turlari ulushi bilan aralashtirish; bular boshqa-boshqa taqsimot."
     },
@@ -290,31 +278,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Namuna xususiyatlari (122 ta ish)",
-        "nodes": [],
-        "header": [
-          "Ko‘rsatkich",
-          "Natija"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Median namuna hajmi",
+            "value": "57 shaxs"
+          },
+          {
+            "label": "Nazorat guruhi bor",
+            "value": "43,4 %"
+          },
+          {
+            "label": "Faqat kattalar namunasi",
+            "value": "30,3 %"
+          },
+          {
+            "label": "Yoshi ko‘rsatilmagan",
+            "value": "27,0 %"
+          }
         ],
-        "rows": [
-          [
-            "Median namuna hajmi",
-            "57 ta shaxs"
-          ],
-          [
-            "Nazorat guruhi bor",
-            "43,4%"
-          ],
-          [
-            "Faqat kattalar namunasi",
-            "30,3%"
-          ],
-          [
-            "Yoshi ko‘rsatilmagan",
-            "27,0%"
-          ]
-        ]
+        "caption": "Namuna xususiyatlari (122 ish)"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nazorat guruhisiz xulosa nega cheklangan (taqqoslash ko‘p ilmiy xulosa uchun shart)? 2) Keng yosh oralig‘i qulaymi yoki xavflimi (umumlashtirish oshadi, lekin kichik namunada bir xillik kamayadi)? Qo‘shimcha: kattalar va voyaga yetmaganlar aralash namuna 30,3%, faqat voyaga yetmaganlar 12,3%; quvvat hisobi kam keltirilgan. Doskada: namuna hajmi uchun median va kvartillar oralig‘ini sxematik chizing. Tipik xato: 43,4% ni nazorat guruhi yo‘q ishlar ulushi deb o‘qish; aslida nazorat guruhi borlari ulushi."
     },
@@ -493,6 +476,82 @@
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nazorat guruhi bo‘lmasa qanday xulosa chiqarish mumkin? Namuna hajmini qanday asoslash kerak? Doskada: ‘namuna – nazorat – xulosa’ sxemasini chizdiring. Tipik xato: qiziqarli topilmani darhol tasdiqlangan usul deb qabul qilish."
     },
     {
+      "title": "Kam o‘rganilgan mavzular va kelajak yo‘nalishlari",
+      "bullets": [
+        {
+          "text": "Eng ko‘p o‘rganilgan travmatik intrakranial jarohat bo‘yicha ham jarohat yoshini baholash vositalari hali yetishmaydi; yirik yutuqlar kutilmoqda.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948, Discussion"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Anatomiya tadqiqotlari neyroxirurglar uchun foydali, lekin sud nevropatologiyasiga qo‘shgan hissasi kichik.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948, Discussion"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Moddaga xos markerlarni topish va zaharlanishni boshqa o‘lim sabablaridan ajratish uchun ko‘proq tadqiqot kerak.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948, Discussion"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kam o‘rganilgan: o‘z joniga qasd, asfiksiya, cho‘kish, gipotermiya, gipertermiya, SUDEP va o‘limdan keyingi intervalni baholash.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948, Discussion"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Ko‘proq tadqiqot kerak",
+        "children": [
+          {
+            "label": "Travmatik jarohat",
+            "items": [
+              "Jarohat yoshini baholash vositalari"
+            ]
+          },
+          {
+            "label": "Moddalar suiiste’moli",
+            "items": [
+              "Moddaga xos markerlar",
+              "Zaharlanishni ajratish"
+            ]
+          },
+          {
+            "label": "Neyrodegeneratsiya",
+            "items": [
+              "Tibbiy-huquqiy namunada tasdiqlash"
+            ]
+          },
+          {
+            "label": "Kam o‘rganilgan o‘limlar",
+            "items": [
+              "O‘z joniga qasd, asfiksiya, cho‘kish",
+              "Gipo-/gipertermiya, SUDEP, PMI"
+            ]
+          }
+        ],
+        "caption": "Oura va boshq.: kelajak yo‘nalishlari"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega anatomiya tadqiqotlari sud nevropatologiyasi uchun kamroq ahamiyatli? 2) Qaysi mavzularga ustuvorlik berilishi kerak? Doskaga chizing: mavzu daraxti. Tipik xato: ko‘p o‘rganilgan mavzuni hal etilgan deb hisoblash.",
+      "source_note_removed": null
+    },
+    {
       "title": "Tezkor savol 1: sharh natijalari",
       "bullets": [
         {
@@ -585,11 +644,11 @@
           ],
           [
             "Mumkin sabablar",
-            "Demielinizatsiya, aksonal yo‘qotish, glioz"
+            "Demielinizatsiya, aksonal zarar, glioz"
           ],
           [
             "Klinik bog‘liqlik",
-            "Qarish, qon tomir xavfi, neyrodegeneratsiya"
+            "Qarish, tomir xavfi, neyrodegeneratsiya"
           ]
         ]
       },
@@ -673,31 +732,22 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Nisbiy singdiruvchanlik (permittivity)",
-        "nodes": [],
-        "header": [
-          "Muhit",
-          "Qiymat",
-          "Izoh"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Suv va oddiy agar",
+            "value": "~78"
+          },
+          {
+            "label": "Miya to‘qimasi",
+            "value": "~58"
+          },
+          {
+            "label": "Agar + saxaroza",
+            "value": "68"
+          }
         ],
-        "rows": [
-          [
-            "Suv va oddiy agar",
-            "~78",
-            "Miyadan yuqori"
-          ],
-          [
-            "Miya to‘qimasi",
-            "~58",
-            "Mo‘ljal qiymat"
-          ],
-          [
-            "Agar + saxaroza",
-            "68",
-            "Miyaga yaqinroq"
-          ]
-        ]
+        "caption": "Nisbiy singdiruvchanlik"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega muhit singdiruvchanligi miyaga yaqin bo‘lishi kerak? 2) Agar-saxaroza formalinga nisbatan qanday afzallik beradi (manbada signal-shovqin va kontrast-shovqin nisbati yaxshilanishi aytilgan)? Doskada: uch ustunli ustunli diagramma chizing (78, 68, 58) va farqni ko‘rsating. Tipik xato: 68 ni 58 bilan bir xil deb o‘ylash. Diqqat: 68 ≠ 58, saxaroza qiymatni faqat yaqinlashtiradi."
     },
@@ -779,36 +829,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Konteyner qismlari",
-        "nodes": [],
-        "header": [
-          "Qism",
-          "Vazifa",
-          "Tuzilishi"
+        "kind": "tree",
+        "root": "3D konteyner qismlari",
+        "children": [
+          {
+            "label": "Korpus",
+            "items": [
+              "Deformatsiyadan saqlaydi",
+              "Devor va tub 3 mm"
+            ]
+          },
+          {
+            "label": "Yo‘naltirgich",
+            "items": [
+              "Pichoqni koronal tekislikda ushlaydi",
+              "28 yuqori, 29 pastki ustun"
+            ]
+          },
+          {
+            "label": "Ustunlar",
+            "items": [
+              "Diametr 4 mm",
+              "Oralig‘i 0,6 mm"
+            ]
+          },
+          {
+            "label": "Qopqoq",
+            "items": [
+              "Korpusni yopadi",
+              "Kirish va chiqish teshigi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Korpus",
-            "Skanerlashda deformatsiyadan saqlash",
-            "Devor va tub qalinligi 3 mm"
-          ],
-          [
-            "Yo‘naltirgich",
-            "Pichoqni koronal tekislikda ushlaydi",
-            "28 yuqori, 29 pastki ustun"
-          ],
-          [
-            "Ustunlar",
-            "Pichoq oralig‘iga mo‘ljallangan",
-            "Diametr 4 mm, oralig‘i 0,6 mm"
-          ],
-          [
-            "Qopqoq",
-            "Korpusni yopadi, agar qo‘shishga imkon beradi",
-            "Kirish va chiqish teshigi"
-          ]
-        ]
+        "caption": "Konteyner va yo‘naltirgich"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Ikki teshikli qopqoq nima uchun muhim? 2) Qayta ishlatiladigan yo‘naltirgich har bir miya uchun alohida qolip yasashdan qanday afzal? Doskada: yon tomondan ustunlar va pichoq o‘tadigan oraliqni chizing. Tipik xato: to‘rtta to‘rtburchak burchak ustunini kesish ustuni deb o‘ylash; manbada ular yo‘naltirgichni korpusdan ajratishda tutqich vazifasini bajaradi. Yo‘naltirgich butun miyani qoplamaydi, shuning uchun ayrim joylar qo‘lda kesiladi."
     },
@@ -1004,7 +1057,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. MRI",
+            "text": "Lezyon T1 va T2 tasvirda ko‘rinadi"
+          },
+          {
+            "title": "2. Segmentatsiya",
+            "text": "Chuqur o‘rganish modeli T1 da topadi"
+          },
+          {
+            "title": "3. Maska",
+            "text": "MRT dan blokface suratiga o‘tkaziladi"
+          },
+          {
+            "title": "4. Namuna",
+            "text": "Neyropatolog aniq joydan gistologik namuna oladi"
+          }
+        ],
+        "caption": "Lezyondan namuna olish"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega niqobni MRT dan blokface suratiga o‘tkazish kerak? 2) Nevropatolog modelning qaysi natijasiga tayanadi? Doskada chizing: T1 tasvir → model niqobi → blokface surati → namuna joyi. Tipik xato: blokface ni MRT tasviri deb o‘ylash; u bo‘lak yuzasining fotosurati."
     },
     {
@@ -1073,6 +1147,73 @@
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega qo‘lda kesilgan bo‘laklarni moslashtirish uzoq davom etdi? 2) Muvaffaqiyatli moslashuv qanday tasdiqlandi? Doskada jadvalni chizing va 14+4=18 ni yozing. Tipik xato: moslashtirish vaqtini bitta bo‘lak uchun 30 daqiqa deb o‘ylash; bu 14 bo‘lakning umumiy vaqti."
     },
     {
+      "title": "Sharhning cheklovlari va tadqiqot dizayni",
+      "bullets": [
+        {
+          "text": "Namuna hajmi o‘rtacha bo‘lsa-da, statistik quvvat hisobi kamdan-kam keltirilgan.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948, Discussion"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tadqiqotlarning yarmidan ko‘pida nazorat guruhi yo‘q — ko‘pchilik ish tavsifiy; ilmiy xulosa uchun solishtirma dizayn kerak.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948, Discussion"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yosh oralig‘i keng: umumlashtirish yaxshi, lekin namuna kichik bo‘lsa, guruh bir xil bo‘lmay qoladi; chorak ishda eng kichik va katta yosh yozilmagan.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948, Discussion"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sharh cheklovlari: noodatiy atamali maqolalar tushib qolishi mumkin; faqat original maqolalar olingan; rasmiy xatolik xavfi baholanmagan.",
+          "source": {
+            "author": "Oura P va boshq.",
+            "title": "Forensic neuropathology in the past decade: a scoping literature review, Forensic Science",
+            "page": "PMID 37439948, Limitations"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Namuna va dizayn",
+            "items": [
+              "Median 57 kishi; quvvat hisobi kam",
+              "Yarmidan ko‘pida nazorat yo‘q",
+              "Yosh oralig‘i keng, bir xil emas",
+              "Chorak ishda yosh chegarasi yo‘q"
+            ]
+          },
+          {
+            "title": "Sharh cheklovlari",
+            "items": [
+              "Noodatiy atamali maqolalar tushishi mumkin",
+              "Faqat original maqolalar",
+              "Rasmiy xatolik xavfi baholanmagan",
+              "CNS infeksiyalari, neyrodegeneratsiya yo‘q"
+            ]
+          }
+        ],
+        "caption": "Oura va boshq.: cheklovlar"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega nazorat guruhi muhim? 2) Skoping sharh nega sifat bahosini bermaydi? Doskaga chizing: ikki ustunli ro‘yxat. Tipik xato: skoping sharhni tizimli sharh bilan bir xil deb hisoblash.",
+      "source_note_removed": null
+    },
+    {
       "title": "Usulning afzalliklari va cheklovlari",
       "bullets": [
         {
@@ -1104,36 +1245,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Afzallik va cheklov",
-        "nodes": [],
-        "header": [
-          "Jihat",
-          "Afzallik",
-          "Cheklov"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Afzalliklari",
+            "items": [
+              "Qayta ishlatiladigan komplekt, arzon",
+              "Turli miya o‘lchamiga mos",
+              "Agar muhiti harakat artefaktini kamaytiradi",
+              "Bo‘laklar takrorlanuvchan, bir xil"
+            ]
+          },
+          {
+            "title": "Cheklovlari",
+            "items": [
+              "Bitta komplekt ~42 soat chop etiladi",
+              "Yo‘naltirgich butun miyani qoplamaydi",
+              "Pufakchalar artefakt beradi",
+              "Yo‘nalishni qotishdan oldin rejalash kerak"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Narx",
-            "Qayta ishlatiladigan komplekt, arzon",
-            "Bitta komplekt ~42 soat chop etiladi"
-          ],
-          [
-            "Miya hajmi",
-            "Turli o‘lchamga mos; hech biri chetlatilmadi",
-            "Yo‘naltirgich butun miyani qoplamaydi"
-          ],
-          [
-            "Agar muhiti",
-            "Harakat artefaktlari kamayadi",
-            "Pufakchalar artefakt beradi"
-          ],
-          [
-            "Kesish",
-            "Bo‘laklar takrorlanuvchan, bir xil",
-            "Qotishdan oldin yo‘nalishni rejalash kerak"
-          ]
-        ]
+        "caption": "Usul: afzallik va cheklov"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Qaysi cheklov eng ko‘p vaqt yo‘qotishga olib keladi? 2) Nega agar qotgach miyaning holatini o‘zgartirib bo‘lmaydi? Doskada afzallik va cheklov ustunlarini chizing. Tipik xato: bitta komplektni bir marta ishlatiladi deb o‘ylash; u taxminan 30 miyaga yetadi."
     },
@@ -1184,7 +1317,7 @@
       "title": "Voqea tahlili: pufakchali agar va artefakt",
       "bullets": [
         {
-          "text": "Vaziyat: agarda havo pufakchalari qolgan miya gradient exo (GRE) tasvirida sulkuslar va gippokamp yaqinida artefakt berdi. Savol: sababi nima, qanday kamaytiriladi?",
+          "text": "Vaziyat: agarda qolgan havo pufakchalari GRE tasvirida sulkuslar va gippokamp yaqinida artefakt berdi. Savol: sababi nima, qanday kamaytiriladi?",
           "source": {
             "author": "Nadim Farhat va boshq.",
             "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
@@ -1298,36 +1431,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "ESPR PMMR protokollari",
-        "nodes": [],
-        "header": [
-          "Protokol",
-          "Vaqt",
-          "Tarkib"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Erta versiyalar",
+            "text": "90 daqiqagacha: kundalik ishga juda uzun"
+          },
+          {
+            "title": "ESPR 2021",
+            "text": "30–60 daqiqa: ekspertlar kelishgan standart"
+          },
+          {
+            "title": "Minimal (2025)",
+            "text": "< 30 daqiqa: 3-D T2 va T1, miya va tana"
+          },
+          {
+            "title": "Ideal (2025)",
+            "text": "Ko‘proq vaqt: butun tana 3-D; SWI va DWI"
+          }
         ],
-        "rows": [
-          [
-            "Erta versiyalar",
-            "90 daqiqagacha",
-            "Kundalik ishga juda uzun"
-          ],
-          [
-            "ESPR 2021",
-            "30–60 daqiqa",
-            "Ekspertlar kelishgan standart"
-          ],
-          [
-            "Minimal (2025)",
-            "30 daqiqadan kam",
-            "3-D T2 va T1: miya va tana"
-          ],
-          [
-            "Ideal (2025)",
-            "Ko‘proq vaqt bo‘lganda",
-            "Butun tana 3-D; miyada SWI va DWI"
-          ]
-        ]
+        "caption": "ESPR PMMR protokollari"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega tasvirni tekshiruvdan oldin ko‘rish rejalashtirish va nishonli namuna olish uchun foydali (maqola PMCTni sud-tibbiy patologiyadagi so‘nggi 25 yilning muhim yutug‘i deydi)? 2) Nega 90 daqiqalik protokol kundalik ishga noqulay (skaner band, vaqt cheklangan)? Doskada: to‘rt qatorli vaqt chizig‘ini (1990 → 2021 → 2025) chizing. Tipik xato: minimal va ideal protokollarni aralashtirish. Minimal — 30 daqiqadan kam, 3-D T2/T1; ideal — butun tana va miyada SWI (qon quyilish) hamda DWI (to‘qima tafsiloti) bor. Maqola PMMRga atigi bitta qisqa xatboshi ajratgan, PMCT ko‘proq yoritilgan. Ekspert guruhi kichik bo‘lgan (19 mutaxassis, 17 markaz) va ba’zi qit’alar vakillari yo‘q."
     },
@@ -1466,31 +1589,24 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ikki maneken tajribasi",
-        "nodes": [],
-        "header": [
-          "Ko‘rsatkich",
-          "6 haftalik",
-          "1 yoshli"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "6 haftalik maneken",
+            "items": [
+              "Bosh va tana tezlanishi yuqoriroq",
+              "Jarohat kinematikasiga ko‘proq mos"
+            ]
+          },
+          {
+            "title": "1 yoshli maneken",
+            "items": [
+              "Bosh va tana tezlanishi pastroq",
+              "Jarohat kinematikasiga kamroq mos"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Bosh va tana tezlanishi",
-            "Yuqoriroq",
-            "Pastroq"
-          ],
-          [
-            "Jarohat kinematikasiga mosligi",
-            "Ko‘proq mos",
-            "Kamroq mos"
-          ],
-          [
-            "Datchiklar",
-            "Giroskop, akselerometr",
-            "Xuddi shunday"
-          ]
-        ]
+        "caption": "Giroskop va akselerometr bilan"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega maneken natijasi to‘g‘ridan-to‘g‘ri isbot emas? 2) Nega yosh kichikligi tezlanishga ta’sir qiladi? Doskada: ikki maneken uchun tezlanish farqini ustunli sxema qiling. Tipik xato: model natijasini isbotlangan sabab deb qabul qilish."
     },
@@ -1577,7 +1693,24 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "LETBI: CTE bor miya",
+            "value": "7 / 47 (14,9 %)"
+          },
+          {
+            "label": "IPV, 14 ayol: CTE",
+            "value": "topilmadi"
+          },
+          {
+            "label": "Birinchi aniq IPV-CTE",
+            "value": "2021-yil"
+          }
+        ],
+        "caption": "CTE va oila zo‘ravonligi"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega CTE topilmagan tadqiqot CTE yo‘qligini isbotlamaydi? 2) CTE sudda dalil bo‘lishi uchun nima kerak? Doskada: takroriy TBI → CTE bog‘liqligi va uni buzuvchi omillarni yozing. Tipik xato: yakka TBI va takroriy TBI ni farqlamaslik."
     },
     {
@@ -1658,7 +1791,7 @@
           "uncertain": false
         },
         {
-          "text": "TBI bo‘yicha atigi 6 ta ish bor, hammasi radiologik. CNN (konvolyutsion neyron tarmoq) PMCT (o‘limdan keyingi kompyuter tomografiya)da o‘limga olib kelgan bosh jarohatini ajratgan.",
+          "text": "TBI bo‘yicha atigi 6 ta ish, hammasi radiologik: CNN PMCT da o‘limga olib kelgan bosh jarohatini ajratgan.",
           "source": {
             "author": "Matschke J va boshq.",
             "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
@@ -1667,7 +1800,7 @@
           "uncertain": false
         },
         {
-          "text": "Epilepsiya va o‘smalar bo‘yicha 28 ta ish: AI o‘smalarni yuqori aniqlikda tasniflagan, fokal kortikal displaziyani tuberoz sklerozdan 90% dan yuqori aniqlikda ajratgan.",
+          "text": "Epilepsiya va o‘smalar bo‘yicha 28 ta ish: AI o‘smalarni yuqori aniqlikda tasniflagan, fokal kortikal displaziyani tuberoz sklerozdan >90% aniqlikda ajratgan.",
           "source": {
             "author": "Matschke J va boshq.",
             "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
@@ -1685,7 +1818,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "AI: topilgan ish",
+            "value": "34"
+          },
+          {
+            "label": "TBI bo‘yicha ish",
+            "value": "6"
+          },
+          {
+            "label": "Epilepsiya va o‘sma",
+            "value": "28"
+          },
+          {
+            "label": "Fokal displaziya",
+            "value": "> 90 %"
+          }
+        ],
+        "caption": "Sun’iy intellekt sharhi"
+      },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: AI sud majlisida ob’yektiv dalil bo‘la oladimi? Nega TBI bo‘yicha ishlar kam (6 ta), epilepsiya bo‘yicha ko‘p (28 ta)? Doskada: ikki guruh (TBI va epilepsiya) va ular ostida ishlar sonini chizdiring. Tipik xato: ’AI kundalik amaliyotga kirdi’ deb o‘ylash. Manba aksincha, bu hozircha uzoq maqsad deydi. Qo‘shimcha: PMCT va PRISMA qisqartmalarini talabalar bilan takrorlang."
     },
     {
@@ -1821,7 +1975,7 @@
       "title": "Xulosa: sud nevropatologiyasi texnikasining xususiyatlari",
       "bullets": [
         {
-          "text": "Soha tavsifiy yordamchi fandan integrativ fanga aylanmoqda. Makroskopik topilmalar biomexanika, neyroradiologiya, genetika va bioinformatika bilan birga talqin qilinadi.",
+          "text": "Soha tavsifiy fandan integrativ fanga aylanmoqda: makroskopik topilmalar biomexanika, neyroradiologiya, genetika va bioinformatika bilan birga talqin qilinadi.",
           "source": {
             "author": "Matschke J va boshq.",
             "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
@@ -1830,7 +1984,7 @@
           "uncertain": false
         },
         {
-          "text": "MRI va gistologiyani bog‘lash: 7 Tesla MRI, 3D bosma kesish yo‘naltirgichlari va MRI–blokface moslashuvi oq modda o‘choqlaridan nishonli namuna olishga imkon beradi.",
+          "text": "MRI va gistologiyani bog‘lash: 7 Tesla MRI, 3D bosma yo‘naltirgich va MRI–blokface moslashuvi oq modda o‘choqlaridan nishonli namuna olishga imkon beradi.",
           "source": {
             "author": "Nadim Farhat va boshq.",
             "title": "Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions, Journal of Neuroimaging",
@@ -1848,7 +2002,7 @@
           "uncertain": false
         },
         {
-          "text": "Keyingi qadamlar: sud patologlari, neyroradiologlar va bioinjenerlar hamkorligi, yetarli namuna hajmi, nazorat guruhlari va prospektiv klinikopatologik korrelyatsiya.",
+          "text": "Keyingi qadamlar: sud patolog, neyroradiolog va bioinjenerlar hamkorligi, yetarli namuna hajmi, nazorat guruhlari, prospektiv klinikopatologik korrelyatsiya.",
           "source": {
             "author": "Matschke J va boshq.",
             "title": "Forensic neuropathology: 2026 update, Free Neuropathology",
@@ -1866,11 +2020,11 @@
       "question": "Miya to‘qimasining mayda namunalari gistopatologiya va immunogistokimyo bilan tahlil qilindi. Bu yondashuv qaysi fanning asosiy xususiyati?",
       "options": [
         "Sud patologiyasining makroskopik topilmalarga tayanuvchi yondashuvi",
-        "Nevropatologiyaning mikroskopik to‘qima tahliliga tayanuvchi yondashuvi",
+        "Shaxsni aniqlashning genetik ekspertizaga tayanuvchi yondashuvi",
         "Sud psixiatriyasining klinik suhbatga tayanuvchi yondashuvi",
-        "Shaxsni aniqlashning genetik ekspertizaga tayanuvchi yondashuvi"
+        "Nevropatologiyaning mikroskopik to‘qima tahliliga tayanuvchi yondashuvi"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Nevropatologiya mayda to‘qima namunalarini gistopatologiya, immunogistokimyo kabi usullar bilan batafsil tahlil qiladi. Sud patologiyasi esa o‘lim sababi va usulini asosan makroskopik topilmalar hamda holatga asoslangan xulosa bilan aniqlaydi.",
       "source": {
         "author": "Matschke J va boshq.",
@@ -1929,12 +2083,12 @@
     {
       "question": "Tadqiqotchi kichik namunada yangi to‘qima belgisini topdi, lekin nazorat guruhi yo‘q. Sharh mualliflari nuqtai nazaridan qaysi xulosa to‘g‘ri?",
       "options": [
-        "Natija yakuniy hisoblanadi va darhol amaliyotga joriy qilinadi",
         "Natija dastlabki, tasdiqlash uchun yetarli hajm va nazorat guruhi kerak",
+        "Natija yakuniy hisoblanadi va darhol amaliyotga joriy qilinadi",
         "Tavsifiy ish eng kuchli dalil bo‘lgani uchun natija to‘liq ishonchli",
         "Yosh oralig‘i keng bo‘lgani uchun natija barcha guruhlarga mos"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Sharhda ko‘p yangi topilmalar dastlabki xarakterda ekani va tasdiqlanishi kerakligi aytilgan. Maqolalarning yarmidan ko‘pi nazorat guruhisiz, ya’ni tavsifiy bo‘lgan. Mualliflar yetarli namuna hajmi va taqqoslash dizaynidan foydalanishni tavsiya qiladi.",
       "source": {
         "author": "Oura P va boshq.",

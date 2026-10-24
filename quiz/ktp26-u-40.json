@@ -1,0 +1,586 @@
+{
+ "topic_id": "ktp26-u-40",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Immunohistokimyoviy tekshiruvning asosiy tamoyillari",
+  "ru": "Immunohistokimyoviy tekshiruvning asosiy tamoyillari",
+  "en": "Immunohistokimyoviy tekshiruvning asosiy tamoyillari"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "ktp26-u-40-q01",
+   "question_i18n": {
+    "uz": "Gematoksilin-eozin bo‘yash bilan o‘smaning to‘qima manbasini aniqlab bo‘lmadi: hujayralar morfologik jihatdan differensiatsiyalanmagan. IHK (immunohistokimyo)ning qaysi qo‘llanish sohasi aynan shu holatga mos keladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kesma qalinligini standartlashtirish ishi",
+     "O‘smaning gistogenetik tashxisini qo‘yish",
+     "Parafin blokni uzoq muddat saqlash ishi",
+     "Fiksatsiya vaqtini soatlarda hisoblash"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "IHK ning asosiy qo‘llanish sohalaridan biri morfologik jihatdan differensiatsiyalanmagan neoplaziyalarning gistogenetik tashxisidir. Boshqa variantlar texnik jarayonlarga tegishli bo‘lib, tashxis vazifasini bajarmaydi."
+   },
+   "source": {
+    "author": "de Matos et al.",
+    "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+    "page": "PMID 20212918"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-40-q02",
+   "question_i18n": {
+    "uz": "Laboratoriyada floressent mikroskop yo‘q, faqat oddiy yorug‘lik mikroskopi bor. Qaysi kashfiyot IHK reaksiyasini aynan shunday mikroskopda ko‘rishga imkon berdi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Coons: floresseinli antitanalar va UB nuri",
+     "Marrack: qizil bo‘yoqli reagentni qo‘llash",
+     "Sternberger: PAP usulining kashf etilishi",
+     "Nakane: fermentlar bilan belgilangan antitana"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Nakane fermentlar bilan belgilangan antitanalarni kiritdi. Shu tufayli reaksiyani oddiy optik mikroskopda ko‘rish mumkin bo‘ldi va usul floressent mikroskopli laboratoriyalardan tashqariga tarqaldi. Coons usuli ultrabinafsha nuri va floressent mikroskopni talab qilardi."
+   },
+   "source": {
+    "author": "de Matos et al.",
+    "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+    "page": "PMID 20212918"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-40-q03",
+   "question_i18n": {
+    "uz": "Laboratoriya texnigi IHK reaksiyasida antigenni ochish (antigen retrieval) bosqichini tugatdi. Manbadagi tartibga ko‘ra, keyingi bosqich qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Nospetsifik joylarni bloklash bosqichi",
+     "Birlamchi antitana bilan inkubatsiya",
+     "Qarshi bo‘yash (counterstaining) bosqichi",
+     "Slaydni muhrlash va saqlash bosqichi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Reaksiya tartibi: antigenni ochish, nospetsifik joylarni bloklash, endogen peroksidazani bloklash, birlamchi antitana bilan inkubatsiya, so‘ng detektsiya, ochish va qarshi bo‘yash, slaydni muhrlash va saqlash."
+   },
+   "source": {
+    "author": "de Matos et al.",
+    "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+    "page": "PMID 20212918"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-40-q04",
+   "question_i18n": {
+    "uz": "Peroksidaza reaksiyasi uchun hozir eng ko‘p ishlatiladigan xromogen qaysi? U elektron mikroskopiyada ishlatiladigan elektronzich cho‘kma hosil qilib, ferritin o‘rnini ham bosadi."
+   },
+   "options_i18n": {
+    "uz": [
+     "Kolloid oltin zarrachalari",
+     "Ferritin oqsili molekulasi",
+     "Diaminobenzidin (DAB) molekulasi",
+     "Fluorestsein bo‘yog‘i"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Diaminobenzidin (DAB) peroksidaza uchun hozir eng ko‘p ishlatiladigan xromogendir. U elektronzich cho‘kma hosil qiladi va elektron mikroskopiyada ferritin o‘rnini bosdi. Kolloid oltin esa subhujayraviy immunobo‘yash usuliga olib keldi."
+   },
+   "source": {
+    "author": "de Matos et al.",
+    "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+    "page": "PMID 20212918"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-40-q05",
+   "question_i18n": {
+    "uz": "Werner tadqiqotida 3760 namunaning 64% i tashxis maqsadida o‘rganilgan (835 holat). Shu toifada IHK necha foiz holatda aniq tashxisga hissa qo‘shdi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "64% holatda",
+     "12% holatda",
+     "95% holatda",
+     "83% holatda"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "835 ta tashxis holatining 83% ida IHK aniq tashxisga yordam berdi. 64% bu tashxis maqsadidagi holatlar ulushi, 12% aniqlanmagan tashxislar kamayishi, 95% esa umumiy foydali holatlar ulushidir."
+   },
+   "source": {
+    "author": "de Matos et al.",
+    "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+    "page": "PMID 20212918"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-40-q06",
+   "question_i18n": {
+    "uz": "FOXO3a tadqiqotida IHK baholash shkalasida 4 ball nimani bildiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "100% bo‘yalish",
+     "25% bo‘yalish",
+     "50% bo‘yalish",
+     "Bo‘yalish yo‘q"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Shkala 0 dan +4 gacha: 0 — bo‘yalish yo‘q, 1 — 25%, 2 — 50%, 3 — 75%, 4 — 100% bo‘yalish."
+   },
+   "source": {
+    "author": "Maiese et al.",
+    "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+    "page": "PMID 36768906, 4.3 Quantitative Analysis"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-40-q07",
+   "question_i18n": {
+    "uz": "Laborant parafin blokdan 9 μm qalinlikdagi kesma tayyorladi. Manbaga ko‘ra eng ehtimoliy muammo qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Immunobo‘yalish juda zaif chiqadi",
+     "Antigenlar to‘liq parchalanib ketadi",
+     "Antikor kesmaga umuman kira olmaydi",
+     "To‘qima shishadan ko‘chib, tahlil qiyinlashadi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Kesma qalinligi 3–7 μm bo‘lishi kerak. 3 μm dan yupqa kesmada immunobo‘yalish juda zaif bo‘ladi. 7 μm dan qalin kesmada to‘qima shishadan ko‘chishi yoki bo‘yalishni tahlil qilish qiyinlashishi mumkin."
+   },
+   "source": {
+    "author": "de Matos et al.",
+    "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+    "page": "PMID 20212918"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-40-q08",
+   "question_i18n": {
+    "uz": "Patolog faqat bitta antigen epitopiga qaratilgan, aniqroq (spetsifik) natija beradigan birlamchi antikor tanlamoqchi. Qaysi tur mos keladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Monoklonal antikor (gibridalardan olinadi)",
+     "Poliklonal antikor (hayvon immunizatsiyasi)",
+     "Poliklonal va monoklonal aralashmasi",
+     "Faqat nishonlanmagan ikkilamchi antikor"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Monoklonal antikorlar gibridalardan olinadi va antigenning faqat bitta epitopini taniydi, shuning uchun natija spetsifikroq. Poliklonal antikorlar ko‘p epitopni taniydi va sezgirligi yuqoriroq bo‘ladi."
+   },
+   "source": {
+    "author": "de Matos et al.",
+    "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+    "page": "PMID 20212918"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-40-q09",
+   "question_i18n": {
+    "uz": "Formalinda fiksatsiyalangan tuxumdon o‘smasi kesmasida sitokeratin yaxshi ochilishi uchun tripsin ishlatildi. Bu qaysi markerni aniqlashga zarar yetkazadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Sitokeratin markeri",
+     "Xromogranin markeri",
+     "Vimentin markeri",
+     "Sinaptofizin markeri"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Alves va hamkasblari ishida formalinda fiksatsiyalangan kesmada tripsin sitokeratin reaksiyasini yaxshilagan, lekin vimentinni aniqlashga zarar yetkazgan. Spirtda fiksatsiyalangan kesmalarda esa ikkala marker yaxshiroq reaksiya bergan."
+   },
+   "source": {
+    "author": "de Matos et al.",
+    "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+    "page": "PMID 20212918"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-40-q10",
+   "question_i18n": {
+    "uz": "Prescott va hamkasblari immunohistokimyodagi diagnostik nomuvofiqliklarning 42,1 foizini qaysi sababga bog‘lagan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kesmaning juda qalin kesilishi",
+     "Antikorlarni yomon tanlash",
+     "Parafinning yuqori harorati",
+     "Formalinda uzoq saqlash"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Manbada diagnostik nomuvofiqliklarning 42,1 foizi antikorlarni yomon tanlash bilan bog‘langan. Antikor panelini tanlash va har bir holatdagi reaksiya naqshini sharhlash yakuniy tashxis uchun eng muhim omillardan biri hisoblanadi."
+   },
+   "source": {
+    "author": "de Matos et al.",
+    "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+    "page": "PMID 20212918"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-40-q11",
+   "question_i18n": {
+    "uz": "Laborant o‘sma yonidagi sut yo‘llarini estrogen va progesteron retseptorlari uchun tekshirmoqda. Bu yo‘llar qanday nazorat vazifasini bajaradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Tashqi musbat nazorat vazifasini",
+     "Ichki musbat nazorat vazifasini",
+     "Ichki manfiy nazorat vazifasini",
+     "Tashqi manfiy nazorat vazifasini"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Shu preparatning o‘zida joylashgan va marker uchun ma’lum musbat tuzilmalar ichki musbat nazorat bo‘ladi. Misol: o‘smaga qo‘shni sut yo‘llari estrogen va progesteron retseptorlari uchun. Tashqi nazorat esa alohida to‘qima kesmasi bo‘lib, har panelga qo‘shiladi."
+   },
+   "source": {
+    "author": "de Matos et al.",
+    "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+    "page": "PMID 20212918, Limitations bo‘limi (nazorat haqida)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-40-q12",
+   "question_i18n": {
+    "uz": "Patolog tekshiruv uchun antitana panelini va klonini noto‘g‘ri tanladi. Bu xato qaysi toifaga kiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Reaksiya xatosi: namunani fiksatsiya qilish",
+     "Reaksiya xatosi: antigenni ochish bosqichi",
+     "Reaksiya xatosi: aniqlash tizimini tanlash",
+     "Talqin xatosi: panel va klonni tanlash"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Manbada xatolar ikki guruhga bo‘linadi. Reaksiya xatosiga fiksatsiya, to‘qimani qayta ishlash, antigenni ochish va aniqlash tizimi kiradi. Talqin xatosiga antitana panelini, uning sezgirligini, antitana turi va klonini tanlash kiradi."
+   },
+   "source": {
+    "author": "de Matos et al.",
+    "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+    "page": "PMID 20212918, Limitations bo‘limi (reaksiya va talqin xatolari)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-40-q13",
+   "question_i18n": {
+    "uz": "Fransiya patologiya jamiyati sifat nazorati qo‘mitasining 1997-yilgi hisobotiga ko‘ra, immunogistokimyoda diagnostik xatolarning asosiy sabablaridan biri qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Antigenni ochish usullarini qo‘llamaslik",
+     "Parafin bloklarini 10 yildan ortiq saqlash",
+     "Kesmalarni 5 mkm qalinlikda tayyorlash",
+     "Kuchli kuchaytirish usullarini qo‘llash"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Hisobotda ikki asosiy sabab ko‘rsatilgan: antigenni ochish usullarining qo‘llanmasligi va kuchsiz kuchaytirish usullaridan foydalanish. Kuchli kuchaytirish xato sababi emas, aksincha kuchsizi xato beradi."
+   },
+   "source": {
+    "author": "de Matos et al.",
+    "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+    "page": "PMID 20212918, Limitations bo‘limi (sifat nazorati dasturlari)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-40-q14",
+   "question_i18n": {
+    "uz": "Yangi olingan namuna tasodifan uzoq muddat fiksatsiyada qoldi, reaksiya esa kutilganidan ancha zaif chiqdi. Eng ehtimoliy sabab qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Antitana monoklonal turda bo‘lgani",
+     "Kesma qalinligi 5 mkm bo‘lgani",
+     "Antigenlikning sezilarli yo‘qolishi",
+     "Preparatda ichki nazorat bo‘lmagani"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Yangi namunalar uzoq fiksatsiyaga tushib qolsa, antigenlikni sezilarli yo‘qotishi mumkin. Formaldegid ham ba’zi epitoplarni niqoblaydi yoki shikastlaydi. 3–7 mkm qalinlik esa me’yoriy oraliq hisoblanadi."
+   },
+   "source": {
+    "author": "de Matos et al.",
+    "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+    "page": "PMID 20212918, Limitations bo‘limi (texnik xatolar)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-40-q15",
+   "question_i18n": {
+    "uz": "Ko‘krak bezi saratonida HER2 oqsili bo‘yalishi faqat sitoplazmada ko‘rindi. Qaysi bo‘yalish joylashuvi gen amplifikatsiyasi bilan bog‘liq deb ma’lum?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat yadrodagi bo‘yalish holati",
+     "Faqat sitoplazmadagi bo‘yalish holati",
+     "Faqat hujayra membranasidagi bo‘yalish",
+     "Faqat hujayralararo matriksdagi bo‘yalish"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Ayrim ishlarda faqat sitoplazmatik bo‘yalish ham musbat hisoblangan. Biroq molekulyar usullar bo‘yicha gen amplifikatsiyasi faqat hujayra membranasi bo‘yalgan holatlar bilan bog‘liq. Shuning uchun bo‘yalish joylashuvini hisobga olish kerak."
+   },
+   "source": {
+    "author": "de Matos et al.",
+    "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+    "page": "PMID 20212918, Interpretation of Immunohistochemistry Expression bo‘limi (HER2 misoli)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-40-q16",
+   "question_i18n": {
+    "uz": "Laboratoriya ELISA (fermentga bog‘langan immunosorbent tahlil) reagentlarini paraffin blokdagi kesmada sinadi. Muallif fikricha, IHK mohiyatan nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "IHK — to‘qima kesmasida o‘tkaziladigan immunologik sinov",
+     "IHK — faqat sifat jihatidan baholanadigan oddiy bo‘yash",
+     "IHK — ELISAdan farqli, miqdoriy bo‘la olmaydigan usul",
+     "IHK — faqat floressent mikroskopda ko‘rinadigan reaksiya"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Muallif IHKni to‘qima kesmalarida joyida o‘tkaziladigan immunologik sinov deb hisoblaydi. Bo‘yalish natijasi ELISA natijasiga o‘xshaydi, ikkalasida bir xil reagentlar ishlatilishi mumkin. Shu sababli IHK shunchaki «bo‘yash» emas, miqdoriy natija ham berishi mumkin."
+   },
+   "source": {
+    "author": "de Matos et al.",
+    "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+    "page": "PMID 20212918"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-40-q17",
+   "question_i18n": {
+    "uz": "Patolog bo‘yalish intensivligini «yo‘q, kuchsiz, o‘rtacha, kuchli» toifalariga ajratib baholadi. Manbaga ko‘ra bu yondashuv qanday?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Eng aniq va natijalari takrorlanuvchan usul hisoblanadi",
+     "Tadqiqotchi tajribasiga bog‘liq, shu sababli mos emas",
+     "Faqat avtomatik bo‘yash qo‘llanganda ishlatiladi",
+     "Ki67 hisoblash uchun majburiy baholash tartibi sanaladi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Intensivlikni null, kuchsiz, o‘rtacha va kuchli toifalarga ajratish sub’ektiv ball hisoblanadi. U tadqiqotchi tajribasiga ko‘p bog‘liq, shuning uchun mos emas deb baholanadi."
+   },
+   "source": {
+    "author": "de Matos et al.",
+    "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+    "page": "PMID 20212918"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-40-q18",
+   "question_i18n": {
+    "uz": "Bir nechta kuzatuvchi bir xil kesmalarni qo‘lda ballab baholadi, natijalar mos kelmadi. Manbaga ko‘ra qaysi yechim afzal?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ballarni qisqartirib, kesmani «bir qarash» bilan baholash",
+     "Kesma qalinligini 7 mkm dan oshirib, signalni kuchaytirish",
+     "Kompyuter yordamida tasvir tahlilini qo‘llab, miqdoriy natija olish",
+     "Birlamchi antitanani almashtirib, boshqa klonga o‘tish"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Nazorat ostidagi sharoitda kompyuter yordamida tasvir tahlili ko‘p kuzatuvchi qo‘lda baholashidan ustun bo‘lgan. U yarim miqdoriy ballarning takrorlanuvchanligi muammosiga yechim bo‘ladi."
+   },
+   "source": {
+    "author": "de Matos et al.",
+    "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+    "page": "PMID 20212918"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-40-q19",
+   "question_i18n": {
+    "uz": "Faollashgan FOXO3a yadroda qaysi juft molekula ifodasini oshirib, apoptozni kuchaytiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "FLIP va AKT molekulalari ifodasini",
+     "AMPK va JNK2 molekulalari ifodasini",
+     "ERK va calpain molekulalari ifodasini",
+     "BIM va PUMA molekulalari ifodasini"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "FOXO3a yadroda proapoptotik BIM va PUMA genlarini faollashtiradi. Antiapoptotik FLIP genini esa susaytiradi, shuning uchun FLIP to‘g‘ri javob emas. Ikkala yo‘l ham hujayra o‘limini kuchaytiradi."
+   },
+   "source": {
+    "author": "Maiese et al.",
+    "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+    "page": "PMID 36768906"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-40-q20",
+   "question_i18n": {
+    "uz": "Bosh miya jarohatidan so‘ng bir necha soat yashagan shaxsning miya namunasi FOXO3a bilan tekshirildi. Qanday natija kutiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Nazoratda kuchli ijobiy, jarohatli miyada manfiy bo‘yalish",
+     "Jarohat yaqinida ijobiy, yashash uzaysa bo‘yalish kuchayadi",
+     "Barcha namunada bir xil ijobiy, vaqtga bog‘liq bo‘lmaydi",
+     "Faqat 24 soatdan keyin ijobiy, undan oldin manfiy bo‘ladi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Barcha 15 ta jarohat holatida jarohat yonidagi neyronlarda FOXO3a ijobiy chiqdi. Nazorat namunalari manfiy edi. Omon qolish vaqti uzaygan sari ijobiylik kuchaydi (tadqiqotda maksimum 6 soat)."
+   },
+   "source": {
+    "author": "Maiese et al.",
+    "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+    "page": "PMID 36768906"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "de Matos et al.",
+   "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights"
+  },
+  {
+   "author": "Maiese et al.",
+   "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences"
+  }
+ ]
+}

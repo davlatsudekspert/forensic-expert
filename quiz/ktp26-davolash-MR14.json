@@ -1,0 +1,586 @@
+{
+ "topic_id": "ktp26-davolash-MR14",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "OIV infeksiyasining sud-gistologik diagnostikasi",
+  "ru": "OIV infeksiyasining sud-gistologik diagnostikasi",
+  "en": "OIV infeksiyasining sud-gistologik diagnostikasi"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "ktp26-davolash-MR14-q01",
+   "question_i18n": {
+    "uz": "Braziliya tadqiqotida (Silva va boshq.) tahlilga nechta autopsiya kiritilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "34",
+     "1785",
+     "299",
+     "284"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Tahlilga 284 ta OITS autopsiyasi kiritilgan."
+   },
+   "source": {
+    "author": "Silva et al.",
+    "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+    "page": "3-bo‘lim (Results)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-MR14-q02",
+   "question_i18n": {
+    "uz": "Braziliya tadqiqotida MNSda eng ko‘p uchragan infeksiya qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kriptokokkoz",
+     "Sitomegalovirus",
+     "Toksoplazmoz",
+     "OIV ensefaliti"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Toksoplazmoz 85 (29,9%) holatda."
+   },
+   "source": {
+    "author": "Silva et al.",
+    "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+    "page": "3.1-bo‘lim (Results)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-MR14-q03",
+   "question_i18n": {
+    "uz": "C guruh bemorlarining o‘rtacha yashash davomiyligi qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "11,2 oy",
+     "25,8 oy",
+     "49,1 oy",
+     "4 oy"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "C guruhda 49,1 oy; A guruhda 11,2 oy."
+   },
+   "source": {
+    "author": "Silva et al.",
+    "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+    "page": "3.2-bo‘lim (Results)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-MR14-q04",
+   "question_i18n": {
+    "uz": "Goldmanning 1-tur nomuvofiqligi nimani bildiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ahamiyatsiz kasallik aniqlanmagan",
+     "Klinik tashxis to‘g‘ri bo‘lgan",
+     "Muhim kasallik aniqlanmagan, prognoz o‘zgarmas edi",
+     "Muhim kasallik aniqlanmagan, aniqlansa prognoz o‘zgarishi mumkin edi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "1-turda aniqlansa prognoz o‘zgarishi mumkin edi."
+   },
+   "source": {
+    "author": "Silva et al.",
+    "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+    "page": "2-bo‘lim (Material and Methods)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-MR14-q05",
+   "question_i18n": {
+    "uz": "Braziliya tadqiqotida MNS gistologiyasi uchun qalinlik qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1 μm",
+     "50 μm",
+     "5 μm",
+     "2 mm"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Parafin kesmalari 5 μm qalinlikda tayyorlangan."
+   },
+   "source": {
+    "author": "Silva et al.",
+    "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+    "page": "2-bo‘lim (Material and Methods)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-MR14-q06",
+   "question_i18n": {
+    "uz": "Qaysi hujayralar MNSda OIV infeksiyasi uchun «patognomonik» deb hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Gemosiderofaglar",
+     "Plazmatik hujayralar",
+     "Ko‘pikli hujayralar",
+     "Ko‘p yadroli gigant hujayralar"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Manbada ko‘p yadroli gigant hujayralar MNSda OIV infeksiyasi uchun patognomonik deb hisoblanishi aytilgan."
+   },
+   "source": {
+    "author": "Silva et al.",
+    "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+    "page": "1-bo‘lim (Introduction)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-MR14-q07",
+   "question_i18n": {
+    "uz": "Janubiy Afrika tadqiqotida nechta MIA o‘tkazilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "16",
+     "60",
+     "34",
+     "3022"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "34 ta MIA o‘tkazilgan."
+   },
+   "source": {
+    "author": "Karat et al.",
+    "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+    "page": "Abstract"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-MR14-q08",
+   "question_i18n": {
+    "uz": "Marhumlarning nechta foizida TB belgilari topilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "12%",
+     "88%",
+     "68%",
+     "47%"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "16/34 (47%) da TB belgilari topilgan."
+   },
+   "source": {
+    "author": "Karat et al.",
+    "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+    "page": "Results — Tuberculosis"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-MR14-q09",
+   "question_i18n": {
+    "uz": "Qaysi namuna mikobakteriya ekmasida eng ko‘p musbat natija bergan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Siydik",
+     "Jigar to‘qimasi",
+     "BAL",
+     "Taloq to‘qimasi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "BALdan 7 ta musbat ekma olingan, boshqalardan kamroq."
+   },
+   "source": {
+    "author": "Karat et al.",
+    "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+    "page": "Results — Tuberculosis"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-MR14-q10",
+   "question_i18n": {
+    "uz": "Gistologiyada mikobakteriyalar uchun qaysi bo‘yash qo‘llangan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Grocott",
+     "Luxol Fast Blue",
+     "Gram",
+     "Ziehl—Neelsen"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "ZN mikobakteriyalar, Grocott zamburug‘lar uchun ishlatilgan."
+   },
+   "source": {
+    "author": "Karat et al.",
+    "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+    "page": "Methods — Laboratory procedures"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-MR14-q11",
+   "question_i18n": {
+    "uz": "Silva tadqiqotida 284 ta autopsiyaning nechtasida MNSning muhim o‘zgarishlari aniqlangan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "103",
+     "165",
+     "284",
+     "16"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "284 tadan 165 (58,1%) holatda MNSning muhim o‘zgarishlari aniqlangan."
+   },
+   "source": {
+    "author": "Silva et al.",
+    "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+    "page": "3.1-bo‘lim (Results)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-MR14-q12",
+   "question_i18n": {
+    "uz": "Silva tadqiqotida A guruhning o‘rtacha yashash davomiyligi qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "11,2 oy",
+     "25,8 oy",
+     "49,1 oy",
+     "3 oy"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "O‘rtacha yashash davomiyligi: A guruhda 11,2, B guruhda 25,8, C guruhda 49,1 oy."
+   },
+   "source": {
+    "author": "Silva et al.",
+    "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+    "page": "3.2-bo‘lim (Results)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-MR14-q13",
+   "question_i18n": {
+    "uz": "Goldmanning 2-tur nomuvofiqligi nimani bildiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Muhim kasallik aniqlanmagan, ammo aniqlansa ham prognoz o‘zgarmas edi",
+     "Ahamiyatsiz kasallik aniqlanmagan",
+     "Prognoz o‘zgarar edi",
+     "To‘g‘ri tashxis"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "2-tur: muhim kasallik aniqlanmagan, ammo aniqlansa ham prognoz o‘zgarmas edi."
+   },
+   "source": {
+    "author": "Silva et al.",
+    "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+    "page": "2-bo‘lim (Material and Methods)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-MR14-q14",
+   "question_i18n": {
+    "uz": "Epstein—Barr virusi tekshirilgan limfomalarning nechtasida topilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Birortasida ham",
+     "Barcha 3 holatda",
+     "Faqat bittasida",
+     "Yarmida"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Epstein—Barr virusi tekshirilgan barcha 3 holatda limfomada topilgan."
+   },
+   "source": {
+    "author": "Silva et al.",
+    "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+    "page": "3.1-bo‘lim (Results)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-MR14-q15",
+   "question_i18n": {
+    "uz": "Braziliya tadqiqotida 1-tur nomuvofiqlik 1996 yildan keyin qanchaga kamaygan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "62,2% dan 48,8% ga",
+     "10% dan 5% ga",
+     "Ortgan",
+     "O‘zgarmagan"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "1-tur xato 1996 yilgacha 62,2% (23/37), keyin 48,8% (26/54) ga kamaygan — anatomoklinik majlislar hisobiga."
+   },
+   "source": {
+    "author": "Silva et al.",
+    "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+    "page": "3.3-bo‘lim (Results)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-MR14-q16",
+   "question_i18n": {
+    "uz": "MIA uchun biopsiya qaysi organlardan olingan (Karat)?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat o‘pka",
+     "Jigar, taloq, o‘ng va chap o‘pka",
+     "Miya va yurak",
+     "Buyrak va oshqozon"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Biopsiya to‘rt organdan: jigar, taloq, o‘ng va chap o‘pka; bir joydan kamida beshta ~2 sm namuna."
+   },
+   "source": {
+    "author": "Karat et al.",
+    "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+    "page": "Methods — Autopsy procedures"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-MR14-q17",
+   "question_i18n": {
+    "uz": "Karat tadqiqotida sil (TB) belgisi aniqlangan marhumlarning qancha qismida ekstrapulmonal sil topilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "14/16 (88%)",
+     "2/16",
+     "16/34",
+     "1/16"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "16/34 (47%) marhumda TB belgilari topilgan; 14/16 (88%) da ekstrapulmonal sil."
+   },
+   "source": {
+    "author": "Karat et al.",
+    "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+    "page": "Results — Tuberculosis"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-MR14-q18",
+   "question_i18n": {
+    "uz": "Karat tadqiqotida artefakt hisoblangan mikroorganizmlar qaysilar?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Mycobacterium tuberculosis",
+     "Enterococcus, Enterobacter, E. coli, Proteus, Bacillus va b.",
+     "Cryptococcus",
+     "Pneumocystis"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Enterococcus, Enterobacter, E. coli, Proteus, Bacillus, koagulaza-manfiy stafilokokklar va Viridans streptokokklar artefakt hisoblangan."
+   },
+   "source": {
+    "author": "Karat et al.",
+    "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+    "page": "Methods — Data interpretation"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-MR14-q19",
+   "question_i18n": {
+    "uz": "Karat tadqiqotida MIA o‘limdan keyin median qancha vaqtda o‘tkazilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "5 kun",
+     "5 soat",
+     "30 kun",
+     "1 yil"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "O‘limdan MIAgacha median vaqt besh kun; 33/34 (97%) 10 kun ichida o‘tkazilgan."
+   },
+   "source": {
+    "author": "Karat et al.",
+    "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+    "page": "Results — Consent, demographics, and samples obtained"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-MR14-q20",
+   "question_i18n": {
+    "uz": "TB tashxisi uchun eng yuqori natijani qaysi namunalar bergan (Karat)?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Siydik",
+     "Respirator namunalar (BAL va o‘pka to‘qimasi)",
+     "Jigar",
+     "Qon"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Respirator namunalar (BAL va o‘pka to‘qimasi) TB tashxisi uchun eng yuqori natija beradi."
+   },
+   "source": {
+    "author": "Karat et al.",
+    "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+    "page": "Discussion — MIA in surveillance"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Silva et al.",
+   "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment"
+  },
+  {
+   "author": "Karat et al.",
+   "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE"
+  }
+ ]
+}

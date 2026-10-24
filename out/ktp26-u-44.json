@@ -119,31 +119,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Zaharlanish turlari",
-        "nodes": [],
-        "header": [
-          "Turi",
-          "Qasd",
-          "Uchrashi"
+        "kind": "tree",
+        "root": "Zaharlanish turlari",
+        "children": [
+          {
+            "label": "Baxtsiz hodisa",
+            "items": [
+              "Tasodifan",
+              "Aksariyat holatlar"
+            ]
+          },
+          {
+            "label": "O‘z-o‘zini o‘ldirish",
+            "items": [
+              "Qasddan",
+              "Ikkinchi o‘rinda"
+            ]
+          },
+          {
+            "label": "Qotillik",
+            "items": [
+              "Qasddan",
+              "Kamdan-kam holatlarda"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Baxtsiz hodisa",
-            "Tasodifan",
-            "Aksariyat holatlar"
-          ],
-          [
-            "O‘z-o‘zini o‘ldirish",
-            "Qasddan",
-            "Ikkinchi o‘rinda"
-          ],
-          [
-            "Qotillik",
-            "Qasddan",
-            "Kamdan-kam holatlarda"
-          ]
-        ]
+        "caption": "Zaharlanish turlari"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Yatrogen zaharlanish qaysi turga kiradi va nima uchun? 2) Zaharlash yo‘li bilan qotillik nega kam uchraydi deb o‘ylaysiz? Doskada: jadvalni ko‘chirib, har turga bittadan misol yozing. Tipik xato: yatrogen zaharlanishni qasddan sodir etilgan deb hisoblash; u tasodifiy xatodir."
     },
@@ -300,7 +301,7 @@
           "uncertain": false
         },
         {
-          "text": "Giyohvand moddalarda tolerantlik bilan birga ruhiy va jismoniy bog‘liqlik shakllanadi. Shu sabab moddani takror va ko‘proq miqdorda qabul qilishga intilish paydo bo‘ladi.",
+          "text": "Giyohvand moddalarda tolerantlik bilan birga ruhiy va jismoniy bog‘liqlik shakllanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -309,7 +310,16 @@
           "uncertain": false
         },
         {
-          "text": "Ruhiy bog‘liqlik — yengib bo‘lmas intilish. Jismoniy bog‘liqlik — tolerantlik tufayli dozani oshirish zarurati. Qabul to‘xtatilsa, abstinensiya sindromi paydo bo‘ladi.",
+          "text": "Shu sabab moddani takror va ko‘proq miqdorda qabul qilishga intilish paydo bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "134"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ruhiy bog‘liqlik — yengib bo‘lmas intilish. Jismoniy bog‘liqlik — tolerantlik tufayli dozani oshirish zarurati.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -318,8 +328,29 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Tolerantlik nima uchun dozani oshirishga olib keladi? 2) Narkomaniya va toksikomaniyada abstinensiya qanday ifodalanadi? Doskada chizish: ‘takroriy qabul → tolerantlik → dozani oshirish → bog‘liqlik → to‘xtatsa abstinensiya’ zanjirini chizing. Tipik xato: tolerantlikni bog‘liqlik bilan aralashtirish. Tolerantlik ≠ bog‘liqlik: tolerantlik dori ta’siriga o‘rganish, bog‘liqlik esa moddani qabul qilishga yengib bo‘lmas intilishdir."
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Tolerantlik",
+            "text": "Takror ta’sirda organizm o‘rganadi"
+          },
+          {
+            "title": "Takror va ko‘p qabul",
+            "text": "Moddaga intilish paydo bo‘ladi"
+          },
+          {
+            "title": "Ruhiy bog‘liqlik",
+            "text": "Yengib bo‘lmas intilish"
+          },
+          {
+            "title": "Jismoniy bog‘liqlik",
+            "text": "Dozani oshirish zarurati"
+          }
+        ],
+        "caption": "Tolerantlik va bog‘liqlik"
+      },
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Tolerantlik nima uchun dozani oshirishga olib keladi? 2) Narkomaniya va toksikomaniyada abstinensiya qanday ifodalanadi? Doskada chizish: ‘takroriy qabul → tolerantlik → dozani oshirish → bog‘liqlik → to‘xtatsa abstinensiya’ zanjirini chizing. Tipik xato: tolerantlikni bog‘liqlik bilan aralashtirish. Tolerantlik ≠ bog‘liqlik: tolerantlik dori ta’siriga o‘rganish, bog‘liqlik esa moddani qabul qilishga yengib bo‘lmas intilishdir. Qabul to‘xtatilsa, abstinensiya sindromi paydo bo‘ladi."
     },
     {
       "title": "Zaharning kirish yo‘li va tashqi sharoit",
@@ -334,7 +365,7 @@
           "uncertain": false
         },
         {
-          "text": "Suvda ham, yog‘da ham erimaydigan moddalar faqat mahalliy ta’sir qilishi mumkin. Yog‘da yaxshi eriydigan moddalar (masalan, fosfororganik birikmalar) sog‘lom teri orqali ham so‘riladi.",
+          "text": "Suvda ham, yog‘da ham erimaydigan moddalar faqat mahalliy ta’sir qilishi mumkin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -343,7 +374,16 @@
           "uncertain": false
         },
         {
-          "text": "Nafas yo‘llari, to‘g‘ri ichak va qin shilliq qavatidan so‘rilgan moddalar jigardan o‘tmaydi. Shuning uchun ular oshqozon-ichakdan so‘rilganlarga qaraganda kuchliroq ta’sir qiladi.",
+          "text": "Yog‘da yaxshi eriydigan moddalar (masalan, fosfororganik birikmalar) sog‘lom teri orqali ham so‘riladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "134-135"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nafas yo‘llari, to‘g‘ri ichak va qin shilliq qavatidan so‘rilgan moddalar jigardan o‘tmaydi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -352,7 +392,7 @@
           "uncertain": false
         },
         {
-          "text": "Yopiq, issiq va nam muhit alkogol va is gazi bilan zaharlanishga moyillik yaratadi. Ochiq, sovuq va quruqroq muhit ta’sirni susaytiradi. Vodorod sulfid esa cheklangan muhitda (kanalizatsiya quduqlari) xavfli.",
+          "text": "Shuning uchun ular oshqozon-ichakdan so‘rilganlarga qaraganda kuchliroq ta’sir qiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -361,8 +401,45 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Nega fosfororganik birikmalar sog‘lom teri orqali ham zaharlaydi? 2) Nafas yo‘li orqali kirgan zahar nega jigardan o‘tmaydi va bu nimaga olib keladi? Doskada chizish: kirish yo‘llarini ‘oshqozon-ichak → jigar’ va ‘nafas yo‘li/to‘g‘ri ichak → jigarsiz’ ikki yo‘nalishda chizing. Tipik xato: barcha moddalar teri orqali so‘riladi deb o‘ylash. Diqqat: faqat yog‘da yaxshi eriydigan moddalar so‘riladi. Suvda ham, yog‘da ham erimaydigan moddalar mahalliy ta’sir qiladi."
+      "diagram": {
+        "kind": "tree",
+        "root": "Kirish yo‘li",
+        "children": [
+          {
+            "label": "Teri",
+            "items": [
+              "Yog‘da eriydi: so‘riladi"
+            ]
+          },
+          {
+            "label": "Og‘iz",
+            "items": [
+              "Oshqozon-ichakdan so‘riladi"
+            ]
+          },
+          {
+            "label": "Nafas yo‘llari",
+            "items": [
+              "Jigardan o‘tmaydi",
+              "Kuchliroq ta’sir"
+            ]
+          },
+          {
+            "label": "To‘g‘ri ichak, qin",
+            "items": [
+              "Jigardan o‘tmaydi"
+            ]
+          },
+          {
+            "label": "In’eksiya",
+            "items": [
+              "Qonga to‘g‘ridan-to‘g‘ri"
+            ]
+          }
+        ],
+        "caption": "Zahar kirish yo‘llari"
+      },
+      "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Nega fosfororganik birikmalar sog‘lom teri orqali ham zaharlaydi? 2) Nafas yo‘li orqali kirgan zahar nega jigardan o‘tmaydi va bu nimaga olib keladi? Doskada chizish: kirish yo‘llarini ‘oshqozon-ichak → jigar’ va ‘nafas yo‘li/to‘g‘ri ichak → jigarsiz’ ikki yo‘nalishda chizing. Tipik xato: barcha moddalar teri orqali so‘riladi deb o‘ylash. Diqqat: faqat yog‘da yaxshi eriydigan moddalar so‘riladi. Suvda ham, yog‘da ham erimaydigan moddalar mahalliy ta’sir qiladi. Vodorod sulfid esa cheklangan muhitda (kanalizatsiya quduqlari) xavfli. Yopiq, issiq va nam muhit alkogol va is gazi bilan zaharlanishga moyillik yaratadi. Ochiq, sovuq va quruqroq muhit ta’sirni susaytiradi."
     },
     {
       "title": "Voqea tahlili: zaharlanish omillari",
@@ -527,31 +604,36 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Rang va hid belgilari",
-        "nodes": [],
-        "header": [
-          "Zahar",
-          "Asosiy belgi"
+        "kind": "tree",
+        "root": "Murdadagi belgilar",
+        "children": [
+          {
+            "label": "Is gazi",
+            "items": [
+              "Murda dog‘lari pushti"
+            ]
+          },
+          {
+            "label": "Sianidlar",
+            "items": [
+              "Dog‘lar yorqin olcha rang",
+              "Achchiq bodom hidi"
+            ]
+          },
+          {
+            "label": "Metgemoglobin zaharlari",
+            "items": [
+              "Dog‘lar jigar rang, qo‘ng‘ir"
+            ]
+          },
+          {
+            "label": "Sirka kislotasi",
+            "items": [
+              "Ichki a’zolardan o‘tkir hid"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Is gazi",
-            "Murda dog‘lari pushti tusda"
-          ],
-          [
-            "Sianidlar",
-            "Dog‘lar yorqin olcha rang; achchiq bodom hidi"
-          ],
-          [
-            "Metgemoglobin hosil qiluvchilar",
-            "Dog‘lar jigar rang, qo‘ng‘ir tusda"
-          ],
-          [
-            "Sirka kislotasi",
-            "Ichki a’zolardan o‘tkir spetsifik hid"
-          ]
-        ]
+        "caption": "Rang va hid belgilari"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: nega bir xil rang belgisi yolg‘iz o‘zi yetarli emas? Mushak qotishi tezligi qaysi zaharlarni ajratishga yordam beradi? Doskada: jadvalni ko‘chirib, har bir qatorga bittadan zahar nomini qo‘shing. Tipik xato: is gazi (pushti) bilan sianid (olcha rang) dog‘larini aralashtirish. Ularni o‘zaro farqlang."
     },
@@ -707,36 +789,40 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Zaharlar guruhlari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Misollar",
-          "Ta’sir"
+        "kind": "tree",
+        "root": "Zaharlar guruhlari",
+        "children": [
+          {
+            "label": "Mahalliy",
+            "items": [
+              "Kislota, ishqor, yod tindirmasi",
+              "Kontakt joyida nekroz"
+            ]
+          },
+          {
+            "label": "Destruktiv",
+            "items": [
+              "Simob, qo‘rg‘oshin, margimush",
+              "Fosfor",
+              "Ichki a’zolarda to‘qima buzilishi"
+            ]
+          },
+          {
+            "label": "Gemotrop (qon)",
+            "items": [
+              "Is gazi, metgemoglobin hosil qiluvchi",
+              "Qon xossalariga ta’sir"
+            ]
+          },
+          {
+            "label": "Funksional",
+            "items": [
+              "Sianid, spirt, strixnin, opiat",
+              "Nerv faoliyati buzilishi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Mahalliy",
-            "Kislota, ishqor, yod tindirmasi",
-            "Kontakt joyida nekroz"
-          ],
-          [
-            "Destruktiv",
-            "Simob, qo‘rg‘oshin, margimush, fosfor",
-            "Ichki a’zolarda to‘qima buzilishi"
-          ],
-          [
-            "Gemotrop (qon)",
-            "Is gazi, metgemoglobin hosil qiluvchilar",
-            "Qon xossalariga ta’sir"
-          ],
-          [
-            "Funksional",
-            "Sianid, spirt, strixnin, opiatlar",
-            "Nerv faoliyatining buzilishi"
-          ]
-        ]
+        "caption": "Popov tasnifi"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: mahalliy va rezorbtiv zahar farqi nimada? Nega funksional zaharlarda murdada xos o‘zgarish kam bo‘lishi mumkin? Doskada: tasnif daraxtini chizdiring (2 ta asosiy guruh, rezorbtiv ostida 3 tarmoq). Tipik xato: kislota va ishqorni umumiy ta’sir etuvchi deb o‘ylash. Jadval mazmuni 138-140-betlardagi 6.1-jadvaldan qisqartirib tuzilgan."
     },
@@ -744,7 +830,7 @@
       "title": "O‘yuvchi moddalar: kislotalar",
       "bullets": [
         {
-          "text": "Sud-tibbiy amaliyotda sirka kislotasi bilan zaharlanish ko‘p uchraydi, aksariyat o‘z-o‘zini o‘ldirish usuli sifatida. Boshqa kislotalar kam, odatda baxtsiz hodisa.",
+          "text": "Sud-tibbiy amaliyotda sirka kislotasi bilan zaharlanish ko‘p uchraydi, aksariyat o‘z-o‘zini o‘ldirish usuli sifatida.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -753,7 +839,25 @@
           "uncertain": false
         },
         {
-          "text": "Kislotaning erkin vodorod ionlari to‘qimani suvsizlantirib, oqsilni ivitadi. Natijada koagulyasion (quruq) nekroz va zich, quruq qo‘ng‘ir-qora strup hosil bo‘ladi.",
+          "text": "Boshqa kislotalar kam, odatda baxtsiz hodisa.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "140"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kislotaning erkin vodorod ionlari to‘qimani suvsizlantirib, oqsilni ivitadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "140-141"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Natijada koagulyasion (quruq) nekroz va zich, quruq qo‘ng‘ir-qora strup hosil bo‘ladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -769,19 +873,10 @@
             "page": "141"
           },
           "uncertain": false
-        },
-        {
-          "text": "Murdada og‘iz atrofida pergament zichlikdagi sarg‘ish-kulrang-qo‘ng‘ir oqmalar bo‘ladi. Sulfatda oshqozon shilliq qavati qo‘ng‘ir-qora, nitratda sarg‘imtir.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "141"
-          },
-          "uncertain": false
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 10 daq. Muhokama: kislota tarkibi (konsentratsiya) nega letal dozani belgilaydi? Sirka kislotasida mahalliy ta’sirdan tashqari qaysi rezorbtiv ta’sir kuchli (gemolitik, 142-bet)? Doskada: kislota ta’sir zanjirini chizing: vodorod ioni – suvsizlanish – oqsil ivishi – quruq nekroz – strup. Tipik xato: sirka essensiyasi bilan 3% sirka eritmasini bir xil deb hisoblash."
+      "teacher_notes": "Vaqt: 10 daq. Muhokama: kislota tarkibi (konsentratsiya) nega letal dozani belgilaydi? Sirka kislotasida mahalliy ta’sirdan tashqari qaysi rezorbtiv ta’sir kuchli (gemolitik, 142-bet)? Doskada: kislota ta’sir zanjirini chizing: vodorod ioni – suvsizlanish – oqsil ivishi – quruq nekroz – strup. Tipik xato: sirka essensiyasi bilan 3% sirka eritmasini bir xil deb hisoblash. Murdada og‘iz atrofida pergament zichlikdagi sarg‘ish-kulrang-qo‘ng‘ir oqmalar bo‘ladi. Sulfatda oshqozon shilliq qavati qo‘ng‘ir-qora, nitratda sarg‘imtir."
     },
     {
       "title": "Ishqorlar va boshqa o‘yuvchi moddalar",
@@ -815,36 +910,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Boshqa o‘yuvchi moddalar",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "Murdadagi belgi",
-          "Izoh"
+        "kind": "tree",
+        "root": "Boshqa o‘yuvchilar",
+        "children": [
+          {
+            "label": "Formalin (37–40%)",
+            "items": [
+              "O‘zgarmagan, fiksatsiyalangan shilliq",
+              "Ichki a’zolarda xos hid"
+            ]
+          },
+          {
+            "label": "Kaliy permanganat",
+            "items": [
+              "Jigarrang-qizg‘ish strup",
+              "15–20 g o‘limga olib keladi"
+            ]
+          },
+          {
+            "label": "Vodorod peroksid",
+            "items": [
+              "Oqimtir, gaz pufakli, ko‘piklangan",
+              "33% pergidrol: 100 ml o‘lim mumkin"
+            ]
+          },
+          {
+            "label": "Yod preparatlari",
+            "items": [
+              "Qo‘ng‘ir strup",
+              "Qonga so‘rilsa: kollaps, o‘pka shishi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Formalin (37–40%)",
-            "Shilliq qavat o‘zgarmagan, fiksatsiyalangan",
-            "Ichki a’zolarda xos hid"
-          ],
-          [
-            "Kaliy permanganat",
-            "Jigarrang-qizg‘ish strup",
-            "15–20 g o‘limga olib keladi"
-          ],
-          [
-            "Vodorod peroksid",
-            "Oqimtir, gaz pufakli, ko‘piklangan",
-            "33% pergidrol: 100 ml o‘lim mumkin"
-          ],
-          [
-            "Yod preparatlari",
-            "Qo‘ng‘ir rangli strup",
-            "Qonga so‘rilsa: kollaps, o‘pka shishi"
-          ]
-        ]
+        "caption": "Boshqa o‘yuvchi moddalar"
       },
       "teacher_notes": "Vaqt: 10 daq. Muhokama: nega ishqor bilan kuyganda jarohat yumshoq va sirpanuvchan bo‘ladi, qon esa ivimaydi? Formalinda shilliq qavat nega o‘zgarishsiz ko‘rinadi? Doskada: kislota va ishqor ustunlarini yonma-yon chizib, nekroz turi, konsistensiya va rang farqini yozdiring. Tipik xato: formalin zaharlanishida shilliq qavat albatta kuygan bo‘ladi deb o‘ylash. Jadval manbasi: G‘iyosov, 144–145-betlar (formaldegid, permanganat, peroksid, yod); ishqor ma’lumoti 142–143-betlarda."
     },
@@ -852,7 +950,16 @@
       "title": "Destruktiv zaharlar: simob va qo‘rg‘oshin",
       "bullets": [
         {
-          "text": "Sulema (simob dixlorid) suvda yaxshi eriydi. U to‘qima oqsillari bilan albuminatlar hosil qiladi. Ichilganda og‘izda kuyish, qon bilan qusish, keyin buyrak yetishmovchiligi rivojlanadi.",
+          "text": "Sulema (simob dixlorid) suvda yaxshi eriydi. U to‘qima oqsillari bilan albuminatlar hosil qiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "145"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ichilganda og‘izda kuyish, qon bilan qusish, keyin buyrak yetishmovchiligi rivojlanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -879,7 +986,7 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat, xato xavfi: qo‘rg‘oshinda simobdan farqli ichak va buyrak kuchsizroq zararlanadi. Nerv tizimi (talvasa, falaj) jiddiyroq shikastlanadi va kamqonlik rivojlanadi.",
+          "text": "Diqqat, xato xavfi: qo‘rg‘oshinda simobdan farqli ichak va buyrak kuchsizroq zararlanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -889,13 +996,13 @@
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nega sulema va organik simobning klinikasi har xil? 2) Qo‘rg‘oshin simobdan nimasi bilan farqlanadi? Doskada: sulema, organik simob va qo‘rg‘oshinni ‘asosiy zararlanadigan a’zo’ bo‘yicha uch ustunga yozing. Tipik xato: organik simobda ham stomatit va og‘ir buyrak zararlanishi bo‘ladi deb o‘ylash."
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nega sulema va organik simobning klinikasi har xil? 2) Qo‘rg‘oshin simobdan nimasi bilan farqlanadi? Doskada: sulema, organik simob va qo‘rg‘oshinni ‘asosiy zararlanadigan a’zo’ bo‘yicha uch ustunga yozing. Tipik xato: organik simobda ham stomatit va og‘ir buyrak zararlanishi bo‘ladi deb o‘ylash. Nerv tizimi (talvasa, falaj) jiddiyroq shikastlanadi va kamqonlik rivojlanadi."
     },
     {
       "title": "Margimush va talliy bilan zaharlanish",
       "bullets": [
         {
-          "text": "Toza margimush suvda va yog‘da erimaydi, havoda oksidlanganda zaharli birikmalar hosil bo‘ladi. Uch valentli birikmalar besh valentlilarga qaraganda zaharliroq. Letal doza 0,1-0,2 g.",
+          "text": "Toza margimush suvda va yog‘da erimaydi, havoda oksidlanganda zaharli birikmalar hosil bo‘ladi. Uch valentli birikmalar besh valentlilarga qaraganda zaharliroq.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -904,7 +1011,25 @@
           "uncertain": false
         },
         {
-          "text": "Oshqozon-ichak turi og‘iz orqali kirganda rivojlanadi: metall ta’mi, qusish, vabosimon ich ketishi. Paralitik tur katta dozada yoki parenteral yuborilganda bo‘ladi, ensefalopatiya va koma bilan kechadi.",
+          "text": "Letal doza 0,1-0,2 g.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "148"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oshqozon-ichak turi og‘iz orqali kirganda rivojlanadi: metall ta’mi, qusish, vabosimon ich ketishi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "148-149"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Paralitik tur katta dozada yoki parenteral yuborilganda bo‘ladi, ensefalopatiya va koma bilan kechadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -920,25 +1045,16 @@
             "page": "149"
           },
           "uncertain": false
-        },
-        {
-          "text": "Talliy tuzlari osh tuziga o‘xshaydi. Gastroenterit, ataksiya, soch to‘kilishi va og‘riqli polineyropatiya kuzatiladi. Qotillik maqsadida ishlatilgan holatlar ham bo‘lgan.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "147-148"
-          },
-          "uncertain": false
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nega margimushni murdada yillar o‘tib ham aniqlash mumkin? 2) Oshqozon-ichak va paralitik turni qanday farqlaysiz? Doskada: ikki turning belgilarini yonma-yon yozing. Tipik xato: toza margimushni zaharli deb o‘ylash, aslida zaharli bo‘lgani oksidlangan birikmalaridir."
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nega margimushni murdada yillar o‘tib ham aniqlash mumkin? 2) Oshqozon-ichak va paralitik turni qanday farqlaysiz? Doskada: ikki turning belgilarini yonma-yon yozing. Tipik xato: toza margimushni zaharli deb o‘ylash, aslida zaharli bo‘lgani oksidlangan birikmalaridir. Qotillik maqsadida ishlatilgan holatlar ham bo‘lgan. Talliy tuzlari osh tuziga o‘xshaydi. Gastroenterit, ataksiya, soch to‘kilishi va og‘riqli polineyropatiya kuzatiladi."
     },
     {
       "title": "Voqea tahlili: og‘ir metall",
       "bullets": [
         {
-          "text": "O‘quv vaziyati: fermer oilasi granozan bilan ishlov berilgan donning unini iste’mol qilgan. Oylar o‘tgach birining ozishi, og‘izda metall ta’mi, qo‘l tremori va uyqusizligi boshlangan.",
+          "text": "O‘quv vaziyati: fermer oilasi granozan bilan ishlov berilgan donning unini iste’mol qilgan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -947,7 +1063,25 @@
           "uncertain": false
         },
         {
-          "text": "Savol: nega bunday holatda diagnoz xato qo‘yilishi mumkin? Og‘ir metallar bilan zaharlanishni aniqlash qiyinchilik tug‘dirishi va diagnostik xatolarga olib kelishi mumkin.",
+          "text": "Oylar o‘tgach birining ozishi, og‘izda metall ta’mi, qo‘l tremori va uyqusizligi boshlangan.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "146"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: nega bunday holatda diagnoz xato qo‘yilishi mumkin?",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "148"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Og‘ir metallar bilan zaharlanishni aniqlash qiyinchilik tug‘dirishi va diagnostik xatolarga olib kelishi mumkin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -963,19 +1097,10 @@
             "page": "148"
           },
           "uncertain": false
-        },
-        {
-          "text": "Simob miyada, suyakda va buyrakda to‘planadi. Shuning uchun murdani bir necha o‘n yildan keyin tekshirganda ham zaharni topish mumkin.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "147"
-          },
-          "uncertain": false
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: 1) Anamnezda nimalarni so‘rash kerak (ish joyi, ovqat, ishlov berilgan don)? 2) Qaysi namunalar toksikologik tekshiruvga olinadi? Doskada: ‘anamnez - klinika - morfologiya - toksikologiya’ zanjirini chizing. Tipik xato: faqat klinik belgilarga tayanib, toksikologik tekshiruvni qoldirish. Eslatma: vaziyat manbadagi ma’lumotlardan tuzilgan o‘quv misoli."
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: 1) Anamnezda nimalarni so‘rash kerak (ish joyi, ovqat, ishlov berilgan don)? 2) Qaysi namunalar toksikologik tekshiruvga olinadi? Doskada: ‘anamnez - klinika - morfologiya - toksikologiya’ zanjirini chizing. Tipik xato: faqat klinik belgilarga tayanib, toksikologik tekshiruvni qoldirish. Eslatma: vaziyat manbadagi ma’lumotlardan tuzilgan o‘quv misoli. Simob miyada, suyakda va buyrakda to‘planadi. Shuning uchun murdani bir necha o‘n yildan keyin tekshirganda ham zaharni topish mumkin."
     },
     {
       "title": "Qon zaharlari: is gazi",
@@ -1009,31 +1134,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Is gazi qonini aniqlash sinamalari",
-        "nodes": [],
-        "header": [
-          "Sinama",
-          "Normal qon",
-          "Is gazi qoni"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Normal qon",
+            "items": [
+              "Goppe-Zeyler (ishqor): qo‘ng‘ir-qora",
+              "Libman (formaldegid): qo‘ng‘ir-qora",
+              "Spektr: bitta yo‘lak"
+            ]
+          },
+          {
+            "title": "Is gazi qoni",
+            "items": [
+              "Goppe-Zeyler (ishqor): rang o‘zgarmaydi",
+              "Libman (formaldegid): rang o‘zgarmaydi",
+              "Spektr: ikkita yo‘lak saqlanadi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Goppe-Zeyler (ishqor)",
-            "Qo‘ng‘ir-qora tusga kiradi",
-            "Rangi o‘zgarmaydi"
-          ],
-          [
-            "Libman (formaldegid)",
-            "Qo‘ng‘ir-qora tusga kiradi",
-            "Rangi o‘zgarmaydi"
-          ],
-          [
-            "Spektroskopiya",
-            "Gidrosulfitdan so‘ng bitta yo‘lak",
-            "Ikkita yutish yo‘lagi saqlanadi"
-          ]
-        ]
+        "caption": "Is gazi qonini aniqlash sinamalari"
       },
       "teacher_notes": "Vaqt: 10 daqiqa. Muhokama: 1) Nega is gazi bilan zaharlanishda qonda kislorod bo‘lsa ham gipoksiya rivojlanadi (karboksigemoglobin kislorod tashimaydi, sitoxrom va mioglobin ham zararlanadi)? 2) Nega qon namunasini imkon qadar erta olish kerak (o‘lim tez bo‘lsa yoki jabrlanuvchi toza havoda bo‘lgan bo‘lsa, natija past yoki manfiy bo‘lishi mumkin)? Doskada: jadvalni chizing va ikki ustun rangini taqqoslang. Manbadagi chegaralar: dastlabki belgilar karboksigemoglobin 25-30% dan oshganda; 60% dan oshsa nafas markazi falaji; havoda 1% dan ortiq bo‘lsa yashinsimon shakl. Diqqat: karboksigemoglobin (pushti-qizg‘ish) ≠ metgemoglobin (qo‘ng‘ir). Tipik xato: sinamada qon rangi o‘zgarmasa, uni normal qon deb o‘ylash."
     },
@@ -1041,7 +1161,16 @@
       "title": "Metgemoglobin hosil qiluvchi zaharlar",
       "bullets": [
         {
-          "text": "Guruhga nitrat va nitritlar, nitrobenzol, anilin, Bertole tuzi, gidroxinon kiradi. Nitratlar ichakda nitritga aylangachgina ta’sir qiladi, shu sabab nitritdan kuchsizroq.",
+          "text": "Guruhga nitrat va nitritlar, nitrobenzol, anilin, Bertole tuzi, gidroxinon kiradi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "152"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nitratlar ichakda nitritga aylangachgina ta’sir qiladi, shu sabab nitritdan kuchsizroq.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1077,7 +1206,31 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "MetHb: dastlabki belgi",
+            "value": "> 30",
+            "unit": "%"
+          },
+          {
+            "label": "MetHb: o‘lim",
+            "value": "> 70",
+            "unit": "%"
+          },
+          {
+            "label": "MetHb aniqlanishi",
+            "value": "5–6",
+            "unit": "kun"
+          },
+          {
+            "label": "1–2 kundan so‘ng",
+            "value": "topilmasligi mumkin"
+          }
+        ],
+        "caption": "Metgemoglobin ko‘rsatkichlari"
+      },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Nega nitratlar nitritlarga qaraganda kuchsizroq zahar (ichak mikroflorasi nitritga aylantirishi kerak)? 2) Nega 2-kundan keyingi o‘limda qonda metgemoglobin topilmasligi mumkin, ekspert nimaga tayanadi (voqea tafsiloti, klinika, morfologiya)? Doskada: 30% va 70% chegaralarini raqamli o‘q ustida belgilang. Qo‘shimcha: dastlabki kunda o‘lim o‘tkir gemik gipoksiyadan, keyingi kunlarda o‘tkir buyrak yetishmovchiligidan; nitrobenzolda achchiq bodom hidi, anilinda aromatik hid keladi. Tipik xato: karboksigemoglobin (pushti) va metgemoglobin (qo‘ng‘ir) ranglarini aralashtirish; nitrobenzol hidini faqat sianidga xos deb o‘ylash."
     },
     {
@@ -1127,7 +1280,16 @@
       "title": "Vodorod sulfid va fosfororganik birikmalar",
       "bullets": [
         {
-          "text": "Vodorod sulfid – chirigan tuxum hidli gaz. Havodan og‘ir bo‘lgani uchun shaxta va kanalizatsiya o‘ralarida to‘planadi. Zaharlanish odatda baxtsiz hodisa bo‘ladi.",
+          "text": "Vodorod sulfid – chirigan tuxum hidli gaz. Havodan og‘ir bo‘lgani uchun shaxta va kanalizatsiya o‘ralarida to‘planadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "154"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zaharlanish odatda baxtsiz hodisa bo‘ladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1145,7 +1307,7 @@
           "uncertain": false
         },
         {
-          "text": "Fosfororganik birikmalar (FOB) xolinesteraza fermentini so‘ndiradi. Natijada to‘qimalarda atsetilxolin to‘planib, xolinergik tizim qo‘zg‘aladi. Mahalliy ta’siri kuchsiz.",
+          "text": "Fosfororganik birikmalar (FOB) xolinesteraza fermentini so‘ndiradi. Natijada to‘qimalarda atsetilxolin to‘planib, xolinergik tizim qo‘zg‘aladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1154,17 +1316,17 @@
           "uncertain": false
         },
         {
-          "text": "Murdada qorachiqlar torayadi (mioz), nafas yo‘llarida shilliq ko‘p, mushak qotishi tez. Kech o‘limda FOB topilmasligi mumkin, xolinesteraza faolligi esa past bo‘ladi.",
+          "text": "Mahalliy ta’siri kuchsiz.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "156"
+            "page": "155"
           },
           "uncertain": false
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Vodorod sulfid va sianid ta’sir mexanizmida qanday umumiylik bor? 2) O‘lim kech sodir bo‘lsa, nega FOB topilmasligi mumkin, xolinesteraza faolligi esa nimani ko‘rsatadi? Doskada chizing: FOB → xolinesteraza ↓ → atsetilxolin ↑ → mioz, bronxospazm, bradikardiya. Tipik xato: gaz yo‘q joyda ham xolinesteraza pasayishini faqat ‘mioz’ bilan almashtirish yoki vodorod sulfid hidini sianid hidi (achchiq bodom) bilan adashtirish. Diqqat: vodorod sulfid – chirigan tuxum hidi, sianid – achchiq bodom hidi."
+      "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Vodorod sulfid va sianid ta’sir mexanizmida qanday umumiylik bor? 2) O‘lim kech sodir bo‘lsa, nega FOB topilmasligi mumkin, xolinesteraza faolligi esa nimani ko‘rsatadi? Doskada chizing: FOB → xolinesteraza ↓ → atsetilxolin ↑ → mioz, bronxospazm, bradikardiya. Tipik xato: gaz yo‘q joyda ham xolinesteraza pasayishini faqat ‘mioz’ bilan almashtirish yoki vodorod sulfid hidini sianid hidi (achchiq bodom) bilan adashtirish. Diqqat: vodorod sulfid – chirigan tuxum hidi, sianid – achchiq bodom hidi. Kech o‘limda FOB topilmasligi mumkin, xolinesteraza faolligi esa past bo‘ladi. Murdada qorachiqlar torayadi (mioz), nafas yo‘llarida shilliq ko‘p, mushak qotishi tez."
     },
     {
       "title": "Etil spirti: toksikokinetika va diagnostika",
@@ -1198,31 +1360,31 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Qon va siydikda spirt dinamikasi",
-        "nodes": [],
-        "header": [
-          "Davr",
-          "Qon",
-          "Siydik"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Rezorbsiya",
+            "items": [
+              "Qon: balandroq, ko‘tarilmoqda",
+              "Siydik: qondan pastroq"
+            ]
+          },
+          {
+            "title": "Eliminatsiya",
+            "items": [
+              "Qon: pasaya boshlaydi",
+              "Siydik: baland"
+            ]
+          },
+          {
+            "title": "Takroriy qabul",
+            "items": [
+              "Qon: yana oshadi",
+              "Siydik: baland qoladi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Rezorbsiya",
-            "Balandroq, ko‘tarilib boradi",
-            "Qondan pastroq"
-          ],
-          [
-            "Eliminatsiya",
-            "Pasaya boshlaydi",
-            "Baland bo‘ladi"
-          ],
-          [
-            "Takroriy qabul",
-            "Qon yana oshadi",
-            "Baland qoladi"
-          ]
-        ]
+        "caption": "Qon va siydikda spirt dinamikasi"
       },
       "teacher_notes": "Vaqt: 10 daqiqa. Muhokama: 1) Qon va siydikdagi spirtni taqqoslash nimani aniqlashga yordam beradi? 2) Nega tirik shaxsdan namuna imkon qadar erta olinadi? Doskada chizing: vaqt o‘qi bo‘yicha qon va siydik konsentratsiyasi egri chizig‘i. Tipik xato: Vidmark konstantasini mastlik darajasi deb tushunish; u spirtning soatiga kamayish tezligi. Qo‘shimcha: eliminatsiya boshida 0,10–0,13, o‘rtacha jismoniy yuklamada 0,15–0,18 promille. Sinama qisqa o‘tkir kasalliklarda (kariyes, qandli diabet) soxta musbat berishi mumkin."
     },
@@ -1295,7 +1457,16 @@
       "title": "Uyqu dorilari va MNT ni qo‘zg‘atuvchi zaharlar",
       "bullets": [
         {
-          "text": "Barbituratlar (veronal, nembutal) va trankvilizatorlar markaziy nerv tizimini (MNT) so‘ndiradi. Klinika: chuqur uyqu, bosim pasayishi, koma; o‘lim nafas markazi falajidan.",
+          "text": "Barbituratlar (veronal, nembutal) va trankvilizatorlar markaziy nerv tizimini (MNT) so‘ndiradi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "163-164"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Klinika: chuqur uyqu, bosim pasayishi, koma; o‘lim nafas markazi falajidan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1313,7 +1484,7 @@
           "uncertain": false
         },
         {
-          "text": "Psixotoniklar (kofein, fenamin) va antidepressantlar (imizin) MNT ni qo‘zg‘atadi. Katta dozada psixoz, tez-tez qabulda o‘rganib qolish va bog‘liqlik paydo bo‘ladi.",
+          "text": "Psixotoniklar (kofein, fenamin) va antidepressantlar (imizin) MNT ni qo‘zg‘atadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1322,23 +1493,23 @@
           "uncertain": false
         },
         {
-          "text": "Strixnin: tonik talvasa xurujlari, tananing yoysimon bukilishi (opistotonus), mushak qotishi tez va kuchli. Letal doza kattalarda 0,1-0,3 g, bolalarda 0,005 g.",
+          "text": "Katta dozada psixoz, tez-tez qabulda o‘rganib qolish va bog‘liqlik paydo bo‘ladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "165"
+            "page": "164"
           },
           "uncertain": false
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 7 daq. Muhokama: (1) Nega uyqu dorisi zaharlanishida murdada xos belgi topilmaydi va tashxis nimaga tayanadi? (2) Strixnin talvasasida har qanday kuchsiz ta’sir (nur, tovush) yangi xurujni qanday chaqiradi? Doskada chizing: ikki ustun — MNT ni so‘ndiruvchi va qo‘zg‘atuvchi zaharlar, har biriga 2 ta misol. Tipik xato: uyqu dorisi topilsa, avtomatik zaharlanish deb xulosa qilish; terapevtik doza ehtimoli sababli miqdoriy tekshiruv shart. Diqqat: so‘ndiruvchi ≠ qo‘zg‘atuvchi zaharlarni aralashtirmang."
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: (1) Nega uyqu dorisi zaharlanishida murdada xos belgi topilmaydi va tashxis nimaga tayanadi? (2) Strixnin talvasasida har qanday kuchsiz ta’sir (nur, tovush) yangi xurujni qanday chaqiradi? Doskada chizing: ikki ustun — MNT ni so‘ndiruvchi va qo‘zg‘atuvchi zaharlar, har biriga 2 ta misol. Tipik xato: uyqu dorisi topilsa, avtomatik zaharlanish deb xulosa qilish; terapevtik doza ehtimoli sababli miqdoriy tekshiruv shart. Diqqat: so‘ndiruvchi ≠ qo‘zg‘atuvchi zaharlarni aralashtirmang. Strixnin: tonik talvasa xurujlari, tananing yoysimon bukilishi (opistotonus), mushak qotishi tez va kuchli. Letal doza kattalarda 0,1-0,3 g, bolalarda 0,005 g."
     },
     {
       "title": "Atropin, pilokarpin, klofelin, miorelaksantlar",
       "bullets": [
         {
-          "text": "Atropin (krasavka, mingdevona, bangidevona alkaloidi): yuz qizarishi, qorachiq kengayishi, alahsirash. Letal doza 0,1 g; murdada oylab saqlanadi, sud-kimyo hal qiladi.",
+          "text": "Atropin (krasavka, mingdevona, bangidevona alkaloidi): yuz qizarishi, qorachiq kengayishi, alahsirash.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1347,7 +1518,25 @@
           "uncertain": false
         },
         {
-          "text": "Pilokarpin: ter va so‘lak ko‘p ajralishi, qorachiq torayishi, bronxospazm, o‘pka shishi. Letal doza 0,06 g; murdada torayган qorachiq va shilliqning ko‘pligi aniqlanadi.",
+          "text": "Letal doza 0,1 g; murdada oylab saqlanadi, sud-kimyo hal qiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "166"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Pilokarpin: ter va so‘lak ko‘p ajralishi, qorachiq torayishi, bronxospazm, o‘pka shishi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "166"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Letal doza 0,06 g; murdada toraygan qorachiq va shilliqning ko‘pligi aniqlanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1363,19 +1552,30 @@
             "page": "167"
           },
           "uncertain": false
-        },
-        {
-          "text": "Miorelaksantlar nerv-mushak o‘tkazuvchanligini to‘sadi; o‘lim nafas mushaklari falajidan. Paxikarpin va miorelaksantlarda murdada xos belgi yo‘q, sud-kimyo hal qiluvchi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "167"
-          },
-          "uncertain": false
         }
       ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: (1) Atropin va pilokarpinda qorachiq holati qanday farq qiladi? (2) Klofelin nega ko‘pincha qasddan zaharlashda uchraydi, voqea joyida nimaga e’tibor beriladi? Doskada chizing: ikki ustunli taqqoslash jadvali — atropin (qorachiq kengayadi) va pilokarpin (qorachiq torayadi). Tipik xato: qorachiq kengayishini barcha zaharlarga umumlashtirish. Diqqat: atropin ≠ pilokarpin. Tezkor savol: qaysi zahar tashxisida sud-kimyo asosiy dalil bo‘ladi? Eslatma: paxikarpin tasodifiy, homiladorlikni uzishga urinishda uchrashi mumkin."
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Atropin",
+            "value": "0,1",
+            "unit": "g"
+          },
+          {
+            "label": "Pilokarpin",
+            "value": "0,06",
+            "unit": "g"
+          },
+          {
+            "label": "Klofelin (kattalar)",
+            "value": "0,005–0,01",
+            "unit": "g"
+          }
+        ],
+        "caption": "Letal dozalar"
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: (1) Atropin va pilokarpinda qorachiq holati qanday farq qiladi? (2) Klofelin nega ko‘pincha qasddan zaharlashda uchraydi, voqea joyida nimaga e’tibor beriladi? Doskada chizing: ikki ustunli taqqoslash jadvali — atropin (qorachiq kengayadi) va pilokarpin (qorachiq torayadi). Tipik xato: qorachiq kengayishini barcha zaharlarga umumlashtirish. Diqqat: atropin ≠ pilokarpin. Tezkor savol: qaysi zahar tashxisida sud-kimyo asosiy dalil bo‘ladi? Eslatma: paxikarpin tasodifiy, homiladorlikni uzishga urinishda uchrashi mumkin. Paxikarpin va miorelaksantlarda murdada xos belgi yo‘q, sud-kimyo hal qiluvchi. Miorelaksantlar nerv-mushak o‘tkazuvchanligini to‘sadi; o‘lim nafas mushaklari falajidan."
     },
     {
       "title": "Narkotiklar tasnifi va narkotiklar bilan bog‘liq o‘lim",
@@ -1409,27 +1609,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Narkotiklar tasnifi",
-        "nodes": [],
-        "header": [
-          "Tur",
-          "Misollar"
+        "kind": "tree",
+        "root": "Narkotiklar tasnifi",
+        "children": [
+          {
+            "label": "Tabiiy",
+            "items": [
+              "Nasha, morfin",
+              "Kodein, kokain"
+            ]
+          },
+          {
+            "label": "Yarim sintetik",
+            "items": [
+              "Geroin, meskalin",
+              "Efedron"
+            ]
+          },
+          {
+            "label": "Sintetik",
+            "items": [
+              "Amfetamin, promedol",
+              "Metadon, sombrevin"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Tabiiy",
-            "Nasha, morfin, kodein, kokain"
-          ],
-          [
-            "Yarim sintetik",
-            "Geroin, meskalin, efedron"
-          ],
-          [
-            "Sintetik",
-            "Amfetamin, promedol, metadon, sombrevin"
-          ]
-        ]
+        "caption": "Kelib chiqishi bo‘yicha"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: (1) Nega DRD tushunchasiga faqat zaharlanishdan o‘lim emas, baxtsiz hodisa va qotillik ham kiritilgan? (2) Mastlik holati qanday hodisalar ehtimolini oshiradi (yo‘l-transport hodisasi, balandlikdan yiqilish, cho‘kish)? Doskada chizing: DRD ning 5 ta holatini markaziy doira atrofida. Tipik xato: DRD ni faqat o‘tkir zaharlanish deb tushunish. Diqqat: geroin tabiiy emas, yarim sintetik (atsetillangan morfin). Tezkor savol: jadvaldagi qaysi turga amfetamin kiradi?"
     },
@@ -1520,7 +1725,7 @@
           "uncertain": false
         },
         {
-          "text": "Qayta qabul qilish ruhiy bog‘liqlik va tolerantlik beradi; to‘xtatilganda abstinensiya sindromi kuzatiladi. Opiatlarga o‘rganish o‘rtacha 25-30 kunda rivojlanadi.",
+          "text": "Qayta qabul qilish ruhiy bog‘liqlik va tolerantlik beradi; to‘xtatilganda abstinensiya sindromi kuzatiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1529,7 +1734,16 @@
           "uncertain": false
         },
         {
-          "text": "Prekursorlar — narkotik tayyorlashda ishlatiladigan moddalar: xlorid va sulfat kislotalari, kaliy permanganat, etil efiri, atseton, toluol, piperidin, ergotamin, efedrin.",
+          "text": "Opiatlarga o‘rganish o‘rtacha 25-30 kunda rivojlanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "170-171"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Prekursorlar — narkotik tayyorlashda ishlatiladigan moddalar: kislotalar, kaliy permanganat, etil efiri, atseton, toluol, piperidin, ergotamin, efedrin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1538,7 +1752,27 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Ekstazi (MDMA) letal",
+            "value": "500",
+            "unit": "mg"
+          },
+          {
+            "label": "Opiatga o‘rganish",
+            "value": "25–30",
+            "unit": "kun"
+          },
+          {
+            "label": "Kannabinoid: qon uchun",
+            "value": "10",
+            "unit": "ml"
+          }
+        ],
+        "caption": "Amfetamin, opiat va kannabinoid ko‘rsatkichlari"
+      },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega amfetaminlar asosan og‘iz orqali qabul qilinadi (venaga yuborish xavfi)? 2) Prekursorlar ro‘yxatidagi moddalar kundalik hayotda qayerda uchraydi va nazorat nega kerak? Doskada: ‘tolerantlik → doza oshishi → bog‘liqlik → abstinensiya’ zanjirini chizing. Tipik xato: ruhiy bog‘liqlik bilan jismoniy bog‘liqlikni aralashtirish — ruhiy: yengib bo‘lmas intilish, jismoniy: tolerantlik tufayli dozani oshirish zarurati."
     },
     {
@@ -1607,6 +1841,291 @@
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega namunani imkon qadar tez olish kerak? 2) Qaysi modda siydikda eng uzoq aniqlanadi? Qo‘shimcha: jadvalda metamfetamin ham bor — 4-6 soatdan so‘ng boshlanib, 48-72 soat aniqlanadi. Doskada: ‘nasha — 4 xil namuna, boshqa moddalar — qon + siydik’ sxemasini chizing. Tipik xato: kannabinoidlar uchun ham faqat qon va siydik olish, barmoq yuvmasi va so‘lakni unutish."
     },
     {
+      "title": "Tashqi ko‘rik va teri: in’eksiya izlari",
+      "bullets": [
+        {
+          "text": "Narkomaniyani tashqi ko‘rikdayoq gumon qilish mumkin: ozg‘inlik (20,3%; semizlik 9,4%), teri trofikasi o‘zgarishi, tatirovka, tishlar buzilishi.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "146"
+          }
+        },
+        {
+          "text": "In’eksiya izlari 76,4% da: odatda tirsak chuqurchasi va bilaklarda; kam hollarda qo‘l kafti, son, jinsiy a’zo, til va bo‘yinda.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "146–147"
+          }
+        },
+        {
+          "text": "Eski izlar — vena bo‘ylab mayda chandiqlar “yo‘lakchalari”; yangi izlar — to‘q-qizil qatqaloqli nuqtali sanchiq.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "146–147"
+          }
+        },
+        {
+          "text": "Ba’zan sanchiq yo‘q, lekin xos joylarda mayda qon quyilishlar bo‘ladi. Belgilarning yo‘qligi narkomaniyani inkor etmaydi.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "146–147"
+          }
+        },
+        {
+          "text": "Gistologik: dermada fibroz, limfoid-makrofag infiltrat, har xil muddatli qon quyilishlar va gemosiderin; ba’zan surunkali panniculit.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "147"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Tashqi ko‘rik",
+        "children": [
+          {
+            "label": "Umumiy ko‘rinish",
+            "items": [
+              "Ozg‘inlik (20,3%)",
+              "Tatirovka, tish buzilishi"
+            ]
+          },
+          {
+            "label": "In’eksiya izlari",
+            "items": [
+              "76,4% holatda",
+              "Tirsak chuquri, bilak"
+            ]
+          },
+          {
+            "label": "Eski izlar",
+            "items": [
+              "Venalar bo‘ylab chandiq “yo‘lakcha”"
+            ]
+          },
+          {
+            "label": "Yangi izlar",
+            "items": [
+              "Nuqtali sanchiq",
+              "To‘q-qizil qatqaloq"
+            ]
+          },
+          {
+            "label": "Terida gistologiya",
+            "items": [
+              "Dermada fibroz, infiltrat",
+              "Gemosiderin, panniculit"
+            ]
+          }
+        ],
+        "caption": "Narkomaniyaning tashqi belgilari"
+      },
+      "teacher_notes": "Vaqt: 4 daq. Manba: Pigolkin (red.), 4-bob, 146–147-betlar."
+    },
+    {
+      "title": "Miya o‘zgarishlari: o‘tkir narkotik zaharlanish",
+      "bullets": [
+        {
+          "text": "Opiatdan oshiqcha dozada o‘lganlar miyasida shish va bo‘rtish: qattiq parda taranglashgan, egat-pushtalar tekislangan, massasi 1500–1850 g.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "148"
+          }
+        },
+        {
+          "text": "Yumshoq parda yupqa, tiniq, venalari kengaygan va to‘laqon; ba’zan pakkion granulyatsiyalari va mayda nuqtali qon quyilishlar.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "148"
+          }
+        },
+        {
+          "text": "Kesmada miya moddasi nam va yaltiroq, qorinchalar kengaygan va tiniq suyuqlik bilan to‘la.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "148"
+          }
+        },
+        {
+          "text": "Nuqtali qon quyilishlar eng ko‘p uzunchoq miya va ko‘prik chegarasida hamda o‘rta miya qopqog‘ida — tanatogenezda ahamiyatli bo‘lishi mumkin.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "148"
+          }
+        },
+        {
+          "text": "Uzoq iste’molda miya atrofiyasi va yumshoq parda fibrozi (araxnofibroz ~90%); o‘tkir holatda esa parda to‘laqonligi shishsiz.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "149"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Miya shishi",
+            "text": "Massasi 1500–1850 g, pushtalar tekis"
+          },
+          {
+            "title": "Yumshoq parda",
+            "text": "To‘laqon venalar, ba’zan petexiyalar"
+          },
+          {
+            "title": "Kesmada",
+            "text": "Nam, yaltiroq; qorinchalar kengaygan"
+          },
+          {
+            "title": "Petexiyalar",
+            "text": "Uzunchoq miya–ko‘prik, o‘rta miya"
+          },
+          {
+            "title": "Surunkali fon",
+            "text": "Atrofiya, araxnofibroz (~90%)"
+          }
+        ],
+        "caption": "Miya o‘zgarishlari"
+      },
+      "teacher_notes": "Vaqt: 4 daq. Manba: Pigolkin (red.), 4-bob, 148–149-betlar."
+    },
+    {
+      "title": "Umumasfiksik va xos belgilar: o‘tkir narkotik zaharlanish",
+      "bullets": [
+        {
+          "text": "Yurak bo‘shliqlarida suyuq qon 100% holatda; plevra osti va miyada mayda qon quyilishlar — faqat yarmida.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "161"
+          }
+        },
+        {
+          "text": "Doimiy belgilar: ko‘p tarqoq to‘q-binafsha murda dog‘lari, miya yumshoq pardalari to‘laqonligi, miya shishi, plevra osti qon quyilishlari.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "161–162"
+          }
+        },
+        {
+          "text": "Yuz ko‘kimtirligi va shishishi atigi 12% da; ko‘z shilliq pardalari to‘laqonligi ekximozsiz — boshqa asfiksiyalardan farq.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "162"
+          }
+        },
+        {
+          "text": "Xos: parda to‘laqonligi shishsiz; o‘pka ichi qon quyilishi; yirik polimorf plevra osti va yurak asosi bo‘ylab epikard osti qon quyilishlari.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "162"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Umumiy asfiksik belgilar",
+            "items": [
+              "Suyuq qon yurakda (100%)",
+              "Ko‘p to‘q-binafsha murda dog‘lari",
+              "Miya pardasi to‘laqonligi, miya shishi",
+              "Plevra osti qon quyilishlari"
+            ]
+          },
+          {
+            "title": "Narkotikka xos",
+            "items": [
+              "Ko‘z tomirlari to‘laqonligi, ekximoz yo‘q",
+              "Parda to‘laqonligi shishsiz",
+              "O‘pka ichi qon quyilishlari",
+              "Epikard osti qon quyilishlari"
+            ]
+          }
+        ],
+        "caption": "Asfiksiya belgilari: umumiy va xos"
+      },
+      "teacher_notes": "Vaqt: 4 daq. Manba: Pigolkin (red.), 4-bob, 161–162-betlar."
+    },
+    {
+      "title": "O‘pka: o‘tkir narkotik zaharlanishdagi o‘zgarishlar",
+      "bullets": [
+        {
+          "text": "Makroskopik: o‘pkaning massiv shishi (84,9%), kesmadan ko‘pikli pushti suyuqlik oqadi; turli shakldagi qon quyilishlar, subplevral ham.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "163"
+          }
+        },
+        {
+          "text": "27,4% holatda makroskopik ham peribronxial yoki subplevral pnevmoniya o‘choqlari aniqlanadi (immunotanqislik, nosteril in’eksiyalar).",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "163"
+          }
+        },
+        {
+          "text": "Gistologik: alveolyar va interstitsial shish, to‘laqonlik, alveolalar ichida o‘tkir qon quyilishlar, eritrotsitlar staz va sladji.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "163"
+          }
+        },
+        {
+          "text": "Distelektaz va notekis emfizema; qonuniy (100%) o‘choqli gemosideroz — Perls reaksiyasi bilan formalin pigmentidan ajratiladi.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "163"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Massiv o‘pka shishi",
+            "value": "84,9",
+            "unit": "%"
+          },
+          {
+            "label": "Pnevmoniya o‘choqlari",
+            "value": "27,4",
+            "unit": "%"
+          },
+          {
+            "label": "O‘choqli gemosideroz",
+            "value": "100",
+            "unit": "%"
+          },
+          {
+            "label": "Suyuq qon yurakda",
+            "value": "100",
+            "unit": "%"
+          }
+        ],
+        "caption": "O‘pka va umumasfiksik belgilar"
+      },
+      "teacher_notes": "Vaqt: 4 daq. Manba: Pigolkin (red.), 4-bob, 161–163-betlar (rus tilida)."
+    },
+    {
       "title": "Murdadagi o‘zgarishlarning to‘rt guruhi",
       "bullets": [
         {
@@ -1638,31 +2157,38 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Murdadagi o‘zgarishlar guruhlari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Belgi misoli"
+        "kind": "tree",
+        "root": "Murdadagi o‘zgarishlar",
+        "children": [
+          {
+            "label": "Spetsifik",
+            "items": [
+              "Neyrokimyoviy",
+              "Faqat murakkab usulda"
+            ]
+          },
+          {
+            "label": "Qayta qabul izlari",
+            "items": [
+              "Venada yaralar, chandiq",
+              "Granulemalar"
+            ]
+          },
+          {
+            "label": "In’eksion infeksiyalar",
+            "items": [
+              "Immun tanqislik (OITS), gepatit"
+            ]
+          },
+          {
+            "label": "Turmush tarzi",
+            "items": [
+              "Ozginlik, tuberkulez",
+              "Tatirovka"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Spetsifik",
-            "Neyrokimyoviy; faqat murakkab usulda"
-          ],
-          [
-            "Qayta qabul qilish izlari",
-            "Venada yaralar, chandiq; granulemalar"
-          ],
-          [
-            "In’eksion infeksiyalar",
-            "Orttirilgan immun tanqislik (OITS), gepatit"
-          ],
-          [
-            "Turmush tarzi",
-            "Ozginlik, tuberkulez, tatirovka"
-          ]
-        ]
+        "caption": "Murdadagi o‘zgarishlar guruhlari"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega spetsifik o‘zgarishlar amaliyotda qo‘llanilmaydi? 2) Qaysi guruh belgisi kiritish yo‘liga bog‘liq? Doskada: to‘rt guruhli jadvalni talabalar bilan birga chizing, har guruhga bittadan misol yozdiring. Tipik xato: tatirovka yoki ozginlikni giyohvandlikning aniq isboti deb hisoblash."
     },
@@ -1756,7 +2282,7 @@
       "title": "Xulosa va asosiy qoidalar",
       "bullets": [
         {
-          "text": "Zaharlanishning sud-tibbiy diagnostikasi uch bosqichda to‘plangan dalillarga tayanadi: hodisa joyini ko‘zdan kechirish, murda tekshiruvi va laboratoriya tekshiruvlari.",
+          "text": "Diagnostika uch bosqichda to‘plangan dalillarga tayanadi: hodisa joyi, murda tekshiruvi va laboratoriya tekshiruvlari.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1800,12 +2326,12 @@
     {
       "question": "Sud-tibbiy ekspertiza ma’lumotlari bo‘yicha zaharlanishlar vujudga kelish tafsilotiga ko‘ra tahlil qilindi. Qaysi tur eng ko‘p uchraydi?",
       "options": [
-        "Qotillik maqsadida sodir etilgan zaharlanishlar",
         "Tasodifan yuz bergan baxtsiz hodisalar",
+        "Qotillik maqsadida sodir etilgan zaharlanishlar",
         "Zaharlanish orqali o‘z-o‘zini o‘ldirish holatlari",
         "Faqat kasbiy faoliyat bilan bog‘liq holatlar"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Ekspertiza ma’lumotlariga ko‘ra aksariyat zaharlanishlar baxtsiz hodisalardir. Keyingi o‘rinni o‘z-o‘zini o‘ldirish egallaydi. Qotillik yo‘li bilan zaharlash kamdan-kam kuzatiladi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1865,11 +2391,11 @@
       "question": "Zahar nafas yo‘llari orqali qonga so‘rildi. Ichga qabul qilingan zaharga nisbatan uning ta’siri nega kuchliroq bo‘ladi?",
       "options": [
         "Oshqozondagi massa uni butunlay bog‘lab qo‘yadi",
-        "Jigardan o‘tmagani uchun uning ta’siri kuchliroq bo‘ladi",
         "U faqat mahalliy ta’sir ko‘rsatib, qonga so‘rilmaydi",
+        "Jigardan o‘tmagani uchun uning ta’siri kuchliroq bo‘ladi",
         "Uning agregat holati qattiq moddaga aylanib qoladi"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Nafas yo‘llari, to‘g‘ri ichak va qin shilliq qavatidan so‘rilgan moddalar jigar orqali o‘tmaydi. Shu sababli ular oshqozon va ichakdan so‘rilganlarga nisbatan kuchliroq ta’sir ko‘rsatadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1881,11 +2407,11 @@
       "question": "Bemorda funksional zahar ta‘sirida faqat funksional o‘zgarishlar bor, xos morfologik o‘zgarish yo‘q. Tashxisda qaysi manba salmoqli dalil bo‘lishi mumkin?",
       "options": [
         "Faqat murda dog‘larining rangi va hidi",
-        "Tibbiy hujjatlardagi klinika va tahlillar",
+        "Faqat hodisa joyidagi shpritslar soni",
         "Faqat gistologik tekshiruv xulosasi",
-        "Faqat hodisa joyidagi shpritslar soni"
+        "Tibbiy hujjatlardagi klinika va tahlillar"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Funksional o‘zgarishlar bilan kechadigan va xos morfologik o‘zgarish chaqirmaydigan zaharlarda klinik o‘zgarishlar tavsifi hamda tibbiy muassasadagi laboratoriya natijalari salmoqli dalil manbai bo‘lishi mumkin. Bu birinchi bosqichga kiradi.",
       "source": {
         "author": "G‘iyosov Z.A.",

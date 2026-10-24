@@ -1,0 +1,582 @@
+{
+ "topic_id": "ktp26-u-32",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Qonning zardob izosistemasining sud-tibbiy ahamiyati. Ter, so’lak mavjudligini sud-tibbiy aniqlash.",
+  "ru": "Qonning zardob izosistemasining sud-tibbiy ahamiyati. Ter, so’lak mavjudligini sud-tibbiy aniqlash.",
+  "en": "Qonning zardob izosistemasining sud-tibbiy ahamiyati. Ter, so’lak mavjudligini sud-tibbiy aniqlash."
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "ktp26-u-32-q01",
+   "question_i18n": {
+    "uz": "Harakatdagi tana qismidan tomgan qon dog‘i noksimon, undov belgisi shaklida bo‘ldi. Dog‘ning ensiz tomoni nimani ko‘rsatadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qon tomchisining tushish balandligini",
+     "Tana qismining harakat yo‘nalishini",
+     "Qon yo‘qotilgan umumiy miqdorni",
+     "Dog‘ saqlagan material turini"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Qon tomchisi harakatdagi tana qismidan yoki qiya yuzaga tushsa, dog‘ noksimon, undov belgisi shaklida bo‘ladi. Dog‘ning ensiz tomoni harakat yo‘nalishi tomonida (yoki yuzaning pastroq tarafida) joylashadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "304"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-32-q02",
+   "question_i18n": {
+    "uz": "Xonadagi devor yuzasida quruq qon dog‘i topildi. Namunani olishning qaysi usuli to‘g‘ri?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Dog‘ni qo‘l bilan ishqalab, kukunini yig‘ib olish",
+     "Butun devor bo‘lagini kesib laboratoriyaga yuborish",
+     "Dog‘ ustiga yangi bint qo‘yib, namlab bosib olish",
+     "Toza skalpel bilan qirindi olib, toza qog‘ozga o‘rash"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Qon singdirmaydigan qattiq yuzalardagi quruq dog‘dan toza skalpel yoki yupqa tig‘li pichoq bilan qirindi olinadi va dorixonadagi kukun kabi toza qog‘ozga o‘raladi. Kontrol uchun xuddi shunday qirindi ifloslanmagan sohadan olinadi. Yangi bint yoki doka tavsiya etilmaydi, chunki ulardagi appreturalar serologik reaksiyalarga salbiy ta’sir qiladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "304"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-32-q03",
+   "question_i18n": {
+    "uz": "Hodisa joyida qor ustida qon izlari topildi. Namuna olishning to‘g‘ri birinchi bosqichi qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qor ustiga doka qo‘yib, darhol bosish",
+     "Qorni isitkich yonida tezda eritish",
+     "Qonli qorni qog‘ozga o‘rab quritish",
+     "Qorni qoshiq bilan shisha idishga olish"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Qon izlari qorda topilganda qor qoshiq bilan shisha idishga (banka yoki chuqur tarelka) olinadi va xona sharoitida eritiladi. Hosil bo‘lgan suyuqlikdan doka bo‘lagiga namuna olinadi. Kontrol uchun toza qordan ham xuddi shu tartibda namuna olinadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "305"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-32-q04",
+   "question_i18n": {
+    "uz": "Qon izi qaysi sharoitda qon ko‘lmagi ko‘rinishida hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Material namlikni yaxshi o‘ziga singdirganda",
+     "Qon qiya yuza bo‘ylab oqib o‘tganda",
+     "Material singdirishi past va qon ko‘p yo‘qotilganda",
+     "Qonli jism qattiq yuzada sirpanganda"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Singdirish xususiyati past materialda va ko‘p qon yo‘qotilganda qon ko‘lmagi hosil bo‘ladi. Namlikni yaxshi oladigan materialda qon singdirilgan holatda bo‘ladi, qiya yuzada oqma izlar qoladi, sirpanishdan esa surtma izlar vujudga keladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "303"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-32-q05",
+   "question_i18n": {
+    "uz": "Hodisa joyiga umumiy amaliyot shifokori jalb qilindi. U qaysi ishni bajarishi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ashyoviy dalilni topib, tavsiflab, namuna olishda qatnashish",
+     "Qon dog‘ining guruhiy mansubligini laboratoriyada aniqlash",
+     "Qon dog‘i bo‘yicha sud-biologik ekspertiza xulosasini tuzish",
+     "Ashyoviy dalillarni sud-tibbiy jihatdan mustaqil tekshirish"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Ashyoviy dalillarning sud-tibbiy tekshiruvi klinitsist-shifokorlarga yuklanmaydi. Ayrim holatlarda umumiy amaliyot shifokorlari hodisa joyini ko‘zdan kechirish, ashyoviy dalillarni topish, tavsiflash va tegishli tekshiruvlar uchun namunalar olishga jalb qilinishi mumkin. Laboratoriya tekshiruvini esa maxsus tayyorgarlikka ega mutaxassislar o‘tkazadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "303"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-32-q06",
+   "question_i18n": {
+    "uz": "Maniy dog‘ida ishonchli morfologik usul qachon musbat natija beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bitta bo‘lsa ham butun spermatozoid (bosh, tana, dum birga) topilsa",
+     "Faqat spermatozoidning boshi topilsa",
+     "Faqat spermatozoid dumi topilsa",
+     "Kartoshka sharbati agglyutinatsiyasi kuchaysa"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Morfologik usulda bitta bo‘lsa-da, butun spermatozoid topilsa natija musbat; bosh, tana yoki dumning alohida topilishi inobatga olinmaydi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "310"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-32-q07",
+   "question_i18n": {
+    "uz": "Laboratoriyaga taqdim etilgan dog‘da qon borligi aniqlandi. Qon ekspertizasi ketma-ketligida keyingi masala qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qonning guruhiy mansubligini aniqlash masalasi",
+     "Qonning tur mansubligini aniqlash masalasi",
+     "Qonning muayyan shaxsga taalluqliligini aniqlash",
+     "Qon izining paydo bo‘lish muddatini aniqlash"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Masalalar quyidagi ketma-ketlikda yechiladi: qon borligi, tur mansubligi, guruhiy mansubligi, muayyan shaxsga taalluqliligi. Qon borligi isbotlangach, dog‘ odamga yoki hayvonga tegishli ekanligi aniqlanadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "305"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-32-q08",
+   "question_i18n": {
+    "uz": "Dog‘ga fenolftalein va 3% vodorod peroksid tomizilgach, qizg‘ish rang bir daqiqadan so‘ng paydo bo‘ldi. Natija qanday baholanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Musbat natija, chunki qizg‘ish rang baribir paydo bo‘ldi",
+     "Qon borligining qat’iy isboti sifatida qabul qilinadi",
+     "Inobatga olinmaydi, chunki rang havo yoki nurdan ham chiqadi",
+     "Manfiy natija, chunki rang ko‘k tusda bo‘lishi kerak edi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Fenolftalein sinamasida 10-15 soniya ichida qizg‘ish rang paydo bo‘lishi musbat hisoblanadi. Bir daqiqadan keyingi rang inobatga olinmaydi, chunki oksidlanish havoda yoki nur ta’sirida ham sodir bo‘ladi. Taxminiy sinamalar qon borligini faqat gumon qilishga imkon beradi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "305"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-32-q09",
+   "question_i18n": {
+    "uz": "Hozirgi davrda dog‘da qon mavjudligi ishonchli tarzda asosan qaysi usulda aniqlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Benzidin va vodorod peroksid bilan sinama usuli",
+     "Teyxman kristallari bo‘yicha mikrokristallik usul",
+     "Lyuminol bilan yorqin nurlanish hosil qilish usuli",
+     "Xromatografik usul (qog‘oz yoki yupqa qatlamli)"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Hozirgi davrda dog‘da qon asosan xromatografik usulda ishonchli aniqlanadi: qog‘ozda xromatografiya yoki silufol plastinkasida yupqa qatlamli xromatografiya. Benzidin va lyuminol taxminiy sinamalar hisoblanadi. Mikrokristallik usullar sezgirligi past bo‘lgani uchun amaliyotda qo‘llanilmaydi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "306"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-32-q10",
+   "question_i18n": {
+    "uz": "Dog‘dan tayyorlangan tortilmada qon miqdori juda oz. Tur mansubligini aniqlash uchun qaysi usul qo‘llanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Gelli agarda pretsipitatsiya (Ouxterloni) usuli",
+     "ABAcard testi yordamida bir vaqtda tekshirish usuli",
+     "Atsetat-sellyuloza plenkasida elektroforez usuli",
+     "Shiff usuli bo‘yicha sentrifugalash va ajratish usuli"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Tortilmada qon miqdori kam bo‘lsa, atsetat-sellyuloza plenkasida elektroforez usuli qo‘llaniladi. Tortilma loyqa bo‘lganda esa gelli agarda pretsipitatsiya (Ouxterloni) maqsadga muvofiq. Shiff usuli suyuq qonda agglyutinogen va agglyutininlarni aniqlash uchun ishlatiladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "306"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-32-q11",
+   "question_i18n": {
+    "uz": "Sud-tibbiy tekshiruvda AVO tizimi bo‘yicha tibbiyot muassasalaridagi tekshiruvdan farqli ravishda qo‘shimcha nima o‘rganiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat rezus-omil antigenlari",
+     "Qon zardobidagi agglyutininlar",
+     "Leykotsitar antigenlar tizimi",
+     "Eritrotsitlarning o‘lchami"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Tibbiyot muassasalarida qon guruhini aniqlashda AVO tizimining faqat agglyutinogenlari tekshiriladi. Sud-tibbiy tekshiruvda agglyutinogenlar bilan birga agglyutininlar ham o‘rganiladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "307"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-32-q12",
+   "question_i18n": {
+    "uz": "Kiyimdagi juda kichik qon dog‘ida kuchsiz antigenlarning guruhiy xususiyatini aniqlash kerak. Qaysi reaksiya tavsiya etiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Teyxman mikrokristallik sinamasi",
+     "Benzidin sinamasi",
+     "Absorbsiya-elyusiya reaksiyasi",
+     "Kartoshka sharbati reaksiyasi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Kam miqdordagi dog‘lar va kuchsiz antigenlarning guruhiy xususiyatini aniqlashda absorbsiya-elyusiya reaksiyasi tavsiya etiladi. Teyxman sinamasi sezgirligi past mikrokristallik usul, benzidin esa qon borligini taxminan ko‘rsatadigan sinama."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "307"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-32-q13",
+   "question_i18n": {
+    "uz": "Hodisa joyidagi qon izi AVO tizimi bo‘yicha gumondor qoniga mos keldi. Qonning aynan shu shaxsga tegishliligi qat’iy qaysi usulda aniqlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Benzidin sinamasi",
+     "Chistovich–Ulengut reaksiyasi",
+     "Lyuminol sinamasi",
+     "DNK-tekshiruvi usuli"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Guruhiy tizimlar bo‘yicha taqqoslash ko‘p mehnat va vaqt talab etadi. So‘nggi davrda qonning aniq shaxsga tegishliligi qat’iy tarzda DNK-tekshiruvi bilan aniqlanadi. Qolgan usullar qon borligi yoki tur mansubligi uchun."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "307"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-32-q14",
+   "question_i18n": {
+    "uz": "Qon dog‘idagi hujayralar akrixin bilan bo‘yalib, lyuminessent mikroskopiyada tekshirilganda yadrolarda Y-xromatin topildi. Bu qaysi jinsni ko‘rsatadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Erkak jinsiga mansublikni",
+     "Ayol jinsiga mansublikni",
+     "Go‘dak qoniga mansublikni",
+     "Homilador ayolga mansublikni"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Y-xromatin akrixin bilan bo‘yalganda lyuminessent mikroskopiyada erkaklar hujayralari yadrosida aniqlanadi. Ayollarda esa azur-eozin bilan bo‘yalganda X-xromatin topiladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "307-308"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-32-q15",
+   "question_i18n": {
+    "uz": "Kiyimdagi dog‘da ter borligi masalasi qaysi modda aniqlanishi orqali hal etiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Amilaza fermenti",
+     "Serin aminokislotasi",
+     "Kreatinin moddasi",
+     "Xolin birikmasi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Ter tarkibida serin aminokislotasi ko‘p bo‘ladi, dog‘da terning mavjudligi shu aminokislotani aniqlash orqali hal etiladi. Amilaza so‘lakka, kreatinin esa siydikka tegishli."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "311-312"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-32-q16",
+   "question_i18n": {
+    "uz": "Hodisa joyida sigaret qoldig‘i topildi. Unda so‘lak borligi qaysi usulda aniqlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Katalaza fermentini aniqlash",
+     "Amilaza fermentini aniqlash",
+     "Serin aminokislotasini aniqlash",
+     "Kreatininni aniqlash"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Sigaret qoldig‘i so‘lakni tekshirishda ekspertiza ob’ekti bo‘ladi. So‘lakning borligi amilaza fermentini aniqlash orqali hal etiladi. Serin terga, kreatinin siydikka xos."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "311"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-32-q17",
+   "question_i18n": {
+    "uz": "Azospermiya yoki nekrospermiyada maniy borligi qanday ishonchli aniqlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qog‘ozda xromatografiya: xolin, spermin va nordon fosfataza birga topilsa",
+     "Spermatozoidlarni mikroskopda sanash",
+     "Florans mikrokristallik reaksiyasi",
+     "Barberio mikrokristallik reaksiyasi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Azospermiya va nekrospermiyada spermatozoid bo‘lmaydi; qog‘ozda xromatografiyada xolin, spermin va nordon fosfatazaning birga topilishi maniyni ishonchli ko‘rsatadi. Florans va Barberio reaksiyalari hozir amaliy ahamiyatga ega emas."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "310"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-32-q18",
+   "question_i18n": {
+    "uz": "Jinsiy jinoyat ishida kiyimdagi dog‘da siydik borligini isbotlash uchun nima aniqlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kreatinin va mochevinani aniqlash",
+     "Serin aminokislotasini aniqlash",
+     "Amilaza fermentini aniqlash",
+     "Gelmint tuxumlarini aniqlash"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Dog‘da siydik borligi kreatinin va mochevinani aniqlash orqali hal etiladi. Gelmint tuxumlari najasni isbotlashda qo‘llanadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "312"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-32-q19",
+   "question_i18n": {
+    "uz": "Qonida Le (a–b+) guruhi aniqlangan shaxs ajratmalar bo‘yicha qaysi toifaga kiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ajratuvchi emaslar toifasiga kiradi",
+     "Ajratuvchanligi aniq bo‘lmagan toifaga kiradi",
+     "Ajratuvchilar toifasiga kiradi",
+     "Faqat qon bo‘yicha ajratuvchi bo‘ladi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Le (a–b+) guruhiga mansublar ajratuvchilar hisoblanadi. Le (a+b–) ajratuvchi emaslarga xos. Le (a–b–) bo‘yicha ajratuvchanlikni aniq belgilab bo‘lmaydi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "311"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-32-q20",
+   "question_i18n": {
+    "uz": "So‘lak yoki ter dog‘i bor sochiq va kontrol uchun olingan toza bo‘lak laboratoriyaga qanday yuboriladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ikkalasi bitta qog‘ozga birga o‘raladi",
+     "Ikkalasi nam holda polietilen xaltaga solinadi",
+     "Ikkalasi issiqlik manbai yonida quritilib o‘raladi",
+     "Har biri alohida o‘ramda yuboriladi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Ob’ektlar xona haroratida, quyosh nuri tushmaydigan, issiqlikdan uzoq joyda quritiladi. Har bir ob’ekt alohida o‘raladi. Tekshiruv ob’ekti va kontrol bir o‘ramda bo‘lishi mumkin emas."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "312"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "G‘iyosov Z.A.",
+   "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti"
+  }
+ ]
+}

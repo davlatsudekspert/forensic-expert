@@ -5,7 +5,7 @@
       "title": "Kirish: bosh miya travmasi va sud-tibbiy ahamiyati",
       "bullets": [
         {
-          "text": "Bosh miya travmatik shikastlanishi (TBI) — urilish, zarba, silkinish yoki kirib boruvchi jarohatlar tufayli miya odatdagi faoliyatining buzilishi (AQSh kasalliklar nazorati markazi ta’rifi).",
+          "text": "TBI — urilish, zarba, silkinish yoki kirib boruvchi jarohat tufayli miya odatdagi faoliyatining buzilishi (AQSh kasalliklar nazorati markazi ta’rifi).",
           "source": {
             "author": "Zwirner et al.",
             "title": "Forensic biomarkers of lethal traumatic brain injury, International Journal of Legal Medicine",
@@ -77,30 +77,304 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "TBIdan o‘lim sabablari",
-        "nodes": [],
-        "header": [
-          "Sabab",
-          "Ulushi"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "O‘z-o‘ziga zarar",
+            "value": "33",
+            "unit": "%"
+          },
+          {
+            "label": "Tasodifiy yiqilish",
+            "value": "28",
+            "unit": "%"
+          },
+          {
+            "label": "Yo‘l-transport hodisa",
+            "value": "19",
+            "unit": "%"
+          }
         ],
-        "rows": [
-          [
-            "O‘z-o‘ziga zarar yetkazish",
-            "33%"
-          ],
-          [
-            "Tasodifiy yiqilish",
-            "28%"
-          ],
-          [
-            "Yo‘l-transport hodisalari",
-            "19%"
-          ]
-        ]
+        "caption": "TBIdan o‘lim sabablari"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama savollari: 1) Nima uchun o‘z-o‘ziga zarar yetkazish birinchi o‘rinda turishi sud-tibbiy ekspertiza uchun muhim? 2) Jarohat mexanizmi tashxis yondashuviga qanday ta’sir qiladi? Doskada chizish: uchta ulushni doiraviy diagrammada ko‘rsating, qolgan qismini «manbada ko‘rsatilmagan» deb belgilang. Tipik xato: uchta sababni jami 100% deb o‘ylash — manbada qolgan sabablar ko‘rsatilmagan.",
       "diagram_note": null
+    },
+    {
+      "title": "Kalla suyagi sinishlari turlari",
+      "bullets": [
+        {
+          "text": "Sinish joyi — yetkazilgan energiya suyakning deformatsiyalanish chegarasidan oshgan nuqta; u har doim zarba joyi bo‘lavermaydi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "99"
+          }
+        },
+        {
+          "text": "Chaqaloq kalla suyagi zarbadan sinmasdan ham sezilarli deformatsiyalanishi mumkin.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "99"
+          }
+        },
+        {
+          "text": "Bosh tepasiga zarba uzun chiziqli sinish beradi; ikki tomondan asosga o‘tib o‘rta chiziqda uchrashsa — og‘ir kuch belgisi bo‘lgan “hinge” sinish.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "100"
+          }
+        },
+        {
+          "text": "Balandlikdan boshga yoki oyoqqa tushishda katta teshik atrofida halqasimon sinish; keng yuzali zarbada “o‘rgimchak to‘ri” sinishi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "100"
+          }
+        },
+        {
+          "text": "Botiq sinishda ichki plastinka tashqisidan ko‘proq bo‘laklanadi; shakli qurol (masalan, bolg‘a) yuzasini takrorlashi mumkin.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "100"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Kalla suyagi sinishlari",
+        "children": [
+          {
+            "label": "Chiziqli",
+            "items": [
+              "Bosh tepasiga zarba",
+              "Parietal suyak bo‘ylab"
+            ]
+          },
+          {
+            "label": "Hinge (ilgak)",
+            "items": [
+              "Ikki tomondan asos bo‘ylab",
+              "Og‘ir kuch belgisi"
+            ]
+          },
+          {
+            "label": "Halqasimon",
+            "items": [
+              "Katta teshik atrofida",
+              "Balandlikdan tushish"
+            ]
+          },
+          {
+            "label": "O‘rgimchak to‘ri",
+            "items": [
+              "Keng yuzali zarba",
+              "Radial + konsentrik chiziqlar"
+            ]
+          },
+          {
+            "label": "Botiq",
+            "items": [
+              "Ichki plastinka ko‘proq sinadi",
+              "Qurol shaklini takrorlaydi"
+            ]
+          }
+        ],
+        "caption": "Kalla suyagi sinishlari (Simpson)"
+      },
+      "teacher_notes": "Vaqt: 5 daq. Manba: Simpson, 9-bob, 99–100-betlar."
+    },
+    {
+      "title": "Epidural va subdural qon quyilish",
+      "bullets": [
+        {
+          "text": "Epidural qon quyilish o‘rta meningeal arteriya shikastlanishi bilan bog‘liq (ko‘pincha chakka suyagi sinishi chizig‘i arteriyani kesganda).",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "101"
+          }
+        },
+        {
+          "text": "Arterial qon tez to‘planib, durani suyakdan ajratadi, gematoma miyani tez siljitadi va belgilar tez boshlanadi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "101"
+          }
+        },
+        {
+          "text": "Subdural qon quyilish ko‘prik venalar yirtilishidan; sinish bilan bog‘liq bo‘lishi shart emas, aylanma yoki siljish kuchlari sabab.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "101"
+          }
+        },
+        {
+          "text": "Yangi subdural qon to‘q qizil va yaltiroq, bir necha kundan keyin qo‘ng‘ir tusga kiradi; Perls bo‘yashida gemosiderin ko‘rinadi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "102"
+          }
+        },
+        {
+          "text": "Surunkali subdural gematoma yupqa “membrana”lar bilan o‘ralgan; keksalarda, alkogolga qaramlarda va tez-tez yiqiladiganlarda ko‘proq.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "102"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Epidural",
+            "items": [
+              "O‘rta meningeal arteriya",
+              "Arterial, tez to‘planadi",
+              "Ko‘pincha sinish chizig‘i bilan",
+              "Belgilar tez boshlanadi"
+            ]
+          },
+          {
+            "title": "Subdural",
+            "items": [
+              "Ko‘prik venalar",
+              "Venoz qon ketishi",
+              "Sinish shart emas",
+              "Yosh va keksalarda anamnez bo‘lmasligi mumkin"
+            ]
+          }
+        ],
+        "caption": "Epidural va subdural gematoma"
+      },
+      "teacher_notes": "Vaqt: 5 daq. Manba: Simpson, 9-bob, 101–102-betlar."
+    },
+    {
+      "title": "Koup va kontrkoup shikastlari",
+      "bullets": [
+        {
+          "text": "Koup — zarba joyidagi shikast; bosh terisi jarohati joyi odatda miya shikasti joyiga mos keladi (subaraxnoidal qon quyilish, po‘stloq kontuziyasi).",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "104"
+          }
+        },
+        {
+          "text": "Harakatdagi bosh (masalan, ensaga yiqilish) to‘satdan to‘xtaganda miya inersiya bilan harakatlanadi: zarbadan uzoqda kontrkoup kontuziyalar paydo bo‘ladi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "104"
+          }
+        },
+        {
+          "text": "Kontrkoup ko‘pincha peshona va chakka bo‘laklarining pastki yuzasida uchraydi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "104"
+          }
+        },
+        {
+          "text": "Yerga tegib turgan, harakatsiz boshga zarba odatda kontrkoup bermaydi; peshonaga yiqilishda ensa bo‘lagida kontrkoup kamdan-kam.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "104–105"
+          }
+        },
+        {
+          "text": "Kontrkoup mexanizmi bahsli; qiyin holatda klinik-patologik taqqoslash va guvohlar ko‘rsatmasi zarur.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "104–105"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Koup",
+            "items": [
+              "Zarba joyida",
+              "Teri jarohati va suyak sinishi ham bo‘lishi mumkin",
+              "Subaraxnoidal qon, po‘stloq kontuziyasi"
+            ]
+          },
+          {
+            "title": "Kontrkoup",
+            "items": [
+              "Zarbadan uzoqda",
+              "Harakatdagi bosh to‘xtaganda",
+              "Peshona va chakka bo‘laklari ostida",
+              "Harakatsiz boshda odatda yo‘q"
+            ]
+          }
+        ],
+        "caption": "Koup va kontrkoup"
+      },
+      "teacher_notes": "Vaqt: 5 daq. Manba: Simpson, 9-bob, 104–105-betlar."
+    },
+    {
+      "title": "Miya shishi va ichki gerniya",
+      "bullets": [
+        {
+          "text": "Birlamchi shikastga javoban miya shishi (ikkilamchi shikast) rivojlanadi: suyuqlik hujayradan tashqari bo‘shliqqa o‘tadi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "103"
+          }
+        },
+        {
+          "text": "Kalla suyagi kengaya olmagani uchun bosim ortadi va miya meningeal burmalar atrofida siqiladi — ichki gerniya.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "103"
+          }
+        },
+        {
+          "text": "Tentorium orqali pastga siqilganda temporal bo‘lak ilgagi shikastlanadi va miya poyasiga bosim tushadi; katta teshik orqali — miyacha murtaklari (koning).",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "103"
+          }
+        },
+        {
+          "text": "Shishgan miya og‘irlashadi, yuzasi yassilanadi; kesmada qorinchalar ingichka yoriqqa siqiladi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "103"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Birlamchi TBI",
+          "Miya shishi",
+          "Ichki bosim ortadi",
+          "Ichki gerniya",
+          "Miya poyasiga bosim"
+        ],
+        "caption": "Miya shishidan gerniyagacha"
+      },
+      "teacher_notes": "Vaqt: 4 daq. Manba: Simpson, 9-bob, 103-bet."
     },
     {
       "title": "Sud-tibbiy tashxis usullari xaritasi",
@@ -134,36 +408,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Usullar va cheklovlar",
-        "nodes": [],
-        "header": [
-          "Usul",
-          "Imkoniyat",
-          "Cheklov"
+        "kind": "tree",
+        "root": "Tashxis usullari",
+        "children": [
+          {
+            "label": "H-E, kumush bo‘yash",
+            "items": [
+              "Shikast 24 / 12–18 soatdan",
+              "Qisqa yashashda qiyin"
+            ]
+          },
+          {
+            "label": "β-APP IGK",
+            "items": [
+              "Akson 2–3 soatdan so‘ng",
+              "Travma va gipoksiyani ajratmaydi"
+            ]
+          },
+          {
+            "label": "Likvor biokimyosi",
+            "items": [
+              "Chegara qiymat gumonni kuchaytiradi",
+              "Birorta belgi 100% xos emas"
+            ]
+          },
+          {
+            "label": "KT va MRT",
+            "items": [
+              "MRT KTdan sezgirroq",
+              "KT diffuz shikastni yomon ajratadi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Gematoksilin-eozin, kumush",
-            "Shikast 24 / 12–18 soatdan so‘ng ko‘rinadi",
-            "Qisqa yashashda aniqlash qiyin"
-          ],
-          [
-            "β-APP immunogistokimyo",
-            "Shikastlangan akson 2–3 soatdan so‘ng",
-            "Travma va gipoksiyani ajratmaydi"
-          ],
-          [
-            "Likvor biokimyosi",
-            "Chegara qiymat gumonni kuchaytiradi",
-            "Birorta belgi 100% o‘ziga xos emas"
-          ],
-          [
-            "Kompyuter tomografiya (KT), MRT",
-            "MRT KTdan sezgirroq",
-            "KT diffuz shikastni yomon ajratadi"
-          ]
-        ]
+        "caption": "Sud-tibbiy tashxis usullari"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama savollari: 1) Nima uchun qisqa yashagan holatda oddiy bo‘yash usullari yetarli emas? 2) β-APP musbat topilma nega travmaning yagona isboti bo‘lmaydi? Doskada chizish: vaqt o‘qi — 2–3 soat (β-APP), 12–18 soat (kumush), ~24 soat (gematoksilin-eozin). Tipik xato: β-APP ni travmaga mutlaqo xos deb hisoblash — u ishemiya/gipoksiyada ham ko‘rinadi. Qisqartma: KT — kompyuter tomografiya, MRT — magnit-rezonans tomografiya.",
       "diagram_note": null
@@ -200,36 +477,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "DAI tarixi: vaqt chizig‘i",
-        "nodes": [],
-        "header": [
-          "Davr",
-          "Kim/nima",
-          "Hissa"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1940-yillar",
+            "text": "Oq moddada diffuz o‘zgarishlar modellari"
+          },
+          {
+            "title": "1956 — Strich",
+            "text": "Og‘ir TBIdan keyingi gistopatologiya"
+          },
+          {
+            "title": "Adams",
+            "text": "Atama va aksonal zararning 3 bosqichli darajasi"
+          },
+          {
+            "title": "Keyingi davr",
+            "text": "Yuqori maydonli MRT, immunobo‘yash"
+          }
         ],
-        "rows": [
-          [
-            "1940-yillar",
-            "Tajriba modellari",
-            "Oq moddada diffuz o‘zgarishlar"
-          ],
-          [
-            "1956",
-            "Strich",
-            "Og‘ir TBI dan keyingi gistopatologiya"
-          ],
-          [
-            "Adams",
-            "Atama va 3 bosqichli daraja",
-            "Aksonal zarar darajasiga ko‘ra"
-          ],
-          [
-            "Keyingi davr",
-            "Yuqori maydonli MRT, immunobo‘yash",
-            "Mexanizmlar yoritildi"
-          ]
-        ]
+        "caption": "DAI tarixi: vaqt chizig‘i"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega Strich ishi DAI tushunchasining poydevori hisoblanadi? 2) MRT va immunobo‘yash sud-gistologik tashxisni qanday o‘zgartirdi? Doskada: 1940-yillar–1956–Adams–MRT/immunobo‘yash vaqt chizig‘ini chizdiring. Tipik xato: Strich va Adams hissalarini aralashtirish (Strich tasvirlagan, Adams atamani kiritgan va darajalagan). TBI = travmatik bosh miya shikastlanishi."
     },
@@ -311,31 +578,31 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ochiq va yopiq modellar",
-        "nodes": [],
-        "header": [
-          "Model",
-          "Kuch beriladi",
-          "Xususiyat"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "FP, CCI (ochiq)",
+            "items": [
+              "Kraniotomiya, qattiq pardaga kuch",
+              "Nozik aksonal ta’sirga yo‘naltirilgan"
+            ]
+          },
+          {
+            "title": "CHI (yopiq)",
+            "items": [
+              "Butun bosh suyagi orqali",
+              "Zarba, portlash yoki inersion yuklama"
+            ]
+          },
+          {
+            "title": "CHIMERA",
+            "items": [
+              "Belgilangan energiyali zarba",
+              "Zarbadan so‘ng bosh erkin harakatlanadi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "FP, CCI (ochiq)",
-            "Kraniotomiya, qattiq pardaga kuch",
-            "Nozik aksonal ta’sirga yo‘naltirilgan"
-          ],
-          [
-            "CHI (yopiq)",
-            "Butun bosh suyagi orqali",
-            "Zarba, portlash yoki inersion yuklama"
-          ],
-          [
-            "CHIMERA",
-            "Belgilangan energiyali zarba, yopiq bosh",
-            "Zarbadan so‘ng bosh erkin harakatlanadi"
-          ]
-        ]
+        "caption": "Ochiq va yopiq modellar"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega ochiq modellar DAI mexanizmini to‘liq aks ettirmasligi mumkin? 2) CHIMERA qanday afzallik beradi (biokimyoviy, xulq-atvor va neyropatologik tahlil birga)? Doskada: ochiq va yopiq model farqini ikki ustunli sxema qilib chizdiring. Tipik xato: FP/CCI ni yopiq model deb adashtirish. Diqqat: ochiq model ≠ yopiq model. CHIMERA = yopiq bosh, aylanma tezlanish muhandislik modeli."
     },
@@ -361,7 +628,16 @@
           "uncertain": false
         },
         {
-          "text": "Subdural gematoma qattiq yuzaga yiqilishda ko‘proq uchraydi. Diffuz aksonal shikast (DAI) transport yo‘lovchilarida uchraydi: yumshoq yuza sekinlashishni cho‘zadi.",
+          "text": "Subdural gematoma qattiq yuzaga yiqilishda ko‘proq uchraydi.",
+          "source": {
+            "author": "Frati et al.",
+            "title": "Diffuse Axonal Injury and Oxidative Stress: A Comprehensive Review, International Journal of Molecular Sciences",
+            "page": "PMID 29207487"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diffuz aksonal shikast (DAI) transport yo‘lovchilarida uchraydi: yumshoq yuza sekinlashishni cho‘zadi.",
           "source": {
             "author": "Frati et al.",
             "title": "Diffuse Axonal Injury and Oxidative Stress: A Comprehensive Review, International Journal of Molecular Sciences",
@@ -616,7 +892,16 @@
           "uncertain": false
         },
         {
-          "text": "β-APP (β-amiloid prekursor oqsil) aksonal o‘zgarishni, CD68 mikroglia infiltratsiyasini ko‘rsatadi. Bemorlarning yarmida ular jarohatdan 5–15 kun o‘tgach birga joylashgan.",
+          "text": "β-APP (β-amiloid prekursor oqsil) aksonal o‘zgarishni, CD68 mikroglia infiltratsiyasini ko‘rsatadi.",
+          "source": {
+            "author": "Frati et al.",
+            "title": "Diffuse Axonal Injury and Oxidative Stress: A Comprehensive Review, International Journal of Molecular Sciences",
+            "page": "PMID 29207487"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bemorlarning yarmida ular jarohatdan 5–15 kun o‘tgach birga joylashgan.",
           "source": {
             "author": "Frati et al.",
             "title": "Diffuse Axonal Injury and Oxidative Stress: A Comprehensive Review, International Journal of Molecular Sciences",
@@ -847,31 +1132,22 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Adams bo‘yicha uch belgi",
-        "nodes": [],
-        "header": [
-          "Daraja",
-          "Joylashuv",
-          "Xususiyat"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "I daraja",
+            "text": "Diffuz supratentorial; faqat mikroskopda"
+          },
+          {
+            "title": "II daraja",
+            "text": "Kallosum fokal o‘chog‘i; pastki qism, o‘rta chiziqdan yonda"
+          },
+          {
+            "title": "III daraja",
+            "text": "Rostral miya ustuni o‘chog‘i; dorsolateral kvadrant, yuqori oyoqcha yoni"
+          }
         ],
-        "rows": [
-          [
-            "I daraja",
-            "Diffuz supratentorial",
-            "Faqat mikroskopda aniqlanadi"
-          ],
-          [
-            "II daraja",
-            "Kallosum fokal o‘chog‘i",
-            "Pastki qism, o‘rta chiziqdan yonda"
-          ],
-          [
-            "III daraja",
-            "Rostral miya ustuni o‘chog‘i",
-            "Dorsolateral kvadrant, yuqori oyoqcha yoni"
-          ]
-        ]
+        "caption": "Adams bo‘yicha uch belgi"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega aksonal shikast makroskopik ko‘rinmasligi mumkin? 2) Kallosum o‘chog‘i o‘rta chiziqqa yetsa nima kuzatiladi? (qorinchalararo to‘siq uzilishi, qorincha ichi qon quyilishi). Doskada: kallosum va rostral miya ustunining sagittal sxemasini chizib, o‘choqlarni belgilang. Tipik xato: Adams darajalarini mikroskopik Gennarelli darajalari bilan aralashtirish."
     },
@@ -888,7 +1164,16 @@
           "uncertain": false
         },
         {
-          "text": "Gemorragik o‘choq qisqa yashaganlarda qonli bo‘ladi. Keyin kichrayib chandiqqa aylanadi va autopsiyada topish qiyinlashadi. Gemosiderin tufayli jigarrang ko‘rinadi.",
+          "text": "Gemorragik o‘choq qisqa yashaganlarda qonli bo‘ladi. Keyin kichrayib chandiqqa aylanadi va autopsiyada topish qiyinlashadi.",
+          "source": {
+            "author": "Frati et al.",
+            "title": "Diffuse Axonal Injury and Oxidative Stress: A Comprehensive Review, International Journal of Molecular Sciences",
+            "page": "PMID 29207487 (5.1-bo‘lim)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gemosiderin tufayli jigarrang ko‘rinadi.",
           "source": {
             "author": "Frati et al.",
             "title": "Diffuse Axonal Injury and Oxidative Stress: A Comprehensive Review, International Journal of Molecular Sciences",
@@ -931,7 +1216,16 @@
           "uncertain": false
         },
         {
-          "text": "Ikki asosiy belgi: oq moddada diffuz yoki multifokal aksonal shikast va uning ko‘p miya hududlarida tarqalganligi. Hududlardan kamida biri tentoriumdan yuqorida, biri pastda bo‘lishi kerak.",
+          "text": "Ikki asosiy belgi: oq moddada diffuz yoki multifokal aksonal shikast va uning ko‘p miya hududlarida tarqalganligi.",
+          "source": {
+            "author": "Frati et al.",
+            "title": "Diffuse Axonal Injury and Oxidative Stress: A Comprehensive Review, International Journal of Molecular Sciences",
+            "page": "PMID 29207487 (5.2-bo‘lim)"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hududlardan kamida biri tentoriumdan yuqorida, biri pastda bo‘lishi kerak.",
           "source": {
             "author": "Frati et al.",
             "title": "Diffuse Axonal Injury and Oxidative Stress: A Comprehensive Review, International Journal of Molecular Sciences",
@@ -949,7 +1243,7 @@
           "uncertain": false
         },
         {
-          "text": "Hill va hamkasblariga ko‘ra “retraksiya bulbi” atamasi to‘liq emas: shakl aksonal transport buzilishi bilan bog‘liq. Katta yagona shishni “aksonal bulb” deb atash taklif etilgan.",
+          "text": "Hill va hamkasblariga ko‘ra “retraksiya bulbi” atamasi to‘liq emas: shakl aksonal transport buzilishi bilan bog‘liq.",
           "source": {
             "author": "Frati et al.",
             "title": "Diffuse Axonal Injury and Oxidative Stress: A Comprehensive Review, International Journal of Molecular Sciences",
@@ -959,7 +1253,7 @@
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega kamida bitta hudud tentoriumdan yuqorida va bittasi pastda bo‘lishi talab qilinadi? 2) “Retraksiya bulbi” o‘rniga “aksonal bulb” atamasi qanday patogenetik g‘oyani aks ettiradi? Doskada chizing: tentorium chizig‘i va uning ikki tomonidagi hududlarni belgilang, aksonal bulb sxemasini qo‘shing. Tipik xato: bitta hududdagi aksonal shishni diffuz DAI deb baholash; “Diqqat: bulb ≠ faqat retraksiya, mexanizm transport buzilishi”."
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega kamida bitta hudud tentoriumdan yuqorida va bittasi pastda bo‘lishi talab qilinadi? 2) “Retraksiya bulbi” o‘rniga “aksonal bulb” atamasi qanday patogenetik g‘oyani aks ettiradi? Doskada chizing: tentorium chizig‘i va uning ikki tomonidagi hududlarni belgilang, aksonal bulb sxemasini qo‘shing. Tipik xato: bitta hududdagi aksonal shishni diffuz DAI deb baholash; “Diqqat: bulb ≠ faqat retraksiya, mexanizm transport buzilishi”. Katta yagona shishni “aksonal bulb” deb atash taklif etilgan."
     },
     {
       "title": "Gennarelli bo‘yicha DAI darajalari",
@@ -983,7 +1277,7 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: 1-darajada o‘choq yo‘q; 2-darajada kallazsimon tana, 3-darajada miya soni ham qo‘shiladi.",
+          "text": "Diqqat: 1-darajada o‘choq yo‘q; 2-darajada kallazsimon tana, 3-darajada miya ustuni ham qo‘shiladi.",
           "source": {
             "author": "Frati et al.",
             "title": "Diffuse Axonal Injury and Oxidative Stress: A Comprehensive Review, International Journal of Molecular Sciences",
@@ -993,31 +1287,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Gennarelli darajalari",
-        "nodes": [],
-        "header": [
-          "Daraja",
-          "O‘choq",
-          "Oq modda"
+        "kind": "tree",
+        "root": "Gennarelli darajalari",
+        "children": [
+          {
+            "label": "1-daraja",
+            "items": [
+              "O‘choq yo‘q",
+              "Tarqoq aksonal bulblar"
+            ]
+          },
+          {
+            "label": "2-daraja",
+            "items": [
+              "Kallazsimon tana o‘chog‘i",
+              "Yarim sharlar oq moddasi"
+            ]
+          },
+          {
+            "label": "3-daraja",
+            "items": [
+              "Kallazsimon tana + rostral miya ustuni",
+              "Yarim sharlar oq moddasi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "1-daraja",
-            "Yo‘q",
-            "Tarqoq aksonal bulblar"
-          ],
-          [
-            "2-daraja",
-            "Kallazsimon tana",
-            "Yarim sharlar oq moddasida shikast"
-          ],
-          [
-            "3-daraja",
-            "Kallazsimon tana + rostral miya soni",
-            "Yarim sharlar oq moddasida shikast"
-          ]
-        ]
+        "caption": "Gennarelli darajalari"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega daraja ortishi bilan koma og‘irligi va oqibat bog‘lanadi? 2) Qaysi hududda o‘choq topilsa, 2-daraja 3-darajaga o‘tadi? Doskada chizing: uch ustunli jadvalni talabalar bilan birga to‘ldiring. Tipik xato: Gennarelli darajalarini (1–3) Adams bo‘yicha strukturaviy belgilar (I–III) bilan aralashtirish va o‘choqning qaysi qismda ekanligini unutish."
     },
@@ -1053,27 +1348,22 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Muddat va gistologik belgi",
-        "nodes": [],
-        "header": [
-          "Muddat",
-          "Gistologik manzara"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Kunlar",
+            "text": "Oq moddada ko‘p aksonal shishlar"
+          },
+          {
+            "title": "Haftalar",
+            "text": "Mikroglia mayda klasterlari"
+          },
+          {
+            "title": "Oylar",
+            "text": "Valler degeneratsiyasi: miya va orqa miya"
+          }
         ],
-        "rows": [
-          [
-            "Kunlar",
-            "Ko‘p aksonal shishlar oq moddada"
-          ],
-          [
-            "Haftalar",
-            "Oq moddada mikroglia mayda klasterlari"
-          ],
-          [
-            "Oylar",
-            "Valler degeneratsiyasi: miya va orqa miya"
-          ]
-        ]
+        "caption": "Omon qolish muddati va gistologik manzara"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega aksonal shish kunlar ichida, Valler degeneratsiyasi esa oylar o‘tgach ko‘rinadi? 2) Oylar o‘tgan holatda gidrosefaliya bilan adashish nimaga olib keladi? Doskada: kunlar, haftalar va oylar uchun vaqt chizig‘ini chizib, har biriga gistologik belgini yozing. Tipik xato: mikroglia klasterlarini (haftalar) Valler degeneratsiyasi (oylar) bilan almashtirib yuborish."
     },
@@ -1109,27 +1399,25 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Usul va aniqlash vaqti",
-        "nodes": [],
-        "header": [
-          "Usul",
-          "Aniqlash vaqti"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Gematoksilin-eozin",
+            "value": "≈ 24",
+            "unit": "soatdan"
+          },
+          {
+            "label": "Kumush impregnatsiyasi",
+            "value": "12–18",
+            "unit": "soatdan"
+          },
+          {
+            "label": "β-APP immunogistokimyo",
+            "value": "2–3",
+            "unit": "soatdan"
+          }
         ],
-        "rows": [
-          [
-            "Gematoksilin-eozin",
-            "Taxminan 24 soatdan keyin"
-          ],
-          [
-            "Kumush impregnatsiyasi",
-            "Jarohatdan 12–18 soat keyin"
-          ],
-          [
-            "β-APP immunogistokimyosi",
-            "2–3 soatdan keyin"
-          ]
-        ]
+        "caption": "Aksonal shikastni aniqlash vaqti"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Jarohatdan 3 soat o‘tib o‘lgan jasadda qaysi usul tanlanadi va nega? 2) Gematoksilin-eozin manfiy bo‘lsa, DAI inkor etiladimi? Doskada: soat o‘qini chizib, 2–3, 12–18 va 24 soat nuqtalariga usullarni joylang. Tipik xato: kumush impregnatsiyasi (12–18 soat) bilan gematoksilin-eozin (taxminan 24 soat) vaqtini almashtirib yuborish. Eslab qoling: usul qanchalik zamonaviy bo‘lsa, shunchalik erta aniqlaydi."
     },
@@ -1315,7 +1603,7 @@
           ],
           [
             "GFAP, tau, Aβ42",
-            "GFAP va tau 24 soatda, Aβ42 30-kunda maks.",
+            "GFAP, tau — 24 soat; Aβ42 — 30-kun",
             "Uchalasi birga foydali"
           ],
           [
@@ -1359,17 +1647,38 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Sharh bosqichlari",
-        "nodes": [
-          "PubMed qidiruvi (PRISMA)",
-          "Sarlavha/annotatsiya skrining",
-          "To‘liq matnni baholash",
-          "Kiritish mezonlari tekshiruvi",
-          "17 ta tadqiqot tahlili"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Kiritilgan tadqiqot",
+            "value": "17"
+          },
+          {
+            "label": "O‘rganilgan marker",
+            "value": "9"
+          },
+          {
+            "label": "IL-6",
+            "value": "6",
+            "unit": "tadqiqot"
+          },
+          {
+            "label": "GFAP, LDH, S100B",
+            "value": "5",
+            "unit": "tadqiqot"
+          },
+          {
+            "label": "NSE",
+            "value": "4",
+            "unit": "tadqiqot"
+          },
+          {
+            "label": "BDNF, MAPT, ferritin",
+            "value": "3",
+            "unit": "tadqiqot"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "O‘limdan keyingi biomarkerlar sharhi"
       },
       "teacher_notes": "Vaqt: 6 daq. Qisqartmalar: PRISMA – tizimli sharhlar hisobot qoidasi; S100B – S100 kalsiy bog‘lovchi oqsil B; NSE – neyronga xos enolaza; GFAP – glial fibrillyar kislotali oqsil; IL-6 – interleykin-6; LDH – laktatdegidrogenaza; BDNF – miyadan ajraluvchi neyrotrofik omil; NGAL – neytrofil jelatinaza bilan bog‘liq lipokalin; MAPT – mikronaychalar bilan bog‘liq tau oqsili. Muhokama: nega nazorat guruhi bo‘lmagan ishlar kiritilmagan? Nazorat guruhini tanlash natijaga qanday ta’sir qiladi? Doskada: sharh bosqichlari zanjirini chizing. Tipik xato: 17 ta tadqiqotni 17 ta marker deb adashtirish; markerlar 9 ta."
     },
@@ -1470,36 +1779,30 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Minimal omon qolish muddati",
-        "nodes": [],
-        "header": [
-          "Marker",
-          "Qiymat",
-          "Min. muddat"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "S100B > 10 000 ng/ml",
+            "value": "20",
+            "unit": "daqiqa"
+          },
+          {
+            "label": "NSE > 6000 ng/ml",
+            "value": "15",
+            "unit": "daqiqa"
+          },
+          {
+            "label": "Ferritin > 30 mg/l",
+            "value": "2",
+            "unit": "soat"
+          },
+          {
+            "label": "IL-6 > 100 000 pg/ml",
+            "value": "3",
+            "unit": "kun"
+          }
         ],
-        "rows": [
-          [
-            "S100B",
-            "> 10 000 ng/ml",
-            "20 daqiqa"
-          ],
-          [
-            "NSE",
-            "> 6000 ng/ml",
-            "15 daqiqa"
-          ],
-          [
-            "Ferritin",
-            "> 30 mg/l",
-            "2 soat"
-          ],
-          [
-            "IL-6",
-            "> 100 000 pg/ml",
-            "3 kun"
-          ]
-        ]
+        "caption": "Minimal omon qolish muddati"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: yuqori qiymat nimani, past qiymat nimani anglatadi? Nega bu usul faqat minimal muddatni beradi? Doskada: vaqt o‘qini chizib, 15 daq, 20 daq, 2 soat, 3 kun nuqtalarini belgilang. Tipik xato: yuqori qiymatni aniq muddat deb talqin qilish; qiymatlar likvor uchun. Tezkor savol: qaysi marker eng uzoq (3 kun) minimal muddatni ko‘rsatadi?"
     },
@@ -1534,7 +1837,16 @@
           "uncertain": false
         },
         {
-          "text": "Kelajak: miRNK (mikro-ribonuklein kislota) va metabolomika, shuningdek siydik, so‘lak, shishasimon suyuqlik. Hozircha chegaralar tashxisni isbotlamaydi, shubhani kuchaytiradi.",
+          "text": "Kelajak: miRNK (mikro-ribonuklein kislota) va metabolomika, shuningdek siydik, so‘lak, shishasimon suyuqlik.",
+          "source": {
+            "author": "Zwirner et al.",
+            "title": "Forensic biomarkers of lethal traumatic brain injury, International Journal of Legal Medicine",
+            "page": "PMID 35226180"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hozircha chegaralar tashxisni isbotlamaydi, shubhani kuchaytiradi.",
           "source": {
             "author": "Zwirner et al.",
             "title": "Forensic biomarkers of lethal traumatic brain injury, International Journal of Legal Medicine",
@@ -1621,36 +1933,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "KT va MRT solishtiruvi",
-        "nodes": [],
-        "header": [
-          "Jihat",
-          "KT",
-          "MRT"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "KT",
+            "items": [
+              "Birinchi bosqich, shoshilinch",
+              "O‘tkir gemorragik o‘choqlar",
+              "DAI ni aniq ko‘rsatmaydi"
+            ]
+          },
+          {
+            "title": "MRT",
+            "items": [
+              "DAI uchun sezgirroq",
+              "Mikroqon quyilish, aksonal shikast",
+              "3 T va 7 T sezgirroq",
+              "Beqaror bemorda qiyin",
+              "SWI/T2*GRE: qon; DWI/DTI: akson"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Rol",
-            "Birinchi bosqich, shoshilinch",
-            "DAI uchun sezgirroq usul"
-          ],
-          [
-            "Ko‘radi",
-            "O‘tkir gemorragik o‘choqlar",
-            "Mikroqon quyilish, aksonal shikast"
-          ],
-          [
-            "Cheklov",
-            "DAI ni aniq ko‘rsatmaydi",
-            "Beqaror bemorda qiyin"
-          ],
-          [
-            "Ketma-ketlik",
-            "SWI/T2*GRE: qon; DWI/DTI: akson",
-            "3 T va 7 T sezgirroq"
-          ]
-        ]
+        "caption": "KT va MRT solishtiruvi"
       },
       "teacher_notes": "Vaqt: 6 daq. Qisqartmalar: MRT (magnit-rezonans tomografiya), SWI (susceptibility-weighted imaging, qonga sezgir ketma-ketlik), T2*GRE (T2* gradient-echo), DWI (diffuziya-vaznli tasvir), DTI (diffuziya tenzor tasviri). Muhokama: 1) Nega manfiy KT DAI ni inkor etmaydi? 2) Sud-tibbiy noaniq holatda 7 T SWI nimani beradi? Doskada: vaqt chizig‘i chizdiring: KT, MRT, 3 oydan keyingi nazorat. Tipik xato: KT dagi normal topilmani DAI yo‘qligi deb talqin qilish."
     },
@@ -1701,7 +2005,7 @@
       "title": "Xulosa",
       "bullets": [
         {
-          "text": "Diffuz aksonal shikast (DAI) aylanma tezlanish-sekinlashuv kuchlaridan yuzaga keladi. Dastlabki shikastdan keyin kalsiy va erkin radikallar ishtirokida ikkilamchi kaskad davom etadi.",
+          "text": "Diffuz aksonal shikast (DAI) aylanma tezlanish-sekinlashuv kuchlaridan yuzaga keladi.",
           "source": {
             "author": "Frati et al.",
             "title": "Diffuse Axonal Injury and Oxidative Stress: A Comprehensive Review, International Journal of Molecular Sciences",
@@ -1710,7 +2014,25 @@
           "uncertain": false
         },
         {
-          "text": "Gistologik tashxis shishgan aksonlar va aksonal bulbalarni topishga asoslanadi. Shikast oq moddada keng tarqalgan, kamida bir o‘choq tentoriumdan yuqorida, bittasi pastda bo‘lishi kerak.",
+          "text": "Dastlabki shikastdan keyin kalsiy va erkin radikallar ishtirokida ikkilamchi kaskad davom etadi.",
+          "source": {
+            "author": "Frati et al.",
+            "title": "Diffuse Axonal Injury and Oxidative Stress: A Comprehensive Review, International Journal of Molecular Sciences",
+            "page": "PMID 29207487"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gistologik tashxis shishgan aksonlar va aksonal bulbalarni topishga asoslanadi.",
+          "source": {
+            "author": "Frati et al.",
+            "title": "Diffuse Axonal Injury and Oxidative Stress: A Comprehensive Review, International Journal of Molecular Sciences",
+            "page": "PMID 29207487"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shikast oq moddada keng tarqalgan, kamida bir o‘choq tentoriumdan yuqorida, bittasi pastda bo‘lishi kerak.",
           "source": {
             "author": "Frati et al.",
             "title": "Diffuse Axonal Injury and Oxidative Stress: A Comprehensive Review, International Journal of Molecular Sciences",
@@ -1726,19 +2048,10 @@
             "page": "PMID 29207487"
           },
           "uncertain": false
-        },
-        {
-          "text": "Biomarkerlar (S100B, NSE, GFAP va boshqalar) faqat qo‘shimcha dalil. Ular o‘lim sababini mustaqil isbotlamaydi, avtopsiya va gistologiya bilan birga baholanadi.",
-          "source": {
-            "author": "Zwirner et al.",
-            "title": "Forensic biomarkers of lethal traumatic brain injury, International Journal of Legal Medicine",
-            "page": "PMID 35226180"
-          },
-          "uncertain": false
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 4 daq. Muhokama: (1) DAI tashxisi nega mikroskopiyasiz qo‘yilmaydi? (2) Biomarker natijasi va gistologiya bir-biriga zid kelsa, qanday qaror qilinadi? Doskada chizish: mexanizm zanjirini yozing: kuch, aksonal shikast, Ca2+ va ROS, aksonal bulba, gistologik tashxis. Tipik xato: biomarker chegaraviy qiymatini mutlaq tashxis mezoni deb qabul qilish."
+      "teacher_notes": "Vaqt: 4 daq. Muhokama: (1) DAI tashxisi nega mikroskopiyasiz qo‘yilmaydi? (2) Biomarker natijasi va gistologiya bir-biriga zid kelsa, qanday qaror qilinadi? Doskada chizish: mexanizm zanjirini yozing: kuch, aksonal shikast, Ca2+ va ROS, aksonal bulba, gistologik tashxis. Tipik xato: biomarker chegaraviy qiymatini mutlaq tashxis mezoni deb qabul qilish. Biomarkerlar (S100B, NSE, GFAP va boshqalar) faqat qo‘shimcha dalil. Ular o‘lim sababini mustaqil isbotlamaydi, avtopsiya va gistologiya bilan birga baholanadi."
     }
   ],
   "mcq": [
@@ -1794,11 +2107,11 @@
       "question": "Avtohalokatda boshning tez burilishi kuzatilgan, bosh suyagi sinmagan, kompyuter tomografiyada (KT) ichki shikast ko‘rinmaydi, ammo ong uzoq yo‘qolgan. Qaysi mexanizm ehtimol?",
       "options": [
         "Bosh suyagi sinishidan keyin paydo bo‘lgan epidural gematoma",
-        "Aylanma tezlanish-sekinlanishdan yuzaga kelgan kesuvchi kuchlar",
+        "Miyaning bir nuqtada to‘g‘ridan-to‘g‘ri ezilishi",
         "Miya qon tomirining o‘z-o‘zidan yorilishi sababli qon quyilishi",
-        "Miyaning bir nuqtada to‘g‘ridan-to‘g‘ri ezilishi"
+        "Aylanma tezlanish-sekinlanishdan yuzaga kelgan kesuvchi kuchlar"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Diffuz aksonal shikastlanish (DAI) KTda ko‘rinadigan intrakranial o‘zgarishlarsiz ong yo‘qolishining asosiy sabablaridan biri hisoblanadi. U aylanma tezlanish-sekinlanish va kesuvchi kuchlarning morfologik natijasidir. Zarba kuchi bosh suyagini sindirishga yetmasligi ham mumkin.",
       "source": {
         "author": "Frati et al.",
@@ -1855,19 +2168,19 @@
       }
     },
     {
-      "question": "Jabrlanuvchi bosh jarohatidan taxminan 3 soat o‘tib vafot etdi. Gematoksilin-eozin bilan aksonal o‘zgarish ko‘rinmadi. Qaysi usul shikastlangan aksonlarni shu muddatda aniqlashi mumkin?",
+      "question": "Epidural qon quyilish qaysi tomir shikastlanishi bilan bog‘liq?",
       "options": [
-        "β-APP ga qarshi antitanalar bilan immunogistokimyo",
-        "Kumush impregnatsiyasi usuli bilan bo‘yash",
-        "Faqat gematoksilin-eozin bilan bo‘yash",
-        "Faqat makroskopik tekshiruv usuli bilan ko‘rish"
+        "O‘rta meningeal arteriya",
+        "Ko‘prik (bridging) venalar",
+        "Vertebral arteriya",
+        "Chuqur miya venalari"
       ],
       "correct_index": 0,
-      "explanation": "β-APP ga qarshi immunogistokimyo shikastlangan aksonlarni jarohatdan 2–3 soat o‘tib aniqlashga imkon beradi. Gematoksilin-eozin taxminan 24 soatdan keyin, kumush impregnatsiyasi 12–18 soatdan keyin aksonal shikastni ko‘rsatadi. β-APP bo‘yalishi travma bilan ishemiya/gipoksiyani farqlamaydi.",
+      "explanation": "Epidural qon quyilish meningeal arteriya, ayniqsa chakka suyagidagi o‘rta meningeal arteriya shikastidan; arterial qon tez to‘planib durani suyakdan ajratadi.",
       "source": {
-        "author": "Frati et al.",
-        "title": "Diffuse Axonal Injury and Oxidative Stress: A Comprehensive Review, International Journal of Molecular Sciences",
-        "page": "PMID 29207487, 5.3-bo‘lim (Immunogistokimyo), bet raqami berilmagan"
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "101"
       }
     },
     {
@@ -1919,19 +2232,19 @@
       }
     },
     {
-      "question": "Bosh miya jarohatidan taxminan 3 soat o‘tib jabrlanuvchi vafot etdi. Shikastlangan aksonlarni shu muddatda qaysi usul aniqlay oladi?",
+      "question": "Ensaga yiqilganda kontrkoup kontuziyalar ko‘pincha qayerda uchraydi?",
       "options": [
-        "β-APPga qarshi antitanalar bilan immunogistokimyo",
-        "Gematoksilin-eozin bilan oddiy bo‘yash usuli",
-        "Kumush impregnatsiyasi usuli bilan bo‘yash",
-        "Vaqt oynasidan qat’i nazar, hech qaysi usul"
+        "Peshona va chakka bo‘laklarining pastki yuzasida",
+        "Zarba joyi — ensa po‘stlog‘ida",
+        "Miyacha yarim sharlarida",
+        "Ko‘prikning old yuzasida"
       ],
       "correct_index": 0,
-      "explanation": "β-APPga qarshi antitanalar shikastlangan aksonlarni jarohatdan 2–3 soat o‘tib ko‘rsatadi. Kumush impregnatsiyasi 12–18 soatdan, gematoksilin-eozin esa taxminan 24 soatdan keyin natija beradi. Shu sababli 3 soatda faqat β-APP ishonchli.",
+      "explanation": "Harakatdagi bosh ensaga urilganda kontrkoup kontuziyalar ko‘pincha peshona va chakka bo‘laklarining pastki yuzasida paydo bo‘ladi.",
       "source": {
-        "author": "Frati et al.",
-        "title": "Diffuse Axonal Injury and Oxidative Stress: A Comprehensive Review, International Journal of Molecular Sciences",
-        "page": "PMID 29207487, 5.3-bo‘lim"
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "104"
       }
     },
     {

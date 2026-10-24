@@ -165,36 +165,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Lawes va Berg bo‘yicha agoniya tiplari",
-        "nodes": [],
-        "header": [
-          "Tip",
-          "Davomiyligi",
-          "Misol"
+        "kind": "tree",
+        "root": "Agoniya tiplari (Lawes, Berg)",
+        "children": [
+          {
+            "label": "Agoniyasiz",
+            "items": [
+              "Bir zumda",
+              "Tananing parchalanishi"
+            ]
+          },
+          {
+            "label": "Qisqa agoniyali",
+            "items": [
+              "4–5 daqiqa",
+              "Asfiksiya, elektrotravma"
+            ]
+          },
+          {
+            "label": "Uzoq agoniyali",
+            "items": [
+              "Soatlar, kunlar",
+              "Kasallik, shikastlanish"
+            ]
+          },
+          {
+            "label": "Sun’iy uzaytirilgan",
+            "items": [
+              "Hafta, oy, yillar",
+              "Tibbiy muolajalar bilan"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Agoniyasiz",
-            "Bir zumda",
-            "Tananing parchalanishi"
-          ],
-          [
-            "Qisqa agoniyali",
-            "4-5 daqiqa",
-            "Asfiksiya, elektrotravma"
-          ],
-          [
-            "Uzoq agoniyali",
-            "Soatlar, kunlar",
-            "Kasallik, shikastlanish"
-          ],
-          [
-            "Sun’iy uzaytirilgan",
-            "Hafta, oy, yillar",
-            "Tibbiy muolajalar bilan"
-          ]
-        ]
+        "caption": "Agoniya tiplari"
       },
       "teacher_notes": "Vaqt: 6-7 daq. Muhokama: 1) Nega klinik o‘lim sovuqda uzayadi? 2) Qaysi tipda o‘lim sababi tez sodir bo‘ladi? Doskada: jadvalni chizing va har tipga o‘z misolingizni qo‘shing. Tipik xato: klinik o‘limni biologik o‘lim bilan aralashtirish yoki agoniyani bevosita o‘lim deb hisoblash."
     },
@@ -242,7 +245,7 @@
           [
             "Aktiv",
             "Harakat orqali o‘limni tezlashtirish",
-            "Bevosita: qotillik; bilvosita: ehtiyotsizlik"
+            "Bevosita: qotillik; bil.: ehtiyotsizlik"
           ],
           [
             "Passiv",
@@ -338,36 +341,25 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ehtimoliy va ishonchli belgilar",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Belgi",
-          "Izoh"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Ehtimoliy belgilar",
+            "items": [
+              "Hush, nafas, yurak urishi yo‘q",
+              "Darhol aniqlanadi"
+            ]
+          },
+          {
+            "title": "Ishonchli belgilar",
+            "items": [
+              "Beloglazov simptomi, eng erta (15–20 daq.)",
+              "Harorat 23 °S va undan past",
+              "Murda dog‘lari, qotish, qurish"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Ehtimoliy",
-            "Hush, nafas, yurak urishi yo‘q",
-            "Darhol aniqlanadi"
-          ],
-          [
-            "Ishonchli (eng erta)",
-            "Beloglazov simptomi",
-            "15-20 daqiqadan so‘ng"
-          ],
-          [
-            "Ishonchli",
-            "Harorat 23 °S va undan past",
-            "Biroz muddatdan so‘ng"
-          ],
-          [
-            "Ishonchli",
-            "Murda dog‘lari, qotish, qurish",
-            "Ilk murda o‘zgarishlari"
-          ]
-        ]
+        "caption": "O‘lim faktini aniqlash belgilari"
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Nega darhol aniqlangan belgilar o‘lim uchun ishonchli emas? 2) Beloglazov simptomi nega 1,5-2 soatdan keyin bilinmay qolishi mumkin? Doskada: ehtimoliy va ishonchli belgilar ikki ustunini chizdiring. Diqqat: dastlabki belgi ≠ ishonchli belgi. Tipik xato: tana sovushini darhol ishonchli belgi deb hisoblash; ishonchli belgi bo‘lib 23 °S va undan past harorat sanaladi. Miya o‘limi kasalxonada reanimatolog va nevrolog tomonidan belgilangan tartibda aniqlanadi (220-bet)."
     },
@@ -403,31 +395,34 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Toifa, xil, tur va vakolat",
-        "nodes": [],
-        "header": [
-          "Daraja",
-          "Mazmuni",
-          "Aniqlaydi"
+        "kind": "tree",
+        "root": "O‘limning sud-tibbiy tasnifi",
+        "children": [
+          {
+            "label": "Toifa",
+            "items": [
+              "Zo‘raki yoki nozo‘raki",
+              "Aniqlaydi: sud-tibbiy ekspert"
+            ]
+          },
+          {
+            "label": "Xil",
+            "items": [
+              "Qotillik, o‘z-o‘zini o‘ldirish",
+              "Baxtsiz hodisa",
+              "Aniqlaydi: huquqni muhofaza idorasi"
+            ]
+          },
+          {
+            "label": "Tur",
+            "items": [
+              "Jarohat, asfiksiya, zahar, tok",
+              "Kasallik",
+              "Aniqlaydi: sud-tibbiy ekspert"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Toifa",
-            "Zo‘raki yoki nozo‘raki",
-            "Sud-tibbiy ekspert"
-          ],
-          [
-            "Xil",
-            "Qotillik, o‘z-o‘zini o‘ldirish, baxtsiz hodisa",
-            "Huquqni muhofaza etuvchi idora"
-          ],
-          [
-            "Tur",
-            "Jarohat, asfiksiya, zahar, tok; kasallik",
-            "Sud-tibbiy ekspert"
-          ]
-        ]
+        "caption": "Toifa, xil, tur va vakolat"
       },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Nega xilni aniqlash ekspertga emas, huquqni muhofaza idoralariga tegishli? 2) Nozo‘raki o‘limda nega xil emas, tur kasallik bo‘yicha ajratiladi? Doskada: toifa-xil-tur shajarasini chizdiring. Diqqat: toifa ≠ xil (toifa: zo‘raki/nozo‘raki; xil: qotillik va h.k.). Tipik xato: talabalar xilni ham ekspert aniqlaydi deb o‘ylaydi; asosi qasd mavjudligini aniqlashdir (221-bet)."
     },
@@ -484,7 +479,7 @@
           ],
           [
             "Kimyoviy: qorachiq",
-            "Atropin kengaytiradi, pilokarpin toraytiradi",
+            "Atropin — midriaz, pilokarpin — miyoz",
             "Dastlabki 5-6 soat"
           ],
           [
@@ -614,36 +609,40 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Murda o‘zgarishlari sxemasi",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Muddat",
-          "Misollar"
+        "kind": "tree",
+        "root": "Murda o‘zgarishlari",
+        "children": [
+          {
+            "label": "Ilk (1-kun)",
+            "items": [
+              "Sovush, qurish, dog‘lar",
+              "Qotish, autoliz"
+            ]
+          },
+          {
+            "label": "Kech yemiruvchi",
+            "items": [
+              "2-kundan boshlab",
+              "Chirish; hasharot, hayvon, qush, baliq"
+            ]
+          },
+          {
+            "label": "Kech saqlovchi",
+            "items": [
+              "2-kundan boshlab",
+              "Mumifikatsiya, yog‘-mo‘m, torfli oshlash"
+            ]
+          },
+          {
+            "label": "Sun’iy",
+            "items": [
+              "Vaqtga bog‘liq emas",
+              "Qismlash, yoqish, eritish",
+              "Balzam, muzlatish"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Ilk",
-            "O‘limdan so‘ng 1-kun",
-            "Sovush, qurish, dog‘lar, qotish, autoliz"
-          ],
-          [
-            "Kech yemiruvchi",
-            "2-kundan boshlab",
-            "Chirish; hasharot, hayvon, qush, baliq"
-          ],
-          [
-            "Kech saqlovchi",
-            "2-kundan boshlab",
-            "Mumifikatsiya, yog‘-mo‘m, torfli oshlash"
-          ],
-          [
-            "Sun’iy",
-            "Vaqtga bog‘liq emas",
-            "Qismlash, yoqish, eritish; balzam, muzlatish"
-          ]
-        ]
+        "caption": "Murda o‘zgarishlari sxemasi"
       },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Autoliz nega ilk o‘zgarishlar qatoriga kiradi, chirishdan nimasi bilan farq qiladi? 2) Sun’iy o‘zgarishlar nega o‘lim muddatini aniqlashda ishonchli emas? Doskada tasnif daraxtini chizdiring: tabiiy/sun’iy → ilk/kech → yemiruvchi/saqlovchi. Diqqat: autoliz (o‘z-o‘zini hazm qilish, hujayra fermentlari) ≠ chirish (mikroorganizmlar ta’siri). Tipik xato: mumifikatsiya va yog‘-mo‘mni yemiruvchi o‘zgarishlar deb hisoblash, aslida ular saqlovchi hisoblanadi. Sun’iy o‘zgarishlar ham yemiruvchi (qismlash, yoqish, eritish) va saqlovchi (balzamlash, muzlatish) bo‘ladi."
     },
@@ -679,27 +678,25 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Muhit harorati bilan tenglashish",
-        "nodes": [],
-        "header": [
-          "Soha",
-          "Tenglashish"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Qo‘ltiq osti",
+            "value": "16",
+            "unit": "soat keyin"
+          },
+          {
+            "label": "To‘g‘ri ichak",
+            "value": "19",
+            "unit": "soat keyin"
+          },
+          {
+            "label": "Jigar",
+            "value": "25",
+            "unit": "soat keyin"
+          }
         ],
-        "rows": [
-          [
-            "Qo‘ltiq osti",
-            "16 soatdan keyin"
-          ],
-          [
-            "To‘g‘ri ichak",
-            "19 soatdan keyin"
-          ],
-          [
-            "Jigar",
-            "25 soatdan keyin"
-          ]
-        ]
+        "caption": "Muhit harorati bilan tenglashish"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: nima uchun jigar va to‘g‘ri ichak qo‘ltiq ostiga qaraganda kech tenglashadi? Dastlabki soatlarda harorat ba’zan bir necha gradusga ko‘tarilishi mumkin (ayrim yuqumli kasalliklar, kalla-miya jarohati, agonal davrda termoregulyatsiya buzilishi) — buni talabalarga aytib o‘ting. Doskada: tana harorati va vaqt bo‘yicha sovush egri chizig‘ini chizdiring. Tipik xato: 1°S/soat qoidasini aniq qonun deb qabul qilish; u faqat xona sharoiti uchun taxminiy qiymat."
     },
@@ -778,26 +775,24 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ho‘llangan doka sinamasi natijasi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Pergament",
-          "Shilinma"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Pergament dog‘i",
+            "items": [
+              "Sinamada yumshaydi va oqaradi",
+              "O‘limdan keyingi qurish"
+            ]
+          },
+          {
+            "title": "Hayotiy shilinma",
+            "items": [
+              "Sinamada o‘zgarmaydi",
+              "Hayotiy jarohat"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Sinamada",
-            "Yumshaydi va oqaradi",
-            "O‘zgarmaydi"
-          ],
-          [
-            "Kelib chiqishi",
-            "O‘limdan keyingi qurish",
-            "Hayotiy jarohat"
-          ]
-        ]
+        "caption": "Ho‘llangan doka sinamasi (5–10 daqiqa)"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: nima uchun hayotiy shilinma ho‘llangan dokadan keyin o‘zgarmaydi, pergament dog‘i esa yumshaydi? Pergament dog‘i shikastlanmagan, shox qavati yupqa joylarda (lab qizil hoshiyasi, moyak terisi, jinsiy olat boshchasi) ham paydo bo‘lishi mumkin. Doskada: sinama bosqichlarini (doka — 5-10 daq — natija) zanjir shaklida chizdiring. Tipik xato: sinamani yagona va yakuniy dalil deb hisoblash; manbada jarohat hayotiyligini aniqlashning boshqa usullari ham qo‘llanishi aytilgan."
     },
@@ -833,31 +828,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Qotish dinamikasi",
-        "nodes": [],
-        "header": [
-          "Muddat",
-          "Qotish holati"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1–3 soatdan keyin",
+            "text": "Chaynash mushaklarida aniqlana boshlaydi"
+          },
+          {
+            "title": "12–16 soatdan keyin",
+            "text": "Barcha mushaklarda qotish"
+          },
+          {
+            "title": "24 soatdan keyin",
+            "text": "Maksimal darajaga yetadi"
+          },
+          {
+            "title": "3–7 kundan keyin",
+            "text": "To‘liq yo‘qoladi"
+          }
         ],
-        "rows": [
-          [
-            "1-3 soatdan keyin",
-            "Chaynash mushaklarida aniqlana boshlaydi"
-          ],
-          [
-            "12-16 soatdan keyin",
-            "Barcha mushaklarda qotish kuzatiladi"
-          ],
-          [
-            "24 soatdan keyin",
-            "Maksimal darajaga etadi"
-          ],
-          [
-            "3-7 kundan keyin",
-            "To‘liq yo‘qoladi"
-          ]
-        ]
+        "caption": "Qotish dinamikasi"
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: nega AUF kamayganda mushak qotadi, AUF resintezida esa bo‘shashadi? Doskada: vaqt chizig‘ini (1-3 soat – 24 soat – 3-7 kun) va qotishning yuqoridan pastga yo‘nalishini chizdiring. Tipik xato: murda qotishi ‘o‘limdan darhol paydo bo‘ladi’ deb o‘ylash; aslida rivojlanadi, lekin 1-3 soatdan keyin aniqlanadi."
     },
@@ -979,31 +969,22 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Murda dog‘i bosqichlari",
-        "nodes": [],
-        "header": [
-          "Bosqich",
-          "Vaqt",
-          "Bosilganda"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Gipostaz",
+            "text": "1,5–2 dan 8–12 soatgacha; bosilganda yo‘qoladi, tez tiklanadi"
+          },
+          {
+            "title": "Staz",
+            "text": "12 dan 24 soatgacha; bosilganda oqaradi, sekin tiklanadi"
+          },
+          {
+            "title": "Imbibitsiya",
+            "text": "Chirish, gemoliz davri; rangi o‘zgarmaydi"
+          }
         ],
-        "rows": [
-          [
-            "Gipostaz",
-            "1,5-2 soatdan 8-12 soatgacha",
-            "Yo‘qoladi, tez tiklanadi"
-          ],
-          [
-            "Staz",
-            "12 soatdan 24 soatgacha",
-            "Oqaradi, sekin rangi tiklanadi"
-          ],
-          [
-            "Imbibitsiya",
-            "Chirish va gemoliz davri",
-            "Rangi o‘zgarmaydi"
-          ]
-        ]
+        "caption": "Murda dog‘i bosqichlari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega gipostazda dog‘ bosilganda yo‘qoladi? 2) Imbibitsiyada gemoglobin qayerga singadi? Doskada: tananing orqa yuzasida dog‘lar chizilib, bosqichlar ketma-ketligi strelka bilan ko‘rsatilsin. Tipik xato: bosqich vaqtlarini qat’iy chegara deb o‘ylash. Diqqat: gipostaz (dog‘ ko‘chadi) ≠ imbibitsiya (dog‘ ko‘chmaydi). Qo‘shimcha: staz boshida dog‘ butkul yo‘qolmaydi, yangi sohada qisman paydo bo‘ladi."
     },
@@ -1039,36 +1020,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Dog‘ va qontalash farqi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Murda dog‘i",
-          "Qontalash"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Murda dog‘i",
+            "items": [
+              "Chegarasi noaniq, qo‘shilib ketadi",
+              "Tananing past sohalarida",
+              "Bosilsa yo‘qoladi yoki oqaradi",
+              "Kesmada qon tomchilari yoki singgan yog‘"
+            ]
+          },
+          {
+            "title": "Qontalash",
+            "items": [
+              "Aniq shakl va chegara, qo‘shilmaydi",
+              "Tananing turli sohalarida",
+              "Bosilsa rangi o‘zgarmaydi",
+              "Kesmada to‘qimaga ivigan qon"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Shakl va chegara",
-            "Chegarasi noaniq, qo‘shilib ketadi",
-            "Aniq shakl va chegara, qo‘shilmaydi"
-          ],
-          [
-            "Joylashuvi",
-            "Tananing past joylashgan sohalari",
-            "Tananing turli sohalarida"
-          ],
-          [
-            "Barmoq bilan bosilsa",
-            "Yo‘qoladi yoki oqaradi",
-            "Rangi o‘zgarmaydi"
-          ],
-          [
-            "Xochsimon kesma",
-            "Qon tomchilari yoki qon singgan yog‘",
-            "To‘qimaga quyilgan, ivigan qon"
-          ]
-        ]
+        "caption": "Dog‘ va qontalash farqi"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Fuqaro ‘qontalash’ deb shikoyat qilsa, shifokor qanday tekshiradi? 2) Nega xochsimon kesma hal qiluvchi? Doskada: ikki ustunli solishtirish jadvalini talabalar bilan to‘ldiring. Tipik xato: bosilganda rang o‘zgarishini imbibitsiya bosqichida ham kutish. Diqqat: murda dog‘i ≠ qontalash. Imbibitsiyada dog‘ bosilganda o‘zgarmaydi, shuning uchun kesma kerak. Tezkor savol: qaysi belgi dog‘ni qontalashdan ishonchli ajratadi?"
     },
@@ -1085,7 +1058,7 @@
           "uncertain": false
         },
         {
-          "text": "Autoliz fermentga boy to‘qimalarda (oshqozon va ichak shilliq qavati, oshqozon osti bezi, buyrak usti bezi mag‘izi, ayrisimon bez, buyrak) tezroq va kuchli kechadi.",
+          "text": "Autoliz fermentga boy to‘qimalarda (oshqozon va ichak shilliq qavati, oshqozon osti bezi, buyrak usti bezi mag‘izi, ayrisimon bez, buyrak) tezroq kechadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
@@ -1094,7 +1067,16 @@
           "uncertain": false
         },
         {
-          "text": "Oshqozon shilliq qavati autolizi yanglish o‘yuvchi zahar ta’siri deb baholanishi mumkin. Oshqozon massasi qizilo‘ngach, halqum, kekirdakka o‘tganda ham shunday xato bo‘ladi.",
+          "text": "Oshqozon shilliq qavati autolizi yanglish o‘yuvchi zahar ta’siri deb baholanishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "229"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oshqozon massasi qizilo‘ngach, halqum, kekirdakka o‘tganda ham shunday xato bo‘ladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
@@ -1146,7 +1128,16 @@
           "uncertain": false
         },
         {
-          "text": "Pergament dog‘i yoki shilinma? Shubhali joyga iliq fiziologik eritmali doka 5-10 daqiqa qo‘yiladi: pergament dog‘i yumshab oqaradi, hayotiy shilinma o‘zgarmaydi.",
+          "text": "Pergament dog‘i yoki shilinma?",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "225"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shubhali joyga iliq fiziologik eritmali doka 5-10 daqiqa qo‘yiladi: pergament dog‘i yumshab oqaradi, hayotiy shilinma o‘zgarmaydi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
@@ -1190,36 +1181,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Chirish belgilari",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Muddat",
-          "Mohiyati"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Chirish hidi",
+            "text": "1-kun, tabiiy teshiklar: H₂S, merkaptanlar"
+          },
+          {
+            "title": "Murda yashili",
+            "text": "2-kun, o‘ng yonbosh: sulfgemoglobin"
+          },
+          {
+            "title": "Venoz to‘r",
+            "text": "3–4-kun, venalar bo‘ylab"
+          },
+          {
+            "title": "Chirish pufaklari",
+            "text": "4–6-kundan, epidermis ostida"
+          }
         ],
-        "rows": [
-          [
-            "Chirish hidi",
-            "1-kun, tabiiy teshiklar",
-            "Vodorod sulfid, merkaptanlar"
-          ],
-          [
-            "Murda yashili",
-            "2-kun, o‘ng yonbosh",
-            "Sulfgemoglobin hosil bo‘lishi"
-          ],
-          [
-            "Venoz to‘r",
-            "3-4-kun, venalar bo‘ylab",
-            "Gemolizga uchragan qon, sulfgemoglobin"
-          ],
-          [
-            "Chirish pufaklari",
-            "4-6-kundan",
-            "Epidermis ostida suyuqlik"
-          ]
-        ]
+        "caption": "Chirish belgilari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega murda suvda 2, yerda 8 barobar sekin chiriydi? 2) Murda yashili nega aynan o‘ng yonbosh sohada boshlanadi deb o‘ylaysiz? Doskada chizish: 1:2:8 nisbatini havo, suv, yer ustunlari ko‘rinishida. Tipik xato: murda yashili va venoz to‘rni bir belgi deb aralashtirish; birinchisi 2-kunda yashil tus, ikkinchisi 3-4-kunda venalar proeksiyasidagi to‘r."
     },
@@ -1314,7 +1295,16 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: hayvon, qush, baliq yemirishi muddatni aniqlashga yaramaydi. Ularning jarohati tish-tirnoq izi, tuk, par va ajratmalar topilishi bilan hayotiydan farqlanadi.",
+          "text": "Diqqat: hayvon, qush, baliq yemirishi muddatni aniqlashga yaramaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "233"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ularning jarohati tish-tirnoq izi, tuk, par va ajratmalar topilishi bilan hayotiydan farqlanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
@@ -1325,6 +1315,64 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega hasharotlar o‘lim muddatini aniqlashga yordam beradi, hayvonlar esa yordam bermaydi? 2) Murda topilgan joyda hasharotlarni qanday yig‘ib saqlash kerak (etil efiri yoki formalin, p.238)? Doskada chizing: pashsha tuxumi → lichinka → qo‘g‘irchoq → etuk pashsha zanjiri. Tipik xato: hayvon yemirgan jarohatni hayotiy jarohat deb baholash."
+    },
+    {
+      "title": "O‘limdan keyingi jarohatlar: Simpson bo‘yicha",
+      "bullets": [
+        {
+          "text": "Murda ham jarohatlanishi mumkin: quruqlikdagi hayvonlar, hasharotlar, suvda baliq va qisqichbaqasimonlar, kema parraklari.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "49"
+          }
+        },
+        {
+          "text": "Tishlangan joy shubhali bo‘lsa, odontolog chaqiriladi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "49"
+          }
+        },
+        {
+          "text": "“O‘limdan keyingi jarohatdan qon chiqmaydi” degan fikr noto‘g‘ri: ko‘pi qon sizadi, ayniqsa bosh terisi va suvdan topilgan jasadlarda.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "49"
+          }
+        },
+        {
+          "text": "Odatda o‘limdan keyingi yara chetlarida erta yallig‘lanish halqasi bo‘lmaydi, ammo uning yo‘qligi hayotning so‘nggi daqiqalaridagi jarohatni inkor etmaydi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "49–50"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Noto‘g‘ri fikr",
+            "items": [
+              "O‘limdan keyingi jarohatdan qon chiqmaydi"
+            ]
+          },
+          {
+            "title": "Simpson bo‘yicha",
+            "items": [
+              "Ko‘pi qon sizadi (bosh terisi, suvdan topilgan)",
+              "Erta yallig‘lanish halqasi odatda yo‘q",
+              "Halqa yo‘qligi hayot oxiridagi jarohatni inkor etmaydi"
+            ]
+          }
+        ],
+        "caption": "Jarohatning hayotiy yoki o‘limdan keyingiligi"
+      },
+      "teacher_notes": "Vaqt: 4 daq. Tanqidiy muhokama: hayotning oxirgi daqiqalaridagi va o‘limdan keyingi jarohat ko‘rinishi bir xil bo‘lishi mumkin."
     },
     {
       "title": "Saqlovchi va sun’iy o‘zgarishlar",
@@ -1369,7 +1417,7 @@
         "rows": [
           [
             "Mumifikatsiya",
-            "Issiq, quruq, yaxshi shamollatiladigan havo",
+            "Issiq, quruq, shamollatiladigan havo",
             "Katta yoshli 6–12 oy; bola 4–6 oy"
           ],
           [
@@ -1504,33 +1552,183 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Rektal harorat va muddat (Bilkun, 1985)",
-        "nodes": [],
-        "header": [
-          "Muddat (soat)",
-          "Rektal (°S)"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "2 soat",
+            "value": "38,5",
+            "unit": "°S"
+          },
+          {
+            "label": "6 soat",
+            "value": "32,8",
+            "unit": "°S"
+          },
+          {
+            "label": "12 soat",
+            "value": "29,2",
+            "unit": "°S"
+          },
+          {
+            "label": "24 soat",
+            "value": "23,2",
+            "unit": "°S"
+          }
         ],
-        "rows": [
-          [
-            "2",
-            "38,5"
-          ],
-          [
-            "6",
-            "32,8"
-          ],
-          [
-            "12",
-            "29,2"
-          ],
-          [
-            "24",
-            "23,2"
-          ]
-        ]
+        "caption": "Rektal harorat va muddat (Bilkun, 1985)"
       },
       "teacher_notes": "Vaqt: 10 daq. Muhokama: nega ikki marta o‘lchash kerak? Nega rektal haroratni aniqroq usul deymiz? Doskada: misoldagi ikki o‘lchovdan sovush tezligini (°S/soat) hisoblang va jadval bilan solishtiring. Formulalarning mualliflari (Fiddes–Patten, Burmann) matnda sxema ostida berilgan; kitobda tartib aniq ko‘rinmaydi, shuning uchun ehtiyot bo‘ling. Tipik xato: formuladagi t va T belgilarini almashtirish; bitta usul natijasini yakuniy deb qabul qilish."
+    },
+    {
+      "title": "Henssge nomogrammasi: harorat bo‘yicha muddat",
+      "bullets": [
+        {
+          "text": "Hozirda o‘lim muddatini baholashning eng foydali usuli — Henssge nomogrammasi (tana sovishiga asoslangan).",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "50"
+          }
+        },
+        {
+          "text": "U uch o‘lchamga tayanadi: tana harorati, muhit harorati va tana vazni; birortasidagi xato natijani buzadi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "50"
+          }
+        },
+        {
+          "text": "95% ishonchlilikda aniqlik eng yaxshi holatda ham eng ehtimoliy vaqtdan ±2,8 soat (jami 5,5 soatdan ortiq oraliq).",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "50"
+          }
+        },
+        {
+          "text": "Muhit haroratining 5 °C ga o‘zgarishi eng ehtimoliy o‘lim vaqtini kamida 1 soatga siljitadi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "50"
+          }
+        },
+        {
+          "text": "Tana harorati, muhit harorati va vazn qiymatlari o‘lchangach, to‘g‘ri chiziqlar yordamida o‘lim muddati o‘qiladi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "52"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Aniqlik (95%)",
+            "value": "± 2,8",
+            "unit": "soat"
+          },
+          {
+            "label": "Muhit ± 5 °C",
+            "value": "≥ 1",
+            "unit": "soat siljish"
+          },
+          {
+            "label": "Namuna: rektal",
+            "value": "26,4",
+            "unit": "°S"
+          },
+          {
+            "label": "Namuna: muhit",
+            "value": "12",
+            "unit": "°S"
+          },
+          {
+            "label": "Namuna: vazn",
+            "value": "90",
+            "unit": "kg"
+          },
+          {
+            "label": "Namuna: natija",
+            "value": "16 ± 1,8",
+            "unit": "soat"
+          }
+        ],
+        "caption": "Simpson: nomogramma ko‘rsatkichlari va namunasi"
+      },
+      "teacher_notes": "Vaqt: 5 daq. Namuna: 13,2–18,8 soat oldin (95%)."
+    },
+    {
+      "title": "Nomogramma qo‘llanish shartlari va tuzatishlar",
+      "bullets": [
+        {
+          "text": "Nomogramma kuchli nurlanish (quyosh, isitkich, sovitgich), kuchli isitma yoki umumiy gipotermiyada qo‘llanilmaydi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "52"
+          }
+        },
+        {
+          "text": "O‘lim va topilgan joy bir xil bo‘lishi, sovish sharoiti o‘lim bilan ko‘rik oralig‘ida keskin o‘zgarmagan bo‘lishi kerak.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "52"
+          }
+        },
+        {
+          "text": "Tana ostidagi sirt issiqlikni yaxshi o‘tkazmasligi kerak; sirt va havo harorati farq qilsa, o‘rtachasi olinadi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "52"
+          }
+        },
+        {
+          "text": "Kiyim-yopinchiqqa qarab vazn tuzatiladi: izolyatsiyada koeffitsient >1,0, tez sovishda <1,0; faqat tananing pastki qismidagi kiyim hisobga olinadi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "51–52"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Nomogramma shartlari",
+        "children": [
+          {
+            "label": "Nurlanish",
+            "items": [
+              "Quyosh, isitkich, sovitgich yo‘q"
+            ]
+          },
+          {
+            "label": "Tana holati",
+            "items": [
+              "Kuchli isitma, gipotermiya yo‘q"
+            ]
+          },
+          {
+            "label": "Sharoit",
+            "items": [
+              "O‘lim va topilgan joy bir xil"
+            ]
+          },
+          {
+            "label": "Tag sirt",
+            "items": [
+              "Issiqlik o‘tkazuvchanligi past"
+            ]
+          }
+        ],
+        "caption": "Henssge nomogrammasini qo‘llash shartlari"
+      },
+      "teacher_notes": "Vaqt: 4 daq. Simpson: bu tasvir haqiqiy ishlarda ishlatilmasligi kerak (o‘quv maqsadida)."
     },
     {
       "title": "Muddatni murda dog‘i va laboratoriya bo‘yicha aniqlash",
@@ -1574,6 +1772,86 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 8 daq. Muhokama: nega vaqt o‘tgan sari aniqlik pasayadi? Hasharotlarni to‘plab, etil efiri yoki formalinda konservatsiya qilishning ahamiyati nimada? Doskada: aniqlik oralig‘i bo‘yicha vaqt chizig‘i chizing (1–2 kun, kech o‘zgarishlar, skelet). Tipik xato: bitta belgi (masalan, faqat dog‘ rangi) asosida muddatni aniq deb xulosa qilish."
+    },
+    {
+      "title": "O‘lim muddatini baholashning boshqa usullari",
+      "bullets": [
+        {
+          "text": "Sud entomologi lichinkalar populyatsiyasi va rivojlanish bosqichiga qarab o‘lim muddatini kunlar–oylar aniqligida baholaydi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "53"
+          }
+        },
+        {
+          "text": "Tuxum–lichinka–g‘umbak sikli turga va haroratga bog‘liq; odatda taxminan 21–24 kun.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "53"
+          }
+        },
+        {
+          "text": "Oshqozon mazmuni taom vaqtini tasdiqlashi yoki inkor etishi mumkin, lekin o‘lim vaqtini ishonchli aniqlamaydi; hammasi saqlanadi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "53"
+          }
+        },
+        {
+          "text": "Shishasimon tanada kaliy kabi biokimyoviy usullar tadqiqotda qoldi, kundalik ishda muvaffaqiyat bermagan.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "50, 53"
+          }
+        },
+        {
+          "text": "Tana “iliqligini” qo‘l bilan baholash sudda ishlatilsa-da, ishonchsiz.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "50"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Qo‘shimcha usullar",
+        "children": [
+          {
+            "label": "Entomologiya",
+            "items": [
+              "Kunlar–oylar aniqligi",
+              "Hayot sikli ≈ 21–24 kun"
+            ]
+          },
+          {
+            "label": "Oshqozon mazmuni",
+            "items": [
+              "Taom vaqtini tasdiqlaydi",
+              "O‘lim vaqtini aniqlamaydi"
+            ]
+          },
+          {
+            "label": "Mikologiya",
+            "items": [
+              "Ba’zi holatlarda yordam beradi"
+            ]
+          },
+          {
+            "label": "Biokimyo",
+            "items": [
+              "Shishasimon tana: kaliy",
+              "Kundalik ishda ishlamagan"
+            ]
+          }
+        ],
+        "caption": "Simpson: PMI ni baholashga qo‘shimcha usullar"
+      },
+      "teacher_notes": "Vaqt: 4 daq. Manba: Simpson, 5-bob, 50 va 53-betlar."
     },
     {
       "title": "Tanatogenez va o‘lim sabablari raqobati",
@@ -1741,36 +2019,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ikki turdagi autopsiya farqi",
-        "nodes": [],
-        "header": [
-          "Mezon",
-          "Sud-tibbiy",
-          "Patolog-anat."
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Sud-tibbiy",
+            "items": [
+              "Maqsad: zo‘rakilikni tasdiqlash yoki inkor etish",
+              "Asos: tergovchi qarori yoki sud ajrimi",
+              "Hujjat: ekspert xulosasi",
+              "O‘lim muddatini aniqlash — muhim vazifa"
+            ]
+          },
+          {
+            "title": "Patologo-anatomik",
+            "items": [
+              "Maqsad: davolash to‘g‘riligini nazorat qilish",
+              "Asos: muassasa rahbari ko‘rsatmasi",
+              "Hujjat: bayonnoma, kasallik tarixiga ilova",
+              "O‘lim muddati kasallik tarixida"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Maqsad",
-            "Zo‘rakilikni tasdiqlash yoki inkor etish",
-            "Davolash to‘g‘riligini nazorat qilish"
-          ],
-          [
-            "Asos",
-            "Tergovchi qarori yoki sud ajrimi",
-            "Muassasa rahbari yoki muovini ko‘rsatmasi"
-          ],
-          [
-            "Hujjat",
-            "Ekspert xulosasi",
-            "Bayonnoma, kasallik tarixiga ilova"
-          ],
-          [
-            "O‘lim muddati",
-            "Aniqlash muhim vazifa",
-            "Kasallik tarixida ko‘rsatilgan"
-          ]
-        ]
+        "caption": "Ikki turdagi autopsiya farqi"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega sud-tibbiy ekspertizada kiyim va jarohatlar sinchiklab o‘rganiladi, patologo-anatomik tekshiruvda esa yo‘q? 2) Verbal autopsiya qachon qo‘llanadi? Doskada: jadvalni talabalar bilan birga chizing, ustunlarni ranglar bilan ajrating. Tipik xato: patologo-anatomik tekshiruvni ham tergovchi qarori bilan o‘tkaziladi deb o‘ylash. Aslida uni davolash muassasasi rahbari yoki muovini buyuradi."
     },
@@ -1805,7 +2075,16 @@
           "uncertain": false
         },
         {
-          "text": "Savol 2: sabablar raqobatini va ekspertiza turini aniqlang. Kalla-miya jarohati va suv bilan bo‘g‘ilish uzoq sabablar raqobatidir; zo‘raki o‘lim uchun sud-tibbiy ekspertiza tayinlanadi.",
+          "text": "Savol 2: sabablar raqobatini va ekspertiza turini aniqlang.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "238, 242"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kalla-miya jarohati va suv bilan bo‘g‘ilish uzoq sabablar raqobatidir; zo‘raki o‘lim uchun sud-tibbiy ekspertiza tayinlanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
@@ -1821,7 +2100,16 @@
       "title": "Xulosa: asosiy farqlar va eslab qolish",
       "bullets": [
         {
-          "text": "Murda dog‘i bosilganda yo‘qoladi yoki oqaradi, qontalash o‘zgarmaydi. Xochsimon kesmada dog‘da qon tomchilari, qontalashda ivigan qon bo‘ladi. Diqqat: murda dog‘i ≠ qontalash.",
+          "text": "Murda dog‘i bosilganda yo‘qoladi yoki oqaradi, qontalash o‘zgarmaydi. Xochsimon kesmada dog‘da qon tomchilari, qontalashda ivigan qon bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
+            "page": "228-229"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: murda dog‘i ≠ qontalash.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
@@ -1866,11 +2154,11 @@
       "question": "Bemorda nafas to‘satdan to‘xtadi, yurak faoliyati keskin buzildi, qorachiqlar kengayib nurga reaksiya bermayapti. Holat taxminan 3 daqiqa davom etdi. Bu qaysi bosqich?",
       "options": [
         "Preagoniya bosqichi",
-        "Terminal pauza bosqichi",
         "Agoniya bosqichi",
+        "Terminal pauza bosqichi",
         "Klinik o‘lim bosqichi"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Terminal pauzada nafas to‘satdan to‘xtaydi, yurak faoliyati keskin buziladi, qorachiqlar kengayadi va refleksler so‘nadi. Bu bosqich bir necha soniyadan 3-4 daqiqagacha davom etadi. Preagoniyada nafas hali to‘xtamaydi. Agoniyada nafas tiklanadi. Klinik o‘lim esa yurak urishi to‘xtagandan keyin boshlanadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1881,12 +2169,12 @@
     {
       "question": "Reanimatologga yurak urishi to‘xtaganiga 4 daqiqa bo‘lgan, tana harorati odatdagidek bemor keltirildi. Bu holat qaysi bosqichga mos keladi?",
       "options": [
-        "Klinik o‘lim bosqichi",
         "Biologik o‘lim bosqichi",
+        "Klinik o‘lim bosqichi",
         "Terminal pauza bosqichi",
         "Agoniya bosqichi"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Klinik o‘lim yurak urishi to‘xtagandan keyin boshlanadi. Odatdagi sharoitda u 5-6 daqiqagacha davom etadi va funksiyalarni tiklash imkoniyati saqlanadi. Biologik o‘limda tiklab bo‘lmaydigan o‘zgarishlar allaqachon sodir bo‘lgan. Terminal pauza va agoniya yurak to‘xtashidan oldingi bosqichlardir.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1946,11 +2234,11 @@
       "question": "Xonada topilgan murdada qo‘ltiq osti harorati tashqi muhit harorati bilan tenglashgan. O‘limdan taxminan qancha vaqt o‘tgan?",
       "options": [
         "Taxminan 8 soat o‘tgan",
-        "Taxminan 16 soat o‘tgan",
+        "Taxminan 25 soat o‘tgan",
         "Taxminan 19 soat o‘tgan",
-        "Taxminan 25 soat o‘tgan"
+        "Taxminan 16 soat o‘tgan"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Xona sharoitida qo‘ltiq ostidagi harorat tashqi muhit bilan 16 soatdan keyin tenglashadi. To‘g‘ri ichakda bu 19 soatdan, jigarda 25 soatdan keyin bo‘ladi. Shuning uchun 19 va 25 soat variantlari boshqa sohalarga tegishli.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2135,19 +2423,19 @@
       }
     },
     {
-      "question": "Murda dog‘lari barmoq bilan bosilganda to‘liq yo‘qolmaydi, faqat oqaradi va sekin rangini tiklaydi. Bu qaysi bosqichga xos?",
+      "question": "Henssge nomogrammasi o‘lim muddatini baholashda qaysi uch o‘lchamga tayanadi?",
       "options": [
-        "Gipostaz bosqichiga xos",
-        "Staz bosqichiga xos",
-        "Imbibitsiya bosqichiga xos",
-        "Kech chirish bosqichiga xos"
+        "Tana harorati, muhit harorati va tana vazni",
+        "Tana harorati, murda dog‘i rangi va qotish darajasi",
+        "Muhit harorati, namlik va shamol tezligi",
+        "Rektal harorat, jins va yosh"
       ],
-      "correct_index": 1,
-      "explanation": "Staz bosqichi o‘limdan 12–24 soat oralig‘ida bo‘ladi. Dog‘lar bosilganda oqaradi va sekin tiklanadi. Gipostazda dog‘lar yo‘qolib tezda tiklanadi, imbibitsiyada esa bosilganda rangi o‘zgarmaydi.",
+      "correct_index": 0,
+      "explanation": "Henssge nomogrammasi tana harorati, muhit harorati va tana vazniga tayanadi; birortasidagi xato natijani buzadi.",
       "source": {
-        "author": "G‘iyosov Z.A.",
-        "title": "Sud tibbiyoti (Tibbiyot oliy o‘quv yurtlari talabalari uchun darslik), Toshkent: Global Books nashriyoti",
-        "page": "227-228"
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "50"
       }
     },
     {

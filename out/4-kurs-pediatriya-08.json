@@ -84,7 +84,31 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Ekspertiza tayinlanadi",
+        "children": [
+          {
+            "label": "Onasi noma’lum",
+            "items": [
+              "Go‘dak murdasi topilganda"
+            ]
+          },
+          {
+            "label": "O‘lik tug‘ilish",
+            "items": [
+              "Davolash muassasasidan tashqarida"
+            ]
+          },
+          {
+            "label": "Shikoyat",
+            "items": [
+              "Homilador ayolga yordamdan"
+            ]
+          }
+        ],
+        "caption": "Ekspertiza o‘tkaziladigan holatlar"
+      },
       "teacher_notes": "Vaqt: 6-7 daqiqa. Muhokama: 1) Nega onasi noma’lum go‘dak murdasi topilganda ekspertiza majburiy? 2) Tibbiy yordamga shikoyat bo‘lsa, pediatr nimani hujjatlashtirishi kerak? Doskada: uchta holatni uch qatorda yozing. Tipik xato: faqat o‘lik topilgan holatlarni eslab, tibbiy yordamga shikoyatni unutish."
     },
     {
@@ -208,27 +232,25 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Yangi tug‘ilganlik davri",
-        "nodes": [],
-        "header": [
-          "Fan",
-          "Davr muddati"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Pediatriya (neonatal)",
+            "value": "4",
+            "unit": "hafta"
+          },
+          {
+            "label": "Akusherlik-ginekologiya",
+            "value": "7",
+            "unit": "kun"
+          },
+          {
+            "label": "Sud tibbiyoti",
+            "value": "24",
+            "unit": "soat"
+          }
         ],
-        "rows": [
-          [
-            "Pediatriya",
-            "Tug‘ruqdan keyin 4 hafta (neonatal davr)"
-          ],
-          [
-            "Akusherlik-ginekologiya",
-            "7 kun"
-          ],
-          [
-            "Sud tibbiyoti",
-            "Dastlabki 24 soat"
-          ]
-        ]
+        "caption": "Yangi tug‘ilganlik davri"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun sud tibbiyotida davr 24 soat bilan cheklanadi? 2) Pediatr va sud-tibbiy ekspert bir go‘dakka turlicha baho berishi mumkinmi? Doskada chizish: uch fanning vaqt chizig‘ini (24 soat, 7 kun, 4 hafta) bir o‘qda tasvirlang. Tipik xato: pediatriyadagi 4 haftalik davrni sud tibbiyotiga ham qo‘llash."
     },
@@ -272,7 +294,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Ona (JK 99-modda)",
+            "items": [
+              "Tug‘ish vaqtida yoki tug‘ilishi hamon",
+              "Qasddan o‘ldirish",
+              "Jazo ancha yengil"
+            ]
+          },
+          {
+            "title": "Boshqa shaxs (JK 97)",
+            "items": [
+              "Xuddi shu harakat",
+              "Qasddan odam o‘ldirish",
+              "Umumiy qoidalar bo‘yicha"
+            ]
+          }
+        ],
+        "caption": "99-modda ≠ 97-modda"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega qonun onaning tug‘ish vaqtidagi harakatini alohida ajratgan? 2) 99- va 97-moddalar farqi nimada? Doskada chizish: ikki ustunli solishtirish (kim sodir etgan, qachon, modda, jazo og‘irligi). Tipik xato: moddani faqat jabrlanuvchining yoshiga qarab tanlash, sodir etgan shaxs va vaqtni hisobga olmaslik. Eslatma: ekspert huquqiy baho bermaydi, tibbiy faktlarni aniqlaydi."
     },
     {
@@ -331,20 +374,11 @@
           "uncertain": false
         },
         {
-          "text": "Absolyut (mutlaq ishonchli) belgilar uchta: o‘pkaning birlamchi atelektazi, kindikda demarkatsion halqaning yo‘qligi yoki dastlabki belgilari, tana va yo‘ldoshdan ajratilmagan kindik.",
+          "text": "Absolyut belgilar uchta: o‘pkaning birlamchi atelektazi, kindikda demarkatsion halqaning yo‘qligi yoki dastlabki belgilari, ajratilmagan kindik.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
             "page": "258-259"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qolgan belgilar nisbiy. Ular go‘dak hayotining ikkinchi va keyingi kunlarida ham topilishi mumkin.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "259"
           },
           "uncertain": false
         },
@@ -358,7 +392,39 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Yangi tug‘ilganlik belgilari",
+        "children": [
+          {
+            "label": "Absolyut belgilar",
+            "items": [
+              "O‘pkaning birlamchi atelektazi",
+              "Demarkatsion halqa yo‘q/boshlanishi",
+              "Ajratilmagan kindik"
+            ]
+          },
+          {
+            "label": "Nisbiy: qon izlari"
+          },
+          {
+            "label": "Nisbiy: qoplama",
+            "items": [
+              "Mo‘msimon qoplama"
+            ]
+          },
+          {
+            "label": "Nisbiy: shish",
+            "items": [
+              "Tug‘ruq shishi"
+            ]
+          },
+          {
+            "label": "Nisbiy: mekoniy"
+          }
+        ],
+        "caption": "Absolyut va nisbiy"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Absolyut va nisbiy belgi o‘rtasida qanday farq bor? 2) Nega nisbiy belgilar ikkinchi kunda ham uchraydi? Doskada chizish: belgilarni ikki ustunga (absolyut / nisbiy) ajratib yozdiring. Tipik xato: mekoniy yoki mo‘msimon qoplamani absolyut belgi deb hisoblash."
     },
     {
@@ -522,36 +588,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ikki shishning solishtirmasi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Tug‘ruq shishi",
-          "Kefalogematoma"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Tug‘ruq shishi",
+            "items": [
+              "Qon aylanishi buzilib to‘qima shishadi",
+              "Ko‘pincha bosh, ba’zan dumba",
+              "Chok proeksiyasida ham aniqlanadi",
+              "Odatda 2-3 kunda so‘riladi"
+            ]
+          },
+          {
+            "title": "Kefalogematoma",
+            "items": [
+              "Suyak usti pardasi ostiga qon quyiladi",
+              "Bir yoki bir necha suyak ustida",
+              "Suyaklararo choklar bilan chegaralangan",
+              "2 hafta va undan ortiq so‘riladi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Hosil bo‘lishi",
-            "Qon aylanishi buzilib to‘qima shishadi",
-            "Suyak usti pardasi ostiga qon quyiladi"
-          ],
-          [
-            "Joylashuvi",
-            "Ko‘pincha bosh, ba’zan dumba",
-            "Bir yoki bir necha suyak ustida"
-          ],
-          [
-            "Choklarga munosabati",
-            "Chok proeksiyasida ham aniqlanadi",
-            "Suyaklararo choklar bilan chegaralangan"
-          ],
-          [
-            "So‘rilishi",
-            "Odatda 2-3 kunda",
-            "2 hafta va undan ortiq"
-          ]
-        ]
+        "caption": "Ikki shishning solishtirmasi"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Tekshiruvda chok ustidan o‘tuvchi shish topilsa, qaysi biri haqida o‘ylaysiz? 2) So‘rilish muddati farqi go‘dak hayotining davomiyligini baholashda nimani anglatadi? Doskaga chizish: bosh suyaklari va choklar sxemasini chizib, ikkala shishning chegarasini turli rangda belgilang. Tipik xato: kefalogematomani ham chok orqali o‘tadi deb o‘ylash. Aslida u suyak chegarasida to‘xtaydi."
     },
@@ -559,7 +617,16 @@
       "title": "Diqqat: shish va kefalogematomani adashtirmang",
       "bullets": [
         {
-          "text": "Tug‘ruq shishi tug‘ruqda homila tanasining oldingi qismi tos halqasiga qisilishi tufayli yumshoq to‘qimalarning shishishidir. Ko‘pincha boshda, ba’zan dumbada uchraydi.",
+          "text": "Tug‘ruq shishi tug‘ruqda homila tanasining oldingi qismi tos halqasiga qisilishi tufayli yumshoq to‘qimalarning shishishidir.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "257"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tug‘ruq shishi ko‘pincha boshda, ba’zan dumbada uchraydi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -577,7 +644,7 @@
           "uncertain": false
         },
         {
-          "text": "Kefalogematoma kalla gumbazi suyaklarining suyak usti pardasi ostiga qon quyilishidan hosil bo‘ladi. U bir yoki bir necha suyak proeksiyasida bo‘lib, choklar bilan chegaralanadi.",
+          "text": "Kefalogematoma kalla gumbazi suyaklarining suyak usti pardasi ostiga qon quyilishidan hosil bo‘ladi; suyak ustida, choklar bilan chegaralangan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -586,7 +653,7 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: tug‘ruq shishi ≠ kefalogematoma. Shish chok ustidan o‘tadi va 2-3 kunda so‘riladi. Kefalogematoma chok bilan chegaralanadi va 2 hafta yoki undan uzoq so‘riladi.",
+          "text": "Diqqat: tug‘ruq shishi ≠ kefalogematoma. Shish chok ustidan o‘tadi, 2-3 kunda so‘riladi; kefalogematoma chok bilan chegaralanadi, 2 haftadan uzoq so‘riladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -620,7 +687,16 @@
           "uncertain": false
         },
         {
-          "text": "Tarkibida shilliq, o‘t pigmentlari, ko‘chgan ichak epiteliysi, qog‘onoq suvlari va tuk sochlar bor. Tarkibi homiladorlik muddatiga qarab o‘zgargani uchun homila yoshini aniqlashda ishlatiladi.",
+          "text": "Tarkibida shilliq, o‘t pigmentlari, ko‘chgan ichak epiteliysi, qog‘onoq suvlari va tuk sochlar bor.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "257"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tarkibi homiladorlik muddatiga qarab o‘zgargani uchun homila yoshini aniqlashda ishlatiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -727,7 +803,30 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Nafas olmagan: vazn",
+            "value": "55–60",
+            "unit": "g"
+          },
+          {
+            "label": "Nafas olgan: vazn",
+            "value": "85–90",
+            "unit": "g"
+          },
+          {
+            "label": "Nafas olmagan: sol. og‘.",
+            "value": "1,05–1,06"
+          },
+          {
+            "label": "Nafas olgan: sol. og‘.",
+            "value": "< 1,0"
+          }
+        ],
+        "caption": "O‘pka vazni va og‘irligi"
+      },
       "teacher_notes": "Vaqt: 6-7 daq. Muhokama: 1) Nima uchun birlamchi atelektaz go‘dakning nafas olmaganini ko‘rsatadi? 2) Ikkilamchi atelektaz o‘pka sinamasini qanday buzadi? Doskada: ikki o‘pkani yonma-yon chizing (nafas olmagan va nafas olgan), hajmi, rangi va vaznini yozing. Tipik xato: birlamchi va ikkilamchi atelektazni aralashtirish."
     },
     {
@@ -860,7 +959,16 @@
           "uncertain": false
         },
         {
-          "text": "Shu sababli tirik tug‘ilganlik masalasi asosan go‘dak nafas olgan yoki olmaganini aniqlash orqali hal etiladi. Bunda sinamalar va mikroskopik tekshiruvlardan foydalaniladi.",
+          "text": "Shu sababli tirik tug‘ilganlik masalasi asosan go‘dak nafas olgan yoki olmaganini aniqlash orqali hal etiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bunda sinamalar va mikroskopik tekshiruvlardan foydalaniladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -913,16 +1021,26 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Sinama bosqichlari",
-        "nodes": [
-          "Ligaturalar qo‘yiladi",
-          "Kompleks suvli idishga",
-          "Cho‘ksa: o‘pka bo‘laklari suvga",
-          "Musbat natijada to‘xtatiladi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Ligaturalar",
+            "text": "Ko‘krak a’zolari kompleksiga qo‘yiladi"
+          },
+          {
+            "title": "2. Suvli idish",
+            "text": "Kompleks suvga solinadi"
+          },
+          {
+            "title": "3. Cho‘ksa",
+            "text": "O‘pka bo‘laklari suvga"
+          },
+          {
+            "title": "4. To‘xtatish",
+            "text": "Musbat natijada to‘xtatiladi"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Sinama bosqichlari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nima uchun avval butun kompleks, keyin bo‘laklar suvga solinadi? 2) Solishtirma og‘irlik nimani bildiradi? Doskada: to‘rt bosqichli zanjirni chizing va har bosqichda cho‘kish/suzish natijasini yozing. Tipik xato: ligaturalar qo‘yilishini unutish yoki musbat natijadan keyin ham davom ettirish."
     },
@@ -982,16 +1100,7 @@
           "uncertain": false
         },
         {
-          "text": "Oddiy o‘pka sinamasi bunda soxta manfiy natija berishi mumkin. Shuning uchun V. Taranuxin usuli (1907) yoki L.Y. Traxtenberg modifikatsiyasi (1958) tavsiya etiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "259"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "O‘pka bo‘lakchasi suvli kolbaga solinadi. Havo tortib olinib, kolbada past bosimli sharoit yaratiladi.",
+          "text": "Oddiy o‘pka sinamasi soxta manfiy natija berishi mumkin; shuning uchun V. Taranuxin usuli (1907) yoki L.Y. Traxtenberg modifikatsiyasi (1958) tavsiya etiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1025,7 +1134,7 @@
           "uncertain": false
         },
         {
-          "text": "Oshqozonning kirish-chiqish qismlariga, havo gumon qilingan ichak sohalariga va to‘g‘ri ichakka ligatura qo‘yiladi. A’zolar tutqichdan ajratib olinib, suvli idishga solinadi.",
+          "text": "Oshqozonning kirish-chiqish qismlariga, havo gumon qilingan ichak sohalariga va to‘g‘ri ichakka ligatura qo‘yiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1034,7 +1143,16 @@
           "uncertain": false
         },
         {
-          "text": "Havoli sohalar suv yuzasiga suzib chiqadi. Suv ostida teshilganda havo pufakchalari chiqadi. Tirik tug‘ilganda havo asta-sekin o‘tgani uchun sinama yashash muddatini baholashda ham foydali.",
+          "text": "A’zolar tutqichdan ajratib olinib, suvli idishga solinadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "260"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Havoli sohalar suvda suzadi, teshilganda havo pufakchalari chiqadi. Havo asta-sekin o‘tgani uchun sinama yashash muddatini baholashda ham foydali.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1173,36 +1291,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Makroskopik solishtirma",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Nafas olgan",
-          "Nafas olmagan"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Nafas olgan o‘pka",
+            "items": [
+              "Ko‘krak qafasi bochkasimon",
+              "Diafragma VI–VII qobirg‘a sathida",
+              "Yuzasi marmarsimon",
+              "Vazni 85–90 g"
+            ]
+          },
+          {
+            "title": "Nafas olmagan o‘pka",
+            "items": [
+              "Ko‘krak qafasi yassi",
+              "Diafragma IV–V qobirg‘a sathida",
+              "Bir xil ko‘kimtir-to‘q qizil",
+              "Vazni 55–60 g"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Ko‘krak qafasi",
-            "Bochkasimon, qobirg‘alar oralig‘i keng",
-            "Yassi, qobirg‘alar oralig‘i tor"
-          ],
-          [
-            "Diafragma gumbazi",
-            "VI–VII qobirg‘a sathida",
-            "IV–V qobirg‘a sathida"
-          ],
-          [
-            "O‘pka yuzasi rangi",
-            "Marmarsimon (Bush–Xaberda belgisi)",
-            "Bir xil ko‘kimtir-to‘q qizil"
-          ],
-          [
-            "O‘pka vazni",
-            "85–90 g",
-            "55–60 g"
-          ]
-        ]
+        "caption": "Makroskopik solishtirma"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega nafas olgach o‘pka vazni oshadi? 2) Marmarsimon tus nimani bildiradi? Doskada ikki ko‘krak qafasini yonma-yon chizing va diafragma sathini belgilang. Tipik xato: diafragma sathlarini (VI–VII va IV–V) almashtirib yuborish."
     },
@@ -1228,16 +1338,7 @@
           "uncertain": false
         },
         {
-          "text": "Gialin membranalari qon oqsillaridan (albumin, globulin, fibrin) iborat. Asosan tirik tug‘ilgan norasolarda, bir necha soat yashaganda topiladi; nafas olmaganda yo‘q.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "261"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "O‘lik tug‘ilganlarda kichik va o‘rta o‘pka arteriyalari ichida “kurtaksimon”, “yostiqsimon” bo‘rtiqlar bo‘ladi. Nafas olgan o‘pkada ular kuzatilmaydi.",
+          "text": "Gialin membranalari (albumin, globulin, fibrin) asosan tirik tug‘ilgan norasolarda, bir necha soat yashaganda topiladi; nafas olmaganda yo‘q.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1332,7 +1433,36 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Rasolik",
+            "items": [
+              "Homiladorlik 280 kun (10 oy)",
+              "37-42 hafta",
+              "Bo‘yi 50-54 sm",
+              "Vazni 3000-3500 g"
+            ]
+          },
+          {
+            "title": "Yetuklik",
+            "items": [
+              "Ona tanasidan tashqarida yashashga yetarli",
+              "Uzunlik ≥ 45 sm",
+              "Vazni ≥ 2500 g"
+            ]
+          },
+          {
+            "title": "Hayotga layoqat",
+            "items": [
+              "Uzunlik < 25 sm yoki vazn < 500 g — layoqatsiz",
+              "Murda ochilmaydi"
+            ]
+          }
+        ],
+        "caption": "Uch tushuncha"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Raso, yetuk va hayotga layoqatli tushunchalari qanday farqlanadi? 2) Nega tergovchiga aynan muddat va layoqat kerak? Doskaga: ikki ustunli ro‘yxat (rasolik / yetuklik) o‘lchamlari bilan. Tipik xato: bu ikki tushunchani bir xil deb o‘ylash."
     },
     {
@@ -1478,7 +1608,7 @@
           "uncertain": false
         },
         {
-          "text": "Jahon sog‘liqni saqlash tashkiloti (JSST) mezoni: uzunligi 25 sm dan, vazni 500 g dan kam go‘dak o‘ta norasolik tufayli layoqatsiz. Murda ochilmaydi, faqat tashqi tekshiruv, vazn va uzunlik o‘lchanadi.",
+          "text": "Jahon sog‘liqni saqlash tashkiloti (JSST) mezoni: uzunligi 25 sm dan, vazni 500 g dan kam go‘dak o‘ta norasolik tufayli layoqatsiz.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1487,7 +1617,7 @@
           "uncertain": false
         },
         {
-          "text": "Hayotga monelik qiluvchi nuqsonlar: anensefaliya, ikki kamerali yurak. Tashqi nuqson (oltinchi barmoq, quyon lab) bo‘lsa, ichki nuqsonlarni istisno qilish uchun miya va a’zolar tekshiriladi.",
+          "text": "Bunday go‘dak murdasi ochilmaydi: faqat tashqi tekshiruv o‘tkaziladi, vazn va uzunlik o‘lchanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1496,7 +1626,16 @@
           "uncertain": false
         },
         {
-          "text": "Tug‘ruq travmasi ham layoqatni yo‘qotadi: hayot bilan nomutanosib jarohatlar, masalan, bosh miya majaqlanishi yoki bo‘yin umurtqalari sinishi bilan orqa miya shikasti.",
+          "text": "Hayotga monelik qiluvchi nuqsonlar: anensefaliya, ikki kamerali yurak. Tashqi nuqson (oltinchi barmoq, quyon lab) bo‘lsa, ichki nuqsonlar ham tekshiriladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "263"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tug‘ruq travmasi ham layoqatni yo‘qotadi: bosh miya majaqlanishi yoki bo‘yin umurtqalari sinishi bilan orqa miya shikasti kabi nomutanosib jarohatlar.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1505,7 +1644,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Layoqatsiz: uzunlik",
+            "value": "< 25",
+            "unit": "sm"
+          },
+          {
+            "label": "Layoqatsiz: vazn",
+            "value": "< 500",
+            "unit": "g"
+          },
+          {
+            "label": "Yetuk: uzunlik",
+            "value": "≥ 45",
+            "unit": "sm"
+          },
+          {
+            "label": "Yetuk: vazn",
+            "value": "≥ 2500",
+            "unit": "g"
+          }
+        ],
+        "caption": "JSST va yetuklik mezonlari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega tashqi nuqson topilganda ichki a’zolar sinchiklab ko‘riladi? 2) Tirik tug‘ilganlik va layoqatlilik nima bilan farqlanadi? Doskada: layoqatsizlik sabablarining uch guruhini (norasolik, nuqson, travma) chizdiring. Tipik xato: layoqatsiz go‘dakni o‘lik tug‘ilgan deb hisoblash."
     },
     {
@@ -1604,7 +1768,7 @@
             "kamida 5-6 soatdan so‘ng"
           ],
           [
-            "Kindikda demarkatsion halqa; mekoniy chiqishi",
+            "Kindikda demarkatsion halqa; mekoniy",
             "birinchi sutka oxiri"
           ]
         ]
@@ -1651,23 +1815,47 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Qarov belgilari",
+        "children": [
+          {
+            "label": "Yo‘rgaklangan"
+          },
+          {
+            "label": "Kiyim-bosh",
+            "items": [
+              "Ustida kiyim bor"
+            ]
+          },
+          {
+            "label": "Kindik",
+            "items": [
+              "Kesilib boylangan"
+            ]
+          },
+          {
+            "label": "Tozalanish",
+            "items": [
+              "Qon izi va qoplamadan"
+            ]
+          },
+          {
+            "label": "Oshqozon",
+            "items": [
+              "Sut yoki o‘xshash massa"
+            ]
+          }
+        ],
+        "caption": "Tug‘ilgandan keyin qarov"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Qaysi belgilar tashqi, qaysi biri ichki tekshiruvda aniqlanadi? 2) Qarov masalasi tergov uchun nega muhim? Doskada: ikki ustunli ro‘yxat chizdiring (tashqi belgilar / ichki belgi). Tipik xato: tozalangan tanani ‘yuvilgan, demak qarov bor’ deb bitta belgiga tayanib xulosa qilish."
     },
     {
       "title": "Homila va go‘dak o‘limi sabablari: antenatal va intranatal",
       "bullets": [
         {
-          "text": "Antenatal nozo‘raki o‘lim ko‘pincha homila ichi asfiksiyadan: yo‘ldosh oldin joylashishi, infarkti yoki ko‘chishi, kindik siqilishi, bo‘yinga o‘ralishi yoki chin tugun.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "264"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Murdada tez o‘lim belgilari, qog‘onoq suvi aspiratsiyasi va undagi ko‘p mekoniy topiladi. Yo‘ldosh va kindik ham tekshiriladi.",
+          "text": "Antenatal nozo‘raki o‘lim ko‘pincha homila ichi asfiksiyadan: yo‘ldosh oldin joylashishi, infarkti, ko‘chishi; kindik siqilishi, bo‘yinga o‘ralishi, chin tugun.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1676,7 +1864,7 @@
           "uncertain": false
         },
         {
-          "text": "Intranatal o‘limning asosiy sababi tug‘ruq travmasi: tor tos, yirik homila, sust tug‘ruq faoliyatida bosh qisilib, kalla suyaklari sinadi, kalla ichiga qon quyiladi.",
+          "text": "Intranatal o‘lim asosan tug‘ruq travmasidan: tor tos, yirik homila, sust tug‘ruqda bosh qisilib kalla suyaklari sinadi, kalla ichiga qon quyiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1694,7 +1882,30 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Antenatal o‘lim",
+            "items": [
+              "Ko‘pincha homila ichi asfiksiya",
+              "Yo‘ldosh oldin joylashishi, ko‘chishi",
+              "Kindik siqilishi, bo‘yinga o‘ralishi",
+              "Qog‘onoq suvi aspiratsiyasi, mekoniy"
+            ]
+          },
+          {
+            "title": "Intranatal o‘lim",
+            "items": [
+              "Asosiy sabab: tug‘ruq travmasi",
+              "Tor tos, yirik homila, sust tug‘ruq",
+              "Kalla suyaklari sinishi",
+              "Kalla ichiga qon quyilishi"
+            ]
+          }
+        ],
+        "caption": "Antenatal va intranatal"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega antenatal o‘limda yo‘ldosh va kindik ham ochib ko‘riladi? 2) Tug‘ruq travmasini onaning o‘ziga yordamidan qaysi belgilar bilan ajratamiz? Doskada: ‘antenatal — intranatal — postnatal’ davrlar chizig‘ini chizib, har davr sababini yozdiring. Tipik xato: tug‘ruq travmasida tashqi yara bo‘ladi deb o‘ylash."
     },
     {
@@ -1729,31 +1940,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Aktiv va passiv go‘dak o‘ldirish",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Aktiv",
-          "Passiv"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Aktiv",
+            "items": [
+              "Go‘dakka nisbatan harakat qilinadi",
+              "Qo‘l/sirtmoq bilan bo‘g‘ish, cho‘ktirish",
+              "Mexanik jarohat, olovga tashlash"
+            ]
+          },
+          {
+            "title": "Passiv",
+            "items": [
+              "Go‘dak qarovsiz qoldiriladi",
+              "Sovuq qotish, ochlik",
+              "Kindik bog‘lanmasa: tashqi qon ketish"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Mohiyati",
-            "Go‘dakka nisbatan harakat qilinadi",
-            "Go‘dak qarovsiz qoldiriladi"
-          ],
-          [
-            "Usul",
-            "Qo‘l/sirtmoq bilan bo‘g‘ish, cho‘ktirish",
-            "Sovuq qotish, ochlik"
-          ],
-          [
-            "Boshqa",
-            "Mexanik jarohat, olovga tashlash",
-            "Kindik bog‘lanmasa: tashqi qon ketish"
-          ]
-        ]
+        "caption": "Aktiv va passiv"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega o‘lim sababini aniq ko‘rsatish aktiv/passiv turini aniqlashdan muhimroq? 2) Antenatal va intranatal zo‘raki o‘lim nega kam uchraydi? Doskada: aktiv va passiv usullarning ikki ustunli jadvalini chizdiring. Tipik xato: sovuq qotish va ochlikdan o‘limni aktiv usul deb yozish; nozo‘raki sabablarni zo‘raki o‘limga qo‘shib yuborish."
     },
@@ -1761,7 +1967,7 @@
       "title": "Ekspertiza o‘tkazish xususiyatlari",
       "bullets": [
         {
-          "text": "Tashqi tekshiruvda yo‘rgak va kiyim ko‘riladi; uzunlik, vazn, bosh, ko‘krak va yelka aylanasi o‘lchanadi, qon izi, mo‘msimon qoplama, tug‘ruq shishi, mekoniy va nuqsonlarga e’tibor beriladi.",
+          "text": "Tashqi tekshiruvda yo‘rgak va kiyim ko‘riladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1770,7 +1976,16 @@
           "uncertain": false
         },
         {
-          "text": "Ichki tekshiruv ko‘krak va qorin bo‘shlig‘idan boshlanadi; og‘iz bo‘shlig‘ida o‘rta kesma iyakdan emas, pastki labdan boshlanadi, kindik tomirlari butunligi saqlanadi.",
+          "text": "Tashqi tekshiruvda yana: uzunlik, vazn, bosh, ko‘krak, yelka aylanasi; qon izi, mo‘msimon qoplama, tug‘ruq shishi, mekoniy, nuqsonlar.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "266"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ichki tekshiruv ko‘krak va qorin bo‘shlig‘idan boshlanadi; og‘iz bo‘shlig‘ida o‘rta kesma pastki labdan boshlanadi, kindik tomirlari butunligi saqlanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1788,7 +2003,7 @@
           "uncertain": false
         },
         {
-          "text": "Tirik tug‘ilganlik uchun o‘pka va oshqozon-ichak suzish sinamalari qilinadi; oxirida gistologik va qon guruhi (sud-biologik) uchun yo‘ldosh va kindikdan ham bo‘lakchalar olinadi.",
+          "text": "Tirik tug‘ilganlik uchun o‘pka va oshqozon-ichak suzish sinamalari qilinadi; gistologiya va qon guruhi uchun yo‘ldosh va kindikdan ham bo‘lakcha olinadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1797,27 +2012,43 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Tashqi tekshiruv",
+            "text": "Yo‘rgak, o‘lchamlar, qon izi, nuqsonlar"
+          },
+          {
+            "title": "2. Ichki tekshiruv",
+            "text": "Ko‘krak va qorindan boshlanadi"
+          },
+          {
+            "title": "3. Kalla bo‘shlig‘i",
+            "text": "Darchalar ochiladi, sinuslar butun"
+          },
+          {
+            "title": "4. Sinamalar",
+            "text": "O‘pka va oshqozon-ichak suzish sinamasi"
+          },
+          {
+            "title": "5. Namunalar",
+            "text": "Gistologiya, qon guruhi: yo‘ldosh, kindik"
+          }
+        ],
+        "caption": "Ekspertiza tartibi"
+      },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega kalla gumbazida darchalar ochiladi? 2) Yo‘ldosh va kindikni murda bilan birga tekshirish nima uchun kerak? Doskada: tashqi tekshiruv, ichki tekshiruv va laboratoriya bosqichlarini ketma-ketlikda yozdiring. Tipik xato: og‘iz bo‘shlig‘ida kesmani iyakdan boshlash; kesma kindik tomirlarini buzishi mumkinligini unutish."
     },
     {
       "title": "Xulosa va nazorat savollari",
       "bullets": [
         {
-          "text": "Absolyut (mutloq ishonchli) belgilar: o‘pkaning birlamchi atelektazi, demarkatsion halqaning yo‘qligi yoki dastlabki belgilari, tana va yo‘ldoshdan ajratilmagan kindik.",
+          "text": "Absolyut (mutlaq ishonchli) belgilar: o‘pkaning birlamchi atelektazi, demarkatsion halqaning yo‘qligi yoki dastlabki belgilari, ajratilmagan kindik.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "259"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sud tibbiyotida yangi tug‘ilganlik dastlabki 24 soat. Tirik tug‘ilganlik asosan go‘dak nafas olgan yoki olmaganligi orqali hal etiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "256, 259"
+            "page": "256-259"
           },
           "uncertain": false
         },
@@ -1831,7 +2062,7 @@
           "uncertain": false
         },
         {
-          "text": "Nazorat: ekspertiza savollari qanday? Yangi tug‘ilganlik farqi nima? Absolyut belgilar qaysilar? Soxta musbat o‘pka sinamasi va ikkilamchi atelektazda sinama qanday o‘tkaziladi?",
+          "text": "Nazorat: ekspertiza savollari qanday? Yangi tug‘ilganlik farqi nima? Absolyut belgilar qaysilar? Soxta musbat o‘pka sinamasi va ikkilamchi atelektaz?",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",

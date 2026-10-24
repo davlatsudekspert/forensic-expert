@@ -1,0 +1,586 @@
+{
+ "topic_id": "ktp26-davolash-A10",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Ashyoviy dalillar sud tibbiy ekspertizasi. Tibbiy xodimlarning kasb xuquqbuzarligi xolatlarida sud-tibbiy ekspertiza.…",
+  "ru": "Ashyoviy dalillar sud tibbiy ekspertizasi. Tibbiy xodimlarning kasb xuquqbuzarligi xolatlarida sud-tibbiy ekspertiza.…",
+  "en": "Ashyoviy dalillar sud tibbiy ekspertizasi. Tibbiy xodimlarning kasb xuquqbuzarligi xolatlarida sud-tibbiy ekspertiza.…"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "ktp26-davolash-A10-q01",
+   "question_i18n": {
+    "uz": "Mohiyatiga ko‘ra TYON qaysi to‘rt guruhga bo‘linadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Diagnostika, davolash, profilaktika, boshqa",
+     "Subyektiv, tashkiliy, obyektiv, boshqa",
+     "Kech, erta, o‘z vaqtida, rejali",
+     "Shifoxona, poliklinika, sanatoriy, lazaret"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Mohiyat bo‘yicha: diagnostika, davolash, profilaktika va boshqa nuqsonlar."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "145"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A10-q02",
+   "question_i18n": {
+    "uz": "Quyidagilardan qaysi biri TYONning obyektiv sababi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bemorga e’tiborsizlik",
+     "Malaka yetishmasligi",
+     "Kasallikning atipik kechishi",
+     "Diagnostika vositalarining yo‘qligi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Obyektiv sabablarga kech murojaat, atipik kechish, bemor ahvolining og‘irligi kiradi; qolganlari subyektiv yoki tashkiliy."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "148"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A10-q03",
+   "question_i18n": {
+    "uz": "Baholash algoritmining ikkinchi bosqichida nima o‘rganiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bemordagi patologik holat",
+     "Xulosa to‘xtamlarini yozish",
+     "Sababiy bog‘lanishning mavjudligi",
+     "Vrach harakatlarini shartlilik, asoslanganlik, o‘z vaqtidalik, texnika va to‘laqonlik jihatidan baholash"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Algoritm: 1) patologiya; 2) vrach harakatlarini baholash; 3) sababiy bog‘lanish."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "149"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A10-q04",
+   "question_i18n": {
+    "uz": "Ingichka ichak charvisining yirtilishi aniqlanmagan holat (og‘ir birgalikdagi jarohat) qaysi bog‘lanishga misol?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bog‘lanish yo‘q",
+     "Bevosita bog‘lanish",
+     "Bilvosita bog‘lanish (moyillik yaratgan omil)",
+     "Qasddan zarar yetkazish"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Manbada bu nuqson o‘limning bevosita sababi emas, ammo moyillik yaratgan omil sifatida keltirilgan."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "151"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A10-q05",
+   "question_i18n": {
+    "uz": "Ashyoviy dalil tushunchasi qaysi moddada keltirilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "JPK 203-modda",
+     "JK 14-modda",
+     "JPK 70-modda",
+     "JK 38-modda"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Ashyoviy dalil tushunchasi JPK 203-moddasida berilgan."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "303"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A10-q06",
+   "question_i18n": {
+    "uz": "Qon ekspertizasida masalalar qanday ketma-ketlikda hal etiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Shaxs, guruh, tur, borligi",
+     "Tur, shaxs, borligi, guruh",
+     "Guruh, borligi, tur, shaxs",
+     "Borligi, tur, guruh, muayyan shaxs"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Avval qon borligi, keyin tur, guruh va muayyan shaxsga taalluqliligi aniqlanadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "305"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A10-q07",
+   "question_i18n": {
+    "uz": "Maniy borligini morfologik usul bilan aniqlashda qaysi natija musbat hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bitta bo‘lsa-da butun spermatozoid",
+     "Faqat spermatozoid boshi",
+     "Faqat dumi",
+     "Kamida o‘nta bosh"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Bitta bo‘lsa-da butun spermatozoid (bosh, tana, dum) topilsa natija musbat; alohida qismlar inobatga olinmaydi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "310"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A10-q08",
+   "question_i18n": {
+    "uz": "Egri qasd nimani anglatadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Oqibatlarni istagan",
+     "Oqibatlarga asossiz umid qilgan",
+     "Oqibatlarga ko‘zi yetmagan",
+     "Oqibatlarga ko‘zi yetgan va ularning yuz berishiga ongli y o‘l qo‘ygan"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Egri qasd — shaxs oqibatlarga ko‘zi yetgan va ularning yuz berishiga ongli y o‘l qo‘ygan."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "115"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A10-q09",
+   "question_i18n": {
+    "uz": "Murda ekspertizasi o‘tkazilgan holatlarda sud-gistologik tekshiruv uchun materiallar qanday olinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat shubha bo‘lganda",
+     "Barcha holatlarda",
+     "Faqat zo‘raki o‘limda",
+     "Faqat so‘ralganda"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Murda ekspertizasi o‘tkazilgan barcha holatlarda sud-gistologik tekshiruv uchun materiallar olinishi kerak."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "316"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A10-q10",
+   "question_i18n": {
+    "uz": "Odamlar halok bo‘lish xavfini bila turib qilingan tavakkalchilik haqida qaysi ibora to‘g‘ri?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Asosli deb topilmaydi",
+     "Asosli deb topiladi",
+     "Faqat jarrohlarda asosli",
+     "Faqat oxirgi zaruriyatda asosli"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Odamlar halok bo‘lish xavfini bila turib qilingan tavakkalchilik asosli deb topilmaydi (JK 41-modda)."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "117"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A10-q11",
+   "question_i18n": {
+    "uz": "Qon tomchisi 10–15 sm balandlikdan gorizontal yuzaga tushsa qanday dog‘ hosil qiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Noksimon, undov belgisi shaklida",
+     "Oqma iz",
+     "Mayda tishsimon chetli, sachrali dog‘",
+     "Dumaloq, chetlari tekis dog‘"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "10–15 sm balandlikdan gorizontal yuzaga tushgan tomchi dumaloq, chetlari tekis dog‘ hosil qiladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "303-304"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A10-q12",
+   "question_i18n": {
+    "uz": "Qon ko‘lmagidan namuna olishda kamida qancha miqdor flakonga olinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1 ml",
+     "5 ml",
+     "10 ml",
+     "50 ml"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Qon ko‘lmagidan namuna 10 ml dan kam bo‘lmagan miqdorda flakonga olinadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "304-305"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A10-q13",
+   "question_i18n": {
+    "uz": "ABAcard testi nimani aniqlaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat qon guruhini",
+     "Dog‘da qon borligi va uning insonga mansubligini bir vaqtda",
+     "Faqat DNK profilini",
+     "Faqat homiladorlikni"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "ABAcard testi dog‘da qon borligi va uning insonga mansubligini bir vaqtda aniqlaydi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "306-307"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A10-q14",
+   "question_i18n": {
+    "uz": "Katta yoshlilarda va go‘daklarda qon dog‘ida qaysi gemoglobin turlari bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Katta yoshlida HbF, go‘dakda HbA",
+     "Katta yoshlida HbA, go‘dakda HbF",
+     "Ikkalasida ham HbA",
+     "Ikkalasida ham HbF"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Katta yoshlilarda gemoglobin HbA, go‘daklarda HbF."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "308"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A10-q15",
+   "question_i18n": {
+    "uz": "Maniy dog‘larini tekshirishda qaysi usul ishonchli (taxminiy emas) hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kartoshka sharbati bilan reaksiya",
+     "Florans reaksiyasi",
+     "Barberio reaksiyasi",
+     "Butun spermatozoid topilishi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Morfologik usul: bitta bo‘lsa-da butun spermatozoid (bosh, tana, dum) topilishi musbat natija; Florans va Barberio amaliy ahamiyatga ega emas."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "310"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A10-q16",
+   "question_i18n": {
+    "uz": "Taxminan necha foiz odamda guruhiy antigenlar ajratmalarda topiladi («ajratuvchilar»)?"
+   },
+   "options_i18n": {
+    "uz": [
+     "20%",
+     "50%",
+     "80%",
+     "100%"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Taxminan 80% odamda guruhiy antigenlar ajratmalarda topiladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "311"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A10-q17",
+   "question_i18n": {
+    "uz": "Soch tekshiruvida taqqoslash namunasi qanday olinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bitta tola yulib olinadi",
+     "Boshning besh sohasidan 20–30 tola tutami teriga yaqin qirqib olinadi",
+     "Faqat peshonadan 5 tola",
+     "Butun soch qirib olinadi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Taqqoslash namunasi boshning besh sohasidan (peshona, tepa, ikki chekka, ensa) 20–30 tola tutami teriga yaqin qirqib olinadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "313"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A10-q18",
+   "question_i18n": {
+    "uz": "Murda a’zo-to‘qimalarining birlamchi (formalinli) arxivi kamida qancha saqlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "6 oy",
+     "1 yil",
+     "2 yil",
+     "10 yil"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Birlamchi (formalinli) arxiv kamida 2 yil, preparatlar va bloklar kamida 3 yil saqlanadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "316-317"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A10-q19",
+   "question_i18n": {
+    "uz": "Tibbiy-kriminalistik tekshiruvning ballistik turi qaysi holatda qo‘llanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat zaharlanishda",
+     "O‘qotar jarohatlar va portlash travmasida",
+     "Faqat asfiksiyada",
+     "Faqat suyak qoldiqlarida"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Ballistik tekshiruv o‘qotar jarohatlar va portlash travmasida: jarohatlar soni, otish ketma-ketligi, distansiya, qurol va snaryad turi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "317-318"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A10-q20",
+   "question_i18n": {
+    "uz": "TYON sabablari qaysi uch guruhga bo‘linadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Subyektiv, tashkiliy, obyektiv",
+     "Diagnostik, davolash, profilaktik",
+     "Shifoxonagacha, shifoxona, boshqa",
+     "Birlamchi, takroriy, qo‘shimcha"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "TYON sabablari shartli ravishda subyektiv, tashkiliy va obyektiv guruhlarga bo‘linadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "148"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "G‘iyosov Z.A.",
+   "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)"
+  },
+  {
+   "author": "G‘iyosov Z.A.",
+   "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti"
+  }
+ ]
+}

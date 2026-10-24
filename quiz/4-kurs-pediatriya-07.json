@@ -1,0 +1,582 @@
+{
+ "topic_id": "4-kurs-pediatriya-07",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "№3. Maʻruza: Yangi tugʻilgan goʻdaklar murdasining sud tibbiy ekspertizasi. Sud tibbiy toksikologiya",
+  "ru": "№3. Maʻruza: Yangi tugʻilgan goʻdaklar murdasining sud tibbiy ekspertizasi. Sud tibbiy toksikologiya",
+  "en": "№3. Maʻruza: Yangi tugʻilgan goʻdaklar murdasining sud tibbiy ekspertizasi. Sud tibbiy toksikologiya"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "4-kurs-pediatriya-07-q01",
+   "question_i18n": {
+    "uz": "Paratsels iborasiga ko‘ra, bir moddani dori yoki zaharga aylantiradigan asosiy omil qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Moddaning organizmga tushgan dozasi",
+     "Moddaning rangi va tashqi ko‘rinishi",
+     "Moddaning hidi va ta’mining kuchi",
+     "Moddaning kashf etilgan vaqti"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Zahar nisbiy tushuncha: mutlaq zahar ham, mutlaq zararsiz modda ham yo‘q. Paratselsning fikricha, moddani dori yoki zaharga aylantiradigan narsa uning dozasidir."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "132"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-07-q02",
+   "question_i18n": {
+    "uz": "Zaharlanish holatida huquqni muhofaza etuvchi idoralar qo‘ygan vazifalarni hal etish toksikologiyaning qaysi yo‘nalishiga xos?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Sanoat toksikologiyasiga",
+     "Sud-tibbiy toksikologiyaga",
+     "Qishloq xo‘jaligi toksikologiyasiga",
+     "Oziq-ovqat toksikologiyasiga"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Boshqa yo‘nalishlar asosan zaharlanish sabablari, jabrlanganlarga yordam va profilaktikani o‘rganadi. Sud-tibbiy toksikologiya esa huquqni muhofaza etuvchi idoralar qo‘ygan vazifalarni hal etadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "132"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-07-q03",
+   "question_i18n": {
+    "uz": "Bir xil miqdordagi zahar bolada kattalarga qaraganda kuchliroq ta’sir qildi. Bunga asosiy sabab nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bolaning jinsi va ovqatlanish tartibi",
+     "Bolaning ruhiy holati va uyqu rejimi",
+     "Vazni kichik, qarshilik tizimi to‘liq shakllanmagan",
+     "Bolaning yashash joyidagi havo harorati"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Bolalar kattalarga nisbatan sezgirroq. Buni ularning vazni kichikligi va umumiy qarshilik ko‘rsatish tizimining to‘liq shakllanmaganligi bilan tushuntirish mumkin."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "134"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-07-q04",
+   "question_i18n": {
+    "uz": "Zaharli modda nafas yo‘llari orqali qonga so‘rildi va kuchli ta’sir qildi. Bu ta’sir kuchliroq bo‘lishining sababi nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Modda har doim suvda erimaydi",
+     "Modda faqat mahalliy ta’sir ko‘rsatadi",
+     "Modda hech qachon qonga o‘tmaydi",
+     "Modda jigar orqali o‘tmasdan qonga tushadi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Nafas yo‘llari, to‘g‘ri ichak va qin shilliq qavatidan so‘rilgan moddalar jigar orqali o‘tmaydi. Shu sababli ular oshqozon va ichakdan so‘rilganlarga nisbatan kuchliroq ta’sir ko‘rsatadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "135"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-07-q05",
+   "question_i18n": {
+    "uz": "Zaharlanish diagnostikasida tibbiy hujjatlar va katamnez ma’lumotlari bilan tanishish qaysi bosqichga kiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Birinchi bosqichga: voqea joyi va hujjatlar",
+     "Ikkinchi bosqichga: murdaning tekshiruvi",
+     "Uchinchi bosqichga: laboratoriya tekshiruvi",
+     "Hech qaysi bosqichga kirmaydi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Birinchi bosqichda hodisa joyi mutaxassis ishtirokida ko‘zdan kechiriladi. Shu bosqichga ish materiallari, katamnez va tibbiy hujjatlar bilan tanishish ham kiradi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "135"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-07-q06",
+   "question_i18n": {
+    "uz": "Yong‘in joyidan topilgan murdada murda dog‘lari pushti tusda. Qaysi zaharlanishga shubha qilinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Sianid kislotasi tuzlari bilan",
+     "Is gazi (uglerod monooksidi) bilan",
+     "Metgemoglobin hosil qiluvchi modda bilan",
+     "Gemoliz chaqiruvchi modda bilan"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Is gazidan zaharlanganda murda dog‘lari pushti tusda bo‘ladi. Sianidlarda ular yorqin olcha rang, metgemoglobin hosil qiluvchilarda jigar rang yoki qo‘ng‘ir, gemoliz chaqiruvchilarda sarg‘ish bo‘ladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "136"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-07-q07",
+   "question_i18n": {
+    "uz": "Sirka kislotasidan zaharlangan bemorda og‘iz va oshqozon kuyganidan keyin atsidoz tufayli eritrotsitlar gemolizi rivojlandi. Bu qaysi ta’sir turi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Birlamchi toksik ta’sir",
+     "Metatoksik ta’sir",
+     "Biotransformatsiya ta’siri",
+     "Keyingi toksik ta’sir"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Shilliq qavatlarning kimyoviy kuyishi birlamchi ta’sir, atsidoz tufayli gemoliz keyingi toksik ta’sir. Toksik gepatit va toksik nefroz esa metatoksik ta’sir hisoblanadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "138"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-07-q08",
+   "question_i18n": {
+    "uz": "Zahar og‘iz orqali qabul qilingan, jigarga ta’sir etgan va siydik bilan chiqqan. “Uch nuqta” qoidasiga ko‘ra qaysi namunalar olinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bosh miyaning uchdan biri va o‘pkaning to‘rtdan biri",
+     "Faqat 100-200 ml qon va ingichka ichakning bir metri",
+     "Oshqozon massasi, jigar bo‘lagi va siydikli butun buyrak",
+     "Ko‘krak-qorin a’zolaridan 1,5-2,0 kg aralash massa"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Zahar kirgan, asosan ta’sir etgan va chiqqan joylardan olinadi: oshqozon massasi, jigar bo‘lagi va siydik bilan butun buyrak. Boshqa variantlar zahar noma’lum bo‘lganda yoki chuqur chirishda olinadigan namunalardir."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "136"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-07-q09",
+   "question_i18n": {
+    "uz": "Paratselsning iborasiga ko‘ra, moddani doriga yoki zaharga aylantiradigan omil qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Moddaning miqdori (dozasi)",
+     "Moddaning tashqi rangi",
+     "Moddaning hid xususiyati",
+     "Moddaning saqlanish joyi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Zahar nisbiy tushuncha: mutlaq zahar ham, mutlaq beziyon modda ham yo‘q. Paratsels fikricha, faqat doza moddani doriga yoki zaharga aylantiradi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "132"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-07-q10",
+   "question_i18n": {
+    "uz": "Ishqorlar bilan zaharlanishda kontakt joyidagi to‘qimada qanday nekroz hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Koagulyasion (quruq) nekroz",
+     "Yog‘li (fermentativ) nekroz",
+     "Kollikvatsion (suyuq) nekroz",
+     "Kazeoz (pishloqsimon) nekroz"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Ishqorlar to‘qima oqsillarini suyultirib eritadi va kollikvatsion nekroz chiqaradi. Koagulyasion (quruq) nekroz esa kislotalarga xos."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "143"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-07-q11",
+   "question_i18n": {
+    "uz": "Simob birikmalari bilan zaharlanishdan farqli ravishda, qo‘rg‘oshin birikmalari bilan zaharlanishda qaysi o‘zgarish jiddiyroq bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Buyraklarning toksik nekronefrozi",
+     "Nerv tizimining shikastlanishi (talvasa, falaj)",
+     "Yo‘g‘on ichak shilliq qavatining nekrozi",
+     "Milk chekkasida iflos-kulrang hoshiya"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Qo‘rg‘oshin zaharlanishida ichak va buyrak shikastlanishi simobdagiga nisbatan kuchsizroq bo‘ladi. Markaziy va periferik nerv tizimining shikastlanishi (alahsirash, talvasa, paresteziya, falaj) jiddiyroq kechadi, odatda kamqonlik ham rivojlanadi. Nekronefroz, ichakdagi o‘zgarishlar va milk hoshiyasi simobga xos."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "147"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-07-q12",
+   "question_i18n": {
+    "uz": "Fermer hasharotlarga qarshi “Parij yashili” bilan ishlagan. Unda soch to‘kilishi, timoqlarda ko‘ndalang oq yo‘lkalar, dispepsiya va polineyropatiya kuzatildi. Qaysi zahar guruhi bilan surunkali zaharlanish bo‘lgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Simobning organik birikmalari (granozan)",
+     "Tetraetilqo‘rg‘oshin (etillangan benzin)",
+     "Qo‘rg‘oshinning suvda eruvchi tuzlari",
+     "Margimush birikmalari (Parij yashili)"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "“Parij yashili” margimush birikmasi bo‘lib, qishloq xo‘jaligida hasharotlarga qarshi qo‘llanishi mumkin. Surunkali margimush zaharlanishida dispepsiya, polineyropatiya, ozish, soch to‘kilishi va timoqlarda ko‘ndalang oqish yo‘lkalar kuzatiladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "148-149"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-07-q13",
+   "question_i18n": {
+    "uz": "Nosoz pech bor xonada topilgan murdadan olingan qonga 33% ishqor eritmasi (Goppe-Zeyler sinamasi) qo‘shildi, qon rangi o‘zgarmadi. Bu natija nimani ko‘rsatadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qonda karboksigemoglobin mavjudligini",
+     "Qonda metgemoglobin mavjudligini",
+     "Qon tarkibi normal ekanligini",
+     "Qonda sianid mavjudligini"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Normal qonga ishqor qo‘shilganda ishqoriy gematin hosil bo‘lib, qon qo‘ng‘ir yoki jigarrang-qora tusga kiradi. Karboksigemoglobin bo‘lsa, qon rangi o‘zgarmaydi. Bu is gazi bilan zaharlanishga dastlabki dalil bo‘ladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "151"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-07-q14",
+   "question_i18n": {
+    "uz": "Bola ko‘p miqdorda o‘rik danagi mag‘zini yeb zaharlandi. Murdada ichki a’zolardan achchiq bodom hidi keldi, murda dog‘lari olcha rang edi. Zaharning asosiy ta’sir mexanizmi qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Xolinesterazani faolsizlantirib, atsetilxolin to‘plash",
+     "Gemoglobin bilan turg‘un birikma hosil qilish",
+     "Sitoxromoksidaza temirini bog‘lab, to‘qima nafasini buzish",
+     "Eritrotsitlarni parchalab, gemoliz chaqirish"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Danak mag‘zidagi amigdalin ichakda parchalanib, sianid kislotasi hosil qiladi. Sian anioni sitoxromoksidazadagi temirni bog‘laydi. Qonda kislorod yetarli bo‘lsa ham to‘qima gipoksiyasi rivojlanadi. Xolinesterazani fosfororganik birikmalar so‘ndiradi, karboksigemoglobinni is gazi hosil qiladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "153-154"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-07-q15",
+   "question_i18n": {
+    "uz": "Yo‘l-transport hodisasidan o‘lgan haydovchining qonida 2,0 promille etil spirti aniqlandi. Amaldagi qoidalarga ko‘ra mastlik darajasi qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Yengil darajali mastlik",
+     "O‘rta darajali mastlik",
+     "Kuchli darajali mastlik",
+     "Etil spirti bilan zaharlanish"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Qonda 0,5-1,5 promille yengil, 1,5-2,5 promille o‘rta, 2,5-3,0 promille kuchli mastlik hisoblanadi. 3,0 promilledan yuqori bo‘lsa zaharlanish deb baholanadi. 2,0 promille o‘rta daraja oralig‘iga tushadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "160"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-07-q16",
+   "question_i18n": {
+    "uz": "Bolada mushaklar tortishishi, yutish va nafas olishning qiyinlashishi, tonik talvasa xurujlari kuzatildi. Hush saqlangan, tana yoysimon egilgan, kuchsiz ta’sir yangi xurujni chaqiradi. Qaysi zahar ehtimoli yuqori?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Atropin bilan zaharlanish",
+     "Klofelin bilan zaharlanish",
+     "Strixnin bilan zaharlanish",
+     "Pilokarpin bilan zaharlanish"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Strixnin orqa miyaning reflektor qo‘zg‘aluvchanligini oshiradi. Hush saqlangan holda tonik talvasalar va opistotonus rivojlanadi, nur, tovush yoki teginish yangi xurujni chaqiradi. Bolalarda sezgirlik yuqori bo‘lib, letal doza 0,005 g."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "165"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-07-q17",
+   "question_i18n": {
+    "uz": "Nasha chekilganligi gumon qilingan shaxsdan yuvma olish kerak. Tibbiyot xodimi buni qaysi usulda bajaradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qo‘l barmoqlari etil spirtli paxta yoki doka tiqini bilan artiladi",
+     "Yuz terisi suv bilan namlangan doka tiqini bilan artib olinadi",
+     "Og‘iz bo‘shlig‘i distillangan suv bilan chayilib, suv yig‘iladi",
+     "Ko‘krak terisi quruq paxta tiqini bilan artib namuna olinadi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Yuvma uchun qo‘l barmoqlari yuzalari etil spirti shimdirilgan paxta yoki doka tiqini bilan artiladi. Xona haroratida spirt bug‘latiladi, so‘ng tiqin polietilen qopchaga solinib o‘raladi. Qon, siydik va so‘lak ham olinadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "171"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-07-q18",
+   "question_i18n": {
+    "uz": "Ovqatdan zaharlanishning bakterial turlari qaysi ikki guruhga bo‘linadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Toksikoinfeksiyalar va nobakterial zaharlanishlar",
+     "Intoksikatsiyalar va o‘simliklar bilan bog‘liq turlar",
+     "Hayvonlar bilan bog‘liq va qo‘shimchali turlar",
+     "Toksikoinfeksiyalar va intoksikatsiyalar"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Ovqatdan zaharlanish bakterial va nobakterial turlarga bo‘linadi. Bakterial zaharlanishlar toksikoinfeksiyalar va intoksikatsiyalarga ajraladi. Nobakterial turlar o‘simliklar, hayvonlar va qo‘shimchalar bilan bog‘liq."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "173"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-07-q19",
+   "question_i18n": {
+    "uz": "Marosimda qatnashgan bir guruh odamlar zaharli begona o‘tli dondan tayyorlangan mahsulotdan zaharlandi. Klinik, morfologik va sud-kimyoviy tekshiruvga qo‘shimcha qaysi tekshiruv lozim?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Farmakologik tekshiruv",
+     "Epidemiologik tekshiruv",
+     "Botanik tekshiruv",
+     "Spektral tekshiruv"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Zaharli qo‘shimchali mahsulotdan zaharlanish guruhiy xususiyatga ega: oila, marosim ishtirokchilari yoki hudud aholisida uchraydi. Shu sababli boshqa tekshiruvlar bilan birga epidemiologik tekshiruv ham o‘tkaziladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "179"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-07-q20",
+   "question_i18n": {
+    "uz": "Zaharlanish bo‘lmagan holatda ham laboratoriyada zaharli modda topilishi mumkin. Quyidagilardan qaysi biri shunday natijaga sabab bo‘la oladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Zahar organizmda tez parchalanib ketgan bo‘lsa",
+     "Davolashda intensiv infuzion muolaja o‘tkazilgan bo‘lsa",
+     "Zaharlanishdan keyin ancha ko‘p vaqt o‘tgan bo‘lsa",
+     "Modda chirish jarayonida hosil bo‘lgan bo‘lsa"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Zahar topilishi zaharlanishni isbotlamaydi: modda dori sifatida qo‘llangan, chirishda hosil bo‘lgan yoki kasbiy aloqador bo‘lishi mumkin. Boshqa uchta variant aksincha zahar topilmasligiga olib keladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "180"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "G‘iyosov Z.A.",
+   "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti"
+  }
+ ]
+}

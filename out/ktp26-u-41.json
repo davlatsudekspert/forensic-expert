@@ -75,7 +75,7 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: boshqa toksikologiya turlari sabablar, yordam va profilaktikani o‘rgansa, sud-tibbiy toksikologiya huquqni muhofaza etuvchi idoralar vazifalarini hal etadi. Sud tibbiyotining fan sifatida shakllanishi shundan boshlangan.",
+          "text": "Diqqat: boshqa toksikologiya turlari sabablar, yordam va profilaktikani o‘rgansa, sud-tibbiy toksikologiya huquqni muhofaza idoralari vazifalarini hal etadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -85,7 +85,7 @@
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 6 daq. Muhokama savoli: nima uchun bir modda bir holatda dori, boshqasida zahar bo‘lishi mumkin (Paratsels iborasi)? Sud-tibbiy toksikologiyaning vazifasi klinik toksikologiyadan qanday farq qiladi? Doskada chizish: ikki ustunli solishtirish (klinik toksikologiya va sud-tibbiy toksikologiya vazifalari). Tipik xato: talabalar “zahar” mutlaq tushuncha deb o‘ylaydi, dozani e’tiborga olmaydi."
+      "teacher_notes": "Vaqt: 6 daq. Muhokama savoli: nima uchun bir modda bir holatda dori, boshqasida zahar bo‘lishi mumkin (Paratsels iborasi)? Sud-tibbiy toksikologiyaning vazifasi klinik toksikologiyadan qanday farq qiladi? Doskada chizish: ikki ustunli solishtirish (klinik toksikologiya va sud-tibbiy toksikologiya vazifalari). Tipik xato: talabalar “zahar” mutlaq tushuncha deb o‘ylaydi, dozani e’tiborga olmaydi. Sud tibbiyotining fan sifatida shakllanishi aynan sud-tibbiy toksikologiyadan boshlangan (G‘iyosov, 132-bet)."
     },
     {
       "title": "Zaharlanish turlari voqea tafsiloti bo‘yicha",
@@ -119,36 +119,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Zaharlanish turlari",
-        "nodes": [],
-        "header": [
-          "Tur",
-          "Sodir bo‘lishi",
-          "Uchrashi"
+        "kind": "tree",
+        "root": "Zaharlanish turlari",
+        "children": [
+          {
+            "label": "Baxtsiz hodisa",
+            "items": [
+              "Tasodifan",
+              "Aksariyat holatlar"
+            ]
+          },
+          {
+            "label": "O‘z-o‘zini o‘ldirish",
+            "items": [
+              "Qasddan",
+              "Baxtsiz hodisadan keyin"
+            ]
+          },
+          {
+            "label": "Qotillik",
+            "items": [
+              "Qasddan",
+              "Kamdan-kam"
+            ]
+          },
+          {
+            "label": "Yatrogen",
+            "items": [
+              "Tasodifan",
+              "Doza yoki dori xatosi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Baxtsiz hodisa",
-            "Tasodifan",
-            "Aksariyat holatlar"
-          ],
-          [
-            "O‘z-o‘zini o‘ldirish",
-            "Qasddan",
-            "Baxtsiz hodisadan keyingi o‘rin"
-          ],
-          [
-            "Qotillik",
-            "Qasddan",
-            "Kamdan-kam"
-          ],
-          [
-            "Yatrogen",
-            "Tasodifan",
-            "Doza yoki dori xatosi"
-          ]
-        ]
+        "caption": "Voqea tafsilotiga ko‘ra zaharlanish"
       },
       "teacher_notes": "Vaqt: 6 daq. Voqea tahlili: dorixonada noto‘g‘ri dori berilib, bemor zaharlandi. Bu qaysi tur va nima uchun? Doskada chizish: jadvalni daftarga ko‘chirib, har tur uchun bittadan misol yozish. Tipik xato: yatrogen zaharlanishni qasddan qilingan deb hisoblash; u tasodifiy, tibbiy xatodan kelib chiqadi."
     },
@@ -184,31 +187,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "To‘rt omil guruhi",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Misollar"
+        "kind": "tree",
+        "root": "To‘rt omil guruhi",
+        "children": [
+          {
+            "label": "Zaharli modda",
+            "items": [
+              "Kimyoviy tuzilish",
+              "Doza, eruvchanlik"
+            ]
+          },
+          {
+            "label": "Organizm",
+            "items": [
+              "Massa, yosh",
+              "Salomatlik, genetika"
+            ]
+          },
+          {
+            "label": "Kirish yo‘li",
+            "items": [
+              "Teri, og‘iz",
+              "Nafas yo‘li, in’eksiya"
+            ]
+          },
+          {
+            "label": "Tashqi sharoit",
+            "items": [
+              "Harorat, namlik",
+              "Yopiq yoki ochiq muhit"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Zaharli modda",
-            "Kimyoviy tuzilish, doza, eruvchanlik"
-          ],
-          [
-            "Organizm",
-            "Massa, yosh, salomatlik, genetika"
-          ],
-          [
-            "Kirish yo‘li",
-            "Teri, og‘iz, nafas yo‘li, in’eksiya"
-          ],
-          [
-            "Tashqi sharoit",
-            "Harorat, namlik, yopiq yoki ochiq muhit"
-          ]
-        ]
+        "caption": "Zaharlanishga ta’sir qiluvchi omillar"
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nega bir xil modda turli odamlarga turlicha ta’sir qiladi? Zahar va zaharlanish tushunchalari qanday farqlanadi? Doskada to‘rt omil guruhini chizib, har biriga bittadan misol yozdirish. Tipik xato: talabalar faqat modda turini omil deb hisoblab, organizm va sharoitni unutadi."
     },
@@ -373,16 +384,26 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Diagnostika bosqichlari ketma-ketligi",
-        "nodes": [
-          "1. Joy va hujjatlar",
-          "2. Murda tekshiruvi",
-          "3. Laboratoriya tekshiruvi",
-          "Ekspert xulosasi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Joy va hujjatlar",
+            "text": "Joyni ko‘zdan kechirish, hujjatlar"
+          },
+          {
+            "title": "2. Murda tekshiruvi",
+            "text": "Tashqi va ichki tekshiruv"
+          },
+          {
+            "title": "3. Laboratoriya",
+            "text": "Sud-kimyoviy, gistologik tekshiruv"
+          },
+          {
+            "title": "Ekspert xulosasi",
+            "text": "Barcha dalillar birgalikda"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Diagnostika bosqichlari"
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nega diagnostika bir emas, uch bosqichda olib boriladi? 2) Laboratoriya natijasi xulosaning ishonchliligiga qanday ta’sir qiladi? Doskada: to‘rt qutili strelkali sxemani talabalar bilan birga chizing. Tipik xato: faqat murda tekshiruviga tayanish va birinchi bosqichni (joy, hujjatlar) tushirib qoldirish."
     },
@@ -433,7 +454,7 @@
       "title": "Ikkinchi bosqich: murda tekshiruvi belgilari",
       "bullets": [
         {
-          "text": "Ikkinchi bosqichda dalillar murdaning tashqi va ichki tekshiruvida olinadi: teri va shilliq qavat rangi, in’eksiya izlari, yot hid, murda dog‘lari, mushak qotishi.",
+          "text": "Ikkinchi bosqichda dalillar murdaning tashqi va ichki tekshiruvida olinadi: teri va shilliq qavat rangi, in’eksiya izlari, yot hid, dog‘lar, mushak qotishi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -442,7 +463,7 @@
           "uncertain": false
         },
         {
-          "text": "Murda dog‘lari rangi: is gazida pushti, sianidda yorqin olcha, metgemoglobin hosil qiluvchilarda qo‘ng‘ir-jigarrang, gemoliz chaqiruvchilarda sarg‘ish. O‘yuvchi zaharlarda og‘iz atrofida oqmalar.",
+          "text": "Murda dog‘lari rangi: is gazida pushti, sianidda yorqin olcha, metgemoglobin hosil qiluvchilarda qo‘ng‘ir-jigarrang, gemoliz chaqiruvchilarda sarg‘ish.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -451,7 +472,16 @@
           "uncertain": false
         },
         {
-          "text": "Hid: sianidda ichki a’zolardan achchiq bodom, sirka kislotasida o‘tkir hid. Mushak qotishi strixninda tez va kuchli, xloral gidrat, kurare, miorelaksantlarda sust va kuchsiz.",
+          "text": "O‘yuvchi zaharlarda og‘iz atrofida oqmalar.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "135–136"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hid: sianidda ichki a’zolardan achchiq bodom, sirka kislotasida o‘tkir hid.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -460,7 +490,7 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: funksional zaharlarning ko‘pida tashqi va ichki tekshiruvda xos o‘zgarish topilmasligi mumkin. Bunday holda uchinchi bosqich hal qiluvchi bo‘ladi.",
+          "text": "Mushak qotishi strixninda tez va kuchli, xloral gidrat, kurare, miorelaksantlarda sust va kuchsiz.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -469,14 +499,42 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega funksional zaharlarda murdada xos belgi bo‘lmasligi mumkin? 2) Murda dog‘lari rangi nimani ko‘rsatadi? Doskada chizish: ikki ustunli ro‘yxat — zahar turi va murda dog‘lari rangi. Tipik xato: murdada o‘zgarish bo‘lmasa, zaharlanish yo‘q deb xulosa qilish."
+      "diagram": {
+        "kind": "tree",
+        "root": "Murda belgilari",
+        "children": [
+          {
+            "label": "Dog‘ rangi",
+            "items": [
+              "Is gazi: pushti",
+              "Sianid: yorqin olcha",
+              "Metgemoglobin: qo‘ng‘ir"
+            ]
+          },
+          {
+            "label": "Hid",
+            "items": [
+              "Sianid: achchiq bodom",
+              "Sirka kislotasi: o‘tkir"
+            ]
+          },
+          {
+            "label": "Mushak qotishi",
+            "items": [
+              "Strixnin: tez va kuchli",
+              "Xloralgidrat, kurare: sust"
+            ]
+          }
+        ],
+        "caption": "Murda tekshiruvidagi belgilar"
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega funksional zaharlarda murdada xos belgi bo‘lmasligi mumkin? 2) Murda dog‘lari rangi nimani ko‘rsatadi? Doskada chizish: ikki ustunli ro‘yxat — zahar turi va murda dog‘lari rangi. Tipik xato: murdada o‘zgarish bo‘lmasa, zaharlanish yo‘q deb xulosa qilish. Diqqat: funksional zaharlarning ko‘pida tashqi va ichki tekshiruvda xos o‘zgarish topilmasligi mumkin. Bunday holda uchinchi bosqich hal qiluvchi bo‘ladi."
     },
     {
       "title": "Uchinchi bosqich: laboratoriya va “uch nuqta” qoidasi",
       "bullets": [
         {
-          "text": "Uchinchi bosqichda qo‘shimcha laboratoriya tekshiruvlari o‘tkaziladi. Eng ko‘p sud-kimyoviy (toksikologik) tekshiruv qo‘llanadi; u sifat bilan birga miqdoriy ham bo‘lishi kerak.",
+          "text": "Uchinchi bosqichda qo‘shimcha laboratoriya tekshiruvlari o‘tkaziladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -485,7 +543,7 @@
           "uncertain": false
         },
         {
-          "text": "“Uch nuqta” qoidasi: zahar kirgan, asosan ta’sir etgan va chiqqan joylardan namuna olinadi. Masalan, ichilgan zaharda oshqozon massasi, jigar bo‘lagi va siydikli butun buyrak olinadi.",
+          "text": "Eng ko‘p sud-kimyoviy (toksikologik) tekshiruv qo‘llanadi; u sifat bilan birga miqdoriy ham bo‘lishi kerak.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -494,7 +552,7 @@
           "uncertain": false
         },
         {
-          "text": "Zahar noma’lum bo‘lsa: miyaning 1/3, o‘pkaning 1/4, jigarning 1/3 (o‘t qopi, o‘t bilan), butun buyrak siydik bilan, oshqozon massasi, ichakdan bir metr, 100–200 ml qon. Har biri alohida idishda.",
+          "text": "“Uch nuqta” qoidasi: zahar kirgan, asosan ta’sir etgan va chiqqan joylardan namuna olinadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -503,7 +561,16 @@
           "uncertain": false
         },
         {
-          "text": "Chuqur chirish holatida ko‘krak va qorin bo‘shlig‘i a’zolari aralashmasidan 1,5–2,0 kg massa — “o‘rta sinama” — toksikologik tekshiruvga olinadi.",
+          "text": "Masalan, ichilgan zaharda oshqozon massasi, jigar bo‘lagi va siydikli butun buyrak olinadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "136"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zahar noma’lum bo‘lsa: miya 1/3, o‘pka 1/4, jigar 1/3 (o‘t bilan), siydikli butun buyrak, oshqozon massasi, ichakdan 1 m, 100–200 ml qon; har biri alohida.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -513,7 +580,7 @@
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) “Uch nuqta” nima uchun kerak? 2) Zahar noma’lum bo‘lganda nima uchun ko‘p a’zo olinadi? Doskada chizish: uch nuqta sxemasi — kirgan joy, ta’sir etgan joy, chiqqan joy. Tipik xato: faqat oshqozon massasini yuborish yoki qonni boshqa materiallar bilan bitta idishga solish."
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) “Uch nuqta” nima uchun kerak? 2) Zahar noma’lum bo‘lganda nima uchun ko‘p a’zo olinadi? Doskada chizish: uch nuqta sxemasi — kirgan joy, ta’sir etgan joy, chiqqan joy. Tipik xato: faqat oshqozon massasini yuborish yoki qonni boshqa materiallar bilan bitta idishga solish. Chuqur chirish holatida ko‘krak va qorin bo‘shlig‘i a’zolari aralashmasidan 1,5–2,0 kg massa — “o‘rta sinama” — toksikologik tekshiruvga olinadi. Jigar bo‘lagi o‘t qopi va o‘t bilan olinadi (136-bet)."
     },
     {
       "title": "Tezkor savol: diagnostika bosqichlari",
@@ -636,31 +703,31 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Spirt va uning toksik metaboliti",
-        "nodes": [],
-        "header": [
-          "Spirt",
-          "Metabolit",
-          "Toksik ta’sir"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Metil spirti",
+            "items": [
+              "Metabolit: formaldegid",
+              "Kardio-, nefro-, neyrotoksik"
+            ]
+          },
+          {
+            "title": "Etil spirti",
+            "items": [
+              "Metabolit: atsetaldegid",
+              "Poxmele: bosh og‘rig‘i, ko‘ngil aynishi"
+            ]
+          },
+          {
+            "title": "Etilenglikol",
+            "items": [
+              "Metabolit: oksalat kislotasi",
+              "Gepato- va nefrotoksik"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Metil spirti",
-            "Formaldegid",
-            "Kardio-, nefro-, neyrotoksik"
-          ],
-          [
-            "Etil spirti",
-            "Atsetaldegid",
-            "Bosh og‘rig‘i, ko‘ngil aynishi (poxmele)"
-          ],
-          [
-            "Etilenglikol",
-            "Oksalat kislotasi",
-            "Gepato- va nefrotoksik"
-          ]
-        ]
+        "caption": "Spirt va uning toksik metaboliti"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega metabolit ko‘pincha asl moddadan xavfliroq? 2) Etil spirti metabolitining qanday noxush alomatlari bor? Doskada: uch spirtning oksidlanish sxemasini (spirt → metabolit) chizdiring. Tipik xato: metanol ta’sirini butun molekulaga bog‘lash; kardio-, nefro-, neyrotoksiklik formaldegidga bog‘liq."
     },
@@ -696,36 +763,40 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Zaharlar guruhlari (V.L. Popov bo‘yicha)",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Tarkibi",
-          "Ta’siri"
+        "kind": "tree",
+        "root": "Zaharlar tasnifi",
+        "children": [
+          {
+            "label": "Mahalliy",
+            "items": [
+              "Kislota, ishqor, yod, peroksid",
+              "Kontakt joyida nekroz"
+            ]
+          },
+          {
+            "label": "Destruktiv",
+            "items": [
+              "Simob, qo‘rg‘oshin, rux, margimush",
+              "Fosfor",
+              "Ichki a’zolarda to‘qima buzilishi"
+            ]
+          },
+          {
+            "label": "Gemotrop",
+            "items": [
+              "Gemoglobinotrop, gemolitik",
+              "Qon tarkibiga ta’sir"
+            ]
+          },
+          {
+            "label": "Funksional",
+            "items": [
+              "Falajlovchi, qo‘zg‘atuvchi, so‘ndiruvchi",
+              "Asosan nerv faoliyatini buzadi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Mahalliy",
-            "Kislota, ishqor, yod tindirmasi, peroksid",
-            "Kontakt joyida nekroz"
-          ],
-          [
-            "Destruktiv",
-            "Simob, qo‘rg‘oshin, rux, margimush, fosfor",
-            "Ichki a’zolarda to‘qima buzilishi"
-          ],
-          [
-            "Gemotrop",
-            "Gemoglobinotrop, gemolitik, boshqa",
-            "Qon tarkibi va xususiyatiga ta’sir"
-          ],
-          [
-            "Funksional",
-            "Falajlovchi, qo‘zg‘atuvchi, so‘ndiruvchi",
-            "Asosan nerv tizimi faoliyatini buzadi"
-          ]
-        ]
+        "caption": "V.L. Popov bo‘yicha"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega funksional zaharlarda murdada o‘zgarish kam bo‘ladi? 2) Spirt qaysi guruhchaga kiradi? Doskada: tasnif daraxtini (mahalliy / umumiy → uch guruh) chizdiring. Tipik xato: gemotrop zaharlarni mahalliy guruhga qo‘shish; ular umumiy ta’sirlilar tarkibida."
     },
@@ -742,7 +813,7 @@
           "uncertain": false
         },
         {
-          "text": "Keyin yashirin bosqich boshlandi: ahvol yaxshilandi, bu bir necha soatdan bir necha kungacha davom etdi. So‘ng bosh og‘rig‘i, qusish, hush yo‘qolishi va ko‘rish buzilishi paydo bo‘ldi.",
+          "text": "Keyin yashirin bosqich boshlandi: ahvol yaxshilandi, bu bir necha soatdan bir necha kungacha davom etdi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -751,7 +822,7 @@
           "uncertain": false
         },
         {
-          "text": "Metanolning butun molekulasi kuchsiz narkotik ta’sir qiladi. Kuchli zaharni uning metabolitlari – formaldegid va chumoli kislotasi – beradi, atsidoz rivojlanadi.",
+          "text": "So‘ng bosh og‘rig‘i, qusish, hush yo‘qolishi va ko‘rish buzilishi paydo bo‘ldi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -760,17 +831,26 @@
           "uncertain": false
         },
         {
-          "text": "Savol: nega yashirin bosqichdan keyin ahvol keskin yomonlashadi? Etilenglikolda ham xuddi shunday: metaboliti oksalat kislotasi jigar va buyrakni zaharlaydi.",
+          "text": "Metanolning butun molekulasi kuchsiz narkotik ta’sir qiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "162"
+            "page": "161"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kuchli zaharni uning metabolitlari – formaldegid va chumoli kislotasi – beradi, atsidoz rivojlanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "161"
           },
           "uncertain": false
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 6-7 daqiqa. Muhokama: 1) Nega zaharning asl molekulasi emas, metaboliti xavfliroq bo‘lishi mumkin? 2) Metanol sekin oksidlansa, uning toksik ta’siri qanday o‘zgaradi? Doskada chizish: metanol → formaldegid → chumoli kislotasi zanjirini va etilenglikol → oksalat kislotasi zanjirini chizing. Tipik xato: talabalar yashirin bosqichdagi yaxshilanishni tuzalish deb o‘ylaydi. Yo‘naltiruvchi javob: metabolitlar to‘planishi kutilmoqda."
+      "teacher_notes": "Vaqt: 6-7 daqiqa. Muhokama: 1) Nega zaharning asl molekulasi emas, metaboliti xavfliroq bo‘lishi mumkin? 2) Metanol sekin oksidlansa, uning toksik ta’siri qanday o‘zgaradi? Doskada chizish: metanol → formaldegid → chumoli kislotasi zanjirini va etilenglikol → oksalat kislotasi zanjirini chizing. Tipik xato: talabalar yashirin bosqichdagi yaxshilanishni tuzalish deb o‘ylaydi. Yo‘naltiruvchi javob: metabolitlar to‘planishi kutilmoqda. Savol: nega yashirin bosqichdan keyin ahvol keskin yomonlashadi? Etilenglikolda ham xuddi shunday: metaboliti oksalat kislotasi jigar va buyrakni zaharlaydi."
     },
     {
       "title": "Etil spirti: umumiy xususiyat va narkotik ta’siri",
@@ -794,7 +874,16 @@
           "uncertain": false
         },
         {
-          "text": "Ko‘p miqdorda qabul qilinsa, tormozlanish po‘stloq ostiga, uzunchoq miya va miyachaga o‘tadi. Toksik ta’sir nafas hamda yurak-qon tomir markazlari buzilishida namoyon bo‘ladi.",
+          "text": "Ko‘p miqdorda qabul qilinsa, tormozlanish po‘stloq ostiga, uzunchoq miya va miyachaga o‘tadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "156"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Toksik ta’sir nafas hamda yurak-qon tomir markazlari buzilishida namoyon bo‘ladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -890,36 +979,30 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "So‘rilish va bog‘lanish",
-        "nodes": [],
-        "header": [
-          "Holat",
-          "Ulush",
-          "Izoh"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Oshqozonda so‘riladi",
+            "value": "~ 20",
+            "unit": "%"
+          },
+          {
+            "label": "Ichakda so‘riladi",
+            "value": "~ 80",
+            "unit": "%"
+          },
+          {
+            "label": "Och qoringa: bog‘lanadi",
+            "value": "~ 5",
+            "unit": "%"
+          },
+          {
+            "label": "To‘la me’da: bog‘lanadi",
+            "value": "~ 40",
+            "unit": "%"
+          }
         ],
-        "rows": [
-          [
-            "Oshqozonda so‘riladi",
-            "~20%",
-            "Massa bilan bog‘lanishi mumkin"
-          ],
-          [
-            "Ichakda so‘riladi",
-            "~80%",
-            "Asosiy so‘rilish qismi"
-          ],
-          [
-            "Och qoringa",
-            "~5% bog‘lanadi",
-            "Doimiy (tiklanmaydigan) defitsit"
-          ],
-          [
-            "Oshqozon to‘la",
-            "~40% bog‘lanadi",
-            "Vaqtincha defitsit, so‘rilish kechroq"
-          ]
-        ]
+        "caption": "Etil spirtining so‘rilishi (G‘iyosov)"
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nega to‘la oshqozonda mastlik sekinroq rivojlanadi? Ikki holatda bir xil miqdor ichilsa, qondagi konsentratsiya qanday farq qiladi? Doskada: 20% va 80% ulushli ikki ustunli sxema chizing, ostiga och va to‘la oshqozon holatini yozing. Tipik xato: “vaqtincha defitsit” spirt butunlay so‘rilmaydi, deb o‘ylash. Aslida u faqat kechroq so‘riladi."
     },
@@ -963,7 +1046,29 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Davrni qisqartiradi",
+            "items": [
+              "Oshqozon bo‘shligi",
+              "Gipoatsid gastrit",
+              "Kuchli modda almashinuvi (tireotoksikoz)",
+              "Muhitda giperkapniya"
+            ]
+          },
+          {
+            "title": "Davrni uzaytiradi",
+            "items": [
+              "Oshqozon to‘laligi",
+              "Giperatsid gastrit",
+              "Stress (pilorik spazm, motorika susayishi)"
+            ]
+          }
+        ],
+        "caption": "Rezorbsiya davriga ta’sir"
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: rezorbsiya davrini bilish qondagi spirt miqdorini baholashda nega muhim? Talabalar ikki guruhga bo‘linib, qisqartiruvchi va uzaytiruvchi omillarni nomlasin. Doskada: ikki ustunli ro‘yxat (qisqartiradi / uzaytiradi) tuzing. Tipik xato: gipoatsid va giperatsid gastritni almashtirib yuborish."
     },
     {
@@ -1011,6 +1116,89 @@
         "rows": []
       },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: nima uchun oraliq modda – atsetaldegid – alkogolning o‘zidan ko‘ra noxush alomatlarga ko‘proq sabab bo‘ladi? Doskada: besh bosqichli zanjirni fermentlar nomi bilan chizing. Tipik xato: alkogoldegidrogenaza va aldegiddegidrogenazani aralashtirish; birinchisi spirtni, ikkinchisi atsetaldegidni oksidlaydi."
+    },
+    {
+      "title": "Etanolning so‘rilishi va ajralishi (Simpson)",
+      "bullets": [
+        {
+          "text": "Spirt oshqozon va ingichka ichakdan diffuziya bilan so‘riladi; asosiy qismi ingichka ichakda.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "188"
+          }
+        },
+        {
+          "text": "Me’dada so‘rilish ovqat bilan ichilganda taxminan 30%, suv bilan — 10%; suv bilan ichilganda BAC yuqoriroq bo‘ladi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "188–189"
+          }
+        },
+        {
+          "text": "Eng tez so‘rilish och qoringa 20–25% (v/v) eritmada; ovqat bilan, 40% eritma yoki pivo kabi suyuq ichimlikda sekinlashadi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "189"
+          }
+        },
+        {
+          "text": "Eliminatsiya har kimda doimiy tezlikda: median ≈ 15 mg%/soat, oraliq 10–20; ko‘pchilikda 13–18 mg%/soat.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "189"
+          }
+        },
+        {
+          "text": "BAC vazn va jinsga bog‘liq (tana suvi hajmi): ayollarda bir xil miqdordan keyin BAC biroz yuqori.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "189"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Me’da: ovqat bilan",
+            "value": "~ 30",
+            "unit": "%"
+          },
+          {
+            "label": "Me’da: suv bilan",
+            "value": "~ 10",
+            "unit": "%"
+          },
+          {
+            "label": "Eng tez so‘rilish",
+            "value": "20–25",
+            "unit": "% (v/v)"
+          },
+          {
+            "label": "Eliminatsiya (median)",
+            "value": "15",
+            "unit": "mg%/soat"
+          },
+          {
+            "label": "Oraliq",
+            "value": "10–20",
+            "unit": "mg%/soat"
+          },
+          {
+            "label": "Ko‘pchilikda",
+            "value": "13–18",
+            "unit": "mg%/soat"
+          }
+        ],
+        "caption": "Simpson: so‘rilish va eliminatsiya"
+      },
+      "teacher_notes": "Vaqt: 5 daq. Diqqat: me’dada so‘rilish ulushi manbalarda farq qiladi: G‘iyosov ~20% (oshqozon) / 80% (ichak), Simpson ovqat bilan 30%, suv bilan 10% — ko‘rsatilgan manbaga havola qiling.",
+      "diagram_note": "G‘iyosov (157-bet) va Simpson (188–189-bet) me’dada so‘rilish ulushini turlicha beradi; talabalar uchun manba ko‘rsatiladi."
     },
     {
       "title": "Fermentlarning atipik shakllari",
@@ -1130,36 +1318,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Rappoport va Moxov–Shinkarenko sinamalari",
-        "nodes": [],
-        "header": [
-          "Jihat",
-          "Rappoport",
-          "Moxov"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Rappoport",
+            "items": [
+              "Sulfat kislota + kaliy permanganat",
+              "Pushti-qizg‘ish rang rangsizlanadi",
+              "Sezgirlik: qonda 0,3–0,4 ‰",
+              "Soxta musbat: karies, o‘pka kasalligi, diabet"
+            ]
+          },
+          {
+            "title": "Moxov–Shinkarenko",
+            "items": [
+              "Bixromat + sulfat kislota",
+              "Sariq-olov rang yashilga o‘tadi",
+              "Sezgirlik: qonda 0,3–0,4 ‰",
+              "Soxta musbat: karies, o‘pka kasalligi, diabet"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Reagent",
-            "Sulfat kislota + kaliy permanganat",
-            "Bixromat kislotasi + sulfat kislota"
-          ],
-          [
-            "Rang o‘zgarishi",
-            "Pushti-qizg‘ish rangsizlanadi",
-            "Sariq-olov rang yashilga o‘tadi"
-          ],
-          [
-            "Sezgirlik",
-            "Qonda 0,3–0,4 promille",
-            "Qonda 0,3–0,4 promille"
-          ],
-          [
-            "Soxta musbat",
-            "Karies, o‘pka kasalligi, diabetda mumkin",
-            "Karies, o‘pka kasalligi, diabetda mumkin"
-          ]
-        ]
+        "caption": "Havo bilan sifat sinamalari"
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nega sinama manfiy chiqsa alkogol yo‘q deyish mumkin, musbat chiqsa esa tasdiq kerak? Sifat va miqdoriy aniqlash farqi nimada? Doskada chizing: ikki probirka (sinov va nazorat) va rang o‘zgarishi sxemasi. Tipik xato: musbat sinamani mastlik darajasining isboti deb hisoblash."
     },
@@ -1281,31 +1461,31 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Qon va siydik: davrlar bo‘yicha",
-        "nodes": [],
-        "header": [
-          "Davr",
-          "Qon",
-          "Siydik"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Rezorbsiya",
+            "items": [
+              "Qon: siydikdan baland, ko‘tarilmoqda",
+              "Siydik: qonga nisbatan past"
+            ]
+          },
+          {
+            "title": "Eliminatsiya",
+            "items": [
+              "Qon: pasaya boshlaydi",
+              "Siydik: baland"
+            ]
+          },
+          {
+            "title": "Takroriy qabul",
+            "items": [
+              "Qon: yana oshadi",
+              "Siydik: baland turadi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Rezorbsiya",
-            "Siydikdan baland, ko‘tarilmoqda",
-            "Qonga nisbatan past"
-          ],
-          [
-            "Eliminatsiya",
-            "Pasaya boshlaydi",
-            "Baland"
-          ],
-          [
-            "Takroriy qabul",
-            "Yana oshadi",
-            "Baland turadi"
-          ]
-        ]
+        "caption": "Qon va siydik: davrlar bo‘yicha"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Qon va siydik miqdorini taqqoslash nimaga imkon beradi? 2) Siydikda baland, qonda yana oshgan holat nimani bildiradi? Doskada: vaqt o‘qi bo‘yicha qon va siydik egri chiziqlarini chizing, ular qaerda kesishishini belgilang. Tipik xato: rezorbsiya va eliminatsiyani chalkashtirish, takroriy qabulni sezmay qolish."
     },
@@ -1341,31 +1521,30 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Vidmark konstantasi qiymatlari",
-        "nodes": [],
-        "header": [
-          "Holat",
-          "Qiymat"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Eliminatsiya boshi",
+            "value": "0,10–0,13",
+            "unit": "‰/soat"
+          },
+          {
+            "label": "O‘rtacha yuklama",
+            "value": "0,15–0,18",
+            "unit": "‰/soat"
+          },
+          {
+            "label": "Kuchli yuklama",
+            "value": "0,20–0,24",
+            "unit": "‰/soat"
+          },
+          {
+            "label": "Uyqu holati",
+            "value": "0,10–0,12",
+            "unit": "‰/soat"
+          }
         ],
-        "rows": [
-          [
-            "Eliminatsiya davrining boshi",
-            "0,10–0,13"
-          ],
-          [
-            "O‘rtacha jismoniy yuklama",
-            "0,15–0,18"
-          ],
-          [
-            "Kuchli jismoniy yuklama",
-            "0,20–0,24"
-          ],
-          [
-            "Uyqu holati",
-            "0,10–0,12"
-          ]
-        ]
+        "caption": "Vidmark konstantasi (P)"
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nega tirik shaxslardan vaqt oralig‘ida bir necha namuna olish tavsiya etiladi? Nega P qiymati holatga qarab o‘zgaradi? Doskada chizing: vaqt o‘qida qondagi spirt konsentratsiyasining pasayish chizig‘i (rezorbsiyadan eliminatsiyaga o‘tish). Tipik xato: P ni hamma uchun bir xil deb olish; o‘rtacha 0,13–0,15 faqat boshqa imkon bo‘lmaganda ishlatiladi."
     },
@@ -1401,31 +1580,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Reduksiya omili (r)",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "r qiymati"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Erkaklar (o‘rtacha)",
+            "value": "0,68"
+          },
+          {
+            "label": "Ayollar (o‘rtacha)",
+            "value": "0,55"
+          },
+          {
+            "label": "Ozg‘in odamlar",
+            "value": "0,70–0,75"
+          },
+          {
+            "label": "To‘la odamlar",
+            "value": "0,55–0,65"
+          }
         ],
-        "rows": [
-          [
-            "Erkaklar (o‘rtacha)",
-            "0,68"
-          ],
-          [
-            "Ayollar (o‘rtacha)",
-            "0,55"
-          ],
-          [
-            "Ozg‘in odamlar",
-            "0,70–0,75"
-          ],
-          [
-            "To‘la odamlar",
-            "0,55–0,65"
-          ]
-        ]
+        "caption": "Reduksiya omili (r)"
       },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: nima uchun ozg‘in odamlarda r yuqoriroq, to‘la odamlarda pastroq? Formuladagi har bir belgi nimani bildiradi? Doskada chizing: formulani yozib, har bir belgi tagiga uning ma’nosini qo‘ying. Tipik xato: T ni ichimlik ichilgan vaqtdan emas, boshqa vaqtdan hisoblash; T ichish va namuna olish oralig‘idir."
     },
@@ -1461,31 +1635,40 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Mastlik darajalari (qonda)",
-        "nodes": [],
-        "header": [
-          "Daraja",
-          "Promille"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Engil mastlik",
+            "value": "0,5–1,5",
+            "unit": "‰"
+          },
+          {
+            "label": "O‘rta mastlik",
+            "value": "1,5–2,5",
+            "unit": "‰"
+          },
+          {
+            "label": "Kuchli mastlik",
+            "value": "2,5–3,0",
+            "unit": "‰"
+          },
+          {
+            "label": "Zaharlanish",
+            "value": "> 3,0",
+            "unit": "‰"
+          },
+          {
+            "label": "Murda qonida o‘lim",
+            "value": "≥ 5,0",
+            "unit": "‰"
+          },
+          {
+            "label": "Yuqori spirtlar bilan",
+            "value": "< 4,0",
+            "unit": "‰"
+          }
         ],
-        "rows": [
-          [
-            "Engil mastlik",
-            "0,5–1,5"
-          ],
-          [
-            "O‘rta mastlik",
-            "1,5–2,5"
-          ],
-          [
-            "Kuchli mastlik",
-            "2,5–3,0"
-          ],
-          [
-            "Zaharlanish",
-            "3,0 dan yuqori"
-          ]
-        ]
+        "caption": "Mastlik darajalari va o‘lim chegaralari"
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nima uchun 3,0 promilledan yuqori miqdor mastlik emas, zaharlanish deyiladi? Yuqori spirtlar aralashganda nega o‘lim chegarasi pasayadi? Doskada chizing: 0 dan 5,0 promillegacha shkala va unda daraja chegaralarini belgilang. Tipik xato: 5,0 promilleni hamma holat uchun o‘lim chegarasi deb o‘ylash; yuqori spirtlar bo‘lsa, 4,0 dan pastda ham o‘lim bo‘lishi mumkin."
     },
@@ -1606,7 +1789,16 @@
           "uncertain": false
         },
         {
-          "text": "Ichgandan bir necha kun keyin o‘lganda qonda spirt kam yoki umuman bo‘lmasligi mumkin; sabab odatda yurakning ishemik kasalligi yoki kardiomiopatiyada o‘tkir yurak yetishmovchiligi.",
+          "text": "Ichgandan bir necha kun keyin o‘lganda qonda spirt kam yoki umuman bo‘lmasligi mumkin;",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "160"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "sabab odatda yurakning ishemik kasalligi yoki kardiomiopatiyada o‘tkir yurak yetishmovchiligi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1631,7 +1823,7 @@
           "uncertain": false
         },
         {
-          "text": "Metanolning o‘zi kuchsiz narkotik ta’sir qiladi. Asosiy zararni metabolitlari – formaldegid va chumoli kislotasi beradi: atsidoz va to‘qima nafasining buzilishi.",
+          "text": "Metanolning o‘zi kuchsiz narkotik ta’sir qiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1640,7 +1832,16 @@
           "uncertain": false
         },
         {
-          "text": "Qisqa mastlik, so‘ng soatlardan kungacha “yashirin” yengillik, so‘ng og‘ir belgilar boshlanadi. Ko‘rish susayib, butunlay yo‘qolishi mumkin. O‘lim ko‘pincha 2-3 kunda, nafas markazi falajidan.",
+          "text": "Asosiy zararni metabolitlari – formaldegid va chumoli kislotasi beradi: atsidoz va to‘qima nafasining buzilishi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "161"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qisqa mastlik, so‘ng soatlardan kungacha “yashirin” yengillik, so‘ng og‘ir belgilar boshlanadi. Ko‘rish susayib, butunlay yo‘qolishi mumkin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1649,17 +1850,38 @@
           "uncertain": true
         },
         {
-          "text": "Murdada: miya shishi, epikard ostida Kryukov dog‘lari, ko‘rish nervida qon quyilish. Metabolizm sekin bo‘lgani uchun spirt qon va a’zolarda 3-5 kun aniqlanadi.",
+          "text": "O‘lim ko‘pincha 2-3 kunda, nafas markazi falajidan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "162"
+            "page": "161"
           },
           "uncertain": true
         }
       ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: nima uchun metanol o‘zi emas, metabolitlari xavfli? Yashirin bosqich nima uchun xavfli? Doskada chizing: metanol → formaldegid → chumoli kislotasi → atsidoz. Tipik xato: metanol bilan etil spirtini ko‘rish buzilishi bo‘yicha adashtirish. Manbada ayrim jumlalarda “etil spirti” deb yozilgan, mazmunan metanol nazarda tutilgan, shuning uchun “uncertain” belgilandi."
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Qisqa mastlik",
+            "text": "Kuchsiz narkotik ta’sir"
+          },
+          {
+            "title": "Yashirin bosqich",
+            "text": "Soatlardan kungacha yengillik"
+          },
+          {
+            "title": "Og‘ir belgilar",
+            "text": "Atsidoz, ko‘rish susayishi/yo‘qolishi"
+          },
+          {
+            "title": "O‘lim",
+            "text": "2–3 kunda, nafas markazi falajidan"
+          }
+        ],
+        "caption": "Metanol zaharlanishi"
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: nima uchun metanol o‘zi emas, metabolitlari xavfli? Yashirin bosqich nima uchun xavfli? Doskada chizing: metanol → formaldegid → chumoli kislotasi → atsidoz. Tipik xato: metanol bilan etil spirtini ko‘rish buzilishi bo‘yicha adashtirish. Manbada ayrim jumlalarda “etil spirti” deb yozilgan, mazmunan metanol nazarda tutilgan, shuning uchun “uncertain” belgilandi. Murdada: miya shishi, epikard ostida Kryukov dog‘lari, ko‘rish nervida qon quyilish. Metabolizm sekin bo‘lgani uchun spirt qon va a’zolarda 3-5 kun aniqlanadi."
     },
     {
       "title": "Boshqa surrogatlar: yuqori spirtlar va etilenglikol",
@@ -1683,7 +1905,7 @@
           "uncertain": false
         },
         {
-          "text": "Etilenglikol – antifriz va tormoz suyuqligi tarkibidagi hidsiz, shirin suyuqlik. U oksalat kislotasigacha oksidlanib, jigar va buyrakni zaharlaydi. Letal doza 100-200 ml.",
+          "text": "Etilenglikol – antifriz va tormoz suyuqligi tarkibidagi hidsiz, shirin suyuqlik. U oksalat kislotasigacha oksidlanib, jigar va buyrakni zaharlaydi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1692,7 +1914,16 @@
           "uncertain": false
         },
         {
-          "text": "To‘rt bosqich: mastlik, yashirin davr, MNT (markaziy nerv tizimi) shikasti, jigar-buyrak shikasti. Murdada kech nekronefroz va gepatit; qonda va a’zolarda 3-6 kun aniqlanadi.",
+          "text": "Letal doza 100-200 ml.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "162-163"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "To‘rt bosqich: mastlik, yashirin davr, MNT (markaziy nerv tizimi) shikasti, jigar-buyrak shikasti.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1701,14 +1932,259 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: yuqori spirtlarda miya o‘zgarishlari yurakdagidan yaqqolroq ekanini etil spirti bilan solishtiring. Etilenglikol bosqichlarini kim sanab beradi? Doskada chizing: 4 bosqichli zanjir va uchta spirtning letal dozalari. Tipik xato: butil va amil spirtlarining hidlarini va letal dozalarini aralashtirish."
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Propil spirti",
+            "value": "300",
+            "unit": "ml"
+          },
+          {
+            "label": "Butil spirti",
+            "value": "200–250",
+            "unit": "ml"
+          },
+          {
+            "label": "Amil spirti",
+            "value": "20–30",
+            "unit": "ml"
+          },
+          {
+            "label": "Etilenglikol",
+            "value": "100–200",
+            "unit": "ml"
+          }
+        ],
+        "caption": "Letal dozalar"
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: yuqori spirtlarda miya o‘zgarishlari yurakdagidan yaqqolroq ekanini etil spirti bilan solishtiring. Etilenglikol bosqichlarini kim sanab beradi? Doskada chizing: 4 bosqichli zanjir va uchta spirtning letal dozalari. Tipik xato: butil va amil spirtlarining hidlarini va letal dozalarini aralashtirish. Murdada kech nekronefroz va gepatit; qonda va a’zolarda 3-6 kun aniqlanadi."
+    },
+    {
+      "title": "Etanolning o‘limdan keyin hosil bo‘lishi",
+      "bullets": [
+        {
+          "text": "O‘limdan keyin bakterial fermentlar uglevodlarga (glikogen, laktat) ta’sir etib piruvat orqali etanol hosil qilishi mumkin.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "190"
+          }
+        },
+        {
+          "text": "Hosil bo‘lish miqdori substratga bog‘liq: jigarda glikogen 8 g/100 g, shishasimon tanada atigi 90 mg/100 g.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "190"
+          }
+        },
+        {
+          "text": "Ko‘paytiruvchi omillar: terminal gipertermiya, yuqori muhit harorati, ichak jarohati yoki buzilishi; aviahalokatda deyarli doim ko‘p.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "190"
+          }
+        },
+        {
+          "text": "Farqlash: siydik (diabet bo‘lmasa uglevod yo‘q) va shishasimon tana etanolini qon bilan solishtirish. UAC:BAC < 1:2 — o‘lim paytida konsentratsiya ko‘tarilgan.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "190"
+          }
+        },
+        {
+          "text": "UAC:BAC > 1:3 — postabsorbsiya bosqichi; 1:3 dan ancha yuqori — uzoq muddatli ko‘p iste’mol.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "190"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "UAC:BAC < 1:2",
+            "text": "O‘lim paytida etanol ko‘tarilmoqda"
+          },
+          {
+            "title": "UAC:BAC > 1:3",
+            "text": "Postabsorbsiya bosqichi"
+          },
+          {
+            "title": "UAC:BAC ≫ 1:3",
+            "text": "Uzoq muddatli ko‘p iste’mol"
+          },
+          {
+            "title": "Siydik, shishasimon tana",
+            "text": "Uglevodi kam — ishonchli taqqoslash"
+          }
+        ],
+        "caption": "Qon va siydik nisbati bo‘yicha talqin"
+      },
+      "teacher_notes": "Vaqt: 4 daq. UAC — siydikdagi, BAC — qondagi spirt konsentratsiyasi."
+    },
+    {
+      "title": "Qon spirt darajasi: klinik ahamiyat va tolerantlik",
+      "bullets": [
+        {
+          "text": "Etanol kuchli MNT depressanti: BAC ko‘tarilishi bilan bo‘shashish va xushchaqchaqlikdan xira ko‘rish, koordinatsiya buzilishi, hushsizlikka o‘tiladi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "189"
+          }
+        },
+        {
+          "text": "Tolerantlik tufayli o‘rganmaganni o‘ldiradigan BAC da surunkali alkogolda belgilar kam bo‘lishi mumkin; BAC yolg‘iz o‘zi kam ma’no beradi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "189"
+          }
+        },
+        {
+          "text": "BAC 0,40% (400 mg%) dan oshsa, alkogol ichmaydigan odamda o‘limga olib kelishi mumkin.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "189"
+          }
+        },
+        {
+          "text": "Qusuqni aspiratsiya qilish asfiksiya va o‘limga olib kelishi mumkin.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "189"
+          }
+        },
+        {
+          "text": "Alkogol tutilishi (abstinensiya) davolanmasa o‘limga olib kelishi mumkin; CIWA-Ar maksimal 67 ball, 10 dan past ballda odatda dori shart emas.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "189–191"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "O‘lik BAC (ichmaydigan)",
+            "value": "> 0,40",
+            "unit": "% (400 mg%)"
+          },
+          {
+            "label": "CIWA-Ar maksimal ball",
+            "value": "67"
+          },
+          {
+            "label": "Dori shart emas",
+            "value": "< 10",
+            "unit": "ball"
+          }
+        ],
+        "caption": "Simpson: BAC va alkogol tutilishi"
+      },
+      "teacher_notes": "Vaqt: 4 daq. Diqqat: BAC ni izolyatsiyada talqin qilib bo‘lmaydi."
+    },
+    {
+      "title": "Winnek taxminiy formulasi (Simpson)",
+      "bullets": [
+        {
+          "text": "Winnek formulasi qon spirt konsentratsiyasini (BAC) taxminan baholash uchun sodda formula; Vidmark formulasining o‘rnini bosmaydi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "188"
+          }
+        },
+        {
+          "text": "Asos: 150 funtli (68 kg) erkakda 1 untsiya (29,5 ml) 100-proof (50%) spirtdan keyin BAC ≈ 0,025%.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "188"
+          }
+        },
+        {
+          "text": "Formula: BAC = (150 / vazn funtda) × (spirt %/50) × (ichilgan untsiya) × 0,025.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "188"
+          }
+        },
+        {
+          "text": "Misol: 200 funtli erkak 4% li 12 untsiyali beshta pivo ichsa, BAC ≈ 0,090% (90 mg%).",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "188"
+          }
+        },
+        {
+          "text": "Sud jarayoni bo‘lsa, Vidmark formulalari qo‘llanishi shart.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "188"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Etalon: vazn",
+            "value": "150",
+            "unit": "funt (68 kg)"
+          },
+          {
+            "label": "Etalon: BAC",
+            "value": "0,025",
+            "unit": "%"
+          },
+          {
+            "label": "Misol: vazn",
+            "value": "200",
+            "unit": "funt"
+          },
+          {
+            "label": "Misol: ichilgan",
+            "value": "60",
+            "unit": "untsiya (4%)"
+          },
+          {
+            "label": "Misol: natija",
+            "value": "≈ 0,090",
+            "unit": "%"
+          }
+        ],
+        "caption": "Winnek formulasi: etalon va misol"
+      },
+      "teacher_notes": "Vaqt: 4 daq. Simpson: formula faqat taxminiy; sudda Vidmark. Hisob: (150/200)(4/50)(60)(0,025) = 0,090%."
     },
     {
       "title": "Xulosa va eslab qolish nuqtalari",
       "bullets": [
         {
-          "text": "Diagnostika uch bosqichda olinadi: hodisa joyi va tibbiy hujjatlar, murda tekshiruvi, laboratoriya. Eng ko‘p sud-kimyoviy va gistologik tekshiruvlar o‘tkaziladi.",
+          "text": "Diagnostika uch bosqichda olinadi: hodisa joyi va tibbiy hujjatlar, murda tekshiruvi, laboratoriya.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "135-136, 180"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Eng ko‘p sud-kimyoviy va gistologik tekshiruvlar o‘tkaziladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1735,7 +2211,7 @@
           "uncertain": true
         },
         {
-          "text": "Laboratoriya natijalari voqea tafsilotlari, klinik ma’lumotlar va murda tekshiruvi bilan birga, tanqidiy baholanadi. Soxta musbat ham, manfiy natija ham bo‘lishi mumkin.",
+          "text": "Laboratoriya natijalari voqea tafsilotlari, klinik ma’lumotlar va murda tekshiruvi bilan birga, tanqidiy baholanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1745,19 +2221,19 @@
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: nima uchun faqat laboratoriya natijasiga tayanib xulosa qilib bo‘lmaydi? Talabalar algoritmni (voqea → murda → laboratoriya) o‘z so‘zlari bilan aytsin. Doskada chizing: uch bosqichli diagnostik zanjir. Tipik xato: manfiy toksikologik natijani zaharlanish yo‘qligining isboti deb olish."
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: nima uchun faqat laboratoriya natijasiga tayanib xulosa qilib bo‘lmaydi? Talabalar algoritmni (voqea → murda → laboratoriya) o‘z so‘zlari bilan aytsin. Doskada chizing: uch bosqichli diagnostik zanjir. Tipik xato: manfiy toksikologik natijani zaharlanish yo‘qligining isboti deb olish. Soxta musbat ham, manfiy natija ham bo‘lishi mumkin."
     }
   ],
   "mcq": [
     {
       "question": "Zo‘raki o‘lim tarkibida zaharlanishlar qaysi o‘rinni egallaydi?",
       "options": [
+        "Barcha sabablar ichida eng so‘nggi o‘rinda",
         "Mexanik jarohatlardan keyin ikkinchi o‘rinda",
-        "Mexanik jarohat va asfiksiyadan keyin uchinchi o‘rinda",
         "Mexanik asfiksiyadan oldin birinchi o‘rinda",
-        "Barcha sabablar ichida eng so‘nggi o‘rinda"
+        "Mexanik jarohat va asfiksiyadan keyin uchinchi o‘rinda"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Darslikda zaharlanishlar zo‘raki o‘lim tarkibida mexanik jarohatlar va mexanik asfiksiyadan keyin uchinchi o‘rinda turishi aytilgan.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1802,10 +2278,10 @@
       "options": [
         "Bolalarda oshqozon massasi har doim ko‘p bo‘ladi",
         "Bolalar jinsiga ko‘ra zaharga ko‘proq sezgir bo‘ladi",
-        "Vazni kichik va umumiy qarshilik tizimi to‘liq shakllanmagan",
-        "Bolalarda zahar organizmdan juda tez chiqib ketadi"
+        "Bolalarda zahar organizmdan juda tez chiqib ketadi",
+        "Vazni kichik va umumiy qarshilik tizimi to‘liq shakllanmagan"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Bolalar kattalarga nisbatan sezgirroq. Buni vaznining kichikligi va umumiy qarshilik ko‘rsatish tizimining to‘liq shakllanmaganligi bilan tushuntiriladi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2038,19 +2514,19 @@
       }
     },
     {
-      "question": "Ichkilik qabul qilgan shaxsda qondagi spirt konsentratsiyasi pasaymoqda, siydikdagisi esa baland. Bu qaysi davrga mos keladi?",
+      "question": "Simpson bo‘yicha spirt eliminatsiyasining median tezligi taxminan qancha?",
       "options": [
-        "Rezorbsiya davri",
-        "Yashirin davr",
-        "Takroriy qabul davri",
-        "Eliminatsiya davri"
+        "≈ 15 mg%/soat",
+        "≈ 5 mg%/soat",
+        "≈ 30 mg%/soat",
+        "≈ 50 mg%/soat"
       ],
-      "correct_index": 3,
-      "explanation": "Eliminatsiya davrida qondagi spirt kamayadi, siydikdagisi baland bo‘ladi. Rezorbsiyada qondagi konsentratsiya siydikdagidan balandroq va oshib boradi. Takroriy qabul siydikda baland bo‘lib, qonda oshishi bilan namoyon bo‘ladi.",
+      "correct_index": 0,
+      "explanation": "Eliminatsiya har kimda doimiy tezlikda; BAC pasayishining median tezligi taxminan 15 mg%/soat, oraliq 10–20, ko‘pchilikda 13–18 mg%/soat.",
       "source": {
-        "author": "G‘iyosov Z.A.",
-        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-        "page": "159"
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "189"
       }
     },
     {

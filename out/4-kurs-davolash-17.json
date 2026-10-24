@@ -83,15 +83,26 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Ijtimoiy xavf belgisiga ko‘ra",
-        "nodes": [
-          "G‘ayriqonuniy harakat",
-          "Ijtimoiy xavf yo‘q",
-          "Qilmish"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Qilmish",
+            "items": [
+              "G‘ayriqonuniy harakat",
+              "Ijtimoiy xavf belgisi yo‘q",
+              "Jinoyat kodeksida ko‘zda tutilmagan"
+            ]
+          },
+          {
+            "title": "Jinoyat",
+            "items": [
+              "Ijtimoiy xavf alomatlari bor",
+              "Jazo tahdidi bilan taqiqlangan",
+              "Aybli ijtimoiy xavfli qilmish"
+            ]
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Ijtimoiy xavf belgisiga ko‘ra"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Qaysi belgi qilmishni jinoyatdan ajratadi? Doskada: ikki yo‘nalishli sxema. Tipik xato: har qanday qilmishni jinoyat deb atash."
     },
@@ -135,7 +146,31 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Qilmish turlari",
+        "children": [
+          {
+            "label": "Intizomiy",
+            "items": [
+              "Mehnat va xizmat tartibi buziladi"
+            ]
+          },
+          {
+            "label": "Ma’muriy",
+            "items": [
+              "Muassasani boshqarish tartibi"
+            ]
+          },
+          {
+            "label": "Fuqaroviy",
+            "items": [
+              "Mulkiy va nomulkiy huquqlar"
+            ]
+          }
+        ],
+        "caption": "Huquq nuqtai nazaridan uch tur"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Har bir turga tibbiyotdan misol keltiring. Doskada: uch tur jadvali. Tipik xato: intizomiy va ma’muriy qilmishni bir xil deb o‘ylash."
     },
     {
@@ -176,7 +211,7 @@
       "title": "Davidovskiy ta’rifi",
       "bullets": [
         {
-          "text": "Davidovskiy (1928): vrach xatosi — tibbiyot fani va usullarining nomukammalligi, kasallikning atipik kechishi yoki vrach tayyorgarligining yetarli emasligi oqibatidagi vijdonan adashish.",
+          "text": "Davidovskiy (1928): vrach xatosi — tibbiyot fani va usullarining nomukammalligi, atipik kechish yoki tayyorgarlik yetishmasligi oqibatidagi vijdonan adashish.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -195,16 +230,26 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Vrach xatosi sabablari (Davidovskiy)",
-        "nodes": [
-          "Fanning nomukammalligi",
-          "Kasallikning atipik kechishi",
-          "Tayyorgarlik yetarli emasligi",
-          "Vijdonan adashish"
+        "kind": "tree",
+        "root": "Vrach xatosi (1928)",
+        "children": [
+          {
+            "label": "Fan nomukammal"
+          },
+          {
+            "label": "Atipik kechish"
+          },
+          {
+            "label": "Tayyorgarlik yetarli emas"
+          },
+          {
+            "label": "Vijdonan adashish",
+            "items": [
+              "Beparvolik elementlari yo‘q"
+            ]
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Davidovskiy ta’rifining tarkibi"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi belgi vijdonan adashishni beparvolikdan ajratadi? Doskada: ta’rifning uch sababi. Tipik xato: beparvolikni ham vrach xatosi deb hisoblash."
     },
@@ -273,7 +318,17 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Qorin og‘rig‘i, qusish",
+          "Zaharlanishga shubha",
+          "Oshqozon zondi kiritildi",
+          "Bemor to‘satdan vafot etdi",
+          "Autopsiya: miokard infarkti"
+        ],
+        "caption": "Voqea ketma-ketligi"
+      },
       "teacher_notes": "Vaqt: 6 daq. Savol: bu holat vrach xatosiga kiradimi? Javob: manbaga ko‘ra vrach muassasada ko‘zda tutilgan barcha muolajalarni bajargan; anamnez va kasallikning atipik kechishi adashishga sabab bo‘lgan. Doskada: sabablar zanjiri. Tipik xato: bu holatni beparvolik deb baholash."
     },
     {
@@ -307,7 +362,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1870: operatsiya",
+            "text": "Tuxumdon kistasi olib tashlandi"
+          },
+          {
+            "title": "40 soatdan so‘ng",
+            "text": "Ayol vafot etdi"
+          },
+          {
+            "title": "Autopsiya",
+            "text": "Qorinda gubkali tampon topildi"
+          },
+          {
+            "title": "Krassovskiy",
+            "text": "Voqeani maqolada ochiq bayon etdi"
+          },
+          {
+            "title": "Taklif",
+            "text": "Gubkalarni sanash, uzun tasma biriktirish"
+          }
+        ],
+        "caption": "Krassovskiy voqeasi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Krassovskiy tavsiyalari bugun qaysi qoidalarga aylangan? Doskada: xatoni oshkor etish natijasi. Tipik xato: gubka qoldirilishini baxtsiz hodisa deb baholash."
     },
     {
@@ -391,7 +471,7 @@
           "uncertain": false
         },
         {
-          "text": "Turlari: diagnostik, davolash (davolash, jarrohlik, jismoniy), ruhiy-emotsional va informatsion, profilaktik, davolamaslik (tibbiy yordamga kechikib murojaat) va boshqalar.",
+          "text": "Turlari: diagnostik, davolash (jarrohlik, jismoniy), ruhiy-emotsional va informatsion, profilaktik, davolamaslik (kechikib murojaat) va boshqalar.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -400,7 +480,39 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Yatrogeniya turlari",
+        "children": [
+          {
+            "label": "Diagnostik"
+          },
+          {
+            "label": "Davolash",
+            "items": [
+              "Davolash",
+              "Jarrohlik",
+              "Jismoniy"
+            ]
+          },
+          {
+            "label": "Ruhiy-emotsional",
+            "items": [
+              "Informatsion"
+            ]
+          },
+          {
+            "label": "Profilaktik"
+          },
+          {
+            "label": "Davolamaslik",
+            "items": [
+              "Kechikib murojaat qilish"
+            ]
+          }
+        ],
+        "caption": "Tibbiy omil ta’sirida yangi holat"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Har bir turga misol keltiring. Doskada: turlar jadvali. Tipik xato: davolamaslikni yatrogeniya turlaridan chetda deb o‘ylash."
     },
     {
@@ -434,14 +546,38 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Jinoyat belgilari",
+        "children": [
+          {
+            "label": "Jamiyat uchun xavf"
+          },
+          {
+            "label": "Jinoiy huquqbuzarlik",
+            "items": [
+              "Faqat qonun jinoyat deb tasniflasa"
+            ]
+          },
+          {
+            "label": "Aybdorlik"
+          },
+          {
+            "label": "Jazo ko‘zda tutiladi",
+            "items": [
+              "JK 14-modda"
+            ]
+          }
+        ],
+        "caption": "Jinoyatning to‘rt belgisi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Jinoyat va qilmish farqini yana bir bor ayting. Doskada: to‘rt belgi. Tipik xato: ijtimoiy xavflilikni faqat real zarar bilan cheklash (manbada real xavf ham kiritilgan)."
     },
     {
       "title": "Ayb: qasd va ehtiyotsizlik",
       "bullets": [
         {
-          "text": "Ayb — ijtimoiy xavfli qilmish inson ongi va irodasi nazorati ostida sodir etilishi; qasd yoki ehtiyotsizlik orqasidan sodir etgan shaxs aybdor topiladi (JK 20-modda).",
+          "text": "Ayb — ijtimoiy xavfli qilmish inson ongi va irodasi nazorati ostida sodir etilishi; qasd yoki ehtiyotsizlik bilan aybdor topiladi (JK 20-modda).",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -468,7 +604,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Ayb (JK 20-modda)",
+        "children": [
+          {
+            "label": "To‘g‘ri qasd",
+            "items": [
+              "Xavfni anglagan, oqibatni istagan"
+            ]
+          },
+          {
+            "label": "Egri qasd",
+            "items": [
+              "Oqibatga ongli yo‘l qo‘ygan"
+            ]
+          },
+          {
+            "label": "Ehtiyotsizlik",
+            "items": [
+              "O‘z-o‘ziga ishonish",
+              "Beparvolik"
+            ]
+          }
+        ],
+        "caption": "Qasd va ehtiyotsizlik"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: To‘g‘ri va egri qasd farqini tibbiy misolda tushuntiring. Doskada: qasd turlari. Tipik xato: egri qasdni ehtiyotsizlik bilan aralashtirish."
     },
     {
@@ -502,14 +663,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "O‘z-o‘ziga ishonish",
+            "items": [
+              "Oqibat mumkinligini ko‘radi",
+              "Ehtiyot choralariga rioya qilmaydi",
+              "Oqibat bo‘lmasligiga asossiz umid qiladi"
+            ]
+          },
+          {
+            "title": "Beparvolik",
+            "items": [
+              "Oqibatni ko‘rmagan",
+              "Ko‘rishi lozim va mumkin edi",
+              "JK 22-modda"
+            ]
+          }
+        ],
+        "caption": "Ehtiyotsizlik shakllari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Ikki shaklning asosiy farqi nimada? Doskada: taqqoslash jadvali. Tipik xato: o‘z-o‘ziga ishonishni qasd deb baholash."
     },
     {
       "title": "Voqea tahlili: ehtiyotsizlik misollari",
       "bullets": [
         {
-          "text": "Navbatchilikda jarroh va anesteziolog hech qanday obyektiv sababsiz, tayyorgarliksiz, assistent va hamshirasiz rejali qorin operatsiyasini o‘tkazgan; jiddiy oqibat yuz bergan — o‘z-o‘ziga ishonish.",
+          "text": "Navbatchi jarroh va anesteziolog sababsiz, tayyorgarliksiz, assistent va hamshirasiz rejali qorin operatsiyasini qildi; jiddiy oqibat — o‘z-o‘ziga ishonish.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -527,7 +709,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Jarroh va anesteziolog",
+            "items": [
+              "Rejali qorin operatsiyasi, tayyorgarliksiz",
+              "Assistent va hamshirasiz",
+              "Turi: o‘z-o‘ziga ishonish"
+            ]
+          },
+          {
+            "title": "Standartni bilmagan",
+            "items": [
+              "Standartlarni bajarmadi",
+              "Asorat bemor o‘limiga olib keldi",
+              "Turi: beparvolik"
+            ]
+          }
+        ],
+        "caption": "Ikki misol"
+      },
       "teacher_notes": "Vaqt: 6 daq. Savol: har bir misol ehtiyotsizlikning qaysi shakli? Javob: birinchisi o‘z-o‘ziga ishonish, ikkinchisi beparvolik. Doskada: ikki ustun. Tipik xato: standartni bilmaslikni uzrli sabab deb hisoblash."
     },
     {
@@ -570,7 +773,7 @@
       "title": "Asosli tavakkalchilik",
       "bullets": [
         {
-          "text": "Harakat zamonaviy ilmiy-texnik bilim va tajribaga mos bo‘lsa, maqsadga tavakkalsiz erishib bo‘lmasa va zararni oldini olish choralari ko‘rilsa, tavakkalchilik asosli (JK 41-modda).",
+          "text": "Harakat zamonaviy ilmiy-texnik bilimga mos, maqsadga tavakkalsiz erishib bo‘lmasa va zararni oldini olish choralari ko‘rilsa, tavakkalchilik asosli (JK 41).",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -597,7 +800,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Bilimga mos",
+            "text": "Harakat zamonaviy ilmiy-texnik bilimga mos"
+          },
+          {
+            "title": "2. Boshqa yo‘l yo‘q",
+            "text": "Maqsadga tavakkalsiz erishib bo‘lmaydi"
+          },
+          {
+            "title": "3. Choralar ko‘rilgan",
+            "text": "Zararni oldini olish choralari ko‘rilgan"
+          },
+          {
+            "title": "Istisno",
+            "text": "Halok bo‘lish xavfini bilib qilsa — asosli emas"
+          }
+        ],
+        "caption": "Asosli tavakkalchilik (JK 41)"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Tavakkalchilikning asosliligini nima belgilaydi? Doskada: uch shart. Tipik xato: natija ijobiy bo‘lsa tavakkalchilikni har doim asosli deb hisoblash."
     },
     {
@@ -631,14 +855,24 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Ko‘krak sanchma-kesma yarasi",
+          "Yurak shikastlangan",
+          "Shart-sharoit yo‘q, ko‘chirib bo‘lmaydi",
+          "Jarroh yurakni tikdi",
+          "Asosli tavakkalchilik"
+        ],
+        "caption": "Qaror yo‘li"
+      },
       "teacher_notes": "Vaqt: 6 daq. Savol: jarroh harakati jinoyatmi? Javob: yo‘q, manbaga ko‘ra asosli tavakkalchilik. Doskada: shartlarni belgilang. Tipik xato: sharoit yo‘qligi sababli yordam ko‘rsatmaslik kerak deb o‘ylash."
     },
     {
       "title": "Jinoiy javobgarlik subyekti",
       "bullets": [
         {
-          "text": "Jinoiy javobgarlik Jinoyat kodeksida belgilangan aqli raso jismoniy shaxslarga nisbatan belgilanadi; aksariyat hollarda jinoyat paytida 16 yoshga to‘lgan shaxslar (JK 17-modda).",
+          "text": "Jinoiy javobgarlik aqli raso jismoniy shaxslarga belgilanadi; aksariyat hollarda jinoyat paytida 16 yoshga to‘lgan shaxslarga (JK 17-modda).",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -665,7 +899,27 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Tibbiy mezon",
+            "items": [
+              "Ruhiy kasallik",
+              "Ruhiy holatning vaqtincha buzilishi",
+              "Aqli zaiflik"
+            ]
+          },
+          {
+            "title": "Yuridik mezon",
+            "items": [
+              "Harakat ahamiyatini anglamaslik",
+              "Harakatni boshqara olmaslik"
+            ]
+          }
+        ],
+        "caption": "Aqli norasolik: ikki mezon"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Aqli norasolikda ikkala mezon nega birga kerak? Doskada: tibbiy + yuridik. Tipik xato: faqat tibbiy mezonning o‘zini yetarli deb hisoblash."
     },
     {
@@ -706,7 +960,7 @@
       "title": "Jinoyat tarkibi: subyekt va subyektiv tomon",
       "bullets": [
         {
-          "text": "Subyekt — qilmish sodir etgan jismoniy shaxs: ko‘proq vrachlar, ba’zan o‘rta va kichik tibbiy xodimlar; mansabdor rahbarlar boshqaruv tartibiga qarshi jinoyat subyekti bo‘ladi.",
+          "text": "Subyekt — qilmish sodir etgan jismoniy shaxs: ko‘proq vrachlar, ba’zan o‘rta va kichik xodimlar; rahbarlar boshqaruv tartibiga qarshi jinoyat subyekti.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -734,31 +988,35 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Jinoyat tarkibi",
-        "nodes": [],
-        "header": [
-          "Element",
-          "Mazmuni"
+        "kind": "tree",
+        "root": "Jinoyat tarkibi",
+        "children": [
+          {
+            "label": "Obyekt",
+            "items": [
+              "Sog‘liq va hayot"
+            ]
+          },
+          {
+            "label": "Obyektiv tomon",
+            "items": [
+              "Qilmish, oqibat, sababiy bog‘lanish"
+            ]
+          },
+          {
+            "label": "Subyekt",
+            "items": [
+              "Aqli raso jismoniy shaxs"
+            ]
+          },
+          {
+            "label": "Subyektiv tomon",
+            "items": [
+              "Ayb, motiv, maqsad"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Obyekt",
-            "Sog‘liq va hayot"
-          ],
-          [
-            "Obyektiv tomon",
-            "Qilmish, oqibat, sababiy bog‘lanish"
-          ],
-          [
-            "Subyekt",
-            "Aqli raso jismoniy shaxs"
-          ],
-          [
-            "Subyektiv tomon",
-            "Ayb, motiv, maqsad"
-          ]
-        ]
+        "caption": "To‘rt element"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Motiv va maqsad farqini misol bilan ayting. Doskada: jinoyat tarkibi jadvali. Tipik xato: motiv va maqsadni bir xil tushuncha deb hisoblash."
     },
@@ -766,7 +1024,7 @@
       "title": "Tibbiy xodimlar jinoyatlari guruhlari",
       "bullets": [
         {
-          "text": "Sog‘liq va hayotga qarshi: ehtiyotsizlik bilan odam o‘ldirish (102), tan jarohatlari (104, 105, 109, 111), kasb vazifasini lozim bajarmaslik (116), xavf ostida qoldirish (117).",
+          "text": "Sog‘liq va hayotga qarshi: ehtiyotsizlikdan o‘ldirish (102), tan jarohati (104, 105, 109, 111), kasb vazifasini bajarmaslik (116), xavf ostida qoldirish (117).",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -793,14 +1051,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Tibbiy xodim jinoyatlari",
+        "children": [
+          {
+            "label": "Sog‘liq va hayotga qarshi",
+            "items": [
+              "JK 102, 104, 105, 109, 111",
+              "JK 113, 114, 116, 117"
+            ]
+          },
+          {
+            "label": "Boshqaruv tartibiga qarshi",
+            "items": [
+              "JK 207, 209, 210, 211"
+            ]
+          }
+        ],
+        "caption": "JK moddalari guruhlari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi guruh tibbiy xodimlarga eng ko‘p tegishli? Doskada: guruhlar ro‘yxati. Tipik xato: modda raqamlarini yodlab, mohiyatni e’tiborsiz qoldirish."
     },
     {
       "title": "Kasb vazifasini lozim bajarmaslik (JK 116)",
       "bullets": [
         {
-          "text": "Shaxsning kasbiga beparvoligi yoki insofsizligi tufayli vazifani bajarmaganligi yoki lozim bajarmaganligi o‘rtacha og‘ir yoki og‘ir shikastga sabab bo‘lsa, jinoiy javobgarlik yuzaga keladi.",
+          "text": "Beparvolik yoki insofsizlik tufayli kasb vazifasini bajarmaslik yoki lozim bajarmaslik o‘rtacha og‘ir yoki og‘ir shikastga olib kelsa, jinoiy javobgarlik bor.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -827,7 +1104,24 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1-qism",
+            "text": "Lozim bajarmaslik: o‘rtacha og‘ir yoki og‘ir shikast"
+          },
+          {
+            "title": "2-qism",
+            "text": "Uzrsiz yordam ko‘rsatmaslik: jiddiyroq jazo"
+          },
+          {
+            "title": "Og‘ir oqibat",
+            "text": "Odamlar o‘limi yoki og‘ir oqibat: yanada og‘ir jazo"
+          }
+        ],
+        "caption": "JK 116: jazo darajalari"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: Qaysi oqibat qilmishni jinoyatga aylantiradi? Doskada: oqibat darajasi sxemasi. Tipik xato: oqibatsiz kasb nuqsonini ham jinoyat deb hisoblash."
     },
     {
@@ -877,7 +1171,7 @@
           "uncertain": false
         },
         {
-          "text": "Uzrli sabab hisoblanmaydi: dam olish va bayram kunlari, ishdan tashqari vaqt, ta’til, shoshilinch yordam uchun maxsus bilim yo‘qligi, bemor bilan shaxsiy adovat.",
+          "text": "Uzrli sabab emas: dam olish va bayram kunlari, ishdan tashqari vaqt, ta’til, shoshilinch yordam uchun bilim yo‘qligi, bemor bilan adovat.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -895,7 +1189,30 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Uzrli (obyektiv)",
+            "items": [
+              "Xodimning kasalligi",
+              "Og‘irroq bemorga yordam bilan bandlik",
+              "Dori, asbob, transport yo‘qligi",
+              "Tabiiy ofatlar"
+            ]
+          },
+          {
+            "title": "Uzrli emas",
+            "items": [
+              "Dam olish va bayram kunlari",
+              "Ta’til, ishdan tashqari vaqt",
+              "Maxsus bilim yo‘qligi",
+              "Bemor bilan shaxsiy adovat"
+            ]
+          }
+        ],
+        "caption": "Sud hal qiladi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega maxsus bilimning yo‘qligi uzrli sabab emas? Doskada: ikki ustunli jadval. Tipik xato: ta’tildaligini uzrli sabab deb hisoblash."
     },
     {
@@ -929,14 +1246,31 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Harakat noto‘g‘ri",
+            "text": "Yo‘riqnoma, qoida, standartlarga zid"
+          },
+          {
+            "title": "2. Anglash imkoniyati",
+            "text": "Tayyorgarlik va toifaga mos, to‘g‘ri qaror real"
+          },
+          {
+            "title": "3. Sababiy bog‘lanish",
+            "text": "Jiddiy noxush oqibat bilan bevosita aloqa"
+          }
+        ],
+        "caption": "Vermel bo‘yicha shartlar"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: Qaysi shart bo‘lmasa javobgarlik yuzaga kelmaydi? Doskada: uch shart. Tipik xato: faqat oqibat bor ekan, javobgarlik ham bor deb hisoblash."
     },
     {
       "title": "Jinoiy abort (JK 114): umumiy qoidalar",
       "bullets": [
         {
-          "text": "114-modda 1-qism: akusher-ginekolog tomonidan davolash muassasalaridan tashqarida yoki tibbiy nuqtai nazardan mumkin bo‘lmagan holda sun’iy homila tushirish uchun javobgarlik.",
+          "text": "114-modda 1-qism: akusher-ginekolog tomonidan davolash muassasalaridan tashqarida yoki tibbiy jihatdan mumkin bo‘lmagan holda sun’iy homila tushirish.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -997,7 +1331,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Ayol xohishi bilan",
+            "value": "12",
+            "unit": "hafta"
+          },
+          {
+            "label": "Ijtimoiy ko‘rsatma",
+            "value": "22",
+            "unit": "hafta"
+          },
+          {
+            "label": "Tibbiy ko‘rsatma",
+            "value": "muddatsiz"
+          },
+          {
+            "label": "Ijtimoiy ro‘yxat",
+            "value": "Vazirlar Mahkamasi"
+          },
+          {
+            "label": "Tibbiy ro‘yxat",
+            "value": "SSV"
+          }
+        ],
+        "caption": "Muddatlar va vakolat"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Muddatlarni hammasi birga jadvalda ko‘rsating. Doskada: 12 / 22 hafta / tibbiy ko‘rsatma. Tipik xato: 12 va 22 hafta muddatlarini aralashtirish."
     },
     {
@@ -1031,7 +1392,43 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Tibbiy moneliklar",
+        "children": [
+          {
+            "label": "Muddat",
+            "items": [
+              "12 haftadan ortiq"
+            ]
+          },
+          {
+            "label": "Kasalliklar",
+            "items": [
+              "O‘tkir yuqumli kasalliklar"
+            ]
+          },
+          {
+            "label": "Yallig‘lanish",
+            "items": [
+              "Jinsiy a’zolarning o‘tkir va o‘tkir osti"
+            ]
+          },
+          {
+            "label": "Yiringli o‘choqlar",
+            "items": [
+              "Joylashuvidan qat’i nazar"
+            ]
+          },
+          {
+            "label": "Oxirgi abort",
+            "items": [
+              "6 oydan kam vaqt o‘tgan"
+            ]
+          }
+        ],
+        "caption": "Abortga monelik"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Qaysi monelik muddat bilan bog‘liq? Doskada: besh monelik. Tipik xato: ro‘yxatni to‘liq deb olish (boshqalar maxsus yo‘riqnomalarda)."
     },
     {
@@ -1106,7 +1503,7 @@
       "title": "Lavozim jinoyatlari: subyekt",
       "bullets": [
         {
-          "text": "Lavozim jinoyatlari boshqaruv tartibiga qarshi; tibbiyotda ko‘proq: vakolatni suiiste’mol qilish (205), vakolatdan chetga chiqish (206), mansabga sovuqqonlik (207), mansab soxtakorligi (209), pora olish (210).",
+          "text": "Lavozim jinoyatlari boshqaruv tartibiga qarshi; tibbiyotda ko‘proq: suiiste’mol (205), chetga chiqish (206), sovuqqonlik (207), soxtakorlik (209), pora (210).",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1133,7 +1530,43 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Lavozim jinoyatlari",
+        "children": [
+          {
+            "label": "Suiiste’mol",
+            "items": [
+              "JK 205"
+            ]
+          },
+          {
+            "label": "Vakolatdan chetga chiqish",
+            "items": [
+              "JK 206"
+            ]
+          },
+          {
+            "label": "Mansabga sovuqqonlik",
+            "items": [
+              "JK 207"
+            ]
+          },
+          {
+            "label": "Mansab soxtakorligi",
+            "items": [
+              "JK 209"
+            ]
+          },
+          {
+            "label": "Pora olish",
+            "items": [
+              "JK 210"
+            ]
+          }
+        ],
+        "caption": "Boshqaruv tartibiga qarshi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Oddiy shifokor qachon mansabdor shaxs sanaladi? Doskada: lavozim jinoyatlari ro‘yxati. Tipik xato: har bir vrachni mansabdor shaxs deb hisoblash."
     },
     {
@@ -1149,7 +1582,7 @@
           "uncertain": false
         },
         {
-          "text": "Ayrim holatlarda mansabdor shaxs deb e’tirof etiladi: mehnatga layoqatsizlik varaqasi berish, nogironlikni aniqlash, attestatsiya, toifa berish, harbiy xizmatga layoqatni aniqlash.",
+          "text": "Ayrim holatda mansabdor deb e’tirof etiladi: mehnatga layoqatsizlik varaqasi, nogironlikni aniqlash, attestatsiya, toifa berish, harbiy xizmatga layoqat.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1167,14 +1600,36 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Mansabdor emas",
+            "items": [
+              "Tashxis",
+              "Davolash",
+              "Profilaktika"
+            ]
+          },
+          {
+            "title": "Mansabdor hisoblanadi",
+            "items": [
+              "Mehnatga layoqatsizlik varaqasi",
+              "Nogironlikni aniqlash",
+              "Attestatsiya, toifa berish",
+              "Harbiy xizmatga layoqat"
+            ]
+          }
+        ],
+        "caption": "Mansab jinoyatining subyekti"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Mehnatga layoqatsizlik varaqasi berish nima uchun alohida? Doskada: uch belgi. Tipik xato: davolash faoliyatini ham mansab jinoyati subyektiga kiritish."
     },
     {
       "title": "Vakolatni suiiste’mol qilish va chetga chiqish",
       "bullets": [
         {
-          "text": "Suiiste’mol: mansabdor shaxsning vakolatlaridan qasddan foydalanishi natijasida ko‘p miqdorda zarar yoki jiddiy ziyon yetishi (masalan, bemor yotqizilishini rad etish, og‘ir bemorni erta chiqarish).",
+          "text": "Suiiste’mol: mansabdor vakolatidan qasddan foydalanishi natijasida ko‘p miqdorda zarar yoki ziyon (masalan, bemor yotqizilishini rad etish).",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1183,7 +1638,7 @@
           "uncertain": false
         },
         {
-          "text": "Doiradan chetga chiqish: ko‘zda tutilmagan harakatlarni qasddan sodir etish (masalan, bosh vrachning birgalikda hal etiladigan masalani yakka hal qilishi; oila vrachining 30 kunga varaqa berishi).",
+          "text": "Chetga chiqish: ko‘zda tutilmagan harakatni qasddan qilish (masalan, bosh vrachning birgalikdagi masalani yakka hal qilishi; 30 kunga varaqa berish).",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1192,14 +1647,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Suiiste’mol",
+            "items": [
+              "Vakolatdan qasddan foydalanish",
+              "Ko‘p miqdorda zarar yoki jiddiy ziyon",
+              "Misol: bemor yotqizishni rad etish"
+            ]
+          },
+          {
+            "title": "Chetga chiqish",
+            "items": [
+              "Ko‘zda tutilmagan harakat qasddan",
+              "Misol: bosh vrach yakka qaror qiladi",
+              "Misol: varaqa birdan 30 kunga"
+            ]
+          }
+        ],
+        "caption": "Ikki jinoyat"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Ikki jinoyatning farqi nimada? Doskada: ikki misol. Tipik xato: ikkala jinoyatni bir deb tushunish."
     },
     {
       "title": "Mansabga sovuqqonlik bilan qarash",
       "bullets": [
         {
-          "text": "Mansabdor shaxsning o‘z vazifalariga loqaydlik oqibatida ularni bajarmasligi yoki lozim bajarmasligi ko‘p miqdorda zarar, tan jarohati yoki odam o‘limiga sabab bo‘lsa — mansabga sovuqqonlik.",
+          "text": "Mansabdor shaxsning loqaydligi oqibatida vazifani bajarmasligi ko‘p miqdorda zarar, tan jarohati yoki o‘limga sabab bo‘lsa — mansabga sovuqqonlik.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1208,7 +1684,7 @@
           "uncertain": false
         },
         {
-          "text": "Misollar: sanitariya-epidemiologiya tartibini qo‘pol buzish tufayli kasalxona ichi infeksiyasi tarqalishi; fizioterapiyada texnika xavfsizligi buzilib elektrotravmadan o‘lim.",
+          "text": "Misollar: sanitariya-epidemiologiya tartibini qo‘pol buzib kasalxona ichi infeksiyasi tarqalishi; fizioterapiyada texnika xavfsizligi buzilib elektrotravma.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1233,7 +1709,7 @@
       "title": "Mansab soxtakorligi va pora olish",
       "bullets": [
         {
-          "text": "Mansab soxtakorligi: g‘arazgo‘ylik bilan rasmiy hujjatlarga bila turib soxta ma’lumot kiritish yoki hujjatni qalbakilashtirish (masalan, qovurg‘a sinig‘ini kasallik tarixida qayd etmaslik).",
+          "text": "Mansab soxtakorligi: g‘arazgo‘ylik bilan rasmiy hujjatga bila turib soxta ma’lumot kiritish yoki qalbakilashtirish (masalan, qovurg‘a sinig‘ini yozmaslik).",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1260,7 +1736,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Mansab soxtakorligi",
+            "items": [
+              "Soxta ma’lumot kiritish, qalbakilashtirish",
+              "G‘arazgo‘ylik bilan"
+            ]
+          },
+          {
+            "title": "Pora olish",
+            "items": [
+              "Xizmat mavqeidan foydalanish",
+              "Moddiy qimmatlik yoki mulkiy naf olish"
+            ]
+          },
+          {
+            "title": "Tovlamachilik (214)",
+            "items": [
+              "Mansab jinoyati emas",
+              "Subyekt: deyarli barcha xodimlar"
+            ]
+          }
+        ],
+        "caption": "Uch jinoyat"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Mansab soxtakorligi pora bilan nega birga uchraydi? Doskada: ikki tushuncha. Tipik xato: tovlamachilikni faqat mansabdorga tegishli deb bilish."
     },
     {
@@ -1276,7 +1778,7 @@
           "uncertain": false
         },
         {
-          "text": "Yolg‘on guvohlik: ekspertning bila turib noto‘g‘ri xulosa berishi (238-modda); pora evaziga yoki bosim orqali yolg‘on ko‘rsatma berishga majburlash ham shunday baholanadi.",
+          "text": "Yolg‘on guvohlik: ekspertning bila turib noto‘g‘ri xulosa berishi (238-modda); pora yoki bosim bilan yolg‘on ko‘rsatmaga majburlash ham shunday.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1294,7 +1796,31 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Odil sudlovga qarshi",
+        "children": [
+          {
+            "label": "Yolg‘on guvohlik",
+            "items": [
+              "JK 238: noto‘g‘ri xulosa berish"
+            ]
+          },
+          {
+            "label": "Sirni oshkor qilish",
+            "items": [
+              "JK 239: tergov sirlari"
+            ]
+          },
+          {
+            "label": "Bo‘yin tovlash",
+            "items": [
+              "JK 240: ko‘rsatma yoki xulosadan"
+            ]
+          }
+        ],
+        "caption": "Asosan ekspertlar subyekt"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Ekspert nima uchun ogohlantirilishi kerak? Doskada: 238–240 moddalar. Tipik xato: qarindoshning guvohlikdan bosh tortishini ham jinoyat deb bilish (manbada javobgarlik yo‘q)."
     },
     {
@@ -1319,7 +1845,7 @@
           "uncertain": false
         },
         {
-          "text": "JK 241: og‘ir yoki o‘ta og‘ir jinoyat haqida bila turib xabar bermaslik; tibbiy xodimlar huquq-tartibot idoralariga xabar berishi va buni hujjatda qayd etishi maqsadga muvofiq.",
+          "text": "JK 241: og‘ir yoki o‘ta og‘ir jinoyat haqida bila turib xabar bermaslik; xodimlar huquq-tartibot idoralariga xabar berib, hujjatda qayd etgani maqsadga muvofiq.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1328,7 +1854,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Rahbar ogohlantiradi",
+            "text": "Ekspertni jinoiy javobgarlik haqida (14-modda)"
+          },
+          {
+            "title": "Tilxat olinadi",
+            "text": "Ekspertdan tilxat olinadi"
+          },
+          {
+            "title": "Xulosa bilan yuboriladi",
+            "text": "Tilxat xulosa bilan birga"
+          },
+          {
+            "title": "JK 241",
+            "text": "Og‘ir jinoyat haqida bila turib xabar bermaslik"
+          }
+        ],
+        "caption": "Ekspertning majburiyatlari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Xabar berishni hujjatlashtirish nima uchun foydali? Doskada: kimga, qachon, qanday. Tipik xato: bemor sirini har qanday holatda saqlash kerak deb o‘ylash."
     },
     {
@@ -1403,9 +1950,9 @@
       "question": "Baxtsiz hodisaning vrach xatosidan asosiy farqi nima?",
       "options": [
         "U vrachning harakatiga bog‘liq emas, oldindan bilib bo‘lmaydi",
-        "U doim jinoyat hisoblanadi",
-        "U faqat jarrohlikda uchraydi",
-        "U huquqiy tushuncha hisoblanadi"
+        "U doim jinoyat hisoblanadi va albatta jazolanadi",
+        "U faqat jarrohlik amaliyotida uchraydigan holat",
+        "U huquqiy tushuncha bo‘lib, javobgarlikni belgilaydi"
       ],
       "correct_index": 0,
       "explanation": "Baxtsiz hodisalar vrachning harakati yoki harakatsizligiga bog‘liq emas, shu sabab tibbiy xodim javobgarligini yuzaga keltirmaydi.",
@@ -1450,10 +1997,10 @@
     {
       "question": "Qaysi holat ehtiyotsizlikning «beparvolik» shakliga kiradi?",
       "options": [
-        "Oqibatni ko‘rib, asossiz umid qilish",
+        "Oqibatni ko‘rib, lekin ularning kelib chiqmasligiga asossiz umid qilish",
         "Oqibatni ko‘rmagan, lekin ko‘rishi lozim va mumkin bo‘lgan",
-        "Oqibatni istash",
-        "Oqibatga ongli yo‘l qo‘yish"
+        "Oqibatning kelib chiqishini bevosita istash",
+        "Oqibat yuz berishiga ongli ravishda yo‘l qo‘yish"
       ],
       "correct_index": 1,
       "explanation": "Beparvolik: shaxs oqibatlarni ko‘rmagan, lekin ko‘rishi lozim va mumkin bo‘lgan (JK 22-modda).",
@@ -1466,12 +2013,12 @@
     {
       "question": "Oxirgi zarurat holatida qilmish qachon jinoyat deb topilmaydi?",
       "options": [
-        "Har doim",
         "Xavfni boshqa choralar bilan qaytarib bo‘lmasa va zarar oldi olingan zarardan kam bo‘lsa",
-        "Faqat vrach buyurganda",
-        "Faqat muassasa ichida"
+        "Har doim, agar qilmish tibbiy maqsadda sodir etilgan bo‘lsa",
+        "Faqat vrach buyurgan hollarda, xavf darajasidan qat’i nazar",
+        "Faqat tibbiy muassasa ichida sodir etilganda, boshqa shartlarsiz"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "JK 38-moddaga ko‘ra ikkala shart bir vaqtda bajarilishi kerak.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1483,9 +2030,9 @@
       "question": "Jinoyat tarkibi elementlari qaysilar?",
       "options": [
         "Obyekt, obyektiv tomon, subyekt, subyektiv tomon",
-        "Ayb, jazo, motiv, maqsad",
-        "Qilmish, oqibat, vaqt, joy",
-        "Obyekt, jazo, usul, vosita"
+        "Ayb, jazo, motiv, maqsad va oqibat",
+        "Qilmish, oqibat, vaqt va joy hamda usul",
+        "Obyekt, jazo, usul va vosita hamda oqibat"
       ],
       "correct_index": 0,
       "explanation": "Jinoyat tarkibi: obyekt, obyektiv tomon, subyekt va subyektiv tomondan iborat.",
@@ -1525,6 +2072,166 @@
         "author": "G‘iyosov Z.A.",
         "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
         "page": "122–123"
+      }
+    },
+    {
+      "question": "Psixiatrik ekspertizada shaxsning harakatlari ahamiyatini anglay olmasligi aniqlandi. Bu aqli norasolikning qaysi mezoniga kiradi?",
+      "options": [
+        "Tibbiy mezonga",
+        "Axloqiy mezonga",
+        "Ijtimoiy mezonga",
+        "Yuridik mezonga"
+      ],
+      "correct_index": 3,
+      "explanation": "Yuridik mezon — o‘z harakatlarining ahamiyatini anglay olmaslik yoki harakatlarini boshqara olmaslik; tibbiy mezon — ruhiy kasallik, aqli zaiflik kabilar.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "119"
+      }
+    },
+    {
+      "question": "Darslikda tibbiy xodimlar jinoyatlari uchun odatda xos emas deb ko‘rsatilgan aybdorlik shakli qaysi?",
+      "options": [
+        "Egri qasd",
+        "Beparvolik",
+        "O‘z-o‘ziga ishonish",
+        "To‘g‘ri qasd"
+      ],
+      "correct_index": 3,
+      "explanation": "Darslikda tibbiy xodimlar faoliyati uchun to‘g‘ri qasddan sodir etilgan jinoyatlar xos emasligi, lekin jinoiy abort va mansab soxtakorligi shunday ekani aytilgan.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "115-116"
+      }
+    },
+    {
+      "question": "Kasb vazifasini lozim bajarmaslik (JK 116) jinoyatining obyekti nima?",
+      "options": [
+        "Boshqaruv tartibi",
+        "Mulkiy manfaatlar",
+        "Inson sog‘lig‘i va hayoti",
+        "Muassasa obro‘si"
+      ],
+      "correct_index": 2,
+      "explanation": "Mazkur jinoyatning obyekti inson sog‘lig‘i va hayotidir.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "122"
+      }
+    },
+    {
+      "question": "JK 116 bo‘yicha «odamlar o‘limi» nimani anglatadi?",
+      "options": [
+        "Bitta shaxsning o‘limini",
+        "Faqat operatsiyadagi o‘limni",
+        "Faqat yosh bolalar o‘limini",
+        "Ikki yoki undan ortiq shaxsning o‘limini"
+      ],
+      "correct_index": 3,
+      "explanation": "Odamlar o‘limi ikki yoki undan ortiq shaxsning o‘limi, boshqa og‘ir oqibatlar esa ikki yoki undan ortiq shaxsga og‘ir shikast yetkazilishi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "122"
+      }
+    },
+    {
+      "question": "Homilador ayol homiladorlikni sun’iy tarzda o‘zi to‘xtatgan. Darslik bo‘yicha jinoiy javobgarlik yuzaga keladimi?",
+      "options": [
+        "Ha, JK 114-modda bo‘yicha",
+        "Ha, JK 104-modda bo‘yicha",
+        "Yo‘q, javobgarlik yuzaga kelmaydi",
+        "Faqat muassasadan tashqarida bo‘lsa"
+      ],
+      "correct_index": 2,
+      "explanation": "Homilador ayolning o‘zi homiladorlikni sun’iy to‘xtatgan holatlarda jinoiy javobgarlik vujudga kelmaydi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "125"
+      }
+    },
+    {
+      "question": "Homiladorlikni sun’iy uzishga tibbiy monelik qaysi holatda bo‘ladi?",
+      "options": [
+        "So‘nggi abortdan 6 oydan kam vaqt o‘tgan",
+        "So‘nggi abortdan 1 yil o‘tgan",
+        "Homiladorlik 8 haftada",
+        "Ayol ixtiyoriy murojaat qilgan"
+      ],
+      "correct_index": 0,
+      "explanation": "Monelik sifatida so‘nggi abortdan so‘ng 6 oydan kam muddat o‘tganligi, 12 haftadan ortiq muddat, o‘tkir yuqumli va yallig‘lanish kasalliklari, yiringli o‘choqlar sanalgan.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "125"
+      }
+    },
+    {
+      "question": "2010 yilda JK 113-moddaga qanday o‘zgartish kiritildi?",
+      "options": [
+        "Abort uchun javobgarlik kuchaytirildi va qo‘shimcha qism kiritildi",
+        "Ekspertlar javobgarligi moddadan butunlay chiqarildi",
+        "Pora olganlik uchun jazo kamaytirildi va yumshatildi",
+        "OIV/OITS yuqtirishda tibbiy xodimlar javobgarligi ko‘zda tutildi"
+      ],
+      "correct_index": 3,
+      "explanation": "2010 yilda moddaga OIV/OITS yuqtirish kasb vazifasini lozim bajarmaslik oqibatida bo‘lsa, tibbiy xodimlar javobgarligini ko‘zda tutuvchi o‘zgartish kiritilgan.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "126"
+      }
+    },
+    {
+      "question": "Poliklinika vrachi qaysi holatda mansabdor shaxs sifatida javobgarlikka tortilishi mumkin?",
+      "options": [
+        "Tashxis qo‘yish va bemorga davo belgilaganda",
+        "Bemorni davolash jarayonida muolaja o‘tkazganda",
+        "Vaqtinchalik mehnatga layoqatsizlik varaqasini berganda",
+        "Profilaktik ko‘rik va emlash o‘tkazganda"
+      ],
+      "correct_index": 2,
+      "explanation": "Tashxis, davolash, profilaktikada vrach mansabdor emas; varaqa berish, nogironlikni aniqlash, attestatsiya, toifa berish, harbiy xizmatga layoqatni aniqlashda mansabdor deb e’tirof etilishi mumkin.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "128"
+      }
+    },
+    {
+      "question": "Oila vrachi bemorga birdan 30 kunga mehnatga yaroqsizlik varaqasini berdi. Darslik misolida bu qaysi jinoyatga o‘xshatilgan?",
+      "options": [
+        "Mansab soxtakorligi, ya’ni rasmiy hujjatni qalbakilashtirish",
+        "Pora olish, ya’ni mansabdan foydalanib manfaat ko‘rish",
+        "Mansabga sovuqqonlik, ya’ni vazifaga e’tiborsizlik",
+        "Vakolat doirasidan chetga chiqish"
+      ],
+      "correct_index": 3,
+      "explanation": "Doiradan chetga chiqish misollari: bosh vrachning birgalikda hal etiladigan masalani yakka hal qilishi; oila vrachining birdan 30 kunga varaqa berishi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "129"
+      }
+    },
+    {
+      "question": "Ijtimoiy ko‘rsatma bo‘lganda homiladorlikni uzish qaysi muddatgacha mumkin?",
+      "options": [
+        "12 haftagacha",
+        "16 haftagacha",
+        "22 haftagacha",
+        "28 haftagacha"
+      ],
+      "correct_index": 2,
+      "explanation": "Ayolning xohishi bilan 12 haftagacha; ijtimoiy ko‘rsatmada 22 haftagacha; tibbiy ko‘rsatmada muddatidan qat’i nazar.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "124"
       }
     }
   ],

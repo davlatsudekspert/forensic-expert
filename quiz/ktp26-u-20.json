@@ -1,0 +1,582 @@
+{
+ "topic_id": "ktp26-u-20",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Reanimatsiya va transplantatsiyaning huquqiy, ma’naviy va tibbiy jihatlari.",
+  "ru": "Reanimatsiya va transplantatsiyaning huquqiy, ma’naviy va tibbiy jihatlari.",
+  "en": "Reanimatsiya va transplantatsiyaning huquqiy, ma’naviy va tibbiy jihatlari."
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "ktp26-u-20-q01",
+   "question_i18n": {
+    "uz": "Og‘ir kuyish bilan og‘rigan bemorga jarroh uning shikastlanmagan sohasidan teri olib, kuygan joyga ko‘chirdi. Bu transplantatsiyaning qaysi turi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Izotransplantatsiya – egizakdan olingan to‘qima",
+     "Autotransplantatsiya – bemorning o‘z to‘qimasi",
+     "Allotransplantatsiya – boshqa odamdan olingan",
+     "Ksenotransplantatsiya – hayvondan olingan a’zo"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Autotransplantatsiyada transplantat donori retsipientning o‘zi bo‘ladi. Kuyishda sog‘lom joydan teri ko‘chirish shunga misol. Izotransplantatsiyada donor tuxumdosh egizak, allotransplantatsiyada boshqa odam, ksenotransplantatsiyada hayvon bo‘ladi."
+   },
+   "source": {
+    "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+    "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+    "page": "3-bob, 3.1-bo‘lim, 33-43-betlar"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-20-q02",
+   "question_i18n": {
+    "uz": "Buyrak kasalligi bilan og‘rigan bemorga uning tuxumdosh egizagi buyragini berdi. Bu transplantatsiyaning qaysi turi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Izotransplantatsiya – tuxumdosh egizak donor",
+     "Autotransplantatsiya – bemorning o‘zi donor",
+     "Allotransplantatsiya – genetik jihatdan boshqa",
+     "Ksenotransplantatsiya – boshqa tur donori"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Izotransplantatsiyada donor retsipientga immunologik va genetik jihatdan aynan o‘xshash tuxumdosh egizagi bo‘ladi. Allotransplantatsiyada donor genetik va immunologik jihatdan farq qiladigan boshqa odam."
+   },
+   "source": {
+    "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+    "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+    "page": "3-bob, 3.1-bo‘lim, 33-43-betlar"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-20-q03",
+   "question_i18n": {
+    "uz": "Klinika organ tanqisligi sababli bemorga transgen cho‘chqadan olingan a’zoni ko‘chirishni rejalashtirdi. Bu transplantatsiyaning qaysi turi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Autotransplantatsiya – bemorning o‘z a’zosi",
+     "Izotransplantatsiya – bemor egizagining a’zosi",
+     "Allotransplantatsiya – boshqa odamning a’zosi",
+     "Ksenotransplantatsiya – hayvon a’zosini ko‘chirish"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Boshqa biologik tur hayvonlaridan olingan a’zolarni ko‘chirish ksenotransplantatsiya, ya’ni turlararo transplantatsiya deyiladi. Darslikda cho‘chqalar donor sifatida birinchi o‘ringa chiqqani aytilgan."
+   },
+   "source": {
+    "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+    "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+    "page": "3-bob, 3.1-bo‘lim, 33-43-betlar"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-20-q04",
+   "question_i18n": {
+    "uz": "Eksperimental transplantatsiya nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat odamlarda o‘tkaziladigan oddiy davolash bosqichi",
+     "Donor a’zolarini sotishning huquqiy tartibga solinishi",
+     "Klinikadan oldingi bosqich, muammolar ishlab chiqiladi",
+     "Faqat operatsiyadan keyingi reabilitatsiya jarayoni"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Eksperimental transplantatsiya klinikadan oldingi bosqich bo‘lib, unda ko‘chirib o‘tkazishning biologik, jarrohlik va tashkiliy muammolari ishlab chiqiladi. U yangi preparatlar yaratishda ham muhim."
+   },
+   "source": {
+    "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+    "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+    "page": "3-bob, 3.1-bo‘lim, 33-43-betlar"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-20-q05",
+   "question_i18n": {
+    "uz": "Quyidagilardan qaysi biri transplantatsiyadagi tibbiy omillarga kiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Inson o‘limini tasdiqlash tartibi",
+     "Donorni immunologik saralash muammolari",
+     "Organlarni sotishning qonuniy taqiqlanishi",
+     "Organlarni retsipientlar o‘rtasida taqsimlash"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Tibbiy omillarga donorni immunologik saralash, retsipient salomatligi ko‘rsatkichlari va operatsiyadan keyingi immunosupressiv terapiya kiradi. O‘limni tasdiqlash, taqsimlash va savdo esa etik-huquqiy muammolar."
+   },
+   "source": {
+    "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+    "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+    "page": "3-bob, 3.1-bo‘lim, 33-43-betlar"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-20-q06",
+   "question_i18n": {
+    "uz": "Aka o‘z singlisiga buyrak bermoqchi. Shifokor bu holatda qaysi etik tamoyilga to‘liq rioya qila olmaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Xabardor ixtiyoriy rozilik tamoyiliga",
+     "«Zarar yetkazma» tamoyiliga",
+     "Ijtimoiy adolat tamoyiliga",
+     "Tibbiy sir saqlash tamoyiliga"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Tirik donordan a’zo olish donorning sog‘lig‘iga zarar yetkazish bilan bog‘liq. Shuning uchun shifokor «zarar yetkazma» tamoyiliga to‘liq amal qila olmaydi va donor sog‘lig‘iga zarar bilan retsipient hayotini qutqarish o‘rtasidagi dilemmaga duch keladi."
+   },
+   "source": {
+    "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+    "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+    "page": "33-43 (3-bob, 3.1)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-20-q07",
+   "question_i18n": {
+    "uz": "Shifokor donorga yetadigan zarar bilan retsipient hayotini qutqarish foydasini solishtirmoqda. Qaror qaysi qoidaga tayanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Foyda va zarar o‘zaro teng bo‘lishi shart",
+     "Donorga zarar mutlaqo yetkazilmasligi shart",
+     "Navbat varaqasidagi o‘rin hal qiluvchi bo‘ladi",
+     "Foyda yetkazilgan zarardan yuqori bo‘lishi shart"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Dilemma olinayotgan foyda va yetkazilayotgan zarar darajasini solishtirish orqali hal qilinadi. Doim amal qiladigan qoida: foyda zarardan yuqori bo‘lishi kerak."
+   },
+   "source": {
+    "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+    "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+    "page": "33-43 (3-bob, 3.1)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-20-q08",
+   "question_i18n": {
+    "uz": "Reanimatsiyadagi bemorda qaytmas hushsizlik bor, mustaqil nafas to‘xtagan, miya ustuni reflekslari yo‘q. Bu holat nimaga mos keladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Butun miya ustuni bilan nobud bo‘lgan qaytmas holat",
+     "Qaytariladigan koma, nafas tiklanishi mumkin bo‘lgan holat",
+     "Faqat bosh miya po‘stlog‘i susaygan, ustun refleksli holat",
+     "Hushsizlik bor, lekin mustaqil nafas saqlangan holat"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "«Miya o‘limi» qaytmas hushsizlik, mustaqil nafasning to‘xtashi va miya ustuni reflekslarining yo‘qolishi bilan birga butun miyaning ustuni bilan nobud bo‘lishini anglatadi."
+   },
+   "source": {
+    "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+    "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+    "page": "33-43 (3-bob, 3.1)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-20-q09",
+   "question_i18n": {
+    "uz": "Marhum tirikligida ham, yaqinlari ham sog‘liqni saqlash muassasasiga e’tiroz bildirmagan. Qaysi usul bo‘yicha a’zo olishga huquq paydo bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Eskicha usul, ya’ni tana davlat mulki sanaladi",
+     "Norozilik prezumptsiyasi, ya’ni so‘ralgan rozilik",
+     "Rozilik prezumptsiyasi, ya’ni oldindan rozilik",
+     "Faqat tirik donordan a’zo olish usuli"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Rozilik prezumptsiyasida oldindan rozilik tan olinadi. Inson yoki yaqinlari belgilangan tartibda e’tiroz bildirmagan bo‘lsa, murdadan a’zo va to‘qima olishga huquq beriladi."
+   },
+   "source": {
+    "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+    "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+    "page": "33-43 (3-bob, 3.1)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-20-q10",
+   "question_i18n": {
+    "uz": "Miya o‘limining Garvard mezonlari qaysi yilda ishlab chiqilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1987-yilda",
+     "1968-yilda",
+     "2002-yilda",
+     "1988-yilda"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Miya o‘limining Garvard mezonlari 1968-yilda ishlab chiqilgan. Shu yili ular biroz aniqlashtirilgan ko‘rinishda jahon tibbiyot hamjamiyati tomonidan tan olingan (Jahon tibbiyot assotsiatsiyasining Sidney deklaratsiyasi)."
+   },
+   "source": {
+    "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+    "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+    "page": "33-43 (3-bob, 3.1)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-20-q11",
+   "question_i18n": {
+    "uz": "Mamlakatda rozilik prezumptsiyasi amal qiladi. Vafot etgan shaxs ham, uning yaqinlari ham hayotlik chog‘ida norozilik bildirmagan. Bu holatda nima ruxsat etiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "A’zolarni olish faqat yaqinlarning yozma roziligi bilan mumkin",
+     "A’zolarni olishga faqat sud qarori bilan ruxsat beriladi",
+     "A’zolarni olish har qanday holatda mutlaqo taqiqlanadi",
+     "Marhumdan a’zo va to‘qimalarni olishga huquq beriladi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Rozilik prezumptsiyasida rozilik oldindan berilgan deb hisoblanadi. Norozilik sog‘liqni saqlash muassasasiga bildirilmagan bo‘lsa, a’zo va to‘qimalarni olishga huquq beriladi."
+   },
+   "source": {
+    "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+    "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+    "page": "33-43 (3-bob, 3.1)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-20-q12",
+   "question_i18n": {
+    "uz": "Davlatda norozilik prezumptsiyasi («so‘rab olingan rozilik») amal qiladi. Marhum hayotligida donorlik haqida hech qanday hujjat qoldirmagan. Qaysi xulosa to‘g‘ri?"
+   },
+   "options_i18n": {
+    "uz": [
+     "A’zolardan foydalanish yaqinlarning og‘zaki fikriga ko‘ra mumkin",
+     "A’zolardan foydalanish shifokorlar konsiliumi qaroriga ko‘ra mumkin",
+     "A’zolardan foydalanish faqat ilmiy maqsadda avtomatik mumkin",
+     "Yuridik rasmiylashtirilgan rozilik bo‘lmasa, foydalanish mumkin emas"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Norozilik prezumptsiyasida inson rozi bo‘lsa, rozilikni belgilangan tartibda ifodalashi kerak. Yuridik rasmiylashtirilgan rozilik bo‘lmasa, a’zo va to‘qimalardan foydalanishga yo‘l qo‘yilmaydi. Bu tamoyil AQSH, Germaniya, Kanada, Frantsiya va Italiyada amal qiladi."
+   },
+   "source": {
+    "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+    "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+    "page": "33-43 (3-bob, 3.1)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-20-q13",
+   "question_i18n": {
+    "uz": "Olim donor a’zolar tanqisligini kamaytirish uchun xromosomalar to‘plami va ichki a’zolar tuzilishi jihatidan insonga yaqin hayvonni tanlamoqchi. Qaysi hayvon birinchi o‘ringa chiqqan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Cho‘chqa, shu jumladan insoniy gen kiritilgan transgen cho‘chqalar",
+     "Sigir, chunki u yirik uy hayvoni hisoblanadi",
+     "Quyon, chunki u tez ko‘payadigan hayvon hisoblanadi",
+     "Echki, chunki u keng tarqalgan uy hayvoni hisoblanadi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Darslikda ksenotransplantatsiya uchun cho‘chqalar birinchi darajaga chiqqani aytilgan. Genomida inson geni bo‘lgan transgen cho‘chqalar immunologik qabul qilmaslik ehtimolini pasaytirishi kerak."
+   },
+   "source": {
+    "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+    "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+    "page": "33-43 (3-bob, 3.1)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-20-q14",
+   "question_i18n": {
+    "uz": "Kutish varaqasida birinchi turgan juda og‘ir bemor ham nima uchun o‘ziga kerakli operatsiyaga yetisha olmasligi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Chunki varaqada faqat yengil holatdagi bemorlar ro‘yxatga olinadi",
+     "Chunki a’zolar faqat ro‘yxatdagi oxirgi bemorlarga taqsimlanadi",
+     "Immunologik mos kelmagani sababli unga mos a’zoni tanlash qiyin",
+     "Chunki donor a’zolarning hammasi avtomatik sotuvga chiqariladi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Kutish varaqasi tartibida birinchi turgan bemor uchun ham mavjud donor a’zolar orasidan immunologik jihatdan mos a’zoni topish qiyin. Bu muammo immunosupressor terapiyani takomillashtirish bilan qisman hal qilinadi."
+   },
+   "source": {
+    "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+    "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+    "page": "33-43 (3-bob, 3.1)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-20-q15",
+   "question_i18n": {
+    "uz": "Terapevtik klonlash va o‘zak hujayralar yo‘li etika nuqtayi nazaridan nima uchun yoqimli deb baholanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "U hayvonlarni donor sifatida o‘ldirishni talab qiladi",
+     "U sun’iy mexanik a’zolarni to‘liq almashtirishga asoslangan",
+     "Organizmni a’zo olish maqsadida yorib kirishni talab qilmaydi",
+     "U a’zolarni faqat o‘lgan donorlardan olishga asoslangan"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Darslikka ko‘ra bu yo‘l biror organizmni a’zo olish uchun yorib kirishni talab qilmaydi. Boshlang‘ich material insonning o‘z somatik hujayralari bo‘lgani uchun immunologik moslik muammosi ham hal bo‘lishi mumkin."
+   },
+   "source": {
+    "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+    "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+    "page": "33-43 (3-bob, 3.1)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-20-q16",
+   "question_i18n": {
+    "uz": "Moddiy qiyinchilik tufayli bir kishi o‘z buyragini sotishga qaror qildi va qora bozorda xaridor topdi. Bu holat transplantologiyaning qaysi axloqiy muammosiga misol bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Transplantologiyani tijoratlashtirish muammosi",
+     "Inson o‘limini tasdiqlash muammosiga misol",
+     "Retsipientlarni kutish varaqasiga kiritish muammosi",
+     "Hayvon a’zosini odamga ko‘chirish muammosi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Tijoratlashtirishda inson a’zolari mahsulotga, tanqislik sharoitida esa tanqis va qimmat mahsulotga aylanadi. Qora bozorda moddiy sabab bilan juft a’zolardan biri sotiladi, eng mashhuri buyrakdir. Bu transplantologiyaning gumanizm g‘oyasiga zid."
+   },
+   "source": {
+    "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+    "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+    "page": "3-bob, 3.1, 33-43-betlar"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-20-q17",
+   "question_i18n": {
+    "uz": "Kutish varaqasida birinchi o‘rinda turgan juda og‘ir bemor uzoq vaqt operatsiyaga yeta olmayapti. Manbaga ko‘ra, asosiy qiyinchilik nimada?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qonun og‘ir bemorlarga a’zo ko‘chirishni taqiqlaydi",
+     "Faqat tirik donordan a’zo olishga ruxsat berilgan",
+     "Bemor ro‘yxatga yozilganda roziligini bermagan",
+     "Mavjud a’zolardan unga immunologik mosini tanlash qiyin"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Kutish varaqasi bemorlar ro‘yxati bo‘lib, taqsimlash adolat tamoyiliga asoslanadi. Biroq immunologik mos kelmaslik tufayli mavjud donor a’zolar ichidan bemorga to‘g‘ri keladiganini tanlash juda qiyin. Muammo immunosupressor terapiyani takomillashtirish orqali qisman hal etiladi, lekin hali dolzarb."
+   },
+   "source": {
+    "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+    "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+    "page": "3-bob, 3.1, 33-43-betlar"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-20-q18",
+   "question_i18n": {
+    "uz": "Davlat qonunida marhumdan a’zo olishga rozilik prezumpsiyasi joriy etildi. Rus pravoslav cherkovi bunday normani qanday baholaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Inson erkinligining yo‘l qo‘yib bo‘lmaydigan buzilishi deb",
+     "Rahmdillikning eng yuqori namunasi va majburiyati deb",
+     "Faqat tirik donorlar uchun maqbul qoida deb",
+     "A’zolar savdosi uchun yo‘l ochuvchi qoida deb"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Cherkov «Ijtimoiy konsepsiya asoslari»da potensial donorning rozilik prezumpsiyasini inson erkinligining yo‘l qo‘yib bo‘lmaydigan buzilishi deb hisoblaydi. U vafotdan keyingi donorlikni ham majburiyat emas, ixtiyoriy fidokorlik deb biladi."
+   },
+   "source": {
+    "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+    "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+    "page": "3-bob, 3.1, 33-43-betlar"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-20-q19",
+   "question_i18n": {
+    "uz": "Tirik odam o‘zining hayotiy muhim a’zosini bemorga bermoqchi. Fiqh akademiyasining 26-sonli qaroriga ko‘ra, shariat bunga qanday qaraydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qarindoshlari rozi bo‘lsa, ruxsat beradi",
+     "Savdosiz, ixtiyoriy bo‘lsa, ruxsat beradi",
+     "Hayotiy muhim a’zolarni ko‘chirishni taqiqlaydi",
+     "Faqat muftiy nazoratida ruxsat beradi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Shariat tirik odamning hayotiy muhim a’zolarini, shuningdek oqibatda o‘lim xavfi bo‘lmasa ham hayotiy funksiyalarni yomonlashtiradigan a’zolarni ko‘chirishni taqiqlaydi. Tijorat asosidagi transplantatsiya ham qat’iy man etiladi."
+   },
+   "source": {
+    "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+    "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+    "page": "3-bob, 3.1, 33-43-betlar"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-20-q20",
+   "question_i18n": {
+    "uz": "Marhum hayotligida a’zolarini berishga ruxsat bergan, oilasi esa qarshilik bildirmagan. Yahudiylik a’zo olishga qanday qaraydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Oila qarshiligidan qat’i nazar mumkin emas deb",
+     "Ikkala shart bajarilgani uchun mumkin deb biladi",
+     "Faqat tirik donordan olinsa mumkin deb biladi",
+     "Faqat hadya bo‘lsa ruxsat beriladi deb hisoblaydi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Yahudiylikda inson tanasi o‘limidan keyin ham hurmatli. A’zo olish faqat inson o‘lishdan oldin ruxsat bergan va oilasi qarshilik bildirmagan holda mumkin. Hayotni qutqarish masalasida transplantatsiya joiz hisoblanadi. Hadya sharti esa buddaviylikka xos."
+   },
+   "source": {
+    "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+    "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)",
+    "page": "3-bob, 3.1, 33-43-betlar"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Yuldashev N.M., Saydalixodjayeva O.Z., Saidov A.B.",
+   "title": "Bioetika (tibbiyot OTM talabalari uchun darslik), Toshkent tibbiyot akademiyasi, Toshkent, 2019 (titul betida 2018)"
+  }
+ ]
+}

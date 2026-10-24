@@ -14,7 +14,7 @@
           "uncertain": false
         },
         {
-          "text": "U huquqni muhofaza etuvchi idoralar uchun dalil manbai bo‘lib xizmat qiladigan tibbiy faktlarni aniqlash, tekshirish va baholashga oid ilmiy bilimlar majmuasidir.",
+          "text": "U huquqni muhofaza idoralari uchun dalil manbai bo‘lib xizmat qiladigan tibbiy faktlarni aniqlash, tekshirish va baholashga oid ilmiy bilimlar majmuasidir.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -67,31 +67,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "To‘rt xususiyat",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Mazmuni"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "a. Ijrochi",
+            "text": "Tadqiqotni mutaxassis o‘tkazadi"
+          },
+          {
+            "title": "b. Vazifa",
+            "text": "Konkret vazifa, baholash"
+          },
+          {
+            "title": "v. Tartib",
+            "text": "Qat’iy tartib"
+          },
+          {
+            "title": "g. Hujjat",
+            "text": "Hujjat bilan rasmiylashtirish"
+          }
         ],
-        "rows": [
-          [
-            "a",
-            "Mutaxassis tomonidan"
-          ],
-          [
-            "b",
-            "Konkret vazifa, baholash"
-          ],
-          [
-            "v",
-            "Qat’iy tartib"
-          ],
-          [
-            "g",
-            "Hujjat bilan rasmiylashtirish"
-          ]
-        ]
+        "caption": "Ekspertizaning to‘rt xususiyati"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: nega tartib qat’iy belgilanishi kerak? Doskada: a, b, v, g xususiyatlari. Tipik xato: ekspertizani oddiy konsultatsiya deb hisoblash."
     },
@@ -160,7 +155,36 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Predmet tizimi (8 bo‘lim)",
+        "children": [
+          {
+            "label": "1–3-bo‘lim",
+            "items": [
+              "Rivojlanish tarixi",
+              "Tashkiliy va protsessual masalalar",
+              "Tashqi omillar va o‘lim"
+            ]
+          },
+          {
+            "label": "4–6-bo‘lim",
+            "items": [
+              "Murda ko‘zdan kechirish",
+              "Tirik shaxslar",
+              "Ashyoviy dalillar"
+            ]
+          },
+          {
+            "label": "7–8-bo‘lim",
+            "items": [
+              "Tergov va sud materiallari",
+              "Kasb huquqbuzarliklari"
+            ]
+          }
+        ],
+        "caption": "Avdeev tizimi"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: bo‘limlar ichida qaysi biri bugungi mavzuga yaqin? Doskada: 8 bo‘lim ro‘yxati. Tipik xato: bo‘limlarni mustaqil fanlar deb bilish."
     },
     {
@@ -194,7 +218,42 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Fanning tarkibiy qismlari",
+        "children": [
+          {
+            "label": "Asos qismlari",
+            "items": [
+              "Tarix",
+              "Tashkiliy va protsessual asoslar"
+            ]
+          },
+          {
+            "label": "Murda va jarohat",
+            "items": [
+              "Tanatologiya",
+              "Travmatologiya"
+            ]
+          },
+          {
+            "label": "Maxsus qismlar",
+            "items": [
+              "Akusherlik va ginekologiya",
+              "Toksikologiya",
+              "Biologiya"
+            ]
+          },
+          {
+            "label": "Boshqa qismlar",
+            "items": [
+              "Tashqi omillar ta’siri",
+              "Identifikatsiya"
+            ]
+          }
+        ],
+        "caption": "Hozirgi tarkibi"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: nega kasb huquqbuzarliklari alohida fanga ajratilgan? Doskada: 2002 yil. Tipik xato: huquqiy asoslarni sud tibbiyotining bir bo‘limi deb hisoblash."
     },
     {
@@ -263,23 +322,23 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Shifokor va ekspert",
-        "nodes": [],
-        "header": [
-          "Mutaxassis",
-          "Maqsad"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Klinik ixtisos",
+            "items": [
+              "Tibbiy xizmat",
+              "Diagnostika, davolash, profilaktika"
+            ]
+          },
+          {
+            "title": "Sud-tibbiy ekspert",
+            "items": [
+              "Holatni huquqiy baholash"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Klinik",
-            "Tibbiy xizmat: diagnostika, davolash, profilaktika"
-          ],
-          [
-            "Sud-tibbiy ekspert",
-            "Holatni huquqiy baholash"
-          ]
-        ]
+        "caption": "Ikki yondashuv"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: shifokor va ekspertning maqsadi qanday farq qiladi? Doskada: ikki ustunli taqqoslash. Tipik xato: ekspertni davolovchi vrach o‘rnida ko‘rish."
     },
@@ -287,7 +346,7 @@
       "title": "Ekspertizaning prinsiplari",
       "bullets": [
         {
-          "text": "«Sud ekspertizasi to‘g‘risida»gi Qonunda qonuniylik, inson huquq va erkinliklariga rioya, ekspert mustaqilligi, xolislik, har tomonlamalik va to‘liqlik prinsiplari e’tirof etilgan.",
+          "text": "Qonunda qonuniylik, inson huquq va erkinliklariga rioya, ekspert mustaqilligi, xolislik, har tomonlamalik va to‘liqlik prinsiplari e’tirof etilgan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -314,7 +373,45 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Ekspertiza prinsiplari",
+        "children": [
+          {
+            "label": "Qonuniylik",
+            "items": [
+              "Inson huquq va erkinliklariga rioya"
+            ]
+          },
+          {
+            "label": "Mustaqillik, xolislik",
+            "items": [
+              "Ekspert mustaqilligi",
+              "Xolislik"
+            ]
+          },
+          {
+            "label": "To‘liqlik",
+            "items": [
+              "Har tomonlamalik va to‘liqlik"
+            ]
+          },
+          {
+            "label": "Vakolat",
+            "items": [
+              "Faqat o‘z vakolati doirasida",
+              "Shaxsiy mas’uliyat"
+            ]
+          },
+          {
+            "label": "Identifikatsiya davri",
+            "items": [
+              "Shilinma, qontalash: 10–15 kun"
+            ]
+          }
+        ],
+        "caption": "Prinsiplar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: nega tekshiruv muddati muhim? Doskada: 10–15 kun. Tipik xato: shilinmani istalgan vaqtda bir xil tekshirish mumkin deb o‘ylash."
     },
     {
@@ -349,27 +446,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Usullar guruhi",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Misol"
+        "kind": "tree",
+        "root": "Usullar guruhi",
+        "children": [
+          {
+            "label": "Umumilmiy",
+            "items": [
+              "Kuzatuv, tavsif, taqqoslash, o‘lchash"
+            ]
+          },
+          {
+            "label": "Xususiy",
+            "items": [
+              "Morfologik, rentgenologik, xromatografik"
+            ]
+          },
+          {
+            "label": "Maxsus",
+            "items": [
+              "Fototaqqoslash, qurolni aniqlash"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Umumilmiy",
-            "Kuzatuv, tavsif, taqqoslash, o‘lchash"
-          ],
-          [
-            "Xususiy",
-            "Morfologik, rentgenologik, xromatografik"
-          ],
-          [
-            "Maxsus",
-            "Fototaqqoslash, qurolni aniqlash"
-          ]
-        ]
+        "caption": "Usullar guruhi"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: maxsus usullarga yana qanday misol keltira olasiz? Doskada: 3 guruh. Tipik xato: faqat laboratoriya usullarini ekspertizaga xos deb bilish."
     },
@@ -377,7 +476,7 @@
       "title": "Qadimgi davr tarixi",
       "bullets": [
         {
-          "text": "Qadimiy Spartada eramizdan oldingi IX–VIII asrlarda «Likurg qonunlari»da ayrim holatlarda tibbiy tekshiruv zarurati qayd etilgan; Gippokrat (460–370 e.a.) ham qatnashgan.",
+          "text": "Spartada e.a. IX–VIII asrlarda «Likurg qonunlari»da ayrim holatlarda tibbiy tekshiruv zarurati qayd etilgan; Gippokrat (460–370 e.a.) ham qatnashgan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -404,7 +503,38 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Likurg qonunlari",
+            "value": "e.a. IX–VIII asr"
+          },
+          {
+            "label": "Gippokrat",
+            "value": "460–370 e.a."
+          },
+          {
+            "label": "Sezar murdasi",
+            "value": "e.a. 44-yil"
+          },
+          {
+            "label": "Antistius: jarohatlar",
+            "value": "23",
+            "unit": "ta"
+          },
+          {
+            "label": "O‘limga sabab",
+            "value": "1",
+            "unit": "ta"
+          },
+          {
+            "label": "Yustinian kodeksi",
+            "value": "VI asr"
+          }
+        ],
+        "caption": "Qadimgi davr"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Antistius xulosasining ahamiyati nimada? Doskada: sana va nomlar. Tipik xato: Sezar jarohatlarining hammasini o‘limga sabab deb ko‘rsatish."
     },
     {
@@ -438,7 +568,16 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "1247: «Si Yuan Lu» (Xitoy)",
+          "XIII asr: Xugo Lukka (Bolone)",
+          "XIV asr: Monpele, rasmiy tekshiruv",
+          "1532: «Karolina» (Germaniya)"
+        ],
+        "caption": "O‘rta asrlar"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: «Karolina» nimani talab qilgan? Doskada: 1247, 1532. Tipik xato: Si Yuan Lu ni Yevropa asari deb bilish."
     },
     {
@@ -472,7 +611,16 @@
           "uncertain": true
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Pare: sud-tibbiy qism",
+          "XVI–XVII asr: alohida fan",
+          "1681: Shreer, o‘pka sinamasi",
+          "Bon: «sud tibbiyoti» nomi"
+        ],
+        "caption": "Fanning shakllanishi"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: fan nomi qaysi asarda taklif etilgan? Doskada: Bon, «Medicina forensis specimen». Tipik xato: yilni aniq nomlash (manbada Bon asari yili OCR xatosi tufayli aniq o‘qilmaydi)."
     },
     {
@@ -506,7 +654,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Germaniya, Avstriya",
+            "items": [
+              "Virxov",
+              "Rokitanskiy",
+              "fon Gofman"
+            ]
+          },
+          {
+            "title": "Fransiya",
+            "items": [
+              "Bruardel"
+            ]
+          },
+          {
+            "title": "Rossiya",
+            "items": [
+              "Gromov, Minakov",
+              "Neyding",
+              "Pirogov (atlas, 1846)"
+            ]
+          }
+        ],
+        "caption": "XIX–XX asr olimlari"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Pirogov hissasi nimada? Doskada: 1846 atlas. Tipik xato: Pirogovni faqat jarroh deb hisoblash."
     },
     {
@@ -540,7 +715,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Markaziy Osiyo",
+        "children": [
+          {
+            "label": "Shariat davri",
+            "items": [
+              "Odil sudlov shariat qoidalari bilan",
+              "Tibbiyot vakillari jalb etilmagan"
+            ]
+          },
+          {
+            "label": "Allomalar",
+            "items": [
+              "Beruniy",
+              "Ibn Sino",
+              "Ismoil Jurjoniy"
+            ]
+          },
+          {
+            "label": "«Tib qonunlari»",
+            "items": [
+              "Murda o‘zgarishlari, zaharlar",
+              "Zo‘raki o‘lim turlari, jarohatlar"
+            ]
+          }
+        ],
+        "caption": "Dastlabki bilimlar"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: nega bu ma’lumotlar sud tibbiyoti emas, tibbiy yordam maqsadida yozilgan? Doskada: Ibn Sino «Tib qonunlari». Tipik xato: bu asarlarni ekspertiza qo‘llanmasi deb bilish."
     },
     {
@@ -556,7 +759,7 @@
           "uncertain": false
         },
         {
-          "text": "Dastlabki kafedra Turkiston universiteti tibbiyot fakultetida 1920 yilda tashkil etilgan; keyin 1935 yil Samarqand, 1959 yil Andijon, 1972 yil Toshkent pediatriya institutida.",
+          "text": "Dastlabki kafedra Turkiston universiteti tibbiyot fakultetida 1920 yilda ochilgan; keyin 1935 Samarqand, 1959 Andijon, 1972 Toshkent pediatriya institutida.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -575,35 +778,30 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Kafedralar",
-        "nodes": [],
-        "header": [
-          "Yil",
-          "Joyi"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Turkiston universiteti",
+            "value": "1920"
+          },
+          {
+            "label": "Samarqand tibbiyot inst.",
+            "value": "1935"
+          },
+          {
+            "label": "Andijon tibbiyot inst.",
+            "value": "1959"
+          },
+          {
+            "label": "Toshkent pediatriya TI",
+            "value": "1972"
+          },
+          {
+            "label": "TVMOI qoshida kurs",
+            "value": "1993"
+          }
         ],
-        "rows": [
-          [
-            "1920",
-            "Turkiston universiteti"
-          ],
-          [
-            "1935",
-            "Samarqand tibbiyot instituti"
-          ],
-          [
-            "1959",
-            "Andijon tibbiyot instituti"
-          ],
-          [
-            "1972",
-            "Toshkent pediatriya instituti"
-          ],
-          [
-            "1993",
-            "TVMOI qoshida kurs"
-          ]
-        ]
+        "caption": "Kafedralar ochilgan yil"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: oliy tibbiy ta’lim tizimida sud tibbiyotining ahamiyati nimada? Javob: o‘quv jarayoni ilmiy va amaliy faoliyat bilan birga olib boriladi. Doskada: 1920, 1935, 1959, 1972, 1993. Tipik xato: sanalarni almashtirib yuborish."
     },
@@ -611,7 +809,7 @@
       "title": "Ekspertiza xizmati: o‘rni va vazifalari",
       "bullets": [
         {
-          "text": "Sud-tibbiy ekspertiza sog‘liqni saqlash tizimining ixtisoslashgan tarmog‘i; asosiy vazifasi jinoyat va fuqarolik ishlarida tibbiy-biologik masalalarni hal etish.",
+          "text": "Sud-tibbiy ekspertiza sog‘liqni saqlash tizimining ixtisoslashgan tarmog‘i; vazifasi jinoyat va fuqarolik ishlarida tibbiy-biologik masalalarni hal etish.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -672,7 +870,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "I davr",
+            "text": "XX asr 20-yillarigacha: 1842 yilgi ustav"
+          },
+          {
+            "title": "Instansiyalar",
+            "text": "Gospital vrachlari → ikkinchi → tibbiyot kengashi"
+          },
+          {
+            "title": "Turkiston",
+            "text": "1920-yillargacha epizodik ekspertizalar"
+          },
+          {
+            "title": "II davr",
+            "text": "1950-yillargacha: kafedralar, 1945 kabinet"
+          }
+        ],
+        "caption": "I va II davr"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: uch instansiya qanday ishlagan? Doskada: instansiyalar zinasi. Tipik xato: Turkistonda doimiy muassasa bo‘lgan deb o‘ylash."
     },
     {
@@ -707,31 +926,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Xizmat davrlari",
-        "nodes": [],
-        "header": [
-          "Davr",
-          "Muddat"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "I",
+            "text": "XX asr 20-yillarigacha"
+          },
+          {
+            "title": "II",
+            "text": "1950-yillargacha"
+          },
+          {
+            "title": "III",
+            "text": "1950–1991"
+          },
+          {
+            "title": "IV",
+            "text": "1991 yildan hozirgacha"
+          }
         ],
-        "rows": [
-          [
-            "I",
-            "XX asr 20-yillarigacha"
-          ],
-          [
-            "II",
-            "1950-yillargacha"
-          ],
-          [
-            "III",
-            "1950–1991"
-          ],
-          [
-            "IV",
-            "1991 yildan hozirgacha"
-          ]
-        ]
+        "caption": "Xizmat davrlari"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: mustaqillik yillarida nima o‘zgardi? Doskada: 1950 va 1991. Tipik xato: III va IV davrni aralashtirish."
     },
@@ -801,35 +1015,41 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Fizik omillar",
-        "nodes": [],
-        "header": [
-          "Tur",
-          "Misol"
+        "kind": "tree",
+        "root": "Fizik omillar",
+        "children": [
+          {
+            "label": "Mexanik",
+            "items": [
+              "O‘tmas, o‘tkir jism, o‘q otar qurol"
+            ]
+          },
+          {
+            "label": "Termik",
+            "items": [
+              "Yuqori va past harorat"
+            ]
+          },
+          {
+            "label": "Barometrik",
+            "items": [
+              "Yuqori va past bosim"
+            ]
+          },
+          {
+            "label": "Elektr",
+            "items": [
+              "Texnik va atmosfera toki"
+            ]
+          },
+          {
+            "label": "Nur",
+            "items": [
+              "Rentgen, izotoplar"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Mexanik",
-            "O‘tmas, o‘tkir jism, o‘q otar qurol"
-          ],
-          [
-            "Termik",
-            "Yuqori va past harorat"
-          ],
-          [
-            "Barometrik",
-            "Yuqori va past bosim"
-          ],
-          [
-            "Elektr",
-            "Texnik va atmosfera toki"
-          ],
-          [
-            "Nur",
-            "Rentgen, izotoplar"
-          ]
-        ]
+        "caption": "Fizik omillar"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: mexanik ta’sirga qanday misollar bor? Javob: o‘tmas jism, o‘tkir jism, o‘q otar qurol, portlovchi moddalar. Doskada: jadval. Tipik xato: ruhiy ta’sirni sud-tibbiy ekspertiza predmeti deb bilish."
     },
@@ -932,7 +1152,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Travmatizm turlari",
+        "children": [
+          {
+            "label": "Mehnat va transport",
+            "items": [
+              "Ishlab chiqarish",
+              "Transport",
+              "Harbiy"
+            ]
+          },
+          {
+            "label": "Kundalik hayot",
+            "items": [
+              "Ko‘cha",
+              "Maishiy",
+              "Maktab"
+            ]
+          },
+          {
+            "label": "Sport",
+            "items": [
+              "Sport"
+            ]
+          }
+        ],
+        "caption": "Turdosh jarohatlar majmui"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: maktab travmatizmining oldini olishda nima qilish mumkin? Doskada: 7 tur. Tipik xato: transport travmatizmini faqat avtomobil bilan cheklash."
     },
     {
@@ -967,23 +1215,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Hayotiylik belgilari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Belgilar"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Umumiy belgilar",
+            "items": [
+              "Qon ketish",
+              "Aspiratsiya",
+              "Emboliya"
+            ]
+          },
+          {
+            "title": "Mahalliy belgilar",
+            "items": [
+              "Qon quyilishi",
+              "Tromb",
+              "Shish, nekroz"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Umumiy",
-            "Qon ketish, aspiratsiya, emboliya"
-          ],
-          [
-            "Mahalliy",
-            "Qon quyilishi, tromb, shish, nekroz"
-          ]
-        ]
+        "caption": "Hayotiylik"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: nega o‘limdan keyingi jarohat hayotiyga o‘xshashi mumkin? Doskada: umumiy va mahalliy belgilar. Tipik xato: bitta belgiga tayanish."
     },
@@ -1053,27 +1304,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Jarohat vositalari",
-        "nodes": [],
-        "header": [
-          "Vosita",
-          "Misol"
+        "kind": "tree",
+        "root": "Jarohat vositalari",
+        "children": [
+          {
+            "label": "Qurol",
+            "items": [
+              "Pistolet, miltiq, hanjar"
+            ]
+          },
+          {
+            "label": "Anjom",
+            "items": [
+              "Bolta, arra, qaychi"
+            ]
+          },
+          {
+            "label": "Jism",
+            "items": [
+              "Tosh, tayoq"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Qurol",
-            "Pistolet, miltiq, hanjar"
-          ],
-          [
-            "Anjom",
-            "Bolta, arra, qaychi"
-          ],
-          [
-            "Jism",
-            "Tosh, tayoq"
-          ]
-        ]
+        "caption": "Jarohat vositalari"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: tosh va pichoq qaysi toifaga kiradi? Doskada: qurol — anjom — jism. Tipik xato: baltani qurol deb hisoblash."
     },
@@ -1108,7 +1361,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Birlamchi sabablar",
+        "children": [
+          {
+            "label": "Nomutanosib jarohat",
+            "items": [
+              "Boshning ajralishi",
+              "Tananing ikkiga bo‘linishi"
+            ]
+          },
+          {
+            "label": "Muhim a’zolar jarohati",
+            "items": [
+              "Miya lat yeyishi",
+              "Yurak lat yeyishi"
+            ]
+          },
+          {
+            "label": "Qon yo‘qotish",
+            "items": [
+              "Hajm va sur’at ahamiyatli"
+            ]
+          }
+        ],
+        "caption": "Mexanik jarohatdan o‘lim (1–3)"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: qaysi jarohatlar transport travmasida uchraydi? Doskada: birlamchi sabablar raqamlari. Tipik xato: o‘limni doim yagona sababga bog‘lash."
     },
     {
@@ -1143,23 +1422,24 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Qon yo‘qotish turlari",
-        "nodes": [],
-        "header": [
-          "Tur",
-          "Xususiyat"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Tez (≤500 ml)",
+            "items": [
+              "Fibrillyasiya",
+              "Minakov dog‘lari"
+            ]
+          },
+          {
+            "title": "Ko‘p (≥2,5 l)",
+            "items": [
+              "Umumiy kamqonlik",
+              "Dog‘lar kech paydo bo‘ladi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Tez (≤500 ml)",
-            "Fibrillyasiya, Minakov dog‘lari"
-          ],
-          [
-            "Ko‘p (≥2,5 l)",
-            "Umumiy kamqonlik, dog‘lar kech"
-          ]
-        ]
+        "caption": "Qon yo‘qotish"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: tez va sekin qon yo‘qotishning murdadagi farqi? Doskada: 500 ml va 2,5 l. Tipik xato: Minakov dog‘larini har qanday qon yo‘qotishda doim bor deb bilish."
     },
@@ -1194,7 +1474,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Shok va qisilish",
+        "children": [
+          {
+            "label": "Travmatik shok",
+            "items": [
+              "MNT, yurak-tomir, endokrin buzilishi",
+              "III–IV daraja — o‘lim"
+            ]
+          },
+          {
+            "label": "Qisilish",
+            "items": [
+              "Gematoma (miya)",
+              "Gemoperikard",
+              "Pnevmo-, gemotoraks"
+            ]
+          }
+        ],
+        "caption": "Travmatik shok"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: epidural va subdural gematomaning farqi? Doskada: qisilish turlari. Tipik xato: shokni jarohat o‘lchamiga to‘g‘ri bog‘lash."
     },
     {
@@ -1228,7 +1529,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Ochish",
+            "text": "Tekshiruv ko‘krak qafasidan boshlanadi"
+          },
+          {
+            "title": "2. Perikard",
+            "text": "Yurak sathini yopadigan suv quyiladi"
+          },
+          {
+            "title": "3. Teshish",
+            "text": "O‘ng qorincha devori teshiladi"
+          },
+          {
+            "title": "4. Natija",
+            "text": "Suvdan pufaklar chiqsa — musbat"
+          }
+        ],
+        "caption": "Sunsov sinamasi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: nega tekshiruv ko‘krak qafasidan boshlanadi? Doskada: Sunsov sinamasi bosqichlari. Tipik xato: avval qorin bo‘shlig‘ini ochish."
     },
     {
@@ -1262,7 +1584,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Boshqa sabablar",
+        "children": [
+          {
+            "label": "Yog‘ emboliyasi",
+            "items": [
+              "Uzun naysimon suyak sinishi",
+              "O‘lim 2–3 kundan so‘ng"
+            ]
+          },
+          {
+            "label": "Qon aspiratsiyasi",
+            "items": [
+              "Halqum, nafas yo‘llari shikasti",
+              "Kalla asosi, burun suyaklari sinishi"
+            ]
+          },
+          {
+            "label": "Ikkilamchi sabablar",
+            "items": [
+              "Sepsis, peritonit, meningit",
+              "Qoqshol; intoksikatsiya"
+            ]
+          }
+        ],
+        "caption": "Aspiratsiya va ikkilamchi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: yuz-jag‘ jarohatlarida nega aspiratsiya xavfi bor? Javob: burun suyaklari va kalla asosi sinsa qon nafas yo‘llariga tushadi. Doskada: Sudan III/IV ranglari. Tipik xato: yog‘ emboliyasida darhol o‘lim kutish."
     },
     {
@@ -1296,7 +1645,44 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "O‘tmas jismlar",
+        "children": [
+          {
+            "label": "Qattiq",
+            "items": [
+              "Tosh, tayoq"
+            ]
+          },
+          {
+            "label": "Yumshoq",
+            "items": [
+              "Sharf, sochiq"
+            ]
+          },
+          {
+            "label": "Elastik",
+            "items": [
+              "Rezina to‘pi"
+            ]
+          },
+          {
+            "label": "Ta’sir yuzasi",
+            "items": [
+              "Cheklangan yoki cheklanmagan"
+            ]
+          },
+          {
+            "label": "Ulushi",
+            "items": [
+              "Tirik shaxslarda 80% dan ziyod",
+              "Zo‘raki o‘limda ≈ yarmi"
+            ]
+          }
+        ],
+        "caption": "Jismlar va yuza"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: bir jism ham cheklangan, ham cheklanmagan yuzali bo‘lishi mumkinmi? Javob: ha, soha maydoniga qarab. Doskada: 80 %. Tipik xato: yuza turini mutlaq deb hisoblash."
     },
     {
@@ -1331,23 +1717,18 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Travma turi",
-        "nodes": [],
-        "header": [
-          "Tur",
-          "Xususiyat"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Impression",
+            "text": "Jism massasi kichik; mahalliy"
+          },
+          {
+            "title": "Inersion",
+            "text": "Kuch katta; bilvosita, aks zarb"
+          }
         ],
-        "rows": [
-          [
-            "Impression",
-            "Jism massasi kichik; mahalliy"
-          ],
-          [
-            "Inersion",
-            "Kuch katta; bilvosita, aks zarb"
-          ]
-        ]
+        "caption": "Travma turi"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: aks zarb nima? Doskada: ikki ustun. Tipik xato: impression va inersiyani jism turi bilan chalkashtirish."
     },
@@ -1382,7 +1763,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Zarb",
+            "items": [
+              "Bir tomonga yo‘nalgan",
+              "Qisqa muddatli"
+            ]
+          },
+          {
+            "title": "Siqilish",
+            "items": [
+              "Ikki kuch bir-biriga qarab",
+              "Ichki shikast jiddiyroq"
+            ]
+          },
+          {
+            "title": "Cho‘zilish",
+            "items": [
+              "Kuchlar markazdan qochadi",
+              "Yirtma yara, yorilish"
+            ]
+          }
+        ],
+        "caption": "Ta’sir mexanizmlari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: tishlama yaralar qaysi mexanizm bilan hosil bo‘ladi? Javob: cho‘zilish mexanizmi ishtirok etadi. Doskada: kuch yo‘nalishlari. Tipik xato: siqilishda tashqi jarohatni og‘ir deb kutish."
     },
     {
@@ -1417,27 +1824,22 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Mexanizm va jarohat",
-        "nodes": [],
-        "header": [
-          "Mexanizm",
-          "Jarohat"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Ishqalanish",
+            "text": "Shilinma"
+          },
+          {
+            "title": "Buralish",
+            "text": "Spiralsimon sinish"
+          },
+          {
+            "title": "Chayqalish",
+            "text": "Miya chayqalishi, silkinish sindromi"
+          }
         ],
-        "rows": [
-          [
-            "Ishqalanish",
-            "Shilinma"
-          ],
-          [
-            "Buralish",
-            "Spiralsimon sinish"
-          ],
-          [
-            "Chayqalish",
-            "Miya chayqalishi, silkinish sindromi"
-          ]
-        ]
+        "caption": "Mexanizm va jarohat"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: spiral sinish qaysi mexanizmni ko‘rsatadi? Doskada: mexanizm — jarohat juftliklari. Tipik xato: bitta mexanizm bilan cheklanish (aksariyat jarohat ikki va undan ortiq mexanizmdan)."
     },
@@ -1473,31 +1875,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Shilinma bosqichlari",
-        "nodes": [],
-        "header": [
-          "Bosqich",
-          "Muddat"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Yangi",
+            "value": "12 soatgacha"
+          },
+          {
+            "label": "Qoplama hosil bo‘lishi",
+            "value": "2–3 sutka"
+          },
+          {
+            "label": "Epitelizatsiya",
+            "value": "7–9 sutka"
+          },
+          {
+            "label": "Iz",
+            "value": "10–15 sutka"
+          }
         ],
-        "rows": [
-          [
-            "Yangi",
-            "12 soatgacha"
-          ],
-          [
-            "Qoplama hosil bo‘lishi",
-            "2–3 sutka"
-          ],
-          [
-            "Epitelizatsiya",
-            "7–9 sutka"
-          ],
-          [
-            "Iz",
-            "10–15 sutka"
-          ]
-        ]
+        "caption": "Shilinma bosqichlari"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: bosqichlar muddati nega shartli? Javob: yosh, salomatlik, soha va chuqurlikka bog‘liq. Doskada: 12 soat, 2–3, 7–9, 10–15. Tipik xato: muddatlarni qat’iy deb qo‘llash."
     },
@@ -1532,14 +1929,39 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Shilinma ahamiyati",
+        "children": [
+          {
+            "label": "Mexanik ta’sir",
+            "items": [
+              "Mexanizm va muddatni aniqlash"
+            ]
+          },
+          {
+            "label": "Hodisa tafsiloti",
+            "items": [
+              "Joyi, shakli, soni bo‘yicha"
+            ]
+          },
+          {
+            "label": "Farqlash",
+            "items": [
+              "Pergament dog‘i: sariq-jigarrang",
+              "Qoplama hosil bo‘lmaydi"
+            ]
+          }
+        ],
+        "caption": "Shilinma"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: pergament dog‘ nima? Doskada: farqlovchi belgilar. Tipik xato: pergament dog‘ini hayotiy shilinma deb baholash."
     },
     {
       "title": "Qontalashlar",
       "bullets": [
         {
-          "text": "Qontalash — qon tomirlar yorilishi natijasida teri, teri osti yog‘ va yumshoq to‘qimalarga qon quyilishi; shish, mahalliy harorat ko‘tarilishi va og‘riq kuzatiladi.",
+          "text": "Qontalash — qon tomirlar yorilishi natijasida teri, teri osti yog‘ va yumshoq to‘qimalarga qon quyilishi; shish, harorat ko‘tarilishi va og‘riq kuzatiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1566,7 +1988,41 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Qontalash",
+        "children": [
+          {
+            "label": "Mohiyati",
+            "items": [
+              "Qon tomir yorilishi",
+              "Teri, yog‘, yumshoq to‘qimaga qon"
+            ]
+          },
+          {
+            "label": "Belgilar",
+            "items": [
+              "Shish",
+              "Mahalliy harorat ko‘tarilishi",
+              "Og‘riq"
+            ]
+          },
+          {
+            "label": "Gematoma",
+            "items": [
+              "To‘qima oralig‘ida qon to‘planishi"
+            ]
+          },
+          {
+            "label": "Shakli",
+            "items": [
+              "Cheklanmagan yuza: dumaloq, oval",
+              "Cheklangan yuza: yuza shakliga o‘xshash"
+            ]
+          }
+        ],
+        "caption": "Qontalash"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: bilvosita qontalash nima? Doskada: qontalash — gematoma farqi. Tipik xato: qontalash shaklini doim jism shakliga o‘xshash deb bilish."
     },
     {
@@ -1601,27 +2057,22 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Qontalash rangi",
-        "nodes": [],
-        "header": [
-          "Muddat",
-          "Rang"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Dastlabki kunlar",
+            "text": "Qizg‘ish-ko‘kimtir"
+          },
+          {
+            "title": "3–4 sutka",
+            "text": "Yashil"
+          },
+          {
+            "title": "6–8 sutka",
+            "text": "Sariq"
+          }
         ],
-        "rows": [
-          [
-            "Dastlabki kunlar",
-            "Qizg‘ish-ko‘kimtir"
-          ],
-          [
-            "3–4 sutka",
-            "Yashil"
-          ],
-          [
-            "6–8 sutka",
-            "Sariq"
-          ]
-        ]
+        "caption": "Qontalash rangi"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: nega qontalash rangi muddatni bildirishga yetarli emas? Doskada: 3–4 va 6–8 sutka. Tipik xato: yuz-jag‘ sohasidagi qon quyilishdan ham rang bo‘yicha muddat aniqlash."
     },
@@ -1656,7 +2107,44 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "O‘tmas jismdan yaralar",
+        "children": [
+          {
+            "label": "Lat yara",
+            "items": [
+              "Zarb va siqilishdan"
+            ]
+          },
+          {
+            "label": "Majaqlangan",
+            "items": [
+              "Kuchli ta’sirda"
+            ]
+          },
+          {
+            "label": "Yirtma",
+            "items": [
+              "Zarb va cho‘zilishdan"
+            ]
+          },
+          {
+            "label": "Laxtaksimon",
+            "items": [
+              "O‘tkir burchakdagi zarbdan"
+            ]
+          },
+          {
+            "label": "Umumiy belgilar",
+            "items": [
+              "Chetlari notekis, shilinma",
+              "To‘qima «ko‘prikchalari»"
+            ]
+          }
+        ],
+        "caption": "Yara turlari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: ko‘prikchalar o‘tkir jism yarasidan nima bilan farqlanadi? Doskada: yara turlari. Tipik xato: o‘tmas jism yarasini kesilgan yara bilan adashtirish."
     }
   ],
@@ -1809,16 +2297,176 @@
       "question": "Buralish mexanizmida qanday jarohat xos?",
       "options": [
         "Shilinma",
-        "Spiralsimon sinish",
+        "Gematoma",
         "Lat yara",
-        "Gematoma"
+        "Spiralsimon sinish"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Buralish mexanizmida asosan bilvosita jarohatlar, xususan suyaklarning spiralsimon sinishi.",
       "source": {
         "author": "G‘iyosov Z.A.",
         "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
         "page": "35–36"
+      }
+    },
+    {
+      "question": "Ekspert shilinma va qontalashlarni tekshirish muddatini belgilamoqda. Darslikka ko‘ra, aksariyat shilinma va qontalashlarni qaysi muddatgacha tekshirish maqsadga muvofiq?",
+      "options": [
+        "Dastlabki 1–2 soatgacha",
+        "Dastlabki 3–4 kungacha",
+        "Dastlabki 30–40 kungacha",
+        "Dastlabki 10–15 kungacha"
+      ],
+      "correct_index": 3,
+      "explanation": "Ob’ektlar faqat ma’lum davrda dalil manbai bo‘ladi; aksariyat shilinma va qontalashlarni dastlabki 10–15 kungacha tekshirish maqsadga muvofiq.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "8"
+      }
+    },
+    {
+      "question": "Ekspert teridagi jarohat va topilgan pichoq xususiyatlarini qiyosiy o‘rganib, shikastlovchi qurolni aniqlamoqda. Bu qaysi usullar guruhiga kiradi?",
+      "options": [
+        "Umumilmiy usullar",
+        "Xususiy usullar",
+        "Maxsus usullar",
+        "Klinik usullar"
+      ],
+      "correct_index": 2,
+      "explanation": "Shaxs va shikastlovchi qurolning aynanligini aniqlashda qo‘llanadigan usullar maxsus usullar guruhiga kiradi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "9"
+      }
+    },
+    {
+      "question": "O‘zbekistonda sud tibbiyoti kafedrasi dastlab qayerda va qachon tashkil qilingan?",
+      "options": [
+        "Turkiston universiteti tibbiyot fakultetida, 1920 yilda",
+        "Samarqand tibbiyot institutida, 1935 yilda",
+        "Andijon tibbiyot institutida, 1959 yilda",
+        "Toshkent pediatriya institutida, 1972 yilda"
+      ],
+      "correct_index": 0,
+      "explanation": "Dastlabki kafedra Turkiston universitetining tibbiyot fakultetida 1920 yilda tashkil qilingan; keyingilari 1935, 1959, 1972 yillarda.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "11"
+      }
+    },
+    {
+      "question": "Qon yo‘qotish ko‘p deb baholanishi uchun darslikda qaysi hajm keltirilgan?",
+      "options": [
+        "50 % dan ortiq, ya’ni 2,5 litr va undan ko‘p",
+        "500 ml gacha",
+        "1 litrga yaqin",
+        "100–200 ml"
+      ],
+      "correct_index": 0,
+      "explanation": "Ko‘p qon yo‘qotish 50 % dan ortiq, ya’ni 2,5 litr va undan ko‘p bo‘lib, bir necha soat davomida yuz beradi; o‘tkir yo‘qotishda 500 ml gacha ham o‘lim mumkin.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "31"
+      }
+    },
+    {
+      "question": "Murdada chap qorincha endokardi ostida tasmasimon qon quyilishlar topildi. Bu qaysi holat uchun xos belgi (Minakov dog‘lari)?",
+      "options": [
+        "Yog‘ emboliyasi",
+        "Havo emboliyasi",
+        "Travmatik shokning IV darajasi",
+        "O‘tkir qon yo‘qotish"
+      ],
+      "correct_index": 3,
+      "explanation": "Chap qorincha endokardi ostidagi tasmasimon qon quyilishlar (Minakov dog‘lari) o‘tkir qon yo‘qotish uchun xos belgi hisoblanadi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "31"
+      }
+    },
+    {
+      "question": "Venaga havo kirganda qaysi hajmdan boshlab fibrillyatsiya va o‘lim xavfi ortadi?",
+      "options": [
+        "1–2 kub sm",
+        "5–7 kub sm sekin kirsa",
+        "10 kub sm va undan ortiq, tez kirsa",
+        "Faqat 100 kub sm dan keyin"
+      ],
+      "correct_index": 2,
+      "explanation": "Oz havo (5–7 kub sm) sekin qonda erib ketadi; ko‘p havoning (10 kub sm va undan ortiq) tez o‘tishi qorinchalar fibrillyatsiyasi va o‘lim bilan tugashi mumkin.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "31"
+      }
+    },
+    {
+      "question": "Uzun naysimon suyak singan shaxs shikastlanishdan so‘ng darhol emas, balki bir muddat o‘tib vafot etdi. Yog‘ emboliyasida o‘lim odatda qachon sodir bo‘ladi?",
+      "options": [
+        "2–3 kundan so‘ng",
+        "Birinchi soniyalarda",
+        "Birinchi soatda",
+        "10–14 kundan keyin"
+      ],
+      "correct_index": 0,
+      "explanation": "Mayda yog‘ zarralari o‘pka tomirlarini asta yopgani uchun yog‘ emboliyasidan o‘lim 2–3 kundan so‘ng sodir bo‘ladi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "32"
+      }
+    },
+    {
+      "question": "O‘tmas jismdan olingan jarohatlar tirik shaxslar ekspertizasida qancha ulushni tashkil etadi?",
+      "options": [
+        "80 % dan ziyod",
+        "10 % ga yaqin",
+        "25 % ga yaqin",
+        "Taxminan 50 %"
+      ],
+      "correct_index": 0,
+      "explanation": "Tirik shaxslar ekspertizasining 80 % dan ziyodi, murdalar ekspertizasida zo‘raki o‘limning yarmiga yaqini o‘tmas jism jarohatlari bilan bog‘liq.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "33"
+      }
+    },
+    {
+      "question": "Ish joyida bolta bilan jarohat etkazildi. Mexanik jarohat etkazuvchi vositalarning qaysi guruhiga bolta kiradi?",
+      "options": [
+        "Qurol",
+        "Jism",
+        "Ikkilamchi snaryad",
+        "Anjom"
+      ],
+      "correct_index": 3,
+      "explanation": "Bolta, arra, qaychi kabi ishlab chiqarish yoki uy-ro‘zg‘or buyumlari anjom hisoblanadi; qurol – pistolet, hanjar; jism – tosh, tayoq.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "30"
+      }
+    },
+    {
+      "question": "1681 yilda Germaniyaning Seyts shahrida I. Shreer yangi tug‘ilgan chaqaloq murdasida birinchi marta qaysi sinamani qo‘llagan?",
+      "options": [
+        "Oshqozon-ichak sinamasini",
+        "Rentgenologik sinamani",
+        "O‘pka sinamasini",
+        "Sunsov sinamasini"
+      ],
+      "correct_index": 2,
+      "explanation": "1681 yilda I. Shreer chaqaloq murdasi tekshiruvida birinchi marta o‘pka sinamasini qo‘llagan.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "10"
       }
     }
   ],

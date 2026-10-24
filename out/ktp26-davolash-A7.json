@@ -32,7 +32,31 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Sud-tibbiy toksikologiya",
+        "children": [
+          {
+            "label": "Uchrashi",
+            "items": [
+              "Murda va tirik ekspertizada keng"
+            ]
+          },
+          {
+            "label": "Zo‘ravon o‘limda",
+            "items": [
+              "Jarohat, asfiksiyadan keyin 3-o‘rin"
+            ]
+          },
+          {
+            "label": "Tarixiy o‘rni",
+            "items": [
+              "Sud tibbiyoti shundan shakllangan"
+            ]
+          }
+        ],
+        "caption": "Sud-tibbiy toksikologiyaning o‘rni"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega zaharlanish zo‘ravon o‘lim tarkibida uchinchi o‘rinda turadi deb o‘ylaysiz? 2) Tirik shaxslar ekspertizasida zaharlanish qanday uchrashi mumkin? Doskada: zo‘ravon o‘lim sabablarini 1-2-3 tartibda yozdiring. Tipik xato: zaharlanishni zo‘ravon o‘limning eng ko‘p uchraydigan turi deb hisoblash."
     },
     {
@@ -66,7 +90,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Zahar",
+            "text": "Oz miqdorda sog‘liqni buzuvchi modda"
+          },
+          {
+            "title": "Nisbiylik",
+            "text": "Mutlaq zahar ham, beziyon modda ham yo‘q"
+          },
+          {
+            "title": "Paratsels",
+            "text": "Doriga yoki zaharga doza aylantiradi"
+          },
+          {
+            "title": "Zaharlanish",
+            "text": "Oz modda ta’siridagi sog‘liq buzilishi"
+          }
+        ],
+        "caption": "Zahar tushunchasi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Dori va zahar o‘rtasidagi chegarani nima belgilaydi? Doskada: Paratsels iborasini yozing. Tipik xato: ayrim moddalarni «mutlaq zahar» deb atash."
     },
     {
@@ -92,27 +137,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Toksikologiya yo‘nalishlarini solishtirish",
-        "nodes": [],
-        "header": [
-          "Yo‘nalish",
-          "Vazifasi"
+        "kind": "tree",
+        "root": "Toksikologiya yo‘nalishlari",
+        "children": [
+          {
+            "label": "Sanoat"
+          },
+          {
+            "label": "Qishloq xo‘jaligi"
+          },
+          {
+            "label": "Harbiy"
+          },
+          {
+            "label": "Oziq-ovqat"
+          },
+          {
+            "label": "Maishiy"
+          },
+          {
+            "label": "Sud-tibbiy",
+            "items": [
+              "Huquqni muhofaza vazifalari"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Boshqa turlar",
-            "Sabab, yordam, oldini olish"
-          ],
-          [
-            "Sud-tibbiy",
-            "Huquqni muhofaza idoralari vazifalari"
-          ],
-          [
-            "Tarixiy o‘rni",
-            "Sud tibbiyoti undan shakllangan"
-          ]
-        ]
+        "caption": "Toksikologiya yo‘nalishlari"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Klinik va sud-tibbiy toksikologiyaning savollari qanday farq qiladi? Doskada: ikki ustunli jadval. Tipik xato: sud-tibbiy toksikologiyani davolash fani deb tushunish."
     },
@@ -139,15 +189,26 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Uchrash tartibi (ko‘pdan kamga)",
-        "nodes": [
-          "Baxtsiz hodisa",
-          "O‘z-o‘zini o‘ldirish",
-          "Qotillik"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "1-o‘rin",
+            "value": "baxtsiz hodisa"
+          },
+          {
+            "label": "2-o‘rin",
+            "value": "o‘z-o‘zini o‘ldirish"
+          },
+          {
+            "label": "3-o‘rin",
+            "value": "qotillik (kam)"
+          },
+          {
+            "label": "Yatrogen",
+            "value": "dori dozasi xatosi"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Zaharlanishning kelib chiqishi"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega zaharlash yo‘li bilan qotillik kam uchraydi? Doskada: uch turni tez-ko‘pdan kamga qarab yozing. Tipik xato: baxtsiz hodisani qasddan zaharlash deb hisoblash."
     },
@@ -208,31 +269,38 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "To‘rt guruh omil",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Nimaga bog‘liq"
+        "kind": "tree",
+        "root": "Ta’sir omillari",
+        "children": [
+          {
+            "label": "Zaharli modda",
+            "items": [
+              "Tuzilishi, miqdori",
+              "Eruvchanligi"
+            ]
+          },
+          {
+            "label": "Organizm",
+            "items": [
+              "Vazni, yoshi",
+              "Salomatligi"
+            ]
+          },
+          {
+            "label": "Kirish yo‘li",
+            "items": [
+              "Qonga o‘tish tezligi"
+            ]
+          },
+          {
+            "label": "Tashqi sharoit",
+            "items": [
+              "Harorat, namlik",
+              "Yopiq muhit"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Zaharli modda",
-            "Tuzilishi, miqdori, eruvchanligi"
-          ],
-          [
-            "Organizm",
-            "Vazni, yoshi, salomatligi"
-          ],
-          [
-            "Kirish yo‘li",
-            "Qonga o‘tish tezligi"
-          ],
-          [
-            "Tashqi sharoit",
-            "Harorat, namlik, yopiq muhit"
-          ]
-        ]
+        "caption": "Zaharlanish omillarining 4 guruhi"
       },
       "teacher_notes": "Vaqt: 3 daq. Muhokama: Bitta zahar turli odamlarda nega turlicha ta’sir qiladi? Doskada: 4 omil sxemasi. Tipik xato: faqat dozani hisobga olish."
     },
@@ -267,7 +335,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Tuzilish",
+            "items": [
+              "Xususiyatni belgilaydi",
+              "CO va CO2: toksikligi bir xil emas"
+            ]
+          },
+          {
+            "title": "Miqdor",
+            "items": [
+              "Terapevtik, toksik, letal doza",
+              "Konsentratsiya ta’sirni o‘zgartiradi"
+            ]
+          },
+          {
+            "title": "Misol",
+            "items": [
+              "3% sirka eritmasi ≠ sirka essensiyasi"
+            ]
+          }
+        ],
+        "caption": "Zaharli modda omillari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Fenolning konsentrlangan va suyultirilgan eritmasi nega boshqacha ta’sir qiladi? Doskada: doza-ta’sir sxemasi. Tipik xato: moddaning nomiga qarab xavfni baholash."
     },
     {
@@ -301,7 +394,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Agregat holat va eruvchanlik",
+        "children": [
+          {
+            "label": "Agregat holat",
+            "items": [
+              "Gaz > suyuq > qattiq"
+            ]
+          },
+          {
+            "label": "Eruvchanlik",
+            "items": [
+              "BaSO4 erimaydi (kontrast)",
+              "BaCl2 eriydi, kuchli zahar",
+              "Fosfororganiklar yog‘da eriydi"
+            ]
+          },
+          {
+            "label": "Vexikulum",
+            "items": [
+              "As ishqorda kuchayadi",
+              "Sianid kislotali muhitda"
+            ]
+          }
+        ],
+        "caption": "Agregat holat, eruvchanlik, vexikulum"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Bariy sulfat va xlorid farqi nimada? Doskada: eruvchanlik → ta’sir. Tipik xato: bir kimyoviy elementning barcha birikmalarini bir xil zaharli deb hisoblash."
     },
     {
@@ -335,7 +455,16 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Zahar organizmga kiradi",
+          "Kumulyatsiya (to‘planish)",
+          "Og‘ir metallarda ahamiyatli",
+          "Ko‘pincha ovqatga qo‘shilgan"
+        ],
+        "caption": "Kumulyatsiya"
+      },
       "teacher_notes": "Vaqt: 3 daq. Muhokama: Kumulyatsiya surunkali zaharlanishda nimani anglatadi? Doskada: «oz-oz kirish → to‘planish». Tipik xato: kumulyatsiyani faqat o‘tkir zaharlanishga bog‘lash."
     },
     {
@@ -394,7 +523,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Massa",
+            "items": [
+              "Vazniga qarab ta’sir farq qiladi",
+              "Dori dozasi 1 kg ga"
+            ]
+          },
+          {
+            "title": "Jins",
+            "items": [
+              "Farq yo‘q",
+              "Homiladorlikda sezgirlik ortadi"
+            ]
+          },
+          {
+            "title": "Yosh",
+            "items": [
+              "Bolalar sezgirroq",
+              "Qarshilik tizimi to‘liq emas"
+            ]
+          }
+        ],
+        "caption": "Organizm omillari"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega dozani vaznga nisbatan hisoblaymiz? Doskada: yosh bo‘yicha sezgirlik. Tipik xato: bolaga kattalar dozasini «yarmi» qilib berish mumkin deb o‘ylash."
     },
     {
@@ -428,7 +583,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Organizm qarshiligi",
+        "children": [
+          {
+            "label": "Salomatlik",
+            "items": [
+              "Sog‘lom: kuchli qarshilik",
+              "Yurak/jigar/buyrak kasali: cheklanadi"
+            ]
+          },
+          {
+            "label": "Genetika",
+            "items": [
+              "Past xolinesteraza → miorelaksant",
+              "G-6-FDG yetishmovchiligi → sulfanilamid"
+            ]
+          },
+          {
+            "label": "Tolerantlik",
+            "items": [
+              "Takroriy ta’sirda",
+              "Giyohvandlik: abstinensiya"
+            ]
+          }
+        ],
+        "caption": "Salomatlik, genetika va tolerantlik"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Idiosinkraziya nima va nega ekspert uni hisobga oladi? Doskada: 3 omil — salomatlik, genetika, tolerantlik. Tipik xato: tolerantlikni zaharlanish yo‘qligi deb tushunish."
     },
     {
@@ -462,7 +644,40 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Kirish yo‘llari",
+        "children": [
+          {
+            "label": "Teri"
+          },
+          {
+            "label": "Og‘iz"
+          },
+          {
+            "label": "Nafas yo‘llari",
+            "items": [
+              "Jigardan o‘tmaydi — kuchliroq"
+            ]
+          },
+          {
+            "label": "To‘g‘ri ichak, qin",
+            "items": [
+              "Jigardan o‘tmaydi"
+            ]
+          },
+          {
+            "label": "Inyeksiya"
+          },
+          {
+            "label": "Erimaydiganlar",
+            "items": [
+              "Faqat mahalliy ta’sir"
+            ]
+          }
+        ],
+        "caption": "Zaharning kirish yo‘llari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega nafas yo‘li orqali kirgan zahar kuchliroq? Doskada: jigar «filtri» sxemasi. Tipik xato: barcha yo‘llarni teng xavfli deb baholash."
     },
     {
@@ -496,7 +711,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Kuchaytiradi",
+            "items": [
+              "Yopiq, issiq, nam muhit",
+              "Alkogol, is gazi zaharlanishi"
+            ]
+          },
+          {
+            "title": "Susaytiradi",
+            "items": [
+              "Ochiq muhit",
+              "Past harorat va namlik"
+            ]
+          },
+          {
+            "title": "Ahamiyati",
+            "items": [
+              "Faqat ayrim moddalarda",
+              "Kasbiy zaharlanishda katta"
+            ]
+          }
+        ],
+        "caption": "Tashqi sharoit"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Qaysi ishlab chiqarishlarda tashqi sharoit muhim? Doskada: ikki ustun — kuchaytiradi / susaytiradi. Tipik xato: tashqi sharoitni barcha zaharlarga bir xil ta’sir qiladi deb hisoblash."
     },
     {
@@ -556,15 +797,22 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Isbotlash manbalari",
-        "nodes": [
-          "Hodisa joyi",
-          "Murda tekshiruvi",
-          "Laboratoriya"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1: Hodisa joyi",
+            "text": "Joy va tibbiy hujjatlar"
+          },
+          {
+            "title": "2: Murda",
+            "text": "Tashqi va ichki tekshiruv"
+          },
+          {
+            "title": "3: Laboratoriya",
+            "text": "Qo‘shimcha tekshiruvlar"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Diagnostika bosqichlari"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Qaysi bosqich dalili hal qiluvchi? Doskada: 3 bosqichli zanjir. Tipik xato: faqat laboratoriyaga tayanib, hodisa joyini e’tiborsiz qoldirish."
     },
@@ -599,7 +847,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "1-bosqich: dalillar",
+        "children": [
+          {
+            "label": "Joyda topiladi",
+            "items": [
+              "Yot hid, dori idishi",
+              "Shprits, retsept, qusuq"
+            ]
+          },
+          {
+            "label": "Tanada",
+            "items": [
+              "Inyeksiya izi, dog‘ rangi",
+              "Qotish"
+            ]
+          },
+          {
+            "label": "Hujjat",
+            "items": [
+              "Klinika, laboratoriya (funksional zahar)"
+            ]
+          }
+        ],
+        "caption": "Hodisa joyi va hujjatlar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Hodisa joyidan qanday ashyoviy dalillar olinadi? Doskada: 5 ta e’tibor obyekti. Tipik xato: tibbiy hujjatlarni o‘rganmaslik."
     },
     {
@@ -633,7 +907,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Umumiy",
+            "items": [
+              "Teri va shilliq qavat rangi",
+              "Inyeksiya izi, yot hid",
+              "Dog‘lar, qotish"
+            ]
+          },
+          {
+            "title": "O‘yuvchi zahar",
+            "items": [
+              "Og‘iz atrofida kimyoviy kuyish oqmalari"
+            ]
+          },
+          {
+            "title": "Funksional zahar",
+            "items": [
+              "Xos o‘zgarish bo‘lmasligi mumkin"
+            ]
+          }
+        ],
+        "caption": "Murda tekshiruvi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Xos o‘zgarish bo‘lmasa, zaharlanishni qanday isbotlaymiz? Doskada: «bor / yo‘q» belgilar. Tipik xato: morfologik o‘zgarish yo‘qligini zaharlanish yo‘q degan xulosa deb olish."
     },
     {
@@ -668,31 +967,43 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Murda dog‘i rangi va zahar",
-        "nodes": [],
-        "header": [
-          "Dog‘ rangi",
-          "Zahar guruhi"
+        "kind": "tree",
+        "root": "Murda belgilari → taxmin",
+        "children": [
+          {
+            "label": "Pushti dog‘lar",
+            "items": [
+              "Is gazi"
+            ]
+          },
+          {
+            "label": "Olcha rang",
+            "items": [
+              "Sianidlar",
+              "Achchiq bodom hidi"
+            ]
+          },
+          {
+            "label": "Jigarrang-qo‘ng‘ir",
+            "items": [
+              "Methemoglobin hosil qiluvchi"
+            ]
+          },
+          {
+            "label": "Sarg‘ish",
+            "items": [
+              "Gemoliz chaqiruvchi"
+            ]
+          },
+          {
+            "label": "Qotish",
+            "items": [
+              "Tez: strixnin",
+              "Sust: xloral gidrat, kurare"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Pushti",
-            "Is gazi"
-          ],
-          [
-            "Yorqin olcha rang",
-            "Sianidlar"
-          ],
-          [
-            "Jigarrang-qo‘ng‘ir",
-            "Methemoglobin hosil qiluvchilar"
-          ],
-          [
-            "Sarg‘ish",
-            "Gemoliz chaqiruvchilar"
-          ]
-        ]
+        "caption": "Murda belgilari bo‘yicha taxmin"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Hidga asoslanib xulosa qilish mumkinmi? Doskada: rang — zahar juftliklari. Tipik xato: belgini yagona isbot deb olish; tasdiq laboratoriyada."
     },
@@ -727,7 +1038,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Laboratoriya tekshiruvlari",
+        "children": [
+          {
+            "label": "Turlari",
+            "items": [
+              "Gistologik, sud-kimyoviy",
+              "Biokimyoviy, farmakologik",
+              "Botanik va b."
+            ]
+          },
+          {
+            "label": "Asosiysi",
+            "items": [
+              "Sud-kimyoviy (toksikologik)",
+              "Sifat va miqdoriy"
+            ]
+          },
+          {
+            "label": "Ahamiyati",
+            "items": [
+              "Xulosa ishonchliligini belgilaydi"
+            ]
+          }
+        ],
+        "caption": "Laboratoriya tekshiruvlari"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Nima uchun miqdoriy tahlil zarur? Doskada: laboratoriya turlari ro‘yxati. Tipik xato: faqat sifat tahlilini yetarli deb hisoblash."
     },
     {
@@ -761,7 +1099,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Zahar ma’lum",
+            "text": "Uch nuqta: kirgan, ta’sir etgan, chiqqan joy"
+          },
+          {
+            "title": "Og‘iz orqali",
+            "text": "Oshqozon massasi, jigar bo‘lagi"
+          },
+          {
+            "title": "Siydik",
+            "text": "Butun buyrak va siydik"
+          },
+          {
+            "title": "Zahar noma’lum",
+            "text": "Miya 1/3, o‘pka 1/4, jigar 1/3"
+          },
+          {
+            "title": "Qo‘shimcha",
+            "text": "Ichak va 100–200 ml qon"
+          }
+        ],
+        "caption": "Namunalarni olish"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega qon va ichki a’zolar alohida idishlarga solinadi? Doskada: «kirish — ta’sir — chiqish». Tipik xato: faqat oshqozon ichidagi massani yuborish."
     },
     {
@@ -795,7 +1158,16 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "cycle",
+        "nodes": [
+          "Kirish",
+          "Taqsimlanish",
+          "Metabolizm",
+          "Chiqarilish"
+        ],
+        "caption": "Toksikokinetika bosqichlari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Alkogol konsentratsiyasi qonda qanday o‘zgaradi? Doskada: «kirish — taqsimlanish — chiqish». Tipik xato: toksikokinetikani toksikodinamika bilan aralashtirish."
     },
     {
@@ -885,7 +1257,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Birlamchi toksik",
+            "text": "Zaharning dastlabki ta’siri"
+          },
+          {
+            "title": "Keyingi toksik",
+            "text": "Keyingi o‘zgarishlar"
+          },
+          {
+            "title": "Metatoksik",
+            "text": "Kechki ta’sir"
+          },
+          {
+            "title": "Misol",
+            "text": "Sirka kislota: kuyish → gemoliz → gepatit, nefroz"
+          }
+        ],
+        "caption": "Toksikodinamika"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Metatoksik ta’sir qachon paydo bo‘ladi? Doskada: sirka kislotasi misolida 3 bosqich. Tipik xato: birlamchi ta’sirni yagona ta’sir deb olish."
     },
     {
@@ -920,23 +1313,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Mahalliy va rezorbtiv zaharlar",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Xususiyati"
+        "kind": "tree",
+        "root": "Zaharlar tasnifi",
+        "children": [
+          {
+            "label": "Mahalliy",
+            "items": [
+              "Kislota, ishqor, H2O2",
+              "Formaldegid, KMnO4, yod",
+              "Kontakt joyida nekroz"
+            ]
+          },
+          {
+            "label": "Rezorbtiv",
+            "items": [
+              "Qonga so‘riladi",
+              "Destruktiv, qon, funksional"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Mahalliy",
-            "Kontakt joyida nekroz"
-          ],
-          [
-            "Rezorbtiv",
-            "Qonga so‘rilgach ta’sir"
-          ]
-        ]
+        "caption": "Mahalliy va rezorbtiv zaharlar"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Mahalliy zahar umumiy reaksiya keltiradimi? Doskada: ikki guruh jadvali. Tipik xato: guruhlarni mutlaq ajratish."
     },
@@ -972,15 +1368,31 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Rezorbtiv zaharlar",
-        "nodes": [
-          "Destruktiv",
-          "Qon (gemotrop)",
-          "Funksional"
+        "kind": "tree",
+        "root": "Rezorbtiv zaharlar",
+        "children": [
+          {
+            "label": "Destruktiv",
+            "items": [
+              "Simob, qo‘rg‘oshin, rux",
+              "Margimush, fosfor"
+            ]
+          },
+          {
+            "label": "Qon (gemotrop)",
+            "items": [
+              "Gemoglobinotrop",
+              "Gemolitik va b."
+            ]
+          },
+          {
+            "label": "Funksional",
+            "items": [
+              "Nerv tizimi faoliyatini buzadi"
+            ]
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Rezorbtiv zaharlar guruhlari"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Qaysi guruh to‘qima tuzilishini buzadi? Doskada: 3 guruhli sxema. Tipik xato: funksional zaharlarni destruktiv bilan aralashtirish."
     },
@@ -1015,7 +1427,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Funksional zaharlar",
+        "children": [
+          {
+            "label": "MNT falajlovchi",
+            "items": [
+              "Sianidlar",
+              "Fosfororganiklar",
+              "Vodorod sulfid"
+            ]
+          },
+          {
+            "label": "Qo‘zg‘atuvchi",
+            "items": [
+              "Strixnin, kofein",
+              "Amfetamin, kokain"
+            ]
+          },
+          {
+            "label": "So‘ndiruvchi",
+            "items": [
+              "Etil spirti",
+              "Barbituratlar, trankvilizatorlar"
+            ]
+          }
+        ],
+        "caption": "Funksional zaharlar"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega funksional zaharlarda murdada xos o‘zgarish topilmasligi mumkin? Doskada: uch tur. Tipik xato: bu zaharlarni zararsiz deb baholash."
     },
     {
@@ -1049,7 +1489,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Ta’sir turi",
+            "value": "mahalliy"
+          },
+          {
+            "label": "Yo‘li",
+            "value": "og‘iz orqali"
+          },
+          {
+            "label": "Sababi",
+            "value": "xato yoki o‘z joniga"
+          },
+          {
+            "label": "Qotillik",
+            "value": "kamdan-kam"
+          }
+        ],
+        "caption": "O‘yuvchi moddalar"
+      },
       "teacher_notes": "Vaqt: 3 daq. Muhokama: Nega o‘yuvchi moddalar qotillikda kam qo‘llanadi? Doskada: uchta guruh — kislota, ishqor, boshqalar. Tipik xato: o‘yuvchi zaharlarni faqat mahalliy ta’sirli deb hisoblash."
     },
     {
@@ -1083,7 +1544,16 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Erkin H+ ionlari",
+          "To‘qima suvsizlanadi",
+          "Oqsil ivitiladi",
+          "Koagulyatsion (quruq) nekroz"
+        ],
+        "caption": "Kislotalar ta’sir mexanizmi"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Kislota qaysi nekrozni keltiradi va nima uchun? Doskada: koagulyatsion va kolliqvatsion nekrozni solishtiring. Tipik xato: kislota va ishqor nekrozini aralashtirish."
     },
     {
@@ -1118,23 +1588,31 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "O‘lim sabablari muddati bo‘yicha",
-        "nodes": [],
-        "header": [
-          "Muddat",
-          "Sabab"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Klinika",
+            "items": [
+              "Qizilo‘ngach, oshqozonda og‘riq",
+              "Qonli qusuq, kuyish, atsidoz"
+            ]
+          },
+          {
+            "title": "Dastlabki soatlar",
+            "items": [
+              "Shok, asfiksiya",
+              "Ichki qon ketish"
+            ]
+          },
+          {
+            "title": "Kech muddat",
+            "items": [
+              "Pnevmoniya, mediastenit, peritonit",
+              "Jigar va buyrak yetishmovchiligi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Dastlabki soatlar",
-            "Shok, asfiksiya, qon ketish"
-          ],
-          [
-            "Kech muddat",
-            "Pnevmoniya, yetishmovchilik, peritonit"
-          ]
-        ]
+        "caption": "Kislotalar: klinika va o‘lim sabablari"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega erta va kech o‘lim sabablari farq qiladi? Doskada: vaqt chizig‘i. Tipik xato: o‘lim sababini faqat kuyish bilan tushuntirish."
     },
@@ -1170,27 +1648,34 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Oshqozon shilliq qavati rangi",
-        "nodes": [],
-        "header": [
-          "Kislota",
-          "Rang"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Sulfat, nitrat (letal)",
+            "value": "5–10",
+            "unit": "ml"
+          },
+          {
+            "label": "Xlorid (letal)",
+            "value": "15–20",
+            "unit": "ml"
+          },
+          {
+            "label": "Sirka essensiyasi",
+            "value": "20–40",
+            "unit": "ml"
+          },
+          {
+            "label": "Karbol (letal)",
+            "value": "10–30",
+            "unit": "ml"
+          },
+          {
+            "label": "Og‘iz atrofi",
+            "value": "pergamentsimon"
+          }
         ],
-        "rows": [
-          [
-            "Sulfat",
-            "Qo‘ng‘ir-qora"
-          ],
-          [
-            "Nitrat",
-            "Sarg‘ish (ksantoprotein)"
-          ],
-          [
-            "Xlorid",
-            "Qo‘ng‘ir-kulrang"
-          ]
-        ]
+        "caption": "Kislotalarning letal dozalari"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Kislotani rangiga qarab aniqlash mumkinmi? Doskada: letal dozalar jadvali. Tipik xato: letal dozani mutlaq chegara deb hisoblash."
     },
@@ -1225,7 +1710,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Sirka kislotasi",
+            "items": [
+              "Kuchli gemolitik ta’sir",
+              "Gemoglobinuriyali nefroz",
+              "Murdada o‘tkir sirka hidi"
+            ]
+          },
+          {
+            "title": "Fenol",
+            "items": [
+              "Nerv-protoplazmatik zahar",
+              "Koma",
+              "Nafas markazi falaji"
+            ]
+          }
+        ],
+        "caption": "Sirka kislotasi va fenol"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Sirka kislotasining boshqa kislotalardan asosiy farqi nima? Doskada: «mahalliy + gemolitik». Tipik xato: fenolni oddiy kislota sifatida baholash."
     },
     {
@@ -1293,7 +1799,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Ishqorlar",
+        "children": [
+          {
+            "label": "Letal doza",
+            "items": [
+              "KOH, NaOH: 10–15 g",
+              "NH4OH: 25–40 ml"
+            ]
+          },
+          {
+            "label": "Nekroz",
+            "items": [
+              "Kolliqvatsion",
+              "Joy yumshoq, sirpanuvchan"
+            ]
+          },
+          {
+            "label": "Qon",
+            "items": [
+              "Tomir devori yemiriladi",
+              "Qon ivimaydi",
+              "Ishqoriy gematin: qo‘ng‘ir"
+            ]
+          }
+        ],
+        "caption": "Ishqorlar bilan zaharlanish"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Ishqor kislotadan nimasi bilan farq qiladi? Doskada: ikki nekroz turi. Tipik xato: ishqor ta’sirini koagulyatsion nekroz deb yozish."
     },
     {
@@ -1327,7 +1861,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Murdada",
+            "items": [
+              "Og‘iz atrofi oqmalari",
+              "Shilliq qavat kulrang-yashil, shishgan",
+              "Oshqozon devori yumshoq, yirtiladi"
+            ]
+          },
+          {
+            "title": "Ammiak (nashatir)",
+            "items": [
+              "Mahalliy ta’sir kuchsizroq",
+              "Qonga so‘rilib nafas markazini buzadi",
+              "Murdada ammiak hidi"
+            ]
+          }
+        ],
+        "caption": "Ishqorlar va ammiak"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nashatir spirti bilan alkogol nega xavfli birikma? Doskada: ishqor va ammiak belgilari. Tipik xato: ammiakni kaliy gidroksidning o‘zi deb hisoblash."
     },
     {
@@ -1417,7 +1972,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Destruktiv zaharlar",
+        "children": [
+          {
+            "label": "Tarkibi",
+            "items": [
+              "Simob, qo‘rg‘oshin, talliy",
+              "Margimush va birikmalari"
+            ]
+          },
+          {
+            "label": "Mexanizm",
+            "items": [
+              "Sulfgidril guruhlarini bog‘laydi",
+              "Fermentlar inaktivatsiyasi"
+            ]
+          },
+          {
+            "label": "Xususiyat",
+            "items": [
+              "Ko‘pchiligi kumulyatsiyalanadi",
+              "Asosan kasbiy zaharlanish"
+            ]
+          }
+        ],
+        "caption": "Destruktiv zaharlar"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Kumulyatsiya ekspertiza uchun qanday ahamiyatga ega? Doskada: «sulfgidril guruh → ferment». Tipik xato: bu zaharlarni faqat o‘tkir zaharlanishga sabab deb bilish."
     },
     {
@@ -1507,7 +2089,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Qo‘rg‘oshin",
+            "items": [
+              "Tuzlari, tetraetilqo‘rg‘oshin",
+              "Nerv tizimi zararlanishi kuchli",
+              "Alahsirash, talvasa, falaj"
+            ]
+          },
+          {
+            "title": "Talliy",
+            "items": [
+              "Tuzlari osh tuziga o‘xshaydi",
+              "Gastroenterit, ataksiya",
+              "Soch to‘kilishi, polineyropatiya"
+            ]
+          }
+        ],
+        "caption": "Qo‘rg‘oshin va talliy"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Talliy osh tuziga o‘xshashligi qanday xavf tug‘diradi? Doskada: simob va qo‘rg‘oshin farqi. Tipik xato: qo‘rg‘oshin zaharlanishini simob zaharlanishi kabi baholash."
     },
     {
@@ -1568,11 +2171,11 @@
       "question": "Zahar tushunchasi haqida qaysi ibora to‘g‘ri?",
       "options": [
         "Mutlaq zahar mavjud",
-        "Zahar nisbiy tushuncha; moddani zaharga doza aylantiradi",
+        "Zahar doza bilan bog‘liq emas",
         "Zahar faqat sanoat kimyoviy moddasi",
-        "Zahar doza bilan bog‘liq emas"
+        "Zahar nisbiy tushuncha; moddani zaharga doza aylantiradi"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Zahar nisbiy tushuncha; Paratselsga ko‘ra moddani doriga yoki zaharga faqat doza aylantiradi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1584,11 +2187,11 @@
       "question": "Ekspertiza ma’lumotlariga ko‘ra zaharlanishning qaysi turi eng ko‘p uchraydi?",
       "options": [
         "Qotillik",
-        "Baxtsiz hodisa",
+        "Davlat tomonidan jazolash",
         "O‘z-o‘zini o‘ldirish",
-        "Davlat tomonidan jazolash"
+        "Baxtsiz hodisa"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Aksariyat holatlarni baxtsiz hodisalar tashkil etadi; keyingi o‘rinda o‘z-o‘zini o‘ldirish, qotillik kamdan-kam.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1600,11 +2203,11 @@
       "question": "Zaharlanish vujudga kelishida ahamiyatli bo‘lgan to‘rt guruh omil qaysilar?",
       "options": [
         "Doza, vaqt, joy, shaxs",
-        "Zaharli modda, organizm, kirish yo‘li, tashqi sharoit",
+        "Yosh, jins, kasb, millat",
         "Zaharli modda, rang, hid, ta’m",
-        "Yosh, jins, kasb, millat"
+        "Zaharli modda, organizm, kirish yo‘li, tashqi sharoit"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Manbada: zaharli modda, organizm, zaharning kirish yo‘li va ta’sir vaqtidagi tashqi shart-sharoit.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1631,12 +2234,12 @@
     {
       "question": "Zaharlanishning sud-tibbiy diagnostikasi nechta bosqichda to‘planadigan dalillarga asoslanadi?",
       "options": [
-        "Ikkita",
         "Uchta",
+        "Ikkita",
         "To‘rtta",
         "Beshta"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Uch bosqich: hodisa joyi va hujjatlar, murda tekshiruvi, laboratoriya tekshiruvlari.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1648,11 +2251,11 @@
       "question": "Yorqin olcha rangli murda dog‘lari qaysi zaharlanishga xos?",
       "options": [
         "Is gazi",
-        "Sianidlar",
         "Methemoglobin hosil qiluvchilar",
+        "Sianidlar",
         "Gemoliz chaqiruvchilar"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Sianidlarda yorqin olcha rang; is gazida pushti, methemoglobin hosil qiluvchilarda jigarrang.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1664,11 +2267,11 @@
       "question": "Toksikologik namunalar «uch nuqta» qoidasi bo‘yicha qaysi joylardan olinadi?",
       "options": [
         "Boshdan, tanadan, oyoqdan",
-        "Zahar kirgan, ta’sir etgan va chiqqan joylardan",
+        "Faqat qondan",
         "Faqat oshqozondan",
-        "Faqat qondan"
+        "Zahar kirgan, ta’sir etgan va chiqqan joylardan"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Namunalar zahar kirgan, asosan ta’sir etgan va organizmdan chiqqan joylardan olinadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1695,12 +2298,12 @@
     {
       "question": "Kislotalar bilan zaharlanganda qanday nekroz vujudga keladi?",
       "options": [
-        "Kolliqvatsion",
         "Koagulyatsion (quruq)",
+        "Kolliqvatsion",
         "Yog‘li nekroz",
         "Nekroz bo‘lmaydi"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Erkin vodorod ionlari to‘qimani suvsizlantirib, oqsilni ivitadi, quruq nekroz hosil bo‘ladi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1722,6 +2325,166 @@
         "author": "G‘iyosov Z.A.",
         "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
         "page": "146"
+      }
+    },
+    {
+      "question": "Paratselsning fikriga ko‘ra moddani doriga yoki zaharga nima aylantiradi?",
+      "options": [
+        "Rangi",
+        "Hidi",
+        "Doza",
+        "Agregat holati"
+      ],
+      "correct_index": 2,
+      "explanation": "Paratsels: moddani doriga yoki zaharga faqat doza aylantiradi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "132"
+      }
+    },
+    {
+      "question": "«Uch nuqta» qoidasi bo‘yicha toksikologik tekshiruv uchun namuna qachon va qayerdan olinadi?",
+      "options": [
+        "Zahar noma’lum bo‘lsa: faqat oshqozon ichidagi massadan",
+        "Zahar ma’lum bo‘lsa: faqat qon va siydikdan",
+        "Zahar ma’lum bo‘lsa: faqat kirgan joyidan",
+        "Zahar ma’lum bo‘lsa: kirgan, ta’sir etgan va chiqqan joylardan"
+      ],
+      "correct_index": 3,
+      "explanation": "Zahar ma’lum bo‘lsa, obyektlar «uch nuqta» qoidasi bo‘yicha olinadi: zahar kirgan, asosan ta’sir etgan va organizmdan chiqqan joylardan.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "136"
+      }
+    },
+    {
+      "question": "Manba noma’lum bo‘lsa, toksikologik tekshiruv uchun qancha qon olinadi?",
+      "options": [
+        "5 ml",
+        "100–200 ml",
+        "1 litr",
+        "Qon olinmaydi"
+      ],
+      "correct_index": 1,
+      "explanation": "Manba noma’lum bo‘lsa miyaning 1/3, o‘pkaning 1/4, jigarning 1/3 qismi, ichak va 100–200 ml qon olinadi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "136"
+      }
+    },
+    {
+      "question": "Toksikokinetika nimani o‘z ichiga oladi?",
+      "options": [
+        "Faqat zaharning chiqarilishi",
+        "Kirishi, taqsimlanishi, metabolizmi va chiqarilishi",
+        "Faqat jigar funksiyasi",
+        "Faqat zahar tuzilishi"
+      ],
+      "correct_index": 1,
+      "explanation": "Toksikokinetika — zaharning kirishi, taqsimlanishi, metabolizmi va chiqarilishi jarayonlari majmui.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "136"
+      }
+    },
+    {
+      "question": "Qaysi spirt metabolizmida formaldegid hosil bo‘ladi?",
+      "options": [
+        "Etil spirti",
+        "Metil spirti",
+        "Etilenglikol",
+        "Izopropil spirti"
+      ],
+      "correct_index": 1,
+      "explanation": "Metanol, etanol, etilenglikol oksidlanganda ancha kuchli toksik moddalar hosil bo‘ladi: metil spirtidan formaldegid.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "137"
+      }
+    },
+    {
+      "question": "Mahalliy ta’sir etuvchi zaharlar kontakt joyida nima chaqiradi?",
+      "options": [
+        "Nekroz",
+        "Falaj",
+        "Gemoliz",
+        "Koma"
+      ],
+      "correct_index": 0,
+      "explanation": "Mahalliy zaharlar (kislota, ishqor, H2O2, formaldegid, KMnO4, yod) kontakt joyida nekroz chaqiradi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "138"
+      }
+    },
+    {
+      "question": "Kislotalardan zaharlanganda dastlabki soatlarda o‘lim sababi qaysi?",
+      "options": [
+        "Pnevmoniya",
+        "Shok, asfiksiya va ichki qon ketish",
+        "Peritonit",
+        "Jigar yetishmovchiligi"
+      ],
+      "correct_index": 1,
+      "explanation": "Dastlabki soatlarda o‘lim sababi — shok, asfiksiya va ichki qon ketish; kech muddatda pnevmoniya, yetishmovchilik, peritonit.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "141"
+      }
+    },
+    {
+      "question": "Ishqorlar to‘qimada qanday nekroz chaqiradi?",
+      "options": [
+        "Koagulyatsion (quruq)",
+        "Kolliqvatsion",
+        "Yog‘li",
+        "Gangrenoz"
+      ],
+      "correct_index": 1,
+      "explanation": "Ishqorlar oqsillarni suyultiradi (kolliqvatsion nekroz) va yog‘larni sovunlaydi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "143"
+      }
+    },
+    {
+      "question": "Qo‘rg‘oshin bilan zaharlanishda qaysi tizim zararlanishi jiddiyroq?",
+      "options": [
+        "Ichak",
+        "Buyrak",
+        "Nerv tizimi",
+        "Teri"
+      ],
+      "correct_index": 2,
+      "explanation": "Qo‘rg‘oshinda ichak va buyrak zararlanishi kuchsiz, nerv tizimi zararlanishi (alahsirash, talvasa, falaj) jiddiyroq.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "147"
+      }
+    },
+    {
+      "question": "Margimush bilan zaharlanishning oshqozon-ichak tipida o‘lim qachon yuz beradi?",
+      "options": [
+        "1–2-kunda",
+        "1 oydan keyin",
+        "Darhol",
+        "Bir yildan keyin"
+      ],
+      "correct_index": 0,
+      "explanation": "Oshqozon-ichak tipi: metall ta’mi, qusish, vabosimon ich ketishi; o‘lim 1–2-kunda.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "148"
       }
     }
   ],

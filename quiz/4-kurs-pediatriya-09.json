@@ -1,0 +1,586 @@
+{
+ "topic_id": "4-kurs-pediatriya-09",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Ma’ruza: Mexanik asfiksiyaning sud-tibbiy ekspertizasi. Sud-tibbiy toksikologiyasi.",
+  "ru": "Ma’ruza: Mexanik asfiksiyaning sud-tibbiy ekspertizasi. Sud-tibbiy toksikologiyasi.",
+  "en": "Ma’ruza: Mexanik asfiksiyaning sud-tibbiy ekspertizasi. Sud-tibbiy toksikologiyasi."
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "4-kurs-pediatriya-09-q01",
+   "question_i18n": {
+    "uz": "Asfiksiya so‘zining ma’nosi nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Nafas olishning tezlashishi va chuqurlashishi",
+     "Pulsning yo‘qligi (a — inkor, sphygmos — puls)",
+     "Qonning ivish xususiyatining oshishi",
+     "Yurak urishining sekinlashuvi va bosimning pasayishi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Asfiksiya grek tilida tub ma’noda pulsning yo‘qligini anglatadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "104"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-09-q02",
+   "question_i18n": {
+    "uz": "Sud-tibbiy tasnifga ko‘ra mexanik asfiksiyaning uch turi qaysilar?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Osilish, cho‘kish va bo‘g‘ishdan iborat uch tur",
+     "Qisilishdan, yopilishdan, cheklangan muhitdagi",
+     "Yashinsimon, o‘tkir va surunkali uch tur",
+     "Respirator, gemik va sirkulyator uch tur"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Mexanik asfiksiya: qisilishdan, yopilishdan va cheklangan muhitdagi asfiksiya."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "105"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-09-q03",
+   "question_i18n": {
+    "uz": "Asfiktik davrning qaysi bosqichida hush yo‘qoladi (40–60 soniyada)?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Inspirator hansirash",
+     "Ekspirator hansirash",
+     "Terminal nafas",
+     "Qisqa to‘xtash"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Inspirator hansirashda asfiksiya boshlanishidan 40–60 soniya o‘tgach hush yo‘qoladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "106"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-09-q04",
+   "question_i18n": {
+    "uz": "Visseral plevra va epikard ostidagi 2–3 mm li qon quyilishlar qanday ataladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Tarde dog‘lari",
+     "Paltauf dog‘lari",
+     "Sabinskiy belgisi",
+     "Kasper belgisi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Tarde dog‘lari inspirator hansirashda bosimning keskin ko‘tarilishidan hosil bo‘ladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "111"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-09-q05",
+   "question_i18n": {
+    "uz": "Osilish asfiksiyadan o‘lim holatlarining qanchasini tashkil etadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "10–15%",
+     "30–35%",
+     "65–70%",
+     "90–95%"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Osilish eng ko‘p uchraydigan tur — 65–70%."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "111"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-09-q06",
+   "question_i18n": {
+    "uz": "Yumshoq sirtmoq ostida tashqi egat ko‘rinmasa, ichki tekshiruvda nima topiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Epikard ostidagi mayda qon quyilishlar — Tarde dog‘lari",
+     "Oqimtir yo‘lka — «mis sim belgisi» (Kasper)",
+     "Kam qonli, qisqargan taloq — Sabinskiy belgisi",
+     "Yuz va bo‘yindagi qon quyilishlar — Olive-Danjer belgisi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Yumshoq to‘qimalarda egat proyeksiyasida oqimtir yo‘lka — Kasper belgisi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "115"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-09-q07",
+   "question_i18n": {
+    "uz": "Quyidagilardan qaysi biri sirtmoq bilan bo‘g‘ishga xos (osilishdan farqli)?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qiyshiq-vertikal yo‘nalishdagi, bo‘yin yuqorisidagi egat",
+     "Valxer belgisi — to‘sh-o‘mrov-so‘rg‘ichsimon mushak pastki uchida qon quyilish",
+     "Amyuss belgisi — uyqu arteriyasi intimasining ko‘ndalang yorilishi",
+     "Gorizontal egat, odatda qalqonsimon tog‘ay sathida"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Bo‘g‘ishda egat gorizontal; cho‘zilish belgilari (Amyuss, Valxer, Simon) bo‘lmaydi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "117"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-09-q08",
+   "question_i18n": {
+    "uz": "Chin cho‘kishning xos belgisi qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Krushevskiy belgisi — turg‘un mayda pufakli oq ko‘pik",
+     "Havo emboliyasi belgilari — tomirlarda havo pufakchalari",
+     "Limfogemiya — limfa tomirlarining qonga to‘lishi",
+     "Sunsov sinamasi musbat — suv o‘pkada oshqozon-ichakda yo‘q"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Chin cho‘kishda og‘iz-burun atrofida mayda pufakli turg‘un oq ko‘pik (Krushevskiy)."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "122"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-09-q09",
+   "question_i18n": {
+    "uz": "Cho‘kishning hayotiyligini aniqlashda qaysi tekshiruv o‘ta ahamiyatli?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Diatom planktoniga tekshiruv",
+     "Faqat sochni tekshirish",
+     "Faqat tashqi ko‘rik",
+     "Qon guruhi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Parenximatoz a’zolar va iligda diatom planktonining topilishi cho‘kishning hayotiyligidan dalolat beradi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "125"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-09-q10",
+   "question_i18n": {
+    "uz": "Simpson bo‘yicha postmortem dori konsentratsiyasi haqida qaysi fikr to‘g‘ri?"
+   },
+   "options_i18n": {
+    "uz": [
+     "U tirik davrdagi konsentratsiya bilan taxminan teng bo‘ladi",
+     "Doimo tirik davrdagidan past bo‘ladi, shu sabab me’yor bilan solishtiriladi",
+     "Faqat o‘ng yurak qonida tirik davrdagidan yuqori bo‘ladi",
+     "Deyarli har doim tirik davrdagidan yuqori, shuning uchun terapevtik me’yor bilan solishtirib bo‘lmaydi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Postmortem konsentratsiya deyarli har doim ante-mortem davrdagidan yuqori; «terapevtik konsentratsiya» murdaga tegishli emas."
+   },
+   "source": {
+    "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+    "title": "Simpson's Forensic Medicine, 13th ed.",
+    "page": "184"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-09-q11",
+   "question_i18n": {
+    "uz": "Markaziy asab tizimida to‘qima nafasi qancha vaqt to‘xtasa, qaytmas o‘zgarishlar boshlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "5–10 soniya",
+     "5–10 daqiqa",
+     "1 soat",
+     "6 soat"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Markaziy asab tizimida to‘qima nafasi to‘xtashi 5–10 daqiqada qaytmas o‘zgarishlarga olib keladi; mushak va biriktiruvchi to‘qimada bu muddat uzoqroq."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "103"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-09-q12",
+   "question_i18n": {
+    "uz": "Asfiktik davrning qaysi bosqichida klonik talvasalar, siydik va axlat ajralishi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Inspirator hansirash",
+     "Terminal nafas",
+     "Qisqa to‘xtash",
+     "Ekspirator hansirash"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Ekspirator hansirashda nafas chiqarish kuchayadi, klonik talvasalar, siydik, maniy va axlat ajralishi mumkin."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "106"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-09-q13",
+   "question_i18n": {
+    "uz": "Taloqning kamqon va qisqargan bo‘lishi (Sabinskiy belgisi) nima bilan izohlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Preasfiktik davrda depodagi qonning chiqarilishi bilan",
+     "Taloq yorilishi va qon ketishi bilan",
+     "Qonning ivishi va tromb hosil bo‘lishi bilan",
+     "Jigar yetishmovchiligi va portal gipertenziya bilan"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Kamqon, qisqargan taloq (Sabinskiy belgisi) preasfiktik davrda depolardagi qonning chiqarilishidan kelib chiqadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "111"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-09-q14",
+   "question_i18n": {
+    "uz": "Egat sohasidan olingan teri mikroskopiyasida qon aylanishi buzilishi qaysi belgi bilan ataladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kasyanov belgisi",
+     "Valxer belgisi",
+     "Bokarius sinamasi",
+     "Neyding belgisi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Qon aylanishi buzilishi — Neyding belgisi, reaktiv yallig‘lanish — Kasyanov belgisi; ular egat hayotiy yetkazilganini tasdiqlaydi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "117"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-09-q15",
+   "question_i18n": {
+    "uz": "Qorin bo‘shlig‘ida taxminan 100 ml suyuqlik topilishi cho‘kishning qaysi belgisi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Paltauf belgisi",
+     "Fegerlund belgisi",
+     "Moro belgisi",
+     "Kasper belgisi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Qorin bo‘shlig‘ida 100 ml atrofida suyuqlik — Moro belgisi; oshqozonda 300 ml gacha suv — Fegerlund belgisi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "122-123"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-09-q16",
+   "question_i18n": {
+    "uz": "Oshqozonda 300 ml gacha suv aniqlanishi cho‘kishning qaysi belgisi hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Moro belgisi",
+     "Sabinskiy belgisi",
+     "Krushevskiy belgisi",
+     "Fegerlund belgisi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Oshqozonda 300 ml gacha suv aniqlanishi — Fegerlund belgisi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "123"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-09-q17",
+   "question_i18n": {
+    "uz": "Sho‘r suvda cho‘kishda qaysi o‘zgarish kuzatilmaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qonning quyuqlashishi",
+     "Gipovolemiya",
+     "Rasskazov-Lukomskiy-Paltauf dog‘lari",
+     "Qon suyuqligining alveolaga o‘tishi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Sho‘r suvda osmotik bosim yuqori: qon quyuqlashadi, gipovolemiya bo‘ladi, Rasskazov-Lukomskiy-Paltauf dog‘lari bo‘lmaydi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "123"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-09-q18",
+   "question_i18n": {
+    "uz": "Yuz, bo‘yin va ko‘krak yuqorisidagi qon quyilishlar («ekximotik niqob», Olive-Danjer) qaysi asfiksiyaga xos?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Osilishga",
+     "Chin cho‘kishga",
+     "Kompression asfiksiyaga",
+     "Obturatsion asfiksiyaga"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Ko‘krak va qorin qisilganda yuz, bo‘yin, ko‘krak yuqorisida «ekximotik niqob» (Olive-Danjer) va o‘pkaning «karmin shishishi» kuzatiladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "129"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-09-q19",
+   "question_i18n": {
+    "uz": "Havoda karbonat angidrid miqdori qancha bo‘lganda bolalar uchun hayotga xavf tug‘iladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,5%",
+     "2,0–2,5%",
+     "8–10%",
+     "20–25%"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Cheklangan muhitda havoda 0,5% da nafas tezlashadi, kattalarda 8–10% da o‘lim, bolalarda 2,0–2,5% hayot uchun xavfli."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "130"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-pediatriya-09-q20",
+   "question_i18n": {
+    "uz": "Egat bo‘yinning yuqori qismida, til osti suyagidan baland, qiyshiq-vertikal yo‘nalishda. Bu qaysi holatga xos?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Sirtmoq bilan bo‘g‘ishga",
+     "Qo‘l bilan bo‘g‘ishga",
+     "Tipik osilishga",
+     "Pozitsion asfiksiyaga"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Tipik osilishda egat bo‘yinning yuqori qismida, til osti suyagidan baland, qiyshiq-vertikal yo‘nalishda bo‘ladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "114-115"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "G‘iyosov Z.A.",
+   "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti"
+  },
+  {
+   "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+   "title": "Simpson's Forensic Medicine, 13th ed."
+  }
+ ]
+}

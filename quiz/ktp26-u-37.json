@@ -1,0 +1,586 @@
+{
+ "topic_id": "ktp26-u-37",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Travmatik kasallik: tushunchasi, davrlari, asosiy komponentlari",
+  "ru": "Travmatik kasallik: tushunchasi, davrlari, asosiy komponentlari",
+  "en": "Travmatik kasallik: tushunchasi, davrlari, asosiy komponentlari"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "ktp26-u-37-q01",
+   "question_i18n": {
+    "uz": "Bemor kichik to‘qima jarohati oldi. Jarohatga javoban har doim qaysi reaksiya kuzatiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Immun falaj va ikkilamchi infeksiya rivojlanishi",
+     "Jarohat sohasida mahalliy yallig‘lanish javobi",
+     "Butun organizmni qamragan tizimli yallig‘lanish",
+     "Sepsis bilan kechuvchi ko‘p a’zo disfunksiyasi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Har qanday to‘qima shikastida mahalliy yallig‘lanish javobi doim bo‘ladi. Tizimli javob faqat og‘ir yoki ko‘p jarohatda qo‘shiladi."
+   },
+   "source": {
+    "author": "Brøchner et al.",
+    "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+    "page": "PMID 19754938"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-37-q02",
+   "question_i18n": {
+    "uz": "Asoratsiz travmada tizimli yallig‘lanish javobi qanday xususiyatga ega?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Doimiy, oldindan aytib bo‘lmaydigan, faqat yallig‘lantiruvchi",
+     "Faqat yallig‘lanishga qarshi mediatorlar hisobiga kechadi",
+     "Faqat og‘ir jarohatda chiqadi va doim zararli bo‘ladi",
+     "Vaqtinchalik, bashoratli, mediatorlar o‘rtasida muvozanatli"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Asoratsiz jarohatda javob vaqtinchalik, bashorat qilinadigan va yallig‘lantiruvchi hamda yallig‘lanishga qarshi mediatorlar orasida muvozanatli bo‘ladi. U to‘qima tiklanishi uchun zarur."
+   },
+   "source": {
+    "author": "Brøchner et al.",
+    "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+    "page": "PMID 19754938"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-37-q03",
+   "question_i18n": {
+    "uz": "Og‘ir travma olgan bemorga zudlik bilan zarur shikastni nazorat qilish jarrohligi (damage-control) o‘tkazildi. Ko‘p zarba nazariyasida bu jarrohlik nima hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Immunitetga ikkinchi zarba",
+     "Immunitetga birinchi zarba",
+     "Immunitetga uchinchi zarba",
+     "Immunitetga zarba bo‘lmaydi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Birinchi zarba travmaning o‘zi, ikkinchisi zarur damage-control jarrohligi. Takroriy zarbalar immun tizimni charchatib, infeksiya va sepsis xavfini oshirishi mumkin."
+   },
+   "source": {
+    "author": "Brøchner et al.",
+    "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+    "page": "PMID 19754938"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-37-q04",
+   "question_i18n": {
+    "uz": "Bemor reanimatsiyada barqarorlashtirilmoqda, yakuniy tiklovchi jarrohlik kechiktirilmoqda. Qaysi uchlik xavfdan saqlanish ko‘zda tutiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Giperglikemiya, leykotsitoz va taxikardiya",
+     "Gipoksiya, giperkapniya va gipovolemiya",
+     "Gipotermiya, atsidoz va koagulopatiya",
+     "Vazokonstriksiya, oliguriya va gipernatriemiya"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Yakuniy jarrohlik gipotermiya, atsidoz va koagulopatiyadan iborat zararli uchlikdan hamda immun tizimga yana bir zarbadan saqlanish uchun kechiktiriladi."
+   },
+   "source": {
+    "author": "Brøchner et al.",
+    "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+    "page": "PMID 19754938"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-37-q05",
+   "question_i18n": {
+    "uz": "Travmadan 10 kun o‘tgach bemorda dastlabki yallig‘lanish pasaydi, ammo kasalxona pnevmoniyasi rivojlandi. Bu qaysi davrga mos keladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Dastlabki shok fazasi va periferik vazokonstriksiya",
+     "Birinchi soatlardagi gemorragik shok bosqichi",
+     "Kompensator yallig‘lanishga qarshi javob va immunosupressiya",
+     "Erta steril SIRS va undan kelgan a’zo yetishmovchiligi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Erta bosqichda SIRS a’zo yetishmovchiligiga olib keladi. Travmadan taxminan 5-15 kun o‘tgach CARS immunosupressiyani keltirib chiqaradi va nozokomial infeksiyaga moyillikni oshiradi."
+   },
+   "source": {
+    "author": "Vourc'h et al.",
+    "title": "Trauma-Induced Damage-Associated Molecular Patterns-Mediated Remote Organ Injury and Immunosuppression in the Acutely Ill Patient, Frontiers in Immunology",
+    "page": "PMID 29963048"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-37-q06",
+   "question_i18n": {
+    "uz": "Qon yo‘qotgan, hali infuziya olmagan bemorda shok fazasining qaysi gemodinamik belgisi kutiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Perifer vazokonstriksiya, qonning markaziy a’zolarga ko‘chishi",
+     "Perifer vazodilatatsiya, mushak va jarohatga qon oqimi ortishi",
+     "Kislorod iste’moli va CO2 hosil bo‘lishining kuchli ortishi",
+     "Natriy va suv chiqib ketishi, qon bosimining ko‘tarilishi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Shok fazasida gemorragiya gipovolemiya chaqiradi. Bunda perifer vazokonstriksiya, natriy xlorid va suvning ushlanishi hamda qonning periferiyadan markaziy hayotiy a’zolarga ko‘chishi kuzatiladi. Vazodilatatsiya va oqim ortishi esa suyuqlik bilan reanimatsiyadan keyingi oqim (flow) fazasiga xos."
+   },
+   "source": {
+    "author": "Brøchner et al.",
+    "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+    "page": "PMID 19754938"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-37-q07",
+   "question_i18n": {
+    "uz": "Og‘ir travmadan 5 kun o‘tgach bemorda taxikardiya, tezlashgan nafas, leykotsitoz va isitma saqlanmoqda. Qanday xulosa to‘g‘ri?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bu normal oqim fazasi, faqat kuzatishning o‘zi yetarli",
+     "Gormonal davo natijani yaxshilashi isbotlangan, uni boshlash kerak",
+     "Shok fazasi qaytadan boshlangan, vazokonstriksiya kutiladi",
+     "Asoratlar, masalan infeksiya, bo‘lishi mumkinligi shubha qilinadi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Asoratsiz travmada oqim fazasi belgilari bir necha kun davom etadi. Taxikardiya, tezlashgan nafas, leykotsitoz va harorat 4-5 kun ichida normallashmasa, asoratlar shubha qilinadi. Odamlarda gormonal davo natijani yaxshilashi isbotlanmagan."
+   },
+   "source": {
+    "author": "Brøchner et al.",
+    "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+    "page": "PMID 19754938"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-37-q08",
+   "question_i18n": {
+    "uz": "Shifokor rekonstruktiv operatsiyadan oldin neytrofillar apoptozi kamayishining ham tiklanishini kutmoqchi. Taxminan qancha kutiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Taxminan 1 hafta, MHCII ekspressiyasi tiklanishi bilan",
+     "Taxminan 2 hafta, oksidlovchi portlash tiklanishi bilan",
+     "Taxminan 3 hafta, neytrofil apoptozi tiklanishi bilan",
+     "Taxminan 6 soat, oksidlovchi portlash cho‘qqisi bilan"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Asoratsiz travmada monotsitlarda MHCII taxminan 1 haftada normallashadi. Neytrofillar apoptozining kamayishi esa 3 hafta davom etadi. Immun tizim normallashishi talab qilinsa, operatsiya 3 haftaga qoldirilardi. Bu yondashuv randomizatsiyalangan sinovlarga asoslanmagan."
+   },
+   "source": {
+    "author": "Brøchner et al.",
+    "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+    "page": "PMID 19754938"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-37-q09",
+   "question_i18n": {
+    "uz": "Travmadan keyingi o‘limning ikkinchi cho‘qqisiga (dastlabki 24 soat) eng katta hissa qo‘shadigan holat qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ventilyator bilan bog‘liq pnevmoniya rivojlanishi",
+     "Ko‘p a’zolar disfunksiyasi sindromi (MODS)",
+     "Kech rivojlangan sepsis va infeksiyalar",
+     "Gemorragik shok va qon yo‘qotish"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Travmada o‘lim uch cho‘qqiga ega: birinchi soat ichida, keyingi 24 soat ichida va kunlar-haftalardan so‘ng. Ikkinchi cho‘qqida gemorragik shok yuqori o‘limga sezilarli hissa qo‘shadi. Uchinchi cho‘qqida sabab ko‘pincha SIRS yoki MODS bo‘ladi."
+   },
+   "source": {
+    "author": "Brøchner et al.",
+    "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+    "page": "PMID 19754938"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-37-q10",
+   "question_i18n": {
+    "uz": "Dastlabki SIRS (tizimli yallig‘lanish javobi sindromi)dan keyin CARS (kompensator yallig‘lanishga qarshi javob sindromi) travmadan qancha vaqt o‘tgach rivojlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Travmadan keyingi dastlabki 30 daqiqa ichida",
+     "Travmadan 5-15 kun o‘tgandan keyin",
+     "Travmadan keyingi dastlabki 24 soat ichida",
+     "Faqat travmadan 3 hafta o‘tgandan keyin"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Erta bosqichda yallig‘lanish javobi a’zolar yetishmovchiligiga olib kelishi mumkin. Travmadan 5-15 kun o‘tgach CARS rivojlanib, immunosupressiya va nozokomial infeksiyaga moyillikni oshiradi."
+   },
+   "source": {
+    "author": "Vourc'h et al.",
+    "title": "Trauma-Induced Damage-Associated Molecular Patterns-Mediated Remote Organ Injury and Immunosuppression in the Acutely Ill Patient, Frontiers in Immunology",
+    "page": "PMID 29963048"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-37-q11",
+   "question_i18n": {
+    "uz": "Bemor og‘ir travmadan keyin ikki haftadan ortiq giper metabolik holatda turibdi. Bu holatda nimadan shubhalanish kerak?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Og‘ir SIRS va yashirin infeksiya yoki sepsis",
+     "Asoratsiz tuzalishning odatiy davom etishi",
+     "Faqat gormonal davo zarurligi",
+     "Moddalar almashinuvining me’yoriga qaytishi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Asoratsiz og‘ir travmada giper metabolik faza odatda bir haftadan kam davom etadi. Agar u 1-2 haftadan oshsa, og‘ir sistemali yallig‘lanish javobi (SIRS) rivojlangan bo‘lishi mumkin. Shunda yashirin infeksiya va sepsisni ham o‘ylash kerak."
+   },
+   "source": {
+    "author": "Brøchner et al.",
+    "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+    "page": "PMID 19754938"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-37-q12",
+   "question_i18n": {
+    "uz": "Reperfuziya shikastida neytrofillar uzoq a’zolardan qaysilarda ko‘proq to‘planadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Buyrak, jigar va o‘pka",
+     "Taloq, qalqonsimon bez va oshqozon osti bezi",
+     "Miya, ko‘z va teri",
+     "Yurak, suyak iligi va limfa tugunlari"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Reperfuziya neytrofillarning zararlangan to‘qimada ham, uzoq a’zolarda ham (buyrak, jigar, o‘pka) to‘planishini chaqiradi; bu a’zolarda neytrofillar va MPO ko‘p topiladi."
+   },
+   "source": {
+    "author": "Brøchner et al.",
+    "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+    "page": "PMID 19754938; DOI 10.1186/1757-7241-17-43 (I/R in relation to trauma)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-37-q13",
+   "question_i18n": {
+    "uz": "Travmadan keyin plazmada bir soat ichida aniqlanadigan va jigarda o‘tkir faza oqsillari (CRP) sintezini qo‘zg‘atadigan sitokin qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "IL-1",
+     "IL-8",
+     "IL-6",
+     "IL-10"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "IL-6 travmadan keyin bir soat ichida plazmada aniqlanadi va jigarda CRP hamda prokaltsitonin sintezini rag‘batlantiradi. IL-1 isitma chaqiradi, IL-8 neytrofillarni shikast joyiga tortadi, IL-10 esa yallig‘lanishga qarshi sitokindir."
+   },
+   "source": {
+    "author": "Brøchner et al.",
+    "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+    "page": "PMID 19754938"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-37-q14",
+   "question_i18n": {
+    "uz": "Travma joyida neytrofil qon tomir devori bo‘ylab dumalab, so‘ng to‘xtab, mustahkam yopishdi. Aynan shu mustahkam yopishishni qaysi molekulalar ta’minlaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Selektinlar, masalan CD62L",
+     "HMGB1 oqsili",
+     "MHCII molekulalari",
+     "Integrinlar, masalan CD11b/CD18"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Neytrofil ko‘chib o‘tishi uch bosqichda kechadi: dumalash, to‘xtash va to‘qimaga o‘tish. Dumalashda selektinlar (CD62L) qatnashadi, mustahkam yopishishni esa integrinlar (CD11b/CD18) ta’minlaydi."
+   },
+   "source": {
+    "author": "Brøchner et al.",
+    "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+    "page": "PMID 19754938"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-37-q15",
+   "question_i18n": {
+    "uz": "Travmadan keyin sitokinlar va o‘tkir faza oqsillarining yuqori darajasi pasaydi, keyin qonda ularning ikkinchi cho‘qqisi aniqlandi. Bu nimani anglatishi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Tiklanish bosqichi tugaganini",
+     "Infeksiya kabi asorat rivojlanganini",
+     "Faqat shikast kuchayganini",
+     "Immunitet to‘liq me’yorlashganini"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Dastlabki yuqori sitokin darajasi asta-sekin me’yorlashadi va yallig‘lanishga qarshi javob bilan muvozanatlanadi. Ikkinchi cho‘qqi aniqlansa, infeksiya kabi asoratdan shubhalanish kerak."
+   },
+   "source": {
+    "author": "Brøchner et al.",
+    "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+    "page": "PMID 19754938"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-37-q16",
+   "question_i18n": {
+    "uz": "2006-yilgi konsensusga ko‘ra, travmada klinik ahamiyatli alarmin qaysi belgi bilan ta’riflanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Travmadan so‘ng darhol ajralib chiqadi",
+     "Travmadan 5–15 kun o‘tgach paydo bo‘ladi",
+     "Plazmadagi miqdori yallig‘lanishga bog‘liq emas",
+     "Faqat patogen mikroblardan hosil bo‘ladi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Konsensusga ko‘ra klinik ahamiyatli alarmin travmadan keyin darhol ajraladi. Uning miqdori travma og‘irligini va yallig‘lanish darajasini aks ettiradi. Mikrob mahsulotlari PAMP deyiladi, alarminlar esa organizmning o‘z molekulalaridir."
+   },
+   "source": {
+    "author": "Vourc'h et al.",
+    "title": "Trauma-Induced Damage-Associated Molecular Patterns-Mediated Remote Organ Injury and Immunosuppression in the Acutely Ill Patient, Frontiers in Immunology",
+    "page": "PMID 29963048; DOI 10.3389/fimmu.2018.01330"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-37-q17",
+   "question_i18n": {
+    "uz": "Travmadan keyin bemor plazmasida yadro DNK va HSP70 (issiqlik zarbi oqsili 70) darajasi yuqori. Monotsitlardagi HLA-DR ifodasi qanday o‘zgaradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ifodasi keskin ortadi",
+     "Ifodasi pasayadi",
+     "Ifodasi deyarli o‘zgarmaydi",
+     "Ifodasi faqat T-hujayrada pasayadi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Timmermans tadqiqotida (166 bemor) yadro DNK va HSP70 darajasi HLA-DR ifodasi bilan teskari bog‘langan. Yadro DNK yuqori bo‘lib HLA-DR yanada pasaygan bemorlarda infeksiya ko‘proq uchragan. Bu DAMPlarning postravmatik immunosupressiyadagi rolini ko‘rsatadi."
+   },
+   "source": {
+    "author": "Vourc'h et al.",
+    "title": "Trauma-Induced Damage-Associated Molecular Patterns-Mediated Remote Organ Injury and Immunosuppression in the Acutely Ill Patient, Frontiers in Immunology",
+    "page": "PMID 29963048; DOI 10.3389/fimmu.2018.01330"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-37-q18",
+   "question_i18n": {
+    "uz": "Og‘ir travmali bemorda gipotermiya, atsidoz va koagulopatiya bor. Birinchi kunda qaysi taktika to‘g‘ri?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Rekonstruktiv jarrohlik darhol o‘tkaziladi",
+     "Jarrohlik cheklanadi, holat barqarorlashtiriladi",
+     "Barcha operatsiyalar uch haftaga qoldiriladi",
+     "Gormonal davo asosiy usul sifatida tanlanadi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Birinchi kuni jarrohlik nazoratli (damage control) bo‘ladi: uzun suyak sinishini stabillash, dekompressiya, debridment. Bu gipotermiya, atsidoz va koagulopatiya uchligini hamda yana bir yallig‘lanish zarbasini oldini oladi. Hayotni saqlovchi aralashuvlar kechiktirilmaydi, gormonal davoning foydasi isbotlanmagan."
+   },
+   "source": {
+    "author": "Brøchner et al.",
+    "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+    "page": "PMID 19754938; DOI 10.1186/1757-7241-17-43"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-37-q19",
+   "question_i18n": {
+    "uz": "Travmadan 8 kun o‘tgach bemorda kasalxona pnevmoniyasi rivojlanib, organ yetishmovchiligi boshlandi. Kech MODS (ko‘p organ disfunksiyasi sindromi) asosiy sababi nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Boshlang‘ich nazoratsiz SIRS",
+     "Faqat gipovolemik shok",
+     "Immunosupressiya tufayli nozokomial infeksiya",
+     "Faqat reperfuziya shikasti"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Erta MODS odatda nazoratsiz SIRS bilan bog‘liq. Kech MODSda esa immunosupressiya tufayli nozokomial infeksiyalar, asosan pnevmoniya, asosiy rol o‘ynaydi. Kompensator yallig‘lanishga qarshi javob (CARS) travmadan 5–15 kun o‘tgach rivojlanadi."
+   },
+   "source": {
+    "author": "Vourc'h et al.",
+    "title": "Trauma-Induced Damage-Associated Molecular Patterns-Mediated Remote Organ Injury and Immunosuppression in the Acutely Ill Patient, Frontiers in Immunology",
+    "page": "PMID 29963048; DOI 10.3389/fimmu.2018.01330"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-37-q20",
+   "question_i18n": {
+    "uz": "Ko‘p travmali bemorga massiv qon quyildi. Gemolizga uchragan eritrotsitlar qaysi molekulani DAMP sifatida qon oqimiga chiqaradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Glyukagon",
+     "Aldosteron",
+     "Kortizol",
+     "Gem (heme)"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Gemolizlangan eritrotsitlar qon oqimiga ko‘p DAMP chiqaradi: gem, HSP70, RBP-4, IL-33, S100 oqsillari va adenozin. Gem TLR4 orqali makrofaglarda inflammasoma hosil bo‘lishini kuchaytiradi. Glyukagon, aldosteron va kortizol esa stress gormonlari bo‘lib, DAMP emas."
+   },
+   "source": {
+    "author": "Vourc'h et al.",
+    "title": "Trauma-Induced Damage-Associated Molecular Patterns-Mediated Remote Organ Injury and Immunosuppression in the Acutely Ill Patient, Frontiers in Immunology",
+    "page": "PMID 29963048; DOI 10.3389/fimmu.2018.01330"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Brøchner et al.",
+   "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine"
+  },
+  {
+   "author": "Vourc'h et al.",
+   "title": "Trauma-Induced Damage-Associated Molecular Patterns-Mediated Remote Organ Injury and Immunosuppression in the Acutely Ill Patient, Frontiers in Immunology"
+  }
+ ]
+}

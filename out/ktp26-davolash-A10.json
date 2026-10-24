@@ -1,1815 +1,2732 @@
 {
-  "topic": "Ashyoviy dalillar sud tibbiy ekspertizasi. Tibbiy xodimlarning kasb xuquqbuzarligi xolatlarida sud-tibbiy ekspertiza. Mazkur ekspertizalarni o‘tkazishda klinitsist- mutaxassislarning o‘rni. Jinoyat tushunchasi. Aybning turlari; qasddan, extiyotsizlik orqasidan, oxirgi zaruriyat. Tibbiy yordam ko‘rsatish nuqsonlari. Tibbiy yordam nuqsonlari tasnifi. Nuqsonlar mohiyati va ularni yuzaga kelish sabablari. Tibbiy yordam nuqsonlarining oqibatiga ta’siri.Ularning o‘rganishning tibbiy yordam sifatini yaxshilashdagi ahamiyati.",
-  "slides": [
+ "topic": "Ashyoviy dalillar sud tibbiy ekspertizasi. Tibbiy xodimlarning kasb xuquqbuzarligi xolatlarida sud-tibbiy ekspertiza. Mazkur ekspertizalarni o‘tkazishda klinitsist- mutaxassislarning o‘rni. Jinoyat tushunchasi. Aybning turlari; qasddan, extiyotsizlik orqasidan, oxirgi zaruriyat. Tibbiy yordam ko‘rsatish nuqsonlari. Tibbiy yordam nuqsonlari tasnifi. Nuqsonlar mohiyati va ularni yuzaga kelish sabablari. Tibbiy yordam nuqsonlarining oqibatiga ta’siri.Ularning o‘rganishning tibbiy yordam sifatini yaxshilashdagi ahamiyati.",
+ "slides": [
+  {
+   "title": "Ashyoviy dalil tushunchasi",
+   "bullets": [
     {
-      "title": "Ashyoviy dalil tushunchasi",
-      "bullets": [
-        {
-          "text": "JPK 203-moddasiga ko‘ra ashyoviy dalil — kelib chiqishi, tegishliligi, foydalanilishi yoki ta’sir etgan omillar aniqlanishi mumkin bo‘lgan fizikaviy alomat va belgilarga ega narsa.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "303"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ashyoviy dalillarga jinoyat quroli, jinoyat izlarini saqlagan predmetlar va jinoiy harakatlar ob’ekti bo‘lgan narsalar kiradi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "303"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Biologik ashyoviy dalillar — to‘qima qismlari, qon, ajratmalar (so‘lak, siydik, ter, maniy, najas) va ularning dog‘lari, sochlar.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "303"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Qanday predmetlar ashyoviy dalil bo‘ladi? Doskada: Ashyoviy dalil turlari. Tipik xato: Faqat qurolni ashyoviy dalil deb hisoblash."
-    },
-    {
-      "title": "Kim tekshiradi va klinitsistning o‘rni",
-      "bullets": [
-        {
-          "text": "Biologik ashyoviy dalillar ekspertizasi sud-biologik, sud-gistologik, tibbiy kriminalistika va sud kimyo laboratoriyalarida maxsus mutaxassislar tomonidan o‘tkaziladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "303"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ashyoviy dalillarning sud-tibbiy tekshiruvi klinitsist-shifokorlarga yuklanmaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "303"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ayrim hollarda umumiy amaliyot shifokorlari hodisa joyini ko‘zdan kechirish, ashyoviy dalillarni topish, tavsiflash va namuna olishga jalb qilinishi mumkin.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "303"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Klinitsist hodisa joyida nimalarni qila oladi? Doskada: Mutaxassis—shifokor rollari. Tipik xato: Klinitsist laboratoriya xulosasini beradi deb o‘ylash."
-    },
-    {
-      "title": "Qon izlarining ko‘rinishlari",
-      "bullets": [
-        {
-          "text": "Qon izlari hodisa joyida, jabrlangan va ayblanuvchining tanasi, kiyimi, poyafzalida, shikastlovchi qurolda topilishi mumkin.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "303"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qon ko‘p yo‘qotilganda yoki singdirish xususiyati past materialda qon ko‘lmagi; yaxshi singdiradigan materialda singdirilgan iz hosil bo‘ladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "303"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qiya yuzada oqma shaklidagi izlar; sirpanishdan surtma izlar; sirpanishsiz kontaktdan bosma izlar.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "303–304"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Izning shakli nimani ko‘rsatadi? Doskada: Iz turlari jadvali. Tipik xato: Izning shaklini yuzaga bog‘lamay baholash."
-    },
-    {
-      "title": "Qon tomchisi izlari",
-      "bullets": [
-        {
-          "text": "10–15 sm balandlikdan gorizontal yuzaga tushgan tomchi dumaloq, chetlari tekis dog‘ hosil qiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "303–304"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Harakatdagi tana qismidan yoki qiya yuzaga tushsa dog‘ noksimon, undov belgisi shaklida; ensiz tomoni harakat yo‘nalishiga qaraydi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "304"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Balandlik katta bo‘lsa, dog‘ cheti mayda tishsimon, atrofida sachralar; sachra izlari keskin siltanish yoki yirik arteriyadan fontan bo‘lib oqishda ham hosil bo‘ladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "304"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Dog‘ shaklidan harakat yo‘nalishi qanday aniqlanadi? Doskada: Dog‘ shakllari. Tipik xato: Barcha dog‘larni bir xil balandlikdan tushgan deb baholash."
-    },
-    {
-      "title": "Qon izlarini olish qoidalari",
-      "bullets": [
-        {
-          "text": "Ashyoviy dalillarni, jumladan qon izlarini hodisa joyidan olish tergovchi tomonidan amalga oshiriladi; zarurat bo‘lsa shifokorlar jalb qilinadi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "304"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kichik predmetlar butunligicha olinadi; katta buyumdan dog‘li bo‘lak va nazorat uchun toza bo‘lak qirqib olinadi; qattiq yuzadan quruq qon qirindisi olinadi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "304"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qon ko‘lmagidan namuna 10 ml dan kam bo‘lmagan miqdorda flakonga; qordagi izlar eritiladi, tuproq va qum dog‘i to‘liq qalinligida olinadi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "304–305"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega nazorat namunasi olinadi? Doskada: Namuna olish qadamlari. Tipik xato: Yangi doka-bint bo‘lagidan foydalanish."
-    },
-    {
-      "title": "Qon ekspertizasida hal etiladigan masalalar",
-      "bullets": [
-        {
-          "text": "Ketma-ketlik: qon borligi, tur, guruh, muayyan shaxs; taxminiy sinamalar nospetsifik.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "305–306"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Taxminiy usullar: benzidin, peroksid, lyuminol, fenolftalein sinamalari, ultrabinafsha nur.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "305"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Qon ekspertizasi savollari",
-        "nodes": [
-          "Qon bormi",
-          "Tur mansubligi",
-          "Guruhiy mansublik",
-          "Muayyan shaxs"
-        ]
-      },
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega taxminiy usul qat’iy emas? Doskada: Savollar zanjiri. Tipik xato: Taxminiy sinamaga tayanib qon borligini tasdiqlash."
-    },
-    {
-      "title": "Qon borligi va tur mansubligini aniqlash",
-      "bullets": [
-        {
-          "text": "Ishonchli usullar: mikroskopik, mikrokristallik, spektral, xromatografik; hozirda ishonchli tarzda asosan xromatografik usul qo‘llanadi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "306"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tur mansubligi: Chistovich—Ulengut pretsipitatsiya reaksiyasi, elektroforez, Ouxterloni usuli va boshqalar.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "306"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "ABAcard testi dog‘da qon borligi va uning insonga mansubligini bir vaqtda aniqlaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "306–307"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi usul tur mansubligini beradi? Doskada: Usullar jadvali. Tipik xato: Mikroskopik usulni eng ishonchli deb hisoblash."
-    },
-    {
-      "title": "Qonning guruhiy mansubligi va shaxsga tegishliligi",
-      "bullets": [
-        {
-          "text": "Eritrotsitar, zardob, leykotsitar va ferment guruhiy tizimlari mavjud; tekshiruv odatda AVO tizimidan boshlanadi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "307"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sud-tibbiy tekshiruvda AVO tizimining ham agglyutinogenlari, ham agglyutininlari o‘rganiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "307"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qonning muayyan shaxsga tegishliligi so‘nggi davrda qat’iy tarzda DNK tekshiruvi bilan aniqlanadi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "307"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega bir necha tizim kerak? Doskada: Tizimlar ro‘yxati. Tipik xato: Faqat AVO bo‘yicha muayyan shaxsni aniqlash."
-    },
-    {
-      "title": "Qon: jins, hudud, yosh va homiladorlik",
-      "bullets": [
-        {
-          "text": "Jinsiy mansublik X- va Y-xromatinni aniqlash bilan yoki DNK tekshiruvi orqali hal etiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "307–308"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Katta yoshlilarda gemoglobin HbA, go‘daklarda HbF; HbF ishqor denaturatsiyasiga chidamliroq. 15–20 kunlik dog‘da farqlab bo‘lmaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "308"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qon dog‘i bo‘yicha homiladorlikni qat’iy aniqlab bo‘lmaydi; 1 litr suyuq qondan taxminan 210 g quruq qoldiq qoladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "308"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Qon izining muddatini nega aniq aytib bo‘lmaydi? Doskada: Ko‘rsatkichlar ro‘yxati. Tipik xato: HbFni homilador ayollarda hech uchramaydi deb o‘ylash."
-    },
-    {
-      "title": "Maniy izlari va ularni olish",
-      "bullets": [
-        {
-          "text": "Maniy izlari jinsiy jinoyatlar va ayrim jinsiy holatlar ekspertizasida sud-biologik bo‘limda tekshiriladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "308–309"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Dog‘lar chetlari landkartasimon, kraxmal zichligida; to‘q matoda oqimtir, yorqin matoda sarg‘imtir; qon bilan aralashsa pushti.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "309"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Gumondorlardan va jabrlanuvchidan qon va so‘lak namunalari olinadi; so‘lak olishdan oldin og‘iz chayiladi, 2–3 ml yig‘iladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "309"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega ikki tomondan namuna olinadi? Doskada: Namunalar ro‘yxati. Tipik xato: So‘lakni og‘iz chayilmay olish."
-    },
-    {
-      "title": "Maniy borligini aniqlash",
-      "bullets": [
-        {
-          "text": "Taxminiy usullar: kartoshka sharbati bilan reaksiya, ultrabinafsha nurda och havorang flyuoressensiya; Florans va Barberio reaksiyalari amaliy ahamiyatga ega emas.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "310"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ishonchli usullar: morfologik — bitta bo‘lsa-da butun spermatozoid (bosh, tana, dum) topilishi musbat natija; xromatografiya.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "310"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Azospermiya va nekrospermiyada qog‘ozda xromatografiya: xolin, spermin va nordon fosfataza birga topilsa, maniy borligi ishonchli.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "310"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Qachon morfologik usul qo‘llanmaydi? Doskada: Usullar jadvali. Tipik xato: Spermatozoidning faqat boshi topilsa ham musbat deb hisoblash."
-    },
-    {
-      "title": "Ajratuvchanlik va boshqa ajratmalar",
-      "bullets": [
-        {
-          "text": "Taxminan 80% odamda guruhiy antigenlar ajratmalarda (maniy, siydik, o‘t, so‘lak, najas) topiladi — «ajratuvchilar».",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "311"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "So‘lak borligi amilaza fermenti orqali, ter — serin aminokislotasi, siydik — kreatinin va mochevina orqali aniqlanadi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "311–312"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Najas mikroskopik tekshiruvda ovqat qoldiqlari, mikroorganizmlar, gelmint tuxumlari orqali; siydik va najasning tur mansubligi aniqlanmaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "312"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Ajratuvchanlik nimani anglatadi? Doskada: Ajratma—test juftliklari. Tipik xato: Najasda guruhiy mansublikni aniqlash mumkin deb bilish."
-    },
-    {
-      "title": "Namunalarni saqlash va yuborish",
-      "bullets": [
-        {
-          "text": "Tekshiruv ob’ektlari xona haroratida, quyosh nuri tushmaydigan, issiqlik manbaidan uzoq, hasharotlar kirmaydigan sharoitda quritilib yuboriladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "312"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Har bir ob’ekt alohida o‘raladi; tekshiruv ob’ekti va nazorat ob’ekti bir o‘ramda bo‘lishi mumkin emas.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "312"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Hodisa joyidan ob’ektlarni olishda qo‘lga rezina qo‘lqop kiyiladi, kichik predmetlar pinset bilan olinadi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "311"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega quritiladi? Doskada: Qoidalar ro‘yxati. Tipik xato: Namunalarni bir o‘ramda yuborish."
-    },
-    {
-      "title": "Sochni tekshirish: namuna va masalalar",
-      "bullets": [
-        {
-          "text": "Soch qotillik, jinsiy jinoyat, tan jarohati va yo‘l-transport hodisalarida tekshiriladi; pinset bilan olinib, har sohadan alohida paketga solinadi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "312–313"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Taqqoslash namunasi boshning besh sohasidan (peshona, tepa, ikki chekka, ensa) 20–30 tola tutami teriga yaqin qirqib olinadi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "313"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Savollar: tola sochmi, odam yoki hayvonniki, guruhiy va regional mansubligi, o‘zi tushganmi yoki yulinganmi, qanday ta’sir ko‘rsatilgan, muayyan shaxsga mansubligi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "313"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega beshta sohadan olinadi? Doskada: Soch namunasi sxemasi. Tipik xato: Bitta soch tolasi bilan shaxsni aniqlash."
-    },
-    {
-      "title": "Odam va hayvon sochi",
-      "bullets": [
-        {
-          "text": "Odamda kutikula mayda zich tishchali; hayvonda yirik, ba’zan arrasimon, uzoq tishchali.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "313–314"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Odamda po‘stloq mag‘izdan kengroq; hayvonda mag‘iz asosiy qalinlikni egallaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "314"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Odam va hayvon sochi",
-        "header": [
-          "Belgi",
-          "Odam",
-          "Hayvon"
-        ],
-        "rows": [
-          [
-            "Kutikula",
-            "Mayda zich tishcha",
-            "Yirik, uzoq tishcha"
-          ],
-          [
-            "Mag‘iz",
-            "Ingichka yoki yo‘q",
-            "Asosiy qalinlik"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi belgi odam sochini ko‘rsatadi? Doskada: Ikki ustun: odam / hayvon. Tipik xato: Pigment joylashuvini hisobga olmaslik."
-    },
-    {
-      "title": "Soch: hudud, shikast va shaxsga mansublik",
-      "bullets": [
-        {
-          "text": "Boshdagi soch qalinligi 0,1 mm gacha, qosh-kiprik 0,11–0,12 mm, soqol-mo‘ylov 0,15–0,17 mm.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "315"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "200 °C dan yuqori haroratda soch ko‘mirlanadi; o‘tkir jismdan kesilgan joy tekis, o‘tmas jismdan sterjen ezilib tolalanadi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "315"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Yulingan sochda piyozcha va qin xaltasi qoldig‘i bo‘ladi; shaxsga mansublik ehtimol ko‘rinishida hal etiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "315"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Yulingan va to‘kilgan sochni qanday ajratamiz? Doskada: Soch ildizi belgilari. Tipik xato: Soch bo‘yicha shaxsni qat’iy aniqlash."
-    },
-    {
-      "title": "Sud-gistologik tekshiruv",
-      "bullets": [
-        {
-          "text": "Murda ekspertizasi o‘tkazilgan barcha holatlarda sud-gistologik tekshiruv uchun ichki a’zo va to‘qima bo‘lakchalari olinishi kerak.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "316"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Chirish va boshqa o‘limdan keyingi o‘zgarishlar tekshiruvdan rad etish uchun asos bo‘la olmaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "316"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Preparatlar hamma holatda gematoksilin-eozin bilan bo‘yaladi; kerak bo‘lsa selektiv bo‘yash, muzlatilgan kesmalar, lyuminessent va polyarizatsion mikroskopiya.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "316"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Gistologiya qaysi savollarga javob beradi? Doskada: Vazifalar ro‘yxati. Tipik xato: Chirigan murdada gistologiya bo‘lmaydi deb o‘ylash."
-    },
-    {
-      "title": "Sud-gistologik tekshiruv: diatom va arxiv",
-      "bullets": [
-        {
-          "text": "Sud-gistologik bo‘limda suvga tirik yoki o‘lik holda tushganlik masalasida diatom planktoni tekshiriladi; suv namunalari ham taqdim etiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "316"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Natija dalolatnomada: kirish, tekshiruv, sud-gistologik tashxis, xotima.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "316"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Murda a’zo-to‘qimalari birlamchi (formalinli) arxivi kamida 2 yil, preparatlar va bloklar kamida 3 yil saqlanadi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "316–317"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daq. Muhokama: Arxiv nega kerak? Doskada: Muddatlar jadvali. Tipik xato: Arxivni ekspertizadan keyin yo‘q qilish."
-    },
-    {
-      "title": "Tibbiy-kriminalistik tekshiruvlar",
-      "bullets": [
-        {
-          "text": "Tibbiy-kriminalistika bo‘limida diagnostik, identifikatsion va situatsion masalalar hal etiladi: trassologik, ballistik, identifikatsion, mikrologik, situatsion.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "317"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Trassologik tekshiruvning asosiy maqsadi — jarohat yoki izlar bo‘yicha shikastlovchi omilni aniqlash.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "317"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ballistik tekshiruv o‘qotar jarohatlar va portlash travmasida: jarohatlar soni, otish ketma-ketligi, distansiya, qurol va snaryad turi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "317–318"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi tekshiruv qaysi savolga javob beradi? Doskada: Besh tur jadvali. Tipik xato: Barcha turlarni bir xil usul deb hisoblash."
-    },
-    {
-      "title": "Identifikatsion, mikrologik, situatsion tekshiruv",
-      "bullets": [
-        {
-          "text": "Identifikatsion tekshiruv shaxsi noma’lum murda yoki qoldiqlarning muayyan shaxsga tegishliligini aniqlash uchun; so‘nggi bosqichda aynanlik haqida xulosa qilinadi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "318"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Suyak qoldiqlaridan tur, murdalar soni, irq, jins, taxminiy yosh, bo‘y uzunligi, kasallik va jarohatlar aniqlanadi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "318"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Mikrologik tekshiruv mikroizlar va mikrozarralarning o‘tishini, situatsion tekshiruv esa ma’lum harakatni sodir etish imkoniyatini o‘rganadi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "318–319"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Situatsion tekshiruvda nima solishtiriladi? Doskada: Uch bosqich. Tipik xato: Mikroizlarni ko‘z bilan ko‘rinadigan deb bilish."
-    },
-    {
-      "title": "Sud kimyo tekshiruvlari",
-      "bullets": [
-        {
-          "text": "Sud-kimyo tekshiruvi biologik ob’ektlarda toksik moddalar yoki hosilalarining mavjudligini tasdiqlash yoki inkor etish maqsadida o‘tkaziladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "319–320"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Vazifalar: toksikologik ahamiyatli moddalarni topish va miqdoriy aniqlash, dori va narkotiklarni aniqlash, natijalarni izohlash, nobiologik ashyoviy dalillar tahlili.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "320"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Toksikologik tekshiruvda imkon qadar turli prinsiplarga asoslangan kamida ikkita usul tavsiya etiladi; arxiv ob’ektlar spirtda sovutkichda bir yilgacha saqlanadi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "320"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega ikkita usul? Doskada: Dastlabki va tasdiqlovchi usullar. Tipik xato: Bitta rangli reaksiya bilan yakuniy xulosa berish."
-    },
-    {
-      "title": "Jinoyat tushunchasi",
-      "bullets": [
-        {
-          "text": "Jinoyatning belgilari: jamiyat uchun xavf, jinoiy huquqbuzarlik, aybdorlik va jazo.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "115"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Jinoiy kodeksda jazo tahdidi bilan taqiqlangan, aybli ijtimoiy xavfli qilmish (harakat yoki harakatsizlik) jinoyat deb topiladi (JK 14-modda).",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "115"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ijtimoiy xavfli qilmish Kodeks qo‘riqlaydigan ob’ektlarga zarar yetkazadi yoki real zarar xavfini keltirib chiqaradi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "115"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Tibbiyotda harakatsizlik jinoyat bo‘ladimi? Doskada: Jinoyat belgilari. Tipik xato: Har qanday salbiy oqibatni jinoyat deb baholash."
-    },
-    {
-      "title": "Aybning turlari: qasd",
-      "bullets": [
-        {
-          "text": "Ayb mavjud bo‘lishi uchun qilmish ong va iroda nazorati ostida sodir etilgan bo‘lishi kerak; shaxs qasddan yoki ehtiyotsizlik orqasidan aybdor deb topiladi (JK 20-modda).",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "115"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "To‘g‘ri qasd: shaxs oqibatlarga ko‘zi yetgan va ularning yuz berishini istagan. Egri qasd: oqibatlarga ongli tarzda yo‘l qo‘ygan (JK 21-modda).",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "115"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tibbiy xodimlar faoliyati uchun to‘g‘ri qasddan sodir etilgan jinoyatlar xos emas; jinoiy abort va mansab soxtakorligi bunday jinoyatlarga taalluqli.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "115–116"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: To‘g‘ri va egri qasd farqi nima? Doskada: Qasd turlari jadvali. Tipik xato: Tibbiy xodimlarning ko‘p jinoyatlarini qasddan deb baholash."
-    },
-    {
-      "title": "Aybning turlari: ehtiyotsizlik",
-      "bullets": [
-        {
-          "text": "O‘z-o‘ziga ishonish: oqibat kelib chiqishi mumkinligiga ko‘zi yetgan, lekin ularning kelib chiqmasligiga asossiz umid qilgan (JK 22-modda).",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "116"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Beparvolik: oqibatlarga ko‘zi yetmagan, lekin yetishi lozim va mumkin bo‘lgan.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "116"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Aksariyat holatlarda tibbiy xodimlar ehtiyotsizlik orqasidan sodir etilgan jinoyatlar uchun javobgarlikka tortiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "116"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: O‘z-o‘ziga ishonish va beparvolikni farqlang. Doskada: Ikki shakl jadvali. Tipik xato: Beparvolikni qasd deb baholash."
-    },
-    {
-      "title": "Ehtiyotsizlik: ikki misol",
-      "bullets": [
-        {
-          "text": "Sababsiz, tayyorgarliksiz va yordamchilarsiz rejali operatsiya — o‘z-o‘ziga ishonish.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "116"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Vrach standartlarni bilmadi, asorat o‘limga olib keldi — beparvolik.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "116"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Misollar va tur",
-        "nodes": [],
-        "header": [
-          "Misol",
-          "Tur"
-        ],
-        "rows": [
-          [
-            "Tayyorgarliksiz rejali operatsiya",
-            "O‘z-o‘ziga ishonish"
-          ],
-          [
-            "Standartni bilmaslik",
-            "Beparvolik"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Misollarni turlarga ajrating. Doskada: Ikki misol jadvali. Tipik xato: Standartni bilmaslikni sababsiz holat deb hisoblash."
-    },
-    {
-      "title": "Oxirgi zaruriyat",
-      "bullets": [
-        {
-          "text": "Oxirgi zaruriyatda xavfni boshqa choralar bilan qaytarishning iloji bo‘lmasa va keltirilgan zarar oldi olingan zararga qaraganda kam bo‘lsa, qilmish jinoyat deb topilmaydi (JK 38-modda).",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "117"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Misol: tibbiy muassasadan tashqarida laringospazmda improvizatsiya qilingan vositalar bilan traxeostoma o‘rnatilgan; bemor hayoti saqlandi, keyin yiringli asorat bo‘ldi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "117"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Vrachning bunday harakatini jinoyat sifatida baholash mumkin emas.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "117"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Oxirgi zaruriyat shartlarini sanang. Doskada: Shartlar ro‘yxati. Tipik xato: Har qanday zararni zarurat bilan oqlash."
-    },
-    {
-      "title": "Asosli tavakkalchilik",
-      "bullets": [
-        {
-          "text": "Harakat zamonaviy ilmiy bilimlarga muvofiq bo‘lsa, maqsadga tavakkalsiz erishib bo‘lmasa va zarar oldini olish choralari ko‘rilsa, tavakkalchilik asosli deb topiladi (JK 41-modda).",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "117"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Asosli tavakkalchilikda ijtimoiy foydali natijaga erishilmasa ham zarar uchun javobgarlik yuzaga kelmaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "117"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Odamlar halok bo‘lish xavfini bila turib qilingan tavakkalchilik asosli deb topilmaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "117"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Qachon tavakkalchilik asosli? Doskada: Shartlar ro‘yxati. Tipik xato: Har qanday tavakkalni oqlash."
-    },
-    {
-      "title": "Tibbiy xodim aybini aniqlashning murakkabligi",
-      "bullets": [
-        {
-          "text": "Misol: tuman shifoxonasida yurak jarohati bor bemorda maxsus sharoit yo‘q, ko‘chirish va mutaxassis chaqirish imkonsiz; navbatchi jarroh yurak jarohatini tikdi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "117"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bu qaror hayot uchun ma’lum xavf tug‘diradi, ammo birdan-bir to‘g‘ri qaror bo‘lgan; kasb bilan bog‘liq tavakkalchilik asosli, harakat jinoyat emas.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "117–118"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tibbiyot xodimining aybini aniqlash sud-tergov idoralari uchun alohida murakkab holat.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "118"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega sud-tibbiy ekspertiza kerak? Doskada: Qaror zanjiri. Tipik xato: Noxush oqibatni avtomatik ayb deb baholash."
-    },
-    {
-      "title": "Komission ekspertizani tayinlash asoslari",
-      "bullets": [
-        {
-          "text": "Asos: surishtiruvchi, tergovchi, prokuror qarori yoki sud ajrimi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "134"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qaror bayon qismida ish tafsiloti, so‘ng ekspertiza turi va kimga tayinlangani, qaror qismida savollar ko‘rsatiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "134"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Savollar aniq, tushunarli bo‘lib, ekspertlar komissiyasi tasarrufidan chetga chiqmasligi kerak.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "134"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daq. Muhokama: Savol komissiya vakolatidan tashqarida bo‘lsa nima qilinadi? Doskada: qaror tuzilishi. Tipik xato: ekspertiza arizachi iltimosi bilan tayinlanadi deb o‘ylash."
-    },
-    {
-      "title": "Taqdim etiladigan hujjatlar",
-      "bullets": [
-        {
-          "text": "Komissiyaga ish materiallari, tibbiy hujjatlar va tekshiruv uchun zarur obyektlar taqdim etiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "134"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Alohida kasallik tarixidan ko‘chirma va ma’lumotnomalar asosida ekspertiza o‘tkazilishiga yo‘l qo‘yilmaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "134"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Javobgarlikka tortilayotgan xodimning tavsifnomasi, idoraviy tekshiruvlar; o‘lim holatida — murda xulosasi yoki patologo-anatomik bayonnoma.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "135"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega ko‘chirma yetarli emas? Doskada: hujjatlar ro‘yxati. Tipik xato: kseronusxani asl nusxa o‘rnida har doim qabul qilish."
-    },
-    {
-      "title": "Ekspertlar komissiyasi tarkibi",
-      "bullets": [
-        {
-          "text": "Komission ekspertiza faqat sud-tibbiy ekspertiza byurolarida o‘tkaziladi; komissiya kamida uch kishidan iborat.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "135"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Muhokama qilinayotgan hodisa yuz bergan muassasa rahbarlari va natijadan manfaatdor shaxslar a’zo bo‘lolmaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "136"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Etakchi ekspert, ma’ruzachi va a’zolar teng protsessual huquq va majburiyatga ega.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "136"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega hodisa bo‘lgan muassasa vakili a’zo bo‘lolmaydi? Doskada: komissiya tarkibi. Tipik xato: etakchi ekspertga ustunlik berish."
-    },
-    {
-      "title": "Xulosani baholash va so‘roq",
-      "bullets": [
-        {
-          "text": "Qatnashchilar komissiya majlisida va to‘xtam tuzish bosqichida ishtirok eta olmaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "141"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Komissiya a’zolari faqat mavjud xulosa bo‘yicha, xulosa taqdim etilgandan keyin so‘roq qilinishi mumkin.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "141"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "JPK 187-moddaga ko‘ra xulosa boshqa dalillar bilan birga baholanadi va ustuvor kuchga ega emas.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "141"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daq. Muhokama: Ikki xulosa mos kelmasa nima qilinadi? Doskada: «xulosa → baholash → qaror». Tipik xato: ekspert xulosasini majburiy deb hisoblash."
-    },
-    {
-      "title": "Asosiy tushunchalar",
-      "bullets": [
-        {
-          "text": "Bemor — kasallik bor-yo‘qligidan qat’i nazar tibbiy yordamga murojaat etgan shaxs.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "143"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tibbiy yordam sifati — yordamning zamonaviy fan va standartlarga mosligini ko‘rsatuvchi belgilar majmui.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "143"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tibbiy standart — davolash-diagnostika choralarining hajmi va xarakteri tartibga solingan ketma-ketligi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "143"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Uch asosiy tushuncha",
-        "nodes": [],
-        "header": [
-          "Tushuncha",
-          "Mohiyati"
-        ],
-        "rows": [
-          [
-            "Bemor",
-            "Yordamga murojaat etgan shaxs"
-          ],
-          [
-            "Yordam sifati",
-            "Standartlarga moslik belgilari"
-          ],
-          [
-            "Standart",
-            "Choralar ketma-ketligi"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daq. Muhokama: Bemor tushunchasiga sog‘lom murojaat etuvchi ham kiradimi? Doskada: uchta ta’rifni qisqa yozing. Tipik xato: standartni «qat’iy buyruq» deb tushunish."
-    },
-    {
-      "title": "TYON tushunchasi",
-      "bullets": [
-        {
-          "text": "Tibbiy yordam nuqsoni (TYON) huquqiy tushuncha emas.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "144"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Keng ma’noda — umum qabul qilgan qoida, yo‘riqnoma, qo‘llanma, nizomni bajarmaslik yoki lozim darajada bajarmaslik; noxush oqibat keltirgan yoki keltirishi mumkin bo‘lgan holat.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "144"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Jinoyat huquqi nuqtai nazaridan faqat sababiy bog‘liqlikda noxush oqibat keltirgan nuqsonlar inobatga olinadi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "145"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega TYON «huquqiy tushuncha emas»? Doskada: TYON ta’rifini o‘z so‘zingiz bilan yozdiring. Tipik xato: har bir nuqsonni jinoyat deb hisoblash."
-    },
-    {
-      "title": "Nuqsonlar mohiyati bo‘yicha to‘rt guruh",
-      "bullets": [
-        {
-          "text": "Nuqson mohiyatiga (yo‘l qo‘yilgan kamchilik mazmuniga) ko‘ra to‘rt guruh ajratiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "145"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Guruhlar: diagnostika, davolash, profilaktika va boshqa nuqsonlar.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "145"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Mohiyati bo‘yicha guruhlar",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Misol"
-        ],
-        "rows": [
-          [
-            "Diagnostika",
-            "Kech tashxis qo‘yish"
-          ],
-          [
-            "Davolash",
-            "Dorini noto‘g‘ri qo‘llash"
-          ],
-          [
-            "Profilaktika",
-            "Sanitar qoidalarni buzish"
-          ],
-          [
-            "Boshqa",
-            "Hujjat yuritish xatosi"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daq. Muhokama: Qaysi guruh ekspertizada eng ko‘p uchraydi deb o‘ylaysiz? Doskada: to‘rt guruhli jadval. Tipik xato: guruhlarni aralashtirish."
-    },
-    {
-      "title": "Tashxisotdagi nuqsonlar",
-      "bullets": [
-        {
-          "text": "Asosiy kasallik (jarohat)ni yoki uning asoratini aniqlamaslik.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "145"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Muhim hamroh kasallikni aniqlamaslik.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "145"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kech tashxis qo‘yish va tashxisotdagi boshqa nuqsonlar.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "145"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daq. Muhokama: Kech tashxis va noto‘g‘ri tashxis farqi nimada? Doskada: to‘rt turni sanang. Tipik xato: asoratni aniqlamaslikni davolash nuqsoni deb hisoblash."
-    },
-    {
-      "title": "Davolashdagi nuqsonlar",
-      "bullets": [
-        {
-          "text": "Kechikib shifoxonaga yotqizish; jarrohlik usulida davolashdagi kamchiliklar.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "145"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tibbiy muolajalarni tayinlash va o‘tkazishdagi xatolar; tug‘ruqni noratsional olib borish.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "145"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Dori-darmonlardan noto‘g‘ri foydalanish va davolashdagi boshqa nuqsonlar.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "145"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 3 daq. Muhokama: «Noratsional» so‘zi nimani anglatadi? Doskada: 5 ta ko‘rinishni ro‘yxat qiling. Tipik xato: faqat jarrohlik xatolarini nazarda tutish."
-    },
-    {
-      "title": "TYON joyi bo‘yicha: uch bosqich",
-      "bullets": [
-        {
-          "text": "Nuqson yo‘l qo‘yilgan joyga ko‘ra uch guruh farqlanadi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "146"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bular: shifoxonagacha bosqich, shifoxona bosqichi va boshqa muassasalar.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "146"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Joy bo‘yicha guruhlar",
-        "nodes": [],
-        "header": [
-          "Bosqich",
-          "Muassasa misoli"
-        ],
-        "rows": [
-          [
-            "Shifoxonagacha",
-            "Qishloq vrachlik punkti, poliklinika"
-          ],
-          [
-            "Shifoxona",
-            "Tuman shifoxonasi, tug‘ruq bo‘limi"
-          ],
-          [
-            "Boshqa",
-            "Sanatoriy, bolalar uyi"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daq. Muhokama: Joy bo‘yicha tasnif nima uchun kerak? Doskada: uch ustunli jadval. Tipik xato: tez yordamni shifoxona bosqichiga kiritish."
-    },
-    {
-      "title": "TYON sabablari: uch guruh",
-      "bullets": [
-        {
-          "text": "TYON sabablari — uni yuzaga keltirgan tafsilotlar; shartli ravishda uch guruhga bo‘linadi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "148"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Guruhlar: subyektiv, tashkiliy va obyektiv sabablar.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "148"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Sabab guruhlari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Misol"
-        ],
-        "rows": [
-          [
-            "Subyektiv",
-            "E’tiborsizlik, malaka yetishmasligi"
-          ],
-          [
-            "Tashkiliy",
-            "Vositalar yo‘qligi, tashkil kamchiligi"
-          ],
-          [
-            "Obyektiv",
-            "Kech murojaat, atipik kechish"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 3 daq. Muhokama: Uch guruhdan qaysi biri vrachga bog‘liq emas? Doskada: jadval. Tipik xato: obyektiv sababni vrach aybi deb qarash."
-    },
-    {
-      "title": "Oqibatga ta’siri va sababiy bog‘lanish",
-      "bullets": [
-        {
-          "text": "Jinoyat huquqida nuqson natijasida oqibat mavjudligi juda muhim, shuning uchun oqibatga ta’sir alohida o‘rganiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "148"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "TYON davolash muddatini cho‘zishi, nogironlik yoki o‘limga ta’sir etishi mumkin; ba’zan oqibatga umuman ta’sir qilmaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "148"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Faqat bevosita sabab-oqibat bog‘lanishi vrachni javobgarlikka tortish uchun asos bo‘ladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "148"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Bilvosita bog‘lanish javobgarlik asosi bo‘ladimi? Doskada: bevosita va bilvosita bog‘lanishni solishtiring. Tipik xato: har qanday nuqsonni oqibat sababi deb olish."
-    },
-    {
-      "title": "«Vrachning himoyalangan munosabati»",
-      "bullets": [
-        {
-          "text": "Noxush oqibat xavfi ba’zan vrachni tibbiy muolajalarni minimal hajmda o‘tkazishga undaydi — bu «himoyalangan munosabat».",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "148"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Chet el adabiyotida u «himoyalangan tibbiyot» (defensive medicine) deb ataladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "149"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Uni aniqlash qiyin: tibbiy hujjatlar va huquqbuzarlikning subyektiv tomoni haqidagi materiallar o‘rganiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "149"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daq. Muhokama: Bu munosabat bemorga qanday zarar yetkazadi? Doskada: «xavf → himoya → zarar» zanjiri. Tipik xato: uni ehtiyotkorlik deb maqtash."
-    },
-    {
-      "title": "Baholash algoritmi: uch bosqich",
-      "bullets": [
-        {
-          "text": "Algoritm TYON tahlilini ma’lum ketma-ketlikda olib borishni talab etadi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "149"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "1) bemordagi patologiya; 2) vrach harakatlarini baholash; 3) harakat va oqibat o‘rtasida sababiy bog‘lanish.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "149"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Baholash algoritmi",
-        "nodes": [
-          "Patologik holat",
-          "Vrach harakatlari",
-          "Sababiy bog‘lanish"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega ketma-ketlikni o‘zgartirib bo‘lmaydi? Doskada: 3 bosqichli sxema. Tipik xato: oqibatdan boshlab, «teskari» baholash."
-    },
-    {
-      "title": "Oqibatga ta’sirning uch varianti",
-      "bullets": [
-        {
-          "text": "Patologiya tabiiy rivojlangan; TYON ta’sir qilmagan — sababiy bog‘lanish yo‘q.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "151"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "TYON ahvolni og‘irlashtirgan, moyillik yaratgan — bilvosita bog‘lanish.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "151"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "TYON yangi patologik jarayonga olib kelgan — bog‘lanish 3 xil ko‘rinishda.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "151"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Oqibatga ta’sir variantlari",
-        "nodes": [],
-        "header": [
-          "Variant",
-          "Bog‘lanish"
-        ],
-        "rows": [
-          [
-            "Tabiiy rivojlanish",
-            "Yo‘q"
-          ],
-          [
-            "Ahvolni og‘irlashtirgan",
-            "Bilvosita"
-          ],
-          [
-            "Yangi jarayon",
-            "Bevosita yoki bilvosita"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 4 daq. Muhokama: Uch variantdan qaysi biri javobgarlikka eng yaqin? Doskada: jadval. Tipik xato: bilvosita bog‘lanishni bevosita deb yozish."
-    }
-  ],
-  "mcq": [
-    {
-      "question": "Mohiyatiga ko‘ra TYON qaysi to‘rt guruhga bo‘linadi?",
-      "options": [
-        "Diagnostika, davolash, profilaktika, boshqa",
-        "Subyektiv, tashkiliy, obyektiv, boshqa",
-        "Kech, erta, o‘z vaqtida, rejali",
-        "Shifoxona, poliklinika, sanatoriy, lazaret"
-      ],
-      "correct_index": 0,
-      "explanation": "Mohiyat bo‘yicha: diagnostika, davolash, profilaktika va boshqa nuqsonlar.",
-      "source": {
-        "author": "G‘iyosov Z.A.",
-        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-        "page": "145"
-      }
-    },
-    {
-      "question": "Quyidagilardan qaysi biri TYONning obyektiv sababi?",
-      "options": [
-        "Bemorga e’tiborsizlik",
-        "Malaka yetishmasligi",
-        "Kasallikning atipik kechishi",
-        "Diagnostika vositalarining yo‘qligi"
-      ],
-      "correct_index": 2,
-      "explanation": "Obyektiv sabablarga kech murojaat, atipik kechish, bemor ahvolining og‘irligi kiradi; qolganlari subyektiv yoki tashkiliy.",
-      "source": {
-        "author": "G‘iyosov Z.A.",
-        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-        "page": "148"
-      }
-    },
-    {
-      "question": "Baholash algoritmining ikkinchi bosqichida nima o‘rganiladi?",
-      "options": [
-        "Bemordagi patologik holat",
-        "Vrach harakatlarini shartlilik, asoslanganlik, o‘z vaqtidalik, texnika va to‘laqonlik jihatidan baholash",
-        "Sababiy bog‘lanishning mavjudligi",
-        "Xulosa to‘xtamlarini yozish"
-      ],
-      "correct_index": 1,
-      "explanation": "Algoritm: 1) patologiya; 2) vrach harakatlarini baholash; 3) sababiy bog‘lanish.",
-      "source": {
-        "author": "G‘iyosov Z.A.",
-        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-        "page": "149"
-      }
-    },
-    {
-      "question": "Ingichka ichak charvisining yirtilishi aniqlanmagan holat (og‘ir birgalikdagi jarohat) qaysi bog‘lanishga misol?",
-      "options": [
-        "Bog‘lanish yo‘q",
-        "Bevosita bog‘lanish",
-        "Bilvosita bog‘lanish (moyillik yaratgan omil)",
-        "Qasddan zarar yetkazish"
-      ],
-      "correct_index": 2,
-      "explanation": "Manbada bu nuqson o‘limning bevosita sababi emas, ammo moyillik yaratgan omil sifatida keltirilgan.",
-      "source": {
-        "author": "G‘iyosov Z.A.",
-        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-        "page": "151"
-      }
-    },
-    {
-      "question": "Ashyoviy dalil tushunchasi qaysi moddada keltirilgan?",
-      "options": [
-        "JPK 203-modda",
-        "JK 14-modda",
-        "JPK 70-modda",
-        "JK 38-modda"
-      ],
-      "correct_index": 0,
-      "explanation": "Ashyoviy dalil tushunchasi JPK 203-moddasida berilgan.",
-      "source": {
-        "author": "G‘iyosov Z.A.",
-        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-        "page": "303"
-      }
-    },
-    {
-      "question": "Qon ekspertizasida masalalar qanday ketma-ketlikda hal etiladi?",
-      "options": [
-        "Shaxs, guruh, tur, borligi",
-        "Borligi, tur, guruh, muayyan shaxs",
-        "Guruh, borligi, tur, shaxs",
-        "Tur, shaxs, borligi, guruh"
-      ],
-      "correct_index": 1,
-      "explanation": "Avval qon borligi, keyin tur, guruh va muayyan shaxsga taalluqliligi aniqlanadi.",
-      "source": {
-        "author": "G‘iyosov Z.A.",
-        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-        "page": "305"
-      }
-    },
-    {
-      "question": "Maniy borligini morfologik usul bilan aniqlashda qaysi natija musbat hisoblanadi?",
-      "options": [
-        "Faqat spermatozoid boshi",
-        "Bitta bo‘lsa-da butun spermatozoid",
-        "Faqat dumi",
-        "Kamida o‘nta bosh"
-      ],
-      "correct_index": 1,
-      "explanation": "Bitta bo‘lsa-da butun spermatozoid (bosh, tana, dum) topilsa natija musbat; alohida qismlar inobatga olinmaydi.",
-      "source": {
-        "author": "G‘iyosov Z.A.",
-        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-        "page": "310"
-      }
-    },
-    {
-      "question": "Egri qasd nimani anglatadi?",
-      "options": [
-        "Oqibatlarni istagan",
-        "Oqibatlarga ko‘zi yetgan va ularning yuz berishiga ongli y o‘l qo‘ygan",
-        "Oqibatlarga ko‘zi yetmagan",
-        "Oqibatlarga asossiz umid qilgan"
-      ],
-      "correct_index": 1,
-      "explanation": "Egri qasd — shaxs oqibatlarga ko‘zi yetgan va ularning yuz berishiga ongli y o‘l qo‘ygan.",
-      "source": {
-        "author": "G‘iyosov Z.A.",
-        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-        "page": "115"
-      }
-    },
-    {
-      "question": "Murda ekspertizasi o‘tkazilgan holatlarda sud-gistologik tekshiruv uchun materiallar qanday olinadi?",
-      "options": [
-        "Faqat shubha bo‘lganda",
-        "Barcha holatlarda",
-        "Faqat zo‘raki o‘limda",
-        "Faqat so‘ralganda"
-      ],
-      "correct_index": 1,
-      "explanation": "Murda ekspertizasi o‘tkazilgan barcha holatlarda sud-gistologik tekshiruv uchun materiallar olinishi kerak.",
-      "source": {
-        "author": "G‘iyosov Z.A.",
-        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-        "page": "316"
-      }
-    },
-    {
-      "question": "Odamlar halok bo‘lish xavfini bila turib qilingan tavakkalchilik haqida qaysi ibora to‘g‘ri?",
-      "options": [
-        "Asosli deb topiladi",
-        "Asosli deb topilmaydi",
-        "Faqat jarrohlarda asosli",
-        "Faqat oxirgi zaruriyatda asosli"
-      ],
-      "correct_index": 1,
-      "explanation": "Odamlar halok bo‘lish xavfini bila turib qilingan tavakkalchilik asosli deb topilmaydi (JK 41-modda).",
-      "source": {
-        "author": "G‘iyosov Z.A.",
-        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-        "page": "117"
-      }
-    }
-  ],
-  "extras": [
-    {
-      "text": "Eslab qolish: baholash mezonlari — shartlilik, asoslanganlik, o‘z vaqtidalik, texnika, to‘laqonlik (besh «to‘g‘ri» harakat belgisi).",
-      "source": {
-        "author": "G‘iyosov Z.A.",
-        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-        "page": "150"
-      }
-    },
-    {
-      "text": "Komissiya tarkibida hodisa yuz bergan muassasa rahbarlari bo‘lishi mumkin emas — xolislikni saqlash qoidasi.",
-      "source": {
-        "author": "G‘iyosov Z.A.",
-        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-        "page": "136"
-      }
-    },
-    {
-      "text": "Qon ko‘lmagi ko‘p qon yo‘qotilganda yoki singdirish xususiyati past materialda hosil bo‘ladi; tomchining tushish balandligi katta bo‘lsa, dog‘ atrofida sachralar paydo bo‘ladi.",
-      "source": {
-        "author": "G‘iyosov Z.A.",
-        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-        "page": "303–304"
-      }
-    },
-    {
-      "text": "1985 yilda A. Djeffris inson genomida minisatellit markerlarning yuqori polimorf oilasini aniqlagan va DNK tekshiruvining sud-biologik ahamiyatini ilgari surgan.",
-      "source": {
-        "author": "G‘iyosov Z.A.",
-        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-        "page": "320"
-      }
-    }
-  ],
-  "sources": [
-    {
+     "text": "JPK 203: ashyoviy dalil — kelib chiqishi, tegishliligi, foydalanilishi yoki ta’sir omillari aniqlanishi mumkin bo‘lgan fizikaviy alomatli narsa.",
+     "source": {
       "author": "G‘iyosov Z.A.",
       "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-      "year": 2018,
-      "pages": "Bob 13. Ashyoviy dalillarni sud-tibbiy tekshirish"
+      "page": "303"
+     },
+     "uncertain": false
     },
     {
+     "text": "Ashyoviy dalillarga jinoyat quroli, jinoyat izlarini saqlagan predmetlar va jinoiy harakatlar ob’ekti bo‘lgan narsalar kiradi.",
+     "source": {
       "author": "G‘iyosov Z.A.",
-      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-      "year": 2012,
-      "pages": "11-bob. Tibbiy yordam nuqsonlari; bet 143-154"
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "303"
+     },
+     "uncertain": false
     },
     {
-      "author": "Ромодановский П.О., Баринов Е.Х.",
-      "title": "Судебная медицина в схемах и рисунках: учебное пособие, М.: Проспект (egasi taqdim etgan; yopiq foydalanish)",
-      "year": 2017,
-      "pages": "7-modul. Ashyoviy dalillar ekspertizasi; bet 460-491"
-    },
-    {
-      "author": "Харин Г.М. (Kharin G.M.)",
-      "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
-      "year": 2006,
-      "pages": "X bo‘lim. Biologik ashyoviy dalillar tekshiruvi; bet 192-213"
-    },
-    {
-      "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
-      "title": "Simpson's Forensic Medicine, 13th ed.",
-      "year": 2011,
-      "pages": "Chapter 23. Principles of forensic science, pp. 216–234"
-    },
-    {
+     "text": "Biologik ashyoviy dalillar — to‘qima qismlari, qon, ajratmalar (so‘lak, siydik, ter, maniy, najas) va ularning dog‘lari, sochlar.",
+     "source": {
       "author": "G‘iyosov Z.A.",
-      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-      "year": 2012,
-      "pages": "9-bob. Tibbiy xodimlarning jinoiy javobgarligi; bet 115-133"
-    },
-    {
-      "author": "G‘iyosov Z.A.",
-      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-      "year": 2012,
-      "pages": "10-bob. Tibbiy xodimlarning kasb huquqbuzarliklari bo‘yicha tekshiruvlar; bet 134-142"
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "303"
+     },
+     "uncertain": false
     }
-  ]
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Ashyoviy dalil (JPK 203)",
+    "children": [
+     {
+      "label": "Jinoyat quroli"
+     },
+     {
+      "label": "Izlarni saqlagan narsa"
+     },
+     {
+      "label": "Jinoiy harakat obyekti"
+     },
+     {
+      "label": "Biologik dalillar",
+      "items": [
+       "To‘qima, qon, ajratmalar",
+       "Dog‘lar va sochlar"
+      ]
+     }
+    ],
+    "caption": "Ashyoviy dalillar turlari"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Qanday predmetlar ashyoviy dalil bo‘ladi? Doskada: Ashyoviy dalil turlari. Tipik xato: Faqat qurolni ashyoviy dalil deb hisoblash."
+  },
+  {
+   "title": "Kim tekshiradi va klinitsistning o‘rni",
+   "bullets": [
+    {
+     "text": "Biologik dalillar ekspertizasi sud-biologik, sud-gistologik, tibbiy kriminalistika va sud kimyo laboratoriyalarida maxsus mutaxassislar tomonidan o‘tkaziladi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "303"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ashyoviy dalillarning sud-tibbiy tekshiruvi klinitsist-shifokorlarga yuklanmaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "303"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ayrim hollarda umumiy amaliyot shifokorlari hodisa joyini ko‘zdan kechirish, ashyoviy dalillarni topish, tavsiflash va namuna olishga jalb qilinishi mumkin.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "303"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Laboratoriyalar",
+      "items": [
+       "Sud-biologik, sud-gistologik",
+       "Tibbiy kriminalistika, sud kimyo"
+      ]
+     },
+     {
+      "title": "Klinitsist-shifokor",
+      "items": [
+       "Tekshiruv unga yuklanmaydi"
+      ]
+     },
+     {
+      "title": "Umumiy shifokor",
+      "items": [
+       "Hodisa joyini ko‘zdan kechirish",
+       "Topish, tavsiflash, namuna olish"
+      ]
+     }
+    ],
+    "caption": "Biologik ashyoviy dalillar ekspertizasi"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Klinitsist hodisa joyida nimalarni qila oladi? Doskada: Mutaxassis—shifokor rollari. Tipik xato: Klinitsist laboratoriya xulosasini beradi deb o‘ylash."
+  },
+  {
+   "title": "Qon izlarining ko‘rinishlari",
+   "bullets": [
+    {
+     "text": "Qon izlari hodisa joyida, jabrlangan va ayblanuvchining tanasi, kiyimi, poyafzalida, shikastlovchi qurolda topilishi mumkin.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "303"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qon ko‘p yo‘qotilganda yoki singdirish xususiyati past materialda qon ko‘lmagi; yaxshi singdiradigan materialda singdirilgan iz hosil bo‘ladi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "303"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qiya yuzada oqma shaklidagi izlar; sirpanishdan surtma izlar; sirpanishsiz kontaktdan bosma izlar.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "303–304"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Qon izlari shakllari",
+    "children": [
+     {
+      "label": "Ko‘lmak",
+      "items": [
+       "Ko‘p qon yoki singdirmaydigan material"
+      ]
+     },
+     {
+      "label": "Singdirilgan iz",
+      "items": [
+       "Yaxshi singdiradigan material"
+      ]
+     },
+     {
+      "label": "Oqma iz",
+      "items": [
+       "Qiya yuzada"
+      ]
+     },
+     {
+      "label": "Surtma iz",
+      "items": [
+       "Sirpanishdan"
+      ]
+     },
+     {
+      "label": "Bosma iz",
+      "items": [
+       "Sirpanishsiz kontaktdan"
+      ]
+     }
+    ],
+    "caption": "Qon izlarining ko‘rinishlari"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Izning shakli nimani ko‘rsatadi? Doskada: Iz turlari jadvali. Tipik xato: Izning shaklini yuzaga bog‘lamay baholash."
+  },
+  {
+   "title": "Qon tomchisi izlari",
+   "bullets": [
+    {
+     "text": "10–15 sm balandlikdan gorizontal yuzaga tushgan tomchi dumaloq, chetlari tekis dog‘ hosil qiladi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "303–304"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Harakatdagi tana qismidan yoki qiya yuzaga tushsa dog‘ noksimon, undov belgisi shaklida; ensiz tomoni harakat yo‘nalishiga qaraydi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "304"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Balandlik katta bo‘lsa, dog‘ cheti mayda tishsimon, atrofida sachralar; sachra keskin siltanish yoki yirik arteriyadan fontan bo‘lib oqishda ham hosil bo‘ladi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "304"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "10–15 sm balandlik",
+      "items": [
+       "Gorizontal yuza",
+       "Dumaloq, chetlari tekis dog‘"
+      ]
+     },
+     {
+      "title": "Harakat yoki qiya yuza",
+      "items": [
+       "Noksimon, undov belgisi shaklida",
+       "Ensiz tomoni harakat yo‘nalishiga"
+      ]
+     },
+     {
+      "title": "Katta balandlik",
+      "items": [
+       "Cheti mayda tishsimon",
+       "Atrofida sachralar",
+       "Fontan bo‘lib oqishda ham"
+      ]
+     }
+    ],
+    "caption": "Qon tomchisi izlari shakllari"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Dog‘ shaklidan harakat yo‘nalishi qanday aniqlanadi? Doskada: Dog‘ shakllari. Tipik xato: Barcha dog‘larni bir xil balandlikdan tushgan deb baholash."
+  },
+  {
+   "title": "Qon izlarini olish qoidalari",
+   "bullets": [
+    {
+     "text": "Ashyoviy dalillarni, jumladan qon izlarini hodisa joyidan olish tergovchi tomonidan amalga oshiriladi; zarurat bo‘lsa shifokorlar jalb qilinadi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "304"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kichik predmetlar butunligicha olinadi; katta buyumdan dog‘li bo‘lak va nazorat uchun toza bo‘lak qirqib olinadi; qattiq yuzadan quruq qon qirindisi olinadi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "304"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qon ko‘lmagidan namuna 10 ml dan kam bo‘lmagan miqdorda flakonga; qordagi izlar eritiladi, tuproq va qum dog‘i to‘liq qalinligida olinadi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "304–305"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Kim oladi",
+      "text": "Tergovchi; zarurat bo‘lsa shifokorlar jalb"
+     },
+     {
+      "title": "Kichik predmet",
+      "text": "Butunligicha olinadi"
+     },
+     {
+      "title": "Katta buyum",
+      "text": "Dog‘li bo‘lak va nazorat uchun toza bo‘lak"
+     },
+     {
+      "title": "Qattiq yuza",
+      "text": "Quruq qon qirindisi"
+     },
+     {
+      "title": "Ko‘lmak, qor, tuproq",
+      "text": "≥10 ml flakonga; qor eritiladi; tuproq to‘liq qalinlikda"
+     }
+    ],
+    "caption": "Qon izlarini olish qoidalari"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega nazorat namunasi olinadi? Doskada: Namuna olish qadamlari. Tipik xato: Yangi doka-bint bo‘lagidan foydalanish."
+  },
+  {
+   "title": "Qon ekspertizasida hal etiladigan masalalar",
+   "bullets": [
+    {
+     "text": "Ketma-ketlik: qon borligi, tur, guruh, muayyan shaxs; taxminiy sinamalar nospetsifik.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "305–306"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Taxminiy usullar: benzidin, peroksid, lyuminol, fenolftalein sinamalari, ultrabinafsha nur.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "305"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Qon ekspertizasi savollari",
+    "nodes": [
+     "Qon bormi",
+     "Tur mansubligi",
+     "Guruhiy mansublik",
+     "Muayyan shaxs"
+    ]
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega taxminiy usul qat’iy emas? Doskada: Savollar zanjiri. Tipik xato: Taxminiy sinamaga tayanib qon borligini tasdiqlash."
+  },
+  {
+   "title": "Qon borligi va tur mansubligini aniqlash",
+   "bullets": [
+    {
+     "text": "Ishonchli usullar: mikroskopik, mikrokristallik, spektral, xromatografik; hozirda ishonchli tarzda asosan xromatografik usul qo‘llanadi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "306"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tur mansubligi: Chistovich—Ulengut pretsipitatsiya reaksiyasi, elektroforez, Ouxterloni usuli va boshqalar.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "306"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "ABAcard testi dog‘da qon borligi va uning insonga mansubligini bir vaqtda aniqlaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "306–307"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Qon borligi (ishonchli)",
+      "items": [
+       "Mikroskopik, mikrokristallik",
+       "Spektral, xromatografik",
+       "Hozir asosan xromatografik"
+      ]
+     },
+     {
+      "title": "Tur mansubligi",
+      "items": [
+       "Chistovich—Ulengut pretsipitatsiyasi",
+       "Elektroforez",
+       "Ouxterloni usuli"
+      ]
+     },
+     {
+      "title": "ABAcard testi",
+      "items": [
+       "Qon borligi va insonga mansubligi",
+       "Bir vaqtda aniqlaydi"
+      ]
+     }
+    ],
+    "caption": "Qon borligi va tur mansubligi"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi usul tur mansubligini beradi? Doskada: Usullar jadvali. Tipik xato: Mikroskopik usulni eng ishonchli deb hisoblash."
+  },
+  {
+   "title": "Qonning guruhiy mansubligi va shaxsga tegishliligi",
+   "bullets": [
+    {
+     "text": "Eritrotsitar, zardob, leykotsitar va ferment guruhiy tizimlari mavjud; tekshiruv odatda AVO tizimidan boshlanadi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "307"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Sud-tibbiy tekshiruvda AVO tizimining ham agglyutinogenlari, ham agglyutininlari o‘rganiladi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "307"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qonning muayyan shaxsga tegishliligi so‘nggi davrda qat’iy tarzda DNK tekshiruvi bilan aniqlanadi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "307"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Qon guruh tizimlari",
+    "children": [
+     {
+      "label": "Eritrotsitar"
+     },
+     {
+      "label": "Zardob"
+     },
+     {
+      "label": "Leykotsitar"
+     },
+     {
+      "label": "Ferment"
+     },
+     {
+      "label": "AVO tizimi",
+      "items": [
+       "Tekshiruv shundan boshlanadi",
+       "Agglyutinogen va agglyutininlar"
+      ]
+     },
+     {
+      "label": "DNK tekshiruvi",
+      "items": [
+       "Muayyan shaxsga tegishlilik"
+      ]
+     }
+    ],
+    "caption": "Guruhiy mansublik va shaxsga tegishlilik"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega bir necha tizim kerak? Doskada: Tizimlar ro‘yxati. Tipik xato: Faqat AVO bo‘yicha muayyan shaxsni aniqlash."
+  },
+  {
+   "title": "Qon: jins, hudud, yosh va homiladorlik",
+   "bullets": [
+    {
+     "text": "Jinsiy mansublik X- va Y-xromatinni aniqlash bilan yoki DNK tekshiruvi orqali hal etiladi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "307–308"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Katta yoshlilarda gemoglobin HbA, go‘daklarda HbF; HbF ishqor denaturatsiyasiga chidamliroq. 15–20 kunlik dog‘da farqlab bo‘lmaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "308"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qon dog‘i bo‘yicha homiladorlikni qat’iy aniqlab bo‘lmaydi; 1 litr suyuq qondan taxminan 210 g quruq qoldiq qoladi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "308"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Katta yoshli gemoglobini",
+      "value": "HbA"
+     },
+     {
+      "label": "Go‘dak gemoglobini",
+      "value": "HbF"
+     },
+     {
+      "label": "HbF dog‘da farqlanmaydi",
+      "value": "15–20 kun"
+     },
+     {
+      "label": "1 l suyuq qondan quruq",
+      "value": "~210",
+      "unit": "g"
+     },
+     {
+      "label": "Jins",
+      "value": "X-, Y-xromatin / DNK"
+     }
+    ],
+    "caption": "Qon dog‘i: gemoglobin va ko‘rsatkichlar"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Qon izining muddatini nega aniq aytib bo‘lmaydi? Doskada: Ko‘rsatkichlar ro‘yxati. Tipik xato: HbFni homilador ayollarda hech uchramaydi deb o‘ylash."
+  },
+  {
+   "title": "Maniy izlari va ularni olish",
+   "bullets": [
+    {
+     "text": "Maniy izlari jinsiy jinoyatlar va ayrim jinsiy holatlar ekspertizasida sud-biologik bo‘limda tekshiriladi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "308–309"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Dog‘lar chetlari landkartasimon, kraxmal zichligida; to‘q matoda oqimtir, yorqin matoda sarg‘imtir; qon bilan aralashsa pushti.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "309"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Gumondorlardan va jabrlanuvchidan qon va so‘lak namunalari olinadi; so‘lak olishdan oldin og‘iz chayiladi, 2–3 ml yig‘iladi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "309"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Maniy izlari",
+    "children": [
+     {
+      "label": "Ko‘rinishi",
+      "items": [
+       "Landkartasimon, kraxmal zichligi",
+       "Qon bilan aralashsa pushti"
+      ]
+     },
+     {
+      "label": "Matnda rangi",
+      "items": [
+       "To‘q matoda oqimtir",
+       "Yorqin matoda sarg‘imtir"
+      ]
+     },
+     {
+      "label": "Namuna olish",
+      "items": [
+       "Qon va so‘lak namunalari",
+       "So‘lak: og‘iz chayiladi, 2–3 ml"
+      ]
+     }
+    ],
+    "caption": "Maniy izlari ekspertizasi"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega ikki tomondan namuna olinadi? Doskada: Namunalar ro‘yxati. Tipik xato: So‘lakni og‘iz chayilmay olish."
+  },
+  {
+   "title": "Maniy borligini aniqlash",
+   "bullets": [
+    {
+     "text": "Taxminiy usullar: kartoshka sharbati reaksiyasi, ultrabinafsha nurda och havorang nur; Florans va Barberio reaksiyalari amaliy ahamiyatga ega emas.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "310"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ishonchli usullar: morfologik — bitta bo‘lsa-da butun spermatozoid (bosh, tana, dum) topilishi musbat natija; xromatografiya.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "310"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Azospermiya va nekrospermiyada qog‘ozda xromatografiya: xolin, spermin va nordon fosfataza birga topilsa, maniy borligi ishonchli.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "310"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Taxminiy usullar",
+      "items": [
+       "Kartoshka sharbati reaksiyasi",
+       "UB nurda och havorang nur",
+       "Florans, Barberio — amaliy emas"
+      ]
+     },
+     {
+      "title": "Ishonchli usullar",
+      "items": [
+       "Butun spermatozoid topilishi",
+       "Xromatografiya"
+      ]
+     },
+     {
+      "title": "Azo-/nekrospermiya",
+      "items": [
+       "Qog‘ozda xromatografiya",
+       "Xolin + spermin + nordon fosfataza"
+      ]
+     }
+    ],
+    "caption": "Maniy borligini aniqlash"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Qachon morfologik usul qo‘llanmaydi? Doskada: Usullar jadvali. Tipik xato: Spermatozoidning faqat boshi topilsa ham musbat deb hisoblash."
+  },
+  {
+   "title": "Ajratuvchanlik va boshqa ajratmalar",
+   "bullets": [
+    {
+     "text": "Taxminan 80% odamda guruhiy antigenlar ajratmalarda (maniy, siydik, o‘t, so‘lak, najas) topiladi — «ajratuvchilar».",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "311"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "So‘lak borligi amilaza fermenti orqali, ter — serin aminokislotasi, siydik — kreatinin va mochevina orqali aniqlanadi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "311–312"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Najas mikroskopik tekshiruvda ovqat qoldiqlari, mikroorganizmlar, gelmint tuxumlari orqali; siydik va najasning tur mansubligi aniqlanmaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "312"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Ajratuvchilar ulushi",
+      "value": "~80",
+      "unit": "% odam"
+     },
+     {
+      "label": "So‘lak belgisi",
+      "value": "amilaza"
+     },
+     {
+      "label": "Ter belgisi",
+      "value": "serin"
+     },
+     {
+      "label": "Siydik belgisi",
+      "value": "kreatinin, mochevina"
+     },
+     {
+      "label": "Najas tekshiruvi",
+      "value": "mikroskopik"
+     }
+    ],
+    "caption": "Ajratuvchanlik va boshqa ajratmalar"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Ajratuvchanlik nimani anglatadi? Doskada: Ajratma—test juftliklari. Tipik xato: Najasda guruhiy mansublikni aniqlash mumkin deb bilish."
+  },
+  {
+   "title": "Namunalarni saqlash va yuborish",
+   "bullets": [
+    {
+     "text": "Tekshiruv ob’ektlari xona haroratida, quyosh nuri tushmaydigan, issiqlik manbaidan uzoq, hasharotlar kirmaydigan sharoitda quritilib yuboriladi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "312"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Har bir ob’ekt alohida o‘raladi; tekshiruv ob’ekti va nazorat ob’ekti bir o‘ramda bo‘lishi mumkin emas.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "312"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Hodisa joyidan ob’ektlarni olishda qo‘lga rezina qo‘lqop kiyiladi, kichik predmetlar pinset bilan olinadi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "311"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Quritish",
+      "text": "Xona harorati, quyosh nurisiz"
+     },
+     {
+      "title": "Himoya",
+      "text": "Issiqdan uzoq, hasharotsiz"
+     },
+     {
+      "title": "Qadoqlash",
+      "text": "Har bir ob’ekt alohida o‘raladi"
+     },
+     {
+      "title": "Nazorat",
+      "text": "Tekshiruv va nazorat ob’ekti birga emas"
+     },
+     {
+      "title": "Olish",
+      "text": "Rezina qo‘lqop, pinset"
+     }
+    ],
+    "caption": "Namunalarni saqlash va yuborish"
+   },
+   "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega quritiladi? Doskada: Qoidalar ro‘yxati. Tipik xato: Namunalarni bir o‘ramda yuborish."
+  },
+  {
+   "title": "Sochni tekshirish: namuna va masalalar",
+   "bullets": [
+    {
+     "text": "Soch qotillik, jinsiy jinoyat, tan jarohati va yo‘l-transport hodisalarida tekshiriladi; pinset bilan olinib, har sohadan alohida paketga solinadi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "312–313"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Taqqoslash namunasi boshning besh sohasidan (peshona, tepa, ikki chekka, ensa) 20–30 tola tutami teriga yaqin qirqib olinadi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "313"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Savollar: tola sochmi, odam yoki hayvonniki, guruhiy va regional mansubligi, o‘zi tushganmi yoki yulinganmi, ta’sir turi, muayyan shaxsga mansubligi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "313"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Soch ekspertizasi",
+    "children": [
+     {
+      "label": "Qachon",
+      "items": [
+       "Qotillik, jinsiy jinoyat",
+       "Tan jarohati, YTH"
+      ]
+     },
+     {
+      "label": "Taqqoslash namunasi",
+      "items": [
+       "5 soha: peshona, tepa, 2 chekka, ensa",
+       "Har sohadan 20–30 tola"
+      ]
+     },
+     {
+      "label": "Savollar",
+      "items": [
+       "Soch yoki odam/hayvon",
+       "Yulingan yoki tushgan",
+       "Shaxsga mansublik"
+      ]
+     }
+    ],
+    "caption": "Soch ekspertizasi"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega beshta sohadan olinadi? Doskada: Soch namunasi sxemasi. Tipik xato: Bitta soch tolasi bilan shaxsni aniqlash."
+  },
+  {
+   "title": "Odam va hayvon sochi",
+   "bullets": [
+    {
+     "text": "Odamda kutikula mayda zich tishchali; hayvonda yirik, ba’zan arrasimon, uzoq tishchali.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "313–314"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Odamda po‘stloq mag‘izdan kengroq; hayvonda mag‘iz asosiy qalinlikni egallaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "314"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Odam sochi",
+      "items": [
+       "Kutikula mayda zich tishchali",
+       "Po‘stloq mag‘izdan kengroq"
+      ]
+     },
+     {
+      "title": "Hayvon sochi",
+      "items": [
+       "Kutikula yirik, ba’zan arrasimon",
+       "Mag‘iz asosiy qalinlikni egallaydi"
+      ]
+     }
+    ],
+    "caption": "Odam va hayvon sochi"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi belgi odam sochini ko‘rsatadi? Doskada: Ikki ustun: odam / hayvon. Tipik xato: Pigment joylashuvini hisobga olmaslik."
+  },
+  {
+   "title": "Soch: hudud, shikast va shaxsga mansublik",
+   "bullets": [
+    {
+     "text": "Boshdagi soch qalinligi 0,1 mm gacha, qosh-kiprik 0,11–0,12 mm, soqol-mo‘ylov 0,15–0,17 mm.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "315"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "200 °C dan yuqori haroratda soch ko‘mirlanadi; o‘tkir jismdan kesilgan joy tekis, o‘tmas jismdan sterjen ezilib tolalanadi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "315"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Yulingan sochda piyozcha va qin xaltasi qoldig‘i bo‘ladi; shaxsga mansublik ehtimol ko‘rinishida hal etiladi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "315"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Boshdagi soch",
+      "value": "0,1",
+      "unit": "mm gacha"
+     },
+     {
+      "label": "Qosh-kiprik",
+      "value": "0,11–0,12",
+      "unit": "mm"
+     },
+     {
+      "label": "Soqol-mo‘ylov",
+      "value": "0,15–0,17",
+      "unit": "mm"
+     },
+     {
+      "label": "Ko‘mirlanish",
+      "value": ">200",
+      "unit": "°C"
+     },
+     {
+      "label": "Yulingan sochda",
+      "value": "piyozcha bor"
+     }
+    ],
+    "caption": "Soch qalinligi va shikast belgilari"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Yulingan va to‘kilgan sochni qanday ajratamiz? Doskada: Soch ildizi belgilari. Tipik xato: Soch bo‘yicha shaxsni qat’iy aniqlash."
+  },
+  {
+   "title": "Sud-gistologik tekshiruv",
+   "bullets": [
+    {
+     "text": "Murda ekspertizasi o‘tkazilgan barcha holatlarda sud-gistologik tekshiruv uchun ichki a’zo va to‘qima bo‘lakchalari olinishi kerak.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "316"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Chirish va boshqa o‘limdan keyingi o‘zgarishlar tekshiruvdan rad etish uchun asos bo‘la olmaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "316"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Preparatlar hamma holatda gematoksilin-eozin bilan bo‘yaladi; kerak bo‘lsa selektiv bo‘yash, muzlatilgan kesmalar, lyuminessent va polyarizatsion mikroskopiya.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "316"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Material",
+      "text": "Murda ekspertizasida har doim"
+     },
+     {
+      "title": "Chirish",
+      "text": "Rad etish uchun asos emas"
+     },
+     {
+      "title": "Bo‘yash",
+      "text": "Gematoksilin-eozin; kerak bo‘lsa selektiv"
+     },
+     {
+      "title": "Qo‘shimcha",
+      "text": "Muzlatilgan kesma, polyarizatsion mikroskopiya"
+     }
+    ],
+    "caption": "Sud-gistologik tekshiruv"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Gistologiya qaysi savollarga javob beradi? Doskada: Vazifalar ro‘yxati. Tipik xato: Chirigan murdada gistologiya bo‘lmaydi deb o‘ylash."
+  },
+  {
+   "title": "Sud-gistologik tekshiruv: diatom va arxiv",
+   "bullets": [
+    {
+     "text": "Sud-gistologik bo‘limda suvga tirik yoki o‘lik holda tushganlik masalasida diatom planktoni tekshiriladi; suv namunalari ham taqdim etiladi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "316"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Natija dalolatnomada: kirish, tekshiruv, sud-gistologik tashxis, xotima.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "316"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Murda a’zo-to‘qimalari birlamchi (formalinli) arxivi kamida 2 yil, preparatlar va bloklar kamida 3 yil saqlanadi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "316–317"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Birlamchi arxiv",
+      "value": "≥ 2",
+      "unit": "yil"
+     },
+     {
+      "label": "Preparat va bloklar",
+      "value": "≥ 3",
+      "unit": "yil"
+     },
+     {
+      "label": "Dalolatnoma",
+      "value": "4 qism"
+     },
+     {
+      "label": "Diatom tekshiruvi",
+      "value": "suvga tushish"
+     }
+    ],
+    "caption": "Gistologik arxiv va dalolatnoma"
+   },
+   "teacher_notes": "Vaqt: 4 daq. Muhokama: Arxiv nega kerak? Doskada: Muddatlar jadvali. Tipik xato: Arxivni ekspertizadan keyin yo‘q qilish."
+  },
+  {
+   "title": "Tibbiy-kriminalistik tekshiruvlar",
+   "bullets": [
+    {
+     "text": "Tibbiy-kriminalistika bo‘limida diagnostik, identifikatsion, situatsion masalalar hal etiladi: trassologik, ballistik, identifikatsion, mikrologik, situatsion.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "317"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Trassologik tekshiruvning asosiy maqsadi — jarohat yoki izlar bo‘yicha shikastlovchi omilni aniqlash.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "317"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ballistik tekshiruv o‘qotar jarohatlar va portlash travmasida: jarohatlar soni, otish ketma-ketligi, distansiya, qurol va snaryad turi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "317–318"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Tibbiy kriminalistika",
+    "children": [
+     {
+      "label": "Trassologik",
+      "items": [
+       "Shikastlovchi omilni aniqlash"
+      ]
+     },
+     {
+      "label": "Ballistik",
+      "items": [
+       "Soni, ketma-ketligi, distansiya",
+       "Qurol va snaryad turi"
+      ]
+     },
+     {
+      "label": "Identifikatsion"
+     },
+     {
+      "label": "Mikrologik"
+     },
+     {
+      "label": "Situatsion"
+     }
+    ],
+    "caption": "Tibbiy-kriminalistika bo‘limi"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi tekshiruv qaysi savolga javob beradi? Doskada: Besh tur jadvali. Tipik xato: Barcha turlarni bir xil usul deb hisoblash."
+  },
+  {
+   "title": "Identifikatsion, mikrologik, situatsion tekshiruv",
+   "bullets": [
+    {
+     "text": "Identifikatsion tekshiruv shaxsi noma’lum murda yoki qoldiqning muayyan shaxsga tegishliligini aniqlaydi; so‘nggi bosqichda aynanlik haqida xulosa qilinadi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "318"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Suyak qoldiqlaridan tur, murdalar soni, irq, jins, taxminiy yosh, bo‘y uzunligi, kasallik va jarohatlar aniqlanadi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "318"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Mikrologik tekshiruv mikroizlar va mikrozarralarning o‘tishini, situatsion tekshiruv esa ma’lum harakatni sodir etish imkoniyatini o‘rganadi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "318–319"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Identifikatsion",
+      "items": [
+       "Noma’lum murda aynanligi",
+       "Suyaqdan: irq, jins, yosh, bo‘y"
+      ]
+     },
+     {
+      "title": "Mikrologik",
+      "items": [
+       "Mikroiz va zarralar o‘tishi"
+      ]
+     },
+     {
+      "title": "Situatsion",
+      "items": [
+       "Ma’lum harakat imkoniyati"
+      ]
+     }
+    ],
+    "caption": "Tekshiruvlar farqi"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Situatsion tekshiruvda nima solishtiriladi? Doskada: Uch bosqich. Tipik xato: Mikroizlarni ko‘z bilan ko‘rinadigan deb bilish."
+  },
+  {
+   "title": "Sud kimyo tekshiruvlari",
+   "bullets": [
+    {
+     "text": "Sud-kimyo tekshiruvi biologik ob’ektlarda toksik moddalar yoki hosilalarining mavjudligini tasdiqlash yoki inkor etish maqsadida o‘tkaziladi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "319–320"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Vazifalar: toksikologik ahamiyatli moddalarni topish va miqdoriy aniqlash, dori va narkotiklarni aniqlash, natijalarni izohlash, nobiologik dalillar tahlili.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "320"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Toksikologik tekshiruvda imkon qadar turli prinsipli kamida ikkita usul tavsiya etiladi; arxiv ob’ektlar spirtda sovutkichda bir yilgacha saqlanadi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+      "page": "320"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Maqsad",
+      "text": "Toksik moddalar bor-yo‘qligi"
+     },
+     {
+      "title": "Topish",
+      "text": "Toksikologik ahamiyatli moddalar, miqdori"
+     },
+     {
+      "title": "Dori, narkotik",
+      "text": "Aniqlash va izohlash"
+     },
+     {
+      "title": "Usullar",
+      "text": "≥ 2 xil prinsipli usul"
+     },
+     {
+      "title": "Arxiv",
+      "text": "Spirtda sovutkichda 1 yilgacha"
+     }
+    ],
+    "caption": "Sud-kimyo tekshiruvi"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega ikkita usul? Doskada: Dastlabki va tasdiqlovchi usullar. Tipik xato: Bitta rangli reaksiya bilan yakuniy xulosa berish."
+  },
+  {
+   "title": "Jinoyat tushunchasi",
+   "bullets": [
+    {
+     "text": "Jinoyatning belgilari: jamiyat uchun xavf, jinoiy huquqbuzarlik, aybdorlik va jazo.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "115"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Jinoiy kodeksda jazo tahdidi bilan taqiqlangan, aybli ijtimoiy xavfli qilmish (harakat yoki harakatsizlik) jinoyat deb topiladi (JK 14-modda).",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "115"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ijtimoiy xavfli qilmish Kodeks qo‘riqlaydigan ob’ektlarga zarar yetkazadi yoki real zarar xavfini keltirib chiqaradi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "115"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Jamiyat uchun xavf",
+      "text": "Ijtimoiy xavfli qilmish"
+     },
+     {
+      "title": "Jinoiy huquqbuzarlik",
+      "text": "JK 14: jazo tahdidi bilan taqiqlangan"
+     },
+     {
+      "title": "Aybdorlik",
+      "text": "Aybli harakat yoki harakatsizlik"
+     },
+     {
+      "title": "Jazo",
+      "text": "Jazo ko‘zda tutiladi"
+     }
+    ],
+    "caption": "Jinoyatning belgilari"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Tibbiyotda harakatsizlik jinoyat bo‘ladimi? Doskada: Jinoyat belgilari. Tipik xato: Har qanday salbiy oqibatni jinoyat deb baholash."
+  },
+  {
+   "title": "Aybning turlari: qasd",
+   "bullets": [
+    {
+     "text": "Ayb uchun qilmish ong va iroda nazorati ostida sodir etilgan bo‘lishi kerak; shaxs qasddan yoki ehtiyotsizlik orqasidan aybdor deb topiladi (JK 20-modda).",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "115"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "To‘g‘ri qasd: shaxs oqibatlarga ko‘zi yetgan va ularning yuz berishini istagan. Egri qasd: oqibatlarga ongli tarzda yo‘l qo‘ygan (JK 21-modda).",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "115"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tibbiy xodimlar faoliyati uchun to‘g‘ri qasddan sodir etilgan jinoyatlar xos emas; jinoiy abort va mansab soxtakorligi bunday jinoyatlarga taalluqli.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "115–116"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "To‘g‘ri qasd",
+      "items": [
+       "Oqibatlarga ko‘zi yetgan",
+       "Yuz berishini istagan"
+      ]
+     },
+     {
+      "title": "Egri qasd (JK 21)",
+      "items": [
+       "Oqibatlarga ko‘zi yetgan",
+       "Ongli ravishda yo‘l qo‘ygan"
+      ]
+     },
+     {
+      "title": "Tibbiyotda",
+      "items": [
+       "To‘g‘ri qasd xos emas",
+       "Misol: jinoiy abort, soxtakorlik"
+      ]
+     }
+    ],
+    "caption": "Qasd turlari"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: To‘g‘ri va egri qasd farqi nima? Doskada: Qasd turlari jadvali. Tipik xato: Tibbiy xodimlarning ko‘p jinoyatlarini qasddan deb baholash."
+  },
+  {
+   "title": "Aybning turlari: ehtiyotsizlik",
+   "bullets": [
+    {
+     "text": "O‘z-o‘ziga ishonish: oqibat kelib chiqishi mumkinligiga ko‘zi yetgan, lekin ularning kelib chiqmasligiga asossiz umid qilgan (JK 22-modda).",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "116"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Beparvolik: oqibatlarga ko‘zi yetmagan, lekin yetishi lozim va mumkin bo‘lgan.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "116"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Aksariyat holatlarda tibbiy xodimlar ehtiyotsizlik orqasidan sodir etilgan jinoyatlar uchun javobgarlikka tortiladi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "116"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "O‘z-o‘ziga ishonish",
+      "items": [
+       "Oqibatga ko‘zi yetgan",
+       "Asossiz umid (JK 22)"
+      ]
+     },
+     {
+      "title": "Beparvolik",
+      "items": [
+       "Ko‘zi yetmagan",
+       "Yetishi lozim va mumkin edi"
+      ]
+     },
+     {
+      "title": "Amaliyotda",
+      "items": [
+       "Tibbiy xodimlar aksariyat shu sababli javobgar"
+      ]
+     }
+    ],
+    "caption": "Ehtiyotsizlik turlari"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: O‘z-o‘ziga ishonish va beparvolikni farqlang. Doskada: Ikki shakl jadvali. Tipik xato: Beparvolikni qasd deb baholash."
+  },
+  {
+   "title": "Ehtiyotsizlik: ikki misol",
+   "bullets": [
+    {
+     "text": "Sababsiz, tayyorgarliksiz va yordamchilarsiz rejali operatsiya — o‘z-o‘ziga ishonish.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "116"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Vrach standartlarni bilmadi, asorat o‘limga olib keldi — beparvolik.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "116"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Misollar va tur",
+    "nodes": [],
+    "header": [
+     "Misol",
+     "Tur"
+    ],
+    "rows": [
+     [
+      "Tayyorgarliksiz rejali operatsiya",
+      "O‘z-o‘ziga ishonish"
+     ],
+     [
+      "Standartni bilmaslik",
+      "Beparvolik"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Misollarni turlarga ajrating. Doskada: Ikki misol jadvali. Tipik xato: Standartni bilmaslikni sababsiz holat deb hisoblash."
+  },
+  {
+   "title": "Oxirgi zaruriyat",
+   "bullets": [
+    {
+     "text": "Oxirgi zaruriyatda xavfni boshqa choralar bilan qaytarib bo‘lmasa va keltirilgan zarar oldi olingandan kam bo‘lsa, qilmish jinoyat emas (JK 38-modda).",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "117"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Misol: muassasadan tashqarida laringospazmda improvizatsiya vositalari bilan traxeostoma o‘rnatilgan; bemor hayoti saqlandi, keyin yiringli asorat bo‘ldi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "117"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Vrachning bunday harakatini jinoyat sifatida baholash mumkin emas.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "117"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "nodes": [
+     "Xavf boshqa chora bilan qaytmaydi",
+     "Zarar oldi olingandan kam",
+     "JK 38: jinoyat topilmaydi",
+     "Misol: laringospazmda traxeostoma"
+    ],
+    "caption": "Oxirgi zaruriyat mantig‘i"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Oxirgi zaruriyat shartlarini sanang. Doskada: Shartlar ro‘yxati. Tipik xato: Har qanday zararni zarurat bilan oqlash."
+  },
+  {
+   "title": "Asosli tavakkalchilik",
+   "bullets": [
+    {
+     "text": "Harakat zamonaviy ilmiy bilimga muvofiq bo‘lsa, maqsadga tavakkalsiz erishib bo‘lmasa va zarar oldi olinsa, tavakkalchilik asosli (JK 41-modda).",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "117"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Asosli tavakkalchilikda ijtimoiy foydali natijaga erishilmasa ham zarar uchun javobgarlik yuzaga kelmaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "117"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Odamlar halok bo‘lish xavfini bila turib qilingan tavakkalchilik asosli deb topilmaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "117"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Ilm",
+      "text": "Zamonaviy ilmiy bilimga muvofiq"
+     },
+     {
+      "title": "Zarurat",
+      "text": "Tavakkalsiz erishib bo‘lmaydi"
+     },
+     {
+      "title": "Oldini olish",
+      "text": "Zarar oldini olish choralari ko‘rilgan"
+     },
+     {
+      "title": "Istisno",
+      "text": "Halok bo‘lish xavfini bila turib — asossiz"
+     }
+    ],
+    "caption": "JK 41: asosli tavakkalchilik shartlari"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Qachon tavakkalchilik asosli? Doskada: Shartlar ro‘yxati. Tipik xato: Har qanday tavakkalni oqlash."
+  },
+  {
+   "title": "Tibbiy xodim aybini aniqlashning murakkabligi",
+   "bullets": [
+    {
+     "text": "Misol: tuman shifoxonasida yurak jarohati bor bemorda maxsus sharoit yo‘q, ko‘chirish va mutaxassis chaqirish imkonsiz; navbatchi jarroh yurak jarohatini tikdi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "117"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bu qaror hayot uchun ma’lum xavf tug‘diradi, ammo birdan-bir to‘g‘ri qaror bo‘lgan; kasb bilan bog‘liq tavakkalchilik asosli, harakat jinoyat emas.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "117–118"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tibbiyot xodimining aybini aniqlash sud-tergov idoralari uchun alohida murakkab holat.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "118"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega sud-tibbiy ekspertiza kerak? Doskada: Qaror zanjiri. Tipik xato: Noxush oqibatni avtomatik ayb deb baholash."
+  },
+  {
+   "title": "Komission ekspertizani tayinlash asoslari",
+   "bullets": [
+    {
+     "text": "Asos: surishtiruvchi, tergovchi, prokuror qarori yoki sud ajrimi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "134"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qaror bayon qismida ish tafsiloti, so‘ng ekspertiza turi va kimga tayinlangani, qaror qismida savollar ko‘rsatiladi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "134"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Savollar aniq, tushunarli bo‘lib, ekspertlar komissiyasi tasarrufidan chetga chiqmasligi kerak.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "134"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Asos",
+      "text": "Surishtiruvchi, tergovchi, prokuror qarori yoki sud ajrimi"
+     },
+     {
+      "title": "Bayon qismi",
+      "text": "Ish tafsiloti"
+     },
+     {
+      "title": "Tayinlash",
+      "text": "Ekspertiza turi va kimga"
+     },
+     {
+      "title": "Qaror qismi",
+      "text": "Aniq savollar, komissiya tasarrufida"
+     }
+    ],
+    "caption": "Qaror tarkibi"
+   },
+   "teacher_notes": "Vaqt: 4 daq. Muhokama: Savol komissiya vakolatidan tashqarida bo‘lsa nima qilinadi? Doskada: qaror tuzilishi. Tipik xato: ekspertiza arizachi iltimosi bilan tayinlanadi deb o‘ylash."
+  },
+  {
+   "title": "Taqdim etiladigan hujjatlar",
+   "bullets": [
+    {
+     "text": "Komissiyaga ish materiallari, tibbiy hujjatlar va tekshiruv uchun zarur obyektlar taqdim etiladi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "134"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Alohida kasallik tarixidan ko‘chirma va ma’lumotnomalar asosida ekspertiza o‘tkazilishiga yo‘l qo‘yilmaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "134"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Javobgarlikka tortilayotgan xodimning tavsifnomasi, idoraviy tekshiruvlar; o‘lim holatida — murda xulosasi yoki patologo-anatomik bayonnoma.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "135"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Taqdim etiladi",
+      "items": [
+       "Ish materiallari",
+       "Tibbiy hujjatlar",
+       "Xodim tavsifnomasi, idoraviy tekshiruv"
+      ]
+     },
+     {
+      "title": "O‘lim bo‘lsa",
+      "items": [
+       "Murda xulosasi",
+       "Yoki patologo-anatomik bayonnoma"
+      ]
+     },
+     {
+      "title": "Mumkin emas",
+      "items": [
+       "Kasallik tarixidan ko‘chirma",
+       "Ma’lumotnomalar asosida"
+      ]
+     }
+    ],
+    "caption": "Komissiyaga hujjatlar"
+   },
+   "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega ko‘chirma yetarli emas? Doskada: hujjatlar ro‘yxati. Tipik xato: kseronusxani asl nusxa o‘rnida har doim qabul qilish."
+  },
+  {
+   "title": "Ekspertlar komissiyasi tarkibi",
+   "bullets": [
+    {
+     "text": "Komission ekspertiza faqat sud-tibbiy ekspertiza byurolarida o‘tkaziladi; komissiya kamida uch kishidan iborat.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "135"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Muhokama qilinayotgan hodisa yuz bergan muassasa rahbarlari va natijadan manfaatdor shaxslar a’zo bo‘lolmaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "136"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Etakchi ekspert, ma’ruzachi va a’zolar teng protsessual huquq va majburiyatga ega.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "136"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Komissiya tarkibi",
+      "value": "≥ 3 kishi"
+     },
+     {
+      "label": "Joy",
+      "value": "sud-tibbiy byuro"
+     },
+     {
+      "label": "A’zo bo‘la olmaydi",
+      "value": "muassasa rahbarlari"
+     },
+     {
+      "label": "Huquq",
+      "value": "hammasida teng"
+     }
+    ],
+    "caption": "Ekspertlar komissiyasi"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega hodisa bo‘lgan muassasa vakili a’zo bo‘lolmaydi? Doskada: komissiya tarkibi. Tipik xato: etakchi ekspertga ustunlik berish."
+  },
+  {
+   "title": "Xulosani baholash va so‘roq",
+   "bullets": [
+    {
+     "text": "Qatnashchilar komissiya majlisida va to‘xtam tuzish bosqichida ishtirok eta olmaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "141"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Komissiya a’zolari faqat mavjud xulosa bo‘yicha, xulosa taqdim etilgandan keyin so‘roq qilinishi mumkin.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "141"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "JPK 187-moddaga ko‘ra xulosa boshqa dalillar bilan birga baholanadi va ustuvor kuchga ega emas.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "141"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Qatnashchilar",
+      "text": "Majlis va to‘xtam tuzishda ishtirok etmaydi"
+     },
+     {
+      "title": "So‘roq",
+      "text": "Xulosa taqdim etilgandan keyin, faqat xulosa bo‘yicha"
+     },
+     {
+      "title": "JPK 187",
+      "text": "Boshqa dalillar bilan birga baholanadi"
+     },
+     {
+      "title": "Kuchi",
+      "text": "Ustuvor kuchga ega emas"
+     }
+    ],
+    "caption": "Xulosani baholash"
+   },
+   "teacher_notes": "Vaqt: 4 daq. Muhokama: Ikki xulosa mos kelmasa nima qilinadi? Doskada: «xulosa → baholash → qaror». Tipik xato: ekspert xulosasini majburiy deb hisoblash."
+  },
+  {
+   "title": "Asosiy tushunchalar",
+   "bullets": [
+    {
+     "text": "Bemor — kasallik bor-yo‘qligidan qat’i nazar tibbiy yordamga murojaat etgan shaxs.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "143"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tibbiy yordam sifati — yordamning zamonaviy fan va standartlarga mosligini ko‘rsatuvchi belgilar majmui.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "143"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tibbiy standart — davolash-diagnostika choralarining hajmi va xarakteri tartibga solingan ketma-ketligi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "143"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Uch asosiy tushuncha",
+    "nodes": [],
+    "header": [
+     "Tushuncha",
+     "Mohiyati"
+    ],
+    "rows": [
+     [
+      "Bemor",
+      "Yordamga murojaat etgan shaxs"
+     ],
+     [
+      "Yordam sifati",
+      "Standartlarga moslik belgilari"
+     ],
+     [
+      "Standart",
+      "Choralar ketma-ketligi"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daq. Muhokama: Bemor tushunchasiga sog‘lom murojaat etuvchi ham kiradimi? Doskada: uchta ta’rifni qisqa yozing. Tipik xato: standartni «qat’iy buyruq» deb tushunish."
+  },
+  {
+   "title": "TYON tushunchasi",
+   "bullets": [
+    {
+     "text": "Tibbiy yordam nuqsoni (TYON) huquqiy tushuncha emas.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "144"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Keng ma’noda — umum qabul qilgan qoida, yo‘riqnoma, nizomni bajarmaslik yoki lozim bajarmaslik; noxush oqibat keltirgan yoki keltirishi mumkin bo‘lgan holat.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "144"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Jinoyat huquqi nuqtai nazaridan faqat sababiy bog‘liqlikda noxush oqibat keltirgan nuqsonlar inobatga olinadi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "145"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "TYON",
+    "children": [
+     {
+      "label": "Huquqiy tushuncha emas"
+     },
+     {
+      "label": "Keng ma’noda",
+      "items": [
+       "Yo‘riqnomani bajarmaslik",
+       "Lozim bajarmaslik"
+      ]
+     },
+     {
+      "label": "Jinoyat huquqida",
+      "items": [
+       "Faqat sababiy bog‘liqdagi nuqson"
+      ]
+     }
+    ],
+    "caption": "Tibbiy yordam nuqsoni (TYON)"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega TYON «huquqiy tushuncha emas»? Doskada: TYON ta’rifini o‘z so‘zingiz bilan yozdiring. Tipik xato: har bir nuqsonni jinoyat deb hisoblash."
+  },
+  {
+   "title": "Nuqsonlar mohiyati bo‘yicha to‘rt guruh",
+   "bullets": [
+    {
+     "text": "Nuqson mohiyatiga (yo‘l qo‘yilgan kamchilik mazmuniga) ko‘ra to‘rt guruh ajratiladi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "145"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Guruhlar: diagnostika, davolash, profilaktika va boshqa nuqsonlar.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "145"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Mohiyati bo‘yicha guruhlar",
+    "nodes": [],
+    "header": [
+     "Guruh",
+     "Misol"
+    ],
+    "rows": [
+     [
+      "Diagnostika",
+      "Kech tashxis qo‘yish"
+     ],
+     [
+      "Davolash",
+      "Dorini noto‘g‘ri qo‘llash"
+     ],
+     [
+      "Profilaktika",
+      "Sanitar qoidalarni buzish"
+     ],
+     [
+      "Boshqa",
+      "Hujjat yuritish xatosi"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daq. Muhokama: Qaysi guruh ekspertizada eng ko‘p uchraydi deb o‘ylaysiz? Doskada: to‘rt guruhli jadval. Tipik xato: guruhlarni aralashtirish."
+  },
+  {
+   "title": "Tashxisot va davolashdagi nuqsonlar",
+   "bullets": [
+    {
+     "text": "Asosiy kasallik (jarohat)ni yoki uning asoratini aniqlamaslik.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "145"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Muhim hamroh kasallikni aniqlamaslik.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "145"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kechikib shifoxonaga yotqizish; jarrohlik usulida davolashdagi kamchiliklar.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "145"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tibbiy muolajalarni tayinlash va o‘tkazishdagi xatolar; tug‘ruqni noratsional olib borish.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "145"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Dori-darmonlardan noto‘g‘ri foydalanish va davolashdagi boshqa nuqsonlar.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "145"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Tashxisotdagi nuqson",
+      "items": [
+       "Asosiy kasallik yoki asorat topilmagan",
+       "Muhim hamroh kasallik topilmagan",
+       "Kech tashxis"
+      ]
+     },
+     {
+      "title": "Davolashdagi nuqson",
+      "items": [
+       "Kechikib yotqizish",
+       "Jarrohlik, muolajalardagi xato",
+       "Tug‘ruqni noratsional olib borish",
+       "Dori-darmondan noto‘g‘ri foydalanish"
+      ]
+     }
+    ],
+    "caption": "Nuqsonlar mohiyati bo‘yicha: tashxisot va davolash"
+   },
+   "teacher_notes": "Vaqt: 3 daq. Muhokama: Kech tashxis va noto‘g‘ri tashxis farqi nimada? Doskada: to‘rt turni sanang. Tipik xato: asoratni aniqlamaslikni davolash nuqsoni deb hisoblash."
+  },
+  {
+   "title": "TYON joyi bo‘yicha: uch bosqich",
+   "bullets": [
+    {
+     "text": "Nuqson yo‘l qo‘yilgan joyga ko‘ra uch guruh farqlanadi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "146"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bular: shifoxonagacha bosqich, shifoxona bosqichi va boshqa muassasalar.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "146"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Joy bo‘yicha guruhlar",
+    "nodes": [],
+    "header": [
+     "Bosqich",
+     "Muassasa misoli"
+    ],
+    "rows": [
+     [
+      "Shifoxonagacha",
+      "Qishloq vrachlik punkti, poliklinika"
+     ],
+     [
+      "Shifoxona",
+      "Tuman shifoxonasi, tug‘ruq bo‘limi"
+     ],
+     [
+      "Boshqa",
+      "Sanatoriy, bolalar uyi"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daq. Muhokama: Joy bo‘yicha tasnif nima uchun kerak? Doskada: uch ustunli jadval. Tipik xato: tez yordamni shifoxona bosqichiga kiritish."
+  },
+  {
+   "title": "TYON sabablari: uch guruh",
+   "bullets": [
+    {
+     "text": "TYON sabablari — uni yuzaga keltirgan tafsilotlar; shartli ravishda uch guruhga bo‘linadi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "148"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Guruhlar: subyektiv, tashkiliy va obyektiv sabablar.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "148"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Sabab guruhlari",
+    "nodes": [],
+    "header": [
+     "Guruh",
+     "Misol"
+    ],
+    "rows": [
+     [
+      "Subyektiv",
+      "E’tiborsizlik, malaka yetishmasligi"
+     ],
+     [
+      "Tashkiliy",
+      "Vositalar yo‘qligi, tashkil kamchiligi"
+     ],
+     [
+      "Obyektiv",
+      "Kech murojaat, atipik kechish"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 3 daq. Muhokama: Uch guruhdan qaysi biri vrachga bog‘liq emas? Doskada: jadval. Tipik xato: obyektiv sababni vrach aybi deb qarash."
+  },
+  {
+   "title": "Oqibatga ta’siri va sababiy bog‘lanish",
+   "bullets": [
+    {
+     "text": "Jinoyat huquqida nuqson natijasida oqibat mavjudligi juda muhim, shuning uchun oqibatga ta’sir alohida o‘rganiladi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "148"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "TYON davolash muddatini cho‘zishi, nogironlik yoki o‘limga ta’sir etishi mumkin; ba’zan oqibatga umuman ta’sir qilmaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "148"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Faqat bevosita sabab-oqibat bog‘lanishi vrachni javobgarlikka tortish uchun asos bo‘ladi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "148"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Nuqson va oqibat",
+    "children": [
+     {
+      "label": "Oqibat zarur",
+      "items": [
+       "Jinoyat huquqida muhim"
+      ]
+     },
+     {
+      "label": "Ta’sir turlari",
+      "items": [
+       "Davolash muddatini cho‘zish",
+       "Nogironlik yoki o‘lim",
+       "Ta’sir qilmasligi mumkin"
+      ]
+     },
+     {
+      "label": "Javobgarlik asosi",
+      "items": [
+       "Faqat bevosita sabab-oqibat"
+      ]
+     }
+    ],
+    "caption": "TYONning oqibatga ta’siri"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: Bilvosita bog‘lanish javobgarlik asosi bo‘ladimi? Doskada: bevosita va bilvosita bog‘lanishni solishtiring. Tipik xato: har qanday nuqsonni oqibat sababi deb olish."
+  },
+  {
+   "title": "«Vrachning himoyalangan munosabati»",
+   "bullets": [
+    {
+     "text": "Noxush oqibat xavfi ba’zan vrachni tibbiy muolajalarni minimal hajmda o‘tkazishga undaydi — bu «himoyalangan munosabat».",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "148"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Chet el adabiyotida u «himoyalangan tibbiyot» (defensive medicine) deb ataladi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "149"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Uni aniqlash qiyin: tibbiy hujjatlar va huquqbuzarlikning subyektiv tomoni haqidagi materiallar o‘rganiladi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "149"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "nodes": [
+     "Noxush oqibat xavfi",
+     "Minimal hajmda muolaja",
+     "«Himoyalangan munosabat»",
+     "Defensive medicine (chet el)"
+    ],
+    "caption": "Himoyalangan munosabat"
+   },
+   "teacher_notes": "Vaqt: 4 daq. Muhokama: Bu munosabat bemorga qanday zarar yetkazadi? Doskada: «xavf → himoya → zarar» zanjiri. Tipik xato: uni ehtiyotkorlik deb maqtash."
+  },
+  {
+   "title": "Baholash algoritmi: uch bosqich",
+   "bullets": [
+    {
+     "text": "Algoritm TYON tahlilini ma’lum ketma-ketlikda olib borishni talab etadi.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "149"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "1) bemordagi patologiya; 2) vrach harakatlarini baholash; 3) harakat va oqibat o‘rtasida sababiy bog‘lanish.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "149"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Baholash algoritmi",
+    "nodes": [
+     "Patologik holat",
+     "Vrach harakatlari",
+     "Sababiy bog‘lanish"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega ketma-ketlikni o‘zgartirib bo‘lmaydi? Doskada: 3 bosqichli sxema. Tipik xato: oqibatdan boshlab, «teskari» baholash."
+  },
+  {
+   "title": "Oqibatga ta’sirning uch varianti",
+   "bullets": [
+    {
+     "text": "Patologiya tabiiy rivojlangan; TYON ta’sir qilmagan — sababiy bog‘lanish yo‘q.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "151"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "TYON ahvolni og‘irlashtirgan, moyillik yaratgan — bilvosita bog‘lanish.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "151"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "TYON yangi patologik jarayonga olib kelgan — bog‘lanish 3 xil ko‘rinishda.",
+     "source": {
+      "author": "G‘iyosov Z.A.",
+      "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+      "page": "151"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Oqibatga ta’sir variantlari",
+    "nodes": [],
+    "header": [
+     "Variant",
+     "Bog‘lanish"
+    ],
+    "rows": [
+     [
+      "Tabiiy rivojlanish",
+      "Yo‘q"
+     ],
+     [
+      "Ahvolni og‘irlashtirgan",
+      "Bilvosita"
+     ],
+     [
+      "Yangi jarayon",
+      "Bevosita yoki bilvosita"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 4 daq. Muhokama: Uch variantdan qaysi biri javobgarlikka eng yaqin? Doskada: jadval. Tipik xato: bilvosita bog‘lanishni bevosita deb yozish."
+  }
+ ],
+ "mcq": [
+  {
+   "question": "Mohiyatiga ko‘ra TYON qaysi to‘rt guruhga bo‘linadi?",
+   "options": [
+    "Diagnostika, davolash, profilaktika, boshqa",
+    "Subyektiv, tashkiliy, obyektiv, boshqa",
+    "Kech, erta, o‘z vaqtida, rejali",
+    "Shifoxona, poliklinika, sanatoriy, lazaret"
+   ],
+   "correct_index": 0,
+   "explanation": "Mohiyat bo‘yicha: diagnostika, davolash, profilaktika va boshqa nuqsonlar.",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "145"
+   }
+  },
+  {
+   "question": "Quyidagilardan qaysi biri TYONning obyektiv sababi?",
+   "options": [
+    "Bemorga e’tiborsizlik",
+    "Malaka yetishmasligi",
+    "Kasallikning atipik kechishi",
+    "Diagnostika vositalarining yo‘qligi"
+   ],
+   "correct_index": 2,
+   "explanation": "Obyektiv sabablarga kech murojaat, atipik kechish, bemor ahvolining og‘irligi kiradi; qolganlari subyektiv yoki tashkiliy.",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "148"
+   }
+  },
+  {
+   "question": "Baholash algoritmining ikkinchi bosqichida nima o‘rganiladi?",
+   "options": [
+    "Bemordagi patologik holat",
+    "Xulosa to‘xtamlarini yozish",
+    "Sababiy bog‘lanishning mavjudligi",
+    "Vrach harakatlarini shartlilik, asoslanganlik, o‘z vaqtidalik, texnika va to‘laqonlik jihatidan baholash"
+   ],
+   "correct_index": 3,
+   "explanation": "Algoritm: 1) patologiya; 2) vrach harakatlarini baholash; 3) sababiy bog‘lanish.",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "149"
+   }
+  },
+  {
+   "question": "Ingichka ichak charvisining yirtilishi aniqlanmagan holat (og‘ir birgalikdagi jarohat) qaysi bog‘lanishga misol?",
+   "options": [
+    "Bog‘lanish yo‘q",
+    "Bevosita bog‘lanish",
+    "Bilvosita bog‘lanish (moyillik yaratgan omil)",
+    "Qasddan zarar yetkazish"
+   ],
+   "correct_index": 2,
+   "explanation": "Manbada bu nuqson o‘limning bevosita sababi emas, ammo moyillik yaratgan omil sifatida keltirilgan.",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "151"
+   }
+  },
+  {
+   "question": "Ashyoviy dalil tushunchasi qaysi moddada keltirilgan?",
+   "options": [
+    "JPK 203-modda",
+    "JK 14-modda",
+    "JPK 70-modda",
+    "JK 38-modda"
+   ],
+   "correct_index": 0,
+   "explanation": "Ashyoviy dalil tushunchasi JPK 203-moddasida berilgan.",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "303"
+   }
+  },
+  {
+   "question": "Qon ekspertizasida masalalar qanday ketma-ketlikda hal etiladi?",
+   "options": [
+    "Shaxs, guruh, tur, borligi",
+    "Tur, shaxs, borligi, guruh",
+    "Guruh, borligi, tur, shaxs",
+    "Borligi, tur, guruh, muayyan shaxs"
+   ],
+   "correct_index": 3,
+   "explanation": "Avval qon borligi, keyin tur, guruh va muayyan shaxsga taalluqliligi aniqlanadi.",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "305"
+   }
+  },
+  {
+   "question": "Maniy borligini morfologik usul bilan aniqlashda qaysi natija musbat hisoblanadi?",
+   "options": [
+    "Bitta bo‘lsa-da butun spermatozoid",
+    "Faqat spermatozoid boshi",
+    "Faqat dumi",
+    "Kamida o‘nta bosh"
+   ],
+   "correct_index": 0,
+   "explanation": "Bitta bo‘lsa-da butun spermatozoid (bosh, tana, dum) topilsa natija musbat; alohida qismlar inobatga olinmaydi.",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "310"
+   }
+  },
+  {
+   "question": "Egri qasd nimani anglatadi?",
+   "options": [
+    "Oqibatlarni istagan",
+    "Oqibatlarga asossiz umid qilgan",
+    "Oqibatlarga ko‘zi yetmagan",
+    "Oqibatlarga ko‘zi yetgan va ularning yuz berishiga ongli y o‘l qo‘ygan"
+   ],
+   "correct_index": 3,
+   "explanation": "Egri qasd — shaxs oqibatlarga ko‘zi yetgan va ularning yuz berishiga ongli y o‘l qo‘ygan.",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "115"
+   }
+  },
+  {
+   "question": "Murda ekspertizasi o‘tkazilgan holatlarda sud-gistologik tekshiruv uchun materiallar qanday olinadi?",
+   "options": [
+    "Faqat shubha bo‘lganda",
+    "Barcha holatlarda",
+    "Faqat zo‘raki o‘limda",
+    "Faqat so‘ralganda"
+   ],
+   "correct_index": 1,
+   "explanation": "Murda ekspertizasi o‘tkazilgan barcha holatlarda sud-gistologik tekshiruv uchun materiallar olinishi kerak.",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "316"
+   }
+  },
+  {
+   "question": "Odamlar halok bo‘lish xavfini bila turib qilingan tavakkalchilik haqida qaysi ibora to‘g‘ri?",
+   "options": [
+    "Asosli deb topilmaydi",
+    "Asosli deb topiladi",
+    "Faqat jarrohlarda asosli",
+    "Faqat oxirgi zaruriyatda asosli"
+   ],
+   "correct_index": 0,
+   "explanation": "Odamlar halok bo‘lish xavfini bila turib qilingan tavakkalchilik asosli deb topilmaydi (JK 41-modda).",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "117"
+   }
+  },
+  {
+   "question": "Qon tomchisi 10–15 sm balandlikdan gorizontal yuzaga tushsa qanday dog‘ hosil qiladi?",
+   "options": [
+    "Noksimon, undov belgisi shaklida",
+    "Oqma iz",
+    "Mayda tishsimon chetli, sachrali dog‘",
+    "Dumaloq, chetlari tekis dog‘"
+   ],
+   "correct_index": 3,
+   "explanation": "10–15 sm balandlikdan gorizontal yuzaga tushgan tomchi dumaloq, chetlari tekis dog‘ hosil qiladi.",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "303-304"
+   }
+  },
+  {
+   "question": "Qon ko‘lmagidan namuna olishda kamida qancha miqdor flakonga olinadi?",
+   "options": [
+    "1 ml",
+    "5 ml",
+    "10 ml",
+    "50 ml"
+   ],
+   "correct_index": 2,
+   "explanation": "Qon ko‘lmagidan namuna 10 ml dan kam bo‘lmagan miqdorda flakonga olinadi.",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "304-305"
+   }
+  },
+  {
+   "question": "ABAcard testi nimani aniqlaydi?",
+   "options": [
+    "Faqat qon guruhini",
+    "Dog‘da qon borligi va uning insonga mansubligini bir vaqtda",
+    "Faqat DNK profilini",
+    "Faqat homiladorlikni"
+   ],
+   "correct_index": 1,
+   "explanation": "ABAcard testi dog‘da qon borligi va uning insonga mansubligini bir vaqtda aniqlaydi.",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "306-307"
+   }
+  },
+  {
+   "question": "Katta yoshlilarda va go‘daklarda qon dog‘ida qaysi gemoglobin turlari bo‘ladi?",
+   "options": [
+    "Katta yoshlida HbF, go‘dakda HbA",
+    "Katta yoshlida HbA, go‘dakda HbF",
+    "Ikkalasida ham HbA",
+    "Ikkalasida ham HbF"
+   ],
+   "correct_index": 1,
+   "explanation": "Katta yoshlilarda gemoglobin HbA, go‘daklarda HbF.",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "308"
+   }
+  },
+  {
+   "question": "Maniy dog‘larini tekshirishda qaysi usul ishonchli (taxminiy emas) hisoblanadi?",
+   "options": [
+    "Kartoshka sharbati bilan reaksiya",
+    "Florans reaksiyasi",
+    "Barberio reaksiyasi",
+    "Butun spermatozoid topilishi"
+   ],
+   "correct_index": 3,
+   "explanation": "Morfologik usul: bitta bo‘lsa-da butun spermatozoid (bosh, tana, dum) topilishi musbat natija; Florans va Barberio amaliy ahamiyatga ega emas.",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "310"
+   }
+  },
+  {
+   "question": "Taxminan necha foiz odamda guruhiy antigenlar ajratmalarda topiladi («ajratuvchilar»)?",
+   "options": [
+    "20%",
+    "50%",
+    "80%",
+    "100%"
+   ],
+   "correct_index": 2,
+   "explanation": "Taxminan 80% odamda guruhiy antigenlar ajratmalarda topiladi.",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "311"
+   }
+  },
+  {
+   "question": "Soch tekshiruvida taqqoslash namunasi qanday olinadi?",
+   "options": [
+    "Bitta tola yulib olinadi",
+    "Boshning besh sohasidan 20–30 tola tutami teriga yaqin qirqib olinadi",
+    "Faqat peshonadan 5 tola",
+    "Butun soch qirib olinadi"
+   ],
+   "correct_index": 1,
+   "explanation": "Taqqoslash namunasi boshning besh sohasidan (peshona, tepa, ikki chekka, ensa) 20–30 tola tutami teriga yaqin qirqib olinadi.",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "313"
+   }
+  },
+  {
+   "question": "Murda a’zo-to‘qimalarining birlamchi (formalinli) arxivi kamida qancha saqlanadi?",
+   "options": [
+    "6 oy",
+    "1 yil",
+    "2 yil",
+    "10 yil"
+   ],
+   "correct_index": 2,
+   "explanation": "Birlamchi (formalinli) arxiv kamida 2 yil, preparatlar va bloklar kamida 3 yil saqlanadi.",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "316-317"
+   }
+  },
+  {
+   "question": "Tibbiy-kriminalistik tekshiruvning ballistik turi qaysi holatda qo‘llanadi?",
+   "options": [
+    "Faqat zaharlanishda",
+    "O‘qotar jarohatlar va portlash travmasida",
+    "Faqat asfiksiyada",
+    "Faqat suyak qoldiqlarida"
+   ],
+   "correct_index": 1,
+   "explanation": "Ballistik tekshiruv o‘qotar jarohatlar va portlash travmasida: jarohatlar soni, otish ketma-ketligi, distansiya, qurol va snaryad turi.",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "317-318"
+   }
+  },
+  {
+   "question": "TYON sabablari qaysi uch guruhga bo‘linadi?",
+   "options": [
+    "Subyektiv, tashkiliy, obyektiv",
+    "Diagnostik, davolash, profilaktik",
+    "Shifoxonagacha, shifoxona, boshqa",
+    "Birlamchi, takroriy, qo‘shimcha"
+   ],
+   "correct_index": 0,
+   "explanation": "TYON sabablari shartli ravishda subyektiv, tashkiliy va obyektiv guruhlarga bo‘linadi.",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "148"
+   }
+  }
+ ],
+ "extras": [
+  {
+   "text": "Eslab qolish: baholash mezonlari — shartlilik, asoslanganlik, o‘z vaqtidalik, texnika, to‘laqonlik (besh «to‘g‘ri» harakat belgisi).",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "150"
+   }
+  },
+  {
+   "text": "Komissiya tarkibida hodisa yuz bergan muassasa rahbarlari bo‘lishi mumkin emas — xolislikni saqlash qoidasi.",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "136"
+   }
+  },
+  {
+   "text": "Qon ko‘lmagi ko‘p qon yo‘qotilganda yoki singdirish xususiyati past materialda hosil bo‘ladi; tomchining tushish balandligi katta bo‘lsa, dog‘ atrofida sachralar paydo bo‘ladi.",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "303–304"
+   }
+  },
+  {
+   "text": "1985 yilda A. Djeffris inson genomida minisatellit markerlarning yuqori polimorf oilasini aniqlagan va DNK tekshiruvining sud-biologik ahamiyatini ilgari surgan.",
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "320"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "G‘iyosov Z.A.",
+   "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+   "year": 2018,
+   "pages": "Bob 13. Ashyoviy dalillarni sud-tibbiy tekshirish"
+  },
+  {
+   "author": "G‘iyosov Z.A.",
+   "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+   "year": 2012,
+   "pages": "11-bob. Tibbiy yordam nuqsonlari; bet 143-154"
+  },
+  {
+   "author": "Ромодановский П.О., Баринов Е.Х.",
+   "title": "Судебная медицина в схемах и рисунках: учебное пособие, М.: Проспект (egasi taqdim etgan; yopiq foydalanish)",
+   "year": 2017,
+   "pages": "7-modul. Ashyoviy dalillar ekspertizasi; bet 460-491"
+  },
+  {
+   "author": "Харин Г.М. (Kharin G.M.)",
+   "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+   "year": 2006,
+   "pages": "X bo‘lim. Biologik ashyoviy dalillar tekshiruvi; bet 192-213"
+  },
+  {
+   "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+   "title": "Simpson's Forensic Medicine, 13th ed.",
+   "year": 2011,
+   "pages": "Chapter 23. Principles of forensic science, pp. 216–234"
+  },
+  {
+   "author": "G‘iyosov Z.A.",
+   "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+   "year": 2012,
+   "pages": "9-bob. Tibbiy xodimlarning jinoiy javobgarligi; bet 115-133"
+  },
+  {
+   "author": "G‘iyosov Z.A.",
+   "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+   "year": 2012,
+   "pages": "10-bob. Tibbiy xodimlarning kasb huquqbuzarliklari bo‘yicha tekshiruvlar; bet 134-142"
+  }
+ ]
 }

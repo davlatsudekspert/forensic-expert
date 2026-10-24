@@ -23,7 +23,16 @@
           "uncertain": false
         },
         {
-          "text": "Davomi: 12.3 jinsiy holatlar; 12.4 jinsiy jinoyatlar (nomusga tegish, besoqolbozlik, fahsh harakatlari, tanosil kasalliklari va OIV — odam immunitet tanqisligi virusi — yuqtirish).",
+          "text": "Davomi: 12.3 jinsiy holatlar.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "288–299"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "12.4 jinsiy jinoyatlar (nomusga tegish, besoqolbozlik, fahsh harakatlari, tanosil kasalliklari va OIV — odam immunitet tanqisligi virusi — yuqtirish).",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -41,7 +50,42 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Bob 12 rejasi",
+        "children": [
+          {
+            "label": "12.1 Tan jarohatlari",
+            "items": []
+          },
+          {
+            "label": "12.2 Salomatlik holati",
+            "items": [
+              "Simulyasiya, aggravatsiya",
+              "Sun’iy kasallik, a’zobuzarlik"
+            ]
+          },
+          {
+            "label": "12.3 Jinsiy holatlar",
+            "items": []
+          },
+          {
+            "label": "12.4 Jinsiy jinoyatlar",
+            "items": [
+              "Nomusga tegish, besoqolbozlik",
+              "Fahsh, tanosil kasalliklari, OIV"
+            ]
+          },
+          {
+            "label": "12.5 Ekspertiza tartibi",
+            "items": [
+              "Olti bosqichli algoritm"
+            ]
+          }
+        ],
+        "caption": "G‘iyosov, 275–300-betlar",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama savollari: 1) Nima uchun tirik shaxslar ekspertizasi eng ko‘p uchraydi deb o‘ylaysiz? 2) Tibbiy profilaktika shifokori bu ekspertizalarga qanday duch kelishi mumkin? Doskada: bobning 5 bo‘limini ustun shaklida yozing (12.1–12.5). Tipik xato: talabalar tirik shaxslar ekspertizasini faqat jarohatlar bilan cheklaydi, jinsiy holat va salomatlik masalalarini unutadi."
     },
     {
@@ -76,31 +120,40 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ekspertiza turlari",
-        "nodes": [],
-        "header": [
-          "Turi",
-          "Nima aniqlanadi"
+        "kind": "tree",
+        "root": "Tirik shaxslar ekspertizasi",
+        "children": [
+          {
+            "label": "Tan jarohatlari",
+            "items": [
+              "Xarakteri",
+              "Og‘irlik darajasi"
+            ]
+          },
+          {
+            "label": "Jinsiy holatlar",
+            "items": [
+              "Jins, bokiralik",
+              "Homiladorlik, tug‘ruq"
+            ]
+          },
+          {
+            "label": "Jinsiy jinoyatlar",
+            "items": [
+              "Zo‘rlash",
+              "Besoqolbozlik, fahsh harakatlari"
+            ]
+          },
+          {
+            "label": "Salomatlik va yosh",
+            "items": [
+              "Simulyasiya, sun’iy kasallik",
+              "Yosh"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Tan jarohatlari",
-            "Xarakteri va og‘irlik darajasi"
-          ],
-          [
-            "Jinsiy holatlar",
-            "Jins, bokiralik, homiladorlik, tug‘ruq"
-          ],
-          [
-            "Jinsiy jinoyatlar",
-            "Zo‘rlash, besoqolbozlik, fahsh harakatlari"
-          ],
-          [
-            "Salomatlik va yosh",
-            "Simulyasiya, sun’iy kasallik, yosh"
-          ]
-        ]
+        "caption": "Ekspertiza turlari",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama savollari: 1) Qaysi turda jabrlanuvchi, qaysi turda gumondor tekshiriladi? 2) Ekspertiza nega faqat sud-tibbiy muassasada emas, davolash muassasasida ham o‘tishi mumkin? Doskada: jadvalni ko‘chirib, har turga bittadan hayotiy misol yozdiring. Tipik xato: jinsiy holat (masalan, bokiralik) va jinsiy jinoyat (nomusga tegish) turlarini aralashtirish."
     },
@@ -179,16 +232,27 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Og‘irlik zinapoyasi",
-        "nodes": [
-          "Yengil: 6 kungacha",
-          "Qisqa muddatli yengil: 6–21 kun",
-          "O‘rtacha og‘ir: 21 kundan ortiq",
-          "Og‘ir: hayot xavfi yoki ≥33%"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Yengil",
+            "text": "6 kungacha"
+          },
+          {
+            "title": "Qisqa muddatli yengil",
+            "text": "6–21 kun"
+          },
+          {
+            "title": "O‘rtacha og‘ir",
+            "text": "21 kundan ortiq"
+          },
+          {
+            "title": "Og‘ir",
+            "text": "Hayot xavfi yoki ≥33%"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Og‘irlik zinapoyasi",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Nega yengil jarohat ikki turga bo‘linadi? 2) Qaysi moddalar qaysi darajani belgilaydi? Doskada: 104, 105, 109-moddalarni og‘irlik zinapoyasi bilan bog‘lab chizing. Tipik xato: 21 kunning o‘zini o‘rtacha og‘ir deb hisoblash; o‘rtacha og‘ir uchun 21 kundan ORTIQ bo‘lishi kerak."
     },
@@ -224,31 +288,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Daraja va belgi",
-        "nodes": [],
-        "header": [
-          "Daraja",
-          "Belgi"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Og‘ir",
+            "items": [
+              "Hayot xavfi",
+              "≥33% yo‘qotish va boshqalar"
+            ]
+          },
+          {
+            "title": "O‘rtacha og‘ir",
+            "items": [
+              "10–33% yo‘qotish",
+              "21 kundan ortiq buzilish"
+            ]
+          },
+          {
+            "title": "Yengil",
+            "items": [
+              "Qisqa muddatli: 10% gacha yoki 6–21 kun",
+              "Oddiy: buzilish 6 kungacha"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Og‘ir",
-            "Hayot xavfi, ≥33% yo‘qotish va boshqalar"
-          ],
-          [
-            "O‘rtacha og‘ir",
-            "10–33% yo‘qotish yoki 21 kundan ortiq"
-          ],
-          [
-            "Yengil (qisqa muddatli)",
-            "10% gacha yoki 6–21 kun"
-          ],
-          [
-            "Yengil",
-            "Buzilish 6 kungacha"
-          ]
-        ]
+        "caption": "Daraja va belgi",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 10 daqiqa. Muhokama: 1) Nega klinik og‘irlik va sud-tibbiy og‘irlik farq qiladi? 2) Bir necha mezon bo‘lsa qaysi biri tanlanadi? Doskada: 12.1-jadvalni o‘z so‘zlaringiz bilan qayta chizing. Tipik xato: klinik jihatdan ‘og‘ir bemor’ni avtomatik ‘og‘ir tan jarohati’ deb yozish. Tezkor savol: 15 kunlik buzilish qaysi darajaga kiradi?"
     },
@@ -292,7 +357,41 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Hayot uchun xavfli",
+        "children": [
+          {
+            "label": "Bo‘shliqqa o‘tuvchi yara",
+            "items": [
+              "Kalla, ko‘krak, qorin"
+            ]
+          },
+          {
+            "label": "Suyak sinishi",
+            "items": [
+              "Kalla, bo‘yin umurtqalari"
+            ]
+          },
+          {
+            "label": "Qon tomir, kuyish",
+            "items": [
+              "Yirik qon tomirlar jarohati",
+              "Og‘ir kuyishlar"
+            ]
+          },
+          {
+            "label": "Tahdidli holat",
+            "items": [
+              "Og‘ir shok, II–III daraja koma",
+              "Ko‘p qon yo‘qotish",
+              "Sepsis, peritonit, emboliya"
+            ]
+          }
+        ],
+        "caption": "Misollar",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Nega tibbiy yordam ko‘rsatilishi bahoga ta’sir qilmaydi? 2) Sabab bog‘liqligini qanday isbotlaymiz? Doskada: ‘jarohat → hayotga tahdid → og‘ir tan jarohati’ zanjirini chizing. Tipik xato: shifokor tahdidni bartaraf etgani uchun jarohatni og‘ir emas deb baholash. Tezkor savol: tasodifiy bog‘liq bo‘lgan holat og‘ir jarohat mezoniga kiradimi?"
     },
     {
@@ -327,27 +426,31 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Foiz va og‘irlik darajasi",
-        "nodes": [],
-        "header": [
-          "Yo‘qotilish",
-          "Og‘irlik"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Og‘ir",
+            "value": "≥ 33",
+            "unit": "%"
+          },
+          {
+            "label": "O‘rtacha og‘ir",
+            "value": "10–33",
+            "unit": "%"
+          },
+          {
+            "label": "Yengil (qisqa buzilish)",
+            "value": "≤ 10",
+            "unit": "%"
+          },
+          {
+            "label": "Shartli turg‘un",
+            "value": "> 120",
+            "unit": "kun"
+          }
         ],
-        "rows": [
-          [
-            "33% dan kam bo‘lmagan",
-            "Og‘ir"
-          ],
-          [
-            "10% dan 33% gacha",
-            "O‘rtacha og‘ir"
-          ],
-          [
-            "10% gacha",
-            "Yengil (qisqa buzilish bilan)"
-          ]
-        ]
+        "caption": "Foiz va og‘irlik darajasi",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega kasbiy mehnat qobiliyati og‘irlik mezoni emas? 2) Nega 120 kun ‘shartli’ deyiladi? Doskada: umumiy va kasbiy mehnat qobiliyatini ikki ustunda yozing, ostiga foiz shkalasini chizing. Tipik xato: umumiy va kasbiy mehnat qobiliyatini aralashtirish; foizni kun bilan almashtirish."
     },
@@ -383,31 +486,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Kunlar chegarasi va baho",
-        "nodes": [],
-        "header": [
-          "Davomiylik",
-          "Baho"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Yengil",
+            "value": "≤ 6",
+            "unit": "kun"
+          },
+          {
+            "label": "Yengil (qisqa buzilish)",
+            "value": "6–21",
+            "unit": "kun"
+          },
+          {
+            "label": "O‘rtacha og‘ir",
+            "value": "> 21",
+            "unit": "kun"
+          }
         ],
-        "rows": [
-          [
-            "6 kungacha",
-            "Yengil"
-          ],
-          [
-            "6 kundan ortiq, 21 kungacha",
-            "Yengil, sog‘liq qisqa buzilgan"
-          ],
-          [
-            "21 kundan ortiq",
-            "O‘rtacha og‘ir"
-          ],
-          [
-            "120 kundan ortiq",
-            "Shartli turg‘un yo‘qotish"
-          ]
-        ]
+        "caption": "Kunlar chegarasi va baho",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Davolanish muddati va sog‘liq buzilishi davomiyligi nega bir xil emas? 2) Bemor shifokorga kech murojaat qilsa, davomiylik qanday baholanadi? Doskada: 6, 21 va 120 kunlik vaqt chizig‘ini chizib, har bo‘lakka baho yozing. Tipik xato: 21 kunni ‘o‘rtacha og‘ir’ deb hisoblash; aslida o‘rtacha og‘ir — 21 kundan ortiq."
     },
@@ -486,36 +584,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Yo‘qotish va baho",
-        "nodes": [],
-        "header": [
-          "Qobiliyat",
-          "Holat",
-          "Baho"
+        "kind": "tree",
+        "root": "Qobiliyat yo‘qotilishi",
+        "children": [
+          {
+            "label": "Ko‘rish",
+            "items": [
+              "Ikkala ko‘z qaytmas — og‘ir",
+              "Bir sog‘ ko‘z — og‘ir (>1/3)"
+            ]
+          },
+          {
+            "label": "So‘zlash",
+            "items": [
+              "Til butunlay yoki yarmi yo‘q — og‘ir"
+            ]
+          },
+          {
+            "label": "Eshitish",
+            "items": [
+              "Bir quloq — o‘rtacha og‘ir",
+              "Ikkala quloq — og‘ir"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Ko‘rish",
-            "Ikkala ko‘z qaytmas yo‘qolgan",
-            "Og‘ir"
-          ],
-          [
-            "Ko‘rish",
-            "Bir sog‘ ko‘z yo‘qolgan",
-            "Og‘ir (1/3 dan ortiq)"
-          ],
-          [
-            "So‘zlash",
-            "Til butunlay yoki yarmi yo‘q",
-            "Og‘ir"
-          ],
-          [
-            "Eshitish",
-            "Bir quloq / ikkala quloq",
-            "O‘rtacha / og‘ir"
-          ]
-        ]
+        "caption": "Yo‘qotish va baho",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega bir ko‘z yo‘qolishi og‘ir, bir quloq esa o‘rtacha og‘ir hisoblanadi? 2) Ko‘rmaydigan ko‘z yo‘qolganda nega boshqa mezon ishlatiladi? Doskada: jadvalni o‘zlari chizsin, har qatorga umumiy mehnat qobiliyatining 1/3 qismi bilan bog‘lab izoh yozsin. Tipik xato: bir quloq va ikkala quloq holatini aralashtirish; eshitishni ‘3-5 sm masofada so‘zlashuv nutqini eshita olmaslik’ mezonidan farqlamaslik."
     },
@@ -523,7 +617,7 @@
       "title": "A’zo va nasl qoldirish qobiliyatining yo‘qotilishi",
       "bullets": [
         {
-          "text": "Qo‘l yoki oyoqning yo‘qotilishi — ularning tanadan uzilishi yoki faoliyatining turg‘un yo‘qolishi (falajlik va shu kabi holatlar). Kaft yoki tovon yo‘qotilishi ham qo‘l yoki oyoq yo‘qotilishiga tenglashtiriladi.",
+          "text": "Qo‘l yoki oyoqning yo‘qotilishi — tanadan uzilishi yoki faoliyatining turg‘un yo‘qolishi (falajlik); kaft yoki tovon yo‘qotilishi ularga tenglashtiriladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -532,7 +626,7 @@
           "uncertain": false
         },
         {
-          "text": "Biron-bir a’zo yoki uning funksiyasining yo‘qotilishiga olib kelgan shikastlanish og‘ir tan jarohati hisoblanadi. Bitta urug‘don, tuxumdon yoki buyrak yo‘qotilishi ham shu qatorga kiradi.",
+          "text": "A’zo yoki funksiya yo‘qotilishiga olib kelgan shikast og‘ir tan jarohati; bitta urug‘don, tuxumdon yoki buyrak yo‘qotilishi ham shu qatorga kiradi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -566,7 +660,7 @@
       "title": "Homiladorlikning uzilishi mezoni",
       "bullets": [
         {
-          "text": "Homiladorlikning uzilishi — muddatidan qat’i nazar homila tushishi, ona qornida o‘lishi yoki erta tug‘ruq tufayli homiladorlik to‘xtashi. Bunday shikastlanish og‘ir jarohat sanaladi.",
+          "text": "Homiladorlikning uzilishi — muddatidan qat’i nazar homila tushishi, ona qornida o‘lishi yoki erta tug‘ruq; bunday shikastlanish og‘ir jarohat sanaladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -593,7 +687,7 @@
           "uncertain": false
         },
         {
-          "text": "Hayotga layoqatli tirik go‘dak tug‘ilsa yoki bachadondan tashqari homiladorlik uzilsa, og‘irlik boshqa mezonlar (hayot uchun xavf, sog‘liq buzilishi davomiyligi, mehnat qobiliyati) bo‘yicha aniqlanadi.",
+          "text": "Hayotga layoqatli tirik go‘dak tug‘ilsa yoki bachadondan tashqari homiladorlik uzilsa, og‘irlik boshqa mezonlar bo‘yicha aniqlanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -777,7 +871,7 @@
       "title": "Salomatlik holatini aniqlash va simulyasiya",
       "bullets": [
         {
-          "text": "Tayinlanish holatlari: kasallik tufayli sudga yoki tergovga kelmaslik, mahbusning ishlashdan bosh tortishi, hukm ijrosini kechiktirish, harbiy xizmatdan bosh tortish.",
+          "text": "Tayinlanadi: kasallik tufayli sudga yoki tergovga kelmaganda, mahbus ishlashdan bosh tortganda, hukm ijrosini kechiktirishda, harbiy xizmatdan bosh tortganda.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -848,36 +942,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Uch tushunchani solishtirish",
-        "nodes": [],
-        "header": [
-          "Tushuncha",
-          "Mohiyati",
-          "Maqsad/holat"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Simulyasiya",
+            "items": [
+              "Yo‘q kasallikni bor deb ko‘rsatish",
+              "Jazodan, harbiy xizmatdan qutulish"
+            ]
+          },
+          {
+            "title": "Aggravatsiya",
+            "items": [
+              "Bor kasallikni og‘irroq ko‘rsatish",
+              "Sub’ektiv belgilar; davoni rad etish"
+            ]
+          },
+          {
+            "title": "Dissimulyasiya",
+            "items": [
+              "Kasallikni yoki jarohatni yashirish",
+              "Haydovchi, uchuvchi, g‘avvos"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Simulyasiya",
-            "Yo‘q kasallikni bor deb ko‘rsatish",
-            "Jazodan, harbiy xizmatdan qutulish"
-          ],
-          [
-            "Aggravatsiya",
-            "Bor kasallik belgisini og‘irroq ko‘rsatish",
-            "Sub’ektiv belgilar; davoni rad etish"
-          ],
-          [
-            "Dissimulyasiya",
-            "Kasallikni yoki jarohatni yashirish",
-            "Haydovchi, uchuvchi, g‘avvos"
-          ],
-          [
-            "Patologik shakl",
-            "Simulyasiya/aggravatsiya maqsadsiz bo‘ladi",
-            "Nerv yoki ruhiy kasallik alomati"
-          ]
-        ]
+        "caption": "Patologik shakl — maqsadsiz, nerv/ruhiy kasallik alomati",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 10 daqiqa. Muhokama: 1) Nega harbiy bilim yurtiga kiruvchilar yoki uchuvchilar dissimulyasiya qilishi mumkin? 2) Qasddan va patologik simulyasiyaning farqi nimada? Doskada chizish: ikki yo‘nalishli o‘q — simulyasiya (yo‘qni ko‘rsatish) va dissimulyasiya (borni yashirish). Manbadagi qo‘shimcha misol: yo‘l-transport hodisasida aybdor haydovchi mastlikni, jinoyatchi jarohatni, ayrim ayollar homiladorlik yoki abortni yashirishi mumkin. Tipik xato: talabalar aggravatsiyani simulyasiya bilan aralashtiradi, chunki aggravatsiyada kasallik haqiqatan mavjud."
     },
@@ -928,7 +1018,7 @@
       "title": "Sun’iy kasalliklar",
       "bullets": [
         {
-          "text": "Teri va teri osti: sun’iy shish, o‘sma, abssess, flegmona, dermatit. Siqib boylash yoki ko‘p marta yengil zarba shishga, teri ostiga parafin, vazelin yuborish o‘smaga olib keladi.",
+          "text": "Teri va teri osti: sun’iy shish, o‘sma, abssess, flegmona, dermatit.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -937,16 +1027,76 @@
           "uncertain": false
         },
         {
-          "text": "Ichki a’zolarda kam uchraydi: surgi dori yoki sovun eritmasi — o‘tkir gastroenterit, ko‘p osh tuzi — nefrozo-nefrit, efedrin kabi moddalar — gipertonik kasallik alomatlari.",
+          "text": "Siqib boylash yoki ko‘p marta yengil zarba shishga, teri ostiga parafin, vazelin yuborish o‘smaga olib keladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "286"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ichki a’zolarda kam: surgi dori yoki sovun — o‘tkir gastroenterit, ko‘p osh tuzi — nefrozo-nefrit, efedrin kabi moddalar — gipertonik kasallik alomatlari.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
             "page": "286-287"
           },
           "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Sun’iy kasalliklar",
+        "children": [
+          {
+            "label": "Teri va teri osti",
+            "items": [
+              "Siqib boylash — shish",
+              "Parafin, vazelin — o‘sma"
+            ]
+          },
+          {
+            "label": "Ichki a’zolar",
+            "items": [
+              "Surgi dori — gastroenterit",
+              "Osh tuzi — nefrozo-nefrit",
+              "Efedrin — gipertoniya"
+            ]
+          },
+          {
+            "label": "Ko‘z va quloq",
+            "items": [
+              "Chang, kislota — konyunktivit",
+              "Yot jism, nog‘ora teshilishi"
+            ]
+          },
+          {
+            "label": "To‘g‘ri ichak",
+            "items": [
+              "Sun’iy tushish — orqa teshikda jarohat"
+            ]
+          }
+        ],
+        "caption": "Usul va natija",
+        "nodes": []
+      },
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Sun’iy kasallik simulyasiyadan nimasi bilan farq qiladi (soxta kasallik ko‘rsatish va shikastlash orqali kasallik chaqirish)? 2) Nega ichki a’zolarda sun’iy kasallik kam uchraydi? Doskada: a’zolar tizimi bo‘yicha (teri, ichki a’zolar, ko‘z, quloq) usullar ustunini chizdiring. Tipik xato: sun’iy kasallikni oddiy simulyasiya bilan aralashtirish va soxta to‘g‘ri ichak tushishini chin tushish deb baholash. Qo‘shimcha: manbada bu holat maqsadi bo‘yicha simulyasiyaga o‘xshash, hayotga jiddiy xavf solmaydigan usullar bilan amalga oshiriladi, deyiladi."
+    },
+    {
+      "title": "Sun’iy kasalliklar (davomi)",
+      "bullets": [
+        {
+          "text": "Ko‘z: ishqalash, chang, qum, kislota yoki ishqor kon’yunktivit va keratit chaqiradi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "287"
+          },
+          "uncertain": false
         },
         {
-          "text": "Ko‘z: ishqalash, chang, qum, kislota yoki ishqor kon’yunktivit va keratit chaqiradi. Quloq: yo‘lga yot jism kiritiladi, nog‘ora parda sanchuvchi jism bilan teshiladi.",
+          "text": "Quloq: tashqi eshitish yo‘liga yot jism kiritiladi, nog‘ora parda sanchuvchi jism bilan teshiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -999,31 +1149,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "O‘zini shikastlash belgilari",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Mazmuni"
+        "kind": "tree",
+        "root": "O‘zini shikastlash belgilari",
+        "children": [
+          {
+            "label": "Joylashuv",
+            "items": [
+              "Qo‘l yetadigan soha",
+              "Asosan kaft"
+            ]
+          },
+          {
+            "label": "Qurol",
+            "items": [
+              "O‘tkir, o‘qotar",
+              "Ba’zan o‘tmas jism"
+            ]
+          },
+          {
+            "label": "Yaralar",
+            "items": [
+              "Yaqinida bir necha yuzaki yara"
+            ]
+          },
+          {
+            "label": "Amputatsiya",
+            "items": [
+              "Turli sathda",
+              "Baxtsiz hodisada bir sathda"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Joylashuv",
-            "Qo‘l yetadigan soha, asosan kaft"
-          ],
-          [
-            "Qurol",
-            "O‘tkir, o‘qotar, ba’zan o‘tmas jism"
-          ],
-          [
-            "Yaralar",
-            "Yaqinida bir necha yuzaki yara"
-          ],
-          [
-            "Amputatsiya",
-            "Turli sathda (baxtsiz hodisada bir sathda)"
-          ]
-        ]
+        "caption": "Belgilar",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega o‘zini shikastlashda yaralar qo‘li yetadigan sohada joylashadi? 2) Barmoq amputatsiyasi sathi nimani ko‘rsatadi? Doskada: kaft va yaqin sohadagi bir necha yuzaki yaraning sxemasini chizdiring. Tipik xato: bitta belgiga qarab xulosa qilish; belgilar majmui baholanadi. Qo‘shimcha: o‘qotar jarohatda tirab yoki yaqin masofadan otishga xos belgilar bo‘ladi, ammo sochiq, choyshab orqali otilsa jarohat uzoq masofadan otishga o‘xshashi mumkin."
     },
@@ -1093,31 +1251,33 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Germafroditizm turlari",
-        "nodes": [],
-        "header": [
-          "Tur",
-          "Jinsiy bez",
-          "Tashqi alomat"
+        "kind": "tree",
+        "root": "Germafroditizm",
+        "children": [
+          {
+            "label": "Chin",
+            "items": [
+              "Erkak va ayol bezi",
+              "Tashqi belgi erkak yoki ayolga o‘xshash"
+            ]
+          },
+          {
+            "label": "Soxta erkak",
+            "items": [
+              "Yorg‘oq (spermatogenez)",
+              "Ayolcha: kichik olat, kriptorxizm"
+            ]
+          },
+          {
+            "label": "Soxta ayol",
+            "items": [
+              "Tuxumdon (ovogenez)",
+              "Erkakcha: klitor gipertrofiyasi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Chin germafroditizm",
-            "Erkak va ayol bezi (spermatogenez, ovogenez)",
-            "Erkakka yoki ayolga o‘xshash"
-          ],
-          [
-            "Soxta erkak germafrodit",
-            "Yorg‘oq bor (spermatogenez)",
-            "Ayolcha: kichik olat, kriptorxizm"
-          ],
-          [
-            "Soxta ayol germafrodit",
-            "Tuxumdon bor (ovogenez)",
-            "Erkakcha: klitor gipertrofiyasi"
-          ]
-        ]
+        "caption": "Germafroditizm turlari",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Jinsni aniqlash ekspertizasi qanday hollarda kerak bo‘ladi? 2) Nega tashqi belgilarga qarab xulosa qilish yetarli emas? Doskada jadvalni chizdiring: chin, soxta erkak, soxta ayol — bez va tashqi belgilarni yozing. Tipik xato: Diqqat! Chin germafroditizmda ikkala bez bor, soxtasida bitta jinsning bezi bor. Talabalar buni aralashtiradi."
     },
@@ -1125,7 +1285,7 @@
       "title": "Jinsiy yetuklikni aniqlash",
       "bullets": [
         {
-          "text": "Jinsiy yetuklik — salomatlikka ziyon yetkazmay jinsiy hayot olib borish imkonini beruvchi rivojlanish darajasi. Ayollarda aloqa, homiladorlik, tug‘ish, emizish qobiliyatini qamraydi.",
+          "text": "Jinsiy yetuklik — salomatlikka ziyon yetkazmay jinsiy hayot olib borish imkonini beruvchi rivojlanish darajasi (qizlarda aloqa, homiladorlik, tug‘ish, emizish).",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1143,7 +1303,7 @@
           "uncertain": false
         },
         {
-          "text": "Qizlarda tana bo‘yi tik holatda kamida 150 sm, o‘tirganda 80 sm bo‘lishi lozim. Tos: yonbosh o‘siqlari 26-27, katta ko‘stlar 29, tashqi konyugata 17-18 sm. Ko‘rsatkichlar nisbiy.",
+          "text": "Qizlarda tana bo‘yi tik kamida 150 sm, o‘tirganda 80 sm. Tos: yonbosh o‘siqlari 26-27, katta ko‘stlar 29, tashqi konyugata 17-18 sm. Ko‘rsatkichlar nisbiy.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1161,7 +1321,43 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Tana bo‘yi, tik",
+            "value": "≥ 150",
+            "unit": "sm"
+          },
+          {
+            "label": "Tana bo‘yi, o‘tirgan",
+            "value": "≥ 80",
+            "unit": "sm"
+          },
+          {
+            "label": "Yonbosh o‘siqlari",
+            "value": "26–27",
+            "unit": "sm"
+          },
+          {
+            "label": "Katta ko‘stlar",
+            "value": "29",
+            "unit": "sm"
+          },
+          {
+            "label": "Tashqi konyugata",
+            "value": "17–18",
+            "unit": "sm"
+          },
+          {
+            "label": "Bachadon tanasi",
+            "value": "2/3",
+            "unit": "qism"
+          }
+        ],
+        "caption": "Yetuklik ko‘rsatkichlari",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Nega bugun yetuklikni aniqlash ilgarigidek ahamiyatga ega emas? 2) Nega tos o‘lchamlari mutlaq mezon emas? Doskada tos o‘lchamlarini (yonbosh o‘siqlari, katta ko‘stlar, tashqi konyugata) sxema ko‘rinishida yozdiring. Tipik xato: 14 yosh chegarasini mutlaq deb olish yoki o‘lchamlarni qat’iy me’yor deb qabul qilish."
     },
     {
@@ -1196,31 +1392,33 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Qizlik pardasi shakllari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Shakllar",
-          "Uchrashi"
+        "kind": "tree",
+        "root": "Qizlik pardasi shakllari",
+        "children": [
+          {
+            "label": "Odatdagi",
+            "items": [
+              "Halqasimon, yarim oysimon",
+              "Naysimon"
+            ]
+          },
+          {
+            "label": "G‘ayrioddiy",
+            "items": [
+              "Bo‘lakchali, spiralsimon",
+              "Tishsimon"
+            ]
+          },
+          {
+            "label": "Juda kam uchraydigan",
+            "items": [
+              "Ikki oynali, to‘siqli",
+              "Teshigi yo‘q"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Odatdagi",
-            "Halqasimon, yarim oysimon, naysimon",
-            "Ko‘p uchraydi"
-          ],
-          [
-            "G‘ayrioddiy",
-            "Bo‘lakchali, spiralsimon, tishsimon",
-            "Kam uchraydi"
-          ],
-          [
-            "Juda kam",
-            "Ikki oynali, to‘siqli, teshigi yo‘q",
-            "Juda kam uchraydi"
-          ]
-        ]
+        "caption": "Uchrashi: ko‘p / kam / juda kam",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 9 daqiqa. Muhokama: 1) Defloratsiya har doim jinsiy aloqadan bo‘ladimi? 2) Qanday pardalarda aloqada ham butunlik saqlanishi mumkin? Doskada pardani soat siferblati ko‘rinishida chizib, asos, erkin chet va teshikni belgilang. Tipik xato: Diqqat! Parda butunligi buzilishi (defloratsiya) ≠ jinsiy aloqa; boshqa holatlarda (barmoq, jism, operatsiya) ham buzilishi mumkin."
     },
@@ -1256,31 +1454,27 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Bitish dinamikasi",
-        "nodes": [],
-        "header": [
-          "Muddat",
-          "O‘zgarish"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Dastlabki kunlar",
+            "text": "Chetlari qonaydi, shish, laxta"
+          },
+          {
+            "title": "Keyinroq",
+            "text": "Shish kamayadi, oqimtir qoplama"
+          },
+          {
+            "title": "1-hafta oxiri",
+            "text": "Granulyasion to‘qima qoplaydi"
+          },
+          {
+            "title": "2-hafta oxiri – 3-hafta",
+            "text": "Chandiq hosil bo‘ladi"
+          }
         ],
-        "rows": [
-          [
-            "Dastlabki kunlar",
-            "Chetlari qonaydi, shish, qon laxtasi"
-          ],
-          [
-            "Keyinroq",
-            "Shish kamayadi, oqimtir qoplama"
-          ],
-          [
-            "1-hafta oxiri",
-            "Granulyasion to‘qima qoplay boshlaydi"
-          ],
-          [
-            "2-hafta oxiri – 3-hafta",
-            "Chandiq hosil bo‘ladi"
-          ]
-        ]
+        "caption": "Bitish dinamikasi",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega uch haftadan keyin jarohat muddatini aytib bo‘lmaydi? 2) Nega laboratoriya namunasi tez olinishi kerak? Doskada: bitish jadvalini hafta bo‘yicha chizdiring. Tipik xato: tabiiy o‘yiqni yangi yoriq deb qabul qilish va ekspertga murojaatni kechiktirish."
     },
@@ -1477,7 +1671,16 @@
       "title": "Jinsiy jinoyatlar: nomusga tegish",
       "bullets": [
         {
-          "text": "118-modda: jabrlanuvchi xohishiga qarshi zo‘rlik, qo‘rqitish yoki ojizligidan foydalanib jinsiy aloqa qilish. Ojizlik ruhiy kasallik, mastlik, yosh yoki nuqson bilan bog‘liq bo‘ladi.",
+          "text": "118-modda: jabrlanuvchi xohishiga qarshi zo‘rlik, qo‘rqitish yoki ojizligidan foydalanib jinsiy aloqa qilish.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "295-296"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ojizlik ruhiy kasallik, mastlik, yosh yoki nuqson bilan bog‘liq bo‘ladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1495,7 +1698,23 @@
           "uncertain": false
         },
         {
-          "text": "Zo‘rlik izlari: qontalash va shilinmalar, ko‘pincha sonning ichki yuzasi va jinsiy a’zolarda. Qizlik pardasi yorig‘i, qin va oraliqda qon quyilishi bo‘lishi mumkin.",
+          "text": "Zo‘rlik izlari: qontalash va shilinmalar, ko‘pincha sonning ichki yuzasi va jinsiy a’zolarda.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "296"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: nima uchun gumondor ham ko‘rikdan o‘tkazilishi kerak? Qo‘rqitish holatida iz bo‘lmasa ekspert nimaga tayanadi? Doskada: ekspert ko‘rigi bosqichlarini ketma-ket chizdiring (hujjat, so‘rov, anamnez, ko‘rik, namuna). Tipik xato: qin va oraliq shikastini faqat zo‘rlikka xos deb hisoblash, holbuki u jinsiy hayot olib borgan ayollarda ham bo‘ladi."
+    },
+    {
+      "title": "Jinsiy jinoyatlar: nomusga tegish (davomi)",
+      "bullets": [
+        {
+          "text": "Qizlik pardasi yorig‘i, qin va oraliqda qon quyilishi bo‘lishi mumkin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1548,31 +1767,27 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Aktiv va passiv qatnashchi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Aktiv",
-          "Passiv"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Aktiv qatnashchi",
+            "items": [
+              "Joyi: olat, qov sohasi",
+              "Qon, soch, axlat, moysimon modda",
+              "Zo‘rlik bo‘lsa 119-modda bo‘yicha javobgar"
+            ]
+          },
+          {
+            "title": "Passiv qatnashchi",
+            "items": [
+              "Joyi: orqa teshik, to‘g‘ri ichak",
+              "Maniy, soch, moysimon modda",
+              "Zo‘rlik bo‘lsa — jabrlanuvchi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Joyi",
-            "Olat, qov sohasi",
-            "Orqa teshik, to‘g‘ri ichak, oraliq"
-          ],
-          [
-            "Izlar",
-            "Qon, soch, axlat, moysimon modda",
-            "Maniy, soch, moysimon modda"
-          ],
-          [
-            "Zo‘rlik bo‘lsa",
-            "119-modda bo‘yicha javobgar",
-            "Jabrlanuvchi hisoblanadi"
-          ]
-        ]
+        "caption": "Aktiv va passiv qatnashchi",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Nega 120-moddada ikkala qatnashchi javobgar, 119-moddada esa faqat aktiv? 2) Passiv qatnashchida qaysi kasalliklar xato talqinga olib keladi va ekspert kimning maslahatini oladi? Doskada: aktiv/passiv jadvalini chizib, 119 va 120-modda farqini strelka bilan ko‘rsating. Tipik xato: 120 va 119-moddalarni aralashtirish; kasallik izlarini muntazam jinsiy aloqa belgisi deb hisoblash."
     },
@@ -1580,7 +1795,7 @@
       "title": "Tanosil kasalliklari, OIV/OITSni tarqatish",
       "bullets": [
         {
-          "text": "Diqqat: nomusga tegish jinsiy erkinlikka qarshi jinoyat; tanosil kasalligi, OIV (odam immunitet tanqisligi virusi) yuqtirish esa hayot yoki sog‘liq uchun xavfli jinoyat.",
+          "text": "Diqqat: nomusga tegish — jinsiy erkinlikka qarshi jinoyat.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1589,7 +1804,7 @@
           "uncertain": false
         },
         {
-          "text": "113-modda: o‘zida tanosil kasalligi yoki OIV-infeksiyasi/OITS (orttirilgan immun tanqisligi sindromi) borligini bila turib yuqtirish yoki xavf ostida qoldirish jazolanadi.",
+          "text": "Tanosil kasalligi va OIV (odam immunitet tanqisligi virusi) yuqtirish — hayot yoki sog‘liq uchun xavfli jinoyat.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1597,6 +1812,22 @@
           },
           "uncertain": false
         },
+        {
+          "text": "113-modda: tanosil kasalligi yoki OIV-infeksiyasi/OITS borligini bila turib yuqtirish yoki xavf ostida qoldirish jazolanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "299"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega bu jinoyat jinsiy erkinlikka qarshi emas, hayot va sog‘liqqa xavfli jinoyatlar guruhiga kiritilgan? 2) Tibbiyot xodimi uchun 113-moddaning ahamiyati nimada? Doskada: ekspertiza ishtirokchilari (gumondor, jabrlanuvchi, mutaxassislar) sxemasini chizing. Tipik xato: 113-moddani 118-modda bilan aralashtirish; kasallik bosqichini hisobga olmaslik."
+    },
+    {
+      "title": "Tanosil kasalliklari, OIV/OITSni tarqatish (davomi)",
+      "bullets": [
         {
           "text": "Xizmat vazifasini lozim bajarmay OIV yuqtirish ham shu moddada nazarda tutilgan; bu holat ko‘proq tibbiyot xodimlari faoliyatiga bog‘liq.",
           "source": {
@@ -1694,17 +1925,35 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Olti bosqichli algoritm",
-        "nodes": [
-          "Hodisa va hujjatlarni o‘rganish",
-          "Shaxsning so‘rovi",
-          "Shaxsni ko‘rikdan o‘tkazish",
-          "Qo‘shimcha tekshiruvlar",
-          "Ekspert xulosasini tuzish"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Hodisa tafsiloti",
+            "text": "Qaror yoki ajrim ma’lumotlari"
+          },
+          {
+            "title": "Tibbiy hujjatlar",
+            "text": "Asl nusxalari o‘rganiladi"
+          },
+          {
+            "title": "So‘rov",
+            "text": "Shaxs so‘rovi"
+          },
+          {
+            "title": "Ko‘rik",
+            "text": "Asboblar yordamida"
+          },
+          {
+            "title": "Qo‘shimcha tekshiruv",
+            "text": "Laboratoriya, maslahat"
+          },
+          {
+            "title": "Ekspert xulosasi",
+            "text": "Yakuniy hujjat"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Olti bosqichli algoritm",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: nega ko‘rikdan oldin hujjatlar o‘rganiladi? Qaysi holatda qo‘shimcha mutaxassis kerak bo‘ladi? Doskada: algoritmni strelkalar bilan chizdiring. Eslatma: manbadagi 1-2 bosqich (tafsilot va tibbiy hujjat) diagrammada bitta tugunga birlashtirilgan. Tipik xato: bosqichlar tartibini aralashtirish, ko‘rikni so‘rovdan oldin qo‘yish.",
       "diagram_flag": null
@@ -1722,7 +1971,16 @@
           "uncertain": false
         },
         {
-          "text": "Tibbiy hujjatlarning asl nusxasi beriladi; ishonchliligi uchun ekspertiza tayinlagan shaxs javob beradi. So‘rovda jarohat qachon, qayerda, kim, nima bilan, necha marta yetkazilgani so‘raladi.",
+          "text": "Tibbiy hujjatlarning asl nusxasi beriladi; ishonchliligi uchun ekspertiza tayinlagan shaxs javob beradi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "300"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "So‘rovda jarohat qachon, qayerda, kim, nima bilan, necha marta yetkazilgani so‘raladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1738,9 +1996,26 @@
             "page": "301"
           },
           "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 10 daq. Muhokama: ko‘rik vaqtida kimlar ishtirok etishi mumkin va kim chiqib turishi shart? Nega tibbiy hujjat asl nusxada talab qilinadi? Doskada: ishtirokchilar jadvalini (shaxs turi, kim ishtirok etadi) chizdiring. Tipik xato: jinsiy holat ekspertizasida ikkita fotosuratni unutish; ruxsatsiz rasmga olish.",
+      "diagram_flag": null
+    },
+    {
+      "title": "Hujjatlar, so‘rov, ko‘rik va ishtirokchilar (davomi)",
+      "bullets": [
+        {
+          "text": "Balog‘atga yetmaganlar ota-ona yoki pedagog, layoqatsizlar qonuniy vakil ishtirokida ko‘riladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "301"
+          },
+          "uncertain": false
         },
         {
-          "text": "Balog‘atga yetmaganlar ota-ona yoki pedagog, layoqatsizlar qonuniy vakil ishtirokida ko‘riladi. Davolanayotganlar ko‘rigi sog‘lig‘i yo‘l qo‘ysagina, davolovchi vrach ishtirokida o‘tadi.",
+          "text": "Davolanayotganlar ko‘rigi sog‘lig‘i yo‘l qo‘ysagina, davolovchi vrach ishtirokida o‘tadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1750,8 +2025,7 @@
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 10 daq. Muhokama: ko‘rik vaqtida kimlar ishtirok etishi mumkin va kim chiqib turishi shart? Nega tibbiy hujjat asl nusxada talab qilinadi? Doskada: ishtirokchilar jadvalini (shaxs turi, kim ishtirok etadi) chizdiring. Tipik xato: jinsiy holat ekspertizasida ikkita fotosuratni unutish; ruxsatsiz rasmga olish.",
-      "diagram_flag": null
+      "teacher_notes": "Vaqt: 10 daq. Muhokama: ko‘rik vaqtida kimlar ishtirok etishi mumkin va kim chiqib turishi shart? Nega tibbiy hujjat asl nusxada talab qilinadi? Doskada: ishtirokchilar jadvalini (shaxs turi, kim ishtirok etadi) chizdiring. Tipik xato: jinsiy holat ekspertizasida ikkita fotosuratni unutish; ruxsatsiz rasmga olish."
     },
     {
       "title": "Xulosa: asosiy tamoyillar",
@@ -1802,12 +2076,12 @@
     {
       "question": "Jabrlanuvchida shikastlanish tufayli sog‘liqning buzilishi 14 kun davom etgan. Umumiy mehnat qobiliyatining turg‘un yo‘qotilishi va boshqa belgilar yo‘q. Jarohat qanday baholanadi?",
       "options": [
-        "Oddiy yengil tan jarohati",
         "Qisqa muddatga buzilishga olib kelgan yengil jarohat",
-        "O‘rtacha og‘ir tan jarohati",
-        "Og‘ir tan jarohati deb baholanadi"
+        "O‘rtacha og‘ir tan jarohati deb baholanadi",
+        "Og‘ir tan jarohati deb baholanadi",
+        "Oddiy yengil tan jarohati deb baholanadi"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Sog‘liq olti kundan ortiq, ammo yigirma bir kundan ko‘p bo‘lmagan muddatga buzilsa, jarohat sog‘liqning qisqa muddatga buzilishiga olib kelgan yengil jarohat hisoblanadi. Olti kungacha bo‘lsa oddiy yengil, 21 kundan ortiq bo‘lsa o‘rtacha og‘ir deb baholanadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1818,12 +2092,12 @@
     {
       "question": "Kalla asosi suyagi sinishi bilan kelgan bemorga shoshilinch operatsiya qilindi va hayotga tahdid bartaraf etildi. Jarohat qanday baholanadi?",
       "options": [
-        "Yengil tan jarohati sifatida",
-        "O‘rtacha og‘ir tan jarohati sifatida",
         "Qisqa muddatli yengil jarohat sifatida",
-        "Og‘ir tan jarohati sifatida"
+        "Og‘ir tan jarohati sifatida",
+        "Yengil tan jarohati sifatida",
+        "O‘rtacha og‘ir tan jarohati sifatida"
       ],
-      "correct_index": 3,
+      "correct_index": 1,
       "explanation": "Kalla asosi va gumbazi suyaklarining sinishi hayot uchun xavfli jarohatlar ro‘yxatiga kiradi. Tibbiy yordam bilan tahdidning bartaraf etilishi bahoda inobatga olinmaydi, shuning uchun jarohat og‘ir hisoblanadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1834,12 +2108,12 @@
     {
       "question": "Ekspertizada jarohat oqibatida umumiy mehnat qobiliyatining 20 foizi turg‘un yo‘qotilgani aniqlandi. Boshqa mezonlar yo‘q. Jarohat qanday baholanadi?",
       "options": [
-        "O‘rtacha og‘ir tan jarohati",
-        "Og‘ir tan jarohati deb",
         "Yengil tan jarohati deb",
-        "Qisqa muddatli yengil jarohat"
+        "Qisqa muddatli yengil jarohat",
+        "O‘rtacha og‘ir tan jarohati",
+        "Og‘ir tan jarohati deb"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Umumiy mehnat qobiliyatining o‘n foizidan o‘ttiz uch foizigacha turg‘un yo‘qotilishi o‘rtacha og‘ir jarohat belgisidir. O‘n foizgacha bo‘lsa qisqa muddatli yengil, o‘ttiz uch foizdan kam bo‘lmasa og‘ir hisoblanadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1850,12 +2124,12 @@
     {
       "question": "O‘zbekiston Respublikasi Jinoyat kodeksining qaysi moddasida og‘ir tan jarohatlarining tasniflovchi belgilari keltirilgan?",
       "options": [
+        "114-modda",
         "105-modda",
         "109-modda",
-        "104-modda",
-        "114-modda"
+        "104-modda"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Og‘ir tan jarohatlari belgilari 104-moddada berilgan. 105-modda o‘rtacha og‘ir, 109-modda esa yengil jarohatlarning belgilarini beradi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1866,12 +2140,12 @@
     {
       "question": "Sog‘liqning buzilish davomiyligi necha kundan ortiq bo‘lganda holat shartli ravishda mehnat qobiliyatining turg‘un yo‘qotilishi deb belgilanadi?",
       "options": [
-        "60 kundan ortiq",
         "120 kundan ortiq",
         "21 kundan ortiq",
-        "180 kundan ortiq"
+        "180 kundan ortiq",
+        "60 kundan ortiq"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Sog‘liqning buzilishi 120 kundan ortiq davom etgan holatlar shartli ravishda mehnat qobiliyatining turg‘un yo‘qotilishi deb belgilanadi. To‘rt oydan keyin qobiliyat nisbatan tiklanishi yoki yanada pasayishi mumkin.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1882,12 +2156,12 @@
     {
       "question": "Jabrlanuvchining jarohatgacha sog‘ bo‘lgan bitta ko‘zida ko‘rish butunlay yo‘qolgan. Bu shikastlanish qaysi og‘irlik darajasiga kiradi?",
       "options": [
-        "Yengil, chunki ikkinchi ko‘z ko‘rishni to‘liq saqlab qolgan",
         "O‘rtacha og‘ir, chunki bir ko‘z faoliyati qisman yo‘qolgan",
         "Og‘ir, chunki mehnat qobiliyatining uchdan biridan ko‘pi yo‘qoladi",
-        "Sog‘liq buzilishi muddatiga qarab, yengil yoki o‘rtacha baholanadi"
+        "Sog‘liq buzilishi muddatiga qarab, yengil yoki o‘rtacha baholanadi",
+        "Yengil, chunki ikkinchi ko‘z ko‘rishni to‘liq saqlab qolgan"
       ],
-      "correct_index": 2,
+      "correct_index": 1,
       "explanation": "Jarohatgacha sog‘ bo‘lgan bir ko‘zda ko‘rishning to‘liq yo‘qolishi umumiy mehnat qobiliyatining uchdan bir qismidan ortig‘ini yo‘qotishga olib keladi. Shu belgiga ko‘ra u og‘ir tan jarohati hisoblanadi. Sog‘liq buzilishi davomiyligi mezoni faqat ko‘rishi bo‘lmagan ko‘z yo‘qotilganda qo‘llanadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1898,12 +2172,12 @@
     {
       "question": "Shaxsning bir qulog‘ida eshitish qaytmas yo‘qolgan, ikkinchi qulog‘i sog‘. Bu tan jarohati qanday baholanadi?",
       "options": [
-        "O‘rtacha og‘ir, chunki mehnat qobiliyati uchdan biridan kamroq yo‘qoladi",
-        "Og‘ir, chunki eshitish a’zosining funksiyasi to‘liq yo‘qolgan",
         "Yengil, chunki ikkinchi quloq nutqni eshitishda davom etadi",
-        "Yengil, chunki baho faqat sog‘liq buzilishi kunlariga bog‘liq"
+        "Yengil, chunki baho faqat sog‘liq buzilishi kunlariga bog‘liq",
+        "O‘rtacha og‘ir, chunki mehnat qobiliyati uchdan biridan kamroq yo‘qoladi",
+        "Og‘ir, chunki eshitish a’zosining funksiyasi to‘liq yo‘qolgan"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Og‘ir jarohat uchun ikkala quloqda to‘liq karlik talab qilinadi. Bir quloqning eshitishi yo‘qolsa, umumiy mehnat qobiliyatining uchdan bir qismidan kamrog‘i yo‘qotiladi va jarohat o‘rtacha og‘ir deb baholanadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1930,12 +2204,12 @@
     {
       "question": "Yo‘l-transport hodisasida aybdor haydovchi javobgarlikdan qutulish uchun mastlik holatini yashirmoqda. Bu holat qanday ataladi?",
       "options": [
-        "Simulyasiya, ya’ni mavjud bo‘lmagan holatni bor deb ko‘rsatish",
         "Dissimulyasiya, ya’ni mavjud holatni qasddan yashirish",
         "Aggravatsiya, ya’ni mavjud belgilarni og‘irroq qilib ko‘rsatish",
-        "A’zobuzarlik, ya’ni maqsadli ravishda o‘ziga shikast yetkazish"
+        "A’zobuzarlik, ya’ni maqsadli ravishda o‘ziga shikast yetkazish",
+        "Simulyasiya, ya’ni mavjud bo‘lmagan holatni bor deb ko‘rsatish"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Dissimulyasiya simulyasiyaga qarama-qarshi bo‘lib, kasallik yoki boshqa patologik holatni yashirish maqsadida qasddan qilinadi. Javobgarlikdan qutulish uchun mastlikni yashirish shunday holatlardan biridir.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1946,12 +2220,12 @@
     {
       "question": "Tan jarohatining og‘irligini aniqlashda bir necha tibbiy mezonni qo‘llash mumkin bo‘lsa, qaysi mezon asos qilib olinadi?",
       "options": [
-        "Eng yengil darajani beruvchi mezon, shubha jabrlanuvchi foydasiga hal etiladi",
         "Barcha mezonlar natijasining o‘rtachasi, ya’ni o‘rtacha og‘ir daraja",
         "Og‘irroq darajaga mos keladigan mezon bo‘yicha baho beriladi",
-        "Ekspertiza tayinlagan shaxs birinchi tanlagan mezon bo‘yicha"
+        "Ekspertiza tayinlagan shaxs birinchi tanlagan mezon bo‘yicha",
+        "Eng yengil darajani beruvchi mezon, shubha jabrlanuvchi foydasiga hal etiladi"
       ],
-      "correct_index": 2,
+      "correct_index": 1,
       "explanation": "Og‘irlik darajasini aniqlash uchun mezonlardan birining mavjudligi yetarli. Bir necha mezon qo‘llanishi mumkin bo‘lsa, og‘irroq darajaga mos mezon bo‘yicha baho beriladi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1962,12 +2236,12 @@
     {
       "question": "Harbiy xizmatdan bosh tortmoqchi yigitning chap kaftida asosiy jarohat yonida bir necha yuzaki kesma yara topildi. Bu holat ko‘proq nimaga shubha tug‘diradi?",
       "options": [
+        "Patologik simulyasiyaga, ya’ni maqsadsiz soxtalashtirishga",
         "Dissimulyasiyaga, ya’ni jarohatni yashirishga",
         "A’zobuzarlikka, ya’ni qasddan o‘ziga shikast yetkazishga",
-        "Aggravatsiyaga, ya’ni mavjud belgilarni og‘irlashtirishga",
-        "Patologik simulyasiyaga, ya’ni maqsadsiz soxtalashtirishga"
+        "Aggravatsiyaga, ya’ni mavjud belgilarni og‘irlashtirishga"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "O‘zini shikastlashga xos belgilar: jarohat qo‘l yetadigan sohada joylashadi, asosiy jarohat yaqinida bir necha yuzaki kesma yoki chopma yara bo‘ladi, shikastlanish asosan chap tomonda uchraydi. A’zobuzarlik esa maqsadli, qasddan o‘ziga shikast yetkazishdir.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2010,12 +2284,12 @@
     {
       "question": "Tekshiruvda faoliyat ko‘rsatayotgan yorg‘oq (spermatogenez) bor, ammo jinsiy olat kichik, kriptorxizm va ko‘krak bezlari kattalashgan. Bu qaysi holat?",
       "options": [
-        "Chin germafroditizm (erkak va ayol bezlari birga)",
         "Soxta ayol germafroditizm (tuxumdon faoliyati bilan)",
         "Soxta erkak germafroditizm (yorg‘oq faoliyati bilan)",
-        "Jinsiy yetuklikning kechikishi (umumiy rivojlanishda)"
+        "Jinsiy yetuklikning kechikishi (umumiy rivojlanishda)",
+        "Chin germafroditizm (erkak va ayol bezlari birga)"
       ],
-      "correct_index": 2,
+      "correct_index": 1,
       "explanation": "Soxta erkak germafroditizmda faoliyat ko‘rsatayotgan yorg‘oq bo‘ladi, tashqi belgilar esa ayollarga o‘xshaydi. Chin germafroditizmda erkak va ayol jinsiy bezlari birga topiladi, soxta ayol turida esa tuxumdon faoliyat ko‘rsatadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2026,12 +2300,12 @@
     {
       "question": "Erkakning eyakulyatida spermatozoidlar umuman topilmadi. Bu holat qanday ataladi?",
       "options": [
+        "Impotensiya",
         "Nekrospermiya",
         "Azospermiya",
-        "Astenospermiya",
-        "Impotensiya"
+        "Astenospermiya"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Eyakulyatda spermatozoidlarning umuman bo‘lmasligi azospermiya deyiladi va urug‘lantirish qobiliyatini inkor etadi. Impotensiya esa jinsiy aloqa qilishga monelikni bildiradi, bu boshqa tushuncha.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2042,12 +2316,12 @@
     {
       "question": "Qiz jinsiy aloqadan 4 hafta o‘tgach ekspertizaga keltirildi. Qizlik pardasi yorig‘ining hosil bo‘lish muddati haqida nima deyish mumkin?",
       "options": [
-        "Muddatni kungacha aniq belgilash mumkin bo‘ladi",
-        "Uch haftadan keyin muddatni hal etib bo‘lmaydi",
         "Muddatni faqat ikkinchi haftada aniqlash mumkin",
-        "Muddatni faqat laboratoriya usuli bilan aniqlanadi"
+        "Muddatni faqat laboratoriya usuli bilan aniqlanadi",
+        "Muddatni kungacha aniq belgilash mumkin bo‘ladi",
+        "Uch haftadan keyin muddatni hal etib bo‘lmaydi"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Yoriq chetida chandiq ikkinchi haftaning oxiri – uchinchi haftada hosil bo‘ladi. Shu sababli parda butunligi buzilishining muddati faqat dastlabki haftalarda aniqlanadi. Uch haftadan so‘ng bu masalani hal etib bo‘lmaydi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2058,12 +2332,12 @@
     {
       "question": "Nomusga tegish gumon qilingan jabrlanuvchidan qin surtmasi va tashqi sohalardan bosmalar qachon olinishi kerak?",
       "options": [
-        "Bir necha haftadan keyin, jarohatlar bitgandan so‘ng",
-        "Faqat sud majlisi boshlanishidan oldingi kunlarda",
         "Voqeadan so‘ng imkon qadar qisqa vaqt ichida",
-        "Faqat jinsiy aloqa izlari butunlay yo‘qolgach"
+        "Faqat jinsiy aloqa izlari butunlay yo‘qolgach",
+        "Bir necha haftadan keyin, jarohatlar bitgandan so‘ng",
+        "Faqat sud majlisi boshlanishidan oldingi kunlarda"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "explanation": "Vaqt o‘tgan sari laboratoriya tekshiruvlarining samaradorligi, xususan spermatozoidlarning topilish ehtimoli kamayadi. Shuning uchun namunalar voqeadan keyin imkon qadar tez olinib, laboratoriyaga yuboriladi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2074,12 +2348,12 @@
     {
       "question": "Bir erkak ikkinchi erkakni qo‘rqitib, uning ojizligidan foydalanib jinsiy ehtiyojini qondirdi. Kim va qaysi modda bo‘yicha javobgar?",
       "options": [
-        "Ikkala qatnashchi, Jinoyat kodeksining 120-moddasi bo‘yicha",
-        "Faqat passiv qatnashchi, Jinoyat kodeksining 120-moddasi bo‘yicha",
         "Ikkala qatnashchi, Jinoyat kodeksining 119-moddasi bo‘yicha",
-        "Faqat aktiv qatnashchi, Jinoyat kodeksining 119-moddasi bo‘yicha"
+        "Faqat aktiv qatnashchi, Jinoyat kodeksining 119-moddasi bo‘yicha",
+        "Ikkala qatnashchi, Jinoyat kodeksining 120-moddasi bo‘yicha",
+        "Faqat passiv qatnashchi, Jinoyat kodeksining 120-moddasi bo‘yicha"
       ],
-      "correct_index": 3,
+      "correct_index": 1,
       "explanation": "Zo‘rlik ishlatilmagan besoqolbozlikda (120-modda) ikkala qatnashchi javobgar bo‘ladi. Zo‘rlik, qo‘rqitish yoki ojizlikdan foydalanilganda esa faqat aktiv qatnashchi 119-modda bo‘yicha javobgarlikka tortiladi. Passiv qatnashchi jabrlanuvchi hisoblanadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2090,12 +2364,12 @@
     {
       "question": "O‘zida OIV-infeksiyasi borligini bila turib, boshqa shaxsni yuqtirish xavfi ostida qoldirgan odam Jinoyat kodeksining qaysi moddasi bo‘yicha javobgar bo‘ladi?",
       "options": [
-        "113-modda",
-        "118-modda",
         "120-modda",
-        "129-modda"
+        "129-modda",
+        "113-modda",
+        "118-modda"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "113-moddada tanosil kasalliklari yoki OIV-infeksiyasi/OITS borligini bila turib yuqtirish yoki yuqtirish xavfi ostida qoldirish uchun javobgarlik belgilangan. Bu jinoyat hayot yoki sog‘liq uchun xavfli jinoyatlar guruhiga kiradi. 118-modda nomusga tegishga, 120-modda besoqolbozlikka, 129-modda fahsh harakatlariga tegishli.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2106,12 +2380,12 @@
     {
       "question": "Tirik shaxslar sud-tibbiy ekspertizasining umumiy algoritmida tibbiy hujjatlarni o‘rganishdan keyingi bosqich qaysi?",
       "options": [
-        "Shaxsni ko‘rikdan o‘tkazish",
-        "Ekspertizadan o‘tayotgan shaxsning so‘rovi",
         "Ekspert xulosasini tuzish",
-        "Qo‘shimcha laboratoriya tekshiruvi"
+        "Qo‘shimcha laboratoriya tekshiruvi",
+        "Shaxsni ko‘rikdan o‘tkazish",
+        "Ekspertizadan o‘tayotgan shaxsning so‘rovi"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Algoritm: hodisa tafsilotlari bilan tanishish, tibbiy hujjatlarni o‘rganish, shaxsning so‘rovi, ko‘rik, zarur bo‘lsa qo‘shimcha tekshiruvlar va ekspert xulosasi. Tibbiy hujjatlardan keyin so‘rov keladi.",
       "source": {
         "author": "G‘iyosov Z.A.",

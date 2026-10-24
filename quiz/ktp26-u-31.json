@@ -1,0 +1,590 @@
+{
+ "topic_id": "ktp26-u-31",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "FOB bilan zaharlanishning xususiyatlari. O’limga olib kelgan zaharlanishlar xarakteristikasi.",
+  "ru": "FOB bilan zaharlanishning xususiyatlari. O’limga olib kelgan zaharlanishlar xarakteristikasi.",
+  "en": "FOB bilan zaharlanishning xususiyatlari. O’limga olib kelgan zaharlanishlar xarakteristikasi."
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "ktp26-u-31-q01",
+   "question_i18n": {
+    "uz": "Bemorning ko‘z qorachig‘i nuqtadek toraygan, badani ter bilan qoplangan, bronxoreya bor. Bu manzaraning asosiy sababi qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Atsetilxolinning sinapsga yetarlicha ajralib chiqmasligi",
+     "Atsetilxolinesterazaning bloklanishi, atsetilxolin to‘planishi",
+     "Xolinergik retseptorlarning bevosita to‘liq bloklanishi",
+     "Atsetilxolinesterazaning haddan tashqari faollashuvi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Fosfororganik birikmalar (FOB) atsetilxolinesterazaning serin qoldig‘iga kovalent bog‘lanib, uni ingibitsiya qiladi. Atsetilxolin parchalanmaydi va signal uzatilishi davom etadi. Shundan xolinergik krizis kelib chiqadi: miyoz, ko‘p terlash, bronxoreya va bronxospazm. Atsetilxolinning kam ajralishi yoki esterazaning faollashuvi mexanizmga teskari; retseptorlar bloklanishi esa atropin ta’siriga xos."
+   },
+   "source": {
+    "author": "Ramadori et al.",
+    "title": "Organophosphorus Poisoning: Acute Respiratory Distress Syndrome (ARDS) and Cardiac Failure as Cause of Death in Hospitalized Patients, International Journal of Molecular Sciences",
+    "page": "PMID 37047631"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-31-q02",
+   "question_i18n": {
+    "uz": "Shifokor rivojlanayotgan mamlakatda pestitsid bilan o‘z-o‘zini zaharlash holatlarida o‘rtacha letallikni baholamoqda. Manbaga ko‘ra, odatiy ko‘rsatkich qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Taxminan 10–20 foiz",
+     "Taxminan 0,3 foizdan kam",
+     "Taxminan 50–70 foiz",
+     "Taxminan 1–2 foiz"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Rivojlanayotgan mamlakatlarda o‘z-o‘zini zaharlashdagi letallik odatda 10–20 foiz. Ayrim pestitsidlarda u 50–70 foizgacha yetadi, lekin bu odatiy emas. G‘arb mamlakatlarida barcha sabablar bo‘yicha letallik 0,3 foizdan kam."
+   },
+   "source": {
+    "author": "Eddleston et al.",
+    "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+    "page": "PMID 15566582"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-31-q03",
+   "question_i18n": {
+    "uz": "2007 yildan 2017 yilgacha FOB bilan o‘z-o‘zini zaharlashdan jahon bo‘yicha o‘lim kamayishiga qaysi chora hissa qo‘shgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Barcha pestitsidlar ishlatilishining to‘liq to‘xtatilishi",
+     "Paration kabi yuqori toksik I sinf pestitsidlarni taqiqlash",
+     "Pralidoksimni barcha davlatlarda majburiy qo‘llash",
+     "Qishloqlarda reanimatsiya bo‘limlarini ommaviy ochish"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Parathion va mevinphos kabi yuqori toksik I sinf pestitsidlarning taqiqlanishi yillik o‘limni 2007 yildagi taxminan 258 000 dan ortiq holatdan 2017 yilda taxminan 110 000 ga tushirishga hissa qo‘shgan. Bu raqam hanuzgacha juda yuqori. Boshqa variantlar manbada ko‘rsatilmagan."
+   },
+   "source": {
+    "author": "Worek et al.",
+    "title": "Organophosphorus compounds and oximes: a critical review, Archives of Toxicology",
+    "page": "PMID 32506210"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-31-q04",
+   "question_i18n": {
+    "uz": "Fosfororganik birikmalar (FOB) kimyoviy guruhlarini qaysi qator to‘g‘ri sanaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Piretroidlar, neonikotinoidlar, avermektinlar, triazinlar",
+     "Xlororganik birikmalar, kumarinlar, triazollar, fenoksilar",
+     "Bipiridillar, ditiokarbamatlar, strobilurinlar, glifosatlar",
+     "Fosfatlar, fosfonatlar, fosfinatlar, fosforotioatlar"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Fosforning organik kimyosi bo‘yicha uzoq yillik tadqiqotlar fosfatlar, fosfonatlar, fosfinatlar va fosforotioatlar guruhlarining paydo bo‘lishiga olib kelgan. Ularning ayrimlari pestitsid, ayrimlari jangovar asab agenti sifatida ishlatilgan. Boshqa qatorlardagi birikmalar FOB guruhiga kirmaydi."
+   },
+   "source": {
+    "author": "Worek et al.",
+    "title": "Organophosphorus compounds and oximes: a critical review, Archives of Toxicology",
+    "page": "PMID 32506210"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-31-q05",
+   "question_i18n": {
+    "uz": "Bemor soman bilan zaharlangan, oksim bilan davo kech boshlandi. Oksim nega samarasiz bo‘lishi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Oksim atropinning muskarin retseptoriga ta’sirini bloklaydi",
+     "Soman AChE bilan qaytar va zaif bog‘lanish hosil qiladi",
+     "Soman faqat BChE ni ingibitsiyalaydi, AChE ga ta’sir qilmaydi",
+     "Ingibitsiyalangan AChE tez “qarib”, oksim tiklay olmaydi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Soman bilan ingibitsiyalangan AChE da “qarish” (dealkillanish) juda tez kechadi, yarim davri taxminan 2 daqiqa. Qarigan ferment oksim bilan reaktivatsiya bo‘lmaydi, shuning uchun oksim davosi samarasiz bo‘ladi. Dimetil-FOB da esa spontan reaktivatsiya mumkin."
+   },
+   "source": {
+    "author": "Worek et al.",
+    "title": "Organophosphorus compounds and oximes: a critical review, Archives of Toxicology",
+    "page": "PMID 32506210; DOI 10.1007/s00204-020-02797-0"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-31-q06",
+   "question_i18n": {
+    "uz": "Terisiga tushgan, o‘ta kam uchuvchan va lipofil VX bilan zaharlanishda toksik belgilar qachon boshlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kechikib, bir necha soatdan keyin boshlanadi",
+     "Bir necha daqiqada, shilliq pardalar orqali boshlanadi",
+     "Hech qanday o‘tkir belgi bo‘lmaydi, faqat surunkali ta’sir bo‘ladi",
+     "Faqat og‘iz orqali kirganda boshlanadi, teri orqali kirmaydi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "VX ning bug‘ bosimi juda past, u lipofil va asosan teri orqali kiradi, belgilari kechikib (soatlarda) paydo bo‘ladi. Sarin esa uchuvchan bo‘lib, shilliq pardalar orqali kiradi va belgilar daqiqalarda boshlanadi."
+   },
+   "source": {
+    "author": "Worek et al.",
+    "title": "Organophosphorus compounds and oximes: a critical review, Archives of Toxicology",
+    "page": "PMID 32506210; DOI 10.1007/s00204-020-02797-0"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-31-q07",
+   "question_i18n": {
+    "uz": "Tion guruhidagi FOB ichgan bemorda dastlab xolinergik belgilar yo‘q edi, keyin paydo bo‘ldi. Buning sababi nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Tion qonda atropin bilan birikib, faolsizlanadi",
+     "Tion butirilxolinesterazani to‘g‘ridan-to‘g‘ri faollashtiradi",
+     "Oksim ta’sirida AChE yangidan sintezlanib ketadi",
+     "Tion sitoxrom P450 orqali faol oksonga aylanadi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Tionlar (organofosforotioatlar) o‘zi kuchsiz ingibitor bo‘lib, sitoxrom P450 ta’sirida faol oksonga aylanadi. Shuning uchun belgilar kechikib chiqishi mumkin va bemorni diqqat bilan kuzatish kerak. Fention kabi yog‘da eruvchi FOB yog‘dan sekin chiqib, belgilarni qaytarishi ham mumkin."
+   },
+   "source": {
+    "author": "Worek et al.",
+    "title": "Organophosphorus compounds and oximes: a critical review, Archives of Toxicology",
+    "page": "PMID 32506210; DOI 10.1007/s00204-020-02797-0"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-31-q08",
+   "question_i18n": {
+    "uz": "FOB atsetilxolinesterazani ingibitsiyalagandan keyin, sinapslarda xolinergik belgilar haftalab saqlanishi asosan nimaga bog‘liq?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Jigarda atsetilxolin sintezi kuchayib ketishiga",
+     "Yangi AChE yetarlicha sintezlanguncha ACh ortiqcha qolishiga",
+     "Qon zardobida albumin miqdori oshib ketishiga",
+     "Atropinning ortiqcha dozada berilganiga"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Ingibitsiya amalda qaytmas, fermentni zahardan ajratadigan dori yo‘q. Atsetilxolin ortiqcha holda sinapslarda yangi, mahalliy sintezlangan AChE yetarli bo‘lguncha haftalab saqlanishi mumkin. Oksimlarning bu muddatni qisqartirishi hali munozarali."
+   },
+   "source": {
+    "author": "Ramadori et al.",
+    "title": "Organophosphorus Poisoning: Acute Respiratory Distress Syndrome (ARDS) and Cardiac Failure as Cause of Death in Hospitalized Patients, International Journal of Molecular Sciences",
+    "page": "PMID 37047631; DOI 10.3390/ijms24076658"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-31-q09",
+   "question_i18n": {
+    "uz": "Bemor ter bilan qoplangan, qorachiqlari nuqtadek, nafasi og‘ir; pestitsid keng tarqalgan hududda. Qanday qaror to‘g‘ri?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Avval xolinesteraza faolligi tahlili natijasini kutish kerak",
+     "Avval oshqozonni yuvib, so‘ng davoni tanlashga o‘tish kerak",
+     "Darhol atropin berish kerak, bu belgilar yetarli asos bo‘ladi",
+     "Atropin bermasdan, faqat qisqa muddat kuzatuvda qoldirish kerak"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Nuqtadek qorachiq va ko‘p terlash FOB/karbamatdan zaharlanishni ko‘rsatadi va atropin berishga asos bo‘ladi. Besh asosiy belgi: miozis, ko‘p terlash, bronxoreya/bronxospazm tufayli havo kirishining yomonlashuvi, bradikardiya, gipotenziya. Laboratoriya tahlilini kutib bo‘lmaydi, dekontaminatsiya esa bemor stabillashgandan keyin qilinadi."
+   },
+   "source": {
+    "author": "Eddleston et al.",
+    "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+    "page": "PMID 15566582; DOI 10.1186/cc2953"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-31-q10",
+   "question_i18n": {
+    "uz": "FOB bilan zaharlangan bemor boshini yostiqdan ko‘tarishga qiynalmoqda. Bu holat birinchi navbatda nimani ko‘rsatishi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Oraliq sindrom rivojlanish xavfini",
+     "Atropin yetarli yuklanganini",
+     "Atropin toksikligi tugaganini",
+     "Qorachiqlar normaga qaytganini"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Bo‘yin bukuvchi mushaklarining zaifligi oraliq sindromning erta belgisi. Keyin yordamchi nafas mushaklari ishlashi, burun qanotlari kengayishi, tezlashgan nafas, kranial nervlar falaji va proksimal mushaklar zaifligi qo‘shiladi. Bo‘yni zaif bemorlarning hammasida to‘liq sindrom rivojlanmaydi, lekin ular xavf ostida va muntazam kuzatilishi kerak."
+   },
+   "source": {
+    "author": "Eddleston et al.",
+    "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+    "page": "PMID 15566582; DOI 10.1186/cc2953"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-31-q11",
+   "question_i18n": {
+    "uz": "Hushsiz FOB bemori kelganda ABC tekshirilib, kislorod berildi. Aspiratsiya xavfini kamaytirish uchun bemorni qaysi holatga yotqizish kerak?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Chalqancha, boshi baland holatda",
+     "Qorni bilan, yuzi pastga qaratib",
+     "O‘tirgan, tanasi oldinga engashgan holatda",
+     "Chap yon bilan, ideal holda boshi pastga"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Protokolga ko‘ra bemor chap yon holatiga, ideal holda boshi pastga qaratib yotqiziladi. Bu aspiratsiya xavfini kamaytiradi. Bo‘yinni yozish nafas yo‘lini ochiq tutishga yordam beradi. Tutqanoq bo‘lsa, darhol vena ichiga diazepam beriladi."
+   },
+   "source": {
+    "author": "Eddleston et al.",
+    "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+    "page": "PMID 15566582; DOI 10.1186/cc2953"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-31-q12",
+   "question_i18n": {
+    "uz": "Atropin yuklangandan 3–5 daqiqa o‘tdi, lekin besh ko‘rsatkich bo‘yicha izchil yaxshilanish yo‘q. Keyingi to‘g‘ri qadam qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Boshlang‘ich dozani aynan o‘sha miqdorda takrorlash",
+     "Atropin dozasini ikki barobar oshirish",
+     "Atropinni to‘xtatib, bemorni kuzatishga o‘tish",
+     "Atropin o‘rniga faqat diazepam berish"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Javob bo‘lmasa, doza ikki barobar oshiriladi va har safar javob bo‘lmaganda yana ikki barobar qilinadi. Boshlang‘ich dozani oddiy takrorlash noto‘g‘ri: ba’zi bemorlarga o‘nlab yoki yuzlab mg kerak bo‘ladi, 3 mg dan takrorlash soatlab vaqt oladi. Og‘ir bemor shu vaqtgacha o‘lib qolishi mumkin."
+   },
+   "source": {
+    "author": "Eddleston et al.",
+    "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+    "page": "PMID 15566582; DOI 10.1186/cc2953"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-31-q13",
+   "question_i18n": {
+    "uz": "Atropin infuziyasi olayotgan bemorda chalkashlik, isitma va ichak shovqinlarining yo‘qligi aniqlandi. Birinchi navbatda nima qilinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Infuziya tezligini yanada oshirish",
+     "Qo‘shimcha atropin bolusini yuborish",
+     "Infuziyani to‘xtatib, 30 daqiqadan keyin qayta baholash",
+     "Faqat yurak urishiga qarab dozani oshirish"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Uchala belgi bo‘lsa, atropin ortiqcha berilmoqda. Infuziya to‘xtatiladi va 30 daqiqadan keyin belgilar pasayganini tekshiriladi. Pasaysa, avvalgi tezlikning 70–80 foizidan qayta boshlanadi. Yurak urishi va qorachiq o‘lchamiga tayanib bo‘lmaydi, chunki ular nikotin va muskarin ta’siri balansiga bog‘liq."
+   },
+   "source": {
+    "author": "Eddleston et al.",
+    "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+    "page": "PMID 15566582; DOI 10.1186/cc2953"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-31-q14",
+   "question_i18n": {
+    "uz": "FOB bilan zaharlangan hushsiz bemorda tutqanoq boshlandi. Dastlabki yordam protokoliga ko‘ra qaysi harakat darhol qilinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Vena ichiga diazepam yuborish",
+     "Oshqozonni darhol yuvish",
+     "Ipekakuana bilan qusdirish",
+     "Oksimni bolus qilib tez yuborish"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Dastlabki baholashda tutqanoqqa e’tibor beriladi va u bo‘lsa, darhol vena ichiga diazepam beriladi. Oshqozonni tozalash bemor barqarorlashgandan keyin, kerak bo‘lsa intubatsiyadan so‘ng ko‘rib chiqiladi. Ipekakuana FOB bilan zaharlanganda qo‘llanmaydi."
+   },
+   "source": {
+    "author": "Eddleston et al.",
+    "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+    "page": "PMID 15566582; DOI 10.1186/cc2953"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-31-q15",
+   "question_i18n": {
+    "uz": "Hushsiz, intubatsiya qilinmagan bemor FOB bilan zaharlangan. Dekontaminatsiya haqida qaysi qaror to‘g‘ri?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Darhol oshqozonni yuvib, keyin bemorni barqarorlashtirish",
+     "Avval bemorni barqarorlashtirib, zarur bo‘lsa intubatsiya qilish",
+     "Ipekak berib, qusishni chaqirib oshqozonni bo‘shatish",
+     "Faqat faollangan ko‘mir berib, boshqa chora ko‘rmaslik"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Dekontaminatsiya bemor barqarorlashgandan va kerak bo‘lsa intubatsiya qilingandan keyin o‘ylanadi. Ipekak zaharlanganlarda qarshi ko‘rsatma. Hushsiz, intubatsiyasiz bemorda oshqozon yuvish o‘limgacha asoratlar xavfini tug‘diradi."
+   },
+   "source": {
+    "author": "Eddleston et al.",
+    "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+    "page": "PMID 15566582"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-31-q16",
+   "question_i18n": {
+    "uz": "FOB bilan zaharlangan bemor qattiq qo‘zg‘algan va tana harorati baland. Qaysi usul to‘g‘ri tanlov?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bemorni to‘shakka mahkam bog‘lab qo‘yish",
+     "Galoperidolni yuqori dozada vena ichiga berish",
+     "Diazepamni sekin vena ichiga berib, bemorni sovitish",
+     "Atropin infuzi tezligini darrov oshirish"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Qo‘zg‘alishda diazepam sekin tomir ichiga beriladi, bemor nam sochiq va ventilyator bilan sovitiladi. Bog‘lab qo‘yilgan bemor kurashib, ortiqcha issiqlik hosil qiladi va gipertermik yurak to‘xtashi xavfi ortadi. Galoperidol ham afzal emas."
+   },
+   "source": {
+    "author": "Eddleston et al.",
+    "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+    "page": "PMID 15566582"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-31-q17",
+   "question_i18n": {
+    "uz": "Kasalxonaga yotqizilgan FOB bilan zaharlangan bemorlarda eng ko‘p uchraydigan o‘lim sababi qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Nafas yetishmovchiligi, keyin yurak to‘xtashi",
+     "Birlamchi jigar yetishmovchiligi va koma",
+     "Miokard infarkti va bosh miya shishi",
+     "Faqat o‘tkir buyrak yetishmovchiligi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Manbalarda eng ko‘p o‘lim sababi nafas yetishmovchiligi, undan keyin yurak to‘xtashi, sepsis va gipovolemik shok sanaladi. Ikkinchi manba ham o‘limlarning ko‘pi nafas yetishmovchiligidan ekanini qayd etadi."
+   },
+   "source": {
+    "author": "Ramadori et al.",
+    "title": "Organophosphorus Poisoning: Acute Respiratory Distress Syndrome (ARDS) and Cardiac Failure as Cause of Death in Hospitalized Patients, International Journal of Molecular Sciences",
+    "page": "PMID 37047631"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-31-q18",
+   "question_i18n": {
+    "uz": "Bemorda qayt qilish, ich ketishi, ter va bronx sekretsiyasi ko‘p, siydik kam, bosim past, yurak sekin urmoqda. Atropindan keyingi birinchi davo yo‘nalishi qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat diuretiklar berib, suyuqlikni cheklash",
+     "Faqat antibiotiklar boshlab, sepsisni davolash",
+     "Faqat oksimlar dozasini oshirib, AChE ni tiklash",
+     "Albumin va suyuqlik infuzi bilan hajmni tiklash"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Suyuqlik yo‘qotilishi gipovolemiya va to‘qima gipoksiyasiga olib keladi. Atropindan keyin birinchi chora sifatida vena ichiga albumin va suyuqlik berib, qon hajmi va to‘qima kislorodlanishi tiklanadi. Bu holat sepsisga o‘xshab ketishi mumkin."
+   },
+   "source": {
+    "author": "Ramadori et al.",
+    "title": "Organophosphorus Poisoning: Acute Respiratory Distress Syndrome (ARDS) and Cardiac Failure as Cause of Death in Hospitalized Patients, International Journal of Molecular Sciences",
+    "page": "PMID 37047631"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-31-q19",
+   "question_i18n": {
+    "uz": "Bemor 200 ml diklorvos ichgan, og‘ir atsidoz bor, qon albumini 1 g/dL gacha tushgan. Qaysi muolaja muvaffaqiyatli qo‘llangan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat yangi muzlatilgan plazma va oksimlar berish",
+     "Faqat gemodializ va yuqori dozali antibiotik berish",
+     "Albumin, suyuqlik va natriy bikarbonat infuzi qilish",
+     "Faqat mexanik ventilyatsiya va diuretik qo‘llash"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Muvaffaqiyatli holatda 125 g albumin, 6,5 litr suyuqlik va natriy bikarbonat infuz qilingan. Gipoalbuminemiya uzoq davom etgan gipovolemiya bilan bog‘langan. Oksimlar AChE ingibitsiyasini kamaytirishda foydali ko‘rinmaydi."
+   },
+   "source": {
+    "author": "Ramadori et al.",
+    "title": "Organophosphorus Poisoning: Acute Respiratory Distress Syndrome (ARDS) and Cardiac Failure as Cause of Death in Hospitalized Patients, International Journal of Molecular Sciences",
+    "page": "PMID 37047631"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-31-q20",
+   "question_i18n": {
+    "uz": "Kasalxonaga tushgan FOB bilan zaharlangan bemorda yuqori CRP va past albumin aniqlandi. Bu natijalarni qanday sharhlash to‘g‘ri?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat sepsis belgisi, shuning uchun antibiotik shart",
+     "Faqat jigarning birlamchi yetishmovchiligi belgisi",
+     "To‘qima ishemiyasi va gipovolemiya belgisi sifatida",
+     "Faqat atsetilxolin ko‘pligining bevosita natijasi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Muallif yallig‘lanish markerlari va gipoalbuminemiyani asosan gipovolemiyadan kelib chiqqan to‘qima ishemiyasi belgisi deb baholaydi, atsetilxolin parchalanishining kamayishi bevosita sababi deb emas. Shu sababli ular salbiy prognostik markerlardir."
+   },
+   "source": {
+    "author": "Ramadori et al.",
+    "title": "Organophosphorus Poisoning: Acute Respiratory Distress Syndrome (ARDS) and Cardiac Failure as Cause of Death in Hospitalized Patients, International Journal of Molecular Sciences",
+    "page": "PMID 37047631"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Ramadori et al.",
+   "title": "Organophosphorus Poisoning: Acute Respiratory Distress Syndrome (ARDS) and Cardiac Failure as Cause of Death in Hospitalized Patients, International Journal of Molecular Sciences"
+  },
+  {
+   "author": "Eddleston et al.",
+   "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care"
+  },
+  {
+   "author": "Worek et al.",
+   "title": "Organophosphorus compounds and oximes: a critical review, Archives of Toxicology"
+  }
+ ]
+}

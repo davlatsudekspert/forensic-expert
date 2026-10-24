@@ -1,0 +1,582 @@
+{
+ "topic_id": "6-kurs-davolash-08",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Amaliy mashg’ulot: Tibbiy xodimlarning ma’muriy javobgarligi.",
+  "ru": "Amaliy mashg’ulot: Tibbiy xodimlarning ma’muriy javobgarligi.",
+  "en": "Amaliy mashg’ulot: Tibbiy xodimlarning ma’muriy javobgarligi."
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "6-kurs-davolash-08-q01",
+   "question_i18n": {
+    "uz": "Yosh vrach hayotida birinchi marta ishga kirmoqda. Ishga qabul qilishda qaysi hujjatni taqdim etishi shart emas?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Pasport yoki uning o‘rnini bosuvchi hujjat",
+     "Mehnat daftarchasi (ish joylari haqida)",
+     "Oliy ma’lumot haqidagi diplom nusxasi",
+     "Harbiy hisobda turganlik guvohnomasi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Ishga qabul qilishda pasport, mehnat daftarchasi, harbiy hujjat va ma’lumot haqidagi diplom talab qilinadi. Birinchi marta ishga kirayotganlar mehnat daftarchasini taqdim etmaydi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "81-82"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "6-kurs-davolash-08-q02",
+   "question_i18n": {
+    "uz": "Poliklinika yangi qabul qilinayotgan vrachga dastlabki sinov belgilamoqchi. Sinov muddati ko‘pi bilan qancha bo‘lishi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ko‘pi bilan bir oy muddatga",
+     "Ko‘pi bilan ikki oy muddatga",
+     "Ko‘pi bilan uch oy muddatga",
+     "Ko‘pi bilan olti oy muddatga"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Dastlabki sinov uch oydan ortiq bo‘lmagan muddatga belgilanadi (O‘zR MK 85-modda)."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "82"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "6-kurs-davolash-08-q03",
+   "question_i18n": {
+    "uz": "Kasalxona homilador ayol shifokorni ishga qabul qilmoqda. Unga dastlabki sinov haqida qaysi fikr to‘g‘ri?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Dastlabki sinov belgilanmaydi",
+     "Sinov faqat bir oyga belgilanadi",
+     "Sinov uch oyga majburan belgilanadi",
+     "Sinov faqat rahbar xohlasa o‘tadi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Homilador ayollar va uch yoshga to‘lmagan bolasi bor ayollar ishga qabul qilinganda dastlabki sinov belgilanmaydi (O‘zR MK 84-modda)."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "82"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "6-kurs-davolash-08-q04",
+   "question_i18n": {
+    "uz": "Vrach bilan tuzilgan mehnat shartnomasida amal qilish muddati ko‘rsatilmagan. Bu shartnoma qanday hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bir yil muddatga tuzilgan hisoblanadi",
+     "Besh yil muddatga tuzilgan hisoblanadi",
+     "Sinov davriga tuzilgan hisoblanadi",
+     "Nomuayyan muddatga tuzilgan hisoblanadi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Shartnomada muddat ko‘rsatilmagan bo‘lsa, u nomuayyan muddatga tuzilgan deb hisoblanadi (O‘zR MK 75-modda)."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "81"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "6-kurs-davolash-08-q05",
+   "question_i18n": {
+    "uz": "Vrach asosiy ishidan bo‘sh vaqtida boshqa klinikada shartnoma asosida haq evaziga ishlamoqda. Bu qanday nomlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ichki o‘rindoshlik asosida ishlash",
+     "Tashqi o‘rindoshlik asosida ishlash",
+     "O‘rinbosarlik asosida ishlash",
+     "Bir necha kasbda ishlash deyiladi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Asosiy ishdan bo‘sh vaqtda boshqa muassasada haq to‘lanadigan ish tashqi o‘rindoshlik hisoblanadi. O‘z muassasasida bo‘lsa, ichki o‘rindoshlik bo‘ladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "83"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "6-kurs-davolash-08-q06",
+   "question_i18n": {
+    "uz": "Tibbiy xodim ish vaqti qisqartirilgan toifaga kiradi. Qonunchilikka ko‘ra, uning ish vaqti haftasiga necha soatdan oshmaydigan qilib belgilanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Haftasiga 24 soatdan oshmaydi",
+     "Haftasiga 36 soatdan oshmaydi",
+     "Haftasiga 40 soatdan oshmaydi",
+     "Haftasiga 48 soatdan oshmaydi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Ish vaqtining normal muddati haftasiga 40 soatdan oshmaydi. Yuqori his-hayajon, aqliy zo‘riqish va asab tarangligi bilan bog‘liq ishlarda ish vaqti haftasiga 36 soatdan oshmaydi. Tibbiy xodimlar ham shu toifaga kiradi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "85"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "6-kurs-davolash-08-q07",
+   "question_i18n": {
+    "uz": "Hamshira muddatsiz mehnat shartnomasi bo‘yicha o‘z tashabbusi bilan ishdan ketmoqchi. U ish beruvchini qancha muddat oldin yozma ogohlantirishi shart?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Uch kun oldin yozma ravishda",
+     "Bir oy oldin yozma ravishda",
+     "Ikki oy oldin yozma ravishda",
+     "Ikki hafta oldin yozma ravishda"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Xodim ish beruvchini ikki hafta oldin yozma ogohlantirib, muddatsiz va muddatli shartnomalarni bekor qilishi mumkin. Ogohlantirish muddati o‘tgach ish beruvchi mehnat daftarchasini berib, hisob-kitob qilishi shart."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "87"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "6-kurs-davolash-08-q08",
+   "question_i18n": {
+    "uz": "Klinikada shtat qisqarishi sababli shifokor bilan shartnoma ish beruvchi tashabbusi bilan bekor qilinmoqda. Xodim kamida qancha muddat oldin yozma ogohlantirilishi kerak?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kamida ikki oy oldin",
+     "Kamida ikki hafta oldin",
+     "Kamida uch kun oldin",
+     "Kamida bir oy oldin"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Texnologiya yoki mehnat tashkilotidagi o‘zgarish, shtat yoki ish hajmining qisqarishi, korxona tugatilishi holatida ish beruvchi xodimni kamida ikki oy oldin imzo chektirib ogohlantiradi. Kelishuv bo‘lsa, ogohlantirish pullik kompensatsiya bilan almashtirilishi mumkin."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "89"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "6-kurs-davolash-08-q09",
+   "question_i18n": {
+    "uz": "Bosh vrach navbatchi vrachning intizomiy qilmishini aniqladi. U intizomiy jazoni qilmish aniqlangandan boshlab qaysi muddat ichida qo‘llashi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bir hafta ichida",
+     "Olti oy ichida",
+     "Bir oy ichida",
+     "Ikki yil ichida"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Intizomiy jazo qilmish aniqlangandan bir oy ichida qo‘llanadi. Bu muddatga xodimning bemor yoki mehnat ta’tilida bo‘lgan vaqti kirmaydi. Olti oy va ikki yil – qilmish sodir bo‘lgandan keyingi eng so‘nggi chegaralar."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "90"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "6-kurs-davolash-08-q10",
+   "question_i18n": {
+    "uz": "Vrach o‘z harakati zararli oqibatga olib kelishi mumkinligini oldindan ko‘rgan, ammo yengiltaklik bilan uni oldini olaman deb o‘ylagan. Huquqbuzarlik ayb shakliga ko‘ra qanday baholanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qasddan sodir etilgan huquqbuzarlik",
+     "Ehtiyotsizlik orqasida sodir etilgan huquqbuzarlik",
+     "Oxirgi zarurat holatidagi harakat",
+     "Kam ahamiyatli huquqbuzarlik"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Zararli oqibatni oldindan ko‘rib, yengiltaklik bilan uni oldini olish mumkin deb o‘ylash ehtiyotsizlik hisoblanadi. Qasdda shaxs oqibatni istaydi yoki unga ongli ravishda yo‘l qo‘yadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "93"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "6-kurs-davolash-08-q11",
+   "question_i18n": {
+    "uz": "Davlat poliklinikasi bosh shifokori (mansabdor shaxs) ma’muriy huquqbuzarlik sodir etdi. Istisno holat yo‘q. Unga solinadigan jarimaning eng ko‘p chegarasi qanday?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Eng kam oylik ish haqining besh baravaridan oshmasligi kerak",
+     "Eng kam oylik ish haqining yuz baravaridan oshmasligi kerak",
+     "Eng kam oylik ish haqining o‘n baravaridan oshmasligi kerak",
+     "Eng kam oylik ish haqining uch baravaridan oshmasligi kerak"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Mansabdor shaxsga solinadigan jarimaning eng ko‘p miqdori eng kam oylik ish haqining o‘n baravaridan oshmasligi kerak. Besh baravar fuqarolar uchun belgilangan chegara. Yuz baravar faqat fuqarolar uchun istisno holatlarda qo‘llanadi. Uch baravar fuqarolarga mahalliy hokimiyat qarori bilan solinadigan jarimaning chegarasi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "95"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "6-kurs-davolash-08-q12",
+   "question_i18n": {
+    "uz": "Quyidagilardan qaysi biri ma’muriy jazo turi hisoblanmaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ma’muriy qamoqqa olish",
+     "Ashyoni musodara qilish",
+     "Maxsus huquqdan mahrum qilish",
+     "Mehnat shartnomasini bekor qilish"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Ma’muriy jazolar: jarima, ashyoni haqini to‘lab olib qo‘yish, musodara, maxsus huquqdan mahrum qilish va ma’muriy qamoq. Mehnat shartnomasini bekor qilish esa intizomiy jazo turi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "94"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "6-kurs-davolash-08-q13",
+   "question_i18n": {
+    "uz": "Shifokor sanitariya qoidasini bir marta buzdi va bu harakat tugagan. Ma’muriy jazo qo‘llash muddati qanday hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Sodir etilgan kundan ikki oydan kechiktirmay",
+     "Sodir etilgan kundan bir oydan kechiktirmay",
+     "Sodir etilgan kundan olti oydan kechiktirmay",
+     "Sodir etilgan kundan bir yildan kechiktirmay"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Ma’muriy jazo huquqbuzarlik sodir etilgan kundan ikki oydan kechiktirmay qo‘llanadi. Bir oylik muddat esa jinoyat ishini qo‘zg‘atishni rad etish yoki to‘xtatish qarori chiqqan holatlarga tegishli."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "96"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "6-kurs-davolash-08-q14",
+   "question_i18n": {
+    "uz": "Epidemiyaga qarshi qoida buzilgani uchun bayonnoma tuzilmoqda. Shifokor bayonnomani imzolashdan bosh tortdi. Qanday yo‘l tutiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bayonnoma bekor qilinadi va ish yuritish to‘xtatiladi",
+     "Bayonnomaga bu haqda yozib qo‘yiladi",
+     "Bayonnoma faqat guvohlar imzosi bilan haqiqiy bo‘ladi",
+     "Shifokorga avtomatik ma’muriy qamoq belgilanadi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Huquqbuzar imzolashdan bosh tortsa, bayonnomaga bu haqda yozib qo‘yiladi. U o‘z tushuntirish va mulohazalarini ilova qilishi, imzodan bosh tortish sabablarini bayon etishi mumkin."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "98"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "6-kurs-davolash-08-q15",
+   "question_i18n": {
+    "uz": "Quyidagilardan qaysi biri aholi sog‘lig‘ini saqlash sohasidagi ma’muriy huquqbuzarlik sifatida keltirilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Tuhmat qilish, ya’ni fuqaroni yolg‘on ma’lumot bilan ayblash",
+     "Davlat tili haqidagi qonun talablarini buzish",
+     "Epidemiyaga qarshi kurash qoidalarini buzish",
+     "Mehnatga ma’muriy majburlash holatiga yo‘l qo‘yish"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Epidemiyaga qarshi kurash qoidalarini buzish sog‘liqni saqlash sohasidagi huquqbuzarliklar qatorida (54-modda). Tuhmat, davlat tili va mehnatga majburlash fuqarolar huquq va erkinliklariga tajovuz qiluvchi huquqbuzarliklar guruhiga kiradi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "99"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "6-kurs-davolash-08-q16",
+   "question_i18n": {
+    "uz": "Bemor vrachni kasb vazifasini lozim darajada bajarmaganlikda ayblab, zararni qoplash da‘vosi bilan sudga murojaat qildi. Fuqarolik qonuniga ko‘ra kim aybdor hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bemor vrach aybini isbotlamaguncha vrach aybsiz hisoblanadi",
+     "Sud-tibbiy ekspertiza xulosasigacha hech kim aybdor hisoblanmaydi",
+     "Vrach o‘z aybsizligini isbotlamaguncha aybdor hisoblanadi",
+     "Muassasa rahbari aybsizligini isbotlamaguncha aybdor hisoblanadi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Fuqarolik qonuni zarar etkazuvchi aybini nazarda tutadi (ayb prezumpsiyasi). Jabrlanuvchi ayb va g‘ayriqonuniylikni isbotlashi shart emas. Vrach o‘z harakatlari qonuniy va aybi yo‘qligini isbotlaguncha aybdor hisoblanadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "104"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "6-kurs-davolash-08-q17",
+   "question_i18n": {
+    "uz": "Bemorga zarar etkazilgan, vrachning harakati g‘ayriqonuniy va unda ayb bor. Ammo zarar boshqa sababdan kelib chiqqani aniqlandi. Zarar uchun javobgarlikning qaysi sharti yetishmaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Harakat bilan zarar o‘rtasida sababiy bog‘liqlik mavjud emas",
+     "Zarar etkazilganlik fakti mavjud emas",
+     "Zarar etkazgan shaxsning harakati g‘ayriqonuniy emas",
+     "Zarar etkazgan shaxsning aybi mavjud emas"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Javobgarlik to‘rt shart birga bo‘lganda vujudga keladi: zarar fakti, g‘ayriqonuniy harakat, harakat va zarar o‘rtasidagi sababiy bog‘liqlik hamda ayb. Bu vaziyatda zarar fakti, g‘ayriqonuniylik va ayb bor, sababiy bog‘liqlik esa yo‘q."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "105"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "6-kurs-davolash-08-q18",
+   "question_i18n": {
+    "uz": "Fuqarolik kodeksiga ko‘ra, zararni qoplash bo‘yicha umumiy da‘vo muddati qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bir yil",
+     "Uch yil",
+     "Ikki yil",
+     "Besh yil"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Umumiy da‘vo muddati uch yil (FK 150-modda). U shaxs o‘z huquqi buzilganini bilgan yoki bilishi lozim bo‘lgan kundan boshlab hisoblanadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "109"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "6-kurs-davolash-08-q19",
+   "question_i18n": {
+    "uz": "Xususiy klinika bemor bilan haq evaziga xizmat ko‘rsatish shartnomasini tuzgan, lekin xizmatni tegishli darajada bajarmadi. Buyurtmachiga to‘lanadigan zarar miqdori qanday chegaraga ega?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Xizmat bahosining yarmidan ortiq bo‘lishi mumkin emas",
+     "Xizmat bahosining o‘ziga teng miqdordan oshmasligi shart",
+     "Xizmat bahosining uch baravaridan oshmasligi lozim",
+     "Xizmat bahosining ikki baravaridan oshmasligi lozim"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Ijrochi xizmatni umuman yoki tegishli darajada bajarmasa, zararni batamom to‘lashi shart. Lekin to‘lov shartnomadagi xizmat bahosining ikki baravaridan ortiq bo‘lishi mumkin emas (FK 706-modda)."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "110"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "6-kurs-davolash-08-q20",
+   "question_i18n": {
+    "uz": "Klinika xodimi bemorning shifokor sirini oshkor etdi, lekin bemorga moddiy zarar etkazilmadi. Bu holatda ma‘naviy zararni qoplash mumkinmi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ha, ma‘naviy zarar mulkiy zarardan qat‘iy nazar qoplanadi",
+     "Yo‘q, ma‘naviy zarar faqat moddiy zarar bo‘lsa qoplanadi",
+     "Yo‘q, sir oshkor etilishi faqat intizomiy javobgarlik asosidir",
+     "Ha, lekin faqat bemor sud ekspertizasidan o‘tgandan so‘ng"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Shifokor sirini oshkor etish, bemorga qo‘pollik qilish moddiy zarardan qat‘iy nazar ma‘naviy zararni qoplash uchun asos bo‘lishi mumkin. Ma‘naviy zarar to‘lanishi lozim bo‘lgan mulkiy zarardan qat‘iy nazar qoplanadi (FK 1022-modda)."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "111-112"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "G‘iyosov Z.A.",
+   "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)"
+  }
+ ]
+}

@@ -174,31 +174,35 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "DAD uchraydigan holatlar",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Misol"
+        "kind": "tree",
+        "root": "DAD uchraydigan holatlar",
+        "children": [
+          {
+            "label": "Tizimli holat",
+            "items": [
+              "Sepsis, shok"
+            ]
+          },
+          {
+            "label": "Jarohat",
+            "items": [
+              "Travma"
+            ]
+          },
+          {
+            "label": "Sababi noaniq",
+            "items": [
+              "Idiopatik holatlar"
+            ]
+          },
+          {
+            "label": "Surunkali kasallik",
+            "items": [
+              "Interstitsial kasallik avji"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Tizimli holat",
-            "Sepsis, shok"
-          ],
-          [
-            "Jarohat",
-            "Travma"
-          ],
-          [
-            "Sababi aniqlanmagan",
-            "Idiopatik holatlar"
-          ],
-          [
-            "Surunkali kasallik",
-            "Interstitsial kasallik avji"
-          ]
-        ]
+        "caption": "DAD uchraydigan holatlar"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: nima uchun bir xil o‘pka morfologiyasi turli sabablardan kelib chiqishi mumkin? Sud-tibbiy ekspertiza uchun bu nimani anglatadi? Doskada: DAD markazda, atrofida to‘rt guruh sababni chizing. Tipik xato: DAD ni alohida kasallik deb o‘ylash, aslida bu ko‘p sababli morfologik o‘zgarish."
     },
@@ -366,31 +370,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Intensivlik va tarqalish farqi",
-        "nodes": [],
-        "header": [
-          "Ko‘rsatkich",
-          "Misol",
-          "Baholash"
+        "kind": "tree",
+        "root": "ATS/ERS asosida baholash",
+        "children": [
+          {
+            "label": "Intensivlik",
+            "items": [
+              "Surunkali yallig‘lanish, eozinofiliya",
+              "0–3 shkala"
+            ]
+          },
+          {
+            "label": "Tarqalish",
+            "items": [
+              "Gialin membrana (HM)",
+              "0–3 shkala"
+            ]
+          },
+          {
+            "label": "Asosiy mezon",
+            "items": [
+              "Alveolyar organizatsiyalovchi fibroz",
+              "Bor-yo‘qligi faza ajratadi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Intensivlik",
-            "Surunkali yallig‘lanish, eozinofiliya",
-            "0–3 shkala"
-          ],
-          [
-            "Tarqalish",
-            "Gialin membrana (HM)",
-            "0–3 shkala"
-          ],
-          [
-            "Asosiy mezon",
-            "Alveolyar organizatsiyalovchi fibroz",
-            "Bor-yo‘qligi: faza ajratadi"
-          ]
-        ]
+        "caption": "Baholash mezonlari"
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Intensivlik bilan tarqalishning farqi nimada? 2) Nega faza ajratishda bitta mezon (fibroz) tanlangan? Doskada: 0–3 shkalani to‘rt katakli sxema ko‘rinishida chizdiring. Tipik xato: gialin membrana (HM) tarqalish bo‘yicha, surunkali yallig‘lanish esa intensivlik bo‘yicha baholanishini aralashtirish."
     },
@@ -426,16 +431,22 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "DAD bosqichlari ketma-ketligi",
-        "nodes": [
-          "Alveolokapillyar shikast",
-          "Erta ekssudativ (o‘tkir)",
-          "Ostki o‘tkir proliferativ",
-          "Kech fibrotik (surunkali)"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Ekssudativ (erta)",
+            "text": "O‘tkir faza; 50 ta holat (75,7%)"
+          },
+          {
+            "title": "Proliferativ",
+            "text": "Ostki o‘tkir; HM 4–5 kundan; 16 ta (24,2%)"
+          },
+          {
+            "title": "Fibrotik (kech)",
+            "text": "Surunkali faza"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "DAD bosqichlari"
       },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Nima uchun sud-tibbiy autopsiyada ko‘proq erta (ekssudativ) faza uchraydi? 2) Alveolyar fibrin proliferativ faza uchun nimani anglatadi? Doskada: uch fazani strelkalar bilan chizib, har biriga xarakterli belgini yozing (ekssudativ: alveolyar ekssudat/shish; proliferativ: fibrin, fibroz, gistiotsitar deskvamatsiya, surunkali yallig‘lanish). Eslatma: logistik regressiyada proliferativ fazani faqat alveolyar fibrin mustaqil bashorat qilgan; tadqiqot holatlari kech fibrotik fazaga mos kelmagan. Tipik xato: ekssudativ va proliferativ fazani gialin membrana borligiga qarab ajratish; asosiy mezon organizatsiyalovchi fibrozdir."
     },
@@ -471,23 +482,20 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "HM chastotasi (Ferrer)",
-        "nodes": [],
-        "header": [
-          "Faza",
-          "HM chastotasi"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Ekssudativ faza",
+            "value": "12",
+            "unit": "% da HM"
+          },
+          {
+            "label": "Proliferativ faza",
+            "value": "62",
+            "unit": "% da HM"
+          }
         ],
-        "rows": [
-          [
-            "Ekssudativ (erta faza)",
-            "12%"
-          ],
-          [
-            "Proliferativ (keyingi faza)",
-            "62%"
-          ]
-        ]
+        "caption": "Gialin membrana chastotasi (Ferrer)"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: 1) Nega keyingi fazada HM ko‘proq topiladi? 2) HM necha kundan keyin shakllanadi? Doskada chizing: vaqt o‘qi (shikast → 4–5 kun → HM) va ikki faza ustuni. Tipik xato: HM har doim ekssudativ fazada ko‘p deb o‘ylash; aslida u proliferativ fazada ko‘proq topilgan."
     },
@@ -523,31 +531,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Holatlar taqsimoti (n = 66)",
-        "nodes": [],
-        "header": [
-          "Ko‘rsatkich",
-          "Soni (%)"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Ekssudativ faza",
+            "value": "50 (75,7%)"
+          },
+          {
+            "label": "Proliferativ faza",
+            "value": "16 (24,2%)"
+          },
+          {
+            "label": "Erkaklar",
+            "value": "55 (83,3%)"
+          },
+          {
+            "label": "Ayollar",
+            "value": "11 (16,6%)"
+          }
         ],
-        "rows": [
-          [
-            "Ekssudativ faza",
-            "50 (75,7%)"
-          ],
-          [
-            "Proliferativ faza",
-            "16 (24,2%)"
-          ],
-          [
-            "Erkaklar",
-            "55 (83,3%)"
-          ],
-          [
-            "Ayollar",
-            "11 (16,6%)"
-          ]
-        ]
+        "caption": "Holatlar taqsimoti (n = 66)"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: 1) Nima uchun sud-tibbiy materialda erkaklar ko‘p bo‘lishi mumkin? 2) Fazalar nisbati nimani ko‘rsatadi? Doskada chizing: 66 holatni ikki qismga bo‘luvchi doira diagrammasi. Tipik xato: foizlarni 100 dan oshiq yoki umumiy sonsiz talqin qilish; asosiy son 66."
     },
@@ -749,6 +752,66 @@
       "diagram_note": null
     },
     {
+      "title": "Pulmonar va ekstrapulmonar DAD",
+      "bullets": [
+        {
+          "text": "Pulmonar DAD alveola ichidagi patologik ta’sirdan (masalan, pnevmoniya) kelib chiqadi.",
+          "source": {
+            "author": "Urer et al.",
+            "title": "Diffuse Alveolar Damage of the Lungs in Forensic Autopsies: Assessment of Histopathological Stages and Causes of Death, The Scientific World Journal",
+            "page": "PMID 23028252, Discussion"
+          }
+        },
+        {
+          "text": "Ekstrapulmonar DAD tizimli yallig‘lanishdan (masalan, sepsis) va aylanuvchi sitokinlar keltirgan shikastdan kelib chiqadi.",
+          "source": {
+            "author": "Urer et al.",
+            "title": "Diffuse Alveolar Damage of the Lungs in Forensic Autopsies: Assessment of Histopathological Stages and Causes of Death, The Scientific World Journal",
+            "page": "PMID 23028252, Discussion"
+          }
+        },
+        {
+          "text": "Ikki guruhda gialin membrana taqsimotida farq bildirilmagan: rivojlanishi turlicha bo‘lsa-da, patologik o‘zgarishlar o‘xshash.",
+          "source": {
+            "author": "Urer et al.",
+            "title": "Diffuse Alveolar Damage of the Lungs in Forensic Autopsies: Assessment of Histopathological Stages and Causes of Death, The Scientific World Journal",
+            "page": "PMID 23028252, Discussion"
+          }
+        },
+        {
+          "text": "Sud-tibbiy seriyada ikkala turdagi holatlar bor; yong‘indan keyingi DAD pulmonar yoki ekstrapulmonar xavf bilan bog‘liq bo‘lishi mumkin.",
+          "source": {
+            "author": "Urer et al.",
+            "title": "Diffuse Alveolar Damage of the Lungs in Forensic Autopsies: Assessment of Histopathological Stages and Causes of Death, The Scientific World Journal",
+            "page": "PMID 23028252, Discussion"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Pulmonar DAD",
+            "items": [
+              "Alveola ichidagi ta’sir",
+              "Masalan, pnevmoniya",
+              "Gialin membrana taqsimoti o‘xshash"
+            ]
+          },
+          {
+            "title": "Ekstrapulmonar DAD",
+            "items": [
+              "Tizimli yallig‘lanish",
+              "Masalan, sepsis",
+              "Aylanuvchi sitokinlar shikasti"
+            ]
+          }
+        ],
+        "caption": "DAD ning ikki yo‘li"
+      },
+      "teacher_notes": "Vaqt: 3 daq."
+    },
+    {
       "title": "Differensial tashxis: DAD ≠ o‘xshash holatlar",
       "bullets": [
         {
@@ -780,33 +843,100 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "DAD va o‘xshash holatlar",
-        "nodes": [],
-        "header": [
-          "Holat",
-          "Farqlovchi belgi"
+        "kind": "tree",
+        "root": "DAD va o‘xshash holatlar",
+        "children": [
+          {
+            "label": "O‘tkir fibrinoz pnevmoniya",
+            "items": [
+              "HM yo‘q",
+              "Fibrin keng to‘plangan"
+            ]
+          },
+          {
+            "label": "Bakterial pnevmoniya",
+            "items": [
+              "DAD da neytrofil kam"
+            ]
+          },
+          {
+            "label": "UIP avj olishi",
+            "items": [
+              "Dog‘simon fibroz",
+              "Asalari uyasi naqshi"
+            ]
+          },
+          {
+            "label": "AEP (eozinofil pnevmoniya)",
+            "items": [
+              "Mikroabssess yo‘q",
+              "Diffuz HM kuzatilmadi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "O‘tkir fibrinoz pnevmoniya",
-            "HM yo‘q, fibrin keng to‘plangan"
-          ],
-          [
-            "Bakterial pnevmoniya",
-            "DAD da alveola va septada neytrofil kam"
-          ],
-          [
-            "UIP avj olishi",
-            "Dog‘simon fibroz va asalari uyasi naqshi"
-          ],
-          [
-            "O‘tkir eozinofil pnevmoniya (AEP)",
-            "Mikroabssess va diffuz HM kuzatilmadi"
-          ]
-        ]
+        "caption": "Differensial tashxis"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) HM mavjudligi nima uchun o‘tkir fibrinoz pnevmoniyani inkor qiladi? 2) Neytrofillar kam bo‘lishi qaysi tashxisni chetlatadi? Doskada chizish: to‘rt holatni DAD bilan yonma-yon solishtiruvchi jadval. Tipik xato: UIP (oddiy interstitsial pnevmoniya) avj olishini DAD bilan bir xil deb olish; ularning reaksiyasi o‘xshash, ammo fonda dog‘simon fibroz va asalari uyasi naqshi bo‘ladi. AEP – o‘tkir eozinofil pnevmoniya."
+    },
+    {
+      "title": "O‘tkir eozinofil pnevmoniya va UIP avj olishi",
+      "bullets": [
+        {
+          "text": "UIP avj olishida DAD ga o‘xshash gistologik reaksiya bo‘ladi, ammo fonda dog‘simon interstitsial fibroz va asalari uyasi naqshi aniqlanadi.",
+          "source": {
+            "author": "Urer et al.",
+            "title": "Diffuse Alveolar Damage of the Lungs in Forensic Autopsies: Assessment of Histopathological Stages and Causes of Death, The Scientific World Journal",
+            "page": "PMID 23028252, Discussion"
+          }
+        },
+        {
+          "text": "Tadqiqotda surunkali yallig‘lanish hujayralari va alveolyar septa fibrozi yengil edi; UIP avj olishi mezonlariga hech bir holat mos kelmadi.",
+          "source": {
+            "author": "Urer et al.",
+            "title": "Diffuse Alveolar Damage of the Lungs in Forensic Autopsies: Assessment of Histopathological Stages and Causes of Death, The Scientific World Journal",
+            "page": "PMID 23028252, Discussion"
+          }
+        },
+        {
+          "text": "O‘tkir eozinofil pnevmoniya (AEP) sabablari: toksik ingalyatsiya, dori reaksiyalari, infeksiya, parazit, mikoz, chekish.",
+          "source": {
+            "author": "Urer et al.",
+            "title": "Diffuse Alveolar Damage of the Lungs in Forensic Autopsies: Assessment of Histopathological Stages and Causes of Death, The Scientific World Journal",
+            "page": "PMID 23028252, Discussion"
+          }
+        },
+        {
+          "text": "Kuyishdan o‘lgan bitta holatda o‘rtacha eozinofil infiltratsiya bor edi; mikroabssess, diffuz HM va II tur pnevmotsit giperplaziyasi yo‘qligi AEP ni inkor etdi.",
+          "source": {
+            "author": "Urer et al.",
+            "title": "Diffuse Alveolar Damage of the Lungs in Forensic Autopsies: Assessment of Histopathological Stages and Causes of Death, The Scientific World Journal",
+            "page": "PMID 23028252, Discussion"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "UIP avj olishi",
+            "items": [
+              "DAD ga o‘xshash reaksiya",
+              "Fonda dog‘simon fibroz",
+              "Asalari uyasi naqshi"
+            ]
+          },
+          {
+            "title": "AEP",
+            "items": [
+              "Toksik ingalyatsiya, dori, infeksiya",
+              "Eozinofil mikroabssess",
+              "Diffuz HM, II tur pnevmotsit giperplaziyasi"
+            ]
+          }
+        ],
+        "caption": "DAD dan farqlash"
+      },
+      "teacher_notes": "Vaqt: 4 daq."
     },
     {
       "title": "O‘pka shikastining mexanizmlari",
@@ -840,31 +970,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Nafas yetishmovchiligi yo‘llari",
-        "nodes": [],
-        "header": [
-          "Sabab",
-          "Rivojlanish yo‘li"
+        "kind": "tree",
+        "root": "Nafas yetishmovchiligi",
+        "children": [
+          {
+            "label": "Travma",
+            "items": [
+              "Qon ketishidan gipoksiya",
+              "Sitokinlar, shish"
+            ]
+          },
+          {
+            "label": "Yong‘in",
+            "items": [
+              "Gipoksiya",
+              "Yonishda ajralgan gazlar"
+            ]
+          },
+          {
+            "label": "Jarrohlik",
+            "items": [
+              "Anesteziya",
+              "Ko‘krak harakati buzilishi"
+            ]
+          },
+          {
+            "label": "Dori va paraquat",
+            "items": [
+              "Alveolaga toksik ta’sir",
+              "Atsidoz, sitokinlar"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Travma",
-            "Qon ketishidan gipoksiya, sitokinlar, shish"
-          ],
-          [
-            "Yong‘in",
-            "Gipoksiya va yonishda ajralgan gazlar"
-          ],
-          [
-            "Jarrohlik",
-            "Anesteziya va ko‘krak harakati buzilishi"
-          ],
-          [
-            "Dori va paraquat",
-            "Alveolaga toksik ta’sir, atsidoz, sitokinlar"
-          ]
-        ]
+        "caption": "O‘pka shikasti mexanizmlari"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Yong‘in o‘limida DAD o‘pka yoki o‘pkadan tashqari yo‘l bilan rivojlanishi mumkinmi? 2) Jarrohlikdan keyingi DAD sud-tibbiy javobgarlikni baholashda nimani bildiradi? Doskada chizish: to‘rt sababdan nafas yetishmovchiligiga olib boruvchi strelkali sxema. Tipik xato: bitta sabab bor deb o‘ylash; ko‘p hollarda o‘zaro bog‘liq bir nechta hodisa bo‘ladi."
     },
@@ -872,7 +1010,16 @@
       "title": "Diqqat: DAD cheklovlari va tashxis qiymati",
       "bullets": [
         {
-          "text": "DAD turli omillardan kelib chiqadigan umumiy o‘zgarish, shuning uchun yolg‘iz o‘zi o‘lim sababini belgilamaydi. Hayotlik tibbiy va sud-tibbiy ma’lumot birga baholanadi.",
+          "text": "DAD turli omillardan kelib chiqadigan umumiy o‘zgarish, shuning uchun yolg‘iz o‘zi o‘lim sababini belgilamaydi.",
+          "source": {
+            "author": "Urer et al.",
+            "title": "Diffuse Alveolar Damage of the Lungs in Forensic Autopsies: Assessment of Histopathological Stages and Causes of Death, The Scientific World Journal",
+            "page": "PMID 23028252"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hayotlik tibbiy va sud-tibbiy ma’lumot birga baholanadi.",
           "source": {
             "author": "Urer et al.",
             "title": "Diffuse Alveolar Damage of the Lungs in Forensic Autopsies: Assessment of Histopathological Stages and Causes of Death, The Scientific World Journal",
@@ -1073,6 +1220,11 @@
         ],
         "rows": [
           [
+            "Jami",
+            "79",
+            "41 sud-tibbiy, 38 klinik"
+          ],
+          [
             "1-guruh",
             "27",
             "Aniq g‘ayritabiiy o‘lim"
@@ -1113,7 +1265,16 @@
           "uncertain": false
         },
         {
-          "text": "Miotsit shikasti — yallig‘lanish hujayralari yonida kardiomiotsitning vakuollanishi, bo‘laklanishi yoki parchalanishi. Fibroz, shish va qon quyilishi bor yoki yo‘q deb belgilangan.",
+          "text": "Miotsit shikasti — yallig‘lanish hujayralari yonida kardiomiotsitning vakuollanishi, bo‘laklanishi yoki parchalanishi.",
+          "source": {
+            "author": "du Long et al.",
+            "title": "The histopathological spectrum of myocardial inflammation in relation to circumstance of death: a retrospective cohort study in clinical and forensic autopsies, Forensic Sciences Research",
+            "page": "PMID 35784416"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Fibroz, shish va qon quyilishi bor yoki yo‘q deb belgilangan.",
           "source": {
             "author": "du Long et al.",
             "title": "The histopathological spectrum of myocardial inflammation in relation to circumstance of death: a retrospective cohort study in clinical and forensic autopsies, Forensic Sciences Research",
@@ -1166,31 +1327,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Indeks toifalari",
-        "nodes": [],
-        "header": [
-          "Qiymat",
-          "Toifa"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "0",
+            "text": "Yallig‘lanish yo‘q (diffuzda ham 0!)"
+          },
+          {
+            "title": "0,1–1,0",
+            "text": "Oz"
+          },
+          {
+            "title": "1,1–1,9",
+            "text": "Yengil"
+          },
+          {
+            "title": "2,0–4,9 va ≥ 5,0",
+            "text": "O‘rta va yaqqol"
+          }
         ],
-        "rows": [
-          [
-            "0",
-            "Yo‘q"
-          ],
-          [
-            "0,1–1,0",
-            "Oz"
-          ],
-          [
-            "1,1–1,9",
-            "Yengil"
-          ],
-          [
-            "2,0–4,9 va ≥5,0",
-            "O‘rta va yaqqol"
-          ]
-        ]
+        "caption": "Yallig‘lanish indeksi (Kitulwatte)"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega past indeks qiymatlari kam ahamiyatli? 2) Diffuz holatda indeks nega chalg‘itadi? Doskada: 10 ta kesmada 6 ta o‘choq bo‘lsa, indeksni hisoblang va toifasini toping. Tipik xato: indeks 0 ni “yallig‘lanish yo‘q” deb o‘qish."
     },
@@ -1226,36 +1382,40 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Miokardit turlari solishtiruvi",
-        "nodes": [],
-        "header": [
-          "Tur",
-          "O‘choq / tarqalish",
-          "Shikast"
+        "kind": "tree",
+        "root": "Miokardit turlari (Basso)",
+        "children": [
+          {
+            "label": "Chegaraviy",
+            "items": [
+              "Siyrak o‘choqlar ≥ 10 hujayra",
+              "Shikast yo‘q"
+            ]
+          },
+          {
+            "label": "Fokal",
+            "items": [
+              "Kamida 1 o‘choq",
+              "Shikast bor"
+            ]
+          },
+          {
+            "label": "Multifokal",
+            "items": [
+              "Bir kesmada >1 o‘choq",
+              "Yoki ko‘p kesmada",
+              "Shikast: variantga bog‘liq"
+            ]
+          },
+          {
+            "label": "O‘tkir diffuz",
+            "items": [
+              "Diffuz infiltratsiya",
+              "O‘choqsiz, keng tarqalgan"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Chegaraviy",
-            "Siyrak o‘choqlar, har biri ≥10 hujayra",
-            "Yo‘q"
-          ],
-          [
-            "Fokal",
-            "Kamida 1 o‘choq (≥10 hujayra)",
-            "Bor"
-          ],
-          [
-            "Multifokal",
-            "Bir kesmada >1 o‘choq yoki ko‘p kesmada",
-            "Variantga bog‘liq"
-          ],
-          [
-            "O‘tkir diffuz",
-            "Diffuz infiltratsiya, o‘choqsiz",
-            "Keng tarqalgan"
-          ]
-        ]
+        "caption": "Miokardit turlari"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: nega bir xil o‘choq soni turli talqinga olib kelishi mumkin? Nega faqat diffuz tur ajratuvchi bo‘ldi? Doskada: to‘rt turni ‘o‘choq soni’ va ‘shikast’ o‘qlari bo‘yicha joylashtiring. Tipik xato: chegaraviy miokarditda ham shikast bor deb o‘ylash; aslida u shikastsiz."
     },
@@ -1263,7 +1423,16 @@
       "title": "Tezkor savol 4: tasnif va indeks",
       "bullets": [
         {
-          "text": "Savol 1: fokal va multifokal miokardit farqi nima? Fokal — shikastli kamida bitta o‘choq. Multifokal — bir kesmada bir nechta o‘choq yoki ko‘p kesmada shikastli o‘choq.",
+          "text": "Savol 1: fokal va multifokal miokardit farqi nima? Fokal — shikastli kamida bitta o‘choq.",
+          "source": {
+            "author": "du Long et al.",
+            "title": "The histopathological spectrum of myocardial inflammation in relation to circumstance of death: a retrospective cohort study in clinical and forensic autopsies, Forensic Sciences Research",
+            "page": "PMID 35784416"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Multifokal — bir kesmada bir nechta o‘choq yoki ko‘p kesmada shikastli o‘choq.",
           "source": {
             "author": "du Long et al.",
             "title": "The histopathological spectrum of myocardial inflammation in relation to circumstance of death: a retrospective cohort study in clinical and forensic autopsies, Forensic Sciences Research",
@@ -1419,6 +1588,74 @@
       "teacher_notes": "Vaqt: 6 daq. Avval uch guruh ta’rifini eslating: 1 – aniq zo‘ravon o‘lim, 2 – miokardit bir nechta mumkin bo‘lgan sabablardan biri, 3 – yagona muhim topilma. Muhokama: nega faqat diffuz o‘tkir shakl guruhlarni ajratdi? Nega oz indeks hamma guruhda ko‘p chiqdi? Doskada: jadvalni chizib, har guruh uchun diffuz holatlar sonini to‘ldirtiring. Tipik xato: indeks past bo‘lsa, yallig‘lanish ahamiyatsiz deb o‘ylash."
     },
     {
+      "title": "Miokard namunalash va o‘choqlar joylashuvi",
+      "bullets": [
+        {
+          "text": "Namuna olingan joylar soni: 1-guruhda o‘rtacha 5,6, 2-guruhda 8,3, 3-guruhda 7,8; farq faqat 1- va 2-guruh orasida ahamiyatli.",
+          "source": {
+            "author": "du Long et al.",
+            "title": "The histopathological spectrum of myocardial inflammation in relation to circumstance of death: a retrospective cohort study in clinical and forensic autopsies, Forensic Sciences Research",
+            "page": "PMID 35784416, Myocardial sampling"
+          }
+        },
+        {
+          "text": "Deyarli barcha holatda o‘ng va chap qorincha (old, yon, orqa devor) hamda qorinchalar to‘sig‘i namunalangan; o‘tkazuvchi tizim 13 holatda.",
+          "source": {
+            "author": "du Long et al.",
+            "title": "The histopathological spectrum of myocardial inflammation in relation to circumstance of death: a retrospective cohort study in clinical and forensic autopsies, Forensic Sciences Research",
+            "page": "PMID 35784416, Myocardial sampling"
+          }
+        },
+        {
+          "text": "Diffuz bo‘lmagan holatlarda o‘choqlar o‘rtacha soni 2-guruhda 2,6, 3-guruhda 1,8 (P = 0,375 — farq ahamiyatsiz).",
+          "source": {
+            "author": "du Long et al.",
+            "title": "The histopathological spectrum of myocardial inflammation in relation to circumstance of death: a retrospective cohort study in clinical and forensic autopsies, Forensic Sciences Research",
+            "page": "PMID 35784416, Results: Distribution of inflammation"
+          }
+        },
+        {
+          "text": "O‘choqlar ko‘pincha chap qorincha devorida; o‘tkazuvchi tizim namunalangan 13 holatning 3 tasida ham o‘choq topilgan; ikkala bo‘lmacha — faqat 1 holatda.",
+          "source": {
+            "author": "du Long et al.",
+            "title": "The histopathological spectrum of myocardial inflammation in relation to circumstance of death: a retrospective cohort study in clinical and forensic autopsies, Forensic Sciences Research",
+            "page": "PMID 35784416, Results: Distribution of inflammation"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Namuna joylari, 1-guruh",
+            "value": "5,6"
+          },
+          {
+            "label": "Namuna joylari, 2-guruh",
+            "value": "8,3"
+          },
+          {
+            "label": "Namuna joylari, 3-guruh",
+            "value": "7,8"
+          },
+          {
+            "label": "O‘choq soni, 2-guruh",
+            "value": "2,6"
+          },
+          {
+            "label": "O‘choq soni, 3-guruh",
+            "value": "1,8"
+          },
+          {
+            "label": "O‘tkazuvchi tizimda",
+            "value": "3 / 13 o‘choq"
+          }
+        ],
+        "caption": "Namunalash va o‘choqlar"
+      },
+      "teacher_notes": "Vaqt: 3 daq."
+    },
+    {
       "title": "Infiltrat turi va boshqa gistologik belgilar",
       "bullets": [
         {
@@ -1460,6 +1697,66 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 6 daq. Muhokama: tasodifiy yallig‘lanish nega deyarli doim limfotsitar? Nima uchun limfotsitar tur o‘lim sababini isbotlamaydi? Nolimfotsitar ustunlik nimani taxmin qildiradi? Doskada: uchta guruh uchun infiltrat turlarini ustunli diagrammada chizdiring. Tipik xato: miotsit shikasti bo‘lsa, miokardit o‘limga sabab deb avtomatik xulosa qilish."
+    },
+    {
+      "title": "Miotsit shikasti va genetik/toksikologik tekshiruv",
+      "bullets": [
+        {
+          "text": "Miotsit shikasti tarixan ahamiyatli va ahamiyatsiz yallig‘lanishni ajratadigan belgi hisoblangan (Dallas mezonlari, AECVP).",
+          "source": {
+            "author": "du Long et al.",
+            "title": "The histopathological spectrum of myocardial inflammation in relation to circumstance of death: a retrospective cohort study in clinical and forensic autopsies, Forensic Sciences Research",
+            "page": "PMID 35784416, Discussion"
+          }
+        },
+        {
+          "text": "Casali va b. miotsit shikastini o‘limli miokarditni ajratuvchi deb topgan; bu tadqiqotda esa u tasodifiy topilma bo‘lishi mumkin (78%, 76%, 70%).",
+          "source": {
+            "author": "du Long et al.",
+            "title": "The histopathological spectrum of myocardial inflammation in relation to circumstance of death: a retrospective cohort study in clinical and forensic autopsies, Forensic Sciences Research",
+            "page": "PMID 35784416, Discussion"
+          }
+        },
+        {
+          "text": "Papadakis: “yengil” o‘zgarishli (fokal/chegaraviy miokardit) to‘satdan yurak o‘limida irsiy kasallik 51%, butunlay normal yurakda 47%.",
+          "source": {
+            "author": "du Long et al.",
+            "title": "The histopathological spectrum of myocardial inflammation in relation to circumstance of death: a retrospective cohort study in clinical and forensic autopsies, Forensic Sciences Research",
+            "page": "PMID 35784416, Discussion"
+          }
+        },
+        {
+          "text": "Shu sababli miokardit tashxisi bilan tekshiruvni to‘xtatish xavfli; genetik va toksikologik tekshiruvga past chegara qo‘yiladi.",
+          "source": {
+            "author": "du Long et al.",
+            "title": "The histopathological spectrum of myocardial inflammation in relation to circumstance of death: a retrospective cohort study in clinical and forensic autopsies, Forensic Sciences Research",
+            "page": "PMID 35784416, Discussion"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Miotsit shikasti",
+            "items": [
+              "Dallas/AECVP: ahamiyatlini ajratgan belgi",
+              "Casali: ajratuvchi deb topilgan",
+              "Bu tadqiqot: tasodifiy bo‘lishi mumkin"
+            ]
+          },
+          {
+            "title": "Irsiy yurak kasalligi",
+            "items": [
+              "“Yengil” o‘zgarishlarda: 51%",
+              "Normal yurakda: 47%",
+              "Genetik tekshiruvga past chegara"
+            ]
+          }
+        ],
+        "caption": "Miotsit shikasti va irsiy xavf"
+      },
+      "teacher_notes": "Vaqt: 4 daq."
     },
     {
       "title": "Diqqat: indeks 0 ≠ yallig‘lanish yo‘q",
@@ -1548,6 +1845,80 @@
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega o‘choqlar soni yolg‘iz yetarli emas? 2) Qaysi qo‘shimcha tekshiruvlarni buyurasiz? Doskada: «Ha / Yo‘q / Noaniq» ustunlari bilan qaror daraxtini chizdiring. Tipik xato: miotsit nekrozini avtomatik o‘lim sababi deb hisoblash."
     },
     {
+      "title": "Tadqiqot ishonchliligi: kuzatuvchi ichi kelishuvi",
+      "bullets": [
+        {
+          "text": "Barcha gistologik qayta ko‘rik bitta tadqiqotchi tomonidan o‘tkazilgan; ikkinchi ko‘rik kamida 4 hafta keyin bajarilgan.",
+          "source": {
+            "author": "du Long et al.",
+            "title": "The histopathological spectrum of myocardial inflammation in relation to circumstance of death: a retrospective cohort study in clinical and forensic autopsies, Forensic Sciences Research",
+            "page": "PMID 35784416, Intra-observer agreement"
+          }
+        },
+        {
+          "text": "Kelishuv Cohen kappasi bilan baholangan; κ > 0,80 kuchli kelishuv deb hisoblangan.",
+          "source": {
+            "author": "du Long et al.",
+            "title": "The histopathological spectrum of myocardial inflammation in relation to circumstance of death: a retrospective cohort study in clinical and forensic autopsies, Forensic Sciences Research",
+            "page": "PMID 35784416, Statistical analysis"
+          }
+        },
+        {
+          "text": "O‘choqlar soni uchun κ = 0,85, miotsit shikasti — 0,96, shish — 1,00, fibroz — 0,88, qon quyilishi — 0,92.",
+          "source": {
+            "author": "du Long et al.",
+            "title": "The histopathological spectrum of myocardial inflammation in relation to circumstance of death: a retrospective cohort study in clinical and forensic autopsies, Forensic Sciences Research",
+            "page": "PMID 35784416, Results: Intra-observer agreement"
+          }
+        },
+        {
+          "text": "Guruhlar Chi-kvadrat, Fisher aniq testi yoki Kruskal–Wallis testi bilan solishtirilgan; P < 0,05 ahamiyatli deb olingan.",
+          "source": {
+            "author": "du Long et al.",
+            "title": "The histopathological spectrum of myocardial inflammation in relation to circumstance of death: a retrospective cohort study in clinical and forensic autopsies, Forensic Sciences Research",
+            "page": "PMID 35784416, Statistical analysis"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "O‘choqlar soni",
+            "value": "0,85",
+            "unit": "κ"
+          },
+          {
+            "label": "Miotsit shikasti",
+            "value": "0,96",
+            "unit": "κ"
+          },
+          {
+            "label": "Shish",
+            "value": "1,00",
+            "unit": "κ"
+          },
+          {
+            "label": "Fibroz",
+            "value": "0,88",
+            "unit": "κ"
+          },
+          {
+            "label": "Qon quyilishi",
+            "value": "0,92",
+            "unit": "κ"
+          },
+          {
+            "label": "Kuchli kelishuv",
+            "value": "> 0,80",
+            "unit": "κ"
+          }
+        ],
+        "caption": "Intra-observer kelishuv (Cohen κ)"
+      },
+      "teacher_notes": "Vaqt: 3 daq."
+    },
+    {
       "title": "Cheklovlar va keng qamrovli tekshiruv",
       "bullets": [
         {
@@ -1625,36 +1996,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "DAD va miokardit solishtirmasi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "O‘pka (DAD)",
-          "Yurak"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "O‘pka (DAD)",
+            "items": [
+              "Gialin membrana, alveolyar ekssudat",
+              "Ekssudativ va proliferativ faza",
+              "Yolg‘iz o‘lim sababini aytmaydi",
+              "Alveolyar fibrin — proliferativ"
+            ]
+          },
+          {
+            "title": "Yurak (miokardit)",
+            "items": [
+              "O‘choqlar ≥ 10 hujayra, miotsit shikasti",
+              "Chegaraviy, fokal, multifokal, diffuz",
+              "O‘choq soni yolg‘iz yetarli emas",
+              "Diffuz o‘tkir — ajratuvchi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Asosiy belgi",
-            "Gialin membrana, alveolyar eksudat/shish",
-            "O‘choqlar ≥10 hujayra, miotsit shikasti"
-          ],
-          [
-            "Bosqich/tur",
-            "Eksudativ va proliferativ",
-            "Borderline, fokal, multifokal, diffuz"
-          ],
-          [
-            "Yolg‘iz yetarli emas",
-            "DAD yolg‘iz o‘lim sababini aytmaydi",
-            "O‘choqlar soni va miotsit shikasti yolg‘iz"
-          ],
-          [
-            "Ajratuvchi",
-            "Alveolyar fibrin — proliferativ tomon",
-            "Diffuz o‘tkir yallig‘lanish"
-          ]
-        ]
+        "caption": "DAD va miokardit solishtirmasi"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Ikki organda gistologiya yolg‘iz nimani isbotlay olmaydi? 2) Jadvaldagi qaysi belgi eng ishonchli? Doskada: jadvalni talabalar bilan birga to‘ldiring. Mnemonika («bitta belgi — bitta xulosa emas») o‘qituvchi tomonidan umumlashtirilgan, manbada so‘zma-so‘z yo‘q. Tipik xato: DAD yoki miokardit topilgani zahoti o‘lim sababi deb yozish."
     },
@@ -1707,11 +2070,11 @@
       "question": "Sud-tibbiyot eksperti o‘pka preparatida alveolyar organizatsiyalanuvchi fibroz topdi. Bu qaysi DAD bosqichini bildiradi?",
       "options": [
         "Eksudativ (erta o‘tkir) bosqichni",
-        "Proliferativ (organizatsiya) bosqichni",
         "Kech fibrotik (surunkali) bosqichni",
+        "Proliferativ (organizatsiya) bosqichni",
         "Bosqichni aniqlab bo‘lmaydi"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Tadqiqotda har qanday alveolyar organizatsiyalanuvchi fibroz mavjudligi eksudativ bosqichni proliferativ bosqichdan ajratuvchi asosiy mezon deb qabul qilingan. DAD ‘diffuz alveolyar shikast’ degani.",
       "source": {
         "author": "Urer et al.",
@@ -1722,12 +2085,12 @@
     {
       "question": "Diffuz alveolyar shikast (DAD) qaysi kasallikning morfologik prototipi hisoblanadi?",
       "options": [
-        "O‘tkir interstitsial pnevmoniya",
-        "Surunkali obstruktiv o‘pka kasalligi",
         "Lobar bakterial pnevmoniya",
+        "Surunkali obstruktiv o‘pka kasalligi",
+        "O‘tkir interstitsial pnevmoniya",
         "O‘pka arteriyasi tromboemboliyasi"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Manbaga ko‘ra DAD o‘tkir interstitsial pnevmoniyaning morfologik prototipi bo‘lib, tez va o‘lim bilan tugaydigan klinik kechishi bilan xarakterlanadi.",
       "source": {
         "author": "Urer et al.",
@@ -1771,11 +2134,11 @@
       "question": "Idiopatik o‘pka fibrozi va og‘ir nafas buzilishi bor bemorda ochiq o‘pka biopsiyasining qaysi xavfi sud-tibbiy autopsiyani muqobil qiladi?",
       "options": [
         "Gialin membranani butunlay yo‘qotib yuboradi",
-        "O‘tkir xurujni qo‘zg‘atishi mumkin",
+        "Faqat bolalarda qo‘llash mumkin",
         "Namunani o‘pkadan olib bo‘lmaydi",
-        "Faqat bolalarda qo‘llash mumkin"
+        "O‘tkir xurujni qo‘zg‘atishi mumkin"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Ochiq biopsiya idiopatik o‘pka fibrozi bor bemorlarda o‘tkir xurujni qo‘zg‘atishi mumkin va og‘ir nafas buzilishida cheklangan. Shuning uchun sud-tibbiy autopsiya muqobil tadqiqot sohasi sifatida ko‘riladi.",
       "source": {
         "author": "Urer et al.",
@@ -1944,35 +2307,35 @@
       }
     },
     {
-      "question": "Bir kesmada ≥10 hujayrali ikkita yallig‘lanish o‘chog‘i va miotsit nekrozi topildi. Basso tasnifi bo‘yicha bu qaysi tur?",
+      "question": "Kuzatuvchi ichi kelishuvda o‘choqlar soni uchun Cohen kappasi qancha bo‘lgan?",
       "options": [
-        "Chegaraviy miokardit turi",
-        "Fokal miokardit turi",
-        "Multifokal miokardit turi",
-        "O‘tkir diffuz miokardit turi"
+        "κ = 0,85",
+        "κ = 0,65",
+        "κ = 0,45",
+        "κ = 0,75"
       ],
-      "correct_index": 2,
-      "explanation": "Multifokal miokarditda bir kesmada ≥10 hujayrali birdan ortiq o‘choq bo‘ladi. Fokal turda kamida bitta o‘choq va miotsit shikasti yetarli. Diffuz turda esa o‘choqlar emas, yoyilgan infiltrat va keng miotsit shikasti bo‘ladi. Manbadagi 1B rasmida ikki o‘choq va nekroz multifokal miokardit deb ko‘rsatilgan.",
+      "correct_index": 0,
+      "explanation": "O‘choqlar soni uchun κ = 0,85 (miotsit shikasti — 0,96, fibroz — 0,88, qon quyilishi — 0,92); κ > 0,80 kuchli kelishuv hisoblangan.",
       "source": {
         "author": "du Long et al.",
         "title": "The histopathological spectrum of myocardial inflammation in relation to circumstance of death: a retrospective cohort study in clinical and forensic autopsies, Forensic Sciences Research",
-        "page": "PMID 35784416; DOI 10.1080/20961790.2021.1989793"
+        "page": "PMID 35784416, Results: Intra-observer agreement"
       }
     },
     {
-      "question": "Diffuz yallig‘lanishli holatda alohida o‘choqlar yo‘q, shuning uchun yallig‘lanish indeksi 0 chiqdi. Bu nimani bildiradi?",
+      "question": "Kuyishdan o‘lgan holatda o‘tkir eozinofil pnevmoniya (AEP) nega inkor etilgan?",
       "options": [
-        "Indeks aldamchi: yallig‘lanish bor, o‘choq sanalmagan",
-        "Yallig‘lanish umuman yo‘q, yurak to‘qimasi me‘yorda",
-        "Yallig‘lanish juda yengil va amaliy ahamiyatsiz",
-        "Yallig‘lanish faqat o‘tkazuvchi tizimda joylashgan"
+        "Eozinofil mikroabssess, diffuz HM va II tur pnevmotsit giperplaziyasi yo‘q edi",
+        "Gialin membrana umuman topilmadi",
+        "Bakterial pnevmoniya aniqlandi",
+        "Neytrofillar alveolalarda ko‘p edi"
       ],
       "correct_index": 0,
-      "explanation": "Indeks o‘choqlar sonini kesmalar soniga bo‘lish bilan hisoblanadi. Diffuz yallig‘lanishda aniq o‘choq bo‘lmaydi, shuning uchun indeks 0 chiqadi. Diffuz tur eng og‘ir shakl, shu sababli 0 qiymat yallig‘lanish yo‘q degan noto‘g‘ri xulosaga olib keladi. Indeksni faqat diffuz bo‘lmagan turlarda qo‘llash kerak.",
+      "explanation": "Bitta kuyish holatida o‘rtacha eozinofil infiltratsiya bor edi, ammo eozinofil mikroabssess, diffuz gialin membrana va II tur pnevmotsit giperplaziyasining yo‘qligi AEP ni inkor etdi.",
       "source": {
-        "author": "du Long et al.",
-        "title": "The histopathological spectrum of myocardial inflammation in relation to circumstance of death: a retrospective cohort study in clinical and forensic autopsies, Forensic Sciences Research",
-        "page": "PMID 35784416; DOI 10.1080/20961790.2021.1989793"
+        "author": "Urer et al.",
+        "title": "Diffuse Alveolar Damage of the Lungs in Forensic Autopsies: Assessment of Histopathological Stages and Causes of Death, The Scientific World Journal",
+        "page": "PMID 23028252, Discussion"
       }
     },
     {

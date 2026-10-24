@@ -32,7 +32,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Kirish: asosiy fikrlar",
+        "children": [
+          {
+            "label": "MNS",
+            "items": [
+              "OITSda o‘pkadan keyin 2-o‘rin"
+            ]
+          },
+          {
+            "label": "Autopsiya qiymati",
+            "items": [
+              "Tabiiy kechishni tushunish",
+              "Aniqlanmagan infeksiya, o‘sma"
+            ]
+          },
+          {
+            "label": "Bo‘shliq",
+            "items": [
+              "Neyropatologik tizimli tadqiqot kam"
+            ]
+          }
+        ],
+        "caption": "Kirish"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega OITSda MNS ikkinchi o‘rinda zararlanadi deb hisoblanadi? Doskada: MNS va o‘pka zararlanishi tartibini yozing. Tipik xato: Autopsiyani faqat o‘lim sababini aniqlash usuli deb bilish."
     },
     {
@@ -58,31 +83,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ikki tadqiqotni solishtirish",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Silva va boshq.",
-          "Karat va boshq."
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Silva (Braziliya)",
+            "items": [
+              "284 OITS autopsiyasi, 1989–2008",
+              "MNS o‘zgarishlari",
+              "Retrospektiv, gistologiya"
+            ]
+          },
+          {
+            "title": "Karat (J. Afrika)",
+            "items": [
+              "34 minimal invaziv autopsiya",
+              "CD4 ≤150 hujayra/μL",
+              "TB va boshqa infeksiyalar"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Autopsiyalar soni",
-            "284",
-            "34 (MIA)"
-          ],
-          [
-            "Asosiy ob’ekt",
-            "MNS o‘zgarishlari",
-            "TB va boshqa infeksiyalar"
-          ],
-          [
-            "Usul",
-            "Gistologiya",
-            "Gistologiya + mikrobiologiya"
-          ]
-        ]
+        "caption": "Ikki tadqiqot"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Ikki tadqiqot dizayni qanday farq qiladi? Doskada: Ikki ustunli taqqoslash jadvali. Tipik xato: MIA va to‘liq autopsiyani bir xil deb hisoblash."
     },
@@ -108,7 +128,7 @@
           "uncertain": false
         },
         {
-          "text": "OIVga xos o‘zgarishlar odatda kasallikning kechki bosqichida paydo bo‘ladi; ko‘p yadroli gigant hujayralar MNSda OIV infeksiyasi uchun «patognomonik» deb hisoblanadi.",
+          "text": "OIVga xos o‘zgarishlar odatda kasallikning kechki bosqichida paydo bo‘ladi; ko‘p yadroli gigant hujayralar MNSda OIV uchun «patognomonik» deb hisoblanadi.",
           "source": {
             "author": "Silva et al.",
             "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
@@ -117,7 +137,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "MNS: topilmalar",
+        "children": [
+          {
+            "label": "Opportunistik agentlar",
+            "items": [
+              "Toxoplasma gondii",
+              "Cryptococcus neoformans",
+              "Sitomegalovirus"
+            ]
+          },
+          {
+            "label": "O‘smalar",
+            "items": [
+              "Birlamchi non-Hodgkin limfoma ustun"
+            ]
+          },
+          {
+            "label": "OIVga xos o‘zgarish",
+            "items": [
+              "Kasallikning kechki bosqichida",
+              "Ko‘p yadroli gigant hujayralar"
+            ]
+          }
+        ],
+        "caption": "MNSdagi topilmalar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega OIVga xos o‘zgarishlar kechroq paydo bo‘ladi? Doskada: Uch agent nomini yozdiring. Tipik xato: Gigant hujayralarni har qanday MNS infeksiyasiga xos deb bilish."
     },
     {
@@ -151,7 +198,31 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "HAARTdan keyin",
+            "items": [
+              "Opportunistik infeksiyalar kamaydi",
+              "OIV ensefaliti ko‘paydi"
+            ]
+          },
+          {
+            "title": "Dunyoning qolgan qismi",
+            "items": [
+              ">90% holatda nevrologik asoratgacha yashamaydi"
+            ]
+          },
+          {
+            "title": "Muammo",
+            "items": [
+              "Rivojlanayotgan mamlakatlarda tadqiqot kam"
+            ]
+          }
+        ],
+        "caption": "HAART davri"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: HAART autopsiya manzarasini qanday o‘zgartirdi? Doskada: Oldin/keyin ikki ustun. Tipik xato: HAARTdan keyin MNS o‘zgarishlari butunlay yo‘qoladi deb o‘ylash."
     },
     {
@@ -177,27 +248,25 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "OIV autopsiyalarida sil meningiti",
-        "nodes": [],
-        "header": [
-          "Mintaqa",
-          "Chastota"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Hindiston",
+            "value": "12",
+            "unit": "%"
+          },
+          {
+            "label": "Afrika",
+            "value": "11",
+            "unit": "%"
+          },
+          {
+            "label": "AQSh",
+            "value": "1,4",
+            "unit": "%"
+          }
         ],
-        "rows": [
-          [
-            "Hindiston",
-            "12%"
-          ],
-          [
-            "Afrika",
-            "11%"
-          ],
-          [
-            "AQSh",
-            "1,4%"
-          ]
-        ]
+        "caption": "OIV autopsiyalarida sil meningiti"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Bu farq nimani ko‘rsatadi? Doskada: Uch mintaqa foizini yozing. Tipik xato: Bir mintaqa ma’lumotini boshqasiga ko‘chirish."
     },
@@ -232,7 +301,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Klinik gumon qilinmagan",
+        "children": [
+          {
+            "label": "Wilkes",
+            "items": [
+              "101 autopsiya",
+              "OITS kasalligi 74% gumon qilinmagan"
+            ]
+          },
+          {
+            "label": "Tarkibi",
+            "items": [
+              "Sitomegalovirus 49%",
+              "Tizimli zamburug‘ 20%, Kaposi 14%",
+              "Mikobakterioz 11%, limfoma 4%"
+            ]
+          },
+          {
+            "label": "Antinori",
+            "items": [
+              "1630 autopsiya, 297 invaziv zamburug‘",
+              "54,2% klinik jihatdan gumon qilinmagan"
+            ]
+          }
+        ],
+        "caption": "Autopsiyaning qiymati"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega ko‘p kasallik hayotlik davrida aniqlanmaydi? Doskada: Foizlarni kamayish tartibida yozing. Tipik xato: Autopsiya natijasini klinik tashxisga qarshi qo‘yish."
     },
     {
@@ -266,7 +363,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Dizayn",
+            "text": "Retrospektiv, ketma-ket autopsiyalar"
+          },
+          {
+            "title": "Joy, yil",
+            "text": "Uberaba (Braziliya), 1989–2008"
+          },
+          {
+            "title": "Mezon",
+            "text": "Kamida 24 soat statsionarda"
+          },
+          {
+            "title": "Maqsad",
+            "text": "MNS o‘zgarishlari, yashash davomiyligi, klinik gumon"
+          },
+          {
+            "title": "OIV tekshiruvi",
+            "text": "1989 dan barcha autopsiyada qon olingan"
+          }
+        ],
+        "caption": "Dizayn"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Retrospektiv dizaynning cheklovi nima? Doskada: Dizayn elementlarini yozdiring. Tipik xato: Retrospektiv tadqiqotni prospektiv deb hisoblash."
     },
     {
@@ -301,15 +423,30 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "MNS namunalari (kamida 3 blok)",
-        "nodes": [
-          "Bo‘laklar",
-          "Bazal ganglionlar va gipokamp",
-          "O‘rta miya, ko‘prik, miyacha"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1-blok",
+            "text": "Turli bo‘laklardan"
+          },
+          {
+            "title": "2-blok",
+            "text": "Bazal ganglionlar va gipokamp"
+          },
+          {
+            "title": "3-blok",
+            "text": "O‘rta miya, ko‘prik, miyacha"
+          },
+          {
+            "title": "Qo‘shimcha",
+            "text": "Makroskopik o‘zgarishlar uchun"
+          },
+          {
+            "title": "Kesma",
+            "text": "Parafin 5 μm, gematoksilin-eozin"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "MNS namunalari standarti"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega bir necha mintaqadan namuna olinadi? Doskada: Uch blokni sxemada ko‘rsating. Tipik xato: Faqat makroskopik o‘zgarishdan namuna olish."
     },
@@ -336,23 +473,30 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Gistologik bo‘yashlar",
-        "nodes": [],
-        "header": [
-          "Maqsad",
-          "Usullar"
+        "kind": "tree",
+        "root": "Gistologik bo‘yashlar",
+        "children": [
+          {
+            "label": "Asosiy",
+            "items": [
+              "Gematoksilin-eozin"
+            ]
+          },
+          {
+            "label": "Mikroorganizmlar",
+            "items": [
+              "Gram, Grocott, Mucicarmin",
+              "PAS, Fite Faraco"
+            ]
+          },
+          {
+            "label": "Demielinizatsiya",
+            "items": [
+              "Luxol Fast Blue"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Asosiy bo‘yash",
-            "Gematoksilin-eozin"
-          ],
-          [
-            "Mikroorganizmlar, demielinizatsiya",
-            "Gram, Grocott, Mucicarmin, PAS, Fite Faraco, Luxol Fast Blue"
-          ]
-        ]
+        "caption": "Maxsus bo‘yashlar"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Mikroorganizm va demielinizatsiya uchun nega har xil bo‘yashlar kerak? Doskada: Bo‘yashlar ro‘yxati. Tipik xato: Faqat gematoksilin-eozin yetarli deb o‘ylash."
     },
@@ -387,7 +531,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Immunogistokimyo / ISH",
+        "children": [
+          {
+            "label": "Monoklonal antitana",
+            "items": [
+              "Toksoplazma, sitomegalovirus",
+              "Gerpes virusi, JC virus"
+            ]
+          },
+          {
+            "label": "Limfoma uchun",
+            "items": [
+              "CD3, CD20, CD30",
+              "CD45, CD45-LCA"
+            ]
+          },
+          {
+            "label": "In situ gibridizatsiya",
+            "items": [
+              "EBV: uchta NHL"
+            ]
+          }
+        ],
+        "caption": "Immunogistokimyo"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Immunogistokimyo oddiy bo‘yashdan nimasi bilan farq qiladi? Doskada: Antitana—agent juftliklari. Tipik xato: Immunogistokimyoni barcha holatda majburiy deb hisoblash."
     },
     {
@@ -422,27 +592,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Tadqiqot guruhlari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Mezon"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "A guruh",
+            "items": [
+              "Antiretrovirus dori qabul qilmagan"
+            ]
+          },
+          {
+            "title": "B guruh",
+            "items": [
+              "1–2 dori yoki HAART <3 oy",
+              "HAART >2 oy uzilish"
+            ]
+          },
+          {
+            "title": "C guruh",
+            "items": [
+              "HAART ≥3 oy"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "A",
-            "Antiretrovirus dori yo‘q"
-          ],
-          [
-            "B",
-            "1–2 dori; HAART <3 oy yoki >2 oy uzilish"
-          ],
-          [
-            "C",
-            "HAART ≥3 oy"
-          ]
-        ]
+        "caption": "Tadqiqot guruhlari"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega faqat «HAART bo‘lgan/bo‘lmagan» bo‘linish yetarli emas? Doskada: Uch guruh jadvali. Tipik xato: HAART qabul qilganlarning hammasini C guruhga kiritish."
     },
@@ -470,15 +642,13 @@
       ],
       "diagram": {
         "kind": "flow",
-        "caption": "Tanlanma bosqichlari",
         "nodes": [
-          "1785 autopsiya",
-          "299 OIV-seropozitiv",
-          "–15 chiqarilgan",
-          "284 tahlil"
+          "1785 autopsiya (1989–2008)",
+          "299 OIV-seropozitiv (16,7%)",
+          "15 chiqarildi (9 + 6)",
+          "284 tahlil qilindi"
         ],
-        "header": [],
-        "rows": []
+        "caption": "Tanlanma bosqichlari"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega ayrim holatlar tahlildan chiqarilgan? Doskada: Voronka sxemasi. Tipik xato: Chiqarilgan holatlar sonini qo‘shib unutish."
     },
@@ -513,7 +683,42 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Ayollar",
+            "value": "28,2",
+            "unit": "%"
+          },
+          {
+            "label": "Ayollar 1989–1996",
+            "value": "17,8",
+            "unit": "%"
+          },
+          {
+            "label": "Ayollar 1997–2008",
+            "value": "33",
+            "unit": "%"
+          },
+          {
+            "label": "O‘rtacha yosh",
+            "value": "35,7 ± 10,8",
+            "unit": "yil"
+          },
+          {
+            "label": "Giyohvandlik",
+            "value": "33,1",
+            "unit": "%"
+          },
+          {
+            "label": "Gomo-/biseksual",
+            "value": "14,1",
+            "unit": "%"
+          }
+        ],
+        "caption": "Bemorlar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Ayollar ulushining oshishi nimani bildiradi? Doskada: Ikki davr taqqoslash. Tipik xato: Tanlanmadagi ulushni umumiy aholiga ko‘chirish."
     },
     {
@@ -547,7 +752,36 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "A guruh",
+            "value": "163 (57,4)",
+            "unit": "%"
+          },
+          {
+            "label": "B guruh",
+            "value": "76 (26,8)",
+            "unit": "%"
+          },
+          {
+            "label": "C guruh",
+            "value": "45 (15,8)",
+            "unit": "%"
+          },
+          {
+            "label": "Autopsiyada tashxis",
+            "value": "69 (24,3)",
+            "unit": "%"
+          },
+          {
+            "label": "Faqat o‘limdan keyin",
+            "value": "18 holat"
+          }
+        ],
+        "caption": "Davolash holati"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Kech murojaat autopsiya natijasiga qanday ta’sir qiladi? Doskada: Guruhlar ulushi. Tipik xato: Kech tashxisni davolash samarasizligi deb baholash."
     },
     {
@@ -581,7 +815,42 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Muhim o‘zgarish",
+            "value": "165 (58,1)",
+            "unit": "%"
+          },
+          {
+            "label": "Infeksion",
+            "value": "54,2",
+            "unit": "%"
+          },
+          {
+            "label": "O‘smalar",
+            "value": "2,5",
+            "unit": "%"
+          },
+          {
+            "label": "Tomir",
+            "value": "1,1",
+            "unit": "%"
+          },
+          {
+            "label": "Ahamiyatsiz",
+            "value": "103 (36,3)",
+            "unit": "%"
+          },
+          {
+            "label": "Butunlay normal",
+            "value": "16 (5,6)",
+            "unit": "%"
+          }
+        ],
+        "caption": "MNSdagi o‘zgarishlar (n=284)"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Qaysi o‘zgarishlar «ahamiyatsiz» hisoblangan? Doskada: Foizlar yig‘indisi. Tipik xato: «Ahamiyatsiz» o‘zgarishni normal miya deb o‘ylash."
     },
     {
@@ -668,14 +937,7 @@
             "page": "3.1-bo‘lim (Results)"
           },
           "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: Limfomada EBV topilishi nimani anglatadi? Doskada: O‘sma turlari ro‘yxati. Tipik xato: Barcha 4 limfomada EBV tekshirilgan deb hisoblash."
-    },
-    {
-      "title": "Tomir o‘zgarishlari",
-      "bullets": [
+        },
         {
           "text": "Tomir o‘zgarishlari uch holat: miya poyasida subaraxnoidal qon quyilish, o‘tkir subdural gematoma va keng intraparenximatoz qon quyilish.",
           "source": {
@@ -684,19 +946,43 @@
             "page": "3.1-bo‘lim (Results)"
           },
           "uncertain": false
-        },
-        {
-          "text": "Muhim deb faqat keng qon quyilishlar hisoblangan; mayda qon quyilish va yengil shish hisobga olinmagan.",
-          "source": {
-            "author": "Silva et al.",
-            "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
-            "page": "2-bo‘lim (Material and Methods)"
-          },
-          "uncertain": false
         }
       ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 4 daq. Muhokama: Nima uchun muhimlik mezoni kerak? Doskada: Mezonlar ro‘yxati. Tipik xato: Har qanday qon quyilishni OIVga bog‘lash."
+      "diagram": {
+        "kind": "tree",
+        "root": "Noinfeksion o‘zgarishlar",
+        "children": [
+          {
+            "label": "Jami",
+            "items": [
+              "10 holat (3,5%)"
+            ]
+          },
+          {
+            "label": "O‘smalar",
+            "items": [
+              "7 (2,5%) birlamchi MNS o‘smasi",
+              "2 meningioma, 5 limfoid xavfli",
+              "4 (1,4%) diffuz B-hujayrali NHL"
+            ]
+          },
+          {
+            "label": "Tomir (3 holat, 1,1%)",
+            "items": [
+              "Subaraxnoidal qon quyilish",
+              "O‘tkir subdural gematoma",
+              "Keng intraparenximatoz qon"
+            ]
+          },
+          {
+            "label": "EBV",
+            "items": [
+              "Tekshirilgan 3 limfomada topilgan"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Limfomada EBV topilishi nimani anglatadi? Doskada: O‘sma turlari ro‘yxati. Tipik xato: Barcha 4 limfomada EBV tekshirilgan deb hisoblash."
     },
     {
       "title": "Guruhlar bo‘yicha farqlar",
@@ -721,26 +1007,30 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "A va C guruh (MNS)",
-        "nodes": [],
-        "header": [
-          "Topilma",
-          "A guruh",
-          "C guruh"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "A guruh",
+            "items": [
+              "Toksoplazmoz 36,2%",
+              "OIV ensefaliti 1,8%"
+            ]
+          },
+          {
+            "title": "C guruh",
+            "items": [
+              "Toksoplazmoz 17,8%",
+              "OIV ensefaliti 11,1%"
+            ]
+          },
+          {
+            "title": "Umumiy",
+            "items": [
+              "O‘zgarish chastotasida farq yo‘q"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Toksoplazmoz",
-            "36,2%",
-            "17,8%"
-          ],
-          [
-            "OIV ensefaliti",
-            "1,8%",
-            "11,1%"
-          ]
-        ]
+        "caption": "A va C guruh"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: HAARTda OIV ensefaliti nega ko‘payadi? Doskada: Ikki guruh solishtirish. Tipik xato: Farqni tasodifiy deb qaytarish."
     },
@@ -767,27 +1057,34 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "O‘rtacha yashash davomiyligi",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Oy"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "A guruh (o‘rtacha)",
+            "value": "11,2",
+            "unit": "oy"
+          },
+          {
+            "label": "B guruh (o‘rtacha)",
+            "value": "25,8",
+            "unit": "oy"
+          },
+          {
+            "label": "C guruh (o‘rtacha)",
+            "value": "49,1",
+            "unit": "oy"
+          },
+          {
+            "label": "Aniqlangan holat",
+            "value": "261 (90,9)",
+            "unit": "%"
+          },
+          {
+            "label": "P qiymati",
+            "value": "<0,001"
+          }
         ],
-        "rows": [
-          [
-            "A",
-            "11,2"
-          ],
-          [
-            "B",
-            "25,8"
-          ],
-          [
-            "C",
-            "49,1"
-          ]
-        ]
+        "caption": "O‘rtacha yashash davomiyligi"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega MNS o‘zgarishlari tez-tez uchrasa ham HAART foydali? Doskada: Oylar ustun diagrammasi. Tipik xato: Muhim o‘zgarishlar foizi farqsizligidan HAART foydasiz deb xulosa qilish."
     },
@@ -822,7 +1119,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Chastota",
+            "items": [
+              "A guruh: 63,8%",
+              "Boshqalar: 48,7% va 53,3%",
+              "Farq ahamiyatsiz"
+            ]
+          },
+          {
+            "title": "Xulosa",
+            "items": [
+              "HAART foydasi yashash davomiyligida",
+              "Chastota yolg‘on taassurot beradi"
+            ]
+          },
+          {
+            "title": "Eslatma",
+            "items": [
+              "Yakuniy bosqichda o‘lim sababi — neyropatologiya"
+            ]
+          }
+        ],
+        "caption": "HAART va muhim o‘zgarishlar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nima uchun faqat foizlarga qarab xulosa qilish xavfli? Doskada: Ikki ko‘rsatkichni birga yozing. Tipik xato: Statistik ahamiyatsiz farqni foydasizlik isboti deb bilish."
     },
     {
@@ -856,7 +1179,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Klinik gumon va autopsiya",
+        "children": [
+          {
+            "label": "Nomuvofiqlik",
+            "items": [
+              "165 dan 91 (55,1%)",
+              "284 ning 32%"
+            ]
+          },
+          {
+            "label": "1-tur",
+            "items": [
+              "49 (53,8%)",
+              "Hayotlikda aniqlanmagan",
+              "Barcha limfomalar shu turda"
+            ]
+          }
+        ],
+        "caption": "Klinik-autopsiya mosligi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega limfomalar aniqlanmagan? Doskada: Raqamlar zanjiri: 165 → 91 → 49. Tipik xato: 1-tur ulushini turli joyda farqli yozish: manbada 17,2% va 17,6% uchraydi."
     },
     {
@@ -890,7 +1234,24 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1-tur",
+            "text": "Muhim kasallik; aniqlansa prognoz o‘zgarar edi"
+          },
+          {
+            "title": "2-tur",
+            "text": "Muhim kasallik; prognoz o‘zgarmas edi"
+          },
+          {
+            "title": "3-tur",
+            "text": "Ahamiyatsiz kasallik; ta’siri shubhali yoki yo‘q"
+          }
+        ],
+        "caption": "Goldman nomuvofiqlik turlari"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Misollar keltiring. Doskada: Uch turni jadvalga yozing. Tipik xato: 2-turni 1-tur bilan adashtirish."
     },
     {
@@ -924,7 +1285,36 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "2-tur",
+            "value": "22 (24,2)",
+            "unit": "%"
+          },
+          {
+            "label": "3-tur",
+            "value": "20 (22)",
+            "unit": "%"
+          },
+          {
+            "label": "1-tur xato (<1996)",
+            "value": "62,2 (23/37)",
+            "unit": "%"
+          },
+          {
+            "label": "1-tur xato (keyin)",
+            "value": "48,8 (26/54)",
+            "unit": "%"
+          },
+          {
+            "label": "Kamayish sababi",
+            "value": "anatomoklinik majlis"
+          }
+        ],
+        "caption": "Nomuvofiqlik turlari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Anatomoklinik majlislar nega foydali? Doskada: Dinamika: 62,2% → 48,8%. Tipik xato: Kamayishni faqat yangi diagnostika bilan izohlash."
     },
     {
@@ -958,7 +1348,37 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Virusli infeksiyalar",
+            "value": "6,7",
+            "unit": "%"
+          },
+          {
+            "label": "Protozoa, zamburug‘, b.",
+            "value": "49,3",
+            "unit": "%"
+          },
+          {
+            "label": "OIV ensefaliti",
+            "value": "2,8",
+            "unit": "%"
+          },
+          {
+            "label": "Sitomegalovirus",
+            "value": "2,5",
+            "unit": "%"
+          },
+          {
+            "label": "JC virus",
+            "value": "0,3",
+            "unit": "%"
+          }
+        ],
+        "caption": "Agentlar tarqalishi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega rivojlangan mamlakatlarda virusli infeksiyalar ko‘proq? Doskada: Foizlar diagrammasi. Tipik xato: Virusli infeksiyalarni hamma joyda ustun deb hisoblash."
     },
     {
@@ -983,7 +1403,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Braziliya",
+            "items": [
+              "Kriptokokkoz 15,8%",
+              "HAART guruhida 15,6%"
+            ]
+          },
+          {
+            "title": "Rivojlangan mamlakatlar",
+            "items": [
+              "Mos guruhlarda 0–5,6%"
+            ]
+          },
+          {
+            "title": "Mumkin sabablar",
+            "items": [
+              "Atrof-muhit, geografiya",
+              "Ijtimoiy-iqtisodiy omillar"
+            ]
+          }
+        ],
+        "caption": "Kriptokokkoz: mintaqaviy farq"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Mintaqaviy farqlar autopsiya talqiniga qanday ta’sir qiladi? Doskada: Qiyoslash jadvali. Tipik xato: Boshqa mamlakat ko‘rsatkichini o‘z mintaqasiga bevosita qo‘llash."
     },
     {
@@ -1017,7 +1462,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Xulosalar (Braziliya)",
+        "children": [
+          {
+            "label": "MNS o‘zgarishlari",
+            "items": [
+              "HAARTga qaramay tez-tez",
+              "O‘limning muhim sababi"
+            ]
+          },
+          {
+            "label": "Yashash",
+            "items": [
+              "HAART guruhida 4 baravar uzun"
+            ]
+          },
+          {
+            "label": "Autopsiya",
+            "items": [
+              "55,1% nomuvofiqlik",
+              "Ilg‘or diagnostikada ham kerak"
+            ]
+          }
+        ],
+        "caption": "Xulosalar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Uch xulosani o‘z so‘zingizda ayting. Doskada: Uch xulosani yozing. Tipik xato: Xulosani HAART mavjud bo‘lgani uchun autopsiya kerak emas deb o‘qish."
     },
     {
@@ -1051,7 +1522,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Janubiy Afrika: dizayn",
+        "children": [
+          {
+            "label": "Ishtirokchilar",
+            "items": [
+              "CD4 ≤150 hujayra/μL",
+              "TB davosi, ART olmagan",
+              "Birlamchi klinikada kuzatilgan"
+            ]
+          },
+          {
+            "label": "Kuzatuv",
+            "items": [
+              "Kamida 6 oy",
+              "Oila ruxsati bilan MIA"
+            ]
+          },
+          {
+            "label": "Maqsad",
+            "items": [
+              "Autopsiyada TB va boshqa infeksiyalar"
+            ]
+          }
+        ],
+        "caption": "Dizayn"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega kasalxona tashqarisida o‘lganlar muhim? Doskada: Dizayn sxemasi. Tipik xato: Kasalxonadagi autopsiya ma’lumotini aholining hammasiga qo‘llash."
     },
     {
@@ -1085,7 +1583,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Organlar",
+            "text": "Jigar, taloq, o‘ng va chap o‘pka"
+          },
+          {
+            "title": "Namuna",
+            "text": "≥5 ta, ~2 sm (18 gauge nina)"
+          },
+          {
+            "title": "Mikrobiologiya",
+            "text": "Mikroskopiya, ekma, mikobakteriya"
+          },
+          {
+            "title": "Gistologiya",
+            "text": "To‘qima tekshiruvi"
+          },
+          {
+            "title": "Qo‘shimcha",
+            "text": "Qon, CSF, siydik, BAL"
+          }
+        ],
+        "caption": "MIA protokoli"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: MIA to‘liq autopsiyadan nimasi bilan farq qiladi? Doskada: Namuna olish nuqtalari. Tipik xato: MIA har qanday o‘zgarishni to‘liq aniqlaydi deb o‘ylash."
     },
     {
@@ -1119,7 +1642,24 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Ultratovush",
+            "text": "Jigar, plevral suyuqlik, taloq"
+          },
+          {
+            "title": "Teri",
+            "text": "70% izopropil spirt va 10% povidon-yod"
+          },
+          {
+            "title": "Operator",
+            "text": "Iloji boricha bitta tayyorgarlikli operator"
+          }
+        ],
+        "caption": "MIA: aniqlik va ehtiyot choralari"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega teri tozalanadi? Doskada: Qadamlar zanjiri. Tipik xato: Ultratovushni majburiy bo‘lmagan deb hisoblash."
     },
     {
@@ -1196,7 +1736,27 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Artefakt",
+            "items": [
+              "Enterococcus, Enterobacter, E. coli",
+              "Proteus, Bacillus",
+              "KNS, Viridans streptokokk",
+              "Faqat taloqdan gram-manfiy"
+            ]
+          },
+          {
+            "title": "Patogen",
+            "items": [
+              "Mikrobiolog har holda aniqlagan"
+            ]
+          }
+        ],
+        "caption": "Artefakt va patogen"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Postmortem ekmada ifloslanishni qanday kamaytirish mumkin? Doskada: Artefakt ro‘yxati. Tipik xato: Har qanday ekma natijasini kasallik sababi deb hisoblash."
     },
     {
@@ -1230,7 +1790,41 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Qamrab olingan",
+            "value": "3022",
+            "unit": "kishi"
+          },
+          {
+            "label": "MIA o‘tkazilgan",
+            "value": "34"
+          },
+          {
+            "label": "Ayollar",
+            "value": "18 (53)",
+            "unit": "%"
+          },
+          {
+            "label": "Median yosh",
+            "value": "39",
+            "unit": "yil"
+          },
+          {
+            "label": "Median CD4",
+            "value": "34",
+            "unit": "hujayra/μL"
+          },
+          {
+            "label": "O‘limdan MIAgacha",
+            "value": "5",
+            "unit": "kun"
+          }
+        ],
+        "caption": "MIA ishtirokchilari"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega o‘limdan MIAgacha vaqt muhim? Doskada: Raqamlar jadvali. Tipik xato: Median vaqtni eng uzun vaqt deb tushunish."
     },
     {
@@ -1319,7 +1913,42 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "TB belgilari",
+            "value": "16/34 (47)",
+            "unit": "%"
+          },
+          {
+            "label": "Ekstrapulmonal sil",
+            "value": "14/16 (88)",
+            "unit": "%"
+          },
+          {
+            "label": "Gistologiya",
+            "value": "12 (75)",
+            "unit": "%"
+          },
+          {
+            "label": "Ekma",
+            "value": "11 (69)",
+            "unit": "%"
+          },
+          {
+            "label": "Xpert MTB/RIF",
+            "value": "5 (31)",
+            "unit": "%"
+          },
+          {
+            "label": "Davosiz qolgan",
+            "value": "6 (38)",
+            "unit": "%"
+          }
+        ],
+        "caption": "Sil: topilmalar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega TB ko‘pincha ekstrapulmonal? Doskada: Usullar solishtirish. Tipik xato: Silni faqat o‘pka kasalligi deb bilish."
     },
     {
@@ -1353,7 +1982,36 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Sil: batafsil",
+        "children": [
+          {
+            "label": "12 gistologik TB",
+            "items": [
+              "4: o‘pka, jigar, taloq",
+              "2+2: o‘pka-jigar; jigar-taloq",
+              "2: faqat o‘pka"
+            ]
+          },
+          {
+            "label": "Ekma (musbat)",
+            "items": [
+              "BAL 7",
+              "CSF, taloq 5 tadan",
+              "O‘pka, jigar 4 tadan"
+            ]
+          },
+          {
+            "label": "164 ekma",
+            "items": [
+              "37 (23%) musbat",
+              "13 (8%) ifloslangan"
+            ]
+          }
+        ],
+        "caption": "Gistologiya va ekma"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi namuna eng foydali? Doskada: Namuna turlari bo‘yicha musbatlar. Tipik xato: Talaqni TB uchun asosiy namuna deb hisoblash."
     },
     {
@@ -1387,7 +2045,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Gistologik topilmalar",
+        "children": [
+          {
+            "label": "O‘pka",
+            "items": [
+              "Nekrozli granuloma",
+              "Sitomegalovirus kiritmalari",
+              "Kriptokokk, pnevmotsistis"
+            ]
+          },
+          {
+            "label": "Jigar",
+            "items": [
+              "Mikobakterial granuloma",
+              "Faol B gepatit virusi"
+            ]
+          },
+          {
+            "label": "Bo‘yash",
+            "items": [
+              "H&E, ZN, Grocott"
+            ]
+          }
+        ],
+        "caption": "Gistologik rasmlar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Har bir rasmda qaysi agent va qaysi bo‘yash? Doskada: Uch ustunli jadval. Tipik xato: Granulomani doimo silga xos deb bilish."
     },
     {
@@ -1421,7 +2106,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "NTM va bakteriyalar",
+        "children": [
+          {
+            "label": "NTM",
+            "items": [
+              "3 (9%)",
+              "M. avium (2), M. intracellulare (1)"
+            ]
+          },
+          {
+            "label": "Patogen bakteriya (ekma)",
+            "items": [
+              "23/34 (68%)",
+              "Klebsiella 14/23 (61%)"
+            ]
+          },
+          {
+            "label": "Pnevmoniya belgisi",
+            "items": [
+              "33 o‘pka gistologiyasidan 11 (33%)"
+            ]
+          }
+        ],
+        "caption": "NTM va bakteriyalar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega bakterial pnevmoniyani ham gistologiya bilan tasdiqlash kerak? Doskada: Chastotalar. Tipik xato: Ekmani yagona dalil deb bilish."
     },
     {
@@ -1447,31 +2158,30 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Boshqa infeksiyalar (n=34)",
-        "nodes": [],
-        "header": [
-          "Infeksiya",
-          "Holat"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Kriptokokkoz",
+            "value": "4 (12)",
+            "unit": "%"
+          },
+          {
+            "label": "Sitomegalovirus",
+            "value": "2 (6)",
+            "unit": "%"
+          },
+          {
+            "label": "Pnevmotsistoz",
+            "value": "2 (6)",
+            "unit": "%"
+          },
+          {
+            "label": "NTM",
+            "value": "3 (9)",
+            "unit": "%"
+          }
         ],
-        "rows": [
-          [
-            "Kriptokokkoz",
-            "4 (12%)"
-          ],
-          [
-            "Sitomegalovirus",
-            "2 (6%)"
-          ],
-          [
-            "Pnevmotsistoz",
-            "2 (6%)"
-          ],
-          [
-            "NTM",
-            "3 (9%)"
-          ]
-        ]
+        "caption": "Boshqa infeksiyalar (n=34)"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Qaysi agent gistologiyada ko‘rinadi? Doskada: Uchta agent jadvali. Tipik xato: Virusli PCR musbatligini kasallik isboti deb bilish."
     },
@@ -1506,7 +2216,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Birga uchrashi",
+        "children": [
+          {
+            "label": "≥2 infeksiya",
+            "items": [
+              "20 (59%) marhumda"
+            ]
+          },
+          {
+            "label": "TB (16 kishi)",
+            "items": [
+              "9 (56%) bakterial kasallik",
+              "2 (13%) kriptokokkoz"
+            ]
+          },
+          {
+            "label": "Bakterial (23 kishi)",
+            "items": [
+              "3 (13%) kriptokokkoz",
+              "2 (9%) sitomegalovirus"
+            ]
+          }
+        ],
+        "caption": "Koinfeksiyalar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Bir nechta infeksiya o‘lim sababini aniqlashga qanday ta’sir qiladi? Doskada: Venn diagrammasi. Tipik xato: Birinchi topilgan agentni yagona sabab deb hisoblash."
     },
     {
@@ -1540,7 +2276,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Jigar yallig‘lanishi",
+            "value": "18/30 (60)",
+            "unit": "%"
+          },
+          {
+            "label": "Steatoz (yallig‘lanish)",
+            "value": "12/18 (67)",
+            "unit": "%"
+          },
+          {
+            "label": "Gepatit",
+            "value": "5/18 (28)",
+            "unit": "%"
+          },
+          {
+            "label": "Buyrak nefriti/ATN",
+            "value": "6/13 (46)",
+            "unit": "%"
+          }
+        ],
+        "caption": "Jigar va buyrak topilmalari"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega tasodifiy topilmalarni ham hujjatlash kerak? Doskada: Organlar bo‘yicha ro‘yxat. Tipik xato: Tasodifiy topilmani o‘lim sababi deb hisoblash."
     },
     {
@@ -1574,7 +2335,24 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "M. tuberculosis",
+            "text": "O‘limdan keyin, formalinda yillar tirik"
+          },
+          {
+            "title": "Vaqt",
+            "text": "Autoliz va mikroorganizm ko‘chishi ortadi"
+          },
+          {
+            "title": "Talqin",
+            "text": "Mikrobiologiya + klinik tarix + gistologiya"
+          }
+        ],
+        "caption": "Natijani talqin qilish"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega gistologiya mikrobiologiya bilan birga talab qilinadi? Doskada: Uch manba (klinika, ekma, gistologiya). Tipik xato: Ekma musbatligini faol kasallik isboti deb bilish."
     },
     {
@@ -1608,7 +2386,38 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "MIA va TB aniqlash",
+        "children": [
+          {
+            "label": "Eng yuqori natija",
+            "items": [
+              "Respirator namuna: BAL, o‘pka"
+            ]
+          },
+          {
+            "label": "9 ta TB holat",
+            "items": [
+              "BAL Xpert MTB/RIF va ekma"
+            ]
+          },
+          {
+            "label": "Qo‘shilgan",
+            "items": [
+              "O‘pka ekmasi +2",
+              "O‘pka gistologiyasi +3"
+            ]
+          },
+          {
+            "label": "Jami",
+            "items": [
+              "Uchovi TBning 88% ini beradi"
+            ]
+          }
+        ],
+        "caption": "MIA kuzatuvda"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi minimal namuna yig‘indisi yetarli? Doskada: Qadamma-qadam qo‘shish: 9 + 2 + 3. Tipik xato: 88% ni 100% deb o‘qish."
     }
   ],
@@ -1617,11 +2426,11 @@
       "question": "Braziliya tadqiqotida (Silva va boshq.) tahlilga nechta autopsiya kiritilgan?",
       "options": [
         "34",
-        "284",
+        "1785",
         "299",
-        "1785"
+        "284"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Tahlilga 284 ta OITS autopsiyasi kiritilgan.",
       "source": {
         "author": "Silva et al.",
@@ -1633,11 +2442,11 @@
       "question": "Braziliya tadqiqotida MNSda eng ko‘p uchragan infeksiya qaysi?",
       "options": [
         "Kriptokokkoz",
-        "Toksoplazmoz",
         "Sitomegalovirus",
+        "Toksoplazmoz",
         "OIV ensefaliti"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Toksoplazmoz 85 (29,9%) holatda.",
       "source": {
         "author": "Silva et al.",
@@ -1665,11 +2474,11 @@
       "question": "Goldmanning 1-tur nomuvofiqligi nimani bildiradi?",
       "options": [
         "Ahamiyatsiz kasallik aniqlanmagan",
-        "Muhim kasallik aniqlanmagan, aniqlansa prognoz o‘zgarishi mumkin edi",
+        "Klinik tashxis to‘g‘ri bo‘lgan",
         "Muhim kasallik aniqlanmagan, prognoz o‘zgarmas edi",
-        "Klinik tashxis to‘g‘ri bo‘lgan"
+        "Muhim kasallik aniqlanmagan, aniqlansa prognoz o‘zgarishi mumkin edi"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "1-turda aniqlansa prognoz o‘zgarishi mumkin edi.",
       "source": {
         "author": "Silva et al.",
@@ -1681,11 +2490,11 @@
       "question": "Braziliya tadqiqotida MNS gistologiyasi uchun qalinlik qancha?",
       "options": [
         "1 μm",
-        "5 μm",
         "50 μm",
+        "5 μm",
         "2 mm"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Parafin kesmalari 5 μm qalinlikda tayyorlangan.",
       "source": {
         "author": "Silva et al.",
@@ -1696,12 +2505,12 @@
     {
       "question": "Qaysi hujayralar MNSda OIV infeksiyasi uchun «patognomonik» deb hisoblanadi?",
       "options": [
-        "Ko‘p yadroli gigant hujayralar",
+        "Gemosiderofaglar",
         "Plazmatik hujayralar",
         "Ko‘pikli hujayralar",
-        "Gemosiderofaglar"
+        "Ko‘p yadroli gigant hujayralar"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Manbada ko‘p yadroli gigant hujayralar MNSda OIV infeksiyasi uchun patognomonik deb hisoblanishi aytilgan.",
       "source": {
         "author": "Silva et al.",
@@ -1713,11 +2522,11 @@
       "question": "Janubiy Afrika tadqiqotida nechta MIA o‘tkazilgan?",
       "options": [
         "16",
-        "34",
         "60",
+        "34",
         "3022"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "34 ta MIA o‘tkazilgan.",
       "source": {
         "author": "Karat et al.",
@@ -1729,11 +2538,11 @@
       "question": "Marhumlarning nechta foizida TB belgilari topilgan?",
       "options": [
         "12%",
-        "47%",
+        "88%",
         "68%",
-        "88%"
+        "47%"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "16/34 (47%) da TB belgilari topilgan.",
       "source": {
         "author": "Karat et al.",
@@ -1744,12 +2553,12 @@
     {
       "question": "Qaysi namuna mikobakteriya ekmasida eng ko‘p musbat natija bergan?",
       "options": [
-        "BAL",
-        "Jigar to‘qimasi",
         "Siydik",
+        "Jigar to‘qimasi",
+        "BAL",
         "Taloq to‘qimasi"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "BALdan 7 ta musbat ekma olingan, boshqalardan kamroq.",
       "source": {
         "author": "Karat et al.",
@@ -1761,16 +2570,176 @@
       "question": "Gistologiyada mikobakteriyalar uchun qaysi bo‘yash qo‘llangan?",
       "options": [
         "Grocott",
-        "Ziehl—Neelsen",
+        "Luxol Fast Blue",
         "Gram",
-        "Luxol Fast Blue"
+        "Ziehl—Neelsen"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "ZN mikobakteriyalar, Grocott zamburug‘lar uchun ishlatilgan.",
       "source": {
         "author": "Karat et al.",
         "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
         "page": "Methods — Laboratory procedures"
+      }
+    },
+    {
+      "question": "Silva tadqiqotida 284 ta autopsiyaning nechtasida MNSning muhim o‘zgarishlari aniqlangan?",
+      "options": [
+        "103",
+        "165",
+        "284",
+        "16"
+      ],
+      "correct_index": 1,
+      "explanation": "284 tadan 165 (58,1%) holatda MNSning muhim o‘zgarishlari aniqlangan.",
+      "source": {
+        "author": "Silva et al.",
+        "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+        "page": "3.1-bo‘lim (Results)"
+      }
+    },
+    {
+      "question": "Silva tadqiqotida A guruhning o‘rtacha yashash davomiyligi qancha?",
+      "options": [
+        "11,2 oy",
+        "25,8 oy",
+        "49,1 oy",
+        "3 oy"
+      ],
+      "correct_index": 0,
+      "explanation": "O‘rtacha yashash davomiyligi: A guruhda 11,2, B guruhda 25,8, C guruhda 49,1 oy.",
+      "source": {
+        "author": "Silva et al.",
+        "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+        "page": "3.2-bo‘lim (Results)"
+      }
+    },
+    {
+      "question": "Goldmanning 2-tur nomuvofiqligi nimani bildiradi?",
+      "options": [
+        "Muhim kasallik aniqlanmagan, ammo aniqlansa ham prognoz o‘zgarmas edi",
+        "Ahamiyatsiz kasallik aniqlanmagan",
+        "Prognoz o‘zgarar edi",
+        "To‘g‘ri tashxis"
+      ],
+      "correct_index": 0,
+      "explanation": "2-tur: muhim kasallik aniqlanmagan, ammo aniqlansa ham prognoz o‘zgarmas edi.",
+      "source": {
+        "author": "Silva et al.",
+        "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+        "page": "2-bo‘lim (Material and Methods)"
+      }
+    },
+    {
+      "question": "Epstein—Barr virusi tekshirilgan limfomalarning nechtasida topilgan?",
+      "options": [
+        "Birortasida ham",
+        "Barcha 3 holatda",
+        "Faqat bittasida",
+        "Yarmida"
+      ],
+      "correct_index": 1,
+      "explanation": "Epstein—Barr virusi tekshirilgan barcha 3 holatda limfomada topilgan.",
+      "source": {
+        "author": "Silva et al.",
+        "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+        "page": "3.1-bo‘lim (Results)"
+      }
+    },
+    {
+      "question": "Braziliya tadqiqotida 1-tur nomuvofiqlik 1996 yildan keyin qanchaga kamaygan?",
+      "options": [
+        "62,2% dan 48,8% ga",
+        "10% dan 5% ga",
+        "Ortgan",
+        "O‘zgarmagan"
+      ],
+      "correct_index": 0,
+      "explanation": "1-tur xato 1996 yilgacha 62,2% (23/37), keyin 48,8% (26/54) ga kamaygan — anatomoklinik majlislar hisobiga.",
+      "source": {
+        "author": "Silva et al.",
+        "title": "Neuropathology of AIDS: An Autopsy Review of 284 Cases from Brazil Comparing the Findings Pre- and Post-HAART (Highly Active Antiretroviral Therapy) and Pre- and Postmortem Correlation, AIDS Research and Treatment",
+        "page": "3.3-bo‘lim (Results)"
+      }
+    },
+    {
+      "question": "MIA uchun biopsiya qaysi organlardan olingan (Karat)?",
+      "options": [
+        "Faqat o‘pka",
+        "Jigar, taloq, o‘ng va chap o‘pka",
+        "Miya va yurak",
+        "Buyrak va oshqozon"
+      ],
+      "correct_index": 1,
+      "explanation": "Biopsiya to‘rt organdan: jigar, taloq, o‘ng va chap o‘pka; bir joydan kamida beshta ~2 sm namuna.",
+      "source": {
+        "author": "Karat et al.",
+        "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+        "page": "Methods — Autopsy procedures"
+      }
+    },
+    {
+      "question": "Karat tadqiqotida sil (TB) belgisi aniqlangan marhumlarning qancha qismida ekstrapulmonal sil topilgan?",
+      "options": [
+        "14/16 (88%)",
+        "2/16",
+        "16/34",
+        "1/16"
+      ],
+      "correct_index": 0,
+      "explanation": "16/34 (47%) marhumda TB belgilari topilgan; 14/16 (88%) da ekstrapulmonal sil.",
+      "source": {
+        "author": "Karat et al.",
+        "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+        "page": "Results — Tuberculosis"
+      }
+    },
+    {
+      "question": "Karat tadqiqotida artefakt hisoblangan mikroorganizmlar qaysilar?",
+      "options": [
+        "Mycobacterium tuberculosis",
+        "Enterococcus, Enterobacter, E. coli, Proteus, Bacillus va b.",
+        "Cryptococcus",
+        "Pneumocystis"
+      ],
+      "correct_index": 1,
+      "explanation": "Enterococcus, Enterobacter, E. coli, Proteus, Bacillus, koagulaza-manfiy stafilokokklar va Viridans streptokokklar artefakt hisoblangan.",
+      "source": {
+        "author": "Karat et al.",
+        "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+        "page": "Methods — Data interpretation"
+      }
+    },
+    {
+      "question": "Karat tadqiqotida MIA o‘limdan keyin median qancha vaqtda o‘tkazilgan?",
+      "options": [
+        "5 kun",
+        "5 soat",
+        "30 kun",
+        "1 yil"
+      ],
+      "correct_index": 0,
+      "explanation": "O‘limdan MIAgacha median vaqt besh kun; 33/34 (97%) 10 kun ichida o‘tkazilgan.",
+      "source": {
+        "author": "Karat et al.",
+        "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+        "page": "Results — Consent, demographics, and samples obtained"
+      }
+    },
+    {
+      "question": "TB tashxisi uchun eng yuqori natijani qaysi namunalar bergan (Karat)?",
+      "options": [
+        "Siydik",
+        "Respirator namunalar (BAL va o‘pka to‘qimasi)",
+        "Jigar",
+        "Qon"
+      ],
+      "correct_index": 1,
+      "explanation": "Respirator namunalar (BAL va o‘pka to‘qimasi) TB tashxisi uchun eng yuqori natija beradi.",
+      "source": {
+        "author": "Karat et al.",
+        "title": "Autopsy Prevalence of Tuberculosis and Other Potentially Treatable Infections among Adults with Advanced HIV Enrolled in Out-Patient Care in South Africa, PLoS ONE",
+        "page": "Discussion — MIA in surveillance"
       }
     }
   ],

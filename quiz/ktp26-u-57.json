@@ -1,0 +1,586 @@
+{
+ "topic_id": "ktp26-u-57",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Gistologik usul tadqiqotining potentsiallari",
+  "ru": "Gistologik usul tadqiqotining potentsiallari",
+  "en": "Gistologik usul tadqiqotining potentsiallari"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "ktp26-u-57-q01",
+   "question_i18n": {
+    "uz": "Yurak o‘limi gumon qilingan 34 yoshli erkak guvohlarsiz topildi. U 20 soat oldin sog‘lom holda ko‘rilgan edi. To‘satdan yurak o‘limi (TYO‘) ta’rifidagi qaysi vaqt mezoni qo‘llanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Simptom boshlanishidan so‘ng 1 soat ichida",
+     "Simptom boshlanishidan so‘ng 6 soat ichida",
+     "Oxirgi marta sog‘lom ko‘rilgandan 24 soat",
+     "Oxirgi marta sog‘lom ko‘rilgandan 48 soat"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "TYO‘ kutilmagan, yurakdan deb taxmin qilingan tabiiy o‘lim hisoblanadi. Simptom boshlanganidan 1 soat ichida yoki guvohsiz bo‘lsa, oxirgi marta sog‘lom ko‘rilgandan 24 soat ichida sodir bo‘lishi kerak. Bu holda simptomlar ma’lum emas, shuning uchun ikkinchi mezon qo‘llanadi."
+   },
+   "source": {
+    "author": "Sacco MA va boshq.",
+    "title": "Post-Mortem Biomarkers in Sudden Cardiac Death: From Classical Biochemistry to Molecular Autopsy and Multi-Omics Forensic Approaches, International Journal of Molecular Sciences",
+    "page": "1-bo‘lim (Kirish), PMID 41596321"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-57-q02",
+   "question_i18n": {
+    "uz": "To‘liq o‘limdan keyingi tekshiruvdan so‘ng ham sababi tushuntirilmay qoladigan TYO‘ holatlarining taxminiy ulushi qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "30–40% atrofida",
+     "1–2% atrofida",
+     "10–15% atrofida",
+     "50–60% atrofida"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Mualliflarga ko‘ra, autopsiya va gistologiyadan keyin ham TYO‘ holatlarining 10–15% i tushuntirilmaydi. Bunday holatlar «autopsiya-manfiy to‘satdan tushuntirilmagan o‘lim» deb tasniflanadi."
+   },
+   "source": {
+    "author": "Sacco MA va boshq.",
+    "title": "Post-Mortem Biomarkers in Sudden Cardiac Death: From Classical Biochemistry to Molecular Autopsy and Multi-Omics Forensic Approaches, International Journal of Molecular Sciences",
+    "page": "1-bo‘lim (Kirish), PMID 41596321"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-57-q03",
+   "question_i18n": {
+    "uz": "Yosh shaxs to‘satdan vafot etdi. Yurak tuzilishi normal, oddiy gistologiya sababni ko‘rsatmadi. Qaysi qo‘shimcha yondashuv eng mantiqiy keyingi qadam bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Preparatlarni oddiy bo‘yash bilan qayta ko‘rish",
+     "Toksikologik tahlilni o‘zgartirmay takrorlash",
+     "Faqat o‘pka to‘qimasini gistologik ko‘rish",
+     "Ion kanal genlarini NGS usulida tekshirish"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Yoshlardagi tushuntirilmagan o‘limda oddiy gistologiyada ko‘rinmaydigan molekulyar yoki elektr asoslar bo‘lishi mumkin. Keyingi avlod sekvenirlashi (NGS) ion kanal va kardiomiopatiya genlarini tekshiradi. Autopsiya-manfiy holatlarning 25–30% igacha qismida patogen variantlar topilgan."
+   },
+   "source": {
+    "author": "Sacco MA va boshq.",
+    "title": "Post-Mortem Biomarkers in Sudden Cardiac Death: From Classical Biochemistry to Molecular Autopsy and Multi-Omics Forensic Approaches, International Journal of Molecular Sciences",
+    "page": "1-bo‘lim (Kirish), PMID 41596321"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-57-q04",
+   "question_i18n": {
+    "uz": "Quyidagi oqsil markerlaridan qaysi biri kardiomiotsit nekrozining eng spetsifik va sezgir ko‘rsatkichi hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "CK-MB fermenti",
+     "GPBB izofermenti",
+     "H-FABP oqsili",
+     "Yurak troponinlari"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Troponinlar (cTnI va cTnT) kardiomiotsit nekrozining eng spetsifik va sezgir markeri sifatida qabul qilingan. CK-MB travma va tutqanoqda ham oshib, spetsifikligi past. H-FABP (yurak tipidagi yog‘ kislotasini bog‘lovchi oqsil) va GPBB (glikogen fosforilaza BB izofermenti) erta ishemiyani ko‘rsatadi, lekin tez parchalanadi."
+   },
+   "source": {
+    "author": "Sacco MA va boshq.",
+    "title": "Post-Mortem Biomarkers in Sudden Cardiac Death: From Classical Biochemistry to Molecular Autopsy and Multi-Omics Forensic Approaches, International Journal of Molecular Sciences",
+    "page": "2-bo‘lim (Protein Biomarkers of Myocardial Injury), PMID 41596321"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-57-q05",
+   "question_i18n": {
+    "uz": "O‘lim vaqtidan 36 soat o‘tdi, femoral qon namunasi esa gemolizga uchragan. Troponinni o‘lchash uchun qaysi muhit ko‘proq mos keladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Perikard suyuqligi",
+     "Markaziy yurak qoni",
+     "Miya-orqa miya suyuqligi",
+     "Shishasimon suyuqlik"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "O‘limdan keyingi interval (PMI) 24–48 soatdan oshganda perikard suyuqligidagi troponin qonga qaraganda uzoqroq barqaror qoladi. Perikard suyuqligi anatomik ajralganligi uchun qayta taqsimlanishdan himoyalangan. Markaziy yurak qoni esa miokarddan oqib chiqish tufayli sun’iy yuqori qiymat berishi mumkin."
+   },
+   "source": {
+    "author": "Sacco MA va boshq.",
+    "title": "Post-Mortem Biomarkers in Sudden Cardiac Death: From Classical Biochemistry to Molecular Autopsy and Multi-Omics Forensic Approaches, International Journal of Molecular Sciences",
+    "page": "2-bo‘lim va 7-bo‘lim, PMID 41596321"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-57-q06",
+   "question_i18n": {
+    "uz": "NT-proBNP ni o‘lgandan keyin aniqlashda perikard suyuqligi qonga nisbatan nima uchun ishonchliroq hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "U gemolizga eng sezgir, shuning uchun signal kuchayadi",
+     "U anatomik ajralgan va post-mortem qayta taqsimlanishdan himoyalangan",
+     "U klinik chegara qiymatlarga har doim to‘liq mos keladi",
+     "U vazopressinning o‘zini barqaror holda saqlab turadi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Manbaga ko‘ra, BNP va NT-proBNP qon hamda perikard suyuqligida aniqlanadi. Perikard suyuqligi post-mortem qayta taqsimlanishdan himoyalangani uchun ishonchliroq. Qolgan variantlar manbaga zid: gemoliz ishonchlilikni oshirmaydi, universal klinik chegaralar o‘limdan keyin to‘g‘ridan-to‘g‘ri qo‘llanmaydi, vazopressin emas, kopeptin barqaror."
+   },
+   "source": {
+    "author": "Sacco MA va boshq.",
+    "title": "Post-Mortem Biomarkers in Sudden Cardiac Death: From Classical Biochemistry to Molecular Autopsy and Multi-Omics Forensic Approaches, International Journal of Molecular Sciences",
+    "page": "PMID 41596321, 3-bo‘lim"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-57-q07",
+   "question_i18n": {
+    "uz": "Bemor shifoxonaga kelgandan so‘ng qisqa vaqtda yiqilib o‘ldi. Autopsiyada aniq lezyon yo‘q, o‘lgandan keyingi qonda kopeptin troponin bilan birga yuqori. Bu nimani anglatadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "O‘lim sababi faqat sepsis ekani isbotlanadi",
+     "O‘lim travmatik bo‘lgani aniq tasdiqlanadi",
+     "Natijalar tasodifiy artefakt ekanini bildiradi",
+     "Kollaps paytida o‘tkir ishemiya bo‘lganini qo‘llab-quvvatlaydi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Manbada Kutlu va hamkasblari tadqiqoti keltirilgan: troponin bilan birga yuqori kopeptin kollaps paytidagi o‘tkir ishemiyani ko‘rsatgan. Bu o‘tkazib yuborilgan klinik tashxisni retrospektiv tiklashga yordam bergan. Kopeptin faqat yurakka xos emas (sepsis, travma, insultda ham ko‘tariladi), shuning uchun kontekst muhim."
+   },
+   "source": {
+    "author": "Sacco MA va boshq.",
+    "title": "Post-Mortem Biomarkers in Sudden Cardiac Death: From Classical Biochemistry to Molecular Autopsy and Multi-Omics Forensic Approaches, International Journal of Molecular Sciences",
+    "page": "PMID 41596321, 8-bo‘lim"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-57-q08",
+   "question_i18n": {
+    "uz": "Koronar arteriya tiqilishidan taxminan 1 soat o‘tib o‘lim yuz berdi. Gematoksilin–eozin bo‘yashda o‘zgarish yo‘q. Ishemik shikastni ko‘rsatishi mumkin bo‘lgan eng mos keyingi qadam qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Fibronektinni sarkolemma bo‘ylab IGK bilan aniqlash",
+     "Faqat femoral qonda IL-6 darajasini o‘lchash",
+     "Faqat femoral qonda CRP darajasini o‘lchash",
+     "Preparatni yana o‘sha H&E bilan qayta ko‘rish"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Manbaga ko‘ra, sarkolemma bo‘ylab fibronektin ajralishi ishemik shikastning eng erta belgilaridan biri. IGK uni koronar tiqilishdan 1 soat ichida, H&E hali manfiy bo‘lganda ham ko‘rsatishi mumkin. CRP va IL-6 nospesifik, gipoksiya va uzoq agoniyada ham ko‘tarilishi mumkin. IGK – immunogistokimyo."
+   },
+   "source": {
+    "author": "Sacco MA va boshq.",
+    "title": "Post-Mortem Biomarkers in Sudden Cardiac Death: From Classical Biochemistry to Molecular Autopsy and Multi-Omics Forensic Approaches, International Journal of Molecular Sciences",
+    "page": "PMID 41596321, 4-bo‘lim"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-57-q09",
+   "question_i18n": {
+    "uz": "Eruvchan sitokinlarga (CRP, IL-6) nisbatan to‘qimadagi IGK markerlarining asosiy afzalligi nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ular arzonroq va maxsus mutaxassissiz bajariladi",
+     "Ular tezroq bajariladi va post-mortem o‘zgarmaydi",
+     "Ular hayotiy reaksiyani va shikast vaqtini aniqroq ko‘rsatadi",
+     "Ular bakterial translokatsiyadan ko‘proq ta’sirlanadi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Manbada eruvchan sitokinlar oson va arzon, lekin post-mortem parchalanishga va bakterial translokatsiyaga moyil, shuning uchun spetsifikligi past deyilgan. IGK markerlari hayotiy reaksiyaning kuchliroq isbotini va ishemiya vaqtini beradi, lekin maxsus malaka va uzoqroq ishlov talab qiladi."
+   },
+   "source": {
+    "author": "Sacco MA va boshq.",
+    "title": "Post-Mortem Biomarkers in Sudden Cardiac Death: From Classical Biochemistry to Molecular Autopsy and Multi-Omics Forensic Approaches, International Journal of Molecular Sciences",
+    "page": "PMID 41596321, 4-bo‘lim"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-57-q10",
+   "question_i18n": {
+    "uz": "Autopsiyada femoral qonda CRP yuqori topildi. Bu ishemik o‘limga nisbatan qaysi mexanizmni ko‘proq qo‘llab-quvvatlaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "O‘tkir ishemik miokard nekrozini",
+     "Miokardit yoki sepsis bilan bog‘liq yallig‘lanishni",
+     "Strukturasiz birlamchi aritmik o‘limni",
+     "Faqat travmatik o‘limni"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Manbaga ko‘ra, femoral qonda CRP miokardit va sepsisdagi o‘limlarda ishemik to‘satdan o‘limdagiga qaraganda yuqoriroq bo‘lgan. Biroq CRP sistemali gipoksiya, uzoq agoniya va terminal stressda ham ko‘tarilishi mumkin, shuning uchun natija yordamchi dalil sifatida talqin qilinadi."
+   },
+   "source": {
+    "author": "Sacco MA va boshq.",
+    "title": "Post-Mortem Biomarkers in Sudden Cardiac Death: From Classical Biochemistry to Molecular Autopsy and Multi-Omics Forensic Approaches, International Journal of Molecular Sciences",
+    "page": "PMID 41596321, 4-bo‘lim"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-57-q11",
+   "question_i18n": {
+    "uz": "Yosh odamning yuragi tuzilishi jihatidan me‘yorda, gistologiya ham manfiy. Qaysi molekulyar belgi ishemik o‘limni aritmik o‘limdan farqlashga yordam beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat umumiy qondagi CRP darajasi",
+     "Yurakka xos mikroRNK imzolari",
+     "Faqat jasadning tashqi ko‘rinishi",
+     "Faqat to‘qimadagi bakteriya miqdori"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Yurakka xos mikroRNKlar (miR-1, miR-133, miR-208, miR-499) o‘limdan keyin barqaror. Ularning alohida imzolari tuzilish o‘zgarishisiz ishemik va aritmik o‘limni ajratishga yordam beradi. CRP esa nospetsifik, jasad tashqi ko‘rinishi va bakteriya miqdori bunday farqlashni bermaydi."
+   },
+   "source": {
+    "author": "Sacco MA va boshq.",
+    "title": "Post-Mortem Biomarkers in Sudden Cardiac Death: From Classical Biochemistry to Molecular Autopsy and Multi-Omics Forensic Approaches, International Journal of Molecular Sciences",
+    "page": "PMID 41596321; DOI 10.3390/ijms27020670"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-57-q12",
+   "question_i18n": {
+    "uz": "Molekulyar autopsiyada kanalopatiyalar (LQTS, Brugada, CPVT) bilan eng ko‘p bog‘lanadigan genlar to‘plami qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "PKP2, DSP, DSG2, DSC2",
+     "MYH7, LMNA, DES, MYH6",
+     "COX5B, CACNA1A, MYH6, LMNA",
+     "SCN5A, KCNQ1, KCNH2, RYR2"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "SCN5A, KCNQ1, KCNH2 va RYR2 natriy, kaliy va kalsiy kanallari subbirliklarini kodlaydi. PKP2, DSP, DSG2, DSC2 desmosomal genlar bo‘lib, ARVCga (aritmogen o‘ng qorincha kardiomiopatiyasi) xos. MYH7, LMNA, DES kardiomiopatiya genlari, MYH6, COX5B va CACNA1A esa yangi paydo bo‘layotgan lokuslar."
+   },
+   "source": {
+    "author": "Sacco MA va boshq.",
+    "title": "Post-Mortem Biomarkers in Sudden Cardiac Death: From Classical Biochemistry to Molecular Autopsy and Multi-Omics Forensic Approaches, International Journal of Molecular Sciences",
+    "page": "PMID 41596321; DOI 10.3390/ijms27020670"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-57-q13",
+   "question_i18n": {
+    "uz": "Ekspert troponinni markaziy yurak qonidan o‘lchab, yuqori natija oldi. Bu natijada qanday xato xavfi bor?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Mahalliy miokard oqishi tufayli sun‘iy oshgan qiymat",
+     "Qon tarkibidagi troponinning to‘liq parchalanib ketishi",
+     "Troponinning faqat skelet mushaklaridan ajralishi",
+     "Natijaning hamma holatda g‘ayritabiiy past chiqishi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Markaziy yurak qonida mahalliy miokard oqishi sababli qiymatlar sun‘iy oshgan bo‘lishi mumkin. Shu sababli son qon ko‘proq afzal ko‘riladi, perikard suyuqligi esa ishonchli muqobil hisoblanadi."
+   },
+   "source": {
+    "author": "Sacco MA va boshq.",
+    "title": "Post-Mortem Biomarkers in Sudden Cardiac Death: From Classical Biochemistry to Molecular Autopsy and Multi-Omics Forensic Approaches, International Journal of Molecular Sciences",
+    "page": "PMID 41596321; DOI 10.3390/ijms27020670"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-57-q14",
+   "question_i18n": {
+    "uz": "Bemor shifoxonaga kelgach qulab o‘ldi, autopsiyada aniq lezyon yo‘q. Qonda troponin bilan birga kopeptin ham yuqori. Bu nimani ko‘rsatadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "O‘lim tashqi jarohat tufayli yuz berganini",
+     "Faqat o‘limdan keyingi bakterial ko‘payishni",
+     "Qulash paytida o‘tkir ishemiya bo‘lganini",
+     "Klinik tashxis hamma holda to‘g‘ri bo‘lganini"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Troponin bilan birga kopeptinning yuqori bo‘lishi qulash paytida o‘tkir ishemiya bo‘lganini bildirgan. Bu o‘tkazib yuborilgan miokard infarkti tashxisini retrospektiv qayta tiklashga imkon beradi. Me‘yoriy qiymatlar esa shifokorni nohaq ayblovdan himoya qilishi mumkin."
+   },
+   "source": {
+    "author": "Sacco MA va boshq.",
+    "title": "Post-Mortem Biomarkers in Sudden Cardiac Death: From Classical Biochemistry to Molecular Autopsy and Multi-Omics Forensic Approaches, International Journal of Molecular Sciences",
+    "page": "PMID 41596321; DOI 10.3390/ijms27020670"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-57-q15",
+   "question_i18n": {
+    "uz": "Koronar okklyuziyadan taxminan 1 soat o‘tgan, gematoksilin–eozin (H&E) bo‘yalishi manfiy. Qaysi usul ishemik shikastni ko‘rsata oladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat zardobdagi IL-6 miqdorini o‘lchash",
+     "Fibronektinga immunogistokimyoviy bo‘yash",
+     "Faqat to‘qimani makroskopik ko‘zdan kechirish",
+     "Faqat o‘limdan keyingi KT tekshiruvi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Sarkolemma bo‘ylab fibronektin yig‘ilishi ishemik shikastning eng erta belgilaridan biri. U okklyuziyadan taxminan bir soat o‘tgach, H&E hali manfiy bo‘lganda ham aniqlanadi. IL-6 esa nospetsifik bo‘lib, tashxis uchun yetarli emas."
+   },
+   "source": {
+    "author": "Sacco MA va boshq.",
+    "title": "Post-Mortem Biomarkers in Sudden Cardiac Death: From Classical Biochemistry to Molecular Autopsy and Multi-Omics Forensic Approaches, International Journal of Molecular Sciences",
+    "page": "PMID 41596321; DOI 10.3390/ijms27020670"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-57-q16",
+   "question_i18n": {
+    "uz": "Chirigan jasadda teri jarohati H&E bo‘yog‘ida eritrotsitlarni ko‘rsatmadi, GPA esa tomirdan tashqarida musbat chiqdi. Bu nimani bildiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Jarohat o‘limdan keyin, qon aylanishi to‘xtagach hosil bo‘lgan",
+     "Jarohat tirikligida, qon aylanishi faol paytda hosil bo‘lgan",
+     "Musbat natija faqat o‘limdan keyingi gipostaz tufayli chiqqan",
+     "Musbat natija faqat chirishdagi teri rangi o‘zgarishiga bog‘liq"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Tomirdan tashqarida joylashgan eritrotsitlar (GPA musbat) jarohat qon aylanishi faol paytda hosil bo‘lganini, ya’ni hayotiyligini ko‘rsatadi. Manfiy natija esa o‘limdan keyingi jarohatni qo‘llab-quvvatlaydi. Maqolada GPA H&E da ko‘rinmagan eritrotsitlarni ham aniqlagani qayd etilgan."
+   },
+   "source": {
+    "author": "Donato Morena va boshq.",
+    "title": "Bloody Evidence: The Validity of Glycophorin A in the Determination of Wound Vitality—A Systematic Review of the Literature, International Journal of Molecular Sciences",
+    "page": "PMID 40508117; DOI 10.3390/ijms26115308"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-57-q17",
+   "question_i18n": {
+    "uz": "Ushbu sistematik sharh qaysi hisobot yo‘riqnomasiga muvofiq bajarilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "PRISMA hisobot yo‘riqnomasi (sistematik sharhlar uchun)",
+     "JBI tanqidiy baholash ro‘yxatlari (xatolik xavfi uchun)",
+     "Daubert mezonlari (sudda dalil maqbulligi uchun)",
+     "LSAB+ to‘plami (immunogistokimyoviy aniqlash uchun)"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Sharh PRISMA yo‘riqnomasi bo‘yicha o‘tkazilgan. JBI vositalari faqat xatolik xavfini baholash uchun, Daubert mezonlari sudda dalilni baholash uchun, LSAB+ esa laboratoriya aniqlash tizimi sifatida tilga olingan."
+   },
+   "source": {
+    "author": "Donato Morena va boshq.",
+    "title": "Bloody Evidence: The Validity of Glycophorin A in the Determination of Wound Vitality—A Systematic Review of the Literature, International Journal of Molecular Sciences",
+    "page": "PMID 40508117; DOI 10.3390/ijms26115308"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-57-q18",
+   "question_i18n": {
+    "uz": "Maqolaga ko‘ra, faqat oddiy gistologiya (H&E) ning diagnostik aniqligi qancha bo‘lgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "18 foiz",
+     "48 foiz",
+     "66 foiz",
+     "72,2 foiz"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Faqat gistologiyaning aniqligi 66% bo‘lgan: 18% holatda qon quyilish bor edi-yu aniqlanmagan, 16% da natija noaniq. 18% – o‘tkazib yuborilgan holatlar ulushi, 48 – GPA bilan bo‘yalgan namunalar soni, 72,2% – tajribadagi ko‘karishlarda GPA musbatligi."
+   },
+   "source": {
+    "author": "Donato Morena va boshq.",
+    "title": "Bloody Evidence: The Validity of Glycophorin A in the Determination of Wound Vitality—A Systematic Review of the Literature, International Journal of Molecular Sciences",
+    "page": "PMID 40508117; DOI 10.3390/ijms26115308"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-57-q19",
+   "question_i18n": {
+    "uz": "Italiyadagi qayta ochilgan ishda o‘lim sababi deb hisoblangan jarohatlar GPA bo‘yicha manfiy, bo‘yinning laringotraxeal yumshoq to‘qimalari esa musbat chiqdi. Bu nimani ko‘rsatadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Jarohatlar tirikligida hosil bo‘lgan, o‘lim sababi o‘zgarmaydi",
+     "Natija suyak iligidagi hujayralar bilan kross-reaksiyadan chiqqan",
+     "Bo‘yindagi musbatlik gipostaz, ish avvalgidek yopiq qoladi",
+     "Bo‘yinda hayotiy qon quyilish, kuchli mexanik asfiksiya belgisi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Dastlabki jarohatlar GPA manfiy bo‘lgani uchun perimortem yoki postmortem hosil bo‘lgan deb baholandi. Bo‘yindagi musbatlik violent mexanik asfiksiyani ko‘rsatdi, shu sababli birinchi otopsiyadagi o‘z joniga qasd xulosasi o‘z kuchini yo‘qotdi."
+   },
+   "source": {
+    "author": "Donato Morena va boshq.",
+    "title": "Bloody Evidence: The Validity of Glycophorin A in the Determination of Wound Vitality—A Systematic Review of the Literature, International Journal of Molecular Sciences",
+    "page": "PMID 40508117; DOI 10.3390/ijms26115308"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-57-q20",
+   "question_i18n": {
+    "uz": "Suyak iligi mavjud to‘qimada GPA musbat chiqdi, lekin tomirdan tashqarida qon quyilish belgisi yo‘q. Eng ehtimoliy sabab qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Eritroid prekursorlar bilan kross-reaksiya tufayli soxta musbat natija",
+     "Jarohat tirikligida hosil bo‘lganining mutlaq va aniq isboti bo‘ladi",
+     "Chirish tufayli antigen butunlay yo‘qolgan, natija soxta manfiy bo‘ladi",
+     "Antitana suyultirmasi noto‘g‘ri tanlangan, shuning uchun natija chiqmaydi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Maqolaning cheklovlar bo‘limida soxta musbat natija GPA ning eritroid prekursorlarga boy to‘qimalarda (suyak iligi, ekstramedullyar qon yaratilish o‘choqlari) aniqlanishi bilan bog‘langan. Shuning uchun natijani to‘qima turi va qon quyilish bilan birga baholash kerak."
+   },
+   "source": {
+    "author": "Donato Morena va boshq.",
+    "title": "Bloody Evidence: The Validity of Glycophorin A in the Determination of Wound Vitality—A Systematic Review of the Literature, International Journal of Molecular Sciences",
+    "page": "PMID 40508117; DOI 10.3390/ijms26115308"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Sacco MA va boshq.",
+   "title": "Post-Mortem Biomarkers in Sudden Cardiac Death: From Classical Biochemistry to Molecular Autopsy and Multi-Omics Forensic Approaches, International Journal of Molecular Sciences"
+  },
+  {
+   "author": "Donato Morena va boshq.",
+   "title": "Bloody Evidence: The Validity of Glycophorin A in the Determination of Wound Vitality—A Systematic Review of the Literature, International Journal of Molecular Sciences"
+  }
+ ]
+}

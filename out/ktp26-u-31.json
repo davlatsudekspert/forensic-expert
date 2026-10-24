@@ -32,7 +32,16 @@
           "uncertain": false
         },
         {
-          "text": "Osiyoda pestitsid o‘limlarining ko‘pchiligi FOB hissasiga to‘g‘ri keladi. Kasalxonada o‘limning keng tarqalgan sababi nafas yetishmovchiligi, so‘ng yurak to‘xtashi.",
+          "text": "Osiyoda pestitsid o‘limlarining ko‘pchiligi FOB hissasiga to‘g‘ri keladi.",
+          "source": {
+            "author": "Eddleston et al.",
+            "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+            "page": "PMID 15566582"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kasalxonada o‘limning keng tarqalgan sababi nafas yetishmovchiligi, so‘ng yurak to‘xtashi.",
           "source": {
             "author": "Eddleston et al.",
             "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
@@ -77,36 +86,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Yillik o‘lim baholari",
-        "nodes": [],
-        "header": [
-          "Manba",
-          "Baho",
-          "Tavsif"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Eddleston, 2004",
+            "value": "~300 000",
+            "unit": "o‘lim/yil"
+          },
+          {
+            "label": "Ramadori, 2023",
+            "value": "200–350 ming",
+            "unit": "o‘lim/yil"
+          },
+          {
+            "label": "Worek: FOB 2007→2017",
+            "value": ">258 000→~110 000"
+          },
+          {
+            "label": "Worek: pestitsidlar",
+            "value": ">100 000",
+            "unit": "o‘lim/yil"
+          }
         ],
-        "rows": [
-          [
-            "Eddleston, 2004",
-            "~300 000 o‘lim/yil",
-            "Pestitsid bilan o‘z-o‘ziga zaharlanish"
-          ],
-          [
-            "Ramadori, 2023",
-            "200 000–350 000 o‘lim/yil",
-            "Tasodifiy va qasddan zaharlanish"
-          ],
-          [
-            "Worek, 2020",
-            "258 000 dan ortiq (2007) → ~110 000 (2017)",
-            "FOB bilan o‘z-o‘ziga zaharlanish"
-          ],
-          [
-            "Worek, 2020",
-            "100 000 dan ortiq o‘lim/yil",
-            "Pestitsid bilan o‘z-o‘ziga zaharlanish"
-          ]
-        ]
+        "caption": "Yillik o‘lim baholari (har xil manba va guruh)"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nima uchun manbalar turlicha raqam beradi? 2) Taqiqlash chora sifatida qanday samara berdi? Doskaga chizish: 2007 va 2017 yillar uchun o‘lim kamayishini ko‘rsatuvchi oddiy vaqt chizig‘i. Tipik xato: bitta raqamni jahon uchun yagona haqiqat deb yozib olish; har bir raqam qamrovi (barcha pestitsid yoki faqat FOB) va yiliga bog‘liq."
     },
@@ -142,36 +144,35 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Letallik taqqoslanishi",
-        "nodes": [],
-        "header": [
-          "Hudud",
-          "Letallik",
-          "Izoh"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Rivojlanayotgan mamlakat",
+            "value": "10–20",
+            "unit": "%"
+          },
+          {
+            "label": "Ayrim pestitsidlar",
+            "value": "50–70",
+            "unit": "%"
+          },
+          {
+            "label": "G‘arb mamlakatlari",
+            "value": "<0,3",
+            "unit": "%"
+          },
+          {
+            "label": "Kasalxonadagi o‘tkir FOB",
+            "value": "15–23",
+            "unit": "%"
+          },
+          {
+            "label": "Hindistonda (yaqinda)",
+            "value": "33 gacha",
+            "unit": "%"
+          }
         ],
-        "rows": [
-          [
-            "Rivojlanayotgan mamlakatlar",
-            "10–20%",
-            "O‘z joniga qasd qilishda odatiy"
-          ],
-          [
-            "Ayrim pestitsidlar",
-            "50–70% gacha",
-            "Alohida yuqori zaharli preparatlar"
-          ],
-          [
-            "G‘arb mamlakatlari",
-            "0,3% dan kam",
-            "Barcha sabablardan zaharlanishda"
-          ],
-          [
-            "Kasalxonadagi o‘tkir FOB",
-            "15–23%",
-            "Hindistonda yaqinda 33% gacha"
-          ]
-        ]
+        "caption": "Letallik taqqoslanishi"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun G‘arbda letallik bunchalik past? 2) Ventilyatsiyadagi bemorlarda yuqori o‘lim nimani anglatadi: usul sababmi yoki og‘irlik belgisimi? Doskaga chizish: uch ustunli oddiy taqqoslash chizig‘i (rivojlanayotgan / ayrim pestitsid / G‘arb). Tipik xato: 10–20% va 50–70% ni bitta ko‘rsatkich deb olish; ikkinchisi faqat ayrim pestitsidlarga tegishli."
     },
@@ -576,36 +577,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Kirish yo‘li va boshlanishi",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "Kirish yo‘li",
-          "Boshlanishi"
+        "kind": "tree",
+        "root": "Kirish yo‘li va boshlanishi",
+        "children": [
+          {
+            "label": "Nafas, shilliq qavat",
+            "items": [
+              "Sarin",
+              "Tez (daqiqalar)"
+            ]
+          },
+          {
+            "label": "Teri orqali",
+            "items": [
+              "VX",
+              "Kechikkan (soatlar)"
+            ]
+          },
+          {
+            "label": "Og‘iz orqali",
+            "items": [
+              "Diazinon: tez",
+              "Malation, dimetoat: kechikkan"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Sarin",
-            "Nafas, shilliq qavat",
-            "Tez (daqiqalar)"
-          ],
-          [
-            "VX",
-            "Teri orqali",
-            "Kechikkan (soatlar)"
-          ],
-          [
-            "Diazinon (paration)",
-            "Og‘iz orqali (suitsid)",
-            "Tez (daqiqalar)"
-          ],
-          [
-            "Malation, dimetoat",
-            "Og‘iz orqali (suitsid)",
-            "Kechikkan (soatlar)"
-          ]
-        ]
+        "caption": "Toksikokinetika: kirish yo‘li"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nima uchun VX belgilari kechikib boshlanadi? 2) Lipofil FOB (masalan, fention) bemorni kuzatishga qanday ta’sir qiladi? Doskada chizish: kirish yo‘li → qonga o‘tish → AChE ingibitsiyasi → belgilar boshlanishi. Tipik xato: barcha FOB bir xil tezlikda va bir xil yo‘l bilan ta’sir qiladi deb o‘ylash."
     },
@@ -730,32 +727,27 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Xolinergik sindrom belgilari",
-        "nodes": [],
-        "header": [
-          "Reseptor",
-          "Belgilar",
-          "Atropin"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Muskarin belgilari",
+            "items": [
+              "Bronxoreya, bronxospazm",
+              "Bradikardiya",
+              "Miyoz, so‘lak oqishi, terlash",
+              "Atropin kamaytiradi; miyoz kech kengayadi"
+            ]
+          },
+          {
+            "title": "Nikotin belgilari",
+            "items": [
+              "Fassikulyatsiya",
+              "Mushak zaifligi, falaj",
+              "Atropin ta’sir qilmaydi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Muskarin",
-            "Bronxoreya, bronxospazm, bradikardiya",
-            "Kamaytiradi"
-          ],
-          [
-            "Muskarin",
-            "Miyoz, so‘lak oqishi, terlash",
-            "Miyoz kech kengayishi mumkin"
-          ],
-          [
-            "Nikotin",
-            "Fassikulyatsiya, mushak zaifligi, falaj",
-            "Ta’sir qilmaydi"
-          ]
-        ],
-        "explanation": ""
+        "caption": "Xolinergik sindrom"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega atropin to‘liq davo emas? 2) Qaysi belgilar bo‘yicha atropin yetarliligi baholanadi? Doskada: ikki ustunli jadval (muskarin | nikotin) chizdirib, bemorning belgilarini guruhlatish. Tipik xato: bradikardiyani doimiy belgi deb hisoblash va tez yurak urishida atropinni to‘xtatish. Eslatma: belgilarni muskarin/nikotin guruhlarga taqsimlash umumiy farmakologik bilimga tayanadi, matnlarda barcha belgilar uchun alohida ko‘rsatilmagan."
     },
@@ -791,17 +783,30 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Kolinergik sindromning 5 belgisi",
-        "nodes": [
-          "1. Miyoz (nuqtadek qorachiq)",
-          "2. Ko‘p terlash",
-          "3. Bronxoreya, bronxospazm",
-          "4. Bradikardiya (har doim emas)",
-          "5. Gipotenziya"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Miyoz",
+            "text": "Nuqtadek qorachiq"
+          },
+          {
+            "title": "Ko‘p terlash",
+            "text": "Ter atropin kerakligini bildiradi"
+          },
+          {
+            "title": "Bronxoreya",
+            "text": "Bronxospazm, o‘pkaga havo kirishi yomon"
+          },
+          {
+            "title": "Bradikardiya",
+            "text": "Har doim emas"
+          },
+          {
+            "title": "Gipotenziya",
+            "text": "Qon bosimi pasayishi"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Kolinergik sindromning 5 belgisi"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega aynan shu beshta belgi kundalik baholash uchun tanlangan? 2) Yurak urishi tez bo‘lsa, atropinni rad etish to‘g‘rimi? Doskada: besh belgini ketma-ket chizib, yonida ‘har doim emas’ degan belgini bradikardiyaga qo‘ying. Tipik xato: talabalar bradikardiyani majburiy belgi deb o‘ylaydi, holbuki normal yoki tez puls ham uchraydi."
     },
@@ -818,7 +823,16 @@
           "uncertain": false
         },
         {
-          "text": "Mualliflar tasdiqlanmagan og‘irlik shkalalaridan foydalanmagan. Dastlabki ‘yengil’ ball shifokorni xotirjam qilib qo‘yishi mumkin; xalqaro IPCS/EC/EAPCCT shkalasi faqat retrospektiv qo‘llanadi.",
+          "text": "Mualliflar tasdiqlanmagan og‘irlik shkalalaridan foydalanmagan.",
+          "source": {
+            "author": "Eddleston et al.",
+            "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+            "page": "PMID 15566582"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dastlabki ‘yengil’ ball shifokorni xotirjam qilib qo‘yishi mumkin; xalqaro IPCS/EC/EAPCCT shkalasi faqat retrospektiv qo‘llanadi.",
           "source": {
             "author": "Eddleston et al.",
             "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
@@ -880,17 +894,30 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Oraliq sindrom belgilarining kechishi",
-        "nodes": [
-          "1. Bo‘yin bukuvchilar zaifligi",
-          "2. Yordamchi nafas mushaklari",
-          "3. Burun qanoti, taxipnoe, ter",
-          "4. Kranial nerv falaji",
-          "5. Proksimal zaiflik"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Bo‘yin bukuvchilar",
+            "text": "Zaiflik — erta belgi"
+          },
+          {
+            "title": "Nafas mushaklari",
+            "text": "Yordamchi nafas mushaklari ishga tushadi"
+          },
+          {
+            "title": "Burun qanoti, taxipnoe",
+            "text": "Ter ajralishi bilan"
+          },
+          {
+            "title": "Kranial nervlar",
+            "text": "Falaj"
+          },
+          {
+            "title": "Proksimal zaiflik",
+            "text": "Distal kuch saqlanadi"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Oraliq sindrom belgilarining kechishi"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega bo‘yin zaifligi eng qulay erta tekshiruv belgisi? 2) Qaysi bemorlarni tez-tez kuzatish kerak? Doskada: 5 bosqichli zanjirni chizing va 1-bosqichni qizil bilan belgilang. Tipik xato: sxemadagi tartib qat’iy deb o‘ylash — manbada faqat bo‘yin zaifligi birinchi belgi, qolganlari ‘keyingi belgilar’ deb sanalgan, aniq tartib berilmagan."
     },
@@ -950,7 +977,16 @@
           "uncertain": false
         },
         {
-          "text": "Bo‘yin bukuvchilar zaifligi oraliq sindromning erta belgisi. Keyin yordamchi nafas mushaklari, burun qanotlari kengayishi, tez nafas, ter, bosh miya nervlari falajligi qo‘shiladi.",
+          "text": "Bo‘yin bukuvchilar zaifligi oraliq sindromning erta belgisi.",
+          "source": {
+            "author": "Eddleston et al.",
+            "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+            "page": "PMID 15566582"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Keyin yordamchi nafas mushaklari, burun qanotlari kengayishi, tez nafas, ter, bosh miya nervlari falajligi qo‘shiladi.",
           "source": {
             "author": "Eddleston et al.",
             "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
@@ -1012,19 +1048,80 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Dastlabki yordam tartibi",
-        "nodes": [
-          "ABC tekshiruvi",
-          "Kislorod, Guedel yo‘li",
-          "Chap yon holat, bosh pastda",
-          "Tutqanoqda tomirga diazepam",
-          "Glazgo shkalasi + pulsoksimetr"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "ABC tekshiruvi",
+            "text": "Havo yo‘li, nafas, qon aylanishi"
+          },
+          {
+            "title": "Kislorod, Guedel",
+            "text": "Yuqori oqimli kislorod, havo yo‘li ochiq"
+          },
+          {
+            "title": "Chap yon holat",
+            "text": "Bosh past: aspiratsiya xavfi kamayadi"
+          },
+          {
+            "title": "Tutqanoq",
+            "text": "Tomirga diazepam darhol"
+          },
+          {
+            "title": "Monitoring",
+            "text": "Glazgo shkalasi, pulsoksimetr"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Dastlabki yordam tartibi"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega bemor chap yonga, boshi past yotqiziladi? 2) Guedel naychasi yaxshi ishlasa ham nega ET naycha kerak? Doskada: besh qadamli zanjirni chizing. Tipik xato: kislorod yo‘qligi sababli atropinni kechiktirish; atropin kislorodlanishni yaxshilaydi."
+    },
+    {
+      "title": "Dastlabki 10 daqiqa: atropin va suyuqlik",
+      "bullets": [
+        {
+          "text": "Ikkita tomir yo‘li: biri suyuqlik va dorilar uchun, ikkinchisi atropin uchun.",
+          "source": {
+            "author": "Eddleston et al.",
+            "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+            "page": "PMID 15566582; DOI 10.1186/cc2953 (Giving fluids)"
+          }
+        },
+        {
+          "text": "Atropin ta’sir qilguncha 500–1000 ml (10–20 ml/kg) normal tuz eritmasi 10–20 daqiqada quyiladi.",
+          "source": {
+            "author": "Eddleston et al.",
+            "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+            "page": "PMID 15566582; DOI 10.1186/cc2953 (Giving fluids)"
+          }
+        },
+        {
+          "text": "Klinika noaniq bo‘lsa, 0,6–1 mg atropin beriladi; pulsning 20–25 dan ko‘p oshishi va teri qizarishi sezilarli xolinergik zaharlanish yo‘qligini bildiradi.",
+          "source": {
+            "author": "Eddleston et al.",
+            "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+            "page": "PMID 15566582; DOI 10.1186/cc2953 (Dose of atropine)"
+          }
+        },
+        {
+          "text": "Nuqtadek qorachiq va ter pestitsid keng tarqalgan hududda atropin berishga yetarli asos; tahlil natijasini kutilmaydi.",
+          "source": {
+            "author": "Eddleston et al.",
+            "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+            "page": "PMID 15566582; DOI 10.1186/cc2953 (Dose of atropine)"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Ikki tomir yo‘li",
+          "Normal tuz eritmasi 10–20 ml/kg",
+          "Atropin boshlanadi",
+          "3–5 daqiqada baholash"
+        ],
+        "caption": "Dastlabki 10 daqiqa"
+      },
+      "teacher_notes": "Vaqt: 4 daq."
     },
     {
       "title": "Atropin: yuklash va titrlash",
@@ -1058,19 +1155,162 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Atropinizatsiya bosqichlari",
-        "nodes": [
-          "Atropin 1,8–3 mg vena ichiga",
-          "3–5 daqiqada 5 belgini baholash",
-          "Javob yo‘q: doza ×2",
-          "Atropinizatsiya erishildi",
-          "Infuziya: 10–20%/soat"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1,8–3 mg atropin",
+            "text": "Vena ichiga, tez tomchi tizimiga"
+          },
+          {
+            "title": "3–5 daqiqada",
+            "text": "5 belgini baholash"
+          },
+          {
+            "title": "Javob yo‘q",
+            "text": "Dozani ikki hissa oshirish"
+          },
+          {
+            "title": "Atropinizatsiya",
+            "text": "Toza o‘pka, puls >80, bosim >80"
+          },
+          {
+            "title": "Infuziya",
+            "text": "Yuklama dozasining 10–20%/soat"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Atropinizatsiya bosqichlari"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega dozani ikki hissa oshiramiz, oldingisini takrorlamaymiz? 2) Besh belgi qaysilar (miozis, terlash, o‘pkada havo o‘tishi, bradikardiya, gipotenziya) va qaysi uchtasi eng muhim (o‘pka, puls, bosim)? Doskada: zanjirni chizing va har bosqichga vaqtni yozing. Infuziya: yuklash dozasining 10–20% soatiga, manbada 30 mg dan ko‘p yuklashda kamroq. Tipik xato: qorachiq kengaymaguncha atropinni davom ettirish; qorachiq kech kengayadi, bemor qorachiqdan o‘lmaydi."
+    },
+    {
+      "title": "Atropinizatsiya mezonlari: besh ko‘rsatkich",
+      "bullets": [
+        {
+          "text": "Atropin bir necha daqiqada ta’sir qiladi; 3–5 daqiqadan so‘ng beshta ko‘rsatkich (o‘pkaga havo kirishi, bosim, puls, qorachiq, ter) tekshiriladi.",
+          "source": {
+            "author": "Eddleston et al.",
+            "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+            "page": "PMID 15566582; DOI 10.1186/cc2953 (Assess whether enough atropine has been given)"
+          }
+        },
+        {
+          "text": "Faqat bitta emas, ko‘pchilik ko‘rsatkichda bir tekis yaxshilanish kerak; eng muhimlari: o‘pka auskultatsiyasi, puls, bosim.",
+          "source": {
+            "author": "Eddleston et al.",
+            "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+            "page": "PMID 15566582; DOI 10.1186/cc2953 (Assess whether enough atropine has been given)"
+          }
+        },
+        {
+          "text": "Maqsad — toza o‘pka, puls >80/daq, sistolik bosim >80 mm sim. ust., quruq teri va nuqtadek bo‘lmagan qorachiq.",
+          "source": {
+            "author": "Eddleston et al.",
+            "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+            "page": "PMID 15566582; DOI 10.1186/cc2953 (Atropine treatment after atropinization)"
+          }
+        },
+        {
+          "text": "Puls 120–140 ga yetkazish shart emas: bu atropin toksikligini bildiradi.",
+          "source": {
+            "author": "Eddleston et al.",
+            "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+            "page": "PMID 15566582; DOI 10.1186/cc2953 (Target end-points for atropine therapy)"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Puls",
+            "value": ">80",
+            "unit": "urish/daq"
+          },
+          {
+            "label": "Sistolik bosim",
+            "value": ">80",
+            "unit": "mm sim. ust."
+          },
+          {
+            "label": "O‘pka",
+            "value": "Toza"
+          },
+          {
+            "label": "Teri",
+            "value": "Quruq"
+          },
+          {
+            "label": "Qorachiq",
+            "value": "Nuqtadek emas"
+          }
+        ],
+        "caption": "Atropinizatsiya maqsadlari"
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: nega puls 120–140 ga chiqarilmaydi?"
+    },
+    {
+      "title": "Atropin infuziyasi va kuzatuv jadvali",
+      "bullets": [
+        {
+          "text": "Atropinizatsiyadan so‘ng infuziya qo‘yiladi: yuklash uchun sarflangan umumiy atropinning 10–20% i har soatda.",
+          "source": {
+            "author": "Eddleston et al.",
+            "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+            "page": "PMID 15566582; DOI 10.1186/cc2953 (Atropine treatment after atropinization)"
+          }
+        },
+        {
+          "text": "30 mg dan ortiq yuklama kerak bo‘lsa, kamroq beriladi; infuziya odatda 3–5 mg/soat dan oshmaydi.",
+          "source": {
+            "author": "Eddleston et al.",
+            "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+            "page": "PMID 15566582; DOI 10.1186/cc2953 (Atropine treatment after atropinization)"
+          }
+        },
+        {
+          "text": "Beshta ko‘rsatkich taxminan har 15 daqiqada baholanadi; atropinizatsiya yo‘qolsa — bolus va infuziya tezligini oshirish.",
+          "source": {
+            "author": "Eddleston et al.",
+            "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+            "page": "PMID 15566582; DOI 10.1186/cc2953 (Observation of the patient)"
+          }
+        },
+        {
+          "text": "Barqarorlashgach dastlabki 6 soat kamida soatiga bir marta, keyin 2–3 soatda bir marta ko‘riladi.",
+          "source": {
+            "author": "Eddleston et al.",
+            "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+            "page": "PMID 15566582; DOI 10.1186/cc2953 (Observation of the patient)"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Yuklama tugadi",
+            "text": "Toza o‘pka, puls >80, sistolik bosim >80"
+          },
+          {
+            "title": "Infuziya",
+            "text": "Yuklamaning 10–20% i / soat; ≤3–5 mg/soat"
+          },
+          {
+            "title": "Har 15 daqiqada",
+            "text": "Besh ko‘rsatkichni baholash"
+          },
+          {
+            "title": "Dastlabki 6 soat",
+            "text": "Kamida soatiga bir marta ko‘rik"
+          },
+          {
+            "title": "Keyin",
+            "text": "Har 2–3 soatda; nafas yetishmovchiligini kuzatish"
+          }
+        ],
+        "caption": "Atropin infuziyasi va kuzatuv"
+      },
+      "teacher_notes": "Vaqt: 5 daq."
     },
     {
       "title": "Atropin toksikligi belgilari",
@@ -1104,36 +1344,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Atropin ko‘pligi va FOB ta’siri",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Atropin ko‘p",
-          "FOB ta’siri"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Atropin ko‘p bo‘lsa",
+            "items": [
+              "Ichak parezi, tovush yo‘q",
+              "Terlash to‘xtaydi",
+              "Qo‘zg‘alish, chalkashlik",
+              "Taxikardiya"
+            ]
+          },
+          {
+            "title": "FOB ta’siri",
+            "items": [
+              "Diareya, qusish",
+              "Ko‘p terlash",
+              "Hushni yo‘qotish",
+              "Bradikardiya, ba’zan normal"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Ichak",
-            "Ichak parezi, tovush yo‘q",
-            "Diareya, qusish"
-          ],
-          [
-            "Ter",
-            "Terlash to‘xtaydi",
-            "Ko‘p terlash"
-          ],
-          [
-            "Ong",
-            "Qo‘zg‘alish, chalkashlik",
-            "Hushni yo‘qotish"
-          ],
-          [
-            "Yurak",
-            "Taxikardiya",
-            "Bradikardiya, ba’zan normal"
-          ]
-        ]
+        "caption": "Atropin ko‘pligi va FOB ta’siri"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Chalkash va isitmali bemorda atropin ko‘pligini boshqa sabablardan (alkogol abstinensiyasi) qanday ajratamiz? 2) Nega faol sovitish ustuvor? Doskada: jadvalni chizing, qatorlarni talabalar bilan to‘ldiring. Tipik xato: faqat yurak urishi yoki qorachiqqa qarab atropinni to‘xtatish yoki oshirish; manbaga ko‘ra bu ikki belgi ishonchli emas. Taxikardiya (tez yurak urishi) atropinga qarshi ko‘rsatma emas. Qo‘zg‘algan bemorni bog‘lash issiqlikni oshirib, yurak to‘xtashiga olib kelishi mumkin; diazepam afzal."
     },
@@ -1201,7 +1433,16 @@
       "title": "Dekontaminatsiya va qo‘shimcha yordam",
       "bullets": [
         {
-          "text": "FOB (fosfororganik birikmalar) bilan zaharlanganda me’da dekontaminatsiyasi bemor barqarorlashgach va kerak bo‘lsa intubatsiya qilingach o‘ylanadi; qabul qilingan zahoti qilinmaydi.",
+          "text": "FOB (fosfororganik birikmalar) bilan zaharlanganda me’da dekontaminatsiyasi bemor barqarorlashgach va kerak bo‘lsa intubatsiya qilingach o‘ylanadi;",
+          "source": {
+            "author": "Eddleston et al.",
+            "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+            "page": "PMID 15566582"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "qabul qilingan zahoti qilinmaydi.",
           "source": {
             "author": "Eddleston et al.",
             "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
@@ -1253,7 +1494,16 @@
           "uncertain": false
         },
         {
-          "text": "Chalkashlik va isitma ichak tovushlarisiz bo‘lsa, atropin toksikligi gumon qilinadi. Infuziya to‘xtatiladi, 30 daqiqadan keyin qayta baholanadi, so‘ng avvalgi tezlikning 70–80% idan qayta boshlanadi.",
+          "text": "Chalkashlik va isitma ichak tovushlarisiz bo‘lsa, atropin toksikligi gumon qilinadi.",
+          "source": {
+            "author": "Eddleston et al.",
+            "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+            "page": "PMID 15566582"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Infuziya to‘xtatiladi, 30 daqiqadan keyin qayta baholanadi, so‘ng avvalgi tezlikning 70–80% idan qayta boshlanadi.",
           "source": {
             "author": "Eddleston et al.",
             "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
@@ -1282,6 +1532,67 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Atropin toksikligini boshqa sabablardan (spirtdan chiqish, pnevmoniya) qanday ajratamiz? 2) Nega haloperidol o‘rniga diazepam tanlanadi? Doskada: atropin toksikligi belgilarini ro‘yxat qilib chizing. Tipik xato: talaba taxikardiyani atropinni to‘xtatish uchun yagona asos deb biladi."
+    },
+    {
+      "title": "Diazepam va haloperidol: nega diazepam tanlanadi",
+      "bullets": [
+        {
+          "text": "Qo‘zg‘algan bemorda diazepam 10 mg sekin vena ichiga beriladi, kerak bo‘lsa takrorlanadi; sutkasiga 30–40 mg gacha.",
+          "source": {
+            "author": "Eddleston et al.",
+            "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+            "page": "PMID 15566582; DOI 10.1186/cc2953 (Active cooling and sedation)"
+          }
+        },
+        {
+          "text": "Diazepam haloperidoldan afzal: atropin olayotganlarda haloperidolning katta dozasi kerak bo‘lishi mumkin.",
+          "source": {
+            "author": "Eddleston et al.",
+            "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+            "page": "PMID 15566582; DOI 10.1186/cc2953 (Active cooling and sedation)"
+          }
+        },
+        {
+          "text": "Haloperidol sedativ emas, markaziy termoregulyatsiyani buzadi, QT intervalini uzaytiradi va tutqanoqqa moyillikni oshiradi.",
+          "source": {
+            "author": "Eddleston et al.",
+            "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+            "page": "PMID 15566582; DOI 10.1186/cc2953 (Active cooling and sedation)"
+          }
+        },
+        {
+          "text": "Hayvon tajribalari diazepam markaziy asab tizimi shikastini va markaziy nafas yetishmovchiligini kamaytirishi mumkinligini ko‘rsatgan.",
+          "source": {
+            "author": "Eddleston et al.",
+            "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+            "page": "PMID 15566582; DOI 10.1186/cc2953 (Active cooling and sedation)"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Diazepam",
+            "items": [
+              "10 mg sekin vena ichiga",
+              "Sutkasiga 30–40 mg gacha",
+              "Sedativ; MNT shikastini kamaytirishi mumkin"
+            ]
+          },
+          {
+            "title": "Haloperidol",
+            "items": [
+              "Katta doza kerak bo‘lishi mumkin",
+              "Sedativ emas",
+              "Termoregulyatsiyani buzadi, QT uzayadi",
+              "Tutqanoqqa moyillik"
+            ]
+          }
+        ],
+        "caption": "Qo‘zg‘alishda dori tanlash"
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: nega qo‘zg‘algan bemorni karavotga bog‘lab qo‘yish xavfli?"
     },
     {
       "title": "O‘lim sabablari: nafas va yurak yetishmovchiligi",
@@ -1575,31 +1886,40 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Guruhlar bo‘yicha natija",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Yurak to‘xt.",
-          "O‘lim"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Gipoalb.: o‘lim",
+            "value": "45",
+            "unit": "%"
+          },
+          {
+            "label": "Gipoalb.: yurak to‘xt.",
+            "value": "32,5",
+            "unit": "%"
+          },
+          {
+            "label": "Normoalb.: o‘lim",
+            "value": "15,8",
+            "unit": "%"
+          },
+          {
+            "label": "Normoalb.: yurak to‘xt.",
+            "value": "14,3",
+            "unit": "%"
+          },
+          {
+            "label": "Giperalb.: o‘lim",
+            "value": "9,1",
+            "unit": "%"
+          },
+          {
+            "label": "Giperalb.: yurak to‘xt.",
+            "value": "9,1",
+            "unit": "%"
+          }
         ],
-        "rows": [
-          [
-            "Gipoalbuminemiya",
-            "32,5%",
-            "45%"
-          ],
-          [
-            "Normoalbuminemiya",
-            "14,3%",
-            "15,8%"
-          ],
-          [
-            "Giperalbuminemiya",
-            "9,1%",
-            "9,1%"
-          ]
-        ]
+        "caption": "Noh tadqiqoti: guruhlar bo‘yicha natija"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Albumin pasayishi sabab yoki oqibatmi? 2) Nega albumin va CRP o‘rtasida teskari bog‘liqlik bor? Doskada: uch guruh uchun o‘lim ustunli diagrammasini chizing. Tipik xato: bog‘liqlikni sabab deb talqin qilish. Manbaga ko‘ra, o‘lgan bemorlar guruhi 19,8% edi, ular yoshi katta va ko‘proq OFB ichgan."
     },
@@ -1697,7 +2017,16 @@
       "title": "Xulosa: bemorni davolang, zahar emas",
       "bullets": [
         {
-          "text": "Boshlang‘ich davo standart ABC (nafas yo‘li, nafas, qon aylanishi) bilan boshlanadi. O‘limning ko‘pi nafas yetishmovchiligidan bo‘lgani uchun nafas himoyasi va ventilyatsiya muhim.",
+          "text": "Boshlang‘ich davo standart ABC (nafas yo‘li, nafas, qon aylanishi) bilan boshlanadi.",
+          "source": {
+            "author": "Eddleston et al.",
+            "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
+            "page": "PMID 15566582"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘limning ko‘pi nafas yetishmovchiligidan bo‘lgani uchun nafas himoyasi va ventilyatsiya muhim.",
           "source": {
             "author": "Eddleston et al.",
             "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
@@ -1724,7 +2053,7 @@
           "uncertain": false
         },
         {
-          "text": "Statsionarda o‘lim 15–23%, ventilyatsiyadagilarda 50% dan yuqori bo‘lishi mumkin. Sabablari: nafas yetishmovchiligi, so‘ng yurak to‘xtashi, sepsis, gipovolemik shok.",
+          "text": "Statsionarda o‘lim 15–23%, ventilyatsiyadagilarda 50% dan yuqori bo‘lishi mumkin.",
           "source": {
             "author": "Ramadori et al.",
             "title": "Organophosphorus Poisoning: Acute Respiratory Distress Syndrome (ARDS) and Cardiac Failure as Cause of Death in Hospitalized Patients, International Journal of Molecular Sciences",
@@ -1734,21 +2063,21 @@
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 5–6 daq. Muhokama savollari: 1) ABC, atropin, nafas himoyasi va suyuqlik terapiyasi ketma-ketligini qanday tartiblaysiz? 2) Nima uchun qat’iy kuzatuv o‘limni kamaytirishi mumkin? Doskada chizish: 5 ta asosiy xulosa va o‘lim sabablari ro‘yxati. Tipik xato: oksim yoki laboratoriya (xolinesteraza) natijasini kutib, favqulodda davoni kechiktirish. Davo klinik belgilarga qarab boshlanadi.",
+      "teacher_notes": "Vaqt: 5–6 daq. Muhokama savollari: 1) ABC, atropin, nafas himoyasi va suyuqlik terapiyasi ketma-ketligini qanday tartiblaysiz? 2) Nima uchun qat’iy kuzatuv o‘limni kamaytirishi mumkin? Doskada chizish: 5 ta asosiy xulosa va o‘lim sabablari ro‘yxati. Tipik xato: oksim yoki laboratoriya (xolinesteraza) natijasini kutib, favqulodda davoni kechiktirish. Davo klinik belgilarga qarab boshlanadi. Sabablari: nafas yetishmovchiligi, so‘ng yurak to‘xtashi, sepsis, gipovolemik shok.",
       "extras": null
     }
   ],
   "mcq": [
     {
-      "question": "Bemorning ko‘z qorachig‘i nuqtadek torayган, badani ter bilan qoplangan, bronxoreya bor. Bu manzaraning asosiy sababi qaysi?",
+      "question": "Bemorning ko‘z qorachig‘i nuqtadek toraygan, badani ter bilan qoplangan, bronxoreya bor. Bu manzaraning asosiy sababi qaysi?",
       "options": [
         "Atsetilxolinning sinapsga yetarlicha ajralib chiqmasligi",
-        "Xolinergik retseptorlarning bevosita to‘liq bloklanishi",
         "Atsetilxolinesterazaning bloklanishi, atsetilxolin to‘planishi",
+        "Xolinergik retseptorlarning bevosita to‘liq bloklanishi",
         "Atsetilxolinesterazaning haddan tashqari faollashuvi"
       ],
-      "correct_index": 2,
-      "explanation": "Fosfororganik birikmalar (FOB) atsetilxolinesterazaning serin qoldig‘iga kovalent bog‘lanib, uni ingibitsiya qiladi. Atsetilxolin parchalanmaydi va signal uzatilishi davom etadi. Shundan xolinergik krizis kelib chiqadi: miyoz, ko‘p terlash, bronxoreya va bronxospazm. Variantlar A va D mexanizmga teskari. B retseptorlar bloklanishini ko‘rsatadi, bu atropin ta’siriga xos.",
+      "correct_index": 1,
+      "explanation": "Fosfororganik birikmalar (FOB) atsetilxolinesterazaning serin qoldig‘iga kovalent bog‘lanib, uni ingibitsiya qiladi. Atsetilxolin parchalanmaydi va signal uzatilishi davom etadi. Shundan xolinergik krizis kelib chiqadi: miyoz, ko‘p terlash, bronxoreya va bronxospazm. Atsetilxolinning kam ajralishi yoki esterazaning faollashuvi mexanizmga teskari; retseptorlar bloklanishi esa atropin ta’siriga xos.",
       "source": {
         "author": "Ramadori et al.",
         "title": "Organophosphorus Poisoning: Acute Respiratory Distress Syndrome (ARDS) and Cardiac Failure as Cause of Death in Hospitalized Patients, International Journal of Molecular Sciences",
@@ -1765,22 +2094,6 @@
       ],
       "correct_index": 0,
       "explanation": "Rivojlanayotgan mamlakatlarda o‘z-o‘zini zaharlashdagi letallik odatda 10–20 foiz. Ayrim pestitsidlarda u 50–70 foizgacha yetadi, lekin bu odatiy emas. G‘arb mamlakatlarida barcha sabablar bo‘yicha letallik 0,3 foizdan kam.",
-      "source": {
-        "author": "Eddleston et al.",
-        "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
-        "page": "PMID 15566582"
-      }
-    },
-    {
-      "question": "Olis qishloqda bemor FOB ichgan. Yaqin atrofda shifokor kam, antidot yo‘q, kasalxonaga yo‘l uzoq. Manbaga ko‘ra, quyidagilardan qaysi biri yuqori letallik sababi hisoblanmaydi?",
-      "options": [
-        "Mahalliy zaharlarning yuqori toksikligi",
-        "Bemorlarni uzoq masofaga tashishdagi qiyinchilik",
-        "Antidotlar va tayyorgarlikning yetishmasligi",
-        "Bemorlarga nisbatan shifokorlarning ortiqchaligi"
-      ],
-      "correct_index": 3,
-      "explanation": "Manbada yuqori letallik sabablari ko‘p omilli deyilgan. Ular: mahalliy zaharlarning yuqori toksikligi, bemorni uzoq masofaga tashishdagi qiyinchiliklar, bemorlar soniga nisbatan sog‘liqni saqlash xodimlarining kamligi, vosita, antidot va tayyorgarlik yetishmasligi. Shifokorlarning ortiqchaligi esa sabab emas, aksincha ularning yetishmasligi sabab bo‘ladi.",
       "source": {
         "author": "Eddleston et al.",
         "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
@@ -1808,10 +2121,10 @@
       "options": [
         "Piretroidlar, neonikotinoidlar, avermektinlar, triazinlar",
         "Xlororganik birikmalar, kumarinlar, triazollar, fenoksilar",
-        "Fosfatlar, fosfonatlar, fosfinatlar, fosforotioatlar",
-        "Bipiridillar, ditiokarbamatlar, strobilurinlar, glifosatlar"
+        "Bipiridillar, ditiokarbamatlar, strobilurinlar, glifosatlar",
+        "Fosfatlar, fosfonatlar, fosfinatlar, fosforotioatlar"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Fosforning organik kimyosi bo‘yicha uzoq yillik tadqiqotlar fosfatlar, fosfonatlar, fosfinatlar va fosforotioatlar guruhlarining paydo bo‘lishiga olib kelgan. Ularning ayrimlari pestitsid, ayrimlari jangovar asab agenti sifatida ishlatilgan. Boshqa qatorlardagi birikmalar FOB guruhiga kirmaydi.",
       "source": {
         "author": "Worek et al.",
@@ -1824,10 +2137,10 @@
       "options": [
         "Oksim atropinning muskarin retseptoriga ta’sirini bloklaydi",
         "Soman AChE bilan qaytar va zaif bog‘lanish hosil qiladi",
-        "Ingibitsiyalangan AChE tez “qarib”, oksim tiklay olmaydi",
-        "Soman faqat BChE ni ingibitsiyalaydi, AChE ga ta’sir qilmaydi"
+        "Soman faqat BChE ni ingibitsiyalaydi, AChE ga ta’sir qilmaydi",
+        "Ingibitsiyalangan AChE tez “qarib”, oksim tiklay olmaydi"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Soman bilan ingibitsiyalangan AChE da “qarish” (dealkillanish) juda tez kechadi, yarim davri taxminan 2 daqiqa. Qarigan ferment oksim bilan reaktivatsiya bo‘lmaydi, shuning uchun oksim davosi samarasiz bo‘ladi. Dimetil-FOB da esa spontan reaktivatsiya mumkin.",
       "source": {
         "author": "Worek et al.",
@@ -1893,22 +2206,6 @@
       ],
       "correct_index": 2,
       "explanation": "Nuqtadek qorachiq va ko‘p terlash FOB/karbamatdan zaharlanishni ko‘rsatadi va atropin berishga asos bo‘ladi. Besh asosiy belgi: miozis, ko‘p terlash, bronxoreya/bronxospazm tufayli havo kirishining yomonlashuvi, bradikardiya, gipotenziya. Laboratoriya tahlilini kutib bo‘lmaydi, dekontaminatsiya esa bemor stabillashgandan keyin qilinadi.",
-      "source": {
-        "author": "Eddleston et al.",
-        "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",
-        "page": "PMID 15566582; DOI 10.1186/cc2953"
-      }
-    },
-    {
-      "question": "FOB ichgan bemor shifoxonaga keldi. Dastlabki ko‘rikda alomatlari kam, ball bo‘yicha “yengil” deb baholandi. Eng to‘g‘ri qaror qaysi?",
-      "options": [
-        "Yengil holat deb hisoblab, kuzatuvni to‘xtatish",
-        "Bir marta baholab, qayta tekshiruvni kechiktirish",
-        "Tez og‘irlashishi mumkinligi uchun kuzatuvni davom ettirish",
-        "Tasdiqlangan shkala natijasiga to‘liq tayanib qolish"
-      ],
-      "correct_index": 2,
-      "explanation": "Mualliflar og‘irlik shkalalaridan foydalanmagan, chunki ularning birortasi mustaqil tasdiqlanmagan. FOB bilan zaharlangan bemorlar beqaror, yengil holat tez og‘irlashishi mumkin. “Yengil” ball shifokorni xotirjam qilib qo‘yishi xavfli. IPCS/EC/EAPCCT zaharlanish og‘irligi bali faqat retrospektiv qo‘llash uchun mo‘ljallangan.",
       "source": {
         "author": "Eddleston et al.",
         "title": "Early management after self-poisoning with an organophosphorus or carbamate pesticide – a treatment protocol for junior doctors, Critical Care",

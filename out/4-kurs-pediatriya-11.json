@@ -162,36 +162,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Zaharlanish turlari",
-        "nodes": [],
-        "header": [
-          "Tur",
-          "Niyat",
-          "Izoh"
+        "kind": "tree",
+        "root": "Zaharlanish turlari",
+        "children": [
+          {
+            "label": "Qotillik",
+            "items": [
+              "Qasddan",
+              "Kamdan-kam"
+            ]
+          },
+          {
+            "label": "O‘z joniga qasd",
+            "items": [
+              "Qasddan",
+              "Baxtsiz hodisadan keyin"
+            ]
+          },
+          {
+            "label": "Baxtsiz hodisa",
+            "items": [
+              "Tasodifan",
+              "Eng ko‘p uchraydi"
+            ]
+          },
+          {
+            "label": "Yatrogen",
+            "items": [
+              "Doza xatosi",
+              "Dori almashishi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Qotillik",
-            "Qasddan",
-            "Kamdan-kam uchraydi"
-          ],
-          [
-            "O‘z-o‘zini o‘ldirish",
-            "Qasddan",
-            "Baxtsiz hodisadan keyin ikkinchi"
-          ],
-          [
-            "Baxtsiz hodisa",
-            "Tasodifan",
-            "Eng ko‘p uchraydi"
-          ],
-          [
-            "Yatrogen",
-            "Tasodifan",
-            "Doza xatosi yoki dori almashishi"
-          ]
-        ]
+        "caption": "Voqea tafsiloti bo‘yicha"
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nima uchun ekspertizada baxtsiz hodisalar ko‘p uchraydi? Pediatriyada yatrogen xato qanday oqibatga olib kelishi mumkin (dozani kg vazn bo‘yicha hisoblash)? Doskada chizing: uch tur va ularni qasddan/tasodifan ustunlariga ajrating. Tipik xato: yatrogen zaharlanishni qasddan deb o‘ylash; u tasodifiy zaharlanishdir."
     },
@@ -270,36 +273,37 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Etiopatogenetik tasnif",
-        "nodes": [],
-        "header": [
-          "Mezon",
-          "Turlari",
-          "Misol"
+        "kind": "tree",
+        "root": "Etiopatogenetik tasnif",
+        "children": [
+          {
+            "label": "Sabab",
+            "items": [
+              "Tasodifiy yoki qasddan"
+            ]
+          },
+          {
+            "label": "Joy",
+            "items": [
+              "Ishlab chiqarish",
+              "Maishiy, yatrogen"
+            ]
+          },
+          {
+            "label": "Kirish yo‘li",
+            "items": [
+              "Peroral, ingalyatsion",
+              "Perkutan"
+            ]
+          },
+          {
+            "label": "Nozologik",
+            "items": [
+              "Zahar nomi bo‘yicha"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Sabab",
-            "Tasodifiy / qasddan",
-            "Dori o‘rniga boshqasini ichish"
-          ],
-          [
-            "Joy",
-            "Ishlab chiqarish, maishiy, yatrogen",
-            "Korxonadagi avariya"
-          ],
-          [
-            "Kirish yo‘li",
-            "Peroral, ingalyatsion, perkutan",
-            "Og‘iz, nafas yo‘li, teri"
-          ],
-          [
-            "Nozologik",
-            "Zahar yoki guruh nomi bo‘yicha",
-            "Metanol, is gazi, uyqu dorilari"
-          ]
-        ]
+        "caption": "Baizoldanov"
       },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: bolalarda maishiy zaharlanish qaysi kirish yo‘li bilan ko‘proq bo‘lishi mumkin? Nima uchun kirish yo‘lini bilish birinchi yordamga ta’sir qiladi? Doskada chizing: tasnifning uch tamoyilini daraxt shaklida. Tipik xato: ‘ishlab chiqarish’ va ‘maishiy’ zaharlanishni sabab bilan aralashtirish; bular joy mezoniga kiradi."
     },
@@ -335,17 +339,26 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Omillar sxemasi",
-        "nodes": [
-          "Zaharli modda",
-          "Organizm",
-          "Kirish yo‘li",
-          "Tashqi shart-sharoit",
-          "Zaharlanish oqibati"
+        "kind": "tree",
+        "root": "Zaharlanish omillari",
+        "children": [
+          {
+            "label": "Zaharli modda"
+          },
+          {
+            "label": "Organizm"
+          },
+          {
+            "label": "Kirish yo‘li"
+          },
+          {
+            "label": "Tashqi shart-sharoit",
+            "items": [
+              "Is gazi, alkogol, vodorod sulfid"
+            ]
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "To‘rt guruh omil"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega bir xil zahar turli odamlarda turlicha ta’sir qiladi? 2) Qaysi omillar asosiy, qaysilari qo‘shimcha? Doskada chizish: to‘rt omilni markaziy ’zaharlanish’ atrofida chizing. Tipik xato: tashqi muhitni barcha zaharlar uchun muhim deb o‘ylash; u faqat ayrim moddalarda ahamiyatli."
     },
@@ -423,7 +436,16 @@
           "uncertain": false
         },
         {
-          "text": "Genetika: xolinesteraza past bo‘lsa miorelaksantlar kuchayadi; glyukoza-6-fosfatdegidrogenaza (G6PD) yetishmasa sulfanilamidlarga sezgirlik oshadi. Idiosinkraziya ham genetik.",
+          "text": "Genetika: xolinesteraza past bo‘lsa miorelaksantlar kuchayadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "134"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Glyukoza-6-fosfatdegidrogenaza (G6PD) yetishmasa sulfanilamidlarga sezgirlik oshadi. Idiosinkraziya ham genetik.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -432,7 +454,38 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Organizm omillari",
+        "children": [
+          {
+            "label": "Tana massasi",
+            "items": [
+              "Doza 1 kg vaznga"
+            ]
+          },
+          {
+            "label": "Jins va holat",
+            "items": [
+              "Homiladorlikda sezgirlik ortadi"
+            ]
+          },
+          {
+            "label": "Salomatlik",
+            "items": [
+              "Yurak, jigar, buyrak kasalligi"
+            ]
+          },
+          {
+            "label": "Genetika",
+            "items": [
+              "Xolinesteraza, G6PD",
+              "Idiosinkraziya"
+            ]
+          }
+        ],
+        "caption": "Organizm"
+      },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega bolalar kattalarga nisbatan zaharga sezgirroq? 2) Genetik xususiyat dori tanlashga qanday ta’sir qiladi? Doskada chizish: organizm omillarini ’vazn, yosh/jins, salomatlik, genetika’ deb to‘rt shoxga bo‘ling. Tipik xato: jins bo‘yicha farq bor deb o‘ylash; manbada farq yo‘q, faqat homiladorlikda sezgirlik ortadi."
     },
     {
@@ -479,7 +532,7 @@
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega bola organizmi zaharga sezgirroq? 2) Doza nima uchun kg vaznga hisoblanadi? Doskada: ikki ustun chizing – «kichik vazn» va «qarshilik tizimi yetuk emas» – ikkalasi ham «yuqori sezgirlik»ka olib borsin. Tipik xato: talaba bola dozasini kattalar dozasini shunchaki bo‘lib hisoblash mumkin deb o‘ylaydi."
     },
     {
-      "title": "Tolerantlik, abstinensiya, idiosinkraziya, narkomaniya va toksikomaniya",
+      "title": "Tolerantlik, abstinensiya, idiosinkraziya, narkomaniya, toksikomaniya",
       "bullets": [
         {
           "text": "Takroriy qabul tolerantlik (o‘rganib qolish) hosil qiladi; giyohvandlikda ruhiy va jismoniy bog‘liqlik qo‘shiladi.",
@@ -510,36 +563,35 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Solishtirma jadval",
-        "nodes": [],
-        "header": [
-          "Tushuncha",
-          "Mohiyati",
-          "Misol"
+        "kind": "tree",
+        "root": "Tushunchalar",
+        "children": [
+          {
+            "label": "Tolerantlik",
+            "items": [
+              "Takroriy ta’sirda o‘rganib qolish"
+            ]
+          },
+          {
+            "label": "Idiosinkraziya",
+            "items": [
+              "Moddaga o‘ta sezgirlik (genetik)"
+            ]
+          },
+          {
+            "label": "Abstinensiya",
+            "items": [
+              "Qabul to‘xtaganda sindrom"
+            ]
+          },
+          {
+            "label": "Toksikomaniya",
+            "items": [
+              "Ro‘yxatda yo‘q modda"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Tolerantlik",
-            "Takroriy ta’sirda o‘rganib qolish",
-            "Uyqu dorilari, analgetiklar"
-          ],
-          [
-            "Idiosinkraziya",
-            "Moddaga o‘ta sezgirlik (genetik)",
-            "Antibiotiklar, xinin, yod, novokain"
-          ],
-          [
-            "Abstinensiya",
-            "Qabul qilinmaganda yuzaga keladigan sindrom",
-            "Narkomaniya, toksikomaniyada"
-          ],
-          [
-            "Toksikomaniya",
-            "Ro‘yxatda yo‘q modda suiste’moli",
-            "Texnik suyuqlik, maishiy kimyo"
-          ]
-        ]
+        "caption": "Solishtirma"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Abstinensiya sindromi nima uchun xavfli? 2) Idiosinkraziyada nega dozani oshirish kerak emas? Doskada: ikki tomonlama strelka – «tolerantlik: doza ↑, ta’sir ↓» va «idiosinkraziya: kichik doza, kuchli reaksiya». Tipik xato: tolerantlik va idiosinkraziyani bir xil tushuncha deb olish; narkomaniya va toksikomaniyani aralashtirish."
     },
@@ -556,7 +608,16 @@
           "uncertain": false
         },
         {
-          "text": "Yog‘da yaxshi eriydigan moddalar (masalan, fosfororganik) shikastlanmagan teri orqali ham so‘riladi. Suvda va yog‘da erimaydiganlar faqat mahalliy ta’sir qiladi.",
+          "text": "Yog‘da yaxshi eriydigan moddalar (masalan, fosfororganik) shikastlanmagan teri orqali ham so‘riladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "134-135"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Suvda va yog‘da erimaydiganlar faqat mahalliy ta’sir qiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -583,7 +644,43 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Kirish yo‘llari",
+        "children": [
+          {
+            "label": "Peroral",
+            "items": [
+              "Og‘iz"
+            ]
+          },
+          {
+            "label": "Ingalyatsion",
+            "items": [
+              "Nafas yo‘llari; jigardan o‘tmaydi"
+            ]
+          },
+          {
+            "label": "Perkutan",
+            "items": [
+              "Teri orqali"
+            ]
+          },
+          {
+            "label": "To‘g‘ri ichak, qin",
+            "items": [
+              "Jigardan o‘tmaydi"
+            ]
+          },
+          {
+            "label": "Platsenta",
+            "items": [
+              "Onadan homilaga"
+            ]
+          }
+        ],
+        "caption": "Zahar kirish yo‘llari"
+      },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega nafas yo‘li orqali kirgan zahar og‘iz orqali kirganidan kuchliroq bo‘lishi mumkin? 2) Bolalarda teri orqali zaharlanish xavfi nimaga bog‘liq? Doskada: sxema – kirish yo‘llari → qon → jigar/jigarsiz yo‘l, jigardan o‘tmaydigan yo‘llarni alohida belgilang. Tipik xato: barcha yo‘llarni bir xil kuchli deb hisoblash va eruvchanlikning rolini unutish."
     },
     {
@@ -618,31 +715,22 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Zaharlanish davrlari",
-        "nodes": [],
-        "header": [
-          "Davr",
-          "Davomiyligi",
-          "Misol"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "O‘tkir",
+            "text": "Daqiqalardan bir sutkagacha"
+          },
+          {
+            "title": "O‘rtacha o‘tkir",
+            "text": "1-2 haftagacha"
+          },
+          {
+            "title": "Surunkali",
+            "text": "Uzoq muddat, qayta-qayta"
+          }
         ],
-        "rows": [
-          [
-            "O‘tkir",
-            "Daqiqalardan bir sutkagacha",
-            "Sianid kislotasi, is gazi"
-          ],
-          [
-            "O‘rtacha o‘tkir",
-            "1-2 haftagacha",
-            "Simob dixloridi (sulema)"
-          ],
-          [
-            "Surunkali",
-            "Uzoq muddat, qayta-qayta tushishi",
-            "Tetraetilqo‘rg‘oshin, yadoximikatlar"
-          ]
-        ]
+        "caption": "Zaharlanish davrlari"
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: (1) nega yopiq, issiq va nam xona is gazi xavfini oshiradi? (2) zaharlanish qanchalik tez qonga so‘rilsa, davr shunchalik qisqa bo‘ladimi? Doskada: uch ustunli davrlar jadvalini chizdiring. Tipik xato: surunkali zaharlanishni o‘tkir deb o‘ylash, o‘lim esa haftalar yoki oylardan keyin ham bo‘lishi mumkinligini unutish. Diqqat: Iskandarov (289) past harorat organizmni sovitib, reaktivligini pasaytirgani uchun alkogol zaharlanishiga sabab bo‘lishi mumkinligini ham yozadi. G‘iyosov esa past harorat is gazi va alkogol ta’sirini susaytiradi, deydi. Manbalar shu jihatdan farq qiladi, talabalar bilan muhokama qiling."
     },
@@ -721,15 +809,22 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Diagnostika bosqichlari",
-        "nodes": [
-          "Voqea joyi, tibbiy hujjatlar",
-          "Murdani tashqi va ichki ko‘rish",
-          "Laboratoriya tekshiruvlari"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Voqea joyi",
+            "text": "Ashyoviy dalil, tibbiy hujjatlar"
+          },
+          {
+            "title": "2. Murda ko‘rigi",
+            "text": "Teri, dog‘ rangi, hid, qotish"
+          },
+          {
+            "title": "3. Laboratoriya",
+            "text": "Gistologik, sud-kimyoviy"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Diagnostika bosqichlari"
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: nima uchun funksional zaharlarda tibbiy hujjatlardagi klinik ma’lumotlar muhim dalil bo‘ladi? Doskada: uch bosqichli zanjirni chizib, har biriga bittadan misol yozdiring. Tipik xato: laboratoriya natijasini yagona isbot deb olish. Iskandarov (298) ko‘rsatishicha, murdada zaharning topilishi har doim ham zaharlanishni isbotlamaydi, chunki zahar murdaga o‘lgandan keyin ham o‘tishi mumkin. Shu sababli barcha bosqichlar yig‘indisi baholanadi."
     },
@@ -797,7 +892,7 @@
       "title": "Laboratoriya tekshiruvi va material olish qoidalari",
       "bullets": [
         {
-          "text": "Laboratoriya tekshiruvlari ichida eng ko‘p sud-kimyoviy tekshiruv o‘tkaziladi. Zahar ma’lum bo‘lsa, namuna “uch nuqta” qoidasi bilan olinadi: zahar kirgan, ta’sir etgan va chiqqan joydan.",
+          "text": "Laboratoriya tekshiruvlari ichida eng ko‘p sud-kimyoviy tekshiruv o‘tkaziladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -806,7 +901,16 @@
           "uncertain": false
         },
         {
-          "text": "Zahar noma’lum bo‘lsa: miyaning 1/3, o‘pkaning 1/4, jigarning 1/3 o‘t qopi bilan, buyrak, oshqozon massasi, ichak, 100–200 ml qon olinadi. Chuqur chirishda 1,5–2,0 kg “o‘rta sinama” olinadi.",
+          "text": "Zahar ma’lum bo‘lsa, namuna “uch nuqta” qoidasi bilan olinadi: zahar kirgan, ta’sir etgan va chiqqan joydan.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "136"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zahar noma’lum bo‘lsa: miyaning 1/3, o‘pkaning 1/4, jigarning 1/3 o‘t qopi bilan, buyrak, oshqozon massasi, ichak, 100–200 ml qon olinadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -824,7 +928,7 @@
           "uncertain": false
         },
         {
-          "text": "Gistologik usul gemolitik, og‘ir metall va o‘yuvchi zaharlarda muhim. Botanik usul o‘simlik zaharlarida, biokimyoviy usul xolinesteraza o‘zgarishida qo‘l keladi.",
+          "text": "Gistologik usul gemolitik, og‘ir metall, o‘yuvchi zaharlarda muhim. Botanik usul o‘simlik zaharlarida, biokimyoviy usul xolinesteraza o‘zgarishida qo‘l keladi.",
           "source": {
             "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
             "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
@@ -833,7 +937,39 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Material olish",
+        "children": [
+          {
+            "label": "Zahar ma’lum",
+            "items": [
+              "“Uch nuqta” qoidasi"
+            ]
+          },
+          {
+            "label": "Zahar noma’lum",
+            "items": [
+              "Miya 1/3, o‘pka 1/4",
+              "Jigar 1/3, buyrak, ichak",
+              "100–200 ml qon"
+            ]
+          },
+          {
+            "label": "Chuqur chirish",
+            "items": [
+              "1,5–2,0 kg o‘rta sinama"
+            ]
+          },
+          {
+            "label": "Taqiq",
+            "items": [
+              "Formalin, spirtda qotirmang"
+            ]
+          }
+        ],
+        "caption": "Namuna olish qoidalari"
+      },
       "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) “Uch nuqta” qoidasi nima uchun kerak? 2) Nega materialni formalin yoki spirt bilan qotirib bo‘lmaydi? Doskada: zahar og‘iz orqali kirib jigarga ta’sir etib siydik bilan chiqsa, qaysi uch ob’ekt olinishini chizing. Tipik xato: zahar noma’lum bo‘lganda faqat oshqozon massasini yuborish. Tezkor savol: chuqur chirishda “o‘rta sinama” necha kg olinadi?"
     },
     {
@@ -868,17 +1004,30 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Tahlil bosqichlari",
-        "nodes": [
-          "Ob’ektni qabul qilish",
-          "Zaharni ajratish",
-          "Aniqlash va miqdorini topish",
-          "Natijani talqin qilish",
-          "Xulosa tuzish"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Qabul qilish",
+            "text": "Ob’ektni qabul qilish"
+          },
+          {
+            "title": "2. Ajratish",
+            "text": "Zaharni ajratish"
+          },
+          {
+            "title": "3. Aniqlash",
+            "text": "Aniqlash va miqdorini topish"
+          },
+          {
+            "title": "4. Talqin",
+            "text": "Natijani talqin qilish"
+          },
+          {
+            "title": "5. Xulosa",
+            "text": "Xulosa tuzish"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Tahlil bosqichlari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Yolg‘on musbat va yolg‘on manfiy natija qanday sabablarga bog‘liq? 2) Nega dastlabki sinov musbat bo‘lsa, xulosa chiqarib bo‘lmaydi? Doskada: 5 bosqichli zanjirni chizib, har bosqichda xato manbasini yozing. Tipik xato: dastlabki sinovning musbat natijasini zaharlanish isboti deb olish. Diqqat: aniqlash va talqin qilish bosqichlarini aralashtirmang."
     },
@@ -1111,36 +1260,35 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Zaharlar tasnifi (soddalashtirilgan)",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Turi",
-          "Vakillar"
+        "kind": "tree",
+        "root": "Zaharlar tasnifi",
+        "children": [
+          {
+            "label": "Mahalliy",
+            "items": [
+              "Kislota, ishqor, yod tindirmasi"
+            ]
+          },
+          {
+            "label": "Destruktiv",
+            "items": [
+              "Simob, qo‘rg‘oshin, margimush, fosfor"
+            ]
+          },
+          {
+            "label": "Qon (gemotrop)",
+            "items": [
+              "Is gazi, metgemoglobin hosil qiluvchi"
+            ]
+          },
+          {
+            "label": "Funksional",
+            "items": [
+              "Sianid, spirt, strixnin, nikotin"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Mahalliy ta’sir",
-            "O‘yuvchi",
-            "Kislotalar, ishqorlar, yod tindirmasi"
-          ],
-          [
-            "Umumiy (rezorbtiv)",
-            "Destruktiv",
-            "Simob, qo‘rg‘oshin, margimush, fosfor"
-          ],
-          [
-            "Umumiy (rezorbtiv)",
-            "Qon (gemotrop)",
-            "Is gazi, metgemoglobin hosil qiluvchilar"
-          ],
-          [
-            "Umumiy (rezorbtiv)",
-            "Funksional",
-            "Sianidlar, spirtlar, strixnin, nikotin"
-          ]
-        ]
+        "caption": "Soddalashtirilgan"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega o‘yuvchi zaharlar alohida guruh? 2) Funksional zaharlarda murdada nega aniq o‘zgarish topilmasligi mumkin? Doskada: tasnif daraxtini (mahalliy/umumiy → kenja guruhlar) chizdiring. Tipik xato: sirka kislotasini faqat o‘yuvchi deb hisoblash; u gemolitik (qon) ta’sir ham ko‘rsatadi."
     },
@@ -1200,7 +1348,7 @@
           "uncertain": false
         },
         {
-          "text": "Nekroz joyida quruq, zich, qo‘ng‘ir-qora strup hosil bo‘ladi. Qonga so‘rilganda atsidoz rivojlanadi. Qizilo‘ngach va oshqozonda kuchli og‘riq, qonli qusuq bo‘ladi.",
+          "text": "Nekroz joyida quruq, zich, qo‘ng‘ir-qora strup hosil bo‘ladi. Qonga so‘rilganda atsidoz rivojlanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1209,7 +1357,7 @@
           "uncertain": false
         },
         {
-          "text": "Dastlabki soatlarda o‘lim shok, asfiksiya yoki ichki qon ketishdan bo‘ladi. Kech muddatda pnevmoniya, jigar-buyrak yetishmovchiligi, mediastenit yoki peritonitdan.",
+          "text": "Qizilo‘ngach va oshqozonda kuchli og‘riq, qonli qusuq bo‘ladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1218,7 +1366,16 @@
           "uncertain": false
         },
         {
-          "text": "Organik kislotalar kuchsiz dissotsiatsiyalanadi, butun molekula bilan yuzaki nekroz beradi. Letal doza konsentratsiyaga bog‘liq: sulfat va nitrat kislotada 5–10 ml.",
+          "text": "Dastlabki soatlarda o‘lim shok, asfiksiya yoki ichki qon ketishdan. Kech muddatda pnevmoniya, jigar-buyrak yetishmovchiligi, mediastenit yoki peritonitdan.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "141"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Organik kislotalar kuchsiz dissotsiatsiyalanadi, butun molekula bilan yuzaki nekroz beradi. Letal doza: sulfat va nitrat kislotada 5–10 ml.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1299,7 +1456,7 @@
       "title": "Sirka kislotasi va fenol bilan zaharlanish",
       "bullets": [
         {
-          "text": "Sirka kislotasida mahalliy ta’sirdan tashqari gemolitik ta’sir kuchli: gemoglobinuriyali nefroz o‘tkir buyrak yetishmovchiligiga olib keladi, jigarda nekroz bo‘ladi.",
+          "text": "Sirka kislotasida mahalliy ta’sirdan tashqari gemolitik ta’sir kuchli.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1308,7 +1465,16 @@
           "uncertain": false
         },
         {
-          "text": "Fenol (karbol kislotasi) butun molekulasi bilan ta’sir etuvchi kuchli nerv-protoplazmatik zahar. Tez orada markaziy nerv tizimi (MNT) shikastlanib, koma rivojlanadi.",
+          "text": "Gemoglobinuriyali nefroz o‘tkir buyrak yetishmovchiligiga olib keladi, jigarda nekroz bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "142"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Fenol (karbol kislotasi) butun molekulasi bilan ta’sir etuvchi kuchli nerv-protoplazmatik zahar. Tez orada MNT shikastlanib, koma rivojlanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1335,7 +1501,30 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Sirka kislotasi",
+            "items": [
+              "Mahalliy kuyish + kuchli gemoliz",
+              "Gemoglobinuriyali nefroz",
+              "Jigarda nekroz",
+              "Strup pushti-qizg‘ish"
+            ]
+          },
+          {
+            "title": "Fenol (karbol)",
+            "items": [
+              "Nerv-protoplazmatik zahar",
+              "MNT shikasti, koma",
+              "Og‘iz, nafas yo‘li, teri orqali",
+              "Siydik xingidrdan yashil-jigarrang"
+            ]
+          }
+        ],
+        "caption": "Ikki zahar"
+      },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Sirka kislotasida buyrak nega zararlanadi (gemoliz → gemoglobinuriya)? 2) Fenol bilan zaharlanishda siydik rangi qanday ahamiyatga ega? Doskada: sirka kislotasi uchun ‘gemoliz → gemoglobinuriyali nefroz → buyrak yetishmovchiligi’ zanjirini chizing. Tipik xato: oshxona sirkasi va sirka essensiyasini bir xil xavfli deb hisoblash; hal qiluvchi omil konsentratsiya."
     },
     {
@@ -1370,36 +1559,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Kislota va ishqor farqi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Kislota",
-          "Ishqor"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Kislota",
+            "items": [
+              "Erkin vodorod ioni",
+              "Quruq (koagulyatsion) nekroz",
+              "Quruq, zich strup",
+              "Nordon gematin, qo‘ng‘ir-qora"
+            ]
+          },
+          {
+            "title": "Ishqor",
+            "items": [
+              "Gidroksil ioni",
+              "Ho‘l (kollikvatsion) nekroz",
+              "Yumshoq, sirpanuvchan",
+              "Ishqoriy gematin, qo‘ng‘ir"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Ta’sir qiluvchi ion",
-            "Erkin vodorod ioni",
-            "Gidroksil ioni"
-          ],
-          [
-            "Nekroz turi",
-            "Quruq (koagulyatsion)",
-            "Ho‘l (kollikvatsion)"
-          ],
-          [
-            "Zararlangan joy",
-            "Quruq, zich strup",
-            "Yumshoq, sirpanuvchan"
-          ],
-          [
-            "Gematin",
-            "Nordon gematin, qo‘ng‘ir-qora",
-            "Ishqoriy gematin, qo‘ng‘ir"
-          ]
-        ]
+        "caption": "Kislota va ishqor farqi"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: nega ishqorda to‘qima yumshoq, kislotada zich bo‘ladi? Nashatir spirtini alkogol bilan birga ichish nega xavfli? Doskada: kislota va ishqor ustunli solishtirma jadvalni chizdiring. Diqqat: koagulyatsion (quruq) nekroz ≠ kollikvatsion (ho‘l) nekroz. Tipik xato: talabalar ammoniy gidroksidni kaliy va natriy gidroksid kabi kuchli mahalliy ta’sirli deb o‘ylaydi."
     },
@@ -1599,7 +1780,7 @@
       "title": "Funksional zaharlar, narkotiklar va alkogol",
       "bullets": [
         {
-          "text": "Funksional zaharlar markaziy nerv tizimini (MNT) falajlaydi (sianid, fosfororganik birikmalar), qo‘zg‘atadi (strixnin, kokain) yoki so‘ndiradi (etil spirt, barbituratlar).",
+          "text": "Funksional zaharlar MNTni falajlaydi (sianid, fosfororganik), qo‘zg‘atadi (strixnin, kokain) yoki so‘ndiradi (etil spirt, barbituratlar).",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1697,6 +1878,160 @@
         ]
       },
       "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Issiq va nam havoda nega qizib ketish xavfi ortadi? 2) Elektr belgisi qanday ko‘rinadi? Doskada: omil → xos belgi jadvalini chizdiring. Tipik xato: “bokschi” va “kalachik” holatlarini aralashtirish. Diqqat: bu manbada faqat test savollari bor, to‘liq bayon va javoblar kaliti yo‘q. Shuning uchun bandlar test mazmunidan olingan, “uncertain” deb belgilangan."
+    },
+    {
+      "title": "Yuqori harorat: issiq urishi va kuyishlar",
+      "bullets": [
+        {
+          "text": "Issiq urishi yuqori harorat va namlik, shamollatish yo‘qligi, og‘ir mehnatda rivojlanadi; tana harorati +41…+42 °C gacha ko‘tariladi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "118"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Quyosh urishi quyosh nurining boshga uzoq ta’siridan: bosh miya termoregulyatsiyasi buziladi, bosh og‘rig‘i, qusish, bezovtalik, talvasa.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "118-119"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Issiq va quyosh urishidan o‘limning xos belgisi yo‘q: miya to‘laqonligi va shishi, mayda qon quyilishlar.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "119"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Issiq va quyosh urishi tashxisi faqat sud-tibbiy ochish ma’lumotiga emas, balki hodisa holatlariga va boshqa o‘lim sabablarini istisno qilishga tayanadi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "119"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Termik kuyish teri harorati +50 °C dan oshganda boshlanadi; kuyish 4 darajaga bo‘linadi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "119"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Kuyish darajalari",
+        "children": [
+          {
+            "label": "I daraja",
+            "items": [
+              "Mahalliy shish, giperemiya"
+            ]
+          },
+          {
+            "label": "II daraja",
+            "items": [
+              "Epidermis ko‘chishi, pufaklar"
+            ]
+          },
+          {
+            "label": "III(a) daraja",
+            "items": [
+              "Teri sosochkali qatlamgacha nekrozi"
+            ]
+          },
+          {
+            "label": "III(b) daraja",
+            "items": [
+              "Teri barcha qatlamlari"
+            ]
+          },
+          {
+            "label": "IV daraja",
+            "items": [
+              "Teri va ostidagi to‘qimalar nekrozi"
+            ]
+          }
+        ],
+        "caption": "Kuyish chuqurligi bo‘yicha"
+      },
+      "teacher_notes": "Manba Rossiya darsligi; OCR matni, bet raqami skan-yoyilma bo‘yicha."
+    },
+    {
+      "title": "Past harorat: umumiy sovishdan o‘lim",
+      "bullets": [
+        {
+          "text": "Sovishga nam havo, kuchli shamol, yetarsiz kiyim, charchash, mastlik va uyqu moyillik yaratadi; kuchli holsizlik, sonolat, ongning xiralashuvi kuzatiladi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "121"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Joyida: «embrion» pozasi, burun-og‘iz va kiprikda qirov, muzlagan o‘rin, pushti murda dog‘lari, moyaklarning chov kanaliga tortilishi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "121"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ichki tekshiruvda oshqozon shilliq qavatida Vishnevskiy dog‘lari va jigar-buyrak jomida Fabrikantov belgisi uchraydi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "121"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ichki a’zolar to‘laqonligi, miya shishi, jigar, yurak va mushaklarda glikogen kamayishi; bevosita sabab ko‘pincha to‘qima gipoksiyasi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "121-122"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Joyida (tashqi)",
+            "items": [
+              "Embrion pozasi",
+              "Burun, og‘iz, kiprikda qirov",
+              "Muzlagan o‘rin",
+              "Pushti murda dog‘lari"
+            ]
+          },
+          {
+            "title": "Ichki tekshiruv",
+            "items": [
+              "Vishnevskiy dog‘lari (oshqozon)",
+              "Fabrikantov belgisi (buyrak jomi)",
+              "Ichki a’zolar to‘laqonligi",
+              "Glikogenning kamayishi"
+            ]
+          }
+        ],
+        "caption": "Sovishdan o‘lim belgilari"
+      },
+      "teacher_notes": "Vishnevskiy dog‘lari sepsis, shok va alkogolda ham uchraydi, shuning uchun majmua baholanadi."
     },
     {
       "title": "Voqea tahlili 4 va yakuniy tezkor savol",
@@ -2015,10 +2350,10 @@
       "options": [
         "Asosan mahalliy ta’sir etuvchi zaharlar",
         "Gemotrop (qon) zaharlari",
-        "Destruktiv zaharlar",
-        "Funksional zaharlar"
+        "Funksional zaharlar",
+        "Destruktiv zaharlar"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Simob, qo‘rg‘oshin, rux, margimush, fosfor va ularning birikmalari destruktiv zaharlar hisoblanadi. Ular qonga so‘rilgach, ichki a’zolarda to‘qima strukturasining buzilishiga olib keladi. Bu guruh asosan umumiy (rezorbtiv) ta’sir etuvchi zaharlarga kiradi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2077,12 +2412,12 @@
     {
       "question": "Kimyoviy laboratoriya xodimida ‘Parij yashili’ kabi margimush birikmalari bilan zaharlanishga shubha qilindi. Zahar qonga so‘rilgach, asosiy biokimyoviy ta’siri qaysi?",
       "options": [
-        "Xolinesteraza bloklanib, atsetilxolin to‘planadi",
-        "Karboksigemoglobin hosil bo‘lib, kislorod tashilmaydi",
         "Fermentlarning sulfgidril guruhlari bloklanadi",
+        "Karboksigemoglobin hosil bo‘lib, kislorod tashilmaydi",
+        "Xolinesteraza bloklanib, atsetilxolin to‘planadi",
         "Sitoxromoksidaza uch valentli temirda qotib qoladi"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "explanation": "Margimush birikmalari qonga so‘rilgach to‘qima fermentlarining sulfgidril guruhlarini bloklaydi. Natijada modda almashinuvi buziladi. Xolinesterazani bloklash fosfororganik birikmalarga, karboksigemoglobin is gaziga xos.",
       "source": {
         "author": "G‘iyosov Z.A.",

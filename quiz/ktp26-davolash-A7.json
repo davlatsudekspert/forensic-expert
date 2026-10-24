@@ -1,0 +1,582 @@
+{
+ "topic_id": "ktp26-davolash-A7",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Zaharlanishlar. Zahar haqida tushuncha. Zaharli moddalarning tasnifi. Zaharlanish hollarida sud-tibbiy ekspertiza…",
+  "ru": "Zaharlanishlar. Zahar haqida tushuncha. Zaharli moddalarning tasnifi. Zaharlanish hollarida sud-tibbiy ekspertiza…",
+  "en": "Zaharlanishlar. Zahar haqida tushuncha. Zaharli moddalarning tasnifi. Zaharlanish hollarida sud-tibbiy ekspertiza…"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "ktp26-davolash-A7-q01",
+   "question_i18n": {
+    "uz": "Zahar tushunchasi haqida qaysi ibora to‘g‘ri?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Mutlaq zahar mavjud",
+     "Zahar doza bilan bog‘liq emas",
+     "Zahar faqat sanoat kimyoviy moddasi",
+     "Zahar nisbiy tushuncha; moddani zaharga doza aylantiradi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Zahar nisbiy tushuncha; Paratselsga ko‘ra moddani doriga yoki zaharga faqat doza aylantiradi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "132"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A7-q02",
+   "question_i18n": {
+    "uz": "Ekspertiza ma’lumotlariga ko‘ra zaharlanishning qaysi turi eng ko‘p uchraydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qotillik",
+     "Davlat tomonidan jazolash",
+     "O‘z-o‘zini o‘ldirish",
+     "Baxtsiz hodisa"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Aksariyat holatlarni baxtsiz hodisalar tashkil etadi; keyingi o‘rinda o‘z-o‘zini o‘ldirish, qotillik kamdan-kam."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "132"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A7-q03",
+   "question_i18n": {
+    "uz": "Zaharlanish vujudga kelishida ahamiyatli bo‘lgan to‘rt guruh omil qaysilar?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Doza, vaqt, joy, shaxs",
+     "Yosh, jins, kasb, millat",
+     "Zaharli modda, rang, hid, ta’m",
+     "Zaharli modda, organizm, kirish yo‘li, tashqi sharoit"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Manbada: zaharli modda, organizm, zaharning kirish yo‘li va ta’sir vaqtidagi tashqi shart-sharoit."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "132"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A7-q04",
+   "question_i18n": {
+    "uz": "Zahar qaysi yo‘l bilan kirganda jigardan o‘tmasdan qonga so‘rilib, kuchliroq ta’sir ko‘rsatadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Oshqozon orqali",
+     "Ingichka ichak orqali",
+     "Nafas yo‘llari orqali",
+     "Faqat teri orqali"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Nafas yo‘llari, to‘g‘ri ichak va qin shilliq qavatidan so‘rilgan moddalar jigar orqali o‘tmaydi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "135"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A7-q05",
+   "question_i18n": {
+    "uz": "Zaharlanishning sud-tibbiy diagnostikasi nechta bosqichda to‘planadigan dalillarga asoslanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Uchta",
+     "Ikkita",
+     "To‘rtta",
+     "Beshta"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Uch bosqich: hodisa joyi va hujjatlar, murda tekshiruvi, laboratoriya tekshiruvlari."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "135"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A7-q06",
+   "question_i18n": {
+    "uz": "Yorqin olcha rangli murda dog‘lari qaysi zaharlanishga xos?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Is gazi",
+     "Methemoglobin hosil qiluvchilar",
+     "Sianidlar",
+     "Gemoliz chaqiruvchilar"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Sianidlarda yorqin olcha rang; is gazida pushti, methemoglobin hosil qiluvchilarda jigarrang."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "136"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A7-q07",
+   "question_i18n": {
+    "uz": "Toksikologik namunalar «uch nuqta» qoidasi bo‘yicha qaysi joylardan olinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Boshdan, tanadan, oyoqdan",
+     "Faqat qondan",
+     "Faqat oshqozondan",
+     "Zahar kirgan, ta’sir etgan va chiqqan joylardan"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Namunalar zahar kirgan, asosan ta’sir etgan va organizmdan chiqqan joylardan olinadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "136"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A7-q08",
+   "question_i18n": {
+    "uz": "Quyidagilardan qaysi biri asosan mahalliy ta’sir etuvchi zahar?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Sulema",
+     "Is gazi",
+     "Sirka kislotasi",
+     "Strixnin"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Mahalliy guruhga kislotalar, ishqorlar, vodorod peroksid, formaldegid va boshqalar kiradi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "138"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A7-q09",
+   "question_i18n": {
+    "uz": "Kislotalar bilan zaharlanganda qanday nekroz vujudga keladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Koagulyatsion (quruq)",
+     "Kolliqvatsion",
+     "Yog‘li nekroz",
+     "Nekroz bo‘lmaydi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Erkin vodorod ionlari to‘qimani suvsizlantirib, oqsilni ivitadi, quruq nekroz hosil bo‘ladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "140"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A7-q10",
+   "question_i18n": {
+    "uz": "Sulema bilan zaharlanishda yo‘g‘on ichakdagi difteritik yallig‘lanish qanday ataladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Sulema dizenteriyasi",
+     "Sulema buyragi",
+     "Simob stomatiti",
+     "Paralitik tip"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Yo‘g‘on ichakdagi difteritik yallig‘lanish «sulema dizenteriyasi», buyrakdagi o‘zgarish «sulema buyragi» deyiladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "146"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A7-q11",
+   "question_i18n": {
+    "uz": "Paratselsning fikriga ko‘ra moddani doriga yoki zaharga nima aylantiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Rangi",
+     "Hidi",
+     "Doza",
+     "Agregat holati"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Paratsels: moddani doriga yoki zaharga faqat doza aylantiradi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "132"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A7-q12",
+   "question_i18n": {
+    "uz": "«Uch nuqta» qoidasi bo‘yicha toksikologik tekshiruv uchun namuna qachon va qayerdan olinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Zahar noma’lum bo‘lsa: faqat oshqozon ichidagi massadan",
+     "Zahar ma’lum bo‘lsa: faqat qon va siydikdan",
+     "Zahar ma’lum bo‘lsa: faqat kirgan joyidan",
+     "Zahar ma’lum bo‘lsa: kirgan, ta’sir etgan va chiqqan joylardan"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Zahar ma’lum bo‘lsa, obyektlar «uch nuqta» qoidasi bo‘yicha olinadi: zahar kirgan, asosan ta’sir etgan va organizmdan chiqqan joylardan."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "136"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A7-q13",
+   "question_i18n": {
+    "uz": "Manba noma’lum bo‘lsa, toksikologik tekshiruv uchun qancha qon olinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "5 ml",
+     "100–200 ml",
+     "1 litr",
+     "Qon olinmaydi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Manba noma’lum bo‘lsa miyaning 1/3, o‘pkaning 1/4, jigarning 1/3 qismi, ichak va 100–200 ml qon olinadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "136"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A7-q14",
+   "question_i18n": {
+    "uz": "Toksikokinetika nimani o‘z ichiga oladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat zaharning chiqarilishi",
+     "Kirishi, taqsimlanishi, metabolizmi va chiqarilishi",
+     "Faqat jigar funksiyasi",
+     "Faqat zahar tuzilishi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Toksikokinetika — zaharning kirishi, taqsimlanishi, metabolizmi va chiqarilishi jarayonlari majmui."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "136"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A7-q15",
+   "question_i18n": {
+    "uz": "Qaysi spirt metabolizmida formaldegid hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Etil spirti",
+     "Metil spirti",
+     "Etilenglikol",
+     "Izopropil spirti"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Metanol, etanol, etilenglikol oksidlanganda ancha kuchli toksik moddalar hosil bo‘ladi: metil spirtidan formaldegid."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "137"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A7-q16",
+   "question_i18n": {
+    "uz": "Mahalliy ta’sir etuvchi zaharlar kontakt joyida nima chaqiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Nekroz",
+     "Falaj",
+     "Gemoliz",
+     "Koma"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Mahalliy zaharlar (kislota, ishqor, H2O2, formaldegid, KMnO4, yod) kontakt joyida nekroz chaqiradi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "138"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A7-q17",
+   "question_i18n": {
+    "uz": "Kislotalardan zaharlanganda dastlabki soatlarda o‘lim sababi qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Pnevmoniya",
+     "Shok, asfiksiya va ichki qon ketish",
+     "Peritonit",
+     "Jigar yetishmovchiligi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Dastlabki soatlarda o‘lim sababi — shok, asfiksiya va ichki qon ketish; kech muddatda pnevmoniya, yetishmovchilik, peritonit."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "141"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A7-q18",
+   "question_i18n": {
+    "uz": "Ishqorlar to‘qimada qanday nekroz chaqiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Koagulyatsion (quruq)",
+     "Kolliqvatsion",
+     "Yog‘li",
+     "Gangrenoz"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Ishqorlar oqsillarni suyultiradi (kolliqvatsion nekroz) va yog‘larni sovunlaydi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "143"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A7-q19",
+   "question_i18n": {
+    "uz": "Qo‘rg‘oshin bilan zaharlanishda qaysi tizim zararlanishi jiddiyroq?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ichak",
+     "Buyrak",
+     "Nerv tizimi",
+     "Teri"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Qo‘rg‘oshinda ichak va buyrak zararlanishi kuchsiz, nerv tizimi zararlanishi (alahsirash, talvasa, falaj) jiddiyroq."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "147"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-A7-q20",
+   "question_i18n": {
+    "uz": "Margimush bilan zaharlanishning oshqozon-ichak tipida o‘lim qachon yuz beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1–2-kunda",
+     "1 oydan keyin",
+     "Darhol",
+     "Bir yildan keyin"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Oshqozon-ichak tipi: metall ta’mi, qusish, vabosimon ich ketishi; o‘lim 1–2-kunda."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "148"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "G‘iyosov Z.A.",
+   "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti"
+  }
+ ]
+}

@@ -1,0 +1,582 @@
+{
+ "topic_id": "ktp26-u-23",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Mexanikomillarning ta’sir etish sharoitlari. Kesma, sanchma, kesma-sanchma va Chopma jarohatlarning morfologik…",
+  "ru": "Mexanikomillarning ta’sir etish sharoitlari. Kesma, sanchma, kesma-sanchma va Chopma jarohatlarning morfologik…",
+  "en": "Mexanikomillarning ta’sir etish sharoitlari. Kesma, sanchma, kesma-sanchma va Chopma jarohatlarning morfologik…"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "ktp26-u-23-q01",
+   "question_i18n": {
+    "uz": "Shaxsda a’zo va to‘qimalarning anatomik butunligi buzilgan, sababi esa tashqi emas, ichki ta’sirdir. Bu holat qanday ataladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Tan jarohati, chunki butunlik buzilgan",
+     "Kasallik, chunki sabab ichki ta’sirdir",
+     "Murakkab jarohat, chunki to‘qima shikastlangan",
+     "Funksional jarohat, chunki a’zo ishi buzilgan"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Tashqi ta’sir natijasida anatomik butunlik yoki funksiya buzilsa, bu tan jarohati deyiladi. Xuddi shu holat ichki ta’sir tufayli yuzaga kelsa, kasallik deb tushuniladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "25"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-23-q02",
+   "question_i18n": {
+    "uz": "Bemorda bosh miya chayqalishi va qorin sohasida qontalash aniqlandi. Bu shikastlanish tasnifda qanday ko‘rsatiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Oddiy cheklangan yakka shikastlanish",
+     "Murakkab qo‘sh ko‘p shikastlanish",
+     "Oddiy qo‘sh ko‘p shikastlanish",
+     "Murakkab cheklangan yakka shikastlanish"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Bitta turdagi omil ta’sirida paydo bo‘lgani uchun jarohat oddiy. Ikki anatomik sohani qamragani uchun qo‘sh, soni ko‘p bo‘lgani uchun ko‘p shikastlanish hisoblanadi. Bu misol darslikda keltirilgan."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "26"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-23-q03",
+   "question_i18n": {
+    "uz": "Jabrlanuvchida kuchli qo‘rquv ta’sirida ruhiy o‘zgarishlar yuzaga kelgan. Bunday ta’sir natijalarini o‘rganish uchun qaysi ekspertiza tayinlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Sud-psixiatrik ekspertiza tayinlanadi",
+     "Sud-biologik ekspertiza tayinlanadi",
+     "Sud-kimyoviy ekspertiza tayinlanadi",
+     "Trasologik ekspertiza tayinlanadi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Shikastlovchi omillarning ruhiy turi natijalarini o‘rganish odatda sud psixiatriyasining predmeti bo‘lib, bunda sud-psixiatrik ekspertiza tayinlanadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "26"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-23-q04",
+   "question_i18n": {
+    "uz": "Ikki jism bir xil tezlikda harakatlanib tanaga urildi, ularning biri og‘irroq. Jarohat yaqqolligi va ko‘lami qanday farqlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Massa ta’sir qilmaydi, ko‘lam bir xil bo‘ladi",
+     "Yengil jism kuchliroq jarohat qoldiradi",
+     "Faqat jism shakli ko‘lamni belgilab beradi",
+     "Og‘irroq jism kattaroq jarohat qoldiradi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Jarohatning yaqqolligi va ko‘lami harakatdagi omilning massasi hamda tezligiga to‘g‘ri proporsionaldir. Tezlik teng bo‘lsa, massasi katta jism kattaroq jarohat etkazadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "29-30"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-23-q05",
+   "question_i18n": {
+    "uz": "Uy-ro‘zg‘or ishlarida qo‘llanadigan bolta bilan jarohat etkazildi. Mexanik jarohat etkazuvchi vositalar orasida bolta qaysi guruhga kiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qurol, hujum uchun tayyorlangan mahsulot",
+     "Anjom, kundalik ishda qo‘llanadigan mahsulot",
+     "Jism, aniq maqsadi bo‘lmagan narsa",
+     "Holat, hodisa ko‘rinishidagi omil"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Ishlab chiqarish, uy-ro‘zg‘or yoki kundalik hayotda ishlatiladigan mahsulotlar (bolta, arra, qaychi) anjom hisoblanadi. Qurol hujum yoki mudofaa uchun maxsus tayyorlanadi, jismning esa aniq qo‘llanilish maqsadi bo‘lmaydi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "30"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-23-q06",
+   "question_i18n": {
+    "uz": "Mexanik jarohatning yaqqolligi va ko‘lami harakatdagi omilning qaysi ko‘rsatkichlariga to‘g‘ri proporsional bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Massasi va harakat tezligiga",
+     "Qattiqligi va rangiga",
+     "Shakli va saqlanish joyiga",
+     "Hajmi va ishlab chiqarilishiga"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Jarohat yaqqolligi va ko‘lami ta’sir vaqtidagi kinetik energiyaga bog‘liq. Bu energiya harakatdagi omilning massasi va tezligi bilan belgilanadi, shuning uchun jarohat shu ikki ko‘rsatkichga to‘g‘ri proporsional bo‘ladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "29-30"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-23-q07",
+   "question_i18n": {
+    "uz": "Tayoq bilan zarb berilganda jismning ta’sir yuzasi shikastlangan soha yuzasidan kichik chiqdi. Bu yuza qanday baholanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Cheklanmagan keng yuza deb",
+     "Cheklangan yuza deb",
+     "Murakkab shakldagi yuza deb",
+     "Silliq relefli yuza deb"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Cheklangan va cheklanmagan yuzaga bo‘lish nisbiy bo‘lib, shikastlovchi va shikastlanuvchi yuzalarning nisbatiga qarab belgilanadi. Jismning yuzasi shikastlangan soha yuzasidan kichik bo‘lsa, u cheklangan hisoblanadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "33"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-23-q08",
+   "question_i18n": {
+    "uz": "Jismning chekkalari hosil qilgan yoyning radiusi qancha bo‘lganda u o‘tkir dam yoki uch deb hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,1 mm dan katta bo‘lganda",
+     "0,5 mm va undan kichik",
+     "0,1 mm va undan kichik",
+     "1,0 mm va undan kichik"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "O‘tkir jismning chekkalari bir-biri bilan burchak hosil qiladi. Yoyning radiusi 0,1 mm va undan kichik bo‘lsa, bunday dam yoki uch o‘tkir deb hisoblanadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "48"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-23-q09",
+   "question_i18n": {
+    "uz": "Ekspert kesma yarada yara yo‘nalishi mushak tolalari yo‘nalishiga parallel ekanini aniqladi. Yara chetlari qanday ochiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Chetlari yaqqol keng ochiladi",
+     "Chetlari butunlay yopiq bo‘ladi",
+     "Chetlari tishsimon bo‘lib ochiladi",
+     "Chetlari kamroq ochilib turadi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Yara chetlarining ochilish darajasi biriktiruvchi va mushak tolalarining yo‘nalishiga bog‘liq. Yara va tolalar bir-biriga qanchalik parallel bo‘lsa, chekkalar shunchalik kam ochiladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "48"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-23-q10",
+   "question_i18n": {
+    "uz": "Ustara bilan etkazilgan kesma yarali jabrlanganda qon ketishining qaysi turi xos hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ichki qon ketishi tashqidan kuchli",
+     "Tashqi qon ketishi xos",
+     "Qon ketishi umuman kuzatilmaydi",
+     "Faqat bo‘shliqqa qon quyiladi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Kesma yaralar odatda chuqur bo‘lmaydi va tana bo‘shliqlariga o‘tmaydi, ular uchun tashqi qon ketish xos. Ichki qon ketishning kuchliroq bo‘lishi esa sanchma yaralarga xos."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "49"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-23-q11",
+   "question_i18n": {
+    "uz": "Kesma yaraning uzunligi uning eni va chuqurligiga nisbatan qanday bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Eni va chuqurligiga teng bo‘ladi",
+     "Eni va chuqurligidan ancha katta bo‘ladi",
+     "Chuqurligidan ancha kichik bo‘ladi",
+     "Eniga teng, chuqurligidan kichik bo‘ladi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Kesma yaralarda uzunlik eni va chuqurligidan ancha katta bo‘ladi. Aksincha, sanchma yaralarda tashqi o‘lchamlar chuqurligidan kichik bo‘ladi. Shuning uchun bu xususiyat kesma yarani sanchma yaradan ajratishga yordam beradi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "49"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-23-q12",
+   "question_i18n": {
+    "uz": "Jabrlanganning bilak-kaft bo‘g‘imi ichki yuzasida yuzaki yaralar topildi. Yara chetlari tekis, shilinishsiz, uchlari o‘tkir, tana bo‘shlig‘iga o‘tmagan. Bu yara qaysi jism ta’siridan hosil bo‘lgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Chopuvchi jism ta’siridan",
+     "Sanchuvchi jism ta’siridan",
+     "O‘tmas jism ta’siridan",
+     "Kesuvchi jism ta’siridan"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Kesuvchi jismning (ustara, uchsiz pichoq) o‘tkir dami kesma yara hosil qiladi. Bunday yaraning chetlari tekis, shilinishsiz, uchlari o‘tkir bo‘ladi. Yara odatda chuqur bo‘lmaydi va tana bo‘shliqlariga o‘tmaydi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "48-49"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-23-q13",
+   "question_i18n": {
+    "uz": "Sanchuvchi jism tanaga kirganda uning yon tomonlari atrofdagi to‘qimalarga qanday ta’sir qiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "To‘qimalarni suradi",
+     "To‘qimalarni kesib ajratadi",
+     "To‘qimalarni ezib majaqlaydi",
+     "To‘qimalarni yirtib tortadi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Sanchuvchi jismning o‘tkir uchi to‘qimalarni ajratadi. Jism tanaga kirgan sari yon tomonlari atrofdagi to‘qimalarni suradi va sanchma yara hosil bo‘ladi. Kesib ajratish esa sanchuvchi-kesuvchi jismning o‘tkir damiga xos."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "49-50"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-23-q14",
+   "question_i18n": {
+    "uz": "Ekspert sanchma yarani tekshirdi: yara oval, yoriqsimon, chetlari tekis, yaqinlashtirilganda chiziqsimon shaklni oladi. Jismning ko‘ndalang kesimi qanday bo‘lgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Uch qirrali kesimli jism",
+     "To‘rt qirrali kesimli jism",
+     "Oval yoki dumaloq kesimli jism",
+     "Ko‘p qirrali kesimli jism"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Sanchma yaraning shakli jismning ko‘ndalang kesimiga bog‘liq. Kesim oval yoki dumaloq bo‘lsa, yara oval, yoriqsimon, chetlari tekis bo‘ladi. Uch va undan ko‘p qirrali jism esa “G”, “T”, “P”, “U” shaklidagi, uchlari o‘tkir yara hosil qiladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "50"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-23-q15",
+   "question_i18n": {
+    "uz": "Sanchuvchi jism tanaga qiya ta’sir etgan. Sanchma yara chetidagi shilinish va ifloslanish hoshiyasi qanday joylashadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Butun yara atrofida sirkulyar shaklda",
+     "Yara atrofida umuman hosil bo‘lmaydi",
+     "Faqat yara tubida halqasimon shaklda",
+     "O‘tkir burchak tomonida segmentar shaklda"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Sanchuvchi jism tikka ta’sir etganda hoshiya sirkulyar bo‘ladi. Qiya ta’sirda esa u o‘tkir burchak tomonida segmentar shaklda bo‘ladi. Bu belgilar jismning kesimi 5 mmdan katta bo‘lganda yaqqolroq ko‘rinadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "50"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-23-q16",
+   "question_i18n": {
+    "uz": "Bir tomonlama o‘tkir damli pichoq tanaga tikka emas, o‘tkir burchak ostida ta’sir qildi. Yara o‘lchami qanday bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Tikka ta’sirdagidan kichikroq bo‘ladi",
+     "Ta’sir burchagiga bog‘liq bo‘lmaydi",
+     "Tikka ta’sirdagidan kattaroq bo‘ladi",
+     "Faqat chiqish teshigi hosil bo‘ladi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Sanchuvchi-kesuvchi jism tig‘i tanaga tikkaroq ta’sir etsa, yara o‘lchami kichikroq bo‘ladi. Ta’sir burchagi o‘tkir bo‘lsa, kattaroq o‘lchamdagi yaralar hosil bo‘ladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "51"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-23-q17",
+   "question_i18n": {
+    "uz": "Ekspert yarada bir uchi o‘tkir, ikkinchi uchi o‘tmas va biroz dumaloq, ‘P’ simon shaklni aniqladi. Qaysi jism ehtimoli yuqori?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ikki tomoni o‘tkir damli xanjar",
+     "Faqat o‘tkir uchli bigiz yoki mix",
+     "Bir tomoni o‘tkir damli osh pichog‘i",
+     "Yassi cheklanmagan yuzali o‘tmas jism"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Bir tomoni o‘tkir damli jism odatda uzunchoq ponasimon, chetlari tekis, bir uchi o‘tkir, ikkinchi uchi o‘tmas ‘P’ simon yara hosil qiladi. Ikki tomoni o‘tkir damli jismda esa ikkala uch o‘tkir bo‘ladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "51"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-23-q18",
+   "question_i18n": {
+    "uz": "Bolta chopqisining faqat old uchi tanaga kirdi. Chopma yaraning uchlari qanday bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ikkala uchi ham o‘tkir bo‘ladi",
+     "Ikkala uchi ham o‘tmas bo‘ladi",
+     "Dam tomoni o‘tmas, chuqur tomoni o‘tkir",
+     "Dam tomoni o‘tkir, chuqur tomoni o‘tmas"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Chopqi qisman kirganda yaraning o‘tkir damga mos uchi o‘tkir bo‘ladi. Chopqining chuqurroq kirgan qismiga mos uchi esa o‘tmas bo‘lib, qo‘shimcha yoriqlar bilan kuzatiladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "54"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-23-q19",
+   "question_i18n": {
+    "uz": "Voqea tafsilotlari bo‘yicha chopma jarohatlar aksariyat holatlarda qanday hodisada vujudga keladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Baxtsiz hodisada",
+     "Qotillikda",
+     "O‘z-o‘zini o‘ldirishda",
+     "Jinoiy abortda"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Chopma jarohatlar ko‘pincha baxtsiz hodisalarda hosil bo‘ladi. Qotillik va o‘z-o‘zini o‘ldirishda chopuvchi jismlardan shikastlanish juda kam uchraydi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "54"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-23-q20",
+   "question_i18n": {
+    "uz": "Chopqi kallaning gumbaz suyaklariga qiya ta’sir qildi. Suyakda qanday sinish hosil bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Siniqli sinish",
+     "Yoriqsimon sinish",
+     "Halqasimon sinish",
+     "Spiralsimon sinish"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Chopuvchi jism kallaning gumbaz suyaklariga tikka ta’sir qilsa yoriqsimon, qiya ta’sir qilsa siniqli sinishlar vujudga keladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "54"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "G‘iyosov Z.A.",
+   "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti"
+  }
+ ]
+}

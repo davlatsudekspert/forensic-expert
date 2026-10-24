@@ -114,16 +114,23 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Yordamni baholash mezonlari",
-        "nodes": [
-          "To‘g‘rilik",
-          "Asoslanganlik",
-          "To‘laqonlik",
-          "O‘z vaqtidalik"
+        "kind": "tree",
+        "root": "Yordamni baholash",
+        "children": [
+          {
+            "label": "To‘g‘rilik"
+          },
+          {
+            "label": "Asoslanganlik"
+          },
+          {
+            "label": "To‘laqonlik"
+          },
+          {
+            "label": "O‘z vaqtidalik"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Standart ekspertizada nimani hal etadi"
       },
       "teacher_notes": "Vaqt: 3 daq. Muhokama: To‘rt mezonning qaysi biri sizningcha eng murakkab baholanadi? Doskada: 4 mezonni ustun qilib yozing. Tipik xato: faqat «to‘g‘rilik»ni tekshirish."
     },
@@ -192,7 +199,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Atama (Mak Master)",
+            "value": "1990-yillar"
+          },
+          {
+            "label": "Sackett ta’rifi",
+            "value": "1996"
+          },
+          {
+            "label": "JSST metodologiyasi",
+            "value": "2002"
+          },
+          {
+            "label": "GIN tashkil etilgan",
+            "value": "2002"
+          }
+        ],
+        "caption": "Daliliy tibbiyot sanalari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Daliliy tibbiyot ekspert ishiga qanday foyda beradi? Doskada: «tajriba + dalil» tenglamasi. Tipik xato: daliliy tibbiyotni vrach tajribasini inkor etish deb tushunish."
     },
     {
@@ -242,7 +270,7 @@
           "uncertain": false
         },
         {
-          "text": "Keng ma’noda — umum qabul qilgan qoida, yo‘riqnoma, qo‘llanma, nizomni bajarmaslik yoki lozim darajada bajarmaslik; noxush oqibat keltirgan yoki keltirishi mumkin bo‘lgan holat.",
+          "text": "Keng ma’noda — umum qabul qilingan qoida, yo‘riqnoma, qo‘llanma, nizomni bajarmaslik yoki lozim bajarmaslik; noxush oqibat keltirgan yoki keltirishi mumkin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -260,7 +288,26 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Keng ma’noda",
+            "items": [
+              "Qoida, yo‘riqnoma, qo‘llanmani bajarmaslik",
+              "Noxush oqibat keltirgan yoki keltirishi mumkin"
+            ]
+          },
+          {
+            "title": "Jinoyat huquqida",
+            "items": [
+              "Faqat sababiy bog‘liqlikdagi nuqson inobatga olinadi",
+              "Noxush oqibat keltirgan nuqson"
+            ]
+          }
+        ],
+        "caption": "TYON — huquqiy tushuncha emas"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega TYON «huquqiy tushuncha emas»? Doskada: TYON ta’rifini o‘z so‘zingiz bilan yozdiring. Tipik xato: har bir nuqsonni jinoyat deb hisoblash."
     },
     {
@@ -320,31 +367,35 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Mohiyati bo‘yicha guruhlar",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Misol"
+        "kind": "tree",
+        "root": "TYON mohiyati bo‘yicha",
+        "children": [
+          {
+            "label": "Diagnostika",
+            "items": [
+              "Kech tashxis qo‘yish"
+            ]
+          },
+          {
+            "label": "Davolash",
+            "items": [
+              "Dorini noto‘g‘ri qo‘llash"
+            ]
+          },
+          {
+            "label": "Profilaktika",
+            "items": [
+              "Sanitar qoidalarni buzish"
+            ]
+          },
+          {
+            "label": "Boshqa",
+            "items": [
+              "Hujjat yuritish xatosi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Diagnostika",
-            "Kech tashxis qo‘yish"
-          ],
-          [
-            "Davolash",
-            "Dorini noto‘g‘ri qo‘llash"
-          ],
-          [
-            "Profilaktika",
-            "Sanitar qoidalarni buzish"
-          ],
-          [
-            "Boshqa",
-            "Hujjat yuritish xatosi"
-          ]
-        ]
+        "caption": "To‘rt guruh"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Qaysi guruh ekspertizada eng ko‘p uchraydi deb o‘ylaysiz? Doskada: to‘rt guruhli jadval. Tipik xato: guruhlarni aralashtirish."
     },
@@ -379,7 +430,31 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Tashxisotdagi nuqsonlar",
+        "children": [
+          {
+            "label": "Asosiy kasallik",
+            "items": [
+              "Kasallik yoki asoratni aniqlamaslik"
+            ]
+          },
+          {
+            "label": "Hamroh kasallik",
+            "items": [
+              "Muhim hamrohni aniqlamaslik"
+            ]
+          },
+          {
+            "label": "Kech tashxis",
+            "items": [
+              "Kech tashxis qo‘yish"
+            ]
+          }
+        ],
+        "caption": "Diagnostika guruhi"
+      },
       "teacher_notes": "Vaqt: 3 daq. Muhokama: Kech tashxis va noto‘g‘ri tashxis farqi nimada? Doskada: to‘rt turni sanang. Tipik xato: asoratni aniqlamaslikni davolash nuqsoni deb hisoblash."
     },
     {
@@ -413,7 +488,37 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Davolashdagi nuqsonlar",
+        "children": [
+          {
+            "label": "Kech yotqizish"
+          },
+          {
+            "label": "Jarrohlik kamchiligi"
+          },
+          {
+            "label": "Muolajalar xatosi",
+            "items": [
+              "Tayinlash va o‘tkazishda"
+            ]
+          },
+          {
+            "label": "Tug‘ruq",
+            "items": [
+              "Noratsional olib borish"
+            ]
+          },
+          {
+            "label": "Dori-darmon",
+            "items": [
+              "Noto‘g‘ri foydalanish"
+            ]
+          }
+        ],
+        "caption": "Davolash guruhi"
+      },
       "teacher_notes": "Vaqt: 3 daq. Muhokama: «Noratsional» so‘zi nimani anglatadi? Doskada: 5 ta ko‘rinishni ro‘yxat qiling. Tipik xato: faqat jarrohlik xatolarini nazarda tutish."
     },
     {
@@ -507,27 +612,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Joy bo‘yicha guruhlar",
-        "nodes": [],
-        "header": [
-          "Bosqich",
-          "Muassasa misoli"
+        "kind": "tree",
+        "root": "TYON joyi bo‘yicha",
+        "children": [
+          {
+            "label": "Shifoxonagacha",
+            "items": [
+              "Poliklinika, qishloq punkti"
+            ]
+          },
+          {
+            "label": "Shifoxona",
+            "items": [
+              "Tuman va shahar shifoxonasi"
+            ]
+          },
+          {
+            "label": "Boshqa muassasalar",
+            "items": [
+              "Sanatoriy, bolalar uyi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Shifoxonagacha",
-            "Qishloq vrachlik punkti, poliklinika"
-          ],
-          [
-            "Shifoxona",
-            "Tuman shifoxonasi, tug‘ruq bo‘limi"
-          ],
-          [
-            "Boshqa",
-            "Sanatoriy, bolalar uyi"
-          ]
-        ]
+        "caption": "Uch bosqich"
       },
       "teacher_notes": "Vaqt: 3 daq. Muhokama: Joy bo‘yicha tasnif nima uchun kerak? Doskada: uch ustunli jadval. Tipik xato: tez yordamni shifoxona bosqichiga kiritish."
     },
@@ -562,7 +669,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Shifoxonagacha",
+            "items": [
+              "Qishloq vrachlik punktlari",
+              "Poliklinikalar",
+              "Tashxisot markazlari",
+              "Tez tibbiy yordam",
+              "Harbiy lazaretlar"
+            ]
+          },
+          {
+            "title": "Shifoxona",
+            "items": [
+              "Markaziy tuman, shahar shifoxonalari",
+              "Tug‘ruq bo‘limlari",
+              "Ko‘p tarmoqli markazlar",
+              "Klinik shifoxonalar",
+              "Shoshilinch yordam, gospitallar"
+            ]
+          }
+        ],
+        "caption": "Ikki bosqich muassasalari"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Poliklinika shifoxonagacha bosqichga nega kiradi? Doskada: muassasalarni ikki ustunga bo‘ling. Tipik xato: tez yordamni shifoxona deb hisoblash."
     },
     {
@@ -622,27 +754,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Sabab guruhlari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Misol"
+        "kind": "tree",
+        "root": "TYON sabablari",
+        "children": [
+          {
+            "label": "Subyektiv",
+            "items": [
+              "E’tiborsizlik, malaka yetishmasligi"
+            ]
+          },
+          {
+            "label": "Tashkiliy",
+            "items": [
+              "Vositalar yo‘qligi, tashkil kamchiligi"
+            ]
+          },
+          {
+            "label": "Obyektiv",
+            "items": [
+              "Kech murojaat, atipik kechish"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Subyektiv",
-            "E’tiborsizlik, malaka yetishmasligi"
-          ],
-          [
-            "Tashkiliy",
-            "Vositalar yo‘qligi, tashkil kamchiligi"
-          ],
-          [
-            "Obyektiv",
-            "Kech murojaat, atipik kechish"
-          ]
-        ]
+        "caption": "Uch guruh"
       },
       "teacher_notes": "Vaqt: 3 daq. Muhokama: Uch guruhdan qaysi biri vrachga bog‘liq emas? Doskada: jadval. Tipik xato: obyektiv sababni vrach aybi deb qarash."
     },
@@ -677,7 +811,36 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Subyektiv",
+            "items": [
+              "Bemorga e’tiborsizlik",
+              "Malaka yetishmasligi",
+              "Qasd yoki ehtiyotsizlik"
+            ]
+          },
+          {
+            "title": "Tashkiliy",
+            "items": [
+              "Tashxis, davolash vositalari yo‘q",
+              "Jarayonni tashkil etish kamchiligi",
+              "Izchillik yo‘qligi"
+            ]
+          },
+          {
+            "title": "Obyektiv",
+            "items": [
+              "Kech murojaat",
+              "Atipik kechish",
+              "Bemor ahvoli og‘irligi"
+            ]
+          }
+        ],
+        "caption": "Sabablarni farqlash"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Dori yo‘qligi qaysi sababga kiradi? Doskada: uch guruhga 2 tadan misol yozdiring. Tipik xato: kech murojaatni tashkiliy sabab deb yozish."
     },
     {
@@ -804,7 +967,43 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Himoyalangan munosabat",
+        "children": [
+          {
+            "label": "Operatsiya",
+            "items": [
+              "Rad etish yoki soddaroq turini tanlash"
+            ]
+          },
+          {
+            "label": "Tayyorgarlik",
+            "items": [
+              "Operatsiyaga tayyorgarlikni cho‘zish"
+            ]
+          },
+          {
+            "label": "Invaziv usullar",
+            "items": [
+              "Asossiz rad etish"
+            ]
+          },
+          {
+            "label": "Konsultatsiyalar",
+            "items": [
+              "Keraksiz konsilium, tekshiruvlar"
+            ]
+          },
+          {
+            "label": "Yo‘llash",
+            "items": [
+              "Boshqa muassasaga yuborish"
+            ]
+          }
+        ],
+        "caption": "Himoyalangan tibbiyot ko‘rinishlari"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Konsilium keraksiz bo‘lganini qanday isbotlash mumkin? Doskada: 7 ko‘rinishdan 3 tasini yozing. Tipik xato: har bir konsiliumni himoyalangan munosabat deb baholash."
     },
     {
@@ -830,15 +1029,22 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Baholash algoritmi",
-        "nodes": [
-          "Patologik holat",
-          "Vrach harakatlari",
-          "Sababiy bog‘lanish"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Patologiya",
+            "text": "Bemordagi patologik holat"
+          },
+          {
+            "title": "2. Vrach harakatlari",
+            "text": "Harakatlarni baholash"
+          },
+          {
+            "title": "3. Sababiy bog‘lanish",
+            "text": "Harakat va oqibat o‘rtasida"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Baholash algoritmi (uch bosqich)"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega ketma-ketlikni o‘zgartirib bo‘lmaydi? Doskada: 3 bosqichli sxema. Tipik xato: oqibatdan boshlab, «teskari» baholash."
     },
@@ -873,7 +1079,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "1-bosqich: patologiya",
+        "children": [
+          {
+            "label": "Patologiya",
+            "items": [
+              "Etiologiya, patogenez",
+              "Chastota, muddat, tezlik, og‘irlik"
+            ]
+          },
+          {
+            "label": "Shartlilik",
+            "items": [
+              "Formal sharoit",
+              "Faktik sharoit"
+            ]
+          },
+          {
+            "label": "Asoslanganlik",
+            "items": [
+              "Shikoyat, klinik belgi, asorat"
+            ]
+          }
+        ],
+        "caption": "Bemordagi patologiya tahlili"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Formal va faktik sharoit bir-biridan qanday farq qiladi? Doskada: ikki sharoitni solishtiring. Tipik xato: faqat formal sharoitni inobatga olish."
     },
     {
@@ -908,27 +1140,30 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Harakat mezonlari",
-        "nodes": [],
-        "header": [
-          "Mezon",
-          "Nimani baholaydi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Shartlilik",
+            "text": "Formal va faktik sharoit"
+          },
+          {
+            "title": "Asoslanganlik",
+            "text": "Shikoyat, belgi, asorat qonuniyati"
+          },
+          {
+            "title": "O‘z vaqtidalik",
+            "text": "Shoshilinch, tez va rejali harakatlar"
+          },
+          {
+            "title": "Ijro texnikasi",
+            "text": "Muolaja texnik usullarini bilish"
+          },
+          {
+            "title": "To‘laqonlik",
+            "text": "Bajarilgan va mumkin hajm solishtiriladi"
+          }
         ],
-        "rows": [
-          [
-            "O‘z vaqtidalik",
-            "Shoshilinch, tez, rejali"
-          ],
-          [
-            "Texnika",
-            "Usulning to‘g‘riligi"
-          ],
-          [
-            "To‘laqonlik",
-            "Hajmni qiyoslash"
-          ]
-        ]
+        "caption": "Harakatlarni baholash mezonlari"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: «To‘laqonlik»ni qanday o‘lchaysiz? Doskada: beshta mezonni belgilang. Tipik xato: o‘z vaqtidalikni faqat shoshilinch holatlarga qo‘llash."
     },
@@ -964,27 +1199,31 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Oqibatga ta’sir variantlari",
-        "nodes": [],
-        "header": [
-          "Variant",
-          "Bog‘lanish"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Tabiiy rivojlanish",
+            "items": [
+              "TYON ta’sir qilmagan",
+              "Sababiy bog‘lanish yo‘q"
+            ]
+          },
+          {
+            "title": "Ahvolni og‘irlashtirgan",
+            "items": [
+              "Moyillik yaratgan omil",
+              "Bilvosita bog‘lanish"
+            ]
+          },
+          {
+            "title": "Yangi jarayon",
+            "items": [
+              "TYON yangi patologiyaga olib kelgan",
+              "Bevosita yoki bilvosita"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Tabiiy rivojlanish",
-            "Yo‘q"
-          ],
-          [
-            "Ahvolni og‘irlashtirgan",
-            "Bilvosita"
-          ],
-          [
-            "Yangi jarayon",
-            "Bevosita yoki bilvosita"
-          ]
-        ]
+        "caption": "Uch variant"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Uch variantdan qaysi biri javobgarlikka eng yaqin? Doskada: jadval. Tipik xato: bilvosita bog‘lanishni bevosita deb yozish."
     },
@@ -1087,7 +1326,17 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Bachadon ekstirpatsiyasi",
+          "Chap siydik nayi tikildi",
+          "Bir necha haftadan so‘ng aniqlandi",
+          "Gidronefroz, buyrak olindi",
+          "Nogironlik: bevosita sabab"
+        ],
+        "caption": "Bevosita bog‘lanish misoli"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Nuqson nega bir necha haftadan so‘ng aniqlandi deb o‘ylaysiz? Doskada: zanjir — xato → gidronefroz → nefrektomiya. Tipik xato: nogironlikni asosiy kasallikka bog‘lash."
     },
     {
@@ -1121,7 +1370,17 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Ichak jarohati: laparotomiya",
+          "Tampon qoldirildi",
+          "Relaparotomiya: tampon topildi",
+          "Yiringli peritonit",
+          "Bilvosita bog‘lanish"
+        ],
+        "caption": "Bilvosita bog‘lanish misoli"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Tampon qoldirilishi nima uchun bevosita bog‘lanish bo‘lmaydi? Doskada: ikki omil — jarohat va tampon. Tipik xato: faqat tamponni sabab qilish."
     },
     {
@@ -1155,7 +1414,17 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Qon quyish ko‘rsatmasi",
+          "Qon guruhi noto‘g‘ri aniqlandi",
+          "Postgemotransfuzion asorat",
+          "O‘lim",
+          "Bevosita bog‘lanish"
+        ],
+        "caption": "Noto‘g‘ri qon guruhi"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Qon quyish ko‘rsatmasi to‘g‘ri bo‘lsa-da, nuqson nimada? Doskada: tekshiruv bosqichlarini yozing. Tipik xato: ko‘rsatma bor ekan, ijroni tekshirmaslik."
     },
     {
@@ -1189,7 +1458,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Asos",
+            "text": "Qaror (surishtiruvchi, tergovchi, prokuror) yoki sud ajrimi"
+          },
+          {
+            "title": "Bayon qismi",
+            "text": "Ish tafsiloti"
+          },
+          {
+            "title": "Ekspertiza turi",
+            "text": "Ekspertiza turi va kimga tayinlangani"
+          },
+          {
+            "title": "Qaror qismi",
+            "text": "Aniq, tushunarli savollar"
+          }
+        ],
+        "caption": "Tayinlash qarori tuzilishi"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Savol komissiya vakolatidan tashqarida bo‘lsa nima qilinadi? Doskada: qaror tuzilishi. Tipik xato: ekspertiza arizachi iltimosi bilan tayinlanadi deb o‘ylash."
     },
     {
@@ -1223,7 +1513,37 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Taqdim etiladigan hujjatlar",
+        "children": [
+          {
+            "label": "Ish materiallari"
+          },
+          {
+            "label": "Tibbiy hujjatlar",
+            "items": [
+              "To‘liq kasallik tarixi"
+            ]
+          },
+          {
+            "label": "Tekshiruv obyektlari"
+          },
+          {
+            "label": "Xodim tavsifnomasi",
+            "items": [
+              "Idoraviy tekshiruvlar"
+            ]
+          },
+          {
+            "label": "O‘lim holati",
+            "items": [
+              "Murda xulosasi yoki PAB"
+            ]
+          }
+        ],
+        "caption": "Komissiya uchun"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega ko‘chirma yetarli emas? Doskada: hujjatlar ro‘yxati. Tipik xato: kseronusxani asl nusxa o‘rnida har doim qabul qilish."
     },
     {
@@ -1257,7 +1577,27 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Komissiya tarkibi",
+            "items": [
+              "Faqat sud-tibbiy ekspertiza byurolarida",
+              "Kamida uch kishi",
+              "Etakchi ekspert, ma’ruzachi, a’zolar"
+            ]
+          },
+          {
+            "title": "A’zo bo‘la olmaydi",
+            "items": [
+              "Hodisa yuz bergan muassasa rahbarlari",
+              "Natijadan manfaatdor shaxslar"
+            ]
+          }
+        ],
+        "caption": "Komissiya tuzilishi va xolislik"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega hodisa bo‘lgan muassasa vakili a’zo bo‘lolmaydi? Doskada: komissiya tarkibi. Tipik xato: etakchi ekspertga ustunlik berish."
     },
     {
@@ -1292,15 +1632,22 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Xulosa qismlari",
-        "nodes": [
-          "Kirish",
-          "Tekshiruv",
-          "To‘xtamlar"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Kirish",
+            "text": "Sana, joy, asos, tarkib, savollar"
+          },
+          {
+            "title": "Tekshiruv",
+            "text": "Hujjatlardan ko‘chirmalar, varaq ko‘rsatiladi"
+          },
+          {
+            "title": "To‘xtamlar",
+            "text": "Savollarga javoblar"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Xulosa uch qismi"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega varaq raqami ko‘rsatiladi? Doskada: uch qismni yozing. Tipik xato: to‘xtamlarni tekshiruv qismisiz yozish."
     },
@@ -1335,7 +1682,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "To‘xtam talabi",
+            "items": [
+              "Savollarga javob, tekshiruvga mos",
+              "Obyektiv va ilmiy asoslangan",
+              "Bir ma’noli va tushunarli"
+            ]
+          },
+          {
+            "title": "Bo‘lmasligi kerak",
+            "items": [
+              "Faqat subyektiv, taxminiy ma’lumot",
+              "Noto‘liq yoki mavhum",
+              "O‘zaro zid"
+            ]
+          }
+        ],
+        "caption": "To‘xtamga talablar"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: «Ehtimol» so‘zi to‘xtamda qachon o‘rinsiz? Doskada: 3 talab. Tipik xato: taxmin asosida to‘xtam yozish."
     },
     {
@@ -1369,7 +1737,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "JPK 179: huquqlar",
+        "children": [
+          {
+            "label": "Qarorni bilish"
+          },
+          {
+            "label": "Raddiya berish",
+            "items": [
+              "Ekspertga"
+            ]
+          },
+          {
+            "label": "Qo‘shimcha savol"
+          },
+          {
+            "label": "Xulosa bilan tanishish"
+          }
+        ],
+        "caption": "Baholashda tibbiy xodimga ham taalluqli"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Xodim ekspertiza jarayoniga aralashishi mumkinmi? Doskada: huquqlar ro‘yxati. Tipik xato: qatnashchi komissiya majlisida ishtirok etadi deb o‘ylash."
     },
     {
@@ -1559,10 +1948,10 @@
     {
       "question": "Baholash algoritmining ikkinchi bosqichida nima o‘rganiladi?",
       "options": [
-        "Bemordagi patologik holat",
+        "Bemorda mavjud bo‘lgan asosiy patologik holat va uning kechishi",
         "Vrach harakatlarini shartlilik, asoslanganlik, o‘z vaqtidalik, texnika va to‘laqonlik jihatidan baholash",
-        "Sababiy bog‘lanishning mavjudligi",
-        "Xulosa to‘xtamlarini yozish"
+        "Sababiy bog‘lanishning mavjudligi va uning turi (bevosita yoki bilvosita)",
+        "Xulosa to‘xtamlarini yozish va komissiya a’zolari imzosi"
       ],
       "correct_index": 1,
       "explanation": "Algoritm: 1) patologiya; 2) vrach harakatlarini baholash; 3) sababiy bog‘lanish.",
@@ -1575,10 +1964,10 @@
     {
       "question": "Ingichka ichak charvisining yirtilishi aniqlanmagan holat (og‘ir birgalikdagi jarohat) qaysi bog‘lanishga misol?",
       "options": [
-        "Bog‘lanish yo‘q",
-        "Bevosita bog‘lanish",
+        "Bog‘lanish yo‘q, chunki nuqson o‘limga ta’sir etmagan",
+        "Bevosita bog‘lanish (o‘limning bevosita sababi)",
         "Bilvosita bog‘lanish (moyillik yaratgan omil)",
-        "Qasddan zarar yetkazish"
+        "Qasddan zarar yetkazish (jinoiy niyat belgisi bilan)"
       ],
       "correct_index": 2,
       "explanation": "Manbada bu nuqson o‘limning bevosita sababi emas, ammo moyillik yaratgan omil sifatida keltirilgan.",
@@ -1591,10 +1980,10 @@
     {
       "question": "Ekspertlar komissiyasi a’zolari qachon so‘roq qilinishi mumkin?",
       "options": [
-        "Xulosa taqdim etilguncha",
+        "Xulosa taqdim etilguncha, tergov davomida istalgan paytda",
         "Xulosa taqdim etilgandan keyin, mavjud xulosa bo‘yicha",
-        "Komissiya majlisi vaqtida",
-        "Hech qachon"
+        "Komissiya majlisi vaqtida, to‘xtam muhokamasi chog‘ida",
+        "Hech qachon, chunki ular so‘roq qilinmaydi"
       ],
       "correct_index": 1,
       "explanation": "So‘roq faqat mavjud xulosa bo‘yicha o‘tkaziladi; xulosa taqdim etilguncha so‘roq qilish mumkin emas.",
@@ -1602,6 +1991,166 @@
         "author": "G‘iyosov Z.A.",
         "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
         "page": "141"
+      }
+    },
+    {
+      "question": "Ekspertlar komissiyasi tarkibi haqida qaysi tasdiq to‘g‘ri?",
+      "options": [
+        "Uchtadan kam bo‘lmagan shaxsdan iborat bo‘ladi",
+        "Kamida ikki kishidan iborat bo‘ladi",
+        "Faqat bitta etakchi ekspertdan iborat",
+        "Tuman bo‘linmalarida ham tuziladi"
+      ],
+      "correct_index": 0,
+      "explanation": "Komissiya uchtadan kam bo‘lmagan shaxsdan tashkil topadi va faqat sud-tibbiy ekspertiza byurolarida o‘tkaziladi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "135"
+      }
+    },
+    {
+      "question": "Quyidagilardan kim ekspertlar komissiyasi a’zosi bo‘la olmaydi?",
+      "options": [
+        "Ish bo‘yicha ma’ruzachi",
+        "Etakchi ekspert",
+        "Hodisa yuz bergan davolash muassasasining rahbari",
+        "Turli profildagi klinik mutaxassis"
+      ],
+      "correct_index": 2,
+      "explanation": "Komissiya tarkibiga muhokama etilayotgan hodisa yuz bergan muassasa rahbarlari, mutaxassislari va natijadan manfaatdor shaxslar kiritilishi mumkin emas.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "136"
+      }
+    },
+    {
+      "question": "JPK 187-moddaga ko‘ra ekspertlar komissiyasi xulosasi qanday kuchga ega?",
+      "options": [
+        "Boshqa dalillar bilan birga baholanadi, ustuvor kuchga ega emas",
+        "Boshqa dalillardan ustun turadi va ustuvor hisoblanadi",
+        "Faqat sud ajrimi bilan bekor qilinishi mumkin bo‘lgan hujjat",
+        "Tergovchi uchun majburiy bo‘lib, uning ustidan fikr bildirilmaydi"
+      ],
+      "correct_index": 0,
+      "explanation": "Xulosa dalil sifatida boshqa dalillar bilan birga baholanadi va ustuvor kuchga ega emas.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "141"
+      }
+    },
+    {
+      "question": "Komission ekspertiza qaysi materiallar asosida o‘tkazilishiga yo‘l qo‘yilmaydi?",
+      "options": [
+        "To‘liq kasallik tarixi va tibbiy hujjatlar nusxalari bilan",
+        "Xodim tavsifnomasi va tibbiy muassasa ma’lumotnomasi bilan",
+        "Murda xulosasi va boshqa ekspertiza materiallari bilan",
+        "Faqat kasallik tarixidan ko‘chirma va ma’lumotnomalar bilan"
+      ],
+      "correct_index": 3,
+      "explanation": "Alohida kasallik tarixidan ko‘chirma va ma’lumotnomalar asosida ekspertiza o‘tkazilishiga yo‘l qo‘yilmaydi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "134"
+      }
+    },
+    {
+      "question": "«Daliliy tibbiyot» atamasini kimlar taklif etgan?",
+      "options": [
+        "Mak Master universitetining kanadalik olimlari",
+        "Jahon sog‘liqni saqlash tashkiloti",
+        "Guidelines International Network",
+        "Sovet klinitsistlari"
+      ],
+      "correct_index": 0,
+      "explanation": "Atama o‘tgan asr 90-yillari boshida Mak Master universitetining kanadalik olimlari tomonidan taklif etilgan.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "144"
+      }
+    },
+    {
+      "question": "JSST klinik qo‘llanmalar ishlab chiqish metodologiyasini qaysi yilda tayyorlagan?",
+      "options": [
+        "1996 yilda",
+        "1990 yilda",
+        "2002 yilda",
+        "2010 yilda"
+      ],
+      "correct_index": 2,
+      "explanation": "JSST klinik qo‘llanmalar ishlab chiqish metodologiyasini 2002 yilda tayyorlagan; shu yili GIN tashkil etilgan.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "144"
+      }
+    },
+    {
+      "question": "Immunoprofilaktikadagi kamchilik TYONning qaysi guruhiga kiradi?",
+      "options": [
+        "Diagnostika",
+        "Davolash",
+        "Hujjat yuritish",
+        "Profilaktika"
+      ],
+      "correct_index": 3,
+      "explanation": "Profilaktika nuqsonlari: sanitar me’yor va qoidalarni buzish, immunoprofilaktikadagi kamchiliklar.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "146"
+      }
+    },
+    {
+      "question": "Bachadon ekstirpatsiyasida adashib siydik nayi tikilib, gidronefroz va buyrak olinishiga olib keldi. Bu qaysi bog‘lanishga misol?",
+      "options": [
+        "Bog‘lanish yo‘q",
+        "Bilvosita bog‘lanish",
+        "Obyektiv sabab",
+        "Bevosita bog‘lanish"
+      ],
+      "correct_index": 3,
+      "explanation": "TYON yangi asorat keltirib, nogironlikning bevosita sababi bo‘lgan.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "152"
+      }
+    },
+    {
+      "question": "Laparotomiyadan so‘ng qorin bo‘shlig‘ida tampon qoldirilgan, yiringli peritonit rivojida ichak jarohati hal etuvchi bo‘lgan. Qanday bog‘lanish?",
+      "options": [
+        "Bevosita bog‘lanish",
+        "Bog‘lanish yo‘q",
+        "Qasddan zarar",
+        "Bilvosita bog‘lanish"
+      ],
+      "correct_index": 3,
+      "explanation": "Asosiy patologiya (ichak jarohati) hal etuvchi ahamiyatga ega, shuning uchun TYON bilan faqat bilvosita bog‘lanish bor.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "152"
+      }
+    },
+    {
+      "question": "Quyidagilardan qaysi biri komissiya to‘xtami bo‘la olmaydi?",
+      "options": [
+        "Obyektiv va ilmiy asoslangan",
+        "Bir ma’noli va tushunarli",
+        "Savollarga javoblardan iborat",
+        "Mavhum yoki o‘zaro zid"
+      ],
+      "correct_index": 3,
+      "explanation": "To‘xtam obyektiv, asosli, bir ma’noli bo‘lishi lozim; subyektiv, taxminiy, noto‘liq, mavhum yoki o‘zaro zid to‘xtam bo‘lmaydi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "139"
       }
     }
   ],

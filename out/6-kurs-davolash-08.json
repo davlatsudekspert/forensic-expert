@@ -41,7 +41,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Uch javobgarlik",
+        "children": [
+          {
+            "label": "Intizomiy",
+            "items": [
+              "Mehnat intizomi buzilishi",
+              "Ish beruvchi jazolaydi"
+            ]
+          },
+          {
+            "label": "Ma’muriy",
+            "items": [
+              "Huquqbuzarlik uchun",
+              "Ko‘pincha jarima"
+            ]
+          },
+          {
+            "label": "Fuqarolik-huquqiy",
+            "items": [
+              "Zararni qoplash",
+              "Boshqa javobgarlikdan ozod etmaydi"
+            ]
+          }
+        ],
+        "caption": "Mashg‘ulotdagi uch javobgarlik"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Vrach xatosi uchun qanday javobgarlik turlari bo‘lishi mumkin? 2) Ular bir-birini istisno qiladimi? Doskada: uch ustunli sxema (intizomiy, ma’muriy, fuqarolik) chizdiring. Tipik xato: talaba bitta javobgarlik boshqasini bekor qiladi deb o‘ylaydi."
     },
     {
@@ -84,7 +111,41 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Mehnat qonunchiligi",
+        "children": [
+          {
+            "label": "Konstitutsiya 37-modda",
+            "items": [
+              "Mehnat, erkin ish tanlash",
+              "Ishsizlikdan himoya"
+            ]
+          },
+          {
+            "label": "Mehnat kodeksi",
+            "items": [
+              "Asosiy manba",
+              "Bozor tamoyillariga mos"
+            ]
+          },
+          {
+            "label": "Mehnat shartnomasi",
+            "items": [
+              "Munosabatni o‘rnatish, o‘zgartirish",
+              "To‘xtatish tartibi"
+            ]
+          },
+          {
+            "label": "Qonun belgilaydi",
+            "items": [
+              "Ish hajmi, ish haqi",
+              "Ichki tartib, intizom, himoya"
+            ]
+          }
+        ],
+        "caption": "Mehnat huquqining mazmuni"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Konstitutsiyadagi mehnat huquqlari vrach uchun nimani anglatadi? 2) Mehnat kodeksi nimalarni tartibga soladi? Doskada: Konstitutsiya → Mehnat kodeksi → mehnat shartnomasi zanjirini yozdiring. Tipik xato: Konstitutsiyaning 37-moddasini Mehnat kodeksi moddasi bilan almashtirib yuborish."
     },
     {
@@ -129,11 +190,11 @@
         "rows": [
           [
             "A",
-            "Ishlab chiqarish jarayonida vujudga keladi"
+            "Ishlab chiqarishda vujudga keladi"
           ],
           [
             "B",
-            "Xodim jamoa a’zosi: huquq va majburiyat bor"
+            "Jamoa a’zosi: huquq va majburiyat"
           ],
           [
             "V",
@@ -179,31 +240,25 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Huquqlar yonma-yon",
-        "nodes": [],
-        "header": [
-          "Jihat",
-          "Xodim",
-          "Ish beruvchi"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Xodim (MK 16)",
+            "items": [
+              "Ish haqi, dam olish",
+              "Xavfsiz sharoit",
+              "Sud himoyasi, yuridik yordam"
+            ]
+          },
+          {
+            "title": "Ish beruvchi (MK 17)",
+            "items": [
+              "Shartnomani tuzadi va bekor qiladi",
+              "Ishni to‘laqonli bajarishni talab etadi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Asosiy huquq",
-            "Ish haqi, dam olish, xavfsiz sharoit",
-            "Ishni to‘laqonli bajarishni talab etish"
-          ],
-          [
-            "Shartnoma",
-            "Mehnat huquqlari kafolatlanadi",
-            "Shartnomalarni tuzish va bekor qilish"
-          ],
-          [
-            "Zarar",
-            "Sog‘lig‘iga etkazilgan zararni qoplash",
-            "Manbada ko‘rsatilmagan"
-          ]
-        ]
+        "caption": "Huquqlar yonma-yon"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Vrach sifatida qaysi huquqlaringizni bilasiz? 2) Ish beruvchi huquqlari nima uchun xodimnikidan qisqa berilgan? Doskada: ikki ustunli jadval chizdirib, xodim va ish beruvchi huquqlarini yozdiring. Tipik xato: MK 16-moddani (xodim huquqlari) 17-modda (ish beruvchi huquqlari) bilan almashtirish. Ijtimoiy ta’minot, kasaba uyushmasiga a’zolik, malaka oshirish kabi huquqlarni ham eslatib o‘ting."
     },
@@ -239,36 +294,33 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Majburiyatlar va taqiq",
-        "nodes": [],
-        "header": [
-          "Tomon",
-          "Majburiyat",
-          "Modda"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Xodim (MK 176)",
+            "items": [
+              "Vazifani halol bajarish",
+              "Intizom, texnika xavfsizligi",
+              "Mol-mulkni asrash"
+            ]
+          },
+          {
+            "title": "Ish beruvchi (MK 177)",
+            "items": [
+              "Mehnatni tashkil etish",
+              "Shartnomadagi sharoitni yaratish",
+              "Mehnat muhofazasiga rioya"
+            ]
+          },
+          {
+            "title": "Taqiq",
+            "items": [
+              "Vazifaga kirmaydigan ish",
+              "Hayot, sha’nga zarar soluvchi ish"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Xodim",
-            "Halol mehnat, intizom, mol-mulkni asrash",
-            "MK 176"
-          ],
-          [
-            "Ish beruvchi",
-            "Mehnatni tashkil etish, sharoit yaratish",
-            "MK 177"
-          ],
-          [
-            "Ish beruvchi",
-            "Intizom va mehnat muhofazasini ta’minlash",
-            "MK 177"
-          ],
-          [
-            "Taqiq",
-            "Vazifadan tashqari yoki qonunga xilof ish",
-            "Ish beruvchiga"
-          ]
-        ]
+        "caption": "Majburiyatlar va taqiq"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Navbatchi vrachdan vazifasiga kirmaydigan ish talab qilinsa nima qilinadi? 2) Xodim majburiyatlari ichki tartib qoidalarida qanday mustahkamlanadi? Doskada: 176- va 177-moddalarni ikki ustunda yozdiring, ustiga ish beruvchi taqiqlari ro‘yxatini qo‘shdiring. Tipik xato: majburiyatni (176, 177) huquq (16, 17) bilan aralashtirish."
     },
@@ -304,17 +356,30 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Ishga qabul bosqichlari",
-        "nodes": [
-          "Pasport, daftarcha, diplom va b.",
-          "Mehnat shartnomasi tuziladi",
-          "Dastlabki sinov (3 oygacha)",
-          "Bekor qilish: 3 kun oldin yozma",
-          "Shartnoma amalda davom etadi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Hujjatlar",
+            "text": "Pasport, daftarcha, harbiy hujjat, diplom"
+          },
+          {
+            "title": "Shartnoma",
+            "text": "Ish joyi, vazifa, boshlanish, haq"
+          },
+          {
+            "title": "Sinov",
+            "text": "3 oygacha; homilador va 3 yoshgacha bolalilarga yo‘q"
+          },
+          {
+            "title": "Bekor qilish",
+            "text": "Sinovda 3 kun oldin yozma"
+          },
+          {
+            "title": "Davom etish",
+            "text": "Muddat o‘tsa shartnoma amalda"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Ishga qabul bosqichlari"
       },
       "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Muddatli shartnoma qancha muddatga tuziladi (besh yildan oshmaydi) va nomuayyan shartnomani xodim roziligisiz muddatliga o‘zgartirish mumkinmi? 2) Sinov nima uchun kerak? Doskada: ishga qabul zanjirini (hujjat, shartnoma, sinov, natija) chizdirib, sinovda har tomon bekor qilish huquqini belgilating. Tipik xato: sinov muddatini uch oydan ortiq deb hisoblash yoki barcha ayollarga sinov belgilanadi deb o‘ylash. Shartnoma tuzish chog‘ida xodim huquqlari kafolatlari pasaytirilmasligini ta’kidlang."
     },
@@ -331,7 +396,7 @@
           "uncertain": false
         },
         {
-          "text": "Tuzish tamoyillari: qonunga rioya, vakolatlilik, tanlash va muhokama erkinligi, ixtiyoriylik, bajarilishini ta’minlash, muntazam tekshiruv, javobgarlikning muqarrarligi.",
+          "text": "Tamoyillar: qonunga rioya, vakolatlilik, tanlash va muhokama erkinligi, ixtiyoriylik, bajarilishini ta’minlash, tekshiruv, muqarrar javobgarlik.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -358,7 +423,42 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Jamoa shartnomasi",
+        "children": [
+          {
+            "label": "Tomonlar",
+            "items": [
+              "Kasaba uyushmasi/vakolatli organ",
+              "Ish beruvchi"
+            ]
+          },
+          {
+            "label": "Tamoyillar",
+            "items": [
+              "Qonunga rioya, vakolatlilik",
+              "Erkinlik, ixtiyoriylik",
+              "Nazorat, muqarrar javobgarlik"
+            ]
+          },
+          {
+            "label": "Shartlar",
+            "items": [
+              "Qonundagidan imtiyozliroq mumkin"
+            ]
+          },
+          {
+            "label": "Tartib",
+            "items": [
+              "Xodimlar muhokamasi",
+              "Umumiy yig‘ilish",
+              "Tugagach yangisigacha amalda"
+            ]
+          }
+        ],
+        "caption": "Jamoa shartnomasi: tomonlar va tartib"
+      },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Jamoa shartnomasi individual mehnat shartnomasidan nimasi bilan farq qiladi? 2) Nega ixtiyoriylik va javobgarlikning muqarrarligi birga tilga olinadi? Doskada: tomonlar sxemasini chizing (kasaba uyushmasi ↔ ish beruvchi) va yetti tamoyilni ro‘yxatlang. Tipik xato: jamoa shartnomasini xodim bilan tuziladigan individual mehnat shartnomasi bilan adashtirish."
     },
     {
@@ -452,7 +552,7 @@
           ],
           [
             "Tashqi o‘rindoshlik",
-            "Bo‘sh vaqtda boshqa muassasada, haq evaziga",
+            "Bo‘sh vaqtda boshqa muassasada",
             "Boshqa shifoxonada bo‘sh vaqtda ishlash"
           ],
           [
@@ -501,36 +601,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Mehnat muhofazasi: tomonlar majburiyati",
-        "nodes": [],
-        "header": [
-          "Mavzu",
-          "Ish beruvchi",
-          "Xodim"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Normal ish vaqti",
+            "value": "40",
+            "unit": "soat/hafta"
+          },
+          {
+            "label": "Tibbiy xodimlar",
+            "value": "36",
+            "unit": "soatgacha"
+          },
+          {
+            "label": "Ko‘rik xarajati",
+            "value": "xodim to‘lamaydi"
+          },
+          {
+            "label": "Xodim ko‘rikni",
+            "value": "rad eta olmaydi"
+          }
         ],
-        "rows": [
-          [
-            "Sharoit",
-            "Xavfsiz va gigienik sharoit yaratadi",
-            "Talab va farmoyishlarga rioya qiladi"
-          ],
-          [
-            "Himoya",
-            "Xavf va himoya vositalari haqida xabar beradi",
-            "Shaxsiy himoya vositalaridan foydalanadi"
-          ],
-          [
-            "Ko‘rik",
-            "Dastlabki va davriy ko‘rikni tashkil etadi",
-            "Ko‘rikdan o‘tadi, rad eta olmaydi"
-          ],
-          [
-            "Javobgarlik",
-            "Mehnat muhofazasiga qonun oldida javobgar",
-            "Xavf va hodisani shoshilinch xabar qiladi"
-          ]
-        ]
+        "caption": "Ish vaqti va ko‘riklar"
       },
       "teacher_notes": "Vaqt: 12 daqiqa. Muhokama: 1) Nega tibbiy xodimlarning ish vaqti 36 soatgacha qisqartirilgan (his-hayajon, aqliy zo‘riqish, asab tarangligi)? 2) Ko‘rikni rad etish oqibati nima (xodim ishdan chetlatiladi)? Doskada: ish vaqti bo‘yicha 40 va 36 soatni solishtiruvchi ustunli sxema chizdiring. Tipik xato: tibbiy xodimlar uchun ish vaqtining aniq ro‘yxatini Hukumat belgilashini unutish va ko‘rik xarajatini xodim to‘laydi deb o‘ylash."
     },
@@ -566,17 +658,30 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Xodim tashabbusi: bosqichlar",
-        "nodes": [
-          "Yozma ariza beradi",
-          "Ikki hafta oldin ogohlantiradi",
-          "Ariza qaytarib olinishi mumkin",
-          "Muddat o‘tgach ishni to‘xtatadi",
-          "Daftarcha, hisob-kitob beriladi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1: Ariza",
+            "text": "Yozma ariza beradi"
+          },
+          {
+            "title": "2: Ogohlantirish",
+            "text": "Ikki hafta oldin"
+          },
+          {
+            "title": "3: Qaytarib olish",
+            "text": "Muddat tugamaguncha mumkin"
+          },
+          {
+            "title": "4: Ketish",
+            "text": "Muddat o‘tgach ishni to‘xtatadi"
+          },
+          {
+            "title": "5: Hisob-kitob",
+            "text": "Daftarcha va hisob-kitob beriladi"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Xodim tashabbusi: bosqichlar"
       },
       "teacher_notes": "Vaqt: 10 daqiqa. Muhokama: 1) Qaysi holatda ish beruvchi shartnomani xodim so‘ragan muddatda bekor qilishi shart (o‘quv yurtiga qabul, pensiya, saylanish va h.k.)? 2) Taraflar kelishsa, ikki hafta o‘tmasdan bekor qilish mumkinmi? Doskada: flow sxemani tuzing va har bosqichda ariza qaytarib olish imkonini belgilang. Tipik xato: ogohlantirish muddati tugagach ish beruvchi hech narsa qilmasa ham ariza amal qiladi deb o‘ylash."
     },
@@ -672,31 +777,31 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Intizomiy jazo muddatlari",
-        "nodes": [],
-        "header": [
-          "Masala",
-          "Qoida"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Jarima (odatda)",
+            "value": "30",
+            "unit": "% gacha"
+          },
+          {
+            "label": "Qo‘llash muddati",
+            "value": "1 oy"
+          },
+          {
+            "label": "Eng chekka muddat",
+            "value": "6 oy"
+          },
+          {
+            "label": "Taftishda",
+            "value": "2 yil"
+          },
+          {
+            "label": "Jazoning amal qilishi",
+            "value": "1 yil"
+          }
         ],
-        "rows": [
-          [
-            "Qo‘llash",
-            "Aniqlangandan 1 oy ichida; kasallik kirmaydi"
-          ],
-          [
-            "Eng chekka muddat",
-            "6 oy; taftishda 2 yil"
-          ],
-          [
-            "Amal qilishi",
-            "Jazo kunidan 1 yil"
-          ],
-          [
-            "Muddatidan oldin",
-            "Ish beruvchi bekor qilishi mumkin"
-          ]
-        ]
+        "caption": "Intizomiy jazo: chegaralar"
       },
       "teacher_notes": "Vaqt: 12 daq. Muhokama: 1) Nega jazodan oldin tushuntirish xati so‘raladi? 2) Jazo amal qilish muddati tugasa, xodimning holati qanday o‘zgaradi? Doskada: jazo qo‘llash muddatlarini vaqt chizig‘i shaklida chizdiring (aniqlash – 1 oy – 6 oy – 2 yil). Tipik xato: jazoni qo‘llash muddati (1 oy) bilan jazoning amal qilish muddatini (1 yil) aralashtirish. Qo‘shimcha: jarima miqdorini 50% gacha belgilash faqat ichki tartibda alohida qilmishlarga mumkin (90-bet)."
     },
@@ -713,7 +818,7 @@
           "uncertain": false
         },
         {
-          "text": "Javob: qilmish aniqlangandan bir oy ichida. Xodimning ta’tilda yoki kasallikda bo‘lgan vaqti bu muddatga kirmaydi. Xodimdan yozma tushuntirish xati talab qilinadi.",
+          "text": "Javob: qilmish aniqlangandan bir oy ichida. Ta’til yoki kasallik vaqti bu muddatga kirmaydi. Xodimdan yozma tushuntirish xati talab qilinadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -774,7 +879,7 @@
           "uncertain": false
         },
         {
-          "text": "Ma’muriy huquqbuzarlik: huquq va erkinliklarga, mulkka, jamoat tartibiga, tabiiy muhitga tajovuz qiluvchi aybli harakat yoki harakatsizlik. Jinoyatdagi kabi ijtimoiy xavf alomati yo‘q.",
+          "text": "Ma’muriy huquqbuzarlik: huquq, mulk, jamoat tartibi, tabiiy muhitga tajovuz qiluvchi aybli harakat yoki harakatsizlik. Ijtimoiy xavf alomati yo‘q.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -783,7 +888,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Ma’muriy qonunchilik",
+            "items": [
+              "Boshqaruv va jamoat munosabatlari",
+              "Sanitariya, litsenziyalash qoidalari",
+              "Javobgarlik va jazo tartibi"
+            ]
+          },
+          {
+            "title": "Ma’muriy huquqbuzarlik",
+            "items": [
+              "Huquq, mulk, tartibga tajovuz",
+              "Aybli harakat yoki harakatsizlik",
+              "Ijtimoiy xavf alomati yo‘q"
+            ]
+          }
+        ],
+        "caption": "Qonunchilik va huquqbuzarlik"
+      },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega huquq bilan birga majburiyat tengligi ta’kidlanadi? 2) Ma’muriy huquqbuzarlik jinoyatdan qaysi belgisi bilan farqlanadi? Doskada: ikki ustunli solishtirish (ma’muriy huquqbuzarlik va jinoyat) chizing. Tipik xato: ma’muriy huquqbuzarlikni jinoyat bilan bir xil deb hisoblash; aslida oqibati og‘ir bo‘lsa yoki takror sodir etilsa, ayrim huquqbuzarliklar jinoyat sifatida baholanishi mumkin (93-bet). Eslab qoling: ma’muriy ≠ jinoiy."
     },
     {
@@ -818,31 +944,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ayb shakllarini taqqoslash",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Qasddan",
-          "Ehtiyotsizlik"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Qasddan",
+            "items": [
+              "G‘ayrihuquqiyligini biladi",
+              "Oqibatni oldindan ko‘radi",
+              "Istaydi yoki ongli yo‘l qo‘yadi"
+            ]
+          },
+          {
+            "title": "Ehtiyotsizlik",
+            "items": [
+              "Oqibatni xohlamaydi",
+              "Yengiltaklik: oldini olaman deydi",
+              "Yoki ko‘rishi lozim edi, ko‘rmadi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Oqibatga munosabat",
-            "Oqibatni istaydi yoki ongli yo‘l qo‘yadi",
-            "Oqibatning oldini olaman deb o‘ylaydi"
-          ],
-          [
-            "Oldindan ko‘rish",
-            "Zararli oqibatni oldindan ko‘radi",
-            "Ko‘rgan yoki ko‘rishi lozim bo‘lgan"
-          ],
-          [
-            "G‘ayrihuquqiylikni bilish",
-            "Harakat g‘ayrihuquqiy ekanini biladi",
-            "Oqibatni xohlamaydi"
-          ]
-        ]
+        "caption": "Ayb shakllari"
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Vrach asoratni ko‘rgan, lekin ‘o‘tib ketadi’ deb o‘ylagan holat qaysi shaklga kiradi? 2) Oqibatga ‘ongli yo‘l qo‘yish’ nimani bildiradi? Doskada: ikki ustunli jadvalni talabalar bilan birga to‘ldiring. Tipik xato: yengiltaklikni qasddan deb hisoblash."
     },
@@ -878,31 +999,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ma’muriy qilmish va jinoyat",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Ma’muriy",
-          "Jinoyat"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Ma’muriy",
+            "items": [
+              "Xavf alomatlari yo‘q",
+              "Ma’muriy javobgarlik",
+              "G‘ayrihuquqiy, aybli qilmish"
+            ]
+          },
+          {
+            "title": "Jinoyat",
+            "items": [
+              "Ijtimoiy xavf alomatlari bor",
+              "Jinoiy javobgarlik",
+              "Og‘ir oqibatda jinoyatga aylanishi mumkin"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Ijtimoiy xavf",
-            "Xavf alomatlarini tutmaydi",
-            "Ijtimoiy xavf alomatlari bor"
-          ],
-          [
-            "Javobgarlik",
-            "Ma’muriy javobgarlik",
-            "Jinoiy javobgarlik"
-          ],
-          [
-            "Umumiy belgi",
-            "G‘ayrihuquqiy va aybli qilmish",
-            "Xos belgilar o‘xshash"
-          ]
-        ]
+        "caption": "Ma’muriy huquqbuzarlik va jinoyat"
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Nima uchun ayni bir qoidabuzarlik ba’zan jinoyat, ba’zan ma’muriy bo‘ladi? 2) Epidemiyaga qarshi qoidabuzarlikda qaysi omillar baholanadi? Doskada: ‘xavf darajasi’ shkalasini chizib, ma’muriy va jinoiy chegarani belgilang. Tipik xato: ‘ma’muriy ≠ jinoyat’ farqini faqat qilmish nomiga qarab belgilash; asosiy mezon ijtimoiy xavf va oqibat."
     },
@@ -946,7 +1062,38 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Ma’muriy javobgarlikdan ozod",
+        "children": [
+          {
+            "label": "Oxirgi zarurat",
+            "items": [
+              "Xavfni boshqacha bartaraf etib bo‘lmaydi",
+              "Zarar oldi olingandan kam"
+            ]
+          },
+          {
+            "label": "16 yoshgacha",
+            "items": [
+              "Javobgarlikka tortilmaydi"
+            ]
+          },
+          {
+            "label": "Kam ahamiyatli",
+            "items": [
+              "Ogohlantirish bilan cheklanadi"
+            ]
+          },
+          {
+            "label": "Fuqarolik qonunida",
+            "items": [
+              "Oxirgi zarurat qoplashdan ozod etmaydi"
+            ]
+          }
+        ],
+        "caption": "Javobgarlikni istisno etuvchi holatlar"
+      },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Oxirgi zarurat shartlari nima? Ikkala shart bir vaqtda kerakmi? 2) Ma’muriy javobgarlikdan ozod bo‘lgan shaxs zararni qoplashi shartmi? Doskada: oxirgi zarurat uchun ikki shartli ‘tekshiruv ro‘yxati’ chizing. Tipik xato: oxirgi zarurat ma’muriy javobgarlikni ham, fuqaroviy zararni qoplashni ham istisno qiladi deb o‘ylash."
     },
     {
@@ -1024,17 +1171,15 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "MJhK dagi jazo choralari",
+        "kind": "cycle",
         "nodes": [
           "Jarima",
           "Haqi to‘lanib olib qo‘yish",
           "Musodara",
-          "Maxsus huquqdan mahrum qilish",
+          "Maxsus huquqdan mahrum",
           "Ma’muriy qamoq"
         ],
-        "header": [],
-        "rows": []
+        "caption": "MJhK 23-modda: 5 jazo chorasi"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: nega tibbiy xodimlarning kasb huquqbuzarliklarida aksariyat hollarda jarima belgilanadi (manbada shunday deyilgan, 94-bet)? Haqi to‘lanib olib qo‘yish va musodara xususiy tibbiy yoki farmatsevtika amaliyotida qo‘llanishi mumkin (95-bet). Doskaga beshta jazoni yozib, olib qo‘yish bilan musodara farqini o‘zlari chizsin. Tipik xato: olib qo‘yish va musodarani bir xil deb o‘ylash."
     },
@@ -1070,36 +1215,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Jarima chegaralari (eng kam oylik ish haqidan)",
-        "nodes": [],
-        "header": [
-          "Holat",
-          "Fuqaro",
-          "Mansabdor shaxs"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Fuqaro",
+            "items": [
+              "Eng kam: ish haqining 1/50",
+              "Eng ko‘p: 5 baravar",
+              "Istisno: 100 baravargacha",
+              "Mahalliy qaror: 3 baravargacha"
+            ]
+          },
+          {
+            "title": "Mansabdor shaxs",
+            "items": [
+              "Eng kam: ish haqining 1/10",
+              "Eng ko‘p: 10 baravar",
+              "Istisno: 150 baravargacha",
+              "Mahalliy qaror: 5 baravargacha"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Eng kam miqdor",
-            "ish haqining 1/50 qismi",
-            "ish haqining 1/10 qismi"
-          ],
-          [
-            "Eng ko‘p miqdor",
-            "5 baravar",
-            "10 baravar"
-          ],
-          [
-            "Istisno holat",
-            "100 baravargacha",
-            "150 baravargacha"
-          ],
-          [
-            "Mahalliy qaror",
-            "3 baravargacha",
-            "5 baravargacha"
-          ]
-        ]
+        "caption": "Jarima chegaralari (eng kam oylik ish haqidan)"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: nega mansabdor shaxs uchun chegaralar yuqoriroq? Doskada jadvalni talabalar o‘zlari qayta chizsin va raqamlarni yodlashga urinsin. Tipik xato: fuqaro bilan mansabdor shaxs ustunlarini almashtirish yoki mahalliy qaror chegarasini umumiy chegara bilan aralashtirish."
     },
@@ -1143,7 +1280,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Haq to‘lab olib qo‘yish",
+            "items": [
+              "Ashyo majburan olinib sotiladi",
+              "Tushum sobiq egasiga beriladi"
+            ]
+          },
+          {
+            "title": "Musodara",
+            "items": [
+              "Haq to‘lanmaydi",
+              "Davlat mulkiga o‘tadi"
+            ]
+          },
+          {
+            "title": "Jazo muddati",
+            "items": [
+              "Sodir etilgan kundan 2 oygacha",
+              "Jinoyat ishi rad etilsa: 1 oy"
+            ]
+          }
+        ],
+        "caption": "Olib qo‘yish va musodara farqi"
+      },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Olib qo‘yish va musodarada pul kimga tegadi? 2) Nega bu choralar xususiy klinika va dorixonada ko‘proq uchraydi? Doskada: ikki ustunli solishtirish (olib qo‘yish ≠ musodara). Tipik xato: ikkalasini bir narsa deb o‘ylash. Diqqat: musodarada haq to‘lanmaydi. Ikki oylik muddat bojxona musodarasiga tatbiq etilmaydi."
     },
     {
@@ -1178,17 +1341,30 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Bayonnoma tartibi",
-        "nodes": [
-          "Qoidalar buzilishi tekshiriladi",
-          "Bayonnoma tuziladi",
-          "Huquqbuzar va guvohlar imzolaydi",
-          "Imzodan bosh tortilsa, yoziladi",
-          "Ish ko‘rib chiqiladi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Tekshiruv",
+            "text": "Qoidalar buzilishi aniqlanadi"
+          },
+          {
+            "title": "Bayonnoma",
+            "text": "Sana, joy, mohiyat, me’yor, guvohlar"
+          },
+          {
+            "title": "Imzo",
+            "text": "Tuzuvchi, huquqbuzar, guvoh, jabrlanuvchi"
+          },
+          {
+            "title": "Bosh tortsa",
+            "text": "Shu bayonnomaga yoziladi"
+          },
+          {
+            "title": "Ko‘rib chiqish",
+            "text": "Sudya, komissiya, inspeksiya organi"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Bayonnoma tartibi"
       },
       "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Bayonnomada nimalar ko‘rsatiladi? 2) Huquqbuzar imzolamasa nima bo‘ladi? Doskada: bayonnoma tuzish zanjirini chizing. Tipik xato: bayonnoma tuzgan organ bilan ishni hal qiluvchi organni aralashtirish. Moddiy zarar yetkazilgan bo‘lsa, bu ham bayonnomada ko‘rsatiladi."
     },
@@ -1214,7 +1390,7 @@
           "uncertain": false
         },
         {
-          "text": "Ish odatda shaxs ishtirokida ko‘riladi. Xabar qilingan va kechiktirish iltimosi bo‘lmasa, ishtirokisiz mumkin. Qamoq, musodara yoki olib qo‘yishda qatnashish shart.",
+          "text": "Ish odatda shaxs ishtirokida ko‘riladi; xabar qilingan va kechiktirish iltimosi bo‘lmasa, ishtirokisiz ham. Qamoq, musodara, olib qo‘yishda qatnashish shart.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1232,7 +1408,40 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "MJhK 294: shaxs huquqlari",
+        "children": [
+          {
+            "label": "Ish materiallari",
+            "items": [
+              "Bilan tanishish",
+              "Izoh, dalil, iltimos"
+            ]
+          },
+          {
+            "label": "Himoya",
+            "items": [
+              "Advokat yordami",
+              "Tarjimon, ona tilida so‘zlash"
+            ]
+          },
+          {
+            "label": "Shikoyat",
+            "items": [
+              "Qaror ustidan berish"
+            ]
+          },
+          {
+            "label": "Jabrlanuvchi",
+            "items": [
+              "Ayblanuvchi kabi huquqlar",
+              "Ekspertiza tayinlanishi"
+            ]
+          }
+        ],
+        "caption": "Javobgarlikka tortilayotgan shaxs huquqlari"
+      },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Qaysi jazo turlarida shaxsning qatnashishi majburiy? 2) Ekspertiza qachon tayinlanadi? Doskada: shaxsning huquqlari ro‘yxatini chizing. Tipik xato: ishtirok har doim shart deb o‘ylash; shartlar faqat ayrim jazolarda. Keyin bo‘lim bo‘yicha Voqea tahlili o‘tkazing."
     },
     {
@@ -1275,7 +1484,31 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "MJhK: huquqlarga tajovuz",
+        "children": [
+          {
+            "label": "Tuhmat — 40-modda"
+          },
+          {
+            "label": "Haqorat — 41-modda"
+          },
+          {
+            "label": "Davlat tili — 42-modda"
+          },
+          {
+            "label": "Murojaatlar — 43-modda"
+          },
+          {
+            "label": "Mehnat qonuni — 49-modda"
+          },
+          {
+            "label": "Majburlash — 51-modda"
+          }
+        ],
+        "caption": "Ko‘proq muassasa rahbarlari subyekt"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega bu moddalar ko‘proq rahbarlarga tegishli? 2) Tuhmat va haqorat bemorga nisbatan qanday ko‘rinishda bo‘lishi mumkin? Doskada chizish: 6 ta moddani raqami bilan ustun qilib yozdiring. Tipik xato: talabalar barcha moddalarni oddiy shifokorga tegishli deb o‘ylaydi."
     },
     {
@@ -1310,36 +1543,38 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "MJhK bo‘yicha guruhlar",
-        "nodes": [],
-        "header": [
-          "Yo‘nalish",
-          "Modda",
-          "Qilmish"
+        "kind": "tree",
+        "root": "MJhK: aholi salomatligi",
+        "children": [
+          {
+            "label": "52–56-moddalar",
+            "items": [
+              "Jarohat, sanitariya",
+              "Epidemiya, radiatsiya"
+            ]
+          },
+          {
+            "label": "57–59-moddalar",
+            "items": [
+              "OITS, tanosil kasalliklari",
+              "Manbani yashirish, rad etish"
+            ]
+          },
+          {
+            "label": "Xususiy amaliyot",
+            "items": [
+              "164, 176-moddalar va b."
+            ]
+          },
+          {
+            "label": "Boshqaruv tartibi",
+            "items": [
+              "199, 215-moddalar",
+              "Tez yordamni aldab chaqirish"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Salomatlik",
-            "52–56",
-            "Jarohat, sanitariya, epidemiya, radiatsiya"
-          ],
-          [
-            "Tanosil/OITS",
-            "57–59",
-            "Manbani yashirish, rad etish, xavfsizlik"
-          ],
-          [
-            "Xususiy amaliyot",
-            "164, 176 va h.k.",
-            "Savdo/xizmat qoidasi, shartnoma intizomi"
-          ],
-          [
-            "Boshqaruv tartibi",
-            "199, 215",
-            "Tez yordamni aldab chaqirish, hisobot"
-          ]
-        ]
+        "caption": "Sog‘liqni saqlash sohasidagi huquqbuzarliklar"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) 59-modda (xavfsizlik yetarli ta’minlanmasligi) tibbiy xodimga qanday tegishli? 2) Xususiy klinikada qaysi qilmishlar uchrashi mumkin? Doskada chizish: to‘rt guruhli jadvalni daftarga ko‘chirtiring. Eslatma: tez yordamni aldab chaqirishda subyekt fuqaro, hisobotni buzishda esa sog‘liqni saqlash mansabdor shaxslari. Tipik xato: 199-modda subyektini tibbiy xodim deb hisoblash."
     },
@@ -1365,7 +1600,7 @@
           "uncertain": false
         },
         {
-          "text": "Ishni ko‘rishga davlat sanitariya nazorati organlari kabi vakolatli organlar haqli. Asosiy jazo odatda jarima; fuqaroga eng kam ish haqining 1/50 dan 5 baravarigacha.",
+          "text": "Ishni davlat sanitariya nazorati kabi vakolatli organlar ko‘radi. Asosiy jazo odatda jarima; fuqaroga eng kam ish haqining 1/50 dan 5 baravarigacha.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1390,7 +1625,7 @@
       "title": "Fuqarolik huquqi va delikt javobgarligi",
       "bullets": [
         {
-          "text": "Fuqarolik huquqi fuqarolar va tashkilotlarning mulkiy hamda u bilan bog‘liq nomulkiy munosabatlarini tartibga soladi. Subyekt: jismoniy shaxs, yuridik shaxs, davlat.",
+          "text": "Fuqarolik huquqi fuqaro va tashkilotlarning mulkiy hamda unga bog‘liq nomulkiy munosabatlarini tartibga soladi. Subyekt: jismoniy, yuridik shaxs, davlat.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1408,7 +1643,7 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: delikt ≠ shartnomaviy javobgarlik. Deliktda umumiy obyektiv mezonlar, shartnomaviyda faqat shartnoma talabini buzish. Vrachlarda ko‘proq delikt uchraydi.",
+          "text": "Diqqat: delikt ≠ shartnomaviy javobgarlik. Deliktda umumiy obyektiv mezonlar, shartnomaviyda faqat shartnoma buzilishi. Vrachlarda ko‘proq delikt.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1426,7 +1661,41 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Fuqarolik huquqi va zarar",
+        "children": [
+          {
+            "label": "Subyektlar",
+            "items": [
+              "Jismoniy, yuridik shaxs",
+              "Davlat"
+            ]
+          },
+          {
+            "label": "Layoqat",
+            "items": [
+              "Huquq layoqati",
+              "Muomala layoqati"
+            ]
+          },
+          {
+            "label": "Delikt",
+            "items": [
+              "Umumiy obyektiv mezonlar",
+              "Vrachlarda ko‘proq uchraydi"
+            ]
+          },
+          {
+            "label": "Zarar turlari",
+            "items": [
+              "Haqiqiy zarar",
+              "Boy berilgan foyda"
+            ]
+          }
+        ],
+        "caption": "Fuqarolik huquqi asoslari"
+      },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega bemor va muassasa orasida shartnoma kamdan-kam bo‘ladi, bu javobgarlik turiga qanday ta’sir qiladi? 2) Haqiqiy zarar va boy berilgan foydaga bittadan misol keltiring. Doskada: delikt va shartnomaviy javobgarlikni ikki ustunli jadvalga chizing. Tipik xato: talabalar huquq layoqati va muomala layoqatini aralashtiradi."
     },
     {
@@ -1476,6 +1745,137 @@
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Harakatsizlik ham g‘ayriqonuniy harakat bo‘la oladimi, misol keltiring. 2) Qasddan va ehtiyotsizlik shaklini vrach faoliyatidan misol bilan farqlang. Doskada: to‘rt shartli zanjirni chizib, bitta shart tushib qolsa nima bo‘lishini ko‘rsating. Tipik xato: sababiy bog‘liqlikni zarar fakti bilan bir narsa deb o‘ylash."
     },
     {
+      "title": "Shaxsiy nomulkiy huquqlar va delikt tamoyili",
+      "bullets": [
+        {
+          "text": "Delikt tamoyili: bir shaxsning boshqasiga zarar yetkazishi o‘zi zararni qoplash majburiyatini yuzaga keltiradi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "103"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shartnomaviy javobgarlikda g‘ayriqonuniy harakat faqat shartnoma talablarining buzilishini anglatadi; hajmi deliktdan kam bo‘lmasligi lozim.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "103"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shaxsiy nomulkiy huquqlar: hayot va sog‘liq, sha’n va qadr-qimmat, shaxsiy daxlsizlik, ishchanlik obro‘si, shaxsiy hayot va oilaviy sir.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "103"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Fuqarolik huquqlarini himoya qilish usullari qatorida zararni to‘lash va ma’naviy ziyonni qoplash bor (FK 15-modda).",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "103"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Shaxsiy nomulkiy huquqlar",
+        "children": [
+          {
+            "label": "Hayot va sog‘liq"
+          },
+          {
+            "label": "Sha’n, qadr-qimmat"
+          },
+          {
+            "label": "Shaxsiy daxlsizlik"
+          },
+          {
+            "label": "Ishchanlik obro‘si"
+          },
+          {
+            "label": "Shaxsiy hayot, oilaviy sir"
+          }
+        ],
+        "caption": "Qonunda sanalgan nomulkiy huquqlar"
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: shifokor sirini oshkor etish qaysi nomulkiy huquqqa tajovuz? Doskada: ro‘yxatni yozing. Tipik xato: deliktni faqat mulkiy zarar bilan bog‘lash."
+    },
+    {
+      "title": "Tovar, ish va xizmat nuqsonlari zarari (FK 1017–1020)",
+      "bullets": [
+        {
+          "text": "Konstruktiv, retseptur yoki boshqa nuqson, ma’lumotning noto‘g‘ri yoki yetarli emasligi hayot, sog‘liq yoki mulkka zarar yetkazsa, qoplanadi (FK 1017).",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "108"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zarar shartnoma bo‘lgan-bo‘lmaganidan qat’i nazar sotuvchi yoki tayyorlovchi (ijrochi) tomonidan qoplanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "108"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mahsulot nuqsoni zarari jabrlanuvchi tanloviga ko‘ra sotuvchi yoki tayyorlovchi, xizmat nuqsoni zarari esa ijrochi tomonidan qoplanadi (FK 1018).",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "108"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Engib bo‘lmas kuch yoki iste’molchi qoidalarni buzgani isbotlansa, javobgar ozod bo‘ladi (FK 1020).",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "108"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Mahsulot nuqsoni",
+            "items": [
+              "Sotuvchi yoki tayyorlovchi",
+              "Jabrlanuvchi tanlaydi (dori, texnika)"
+            ]
+          },
+          {
+            "title": "Ish/xizmat nuqsoni",
+            "items": [
+              "Ishni bajargan, xizmat ko‘rsatgan ijrochi"
+            ]
+          },
+          {
+            "title": "Javobgarlikdan ozod",
+            "items": [
+              "Engib bo‘lmas kuch",
+              "Iste’molchi qoidani buzgan"
+            ]
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: dori nuqsoni va vrach xizmati nuqsoni zarari kim tomonidan qoplanadi? Doskada: uch ustunni chizing. Tipik xato: zararni qoplash faqat shartnoma bo‘lsa mumkin deb o‘ylash."
+    },
+    {
       "title": "Aybsizlik holatlari va ayb prezumpsiyasi",
       "bullets": [
         {
@@ -1515,7 +1915,40 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Xodim aybsiz topiladi",
+        "children": [
+          {
+            "label": "Engib bo‘lmas kuch"
+          },
+          {
+            "label": "Bemor roziligi",
+            "items": [
+              "Zarar iltimos yoki rozilik bilan"
+            ]
+          },
+          {
+            "label": "Bemor ehtiyotsizligi",
+            "items": [
+              "Qo‘pol ehtiyotsizlik"
+            ]
+          },
+          {
+            "label": "Ayb prezumpsiyasi",
+            "items": [
+              "Aybsizlikni zarar etkazuvchi isbotlaydi"
+            ]
+          },
+          {
+            "label": "Tibbiy hujjat",
+            "items": [
+              "Asl nusxa, to‘liq, to‘g‘rilashsiz"
+            ]
+          }
+        ],
+        "caption": "Aybsizlik holatlari va ayb prezumpsiyasi"
+      },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega ma’lumotli rozilik olish aybsizlik isboti uchun muhim? 2) Kasallik tarixidagi qanday kamchiliklar vrachga zarar yetkazadi? Doskada: uch aybsizlik holatini ro‘yxat qilib yozing, har biriga bitta tibbiy misol toping. Tipik xato: jabrlanuvchi aybni isbotlashi kerak deb o‘ylash, aslida teskari."
     },
     {
@@ -1565,7 +1998,7 @@
       "title": "Zararni qoplash: regress, sug‘urta, da’vo muddati",
       "bullets": [
         {
-          "text": "Muassasa xodimi xizmat vazifasini bajarganda etkazgan zararni qoplaydi. To‘lagan muassasa regress tartibida mablag‘ni xodimdan talab qilishi mumkin, amalda bu kam uchraydi.",
+          "text": "Muassasa xodimi vazifada yetkazgan zararni qoplaydi. To‘lagan muassasa regress tartibida mablag‘ni xodimdan talab qilishi mumkin, amalda kam uchraydi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1601,7 +2034,38 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Zararni qoplash",
+        "children": [
+          {
+            "label": "Muassasa qoplaydi",
+            "items": [
+              "Xodim vazifada yetkazgan zarar"
+            ]
+          },
+          {
+            "label": "Regress",
+            "items": [
+              "Muassasa xodimdan talab qiladi",
+              "Amalda kam uchraydi"
+            ]
+          },
+          {
+            "label": "Sug‘urta",
+            "items": [
+              "Yetmasa farqni sug‘urtalangan to‘laydi"
+            ]
+          },
+          {
+            "label": "Da’vo muddati",
+            "items": [
+              "3 yil: huquq buzilganini bilgan kundan"
+            ]
+          }
+        ],
+        "caption": "Qoplash, regress, sug‘urta, da’vo"
+      },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: nima uchun muassasalar regress da’vosini kamdan-kam beradi? Sug‘urta bo‘lsa vrach va muassasa qanday himoyalanadi? Doskada ketma-ketlikni chizing: vrach xatosi, muassasa to‘laydi, regress. Tipik xato: oxirgi zarurat hamma javobgarlikdan ozod qiladi deb o‘ylash; fuqarolik qonunida bunday emas. Da’vo muddati huquqbuzarlik kunidan emas, huquqi buzilganini bilgan kundan boshlanishini eslatib o‘ting."
     },
     {
@@ -1636,31 +2100,31 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Xizmat shartnomasi oqibatlari",
-        "nodes": [],
-        "header": [
-          "Holat",
-          "Oqibat"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Ijrochi aybi",
+            "items": [
+              "To‘g‘ri bajarmadi",
+              "Zarar to‘liq, bahoning 2 baravarigacha"
+            ]
+          },
+          {
+            "title": "Buyurtmachi aybi",
+            "items": [
+              "Bajarish mumkin bo‘lmadi",
+              "Xizmat bahosi to‘liq to‘lanadi"
+            ]
+          },
+          {
+            "title": "Aybsiz tomonlar",
+            "items": [
+              "Bajarilmadi",
+              "Buyurtmachi ijrochi xarajatini to‘laydi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Ijrochi to‘g‘ri bajarmadi",
-            "Zarar to‘liq, bahoning 2 baravarigacha"
-          ],
-          [
-            "Buyurtmachi aybi bilan bajarilmadi",
-            "Xizmat bahosi to‘liq to‘lanadi"
-          ],
-          [
-            "Ikkalasi ham aybsiz, bajarilmadi",
-            "Buyurtmachi ijrochi xarajatini to‘laydi"
-          ],
-          [
-            "Buyurtmachi bekor qiladi",
-            "Bahoni to‘liq to‘lash sharti bilan"
-          ]
-        ]
+        "caption": "Xizmat shartnomasi oqibatlari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: xususiy klinikada bemor bilan yozma shartnoma qanday himoya beradi? Ijrochi shartnomani qachon bekor qila oladi? Javob: buyurtmachiga etkazilgan zararni to‘liq to‘lasa, buyurtmachi aybi bilan bekor bo‘lgan hollar bundan mustasno (FK 707-modda). Doskada jadvalni o‘zlari to‘ldirsin. Tipik xato: ijrochi javobgarligi chegarasiz deb o‘ylash; bu yerda chegara xizmat bahosining ikki baravari."
     },
@@ -1710,7 +2174,7 @@
           ],
           [
             "Iste’molchi huquqi",
-            "Ma’lumot, erkin tanlov, xavfsizlik, tovon"
+            "Ma’lumot, tanlov, xavfsizlik, tovon"
           ],
           [
             "Qonun 22-modda",
@@ -1725,10 +2189,128 @@
       "teacher_notes": "Vaqt: 12 daqiqa. Muhokama: 1) Bemorga qo‘pollik yoki shifokor sirini oshkor qilish ma’naviy zararga asos bo‘ladimi? 2) Bemorni iste’molchi deb hisoblash xodimga qanday talablar qo‘yadi? Doskada: bemor – ijrochi – iste’molchi huquqlari sxemasini chizdiring. Tipik xato: ma’naviy zarar faqat mulkiy zarar bo‘lsagina to‘lanadi deb o‘ylash."
     },
     {
+      "title": "Bemor vasiyatnomasi (FK 1126)",
+      "bullets": [
+        {
+          "text": "FK 1126: kasalxona, gospital va boshqa statsionarda davolanayotgan yoki qariyalar va nogironlar uyida yashayotgan fuqaro vasiyatnomalari maxsus tasdiqlanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "112"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tasdiqlovchilar: bosh vrach, davolash bo‘yicha o‘rinbosar yoki navbatchi vrach; gospital boshlig‘i; qariyalar va nogironlar uyi direktori yoki bosh vrachi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "112"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shunday tasdiqlangan vasiyatnoma notarial tasdiqlangan vasiyatnomaga tenglashtiriladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "112"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tibbiy xodim moddiy va ma’naviy zararni qoplash bilan birga vasiyatnomalarga guvohlik berish holatlariga ham duch kelishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "112"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Bemor statsionarda yoki qariyalar uyida",
+          "Vasiyatnoma tuziladi",
+          "Vakolatli shaxs tasdiqlaydi",
+          "Notarial tasdiqlanganga tenglashadi"
+        ]
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: navbatchi vrach vasiyatnomani qachon tasdiqlashi mumkin? Doskada: zanjirni chizing. Tipik xato: har qanday vrach tasdiqlay oladi deb o‘ylash — qonunda aniq ro‘yxat bor."
+    },
+    {
+      "title": "Ma’naviy zararni qoplash: sud mezonlari",
+      "bullets": [
+        {
+          "text": "Ma’naviy zarar — shaxsiy nomulkiy huquqlarga yoki nomoddiy ne’matlarga tajovuz oqibatidagi jismoniy va ma’naviy azoblanish (FK 1021).",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "111"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Miqdorni sud azob xarakteri, holat tafsilotlari, jabrlanuvchi xususiyatlari va ayb darajasiga qarab, oqilona va adolatli belgilaydi (FK 1022).",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "111"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ma’naviy zarar to‘lanishi lozim bo‘lgan mulkiy zarardan qat’i nazar qoplanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "111"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bemorga qo‘pollik, hurmatsizlik, shifokor sirini oshkor etish moddiy zarar bo‘lmasa ham ma’naviy zararni qoplashga asos bo‘lishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "112"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Tajovuz",
+            "text": "Nomulkiy huquq yoki nomoddiy ne’mat"
+          },
+          {
+            "title": "Azoblanish",
+            "text": "Jismoniy va ma’naviy"
+          },
+          {
+            "title": "Sud baholaydi",
+            "text": "Xarakter, tafsilot, ayb darajasi"
+          },
+          {
+            "title": "Mezon",
+            "text": "Oqilonalik va adolatlilik"
+          },
+          {
+            "title": "To‘lov",
+            "text": "Pul bilan; mulkiy zarardan mustaqil"
+          }
+        ]
+      },
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: bemorga qo‘pol munosabat qachon ma’naviy zarar asosi bo‘ladi? Doskada: besh qadamni yozing. Tipik xato: ma’naviy zararni faqat mulkiy zarar bo‘lsa to‘lanadi deb hisoblash."
+    },
+    {
       "title": "Voqea tahlili: bemorga zarar va qoplash",
       "bullets": [
         {
-          "text": "Vaziyat (o‘quv misoli): bemorga yordam lozim darajada ko‘rsatilmagan, sog‘lig‘iga zarar yetgan. U davolanish xarajatlari va ma’naviy tovonni talab qilmoqda.",
+          "text": "Vaziyat (o‘quv misoli): bemorga yordam lozim ko‘rsatilmagan, sog‘lig‘iga zarar yetgan. U davolanish xarajatlari va ma’naviy tovonni talab qilmoqda.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1764,7 +2346,17 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Yordam lozim ko‘rsatilmadi",
+          "Sog‘liqqa zarar yetdi",
+          "Muassasa zararni qoplaydi",
+          "Muassasa regress talab qilishi mumkin",
+          "Ma’naviy zarar alohida to‘lanadi"
+        ],
+        "caption": "Bemorga zarar va qoplash zanjiri"
+      },
       "teacher_notes": "Vaqt: 10 daqiqa. Savollar: kim javob beradi, ayb kimga isbotlanadi, ma’naviy zarar qanday aniqlanadi? Muhokama: qaysi hollarda xodim aybsiz topiladi (engib bo‘lmas kuch, bemor roziligi, bemorning qo‘pol ehtiyotsizligi)? Doskada: zarar – g‘ayriqonuniylik – sababiy bog‘liqlik – ayb zanjirini chizdiring. Tipik xato: ayb isboti bemorga yuklanadi deb o‘ylash."
     },
     {
@@ -1807,7 +2399,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Intizomiy",
+            "items": [
+              "Hayfsan, jarima 30% gacha",
+              "Shartnomani bekor qilish",
+              "Jazo 1 yil amal qiladi"
+            ]
+          },
+          {
+            "title": "Ma’muriy",
+            "items": [
+              "Ko‘pincha jarima",
+              "16 yoshdan javobgarlik",
+              "Jazo odatda 2 oy ichida"
+            ]
+          },
+          {
+            "title": "Fuqarolik",
+            "items": [
+              "Zararni qoplash",
+              "Boshqa javobgarlikdan ozod etmaydi"
+            ]
+          }
+        ],
+        "caption": "Uch javobgarlikni farqlash"
+      },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: bitta xatti-harakat uchun xodim bir vaqtda uch turdagi javobgarlikka tortilishi mumkinmi? Nazorat: ma’muriy huquqbuzarlik jinoyatdan nimasi bilan farq qiladi? Ma’muriy jazo turlarini sanang. Doskada: uch javobgarlik turini jadvalga (kim qo‘llaydi, jazo, muddat) joylashtiring. Tipik xato: bir turdagi javobgarlik boshqasini istisno qiladi deb o‘ylash."
     }
   ],
@@ -1889,7 +2509,7 @@
       "source": {
         "author": "G‘iyosov Z.A.",
         "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-        "page": "84"
+        "page": "83"
       }
     },
     {

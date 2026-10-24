@@ -119,36 +119,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Eski ta’rif bo‘yicha farq",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Nogahon",
-          "To‘satdan"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Nogahon (unexpected)",
+            "items": [
+              "Kasallik avval aniqlanmagan",
+              "24 soatda o‘limga olib kelgan",
+              "Hozir sinonim deb olinadi"
+            ]
+          },
+          {
+            "title": "To‘satdan (sudden)",
+            "items": [
+              "Kasallik aniqlangan",
+              "O‘lim xavfi bo‘lmagan vaziyat",
+              "Hozir sinonim deb olinadi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Kasallik",
-            "Avval aniqlanmagan",
-            "Kasallik aniqlangan"
-          ],
-          [
-            "Vaziyat",
-            "24 soatda o‘limga olib kelgan",
-            "O‘lim xavfi bo‘lmagan vaziyat"
-          ],
-          [
-            "Ingliz atamasi",
-            "unexpected death",
-            "sudden death"
-          ],
-          [
-            "Hozirgi qarash",
-            "Sinonim sifatida",
-            "Sinonim sifatida"
-          ]
-        ]
+        "caption": "Eski ta’rif bo‘yicha farq"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun bu farq shartli hisoblanadi? 2) Tibbiy yordam sifati atamani tanlashga qanday ta’sir qiladi? Doskada: jadvalni talabalar bilan birga chizing. Tipik xato: 24 soat qoidasini qat’iy chegara deb qabul qilish; diqqat: nogahon ≠ to‘satdan (eski ta’rifda), hozir esa sinonim."
     },
@@ -230,31 +220,37 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Kasallik guruhlari va misollar",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Misollar"
+        "kind": "tree",
+        "root": "Nogahon o‘lim kasalliklari",
+        "children": [
+          {
+            "label": "Simptomsiz surunkali",
+            "items": [
+              "Yurak-qon tomir kasalliklari"
+            ]
+          },
+          {
+            "label": "Xurujli kasalliklar",
+            "items": [
+              "Tutqanoq, diabetik koma",
+              "Bronxial astma"
+            ]
+          },
+          {
+            "label": "O‘tkir kasalliklar",
+            "items": [
+              "Miya qon aylanishi buzilishi"
+            ]
+          },
+          {
+            "label": "Funksional buzilish",
+            "items": [
+              "Angiospazm",
+              "Angionevrotik shishish"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Simptomsiz surunkali",
-            "Yurak-qon tomir kasalliklari"
-          ],
-          [
-            "Xurujli kasalliklar",
-            "Tutqanoq, diabetik koma, bronxial astma"
-          ],
-          [
-            "O‘tkir kasalliklar",
-            "Miya qon aylanishining buzilishi"
-          ],
-          [
-            "Funksional buzilish",
-            "Angiospazm, angionevrotik shishish"
-          ]
-        ]
+        "caption": "Kasallik guruhlari"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun simptomsiz surunkali kasallik xavfli? 2) Xurujli kasalliklar o‘tkir kasalliklardan nimasi bilan farq qiladi? Doskada: 4 guruhli jadvalni talabalar bilan birga to‘ldiring. Tipik xato: tutqanoq va bronxial astmani «o‘tkir kasalliklar» guruhiga qo‘shish. Diqqat: xurujli kasallik ≠ o‘tkir kasallik."
     },
@@ -322,7 +318,7 @@
       "title": "Nogahon o‘limni qo‘zg‘atuvchi turtki omillar",
       "bullets": [
         {
-          "text": "Yashirin kechgan surunkali kasallikda ayrim holatlar ta’sirida dekompensatsiya yuz beradi. Bunday holatlar nogahon o‘limga turtki (trigger) bo‘lib xizmat qiladi.",
+          "text": "Yashirin surunkali kasallikda ayrim holatlar ta’sirida dekompensatsiya yuz beradi; ular nogahon o‘limga turtki (trigger) bo‘ladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -340,7 +336,7 @@
           "uncertain": false
         },
         {
-          "text": "Haddan tashqari isib ketish yoki sovuq qotish hamda meteorologik omillar: havo harorati va bosimining keskin o‘zgarishi, magnit to‘fonlari, iqlimning keskin o‘zgarishi.",
+          "text": "Haddan tashqari isish yoki sovuq qotish hamda meteorologik omillar: harorat va bosimning keskin o‘zgarishi, magnit to‘fonlari, iqlim o‘zgarishi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -358,7 +354,40 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Turtki (trigger) omillar",
+        "children": [
+          {
+            "label": "Jismoniy zo‘riqish",
+            "items": [
+              "Og‘ir ish, yuk ko‘tarish",
+              "Chopish"
+            ]
+          },
+          {
+            "label": "Ruhiy zo‘riqish",
+            "items": [
+              "Salbiy emotsiyalar"
+            ]
+          },
+          {
+            "label": "Harorat va meteoomil",
+            "items": [
+              "Isib ketish, sovuq qotish",
+              "Magnit to‘fonlari"
+            ]
+          },
+          {
+            "label": "Ovqat, suv, spirt",
+            "items": [
+              "Uzoq och yurish",
+              "Ko‘p ovqat, spirtli ichimlik"
+            ]
+          }
+        ],
+        "caption": "Dekompensatsiyani qo‘zg‘atuvchilar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nima uchun turtki omil kasallikning o‘zi emas, balki uni ‘qo‘zg‘atuvchi’ hisoblanadi? 2) Talabalar o‘z hayotidan qaysi turtki omillarni eslay oladi? Doskada: markazda ‘yashirin surunkali kasallik’, undan 6 ta strelka — turtki omillar guruhlarini chizdiring. Tipik xato: turtki omilni o‘limning asosiy sababi deb olish; sabab hamisha kasallik, turtki esa faqat uni qo‘zg‘atadi."
     },
     {
@@ -392,7 +421,7 @@
           "uncertain": false
         },
         {
-          "text": "Savol: nogahon o‘limning belgilari? Javob: sababi kasallik, o‘lim tez va qisqa muddatda, oldin sog‘liq yaxshi, zo‘raki o‘limga shubha, murdada kasallik topiladi.",
+          "text": "Savol: nogahon o‘lim belgilari? Javob: sababi kasallik, o‘lim tez, oldin sog‘liq yaxshi, zo‘raki o‘limga shubha, murdada kasallik topiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -408,7 +437,7 @@
       "title": "Voqea tahlili: mehmondorchilikdagi o‘lim",
       "bullets": [
         {
-          "text": "Vaziyat: odam mehmondorchilik vaqtida to‘satdan vafot etdi. Nogahon o‘lim sodir bo‘lgan vaqt va joy zo‘raki o‘limni istisno qilish zarurligini keltirib chiqaradi.",
+          "text": "Vaziyat: odam mehmondorchilikda to‘satdan vafot etdi. Nogahon o‘limning vaqti va joyi zo‘raki o‘limni istisno qilish zarurligini tug‘diradi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -417,7 +446,7 @@
           "uncertain": false
         },
         {
-          "text": "Mehmondorchilikdagi o‘lim zaharlanishga shubha tug‘diradi. Solishtiring: elektromonterning ish vaqtidagi o‘limi elektrotravmaga, g‘avvosning suv ostidagi o‘limi gipoksiyaga shubha uyg‘otadi.",
+          "text": "Mehmondorchilikdagi o‘lim zaharlanishga shubha tug‘diradi; elektromonter o‘limi elektrotravmaga, g‘avvos o‘limi gipoksiyaga shubha uyg‘otadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -569,31 +598,24 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Infarkt belgilari vaqt bo‘yicha",
-        "nodes": [],
-        "header": [
-          "Vaqt",
-          "Topilma"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Miokard infarkti",
+            "items": [
+              "Kamida 12–24 soat kerak",
+              "Yaqqol o‘choq shakllanadi"
+            ]
+          },
+          {
+            "title": "Nogahon o‘lim",
+            "items": [
+              "Odatda tezroq, qisqa oraliq",
+              "Yaqqol infarkt kuzatilmaydi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Bir necha soat",
-            "Nekroz aniq bilinmaydi, miokard shalviragan"
-          ],
-          [
-            "1-sutka 2-yarmi",
-            "Er rangli o‘choq, qon quyilish hoshiyasi"
-          ],
-          [
-            "Keyinroq",
-            "Sargimtir-kul, sargimtir-yashil rang"
-          ],
-          [
-            "Nogahon o‘lim",
-            "Odatda tezroq: yaqqol infarkt ulgurmaydi"
-          ]
-        ]
+        "caption": "Vaqt farqi"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Murdada infarkt o‘chog‘i ko‘rinmasa, o‘lim sababi yurak kasalligi bo‘lishi mumkinmi? 2) Vaqt omili sud-tibbiy xulosaga qanday ta’sir qiladi? Doskada: vaqt o‘qini chizib, 12–24 soat belgisini va nogahon o‘lim nuqtasini uning chap tomoniga qo‘ying. Tipik xato: ‘infarkt ko‘rinmaydi, demak yurak sababi emas’ deb xulosa qilish."
     },
@@ -629,31 +651,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Infarktda miokard o‘zgarishlari",
-        "nodes": [],
-        "header": [
-          "Vaqt",
-          "Miokard holati"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Bir necha soat",
+            "text": "Shalviragan, notekis qonga to‘lgan miokard"
+          },
+          {
+            "title": "1-sutka 2-yarmi",
+            "text": "Er rangli, qizg‘ish nekroz o‘chog‘i"
+          },
+          {
+            "title": "Keyinroq",
+            "text": "Sarg‘ish-kul, sarg‘ish-yashil rang"
+          },
+          {
+            "title": "12–24 soat",
+            "text": "Yaqqol infarkt uchun kerakli vaqt"
+          }
         ],
-        "rows": [
-          [
-            "Bir necha soatdan keyin",
-            "Shalviragan, notekis qonga to‘lgan"
-          ],
-          [
-            "1-sutka ikkinchi yarmi",
-            "Er rangidagi, qizg‘ish nekroz o‘chog‘i"
-          ],
-          [
-            "Keyinroq",
-            "Sarg‘ish-kul, sarg‘ish-yashil rang"
-          ],
-          [
-            "12–24 soat",
-            "Yaqqol infarkt uchun kerakli vaqt"
-          ]
-        ]
+        "caption": "Infarkt morfologiyasi vaqt bo‘yicha"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega nogahon o‘limda yaqqol infarkt ko‘rinmaydi? 2) Soatlar o‘tishi bilan miokard rangi qanday o‘zgaradi? Doskada vaqt chizig‘ini (soat – sutka – keyinroq) chizdiring va har bosqichga miokard ko‘rinishini yozdiring. Tipik xato: nogahon o‘limda klassik sarg‘ish-kul infarkt o‘chog‘i bo‘ladi deb o‘ylash."
     },
@@ -697,7 +714,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Infarkt va gipertoniya asorati",
+        "children": [
+          {
+            "label": "Bevosita o‘lim",
+            "items": [
+              "Kardiogen shok, asistoliya",
+              "Yurak anevrizmasi",
+              "Yurak devori yorilishi"
+            ]
+          },
+          {
+            "label": "Tromboembolik asorat",
+            "items": [
+              "Katta qon aylanish doirasida"
+            ]
+          },
+          {
+            "label": "Gipertonik kasallik",
+            "items": [
+              "O‘tkir yurak yetishmovchiligi",
+              "Infarkt, miya qon aylanishi buzilishi"
+            ]
+          }
+        ],
+        "caption": "Nogahon o‘limga olib keluvchi yo‘llar"
+      },
       "teacher_notes": "Vaqt: 6 daq. Tezkor savol: infarktning bevosita o‘limga olib keladigan 4 ta asoratini ayting. Muhokama: gipertonik kasallik o‘limga qaysi yo‘llar bilan olib keladi? Doskada ikki ustun chizing: «infarkt asoratlari» va «gipertoniyadagi o‘lim yo‘llari». Tipik xato: gipertonik kasallikni yakka holda emas, ishemik va serebro-vaskulyar kasalliklar bilan birga kelishini unutish."
     },
     {
@@ -886,7 +930,24 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Bolalar: ORK ulushi",
+            "value": "≈90 %"
+          },
+          {
+            "label": "Go‘dak, 1-yil 1-yarmi",
+            "value": "80 %"
+          },
+          {
+            "label": "Go‘dak, 1-yil 2-yarmi",
+            "value": "12 %"
+          }
+        ],
+        "caption": "Nafas kasalliklaridan nogahon o‘lim"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega bolalarda asosiy sabab respirator infeksiya? 2) Nima uchun birinchi yarim yilda o‘lim ko‘p uchraydi? Doskaga chizing: respirator kasallik qo‘zg‘atuvchilari (virus / bakteriya / aralash) daraxti. Tipik xato: 90 foiz va 80 foiz ko‘rsatkichlarini aralashtirish; birinchisi barcha bolalar nogahon o‘limiga, ikkinchisi go‘daklardagi birinchi yarim yilga tegishli."
     },
     {
@@ -1256,31 +1317,35 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "To‘rt gipoteza",
-        "nodes": [],
-        "header": [
-          "Gipoteza",
-          "Mohiyati"
+        "kind": "tree",
+        "root": "GTO‘S gipotezalari",
+        "children": [
+          {
+            "label": "Mexanik",
+            "items": [
+              "Choyshab, ko‘rpa, yostiq bilan bekilish"
+            ]
+          },
+          {
+            "label": "Allergik",
+            "items": [
+              "Sigir suti oqsillariga reaksiya"
+            ]
+          },
+          {
+            "label": "Timik",
+            "items": [
+              "Kattalashgan ayrisimon bez siqadi"
+            ]
+          },
+          {
+            "label": "Infeksion",
+            "items": [
+              "Shiddatli virus yoki bakteriya"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Mexanik",
-            "Nafas teshiklarining choyshab, ko‘rpa, yostiq bilan bekilishi"
-          ],
-          [
-            "Allergik",
-            "Sigir suti oqsillariga allergik reaksiya"
-          ],
-          [
-            "Timik",
-            "Kattalashgan ayrisimon bez nafas yo‘llarini siqadi"
-          ],
-          [
-            "Infeksion",
-            "Shiddatli virus yoki bakterial infeksiya"
-          ]
-        ]
+        "caption": "To‘rt gipoteza"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun mexanik gipoteza sud-tibbiy jihatdan alohida e’tibor talab qiladi? 2) Birorta gipoteza nega barcha holatlarni tushuntirmaydi? Doskada: to‘rt gipotezani “gipoteza → taxmin qilingan mexanizm” jadvali ko‘rinishida chizdiring. Tipik xato: gipotezani isbotlangan o‘lim sababi deb yozish."
     },
@@ -1316,26 +1381,24 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ikki zamonaviy gipoteza",
-        "nodes": [],
-        "header": [
-          "Gipoteza",
-          "Mexanizm",
-          "Natija"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Respirator gipoteza",
+            "items": [
+              "Markaziy, periferik yoki aralash apnoe",
+              "Natija: nafas to‘xtashi va o‘lim"
+            ]
+          },
+          {
+            "title": "Kardiogen gipoteza",
+            "items": [
+              "Repolyarizatsiya jarayoni buzilishi",
+              "Natija: asistoliya va o‘lim"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Respirator",
-            "Markaziy, periferik yoki aralash apnoe",
-            "Nafas to‘xtashi va o‘lim"
-          ],
-          [
-            "Kardiogen",
-            "Repolyarizatsiya jarayonining buzilishi",
-            "Asistoliya va o‘lim"
-          ]
-        ]
+        "caption": "Ikki zamonaviy gipoteza"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Respirator va kardiogen gipotezalarning farqi nimada? 2) Nega ular so‘nggi davrda ko‘proq qo‘llanadi? Doskada: ikki ustunli taqqoslash sxemasi (nafas yo‘li va yurak yo‘li) chizdiring. Tipik xato: apnoe va asistoliyani aralashtirish; birinchisi nafas, ikkinchisi yurak to‘xtashi."
     },
@@ -1370,7 +1433,7 @@
           "uncertain": false
         },
         {
-          "text": "Ko‘proq 2–6 oylik norasо go‘daklarda, kuz-qishda, ertalab uchraydi. Egizaklarda ko‘rsatkich bir necha marta yuqori.",
+          "text": "Ko‘proq 2–6 oylik noraso go‘daklarda, kuz-qishda, ertalab uchraydi. Egizaklarda ko‘rsatkich bir necha marta yuqori.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1379,8 +1442,107 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "O‘rni (o‘lim tuzilmasi)",
+            "value": "3-o‘rin"
+          },
+          {
+            "label": "Ko‘rsatkich dunyoda",
+            "value": "0,5–2,8",
+            "unit": "/1000 tug‘."
+          },
+          {
+            "label": "O‘zbekiston (taxmin)",
+            "value": ">1,5",
+            "unit": "/1000 tug‘."
+          },
+          {
+            "label": "Yoshi",
+            "value": "2–6 oy"
+          },
+          {
+            "label": "Mavsum, vaqt",
+            "value": "kuz-qish, ertalab"
+          }
+        ],
+        "caption": "GTO‘S epidemiologiyasi"
+      },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nima uchun O‘zbekiston ko‘rsatkichi faqat taxminiy? 2) Egizaklarda xavf nega yuqori bo‘lishi mumkin? Doskada: GTO‘S uchun xavfli yosh (2–6 oy), mavsum va soatni bitta chiziqda chizdiring. Tipik xato: 0,5–2,8 ni foiz deb o‘qish; u 1000 tirik tug‘ilganga nisbatan beriladi."
+    },
+    {
+      "title": "Simpson: GTO‘S ta’rifi va xususiyatlari",
+      "bullets": [
+        {
+          "text": "GTO‘S (cot death, crib death) 1 yoshgacha bolaning uyquda boshlangan, to‘liq tekshiruvdan keyin ham tushuntirilmagan to‘satdan o‘limi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "68"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rivojlangan mamlakatlarda ko‘rsatkich taxminan 2 dan 0,5 gacha (1000 tirik tug‘ilganga) kamaygan; Angliya va Uelsda 2007 yilda 0,28.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "68"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kamayish ijtimoiy-maishiy sharoit yaxshilanishi va 1990-yillar boshidagi «Back to Sleep» (chalqancha yotqizish) kampaniyasiga to‘g‘ri kelgan.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "68"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ko‘pchilik o‘lim 1–6 oylikda, cho‘qqisi 2 oyda; egizaklarda ko‘proq; sovuq va nam oylarda keskin ko‘p uchraydi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "68"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Ko‘rsatkich oldin",
+            "value": "≈2",
+            "unit": "/1000 tirik"
+          },
+          {
+            "label": "Ko‘rsatkich keyin",
+            "value": "≈0,5",
+            "unit": "/1000 tirik"
+          },
+          {
+            "label": "Angliya, Uels 2007",
+            "value": "0,28",
+            "unit": "/1000 tirik"
+          },
+          {
+            "label": "Ko‘p o‘lim yoshi",
+            "value": "1–6 oy"
+          },
+          {
+            "label": "Cho‘qqi",
+            "value": "2 oy"
+          }
+        ],
+        "caption": "Simpson: epidemiologiya"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega profilaktika kampaniyalari ko‘rsatkichni kamaytirdi? 2) Ikkinchi manba (Simpson) G‘iyosov ma’lumotlaridan nimasi bilan farq qiladi? Doskaga chizing: yosh bo‘yicha taqsimot. Tipik xato: GTO‘Sni faqat bir yoshdan keyingi o‘lim deb o‘ylash.",
+      "source_note_removed": null
     },
     {
       "title": "GTO‘S xavf omillari",
@@ -1573,7 +1735,7 @@
         "rows": [
           [
             "Tashqi",
-            "Ko‘z va qovoq shilliq qavatida qon quyilish"
+            "Ko‘z va qovoq shilliqida qon quyilish"
           ],
           [
             "Tashqi",
@@ -1581,15 +1743,81 @@
           ],
           [
             "Ichki a’zolar",
-            "To‘laqonlik, suyuq qon, mayda qon quyilish"
+            "To‘laqonlik, suyuq qon, petexiyalar"
           ],
           [
             "Mikroskopiya",
-            "Emfizema va atelektaz o‘choqlari oralashadi"
+            "Emfizema va atelektaz o‘choqlari"
           ]
         ]
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Bu topilmalarning qaysi biri o‘limning aniq sababini ko‘rsatadi? 2) Timiko-limfatik holat nima uchun faqat qo‘shimcha belgi hisoblanadi? Doskada: jadvalni (tashqi, ichki, mikroskopiya) o‘zingiz chizing. Qo‘shimcha: buyrak usti bezi gipoplaziyasi ham uchrashi mumkin; boshqa laboratoriya tekshiruvlari odatda manfiy. Tipik xato: yagona o‘lim sababi topilmasa, topilmalarni sababga chiqarib yuborish."
+    },
+    {
+      "title": "Simpson: GTO‘S topilmalari va nazariyalari",
+      "bullets": [
+        {
+          "text": "GTO‘Sning mohiyati: o‘lim kutilmagan, yaxshilab tekshirilsa ham yetarli sabab topilmaydi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "69"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Holatlarning taxminan 70 foizida plevra, epikard va ayrisimon bezda ko‘krak ichi petexiyalari bor; ular agonal hodisa, o‘lim sababi emas.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "69"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sigir suti allergiyasi, uzoq apnoe, gipertermiya, CO zaharlanishi kabi nazariyalarning birontasi isbotlanmagan.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "69"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ota-ona qasddan bo‘g‘ishi taxmini (10 foizgacha) hech qachon isbotlanmagan; asosiy vazifa — oilani qo‘llab-quvvatlash.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "69"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Aniq topilma",
+            "items": [
+              "Yetarli o‘lim sababi yo‘q",
+              "~70 %: petexiyalar (plevra, epikard)",
+              "Petexiyalar — agonal hodisa"
+            ]
+          },
+          {
+            "title": "Isbotlanmagan taxminlar",
+            "items": [
+              "Sigir suti, uy changi allergiyasi",
+              "Uzoq uyqu apnoesi",
+              "Gipertermiya, gipotermiya",
+              "CO yoki CO2 zaharlanishi"
+            ]
+          }
+        ],
+        "caption": "Simpson: topilma va nazariyalar"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Petexiyalar nega mexanik asfiksiya isboti emas? 2) Oilaga qanday munosabat kerak? Doskaga chizing: «aniq» va «taxmin» ustunlari. Tipik xato: petexiyani bo‘g‘ilish belgisi deb talqin qilish.",
+      "source_note_removed": null
     },
     {
       "title": "GTO‘S tashxisi va gipodiagnostika xatolari",
@@ -1641,7 +1869,7 @@
           ],
           [
             "Nafas yo‘llari yopilishi",
-            "Oz massa reflyuks natijasi bo‘lishi mumkin"
+            "Oz massa reflyuks natijasi bo‘lishi"
           ]
         ]
       },
@@ -1679,31 +1907,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "GTO‘S va xato talqin",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "GTO‘S",
-          "Xato talqin"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "GTO‘S",
+            "items": [
+              "Tez o‘lim belgilari bor",
+              "Traxeyada oz massa — reflyuks",
+              "Xulosa: boshqa sabablar istisno"
+            ]
+          },
+          {
+            "title": "Xato talqin",
+            "items": [
+              "Asfiksiyada ham tez o‘lim belgilari",
+              "Nafas yo‘li yopilgan deyiladi",
+              "Xulosa faqat voqea tafsilotiga tayanadi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Tez o‘lim belgilari",
-            "Bor",
-            "Asfiksiyada ham bor"
-          ],
-          [
-            "Traxeyada oz massa",
-            "Reflyuks natijasi",
-            "Nafas yo‘li yopilgan deyiladi"
-          ],
-          [
-            "Xulosa asosi",
-            "Boshqa sabablar istisno",
-            "Faqat voqea tafsiloti"
-          ]
-        ]
+        "caption": "GTO‘S va asfiksiya"
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nima uchun to‘laqonlik va suyuq qon asfiksiyani isbotlamaydi? 2) Reflyuks massasini qanday izohlaysiz? Doskada: jadvalni chizib, ikki ustunda umumiy belgilarni belgilang. Tipik xato: tez o‘lim belgilarini topib, darhol asfiksiya deb xulosa qilish."
     },
@@ -1781,7 +2004,7 @@
           "uncertain": false
         },
         {
-          "text": "Nazorat savollari (10 ta): nogahon o‘lim belgilari, turtki omillar, bolalardagi sabablar, GTO‘S ta’rifi, gipotezalar, xavf omillari, topilmalar, gipodiagnostika.",
+          "text": "Nazorat savollari (10 ta): nogahon o‘lim belgilari, turtki omillar, bolalardagi sabablar, GTO‘S ta’rifi, gipotezalar, xavf omillari, topilmalar, xatolar.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1799,11 +2022,11 @@
       "question": "Ekspert nozo‘raki o‘lim holatidagi murdani tekshirmoqda. Bunday ekspertizaning asosiy maqsadi nima?",
       "options": [
         "Jarohat turi va uni qoldirgan qurolni aniqlash",
-        "Zo‘rakilik alomatlarini istisno qilish",
+        "O‘lim vaqtini soatigacha aniq belgilash",
         "Jinoyatchining shaxsini aniqlab berish",
-        "O‘lim vaqtini soatigacha aniq belgilash"
+        "Zo‘rakilik alomatlarini istisno qilish"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Nozo‘raki o‘limning sababi turli kasalliklar bo‘lgani uchun ekspertizaning asosiy maqsadi zo‘rakilik alomatlarini istisno qilishdir. Boshqa variantlar bu ekspertizaning asosiy maqsadi emas.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1812,35 +2035,35 @@
       }
     },
     {
-      "question": "Bemorning avval aniqlanmagan kasalligi tufayli sog‘lig‘i yomonlashdi va 24 soat ichida vafot etdi. Ilgari bu holat qanday atalgan?",
+      "question": "Simpson bo‘yicha GTO‘S holatlarining taxminan 70 foizida plevra, epikard va ayrisimon bezda qanday topilma uchraydi?",
       "options": [
-        "Zo‘raki o‘lim holati",
-        "To‘satdan o‘lim (sudden death)",
-        "Klinik o‘lim holati",
-        "Nogahon o‘lim (unexpected death)"
+        "Ko‘krak ichi petexiyalari, ular agonal hodisa",
+        "Yaqqol miokard infarkti o‘chog‘i",
+        "Traxeya va bronxlarda yot jism",
+        "Bo‘yin yumshoq to‘qimalarida chuqur qon quyilish"
       ],
-      "correct_index": 3,
-      "explanation": "Avval aniqlanmagan kasallik sababli sog‘liq holati 24 soat davomida yomonlashib, o‘lim bilan tugasa, nogahon o‘lim deyilgan. To‘satdan o‘limda kasallik oldindan aniqlangan bo‘lgan. Hozir ko‘p tadqiqotchilar bu atamalarni sinonim deb oladi.",
+      "correct_index": 0,
+      "explanation": "Simpson: ~70 foizda ko‘krak ichi petexiyalari bor; ular agonal hodisa deb hisoblanadi va o‘lim sababi emas.",
       "source": {
-        "author": "G‘iyosov Z.A.",
-        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-        "page": "248"
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "69"
       }
     },
     {
-      "question": "Quyidagilardan qaysi biri nogahon o‘limga xos belgi hisoblanadi?",
+      "question": "Simpson (13-nashr) bo‘yicha GTO‘S o‘limlarining cho‘qqisi qaysi oyga to‘g‘ri keladi?",
       "options": [
-        "O‘lim tez, qisqa muddat oralig‘ida sodir bo‘ladi",
-        "O‘limdan oldin sog‘liq holati doim og‘ir bo‘ladi",
-        "O‘lim sababi har doim jarohat bo‘ladi",
-        "Murdada o‘lim sababi bo‘lgan kasallik topilmaydi"
+        "1 oylikda",
+        "4 oylikda",
+        "6 oylikda",
+        "2 oylikda"
       ],
-      "correct_index": 0,
-      "explanation": "Nogahon o‘limda o‘lim tez va qisqa muddatda sodir bo‘ladi. Sababi doim kasallik, o‘limdan oldin sog‘liq holati to‘liq yoki nisbatan yaxshi bo‘ladi. Murdada esa o‘limga sabab bo‘lgan hayotiy kasallik aniqlanadi.",
+      "correct_index": 3,
+      "explanation": "Ko‘pchilik o‘lim 1–6 oylikda, cho‘qqisi 2 oyda kuzatiladi.",
       "source": {
-        "author": "G‘iyosov Z.A.",
-        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-        "page": "248"
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "68"
       }
     },
     {

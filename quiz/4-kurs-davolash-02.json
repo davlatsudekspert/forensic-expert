@@ -1,0 +1,586 @@
+{
+ "topic_id": "4-kurs-davolash-02",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Amaliy mashg’ulot: Kirish. Murdani topilgan joyida ko‘zdan kechirish. Sud-tibbiy tanatologiya.",
+  "ru": "Amaliy mashg’ulot: Kirish. Murdani topilgan joyida ko‘zdan kechirish. Sud-tibbiy tanatologiya.",
+  "en": "Amaliy mashg’ulot: Kirish. Murdani topilgan joyida ko‘zdan kechirish. Sud-tibbiy tanatologiya."
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "4-kurs-davolash-02-q01",
+   "question_i18n": {
+    "uz": "Pigolkin va hammualliflarga ko‘ra, o‘limning ijtimoiy-huquqiy kategoriyasi va turini kim belgilaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Sud-tibbiy ekspert",
+     "Tergov organlari xodimlari",
+     "Patologoanatom",
+     "Vrach-reanimatolog"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Kategoriya va tur aniqlash ekspert vakolatidan tashqarida, tergov xodimlari vakolatida."
+   },
+   "source": {
+    "author": "Пиголкин Ю.И., Баринов Е.Х., Богомолов Д.В., Богомолова И.Н.",
+    "title": "Судебная медицина: учебник для вузов, М.: ГЭОТАР-МЕД (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "68"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-02-q02",
+   "question_i18n": {
+    "uz": "O‘lim sabablari ichida «asosiy sabab» deb qaysi biri tushuniladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Terminal buzilishning morfologik ekvivalenti",
+     "Asosiy kasallik yoki jarohat",
+     "Oraliq patogenetik bo‘g‘in",
+     "Hamroh kasallik"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Asosiy sabab — o‘zi yoki asoratlari orqali o‘limga olib kelgan asosiy kasallik yoki jarohat."
+   },
+   "source": {
+    "author": "Пиголкин Ю.И., Баринов Е.Х., Богомолов Д.В., Богомолова И.Н.",
+    "title": "Судебная медицина: учебник для вузов, М.: ГЭОТАР-МЕД (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "68"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-02-q03",
+   "question_i18n": {
+    "uz": "O‘lim jarayonining 5 bosqichida ong va reflekslar yo‘q, ammo hayotiy vazifalarni tiklash mumkin. Bu qaysi bosqich?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Terminal pauza",
+     "Agoniya",
+     "Klinik o‘lim",
+     "Biologik o‘lim"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Klinik o‘limda ong, refleks, nafas va yurak faoliyati yo‘q, lekin tiklash hali mumkin."
+   },
+   "source": {
+    "author": "Пиголкин Ю.И., Баринов Е.Х., Богомолов Д.В., Богомолова И.Н.",
+    "title": "Судебная медицина: учебник для вузов, М.: ГЭОТАР-МЕД (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "71"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-02-q04",
+   "question_i18n": {
+    "uz": "Ko‘z olmasini bosganda qorachiq ovalsimon shaklga o‘tishi qaysi belgi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Larshe belgisi",
+     "Beloglazov belgisi",
+     "Sarkisov belgisi",
+     "Hippokrat belgisi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Beloglazov belgisi — o‘limning ishonchli mezoni, 10–15 daqiqada paydo bo‘ladi."
+   },
+   "source": {
+    "author": "Пиголкин Ю.И., Баринов Е.Х., Богомолов Д.В., Богомолова И.Н.",
+    "title": "Судебная медицина: учебник для вузов, М.: ГЭОТАР-МЕД (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "73"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-02-q05",
+   "question_i18n": {
+    "uz": "Murda sovishi o‘rtacha qanday tezlikda kechadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Soatiga 0,1 °C",
+     "Soatiga 1 °C",
+     "Soatiga 5 °C",
+     "Sutkasiga 1 °C"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Murda harorati o‘rtacha soatiga 1 °C ga pasayadi; ochiq qismlar tezroq soviydi."
+   },
+   "source": {
+    "author": "Пиголкин Ю.И., Баринов Е.Х., Богомолов Д.В., Богомолова И.Н.",
+    "title": "Судебная медицина: учебник для вузов, М.: ГЭОТАР-МЕД (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "74"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-02-q06",
+   "question_i18n": {
+    "uz": "Murda dog‘larining qaysi bosqichida bosganda dog‘ yo‘qoladi va murda aylantirilsa, ko‘chadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Gipostaz",
+     "Staz",
+     "Imbibitsiya",
+     "Yog‘ mumi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Gipostazda dog‘lar bosganda to‘liq yo‘qoladi va murda vaziyatiga ko‘ra ko‘chadi."
+   },
+   "source": {
+    "author": "Пиголкин Ю.И., Баринов Е.Х., Богомолов Д.В., Богомолова И.Н.",
+    "title": "Судебная медицина: учебник для вузов, М.: ГЭОТАР-МЕД (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "76"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-02-q07",
+   "question_i18n": {
+    "uz": "Tutun gazi (CO) bilan zaharlanishda murda dog‘lari qanday rangda bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kulrang-qo‘ng‘ir",
+     "Gilos rang",
+     "Yorqin qizil",
+     "Yashil"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Tutun gazida dog‘lar yorqin qizil, siyanidlarda gilos rang, methemoglobin hosil qiluvchilarda kulrang-qo‘ng‘ir."
+   },
+   "source": {
+    "author": "Пиголкин Ю.И., Баринов Е.Х., Богомолов Д.В., Богомолова И.Н.",
+    "title": "Судебная медицина: учебник для вузов, М.: ГЭОТАР-МЕД (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "76"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-02-q08",
+   "question_i18n": {
+    "uz": "Murda yashilligi (trupnaya zelen) yozda taxminan qachon paydo bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1-sutka oxiriga kelib",
+     "3-haftada",
+     "2–3 oydan keyin",
+     "1 yildan keyin"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Yozda yashillik 1-sutka oxirida, qishda 2–3-sutkada yonbosh sohalardan boshlanadi."
+   },
+   "source": {
+    "author": "Пиголкин Ю.И., Баринов Е.Х., Богомолов Д.В., Богомолова И.Н.",
+    "title": "Судебная медицина: учебник для вузов, М.: ГЭОТАР-МЕД (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "78"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-02-q09",
+   "question_i18n": {
+    "uz": "Hodisa joyini ko‘zdan kechirishning statik bosqichida nima qilinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ashyolar aylantirilib o‘rganiladi",
+     "Vaziyat dastlabki holati buzilmasdan qayd etiladi",
+     "Kiyim yechiladi",
+     "Jarohat zondlanadi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Statik bosqichda vaziyat o‘zgartirilmasdan o‘rganiladi, fotosurat va sxema bilan qayd etiladi."
+   },
+   "source": {
+    "author": "Пиголкин Ю.И., Баринов Е.Х., Богомолов Д.В., Богомолова И.Н.",
+    "title": "Судебная медицина: учебник для вузов, М.: ГЭОТАР-МЕД (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "82"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-02-q10",
+   "question_i18n": {
+    "uz": "Murda topilgan joyda mutaxassis-vrach nimani aniq hal etolmaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Murda holatini tasvirlash",
+     "Murda dog‘larini tasvirlash",
+     "O‘lim sababini aniq aytish",
+     "Jarohat joyini ko‘rsatish"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "O‘lim sababi faqat murdani to‘liq sud-tibbiy tekshirishdan keyin hal etiladi."
+   },
+   "source": {
+    "author": "Пиголкин Ю.И., Баринов Е.Х., Богомолов Д.В., Богомолова И.Н.",
+    "title": "Судебная медицина: учебник для вузов, М.: ГЭОТАР-МЕД (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "83"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-02-q11",
+   "question_i18n": {
+    "uz": "Pigolkin bo‘yicha murda qotishi (skelet mushaklari) odatda necha soatdan so‘ng boshlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "12-24 soatdan so‘ng",
+     "3-7 sutkadan so‘ng",
+     "30 daqiqadan 1 soatgacha",
+     "2-6 soatdan so‘ng"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Pigolkin bo‘yicha o‘limdan so‘ng mushaklar tonusini yo‘qotadi, 2-6 soatdan keyin esa qisqarib, zichlashadi va passiv harakatlar mumkin bo‘lmaydi."
+   },
+   "source": {
+    "author": "Пиголкин Ю.И., Баринов Е.Х., Богомолов Д.В., Богомолова И.Н.",
+    "title": "Судебная медицина: учебник для вузов, М.: ГЭОТАР-МЕД (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "75"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-02-q12",
+   "question_i18n": {
+    "uz": "Murda qotishi maksimal darajasiga odatda qachon yetadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "3-7 sutkada",
+     "1-2 soatda",
+     "2-sutka oxirida",
+     "12-24 soatda"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Klassik tasavvurda qotish 12-24 soatda maksimumga yetadi, 2-sutka o‘rtasidan yo‘qola boshlab, 3-7 sutkada butunlay yo‘qoladi."
+   },
+   "source": {
+    "author": "Пиголкин Ю.И., Баринов Е.Х., Богомолов Д.В., Богомолова И.Н.",
+    "title": "Судебная медицина: учебник для вузов, М.: ГЭОТАР-МЕД (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "75"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-02-q13",
+   "question_i18n": {
+    "uz": "Yurak mushagi qotishi me’yorda qachon boshlanadi va qancha saqlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "10 daqiqada boshlanib, 1 soat saqlanadi",
+     "12 soatda boshlanib, 1 hafta saqlanadi",
+     "3 sutkada boshlanib, 1 oy saqlanadi",
+     "2-3 soatda boshlanib, 1,5-2 sutka saqlanadi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Yurak mushagi qotishi me’yorda 2-3 soatdan keyin boshlanadi va 1,5-2 sutka saqlanadi; qotish bo‘lmasa yoki zaif bo‘lsa, yurak tanatogenezi taxmin qilinadi."
+   },
+   "source": {
+    "author": "Пиголкин Ю.И., Баринов Е.Х., Богомолов Д.В., Богомолова И.Н.",
+    "title": "Судебная медицина: учебник для вузов, М.: ГЭОТАР-МЕД (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "76"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-02-q14",
+   "question_i18n": {
+    "uz": "Qorachiqning dorilarga (atropin) supravital reaksiyasi taxminan qancha vaqt saqlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1,5 sutkagacha",
+     "1 haftagacha",
+     "10 daqiqagacha",
+     "2-3 soatgacha"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Qorachiq reaksiyasi atropin ta’siriga 1,5 sutkagacha saqlanadi; ter bezlari reaksiyasi 20 soat ichida, mushak reaksiyalari 8-12 soatgacha yo‘qoladi."
+   },
+   "source": {
+    "author": "Пиголкин Ю.И., Баринов Е.Х., Богомолов Д.В., Богомолова И.Н.",
+    "title": "Судебная медицина: учебник для вузов, М.: ГЭОТАР-МЕД (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "74"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-02-q15",
+   "question_i18n": {
+    "uz": "Ochiq ko‘zli murdada sklerada qo‘ng‘ir-jigarrang uchburchak yoki yo‘lkasimon Larshe dog‘lari qachon paydo bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "4-5 soatdan so‘ng",
+     "7-10 sutkada",
+     "2-sutkada",
+     "10-15 daqiqadan so‘ng"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Ko‘zlar ochiq bo‘lsa, 4-5 soatdan so‘ng shox parda xiralashadi, sklerada qurish tufayli qo‘ng‘ir-jigarrang yo‘lka yoki uchburchak ko‘rinishida Larshe dog‘lari hosil bo‘ladi."
+   },
+   "source": {
+    "author": "Пиголкин Ю.И., Баринов Е.Х., Богомолов Д.В., Богомолова И.Н.",
+    "title": "Судебная медицина: учебник для вузов, М.: ГЭОТАР-МЕД (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "75"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-02-q16",
+   "question_i18n": {
+    "uz": "Murda dog‘lari bosilganda rangi va joyi o‘zgarmay qolgan. Bu qaysi bosqich?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Staz",
+     "Gipostaz",
+     "Qotish bosqichi",
+     "Imbibitsiya"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Imbibitsiyada eritrotsitlar gemolizi va gemoglobin singishi tufayli dog‘ rangi bosilganda ham, murda aylantirilganda ham o‘zgarmaydi; taxminan 2-sutkaga to‘g‘ri keladi."
+   },
+   "source": {
+    "author": "Пиголкин Ю.И., Баринов Е.Х., Богомолов Д.В., Богомолова И.Н.",
+    "title": "Судебная медицина: учебник для вузов, М.: ГЭОТАР-МЕД (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "76"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-02-q17",
+   "question_i18n": {
+    "uz": "Sarkisov qonuni nimani ifodalaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Murda dog‘lari faqat staz bosqichida paydo bo‘ladi",
+     "Qotish yuqoridan pastga tarqaladi",
+     "Biologik tizim buzilganda avval yuqori, keyin pastroq darajalar ketma-ket yo‘qoladi",
+     "Murda sovishi har soatda 1 °C pasayadi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Sarkisov qonuniga ko‘ra tizim buzilganda avval yuqori darajalar (a’zolar vazifalari uyg‘unligi), keyin pastroq darajalar (alohida a’zo va to‘qimalar) ketma-ket yo‘qoladi."
+   },
+   "source": {
+    "author": "Пиголкин Ю.И., Баринов Е.Х., Богомолов Д.В., Богомолова И.Н.",
+    "title": "Судебная медицина: учебник для вузов, М.: ГЭОТАР-МЕД (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "73"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-02-q18",
+   "question_i18n": {
+    "uz": "Henssge nomogrammasida 95% aniqlik chegarasi eng ehtimoliy o‘lim vaqtidan ikki tomonga ko‘pi bilan necha soat?"
+   },
+   "options_i18n": {
+    "uz": [
+     "2,8 soat",
+     "24 soat",
+     "0,5 soat",
+     "12 soat"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Simpson bo‘yicha Henssge nomogrammasining 95% aniqlik chegarasi eng ehtimoliy vaqtdan ikki tomonga ko‘pi bilan 2,8 soat; muhit haroratining 5 °C o‘zgarishi vaqtni kamida 1 soatga o‘zgartirishi mumkin."
+   },
+   "source": {
+    "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+    "title": "Simpson's Forensic Medicine, 13th ed.",
+    "page": "50"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-02-q19",
+   "question_i18n": {
+    "uz": "Hodisa joyida jarohat tavsiflanganda yara bilan bog‘liq qaysi qoida to‘g‘ri?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Yarani doim yuvib tozalash kerak",
+     "Yarani zond bilan chuqurligini o‘lchash shart",
+     "Yarani zondlash mumkin emas, chunki soxta yo‘l hosil bo‘ladi",
+     "Yara tavsifi shart emas, faqat suratga olinadi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Yara soat siferblati bo‘yicha tavsiflanadi; yarani zondlash mumkin emas, aks holda soxta yo‘l hosil bo‘lishi mumkin."
+   },
+   "source": {
+    "author": "Пиголкин Ю.И., Баринов Е.Х., Богомолов Д.В., Богомолова И.Н.",
+    "title": "Судебная медицина: учебник для вузов, М.: ГЭОТАР-МЕД (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "83"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-02-q20",
+   "question_i18n": {
+    "uz": "Tez kelgan o‘limga xos bo‘lgan topilma qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ichki a’zolarda qonning umuman bo‘lmasligi",
+     "Qon ivindilarining ko‘pligi va fibringa boyligi",
+     "Murda dog‘larining kech paydo bo‘lishi va oz bo‘lishi",
+     "Yurak va tomirlarda suyuq qon, yoyiq murda dog‘lari"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Tez o‘limda yurak va tomirlarda suyuq qon, ichki a’zolarda venoz to‘laqonlik, yoyiq murda dog‘lari va seroz pardalarda mayda nuqtali qon quyilishlar kuzatiladi; uzoq agoniyada esa ivindilar ko‘p bo‘ladi."
+   },
+   "source": {
+    "author": "Пиголкин Ю.И., Баринов Е.Х., Богомолов Д.В., Богомолова И.Н.",
+    "title": "Судебная медицина: учебник для вузов, М.: ГЭОТАР-МЕД (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "72"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Пиголкин Ю.И., Баринов Е.Х., Богомолов Д.В., Богомолова И.Н.",
+   "title": "Судебная медицина: учебник для вузов, М.: ГЭОТАР-МЕД (egasi taqdim etgan; yopiq foydalanish)"
+  },
+  {
+   "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+   "title": "Simpson's Forensic Medicine, 13th ed."
+  }
+ ]
+}

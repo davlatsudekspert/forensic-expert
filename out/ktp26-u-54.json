@@ -77,31 +77,30 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Issiqlik ajralish yo‘llari",
-        "nodes": [],
-        "header": [
-          "Yo‘l",
-          "Ulushi"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Nurlanish",
+            "value": "55 %"
+          },
+          {
+            "label": "Ter bilan",
+            "value": "27 %"
+          },
+          {
+            "label": "O‘tkazish",
+            "value": "15 %"
+          },
+          {
+            "label": "Turli ajratmalar",
+            "value": "3 %"
+          },
+          {
+            "label": "Normal tana harorati",
+            "value": "36–37 °S"
+          }
         ],
-        "rows": [
-          [
-            "Nurlanish",
-            "55%"
-          ],
-          [
-            "Ter bilan",
-            "27%"
-          ],
-          [
-            "O‘tkazish",
-            "15%"
-          ],
-          [
-            "Turli ajratmalar",
-            "3%"
-          ]
-        ]
+        "caption": "Issiqlik ajralish yo‘llari"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Issiqlikning eng ko‘p qismi qaysi yo‘l bilan chiqadi? 2) Nega harorat chegarasidan chiqish hayotga mos kelmaydi? Doskada: 36-37°S me’yor, 22-25°S va 43-44°S chegara qiymatlari bilan harorat shkalasini chizing. Tipik xato: pastki va yuqori kritik chegaralarni (22-25°S va 43-44°S) almashtirib yuborish.",
       "uncertain": false
@@ -138,31 +137,38 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Moyillik omillari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Misollar"
+        "kind": "tree",
+        "root": "Moyillik omillari",
+        "children": [
+          {
+            "label": "Tashqi omillar",
+            "items": [
+              "Past harorat",
+              "Yuqori namlik, shamol"
+            ]
+          },
+          {
+            "label": "Ichki: holat",
+            "items": [
+              "Charchoq, ochlik",
+              "Kasallik, gipodinamiya"
+            ]
+          },
+          {
+            "label": "Ichki: kiyim, modda",
+            "items": [
+              "Mavsumga mos emas kiyim",
+              "Alkogol mastligi"
+            ]
+          },
+          {
+            "label": "Sezgir yosh",
+            "items": [
+              "Bolalar va keksalar"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Tashqi omillar",
-            "Past harorat, yuqori namlik, shamol"
-          ],
-          [
-            "Ichki: holat",
-            "Charchoq, ochlik, kasallik, gipodinamiya"
-          ],
-          [
-            "Ichki: kiyim, modda",
-            "Mavsumga mos emas kiyim, alkogol mastligi"
-          ],
-          [
-            "Sezgir yosh",
-            "Bolalar va keksalar"
-          ]
-        ]
+        "caption": "Sovuq qotishga moyillik"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Qaysi omillar tashqi, qaysilari ichki? 2) Ekspertizada bu omillarni nega aniqlash kerak? Doskada: tashqi va ichki omillar jadvalini talabalar bilan to‘ldiring. Eslatma: darslikka ko‘ra sovuq qotish ba’zan havo harorati +10°S gacha bo‘lganda ham uzoq vaqt qolib ketganda rivojlanishi mumkin. Tipik xato: sovuq qotishni faqat manfiy haroratda bo‘ladi deb o‘ylash.",
       "uncertain": false
@@ -199,36 +205,27 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Umumiy va mahalliy ta’sir",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Sovuq qotish",
-          "Sovuq urish"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Sovuq qotish",
+            "items": [
+              "Umumiy ta’sir (butun organizm)",
+              "Butun tana harorati pasayadi",
+              "Kompensatsiya, dekompensatsiya"
+            ]
+          },
+          {
+            "title": "Sovuq urish",
+            "items": [
+              "Mahalliy ta’sir (tananing bir qismi)",
+              "Umumiy harorat normal, soha sovuydi",
+              "Qo‘l-oyoq uchlari, quloq, burun, yonoq",
+              "Yashirin va reaktiv davr; 4 daraja"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Ta’sir turi",
-            "Umumiy (butun organizm)",
-            "Mahalliy (tananing bir qismi)"
-          ],
-          [
-            "Tana harorati",
-            "Butun tana harorati pasayadi",
-            "Umumiy harorat normal, soha sovuydi"
-          ],
-          [
-            "Joylashuvi",
-            "Butun organizm tizimlari",
-            "Qo‘l-oyoq uchlari, quloq, burun, yonoq"
-          ],
-          [
-            "Davrlari",
-            "Kompensatsiya, dekompensatsiya",
-            "Yashirin va reaktiv davr; 4 daraja"
-          ]
-        ]
+        "caption": "Umumiy va mahalliy ta’sir"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega sovuq urishda umumiy harorat normal qoladi? 2) Qaysi holatda murdada urish belgilari topilishi mumkin? Doskada 3 ustunli jadvalni talabalar bilan birga chizing. Tipik xato: ikki holatni bir tushuncha deb aralashtirish."
     },
@@ -272,7 +269,24 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Rivojlanishi mumkin",
+            "value": "+10 °S gacha"
+          },
+          {
+            "label": "Sovuq suvda o‘lim",
+            "value": "1–1,5 soat"
+          },
+          {
+            "label": "Havoda o‘lim",
+            "value": "bir necha soat"
+          }
+        ],
+        "caption": "Sovuq qotish sharoitlari"
+      },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega musbat haroratda ham sovuq qotish mumkin? 2) Sovuq suvda o‘lim nega tezroq? Doskada moyillik omillarini ikki ustunga (tashqi/ichki) ajratib yozdiring. Tipik xato: sovuq qotish faqat manfiy haroratda bo‘ladi deb o‘ylash."
     },
     {
@@ -545,33 +559,172 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Sovuq qotish bosqichlari",
-        "nodes": [],
-        "header": [
-          "Bosqich",
-          "Harorat",
-          "Asosiy belgi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Kompensatsiya",
+            "text": "Harorat normaga intiladi; almashinuv ↑, teri tomirlari torayadi"
+          },
+          {
+            "title": "2. Dekompensatsiya",
+            "text": "+30…+28 °S: MNT buziladi, nafas va puls sekinlashadi"
+          },
+          {
+            "title": "3. Yakuniy",
+            "text": "+25…+22 °S: nafas to‘xtashi, kollaps, fibrillyasiya"
+          }
         ],
-        "rows": [
-          [
-            "1. Kompensatsiya",
-            "Normaga intiladi",
-            "Almashinuv ↑, teri tomirlari torayadi"
-          ],
-          [
-            "2. Dekompensatsiya",
-            "+30...+28°S",
-            "MNT buziladi, nafas va puls sekin"
-          ],
-          [
-            "3. Yakuniy",
-            "+25...+22°S",
-            "Nafas to‘xtashi, kollaps, fibrillyasiya"
-          ]
-        ]
+        "caption": "Sovuq qotish bosqichlari"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: nega o‘lim sababi bir xil emas (nafas to‘xtashi, kollaps, fibrillyasiya)? Jadvaldagi harorat oraliqlarini talabalar xotiradan tiklasin. Doskada chizing: uch ustunli jadvalni bo‘sh holda, talabalar to‘ldirsin. Tipik xato: +30...+28°S va +25...+22°S oraliqlarini almashtirib yuborish."
+    },
+    {
+      "title": "Simpson: gipotermiya tasnifi va harorat chegaralari",
+      "bullets": [
+        {
+          "text": "Gipotermiya — tana harorati 37 °S dan 35 °S dan pastga tushishi; 10 °S dan past muhit zaif odamda zararli gipotermiyaga yetarli.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "176"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tasnif: yengil — 32–35 °S, o‘rta — 30–32 °S, og‘ir — 30 °S dan past; 32 °S dan pastda titrash to‘xtaydi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "176"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hushdan ketish 27–30 °S da bo‘lishi mumkin; qorinchalar fibrillyasiyasi va apnoe 27 °S dan pastda.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "176"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sovuq suv issiqlikni quruq havodan 20–30 marta tez oladi; alkogol tomirlarni kengaytirib issiqlik yo‘qotishni oshiradi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "176"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Gipotermiya",
+            "value": "< 35 °S"
+          },
+          {
+            "label": "Yengil",
+            "value": "32–35 °S"
+          },
+          {
+            "label": "O‘rta",
+            "value": "30–32 °S"
+          },
+          {
+            "label": "Og‘ir",
+            "value": "< 30 °S"
+          },
+          {
+            "label": "Hushdan ketish",
+            "value": "27–30 °S"
+          },
+          {
+            "label": "Fibrillyasiya, apnoe",
+            "value": "< 27 °S"
+          }
+        ],
+        "caption": "Simpson: gipotermiya darajalari"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega 32 °S dan pastda holat tez yomonlashadi? 2) G‘iyosov bosqichlari (+30…+22 °S) Simpson tasnifidan nimasi bilan farq qiladi? Doskaga chizing: harorat shkalasi. Tipik xato: gipotermiyani faqat manfiy haroratda deb o‘ylash.",
+      "source_note_removed": null
+    },
+    {
+      "title": "Simpson: gipotermiya darajalari bo‘yicha belgilar",
+      "bullets": [
+        {
+          "text": "Yengil: titrash, sovuqni sezish, loqaydlik, sovuq oqargan teri.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "176"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘rta: nazoratsiz kuchli titrash, chalkashlik, muvofiqlik buzilishi, xotira yo‘qolishi, uyquchanlik, nutq buzilishi, sekin sayoz nafas, bo‘sh puls.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "176"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Og‘ir: qo‘l-oyoq nazoratini yo‘qotish, to‘satdan to‘xtaydigan titrash, hushdan ketish, nafas va puls yo‘qligi, mushaklar qotishi, ko‘z qorachig‘i kengayishi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "176"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gipotermiya uchun ob-havo g‘ayrioddiy sovuq bo‘lishi shart emas: o‘rtacha sovuq qishda ham ko‘p keksalar gipotermiyaga tushadi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "176"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Yengil",
+            "items": [
+              "Titrash, sovuqni sezish",
+              "Loqaydlik",
+              "Sovuq, oqargan teri"
+            ]
+          },
+          {
+            "title": "O‘rta",
+            "items": [
+              "Kuchli nazoratsiz titrash",
+              "Chalkashlik, muvofiqlik buzilishi",
+              "Uyquchanlik, nutq buzilishi",
+              "Sekin sayoz nafas, bo‘sh puls"
+            ]
+          },
+          {
+            "title": "Og‘ir",
+            "items": [
+              "Titrash to‘satdan to‘xtaydi",
+              "Hushdan ketish",
+              "Nafas, puls yo‘q yoki juda zaif",
+              "Mushaklar qotishi, qorachiq kengayishi"
+            ]
+          }
+        ],
+        "caption": "Simpson: Box 17.4"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega titrashning to‘satdan to‘xtashi xavfli belgi? 2) Qaysi guruhlar ko‘proq xavf ostida? Doskaga chizing: uch ustunli darajalar jadvali. Tipik xato: tinch yotgan, titramayotgan odamni «sog‘lom» deb baholash.",
+      "source_note_removed": null
     },
     {
       "title": "Tezkor savol: bosqichlar va harorat",
@@ -629,7 +782,7 @@
           "uncertain": false
         },
         {
-          "text": "Tashqi omillar: past harorat, yuqori namlik, shamol. Ichki omillar: mavsumga nomutanosib kiyim, kuchli charchoq, ochlik, kasallik, harakatsizlik, alkogol mastligi.",
+          "text": "Tashqi omillar: past harorat, yuqori namlik, shamol. Ichki: mavsumga mos emas kiyim, charchoq, ochlik, kasallik, harakatsizlik, alkogol mastligi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -647,7 +800,7 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: xato qilish xavfi! Sovuq qotish faqat manfiy haroratda bo‘ladi, deb o‘ylamang. Uzoq qolib ketilsa, havo harorati +10°S gacha bo‘lganda ham rivojlanishi mumkin.",
+          "text": "Diqqat: sovuq qotish faqat manfiy haroratda bo‘ladi deb o‘ylamang. Uzoq qolinsa, havo harorati +10°S gacha bo‘lganda ham rivojlanishi mumkin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -742,7 +895,38 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Teri belgilari",
+        "children": [
+          {
+            "label": "Rayskiy belgilari",
+            "items": [
+              "Og‘iz-burun atrofida muz sumalaklari",
+              "Qosh, kipriklarda qirov"
+            ]
+          },
+          {
+            "label": "G‘oz terisi",
+            "items": [
+              "Soch ko‘taruvchi mushaklar qisqaradi"
+            ]
+          },
+          {
+            "label": "Puparev belgisi",
+            "items": [
+              "Moyak qisqargan, yorg‘oq tortilgan"
+            ]
+          },
+          {
+            "label": "Ochiq sohalar",
+            "items": [
+              "Ko‘kimtir, biroz shishinqiragan"
+            ]
+          }
+        ],
+        "caption": "Past haroratning hayotiy belgilari"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Rayskiy va Puparev belgilarini bir-biridan qanday farqlaysiz? 2) “G‘oz terisi” nima hisobiga paydo bo‘ladi? Doskada yuz sxemasi chizib, muz sumalaklari va qirov joylarini belgilatiring. Tipik xato: Rayskiy belgisini Puparev yoki Vishnevskiy belgilari bilan aralashtirish."
     },
     {
@@ -821,26 +1005,24 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Harorat va dog‘ rangi",
-        "nodes": [],
-        "header": [
-          "Sharoit",
-          "Dog‘ rangi",
-          "Izoh"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Musbat (+10 °S gacha)",
+            "items": [
+              "Dog‘ rangi: ko‘kimtir-binafsha",
+              "To‘qimalar kislorodni sarflab ulguradi"
+            ]
+          },
+          {
+            "title": "Manfiy harorat",
+            "items": [
+              "Dog‘ rangi: pushti-qizg‘ish",
+              "Qonda kislorod ko‘p qoladi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Musbat (+10°S gacha)",
-            "Ko‘kimtir-binafsha",
-            "To‘qimalar kislorodni sarflab ulguradi"
-          ],
-          [
-            "Manfiy harorat",
-            "Pushti-qizg‘ish",
-            "Qonda kislorod ko‘p qoladi"
-          ]
-        ]
+        "caption": "Harorat va murda dog‘i rangi"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Dog‘ rangi harorat sharoitiga qanday bog‘liq? 2) Nega rang qondagi kislorod bilan tushuntiriladi? Doskada: ikki ustunli jadvalni (musbat va manfiy harorat) talabalar bilan to‘ldiring. Tipik xato: sovuq qotishda dog‘lar har doim pushti-qizg‘ish bo‘ladi deb o‘ylash. Musbat haroratda ular ko‘kimtir-binafsha bo‘lishi mumkin.",
       "diagram_note": null
@@ -1072,31 +1254,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Dog‘larning xususiyatlari",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Ma’lumot"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Uchrash chastotasi",
+            "value": "80–90 %"
+          },
+          {
+            "label": "Murdada saqlanishi",
+            "value": "6–9 oydan keyin"
+          },
+          {
+            "label": "Diametri",
+            "value": "≤0,5 sm"
+          },
+          {
+            "label": "Joylashuvi",
+            "value": "burma tepasi"
+          }
         ],
-        "rows": [
-          [
-            "Uchrash chastotasi",
-            "80-90% holatda"
-          ],
-          [
-            "Saqlanish muddati",
-            "O‘limdan 6-9 oydan keyin ham"
-          ],
-          [
-            "Joylashuvi",
-            "Shilliq qavat burmalarining tepa sohasi"
-          ],
-          [
-            "O‘lchami",
-            "Diametri 0,5 sm gacha"
-          ]
-        ]
+        "caption": "Vishnevskiy dog‘lari"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: nega bu belgi sovuq qotish diagnostikasida muhim hisoblanadi? O‘limdan 6-9 oy o‘tgach ham topilishi ekspert uchun nimani anglatadi? Doskada: oshqozon shilliq qavati burmalari va dog‘larning joylashuvini chizing. Qo‘shimcha: dog‘lar pichoqning orqa tomoni yoki suv oqimi bilan oson olinadi. Tipik xato: dog‘larni hayotiy bo‘lmagan oddiy murda o‘zgarishi deb o‘ylash."
     },
@@ -1190,6 +1367,84 @@
       "teacher_notes": "Vaqt: 6 daq. Muhokama: dog‘larning yo‘qligi sovuq qotishni inkor etadimi? Chaqaloq murdasida bu belgiga tayanish nega xavfli? Doskada: o‘lim tezligi (tez – sekin) va dog‘lar miqdori o‘rtasidagi bog‘liqlikni ikki ustunli sxema qilib chizing. Tipik xato: dog‘lar yo‘qligini sovuq qotishdan o‘lim bo‘lmagan degan xulosa deb qabul qilish. Diqqat: tez o‘lim ≠ ko‘p dog‘."
     },
     {
+      "title": "Simpson: gipotermiyada murda topilmalari va xulq",
+      "bullets": [
+        {
+          "text": "Yirik bo‘g‘imlar (tirsak, son, tizza) ustida pushti-binafsha dog‘ («sovuq eritemasi») gipotermiyadan o‘limlarning taxminan 50 foizida uchraydi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "177"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mikroskopda eritrotsit chiqishi (ekstravazat) yo‘q — bu uni ko‘karishdan farqlaydi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "177"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oshqozondagi gemorragik eroziyalar (Vishnevskiy dog‘lari) spetsifik emas: sepsis, shok va alkogol suiiste’molida ham bo‘ladi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "177"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Paradoksal yechinish va «yashirinib o‘lish» sindromi hodisa joyini shubhali ko‘rsatishi mumkin; ikkinchisi sekin sovishda ko‘proq kuzatiladi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "177–178"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Gipotermiya topilmalari",
+        "children": [
+          {
+            "label": "Teri",
+            "items": [
+              "Yirik bo‘g‘imlarda pushti dog‘ (≈50 %)",
+              "Mikroskopda eritrotsit chiqishi yo‘q"
+            ]
+          },
+          {
+            "label": "Oshqozon",
+            "items": [
+              "Vishnevskiy dog‘lari",
+              "Sepsis, shok, alkogolda ham"
+            ]
+          },
+          {
+            "label": "Ichak, oshqozon osti bezi",
+            "items": [
+              "Gemorragik eroziya, ichak infarkti",
+              "Gemorragik pankreatit"
+            ]
+          },
+          {
+            "label": "Xulq belgilari",
+            "items": [
+              "Paradoksal yechinish",
+              "«Yashirinib o‘lish» sindromi"
+            ]
+          }
+        ],
+        "caption": "Murda va hodisa joyi"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega Vishnevskiy dog‘lari yagona isbot emas? 2) Yalang‘och topilgan murda nimani anglatishi mumkin? Doskaga chizing: topilmalar daraxti. Tipik xato: yechingan murdani avtomatik jinoiy deb baholash.",
+      "source_note_removed": null
+    },
+    {
       "title": "Tezkor savol: ichki belgilar",
       "bullets": [
         {
@@ -1229,7 +1484,37 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Nomli ichki belgilar",
+        "children": [
+          {
+            "label": "Puxnarevich",
+            "items": [
+              "Oshqozon bo‘sh, kichik"
+            ]
+          },
+          {
+            "label": "Fabrikantov",
+            "items": [
+              "Buyrak jomi: mayda qon quyilish"
+            ]
+          },
+          {
+            "label": "Vishnevskiy",
+            "items": [
+              "Oshqozon shilliq qavati dog‘lari"
+            ]
+          },
+          {
+            "label": "Kasyanov",
+            "items": [
+              "Buyrak to‘g‘ri naychalari"
+            ]
+          }
+        ],
+        "caption": "Belgi — a’zo moslashi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega bu belgilarni bir-biridan farqlash muhim? 2) Qaysi belgi bo‘sh oshqozon bilan bog‘liq? Doskada 3 ustunli (olim – a’zo – topilma) jadval chizdiring. Tipik xato: Fabrikantov va Vishnevskiy belgilarini aralashtirish.",
       "uncertain": false
     },
@@ -1275,15 +1560,15 @@
         "rows": [
           [
             "Mikroskopiya",
-            "Spazm, stroma shishi, mayda qon quyilishi"
+            "Spazm, stroma shishi, qon quyilish"
           ],
           [
             "Kasyanov belgisi",
-            "Buyrak naychalari: proliferatsiya, nekrobioz"
+            "Naychalar: proliferatsiya, nekrobioz"
           ],
           [
             "Gistokimyo",
-            "Glikogen va buyrak usti lipoidlari yo‘qoladi"
+            "Glikogen va adrenal lipoidlar yo‘qoladi"
           ],
           [
             "Qisqa muddatli o‘lim",
@@ -1569,36 +1854,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Sovuq urish darajalari",
-        "nodes": [],
-        "header": [
-          "Daraja",
-          "Teri belgilari",
-          "Tuzalish"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "I daraja",
+            "text": "Qizg‘ish-ko‘kimtir, shish, qichish; 3–7 kun"
+          },
+          {
+            "title": "II daraja",
+            "text": "Tiniq suyuqlikli pufaklar; 10–20 kun, chandiqsiz"
+          },
+          {
+            "title": "III daraja",
+            "text": "Teri nekrozi, gemorragik pufak; 1–2 oy, chandiq"
+          },
+          {
+            "title": "IV daraja",
+            "text": "Suyakkacha nekroz; soha ajralib, chandiq qoladi"
+          }
         ],
-        "rows": [
-          [
-            "I",
-            "Qizg‘ish-ko‘kimtir, biroz shish, qichish",
-            "3–7 kun, teri tiklanadi"
-          ],
-          [
-            "II",
-            "Tiniq suyuqlikli pufaklar, atrof ko‘kimtir",
-            "10–20 kun, chandiqsiz"
-          ],
-          [
-            "III",
-            "Teri nekrozi, gemorragik pufaklar",
-            "1–2 oy va undan ko‘p, chandiq"
-          ],
-          [
-            "IV",
-            "Suyakkacha nekroz, demarkatsion hoshiya",
-            "Soha ajralib, chandiqli cho‘loq qoladi"
-          ]
-        ]
+        "caption": "Sovuq urish darajalari"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: qaysi darajada terining o‘zi tiklanadi, qaysi darajada chandiq qoladi? Nega IV darajada infeksion asoratlar ko‘p? Doskada: jadvalni talabalar bilan birga to‘ldiring. Tipik xato: I va II darajani nekroz bilan bog‘lash; nekroz III darajadan boshlanadi."
     },
@@ -1634,31 +1909,25 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Hayot uchun xavfli sovuq urish",
-        "nodes": [],
-        "header": [
-          "Daraja",
-          "Tana yuzasi",
-          "Baho"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "II daraja",
+            "value": "> 20 %",
+            "unit": "tana yuzasi"
+          },
+          {
+            "label": "III daraja",
+            "value": "> 15 %",
+            "unit": "tana yuzasi"
+          },
+          {
+            "label": "III–IV daraja",
+            "value": "> 10 %",
+            "unit": "tana yuzasi"
+          }
         ],
-        "rows": [
-          [
-            "II daraja",
-            "20% dan ortiq",
-            "Hayot uchun xavfli"
-          ],
-          [
-            "III daraja",
-            "15% dan ortiq",
-            "Hayot uchun xavfli"
-          ],
-          [
-            "III-IV daraja",
-            "10% dan ortiq",
-            "Hayot uchun xavfli"
-          ]
-        ]
+        "caption": "Hayot uchun xavfli sovuq urish"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: nega shifokor hujjatida maydon va harorat pasayishi qayd etilishi ekspert uchun muhim? Reperkussiya qanday ko‘rinadi? Doskada: uch mezonni (II-20%, III-15%, III-IV-10%) yozib, ketma-ketlikni ko‘rsating. Tipik xato: foizlarni daraja bilan almashtirib yuborish; chuqurroq daraja uchun maydon kichikroq."
     },
@@ -1749,12 +2018,12 @@
           [
             "Tashqi",
             "Poza, qosh-kiprikda qirov",
-            "Hayotiy ta’sir; mastda bo‘lmasligi mumkin"
+            "Hayotiy; mastda bo‘lmasligi mumkin"
           ],
           [
             "Tashqi",
             "Qor tagidagi muz qatlami",
-            "Nospetsifik: sovumagan murdada ham bo‘ladi"
+            "Nospetsifik: sovumagan murdada ham"
           ],
           [
             "Ichki",
@@ -1819,11 +2088,11 @@
       "question": "Kuchli mast shaxs sovuqda qolgan. Alkogol uning issiqlik yo‘qotishini qaysi mexanizm bilan kuchaytiradi?",
       "options": [
         "Teri qon tomirlarini toraytirib, issiqni ushlab qoladi",
-        "Teri qon tomirlarini kengaytirib, issiqlik ajralishini oshiradi",
+        "Jigardagi glikogen zaxirasini to‘ldirib, tanani isitadi",
         "Modda almashinuvini kuchaytirib, issiqlik ishlab chiqaradi",
-        "Jigardagi glikogen zaxirasini to‘ldirib, tanani isitadi"
+        "Teri qon tomirlarini kengaytirib, issiqlik ajralishini oshiradi"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Spirtli ichimlik teri qon tomirlarini kengaytiradi, shuning uchun issiqlik ajralishi yanada kuchayadi. Mastlikda vaziyat to‘g‘ri baholanmaydi va himoya choralari ko‘rilmaydi. Ko‘p alkogol termoregulyatsiya markazlari faoliyatini ham buzadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1834,12 +2103,12 @@
     {
       "question": "Odam sovuq suvga tushib qoldi. Sovuq suvda sovuq qotishdan o‘lim odatda qancha muddatda sodir bo‘ladi?",
       "options": [
-        "Taxminan 1–1,5 soat ichida",
+        "Taxminan bir necha daqiqa ichida",
         "Taxminan bir necha soat, ba’zan undan ko‘proq",
         "Taxminan bir sutkadan keyin",
-        "Taxminan bir necha daqiqa ichida"
+        "Taxminan 1–1,5 soat ichida"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Havoda sovuq qotishdan o‘lim bir necha soat, ba’zan undan uzoq ta’sirdan keyin sodir bo‘ladi. Sovuq suvda bu muddat ancha qisqa, ya’ni 1–1,5 soat.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1896,22 +2165,6 @@
       }
     },
     {
-      "question": "Sovuqda qolgan odamda dastlabki bosqichda teri qon tomirlarining torayishi qanday natija beradi?",
-      "options": [
-        "Issiqlik ishlab chiqarilishini kamaytiradi",
-        "Issiqlik ajralishini kuchaytiradi",
-        "Issiqlik ajralishini kamaytiradi",
-        "Kislorod sarfini birdan to‘xtatadi"
-      ],
-      "correct_index": 2,
-      "explanation": "Birinchi bosqichda teri qon tomirlari torayadi va issiqlik ajralishi kamayadi. Bir vaqtda issiqlik ishlab chiqarish uchun modda almashinuvi kuchayadi, kislorod sarfi ortadi.",
-      "source": {
-        "author": "G‘iyosov Z.A.",
-        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-        "page": "192"
-      }
-    },
-    {
       "question": "Sovuqda uzoq qolgan shaxsda tana harorati +29°S ga tushgan. Nafas va puls sekinlashgan, arterial bosim pasaygan, bosh miya po‘stlog‘i funksiyasi buzilgan. Bu qaysi bosqichga mos?",
       "options": [
         "Kompensator-moslashuv davri",
@@ -1947,11 +2200,11 @@
       "question": "Qishda topilgan kuchli mast shaxs murdasida qo‘llar ko‘krakka, oyoqlar qoringa bukilgan poza yo‘q. Bu holat qanday izohlanadi?",
       "options": [
         "Murda hodisa joyidan boshqa joyga ko‘chirilgan",
-        "Kuchli mastlikda bu poza bo‘lmasligi mumkin",
         "Sovuq qotish o‘lim sababi bo‘la olmaydi",
+        "Kuchli mastlikda bu poza bo‘lmasligi mumkin",
         "Murda qotishi juda tez rivojlangan"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Sovuq qotgan odam pozasida jabrlangan issiqlik ajratuvchi yuzani kamaytirish uchun qo‘l-oyoqlarini bukadi. Kuchli mastlik holatida esa bu poza bo‘lmasligi mumkin. Shuning uchun pozaning yo‘qligi sovuq qotishni inkor etmaydi, boshqa belgilar ham baholanadi.",
       "source": {
         "author": "G‘iyosov Z.A.",

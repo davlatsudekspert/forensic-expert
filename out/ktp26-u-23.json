@@ -121,31 +121,35 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Shikastlovchi omillar",
-        "nodes": [],
-        "header": [
-          "Omil",
-          "Ta’sir turlari"
+        "kind": "tree",
+        "root": "Shikastlovchi omillar",
+        "children": [
+          {
+            "label": "Fizik",
+            "items": [
+              "mexanik, termik, elektr, barometrik, nur"
+            ]
+          },
+          {
+            "label": "Kimyoviy",
+            "items": [
+              "zaharlar, kimyoviy moddalar, dorilar"
+            ]
+          },
+          {
+            "label": "Biologik",
+            "items": [
+              "toksinlar, mikroblar"
+            ]
+          },
+          {
+            "label": "Ruhiy",
+            "items": [
+              "kuchli hayajon, qo‘rquv"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Fizik",
-            "mexanik, termik, elektr, barometrik, nur"
-          ],
-          [
-            "Kimyoviy",
-            "zaharlar, kimyoviy moddalar, dori-darmonlar"
-          ],
-          [
-            "Biologik",
-            "toksinlar, kasallik qo‘zg‘atuvchi mikroblar"
-          ],
-          [
-            "Ruhiy",
-            "kuchli hayajon, qo‘rquv"
-          ]
-        ]
+        "caption": "Shikastlovchi omillar"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega ruhiy ta’sirni sud psixiatriyasi o‘rganadi? 2) Qaysi turchalar fizik omilga kiradi? Doskada: to‘rt tarmoqli daraxt chizdiring, fizik tarmog‘iga beshta turchani yozdiring. Tipik xato: mexanik omilni alohida (fizikdan tashqari) tur deb hisoblash; u fizik omilning turchasi.",
       "uncertain": false
@@ -182,31 +186,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Tasnif mezonlari",
-        "nodes": [],
-        "header": [
-          "Mezon",
-          "Birinchi atama",
-          "Ikkinchi atama"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Birinchi atama",
+            "items": [
+              "Tashqi ta’sir turi: Oddiy: bitta omil",
+              "Shikastlangan soha: Cheklangan: bir soha yoki segment",
+              "Jarohatlar soni: Yakka"
+            ]
+          },
+          {
+            "title": "Ikkinchi atama",
+            "items": [
+              "Tashqi ta’sir turi: Murakkab: ikki va undan ortiq tur",
+              "Shikastlangan soha: Qo‘sh: ikki va undan ortiq soha",
+              "Jarohatlar soni: Ko‘p"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Tashqi ta’sir turi",
-            "Oddiy: bitta omil",
-            "Murakkab: ikki va undan ortiq tur"
-          ],
-          [
-            "Shikastlangan soha",
-            "Cheklangan: bir soha yoki segment",
-            "Qo‘sh: ikki va undan ortiq soha"
-          ],
-          [
-            "Jarohatlar soni",
-            "Yakka",
-            "Ko‘p"
-          ]
-        ]
+        "caption": "Tasnif mezonlari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: nega klinik va sud-tibbiy diagnozda avval shu mezonlarga aniqlik kiritiladi? Hamma uch mezon diagnozda birgalikda qo‘llanishini ham muhokama qiling. Doskada jadvalni 3 mezon bo‘yicha chizdirib, har katakka bittadan misol yozdiring. Tipik xato: talabalar ‘oddiy’ va ‘yakka’ atamalarini aralashtiradi. Birinchisi ta’sir turiga, ikkinchisi jarohat soniga tegishli."
     },
@@ -330,31 +329,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Jarohat vositalari",
-        "nodes": [],
-        "header": [
-          "Vosita",
-          "Belgisi",
-          "Misol"
+        "kind": "tree",
+        "root": "Jarohat vositalari",
+        "children": [
+          {
+            "label": "Qurol",
+            "items": [
+              "Hujum/mudofaa uchun maxsus tayyorlangan",
+              "Pistolet, miltiq, hanjar"
+            ]
+          },
+          {
+            "label": "Anjom",
+            "items": [
+              "Ishlab chiqarish yoki maishiy mahsulot",
+              "Bolta, arra, qaychi"
+            ]
+          },
+          {
+            "label": "Jism",
+            "items": [
+              "Aniq qo‘llanish maqsadi yo‘q",
+              "Tosh, tayoq"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Qurol",
-            "Hujum/mudofaa uchun maxsus tayyorlangan",
-            "Pistolet, miltiq, hanjar"
-          ],
-          [
-            "Anjom",
-            "Ishlab chiqarish yoki maishiy mahsulot",
-            "Bolta, arra, qaychi"
-          ],
-          [
-            "Jism",
-            "Aniq qo‘llanish maqsadi yo‘q",
-            "Tosh, tayoq"
-          ]
-        ]
+        "caption": "Jarohat vositalari"
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: nega bolta qurol emas, anjom hisoblanadi? Bitta narsa vaziyatga qarab turli guruhga o‘tadimi? Doskada 3 ustunli jadval chizdirib, har ustunga talabalar o‘z misolini yozsin. Tipik xato: o‘tkir narsa hammasi qurol deb o‘ylash; bolta va qaychi anjomdir."
     },
@@ -390,27 +390,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Tasnif sxemasi",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Ichki bo‘linishi"
+        "kind": "tree",
+        "root": "Tasnif sxemasi",
+        "children": [
+          {
+            "label": "O‘tmas jism",
+            "items": [
+              "Jism, transport, balandlikdan yiqilish"
+            ]
+          },
+          {
+            "label": "O‘q otar qurol",
+            "items": [
+              "O‘q otar va portlash jarohatlari"
+            ]
+          },
+          {
+            "label": "O‘tkir jism",
+            "items": [
+              "Bandda ko‘rsatilmagan"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "O‘tmas jism",
-            "Jism, transport, balandlikdan yiqilish"
-          ],
-          [
-            "O‘q otar qurol",
-            "O‘q otar va portlash jarohatlari"
-          ],
-          [
-            "O‘tkir jism",
-            "Ichki bo‘linishi bu bandda ko‘rsatilmagan"
-          ]
-        ]
+        "caption": "Tasnif sxemasi"
       },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: nima uchun balandlikdan yiqilish o‘tmas jarohatlar ichida alohida o‘rganiladi? Doskada uch shoxli daraxt sxemasini chizing. Tipik xato: portlash jarohatini o‘tmas guruhga qo‘shib yuborish; manbada u o‘q otar guruhida."
     },
@@ -447,6 +449,229 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 5 daqiqa. Savollarni og‘zaki so‘rang, javobni talaba o‘zi topsin. Muhokama: yengil lekin tez harakatlanuvchi jism nima uchun og‘ir jarohat berishi mumkin? Doskada kinetik energiya bog‘liqligini bir qatorda yozdiring. Tipik xato: faqat massani hisobga olib, tezlikni unutish."
+    },
+    {
+      "title": "Mexanik jarohatdan o‘lim: birlamchi sabablar",
+      "bullets": [
+        {
+          "text": "O‘limning birlamchi sabablarida o‘lim shikastlanishdan so‘ng qisqa vaqtda, ikkilamchi sabablarda birmuncha muddatdan keyin sodir bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "30"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hayot bilan nomutanosib jarohatlar (bosh ajrashi, tananing ikkiga bo‘linishi) transport travmasi, balandlikdan yiqilish, portlashda uchraydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "30"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Boshqa birlamchi sabablar: muhim a’zolar shikasti, qon yo‘qotish, travmatik shok, gematoma yoki qon-havo bilan qisilish, emboliya, qon aspiratsiyasi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "30-32"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ikkilamchi sabablar: infeksion asoratlar (sepsis, peritonit, gaz gangrenasi, qoqshol), travmatik toksikoz, ikkilamchi qon yo‘qotish va shok.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "33"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Mexanik jarohatdan o‘lim",
+        "children": [
+          {
+            "label": "Hayot bilan nomutanosib",
+            "items": [
+              "Bosh ajrashi, tana bo‘linishi",
+              "Yurak majaqlanishi"
+            ]
+          },
+          {
+            "label": "Muhim a’zolar shikasti",
+            "items": [
+              "Bosh miya, yurak lat eyishi",
+              "Yurak chayqalishi"
+            ]
+          },
+          {
+            "label": "Qon yo‘qotish, shok",
+            "items": [
+              "O‘tkir va ko‘p qon yo‘qotish",
+              "Travmatik shok (III-IV daraja)"
+            ]
+          },
+          {
+            "label": "Qisilish va aspiratsiya",
+            "items": [
+              "Gematoma, gemoperikard",
+              "Qon aspiratsiyasi"
+            ]
+          },
+          {
+            "label": "Emboliya",
+            "items": [
+              "Havo emboliyasi",
+              "Yog‘ emboliyasi"
+            ]
+          },
+          {
+            "label": "Ikkilamchi sabablar",
+            "items": [
+              "Sepsis, peritonit, gaz gangrenasi",
+              "Qoqshol, travmatik toksikoz"
+            ]
+          }
+        ],
+        "caption": "Birlamchi va ikkilamchi sabablar"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega birlamchi va ikkilamchi sabablarni ajratish muhim? Doskada: guruhlangan daraxt. Tipik xato: sepsisni birlamchi sabab deb hisoblash."
+    },
+    {
+      "title": "Qon yo‘qotish: o‘tkir va ko‘p",
+      "bullets": [
+        {
+          "text": "Yirik arteriya shikastlanishida 500 ml gacha qon yo‘qotilganda ham o‘lim dastlabki minutlarda qorinchalar fibrillyatsiyasidan bo‘lishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "31"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bunda faqat bosh miya va yurak mushagida kamqonlik; taloq odatdagidek to‘yingan; chap qorincha endokardi ostida Minakov dog‘lari topiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "31"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ko‘p qon yo‘qotish — 50% dan ortiq (2,5 litr va undan ko‘p) — bir necha soat davomida yuz beradi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "31"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Unda umumiy kamqonlik, taloqning qisqarishi, murda dog‘larining kech va kam paydo bo‘lishi, mushak qotishining kuchliroq bo‘lishi kuzatiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "31"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "O‘tkir qon yo‘qotish",
+            "items": [
+              "500 ml gacha ham xavfli",
+              "O‘lim dastlabki minutlarda",
+              "Qorinchalar fibrillyatsiyasi",
+              "Minakov dog‘lari — xos belgi"
+            ]
+          },
+          {
+            "title": "Ko‘p qon yo‘qotish",
+            "items": [
+              "50% dan ortiq (2,5 l va undan ko‘p)",
+              "Bir necha soat davomida",
+              "Umumiy kamqonlik, taloq qisqargan",
+              "Murda dog‘lari kech va kam"
+            ]
+          }
+        ],
+        "caption": "Ikki holat"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega yo‘qotilgan qon hajmi bilan birga sur’at ham ahamiyatli? Doskada: ikki ustun. Tipik xato: kam qon yo‘qotishda o‘limni mumkin emas deb o‘ylash."
+    },
+    {
+      "title": "Emboliya: havo va yog‘",
+      "bullets": [
+        {
+          "text": "Havo emboliyasi yirik venalar shikastida, jinoiy abortda rivojlanadi; 5-7 kub sm havo sekin eriydi, 10 kub sm va ko‘pi tez kirsa o‘limga olib kelishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "31"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sunsov sinamasi: perikard bo‘shlig‘iga suv quyilib, o‘ng qorincha devori teshiladi; suvdan havo pufaklari chiqishi musbat natija.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "31-32"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yog‘ emboliyasi uzun naysimon suyaklar sinishi va teri osti yog‘ qavati majaqlanishida kuzatiladi; o‘lim 2-3 kundan so‘ng sodir bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "32"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yog‘ emboliyasi diagnostikasida o‘pka va miya muzlatilgan kesmalari Sudan III (qizil) va Sudan IV (qora) bilan bo‘yaladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "32"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Havo emboliyasi",
+            "items": [
+              "Yirik vena shikasti, jinoiy abort",
+              "5-7 kub sm sekin eriydi",
+              "10 kub sm va ortiq tez — xavfli",
+              "Sunsov sinamasi"
+            ]
+          },
+          {
+            "title": "Yog‘ emboliyasi",
+            "items": [
+              "Naysimon suyak sinishi",
+              "Yog‘ qavati majaqlanishi",
+              "O‘lim 2-3 kundan so‘ng",
+              "Sudan III, Sudan IV bo‘yog‘i"
+            ]
+          }
+        ],
+        "caption": "Ikki turi"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega yog‘ emboliyasida o‘lim darhol emas? Doskada: ikki ustun. Tipik xato: Sunsov sinamasini yog‘ emboliyasiga qo‘llash."
     },
     {
       "title": "Jarohat xususiyatini belgilovchi omillar",
@@ -566,36 +791,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "O‘tmas va o‘tkir jism",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "O‘tmas jism",
-          "O‘tkir jism"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "O‘tmas jism",
+            "items": [
+              "To‘qima ajralishi: Birlamchi emas",
+              "Jarohat joyi: Bevosita yoki bilvosita",
+              "Jarohat turi: Shilinma, qontalash, yara, sinish",
+              "Yara chetlari: Notekis, shilingan"
+            ]
+          },
+          {
+            "title": "O‘tkir jism",
+            "items": [
+              "To‘qima ajralishi: Birlamchi, ezilish ikkilamchi",
+              "Jarohat joyi: Doim bevosita",
+              "Jarohat turi: Odatda yara, ba’zan sinish",
+              "Yara chetlari: Kesma yarada tekis"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "To‘qima ajralishi",
-            "Birlamchi emas",
-            "Birlamchi, ezilish ikkilamchi"
-          ],
-          [
-            "Jarohat joyi",
-            "Bevosita yoki bilvosita",
-            "Doim bevosita"
-          ],
-          [
-            "Jarohat turi",
-            "Shilinma, qontalash, yara, sinish",
-            "Odatda yara, ba’zan sinish"
-          ],
-          [
-            "Yara chetlari",
-            "Notekis, shilingan",
-            "Kesma yarada tekis"
-          ]
-        ]
+        "caption": "O‘tmas va o‘tkir jism"
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Nega o‘tkir jismda jarohat doim bevosita? 2) Yara chetlari bo‘yicha jismni qanday farqlaysiz? Doskada chizish: jadvalni talabalar bilan birga to‘ldiring. Tipik xato: o‘tkir jismdan faqat yara hosil bo‘ladi deb o‘ylash; shilinma va suyak sinishi ham mumkin."
     },
@@ -631,31 +848,35 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "O‘tkir jism turlari",
-        "nodes": [],
-        "header": [
-          "Turi",
-          "Ish qismi"
+        "kind": "tree",
+        "root": "O‘tkir jism turlari",
+        "children": [
+          {
+            "label": "Kesuvchi",
+            "items": [
+              "O‘tkir dam (ustara)"
+            ]
+          },
+          {
+            "label": "Sanchuvchi",
+            "items": [
+              "O‘tkir uch (bigiz, mix)"
+            ]
+          },
+          {
+            "label": "Sanchuvchi-kesuvchi",
+            "items": [
+              "Uch va dam (pichoq, xanjar)"
+            ]
+          },
+          {
+            "label": "Chopuvchi",
+            "items": [
+              "O‘tkir dam, katta massa (bolta)"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Kesuvchi",
-            "O‘tkir dam (ustara)"
-          ],
-          [
-            "Sanchuvchi",
-            "O‘tkir uch (bigiz, mix)"
-          ],
-          [
-            "Sanchuvchi-kesuvchi",
-            "Uch va dam (pichoq, xanjar)"
-          ],
-          [
-            "Chopuvchi",
-            "O‘tkir dam, katta massa (bolta)"
-          ]
-        ]
+        "caption": "O‘tkir jism turlari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega o‘tkir jismda jarohat doim bevosita bo‘ladi? 2) Bitta xanjar nega bir necha turga kiradi? Doskada: 0,1 mm mezonli o‘tkir uch va dam sxemasini chizdiring. Tipik xato: talaba o‘tkir va o‘tmas jism jarohat mexanizmini aralashtiradi, to‘qima avval ajralishini unutadi."
     },
@@ -777,31 +998,35 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Kesma yara qismlari",
-        "nodes": [],
-        "header": [
-          "Yara qismi",
-          "Xususiyati"
+        "kind": "tree",
+        "root": "Kesma yara qismlari",
+        "children": [
+          {
+            "label": "Chetlari",
+            "items": [
+              "Tekis, shilinish alomatisiz"
+            ]
+          },
+          {
+            "label": "Chekka devorlari",
+            "items": [
+              "Tekis, shilinishsiz"
+            ]
+          },
+          {
+            "label": "Uchlari",
+            "items": [
+              "O‘tkir"
+            ]
+          },
+          {
+            "label": "Ta’sir oxiriga mos uchi",
+            "items": [
+              "Qo‘shimcha kesmalar: “qaldirg‘och dumi”"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Chetlari",
-            "Tekis, shilinish alomatisiz"
-          ],
-          [
-            "Chekka devorlari",
-            "Tekis, shilinishsiz"
-          ],
-          [
-            "Uchlari",
-            "O‘tkir"
-          ],
-          [
-            "Ta’sir oxiriga mos uchi",
-            "Qo‘shimcha kesmalar: “qaldirg‘och dumi”"
-          ]
-        ]
+        "caption": "Kesma yara qismlari"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega kesma yaraning uzunligi chuqurligidan katta bo‘ladi? 2) “Qaldirg‘och dumi” yaraning qaysi uchida hosil bo‘ladi va nimani bildiradi? Doskada: urchuqsimon kesma yaraning ustki ko‘rinishini chizib, o‘tkir uchlari va qaldirg‘och dumini belgilang. Tipik xato: kesma yara chetlarini sanchma yaraga xos shilinish hoshiyasi bilan adashtirish; kesma yarada shilinish alomati bo‘lmaydi."
     },
@@ -1290,36 +1515,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Osh pichog‘i va xanjar yarasi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Bir tomonlama",
-          "Ikki tomonlama"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Bir tomonlama",
+            "items": [
+              "Misol: Osh pichog‘i",
+              "Shakli: Uzunchoq ponasimon, P-simon",
+              "Uchlari: Bir uchi o‘tkir, biri o‘tmas",
+              "Chetlari: Tekis"
+            ]
+          },
+          {
+            "title": "Ikki tomonlama",
+            "items": [
+              "Misol: Xanjar",
+              "Shakli: Urchuqsimon, oval, yarim oysimon",
+              "Uchlari: Ikkala uchi o‘tkir",
+              "Chetlari: Tekis; yaqinlashsa chiziqsimon"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Misol",
-            "Osh pichog‘i",
-            "Xanjar"
-          ],
-          [
-            "Shakli",
-            "Uzunchoq ponasimon, P-simon",
-            "Urchuqsimon, oval, yarim oysimon"
-          ],
-          [
-            "Uchlari",
-            "Bir uchi o‘tkir, biri o‘tmas",
-            "Ikkala uchi o‘tkir"
-          ],
-          [
-            "Chetlari",
-            "Tekis",
-            "Tekis; yaqinlashsa chiziqsimon"
-          ]
-        ]
+        "caption": "Osh pichog‘i va xanjar yarasi"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Yaraning o‘tmas uchi nimani ko‘rsatadi? 2) Qo‘shimcha kesma qanday paydo bo‘ladi? Doskada chizing: P-simon yara va tig‘ning ko‘ndalang kesimi (o‘tkir dam, o‘tmas tomon). Tipik xato: ikki tomonlama damli jism yarasida o‘tmas uchni qidirish; qo‘shimcha kesmani ikkinchi zarba deb hisoblash."
     },
@@ -1530,36 +1747,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ta’sir va yara belgilari",
-        "nodes": [],
-        "header": [
-          "Holat",
-          "Yara shakli",
-          "Chekka/uch"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Yara shakli",
+            "items": [
+              "Tikka, o‘tkir dam: Yoriqsimon, oval, chetlari tekis",
+              "Dam o‘tmasroq: Chetlari mayda tishli",
+              "Qiya ta’sir: Yoysimon shakl",
+              "Chopqi to‘liq kirdi: Uchlari o‘tmas, yoriqli"
+            ]
+          },
+          {
+            "title": "Chekka/uch",
+            "items": [
+              "Tikka, o‘tkir dam: Yara ochilib turadi",
+              "Dam o‘tmasroq: Biroz g‘adir-budur",
+              "Qiya ta’sir: O‘tkir burchakda shilinish, ezilish",
+              "Chopqi to‘liq kirdi: Devorlarda ezilish, majaqlanish"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Tikka, o‘tkir dam",
-            "Yoriqsimon, oval, chetlari tekis",
-            "Yara ochilib turadi"
-          ],
-          [
-            "Dam o‘tmasroq",
-            "Chetlari mayda tishli",
-            "Biroz g‘adir-budur"
-          ],
-          [
-            "Qiya ta’sir",
-            "Yoysimon shakl",
-            "O‘tkir burchakda shilinish, ezilish"
-          ],
-          [
-            "Chopqi to‘liq kirdi",
-            "Uchlari o‘tmas, yoriqli",
-            "Devorlarda ezilish, majaqlanish"
-          ]
-        ]
+        "caption": "Ta’sir va yara belgilari"
       },
       "teacher_notes": "Vaqt: 10 daq. Muhokama: chopqi to‘liq kirganda yara uchlari nega o‘tmas bo‘ladi? Qiya ta’sirda shilinish yaraning qaysi tomonida bo‘ladi? Doskada: bolta chopqisining qisman va to‘liq kirishini ikki sxemada chizdiring. Tipik xato: barcha chopma yaralarning uchi o‘tkir deb o‘ylash. Diqqat: o‘tkir uch faqat dam yoyi ta’sirida bo‘ladi."
     },
@@ -1595,31 +1804,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ta’sir va suyak shikasti",
-        "nodes": [],
-        "header": [
-          "Ta’sir joyi",
-          "Natija"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Kalla gumbazi, tikka ta’sir",
+            "text": "Yoriqsimon sinish"
+          },
+          {
+            "title": "Kalla gumbazi, qiya ta’sir",
+            "text": "Siniqli sinish"
+          },
+          {
+            "title": "Kuchsiz ta’sir",
+            "text": "Tashqi suyak pardasi, ba’zan g‘ovak modda"
+          },
+          {
+            "title": "Uzun naysimon suyak",
+            "text": "Qisman yoki to‘liq sinish, uzilish"
+          }
         ],
-        "rows": [
-          [
-            "Kalla gumbazi, tikka ta’sir",
-            "Yoriqsimon sinish"
-          ],
-          [
-            "Kalla gumbazi, qiya ta’sir",
-            "Siniqli sinish"
-          ],
-          [
-            "Kuchsiz ta’sir",
-            "Tashqi suyak pardasi, ba’zan g‘ovak modda"
-          ],
-          [
-            "Uzun naysimon suyak",
-            "Qisman yoki to‘liq sinish, uzilish"
-          ]
-        ]
+        "caption": "Ta’sir va suyak shikasti"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: kalla gumbaziga tikka va qiya ta’sirda sinish nega farq qiladi? Voqea tafsilotiga qarab chopma jarohat qaysi holatda ko‘proq uchraydi? Doskada: kalla gumbazida yoriqsimon va siniqli sinishni sxema qilib chizdiring. Tipik xato: yuzaki chopmani to‘liq sinish deb baholash; yuzaki chopmada faqat suyak usti pardasi, ba’zan g‘ovak modda shikastlanadi."
     },
@@ -1698,38 +1902,96 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Yaralar solishtirmasi",
-        "nodes": [],
-        "header": [
-          "Tur",
-          "Mexanizm va shakl",
-          "Chetlari va uchlari"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Mexanizm va shakl",
+            "items": [
+              "Kesma: O‘tkir dam; urchuqsimon, yarim oysimon",
+              "Sanchma: O‘tkir uch; shakli jism kesimiga mos",
+              "Sanchma-kesma: Uch va dam; bir damli jismda P-simon",
+              "Chopma: Zarb, katta massa; yoriqsimon, oval"
+            ]
+          },
+          {
+            "title": "Chetlari va uchlari",
+            "items": [
+              "Kesma: Chetlari tekis; uchlari o‘tkir",
+              "Sanchma: Tekis; shilinish hoshiyasi mumkin",
+              "Sanchma-kesma: Tekis, shilinishsiz; uchlari xilma-xil",
+              "Chopma: Tekis/mayda tishli; uchi o‘tkir yoki o‘tmas"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Kesma",
-            "O‘tkir dam; urchuqsimon, yarim oysimon",
-            "Chetlari tekis; uchlari o‘tkir"
-          ],
-          [
-            "Sanchma",
-            "O‘tkir uch; shakli jism kesimiga mos",
-            "Tekis; shilinish hoshiyasi mumkin"
-          ],
-          [
-            "Sanchma-kesma",
-            "Uch va dam; bir damli jismda P-simon",
-            "Tekis, shilinishsiz; uchlari xilma-xil"
-          ],
-          [
-            "Chopma",
-            "Zarb, katta massa; yoriqsimon, oval",
-            "Tekis/mayda tishli; uchi o‘tkir yoki o‘tmas"
-          ]
-        ]
+        "caption": "Yaralar solishtirmasi"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Qaysi belgi kesma va sanchma yarani eng ishonchli ajratadi? 2) Nega sanchma yarada ichki qon ketish kuchli? Doskada: jadvalni talabalar bilan birga to‘ldiring. Tipik xato: sanchma va sanchma-kesma yaralarni aralashtirish (birida to‘qima suriladi, ikkinchisida kesiladi)."
+    },
+    {
+      "title": "Arralovchi jismlardan jarohatlar",
+      "bullets": [
+        {
+          "text": "Arralovchi jismlardan jarohatlar kamdan-kam uchraydi, asosan uy-ro‘zg‘or va o‘rmon sanoatida baxtsiz hodisa tarzida; ba’zan murdani qismlashda.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "54"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Arra tishlari yoyilgan bo‘ladi, shu sababli arralama oralig‘i arra varag‘i qalinligidan kattaroq.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "55"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sirkulyar arra aylanma harakatida chetlari notekis, tishli yaralar qoldiradi; suyak arralama yuzalari nisbatan tekis, yoysimon izli.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "55"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Varaqsimon arra oldinga-orqaga harakatida yaralar chiziqsimon, chetlari mayda tishli, shilinishli; suyakda parallel ariqchalar bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "55"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Sirkulyar arra",
+            "items": [
+              "Aylanma harakat",
+              "Chetlari notekis, tishli",
+              "Mayda laxtakli bo‘lishi mumkin",
+              "Suyak yuzasi tekis, yoysimon izli"
+            ]
+          },
+          {
+            "title": "Varaqsimon arra",
+            "items": [
+              "Oldinga-orqaga harakat",
+              "Yara chiziqsimon",
+              "Chetlari mayda tishli, shilinishli",
+              "Suyakda parallel ariqchalar"
+            ]
+          }
+        ],
+        "caption": "Arra turlari"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: arralama yarasi ichida va atrofida nima topiladi? Doskada: ikki ustun. Tipik xato: arra jarohatini oddiy kesma yara deb baholash."
     },
     {
       "title": "Xulosa va asosiy tezislar",
@@ -2004,11 +2266,11 @@
       "question": "Sanchuvchi jism tanaga qiya ta’sir etgan. Sanchma yara chetidagi shilinish va ifloslanish hoshiyasi qanday joylashadi?",
       "options": [
         "Butun yara atrofida sirkulyar shaklda",
-        "O‘tkir burchak tomonida segmentar shaklda",
+        "Yara atrofida umuman hosil bo‘lmaydi",
         "Faqat yara tubida halqasimon shaklda",
-        "Yara atrofida umuman hosil bo‘lmaydi"
+        "O‘tkir burchak tomonida segmentar shaklda"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Sanchuvchi jism tikka ta’sir etganda hoshiya sirkulyar bo‘ladi. Qiya ta’sirda esa u o‘tkir burchak tomonida segmentar shaklda bo‘ladi. Bu belgilar jismning kesimi 5 mmdan katta bo‘lganda yaqqolroq ko‘rinadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2020,11 +2282,11 @@
       "question": "Bir tomonlama o‘tkir damli pichoq tanaga tikka emas, o‘tkir burchak ostida ta’sir qildi. Yara o‘lchami qanday bo‘ladi?",
       "options": [
         "Tikka ta’sirdagidan kichikroq bo‘ladi",
-        "Tikka ta’sirdagidan kattaroq bo‘ladi",
         "Ta’sir burchagiga bog‘liq bo‘lmaydi",
+        "Tikka ta’sirdagidan kattaroq bo‘ladi",
         "Faqat chiqish teshigi hosil bo‘ladi"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Sanchuvchi-kesuvchi jism tig‘i tanaga tikkaroq ta’sir etsa, yara o‘lchami kichikroq bo‘ladi. Ta’sir burchagi o‘tkir bo‘lsa, kattaroq o‘lchamdagi yaralar hosil bo‘ladi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2083,12 +2345,12 @@
     {
       "question": "Chopqi kallaning gumbaz suyaklariga qiya ta’sir qildi. Suyakda qanday sinish hosil bo‘ladi?",
       "options": [
-        "Yoriqsimon sinish",
         "Siniqli sinish",
+        "Yoriqsimon sinish",
         "Halqasimon sinish",
         "Spiralsimon sinish"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Chopuvchi jism kallaning gumbaz suyaklariga tikka ta’sir qilsa yoriqsimon, qiya ta’sir qilsa siniqli sinishlar vujudga keladi.",
       "source": {
         "author": "G‘iyosov Z.A.",

@@ -5,7 +5,7 @@
       "title": "Kirish: mavzu, maqsad va reja",
       "bullets": [
         {
-          "text": "Tibbiy xodimlarning faoliyati qonun va me’yoriy hujjatlar bilan belgilanadi. Ularning talablarini bajarmaslik yoki lozim darajada bajarmaslik tibbiy xodimlarning kasb huquqbuzarligi (TXKH) deyiladi.",
+          "text": "Tibbiy xodimlar faoliyati qonun va me’yoriy hujjatlar bilan belgilanadi; talablarni bajarmaslik yoki lozim bajarmaslik — kasb huquqbuzarligi (TXKH).",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -76,31 +76,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Axloq va huquq solishtiruvi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Axloq",
-          "Huquq"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Axloq",
+            "items": [
+              "Etika, din, urf-odat",
+              "«Tabiiy» yo‘l bilan vujudga keladi",
+              "Jamoatchilik fikri kuchi bilan ta’minlanadi"
+            ]
+          },
+          {
+            "title": "Huquq",
+            "items": [
+              "Davlat joriy etadi",
+              "Hamma uchun bir xil kuch",
+              "Davlat majburlashi bilan ta’minlanadi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Vujudga kelishi",
-            "‘Tabiiy’ yo‘l bilan",
-            "Davlat tomonidan joriy etiladi"
-          ],
-          [
-            "Rioya ta’minoti",
-            "Jamoatchilik fikri kuchi",
-            "Davlat majburlashi"
-          ],
-          [
-            "Mazmuni",
-            "Etika, din, urf-odat",
-            "Hamma uchun bir xil kuch"
-          ]
-        ]
+        "caption": "Axloq va huquq me’yorlari solishtiruvi"
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Vrach bemorga qo‘pol munosabatda bo‘lsa, bu axloq buzilishimi yoki huquqbuzarlikmi? 2) Urf-odat qaysi me’yorga kiradi? Doskada: ikki ustunli jadvalni talabalar bilan to‘ldiring. Tipik xato: axloq me’yorlarini ham davlat joriy qiladi deb o‘ylash."
     },
@@ -225,17 +220,29 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Huquqbuzarlik belgilari",
-        "nodes": [
-          "Qilmish (harakat/harakatsizlik)",
-          "Ijtimoiy xavf",
-          "G‘ayriqonuniylik",
-          "Ayb",
-          "Noxush oqibat"
+        "kind": "tree",
+        "root": "Huquqbuzarlik belgilari",
+        "children": [
+          {
+            "label": "Qilmish",
+            "items": [
+              "Harakat yoki harakatsizlik"
+            ]
+          },
+          {
+            "label": "Ijtimoiy xavf"
+          },
+          {
+            "label": "G‘ayriqonuniylik"
+          },
+          {
+            "label": "Ayb"
+          },
+          {
+            "label": "Noxush oqibat"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Huquq nazariyasiga ko‘ra besh belgi"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Vrachning harakatsizligi (masalan, bemorni ko‘rmaslik) qaysi belgiga mos keladi? Beshta belgidan birortasi yetishmasa nima bo‘ladi? Doskada: besh belgini ketma-ket zanjir qilib chizib, har biriga bittadan tibbiy misol yozdiring. Tipik xato: harakatsizlikni huquqbuzarlik emas deb hisoblash."
     },
@@ -331,27 +338,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Qilmish turlarini solishtirish",
-        "nodes": [],
-        "header": [
-          "Qilmish turi",
-          "Nima buziladi"
+        "kind": "tree",
+        "root": "Qilmish turlari",
+        "children": [
+          {
+            "label": "Intizomiy",
+            "items": [
+              "Mehnat va xizmat tartibi buziladi"
+            ]
+          },
+          {
+            "label": "Ma’muriy",
+            "items": [
+              "Muassasani boshqarish tartibi buziladi"
+            ]
+          },
+          {
+            "label": "Fuqaroviy",
+            "items": [
+              "Mulkiy va nomulkiy huquqlar buziladi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Intizomiy",
-            "Mehnat, xizmat, ishlab chiqarish tartibi"
-          ],
-          [
-            "Ma’muriy",
-            "Muassasani boshqarish tartibi"
-          ],
-          [
-            "Fuqaroviy",
-            "Mulkiy va nomulkiy huquqlar"
-          ]
-        ]
+        "caption": "Huquq nuqtai nazaridan uch tur"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Tibbiy xodim ish tartibini buzsa, bu qaysi turga kiradi? 2) Bemorning huquqi buzilsa, qaysi turga kiradi? Doskada chizish: uch ustunli jadvalni (tur — nimani buzadi) talabalar bilan to‘ldiring. Tipik xato: intizomiy va ma’muriy turlarni aralashtirish. Intizomiy mehnat tartibiga, ma’muriy muassasani boshqarish tartibiga tegishli."
     },
@@ -485,6 +494,49 @@
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nega Pirogov xatoni yashirish huquqi yo‘q deb hisoblagan? 2) Xatoni oshkor qilish bemorlarga qanday foyda beradi? Doskada: “Errare humanum est” iborasini yozib, Pirogovning ikki tezisini (xato qilish huquqi / yashirish huquqi yo‘q) ikki ustunda chizdiring. Tipik xato: talabalar “vrach xatosi”ni jinoyat yoki huquqiy atama deb o‘ylaydi (vrach xatosi ≠ jinoyat)."
     },
     {
+      "title": "Vrach xatosi talqinidagi tortishuvlar",
+      "bullets": [
+        {
+          "text": "Vrach xatosini baholashda turli, ba’zan qarama-qarshi fikrlar bor; keng ma’noda barcha kamchiliklarni kiritish ma’qullanmaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "69"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "S. Ya. Doletskiy (1989): baxtsizlik, asorat va xato tushunchalariga mos kelmaydigan nuqsonlar kam uchramaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "69"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "«Vrach xatosi» iborasini ilk bor N. I. Pirogov taklif etgan; u 1837 yilda xatolarni tezroq oshkor etishni burch deb bilgan.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "69"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Pirogov: vrachning xato qilish huquqi bor, ularni yashirish huquqi yo‘q.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "69"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Xato ≠ huquqiy kategoriya: bu fikrni takrorlang."
+    },
+    {
       "title": "Davidovskiy bo‘yicha vrach xatosi ta’rifi",
       "bullets": [
         {
@@ -516,31 +568,35 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Davidovskiy ta’rifi tarkibi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Mazmuni"
+        "kind": "tree",
+        "root": "Vrach xatosi (1928)",
+        "children": [
+          {
+            "label": "Fan nomukammal",
+            "items": [
+              "Fan va usullar yetarli emas"
+            ]
+          },
+          {
+            "label": "Atipik kechish",
+            "items": [
+              "Kasallik odatdagidan boshqacha kechadi"
+            ]
+          },
+          {
+            "label": "Tayyorgarlik",
+            "items": [
+              "Vrach tayyorgarligi yetishmaydi"
+            ]
+          },
+          {
+            "label": "Shart",
+            "items": [
+              "Beparvolik, e’tiborsizlik elementi yo‘q"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Sabab 1",
-            "Tibbiyot fani va usullari nomukammal"
-          ],
-          [
-            "Sabab 2",
-            "Kasallikning atipik kechishi"
-          ],
-          [
-            "Sabab 3",
-            "Vrach tayyorgarligi yetarli emas"
-          ],
-          [
-            "Shart",
-            "Sovuqqonlik, beparvolik elementlari yo‘q"
-          ]
-        ]
+        "caption": "I. V. Davidovskiy: vijdonan adashish"
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) “Vijdonan adashish” beparvolikdan nimasi bilan farq qiladi? 2) Atipik kechishga misol keltiring. Doskada: jadvalni ko‘chirib, har sababga bittadan klinik misol yozdiring. Tipik xato: “tayyorgarlik yetishmasligi”ni beparvolik bilan aralashtirish; beparvolik elementi bo‘lsa, bu vijdonan adashish emas."
     },
@@ -586,11 +642,11 @@
         "rows": [
           [
             "S. P. Botkin",
-            "Tashhislarning 30% to‘g‘ri bo‘lsa qoniqardi"
+            "30% to‘g‘ri tashhisdan ham qoniqardi"
           ],
           [
             "T. Bilrot",
-            "Xatoni aytishdan faqat ruhan ojizlar qo‘rqadi"
+            "Xatodan faqat ruhan ojizlar qo‘rqadi"
           ],
           [
             "I. A. Kassirskiy",
@@ -632,17 +688,15 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Xatodan saboq olish yo‘li",
+        "kind": "cycle",
         "nodes": [
           "Xato aniqlanadi",
           "Xato oshkor etiladi",
           "Hamkasblar muhokamasi",
-          "Sabablar tahlil qilinadi",
-          "Kelgusida takrorlanmaydi"
+          "Sabablar tahlili",
+          "Takrorlanmaydi"
         ],
-        "header": [],
-        "rows": []
+        "caption": "Xatodan saboq olish sikli"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega xatoni yashirish emas, oshkor etish kerak? 2) Klinik-anatomik konferensiyada nima muhokama qilinadi? Doskada chizish: xatodan saboq olish zanjirini talabalar bilan birga chizing. Tipik xato: konferensiyani jazolash yig‘ilishi deb tushunish; uning maqsadi tahlil va takrorlamaslikdir."
     },
@@ -784,36 +838,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ikki tarixiy voqea solishtirmasi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Krassovskiy",
-          "Kolomnin"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Krassovskiy (1870)",
+            "items": [
+              "Tuxumdon kistasi olib tashlandi",
+              "Qorinda gubkali tampon qoldi",
+              "Voqeani maqolada ochiq bayon etdi"
+            ]
+          },
+          {
+            "title": "Kolomnin (1886)",
+            "items": [
+              "To‘g‘ri ichak yarasi operatsiyasi",
+              "Kokaindan zaharlanish; sil tasdiqlanmadi",
+              "Ta’qibdan so‘ng o‘zini otdi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Yil",
-            "1870, Sankt-Peterburg",
-            "1886, Peterburg"
-          ],
-          [
-            "Operatsiya",
-            "Tuxumdon kistasini olib tashlash",
-            "To‘g‘ri ichak yarasi operatsiyasi"
-          ],
-          [
-            "Aniqlangan holat",
-            "Qorinda gubkali tampon qolgan",
-            "Kokaindan zaharlanish; sil tasdiqlanmagan"
-          ],
-          [
-            "Yakun",
-            "Voqeani maqolada ochiq bayon etdi",
-            "Ta’qibdan so‘ng o‘zini otib o‘ldirdi"
-          ]
-        ]
+        "caption": "Xatoga turlicha munosabat"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega bir xil toifadagi holatlarga munosabat har xil bo‘ldi? 2) Hamkasblar va matbuot qanday rol o‘ynashi kerak? Doskada chizish: ikki ustunli jadval (Krassovskiy / Kolomnin) va yakunlarni o‘q bilan ko‘rsating. Tipik xato: Kolomnin holatini jinoyat deb baholash; manbada u vrach xatosi tahlili fonida keltirilgan."
     },
@@ -821,7 +865,7 @@
       "title": "Voqea tahlili 2: tampon qoldirilgan operatsiya",
       "bullets": [
         {
-          "text": "Vaziyat: 1870 yilda katta tuxumdon kistasi olib tashlangach, yosh ayol 40 soatdan so‘ng vafot etgan. Qorin bo‘shlig‘ida o‘lim sabablaridan biri bo‘lishi mumkin bo‘lgan gubkali tampon topilgan.",
+          "text": "Vaziyat: 1870 yilda katta tuxumdon kistasi olib tashlangach, yosh ayol 40 soatda vafot etgan; qorin bo‘shlig‘ida gubkali tampon topilgan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -882,7 +926,7 @@
           "uncertain": false
         },
         {
-          "text": "Savol 3: Vrach xatosi javobgarlik keltiradimi? Javob: vijdonan adashish huquqiy javobgarlikni yuzaga keltirmasligi lozim; xato oshkor qilinib, hamkasblar bilan muhokama etiladi.",
+          "text": "Savol 3: vrach xatosi javobgarlik keltiradimi? Javob: vijdonan adashish javobgarlik tug‘dirmasligi lozim; xato oshkor qilinib, muhokama etiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -978,31 +1022,35 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Holatlar guruhlari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Misol"
+        "kind": "tree",
+        "root": "Baxtsiz hodisa holatlari",
+        "children": [
+          {
+            "label": "Dori sezgirligi",
+            "items": [
+              "Idiosinkraziya; yuqori sezgirlik"
+            ]
+          },
+          {
+            "label": "Qon tomir",
+            "items": [
+              "Muolajada anevrizma yorilishi"
+            ]
+          },
+          {
+            "label": "Refleks",
+            "items": [
+              "Tekshiruvda yurak reflektor to‘xtashi"
+            ]
+          },
+          {
+            "label": "Ruhiy shok",
+            "items": [
+              "Operatsiya arafasida to‘satdan o‘lim"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Dori sezgirligi",
-            "Idiosinkraziya; keyin yuqori sezgirlik"
-          ],
-          [
-            "Qon tomir",
-            "Anevrizma yorilishi (muolajada)"
-          ],
-          [
-            "Refleks",
-            "Tekshiruvda yurakning reflektor to‘xtashi"
-          ],
-          [
-            "Ruhiy shok",
-            "Operatsiya arafasida to‘satdan o‘lim"
-          ]
-        ]
+        "caption": "Tirikligida aniqlanmagan xususiyatlar"
       },
       "teacher_notes": "Vaqt: 6 daq. Tezkor savol: “Oldin aniqlanmagan anevrizma odatdagi muolajada yorilsa, bu xatomi yoki baxtsiz hodisami?” Muhokama: angiografiya va gastrofibroskopiyada yurak to‘xtashini nima uchun oldindan bilib bo‘lmaydi? Doskaga chizing: jadvalni daftarga ko‘chirtirib, har guruhga o‘z misolingizni qo‘shdiring. Tipik xato: idiosinkraziyani vrach e’tiborsizligi deb baholash."
     },
@@ -1038,36 +1086,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Farqlash jadvali",
-        "nodes": [],
-        "header": [
-          "Mezon",
-          "Vrach xatosi",
-          "Baxtsiz hodisa"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Vrach xatosi",
+            "items": [
+              "Vrach adashadi (unga bog‘liq)",
+              "Sabab: fan, kasallik kechishi, tajriba",
+              "Huquqiy tushuncha emas",
+              "Odatda javobgarlik keltirmaydi"
+            ]
+          },
+          {
+            "title": "Baxtsiz hodisa",
+            "items": [
+              "Vrach harakatiga bog‘liq emas",
+              "Sabab: tasodifiy holatlar",
+              "Huquqiy tushuncha emas",
+              "Tibbiy xodim javobgar emas"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Vrach harakatiga bog‘liqligi",
-            "Bog‘liq: vrach adashadi",
-            "Bog‘liq emas"
-          ],
-          [
-            "Asosiy sabab",
-            "Fan, kasallik kechishi, tajriba",
-            "Tasodifiy holatlar"
-          ],
-          [
-            "Huquqiy kategoriya",
-            "Huquqiy tushuncha emas",
-            "Huquqiy tushuncha emas"
-          ],
-          [
-            "Javobgarlik",
-            "Odatda javobgarlik keltirmaydi",
-            "Tibbiy xodim javobgar emas"
-          ]
-        ]
+        "caption": "Farqlash mezonlari"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Xato va baxtsiz hodisaning asosiy farqi nimada? 2) Ikkalasi ham huquqiy tushuncha bo‘lmasa, nega ularni tahlil qilish kerak? Doskaga chizing: ikki ustunli jadvalni talabalar bilan birga to‘ldiring. Tipik xato: ikkala tushunchani aralashtirish va vrach beparvoligini ham “xato” deb atash; beparvolik xatoga kirmaydi."
     },
@@ -1161,7 +1201,7 @@
       "title": "Sororigeniya va yatrogeniya ta‘riflari",
       "bullets": [
         {
-          "text": "Yatrogeniya vrach emas, o‘rta tibbiy xodim tomonidan ham sodir bo‘lishi mumkin. I. Xardi (1972) hamshira harakati oqibati uchun «sororigeniya» atamasini taklif etdi.",
+          "text": "Yatrogeniya o‘rta tibbiy xodim tomonidan ham bo‘lishi mumkin: I. Xardi (1972) hamshira harakati oqibati uchun «sororigeniya» atamasini taklif etdi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1170,7 +1210,7 @@
           "uncertain": false
         },
         {
-          "text": "Sergeev va Erofeev (1998): yatrogeniya — diagnostika, davolash, profilaktika yoki reabilitatsiya muolajalari bilan bog‘liq holda bemor salomatligiga zarar etkazish.",
+          "text": "Sergeev va Erofeev (1998): yatrogeniya — diagnostika, davolash, profilaktika yoki reabilitatsiya bilan bog‘liq holda salomatlikka zarar etkazish.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1179,7 +1219,7 @@
           "uncertain": false
         },
         {
-          "text": "Shaposhnikov (1998): buyruq berish va ijro etish vakolatiga ega xodimlar so‘zi va harakatining nojo‘ya ta’siridan ruhiy va jismoniy salomatlikda o‘zgarish yuzaga keladi.",
+          "text": "Shaposhnikov (1998): buyruq berish va ijro etish vakolatidagi xodimlar so‘zi va harakatining nojo‘ya ta’siri ruhiy va jismoniy o‘zgarish beradi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1199,6 +1239,75 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Sororigeniya yatrogeniyadan nimasi bilan farq qiladi? 2) Sergeev va Shaposhnikov ta’riflaridan qaysi biri kengroq? Doskada: ikki ta’rifdan kalit so‘zlarni ajratib yozdiring. Tipik xato: sororigeniyani alohida kasb huquqbuzarligi deb o‘ylash; bu faqat hamshira harakati oqibatini bildiruvchi atama."
+    },
+    {
+      "title": "Yatrogeniya ta’riflarining qiyosi",
+      "bullets": [
+        {
+          "text": "Sergeev va Erofeev (1998): diagnostika, davolash, profilaktika yoki reabilitatsiya bilan bog‘liq salomatlikka zarar.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "75"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shaposhnikov (1998): buyruq berish va ijro etish vakolatidagi xodimlar so‘zi va harakatining nojo‘ya ta’siri.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "75"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hozirgi umum qabul qilingan talqin: tibbiy omillar ta’sirida yuzaga kelgan yangi patologik holat.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "75"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ayrim mualliflar yatrogeniyani vrach xatosining bir ko‘rinishi deb hisoblaydi (V. I. Akopov, 2000).",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "75"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Sergeev, Erofeev",
+            "items": [
+              "Muolajalar bilan bog‘liq zarar",
+              "Bevosita yoki bilvosita"
+            ]
+          },
+          {
+            "title": "Shaposhnikov",
+            "items": [
+              "Xodim so‘zi va harakati",
+              "Ruhiy va jismoniy o‘zgarish"
+            ]
+          },
+          {
+            "title": "Hozirgi talqin",
+            "items": [
+              "Tibbiy omil ta’sirida",
+              "Yangi patologik holat"
+            ]
+          }
+        ],
+        "caption": "Uch ta’rif"
+      },
+      "teacher_notes": "Tibbiy omil tushunchasiga muassasa sharoiti ham kiradi."
     },
     {
       "title": "Yatrogeniya turlari",
@@ -1232,17 +1341,37 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Yatrogeniya turlari",
-        "nodes": [
-          "Diagnostik",
-          "Davolash (jarrohlik, jismoniy)",
-          "Ruhiy-emotsional, informatsion",
-          "Profilaktik",
-          "Davolamaslik (kech murojaat)"
+        "kind": "tree",
+        "root": "Yatrogeniya",
+        "children": [
+          {
+            "label": "Diagnostik"
+          },
+          {
+            "label": "Davolash",
+            "items": [
+              "Davolash",
+              "Jarrohlik",
+              "Jismoniy"
+            ]
+          },
+          {
+            "label": "Ruhiy-emotsional",
+            "items": [
+              "Informatsion"
+            ]
+          },
+          {
+            "label": "Profilaktik"
+          },
+          {
+            "label": "Davolamaslik",
+            "items": [
+              "Tibbiy yordamga kech murojaat"
+            ]
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Yatrogeniya turlari (G‘iyosov)"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Tibbiy omil tushunchasiga nimalar kiradi? 2) Nima uchun kech murojaat ham yatrogeniya turi sanalgan? Doskada: tur nomlarini markaziy «yatrogeniya» atrofida chizdiring. Tipik xato: davolash va davolamaslik turlarini aralashtirish; manbada tur ro‘yxati «va boshqalar» bilan tugaydi, ya’ni to‘liq emas."
     },
@@ -1292,11 +1421,11 @@
           ],
           [
             "Qilmish",
-            "Ijtimoiy xavfi yo‘q g‘ayriqonuniy harakat"
+            "Ijtimoiy xavfi yo‘q g‘ayriqonuniylik"
           ],
           [
             "Vrach xatosi",
-            "Vijdonan adashish, huquqiy javobgarliksiz"
+            "Vijdonan adashish, javobgarliksiz"
           ],
           [
             "Baxtsiz hodisa",
@@ -1431,7 +1560,7 @@
           "uncertain": false
         },
         {
-          "text": "Sud jarayoniga olib keluvchi noxush oqibatlar jinoyat, vrach xatosi, baxtsiz hodisa yoki yatrogeniyadan (tibbiy xodim faoliyati bilan bog‘liq kasallik) kelib chiqishi mumkin.",
+          "text": "Sud jarayoniga olib keluvchi noxush oqibatlar: jinoyat, vrach xatosi, baxtsiz hodisa yoki yatrogeniya (tibbiy faoliyatdan kelgan kasallik).",
           "source": {
             "author": "Харин Г.М. (Kharin G.M.)",
             "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
@@ -1449,7 +1578,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Javobgarlik turlari",
+        "children": [
+          {
+            "label": "Jinoiy"
+          },
+          {
+            "label": "Fuqarolik-huquqiy"
+          },
+          {
+            "label": "Intizomiy"
+          },
+          {
+            "label": "Ma’muriy"
+          },
+          {
+            "label": "Moddiy"
+          }
+        ],
+        "caption": "Kharin: kasbiy huquqbuzarlik uchun"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Beshta javobgarlik turidan qaysi biri jinoyat bo‘lmagan holatda ham qo‘llanadi? 2) Nega ekspert ayb masalasini hal qila olmaydi? Doskada javobgarlik turlari daraxtini chizdiring. Tipik xato: ekspertiza xulosasini sud hukmi bilan tenglashtirish."
     },
     {
@@ -1494,15 +1644,15 @@
         "rows": [
           [
             "Shaxsga qarshi",
-            "Ehtiyotsizlikdan o‘lim; yordamsiz qoldirish"
+            "Ehtiyotsiz o‘lim; yordamsiz qoldirish"
           ],
           [
             "Aholi salomatligiga qarshi",
-            "Giyohvand moddalarni qonunsiz aylantirish"
+            "Giyohvand moddalar muomalasi"
           ],
           [
             "Xizmat manfaatlariga qarshi",
-            "Pora olish; xizmat soxtakorligi; beparvolik"
+            "Pora; xizmat soxtakorligi; beparvolik"
           ]
         ]
       },
@@ -1600,16 +1750,26 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Javobgarlik uchun to‘rt shart",
-        "nodes": [
-          "1. G‘ayriqonuniy harakat",
-          "2. Haqiqiy zarar",
-          "3. Sababiy bog‘liqlik",
-          "4. Ayb (majburiy emas)"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. G‘ayriqonuniy harakat",
+            "text": "Qonunga zid harakat yoki harakatsizlik"
+          },
+          {
+            "title": "2. Haqiqiy zarar",
+            "text": "Moddiy yoki ma’naviy zarar"
+          },
+          {
+            "title": "3. Sababiy bog‘liqlik",
+            "text": "Harakat va zarar o‘rtasida aloqa"
+          },
+          {
+            "title": "4. Ayb",
+            "text": "Majburiy emas"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Fuqarolik javobgarligi shartlari"
       },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Nega fuqarolik javobgarligida ayb majburiy shart emas? 2) Bemorga og‘riq qoldiruvchi berilmasa, qanday javobgarlik kelib chiqadi? Doskada: to‘rt shartli zanjirni chizib, to‘rtinchisini punktir bilan ajratib ko‘rsating. Tipik xato: fuqarolik javobgarligini jinoiy javobgarlik bilan aralashtirish, ya’ni aybsiz zarar qoplanmaydi deb o‘ylash. Eslatma: manbada Rossiya Fuqarolik kodeksi moddalari keltirilgan."
     },
@@ -1645,17 +1805,30 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Ish qo‘zg‘atilishidan ekspertizagacha",
-        "nodes": [
-          "Shikoyat / muassasa tashabbusi",
-          "Xizmat tekshiruvi komissiyasi",
-          "Xulosa prokuraturaga (3 kun)",
-          "Prokuror: ish qo‘zg‘atish",
-          "Komissiyaviy ekspertiza"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Shikoyat",
+            "text": "Shikoyat yoki muassasa tashabbusi"
+          },
+          {
+            "title": "Xizmat tekshiruvi",
+            "text": "Idoraviy maxsus komissiya"
+          },
+          {
+            "title": "Prokuraturaga",
+            "text": "Materiallar 3 kun ichida yuboriladi"
+          },
+          {
+            "title": "Ish qo‘zg‘atish",
+            "text": "Prokuror hal qiladi"
+          },
+          {
+            "title": "Ekspertiza",
+            "text": "Tergovchi tayinlaydi, komissiya o‘tkazadi"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Rossiya tartibi (Kharin): ekspertizagacha"
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Nega jinoyat ishi qo‘zg‘atilishidan oldin xizmat tekshiruvi o‘tkaziladi? 2) Ekspert nima uchun vrachning aybini baholamaydi? Doskada: besh bosqichli zanjirni chizdirib, har bosqichga javobgar organni yozdiring. Tipik xato: ekspertiza materiallar bo‘yicha jasadni yoki bemorni bevosita tekshirish bilan almashtiriladi deb o‘ylash, aslida u hujjatlar asosida o‘tkaziladi. Eslatma: tartib Rossiya amaliyotidan olingan."
     },
@@ -1672,7 +1845,7 @@
           "uncertain": false
         },
         {
-          "text": "Yana aniqlanadi: muolaja texnik jihatdan to‘g‘ri bajarilganmi, asoratlar bo‘lganmi, muolaja va noxush oqibat o‘rtasida to‘g‘ridan-to‘g‘ri sababiy bog‘liqlik bormi.",
+          "text": "Yana: muolaja texnik jihatdan to‘g‘ri bajarilganmi, asoratlar bormi, muolaja va noxush oqibat o‘rtasida to‘g‘ridan-to‘g‘ri sababiy bog‘liqlik bormi.",
           "source": {
             "author": "Харин Г.М. (Kharin G.M.)",
             "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
@@ -1706,7 +1879,7 @@
       "title": "Voqea tahlili 5: ish ko‘zg‘alishidan ekspertizagacha",
       "bullets": [
         {
-          "text": "Vaziyat: bemor qarindoshlari davolash sifatiga shikoyat qildi (yoki shifoxona ma’muriyati o‘zi ish boshladi). Savol: qaysi bosqichlar va hujjatlar ketma-ket keladi?",
+          "text": "Vaziyat: qarindoshlar davolash sifatiga shikoyat qildi (yoki ma’muriyat o‘zi ish boshladi). Savol: qaysi bosqichlar ketma-ket keladi?",
           "source": {
             "author": "Харин Г.М. (Kharin G.M.)",
             "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
@@ -1746,6 +1919,142 @@
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Idoraviy komissiya nima uchun jinoyat ishidan oldin tuziladi? 2) Prokuraturaga qaysi hujjatlar topshiriladi? Doskada: bosqichlar zanjirini chizing (shikoyat → komissiya → prokuratura → ish → ekspertiza). Tipik xato: ekspertiza shikoyatdan keyin darhol tayinlanadi deb o‘ylash. Eslatma: tartib Rossiya amaliyoti bo‘yicha; O‘zbekiston tartibi bilan taqqoslang."
     },
     {
+      "title": "Muhim sanalar va raqamlar",
+      "bullets": [
+        {
+          "text": "Asosiy tarixiy sanalar va muddatlar bir joyda: ular testda ko‘p so‘raladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "69-75"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "«Yatrogeniya» atamasi 1925 yilda O. Bumke tomonidan, «sororigeniya» 1972 yilda I. Xardi tomonidan taklif etilgan.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "74"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Birinchi klinik-anatomik konferensiya 1930 yil 9 dekabrda o‘tgan; Davidovskiy ta’rifi — 1928 yil.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "70"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xizmat tekshiruvi materiallari tugagach uch kun ichida prokuraturaga yuboriladi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "215"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Davidovskiy ta’rifi",
+            "value": "1928"
+          },
+          {
+            "label": "Bumke: yatrogeniya",
+            "value": "1925"
+          },
+          {
+            "label": "Birinchi konferensiya",
+            "value": "1930"
+          },
+          {
+            "label": "Krassovskiy voqeasi",
+            "value": "1870"
+          },
+          {
+            "label": "Kolomnin voqeasi",
+            "value": "1886"
+          },
+          {
+            "label": "Prokuraturaga",
+            "value": "3",
+            "unit": "kun"
+          }
+        ],
+        "caption": "Sana va muddatlar"
+      },
+      "teacher_notes": "Talabalardan sanalarni voqea bilan bog‘lashni so‘rang: kim, nima, qachon."
+    },
+    {
+      "title": "Nazorat savollari (kitob oxiri)",
+      "bullets": [
+        {
+          "text": "1. Huquq va axloq me’yorlari farqi. 2. Me’yoriy-huquqiy hujjat nimani anglatadi?",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "77"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "3. TXKH tushunchasining ta’rifi. 4. Qilmish jinoyatdan qanday farqlanadi?",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "77"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "5. Tibbiy xodimlar qilmishlarini sanab bering. 6. Vrach xatosi tushunchasini ilk bor kim taklif etgan?",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "77"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Axloq va huquq",
+            "text": "Rioya ta’minoti farqi"
+          },
+          {
+            "title": "2. Hujjat",
+            "text": "Me’yoriy-huquqiy hujjat"
+          },
+          {
+            "title": "3. TXKH",
+            "text": "Ta’rifi"
+          },
+          {
+            "title": "4. Qilmish va jinoyat",
+            "text": "Ijtimoiy xavf belgisi"
+          },
+          {
+            "title": "5. Qilmish turlari",
+            "text": "Intizomiy, ma’muriy, fuqaroviy"
+          },
+          {
+            "title": "6. Vrach xatosi",
+            "text": "Kim taklif etgan: Pirogov"
+          }
+        ],
+        "caption": "Kitob oxiridagi savollar va javob kaliti"
+      },
+      "teacher_notes": "Savollarni guruhlarda muhokama qiling."
+    },
+    {
       "title": "Xulosa va nazorat savollari",
       "bullets": [
         {
@@ -1758,7 +2067,7 @@
           "uncertain": false
         },
         {
-          "text": "Yatrogeniya — vrach yoki tibbiyot faoliyati keltirib chiqargan kasallik. U muvaffaqiyatli davodan keyin ham, ya’ni «ikkinchi kasallik» sifatida paydo bo‘lishi mumkin.",
+          "text": "Yatrogeniya — vrach yoki tibbiyot faoliyati keltirib chiqargan kasallik; muvaffaqiyatli davodan keyin ham «ikkinchi kasallik» sifatida paydo bo‘lishi mumkin.",
           "source": {
             "author": "Харин Г.М. (Kharin G.M.)",
             "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
@@ -2098,11 +2407,11 @@
       "question": "Idoraviy komissiya tibbiy yordamdagi nuqsonlar bo‘yicha xizmat tekshiruvini tugatdi. Materiallar prokuraturaga qachongacha yuborilishi kerak?",
       "options": [
         "Tugagach bir kun ichida",
-        "Tugagach uch kundan kechiktirmay",
+        "Tugagach bir oydan kechiktirmay",
         "Tugagach yetti kun ichida",
-        "Tugagach bir oydan kechiktirmay"
+        "Tugagach uch kundan kechiktirmay"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Jinoyat ishi qo‘zg‘atilishidan oldin xizmat tekshiruvi o‘tkaziladi. Tekshiruv materiallari tugagandan keyin kamida uch kun ichida, ya’ni uch kundan kechiktirmay prokuraturaga yuboriladi. Bir oy esa prokuratura talabi bilan o‘tkaziladigan tekshiruvning eng uzun muddati.",
       "source": {
         "author": "Харин Г.М. (Kharin G.M.)",

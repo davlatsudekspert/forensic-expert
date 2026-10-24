@@ -23,14 +23,42 @@
           "uncertain": true
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Sud tibbiyoti",
+        "children": [
+          {
+            "label": "Mohiyati",
+            "items": [
+              "Tibbiy-biologik masalalar",
+              "Sud, tergov, surishtiruv uchun"
+            ]
+          },
+          {
+            "label": "Ma’ruza rejasi",
+            "items": [
+              "Predmet va tarkib",
+              "Boshqa fanlar bilan aloqa",
+              "Tibbiy ta’limdagi o‘rni"
+            ]
+          },
+          {
+            "label": "Rivoji",
+            "items": [
+              "O‘zbekistondagi rivoji",
+              "Ekspertiza xizmati"
+            ]
+          }
+        ],
+        "caption": "Ma’ruza rejasi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nima uchun sud tibbiyoti alohida fan deb ataladi? 2) Siz uchun bu fan qayerda kerak bo‘ladi? Doskada: ma’ruza rejasini 4 band qilib yozing. Tipik xato: sud tibbiyotini faqat murda tekshirish fani deb hisoblash."
     },
     {
       "title": "Fanning ta’rifi",
       "bullets": [
         {
-          "text": "Sud tibbiyoti — huquqni muhofaza idoralari tekshiruvlarida dalil manbai bo‘ladigan tibbiy fakt va holatlarni aniqlash, tekshirish usullari va baholashga oid ilmiy bilimlar majmui.",
+          "text": "Sud tibbiyoti — huquqni muhofaza idoralari tekshiruvida dalil bo‘ladigan tibbiy faktlarni aniqlash, tekshirish usullari va baholashga oid ilmiy bilimlar majmui.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -48,7 +76,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Fan",
+            "text": "Dalil manbai bo‘ladigan tibbiy faktlarni aniqlash"
+          },
+          {
+            "title": "Usul",
+            "text": "Tekshirish usullari va baholash"
+          },
+          {
+            "title": "Bilim",
+            "text": "Ilmiy bilimlar majmui"
+          },
+          {
+            "title": "Amalda",
+            "text": "Sud-tibbiy ekspertiza ko‘rinishida"
+          }
+        ],
+        "caption": "Fanning ta’rifi"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: «Dalil manbai» iborasi nimani bildiradi? Doskada: ta’rifning 3 kalit so‘zi. Tipik xato: fanni faqat huquq fani deb tushunish."
     },
     {
@@ -127,7 +176,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Predmet",
+            "value": "ekspertiza"
+          },
+          {
+            "label": "Tizimni taklif etgan",
+            "value": "M. I. Avdeev"
+          },
+          {
+            "label": "Yili",
+            "value": "1948"
+          },
+          {
+            "label": "Tizim asosi",
+            "value": "sud-tibbiy amaliyot"
+          }
+        ],
+        "caption": "Fan predmeti"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Predmet tizimi nega ekspertiza obyektlariga bog‘liq? Doskada: «predmet = nazariya + amaliyot». Tipik xato: predmetni faqat nazariy bilim deb bilish."
     },
     {
@@ -161,7 +231,46 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Predmet tizimi (8 bo‘lim)",
+        "children": [
+          {
+            "label": "Tarix va tashkilot",
+            "items": [
+              "Rivojlanish tarixi",
+              "Tashkiliy-protsessual masalalar"
+            ]
+          },
+          {
+            "label": "Tashqi omillar",
+            "items": [
+              "Sog‘liq buzilishi va o‘lim"
+            ]
+          },
+          {
+            "label": "Murda va tirik shaxs",
+            "items": [
+              "Murdani ko‘zdan kechirish",
+              "Tirik shaxslar ekspertizasi"
+            ]
+          },
+          {
+            "label": "Dalil va materiallar",
+            "items": [
+              "Ashyoviy dalillar",
+              "Tergov va sud materiallari"
+            ]
+          },
+          {
+            "label": "Kasb huquqbuzarliklari",
+            "items": [
+              "Tibbiy xodimlar ekspertizasi"
+            ]
+          }
+        ],
+        "caption": "Fan predmeti tizimi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi bo‘lim sizning kelajakdagi ishingizga eng yaqin? Doskada: 8 bo‘lim ro‘yxati. Tipik xato: sakkiz bo‘limdan ba’zilarini unutish."
     },
     {
@@ -177,7 +286,7 @@
           "uncertain": false
         },
         {
-          "text": "Hozirgi tarkib: tarix, tashkiliy-protsessual asoslar, tanatologiya, travmatologiya, akusherlik-ginekologiya, toksikologiya, biologiya, tashqi omillar, identifikatsiya.",
+          "text": "Tarkib: tarix, tashkiliy-protsessual asoslar, tanatologiya, travmatologiya, akusherlik-ginekologiya, toksikologiya, biologiya, tashqi omillar, identifikatsiya.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -195,7 +304,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Popov (1999)",
+            "items": [
+              "O‘lim va o‘limdan keyingi o‘zgarishlar",
+              "Jarohatlar",
+              "Shaxs identifikatsiyasi"
+            ]
+          },
+          {
+            "title": "Hozirgi tarkib",
+            "items": [
+              "Tarix, tashkiliy-protsessual asoslar",
+              "Tanatologiya, travmatologiya",
+              "Toksikologiya, biologiya, tashqi omillar, identifikatsiya"
+            ]
+          },
+          {
+            "title": "2002 yil",
+            "items": [
+              "Kasb huquqbuzarliklari ajralib chiqdi",
+              "«Vrach faoliyatining huquqiy asoslari»"
+            ]
+          }
+        ],
+        "caption": "Fan tarkibi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Tarkibiy qismlar bir-biri bilan qanday bog‘liq? Doskada: 9 qism ro‘yxati. Tipik xato: kasb huquqbuzarliklarini hozir ham fan tarkibida deb hisoblash (2002 yilda ajralgan)."
     },
     {
@@ -256,7 +393,27 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Fundamental",
+            "items": [
+              "Sud tibbiyoti poydevori",
+              "Ularsiz ekspertiza o‘tmaydi"
+            ]
+          },
+          {
+            "title": "Klinik",
+            "items": [
+              "Travmatologiya — jarohat",
+              "Akusherlik-ginekologiya — jinoiy abort",
+              "Oftalmologiya — ko‘z shikasti"
+            ]
+          }
+        ],
+        "caption": "Fundamental va klinik fanlar"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Qaysi klinik fan qaysi ekspertizaga kerak? Doskada: fan → ekspertiza turi. Tipik xato: klinik bilimsiz ekspertiza o‘tkazish mumkin deb o‘ylash."
     },
     {
@@ -272,7 +429,7 @@
           "uncertain": false
         },
         {
-          "text": "Klinik mutaxassis diagnostika, davolash va profilaktikani to‘g‘ri olib borish nuqtai nazaridan qaraydi; sud-tibbiy ekspert esa huquqiy baholash maqsadida yondashadi.",
+          "text": "Klinik mutaxassis diagnostika, davolash, profilaktikani to‘g‘ri olib borish nuqtai nazaridan qaraydi; sud-tibbiy ekspert huquqiy baholash maqsadida yondashadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -333,14 +490,45 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Boshqa fanlar",
+        "children": [
+          {
+            "label": "Kimyo",
+            "items": [
+              "Sud-tibbiy toksikologiya"
+            ]
+          },
+          {
+            "label": "Fizika",
+            "items": [
+              "Harorat, elektr toki",
+              "Atmosfera bosimi"
+            ]
+          },
+          {
+            "label": "Falsafa",
+            "items": [
+              "Dialektik baholash"
+            ]
+          },
+          {
+            "label": "Mantiq",
+            "items": [
+              "Xulosa to‘xtamlarini tuzish"
+            ]
+          }
+        ],
+        "caption": "Kimyo, fizika, falsafa, mantiq"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Mantiqiy xato xulosaga qanday ta’sir qiladi? Doskada: kimyo / fizika / mantiq. Tipik xato: falsafa va mantiqni ekspertiza uchun ahamiyatsiz deb bilish."
     },
     {
       "title": "Ekspertiza prinsiplari",
       "bullets": [
         {
-          "text": "«Sud ekspertizasi to‘g‘risida»gi Qonunda asosiy prinsiplar: qonuniylik, inson huquq va erkinliklariga rioya, ekspert mustaqilligi, xolislik, har tomonlamalik va to‘liqlik.",
+          "text": "«Sud ekspertizasi to‘g‘risida»gi Qonunda asosiy prinsiplar: qonuniylik, inson huquqlariga rioya, ekspert mustaqilligi, xolislik, har tomonlamalik, to‘liqlik.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -368,17 +556,29 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Asosiy prinsiplar",
-        "nodes": [
-          "Qonuniylik",
-          "Inson huquqlari",
-          "Mustaqillik",
-          "Xolislik",
-          "To‘liqlik"
+        "kind": "tree",
+        "root": "Ekspertiza prinsiplari",
+        "children": [
+          {
+            "label": "Qonuniylik"
+          },
+          {
+            "label": "Inson huquqlariga rioya"
+          },
+          {
+            "label": "Ekspert mustaqilligi"
+          },
+          {
+            "label": "Xolislik"
+          },
+          {
+            "label": "Har tomonlamalik"
+          },
+          {
+            "label": "To‘liqlik"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "«Sud ekspertizasi to‘g‘risida»gi Qonun prinsiplari"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi prinsip ekspertni tashqi ta’sirdan himoya qiladi? Doskada: 6 prinsip. Tipik xato: xolislik va mustaqillikni bir narsa deb bilish."
     },
@@ -413,7 +613,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Ekspert mustaqilligi",
+        "children": [
+          {
+            "label": "Mas’uliyat",
+            "items": [
+              "Tekshiruv, natija, xulosa uchun shaxsiy"
+            ]
+          },
+          {
+            "label": "Vakolat",
+            "items": [
+              "O‘z vakolati doirasida",
+              "Tashabbus huquqi"
+            ]
+          },
+          {
+            "label": "Dalil davri",
+            "items": [
+              "Shilinma, qontalash",
+              "10–15 kungacha tekshirish"
+            ]
+          }
+        ],
+        "caption": "Mustaqillik, vakolat, dalil davri"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nima uchun obyektning tekshirish muddati muhim? Doskada: «10–15 kun». Tipik xato: shilinma va qontalashni istalgan paytda tekshirish mumkin deb o‘ylash."
     },
     {
@@ -448,27 +674,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Usul guruhlari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Misollar"
+        "kind": "tree",
+        "root": "Obyektlar va usullar",
+        "children": [
+          {
+            "label": "Obyektlar",
+            "items": [
+              "Murda, tirik shaxslar",
+              "Ashyoviy dalillar",
+              "Ish materiallari"
+            ]
+          },
+          {
+            "label": "Umumilmiy usullar",
+            "items": [
+              "Kuzatuv, tavsif",
+              "Taqqoslash, o‘lchash, tajriba"
+            ]
+          },
+          {
+            "label": "Xususiy usullar",
+            "items": [
+              "Morfologik, klinik",
+              "Rentgen, xromatografiya, spektr"
+            ]
+          },
+          {
+            "label": "Maxsus usullar",
+            "items": [
+              "Shaxs va qurol aynanligi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Umumilmiy",
-            "Kuzatuv, tavsif, taqqoslash, o‘lchash, tajriba"
-          ],
-          [
-            "Xususiy",
-            "Morfologik, klinik, rentgenologik, xromatografik, spektrografik, kimyoviy"
-          ],
-          [
-            "Maxsus",
-            "Shaxs va shikastlovchi qurol aynanligini aniqlash"
-          ]
-        ]
+        "caption": "Obyektlar va usullar"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Har guruhga bitta usul misolini keltiring. Doskada: jadval. Tipik xato: obyektning ishonchliligiga ekspertni javobgar deb bilish."
     },
@@ -503,7 +741,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Ilmiy asos",
+            "text": "Ilmiy asoslangan bo‘lishi"
+          },
+          {
+            "title": "Soddalik",
+            "text": "Imkon qadar oddiy va qulay"
+          },
+          {
+            "title": "Barqarorlik",
+            "text": "Barqaror natija berishi"
+          },
+          {
+            "title": "Takrorlash",
+            "text": "Takroriy tekshirish imkoni"
+          },
+          {
+            "title": "Ruxsat",
+            "text": "Faqat Bosh byuro ruxsat bergan usullar"
+          }
+        ],
+        "caption": "Usullarga talablar"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega faqat ruxsat etilgan usullar qo‘llanadi? Doskada: 3 talab. Tipik xato: o‘zboshimchalik bilan yangi usul qo‘llash."
     },
     {
@@ -519,7 +782,7 @@
           "uncertain": false
         },
         {
-          "text": "Qoidalar keyinchalik zo‘raki o‘lim, zaharlanish, go‘dak o‘ldirish bo‘yicha murdani tekshirish qoidalari bilan to‘ldirilgan; ishlab chiqishda Gippokrat (460–370 e.a.) ham qatnashgan.",
+          "text": "Keyin zo‘raki o‘lim, zaharlanish, go‘dak o‘ldirish bo‘yicha murdani tekshirish qoidalari qo‘shilgan; ishlab chiqishda Gippokrat (460–370 e.a.) ham bo‘lgan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -537,14 +800,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "IX–VIII asr e.a.",
+            "text": "Sparta: «Likurg qonunlari»"
+          },
+          {
+            "title": "Keyin",
+            "text": "Zo‘raki o‘lim, zaharlanish, go‘dak o‘ldirish qoidalari"
+          },
+          {
+            "title": "Gippokrat",
+            "text": "460–370 e.a.: ishlab chiqishda qatnashgan"
+          },
+          {
+            "title": "44 e.a.",
+            "text": "Antistius: Sezar 23 jarohat, faqat bittasi o‘lim sababi"
+          }
+        ],
+        "caption": "Qadimgi davrlar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Qadimda vrachlar nima uchun jalb qilingan? Doskada: xronologiya chizig‘i. Tipik xato: Antistius xulosasini zamonaviy ekspertiza bilan tenglashtirish."
     },
     {
       "title": "Tarix: Vizantiya va Xitoy",
       "bullets": [
         {
-          "text": "Yustinian kodeksida (VI asr) jarohat, abort, soxta kasalliklarda vrach va doyalarni jalb qilish lozimligi, ularning fikri guvohlar ko‘rsatmasidan ahamiyatliroqligi ta’kidlangan.",
+          "text": "Yustinian kodeksida (VI asr) jarohat, abort, soxta kasallikda vrach va doyalar jalb etilishi, ularning fikri guvoh ko‘rsatmasidan ahamiyatliroq ekani aytilgan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -563,23 +847,25 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Qadimgi manbalar",
-        "nodes": [],
-        "header": [
-          "Manba",
-          "Mazmuni"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Yustinian kodeksi",
+            "items": [
+              "Vrach va doyalar jalb etiladi",
+              "Fikri guvoh ko‘rsatmasidan ahamiyatli"
+            ]
+          },
+          {
+            "title": "«Si Yuan Lu» (1247)",
+            "items": [
+              "Sun-si asari, Xitoy",
+              "Murda tekshiruvi, jarohat, qurol",
+              "Bo‘g‘ish, cho‘kish, zaharlar"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Yustinian kodeksi (VI asr)",
-            "Vrach va doyalar fikri dalil sifatida"
-          ],
-          [
-            "«Si Yuan Lu» (1247)",
-            "Murda tekshiruvi, qurollar, bo‘g‘ish, cho‘kish, zahar"
-          ]
-        ]
+        "caption": "Qadimgi manbalar"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: «Si Yuan Lu»ning to‘rt qismi nimalarga bag‘ishlangan? Doskada: 4 qism. Tipik xato: Yustinian kodeksini XIII asr hujjati deb bilish."
     },
@@ -614,7 +900,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "XIII asr",
+            "text": "Bolonya: Xugo Lukka tribunalda xulosa"
+          },
+          {
+            "title": "XIV asr",
+            "text": "Fransiya: «qirol xirurglari»"
+          },
+          {
+            "title": "XIV asr",
+            "text": "Monpele: ilk rasmiy murda tekshiruvi"
+          },
+          {
+            "title": "1532",
+            "text": "Karl V «Karolina» kodeksi: vrach ishtiroki zarur"
+          }
+        ],
+        "caption": "O‘rta asrlar Yevropasi"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: «Karolina»ning ahamiyati nimada? Doskada: XIII → XIV → 1532. Tipik xato: Karolinani tibbiy darslik deb o‘ylash."
     },
     {
@@ -648,7 +955,39 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Fanning shakllanishi",
+        "children": [
+          {
+            "label": "Ambruaz Pare",
+            "items": [
+              "«Opera chirurgica»",
+              "Jarohat, asfiksiya, yashin"
+            ]
+          },
+          {
+            "label": "XVI–XVII asr",
+            "items": [
+              "Alohida fan bo‘la boshladi",
+              "F. Fidelis, P. Zakxeya"
+            ]
+          },
+          {
+            "label": "1681",
+            "items": [
+              "Shreer: chaqaloq o‘pka sinamasi"
+            ]
+          },
+          {
+            "label": "I. Bon",
+            "items": [
+              "«Sud tibbiyoti» nomi"
+            ]
+          }
+        ],
+        "caption": "Fan shakllanishi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Fan nomi qanday paydo bo‘lgan? Doskada: Pare → Fidelis → Shreer → Bon. Tipik xato: o‘pka sinamasini zaharlanish usuli deb bilish."
     },
     {
@@ -673,7 +1012,7 @@
           "uncertain": false
         },
         {
-          "text": "XX asrda, ayniqsa Ikkinchi jahon urushidan so‘ng, ilmiy izlanishlar jadallashgan va ko‘plab darsliklar yaratilgan (Prokop, Simpson, Gonzales, Popov, Avdeev va b.).",
+          "text": "XX asrda, ayniqsa II jahon urushidan so‘ng, izlanishlar jadallashgan, ko‘plab darsliklar yaratilgan (Prokop, Simpson, Gonzales, Popov, Avdeev va b.).",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -682,7 +1021,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "XIX–XX asr",
+        "children": [
+          {
+            "label": "XVIII–XIX asr",
+            "items": [
+              "Anatomiya, xirurgiya bilan o‘qitilgan",
+              "Keyin alohida kafedralar"
+            ]
+          },
+          {
+            "label": "XIX asr olimlari",
+            "items": [
+              "Virxov, Rokitanskiy, Kasper",
+              "Gofman, Tarde, Bruardel",
+              "Orfil, Gromov, Neyding"
+            ]
+          },
+          {
+            "label": "XX asr",
+            "items": [
+              "II jahon urushidan keyin jadallashdi",
+              "Prokop, Simpson, Popov, Avdeev"
+            ]
+          }
+        ],
+        "caption": "Olimlar va darsliklar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega fan mustaqil kafedralarga ajralgan? (faqat muhokama). Doskada: asrlar bo‘yicha olimlar. Tipik xato: olimlarni davlatlarga adashtirish."
     },
     {
@@ -732,7 +1099,7 @@
           "uncertain": false
         },
         {
-          "text": "Ibn Sinoning «Tib qonunlari»da murda o‘zgarishlari, zo‘raki o‘lim, zaharlar va jarohatlar haqida ma’lumotlar bor; ular asosan to‘g‘ri tibbiy yordam ko‘rsatish maqsadida yozilgan.",
+          "text": "Ibn Sinoning «Tib qonunlari»da murda o‘zgarishlari, zo‘raki o‘lim, zaharlar va jarohatlar haqida ma’lumot bor; ular asosan to‘g‘ri tibbiy yordam uchun yozilgan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -741,7 +1108,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Sharq allomalari",
+        "children": [
+          {
+            "label": "Shariat davri",
+            "items": [
+              "XX asr boshigacha",
+              "Tibbiyot vakili ko‘zda tutilmagan"
+            ]
+          },
+          {
+            "label": "Allomalar",
+            "items": [
+              "Beruniy",
+              "Ibn Sino",
+              "Ismoil Jurjoniy"
+            ]
+          },
+          {
+            "label": "Tib qonunlari",
+            "items": [
+              "Murda o‘zgarishlari, zo‘raki o‘lim",
+              "Zaharlar, jarohat — davolash uchun"
+            ]
+          }
+        ],
+        "caption": "Sharq allomalari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Ibn Sino ma’lumotlari odil sudlov uchunmi? Javob: yo‘q, asosan tibbiy yordam uchun. Doskada: allomalar ro‘yxati. Tipik xato: allomalar asarlarini ekspertiza qo‘llanmasi deb bilish."
     },
     {
@@ -786,7 +1181,7 @@
         "rows": [
           [
             "1920",
-            "Turkiston universiteti tibbiyot fakulteti"
+            "Turkiston univ. tibbiyot fakulteti"
           ],
           [
             "1935",
@@ -839,7 +1234,29 @@
           "uncertain": true
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Sud tibbiyoti kafedra",
+            "value": "9",
+            "unit": "ta"
+          },
+          {
+            "label": "Kafedra qoshida",
+            "value": "laboratoriya"
+          },
+          {
+            "label": "Tayyorlash",
+            "value": "ekspert kadrlar"
+          },
+          {
+            "label": "Mutaxassis sifatida",
+            "value": "klinika vrachlari"
+          }
+        ],
+        "caption": "Sud tibbiyoti oliy ta’limda"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nima uchun har bir shifokor sud tibbiyoti asoslarini bilishi kerak? (Manba bevosita «ahamiyati» sarlavhasini bermaydi; muhokama uchun savol.) Doskada: «kafedra — ta’lim — amaliyot». Tipik xato: sud tibbiyoti faqat ekspertlar uchun degan fikr."
     },
     {
@@ -855,7 +1272,7 @@
           "uncertain": false
         },
         {
-          "text": "Muassasalar ekspertiza materiallari bo‘yicha tibbiy yordam sifatini yaxshilash, travmatizm, zaharlanish va to‘satdan o‘limning oldini olish choralarini ham o‘tkazadi.",
+          "text": "Muassasalar ekspertiza materiallari bo‘yicha yordam sifatini yaxshilash, travmatizm, zaharlanish va to‘satdan o‘lim oldini olish choralarini ham o‘tkazadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -864,7 +1281,26 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Xizmat",
+            "items": [
+              "Sog‘liqni saqlashning ixtisoslashgan tarmog‘i",
+              "Jinoiy va fuqarolik ishlarida tibbiy masala"
+            ]
+          },
+          {
+            "title": "Profilaktika",
+            "items": [
+              "Tibbiy yordam sifatini yaxshilash",
+              "Travmatizm, zaharlanish, to‘satdan o‘lim oldini olish"
+            ]
+          }
+        ],
+        "caption": "Ekspertiza xizmatining o‘ziga xosligi"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Ekspertiza xizmati oldini olishda qanday rol o‘ynaydi? Doskada: 2 vazifa. Tipik xato: xizmatni faqat tergovga yordamchi deb bilish."
     },
     {
@@ -949,7 +1385,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1842",
+            "text": "Rossiya: sud tibbiyoti ustavi"
+          },
+          {
+            "title": "Turkiston",
+            "text": "Xuddi shu tartib qo‘llangan"
+          },
+          {
+            "title": "1991 gacha",
+            "text": "Sobiq ittifoq yo‘riqnomalari"
+          },
+          {
+            "title": "1916–1918",
+            "text": "Toshkent: V. S. Elkin"
+          },
+          {
+            "title": "1906",
+            "text": "Samarqand: N. A. Zabelin (1937 gacha)"
+          }
+        ],
+        "caption": "I davr"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Uch instansiyaning vazifasi nima edi? Doskada: instansiyalar zanjiri. Tipik xato: 20-yillargacha ekspert-kriminalistika muassasasi bor edi deb o‘ylash (manbada: bo‘lmagan)."
     },
     {
@@ -983,7 +1444,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "II va III davr",
+        "children": [
+          {
+            "label": "II davr",
+            "items": [
+              "Kafedralar bazasida",
+              "Kafedra laboratoriyalari"
+            ]
+          },
+          {
+            "label": "1945",
+            "items": [
+              "Respublika ekspertiza kabineti",
+              "I. V. Markovin tashabbusi"
+            ]
+          },
+          {
+            "label": "III davr (1950)",
+            "items": [
+              "SSV Bosh byurosi",
+              "Hududlarda byurolar"
+            ]
+          }
+        ],
+        "caption": "II va III davr"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Kabinetdan Bosh byuroga o‘tish nimani o‘zgartirdi? Doskada: 1945 → 1950. Tipik xato: Bosh byuroni 1945 yilda tashkil etilgan deb bilish."
     },
     {
@@ -1017,7 +1505,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "IV davr: 1991 dan hozirgacha",
+        "children": [
+          {
+            "label": "Hujjatlar",
+            "items": [
+              "Yangi me’yoriy hujjatlar",
+              "«Sud ekspertizasi to‘g‘risida»gi Qonun"
+            ]
+          },
+          {
+            "label": "Tuzilma",
+            "items": [
+              "Muassasalar takomillashtirildi"
+            ]
+          },
+          {
+            "label": "Kadrlar",
+            "items": [
+              "Tayyorlash, malaka oshirish",
+              "Attestatsiya tizimi"
+            ]
+          }
+        ],
+        "caption": "Mustaqillik davri"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Qonun qabul qilinishi nimani o‘zgartirdi? Doskada: IV davr yutuqlari. Tipik xato: Qonunni sobiq ittifoq davrida qabul qilingan deb bilish."
     },
     {
@@ -1051,7 +1565,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Huquqiy asos",
+        "children": [
+          {
+            "label": "Huquq",
+            "items": [
+              "Majburiy, davlat kafolatlaydi"
+            ]
+          },
+          {
+            "label": "Kodekslar",
+            "items": [
+              "Jinoyat kodeksi — javobgarlik chegarasi",
+              "JPK — tergov va sud tartibi"
+            ]
+          },
+          {
+            "label": "Ekspertiza asosi",
+            "items": [
+              "Surishtiruv, tergov qarori",
+              "Yoki sud ajrimi"
+            ]
+          }
+        ],
+        "caption": "Huquqiy asos"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Qonun va kodeks farqi nima? Doskada: 3 atama. Tipik xato: kodeks va qonunni sinonim deb bilish."
     },
     {
@@ -1067,7 +1607,7 @@
           "uncertain": false
         },
         {
-          "text": "Shuningdek: jinsiy aloqa, homiladorlik va abort belgilari; shaxs yoshi (hujjat bo‘lmasa yoki shubha bo‘lsa); gumondor, ayblanuvchi, jabrlanuvchi, guvohning jismoniy holati.",
+          "text": "Shuningdek: jinsiy aloqa, homiladorlik, abort belgilari; shaxs yoshi (hujjat bo‘lmasa/shubhada); gumondor, ayblanuvchi, jabrlanuvchi, guvoh jismoniy holati.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1104,7 +1644,7 @@
       "title": "Ekspertiza o‘tkaziladigan joy va sud tergovi",
       "bullets": [
         {
-          "text": "Ekspertiza sud-tibbiy ekspertiza byurosida, undan tashqarida yoki aralash tarzda o‘tkazilishi mumkin; masalan, eksgumatsiyada jasad qabristonda ochilib, namunalar byuro laboratoriyasida tekshiriladi.",
+          "text": "Ekspertiza byuroda, undan tashqarida yoki aralash o‘tkazilishi mumkin: eksgumatsiyada jasad qabristonda ochilib, namunalar byuro laboratoriyasida tekshiriladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1131,7 +1671,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Ekspertiza joyi va sud tergovi",
+        "children": [
+          {
+            "label": "Joyi",
+            "items": [
+              "Byuroda, undan tashqarida",
+              "Aralash: eksgumatsiya"
+            ]
+          },
+          {
+            "label": "Sud tergovida ekspert",
+            "items": [
+              "Majlisda to‘liq qatnashadi",
+              "Savol berishi mumkin"
+            ]
+          },
+          {
+            "label": "Xulosa",
+            "items": [
+              "Majlisda o‘qib eshittiriladi",
+              "Bayonnomaga ilova qilinadi"
+            ]
+          }
+        ],
+        "caption": "Ekspertiza joyi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Aralash variantga yana misol keltiring (faqat muhokama). Doskada: 3 variant. Tipik xato: ekspertizani faqat byuroda o‘tkaziladi deb bilish."
     },
     {
@@ -1156,7 +1723,7 @@
           "uncertain": false
         },
         {
-          "text": "Shuningdek: boshqa ahamiyatli masalalar bo‘yicha fikr bildirish, ona tilida xulosa berish va tarjimon xizmatidan foydalanish, qaror va harakatlar ustidan shikoyat qilish.",
+          "text": "Shuningdek: boshqa ahamiyatli masalada fikr bildirish, ona tilida xulosa berish, tarjimondan foydalanish, qaror va harakatlar ustidan shikoyat qilish.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1165,7 +1732,41 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Ekspert huquqlari",
+        "children": [
+          {
+            "label": "Kim ekspert",
+            "items": [
+              "Davlat eksperti",
+              "Boshqa tashkilot xodimi, jismoniy shaxs"
+            ]
+          },
+          {
+            "label": "Materiallar",
+            "items": [
+              "Ish bilan tanishish",
+              "Qo‘shimcha material so‘rash"
+            ]
+          },
+          {
+            "label": "Savollar",
+            "items": [
+              "Ruxsat bilan savol berish"
+            ]
+          },
+          {
+            "label": "Boshqa",
+            "items": [
+              "Qo‘shimcha masalada fikr",
+              "Ona tili, tarjimon",
+              "Shikoyat qilish"
+            ]
+          }
+        ],
+        "caption": "Ekspert huquqlari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi huquq ekspert mustaqilligini mustahkamlaydi? Doskada: huquqlar ro‘yxati. Tipik xato: ekspert faqat so‘ralgan savollarga javob bera oladi deb bilish."
     },
     {
@@ -1200,27 +1801,43 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "JK moddalari",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "Qilmish"
+        "kind": "tree",
+        "root": "Majburiyat va javobgarlik",
+        "children": [
+          {
+            "label": "Majburiyat",
+            "items": [
+              "Raddiya haqida xabar berish",
+              "Xolis xulosa, chaqiruvga kelish"
+            ]
+          },
+          {
+            "label": "Cheklov",
+            "items": [
+              "Sirni oshkor qilmaslik",
+              "Mustaqil material to‘plamaslik"
+            ]
+          },
+          {
+            "label": "JK 238",
+            "items": [
+              "Noto‘g‘ri xulosa"
+            ]
+          },
+          {
+            "label": "JK 239",
+            "items": [
+              "Tergov sirini oshkor qilish"
+            ]
+          },
+          {
+            "label": "JK 240",
+            "items": [
+              "Xulosadan bo‘yin tovlash"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "238",
-            "Bila turib noto‘g‘ri xulosa berish"
-          ],
-          [
-            "239",
-            "Surishtiruv va tergov ma’lumotlarini oshkor qilish"
-          ],
-          [
-            "240",
-            "Xulosa berishni rad etish yoki bo‘yin tovlash"
-          ]
-        ]
+        "caption": "Majburiyat va javobgarlik"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi majburiyat ekspert xolisligini ta’minlaydi? Doskada: 3 JK moddasi. Tipik xato: modda raqamlarini aralashtirish."
     },
@@ -1255,7 +1872,27 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Birlamchi",
+            "items": [
+              "Murda, tirik shaxs, dalil, material",
+              "Odatda bir ekspert"
+            ]
+          },
+          {
+            "title": "Komission",
+            "items": [
+              "Kasb huquqbuzarligi, mehnat qobiliyati",
+              "Salomatlik, yosh, murakkab holat",
+              "Birgalikda xulosa yoki imkonsizlik"
+            ]
+          }
+        ],
+        "caption": "Birlamchi va komission ekspertiza"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi holatlarda bir ekspert yetarli emas? Doskada: 4 holat. Tipik xato: komission ekspertizani barcha murakkab ishlarga tayinlash."
     },
     {
@@ -1290,27 +1927,31 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Qo‘shimcha va qayta ekspertiza",
-        "nodes": [],
-        "header": [
-          "Tur",
-          "Qachon tayinlanadi"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Kompleks",
+            "items": [
+              "Tibbiyotdan tashqari ilm ham kerak",
+              "Masalan: avtotexnik"
+            ]
+          },
+          {
+            "title": "Qo‘shimcha",
+            "items": [
+              "Kamchilikni to‘ldirish",
+              "Odatda oldingi ekspert"
+            ]
+          },
+          {
+            "title": "Qayta",
+            "items": [
+              "Xulosa shubhali/asoslanmagan",
+              "Dastlabki ekspert o‘tkaza olmaydi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Qo‘shimcha",
-            "Kamchilik, bo‘shliqni to‘ldirish"
-          ],
-          [
-            "Qayta",
-            "Xulosa asoslanmagan yoki shubhali"
-          ],
-          [
-            "Kompleks",
-            "Tibbiyotdan tashqari sohalar ham kerak"
-          ]
-        ]
+        "caption": "Kompleks, qo‘shimcha, qayta"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: Taraflar noroziligi qayta ekspertiza uchun yetarli asosmi? Javob: yo‘q, qaror yoki ajrimda sabablar keltirilishi kerak (20–21-bet). Doskada: 3 tur jadvali. Tipik xato: qo‘shimcha va qayta ekspertizani aralashtirish."
     },
@@ -1346,15 +1987,26 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Xulosa qismlari",
-        "nodes": [
-          "Kirish",
-          "Tadqiqot",
-          "To‘xtam"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Kirish",
+            "text": "Sana, joy, asos, ekspert, huquq-javobgarlik"
+          },
+          {
+            "title": "Obyekt",
+            "text": "Obyektlar va savollar"
+          },
+          {
+            "title": "Tadqiqot",
+            "text": "Oddiy odam tushunadigan tilda"
+          },
+          {
+            "title": "To‘xtam",
+            "text": "Savollarga aniq javob"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Xulosa tuzilishi"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: «To‘xtam» nima? Doskada: 3 qism. Tipik xato: kirish qismiga tahlil yozish."
     },
@@ -1389,7 +2041,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Xulosa",
+            "items": [
+              "Ilmiy asoslanganligi baholanadi",
+              "Protsessual qoidalarga rioya",
+              "Oldindan daliliy kuchga ega emas"
+            ]
+          },
+          {
+            "title": "Dalolatnoma",
+            "items": [
+              "Xulosaga o‘xshash",
+              "Tilxat olinmaydi",
+              "Yakuniy qism — «xotima»"
+            ]
+          }
+        ],
+        "caption": "Xulosani baholash va dalolatnoma"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega xulosa muqarrar kuchga ega emas? Doskada: «xulosa + boshqa dalillar». Tipik xato: ekspert xulosasini sud uchun majburiy deb bilish."
     },
     {
@@ -1425,14 +2098,12 @@
       ],
       "diagram": {
         "kind": "flow",
-        "caption": "Xizmat tuzilmasi",
         "nodes": [
           "Bosh byuro",
-          "Hududiy byurolar",
+          "Hududiy byurolar (13)",
           "Tuman, tumanlararo, shahar bo‘linmalari"
         ],
-        "header": [],
-        "rows": []
+        "caption": "Xizmat tuzilmasi"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Ikki xil bo‘ysunishning sababi nima? (faqat muhokama). Doskada: tashkiliy sxema. Tipik xato: byurolar faqat vazirlikka bo‘ysunadi deb o‘ylash."
     },
@@ -1440,11 +2111,11 @@
       "title": "Sud-tibbiy ekspertiza byurosi bo‘limlari",
       "bullets": [
         {
-          "text": "13 hududiy (Qoraqalpog‘iston va viloyatlar) muassasa tarkibi bir xil. Morfologik bo‘limda murda ekspertizasi, sud-gistologik bo‘limda mikroskopik tekshiruv o‘tkaziladi.",
+          "text": "13 hududiy (Qoraqalpog‘iston va viloyatlar) muassasa tarkibi bir xil. Morfologik bo‘limda murda, sud-gistologik bo‘limda mikroskopik tekshiruv o‘tkaziladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "23–24"
+            "page": "22–23"
           },
           "uncertain": false
         },
@@ -1453,21 +2124,63 @@
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "23–24"
+            "page": "22–23"
           },
           "uncertain": false
         },
         {
-          "text": "Tibbiy kriminalistika, qayta va komission ekspertizalar bo‘limi, rentgen, spektral va tashkiliy-metodik bo‘limlar ham bor; Bosh byuroda murakkab qayta va komission ekspertizalar o‘tkaziladi.",
+          "text": "Tibbiy kriminalistika, qayta/komission ekspertiza, rentgen, spektral, tashkiliy-metodik bo‘limlar ham bor; Bosh byuroda murakkab qayta va komission ekspertiza.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "23–24"
+            "page": "22–23"
           },
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Byuro bo‘limlari",
+        "children": [
+          {
+            "label": "Morfologik",
+            "items": [
+              "Murda ekspertizasi"
+            ]
+          },
+          {
+            "label": "Sud-gistologik",
+            "items": [
+              "Mikroskopik tekshiruv"
+            ]
+          },
+          {
+            "label": "Ambulatoriya",
+            "items": [
+              "Tirik shaxslar"
+            ]
+          },
+          {
+            "label": "Sud-kimyo",
+            "items": [
+              "Toksikologik tekshiruv"
+            ]
+          },
+          {
+            "label": "Sud-biologik",
+            "items": [
+              "Ashyoviy dalillar"
+            ]
+          },
+          {
+            "label": "Boshqa",
+            "items": [
+              "Kriminalistika, rentgen, spektral"
+            ]
+          }
+        ],
+        "caption": "Byuro bo‘limlari"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: Qaysi namuna qaysi bo‘limga yuboriladi? Doskada: bo‘lim → ekspertiza turi. Tipik xato: qayta va komission ekspertizani tuman bo‘linmasida o‘tkazish mumkin deb bilish (taqiqlangan, 20–21-bet)."
     },
     {
@@ -1510,11 +2223,11 @@
       "question": "Sud tibbiyoti predmetining ilmiy asoslangan tizimini ilk bor kim va qachon taklif etgan?",
       "options": [
         "V. L. Popov, 1999",
-        "M. I. Avdeev, 1948",
+        "I. Bon, XVII asr",
         "N. I. Pirogov, 1846",
-        "I. Bon, XVII asr"
+        "M. I. Avdeev, 1948"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Predmetning tizimini 1948 yilda M. I. Avdeev taklif etgan.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1526,11 +2239,11 @@
       "question": "«Tibbiy xodimlarning kasb huquqbuzarliklari» alohida fan sifatida qachon ajralib chiqdi?",
       "options": [
         "1993 yilda",
-        "2002 yilda",
         "1945 yilda",
+        "2002 yilda",
         "1991 yilda"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "2002 yilda ushbu qism «Vrach faoliyatining huquqiy asoslari» fani sifatida ajralib chiqdi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1542,11 +2255,11 @@
       "question": "Sud-tibbiy ekspert klinik mutaxassisdan nimasi bilan farq qiladi?",
       "options": [
         "Davolaydi",
-        "Huquqiy baholash maqsadida yondashadi",
+        "Faqat dori tayinlaydi",
         "Faqat murdani tekshiradi",
-        "Faqat dori tayinlaydi"
+        "Huquqiy baholash maqsadida yondashadi"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Klinik mutaxassis davolash nuqtai nazaridan, sud-tibbiy ekspert esa huquqiy baholash maqsadida yondashadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1558,11 +2271,11 @@
       "question": "Ekspertiza usullari qanday guruhlarga bo‘linadi?",
       "options": [
         "Ikki guruh",
-        "Uch guruh: umumilmiy, xususiy, maxsus",
         "To‘rt guruh",
+        "Uch guruh: umumilmiy, xususiy, maxsus",
         "Besh guruh"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Usullar umumilmiy, xususiy va maxsus guruhlarga bo‘linadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1574,11 +2287,11 @@
       "question": "Ibn Sinoning «Tib qonunlari»dagi sud tibbiyotiga oid ma’lumotlar nima maqsadda berilgan?",
       "options": [
         "Odil sudlov vazifalarini hal etish",
-        "Asosan to‘g‘ri tibbiy yordam ko‘rsatish",
+        "Ekspert tayyorlash",
         "Jinoyatlarni qidirish",
-        "Ekspert tayyorlash"
+        "Asosan to‘g‘ri tibbiy yordam ko‘rsatish"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Ma’lumotlar asosan bunday holatlarda to‘g‘ri tibbiy yordam ko‘rsatish maqsadida o‘tkazilgan tadqiqotlar natijasi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1590,11 +2303,11 @@
       "question": "Dastlabki sud tibbiyoti kafedrasi O‘zbekistonda qaerda va qachon tashkil qilingan?",
       "options": [
         "Samarqand, 1935",
-        "Turkiston universiteti tibbiyot fakulteti, 1920",
         "Andijon, 1959",
+        "Turkiston universiteti tibbiyot fakulteti, 1920",
         "Toshkent, 1972"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Dastlabki kafedra Turkiston universitetining tibbiyot fakultetida 1920 yilda tashkil qilingan.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1621,12 +2334,12 @@
     {
       "question": "Sud eksperti JKning qaysi moddasi bo‘yicha bila turib noto‘g‘ri xulosa berganlik uchun javob beradi?",
       "options": [
-        "238-modda",
+        "173-modda",
         "239-modda",
         "240-modda",
-        "173-modda"
+        "238-modda"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Bila turib noto‘g‘ri xulosa berish — JK 238-modda.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1664,6 +2377,166 @@
         "author": "G‘iyosov Z.A.",
         "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
         "page": "21–22"
+      }
+    },
+    {
+      "question": "Antistius Yuliy Sezar murdasini ko‘zdan kechirganda nimani aniqladi?",
+      "options": [
+        "Zaharlanish",
+        "23 jarohatdan faqat bittasi o‘limga olib kelgan",
+        "Hech qanday jarohat yo‘q",
+        "Cho‘kish"
+      ],
+      "correct_index": 1,
+      "explanation": "Yuliy Sezar o‘ldirilgach (e.a. 44 y.) vrach Antistius murdani ko‘zdan kechirgan: 23 jarohatdan faqat bittasi o‘limga olib kelgan.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "9-10"
+      }
+    },
+    {
+      "question": "«Si Yuan Lu» asari qachon va kim tomonidan nashr etilgan?",
+      "options": [
+        "1247 yilda Xitoyda Sun-si",
+        "1532 yilda Karl V",
+        "1681 yilda Shreer",
+        "VI asrda Yustinian"
+      ],
+      "correct_index": 0,
+      "explanation": "1247 yilda Xitoyda Sun-si «Si Yuan Lu» asarini nashr etgan.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "9-10"
+      }
+    },
+    {
+      "question": "1532 yilda Karl V davrida ishlab chiqilgan kodeks qanday nomlanadi?",
+      "options": [
+        "Likurg qonunlari",
+        "Karolina",
+        "Yustinian kodeksi",
+        "Napoleon kodeksi"
+      ],
+      "correct_index": 1,
+      "explanation": "1532 yilda Karl V davrida «Karolina» kodeksi ishlab chiqilib, jinoiy ishlarda vrachlar ishtiroki zarurligi qayd etilgan.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "10"
+      }
+    },
+    {
+      "question": "1681 yilda chaqaloq murdasida o‘pka sinamasini kim qo‘llagan?",
+      "options": [
+        "I. Shreer",
+        "A. Pare",
+        "N. Pirogov",
+        "I. Bon"
+      ],
+      "correct_index": 0,
+      "explanation": "1681 yilda I. Shreer chaqaloq murdasida o‘pka sinamasini qo‘llagan.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "10-11"
+      }
+    },
+    {
+      "question": "Rossiyada ekspertiza tartibi qaysi yilgi ustav bilan belgilangan?",
+      "options": [
+        "1842",
+        "1917",
+        "1950",
+        "1991"
+      ],
+      "correct_index": 0,
+      "explanation": "Rossiyada ekspertiza tartibi 1842 yilgi sud tibbiyoti ustavi bilan belgilangan.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "12-13"
+      }
+    },
+    {
+      "question": "«Respublika sud-tibbiy ekspertiza kabineti» Toshkentda qachon va kimning tashabbusi bilan ochilgan?",
+      "options": [
+        "1945, I. V. Markovin",
+        "1920, V. S. Elkin",
+        "1950, N. A. Zabelin",
+        "1972, M. I. Avdeev"
+      ],
+      "correct_index": 0,
+      "explanation": "1945 yilda prof. I. V. Markovin tashabbusi bilan Toshkentda «Respublika sud-tibbiy ekspertiza kabineti» ochilgan.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "13-14"
+      }
+    },
+    {
+      "question": "Sud-tibbiy ekspertiza Bosh byurosi Sog‘liqni saqlash vazirligi tizimida qachon tashkil qilingan?",
+      "options": [
+        "1920",
+        "1945",
+        "1950",
+        "1991"
+      ],
+      "correct_index": 2,
+      "explanation": "III davr: 1950 yilda SSV sud-tibbiy ekspertiza Bosh byurosi tashkil qilingan.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "13-14"
+      }
+    },
+    {
+      "question": "JPK 173-moddaga ko‘ra ekspertiza qaysi hollarda tayinlanadi?",
+      "options": [
+        "Faqat o‘lim sababi aniqlanganda",
+        "O‘lim sababi, tan jarohati xususiyati va og‘irligi, jinsiy aloqa, homiladorlik, yosh va boshqa holatlarda",
+        "Faqat tirik shaxs uchun",
+        "Faqat ashyoviy dalil uchun"
+      ],
+      "correct_index": 1,
+      "explanation": "JPK 173: o‘lim sababi, tan jarohatlari xususiyati va og‘irligi aniqlanishi kerak bo‘lganda; jinsiy aloqa, homiladorlik, abort, yosh, jismoniy holat va h.k.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "14-15"
+      }
+    },
+    {
+      "question": "Sud eksperti JK ning 240-moddasiga ko‘ra nima uchun javobgar?",
+      "options": [
+        "Noto‘g‘ri xulosa uchun",
+        "Tergov sirini oshkor qilish uchun",
+        "Xulosa berishni rad etish yoki bo‘yin tovlash uchun",
+        "Vakolatidan chiqqani uchun"
+      ],
+      "correct_index": 2,
+      "explanation": "JKda: bila turib noto‘g‘ri xulosa (238-modda), tergov sirini oshkor qilish (239), xulosa berishni rad etish yoki bo‘yin tovlash (240).",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "17-18"
+      }
+    },
+    {
+      "question": "Hududiy sud-tibbiy ekspertiza muassasalarining soni qancha (Qoraqalpog‘iston va viloyatlar)?",
+      "options": [
+        "9",
+        "13",
+        "14",
+        "20"
+      ],
+      "correct_index": 1,
+      "explanation": "13 hududiy (Qoraqalpog‘iston va viloyatlar) muassasa tarkibi bir xil.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+        "page": "22–23"
       }
     }
   ],

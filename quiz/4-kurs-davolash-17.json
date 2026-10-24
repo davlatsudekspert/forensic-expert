@@ -1,0 +1,582 @@
+{
+ "topic_id": "4-kurs-davolash-17",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Amaliy mashg‘ulot: Tibbiyot xodimlarining huquqiy holati. Tibbiy xodimlarning qilmishi.",
+  "ru": "Amaliy mashg‘ulot: Tibbiyot xodimlarining huquqiy holati. Tibbiy xodimlarning qilmishi.",
+  "en": "Amaliy mashg‘ulot: Tibbiyot xodimlarining huquqiy holati. Tibbiy xodimlarning qilmishi."
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "4-kurs-davolash-17-q01",
+   "question_i18n": {
+    "uz": "Qaysi tushuncha ilk bor N. I. Pirogov tomonidan taklif etilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Yatrogeniya",
+     "Vrach xatosi",
+     "Baxtsiz hodisa",
+     "Sororigeniya"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "«Vrach xatosi» jumlasi ilk bor Pirogov tomonidan taklif etilgan."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "69"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-17-q02",
+   "question_i18n": {
+    "uz": "Davidovskiy bo‘yicha vrach xatosi qanday holat?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Beparvolik natijasidagi zarar",
+     "Vijdonan adashish",
+     "Qasddan zarar yetkazish",
+     "Davolashdan bosh tortish"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Davidovskiy ta’rifida vrach xatosi sovuqqonlik, e’tiborsizlik yoki beparvolik elementlari bo‘lmagan vijdonan adashishdir."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "70"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-17-q03",
+   "question_i18n": {
+    "uz": "Baxtsiz hodisaning vrach xatosidan asosiy farqi nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "U vrachning harakatiga bog‘liq emas, oldindan bilib bo‘lmaydi",
+     "U doim jinoyat hisoblanadi va albatta jazolanadi",
+     "U faqat jarrohlik amaliyotida uchraydigan holat",
+     "U huquqiy tushuncha bo‘lib, javobgarlikni belgilaydi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Baxtsiz hodisalar vrachning harakati yoki harakatsizligiga bog‘liq emas, shu sabab tibbiy xodim javobgarligini yuzaga keltirmaydi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "74"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-17-q04",
+   "question_i18n": {
+    "uz": "«Sororigeniya» atamasi nimani anglatadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Vrach harakatidan kelib chiqqan oqibatni",
+     "Hamshiralar harakatidan kelib chiqqan noxush oqibatni",
+     "Dori nojo‘ya ta’sirini",
+     "Tibbiy yordamga kechikishni"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Xardi (1972) hamshiralar harakati natijasidagi oqibat uchun «sororigeniya» atamasini taklif etgan (lotincha soror — hamshira)."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "74"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-17-q05",
+   "question_i18n": {
+    "uz": "Qilmish jinoyatdan nimasi bilan farq qiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ijtimoiy xavf belgisi yo‘qligi bilan",
+     "Aybning yo‘qligi bilan",
+     "Faqat jazo turi bilan",
+     "Faqat sodir etuvchi shaxs bilan"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "G‘ayriqonuniy harakat ijtimoiy xavf belgisiga ega bo‘lmasa va JKda ko‘zda tutilmagan bo‘lsa, qilmish deyiladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "68"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-17-q06",
+   "question_i18n": {
+    "uz": "Qaysi holat ehtiyotsizlikning «beparvolik» shakliga kiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Oqibatni ko‘rib, lekin ularning kelib chiqmasligiga asossiz umid qilish",
+     "Oqibatni ko‘rmagan, lekin ko‘rishi lozim va mumkin bo‘lgan",
+     "Oqibatning kelib chiqishini bevosita istash",
+     "Oqibat yuz berishiga ongli ravishda yo‘l qo‘yish"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Beparvolik: shaxs oqibatlarni ko‘rmagan, lekin ko‘rishi lozim va mumkin bo‘lgan (JK 22-modda)."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "116"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-17-q07",
+   "question_i18n": {
+    "uz": "Oxirgi zarurat holatida qilmish qachon jinoyat deb topilmaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Xavfni boshqa choralar bilan qaytarib bo‘lmasa va zarar oldi olingan zarardan kam bo‘lsa",
+     "Har doim, agar qilmish tibbiy maqsadda sodir etilgan bo‘lsa",
+     "Faqat vrach buyurgan hollarda, xavf darajasidan qat’i nazar",
+     "Faqat tibbiy muassasa ichida sodir etilganda, boshqa shartlarsiz"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "JK 38-moddaga ko‘ra ikkala shart bir vaqtda bajarilishi kerak."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "117"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-17-q08",
+   "question_i18n": {
+    "uz": "Jinoyat tarkibi elementlari qaysilar?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Obyekt, obyektiv tomon, subyekt, subyektiv tomon",
+     "Ayb, jazo, motiv, maqsad va oqibat",
+     "Qilmish, oqibat, vaqt va joy hamda usul",
+     "Obyekt, jazo, usul va vosita hamda oqibat"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Jinoyat tarkibi: obyekt, obyektiv tomon, subyekt va subyektiv tomondan iborat."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "119"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-17-q09",
+   "question_i18n": {
+    "uz": "Ayolning xohishi bilan homiladorlikni uzish muddati qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "8 haftagacha",
+     "12 haftagacha",
+     "22 haftagacha",
+     "28 haftagacha"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Ayolning xohishi bilan 12 haftagacha; ijtimoiy ko‘rsatma bilan 22 haftagacha."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "124"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-17-q10",
+   "question_i18n": {
+    "uz": "Quyidagilardan qaysi biri yordam ko‘rsatmaslikning uzrli sababi hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Dam olish kuni",
+     "Ta’tilda bo‘lish",
+     "Og‘irroq bemorga yordam bilan bandlik",
+     "Bemor bilan shaxsiy adovat"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Og‘irroq bemorga yordam ko‘rsatish bilan bandlik obyektiv uzrli sabab; qolganlari uzrli emas."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "122–123"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-17-q11",
+   "question_i18n": {
+    "uz": "Psixiatrik ekspertizada shaxsning harakatlari ahamiyatini anglay olmasligi aniqlandi. Bu aqli norasolikning qaysi mezoniga kiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Tibbiy mezonga",
+     "Axloqiy mezonga",
+     "Ijtimoiy mezonga",
+     "Yuridik mezonga"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Yuridik mezon — o‘z harakatlarining ahamiyatini anglay olmaslik yoki harakatlarini boshqara olmaslik; tibbiy mezon — ruhiy kasallik, aqli zaiflik kabilar."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "119"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-17-q12",
+   "question_i18n": {
+    "uz": "Darslikda tibbiy xodimlar jinoyatlari uchun odatda xos emas deb ko‘rsatilgan aybdorlik shakli qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Egri qasd",
+     "Beparvolik",
+     "O‘z-o‘ziga ishonish",
+     "To‘g‘ri qasd"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Darslikda tibbiy xodimlar faoliyati uchun to‘g‘ri qasddan sodir etilgan jinoyatlar xos emasligi, lekin jinoiy abort va mansab soxtakorligi shunday ekani aytilgan."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "115-116"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-17-q13",
+   "question_i18n": {
+    "uz": "Kasb vazifasini lozim bajarmaslik (JK 116) jinoyatining obyekti nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Boshqaruv tartibi",
+     "Mulkiy manfaatlar",
+     "Inson sog‘lig‘i va hayoti",
+     "Muassasa obro‘si"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Mazkur jinoyatning obyekti inson sog‘lig‘i va hayotidir."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "122"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-17-q14",
+   "question_i18n": {
+    "uz": "JK 116 bo‘yicha «odamlar o‘limi» nimani anglatadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bitta shaxsning o‘limini",
+     "Faqat operatsiyadagi o‘limni",
+     "Faqat yosh bolalar o‘limini",
+     "Ikki yoki undan ortiq shaxsning o‘limini"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Odamlar o‘limi ikki yoki undan ortiq shaxsning o‘limi, boshqa og‘ir oqibatlar esa ikki yoki undan ortiq shaxsga og‘ir shikast yetkazilishi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "122"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-17-q15",
+   "question_i18n": {
+    "uz": "Homilador ayol homiladorlikni sun’iy tarzda o‘zi to‘xtatgan. Darslik bo‘yicha jinoiy javobgarlik yuzaga keladimi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ha, JK 114-modda bo‘yicha",
+     "Ha, JK 104-modda bo‘yicha",
+     "Yo‘q, javobgarlik yuzaga kelmaydi",
+     "Faqat muassasadan tashqarida bo‘lsa"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Homilador ayolning o‘zi homiladorlikni sun’iy to‘xtatgan holatlarda jinoiy javobgarlik vujudga kelmaydi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "125"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-17-q16",
+   "question_i18n": {
+    "uz": "Homiladorlikni sun’iy uzishga tibbiy monelik qaysi holatda bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "So‘nggi abortdan 6 oydan kam vaqt o‘tgan",
+     "So‘nggi abortdan 1 yil o‘tgan",
+     "Homiladorlik 8 haftada",
+     "Ayol ixtiyoriy murojaat qilgan"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Monelik sifatida so‘nggi abortdan so‘ng 6 oydan kam muddat o‘tganligi, 12 haftadan ortiq muddat, o‘tkir yuqumli va yallig‘lanish kasalliklari, yiringli o‘choqlar sanalgan."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "125"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-17-q17",
+   "question_i18n": {
+    "uz": "2010 yilda JK 113-moddaga qanday o‘zgartish kiritildi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Abort uchun javobgarlik kuchaytirildi va qo‘shimcha qism kiritildi",
+     "Ekspertlar javobgarligi moddadan butunlay chiqarildi",
+     "Pora olganlik uchun jazo kamaytirildi va yumshatildi",
+     "OIV/OITS yuqtirishda tibbiy xodimlar javobgarligi ko‘zda tutildi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "2010 yilda moddaga OIV/OITS yuqtirish kasb vazifasini lozim bajarmaslik oqibatida bo‘lsa, tibbiy xodimlar javobgarligini ko‘zda tutuvchi o‘zgartish kiritilgan."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "126"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-17-q18",
+   "question_i18n": {
+    "uz": "Poliklinika vrachi qaysi holatda mansabdor shaxs sifatida javobgarlikka tortilishi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Tashxis qo‘yish va bemorga davo belgilaganda",
+     "Bemorni davolash jarayonida muolaja o‘tkazganda",
+     "Vaqtinchalik mehnatga layoqatsizlik varaqasini berganda",
+     "Profilaktik ko‘rik va emlash o‘tkazganda"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Tashxis, davolash, profilaktikada vrach mansabdor emas; varaqa berish, nogironlikni aniqlash, attestatsiya, toifa berish, harbiy xizmatga layoqatni aniqlashda mansabdor deb e’tirof etilishi mumkin."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "128"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-17-q19",
+   "question_i18n": {
+    "uz": "Oila vrachi bemorga birdan 30 kunga mehnatga yaroqsizlik varaqasini berdi. Darslik misolida bu qaysi jinoyatga o‘xshatilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Mansab soxtakorligi, ya’ni rasmiy hujjatni qalbakilashtirish",
+     "Pora olish, ya’ni mansabdan foydalanib manfaat ko‘rish",
+     "Mansabga sovuqqonlik, ya’ni vazifaga e’tiborsizlik",
+     "Vakolat doirasidan chetga chiqish"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Doiradan chetga chiqish misollari: bosh vrachning birgalikda hal etiladigan masalani yakka hal qilishi; oila vrachining birdan 30 kunga varaqa berishi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "129"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "4-kurs-davolash-17-q20",
+   "question_i18n": {
+    "uz": "Ijtimoiy ko‘rsatma bo‘lganda homiladorlikni uzish qaysi muddatgacha mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "12 haftagacha",
+     "16 haftagacha",
+     "22 haftagacha",
+     "28 haftagacha"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Ayolning xohishi bilan 12 haftagacha; ijtimoiy ko‘rsatmada 22 haftagacha; tibbiy ko‘rsatmada muddatidan qat’i nazar."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+    "page": "124"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "G‘iyosov Z.A.",
+   "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)"
+  }
+ ]
+}

@@ -119,27 +119,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Toksikologiya yo‘nalishlari",
-        "nodes": [],
-        "header": [
-          "Yo‘nalish",
-          "Vazifasi"
+        "kind": "tree",
+        "root": "Toksikologiya yo‘nalishlari",
+        "children": [
+          {
+            "label": "Sanoat, qishloq xo‘jaligi",
+            "items": [
+              "Sabablar, yordam, oldini olish"
+            ]
+          },
+          {
+            "label": "Harbiy, oziq-ovqat va b.",
+            "items": [
+              "Sabablar, yordam, oldini olish"
+            ]
+          },
+          {
+            "label": "Sud-tibbiy",
+            "items": [
+              "Huquqni muhofaza idoralari vazifalari"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Sanoat, qishloq xo‘jaligi",
-            "Sabablar, yordam, oldini olish"
-          ],
-          [
-            "Harbiy, oziq-ovqat, maishiy",
-            "Sabablar, yordam, oldini olish"
-          ],
-          [
-            "Sud-tibbiy",
-            "Huquqni muhofaza idoralari vazifalari"
-          ]
-        ]
+        "caption": "Toksikologiya yo‘nalishlari"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: sud-tibbiy toksikolog klinik toksikologdan qaysi savollar bilan farq qiladi? Tergovchi toksikologdan nimani so‘raydi? Doskada: jadvalni daftarga ko‘chirtiring. Tipik xato: sud-tibbiy toksikologiyani davolash fani deb tushunish. Manbada «xususiy tanatologiya» deb yozilgan joy «xususiy toksikologiya» ma’nosida keltirilgan."
     },
@@ -183,7 +185,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Zaharlanish tafsilotlari",
+        "children": [
+          {
+            "label": "Qotillik",
+            "items": [
+              "Zahar qasddan; kamdan-kam"
+            ]
+          },
+          {
+            "label": "O‘z-o‘zini o‘ldirish",
+            "items": [
+              "Zahar qasddan; ikkinchi o‘rinda"
+            ]
+          },
+          {
+            "label": "Baxtsiz hodisa",
+            "items": [
+              "Tasodifan; ko‘pchilik",
+              "Yatrogen: dori dozasi, noto‘g‘ri dori"
+            ]
+          }
+        ],
+        "caption": "Kelib chiqishi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega amalda baxtsiz hodisa ko‘p, qotillik kam uchraydi? 2) Yatrogen zaharlanishga qanday misol keltirasiz? Doskada chizish: uch ustunli sxema (qotillik / o‘z-o‘zini o‘ldirish / baxtsiz hodisa) va har biriga «qasddan» yoki «tasodifan» belgisini qo‘ying. Tipik xato: yatrogen zaharlanishni qasddan sodir etilgan deb hisoblash."
     },
     {
@@ -261,36 +288,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Zaharlar tasnifi (Popov, 1990)",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Ta’siri",
-          "Misol"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Ta’siri",
+            "items": [
+              "Asosan mahalliy: Tegan joyda nekroz chaqiradi",
+              "Umumiy: destruktiv: Ichki a’zolar tuzilishini buzadi",
+              "Umumiy: qon zaharlari: Gemoglobinotrop, gemolitik va boshqa",
+              "Umumiy: funksional: Markaziy nerv tizimi faoliyatini buzadi"
+            ]
+          },
+          {
+            "title": "Misol",
+            "items": [
+              "Asosan mahalliy: Kislotalar, ishqorlar, yod tindirmasi",
+              "Umumiy: destruktiv: Simob, qo‘rg‘oshin, margimush, fosfor",
+              "Is gazi, metgemoglobin hosil qiluvchilar",
+              "Umumiy: funksional: Etil spirti, opiatlar, sianidlar"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Asosan mahalliy",
-            "Tegan joyda nekroz chaqiradi",
-            "Kislotalar, ishqorlar, yod tindirmasi"
-          ],
-          [
-            "Umumiy: destruktiv",
-            "Ichki a’zolar tuzilishini buzadi",
-            "Simob, qo‘rg‘oshin, margimush, fosfor"
-          ],
-          [
-            "Umumiy: qon zaharlari",
-            "Gemoglobinotrop, gemolitik va boshqa",
-            "Is gazi, metgemoglobin hosil qiluvchilar"
-          ],
-          [
-            "Umumiy: funksional",
-            "Markaziy nerv tizimi faoliyatini buzadi",
-            "Etil spirti, opiatlar, sianidlar"
-          ]
-        ]
+        "caption": "Zaharlar tasnifi (Popov, 1990)"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Mahalliy va rezorbtiv zaharning asosiy farqi nimada? 2) Etil spirti va opiatlar qaysi guruhga kiradi? Doskada chizish: jadvalni daftarga ko‘chirib, har guruhga o‘z misolingizni qo‘shing. Tipik xato: etil spirti va opiatlarni destruktiv zaharlar qatoriga qo‘shish; ular funksional zaharlardir."
     },
@@ -326,31 +345,35 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Funksional zaharlar tasnifi",
-        "nodes": [],
-        "header": [
-          "Guruhcha",
-          "Misollar"
+        "kind": "tree",
+        "root": "Funksional zaharlar tasnifi",
+        "children": [
+          {
+            "label": "MNT ni falajlovchi",
+            "items": [
+              "Sianidlar, fosfororganik, vodorod sulfid"
+            ]
+          },
+          {
+            "label": "MNT ni qo‘zg‘atuvchi",
+            "items": [
+              "Strixnin, kokain, opiatlar, anasha"
+            ]
+          },
+          {
+            "label": "MNT ni so‘ndiruvchi",
+            "items": [
+              "Etil spirt, barbituratlar, trankvilizat."
+            ]
+          },
+          {
+            "label": "PNT ga ta’sir etuvchi",
+            "items": [
+              "Xolinergik, adrenoergik, antixolin."
+            ]
+          }
         ],
-        "rows": [
-          [
-            "MNT ni falajlovchi",
-            "Sianidlar, fosfororganik, vodorod sulfid"
-          ],
-          [
-            "MNT ni qo‘zg‘atuvchi",
-            "Strixnin, kokain, opiatlar, anasha"
-          ],
-          [
-            "MNT ni so‘ndiruvchi",
-            "Etil spirt, barbituratlar, trankvilizatorlar"
-          ],
-          [
-            "PNT ga ta’sir etuvchi",
-            "Xolinergik, adrenoergik, antixolinesteraza"
-          ]
-        ]
+        "caption": "Funksional zaharlar tasnifi"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: nega funksional zaharlarda murdada xos morfologik belgi kam bo‘ladi? Etil spirt va opiat qaysi guruhchaga kiradi? Doskada 4 guruhchali jadvalni chizdiring va har biriga bittadan misol yozdiring. Tipik xato: opiatlarni ham so‘ndiruvchi guruhga qo‘shib yuborish — jadvalda ular qo‘zg‘atuvchilar qatorida berilgan."
     },
@@ -404,7 +427,7 @@
       "title": "Zaharli moddaga bog‘liq omillar",
       "bullets": [
         {
-          "text": "Is gazi va karbonat angidrid (CO2) tuzilishi o‘xshash, lekin toksikligi bir xil emas. Doza va konsentratsiya ham muhim: 3% sirka eritmasi sirka essensiyasi bilan teng emas.",
+          "text": "Is gazi va CO2 tuzilishi o‘xshash, lekin toksikligi bir xil emas. Doza va konsentratsiya muhim: 3% sirka eritmasi sirka essensiyasi bilan teng emas.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -422,7 +445,7 @@
           "uncertain": false
         },
         {
-          "text": "Zahar ko‘pincha ichimlik yoki ovqatga qo‘shiladi (vexikulum). Margimush ishqoriy muhitda, sianidlar kislotali muhitda kuchayadi; og‘ir metallar kumulyatsiyalanadi.",
+          "text": "Zahar ko‘pincha ichimlik yoki ovqatga qo‘shiladi (vexikulum). Margimush ishqoriy, sianidlar kislotali muhitda kuchayadi; og‘ir metallar kumulyatsiyalanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -440,7 +463,45 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Zaharli moddaga bog‘liq",
+        "children": [
+          {
+            "label": "Kimyoviy tuzilish",
+            "items": [
+              "CO va CO2 toksikligi bir xil emas"
+            ]
+          },
+          {
+            "label": "Doza, konsentratsiya",
+            "items": [
+              "3% sirka ≠ sirka essensiyasi"
+            ]
+          },
+          {
+            "label": "Agregat holat",
+            "items": [
+              "Gaz > suyuq > qattiq"
+            ]
+          },
+          {
+            "label": "Eruvchanlik",
+            "items": [
+              "Bariy sulfat — erimaydi",
+              "Bariy xlorid — kuchli zahar"
+            ]
+          },
+          {
+            "label": "Vexikulum, barqarorlik",
+            "items": [
+              "Margimush — ishqorda kuchayadi",
+              "Rasputin: sianid potashga aylangan"
+            ]
+          }
+        ],
+        "caption": "Moddaga oid omillar"
+      },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: eruvchanlik nega toksiklikni belgilaydi? Rasputin misolida zahar nega ta’sir qilmagan? Doskada \"modda → muhit/vexikulum → ta’sir\" zanjirini chizing. Tipik xato: is gazi (CO) bilan karbonat angidridni (CO2) bir xil zaharli deb hisoblash — manbada ularning toksikligi bir xil emasligi aytilgan."
     },
     {
@@ -456,7 +517,7 @@
           "uncertain": false
         },
         {
-          "text": "Sog‘lom organizm zaharga kuchliroq qarshilik qiladi; yurak, jigar, buyrak kasalligida bu qobiliyat cheklanadi. Jins farqi yo‘q, ammo homiladorlikda sezgirlik ortadi.",
+          "text": "Sog‘lom organizm zaharga kuchliroq qarshilik qiladi; yurak, jigar, buyrak kasalligida qarshilik cheklanadi. Jins farqi yo‘q; homiladorlikda sezgirlik ortadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -465,7 +526,7 @@
           "uncertain": false
         },
         {
-          "text": "Xolinesteraza faolligining tug‘ma pastligi miorelaksantlar ta’sirini kuchaytiradi. Ba’zi moddalarga o‘ta sezgirlik — idiosinkraziya — genetik xususiyatlar bilan tushuntiriladi.",
+          "text": "Xolinesteraza faolligining tug‘ma pastligi miorelaksantlar ta’sirini kuchaytiradi. O‘ta sezgirlik — idiosinkraziya — genetik xususiyatlar bilan tushuntiriladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -474,7 +535,7 @@
           "uncertain": false
         },
         {
-          "text": "Qisqa vaqtda takror ta’sirdan tolerantlik (o‘rganib qolish) chiqadi. Giyohvand moddalarda ruhiy va jismoniy bog‘liqlik bo‘lib, qabul qilinmasa abstinensiya sindromi kuzatiladi.",
+          "text": "Qisqa vaqtda takror ta’sirdan tolerantlik chiqadi. Giyohvand moddalarda ruhiy va jismoniy bog‘liqlik bo‘lib, qabul qilinmasa abstinensiya kuzatiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -483,7 +544,41 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Organizmga bog‘liq",
+        "children": [
+          {
+            "label": "Vazn, yosh",
+            "items": [
+              "Doza 1 kg vaznga",
+              "Bolalar sezgirroq"
+            ]
+          },
+          {
+            "label": "Sog‘liq holati",
+            "items": [
+              "Yurak, jigar, buyrak kasalligi",
+              "Homiladorlikda sezgirlik ortadi"
+            ]
+          },
+          {
+            "label": "Genetika",
+            "items": [
+              "Xolinesteraza pastligi",
+              "Idiosinkraziya"
+            ]
+          },
+          {
+            "label": "Odatlanish",
+            "items": [
+              "Tolerantlik",
+              "Abstinensiya sindromi"
+            ]
+          }
+        ],
+        "caption": "Organizm omillari"
+      },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega bolalarda doza vaznga qarab hisoblanadi? 2) Tolerantlik va idiosinkraziya qanday qarama-qarshi hodisalar? Doskada chizing: «organizm omillari» mind-map (vazn, yosh, jins, salomatlik, genetika, tolerantlik). Tipik xato: tolerantlikni idiosinkraziya bilan aralashtirish — birida sezgirlik pasayadi, ikkinchisida ortadi."
     },
     {
@@ -499,7 +594,7 @@
           "uncertain": false
         },
         {
-          "text": "Yog‘da yaxshi eriydigan moddalar (fosfororganik birikmalar) shikastlanmagan teri orqali ham so‘riladi. Suvda va yog‘da erimaydiganlar faqat mahalliy ta’sir qiladi.",
+          "text": "Yog‘da yaxshi eriydigan moddalar (fosfororganik) shikastlanmagan teri orqali ham so‘riladi. Suvda va yog‘da erimaydiganlar faqat mahalliy ta’sir qiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -508,7 +603,7 @@
           "uncertain": false
         },
         {
-          "text": "Nafas yo‘llari, to‘g‘ri ichak va qin shilliq qavatidan so‘rilgan moddalar jigardan o‘tmaydi. Shuning uchun ular oshqozon-ichakdan so‘rilganlarga nisbatan kuchliroq ta’sir qiladi.",
+          "text": "Nafas yo‘llari, to‘g‘ri ichak va qin shilliq qavatidan so‘rilgan moddalar jigardan o‘tmaydi, shuning uchun oshqozon-ichakdagidan kuchliroq ta’sir qiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -526,7 +621,40 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Kirish yo‘li va sharoit",
+        "children": [
+          {
+            "label": "Kirish yo‘llari",
+            "items": [
+              "Teri, og‘iz, nafas yo‘llari",
+              "To‘g‘ri ichak, in’eksiya"
+            ]
+          },
+          {
+            "label": "Teri orqali",
+            "items": [
+              "Yog‘da eruvchi (fosfororganik)"
+            ]
+          },
+          {
+            "label": "Jigardan o‘tmaydi",
+            "items": [
+              "Nafas yo‘li, to‘g‘ri ichak, qin",
+              "Kuchliroq ta’sir"
+            ]
+          },
+          {
+            "label": "Tashqi sharoit",
+            "items": [
+              "Yopiq, issiq, nam — moyillik",
+              "Ochiq, past harorat — susayadi"
+            ]
+          }
+        ],
+        "caption": "Qanchalik tez qonga o‘tsa"
+      },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega to‘g‘ri ichakdan so‘rilgan modda kuchliroq ta’sir qiladi? 2) Qaysi sharoit alkogol zaharlanishiga moyil qiladi? Doskada chizing: kirish yo‘llari → qon → jigar sxemasi (jigardan o‘tadigan va o‘tmaydigan yo‘llar). Tipik xato: barcha shilliq qavatlardan so‘rilishni bir xil deb hisoblash. Qo‘shimcha: Iskandarov-Qo‘ldoshev kitobida (289-bet) past harorat organizmni sovitib, alkogol zaharlanishiga sabab bo‘lishi mumkinligi ham yoziladi — talabalar bilan ikki manbani solishtiring."
     },
     {
@@ -551,7 +679,7 @@
           "uncertain": false
         },
         {
-          "text": "Konsentratsiya hal qiladi: 3% sirka kislotasi bilan sirka essensiyasini taqqoslab bo‘lmaydi. Konsentrlangan fenol kuydiradi, suyultirilgani esa qonga so‘rilib ichki a’zolar va miyani shikastlaydi.",
+          "text": "Konsentratsiya hal qiladi: 3% sirka kislotasi sirka essensiyasi bilan teng emas. Konsentrlangan fenol kuydiradi, suyultirilgani qonga so‘rilib shikastlaydi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -576,7 +704,7 @@
       "title": "Voqea tahlili: zahar ta’siri omillari",
       "bullets": [
         {
-          "text": "3 yoshli qizcha xushsiz, talvasa va og‘zidan ko‘pik-qon kelgan; ichki qon ketishga shubha qilingan. Oshqozonda piramidon topilgan: yiqilishdan oldin 10 tabletka ichgan.",
+          "text": "3 yoshli qizcha xushsiz, talvasa va og‘zidan ko‘pik-qon kelgan; ichki qon ketishga shubha. Oshqozonda piramidon topilgan: yiqilishdan oldin 10 tabletka ichgan.",
           "source": {
             "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
             "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
@@ -716,7 +844,7 @@
           "uncertain": false
         },
         {
-          "text": "Zahar ma’lum bo‘lsa, “uch nuqta” qoidasi qo‘llanadi: zahar kirgan, ta’sir etgan va chiqqan joydan namuna olinadi. Og‘iz orqali kirsa — oshqozon massasi, jigar bo‘lagi, butun buyrak siydik bilan.",
+          "text": "Zahar ma’lum bo‘lsa, «uch nuqta» qoidasi: zahar kirgan, ta’sir etgan va chiqqan joydan namuna olinadi. Og‘iz orqali kirsa — oshqozon, jigar, buyrak, siydik.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -725,7 +853,7 @@
           "uncertain": false
         },
         {
-          "text": "Zahar noma’lum bo‘lsa: bosh miyaning 1/3, o‘pkaning 1/4, jigarning 1/3 o‘t bilan, buyrak, oshqozon massasi, ichak va 100-200 ml qon (har biri alohida idishda) olinadi.",
+          "text": "Zahar noma’lum bo‘lsa: miyaning 1/3, o‘pkaning 1/4, jigarning 1/3 o‘t bilan, buyrak, oshqozon massasi, ichak va 100-200 ml qon (alohida idishda) olinadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -734,7 +862,7 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: xato qilish xavfi! Olingan materialni qotiruvchi moddalar (formalin, spirt) bilan qotirish mumkin emas. Spirt va nitritlarga shubhada namuna laboratoriyaga tez yetkaziladi.",
+          "text": "Diqqat: olingan materialni qotiruvchi moddalar (formalin, spirt) bilan qotirish mumkin emas. Spirt va nitritga shubhada namuna tez yetkaziladi.",
           "source": {
             "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
             "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
@@ -823,31 +951,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Spirtlar va metabolitlari",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "Metabolit",
-          "Ta’siri"
+        "kind": "tree",
+        "root": "Spirtlar va metabolitlari",
+        "children": [
+          {
+            "label": "Metil spirti (metanol)",
+            "items": [
+              "Formaldegid",
+              "Kardio-, nefro-, neyrotoksik"
+            ]
+          },
+          {
+            "label": "Etil spirti (etanol)",
+            "items": [
+              "Atsetaldegid",
+              "Kuchliroq toksik modda hosil bo‘ladi"
+            ]
+          },
+          {
+            "label": "Etilenglikol",
+            "items": [
+              "Oksalat kislotasi",
+              "Gepato- va nefrotoksik"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Metil spirti (metanol)",
-            "Formaldegid",
-            "Kardio-, nefro-, neyrotoksik"
-          ],
-          [
-            "Etil spirti (etanol)",
-            "Atsetaldegid",
-            "Kuchliroq toksik modda hosil bo‘ladi"
-          ],
-          [
-            "Etilenglikol",
-            "Oksalat kislotasi",
-            "Gepato- va nefrotoksik"
-          ]
-        ]
+        "caption": "Spirtlar va metabolitlari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nima uchun metanol bilan zaharlanishda kechikib og‘ir o‘zgarishlar rivojlanadi? 2) Qaysi modda va qaysi metabolit mos keladi? Doskada chizish: uch ustunli jadval (modda → metabolit → ta’sir). Tipik xato: zaharning o‘zi va metabolitining ta’sirini bir xil deb olish; metabolitlarni chalkashtirish (metanol ≠ atsetaldegid)."
     },
@@ -864,7 +993,7 @@
           "uncertain": false
         },
         {
-          "text": "Zaharning ta’siri uch bosqichda ketadi. Birlamchi: shilliq qavatlarning kimyoviy kuyishi. Keyingi: atsidoz tufayli eritrotsitlar gemolizi. Metatoksik: toksik gepatit va nefroz.",
+          "text": "Zaharning ta’siri uch bosqichda: birlamchi — shilliq qavatlarning kimyoviy kuyishi; keyingi — atsidoz tufayli gemoliz; metatoksik — toksik gepatit va nefroz.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -873,7 +1002,7 @@
           "uncertain": false
         },
         {
-          "text": "Sirka kislotasida boshqa kislotalarga qaraganda gemolitik ta’sir kuchli. Gemoliz gemoglobinuriyali nefrozga va o‘tkir buyrak yetishmovchiligiga, jigarda esa nekrozga olib keladi.",
+          "text": "Sirka kislotasi boshqa kislotalarga qaraganda kuchli gemolitik; gemoliz gemoglobinuriyali nefroz, o‘tkir buyrak yetishmovchiligi, jigarda nekrozga olib keladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -882,7 +1011,7 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: sirka kislotasi mahalliy kislotalar guruhida, lekin gemolitik zahar sifatida ham sanaladi. Destruktiv zaharlar (simob, qo‘rg‘oshin, margimush) esa qonga so‘rilgach ta’sir qiladi. Savol: bu bosqichlar qaysi tartibda rivojlanadi?",
+          "text": "Diqqat: sirka kislotasi mahalliy kislotalar guruhida, lekin gemolitik zahar ham. Destruktiv zaharlar (simob, qo‘rg‘oshin) qonga so‘rilgach ta’sir qiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -907,7 +1036,7 @@
           "uncertain": false
         },
         {
-          "text": "Etanol kraxmalli mahsulotlar, mevalar va shakarning bijg‘ishidan olinadi. Xom spirt rektifikatsiya bilan tozalanadi, xom spirt va uy aroqida esa sivush moylari bo‘ladi.",
+          "text": "Etanol kraxmalli mahsulotlar, mevalar va shakar bijg‘ishidan olinadi. Xom spirt rektifikatsiya bilan tozalanadi; xom spirt va uy aroqida sivush moylari bo‘ladi.",
           "source": {
             "author": "Baizoldanov T. (Байзолданов Т.)",
             "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
@@ -925,7 +1054,7 @@
           "uncertain": false
         },
         {
-          "text": "Etanol sanoatda erituvchi, tibbiyotda dezinfeksiya vositasi va metanol zaharlanishida detoksikant. Tanaga ichish, vena ichiga yuborish yoki bug‘ini nafas bilan olish orqali kiradi.",
+          "text": "Etanol sanoatda erituvchi, tibbiyotda dezinfeksiya va metanol zaharlanishida detoksikant. Ichish, vena ichiga yuborish yoki bug‘ nafas olish orqali kiradi.",
           "source": {
             "author": "Baizoldanov T. (Байзолданов Т.)",
             "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
@@ -959,7 +1088,7 @@
           "uncertain": false
         },
         {
-          "text": "Taxminiy o‘ldiruvchi doza: 1 kg vaznga 6–8 ml toza spirt (400–500 ml). Sezgirlikka, ichimlik kuchiga va oshqozon to‘liqligiga qarab 100–150 g dan 600–800 g gacha farq qiladi.",
+          "text": "Taxminiy o‘ldiruvchi doza: 1 kg vaznga 6–8 ml toza spirt (400–500 ml). Sezgirlik, ichimlik kuchi va oshqozon to‘liqligiga qarab 100–150 g dan 600–800 g gacha.",
           "source": {
             "author": "Baizoldanov T. (Байзолданов Т.)",
             "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
@@ -977,7 +1106,37 @@
           "uncertain": true
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Zaharlanishdagi ulushi",
+            "value": "60",
+            "unit": "%"
+          },
+          {
+            "label": "O‘ldiruvchi doza (toza)",
+            "value": "6–8",
+            "unit": "ml/kg"
+          },
+          {
+            "label": "Taxminiy hajm",
+            "value": "400–500",
+            "unit": "ml"
+          },
+          {
+            "label": "Individual quyi",
+            "value": "100–150",
+            "unit": "g"
+          },
+          {
+            "label": "Individual yuqori",
+            "value": "600–800",
+            "unit": "g"
+          }
+        ],
+        "caption": "Etanol toksikligi"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega o‘ldiruvchi doza har kimda har xil? 2) Alkogol mastligidagi qo‘zg‘alishning mexanizmi nima? Doskada: «doza – sezgirlik – o‘lim» sxemasini chizdiring. Tipik xato: mastlikdagi qo‘zg‘alishni qo‘zg‘alish jarayonining kuchayishi deb tushunish; 60% statistikani hozirgi ma’lumot deb olish (manba eski)."
     },
     {
@@ -1011,7 +1170,7 @@
           "uncertain": false
         },
         {
-          "text": "Natija promillada (‰, mingdan bir ulush) beriladi. Murda qonida chirish 2,4‰ gacha spirt hosil qilishi mumkin, siydikda esa hosil bo‘lmaydi; shuning uchun ikkalasi tekshiriladi.",
+          "text": "Natija promillada (‰) beriladi. Murda qonida chirish 2,4‰ gacha spirt hosil qilishi mumkin, siydikda hosil bo‘lmaydi; shuning uchun ikkalasi tekshiriladi.",
           "source": {
             "author": "Baizoldanov T. (Байзолданов Т.)",
             "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
@@ -1020,7 +1179,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Tana massasida suv",
+            "value": "65",
+            "unit": "%"
+          },
+          {
+            "label": "Qon tarkibida suv",
+            "value": "75–85",
+            "unit": "%"
+          },
+          {
+            "label": "Siydik/qon farqi",
+            "value": "1–2",
+            "unit": "soatdan"
+          },
+          {
+            "label": "Chirishdan hosil bo‘lgan",
+            "value": "2,4 gacha",
+            "unit": "‰"
+          }
+        ],
+        "caption": "Etanol taqsimoti"
+      },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega spirt miqdori qonda boshqa a’zolardagidan ko‘p? 2) Nega murdada qon va siydik birga tekshiriladi? Doskada chizing: ‘qon va siydik konsentratsiyasining vaqt bo‘yicha ikki egri chizig‘i’ (1–2 soatdan keyin kesishishi). Tipik xato: murda qonidagi spirtni to‘liq ichilgan miqdor deb olish, chirishda hosil bo‘lishini unutish.”"
     },
     {
@@ -1055,31 +1239,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Etanol va holat (qonda)",
-        "nodes": [],
-        "header": [
-          "Qonda, ‰",
-          "Baho"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "0,3 dan past",
+            "text": "Spirt ta’siri yo‘q deb baholanadi"
+          },
+          {
+            "title": "0,5–1,5 va 1,5–2,5",
+            "text": "Yengil va o‘rta darajali mastlik"
+          },
+          {
+            "title": "2,5–3,0",
+            "text": "Kuchli mastlik"
+          },
+          {
+            "title": "3–5 va 5–6",
+            "text": "Og‘ir zaharlanish va o‘lim"
+          }
         ],
-        "rows": [
-          [
-            "0,3 dan past",
-            "Spirt ta’siri yo‘q deb baholanadi"
-          ],
-          [
-            "0,5–1,5 va 1,5–2,5",
-            "Yengil va o‘rta darajali mastlik"
-          ],
-          [
-            "2,5–3,0",
-            "Kuchli mastlik"
-          ],
-          [
-            "3–5 va 5–6",
-            "Og‘ir zaharlanish va o‘lim"
-          ]
-        ]
+        "caption": "Etanol va holat (qonda)"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega 0,3‰ dan past qiymat ta’sir yo‘q deb baholanadi? 2) Qaysi namuna asosiy hisoblanadi va nima uchun? Doskada chizing: promille shkalasini son o‘qi ko‘rinishida, darajalarni rangli bo‘laklarga ajratib. Tipik xato: 3–5‰ va 5–6‰ chegaralarini aralashtirish."
     },
@@ -1123,7 +1302,17 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Etanol",
+          "Atsetaldegid",
+          "Sirka kislotasi",
+          "Suv va CO2",
+          "2–10% o‘zgarmay chiqadi"
+        ],
+        "caption": "Etanol metabolizmi"
+      },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega atsetaldegid to‘planishi alkogolga nafrat uyg‘otadi? 2) Ekshumatsiyada nega alkogol topilmasligi mumkin? Doskada chizing: etanol → atsetaldegid → sirka kislota zanjirini, tetura ta’sir qiladigan bosqichni belgilab. Tipik xato: tirik shaxs va murda natijalarini bir xil talqin qilish."
     },
     {
@@ -1166,14 +1355,40 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Qon",
+            "items": [
+              "Chirishda 2,4‰ gacha hosil bo‘lishi mumkin",
+              "2–3 sutkada qisman parchalanadi"
+            ]
+          },
+          {
+            "title": "Siydik",
+            "items": [
+              "Chirishdan spirt hosil bo‘lmaydi",
+              "Ikkalasi birga tekshiriladi"
+            ]
+          },
+          {
+            "title": "Cheklov",
+            "items": [
+              "Yodoform reaksiyasi yagona isbot emas",
+              "Ekshumatsiyada tez parchalanadi"
+            ]
+          }
+        ],
+        "caption": "Murdada etanol"
+      },
       "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Nima uchun murda qonidagi spirt natijasi siydik bilan solishtiriladi? 2) Ekshumatsiyada qaysi zaharlar yaxshi saqlanadi, qaysilari yo‘q? Doskada chizish: ikki ustun (qon / siydik) va ularda chirishdagi spirt hosil bo‘lishini belgilang. Tipik xato: murda qonidagi spirtni to‘liq hayotdagi ichishga tenglash. Qo‘shimcha: spirtga shubhada namuna qotiruvchi moddalar (formalin, spirt) bilan qotirilmaydi va laboratoriyaga tez yetkaziladi (Iskandarov, 297-bet)."
     },
     {
       "title": "Surunkali alkogolizm va xavf omillari",
       "bullets": [
         {
-          "text": "Takroriy ichishdan tolerantlik paydo bo‘ladi: kichik doza eyforiya bermaydi, doza oshiriladi. So‘ng qaramlik shakllanadi: alkogolsiz azob va qayta ichishga intilish.",
+          "text": "Takroriy ichishdan tolerantlik paydo bo‘ladi: kichik doza eyforiya bermaydi, doza oshiriladi. So‘ng qaramlik: alkogolsiz azob va qayta ichishga intilish.",
           "source": {
             "author": "Baizoldanov T. (Байзолданов Т.)",
             "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
@@ -1341,7 +1556,40 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Boshqa surrogatlar",
+        "children": [
+          {
+            "label": "Etilenglikol",
+            "items": [
+              "Molekula narkotik ta’sir qiladi",
+              "Oksalat kislotasi — jigar, buyrak"
+            ]
+          },
+          {
+            "label": "Metanol",
+            "items": [
+              "Lak, bo‘yoq erituvchisi",
+              "Antifriz tarkibida"
+            ]
+          },
+          {
+            "label": "Sirka kislotasi",
+            "items": [
+              "Eritrotsitlar gemolizi",
+              "O‘tkir buyrak yetishmovchiligi"
+            ]
+          },
+          {
+            "label": "Metabolizm",
+            "items": [
+              "Oksidlanganda kuchliroq zahar hosil"
+            ]
+          }
+        ],
+        "caption": "Surrogatlar"
+      },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nima uchun metabolit ko‘pincha asl moddadan zaharliroq bo‘ladi? 2) Texnik suyuqlikni ichimlik bilan almashtirish xavfi qayerdan kelib chiqadi? Doskada chizing: etilenglikol → oksalat kislotasi → jigar va buyrak zarari. Tipik xato: sirka kislotasi faqat mahalliy kuydiradi deb o‘ylash; manbada uning gemolitik (umumiy) ta’siri ham kuchli ekani aytilgan."
     },
     {
@@ -1419,36 +1667,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Opiy va unga yaqin atamalar",
-        "nodes": [],
-        "header": [
-          "Atama",
-          "Ma’nosi",
-          "Misol"
+        "kind": "tree",
+        "root": "Opiy va unga yaqin atamalar",
+        "children": [
+          {
+            "label": "Opiy",
+            "items": [
+              "Mak koknorining quruq sut shirasi",
+              "50 dan ortiq alkaloid"
+            ]
+          },
+          {
+            "label": "Tabiiy opiatlar",
+            "items": [
+              "Opiydan ajratilgan alkaloidlar",
+              "Morfin, kodein, papaverin, tebain"
+            ]
+          },
+          {
+            "label": "Yarim sintetik",
+            "items": [
+              "Morfindan olingan hosilalar",
+              "Geroin"
+            ]
+          },
+          {
+            "label": "Opioidlar",
+            "items": [
+              "Tuzilishi boshqa, ta’siri morfindek",
+              "Metadon, fentanil, endorfinlar"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Opiy",
-            "Mak koknorining quruq sut shirasi",
-            "50 dan ortiq alkaloid"
-          ],
-          [
-            "Tabiiy opiatlar",
-            "Opiydan ajratilgan alkaloidlar",
-            "Morfin, kodein, papaverin, tebain"
-          ],
-          [
-            "Yarim sintetik",
-            "Morfindan olingan hosilalar",
-            "Geroin"
-          ],
-          [
-            "Opioidlar",
-            "Tuzilishi boshqa, ta’siri morfinga o‘xshash",
-            "Metadon, fentanil, endorfinlar"
-          ]
-        ]
+        "caption": "Opiy va unga yaqin atamalar"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Opiat va opioid farqi nimada? 2) Nega Sertyurner ishi toksikologiya uchun muhim? Doskada: ‘opiy → opiatlar → yarim sintetik’ zanjirini chizdiring. Tipik xato: opiat va opioidni sinonim deb olish. Eslatma: opioidlarga misollar (metadon, fentanil, endorfinlar) Pigolkin va boshq. kitobining 18-betidan olingan."
     },
@@ -1484,36 +1735,30 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Opiy alkaloidlari ulushi",
-        "nodes": [],
-        "header": [
-          "Alkaloid",
-          "Ulushi, %",
-          "Faollik"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Morfin",
+            "value": "42",
+            "unit": "%"
+          },
+          {
+            "label": "Noskapin (narkotin)",
+            "value": "21",
+            "unit": "%"
+          },
+          {
+            "label": "Papaverin",
+            "value": "18",
+            "unit": "%"
+          },
+          {
+            "label": "Kodein",
+            "value": "12",
+            "unit": "%"
+          }
         ],
-        "rows": [
-          [
-            "Morfin",
-            "42",
-            "Asosiy narkotik faol alkaloid"
-          ],
-          [
-            "Noskapin (narkotin)",
-            "21",
-            "Narkotik faolligi yo‘q"
-          ],
-          [
-            "Papaverin",
-            "18",
-            "Narkotik faolligi yo‘q"
-          ],
-          [
-            "Kodein",
-            "12",
-            "Morfinga yaqin, lekin kuchsizroq"
-          ]
-        ]
+        "caption": "Opiy alkaloidlari ulushi"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega opiy tarkibi turli mintaqada farq qiladi? 2) Qaysi alkaloidlar narkotik emas? Doskada: aylana diagramma chizib, ulushlarni (42/21/18/12/6) belgilang. Tipik xato: papaverin va noskapinni ham narkotik faol deb hisoblash. Kodein haqidagi ‘kuchsizroq’ izohi kitobning 209-betiga tayanadi."
     },
@@ -1521,7 +1766,7 @@
       "title": "Morfin va uning farmakokinetikasi",
       "bullets": [
         {
-          "text": "Morfin — narkotik analgetiklarning asosiy vakili: kuchli og‘riqsizlantiradi, eyforiya beradi. Takror qo‘llanganda tez kasallikka aylangan qaramlik (morfinizm) rivojlanadi.",
+          "text": "Morfin — narkotik analgetiklarning asosiy vakili: kuchli og‘riqsizlantiradi, eyforiya beradi. Takror qo‘llanganda tez qaramlik (morfinizm) rivojlanadi.",
           "source": {
             "author": "Baizoldanov T. (Байзолданов Т.)",
             "title": "Токсикологическая химия: учебник, Almaty: Evero, 2021 (new.krmu.edu.kz ochiq repozitoriy; litsenziya ko‘rsatilmagan — faqat ichki foydalanish)",
@@ -1557,7 +1802,42 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Cho‘qqi, vena ichiga",
+            "value": "2–15",
+            "unit": "daq"
+          },
+          {
+            "label": "Cho‘qqi, mushak ichiga",
+            "value": "7,5–20",
+            "unit": "daq"
+          },
+          {
+            "label": "Cho‘qqi, ichga",
+            "value": "30–120",
+            "unit": "daq"
+          },
+          {
+            "label": "Biokiruvchanlik, ichga",
+            "value": "30–40",
+            "unit": "%"
+          },
+          {
+            "label": "Glyukuronid, 24 soatda",
+            "value": "≈90",
+            "unit": "%"
+          },
+          {
+            "label": "Miya/qon nisbati",
+            "value": "2–5",
+            "unit": "marta"
+          }
+        ],
+        "caption": "Morfin farmakokinetikasi"
+      },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega ichga qabul qilinganda ta’sir sustroq? 2) Siydikdan morfinni topish muddati sud-tibbiy xulosaga qanday ta’sir qiladi? Doskada: kirish yo‘llari bo‘yicha ‘Tmax’ qiymatlarini (2–15; 7,5–20; 30–120 daq) ustun shaklida yozing. Tipik xato: biokiruvchanlikni (100% va 30–40%) aralashtirib yuborish."
     },
     {
@@ -1600,7 +1880,30 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Kodein",
+            "items": [
+              "Morfinning metil efiri",
+              "Og‘riq qoldirishi kuchsizroq",
+              "Nafasni kamroq bostiradi",
+              "Yo‘talni bosadi"
+            ]
+          },
+          {
+            "title": "Geroin",
+            "items": [
+              "Diatsetilmorfin (atsetillash)",
+              "Toza: oq achchiq kukun",
+              "Ishqor, qizdirishda morfinga parchalanadi",
+              "1874: Older Rayt sintez qilgan"
+            ]
+          }
+        ],
+        "caption": "Hosilalar"
+      },
       "teacher_notes": "Vaqt: 6-7 daq. Muhokama: 1) Nega geroin o‘rniga morfin topiladi? 2) Kodein va morfin o‘rtasida qanday farq bor? Doskada: morfin → kodein (metil efir) va morfin → geroin (diatsetil) sxemasini chizdiring. Tipik xato: geroinni morfinning tabiiy alkaloidi deb o‘ylash; u yarim sintetik hosila."
     },
     {
@@ -1643,7 +1946,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Opiat",
+            "items": [
+              "Morfinga o‘xshash tuzilma",
+              "Tabiiy yoki yarim sintetik"
+            ]
+          },
+          {
+            "title": "Opioid",
+            "items": [
+              "Har qanday tuzilma",
+              "Shu retseptorlarga morfin kabi ta’sir"
+            ]
+          },
+          {
+            "title": "Retseptorlar",
+            "items": [
+              "5 turi ma’lum",
+              "Mu — eyforiya (talamus)",
+              "Endorfin: gipotalamus"
+            ]
+          }
+        ],
+        "caption": "Opiat ≠ opioid"
+      },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega eyforiya takroriy qabulga undaydi? 2) Metadon opiatmi yoki opioidmi? Doskada: retseptor — opiat — eyforiya zanjirini chizdiring. Tipik xato: opiat va opioid terminlarini aralashtirish. Tezkor savol: endorfin nima ma’noni anglatadi (endogen morfin)?"
     },
     {
@@ -1659,7 +1989,7 @@
           "uncertain": false
         },
         {
-          "text": "Umumasfiktik belgilar: suyuq qon, ichki a’zolarning venoz to‘laqonligi, miya va o‘pka shishi, qon quyilishlar. Boshqa o‘limga olib keluvchi kasallik yoki jarohat bo‘lmasligi kerak.",
+          "text": "Umumasfiktik belgilar: suyuq qon, ichki a’zolarning venoz to‘laqonligi, miya va o‘pka shishi, qon quyilishlar. Boshqa o‘lim sababi bo‘lmasligi kerak.",
           "source": {
             "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
             "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
@@ -1686,7 +2016,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Shubha",
+            "text": "Shpritslar, ampulalar, in’eksiya izlari"
+          },
+          {
+            "title": "2. Murda belgilari",
+            "text": "Asfiktik belgilar: suyuq qon, miya va o‘pka shishi"
+          },
+          {
+            "title": "3. Istisno",
+            "text": "Boshqa o‘lim sababi bo‘lmasligi kerak"
+          },
+          {
+            "title": "4. Laboratoriya",
+            "text": "Sud-kimyoviy va sud-gistologik tekshiruv"
+          },
+          {
+            "title": "5. Cheklov",
+            "text": "Tez chiqsa yoki yordam ko‘rsatilsa, topilmasligi mumkin"
+          }
+        ],
+        "caption": "Tashxis bosqichlari"
+      },
       "teacher_notes": "Vaqt: 8 daq. Voqea tahlili: yosh erkak murdasi yonida shprits va qoshiq topildi, boshqa jarohat yo‘q. Savol: qanday belgilar opiat zaharlanishiga shubha uyg‘otadi va nima bilan tasdiqlanadi? Doskada: shubha → umumasfiktik belgilar → kimyoviy va gistologik tasdiq zanjirini chizdiring. Tipik xato: faqat asfiksiya belgilariga qarab tashxis qo‘yish; anjomlar va laboratoriya natijasi ham kerak."
     },
     {
@@ -1721,36 +2076,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Usullar va cheklovlar",
-        "nodes": [],
-        "header": [
-          "Usul",
-          "Beradi",
-          "Cheklov"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Beradi",
+            "items": [
+              "Sud-kimyoviy: Modda turi, oxirgi qabul vaqti, doza",
+              "Soch va tirnoq: Surunkali intoksikatsiyani ko‘rsatadi",
+              "Gistologik: Morfologik belgilar (jigar, miya)",
+              "Mekon kislotasi: FeCl3 bilan qon-qizil rang"
+            ]
+          },
+          {
+            "title": "Cheklov",
+            "items": [
+              "Sud-kimyoviy: Tez chiqib ketsa, topilmaydi",
+              "Soch va tirnoq: Usullar endi ishlab chiqilmoqda",
+              "Gistologik: Kimyo o‘tkazilmasa, yagona imkon",
+              "Mekon kislotasi: Qizdirganda rang yo‘qolmasligi kerak"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Sud-kimyoviy",
-            "Modda turi, oxirgi qabul vaqti, doza",
-            "Tez chiqib ketsa, topilmaydi"
-          ],
-          [
-            "Soch va tirnoq",
-            "Surunkali intoksikatsiyani ko‘rsatadi",
-            "Usullar endi ishlab chiqilmoqda"
-          ],
-          [
-            "Gistologik",
-            "Morfologik belgilar (jigar, miya)",
-            "Kimyo o‘tkazilmasa, yagona imkon"
-          ],
-          [
-            "Mekon kislotasi",
-            "FeCl3 bilan qon-qizil rang",
-            "Qizdirganda rang yo‘qolmasligi kerak"
-          ]
-        ]
+        "caption": "Usullar va cheklovlar"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nima uchun faqat morfin topilishi opiy isboti emas? 2) Soch va tirnoq tahlili nimasi bilan qimmatli? Doskada: jadvalni chizing va har usulning bitta kuchli va bitta zaif tomonini yozdiring. Tipik xato: gerоin ham morfin kabi reaksiya berishini unutish, shuning uchun morfin topilishi alohida turni isbotlamaydi."
     },
@@ -1871,7 +2218,7 @@
           "uncertain": false
         },
         {
-          "text": "Zaharlanish diagnostikasi uch bosqichli: hodisa joyi, murda tekshiruvi, laboratoriya. Funksional zaharlarda morfologik o‘zgarish kam, shuning uchun laboratoriya hal qiluvchi.",
+          "text": "Zaharlanish diagnostikasi uch bosqichli: hodisa joyi, murda tekshiruvi, laboratoriya. Funksional zaharlarda morfologik o‘zgarish kam, laboratoriya hal qiluvchi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -2129,11 +2476,11 @@
       "question": "Laboratoriyada aniqlangan moddaning tuzilishi morfindan farq qiladi, lekin u xuddi shu retseptorlarni qo‘zg‘atib morfinsimon ta’sir ko‘rsatadi. U qaysi guruhga kiradi?",
       "options": [
         "Opiatlar guruhiga kiruvchi modda",
-        "Opioidlar guruhiga kiruvchi modda",
+        "Psixostimulyatorlar guruhiga kiruvchi modda",
         "Barbituratlar guruhiga kiruvchi modda",
-        "Psixostimulyatorlar guruhiga kiruvchi modda"
+        "Opioidlar guruhiga kiruvchi modda"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Opiatlar kimyoviy tuzilishi bo‘yicha morfinga yaqin moddalardir. Opioidlar esa tuzilishi har xil bo‘lsa ham, morfin ta’sir qiladigan retseptorlar orqali morfinsimon ta’sir ko‘rsatadi. Metadon, fentanil, buprenorfin ularga misol bo‘ladi.",
       "source": {
         "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
@@ -2193,11 +2540,11 @@
       "question": "Hodisa joyida shpritslar topildi, murdada in’eksiya izlari, suyuq qon, miya va o‘pka shishi aniqlandi. Boshqa o‘limga olib keluvchi kasallik va jarohat yo‘q. Ekspert dastlab nimaga gumon qiladi?",
       "options": [
         "O‘yuvchi ishqor bilan zaharlanishga",
-        "Narkotik vosita bilan zaharlanishga",
         "Sulema bilan zaharlanishga",
+        "Narkotik vosita bilan zaharlanishga",
         "Karbol kislota bilan zaharlanishga"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Shpritslar va in’eksiya izlari, suyuq qon, ichki a’zolarning venoz to‘laqonligi, miya va o‘pka shishi hamda qon quyilishlar narkotik zaharlanishga shubha uyg‘otadi, agar boshqa o‘limga olib keluvchi kasallik yoki jarohat bo‘lmasa. Tashxis sud-kimyoviy va sud-gistologik tekshiruvlar bilan tasdiqlanadi.",
       "source": {
         "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",

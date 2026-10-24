@@ -23,7 +23,7 @@
           "uncertain": false
         },
         {
-          "text": "Amaliyotda bunday jarohatlar o‘tmas va o‘tkir jismlardan jarohatlarga qaraganda kam uchraydi. Shunga qaramay, huquqni muhofaza idoralari ularni atroflicha tekshiradi.",
+          "text": "Amaliyotda bunday jarohatlar o‘tmas va o‘tkir jismlardan jarohatlarga qaraganda kam uchraydi, lekin huquqni muhofaza idoralari ularni atroflicha tekshiradi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -110,31 +110,25 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ikki guruh va qo‘llanish sharoiti",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Mazmuni"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "O‘q otar jarohatlar",
+            "items": [
+              "Qurollardan etkazilgan shikast",
+              "Tinchlik davrida ham muhim"
+            ]
+          },
+          {
+            "title": "Portlash travmasi",
+            "items": [
+              "Portlash hollaridagi shikast",
+              "Jangda: snaryad, mina, granata",
+              "Tinchlik davrida ham muhim"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "O‘q otar jarohatlar",
-            "Qurollardan etkazilgan shikast"
-          ],
-          [
-            "Portlash travmasi",
-            "Portlash hollaridagi shikast"
-          ],
-          [
-            "Jang sharoiti",
-            "Snaryad, mina, granata portlashi"
-          ],
-          [
-            "Tinchlik davri",
-            "Ikkala guruh ham ekspertizada muhim"
-          ]
-        ]
+        "caption": "Ikki guruh"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama savollari: 1) Jang va tinchlik davrida qaysi jarohatlar ko‘proq uchraydi? 2) Nega tinchlik davrida ikkala guruh ham muhim? Doskada chizish: jadvalni o‘zlari qayta chizsin. Tipik xato: jang sharoitidagi jarohatlarni tinchlik davri ekspertizasiga aloqasiz deb bilish. Tezkor savol: shartli ikki guruhni ayting."
     },
@@ -170,31 +164,43 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Tipik/atipik va individual/guruhiy",
-        "nodes": [],
-        "header": [
-          "Tushuncha",
-          "Mazmuni"
+        "kind": "tree",
+        "root": "O‘q otar qurollar",
+        "children": [
+          {
+            "label": "Maqsadi bo‘yicha",
+            "items": [
+              "Jangovor, ov, sport",
+              "Gaz va maxsus"
+            ]
+          },
+          {
+            "label": "Tipik",
+            "items": [
+              "Maxsus zavodda tayyorlangan"
+            ]
+          },
+          {
+            "label": "Atipik",
+            "items": [
+              "Qo‘lbola yoki o‘zgartirilgan"
+            ]
+          },
+          {
+            "label": "Jangovor qurol",
+            "items": [
+              "Artillerik va xususan"
+            ]
+          },
+          {
+            "label": "Xususan qurol",
+            "items": [
+              "Individual: miltiq, pistolet",
+              "Guruhiy: pulemet"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Tipik qurol",
-            "maxsus ishlab chiqarishda tayyorlangan"
-          ],
-          [
-            "Atipik qurol",
-            "qo‘lbola yoki o‘zgartirilgan"
-          ],
-          [
-            "Individual",
-            "miltiq, avtomat, pistolet"
-          ],
-          [
-            "Guruhiy",
-            "pulemet"
-          ]
-        ]
+        "caption": "Qurollar tasnifi"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega sud-tibbiy ekspertizada tipik va atipik qurolni farqlash kerak? 2) Individual va guruhiy qurol farqi nimada? Doskada chizish: qurollar tasnifi daraxtini (jangovor, ov, sport, gaz, maxsus; jangovor ichida artillerik va xususan) chizdiring. Tipik xato: atipik qurolni faqat qo‘lbola deb o‘ylash, aslida zavod quroli o‘zgartirilgan bo‘lishi ham mumkin."
     },
@@ -230,31 +236,38 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Stvol va kalibr turlari",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Turlari"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Mayda kalibr",
+            "value": "≤ 6",
+            "unit": "mm"
+          },
+          {
+            "label": "O‘rta kalibr",
+            "value": "7–9",
+            "unit": "mm"
+          },
+          {
+            "label": "Yirik kalibr",
+            "value": "≥ 10",
+            "unit": "mm"
+          },
+          {
+            "label": "Ov qurolida kalibr",
+            "value": "10–32"
+          },
+          {
+            "label": "Ko‘p uchraydigani",
+            "value": "12 va 16"
+          },
+          {
+            "label": "Jangovor stvol o‘yig‘i",
+            "value": "4–6",
+            "unit": "ta"
+          }
         ],
-        "rows": [
-          [
-            "Stvol uzunligi",
-            "uzun, o‘rta, kalta"
-          ],
-          [
-            "Ichki yuza",
-            "silliq yoki o‘yiqli"
-          ],
-          [
-            "O‘yiqli kalibr",
-            "mayda ≤6; o‘rta 7–9; yirik ≥10 mm"
-          ],
-          [
-            "Ov qurolida kalibr",
-            "10 dan 32 gacha; ko‘p 12 va 16"
-          ]
-        ]
+        "caption": "Stvol va kalibr"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) O‘yiqlar nima uchun kerak? 2) Silliq stvolli ov qurolida kalibr qanday belgilanadi? Doskada chizish: silliq va o‘yiqli stvolning ko‘ndalang kesimini chizib, kalibrni (qarama-qarshi o‘yiqlararo yuzalar orasidagi masofa) ko‘rsating. Tipik xato: silliq stvolli qurol kalibrini millimetr bilan o‘lchanadi deb o‘ylash; manbada u shar o‘qlar soni bilan belgilanadi."
     },
@@ -509,31 +522,36 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Shikastlovchi omillar guruhlari",
-        "nodes": [],
-        "header": [
-          "Omil",
-          "Tarkibi"
+        "kind": "tree",
+        "root": "Shikastlovchi omillar",
+        "children": [
+          {
+            "label": "Asosiy snaryad",
+            "items": [
+              "O‘q, sochma va ularning qismlari"
+            ]
+          },
+          {
+            "label": "Qo‘shimcha omillar",
+            "items": [
+              "O‘qoldi havo, alanga, gaz",
+              "Qurum, porox"
+            ]
+          },
+          {
+            "label": "Qurol va qismlari",
+            "items": [
+              "Stvol yorilganda shikast beradi"
+            ]
+          },
+          {
+            "label": "Ikkilamchi snaryad",
+            "items": [
+              "Kiyim, suyak bo‘lagi, to‘siq"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Asosiy snaryad",
-            "O‘q, sochma va ularning qismlari"
-          ],
-          [
-            "Qo‘shimcha omillar",
-            "O‘qoldi havo, alanga, gaz, qurum, porox"
-          ],
-          [
-            "Qurol va qismlari",
-            "Stvol yorilganda shikast beradi"
-          ],
-          [
-            "Ikkilamchi snaryad",
-            "Kiyim, suyak bo‘lagi, to‘siq"
-          ]
-        ]
+        "caption": "Omillar guruhlari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Qo‘shimcha omillar qaysi holatlarga bog‘liq (qurol tuzilishi, to‘siq, shikastlanayotgan yuza)? 2) Nega stvol yorilishi qo‘lbola qurolda xavfliroq? Doskada: omillar jadvalini talabalar bilan birga to‘ldiring. Tipik xato: kiyim bo‘lagi yoki suyak bo‘lagini asosiy snaryad deb hisoblash.",
       "needs_review": false
@@ -570,31 +588,31 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Energiya va yara xususiyati",
-        "nodes": [],
-        "header": [
-          "Ta’sir",
-          "Energiya",
-          "Yara"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Yorma",
+            "items": [
+              "Bir necha ming joul",
+              "Yara snaryaddan bir necha barobar katta"
+            ]
+          },
+          {
+            "title": "Yulma",
+            "items": [
+              "Bir necha yuz joul",
+              "Defekt kichikroq, chetlari tekis"
+            ]
+          },
+          {
+            "title": "Ponasimon",
+            "items": [
+              "Bir necha o‘n joul",
+              "Yoriqsimon, yulduzsimon, defektsiz"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Yorma",
-            "Bir necha ming joul",
-            "Yara snaryaddan bir necha barobar katta"
-          ],
-          [
-            "Yulma",
-            "Bir necha yuz joul",
-            "Defekt kichikroq, chetlari tekis"
-          ],
-          [
-            "Ponasimon",
-            "Bir necha o‘n joul",
-            "Yoriqsimon, yulduzsimon, defektsiz"
-          ]
-        ]
+        "caption": "Energiya va yara xususiyati"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Energiya kamayishi bilan yara shakli qanday o‘zgaradi? 2) Chiqish teshigida ponasimon ta’sir nega ko‘p uchraydi? Doskada: energiya zinapoyasini (ming joul, yuz joul, o‘n joul) chizib, har pog‘onaga yara shaklini yozdiring. Qo‘shimcha: yorma ta’sir tirab otishda va maxsus o‘qlarda ham bo‘lishi mumkin. Tipik xato: yulma ta’sirni yorma ta’sir bilan aralashtirish (defekt bor yoki yo‘q).",
       "needs_review": false
@@ -603,7 +621,7 @@
       "title": "Qo‘shimcha omillarning mexanik, termik, kimyoviy ta’siri",
       "bullets": [
         {
-          "text": "Mexanik ta’sir: o‘qoldi havo 3–5 sm masofada to‘qima defekti, shilinish hoshiyasi va terining laxtaksimon yorilishini beradi. Porox gazlari 10–15 sm masofada shilinish, qontalash, yumshoq to‘qima yorilishini keltiradi.",
+          "text": "Mexanik ta’sir: o‘qoldi havo 3–5 sm da to‘qima defekti, shilinish hoshiyasi, laxtaksimon yorilish; porox gazlari 10–15 sm da shilinish, qontalash, yorilish.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -621,7 +639,7 @@
           "uncertain": false
         },
         {
-          "text": "Termik ta’sir: o‘q otish alangasi 3–10 sm masofada kiyim, teri va sochni kuydirishi mumkin. Alanga yonib ulgurmagan porox zarrachalarining havo kislorodi bilan portlashidan hosil bo‘ladi.",
+          "text": "Termik ta’sir: o‘q otish alangasi 3–10 sm masofada kiyim, teri va sochni kuydirishi mumkin; alanga yonmagan porox zarrachalarining portlashidan hosil bo‘ladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -646,7 +664,7 @@
       "title": "Tezkor savol 2: shikastlovchi omillar",
       "bullets": [
         {
-          "text": "Savol: snaryad energiyasi bir necha ming joul bo‘lsa, qanday ta’sir bo‘ladi? Javob: yorma. Yara o‘qdan bir necha barobar katta, chetlari notekis, radial yoriqli.",
+          "text": "Savol: energiya bir necha ming joul bo‘lsa, qanday ta’sir? Javob: yorma. Yara o‘qdan bir necha barobar katta, chetlari notekis, radial yoriqli.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -717,31 +735,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Distansiya va masofa farqi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Distansiya",
-          "Masofa"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Distansiya",
+            "items": [
+              "Belgilar majmui",
+              "Tirab, yaqin, yaqin bo‘lmagan",
+              "Kiyim va tanadagi xos belgilar"
+            ]
+          },
+          {
+            "title": "Masofa",
+            "items": [
+              "Stvol uchi–nishon oralig‘i",
+              "Uzunlik birligida o‘lchanadi",
+              "Eksperimental o‘q uzish"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Mohiyati",
-            "Belgilar majmui",
-            "Stvol uchi–nishon oralig‘i"
-          ],
-          [
-            "Turlari",
-            "Tirab, yaqin, yaqin bo‘lmagan",
-            "Uzunlik birligida o‘lchanadi"
-          ],
-          [
-            "Aniqlash",
-            "Kiyim va tanadagi xos belgilar",
-            "Eksperimental o‘q uzish"
-          ]
-        ]
+        "caption": "Distansiya va masofa farqi"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega masofani faqat jarohatga qarab aniq aytib bo‘lmaydi? 2) Eksperimentda qanday ob’ektlar tanlanadi? Doskada chizing: ikki xil qurol uchun bir xil distansiyaning turli masofalarini ko‘rsating (A ≠ B). Tipik xato: ‘distansiya’ va ‘masofa’ so‘zlarini sinonim sifatida ishlatish."
     },
@@ -777,27 +790,30 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Tirab otish turlari",
-        "nodes": [],
-        "header": [
-          "Tur",
-          "Asosiy belgi"
+        "kind": "tree",
+        "root": "Tirab otish turlari",
+        "children": [
+          {
+            "label": "To‘liq germetik",
+            "items": [
+              "Stvol uchi shaklidagi bosma iz"
+            ]
+          },
+          {
+            "label": "To‘liq tirab otish",
+            "items": [
+              "Yara chetlari ko‘chgan, yoriqlar"
+            ]
+          },
+          {
+            "label": "Qiyalab tirab otish",
+            "items": [
+              "Zarrachalar “tilsimon”",
+              "Yoriq bir burchakda"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "To‘liq germetik",
-            "Stvol uchi shaklidagi bosma iz (shtansmarka)"
-          ],
-          [
-            "To‘liq tirab otish",
-            "Yara chetlari ko‘chgan, yoriqlar bor"
-          ],
-          [
-            "Qiyalab tirab otish",
-            "Zarrachalar “tilsimon”, yoriq bir burchakda"
-          ]
-        ]
+        "caption": "Tirab otishning uch turi"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: nega germetik tirab otishda terida stvol uchiga mos iz qoladi? Qiyalab otishda yoriqlar nega faqat bir tomonda? Doskada: uch turdagi kirish teshigi sxemasini chizdiring. Tipik xato: shtansmarkani har qanday tirab otishda bo‘ladi deb o‘ylash; u faqat to‘liq germetik tirab otishda hosil bo‘ladi."
     },
@@ -849,7 +865,7 @@
           ],
           [
             "2-zona",
-            "Porox gazi izi yo‘q; qurum, porox, metall",
+            "Gaz izi yo‘q; qurum, porox, metall",
             "Ko‘p qurolda 25–35 sm"
           ],
           [
@@ -936,36 +952,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Vinogradov fenomeni va yaqin distansiya",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Yaqin distansiya",
-          "Vinogradov"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Yaqin distansiya",
+            "items": [
+              "Tashqi qavat kiyimida qurum bor",
+              "Kiyimning tashqi yuzasida",
+              "Qurum ko‘p",
+              "Markazdan chetga kamayadi"
+            ]
+          },
+          {
+            "title": "Vinogradov fenomeni",
+            "items": [
+              "Tashqi qavatda qurum yo‘q",
+              "Ichki qavat va tanada, teshik atrofi",
+              "Qurum ancha oz",
+              "Chekkaga qarab ortadi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Tashqi qavat kiyimida qurum",
-            "Jarohat atrofida bo‘ladi",
-            "Bo‘lmaydi"
-          ],
-          [
-            "Qurum joyi",
-            "Kiyimning tashqi yuzasi",
-            "Ichki qavat va tana, teshik atrofi"
-          ],
-          [
-            "Qurum miqdori",
-            "Ko‘p",
-            "Ancha oz"
-          ],
-          [
-            "Intensivlik",
-            "Markazdan chetga kamayadi",
-            "Chekkaga qarab ortadi"
-          ]
-        ]
+        "caption": "Vinogradov fenomeni"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega o‘q ortidan qurum nishongacha yetib boradi (o‘q ortida bosimi past bo‘shliq hosil bo‘ladi)? 2) Qaysi shartlar buzilsa fenomen rivojlanmaydi? Doskada: o‘q, uning ortidagi bo‘shliq va ikki qavat kiyim sxemasini chizdiring, qurum joylarini belgilang. Tipik xato: talabalar qurum topilgan hamma holatni yaqin distansiya deb hisoblaydi; qurum qaysi qavatda ekanini ko‘rsatish kerak."
     },
@@ -1044,17 +1052,30 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Zarb ta’siri mexanizmi",
-        "nodes": [
-          "Kichik yuzaga kuchli zarb",
-          "Siqilish to‘lqini yon tomonga",
-          "Musbat/manfiy bosim fazalari",
-          "Vaqtincha bo‘shliq pulsatsiyasi",
-          "Yara devorida uch zona"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Kuchli zarb",
+            "text": "Kichik yuzaga kuchli zarb"
+          },
+          {
+            "title": "2. Siqilish to‘lqini",
+            "text": "Yon tomonga tarqaladi"
+          },
+          {
+            "title": "3. Bosim fazalari",
+            "text": "Musbat va manfiy bosim"
+          },
+          {
+            "title": "4. Bo‘shliq",
+            "text": "Vaqtincha bo‘shliq pulsatsiyasi"
+          },
+          {
+            "title": "5. Uch zona",
+            "text": "Kanal, lat yeyish, chayqalish"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Zarb ta’siri mexanizmi"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega o‘q tegmagan to‘qimada ham o‘zgarishlar bo‘ladi? 2) Ritmik bosim fazalari o‘qning chuqurroq kirishiga qanday sharoit yaratadi? Doskada: yara kanalini va uning atrofidagi uch zonani konsentrik chiziqlar bilan chizdiring. Tipik xato: faqat yara kanalini jarohat deb hisoblash, lat yeyish va chayqalish zonalarini unutish."
     },
@@ -1071,7 +1092,7 @@
           "uncertain": false
         },
         {
-          "text": "Ko‘r yarada chiqish teshigi bo‘lmaydi, snaryad kanal oxirida qoladi. Yalama jarohatda o‘q tanaga to‘liq kirmaydi: uzunchoq shilinma yoki ariqchasimon yara hosil bo‘ladi.",
+          "text": "Ko‘r yarada chiqish teshigi bo‘lmaydi, snaryad kanal oxirida qoladi. Yalama jarohatda o‘q to‘liq kirmaydi: uzunchoq shilinma yoki ariqchasimon yara.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1133,36 +1154,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Kirish va chiqish teshigi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Kirish",
-          "Chiqish"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Kirish teshigi",
+            "items": [
+              "Dumaloq, oval",
+              "To‘qima defekti ko‘pincha bo‘ladi",
+              "Chetlari tekis, ichkariga qayrilgan",
+              "Shilinish va ifloslanish hoshiyasi bor"
+            ]
+          },
+          {
+            "title": "Chiqish teshigi",
+            "items": [
+              "Yoriqsimon, yoysimon, yulduzsimon",
+              "Defekt kamdan kam bo‘ladi",
+              "Chetlari notekis, tashqariga qayrilgan",
+              "Hoshiyalar odatda yo‘q"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Shakli",
-            "Dumaloq, oval",
-            "Yoriqsimon, yoysimon, yulduzsimon"
-          ],
-          [
-            "To‘qima defekti",
-            "Ko‘pincha bo‘ladi",
-            "Kamdan kam hollarda bo‘ladi"
-          ],
-          [
-            "Chetlari",
-            "Nisbatan tekis, ichkariga qayrilgan",
-            "Notekis, tashqariga qayrilgan"
-          ],
-          [
-            "Hoshiyalar",
-            "Shilinish va ifloslanish bor",
-            "Odatda yo‘q"
-          ]
-        ]
+        "caption": "Kirish va chiqish farqi"
       },
       "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Nima uchun chiqish teshigi chetlari tashqariga qayriladi? 2) Qaysi belgi bo‘yicha yara kanali yo‘nalishi taxmin qilinadi? Doskada: kirish va chiqish teshigining yon kesimini chizdiring (to‘qima defekti konusi uchi qaysi tomonga qaraydi). Tipik xato: yulduzsimon yarani avtomatik kirish teshigi deb hisoblash; u chiqish uchun xos. Eslab qolish: kirish – tekis va ichkariga, chiqish – notekis va tashqariga."
     },
@@ -1179,7 +1192,7 @@
           "uncertain": false
         },
         {
-          "text": "O‘q yuzasidagi qurum va moy teri chetida ifloslanish hoshiyasini hosil qiladi. Ikki hoshiya ustma-ust joylashadi; ular 1865 yilda N.I.Pirogov kitobida keltirilgan.",
+          "text": "O‘q yuzasidagi qurum va moy teri chetida ifloslanish hoshiyasini hosil qiladi. Ikki hoshiya ustma-ust joylashadi; Pirogov kitobida (1865) keltirilgan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1348,7 +1361,7 @@
           "uncertain": false
         },
         {
-          "text": "Pnevmatik qurol o‘qi siqilgan havo bilan uchadi va 30-50 m ga yetadi. Qo‘shimcha omil izi bo‘lmaydi, yara ko‘r bo‘ladi; ba’zan og‘ir jarohat o‘limga olib keladi.",
+          "text": "Pnevmatik qurol o‘qi siqilgan havo bilan uchadi va 30-50 m ga yetadi. Qo‘shimcha omil izi yo‘q, yara ko‘r; ba’zan og‘ir jarohat o‘limga olib keladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1364,7 +1377,7 @@
       "title": "O‘lim hollarida ekspertiza savollari",
       "bullets": [
         {
-          "text": "Savollar: jarohat o‘q otar quroldan yetkazilganmi, qanday qurol va snaryaddan? Otish distansiyasi va masofasi, kirish-chiqish teshiklari, yara kanali yo‘nalishi aniqlanadi.",
+          "text": "Savollar: jarohat o‘q otar quroldan yetkazilganmi, qanday qurol va snaryaddan? Distansiya, masofa, kirish-chiqish teshiklari, yara kanali yo‘nalishi aniqlanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1582,38 +1595,116 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Portlovchi moddalar guruhlari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Xususiyat",
-          "Misol"
+        "kind": "tree",
+        "root": "Portlovchi moddalar",
+        "children": [
+          {
+            "label": "Birlamchi (initsial)",
+            "items": [
+              "Juda sezgir; kapsyul, detonator",
+              "Simob sianid"
+            ]
+          },
+          {
+            "label": "Ikkilamchi (brizant)",
+            "items": [
+              "Detonatsiya ta’sirida qo‘zg‘aladi",
+              "Trotil, ammonal"
+            ]
+          },
+          {
+            "label": "Tarqatuvchi",
+            "items": [
+              "Yonib parchalanadi: porox"
+            ]
+          },
+          {
+            "label": "Pirotexnik tarkib",
+            "items": [
+              "Oksidlovchi va yonilg‘i aralashmasi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Birlamchi (initsial)",
-            "Juda sezgir; boshqalarni qo‘zg‘atadi",
-            "Simob sianid, qo‘rg‘oshin trinitrorezorsinat"
-          ],
-          [
-            "Ikkilamchi (brizant)",
-            "Detonatsiya ta’sirida qo‘zg‘aladi",
-            "Trotil, ammonal"
-          ],
-          [
-            "Tarqatuvchi",
-            "Detonatsiyasiz, yonib parchalanadi",
-            "Porox"
-          ],
-          [
-            "Pirotexnik tarkib",
-            "Oksidlovchi va yonilg‘i aralashmasi",
-            "Yorituvchi, yondiruvchi signal raketalari"
-          ]
-        ]
+        "caption": "Moddalar guruhlari"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega porox detonatsiyaga uchramaydi va patronda ishlatiladi? 2) Kapsyulda nega aynan sezgir modda kerak? Doskada chizish: birlamchi → ikkilamchi zanjirini (detonator → asosiy zaryad) sxemada ko‘rsating. Tipik xato: poroxni brizant modda deb hisoblash."
+    },
+    {
+      "title": "Portlash: ta’sir turlari (Popov)",
+      "bullets": [
+        {
+          "text": "Portlash omillari mexanik, termik, kimyoviy va baroakustik shikast beradi (V.L.Popov bo‘yicha jadval).",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "100"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Portlash gazlarining mexanik ta’siri: teri va teri ostida yorma, lat yara, qontalash; termik ta’siri: teri va soch kuyishi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "100"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kimyoviy ta’sirda karboksigemoglobin hosil bo‘ladi; portlovchi modda zarralari asosan yuzaki murakkab (mexanik, termik, kimyoviy) ta’sir qiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "100"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Baroakustik travma asosan atrof-muhit zarb to‘lqinidan: quloq nog‘ora pardasi va o‘pka shikastlanishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "101"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Portlash ta’sir turlari",
+        "children": [
+          {
+            "label": "Mexanik",
+            "items": [
+              "Gaz, zarralar, zarb to‘lqini",
+              "Moslama bo‘laklari, snaryadlar"
+            ]
+          },
+          {
+            "label": "Termik",
+            "items": [
+              "Gaz, zarralar",
+              "Kiyim va jismlar yonishi"
+            ]
+          },
+          {
+            "label": "Kimyoviy",
+            "items": [
+              "Gaz, zarralar",
+              "Maxsus kimyoviy moddalar"
+            ]
+          },
+          {
+            "label": "Baroakustik",
+            "items": [
+              "Portlash gazlari",
+              "Zarb to‘lqini"
+            ]
+          }
+        ],
+        "caption": "Jadval 4.5 (Popov, 1999)"
+      },
+      "teacher_notes": "Har omil bir necha turdagi shikast berishi mumkin."
     },
     {
       "title": "Portlashning shikastlovchi omillari va ta’siri",
@@ -1647,19 +1738,109 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Beshta shikastlovchi omil",
-        "nodes": [
-          "Detonatsiya mahsulotlari",
-          "Atrof-muhit zarb to‘lqini",
-          "Portlovchi moslama bo‘laklari",
-          "Maxsus shikastlovchi vositalar",
-          "Ikkilamchi snaryadlar"
+        "kind": "tree",
+        "root": "Portlash omillari",
+        "children": [
+          {
+            "label": "Detonatsiya mahsulotlari"
+          },
+          {
+            "label": "Atrof-muhit zarb to‘lqini",
+            "items": [
+              "Yassi o‘tmas jism kabi"
+            ]
+          },
+          {
+            "label": "Moslama bo‘laklari",
+            "items": [
+              "Tezlik bir necha ming m/sek"
+            ]
+          },
+          {
+            "label": "Maxsus vositalar",
+            "items": [
+              "Mix, bolt, yonilg‘i, toksik"
+            ]
+          },
+          {
+            "label": "Ikkilamchi snaryadlar"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Beshta omil"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Portlash markaziga qaragan va qarama-qarshi tana yuzasida qanday jarohatlar kutiladi? 2) Ikkilamchi snaryad nima? Doskada chizish: beshta omilni to‘rt ta’sir turiga (mexanik, termik, kimyoviy, baroakustik) o‘q bilan bog‘lang. Tipik xato: ikkilamchi snaryadni portlovchi moslamaning o‘z bo‘lagi deb o‘ylash."
+    },
+    {
+      "title": "Zarb to‘lqini, bo‘laklar va snaryadlar",
+      "bullets": [
+        {
+          "text": "Zarb to‘lqini cheklanmagan yassi o‘tmas jism kabi ta’sir etadi: portlash markazi tomonida mexanik jarohat, qarama-qarshi yuzada urilish jarohati.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "100"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Moslama bo‘laklarining boshlang‘ich tezligi bir necha ming m/sek gacha: shilinma, qontalash, yara, suyak sinishi, ba’zan tana qismlari ajralishi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "100-101"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ikkilamchi snaryadlar asosan mexanik, bo‘laklarga nisbatan yengilroq jarohat beradi; ikkilamchi alangalanish termik shikast keltiradi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "101"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sintetik material va qoplamalar yonishi termik jarohatdan tashqari toksik moddalar bilan zaharlanishga olib kelishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "101"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Zarb to‘lqini",
+            "items": [
+              "Yassi o‘tmas jism kabi",
+              "Markaz tomonida mexanik jarohat",
+              "Qarama-qarshi yuzada urilish"
+            ]
+          },
+          {
+            "title": "Moslama bo‘laklari",
+            "items": [
+              "Tezlik bir necha ming m/sek",
+              "Shilinma, yara, sinish",
+              "Tana qismlari ajralishi mumkin"
+            ]
+          },
+          {
+            "title": "Ikkilamchi snaryadlar",
+            "items": [
+              "Asosan mexanik, yengilroq",
+              "Alangalanish: termik shikast",
+              "Yonish: toksik moddalar"
+            ]
+          }
+        ],
+        "caption": "Uch omilning ta’siri"
+      },
+      "teacher_notes": "Jarohat ko‘lami portlashdagi bosimga bog‘liq."
     },
     {
       "title": "Portlash distansiyalari",
@@ -1693,31 +1874,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Distansiya va omillar",
-        "nodes": [],
-        "header": [
-          "Distansiya",
-          "Ustuvor omillar"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Kontakt",
+            "text": "Detonatsiya mahsulotlari, bo‘laklar"
+          },
+          {
+            "title": "2. Yaqin",
+            "text": "Gazlar, bo‘laklar, zarb to‘lqini"
+          },
+          {
+            "title": "3. Nisbatan yaqin",
+            "text": "Zarb to‘lqini, bo‘laklar, ikkilamchi snaryad"
+          },
+          {
+            "title": "4. Yaqin bo‘lmagan",
+            "text": "Bo‘laklar, ikkilamchi snaryadlar"
+          }
         ],
-        "rows": [
-          [
-            "Kontakt",
-            "Detonatsiya mahsulotlari, moslama bo‘laklari"
-          ],
-          [
-            "Yaqin",
-            "Gazlar, bo‘laklar, zarb to‘lqini"
-          ],
-          [
-            "Nisbatan yaqin",
-            "Zarb to‘lqini, bo‘laklar, ikkilamchi snaryad"
-          ],
-          [
-            "Yaqin bo‘lmagan",
-            "Moslama bo‘laklari, ikkilamchi snaryadlar"
-          ]
-        ]
+        "caption": "Portlash distansiyalari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nima uchun kontaktda zarb to‘lqini asosiy omillar qatorida ko‘rsatilmagan? 2) Distansiya o‘sgani sari omillar qanday kamayadi? Doskada: portlash markazidan chiqqan to‘rtta konsentrik doira chizib, har biriga omillarni yozing. Tipik xato: yaqin va nisbatan yaqin distansiyani aralashtirib yuborish."
     },
@@ -1763,6 +1939,80 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Ballon va bug‘ qozoni portlashidagi jarohat turlarini solishtiring. 2) Zaryadsiz portlashda ekspert qaysi omillarni so‘rab aniqlaydi? Doskada: uch ustunli sxema (ballon, bug‘ qozoni, gaz/un kukuni) va yetakchi jarohat turini yozdirish. Tipik xato: zaryadsiz portlashda ham portlovchi modda gazlari ta’sir qiladi deb o‘ylash."
+    },
+    {
+      "title": "Portlash ekspertizasi va vrach vazifasi",
+      "bullets": [
+        {
+          "text": "Portlash ekspertizasida jarohat turi va xususiyatidan tashqari portlovchi modda va moslama xususiyati, portlash distansiyasi aniqlanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "102"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zaryadsiz moslama portlashida jarohat moslama turi, oraliq masofa va atrofdagi jismlarga bog‘liq.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "101"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gaz ballonida asosan ballon devori bo‘laklaridan; bug‘ qozonida termik; gaz, ko‘mir, un kukunida termik va zarb to‘lqinidan mexanik jarohat.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "101-102"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Vrach tan jarohatlarini to‘liq tekshirib hujjatlaydi, kiyim va tanadagi yot jismlarni qisqa muddatda huquqni muhofaza idoralariga topshiradi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "102"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Portlash ekspertizasi",
+        "children": [
+          {
+            "label": "Jarohat",
+            "items": [
+              "Turi va xususiyati"
+            ]
+          },
+          {
+            "label": "Modda va moslama",
+            "items": [
+              "Xususiyatini aniqlash"
+            ]
+          },
+          {
+            "label": "Distansiya",
+            "items": [
+              "Portlash distansiyasi"
+            ]
+          },
+          {
+            "label": "Vrach vazifasi",
+            "items": [
+              "To‘liq hujjatlash",
+              "Yot jismlarni topshirish"
+            ]
+          }
+        ],
+        "caption": "Aniqlanadigan masalalar"
+      },
+      "teacher_notes": "Zaryadsiz moslamalar: gaz ballon, bug‘ qozon, gaz, ko‘mir va un kukuni portlashi."
     },
     {
       "title": "Xulosa va nazorat savollari",
@@ -2101,11 +2351,11 @@
       "question": "Portlashdan keyin jabrlanganda jarohatlar faqat portlovchi moslama bo‘laklari va ikkilamchi snaryadlardan etkazilgan. Bu portlashning qaysi distansiyasiga mos keladi?",
       "options": [
         "Portlovchi moslamaning tana bilan kontakti distansiyasiga",
-        "Yaqin bo‘lmagan distansiyaga",
+        "Nisbatan yaqin distansiyaga",
         "Yaqin distansiyaga",
-        "Nisbatan yaqin distansiyaga"
+        "Yaqin bo‘lmagan distansiyaga"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Yaqin bo‘lmagan distansiyada portlovchi moslama bo‘laklari va ikkilamchi snaryadlar asosiy shikastlovchi omil bo‘ladi. Nisbatan yaqin distansiyada bularga atrof-muhit zarb to‘lqini ham qo‘shiladi.",
       "source": {
         "author": "G‘iyosov Z.A.",

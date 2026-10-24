@@ -14,7 +14,7 @@
           "uncertain": false
         },
         {
-          "text": "Tan jarohatlari bo‘yicha ekspertiza O‘zbekiston Respublikasi Jinoyat kodeksi va “Tan jarohatlarining og‘irlik darajasini sud-tibbiy aniqlash qoidalari”ga ko‘ra o‘tkaziladi.",
+          "text": "Tan jarohatlari ekspertizasi Jinoyat kodeksi va “Tan jarohatlarining og‘irlik darajasini sud-tibbiy aniqlash qoidalari”ga ko‘ra o‘tkaziladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -76,31 +76,40 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ekspertiza turlari",
-        "nodes": [],
-        "header": [
-          "Turi",
-          "Maqsad"
+        "kind": "tree",
+        "root": "Tirik shaxslar ekspertizasi",
+        "children": [
+          {
+            "label": "Tan jarohatlari",
+            "items": [
+              "Xarakteri",
+              "Og‘irlik darajasi"
+            ]
+          },
+          {
+            "label": "Jinsiy holatlar",
+            "items": [
+              "Jins, bokiralik",
+              "Homiladorlik, tug‘ruq, abort"
+            ]
+          },
+          {
+            "label": "Jinsiy jinoyatlar",
+            "items": [
+              "Zo‘rlash",
+              "Besoqolbozlik, fahsh harakatlari"
+            ]
+          },
+          {
+            "label": "Salomatlik, yosh",
+            "items": [
+              "Simulyasiya, a’zobuzarlik",
+              "Yoshni aniqlash"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Tan jarohatlari",
-            "Xarakteri va og‘irlik darajasi"
-          ],
-          [
-            "Jinsiy holatlar",
-            "Jins, bokiralik, homiladorlik, tug‘ruq, abort"
-          ],
-          [
-            "Jinsiy jinoyatlar",
-            "Zo‘rlash, besoqolbozlik, fahsh harakatlari"
-          ],
-          [
-            "Salomatlik, yosh",
-            "Simulyasiya, a’zobuzarlik, yoshni aniqlash"
-          ]
-        ]
+        "caption": "Ekspertiza turlari",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Jinsiy holat va jinsiy jinoyat ekspertizasi qanday farqlanadi? 2) Simulyasiya va aggravatsiya nimasi bilan farq qiladi? Doskada: jadvaldagi 4 turni ro‘yxat qilib, har biriga bittadan misol yozdiring. Tipik xato: bokiralikni aniqlashni jinsiy jinoyat ekspertizasi bilan aralashtirish."
     },
@@ -144,7 +153,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Ekspertiza joylari",
+        "children": [
+          {
+            "label": "Sud-tibbiy muassasa",
+            "items": [
+              "Ambulatoriya"
+            ]
+          },
+          {
+            "label": "Bo‘limlar",
+            "items": [
+              "Tuman",
+              "Shahar",
+              "Tumanlararo"
+            ]
+          },
+          {
+            "label": "Davolash muassasalari",
+            "items": [
+              "Zarur sharoit bo‘lsa",
+              "Bemor sog‘lig‘i imkon bersa"
+            ]
+          }
+        ],
+        "caption": "Joylar",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: 1) Ekspertiza nega ba’zan davolash muassasasida o‘tkaziladi? 2) Bemor ko‘rigida qaysi shaxslar qatnashadi? Doskada: ekspertiza o‘tkaziladigan joylarning sxemasini (ambulatoriya, bo‘limlar, davolash muassasasi) chizdiring. Tipik xato: ekspertiza faqat shifoxonada o‘tkaziladi deb o‘ylash."
     },
     {
@@ -179,17 +216,31 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Ekspertiza hal etadigan masalalar",
-        "nodes": [
-          "Jarohat turi va joylashuvi",
-          "Qurol yoki vosita turi",
-          "Hosil bo‘lish mexanizmi",
-          "Yetkazilish muddati",
-          "Og‘irlik darajasi + belgi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Turi, joylashuvi",
+            "text": "Jarohat turi va tanadagi o‘rni"
+          },
+          {
+            "title": "Qurol yoki vosita",
+            "text": "Qurol yoki vosita turi"
+          },
+          {
+            "title": "Mexanizm",
+            "text": "Hosil bo‘lish mexanizmi"
+          },
+          {
+            "title": "Muddat",
+            "text": "Yetkazilish muddati"
+          },
+          {
+            "title": "Og‘irlik darajasi",
+            "text": "Tasniflovchi belgi bilan"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Ekspertiza hal etadigan masalalar",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Nima uchun jarohat yetkazilish muddatini aniqlash muhim? 2) Mexanizm va qurol turi bir xil tushunchami? Doskada besh masalali zanjirni talabalar bilan birga chizing. Tipik xato: og‘irlik darajasini tasniflovchi belgisiz, faqat so‘z bilan yozish."
     },
@@ -268,36 +319,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Darajalar va mezonlar (turg‘un yo‘qotish)",
-        "nodes": [],
-        "header": [
-          "Daraja",
-          "Muddat",
-          "Yo‘qotilish"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Og‘ir",
+            "items": [
+              "Hayot uchun xavf va boshqalar",
+              "Turg‘un yo‘qotish: 33% dan kam emas"
+            ]
+          },
+          {
+            "title": "O‘rtacha og‘ir",
+            "items": [
+              "Sog‘liq 21 kundan ortiq buzilgan",
+              "Turg‘un yo‘qotish: 10–33%"
+            ]
+          },
+          {
+            "title": "Yengil",
+            "items": [
+              "Qisqa muddatli: 6–21 kun, 10% gacha",
+              "Oddiy: 6 kungacha, yo‘qotish yo‘q"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Og‘ir",
-            "Asosiy belgi: hayot uchun xavf va b.",
-            "33% dan kam bo‘lmagan"
-          ],
-          [
-            "O‘rtacha og‘ir",
-            "21 kundan ortiq",
-            "10% dan 33% gacha"
-          ],
-          [
-            "Yengil (qisqa muddatli)",
-            "6 kundan ortiq, 21 kundan oshmaydi",
-            "10% gacha"
-          ],
-          [
-            "Yengil",
-            "6 kungacha",
-            "Turg‘un yo‘qotish yo‘q"
-          ]
-        ]
+        "caption": "Darajalar va mezonlar",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 10 daqiqa. Muhokama: 1) Sog‘liq buzilishi 22 kun bo‘lsa, qaysi daraja? 2) Nima uchun klinik og‘irlik va sud-tibbiy daraja farq qilishi mumkin? Doskada jadvalni ko‘chirtiring. Tipik xato: o‘rtacha og‘ir uchun «21 kun va undan ortiq» deb yozish; to‘g‘risi — 21 kundan ortiq."
     },
@@ -323,7 +370,7 @@
           "uncertain": false
         },
         {
-          "text": "Og‘ir jarohatga yana kiradi: ko‘rish, so‘zlash, eshitish yoki a’zo funksiyasining to‘liq yo‘qotilishi, homiladorlikning uzilishi, ruhiy buzilish, tiklanmas badburushlik.",
+          "text": "Og‘ir jarohatga yana: ko‘rish, so‘zlash, eshitish yoki a’zo funksiyasining to‘liq yo‘qotilishi, homiladorlik uzilishi, ruhiy buzilish, tiklanmas badburushlik.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -341,7 +388,51 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Og‘ir tan jarohati (104)",
+        "children": [
+          {
+            "label": "Hayot uchun xavf",
+            "items": [
+              "Yetkazilish paytida xavfli"
+            ]
+          },
+          {
+            "label": "Mehnat qobiliyati",
+            "items": [
+              "33% dan kam bo‘lmagan turg‘un yo‘qotish"
+            ]
+          },
+          {
+            "label": "Funksiya yo‘qotilishi",
+            "items": [
+              "Ko‘rish, so‘zlash, eshitish",
+              "A’zo funksiyasi"
+            ]
+          },
+          {
+            "label": "Homila uzilishi",
+            "items": [
+              "Jarohat bilan bevosita bog‘liq"
+            ]
+          },
+          {
+            "label": "Ruhiy buzilish",
+            "items": [
+              "Jarohat oqibatida"
+            ]
+          },
+          {
+            "label": "Badburushlik",
+            "items": [
+              "Tiklanmas"
+            ]
+          }
+        ],
+        "caption": "104-modda belgilari",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega klinik og‘irlik bilan sud-tibbiy og‘irlik bir xil emas? 2) Hayot uchun xavf belgisi qaysi jarohatlarda uchraydi? Doskada: 104-moddaning 6 ta tasniflovchi belgisini ro‘yxat qilib chizing. Tipik xato: talaba “jarohatni davolab yuborilsa, og‘ir emas” deb o‘ylaydi; aslida tibbiy yordam hisobga olinmaydi."
     },
     {
@@ -530,7 +621,36 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Tibbiy mezonlar",
+        "children": [
+          {
+            "label": "Asosiy mezonlar",
+            "items": [
+              "Hayot uchun xavf",
+              "Sog‘liq buzilishi davomiyligi",
+              "Mehnat qobiliyati yo‘qotilishi"
+            ]
+          },
+          {
+            "label": "Qo‘shimcha mezonlar",
+            "items": [
+              "A’zo yoki funksiya yo‘qotilishi",
+              "Ruhiy buzilish",
+              "Homiladorlik uzilishi"
+            ]
+          },
+          {
+            "label": "Badburushlik",
+            "items": [
+              "Tananing tiklanmaydigan badburushligi"
+            ]
+          }
+        ],
+        "caption": "Jinoyat kodeksidan kelib chiqqan",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nima uchun mezonlar qonun bilan bog‘lanadi? 2) Talabalar ro‘yxatdan nechta mezonni xotiradan sanab bera oladi? Doskaga chizish: 7 ta mezonni ikki ustunga ajratib yozing (davomiylik/oqibat va a’zo/funksiya). Tipik xato: kasbiy mehnat qobiliyatini ham mezon deb o‘ylash (darslikda faqat umumiy mehnat qobiliyati olinadi)."
     },
     {
@@ -565,31 +685,25 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ikki xil baholash",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Klinik",
-          "Sud-tibbiy"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Klinik baho",
+            "items": [
+              "Shikastdagi bemor ahvolini baholaydi",
+              "Klinik mezonlar"
+            ]
+          },
+          {
+            "title": "Sud-tibbiy baho",
+            "items": [
+              "Jarohat og‘irlik darajasini baholaydi",
+              "Jinoyat kodeksiga asoslangan"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Nimani baholaydi",
-            "Shikastdagi bemor ahvolini",
-            "Jarohat og‘irlik darajasini"
-          ],
-          [
-            "Mezonlar",
-            "Klinik mezonlar",
-            "Jinoyat kodeksiga asoslangan"
-          ],
-          [
-            "Natija",
-            "Mos kelmasligi mumkin",
-            "Mos kelmasligi mumkin"
-          ]
-        ]
+        "caption": "Natijalar mos kelmasligi mumkin",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Shifokor tarixida “og‘ir ahvol” yozilgan bo‘lsa, ekspert uni avtomatik og‘ir tan jarohati deydimi? 2) Nega buni bilish pediatr uchun muhim? Doskaga chizish: ikki ustunli solishtirish jadvalini talabalar o‘zlari to‘ldirsin. Tipik xato: klinik ahvol og‘irligini to‘g‘ridan-to‘g‘ri huquqiy daraja deb qabul qilish."
     },
@@ -624,7 +738,7 @@
           "uncertain": false
         },
         {
-          "text": "Ko‘krak, qorin va qorinparda orti a’zolarining yopiq jarohatlari hamda yirik arteriyalar (aorta, uyqu, son, taqim va b.) va hamroh venalar jarohatlari ham kiradi.",
+          "text": "Ko‘krak, qorin va qorinparda orti a’zolarining yopiq jarohatlari; yirik arteriyalar (aorta, uyqu, son, taqim) va hamroh venalar jarohatlari ham kiradi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -633,7 +747,43 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Hayot uchun xavfli jarohatlar",
+        "children": [
+          {
+            "label": "Bo‘shliqqa o‘tuvchi yara",
+            "items": [
+              "Kalla",
+              "Ko‘krak",
+              "Qorin"
+            ]
+          },
+          {
+            "label": "Kalla va miya",
+            "items": [
+              "Kalla asosi, gumbazi sinishi",
+              "Miyaning og‘ir lat eyishi"
+            ]
+          },
+          {
+            "label": "Bo‘yin va orqa miya",
+            "items": [
+              "Bo‘yin umurtqasi sinishi, chiqishi",
+              "Orqa miya lat eyishi"
+            ]
+          },
+          {
+            "label": "Ichki a’zolar, tomirlar",
+            "items": [
+              "Yopiq jarohatlar",
+              "Yirik arteriyalar va venalar"
+            ]
+          }
+        ],
+        "caption": "Misollar",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nima uchun yopiq jarohat ham hayot uchun xavfli bo‘lishi mumkin? 2) Qaysi jarohatlar jarrohlik yordamisiz o‘limga olib kelishi mumkin? Doskada: tananing 4 sohasi (bosh, bo‘yin-orqa miya, ko‘krak-qorin, yirik tomirlar) bo‘yicha ro‘yxat chizdiring. Tipik xato: tibbiy yordam xavfni bartaraf etdi deb jarohatni xavfli emas deb baholash. Kitobga ko‘ra, yordam ko‘rsatilishi (279-bet) baholashda inobatga olinmaydi."
     },
     {
@@ -668,27 +818,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Hayot uchun xavfli kuyish yuzalari",
-        "nodes": [],
-        "header": [
-          "Daraja",
-          "Tana yuzasi"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "III-IV darajali",
+            "value": "> 10",
+            "unit": "% yuza"
+          },
+          {
+            "label": "III darajali",
+            "value": "> 15",
+            "unit": "% yuza"
+          },
+          {
+            "label": "II darajali",
+            "value": "> 20",
+            "unit": "% yuza"
+          }
         ],
-        "rows": [
-          [
-            "III-IV darajali",
-            "10% dan ortiq"
-          ],
-          [
-            "III darajali",
-            "15% dan ortiq"
-          ],
-          [
-            "II darajali",
-            "20% dan ortiq"
-          ]
-        ]
+        "caption": "Hayot uchun xavfli kuyish yuzalari",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nima uchun chuqur kuyishda chegara past? 2) Kuyish yuzasi qanday aniqlanadi? Doskada: 3 qatorli jadvalni talabalar bilan to‘ldiring. Tipik xato: raqamlarni darajalarga noto‘g‘ri moslash (III-IV — 10%, III — 15%, II — 20%). Jadvalni yodlash uchun darajani yuzaga bog‘lab takrorlang."
     },
@@ -732,7 +881,47 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Hayotga tahdid",
+        "children": [
+          {
+            "label": "Shok va koma",
+            "items": [
+              "III-IV darajali shok",
+              "II-III darajali koma"
+            ]
+          },
+          {
+            "label": "Qon yo‘qotish",
+            "items": [
+              "O‘tkir, ko‘p miqdorli"
+            ]
+          },
+          {
+            "label": "A’zo yetishmovchiligi",
+            "items": [
+              "Yurak-qon tomir, nafas",
+              "Jigar, buyrak, buyrak usti bezi"
+            ]
+          },
+          {
+            "label": "Yiringli-septik",
+            "items": [
+              "Sepsis, peritonit, flegmona"
+            ]
+          },
+          {
+            "label": "Qon aylanishi buzilishi",
+            "items": [
+              "Miyada og‘ir buzilish",
+              "Emboliya, infarkt, gangrena"
+            ]
+          }
+        ],
+        "caption": "Misollar",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Nima uchun shok va koma hayotga tahdid sanaladi? 2) Emboliya turlarini sanang (havo, gaz, yog‘, to‘qima, tromboemboliya). Doskada: jarohat → hayotga tahdid soluvchi holat → og‘ir tan jarohati zanjirini chizing. Tipik xato: tahdid va jarohat o‘rtasida bevosita bog‘liqlik shartini unutish; bu bog‘liq tasodifiy bo‘lmasligi kerak (279-bet)."
     },
     {
@@ -775,7 +964,17 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Jarohat yetkazilgan",
+          "Hayotga tahdid yuzaga kelgan",
+          "Tahdid jarohat bilan bevosita bog‘liq",
+          "Yordam tahdidni bartaraf etgan",
+          "Baho: hayot uchun xavfli"
+        ],
+        "caption": "Sababiy bog‘liqlik zanjiri"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega tibbiy yordam jarohat og‘irligini kamaytirmaydi? 2) Sababiy bog‘liqlik nima uchun muhim? Doskada chizish: jarohat → hayotga tahdid → og‘ir tan jarohati zanjirini chizing. Tipik xato: talaba davolanish natijasida tahdid yo‘qolgan bo‘lsa, jarohatni yengilroq deb baholaydi."
     },
     {
@@ -853,31 +1052,27 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Umumiy va kasbiy qobiliyat",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Umumiy",
-          "Kasbiy"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Umumiy qobiliyat",
+            "items": [
+              "O‘z-o‘ziga xizmat, oddiy ishlar",
+              "Og‘irlik baholashda hisobga olinadi",
+              "Tan jarohati og‘irligida"
+            ]
+          },
+          {
+            "title": "Kasbiy qobiliyat",
+            "items": [
+              "Muayyan kasbdagi faoliyat",
+              "Og‘irlikda hisobga olinmaydi",
+              "Fuqarolik ishlarida ziyonni qoplash"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Mazmuni",
-            "O‘z-o‘ziga xizmat, oddiy ishlar",
-            "Muayyan kasbdagi faoliyat"
-          ],
-          [
-            "Og‘irlikni baholash",
-            "Hisobga olinadi",
-            "Hisobga olinmaydi"
-          ],
-          [
-            "Qayerda ko‘riladi",
-            "Tan jarohati og‘irligida",
-            "Fuqarolik ishlarida ziyonni qoplash"
-          ]
-        ]
+        "caption": "Umumiy va kasbiy qobiliyat",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Pianinochi barmog‘ini jarohatlasa, qaysi qobiliyat baholanadi? 2) Kasbiy qobiliyat qayerda ko‘riladi? Doskada chizish: ikki ustunli solishtirma jadvalni o‘zi chizsin. Tipik xato: kasbiy qobiliyat yo‘qotilishini og‘irlik mezoni deb hisoblash."
     },
@@ -921,7 +1116,26 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Vaqtincha yo‘qotish",
+            "items": [
+              "Sog‘liq buzilgan kunlarda ifodalanadi"
+            ]
+          },
+          {
+            "title": "Turg‘un va doimiy",
+            "items": [
+              "Foizlarda ifodalanadi",
+              "Doimiyda daraja vaqt bilan o‘zgarmaydi"
+            ]
+          }
+        ],
+        "caption": "Qobiliyat yo‘qotilishi turlari",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Vaqtincha va turg‘un yo‘qotilish nima bilan o‘lchanadi? 2) Nega kasbiy mehnat qobiliyati og‘irlik darajasiga ta’sir qilmaydi? Doskada: ikki ustunli sodda chizma (vaqtincha – kunlar; turg‘un – foiz). Tipik xato: kasbiy va umumiy mehnat qobiliyatini aralashtirish. Qo‘shimcha: sog‘liq buzilishi 120 kundan ortiq bo‘lsa, u shartli ravishda turg‘un yo‘qotilish hisoblanadi, 4 oydan keyin qobiliyat tiklanishi yoki pasayishi mumkin (G‘iyosov Z.A., 280-bet)."
     },
     {
@@ -964,14 +1178,44 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Og‘ir",
+            "value": "≥ 33",
+            "unit": "%"
+          },
+          {
+            "label": "O‘rtacha og‘ir",
+            "value": "10–33",
+            "unit": "%"
+          },
+          {
+            "label": "Yengil (qisqa muddatli)",
+            "value": "≤ 10",
+            "unit": "%"
+          }
+        ],
+        "caption": "Turg‘un yo‘qotish chegaralari",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega ayrim suyak sinishlari ro‘yxatda real oqibatga qaramay og‘ir deb olinadi? 2) Qachon mehnat ekspertizasi mutaxassisi kerak bo‘ladi? Doskada: 10% va 33% chegaralari bilan sonlar o‘qini chizing. Tipik xato: 33% dan kam bo‘lmagan qismni ‘33% dan kam’ deb noto‘g‘ri o‘qish. Ro‘yxatdagi qo‘shimcha jarohatlar: bilak suyaklarining sinishi-chiqishi, ikki va undan ortiq qo‘shni umurtqaning kompression sinishi."
     },
     {
       "title": "Sog‘liq buzilishi davomiyligi",
       "bullets": [
         {
-          "text": "Bu eng ko‘p qo‘llaniladigan mezon bo‘lib, ob’ektiv ma’lumotlar asosida kunlarda belgilanadi. 6 kungacha – yengil, 6–21 kun – qisqa muddatli yengil, 21 kundan ortiq – o‘rtacha og‘ir.",
+          "text": "Bu eng ko‘p qo‘llaniladigan mezon bo‘lib, ob’ektiv ma’lumotlar asosida kunlarda belgilanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "280-281"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "6 kungacha – yengil, 6–21 kun – qisqa muddatli yengil, 21 kundan ortiq – o‘rtacha og‘ir.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1042,31 +1286,31 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Kunlar va og‘irlik darajasi",
-        "nodes": [],
-        "header": [
-          "Muddat",
-          "Baho"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Yengil",
+            "value": "≤ 6",
+            "unit": "kun"
+          },
+          {
+            "label": "Qisqa muddatli yengil",
+            "value": "6–21",
+            "unit": "kun"
+          },
+          {
+            "label": "O‘rtacha og‘ir",
+            "value": "> 21",
+            "unit": "kun"
+          },
+          {
+            "label": "Shartli turg‘un",
+            "value": "> 120",
+            "unit": "kun"
+          }
         ],
-        "rows": [
-          [
-            "6 kungacha",
-            "Yengil"
-          ],
-          [
-            "6 kundan ortiq, 21 kungacha",
-            "Qisqa muddatli buzilishli yengil"
-          ],
-          [
-            "21 kundan ortiq",
-            "O‘rtacha og‘ir"
-          ],
-          [
-            "120 kundan ortiq",
-            "Shartli turg‘un yo‘qotish deyiladi"
-          ]
-        ]
+        "caption": "Kunlar va og‘irlik darajasi",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega davolanish muddati va buzilish davomiyligi bir xil emas? 2) Chegara kunlarda (6 va 21) qaysi daraja qo‘yiladi? Doskada: kun o‘qini chizib, 6, 21 va 120 kunlarni belgilang, har oraliqqa darajani yozing. Tipik xato: 21 kunning o‘zini o‘rtacha og‘ir deb olish; manbada 21 kundan ortiq bo‘lsa o‘rtacha og‘ir deyiladi."
     },
@@ -1367,7 +1611,16 @@
           "uncertain": false
         },
         {
-          "text": "Silliqlanmaydigan o‘zgarish vaqt o‘tishi yoki konservativ muolaja bilan yo‘qolmaydi. Uni bartaraf etish uchun jarrohlik (masalan, plastik operatsiya) kerak bo‘ladi.",
+          "text": "Silliqlanmaydigan o‘zgarish vaqt o‘tishi yoki konservativ muolaja bilan yo‘qolmaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "283"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Uni bartaraf etish uchun jarrohlik (masalan, plastik operatsiya) kerak bo‘ladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1420,31 +1673,27 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Mezonlarni qo‘llash tartibi",
-        "nodes": [],
-        "header": [
-          "Holat",
-          "Baholash"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Bitta mezon",
+            "text": "Shu mezon yetarli"
+          },
+          {
+            "title": "Bir nechta mezon",
+            "text": "Og‘irroq darajali mezon olinadi"
+          },
+          {
+            "title": "O‘zaro og‘irlashtirgan",
+            "text": "Majmui uchun umumiy daraja"
+          },
+          {
+            "title": "Turli muddatda",
+            "text": "Har biri alohida baholanadi"
+          }
         ],
-        "rows": [
-          [
-            "Bitta mezon mavjud",
-            "Shu mezon yetarli"
-          ],
-          [
-            "Bir nechta mezon mavjud",
-            "Og‘irroq darajali mezon olinadi"
-          ],
-          [
-            "Bir vaqtda, o‘zaro og‘irlashtirgan",
-            "Majmui uchun umumiy daraja"
-          ],
-          [
-            "Turli muddatdagi jarohatlar",
-            "Har biri alohida baholanadi"
-          ]
-        ]
+        "caption": "Mezonlarni qo‘llash tartibi",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: nega bir vaqtdagi jarohatlar majmui baholanadi, turli muddatdagilari esa alohida? Mezonlar to‘qnashsa, qaysi biri tanlanadi? Doskada chizish: jadvalni talabalar bilan birga to‘ldiring. Tipik xato: har bir jarohatni doim alohida baholash yoki yengil mezonni tanlash."
     },
@@ -1538,7 +1787,7 @@
       "title": "Ekspertiza o‘tkazishning huquqiy asoslari",
       "bullets": [
         {
-          "text": "Tirik shaxslar ekspertizasi Jinoyat, Jinoyat-protsessual, Fuqarolik, Fuqarolik protsessual va Ma’muriy javobgarlik kodekslari talablariga rioya qilib o‘tkaziladi.",
+          "text": "Tirik shaxslar ekspertizasi Jinoyat, Jinoyat-protsessual, Fuqarolik, Fuqarolik protsessual va Ma’muriy javobgarlik kodekslariga rioya qilib o‘tkaziladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1565,7 +1814,7 @@
           "uncertain": false
         },
         {
-          "text": "Shu sababli tirik shaxslar ekspertizasining har bir turi o‘ziga xos xususiyatga ega, ammo umumiy algoritm mavjud: hodisa tafsilotlari va tibbiy hujjatlarni o‘rganishdan boshlanadi.",
+          "text": "Shu sababli har bir tur o‘ziga xos; umumiy algoritm bor: hodisa tafsilotlari va tibbiy hujjatlarni o‘rganishdan boshlanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1574,7 +1823,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Huquqiy asoslar",
+        "children": [
+          {
+            "label": "Kodekslar",
+            "items": [
+              "Jinoyat, Jinoyat-protsessual",
+              "Fuqarolik, Fuqarolik protsessual",
+              "Ma’muriy javobgarlik"
+            ]
+          },
+          {
+            "label": "Qonunlar",
+            "items": [
+              "Fuqarolar sog‘lig‘ini saqlash",
+              "Sud ekspertizasi to‘g‘risida"
+            ]
+          },
+          {
+            "label": "Yo‘riqnoma, qoidalar",
+            "items": [
+              "Tartib va metodika"
+            ]
+          }
+        ],
+        "caption": "G‘iyosov, 299-bet",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega bitta qonun emas, bir nechta kodeks va qonun qo‘llaniladi? 2) Metodika nimaga qarab o‘zgaradi? Doskada chizing: markazda «ekspertiza», atrofida kodekslar, qonunlar va Yo‘riqnoma. Tipik xato: talabalar faqat Jinoyat kodeksini asos deb hisoblaydi, fuqarolik va ma’muriy ishlarni unutadi."
     },
     {
@@ -1609,17 +1886,35 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Ekspertiza bosqichlari",
-        "nodes": [
-          "1-2. Hodisa va hujjatlar",
-          "3. Shaxsning so‘rovi",
-          "4. Ko‘rik",
-          "5. Qo‘shimcha tekshiruv",
-          "6. Ekspert xulosasi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Hodisa tafsiloti",
+            "text": "Qaror yoki ajrim ma’lumotlari"
+          },
+          {
+            "title": "Tibbiy hujjatlar",
+            "text": "Asl nusxalar"
+          },
+          {
+            "title": "So‘rov",
+            "text": "Shaxsning so‘rovi"
+          },
+          {
+            "title": "Ko‘rik",
+            "text": "Shaxsni ko‘rikdan o‘tkazish"
+          },
+          {
+            "title": "Qo‘shimcha tekshiruv",
+            "text": "Laboratoriya, maslahat"
+          },
+          {
+            "title": "Ekspert xulosasi",
+            "text": "Yakuniy hujjat"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Olti bosqichli algoritm",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun hujjatlar ko‘rikdan oldin o‘rganiladi? 2) Qaysi bosqichda mutaxassis maslahati kerak bo‘ladi? Doskada: 6 bosqichni strelkalar bilan chizdiring. Tipik xato: talabalar so‘rovni ko‘rikdan keyin qo‘yadi yoki 5-bosqichni majburiy deb o‘ylaydi (u faqat zarurat hollarida o‘tkaziladi)."
     },
@@ -1713,7 +2008,7 @@
       "title": "Ko‘rikda ishtirok etuvchilar va davolanayotganlar ko‘rigi",
       "bullets": [
         {
-          "text": "Ekspertiza tayinlagan shaxs (tergovchi, surishtiruvchi) ko‘rikda qatnashishi mumkin. Faqat o‘zga jinsli shaxs yalang‘ochlanganda u ko‘rik xonasidan chiqib turishi shart.",
+          "text": "Ekspertiza tayinlagan shaxs ko‘rikda qatnashishi mumkin. Faqat o‘zga jinsli shaxs yalang‘ochlanganda u ko‘rik xonasidan chiqib turadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1731,7 +2026,7 @@
           "uncertain": false
         },
         {
-          "text": "Davolanayotgan bemor ko‘rigi faqat sog‘lig‘i ruxsat bersa o‘tkaziladi. Unda ekspertiza tayinlagan shaxs yoki vakili hamda bo‘lim mudiri yoki davolovchi vrach qatnashadi.",
+          "text": "Davolanayotgan bemor ko‘rigi faqat sog‘lig‘i ruxsat bersa o‘tkaziladi; unda tayinlagan shaxs yoki vakili va davolovchi vrach qatnashadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1774,7 +2069,7 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: sud-tibbiy baholash klinik baholash bilan bir xil emas. Maqsad va mezonlari farq qilgani uchun natijalari mos kelmasligi mumkin. Bir nechta mezon bo‘lsa, og‘irrog‘i olinadi.",
+          "text": "Diqqat: sud-tibbiy baho klinik baho bilan bir xil emas, natijalar mos kelmasligi mumkin. Bir nechta mezon bo‘lsa, og‘irrog‘i olinadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1800,12 +2095,12 @@
     {
       "question": "Jabrlanuvchi og‘ir ahvolda davolash muassasasida yotibdi, ekspertiza tayinlandi. Ko‘rik qayerda o‘tkazilishi mumkin?",
       "options": [
-        "Faqat murdaxona xonalarida o‘tkaziladi",
-        "Faqat sud majlisi zalida o‘tkaziladi",
         "Zarur sharoit bor davolash muassasasida o‘tkaziladi",
-        "Faqat tergov hibsxonasida o‘tkaziladi"
+        "Faqat tergov hibsxonasida o‘tkaziladi",
+        "Faqat murdaxona xonalarida o‘tkaziladi",
+        "Faqat sud majlisi zalida o‘tkaziladi"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "explanation": "Tirik shaxslar ekspertizasi odatda sud-tibbiy muassasalarning ambulatoriyasi va bo‘limlarida o‘tkaziladi. Ayrim hollarda zarur shart-sharoit mavjud bo‘lgan davolash muassasalarida ham o‘tkazilishi mumkin.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1816,12 +2111,12 @@
     {
       "question": "Tan jarohatlari bo‘yicha sud-tibbiy ekspertizada quyidagilardan qaysi biri hal etiladigan masalalar qatoriga kiradi?",
       "options": [
+        "Ayb shaklining huquqiy bahosi",
         "Jarohat yetkazish quroli yoki vositasi turi",
         "Aybdorga tayinlanadigan jazo turi",
-        "Guvohlar ko‘rsatmasining haqqoniyligi",
-        "Ayb shaklining huquqiy bahosi"
+        "Guvohlar ko‘rsatmasining haqqoniyligi"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Ekspertizada jarohatning turi va joylashuvi, jarohat yetkazish quroli yoki vositasi, hosil bo‘lish mexanizmi, yetkazilish muddati va og‘irlik darajasi aniqlanadi. Jazo, ayb va guvohlar ko‘rsatmasi ekspertning vazifasi emas.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1832,12 +2127,12 @@
     {
       "question": "Jabrlanuvchida sog‘liqning buzilishi 12 kun davom etdi, boshqa og‘irlashtiruvchi belgi yo‘q. Jarohat qanday baholanadi?",
       "options": [
-        "Og‘ir tan jarohati deb baholanadi",
         "O‘rtacha og‘ir deb baholanadi",
         "Oddiy yengil jarohat deb baholanadi",
-        "Qisqa muddatli yengil jarohat deb baholanadi"
+        "Qisqa muddatli yengil jarohat deb baholanadi",
+        "Og‘ir tan jarohati deb baholanadi"
       ],
-      "correct_index": 3,
+      "correct_index": 2,
       "explanation": "Sog‘liq olti kundan ortiq, ammo yigirma bir kundan ko‘p bo‘lmagan muddatga buzilsa, jarohat sog‘liqning qisqa muddatga buzilishiga olib kelgan yengil jarohat hisoblanadi (109-modda). Oddiy yengil jarohatda buzilish bo‘lmaydi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1848,12 +2143,12 @@
     {
       "question": "Jarohat oqibatida sog‘liq 25 kun buzildi, 104-moddadagi oqibatlar yo‘q. Jarohat qanday baholanadi?",
       "options": [
-        "Qisqa muddatli yengil jarohat",
-        "O‘rtacha og‘ir tan jarohati",
         "Og‘ir tan jarohati",
-        "Oddiy yengil tan jarohati"
+        "Oddiy yengil tan jarohati",
+        "Qisqa muddatli yengil jarohat",
+        "O‘rtacha og‘ir tan jarohati"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Sog‘liq yigirma bir kundan ortiq buzilsa va 104-moddadagi oqibatlar bo‘lmasa, jarohat o‘rtacha og‘ir tan jarohati hisoblanadi (105-modda).",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1864,12 +2159,12 @@
     {
       "question": "Jarohat yetkazilganda hayot uchun xavfli bo‘lgan, keyin tibbiy yordam bilan xavf bartaraf etildi. Jarohat qanday baholanadi?",
       "options": [
-        "Yengil tan jarohati",
-        "O‘rtacha og‘ir tan jarohati",
         "Og‘ir tan jarohati",
-        "Baholanmaydi, xavf bartaraf bo‘lgan"
+        "Baholanmaydi, xavf bartaraf bo‘lgan",
+        "Yengil tan jarohati",
+        "O‘rtacha og‘ir tan jarohati"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "explanation": "Yetkazilish paytida hayot uchun xavfli bo‘lgan jarohat og‘ir hisoblanadi (104-modda). Tibbiy yordam bilan xavfning bartaraf etilishi bu baholashda inobatga olinmaydi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1880,12 +2175,12 @@
     {
       "question": "Bemorda tananing 12% yuzasida III-IV darajali termik kuyish aniqlangan. Sud-tibbiy ekspertizada u qanday baholanadi?",
       "options": [
+        "Qisqa muddatli yengil jarohat deb baholanadi",
         "Og‘ir tan jarohati deb baholanadi",
         "O‘rtacha og‘ir tan jarohati deb baholanadi",
-        "Yengil tan jarohati deb baholanadi",
-        "Qisqa muddatli yengil jarohat deb baholanadi"
+        "Yengil tan jarohati deb baholanadi"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Tananing 10%dan ortiq yuzasining III-IV darajali kuyishi hayot uchun xavfli jarohatlar ro‘yxatiga kiradi. Hayot uchun xavfli jarohat og‘ir tan jarohati hisoblanadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1896,12 +2191,12 @@
     {
       "question": "Ko‘krak bo‘shlig‘iga o‘tuvchi pichoq yarasi olgan bemor o‘z vaqtida operatsiya qilindi va hayotga tahdid bartaraf etildi. Jarohat qanday baholanadi?",
       "options": [
+        "Baholanmaydi, chunki yordam ko‘rsatilgan",
         "Yengil, chunki bemor tez tuzalib ketdi",
         "Hayot uchun xavfli, ya’ni og‘ir tan jarohati",
-        "O‘rtacha og‘ir, chunki tahdid bartaraf etildi",
-        "Baholanmaydi, chunki yordam ko‘rsatilgan"
+        "O‘rtacha og‘ir, chunki tahdid bartaraf etildi"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Tibbiy yordam bilan hayotga tahdidning bartaraf etilishi jarohatni hayot uchun xavfli deb baholashda hisobga olinmaydi. Kalla, ko‘krak, qorin bo‘shlig‘iga o‘tuvchi yaralar og‘ir jarohat hisoblanadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1912,12 +2207,12 @@
     {
       "question": "Kasalxonada bemor ahvoli «og‘ir» deb yozilgan. Sud-tibbiy ekspertning baholashi bilan klinik baholash o‘rtasidagi munosabat haqida qaysi fikr to‘g‘ri?",
       "options": [
+        "Klinik baholash sud-tibbiy baholashni to‘liq almashtirib turadi",
         "Klinik ahvol og‘irligi sud-tibbiy darajaga aynan teng bo‘ladi",
         "Sud-tibbiy daraja har doim klinik ahvolga qarab belgilanadi",
-        "Maqsad va mezonlari turlicha, natijalar mos kelmasligi mumkin",
-        "Klinik baholash sud-tibbiy baholashni to‘liq almashtirib turadi"
+        "Maqsad va mezonlari turlicha, natijalar mos kelmasligi mumkin"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Sud-tibbiy va klinik baholash bir xil tushunchalar emas. Ularning maqsadlari va mezonlari turlicha, shuning uchun natijalari bir-biriga mos kelmasligi mumkin.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1928,12 +2223,12 @@
     {
       "question": "Ekspertiza natijasida jabrlanuvchida umumiy mehnat qobiliyatining 25% turg‘un yo‘qotilishi aniqlandi. Tan jarohati qanday baholanadi?",
       "options": [
+        "O‘rtacha og‘ir tan jarohati",
         "Yengil tan jarohati",
         "Og‘ir tan jarohati",
-        "Qisqa muddatli yengil jarohat",
-        "O‘rtacha og‘ir tan jarohati"
+        "Qisqa muddatli yengil jarohat"
       ],
-      "correct_index": 3,
+      "correct_index": 0,
       "explanation": "Umumiy mehnat qobiliyatining o‘n foizdan o‘ttiz uch foizgacha turg‘un yo‘qotilishi o‘rtacha og‘ir tan jarohati hisoblanadi. O‘n foizgacha yo‘qotilish yengil, o‘ttiz uch foiz va undan ortiq yo‘qotilish og‘ir jarohatga kiradi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1960,12 +2255,12 @@
     {
       "question": "Jabrlanuvchida shikastlanish tufayli sog‘liqning buzilishi 130 kun davom etdi. Sud-tibbiy ekspertizada mehnat qobiliyatining yo‘qotilishi qanday belgilanadi?",
       "options": [
+        "Faqat kasbiy qobiliyat yo‘qolgan deb olinadi",
         "Vaqtinchalik yo‘qotilish deb belgilanadi",
         "Shartli turg‘un yo‘qotilish deb belgilanadi",
-        "Mehnat qobiliyati saqlangan deb hisoblanadi",
-        "Faqat kasbiy qobiliyat yo‘qolgan deb olinadi"
+        "Mehnat qobiliyati saqlangan deb hisoblanadi"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Sog‘liq buzilishi davomiyligi 120 kundan ortiq bo‘lsa, holat shartli ravishda mehnat qobiliyatining turg‘un yo‘qotilishi deb belgilanadi. Vaqtinchalik yo‘qotilish kunlarda, turg‘un yo‘qotilish esa foizlarda ifodalanadi. Og‘irlik darajasini aniqlashda faqat umumiy mehnat qobiliyati inobatga olinadi, kasbiy qobiliyat olinmaydi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1976,12 +2271,12 @@
     {
       "question": "Jabrlanuvchida son suyagining yopiq sinishi aniqlangan. Tibbiy yordam to‘liq ko‘rsatilgan, haqiqiy oqibati yengil kechgan. Tan jarohati og‘irligi qanday baholanadi?",
       "options": [
+        "Qisqa muddatli yengil tan jarohati deb baholanadi",
         "Yengil darajadagi tan jarohati deb baholanadi",
         "O‘rtacha og‘ir tan jarohati deb baholanadi",
-        "Og‘ir darajadagi tan jarohati deb baholanadi",
-        "Qisqa muddatli yengil tan jarohati deb baholanadi"
+        "Og‘ir darajadagi tan jarohati deb baholanadi"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Qoidalarda alohida ro‘yxat bor: real oqibati va tibbiy yordam ko‘rsatilgan-ko‘rsatilmaganidan qat’iy nazar mehnat qobiliyatining uchdan biridan ko‘progi yo‘qotilishiga olib keladigan shikastlanishlar. Yelka, son, katta boldir suyaklarining ochiq yoki yopiq sinishlari shu ro‘yxatga kiradi va og‘ir deb baholanadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2008,12 +2303,12 @@
     {
       "question": "Jabrlanuvchida jarohat tufayli bitta quloqda eshitish qayta tiklanmas yo‘qotilgan, ikkinchi quloq sog‘. Tan jarohati qanday baholanadi?",
       "options": [
-        "Og‘ir tan jarohati deb baholanadi",
-        "Yengil tan jarohati deb baholanadi",
         "Qisqa muddatli yengil jarohat deb baholanadi",
-        "O‘rtacha og‘ir tan jarohati deb baholanadi"
+        "O‘rtacha og‘ir tan jarohati deb baholanadi",
+        "Og‘ir tan jarohati deb baholanadi",
+        "Yengil tan jarohati deb baholanadi"
       ],
-      "correct_index": 3,
+      "correct_index": 1,
       "explanation": "Og‘ir jarohat deb faqat ikkala quloqda to‘liq karlik (yoki so‘zlashuv nutqini quloq chag‘anog‘idan 3-5 sm masofada eshita olmaslik) hisoblanadi. Bir quloqning eshitishini yo‘qotish umumiy mehnat qobiliyatining uchdan biridan kamrog‘ini yo‘qotishga olib keladi va o‘rtacha og‘ir deb baholanadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2040,12 +2335,12 @@
     {
       "question": "Bosh sohasi shikastlangan shaxsda ruhiy buzilish aniqlandi. Jarohat og‘ir deb baholanishi uchun qaysi shart albatta kerak?",
       "options": [
+        "Jabrlanuvchi kamida bir marta statsionarda yotgan bo‘lishi",
         "Ruhiy buzilish kamida bir oy davom etgan bo‘lishi",
         "Shaxs sud-psixiatriya hisobiga qo‘yilgan bo‘lishi",
-        "Jarohat va ruhiy buzilish o‘rtasida bevosita sababiy bog‘liqlik bo‘lishi",
-        "Jabrlanuvchi kamida bir marta statsionarda yotgan bo‘lishi"
+        "Jarohat va ruhiy buzilish o‘rtasida bevosita sababiy bog‘liqlik bo‘lishi"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Jarohat faqat shikastlanish va ruhiy buzilish o‘rtasida bevosita sababiy bog‘liqlik bo‘lgandagina og‘ir deb baholanadi. Ruhiy buzilishning davomiyligi, hisobga qo‘yilishi yoki statsionarda yotish bunday shart sifatida ko‘rsatilmagan.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2072,12 +2367,12 @@
     {
       "question": "Bir jarohat bo‘yicha ikkita tibbiy mezon qo‘llanishi mumkin: birinchisi o‘rtacha og‘irlikka, ikkinchisi og‘ir darajaga mos. Qaysi daraja belgilanadi?",
       "options": [
-        "O‘rtacha og‘ir, chunki ikki mezonning o‘rtacha darajasi olinadi",
-        "Birinchi aniqlangan mezonga mos daraja belgilanadi",
         "Yengilroq mezonga mos daraja belgilanadi",
-        "Og‘irroq darajaga mos mezon bo‘yicha belgilanadi, ya’ni og‘ir"
+        "Og‘irroq darajaga mos mezon bo‘yicha belgilanadi, ya’ni og‘ir",
+        "O‘rtacha og‘ir, chunki ikki mezonning o‘rtacha darajasi olinadi",
+        "Birinchi aniqlangan mezonga mos daraja belgilanadi"
       ],
-      "correct_index": 3,
+      "correct_index": 1,
       "explanation": "Og‘irlik darajasini aniqlashda bitta mezon yetarli. Bir necha mezon qo‘llanishi mumkin bo‘lsa, daraja og‘irroq darajaga mos mezon bo‘yicha belgilanadi, ya’ni bu holatda jarohat og‘ir deb baholanadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2088,12 +2383,12 @@
     {
       "question": "Surunkali kasalligi bor shaxs jarohat olgandan keyin ahvoli yomonlashdi. Yomonlashuv asosan uning yoshi va kasalligi bilan bog‘liq edi. Bu daraja aniqlashda qanday hisobga olinadi?",
       "options": [
+        "Daraja faqat davolovchi vrach xulosasiga ko‘ra belgilanadi",
         "Yomonlashuv to‘liq hisobga olinib, daraja bir pog‘ona oshiriladi",
         "Faqat jarohat bilan sababiy bog‘liq oqibatlar hisobga olinadi",
-        "Kasallik tufayli yomonlashuv ham jarohat oqibati sifatida olinadi",
-        "Daraja faqat davolovchi vrach xulosasiga ko‘ra belgilanadi"
+        "Kasallik tufayli yomonlashuv ham jarohat oqibati sifatida olinadi"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Ilgari kasalligi bo‘lgan shaxslarda faqat keyin yetkazilgan jarohat ta’sirida paydo bo‘lgan va u bilan sababiy bog‘liq oqibatlar inobatga olinadi. Yosh va kasalliklar bilan bog‘liq yomonlashuv hisobga olinmaydi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2104,12 +2399,12 @@
     {
       "question": "Tirik shaxs ekspertizasi algoritmida shaxsni ko‘rikdan o‘tkazishdan keyingi bosqich qaysi?",
       "options": [
+        "Ekspertizadan o‘tayotgan shaxsning so‘rovi",
         "Ekspertiza tayinlash to‘g‘risidagi qarorni qayta o‘rganish",
         "Tibbiy hujjatlarni birinchi marta o‘rganish",
-        "Zarur hollarda qo‘shimcha maxsus tekshiruvlar va mutaxassis maslahati",
-        "Ekspertizadan o‘tayotgan shaxsning so‘rovi"
+        "Zarur hollarda qo‘shimcha maxsus tekshiruvlar va mutaxassis maslahati"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Algoritm tartibi: hodisa tafsilotlari, tibbiy hujjatlar, so‘rov, ko‘rik, zarurat bo‘lsa qo‘shimcha maxsus tekshiruvlar va mutaxassislar maslahati, so‘ng ekspert xulosasi.",
       "source": {
         "author": "G‘iyosov Z.A.",

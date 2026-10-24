@@ -84,7 +84,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Kislorod: nafas a’zolari",
+            "value": "98,5–99",
+            "unit": "%"
+          },
+          {
+            "label": "Havo: tinch holatda",
+            "value": "6–8",
+            "unit": "l/min"
+          },
+          {
+            "label": "Zo‘riqishda ehtiyoj",
+            "value": "10–20",
+            "unit": "barobar"
+          },
+          {
+            "label": "MNS: qaytmas o‘zgarish",
+            "value": "5–10",
+            "unit": "min"
+          }
+        ],
+        "caption": "Kislorod va gipoksiya ko‘rsatkichlari",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega bosh miya kislorod yetishmasligiga eng sezgir? 2) Jismoniy zo‘riqishda havo ehtiyoji nega oshadi? Doskada: kislorodning organizmga kirish yo‘llarini (nafas a’zolari, teri, oshqozon-ichak) foizlari bilan chizing. Tipik xato: 5–10 minut muddatni barcha to‘qimaga tegishli deb hisoblash. U faqat markaziy nerv tizimiga tegishli."
     },
     {
@@ -119,31 +145,33 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ekzogen gipoksiya turlari",
-        "nodes": [],
-        "header": [
-          "Ekzogen tur",
-          "Havo tarkibi",
-          "Holat"
+        "kind": "tree",
+        "root": "Ekzogen gipoksiya",
+        "children": [
+          {
+            "label": "Gipoksik",
+            "items": [
+              "Kislorod kam",
+              "Tog‘, balandlik kasalligi"
+            ]
+          },
+          {
+            "label": "Giperoksik",
+            "items": [
+              "Kislorod ko‘p, uzoq muddat",
+              "O‘pkada o‘zgarish"
+            ]
+          },
+          {
+            "label": "Giperkapnik",
+            "items": [
+              "O₂ kamayadi, CO₂ ko‘payadi",
+              "Cheklangan yopiq muhit"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Gipoksik",
-            "Kislorod kam",
-            "Tog‘, balandlik kasalligi"
-          ],
-          [
-            "Giperoksik",
-            "Kislorod ko‘p, uzoq muddat",
-            "O‘pkada o‘zgarish, qonga o‘tish buziladi"
-          ],
-          [
-            "Giperkapnik",
-            "O₂ kamayadi, CO₂ ko‘payadi",
-            "Cheklangan yopiq muhit"
-          ]
-        ]
+        "caption": "Ekzogen gipoksiya turlari",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Giperkapnik gipoksiya mexanik asfiksiyaga qaysi jihatdan yaqin? 2) Giperoksik gipoksiyada nega o‘pka birinchi zarar ko‘radi? Doskada: Gipoksiya → ekzogen (3 tur) va endogen (5 tur) daraxtini chizing. Tipik xato: giperoksik gipoksiyani ’kislorod kam’ deb o‘ylash. Aslida kislorod konsentratsiyasi katta bo‘ladi."
     },
@@ -179,31 +207,38 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Endogen gipoksiya sabablari",
-        "nodes": [],
-        "header": [
-          "Turi",
-          "Sababi"
+        "kind": "tree",
+        "root": "Endogen gipoksiya",
+        "children": [
+          {
+            "label": "Respirator",
+            "items": [
+              "Nafas yo‘llari yopilishi",
+              "Bo‘yin qisilishi"
+            ]
+          },
+          {
+            "label": "Sirkulyator",
+            "items": [
+              "Qon aylanishining buzilishi"
+            ]
+          },
+          {
+            "label": "Gemik",
+            "items": [
+              "Gemoglobin kamayishi",
+              "Zaharlanish"
+            ]
+          },
+          {
+            "label": "Sitotoksik",
+            "items": [
+              "To‘qima nafasining buzilishi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Respirator",
-            "Nafas yo‘llari yopilishi, bo‘yin qisilishi"
-          ],
-          [
-            "Sirkulyator",
-            "Qon aylanishining buzilishi"
-          ],
-          [
-            "Gemik",
-            "Gemoglobin kamayishi, zaharlanish"
-          ],
-          [
-            "Sitotoksik",
-            "Zaharlanishda to‘qima nafasining buzilishi"
-          ]
-        ]
+        "caption": "Endogen gipoksiya sabablari",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Respiratorning bevosita va bilvosita shakllari nimasi bilan farq qiladi? 2) Zaharlanish ikki xil gipoksiyaga qanday olib keladi? Doskada: 5 turning sabablarini jadval qilib chizdiring. Tipik xato: gemik va sitotoksik gipoksiyani aralashtirish. Gemikda qon, sitotoksikda to‘qima nafasi buziladi."
     },
@@ -239,36 +274,27 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Jadallik bo‘yicha turlar",
-        "nodes": [],
-        "header": [
-          "Turi",
-          "Davomiyligi",
-          "Sud tibbiyoti"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Yashinsimon",
+            "text": "Soniyalarda; sud tibbiyotida ahamiyatli"
+          },
+          {
+            "title": "O‘tkir",
+            "text": "Daqiqalarda; sud tibbiyotida ahamiyatli"
+          },
+          {
+            "title": "Biroz o‘tkir",
+            "text": "Soatlarda"
+          },
+          {
+            "title": "Surunkali",
+            "text": "Kun, hafta, oylarda"
+          }
         ],
-        "rows": [
-          [
-            "Yashinsimon",
-            "Soniyalarda",
-            "Ahamiyatli"
-          ],
-          [
-            "O‘tkir",
-            "Daqiqalarda",
-            "Ahamiyatli"
-          ],
-          [
-            "Biroz o‘tkir",
-            "Soatlarda",
-            "Ta’kidlanmagan"
-          ],
-          [
-            "Surunkali",
-            "Kun, hafta, oylarda",
-            "Ta’kidlanmagan"
-          ]
-        ]
+        "caption": "Jadallik bo‘yicha turlar",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun sud tibbiyotida aynan yashinsimon va o‘tkir tur muhim? 2) Qaysi tashqi ta’sirlar bunday gipoksiyaga olib keladi? Doskada: vaqt o‘qini soniyadan oygacha chizib, turlarni joylashtiring. Tipik xato: biroz o‘tkir turni ham sud-tibbiy asosiy deb hisoblash."
     },
@@ -319,7 +345,16 @@
       "title": "Asfiksiya va mexanik asfiksiya tushunchasi",
       "bullets": [
         {
-          "text": "Asfiksiya grek tilidan olingan: “a” – inkor, “sphygmos” – puls. Tub ma’nosi – pulsning yo‘qligi. Sud tibbiyotida kislorod tanqisligi shu atama bilan belgilanadi.",
+          "text": "Asfiksiya grek tilidan olingan: “a” – inkor, “sphygmos” – puls. Tub ma’nosi – pulsning yo‘qligi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "104"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sud tibbiyotida kislorod tanqisligi shu atama bilan belgilanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -390,31 +425,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Mexanik asfiksiya turlari",
-        "nodes": [],
-        "header": [
-          "Asosiy tur",
-          "Kichik tur"
+        "kind": "tree",
+        "root": "Mexanik asfiksiya",
+        "children": [
+          {
+            "label": "Qisilishdan",
+            "items": [
+              "Strangulyatsion: bo‘yin",
+              "Kompression: ko‘krak, qorin"
+            ]
+          },
+          {
+            "label": "Yopilishdan",
+            "items": [
+              "Nafas teshiklari, yo‘llari",
+              "Cho‘kish"
+            ]
+          },
+          {
+            "label": "Cheklangan muhitda",
+            "items": [
+              "Yopiq muhitdagi asfiksiya"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Qisilishdan",
-            "Strangulyatsion: bo‘yin a’zolari qisiladi"
-          ],
-          [
-            "Qisilishdan",
-            "Kompression: ko‘krak, qorin qisiladi"
-          ],
-          [
-            "Yopilishdan",
-            "Nafas teshiklari, nafas yo‘llari, cho‘kish"
-          ],
-          [
-            "Cheklangan muhit",
-            "Yopiq muhitdagi asfiksiya"
-          ]
-        ]
+        "caption": "Uch asosiy tur",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Osilish va cho‘kish tasnifning qaysi bo‘limlariga kiradi? 2) Nega kompression asfiksiya qisilishdan asfiksiyaga kiritilgan? Doskada: tasnif daraxtini (3 ta asosiy shox, kichik turlari bilan) chizdiring. Tipik xato: strangulyatsion va kompression turlarni aralashtirish; cho‘kishni qisilishga kiritish."
     },
@@ -440,7 +476,7 @@
           "uncertain": false
         },
         {
-          "text": "Xos belgi: asfiktik jarayon qo‘l, oyoq yoki moslamalar bilan boshqariladi. Asosan bo‘yin sirtmoq bilan qisiladi yoki polietilen qopcha bilan cheklangan muhit hosil qilinadi.",
+          "text": "Xos belgi: asfiktik jarayon qo‘l, oyoq yoki moslamalar bilan boshqariladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -449,7 +485,32 @@
           "uncertain": false
         },
         {
-          "text": "O‘lim bilan tugasa, baxtsiz hodisa deb baholanadi. Joyda pornografik rasmlar, jinsiy a’zo imitatorlari, boshqa jins kiyimi topiladi; murda yalang‘ochlangan bo‘lishi mumkin.",
+          "text": "Asosan bo‘yin sirtmoq bilan qisiladi yoki polietilen qopcha bilan cheklangan muhit hosil qilinadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "105"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega hodisa joyini sinchiklab ko‘zdan kechirish bu holatlarda hal qiluvchi ahamiyatga ega? 2) Nima uchun bunday o‘lim o‘z-o‘zini o‘ldirish emas, baxtsiz hodisa deb baholanadi? Doskada: hodisa joyidagi belgilar ro‘yxatini (ashyolar, murda holati) chizma-sxema ko‘rinishida yozing. Tipik xato: sirtmoqdagi o‘limni avtomatik ravishda suitsid yoki qotillik deb baholash; hodisa joyini inobatga olmaslik. Mavzuni odobli va ilmiy tilda yoritish tavsiya etiladi."
+    },
+    {
+      "title": "Autoasfiksiofiliya (seksual asfiksiya) (davomi)",
+      "bullets": [
+        {
+          "text": "O‘lim bilan tugasa, baxtsiz hodisa deb baholanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "105-106"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Joyda pornografik rasmlar, jinsiy a’zo imitatorlari, boshqa jins kiyimi topiladi; murda yalang‘ochlangan bo‘lishi mumkin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -493,17 +554,31 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Asfiktik davr bosqichlari",
-        "nodes": [
-          "Inspirator hansirash",
-          "Ekspirator hansirash",
-          "Nafasning qisqa to‘xtashi",
-          "Terminal nafas olish",
-          "Nafasning to‘liq to‘xtashi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Inspirator hansirash",
+            "text": "Nafas olish tezlashadi"
+          },
+          {
+            "title": "Ekspirator hansirash",
+            "text": "Nafas chiqarish kuchli"
+          },
+          {
+            "title": "Qisqa to‘xtash",
+            "text": "30-40 soniya"
+          },
+          {
+            "title": "Terminal nafas",
+            "text": "5 minutgacha"
+          },
+          {
+            "title": "To‘liq to‘xtash",
+            "text": "Nafas markazi falaji"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Asfiktik davr bosqichlari",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: nega preasfiktik davrda belgilar hali rivojlanmaydi? Kompensator moslashuvning uch usulini sanang. Doskada: besh bosqichli zanjirni chizdiring. Tipik xato: preasfiktik davrni asfiktik davrning bosqichi deb hisoblash; ular alohida davrlardir."
     },
@@ -539,36 +614,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ikki bosqichni solishtirish",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Inspirator",
-          "Ekspirator"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Inspirator bosqich",
+            "items": [
+              "Nafas olish tezlashadi, uzayadi",
+              "Plevra bosimi keskin pasayadi",
+              "Arterial pasayadi, venoz ortadi",
+              "Puls sekinlashadi"
+            ]
+          },
+          {
+            "title": "Ekspirator bosqich",
+            "items": [
+              "Nafas chiqarish kuchli, uzoq",
+              "Plevra bosimi ortadi",
+              "Arterial ortadi, venoz kamayadi",
+              "Puls tezlashadi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Nafas",
-            "Nafas olish tezlashadi, uzayadi",
-            "Nafas chiqarish kuchli, uzoq"
-          ],
-          [
-            "Plevra bosimi",
-            "Keskin pasayadi",
-            "Ortadi"
-          ],
-          [
-            "Arterial va venoz bosim",
-            "Arterial pasayadi, venoz ortadi",
-            "Arterial ortadi, venoz kamayadi"
-          ],
-          [
-            "Puls",
-            "Sekinlashadi",
-            "Tezlashadi"
-          ]
-        ]
+        "caption": "Ikki bosqichni solishtirish",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: nega ko‘krak qafasi kengayganda plevra bosimi pasayadi? Talvasa jarohati va qotillik jarohatini qanday farqlash mumkin? Doskada: ikki ustunli solishtirish jadvalini ko‘chirib chizdiring. Tipik xato: bosim va puls o‘zgarishlarini ikki bosqichda aralashtirib yuborish (aksincha o‘zgaradi)."
     },
@@ -612,7 +680,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Qisqa to‘xtash",
+            "value": "30–40",
+            "unit": "sek"
+          },
+          {
+            "label": "Terminal nafas",
+            "value": "≤ 5",
+            "unit": "min"
+          },
+          {
+            "label": "Yurak urishi davomi",
+            "value": "3–10",
+            "unit": "min"
+          },
+          {
+            "label": "Reflektor to‘xtash",
+            "value": "≤ 30",
+            "unit": "sek"
+          }
+        ],
+        "caption": "Muddatlar",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: nega yurakning tez reflektor to‘xtashida murdada asfiksiya belgilari topilmasligi mumkin? Doskada: terminal bosqichdan klinik o‘limgacha qisqa vaqt chizig‘ini chizdiring. Tipik xato: davrlar davomiyligini qat’iy me’yor deb o‘rganish; darslikda ular shartli, taxminiy deb ta’kidlangan."
     },
     {
@@ -750,7 +844,7 @@
       "title": "Dezorientatsiya, qoldiq oqibatlar va asoratlar",
       "bullets": [
         {
-          "text": "Hush tiklansa ham odam zamon va makonda adashadi. Konfabulyasiya — xotira bo‘shlig‘ini anglamay soxta xotira bilan to‘ldirish; retrograd amneziya ham kuzatiladi.",
+          "text": "Hush tiklansa ham odam zamon va makonda adashadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -759,7 +853,16 @@
           "uncertain": false
         },
         {
-          "text": "To‘liq tibbiy yordam bilan yengil o‘zgarishlar 1-2 haftada izsiz o‘tadi. Boshqa holatda xotira va diqqat buziladi, bosh og‘rig‘i, paralich, ko‘rish va eshitish pasayishi qoladi.",
+          "text": "Konfabulyasiya — xotira bo‘shlig‘ini anglamay soxta xotira bilan to‘ldirish; retrograd amneziya ham kuzatiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "108"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "To‘liq tibbiy yordam bilan yengil o‘zgarishlar 1-2 haftada izsiz o‘tadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -768,7 +871,33 @@
           "uncertain": false
         },
         {
-          "text": "Jigarda distrofiya va o‘choqli nekrobioz, oshqozon-ichak shilliq qavatida eroziya va yaralar bo‘ladi. Asorat: organ yetishmovchiligi, peritonit, ichki qon ketish.",
+          "text": "Boshqa holatda xotira va diqqat buziladi, bosh og‘rig‘i, paralich, ko‘rish va eshitish pasayishi qoladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "109"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega o‘limning sababi postasfiktik davr muddatiga qarab o‘zgaradi? 2) Nega klinitsist uchun ichki a‘zolardagi o‘zgarishlarni bilish muhim? Doskada: postasfiktik holatning 4 davrini ketma-ket strelka bilan chizdiring (koma → karaxtlik → dezorientatsiya → qoldiq oqibatlar). Tipik xato: konfabulyasiyani amneziyaning sinonimi deb o‘ylash; aslida u amneziyani soxta xotira bilan to‘ldirishdir.",
+      "extras": null
+    },
+    {
+      "title": "Dezorientatsiya, qoldiq oqibatlar va asoratlar (davomi)",
+      "bullets": [
+        {
+          "text": "Jigarda distrofiya va o‘choqli nekrobioz, oshqozon-ichak shilliq qavatida eroziya va yaralar bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "109"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Asorat: organ yetishmovchiligi, peritonit, ichki qon ketish.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -787,8 +916,7 @@
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega o‘limning sababi postasfiktik davr muddatiga qarab o‘zgaradi? 2) Nega klinitsist uchun ichki a‘zolardagi o‘zgarishlarni bilish muhim? Doskada: postasfiktik holatning 4 davrini ketma-ket strelka bilan chizdiring (koma → karaxtlik → dezorientatsiya → qoldiq oqibatlar). Tipik xato: konfabulyasiyani amneziyaning sinonimi deb o‘ylash; aslida u amneziyani soxta xotira bilan to‘ldirishdir.",
-      "extras": null
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega o‘limning sababi postasfiktik davr muddatiga qarab o‘zgaradi? 2) Nega klinitsist uchun ichki a‘zolardagi o‘zgarishlarni bilish muhim? Doskada: postasfiktik holatning 4 davrini ketma-ket strelka bilan chizdiring (koma → karaxtlik → dezorientatsiya → qoldiq oqibatlar). Tipik xato: konfabulyasiyani amneziyaning sinonimi deb o‘ylash; aslida u amneziyani soxta xotira bilan to‘ldirishdir."
     },
     {
       "title": "Voqea tahlili: postasfiktik holatdagi jabrlanuvchi",
@@ -942,7 +1070,7 @@
         "rows": [
           [
             "Suyuq to‘q qizil qon",
-            "Giperkapniya; fibrinogenaza faolligi oshishi"
+            "Giperkapniya; fibrinogenaza ortishi"
           ],
           [
             "Asfiktik yurak",
@@ -1035,31 +1163,25 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Osilish turi va tugun joyi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Mazmuni"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Tipik osilish",
+            "items": [
+              "Tana sirtmoqda erkin osilib turadi",
+              "Tugun bo‘yinning orqa sohasida"
+            ]
+          },
+          {
+            "title": "Notipik osilish",
+            "items": [
+              "Tananing bir qismi tayanchga ega",
+              "Tugun old yoki yon sohada"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Tipik (to‘liq) osilish",
-            "Tana sirtmoqda erkin osilib turadi"
-          ],
-          [
-            "Notipik (noto‘liq) osilish",
-            "Tananing bir qismi tayanchga ega"
-          ],
-          [
-            "Tipik tugun",
-            "Bo‘yinning orqa sohasida"
-          ],
-          [
-            "Atipik tugun",
-            "Bo‘yinning old yoki yon sohasida"
-          ]
-        ]
+        "caption": "Osilish turi va tugun joyi",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega tugunni buzmasdan olish kerak? 2) Notipik osilishda ham o‘lim bo‘lishi mumkinmi? Manbaga ko‘ra tizzalarga tayanib osilishda sirtmoq tana massasining 20%iga teng kuch bilan tortiladi, yotgan holda esa boshning massasi (4-5 kg) yetadi. Osilish asfiksiyadan o‘lim holatlarining 65-70% ini tashkil etadi (111-bet). Doskada: bo‘yin sxemasida tipik va atipik tugun joylarini belgilatdiring. Tipik xato: notipik osilishni o‘lim uchun kuchsiz deb hisoblash."
     },
@@ -1141,31 +1263,25 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Qattiq va yumshoq sirtmoq egati",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Qattiq",
-          "Yumshoq"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Qattiq sirtmoq",
+            "items": [
+              "Terida egat zich, chuqur",
+              "Tugun qarshisida yaqqolroq"
+            ]
+          },
+          {
+            "title": "Yumshoq sirtmoq",
+            "items": [
+              "Egat yaqqol ko‘rinmaydi",
+              "Ichki tekshiruvda oqimtir yo‘lka"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Terida egat",
-            "Zich, chuqur",
-            "Yaqqol ko‘rinmaydi"
-          ],
-          [
-            "Tugun qarshisida",
-            "Yaqqolroq, chuqurroq",
-            "—"
-          ],
-          [
-            "Ichki tekshiruv",
-            "—",
-            "Oqimtir yo‘lka (mis sim belgisi)"
-          ]
-        ]
+        "caption": "Qattiq va yumshoq sirtmoq egati",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Egatning qaysi xususiyatlari sirtmoqni aniqlashga yordam beradi? 2) Sochiq ustidan solingan sirtmoqda nima uchun teri o‘zgarishi kam bo‘ladi? Doskada: bo‘yin sxemasi, tipik va atipik egat balandligini chizing. Tipik xato: yumshoq sirtmoqda tashqi egat yo‘q bo‘lsa, osilish bo‘lmagan deb xulosa qilish. Diqqat: tugunning tipik (orqada) joylashuvi bilan egatning tipik joylashuvini aralashtirmang."
     },
@@ -1201,36 +1317,38 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ichki va hayotiylik belgilari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Belgi",
-          "Topilma"
+        "kind": "tree",
+        "root": "Bo‘yin belgilari",
+        "children": [
+          {
+            "label": "Qisilish izi",
+            "items": [
+              "Kasper",
+              "Brouardel"
+            ]
+          },
+          {
+            "label": "Cho‘zilish izi",
+            "items": [
+              "Amyuss, Martin",
+              "Valxer, Simon"
+            ]
+          },
+          {
+            "label": "Hayotiylik (makro)",
+            "items": [
+              "Bokarius sinamasi"
+            ]
+          },
+          {
+            "label": "Hayotiylik (mikro)",
+            "items": [
+              "Neyding, Kasyanov"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Qisilish izi",
-            "Kasper; Brouardel",
-            "Mis sim izi; halqum orti qon quyilishi"
-          ],
-          [
-            "Cho‘zilish izi",
-            "Amyuss, Martin, Valxer, Simon",
-            "Arteriya, mushak, disk shikasti"
-          ],
-          [
-            "Hayotiylik (makro)",
-            "Bokarius",
-            "Egat burmachasida to‘laqonlik, qon quyilish"
-          ],
-          [
-            "Hayotiylik (mikro)",
-            "Neyding, Kasyanov",
-            "Qon aylanishi buzilishi; reaktiv belgi"
-          ]
-        ]
+        "caption": "Ichki va hayotiylik belgilari",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 12 daq. Muhokama: 1) Egat hayotiyligi nima uchun bahsli holatlarda muhim? 2) Qisilish va cho‘zilish belgilarini qanday farqlaysiz? Doskada: to‘rt qatorli jadvalni talabalar bilan to‘ldiring. Qo‘shimcha: Amyuss belgisi uyqu arteriyasi intimasining ko‘ndalang yorilishi, Martin — tashqi qavatda, Valxer — to‘sh-o‘mrov-so‘rg‘ichsimon mushak pastki uchida, Simon — umurtqalararo disklarda qon quyilishi. Tipik xato: Bokarius sinamasi bilan Neyding va Kasyanov belgilarini aralashtirish (birinchisi laxtani yorug‘likda ko‘rish, qolganlari mikroskopik)."
     },
@@ -1266,36 +1384,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Sirtmoq va qo‘l bilan bo‘g‘ish",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Sirtmoq",
-          "Qo‘l bilan"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Sirtmoq bilan",
+            "items": [
+              "Gorizontal, tutashgan egat",
+              "Kurash izlari bo‘lishi mumkin",
+              "Til osti suyagi xos shikast emas",
+              "Qalqonsimon tog‘ay shoxi sinishi mumkin"
+            ]
+          },
+          {
+            "title": "Qo‘l bilan",
+            "items": [
+              "Egat yo‘q, barmoq izlari",
+              "Dumaloq qontalash, tirnoq shilinmasi",
+              "Til osti suyagi shoxchalari sinishi",
+              "Ichki jarohat ko‘lamliroq"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Bo‘yindagi iz",
-            "Gorizontal, ko‘pincha tutashgan egat",
-            "Egat emas, barmoq izlari"
-          ],
-          [
-            "Tashqi jarohat",
-            "Egat, kurash izlari bo‘lishi mumkin",
-            "Dumaloq qontalash, tirnoq shilinmasi"
-          ],
-          [
-            "Til osti suyagi",
-            "Shikastlanishi xos emas",
-            "Shoxchalari sinishi mumkin"
-          ],
-          [
-            "Ichki jarohat",
-            "Qalqonsimon tog‘ay shoxlari sinishi mumkin",
-            "Tashqidan yaqqolroq, ko‘lamliroq"
-          ]
-        ]
+        "caption": "Sirtmoq va qo‘l bilan bo‘g‘ish",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 10 daqiqa. Muhokama: 1) Nima uchun sirtmoq bilan bo‘g‘ishda qotillik ehtimoli yuqori? 2) Qo‘l bilan bo‘g‘ishda ichki jarohat nega tashqidan yaqqolroq bo‘ladi? Doskada: bo‘yin sxemasini chizib, sirtmoq egati (gorizontal) va barmoq izlari (old va orqa yuzada guruh) joylashuvini ko‘rsating. Tipik xato: sirtmoq bilan bo‘g‘ishni osilish egati (qiyshiq-yuqori) bilan adashtirish."
     },
@@ -1321,7 +1432,7 @@
           "uncertain": false
         },
         {
-          "text": "Pozitsion asfiksiyada bosh uzoq vaqt oldinga yoki yonga bukilib qoladi, odatda hushsiz shaxs cheklangan bo‘shliqqa tushganda. Bo‘yinda strangulyatsion egat bo‘lmaydi.",
+          "text": "Pozitsion asfiksiyada bosh uzoq vaqt oldinga yoki yonga bukilib qoladi, odatda hushsiz shaxs cheklangan bo‘shliqqa tushganda.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1330,7 +1441,32 @@
           "uncertain": false
         },
         {
-          "text": "Bukilish burmasi egatga o‘xshashi mumkin: ichki tekshiruvda oqimtir yo‘lka va qon quyilishlar topiladi. Tashxis boshqa o‘lim sabablarini istisno qilish bilan qo‘yiladi.",
+          "text": "Bo‘yinda strangulyatsion egat bo‘lmaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "119"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Pozitsion asfiksiyada nima uchun o‘lim sababini istisno usuli bilan aniqlaymiz? 2) Burma va haqiqiy egatni ichki tekshiruvda qanday farqlash mumkin? Doskada: bukilgan bosh va bo‘yin burmasi proyeksiyasini chizing. Tipik xato: bo‘yin burmasini strangulyatsion egat deb baholash."
+    },
+    {
+      "title": "O‘tmas jism bilan bo‘g‘ish va pozitsion asfiksiya (davomi)",
+      "bullets": [
+        {
+          "text": "Bukilish burmasi egatga o‘xshashi mumkin: ichki tekshiruvda oqimtir yo‘lka va qon quyilishlar topiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "119"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tashxis boshqa o‘lim sabablarini istisno qilish bilan qo‘yiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1389,7 +1525,16 @@
       "title": "Obturatsion asfiksiya: nafas teshiklari va yo‘llari",
       "bullets": [
         {
-          "text": "Nafas teshiklarining yopilishi qotillik (bola, holsiz katta yoshli) yoki baxtsiz hodisa (hushsiz shaxs) bo‘lishi mumkin. Qarshilik bo‘lmasa, xos belgi topilmaydi.",
+          "text": "Nafas teshiklarining yopilishi qotillik (bola, holsiz katta yoshli) yoki baxtsiz hodisa (hushsiz shaxs) bo‘lishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "119"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qarshilik bo‘lmasa, xos belgi topilmaydi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1407,7 +1552,23 @@
           "uncertain": false
         },
         {
-          "text": "Yo‘llar yot jism, sochiluvchan modda, qon, qusuq bilan yopiladi. O‘lim ko‘pincha o‘pkaga havo o‘tishining qiyinlashuvidan; reflektor spazm yoki yurak to‘xtashi ham mumkin.",
+          "text": "Yo‘llar yot jism, sochiluvchan modda, qon, qusuq bilan yopiladi; o‘lim ko‘pincha o‘pkaga havo o‘tishining qiyinlashuvidan.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "120"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 12 daq. Muhokama: 1) Nega nafas teshiklari yopilishida qarshiliksiz holatda xos belgi topilmaydi? 2) Murdada qusuq topilsa, uni obturatsiyadan o‘lim deb hisoblash uchun nimani tekshirasiz? Doskada: nafas yo‘llarining yopilish sabablari (yot jism, sochiluvchan, suyuq modda) sxemasini chizdiring. Tipik xato: qusuq topilishini avtomatik obturatsion asfiksiya deb baholash. Qo‘shimcha: nordon muhitli qusuq qonga nisbatan agressivroq, shilliq qavatni kimyoviy shikastlaydi (120-bet)."
+    },
+    {
+      "title": "Obturatsion asfiksiya: nafas teshiklari va yo‘llari (davomi)",
+      "bullets": [
+        {
+          "text": "Bu holatda reflektor spazm yoki yurak to‘xtashi ham o‘limga olib kelishi mumkin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1460,36 +1621,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Chin va asfiktik cho‘kish",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Chin",
-          "Asfiktik"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Chin cho‘kish",
+            "items": [
+              "Turg‘un oq ko‘pik (Krushevskiy)",
+              "Nafas yo‘llarida suv va yot moddalar",
+              "Tarde + Rasskazov-Lukomskiy-Paltauf",
+              "Oshqozonda suv 300 ml gacha"
+            ]
+          },
+          {
+            "title": "Asfiktik cho‘kish",
+            "items": [
+              "Oz, noturg‘un oq ko‘pik",
+              "Nafas yo‘llarida suv yo‘q",
+              "Faqat Tarde dog‘lari",
+              "Oshqozonda suv 1 l gacha"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Ko‘pik",
-            "Turg‘un oq (Krushevskiy)",
-            "Oz, noturg‘un oq"
-          ],
-          [
-            "Nafas yo‘llari",
-            "Suv va yot moddalar bor",
-            "Suv aniqlanmaydi"
-          ],
-          [
-            "Plevra osti",
-            "Tarde + Rasskazov-Lukomskiy-Paltauf",
-            "Faqat Tarde dog‘lari"
-          ],
-          [
-            "Oshqozondagi suv",
-            "300 ml gacha (Fegerlund)",
-            "1 l gacha (Fegerlund)"
-          ]
-        ]
+        "caption": "Chin va asfiktik cho‘kish",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 15 daq. Muhokama: 1) Nega asfiktik cho‘kishda o‘pkada gemodilyusiya bo‘lmaydi? 2) Sho‘r suvda cho‘kish chin cho‘kishdan nimasi bilan farq qiladi? Doskada: laringospazm bor/yo‘q bo‘yicha ikki shoxli sxema chizdiring. Tipik xato: Tarde dog‘larini faqat chin cho‘kishga xos deb o‘ylash; ular umumasfiktik belgi, Rasskazov-Lukomskiy-Paltauf dog‘lari esa faqat chin turda. Voqea tahlili: bolada sovuq suvda cho‘kish, o‘pka quruq, oshqozonda ko‘p suv — qaysi tur? Qo‘shimcha: chin cho‘kishda Kasper belgisi (chap yurak qoni ochroq) va Moro belgisi ham bor (122-123-betlar)."
     },
@@ -1525,17 +1679,31 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Hayotiylikni tekshirish tartibi",
-        "nodes": [
-          "Suv namunasi (1 l) olinadi",
-          "Organ bo‘lakchalari olinadi",
-          "Diatom, bakteriya, krioskopiya",
-          "Suv namunasiga solishtirish",
-          "Hayotiylik haqida xulosa"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Suv namunasi",
+            "text": "1 l olinadi"
+          },
+          {
+            "title": "Organ bo‘lakchalari",
+            "text": "Olinadi"
+          },
+          {
+            "title": "Tekshiruv",
+            "text": "Diatom, bakteriya, krioskopiya"
+          },
+          {
+            "title": "Solishtirish",
+            "text": "Suv namunasiga solishtiriladi"
+          },
+          {
+            "title": "Xulosa",
+            "text": "Hayotiylik haqida"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Hayotiylikni tekshirish tartibi",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 12 daq. Muhokama: 1) Nega o‘pkada diatom topilishi yetarli dalil emas? 2) Nega chap va o‘ng yurak qonini taqqoslash kerak? Doskada: diatomning suvdan qon orqali a’zolarga o‘tish yo‘lini chizdiring. Tipik xato: o‘pkadagi diatomga asoslanib hayotiylik haqida xulosa qilish. Qo‘shimcha: krioskopik, refraktometrik, qon quyushqoqligi va elektr o‘tkazuvchanligi tekshiruvlari yurakning chap va o‘ng qonini taqqoslashga asoslanadi (126-bet)."
     },
@@ -1571,31 +1739,27 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Suvda bo‘lish muddatlari",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Muddat"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Barmoqlar oqaradi",
+            "text": "Bir necha soatdan so‘ng"
+          },
+          {
+            "title": "Kaft, keyin tovon",
+            "text": "2–5 kun, so‘ng 5–8 kun"
+          },
+          {
+            "title": "Soch oson sug‘uriladi",
+            "text": "10–15 kun"
+          },
+          {
+            "title": "Kaft terisi ajraladi",
+            "text": "2–3 haftadan so‘ng"
+          }
         ],
-        "rows": [
-          [
-            "Barmoqlar oqarib, bujmayadi",
-            "Bir necha soatdan so‘ng"
-          ],
-          [
-            "Kaft, keyin tovon bujmayadi",
-            "2–5 kun, so‘ng 5–8 kun"
-          ],
-          [
-            "Soch oson sug‘uriladi",
-            "10–15 kun"
-          ],
-          [
-            "Kaft terisi ajraladi (“o‘lim qo‘lqopi”)",
-            "2–3 haftadan so‘ng"
-          ]
-        ]
+        "caption": "Suvda bo‘lish muddatlari",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Nega suvdagi teri o‘zgarishlari bo‘yicha faqat taxminiy muddat aytish mumkin? 2) Suv harorati, kiyim va yosh muddatga qanday ta’sir qiladi (katta yoshlilarda matseratsiyaga moyillik kuchliroq, chaqaloqlarda mo‘msimon qoplama himoya qiladi)? Doskada: muddatlar chizig‘ini (soatlar – kunlar – haftalar) chizdiring. Tipik xato: suvda bo‘lish belgilarini o‘lim sababining belgisi deb o‘ylash; manbada bu o‘zgarishlar o‘lim sabablari bilan bog‘liq emasligi aytilgan (129-bet)."
     },
@@ -1725,7 +1889,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Nafas tezlashadi",
+            "value": "0,5",
+            "unit": "% CO₂"
+          },
+          {
+            "label": "Kattalarda o‘lim",
+            "value": "8–10",
+            "unit": "% CO₂"
+          },
+          {
+            "label": "Bolalarda xavfli",
+            "value": "2,0–2,5",
+            "unit": "% CO₂"
+          }
+        ],
+        "caption": "Karbonat angidrid chegaralari",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega bolalar uchun xavfli CO2 darajasi kattalarnikidan past? 2) Notoʻliq yopiq muhitda toksik moddalar nega muhim? Doskada: yopiq xonada O2 pasayishi va CO2 ortishi strelkalarini chizing. Tipik xato: 8-10% va 2,0-2,5% raqamlarini kattalar va bolalar bo‘yicha almashtirib yuborish."
     },
     {
@@ -1819,12 +2004,12 @@
     {
       "question": "Odam organizmi uchun zarur kislorodning qancha qismi nafas a’zolari orqali olinadi?",
       "options": [
-        "60,0-65,0%",
         "98,5-99,0%",
         "80,0-85,0%",
-        "40,0-45,0%"
+        "40,0-45,0%",
+        "60,0-65,0%"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Zarur kislorodning 98,5-99,0% qismi nafas a’zolari orqali olinadi. Qolgan oz miqdori teri hamda oshqozon va ichaklar orqali o‘zlashtiriladi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1835,12 +2020,12 @@
     {
       "question": "Qon yo‘qotishdan keyin gemoglobin miqdori kamaygan bemorda qaysi endogen gipoksiya turi rivojlanadi?",
       "options": [
-        "Respirator tipdagi gipoksiya",
-        "Sirkulyator tipdagi gipoksiya",
         "Sitotoksik tipdagi gipoksiya",
-        "Gemik tipdagi gipoksiya"
+        "Gemik tipdagi gipoksiya",
+        "Respirator tipdagi gipoksiya",
+        "Sirkulyator tipdagi gipoksiya"
       ],
-      "correct_index": 3,
+      "correct_index": 1,
       "explanation": "Gemoglobin kamayganda (gipoxrom anemiya, qon yo‘qotish) yoki uning kislorodni bog‘lash xususiyati buzilganda (zaharlanish) gemik gipoksiya vujudga keladi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1851,12 +2036,12 @@
     {
       "question": "Yopiq xonada havodagi kislorod kamaygan, karbonat angidrid esa ko‘paygan. Bu qaysi ekzogen gipoksiya turi?",
       "options": [
-        "Giperkapnik gipoksiya",
-        "Giperoksik gipoksiya",
         "Gipoksik gipoksiya",
-        "Sitotoksik gipoksiya"
+        "Sitotoksik gipoksiya",
+        "Giperkapnik gipoksiya",
+        "Giperoksik gipoksiya"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Giperkapnik gipoksiya cheklangan muhitda nafas olganda rivojlanadi: kislorod kamayadi, karbonat angidrid ko‘payadi. Sitotoksik gipoksiya esa endogen turga kiradi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1867,12 +2052,12 @@
     {
       "question": "Tashqi ta’sir natijasida sog‘liq buzilgan yoki o‘lim sodir bo‘lgan holatlarda, sud tibbiyoti uchun gipoksiyaning qaysi turlari ahamiyatli?",
       "options": [
+        "Yashinsimon va surunkali",
         "O‘tkir va biroz o‘tkir",
         "Biroz o‘tkir va surunkali",
-        "Yashinsimon va o‘tkir",
-        "Yashinsimon va surunkali"
+        "Yashinsimon va o‘tkir"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Rivojlanish jadalligi bo‘yicha sud tibbiyoti uchun yashinsimon (soniyalarda) va o‘tkir (daqiqalarda) gipoksiya ahamiyatli. Tashqi ta’sirdan kelib chiqqan bunday holatlar ekspertiza obyekti bo‘ladi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1883,12 +2068,12 @@
     {
       "question": "Hodisa joyida yolg‘iz o‘rta yoshli erkak murdasi topildi: boshida polietilen qopcha, atrofda pornografik rasmlar. Bu o‘lim qanday baholanadi?",
       "options": [
+        "Baxtsiz hodisa holati",
         "Qasddan qotillik holati",
         "O‘z-o‘zini o‘ldirish holati",
-        "Kasallikdan o‘lim holati",
-        "Baxtsiz hodisa holati"
+        "Kasallikdan o‘lim holati"
       ],
-      "correct_index": 3,
+      "correct_index": 0,
       "explanation": "Seksual asfiksiya (autoasfiksiofiliya) ba’zan o‘lim bilan tugaydi va baxtsiz hodisa sifatida baholanadi. Hodisa joyidagi jinsiy chetlanishni tasdiqlovchi ashyolar buni tasdiqlaydi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1915,12 +2100,12 @@
     {
       "question": "Asfiksiyaning inspirator hansirash bosqichiga qaysi o‘zgarish xos?",
       "options": [
-        "Nafas olish davomiyligi nafas chiqarishdan ortadi",
-        "Nafas chiqarish kuchayib, arterial bosim ko‘tariladi",
         "Nafas butunlay to‘xtab, mushaklar bo‘shashadi",
-        "Onda-sonda noritmik nafas harakatlari paydo bo‘ladi"
+        "Onda-sonda noritmik nafas harakatlari paydo bo‘ladi",
+        "Nafas olish davomiyligi nafas chiqarishdan ortadi",
+        "Nafas chiqarish kuchayib, arterial bosim ko‘tariladi"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Inspirator hansirashda karbonat angidridi nafas markaziga ta’sir qilib, nafas olish tezlashadi va nafas olishning davomiyligi nafas chiqarishga nisbatan ortadi. Ko‘krak qafasi kengayadi, arterial bosim pasayadi, venoz bosim ortadi, puls sekinlashadi. Boshqa variantlar ekspirator, tinchlik va terminal bosqichlarga tegishli.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1931,12 +2116,12 @@
     {
       "question": "Asfiktik ta’sirdan 30 soniya ichida yurak reflektor to‘xtagan. Murda tekshiruvida umumasfiktik belgilar nega aniqlanmasligi mumkin?",
       "options": [
+        "Qon preasfiktik davrda quyuqlashgani uchun",
         "Qon to‘liq ivib, tomirlarda qotib qolgani uchun",
         "Terminal nafas bosqichi uzoq cho‘zilgani uchun",
-        "Bu belgilar rivojlanib ulgurmagani uchun",
-        "Qon preasfiktik davrda quyuqlashgani uchun"
+        "Bu belgilar rivojlanib ulgurmagani uchun"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Qisqa vaqt ichida (30 soniyagacha) yurak reflektor to‘xtasa, umumasfiktik belgilar rivojlanib ulgurmaydi va murda tekshiruvida topilmasligi mumkin. Yurakning reflektor to‘xtashi karotid sinuslari, hiqildoq, traxeya, bronxlar retseptorlarining ta’sirlanishi yoki adashgan nerv shikastlanishidan kelib chiqadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1947,12 +2132,12 @@
     {
       "question": "Qutqarib olingan jabrlanuvchi komadan chiqmoqda, talvasalar yo‘q, hush asta tiklanib, sopor holati kuzatilmoqda. Bu postasfiktik holatning qaysi davri?",
       "options": [
+        "Karaxtlik davri",
         "Asfiktik koma davri",
         "Dezorientatsiya va xotira buzilishi davri",
-        "Qoldiq oqibatlar davri",
-        "Karaxtlik davri"
+        "Qoldiq oqibatlar davri"
       ],
-      "correct_index": 3,
+      "correct_index": 0,
       "explanation": "Karaxtlik davrida jabrlanuvchi komadan chiqa boshlaydi, talvasalar bo‘lmaydi, hush asta tiklanadi. Dastlab sopor kuzatiladi, keyin chuqur, so‘ngra yengil karaxtlikka o‘tadi, davr oxirida uyquchanlik bo‘ladi. Koma davrida esa talvasalar va reflekslar buzilishi bo‘ladi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1963,12 +2148,12 @@
     {
       "question": "Murda chalqancha yotgan, yuz va bo‘yin sianozi aniqlanmadi. Mexanik asfiksiya bo‘lgan taqdirda sianoz nega yo‘qolgan bo‘lishi mumkin?",
       "options": [
+        "Tez o‘lim belgilari to‘liq rivojlangani uchun",
         "Qonning pastga oqib tushishi sababli",
         "Katexolaminlar ta’siri tufayli",
-        "Subkonyunktival ekximozlar paydo bo‘lgani uchun",
-        "Tez o‘lim belgilari to‘liq rivojlangani uchun"
+        "Subkonyunktival ekximozlar paydo bo‘lgani uchun"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Yuz va bo‘yin sianozi hansirash paytidagi talvasalarda paydo bo‘ladi, lekin turg‘un belgi emas. Murda chalqancha yotganda qonning pastga oqib tushishi natijasida u yo‘qolishi mumkin. Murda yuzi bilan pastga yotganda esa asfiksiyaga aloqasiz holatlarda ham yuz ko‘kimtir bo‘lishi mumkin.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1979,12 +2164,12 @@
     {
       "question": "Qaysi belgilar guruhi mexanik asfiksiya uchun nisbatan patognomik hisoblanadi?",
       "options": [
+        "To‘q qizil suyuq qon hamda ichki a’zolar to‘laqonligi",
         "Yuz sianozi hamda qorachiqlar kengayishi (midriaz)",
         "Asfiktik yurak, kamqonlik va qisqargan taloq",
-        "Tarde dog‘lari hamda subkonyunktival ekximozlar",
-        "To‘q qizil suyuq qon hamda ichki a’zolar to‘laqonligi"
+        "Tarde dog‘lari hamda subkonyunktival ekximozlar"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Boshqa belgilar mexanik asfiksiyaga xos emas va tez o‘limning boshqa turlarida ham uchraydi. Asfiktik yurak, kamqon va qisqargan taloq (Sabinskiy belgisi) nisbatan patognomik deb ta’kidlanadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1995,12 +2180,12 @@
     {
       "question": "Yurak-qon tomir kasalligi bor erkak osilgan, murdada umumasfiktik belgilar rivojlanmagan. O‘limning qaysi mexanizmi ehtimolroq?",
       "options": [
-        "Adashgan va yuqori hiqildoq nervlari qisilishidan yurakning reflektor to‘xtashi",
         "Qizilo‘ngach to‘liq berkilib, oshqozon massasining nafas yo‘llariga aspiratsiyasi",
         "Uyqu arteriyalarining to‘liq yopilishi va bo‘yinturuq venalarining ochiq qolishi",
-        "Til osti suyagi sinishi va hiqildoq yo‘lining butunlay mexanik yopilishi"
+        "Til osti suyagi sinishi va hiqildoq yo‘lining butunlay mexanik yopilishi",
+        "Adashgan va yuqori hiqildoq nervlari qisilishidan yurakning reflektor to‘xtashi"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Adashgan nerv, yuqori hiqildoq nervi va sinokarotid tugun sohalarining qisilishi yoki cho‘zilishi, ayniqsa yurak-qon tomir kasalligida, yurakning reflektor to‘xtashiga olib keladi. Bunda asfiksiya belgilari rivojlanib ulgurmaydi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2011,12 +2196,12 @@
     {
       "question": "Bo‘yinga sochiq ustidan sirtmoq solingan, teri sathida egat yaqqol ko‘rinmaydi. Ichki tekshiruvda qaysi belgi kutiladi?",
       "options": [
-        "Amyuss belgisi: uyqu arteriyasi intimasining ko‘ndalang yorilishi",
-        "Bruardel belgisi: halqum orti sohasidagi ko‘lamli qon quyilishlar",
         "Kasper belgisi: yumshoq to‘qimalarda oqimtir yo‘lkasimon iz",
-        "Simon belgisi: bo‘yin umurtqalararo disklariga qon quyilishlar"
+        "Simon belgisi: bo‘yin umurtqalararo disklariga qon quyilishlar",
+        "Amyuss belgisi: uyqu arteriyasi intimasining ko‘ndalang yorilishi",
+        "Bruardel belgisi: halqum orti sohasidagi ko‘lamli qon quyilishlar"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "explanation": "Yumshoq sirtmoq ostida teridagi egat yaqqol bo‘lmaydi. Ichki tekshiruvda egat proeksiyasida yumshoq to‘qimalarda oqimtir yo‘lkasimon iz — “mis sim belgisi” (Kasper belgisi) aniqlanadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2027,12 +2212,12 @@
     {
       "question": "Murda bo‘ynida gorizontal, tutashgan egat qalqonsimon tog‘ay sathida va undan pastda; Amyuss, Valxer belgilari yo‘q. Bu qaysi holatga mos?",
       "options": [
-        "Tipik to‘liq osilish natijasida o‘lim holatiga",
-        "Tayanchli notipik osilish natijasida o‘lim holatiga",
         "Boshning bukilishidan pozitsion asfiksiya holatiga",
-        "Bo‘yinning sirtmoq bilan bo‘g‘ilishi holatiga"
+        "Bo‘yinning sirtmoq bilan bo‘g‘ilishi holatiga",
+        "Tipik to‘liq osilish natijasida o‘lim holatiga",
+        "Tayanchli notipik osilish natijasida o‘lim holatiga"
       ],
-      "correct_index": 3,
+      "correct_index": 1,
       "explanation": "Sirtmoq bilan bo‘g‘ishda egat odatda gorizontal, tutashgan, qalqonsimon tog‘ay sathida yoki pastroqda bo‘ladi. Bo‘yin cho‘zilishi bilan bog‘liq belgilar (Amyuss, Valxer, Simon) vujudga kelmaydi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2043,12 +2228,12 @@
     {
       "question": "Hushsiz shaxs tor bo‘shliqqa tushib, boshi oldinga bukilgan holda topilgan. Pozitsion asfiksiyada murdada qaysi o‘zgarish bo‘lishi mumkin?",
       "options": [
-        "Bo‘yin burmasi proeksiyasida yumshoq to‘qimalarda oqimtir yo‘lka",
-        "Bo‘yinda aniq, chuqur va tutashgan haqiqiy strangulyatsion egat",
         "Til osti suyagi va hiqildoq tog‘aylarining ko‘lamli sinishi",
-        "Qalqonsimon tog‘ay shoxchalari bilan uzuksimon tog‘ay sinishi"
+        "Qalqonsimon tog‘ay shoxchalari bilan uzuksimon tog‘ay sinishi",
+        "Bo‘yin burmasi proeksiyasida yumshoq to‘qimalarda oqimtir yo‘lka",
+        "Bo‘yinda aniq, chuqur va tutashgan haqiqiy strangulyatsion egat"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Pozitsion asfiksiyada strangulyatsion egat bo‘lmaydi. Bukilish burmasi egatga o‘xshashi, ichki tekshiruvda burma proeksiyasida oqimtir yo‘lka va ayrim qon quyilishlar topilishi mumkin. Til osti suyagi va hiqildoq tog‘aylari shikastlanmaydi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2059,12 +2244,12 @@
     {
       "question": "Chuchuk suvdan topilgan murdada og‘iz-burun atrofida mayda pufakli oq ko‘pik, o‘pkalar xamirsimon va ko‘lamli, visseral plevra ostida Rasskazov-Lukomskiy-Paltauf dog‘lari bor. Yurakning chap kameralaridagi qon o‘ngdagidan ochroq. Bu qaysi o‘lim turiga xos?",
       "options": [
-        "Asfiktik (spastik, «quruq») cho‘kish",
-        "Chin (aspiratsion, «ho‘l») cho‘kish",
         "Suvdagi to‘satdan (reflektor) o‘lim",
-        "Murdaning o‘limdan so‘ng suvga tushishi"
+        "Murdaning o‘limdan so‘ng suvga tushishi",
+        "Asfiktik (spastik, «quruq») cho‘kish",
+        "Chin (aspiratsion, «ho‘l») cho‘kish"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Chin cho‘kishda suv alveolalargacha yetadi. Natijada turg‘un oq ko‘pik, gipergidriya holatidagi xamirsimon o‘pka, Rasskazov-Lukomskiy-Paltauf dog‘lari va chap yurak qonining ochroqligi (Kasper belgisi) paydo bo‘ladi. Asfiktik cho‘kishda ko‘pik oz va noturg‘un, o‘pka quruq bo‘ladi, bu dog‘lar uchramaydi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2075,12 +2260,12 @@
     {
       "question": "Suv havzasidan topilgan murdada qo‘l va oyoq kaftlarining terisi tirnoqlari bilan «o‘lim qo‘lqopi», «o‘lim paypog‘i» tarzida ajralmoqda. Murdaning suvda bo‘lish muddati taxminan qancha?",
       "options": [
+        "Taxminan 2-3 hafta atrofida",
         "Bir necha soat atrofida",
         "Taxminan 2-5 kun atrofida",
-        "Taxminan 5-8 kun atrofida",
-        "Taxminan 2-3 hafta atrofida"
+        "Taxminan 5-8 kun atrofida"
       ],
-      "correct_index": 3,
+      "correct_index": 0,
       "explanation": "Qo‘l-oyoq barmoqlari bir necha soatdan so‘ng oqarib bujmayadi. 2-5 kunda kaft yuzasi, 5-8 kunda tovon yuzasi qamrab olinadi. 2-3 haftadan so‘ng kaftlar terisi tirnoqlari bilan ajraladi. Suv harorati, kiyim va yosh bu o‘zgarishlar tezligiga ta’sir qiladi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2091,12 +2276,12 @@
     {
       "question": "Stadiondan chiqishda olomonda qisilib halok bo‘lgan shaxs murdasida yuz shishgan va ko‘kimtir. Yuz, bo‘yin va ko‘krakning yuqori terisida hamda ko‘z shilliq pardalarida turli o‘lchamdagi qon quyilishlar bor. Bu qaysi belgi?",
       "options": [
+        "Kasper belgisi (chap yurak qoni ochroq)",
         "«Ekximotik niqob» (Olive-Danjer belgisi)",
         "Sabinskiy belgisi (qisqargan taloq)",
-        "Krushevskiy belgisi (oq ko‘pik)",
-        "Kasper belgisi (chap yurak qoni ochroq)"
+        "Krushevskiy belgisi (oq ko‘pik)"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Kompression asfiksiyada yuqori kovak venasi tizimidan qon o‘tishi buziladi. Natijada yuz shishadi, ko‘karadi, yuz-bo‘yin-ko‘krak yuqori qismi terisi va ko‘z shilliq pardalariga qon quyiladi. Bu «ekximotik niqob» (Olive-Danjer belgisi) deyiladi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2123,12 +2308,12 @@
     {
       "question": "Murda tekshiruvida nafas yo‘llarida oz miqdorda qusuq massa topildi, kichik bronxlar va alveolalarda u yo‘q. Reanimatsiyada yurakka bilvosita massaj qilingan. Bu topilma qanday baholanadi?",
       "options": [
-        "Obturatsion asfiksiyaning aniq isboti deb",
-        "Postmortem tushgan bo‘lishi mumkin, isbot emas",
         "Asfiktik cho‘kishning patognomik belgisi deb",
-        "Qusuq aspiratsiyasidan o‘lim sababi deb"
+        "Qusuq aspiratsiyasidan o‘lim sababi deb",
+        "Obturatsion asfiksiyaning aniq isboti deb",
+        "Postmortem tushgan bo‘lishi mumkin, isbot emas"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Qusuq massaning nafas yo‘llarida topilishi hamma vaqt obturatsion asfiksiyani bildirmaydi. U reanimatsiyada yurak massajida, murda transportirovkasida va chirishda ham tushishi mumkin. Bunda massa oz bo‘ladi, kichik bronxlar va alveolalarda aniqlanmaydi.",
       "source": {
         "author": "G‘iyosov Z.A.",

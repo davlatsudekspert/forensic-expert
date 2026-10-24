@@ -76,31 +76,30 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Issiqlik ajralish yo‘llari",
-        "nodes": [],
-        "header": [
-          "Yo‘l",
-          "Ulushi"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Nurlanish",
+            "value": "55 %"
+          },
+          {
+            "label": "Ter bilan",
+            "value": "27 %"
+          },
+          {
+            "label": "O‘tkazish",
+            "value": "15 %"
+          },
+          {
+            "label": "Turli ajratmalar",
+            "value": "3 %"
+          },
+          {
+            "label": "Normal tana harorati",
+            "value": "36–37 °S"
+          }
         ],
-        "rows": [
-          [
-            "Nurlanish",
-            "55%"
-          ],
-          [
-            "Ter bilan",
-            "27%"
-          ],
-          [
-            "O‘tkazish",
-            "15%"
-          ],
-          [
-            "Turli ajratmalar",
-            "3%"
-          ]
-        ]
+        "caption": "Issiqlik ajralish yo‘llari"
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama savollari: 1) Nega nam va shamolsiz muhitda issiqlik ajralishi qiyinlashadi? 2) Qaysi yo‘l issiqlik ajratishda eng katta ulushga ega? Doskada chizish: odam siluetini chizib, to‘rt ajralish yo‘lini o‘q bilan ko‘rsating. Tipik xato: ter orqali ajralish eng katta ulush deb o‘ylash (aslida nurlanish — 55%)."
     },
@@ -136,27 +135,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ta’sir turlari va oqibati",
-        "nodes": [],
-        "header": [
-          "Ta’sir turi",
-          "Oqibati"
+        "kind": "tree",
+        "root": "Yuqori harorat ta’siri",
+        "children": [
+          {
+            "label": "Umumiy: butun tana",
+            "items": [
+              "Issiq urishi"
+            ]
+          },
+          {
+            "label": "Umumiy: bosh isishi",
+            "items": [
+              "Quyosh urishi (insolyasiya)"
+            ]
+          },
+          {
+            "label": "Mahalliy",
+            "items": [
+              "Termik kuyish"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Umumiy (butun tana)",
-            "Issiq urishi"
-          ],
-          [
-            "Umumiy (bosh isishi)",
-            "Quyosh urishi (insolyasiya)"
-          ],
-          [
-            "Mahalliy",
-            "Termik kuyish"
-          ]
-        ]
+        "caption": "Ta’sir turlari va oqibati"
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama savollari: 1) Qanday sharoitlar issiq urishiga moyillik tug‘diradi? 2) Qaysi omillar mahalliy ta’sirni keltirib chiqaradi? Doskada chizish: umumiy va mahalliy ta’sirni ikki shoxli daraxt shaklida chizdiring. Tipik xato: quyosh urishini mahalliy ta’sir deb hisoblash; u umumiy ta’sirga kiradi."
     },
@@ -182,7 +183,7 @@
           "uncertain": false
         },
         {
-          "text": "Havo va namlik o‘tkazmaydigan kiyim moyillik yaratadi. Yurak-qon tomir kasalliklari, qalqonsimon bez giperfunksiyasi, semizlik va keksalikda issiq urish ko‘proq uchraydi.",
+          "text": "Havo va namlik o‘tkazmaydigan kiyim moyillik yaratadi. Yurak-qon tomir kasalligi, qalqonsimon bez giperfunksiyasi, semizlik va keksalikda issiq urish ko‘proq.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -200,7 +201,41 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Issiq urishiga moyillik",
+        "children": [
+          {
+            "label": "Muhit",
+            "items": [
+              "Yuqori harorat va namlik",
+              "Shamol yo‘q"
+            ]
+          },
+          {
+            "label": "Faoliyat",
+            "items": [
+              "Issiq sex, og‘ir ish",
+              "Sportchi, harbiy mashq"
+            ]
+          },
+          {
+            "label": "Kiyim",
+            "items": [
+              "Havo, namlik o‘tkazmaydigan kiyim"
+            ]
+          },
+          {
+            "label": "Kasallik va yosh",
+            "items": [
+              "Yurak-qon tomir, qalqonsimon bez",
+              "Semizlik, keksalik",
+              "1 yoshgacha bolalar"
+            ]
+          }
+        ],
+        "caption": "Moyillik omillari"
+      },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega issiq urish faqat ob-havoga bog‘liq emas? Nega go‘daklar xavf guruhida? Doskada chizing: ikki pallali tarozi, bir pallada «issiqlik ishlab chiqarilishi», ikkinchisida «issiqlik ajratilishi». Tipik xato: talabalar issiq urishni faqat yozgi quyoshda bo‘ladi deb o‘ylaydi, issiq sex va og‘ir mehnatni unutadi."
     },
     {
@@ -281,36 +316,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ikki shakl solishtirmasi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "O‘tkir shakl",
-          "Uzaytirilgan"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "O‘tkir shakl",
+            "items": [
+              "O‘ta baland harorat, ko‘nikmagan",
+              "Birdan hush yo‘qoladi, koma",
+              "Yurak va nafas keskin buziladi",
+              "Qisqa muddatda o‘lim"
+            ]
+          },
+          {
+            "title": "Uzaytirilgan shakl",
+            "items": [
+              "Nisbatan uzoqroq ta’sir",
+              "Belgilar sekin-asta oshadi",
+              "Davrlar: susayish, qo‘zg‘alish, holsizlik",
+              "Holsizlik — predagonal davr"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Sharoit",
-            "O‘ta baland harorat, ko‘nikmagan",
-            "Nisbatan uzoqroq ta’sir"
-          ],
-          [
-            "Boshlanish",
-            "Birdan hush yo‘qoladi, koma",
-            "Belgilar sekin-asta oshadi"
-          ],
-          [
-            "Tizimlar",
-            "Yurak va nafas keskin buziladi",
-            "Davrlar: susayish, qo‘zg‘alish, holsizlik"
-          ],
-          [
-            "Oqibat",
-            "Qisqa muddatda o‘lim",
-            "Holsizlik davri predagonal hisoblanadi"
-          ]
-        ]
+        "caption": "Issiq urishining ikki shakli"
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: nega o‘rganmagan organizmda o‘tkir shakl xavfliroq? Uzaytirilgan shaklda uch davrni sanab bering. Doskada chizing: solishtirma jadvalni talabalar daftarga ko‘chirsin. Tipik xato: o‘tkir shaklga ham uch davrni yozish. Manbada uch davr uzaytirilgan shakl uchun keltirilgan."
     },
@@ -346,17 +373,26 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Davrlar zanjiri",
-        "nodes": [
-          "1. MNT susayishi (latent davr)",
-          "2. Qo‘zg‘alish davri",
-          "3. Holsizlik (predagonal) davri",
-          "Harorat 42-43°S dan oshadi",
-          "Nafasning birlamchi to‘xtashi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. MNT susayishi",
+            "text": "Qisqa latent davr"
+          },
+          {
+            "title": "2. Qo‘zg‘alish",
+            "text": "Bezovtalik, bosh og‘rig‘i, taxikardiya, hansirash"
+          },
+          {
+            "title": "3. Holsizlik",
+            "text": "Harorat 41–42 °S dan oshadi; koma, talvasa (predagonal)"
+          },
+          {
+            "title": "Oqibat",
+            "text": "42–43 °S dan oshsa nafas birlamchi to‘xtaydi"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Uzaytirilgan shaklning davrlari"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: nega birinchi davr \"latent\" deyiladi? Qo‘zg‘alish davrida qaysi tizimlar buziladi? Doskada: uch davr va o‘lim zanjirini strelkalar bilan chizdiring. Tipik xato: holsizlik davrini boshlang‘ich davr deb o‘ylash; aslida u predagonal davr."
     },
@@ -478,36 +514,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Issiq urishi va quyosh urishi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Issiq urishi",
-          "Quyosh urishi"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Issiq urishi",
+            "items": [
+              "Issiqlik ko‘p ishlanadi, kam ajraladi",
+              "Qon quyuqlashadi, gipoksiya",
+              "Harorat 41–42 °S dan oshishi mumkin",
+              "42–43 °S dan oshsa nafas to‘xtaydi"
+            ]
+          },
+          {
+            "title": "Quyosh urishi",
+            "items": [
+              "Quyosh nuri boshga uzoq ta’sir qiladi",
+              "Bosh isib, MNT buziladi",
+              "Harorat salmoqli ko‘tarilmaydi",
+              "Nafas markazi falaji mumkin"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Sababi",
-            "Issiqlik ko‘p ishlanadi, kam ajraladi",
-            "Quyosh nuri boshga uzoq ta’sir qiladi"
-          ],
-          [
-            "Asosiy zarar",
-            "Qon quyuqlashadi, gipoksiya",
-            "Bosh isib, MNT buziladi"
-          ],
-          [
-            "Tana harorati",
-            "41–42°S dan oshishi mumkin",
-            "Salmoqli ko‘tarilish xos emas"
-          ],
-          [
-            "O‘lim mexanizmi",
-            "42–43°S dan oshsa nafas to‘xtaydi",
-            "Nafas markazi falaji mumkin"
-          ]
-        ]
+        "caption": "Issiq urishi va quyosh urishi"
       },
       "teacher_notes": "Vaqt: 6 daq. MNT — markaziy nerv tizimi (birinchi uchrashganda ochib bering). Muhokama: nega ochiq joyda bosh kiyimsiz yurish quyosh urishiga olib keladi? Nima uchun issiq sexda ishlovchi va quyoshda qolgan odam holatlari farqlanadi? Doskada chizish: ikki ustunli solishtirish jadvalini daftarga ko‘chirtiring. Tipik xato: talabalar quyosh urishida ham tana harorati keskin ko‘tariladi deb o‘ylaydi."
     },
@@ -825,7 +853,26 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Yuzaki (I–II daraja)",
+            "items": [
+              "Barcha issiqlik manbalaridan",
+              "I: qizarish; II: pufak"
+            ]
+          },
+          {
+            "title": "Chuqur (III–IV daraja)",
+            "items": [
+              "III: nekroz",
+              "IV: mushak, boylam, suyak — faqat alanga"
+            ]
+          }
+        ],
+        "caption": "Yuzaki va chuqur kuyishlar"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: 1) Nega bitta jarohatda bir necha daraja uchraydi? 2) Ekspertiza xulosasida IV daraja topilsa, manba haqida nima deyish mumkin? Doskada: ikki ustunli ro‘yxat chizing: chap tomonda yuzaki (I-II), o‘ng tomonda chuqur (III-IV). Tipik xato: IV darajani qaynoq suyuqlik yoki bug‘ ta’siriga bog‘lash."
     },
     {
@@ -903,33 +950,98 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Manbalarni solishtirish",
-        "nodes": [],
-        "header": [
-          "Manba",
-          "Kuyish xususiyati",
-          "Qo‘shimcha belgi"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Issiq suyuqlik",
+            "items": [
+              "Yuzaki, oqmalar shaklida",
+              "Soch va kiyim shikastlanmaydi"
+            ]
+          },
+          {
+            "title": "Alanga",
+            "items": [
+              "Chuqur, tilsimon yaralar",
+              "Soch, kiyim shikastlanadi; qurum"
+            ]
+          },
+          {
+            "title": "Qizdirilgan jism",
+            "items": [
+              "Chuqur, yuzasi cheklangan",
+              "Shakli kontakt yuziga mos"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Issiq suyuqlik",
-            "Yuzaki, oqmalar shaklida",
-            "Soch va kiyim shikastlanmaydi"
-          ],
-          [
-            "Alanga",
-            "Chuqur, tilsimon shaklli yaralar",
-            "Soch, kiyim shikastlanadi; qurum"
-          ],
-          [
-            "Qizdirilgan jism",
-            "Chuqur, yuzasi cheklangan",
-            "Shakli jismning kontakt yuziga mos"
-          ]
-        ]
+        "caption": "Manbalarni solishtirish"
       },
       "teacher_notes": "Vaqt: 6-7 daq. Muhokama: 1) Soch va kiyim shikastlanmagan, yaralar oqma shaklida bo‘lsa, qaysi manba taxmin qilinadi? 2) Qurum izi nimani ko‘rsatadi? Doskada: uchta manba bo‘yicha jadvalni talabalar bilan birga chizing. Tipik xato: issiq suyuqlik kuyishini chuqur deb o‘ylash; aslida u yuzaki bo‘ladi, chuqur kuyish alanga va qizdirilgan jism uchun xos. Diqqat: issiq suyuqlik ≠ alanga (soch-kiyim holati farq qiladi)."
+    },
+    {
+      "title": "Simpson: qaynoq suyuqlik kuyishi va uning belgilari",
+      "bullets": [
+        {
+          "text": "Qaynoq suyuqlikka botirilganda «suyuqlik darajasi» chizig‘i, sachrasa — nuqtasimon o‘choqlar, oqsa — tortishish yo‘nalishidagi oqmalar hosil bo‘ladi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "170–171"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oqmalar tortishish bilan oqadi, shu sabab jabrlanganning suyuqlik oqqan vaqtdagi holatini ko‘rsatadi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "171"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kiyim suyuqlikni terida ushlab turadi: ho‘l kiyim ostidagi teri qattiq shikastlanadi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "171"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tasodifiy (to‘kilgan) kuyishda chegara va chuqurlik notekis; majburiy botirishda simmetrik «qo‘lqop va paypoq» shakli, burmalar saqlanadi, chuqurlik bir xil.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "171–172"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Tasodifiy (oqib tushgan)",
+            "items": [
+              "Notekis chegara va chuqurlik",
+              "«Qo‘lqop va paypoq» shakli yo‘q",
+              "Oqib tushish izlari"
+            ]
+          },
+          {
+            "title": "Qasddan (botirish)",
+            "items": [
+              "Simmetrik «qo‘lqop va paypoq»",
+              "Teri burmalari, dumba saqlanadi",
+              "Chuqurlik bir xil; aniq suyuqlik chizig‘i"
+            ]
+          }
+        ],
+        "caption": "Simpson: bolalardagi kuyishlar farqi"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega oqmalar jabrlanganning holatini ko‘rsatadi? 2) Qasddan botirishda qaysi joylar saqlanadi? Doskaga chizing: ikki ustunli taqqoslash. Tipik xato: birgina kuyish shakliga qarab xulosa qilish (boshqa belgilar ham baholanadi).",
+      "source_note_removed": null
     },
     {
       "title": "Jabrlanganning holati va nafas yo‘llari kuyishi",
@@ -944,7 +1056,7 @@
           "uncertain": false
         },
         {
-          "text": "Alangadan kuyishda “alanga tillari” tananing yuqori joylashgan sohalari tomon yo‘naladi. Bu yaralar jabrlanganning hodisa paytidagi holatini baholashga yordam beradi.",
+          "text": "Alangadan kuyishda “alanga tillari” tananing yuqori sohalari tomon yo‘naladi. Bu yaralar jabrlanganning hodisa paytidagi holatini baholashga yordam beradi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -962,7 +1074,7 @@
           "uncertain": false
         },
         {
-          "text": "Chuqur kuyishlar ko‘pincha yiringlaydi va juda sekin tuzaladi. Ular bo‘g‘imlar harakatini cheklovchi qo‘pol chandiq qoldirib, tananing badburushligiga olib kelishi mumkin.",
+          "text": "Chuqur kuyishlar ko‘pincha yiringlaydi va juda sekin tuzaladi; bo‘g‘imlar harakatini cheklovchi qo‘pol chandiq qoldirib, badburushlikka olib kelishi mumkin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -973,6 +1085,77 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Oqmalar pastga, alanga tillari yuqoriga yo‘nalishi jabrlanganning holati haqida nima deydi? 2) Nafas yo‘llari kuyishi qaysi omillar uchun xos? Doskada: tik turgan odam sxemasini chizib, oqma va alanga tili yo‘nalishini o‘qlar bilan ko‘rsating. Tipik xato: nafas yo‘llari kuyishini har qanday alanga ta’siriga xos deb hisoblash; manbada u faqat bug‘ va issiq gazlar uchun xos deyilgan."
+    },
+    {
+      "title": "Simpson: kuyish shiddati va issiqlik chegaralari",
+      "bullets": [
+        {
+          "text": "Epidermis to‘liq nekrozi 44 °S da 6 soatda, 60 °S da 5 soniyada, 70 °S da 1 soniyadan kamda yuz beradi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "169"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Quruq issiqlik jarohati — kuyish (burn), nam issiqlik (issiq suv, bug‘) — qaynoq suyuqlik kuyishi (scald).",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "169"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "An’anaviy tasnif: 1-daraja — eritema, pufak; 2-daraja — epidermis to‘liq qalinligi; 3-daraja — teri osti to‘qimalargacha, ba’zan ko‘mirlanish.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "169"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kuyish maydoni (to‘qqizliklar qoidasi, Lund–Browder) chuqurligidan muhimroq bo‘lishi mumkin; xavf: maydon, yosh va nafas yo‘llari shikasti.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "170"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Epidermis nekrozi 44 °S",
+            "value": "6 soat"
+          },
+          {
+            "label": "Epidermis nekrozi 60 °S",
+            "value": "5 soniya"
+          },
+          {
+            "label": "Epidermis nekrozi 70 °S",
+            "value": "< 1 soniya"
+          },
+          {
+            "label": "Yuzaki qisman qalinlik",
+            "value": "10–14 kun",
+            "unit": "tuzalish"
+          },
+          {
+            "label": "Tizimli yallig‘lanish",
+            "value": "> 20 %",
+            "unit": "tana yuzasi"
+          }
+        ],
+        "caption": "Simpson: harorat–vaqt va maydon"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega harorat oshgani sari ta’sir vaqti keskin qisqaradi? 2) Kuyish maydoni nega chuqurligidan muhimroq bo‘lishi mumkin? Doskaga chizing: harorat–vaqt jadvali. Tipik xato: faqat chuqurlikka qarab xavfni baholash.",
+      "source_note_removed": null
     },
     {
       "title": "Kuyish maydoni: to‘qqizliklar qoidasi",
@@ -1109,31 +1292,25 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Xavfli kuyish chegaralari",
-        "nodes": [],
-        "header": [
-          "Daraja",
-          "Tana yuzasi",
-          "Baho"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "III–IV daraja",
+            "value": "> 10 %",
+            "unit": "tana yuzasi"
+          },
+          {
+            "label": "III daraja",
+            "value": "> 15 %",
+            "unit": "tana yuzasi"
+          },
+          {
+            "label": "II daraja",
+            "value": "> 20 %",
+            "unit": "tana yuzasi"
+          }
         ],
-        "rows": [
-          [
-            "III-IV daraja",
-            "10% dan ortiq",
-            "Hayot uchun xavfli"
-          ],
-          [
-            "III daraja",
-            "15% dan ortiq",
-            "Hayot uchun xavfli"
-          ],
-          [
-            "II daraja",
-            "20% dan ortiq",
-            "Hayot uchun xavfli"
-          ]
-        ]
+        "caption": "Hayot uchun xavfli kuyish"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun chuqurroq kuyishda foiz chegarasi pastroq? 2) Nafas yo‘llari kuyishi qachon xavfli hisoblanadi? Doskada: jadvalni daftarga ko‘chirib, har qatorga bittadan misol yozdiring. Tipik xato: II va III darajaning foiz chegaralarini (20% va 15%) chalkashtirish. Tezkor savol: tananing 12% yuzasida III-IV daraja kuyish xavfli bo‘ladimi?"
     },
@@ -1141,7 +1318,7 @@
       "title": "Kuyish kasalligi",
       "bullets": [
         {
-          "text": "I darajali kuyish tana yuzasining 50%idan, II–IV darajali kuyish 10–15%idan ortig‘ini egallab, o‘lim darhol bo‘lmasa, ichki a’zolarda o‘zgarishlar vujudga keladi.",
+          "text": "I darajali kuyish tana yuzasining 50%idan, II–IV darajali kuyish 10–15%idan ortig‘ini egallab, o‘lim darhol bo‘lmasa, ichki a’zolarda o‘zgarish vujudga keladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1150,7 +1327,7 @@
           "uncertain": false
         },
         {
-          "text": "Kasallik og‘irligi va oqibati kuyish chuqurligi, maydoni va boshqa omillarga bog‘liq. Kechuvida to‘rt davr bor: shok, toksemiya, septikotoksemiya, rekonvalessensiya.",
+          "text": "Kasallik og‘irligi kuyish chuqurligi, maydoni va boshqa omillarga bog‘liq. Kechuvida to‘rt davr bor: shok, toksemiya, septikotoksemiya, rekonvalessensiya.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1212,36 +1389,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Kuyish kasalligi davrlari",
-        "nodes": [],
-        "header": [
-          "Davr",
-          "Muddat",
-          "Mohiyati"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Kuyish shoki",
+            "text": "Odatda 1 sutkagacha, ba’zan 2–3 kun; o‘lim xavfi"
+          },
+          {
+            "title": "Toksemiya",
+            "text": "1–2 hafta: oqsil parchalanishidan intoksikatsiya"
+          },
+          {
+            "title": "Septikotoksemiya",
+            "text": "2–3 hafta – bir necha oy: yiringlash, pnevmoniya, sepsis"
+          },
+          {
+            "title": "Rekonvalessensiya",
+            "text": "Yaralar bitadi, funksiya tiklanadi"
+          }
         ],
-        "rows": [
-          [
-            "Kuyish shoki",
-            "Odatda 1 sutkagacha, ba’zan 2-3",
-            "Og‘ir shok va o‘lim xavfi"
-          ],
-          [
-            "Toksemiya",
-            "1-2 hafta",
-            "Oqsil parchalanishidan intoksikatsiya"
-          ],
-          [
-            "Septikotoksemiya",
-            "2-3 hafta – bir necha oy",
-            "Yiringlash, pnevmoniya, sepsis"
-          ],
-          [
-            "Rekonvalessensiya",
-            "Muddati ko‘rsatilmagan",
-            "Yaralar bitadi, funksiya tiklanadi"
-          ]
-        ]
+        "caption": "Kuyish kasalligi davrlari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega shok davrida nafas yo‘llari kuyishi xavfni oshiradi? 2) Septikotoksemiyada qanday asoratlar kuzatiladi? Doskada 4 davrni vaqt chizig‘ida chizdiring va muddatlarini yozdiring. Tipik xato: toksemiya va septikotoksemiyani aralashtirish yoki shok davrini 1 sutka bilan cheklab qo‘yish (ba’zan 2-3 sutka)."
     },
@@ -1328,7 +1495,38 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Alanga hayotiyligi mezonlari",
+        "children": [
+          {
+            "label": "Qurum",
+            "items": [
+              "Nafas yo‘li, qizilo‘ngach, oshqozon"
+            ]
+          },
+          {
+            "label": "Karboksigemoglobin",
+            "items": [
+              "O‘limdan keyin ≤20 %",
+              "Hayotda 60 % gacha"
+            ]
+          },
+          {
+            "label": "Qovoq belgisi",
+            "items": [
+              "«G‘oz panjasi»"
+            ]
+          },
+          {
+            "label": "Mikroskopiya",
+            "items": [
+              "Teri, yumshoq to‘qima, a’zolar"
+            ]
+          }
+        ],
+        "caption": "Hal qiluvchi dalillar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega yong‘inda topilgan har bir kuygan murda alanga tufayli o‘lgan deb hisoblanmaydi? 2) Qanday tekshiruvlar kerak bo‘ladi? Doskada savol chizing: ‘alanga — tirikmi / o‘likmi?’ va mezonlarni ikki ustunga ajrating. Tipik xato: murdaning ko‘mirlanishini o‘lim sababi deb qabul qilish."
     },
     {
@@ -1363,26 +1561,24 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Karboksigemoglobin: hayot va o‘lim",
-        "nodes": [],
-        "header": [
-          "Ko‘rsatkich",
-          "O‘limdan keyin",
-          "Hayotda"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "O‘limdan keyin",
+            "items": [
+              "Karboksigemoglobin 20 % dan oshmaydi",
+              "Qon yuza tomirlarda mumkin"
+            ]
+          },
+          {
+            "title": "Hayotda",
+            "items": [
+              "Karboksigemoglobin 60 % gacha",
+              "Qon yurak, chuqur tomirlarda"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Karboksigemoglobin",
-            "20% dan oshmaydi",
-            "60% gacha"
-          ],
-          [
-            "Qon topilishi",
-            "Yuza tomirlarda mumkin",
-            "Yurak, chuqur tomirlarda"
-          ]
-        ]
+        "caption": "Karboksigemoglobin: hayot va o‘lim"
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Nega yong‘inda o‘lim ko‘pincha is gazidan bo‘ladi, murda esa keyin ko‘mirlanadi? 2) Qurum qaysi a’zolarda topilsa hayotiylikni isbotlaydi? Doskada: nafas yo‘lidan oshqozongacha qurum yo‘lini va 20% hamda 60% chegaralarini chizing. Tipik xato: murda ko‘mirlangani uchun alanga tirik paytda ta’sir qilgan, deb xulosa qilish. Qurum va karboksigemoglobin bilan tekshirish kerak."
     },
@@ -1390,7 +1586,7 @@
       "title": "Namuna olish va “g‘oz panjasi” belgisi",
       "bullets": [
         {
-          "text": "Alanganing hayotiy ta’sirini aniqlash uchun qon yurak kameralari va chuqur tomirlardan olinadi, chunki yuza tomirda o‘limdan keyin ham karboksigemoglobin bo‘lishi mumkin.",
+          "text": "Alanga hayotiy ta’sirini aniqlash uchun qon yurak kameralari va chuqur tomirlardan olinadi; yuza tomirda o‘limdan keyin ham karboksigemoglobin bo‘lishi mumkin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1461,31 +1657,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Gematoma va pufak belgilari",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Hayotda/travma",
-          "O‘limdan keyin"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Travma (hayotda)",
+            "items": [
+              "Urchuqsimon gematoma",
+              "Qattiq pardaga birikkan",
+              "Kuyish pufagida oqsil 2 barobar ko‘p"
+            ]
+          },
+          {
+            "title": "Alanga (o‘limdan keyin)",
+            "items": [
+              "O‘roqsimon gematoma",
+              "Qattiq pardaga birikmagan",
+              "Pufakda oqsil kamroq"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Gematoma shakli",
-            "Urchuqsimon",
-            "O‘roqsimon"
-          ],
-          [
-            "Qattiq pardaga",
-            "Birikkan",
-            "Birikmagan"
-          ],
-          [
-            "Pufakda oqsil",
-            "2 barobar ko‘p",
-            "Kamroq"
-          ]
-        ]
+        "caption": "Gematoma va pufak belgilari"
       },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Yong‘indan keyin topilgan epidural gematomani qanday farqlaysiz? 2) Pufak suyuqligi tekshiruvi nimani ko‘rsatadi? Doskada: urchuqsimon va o‘roqsimon gematomalarni qattiq parda bilan birga chizing. Tipik xato: har qanday epidural gematomani travma deb hisoblash. Diqqat: urchuqsimon ≠ o‘roqsimon. Hayotiylikni bitta belgi bilan emas, belgilar majmui va mikroskopik tekshiruv bilan baholang."
     },
@@ -1578,6 +1769,88 @@
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Mushaklar kaltalashishi nega qo‘l-oyoqni bukadi? 2) Terida yoriqlar nega har xil joyda hosil bo‘ladi? Doskada: 4 bosqichli zanjirni talabalar bilan birga chizing. Tipik xato: “bokser pozasi”ni “sovuq qotgan odam pozasi” bilan aralashtirish. Ular boshqa sabab va mexanizmga ega."
     },
     {
+      "title": "Simpson: yong‘in murdasi, o‘lim mexanizmlari va artefaktlar",
+      "bullets": [
+        {
+          "text": "Yong‘in murdasi tekshiruvi: shaxsni aniqlash, yong‘inda tirik bo‘lganini, qutula olmagan sababini, o‘lim sababi va turini aniqlash.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "173"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ovoz yorig‘idan pastda qurum, nafas yo‘llari termik shikasti hayotiylikni ko‘rsatadi; karboksigemoglobin >50 % yaxshi dalil, past qiymat inkor etmaydi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "173–174"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ko‘pchilik yong‘in qurboni kuyishdan emas, tutun, CO va issiq gazlar nafas olishdan o‘ladi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "174"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Artefaktlar: bokser pozasi, kuygan terining yorilishi, issiqlikdan sinishlar va epidural qon quyilish; hayotiylik belgisi yo‘qligi ularni travmadan farqlaydi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "174–175"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Yong‘in murdasi (Simpson)",
+        "children": [
+          {
+            "label": "Tekshiruv maqsadlari",
+            "items": [
+              "Shaxsni aniqlash",
+              "Yong‘inda tirikmi?",
+              "O‘lim sababi va turi"
+            ]
+          },
+          {
+            "label": "Hayotiylik belgilari",
+            "items": [
+              "Ovoz yorig‘idan pastda qurum",
+              "Karboksigemoglobin >50 %",
+              "Past qiymat inkor etmaydi"
+            ]
+          },
+          {
+            "label": "O‘lim mexanizmlari",
+            "items": [
+              "Is gazi, kislorod kamayishi",
+              "Issiq gazdan laringospazm",
+              "Shok, travma"
+            ]
+          },
+          {
+            "label": "O‘limdan keyingi artefakt",
+            "items": [
+              "Bokser pozasi",
+              "Terining yorilishi",
+              "Issiqlikdan epidural qon"
+            ]
+          }
+        ],
+        "caption": "Simpson: yong‘in murdasi"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega past karboksigemoglobin tirik bo‘lmaganini isbotlamaydi? 2) Issiqlik epiduralini travmadan nima ajratadi? Doskaga chizing: daraxt. Tipik xato: kuygan murdadagi barcha yoriq va sinishni travmaga bog‘lash.",
+      "source_note_removed": null
+    },
+    {
       "title": "Murdaning yonish muddati va kulni tekshirish",
       "bullets": [
         {
@@ -1609,27 +1882,22 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Yonish muddatlari",
-        "nodes": [],
-        "header": [
-          "Holat",
-          "Muddat"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Go‘dak murdasi",
+            "value": "2–3 soat"
+          },
+          {
+            "label": "Katta yoshli murda",
+            "value": "≈20 soat"
+          },
+          {
+            "label": "Krematoriy (tabiiy gaz)",
+            "value": "< 1 soat (kattalar)"
+          }
         ],
-        "rows": [
-          [
-            "Go‘dak murdasi",
-            "2-3 soat ichida kulga aylanadi"
-          ],
-          [
-            "Katta yoshli murda",
-            "20 soatga yaqin"
-          ],
-          [
-            "Krematoriy, tabiiy gaz",
-            "bir soatdan kam (kattalar)"
-          ]
-        ]
+        "caption": "Kulga aylanish muddati"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega krematoriy va yong‘in muddatlari bunchalik farq qiladi? 2) Kuldan qanday masalalarni hal etish mumkin? Doskada: uch qatorli solishtirish jadvalini chizing. Tipik xato: go‘dak va kattalar muddatlarini, shuningdek krematoriy va yong‘in sharoitini aralashtirish."
     },
@@ -1655,7 +1923,7 @@
           "uncertain": false
         },
         {
-          "text": "Nafas yo‘llari, qizilo‘ngach, oshqozonda qurum bo‘lsa, alanga hayot paytida ta’sir qilgan. Qonda karboksigemoglobin o‘limdan keyin 20% dan oshmaydi, tirikligida 60% gacha.",
+          "text": "Nafas yo‘llari, qizilo‘ngach, oshqozonda qurum bo‘lsa, alanga hayotda ta’sir qilgan. Karboksigemoglobin o‘limdan keyin 20% dan oshmaydi, tirikligida 60% gacha.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1708,17 +1976,30 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Yong‘in murdasi: ketma-ketlik",
-        "nodes": [
-          "Tashqi ko‘zdan kechirish",
-          "Qon: yurak va chuqur tomirlar",
-          "Namuna: chuqur mushaklar",
-          "Gistologiya: teri, a’zolar",
-          "Xulosa: hayotiy yoki keyingi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Tashqi ko‘zdan kechirish",
+            "text": "Qurum, «g‘oz panjasi» belgisi"
+          },
+          {
+            "title": "Qon namunasi",
+            "text": "Yurak kameralari va chuqur tomirlardan"
+          },
+          {
+            "title": "Mushak namunasi",
+            "text": "Chuqur qatlamdan (karboksimioglobin)"
+          },
+          {
+            "title": "Gistologiya",
+            "text": "Teri, yumshoq to‘qima, ichki a’zolar"
+          },
+          {
+            "title": "Xulosa",
+            "text": "Alanga hayotiymi yoki o‘limdan keyin"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Yong‘in murdasi: ketma-ketlik"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega qon yuza tomirlardan emas, yurak va chuqur tomirlardan olinadi? 2) Gistologiya xulosaga nima qo‘shadi? Doskada: 5 bosqichli zanjirni talabalar o‘zlari chizsin. Tipik xato: namunani yuza tomirdan olish; bu holatda o‘limdan keyingi karboksigemoglobin ham chiqishi mumkin."
     },
@@ -1726,7 +2007,7 @@
       "title": "Xulosa va asosiy eslab qolinadigan nuqtalar",
       "bullets": [
         {
-          "text": "Issiq urishda issiqlik ko‘p ishlab chiqarilib, kam ajraladi. Quyosh urishida tana harorati salmoqli ko‘tarilmaydi. Murdada o‘zgarishlar o‘xshash, spetsifik emas.",
+          "text": "Issiq urishda issiqlik ko‘p ishlanib, kam ajraladi. Quyosh urishida tana harorati salmoqli ko‘tarilmaydi. Murdada o‘zgarishlar o‘xshash, spetsifik emas.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1771,11 +2052,11 @@
       "question": "Organizmdagi ortiqcha issiqlik energiyasining eng katta qismi qaysi yo‘l bilan tashqariga chiqariladi?",
       "options": [
         "Ter ajralishi orqali",
-        "Nurlanish orqali",
+        "Turli ajratmalar orqali",
         "Teri bilan o‘tkazish orqali",
-        "Turli ajratmalar orqali"
+        "Nurlanish orqali"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Issiqlikning 55 foizi nurlanish, 27 foizi ter, 15 foizi o‘tkazish va 3 foizi turli ajratmalar bilan chiqariladi. Shuning uchun eng katta ulush nurlanishga to‘g‘ri keladi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1835,11 +2116,11 @@
       "question": "Quyosh urishi (insolyasiya) haqidagi qaysi fikr to‘g‘ri?",
       "options": [
         "Tana harorati odatda 41-42°S dan oshib ketadi",
-        "Tana haroratining salmoqli ko‘tarilishi unga xos emas",
         "Murda dog‘lari erta va juda ko‘p paydo bo‘ladi",
+        "Tana haroratining salmoqli ko‘tarilishi unga xos emas",
         "Faqat nafas yo‘llarining kuyishi xos belgidir"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Quyosh urishi uchun tana haroratining salmoqli ko‘tarilishi xos emas. U bosh kiyimsiz quyosh nurlari ostida qolganda boshning isishi bilan MNT (markaziy nerv tizimi) faoliyatining buzilishiga olib keladi.",
       "source": {
         "author": "G‘iyosov Z.A.",

@@ -1,0 +1,582 @@
+{
+ "topic_id": "ktp26-stomatologiya-M2",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Yangi tug‘ilgan go‘daklar murdasining sud-tibbiy ekspertizasi",
+  "ru": "Yangi tug‘ilgan go‘daklar murdasining sud-tibbiy ekspertizasi",
+  "en": "Yangi tug‘ilgan go‘daklar murdasining sud-tibbiy ekspertizasi"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "ktp26-stomatologiya-M2-q01",
+   "question_i18n": {
+    "uz": "Sud tibbiyotida «yangi tug‘ilganlik» davri qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "4 hafta",
+     "7 kun",
+     "Dastlabki 24 soat",
+     "Dastlabki 1 soat"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Sud tibbiyotida bu davr dastlabki 24 soatni tashkil etadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "256"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M2-q02",
+   "question_i18n": {
+    "uz": "Quyidagilardan qaysi biri yangi tug‘ilganlikning mutlaq ishonchli belgisi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Mo‘msimon qoplama",
+     "Mekoniy topilishi",
+     "O‘pkaning birlamchi atelektazi",
+     "Tug‘ruq shishi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Mutlaq belgilar: birlamchi atelektaz, demarkatsion halqaning yo‘qligi, ajratilmagan kindik."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "258–259"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M2-q03",
+   "question_i18n": {
+    "uz": "Nafas olmagan o‘pkaning solishtirma og‘irligi qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1,05–1,06",
+     "Taxminan 0,9",
+     "Taxminan 0,5",
+     "2,0 dan yuqori"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Nafas olmagan o‘pkaning solishtirma og‘irligi 1,05–1,06, nafas olganniki 1,0 dan past."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "259"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M2-q04",
+   "question_i18n": {
+    "uz": "Raso go‘dakning o‘rtacha tana uzunligi va vazni qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "40–45 sm, 2000 g",
+     "50–54 sm, 3000–3500 g",
+     "60 sm, 4500 g",
+     "45 sm, 2500 g"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Raso go‘daklarda tana uzunligi o‘rtacha 50–54 sm, vazni 3000–3500 g."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "262"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M2-q05",
+   "question_i18n": {
+    "uz": "JSST ga ko‘ra hayotga layoqatsiz go‘dak mezoni qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Uzunligi 25 sm dan, vazni 500 g dan kam",
+     "Uzunligi 45 sm dan kam",
+     "Vazni 2500 g dan kam",
+     "Vazni 1000 g dan kam"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Uzunligi 25 sm dan, vazni 500 g dan kam go‘daklar hayotga layoqatsiz hisoblanadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "263"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M2-q06",
+   "question_i18n": {
+    "uz": "Go‘dak murdasi ichki tekshiruvida og‘iz bo‘shlig‘i va tanglayni o‘rganish uchun o‘rta kesma qayerdan boshlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Iyakdan",
+     "Pastki labdan",
+     "Bo‘yin o‘rtasidan",
+     "To‘shdan"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Asosiy o‘rta kesma iyakdan emas, pastki labdan boshlanadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "266"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M2-q07",
+   "question_i18n": {
+    "uz": "Asfiksiyaning inspirator hansirash bosqichida hush odatda qachon yo‘qoladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "5–10 soniyada",
+     "40–60 soniyada",
+     "3–5 daqiqada",
+     "10 daqiqada"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Asfiksiya boshlangandan 40–60 soniya o‘tganda hush yo‘qoladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "106"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M2-q08",
+   "question_i18n": {
+    "uz": "Tarde dog‘lari qayerda joylashadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Visseral plevra va epikard ostida",
+     "Buyrak po‘stlog‘ida",
+     "Teri ostida",
+     "Jigar kapsulasida"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Tarde dog‘lari — visseral plevra va epikard ostidagi 2–3 mm to‘q qizil qon quyilishlar."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "111"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M2-q09",
+   "question_i18n": {
+    "uz": "Cho‘kishda Krushevskiy belgisi nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Oshqozondagi suv",
+     "Og‘iz-burun atrofida turg‘un mayda pufakli oq ko‘pik",
+     "Chap yurak qonining ochroqligi",
+     "Kalla asosidagi suyuqlik"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Krushevskiy belgisi — og‘iz-burun atrofida nisbatan turg‘un mayda pufakli oq ko‘pik."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "122"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M2-q10",
+   "question_i18n": {
+    "uz": "Cheklangan muhitda bolalar uchun hayotga xavfli karbonat angidrid konsentratsiyasi qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,5 %",
+     "2,0–2,5 %",
+     "8–10 %",
+     "20 %"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Kattalarda 8–10 % da o‘lim, bolalarda 2,0–2,5 % hayot uchun xavf tug‘diradi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "130"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M2-q11",
+   "question_i18n": {
+    "uz": "Chaqaloq boshidagi yumshoq shish suyaklararo choklar proeksiyasida ham aniqlanadi va 2–3 kunda so‘riladi. Bu qaysi holat?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kefalogematoma",
+     "Subdural gematoma",
+     "Mo‘msimon qoplama",
+     "Tug‘ruq shishi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Tug‘ruq shishi choklar proeksiyasida ham aniqlanadi va 2–3 kunda so‘riladi; kefalogematoma esa choklar bilan chegaralangan va 2 hafta va undan ortiq so‘riladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "257"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M2-q12",
+   "question_i18n": {
+    "uz": "Raso chaqaloqda mekoniy (birlamchi najas) odatda tug‘ruqdan keyin qancha muddatda chiqib ketadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bir necha soatda",
+     "5–7 kunda",
+     "1–2 kunda",
+     "2 haftada"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Mekoniy to‘q-yashil yarim suyuq massa bo‘lib, rasolarda odatda 1–2 kunda, norasolarda 3–4 kungacha chiqadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "257"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M2-q13",
+   "question_i18n": {
+    "uz": "Nafas olmagan chaqaloq o‘pkasining solishtirma og‘irligi qancha bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "0,5–0,6",
+     "1,3–1,4",
+     "Taxminan 0,9",
+     "1,05–1,06"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Nafas olmagan o‘pka solishtirma og‘irligi 1,05–1,06, nafas olganniki 1,0 dan past; shu sababli nafas olgan o‘pka suvda suzadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "259"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M2-q14",
+   "question_i18n": {
+    "uz": "Breslau sinamasi (1865) chaqaloq murdasida nimani aniqlashga asoslangan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Havoning oshqozon-ichakka o‘tganligini",
+     "Qonning tarkibini",
+     "O‘pka gistologiyasini",
+     "Kindik pulsatsiyasini"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Breslau sinamasi nafas olganda havoning bir qismi qizilo‘ngach orqali oshqozon va ichakka o‘tishiga asoslangan; ligaturalangan a’zolar suvga solinadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "260"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M2-q15",
+   "question_i18n": {
+    "uz": "Gestatsion yoshni aniqlashda tovon suyagida suyaklanish o‘zagi qaysi homila oyida paydo bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "VII oyda",
+     "IX oyda",
+     "III oyda",
+     "V oyda"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Suyaklanish o‘zaklari tovon suyagida V, g‘altaksimon suyakda VII, son pastki epifizida (Beklyar yadrosi) IX homila oyida paydo bo‘ladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "263"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M2-q16",
+   "question_i18n": {
+    "uz": "JSST ta’rifiga ko‘ra qaysi o‘lcham va vazndagi go‘dak o‘ta norasolik tufayli hayotga layoqatsiz hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Uzunligi 35 sm dan, vazni 1500 g dan kam",
+     "Uzunligi 45 sm dan, vazni 2500 g dan kam",
+     "Uzunligi 25 sm dan, vazni 500 g dan kam",
+     "Uzunligi 50 sm dan, vazni 3000 g dan kam"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "JSST bo‘yicha uzunligi 25 sm dan, vazni 500 g dan kam go‘dak o‘ta norasolik tufayli hayotga layoqatsiz hisoblanadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "263"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M2-q17",
+   "question_i18n": {
+    "uz": "Asfiksiyada nafas to‘liq to‘xtagandan so‘ng yurak necha daqiqa urib turishi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat 10–20 soniya",
+     "Bir necha soat",
+     "30–40 daqiqa",
+     "3–10 daqiqa"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Terminal nafas 5 daqiqagacha davom etadi; nafas to‘liq to‘xtagandan so‘ng yurak yana 3–10 daqiqa urib turishi mumkin."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "107"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M2-q18",
+   "question_i18n": {
+    "uz": "Tipik osilishda sirtmoq tuguni odatda qayerda joylashadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ensada (orqada)",
+     "Old tomonda",
+     "Chap yonda",
+     "Faqat iyak ostida"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Tugun orqada joylashsa tipik, old yoki yon tomonda joylashsa atipik hisoblanadi; tugun kriminalistik ahamiyatga ega."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "112"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M2-q19",
+   "question_i18n": {
+    "uz": "Asfiktik cho‘kishda murda tekshiruvida kalla asosi bo‘shlig‘ida qancha suyuqlik topilishi mumkin (Sveshnikov belgisi)?"
+   },
+   "options_i18n": {
+    "uz": [
+     "100 ml",
+     "300 ml",
+     "1 litr",
+     "5–15 ml"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Suv burun bo‘shliqlari orqali kalla asosi bo‘shlig‘iga o‘tishi sababli bu bo‘shliqda 5–15 ml suyuqlik aniqlanishi mumkin (Sveshnikov belgisi)."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "124"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M2-q20",
+   "question_i18n": {
+    "uz": "Qisilgan jabrlanuvchida yuz, bo‘yin va ko‘krakning yuqori qismida terida qon quyilishlar topildi. Bu qaysi belgi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Tarde dog‘lari",
+     "Sabinskiy belgisi",
+     "Ekximotik niqob (Olive-Danjer belgisi)",
+     "Moro belgisi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Kompression asfiksiyada yuz shishi va ko‘kimtirligi bilan birga yuz, bo‘yin, ko‘krak yuqori qismi terisiga qon quyilishlar — ekximotik niqob (Olive-Danjer belgisi)."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "129"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "G‘iyosov Z.A.",
+   "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti"
+  }
+ ]
+}

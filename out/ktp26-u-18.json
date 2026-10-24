@@ -14,7 +14,7 @@
           "uncertain": false
         },
         {
-          "text": "Ikkinchi yo‘nalish — ekspertiza faoliyatini belgilovchi me’yoriy-protsessual asoslar: “Sud ekspertizasi to‘g‘risida”gi Qonun, Jinoyat-protsessual kodeksi (JPK) va ekspert huquqlari.",
+          "text": "Ikkinchi yo‘nalish — ekspertizani belgilovchi me’yoriy asoslar: «Sud ekspertizasi to‘g‘risida»gi Qonun, JPK va ekspert huquqlari.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -23,13 +23,13 @@
           "uncertain": false
         },
         {
-          "text": "Uchinchi yo‘nalish — miya o‘limining diagnostikasi. Taqdim etilgan manba matnida bu mavzu yoritilmagan, shuning uchun alohida manba talab qilinadi.",
+          "text": "Uchinchi yo‘nalish — miya o‘limi: bosh miya po‘stlog‘ining o‘limi biologik o‘limning boshlanishi sifatida tanatologiya bobida yoritilgan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "manbada yo‘q"
+            "page": "219-220"
           },
-          "uncertain": true
+          "uncertain": false
         },
         {
           "text": "O‘quv maqsadi: sud tibbiyoti va ekspertiza ta’rifini, fan predmetini va uning bo‘limlarini bilib, ularni bir-biridan farqlay olish.",
@@ -42,7 +42,7 @@
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama savoli: sud-tibbiy xizmat nega huquqiy asoslarni bilishni talab qiladi? Talabalar miya o‘limi bo‘limiga qanday tayyorlanishi kerak? Doskada chizish: mavzuning uch yo‘nalishini uchta shox ko‘rinishida chizdiring. Tipik xato: talabalar miya o‘limi mazmunini taqdim etilgan darslik bobidan topishga urinadi. Bu bo‘lim uchun qo‘shimcha manba kerakligini oldindan ayting."
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama savoli: sud-tibbiy xizmat nega huquqiy asoslarni bilishni talab qiladi? Miya o‘limi nima uchun transplantatsiya bilan bog‘liq? Doskada chizish: mavzuning uch yo‘nalishini uchta shox ko‘rinishida chizdiring. Tipik xato: miya o‘limini JPK 173-moddadagi o‘lim sababini aniqlash bilan aralashtirish."
     },
     {
       "title": "Sud tibbiyoti va sud-tibbiy ekspertiza tushunchasi",
@@ -76,31 +76,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ekspertizaning to‘rt xususiyati",
-        "nodes": [],
-        "header": [
-          "Xususiyat",
-          "Mazmuni"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Mutaxassis",
+            "text": "Tadqiqotni bilimli mutaxassis o‘tkazadi"
+          },
+          {
+            "title": "2. Vazifa",
+            "text": "Aniq vazifa bo‘yicha, odatda baholash uchun"
+          },
+          {
+            "title": "3. Qat’iy tartib",
+            "text": "O‘tkazish tartibi qat’iy belgilangan"
+          },
+          {
+            "title": "4. Hujjat",
+            "text": "Jarayon va natija hujjatda rasmiylashtiriladi"
+          }
         ],
-        "rows": [
-          [
-            "1. Mutaxassis",
-            "Tadqiqotni bilimli mutaxassis o‘tkazadi"
-          ],
-          [
-            "2. Vazifa",
-            "Aniq vazifa bo‘yicha, odatda baholash uchun"
-          ],
-          [
-            "3. Qat’iy tartib",
-            "O‘tkazish tartibi qat’iy belgilangan"
-          ],
-          [
-            "4. Hujjat",
-            "Jarayon va natija hujjatda rasmiylashtiriladi"
-          ]
-        ]
+        "caption": "Ekspertizaning to‘rt xususiyati"
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama savollari: nega ekspertizaning tartibi qat’iy belgilanishi kerak? Oddiy shifokor ko‘rigi bilan ekspertiza qanday farqlanadi? Doskada chizish: to‘rt xususiyatni jadval shaklida chizing. Tipik xato: ekspertiza va fan tushunchalarini aralashtirish. Ekspertiza fanning amaliy ko‘rinishi ekanini ta’kidlang."
     },
@@ -136,31 +131,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Predmetning sakkiz bo‘limi",
-        "nodes": [],
-        "header": [
-          "Bo‘lim №",
-          "Mazmuni"
+        "kind": "tree",
+        "root": "Predmetning 8 bo‘limi",
+        "children": [
+          {
+            "label": "1–2-bo‘lim",
+            "items": [
+              "Tarix",
+              "Tashkiliy va protsessual masalalar"
+            ]
+          },
+          {
+            "label": "3–4-bo‘lim",
+            "items": [
+              "Tashqi omillar va o‘lim",
+              "Murda ekspertizasi"
+            ]
+          },
+          {
+            "label": "5–6-bo‘lim",
+            "items": [
+              "Tirik shaxslar",
+              "Ashyoviy dalillar"
+            ]
+          },
+          {
+            "label": "7–8-bo‘lim",
+            "items": [
+              "Tergov-sud materiallari",
+              "Kasb huquqbuzarligi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "1-2",
-            "Tarix; tashkiliy va protsessual masalalar"
-          ],
-          [
-            "3-4",
-            "Tashqi omillar va o‘lim; murda ekspertizasi"
-          ],
-          [
-            "5-6",
-            "Tirik shaxslar; ashyoviy dalillar"
-          ],
-          [
-            "7-8",
-            "Tergov-sud materiallari; kasb huquqbuzarligi"
-          ]
-        ]
+        "caption": "Avdeev tizimi"
       },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama savollari: nega predmet tizimi ekspertiza ob’ektlariga bog‘langan? Qaysi bo‘lim sizning kelajakdagi ishingizga eng yaqin? Doskada chizish: sakkiz bo‘limni juft-juft qilib guruhlab chizing. Tipik xato: bo‘limlar tartibini va Avdeev tizimi sanasini (1948) chalkashtirish."
     },
@@ -196,31 +199,40 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Fan tarkibi (guruhlangan)",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Qismlar"
+        "kind": "tree",
+        "root": "Fan tarkibi (9 qism)",
+        "children": [
+          {
+            "label": "Tarix va huquq",
+            "items": [
+              "Fan tarixi",
+              "Tashkiliy va protsessual asoslar"
+            ]
+          },
+          {
+            "label": "Murda va jarohat",
+            "items": [
+              "Tanatologiya",
+              "Travmatologiya"
+            ]
+          },
+          {
+            "label": "Maxsus bo‘limlar",
+            "items": [
+              "Akusherlik-ginekologiya",
+              "Toksikologiya"
+            ]
+          },
+          {
+            "label": "Boshqa qismlar",
+            "items": [
+              "Biologiya",
+              "Tashqi omillar",
+              "Identifikatsiya"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Tarix va huquq",
-            "Fan tarixi; tashkiliy va protsessual asoslar"
-          ],
-          [
-            "Murda va jarohat",
-            "Tanatologiya, travmatologiya"
-          ],
-          [
-            "Maxsus bo‘limlar",
-            "Akusherlik-ginekologiya, toksikologiya"
-          ],
-          [
-            "Boshqa qismlar",
-            "Biologiya; tashqi omillar; identifikatsiya"
-          ]
-        ]
+        "caption": "Guruhlangan"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun fan tarkibi vaqt o‘tishi bilan o‘zgaradi? 2) 2002-yilda ajralgan qism nimaga oid edi? Doskada chizish: 9 qismli daraxt (tarix, asoslar, tanatologiya, travmatologiya, akusherlik-ginekologiya, toksikologiya, biologiya, tashqi omillar, identifikatsiya). Qo‘shimcha: V.L.Popov (1999) fanda asosan uch ta’limotni farqlaydi: o‘lim va undan keyingi o‘zgarishlar, jarohatlar, shaxs identifikatsiyasi. Tipik xato: kasb huquqbuzarliklari hali ham fan tarkibida deb o‘ylash. Jadvaldagi guruhlash o‘qituvchi tomonidan soddalashtirilgan."
     },
@@ -270,11 +282,11 @@
           ],
           [
             "Klinik fanlar",
-            "Travmatologiya, akusherlik, oftalmologiya"
+            "Travmatologiya, akusherlik, oftalmolog."
           ],
           [
             "Kimyo va fizika",
-            "Toksikologiya; harorat, tok, bosim ta’siri"
+            "Toksikologiya; harorat, tok, bosim"
           ],
           [
             "Falsafa va mantiq",
@@ -322,7 +334,7 @@
       "title": "Sud-tibbiy ekspertiza prinsiplari",
       "bullets": [
         {
-          "text": "“Sud ekspertizasi to‘g‘risida”gi Qonunda asosiy prinsiplar: qonuniylik, inson huquq va erkinliklariga rioya, ekspert mustaqilligi, xolislik, har tomonlamalik va to‘liqlik.",
+          "text": "Qonunda asosiy prinsiplar: qonuniylik, inson huquq va erkinliklariga rioya, ekspert mustaqilligi, xolislik, har tomonlamalik, to‘liqlik.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -436,31 +448,34 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Usullar guruhlari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Misollar",
-          "Mohiyati"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Umumilmiy",
+            "items": [
+              "Kuzatuv, tavsif",
+              "Taqqoslash, o‘lchash",
+              "Turli fanlarda qo‘llanadi"
+            ]
+          },
+          {
+            "title": "Xususiy",
+            "items": [
+              "Morfologik, klinik",
+              "Rentgenologik, kimyoviy",
+              "Bir fanga xos"
+            ]
+          },
+          {
+            "title": "Maxsus",
+            "items": [
+              "Fototaqqoslash",
+              "Jarohat–pichoq qiyosi",
+              "Shaxs va qurol aynanligi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Umumilmiy",
-            "Kuzatuv, tavsif, taqqoslash, o‘lchash",
-            "Umumiy tusga ega, turli fanlarda qo‘llanadi"
-          ],
-          [
-            "Xususiy",
-            "Morfologik, klinik, rentgenologik, kimyoviy",
-            "Bir fanga xos, ekspertizada ham ishlatiladi"
-          ],
-          [
-            "Maxsus",
-            "Fototaqqoslash; jarohat–pichoq qiyosi",
-            "Shaxs va qurol aynanligini aniqlash"
-          ]
-        ]
+        "caption": "Usullar guruhlari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega usul takroriy tekshirishga imkon berishi kerak? 2) Pichoq va teridagi jarohatni qiyoslash qaysi guruhga kiradi? Doskada: uch guruhni jadval qilib chizdiring va har biriga o‘zingiz bittadan yangi misol qo‘shing. Tipik xato: rentgenologik yoki kimyoviy usulni maxsus usullar deb hisoblash; ular xususiy usullar."
     },
@@ -468,7 +483,7 @@
       "title": "Voqea tahlili 1: ekspertiza asoslari bo‘yicha vaziyat",
       "bullets": [
         {
-          "text": "Vaziyat: tergovchi murda, tirik shaxs va ashyoviy dalil (pichoq) bo‘yicha ekspertiza tayinladi. Ob’ektlarni tayinlagan shaxs taqdim etadi va ularning ishonchliligiga javob beradi.",
+          "text": "Vaziyat: tergovchi murda, tirik shaxs va pichoq bo‘yicha ekspertiza tayinladi. Ob’ektlarni tayinlovchi taqdim etadi, ishonchliligiga javob beradi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -486,7 +501,7 @@
           "uncertain": false
         },
         {
-          "text": "Davr: shilinma va qontalashlarni dastlabki 10-15 kungacha tekshirish maqsadga muvofiq. Kasallik belgilari uchun murda imkon qadar qisqa muddatda tekshirilishi kerak.",
+          "text": "Davr: shilinma va qontalashlarni dastlabki 10-15 kungacha tekshirish maqsadga muvofiq; kasallik belgilari uchun murda imkon qadar tez tekshiriladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -495,7 +510,7 @@
           "uncertain": false
         },
         {
-          "text": "Savol: kuzatuv, rentgen va pichoqni qiyosiy o‘rganish qaysi usul guruhlariga kiradi? Diqqat: xususiy ≠ maxsus; maxsus usullar asosan sud-tibbiy amaliyotda qo‘llanadi.",
+          "text": "Savol: kuzatuv, rentgen va pichoqni qiyosiy o‘rganish qaysi usul guruhlari? Diqqat: xususiy ≠ maxsus; maxsus usullar asosan sud-tibbiy amaliyotda.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -539,36 +554,31 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Qadimgi davr xronologiyasi",
-        "nodes": [],
-        "header": [
-          "Davr",
-          "Voqea",
-          "Mazmun"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Likurg qonunlari",
+            "value": "e.a. IX–VIII asr"
+          },
+          {
+            "label": "Gippokrat",
+            "value": "460–370 e.a."
+          },
+          {
+            "label": "Sezar, Antistius",
+            "value": "e.a. 44-yil"
+          },
+          {
+            "label": "Antistius: o‘limga sabab",
+            "value": "1 / 23",
+            "unit": "jarohat"
+          },
+          {
+            "label": "Yustinian kodeksi",
+            "value": "VI asr"
+          }
         ],
-        "rows": [
-          [
-            "E.a. IX-VIII asr",
-            "Likurg qonunlari",
-            "Ayrim hollarda tibbiy tekshiruv"
-          ],
-          [
-            "460-370 e.a.",
-            "Gippokrat",
-            "Murda qoidalarini tayyorlashda ishtirok"
-          ],
-          [
-            "E.a. 44",
-            "Sezar, Antistius",
-            "23 jarohatdan 1 tasi o‘limga olib kelgan"
-          ],
-          [
-            "VI asr",
-            "Yustinian kodeksi",
-            "Vrach xulosasi guvohdan ahamiyatliroq"
-          ]
-        ]
+        "caption": "Qadimgi davr xronologiyasi"
       },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: 1) Antistius xulosasi nima uchun sud-tibbiy ahamiyatga ega? 2) Yustinian kodeksida vrach xulosasi nega yuqoriroq baholangan? Doskada: vaqt chizig‘ini (e.a. IX asrdan VI asrgacha) chizing. Tipik xato: Sezar voqeasini eramizdan keyingi davrga qo‘yish."
     },
@@ -668,7 +678,7 @@
           "uncertain": false
         },
         {
-          "text": "N.I.Pirogov 1846-yilda murda tekshiruvi uchun atlas yaratdi va o‘q otar jarohatlarga oid ma’lumot berdi. XX asrda, ayniqsa Ikkinchi jahon urushidan so‘ng, ko‘p darsliklar yozildi.",
+          "text": "N.I.Pirogov 1846-yilda murda tekshiruvi atlasini yaratdi, o‘q otar jarohatlarga oid ma’lumot berdi. Ikkinchi jahon urushidan so‘ng ko‘p darsliklar yozildi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -834,7 +844,7 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: xato qilish xavfi — sud tibbiyotiga oid ma’lumot bor ≠ sud-tibbiy ekspertiza o‘tkazilgan. Bu ma’lumotlar asosan to‘g‘ri tibbiy yordam ko‘rsatish uchun olingan.",
+          "text": "Diqqat: sud tibbiyotiga oid ma’lumot bor ≠ sud-tibbiy ekspertiza o‘tkazilgan. Ma’lumotlar asosan to‘g‘ri tibbiy yordam ko‘rsatish uchun olingan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -887,36 +897,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Xizmat rivojining to‘rt davri",
-        "nodes": [],
-        "header": [
-          "Davr",
-          "Muddat",
-          "Belgi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "I davr",
+            "text": "XX asr 20-yillarigacha: epizodik ekspertizalar"
+          },
+          {
+            "title": "II davr",
+            "text": "XX asr 50-yillarigacha: kafedralar bazasida"
+          },
+          {
+            "title": "III davr",
+            "text": "1950–1991: Bosh byuro va hududiy byurolar"
+          },
+          {
+            "title": "IV davr",
+            "text": "1991-yildan: mustaqil xizmat, yangi hujjatlar"
+          }
         ],
-        "rows": [
-          [
-            "I davr",
-            "XX asr 20-yillarigacha",
-            "Epizodik ekspertizalar"
-          ],
-          [
-            "II davr",
-            "XX asr 50-yillarigacha",
-            "Kafedralar bazasida ekspertiza"
-          ],
-          [
-            "III davr",
-            "1950–1991",
-            "Bosh byuro va hududiy byurolar"
-          ],
-          [
-            "IV davr",
-            "1991 dan hozirgacha",
-            "Mustaqil xizmat, yangi hujjatlar"
-          ]
-        ]
+        "caption": "Xizmat rivojining to‘rt davri"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: nega II davrda ekspertizani kafedralar o‘tkazgan? Mustaqillik xizmatga qanday yangi vazifalar qo‘ygan? Doskada: to‘rt davrli jadvalni talabalar bilan to‘ldiring. Tipik xato: II davr (50-yillargacha) bilan III davr (1950-yildan) chegarasini aralashtirish."
     },
@@ -1039,7 +1039,7 @@
           "uncertain": false
         },
         {
-          "text": "Huquqiy jamiyat va qonun ustuvorligi sharoitida huquqni muhofaza idoralarining ekspertizaga ehtiyojini to‘la, sifatli va o‘z vaqtida qondirish dolzarb vazifaga aylandi.",
+          "text": "Huquqiy jamiyatda huquqni muhofaza idoralarining ekspertizaga ehtiyojini to‘la, sifatli va o‘z vaqtida qondirish dolzarb vazifaga aylandi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1048,7 +1048,7 @@
           "uncertain": false
         },
         {
-          "text": "Yangi me’yoriy hujjatlar majmui (qonunlar, yo‘riqnoma, qoidalar, tekshiruv standartlari) ishlab chiqildi; ilk bor “Sud ekspertizasi to‘g‘risida”gi Qonun qabul qilindi.",
+          "text": "Yangi me’yoriy hujjatlar (qonunlar, yo‘riqnoma, qoidalar, standartlar) ishlab chiqildi; ilk bor «Sud ekspertizasi to‘g‘risida»gi Qonun qabul qilindi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1082,7 +1082,7 @@
           "uncertain": false
         },
         {
-          "text": "Savol: bu voqea xizmat rivojlanishining qaysi davriga kiradi? Javob: II davr (XX asrning 50-yillarigacha), ekspertizalar asosan tibbiyot oliy o‘quv yurtlari kafedralarida o‘tgan.",
+          "text": "Savol: bu voqea qaysi davrga kiradi? Javob: II davr (XX asrning 50-yillarigacha); ekspertizalar asosan tibbiyot OTM kafedralarida o‘tgan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1154,7 +1154,7 @@
         "rows": [
           [
             "Huquq",
-            "Majburiy, davlat kafolatlagan qoidalar tizimi"
+            "Majburiy, davlat kafolatlagan qoidalar"
           ],
           [
             "Qonun",
@@ -1204,31 +1204,37 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "173-modda: aniqlanadigan holatlar",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Aniqlanadi"
+        "kind": "tree",
+        "root": "173-modda: aniqlanadi",
+        "children": [
+          {
+            "label": "O‘lim, jarohat",
+            "items": [
+              "O‘lim sababi",
+              "Jarohat turi va og‘irligi"
+            ]
+          },
+          {
+            "label": "Jinsiy soha",
+            "items": [
+              "Jinsiy aloqa, homiladorlik",
+              "Homila tushirish"
+            ]
+          },
+          {
+            "label": "Yosh",
+            "items": [
+              "Hujjat yo‘q yoki shubhali bo‘lsa"
+            ]
+          },
+          {
+            "label": "Jismoniy ahvol",
+            "items": [
+              "Ayblanuvchi, jabrlanuvchi, guvoh"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "O‘lim, jarohat",
-            "O‘lim sababi; jarohat turi va og‘irligi"
-          ],
-          [
-            "Jinsiy soha",
-            "Aloqa, homiladorlik, homila tushirish"
-          ],
-          [
-            "Yosh",
-            "Shaxs yoshi, hujjat yo‘q yoki shubhali bo‘lsa"
-          ],
-          [
-            "Jismoniy ahvol",
-            "Ayblanuvchi, jabrlanuvchi, guvoh holati"
-          ]
-        ]
+        "caption": "Majburiy holatlar"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Yoshni aniqlash qaysi hollarda kerak bo‘ladi? 2) Nega jabrlanuvchi va guvohning jismoniy holati ham tekshiriladi? Doskada: 173-moddaning 6 bandini qisqa ro‘yxat qilib yozdiring. Tipik xato: ro‘yxatni to‘liq deb o‘ylash; modda boshqa maxsus bilim talab qiladigan holatlarni ham qamraydi."
     },
@@ -1264,31 +1270,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ekspertiza o‘tkazish variantlari",
-        "nodes": [],
-        "header": [
-          "Variant",
-          "Joyi va mas’ul"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Muassasada",
+            "items": [
+              "Byuroda o‘tkaziladi",
+              "Shart-sharoit — muassasa rahbari"
+            ]
+          },
+          {
+            "title": "Tashqarida",
+            "items": [
+              "Byurodan tashqarida",
+              "Mas’ul — tayinlovchi"
+            ]
+          },
+          {
+            "title": "Aralash",
+            "items": [
+              "Bir qismi byuroda",
+              "Bir qismi tashqarida",
+              "Misol: eksgumatsiya"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Muassasada",
-            "Byuroda; shart-sharoit — muassasa rahbari"
-          ],
-          [
-            "Tashqarida",
-            "Byurodan tashqarida; mas’ul — tayinlovchi"
-          ],
-          [
-            "Aralash",
-            "Bir qismi byuroda, bir qismi tashqarida"
-          ],
-          [
-            "Misol: eksgumatsiya",
-            "Jasad qabristonda, material laboratoriyada"
-          ]
-        ]
+        "caption": "Ekspertiza o‘tkazish variantlari"
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Nega shart-sharoitni ta’minlash mas’uliyati variantga qarab o‘zgaradi? 2) Sud tergovi dastlabki tergovdan nimasi bilan farq qiladi? Doskada: uch variantli sxemani chizdiring va eksgumatsiya misolini joylashtiring. Tipik xato: eksgumatsiya ekspertizasi faqat byuroda o‘tadi deb o‘ylash. Aslida jasad qabristonda ochiladi, olingan material laboratoriyada tekshiriladi."
     },
@@ -1296,7 +1303,7 @@
       "title": "Tezkor savol 3: protsessual asoslar",
       "bullets": [
         {
-          "text": "Savol: Jinoyat-protsessual kodeksining (JPK) 173-moddasi qaysi holatlarda ekspertiza o‘tkazishni shart qiladi? Javob: o‘lim sababi, tan jarohatining xususiyati va og‘irligi aniqlanganda.",
+          "text": "Savol: JPK 173-moddasi qaysi holatlarda ekspertizani shart qiladi? Javob: o‘lim sababi, tan jarohatining xususiyati va og‘irligi aniqlanganda.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1367,31 +1374,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Huquq va majburiyat",
-        "nodes": [],
-        "header": [
-          "Huquq",
-          "Majburiyat"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Huquqlar",
+            "items": [
+              "Ish materiallari bilan tanishish",
+              "Iltimosnoma berish",
+              "Savol berish (ruxsat bilan)",
+              "Tarjimon, shikoyat qilish"
+            ]
+          },
+          {
+            "title": "Majburiyatlar",
+            "items": [
+              "Har tomonlama, to‘liq tekshirish",
+              "Asosli va xolisona xulosa berish",
+              "Ma’lumotni oshkor qilmaslik",
+              "Ob’ektlarni saqlash"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Ish materiallari bilan tanishish",
-            "Har tomonlama, to‘liq tekshirish"
-          ],
-          [
-            "Iltimosnoma berish",
-            "Asosli va xolisona xulosa berish"
-          ],
-          [
-            "Savol berish (ruxsat bilan)",
-            "Ma’lumotni oshkor qilmaslik"
-          ],
-          [
-            "Tarjimon, shikoyat qilish",
-            "Tekshirish ob’ektlarini saqlash"
-          ]
-        ]
+        "caption": "Ekspert huquq va majburiyatlari"
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Nega ekspert ish yuzasidan manfaatdor tomonlar bilan shaxsiy aloqaga kirishmasligi kerak? 2) Tashabbus huquqi amalda nimani anglatadi? Doskada: ikki ustunli huquq/majburiyat jadvalini chizdiring. Tipik xato: ekspert faqat so‘ralgan savollarga javob beradi, deb o‘ylash. Aslida u muhim boshqa masalalarda ham fikr bildirishi mumkin."
     },
@@ -1408,7 +1412,7 @@
           "uncertain": false
         },
         {
-          "text": "Jinoyat kodeksida jinoiy javobgarlik belgilangan: bila turib noto‘g‘ri xulosa (238-modda), ma’lumotni ruxsatsiz oshkor qilish (239-modda), xulosa berishni rad etish yoki bo‘yin tovlash (240-modda).",
+          "text": "Jinoyat kodeksi: bila turib noto‘g‘ri xulosa (238-modda), ma’lumotni oshkor qilish (239-modda), xulosadan bo‘yin tovlash (240-modda).",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1417,7 +1421,7 @@
           "uncertain": false
         },
         {
-          "text": "Raddiya asoslari: manfaatdor tomonlarga nisbatan qarindoshlik, moddiy yoki xizmat bog‘liqligi, shuningdek ixtisos bo‘yicha malakaning yetarli emasligi. Ekspert o‘zini o‘zi ham rad etishi mumkin.",
+          "text": "Raddiya asoslari: qarindoshlik, moddiy yoki xizmat bog‘liqligi, malakaning yetarli emasligi. Ekspert o‘zini o‘zi ham rad etishi mumkin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1470,36 +1474,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ekspert va mutaxassis",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Ekspert",
-          "Mutaxassis"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Ekspert",
+            "items": [
+              "Tibbiy faktni aniqlab baholaydi",
+              "Ekspert xulosasini tuzadi",
+              "Qaror yoki ajrim bilan tayinlanadi",
+              "Tekshiruv va xulosa beradi"
+            ]
+          },
+          {
+            "title": "Mutaxassis",
+            "items": [
+              "Dalil topishda yordam beradi",
+              "Mustaqil hujjat tuzmaydi",
+              "Chaqiriladi (69-modda)",
+              "Ko‘zdan kechirish, eksgumatsiya"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Vazifasi",
-            "Tibbiy faktni aniqlab baholaydi",
-            "Dalil topishda yordam beradi"
-          ],
-          [
-            "Hujjat",
-            "Ekspert xulosasini tuzadi",
-            "Mustaqil hujjat tuzmaydi"
-          ],
-          [
-            "Asos",
-            "Qaror yoki ajrim bilan tayinlanadi",
-            "Chaqiriladi (69-modda)"
-          ],
-          [
-            "Ishtirok",
-            "Tekshiruv va xulosa berish",
-            "Ko‘zdan kechirish, eksgumatsiya"
-          ]
-        ]
+        "caption": "Ekspert va mutaxassis"
       },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Tirik shaxsni guvohlantirishda davolash muassasasi vrachi qaysi rolda jalb qilinadi? 2) Mutaxassis nega hujjat tuzmaydi? Doskada: ikki ustunli solishtirish jadvalini chizdiring. Tipik xato: mutaxassis va ekspert rolini aralashtirish, mutaxassisga xulosa tuzish vakolatini berish."
     },
@@ -1553,7 +1549,7 @@
       "title": "Qayta va qo‘shimcha ekspertiza: asosiy farqlar",
       "bullets": [
         {
-          "text": "Diqqat: qo‘shimcha ≠ qayta. Qo‘shimcha ekspertiza avvalgi xulosadagi kamchilik va bo‘shliqlarni to‘ldirish uchun tayinlanadi. Uni odatda oldingi ekspert bajargani ma’qul.",
+          "text": "Diqqat: qo‘shimcha ≠ qayta. Qo‘shimcha ekspertiza avvalgi xulosadagi kamchilikni to‘ldirish uchun tayinlanadi, odatda oldingi ekspert bajaradi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1562,7 +1558,7 @@
           "uncertain": false
         },
         {
-          "text": "Qayta ekspertiza xulosa asoslanmagan yoki shubhali bo‘lsa, dalillar ishonchsiz bo‘lsa yoki protsessual qoidalar jiddiy buzilsa tayinlanadi. Odatda ikki va undan ortiq ekspert o‘tkazadi.",
+          "text": "Qayta ekspertiza xulosa asoslanmagan yoki shubhali, dalillar ishonchsiz yoki qoidalar jiddiy buzilganda tayinlanadi; odatda 2 va undan ortiq ekspert o‘tkazadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1571,7 +1567,7 @@
           "uncertain": false
         },
         {
-          "text": "Dastlabki ekspert qayta ekspertizani bajara olmaydi, faqat tushuntirish berishi mumkin. Taraflarning xulosadan noroziligi o‘z-o‘zidan qayta ekspertiza uchun asos bo‘lmaydi.",
+          "text": "Dastlabki ekspert qayta ekspertizani bajara olmaydi, faqat tushuntirish beradi. Taraflarning noroziligi o‘z-o‘zidan qayta ekspertiza uchun asos emas.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1580,7 +1576,7 @@
           "uncertain": false
         },
         {
-          "text": "Qayta, komissiyaviy va kompleks ekspertizalar faqat byuroning qayta va komission ekspertizalar bo‘limida o‘tkaziladi. Morfologik bo‘lim, ambulatoriya va tuman bo‘linmalarida taqiqlanadi.",
+          "text": "Qayta, komissiyaviy, kompleks ekspertiza faqat byuroning qayta va komission bo‘limida o‘tkaziladi; morfologik bo‘lim, ambulatoriyada taqiqlanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1624,31 +1620,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Xulosa va dalolatnoma farqi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Xulosa",
-          "Dalolatnoma"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Ekspert xulosasi",
+            "items": [
+              "Asos: qaror yoki ajrim",
+              "Huquq va javobgarlik tushuntiriladi",
+              "Yakuniy qism: to‘xtam"
+            ]
+          },
+          {
+            "title": "Dalolatnoma",
+            "items": [
+              "Asos: yozma topshiriq, yo‘llanma",
+              "Tilxat berilmaydi",
+              "Yakuniy qism: xotima"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Asos",
-            "Qaror yoki ajrim",
-            "Yozma topshiriq yoki yo‘llanma"
-          ],
-          [
-            "Tilxat",
-            "Huquq va javobgarlik tushuntiriladi",
-            "Tilxat berilmaydi"
-          ],
-          [
-            "Yakuniy qism",
-            "To‘xtam",
-            "Xotima"
-          ]
-        ]
+        "caption": "Xulosa va dalolatnoma farqi"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Xulosaning tadqiqot qismi nega maxsus bilimi yo‘q odamga ham tushunarli bo‘lishi kerak? 2) Xulosa nega oldindan daliliy kuchga ega emas? Doskada: xulosaning uch qismini ketma-ket chizing va har biriga mazmunini yozing. Tipik xato: dalolatnomaning yakuniy qismini ham «to‘xtam» deb atash, aslida u «xotima»."
     },
@@ -1656,7 +1647,7 @@
       "title": "Voqea tahlili 4: protsessual hujjat va ekspertiza turi",
       "bullets": [
         {
-          "text": "Vaziyat: birlamchi ekspertiza xulosasi asoslanmagan va uning to‘g‘riligiga shubha bor. Ishda oldingi ekspertiza o‘tkazish chog‘ida protsessual qoidalar buzilgani ham aniqlangan.",
+          "text": "Vaziyat: birlamchi ekspertiza xulosasi asoslanmagan, to‘g‘riligiga shubha bor. Oldingi ekspertizada protsessual qoidalar buzilgani ham aniqlangan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1741,47 +1732,286 @@
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega hududiy byuro ikki tomonga bo‘ysunadi? 2) Qayta va komission ekspertiza qaysi bo‘limda o‘tkaziladi? Doskada: Bosh byurodan tuman bo‘linmasigacha bo‘ysunish sxemasini chizdiring. Tipik xato: tuman bo‘linmalari ham Bosh byuroga to‘g‘ridan-to‘g‘ri bo‘ysunadi deb o‘ylash; aslida ularga hududiy byuro rahbarlik qiladi."
     },
     {
-      "title": "Miya o‘limi diagnostikasi: manbada qamrov",
+      "title": "Miya o‘limi tushunchasi",
       "bullets": [
         {
-          "text": "Taqdim etilgan manbada miya o‘limining diagnostik mezonlari keltirilmagan; ularni bu yerda bayon qilib bo‘lmaydi.",
+          "text": "A’zo va to‘qimalar filogenetik yoshi turlicha bo‘lgani uchun tiklanmas o‘zgarishlar avval bosh miya po‘stlog‘ida yuz beradi; MNT integratsiyasi buziladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "5"
-          },
-          "uncertain": true
-        },
-        {
-          "text": "Sud tibbiyoti tarkibida sud-tibbiy tanatologiya alohida qism; Popov uchta ta’limotdan birini o‘lim va undan keyingi o‘zgarishlar deb ajratadi.",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "5"
+            "page": "219-220"
           },
           "uncertain": false
         },
         {
-          "text": "JPK 173-moddaga ko‘ra o‘lim sababini aniqlash zarur bo‘lganda sud-tibbiy ekspertiza tayinlanadi.",
+          "text": "Bosh miya po‘stlog‘ining o‘limi biologik o‘limning boshlanishi bo‘lib, «miya o‘limi» sifatida qabul qilinadi; W.Durwald (1981) buni «individual o‘lim» degan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "14"
+            "page": "220"
           },
           "uncertain": false
         },
         {
-          "text": "Diqqat: o‘lim sababini aniqlash ≠ miya o‘limini diagnostika qilish. Mezonlar uchun qo‘shimcha ishonchli manba kerak.",
+          "text": "Po‘stloq o‘limi bilan boshqa a’zo va to‘qimalar o‘limi orasidagi oraliq davr 20 soatga yaqin; murdadan a’zo olish shunga asoslangan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "14"
+            "page": "220"
           },
-          "uncertain": true
+          "uncertain": false
+        },
+        {
+          "text": "Miya o‘limi Sog‘liqni saqlash vazirligi belgilagan tartibda, odatda reanimatolog va nevrologlar tomonidan aniqlanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "220"
+          },
+          "uncertain": false
         }
       ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Manbada nima bor, nima yo‘q? 2) Miya o‘limi mezonlari uchun qaysi me’yoriy hujjat va adabiyot kerak? Doskada: ‘Bor’ va ‘yo‘q’ ustunli ikki qismli ro‘yxat tuzdiring. Tipik xato: manbada bo‘lmagan mezonlarni o‘zidan qo‘shib aytish. O‘qituvchi qo‘shimcha manbani o‘zi ko‘rsatishi kerak."
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Po‘stloq o‘limi = miya o‘limi",
+          "MNT integratsiyasi buziladi",
+          "Boshqa a’zolar ishlashi mumkin",
+          "Oraliq davr ≈ 20 soat",
+          "Transplantatsiya uchun a’zo olish"
+        ],
+        "caption": "Miya o‘limidan keyingi jarayon"
+      },
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: nega po‘stloq o‘limi shaxsning o‘limi deb hisoblanadi? Doskada: 5 bosqichli zanjir. Tipik xato: miya o‘limini barcha a’zolar bir vaqtda o‘ladi deb tushunish; aslida orada ~20 soat bor. Miya o‘limini aniqlash tartibi Sog‘liqni saqlash vazirligi hujjatida belgilanadi; darslikda mezonlar sanalmagan."
+    },
+    {
+      "title": "O‘limni aniqlash: dastlabki va ishonchli belgilar",
+      "bullets": [
+        {
+          "text": "Dastlabki belgilar o‘limdan so‘ng darhol aniqlansa ham ehtimoliy: harakatsizlik, teri oqarishi, hush, nafas va yurak urishining yo‘qligi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Eng erta ishonchli belgi — Beloglazov simptomi («mushuk ko‘zi»), 15-20 daqiqadan so‘ng aniqlanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘limdan 1,5-2,0 soat so‘ng qorachiq mushaklari qotishi tufayli Beloglazov simptomi aniqlanmasligi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tana harorati 23 gradusgacha va undan past sovishi, murda dog‘lari, qotishi va qurishi ham ishonchli belgilar.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "221"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Dastlabki (ehtimoliy)",
+            "items": [
+              "Passiv, harakatsiz holat",
+              "Teri oqarishi",
+              "Hush, nafas, yurak urishi yo‘q",
+              "Biroz sovish; reaksiya yo‘q"
+            ]
+          },
+          {
+            "title": "Ishonchli",
+            "items": [
+              "Beloglazov: 15-20 daqiqadan so‘ng",
+              "1,5-2,0 soatda aniqlanmasligi mumkin",
+              "Tana harorati 23 gradusgacha",
+              "Murda dog‘lari, qotishi, qurishi"
+            ]
+          }
+        ],
+        "caption": "O‘lim belgilari"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega dastlabki belgilar yetarli emas? Doskada: ikki ustunli taqqoslash. Tipik xato: Beloglazov simptomini 2 soatdan keyin ham albatta topiladi deb o‘ylash."
+    },
+    {
+      "title": "Supravital reaksiyalar va o‘lim muddati",
+      "bullets": [
+        {
+          "text": "Miya o‘limidan so‘ng dastlabki vaqtda ayrim a’zo va to‘qimalar tashqi ta’sirga javob beradi; bu o‘lim muddatini aniqlashda qo‘llanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "221"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mexanik ta’sirda mushaklar 1-2 soat qisqaradi; 10 soatgacha ta’sir joyida idiomuskulyar o‘sma paydo bo‘ladi, 10-11 soatda chuqurcha hosil bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "222"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Elektr tokida yuz, bo‘yin, qo‘l-oyoq mushaklari 2-3 soat qisqaradi; 11-12 soatgacha faqat ko‘z mushaklari.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "222"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Dastlabki 5-6 soatda 1% atropin qorachiqni kengaytiradi; ter bezlari reaksiyasini 30 soat oralig‘ida tekshirish mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "222"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Mushak qisqarishi",
+            "value": "1–2",
+            "unit": "soat"
+          },
+          {
+            "label": "Idiomuskulyar o‘sma",
+            "value": "10 gacha",
+            "unit": "soat"
+          },
+          {
+            "label": "Elektr: yuz, qo‘l-oyoq",
+            "value": "2–3",
+            "unit": "soat"
+          },
+          {
+            "label": "Elektr: faqat ko‘z",
+            "value": "11–12 gacha",
+            "unit": "soat"
+          },
+          {
+            "label": "1% atropin: qorachiq",
+            "value": "5–6",
+            "unit": "soat"
+          },
+          {
+            "label": "Ter bezlari reaksiyasi",
+            "value": "30 gacha",
+            "unit": "soat"
+          }
+        ],
+        "caption": "Supravital reaksiyalar"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega ko‘pincha yelka mushaklari tekshiriladi? Doskada: muddatlar jadvali. Tipik xato: muddatlarni mutlaq aniq deb hisoblash; ular taxminiy oraliqlar."
+    },
+    {
+      "title": "O‘limning sud-tibbiy tasnifi",
+      "bullets": [
+        {
+          "text": "Sud-tibbiy nuqtai nazardan o‘limning toifasi, xili va turi farqlanadi; toifa bo‘yicha o‘lim zo‘raki yoki nozo‘raki bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "221"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zo‘raki o‘lim xili bo‘yicha qotillik, o‘z-o‘zini o‘ldirish va baxtsiz hodisaga bo‘linadi; nozo‘raki o‘lim turlarga bo‘linmaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "221"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zo‘raki o‘lim turlari: mexanik jarohat, mexanik asfiksiya, zaharlanish, yuqori va past harorat, elektr toki.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "221"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Toifa va turni sud-tibbiy ekspert aniqlaydi; xilni aniqlash huquqni muhofaza etuvchi organlar vakolatida, chunki qasd aniqlanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "221"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "O‘lim tasnifi",
+        "children": [
+          {
+            "label": "Zo‘raki: xili",
+            "items": [
+              "Qotillik",
+              "O‘z-o‘zini o‘ldirish",
+              "Baxtsiz hodisa"
+            ]
+          },
+          {
+            "label": "Zo‘raki: turi",
+            "items": [
+              "Mexanik jarohat, asfiksiya",
+              "Zaharlanish",
+              "Harorat, elektr toki"
+            ]
+          },
+          {
+            "label": "Nozo‘raki: turi",
+            "items": [
+              "Yurak-qon tomir kasalliklari",
+              "Nafas a’zolari kasalliklari",
+              "Boshqa kasalliklar"
+            ]
+          },
+          {
+            "label": "Turni kim aniqlaydi",
+            "items": [
+              "Sud-tibbiy ekspert"
+            ]
+          },
+          {
+            "label": "Xilni kim aniqlaydi",
+            "items": [
+              "Huquqni muhofaza organlari"
+            ]
+          }
+        ],
+        "caption": "Toifa, xil, tur"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega xilni ekspert emas, huquqni muhofaza organlari aniqlaydi? Doskada: toifa-xil-tur daraxti. Tipik xato: xil va turni aralashtirish."
     },
     {
       "title": "Xulosa: asosiy g‘oyalar va nazorat savollari",
@@ -1845,19 +2075,19 @@
       }
     },
     {
-      "question": "Sud tibbiyoti fani predmetining ilmiy asoslangan tizimini ilk bor 1948-yilda kim taklif etgan?",
+      "question": "Bosh miya po‘stlog‘i o‘limi va boshqa a’zo hamda to‘qimalar o‘limi orasidagi oraliq davr taxminan qancha davom etadi?",
       "options": [
-        "M.I.Avdeev",
-        "V.L.Popov",
-        "N.I.Pirogov",
-        "I.Bon"
+        "2 soatga yaqin",
+        "6 soatga yaqin",
+        "20 soatga yaqin",
+        "2 sutkaga yaqin"
       ],
-      "correct_index": 0,
-      "explanation": "Darslikda sud tibbiyoti predmeti tizimini ilk bor 1948-yilda M.I.Avdeev taklif etgani yozilgan. V.L.Popov (1999) fan tarkibida uchta ta’limotni farqlagan.",
+      "correct_index": 2,
+      "explanation": "Darslikda bosh miya po‘stlog‘ining o‘limi va boshqa a’zolar o‘limi o‘rtasidagi oraliq davr 20 soatga yaqin ekani, transplantatsiya shunga asoslanishi yozilgan.",
       "source": {
         "author": "G‘iyosov Z.A.",
         "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-        "page": "4–6"
+        "page": "220"
       }
     },
     {
@@ -1957,19 +2187,19 @@
       }
     },
     {
-      "question": "Talaba fanni birinchi marta “sud tibbiyoti” deb nomlash taklif qilingan asar qaysi ekanini so‘radi. To‘g‘ri javobni tanlang.",
+      "question": "Reanimatsiya bo‘limida shifokor o‘limning eng erta ishonchli belgisini qidirmoqda. Beloglazov simptomi o‘limdan qancha vaqt o‘tgach aniqlanadi?",
       "options": [
-        "A.Parening “Opera chirurgica” asari",
-        "Sun-sining “Si Yuan Lu” asari",
-        "Ibn Sinoning “Tib qonunlari” asari",
-        "I.Bonning “Medicina forensis specimen” asari"
+        "Darhol, o‘lim onida",
+        "15-20 daqiqadan so‘ng",
+        "1,5-2,0 soatdan so‘ng",
+        "6-8 soatdan so‘ng"
       ],
-      "correct_index": 3,
-      "explanation": "Leypsigda nashr qilingan I.Bonning “Medicina forensis specimen” asarida fanni “sud tibbiyoti” deb nomlash birinchi marta taklif qilingan.",
+      "correct_index": 1,
+      "explanation": "Beloglazov simptomi («mushuk ko‘zi») o‘limning eng erta ishonchli belgisi bo‘lib, 15-20 daqiqadan so‘ng aniqlanadi; 1,5-2,0 soatdan so‘ng aniqlanmasligi mumkin.",
       "source": {
         "author": "G‘iyosov Z.A.",
         "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-        "page": "10"
+        "page": "220"
       }
     },
     {
@@ -2072,11 +2302,11 @@
       "question": "Ekspert ishda bila turib noto‘g‘ri xulosa berdi. Jinoyat kodeksining qaysi moddasida bunga jinoiy javobgarlik ko‘zda tutilgan?",
       "options": [
         "239-modda",
-        "238-modda",
+        "173-modda",
         "240-modda",
-        "173-modda"
+        "238-modda"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Jinoyat kodeksining 238-moddasi ekspertning bila turib noto‘g‘ri xulosa berishi uchun javobgarlik belgilaydi. 239-modda tergov ma’lumotlarini ruxsatsiz oshkor qilishga, 240-modda xulosa berishni rad etishga tegishli. 173-modda Jinoyat-protsessual kodeksiga oid bo‘lib, ekspertiza tayinlanishi shart bo‘lgan holatlarni ko‘rsatadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2136,11 +2366,11 @@
       "question": "Sud-tibbiy tekshiruv dalolatnomasida yakuniy qism qanday nomlanadi?",
       "options": [
         "To‘xtam",
-        "Xotima",
+        "Bayonnoma",
         "Xulosa",
-        "Bayonnoma"
+        "Xotima"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Dalolatnoma ekspert xulosasiga o‘xshash rasmiylashtiriladi. Farqi shuki, unda huquq va majburiyatlar tushuntirilgani va javobgarlik haqida ogohlantirilgani to‘g‘risida tilxat berilmaydi, yakuniy qism esa «xotima» deb ataladi. Ekspert xulosasida bu qism to‘xtam deyiladi.",
       "source": {
         "author": "G‘iyosov Z.A.",

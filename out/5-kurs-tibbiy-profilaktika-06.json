@@ -84,7 +84,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Ekspertiza tayinlanadi",
+        "children": [
+          {
+            "label": "Onasi noma’lum murda",
+            "items": [
+              "Zo‘raki o‘lim yoki shubha"
+            ]
+          },
+          {
+            "label": "Tashqarida tug‘ruq, o‘lik",
+            "items": [
+              "Davolash muassasasidan tashqarida"
+            ]
+          },
+          {
+            "label": "Yordamga shikoyat",
+            "items": [
+              "Homilador ayolga ko‘rsatilgan yordam"
+            ]
+          }
+        ],
+        "caption": "Uch holat",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Onasi nomaʼlum go‘dak topilsa, qaysi savollar birinchi o‘rinda turadi? 2) Tibbiy yordamga shikoyat bo‘lsa, ekspertiza nimani aniqlashi kerak? Doskada: uchta holatni uchta ustun qilib chizdiring. Tipik xato: talabalar faqat jinoyat shubhasi bo‘lgandagina ekspertiza o‘tkaziladi deb hisoblaydi."
     },
     {
@@ -119,17 +144,31 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Asosiy savollar",
-        "nodes": [
-          "Yangi tug‘ilganmi?",
-          "Tirik tug‘ilganmi?",
-          "Gestatsion yosh qanday?",
-          "Hayotga layoqatlimi?",
-          "Yashash muddati? Qarov bormi?"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Yangi tug‘ilgan",
+            "text": "Yangi tug‘ilganmi?"
+          },
+          {
+            "title": "2. Tirik tug‘ilgan",
+            "text": "Tirik tug‘ilganmi?"
+          },
+          {
+            "title": "3. Gestatsion yosh",
+            "text": "Yoshi qanday?"
+          },
+          {
+            "title": "4. Layoqat",
+            "text": "Hayotga layoqatlimi?"
+          },
+          {
+            "title": "5. Muddat, qarov",
+            "text": "Qancha yashagan, qarov bormi?"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Asosiy savollar",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nima uchun avval yangi tug‘ilganlik, keyin tirik tug‘ilganlik aniqlanadi? 2) Qarov masalasi huquqiy baholashga qanday taʼsir qiladi? Doskada: 5 tugunli sxemani talabalar bilan birga chizing. Tipik xato: yangi tug‘ilgan va tirik tug‘ilgan tushunchalarini bir xil deb olish (yangi tug‘ilgan ≠ tirik tug‘ilgan)."
     },
@@ -208,27 +247,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Yangi tug‘ilganlik davri",
-        "nodes": [],
-        "header": [
-          "Fan",
-          "Davomiyligi"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Pediatriya",
+            "value": "4",
+            "unit": "hafta"
+          },
+          {
+            "label": "Akusherlik-ginekologiya",
+            "value": "7",
+            "unit": "kun"
+          },
+          {
+            "label": "Sud tibbiyoti",
+            "value": "24",
+            "unit": "soat"
+          }
         ],
-        "rows": [
-          [
-            "Pediatriya",
-            "4 hafta (neonatal davr)"
-          ],
-          [
-            "Akusherlik-ginekologiya",
-            "7 kun"
-          ],
-          [
-            "Sud tibbiyoti",
-            "Dastlabki 24 soat"
-          ]
-        ]
+        "caption": "Yangi tug‘ilganlik davri",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun sud tibbiyoti eng qisqa muddatni oladi? 2) Bu farq qaysi qonun talabiga bog‘liq? Doskada: uch fanli jadvalni talabalar o‘zi chizsin. Tipik xato: neonatal davr (4 hafta) bilan sud-tibbiy davrni (24 soat) almashtirib yuborish."
     },
@@ -297,7 +335,16 @@
           "uncertain": false
         },
         {
-          "text": "Huquqiy asos: Jinoyat kodeksining 99-moddasi. Ona go‘dagini tug‘ish vaqtida yoki tug‘ilishi hamon qasddan o‘ldirsa, jazo qasddan odam o‘ldirishdagidan ancha yengil.",
+          "text": "Huquqiy asos: Jinoyat kodeksining 99-moddasi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "256"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ona go‘dagini tug‘ish vaqtida yoki tug‘ilishi hamon qasddan o‘ldirsa, jazo qasddan odam o‘ldirishdagidan ancha yengil.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -332,7 +379,16 @@
           "uncertain": false
         },
         {
-          "text": "Bunday hollarda zo‘raki o‘lim alomatlari yoki unga shubha bo‘lsa, sud-tibbiy ekspertiza o‘tkaziladi. Homilador ayolga yordamga shikoyat bo‘lganda ham tayinlanadi.",
+          "text": "Bunday hollarda zo‘raki o‘lim alomatlari yoki unga shubha bo‘lsa, sud-tibbiy ekspertiza o‘tkaziladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "256"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Homilador ayolga ko‘rsatilgan yordamga shikoyat bo‘lganda ham ekspertiza tayinlanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -367,7 +423,7 @@
       "title": "Yangi tug‘ilganlik belgilari: qon izlari va mo‘msimon qoplama",
       "bullets": [
         {
-          "text": "Tashqi jarohat bo‘lmasa, tanadagi qon izlari yangi tug‘ilganlik belgisi. Ular tug‘ruq yo‘llari yumshoq to‘qimalari yorilishidan hosil bo‘ladi va yuvilganda yo‘qoladi.",
+          "text": "Tashqi jarohat bo‘lmasa, qon izlari yangi tug‘ilganlik belgisi: tug‘ruq yo‘llari yumshoq to‘qimalari yorilishidan hosil bo‘lib, yuvilganda yo‘qoladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -385,7 +441,16 @@
           "uncertain": false
         },
         {
-          "text": "Tarkibi: teri yog‘ bezlari sekreti (V homila oyidan), ko‘chgan epidermis hujayralari, tuk sochlari va qog‘onoq suvlari. Bachadonda terini matseratsiyadan himoya qiladi.",
+          "text": "Tarkibi: teri yog‘ bezlari sekreti (V homila oyidan), ko‘chgan epidermis hujayralari, tuk-soch, qog‘onoq suvlari.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "257"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mo‘msimon qoplama bachadonda terini matseratsiyadan himoya qiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -482,36 +547,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ikki shishning solishtirmasi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Tug‘ruq shishi",
-          "Kefalogematoma"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Tug‘ruq shishi",
+            "items": [
+              "Yumshoq to‘qimalar shishi",
+              "Choklar proeksiyasida ham bor",
+              "Qisilishdan qon aylanishi buzilgan",
+              "2-3 kunda so‘riladi"
+            ]
+          },
+          {
+            "title": "Kefalogematoma",
+            "items": [
+              "Suyak usti pardasi ostiga qon",
+              "Choklar bilan chegaralangan",
+              "Tug‘ruq travmasi",
+              "2 hafta va undan ko‘p"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Mohiyati",
-            "Yumshoq to‘qimalar shishi",
-            "Suyak usti pardasi ostiga qon quyilishi"
-          ],
-          [
-            "Choklarga munosabat",
-            "Choklar proeksiyasida ham bor",
-            "Suyak ustida, choklar bilan chegaralangan"
-          ],
-          [
-            "Sababi",
-            "Qisilishdan qon aylanishi buzilishi",
-            "Tug‘ruq travmasi"
-          ],
-          [
-            "So‘rilishi",
-            "2-3 kunda",
-            "Kattaligiga qarab 2 hafta va undan ko‘p"
-          ]
-        ]
+        "caption": "Ikki shishning solishtirmasi",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Chok chegarasi nega farqlovchi belgi? 2) Chaqaloq 5 kunlik, shish saqlangan — qaysi biri ko‘proq? Doskada: kalla suyagi kesmasini chizib, suyak usti pardasi ostidagi qonni belgilang. Diqqat: tug‘ruq shishi ≠ kefalogematoma. Tipik xato: ikkalasining so‘rilish muddatini aralashtirish."
     },
@@ -555,7 +613,23 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Raso go‘dakda chiqishi",
+            "value": "1–2",
+            "unit": "kun"
+          },
+          {
+            "label": "Norasolarda chiqishi",
+            "value": "3–4",
+            "unit": "kun"
+          }
+        ],
+        "caption": "Mekoniy chiqib ketishi",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega norasolarda mekoniy kechroq chiqadi deb o‘ylaysiz? 2) Mekoniy topilishi chaqaloq yashagan muddat haqida nima beradi? Doskada: mekoniy topiladigan joylarni tana sxemasida belgilang. Tipik xato: mekoniy rangi va tarkibini oddiy najas bilan aralashtirish, 1-2 kun muddatini unutish."
     },
     {
@@ -635,7 +709,16 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: birlamchi atelektaz ≠ ikkilamchi atelektaz. Ikkilamchisida o‘pka avval nafas olgan, keyin atelektazga uchragan; o‘pka sinamasi soxta manfiy bo‘lishi mumkin.",
+          "text": "Diqqat: birlamchi atelektaz ≠ ikkilamchi atelektaz. Ikkilamchisida o‘pka avval nafas olgan, keyin atelektazga uchragan.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ikkilamchi atelektazda oddiy o‘pka sinamasi soxta manfiy bo‘lishi mumkin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -644,7 +727,29 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Birlamchi atelektaz",
+            "items": [
+              "Nafas olmagan o‘pka",
+              "Absolyut (mutlaq) belgi",
+              "Go‘dak bir necha soniya yashaydi"
+            ]
+          },
+          {
+            "title": "Ikkilamchi atelektaz",
+            "items": [
+              "Avval nafas olgan o‘pka",
+              "Keyin atelektazga uchragan",
+              "Sinama soxta manfiy bo‘lishi mumkin"
+            ]
+          }
+        ],
+        "caption": "Atelektaz turlari",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nega nafas olmagan o‘pkada go‘dak uzoq yashay olmaydi? 2) Ikkilamchi atelektaz o‘pka sinamasi natijasiga qanday ta’sir qiladi? Doskada ikki o‘pkani yonma-yon chizing: nafas olmagan va avval nafas olib keyin atelektazga uchragan. Tipik xato: ikkilamchi atelektazni birlamchi atelektaz bilan aralashtirish va soxta manfiy natijani o‘lik tug‘ilish deb baholash."
     },
     {
@@ -679,37 +784,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
+        "kind": "tree",
+        "root": "Yangi tug‘ilganlik belgilari",
+        "children": [
+          {
+            "label": "Absolyut",
+            "items": [
+              "O‘pkaning birlamchi atelektazi",
+              "Kindikda halqa yo‘qligi / dastlabki",
+              "Ajratilmagan kindik"
+            ]
+          },
+          {
+            "label": "Nisbiy",
+            "items": [
+              "Qon izi, mo‘msimon qoplama",
+              "Mekoniy",
+              "2-kun va keyin ham uchraydi"
+            ]
+          }
+        ],
         "caption": "Absolyut va nisbiy belgilar",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Turi",
-          "Izoh"
-        ],
-        "rows": [
-          [
-            "O‘pkaning birlamchi atelektazi",
-            "Absolyut",
-            "Mutlaq ishonchli"
-          ],
-          [
-            "Kindikda halqa yo‘qligi",
-            "Absolyut",
-            "Yoki dastlabki belgilari bor"
-          ],
-          [
-            "Ajratilmagan kindik",
-            "Absolyut",
-            "Tana va yo‘ldoshdan ajralmagan"
-          ],
-          [
-            "Qon izi, mo‘msimon qoplama, mekoniy",
-            "Nisbiy",
-            "2-kun va keyin ham uchraydi"
-          ]
-        ],
-        "extras": null
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Nega faqat ikki belgi mutlaq ishonchli hisoblanadi? 2) Nisbiy belgi topilganda ekspert qanday xulosa chiqaradi? Doskada ikki ustunli jadval chizdiring: absolyut va nisbiy belgilar. Tipik xato: mekoniy yoki mo‘msimon qoplamani yangi tug‘ilganlikning mutlaq belgisi deb hisoblash."
     },
@@ -760,7 +856,16 @@
       "title": "Tezkor savol: yangi tug‘ilganlik belgilari",
       "bullets": [
         {
-          "text": "Savol: qaysi belgilar yangi tug‘ilganlikni mutloq ishonchli ko‘rsatadi? Javob: o‘pkaning birlamchi atelektazi, demarkatsion halqaning yo‘qligi yoki ajratilmagan kindik.",
+          "text": "Savol: qaysi belgilar yangi tug‘ilganlikni mutloq ishonchli ko‘rsatadi?",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "258-259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Javob: o‘pkaning birlamchi atelektazi, demarkatsion halqaning yo‘qligi yoki ajratilmagan kindik.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -778,7 +883,7 @@
           "uncertain": false
         },
         {
-          "text": "Savol: mekoniy qachon chiqib ketadi? Javob: odatda 1-2 kunda to‘liq chiqadi. Norasо tug‘ilgan go‘daklarda bu muddat 3-4 kungacha cho‘ziladi.",
+          "text": "Savol: mekoniy qachon chiqib ketadi? Javob: odatda 1-2 kunda to‘liq chiqadi. Noraso tug‘ilgan go‘daklarda bu muddat 3-4 kungacha cho‘ziladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -882,7 +987,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Tirik tug‘ilganlik (JSST)",
+        "children": [
+          {
+            "label": "Nafas olish",
+            "items": [
+              "Murdada amalda shu tekshiriladi"
+            ]
+          },
+          {
+            "label": "Yurak urishi",
+            "items": []
+          },
+          {
+            "label": "Kindik pulsatsiyasi",
+            "items": []
+          },
+          {
+            "label": "Ixtiyoriy harakat",
+            "items": []
+          }
+        ],
+        "caption": "Murdada faqat nafas olganlik tekshiriladi",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nima uchun murdada yurak urishi va kindik pulsatsiyasini tekshirib bo‘lmaydi? 2) Nafas olganlik nega hal qiluvchi belgi hisoblanadi? Doskada: JSST mezonlarini yozib, nafas olishni ajratib belgilang. Tipik xato: talabalar to‘rtala mezon ham murdada tekshiriladi deb o‘ylaydi. Qo‘shimcha: aniqlash sinamalar, makro-, mikroskopik va laboratoriya tekshiruvlari bilan olib boriladi (259-bet)."
     },
     {
@@ -917,17 +1047,31 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Sinama bosqichlari",
-        "nodes": [
-          "Traxeya, qizilo‘ngachga ligatura",
-          "Organ kompleksi suvga solinadi",
-          "Cho‘kdi: o‘pkalar alohida",
-          "Keyin: bo‘laklar, bo‘lakchalar",
-          "Suzsa — musbat, to‘xtatiladi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Ligatura",
+            "text": "Traxeya, qizilo‘ngachga"
+          },
+          {
+            "title": "2. Suvga solish",
+            "text": "Organ kompleksi suvga solinadi"
+          },
+          {
+            "title": "3. Cho‘kdi",
+            "text": "O‘pkalar alohida solinadi"
+          },
+          {
+            "title": "4. Bo‘laklar",
+            "text": "Bo‘laklar, bo‘lakchalar sinaladi"
+          },
+          {
+            "title": "5. Suzsa",
+            "text": "Musbat — to‘xtatiladi"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Sinama bosqichlari",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Nima uchun avval butun kompleks, keyin alohida bo‘laklar suvga solinadi? 2) Cho‘kish va suzish nimani bildiradi? Doskada: bosqichlar zanjirini chizing va yonida 1,05–1,06 va 1,0 dan past qiymatlarni yozing. Tipik xato: musbat natijadan keyin ham keyingi bosqichlarni davom ettirish, yoki cho‘kish bilan suzishni teskari tushunish."
     },
@@ -963,36 +1107,27 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Soxta natija sabablari",
-        "nodes": [],
-        "header": [
-          "Holat",
-          "Natija",
-          "Izoh"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Soxta musbat",
+            "items": [
+              "Chirish (chirish gazlari)",
+              "Sun’iy nafas oldirish",
+              "Muzlash (yaxshi erimagan o‘pka)"
+            ]
+          },
+          {
+            "title": "Soxta manfiy",
+            "items": [
+              "Ikkilamchi atelektaz",
+              "Nafas olgan o‘pka keyin yopilgan",
+              "Taranuxin yoki Traxtenberg usuli"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Chirish",
-            "Soxta musbat",
-            "Chirish gazlari o‘pkani qalqitadi"
-          ],
-          [
-            "Sun’iy nafas oldirish",
-            "Soxta musbat",
-            "Bo‘lakchalar bir xil suzmaydi"
-          ],
-          [
-            "Muzlash",
-            "Soxta musbat",
-            "Yaxshi erimagan o‘pkada"
-          ],
-          [
-            "Ikkilamchi atelektaz",
-            "Soxta manfiy",
-            "Nafas olgan o‘pka keyin yopilgan"
-          ]
-        ]
+        "caption": "Soxta natijalar",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Chirish gazini haqiqiy nafasdan qanday farqlaysiz? 2) Ikkilamchi atelektazda nega past bosim usuli kerak? Doskada: jadvalni ko‘chirib, har holatga yo‘nalish (musbat/manfiy) belgilang. Tipik xato: ikkilamchi atelektazni birlamchi atelektaz bilan aralashtirish va soxta manfiyni soxta musbat deb yozish. Eslatma: to‘liq erigan muzlagan o‘pka suvda cho‘kadi (259-bet)."
     },
@@ -1000,7 +1135,16 @@
       "title": "Taranuxin usuli va Traxtenberg modifikatsiyasi",
       "bullets": [
         {
-          "text": "Ikkilamchi atelektazda avval nafas olgan o‘pka yallig‘lanish yoki nafas yo‘llarining yopilishi kabi sabablar bilan keyin yoyilmay qoladi. Oddiy sinama soxta manfiy berishi mumkin.",
+          "text": "Ikkilamchi atelektazda avval nafas olgan o‘pka yallig‘lanish yoki nafas yo‘llarining yopilishi kabi sabablar bilan keyin yoyilmay qoladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "259"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oddiy sinama soxta manfiy berishi mumkin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1052,7 +1196,7 @@
           "uncertain": false
         },
         {
-          "text": "Oshqozonning kirish-chiqish qismlariga, ichakning havo gumon qilingan joylariga va to‘g‘ri ichakka ligatura qo‘yiladi. Ajratilgan a’zolar suvli idishga solinadi; havoli joylar suzib chiqadi.",
+          "text": "Oshqozon, ichakning havoli joylari va to‘g‘ri ichakka ligatura qo‘yilib, a’zolar suvli idishga solinadi; havoli joylar suzib chiqadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1061,7 +1205,7 @@
           "uncertain": false
         },
         {
-          "text": "Havo asta-sekin o‘tgani uchun yashash muddati baholanadi: faqat oshqozonda bo‘lsa 3 soatdan kam. 5-6 soatda ingichka ichak to‘ladi, 6 soatdan keyin yo‘g‘on ichakka o‘tadi.",
+          "text": "Yashash muddati: faqat oshqozonda havo bo‘lsa 3 soatdan kam; 5-6 soatda ingichka ichak to‘ladi; 6 soatdan keyin havo yo‘g‘on ichakka o‘tadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1157,36 +1301,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Tirik va o‘lik tug‘ilgan chaqaloq o‘pkasi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Tirik",
-          "O‘lik"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Tirik tug‘ilgan",
+            "items": [
+              "Ko‘krak qafasi bochkasimon",
+              "Diafragma VI–VII qobirg‘a sathida",
+              "O‘pka qafasni to‘ldiradi",
+              "O‘pka marmarsimon (Bush–Xaberda)"
+            ]
+          },
+          {
+            "title": "O‘lik tug‘ilgan",
+            "items": [
+              "Ko‘krak qafasi yassi",
+              "Diafragma IV–V qobirg‘a sathida",
+              "O‘pka kichik, zichroq",
+              "O‘pka tekis, ko‘kimtir-to‘q qizil"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Ko‘krak qafasi",
-            "Bochkasimon, qobirg‘alar oralig‘i keng",
-            "Yassi, qobirg‘alar oralig‘i tor"
-          ],
-          [
-            "Diafragma gumbazi",
-            "VI–VII qobirg‘alar sathida",
-            "IV–V qobirg‘alar sathida"
-          ],
-          [
-            "O‘pka hajmi, zichligi",
-            "Qafasni deyarli to‘ldiradi, elastik",
-            "Kichik, zichroq, umurtqaga yaqin"
-          ],
-          [
-            "O‘pka rangi",
-            "Marmarsimon (Bush–Xaberda belgisi)",
-            "Tekis, ko‘kimtir-to‘q qizil"
-          ]
-        ]
+        "caption": "Tirik va o‘lik tug‘ilgan o‘pka",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: nega nafas olgan o‘pka ko‘krak qafasini to‘ldirib turadi? Chirish joyi tirik va o‘lik tug‘ilganda nimasi bilan farq qiladi? Doskada: jadvalni (qafas, diafragma, o‘pka) o‘zlari chizsin. Tipik xato: diafragma sathini (VI–VII va IV–V) chalkashtirish."
     },
@@ -1212,7 +1349,16 @@
           "uncertain": false
         },
         {
-          "text": "Gialin membranalar kapillyardan sizgan oqsillardan (albumin, globulin, fibrin) iborat. Ular noraso, bir necha soat yashaganlarda uchraydi; nafas olmaganda bo‘lmaydi.",
+          "text": "Gialin membranalar kapillyardan sizgan oqsillardan (albumin, globulin, fibrin) iborat; noraso, bir necha soat yashaganlarda uchraydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "261"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nafas olmagan go‘dakda gialin membranalar bo‘lmaydi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1323,7 +1469,7 @@
       "title": "Gestatsion yosh: rasolik va yetuklik",
       "bullets": [
         {
-          "text": "Rasolik – homiladorlik taxminan 10 homila oyi yoki 280 kun davom etganini ko‘rsatuvchi belgilar majmui. Jahon sog‘liqni saqlash tashkiloti bo‘yicha 37–42 hafta o‘z muddati hisoblanadi.",
+          "text": "Rasolik — homiladorlik taxminan 10 homila oyi yoki 280 kun davom etganini ko‘rsatuvchi belgilar; JSST bo‘yicha 37–42 hafta o‘z muddati hisoblanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1341,7 +1487,7 @@
           "uncertain": false
         },
         {
-          "text": "Yetuklik – ona organizmidan tashqarida yashashga yetarli rivojlanish. Tana uzunligi 45 sm va undan ortiq, vazni 2500 g dan kam bo‘lmasa, homila yetuk hisoblanadi.",
+          "text": "Yetuklik — ona organizmidan tashqarida yashashga yetarli rivojlanish: tana uzunligi 45 sm va undan ortiq, vazni 2500 g dan kam emas.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1359,7 +1505,29 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Rasolik",
+            "items": [
+              "10 homila oyi yoki 280 kun",
+              "JSST: 37–42 hafta",
+              "Uzunligi 50–54 sm, vazni 3000–3500 g"
+            ]
+          },
+          {
+            "title": "Yetuklik",
+            "items": [
+              "Tashqarida yashashga yetarli rivojlanish",
+              "Uzunligi ≥ 45 sm",
+              "Vazni ≥ 2500 g"
+            ]
+          }
+        ],
+        "caption": "Rasolik ≠ yetuklik",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 5–6 daqiqa. Muhokama: 1) Go‘dak yetuk bo‘lsa-yu raso bo‘lmasa, bu mumkinmi? 2) Tergovga rasolik emas, nima muhimroq? Doskada: ikki ustunli ‘Raso | Yetuk’ taqqoslash jadvalini chizdiring (muddat, uzunlik, vazn). Tipik xato: ikkala tushunchani bir xil deb o‘ylash va 45 sm bilan 50–54 sm ni aralashtirish."
     },
     {
@@ -1394,36 +1562,27 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Yoshni hisoblash usullari",
-        "nodes": [],
-        "header": [
-          "Usul",
-          "Qoida",
-          "Misol"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Gaaze, 1-yarim",
+            "value": "16 sm → 4 oy"
+          },
+          {
+            "label": "Gaaze, 2-yarim",
+            "value": "40 sm → 8 oy"
+          },
+          {
+            "label": "Baltazar–Derve",
+            "value": "40 sm → 224 kun"
+          },
+          {
+            "label": "Yakupov",
+            "value": "34 sm → 10 oy"
+          }
         ],
-        "rows": [
-          [
-            "Gaaze, 1-yarim",
-            "√ tana uzunligi",
-            "16 sm → 4 oy"
-          ],
-          [
-            "Gaaze, 2-yarim",
-            "Tana uzunligi ÷ 5",
-            "40 sm → 8 oy"
-          ],
-          [
-            "Baltazar–Derve",
-            "Uzunlik × 5,6 (kun)",
-            "40 sm → 224 kun"
-          ],
-          [
-            "Yakupov",
-            "Bosh aylanasi ÷ 3,4",
-            "34 sm → 10 oy"
-          ]
-        ]
+        "caption": "Gaaze: √L va L÷5; Baltazar–Derve: L×5,6; Yakupov: bosh aylanasi ÷3,4",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8–10 daqiqa. Muhokama: 1) Nega Gaaze formulasida homiladorlik yarmiga qarab qoida o‘zgaradi? 2) 224 kun necha homila oyiga to‘g‘ri keladi? Doskada: jadvaldagi to‘rt misolni talabalar bilan birga hisoblang. Tipik xato: ikkinchi yarimda ham kvadrat ildiz olish yoki kun bilan oyni aralashtirish."
     },
@@ -1604,7 +1763,7 @@
       "title": "Go‘dakning hayotga layoqati",
       "bullets": [
         {
-          "text": "Jahon sog‘liqni saqlash tashkiloti (JSST) mezoni: uzunligi 25 sm dan, vazni 500 g dan kam go‘daklar o‘ta norasoligi tufayli hayotga layoqatsiz hisoblanadi. Bunda murda ochilmaydi, faqat tashqi tekshiruv o‘tkaziladi, vazni va uzunligi o‘lchanadi.",
+          "text": "JSST: uzunligi 25 sm dan, vazni 500 g dan kam go‘dak o‘ta norasoligi tufayli layoqatsiz; murda ochilmaydi, faqat tashqi tekshiruv va o‘lchash o‘tkaziladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1622,7 +1781,7 @@
           "uncertain": false
         },
         {
-          "text": "Tashqi nuqson topilsa (oltinchi barmoq, quyon lab, barmoqlar orasida parda), ichki nuqsonlarni istisno qilish uchun bosh miya va ichki a’zolar sinchiklab tekshiriladi.",
+          "text": "Tashqi nuqson (oltinchi barmoq, quyon lab, barmoq pardasi) topilsa, ichki nuqsonni istisno qilish uchun bosh miya va a’zolar tekshiriladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1631,7 +1790,7 @@
           "uncertain": false
         },
         {
-          "text": "Tug‘ruq travmasi ham yashab ketishga to‘sqinlik qiladi. Masalan, bosh miyaning majaqlanishi yoki orqa miya shikasti bilan bo‘yin umurtqalarining sinishi hayot bilan nomutanosib jarohatlardir.",
+          "text": "Tug‘ruq travmasi ham yashashga to‘sqinlik qiladi: bosh miyaning majaqlanishi yoki bo‘yin umurtqalari sinishi bilan orqa miya shikasti hayot bilan nomutanosib.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1640,7 +1799,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Layoqatsizlik sabablari",
+        "children": [
+          {
+            "label": "O‘ta norasolik",
+            "items": [
+              "Uzunligi < 25 sm",
+              "Vazni < 500 g"
+            ]
+          },
+          {
+            "label": "Rivojlanish nuqsoni",
+            "items": [
+              "Anensefaliya",
+              "Ikki kamerali yurak"
+            ]
+          },
+          {
+            "label": "Tug‘ruq travmasi",
+            "items": [
+              "Bosh miya majaqlanishi",
+              "Bo‘yin umurtqasi sinishi"
+            ]
+          }
+        ],
+        "caption": "JSST va nuqsonlar",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega tashqi nuqson topilganda ichki a’zolar ham tekshiriladi? 2) Nega JSST mezonidagi go‘dakda murda ochilmaydi? Doskaga chizish: hayotga layoqatsizlik sabablari (norasolik, nuqson, tug‘ruq travmasi) ko‘rinishidagi uch shoxli sxema. Tipik xato: «tirik tug‘ilgan» tushunchasini «hayotga layoqatli» bilan aralashtirish. Tirik tug‘ilgan go‘dak ham layoqatsiz bo‘lishi mumkin."
     },
     {
@@ -1675,31 +1862,27 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Belgilar va muddatlar",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Muddat"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Gialin membranalar",
+            "text": "Kamida 1-2 soat yashagan"
+          },
+          {
+            "title": "Ikkilamchi atelektaz",
+            "text": "Kamida 5-6 soatdan so‘ng"
+          },
+          {
+            "title": "Demarkatsion halqa",
+            "text": "Birinchi sutka oxirida shakllanadi"
+          },
+          {
+            "title": "Tug‘ruq shishi",
+            "text": "2-3-kunlarda so‘riladi"
+          }
         ],
-        "rows": [
-          [
-            "Gialin membranalar paydo bo‘lishi",
-            "Go‘dak kamida 1-2 soat yashagan"
-          ],
-          [
-            "O‘pkaning ikkilamchi atelektazi",
-            "Kamida 5-6 soatdan so‘ng"
-          ],
-          [
-            "Kindikda demarkatsion halqa",
-            "Birinchi sutka oxirida shakllanadi"
-          ],
-          [
-            "Tug‘ruq shishi",
-            "2-3-kunlarda so‘riladi"
-          ]
-        ]
+        "caption": "Belgilar va muddatlar",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Oshqozonda havo bor, ichakda yo‘q: go‘dak necha soat yashagan? 2) Nima uchun bitta belgi bilan chegaralanmaymiz? Doskaga chizish: soatlar va kunlar bo‘yicha vaqt chizig‘i (1-2 soat, 3 soat, 5-6 soat, 1 sutka, 2-3 kun). Tipik xato: muddatlarni aniq kafolat deb olish. Ular taxminiy. Shuningdek, gialin membranalar bilan ikkilamchi atelektaz muddatlarini almashtirib yuborish."
     },
@@ -1743,7 +1926,38 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Qarov belgilari",
+        "children": [
+          {
+            "label": "Kiyim",
+            "items": [
+              "Yo‘rgaklangan, kiyimli"
+            ]
+          },
+          {
+            "label": "Kindik",
+            "items": [
+              "Kesilib boylangan"
+            ]
+          },
+          {
+            "label": "Tana",
+            "items": [
+              "Qon va qoplamadan tozalangan"
+            ]
+          },
+          {
+            "label": "Ichki tekshiruv",
+            "items": [
+              "Oshqozonda sut yoki o‘xshash massa"
+            ]
+          }
+        ],
+        "caption": "Qarov bo‘lganligi",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Qaysi belgilar tashqi, qaysi biri ichki tekshiruvda aniqlanadi? 2) Qarov belgilari go‘dakni tashlab ketish masalasida nima uchun muhim? Doskaga chizish: qarov belgilarining ro‘yxati (yo‘rgak, kiyim, kindik, tozalik, oshqozonda sut). Tipik xato: faqat tozalanganlikka tayanish. Belgilar majmuini baholash kerak."
     },
     {
@@ -1768,7 +1982,16 @@
           "uncertain": false
         },
         {
-          "text": "Savol: gialin membranalari va o‘pkaning ikkilamchi atelektazi uchun go‘dak qancha yashashi kerak? Javob: gialin uchun kamida 1-2 soat, atelektaz uchun kamida 5-6 soat.",
+          "text": "Savol: gialin membranalari va o‘pkaning ikkilamchi atelektazi uchun go‘dak qancha yashashi kerak?",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "264"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Javob: gialin uchun kamida 1-2 soat, atelektaz uchun kamida 5-6 soat.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1897,7 +2120,16 @@
           "uncertain": false
         },
         {
-          "text": "Kalla gumbazida darchalar ochiladi, shunda o‘roqsimon o‘simta va miyacha chodiri butun qoladi. Oxirida gistologik va sud-biologik tekshiruv uchun material olinadi.",
+          "text": "Kalla gumbazida darchalar ochiladi, shunda o‘roqsimon o‘simta va miyacha chodiri butun qoladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "266-267"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oxirida gistologik va sud-biologik tekshiruv uchun material olinadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1913,7 +2145,7 @@
       "title": "Voqea tahlili: 5-bo‘lim bo‘yicha",
       "bullets": [
         {
-          "text": "Vaziyat A: go‘dak murdasida tashqi jarohat va yara yo‘q. Kalla gumbazi suyaklarida siniq, miya pardalarida qon quyilishi bor. Ona tor tosli, tug‘ruq faoliyati sust.",
+          "text": "Vaziyat A: tashqi jarohat va yara yo‘q; kalla gumbazi suyaklarida siniq, miya pardalarida qon quyilishi. Ona tor tosli, tug‘ruq faoliyati sust.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1922,7 +2154,7 @@
           "uncertain": false
         },
         {
-          "text": "Vaziyat B: yuz va bo‘yin sohasida shilinma va qontalashlar, og‘iz burchaklarida yorilish bor. Ayol tug‘ruqni tezlashtirish uchun o‘ziga qo‘li bilan yordam bergan.",
+          "text": "Vaziyat B: yuz va bo‘yinda shilinma, qontalash, og‘iz burchaklarida yorilish. Ayol tug‘ruqni tezlashtirish uchun o‘ziga qo‘li bilan yordam bergan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1940,7 +2172,7 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: tug‘ruq travmasida tashqi jarohat va yaralar hosil bo‘lmaydi. Shilinma, qontalash va og‘iz burchagi yorilishi esa tug‘ayotgan ayolning o‘z-o‘ziga yordami belgisi bo‘lishi mumkin.",
+          "text": "Diqqat: tug‘ruq travmasida tashqi jarohat va yara bo‘lmaydi. Shilinma, qontalash, og‘iz burchagi yorilishi ayolning o‘z yordami belgisi bo‘lishi mumkin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1974,7 +2206,7 @@
           "uncertain": false
         },
         {
-          "text": "Nazorat 1: ekspertiza yechimiga qanday savollar qo‘yiladi? Sud tibbiyotida yangi tug‘ilganlik tushunchasi nima bilan farqlanadi? Yangi tug‘ilganlik belgilarini keltiring.",
+          "text": "Nazorat 1: ekspertiza oldiga qanday savollar qo‘yiladi? Yangi tug‘ilganlik tushunchasi sud tibbiyotida nimasi bilan farq qiladi? Belgilarini keltiring.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1983,7 +2215,7 @@
           "uncertain": false
         },
         {
-          "text": "Nazorat 2: qaysi belgilar mutloq xarakterga ega? O‘pka sinamasida nafas olingan havoni chirish gazlaridan qanday farqlash mumkin? Ikkilamchi atelektazda sinama qanday o‘tkaziladi?",
+          "text": "Nazorat 2: qaysi belgilar mutloq? O‘pka sinamasida nafas havosini chirish gazlaridan qanday farqlash mumkin? Ikkilamchi atelektazda sinama qanday o‘tadi?",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -2064,12 +2296,12 @@
     {
       "question": "Ona go‘dagini tug‘ilishi hamon qasddan o‘ldirdi. Bu jinoyat O‘zbekiston Respublikasi Jinoyat kodeksining qaysi moddasida alohida ajratilgan?",
       "options": [
-        "98-modda",
         "99-modda",
         "97-modda",
-        "100-modda"
+        "100-modda",
+        "98-modda"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Onaning o‘z go‘dagini tug‘ish vaqtida yoki tug‘ilishi hamon qasddan o‘ldirishi 99-moddada alohida ajratilgan, jazosi ancha yengil. Agar buni boshqa shaxs qilsa, 97-modda (qasddan odam o‘ldirish) bo‘yicha baholanadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2096,12 +2328,12 @@
     {
       "question": "Ekspertizaga keltirilgan chaqaloq murdasida kindik tana va yo‘ldoshdan ajratilmagan. Bu belgi qanday xarakterga ega?",
       "options": [
-        "Nisbiy belgi, go‘dak hayotining ikkinchi kunida ham uchraydi",
         "Faqat noraso tug‘ilgan go‘daklarda uchraydigan maxsus belgi",
         "Tug‘ruqdan bir haftadan keyin paydo bo‘ladigan kechki belgi",
-        "Absolyut belgi, ya’ni yangi tug‘ilganlikning mutloq ishonchli belgisi"
+        "Absolyut belgi, ya’ni yangi tug‘ilganlikning mutloq ishonchli belgisi",
+        "Nisbiy belgi, go‘dak hayotining ikkinchi kunida ham uchraydi"
       ],
-      "correct_index": 3,
+      "correct_index": 2,
       "explanation": "Kindikning tana va yo‘ldoshdan ajratilmagani absolyut belgilar qatoriga kiradi. Absolyut belgilar: o‘pkaning birlamchi atelektazi hamda demarkatsion halqaning yo‘qligi yoki uning dastlabki belgilari. Qolgan belgilar nisbiy bo‘lib, ikkinchi va keyingi kunlarda ham uchrashi mumkin.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2112,12 +2344,12 @@
     {
       "question": "Chirigan murdada o‘pka bo‘lakchalari suv yuzasiga qalqdi, ammo suv ostida qo‘l bilan siqilganda qayta suzib chiqmadi. Bu natija nimani bildiradi?",
       "options": [
-        "Soxta musbat natija: bo‘lakchalarni chirish gazlari ko‘targan",
         "Haqiqiy musbat natija: go‘dak tug‘ilgach nafas olgan",
         "Soxta manfiy natija: ikkilamchi atelektaz rivojlangan",
-        "Haqiqiy manfiy natija: o‘pka umuman nafas olmagan"
+        "Haqiqiy manfiy natija: o‘pka umuman nafas olmagan",
+        "Soxta musbat natija: bo‘lakchalarni chirish gazlari ko‘targan"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Chirigan murdalarda o‘pka sinamasi soxta musbat natija berishi mumkin. Chirish gazlari hisobiga qalqigan bo‘lakchalar suv ostida siqilganda qayta suzib chiqmaydi. Nafas olgan havo esa bunday siqilishda ham bo‘lakchani yuzada ushlab turadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2128,12 +2360,12 @@
     {
       "question": "Sud-tibbiy ekspertizada tirik tug‘ilganlik masalasi asosan nimani aniqlash orqali hal etiladi?",
       "options": [
-        "O‘limdan keyin yurak urishi bo‘lganligini aniqlash orqali",
-        "O‘limdan keyin ixtiyoriy harakat bo‘lganligini aniqlash orqali",
         "Go‘dak nafas olgan yoki olmaganligini aniqlash orqali",
-        "O‘limdan keyin kindik pulsatsiyasini aniqlash orqali"
+        "O‘limdan keyin kindik pulsatsiyasini aniqlash orqali",
+        "O‘limdan keyin yurak urishi bo‘lganligini aniqlash orqali",
+        "O‘limdan keyin ixtiyoriy harakat bo‘lganligini aniqlash orqali"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "explanation": "JSST mezonlari: nafas olish, yurak urishi, kindik pulsatsiyasi yoki ixtiyoriy harakatlar. Lekin sud tibbiyotida yurak urishi, kindik pulsatsiyasi va ixtiyoriy harakatlarni o‘limdan keyin aniqlash usullari ishlab chiqilmagan. Shu sababli masala asosan nafas olish bo‘yicha hal etiladi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2160,12 +2392,12 @@
     {
       "question": "Chirigan murdada o‘pka bo‘lakchalari suvda qalqib chiqdi, ammo suv ostida qo‘l bilan siqilgach, yuzaga qayta suzib chiqmadi. Bu nimani ko‘rsatadi?",
       "options": [
-        "Qalqish chirish gazlari hisobiga bo‘lgan",
-        "Chaqaloq to‘liq nafas olgan",
         "Ikkilamchi atelektaz rivojlangan",
-        "O‘pka muzlab to‘liq erigan"
+        "O‘pka muzlab to‘liq erigan",
+        "Qalqish chirish gazlari hisobiga bo‘lgan",
+        "Chaqaloq to‘liq nafas olgan"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Chirish gazlari hisobiga suv yuzasiga qalqib chiqqan o‘pka bo‘lakchalari suv ostida qo‘l bilan yaxshi siqilsa, qayta suzib chiqmaydi. Bu soxta musbat natijani chirish gazlari bilan izohlaydi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2176,12 +2408,12 @@
     {
       "question": "Avval nafas olgan, so‘ngra yallig‘lanish tufayli atelektazga uchragan o‘pka oddiy sinamada cho‘kdi. Qaysi usul tavsiya etiladi?",
       "options": [
-        "Dillon rentgenologik sinamasi",
-        "Taranuxin usuli (past bosimli kolba)",
         "Breslau oshqozon-ichak sinamasi",
-        "Galen–Rauger oddiy o‘pka sinamasi"
+        "Galen–Rauger oddiy o‘pka sinamasi",
+        "Dillon rentgenologik sinamasi",
+        "Taranuxin usuli (past bosimli kolba)"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Ikkilamchi atelektazda oddiy sinama soxta manfiy bo‘lishi mumkin. Shuning uchun Taranuxin usuli yoki Traxtenberg modifikatsiyasi tavsiya etiladi: bo‘lakcha suvli kolbada past bosimda suv yuziga qalqib chiqadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2192,12 +2424,12 @@
     {
       "question": "Homilaning tana uzunligi 40 sm. Gaaze formulasi bo‘yicha (homiladorlikning ikkinchi yarmi) gestatsion yosh necha homila oyi?",
       "options": [
-        "6 homila oyi",
-        "7 homila oyi",
         "8 homila oyi",
-        "10 homila oyi"
+        "10 homila oyi",
+        "6 homila oyi",
+        "7 homila oyi"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "explanation": "Gaaze formulasida homiladorlikning ikkinchi yarmida tana uzunligi beshga bo‘linadi: 40 : 5 = 8 homila oyi. Birinchi yarmida esa tana uzunligidan kvadrat ildiz chiqariladi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2208,12 +2440,12 @@
     {
       "question": "Nima uchun rentgenologik sinama hozirgi paytda sud-tibbiy ekspertiza amaliyotida qo‘llanmaydi? Asosiy sabab qaysi?",
       "options": [
-        "Natijasi faqat bir necha kundan keyin ma’lum bo‘ladi",
-        "Faqat murdani ochgandan keyin bajarish mumkin bo‘ladi",
         "Faqat o‘lik tug‘ilgan chaqaloqlarda ma’lumot beradi",
-        "Nafas olgan o‘pkani sun’iy ventilyatsiyadan farqlab bo‘lmaydi"
+        "Nafas olgan o‘pkani sun’iy ventilyatsiyadan farqlab bo‘lmaydi",
+        "Natijasi faqat bir necha kundan keyin ma’lum bo‘ladi",
+        "Faqat murdani ochgandan keyin bajarish mumkin bo‘ladi"
       ],
-      "correct_index": 3,
+      "correct_index": 1,
       "explanation": "Rentgenologik tekshiruvda nafas olgan o‘pkani sun’iy ventilyatsiya qilingan o‘pkadan va chirish gazlari holatidan farqlab bo‘lmaydi. Maxsus jihoz kerakligi va imkoniyatlari cheklanganligi ham sabab bo‘ladi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2240,12 +2472,12 @@
     {
       "question": "Homila murdasi bilan birga yo‘ldosh ham keltirildi: kindik uzunligi 46 sm, yo‘ldosh massasi 410 g. Gestatsion yosh qaysi homila oyiga to‘g‘ri keladi?",
       "options": [
+        "IX homila oyiga to‘g‘ri keladi",
         "VI homila oyiga to‘g‘ri keladi",
         "VII homila oyiga to‘g‘ri keladi",
-        "VIII homila oyiga to‘g‘ri keladi",
-        "IX homila oyiga to‘g‘ri keladi"
+        "VIII homila oyiga to‘g‘ri keladi"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Jadval 10.1 bo‘yicha VIII homila oyida kindik uzunligi 46 sm, yo‘ldosh massasi 410 g bo‘ladi. VI oyda 38 sm va 250 g, VII oyda 42 sm va 340 g, IX oyda 47 sm va 470 g.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2272,12 +2504,12 @@
     {
       "question": "Tirik tug‘ilgan chaqaloq murdasining uzunligi 24 sm, vazni 450 g. Ekspert bu holatda tekshiruvni qanday o‘tkazadi?",
       "options": [
-        "Murdani ochib, bosh miyani tekshiradi",
-        "Faqat ichki a’zolarni gistologik o‘rganadi",
         "Rentgen orqali o‘pkani tekshirib xulosa beradi",
-        "Murdani ochmay, tashqi tekshiruv va o‘lchash"
+        "Murdani ochmay, tashqi tekshiruv va o‘lchash",
+        "Murdani ochib, bosh miyani tekshiradi",
+        "Faqat ichki a’zolarni gistologik o‘rganadi"
       ],
-      "correct_index": 3,
+      "correct_index": 1,
       "explanation": "Uzunligi 25 sm dan, vazni 500 g dan kam go‘dak o‘ta norasoligi sababli hayotga layoqatsiz hisoblanadi. Bunda murda ochilmaydi, faqat tashqi tekshiruv o‘tkaziladi, vazn va uzunlik o‘lchanadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2288,12 +2520,12 @@
     {
       "question": "Topilgan chaqaloq murdasi yo‘rgaklangan, kindigi kesib bog‘langan. Ichki tekshiruvda qaysi topilma unga qarov bo‘lganini yana tasdiqlaydi?",
       "options": [
+        "Yo‘g‘on ichakda mekoniy mavjud bo‘lishi",
         "Tanada tozalanmagan qon izlari saqlanishi",
         "Oshqozonda sut yoki unga o‘xshash massa topilishi",
-        "Kindik tana va yo‘ldoshdan ajratilmaganligi",
-        "Yo‘g‘on ichakda mekoniy mavjud bo‘lishi"
+        "Kindik tana va yo‘ldoshdan ajratilmaganligi"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Oshqozonda sut yoki unga o‘xshash massa topilishi, shuningdek tananing qon izlari va mo‘msimon qoplamadan tozalanishi go‘dakka qarov bo‘lganini ko‘rsatadi. Qolgan variantlar qarovsizlikka mos keladi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2304,12 +2536,12 @@
     {
       "question": "Yangi tug‘ilgan go‘dak qarovsiz qoldirilgan, kindigi bog‘lanmagan. Passiv go‘dak o‘ldirishda o‘lim sababi qaysi biri bo‘lishi mumkin?",
       "options": [
+        "Qog‘onoq suvlarining homila aspiratsiyasi",
         "Bo‘yin atrofida kindik o‘ralib qolishi",
         "Yo‘ldoshning muddatdan oldin ko‘chishi",
-        "Kindikdan tashqi qon ketish natijasi",
-        "Qog‘onoq suvlarining homila aspiratsiyasi"
+        "Kindikdan tashqi qon ketish natijasi"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Passiv go‘dak o‘ldirishda go‘dak qarovsiz qoldiriladi. Kindik bog‘lanmagan bo‘lsa tashqi qon ketishdan, boshqa hollarda sovuq qotish yoki ochlikdan o‘ladi. Boshqa variantlar antenatal sabablar.",
       "source": {
         "author": "G‘iyosov Z.A.",

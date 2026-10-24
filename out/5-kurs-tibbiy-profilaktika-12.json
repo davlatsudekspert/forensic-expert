@@ -14,7 +14,7 @@
           "uncertain": false
         },
         {
-          "text": "Jinsiy holatlarda jins, bokiralik, jinsiy yetuklik, nasl qoldirish qobiliyati, homiladorlik, tug‘ruq, abort hamda tanosil kasalliklari va OIV (odam immunitet tanqisligi virusi) yuqtirilganligi aniqlanadi.",
+          "text": "Jinsiy holatlarda jins, bokiralik, yetuklik, nasl qoldirish qobiliyati, homiladorlik, tug‘ruq, abort, tanosil kasalliklari va OIV yuqtirilganligi aniqlanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -23,7 +23,7 @@
           "uncertain": false
         },
         {
-          "text": "Jinsiy jinoyatlar qatoriga nomusga tegish (zo‘rlash), besoqolbozlik va fahsh harakatlari kiradi. Tanosil kasalliklari yoki OIVni tarqatish ham shu guruhda o‘rganiladi.",
+          "text": "Jinsiy jinoyatlar: nomusga tegish, besoqolbozlik va fahsh harakatlari; tanosil kasalliklari yoki OIVni tarqatish ham shu guruhda o‘rganiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -76,31 +76,40 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ekspertiza turlari",
-        "nodes": [],
-        "header": [
-          "Turi",
-          "Maqsadi"
+        "kind": "tree",
+        "root": "Tirik shaxslar ekspertizasi",
+        "children": [
+          {
+            "label": "Tan jarohatlari",
+            "items": [
+              "Xarakteri",
+              "Og‘irlik darajasi"
+            ]
+          },
+          {
+            "label": "Jinsiy holatlar",
+            "items": [
+              "Jins, bokiralik",
+              "Yetuklik, homiladorlik"
+            ]
+          },
+          {
+            "label": "Jinsiy jinoyatlar",
+            "items": [
+              "Zo‘rlash",
+              "Besoqolbozlik, fahsh harakatlari"
+            ]
+          },
+          {
+            "label": "Salomatlik, yosh",
+            "items": [
+              "Salomatlik holati",
+              "Simulyasiya, yosh"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Tan jarohatlari",
-            "xarakteri va og‘irlik darajasi"
-          ],
-          [
-            "Jinsiy holatlar",
-            "jins, bokiralik, yetuklik, homiladorlik"
-          ],
-          [
-            "Jinsiy jinoyatlar",
-            "zo‘rlash, besoqolbozlik, fahsh harakatlari"
-          ],
-          [
-            "Salomatlik, yosh",
-            "salomatlik holati, simulyasiya, yosh"
-          ]
-        ]
+        "caption": "Ekspertiza turlari",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama savollari: 1) Jadvaldagi har bir tur uchun bittadan amaliy misol keltiring. 2) Ekspertiza faqat sud-tibbiy muassasada o‘tadimi? Doskada chizish: jadvalni o‘z so‘zingiz bilan qayta chizing. Tipik xato: ekspertiza faqat sud-tibbiy muassasada o‘tadi deb o‘ylash. Darslikda zarur sharoit bo‘lsa davolash muassasalari va boshqa joylarda ham o‘tkazilishi mumkinligi aytilgan."
     },
@@ -136,17 +145,35 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Algoritm bosqichlari",
-        "nodes": [
-          "1. Hodisa tafsilotlari",
-          "2. Tibbiy hujjatlar",
-          "3. Shaxsning so‘rovi",
-          "4. Ko‘rik, qo‘shimcha tekshiruv",
-          "5. Ekspert xulosasi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Hodisa tafsiloti",
+            "text": "Qaror yoki ajrim ma’lumotlari"
+          },
+          {
+            "title": "Tibbiy hujjatlar",
+            "text": "Asl nusxalari o‘rganiladi"
+          },
+          {
+            "title": "Shaxs so‘rovi",
+            "text": "Hodisa va shikoyatlar"
+          },
+          {
+            "title": "Ko‘rik",
+            "text": "Asboblar yordamida"
+          },
+          {
+            "title": "Qo‘shimcha tekshiruv",
+            "text": "Laboratoriya, maslahat"
+          },
+          {
+            "title": "Ekspert xulosasi",
+            "text": "Yakuniy hujjat"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Algoritm bosqichlari",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 7 daqiqa. Darslikda algoritm olti bosqichli: hodisa tafsilotlari, tibbiy hujjatlar, so‘rov, ko‘rik, zarur bo‘lsa qo‘shimcha maxsus tekshiruv va mutaxassis maslahati, xulosa. Sxemada 4-5-bosqichlar birlashtirilgan, shuni izohlang. Muhokama savollari: 1) Nima uchun tibbiy hujjatlar ko‘rikdan oldin o‘rganiladi? 2) Nima uchun hujjatlarning asl nusxasi talab qilinadi? Doskada chizish: bosqichlar zanjirini strelkalar bilan chizing. Tipik xato: ko‘rikni so‘rov va hujjatlarni o‘rganishdan oldin o‘tkazish; tartib saqlanishi kerak. Tezkor savol: jinsiy holat ekspertizasida shaxsni tasdiqlovchi hujjatdan tashqari yana nima taqdim etiladi?"
     },
@@ -197,7 +224,16 @@
       "title": "Ko‘rikni o‘tkazish qoidalari",
       "bullets": [
         {
-          "text": "Ekspertiza tayinlagan shaxs ko‘rikda qatnashishi mumkin. Faqat o‘zga jinsdagi shaxs yalang‘ochlanib ko‘rilganda tergovchi yoki surishtiruvchi xonadan chiqib turadi.",
+          "text": "Ekspertiza tayinlagan shaxs ko‘rikda qatnashishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "301"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Faqat o‘zga jinsdagi shaxs yalang‘ochlanib ko‘rilganda tergovchi yoki surishtiruvchi xonadan chiqib turadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -357,32 +393,36 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Jins aniqlash holatlari",
-        "nodes": [],
-        "header": [
-          "Soha",
-          "Holat"
+        "kind": "tree",
+        "root": "Jinsni aniqlash holatlari",
+        "children": [
+          {
+            "label": "Hujjatlar",
+            "items": [
+              "Shaxsni tasdiqlovchi hujjat berish"
+            ]
+          },
+          {
+            "label": "Ta’lim",
+            "items": [
+              "Maxsus o‘quv yurtiga kirish"
+            ]
+          },
+          {
+            "label": "Oila ishlari",
+            "items": [
+              "Nikohni bekor qilish, alimentlar"
+            ]
+          },
+          {
+            "label": "Tergov",
+            "items": [
+              "Jinsiy jinoyatlar bo‘yicha tekshiruv"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Hujjatlar",
-            "Shaxsni tasdiqlovchi hujjat berish"
-          ],
-          [
-            "Ta’lim",
-            "Maxsus o‘quv yurtiga kirish"
-          ],
-          [
-            "Oila ishlari",
-            "Nikohni bekor qilish, alimentlar"
-          ],
-          [
-            "Tergov",
-            "Jinsiy jinoyatlar bo‘yicha tekshiruv"
-          ]
-        ],
-        "nodes_unused": null
+        "caption": "Ekspertiza zarur bo‘lgan holatlar",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega jinsga shubha nikoh va aliment ishlarida muhim? 2) Jinsni tekshirishda qanday ma’lumotlar yig‘iladi (anamnez, hujjatlar, ko‘rik, laboratoriya)? Doskada: ’bez – tashqi belgi’ juftligini chizing va nuqson qayerda yuzaga kelishini ko‘rsating. Tipik xato: jinsni faqat tashqi ko‘rinishga qarab belgilash; bez va genetik jinsni ham hisobga olish kerak."
     },
@@ -418,31 +458,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Germafroditizm turlari",
-        "nodes": [],
-        "header": [
-          "Turi",
-          "Jinsiy bez",
-          "Tashqi belgi"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Chin",
+            "items": [
+              "Erkak va ayol bezlari",
+              "Tashqi belgi erkak yoki ayolga o‘xshash"
+            ]
+          },
+          {
+            "title": "Soxta erkak",
+            "items": [
+              "Yorg‘oq (spermatogenez)",
+              "Kichik olat, ko‘krak bezi kattalashgan"
+            ]
+          },
+          {
+            "title": "Soxta ayol",
+            "items": [
+              "Tuxumdon (ovogenez)",
+              "Klitor kattaligi, ko‘krak rivojlanmagan"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Chin",
-            "Erkak va ayol bezlari",
-            "Erkak yoki ayolga o‘xshash"
-          ],
-          [
-            "Soxta erkak",
-            "Yorg‘oq (spermatogenez)",
-            "Kichik olat, ko‘krak bezi kattalashgan"
-          ],
-          [
-            "Soxta ayol",
-            "Tuxumdon (ovogenez)",
-            "Klitor kattaligi, ko‘krak rivojlanmagan"
-          ]
-        ]
+        "caption": "Germafroditizm turlari",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Soxta erkak germafroditda bez va tashqi belgi nega mos kelmaydi? 2) Bunday holatda jinsni aniqlash uchun qanday tekshiruvlar kerak? Doskada: uch qatorli jadvalni talabalar bilan birga to‘ldiring. Tipik xato: soxta erkak va soxta ayol turlarini aralashtirish; jins bezga qarab nomlanadi."
     },
@@ -511,7 +552,16 @@
           "uncertain": false
         },
         {
-          "text": "Odatda 14 yoshga to‘lmaganlar yetilmagan hisoblanadi. Yetuklik masalasi 14 yoshdan nikoh yoshigacha bo‘lgan davrda ko‘tariladi; irsiy, ijtimoiy, geografik omillar ta’sir qiladi.",
+          "text": "Odatda 14 yoshga to‘lmaganlar yetilmagan hisoblanadi; masala 14 yoshdan nikoh yoshigacha bo‘lgan davrda ko‘tariladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "289"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Jinsiy yetilishga irsiy, ijtimoiy va geografik omillar ta’sir qiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -564,31 +614,41 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Antropometrik me’yorlar",
-        "nodes": [],
-        "header": [
-          "Ko‘rsatkich",
-          "Kamida"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Tana bo‘yi, tik",
+            "value": "≥ 150",
+            "unit": "sm"
+          },
+          {
+            "label": "Tana bo‘yi, o‘tirgan",
+            "value": "≥ 80",
+            "unit": "sm"
+          },
+          {
+            "label": "Ko‘krak aylanasi",
+            "value": "78–80",
+            "unit": "sm"
+          },
+          {
+            "label": "Yonbosh o‘siqlari",
+            "value": "26–27",
+            "unit": "sm"
+          },
+          {
+            "label": "Katta ko‘stlar",
+            "value": "29",
+            "unit": "sm"
+          },
+          {
+            "label": "Tashqi konyugata",
+            "value": "17–18",
+            "unit": "sm"
+          }
         ],
-        "rows": [
-          [
-            "Tana uzunligi",
-            "Tik 150 sm; o‘tirganda 80 sm"
-          ],
-          [
-            "Ko‘krak aylanasi",
-            "Tinch holatda 78–80 sm"
-          ],
-          [
-            "Tos: o‘siqlar / ko‘stlar oralig‘i",
-            "26–27 sm / 29 sm"
-          ],
-          [
-            "Tashqi konyugata",
-            "17–18 sm"
-          ]
-        ]
+        "caption": "Antropometrik me’yorlar (kamida)",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega antropometrik o‘lchamlar mutlaq mezon emas? 2) Akseleratsiya xulosaga qanday ta’sir qiladi? Doskada chizish: jadvalni ko‘chirib, har ko‘rsatkichga ‘kamida’ qiymatini yozdiring. Tipik xato: kichik o‘lchamni avtomatik ‘yetilmagan’ deb baholash."
     },
@@ -624,27 +684,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Yosh chegaralari",
-        "nodes": [],
-        "header": [
-          "Modda / masala",
-          "Yosh"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "118, 119-moddalar",
+            "value": "18 va 14",
+            "unit": "yosh"
+          },
+          {
+            "label": "128, 129-moddalar",
+            "value": "16",
+            "unit": "yosh"
+          },
+          {
+            "label": "Yetuklik masalasi",
+            "value": "14 dan",
+            "unit": "yosh"
+          }
         ],
-        "rows": [
-          [
-            "118, 119-moddalar",
-            "18 yosh va 14 yosh"
-          ],
-          [
-            "128, 129-moddalar",
-            "16 yosh"
-          ],
-          [
-            "Yetuklikni aniqlash masalasi",
-            "14 yoshdan nikoh yoshigacha"
-          ]
-        ]
+        "caption": "Yosh chegaralari",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega Jinoyat kodeksida aniq yosh belgilanishi yetuklikni aniqlash zaruratini kamaytirgan? 2) Yetuklik tushunchasi ayol va erkakda nimasi bilan farq qiladi? Doskada chizish: yosh o‘qi (14 – 16 – 18) va moddalarni shu o‘qqa joylashtiring. Tipik xato: «14 yoshgacha yetilmagan» qoidasini Jinoyat kodeksidagi javobgarlik yoshi bilan aralashtirish. Modda–yosh juftliklarini darslikdagi matn bilan solishtirib tekshiring."
     },
@@ -704,7 +763,16 @@
           "uncertain": false
         },
         {
-          "text": "Qizlik pardasi — qin shilliq qavati duplikaturasi: biriktiruvchi va mushak tolalari, qon tomir, nerv bor. U dahliz bilan qin oralig‘ida, qin o‘qiga perpendikulyar turadi.",
+          "text": "Qizlik pardasi — qin shilliq qavati duplikaturasi: biriktiruvchi va mushak tolalari, qon tomir, nerv bor.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "290"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "U dahliz bilan qin oralig‘ida, qin o‘qiga perpendikulyar turadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -766,27 +834,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Qizlik pardasi guruhlari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Shakllari"
+        "kind": "tree",
+        "root": "Qizlik pardasi guruhlari",
+        "children": [
+          {
+            "label": "Odatdagi",
+            "items": [
+              "Ko‘p uchraydi",
+              "Halqasimon, yarim oysimon, naysimon"
+            ]
+          },
+          {
+            "label": "G‘ayrioddiy",
+            "items": [
+              "Chet notekis",
+              "Bo‘lakchali, spiralsimon, tishsimon"
+            ]
+          },
+          {
+            "label": "Juda kam uchraydigan",
+            "items": [
+              "Ikki oynali, to‘siqli, panjarasimon"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Odatdagi (ko‘p uchraydi)",
-            "Halqasimon, yarim oysimon, naysimon va b."
-          ],
-          [
-            "G‘ayrioddiy (chet notekis)",
-            "Bo‘lakchali, spiralsimon, tishsimon va b."
-          ],
-          [
-            "Juda kam uchraydigan",
-            "Ikki oynali, to‘siqli, panjarasimon va b."
-          ]
-        ]
+        "caption": "Nikitin va Serdyukov bo‘yicha",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: shaklni tasniflash ekspert uchun nega muhim? Pardaning tuzilish elementlari (asos, erkin chet, teshik) nima beradi? Doskada: pardaning sodda sxemasini chizib, asos, erkin chet va teshikni belgilang. Tipik xato: uch guruhni (odatdagi, g‘ayrioddiy, juda kam uchraydigan) bir-biri bilan aralashtirish."
     },
@@ -822,27 +895,30 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Yoriq turlari",
-        "nodes": [],
-        "header": [
-          "Holat",
-          "Mohiyati"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "To‘liq yoriq",
+            "items": [
+              "Jarohat pardaning asosigacha yetadi"
+            ]
+          },
+          {
+            "title": "Noto‘liq yoriq",
+            "items": [
+              "Jarohat asosga yetmaydi"
+            ]
+          },
+          {
+            "title": "Defloratsiyasiz aloqa",
+            "items": [
+              "Elastik, past parda",
+              "O‘yiqlari ko‘p parda"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "To‘liq yoriq",
-            "Jarohat pardaning asosigacha yetib boradi"
-          ],
-          [
-            "Noto‘liq yoriq",
-            "Jarohat pardaning asosiga yetmaydi"
-          ],
-          [
-            "Defloratsiya bo‘lmasligi",
-            "Elastik, past, o‘yiqlari ko‘p pardalarda"
-          ]
-        ]
+        "caption": "Yoriq turlari",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: nega jinsiy aloqa bo‘lgan holda ham parda butun qolishi mumkin? Butunlik buzilishining jinsiy aloqadan boshqa sabablari qaysilar? Doskada: asosga yetgan va yetmagan yoriqni ikki sxemada chizing. Tipik xato: «parda butun emas» degan topilmani darhol jinsiy aloqa bo‘lgan deb xulosa qilish. Diqqat: parda butunligining buzilishi ≠ jinsiy aloqa; manbada boshqa sabablar ham ko‘rsatilgan."
     },
@@ -878,17 +954,31 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Bitish bosqichlari",
-        "nodes": [
-          "Dastlab: qon, shish, laxtalar",
-          "Keyin: oqimtir qoplama paydo",
-          "1-hafta oxiri: granulyasiya",
-          "2-hafta oxiri-3-hafta: chandiq",
-          "3 haftadan so‘ng: muddat noaniq"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Dastlab",
+            "text": "Qon, shish, laxtalar"
+          },
+          {
+            "title": "Keyin",
+            "text": "Oqimtir qoplama paydo"
+          },
+          {
+            "title": "1-hafta oxiri",
+            "text": "Granulyasiya"
+          },
+          {
+            "title": "2-hafta oxiri – 3-hafta",
+            "text": "Chandiq"
+          },
+          {
+            "title": "3 haftadan so‘ng",
+            "text": "Muddat noaniq"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Bitish bosqichlari",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: nega bokiralikka shubha bo‘lsa, imkon qadar tezroq sud-tibbiy ekspertga murojaat qilish kerak? Yupqa, elastik va qalin pardalarda bitish tezligi qanday farq qiladi? Doskada: vaqt chizig‘ini (dastlabki kunlar, 1-hafta, 2–3-hafta, 3 haftadan keyin) chizing. Tipik xato: uch haftadan keyin ham yoriq muddatini aniq aytish mumkin deb o‘ylash."
     },
@@ -924,31 +1014,27 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Yoriq va tabiiy o‘yiq",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Yoriq",
-          "Tabiiy o‘yiq"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Yoriq",
+            "items": [
+              "Ko‘pincha pastki segment, soat 5-7",
+              "To‘liq yoriq asosigacha yetadi",
+              "Eskisida chetlari qalin, chandiqli"
+            ]
+          },
+          {
+            "title": "Tabiiy o‘yiq",
+            "items": [
+              "Pardaning turli segmentlarida",
+              "Aksariyati asosigacha yetmaydi",
+              "Boshqa joydan farq qilmaydi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Joylashuvi",
-            "Ko‘pincha pastki segment, soat 5-7",
-            "Pardaning turli segmentlarida bo‘lishi mumkin"
-          ],
-          [
-            "Asosga yetishi",
-            "To‘liq yoriq asosigacha yetadi",
-            "Aksariyati asosigacha yetmaydi"
-          ],
-          [
-            "Chet to‘qimasi",
-            "Eskisida qalin, chandiqlangan",
-            "Pardaning boshqa joyidan farq qilmaydi"
-          ]
-        ]
+        "caption": "Yoriq va tabiiy o‘yiq",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega yoriqlar asosan 5-7 soat oralig‘ida uchraydi, deb o‘ylaysiz? 2) Chetlarning qalinligi yoriq muddati haqida nima deydi? Doskada chizish: qizlik pardasini soat siferblati ko‘rinishida chizib, 5-7 oralig‘ini belgilang. Tipik xato: har qanday o‘yiqni yoriq deb baholash yoki aksincha; tabiiy o‘yiq asosga yetmasligini unutish."
     },
@@ -1052,36 +1138,27 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Nasl qoldirish: erkak va ayol",
-        "nodes": [],
-        "header": [
-          "Jins",
-          "Qobiliyat",
-          "To‘siq"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Erkak",
+            "items": [
+              "Jinsiy aloqa, urug‘lantirish",
+              "To‘siq: impotensiya",
+              "Azospermiya, nekrospermiya"
+            ]
+          },
+          {
+            "title": "Ayol",
+            "items": [
+              "Aloqa, homilador bo‘lish, tug‘ish",
+              "To‘siq: qin atreziyasi, vaginizm",
+              "Tor tos, chandiq, o‘sma"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Erkak",
-            "Jinsiy aloqa, urug‘lantirish",
-            "Impotensiya"
-          ],
-          [
-            "Erkak (laboratoriya)",
-            "Harakatchan spermatozoid bor",
-            "Azospermiya, nekrospermiya"
-          ],
-          [
-            "Ayol",
-            "Aloqa, homilador bo‘lish, tug‘ish",
-            "Qin atreziyasi, vaginizm"
-          ],
-          [
-            "Ayol (tug‘ish)",
-            "Tabiiy tug‘ish imkoni",
-            "Tor tos, chandiq, o‘sma"
-          ]
-        ]
+        "caption": "Nasl qoldirish: erkak va ayol",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: erkak va ayolda nasl qoldirish qobiliyati nimalardan iborat? Nega ekspertiza klinitsist-mutaxassislar bilan o‘tkaziladi? Doskada jadvalni chizdiring va har ustunga bittadan misol yozdiring. Tipik xato: impotensiya (jinsiy aloqaga to‘siq) bilan bepushtlik (urug‘lantirish qobiliyatining yo‘qligi)ni aralashtirish."
     },
@@ -1206,31 +1283,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Abort turlarini solishtirish",
-        "nodes": [],
-        "header": [
-          "Abort turi",
-          "Kim o‘tkazadi",
-          "Muddat / modda"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "O‘z-o‘zidan",
+            "items": [
+              "Kasallik yoki zaharlanish sabab",
+              "22 haftagacha"
+            ]
+          },
+          {
+            "title": "Tibbiy",
+            "items": [
+              "Akusher-ginekolog, tibbiy muassasada",
+              "12 hafta: xohish; keyin: ko‘rsatma"
+            ]
+          },
+          {
+            "title": "Jinoiy",
+            "items": [
+              "Tayyorgarligi yo‘q shaxslar",
+              "Jinoyat kodeksi 114-modda"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "O‘z-o‘zidan",
-            "Kasallik yoki zaharlanish sabab",
-            "22 haftagacha"
-          ],
-          [
-            "Tibbiy",
-            "Akusher-ginekolog, tibbiy muassasada",
-            "12 hafta: xohish; keyin: ko‘rsatma"
-          ],
-          [
-            "Jinoiy",
-            "Tayyorgarligi yo‘q shaxslar",
-            "Jinoyat kodeksi 114-modda"
-          ]
-        ]
+        "caption": "Abort turlarini solishtirish",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Tibbiy va jinoiy abortni nima farqlaydi? 2) Nega jinoiy abort o‘limga olib kelishi mumkin? Doskada chizing: abort turlari daraxti (o‘z-o‘zidan / sun’iy -> tibbiy, jinoiy). Diqqat: tibbiy abort ≠ jinoiy abort; farq ijrochining tayyorgarligi, joy va tartibga rioya qilishda. Tipik xato: abortning 22 haftalik chegarasini 12 haftalik tibbiy abort muddati bilan aralashtirish."
     },
@@ -1364,7 +1442,7 @@
           "uncertain": false
         },
         {
-          "text": "Ko‘rikdan oldin ekspertiza qarori, hodisa joyi bayonnomasi va tibbiy hujjatlar o‘rganiladi, so‘ng so‘rov o‘tkaziladi va ginekologik anamnez (hayz, oxirgi aloqa, tug‘ruq, abort) yig‘iladi.",
+          "text": "Ko‘rikdan oldin ekspertiza qarori, hodisa joyi bayonnomasi, tibbiy hujjatlar o‘rganiladi; so‘rov va ginekologik anamnez (hayz, aloqa, tug‘ruq, abort) yig‘iladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1373,7 +1451,7 @@
           "uncertain": false
         },
         {
-          "text": "“Nomusga tegish” huquqiy tushuncha. Ekspert aloqa yoki unga urinish, zo‘rlik va ojizlikni tasdiqlovchi ob’ektiv belgilarni izlaydi. Qo‘rqitish esa ob’ektiv belgi qoldirmaydi.",
+          "text": "“Nomusga tegish” huquqiy tushuncha: ekspert aloqa yoki unga urinish, zo‘rlik, ojizlikni tasdiqlovchi ob’ektiv belgilarni izlaydi; qo‘rqitish iz qoldirmaydi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1446,6 +1524,77 @@
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega namuna olishda vaqt hal qiluvchi? 2) Qin shikasti bo‘lmasa, nomusga tegish bo‘lmagan deb aytish mumkinmi? Doskada: tananing old tomonini chizib, qontalash joylarini belgilang. Tipik xato: qin yoki oraliq shikastini faqat zo‘rlik belgisi deb hisoblash. Eslatma: gumondor ham ko‘rikdan o‘tkaziladi, uning tanasida kurash izlari va ayolga tegishli qon, soch bo‘lishi mumkin."
     },
     {
+      "title": "Ojizlik holatlari va jarohat izlari",
+      "bullets": [
+        {
+          "text": "Ojizlik ruhiy kasalliklar, travma, jismoniy nuqsonlar, kichik yoki keksa yosh bilan bog‘liq bo‘lishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "296"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ojizlik alkogol yoki narkotik mastlik, gangituvchi moddalar ta’siri bilan ham bog‘liq bo‘lishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "296"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Zo‘rlikda qontalash va shilinmalar jinoyatchining qo‘l-oyoqlari bilan yetkaziladi; ba’zan ko‘krak bezi va bo‘yinda tishlanma izlari bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "296"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kurash, o‘zini himoya qilish hollarida tananing turli sohalarida qontalash, shilinma va boshqa jarohatlar kuzatilishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "296"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Ojizlik sabablari",
+        "children": [
+          {
+            "label": "Salomatlik",
+            "items": [
+              "Ruhiy kasallik",
+              "Travma, jismoniy nuqson"
+            ]
+          },
+          {
+            "label": "Yosh",
+            "items": [
+              "Kichik yosh",
+              "Keksalik"
+            ]
+          },
+          {
+            "label": "Mastlik",
+            "items": [
+              "Alkogol yoki narkotik",
+              "Gangituvchi moddalar"
+            ]
+          }
+        ],
+        "caption": "G‘iyosov, 296-bet",
+        "nodes": []
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: ojizlik holati ekspertizada nimani o‘zgartiradi? Tipik xato: qo‘rqitish iz qoldiradi deb hisoblash."
+    },
+    {
       "title": "G‘ayritabiiy usul va besoqolbozlik",
       "bullets": [
         {
@@ -1477,28 +1626,102 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "119 va 120-moddalar farqi",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "Holat",
-          "Javobgar"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "119-modda",
+            "items": [
+              "Zo‘rlik, qo‘rqitish yoki ojizlik bilan",
+              "Faqat aktiv qatnashchi javobgar"
+            ]
+          },
+          {
+            "title": "120-modda",
+            "items": [
+              "Zo‘rliksiz, erkak bilan erkak",
+              "Aktiv ham, passiv ham javobgar"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "119",
-            "Zo‘rlik, qo‘rqitish yoki ojizlik bilan",
-            "Faqat aktiv qatnashchi"
-          ],
-          [
-            "120",
-            "Zo‘rliksiz, erkak bilan erkak",
-            "Aktiv ham, passiv ham"
-          ]
-        ]
+        "caption": "119 va 120-moddalar farqi",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega 119-moddada passiv qatnashchi jabrlanuvchi hisoblanadi? 2) Izlar qaysi sohalardan laboratoriyaga olinadi? Doskada: 119 va 120 uchun ikki ustunli solishtirma jadval chizdiring. Tipik xato: moddalarni aralashtirish va passiv qatnashchini har doim jinoyat sub’ekti deb hisoblash. Eslatma: 119-modda bo‘yicha passiv qatnashchida tan jarohatlari ham topilishi mumkin."
+    },
+    {
+      "title": "Gumondorlar va g‘ayritabiiy usul ekspertizasi",
+      "bullets": [
+        {
+          "text": "G‘ayritabiiy usulda og‘iz bo‘shlig‘i va atrofi, orqa chiqaruv teshigi va atrofi, to‘g‘ri ichak pastki qismi tekshiriladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "297"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shu sohalardan laboratoriya tekshiruvi uchun surtma va bosmalar olinadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "297"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nomusga tegishda gumondorlarni ham ekspertizadan o‘tkazish maqsadga muvofiq: qontalash, shilinma, tishlanma izlar topilishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "297"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Jinsiy a’zo va qovda ayolga tegishli qon izlari, soch topilsa, ular laboratoriya tekshiruviga olinadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "297"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Besoqolbozlikda gumon qilingan shaxslar imkon qadar qisqa vaqtda sud-tibbiy ekspertizadan o‘tkaziladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "297"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "G‘ayritabiiy usul (119)",
+            "items": [
+              "Og‘iz bo‘shlig‘i va atrofi",
+              "Orqa teshik va atrofi",
+              "To‘g‘ri ichak pastki qismi",
+              "Surtma va bosmalar olinadi"
+            ]
+          },
+          {
+            "title": "Gumondor ko‘rigi",
+            "items": [
+              "Qontalash, shilinma, tishlanma",
+              "Olat va qovda ayol qon izi, soch",
+              "Namunalar laboratoriyaga olinadi"
+            ]
+          }
+        ],
+        "caption": "G‘iyosov, 297-bet",
+        "nodes": []
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: gumondor nega imkon qadar tez tekshiriladi? Tipik xato: faqat jabrlanuvchini tekshirish."
     },
     {
       "title": "Besoqolbozlikda xato talqin xavfi",
@@ -1547,7 +1770,16 @@
       "title": "Fahsh harakatlari",
       "bullets": [
         {
-          "text": "Bu o‘n olti yoshga to‘lmagan shaxsga qaratilgan, shahvoniy xususiyatli uyatsiz-buzuq harakatlardir. Maqsad – o‘z ehtiyojini qondirish yoki bolada hissiyotni qo‘zg‘atish.",
+          "text": "Bu o‘n olti yoshga to‘lmagan shaxsga qaratilgan, shahvoniy xususiyatli uyatsiz-buzuq harakatlardir.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "298"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Maqsad – o‘z ehtiyojini qondirish yoki bolada hissiyotni qo‘zg‘atish.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1801,12 +2033,12 @@
     {
       "question": "Jinsiy holat bo‘yicha ekspertizaga 17 yoshli qiz pasporti bilan keldi. Qo‘shimcha ravishda nima taqdim etilishi shart?",
       "options": [
-        "Davolovchi vrachning yozma ruxsatnomasi",
         "Ota-onasining ish joyidan ma’lumotnoma",
         "Ikkita fotosurat",
-        "Maktabdan olingan tavsifnoma"
+        "Maktabdan olingan tavsifnoma",
+        "Davolovchi vrachning yozma ruxsatnomasi"
       ],
-      "correct_index": 2,
+      "correct_index": 1,
       "explanation": "Jinsiy holat va jinoyatlar bo‘yicha ekspertizalarda shaxsni tasdiqlovchi hujjatdan tashqari ko‘rikdan o‘tayotgan shaxsning ikkita fotosurati taqdim etilishi kerak.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1817,12 +2049,12 @@
     {
       "question": "Erkak surishtiruvchi ishtirok etayotgan ko‘rikda ayol tanasi yalang‘ochlanishi kerak bo‘ldi. Qonun talabiga ko‘ra u nima qilishi lozim?",
       "options": [
-        "Ko‘rik jarayonini yozib borishi",
         "Ko‘rik xonasida ekspert yonida turishi",
         "Ko‘rikni boshqa kunga qoldirishi",
-        "Ko‘rik xonasidan chiqib turishi"
+        "Ko‘rik xonasidan chiqib turishi",
+        "Ko‘rik jarayonini yozib borishi"
       ],
-      "correct_index": 3,
+      "correct_index": 2,
       "explanation": "Faqat o‘zga jinsga mansub shaxsning ko‘rigi tanani yalang‘ochlash bilan o‘tkazilganda tergovchi yoki surishtiruvchi ko‘rik xonasidan chiqib turishi lozim.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1833,12 +2065,12 @@
     {
       "question": "Tekshiruvda bitta shaxsda spermatogenez va ovogenez alomatlari birga aniqlandi. Bu qaysi holatga mos keladi?",
       "options": [
-        "Soxta erkak germafroditizmi",
-        "Chin germafroditizm",
         "Soxta ayol germafroditizmi",
-        "Kriptorxizm"
+        "Kriptorxizm",
+        "Soxta erkak germafroditizmi",
+        "Chin germafroditizm"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Chin germafroditizmda shaxsda ham erkak, ham ayol jinsiy bezlari bo‘ladi, ya’ni spermatogenez va ovogenez alomatlari aniqlanadi. Bu holat juda kam uchraydi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1849,12 +2081,12 @@
     {
       "question": "Jinsi shubhali shaxsda genetik jins qaysi tekshiruv orqali aniqlanishi mumkin?",
       "options": [
-        "Antropometrik o‘lchovlarni olish orqali",
         "Qondagi leykotsitlarda xromosomalarni tekshirish",
         "Tashqi jinsiy a’zolarni ko‘zdan kechirish",
-        "Anamnezda hayz ko‘rishni so‘rab bilish"
+        "Anamnezda hayz ko‘rishni so‘rab bilish",
+        "Antropometrik o‘lchovlarni olish orqali"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Qondagi leykotsitlarda xromosomalarni tekshirish orqali genetik jins aniqlanishi mumkin. Anamnez va tashqi belgilar esa haqiqiy jinsni baholashda yordamchi ma’lumot beradi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1897,12 +2129,12 @@
     {
       "question": "Qizlik pardasi shakllari tasnifida qaysi biri odatdagi, ko‘p uchraydigan shakllar qatoriga kiradi?",
       "options": [
-        "Yarim oysimon shakl",
         "Bo‘lakchali shakl",
         "Spiralsimon shakl",
-        "Panjarasimon shakl"
+        "Panjarasimon shakl",
+        "Yarim oysimon shakl"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Halqasimon, yarim oysimon, naysimon, voronkasimon, labsimon va burmasimon shakllar odatdagi hisoblanadi. Bo‘lakchali va spiralsimon shakllar g‘ayrioddiy, panjarasimon shakl juda kamdan-kam uchraydi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1913,12 +2145,12 @@
     {
       "question": "Ko‘rikda qizlik pardasidagi jarohat pardaning asosigacha yetib borganligi aniqlandi. Bu qanday jarohat hisoblanadi?",
       "options": [
+        "To‘liq yoriq",
         "Noto‘liq yoriq",
         "Tabiiy o‘yiq",
-        "Chandiqli yoriq",
-        "To‘liq yoriq"
+        "Chandiqli yoriq"
       ],
-      "correct_index": 3,
+      "correct_index": 0,
       "explanation": "To‘liq yoriqda jarohat pardaning asosigacha yetib boradi. Noto‘liq yoriq asosga yetmaydi. Aksariyat tabiiy o‘yiqlar ham asosgacha yetib bormaydi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1929,12 +2161,12 @@
     {
       "question": "Qizlik pardasi butunligi buzilganligi haqidagi shubha bo‘yicha qiz kech murojaat qildi. Qaysi muddatdan so‘ng butunlik buzilish muddatini hal etish imkoni bo‘lmaydi?",
       "options": [
-        "Bir haftadan so‘ng",
         "Ikki haftadan so‘ng",
         "Uch haftadan so‘ng",
-        "To‘rt haftadan so‘ng"
+        "To‘rt haftadan so‘ng",
+        "Bir haftadan so‘ng"
       ],
-      "correct_index": 2,
+      "correct_index": 1,
       "explanation": "Ikkinchi haftaning oxiri va uchinchi haftada yoriq chetida chandiq hosil bo‘ladi, yallig‘lanish yo‘qoladi. Shu sababli muddat faqat dastlabki haftalarda aniqlanadi, uch haftadan so‘ng uni hal etib bo‘lmaydi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1961,12 +2193,12 @@
     {
       "question": "Nomusga tegish gumon qilingan jabrlanuvchidan laboratoriya namunasi imkon qadar tez olinishi lozim. Qinda maniy odatda qancha vaqt saqlanadi?",
       "options": [
-        "3–5 kungacha",
         "1–2 kungacha",
         "7–10 kungacha",
-        "2–3 haftagacha"
+        "2–3 haftagacha",
+        "3–5 kungacha"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Maniy qinda odatda 3–5 kungacha saqlanadi. Namuna qancha erta olinsa, tekshiruv natijasi shuncha ishonchli bo‘ladi, vaqt o‘tgan sari spermatozoid topilish ehtimoli kamayadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1977,12 +2209,12 @@
     {
       "question": "Erkakning nasl qoldirish qobiliyati tekshirilganda eyakulyatda spermatozoidlar umuman topilmadi. Bu holat qanday ataladi?",
       "options": [
+        "Azospermiya",
         "Nekrospermiya",
         "Astenospermiya",
-        "Impotensiya",
-        "Azospermiya"
+        "Impotensiya"
       ],
-      "correct_index": 3,
+      "correct_index": 0,
       "explanation": "Eyakulyatda spermatozoidlarning umuman bo‘lmasligi azospermiya deb ataladi va urug‘lantirish qobiliyatini inkor etadi. Nekrospermiya – harakatchan spermatozoidlarning bo‘lmasligi, impotensiya esa jinsiy aloqa qilishga monelikdir.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2025,12 +2257,12 @@
     {
       "question": "Nomusga tegish gumon qilingan jabrlanuvchidan qin surtmasi va tashqi sohalardan bosmalar qachon olinishi kerak?",
       "options": [
-        "Voqeadan bir oy o‘tgach, jabrlanuvchi tinchlanganda",
-        "Voqeadan so‘ng imkon qadar qisqa vaqt ichida",
         "Faqat bir necha haftadan keyin, ginekolog ko‘rigidan so‘ng",
-        "Sud majlisi boshlanishidan oldin, ish ko‘riladigan kuni"
+        "Sud majlisi boshlanishidan oldin, ish ko‘riladigan kuni",
+        "Voqeadan bir oy o‘tgach, jabrlanuvchi tinchlanganda",
+        "Voqeadan so‘ng imkon qadar qisqa vaqt ichida"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Vaqt o‘tgan sari laboratoriya tekshiruvlarining samaradorligi, xususan spermatozoidlarning topilish ehtimoli kamayadi. Shu sababli surtma va bosmalar imkon qadar tez olinadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2041,12 +2273,12 @@
     {
       "question": "Ikki katta yoshli erkak o‘rtasida zo‘rliksiz jinsiy aloqa aniqlandi. Jinoyat kodeksining 120-moddasiga ko‘ra kim javobgar bo‘ladi?",
       "options": [
+        "Aktiv ham, passiv ham jinoiy javobgarlikka tortiladi",
         "Faqat aktiv qatnashchi jinoiy javobgarlikka tortiladi",
         "Faqat passiv qatnashchi jinoiy javobgarlikka tortiladi",
-        "Ikkala qatnashchi ham jinoiy javobgarlikka tortilmaydi",
-        "Aktiv ham, passiv ham jinoiy javobgarlikka tortiladi"
+        "Ikkala qatnashchi ham jinoiy javobgarlikka tortilmaydi"
       ],
-      "correct_index": 3,
+      "correct_index": 0,
       "explanation": "120-moddaga ko‘ra besoqolbozlikning aktiv va passiv qatnashchilari jinoyat sub’ekti hisoblanadi. Ikkovi ham javobgar bo‘ladi. Zo‘rlik ishlatilsa, faqat aktiv qatnashchi 119-modda bo‘yicha javob beradi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2057,12 +2289,12 @@
     {
       "question": "Passiv besoqolbozlikda gumon qilingan erkakda surunkali bavosil va to‘g‘ri ichak kasalligi aniqlandi. Ekspert qaysi mutaxassis maslahatini oladi?",
       "options": [
+        "Androlog mutaxassisning maslahatini oladi",
         "Proktolog mutaxassisning maslahatini oladi",
         "Urolog mutaxassisning maslahatini oladi",
-        "Nevropatolog mutaxassisning maslahatini oladi",
-        "Androlog mutaxassisning maslahatini oladi"
+        "Nevropatolog mutaxassisning maslahatini oladi"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "To‘g‘ri ichak kasalliklari va shu sohadagi operatsiya izlari muntazam passiv besoqolbozlik belgilari deb noto‘g‘ri talqin qilinishi mumkin. Shuning uchun tegishli holatlarda proktolog maslahati olinadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2089,12 +2321,12 @@
     {
       "question": "Shaxs o‘zida OIV-infeksiyasi borligini bila turib, boshqa kishini yuqtirish xavfi ostida qoldirdi. Bu jinoyat Jinoyat kodeksida qaysi guruhga kiritilgan?",
       "options": [
-        "Jinsiy erkinlikka qarshi jinoyatlar guruhiga",
-        "Hayot yoki sog‘liq uchun xavfli jinoyatlar guruhiga",
         "Oilaga, yoshlarga va ahloqqa qarshi jinoyatlar guruhiga",
-        "Shaxsning sha’ni va qadr-qimmatiga qarshi jinoyatlar guruhiga"
+        "Shaxsning sha’ni va qadr-qimmatiga qarshi jinoyatlar guruhiga",
+        "Jinsiy erkinlikka qarshi jinoyatlar guruhiga",
+        "Hayot yoki sog‘liq uchun xavfli jinoyatlar guruhiga"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Tanosil kasalliklari va OIV/OITSni tarqatish 113-moddada hayot yoki sog‘liq uchun xavfli jinoyatlar guruhiga kiritilgan. Nomusga tegish va besoqolbozlik esa jinsiy erkinlikka qarshi jinoyatlardir.",
       "source": {
         "author": "G‘iyosov Z.A.",

@@ -5,7 +5,7 @@
       "title": "Mavzuga kirish: maqsad va reja",
       "bullets": [
         {
-          "text": "Halokat qurbonlarini aniqlash (DVI, Disaster Victim Identification) maqsadi: barcha qoldiqlarni topish, o‘lganlarni aniqlash, o‘lim sababi va usulini tasdiqlash.",
+          "text": "Halokat qurbonlarini aniqlash (DVI) maqsadi: barcha qoldiqlarni topish, o‘lganlarni aniqlash, o‘lim sababi va usulini tasdiqlash.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -66,7 +66,7 @@
           "uncertain": false
         },
         {
-          "text": "Aniqlash — marhumga va yaqinlariga hurmat belgisi. Huquqiy jihatdan u jinoyat ishi, meros masalasi va qolgan turmush o‘rtog‘ining qayta turmush qurish huquqi uchun kerak.",
+          "text": "Aniqlash — marhum va yaqinlariga hurmat. Huquqiy jihatdan jinoyat ishi, meros va qolgan turmush o‘rtog‘ining qayta turmush qurish huquqi uchun kerak.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -84,14 +84,41 @@
           "uncertain": true
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Halokat va aniqlash",
+        "children": [
+          {
+            "label": "Ta’rif",
+            "items": [
+              "Jamiyat o‘zi bartaraf eta olmaydi",
+              "Tabiiy yoki inson faoliyati"
+            ]
+          },
+          {
+            "label": "Minimal soni",
+            "items": [
+              "Yurisdiksiyaga qarab 2 dan 10 gacha"
+            ]
+          },
+          {
+            "label": "Aniqlash sabablari",
+            "items": [
+              "Marhum va yaqinlariga hurmat",
+              "Jinoyat ishi, meros",
+              "Qayta turmush qurish huquqi"
+            ]
+          }
+        ],
+        "caption": "Mavzu asoslari"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama savoli: 1) Nega aniqlash faqat axloqiy emas, huquqiy ahamiyatga ham ega? 2) O‘zbekistonda ‘ommaviy halokat’ chegarasi qanday belgilanishi kerak? (Manbada O‘zbekiston haqida ma’lumot yo‘q, talabalar fikri.) Doskada chizish: ‘Aniqlash → hurmat + huquqiy oqibatlar’ ikki shoxli sxema. Tipik xato: ommaviy halokat uchun yagona global raqam bor deb o‘ylash."
     },
     {
       "title": "INTERPOL DVI qo‘llanmasi va AM/PM ma’lumotlar",
       "bullets": [
         {
-          "text": "INTERPOL (Xalqaro jinoiy politsiya tashkiloti) DVI uchun maxsus ko‘rsatma va protokollar ishlab chiqqan. Ular antemortem (AM) va postmortem (PM) ma’lumotlarni yig‘ish va solishtirishni o‘z ichiga oladi.",
+          "text": "INTERPOL DVI uchun ko‘rsatma va protokollar ishlab chiqqan: antemortem (AM) va postmortem (PM) ma’lumotlarni yig‘ish va solishtirish.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -127,7 +154,36 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "AM (antemortem)",
+            "items": [
+              "O‘limgacha olingan yozuvlar",
+              "Tish kartasi, rentgen",
+              "Oila va shifokordan ma’lumot"
+            ]
+          },
+          {
+            "title": "PM (postmortem)",
+            "items": [
+              "O‘limdan keyin jasadda topilgan",
+              "Qoldiq holati, belgilar",
+              "Morgda yig‘iladi"
+            ]
+          },
+          {
+            "title": "INTERPOL DVI",
+            "items": [
+              "190 davlat a’zo",
+              "Ko‘rsatma majburiy emas",
+              "Birinchi yozma ko‘rsatma — 1984"
+            ]
+          }
+        ],
+        "caption": "AM, PM va INTERPOL"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama savoli: 1) AM ma’lumotga qanday misollar keltira olasiz? 2) Ko‘rsatma majburiy bo‘lmasa ham nega hamma amal qiladi? Doskada chizish: ikki ustun, chapda AM (o‘limgacha), o‘ngda PM (o‘limdan keyin), o‘rtada ‘solishtirish’ strelkasi. Tipik xato: AM va PM ni chalkashtirish yoki INTERPOL ko‘rsatmasini qonun deb hisoblash."
     },
     {
@@ -208,31 +264,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ochiq va yopiq halokat",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Ochiq",
-          "Yopiq"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Ochiq",
+            "items": [
+              "Qurbonlar soni: Vaqtida noma’lum",
+              "Odatiy misol: Binoga terrorchilik portlatishi",
+              "Operatsiyani tugatish: Soni noma’lum — mezon qiyin"
+            ]
+          },
+          {
+            "title": "Yopiq",
+            "items": [
+              "Qurbonlar soni: Ro‘yxat mavjud",
+              "Odatiy misol: Aviahalokat",
+              "Operatsiyani tugatish: Hamma hisobga olinsa, tugaydi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Qurbonlar soni",
-            "Vaqtida noma’lum",
-            "Ro‘yxat mavjud"
-          ],
-          [
-            "Odatiy misol",
-            "Binoga terrorchilik portlatishi",
-            "Aviahalokat"
-          ],
-          [
-            "Operatsiyani tugatish",
-            "Soni noma’lum — mezon qiyin",
-            "Hamma hisobga olinsa, tugaydi"
-          ]
-        ]
+        "caption": "Ochiq va yopiq halokat"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nima uchun ro‘yxat bo‘lmasa DVI operatsiyasini tugatish qiyin? 2) Omon qolganlarni tez aniqlash ochiq halokatda ro‘yxatni qanday o‘zgartiradi? Doskada: ikki ustunli solishtirish jadvalini o‘zlari chizsin. Tipik xato: ‘ochiq’ so‘zini ‘ochiq maydonda sodir bo‘lgan’ deb tushunish — bu qurbonlar soniga oid atama."
     },
@@ -276,7 +327,44 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Qoldiq saqlanishi",
+        "children": [
+          {
+            "label": "Butun jasad",
+            "items": [
+              "Butun yoki deyarli butun"
+            ]
+          },
+          {
+            "label": "Tana bo‘laklari",
+            "items": [
+              "Taniladigan bo‘laklar"
+            ]
+          },
+          {
+            "label": "Yumshoq to‘qima",
+            "items": [
+              "Massalar ko‘rinishida"
+            ]
+          },
+          {
+            "label": "Alohida suyaklar",
+            "items": [
+              "Butun yoki shikastlangan",
+              "Kuygan yoki chirigan to‘qima bilan"
+            ]
+          },
+          {
+            "label": "Mayda parchalar",
+            "items": [
+              "Tashxis qo‘yib bo‘lmaydigan"
+            ]
+          }
+        ],
+        "caption": "Aralash uchrashi mumkin"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Qaysi saqlanish holatida DNK tahlili eng zarur bo‘ladi? 2) Nima uchun ‘miqyos’ mutaxassis rolini belgilaydi? Doskada: saqlanish holatlarini ‘butundan mayda parchagacha’ zinapoya shaklida chizdiring. Tipik xato: faqat butun jasadlarni kutish; amalda ko‘pincha aralash va parchalangan qoldiqlar uchraydi."
     },
     {
@@ -301,7 +389,7 @@
           "uncertain": false
         },
         {
-          "text": "Yopiq holatda ro‘yxatdagi hamma aniqlansa, ishni tugatish mumkin. Ochiq holatda qaysi qoldiq “aniqlanadigan” sanalishi muhokama qilinadi, bu ko‘pincha resursga bog‘liq.",
+          "text": "Yopiq holatda ro‘yxatdagi hamma aniqlansa, ish tugaydi. Ochiq holatda qaysi qoldiq «aniqlanadigan» sanalishi muhokama qilinadi, ko‘pincha resursga bog‘liq.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -369,7 +457,7 @@
       "title": "Halokat joyida: vazifalar va qiyinchiliklar",
       "bullets": [
         {
-          "text": "Joyda qoldiqlarni tez topish talabi tartibsizlik va resurs yetishmasligi bilan to‘qnashadi. Shuning uchun jasad, qism va suyaklarni aniq xaritalash va qayd etish muhim.",
+          "text": "Joyda qoldiqlarni tez topish talabi tartibsizlik va resurs yetishmasligi bilan to‘qnashadi, shuning uchun jasad, qism, suyaklarni xaritalash muhim.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -396,7 +484,7 @@
           "uncertain": false
         },
         {
-          "text": "Mutaxassissiz yig‘ish xavfli: 2001-yilda Nyu-Yorkda o‘t o‘chiruvchilar yig‘gan joyda qoldiqlar ko‘proq aralashdi, 2009-yilgi Viktoriya yong‘inlarida joylarni qayta qidirishga to‘g‘ri keldi.",
+          "text": "Mutaxassissiz yig‘ish xavfli: 2001 Nyu-Yorkda o‘t o‘chiruvchilar yig‘gan joyda qoldiqlar aralashdi; 2009 Viktoriyada joylarni qayta qidirishga to‘g‘ri keldi.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -405,7 +493,30 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Antropolog vazifasi",
+            "items": [
+              "Hayvon suyagini ajratadi",
+              "Barcha parchalar yig‘ilganini tekshiradi",
+              "Qadoqlash bo‘yicha maslahat",
+              "Aniq xaritalash va qayd"
+            ]
+          },
+          {
+            "title": "Mutaxassissiz xavf",
+            "items": [
+              "2001: qoldiqlar ko‘proq aralashdi",
+              "2009: joylarni qayta qidirish",
+              "Parchalangan qoldiqni tanimaslik",
+              "Vaqt va xarajat ortishi"
+            ]
+          }
+        ],
+        "caption": "Halokat joyida"
+      },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega joyda tanilmagan qoldiq keyingi bosqichlarda ham yo‘qoladi? 2) Mutaxassis bo‘lmasa, qanday vaqt va xarajat yo‘qotishlari yuz beradi? Doskada: halokat joyidagi ishlar ketma-ketligini chizing: tanish, xaritalash, qayd etish, yig‘ish, qadoqlash. Tipik xato: antropologning joydagi vazifasini faqat xaritalash deb o‘ylash. Aslida u tanish, ortiqcha narsa yig‘ilmasligi va to‘liq yig‘ilishini ham ta’minlaydi."
     },
     {
@@ -440,31 +551,22 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Uch holat: sabab va oqibat",
-        "nodes": [],
-        "header": [
-          "Voqea",
-          "Yig‘uvchilar",
-          "Oqibat"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "WTC, 2001",
+            "text": "O‘t o‘chiruvchilar, o‘qitilmagan — Qo‘shimcha aralashish, identifikatsiya sekin"
+          },
+          {
+            "title": "Viktoriya, 2009",
+            "text": "Antropologsiz dastlabki ko‘rik — Joylar qayta qidirildi, vaqt va xarajat"
+          },
+          {
+            "title": "MH17, 2014",
+            "text": "Mahalliy ko‘ngillilar — Identifikatsiya murakkablashdi, sekinlashdi"
+          }
         ],
-        "rows": [
-          [
-            "WTC, 2001",
-            "O‘t o‘chiruvchilar, o‘qitilmagan",
-            "Qo‘shimcha aralashish, identifikatsiya sekin"
-          ],
-          [
-            "Viktoriya, 2009",
-            "Antropologsiz dastlabki ko‘rik",
-            "Joylar qayta qidirildi, vaqt va xarajat"
-          ],
-          [
-            "MH17, 2014",
-            "Mahalliy ko‘ngillilar",
-            "Identifikatsiya murakkablashdi, sekinlashdi"
-          ]
-        ]
+        "caption": "Uch holat: sabab va oqibat"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega yig‘uvchilarning tayyorgarligi keyingi bosqichlar tezligiga ta’sir qiladi? 2) MH17da ko‘ngillilar ishtiroki nega muqarrar bo‘lgan? Doskaga chizing: jadvaldagi uch holat uchun ‘sabab → oqibat’ strelkalari. Tipik xato: talabalar MH17dagi sekinlashuvni mahalliy ko‘ngillilarning aybi deb o‘ylaydi, aslida bu urush sharoitida muqarrar edi."
     },
@@ -518,7 +620,7 @@
       "title": "Voqea tahlili: joydagi xato qimmatga tushdi",
       "bullets": [
         {
-          "text": "Vaziyat: Viktoriya, 2009 — dastlabki ko‘rikka antropolog jalb etilmadi (mutaxassislar kam edi). Joylarni bir necha marta qidirishga to‘g‘ri keldi; vaqt va pul ketdi.",
+          "text": "Vaziyat: Viktoriya, 2009 — dastlabki ko‘rikka antropolog jalb etilmadi. Joylarni bir necha marta qidirishga to‘g‘ri keldi; vaqt va pul ketdi.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -597,7 +699,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Ajratish",
+            "text": "Suyak materialini suyak bo‘lmagan buyumdan"
+          },
+          {
+            "title": "2. Tasdiqlash",
+            "text": "Qoldiq odamga tegishli ekanini"
+          },
+          {
+            "title": "3. Saralash",
+            "text": "DNK talab qiluvchi bo‘laklarni ajratish"
+          },
+          {
+            "title": "4. Aralashish",
+            "text": "Aralashgan qoldiqni aniqlash, qayta bog‘lash"
+          },
+          {
+            "title": "5. Holat",
+            "text": "O‘q yo‘nalishi, shrapnel joyi"
+          }
+        ],
+        "caption": "Antropolog vazifalari morgda"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega suyak bo‘lmagan buyumlarni morgga qadar yoki morgda ajratish kerak? 2) Aralashgan qoldiqlarni qayta bog‘lash qanday xavf tug‘diradi? Doskada chizish: morgdagi 4 ta vazifani ketma-ket ro‘yxat qilib yozing. Tipik xato: sud antropologi alohida ishlaydi deb o‘ylash; aslida u patolog, odontolog, radiolog va boshqalar bilan jamoada ishlaydi. Misol: Parijdagi 2015-yil hujumlarida morgdagi dastlabki ko‘rikdan so‘ng Bataclan zalida yo‘qolgan tana qismlarini izlash uchun ikkinchi qidiruv o‘tkazilgan."
     },
     {
@@ -622,7 +749,7 @@
           "uncertain": false
         },
         {
-          "text": "Ijtimoiy chetda qolgan jamoalar ofatlarga ko‘proq duch keladi, lekin ularda tish xaritasi, rentgen kabi o‘limdan oldingi yozuvlar kam bo‘ladi. Shuning uchun profil muhim.",
+          "text": "Ijtimoiy chetda qolgan jamoalar ofatlarga ko‘proq duch keladi, lekin ularda tish xaritasi, rentgen kabi AM yozuvlar kam; shu sabab profil muhim.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -640,14 +767,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Foydali ko‘rsatkichlar",
+            "items": [
+              "Jins",
+              "O‘lim yoshi",
+              "Triajda shaxs «surati»"
+            ]
+          },
+          {
+            "title": "Cheklangan ahamiyat",
+            "items": [
+              "Irq",
+              "Bo‘yni baholash",
+              "Aholiga xos standart kerak"
+            ]
+          }
+        ],
+        "caption": "Biologik profil"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega jins va yosh bo‘y va irqqa qaraganda foydaliroq deb hisoblanadi? 2) Tish yozuvlari bo‘lmagan holatda profil qanday yordam beradi? Doskada chizish: to‘rt ko‘rsatkich (jins, yosh, bo‘y, irq) ro‘yxatini yozing va foydaliligi yuqori/cheklangan deb belgilang. Tipik xato: biologik profilni yakuniy identifikatsiya deb qabul qilish; u faqat yo‘nalish beruvchi dastlabki ma’lumot."
     },
     {
       "title": "Tasvirlash usullari: rentgen va PMCT",
       "bullets": [
         {
-          "text": "Ko‘chma rentgen va ko‘chma CT (kompyuter tomografiya) tufayli PMCT (o‘limdan keyingi KT) ko‘p qo‘llanadi. U tana xaltasi mazmunini tez ko‘rsatib, qoldiqni “in situ” holatda qayd etadi.",
+          "text": "Ko‘chma rentgen va CT tufayli PMCT (o‘limdan keyingi KT) ko‘p qo‘llanadi: tana xaltasi mazmunini tez ko‘rsatib, qoldiqni «in situ» qayd etadi.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -665,7 +813,7 @@
           "uncertain": false
         },
         {
-          "text": "AM (o‘limdan oldingi) skanlar PM (o‘limdan keyingi) skanlar bilan solishtirilib, taxminiy identifikatsiya beradi: masalan, paranazal sinuslar shakli yoki bosh suyagi ichki tomir izlari.",
+          "text": "AM skanlar PM skanlar bilan solishtirilib, taxminiy identifikatsiya beradi: masalan, paranazal sinuslar shakli yoki bosh suyagi ichki tomir izlari.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -674,7 +822,7 @@
           "uncertain": false
         },
         {
-          "text": "Cheklov: o‘lchamga asoslangan antropologik usullar hajmiy 3D rekonstruksiyada hali yaxshi qo‘llanmaydi, aniqligi noma’lum. Oddiy planar rekonstruksiyada natijalar suyak o‘lchoviga yaqin.",
+          "text": "Cheklov: o‘lchamga asoslangan usullar 3D rekonstruksiyada hali yaxshi qo‘llanmaydi, aniqligi noma’lum. Planar rekonstruksiyada natija suyak o‘lchoviga yaqin.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -683,14 +831,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "PMCT afzalligi",
+            "items": [
+              "Tana xaltasini tez ko‘rsatadi",
+              "Qoldiqni «in situ» qayd etadi",
+              "Plomba, implant, suyak izlari"
+            ]
+          },
+          {
+            "title": "Cheklov",
+            "items": [
+              "3D rekonstruksiyada aniqlik noma’lum",
+              "O‘lchamga asoslangan usullar",
+              "Planar rekonstruksiya suyak o‘lchoviga yaqin"
+            ]
+          }
+        ],
+        "caption": "Tasvirlash usullari"
+      },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) PMCT tana xaltasini ochmasdan ko‘rishda qanday afzallik beradi? 2) Nega 3D rekonstruksiyada o‘lchamlar ishonchsiz bo‘lishi mumkin? Doskada chizish: AM skan + PM skan = taxminiy mos kelish sxemasini chizing. Tipik xato: PMCT natijasini yakuniy identifikatsiya deb hisoblash; manbada u taxminiy deyilgan. Shuningdek, tasvir ishi radiolog va odontolog ishi bilan kesishadi, shuning uchun ular bilan yaqin hamkorlik kerak."
     },
     {
       "title": "Voqea tahlili: morg va tasvirlash",
       "bullets": [
         {
-          "text": "Vaziyat: qoldiqlarni DVI jamoasi emas, boshqalar yig‘gan. PMCT (o‘limdan keyingi kompyuter tomografiya) xalta ichini tez ko‘rsatadi va qoldiqni “in situ” holatda qayd etadi.",
+          "text": "Vaziyat: qoldiqlarni DVI jamoasi emas, boshqalar yig‘gan. PMCT xalta ichini tez ko‘rsatib, qoldiqni «in situ» holatda qayd etadi.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -734,7 +903,7 @@
       "title": "Tezkor savol 2: joy va morg bo‘yicha",
       "bullets": [
         {
-          "text": "Savol: joyni xaritalashda INTERPOL nimani tavsiya qiladi? Javob: setka tizimi va bosma yig‘ish yorliqlari; zamonaviy usullar: total station, dron, qo‘lda GPS va GIS.",
+          "text": "Savol: joyni xaritalashda INTERPOL nimani tavsiya qiladi? Javob: setka tizimi va bosma yorliqlar; zamonaviy: total station, dron, GPS va GIS.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -743,7 +912,7 @@
           "uncertain": false
         },
         {
-          "text": "Savol: morgda antropolog nima qiladi? Javob: suyak va suyak bo‘lmagan materialni ajratadi, odam qoldig‘ini tasdiqlaydi, aralashib ketgan qoldiqlar bilan ishlaydi.",
+          "text": "Savol: morgda antropolog nima qiladi? Javob: suyak va suyak bo‘lmagan materialni ajratadi, odam qoldig‘ini tasdiqlaydi, aralashgan qoldiqlar bilan ishlaydi.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -814,7 +983,32 @@
           "uncertain": true
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Tana bo‘lagi (to‘qima)",
+            "value": "5 × 5",
+            "unit": "sm dan katta"
+          },
+          {
+            "label": "Tana bo‘lagi (suyak)",
+            "value": "≥5",
+            "unit": "sm"
+          },
+          {
+            "label": "MH17: 1-manba",
+            "value": "3",
+            "unit": "g"
+          },
+          {
+            "label": "MH17: 2-manba",
+            "value": "4",
+            "unit": "g"
+          }
+        ],
+        "caption": "DNK uchun namuna mezonlari"
+      },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) “Tana bo‘lagi” ta’rifi nega boshidan aniq bo‘lishi kerak? 2) Parcha og‘irligi mezoni namunalar sonini qanday o‘zgartiradi? Doskada: “parcha → antropolog saralaydi → DNK namunasi” sxemasini chizdiring. Tipik xato: 3 g va 4 g ni bitta raqam deb yozish; ikki manba (PMID 32002489: 3 g, kalsinlanmagan; PMID 33224550: 4 g, kuymagan) farq qiladi, o‘qituvchi asl matnni tekshirsin.",
       "uncertain": true
     },
@@ -893,36 +1087,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Omon qolganlar guruhlari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Holat",
-          "Usul"
+        "kind": "tree",
+        "root": "Omon qolganlar guruhlari",
+        "children": [
+          {
+            "label": "1-guruh",
+            "items": [
+              "Jarohatsiz, joyni o‘zi tark etadi",
+              "Antropolog ishtiroki minimal"
+            ]
+          },
+          {
+            "label": "2-guruh",
+            "items": [
+              "Jarohatli, ongli",
+              "Tibbiy jamoa ma’lumoti yig‘iladi"
+            ]
+          },
+          {
+            "label": "3-guruh",
+            "items": [
+              "Jarohatli, ongsiz, omon qoladi",
+              "DNK surtma, barmoq izi, tish, tasvir"
+            ]
+          },
+          {
+            "label": "4-guruh",
+            "items": [
+              "Ongsiz, kasalxonada vafot etadi",
+              "Marhumlardagi kabi jarayon; DNK, tasvir"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "1-guruh",
-            "Jarohatsiz, joyni o‘zi tark etadi",
-            "Antropolog ishtiroki minimal"
-          ],
-          [
-            "2-guruh",
-            "Jarohatli, ongli",
-            "Tibbiy jamoa ma’lumoti yig‘iladi"
-          ],
-          [
-            "3-guruh",
-            "Jarohatli, ongsiz, omon qoladi",
-            "DNK surtma, barmoq izi, tish, tasvir"
-          ],
-          [
-            "4-guruh",
-            "Ongsiz, kasalxonada vafot etadi",
-            "Marhumlardagi kabi jarayon; DNK, tasvir"
-          ]
-        ]
+        "caption": "Omon qolganlar guruhlari"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega 3- va 4-guruh aniqlash uchun eng murakkab? 2) Tibbiy markazlarda ma’lumotni kim yig‘ishi kerak? Doskada chizish: to‘rt guruh jadvali va har biriga bitta usul. Tipik xato: 1- va 2-guruhda ham antropolog asosiy rol o‘ynaydi deb o‘ylash. Qo‘shimcha: noma’lum voyaga yetmagan bolani davolashga voyaga yetgan shaxsning roziligi yo‘qligini ham hisobga olish kerak. Radiografiya va KT (kompyuter tomografiya) tibbiy triajda odatda mavjud bo‘ladi."
     },
@@ -983,7 +1180,7 @@
           "uncertain": false
         },
         {
-          "text": "Unga marhumlarni aniqlash usullari qo‘llanadi: DNK surtmasi, imkon bo‘lsa barmoq izi va tish holati. Bu yondashuv Parij (2015) va Nitsa (2016) hujumlarida samarali bo‘lgan.",
+          "text": "Unga marhumlarni aniqlash usullari qo‘llanadi: DNK surtmasi, imkon bo‘lsa barmoq izi va tish holati. Bu Parij (2015), Nitsa (2016) hujumlarida samarali bo‘lgan.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -992,7 +1189,7 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: past LR (ehtimollar nisbati) ≠ qiymatsiz dalil. Antropologik belgilar alohida kuchsiz bo‘lsa ham, birlashtirilganda taxminiy identifikatsiyaga kuchli dalil bo‘ladi.",
+          "text": "Diqqat: past LR (ehtimollar nisbati) ≠ qiymatsiz dalil. Antropologik belgilar alohida kuchsiz bo‘lsa ham, birlashganda taxminiy identifikatsiyaga kuchli dalil.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -1069,7 +1266,7 @@
           "uncertain": false
         },
         {
-          "text": "Thai tsunami victim identification (TTVI) tarixdagi eng katta operatsiya bo‘ldi: 5 395 qurbon topildi, 3 308 tasi (asosan tish yozuvlari bilan) 3,5 yilda aniqlandi.",
+          "text": "Thai tsunami victim identification (TTVI) — tarixdagi eng katta operatsiya: 5 395 qurbon topildi, 3 308 tasi (asosan tish yozuvlari bilan) 3,5 yilda aniqlandi.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -1078,7 +1275,7 @@
           "uncertain": false
         },
         {
-          "text": "Ba’zilar uni eng muvaffaqiyatlilardan biri deb, boshqalar katta sarf-xarajatga nisbatan o‘rtacha natija deb baholadi. Shu sabab jasadlarni to‘g‘ri boshqarish ahamiyati tan olindi.",
+          "text": "Ba’zilar uni eng muvaffaqiyatlilardan biri, boshqalar katta sarfga nisbatan o‘rtacha natija deb baholadi. Jasadlarni to‘g‘ri boshqarish ahamiyati tan olindi.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -1087,7 +1284,7 @@
           "uncertain": false
         },
         {
-          "text": "Rejalashtirilgan ommaviy dafn va kasbiy boshqaruv marhumni hurmat qilish bilan birga kelajakda aniqlash imkonini oshiradi. Antropologlar birinchi yordamchilarni o‘qitgan.",
+          "text": "Rejalashtirilgan ommaviy dafn va kasbiy boshqaruv marhumni hurmat qilish bilan birga keyin aniqlash imkonini beradi. Antropologlar yordamchilarni o‘qitgan.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -1096,14 +1293,41 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Tsunami halok bo‘lgan",
+            "value": "226 000+",
+            "unit": "kishi"
+          },
+          {
+            "label": "Ta’sirlangan mamlakat",
+            "value": "13"
+          },
+          {
+            "label": "Topilgan qurbon (TTVI)",
+            "value": "5 395"
+          },
+          {
+            "label": "Aniqlangan",
+            "value": "3 308"
+          },
+          {
+            "label": "Aniqlash muddati",
+            "value": "3,5",
+            "unit": "yil"
+          }
+        ],
+        "caption": "2004 yilgi tsunami"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: (1) Nima uchun TTVI ga turlicha baho berilgan? (2) Ommaviy dafn qanday qilib kelajakdagi aniqlashga yordam beradi? Doskada: tsunami → jasadlarni boshqarish → rejali dafn → keyingi identifikatsiya zanjirini chizing. Tipik xato: ommaviy dafnni aniqlashdan voz kechish deb tushunish; aslida u kelajakdagi identifikatsiya imkonini saqlaydi."
     },
     {
       "title": "Migrantlar o‘limi va terroristik hujumlar",
       "bullets": [
         {
-          "text": "Migratsiya bilan bog‘liq o‘limlarda odatda yo‘qolganlar ro‘yxati yo‘q, shuning uchun o‘limdan oldingi (AM, antemortem) ma’lumot ham yetishmaydi. [de Boer, The role of forensic anthropology in DVI, PMID 32002489]",
+          "text": "Migratsiya bilan bog‘liq o‘limlarda odatda yo‘qolganlar ro‘yxati yo‘q, shuning uchun AM (o‘limdan oldingi) ma’lumot ham yetishmaydi.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -1139,14 +1363,37 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Migrantlar o‘limi",
+            "items": [
+              "Yo‘qolganlar ro‘yxati yo‘q",
+              "AM ma’lumot yetishmaydi",
+              "DNK, tish, barmoq izi — odatda mumkin emas",
+              "Biologik profil muqobil"
+            ]
+          },
+          {
+            "title": "Terakt",
+            "items": [
+              "Jinoyat tergovi ham kerak",
+              "Jinoyatchini izlash ustun",
+              "CBRN senariylariga tayyorlik",
+              "Mahalliy qonunga rioya"
+            ]
+          }
+        ],
+        "caption": "Alohida holatlar"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Yo‘qolganlar ro‘yxati bo‘lmasa, aniqlash nima uchun qiyinlashadi? 2) Terakt holatida DVI va tergov qanday kelishib ishlaydi? Doskada chizish: ikki ustunli solishtirma (migrant o‘limi / terakt) va ularning asosiy muammolari. Tipik xato: talabalar terakt joyida DVI har doim birinchi o‘rinda deb o‘ylaydi; aslida ustuvorlik tergovga o‘tishi mumkin."
     },
     {
       "title": "Ta’lim, sertifikatsiya va tayyorgarlik",
       "bullets": [
         {
-          "text": "DVI guruhidagi antropolog DVI ning besh bosqichini, hujjatlarni, mamlakat qonunchiligini va PMCT (o‘limdan keyingi kompyuter tomografiyasi) tasvirlarini tahlil qilishni bilishi kerak.",
+          "text": "DVI guruhidagi antropolog DVI ning besh bosqichini, hujjatlarni, mamlakat qonunchiligini va PMCT tasvirlarini tahlil qilishni bilishi kerak.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -1173,7 +1420,7 @@
           "uncertain": false
         },
         {
-          "text": "Mentorlik tizimida tajribali mutaxassis guruhiga tajriba orttirayotgan hamkasb kiritiladi. DVI jarayoni tana parchalangan kichik voqealarda ham qo‘llanishi mumkin.",
+          "text": "Mentorlik tizimida tajribali mutaxassis guruhiga tajriba orttirayotgan hamkasb kiritiladi. DVI jarayoni tana parchalangan kichik voqealarda ham qo‘llanadi.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -1182,7 +1429,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Bilim",
+            "text": "DVI besh bosqichi, hujjat, qonun, PMCT tahlili"
+          },
+          {
+            "title": "Dastur",
+            "text": "Ko‘p dastur ommaviy halokatga o‘rgatmaydi"
+          },
+          {
+            "title": "Sertifikat",
+            "text": "Tajribani ko‘rsatadi, majburiy emas"
+          },
+          {
+            "title": "Mashg‘ulot",
+            "text": "Butun guruh ishtirok etadi; debrief"
+          },
+          {
+            "title": "Mentorlik",
+            "text": "Tajribali mutaxassis guruhiga qo‘shiladi"
+          }
+        ],
+        "caption": "Tayyorgarlik"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega universitet diplomining o‘zi DVI ga tayyorlik uchun yetarli emas? 2) Debrief nima beradi? Doskada chizish: mentorlik zanjiri (tajribali mutaxassis → yangi mutaxassis → keyingi voqea). Tipik xato: sertifikatsiya majburiy va DVI tajribasini kafolatlaydi deb o‘ylash; manbaga ko‘ra bunday emas."
     },
     {
@@ -1260,38 +1532,170 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "To‘rt voqea qiyosi",
-        "nodes": [],
-        "header": [
-          "Voqea",
-          "Muddat",
-          "Natija"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "WTC, 2001",
+            "text": "Birlamchi morg ~11 oy — 2 749 dan 1 637 tasi aniqlangan"
+          },
+          {
+            "title": "American Airlines 587, 2001",
+            "text": "Otopsiya 7 kun, jami 28 kun — Barcha qurbonlar aniqlangan"
+          },
+          {
+            "title": "Shoreham, 2015",
+            "text": "Ekspertiza ~6 hafta — 1 200+ bo‘lak; hamma aniqlangan"
+          },
+          {
+            "title": "Parij, 2015",
+            "text": "Qurbonlar uchun 1 hafta — 130 halok; asosan DNK orqali"
+          }
         ],
-        "rows": [
-          [
-            "Butunjahon savdo markazi (WTC), 2001",
-            "Birlamchi morg ~11 oy",
-            "2 749 dan 1 637 tasi aniqlangan"
-          ],
-          [
-            "American Airlines 587, 2001",
-            "Otopsiya 7 kun, jami 28 kun",
-            "Barcha qurbonlar aniqlangan"
-          ],
-          [
-            "Shoreham, 2015",
-            "Ekspertiza ~6 hafta",
-            "1 200+ bo‘lak; hamma aniqlangan"
-          ],
-          [
-            "Parij, 2015",
-            "Qurbonlar uchun 1 hafta",
-            "130 halok; asosan DNK orqali"
-          ]
-        ]
+        "caption": "To‘rt voqea qiyosi"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: (1) Nega qurbonlar soni kam bo‘lsa ham (Shoreham) ish uzoq cho‘zildi? (2) WTC va AA587 natijalari nima uchun bunchalik farq qildi? Doskada: 7 voqea uchun vaqt chizig‘ini chizdiring. Tipik xato: qurbonlar soni = ish muddati deb o‘ylash; aslida qoldiqlar holati (parchalanish, kuyish, aralashish) hal qiladi."
+    },
+    {
+      "title": "WTC 2001: maydon, qoldiq va muddatlar",
+      "bullets": [
+        {
+          "text": "Halokat joyi 64 500 m² maydonni qoplagan, 43 m chuqur bo‘lgan; uch «issiq nuqta» deyarli 3 oy yongan.",
+          "source": {
+            "author": "de Boer et al.",
+            "title": "Disaster victim identification operations with fragmented, burnt, or commingled remains: experience-based recommendations, Forensic Sciences Research",
+            "page": "PMID 33224550, September 11"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Vayronani tekshirish va taxminan 22 000 qoldiq bo‘lagini yig‘ish deyarli 9 oy davom etgan.",
+          "source": {
+            "author": "de Boer et al.",
+            "title": "Disaster victim identification operations with fragmented, burnt, or commingled remains: experience-based recommendations, Forensic Sciences Research",
+            "page": "PMID 33224550, September 11"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Birlamchi morg ishlari taxminan 11 oy davom etgan; sifat tekshiruvi va qayta tahlil yana 6 oy.",
+          "source": {
+            "author": "de Boer et al.",
+            "title": "Disaster victim identification operations with fragmented, burnt, or commingled remains: experience-based recommendations, Forensic Sciences Research",
+            "page": "PMID 33224550, September 11"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2019 yil avgustiga qadar 2 749 qurbondan 1 637 tasiga 14 696 bo‘lak moslangan; DNK sinovi hamon davom etmoqda.",
+          "source": {
+            "author": "de Boer et al.",
+            "title": "Disaster victim identification operations with fragmented, burnt, or commingled remains: experience-based recommendations, Forensic Sciences Research",
+            "page": "PMID 33224550, September 11"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Maydon",
+            "value": "64 500",
+            "unit": "m²"
+          },
+          {
+            "label": "Chuqurlik",
+            "value": "43",
+            "unit": "m"
+          },
+          {
+            "label": "Qidiruv",
+            "value": "≈9",
+            "unit": "oy"
+          },
+          {
+            "label": "Yig‘ilgan bo‘lak",
+            "value": "≈22 000"
+          },
+          {
+            "label": "Birlamchi morg",
+            "value": "≈11",
+            "unit": "oy"
+          },
+          {
+            "label": "Aniqlanganlar",
+            "value": "1 637 / 2 749"
+          }
+        ],
+        "caption": "WTC raqamlari"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega bunday operatsiya yillar davom etadi? Doskada: raqamlar ro‘yxati. Tipik xato: aniqlash tez tugaydi deb o‘ylash."
+    },
+    {
+      "title": "MH17 va Shoreham: ikki turli miqyos",
+      "bullets": [
+        {
+          "text": "2014 yil 17 iyulda MH17 uchog‘i urib tushirilgan; 283 yo‘lovchi va 15 ekipaj a’zosi halok bo‘lgan.",
+          "source": {
+            "author": "de Boer et al.",
+            "title": "Disaster victim identification operations with fragmented, burnt, or commingled remains: experience-based recommendations, Forensic Sciences Research",
+            "page": "PMID 33224550, Malaysia Airlines 17"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qoldiqlar Niderlandiyaga olib borilgan; ko‘p qayta ko‘rik kerak bo‘lgan; DNK namunalari 8 000 dan oshgan va 298 qurbondan 296 tasini qamragan.",
+          "source": {
+            "author": "de Boer et al.",
+            "title": "Disaster victim identification operations with fragmented, burnt, or commingled remains: experience-based recommendations, Forensic Sciences Research",
+            "page": "PMID 33224550, Malaysia Airlines 17"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "2015 yil 22 avgustda Shoreham airshow halokatida 11 kishi halok bo‘lgan, 1 200 dan ortiq tana bo‘lagi topilgan.",
+          "source": {
+            "author": "de Boer et al.",
+            "title": "Disaster victim identification operations with fragmented, burnt, or commingled remains: experience-based recommendations, Forensic Sciences Research",
+            "page": "PMID 33224550, Shoreham airshow crash"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Shoreham: qidiruv taxminan 3 hafta, ekspertiza taxminan 6 hafta; hamma shaxs aniqlangan.",
+          "source": {
+            "author": "de Boer et al.",
+            "title": "Disaster victim identification operations with fragmented, burnt, or commingled remains: experience-based recommendations, Forensic Sciences Research",
+            "page": "PMID 33224550, Shoreham airshow crash"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "MH17 (2014)",
+            "items": [
+              "283 yo‘lovchi + 15 ekipaj",
+              "Joy maydoni 30 km²",
+              "8 000+ DNK namuna",
+              "296 / 298 qurbon namunasi"
+            ]
+          },
+          {
+            "title": "Shoreham (2015)",
+            "items": [
+              "11 halok bo‘lgan",
+              "1 200+ tana bo‘lagi",
+              "Qidiruv ≈3 hafta",
+              "Ekspertiza ≈6 hafta; hamma aniqlangan"
+            ]
+          }
+        ],
+        "caption": "Ikki voqea"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega kam qurbonli voqeada ham ko‘p bo‘lak topiladi? Doskada: ikki ustun. Tipik xato: bo‘laklar sonini qurbonlar soni deb o‘ylash."
     },
     {
       "title": "Erta qarorlar: siyosatchi va sud uchun asosiy savollar",
@@ -1324,7 +1728,7 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: ‘parchalanish’ so‘zi tibbiyotda saqlanishni, politsiyada ballistikani bildirgan (Christchurch). Oila va OAV (ommaviy axborot vositalari) bilan aloqa ham oldindan belgilanadi.",
+          "text": "Diqqat: «parchalanish» so‘zi tibbiyotda saqlanishni, politsiyada ballistikani bildirgan (Christchurch). Oila va OAV bilan aloqa ham oldindan belgilanadi.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -1333,7 +1737,45 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Erta qarorlar",
+        "children": [
+          {
+            "label": "Kim maslahat beradi?",
+            "items": [
+              "Mas’ul zanjir oldindan belgilanadi"
+            ]
+          },
+          {
+            "label": "Qaysi mutaxassis?",
+            "items": [
+              "Soni yagona mezon emas",
+              "Rue Erlanger: 10 halokatga ham"
+            ]
+          },
+          {
+            "label": "Mandat",
+            "items": [
+              "WTC: otopsiya yo‘q",
+              "AA587: qonun talab qilgan"
+            ]
+          },
+          {
+            "label": "Terminologiya",
+            "items": [
+              "«Parchalanish» — turlicha ma’no"
+            ]
+          },
+          {
+            "label": "Aloqa",
+            "items": [
+              "Oila va OAV oldindan belgilanadi"
+            ]
+          }
+        ],
+        "caption": "Siyosatchi va sud uchun savollar"
+      },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: (1) Ochiq va yopiq holatda identifikatsiya mandati qanday farqlanadi? (2) Oilaga qanday va qachon ma’lumot berilishi kerak? Doskada: 7 ta savol ro‘yxatini yozdirib, har biriga mas’ul shaxsni belgilatig. Tipik xato: bir xil atama hammaga bir xil tushuniladi deb hisoblash; ‘tana’, ‘bo‘lak’ kabi so‘zlarni oldindan aniqlash kerak."
     },
     {
@@ -1367,7 +1809,7 @@
           "uncertain": false
         },
         {
-          "text": "Sifat kafolati: mutaxassis bo‘lmasa, qurbon shakllari qop yopilishidan oldin tekshiriladi. Yangi shaklni INTERPOL (Xalqaro jinoiy politsiya tashkiloti) ko‘rib chiqmoqda.",
+          "text": "Sifat kafolati: mutaxassis bo‘lmasa, qurbon shakllari qop yopilishidan oldin tekshiriladi. Yangi shaklni INTERPOL ko‘rib chiqmoqda.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -1376,14 +1818,46 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Kuygan qoldiqlar",
+        "children": [
+          {
+            "label": "Issiqlik ta’siri",
+            "items": [
+              "O‘lcham, rang, shakl o‘zgaradi",
+              "Mo‘rt va aralashgan"
+            ]
+          },
+          {
+            "label": "Kalsinatsiya",
+            "items": [
+              "Oq, mo‘rt, organik modda yo‘q",
+              "DNK profili olinmaydi"
+            ]
+          },
+          {
+            "label": "Afg‘oniston, 2012",
+            "items": [
+              "Tank ichi zonalarga bo‘lingan"
+            ]
+          },
+          {
+            "label": "Sifat kafolati",
+            "items": [
+              "Qop yopishdan oldin shakl tekshiriladi"
+            ]
+          }
+        ],
+        "caption": "Joyda ish"
+      },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: (1) DNK olinmasa, kuygan bo‘lakni qanday qayta biriktiramiz? (2) Nega qoplar yopilishidan oldin shakllarni tekshirish kerak? Doskada: tank ichini zonalarga bo‘lish sxemasini chizdiring. Tipik xato: kuygan har bir suyakdan DNK olish mumkin deb o‘ylash; kalsinatsiyada imkonsiz."
     },
     {
       "title": "Triaj va morgdagi bosqichma-bosqich tekshiruv",
       "bullets": [
         {
-          "text": "Odatda avval butun jasadlar va yirik qismlar ko‘riladi, bo‘laklar keyin. Lekin mutaxassislar hajmi va saqlanishidan qat’i nazar barcha qoldiqni ko‘rishga axloqan majbur.",
+          "text": "Odatda avval butun jasadlar va yirik qismlar ko‘riladi, bo‘laklar keyin. Mutaxassislar hajmidan qat’i nazar barcha qoldiqni ko‘rishga axloqan majbur.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -1392,7 +1866,7 @@
           "uncertain": false
         },
         {
-          "text": "Triajda odam bo‘lmagan material ajratiladi, qoldiqlar identifikatsiyaga foydaliligi bo‘yicha saralanadi. Dastlabki ko‘rikni sud-tibbiy patolog va antropolog birga o‘tkazadi.",
+          "text": "Triajda odam bo‘lmagan material ajratiladi, qoldiqlar foydaliligi bo‘yicha saralanadi. Dastlabki ko‘rikni patolog va antropolog birga o‘tkazadi.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -1401,7 +1875,7 @@
           "uncertain": false
         },
         {
-          "text": "Batafsil ko‘rikda avval takroriy suyak elementlari ajratiladi: ular qoldiqlar aralashganini bildiradi. Bo‘laklar faqat jismonan mos kelgandagina birlashtiriladi, shubha bo‘lsa ajratiladi.",
+          "text": "Batafsil ko‘rikda avval takroriy suyak elementlari ajratiladi: ular aralashganini bildiradi. Bo‘laklar faqat jismonan mos kelsa birlashtiriladi.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -1410,7 +1884,7 @@
           "uncertain": false
         },
         {
-          "text": "Uzoq tahlil davrida qoldiqlar −80 °C da muzlatiladi yoki quritiladi. Dunyo savdo markazi (WTC) qoldiqlarida quritish DNK ma’lumotiga zarar bermagani qayd etilgan.",
+          "text": "Uzoq tahlil davrida qoldiqlar −80 °C da muzlatiladi yoki quritiladi. WTC qoldiqlarida quritish DNK ma’lumotiga zarar bermagani qayd etilgan.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -1419,14 +1893,43 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Triaj",
+            "text": "Odam bo‘lmagan material ajratiladi"
+          },
+          {
+            "title": "2. Saralash",
+            "text": "Identifikatsiyaga foydaliligi bo‘yicha"
+          },
+          {
+            "title": "3. Birgalikdagi ko‘rik",
+            "text": "Patolog va antropolog"
+          },
+          {
+            "title": "4. Takroriy elementlar",
+            "text": "Aralashganlikni ko‘rsatadi"
+          },
+          {
+            "title": "5. Birlashtirish",
+            "text": "Faqat jismonan mos kelsa"
+          },
+          {
+            "title": "6. Saqlash",
+            "text": "−80 °C da muzlatish yoki quritish"
+          }
+        ],
+        "caption": "Morgdagi tekshiruv"
+      },
       "teacher_notes": "Vaqt: 6–7 daq. Muhokama: 1) Nega mayda bo‘lak ham ko‘rilishi shart? 2) Takroriy element nimani bildiradi? Doskada chizish: triajdan batafsil ko‘rikkacha ketma-ketlik (odam emas materialni ajratish → takroriy elementlar → birlashtirish → saqlash). Tipik xato: bo‘laklarni ‘ehtimol bir kishiniki’ deb shubha bilan birlashtirish; to‘g‘ri qoida: faqat haqiqiy jismoniy moslikda, shubha bo‘lsa ajratish. Yana bir xato: DNK uchun muzlatish va quritish usulini aralashtirish."
     },
     {
       "title": "DNK namuna olish: suyak, tish va kontaminatsiya",
       "bullets": [
         {
-          "text": "Yumshoq to‘qimani tozalash qiyin, shuning uchun ifloslanish xavfi yuqori. Mayda va aralashgan bo‘laklardan yumshoq to‘qima olish tavsiya etilmaydi (butun jasaddan tashqari).",
+          "text": "Yumshoq to‘qimani tozalash qiyin, ifloslanish xavfi yuqori. Mayda va aralashgan bo‘laklardan yumshoq to‘qima olish tavsiya etilmaydi (butun jasaddan tashqari).",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -1435,7 +1938,7 @@
           "uncertain": false
         },
         {
-          "text": "G‘ovak (gubkasimon) suyak zich suyakdan ko‘ra ko‘proq DNK saqlaydi. Biroq zamonaviy usullarda ko‘pchilik elementlar to‘liq profil beradi; Shoreham halokatida suyakdan 100% natija olingan.",
+          "text": "G‘ovak (gubkasimon) suyak zich suyakdan ko‘ra ko‘proq DNK saqlaydi. Zamonaviy usullarda ko‘p elementlar to‘liq profil beradi; Shoreham: suyakdan 100% natija.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -1444,7 +1947,7 @@
           "uncertain": false
         },
         {
-          "text": "Malaysia Airlines 17 (MH17) ishida suyak tishdan yaxshi natija berdi, chunki tish maxsus murakkab ishlov talab qiladi. Tish topshirilsa, avval odontologik tahlil o‘tkaziladi.",
+          "text": "MH17 ishida suyak tishdan yaxshi natija berdi, chunki tish maxsus murakkab ishlov talab qiladi. Tish topshirilsa, avval odontologik tahlil o‘tkaziladi.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -1453,7 +1956,7 @@
           "uncertain": false
         },
         {
-          "text": "Yumshoq to‘qimada tashqi qavat kesilgach skalpel almashtiriladi yoki 10% xlorli oqartirgich bilan tozalanadi. Arra pichog‘i ham namunalar orasida tozalanadi yoki almashtiriladi.",
+          "text": "Yumshoq to‘qimada tashqi qavat kesilgach skalpel almashtiriladi yoki 10% xlorli oqartirgich bilan tozalanadi. Arra pichog‘i ham namunalar orasida tozalanadi.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -1462,7 +1965,36 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "G‘ovak suyak",
+            "items": [
+              "Zich suyakdan ko‘proq DNK",
+              "Shoreham: 100% natija",
+              "Zamonaviy usullarda ko‘pi mos"
+            ]
+          },
+          {
+            "title": "Tish",
+            "items": [
+              "Maxsus murakkab ishlov",
+              "Avval odontologik tahlil",
+              "MH17: suyak yaxshiroq natija"
+            ]
+          },
+          {
+            "title": "Yumshoq to‘qima",
+            "items": [
+              "Tozalash qiyin, ifloslanish xavfi",
+              "Mayda bo‘lakdan tavsiya etilmaydi",
+              "Skalpel almashtiriladi yoki 10% xlor"
+            ]
+          }
+        ],
+        "caption": "DNK namunalari"
+      },
       "teacher_notes": "Vaqt: 6–7 daq. Muhokama: 1) Nega bo‘lakdan yumshoq to‘qima olish tavsiya etilmaydi? 2) Nega tishni DNKga yuborishdan oldin odontolog ko‘radi? Doskada chizish: namuna tanlash daraxti (butun jasad / mayda bo‘lak → to‘qima turi → asbobni tozalash). Tipik xato: ‘g‘ovak suyak afzal, demak boshqa elementlar yaramaydi’ deb o‘ylash; manbada zamonaviy usullarda ko‘pchilik elementlar to‘liq profil beradi. Diqqat: tish DNK uchun yaxshi manba, lekin murakkab ishlov talab qiladi va avval odontologik tahlil shart."
     },
     {
@@ -1594,7 +2126,41 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Oila va sud bilan aloqa",
+        "children": [
+          {
+            "label": "Aniqlanmay qolishi",
+            "items": [
+              "Kichik aralashgan parchalar",
+              "Chirigan yumshoq to‘qima"
+            ]
+          },
+          {
+            "label": "Xabar berish",
+            "items": [
+              "Haftalar yoki yillar farq bilan",
+              "Forma orqali usulni tanlash"
+            ]
+          },
+          {
+            "label": "Jinoyatchi qoldig‘i",
+            "items": [
+              "Ajratish har doim mumkin emas",
+              "Va’da berilmaydi"
+            ]
+          },
+          {
+            "label": "Sud",
+            "items": [
+              "Dalil taqdimoti oldindan kelishiladi",
+              "Sanitarlashtirilgan tasvirlar"
+            ]
+          }
+        ],
+        "caption": "Muloqot"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Oilaga qanday ma’lumot berish darajalarini taklif qilish mumkin (to‘liq fayl, rasmsiz fayl, diagramma)? 2) Nega sudda sanitarlashtirilgan tasvirlar muhim? Doskada: oila uchun xabardor qilish variantlari ro‘yxatini tuzdiring. Tipik xato: oilaga hamma parcha aniqlanishini va jinoyatchi qoldig‘i albatta ajratilishini va’da qilish."
     },
     {
@@ -1644,7 +2210,7 @@
       "title": "Xulosa: asosiy tamoyillar va amaliy tavsiyalar",
       "bullets": [
         {
-          "text": "Halokat qurbonlarini identifikatsiya qilish (DVI) ko‘p tarmoqli ish. Antropolog yakka ishlamaydi: patolog, odontolog, radiolog va DNK mutaxassislari bilan birga ishlaydi.",
+          "text": "Halokat qurbonlarini identifikatsiya qilish (DVI) ko‘p tarmoqli ish. Antropolog patolog, odontolog, radiolog va DNK mutaxassislari bilan birga ishlaydi.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -1671,7 +2237,7 @@
           "uncertain": false
         },
         {
-          "text": "Mutaxassis roli yangi usullar bilan rivojlanadi. DVI mashqlari, yakuniy tahlil (debrief) va tajribali mutaxassisning yoshlarga mentorligi tayyorgarlikni oshiradi.",
+          "text": "Mutaxassis roli yangi usullar bilan rivojlanadi. DVI mashqlari, yakuniy tahlil (debrief) va tajribali mutaxassis mentorligi tayyorgarlikni oshiradi.",
           "source": {
             "author": "de Boer et al.",
             "title": "The role of forensic anthropology in disaster victim identification (DVI): recent developments and future prospects, Forensic Sciences Research",
@@ -1977,11 +2543,11 @@
       "question": "Morgda ekspert DNK namunasi sifatida tishni yubormoqchi. Tishni laboratoriyaga topshirishdan oldin birinchi navbatda nima qilinishi shart?",
       "options": [
         "Tishni kamida −80 °C da muzlatib, bir hafta saqlash",
-        "Tishga avval odontologik tahlil o‘tkazish",
+        "Tishni 10% xlorli eritmada uzoq vaqt namlab qo‘yish",
         "Tishni suyak namunasi bilan almashtirib yuborish",
-        "Tishni 10% xlorli eritmada uzoq vaqt namlab qo‘yish"
+        "Tishga avval odontologik tahlil o‘tkazish"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Tish DNK uchun yaxshi manba, ammo uni qayta ishlash maxsus usullarni talab qiladi. Manbada tishni DNK namunasi sifatida topshirishdan oldin albatta odontologik tahlildan o‘tkazish zarurligi aytilgan.",
       "source": {
         "author": "de Boer et al.",

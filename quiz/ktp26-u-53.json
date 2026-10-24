@@ -1,0 +1,590 @@
+{
+ "topic_id": "ktp26-u-53",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Gistomorfologik diagnostika",
+  "ru": "Gistomorfologik diagnostika",
+  "en": "Gistomorfologik diagnostika"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "ktp26-u-53-q01",
+   "question_i18n": {
+    "uz": "Ekspert jarohat o‘lim oldidan yoki o‘limdan keyin yetkazilganini aniqlamoqchi. U aynan nimani isbotlamoqda?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Jarohat vitalligini, ya’ni tirikdagi paydo bo‘lishini",
+     "Jarohat yoshini, ya’ni omon qolish muddatini",
+     "O‘lim sodir bo‘lgan aniq vaqtni belgilashni",
+     "Jarohat og‘irlik darajasining tasnifini"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Vitalliklikni isbotlash jarohat tirikligida (antemortem) yoki o‘limdan keyin (postmortem) yetkazilganini aniqlashni anglatadi. Jarohat yoshi esa jarohatdan keyin odam qancha vaqt tirik qolganini baholaydi. Bu ikki tushunchani aralashtirmaslik kerak."
+   },
+   "source": {
+    "author": "Maiese A va boshq.",
+    "title": "State-of-the-Art on Wound Vitality Evaluation: A Systematic Review, International Journal of Molecular Sciences",
+    "page": "PMID 35805886"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-53-q02",
+   "question_i18n": {
+    "uz": "Quyidagi topilmalardan qaysi biri jarohatning hayotiy reaksiyasi (vitalliklik) belgisi hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Jarohat atrofidagi to‘qimaning chirishi",
+     "Jarohat atrofidagi to‘qimaning qurishi",
+     "Granulyatsion to‘qima hosil bo‘lishi",
+     "Jarohat atrofidagi to‘qimaning parchalanishi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Qon quyilishi, yallig‘lanish hujayralari infiltratsiyasi va granulyatsion to‘qima hosil bo‘lishi tirikdagi jarohatga xos hayotiy reaksiyalar hisoblanadi. Chirish, qurish va parchalanish esa o‘limdan keyingi o‘zgarishlardir."
+   },
+   "source": {
+    "author": "Li N va boshq.",
+    "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+    "page": "PMID 32490306"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-53-q03",
+   "question_i18n": {
+    "uz": "Reanimatsiya o‘tkazilgan jasadda jarohat to‘qimasida faqat eritrotsitlar ekstravazatsiyasi topildi. Qaysi xulosa to‘g‘ri?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bu belgi o‘limdan keyin ham chiqishi mumkin, yolg‘iz o‘zi yetarli emas",
+     "Bu belgi jarohat tirikligida yetkazilganini aniq isbotlab beradi",
+     "Bu belgi jarohat o‘limdan keyin yetkazilganini aniq isbotlaydi",
+     "Bu belgi jarohat yoshini aniq soatgacha ko‘rsatib beradi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Eritrotsitlar ekstravazatsiyasi o‘limdan keyin ham paydo bo‘lishi mumkin. Qon aylanishini saqlab turadigan reanimatsiya amaliyoti uni sun’iy chaqirishi mumkin. Shuning uchun bu belgi vitallikning ishonchli markeri emas va uni boshqa belgilar bilan birga baholash kerak."
+   },
+   "source": {
+    "author": "Maiese A va boshq.",
+    "title": "State-of-the-Art on Wound Vitality Evaluation: A Systematic Review, International Journal of Molecular Sciences",
+    "page": "PMID 35805886"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-53-q04",
+   "question_i18n": {
+    "uz": "Tadqiqotchi jarohatdan keyingi vaqtni oldindan aniq belgilashi va natijalarni takrorlay olishi kerak. Qaysi namuna manbasi eng mos?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Hujjatlari to‘liq bo‘lmagan autopsiya namunalari",
+     "Tirik odamlardan surtma orqali olingan namunalar",
+     "Jarrohlik yo‘li bilan olingan bemor to‘qimalari",
+     "Tajriba hayvonlaridan olingan to‘qima namunalari"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Hayvon tajribalarini nazorat qilish mumkin, jarohatdan keyingi vaqtni ham belgilash mumkin, shuning uchun natijalar takrorlanuvchan va ishonchli bo‘ladi. Kamchiligi shuki, natijalarning odamga qo‘llanilishi hali noaniq."
+   },
+   "source": {
+    "author": "Li N va boshq.",
+    "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+    "page": "PMID 32490306"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-53-q05",
+   "question_i18n": {
+    "uz": "Tirik odamdagi jarohatdan namuna faqat noinvaziv usulda (surtma) olinadi. Bu qanday asosiy xavfni keltirib chiqaradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Namuna hajmi yetarli bo‘lmay, yolg‘on ijobiy natija chiqishi",
+     "Namunaning hayvon to‘qimasi bilan almashib ketishi",
+     "Namunada o‘limdan keyingi chirish o‘zgarishlari paydo bo‘lishi",
+     "Namuna hajmi yetarli bo‘lmay, yolg‘on salbiy natija chiqishi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Tirik odamlardagi jarohatdan namuna noinvaziv (surtma) usulda olinishi kerak, shuning uchun namuna hajmi ko‘pincha yetarli bo‘lmaydi. Bu ishonchsiz, ba’zan yolg‘on salbiy natijalarga olib keladi. Bundan tashqari, tirik odamlarni tadqiqotga jalb etish mahalliy etika qo‘mitasi ruxsatini talab qiladi."
+   },
+   "source": {
+    "author": "Li N va boshq.",
+    "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+    "page": "PMID 32490306"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-53-q06",
+   "question_i18n": {
+    "uz": "Tadqiqotchiga inson to‘qimasi, aniq vaqt qaydi va kerakli muddatgacha saqlangan namuna kerak. Qaysi namuna turi eng mos keladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Hayvon modelidan olingan nazoratli namunalar",
+     "Tirik bemorlardan olingan to‘qima namunalari",
+     "Hujjatlari yetarli bo‘lmagan autopsiya namunalari",
+     "Chirigan jasaddan olingan ex vivo namunalar"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Tirik bemorlardan olingan namunalarda vaqt qaydi aniq bo‘ladi, ular kerakli muddatgacha saqlanadi va inson to‘qimasi hisoblanadi. Hayvon namunalarini inson uchun qo‘llash esa to‘liq isbotlanmagan. Autopsiya namunalarida ma’lumot ko‘pincha yetarli bo‘lmaydi."
+   },
+   "source": {
+    "author": "Li N va boshq.",
+    "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+    "page": "PMID 32490306"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-53-q07",
+   "question_i18n": {
+    "uz": "Ikki shaxsda bir vaqtning o‘zida hosil bo‘lgan gematomalar rangi turlicha ko‘rindi. Bu farqning asosiy sababi nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Faqat jabrlanuvchining jinsi rangni belgilaydi",
+     "Gematomada rang o‘zgarishi umuman bo‘lmaydi",
+     "Faqat o‘lim oralig‘i rangni belgilab beradi",
+     "Chuqurlik, joylashuv va teri rangi ta’sir qiladi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Gematoma paydo bo‘lish vaqti va rangiga uning chuqurligi, joylashuvi va teri rangi ta’sir qiladi. Shu sababli rang bo‘yicha yoshni aniqlash amaliyot uchun juda o‘zgaruvchan deb topilgan."
+   },
+   "source": {
+    "author": "Li N va boshq.",
+    "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+    "page": "PMID 32490306"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-53-q08",
+   "question_i18n": {
+    "uz": "Gematoksilin-eozin va Berlin ko‘ki bilan oddiy gistologik baholashda o‘zgarishlarni eng erta qachon aniqlash mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Jarohatdan taxminan 6 soat o‘tgach",
+     "Jarohatdan taxminan 3 daqiqa o‘tgach",
+     "Jarohatdan taxminan 12 soat o‘tgach",
+     "Jarohatdan taxminan 48 soat o‘tgach"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Oddiy gistologiya (gematoksilin-eozin, Berlin ko‘ki) o‘zgarishlarni jarohatdan 6 soat o‘tgach aniqlay oladi, ammo amaliy qo‘llanishi cheklangan. 3 daqiqa — immunogistokimyoda P-selektin kuzatilgan muddat."
+   },
+   "source": {
+    "author": "Li N va boshq.",
+    "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+    "page": "PMID 32490306"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-53-q09",
+   "question_i18n": {
+    "uz": "Reanimatsiya o‘tkazilgan jasad to‘qimasida eritrotsit ekstravazatsiyasi topildi. Bu topilmadan qanday to‘g‘ri xulosa chiqariladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Topilma jarohat tirikligida hosil bo‘lganini qat’iy isbotlaydi",
+     "Reanimatsiya ekstravazatsiyani mutlaqo chaqira olmaydi",
+     "Yolg‘iz o‘zi hayotiylik isboti bo‘la olmaydi, o‘limdan keyin ham chiqishi mumkin",
+     "Topilma faqat o‘lim sababini ko‘rsatadi, hayotiylikka aloqasi yo‘q"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Eritrotsit ekstravazatsiyasi o‘limdan keyin ham paydo bo‘lishi mumkin. Qon aylanishini saqlaydigan reanimatsiya harakatlari ham uni chaqirishi mumkin. Shuning uchun u ishonchli hayotiylik belgisi emas."
+   },
+   "source": {
+    "author": "Maiese A va boshq.",
+    "title": "State-of-the-Art on Wound Vitality Evaluation: A Systematic Review, International Journal of Molecular Sciences",
+    "page": "PMID 35805886"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-53-q10",
+   "question_i18n": {
+    "uz": "Pikro-Mallori bilan bo‘yalgan qon laxtasida fibrin qizil rangda ko‘rindi. Laxtaning taxminiy yoshi qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Taxminan 6 soatdan 12 soatgacha",
+     "Taxminan 30 daqiqadan 6 soatgacha",
+     "Taxminan 24 soatdan ortiq muddat",
+     "Rang vaqtga umuman bog‘liq emas"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Pikro-Mallori usulida fibrin 30 daqiqadan 6 soatgacha qizil, 6–12 soatda binafsha, 24 soatdan keyingi laxtalarda ko‘k rangga bo‘yaladi."
+   },
+   "source": {
+    "author": "Maiese A va boshq.",
+    "title": "State-of-the-Art on Wound Vitality Evaluation: A Systematic Review, International Journal of Molecular Sciences",
+    "page": "PMID 35805886"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-53-q11",
+   "question_i18n": {
+    "uz": "Jarohatdan bir necha daqiqa o‘tgan. Gistologiya jarohat hayotiymi yoki o‘limdan keyingimi, aniqlab bera olmayapti. Erta bosqich uchun qaysi yondashuv mosroq?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Gematoksilin-eozin bilan bo‘yab baholash",
+     "Real-time PCR bilan mRNA darajasini o‘lchash",
+     "Ko‘kargan rangini ko‘z bilan kuzatish",
+     "Berlin ko‘ki bilan temir izini qidirish"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Jarohatdan keyingi dastlabki daqiqa va soatlarda gistologiya jarohat qachon hosil bo‘lganini ayta olmaydi. Sitokin va fermentlar mRNA darajasi esa oqsil darajasi va gistomorfologiyadan oldin o‘zgaradi. Shu sababli mRNA asosidagi tahlillar erta bosqich uchun mos. Real-time PCR bunday o‘zgarishlarni sezgirlik bilan aniqlaydi."
+   },
+   "source": {
+    "author": "Li N va boshq.",
+    "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+    "page": "PMID 32490306"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-53-q12",
+   "question_i18n": {
+    "uz": "Laboratoriya bitta namunada bir vaqtning o‘zida ko‘plab oqsillarni tahlil qilmoqchi. Qaysi usul shu maqsadga mos keladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Oddiy gematoksilin-eozin bilan bo‘yash usuli",
+     "Elektr impedans spektroskopiyasi usuli",
+     "Ko‘kargan rangini vizual kuzatish usuli",
+     "Oqsil mikroarrayi (protein microarray) usuli"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Oqsil mikroarrayi sezgir yuqori o‘tkazuvchan usul bo‘lib, bitta namunada ko‘plab oqsil analitlarini bir vaqtda tahlil qilish imkonini beradi. Western blot va ELISA oqsil darajasini baholaydi va immunogistokimyodan sezgirroq. Lekin laboratoriyalar natijalarini taqqoslash jarayonlarning murakkabligi tufayli qiyin."
+   },
+   "source": {
+    "author": "Li N va boshq.",
+    "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+    "page": "PMID 32490306"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-53-q13",
+   "question_i18n": {
+    "uz": "Ikki laboratoriya bir xil jarohatni immunogistokimyo bilan miqdoriy baholab, turlicha natija oldi. Eng ehtimoliy asosiy sabab qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Operatorga bog‘liqlik va yagona protokol yo‘qligi",
+     "Usul murakkab va qimmat uskunani talab qilishi",
+     "Parafinli to‘qimalarda usulni qo‘llab bo‘lmasligi",
+     "Usul faqat o‘limdan keyingi jarohatda ishlashi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Immunogistokimyoda oqsil ifodasini miqdoriy baholash operatorga juda bog‘liq. Bo‘yash sifatiga ko‘p omillar ta’sir qiladi, sud patologiyasida esa mustahkam protokol va avtomatlashtirilgan o‘lchov hali ishlab chiqilmagan. Natijada xatolar yoki qiyin takrorlanadigan natijalar chiqishi mumkin. Usulning o‘zi esa murakkab uskunani talab qilmaydi va formalinda fiksatsiyalangan parafinli to‘qimalarda qo‘llanadi."
+   },
+   "source": {
+    "author": "Maiese A va boshq.",
+    "title": "State-of-the-Art on Wound Vitality Evaluation: A Systematic Review, International Journal of Molecular Sciences",
+    "page": "PMID 35805886"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-53-q14",
+   "question_i18n": {
+    "uz": "O‘lim yuz bergach, to‘qima darhol olindi va unda hayotiy reaksiyaga o‘xshash belgilar topildi. Bu qaysi hodisa bilan izohlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Chirishning kechki bosqichidagi o‘zgarishlar",
+     "Gistologik bo‘yoqdagi tasodifiy artefaktlar",
+     "Qoldiq hayot hodisalari (o‘limdan keyingi)",
+     "Adipotsir hosil bo‘lishining oqibatlari"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "O‘limdan keyin metabolik jarayonlar barcha hujayra va to‘qimalarda bir vaqtda to‘xtamaydi. Shuning uchun juda qisqa vaqt ichida ular hayotiy reaksiyalarga o‘xshab ko‘rinadi. Bu “qoldiq hayot hodisalari” deyiladi va hayotiy jarohatni erta o‘limdan keyingisidan ajratishni qiyinlashtiradi. Bunday holatda holat ma’lumotlari, tergov va kasallik tarixi ham sinchiklab baholanadi."
+   },
+   "source": {
+    "author": "Maiese A va boshq.",
+    "title": "State-of-the-Art on Wound Vitality Evaluation: A Systematic Review, International Journal of Molecular Sciences",
+    "page": "PMID 35805886"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-53-q15",
+   "question_i18n": {
+    "uz": "Avtopsiyada oq moddaning diffuz aksonal jarohati gumon qilinmoqda. Akson uzilishini ko‘rsatuvchi qaysi marker o‘ziga xos va sezgir deb ta’riflanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qon zardobidagi C-reaktiv oqsil darajasi",
+     "β-amiloid prekursor oqsili (β-amyloid precursor)",
+     "Mushakdagi MyoD oqsilining ifodalanishi",
+     "Teridagi fibronektin miqdorining oshishi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "β-amiloid prekursor oqsili neyron tanasidan akson chetiga tez tashish mexanizmi orqali ko‘chadi. Akson uzilganda u jarohat joyida aniqlanadi. Adabiyotda u aksonal shikastning o‘ziga xos va yuqori sezgir markeri sifatida ta’riflangan. Diffuz aksonal jarohat og‘ir oqibat bo‘lib, uni erta tashxislash qiyin."
+   },
+   "source": {
+    "author": "Li N va boshq.",
+    "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+    "page": "PMID 32490306"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-53-q16",
+   "question_i18n": {
+    "uz": "Jasad o‘limdan 2 sutka (48 soat) o‘tgach topildi. Yara yoshini baholash uchun postmortem barqarorligi jihatidan qaysi marker mos keladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kannabinoid retseptori 2-tur mRNKsi (messenjer RNK)",
+     "Matriks metalloproteinaza-2 mRNKsi (messenjer RNK)",
+     "SNAT2 aminokislota tashuvchisi mRNKsi (messenjer RNK)",
+     "TIMP-2 metalloproteinaza ingibitori mRNKsi (messenjer RNK)"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "SNAT2 mRNKsi o‘limdan keyin 48 soat barqaror qoladi. Kannabinoid retseptori 2-tur mRNKsi 3 soatda, MMP-2 va TIMP-2 mRNKlari 12 soatda sezilarli parchalanadi. Shuning uchun marker o‘limdan keyin ma’lum vaqt barqaror qoladiganlar orasidan tanlanadi."
+   },
+   "source": {
+    "author": "Li N va boshq.",
+    "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+    "page": "PMID 32490306"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-53-q17",
+   "question_i18n": {
+    "uz": "Reanimatsiya o‘tkazilgan o‘lgan odamda yara atrofida eritrotsitlar ekstravazatsiyasi topildi. Buni qanday izohlash to‘g‘ri?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Reanimatsiya qon aylanishini saqlab, o‘limdan keyingi ekstravazatni chaqirishi mumkin",
+     "Bu topilma jarohat tirikligida yetkazilganini yakuniy va aniq isbotlaydi",
+     "Bu topilma faqat jasadning chirish bosqichida paydo bo‘ladigan belgidir",
+     "Bu topilma qoldiq hayot hodisalari bo‘lishi mumkinligini butunlay inkor etadi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Reanimatsiya choralari qon aylanishini saqlab turadi va to‘qimalarda o‘limdan keyingi eritrotsit ekstravazatini keltirib chiqarishi mumkin. Shuning uchun bunday topilma jarohat tirikligida yetkazilganining yakuniy isboti bo‘la olmaydi. Sharoit ma’lumotlari va kasallik tarixi bilan birga baholanadi."
+   },
+   "source": {
+    "author": "Maiese A va boshq.",
+    "title": "State-of-the-Art on Wound Vitality Evaluation: A Systematic Review, International Journal of Molecular Sciences",
+    "page": "PMID 35805886"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-53-q18",
+   "question_i18n": {
+    "uz": "Bitta markerning ifodalanish shakli ikki cho‘qqili bo‘lib, yara yoshi bo‘yicha qarama-qarshi natija berdi. Qaysi yondashuv yara yoshi oralig‘ini toraytirgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bitta markerning o‘rtacha qiymatiga tayanib baho berish usuli",
+     "Faqat jarohat rangini ko‘z bilan kuzatib baho berish usuli",
+     "Faqat gematoksilin-eozin bo‘yog‘ini qo‘llab baho berish usuli",
+     "To‘rt mRNKli oshish, o‘zgarmaslik va pasayish modelini qo‘llash"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Sun va hamkasblari to‘rt mRNKdan iborat oshish, o‘zgarmaslik va pasayish modelini ishlab chiqdi. U yara yoshi oralig‘ini toraytirdi. Bitta marker esa ko‘pincha ikki yoki ko‘p cho‘qqili shakl tufayli ziddiyatli natija beradi."
+   },
+   "source": {
+    "author": "Li N va boshq.",
+    "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+    "page": "PMID 32490306"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-53-q19",
+   "question_i18n": {
+    "uz": "Laboratoriya raqamli WSI (to‘liq slayd tasviri) tizimini CAP (Amerika patologlar kolleji) tavsiyalari bo‘yicha validatsiya qilmoqda. Bir kuzatuvchining shisha slayd va WSI tashxislari mosligi qanday chegaradan yuqori bo‘lishi kerak?"
+   },
+   "options_i18n": {
+    "uz": [
+     "90 foizdan yuqori bo‘lishi lozim",
+     "95 foizdan yuqori bo‘lishi lozim",
+     "97,8 foizdan yuqori bo‘lishi lozim",
+     "99 foizdan yuqori bo‘lishi lozim"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "CAP tavsiyalariga ko‘ra bir kuzatuvchining shisha slayd va WSI tashxislari mosligi 95 foizdan yuqori bo‘lishi kerak. Baholash kamida 60 ta oddiy holatda, avval mikroskopda, ikki haftalik tanaffusdan keyin raqamli ko‘rgich bilan o‘tkaziladi. 97,8 foiz esa iForensic tadqiqotining o‘rtacha natijasi."
+   },
+   "source": {
+    "author": "Pigaiani N va boshq.",
+    "title": "iForensic, multicentric validation of digital whole slide images (WSI) in forensic histopathology setting according to the College of American Pathologists guidelines, International Journal of Legal Medicine",
+    "page": "PMID 39836212"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-53-q20",
+   "question_i18n": {
+    "uz": "Murakkab miya jarohati holatida boshqa shahardagi neyropatolog bilan maslahat kerak. WSI qaysi asosiy afzallikni beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Neyropatolog ishtirokiga ehtiyojni butunlay yo‘qotib tashxis qo‘yish",
+     "Tashxisni shisha slaydsiz va mikroskopsiz avtomatik chiqarib berish",
+     "Slaydni jismonan jo‘natmasdan mutaxassis bilan tez maslahatlashish",
+     "Skanerlash jarayoni vaqtini nolgacha qisqartirib vaqtni tejash"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Yuqori sifatli raqamli slaydlar turli joydagi mutaxassislarga tez yuboriladi. Bu geografik to‘siqlarni olib tashlaydi va namunani jismonan jo‘natishdagi kechikishsiz maslahat berish imkonini beradi. Neyropatolog kabi mutaxassislar ishtiroki zarurligicha qoladi."
+   },
+   "source": {
+    "author": "Pigaiani N va boshq.",
+    "title": "iForensic, multicentric validation of digital whole slide images (WSI) in forensic histopathology setting according to the College of American Pathologists guidelines, International Journal of Legal Medicine",
+    "page": "PMID 39836212"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Maiese A va boshq.",
+   "title": "State-of-the-Art on Wound Vitality Evaluation: A Systematic Review, International Journal of Molecular Sciences"
+  },
+  {
+   "author": "Li N va boshq.",
+   "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research"
+  },
+  {
+   "author": "Pigaiani N va boshq.",
+   "title": "iForensic, multicentric validation of digital whole slide images (WSI) in forensic histopathology setting according to the College of American Pathologists guidelines, International Journal of Legal Medicine"
+  }
+ ]
+}

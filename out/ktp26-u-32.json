@@ -76,7 +76,16 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: dalillarni sud-tibbiy tekshirish klinitsist-shifokorlarga yuklanmaydi. Ular faqat hodisa joyida topish, tavsiflash va namuna olishga jalb qilinishi mumkin.",
+          "text": "Diqqat: dalillarni sud-tibbiy tekshirish klinitsist-shifokorlarga yuklanmaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "303"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ular faqat hodisa joyida topish, tavsiflash va namuna olishga jalb qilinishi mumkin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -121,31 +130,35 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Sud-tibbiy laboratoriyalar",
-        "nodes": [],
-        "header": [
-          "Bo‘lim",
-          "Vazifasi"
+        "kind": "tree",
+        "root": "Sud-tibbiy laboratoriyalar",
+        "children": [
+          {
+            "label": "Sud-biologik",
+            "items": [
+              "Qon va maniy dog‘lari"
+            ]
+          },
+          {
+            "label": "Sud-gistologik",
+            "items": [
+              "A’zo va to‘qima kesmalari"
+            ]
+          },
+          {
+            "label": "Tibbiy kriminalistika",
+            "items": [
+              "Iz, o‘q, shaxs aynanligi"
+            ]
+          },
+          {
+            "label": "Sud kimyo",
+            "items": [
+              "Toksik moddalarni aniqlash"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Sud-biologik",
-            "Qon va maniy dog‘lari"
-          ],
-          [
-            "Sud-gistologik",
-            "A‘zo va to‘qima kesmalari"
-          ],
-          [
-            "Tibbiy kriminalistika",
-            "Iz, o‘q, shaxs aynanligi"
-          ],
-          [
-            "Sud kimyo",
-            "Toksik moddalarni aniqlash"
-          ]
-        ]
+        "caption": "Ashyoviy dalillarni tekshiruvchi bo‘limlar"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Qaysi biologik ob‘ektlar ajratmalarga kiradi? 2) Qon dog‘i qaysi laboratoriyada tekshiriladi? Doskada: to‘rt laboratoriya va ularning vazifasini jadval qilib chizing. Tipik xato: sud-biologik va sud-gistologik bo‘limlarning vazifalarini aralashtirish.",
       "uncertain": false
@@ -270,31 +283,37 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Qon izlari: tur va sharti",
-        "nodes": [],
-        "header": [
-          "Iz turi",
-          "Hosil bo‘lish sharti"
+        "kind": "tree",
+        "root": "Qon izlari turlari",
+        "children": [
+          {
+            "label": "Ko‘lmak",
+            "items": [
+              "Past singdiradigan material",
+              "Ko‘p qon"
+            ]
+          },
+          {
+            "label": "Singdirilgan",
+            "items": [
+              "Namni yaxshi oladigan material"
+            ]
+          },
+          {
+            "label": "Oqma",
+            "items": [
+              "Qiya yuza bo‘ylab oqqan qon"
+            ]
+          },
+          {
+            "label": "Sachra",
+            "items": [
+              "Keskin siltash, zarb",
+              "Arteriyadan fontan"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Ko‘lmak",
-            "Past singdiradigan material, ko‘p qon"
-          ],
-          [
-            "Singdirilgan",
-            "Namni yaxshi oladigan material"
-          ],
-          [
-            "Oqma",
-            "Qiya yuza bo‘ylab oqayotgan qon"
-          ],
-          [
-            "Sachra",
-            "Keskin siltash, zarb, arteriyadan fontan"
-          ]
-        ]
+        "caption": "Qon izlari: tur va hosil bo‘lish sharti"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun bir xil qon turli materialda turlicha iz qoldiradi? 2) Sachra izlar qaysi holatlarda paydo bo‘ladi? Doskada: jadvalni ko‘chiring va surtma hamda bosma izlarni qo‘shib chizing (sirpanish bor/yo‘q). Tipik xato: surtma va bosmani aralashtirish — farq sirpanishda."
     },
@@ -330,31 +349,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Dog‘ shakli tushish sharoitiga bog‘liq",
-        "nodes": [],
-        "header": [
-          "Sharoit",
-          "Dog‘ shakli"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "10–15 sm, gorizontal yuza",
+            "text": "Dumaloq, chetlari tekis"
+          },
+          {
+            "title": "Harakatdagi qism, qiya yuza",
+            "text": "Noksimon, undov belgisiga o‘xshash"
+          },
+          {
+            "title": "Tushish balandligi kattaroq",
+            "text": "Chetlari mayda tishsimon"
+          },
+          {
+            "title": "Balandlik yanada katta",
+            "text": "Atrofida sachralar (ikkilamchi dog‘lar)"
+          }
         ],
-        "rows": [
-          [
-            "10–15 sm balandlik, gorizontal yuza",
-            "Dumaloq, chetlari tekis"
-          ],
-          [
-            "Harakatdagi qism yoki qiya yuza",
-            "Noksimon, undov belgisiga o‘xshash"
-          ],
-          [
-            "Tushish balandligi kattaroq",
-            "Chetlari mayda tishsimon"
-          ],
-          [
-            "Balandlik yanada katta",
-            "Atrofida sachralar (ikkilamchi dog‘lar)"
-          ]
-        ]
+        "caption": "Dog‘ shakli tushish sharoitiga bog‘liq"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Noksimon dog‘ning ensiz uchi nimani ko‘rsatadi? 2) Sachralar qaysi sharoitda ko‘payadi? Doskada: to‘rt xil tomchi dog‘ining sxemasini chizdiring, ensiz uchiga strelka qo‘ying. Tipik xato: dog‘ shakli faqat balandlikka bog‘liq deb o‘ylash; harakat va yuzaning qiyaligi ham ta’sir qiladi."
     },
@@ -466,7 +480,7 @@
           ]
         ]
       },
-      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega apprеturali doka xavfli? 2) Qor namunasi nima uchun xonada eritiladi? Doskada: to‘rt substrat bo‘yicha usul–kontrol jadvalini to‘ldiring. Tipik xato: quritishni isitkich yonida yoki quyosh nurida o‘tkazish va kontrolni unutish."
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega appreturali doka xavfli? 2) Qor namunasi nima uchun xonada eritiladi? Doskada: to‘rt substrat bo‘yicha usul–kontrol jadvalini to‘ldiring. Tipik xato: quritishni isitkich yonida yoki quyosh nurida o‘tkazish va kontrolni unutish."
     },
     {
       "title": "Tezkor savol: namuna olish qoidalari",
@@ -589,36 +603,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Taxminiy sinamalar",
-        "nodes": [],
-        "header": [
-          "Sinama",
-          "Reagent",
-          "Musbat belgi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Vodorod peroksid",
+            "text": "3% eritma tomiziladi: oq ko‘pik"
+          },
+          {
+            "title": "Benzidin",
+            "text": "Benzidin + peroksid: ko‘k rang"
+          },
+          {
+            "title": "Fenolftalein",
+            "text": "+ 3% peroksid: 10–15 soniyada qizg‘ish rang"
+          },
+          {
+            "title": "Lyuminol",
+            "text": "Purkash yoki tomizish: havo rang nur, 1 daqiqagacha"
+          }
         ],
-        "rows": [
-          [
-            "Vodorod peroksid",
-            "3% eritma tomizish",
-            "Oq rangli ko‘pik"
-          ],
-          [
-            "Benzidin",
-            "Benzidin + vodorod peroksid",
-            "Ko‘k rang paydo bo‘ladi"
-          ],
-          [
-            "Fenolftalein",
-            "Fenolftalein + 3% peroksid",
-            "10-15 soniyada qizg‘ish rang"
-          ],
-          [
-            "Lyuminol",
-            "Eritma purkash yoki tomizish",
-            "Havo rang nur, 1 daqiqagacha"
-          ]
-        ]
+        "caption": "Qonga taxminiy sinamalar (nospetsifik)"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega taxminiy sinama hodisa joyida foydali, lekin xulosa uchun yetarli emas? 2) Fenolftaleinda rang 1 daqiqadan keyin paydo bo‘lsa, nega inobatga olinmaydi (havo yoki nur ta’sirida oksidlanish mumkin)? Doskada: jadvalni daftarga ko‘chirtiring va har sinama uchun rangni belgilang. Tipik xato: musbat taxminiy sinamani qon borligining qat’iy isboti deb hisoblash."
     },
@@ -654,36 +658,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ishonchli usullar solishtirmasi",
-        "nodes": [],
-        "header": [
-          "Usul",
-          "Mohiyati",
-          "Holati"
+        "kind": "tree",
+        "root": "Ishonchli usullar",
+        "children": [
+          {
+            "label": "Mikroskopik",
+            "items": [
+              "Eritrotsitlarni topish",
+              "Imkoni cheklangan"
+            ]
+          },
+          {
+            "label": "Mikrokristallik",
+            "items": [
+              "Gemoglobin kristallari",
+              "Sezgirligi past, qo‘llanilmaydi"
+            ]
+          },
+          {
+            "label": "Spektral",
+            "items": [
+              "To‘lqin yutilishi",
+              "Mikrospektral mikroskopda"
+            ]
+          },
+          {
+            "label": "Xromatografik",
+            "items": [
+              "Qog‘oz yoki silufol",
+              "Hozir asosiy usul"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Mikroskopik",
-            "Eritrotsitlarni topish",
-            "Imkoni cheklangan"
-          ],
-          [
-            "Mikrokristallik",
-            "Gemoglobin kristallari",
-            "Sezgirligi past, qo‘llanilmaydi"
-          ],
-          [
-            "Spektral",
-            "To‘lqin yutilishi",
-            "Mikrospektral mikroskopda"
-          ],
-          [
-            "Xromatografik",
-            "Qog‘oz yoki silufol plastinka",
-            "Hozir asosiy usul"
-          ]
-        ]
+        "caption": "Qon borligini ishonchli aniqlash"
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Nega taxminiy sinamalar qat’iy xulosa uchun yetarli emas? 2) Mikroskopik usul imkoniyati nega cheklangan (hujayralar ko‘rinishi qisqa vaqtda o‘zgaradi)? Doskada: ishonchli usullar jadvalini chizdiring va har birining holatini yozdiring. Tipik xato: Teyxman va Takayama sinamalarini hozir ham asosiy usul deb o‘ylash."
     },
@@ -827,31 +834,37 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Guruhiy tizimlar turlari",
-        "nodes": [],
-        "header": [
-          "Tizim turi",
-          "Misollar"
+        "kind": "tree",
+        "root": "Guruhiy tizimlar",
+        "children": [
+          {
+            "label": "Eritrotsitar",
+            "items": [
+              "AVO, Rezus (Rh)",
+              "MNSs, Lyuis (Le)"
+            ]
+          },
+          {
+            "label": "Zardob",
+            "items": [
+              "Gm, Hp, Gc"
+            ]
+          },
+          {
+            "label": "Ferment",
+            "items": [
+              "Nordon fosfataza",
+              "Fosfoglyukomutaza va b."
+            ]
+          },
+          {
+            "label": "Leykotsitar",
+            "items": [
+              "HLA antigenlari tizimi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Eritrotsitar",
-            "AVO, Rezus (Rh), MNSs, Lyuis (Le)"
-          ],
-          [
-            "Zardob",
-            "Gm, Hp, Gc"
-          ],
-          [
-            "Ferment",
-            "Nordon fosfataza, fosfoglyukomutaza va b."
-          ],
-          [
-            "Leykotsitar",
-            "HLA antigenlari tizimi"
-          ]
-        ]
+        "caption": "Qonning guruhiy tizimlari"
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: nima uchun sud-tibbiy tekshiruv bitta tizim bilan cheklanmaydi? Nima uchun AVO tizimidan boshlanadi? Doskada jadvalni chizdiring: har tizim turiga 1-2 misol yozdirilsin. Tipik xato: talabalar guruhiy tizimlarni faqat AVO va Rezus deb o‘ylaydi."
     },
@@ -973,26 +986,24 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "AVO: tibbiyot va sud-tibbiyot",
-        "nodes": [],
-        "header": [
-          "Muhit",
-          "Agglyutinogen",
-          "Agglyutinin"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Tibbiyot muassasasi",
+            "items": [
+              "Agglyutinogen: tekshiriladi",
+              "Agglyutinin: tekshirilmaydi"
+            ]
+          },
+          {
+            "title": "Sud-tibbiy tekshiruv",
+            "items": [
+              "Agglyutinogen: tekshiriladi",
+              "Agglyutinin: tekshiriladi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Tibbiyot muassasasi",
-            "Tekshiriladi",
-            "Tekshirilmaydi"
-          ],
-          [
-            "Sud-tibbiy tekshiruv",
-            "Tekshiriladi",
-            "Tekshiriladi"
-          ]
-        ]
+        "caption": "AVO tizimi: tibbiyot va sud-tibbiyot"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega sud-tibbiyotda AVO tizimining ikkala tarkibiy qismi ham o‘rganiladi? 2) AVO nega odatda birinchi tekshiriladi? Doskada: ikki ustunli solishtirish jadvalini (tibbiyot va sud-tibbiyot) chizdiring. Tipik xato: talabalar agglyutinogen va agglyutininni aralashtiradi, sud-tibbiyotda ham faqat agglyutinogen tekshiriladi deb o‘ylaydi."
     },
@@ -1218,7 +1229,7 @@
           ],
           [
             "Hudud",
-            "Tegishli shilliq qavat epiteliysi hujayralari",
+            "Shilliq qavat epiteliysi hujayralari",
             "Burun, o‘pka, ichak, bachadon, qin"
           ],
           [
@@ -1320,6 +1331,182 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Guruh mosligi xulosada qanday ifodalanishi kerak? 2) Qachon DNK-tekshiruviga murojaat qilinadi? Doskada chizish: ‘dog‘ → AVO → boshqa tizimlar → DNK’ ketma-ketligi. Tipik xato: faqat AVO mos kelganini ‘aynan shu shaxs’ deb yozish."
+    },
+    {
+      "title": "Maniy izlari ekspertizasi: hal etiladigan masalalar",
+      "bullets": [
+        {
+          "text": "Maniy izlarining sud-tibbiy ekspertizasida to‘rt masala hal etiladi: maniy borligi, tur mansubligi, guruhiy mansubligi, muayyan shaxsga mansubligi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "310"
+          }
+        },
+        {
+          "text": "Qon kabi maniy borligini aniqlashning taxminiy va ishonchli usullari mavjud.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "310"
+          }
+        },
+        {
+          "text": "Aksariyat holatlarda ekspertiza yechimiga maniyning tur mansubligi masalasi qo‘yilmaydi; juda kamdan-kam zarur bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "310"
+          }
+        },
+        {
+          "text": "Tur mansubligi morfologik usulda spermatozoid shakli va o‘lchamlari bo‘yicha, boshqa usullarda esa pretsipitatsiya reaksiyasi bilan hal etiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "310–311"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Maniy borligi",
+            "text": "Taqdim etilgan dog‘da maniy bormi"
+          },
+          {
+            "title": "2. Tur mansubligi",
+            "text": "Juda kam so‘raladi"
+          },
+          {
+            "title": "3. Guruhiy mansublik",
+            "text": "Odatda AVO tizimi bo‘yicha"
+          },
+          {
+            "title": "4. Muayyan shaxs",
+            "text": "Masalan, gumondorga tegishlimi"
+          }
+        ],
+        "caption": "Maniy izlari ekspertizasi masalalari"
+      },
+      "teacher_notes": "Vaqt: 3 daq."
+    },
+    {
+      "title": "Maniy borligini aniqlash usullari",
+      "bullets": [
+        {
+          "text": "Taxminiy usullar: mikrokristallik reaksiyalar (Florans, Barberio — hozir amaliy ahamiyati yo‘q), kartoshka sharbati reaksiyasi, ultrabinafsha nur.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "310"
+          }
+        },
+        {
+          "text": "Maniy kartoshka sharbatining eritrotsitlarni agglyutinatsiyalash xususiyatini tormozlaydi; tormozlanish bo‘lsa, reaksiya musbat.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "310"
+          }
+        },
+        {
+          "text": "Ultrabinafsha nurda maniy dog‘i och-havo rang flyuoressensiya beradi; sun’iy matolarda qiyin, chunki mato o‘zi ham nur berishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "310"
+          }
+        },
+        {
+          "text": "Ishonchli usul: morfologik — kamida bitta butun spermatozoid (bosh, tana, dum birga) topilsa natija musbat.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "310"
+          }
+        },
+        {
+          "text": "Azospermiya va nekrospermiyada qog‘ozda xromatografiya: xolin, spermin va nordon fosfataza birga topilsa maniy ishonchli.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "310"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Taxminiy usullar",
+            "items": [
+              "Kartoshka sharbati reaksiyasi",
+              "Ultrabinafsha nur (och-havo rang)",
+              "Florans, Barberio — ahamiyatsiz"
+            ]
+          },
+          {
+            "title": "Ishonchli usullar",
+            "items": [
+              "Morfologik: butun spermatozoid",
+              "Qog‘ozda xromatografiya",
+              "Xolin + spermin + nordon fosfataza"
+            ]
+          }
+        ],
+        "caption": "Maniy borligi: taxminiy va ishonchli usullar"
+      },
+      "teacher_notes": "Vaqt: 5 daq. Diqqat: spermatozoidning alohida bo‘laklari inobatga olinmaydi."
+    },
+    {
+      "title": "Maniyning guruhi va shaxsga mansubligi",
+      "bullets": [
+        {
+          "text": "Maniyning guruhiy mansubligi qondagidek guruhiy omillar bo‘yicha aniqlanadi; ko‘pincha AVO tizimi tekshiriladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "311"
+          }
+        },
+        {
+          "text": "Nomusga tegish va besoqolbozlik jinoyatlarida dog‘da jabrlanuvchining qin yoki to‘g‘ri ichak ajratmalaridagi antigenlari ham bo‘lishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "311"
+          }
+        },
+        {
+          "text": "Shu sababli ekspertizaga dog‘ materiali bilan birga gumondor va jabrlanuvchining qon va so‘lak namunalari taqdim etiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "311"
+          }
+        },
+        {
+          "text": "Murda tekshiruvida ajratuvchanlikni aniqlash uchun laboratoriyaga qon va o‘t suyuqligi olinadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "311"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Dog‘ materiali (maniy)",
+          "Gumondor: qon va so‘lak",
+          "Jabrlanuvchi: qon va so‘lak",
+          "Guruhiy omillar solishtiriladi"
+        ],
+        "caption": "Maniyning shaxsga mansubligini aniqlash"
+      },
+      "teacher_notes": "Vaqt: 4 daq. Diqqat: topilgan guruhiy omil jabrlanuvchiga ham tegishli bo‘lishi mumkin."
     },
     {
       "title": "So‘lak va ter tekshiruv ob’ektlari",
@@ -1615,27 +1802,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Lyuis tizimi va ajratuvchanlik",
-        "nodes": [],
-        "header": [
-          "Lyuis guruhi",
-          "Ajratuvchanlik"
+        "kind": "tree",
+        "root": "Lyuis tizimi",
+        "children": [
+          {
+            "label": "Le (a- b+)",
+            "items": [
+              "Ajratuvchi"
+            ]
+          },
+          {
+            "label": "Le (a+ b-)",
+            "items": [
+              "Ajratuvchi emas"
+            ]
+          },
+          {
+            "label": "Le (a- b-)",
+            "items": [
+              "Aniq belgilab bo‘lmaydi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Le (a- b+)",
-            "Ajratuvchi"
-          ],
-          [
-            "Le (a+ b-)",
-            "Ajratuvchi emas"
-          ],
-          [
-            "Le (a- b-)",
-            "Aniq belgilab bo‘lmaydi"
-          ]
-        ]
+        "caption": "Lyuis tizimi va ajratuvchanlik"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: so‘lak guruhi topilmasa, bu gumondorning aybsizligini bildiradimi? Doskada Lyuis jadvalini chizdiring. Tipik xato: Le (a+ b-) va Le (a- b+) ni almashtirib yuborish. Tezkor savol: murdada ajratuvchanlik uchun nima olinadi (manbaga ko‘ra qon va o‘t suyuqligi)?"
     },
@@ -1671,17 +1860,30 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "So‘lak namunasi yo‘li",
-        "nodes": [
-          "Og‘izni chayish",
-          "2-3 ml so‘lak yig‘ish",
-          "Sentrifuga, dokaga quyish",
-          "Xona haroratida quritish",
-          "Qog‘ozga alohida o‘rash"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Og‘izni chayish",
+            "text": "Namuna olishdan oldin"
+          },
+          {
+            "title": "2–3 ml so‘lak",
+            "text": "Probirkaga yig‘iladi"
+          },
+          {
+            "title": "Sentrifuga",
+            "text": "Cho‘kma usti suyuqlik dokaga quyiladi"
+          },
+          {
+            "title": "Quritish",
+            "text": "Xona harorati, quyoshdan uzoqda"
+          },
+          {
+            "title": "Qog‘ozga o‘rash",
+            "text": "Ob’ekt va kontrol alohida"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "So‘lak namunasi yo‘li"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: nima uchun kontrol namuna alohida o‘raladi? Doskada 5 bosqichli zanjirni chizdiring. Tipik xato: namunani isitkich yoki quyosh yonida quritish va kontrolni bir paketga solish. Tezkor savol: so‘lak namunasi nechta ml olinadi?"
     },
@@ -1851,12 +2053,12 @@
     {
       "question": "Hodisa joyida qor ustida qon izlari topildi. Namuna olishning to‘g‘ri birinchi bosqichi qaysi?",
       "options": [
-        "Qorni qoshiq bilan shisha idishga olish",
+        "Qor ustiga doka qo‘yib, darhol bosish",
         "Qorni isitkich yonida tezda eritish",
         "Qonli qorni qog‘ozga o‘rab quritish",
-        "Qor ustiga doka qo‘yib, darhol bosish"
+        "Qorni qoshiq bilan shisha idishga olish"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Qon izlari qorda topilganda qor qoshiq bilan shisha idishga (banka yoki chuqur tarelka) olinadi va xona sharoitida eritiladi. Hosil bo‘lgan suyuqlikdan doka bo‘lagiga namuna olinadi. Kontrol uchun toza qordan ham xuddi shu tartibda namuna olinadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1897,19 +2099,19 @@
       }
     },
     {
-      "question": "Tergovchi hodisa joyidagi devorda quruq qon dog‘ini topdi. Dog‘dan laboratoriya uchun namuna qanday olinadi?",
+      "question": "Maniy dog‘ida ishonchli morfologik usul qachon musbat natija beradi?",
       "options": [
-        "Toza skalpel bilan qirindi olinib, toza qog‘ozga o‘raladi",
-        "Dog‘ yangi bint bo‘lagi bilan artilib, isitkich yonida quritiladi",
-        "Dog‘ suv bilan yuvilib, suyuqlik probirkaga yig‘iladi",
-        "Dog‘li devor qismi namlanib, nam holda polietilenga solinadi"
+        "Bitta bo‘lsa ham butun spermatozoid (bosh, tana, dum birga) topilsa",
+        "Faqat spermatozoidning boshi topilsa",
+        "Faqat spermatozoid dumi topilsa",
+        "Kartoshka sharbati agglyutinatsiyasi kuchaysa"
       ],
       "correct_index": 0,
-      "explanation": "Qon singdirmaydigan qattiq yuzalardan (devor, mebel, avtomobil yuzasi) quruq dog‘dan skalpel yoki yupqa tig‘li pichoq bilan qirindi olinadi. Qirindi dorixonadagi kukun kabi toza qog‘ozga o‘raladi. Kontrol uchun xuddi shunday qirindi ifloslanmagan sohadan olinadi. Yangi bint va doka tarkibidagi appreturalar serologik reaksiyalarga salbiy ta’sir qiladi. Namunani isitkich yonida quritish ham mumkin emas.",
+      "explanation": "Morfologik usulda bitta bo‘lsa-da, butun spermatozoid topilsa natija musbat; bosh, tana yoki dumning alohida topilishi inobatga olinmaydi.",
       "source": {
         "author": "G‘iyosov Z.A.",
         "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-        "page": "304"
+        "page": "310"
       }
     },
     {
@@ -2073,19 +2275,19 @@
       }
     },
     {
-      "question": "Ekspertga yostiq jildi yuborildi. Undagi dog‘da ter borligi qaysi moddani aniqlash orqali hal etiladi?",
+      "question": "Azospermiya yoki nekrospermiyada maniy borligi qanday ishonchli aniqlanadi?",
       "options": [
-        "Amilaza fermentini aniqlash",
-        "Kreatinin va mochevinani aniqlash",
-        "Gelmint tuxumlarini aniqlash",
-        "Serin aminokislotasini aniqlash"
+        "Qog‘ozda xromatografiya: xolin, spermin va nordon fosfataza birga topilsa",
+        "Spermatozoidlarni mikroskopda sanash",
+        "Florans mikrokristallik reaksiyasi",
+        "Barberio mikrokristallik reaksiyasi"
       ],
-      "correct_index": 3,
-      "explanation": "Ter tarkibida serin aminokislotasi ko‘p bo‘ladi. Dog‘da ter borligi shu aminokislotani aniqlash bilan hal etiladi.",
+      "correct_index": 0,
+      "explanation": "Azospermiya va nekrospermiyada spermatozoid bo‘lmaydi; qog‘ozda xromatografiyada xolin, spermin va nordon fosfatazaning birga topilishi maniyni ishonchli ko‘rsatadi. Florans va Barberio reaksiyalari hozir amaliy ahamiyatga ega emas.",
       "source": {
         "author": "G‘iyosov Z.A.",
         "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-        "page": "311–312"
+        "page": "310"
       }
     },
     {

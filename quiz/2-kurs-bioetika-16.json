@@ -1,0 +1,590 @@
+{
+ "topic_id": "2-kurs-bioetika-16",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Nanotibbiyot va nanoetika (A10)",
+  "ru": "Nanotibbiyot va nanoetika (A10)",
+  "en": "Nanotibbiyot va nanoetika (A10)"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "2-kurs-bioetika-16-q01",
+   "question_i18n": {
+    "uz": "Laboratoriya materialida zarrachalarning 60 foizi (soni bo‘yicha) 1–100 nm o‘lchamda. Yevropa Komissiyasi tavsiyasiga ko‘ra bu material nanomaterialmi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Yo‘q, chunki barcha zarrachalar 1–100 nm bo‘lishi shart",
+     "Ha, chunki zarrachalarning kamida 50% soni 1–100 nm oralig‘ida",
+     "Yo‘q, chunki ta’rif zarrachalarning massasiga asoslanadi",
+     "Ha, faqat sirt yuzasi hajmga nisbatan 60 m²/sm³ dan kam bo‘lsa"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Yevropa Komissiyasi ta’rifida zarrachalarning kamida 50% (soni bo‘yicha o‘lcham taqsimoti) 1–100 nm oralig‘ida bo‘lishi kerak. Zarrachalar o‘lchami taqsimoti sirt yuzasi mezonidan ustun turadi, shuning uchun 60 m²/sm³ sharti majburiy emas."
+   },
+   "source": {
+    "author": "Soares et al.",
+    "title": "Nanomedicine: Principles, Properties, and Regulatory Issues, Frontiers in Chemistry",
+    "page": "PMID 30177965; DOI 10.3389/fchem.2018.00360"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "2-kurs-bioetika-16-q02",
+   "question_i18n": {
+    "uz": "Tadqiqotchilar atom va molekulyar darajada hodisalarni o‘rganmoqda va xossalar katta miqyosdagidan qanday farq qilishini tahlil qilmoqda. Bu faoliyat qaysi tushunchaga mos keladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Nanotexnologiya: nanoqurilmalarni loyihalash, ishlab chiqarish va qo‘llash",
+     "Nanotibbiyot: nanotexnologiyani faqat klinik amaliyotga qo‘llash sohasi",
+     "Nanotoksikologiya: nanomateriallarning biologik tizimga ta’sirini o‘rganish",
+     "Nanofan: nanotexnologiya uchun bilim bazasini tashkil etuvchi fundamental fan"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Nanofan atom, molekulyar va supramolekulyar darajadagi hodisalarni va materiyani boshqarishni fundamental o‘rganadi. U nanotexnologiya uchun bilim bazasi hisoblanadi. Nanotexnologiya esa shakl va o‘lchamni nazorat qilib tuzilmalar va qurilmalarni yaratish va qo‘llashni anglatadi."
+   },
+   "source": {
+    "author": "Ebbesen et al.",
+    "title": "Nanomedicine: Techniques, Potentials, and Ethical Implications, Journal of Biomedicine and Biotechnology",
+    "page": "PMID 17489016; DOI 10.1155/JBB/2006/51516"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "2-kurs-bioetika-16-q03",
+   "question_i18n": {
+    "uz": "Dori tashuvchi sifatida nanozarracha (nanoparticle) ishlatilmoqda. Ma’ruzadagi tasnifga ko‘ra u qaysi o‘lchamlilik sinfiga kiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Nol o‘lchamli (0D): barcha o‘lchamlari nanometr shkalasida",
+     "Bir o‘lchamli (1D): faqat bitta o‘lchami nanometr shkalasida",
+     "Ikki o‘lchamli (2D): faqat ikkita o‘lchami nanometr shkalasida",
+     "Uch o‘lchamli (3D): nanogullar va nanokublar kabi tuzilmalar"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Nol o‘lchamli nanomateriallarda barcha o‘lchamlar nanometr shkalasida bo‘ladi va nanozarrachalar shu sinfga misol qilib keltirilgan. Nanotayoqcha va nanosimlar bir o‘lchamli sinfga, nanovaraq va nanoqoplamalar ikki o‘lchamli sinfga misol sifatida ko‘rsatilgan."
+   },
+   "source": {
+    "author": "Ma et al.",
+    "title": "Nanotechnology in healthcare, and its safety and environmental risks, Journal of Nanobiotechnology",
+    "page": "PMID 39548502; DOI 10.1186/s12951-024-02901-x"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "2-kurs-bioetika-16-q04",
+   "question_i18n": {
+    "uz": "Oltin nanozarracha yuzasi polietilenglikol (PEG) polimeri bilan qoplandi. U kimyoviy tarkib bo‘yicha qaysi sinfga mos keladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Organik asosli nanomateriallar sinfiga",
+     "Uglerod asosli nanomateriallar sinfiga",
+     "Kompozit asosli (gibrid) nanomateriallar sinfiga",
+     "Faqat metall asosli noorganik nanomateriallar sinfiga"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Kompozit (gibrid) nanomateriallar metall, uglerod yoki organik materiallarning birikmasi hisoblanadi. Noorganik oltin yadroning organik polimer (PEG) qobig‘i bilan qoplanishi shunday yadro–qobiq tuzilmasiga misol bo‘ladi."
+   },
+   "source": {
+    "author": "Ma et al.",
+    "title": "Nanotechnology in healthcare, and its safety and environmental risks, Journal of Nanobiotechnology",
+    "page": "PMID 39548502; DOI 10.1186/s12951-024-02901-x"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "2-kurs-bioetika-16-q05",
+   "question_i18n": {
+    "uz": "Doxil® (doksorubitsinning PEGlangan liposomal shakli) o‘simtaga asosan qaysi mexanizm orqali yetkaziladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Passiv: o‘simta tomirlarining o‘tkazuvchanligidan foydalanuvchi EPR (kuchaygan o‘tkazuvchanlik va ushlanish) effekti",
+     "Faol: o‘simta hujayralaridagi transferrin retseptoriga bog‘lanish",
+     "Faol: HER2 retseptoriga yo‘naltirilgan antitana ligandi",
+     "Tashqi magnit maydon yordamida boshqariladigan yetkazish"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Doxil® passiv nishonga olish mexanizmi — EPR effektidan va yuzadagi PEG modifikatsiyasidan foydalanadi. Faol nishonga olish esa ligand–retseptor bog‘lanishiga asoslanadi. Faqat passiv EPR ga tayanish nishonga olish samaradorligini pasaytiradi."
+   },
+   "source": {
+    "author": "Ma et al.",
+    "title": "Nanotechnology in healthcare, and its safety and environmental risks, Journal of Nanobiotechnology",
+    "page": "PMID 39548502; DOI 10.1186/s12951-024-02901-x"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "2-kurs-bioetika-16-q06",
+   "question_i18n": {
+    "uz": "Onkolog PEGlangan liposomal doksorubitsin (Doxil) o‘simta to‘qimasiga yetarlicha nishonlanmayotganini va yurak toksikligi saqlanayotganini kuzatdi. Buning asosiy sababi nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Nishonlash faqat passiv EPR effektiga tayanadi, faol nishonlash yo‘q",
+     "Nishonlash faqat albumin va SPARC retseptoriga faol bog‘lanishga tayanadi",
+     "PEG qobig‘i yo‘qligi sababli MPS dorini tezda qondan tozalab tashlaydi",
+     "Doksorubitsin nanozarrachaga kovalent bog‘lanmay, faqat adsorbsiya bilan yuklangan"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Doxil – PEGlangan liposomal doksorubitsin bo‘lib, o‘simtaga faqat passiv EPR effekti orqali to‘planadi. Faol nishonlash kuchsiz, shuning uchun nishonga olish samaradorligi past va asl doksorubitsinga o‘xshash kardiotoksiklik saqlanadi. Aksincha, PEG qobig‘i dorini MPS tozalashidan himoya qiladi. Albumin va SPARC mexanizmi esa Abraxane’ga xos."
+   },
+   "source": {
+    "author": "Ma et al.",
+    "title": "Nanotechnology in healthcare, and its safety and environmental risks, Journal of Nanobiotechnology",
+    "page": "PMID 39548502"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "2-kurs-bioetika-16-q07",
+   "question_i18n": {
+    "uz": "Tadqiqotchi tirik hujayradagi bitta organellani qo‘shni organellalarga va hujayra hayotchanligiga zarar bermasdan o‘chirmoqchi. Qaysi usul eng mos?"
+   },
+   "options_i18n": {
+    "uz": [
+     "AFM nanoinasini yadro membranasi orqali aniq kiritish",
+     "Femtosekundli yaqin infraqizil lazer bilan nishonli kesish",
+     "Mikrokapillyar orqali oqsilni hujayraga mikroinyeksiya qilish",
+     "Oddiy nanosekundli lazer bilan to‘qimani qizdirib bug‘lantirish"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Femtosekundli lazer qo‘shni to‘qimani qizdirmasdan, kimyoviy bog‘larni uzib, toza teshik hosil qiladi. Tirlapur va König usulida alohida plastidni qo‘shni organellalarga va hujayra hayotchanligiga ta’sir qilmasdan butunlay o‘chirishgan. AFM nanoinasi esa yadroga aniq kirish va ta’sir qilish uchun xizmat qiladi, nanosekundli lazerda esa issiqlik zarari bo‘ladi."
+   },
+   "source": {
+    "author": "Ebbesen et al.",
+    "title": "Nanomedicine: Techniques, Potentials, and Ethical Implications, Journal of Biomedicine and Biotechnology",
+    "page": "PMID 17489016"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "2-kurs-bioetika-16-q08",
+   "question_i18n": {
+    "uz": "Hujayra nanomaterial bilan to‘qnashganda ROS ko‘payib, qaytarilgan glutation tugab bordi. Keyingi bosqichda nima yuz beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Glutation zaxirasi qayta tiklanib, himoya mexanizmlari kuchayadi",
+     "Katalaza superoksid anionini vodorod peroksidga aylantira boshlaydi",
+     "Radikallarni zararsizlantirish pasayib, oksidlovchi stress rivojlanadi",
+     "Erkin radikallar va membrana yog‘ kislotalarining o‘zaro ta’siri to‘xtaydi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "ROS ortishi glutationni kamaytiradi, erkin radikallarni neytrallash qobiliyati pasayadi va oksidlovchi stress boshlanadi. Radikallar membrana yog‘ kislotalari bilan o‘zaro ta’sirlashadi, bu hujayra jonliligiga putur yetkazadi. Superoksidni vodorod peroksidga aylantiradigan ferment superoksiddismutaza, katalaza esa uni suv va kislorodga aylantiradi."
+   },
+   "source": {
+    "author": "Soares et al.",
+    "title": "Nanomedicine: Principles, Properties, and Regulatory Issues, Frontiers in Chemistry",
+    "page": "PMID 30177965"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "2-kurs-bioetika-16-q09",
+   "question_i18n": {
+    "uz": "Preklinik tadqiqotda nanozarracha o‘lchami 20–30 nm dan kichik bo‘lib chiqdi. Uning organizmdan tez chiqarilishi qaysi yo‘l bilan kutiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Jigar va taloqdagi mononuklear fagotsitar tizim orqali ushlanib",
+     "Faqat makrofaglar fagotsitozi orqali, buyrakdan o‘tmasdan chiqib",
+     "Limfa tugunlarida cheksiz to‘planib, organizmda doimiy qolib",
+     "Buyrak orqali siydik bilan tezda ajralib chiqish yo‘li bilan"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Manbaga ko‘ra 20–30 nm dan kichik nanozarrachalar buyrak ekskretsiyasi orqali tez chiqariladi. 200 nm va undan yirik zarrachalarni esa jigar, taloq va suyak iligidagi mononuklear fagotsitar (retikuloendotelial) tizim ko‘proq ushlaydi. Tozalanish o‘lcham va sirt xossasiga bog‘liq."
+   },
+   "source": {
+    "author": "Soares et al.",
+    "title": "Nanomedicine: Principles, Properties, and Regulatory Issues, Frontiers in Chemistry",
+    "page": "PMID 30177965"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "2-kurs-bioetika-16-q10",
+   "question_i18n": {
+    "uz": "Nanotoksiklikni baholashda in silico (kompyuter) yondashuvining asosiy afzalligi nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Organizmning barcha kompensator mexanizmlarini to‘liq hisobga oladi",
+     "Ko‘proq nanomaterial va yakuniy nuqtani tez va etik muammosiz tahlil qiladi",
+     "Hayvon tajribalarini butunlay almashtirib, uchinchi bosqichni yakunlaydi",
+     "Hujayra jonliligini faqat mitoxondriya faolligi bo‘yicha baholaydi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "In silico usullar toksikologiyani hisoblash vositalari va biostatistika bilan birlashtiradi. Ular ko‘proq nanomaterialni va turli yakuniy nuqtalarni tahlil qilishga imkon beradi, vaqt kam ketadi va hayvon ishlatish bilan bog‘liq etik savollar chetlab o‘tiladi. Kompensator mexanizmlarni hisobga olmaslik esa in vitro usulning kamchiligi sifatida keltirilgan."
+   },
+   "source": {
+    "author": "Soares et al.",
+    "title": "Nanomedicine: Principles, Properties, and Regulatory Issues, Frontiers in Chemistry",
+    "page": "PMID 30177965"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "2-kurs-bioetika-16-q11",
+   "question_i18n": {
+    "uz": "Ikki nanomaterial solishtirilmoqda: biri 50 nm, ikkinchisi 300 nm. Nanotoksikologik tasniflash tizimining o‘lcham mezoniga ko‘ra qaysi biri yuqoriroq toksiklik xavfi bilan baholanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "300 nm li material, chunki uni faqat makrofaglar qamrab oladi",
+     "50 nm li material, chunki uni har qanday hujayra qamrab oladi",
+     "Ikkalasi teng, chunki xossalar 100 nm da keskin o‘zgaradi",
+     "300 nm li material, chunki u hujayra yuzasiga ko‘proq yopishadi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Keck va Myuller tizimida 100 nm dan kichik materiallar endotsitoz orqali istalgan hujayraga kira oladi, 100 nm dan kattalarini esa asosan makrofaglar qamrab oladi. Shu sabab kichik zarrachalar yuqoriroq toksiklik xavfi bilan bog‘lanadi. Yuzaga yopishish ham o‘lcham kichraygani sari kuchayadi, 100 nm chegarasi esa shartli qiymat."
+   },
+   "source": {
+    "author": "Soares et al.",
+    "title": "Nanomedicine: Principles, Properties, and Regulatory Issues, Frontiers in Chemistry",
+    "page": "PMID 30177965; DOI 10.3389/fchem.2018.00360"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "2-kurs-bioetika-16-q12",
+   "question_i18n": {
+    "uz": "Kichik hajmda yaxshi natija bergan nanodori yirik masshtabda ishlab chiqarilganda seriyalar orasida sifat farqi paydo bo‘ldi. Bunga eng ehtimoliy sabab nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Zarrachalarning birlamchi o‘lchami avtomatik ravishda 1–100 nm chegarasidan chiqib ketishi",
+     "Sifat faqat tayyor mahsulotni sinash orqali yaratilgani sababli farq paydo bo‘lishi",
+     "Yirik hajmda jarayonni boshqarish osonlashgani tufayli o‘zgaruvchanlik ortishi",
+     "Jarayondagi kichik og‘ishlar muhim sifat atributlarini (CQA) belgilangan oraliqdan chiqargani"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Kichik hajmda formulani nazorat qilish oson, yirik hajmda esa ishlab chiqarishdagi nozik o‘zgarishlar fizik-kimyoviy xossalarni, ya’ni muhim sifat atributlarini (Critical Quality Attributes, CQA) o‘zgartirishi mumkin. Natijada seriyalararo farq paydo bo‘ladi. QbD (Quality-by-Design) yondashuvida sifat sinash bilan emas, jarayonni tushunish orqali ta’minlanadi."
+   },
+   "source": {
+    "author": "Soares et al.",
+    "title": "Nanomedicine: Principles, Properties, and Regulatory Issues, Frontiers in Chemistry",
+    "page": "PMID 30177965; DOI 10.3389/fchem.2018.00360"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "2-kurs-bioetika-16-q13",
+   "question_i18n": {
+    "uz": "Ebbesen va Jensen fikricha, nazoratsiz o‘z-o‘zidan yig‘ilish xavfi haqidagi qo‘rquv nima uchun hozircha ilmiy fantastikaga yaqin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "O‘z-o‘zidan yig‘ilish kuchlari kimyoviy bog‘lardan kuchsizroq, tadqiqotlar esa uglerod nanotrubkalari darajasida",
+     "Nanozarrachalar atrof-muhitda umuman to‘planmasligi laboratoriya sharoitida isbotlangani uchun",
+     "Molekulalar o‘z-o‘zidan yig‘ilishda eng yuqori energiya holatiga intilgani uchun jarayon beqaror",
+     "Barcha nanotizimlar oldindan zavodda yig‘ilgani sababli o‘z-o‘zidan yig‘ilish umuman uchramasligi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Mualliflarga ko‘ra, o‘z-o‘zidan yig‘ilishdagi kuchlar molekulalarni ushlab turuvchi bog‘lardan zaifroq, hozirgi tadqiqotlar esa uglerod nanotrubkalari kabi tizimlar darajasida. Nazoratsiz yig‘ilishgacha uzoq yo‘l bor. Molekulalar eng past energiya holatiga intiladi, eng yuqorisiga emas. Hujjatlashtirilgan xavflarga jiddiy qarash lozim."
+   },
+   "source": {
+    "author": "Ebbesen et al.",
+    "title": "Nanomedicine: Techniques, Potentials, and Ethical Implications, Journal of Biomedicine and Biotechnology",
+    "page": "PMID 17489016; DOI 10.1155/JBB/2006/51516"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "2-kurs-bioetika-16-q14",
+   "question_i18n": {
+    "uz": "Dori tashuvchi nanozarrachalar vazifasini bajargach tanada nazoratsiz qolishi xavotir tug‘dirmoqda, teskari aloqa mexanizmi esa yetarli emas. Qaysi dizayn yechimi xavfni kamaytirishi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Zarrachalarni biologik parchalanmaydigan materialdan yasab, tanada uzoq saqlash",
+     "Dozani oshirib, zarrachalar vazifasini tezroq bajarishini ta’minlash",
+     "Zarrachalarni tabiiy moddalardan yasab, almashinuv va chiqarish yo‘li bilan yo‘qotish",
+     "Zarrachalar yuzasiga qo‘shimcha ligandlar qo‘shib, hujayraga kirishini kuchaytirish"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Habertsettl fikricha, nazoratdan chiqish xavfini kamaytirish uchun zarrachalarni biologik parchalanadigan yoki tabiiy moddalardan yasash mumkin. Ular almashinuv va ekskretsiya orqali tanadan chiqariladi. Muqobil yo‘l: vazifadan keyin yig‘ib olish uchun «homing» qurilmalar. Parchalanmaydigan zarrachalar tanada qolib, xavfni oshiradi."
+   },
+   "source": {
+    "author": "Ebbesen et al.",
+    "title": "Nanomedicine: Techniques, Potentials, and Ethical Implications, Journal of Biomedicine and Biotechnology",
+    "page": "PMID 17489016; DOI 10.1155/JBB/2006/51516"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "2-kurs-bioetika-16-q15",
+   "question_i18n": {
+    "uz": "Beauchamp va Childress nazariyasida zarar yetkazmaslik (nonmaleficence) va yaxshilik qilish (beneficence) majburiyatlari qat’iylik jihatidan qanday nisbatda?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ikkalasi teng qat’iylikka ega, ular simmetrik tarzda muvozanatlanadi",
+     "Zarar yetkazmaslik majburiyati yaxshilik qilish majburiyatidan qat’iyroq hisoblanadi",
+     "Yaxshilik qilish majburiyati zarar yetkazmaslik majburiyatidan qat’iyroq hisoblanadi",
+     "Ikkalasi ham faqat faol harakat qilishni talab qiladi, shuning uchun farqi yo‘q"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Mualliflar Beauchamp va Childressga tayanib, bu ikki tamoyilning muvozanati simmetrik emasligini yozadi. Zarar yetkazmaslik majburiyati qat’iyroq: u faqat zarar keltiruvchi harakatdan ongli ravishda o‘zini tiyishni talab qiladi. Yaxshilik qilish esa zararning oldini olish va yaxshilikni ilgari surish uchun faol qadamlar talab qiladi. Xavf-foyda tahlili shu sabab etik masaladir."
+   },
+   "source": {
+    "author": "Ebbesen et al.",
+    "title": "Nanomedicine: Techniques, Potentials, and Ethical Implications, Journal of Biomedicine and Biotechnology",
+    "page": "PMID 17489016; DOI 10.1155/JBB/2006/51516"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "2-kurs-bioetika-16-q16",
+   "question_i18n": {
+    "uz": "Klinika bemorning jinsiy hujayralarini shunday o‘zgartirmoqchi: gen o‘zgarishi uning farzandlariga ham o‘tadi. 1996-yilgi Yevropa Kengashi konvensiyasi bunga qanday qaraydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bemor rozilik bersa, ruxsat etiladi",
+     "Taqiqlanadi: avlod genomi o‘zgartirilmasligi kerak",
+     "Zarrachalar xavfsiz bo‘lsa, ruxsat etiladi",
+     "Faqat ildiz hujayralarda ruxsat etiladi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Konvensiya genomga aralashuvni faqat profilaktika, diagnostika yoki davolash maqsadida va avlod genomini o‘zgartirmasa ruxsat etadi. Germinal hujayralardagi terapiya esa avlodga o‘tadi, xatolar qaytarilmaydi, shuning uchun taqiqlanadi."
+   },
+   "source": {
+    "author": "Ebbesen et al.",
+    "title": "Nanomedicine: Techniques, Potentials, and Ethical Implications, Journal of Biomedicine and Biotechnology",
+    "page": "PMID 17489016; DOI 10.1155/JBB/2006/51516"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "2-kurs-bioetika-16-q17",
+   "question_i18n": {
+    "uz": "Quyidagi misollardan qaysi biri davolash va ‘yaxshilash’ (enhancement) orasidagi chegara noaniqligini eng yaxshi ko‘rsatadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Infraqizil nurni ko‘rish qobiliyatini berish",
+     "Hujayrani nanoigna bilan jarrohlik qilish",
+     "Ildiz hujayradan sog‘lom hujayra tayyorlash",
+     "Emlash orqali immun tizimini kuchaytirish"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Emlash kasallikning oldini oladi, lekin immun tizimi hujayra va antitanalar ishlab chiqarishini kuchaytiradi. Shu sababli oddiy tibbiy aralashuvlar ham normal funksiyani yaxshilaydi va chegara xiralashadi."
+   },
+   "source": {
+    "author": "Ebbesen et al.",
+    "title": "Nanomedicine: Techniques, Potentials, and Ethical Implications, Journal of Biomedicine and Biotechnology",
+    "page": "PMID 17489016; DOI 10.1155/JBB/2006/51516"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "2-kurs-bioetika-16-q18",
+   "question_i18n": {
+    "uz": "Bir mamlakatda embrional ildiz hujayra tadqiqoti faqat in vitro urug‘lantirish (IVF) dan ortib qolgan embrionlarda ruxsat etilgan. Bu qaysi pozitsiyaga mos?"
+   },
+   "options_i18n": {
+    "uz": [
+     "O‘rta pozitsiya",
+     "Konservativ pozitsiya",
+     "Liberal pozitsiya",
+     "Eng liberal ko‘rinish"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Daniya, Finlyandiya, Gresiya, Gollandiya, Ispaniya va Vengriya o‘rta pozitsiyada: tadqiqot faqat IVFdan ortgan hujayralarda mumkin. Konservativ mamlakatlarda tadqiqot taqiqlangan, liberal mamlakatlarda tadqiqot uchun maxsus olingan hujayralarga ham ruxsat berilgan."
+   },
+   "source": {
+    "author": "Ebbesen et al.",
+    "title": "Nanomedicine: Techniques, Potentials, and Ethical Implications, Journal of Biomedicine and Biotechnology",
+    "page": "PMID 17489016; DOI 10.1155/JBB/2006/51516"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "2-kurs-bioetika-16-q19",
+   "question_i18n": {
+    "uz": "Ikki holat ko‘rib chiqilmoqda. Wivel va Walters bo‘yicha qaysi biri germinal o‘zgartirishni asoslashi mumkin bo‘lgan siyrak holat?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ikkala ota-ona retsessiv kasallik bo‘yicha geterozigota",
+     "Faqat bitta ota-onada retsessiv kasallik bor",
+     "Ikkala ota-onada ham retsessiv otosom kasallik bor",
+     "Ota-onalar sog‘lom va kasallik tashuvchisi emas"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Ikkala ota-ona retsessiv otosom kasallikka chalingan bo‘lsa, farzandlarda uning kutilish ehtimoli 100%. Bu juda siyrak holat. Geterozigota ota-onalar esa ko‘proq uchraydi, ularda skrining va tanlab abort muqobil bo‘lgan."
+   },
+   "source": {
+    "author": "Ebbesen et al.",
+    "title": "Nanomedicine: Techniques, Potentials, and Ethical Implications, Journal of Biomedicine and Biotechnology",
+    "page": "PMID 17489016; DOI 10.1155/JBB/2006/51516"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "2-kurs-bioetika-16-q20",
+   "question_i18n": {
+    "uz": "Nanomedisina preparati Yevropa Ittifoqida ro‘yxatdan o‘tgach, uning har bir davlatda klinik amaliyotga kirishi nima bilan cheklanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Narx va qoplash qarorlarini har bir a‘zo davlat alohida qabul qilishi",
+     "Barcha davlatlarda yagona narx belgilanishi",
+     "Preparat faqat bitta davlatda sotilishi mumkinligi",
+     "Narx masalasini faqat ishlab chiqaruvchi hal qilishi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Ro‘yxatdan o‘tgandan keyin ham narx va qoplash qarorlari har bir a‘zo davlatda alohida qabul qilinadi. Shuning uchun xavfsizlik, samaradorlik va xarajat samaradorligi haqida ma‘lumot beradigan sog‘liqni saqlash texnologiyalarini baholash (HTA) jarayoni rivojlantirilmoqda."
+   },
+   "source": {
+    "author": "Soares et al.",
+    "title": "Nanomedicine: Principles, Properties, and Regulatory Issues, Frontiers in Chemistry",
+    "page": "PMID 30177965; DOI 10.3389/fchem.2018.00360"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Soares et al.",
+   "title": "Nanomedicine: Principles, Properties, and Regulatory Issues, Frontiers in Chemistry"
+  },
+  {
+   "author": "Ebbesen et al.",
+   "title": "Nanomedicine: Techniques, Potentials, and Ethical Implications, Journal of Biomedicine and Biotechnology"
+  },
+  {
+   "author": "Ma et al.",
+   "title": "Nanotechnology in healthcare, and its safety and environmental risks, Journal of Nanobiotechnology"
+  }
+ ]
+}

@@ -67,27 +67,22 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Epidermis to‘liq nekrozi",
-        "nodes": [],
-        "header": [
-          "Harorat",
-          "Vaqt"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "44 °C",
+            "value": "6 soat"
+          },
+          {
+            "label": "60 °C",
+            "value": "5 soniya"
+          },
+          {
+            "label": "70 °C",
+            "value": "< 1 soniya"
+          }
         ],
-        "rows": [
-          [
-            "44 °C",
-            "6 soat"
-          ],
-          [
-            "60 °C",
-            "5 soniya"
-          ],
-          [
-            "70 °C",
-            "1 soniyadan kam"
-          ]
-        ]
+        "caption": "Epidermis to‘liq nekrozi"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Harorat va vaqt shikastni qanday belgilaydi? Doskada: 44 / 60 / 70 °C jadvali. Tipik xato: faqat haroratga e’tibor berib, ta’sir vaqtini unutish."
     },
@@ -148,15 +143,22 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Kuyish darajalari",
-        "nodes": [
-          "I: eritema, pufak",
-          "II: dermis ochiladi",
-          "III: teri osti, ko‘mirlanish"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "I daraja",
+            "text": "Eritema, pufaklar"
+          },
+          {
+            "title": "II daraja",
+            "text": "Epidermis to‘liq kuyadi, dermis ochiladi"
+          },
+          {
+            "title": "III daraja",
+            "text": "Teri osti, ko‘mirlanish, mushak va suyak"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Uch daraja (tarixiy tasnif)"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Darajalar bo‘yicha farqni belgilar bilan ayting. Doskada: uch daraja ketma-ketligi. Tipik xato: qisman va to‘liq qalinlikdagi kuyishni aralashtirish."
     },
@@ -229,6 +231,145 @@
       "teacher_notes": "Vaqt: 4 daq. Muhokama: «To‘qqiz qoidasi»ni amalda qanday qo‘llaymiz? Doskada: foiz ifodasi. Tipik xato: faqat chuqurlikka qarab xavfni baholash."
     },
     {
+      "title": "Kuyish manbalari bo‘yicha xususiyatlar",
+      "bullets": [
+        {
+          "text": "Alanga kuyishi quruq, zich, jigarrang-qo‘ng‘ir, ba’zan ko‘mirlangan; yuzda kuyishga nafas yo‘llari kuyishi qo‘shiladi, kuya va kuygan soch bor.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "120"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Issiq suyuqlik va bug‘ kuyishi odatda chuqur emas, tananing old yuzasida, oqib tushgan izlarga o‘xshaydi; kiyimda suyuqlik qoldig‘i bo‘ladi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "120"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qaynoq smola kichik maydonda IV daraja kuyish beradi; cho‘g‘langan jism chuqur, mahalliy, jism shaklini takrorlaydi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "120"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kuyishning tirikligida bo‘lganini ochiq joylarda kuyish, qonda karboksigemoglobin, nafas yo‘llarida kuya, ko‘z qovog‘i burmalarida kuya yo‘qligi ko‘rsatadi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "120"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Alanga",
+            "items": [
+              "Quruq, zich, jigarrang",
+              "Kuya, soch kuygan",
+              "Kiyim yongan"
+            ]
+          },
+          {
+            "title": "Issiq suyuqlik, bug‘",
+            "items": [
+              "Chuqur emas",
+              "Oldingi yuzada",
+              "Oqib tushgan izlar"
+            ]
+          },
+          {
+            "title": "Smola, cho‘g‘ jism",
+            "items": [
+              "Smola: IV daraja, kichik maydon",
+              "Jism: chuqur, shaklini takrorlaydi"
+            ]
+          }
+        ],
+        "caption": "Kuyish manbasiga qarab"
+      },
+      "teacher_notes": "Manba Kharin (OCR matni); bet raqamlari kitob betiga mos."
+    },
+    {
+      "title": "Kuyishning xavfli maydoni va kuyish kasalligi",
+      "bullets": [
+        {
+          "text": "Hayot uchun xavfli: III(b)–IV daraja kuyish kamida 15%, III(a) kamida 20%, II daraja kamida 30% maydonda.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "119"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nafas yo‘llarining shish va ovoz yorig‘i torayishi bilan kuyishi ham hayot uchun xavfli hisoblanadi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "119"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kuyish kasalligi davrlari: kuyish shoki, toksemiya, septikotoksemiya, kuyish holsizlanishi, reabilitatsiya.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "120"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘lim sabablari ko‘pincha kuyish shoki, uglerod oksidi bilan zaharlanish, kuyish holsizlanishi va yiringli-septik asoratlar.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "121"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "III(b)–IV daraja",
+            "value": "≥ 15",
+            "unit": "% maydon"
+          },
+          {
+            "label": "III(a) daraja",
+            "value": "≥ 20",
+            "unit": "% maydon"
+          },
+          {
+            "label": "II daraja",
+            "value": "≥ 30",
+            "unit": "% maydon"
+          },
+          {
+            "label": "Kuyish boshlanishi",
+            "value": "> 50",
+            "unit": "°C teri"
+          }
+        ],
+        "caption": "Xavfli maydon chegaralari"
+      },
+      "teacher_notes": "Davrlar ketma-ketligi: shok, toksemiya, septikotoksemiya, holsizlanish, reabilitatsiya."
+    },
+    {
       "title": "Qaynoq suyuqlik shikasti naqshi",
       "bullets": [
         {
@@ -241,7 +382,16 @@
           "uncertain": false
         },
         {
-          "text": "Immersiyada yuqori «suyuqlik sathi» chizig‘i; sachragan tomchilar nuqtali o‘choqlar; oqib tushgan izlar tortishish yo‘nalishida — jabrlanuvchi vaziyatini ko‘rsatadi.",
+          "text": "Immersiyada yuqori «suyuqlik sathi» chizig‘i; sachragan tomchilar nuqtali o‘choqlar.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "170–171"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Oqib tushgan izlar tortishish yo‘nalishida — jabrlanuvchi vaziyatini ko‘rsatadi.",
           "source": {
             "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
             "title": "Simpson's Forensic Medicine, 13th ed.",
@@ -294,31 +444,27 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Bolalarda qaynoq suyuqlikdan jarohat",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Tasodifiy",
-          "Qasddan"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Tasodifiy",
+            "items": [
+              "«To‘kilish» jarohati",
+              "Chegara va chuqurlik notekis",
+              "«Qo‘lqop va paypoq» yo‘q"
+            ]
+          },
+          {
+            "title": "Qasddan",
+            "items": [
+              "Majburiy botirish",
+              "Simmetrik, chegara aniq",
+              "«Qo‘lqop va paypoq» bor",
+              "Burmalar va dumba saqlanadi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Mexanizm",
-            "To‘kilish",
-            "Majburiy botirish"
-          ],
-          [
-            "Chegara",
-            "Notekis",
-            "Aniq, simmetrik"
-          ],
-          [
-            "Qo‘lqop va paypoq",
-            "Yo‘q",
-            "Bor"
-          ]
-        ]
+        "caption": "Bolalarda qaynoq suyuqlikdan jarohat"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Tasodifiy va qasddan jarohatni qaysi belgilar ajratadi? Doskada: ikki ustun. Tipik xato: bitta belgiga qarab xulosa qilish; boshqa shikastlar ham baholanishi lozim."
     },
@@ -335,7 +481,16 @@
           "uncertain": false
         },
         {
-          "text": "Kuyish maydoni 20% dan oshsa, yallig‘lanish mediatorlari o‘tkir o‘pka shikasti va ko‘p a’zolar yetishmovchiligiga olib kelishi mumkin; kuygan teri infeksiyadan himoya qilmaydi.",
+          "text": "Kuyish maydoni 20% dan oshsa, yallig‘lanish mediatorlari o‘tkir o‘pka shikasti va ko‘p a’zolar yetishmovchiligiga olib kelishi mumkin.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "172"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kuygan teri infeksiyadan himoya qilmaydi.",
           "source": {
             "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
             "title": "Simpson's Forensic Medicine, 13th ed.",
@@ -353,7 +508,27 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Kuyish maydoni (xavf)",
+            "value": "> 20",
+            "unit": "%"
+          },
+          {
+            "label": "Gipertermiya",
+            "value": "> 40",
+            "unit": "°C"
+          },
+          {
+            "label": "Tana harorati normasi",
+            "value": "~ 37",
+            "unit": "°C"
+          }
+        ],
+        "caption": "Termik jarohat va gipertermiya"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega kuyganlar sepsisga moyil? Doskada: sabab-oqibat zanjiri. Tipik xato: gipertermiyaga xos morfologik belgi bor deb o‘ylash."
     },
     {
@@ -369,7 +544,16 @@
           "uncertain": false
         },
         {
-          "text": "Yong‘in joyini sabab, o‘choq va tezlatgichlar (benzin) bo‘yicha mutaxassis tekshiruvchilar ko‘rishi kerak; patologning joyda ishtirok etishi talqinga yordam beradi.",
+          "text": "Yong‘in joyini sabab, o‘choq va tezlatgichlar (benzin) bo‘yicha mutaxassis tekshiruvchilar ko‘rishi kerak.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "172"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Patologning joyda ishtirok etishi talqinga yordam beradi.",
           "source": {
             "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
             "title": "Simpson's Forensic Medicine, 13th ed.",
@@ -413,17 +597,32 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Tekshiruv maqsadlari",
-        "nodes": [
-          "Shaxsni aniqlash",
-          "Hayotiylik",
-          "Qutulmaslik sababi",
-          "O‘lim sababi",
-          "O‘lim turi"
+        "kind": "tree",
+        "root": "Tekshiruv maqsadlari",
+        "children": [
+          {
+            "label": "Shaxsni aniqlash"
+          },
+          {
+            "label": "Hayotiylik",
+            "items": [
+              "Yong‘in paytida tirikmi"
+            ]
+          },
+          {
+            "label": "Qutulmaslik sababi"
+          },
+          {
+            "label": "O‘lim sababi"
+          },
+          {
+            "label": "O‘lim turi",
+            "items": [
+              "Fikr bildirish"
+            ]
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Yong‘inda o‘lgan murda"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Murda vaziyati nimani ko‘rsatadi? Doskada: besh maqsad. Tipik xato: yong‘indan oldin o‘lganlik masalasini qo‘ymaslik."
     },
@@ -493,16 +692,35 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Hayotiylik belgilari",
-        "nodes": [
-          "Nafas yo‘llarida kuya",
-          "Qizilo‘ngach, oshqozonda kuya",
-          "Halqum termik shikasti",
-          "Karboksigemoglobin"
+        "kind": "tree",
+        "root": "Hayotiylik belgilari",
+        "children": [
+          {
+            "label": "Nafas yo‘llari",
+            "items": [
+              "Ovoz boylamidan pastda kuya"
+            ]
+          },
+          {
+            "label": "Qizilo‘ngach, oshqozon",
+            "items": [
+              "Kuya — yutish mumkin bo‘lgan"
+            ]
+          },
+          {
+            "label": "Halqum",
+            "items": [
+              "Termik shikast — issiq gaz"
+            ]
+          },
+          {
+            "label": "Qon",
+            "items": [
+              "Karboksigemoglobin"
+            ]
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Yong‘inda tirik bo‘lganlik"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega ovoz boylamlaridan pastdagi kuya muhim? Doskada: kuya joylari. Tipik xato: kuyaning yo‘qligini o‘limdan keyingi yonishning isboti deb olish."
     },
@@ -537,7 +755,22 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Yaxshi dalil",
+            "value": "> 50",
+            "unit": "%"
+          },
+          {
+            "label": "Og‘ir chekuvchida fon",
+            "value": "≤ 20",
+            "unit": "%"
+          }
+        ],
+        "caption": "Past daraja tirik bo‘lmaganlikni isbotlamaydi"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Past karboksigemoglobin bo‘lsa, nima deyish mumkin? Doskada: omillar ro‘yxati. Tipik xato: bitta ko‘rsatkich asosida hayotiylikni rad etish."
     },
     {
@@ -587,7 +820,16 @@
           "uncertain": false
         },
         {
-          "text": "Mexanizmlar: nafas buzilishi (kislorod kamayishi, is gazi); issiq ingalyatsiya — laringospazm, bronxospazm, «vagal ingibitsiya» va yurak to‘xtashi; yuqori harorat va shok; travma; kasallik zo‘ravonligi.",
+          "text": "Mexanizmlar: nafas buzilishi (kislorod kamayishi, is gazi).",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "174"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Issiq ingalyatsiya — laringospazm, bronxospazm, «vagal ingibitsiya» va yurak to‘xtashi; yuqori harorat va shok; travma; kasallik zo‘ravonligi.",
           "source": {
             "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
             "title": "Simpson's Forensic Medicine, 13th ed.",
@@ -630,7 +872,7 @@
           "uncertain": false
         },
         {
-          "text": "Issiqdan «ekstradural qon quyilish»: bosh terisi qizishida diploe va venoz sinuslardagi qon kengayib yorilib, qattiq pardadan tashqarida qo‘ng‘ir g‘ovak qon to‘planishi.",
+          "text": "Issiqdan «ekstradural qon quyilish»: qizigan bosh terisida diploe va venoz sinuslar qoni yorilib, qattiq pardadan tashqarida qo‘ng‘ir g‘ovak qon to‘planadi.",
           "source": {
             "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
             "title": "Simpson's Forensic Medicine, 13th ed.",
@@ -714,7 +956,16 @@
       "title": "Gipotermiya sharoitlari va darajalari",
       "bullets": [
         {
-          "text": "Atrof harorat 10 °C dan past bo‘lsa, zaif shaxslarda xavfli gipotermiya yetarli bo‘lishi mumkin; alkogol vazodilatatsiya orqali va shamol-yomg‘ir sovishni kuchaytiradi.",
+          "text": "Atrof harorat 10 °C dan past bo‘lsa, zaif shaxslarda xavfli gipotermiya yetarli bo‘lishi mumkin.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "176"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Alkogol vazodilatatsiya orqali va shamol-yomg‘ir sovishni kuchaytiradi.",
           "source": {
             "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
             "title": "Simpson's Forensic Medicine, 13th ed.",
@@ -732,7 +983,16 @@
           "uncertain": false
         },
         {
-          "text": "Daraja: yengil (32–35 °C), o‘rtacha (30–32 °C), og‘ir (<30 °C); 32 °C dan pastda titroq to‘xtaydi; 27–30 °C da hushsizlik, 27 °C dan pastda qorincha fibrillyatsiyasi va apnoe.",
+          "text": "Daraja: yengil (32–35 °C), o‘rtacha (30–32 °C), og‘ir (<30 °C); 32 °C dan pastda titroq to‘xtaydi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "176"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "27–30 °C da hushsizlik, 27 °C dan pastda qorincha fibrillyatsiyasi va apnoe.",
           "source": {
             "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
             "title": "Simpson's Forensic Medicine, 13th ed.",
@@ -742,27 +1002,40 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Gipotermiya darajalari",
-        "nodes": [],
-        "header": [
-          "Daraja",
-          "Yadro harorati"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Yengil",
+            "value": "32–35",
+            "unit": "°C"
+          },
+          {
+            "label": "O‘rtacha",
+            "value": "30–32",
+            "unit": "°C"
+          },
+          {
+            "label": "Og‘ir",
+            "value": "< 30",
+            "unit": "°C"
+          },
+          {
+            "label": "Titroq to‘xtaydi",
+            "value": "< 32",
+            "unit": "°C"
+          },
+          {
+            "label": "Hushsizlik",
+            "value": "27–30",
+            "unit": "°C"
+          },
+          {
+            "label": "Fibrillyatsiya, apnoe",
+            "value": "< 27",
+            "unit": "°C"
+          }
         ],
-        "rows": [
-          [
-            "Yengil",
-            "32–35 °C"
-          ],
-          [
-            "O‘rtacha",
-            "30–32 °C"
-          ],
-          [
-            "Og‘ir",
-            "30 °C dan past"
-          ]
-        ]
+        "caption": "Gipotermiya darajalari"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Titroq to‘xtashi nimani bildiradi? Doskada: daraja jadvali. Tipik xato: haroratni mutlaq chegara deb olish."
     },
@@ -804,7 +1077,16 @@
       "title": "Gipotermiyada murdadagi o‘zgarishlar",
       "bullets": [
         {
-          "text": "Katta bo‘g‘imlar (tirsak, son, tizza) ustida noaniq qizil-binafsha rang — «frost eritema» taxminan 50% holatda uchraydi; mikroskopiyada eritrotsit ekstravazati yo‘q, shu bilan ko‘kimtirdan farqlanadi.",
+          "text": "Katta bo‘g‘imlar (tirsak, son, tizza) ustida noaniq qizil-binafsha rang — «frost eritema» taxminan 50% holatda uchraydi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "177"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mikroskopiyada eritrotsit ekstravazati yo‘q, shu bilan ko‘kimtirdan farqlanadi.",
           "source": {
             "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
             "title": "Simpson's Forensic Medicine, 13th ed.",
@@ -838,7 +1120,16 @@
       "title": "Gipotermiyadagi xulq va joy belgilari",
       "bullets": [
         {
-          "text": "Paradoksal yechinish: o‘lik gipotermiyada qisman kiyingan yoki yalang‘och topilishi; sababi chalkashlik va sovuqda teri ta’sirotlarini noto‘g‘ri qabul qilib, issiqlik sezish bilan izohlanadi.",
+          "text": "Paradoksal yechinish: o‘lik gipotermiyada qisman kiyingan yoki yalang‘och topilishi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "177"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sababi chalkashlik va sovuqda teri ta’sirotlarini noto‘g‘ri qabul qilib, issiqlik sezish bilan izohlanadi.",
           "source": {
             "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
             "title": "Simpson's Forensic Medicine, 13th ed.",
@@ -869,10 +1160,92 @@
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Yalang‘och topilgan murdani qotillik deb baholash mumkinmi? Doskada: ikki sindrom. Tipik xato: kiyimsizlikni jinsiy zo‘ravonlik isboti deb olish."
     },
     {
+      "title": "Sovuq urishi (mahalliy sovuq ta’siri)",
+      "bullets": [
+        {
+          "text": "Sovuq urishi uzoq sovuq, sovitilgan jism bilan tegish yoki sovitilgan suyuqlik va gaz bug‘idan; tana umumiy harorati saqlanadi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "122"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Moyillik yaratadi: nam, shamol, jarohat yoki kasallik, trofik buzilish, tor poyabzal, adinamiya, mastlik.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "122"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ikki davr: yashirin (sovuq ta’sirida) va reaktiv (isitilgandan keyin). To‘rt daraja chuqurlikka qarab farqlanadi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "122"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Sovuq urishining o‘zi o‘limga olib kelmaydi; o‘lim gangrena yoki yiringli-septik asoratdan bo‘ladi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "122"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Sovuq urishi darajalari",
+        "children": [
+          {
+            "label": "I daraja",
+            "items": [
+              "Giperemiya, shish, qichishish, og‘riq"
+            ]
+          },
+          {
+            "label": "II daraja",
+            "items": [
+              "Epidermis ko‘chishi, pufaklar"
+            ]
+          },
+          {
+            "label": "III daraja",
+            "items": [
+              "Teri to‘liq nekrozi, shish"
+            ]
+          },
+          {
+            "label": "IV daraja",
+            "items": [
+              "Teri va ostidagi to‘qima nekrozi"
+            ]
+          }
+        ],
+        "caption": "To‘rt daraja"
+      },
+      "teacher_notes": "Bu mahalliy ta’sir; umumiy sovishdan farqlang."
+    },
+    {
       "title": "Elektr jarohati: tok kuchi va qarshilik",
       "bullets": [
         {
-          "text": "Zararlovchi omil — tok kuchi (mA); u to‘qima qarshiligi (Om) va kuchlanishga (V) bog‘liq: Om qonuniga ko‘ra qarshilik kamaysa yoki kuchlanish oshsa tok ko‘payadi.",
+          "text": "Zararlovchi omil — tok kuchi (mA); u to‘qima qarshiligi (Om) va kuchlanishga (V) bog‘liq.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "178"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Om qonuniga ko‘ra qarshilik kamaysa yoki kuchlanish oshsa tok ko‘payadi.",
           "source": {
             "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
             "title": "Simpson's Forensic Medicine, 13th ed.",
@@ -899,7 +1272,37 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Elektr jarohati omillari",
+        "children": [
+          {
+            "label": "Tok kuchi (mA)",
+            "items": [
+              "Qarshilik va kuchlanishga bog‘liq"
+            ]
+          },
+          {
+            "label": "Kuchlanish",
+            "items": [
+              "110 V yoki 240 V tarmoq"
+            ]
+          },
+          {
+            "label": "Kirish va chiqish",
+            "items": [
+              "Qo‘ldan yerga"
+            ]
+          },
+          {
+            "label": "Xavf",
+            "items": [
+              "Yurak to‘xtashi, nafas falaji"
+            ]
+          }
+        ],
+        "caption": "Om qonuni"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega ko‘krak qafasidan o‘tgan tok xavfliroq? Doskada: Om qonuni. Tipik xato: faqat kuchlanishga qarab xavfni baholash."
     },
     {
@@ -924,7 +1327,16 @@
           "uncertain": false
         },
         {
-          "text": "Ko‘krakdan 50 mA va undan ortiq tok bir necha soniya o‘tsa ham halokatli qorincha fibrillyatsiyasi ehtimoli yuqori; o‘zgaruvchan tok (AC) o‘zgarmasdan (DC) ancha xavfli.",
+          "text": "Ko‘krakdan 50 mA va undan ortiq tok bir necha soniya o‘tsa ham halokatli qorincha fibrillyatsiyasi ehtimoli yuqori.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "178"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘zgaruvchan tok (AC) o‘zgarmasdan (DC) ancha xavfli.",
           "source": {
             "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
             "title": "Simpson's Forensic Medicine, 13th ed.",
@@ -934,27 +1346,22 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Tok kuchi va oqibat",
-        "nodes": [],
-        "header": [
-          "Tok",
-          "Oqibat"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "~10 mA",
+            "text": "Og‘riq, mushak tortishishi"
+          },
+          {
+            "title": "~30 mA",
+            "text": "Spazm, qo‘yib yuborib bo‘lmaydi"
+          },
+          {
+            "title": "≥ 50 mA",
+            "text": "Qorincha fibrillyatsiyasi xavfi"
+          }
         ],
-        "rows": [
-          [
-            "~10 mA",
-            "Og‘riq, mushak tortishishi"
-          ],
-          [
-            "~30 mA",
-            "Spazm, qo‘yib yuborib bo‘lmaydi"
-          ],
-          [
-            "50 mA va ko‘p",
-            "Qorincha fibrillyatsiyasi"
-          ]
-        ]
+        "caption": "Qo‘l-ko‘krak yo‘lida tok kuchi"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: «Ushlab qolish» effekti nega xavfli? Doskada: 10 / 30 / 50 mA. Tipik xato: o‘zgarmas tokni o‘zgaruvchandan xavfliroq deb o‘ylash."
     },
@@ -1011,6 +1418,80 @@
       "teacher_notes": "Vaqt: 3 daq. Muhokama: Nega vannada elektr xavfi yuqori? Doskada: quruq / ho‘l qarshilik. Tipik xato: qarshilik tokka ta’sir qilmaydi deb o‘ylash."
     },
     {
+      "title": "Elektr tokining ta’sir mexanizmlari",
+      "bullets": [
+        {
+          "text": "Zarar omillari: tok chastotasi, kuchlanishi, quvvati, kuchi, davomiyligi va kontaktlar soni, to‘qima qarshiligi, tok halqasi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "123"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Termik ta’sir kontaktda kuyish, kiyim va soch yonishini beradi; mexanik ta’sir shilinma, yara, teri yorilishi, ba’zan sinish beradi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "123"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Elektrolitik ta’sir to‘qima suyuqliklari elektrolizini, elektrobiologik ta’sir MNT va refleks bilan yurak va nafas to‘xtashini chaqiradi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "123"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Eng xavfli — tok yurak va bosh miyadan o‘tishi; tez o‘limda bevosita sabab elektr shok, yurak yoki nafas to‘xtashi, nafas mushaklari spazmi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "123-124"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Tok ta’sirining turlari",
+        "children": [
+          {
+            "label": "Termik",
+            "items": [
+              "Kuyish, kiyim va soch yonishi"
+            ]
+          },
+          {
+            "label": "Mexanik",
+            "items": [
+              "Shilinma, yara, teri yorilishi"
+            ]
+          },
+          {
+            "label": "Elektrolitik",
+            "items": [
+              "Toqima suyuqliklari elektrolizi"
+            ]
+          },
+          {
+            "label": "Elektrobiologik",
+            "items": [
+              "Yurak va nafas to‘xtashi",
+              "Nafas yo‘llari spazmi"
+            ]
+          }
+        ],
+        "caption": "To‘rt mexanizm"
+      },
+      "teacher_notes": "Simpson tavsifi bilan solishtiring: ikki manba bir-birini to‘ldiradi."
+    },
+    {
       "title": "Elektr belgisi (elektr jarohati)",
       "bullets": [
         {
@@ -1032,7 +1513,16 @@
           "uncertain": false
         },
         {
-          "text": "Fokal elektr belgisi — pufak: o‘tkazgich teriga zich tegsa; tez yorilib, ko‘tarilgan chetli, botiq markazli, oqargan teri va oqargan areola (mahalliy vazokonstriksiya).",
+          "text": "Fokal elektr belgisi — pufak: o‘tkazgich teriga zich tegsa.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "178–179"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tez yorilib, ko‘tarilgan chetli, botiq markazli, oqargan teri va oqargan areola (mahalliy vazokonstriksiya).",
           "source": {
             "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
             "title": "Simpson's Forensic Medicine, 13th ed.",
@@ -1043,6 +1533,68 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Elektr belgisi bo‘lmasa elektrdan o‘limni rad etamizmi? Doskada: belgi tavsifi. Tipik xato: belgisizlikni elektr yo‘qligi deb olish."
+    },
+    {
+      "title": "Elektrmetka va chaqmoq belgilari",
+      "bullets": [
+        {
+          "text": "Elektrmetka odatda oval yoki dumaloq, botiq zich tubli, chetlari valiksimon ko‘tarilgan; shilinma, pergament dog‘ yoki kuyish ko‘rinishida ham bo‘ladi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "124"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Texnik elektrda elektrmetka 85–90% holatda uchraydi; kirish, chiqish va tok halqasi bo‘ylab hosil bo‘ladi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "124"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Aniqlash gistologiya va epidermis metallizatsiyasini (spektral, kontakt-diffuzion usul) topish bilan amalga oshiriladi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "124"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Suyakda «munchoq» (kalsiy fosfat, ichi bo‘sh) xos; chaqmoqda daraxtsimon pushti chiziqlar 12–24 soatda yo‘qoladi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "124"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Elektrmetka uchrashi",
+            "value": "85–90",
+            "unit": "%"
+          },
+          {
+            "label": "Chaqmoq figuralari",
+            "value": "12–24",
+            "unit": "soat"
+          },
+          {
+            "label": "Suyak «munchoqlari»",
+            "value": "Ca fosfat"
+          }
+        ],
+        "caption": "Elektr belgilari"
+      },
+      "teacher_notes": "Ichki a’zolarda xos o‘zgarish yo‘q: tez o‘limning umumiy belgilari."
     },
     {
       "title": "Uchqun kuyishi va yuqori kuchlanish",
@@ -1086,7 +1638,7 @@
         "rows": [
           [
             "Pufak (kontakt)",
-            "Qulagan pufak, ko‘tarilgan chet, oqargan areola"
+            "Qulagan pufak, ko‘tarilgan chet"
           ],
           [
             "Uchqun kuyishi",
@@ -1147,7 +1699,7 @@
           "uncertain": false
         },
         {
-          "text": "Shikast turlari: elektr, kuyish va qizigan havo siqilish to‘lqinining «portlash» ta’siri (quloq pardasi yorilishi, o‘pka portlash jarohati, mushak nekrozi/mioglobinuriya).",
+          "text": "Shikast turlari: elektr, kuyish va qizigan havo to‘lqinining «portlash» ta’siri (quloq pardasi yorilishi, o‘pka jarohati, mushak nekrozi).",
           "source": {
             "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
             "title": "Simpson's Forensic Medicine, 13th ed.",
@@ -1156,7 +1708,7 @@
           "uncertain": false
         },
         {
-          "text": "G‘alati ko‘rinishlar: kiyimning qisman yoki to‘liq yechilishi (shubha uyg‘otadi), og‘ir kuyish, sinish, jarohat, kiyimdagi metall buyumlarning magnitlanishi yoki erishi.",
+          "text": "G‘alati ko‘rinishlar: kiyimning qisman yoki to‘liq yechilishi (shubha uyg‘otadi), og‘ir kuyish, sinish, kiyimdagi metall buyumlarning magnitlanishi yoki erishi.",
           "source": {
             "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
             "title": "Simpson's Forensic Medicine, 13th ed.",
@@ -1201,6 +1753,330 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Lixtenberg shakllarining ishonchliligi nega munozarali? Doskada: bobning uch bo‘limi yakuni. Tipik xato: Lixtenberg shaklini chaqmoqning albatta uchraydigan belgisi deb hisoblash."
+    },
+    {
+      "title": "Ionlashtiruvchi nurlanish: dozalar",
+      "bullets": [
+        {
+          "text": "Ionlashtiruvchi nurlanish neytron, alfa, beta, rentgen va gamma nurlari; nurlanish tashqi (umumiy yoki mahalliy) yoki ichki bo‘ladi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "125"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nur shikasti shakllari yutilgan doza kattaligiga ko‘ra ajratiladi: suyak ilik, ichak, toksemik, serebral shakl.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "125"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "150 Gr dan oshganda «nur ostida o‘lim» miyaning hayotiy markazlari falajidan sodir bo‘ladi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "125"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nurlanishdan o‘lim gumon qilinsa dozimetrik nazorat o‘tkaziladi: kiyim, teri, a’zolar zararlanishi aniqlanadi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "126"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Suyak ilik shakli",
+            "value": "≤ 10",
+            "unit": "Gr"
+          },
+          {
+            "label": "Ichak shakli",
+            "value": "10–20",
+            "unit": "Gr"
+          },
+          {
+            "label": "Toksemik shakl",
+            "value": "20–80",
+            "unit": "Gr"
+          },
+          {
+            "label": "Serebral shakl",
+            "value": "> 80",
+            "unit": "Gr"
+          },
+          {
+            "label": "«Nur ostida o‘lim»",
+            "value": "> 150",
+            "unit": "Gr"
+          }
+        ],
+        "caption": "Yutilgan doza va shakl"
+      },
+      "teacher_notes": "Gr — grey; nurlanish dozasi o‘lchov birligi."
+    },
+    {
+      "title": "Nur kasalligi va nur kuyishi",
+      "bullets": [
+        {
+          "text": "O‘tkir nur kasalligi bir martalik katta nurlanishdan; kechishida to‘rt davr: birlamchi reaksiya, yashirin, aniq belgilar va oqibat davri.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "125-126"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xos o‘zgarishlar: qon va suyak iligi, limfa tugunlari, taloq o‘zgarishi, qon quyilishlar, kamqonlik, nekroz va yiringli asoratlar.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "126"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Surunkali shakl kichik dozalar takror nurlanishidan: to‘lqinsimon kechish, qon hosil bo‘lishining susayishi, gemorragik sindrom.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "126"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nur kuyishi yashirin davr, giperemiya, shish, qon quyilish, pufak, nekrozdan o‘tadi; yarali, infeksiyalanuvchan va xavfli o‘smaga aylanishi mumkin.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "126"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Birlamchi reaksiya",
+            "text": "Nurlanishdan keyin birinchi davr"
+          },
+          {
+            "title": "2. Yashirin davr",
+            "text": "Belgilar vaqtincha yo‘q"
+          },
+          {
+            "title": "3. Aniq belgilar",
+            "text": "Qon, ilik, qon quyilish, nekroz"
+          },
+          {
+            "title": "4. Oqibat davri",
+            "text": "Tuzalish yoki o‘lim"
+          }
+        ],
+        "caption": "O‘tkir nur kasalligi davrlari"
+      },
+      "teacher_notes": "Mahalliy ta’sir — nur kuyishi."
+    },
+    {
+      "title": "Barometrik bosim o‘zgarishi: baotravma",
+      "bullets": [
+        {
+          "text": "Bosim keskin ko‘tarilishi yoki pasayishi, yoki uzoq o‘zgargan bosimda bo‘lish shikast beradi: samolyot avariyasi, suv ostida sport, g‘avvoslik, barokamera.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "127"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tez bosim ko‘tarilishida o‘pka baotravmasi: o‘tkir emfizema, o‘pka yorilishi, gemo- va pnevmotoraks, arteriyalar havo emboliyasi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "127"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Quloq baotravmasi: nog‘ora parda yorilishi, nog‘ora bo‘shlig‘iga qon quyilishi, quloq labirinti buzilishi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "127"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Burun qo‘shimcha bo‘shliqlari baotravmasi qon quyilishi va burun qon ketishi bilan namoyon bo‘ladi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "127"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Baotravma",
+        "children": [
+          {
+            "label": "O‘pka",
+            "items": [
+              "Emfizema, o‘pka yorilishi",
+              "Gemo/pnevmotoraks",
+              "Havo emboliyasi"
+            ]
+          },
+          {
+            "label": "Quloq",
+            "items": [
+              "Nog‘ora parda yorilishi",
+              "Bo‘shliqqa qon quyilishi",
+              "Labirint buzilishi"
+            ]
+          },
+          {
+            "label": "Burun bo‘shliqlari",
+            "items": [
+              "Qon quyilish",
+              "Burun qon ketishi"
+            ]
+          }
+        ],
+        "caption": "Bosim ko‘tarilishida"
+      },
+      "teacher_notes": "Sharoitlar: aviatsiya, g‘avvoslik, barokamera, sun’iy ventilyatsiya."
+    },
+    {
+      "title": "Dekompression va balandlik kasalligi",
+      "bullets": [
+        {
+          "text": "Bosimning tez pasayishida dekompression (kesson) kasallik: qonda erigan gazlar pufakcha bo‘lib to‘planadi, venalarda gaz emboliyasi rivojlanadi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "127"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Uzoq yuqori bosimda kislorod, karbonat angidrid va azot bilan zaharlanish bo‘ladi; xos morfologik belgi bo‘lmaydi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "127"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "G‘avvosning siqilishi: qon qayta taqsimlanib, bosh miya qon quyilishlari va kalla ichi bosimi ortishi bilan o‘lim.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "127"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Balandlik kasalligi to‘qima, avvalo miya kislorod tanqisligidan; murdada tez o‘lim belgilari, sianoz, qon quyilishlar, suyuq qora qon.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "127-128"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Dekompression kasallik",
+            "items": [
+              "Bosim tez pasayadi",
+              "Qonda gaz pufakchalari",
+              "Venalarda gaz emboliyasi"
+            ]
+          },
+          {
+            "title": "G‘avvos siqilishi",
+            "items": [
+              "Qon qayta taqsimlanadi",
+              "Kalla ichi bosimi ortadi",
+              "Miya qon quyilishlari"
+            ]
+          },
+          {
+            "title": "Balandlik kasalligi",
+            "items": [
+              "Kislorod tanqisligi",
+              "Miya va ichki a’zolar",
+              "Sianoz, suyuq qora qon"
+            ]
+          }
+        ],
+        "caption": "Bosim pasayishidagi holatlar"
+      },
+      "teacher_notes": "Ekspertiza savollari: bosim o‘zgarishi o‘limga olib kelishi mumkinmi, baotravma belgilari voqeaga mosmi."
+    },
+    {
+      "title": "Xulosa: fizik omillar shikasti",
+      "bullets": [
+        {
+          "text": "Kuyish chuqurligi va maydoni xavfni belgilaydi; epidermis nekrozi 44 °C da 6 soatda, 60 °C da 5 soniyada.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "169-170"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Yong‘inda tirik bo‘lganlik kuya, termik nafas yo‘li shikasti va karboksigemoglobin bilan baholanadi; past daraja inkor etmaydi.",
+          "source": {
+            "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+            "title": "Simpson's Forensic Medicine, 13th ed.",
+            "page": "173-174"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gipotermiya, elektr, nurlanish va bosim o‘zgarishi o‘ziga xos belgilar beradi; xulosa majmua asosida chiqariladi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "122-128"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ekspertiza savollari: sabab, mexanizm, hayotiylik, sharoit va tegishli topilmalarning voqeaga mosligi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "123-128"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Xulosa va muhokama."
     }
   ],
   "mcq": [
@@ -1223,10 +2099,10 @@
     {
       "question": "Bolalarda qasddan qaynoq suvga botirishda qanday jarohat naqshi xos?",
       "options": [
-        "Notekis chegarali to‘kilish izlari",
+        "Notekis chegarali, chuqurligi har xil to‘kilish izlari",
         "Simmetrik «qo‘lqop va paypoq» ko‘rinishi, burmalar saqlanadi",
-        "Faqat yuz kuyishi",
-        "Nuqtali pufaklar"
+        "Faqat yuz va bo‘yin sohasidagi kuyish izlari",
+        "Nuqtali pufakchalarning sochilib joylashgan o‘choqlari"
       ],
       "correct_index": 1,
       "explanation": "Majburiy botirishda simmetrik «qo‘lqop va paypoq», bir xil chuqurlik, teri burmalari va dumba sohasi saqlanadi.",
@@ -1239,10 +2115,10 @@
     {
       "question": "Yong‘in paytida tirik bo‘lganlikning ishonchli belgisi qaysi?",
       "options": [
-        "Pugilist vaziyati",
+        "«Pugilist vaziyati» — bilak va sonlarning bukilishi",
         "Ovoz boylamlaridan pastda nafas yo‘llarida kuya",
-        "Teri yorilishi",
-        "Qizil rang"
+        "Kuygan teri sathining o‘limdan keyingi yorilishi",
+        "Murda dog‘larining qizil rangda bo‘lishi"
       ],
       "correct_index": 1,
       "explanation": "Kuya nafas yo‘llarida (ayniqsa ovoz boylamlaridan pastda) topilishi shaxs nafas olganini ko‘rsatadi.",
@@ -1255,10 +2131,10 @@
     {
       "question": "Past karboksigemoglobin darajasi nimani bildiradi?",
       "options": [
-        "Yong‘in paytida albatta o‘lik bo‘lgan",
-        "Yong‘in paytida tirik bo‘lmaganlikni bildirmaydi (flesh-over, benzin yong‘inida odatiy)",
-        "Zaharlanish bo‘lmagan",
-        "Chekuvchi bo‘lgan"
+        "Yong‘in paytida albatta o‘lik bo‘lganini bildiradi",
+        "Yong‘in paytida tirik bo‘lmaganlikni bildirmaydi (masalan, flesh-over)",
+        "Zaharlanish bo‘lmaganini ko‘rsatadi",
+        "Marhum chekuvchi bo‘lganini bildiradi"
       ],
       "correct_index": 1,
       "explanation": "Past daraja tirik bo‘lganlikni rad etmaydi; flesh-over va transport vositasidagi benzin yong‘inlarida uchraydi.",
@@ -1271,10 +2147,10 @@
     {
       "question": "«Pugilist vaziyati» nima?",
       "options": [
-        "Sovuqdan qotish",
+        "Sovuqdan tananing qotib qolishi va mushaklar taranglashishi",
         "Issiqdan mushaklarning farqli qisqarishi tufayli bilak, qo‘l va sonlar bukilishi",
-        "Elektr belgisi",
-        "Cho‘kish belgisi"
+        "Elektr tokidan hosil bo‘ladigan teri belgisi va kuyish izi",
+        "Cho‘kish paytida murdada kuzatiladigan rangpar teri belgisi"
       ],
       "correct_index": 1,
       "explanation": "Issiqlik ta’sirida mushaklarning farqli qisqarishidan bukilgan vaziyat — yong‘in artefakti.",
@@ -1304,11 +2180,11 @@
       "question": "Gipotermiyada oshqozondagi gemorragik eroziyalar qanday ataladi?",
       "options": [
         "Tarde dog‘lari",
-        "Vishnevskiy dog‘lari",
+        "Lixtenberg shakllari",
         "Paltauf dog‘lari",
-        "Lixtenberg shakllari"
+        "Vishnevskiy dog‘lari"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Vishnevskiy dog‘lari — shilliq nekrozi va gematin; gipotermiyaga xos emas.",
       "source": {
         "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
@@ -1319,12 +2195,12 @@
     {
       "question": "Paradoksal yechinish nimani anglatadi?",
       "options": [
-        "Elektr belgisini",
         "Gipotermiyada o‘lgan shaxsning qisman kiyingan yoki yalang‘och topilishini",
-        "Yong‘in artefaktini",
-        "Cho‘kishni"
+        "Elektr tokidan keyin terida paydo bo‘ladigan belgi",
+        "Yong‘in paytida mushaklarning qisqarishi",
+        "Cho‘kish paytida kiyimning yirtilishi"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Chalkashlik va sovuqda issiqlik sezish natijasida kiyimni yechish.",
       "source": {
         "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
@@ -1352,16 +2228,176 @@
       "question": "Yuqori kuchlanishdagi ko‘p uchqunli katta maydonli kuyish qanday ataladi?",
       "options": [
         "Lixtenberg shakli",
-        "«Timsoh terisi»",
+        "Vishnevskiy dog‘i",
         "Frost eritema",
-        "Vishnevskiy dog‘i"
+        "«Timsoh terisi»"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Ko‘p uchqunlarning teriga urilishi natijasidagi shikast «timsoh terisi» deyiladi.",
       "source": {
         "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
         "title": "Simpson's Forensic Medicine, 13th ed.",
         "page": "179"
+      }
+    },
+    {
+      "question": "Gipertermiya deb tana harorati qanday darajadan yuqori ko‘tarilishiga aytiladi?",
+      "options": [
+        "37 °C dan",
+        "38 °C dan",
+        "40 °C dan",
+        "35 °C dan"
+      ],
+      "correct_index": 2,
+      "explanation": "Gipertermiya — tana harorati 40 °C dan yuqori; avtopsiya topilmalari nospetsifik (o‘pka yoki miya shishi, visseral petexiyalar).",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "172"
+      }
+    },
+    {
+      "question": "Kuyish maydoni 20% dan oshsa, Simpson bo‘yicha qanday xavf paydo bo‘lishi mumkin?",
+      "options": [
+        "O‘tkir o‘pka shikasti va ko‘p a’zolar yetishmovchiligi",
+        "Faqat mahalliy infeksiya va yara bitishining sekinlashuvi",
+        "Faqat teri chandig‘i va kosmetik nuqson",
+        "Hech qanday sistemali o‘zgarish kuzatilmaydi"
+      ],
+      "correct_index": 0,
+      "explanation": "Kuyish maydoni 20% dan oshsa, yallig‘lanish mediatorlari o‘tkir o‘pka shikasti va ko‘p a’zolar yetishmovchiligiga olib kelishi mumkin.",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "172"
+      }
+    },
+    {
+      "question": "Og‘ir chekuvchilarda karboksigemoglobinning fon darajasi taxminan qancha bo‘lishi mumkin?",
+      "options": [
+        "1% gacha",
+        "5% gacha",
+        "20% gacha",
+        "50% gacha"
+      ],
+      "correct_index": 2,
+      "explanation": "Chekuvchilarda fon darajasi (og‘ir chekuvchilarda 20% gacha) yuqori bo‘ladi.",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "174"
+      }
+    },
+    {
+      "question": "Qalin quruq teri (kaft, tovon) qarshiligi taxminan qancha bo‘lishi mumkin?",
+      "options": [
+        "Bir necha o‘n Om",
+        "Bir necha yuz Om",
+        "1 million Om gacha",
+        "1 Om"
+      ],
+      "correct_index": 2,
+      "explanation": "Qalin quruq teri qarshiligi 1 million Om gacha; ho‘l teri qarshiligi bir necha yuz Omgacha tushadi.",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "178"
+      }
+    },
+    {
+      "question": "Ko‘krak orqali o‘tgan qanday tok kuchi bir necha soniyada ham qorincha fibrillyatsiyasi xavfini beradi?",
+      "options": [
+        "~1 mA, ya’ni sezilmaydigan darajada",
+        "~10 mA, ya’ni og‘riq va mushak tortishishi",
+        "~30 mA, ya’ni mushaklarning spazmi",
+        "50 mA va undan ko‘p"
+      ],
+      "correct_index": 3,
+      "explanation": "Ko‘krakdan 50 mA va undan ortiq tok bir necha soniya o‘tsa ham halokatli qorincha fibrillyatsiyasi ehtimoli yuqori.",
+      "source": {
+        "author": "Payne-James J., Jones R., Karch S.B., Manlove J.",
+        "title": "Simpson's Forensic Medicine, 13th ed.",
+        "page": "178"
+      }
+    },
+    {
+      "question": "Termik kuyishning dastlabki belgilari teri harorati qancha darajadan oshganda paydo bo‘ladi?",
+      "options": [
+        "+37 °C",
+        "+42 °C",
+        "+50 °C",
+        "+70 °C"
+      ],
+      "correct_index": 2,
+      "explanation": "Termik kuyishning dastlabki belgilari kontakt joyida teri harorati +50 °C dan oshganda paydo bo‘ladi.",
+      "source": {
+        "author": "Харин Г.М. (Kharin G.M.)",
+        "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "119"
+      }
+    },
+    {
+      "question": "Yutilgan doza taxminan 10–20 Gr bo‘lsa, nur shikastining qaysi shakli rivojlanadi?",
+      "options": [
+        "Suyak ilik shakli",
+        "Serebral shakl",
+        "Toksemik shakl",
+        "Ichak shakli"
+      ],
+      "correct_index": 3,
+      "explanation": "Doza bo‘yicha: suyak ilik shakli — 10 Gr gacha; ichak — 10–20 Gr; toksemik — 20–80 Gr; serebral — 80 Gr dan ortiq.",
+      "source": {
+        "author": "Харин Г.М. (Kharin G.M.)",
+        "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "125"
+      }
+    },
+    {
+      "question": "Texnik elektr ta’sirida elektrmetka qancha holatda uchraydi?",
+      "options": [
+        "10–15%",
+        "35–40%",
+        "60–65%",
+        "85–90%"
+      ],
+      "correct_index": 3,
+      "explanation": "Elektrmetka texnik elektr ta’sirida 85–90% holatda uchraydi.",
+      "source": {
+        "author": "Харин Г.М. (Kharin G.M.)",
+        "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "124"
+      }
+    },
+    {
+      "question": "Chaqmoq figuralari (daraxtsimon pushti chiziqlar) odatda qancha vaqtda yo‘qoladi?",
+      "options": [
+        "12–24 soatda",
+        "1–2 soatda",
+        "3–5 sutkada",
+        "Bir haftadan keyin"
+      ],
+      "correct_index": 0,
+      "explanation": "Chaqmoq figuralari qisqa muddat saqlanadi va odatda 12–24 soatdan keyin yo‘qoladi.",
+      "source": {
+        "author": "Харин Г.М. (Kharin G.M.)",
+        "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "124"
+      }
+    },
+    {
+      "question": "Tez bosim ko‘tarilishida quloq baotravmasi qanday ko‘rinadi?",
+      "options": [
+        "Nog‘ora parda yorilishi va bo‘shliqqa qon quyilishi",
+        "Quloq suprasining kuyishi va teri pufaklari",
+        "Faqat quloq suprasining shishishi",
+        "Hech qanday o‘zgarish kuzatilmaydi"
+      ],
+      "correct_index": 0,
+      "explanation": "Quloq baotravmasi nog‘ora parda yorilishi, nog‘ora bo‘shlig‘iga qon quyilishi va quloq labirinti buzilishi bilan ifodalanadi.",
+      "source": {
+        "author": "Харин Г.М. (Kharin G.M.)",
+        "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "127"
       }
     }
   ],
@@ -1405,6 +2441,12 @@
       "title": "Simpson's Forensic Medicine, 13th ed.",
       "year": 2011,
       "pages": "Chapter 17. Heat, cold and electrical trauma, pp. 169–180"
+    },
+    {
+      "author": "Харин Г.М. (Kharin G.M.)",
+      "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+      "year": 2006,
+      "pages": "VI bo‘lim, 14-bob. Harorat, elektr, radiatsiya va bosim ta’siri; bet 118-128"
     }
   ]
 }

@@ -164,31 +164,31 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Jarohat davrlarini solishtirish",
-        "nodes": [],
-        "header": [
-          "Davr",
-          "Belgi",
-          "Ahamiyati"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Antemortem",
+            "items": [
+              "Qon quyilishi, yallig‘lanish hujayralari",
+              "Tiriklik isboti"
+            ]
+          },
+          {
+            "title": "Agonal",
+            "items": [
+              "Batafsil belgisi manbada berilmagan",
+              "Tirik va postmortemdan ajratiladi"
+            ]
+          },
+          {
+            "title": "Postmortem",
+            "items": [
+              "Mast hujayra soni past",
+              "Eritrotsit chiqishi ishonchsiz"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Antemortem",
-            "Qon quyilishi, yallig‘lanish hujayralari",
-            "Tiriklik isboti"
-          ],
-          [
-            "Agonal",
-            "Manbada batafsil belgisi berilmagan",
-            "Tirik va postmortemdan ajratiladi"
-          ],
-          [
-            "Postmortem",
-            "Mast hujayra soni past",
-            "Eritrotsit chiqishi ishonchsiz"
-          ]
-        ]
+        "caption": "Jarohat davrlarini solishtirish"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun tirik vaqtda va o‘limdan keyin yetkazilgan jarohatni ajratish zarur? 2) Qon quyilishi nega yagona dalil bo‘la olmaydi? Doskada: uch ustunli jadvalni chizing va vital reaksiyalarni yozing. Tipik xato: eritrotsit chiqishini tiriklikning mutlaq belgisi deb hisoblash; agonal davrni postmortem bilan aralashtirish."
     },
@@ -234,6 +234,68 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Ob-havo bashorati o‘xshatishi jarohat yoshiga nimasi bilan mos keladi? 2) Hayvon natijalarini odamga ko‘chirishda qanday xavf bor? Doskada: jarohat yoshiga ta’sir etuvchi omillar ro‘yxatini chizing. Tipik xato: bitta markerga tayanib aniq vaqt aytish."
+    },
+    {
+      "title": "Klassik gistologiya va molekulyar markerlar",
+      "bullets": [
+        {
+          "text": "An’anaviy baholash makroskopik ko‘rik va oddiy gistologiyaga tayangan.",
+          "source": {
+            "author": "Ahmed et al.",
+            "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
+            "page": "PMID 41631082 (Introduction)"
+          }
+        },
+        {
+          "text": "Qon quyilishi, shish, yallig‘lanish hujayralari infiltratsiyasi, fibroblast proliferatsiyasi jarohat kechishining umumiy ramkasini beradi.",
+          "source": {
+            "author": "Ahmed et al.",
+            "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
+            "page": "PMID 41631082 (Introduction)"
+          }
+        },
+        {
+          "text": "Lekin erta davrda sezgirlik va xosligi yetarli emas; vaqt oraliqlari ustma-ust tushadi, o‘limdan keyingi o‘zgarishlar va kasalliklar ta’sir qiladi.",
+          "source": {
+            "author": "Ahmed et al.",
+            "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
+            "page": "PMID 41631082 (Introduction)"
+          }
+        },
+        {
+          "text": "IGK sitokinlar, o‘sish omillari va stress oqsillarining vaqt bo‘yicha ifodasini ko‘rsatib, erta, o‘rta va kech fazalarni aniqlashga yordam beradi.",
+          "source": {
+            "author": "Ahmed et al.",
+            "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
+            "page": "PMID 41631082 (Introduction)"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Klassik gistologiya",
+            "items": [
+              "Qon quyilishi, shish",
+              "Yallig‘lanish infiltratsiyasi",
+              "Erta davrda sezgirligi past",
+              "Oraliqlar ustma-ust tushadi"
+            ]
+          },
+          {
+            "title": "IGK va molekulyar",
+            "items": [
+              "Sitokin, o‘sish omili, stress oqsili",
+              "Vaqt bo‘yicha ifoda",
+              "Erta fazalarni ajratadi",
+              "Standartlashtirish yo‘q"
+            ]
+          }
+        ],
+        "caption": "Gistologiya va markerlar"
+      },
+      "teacher_notes": "Vaqt: 4 daq."
     },
     {
       "title": "Voqea tahlili: bir necha jarohat, bir necha shaxs",
@@ -310,31 +372,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Asosiy to‘qimalar",
-        "nodes": [],
-        "header": [
-          "To‘qima",
-          "Tadqiqot turi",
-          "Sabab"
+        "kind": "tree",
+        "root": "Jarohat yoshi: to‘qimalar",
+        "children": [
+          {
+            "label": "Teri",
+            "items": [
+              "Kuzatuv tadqiqotlari",
+              "Amaliyotda tez-tez uchraydi"
+            ]
+          },
+          {
+            "label": "Skelet mushagi",
+            "items": [
+              "Tajriba tadqiqotlari",
+              "Amaliyotda tez-tez uchraydi"
+            ]
+          },
+          {
+            "label": "Miya",
+            "items": [
+              "Ko‘p sonli tadqiqot",
+              "Shikast ko‘p, odatda o‘ldiradi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Teri",
-            "Kuzatuv (investigative)",
-            "Amaliyotda tez-tez uchraydi"
-          ],
-          [
-            "Skelet mushagi",
-            "Tajriba (experimental)",
-            "Amaliyotda tez-tez uchraydi"
-          ],
-          [
-            "Miya",
-            "Ko‘p sonli tadqiqot",
-            "Shikast ko‘p, odatda o‘limga olib keladi"
-          ]
-        ]
+        "caption": "Asosiy to‘qimalar"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun aynan teri, mushak va miya tanlangan? 2) Tajriba va kuzatuv tadqiqotining farqi nimada? Doskada: uchta to‘qimani yozib, har biriga tadqiqot turini bog‘lang. Tipik xato: o‘quvchilar mushak va teri tadqiqot turlarini almashtirib yuboradi (mushak – tajriba, teri – kuzatuv)."
     },
@@ -370,31 +433,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Hayvon modeli: ikki tomon",
-        "nodes": [],
-        "header": [
-          "Jihat",
-          "Afzallik",
-          "Cheklov"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Afzalliklari",
+            "items": [
+              "Sharoit va vaqt boshqariladi",
+              "Natija takrorlanuvchan, ishonchli",
+              "Yara tiklanish jarayoni odamga o‘xshash"
+            ]
+          },
+          {
+            "title": "Cheklovlari",
+            "items": [
+              "Odamga qo‘llanishi noaniq",
+              "O‘tkazishga aniq dalil yo‘q",
+              "Markerlar gomologiyasi muhim"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Nazorat",
-            "Sharoit va vaqt boshqariladi",
-            "Odamga qo‘llanishi noaniq"
-          ],
-          [
-            "Natija",
-            "Takrorlanuvchan, ishonchli",
-            "Odamga o‘tkazishga aniq dalil yo‘q"
-          ],
-          [
-            "Tiklanish",
-            "Jarayon odamga o‘xshash",
-            "Markerlar gomologiyasi muhim"
-          ]
-        ]
+        "caption": "Hayvon modeli: ikki tomon"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun hayvon natijasini odamga to‘g‘ridan-to‘g‘ri ko‘chirib bo‘lmaydi? 2) Odam namunasi kalibrlash uchun qanday xizmat qiladi? Doskada: afzallik va cheklov ustunli jadval chizing. Tipik xato: takrorlanuvchanlik odamga qo‘llanish ishonchliligini ham kafolatlaydi, deb o‘ylash."
     },
@@ -430,31 +488,37 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Autopsiya namunasi: muammo va yechim",
-        "nodes": [],
-        "header": [
-          "Jihat",
-          "Mazmun"
+        "kind": "tree",
+        "root": "Autopsiya namunalari",
+        "children": [
+          {
+            "label": "Afzallik",
+            "items": [
+              "Eng aniq va real namunalar"
+            ]
+          },
+          {
+            "label": "Cheklov",
+            "items": [
+              "Ma’lumot va hujjat yetishmaydi"
+            ]
+          },
+          {
+            "label": "O‘limdan keyin",
+            "items": [
+              "Chirish, parchalanish",
+              "Quruqlashish"
+            ]
+          },
+          {
+            "label": "Yechim",
+            "items": [
+              "Boshqarilgan chirish",
+              "Qat’iy yig‘ish mezoni"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Afzallik",
-            "Eng aniq va real namunalar"
-          ],
-          [
-            "Cheklov",
-            "Ma’lumot va hujjat yetishmaydi"
-          ],
-          [
-            "O‘limdan keyin",
-            "Chirish, parchalanish, quruqlashish"
-          ],
-          [
-            "Yechim",
-            "Boshqarilgan chirish, qat’iy yig‘ish mezoni"
-          ]
-        ]
+        "caption": "Autopsiya namunasi: muammo va yechim"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Autopsiya namunasi eng real bo‘lsa-da, nega ishonchliligi pasayadi? 2) Qat’iy yig‘ish mezonlari natijaga qanday ta’sir qiladi? Doskada: o‘limdan keyingi omillar ro‘yxatini (chirish, parchalanish, quruqlashish) chizing. Tipik xato: o‘limdan keyingi o‘zgarishlarni hisobga olmay, har qanday morfologik belgini hayotiylik belgisi deb talqin qilish."
     },
@@ -462,7 +526,7 @@
       "title": "Tirik odamlardan olingan namunalar",
       "bullets": [
         {
-          "text": "Namunalar asosan teri kasalliklari yoki jarrohlik yo‘li bilan olib tashlashni talab qiladigan kasalliklari bor bemorlardan, shuningdek sud shifokoriga yuborilgan shaxslardan olinadi.",
+          "text": "Namunalar asosan teri kasalliklari yoki jarrohlik rezeksiyasi kerak bo‘lgan kasalligi bor bemorlardan, shuningdek sud shifokoriga yuborilganlardan olinadi.",
           "source": {
             "author": "Li et al.",
             "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
@@ -489,7 +553,16 @@
           "uncertain": false
         },
         {
-          "text": "Namuna noinvaziv (surtma bilan) olinadi, shuning uchun hajmi ko‘pincha kam bo‘ladi va soxta-manfiy natija berishi mumkin. Tadqiqot mahalliy etika qo‘mitasi tasdig‘ini talab qiladi.",
+          "text": "Namuna noinvaziv (surtma bilan) olinadi, shuning uchun hajmi ko‘pincha kam bo‘ladi va soxta-manfiy natija berishi mumkin.",
+          "source": {
+            "author": "Li et al.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tadqiqot mahalliy etika qo‘mitasi tasdig‘ini talab qiladi.",
           "source": {
             "author": "Li et al.",
             "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
@@ -566,7 +639,16 @@
           "uncertain": false
         },
         {
-          "text": "Nazorat: namuna olish mezonlarini qat’iy belgilash, kerak bo‘lsa nazorat ostidagi ex vivo chirishni qo‘llash; odam namunasi hayvon ma’lumotlarini kalibrlash uchun ishlatiladi.",
+          "text": "Nazorat: namuna olish mezonlarini qat’iy belgilash, kerak bo‘lsa nazorat ostidagi ex vivo chirishni qo‘llash;",
+          "source": {
+            "author": "Li et al.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "odam namunasi hayvon ma’lumotlarini kalibrlash uchun ishlatiladi.",
           "source": {
             "author": "Li et al.",
             "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
@@ -600,7 +682,16 @@
           "uncertain": false
         },
         {
-          "text": "Ko‘karishning rang o‘zgarishini ko‘zdan kechirish uzoq vaqtdan beri yosh aniqlash vositasi. U jarohat qarishi haqida foydali ma’lumot beradi va hozir ham almashtirib bo‘lmaydi.",
+          "text": "Ko‘karishning rang o‘zgarishini ko‘zdan kechirish uzoq vaqtdan beri yosh aniqlash vositasi.",
+          "source": {
+            "author": "Li et al.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "U jarohat qarishi haqida foydali ma’lumot beradi va hozir ham almashtirib bo‘lmaydi.",
           "source": {
             "author": "Li et al.",
             "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
@@ -618,7 +709,7 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: ko‘z bilan baholash ≠ ilmiy asoslangan aniq yosh. Shu sababli muallif masalani ilmiy-eksperimental, ayniqsa molekulyar usullar bilan hal etishni ko‘rsatadi.",
+          "text": "Diqqat: ko‘z bilan baholash ≠ ilmiy asoslangan aniq yosh.",
           "source": {
             "author": "Li et al.",
             "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
@@ -628,7 +719,7 @@
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun ko‘z bilan ko‘rish usuli ko‘rgazmali, lekin ishonchsiz? 2) Teri rangi va chuqurlik ko‘karish rangiga qanday ta’sir qilishi mumkin? Doskada chizing: ko‘karish rangiga ta’sir qiluvchi 3 omil (chuqurlik, joylashuv, teri rangi) ro‘yxati. Tipik xato: talabalar ko‘karish rangiga qarab aniq soat yoki kunni aytish mumkin deb o‘ylaydi."
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun ko‘z bilan ko‘rish usuli ko‘rgazmali, lekin ishonchsiz? 2) Teri rangi va chuqurlik ko‘karish rangiga qanday ta’sir qilishi mumkin? Doskada chizing: ko‘karish rangiga ta’sir qiluvchi 3 omil (chuqurlik, joylashuv, teri rangi) ro‘yxati. Tipik xato: talabalar ko‘karish rangiga qarab aniq soat yoki kunni aytish mumkin deb o‘ylaydi. Shu sababli muallif masalani ilmiy-eksperimental, ayniqsa molekulyar usullar bilan hal etishni ko‘rsatadi."
     },
     {
       "title": "Gistologiya va immunogistokimyo",
@@ -674,7 +765,7 @@
           [
             "Gematoksilin-eozin, Berlin ko‘ki",
             "Odatiy gistologik o‘zgarishlar",
-            "Taxminan 6 soatdan; qo‘llanishi cheklangan"
+            "Taxminan 6 soatdan; cheklangan"
           ],
           [
             "Immunogistokimyo",
@@ -683,7 +774,7 @@
           ],
           [
             "Immunofluoressensiya",
-            "Hujayra faollanish bosqichlarini aniqlaydi",
+            "Hujayra faollanish bosqichlari",
             "Erta jarohatlar uchun foydali"
           ],
           [
@@ -726,7 +817,16 @@
           "uncertain": false
         },
         {
-          "text": "Yallig‘lanish hujayralarining erkin tomirdan masofasi nazariy jihatdan erta bosqichga bog‘liq, lekin o‘lchash cheklovi tufayli o‘rganilmagan. Skaner bunga yordam beradi.",
+          "text": "Yallig‘lanish hujayralarining erkin tomirdan masofasi nazariy jihatdan erta bosqichga bog‘liq, lekin o‘lchash cheklovi tufayli o‘rganilmagan.",
+          "source": {
+            "author": "Li et al.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Skaner bunga yordam beradi.",
           "source": {
             "author": "Li et al.",
             "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
@@ -788,7 +888,16 @@
       "title": "Yuqori unumli va oqsil usullari, boshqa yondashuvlar",
       "bullets": [
         {
-          "text": "Gen chipi, yuqori unumli sekvenslash, real-time PCR va 384 mikroplastinka tizimi o‘nlab–yuzlab genni birdan tahlil qiladi. Narx kamayadi, takrorlanuvchanlik oshadi.",
+          "text": "Gen chipi, yuqori unumli sekvenslash, real-time PCR va 384 mikroplastinka tizimi o‘nlab–yuzlab genni birdan tahlil qiladi.",
+          "source": {
+            "author": "Li et al.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Narx kamayadi, takrorlanuvchanlik oshadi.",
           "source": {
             "author": "Li et al.",
             "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
@@ -815,7 +924,7 @@
           "uncertain": false
         },
         {
-          "text": "Elektr impedans spektroskopiyasi jarohat yoshini tez baholash uchun taklif qilingan. Mass-spektrometriya diffuz aksonal jarohat biomarkerlarini aniqlagan; hozircha kam qo‘llanadi.",
+          "text": "Elektr impedans spektroskopiyasi jarohat yoshini tez baholash uchun taklif qilingan.",
           "source": {
             "author": "Li et al.",
             "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
@@ -825,7 +934,7 @@
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Yuqori unumli usul oddiy PCRdan nimasi bilan ustun? 2) Oqsil usullarida laboratoriyalararo solishtirish nega qiyin? Doskada: ikki ustunli ro‘yxat tuzdiring: mRNK usullari va oqsil usullari. Tipik xato: impedans spektroskopiyasi va mass-spektrometriyani sud-tibbiyotda keng qo‘llanadigan usullar deb hisoblash. Ular hozircha istiqbolli, xolos."
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Yuqori unumli usul oddiy PCRdan nimasi bilan ustun? 2) Oqsil usullarida laboratoriyalararo solishtirish nega qiyin? Doskada: ikki ustunli ro‘yxat tuzdiring: mRNK usullari va oqsil usullari. Tipik xato: impedans spektroskopiyasi va mass-spektrometriyani sud-tibbiyotda keng qo‘llanadigan usullar deb hisoblash. Ular hozircha istiqbolli, xolos. Mass-spektrometriya diffuz aksonal jarohat biomarkerlarini aniqlagan; hozircha kam qo‘llanadi."
     },
     {
       "title": "Usullarni solishtirish",
@@ -859,36 +968,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Usullar: afzallik va kamchilik",
-        "nodes": [],
-        "header": [
-          "Usul",
-          "Afzallik",
-          "Kamchilik"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Morfologik",
+            "items": [
+              "+ Ko‘rinarli, ob’ektiv",
+              "– Erta bosqichda cheklangan",
+              "– Rang o‘zgaruvchan"
+            ]
+          },
+          {
+            "title": "Immunogistokimyo",
+            "items": [
+              "+ Erta jarohatda hujayra holati",
+              "– Operator mahoratiga bog‘liq"
+            ]
+          },
+          {
+            "title": "Molekulyar (mRNK)",
+            "items": [
+              "+ Erta o‘zgarishni sezgir aniqlaydi",
+              "– Nazorat gen zarur"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Morfologik",
-            "Ko‘rinarli, ob’ektiv; joylashuvni ko‘rsatadi",
-            "Erta bosqichda cheklangan; rang o‘zgaruvchan"
-          ],
-          [
-            "Immunogistokimyo",
-            "Erta jarohatda hujayra holatini ko‘rsatadi",
-            "Natija operator mahoratiga bog‘liq"
-          ],
-          [
-            "Molekulyar (mRNK)",
-            "Erta o‘zgarishlarni sezgir aniqlaydi",
-            "Qadamlar nozik; nazorat gen zarur"
-          ],
-          [
-            "Birgalikda",
-            "Xatoni kamaytiradi",
-            "Yagona tizim hali taklif etilmagan"
-          ]
-        ]
+        "caption": "Usullar: afzallik (+), kamchilik (–); birgalikda xato kamayadi"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Qaysi usul erta jarohat uchun qulay, qaysi biri kech jarohat uchun? 2) Nega birgalikda qo‘llash xatoni kamaytiradi? Doskada: jadvalni talabalar bilan birga to‘ldiring. Tipik xato: eritrotsitlar ekstravazatini hayotiylikning ishonchli belgisi deb hisoblash. U o‘limdan keyin ham paydo bo‘lishi mumkin."
     },
@@ -1052,7 +1157,16 @@
           "uncertain": false
         },
         {
-          "text": "Sud patologi yallig‘lanish hujayralarining paydo bo‘lishi va yo‘qolishini vaqt bo‘yicha xaritalaydi. Musbat hujayralar ulushi, fibroz va hujayra–tomir masofasi jarohat darajasiga bog‘liq.",
+          "text": "Sud patologi yallig‘lanish hujayralarining paydo bo‘lishi va yo‘qolishini vaqt bo‘yicha xaritalaydi.",
+          "source": {
+            "author": "Li et al.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Musbat hujayralar ulushi, fibroz va hujayra–tomir masofasi jarohat darajasiga bog‘liq.",
           "source": {
             "author": "Li et al.",
             "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
@@ -1070,7 +1184,7 @@
           "uncertain": false
         },
         {
-          "text": "Gistologik musbat reaktivlik odatda 24 soatdan keyin ko‘rinadi. mRNK va oqsil o‘zgarishlari odatda 12 soatdayoq aniqlanadi. Diqqat: erta jarohatga mRNK/oqsil, kechiga gistologiya mos.",
+          "text": "Gistologik musbat reaktivlik odatda 24 soatdan keyin ko‘rinadi. mRNK va oqsil o‘zgarishlari odatda 12 soatdayoq aniqlanadi.",
           "source": {
             "author": "Li et al.",
             "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
@@ -1080,7 +1194,7 @@
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun sud patologi yallig‘lanish hujayralarining paydo bo‘lishi va yo‘qolishini xronologik xaritalaydi? 2) Nega erta jarohatda mRNK, kechida gistologiya qulayroq? Doskada: vaqt o‘qini chizing (12 soat – mRNK/oqsil, 24 soat – gistologiya). Tipik xato: gistologiya erta jarohatda ham eng sezgir deb o‘ylash. Aslida mRNK va oqsil o‘zgarishlari ertaroq aniqlanadi."
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun sud patologi yallig‘lanish hujayralarining paydo bo‘lishi va yo‘qolishini xronologik xaritalaydi? 2) Nega erta jarohatda mRNK, kechida gistologiya qulayroq? Doskada: vaqt o‘qini chizing (12 soat – mRNK/oqsil, 24 soat – gistologiya). Tipik xato: gistologiya erta jarohatda ham eng sezgir deb o‘ylash. Aslida mRNK va oqsil o‘zgarishlari ertaroq aniqlanadi. Diqqat: erta jarohatga mRNK/oqsil, kechiga gistologiya mos."
     },
     {
       "title": "O‘limdan keyingi barqarorlik: marker tanlash",
@@ -1114,36 +1228,30 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Marker barqarorligi",
-        "nodes": [],
-        "header": [
-          "Marker",
-          "Turi",
-          "Barqarorlik"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Arginino-suksinat liaza",
+            "value": "18",
+            "unit": "soat (mRNK)"
+          },
+          {
+            "label": "SNAT2 (aminokislota)",
+            "value": "48",
+            "unit": "soat (mRNK)"
+          },
+          {
+            "label": "LC3-II va p62",
+            "value": "4",
+            "unit": "kun (oqsil)"
+          },
+          {
+            "label": "Kannabinoid retseptor-2",
+            "value": "3 (parchalangan)",
+            "unit": "soat (mRNK)"
+          }
         ],
-        "rows": [
-          [
-            "Arginino-suksinat liaza",
-            "mRNK",
-            "18 soat barqaror"
-          ],
-          [
-            "SNAT2 (aminokislota tashuvchi)",
-            "mRNK",
-            "48 soat barqaror"
-          ],
-          [
-            "LC3-II va p62",
-            "oqsil",
-            "4 kun barqaror"
-          ],
-          [
-            "Kannabinoid retseptor-2",
-            "mRNK",
-            "3 soatda keskin parchalangan"
-          ]
-        ]
+        "caption": "Marker barqarorligi o‘limdan keyin"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nima uchun barqarorlik marker tanlashning birinchi sharti? 2) Parchalanish tezligi mRNK va oqsilda qanday farq qiladi? Doskada: jadvalni ko‘chirib, markerlarni barqarorlik bo‘yicha eng qisqadan eng uzungacha tartiblang. Tipik xato: barcha mRNKlar bir xil tez parchalanadi deb o‘ylash. Aslida SNAT2 mRNKsi 48 soat barqaror."
     },
@@ -1265,31 +1373,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Teri, mushak va miya farqi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Teri, mushak",
-          "Bosh miya"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Teri, mushak",
+            "items": [
+              "Neytrofil, makrofag kelishi",
+              "Satellit hujayralar ko‘payadi"
+            ]
+          },
+          {
+            "title": "Bosh miya",
+            "items": [
+              "Yallig‘lanish teri va mushakka o‘xshash",
+              "Glial hujayralar migratsiyasi",
+              "Neyronlar yangilanmaydi",
+              "Qon quyilish yoshi H-E va IGK bilan"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Yallig‘lanish",
-            "Neytrofil, makrofag kelishi",
-            "Teri va mushakka o‘xshash"
-          ],
-          [
-            "Mahalliy reaksiya",
-            "Xos reaksiya ko‘rsatilmagan",
-            "Glial hujayralar migratsiyasi"
-          ],
-          [
-            "Tiklanish",
-            "Satellit hujayralar ko‘payadi",
-            "Neyronlar yangilanmaydi"
-          ]
-        ]
+        "caption": "Teri, mushak va miya farqi"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega neyronlar yangilanmasligi miya jarohatini baholashga ahamiyatli? 2) Qon quyilishning to‘rt turini qanday ajratasiz? Doskada: bosh miya qatlamlarining sodda kesimini chizib, epidural, subdural, subaraxnoidal va parenximatoz qon quyilish o‘rnini belgilang. Tipik xato: miyadagi yallig‘lanishni butunlay teridan farqli deb o‘ylash. Aslida u o‘xshash, faqat glial hujayralar migratsiyasi MAT uchun xos."
     },
@@ -1411,19 +1514,168 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Tadqiqotlarni saralash jarayoni",
-        "nodes": [
-          "Qidiruv: 5 740 yozuv",
-          "Dublikatsiz: 3 812 yozuv",
-          "Annotatsiya: 3 721 chiqarildi",
-          "To‘liq matn: 91 ta, 80 chiqdi",
-          "Kiritildi: 11 tadqiqot"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Qidiruv yozuvlari",
+            "value": "5 740"
+          },
+          {
+            "label": "Dublikatsiz",
+            "value": "3 812"
+          },
+          {
+            "label": "Annotatsiyadan chiqdi",
+            "value": "3 721"
+          },
+          {
+            "label": "To‘liq matn baholandi",
+            "value": "91"
+          },
+          {
+            "label": "To‘liq matndan chiqdi",
+            "value": "80"
+          },
+          {
+            "label": "Kiritilgan tadqiqot",
+            "value": "11"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "PRISMA: tadqiqotlarni saralash"
       },
       "teacher_notes": "Vaqt: 4–5 daq. Muhokama: 1) Nima uchun faqat hayvon tadqiqotlari chiqarib tashlandi? 2) Nima uchun 5 740 yozuvdan faqat 11 tasi qoldi? Doskada chizish: 5 bosqichli voronka sxemasini raqamlari bilan chizing. Tipik xato: 3 812 va 91 raqamlarini aralashtirish; tizimli sharhni oddiy sharh bilan adashtirish."
+    },
+    {
+      "title": "Kiritilgan tadqiqotlar tavsifi",
+      "bullets": [
+        {
+          "text": "Ko‘pchilik tadqiqot odam autopsiyasiga asoslangan kuzatuv; shikastlanmagan teri ichki nazorat sifatida olingan, bittasida tirik odamlar tekshirilgan.",
+          "source": {
+            "author": "Ahmed et al.",
+            "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
+            "page": "PMID 41631082 (Study Characteristics)"
+          }
+        },
+        {
+          "text": "Jarohat turlari: pichoq va kesilgan, yirtilgan, shilingan, ko‘karish, jarrohlik kesmasi, o‘tmas shikast.",
+          "source": {
+            "author": "Ahmed et al.",
+            "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
+            "page": "PMID 41631082 (Study Characteristics)"
+          }
+        },
+        {
+          "text": "Vaqt oralig‘i daqiqalardan bir necha haftagacha; tadqiqotlar jarohatlarni oldindan belgilangan intervallarga bo‘lgan.",
+          "source": {
+            "author": "Ahmed et al.",
+            "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
+            "page": "PMID 41631082 (Study Characteristics)"
+          }
+        },
+        {
+          "text": "Asosiy usul — parafinli kesmalarda immunogistokimyo (yarim miqdoriy, morfometrik yoki ehtimollik asosida baholash).",
+          "source": {
+            "author": "Ahmed et al.",
+            "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
+            "page": "PMID 41631082 (Study Characteristics)"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "11 ta tadqiqot",
+        "children": [
+          {
+            "label": "Material",
+            "items": [
+              "Odam autopsiyasi",
+              "Nazorat: shikastlanmagan teri"
+            ]
+          },
+          {
+            "label": "Jarohat turi",
+            "items": [
+              "Pichoq, kesilgan, yirtilgan",
+              "Shilingan, ko‘karish, o‘tmas"
+            ]
+          },
+          {
+            "label": "Muddat",
+            "items": [
+              "Daqiqalardan haftagacha"
+            ]
+          },
+          {
+            "label": "Usul",
+            "items": [
+              "Parafinli kesmada IGK",
+              "Yarim miqdoriy, morfometrik"
+            ]
+          }
+        ],
+        "caption": "Kiritilgan tadqiqotlar xususiyatlari"
+      },
+      "teacher_notes": "Vaqt: 3 daq."
+    },
+    {
+      "title": "Tizimli sharh sifati va cheklovlari",
+      "bullets": [
+        {
+          "text": "QUADAS-2 bo‘yicha tanlash va etalon (jarohat yoshi manbasi) barcha tadqiqotda past xavfli deb baholandi.",
+          "source": {
+            "author": "Ahmed et al.",
+            "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
+            "page": "PMID 41631082 (Quality Assessment)"
+          }
+        },
+        {
+          "text": "Indeks test sohasida farq bor: eski tadqiqotlarda ko‘r qilish va chegara qiymatlari yetarli yozilmagan, yangilarida standart ball va aniq chegaralar bor.",
+          "source": {
+            "author": "Ahmed et al.",
+            "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
+            "page": "PMID 41631082 (Quality Assessment)"
+          }
+        },
+        {
+          "text": "Tadqiqotlar jarohat turi, namuna olish, antitanalar, baholash tizimi va PMI bo‘yicha juda xilma-xil bo‘lgani uchun miqdoriy meta-tahlil qilinmadi.",
+          "source": {
+            "author": "Ahmed et al.",
+            "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
+            "page": "PMID 41631082 (Limitations)"
+          }
+        },
+        {
+          "text": "Ko‘p tadqiqot yarim miqdoriy yoki kuzatuvchiga bog‘liq baholashga tayangan; yondosh kasalliklar va muhit omillari izchil hisobga olinmagan.",
+          "source": {
+            "author": "Ahmed et al.",
+            "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
+            "page": "PMID 41631082 (Limitations)"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Past xavf",
+            "items": [
+              "Tanlash va etalon (barcha)",
+              "Oqim va vaqt (asosan)",
+              "Aksariyat tadqiqot umuman past xavfli"
+            ]
+          },
+          {
+            "title": "Cheklovlar",
+            "items": [
+              "Metodik xilma-xillik, meta-tahlil yo‘q",
+              "Yarim miqdoriy, kuzatuvchiga bog‘liq",
+              "Yondosh kasalliklar kam hisobga olingan"
+            ]
+          }
+        ],
+        "caption": "Tadqiqotlar sifati (QUADAS-2) va cheklovlar"
+      },
+      "teacher_notes": "Vaqt: 4 daq."
     },
     {
       "title": "Juda erta jarohatlar: daqiqalardan 1 soatgacha",
@@ -1457,31 +1709,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Erta belgilar vaqt bo‘yicha",
-        "nodes": [],
-        "header": [
-          "Vaqt",
-          "Topilma"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "3 daqiqa",
+            "text": "P-selektin kuchli musbat reaksiya"
+          },
+          {
+            "title": "15 daqiqa",
+            "text": "TNF-α musbat semiz hujayralar ko‘paydi"
+          },
+          {
+            "title": "Daqiqalar",
+            "text": "Semiz hujayra degranulyatsiyasi"
+          },
+          {
+            "title": "Qisqa oraliq",
+            "text": "Koagulyatsiya belgilari tez ortadi"
+          }
         ],
-        "rows": [
-          [
-            "3 daqiqa",
-            "P-selektin kuchli musbat reaksiya"
-          ],
-          [
-            "15 daqiqa",
-            "TNF-α musbat semiz hujayralar ko‘paydi"
-          ],
-          [
-            "Daqiqalar",
-            "Semiz hujayra degranulyatsiyasi"
-          ],
-          [
-            "Qisqa oraliq",
-            "Koagulyatsiya belgilari tez ortadi"
-          ]
-        ]
+        "caption": "Erta belgilar vaqt bo‘yicha"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nima uchun oddiy gistologiya bu bosqichda yetarli emas? 2) TNF-α tirik va o‘limdan keyingi jarohatni qanday ajratadi? Doskada chizish: 0–1 soat vaqt chizig‘ini 3 va 15 daqiqa belgilari bilan chizing. Tipik xato: CD62p va P-selektinni turli molekula deb o‘ylash (bular bir xil). Eslatma: 3 daqiqa — P-selektin kuzatuvi Li et al. (PMID 32490306) sharhida Dressler (1998) ishiga tayanadi."
     },
@@ -1517,36 +1764,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Markerlar bosqichlar bo‘yicha",
-        "nodes": [],
-        "header": [
-          "Bosqich",
-          "Vaqt",
-          "Markerlar"
+        "kind": "tree",
+        "root": "Markerlar bosqichlari",
+        "children": [
+          {
+            "label": "Juda erta",
+            "items": [
+              "Daqiqa – 1 soat",
+              "TNF-α, triptaza, CD62p"
+            ]
+          },
+          {
+            "label": "Erta",
+            "items": [
+              "Bir necha soat",
+              "Semiz hujayra, IL-1β, IL-6, TNF-α"
+            ]
+          },
+          {
+            "label": "O‘rta (hujayralar)",
+            "items": [
+              "1–10 kun",
+              "CD14, CD68"
+            ]
+          },
+          {
+            "label": "O‘rta (kimyokinlar)",
+            "items": [
+              "1–10 kun",
+              "IL-8, MCP-1, MIP-1α"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Juda erta",
-            "daqiqa – 1 soat",
-            "TNF-α, triptaza, CD62p"
-          ],
-          [
-            "Erta",
-            "bir necha soat",
-            "semiz hujayra, IL-1β, IL-6, TNF-α"
-          ],
-          [
-            "O‘rta (hujayralar)",
-            "1–10 kun",
-            "CD14, CD68"
-          ],
-          [
-            "O‘rta (kimyokinlar)",
-            "1–10 kun",
-            "IL-8, MCP-1, MIP-1α"
-          ]
-        ]
+        "caption": "Markerlar bosqichlar bo‘yicha"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nima uchun sitokinlar hujayra infiltratsiyasidan oldin o‘zgaradi? 2) Nima uchun 10 kundan yoshroq jarohatda bir nechta marker birgalikda aniqroq? Doskada: vaqt o‘qi chizib, TNF-α, CD14 va neytrofil/makrofag cho‘qqilarini joylashtiring. Tipik xato: semiz hujayra va leykotsit infiltratsiyasini bir xil vaqtga qo‘yish; ular alohida bosqichlar. Diqqat: IL-8, MCP-1, MIP-1α — kimyokinlar, CD14 va CD68 esa hujayra markerlari (CD — hujayra yuzasi antigenlari). IHC — immunogistokimyo."
     },
@@ -1554,7 +1804,7 @@
       "title": "Kech jarohatlar: 7 kun va undan keyin",
       "bullets": [
         {
-          "text": "Kech jarohatlarda gipoksiyaga javob, angiogenez (yangi qon tomirlar hosil bo‘lishi), hujayra stressi va hujayra tashqi matriksining qayta qurilishi belgilari ustun bo‘ladi.",
+          "text": "Kech jarohatlarda gipoksiyaga javob, angiogenez (yangi qon tomirlar hosil bo‘lishi), hujayra stressi va matriks qayta qurilishi belgilari ustun bo‘ladi.",
           "source": {
             "author": "Ahmed et al.",
             "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
@@ -1563,7 +1813,7 @@
           "uncertain": false
         },
         {
-          "text": "Markerlar: ORP150 (kislorod bilan boshqariladigan oqsil 150), ubikvitin, VEGF (qon tomir endoteliy o‘sish omili), matriks metalloproteinazalar, kollagenlar, akvaporinlar.",
+          "text": "Markerlar: ORP150 (kislorod bilan boshqariluvchi oqsil), ubikvitin, VEGF, matriks metalloproteinazalar, kollagenlar, akvaporinlar.",
           "source": {
             "author": "Ahmed et al.",
             "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
@@ -1572,7 +1822,16 @@
           "uncertain": false
         },
         {
-          "text": "Gipoksiya oqsillari va ubikvitin dastlab kam, 1 kundan keyin ortadi, 7–14 kunda cho‘qqiga chiqib, so‘ng pasayadi. Granulyatsion to‘qima rivojlanishi bilan hujayra turlari almashadi.",
+          "text": "Gipoksiya oqsillari va ubikvitin dastlab kam, 1 kundan keyin ortadi, 7–14 kunda cho‘qqiga chiqib, so‘ng pasayadi.",
+          "source": {
+            "author": "Ahmed et al.",
+            "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
+            "page": "PMID 41631082"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Granulyatsion to‘qima rivojlanishi bilan hujayra turlari almashadi.",
           "source": {
             "author": "Ahmed et al.",
             "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
@@ -1592,6 +1851,66 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nima uchun kech jarohatlarda muddatni aniq aytish qiyin? 2) Qaysi markerlar to‘qima qayta qurilishini ko‘rsatadi? Doskada: 0–14 kun o‘qida ORP150 va ubikvitin egri chizig‘ini (7–14 kunda cho‘qqi) chizing. Tipik xato: 7–14 kundagi cho‘qqini jarohat 14 kundan keyin ham o‘sishda davom etadi deb tushunish; cho‘qqidan keyin pasayish bor."
+    },
+    {
+      "title": "Bosqichlar bo‘yicha marker panellari",
+      "bullets": [
+        {
+          "text": "Juda erta (daqiqalar): IGK molekulyar o‘zgarishni gistologik yallig‘lanishdan oldin aniqlaydi; TNF-α musbat semiz hujayralar 15 daqiqada ko‘payadi.",
+          "source": {
+            "author": "Ahmed et al.",
+            "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
+            "page": "PMID 41631082"
+          }
+        },
+        {
+          "text": "Erta (soatlar): semiz hujayralar vaqtincha ko‘payadi; IL-1β, IL-6, TNF-α 1–2 soatda cho‘qqiga chiqadi.",
+          "source": {
+            "author": "Ahmed et al.",
+            "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
+            "page": "PMID 41631082"
+          }
+        },
+        {
+          "text": "O‘rta: CD14 1–3 kunda cho‘qqiga chiqadi; neytrofillar makrofagdan oldin cho‘qqiga erishadi; birlashgan modellar <10 kunlik jarohatda aniqroq.",
+          "source": {
+            "author": "Ahmed et al.",
+            "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
+            "page": "PMID 41631082"
+          }
+        },
+        {
+          "text": "Kech: gipoksiya oqsillari va ubikvitin 1 kundan keyin ortib, 7–14 kunda cho‘qqiga chiqadi.",
+          "source": {
+            "author": "Ahmed et al.",
+            "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
+            "page": "PMID 41631082"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Juda erta",
+            "text": "Daqiqalar: TNF-α, triptaza, P-selektin"
+          },
+          {
+            "title": "Erta",
+            "text": "Soatlar: semiz hujayra, IL-1β, IL-6"
+          },
+          {
+            "title": "O‘rta",
+            "text": "1–10 kun: CD14, CD68, kimyokinlar"
+          },
+          {
+            "title": "Kech",
+            "text": "7–14 kun: ORP150, ubikvitin, angiogenez"
+          }
+        ],
+        "caption": "Jarohat yoshi bosqichlari va markerlar"
+      },
+      "teacher_notes": "Vaqt: 4 daq. Diqqat: bitta marker barcha bosqichni qoplamaydi."
     },
     {
       "title": "Tezkor savol: markerlar va vaqt oralig‘i",
@@ -1757,7 +2076,16 @@
           "uncertain": false
         },
         {
-          "text": "Morfologiya va bir-birini to‘ldiruvchi markerlar paneli kerak: erta — gemostaz, mast hujayra, sitokinlar; o‘rta — immun hujayra, xemokinlar; kech — gipoksiya, angiogenez, remodellash.",
+          "text": "Morfologiya va bir-birini to‘ldiruvchi markerlar paneli kerak: erta — gemostaz, mast hujayra, sitokinlar; o‘rta — immun hujayra, xemokinlar;",
+          "source": {
+            "author": "Ahmed et al.",
+            "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
+            "page": "PMID 41631082"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "kech — gipoksiya, angiogenez, remodellash.",
           "source": {
             "author": "Ahmed et al.",
             "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
@@ -1857,11 +2185,11 @@
       "question": "Tadqiqotchi jarohatdan keyingi vaqtni aniq nazorat qilib, natijalarning takrorlanuvchanligini oshirmoqchi. Qaysi yondashuv bunga eng mos keladi?",
       "options": [
         "Hujjatlari to‘liq bo‘lmagan autopsiya namunalari",
-        "Hayvon tajribalari",
         "Faqat jasaddagi rangning vizual baholanishi",
+        "Hayvon tajribalari",
         "Sog‘lom odamlardan olingan namunalar"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Hayvon tajribalarining afzalligi shundaki, ularni nazorat qilish mumkin, jarohatdan keyingi vaqt ham boshqariladi. Bu natijalarning takrorlanuvchanligi va ishonchliligini oshiradi. Cheklovi shundaki, natijalarning odamga qo‘llanishi hali noaniq.",
       "source": {
         "author": "Li et al.",
@@ -1889,11 +2217,11 @@
       "question": "Tirik odamdagi jarohatdan namuna faqat surtma (swab) yordamida, noinvaziv yo‘l bilan olindi. Qanday xavf yuzaga kelishi mumkin?",
       "options": [
         "Namuna chirib, natija yolg‘on-musbat bo‘lishi mumkin",
-        "Namuna hajmi yetmay, yolg‘on-manfiy natija chiqishi mumkin",
+        "Namuna hujayralari mRNK ni umuman saqlamaydi",
         "Namunada eritrotsitlar ekstravazatsiyasi ko‘payib ketadi",
-        "Namuna hujayralari mRNK ni umuman saqlamaydi"
+        "Namuna hajmi yetmay, yolg‘on-manfiy natija chiqishi mumkin"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Tirik odamlardan noinvaziv usulda olingan namunaning hajmi ko‘pincha yetarli bo‘lmaydi. Bu ishonchsiz, ba’zan yolg‘on-manfiy natijalarga olib keladi.",
       "source": {
         "author": "Li et al.",
@@ -2030,19 +2358,19 @@
       }
     },
     {
-      "question": "Diabetli marhumda teri jarohatining yoshi baholanmoqda. Sog‘lom odam jarohatiga mo‘ljallangan parametrlar haqida nima deyish to‘g‘ri?",
+      "question": "Klassik gistologiyaning erta davrdagi asosiy cheklovi nima?",
       "options": [
-        "Ular diabetda ham aynan bir xil aniqlik beradi",
-        "Ular diabetli jarohatga mos kelmasligi mumkin",
-        "Ular faqat teri rangiga qarab belgilanishi kerak",
-        "Ular faqat miya jarohatlarida o‘zgarib turadi"
+        "Sezgirligi va xosligi yetarli emas, vaqt oraliqlari ustma-ust tushadi",
+        "Faqat kuyish jarohatlarida qo‘llanadi",
+        "Faqat tirik odamlarda bajariladi",
+        "Faqat 1 haftadan keyingi jarohatlarda ishlaydi"
       ],
-      "correct_index": 1,
-      "explanation": "Sichqonlarda diabetli jarohatning tiklanishi oddiy jarohatdan farq qilgan. Shuning uchun normal jarohat yoshini baholash parametrlari diabetli jarohatga mos kelmasligi mumkin. Periferik qon tomir kasalligi va immunosupressiyada ham tiklanish qiyinlashadi yoki kechikadi. Bunday holatlar uchun boshqa parametrlarni izlash kerak.",
+      "correct_index": 0,
+      "explanation": "Qon quyilishi, shish, yallig‘lanish infiltratsiyasi va fibroblast proliferatsiyasi umumiy ramkani beradi, lekin erta davrda sezgirligi va xosligi yetarli emas; vaqt oraliqlari ustma-ust tushadi.",
       "source": {
-        "author": "Li et al.",
-        "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
-        "page": "PMID 32490306"
+        "author": "Ahmed et al.",
+        "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
+        "page": "PMID 41631082 (Introduction)"
       }
     },
     {
@@ -2062,19 +2390,19 @@
       }
     },
     {
-      "question": "Teri jarohatida 15 daqiqadan boshlab TNF-α musbat semiz hujayralar ko‘paygan. Bu birinchi navbatda nimani qo‘llab-quvvatlaydi?",
+      "question": "QUADAS-2 bo‘yicha sifat baholashda qaysi sohada tadqiqotlar orasida eng ko‘p farq bo‘lgan?",
       "options": [
-        "Jarohat tirik paytda yetkazilganligini",
-        "Jarohat 10 kundan oshiq ekanligini",
-        "Jarohat o‘limdan keyin hosil bo‘lganini",
-        "Jarohatda yiringli yallig‘lanish borligini"
+        "Indeks test (marker baholash)",
+        "Bemorlarni tanlash",
+        "Etalon (jarohat yoshi manbasi)",
+        "Oqim va vaqt"
       ],
       "correct_index": 0,
-      "explanation": "TNF-α musbat semiz hujayralar 15 daqiqadayoq ko‘payib, omon qolish vaqti bilan o‘sib borgan. Bu belgi tirikdagi (vital) jarohatni o‘limdan keyingi shikastdan ajratishga yordam bergan. Juda erta jarohatlarda molekulyar o‘zgarish gistologik yallig‘lanishdan oldin seziladi.",
+      "explanation": "Tanlash va etalon barcha tadqiqotda past xavfli deb baholangan; farq indeks test sohasida bo‘lgan: ba’zi eski ishlarda ko‘r qilish va chegara qiymatlari yetarli yozilmagan.",
       "source": {
         "author": "Ahmed et al.",
         "title": "Histological and Immunohistochemical Biomarkers for Wound Age Estimation in Human Skin: A Systematic Review, Cureus",
-        "page": "PMID 41631082"
+        "page": "PMID 41631082 (Quality Assessment)"
       }
     },
     {

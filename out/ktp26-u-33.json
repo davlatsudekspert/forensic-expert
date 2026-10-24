@@ -5,7 +5,7 @@
       "title": "Kirish: mavzu, maqsad va reja",
       "bullets": [
         {
-          "text": "13-bob ashyoviy dalillarni sud-tibbiy tekshirishga bag‘ishlangan: qon, maniy, boshqa ajratmalar, soch, sud-gistologik, tibbiy-kriminalistik, sud-kimyoviy va DNK tekshiruvlari ko‘rib chiqiladi.",
+          "text": "13-bob ashyoviy dalillar tekshiruviga bag‘ishlangan: qon, maniy, ajratmalar, soch, sud-gistologik, tibbiy-kriminalistik, sud-kimyoviy va DNK tekshiruvlari.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -48,7 +48,7 @@
       "title": "Ashyoviy dalil tushunchasi",
       "bullets": [
         {
-          "text": "Jinoyat-protsessual kodeksi (JPK) 203-moddasiga ko‘ra ashyoviy dalil — kelib chiqishi, kimga tegishliligi, nimaga ishlatilganini aniqlash mumkin bo‘lgan alomatli narsa.",
+          "text": "JPK 203-moddasiga ko‘ra ashyoviy dalil — kelib chiqishi, kimga tegishliligi, nimaga ishlatilganini aniqlash mumkin bo‘lgan alomatli narsa.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -75,7 +75,16 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: tekshiruvni klinitsist-shifokorlar emas, maxsus mutaxassislar o‘tkazadi; umumiy amaliyot shifokorlari faqat joyni ko‘zdan kechirish va namuna olishga jalb etilishi mumkin.",
+          "text": "Diqqat: tekshiruvni klinitsist-shifokorlar emas, maxsus mutaxassislar o‘tkazadi;",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "303"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "umumiy amaliyot shifokorlari faqat joyni ko‘zdan kechirish va namuna olishga jalb etilishi mumkin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -119,31 +128,36 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Bo‘limlar va ularning ob’ektlari",
-        "nodes": [],
-        "header": [
-          "Bo‘lim",
-          "Ob’ekt/vazifa"
+        "kind": "tree",
+        "root": "Ashyoviy dalil bo‘limlari",
+        "children": [
+          {
+            "label": "Sud-biologik",
+            "items": [
+              "Qon va maniy izlari"
+            ]
+          },
+          {
+            "label": "Sud-gistologik",
+            "items": [
+              "A’zo, to‘qima bo‘lakchalari"
+            ]
+          },
+          {
+            "label": "Tibbiy kriminalistika",
+            "items": [
+              "Diagnostik, identifikatsion",
+              "Situatsion masalalar"
+            ]
+          },
+          {
+            "label": "Sud kimyo",
+            "items": [
+              "Toksik moddalar tahlili"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Sud-biologik",
-            "Qon va maniy izlari"
-          ],
-          [
-            "Sud-gistologik",
-            "A’zo, to‘qima bo‘lakchalari"
-          ],
-          [
-            "Tibbiy kriminalistika",
-            "Diagnostik, identifikatsion, situatsion"
-          ],
-          [
-            "Sud kimyo",
-            "Toksik moddalar tahlili"
-          ]
-        ]
+        "caption": "Bo‘limlar va ularning ob’ektlari"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: qon dog‘i va to‘qima bo‘lakchasi qaysi bo‘limlarda tekshiriladi? Doskada: jadvalni ko‘chirib, har bo‘limga bittadan misol qo‘shing. Tipik xato: sud-gistologik va sud-biologik bo‘limlarni aralashtirish (qon va maniy — sud-biologik, to‘qima bo‘lakchalari — sud-gistologik)."
     },
@@ -222,31 +236,37 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Qon izlari turlari",
-        "nodes": [],
-        "header": [
-          "Iz turi",
-          "Sharoit"
+        "kind": "tree",
+        "root": "Qon izlari turlari",
+        "children": [
+          {
+            "label": "Qon ko‘lmagi",
+            "items": [
+              "Singdirmaydigan material",
+              "Ko‘p qon yo‘qotish"
+            ]
+          },
+          {
+            "label": "Singdirilgan iz",
+            "items": [
+              "Namlikni yaxshi oladigan material"
+            ]
+          },
+          {
+            "label": "Oqma iz",
+            "items": [
+              "Qon qiya yuza bo‘ylab oqadi"
+            ]
+          },
+          {
+            "label": "Surtma va bosma",
+            "items": [
+              "Sirpanish — surtma",
+              "Sirpanishsiz — bosma"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Qon ko‘lmagi",
-            "Singdirmaydigan material, ko‘p qon yo‘qotish"
-          ],
-          [
-            "Singdirilgan iz",
-            "Namlikni yaxshi oladigan material"
-          ],
-          [
-            "Oqma iz",
-            "Qon qiya yuza bo‘ylab oqadi"
-          ],
-          [
-            "Surtma va bosma",
-            "Sirpanish — surtma; sirpanishsiz — bosma"
-          ]
-        ]
+        "caption": "Qon izlari turlari va sharoiti"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Dog‘ shakli qon qaysi yo‘nalishda harakatlanganini qanday ko‘rsatadi? 2) Sachrama izlar qanday holatlarda paydo bo‘ladi? Doskada: noksimon dog‘ni chizing va ensiz tomoni qayerga qarashini belgilang. Tipik xato: surtma va bosma izlarni aralashtirish — bosma izning shakli va o‘lchami jismning ta’sir yuzasiga mos keladi, surtma esa sirpanishdan hosil bo‘ladi."
     },
@@ -342,36 +362,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Taxminiy va ishonchli usullar",
-        "nodes": [],
-        "header": [
-          "Usul turi",
-          "Misol",
-          "Natijasi"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Taxminiy",
+            "items": [
+              "Benzidin, peroksid, lyuminol",
+              "Fenolftalein, ultrabinafsha nur",
+              "Faqat gumon; soxta musbat mumkin"
+            ]
+          },
+          {
+            "title": "Ishonchli",
+            "items": [
+              "Spektral, xromatografik",
+              "Qon borligini tasdiqlaydi"
+            ]
+          },
+          {
+            "title": "Eskirgan",
+            "items": [
+              "Mikroskopik, mikrokristallik",
+              "Amaliyotda qo‘llanilmaydi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Taxminiy",
-            "Benzidin, peroksid, lyuminol",
-            "Faqat gumon qilish mumkin"
-          ],
-          [
-            "Taxminiy",
-            "Fenolftalein, ultrabinafsha nur",
-            "Soxta musbat berishi mumkin"
-          ],
-          [
-            "Ishonchli",
-            "Spektral, xromatografik",
-            "Qon borligini tasdiqlaydi"
-          ],
-          [
-            "Eskirgan",
-            "Mikroskopik, mikrokristallik",
-            "Amaliyotda qo‘llanilmaydi"
-          ]
-        ]
+        "caption": "Qon borligini aniqlash usullari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega taxminiy sinamalar hodisa joyida foydali, ammo ekspertizada yetarli emas? 2) Fenolftaleinda natija nega 10-15 soniyada baholanadi (bir daqiqadan keyingi rang inobatga olinmaydi)? Doskada: ikki ustunli sxema chizing: chapda taxminiy, o‘ngda ishonchli usullar. Tipik xato: benzidin yoki peroksid musbat bo‘lsa, qon borligi isbotlandi deb o‘ylash."
     },
@@ -424,7 +440,16 @@
       "title": "Qonning tur, guruh va shaxsga mansubligi",
       "bullets": [
         {
-          "text": "Tur: Chistovich–Ulengut reaksiyasida inson oqsiliga qarshi zardob qo‘shilsa, pretsipitatsiya halqasi hosil bo‘ladi. ABAcard testi qon borligi va insonga mansubligini birga ko‘rsatadi.",
+          "text": "Tur: Chistovich–Ulengut reaksiyasida inson oqsiliga qarshi zardob qo‘shilsa, pretsipitatsiya halqasi hosil bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "306-307"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "ABAcard testi qon borligi va insonga mansubligini birga ko‘rsatadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -442,7 +467,7 @@
           "uncertain": false
         },
         {
-          "text": "Jins X- va Y-xromatin yoki DNK orqali, hudud tegishli shilliq qavat epiteliysi hujayralari orqali aniqlanadi. Homiladorlik xoriongonadotrop gormon bilan tekshiriladi, lekin qon dog‘ida qat’iy emas.",
+          "text": "Jins X- va Y-xromatin yoki DNK orqali, hudud tegishli shilliq qavat epiteliysi hujayralari orqali aniqlanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -451,23 +476,32 @@
           "uncertain": false
         },
         {
-          "text": "Katta yoshlilar qonida HbA, go‘daklarda HbF bo‘ladi va ular ishqoriy denaturatsiya bilan farqlanadi. 15-20 kunlik dog‘da bu imkoniyat bo‘lmaydi.",
+          "text": "Homiladorlik xoriongonadotrop gormon bilan tekshiriladi, lekin qon dog‘ida qat’iy emas.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "308"
+            "page": "307-308"
           },
           "uncertain": false
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Nega DNK-tekshiruvi guruhiy tizimlarni taqqoslashdan ishonchliroq? 2) Qon dog‘i yoshi ma’lum bo‘lmasa, go‘dak va katta yoshli qonini farqlash qachon mumkin? Doskada: tur, guruh, jins, hudud, homiladorlik, yosh uchun usullar ro‘yxatini yozing. Tipik xato: qon dog‘ida homiladorlikni qat’iy aniqlash mumkin deb o‘ylash."
+      "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Nega DNK-tekshiruvi guruhiy tizimlarni taqqoslashdan ishonchliroq? 2) Qon dog‘i yoshi ma’lum bo‘lmasa, go‘dak va katta yoshli qonini farqlash qachon mumkin? Doskada: tur, guruh, jins, hudud, homiladorlik, yosh uchun usullar ro‘yxatini yozing. Tipik xato: qon dog‘ida homiladorlikni qat’iy aniqlash mumkin deb o‘ylash. Katta yoshlilar qonida HbA, go‘daklarda HbF bo‘ladi va ular ishqoriy denaturatsiya bilan farqlanadi. 15-20 kunlik dog‘da bu imkoniyat bo‘lmaydi."
     },
     {
       "title": "Voqea tahlili: qon dog‘ini tekshirish",
       "bullets": [
         {
-          "text": "Vaziyat: hodisa joyidan olingan kichik kiyimda quruq qon dog‘i bor. Bunday buyum laboratoriyaga butunligicha olinadi. Katta buyumdan dog‘li va toza (kontrol) bo‘lak qirqiladi.",
+          "text": "Vaziyat: hodisa joyidan olingan kichik kiyimda quruq qon dog‘i bor. Bunday buyum laboratoriyaga butunligicha olinadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "304"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Katta buyumdan dog‘li va toza (kontrol) bo‘lak qirqiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -528,7 +562,16 @@
           "uncertain": false
         },
         {
-          "text": "3-savol: tomchi harakatdagi tana qismidan yoki qiya yuzaga tushsa-chi? Javob: dog‘ noksimon, undov belgisi shaklida; ensiz tomoni harakat yo‘nalishi tomonda bo‘ladi.",
+          "text": "3-savol: tomchi harakatdagi tana qismidan yoki qiya yuzaga tushsa-chi?",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "304"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Javob: dog‘ noksimon, undov belgisi shaklida; ensiz tomoni harakat yo‘nalishi tomonda bo‘ladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -553,7 +596,16 @@
       "title": "Maniy izlarini topish va olish",
       "bullets": [
         {
-          "text": "Dog‘lar ko‘z yoki lupa bilan qidiriladi. Singdiruvchi matoda chetlari landkartasimon, kraxmal zichligida; to‘q matoda oqimtir, yorqin matoda sargimtir yoki kul rang bo‘ladi.",
+          "text": "Dog‘lar ko‘z yoki lupa bilan qidiriladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "309"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Singdiruvchi matoda chetlari landkartasimon, kraxmal zichligida; to‘q matoda oqimtir, yorqin matoda sargimtir yoki kul rang bo‘ladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -571,7 +623,7 @@
           "uncertain": false
         },
         {
-          "text": "Kiyim, choyshab to‘liq olinadi; katta materialdan dog‘li bo‘lak va dog‘siz kontrol bo‘lak qirqiladi. Qin va orqa teshikdan doka tiqim bilan namuna olinadi, quritilib o‘raladi; kontrol doka ham olinadi.",
+          "text": "Kiyim, choyshab to‘liq olinadi; katta materialdan dog‘li bo‘lak va dog‘siz kontrol bo‘lak qirqiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -580,7 +632,7 @@
           "uncertain": false
         },
         {
-          "text": "Gumondor va jabrlanuvchidan qon va so‘lak namunalari olinadi. Qon bo‘yicha guruhiy omillar taqqoslanadi, so‘lak ajratuvchanlik masalasiga oydinlik kiritadi.",
+          "text": "Qin va orqa teshikdan doka tiqim bilan namuna olinadi, quritilib o‘raladi; kontrol doka ham olinadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -590,13 +642,22 @@
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun jabrlanuvchidan ham qon va so‘lak namunasi olinadi? 2) Kontrol namuna qanday vazifani bajaradi? Doskada chizish: dog‘ ko‘rinishining materialga bog‘liqligini (singdiruvchi, singdirmaydigan, qon aralash) 3 ustunli ro‘yxat qilib yozing. Tipik xato: talabalar so‘lak namunasini guruhiy omillarni taqqoslash uchun olinadi deb adashadi; u ajratuvchanlik uchun."
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun jabrlanuvchidan ham qon va so‘lak namunasi olinadi? 2) Kontrol namuna qanday vazifani bajaradi? Doskada chizish: dog‘ ko‘rinishining materialga bog‘liqligini (singdiruvchi, singdirmaydigan, qon aralash) 3 ustunli ro‘yxat qilib yozing. Tipik xato: talabalar so‘lak namunasini guruhiy omillarni taqqoslash uchun olinadi deb adashadi; u ajratuvchanlik uchun. Gumondor va jabrlanuvchidan qon va so‘lak namunalari olinadi. Qon bo‘yicha guruhiy omillar taqqoslanadi, so‘lak ajratuvchanlik masalasiga oydinlik kiritadi."
     },
     {
       "title": "Maniy borligini aniqlash usullari",
       "bullets": [
         {
-          "text": "Florans va Barberio mikrokristallik reaksiyalari hozirgi davrda amaliy ahamiyatga ega emas. Taxminiy usul sifatida kartoshka sharbati va ultrabinafsha nur qoladi.",
+          "text": "Florans va Barberio mikrokristallik reaksiyalari hozirgi davrda amaliy ahamiyatga ega emas.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "310"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Taxminiy usul sifatida kartoshka sharbati va ultrabinafsha nur qoladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -624,36 +685,24 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Maniyni aniqlash usullari",
-        "nodes": [],
-        "header": [
-          "Usul",
-          "Belgi",
-          "Turi"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Taxminiy usullar",
+            "items": [
+              "Kartoshka sharbati: eritrotsit agglyutinatsiyasi to‘xtaydi",
+              "Ultrabinafsha nur: och-havo rang flyuoressensiya"
+            ]
+          },
+          {
+            "title": "Ishonchli usullar",
+            "items": [
+              "Morfologik: butun spermatozoid topiladi",
+              "Xromatografiya: xolin, spermin, nordon fosfataza"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Kartoshka sharbati",
-            "Eritrotsit agglyutinatsiyasi to‘xtaydi",
-            "Taxminiy"
-          ],
-          [
-            "Ultrabinafsha nur",
-            "Och-havo rang flyuoressensiya",
-            "Taxminiy"
-          ],
-          [
-            "Morfologik",
-            "Butun spermatozoid topiladi",
-            "Ishonchli"
-          ],
-          [
-            "Xromatografiya",
-            "Xolin, spermin, nordon fosfataza",
-            "Ishonchli"
-          ]
-        ]
+        "caption": "Maniyni aniqlash usullari"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega taxminiy usul qat‘iy dalil bo‘la olmaydi? 2) Kartoshka sharbati reaksiyasi qachon musbat hisoblanadi (maniy agglyutinatsiyani tormozlaydi)? Doskada chizing: taxminiy usullardan ishonchli usullarga o‘tish zanjirini. Tipik xato: spermatozoid qismlari (faqat bosh yoki dum) topilsa ham maniy bor deb xulosa qilish. Ultrabinafsha nurda sun‘iy matolar o‘zi ham o‘xshash nur berishi mumkinligini eslating."
     },
@@ -689,27 +738,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Lyuis tizimi va ajratuvchanlik",
-        "nodes": [],
-        "header": [
-          "Lyuis guruhi",
-          "Xulosa"
+        "kind": "tree",
+        "root": "Lyuis tizimi",
+        "children": [
+          {
+            "label": "Le (a- b+)",
+            "items": [
+              "Ajratuvchi"
+            ]
+          },
+          {
+            "label": "Le (a+ b-)",
+            "items": [
+              "Ajratuvchi emas"
+            ]
+          },
+          {
+            "label": "Le (a- b-)",
+            "items": [
+              "Aniq belgilab bo‘lmaydi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Le (a- b+)",
-            "Ajratuvchi"
-          ],
-          [
-            "Le (a+ b-)",
-            "Ajratuvchi emas"
-          ],
-          [
-            "Le (a- b-)",
-            "Aniq belgilab bo‘lmaydi"
-          ]
-        ]
+        "caption": "Lyuis tizimi va ajratuvchanlik"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Ajratuvchi emas shaxsning maniy dog‘ida qon guruhi antigeni nega topilmaydi? 2) Nega dog‘dan topilgan omil jabrlanuvchiniki bo‘lib chiqishi mumkin? Doskada chizing: Lyuis guruhlari va ularning ajratuvchanlik belgisi jadvalini. Tipik xato: Le (a- b-) guruhini ham ajratuvchi yoki ajratuvchi emas deb aniq baholash. Darslikda ajratuvchanlik Lyuis va Gm tizimlari orqali aniqlanishini eslating."
     },
@@ -853,17 +904,30 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Bo‘lakni tekshirish tartibi",
-        "nodes": [
-          "Hodisa joyida bo‘lak topiladi",
-          "Gistologik/sitologik tekshiruv",
-          "Tur: pretsipitatsiya reaksiyasi",
-          "Guruh: absorbsiya-elyusiya",
-          "Jins: sitologik tekshiruv"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Bo‘lak topiladi",
+            "text": "Hodisa joyida, qurolda, timoq ostida"
+          },
+          {
+            "title": "Gistologik/sitologik",
+            "text": "Bo‘lak o‘lchamiga qarab"
+          },
+          {
+            "title": "Tur",
+            "text": "Pretsipitatsiya reaksiyasi"
+          },
+          {
+            "title": "Guruh",
+            "text": "AVO bo‘yicha absorbsiya-elyusiya"
+          },
+          {
+            "title": "Jins",
+            "text": "Sitologik tekshiruv"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Bo‘lakni tekshirish tartibi"
       },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Timoq ostidan zarra topilsa, qanday savollar qo‘yiladi? 2) Nima uchun bo‘lak o‘lchami usul tanlashga ta’sir qiladi? Doskada: flow sxemani daftarga ko‘chirtiring va har bosqichga bitta usul yozdiring. Tipik xato: tur mansubligini guruh bilan aralashtirish — tur zardob bilan pretsipitatsiyada, guruh esa AVO bo‘yicha absorbsiya-elyusiyada aniqlanadi."
     },
@@ -942,36 +1006,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Odam va hayvon sochi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Odam",
-          "Hayvon"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Odam sochi",
+            "items": [
+              "Tashqi qavat mayda, zich tishchali, o‘qqa yopishgan",
+              "Kutikula bosmasi yaqin, to‘lqinsimon",
+              "Po‘stloq keng, mag‘iz ingichka",
+              "Pigment po‘stloqning chekkasida"
+            ]
+          },
+          {
+            "title": "Hayvon sochi",
+            "items": [
+              "Tashqi qavat yirik, ba’zan arrasimon, uzoqlashgan",
+              "Kutikula bosmasi turli shaklda",
+              "Mag‘iz qalinlikning asosiy qismi",
+              "Pigment mag‘izga yaqin qismda"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Tashqi qavat",
-            "Mayda, zich tishchali, o‘qqa yopishgan",
-            "Yirik, ba’zan arrasimon, uzoqlashgan"
-          ],
-          [
-            "Kutikula bosmasi",
-            "Yaqin, to‘lqinsimon chiziqlar",
-            "Turli shakldagi chiziqlar"
-          ],
-          [
-            "Po‘stloq / mag‘iz",
-            "Po‘stloq keng, mag‘iz ingichka",
-            "Mag‘iz qalinlikning asosiy qismi"
-          ],
-          [
-            "Pigment",
-            "Po‘stloqning chekka qismida",
-            "Po‘stloqning mag‘izga yaqin qismida"
-          ]
-        ]
+        "caption": "Odam va hayvon sochi"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega soch ekanligi avval mikroskopda tasdiqlanadi? 2) Pigment joylashuvi odam va hayvonni ajratishda qanday yordam beradi? Doskada: soch sterjeni kesimini chizib, kutikula, po‘stloq va mag‘izni belgilang. Tipik xato: po‘stloq va mag‘iz qavatlarining qalinligini odam va hayvonda almashtirib aytish."
     },
@@ -1092,7 +1148,16 @@
           "uncertain": false
         },
         {
-          "text": "Tekshiruvni umumiy profil eksperti yo‘llanma bilan beradi, uni sud-gistologik bo‘limdagi maxsus tayyorgarlikli mutaxassis bajaradi. Tayyorgarligi bor umumiy profil eksperti ham bajara oladi.",
+          "text": "Tekshiruvni umumiy profil eksperti yo‘llanma bilan beradi, uni sud-gistologik bo‘limdagi maxsus tayyorgarlikli mutaxassis bajaradi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "316"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tayyorgarligi bor umumiy profil eksperti ham bajara oladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1136,31 +1201,35 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Asosiy vazifalar",
-        "nodes": [],
-        "header": [
-          "Vazifa",
-          "Mazmuni"
+        "kind": "tree",
+        "root": "Sud-gistologik vazifalar",
+        "children": [
+          {
+            "label": "Patologik o‘zgarish",
+            "items": [
+              "Omil yoki kasallik izini baholash"
+            ]
+          },
+          {
+            "label": "Jarohat hayotiyligi",
+            "items": [
+              "Tirikligida hosil bo‘lganmi"
+            ]
+          },
+          {
+            "label": "Yetkazilish muddati",
+            "items": [
+              "Jarohat qachon yetkazilgan"
+            ]
+          },
+          {
+            "label": "Boshqa masalalar",
+            "items": [
+              "Mutaxassis vakolati doirasida"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Patologik o‘zgarish",
-            "Omil yoki kasallik izini baholash"
-          ],
-          [
-            "Jarohat hayotiyligi",
-            "Jarohat tirikligida hosil bo‘lganmi"
-          ],
-          [
-            "Yetkazilish muddati",
-            "Jarohat qachon yetkazilganini aniqlash"
-          ],
-          [
-            "Boshqa masalalar",
-            "Mutaxassis vakolati doirasidagi savollar"
-          ]
-        ]
+        "caption": "Asosiy vazifalar"
       },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Jarohat hayotiyligini bilish ishda nima uchun muhim? 2) Muddatni aniqlash qaysi savolga javob beradi? Doskada chizish: jadvalning to‘rt qatorini talabalar o‘z so‘zlari bilan to‘ldirsin. Tipik xato: «hayotiylik» va «yetkazilish muddati»ni bitta vazifa deb aralashtirish."
     },
@@ -1356,7 +1425,7 @@
           [
             "Maxsus usullar",
             "Ayrim patologiyalarda",
-            "Lyuminessent, fazokontrast, polyarizatsion"
+            "Lyumin., fazokontrast, polyarizatsion"
           ]
         ]
       },
@@ -1483,31 +1552,30 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Saqlash muddatlari",
-        "nodes": [],
-        "header": [
-          "Material",
-          "Muddat"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Formalinli arxiv",
+            "value": "≥ 2",
+            "unit": "yil"
+          },
+          {
+            "label": "Gistologik preparatlar",
+            "value": "≥ 3",
+            "unit": "yil"
+          },
+          {
+            "label": "To‘qima bo‘lagi bloklari",
+            "value": "≥ 3",
+            "unit": "yil"
+          },
+          {
+            "label": "Diatom mineralizati",
+            "value": "≥ 3",
+            "unit": "yil"
+          }
         ],
-        "rows": [
-          [
-            "Murda a’zo va to‘qimalari formalinli arxivi",
-            "Kamida 2 yil"
-          ],
-          [
-            "Gistologik preparatlar",
-            "Kamida 3 yil"
-          ],
-          [
-            "To‘qima bo‘lakchalari quyilgan bloklar",
-            "Kamida 3 yil"
-          ],
-          [
-            "Diatom mineralizati va preparatlari",
-            "Kamida 3 yil"
-          ]
-        ]
+        "caption": "Arxiv saqlash muddatlari (kamida)"
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama savollari: 1) Nega arxiv saqlanadi? 2) Qaysi material eng qisqa muddat saqlanadi? Doskada chizing: 2 yil va 3 yil muddatli materiallar jadvali. Tipik xato: formalinli arxiv 2 yil, preparat va bloklar 3 yil ekanini chalkashtirish (2 ≠ 3). Eslab qolish: «Formalin — 2, preparat va blok — 3»."
     },
@@ -1586,38 +1654,265 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Asosiy tekshiruv turlari",
-        "nodes": [],
-        "header": [
-          "Tur",
-          "Maqsadi",
-          "Ob‘ekti"
+        "kind": "tree",
+        "root": "Tibbiy-kriminalistika",
+        "children": [
+          {
+            "label": "Trassologik",
+            "items": [
+              "Shikastlovchi omilni aniqlash",
+              "Jarohat, izlar, qurol yoki modeli"
+            ]
+          },
+          {
+            "label": "Ballistik",
+            "items": [
+              "Otish distansiyasi, qurol turi",
+              "O‘qotar jarohat, portlash travmasi"
+            ]
+          },
+          {
+            "label": "Identifikatsion",
+            "items": [
+              "Murda yoki qoldiq kimligini aniqlash",
+              "Noma’lum murda, suyak qoldiqlari"
+            ]
+          },
+          {
+            "label": "Mikrologik",
+            "items": [
+              "Mikroizlar, mikrozarralarni o‘rganish",
+              "Joy, qurol, tana va kiyim-bosh"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Trassologik",
-            "Shikastlovchi omilni aniqlash",
-            "Jarohat, izlar, qurol yoki modeli"
-          ],
-          [
-            "Ballistik",
-            "Otish distansiyasi, yo‘nalishi, qurol turi",
-            "O‘qotar jarohat, portlash travmasi"
-          ],
-          [
-            "Identifikatsion",
-            "Murda yoki qoldiq kimligini aniqlash",
-            "Noma’lum murda, suyak qoldiqlari"
-          ],
-          [
-            "Mikrologik",
-            "Mikroizlar, mikrozarralarni o‘rganish",
-            "Joy, qurol, tana va kiyim-bosh"
-          ]
-        ]
+        "caption": "Asosiy tekshiruv turlari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Trassologik va ballistik tekshiruv qaysi jihati bilan o‘xshash? 2) Situatsion tekshiruv voqeani qayta tiklashda nima uchun kerak? Doskada: 5 ta tur va har birining maqsadini bir qatorda yozing (jadvalda situatsion tur yo‘q). Tipik xato: identifikatsion tekshiruvni tur mansubligi bilan aralashtirish."
+    },
+    {
+      "title": "Trassologik va ballistik tekshiruvlar",
+      "bullets": [
+        {
+          "text": "Trassologik tekshiruvning asosiy maqsadi — jarohat yoki izlar bo‘yicha shikastlovchi omilni aniqlash.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "317"
+          }
+        },
+        {
+          "text": "Avval jarohat va taxmin qilingan qurol (yoki uning modeli) alohida o‘rganiladi, keyin taqqoslanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "317"
+          }
+        },
+        {
+          "text": "Ballistik tekshiruv o‘qotar jarohat va portlash travmasida o‘tkaziladi; ob’ektlari va usullari trassologikka juda o‘xshash.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "317–318"
+          }
+        },
+        {
+          "text": "Ballistikada otish distansiyasi, yara kanali yo‘nalishi, kirish va chiqish teshiklari, qurol va snaryad turi aniqlanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "318"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Trassologik",
+            "items": [
+              "Jarohat va izlar",
+              "Shikastlovchi omil va qurol aynanligi",
+              "Jarohat va qurol taqqoslanadi"
+            ]
+          },
+          {
+            "title": "Ballistik",
+            "items": [
+              "O‘qotar jarohat, portlash travmasi",
+              "Otish distansiyasi, yo‘nalishi",
+              "Kirish va chiqish teshiklari"
+            ]
+          }
+        ],
+        "caption": "Trassologik va ballistik tekshiruv"
+      },
+      "teacher_notes": "Vaqt: 4 daq."
+    },
+    {
+      "title": "Identifikatsion tekshiruv: bosqichlar va suyak qoldiqlari",
+      "bullets": [
+        {
+          "text": "Identifikatsion tekshiruv shaxsi noma’lum murda yoki uning qoldiqlari muayyan shaxsga tegishli ekanini aniqlash uchun o‘tkaziladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "318"
+          }
+        },
+        {
+          "text": "Dastlab murda va yo‘qolgan odamning belgilari alohida o‘rganiladi, keyin ma’lumotlar taqqoslanadi, so‘ng aynanlik bor-yo‘qligi haqida xulosa qilinadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "318"
+          }
+        },
+        {
+          "text": "Suyak qoldiqlaridan tur mansubligi, murdalar soni, irq, jins, taxminiy yosh, bo‘y uzunligi aniqlanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "318"
+          }
+        },
+        {
+          "text": "Shuningdek kasallik alomatlari, tan jarohatlari va ularning muddati, so‘z portreti va individual belgilar o‘rganiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "318"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Alohida o‘rganish",
+            "text": "Murda va yo‘qolgan odam belgilari"
+          },
+          {
+            "title": "2. Taqqoslash",
+            "text": "Olingan ma’lumotlar solishtiriladi"
+          },
+          {
+            "title": "3. Xulosa",
+            "text": "Aynanlik bor yoki yo‘q"
+          }
+        ],
+        "caption": "Identifikatsion tekshiruv bosqichlari"
+      },
+      "teacher_notes": "Vaqt: 4 daq."
+    },
+    {
+      "title": "Mikrologik va situatsion tekshiruvlar",
+      "bullets": [
+        {
+          "text": "Mikrologik tekshiruvda hodisa joyi, qurol, tana va kiyim-boshdagi kichik o‘lchamli mikroizlar va mikrozarralar o‘rganiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "318–319"
+          }
+        },
+        {
+          "text": "Tanada yot mikroob’ektlar borligi hamda qurol moddalarining jabrlanuvchi tanasi va kiyimiga (yoki aksincha) o‘tishi aniqlanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "319"
+          }
+        },
+        {
+          "text": "Situatsion tekshiruvda taxmin etilgan sharoitda ma’lum harakatni sodir etish imkoniyati bor-yo‘qligi o‘rganiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "319"
+          }
+        },
+        {
+          "text": "Voqeani qayta tiklashda ob’ektiv ma’lumotlar hodisa ishtirokchilari ko‘rsatmalariga mos kelishi tekshiriladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "319"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Mikrologik",
+            "items": [
+              "Mikroizlar, mikrozarralar",
+              "Qurol, tana, kiyim-bosh",
+              "Moddalar bir-biriga o‘tishi"
+            ]
+          },
+          {
+            "title": "Situatsion",
+            "items": [
+              "Harakat mumkinmi?",
+              "Jarohat mexanizmi va dinamikasi",
+              "Ko‘rsatmalar bilan mosligi"
+            ]
+          }
+        ],
+        "caption": "Mikrologik va situatsion tekshiruv"
+      },
+      "teacher_notes": "Vaqt: 4 daq."
+    },
+    {
+      "title": "Tibbiy-kriminalistik hujjat va usullar",
+      "bullets": [
+        {
+          "text": "Hujjat turiga (qaror, ajrim, yo‘llanma) qarab tibbiy-kriminalistik ekspertiza yoki tekshiruv o‘tkaziladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "317"
+          }
+        },
+        {
+          "text": "Usullar: vizual (ko‘z, lupa), infraqizil va UB spektr, o‘lchov, densitometriya, stereomikroskopiya, foto, rentgen, modellashtirish, rekonstruksiya.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "317"
+          }
+        },
+        {
+          "text": "Natija ekspertiza xulosasi yoki tekshiruv dalolatnomasi shaklida rasmiylashtiriladi: kirish, tekshiruv va yakuniy qism.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "319"
+          }
+        },
+        {
+          "text": "Ilova sifatida fotosuratlar, chizmalar va grafiklar beriladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "319"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Qaror, ajrim yoki yo‘llanma",
+          "Ob’ektlar ro‘yxati va tekshiruv",
+          "Xulosa yoki dalolatnoma",
+          "Ilova: foto, chizma, grafik"
+        ],
+        "caption": "Tibbiy-kriminalistik hujjat"
+      },
+      "teacher_notes": "Vaqt: 3 daq."
     },
     {
       "title": "Sud-kimyoviy tekshiruvlar",
@@ -1651,36 +1946,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Usullar va arxiv muddati",
-        "nodes": [],
-        "header": [
-          "Bosqich",
-          "Mazmuni",
-          "Misol / muddat"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Dastlabki usul",
+            "text": "Rangli reaksiyalar, immunferment tahlil"
+          },
+          {
+            "title": "Tasdiqlovchi usul",
+            "text": "Gaz-suyuqlik xromatografiyasi va b."
+          },
+          {
+            "title": "Arxiv",
+            "text": "Spirt bilan konservatsiya, sovutkich: 1 yilgacha"
+          },
+          {
+            "title": "Etil spirti namunasi",
+            "text": "Qon, siydik; konservatsiyasiz, 30 kun"
+          }
         ],
-        "rows": [
-          [
-            "Dastlabki usul",
-            "Moddani taxminiy aniqlash",
-            "Rangli reaksiyalar, immunferment tahlil"
-          ],
-          [
-            "Tasdiqlovchi",
-            "Instrumental tasdiqlash",
-            "Gaz-suyuqlik xromatografiyasi"
-          ],
-          [
-            "Arxiv",
-            "Spirt bilan konservatsiya, sovutkich",
-            "Bir yilgacha"
-          ],
-          [
-            "Arxiv: etil spirti",
-            "Qon, siydik; konservatsiyasiz",
-            "30 kun"
-          ]
-        ]
+        "caption": "Usullar va arxiv muddati"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega dastlabki usul natijasi tasdiqlovchi usul bilan mustahkamlanadi? 2) Obyekt kam bo‘lsa, tekshiruvni tayinlagan shaxsga nima deyiladi (to‘liq sarflanishi haqida ogohlantiriladi, 320-bet)? Doskada: ikki bosqichli sxema (dastlabki → tasdiqlovchi). Tipik xato: bir yillik arxiv muddatini etil spirti uchun 30 kunlik muddat bilan aralashtirish."
     },
@@ -1716,27 +2001,22 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "DNK (dezoksiribonuklein kislota) tarixi",
-        "nodes": [],
-        "header": [
-          "Yil",
-          "Voqea"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1985",
+            "text": "Djeffris minisatellit markerlarni aniqladi"
+          },
+          {
+            "title": "1985",
+            "text": "Ashyoviy dalilda DNK imkoniyati ko‘rsatildi"
+          },
+          {
+            "title": "1986",
+            "text": "Identifikatsiya uchun genetik usullar joriy bo‘ldi"
+          }
         ],
-        "rows": [
-          [
-            "1985",
-            "Djeffris minisatellit markerlarni aniqladi"
-          ],
-          [
-            "1985",
-            "Ashyoviy dalilda DNK imkoniyati ko‘rsatildi"
-          ],
-          [
-            "1986",
-            "Identifikatsiya uchun genetik usullar joriy bo‘ldi"
-          ]
-        ]
+        "caption": "DNK tekshiruvi tarixi"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega gipervariabel lokuslar shaxsni ajratishda foydali? 2) Usulning boshqa nomlari qaysilar? Doskada: yil bo‘yicha 1985–1986 vaqt chizig‘ini chizdiring. Tipik xato: gomologik va gipervariabel lokusni aralashtirish; bitta allel mos kelishi aynanlik degani emas, allellarning birgalikda kelishi muhim."
     },
@@ -1788,12 +2068,12 @@
     {
       "question": "Hodisa joyida umumiy amaliyot shifokori ishtirok etmoqda. Qon izlarini olish qonun hujjatlariga ko‘ra kimning vakolatiga kiradi?",
       "options": [
-        "Faqat sud-gistologik bo‘limning mutaxassisi",
         "Tergovchi; zarur hollarda shifokor jalb etiladi",
+        "Faqat sud-gistologik bo‘limning mutaxassisi",
         "Faqat hodisa joyiga chiqqan klinitsist-shifokor",
         "Sud-kimyo bo‘limida ishlovchi laborant xodim"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Qonun hujjatlariga binoan hodisa joyidan qon izlari kabi ashyoviy dalillarni olishni tergovchi amalga oshiradi. Zaruriy hollarda shifokorlar ham bu jarayonga jalb qilinishi mumkin.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1853,11 +2133,11 @@
       "question": "Qon ekspertizasida dog‘da qon borligi aniqlandi. Masalalar ketma-ketligida keyingi qadam qaysi?",
       "options": [
         "Qonning muayyan shaxsga tegishliligini aniqlash",
-        "Qonning tur mansubligini aniqlash",
+        "Qonning regional mansubligini aniqlash",
         "Qonning homilador ayolga mansubligini aniqlash",
-        "Qonning regional mansubligini aniqlash"
+        "Qonning tur mansubligini aniqlash"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Ketma-ketlik: avval qon borligi, keyin tur mansubligi, so‘ng guruhiy mansubligi va oxirida muayyan shaxsga tegishliligi aniqlanadi. Jins va regional mansublik ba’zan qo‘shimcha savol bo‘ladi.",
       "source": {
         "author": "G‘iyosov Z.A.",

@@ -121,31 +121,38 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Shikastlovchi omillar",
-        "nodes": [],
-        "header": [
-          "Tur",
-          "Misollar"
+        "kind": "tree",
+        "root": "Shikastlovchi omillar",
+        "children": [
+          {
+            "label": "Fizik",
+            "items": [
+              "Mexanik, termik, barometrik",
+              "Elektr, nur"
+            ]
+          },
+          {
+            "label": "Kimyoviy",
+            "items": [
+              "Zaharlar, kimyoviy moddalar",
+              "Dorilar"
+            ]
+          },
+          {
+            "label": "Biologik",
+            "items": [
+              "Toksinlar",
+              "Mikroorganizmlar"
+            ]
+          },
+          {
+            "label": "Ruhiy",
+            "items": [
+              "Kuchli hayajon, qo‘rquv"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Fizik",
-            "Mexanik, termik, barometrik, elektr, nur"
-          ],
-          [
-            "Kimyoviy",
-            "Zaharlar, kimyoviy moddalar, dorilar"
-          ],
-          [
-            "Biologik",
-            "Toksinlar, mikroorganizmlar"
-          ],
-          [
-            "Ruhiy",
-            "Kuchli hayajon, qo‘rquv"
-          ]
-        ]
+        "caption": "Shikastlovchi omillar tasnifi"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: nega ruhiy ta’sirni sud psixiatriyasi o‘rganadi? Bir necha omil birgalikda ta’sir qilishi mumkinmi? Doskada: to‘rt turni daraxt shaklida, fizik tur ostiga beshta turchani chizdiring. Tipik xato: mexanik jarohatni alohida tur deb hisoblash, aslida u fizik omilning turchasi.",
       "diagram_note": null
@@ -247,31 +254,38 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Travmatizm turlari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Ko‘rinishlari"
+        "kind": "tree",
+        "root": "Travmatizm turlari",
+        "children": [
+          {
+            "label": "Ishlab chiqarish",
+            "items": [
+              "Sanoat, qishloq xo‘jaligi",
+              "Qurilish"
+            ]
+          },
+          {
+            "label": "Transport",
+            "items": [
+              "Avto, moto, velosiped",
+              "Temir yo‘l, havo, suv"
+            ]
+          },
+          {
+            "label": "Harbiy",
+            "items": [
+              "Urush va tinchlik davri"
+            ]
+          },
+          {
+            "label": "Boshqa turlar",
+            "items": [
+              "Ko‘cha, sport",
+              "Maktab, maishiy"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Ishlab chiqarish",
-            "Sanoat, qishloq xo‘jaligi, qurilish"
-          ],
-          [
-            "Transport",
-            "Avto, moto, velosiped, temir yo‘l, havo, suv"
-          ],
-          [
-            "Harbiy",
-            "Urush va tinchlik davri"
-          ],
-          [
-            "Boshqa turlar",
-            "Ko‘cha, sport, maktab, maishiy"
-          ]
-        ]
+        "caption": "Travmatizm turlari"
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nima uchun travmatizm turlari faoliyat turiga bog‘liq? 2) Profilaktika uchun sud-tibbiy materiallardan qanday foydalanish mumkin (28-bet)? Doskada travmatizm turlarining daraxt sxemasini chizdiring. Tipik xato: travmatizmni bitta jarohat bilan tenglashtirish; u guruhdagi turdosh jarohatlar majmuidir."
     },
@@ -322,7 +336,16 @@
       "title": "Jarohat hayotiyligi: umumiy belgilar",
       "bullets": [
         {
-          "text": "Jarohat hayotiyligi butun organizm yoki a’zoning shikastlanishga reaksiyasi belgilari bilan aniqlanadi. Bunda ko‘proq qon aylanish tizimidagi o‘zgarishlar muhim.",
+          "text": "Jarohat hayotiyligi butun organizm yoki a’zoning shikastlanishga reaksiyasi belgilari bilan aniqlanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "28"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bunda ko‘proq qon aylanish tizimidagi o‘zgarishlar muhim.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -394,36 +417,27 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Umumiy va mahalliy belgilar",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Umumiy",
-          "Mahalliy"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Umumiy belgilar",
+            "items": [
+              "Qon ketishi, kamqonlik",
+              "Mioglobin, eritrofagiya",
+              "Emboliya, aspiratsiya"
+            ]
+          },
+          {
+            "title": "Mahalliy belgilar",
+            "items": [
+              "Qon quyilishi, tromb",
+              "Reaktiv shish, yallig‘lanish",
+              "Nekroz, gistokimyoviy o‘zgarish",
+              "Shikastlangan mushak qisqarishi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Qon bilan bog‘liq",
-            "Qon ketishi, kamqonlik",
-            "Qon quyilishi, tromb"
-          ],
-          [
-            "Reaksiya",
-            "Mioglobin, eritrofagiya",
-            "Reaktiv shish, yallig‘lanish"
-          ],
-          [
-            "Hujayra, to‘qima",
-            "Emboliya, aspiratsiya",
-            "Nekroz, gistokimyoviy o‘zgarish"
-          ],
-          [
-            "Mushak",
-            "Belgilanmagan",
-            "Shikastlangan mushak qisqarishi"
-          ]
-        ]
+        "caption": "Hayotiylikning umumiy va mahalliy belgilari"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Qaysi belgi butun organizm, qaysi biri faqat jarohat sohasi haqida gapiradi? 2) Nega bitta belgiga tayanib xulosa qilish xavfli? Doskada: ikki ustunli jadvalni talabalar bilan to‘ldiring. Tipik xato: umumiy va mahalliy belgilarni aralashtirish (masalan, tromb va nekrozni umumiy deb yozish). Diqqat: umumiy ≠ mahalliy.",
       "tip": "Tezkor savol: eritrofagiya qaysi guruh belgisi va qayerda topiladi?"
@@ -593,31 +607,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Uch tushuncha solishtirmasi",
-        "nodes": [],
-        "header": [
-          "Tushuncha",
-          "Ta’rif",
-          "Misol"
+        "kind": "tree",
+        "root": "Mexanik vositalar",
+        "children": [
+          {
+            "label": "Qurol",
+            "items": [
+              "Hujum yoki mudofaa uchun maxsus",
+              "Pistolet, miltiq, hanjar"
+            ]
+          },
+          {
+            "label": "Anjom",
+            "items": [
+              "Ishlab chiqarish, uy-ro‘zg‘or",
+              "Bolta, arra, qaychi"
+            ]
+          },
+          {
+            "label": "Jism",
+            "items": [
+              "Aniq qo‘llanish maqsadi yo‘q",
+              "Tosh, tayoq"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Qurol",
-            "Hujum yoki mudofaa uchun maxsus tayyorlangan",
-            "Pistolet, miltiq, hanjar"
-          ],
-          [
-            "Anjom",
-            "Ishlab chiqarish, uy-ro‘zg‘or uchun mahsulot",
-            "Bolta, arra, qaychi"
-          ],
-          [
-            "Jism",
-            "Aniq qo‘llanilish maqsadi yo‘q narsa",
-            "Tosh, tayoq"
-          ]
-        ]
+        "caption": "Qurol, anjom va jism"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Bolta qurolmi yoki anjommi? Nega? 2) Tosh qachon jism, qachon boshqa toifa bo‘ladi? Doskaga jadvalni o‘zlari chizsin va o‘z misollarini qo‘shsin. Tipik xato: anjomni qurol bilan aralashtirish (qurol maxsus hujum yoki mudofaa uchun tayyorlanadi)."
     },
@@ -653,33 +668,144 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "O‘lim sabablari tasnifi",
-        "nodes": [],
-        "header": [
-          "Sabab",
-          "Xususiyati"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Birlamchi sabab",
+            "items": [
+              "Shikastdan so‘ng qisqa vaqtda o‘lim",
+              "Qon yo‘qotish, travmatik shok",
+              "Emboliya"
+            ]
+          },
+          {
+            "title": "Ikkilamchi sabab",
+            "items": [
+              "Birmuncha muddatdan so‘ng o‘lim",
+              "Sepsis, qoqshol",
+              "Travmatik toksikoz"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Birlamchi",
-            "Shikastdan so‘ng qisqa vaqtda o‘lim"
-          ],
-          [
-            "Ikkilamchi",
-            "Birmuncha muddatdan so‘ng o‘lim"
-          ],
-          [
-            "Birlamchi misol",
-            "Qon yo‘qotish, travmatik shok, emboliya"
-          ],
-          [
-            "Ikkilamchi misol",
-            "Sepsis, qoqshol, travmatik toksikoz"
-          ]
-        ]
+        "caption": "O‘lim sabablari tasnifi"
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Nega o‘lim vaqti sababni birlamchi yoki ikkilamchiga ajratadi? 2) Qon yo‘qotish qaysi guruhga kiradi? Doskada: ikki ustunli jadvalni (birlamchi va ikkilamchi) chizdiring va har ustunga misollarni yozdiring. Tipik xato: talabalar birlamchi ≠ ikkilamchi farqini jarohat og‘irligi bilan adashtiradi, aslida mezon o‘lim sodir bo‘lish muddatidir."
+    },
+    {
+      "title": "Birlamchi sabablar: 1–4",
+      "bullets": [
+        {
+          "text": "Hayot bilan nomutanosib jarohatlar: boshning ajralishi, tananing ikkiga bo‘linishi, boshning majaqlanishi, yurak uzilishi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "30"
+          }
+        },
+        {
+          "text": "Hayot uchun muhim a’zolar shikasti: bosh miya va yurakning lat yeyishi, yurak chayqalishi (reflektor to‘xtash yoki mushak yorilishi).",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "30"
+          }
+        },
+        {
+          "text": "Qon yo‘qotish: nafaqat hajm, balki yo‘qotish sur’ati ham ahamiyatli.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "30"
+          }
+        },
+        {
+          "text": "Travmatik shok: nerv, yurak-qon tomir va endokrin tizimlar faoliyatining jiddiy buzilishi bilan javob.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "31"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Nomutanosib jarohat",
+            "text": "Transport, balandlik, portlash"
+          },
+          {
+            "title": "2. Muhim a’zo shikasti",
+            "text": "Miya, yurak lat yeyishi"
+          },
+          {
+            "title": "3. Qon yo‘qotish",
+            "text": "Hajm va sur’at"
+          },
+          {
+            "title": "4. Travmatik shok",
+            "text": "III–IV daraja o‘limga olib keladi"
+          }
+        ],
+        "caption": "Birlamchi sabablar (1–4)"
+      },
+      "teacher_notes": "Vaqt: 3 daq."
+    },
+    {
+      "title": "Birlamchi sabablar: 5–7",
+      "bullets": [
+        {
+          "text": "Bosh va orqa miya, yurak, o‘pkaning qon yoki havo bilan qisilishi: kalla-miya jarohatida gematomalar, umurtqa shikastida orqa miya qisilishi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "31"
+          }
+        },
+        {
+          "text": "Ko‘krak qafasi shikastida gemoperikard, pnevmotoraks va gemotoraks rivojlanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "31"
+          }
+        },
+        {
+          "text": "Emboliya: mexanik jarohatda asosan havo va yog‘ emboliyasi; tromb, to‘qima va yot jism emboliyasi ancha kam.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "31"
+          }
+        },
+        {
+          "text": "Qon aspiratsiyasidan asfiksiya: halqum, nafas yo‘llari shikasti, kalla asosi va burun suyaklari sinishida qon nafas yo‘llariga tushadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "32"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "5. Qisilish",
+            "text": "Miya, yurak, o‘pka: qon yoki havo bilan"
+          },
+          {
+            "title": "6. Emboliya",
+            "text": "Asosan havo va yog‘"
+          },
+          {
+            "title": "7. Aspiratsiya",
+            "text": "Qon nafas yo‘llariga tushib asfiksiya"
+          }
+        ],
+        "caption": "Birlamchi sabablar (5–7)"
+      },
+      "teacher_notes": "Vaqt: 3 daq."
     },
     {
       "title": "Qon yo‘qotish: hajm va sur’at",
@@ -756,31 +882,35 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "O‘tkir qon yo‘qotishda a’zolar",
-        "nodes": [],
-        "header": [
-          "A’zo/belgi",
-          "Topilma"
+        "kind": "tree",
+        "root": "O‘tkir qon yo‘qotish",
+        "children": [
+          {
+            "label": "Miya, yurak mushagi",
+            "items": [
+              "Kamqonlik"
+            ]
+          },
+          {
+            "label": "Taloq, boshqa a’zolar",
+            "items": [
+              "Odatdagidek qonga to‘yingan"
+            ]
+          },
+          {
+            "label": "Murda dog‘lari",
+            "items": [
+              "Odatdagidek"
+            ]
+          },
+          {
+            "label": "Mushak qotishi",
+            "items": [
+              "Odatdagidek"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Miya, yurak mushagi",
-            "Kamqonlik"
-          ],
-          [
-            "Taloq, boshqa a’zolar",
-            "Odatdagidek qonga to‘yingan"
-          ],
-          [
-            "Murda dog‘lari",
-            "Odatdagidek"
-          ],
-          [
-            "Mushak qotishi",
-            "Odatdagidek"
-          ]
-        ]
+        "caption": "O‘tkir qon yo‘qotishda a’zolar"
       },
       "teacher_notes": "Vaqt: 10 daqiqa. Muhokama: 1) Nega faqat miya va yurakda kamqonlik, taloq esa qonga to‘yingan? 2) Minakov dog‘lari qanday hosil bo‘ladi? (Yurak ichidagi bosimning keskin pasayishi va adashgan nervning o‘ta ta’sirlanishi, 31-bet.) Doskada: yurak chap qorinchasining kesimini chizib, endokard ostidagi tasmasimon qon quyilishlarni belgilang. Tipik xato: o‘tkir qon yo‘qotishda barcha a’zolar kamqon deb o‘ylash. Mnemonika: o‘tkir bo‘lsa, miya va yurak oqaradi, taloq to‘yingan qoladi."
     },
@@ -902,36 +1032,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ikki turni solishtirish",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "O‘tkir",
-          "Ko‘p"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "O‘tkir yo‘qotish",
+            "items": [
+              "500 ml gacha; dastlabki minutlarda",
+              "Taloq odatdagidek to‘yingan",
+              "Murda dog‘lari odatdagidek",
+              "Minakov dog‘lari xos"
+            ]
+          },
+          {
+            "title": "Ko‘p yo‘qotish",
+            "items": [
+              "> 50%; bir necha soat",
+              "Taloq kamqon va qisqargan",
+              "Murda dog‘lari kech, kamroq",
+              "Minakov dog‘lari — ayrim holatda"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Hajm va tezlik",
-            "500 ml gacha; dastlabki minutlarda",
-            "50% dan ortiq; bir necha soat"
-          ],
-          [
-            "Taloq",
-            "Odatdagidek qonga to‘yingan",
-            "Kamqon va qisqargan"
-          ],
-          [
-            "Murda dog‘lari",
-            "Odatdagidek",
-            "Kech paydo bo‘ladi, kamroq"
-          ],
-          [
-            "Minakov dog‘lari",
-            "Xos belgi",
-            "Faqat ayrim holatlarda"
-          ]
-        ]
+        "caption": "O‘tkir va ko‘p qon yo‘qotish"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Taloq holati ikki turni qanday farqlashga yordam beradi? 2) Nega o‘tkirda faqat miya va yurak mushaklari kamqon bo‘ladi? Doskada: jadvalni talabalar bilan birga qayta chizdiring. Tipik xato: murda dog‘lari va Minakov dog‘lari ustunlarini almashtirib yuborish. Tezkor savol: ’Taloq kamqon va qisqargan bo‘lsa, qaysi turni o‘ylaysiz?’"
     },
@@ -1099,17 +1221,30 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Sunsov sinamasi tartibi",
-        "nodes": [
-          "Tekshiruv ko‘krakdan boshlanadi",
-          "To‘sh suyagi ajratiladi",
-          "Perikardga suv quyiladi",
-          "O‘ng qorincha devori teshiladi",
-          "Suvdan pufak chiqsa – musbat"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Ko‘krak ochiladi",
+            "text": "Tekshiruv ko‘krakdan boshlanadi"
+          },
+          {
+            "title": "To‘sh suyagi",
+            "text": "Ajratib olinadi"
+          },
+          {
+            "title": "Perikardga suv",
+            "text": "Yurak sathini yopadigan miqdorda"
+          },
+          {
+            "title": "O‘ng qorincha",
+            "text": "Devori skalpel uchi bilan teshiladi"
+          },
+          {
+            "title": "Natija",
+            "text": "Suvdan pufak chiqsa — musbat"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Sunsov sinamasi"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega oz va ko‘p miqdordagi havo oqibati farq qiladi? 2) Nega tekshiruv aynan ko‘krak qafasidan boshlanadi? Doskada: Sunsov sinamasi bosqichlarini zanjir shaklida chizdiring. Tipik xato: 5-7 kub sm va 10 kub sm chegaralarini aralashtirish; suvga havo pufagi chiqishini manfiy natija deb o‘ylash."
     },
@@ -1145,31 +1280,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Yog‘ emboliyasi diagnostikasi",
-        "nodes": [],
-        "header": [
-          "Ko‘rsatkich",
-          "Ma’lumot"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Material",
+            "text": "O‘pka va miyaning muzlatilgan kesmalari"
+          },
+          {
+            "title": "Sudan III",
+            "text": "Yog‘ tomchilari olovrang qizil"
+          },
+          {
+            "title": "Sudan IV",
+            "text": "Yog‘ tomchilari qora rangda"
+          },
+          {
+            "title": "Mikroskop",
+            "text": "Tomir bo‘shlig‘ida yog‘ tomchilari"
+          }
         ],
-        "rows": [
-          [
-            "Material",
-            "O‘pka va miyaning muzlatilgan kesmalari"
-          ],
-          [
-            "Sudan III",
-            "Yog‘ tomchilari olovrang qizil"
-          ],
-          [
-            "Sudan IV",
-            "Yog‘ tomchilari qora rangda"
-          ],
-          [
-            "Tekshiruv",
-            "Mikroskop: tomir bo‘shlig‘ida tomchilar"
-          ]
-        ]
+        "caption": "Yog‘ emboliyasi diagnostikasi"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega yog‘ emboliyasida o‘lim kechikadi? 2) Qaysi a’zolardan kesma olinadi va nima uchun? Doskada: yog‘ zarralarining suyakdan o‘pka va miyagacha yo‘lini strelkalar bilan chizdiring. Tipik xato: Sudan III va Sudan IV ranglarini almashtirib yuborish; yog‘ emboliyasini havo emboliyasidek darhol o‘limga olib keladi deb o‘ylash."
     },
@@ -1220,7 +1350,16 @@
       "title": "Tezkor savol: emboliya va qon yo‘qotish",
       "bullets": [
         {
-          "text": "Tezkor savol: yirik arteriya shikastlansa, 500 ml gacha qon ketganda ham o‘lim qanday sodir bo‘ladi? Javob: dastlabki minutlarda yurak qorinchalari fibrillyatsiyasidan.",
+          "text": "Tezkor savol: yirik arteriya shikastlansa, 500 ml gacha qon ketganda ham o‘lim qanday sodir bo‘ladi?",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "31"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Javob: dastlabki minutlarda yurak qorinchalari fibrillyatsiyasidan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1247,7 +1386,7 @@
           "uncertain": false
         },
         {
-          "text": "Yog‘ emboliyasi uzun naysimon suyaklar sinishida bo‘ladi; o‘lim 2-3 kundan so‘ng. Muzlatilgan kesma Sudan III (olovrang qizil) yoki Sudan IV (qora) bilan bo‘yaladi.",
+          "text": "Yog‘ emboliyasi uzun naysimon suyaklar sinishida bo‘ladi; o‘lim 2-3 kundan so‘ng.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1257,7 +1396,61 @@
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega qon hajmi bilan birga qon yo‘qotish sur’ati ham muhim? 2) Havo emboliyasida nega tekshiruv ko‘krak qafasidan boshlanadi? Doskada chizing: ikki ustunli solishtirish (havo va yog‘ emboliyasi: manba, vaqt, tashxis usuli). Qo‘shimcha: havoga shubha bo‘lsa, perikard bo‘shlig‘iga suv quyilib, o‘ng qorincha teshiladi; pufaklar chiqsa, Sunsov sinamasi musbat. Tipik xato: yog‘ emboliyasida o‘lim darhol keladi deb o‘ylash; aslida u birmuncha muddatdan keyin sodir bo‘ladi."
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega qon hajmi bilan birga qon yo‘qotish sur’ati ham muhim? 2) Havo emboliyasida nega tekshiruv ko‘krak qafasidan boshlanadi? Doskada chizing: ikki ustunli solishtirish (havo va yog‘ emboliyasi: manba, vaqt, tashxis usuli). Qo‘shimcha: havoga shubha bo‘lsa, perikard bo‘shlig‘iga suv quyilib, o‘ng qorincha teshiladi; pufaklar chiqsa, Sunsov sinamasi musbat. Tipik xato: yog‘ emboliyasida o‘lim darhol keladi deb o‘ylash; aslida u birmuncha muddatdan keyin sodir bo‘ladi. Muzlatilgan kesma Sudan III (olovrang qizil) yoki Sudan IV (qora) bilan bo‘yaladi."
+    },
+    {
+      "title": "O‘tmas jismlardan jarohatlar: o‘rni",
+      "bullets": [
+        {
+          "text": "Sud-tibbiy ekspertiza amaliyotida o‘tmas jismlardan jarohatlar yetakchi o‘rinni egallaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "33"
+          }
+        },
+        {
+          "text": "Tirik shaxslar ekspertizasining 80% dan ziyodi ana shu jarohatlar bilan bog‘liq.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "33"
+          }
+        },
+        {
+          "text": "Murdalar ekspertizasida zo‘raki o‘limning yarmiga yaqini o‘tmas jism jarohatlariga to‘g‘ri keladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "33"
+          }
+        },
+        {
+          "text": "Jarohat ta’sir sohasida joylashsa — bevosita, boshqa sohada hosil bo‘lsa — bilvosita jarohat deyiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "33"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Tirik shaxs ekspertizasi",
+            "value": "> 80",
+            "unit": "%"
+          },
+          {
+            "label": "Zo‘raki o‘lim (murda)",
+            "value": "≈ 50",
+            "unit": "%"
+          }
+        ],
+        "caption": "O‘tmas jism jarohatlari ulushi"
+      },
+      "teacher_notes": "Vaqt: 2 daq."
     },
     {
       "title": "O‘tmas jismlar: turlari va yuzasi",
@@ -1291,31 +1484,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Impression va inersion travma",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Impression",
-          "Inersion"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Impression",
+            "items": [
+              "Jism massasi soha massasidan kichik",
+              "Faqat ta’sir sohasi bilan cheklanadi",
+              "Mahalliy jarohat"
+            ]
+          },
+          {
+            "title": "Inersion",
+            "items": [
+              "Ta’sir kuchi massadan ancha katta",
+              "Bilvosita jarohatlar ham bo‘ladi",
+              "Umumiy chayqalish, aks zarb"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Massa va kuch",
-            "Jism massasi soha massasidan kichik",
-            "Ta’sir kuchi massadan ancha katta"
-          ],
-          [
-            "Shikast joyi",
-            "Faqat ta’sir sohasi bilan cheklanadi",
-            "Bilvosita jarohatlar ham bo‘ladi"
-          ],
-          [
-            "Qo‘shimcha belgi",
-            "Mahalliy jarohat",
-            "Umumiy chayqalish, aks zarb"
-          ]
-        ]
+        "caption": "Impression va inersion travma"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Bir jism qachon cheklangan, qachon cheklanmagan yuza hisoblanadi? 2) Nega inersion travmada aks zarb jarohatlari uchraydi? Doskada chizing: jism yuzasi va tana sohasini ikki doira bilan solishtiring. Qo‘shimcha: tirik shaxslar ekspertizasining 80% dan ziyodi o‘tmas jism jarohatlariga to‘g‘ri keladi. Tipik xato: yuzani mutlaq cheklangan deb hisoblash; bo‘linish nisbiy."
     },
@@ -1351,36 +1539,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Mexanizm va jarohat",
-        "nodes": [],
-        "header": [
-          "Mexanizm",
-          "Kuch",
-          "Jarohat"
+        "kind": "tree",
+        "root": "Mexanizmlar",
+        "children": [
+          {
+            "label": "Siqilish",
+            "items": [
+              "Markazga intiluvchi kuchlar, uzoq ta’sir",
+              "Ichki a’zo va suyak shikasti og‘irroq"
+            ]
+          },
+          {
+            "label": "Cho‘zilish",
+            "items": [
+              "Markazdan qochuvchi kuchlar",
+              "Yirtma yara, yorilish, qism ajralishi"
+            ]
+          },
+          {
+            "label": "Ishqalanish",
+            "items": [
+              "Burchak ostida harakat",
+              "Shilinma, teri ajralishi"
+            ]
+          },
+          {
+            "label": "Buralish",
+            "items": [
+              "Ikki aylana, qarama-qarshi",
+              "Spiralsimon sinish"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Siqilish",
-            "Markazga intiluvchi kuchlar, uzoq ta’sir",
-            "Ichki a’zo va suyak shikasti og‘irroq"
-          ],
-          [
-            "Cho‘zilish",
-            "Markazdan qochuvchi kuchlar",
-            "Yirtma yara, yorilish, tana qismi ajralishi"
-          ],
-          [
-            "Ishqalanish",
-            "Burchak ostida harakatlanuvchi jism",
-            "Shilinma, teri ajralishi"
-          ],
-          [
-            "Buralish",
-            "Ikki aylana, qarama-qarshi yo‘nalish",
-            "Spiralsimon suyak sinishi"
-          ]
-        ]
+        "caption": "O‘tmas jism mexanizmi va jarohat"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega siqilishda tashqi jarohat kam, ichki shikast og‘ir bo‘lishi mumkin? 2) Buralishda nega spiralsimon sinish hosil bo‘ladi? Doskada chizing: to‘rt mexanizmning kuch yo‘nalishlarini strelkalar bilan. Qo‘shimcha: aksariyat hollarda jarohat ikki va undan ortiq mexanizm orqali vujudga keladi; kuchli chayqalishga bolalarning silkinish sindromi misol. Tipik xato: bitta jarohatni faqat bitta mexanizmga bog‘lash."
     },
@@ -1416,36 +1607,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Taykov bo‘yicha bosqichlar",
-        "nodes": [],
-        "header": [
-          "Bosqich",
-          "Muddat",
-          "Belgi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Yangi shilinma",
+            "text": "12 soatgacha; yuza nam, keyin quriydi, sathdan past"
+          },
+          {
+            "title": "2. Qoplama",
+            "text": "2–3 sutkagacha; sog‘lom teri sathida"
+          },
+          {
+            "title": "3. Epitelizatsiya",
+            "text": "7–9 sutkagacha; qoplama chetdan ko‘chadi"
+          },
+          {
+            "title": "4. Iz",
+            "text": "10–15 sutkada yo‘qoladi; pushti dog‘"
+          }
         ],
-        "rows": [
-          [
-            "1. Yangi shilinma",
-            "12 soatgacha",
-            "Yuza nam, keyin quriydi, sathdan past"
-          ],
-          [
-            "2. Qoplama hosil bo‘lishi",
-            "2-3 sutkagacha",
-            "Qoplama sog‘lom teri sathida"
-          ],
-          [
-            "3. Epitelizatsiya",
-            "7-9 sutkagacha",
-            "Qoplama qalinlashib, chetdan ko‘chadi"
-          ],
-          [
-            "4. Iz bosqichi",
-            "10-15 sutkada yo‘qoladi",
-            "Pushti dog‘ ko‘rinishidagi iz"
-          ]
-        ]
+        "caption": "Shilinma bosqichlari (Taykov)"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Shilinma yoshini nima uchun bosqichlar bo‘yicha baholaymiz? 2) Pergament dog‘ini shilinmadan qaysi belgilar bilan ajratasiz? Doskada: 4 bosqichli vaqt chizig‘ini chizing va har bosqichga belgi yozing. Tipik xato: muddatlarni qat’iy deb hisoblash. Ular shartli, yosh, teri xususiyati va jarohat chuqurligiga bog‘liq (qoplama 4-6 soatdan keyin ham hosil bo‘lishi mumkin)."
     },
@@ -1526,36 +1707,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Yara va yorilish farqi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Yara",
-          "Yorilish"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Yara",
+            "items": [
+              "Uchlari odatda o‘tmas",
+              "Chetlari notekis, shilingan",
+              "Chekka devori ko‘prikchali",
+              "Tubi notekis sathli"
+            ]
+          },
+          {
+            "title": "Yorilish",
+            "items": [
+              "Uchlari ko‘pincha o‘tkir",
+              "Chetlari tekis, shilinishsiz",
+              "Chekka devori tikka",
+              "Tubi yassi, bir sathda"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Uchlari",
-            "Odatda o‘tmas",
-            "Ko‘pincha o‘tkir"
-          ],
-          [
-            "Chetlari",
-            "Notekis, shilingan",
-            "Tekis, shilinishsiz"
-          ],
-          [
-            "Chekka devori",
-            "Notekis, ko‘prikchali",
-            "Tikka"
-          ],
-          [
-            "Tubi",
-            "Notekis sathli",
-            "Yassi, bir sathda"
-          ]
-        ]
+        "caption": "Yara va yorilish farqi"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Yara turlari (lat, majaqlangan, yirtma, laxtaksimon) qaysi mexanizmlardan hosil bo‘ladi? 2) Nega yorilishni yaradan farqlash ekspertizada muhim? Doskada: ikki ustunli taqqoslash jadvalini o‘zingiz to‘ldirtiring. Tipik xato: yorilishni yara deb baholash. Yorilish bilvosita va ta’sir yo‘nalishiga perpendikulyar, parallel bir necha urchuqsimon jarohat ko‘rinishida bo‘ladi."
     },
@@ -1634,36 +1807,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Egilishda sinish belgilari",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Cho‘zilish tomoni",
-          "Siqilish tomoni"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Cho‘zilish tomoni",
+            "items": [
+              "Bitta to‘g‘ri, ko‘ndalang chiziq",
+              "Chetlari tekis yoki mayda tishli",
+              "Siniq hosil bo‘lmaydi",
+              "Yaqinlashtirilsa zich mos keladi"
+            ]
+          },
+          {
+            "title": "Siqilish tomoni",
+            "items": [
+              "Zigzagsimon, qiyshiq yoki uzunasiga chiziq",
+              "Chetlari notekis, yirik tishli, edirilgan",
+              "Siniqlar hosil bo‘lishi mumkin",
+              "Yaqinlashtirilsa mos tushmaydi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Sinish chizig‘i",
-            "Bitta to‘g‘ri, ko‘ndalang",
-            "Zigzagsimon, qiyshiq yoki uzunasiga"
-          ],
-          [
-            "Siniq chetlari",
-            "Tekis yoki mayda tishli",
-            "Notekis, yirik tishli, edirilgan"
-          ],
-          [
-            "Suyak siniqlari",
-            "Hosil bo‘lmaydi",
-            "Hosil bo‘lishi mumkin"
-          ],
-          [
-            "Yaqinlashtirilganda",
-            "Zich mos keladi",
-            "Mos tushmaydi"
-          ]
-        ]
+        "caption": "Egilishda sinish belgilari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Egilishda kuch qaysi tomondan tushganini qanday aniqlaysiz? 2) Nega chiqishda tashqi jarohat bo‘lmasligi mumkin? Doskada: egilgan suyak sxemasini chizib, cho‘zilish va siqilish tomonlarini belgilang. Tipik xato: cho‘zilish va siqilish tomonlarini almashtirib yuborish; muvaqqat va doimiy deformatsiyani aralashtirish."
     },
@@ -1699,17 +1864,30 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Balandlikdan yiqilish bosqichlari",
-        "nodes": [
-          "I-II: muvozanat, aylanish",
-          "III: tayanchdan ajralish",
-          "IV: parvoz",
-          "V: zarblanish — asosiy jarohat",
-          "VI: inersiya, ikkilamchi zarb"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "I–II",
+            "text": "Muvozanat, aylanish"
+          },
+          {
+            "title": "III",
+            "text": "Tayanchdan ajralish"
+          },
+          {
+            "title": "IV",
+            "text": "Parvoz"
+          },
+          {
+            "title": "V",
+            "text": "Zarblanish — asosiy jarohat"
+          },
+          {
+            "title": "VI",
+            "text": "Inersiya, ikkilamchi zarb"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Balandlikdan yiqilish bosqichlari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nima uchun asosiy jarohatlar V bosqichda hosil bo‘ladi? 2) Birlamchi va ikkilamchi jarohat qanday farqlanadi? Doskada: 6 bosqichli zanjirni chizib, har bosqichda jarohat bor-yo‘qligini belgilang. Tipik xato: IV bosqichda jarohat bo‘ladi deb o‘ylash (faqat to‘siq bo‘lsa mumkin) va yuzaga yiqilishda ikkilamchi jarohat bor deb hisoblash."
     },
@@ -1918,11 +2096,11 @@
       "question": "Murdada jarohat sohasidagi qon tomirlarida tromblar topildi. Bu belgi qaysi guruhga kiradi?",
       "options": [
         "Hayotiylikning umumiy belgisi",
-        "Hayotiylikning mahalliy belgisi",
         "Murda dog‘ining belgisi",
+        "Hayotiylikning mahalliy belgisi",
         "Pergament dog‘ining belgisi"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Shikastlangan sohadagi qon tomirlarida tromblar topilishi jarohat hayotiyligini tasdiqlovchi mahalliy belgilar qatoriga kiradi. Umumiy belgilarga esa tashqi va ichki qon ketishi, emboliyalar kabilar kiradi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1950,11 +2128,11 @@
       "question": "Murda ichki tekshiruvida jarohatga yaqin regional limfa tugunlarida eritrotsitlar (eritrofagiya) topildi. Bu topilma nimani bildiradi?",
       "options": [
         "Jarohat o‘limdan keyin etkazilganini ko‘rsatuvchi murda dog‘i belgisi",
-        "Jarohat hayotiyligining umumiy belgilaridan biri (eritrofagiya)",
+        "Pergament dog‘iga xos, jarohat hayotiy emasligini bildiruvchi belgi",
         "Faqat o‘lim sababini aniqlovchi mahalliy hayotiylik belgisi",
-        "Pergament dog‘iga xos, jarohat hayotiy emasligini bildiruvchi belgi"
+        "Jarohat hayotiyligining umumiy belgilaridan biri (eritrofagiya)"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Regional limfa tugunlarida eritrotsitlarning bo‘lishi (eritrofagiya) jarohat hayotiyligining umumiy belgilari qatoriga kiradi. Pergament dog‘larida hayotiy jarohatlarga xos o‘zgarishlar aniqlanmaydi.",
       "source": {
         "author": "G‘iyosov Z.A.",

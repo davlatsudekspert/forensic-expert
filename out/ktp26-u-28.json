@@ -76,31 +76,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Issiqlik ajralish yo‘llari",
-        "nodes": [],
-        "header": [
-          "Ajralish yo‘li",
-          "Ulushi"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Nurlanish",
+            "value": "55%"
+          },
+          {
+            "label": "Ter bilan",
+            "value": "27%"
+          },
+          {
+            "label": "O‘tkazish",
+            "value": "15%"
+          },
+          {
+            "label": "Turli ajratmalar",
+            "value": "3%"
+          }
         ],
-        "rows": [
-          [
-            "Nurlanish",
-            "55%"
-          ],
-          [
-            "Ter bilan",
-            "27%"
-          ],
-          [
-            "O‘tkazish",
-            "15%"
-          ],
-          [
-            "Turli ajratmalar",
-            "3%"
-          ]
-        ]
+        "caption": "Issiqlik ajralish yo‘llari"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Qaysi yo‘l issiqni eng ko‘p chiqaradi? 2) Nima uchun harorat chegarasi hayot uchun muhim? Doskada: 36-37°S me’yor va ikki chegara (22-25°S, 43-44°S) bilan sodda shkala chizing. Tipik xato: pastki va yuqori chegara raqamlarini almashtirib yuborish."
     },
@@ -136,28 +131,104 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Umumiy va mahalliy ta’sir",
-        "nodes": [],
-        "header": [
-          "Ta’sir",
-          "Yuqori harorat",
-          "Past harorat"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Yuqori harorat",
+            "items": [
+              "Umumiy: Issiq urish",
+              "Mahalliy: Termik kuyish"
+            ]
+          },
+          {
+            "title": "Past harorat",
+            "items": [
+              "Umumiy: Sovuq qotish",
+              "Mahalliy: Sovuq urish"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Umumiy",
-            "Issiq urish",
-            "Sovuq qotish"
-          ],
-          [
-            "Mahalliy",
-            "Termik kuyish",
-            "Sovuq urish"
-          ]
-        ]
+        "caption": "Umumiy va mahalliy ta’sir"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Umumiy va mahalliy ta’sirning asosiy farqi nima? 2) Sovuq qotish va sovuq urishda tana harorati qanday farq qiladi? Doskada: 2x2 jadvalni talabalar bilan birga to‘ldiring. Tipik xato: sovuq urish va sovuq qotishni bir holat deb hisoblash."
+    },
+    {
+      "title": "Tana harorati chegaralari (Iskandarov)",
+      "bullets": [
+        {
+          "text": "Organizm tana haroratini 36-37°S da ushlab turadi; hayotiy jarayonlar +22°S dan +42-43°S gacha chegarada kechadi.",
+          "source": {
+            "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+            "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "235"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "To‘qima harorati +45-47°S dan ko‘tarilsa, oqsillar ivib, fermentlar aktivligi yo‘qoladi va qaytmas o‘zgarishlar tufayli o‘lim sodir bo‘ladi.",
+          "source": {
+            "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+            "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "235"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Teri harorati +45-50°S dan oshganda termik kuyish kuzatiladi; chuqurligi agent harorati, ta’sir davomi va to‘qima xususiyatiga bog‘liq.",
+          "source": {
+            "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+            "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "235"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qaynoq suvda IV-darajali kuyish kuzatilmaydi: suv harorati +100°S dan oshmaydi va kiyim-tanaga tekkanda tez soviydi.",
+          "source": {
+            "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+            "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "242"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Me’yoriy tana harorati",
+            "value": "36–37",
+            "unit": "°S"
+          },
+          {
+            "label": "Hayotiy chegara (past)",
+            "value": "+22",
+            "unit": "°S"
+          },
+          {
+            "label": "Hayotiy chegara (yuqori)",
+            "value": "+42–43",
+            "unit": "°S"
+          },
+          {
+            "label": "Qaytmas o‘zgarish",
+            "value": "+45–47",
+            "unit": "°S"
+          },
+          {
+            "label": "Termik kuyish (teri)",
+            "value": "+45–50",
+            "unit": "°S"
+          },
+          {
+            "label": "Qaynoq suv, eng yuqori",
+            "value": "+100",
+            "unit": "°S"
+          }
+        ],
+        "caption": "Harorat chegaralari"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega qaynoq suvda chuqur kuyish kam uchraydi? Doskada: harorat zinapoyasi. Tipik xato: kuyishning chuqurligini faqat haroratga bog‘lash; ta’sir davomi ham ahamiyatli."
     },
     {
       "title": "Issiq urish: sabablar va mexanizm",
@@ -280,31 +351,35 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Murdadagi topilmalar",
-        "nodes": [],
-        "header": [
-          "A’zo/belgi",
-          "Topilma"
+        "kind": "tree",
+        "root": "Murdadagi topilmalar",
+        "children": [
+          {
+            "label": "Bosh miya",
+            "items": [
+              "To‘laqonlik, shish, mayda qon quyilish"
+            ]
+          },
+          {
+            "label": "Ichki a’zolar",
+            "items": [
+              "To‘laqonlik, seroz osti qon quyilish"
+            ]
+          },
+          {
+            "label": "Yurak, o‘pka",
+            "items": [
+              "Quyuq qon; o‘pka qo‘ng‘ir tusda"
+            ]
+          },
+          {
+            "label": "Murda qotishi",
+            "items": [
+              "Tez va kuchli; dog‘lar kech, oz"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Bosh miya",
-            "To‘laqonlik, shishish, mayda qon quyilish"
-          ],
-          [
-            "Ichki a’zolar",
-            "To‘laqonlik, seroz ostida qon quyilishlar"
-          ],
-          [
-            "Yurak, o‘pka",
-            "Quyuq qon; o‘pka qo‘ng‘ir tusda"
-          ],
-          [
-            "Murda qotishi",
-            "Tez va kuchli; dog‘lar kech, oz"
-          ]
-        ]
+        "caption": "Murdadagi topilmalar"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nima uchun murda tekshiruvi issiq va quyosh urishini bir-biridan ajratolmaydi? 2) Murda qotishi va dog‘lari qanday o‘zgaradi? Doskada chizing: jadvaldagi topilmalar ro‘yxatini. Tipik xato: quyosh urishida yuqori tana harorati xos deb o‘ylash; manbaga ko‘ra, salmoqli ko‘tarilish xos emas. Qo‘shimcha: puls dastlab tezlashib, keyin sekinlashadi."
     },
@@ -426,36 +501,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Kuyish darajalari",
-        "nodes": [],
-        "header": [
-          "Daraja",
-          "Belgi/tuzalish",
-          "Murdada"
+        "kind": "tree",
+        "root": "Kuyish darajalari",
+        "children": [
+          {
+            "label": "I",
+            "items": [
+              "Eritema, shish, og‘riq; 3-4 kunda izsiz",
+              "Ko‘pincha aniqlanmaydi"
+            ]
+          },
+          {
+            "label": "II",
+            "items": [
+              "Seroz pufak; 10-20 kunda chandiqsiz",
+              "Pufak tubi qo‘ng‘ir, zich; qon chiqmaydi"
+            ]
+          },
+          {
+            "label": "III",
+            "items": [
+              "Nekroz, strup; 2-3 haftada granulyatsiya",
+              "Manbada alohida ko‘rsatilmagan"
+            ]
+          },
+          {
+            "label": "IV",
+            "items": [
+              "Teri va chuqur to‘qimalar nekrozi",
+              "Faqat alangadan hosil bo‘ladi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "I",
-            "Eritema, shish, og‘riq; 3-4 kunda izsiz",
-            "Ko‘pincha aniqlanmaydi"
-          ],
-          [
-            "II",
-            "Seroz pufak; 10-20 kunda chandiqsiz",
-            "Pufak tubi qo‘ng‘ir, zich; qon chiqmaydi"
-          ],
-          [
-            "III",
-            "Nekroz, strup; 2-3 haftada granulyatsiya",
-            "Manbada alohida ko‘rsatilmagan"
-          ],
-          [
-            "IV",
-            "Teri va chuqur to‘qimalar nekrozi",
-            "Faqat alangadan hosil bo‘ladi"
-          ]
-        ]
+        "caption": "Kuyish darajalari"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Murdada pufak tubidan qon chiqmasligi nimani anglatadi? 2) Qaysi darajalar chandiq qoldirmaydi? Doskaga chizish: teri qavatlari kesimi va unda I-IV daraja chuqurligini belgilash. Tipik xato: II darajada chandiq qoladi deb o‘ylash. Eslatma: III darajaning murdadagi belgisi jadvalda manbada alohida berilmaganligi sababli ko‘rsatilmadi."
     },
@@ -491,36 +569,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "III-IV daraja va aralash kuyishlar",
-        "nodes": [],
-        "header": [
-          "Daraja",
-          "Zararlanish",
-          "Oqibat"
+        "kind": "tree",
+        "root": "III-IV daraja, aralash kuyish",
+        "children": [
+          {
+            "label": "III-A",
+            "items": [
+              "Epidermis va dermaning yuzaki nekrozi",
+              "2-3 haftada granulyatsiya, so‘ng chandiq"
+            ]
+          },
+          {
+            "label": "III-B",
+            "items": [
+              "Epidermis va dermaning to‘liq nekrozi",
+              "Strup, so‘ng chandiq qoladi"
+            ]
+          },
+          {
+            "label": "IV",
+            "items": [
+              "Teri, mushak, boylam, suyak nekrozi",
+              "Faqat alanga ta’sirida bo‘ladi"
+            ]
+          },
+          {
+            "label": "Aralash",
+            "items": [
+              "Bir jarohatda turli darajalar",
+              "Aksariyat holatda uchraydi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "III-A",
-            "Epidermis va dermaning yuzaki nekrozi",
-            "2-3 haftada granulyatsiya, so‘ng chandiq"
-          ],
-          [
-            "III-B",
-            "Epidermis va dermaning to‘liq nekrozi",
-            "Strup, so‘ng chandiq qoladi"
-          ],
-          [
-            "IV",
-            "Teri, mushak, boylam, suyak nekrozi",
-            "Faqat alanga ta’sirida bo‘ladi"
-          ],
-          [
-            "Aralash",
-            "Bir jarohatda I-II, III-IV kabi darajalar",
-            "Aksariyat holatda uchraydi"
-          ]
-        ]
+        "caption": "III-IV daraja, aralash kuyish"
       },
       "teacher_notes": "Vaqt: 6-7 daqiqa. Muhokama: nega bir jarohat sohasida bir nechta daraja uchraydi? Yuzaki (I-II) va chuqur (III-IV) kuyishni qanday farqlaysiz? Doskada: terining qatlamlarini chizib, har daraja nekrozi chuqurligini rangli bo‘rda belgilang. Diqqat: xato qilish xavfi - IV daraja barcha issiqlik manbalaridan emas, faqat alangadan hosil bo‘ladi. Tipik xato: III-A bilan III-B ni aralashtirish; III-B da epidermis va derma to‘liq nekrozga uchraydi."
     },
@@ -556,36 +637,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Issiq suyuqlik va alanga (A vs B)",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Issiq suyuqlik",
-          "Alanga"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Issiq suyuqlik",
+            "items": [
+              "Soch va kiyim: Shikastlanmaydi",
+              "Jarohat shakli: Oqmalar shaklida",
+              "Chuqurlik: Termik kuyish yuzaki",
+              "Qo‘shimcha: Kiyim ostiga suyuqlik oqib kirishi mumkin"
+            ]
+          },
+          {
+            "title": "Alanga",
+            "items": [
+              "Soch va kiyim: Shikastlanadi",
+              "Jarohat shakli: Tilsimon shaklda",
+              "Chuqurlik: Chuqur kuyish xos",
+              "Qo‘shimcha: Kuyish yarasida qurum izlari"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Soch va kiyim",
-            "Shikastlanmaydi",
-            "Shikastlanadi"
-          ],
-          [
-            "Jarohat shakli",
-            "Oqmalar shaklida",
-            "Tilsimon shaklda"
-          ],
-          [
-            "Chuqurlik",
-            "Termik kuyish yuzaki",
-            "Chuqur kuyish xos"
-          ],
-          [
-            "Qo‘shimcha",
-            "Kiyim ostiga suyuqlik oqib kirishi mumkin",
-            "Kuyish yarasida qurum izlari"
-          ]
-        ]
+        "caption": "Issiq suyuqlik va alanga (A vs B)"
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: kiyim ostidagi teri kuygan, kiyim butun bo‘lsa, qaysi manbani o‘ylaysiz va nima uchun? Yarada qurum topilishi nimani bildiradi? Doskada: ikki ustunli (suyuqlik va alanga) solishtirish jadvalini talabalar o‘zlari to‘ldirsin. Diqqat: issiq suyuqlik ≠ alanga - suyuqlikda soch va kiyim zararlanmaydi, alangada zararlanadi. Tipik xato: kiyim bilan yopiq soha kuymagan, shuning uchun manba suyuqlik emas, deb xulosa qilish; suyuqlik kiyim ostiga oqib kirishi mumkin."
     },
@@ -621,36 +694,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Manba, belgi va yo‘nalish",
-        "nodes": [],
-        "header": [
-          "Manba",
-          "Belgi",
-          "Xulosa"
+        "kind": "tree",
+        "root": "Manba, belgi va yo‘nalish",
+        "children": [
+          {
+            "label": "Qizdirilgan jism",
+            "items": [
+              "Tamg‘asimon (bosma) kuyish",
+              "Shakl kontakt yuzasiga mos"
+            ]
+          },
+          {
+            "label": "Bug‘, issiq gazlar",
+            "items": [
+              "Nafas yo‘llarining kuyishi",
+              "Faqat shu ta’sirga xos"
+            ]
+          },
+          {
+            "label": "Issiq suyuqlik",
+            "items": [
+              "Oqmalar pastga yo‘nalgan",
+              "Past joylashgan sohalar tomon"
+            ]
+          },
+          {
+            "label": "Alanga",
+            "items": [
+              "“Alanga tillari” yuqoriga",
+              "Yuqori joylashgan sohalar tomon"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Qizdirilgan jism",
-            "Tamg‘asimon (bosma) kuyish",
-            "Shakl kontakt yuzasiga mos"
-          ],
-          [
-            "Bug‘, issiq gazlar",
-            "Nafas yo‘llarining kuyishi",
-            "Faqat shu ta’sirga xos"
-          ],
-          [
-            "Issiq suyuqlik",
-            "Oqmalar pastga yo‘nalgan",
-            "Past joylashgan sohalar tomon"
-          ],
-          [
-            "Alanga",
-            "“Alanga tillari” yuqoriga",
-            "Yuqori joylashgan sohalar tomon"
-          ]
-        ]
+        "caption": "Manba, belgi va yo‘nalish"
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: tamg‘asimon kuyishning shakli bo‘yicha jismni qanday aniqlash mumkin? Oqmalar pastga, alanga tillari yuqoriga yo‘nalishi jabrlanganning holati haqida nima deydi? Doskada: tana konturini chizib, oqmalar va alanga tillari yo‘nalishini strelkalar bilan ko‘rsating. Tipik xato: nafas yo‘llari kuyishini har qanday issiqlik manbaiga xos deb hisoblash; darslikka ko‘ra u bug‘ va issiq gazlar uchun xos."
     },
@@ -729,31 +805,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Tana yuzasi ulushlari",
-        "nodes": [],
-        "header": [
-          "Soha",
-          "Ulush"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Bosh va bo‘yin",
+            "value": "9%"
+          },
+          {
+            "label": "Qo‘l",
+            "value": "9%"
+          },
+          {
+            "label": "Tana old va orqa yuzasi",
+            "value": "har biri 18%"
+          },
+          {
+            "label": "Son; boldir va tovon",
+            "value": "har biri 9%"
+          }
         ],
-        "rows": [
-          [
-            "Bosh va bo‘yin",
-            "9%"
-          ],
-          [
-            "Qo‘l",
-            "9%"
-          ],
-          [
-            "Tananing old va orqa yuzasi",
-            "har biri 18%"
-          ],
-          [
-            "Son; boldir va tovon",
-            "har biri 9%"
-          ]
-        ]
+        "caption": "Tana yuzasi ulushlari"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega aniq emas, ‘taxminan’ deyiladi? 2) Old va orqa yuza birgalikda necha foiz bo‘ladi? Doskada chizing: odam silueti va unga 9% li bo‘laklar. Tipik xato: oraliq sohaning 1% ekanini unutish yoki old va orqa yuzani bitta 18% deb olish."
     },
@@ -832,31 +903,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Xavfli kuyish chegaralari",
-        "nodes": [],
-        "header": [
-          "Daraja",
-          "Maydon"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "III-IV daraja kuyish",
+            "value": ">10",
+            "unit": "% yuza"
+          },
+          {
+            "label": "III daraja kuyish",
+            "value": ">15",
+            "unit": "% yuza"
+          },
+          {
+            "label": "II daraja kuyish",
+            "value": ">20",
+            "unit": "% yuza"
+          },
+          {
+            "label": "Nafas yo‘llari kuyishi",
+            "value": "shish, torayish"
+          }
         ],
-        "rows": [
-          [
-            "III-IV darajali kuyish",
-            "tana yuzasining 10% dan ortig‘i"
-          ],
-          [
-            "III darajali kuyish",
-            "tana yuzasining 15% dan ortig‘i"
-          ],
-          [
-            "II darajali kuyish",
-            "tana yuzasining 20% dan ortig‘i"
-          ],
-          [
-            "Nafas yo‘llari kuyishi",
-            "shish, ovoz yorig‘i torayishi bilan"
-          ]
-        ]
+        "caption": "Hayot uchun xavfli kuyish"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: nega bir xil maydonda chuqurroq kuyishning chegarasi kichikroq? Nafas yo‘llari kuyishi qaysi omillar ta’siriga xos? Doskada: uchta chegarani (10%, 15%, 20%) darajalar bilan juftlab chizdiring. Tipik xato: foiz chegaralarini darajalar bilan almashtirib yuborish (masalan, 20% ni III darajaga bog‘lash). Diqqat: xavfli mezon yuzaga ham, chuqurlikka ham bog‘liq."
     },
@@ -892,29 +961,103 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Kasr yozuvi tuzilishi",
-        "nodes": [],
-        "header": [
-          "Joyi",
-          "Yoziladi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Surat (tepada)",
+            "text": "kuyish yuzasi, foizda"
+          },
+          {
+            "title": "Mahraj (pastda)",
+            "text": "kuyish darajalari"
+          },
+          {
+            "title": "Qavs ichida",
+            "text": "chuqurroq kuyish yuzasi"
+          }
         ],
-        "rows": [
-          [
-            "Surat (tepada)",
-            "kuyish yuzasi, foizda"
-          ],
-          [
-            "Mahraj (pastda)",
-            "kuyish darajalari"
-          ],
-          [
-            "Qavs ichida",
-            "chuqurroq kuyish yuzasi"
-          ]
-        ]
+        "caption": "Kasr yozuvi tuzilishi"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: nega diagnozda faqat darajani yozish yetarli emas? Qavs ichidagi raqam nimani bildiradi? Doskada: ’30% (10%) / II-III’ kasrini chizib, har qismini izohlang. Tipik xato: surat va mahrajni almashtirish yoki qavs ichidagi raqamni umumiy yuza deb o‘ylash. Diqqat: qavs ichidagi raqam chuqurroq kuyish yuzasi, umumiy yuza emas."
+    },
+    {
+      "title": "Kuyish maydoni va prognoz (Iskandarov)",
+      "bullets": [
+        {
+          "text": "Tananing 5% idan kam yuzasini egallagan I-II darajali kuyish odatda o‘limga olib kelmaydi.",
+          "source": {
+            "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+            "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "239"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tana yuzasining 25% dan ko‘pida keng chuqur kuyishda zamonaviy davoda ham 80-85% jabrlanuvchi o‘lishi mumkin.",
+          "source": {
+            "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+            "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "239"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ko‘pchilik klinitsistlarga ko‘ra tana yuzasining 45-50% i chuqur kuyganda jarohat hayot uchun to‘g‘ri kelmaydi.",
+          "source": {
+            "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+            "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "239"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kuyish kasalligi II-IV darajali kuyish tananing 10-15% idan ko‘p yoki I darajali kuyish 50% ni egallaganda rivojlanadi; toksemiya 8-10 kun davom etadi.",
+          "source": {
+            "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+            "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "237"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "I-II daraja, o‘limsiz",
+            "value": "<5",
+            "unit": "%"
+          },
+          {
+            "label": "Keng chuqur kuyish",
+            "value": ">25",
+            "unit": "%"
+          },
+          {
+            "label": "O‘lim ehtimoli",
+            "value": "80–85",
+            "unit": "%"
+          },
+          {
+            "label": "Hayotga mos kelmaydi",
+            "value": "45–50",
+            "unit": "%"
+          },
+          {
+            "label": "Kuyish kasalligi",
+            "value": "10–15 dan",
+            "unit": "%"
+          },
+          {
+            "label": "Toksemiya davri",
+            "value": "8–10",
+            "unit": "kun"
+          }
+        ],
+        "caption": "Maydon va oqibat"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: Iskandarov va G‘iyosov chegaralari nima uchun farq qiladi (hayotga to‘g‘ri kelmaslik va hayot uchun xavfli)? Doskada: raqamlar jadvali. Tipik xato: ikki darslik mezonlarini bir xil deb olish.",
+      "diagram_note": "Iskandarov klinitsistlar chegarasini (45-50%) keltiradi; G‘iyosovning hayot uchun xavfli mezonlari (10-20% va daraja) boshqa maqsadda qo‘llanadi."
     },
     {
       "title": "Kuyish kasalligi va uning to‘rt davri",
@@ -1122,26 +1265,24 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "HbCO: tirik va o‘limdan keyin",
-        "nodes": [],
-        "header": [
-          "Ko‘rsatkich",
-          "Hayotiy ta’sir",
-          "O‘limdan keyin"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Hayotiy ta’sir",
+            "items": [
+              "HbCO konsentratsiyasi: 60% gacha bo‘lishi mumkin",
+              "Qon olinadigan joy: Yurak kameralari, chuqur tomirlar"
+            ]
+          },
+          {
+            "title": "O‘limdan keyin",
+            "items": [
+              "HbCO konsentratsiyasi: 20% dan oshmaydi",
+              "Qon olinadigan joy: Yuza tomirlarda ham topilishi mumkin"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "HbCO konsentratsiyasi",
-            "60% gacha bo‘lishi mumkin",
-            "20% dan oshmaydi"
-          ],
-          [
-            "Qon olinadigan joy",
-            "Yurak kameralari, chuqur tomirlar",
-            "Yuza tomirlarda ham topilishi mumkin"
-          ]
-        ]
+        "caption": "HbCO: tirik va o‘limdan keyin"
       },
       "teacher_notes": "Vaqt: 6-7 daq. Muhokama: nega tekshiruv uchun qon yuza tomirdan emas, yurak kameralari va chuqur tomirlardan olinadi? Yong‘in o‘chog‘ida topilgan murdada HbCO 15% chiqsa, bu nimani anglatadi? Doskada chizing: 20% va 60% chegaralari bilan sodda shkala. Tipik xato: HbCO topilishining o‘zini hayotiylik isboti deb hisoblash, miqdorini hisobga olmaslik."
     },
@@ -1149,7 +1290,7 @@
       "title": "“G‘oz panjasi” va boshqa hayotiylik belgilari",
       "bullets": [
         {
-          "text": "Hayotiy ta’sirda ko‘z olmalari odatda shikastlanmaydi. Qovoq burmasining yuqori qismida kuyish va qurum bo‘ladi, tubida bo‘lmaydi; teri yoyilganda “g‘oz panjasi” ko‘rinadi.",
+          "text": "Hayotiy ta’sirda ko‘z olmalari odatda shikastlanmaydi. Qovoq burmasi yuqorisida kuyish va qurum bor, tubida yo‘q; teri yoyilganda «g‘oz panjasi» ko‘rinadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1220,26 +1361,24 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Epidural gematomani farqlash",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Travmatik",
-          "Alanga ta’siri"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Travmatik",
+            "items": [
+              "Shakli: Urchuqsimon",
+              "Qattiq pardaga: Birikkan"
+            ]
+          },
+          {
+            "title": "Alanga ta’siri",
+            "items": [
+              "Shakli: O‘roqsimon",
+              "Qattiq pardaga: Birikmagan"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Shakli",
-            "Urchuqsimon",
-            "O‘roqsimon"
-          ],
-          [
-            "Qattiq pardaga",
-            "Birikkan",
-            "Birikmagan"
-          ]
-        ]
+        "caption": "Epidural gematomani farqlash"
       },
       "teacher_notes": "Vaqt: 6-7 daq. Muhokama: nega gematomaning shakli va qattiq pardaga birikishi uning kelib chiqishini ko‘rsatadi? Nima uchun yong‘indan keyingi murdada mikroskopik tekshiruv majburiy hisoblanadi? Doskada chizing: urchuqsimon va o‘roqsimon gematomaning kesmadagi shakli. Tipik xato: o‘limdan keyingi gematomani jarohat natijasi deb baholash (urchuqsimon ≠ o‘roqsimon)."
     },
@@ -1285,6 +1424,158 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Bokser pozasi nima uchun hosil bo‘ladi? 2) Nega go‘dak va kattalar murdasining yonish muddati bunchalik farq qiladi? Doskada: oqsil ivishi → mushak kaltalashishi → poza zanjirini chizing. Tipik xato: bokser pozasini tiriklikdagi himoya harakati deb o‘ylash; u murdadagi fizik-kimyoviy o‘zgarish. Kulni tekshirish tur, jins, yoshni aniqlash uchun kerak bo‘lishi mumkinligini eslating."
+    },
+    {
+      "title": "Murdaning yonish muddati: manbalar farqi",
+      "bullets": [
+        {
+          "text": "Murda yonish muddati manbalarda turlicha: Ignatovskiy (1910) 40-50 soat, Rayskiy (1953) 10-20 soat.",
+          "source": {
+            "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+            "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "245"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "G‘iyosov: go‘dak murdasi 2-3 soatda yonib kulga aylanadi, kattalarniki taxminan 20 soatda, krematoriyda gazda bir soatdan kam.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "191"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Iskandarov: maxsus tekshiruvda katta odam murdasi 4-4,5 soatda yonib bo‘lgan; krematoriyda 1 soatdan kam.",
+          "source": {
+            "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+            "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "246"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Muddatlar yonish sharoitiga bog‘liq; ekspert yonish muddatini keltirilgan sharoit bilan solishtiradi.",
+          "source": {
+            "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+            "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "245"
+          },
+          "uncertain": true
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Eski ma’lumotlar",
+            "items": [
+              "Ignatovskiy (1910): 40–50 soat",
+              "Rayskiy (1953): 10–20 soat"
+            ]
+          },
+          {
+            "title": "G‘iyosov",
+            "items": [
+              "Go‘dak: 2–3 soat",
+              "Kattalar: ≈20 soat",
+              "Krematoriy: <1 soat"
+            ]
+          },
+          {
+            "title": "Iskandarov",
+            "items": [
+              "Katta odam: 4–4,5 soat (tajriba)",
+              "Krematoriy: <1 soat"
+            ]
+          }
+        ],
+        "caption": "Yonish muddati"
+      },
+      "teacher_notes": "Vaqt: 3 daqiqa. Muhokama: nega manbalar bunchalik farq qiladi? Doskada: uch ustun. Tipik xato: bitta raqamni mutlaq qabul qilish.",
+      "diagram_note": "Manbalar yonish muddatini turlicha keltiradi (10-50 soat va 4-4,5 soat); sharoitga bog‘liq, bitta raqamga tayanib bo‘lmaydi."
+    },
+    {
+      "title": "Kuyishning tiriklik belgilari (Iskandarov)",
+      "bullets": [
+        {
+          "text": "Yong‘in o‘chog‘ida tiriklikning aniq belgisi: qonda karboksigemoglobin va nafas yo‘llari, qizilo‘ngach, oshqozonda qurum.",
+          "source": {
+            "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+            "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "243"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tiriklikda qurum eng kichik bronx va alveolalarda, ba’zan peshona bo‘shlig‘ida, yurak-tomirlarda va jigar Kupfer hujayralarida topiladi.",
+          "source": {
+            "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+            "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "243"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Nafas yo‘llari shilliq pardasida to‘laqonlik, shish, qon quyilish va oqimtir nekroz o‘choqlari; yuz burmalarida jarohatlanmaslik ham belgi.",
+          "source": {
+            "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+            "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "243"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tiriklikdagi kuyish pufakchasida umumiy oqsil 4,2-4,9% bo‘lib, o‘limdan keyingi pufakchadagi oqsildan taxminan 2 marta ko‘p.",
+          "source": {
+            "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+            "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "244"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Kuyish: tiriklik belgilari",
+        "children": [
+          {
+            "label": "Qonda",
+            "items": [
+              "Karboksigemoglobin"
+            ]
+          },
+          {
+            "label": "Nafas yo‘llarida",
+            "items": [
+              "Qurum (bronx, alveola gacha)",
+              "To‘laqonlik, shish, nekroz"
+            ]
+          },
+          {
+            "label": "Hazm yo‘lida",
+            "items": [
+              "Qizilo‘ngach, oshqozonda qurum"
+            ]
+          },
+          {
+            "label": "Terida",
+            "items": [
+              "Yuz burmalari jarohatlanmagan",
+              "Pufakcha oqsili 4,2–4,9%"
+            ]
+          },
+          {
+            "label": "O‘pkada",
+            "items": [
+              "Yog‘ emboliyasi"
+            ]
+          }
+        ],
+        "caption": "Hayotiylik"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: nega gistologiya doim yordam bera olmaydi? Doskada: daraxt. Tipik xato: faqat kuygan terining ko‘rinishiga tayanish."
     },
     {
       "title": "Voqea tahlili: yong‘indan keyin topilgan murda",
@@ -1351,7 +1642,7 @@
           "uncertain": false
         },
         {
-          "text": "Uzoq qolib ketilsa, sovuq qotish havo harorati +10°S gacha bo‘lganda ham rivojlanishi mumkin. Alkogol teri tomirlarini kengaytirib, issiqlik yo‘qotishni oshiradi.",
+          "text": "Uzoq qolinsa, sovuq qotish havo harorati +10°S gacha bo‘lganda ham rivojlanishi mumkin. Alkogol teri tomirlarini kengaytirib, issiqlik yo‘qotishni oshiradi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1450,31 +1741,35 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Tashqi belgilar",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Ko‘rinishi"
+        "kind": "tree",
+        "root": "Tashqi belgilar",
+        "children": [
+          {
+            "label": "Sovuq qotgan odam pozasi",
+            "items": [
+              "Qo‘l ko‘krakka, oyoq qoringa bukilgan"
+            ]
+          },
+          {
+            "label": "Rayskiy belgilari",
+            "items": [
+              "Og‘iz-burunda muz, kiprikda qirov"
+            ]
+          },
+          {
+            "label": "Puparev belgisi",
+            "items": [
+              "Moyak qisqargan, yorg‘oq tortilgan"
+            ]
+          },
+          {
+            "label": "Murda dog‘lari",
+            "items": [
+              "Manfiy haroratda pushti-qizgish"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Sovuq qotgan odam pozasi",
-            "Qo‘l ko‘krakka, oyoq qoringa bukilgan"
-          ],
-          [
-            "Rayskiy belgilari",
-            "Og‘iz-burunda muz, kiprikda qirov"
-          ],
-          [
-            "Puparev belgisi",
-            "Moyak qisqargan, yorg‘oq chovga tortilgan"
-          ],
-          [
-            "Murda dog‘lari",
-            "Manfiy haroratda pushti-qizgish"
-          ]
-        ]
+        "caption": "Tashqi belgilar"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nima uchun qor tagidagi muz qatlami sovuq qotishning ishonchli belgisi emas? 2) Murda dog‘lari rangi harorat bilan qanday bog‘liq? Doskada: 4 belgi va muallif nomlarini (Rayskiy, Puparev) juftlab yozdiring. Tipik xato: pushti-qizgish dog‘lar har doim bo‘ladi deb o‘ylash; musbat haroratda ko‘kimtir-binafsha bo‘lishi mumkin. Diqqat: qor tagidagi muz ≠ hayotiy belgi (sovub ulgurmagan murdada ham hosil bo‘ladi). Eslab qoling: Rayskiy — yuzdagi muz va qirov, Puparev — moyak."
     },
@@ -1510,31 +1805,35 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ichki belgilar",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Topilma"
+        "kind": "tree",
+        "root": "Ichki belgilar",
+        "children": [
+          {
+            "label": "Qon va a’zolar",
+            "items": [
+              "To‘laqonlik, qip-qizil laxtali qon"
+            ]
+          },
+          {
+            "label": "Puxnarevich belgisi",
+            "items": [
+              "Oshqozon bo‘sh, o‘lchami kichik"
+            ]
+          },
+          {
+            "label": "Fabrikantov belgisi",
+            "items": [
+              "Buyrak jomida mayda qon quyilishlar"
+            ]
+          },
+          {
+            "label": "Vishnevskiy dog‘lari",
+            "items": [
+              "Oshqozon shilliq qavatida, 0,5 sm gacha"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Qon va a’zolar",
-            "To‘laqonlik, qip-qizil laxtali qon"
-          ],
-          [
-            "Puxnarevich belgisi",
-            "Oshqozon bo‘sh, o‘lchami kichik"
-          ],
-          [
-            "Fabrikantov belgisi",
-            "Buyrak jomida mayda qon quyilishlar"
-          ],
-          [
-            "Vishnevskiy dog‘lari",
-            "Oshqozon shilliq qavatida, 0,5 sm gacha"
-          ]
-        ]
+        "caption": "Ichki belgilar"
       },
       "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Vishnevskiy dog‘lari nega tez o‘limda kam bo‘ladi? 2) Spirtli mastlikda qon va siydikdagi alkogol miqdori nega farq qilishi mumkin? Doskada: ichki a’zolar bo‘yicha 4 belgini muallif nomi bilan jadvalga yozdiring. Tipik xato: Vishnevskiy dog‘lari doim topiladi deb o‘ylash; ular 80-90% holatda uchraydi va bolalarda ko‘pincha bo‘lmaydi. Diqqat: Fabrikantov (buyrak jomi) ≠ Vishnevskiy (oshqozon, ba’zan o‘n ikki barmoqli ichak). Eslab qoling: oshqozon bo‘sh va kichik — Puxnarevich."
     },
@@ -1560,7 +1859,7 @@
           "uncertain": false
         },
         {
-          "text": "Dog‘lar shilliq qavat burmalarining tepasida, diametri 0,5 sm gacha. Pichoq orqasi yoki suv oqimi bilan oson olinadi, o‘limdan 6-9 oy keyin ham topilishi mumkin.",
+          "text": "Dog‘lar shilliq qavat burmalari tepasida, diametri 0,5 sm gacha. Pichoq orqasi yoki suv oqimi bilan oson olinadi, o‘limdan 6-9 oy keyin ham topilishi mumkin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1613,31 +1912,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Tiriklik va muzlash farqi",
-        "nodes": [],
-        "header": [
-          "Jihat",
-          "Tiriklikda",
-          "O‘limdan so‘ng"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Tiriklikda",
+            "items": [
+              "Kelib chiqishi: Tirik odamga past harorat ta’siri",
+              "Mikroskopiya: Spazm, shish, mayda qon quyilishlar",
+              "Qor tagidagi muz: Qor eriydi, keyin muz qatlami"
+            ]
+          },
+          {
+            "title": "O‘limdan so‘ng",
+            "items": [
+              "Kelib chiqishi: Sababidan qat’i nazar, minus harorat",
+              "Mikroskopiya: Ko‘p mayda yoriq, epidermis ajralishi",
+              "Qor tagidagi muz: Sovumagan murdada ham paydo bo‘ladi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Kelib chiqishi",
-            "Tirik odamga past harorat ta’siri",
-            "Sababidan qat’i nazar, minus harorat"
-          ],
-          [
-            "Mikroskopiya",
-            "Spazm, shish, mayda qon quyilishlar",
-            "Ko‘p mayda yoriq, epidermis ajralishi"
-          ],
-          [
-            "Qor tagidagi muz",
-            "Qor eriydi, keyin muz qatlami",
-            "Sovumagan murdada ham paydo bo‘ladi"
-          ]
-        ]
+        "caption": "Tiriklik va muzlash farqi"
       },
       "teacher_notes": "Vaqt: 6-7 daq. Muhokama: 1) Muzlagan murdada topilgan yoriqlarni hayotiy jarohatdan qanday farqlaymiz? 2) Nega tez eritish xavfli? Doskada chizish: jadvalni daftarga ko‘chirtiring va kalla bo‘shlig‘ida miya muzlashi oqibatlarini strelkalar bilan chizdiring. Tipik xato: qor tagidagi muzni past haroratning hayotiy ta’siri uchun spetsifik belgi deb hisoblash. Yana bir xato: kalla suyagi sinishini doim zo‘ravonlik jarohati deb baholash. Eslatma: manbada muzlash yoriqlarini hayotiy shikastlardan farqlash zarurligi aytilgan."
     },
@@ -1716,36 +2010,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Sovuq urish darajalari",
-        "nodes": [],
-        "header": [
-          "Daraja",
-          "Belgisi",
-          "Tuzalishi"
+        "kind": "tree",
+        "root": "Sovuq urish darajalari",
+        "children": [
+          {
+            "label": "I",
+            "items": [
+              "Teri qizg‘ish-ko‘kimtir, biroz shishgan",
+              "3-7 kunda o‘tadi"
+            ]
+          },
+          {
+            "label": "II",
+            "items": [
+              "Tiniq suyuqlikli pufaklar",
+              "10-20 kun, chandiqsiz"
+            ]
+          },
+          {
+            "label": "III",
+            "items": [
+              "Teri nekrozi, gemorragik pufaklar",
+              "1-2 oy yoki ko‘proq, chandiq"
+            ]
+          },
+          {
+            "label": "IV",
+            "items": [
+              "Suyakkacha nekroz, demarkatsion hoshiya",
+              "Haftalar-oylardan so‘ng, chandiq"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "I",
-            "Teri qizg‘ish-ko‘kimtir, biroz shishgan",
-            "3-7 kunda o‘tadi"
-          ],
-          [
-            "II",
-            "Tiniq suyuqlikli pufaklar, atrofi ko‘kimtir",
-            "10-20 kun, chandiqsiz"
-          ],
-          [
-            "III",
-            "Teri nekrozi, gemorragik pufaklar",
-            "1-2 oy yoki ko‘proq, chandiq"
-          ],
-          [
-            "IV",
-            "Suyakkacha nekroz, demarkatsion hoshiya",
-            "Haftalar-oylardan so‘ng, chandiqli cho‘ltoq"
-          ]
-        ]
+        "caption": "Sovuq urish darajalari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: (1) Yashirin davrda shikast nega ko‘rinmaydi? (2) II va III darajani pufak suyuqligi va tuzalish muddati bo‘yicha qanday farqlaymiz? Doskada: ikki davr va to‘rt daraja chizig‘ini vaqt o‘qida chizing. Tipik xato: sovuq urish (mahalliy) bilan sovuq qotishni (umumiy) aralashtirish."
     },
@@ -2080,12 +2377,12 @@
     {
       "question": "Sovuq qotgan shaxsda tana harorati +29°S ga tushgan. Uyquchanlik, alahsirash, nafas va puls sekinlashishi, arterial bosim pasayishi kuzatilmoqda. Bu qaysi bosqichga mos keladi?",
       "options": [
-        "Kompensator-moslashuv bosqichi, issiqlik ishlab chiqarish",
         "Dekompensatsiya bosqichi, po‘stloq funksiyasi buzilishi",
+        "Kompensator-moslashuv bosqichi, issiqlik ishlab chiqarish",
         "Yakuniy bosqich, nafas olishning birlamchi to‘xtashi",
         "Latent bosqich, issiqlikni ajratishning kuchayishi"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Kompensator imkoniyatlar tugagach dekompensatsiya boshlanadi. Tana harorati +30°S – +28°S ga tushganda bosh miya po‘stlog‘i funksiyalari buziladi, nafas va puls sekinlashadi, bosim pasayadi. Yakuniy bosqich +25°S – +22°S da kuzatiladi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2146,10 +2443,10 @@
       "options": [
         "Hayot uchun xavfsiz jarohatga kiritiladi",
         "Faqat I darajali sovuq urish deb baholanadi",
-        "Hayot uchun xavfli jarohatga kiritiladi",
-        "Maydondan qat’i nazar xavfsiz hisoblanadi"
+        "Maydondan qat’i nazar xavfsiz hisoblanadi",
+        "Hayot uchun xavfli jarohatga kiritiladi"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Qoidaga ko‘ra tananing 10% dan ortiq yuzasining III–IV darajali sovuq urishi hayot uchun xavfli jarohat hisoblanadi. 12% bu chegaradan oshadi. III darajali uchun chegara 15% dan ortiq, II darajali uchun 20% dan ortiq.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2206,6 +2503,12 @@
       "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
       "year": 2018,
       "pages": "Bob 7. Fizik omillar ta’siri"
+    },
+    {
+      "author": "Iskandarov A.I., Qo‘ldoshev D.R.",
+      "title": "Sud tibbiyoti (tibbiyot instituti talabalari uchun), Toshkent (egasi taqdim etgan; yopiq foydalanish)",
+      "year": null,
+      "pages": "b. 235-246"
     }
   ]
 }

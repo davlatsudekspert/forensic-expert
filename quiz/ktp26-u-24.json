@@ -1,0 +1,582 @@
+{
+ "topic_id": "ktp26-u-24",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Jarohatning hayotlik vaqtida yetkazilganligini aniqlash. O’q otar quroldan jarohatlanish mexanizmi.",
+  "ru": "Jarohatning hayotlik vaqtida yetkazilganligini aniqlash. O’q otar quroldan jarohatlanish mexanizmi.",
+  "en": "Jarohatning hayotlik vaqtida yetkazilganligini aniqlash. O’q otar quroldan jarohatlanish mexanizmi."
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "ktp26-u-24-q01",
+   "question_i18n": {
+    "uz": "Murda ekspertizasida nafas yo‘llarida qon va boshqa yot moddalar aspiratsiyasi topildi. Bu topilma nimani bildiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Jarohat o‘limdan keyin yetkazilganini",
+     "Jarohat hayotiyligining umumiy belgisini",
+     "Murda dog‘lari hosil bo‘lganini",
+     "Jarohat hayotiyligining mahalliy belgisini"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Nafas yo‘llarida qon va yot moddalar aspiratsiyasi jarohat hayotiyligining umumiy belgilari qatoriga kiradi. Mahalliy belgilar esa jarohat sohasining o‘zida aniqlanadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "28"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-24-q02",
+   "question_i18n": {
+    "uz": "Ekspert shikastlangan sohadagi qon tomirlarida tromblarni aniqladi. Bu hayotiylikning qaysi belgisi hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Umumiy belgi: nafas yo‘llaridagi aspiratsiya",
+     "Umumiy belgi: limfa tugunlaridagi eritrofagiya",
+     "Faqat o‘limdan keyin paydo bo‘ladigan o‘zgarish",
+     "Mahalliy belgi: jarohat sohasidagi tromblar"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Shikastlangan sohadagi qon tomirlarida tromblarning topilishi hayotiylikni tasdiqlovchi mahalliy belgilar qatoriga kiradi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "28"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-24-q03",
+   "question_i18n": {
+    "uz": "Yog‘ to‘qimasi bor sohada jarohat aniqlandi va limfada eritrotsitlar hamda yog‘ topildi. Bu topilma nimadan dalolat beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Jarohat hayotiyligining umumiy belgisidan",
+     "Jarohat o‘limdan keyin yetkazilganidan",
+     "Murda dog‘lari rivojlanayotganidan",
+     "Faqat mahalliy yallig‘lanish alomatidan"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Yog‘ to‘qimasi bor sohalar shikastlanganda limfada eritrotsitlar va yog‘ning topilishi hayotiylikning umumiy belgilari ro‘yxatida keltirilgan."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "28"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-24-q04",
+   "question_i18n": {
+    "uz": "Murdada jarohat hayotiyligi baholanmoqda. Qaysi omil o‘limdan keyingi jarohatni hayotiyga o‘xshatib yuborishi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Jarohatlar sonining juda kamligi",
+     "Shaxsning yoshi va jinsi",
+     "To‘qimalarning filogenetik yoshi kattaligi",
+     "Jarohat ustida kiyim bo‘lishi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Biologik o‘limdan keyin turli to‘qimalarda hayotiy jarayonlarning to‘xtashi ularning filogenetik yoshiga bog‘liq. Filogenetik katta yoshli to‘qimalarda o‘limdan keyingi jarohatlar hayotiylarga o‘xshash bo‘lishi mumkin."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "29"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-24-q05",
+   "question_i18n": {
+    "uz": "Ekspert jarohatning hayotiyligi va yetkazilish muddatini aniqlashi kerak. Qaysi tekshiruv usuli shu maqsadda qo‘llaniladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Rentgenografik tekshiruv",
+     "Gistologik tekshiruv",
+     "Trasologik tekshiruv",
+     "Stereomikroskopiya"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Jarohatlarning hayotiyligi va yetkazilish muddati gistologik tekshiruvlar yordamida aniqlanadi. Rentgenografiya yot jism va suyak shikastini, trasologiya shikastlovchi jismni aniqlashga xizmat qiladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "29"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-24-q06",
+   "question_i18n": {
+    "uz": "Murdada havo emboliyasiga shubha bor. Ekspert to‘sh suyagini ajratib, perikard bo‘shlig‘iga suv quydi va o‘ng qorincha devorini teshdi. Suvdan havo pufaklari chiqdi. Bu natija qanday baholanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Yog‘ emboliyasining musbat natijasi",
+     "Havo emboliyasi uchun musbat natija",
+     "Aspiratsion asfiksiyaning belgisi",
+     "Murda dog‘larining ko‘rinishi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Suvdan havo pufaklarining chiqishi musbat natija hisoblanadi va u Sunsov sinamasi deb ataladi. Bu sinama havo emboliyasini tasdiqlaydi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "32"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-24-q07",
+   "question_i18n": {
+    "uz": "Uzun naysimon suyak singanidan 2-3 kun o‘tib o‘lim yuz berdi. Yog‘ emboliyasini aniqlash uchun o‘pkaning muzlatilgan kesmalari bo‘yaldi va tomirlardagi yog‘ tomchilari olovrang qizil ko‘rindi. Qaysi bo‘yoq ishlatilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Sudan III bo‘yog‘i",
+     "Sudan IV bo‘yog‘i",
+     "Gematoksilin bo‘yog‘i",
+     "Eozin bo‘yog‘i"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Sudan III yog‘ tomchilarini olovrang qizil rangga bo‘yaydi. Sudan IV esa ularni qora rangga bo‘yaydi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "32"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-24-q08",
+   "question_i18n": {
+    "uz": "Shilinmada qoplama qattiqlashgan, qalinlashgan va sog‘lom teri sathidan ko‘tarilgan. U chetlaridan ko‘cha boshlagan. Bu epitelizatsiya bosqichi bo‘lsa, u odatda qancha davom etadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "12 soatgacha",
+     "2-3 sutkagacha",
+     "10-15 sutkagacha",
+     "7-9 sutkagacha"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Taykov bo‘yicha epitelizatsiya bosqichi 7-9 sutkagacha davom etadi. Bu muddatlar shartli bo‘lib, yosh va teri xususiyatlariga bog‘liq."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "36"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-24-q09",
+   "question_i18n": {
+    "uz": "Murda ekspertizasida teri sathida sariq, jigar rangli dog‘ topildi. U atrofdagi teri sathida yoki undan pastroq. Unda qoplama yo‘q va hayotiy jarohatlarga xos o‘zgarishlar aniqlanmadi. Bu qanday o‘zgarish?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Yangi yuzaki shilinma",
+     "Chuqur shilinma",
+     "Pergament dog‘i",
+     "Chiziqsimon timalma"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Pergament dog‘i o‘limdan so‘ng teri qurishining alomati. U sariq, jigar rangda bo‘ladi, qoplama hosil bo‘lmaydi va hayotiy o‘zgarishlar aniqlanmaydi. Shu bilan shilinmadan farqlanadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "37"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-24-q10",
+   "question_i18n": {
+    "uz": "Ekspert jangovor qurol stvolining ichki yuzasida vintsimon o‘yiqlarni aniqladi. Bu o‘yiqlar snaryadga nimani beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Snaryadga o‘qi atrofida aylanma harakat beradi",
+     "Snaryadning massasini ancha oshirib yuboradi",
+     "Gilzani stvoldan tezroq chiqarib tashlaydi",
+     "Porox yonish tezligini sezilarli oshiradi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Jangovor va sport qurollari stvolidagi 4-6 vintsimon o‘yiq snaryadga o‘qi atrofida aylanma harakat beradi. Natijada o‘qning tezligi kattaroq, uchishi uzoqroq va aniqroq bo‘ladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "81"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-24-q11",
+   "question_i18n": {
+    "uz": "Ekspert jangovor qurol patronini tekshirdi: undagi porox nitrotsellyulozadan tayyorlangan. Bu qaysi porox turi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qora (tutunli) porox",
+     "Kaliy selitrali porox",
+     "Oltingugurtli porox",
+     "Tutunsiz porox turi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Jangovor va sport qurollarida energiya manbai sifatida nitrotsellyulozadan tayyorlangan tutunsiz porox ishlatiladi. Qora porox tarkibida esa kaliy selitrasi, pista ko‘mir va oltingugurt bo‘ladi. Uni asosan ov qurollari, signal pistoletlari va ayrim gaz qurollarining patronlarida qo‘llashadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "82-83"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-24-q12",
+   "question_i18n": {
+    "uz": "Silliq stvolli ov miltig‘idan otilgan patrondan chiqqan sharchalarning diametri 3 mm. Ular nima deb ataladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Katta sochma — kartech",
+     "Sochma (mayda sharcha)",
+     "Yakan turidagi o‘q",
+     "Brenneke turidagi o‘q"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Diametri 1 mm dan 5,5 mm gacha bo‘lgan mayda sharchalar sochma deyiladi. Bundan katta sharchalar katta sochma (kartech) hisoblanadi. Yakan va Brenneke esa o‘qli patronlarda qo‘llanadigan o‘qlardir."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "83"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-24-q13",
+   "question_i18n": {
+    "uz": "Jarohat atrofida qurum va yonib ulgurmagan porox zarrachalari topildi. Ular o‘q otishning qaysi omillar guruhiga kiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Asosiy snaryad guruhi",
+     "Ikkilamchi snaryad guruhi",
+     "Qo‘shimcha omillar guruhi",
+     "O‘q otar qurol guruhi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "O‘q otishning qo‘shimcha omillariga stvoldagi o‘q oldi havo, o‘q otish alangasi, porox gazlari, qurum, yonib ulgurmagan porox zarrachalari, metall zarrachalari va moy tomchilari kiradi. Asosiy snaryad o‘q va sochmalardir. Ikkilamchi snaryadlar esa kiyim-bosh, to‘siq va suyak bo‘laklaridir."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "84"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-24-q14",
+   "question_i18n": {
+    "uz": "O‘q bir necha yuz joul energiya bilan tegib, to‘qimaning bir qismini yulib oldi. Defekt dumaloq, chetlari tekis, o‘lchami o‘qdan kichik. Bu qanday ta’sir?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Yulma ta’sir",
+     "Yorma ta’sir",
+     "Ponasimon ta’sir",
+     "Termik ta’sir"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Bir necha yuz joul energiyali o‘q to‘qimaning bir qismini yulib, o‘lchami snaryad diametridan kichik, chetlari tekis defekt qoldiradi. Yorma ta’sir bir necha ming joul energiyada bo‘ladi. Ponasimon ta’sir bir necha o‘n joulda bo‘lib, to‘qima defektini qoldirmaydi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "85"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-24-q15",
+   "question_i18n": {
+    "uz": "Makarov pistoletidan otilgan o‘q kirish teshigi atrofida porox gazlari belgilari yo‘q, lekin qurum, porox va metall zarrachalari bor. Bu qaysi zona?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Birinchi zona",
+     "Ikkinchi zona",
+     "Uchinchi zona",
+     "Uchala zonaga ham xos"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Yaqin distansiyada birinchi zonada barcha qo‘shimcha omillar, shu jumladan porox gazlari ta’siri bo‘ladi. Ikkinchi zonada porox gazlari belgisi yo‘q, qurum, porox, metall va moy zarralari bor. Uchinchi zonada faqat porox va metall zarrachalari aniqlanadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "88"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-24-q16",
+   "question_i18n": {
+    "uz": "Yaqin bo‘lmagan distansiyadan otilgan jarohatda ichki qavat kiyimda oz qurum topildi, birinchi qavat kiyimning tashqi yuzasida esa qurum yo‘q. Bu qaysi holat?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Vinogradov fenomeni",
+     "Tirab otishning germetik turi",
+     "Yaqin distansiyaning birinchi zonasi",
+     "Pirogovning to‘qima defekti"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Yaqin bo‘lmagan distansiyada qo‘shimcha omillar odatda aniqlanmaydi. Ba’zan o‘q ortidagi past bosimli bo‘shliq qurumni olib keladi va qurum faqat ichki qavatda qoladi. Yaqin distansiyada esa birinchi qavatning tashqi yuzasida ham qurum bo‘ladi. Fenomen uchun o‘q tezligi kamida 500 m/sek bo‘lishi, kiyim tanaga zich yopishmagan bo‘lishi va kuchli shamol bo‘lmasligi kerak."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "89"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-24-q17",
+   "question_i18n": {
+    "uz": "O‘q otar yara devorida ajratiladigan uchta zonadan qaysi biri eng keng bo‘lib, kengligi 4–5 sm va undan ortiq bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bevosita yara kanali zonasi",
+     "Kirish teshigi atrofidagi shilinish zonasi",
+     "To‘qimalarning lat eyish zonasi",
+     "To‘qimalarning chayqalish zonasi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Zarb ta’siri nazariyasiga ko‘ra siqilish to‘lqini kanal devorlariga tarqaladi. Yara devorida uch zona bor: bevosita kanal, lat eyish zonasi (0,3 dan 1–2 sm gacha) va chayqalish zonasi (4–5 sm va undan ortiq). Eng keng zona — chayqalish zonasi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "90"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-24-q18",
+   "question_i18n": {
+    "uz": "Teshik chetlari notekis va tashqariga qayrilgan, shakli yulduzsimon, shilinish va ifloslanish hoshiyasi yo‘q, qon quyilishlari assimetrik. Bu qaysi teshik?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Dermada defekti bor kirish teshigi",
+     "Tirab otishdagi kirish teshigi",
+     "Chiqish teshigi",
+     "Yalama jarohatning boshlang‘ich qismi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Chiqish teshigi yoriqsimon, yoysimon yoki yulduzsimon bo‘ladi. Chetlari notekis va tashqariga qayrilgan, odatda shilinish va ifloslanish hoshiyasi bo‘lmaydi. Qon quyilishlari assimetrik, to‘qimalar qatlamlarga ajralmaydi. Kirish teshigida esa chetlar nisbatan tekis va ichkariga qayrilgan, shilinish va ifloslanish hoshiyalari bor."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "92"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-24-q19",
+   "question_i18n": {
+    "uz": "Silliq stvolli ov miltig‘idan 5 metrgacha masofadan otilganda bitta asosiy kirish teshigi va uning atrofida mayda dumaloq yaralar hosil bo‘ldi. Sochmalarning qaysi ta’siri kuzatilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kompakt ta’sir",
+     "Tarqalma ta’sir",
+     "Yorma ta’sir",
+     "Nisbiy tarqalma ta’sir"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Tanaga tiralganda yoki 1 metrgacha masofada sochmalar kompakt ta’sir ko‘rsatib, bitta kirish teshigi hosil qiladi. 5 metrgacha masofada nisbiy tarqalma ta’sir bo‘ladi: bitta asosiy teshik va atrofida alohida sochmalardan mayda yaralar. Undan uzoqroqda sochmalar to‘liq yoyilib, tarqalma ta’sir ko‘rsatadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "93"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-24-q20",
+   "question_i18n": {
+    "uz": "Portlash holatida jabrlanuvchi portlash markazidan yaqin bo‘lmagan distansiyada edi. Qaysi omillar asosiy shikastlovchi bo‘ladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Detonatsiya mahsulotlari va zarb to‘lqini",
+     "Faqat atrof-muhit zarb to‘lqini",
+     "Portlovchi moslama bo‘laklari va ikkilamchi snaryadlar",
+     "Maxsus termik shikastlovchi moddalar"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Portlashning to‘rtta distansiyasi farqlanadi. Yaqin bo‘lmagan distansiyada asosiy shikastlovchi omillar portlovchi moslamaning bo‘laklari va ikkilamchi snaryadlar (kiyim-bosh, poyafzal, atrofdagi jismlarning parchalari) bo‘ladi. Detonatsiya mahsulotlari kontakt va yaqin distansiyaga xos."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "101"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "G‘iyosov Z.A.",
+   "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti"
+  }
+ ]
+}

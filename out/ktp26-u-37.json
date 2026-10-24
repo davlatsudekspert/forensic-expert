@@ -32,7 +32,16 @@
           "uncertain": false
         },
         {
-          "text": "Tizimli javob to‘qima tiklanishi uchun kerak. Asoratsiz jarohatda u vaqtinchalik, oldindan taxmin qilinadigan va yallig‘lanishga qarshi vositachilar bilan muvozanatli.",
+          "text": "Tizimli javob to‘qima tiklanishi uchun kerak.",
+          "source": {
+            "author": "Brøchner et al.",
+            "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+            "page": "PMID 19754938"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Asoratsiz jarohatda u vaqtinchalik, oldindan taxmin qilinadigan va yallig‘lanishga qarshi vositachilar bilan muvozanatli.",
           "source": {
             "author": "Brøchner et al.",
             "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
@@ -340,36 +349,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Travma davrlari",
-        "nodes": [],
-        "header": [
-          "Faza",
-          "Asosiy belgi",
-          "Davomiyligi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Shok fazasi",
+            "text": "Gipovolemiya, vazokonstriksiya; reanimatsiyasiz ≈ 1 kun"
+          },
+          {
+            "title": "Oqim fazasi",
+            "text": "Vazodilatatsiya, O2 sarfi ↑; asoratsiz bir necha kun"
+          },
+          {
+            "title": "Gipometabolizm",
+            "text": "Metabolizm sur’ati pasayadi; bir necha soatdan 24 soatgacha"
+          },
+          {
+            "title": "Giper-katabolik",
+            "text": "Katabolizm, giperglikemiya; odatda < 1 hafta"
+          }
         ],
-        "rows": [
-          [
-            "Shok fazasi",
-            "Gipovolemiya, vazokonstriksiya",
-            "Reanimatsiyasiz taxminan 1 kun"
-          ],
-          [
-            "Oqim fazasi",
-            "Vazodilatatsiya, O2 sarfi oshadi",
-            "Asoratsiz: bir necha kun"
-          ],
-          [
-            "Gipometabolizm",
-            "Metabolizm sur‘ati pasayadi",
-            "Bir necha soatdan 24 soatgacha"
-          ],
-          [
-            "Giper-katabolik",
-            "Katabolizm, giperglikemiya",
-            "Odatda bir haftadan kam"
-          ]
-        ]
+        "caption": "Travma davrlari"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Oqim fazasi nega giper-metabolik faza deb ham ataladi? 2) Nega bu davrlar ikki fazali deyiladi? Doskada: vaqt o‘qini chizing — chapda shok, o‘ngda oqim fazasi — va metabolik o‘zgarishlarni ostiga yozing. Tipik xato: shok fazasini giper-metabolik faza bilan adashtirish; aslida giper-metabolik faza oqim fazasiga to‘g‘ri keladi."
     },
@@ -605,15 +604,22 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Uch o‘lim cho‘qqisi",
-        "nodes": [
-          "1: birinchi soat ichida",
-          "2: 24 soat, gemorragik shok",
-          "3: kunlar–haftalar, SIRS/MODS"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1-cho‘qqi",
+            "text": "Birinchi soat ichida"
+          },
+          {
+            "title": "2-cho‘qqi",
+            "text": "24 soat: gemorragik shok"
+          },
+          {
+            "title": "3-cho‘qqi",
+            "text": "Kunlar–haftalar: SIRS/MODS"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Travmadan keyingi uch o‘lim cho‘qqisi"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: nima uchun birinchi soatda odamdagi yallig‘lanish javobi kam o‘rganilgan (qon namunasi olish qiyinligi)? Uchinchi cho‘qqi sabablari nimada? Doskada: vaqt o‘qini chizib, uch cho‘qqini belgilang. Tipik xato: uchala cho‘qqini ham faqat qon ketishi bilan bog‘lash; kech cho‘qqida ko‘pincha SIRS yoki MODS sabab bo‘ladi."
     },
@@ -913,7 +919,16 @@
           "uncertain": false
         },
         {
-          "text": "Ular kapillyar o‘tkazuvchanligini va shishni oshiradi, immun hujayralar infiltratsiyasini rag‘batlantiradi. Ta’siri uzoq, shuning uchun qondagi darajasi kam ahamiyatli.",
+          "text": "Ular kapillyar o‘tkazuvchanligini va shishni oshiradi, immun hujayralar infiltratsiyasini rag‘batlantiradi.",
+          "source": {
+            "author": "Brøchner et al.",
+            "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+            "page": "PMID 19754938, immunologik javob bo‘limi"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ta’siri uzoq, shuning uchun qondagi darajasi kam ahamiyatli.",
           "source": {
             "author": "Brøchner et al.",
             "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
@@ -976,17 +991,30 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Sitokinlar zanjiri",
-        "nodes": [
-          "TNF-α va IL-1 (birinchi)",
-          "IL-6, IL-8 va IL-10 ishlanadi",
-          "Jigar: CRP, prokalsitonin",
-          "IL-6 → prostaglandin → IL-10",
-          "Muvozanat: qarshi javob"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "TNF-α va IL-1",
+            "text": "Birinchi; yarim yemirilish 20 va 6 daqiqa"
+          },
+          {
+            "title": "IL-6",
+            "text": "1 soatda plazmada; jigarda CRP, prokalsitonin"
+          },
+          {
+            "title": "IL-8, IL-10",
+            "text": "IL-1 va TNF-α ta’sirida ishlanadi"
+          },
+          {
+            "title": "IL-6 → PGE2 → IL-10",
+            "text": "Yallig‘lanishga qarshi javob"
+          },
+          {
+            "title": "Muvozanat",
+            "text": "Proyallig‘lanish — qarshi javob"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Sitokinlar zanjiri"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega TNF-α va IL-1 eng birinchi sitokinlar hisoblanadi? 2) Ikkinchi CRP cho‘qqisi klinik nimani bildiradi? Doskada chizish: TNF-α/IL-1 dan IL-6, IL-8, IL-10 ga o‘qlar. Tipik xato: IL-6 faqat yallig‘lanishni kuchaytiradi deb o‘ylash. U keyinchalik IL-10 orqali qarshi javobni ham qo‘zg‘atadi."
     },
@@ -1022,17 +1050,30 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Neytrofil yo‘li",
-        "nodes": [
-          "Priming: 3-24 soat",
-          "Dumalash: selektin CD62L",
-          "Qattiq yopishish: CD11b/CD18",
-          "To‘qimaga o‘tish",
-          "Ortiqcha to‘planish → ARDS"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Priming",
+            "text": "3–24 soat"
+          },
+          {
+            "title": "Dumalash",
+            "text": "Selektin CD62L"
+          },
+          {
+            "title": "Qattiq yopishish",
+            "text": "Integrin CD11b/CD18"
+          },
+          {
+            "title": "To‘qimaga o‘tish",
+            "text": "Xemoattraktantlar ta’sirida"
+          },
+          {
+            "title": "Ortiqcha to‘planish",
+            "text": "ARDS xavfi"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Neytrofil yo‘li"
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Priming nima uchun ikkinchi zarbada xavfli? 2) Jarohatdan keyingi qaysi ikkinchi zarbalar neytrofillarni qayta qo‘zg‘atadi (operatsiya, kasalxona infeksiyasi)? Doskada: neytrofilning qon tomiridan to‘qimagacha yo‘lini 4 bosqichda chizdiring (priming, dumalash, qattiq yopishish, o‘tish). Tipik xato: priming ≠ to‘liq faollashuv; priming faqat oraliq tayyorgarlik holati. Diqqat: selektin dumalashga, integrin qattiq yopishishga javob beradi, bularni almashtirmang."
     },
@@ -1068,36 +1109,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Hujayralar taqqosi",
-        "nodes": [],
-        "header": [
-          "Hujayra",
-          "O‘zgarish",
-          "Muddat"
+        "kind": "tree",
+        "root": "Immun hujayralar",
+        "children": [
+          {
+            "label": "Monotsit",
+            "items": [
+              "MHCII pasayadi; 1 haftada normallashadi",
+              "Sitokin sintezi susayadi"
+            ]
+          },
+          {
+            "label": "NK-hujayra",
+            "items": [
+              "Faolligi pasayadi",
+              "Bir necha kun; kuyishda 2–4 hafta"
+            ]
+          },
+          {
+            "label": "T-hujayra",
+            "items": [
+              "Kechikkan sezgirlik susayadi",
+              "Ko‘payish susayadi"
+            ]
+          },
+          {
+            "label": "Th1/Th2",
+            "items": [
+              "Th2 tomonga siljish",
+              "IL-4, IL-10; hujayra immuniteti ↓"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Monotsit",
-            "MHCII pasayadi; sitokin sintezi susayadi",
-            "MHCII 1 hafta ichida normallashadi"
-          ],
-          [
-            "NK-hujayra",
-            "Faolligi pasayadi",
-            "Bir necha kun; kuyishda 2-4 hafta"
-          ],
-          [
-            "T-hujayra",
-            "Kechikkan sezgirlik, ko‘payish susayadi",
-            "Muddat manbada ko‘rsatilmagan"
-          ],
-          [
-            "Th1/Th2",
-            "Th2 tomonga siljish (IL-4, IL-10)",
-            "Hujayra immuniteti pasayadi"
-          ]
-        ]
+        "caption": "Hujayralar taqqosi"
       },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) MHCII pasayishi nimani ko‘rsatadi va nega uni immun falaj belgisi deb olish mumkin? 2) Nega NK faolligining susayishi Th1/Th2 muvozanatiga ta’sir qiladi? Doskada: Th1 ← → Th2 tarozisini chizib, jarohatdan keyin Th2 tomonga og‘ishini ko‘rsating. Tipik xato: T-hujayralar kam ta’sirlanadi, shuning uchun ularni monotsit bilan bir xil darajada susayadi deb o‘ylash. Diqqat: monotsit uzluksiz susayadi, neytrofil esa faollashadi, bu ikkalasi bir vaqtda kuzatiladi."
     },
@@ -1157,7 +1201,7 @@
           "uncertain": false
         },
         {
-          "text": "Dendritik hujayralar va neytrofillar DAMPsni tanish retseptorlari (PRR, pattern recognition receptors) orqali taniydi. Keyin sitokin va xemokinlar ishlab chiqariladi.",
+          "text": "Dendritik hujayralar va neytrofillar DAMPsni tanish retseptorlari (PRR, pattern recognition receptors) orqali taniydi.",
           "source": {
             "author": "Vourc'h et al.",
             "title": "Trauma-Induced Damage-Associated Molecular Patterns-Mediated Remote Organ Injury and Immunosuppression in the Acutely Ill Patient, Frontiers in Immunology",
@@ -1166,7 +1210,7 @@
           "uncertain": false
         },
         {
-          "text": "Travmadan keyin chiqqan DAMPs alarminlar deb ham ataladi. Mahalliy yallig‘lanish to‘qima tiklanishiga xizmat qiladi, nazoratsiz bo‘lsa uzoq a’zolar yetishmovchiligini keltiradi.",
+          "text": "Keyin sitokin va xemokinlar ishlab chiqariladi.",
           "source": {
             "author": "Vourc'h et al.",
             "title": "Trauma-Induced Damage-Associated Molecular Patterns-Mediated Remote Organ Injury and Immunosuppression in the Acutely Ill Patient, Frontiers in Immunology",
@@ -1175,7 +1219,16 @@
           "uncertain": false
         },
         {
-          "text": "2006 yilgi konsensusga ko‘ra klinik alarmin travmadan darhol chiqadi, miqdori jarohat og‘irligini aks ettiradi va plazma darajasi yallig‘lanish bilan bog‘liq.",
+          "text": "Travmadan keyin chiqqan DAMPs alarminlar deb ham ataladi.",
+          "source": {
+            "author": "Vourc'h et al.",
+            "title": "Trauma-Induced Damage-Associated Molecular Patterns-Mediated Remote Organ Injury and Immunosuppression in the Acutely Ill Patient, Frontiers in Immunology",
+            "page": "PMID 29963048; DOI 10.3389/fimmu.2018.01330"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mahalliy yallig‘lanish to‘qima tiklanishiga xizmat qiladi, nazoratsiz bo‘lsa uzoq a’zolar yetishmovchiligini keltiradi.",
           "source": {
             "author": "Vourc'h et al.",
             "title": "Trauma-Induced Damage-Associated Molecular Patterns-Mediated Remote Organ Injury and Immunosuppression in the Acutely Ill Patient, Frontiers in Immunology",
@@ -1185,7 +1238,7 @@
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega hujayra ichidagi molekula tashqarida «xavf signali» bo‘ladi? 2) Klinik alarmin mezonlarini o‘z so‘zingiz bilan sanang. Doskada: hujayra → DAMP → PRR → sitokin zanjirini chizing. Tipik xato: DAMPs (o‘z molekulalari) va PAMPs (mikrob molekulalari) ni aralashtirish; ikkalasi o‘xshash yallig‘lanish keltirishi mumkin, ammo manbasi boshqa."
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega hujayra ichidagi molekula tashqarida «xavf signali» bo‘ladi? 2) Klinik alarmin mezonlarini o‘z so‘zingiz bilan sanang. Doskada: hujayra → DAMP → PRR → sitokin zanjirini chizing. Tipik xato: DAMPs (o‘z molekulalari) va PAMPs (mikrob molekulalari) ni aralashtirish; ikkalasi o‘xshash yallig‘lanish keltirishi mumkin, ammo manbasi boshqa. 2006 yilgi konsensusga ko‘ra klinik alarmin travmadan darhol chiqadi, miqdori jarohat og‘irligini aks ettiradi va plazma darajasi yallig‘lanish bilan bog‘liq."
     },
     {
       "title": "DAMPs turlari",
@@ -1219,36 +1272,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Asosiy DAMPs turlari",
-        "nodes": [],
-        "header": [
-          "DAMP",
-          "Tavsif",
-          "Ahamiyati"
+        "kind": "tree",
+        "root": "Asosiy DAMPs",
+        "children": [
+          {
+            "label": "Nuklein kislotalar",
+            "items": [
+              "DNK va mtDNK qonga chiqadi",
+              "Jarohat og‘irligiga mos"
+            ]
+          },
+          {
+            "label": "HMGB1",
+            "items": [
+              "Yadro oqsili",
+              "6 soatda eng yuqori; o‘lim bilan bog‘liq"
+            ]
+          },
+          {
+            "label": "HSP",
+            "items": [
+              "Chaperon oqsillar",
+              "Dendritik hujayralarni yetiltiradi"
+            ]
+          },
+          {
+            "label": "S100 oqsillari",
+            "items": [
+              "Kaltsiy bog‘lovchi, 20 dan ortiq",
+              "Kuyishdan keyin yuqori — yomon oqibat"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Nuklein kislotalar",
-            "DNK va mtDNK qonga chiqadi",
-            "Jarohat og‘irligi va a’zo shikasti bilan"
-          ],
-          [
-            "HMGB1",
-            "Yadro oqsili, o‘lgan hujayradan chiqadi",
-            "6 soatda eng yuqori; o‘lim bilan bog‘liq"
-          ],
-          [
-            "Issiqlik shok oqsillari (HSP)",
-            "Chaperon oqsil, stressda ko‘payadi",
-            "Dendritik hujayralar yetilishini kuchaytiradi"
-          ],
-          [
-            "S100 oqsillari",
-            "Kaltsiy bog‘lovchi, 20 dan ortiq oqsil",
-            "Kuyishdan keyin yuqori daraja — yomon oqibat"
-          ]
-        ]
+        "caption": "Asosiy DAMPs turlari"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nima uchun HMGB1 ni jarohatdan 30 daqiqa keyin o‘lchash qimmatli? 2) HSP72 nega yaxshi prognoz bilan bog‘liq bo‘lishi mumkin? Doskada: jadvalni daftarga ko‘chirib, har DAMP uchun bitta klinik bog‘lanishni belgilang. Tipik xato: barcha DAMPs yomon oqibatni bildiradi deb o‘ylash — HSP72 da aksi kuzatilgan."
     },
@@ -1362,7 +1418,16 @@
           "uncertain": false
         },
         {
-          "text": "Savol: bu bemorda qanday immun holat va qanday xavf kutiladi? Bu ish DAMP darajasini immunosupressiya va infeksiya bilan bog‘lagan dastlabki tadqiqotlardan biri.",
+          "text": "Savol: bu bemorda qanday immun holat va qanday xavf kutiladi?",
+          "source": {
+            "author": "Vourc'h et al.",
+            "title": "Trauma-Induced Damage-Associated Molecular Patterns-Mediated Remote Organ Injury and Immunosuppression in the Acutely Ill Patient, Frontiers in Immunology",
+            "page": "PMID 29963048"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu ish DAMP darajasini immunosupressiya va infeksiya bilan bog‘lagan dastlabki tadqiqotlardan biri.",
           "source": {
             "author": "Vourc'h et al.",
             "title": "Trauma-Induced Damage-Associated Molecular Patterns-Mediated Remote Organ Injury and Immunosuppression in the Acutely Ill Patient, Frontiers in Immunology",
@@ -1396,7 +1461,16 @@
           "uncertain": false
         },
         {
-          "text": "Qon ketgach leykotsitlar faol endoteliy bo‘ylab dumalaydi, komplement faollashadi, HMGB1 va sitokinlar ajraladi. IL-6 ning doimiy yuqoriligi o‘lim bilan bog‘liq.",
+          "text": "Qon ketgach leykotsitlar faol endoteliy bo‘ylab dumalaydi, komplement faollashadi, HMGB1 va sitokinlar ajraladi.",
+          "source": {
+            "author": "Brøchner et al.",
+            "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+            "page": "PMID 19754938"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "IL-6 ning doimiy yuqoriligi o‘lim bilan bog‘liq.",
           "source": {
             "author": "Brøchner et al.",
             "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
@@ -1414,7 +1488,7 @@
           "uncertain": false
         },
         {
-          "text": "Uzoq a’zolar: yuqori HMGB1 o‘pkada o‘tkazuvchanlikni oshirib, interstitsial shishga olib keladi. Erta MODS (ko‘p a’zo disfunksiyasi) ko‘pincha nazoratsiz SIRS bilan bog‘liq.",
+          "text": "Uzoq a’zolar: yuqori HMGB1 o‘pkada o‘tkazuvchanlikni oshirib, interstitsial shishga olib keladi.",
           "source": {
             "author": "Vourc'h et al.",
             "title": "Trauma-Induced Damage-Associated Molecular Patterns-Mediated Remote Organ Injury and Immunosuppression in the Acutely Ill Patient, Frontiers in Immunology",
@@ -1424,7 +1498,79 @@
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 5-6 daq. Muhokama: 1) Nega reanimatsiya ishemiyani bartaraf etsa-da, I/R (ishemiya/reperfuziya) jarohatini ham keltirib chiqaradi? 2) Nima uchun shikast joyidan uzoqdagi a’zolar zararlanadi? Doskada: qon ketish → ishemiya → reperfuziya → neytrofillar → buyrak/jigar/o‘pka sxemasini chizdiring. Tipik xato: I/R, qon ketish va to‘qima shikastini bir-biridan mutlaqo alohida jarayon deb o‘ylash (ular bir vaqtda ta’sir qiladi)."
+      "teacher_notes": "Vaqt: 5-6 daq. Muhokama: 1) Nega reanimatsiya ishemiyani bartaraf etsa-da, I/R (ishemiya/reperfuziya) jarohatini ham keltirib chiqaradi? 2) Nima uchun shikast joyidan uzoqdagi a’zolar zararlanadi? Doskada: qon ketish → ishemiya → reperfuziya → neytrofillar → buyrak/jigar/o‘pka sxemasini chizdiring. Tipik xato: I/R, qon ketish va to‘qima shikastini bir-biridan mutlaqo alohida jarayon deb o‘ylash (ular bir vaqtda ta’sir qiladi). Erta MODS (ko‘p a’zo disfunksiyasi) ko‘pincha nazoratsiz SIRS bilan bog‘liq."
+    },
+    {
+      "title": "Reperfuziya shikasti va uzoq a’zolar",
+      "bullets": [
+        {
+          "text": "Barcha yirik travmalarda ishemiya/reperfuziya (I/R) bir daraja bo‘ladi; I/R, jarohat va qon ketishdan zararni ajratish qiyin.",
+          "source": {
+            "author": "Brøchner et al.",
+            "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+            "page": "PMID 19754938; DOI 10.1186/1757-7241-17-43 (I/R in relation to trauma)"
+          }
+        },
+        {
+          "text": "Reperfuziya yallig‘lanishning asosiy qo‘zg‘atuvchisi: neytrofillar zararlangan joyda ham, buyrak, jigar va o‘pkada ham to‘planadi.",
+          "source": {
+            "author": "Brøchner et al.",
+            "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+            "page": "PMID 19754938; DOI 10.1186/1757-7241-17-43 (I/R in relation to trauma)"
+          }
+        },
+        {
+          "text": "Bu a’zolarda neytrofillar va MPO ko‘p topiladi; MPO gipoxlorit kabi erkin radikallar hosil qiladi, ular mikrobni ham, to‘qimani ham shikastlaydi.",
+          "source": {
+            "author": "Brøchner et al.",
+            "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+            "page": "PMID 19754938; DOI 10.1186/1757-7241-17-43 (I/R in relation to trauma)"
+          }
+        },
+        {
+          "text": "I/R da komplementning uch yo‘li ham faollanib, hujayra membranasida teshiklar hosil qiladi; T-hujayrasiz sichqonlar I/R dan himoyalangan.",
+          "source": {
+            "author": "Brøchner et al.",
+            "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+            "page": "PMID 19754938; DOI 10.1186/1757-7241-17-43 (I/R in relation to trauma)"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Reperfuziya shikasti",
+        "children": [
+          {
+            "label": "Qo‘zg‘atuvchi",
+            "items": [
+              "Reperfuziya — asosiy trigger"
+            ]
+          },
+          {
+            "label": "Neytrofillar",
+            "items": [
+              "Zararlangan joy va uzoq a’zolar",
+              "Buyrak, jigar, o‘pka"
+            ]
+          },
+          {
+            "label": "MPO",
+            "items": [
+              "Erkin radikallar (gipoxlorit)",
+              "Bakteritsid va to‘qima zararlovchi"
+            ]
+          },
+          {
+            "label": "Komplement",
+            "items": [
+              "Uch yo‘l ham faollanadi",
+              "Membrana teshiklari"
+            ]
+          }
+        ],
+        "caption": "I/R: mexanizm va a’zolar"
+      },
+      "teacher_notes": "Vaqt: 4 daq."
     },
     {
       "title": "Qon quyish va DAMPs",
@@ -1468,6 +1614,55 @@
       ],
       "diagram": null,
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega qon quyish travmadan keyingi infeksiya xavfini oshirishi mumkin? 2) Gemoliz va immun nomuvofiqlik bir narsami? Doskada: eritrotsit → gemoliz → DAMPs ro‘yxati (gem, HSP70, RBP-4, IL-33, S100, adenozin). Tipik xato: gemolizni faqat guruh nomuvofiqligi bilan bog‘lash; manbada u nomuvofiqliksiz ham bo‘lishi aytilgan."
+    },
+    {
+      "title": "Endotoksin tolerantligi va HMGB1: immunosupressiya",
+      "bullets": [
+        {
+          "text": "Massiv DAMP ajralishidan keyin erta haddan oshgan yallig‘lanish “immunologik chandiq” qoldirib, uzoq immun o‘zgarishlarga olib keladi.",
+          "source": {
+            "author": "Vourc'h et al.",
+            "title": "Trauma-Induced Damage-Associated Molecular Patterns-Mediated Remote Organ Injury and Immunosuppression in the Acutely Ill Patient, Frontiers in Immunology",
+            "page": "PMID 29963048; DOI 10.3389/fimmu.2018.01330 (DAMPs Induce Endotoxin Tolerance)"
+          }
+        },
+        {
+          "text": "Bunda monotsitlarning TLR stimulyatsiyasidan keyin sitokin ishlab chiqarish qobiliyati pasayadi.",
+          "source": {
+            "author": "Vourc'h et al.",
+            "title": "Trauma-Induced Damage-Associated Molecular Patterns-Mediated Remote Organ Injury and Immunosuppression in the Acutely Ill Patient, Frontiers in Immunology",
+            "page": "PMID 29963048; DOI 10.3389/fimmu.2018.01330 (DAMPs Induce Endotoxin Tolerance)"
+          }
+        },
+        {
+          "text": "Erta tolerantlik a’zo yetishmovchiligini yengillashtiradi, uzoq tolerantlik esa ikkilamchi infeksiyaga moyillikni oshiradi.",
+          "source": {
+            "author": "Vourc'h et al.",
+            "title": "Trauma-Induced Damage-Associated Molecular Patterns-Mediated Remote Organ Injury and Immunosuppression in the Acutely Ill Patient, Frontiers in Immunology",
+            "page": "PMID 29963048; DOI 10.3389/fimmu.2018.01330 (DAMPs Induce Endotoxin Tolerance)"
+          }
+        },
+        {
+          "text": "Og‘ir bosh miya shikastidan keyin infeksiya 40% gacha; HMGB1 o‘zgargan monotsitlar ko‘payishini chaqirib limfopeniyaga olib keladi.",
+          "source": {
+            "author": "Vourc'h et al.",
+            "title": "Trauma-Induced Damage-Associated Molecular Patterns-Mediated Remote Organ Injury and Immunosuppression in the Acutely Ill Patient, Frontiers in Immunology",
+            "page": "PMID 29963048; DOI 10.3389/fimmu.2018.01330 (Immunosuppressive Properties of HMGB1)"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Massiv DAMP ajralishi",
+          "Erta kuchli yallig‘lanish",
+          "Monotsitlar giporeaktivligi",
+          "Immunosupressiya",
+          "Ikkilamchi infeksiya"
+        ],
+        "caption": "DAMPs → tolerantlik → infeksiya"
+      },
+      "teacher_notes": "Vaqt: 4 daq."
     },
     {
       "title": "Postravmatik immunosupressiya",
@@ -1547,37 +1742,106 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "MODS va DIC mexanizmi",
-        "header": [
-          "Holat",
-          "Mexanizm",
-          "Natija"
+        "kind": "tree",
+        "root": "DAMPs va klinik oqibat",
+        "children": [
+          {
+            "label": "Erta MODS",
+            "items": [
+              "Nazoratsiz SIRS, ko‘p DAMPs",
+              "Buyrak, o‘pka shikasti, DIC"
+            ]
+          },
+          {
+            "label": "Kech MODS",
+            "items": [
+              "IS tufayli nozokomial infeksiya",
+              "Pnevmoniya, uzoq ventilyatsiya"
+            ]
+          },
+          {
+            "label": "DIC: HMGB1",
+            "items": [
+              "To‘qima omili ↑, NET ajralishi",
+              "Ivish kuchayadi"
+            ]
+          },
+          {
+            "label": "DIC: gistonlar",
+            "items": [
+              "Trombin, trombotsit agregatsiyasi",
+              "Protein C to‘silishi, ivish buziladi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Erta MODS",
-            "Nazoratsiz SIRS, ko‘p DAMPs",
-            "Buyrak, o‘pka shikasti, DIC"
-          ],
-          [
-            "Kech MODS",
-            "IS tufayli nozokomial infeksiya",
-            "Pnevmoniya, uzoq ventilyatsiya"
-          ],
-          [
-            "DIC: HMGB1",
-            "To‘qima omili ↑, NET ajralishi",
-            "Ivish kuchayadi"
-          ],
-          [
-            "DIC: gistonlar",
-            "Trombin va trombotsit agregatsiyasi",
-            "Protein C to‘silishi, ivish buziladi"
-          ]
-        ]
+        "caption": "MODS va DIC mexanizmi"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Erta va kech MODS sabablari qanday farq qiladi? 2) DAMPs ivish tizimiga qanday ta’sir qiladi? Doskada: vaqt o‘qi chizing — erta bosqich (SIRS, a’zo shikasti) va 5–15 kundan keyingi CARS/IS bosqichi (infeksiya, kech MODS). Tipik xato: kech MODSni ham SIRSning davomi deb hisoblash; manbada u immunosupressiyadan keyingi infeksiyalar bilan bog‘langan."
+    },
+    {
+      "title": "Immun modulyatsiya va monitoring cheklovlari",
+      "bullets": [
+        {
+          "text": "Dastlabki haddan oshgan yallig‘lanishni kamaytirish uchun G-CSF va indometatsin, keyingi immun falajni qo‘zg‘atish uchun IFN-γ va PGE2 sinalgan.",
+          "source": {
+            "author": "Brøchner et al.",
+            "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+            "page": "PMID 19754938; DOI 10.1186/1757-7241-17-43 (Timing of surgery)"
+          }
+        },
+        {
+          "text": "Amaliyotda tasdiqlangan immun modulyatsion davo yo‘q.",
+          "source": {
+            "author": "Brøchner et al.",
+            "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+            "page": "PMID 19754938; DOI 10.1186/1757-7241-17-43 (Timing of surgery)"
+          }
+        },
+        {
+          "text": "IL-6 proyallig‘lanishni, monotsitlarda MHCII pasayishi yallig‘lanishga qarshi javobni kuzatish uchun taklif etilgan.",
+          "source": {
+            "author": "Brøchner et al.",
+            "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+            "page": "PMID 19754938; DOI 10.1186/1757-7241-17-43 (Timing of surgery)"
+          }
+        },
+        {
+          "text": "Pro- va yallig‘lanishga qarshi muvozanatni o‘lchaydigan tez biologik sinov yo‘q; immunitetga ta’sirning kam yo‘li — rekonstruktiv jarrohlikni rejalash.",
+          "source": {
+            "author": "Brøchner et al.",
+            "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+            "page": "PMID 19754938; DOI 10.1186/1757-7241-17-43 (Timing of surgery)"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Proyallig‘lanish",
+            "items": [
+              "Marker: IL-6",
+              "Sinalgan: G-CSF, indometatsin"
+            ]
+          },
+          {
+            "title": "Qarshi javob (falaj)",
+            "items": [
+              "Marker: monotsitlarda MHCII ↓",
+              "Sinalgan: IFN-γ, PGE2"
+            ]
+          },
+          {
+            "title": "Holat",
+            "items": [
+              "Tasdiqlangan davo yo‘q",
+              "Tez tahlil yo‘q"
+            ]
+          }
+        ],
+        "caption": "Immunitetni modulyatsiya qilish"
+      },
+      "teacher_notes": "Vaqt: 4 daq."
     },
     {
       "title": "Voqea tahlili: qon quyish va pnevmoniya",
@@ -1592,7 +1856,16 @@
           "uncertain": false
         },
         {
-          "text": "Qon quyish infeksiya bilan doza bo‘yicha bog‘liq. Gemolizga uchragan eritrotsitlardan DAMPlar (shikastlanish bilan bog‘liq molekulyar obrazlar: gem, HSP70 va b.) ajraladi.",
+          "text": "Qon quyish infeksiya bilan doza bo‘yicha bog‘liq.",
+          "source": {
+            "author": "Vourc'h et al.",
+            "title": "Trauma-Induced Damage-Associated Molecular Patterns-Mediated Remote Organ Injury and Immunosuppression in the Acutely Ill Patient, Frontiers in Immunology",
+            "page": "PMID 29963048"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gemolizga uchragan eritrotsitlardan DAMPlar (shikastlanish bilan bog‘liq molekulyar obrazlar: gem, HSP70 va b.) ajraladi.",
           "source": {
             "author": "Vourc'h et al.",
             "title": "Trauma-Induced Damage-Associated Molecular Patterns-Mediated Remote Organ Injury and Immunosuppression in the Acutely Ill Patient, Frontiers in Immunology",
@@ -1622,6 +1895,77 @@
       "diagram": null,
       "teacher_notes": "Vaqt: 6-7 daq. Muhokama: 1) Qon quyish immunitetni qanday susaytiradi (Th2 tomonga siljish, monotsitlarda MHCII kamayishi)? 2) Nega ommaviy qon quyish jarohat og‘irligini ham aks ettiradi? Doskada chizish: ‘jarohat – qon quyish – DAMP – immunosupressiya – pnevmoniya’ zanjiri. Tipik xato: qon quyishni pnevmoniyaning yagona sababi deb hisoblash, jarohat og‘irligini hisobga olmaslik.",
       "tezkor": null
+    },
+    {
+      "title": "Tiklovchi jarrohlik uchun mezonlar",
+      "bullets": [
+        {
+          "text": "Tiklovchi jarrohlik pH, harorat va koagulyatsiya me’yorlashgandan keyin rejalanadi.",
+          "source": {
+            "author": "Brøchner et al.",
+            "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+            "page": "PMID 19754938; DOI 10.1186/1757-7241-17-43 (Timing of surgery)"
+          }
+        },
+        {
+          "text": "Yurak-qon tomir tizimi vazokonstriktorsiz barqaror bo‘lishi kerak: laktat 2 dan past.",
+          "source": {
+            "author": "Brøchner et al.",
+            "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+            "page": "PMID 19754938; DOI 10.1186/1757-7241-17-43 (Timing of surgery)"
+          }
+        },
+        {
+          "text": "Kislorodlanish past yoki o‘rtacha FiO2 da yetarli; ICP 20 mm sim. ust. dan past; trombositlar 100 000/μl dan yuqori.",
+          "source": {
+            "author": "Brøchner et al.",
+            "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+            "page": "PMID 19754938; DOI 10.1186/1757-7241-17-43 (Timing of surgery)"
+          }
+        },
+        {
+          "text": "Diurez taxminan 1 ml/kg/soat bo‘lishi lozim.",
+          "source": {
+            "author": "Brøchner et al.",
+            "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
+            "page": "PMID 19754938; DOI 10.1186/1757-7241-17-43 (Timing of surgery)"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Laktat",
+            "value": "< 2"
+          },
+          {
+            "label": "ICP",
+            "value": "< 20",
+            "unit": "mm sim. ust."
+          },
+          {
+            "label": "Trombositlar",
+            "value": "> 100 000",
+            "unit": "/μl"
+          },
+          {
+            "label": "Diurez",
+            "value": "≈ 1",
+            "unit": "ml/kg/soat"
+          },
+          {
+            "label": "pH, harorat, ivish",
+            "value": "Me’yorda"
+          },
+          {
+            "label": "FiO2",
+            "value": "Past–o‘rtacha"
+          }
+        ],
+        "caption": "Tiklovchi jarrohlik mezonlari"
+      },
+      "teacher_notes": "Vaqt: 4 daq. Diqqat: 3 haftagacha kutish randomizatsiyalangan sinovlarga asoslanmagan."
     },
     {
       "title": "Jarrohlik muddati va xulosa",
@@ -1740,11 +2084,11 @@
       "question": "Travmadan 10 kun o‘tgach bemorda dastlabki yallig‘lanish pasaydi, ammo kasalxona pnevmoniyasi rivojlandi. Bu qaysi davrga mos keladi?",
       "options": [
         "Dastlabki shok fazasi va periferik vazokonstriksiya",
-        "Kompensator yallig‘lanishga qarshi javob va immunosupressiya",
         "Birinchi soatlardagi gemorragik shok bosqichi",
+        "Kompensator yallig‘lanishga qarshi javob va immunosupressiya",
         "Erta steril SIRS va undan kelgan a’zo yetishmovchiligi"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Erta bosqichda SIRS a’zo yetishmovchiligiga olib keladi. Travmadan taxminan 5-15 kun o‘tgach CARS immunosupressiyani keltirib chiqaradi va nozokomial infeksiyaga moyillikni oshiradi.",
       "source": {
         "author": "Vourc'h et al.",
@@ -1772,11 +2116,11 @@
       "question": "Og‘ir travmadan 5 kun o‘tgach bemorda taxikardiya, tezlashgan nafas, leykotsitoz va isitma saqlanmoqda. Qanday xulosa to‘g‘ri?",
       "options": [
         "Bu normal oqim fazasi, faqat kuzatishning o‘zi yetarli",
-        "Asoratlar, masalan infeksiya, bo‘lishi mumkinligi shubha qilinadi",
+        "Gormonal davo natijani yaxshilashi isbotlangan, uni boshlash kerak",
         "Shok fazasi qaytadan boshlangan, vazokonstriksiya kutiladi",
-        "Gormonal davo natijani yaxshilashi isbotlangan, uni boshlash kerak"
+        "Asoratlar, masalan infeksiya, bo‘lishi mumkinligi shubha qilinadi"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Asoratsiz travmada oqim fazasi belgilari bir necha kun davom etadi. Taxikardiya, tezlashgan nafas, leykotsitoz va harorat 4-5 kun ichida normallashmasa, asoratlar shubha qilinadi. Odamlarda gormonal davo natijani yaxshilashi isbotlanmagan.",
       "source": {
         "author": "Brøchner et al.",
@@ -1849,19 +2193,19 @@
       }
     },
     {
-      "question": "Asoratsiz travmadan 6 kun o‘tgach bemorda taxikardiya, tez nafas olish, leykotsitoz va yuqori harorat saqlanib qolgan. Qanday xulosa to‘g‘ri?",
+      "question": "Reperfuziya shikastida neytrofillar uzoq a’zolardan qaysilarda ko‘proq to‘planadi?",
       "options": [
-        "Bu oqim fazasining odatiy davom etishi",
-        "Asoratlar rivojlanganidan shubhalanish kerak",
-        "Shok fazasi endi boshlanayotgani",
-        "Mikrosirkulyatsiya to‘liq tiklangani"
+        "Buyrak, jigar va o‘pka",
+        "Taloq, qalqonsimon bez va oshqozon osti bezi",
+        "Miya, ko‘z va teri",
+        "Yurak, suyak iligi va limfa tugunlari"
       ],
-      "correct_index": 1,
-      "explanation": "Asoratsiz bemorda oqim fazasi belgilari bir necha kun davom etadi. Agar taxikardiya, tez nafas, leykotsitoz va harorat 4-5 kunda me’yorlashmasa, asoratlardan shubhalanish kerak.",
+      "correct_index": 0,
+      "explanation": "Reperfuziya neytrofillarning zararlangan to‘qimada ham, uzoq a’zolarda ham (buyrak, jigar, o‘pka) to‘planishini chaqiradi; bu a’zolarda neytrofillar va MPO ko‘p topiladi.",
       "source": {
         "author": "Brøchner et al.",
         "title": "Pathophysiology of the systemic inflammatory response after major accidental trauma, Scandinavian Journal of Trauma, Resuscitation and Emergency Medicine",
-        "page": "PMID 19754938"
+        "page": "PMID 19754938; DOI 10.1186/1757-7241-17-43 (I/R in relation to trauma)"
       }
     },
     {

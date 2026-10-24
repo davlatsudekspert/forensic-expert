@@ -1,0 +1,582 @@
+{
+ "topic_id": "ktp26-davolash-M4",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Mexanik asfiksiyaning sud-tibbiy ekspertizasi. Mexanik asfiksiya turlari, tasniflash.Ko‘rikdagi umumiy belgilarMexanik…",
+  "ru": "Mexanik asfiksiyaning sud-tibbiy ekspertizasi. Mexanik asfiksiya turlari, tasniflash.Ko‘rikdagi umumiy belgilarMexanik…",
+  "en": "Mexanik asfiksiyaning sud-tibbiy ekspertizasi. Mexanik asfiksiya turlari, tasniflash.Ko‘rikdagi umumiy belgilarMexanik…"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "ktp26-davolash-M4-q01",
+   "question_i18n": {
+    "uz": "Sud-tibbiy tasnifga ko‘ra mexanik asfiksiyaning nechta asosiy turi bor?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Ikkita",
+     "Beshta",
+     "To‘rtta",
+     "Uchta"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Uch tur: qisilishdan, yopilishdan va cheklangan muhitdagi asfiksiya."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "105"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-M4-q02",
+   "question_i18n": {
+    "uz": "Preasfiktik davr o‘rtacha qancha davom etadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "5 min",
+     "40–60 sek.",
+     "3–10 min",
+     "20–30 sek."
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Preasfiktik davr o‘rtacha 20–30 sek. davom etadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "106"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-M4-q03",
+   "question_i18n": {
+    "uz": "Inspirator hansirash bosqichida hush odatda qachon yo‘qoladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "5–10 sek.",
+     "10 min",
+     "3–5 min",
+     "40–60 sek."
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Asfiksiya boshlanganidan 40–60 sek. o‘tganda hush yo‘qoladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "106"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-M4-q04",
+   "question_i18n": {
+    "uz": "Postasfiktik holatning birinchi davri qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Karaxtlik",
+     "Qoldiq oqibatlar",
+     "Asfiktik koma",
+     "Dezorientatsiya"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Birinchi davr — asfiktik koma, keyin karaxtlik, dezorientatsiya va qoldiq oqibatlar."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "107"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-M4-q05",
+   "question_i18n": {
+    "uz": "Tarde dog‘lari qayerda joylashadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Terida",
+     "Miyada",
+     "Jigarda",
+     "Visseral plevra va epikard ostida"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Tarde dog‘lari — visseral plevra va epikard ostidagi 2–3 mm li qon quyilishlar."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "111"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-M4-q06",
+   "question_i18n": {
+    "uz": "Osilish asfiksiyadan o‘lim holatlarining qancha qismini tashkil etadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "10–15%",
+     "65–70%",
+     "90%",
+     "Hammasini"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Osilish asfiksiyadan o‘limning 65–70% ini tashkil etadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "111–112"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-M4-q07",
+   "question_i18n": {
+    "uz": "Yumshoq sirtmoq ta’siridan ichki tekshiruvda qaysi belgi topiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Tarde dog‘lari",
+     "Mis sim belgisi (Kasper)",
+     "Krushevskiy belgisi",
+     "Sabinskiy belgisi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Yumshoq sirtmoqda egat yaqqol emas, ichki tekshiruvda oqimtir yo‘lka — «mis sim belgisi» (Kasper) aniqlanadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "115"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-M4-q08",
+   "question_i18n": {
+    "uz": "Chin cho‘kishda og‘iz va burun atrofidagi oq ko‘pik qanday ataladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Moro belgisi",
+     "Krushevskiy belgisi",
+     "Paltauf belgisi",
+     "Fegerlund belgisi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Mayda pufakli turg‘un oq ko‘pik — Krushevskiy belgisi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "122"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-M4-q09",
+   "question_i18n": {
+    "uz": "Asfiktik cho‘kishda oshqozonda qancha suv aniqlanishi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "50 ml gacha",
+     "300 ml gacha",
+     "1 l gacha",
+     "Suv bo‘lmaydi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Asfiktik cho‘kishda oshqozonda 1 l gacha suv aniqlanishi mumkin (Fegerlund belgisi)."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "123"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-M4-q10",
+   "question_i18n": {
+    "uz": "«Ekximotik niqob» (Olive-Danjer belgisi) qaysi asfiksiyaga xos?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Osilish",
+     "Cho‘kish",
+     "Kompression asfiksiya",
+     "Obturatsion asfiksiya"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Ekximotik niqob kompression asfiksiyaga xos: yuz, bo‘yin, ko‘krak yuqorisida qon quyilishlar."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "129"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-M4-q11",
+   "question_i18n": {
+    "uz": "Autoasfiksiofiliya o‘lim bilan tugasa qanday baholanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qotillik",
+     "O‘z-o‘zini o‘ldirish",
+     "Baxtsiz hodisa",
+     "Tabiiy o‘lim"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "O‘lim bilan tugasa, baxtsiz hodisa sifatida baholanadi; joyda jinsiy chetlanishni tasdiqlovchi ashyolar topiladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "105-106"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-M4-q12",
+   "question_i18n": {
+    "uz": "Terminal nafas necha daqiqagacha davom etishi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "30 soniya",
+     "1 daqiqa",
+     "5 daqiqagacha",
+     "30 daqiqa"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Terminal nafas: noritmik nafas harakatlari 5 minutgacha davom etishi mumkin."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "107"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-M4-q13",
+   "question_i18n": {
+    "uz": "Reflektor yurak to‘xtashi 30 soniyagacha bo‘lsa nima kuzatiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Umumasfiktik belgilar rivojlanib ulgurmaydi, murdada aniqlanmasligi mumkin",
+     "Barcha belgilar yaqqol",
+     "Faqat sianoz",
+     "Tarde dog‘lari ko‘payadi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Reflektor yurak to‘xtashi 30 sek.gacha bo‘lsa, umumasfiktik belgilar rivojlanib ulgurmaydi va murdada aniqlanmasligi mumkin."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "107"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-M4-q14",
+   "question_i18n": {
+    "uz": "Postasfiktik holatda yengil o‘zgarishlar mutanosib yordamda qancha vaqtda yo‘qoladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Hech qachon",
+     "1 kun",
+     "6 oy",
+     "1–2 hafta"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Mutanosib tibbiy yordamda yengil postasfiktik holatlar 1–2 hafta ichida qoldiqsiz yo‘qoladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "108-109"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-M4-q15",
+   "question_i18n": {
+    "uz": "Brouardel belgisi nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Halqum orti qon quyilishi",
+     "Uyqu arteriyasi intimasi yorilishi",
+     "Plevra ostida dog‘lar",
+     "Taloq qisqarishi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Halqum orti qon quyilishi — Brouardel belgisi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "115-116"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-M4-q16",
+   "question_i18n": {
+    "uz": "Sirtmoq olishda tugun qanday saqlanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Tugunning o‘zi kesiladi",
+     "Tugunga qarama-qarshi tomondan kesib olinadi",
+     "Sirtmoq yechiladi",
+     "Tugun yoqiladi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Sirtmoqni olishda tugun buzilmaydi: tugunga qarama-qarshi tomondan kesib olinadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "112"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-M4-q17",
+   "question_i18n": {
+    "uz": "Qaysi belgi qo‘l bilan bo‘g‘ishga xos?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Bo‘yinda barmoqlardan dumaloq yoki oval qontalashlar va tirnoqdan yoysimon shilinmalar",
+     "Gorizontal tutashgan egat",
+     "Mis sim belgisi",
+     "Ekximotik niqob"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Bo‘yinda barmoqlardan dumaloq yoki oval qontalashlar va timoqlardan yoysimon shilinmalar bo‘ladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "118"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-M4-q18",
+   "question_i18n": {
+    "uz": "Moro belgisi cho‘kishda nimani bildiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qorin bo‘shlig‘ida ~100 ml suyuqlik",
+     "Oshqozonda 300 ml suv",
+     "Mushaklarda qon quyilishi",
+     "Chap yurak qonining ochroqligi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Qorin bo‘shlig‘ida ~100 ml suyuqlik — Moro belgisi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "122-123"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-M4-q19",
+   "question_i18n": {
+    "uz": "Asfiktik cho‘kishda yurakda qanday o‘zgarish aniqlanishi mumkin (Sunsov sinamasi)?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Havo emboliyasi",
+     "Infarkt",
+     "Tamponada",
+     "Endokardit"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Yurak havo emboliyasi (Sunsov sinamasi: chap qorincha teshiladi)."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "123"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-davolash-M4-q20",
+   "question_i18n": {
+    "uz": "Chin cho‘kishda diatom planktoni hayotiylikdan dalolat berishi uchun qayerda topilishi kerak?"
+   },
+   "options_i18n": {
+    "uz": [
+     "O‘pka to‘qimasida",
+     "Parenximatoz a’zolar va suyak miyasida",
+     "Faqat oshqozonda",
+     "Terida"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Diatom parenximatoz a’zolar va suyak miyasida topilsa hayotiylikdan dalolat beradi; o‘pkada topilishi diagnostik ahamiyatga ega emas."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "125"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "G‘iyosov Z.A.",
+   "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti"
+  }
+ ]
+}

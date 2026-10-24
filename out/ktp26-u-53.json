@@ -14,7 +14,7 @@
           "uncertain": false
         },
         {
-          "text": "Gematoksilin-eozin (H&E) bilan bo‘yash, maxsus bo‘yoqlar va immunogistokimyo (IHC) jarohatning yoshi va vitalligini hamda o‘lim sababini aniqlashga yordam beradi.",
+          "text": "H&E bilan bo‘yash, maxsus bo‘yoqlar va immunogistokimyo (IHC) jarohat yoshi, vitalligi va o‘lim sababini aniqlashga yordam beradi.",
           "source": {
             "author": "Pigaiani N va boshq.",
             "title": "iForensic, multicentric validation of digital whole slide images (WSI) in forensic histopathology setting according to the College of American Pathologists guidelines, International Journal of Legal Medicine",
@@ -76,27 +76,24 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ikki tushunchani solishtirish",
-        "nodes": [],
-        "header": [
-          "Tushuncha",
-          "Savol"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Vitalliklik",
+            "items": [
+              "Savol: jarohat tirikligida yetkazilganmi?",
+              "Davrlar: tirik, agonal, o‘limdan keyin"
+            ]
+          },
+          {
+            "title": "Jarohat yoshi",
+            "items": [
+              "Savol: jarohatdan keyin qancha yashagan?",
+              "Omon qolgan davrni ko‘rsatadi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Vitalliklik",
-            "Jarohat tirikligida yetkazilganmi?"
-          ],
-          [
-            "Jarohat yoshi",
-            "Jarohatdan keyin qancha yashagan?"
-          ],
-          [
-            "Davrlar",
-            "Tirik, agonal yoki o‘limdan keyin"
-          ]
-        ]
+        "caption": "Ikki tushuncha"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Agonal davrda yetkazilgan jarohatni qanday talqin qilamiz? 2) Jarohat yoshi aniq bo‘lsa, vitalliklik savoli hal bo‘ladimi? Doskada: jadvalni o‘zlari chizib, har qatorga bittadan misol yozsin. Tipik xato: ikki tushunchani bir xil deb olish."
     },
@@ -207,6 +204,79 @@
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun H&E yolg‘iz vitallikni isbotlay olmaydi? 2) IGK oddiy gistologiyadan nimasi bilan farq qiladi? Doskada: uch usulning ustunli jadvalini chizdiring. Tipik xato: vitallikni (jarohat tirik paytda yetkazilganmi) jarohat yoshi (qancha vaqt o‘tgan) bilan aralashtirish. Diqqat: vitallik ≠ jarohat yoshi."
     },
     {
+      "title": "Maiese sharhi: 137 maqola tuzilmasi",
+      "bullets": [
+        {
+          "text": "Qidiruvda 632 maqola topildi, takrorlari olib tashlangach 598 qoldi; sarlavha va annotatsiya bo‘yicha 201 ta, yakunda 137 ta ilmiy maqola tanlandi.",
+          "source": {
+            "author": "Maiese A va boshq.",
+            "title": "State-of-the-Art on Wound Vitality Evaluation: A Systematic Review, International Journal of Molecular Sciences",
+            "page": "PMID 35805886, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Maqolalar uch guruhga bo‘lindi: biologik suyuqlik va to‘qimada miqdoriy tahlil (24), immunogistokimyo (84), RNK tadqiqotlari (20 mRNK, 21 miRNK).",
+          "source": {
+            "author": "Maiese A va boshq.",
+            "title": "State-of-the-Art on Wound Vitality Evaluation: A Systematic Review, International Journal of Molecular Sciences",
+            "page": "PMID 35805886, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Eng ko‘p o‘rganilgan to‘qima — teri; eng ko‘p qidirilgan oqsil — fibronektin (15/85 maqola).",
+          "source": {
+            "author": "Maiese A va boshq.",
+            "title": "State-of-the-Art on Wound Vitality Evaluation: A Systematic Review, International Journal of Molecular Sciences",
+            "page": "PMID 35805886, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Vitallik va jarohat yoshini isbotlovchi standart, xalqaro tan olingan usul yo‘q; IGK eng ko‘p o‘rganilgan va «oltin standart» deb hisoblanishi mumkin.",
+          "source": {
+            "author": "Maiese A va boshq.",
+            "title": "State-of-the-Art on Wound Vitality Evaluation: A Systematic Review, International Journal of Molecular Sciences",
+            "page": "PMID 35805886, 4-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Topilgan maqola",
+            "value": "632"
+          },
+          {
+            "label": "Takrorsiz",
+            "value": "598"
+          },
+          {
+            "label": "Tanlangan (yakuniy)",
+            "value": "137"
+          },
+          {
+            "label": "IGK maqolalari",
+            "value": "84"
+          },
+          {
+            "label": "Miqdoriy tahlil",
+            "value": "24"
+          },
+          {
+            "label": "mRNK / miRNK",
+            "value": "20 / 21"
+          }
+        ],
+        "caption": "Maiese va boshq. (2022) sharhi"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega IGK eng ko‘p o‘rganilgan usul? 2) Nega standart usul yo‘q? Doskaga chizing: 632 → 137 voronkasi. Tipik xato: sharh natijasini yagona tasdiqlangan protokol deb hisoblash.",
+      "source_note_removed": null
+    },
+    {
       "title": "Voqea tahlili 1: jarohat tirik paytda yetkazilganmi?",
       "bullets": [
         {
@@ -281,31 +351,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Asosiy to‘qimalar",
-        "nodes": [],
-        "header": [
-          "To‘qima",
-          "Nega tanlanadi",
-          "Tadqiqot turi"
+        "kind": "tree",
+        "root": "Ko‘p o‘rganilgan to‘qimalar",
+        "children": [
+          {
+            "label": "Teri",
+            "items": [
+              "Amaliyotda tez uchraydi",
+              "Ko‘proq tekshiruv tadqiqotlari"
+            ]
+          },
+          {
+            "label": "Skelet mushagi",
+            "items": [
+              "Amaliyotda tez uchraydi",
+              "Ko‘proq tajriba tadqiqotlari"
+            ]
+          },
+          {
+            "label": "Miya",
+            "items": [
+              "Zo‘ravon o‘limda ko‘p",
+              "Jarohat yoshi tadqiqotlari ko‘p"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Teri",
-            "Amaliyotda tez-tez uchraydi",
-            "Ko‘proq tekshiruv tadqiqotlarida"
-          ],
-          [
-            "Skelet mushagi",
-            "Amaliyotda tez-tez uchraydi",
-            "Ko‘proq tajriba tadqiqotlarida"
-          ],
-          [
-            "Miya",
-            "Zo‘ravon o‘limda ko‘p va ko‘pincha o‘ldiradi",
-            "Jarohat yoshi tadqiqotlari ko‘p"
-          ]
-        ]
+        "caption": "Jarohat yoshi bo‘yicha asosiy to‘qimalar"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega miya jarohatlari ko‘p o‘rganilgan? 2) Tajriba va tekshiruv tadqiqotlari qanday farq qiladi? Doskada: uch to‘qimani yozib, har biriga bittadan sabab yozdiring. Tipik xato: tajriba tadqiqotlarini avtomatik tarzda inson uchun to‘liq mos deb hisoblash."
     },
@@ -341,31 +412,34 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Uch namuna manbasi",
-        "nodes": [],
-        "header": [
-          "Manba",
-          "Afzalligi",
-          "Kamchiligi"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Hayvon",
+            "items": [
+              "Vaqt nazorat qilinadi",
+              "Takrorlanuvchan",
+              "Odamga qo‘llanishi noaniq"
+            ]
+          },
+          {
+            "title": "Autopsiya",
+            "items": [
+              "Eng real; yoshi ma’lum bo‘lsa aniq",
+              "Ma’lumot yetishmaydi",
+              "Chirish o‘zgarishlari xalaqit beradi"
+            ]
+          },
+          {
+            "title": "Tirik odam",
+            "items": [
+              "Odam namunasi, vaqti aniq",
+              "Sog‘lom emas, namuna kam",
+              "Surtma: yolg‘on manfiy xavfi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Hayvon",
-            "Nazorat qilinadi, takrorlanuvchan",
-            "Odamga qo‘llanishi noaniq"
-          ],
-          [
-            "Autopsiya",
-            "Eng real; yoshi ma’lum bo‘lsa aniq",
-            "Ma’lumot yetishmaydi, chirish o‘zgarishi"
-          ],
-          [
-            "Tirik odam",
-            "Odam namunasi, vaqti aniq",
-            "Sog‘lom emas, namuna kam"
-          ]
-        ]
+        "caption": "Uch namuna manbasi"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega faqat bitta manbaga tayanib bo‘lmaydi? 2) Qaysi manba vaqt aniqligi bo‘yicha ustun? Doskada: shu uch ustunli jadvalni talabalar bilan birga chizing. Tipik xato: autopsiya namunasini har doim eng ishonchli deb hisoblash."
     },
@@ -612,7 +686,7 @@
       "title": "Tezkor savol 1: gistologiya asoslari",
       "bullets": [
         {
-          "text": "1-savol: vitallik bilan jarohat yoshi qanday farq qiladi? Javob: vitallik jarohat tirikligida yoki o‘limdan keyin hosil bo‘lganini, yosh esa jarohatdan keyin qancha yashalganini bildiradi.",
+          "text": "1-savol: vitallik va jarohat yoshi farqi? Javob: vitallik jarohat tirikligida hosil bo‘lganini, yosh esa jarohatdan keyin qancha yashalganini bildiradi.",
           "source": {
             "author": "Maiese A va boshq.",
             "title": "State-of-the-Art on Wound Vitality Evaluation: A Systematic Review, International Journal of Molecular Sciences",
@@ -621,7 +695,7 @@
           "uncertain": false
         },
         {
-          "text": "2-savol: gematoksilin-eozin (H&E) bo‘yashi yolg‘iz o‘zi vitallikni isbotlaydimi? Javob: yo‘q. Usul operatorga bog‘liq, artefaktlar bor, belgilar vital jarohatlanmagan terida ham uchrashi mumkin.",
+          "text": "2-savol: H&E yolg‘iz o‘zi vitallikni isbotlaydimi? Javob: yo‘q — operatorga bog‘liq, artefaktlar bor, belgilar vital jarohatlanmagan terida ham uchrashi mumkin.",
           "source": {
             "author": "Maiese A va boshq.",
             "title": "State-of-the-Art on Wound Vitality Evaluation: A Systematic Review, International Journal of Molecular Sciences",
@@ -692,7 +766,37 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "IGK ko‘rsatadi",
+        "children": [
+          {
+            "label": "Sitokinlar",
+            "items": [
+              "IL-1, IL-6, TNF-α"
+            ]
+          },
+          {
+            "label": "Yallig‘lanish hujayralari",
+            "items": [
+              "Semiz hujayralar va b."
+            ]
+          },
+          {
+            "label": "Shikastga oid molekulalar",
+            "items": [
+              "Vaqt o‘tishi bilan ifodasi o‘zgaradi"
+            ]
+          },
+          {
+            "label": "Ko‘p bo‘yash",
+            "items": [
+              "3–4 markerni bir vaqtda aniqlash"
+            ]
+          }
+        ],
+        "caption": "Immunogistokimyo imkoniyatlari"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: nega bir vaqtda bir nechta markerni aniqlash foydali? Antigen-antitana reaksiyasi to‘qimada nimani ko‘rsatadi? Doskada chizing: antigen → antitana → ko‘rinadigan signal sxemasi. Tipik xato: IGK ni oddiy H&E bo‘yash bilan bir xil deb o‘ylash.",
       "diagram_note": null
     },
@@ -728,36 +832,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "IGK: solishtirish",
-        "nodes": [],
-        "header": [
-          "Jihat",
-          "Afzallik",
-          "Kamchilik"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Afzalliklari",
+            "items": [
+              "‘Oltin standart’ deb hisoblanishi mumkin",
+              "Qimmat uskuna shart emas",
+              "Parafinli bloklarda ishlaydi",
+              "Molekula taqsimotini ko‘rsatadi"
+            ]
+          },
+          {
+            "title": "Kamchiliklari",
+            "items": [
+              "Yagona xalqaro protokol yo‘q",
+              "Bo‘yash sifati ko‘p omilga bog‘liq",
+              "Miqdorni baholash operatorga bog‘liq",
+              "Xato yoki takrorlanmas natija mumkin"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Maqomi",
-            "‘Oltin standart’ deb hisoblanishi mumkin",
-            "Xalqaro standart protokol yo‘q"
-          ],
-          [
-            "Uskuna",
-            "Qimmat murakkab uskuna shart emas",
-            "Bo‘yash sifati ko‘p omilga bog‘liq"
-          ],
-          [
-            "Material",
-            "Parafinli bloklarda ishlaydi",
-            "Miqdorni baholash operatorga bog‘liq"
-          ],
-          [
-            "Natija",
-            "Molekula taqsimotini ko‘rsatadi",
-            "Xato yoki takrorlanmas natija mumkin"
-          ]
-        ]
+        "caption": "IGK: afzallik va kamchilik"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: IGK ni nima uchun ‘oltin standart’ deyish mumkin, lekin kamchiliklari qanday? Eski ishlarni qayta ko‘rish sud-tibbiyotda nima uchun muhim? Doskada chizing: jadvalni daftarga ko‘chirib, har ustunga bittadan misol qo‘shing. Tipik xato: ‘oltin standart’ni xatosiz va to‘liq standartlashgan usul deb tushunish.",
       "diagram_note": null
@@ -794,33 +890,102 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Fibrin rangi va ivindi yoshi",
-        "nodes": [],
-        "header": [
-          "Ivindi yoshi",
-          "Fibrin rangi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "30 daqiqa–6 soat",
+            "text": "Fibrin qizil"
+          },
+          {
+            "title": "6–12 soat",
+            "text": "Fibrin binafsha yoki ko‘k-binafsha"
+          },
+          {
+            "title": "24 soatdan eski",
+            "text": "Fibrin ko‘k"
+          }
         ],
-        "rows": [
-          [
-            "30 daqiqa – 6 soat",
-            "Qizil"
-          ],
-          [
-            "6 – 12 soat",
-            "Binafsha yoki ko‘k-binafsha"
-          ],
-          [
-            "12 – 24 soat",
-            "Manbada ko‘rsatilmagan"
-          ],
-          [
-            "24 soatdan eski",
-            "Ko‘k"
-          ]
-        ]
+        "caption": "Pikro-Mallori: ivindi yoshi (12–24 soat manbada ko‘rsatilmagan)"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega ivindi yetilgani sari fibrin rangi o‘zgaradi deb o‘ylaysiz? 2) Bu usul jarohat yoshini aniqlashda yagona dalil bo‘la oladimi? Doskada: vaqt o‘qini chizib, qizil–binafsha–ko‘k bosqichlarini rangli bo‘r bilan belgilang. Tipik xato: 12–24 soat oralig‘i uchun manbada rang berilmagan, talabalar uni o‘zlaricha to‘ldirib yuboradi. Shuningdek, FXIII ni rang beruvchi omil deb adashtirmang: u ivindini mustahkamlovchi oqsil."
+    },
+    {
+      "title": "Kvantitativ markerlar va elektrolitlar",
+      "bullets": [
+        {
+          "text": "Oqsil miqdori radioimmunoanaliz, ELISA, elektroforez, MALDI-TOF, nano-LC MS va HPLC bilan, ionlar atom-absorbsion spektrofotometriya bilan o‘lchanadi.",
+          "source": {
+            "author": "Maiese A va boshq.",
+            "title": "State-of-the-Art on Wound Vitality Evaluation: A Systematic Review, International Journal of Molecular Sciences",
+            "page": "PMID 35805886, 3-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Magniy va kalsiy ferment boshqaruvi va mushak qisqarishida muhim; sink kechki tiklanish bosqichida ko‘payadi.",
+          "source": {
+            "author": "Maiese A va boshq.",
+            "title": "State-of-the-Art on Wound Vitality Evaluation: A Systematic Review, International Journal of Molecular Sciences",
+            "page": "PMID 35805886, 4-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Natriy va kaliy o‘zgarishi travmadagi membrana buzilishi va membrana potensialining o‘zgarishi bilan bog‘liq bo‘lishi mumkin.",
+          "source": {
+            "author": "Maiese A va boshq.",
+            "title": "State-of-the-Art on Wound Vitality Evaluation: A Systematic Review, International Journal of Molecular Sciences",
+            "page": "PMID 35805886, 4-bo‘lim"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Bu yo‘nalishdagi maqolalar oz (24/137), usullar sud maqsadlarida foydalanish uchun yetarli sinalmagan.",
+          "source": {
+            "author": "Maiese A va boshq.",
+            "title": "State-of-the-Art on Wound Vitality Evaluation: A Systematic Review, International Journal of Molecular Sciences",
+            "page": "PMID 35805886, 4-bo‘lim"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Kvantitativ tahlil (24/137)",
+        "children": [
+          {
+            "label": "Oqsil o‘lchash",
+            "items": [
+              "Radioimmunoanaliz, ELISA",
+              "Elektroforez, MALDI-TOF",
+              "HPLC, nano-LC MS"
+            ]
+          },
+          {
+            "label": "Ionlar",
+            "items": [
+              "Atom-absorbsion spektrofotometriya"
+            ]
+          },
+          {
+            "label": "Elektrolitlar roli",
+            "items": [
+              "Mg, Ca: ferment, mushak",
+              "Zn: kechki tiklanish",
+              "Na, K: membrana buzilishi"
+            ]
+          },
+          {
+            "label": "Cheklov",
+            "items": [
+              "Sudda ishlatish uchun yetarli sinalmagan"
+            ]
+          }
+        ],
+        "caption": "Miqdoriy markerlar"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega elektrolitlar jarohat yoshi markeri bo‘la oladi? 2) Nega ular sudda ishlatilmaydi? Doskaga chizing: usul-ion daraxti. Tipik xato: elektrolit o‘zgarishini faqat jarohatga bog‘lash (o‘limdan keyingi o‘zgarishlar ham bor).",
+      "source_note_removed": null
     },
     {
       "title": "Voqea tahlili 3: IGK natijasi shubhali",
@@ -950,7 +1115,35 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Yuqori o‘tkazuvchan usullar",
+        "children": [
+          {
+            "label": "Gen darajasi",
+            "items": [
+              "Gen chiplari",
+              "Yuqori o‘tkazuvchan sekvenirlash",
+              "384 mikroplastinka tizimi"
+            ]
+          },
+          {
+            "label": "Oqsil darajasi",
+            "items": [
+              "Western blot",
+              "ELISA (IGK dan sezgirroq)",
+              "Oqsil mikroarrayi"
+            ]
+          },
+          {
+            "label": "Cheklov",
+            "items": [
+              "Laboratoriyalararo solishtirish qiyin"
+            ]
+          }
+        ],
+        "caption": "Mikro-usullar"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega yuqori o‘tkazuvchan usullar narxni kamaytiradi? 2) Nega laboratoriyalararo solishtirish qiyin? Doskada chizing: gen (mRNK) → oqsil → morfologiya zanjiri va har bosqichga mos usulni yozing. Tipik xato: Western blot/ELISA ni gistologik usul deb o‘ylash; ular oqsil miqdorini o‘lchaydi, joylashuvini emas."
     },
     {
@@ -966,7 +1159,7 @@
           "uncertain": false
         },
         {
-          "text": "Savol: real-time PCR (polimeraza zanjir reaksiyasi, qPCR) da mos yozuv geni nega kerak? Javob: ba’zi uy genlari jarohatdan keyin ortadi, normalizatsiya buziladi.",
+          "text": "Savol: real-time PCR da mos yozuv geni nega kerak? Javob: ba’zi uy genlari jarohatdan keyin ortadi, normalizatsiya buziladi.",
           "source": {
             "author": "Li N va boshq.",
             "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
@@ -1172,7 +1365,7 @@
           "uncertain": false
         },
         {
-          "text": "Mexanik shikast ko‘pincha epidural, subdural, subaraxnoidal va parenximal qon quyilish bilan birga keladi. Qon quyilish yoshi gematoksilin-eozin va immunogistokimyo bilan baholanadi.",
+          "text": "Mexanik shikast ko‘pincha epidural, subdural, subaraxnoidal va parenximal qon quyilish bilan keladi; qon quyilish yoshi H&E va IGK bilan baholanadi.",
           "source": {
             "author": "Li N va boshq.",
             "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
@@ -1181,7 +1374,7 @@
           "uncertain": false
         },
         {
-          "text": "Diffuz aksonal shikast og‘ir oqibat beradi, erta tashxisi qiyin. β-amiloid prekursor oqsili akson uzilgan joyda aniqlanadi va sezgir, o‘ziga xos marker hisoblanadi.",
+          "text": "Diffuz aksonal shikast og‘ir, erta tashxisi qiyin. β-amiloid prekursor oqsili akson uzilgan joyda aniqlanadi — sezgir, o‘ziga xos marker.",
           "source": {
             "author": "Li N va boshq.",
             "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
@@ -1199,7 +1392,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Miya jarohati belgilari",
+        "children": [
+          {
+            "label": "Qon quyilish turlari",
+            "items": [
+              "Epidural, subdural",
+              "Subaraxnoidal, parenximal"
+            ]
+          },
+          {
+            "label": "Diffuz aksonal shikast",
+            "items": [
+              "β-amiloid prekursor oqsili"
+            ]
+          },
+          {
+            "label": "Glial javob",
+            "items": [
+              "Mikroglia faollashadi",
+              "Reaktiv astrositlar ko‘payadi"
+            ]
+          }
+        ],
+        "caption": "Miya jarohati yoshini baholash"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) β-amiloid prekursor oqsili nima uchun akson shikasti markeri bo‘la oladi? 2) Miyadagi mahalliy reaksiya teri yallig‘lanishidan nimasi bilan farq qiladi? Doskada: neyron tanasi, akson va uzilish joyini chizib, oqsil to‘planishini ko‘rsating. Tipik xato: miya yallig‘lanishini teri bilan to‘liq bir xil deb hisoblash, glial hujayralar migratsiyasini unutish."
     },
     {
@@ -1426,33 +1645,107 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Tahlil modellari",
-        "nodes": [],
-        "header": [
-          "Yondashuv",
-          "Mohiyati"
+        "kind": "tree",
+        "root": "Ko‘p markerli yondashuv",
+        "children": [
+          {
+            "label": "4 ta mRNA modeli",
+            "items": [
+              "Yuqoriga/o‘zgarishsiz/pastga",
+              "Yosh oralig‘ini toraytirdi"
+            ]
+          },
+          {
+            "label": "CD14 + CD32B + CD68",
+            "items": [
+              "Teri jarohati, torroq oraliq"
+            ]
+          },
+          {
+            "label": "Ehtimollik ballari",
+            "items": [
+              "Morfologik belgilarni ballash"
+            ]
+          },
+          {
+            "label": "Matematik model",
+            "items": [
+              "Hayvon ma’lumoti + autopsiya kalibri"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Yuqoriga/o‘zgarishsiz/pastga",
-            "4 ta mRNK bo‘yicha model"
-          ],
-          [
-            "CD14 + CD32B + CD68",
-            "Teri jarohati, torroq oraliq"
-          ],
-          [
-            "Ehtimollik ballari",
-            "Morfologik belgilarni ballash"
-          ],
-          [
-            "Matematik model",
-            "Hayvon ma’lumoti + autopsiya kalibri"
-          ]
-        ]
+        "caption": "Tahlil modellari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega bitta marker yoshni aniq ko‘rsatmaydi? 2) Matematik modelni ob-havo prognoziga o‘xshatish nimani anglatadi? Doskada: jadvalni chizing va har yondashuv yoniga ‘oraliq torayadi’ deb yozing. Tipik xato: mualliflar ko‘p markerli tizim ‘tayyor’ deb o‘ylash; aslida hali yagona tizim yoki model taklif etilmagan. Operator mahorati va to‘qima tiklanishidagi ko‘p omillar aniqlikka hali to‘sqinlik qiladi."
+    },
+    {
+      "title": "Kelajak yo‘nalishlari: jarohat yoshini baholash",
+      "bullets": [
+        {
+          "text": "Erta bosqichda jarohat yoshini aniqlash ko‘p jihatdan patologning tajribasiga bog‘liq.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306, Problems and future perspectives"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Marhum yoshi, jinsi, o‘lim sababi, jarohat og‘irligi, o‘limdan keyingi vaqt, fasl va saqlash sharoitini hisobga oluvchi hayvon modeli kerak.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306, Problems and future perspectives"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ko‘p marker va yuqori o‘tkazuvchan tahlil, morfologiya bilan genomika, proteomika, metabolomika birlashtirilishi taxmin qilinadi.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306, Problems and future perspectives"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Matematik model katta hayvon tadqiqotlariga asoslanib, inson autopsiyasi bilan kalibrlanishi kerak; yagona ko‘p markerli tizim hozircha taklif etilmagan.",
+          "source": {
+            "author": "Li N va boshq.",
+            "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+            "page": "PMID 32490306, Conclusion"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Hayvon modeli",
+            "text": "Yosh, PMI, fasl, saqlash sharoiti hisobga olinadi"
+          },
+          {
+            "title": "2. Ko‘p marker",
+            "text": "Yuqori o‘tkazuvchan tahlil: mRNK va oqsil"
+          },
+          {
+            "title": "3. Omika",
+            "text": "Genomika, proteomika, metabolomika + morfologiya"
+          },
+          {
+            "title": "4. Matematik model",
+            "text": "Hayvon ma’lumoti, autopsiya bilan kalibr"
+          },
+          {
+            "title": "5. Amaliyot",
+            "text": "Hozircha yagona tizim taklif etilmagan"
+          }
+        ],
+        "caption": "Kelajak yo‘li"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega patolog tajribasi muhim? 2) Nega matematik model kalibr talab qiladi? Doskaga chizing: besh bosqichli yo‘l. Tipik xato: kelajakdagi usulni hozirgi isbotlangan standart deb ko‘rsatish.",
+      "source_note_removed": null
     },
     {
       "title": "Raqamli WSI: validatsiya usuli",
@@ -1501,6 +1794,79 @@
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nima uchun ikki haftalik tanaffus kerak? 2) Bir kuzatuvchining ikki usuldagi tashxisini solishtirish nimani ko‘rsatadi? Doskada: flow zanjirini chizing va CAP shartlarini (60 holat, 95%) yoniga yozing. Tipik xato: CAP minimumi 60 holatni iForensic soni (100) bilan adashtirish."
     },
     {
+      "title": "iForensic: preparatlar tarkibi",
+      "bullets": [
+        {
+          "text": "100 ta sud-tibbiy ahamiyatli shisha preparat tanlandi: turli a’zo va to‘qimalar.",
+          "source": {
+            "author": "Pigaiani N va boshq.",
+            "title": "iForensic, multicentric validation of digital whole slide images (WSI) in forensic histopathology setting according to the College of American Pathologists guidelines, International Journal of Legal Medicine",
+            "page": "PMID 39836212, Results"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "O‘lim turi bo‘yicha: qotillik 10, suitsid 15, tabiiy 30, baxtsiz hodisa 15, tibbiy javobgarlik 30 ta.",
+          "source": {
+            "author": "Pigaiani N va boshq.",
+            "title": "iForensic, multicentric validation of digital whole slide images (WSI) in forensic histopathology setting according to the College of American Pathologists guidelines, International Journal of Legal Medicine",
+            "page": "PMID 39836212, Results"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "80 preparat oddiy gematoksilin-eozin bilan, 20 tasi gistokimyoviy bo‘yoqlar (PTAH, PAS, Masson, Perls, Von Kossa) va IGK markerlari bilan bo‘yalgan.",
+          "source": {
+            "author": "Pigaiani N va boshq.",
+            "title": "iForensic, multicentric validation of digital whole slide images (WSI) in forensic histopathology setting according to the College of American Pathologists guidelines, International Journal of Legal Medicine",
+            "page": "PMID 39836212, Results"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Skanerlash o‘rtacha 44 soniya, fayl hajmi 119–997 (o‘rtacha 640) megabayt.",
+          "source": {
+            "author": "Pigaiani N va boshq.",
+            "title": "iForensic, multicentric validation of digital whole slide images (WSI) in forensic histopathology setting according to the College of American Pathologists guidelines, International Journal of Legal Medicine",
+            "page": "PMID 39836212, Results"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Qotillik",
+            "value": "10"
+          },
+          {
+            "label": "Suitsid",
+            "value": "15"
+          },
+          {
+            "label": "Tabiiy o‘lim",
+            "value": "30"
+          },
+          {
+            "label": "Baxtsiz hodisa",
+            "value": "15"
+          },
+          {
+            "label": "Tibbiy javobgarlik",
+            "value": "30"
+          },
+          {
+            "label": "H&E / maxsus",
+            "value": "80 / 20"
+          }
+        ],
+        "caption": "iForensic: o‘lim turi va bo‘yash"
+      },
+      "teacher_notes": "Vaqt: 4 daqiqa. Muhokama: 1) Nega preparatlar turli o‘lim turlaridan tanlangan? 2) Maxsus bo‘yoqlar nima uchun kerak? Doskaga chizing: 100 ta preparat taqsimoti. Tipik xato: faqat H&E ni yagona bo‘yoq deb hisoblash.",
+      "source_note_removed": null
+    },
+    {
       "title": "iForensic natijalari",
       "bullets": [
         {
@@ -1532,31 +1898,35 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Asosiy natijalar",
-        "nodes": [],
-        "header": [
-          "Ko‘rsatkich",
-          "Natija"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Preparatlar soni",
+            "value": "100"
+          },
+          {
+            "label": "H&E bo‘yalgan",
+            "value": "80"
+          },
+          {
+            "label": "Maxsus bo‘yoq / IGK",
+            "value": "20"
+          },
+          {
+            "label": "O‘rtacha moslik",
+            "value": "97,8 %"
+          },
+          {
+            "label": "CSUQ (qulaylik)",
+            "value": "6,6 / 7"
+          },
+          {
+            "label": "Skanerlash vaqti",
+            "value": "≈44",
+            "unit": "soniya"
+          }
         ],
-        "rows": [
-          [
-            "Preparatlar soni",
-            "100 (80 H&E, 20 maxsus bo‘yoq)"
-          ],
-          [
-            "O‘rtacha moslik",
-            "97,8%"
-          ],
-          [
-            "CSUQ balli (qulaylik)",
-            "o‘rtacha 6,6 / 7"
-          ],
-          [
-            "Skanerlash vaqti",
-            "o‘rtacha 44 soniya"
-          ]
-        ]
+        "caption": "iForensic asosiy natijalari"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) 97,8% natija nimani isbotlaydi va nimani isbotlamaydi? 2) WSI ta’lim va masofaviy maslahatda qanday foyda beradi? Doskada: 95% chegarani va 97,8% natijani son o‘qida chizing. Tipik xato: CSUQ ballini foizga aylantirish; u 1–7 shkalada, yuqori ball yuqori qoniqishni bildiradi (mualliflar shkalani shunday qo‘llagan). H&E — gematoksilin-eozin bo‘yog‘i."
     },
@@ -1564,7 +1934,7 @@
       "title": "WSI imkoniyatlari: xizmat, tadqiqot, ta’lim",
       "bullets": [
         {
-          "text": "Xizmat: yuqori sifatli raqamli tasvirni boshqa joydagi mutaxassisga tez yuborish mumkin. Real vaqtda konsultatsiya o‘tkaziladi, namuna jo‘natishni kutish shart emas.",
+          "text": "Xizmat: yuqori sifatli raqamli tasvir boshqa joydagi mutaxassisga tez yuboriladi; real vaqtda konsultatsiya o‘tkaziladi, namuna jo‘natishni kutish shart emas.",
           "source": {
             "author": "Pigaiani N va boshq.",
             "title": "iForensic, multicentric validation of digital whole slide images (WSI) in forensic histopathology setting according to the College of American Pathologists guidelines, International Journal of Legal Medicine",
@@ -1600,7 +1970,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "WSI imkoniyatlari",
+        "children": [
+          {
+            "label": "Xizmat",
+            "items": [
+              "Masofadagi mutaxassis bilan maslahat"
+            ]
+          },
+          {
+            "label": "Tadqiqot",
+            "items": [
+              "AI hujayra zichligini baholaydi",
+              "Eski ishlarni qayta o‘rganish"
+            ]
+          },
+          {
+            "label": "Ta’lim",
+            "items": [
+              "Masofadan ko‘rish va muhokama"
+            ]
+          }
+        ],
+        "caption": "Raqamli gistologiya"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: 1) WSI an’anaviy mikroskopiyadan qaysi jihatda qulay? 2) AI tahlili nega subyektivlikni kamaytiradi? Doskada chizish: xizmat – tadqiqot – ta’lim uchta ustunli sxema, har biriga bittadan misol yozing. Tipik xato: WSI ni mikroskopni butunlay almashtiradi deb o‘ylash. Manbada u mikroskopdan kam bo‘lmagan aniqlik berishi aytilgan (non-inferiority), almashtirish haqida emas."
     },
     {
@@ -1644,7 +2039,7 @@
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Talabalar 2 kishilik guruhda ishlaydi. Muhokama: 1) Nega kechikish sud-tibbiyotda ayniqsa muhim? 2) Raqamli tashxis qanday validatsiya qilinishi kerak (CAP ko‘rsatmasidagi mos kelish chegarasi 95% dan yuqori)? Doskada chizish: preparat – skaner – server – neyropatolog zanjiri. Tipik xato: validatsiyani unutish. Raqamli tasvir shishа preparat bilan bir xil tashxis berishi tekshirilishi shart."
+      "teacher_notes": "Vaqt: 5 daq. Talabalar 2 kishilik guruhda ishlaydi. Muhokama: 1) Nega kechikish sud-tibbiyotda ayniqsa muhim? 2) Raqamli tashxis qanday validatsiya qilinishi kerak (CAP ko‘rsatmasidagi mos kelish chegarasi 95% dan yuqori)? Doskada chizish: preparat – skaner – server – neyropatolog zanjiri. Tipik xato: validatsiyani unutish. Raqamli tasvir shisha preparat bilan bir xil tashxis berishi tekshirilishi shart."
     },
     {
       "title": "Xulosa: standart va kompleks yondashuv",
@@ -1694,12 +2089,12 @@
     {
       "question": "Ekspert jarohat o‘lim oldidan yoki o‘limdan keyin yetkazilganini aniqlamoqchi. U aynan nimani isbotlamoqda?",
       "options": [
-        "Jarohat yoshini, ya’ni omon qolish muddatini",
         "Jarohat vitalligini, ya’ni tirikdagi paydo bo‘lishini",
+        "Jarohat yoshini, ya’ni omon qolish muddatini",
         "O‘lim sodir bo‘lgan aniq vaqtni belgilashni",
         "Jarohat og‘irlik darajasining tasnifini"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Vitalliklikni isbotlash jarohat tirikligida (antemortem) yoki o‘limdan keyin (postmortem) yetkazilganini aniqlashni anglatadi. Jarohat yoshi esa jarohatdan keyin odam qancha vaqt tirik qolganini baholaydi. Bu ikki tushunchani aralashtirmaslik kerak.",
       "source": {
         "author": "Maiese A va boshq.",
@@ -1759,11 +2154,11 @@
       "question": "Tirik odamdagi jarohatdan namuna faqat noinvaziv usulda (surtma) olinadi. Bu qanday asosiy xavfni keltirib chiqaradi?",
       "options": [
         "Namuna hajmi yetarli bo‘lmay, yolg‘on ijobiy natija chiqishi",
-        "Namuna hajmi yetarli bo‘lmay, yolg‘on salbiy natija chiqishi",
+        "Namunaning hayvon to‘qimasi bilan almashib ketishi",
         "Namunada o‘limdan keyingi chirish o‘zgarishlari paydo bo‘lishi",
-        "Namunaning hayvon to‘qimasi bilan almashib ketishi"
+        "Namuna hajmi yetarli bo‘lmay, yolg‘on salbiy natija chiqishi"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Tirik odamlardagi jarohatdan namuna noinvaziv (surtma) usulda olinishi kerak, shuning uchun namuna hajmi ko‘pincha yetarli bo‘lmaydi. Bu ishonchsiz, ba’zan yolg‘on salbiy natijalarga olib keladi. Bundan tashqari, tirik odamlarni tadqiqotga jalb etish mahalliy etika qo‘mitasi ruxsatini talab qiladi.",
       "source": {
         "author": "Li N va boshq.",

@@ -1,0 +1,582 @@
+{
+ "topic_id": "ktp26-stomatologiya-M3",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Sud-tibbiy toksikologiya",
+  "ru": "Sud-tibbiy toksikologiya",
+  "en": "Sud-tibbiy toksikologiya"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "ktp26-stomatologiya-M3-q01",
+   "question_i18n": {
+    "uz": "Zo‘ravon o‘lim tarkibida zaharlanishlar qaysi o‘rinda?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Birinchi",
+     "Ikkinchi",
+     "Uchinchi",
+     "To‘rtinchi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Zaharlanishlar mexanik jarohatlar va mexanik asfiksiyadan keyingi uchinchi o‘rinni egallaydi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "132"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M3-q02",
+   "question_i18n": {
+    "uz": "Zaharlanish vujudga kelishida ahamiyatli to‘rt guruh omil qaysilar?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Doza, vaqt, joy, shaxs",
+     "Zaharli modda, organizm, kirish yo‘li, tashqi sharoit",
+     "Rang, hid, ta’m, shakl",
+     "Yosh, jins, kasb, millat"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Zaharli modda, organizm, zaharning kirish yo‘li va tashqi shart-sharoit."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "132"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M3-q03",
+   "question_i18n": {
+    "uz": "Yorqin olcha rangli murda dog‘lari qaysi zaharlanishga xos?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Is gazi",
+     "Sianidlar",
+     "Metgemoglobin hosil qiluvchilar",
+     "Gemoliz chaqiruvchilar"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Sianidlarda yorqin olcha rang; is gazida pushti."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "136"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M3-q04",
+   "question_i18n": {
+    "uz": "Toksikologik namunalar «uch nuqta» qoidasi bo‘yicha qaysi joylardan olinadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Boshdan, tanadan, oyoqdan",
+     "Zahar kirgan, ta’sir etgan va chiqqan joylardan",
+     "Faqat oshqozondan",
+     "Faqat qondan"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Namunalar zahar kirgan, asosan ta’sir etgan va organizmdan chiqqan joylardan olinadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "136"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M3-q05",
+   "question_i18n": {
+    "uz": "Kislotalar bilan zaharlanganda qanday nekroz vujudga keladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kolliqvatsion",
+     "Koagulyasion (quruq)",
+     "Yog‘li",
+     "Nekroz bo‘lmaydi"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Erkin vodorod ionlari oqsilni ivitib, quruq nekroz hosil qiladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "140"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M3-q06",
+   "question_i18n": {
+    "uz": "Sulema bilan zaharlanishda og‘iz bo‘shlig‘ida qanday o‘zgarish topiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Simobli stomatit va gingivit",
+     "Faqat til shishi",
+     "Tishlar tushishi",
+     "O‘zgarish bo‘lmaydi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Og‘iz bo‘shlig‘ida simobli stomatit va gingivit, milk chekkalarida iflos-kulrang hoshiya."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "146"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M3-q07",
+   "question_i18n": {
+    "uz": "Alanganing o‘limdan keyingi ta’sirida karboksigemoglobin qancha dan oshmaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "10 %",
+     "20 %",
+     "40 %",
+     "60 %"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "O‘limdan keyingi ta’sirda 20 % dan oshmaydi; hayotiyda 60 % gacha."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "189"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M3-q08",
+   "question_i18n": {
+    "uz": "Xavfsiz kuchlanishning xalqaro me’yori qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "12 V",
+     "220 V",
+     "42 V",
+     "24 V"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Xavfsiz kuchlanishning xalqaro me’yori 24 V."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "197"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M3-q09",
+   "question_i18n": {
+    "uz": "Sog‘liqning qisqa muddatga buzilishiga olib kelgan yengil tan jarohati muddati qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "6 kungacha",
+     "120 kundan ortiq",
+     "21 kundan ortiq",
+     "6 kundan ortiq, 21 kundan ko‘p emas"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "6 kundan ortiq, ammo 21 kundan ko‘p bo‘lmagan muddat."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "277"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M3-q10",
+   "question_i18n": {
+    "uz": "Tilning umuman yoki yarmining yo‘qligi qanday tan jarohati hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Yengil",
+     "O‘rtacha og‘ir",
+     "Og‘ir",
+     "Baholanmaydi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Tilning yo‘qligi umumiy mehnat qobiliyatining uchdan biridan ortig‘ining yo‘qotilishiga olib kelgani uchun og‘ir."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "281"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M3-q11",
+   "question_i18n": {
+    "uz": "Kaliy va natriy gidroksidlari bilan zaharlanganda letal doza qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "1–2 g",
+     "100–150 g",
+     "500 ml",
+     "10–15 g"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Kaliy va natriy gidroksidlarining letal dozasi 10–15 g, ammoniy gidroksidniki (nashatir spirti) 25–40 ml."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "142"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M3-q12",
+   "question_i18n": {
+    "uz": "Ishqorlar to‘qima oqsillarini suyultirib qaysi nekrozni hosil qiladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Koagulyasion (quruq) nekroz",
+     "Gangrena",
+     "Kollikvatsion nekroz",
+     "Yog‘ nekrozi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Ishqorlar oqsillarni suyultirib ishqor albuminatlarini (kollikvatsion nekroz) hosil qiladi; kislotalarda esa koagulyasion nekroz."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "143"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M3-q13",
+   "question_i18n": {
+    "uz": "Sog‘lom shaxs mavjud bo‘lmagan kasallikni bor deb ko‘rsatmoqda. Bu qanday ataladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Simulyasiya",
+     "Aggravatsiya",
+     "Dissimulyasiya",
+     "A’zobuzarlik"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Simulyasiya — sog‘lom shaxs tomonidan mavjud bo‘lmagan kasallikni bor deb ko‘rsatish."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "285"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M3-q14",
+   "question_i18n": {
+    "uz": "Bemor mavjud travma belgilarini ataylab og‘irroq qilib ko‘rsatmoqda. Bu holat nima deb ataladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Aggravatsiya",
+     "Simulyasiya",
+     "Dissimulyasiya",
+     "Sun’iy kasallik"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Mavjud kasallik yoki travma belgilarini og‘irroq qilib ko‘rsatish aggravatsiya deb ataladi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "285"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M3-q15",
+   "question_i18n": {
+    "uz": "Uchuvchi kasalligini yashirib, xizmatni davom ettirmoqchi. Bu qaysi holat?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Simulyasiya",
+     "Aggravatsiya",
+     "Patologik aggravatsiya",
+     "Dissimulyasiya"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Dissimulyasiya — kasallik yoki patologik holatni yashirish; harbiy bilim yurti abituriyentlari, uchuvchilar, g‘avvoslar, haydovchilarda uchraydi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "286"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M3-q16",
+   "question_i18n": {
+    "uz": "Kuchlanish 500 V gacha bo‘lganda qaysi tok xavfliroq hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "O‘zgarmas tok",
+     "Ikkalasi bir xil",
+     "O‘zgaruvchan tok",
+     "Tok turi ahamiyatsiz"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Kuchlanish 500 V gacha bo‘lganda o‘zgaruvchan tok o‘zgarmasga nisbatan xavfliroq; 500 V da xavflilik tenglashadi, undan yuqorida o‘zgarmas tok xavfliroq."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "197"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M3-q17",
+   "question_i18n": {
+    "uz": "Sirka essensiyasi bilan zaharlanishda taxminiy letal doza qancha?"
+   },
+   "options_i18n": {
+    "uz": [
+     "20–40 ml",
+     "1–2 ml",
+     "100–150 ml",
+     "500 ml"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Letal doza: sulfat va nitrat kislotalar 5–10 ml, xlorid 15–20 ml, sirka essensiyasi 20–40 ml, karbol kislotasi 10–30 ml."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "141"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M3-q18",
+   "question_i18n": {
+    "uz": "To‘qqizliklar qoidasiga ko‘ra katta odamda bosh va bo‘yin tana yuzasining necha foizini tashkil etadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "9 %",
+     "18 %",
+     "1 %",
+     "27 %"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "To‘qqizliklar qoidasiga ko‘ra bosh va bo‘yin tana yuzasining 9 %, tananing old yuzasi 18 % ni tashkil etadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "186"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M3-q19",
+   "question_i18n": {
+    "uz": "Mehnat qobiliyatining shartli turg‘un yo‘qotilishi hisoblanishi uchun sog‘liq buzilishi necha kundan oshishi kerak?"
+   },
+   "options_i18n": {
+    "uz": [
+     "21 kundan ortiq",
+     "6 kundan ortiq",
+     "33 kundan ortiq",
+     "120 kundan ortiq"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Umumiy mehnat qobiliyatining 120 kundan ortiq buzilishi shartli ravishda turg‘un yo‘qotilish hisoblanadi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "280"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-stomatologiya-M3-q20",
+   "question_i18n": {
+    "uz": "Qaysi sog‘liq buzilishi muddati o‘rtacha og‘ir tan jarohatiga kiradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "6 kundan kam",
+     "Aynan 6 kun",
+     "21 kundan ortiq",
+     "Faqat 120 kundan ortiq"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "O‘rtacha og‘ir tan jarohati: sog‘liq 21 kundan ortiq buzilishi yoki mehnat qobiliyatining 10–33 % yo‘qotilishi."
+   },
+   "source": {
+    "author": "G‘iyosov Z.A.",
+    "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+    "page": "277"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "G‘iyosov Z.A.",
+   "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti"
+  }
+ ]
+}

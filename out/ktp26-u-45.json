@@ -66,7 +66,7 @@
           "uncertain": false
         },
         {
-          "text": "Toksikologiya sanoat, qishloq xo‘jaligi, harbiy, oziq-ovqat, maishiy va sud-tibbiy yo‘nalishlarga ega. Sud-tibbiy toksikologiya fan sifatida shakllanishining boshlanishi bo‘lgan.",
+          "text": "Toksikologiya sanoat, qishloq xo‘jaligi, harbiy, oziq-ovqat, maishiy va sud-tibbiy yo‘nalishlarga ega.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -75,7 +75,16 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: boshqa toksikologiya turlari sabab, yordam va profilaktikani o‘rgansa, sud-tibbiy toksikologiya huquqni muhofaza idoralari qo‘ygan vazifalarni hal etadi.",
+          "text": "Sud-tibbiy toksikologiya fan sifatida shakllanishining boshlanishi bo‘lgan.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "132"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Diqqat: boshqa toksikologiya turlari sabab, yordam va profilaktikani o‘rgansa, sud-tibbiy toksikologiya huquqni muhofaza idoralari vazifalarini hal etadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -100,7 +109,7 @@
           "uncertain": false
         },
         {
-          "text": "Ekspertiza ma’lumotlariga ko‘ra aksariyat holat baxtsiz hodisa. Keyingi o‘rinda zaharlanish orqali o‘z-o‘zini o‘ldirish turadi. Zaharlab qotillik kamdan-kam kuzatiladi.",
+          "text": "Ekspertiza ma’lumotlariga ko‘ra aksariyat holat baxtsiz hodisa. Keyingi o‘rinda zaharlanish orqali o‘z-o‘zini o‘ldirish turadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -109,7 +118,7 @@
           "uncertain": false
         },
         {
-          "text": "Qotillik va o‘z-o‘zini o‘ldirishda zaharlanish qasddan, baxtsiz hodisada tasodifan yuz beradi. Ayrim tasodifiy holatlar yatrogen bo‘lib, doza yoki dori almashtirish xatosidan chiqadi.",
+          "text": "Zaharlab qotillik kamdan-kam kuzatiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -118,17 +127,26 @@
           "uncertain": false
         },
         {
-          "text": "Narkotik yoki psixotrop moddadan mastlik o‘z-o‘zini o‘ldirish, baxtsiz hodisa va qotillik qurboni bo‘lish ehtimolini ancha oshiradi.",
+          "text": "Qotillik va o‘z-o‘zini o‘ldirishda zaharlanish qasddan, baxtsiz hodisada tasodifan yuz beradi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
-            "page": "168"
+            "page": "132"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ayrim tasodifiy holatlar yatrogen bo‘lib, doza yoki dori almashtirish xatosidan chiqadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "132"
           },
           "uncertain": false
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 6 daq. Muhokama savoli: yatrogen zaharlanish baxtsiz hodisaga nega kiradi? Mastlik holati o‘limning turini qanday o‘zgartiradi? Doskada: uch turni qasddan/tasodifan ustunlariga bo‘lib chizdiring. Tipik xato: qotillikni eng ko‘p uchraydigan tur deb hisoblash."
+      "teacher_notes": "Vaqt: 6 daq. Muhokama savoli: yatrogen zaharlanish baxtsiz hodisaga nega kiradi? Mastlik holati o‘limning turini qanday o‘zgartiradi? Doskada: uch turni qasddan/tasodifan ustunlariga bo‘lib chizdiring. Tipik xato: qotillikni eng ko‘p uchraydigan tur deb hisoblash. Narkotik yoki psixotrop moddadan mastlik o‘z-o‘zini o‘ldirish, baxtsiz hodisa va qotillik qurboni bo‘lish ehtimolini ancha oshiradi."
     },
     {
       "title": "Zaharlanishga ta’sir etuvchi to‘rt omil",
@@ -162,31 +180,38 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "To‘rt omil guruhi",
-        "nodes": [],
-        "header": [
-          "Omil guruhi",
-          "Misol"
+        "kind": "tree",
+        "root": "To‘rt omil guruhi",
+        "children": [
+          {
+            "label": "Zahar",
+            "items": [
+              "Doza, konsentratsiya",
+              "Eruvchanlik"
+            ]
+          },
+          {
+            "label": "Organizm",
+            "items": [
+              "Vazn, yosh",
+              "Salomatlik"
+            ]
+          },
+          {
+            "label": "Kirish yo‘li",
+            "items": [
+              "Og‘iz, nafas yo‘li",
+              "In’eksiya"
+            ]
+          },
+          {
+            "label": "Tashqi sharoit",
+            "items": [
+              "Yopiq, issiq, nam muhit"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Zahar",
-            "doza, konsentratsiya, eruvchanlik"
-          ],
-          [
-            "Organizm",
-            "vazn, yosh, salomatlik"
-          ],
-          [
-            "Kirish yo‘li",
-            "og‘iz, nafas yo‘li, in’eksiya"
-          ],
-          [
-            "Tashqi sharoit",
-            "yopiq, issiq, nam muhit"
-          ]
-        ]
+        "caption": "Zaharlanishga ta’sir etuvchi omillar"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: nega bir xil moddaning ta’siri har xil bo‘lishi mumkin? 3% sirka kislota va sirka essensiyasi misolida tushuntiring. Doskada 4 omilni kvadrat sxemada chizdiring. Tipik xato: faqat dozaga e’tibor berib, konsentratsiya va agregat holatni unutish."
     },
@@ -298,7 +323,16 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: xato qilish xavfi! Tolerantlik ≠ bog‘liqlik. Giyohvand moddalarda ruhiy va jismoniy bog‘liqlik, ko‘proq dozaga intilish va abstinensiya sindromi ham bo‘ladi.",
+          "text": "Diqqat: xato qilish xavfi! Tolerantlik ≠ bog‘liqlik.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "134"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Giyohvand moddalarda ruhiy va jismoniy bog‘liqlik, ko‘proq dozaga intilish va abstinensiya sindromi ham bo‘ladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -396,36 +430,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Material olish jadvali",
-        "nodes": [],
-        "header": [
-          "Holat",
-          "Material",
-          "Izoh"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Zahar ma’lum (og‘iz)",
+            "text": "Oshqozon massasi, jigar bo‘lagi, butun buyrak"
+          },
+          {
+            "title": "Zahar noma’lum",
+            "text": "Miya 1/3, o‘pka 1/4, jigar 1/3 o‘t bilan"
+          },
+          {
+            "title": "Davomi",
+            "text": "Buyrak siydik bilan, oshqozon massasi, ichak 1 m, qon 100–200 ml; idish alohida"
+          },
+          {
+            "title": "Chuqur chirish",
+            "text": "Ko‘krak-qorin a’zolari aralashmasi — “o‘rta sinama” 1,5–2,0 kg"
+          }
         ],
-        "rows": [
-          [
-            "Zahar ma’lum (og‘iz orqali)",
-            "Oshqozon massasi, jigar bo‘lagi, butun buyrak",
-            "“Uch nuqta” qoidasi"
-          ],
-          [
-            "Zahar noma’lum",
-            "Miya 1/3, o‘pka 1/4, jigar 1/3 o‘t bilan",
-            "Buyrak siydik bilan, oshqozon massasi"
-          ],
-          [
-            "Zahar noma’lum (davomi)",
-            "Ingichka, yo‘g‘on ichak 1 m dan; qon",
-            "Qon 100–200 ml; idishlar alohida"
-          ],
-          [
-            "Chuqur chirish",
-            "Ko‘krak-qorin a’zolari aralashmasi",
-            "“O‘rta sinama” 1,5–2,0 kg"
-          ]
-        ]
+        "caption": "Material olish: “uch nuqta” qoidasi"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: nima uchun og‘iz orqali kirgan zahar uchun oshqozon massasi, jigar va buyrak olinadi? Zahar noma’lum bo‘lsa, nima uchun ko‘p a’zo olinadi? Doskada chizish: “kirgan — ta’sir etgan — chiqqan” uch nuqtasini bitta misolda ko‘rsating. Tipik xato: zahar noma’lum bo‘lgandagi hajmlarni “uch nuqta” qoidasiga aralashtirib yuborish."
     },
@@ -461,27 +485,22 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Toksikodinamika bosqichlari (sirka kislotasi)",
-        "nodes": [],
-        "header": [
-          "Bosqich",
-          "Misol"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Birlamchi toksik",
+            "text": "Og‘iz, qizilo‘ngach, oshqozon kuyishi"
+          },
+          {
+            "title": "Keyingi toksik",
+            "text": "Atsidoz tufayli eritrotsitlar gemolizi"
+          },
+          {
+            "title": "Metatoksik",
+            "text": "Toksik gepatit, toksik nefroz"
+          }
         ],
-        "rows": [
-          [
-            "Birlamchi toksik",
-            "og‘iz, qizilo‘ngach, oshqozon kuyishi"
-          ],
-          [
-            "Keyingi toksik",
-            "atsidoz tufayli eritrotsitlar gemolizi"
-          ],
-          [
-            "Metatoksik",
-            "toksik gepatit, toksik nefroz"
-          ]
-        ]
+        "caption": "Toksikodinamika bosqichlari (sirka kislotasi)"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: nega metanol zaharlanishida narkotik ta’sirdan keyin kardio-, nefro- va neyrotoksik o‘zgarishlar rivojlanadi? Metabolit tushunchasi nimani o‘zgartiradi? Doskada chizing: zahar → jigar → metabolit → organ shikasti zanjiri. Tipik xato: toksikokinetika (zahar bilan nima bo‘ladi) va toksikodinamika (zahar organizmga nima qiladi) tushunchalarini aralashtirish."
     },
@@ -516,7 +535,7 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: xato qilish xavfi — laboratoriya uchun “uch nuqta” qoidasi: zahar kirgan, ta’sir etgan va chiqqan joylardan namuna olinadi (oshqozon massasi, jigar, buyrak).",
+          "text": "Diqqat: laboratoriya uchun “uch nuqta” qoidasi — namuna zahar kirgan, ta’sir etgan va chiqqan joylardan olinadi (oshqozon massasi, jigar, buyrak).",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -560,36 +579,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Zaharlar tasnifi (soddalashtirilgan)",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Ta’sir",
-          "Misol"
+        "kind": "tree",
+        "root": "Zaharlar tasnifi",
+        "children": [
+          {
+            "label": "Mahalliy",
+            "items": [
+              "Kislota, ishqor, yod tindirmasi",
+              "Kontakt joyida nekroz"
+            ]
+          },
+          {
+            "label": "Destruktiv",
+            "items": [
+              "Simob, qo‘rg‘oshin, margimush",
+              "Ichki a’zolarda to‘qima buzilishi"
+            ]
+          },
+          {
+            "label": "Gemotrop",
+            "items": [
+              "Is gazi, arsin, ritsin",
+              "Qonga birlamchi ta’sir"
+            ]
+          },
+          {
+            "label": "Funksional",
+            "items": [
+              "Sianid, kokain, opiat, spirt",
+              "MNT, PNT buzilishi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Mahalliy",
-            "kontakt joyida nekroz",
-            "kislotalar, ishqorlar, yod tindirmasi"
-          ],
-          [
-            "Destruktiv",
-            "ichki a’zolarda to‘qima buzilishi",
-            "simob, qo‘rg‘oshin, margimush"
-          ],
-          [
-            "Gemotrop",
-            "qon xususiyatlariga birlamchi ta’sir",
-            "is gazi, arsin, ritsin"
-          ],
-          [
-            "Funksional",
-            "MNT, PNT faoliyatining buzilishi",
-            "sianidlar, kokain, opiatlar, spirtlar"
-          ]
-        ]
+        "caption": "Zaharlar tasnifi (soddalashtirilgan)"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: nega funksional zaharlarda murdada xos morfologik o‘zgarish topilmasligi mumkin? Mahalliy va destruktiv zaharlar farqi nimada? Doskada chizing: tasnif daraxti (mahalliy / umumiy → destruktiv, gemotrop, funksional). Tipik xato: darslik tasnif jadvalida opiatlar va anasha MNT ni qo‘zg‘atuvchilar qatorida, 6.10-bo‘limda esa sedativ ta’sirli deyilgan — bu farqni talabalarga alohida tushuntiring."
     },
@@ -606,7 +628,7 @@
           "uncertain": false
         },
         {
-          "text": "BMT (Birlashgan Millatlar Tashkiloti) tuzilmasi ma’lumoti: dunyoda 130–190 mln kishi nasha preparatlarini, 30–40 mln kishi amfetamin qatori preparatlarini iste’mol qiladi.",
+          "text": "BMT ma’lumoti: dunyoda 130–190 mln kishi nasha preparatlarini, 30–40 mln kishi amfetamin qatori preparatlarini iste’mol qiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -668,27 +690,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Narkotiklar tasnifi",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Misollar"
+        "kind": "tree",
+        "root": "Narkotiklar tasnifi",
+        "children": [
+          {
+            "label": "Tabiiy",
+            "items": [
+              "Nasha, morfin",
+              "Kodein, kokain"
+            ]
+          },
+          {
+            "label": "Yarim sintetik",
+            "items": [
+              "Geroin, meskalin",
+              "Efedron"
+            ]
+          },
+          {
+            "label": "Sintetik",
+            "items": [
+              "Amfetamin, promedol",
+              "Metadon, sombrevin"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Tabiiy",
-            "Nasha, morfin, kodein, kokain"
-          ],
-          [
-            "Yarim sintetik",
-            "Geroin, meskalin, efedron"
-          ],
-          [
-            "Sintetik",
-            "Amfetamin, promedol, metadon, sombrevin"
-          ]
-        ]
+        "caption": "Kelib chiqishi bo‘yicha"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Geroin nega yarim sintetik guruhga kiradi? 2) Hududiy farqlar (nasha, opiatlar va kokain) profilaktikaga qanday ta’sir qiladi? Doskada: jadvalni chizing va har guruhga yana bittadan misol qo‘shtiring. Tezkor savol: promedol qaysi guruhga kiradi? Tipik xato: morfin va geroinni bir guruhga qo‘yish."
     },
@@ -760,7 +787,16 @@
           "uncertain": false
         },
         {
-          "text": "Savol: DRD (narkotiklar bilan bog‘liq o‘lim, drug related death) ga nimalar kiradi? Javob: katta dozadan zaharlanish, uzoq qabul oqibati, o‘z-o‘zini o‘ldirish, baxtsiz hodisa, qotillik.",
+          "text": "Savol: DRD (narkotiklar bilan bog‘liq o‘lim, drug related death) ga nimalar kiradi?",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "168"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Javob: katta dozadan zaharlanish, uzoq qabul oqibati, o‘z-o‘zini o‘ldirish, baxtsiz hodisa, qotillik.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -856,27 +892,25 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Letal dozalar",
-        "nodes": [],
-        "header": [
-          "Modda / yo‘l",
-          "Letal doza"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Quruq opiy, ichga",
+            "value": "2–5",
+            "unit": "g"
+          },
+          {
+            "label": "Morfin, ichga",
+            "value": "0,2–0,4",
+            "unit": "g"
+          },
+          {
+            "label": "Morfin, parenteral",
+            "value": "0,1–0,2",
+            "unit": "g"
+          }
         ],
-        "rows": [
-          [
-            "Quruq opiy, ichga",
-            "2-5 g"
-          ],
-          [
-            "Morfin, ichga",
-            "0,2-0,4 g"
-          ],
-          [
-            "Morfin, parenteral",
-            "0,1-0,2 g"
-          ]
-        ]
+        "caption": "Letal dozalar"
       },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Qorachiqning torayishi va nafas markazi falaji o‘rtasida qanday bog‘liqlik bor? 2) Morfinning murdada uzoq saqlanishi sud-kimyoviy tekshiruvda qanday ahamiyatga ega? Doskada chizish: klinik rivojlanish zanjiri (ko‘ngil aynishi, qusish, sianoz, qorachiq torayishi, koma, nafas markazi falaji). Tipik xato: parenteral dozani ichga qabul qilinadigan doza bilan adashtirish. Parenteralda letal doza kichikroq (0,1-0,2 g, ichga 0,2-0,4 g)."
     },
@@ -893,7 +927,16 @@
           "uncertain": false
         },
         {
-          "text": "Zaharlanishda qorachiq kengayadi, nistagm, taxikardiya, qon bosimi ko‘tarilishi, hansirash va harakatlar diskoordinatsiyasi bo‘ladi. Gallyusinatsiyali qisqa psixoz mumkin.",
+          "text": "Zaharlanishda qorachiq kengayadi, nistagm, taxikardiya, qon bosimi ko‘tarilishi, hansirash va harakatlar diskoordinatsiyasi bo‘ladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "169"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Gallyusinatsiyali qisqa psixoz mumkin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1041,36 +1084,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Kokain va amfetamin",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Kokain",
-          "Amfetamin"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Kokain",
+            "items": [
+              "Ta’sir kuchliroq",
+              "Ta’sir qisqaroq",
+              "Burundan, vena va teri ostiga",
+              "Psixomotor qo‘zg‘alish, eyforiya"
+            ]
+          },
+          {
+            "title": "Amfetamin",
+            "items": [
+              "Ta’sir kuchsizroq",
+              "Ta’sir davomiyroq",
+              "Asosan og‘iz orqali",
+              "MNTni qo‘zg‘atish"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Ta’sir kuchi",
-            "Kuchliroq",
-            "Kuchsizroq"
-          ],
-          [
-            "Ta’sir davomiyligi",
-            "Qisqaroq",
-            "Davomiyroq"
-          ],
-          [
-            "Qabul qilish yo‘li",
-            "Burundan, vena va teri ostiga",
-            "Asosan og‘iz orqali"
-          ],
-          [
-            "Asosiy ta’sir",
-            "Psixomotor qo‘zg‘alish, eyforiya",
-            "MNTni qo‘zg‘atish"
-          ]
-        ]
+        "caption": "Kokain va amfetamin"
       },
       "teacher_notes": "Vaqt: 6-7 daqiqa. Muhokama: nima uchun amfetaminlar asosan og‘izdan qabul qilinadi? Nega ular yoshlar orasida xavfli hisoblanadi? Doskada chizish: kokain va amfetaminni solishtiruvchi 3 ustunli jadval. Diqqat: xato qilish xavfi — amfetamin ≠ kokain: ta’siri o‘xshash, lekin amfetaminniki kuchsizroq va davomiyroq. Tipik xato: talabalar ekstazini kokainning hosilasi deb o‘ylaydi, aslida u amfetamin qatoriga kiradi."
     },
@@ -1192,17 +1227,30 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Surunkali qabul zanjiri",
-        "nodes": [
-          "Qayta-qayta qabul qilish",
-          "Tolerantlik shakllanadi",
-          "Ruhiy bog‘liqlik: intilish",
-          "Jismoniy bog‘liqlik: doza ortadi",
-          "Qabul yo‘q: abstinensiya"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Qayta-qayta qabul",
+            "text": "Takroriy ta’sir"
+          },
+          {
+            "title": "Tolerantlik",
+            "text": "Organizm o‘rganib qoladi"
+          },
+          {
+            "title": "Ruhiy bog‘liqlik",
+            "text": "Yengib bo‘lmas intilish"
+          },
+          {
+            "title": "Jismoniy bog‘liqlik",
+            "text": "Dozani oshirish zarurati"
+          },
+          {
+            "title": "Abstinensiya",
+            "text": "Qabul to‘xtasa sindrom"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Surunkali qabul zanjiri"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Tolerantlik va bog‘liqlik qanday bog‘langan? 2) Nega abstinensiya sindromi bo‘lganda qabul qilishga intilish kuchayadi? Doskada: 5 bosqichli zanjirni chizdiring va har bosqichga bittadan misol yozdiring. Tipik xato: tolerantlikni (dozaga o‘rganish) abstinensiya sindromi (mahrumlik belgilari) bilan aralashtirish."
     },
@@ -1238,26 +1286,25 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Opiatlarga o‘rganib qolish",
-        "header": [
-          "Ko‘rsatkich",
-          "Ma’lumot"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "O‘rtacha muddat",
+            "value": "25–30",
+            "unit": "kun"
+          },
+          {
+            "label": "Doza ko‘tarilishi",
+            "value": "≤ 10,0",
+            "unit": "g/kun"
+          },
+          {
+            "label": "Abstinensiya",
+            "value": "5–6",
+            "unit": "kun"
+          }
         ],
-        "rows": [
-          [
-            "O‘rganib qolish muddati",
-            "o‘rtacha 25-30 kun"
-          ],
-          [
-            "Doza",
-            "kuniga 10,0 g.gacha ko‘tarilishi mumkin"
-          ],
-          [
-            "Qabul to‘xtatilsa",
-            "abstinensiya 5-6 kun davom etadi"
-          ]
-        ]
+        "caption": "Opiatlarga o‘rganib qolish"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega doza oshib boradi? 2) Morfinning murdada uzoq saqlanishi ekspertiza uchun nimani anglatadi? Doskada: jadvalni chizing va uch ko‘rsatkichni vaqt o‘qida joylashtiring. Tipik xato: 25-30 kunni qat’iy muddat deb o‘ylash – manbada u o‘rtacha ko‘rsatkich."
     },
@@ -1336,36 +1383,40 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "To‘rt guruh",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Mazmuni",
-          "Izoh"
+        "kind": "tree",
+        "root": "Murdadagi o‘zgarishlar",
+        "children": [
+          {
+            "label": "1. Spetsifik",
+            "items": [
+              "Neyrokimyoviy, neyrofiziologik",
+              "Amaliyotda ahamiyati yo‘q"
+            ]
+          },
+          {
+            "label": "2. Qayta qabul",
+            "items": [
+              "Yot moddalarni qayta kiritish izlari",
+              "Kirish yo‘liga bog‘liq"
+            ]
+          },
+          {
+            "label": "3. In’eksiya",
+            "items": [
+              "Yuqumli kasalliklar (gepatit va b.)",
+              "In’eksiya orqali yuqadi"
+            ]
+          },
+          {
+            "label": "4. Turmush tarzi",
+            "items": [
+              "Ozginlik, tuberkulez",
+              "Tatirovkalar",
+              "Bilvosita belgilar"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "1. Spetsifik",
-            "Neyrokimyoviy, neyrofiziologik",
-            "Amaliyotda ahamiyati yo‘q"
-          ],
-          [
-            "2. Qayta qabul",
-            "Yot moddalarni qayta kiritish izlari",
-            "Kirish yo‘liga bog‘liq"
-          ],
-          [
-            "3. In’eksiya",
-            "Yuqumli kasalliklar (gepatit va b.)",
-            "In’eksiya orqali yuqadi"
-          ],
-          [
-            "4. Turmush tarzi",
-            "Ozginlik, tuberkulez, tatirovkalar",
-            "Bilvosita belgilar"
-          ]
-        ]
+        "caption": "To‘rt guruh"
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: nega birinchi guruh sud-tibbiy amaliyotda deyarli qo‘llanmaydi? Nega to‘rt guruh belgilari bilvosita dalil hisoblanadi? Doskada to‘rt guruhli jadvalni talabalar bilan birga chizing. Tipik xato: turmush tarzi belgilarini (masalan, tatirovka) iste’molning qat’iy isboti deb hisoblash."
     },
@@ -1414,6 +1465,257 @@
         "rows": []
       },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: venadagi chandiqlar va ichki a’zolardagi granulemalar o‘rtasida qanday bog‘liqlik bor? Nega eritmaning nosterilligi muhim? Doskada zanjirni (in’eksiya – mahalliy iz – asorat – tarqalish) chizdiring. Tipik xato: granulemalarni faqat o‘pkada bo‘ladi deb o‘ylash; jigarda ham uchraydi."
+    },
+    {
+      "title": "O‘pka: surunkali intoksikatsiya fonida",
+      "bullets": [
+        {
+          "text": "Bronxit va bronxiolit opiy narkomanlarining 27,0% da; ko‘pincha pastki bo‘laklarda bronxospazm va ateleklaz.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "164"
+          }
+        },
+        {
+          "text": "Xarakterli: shishli fibrinoz-gemorragik pnevmoniya — alveolada yetilmagan fibrin, tomirda trombalar; toksik-anafilaktik javob bilan bog‘liq.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "164–165"
+          }
+        },
+        {
+          "text": "Yot jism granulemalari — qo‘lbola opiy preparatlarini in’eksiya qilgan narkomanlarning 60% da (talk, magneziya, soda, oq loy, kraxmal zarralari).",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "166"
+          }
+        },
+        {
+          "text": "Septik endokarditda o‘pka arteriyasi shoxlarida yiringli emboliyalar va pnevmoniyaning destruktiv kechishi; shuningdek tuberkulyoz granulemalar.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "166"
+          }
+        },
+        {
+          "text": "Granulematoz, opportunistik infeksiyalar va endokardit surunkali intoksikatsiya oqibati; tanatogenezga faqat asoratlari orqali, bilvosita taalluqli.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "166–167"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "O‘pka o‘zgarishlari",
+        "children": [
+          {
+            "label": "Bronxit, bronxiolit",
+            "items": [
+              "27,0% opiy narkomanlarida",
+              "Bronxospazm, ateleklaz"
+            ]
+          },
+          {
+            "label": "Fibrinoz-gemorragik",
+            "items": [
+              "Yetilmagan fibrin, trombalar",
+              "Allergen aralashmalar"
+            ]
+          },
+          {
+            "label": "Yot jism granulemalari",
+            "items": [
+              "60% qo‘lbola preparatlarda",
+              "Talk, kraxmal zarralari"
+            ]
+          },
+          {
+            "label": "Septik endokardit",
+            "items": [
+              "Yiringli emboliyalar",
+              "Destruktiv pnevmoniya"
+            ]
+          },
+          {
+            "label": "Tuberkulyoz",
+            "items": [
+              "Kazeozli epiteloid granulemalar"
+            ]
+          }
+        ],
+        "caption": "O‘pka: surunkali intoksikatsiya"
+      },
+      "teacher_notes": "Vaqt: 5 daq. Manba: Pigolkin (red.), 4-bob, 164–167-betlar."
+    },
+    {
+      "title": "Yurak: narkogen kardiomiopatiya belgilari",
+      "bullets": [
+        {
+          "text": "Ateroskleroz kuchsiz bo‘lsa-da, kardioskleroz o‘choqlari bor: koronar arteriyalar stenozi atigi 20,1% da — fibrozda nokoronar mexanizmlar muhim.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "167"
+          }
+        },
+        {
+          "text": "Yurak kameralari kengayishi 32,4% da; yurak massasi 230–460 g (o‘rtacha 274 g) — me’yor chegarasida.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "167"
+          }
+        },
+        {
+          "text": "Dilatatsion kardiomiopatiya 36,4% (Volgograd); taxminan yarmida giyohvand dozasi o‘rtacha spirt mastligi bilan birga.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "167"
+          }
+        },
+        {
+          "text": "Gistologik: qorinchalar fibrillyatsiyasi belgilari 20,7%, kardiomiotsitlar distrofiyasi 59,2%, diffuz kardioskleroz 19,6%, o‘choqli kardioskleroz 33%.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "167–168"
+          }
+        },
+        {
+          "text": "Mikrosirkulyatsiyada staz va sladj, fibrin-leykotsitar trombalar; bakterial endokarditda kuzatuvlarda uch tabaqali qopqoq zararlangan.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "168"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Koronar stenoz",
+            "value": "20,1",
+            "unit": "%"
+          },
+          {
+            "label": "Kameralar kengayishi",
+            "value": "32,4",
+            "unit": "%"
+          },
+          {
+            "label": "Dilatatsion KMP",
+            "value": "36,4",
+            "unit": "%"
+          },
+          {
+            "label": "Miotsit distrofiyasi",
+            "value": "59,2",
+            "unit": "%"
+          },
+          {
+            "label": "Diffuz kardioskleroz",
+            "value": "19,6",
+            "unit": "%"
+          },
+          {
+            "label": "O‘choqli kardioskleroz",
+            "value": "33",
+            "unit": "%"
+          }
+        ],
+        "caption": "Yurak: chastotalar (KMP — kardiomiopatiya)"
+      },
+      "teacher_notes": "Vaqt: 4 daq. Manba: Pigolkin (red.), 4-bob, 167–168-betlar."
+    },
+    {
+      "title": "Jigar: surunkali narkotik intoksikatsiyadagi o‘zgarishlar",
+      "bullets": [
+        {
+          "text": "Jigar odatda kattalashgan (o‘rtacha massasi 1937 ± 116 g), deyarli yarmida 2000 g dan ortiq (gepatomegaliya); tarang kapsula.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "170"
+          }
+        },
+        {
+          "text": "Kesmada to‘laqon, jigarrang-qizil; 33% da mayda sariq o‘choqlar, 14% da diffuz sarg‘ish tus — surunkali gepatit manzarasiga mos.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "170"
+          }
+        },
+        {
+          "text": "Mikroskopda hammada markaziy va oraliq venalar hamda sinusoidlar to‘laqonligi; 4,2% da o‘tkir o‘choqli qon quyilishlar (tez o‘lim).",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "171"
+          }
+        },
+        {
+          "text": "Yog‘ distrofiyasi 70% da; portal yo‘llarda sideofaglar yoki gemosiderin 27,5% da — surunkali gepatitli, narkomaniyasiz bemorlarga xos emas.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "171"
+          }
+        },
+        {
+          "text": "Venalarda fibrinli yoki fibrin-eritrotsitar trombalar mahalliy DVS-sindrom belgisi bo‘lib, tanatogenezda muhim bo‘lishi mumkin.",
+          "source": {
+            "author": "Пиголкин Ю.И. (ред.), Богомолов Д.В., Богомолова И.Н. va boshq. (Pigolkin Yu.I.)",
+            "title": "Морфологическая диагностика наркотических интоксикаций в судебной медицине: руководство для врачей, М.: Медицина (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "171"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Jigar massasi",
+            "value": "1937 ± 116",
+            "unit": "g"
+          },
+          {
+            "label": "Massa > 2000 g",
+            "value": "~ 50",
+            "unit": "% holat"
+          },
+          {
+            "label": "Yog‘ distrofiyasi",
+            "value": "70",
+            "unit": "%"
+          },
+          {
+            "label": "Diffuz mayda tomchili",
+            "value": "36,7",
+            "unit": "%"
+          },
+          {
+            "label": "Gemosiderin/sideofag",
+            "value": "27,5",
+            "unit": "%"
+          },
+          {
+            "label": "O‘tkir qon quyilish",
+            "value": "4,2",
+            "unit": "%"
+          }
+        ],
+        "caption": "Jigar: ko‘rsatkichlar"
+      },
+      "teacher_notes": "Vaqt: 4 daq. Manba: Pigolkin (red.), 4-bob, 170–172-betlar (rus tilida)."
     },
     {
       "title": "Burun va og‘iz orqali qabul qilishdagi o‘zgarishlar",
@@ -1490,31 +1792,37 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Bilvosita belgilar guruhlari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Belgilar"
+        "kind": "tree",
+        "root": "Bilvosita belgilar",
+        "children": [
+          {
+            "label": "Yuqumli kasalliklar",
+            "items": [
+              "OITS, gepatit B, C, D"
+            ]
+          },
+          {
+            "label": "Umumiy holat",
+            "items": [
+              "Ozginlik, tuberkulez"
+            ]
+          },
+          {
+            "label": "Boshqa belgilar",
+            "items": [
+              "Venerik kasalliklar",
+              "Pedikulez, tatirovka"
+            ]
+          },
+          {
+            "label": "Homiladorlik",
+            "items": [
+              "Saqlay olmaslik",
+              "Kichik massali bola"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Yuqumli kasalliklar",
-            "OITS, gepatit B, C, D"
-          ],
-          [
-            "Umumiy holat",
-            "Ozginlik, tuberkulez"
-          ],
-          [
-            "Boshqa belgilar",
-            "Venerik kasalliklar, pedikulez, tatuirovka"
-          ],
-          [
-            "Homiladorlik",
-            "Saqlay olmaslik, kichik massali bola"
-          ]
-        ]
+        "caption": "Bilvosita belgilar guruhlari"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) In’eksiya yo‘li qaysi kasalliklar bilan bog‘liq? 2) Turmush tarzi belgilari nega faqat bilvosita dalil? Doskada: belgilarni to‘rt guruhga ajratib jadval chizdiring. Tipik xato: bu belgilarni moddaning qabul qilinganini isbotlovchi dalil deb hisoblash."
     },
@@ -1668,7 +1976,7 @@
         "rows": [
           [
             "Soxta musbat",
-            "Dori, chirish, kasb, ob’ekt olishdagi xato"
+            "Dori, chirish, kasb, ob’ekt xatosi"
           ],
           [
             "Soxta manfiy",
@@ -1676,7 +1984,7 @@
           ],
           [
             "Soxta manfiy",
-            "Ob’ekt olish xatosi; usul ishlab chiqilmagan"
+            "Namuna xatosi; usul yo‘q"
           ],
           [
             "To‘g‘ri baholash",
@@ -1708,7 +2016,16 @@
           "uncertain": false
         },
         {
-          "text": "Ozg‘inlik turmush tarzi bilan bog‘liq o‘zgarishlarga (4-guruh) kiradi. OITS (orttirilgan immunitet tanqisligi sindromi) va gepatitlar in’eksiya infeksiyalari (3-guruh) hisoblanadi.",
+          "text": "Ozg‘inlik turmush tarzi bilan bog‘liq o‘zgarishlarga (4-guruh) kiradi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "172"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "OITS (orttirilgan immunitet tanqisligi sindromi) va gepatitlar in’eksiya infeksiyalari (3-guruh) hisoblanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1733,7 +2050,7 @@
       "title": "Xulosa va eslab qolish nuqtalari",
       "bullets": [
         {
-          "text": "Narkotiklar bilan bog‘liq o‘lim (DRD, drug related death) bevosita yoki bilvosita bog‘liq o‘limlarni qamraydi: katta doza, uzoq qabul, o‘z-o‘zini o‘ldirish, baxtsiz hodisa, qotillik.",
+          "text": "Narkotiklar bilan bog‘liq o‘lim (DRD): katta doza, uzoq qabul oqibati, o‘z-o‘zini o‘ldirish, baxtsiz hodisa, qotillik — bevosita yoki bilvosita bog‘liq.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1777,12 +2094,12 @@
     {
       "question": "Shaxs giyohvand moddani uzoq qabul qilib, dozani oshirib bordi. Qabulni to‘xtatganda unda og‘ir holat boshlandi. Bu holat nima deb ataladi?",
       "options": [
-        "Idiosinkraziya holati",
         "Abstinensiya sindromi",
+        "Idiosinkraziya holati",
         "Kumulyasiya holati",
         "Yatrogen zaharlanish"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Giyohvand moddalarda ruhiy va jismoniy bog‘liqlik shakllanadi. Shu sababli modda ko‘proq miqdorda qabul qilinadi. Qabul to‘xtatilganda abstinensiya sindromi kuzatiladi. Idiosinkraziya genetik o‘ta sezgirlikdir, kumulyasiya esa to‘planish.",
       "source": {
         "author": "G‘iyosov Z.A.",

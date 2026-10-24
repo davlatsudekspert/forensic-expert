@@ -5,7 +5,7 @@
       "title": "Kirish: mavzu, maqsad va reja",
       "bullets": [
         {
-          "text": "Transport travmasi – harakatdagi transport vositasining tashqi va ichki qismlaridan, undan yiqilishdan olingan jarohatlar majmui. Avtotravma shunday turlardan biri.",
+          "text": "Transport travmasi — harakatdagi transport vositasining qismlaridan va undan yiqilishdan olingan jarohatlar majmui. Avtotravma shunday turlardan biri.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -42,7 +42,7 @@
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: 1) Nima uchun bolalar shifokori transport travmasini bilishi kerak? 2) Nega ekspertizalarning aksariyati avtotravmaga to‘g‘ri keladi? Doskada: dars rejasi (mexanik jarohatlar – o‘tkir va o‘tmas jismlar – balandlikdan yiqilish – avtotravma) sxemasini chizdiring. Tipik xato: transport travmasi va avtotravmani bir xil tushunchа deb hisoblash. Avtotravma transport travmasining bir turi, xolos.",
+      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: 1) Nima uchun bolalar shifokori transport travmasini bilishi kerak? 2) Nega ekspertizalarning aksariyati avtotravmaga to‘g‘ri keladi? Doskada: dars rejasi (mexanik jarohatlar – o‘tkir va o‘tmas jismlar – balandlikdan yiqilish – avtotravma) sxemasini chizdiring. Tipik xato: transport travmasi va avtotravmani bir xil tushuncha deb hisoblash. Avtotravma transport travmasining bir turi, xolos.",
       "tmp": null
     },
     {
@@ -165,31 +165,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ikki arra izlarini solishtirish",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Sirkulyar",
-          "Varaqsimon"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Sirkulyar arra",
+            "items": [
+              "Aylanma harakat",
+              "Chetlari notekis, tishli, mayda laxtakli",
+              "Suyakda nisbatan tekis, yoysimon izlar"
+            ]
+          },
+          {
+            "title": "Varaqsimon arra",
+            "items": [
+              "Oldinga-orqaga harakat",
+              "Chiziqsimon, mayda tishli, shilinishli",
+              "Parallel burtmalar va ariqchalar"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Harakat",
-            "Aylanma harakat",
-            "Oldinga-orqaga harakat"
-          ],
-          [
-            "Yara chetlari",
-            "Notekis, tishli, ba’zan mayda laxtakli",
-            "Chiziqsimon, mayda tishli, shilinishli"
-          ],
-          [
-            "Suyak yuzasi",
-            "Nisbatan tekis, yoysimon izlar",
-            "Parallel burtmalar va ariqchalar"
-          ]
-        ]
+        "caption": "Ikki arra izlari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Arralama o‘raligi nima uchun arra qalinligidan kengroq bo‘ladi? 2) Suyakdagi iz qurolni aniqlashda nega muhim? Doskada: ikki ustunli jadvalni talabalar bilan birga chizing va har katakni to‘ldiring. Tipik xato: sirkulyar arra izi bilan varaqsimon arra izini aralashtirish (yoysimon izlar va parallel ariqchalar o‘rni almashadi)."
     },
@@ -249,7 +244,7 @@
           "uncertain": false
         },
         {
-          "text": "Jahon sog‘liqni saqlash tashkiloti (JSST) ma’lumotiga ko‘ra, yo‘l-transport hodisalarida yiliga 1,2 milliondan ziyod kishi halok bo‘ladi, 50 milliondan ortig‘i jarohat oladi.",
+          "text": "JSST ma’lumotiga ko‘ra, yo‘l-transport hodisalarida yiliga 1,2 milliondan ziyod kishi halok bo‘ladi, 50 milliondan ortig‘i jarohat oladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -302,27 +297,35 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Transport travmasi ulushi",
-        "nodes": [],
-        "header": [
-          "Ekspertiza",
-          "Ulush"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Mexanik o‘lim: transport",
+            "value": "60-65",
+            "unit": "%"
+          },
+          {
+            "label": "Tirik shaxslar: ulush",
+            "value": "20-25",
+            "unit": "%"
+          },
+          {
+            "label": "Avtotravma ulushi",
+            "value": "> 90",
+            "unit": "%"
+          },
+          {
+            "label": "JSST: yiliga halok",
+            "value": "> 1,2",
+            "unit": "mln"
+          },
+          {
+            "label": "JSST: yiliga jarohat",
+            "value": "> 50",
+            "unit": "mln"
+          }
         ],
-        "rows": [
-          [
-            "Mexanik jarohatdan o‘lim holatlari",
-            "60-65%"
-          ],
-          [
-            "Tirik shaxslar ekspertizasi",
-            "20-25%"
-          ],
-          [
-            "Transport travmasi ichida avtotravma",
-            "90% dan ortig‘i"
-          ]
-        ]
+        "caption": "Transport travmasi ulushi"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun o‘lim holatlarida ulush tirik shaxslarnikidan yuqori? 2) Pediatr vrach amaliyotida bu raqamlar nimani anglatadi? Doskada chizish: uch qatorli jadvalni talabalar bilan birga to‘ldiring. Tipik xato: 60-65% va 20-25% ni aralashtirish yoki 90% ni barcha mexanik jarohatlarga nisbatan deb o‘ylash (u faqat transport travmasi ekspertizalari ichidagi avtotravma ulushi)."
     },
@@ -358,17 +361,26 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Turlar sxemasi",
-        "nodes": [
-          "Transport travmasi",
-          "Avto-, mototsikl-, velosiped",
-          "Traktor va rels travmasi",
-          "Aviatsion va suv travmasi",
-          "Murakkab (turli transport)"
+        "kind": "tree",
+        "root": "Transport travmasi turlari",
+        "children": [
+          {
+            "label": "Avto, mototsikl, velosiped"
+          },
+          {
+            "label": "Traktor va rels"
+          },
+          {
+            "label": "Aviatsion va suv"
+          },
+          {
+            "label": "Murakkab",
+            "items": [
+              "Turli transport to‘qnashuvi"
+            ]
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Turlar sxemasi"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Transport vositasi turiga qarab qaysi travmalar ajratiladi? 2) Qaysi hodisa murakkab travma hisoblanadi? Doskada chizish: sxemani chizib, har turga bittadan misol yozdiring. Tipik xato: murakkab travmani bitta transport vositasidagi bir necha jarohat turi bilan chalkashtirish; manbada u turli transport vositalarining to‘qnashuvi sifatida berilgan."
     },
@@ -472,7 +484,7 @@
           "uncertain": false
         },
         {
-          "text": "Savol: JSST (Jahon sog‘liqni saqlash tashkiloti) bo‘yicha yo‘l-transport hodisalarida yiliga qancha odam halok bo‘ladi? Javob: 1,2 milliondan ziyod, 50 milliondan ortiq kishi jarohatlanadi.",
+          "text": "Savol: JSST bo‘yicha yo‘l-transport hodisalarida yiliga qancha odam halok bo‘ladi? Javob: 1,2 milliondan ziyod, 50 milliondan ortiq kishi jarohatlanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -481,7 +493,7 @@
           "uncertain": false
         },
         {
-          "text": "Savol: mexanik jarohatdan o‘limlarning qanchasi transport travmasiga to‘g‘ri keladi? Javob: 60-65%; tirik shaxslar ekspertizasida mexanik jarohatlarning 20-25%i.",
+          "text": "Savol: mexanik jarohatdan o‘limlarning qanchasi transport travmasiga to‘g‘ri keladi? Javob: 60-65%; tirik shaxslarda mexanik jarohatlarning 20-25%i.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -535,36 +547,44 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Matishev tasnifi (1968)",
-        "nodes": [],
-        "header": [
-          "Raqam",
-          "Tur",
-          "Izoh"
+        "kind": "tree",
+        "root": "Avtotravma turlari (1968)",
+        "children": [
+          {
+            "label": "To‘qnashuv"
+          },
+          {
+            "label": "Bosib o‘tish",
+            "items": [
+              "G‘ildirak bosib o‘tadi"
+            ]
+          },
+          {
+            "label": "Ichida shikastlanish",
+            "items": [
+              "Avtomobil ichida"
+            ]
+          },
+          {
+            "label": "Yiqilish",
+            "items": [
+              "Avtomobildan tushib ketish"
+            ]
+          },
+          {
+            "label": "Qisilish",
+            "items": [
+              "Avtomobil va boshqa jism orasida"
+            ]
+          },
+          {
+            "label": "Murakkab",
+            "items": [
+              "2 va undan ortiq tur birga"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "1-2",
-            "To‘qnashuv; g‘ildirak bosib o‘tishi",
-            "Avtomobil tashqaridan ta’sir qiladi"
-          ],
-          [
-            "3-4",
-            "Ichida shikastlanish; yiqilish",
-            "Avtomobil ichida yoki undan tushish"
-          ],
-          [
-            "5",
-            "Qisilish",
-            "Avtomobil va boshqa jism orasida"
-          ],
-          [
-            "6",
-            "Murakkab avtotravma",
-            "Ikki va undan ortiq tur birga"
-          ]
-        ]
+        "caption": "Matishev va hammualliflari"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: (1) Olti turdan qaysi biri eng ko‘p uchraydi? (2) Murakkab avtotravma nimani anglatadi? Doskada: olti turni ketma-ket raqamlab yozing va har biriga bittadan misol keltiring. Tipik xato: murakkab avtotravmani boshqa turdagi transportlar to‘qnashuvi (masalan, mototsikl-avtomobil) bilan chalkashtirish; bu murakkab transport travmasi.",
       "diagram_note": null
@@ -601,36 +621,36 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Jarohat guruhlari va ahamiyati",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Belgisi",
-          "Ahamiyati"
+        "kind": "tree",
+        "root": "Jarohat guruhlari",
+        "children": [
+          {
+            "label": "Spetsifik",
+            "items": [
+              "Avtomobil qismi shakli va rasmi",
+              "Turi, ba’zan konkret avtomobil"
+            ]
+          },
+          {
+            "label": "Xos",
+            "items": [
+              "Muayyan tur yoki fazaga mos"
+            ]
+          },
+          {
+            "label": "Xos bo‘lmagan",
+            "items": [
+              "Spetsifik va xos belgi yo‘q"
+            ]
+          },
+          {
+            "label": "Imitatsion",
+            "items": [
+              "Boshqa hodisadagiga o‘xshaydi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Spetsifik",
-            "Avtomobil qismining shakli va rasmi",
-            "Turi, ba’zan konkret avtomobil"
-          ],
-          [
-            "Xos",
-            "Muayyan tur yoki fazaga mos keladi",
-            "Avtotravma turi yoki fazasi"
-          ],
-          [
-            "Xos bo‘lmagan",
-            "Spetsifik va xos belgilari yo‘q",
-            "Avtotravma haqida xulosa qilib bo‘lmaydi"
-          ],
-          [
-            "Imitatsion",
-            "Boshqa hodisadagi jarohatga o‘xshaydi",
-            "Adashtirishi mumkin"
-          ]
-        ]
+        "caption": "Diagnostik ahamiyatiga ko‘ra"
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Nima uchun jarohatlar diagnostik ahamiyatiga ko‘ra guruhlanadi? 2) Qaysi guruh eng ishonchli ma’lumot beradi? Doskada jadvalni to‘rt guruh bo‘yicha chizdirib, har biriga bittadan misol yozdiring. Tipik xato: talabalar “xos” va “spetsifik” atamalarini aralashtiradi."
     },
@@ -812,16 +832,26 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Fazalar ketma-ketligi",
-        "nodes": [
-          "1. Qismlar bilan zarb",
-          "2. Avtomobilga yiqilish",
-          "3. Uloqtirilish va erga tushish",
-          "4. Erda sirpanish"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Qismlar bilan zarb",
+            "text": "Birlamchi ta’sir"
+          },
+          {
+            "title": "2. Avtomobilga yiqilish",
+            "text": "Yuk avtomobilida bo‘lmaydi"
+          },
+          {
+            "title": "3. Uloqtirilish",
+            "text": "Erga tushish"
+          },
+          {
+            "title": "4. Erda sirpanish",
+            "text": "Parallel shilinmalar"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Fazalar ketma-ketligi"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega yuk avtomobilida ikkinchi faza bo‘lmaydi? 2) Har bir fazada qanday jarohat kutiladi? Doskada: to‘rt fazali zanjirni chizib, ostiga jarohat turini yozdiring. Tipik xato: bolalarda ham barcha to‘rt faza bo‘ladi deb o‘ylash."
     },
@@ -1008,17 +1038,30 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Bosib o‘tishning besh fazasi",
-        "nodes": [
-          "1. G‘ildirak tanaga uriladi",
-          "2. Tananing siljishi",
-          "3. G‘ildirak tanaga chiqadi",
-          "4. G‘ildirak tanadan tushadi",
-          "5. Tananing ikkilamchi siljishi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Urilish",
+            "text": "G‘ildirak tanaga uriladi"
+          },
+          {
+            "title": "2. Siljish",
+            "text": "Tananing siljishi"
+          },
+          {
+            "title": "3. Chiqish",
+            "text": "G‘ildirak tanaga chiqadi"
+          },
+          {
+            "title": "4. Tushish",
+            "text": "G‘ildirak tanadan tushadi"
+          },
+          {
+            "title": "5. Ikkilamchi siljish",
+            "text": "Tananing ikkilamchi siljishi"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Bosib o‘tishning besh fazasi"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) To‘liq va noto‘liq bosib o‘tish nimasi bilan farq qiladi? 2) Nima uchun siqilish eng og‘ir jarohatlarni beradi? Doskada: besh fazani strelkalar bilan zanjir qilib chizing va har faza yoniga asosiy jarohat turini yozing. Tipik xato: piyodaning to‘rt fazasini g‘ildirakning besh fazasi bilan adashtirish."
     },
@@ -1054,36 +1097,31 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Protektor izlari",
-        "nodes": [],
-        "header": [
-          "Iz turi",
-          "Hosil bo‘lishi",
-          "Ko‘rinishi"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Pozitiv iz",
+            "items": [
+              "Protektorning bo‘rtib turgan qismidan",
+              "Shilinma, qontalash"
+            ]
+          },
+          {
+            "title": "Negativ iz",
+            "items": [
+              "Protektorning botiq qismidan",
+              "Faqat qontalash"
+            ]
+          },
+          {
+            "title": "Tana va kiyimda",
+            "items": [
+              "Tanada: jarohat izi yoki qoplanma",
+              "Kiyimda asosan qoplanma (ifloslanish)"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Pozitiv",
-            "Protektorning bo‘rtib turgan qismidan",
-            "Shilinma, qontalash"
-          ],
-          [
-            "Negativ",
-            "Protektorning botiq qismidan",
-            "Faqat qontalash"
-          ],
-          [
-            "Tanada",
-            "Jarohat izi yoki qoplanma iz",
-            "Qontalash, shilinma, ifloslanish"
-          ],
-          [
-            "Kiyimda",
-            "Asosan qoplanma iz",
-            "Ifloslanish shaklida"
-          ]
-        ]
+        "caption": "Protektor izlari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega pozitiv izda shilinma ham bo‘ladi, negativ izda esa faqat qontalash? 2) Nega kiyimdagi iz asosan qoplanma bo‘ladi? Doskada: protektor naqshini chizib, bo‘rtiq va botiq qismlarni ko‘rsating, ularga mos iz turini yozdiring. Tipik xato: pozitiv va negativ izni, jarohat va qoplanma izni aralashtirish."
     },
@@ -1227,16 +1265,26 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Haydovchida shikast fazalari",
-        "nodes": [
-          "Oyoqlar panelga uriladi",
-          "Ko‘krak rulga uriladi",
-          "Bosh tepa qism va oynaga uriladi",
-          "Tana orqaga tashlanadi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Oyoqlar",
+            "text": "Panelga uriladi"
+          },
+          {
+            "title": "2. Ko‘krak",
+            "text": "Rulga uriladi"
+          },
+          {
+            "title": "3. Bosh",
+            "text": "Tepa qism va oynaga uriladi"
+          },
+          {
+            "title": "4. Orqaga tashlanish",
+            "text": "Tana orqaga tashlanadi"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Haydovchida shikast fazalari"
       },
       "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Nega haydovchida jarohatlar tananing old va chap yuzasida joylashadi? 2) Rul izi qaysi fazaga to‘g‘ri keladi? Doskada: 4 fazali zanjirni chizib, har faza yoniga xos jarohatni yozing. Tipik xato: fazalar tartibini aralashtirish yoki rulga urilishni birinchi faza deb o‘ylash (birinchi faza — oyoqlarning panelga urilishi)."
     },
@@ -1286,7 +1334,7 @@
           ],
           [
             "Orqa o‘rindiq",
-            "Kamroq; oldingi o‘rindiq orqasiga urilish"
+            "Kamroq; old o‘rindiq orqasiga urilish"
           ],
           [
             "Kamar, me’yoriy tezlik",
@@ -1332,31 +1380,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ikki hodisani farqlash",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Avtomobildan",
-          "Balandlikdan"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Avtomobildan tushish",
+            "items": [
+              "Erda siljish izlari: parallel shilinmalar",
+              "Bevosita: mashina qismlari va erga tushish",
+              "Bilvosita jarohat hosil bo‘ladi"
+            ]
+          },
+          {
+            "title": "Balandlikdan yiqilish",
+            "items": [
+              "Erda siljishning uchinchi fazasi yo‘q",
+              "Bevosita jarohat erga tushishda",
+              "Bilvosita jarohat xuddi shunday"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Erda siljish izlari",
-            "Parallel yo‘lkasimon shilinmalar bor",
-            "Bunday uchinchi faza yo‘q"
-          ],
-          [
-            "Bevosita jarohat",
-            "Mashina qismlaridan va erga tushishda",
-            "Erga tushishda"
-          ],
-          [
-            "Bilvosita jarohat",
-            "Hosil bo‘ladi",
-            "Xuddi shunday hosil bo‘ladi"
-          ]
-        ]
+        "caption": "Ikki hodisani farqlash"
       },
       "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Qaysi belgi harakatdagi avtomobildan tushishni oddiy balandlikdan yiqilishdan farqlaydi? 2) Boshga yoki oyoqqa tushganda qanday sinishlar kutiladi? Doskada: tana erga tushish variantlari (bosh, ko‘krak, dumba, oyoq) va ularga mos jarohatlar sxemasini chizing. Tipik xato: erda siljish izlarini (yo‘lkasimon shilinmalar) e’tiborsiz qoldirish; aynan shu belgi ikki hodisani ajratadi. Bevosita va bilvosita sinishni aralashtirish ham uchraydi."
     },
@@ -1462,7 +1505,7 @@
           "uncertain": false
         },
         {
-          "text": "Tahlil: avtomobil ichidagi shikastlanishdan keyin tushib ketish odatda murakkab avtotravma bo‘ladi. Tushib ketishda uch faza bor: urilish, erga tushish, erda siljish.",
+          "text": "Tahlil: avtomobil ichidagi shikastlanishdan keyin tushib ketish odatda murakkab avtotravma. Tushib ketishda uch faza: urilish, erga tushish, erda siljish.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1524,38 +1567,100 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Avtotravma va mototsikl travmasi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Avtotravma",
-          "Mototsikl"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Avtotravma",
+            "items": [
+              "Ko‘p uchraydi",
+              "Har holatda emas shikastlanadi",
+              "Erda siljish (4-faza) kuzatiladi",
+              "G‘ildirak bosishi og‘irroq"
+            ]
+          },
+          {
+            "title": "Mototsikl",
+            "items": [
+              "Ancha kam, mavsumiy",
+              "Barcha holatda shikastlanadi",
+              "Erda siljish kuzatilmaydi",
+              "G‘ildirak bosishi yengilroq"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Uchrashi",
-            "Ko‘p uchraydi",
-            "Ancha kam, mavsumiy"
-          ],
-          [
-            "Shikastlanuvchilar",
-            "Har holatda emas",
-            "Barcha holatda shikastlanadi"
-          ],
-          [
-            "Erda siljish (4-faza)",
-            "Kuzatiladi",
-            "Kuzatilmaydi"
-          ],
-          [
-            "G‘ildirak bilan bosish",
-            "Ko‘lami og‘irroq",
-            "Yengilroq (massa kichik)"
-          ]
-        ]
+        "caption": "Avtotravma va mototsikl farqi"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega mototsiklda haydovchi va yo‘lovchi barcha holatlarda shikastlanadi? 2) Nega 4-faza (erda siljish) kuzatilmaydi? Doskada chizish: jadvalni o‘zlari to‘ldirsin va mototsiklning piyodaga zarb nuqtalarini (g‘ildirak, rul, richag, zinapoya) belgilasin. Tipik xato: mototsikl va avtomobil g‘ildiragi bilan bosib o‘tishdagi jarohatlar og‘irligini bir xil deb o‘ylash; mototsiklda massa kichik, jarohat yengilroq. Qo‘shimcha: aravachadagi yo‘lovchida oshiq-boldir va tizza bo‘g‘imlari shikastlanadi."
+    },
+    {
+      "title": "Mototsikl travmasida jarohatlar",
+      "bullets": [
+        {
+          "text": "Mototsikl piyoda bilan to‘qnashganda zarb g‘ildirak, rul, richag va zinapoyadan tushadi: oyoq, tos, qorinda shilinma, qontalash, lat-yirtma yara.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "69"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Avtotravmadan farqli, mototsikl turg‘un emas, shuning uchun haydovchi va yo‘lovchi barcha holatda shikastlanishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "69"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xos jarohatlar: boldir va sonning old va ichki yuzalarida yoysimon shilinma, lat yara, boldir suyaklarining (ba’zan son) sinishi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "70"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mototsikl g‘ildiragi bilan bosib o‘tish kam uchraydi; jarohat avtomobilnikiga o‘xshash, lekin massa kichik bo‘lgani uchun yengilroq.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "70"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Mototsikl travmasi turlari",
+        "children": [
+          {
+            "label": "Piyoda bilan to‘qnashuv"
+          },
+          {
+            "label": "G‘ildirak bosib o‘tishi"
+          },
+          {
+            "label": "Mototsikldan yiqilish"
+          },
+          {
+            "label": "Boshqa jism bilan zarb",
+            "items": [
+              "Transport yoki harakatsiz jism"
+            ]
+          },
+          {
+            "label": "Murakkab",
+            "items": [
+              "2 va undan ortiq tur birga"
+            ]
+          }
+        ],
+        "caption": "Beshta tur (G‘iyosov)"
+      },
+      "teacher_notes": "Avtomobil bilan to‘qnashuvning 4-fazasi (erda siljish) mototsiklda kuzatilmaydi."
     },
     {
       "title": "Rels travmasi: bosilish va shilinish yo‘lkalari",
@@ -1635,36 +1740,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "G‘ildirakli va o‘rmalovchi traktor",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "G‘ildirakli",
-          "O‘rmalovchi"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "G‘ildirakli",
+            "items": [
+              "To‘qnashuvda 2-faza kuzatilmaydi",
+              "Ko‘krak-qorin, ichki a’zolar",
+              "Protektor izi avtodan farq qiladi"
+            ]
+          },
+          {
+            "title": "O‘rmalovchi",
+            "items": [
+              "To‘qnashuvda 4-faza bo‘lmaydi",
+              "Mahalliy jarohat; bilvosita yo‘q",
+              "Zanjir tortib oladi, kiyimda trak izi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "To‘qnashuvdagi fazalar",
-            "2-faza kuzatilmaydi",
-            "4-faza bo‘lmaydi"
-          ],
-          [
-            "To‘qnashuv jarohati",
-            "Ko‘krak-qorin, ichki a’zolar",
-            "Mahalliy; bilvosita yo‘q"
-          ],
-          [
-            "Bosib o‘tish",
-            "Massa va g‘ildirak o‘lchamiga bog‘liq",
-            "2-faza yo‘q; zanjir tortib oladi"
-          ],
-          [
-            "Iz",
-            "Protektor izi avtodan farq qiladi",
-            "Kiyimda zanjir traklariga mos iz"
-          ]
-        ]
+        "caption": "Traktor turlari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) O‘rmalovchi traktorda nima uchun bilvosita jarohatlar hosil bo‘lmaydi? 2) Zanjir tishlari izi ekspertizada nimani ko‘rsatadi? Doskada chizish: zanjir traklari va ularning tayanch yuzasida perpendikulyar tishlarni sxematik chizing. Tipik xato: traktor travmasini avtotravma bilan butunlay bir xil deb hisoblash; protektor izlari va fazalar sonida farq bor. Qo‘shimcha: tishlarning solishtirma ta’siri alohida olingan traklarga nisbatan bir necha o‘n barobar katta, shu sababli jiddiy jarohatlar yuzaga keladi."
     },
@@ -1714,7 +1809,7 @@
           ],
           [
             "Qarama-qarshi havo oqimi",
-            "Yuz to‘qimalarining ajralishi, barotravma"
+            "Yuz to‘qimasi ajralishi, barotravma"
           ],
           [
             "Portlash dekompressiyasi",
@@ -1729,6 +1824,149 @@
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nima uchun aviatravmada bir nechta omil birga ta’sir qiladi? 2) Identifikatsiya nega ayniqsa muhim? Doskada: to‘rt tur va to‘rt omil jadvalini chizdiring. Tipik xato: portlash dekompressiyasi (8 km dan yuqori) bilan balandlik dekompressiyasini (19 km va undan yuqori) aralashtirish."
     },
     {
+      "title": "Aviatravma: shikastlovchi omillar",
+      "bullets": [
+        {
+          "text": "Aviatravmada ko‘plab omillar bir vaqtda yoki ketma-ket ta’sir qiladi: dinamik va zarb o‘ta kuch, havo oqimi, dekompressiya, portlash, termik omil.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "76"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Havo oqimi 800 km/soat va undan katta tezlikda qattiq jism kabi ta’sir etadi: og‘iz burchaklari yorilishi, yuz yumshoq to‘qimalarining ajralishi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "76-77"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Portlash dekompressiyasi 8 km dan baland germetizatsiya buzilganda, balandlik dekompressiyasi 19 km va undan yuqorida kuzatiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "77"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Termik ta’sir yo‘lovchilarda ko‘proq (yonilg‘i baklari fyuzelyaj o‘rtasida); toksik omil — is gazi, formaldegid, vinilxlorid.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "78"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Havo oqimi: qattiq jism",
+            "value": "≥ 800",
+            "unit": "km/soat"
+          },
+          {
+            "label": "Portlash dekomp.",
+            "value": "> 8",
+            "unit": "km"
+          },
+          {
+            "label": "Balandlik dekomp.",
+            "value": "≥ 19",
+            "unit": "km"
+          },
+          {
+            "label": "Portlashda sochilish",
+            "value": "500",
+            "unit": "m gacha"
+          },
+          {
+            "label": "Turboreaktiv gaz",
+            "value": "500-600",
+            "unit": "°C"
+          }
+        ],
+        "caption": "Aviatravma ko‘rsatkichlari"
+      },
+      "teacher_notes": "Portlash erda yuz berganda tana bo‘laklari 500 m gacha radiusda sochiladi."
+    },
+    {
+      "title": "Aviatravma: ekspertiza vazifalari",
+      "bullets": [
+        {
+          "text": "Aviatravma aksariyat holatda favqulodda hodisa bo‘lib, turli mutaxassislar guruhi tomonidan belgilangan tartibda sinchiklab tekshiriladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "78"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Murdalar va qoldiqlar bo‘yicha shaxslarni, ayniqsa ekipaj a’zolarini identifikatsiya qilish muhim ahamiyatga ega.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "78"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Uchuvchi murdasida jarohat paytidagi tana qismlari holati, sog‘liq, toksik moddalar va o‘lim sababi chuqur tekshiriladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "78"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ekspertlar uchuvchining tibbiy hujjatlarini ham o‘rganadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
+            "page": "78"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Uchuvchi ekspertizasi",
+        "children": [
+          {
+            "label": "Tana qismlari holati",
+            "items": [
+              "Jarohat paytida"
+            ]
+          },
+          {
+            "label": "Sog‘liq holati"
+          },
+          {
+            "label": "Toksik moddalar",
+            "items": [
+              "Organizmda mavjudligi"
+            ]
+          },
+          {
+            "label": "O‘lim sababi"
+          },
+          {
+            "label": "Tibbiy hujjatlar"
+          }
+        ],
+        "caption": "Ekspertiza savollari"
+      },
+      "teacher_notes": "Identifikatsiya: ayniqsa ekipaj a’zolari uchun."
+    },
+    {
       "title": "Voqea tahlili va tezkor savol: rels va aviatravma",
       "bullets": [
         {
@@ -1741,7 +1979,7 @@
           "uncertain": false
         },
         {
-          "text": "Tezkor savol: “T” shilinma (“chimchi” belgisi) tananing qaysi tomonida bo‘ladi? Javob: g‘ildirakka qaragan, relslar oralig‘i tomonda, g‘ildirak chiqayotgan sohada.",
+          "text": "Tezkor savol: “T” shilinma (“chimchi”) qaysi tomonda? Javob: g‘ildirakka qaragan, relslar oralig‘i tomonda, g‘ildirak chiqayotgan sohada.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -1775,7 +2013,7 @@
       "title": "Xulosa va asosiy xulosalar",
       "bullets": [
         {
-          "text": "Transport travmasi avtomobil, mototsikl, velosiped, traktor, rels, aviatsion va suv transporti turlariga bo‘linadi. Ekspertizalarning 90% dan ortig‘ini avtotravma tashkil etadi.",
+          "text": "Transport travmasi avtomobil, mototsikl, velosiped, traktor, rels, aviatsion va suv turlariga bo‘linadi. Ekspertizalarning 90%idan ortig‘i avtotravma.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Sud tibbiyoti: darslik, Toshkent: Global Books nashriyoti",
@@ -2061,10 +2299,10 @@
       "options": [
         "Tepa va o‘rta qobirg‘alarning sinishi",
         "Oyoq kafti suyaklarining bevosita sinishi",
-        "Tos suyaklari va bel umurtqalarining sinishi",
-        "Ikkinchi bo‘yin umurtqasi tishsimon o‘simtasi sinishi"
+        "Ikkinchi bo‘yin umurtqasi tishsimon o‘simtasi sinishi",
+        "Tos suyaklari va bel umurtqalarining sinishi"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Dumba bilan erga tushganda tos suyaklari sinadi va bel umurtqalari tanasi kompression sinadi. Ko‘krak bilan tushganda tepa va o‘rta qobirg‘alar sinadi. Oyoqlar bilan tushganda oyoq kafti suyaklari bevosita sinadi. Bo‘yin umurtqasi tishsimon o‘simtasi sinishi esa boshi bilan tushganda uchraydi.",
       "source": {
         "author": "G‘iyosov Z.A.",

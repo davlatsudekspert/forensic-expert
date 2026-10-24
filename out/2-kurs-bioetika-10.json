@@ -1,2187 +1,2433 @@
 {
-  "topic": "Xalqaro jamoat tashkilotlari (Qizil Xoch, Chegara bilmas shifokorlar va b.) va O‘zbekiston sog‘liqni saqlash tizimini takomillashtirish qarorlari (A2)",
-  "slides": [
+ "topic": "Xalqaro jamoat tashkilotlari (Qizil Xoch, Chegara bilmas shifokorlar va b.) va O‘zbekiston sog‘liqni saqlash tizimini takomillashtirish qarorlari (A2)",
+ "slides": [
+  {
+   "title": "Kirish: mavzu, maqsad va manbalar",
+   "bullets": [
     {
-      "title": "Kirish: mavzu, maqsad va manbalar",
-      "bullets": [
-        {
-          "text": "Bemor huquqlari uchun harakat XX asrning 70-yillarida boshlandi. 1972-yilda Amerika kasalxonalar assotsiatsiyasi “Bemor huquqlari to‘g‘risida Bill”ni qabul qildi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "40"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Jahon tibbiyot assotsiatsiyasi (JTA) 1981-yilda Lissabon deklaratsiyasini qabul qildi, 1995-yilda unga o‘zgartishlar kiritildi. Unda bemor huquqlariga oid 11 ta tamoyil bor.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "40"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "O‘zbekistonda “Fuqarolar sog‘ligini saqlash to‘g‘risida”gi qonun 1996-yil 29-avgustda qabul qilingan va shu yilning 14-sentabridan kuchga kirgan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "42"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ma’ruza rejasi: xalqaro tashkilotlar hujjatlari, Konstitutsiya, bemor va vrach huquqlari, etika qo‘mitalari. Maqsad: ularni O‘zbekiston qonunchiligi bilan bog‘lash.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "38-50; 151-158"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: Nega bemor huquqlari aynan XX asr o‘rtasida muhim masalaga aylandi? Bemor huquqlari qonunga qanday o‘tadi? Doskada: 1972 → 1981 → 1995 → 1996 vaqt chizig‘ini chizdiring. Eslatma: berilgan manbada Qizil Xoch va Chegara bilmas shifokorlar haqida ma’lumot yo‘q, shuning uchun ular haqida raqam yoki fakt keltirilmaydi. Ma’ruzada manbadagi tashkilotlar (JTA, JSST, YUNESKO, Yevropa Kengashi) olinadi. Tipik xato: talabalar Qizil Xoch va Chegara bilmas shifokorlarni qo‘llanmada bor deb o‘ylaydi."
-    },
-    {
-      "title": "Xalqaro tashkilotlar va ularning hujjatlari",
-      "bullets": [
-        {
-          "text": "JTA hujjatlari vrach burchini (Jeneva, etika kodeksi) va bemor huquqlarini (Lissabon) belgilaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "40; 46-47"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "JSST 2000-yilda biotibbiy tekshiruvlar etika qo‘mitalari uchun qo‘llanma tayyorlagan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "YUNESKO qo‘llanmasi bioetika qo‘mitalarining to‘rt turini ajratadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "152"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Tashkilotlar va hujjatlar",
-        "nodes": [],
-        "header": [
-          "Tashkilot",
-          "Hujjat",
-          "Mazmuni"
-        ],
-        "rows": [
-          [
-            "JTA",
-            "Jeneva deklaratsiyasi, Tibbiy etika kodeksi",
-            "Vrach majburiyatlari, shifokor siri"
-          ],
-          [
-            "JTA",
-            "Lissabon (1981), Xelsinki (1975)",
-            "Bemor huquqlari; maxsus qo‘mitalar"
-          ],
-          [
-            "JSST",
-            "Qo‘llanma (2000)",
-            "Biotibbiy tekshiruv etika qo‘mitalari"
-          ],
-          [
-            "YUNESKO; Yevropa Kengashi",
-            "Bioetika qo‘mitalari, komissiyalari",
-            "YUNESKO qo‘llanmasida 4 tur"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: Jeneva deklaratsiyasi va Lissabon deklaratsiyasi nima bilan farq qiladi? Etika qo‘mitalari uchun xalqaro qo‘llanma nega kerak? Doskada: jadvalni o‘zlari chizib, har hujjatga bitta kalit so‘z yozsinlar. Diqqat: Jeneva ≠ Lissabon. Jeneva vrach qasamyodi, Lissabon bemor huquqlari. Tipik xato: Xelsinki deklaratsiyasini bemor huquqlari hujjati deb aytish. Manbada u maxsus qo‘mitalar tahririda tilga olingan."
-    },
-    {
-      "title": "Konstitutsiya: tenglik va daxlsizlik (18–20-moddalar)",
-      "bullets": [
-        {
-          "text": "Konstitutsiyaning ikkinchi bo‘limi inson va fuqarolarning asosiy huquq, erkinlik va burchlariga bag‘ishlangan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "38"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Huquq, majburiyat va javobgarlik bir-biridan ajralmas tushunchalar sifatida qabul qilinishi lozim.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "40"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Fuqarolar o‘z huquqlarini sud orqali himoya qilish huquqiga ega (44-modda).",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "39"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "18–20-moddalar mazmuni",
-        "nodes": [],
-        "header": [
-          "Modda",
-          "Qoida",
-          "Izoh"
-        ],
-        "rows": [
-          [
-            "18",
-            "Qonun oldida tenglik",
-            "Jinsi, irqi, tilidan qat’i nazar"
-          ],
-          [
-            "19",
-            "Huquq faqat sud qarori bilan cheklanadi",
-            "Qonuniy huquqlar daxlsiz"
-          ],
-          [
-            "20",
-            "Huquqdan foydalanish chegarasi",
-            "Boshqalar manfaatiga zarar yetkazmaslik"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: Bemorning huquqi shifokor yoki jamiyat manfaatiga zid kelsa nima bo‘ladi? 19-modda tibbiyotda qanday ma’no beradi? Doskada: ‘huquq – burch – javobgarlik’ uchburchagini chizdiring. Tipik xato: 18-moddadagi tenglikni imtiyozlar umuman bo‘lmasligi deb tushunish. Manbada imtiyozlar faqat qonun bilan belgilanishi aytilgan. Tezkor savol: huquqni cheklash uchun qanday hujjat kerak?"
-    },
-    {
-      "title": "Yashash huquqi va 26-modda: uch tezis",
-      "bullets": [
-        {
-          "text": "24-modda: yashash huquqi ajralmas; 25-modda: erkinlik va shaxsiy daxlsizlik huquqi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "38"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "27-modda: sha’n-obro‘ himoyasi, shaxsiy hayotga aralashmaslik va turar joy daxlsizligi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "38"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "26-modda uch qismli (jadvalga qarang); qiynoq tibbiyotga xos emas, ammo ehtimoli istisno etilmaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "38-39"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "26-modda: uch qism",
-        "nodes": [],
-        "header": [
-          "Qism",
-          "Mazmuni"
-        ],
-        "rows": [
-          [
-            "1-qism",
-            "Aybsizlik prezumpsiyasi"
-          ],
-          [
-            "2-qism",
-            "Qiynoq va qadrni kamsitish taqiqi"
-          ],
-          [
-            "3-qism",
-            "Roziliksiz tibbiy/ilmiy tajriba taqiqi"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega rozilikka oid qism aynan tibbiyot uchun muhim? 2) Aybsizlik prezumpsiyasi shifokorga qanday aloqador? Doskada: 24, 25, 27-moddalarni va 26-modda uch qismini ustun shaklida chizdiring. Tipik xato: 26-moddaning qismlarini va moddalarning raqamlarini aralashtirish."
-    },
-    {
-      "title": "Tezkor savol: Konstitutsiya moddalari",
-      "bullets": [
-        {
-          "text": "Savol 1: yashash huquqi qaysi moddada? Shaxsiy daxlsizlik huquqi-chi? (Javob: 24-modda va 25-modda.)",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "38"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Savol 2: sha’n-obro‘ himoyasi va turar joy daxlsizligi qaysi moddada kafolatlangan? (Javob: 27-modda.)",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "38"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Savol 3: aybsizlik prezumpsiyasi 26-moddaning qaysi qismida? Rozilikka oid qism-chi? (Javob: birinchi va uchinchi qism.)",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "38-39"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Diqqat: xato qilish xavfi — 26-modda qismlarini aralashtirmang: aybsizlik ≠ qiynoq taqiqi ≠ tajribaga rozilik.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "38-39"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Savollarni og‘zaki yoki kartochkalar bilan so‘rang, talabalar juftlikda javob beradi. Muhokama: qaysi moddani eslab qolish qiyin va nega? Doskada: modda raqami – mazmun juftliklarini yozdiring. Tipik xato: 24 va 25-moddalarni bir-biriga almashtirib yuborish."
-    },
-    {
-      "title": "Malakali tibbiy xizmat huquqi va davlat kafolati",
-      "bullets": [
-        {
-          "text": "40-modda fuqarolarning malakali tibbiy xizmatdan foydalanish huquqini kafolatlaydi; tibbiy yordamning barcha turlaridan malakali bahramand bo‘lish nazarda tutiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "39"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "43-modda: mustahkamlangan huquq va erkinliklarni davlat ta’minlaydi. Bu davlatning burchi; fuqarolarning ham davlat oldida burchlari bor.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "39"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "44-modda: huquqni sud orqali himoya qilish va davlat organlari, mansabdorlar, jamoat birlashmalarining g‘ayriqonuniy harakati ustidan sudga shikoyat qilish kafolatlangan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "39"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "45-modda: voyaga yetmaganlar, mehnatga layoqatsizlar va yolg‘iz keksalarning huquqlari davlat himoyasida.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "39"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) 40-modda bemor huquqlari bilan qanday bog‘lanadi? 2) Bemor huquqi buzilsa, 44-modda qanday yo‘l beradi? Doskada: 40, 43, 44, 45-moddalarni ’huquq – kafolat – himoya’ zanjiri sifatida chizdiring. Tipik xato: 43-modda (davlat ta’minoti) bilan 44-moddani (sudga shikoyat) almashtirish."
-    },
-    {
-      "title": "Fuqarolar burchlari: huquq, majburiyat, javobgarlik",
-      "bullets": [
-        {
-          "text": "Konstitutsiyaning XI bobi fuqarolarning burchlariga bag‘ishlangan. Huquqqa ega bo‘lish ma’lum burch va majburiyatlarni ham taqozo etadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "39"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Fuqarolar Konstitutsiya va qonunlarga rioya etishi, boshqalarning huquqi, sha’ni va qadr-qimmatini hurmat qilishi, soliq va mahalliy yig‘imlarni to‘lashi shart.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "39-40"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Fuqarolar O‘zbekistonni himoya qilishi, xalqning tarixiy, ma’naviy va madaniy merosini asrashi, tabiiy muhitga ehtiyotkor bo‘lishi lozim.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "40"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Burchga rioya qilinmasa, javobgarlik kelib chiqadi. Shu sabab huquq, majburiyat va javobgarlik uzviy, ajralmas tushunchalar sifatida qabul qilinadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "40"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nima uchun huquqni burchsiz tasavvur qilib bo‘lmaydi? 2) Tibbiyot xodimi va bemor burchlariga misol keltiring. Doskada: uchburchak chizing (huquq – majburiyat – javobgarlik) va o‘qlar bilan bog‘lang. Tipik xato: talabalar faqat huquqlarni sanab, burchlarni va javobgarlikni unutadi."
-    },
-    {
-      "title": "Voqea tahlili: rozilikka asoslangan tajriba",
-      "bullets": [
-        {
-          "text": "Vaziyat: tadqiqotchi fuqarodan so‘ramasdan, uning roziligisiz o‘zida tibbiy yoki ilmiy tajriba o‘tkazmoqda.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "39"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Savol: bu holat Konstitutsiyaning qaysi normasini buzadi va fuqaro o‘z huquqini qayerda himoya qila oladi?",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "39"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Maslahat: Konstitutsiyaning 26-moddasida uchta tezis bor – aybsizlik prezumpsiyasi, qiynoq va zo‘ravonlikning taqiqi hamda rozilik talabi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "38-39"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Fuqaro o‘z huquqini sud orqali himoya qilishi va noqonuniy harakatlar ustidan sudga shikoyat qilishi mumkin (44-modda).",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "39"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. To‘g‘ri javob: 26-moddaning uchinchi qismi buziladi – fuqaroning roziligisiz unda tibbiy yoki ilmiy tajriba o‘tkazish taqiqlangan. Muhokama: 1) Nega rozilik ixtiyoriy va ma’lumotli bo‘lishi kerak? 2) Shikoyat qaysi yo‘llar bilan mumkin? Doskada: 26-moddaning uch qismini ustun shaklida yozing. Tipik xato: 26-moddani faqat aybsizlik prezumpsiyasi deb tushunish."
-    },
-    {
-      "title": "Bemor huquqlari harakati tarixi",
-      "bullets": [
-        {
-          "text": "XX asrning 70-yillarida dunyoning turli mamlakatlarida bemor huquqlari uchun harakat boshlandi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "40"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Lissabon deklaratsiyasida bemor huquqlariga oid 11 ta tamoyil keltirilgan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "40"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Deklaratsiya aksariyat mamlakatlar, jumladan O‘zbekiston qonunchiligida inobatga olingan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "42"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Bemor huquqlari vaqt chizig‘i",
-        "nodes": [],
-        "header": [
-          "Sana",
-          "Voqea",
-          "Kim"
-        ],
-        "rows": [
-          [
-            "XX asr 70-yillari",
-            "Bemor huquqlari harakati boshlandi",
-            "Turli mamlakatlar"
-          ],
-          [
-            "1972-yil",
-            "Bemor huquqlari to‘g‘risida Bill",
-            "AQSh kasalxonalar assotsiatsiyasi"
-          ],
-          [
-            "1981-yil",
-            "Lissabon deklaratsiyasi qabul qilindi",
-            "Jahon tibbiyot assotsiatsiyasi"
-          ],
-          [
-            "1995-yil",
-            "Deklaratsiyaga o‘zgartish kiritildi",
-            "Jahon tibbiyot assotsiatsiyasi"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nima uchun harakat aynan XX asr o‘rtalarida kuchaydi? 2) Xalqaro deklaratsiya milliy qonunga qanday ta’sir qiladi? Doskada: to‘rt sanani vaqt o‘qida chizing. Tipik xato: 1972-yildagi AQSh hujjati bilan 1981-yildagi Lissabon deklaratsiyasini adashtirish."
-    },
-    {
-      "title": "Lissabon deklaratsiyasi: 1–5-tamoyillar",
-      "bullets": [
-        {
-          "text": "Jahon tibbiyot assotsiatsiyasi deklaratsiyani 1981-yilda qabul qilgan, 1995-yilda to‘ldirgan; unda 11 tamoyil bor.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "40"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Hushsiz bemorda qonuniy vakil bo‘lmasa, qaror bemorning manfaatidan kelib chiqib qabul qilinadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "41"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Muomalaga layoqatsiz bemor ham qarorda imkon qadar bevosita ishtirok etishi lozim.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "41"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "1–5-tamoyillar qisqacha",
-        "nodes": [],
-        "header": [
-          "Tamoyil",
-          "Mazmuni",
-          "Qaror egasi"
-        ],
-        "rows": [
-          [
-            "1. Sifatli xizmat",
-            "Cheklangan resursda tanlov tibbiy mezonda",
-            "Barcha bemorlar, kamsitishsiz"
-          ],
-          [
-            "2. Erkin tanlov",
-            "Shifokor va muassasani tanlash, maslahat",
-            "Bemorning o‘zi"
-          ],
-          [
-            "3. O‘zi belgilash",
-            "Ma’lumot olib, mustaqil qaror qabul qiladi",
-            "Bemorning o‘zi"
-          ],
-          [
-            "4–5. Hushsiz / layoqatsiz",
-            "Rozilik qonuniy vakildan olinadi",
-            "Qonuniy vakil yoki manfaat"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Resurs cheklangan bo‘lsa, nega faqat tibbiy mezon qo‘llanadi? 2) Hushsiz bemorda kim rozilik beradi? Doskada: 1–5-tamoyillar jadvalini talabalar bilan birga chizdiring. Tipik xato: 4-tamoyilni (hushsiz bemor) 5-tamoyil (muomalaga layoqatsiz bemor) bilan aralashtirish."
-    },
-    {
-      "title": "Lissabon deklaratsiyasi: 6–8-tamoyillar",
-      "bullets": [
-        {
-          "text": "Bemorning xohishiga qarshi muolaja faqat tibbiy etika tamoyillariga mos holda, qonunda belgilangan istisno hollarda o‘tkaziladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "41"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bemor sog‘lig‘i va tibbiy hujjatlari haqida tushunarli, mahalliy madaniyatni hisobga olgan ma’lumot oladi; ma’lumot beriladigan shaxsni o‘zi tanlaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "41"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Istisno: hayoti va sog‘lig‘iga jiddiy xavf bo‘lishiga yetarli asos bo‘lsa, ma’lumot yashirilishi mumkin. Diqqat: bu band qonun normalariga to‘liq mos kelmaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "41, 45"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Salomatlik holati, tashxis, davolash, prognoz va shaxsga oid ma’lumotlar bemor o‘limidan keyin ham sir saqlanadi. Istisno: avlodlarning irsiy kasallik xavfi haqidagi ma’lumoti.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "41-42"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Qanday holatda ma’lumotni bemordan yashirish asosli bo‘ladi? 2) Nega sir o‘limdan keyin ham saqlanadi? Doskada: ‘qoida → istisno’ juftligini 7- va 8-tamoyil uchun yozdiring. Tipik xato: istisnoni umumiy qoida deb o‘ylash, ya’ni ma’lumotni bemordan doim yashirish mumkin deb hisoblash."
-    },
-    {
-      "title": "Lissabon deklaratsiyasi: 9–11-tamoyillar",
-      "bullets": [
-        {
-          "text": "Har kim sog‘lom turmush tarzi, tibbiy xizmat, kasalliklarning oldini olish va erta aniqlash bo‘yicha sanitariya ma’rifatidan foydalanishga haqli.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "42"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Yordam jarayonida inson sha’ni, qadr-qimmati va shaxsiy hayot daxlsizligi hurmat qilinadi. Bemor azobini yengillashtirish huquqiga ega.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "42"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Davolab bo‘lmaydigan kasallikda bemor hayotdan munosib va imkon qadar og‘riqsiz ketish huquqiga ega. Diniy qo‘llab-quvvatlashni olishi yoki rad etishi mumkin.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "42"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Lissabon deklaratsiyasi ko‘p mamlakatlarda, jumladan O‘zbekistonda sog‘liqni saqlash qonun hujjatlarida inobatga olingan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "42"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Og‘riqsiz munosib ketish huquqi shifokordan nimani talab qiladi? 2) Diniy qo‘llab-quvvatlashni rad etish huquqi nima uchun muhim? Doskada: 11 tamoyilning raqam va qisqa nomlarini ketma-ket yozdiring. Tipik xato: 10-tamoyilni (munosib ketish huquqi) evtanaziya huquqi deb tushunish; kitobda bunday gap yo‘q."
-    },
-    {
-      "title": "Tezkor savol: Lissabon deklaratsiyasi",
-      "bullets": [
-        {
-          "text": "Savol: Lissabon deklaratsiyasini kim qabul qilgan? Javob: Jahon tibbiyot assotsiatsiyasi, 1981-yilda; 1995-yilda unga o‘zgartirishlar kiritilgan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "40"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Savol: nechta tamoyil bor? Javob: 11 ta, sifatli xizmat olish huquqidan tortib diniy qo‘llab-quvvatlash huquqigacha.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "40-42"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Diqqat: 4-tamoyil (hushsiz bemor) ≠ 5-tamoyil (muomalaga loyiq bo‘lmagan bemor, masalan, balog‘atga yetmagan).",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "41"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "5-tamoyilda rozilikni qonuniy vakil beradi, ammo bemor qaror qabul qilishda imkon qadar maksimal darajada bevosita ishtirok etishi lozim.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "41"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) 11 tamoyildan nechtasini daftarsiz sanay olasiz? 2) 4- va 5-tamoyil farqi nimada? Doskada: 11 tamoyilni ikki ustunga (tibbiy xizmat / bemor erkinligi) ajratib yozdiring. Tipik xato: hushsiz bemor bilan muomalaga layoqatsiz bemorni aralashtirish va 5-tamoyilda bemorning ishtirokini unutish."
-    },
-    {
-      "title": "Voqea tahlili: hushsiz holatdagi bemor",
-      "bullets": [
-        {
-          "text": "Vaziyat: bemor hushsiz holda shifoxonaga keltirildi. Qonuniy vakili topilmadi, davolanishni rad etish haqida oldingi bayonoti ham yo‘q.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "41"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Lissabon deklaratsiyasining 4-tamoyili: bunday holda qaror bemorning manfaatini ko‘zlab qabul qilinadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "41"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "O‘zbekiston qonuniga ko‘ra, kechiktirib bo‘lmaydigan holda masalani konsilium hal qiladi. Imkon bo‘lmasa, davolovchi yoki navbatchi vrach qaror qiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "44"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Savol talabalarga: kim rozilik beradi va vrach qarordan keyin nima qilishi shart? Maslahat: muassasa rahbariyatini xabardor qilishi kerak.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "44"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Qonuniy vakil kelib qolsa, vaziyat qanday o‘zgaradi? 2) Bemor oldin davolanishni rad etgan bo‘lsa-chi? Doskada: qaror qabul qilish zanjirini chizdiring (vakil → konsilium → navbatchi vrach). Tipik xato: vrach qarorni rahbariyatga xabar qilishni unutadi va ‘manfaat’ tushunchasini o‘zboshimchalik deb talqin qiladi."
-    },
-    {
-      "title": "“Fuqarolar sog‘ligini saqlash to‘g‘risida”gi qonun",
-      "bullets": [
-        {
-          "text": "Keyin qonunga bir qator o‘zgartirishlar kiritilgan, lekin uning asosiy mazmuni o‘zgarmagan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "42"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "13-modda: sog‘liqni saqlash huquqi daxlsiz; davlat uni kamsitishlardan himoya qilishni kafolatlaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "42"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Besh asosiy tamoyilning birinchisi: sog‘liqni saqlashda inson huquqlariga rioya qilish.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "46"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Qonun: asosiy ma’lumotlar",
-        "nodes": [],
-        "header": [
-          "Ko‘rsatkich",
-          "Ma’lumot"
-        ],
-        "rows": [
-          [
-            "Qabul qilingan",
-            "1996-yil 29-avgust"
-          ],
-          [
-            "Kuchga kirgan",
-            "1996-yil 14-sentabr"
-          ],
-          [
-            "Tuzilishi",
-            "6 qism, 47 modda"
-          ],
-          [
-            "42-modda",
-            "Kuchini yo‘qotgan"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega bemor huquqlari bilan birga shifokor huquqlari ham himoyalanishi kerak? 2) 13-modda Konstitutsiyaning qaysi moddasi bilan bog‘liq (18-modda)? Doskada: jadvalni daftarga ko‘chirtiring va sanalarni yozdiring. Tipik xato: qabul qilingan sana (29-avgust) bilan kuchga kirgan sanani (14-sentabr) aralashtirish."
-    },
-    {
-      "title": "Qonunning 24-moddasi: bemor huquqlari",
-      "bullets": [
-        {
-          "text": "Tibbiy yordamga murojaat qilgan bemor hurmat va mehr-muruvvatga haqli. U shifokor va davolash muassasasini tanlaydi, sanitariya-gigiena talablariga mos sharoitda davolanadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "43"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bemor so‘rasa, boshqa mutaxassislar konsiliumi va maslahatidan foydalanadi. Tibbiy aralashuvga ixtiyoriy rozilik berishi yoki uni rad etishi mumkin.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "43"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Murojaat faktini, tashxisni va davolash vaqtida olingan ma’lumotlar sir saqlanadi. Ixtiyoriy tibbiy sug‘urta, zararning qoplanishi va advokat qo‘yilishi ham huquqlar qatorida.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "43"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Huquq buzilsa, bemor yoki uning qonuniy vakili shikoyatni davolash muassasasi rahbariyatiga, yuqori boshqaruv organiga yoki sudga topshirishi mumkin.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "43"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Qaysi huquqlar bemorning shaxsiy qarori bilan, qaysilari muassasa tashkiliy sharoiti bilan bog‘liq? 2) Huquq buzilsa, bemor birinchi navbatda qayerga murojaat qiladi? Doskada: 24-moddadagi 9 ta huquqni ustunlarga ajrating. Tipik xato: shifokor tanlash huquqini ‘‘istalgan vaqtda istalgan shifokor’’ deb mutlaqlashtirish, shuningdek shikoyat yo‘llarini faqat sud bilan cheklash."
-    },
-    {
-      "title": "25-modda: ma’lumot olish huquqi",
-      "bullets": [
-        {
-          "text": "Har bir fuqaro sog‘lig‘i holati, tekshiruv va davolash natijalari, tashxis, prognoz, davolash usullari va ularning xavfi haqida to‘liq ma’lumot olishga haqli.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "43"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "O‘n to‘rt yoshga to‘lmagan yoki layoqatsiz deb topilgan shaxslar haqidagi ma’lumot ularning qonuniy vakillariga beriladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "43-44"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kasallik kechishi yomon bo‘lishi taxmin qilinsa, ma’lumot fuqaroga aytiladi. U taqiqlamagan bo‘lsa, oila a’zolariga etika me’yorlariga rioya qilib xabar qilinadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "44"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Fuqaro talabiga ko‘ra, uning sog‘lig‘i holatini aks ettiruvchi tibbiy hujjatlardan ko‘chirmalar berilishi lozim.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "44"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Yomon prognozni bemorga qanday ‘‘diplomatik’’ yetkazish mumkin? 2) Bemor oilasiga xabar berishni taqiqlagan bo‘lsa nima bo‘ladi? Doskada: ‘‘kimga ma’lumot beriladi’’ sxemasini (bemor, qonuniy vakil, oila) chizing. Tipik xato: oila a’zolariga xabarni bemor roziligisiz har doim berish mumkin deb o‘ylash."
-    },
-    {
-      "title": "26-modda: tibbiy aralashuvga rozilik",
-      "bullets": [
-        {
-          "text": "Tibbiy aralashuv kasallik haqida ma’lumot olgan fuqaroning ixtiyoriy roziligi bilangina o‘tkaziladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "44"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Rozilik shakli (yozma yoki og‘zaki) qonunda belgilanmagan; buni qonun osti hujjatlari aniqlashi mumkin.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "44"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "14 yoshgacha va layoqatsiz deb topilganlar uchun rozilikni qonuniy vakil beradi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "44"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "flow",
-        "caption": "Rozilik olib bo‘lmaganda",
-        "nodes": [
-          "Rozilik bildirish imkoni yo‘q",
-          "Kechiktirib bo‘lmaydigan holat",
-          "Konsilium qaror qiladi",
-          "Konsilium bo‘lmasa: shifokor",
-          "Rahbariyat xabardor qilinadi"
-        ],
-        "header": [],
-        "rows": []
-      },
-      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega rozilik shaklini qonunda aniq belgilash muhim bo‘lishi mumkin? 2) Navbatchi shifokor qarori qachon asosli bo‘ladi? Doskada: favqulodda holatda qarorlar zanjirini chizing. Tipik xato: kechiktirib bo‘lmaydigan holatda rozilik shart emas deb hisoblash; aslida qarorni konsilium yoki shifokor qabul qiladi va rahbariyat keyin xabardor qilinadi."
-    },
-    {
-      "title": "27–28-moddalar: rad etish va majburiy yordam",
-      "bullets": [
-        {
-          "text": "Bemor yoki uning qonuniy vakili tibbiy aralashuvni rad etishi yoki to‘xtatishni talab qilishi mumkin (27-modda).",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "44"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Shifokor yozma rad tasdiqnomasini oladi; imkoni bo‘lmasa, guvohlar ishtirokida dalolatnoma tuzadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "44"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "28-modda: kasallik atrofdagilarga xavf tug‘dirsa, roziliksiz tibbiy yordam ko‘rsatilishi mumkin.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "45"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "27-modda va 28-modda farqi",
-        "nodes": [],
-        "header": [
-          "Jihat",
-          "27-modda",
-          "28-modda"
-        ],
-        "rows": [
-          [
-            "Asosi",
-            "Bemorning xohish-irodasi",
-            "Atrofdagilarga xavf"
-          ],
-          [
-            "Kim qaror qiladi",
-            "Bemor yoki qonuniy vakil",
-            "Qonundagi asos va tartib"
-          ],
-          [
-            "Rasmiylashtirish",
-            "Yozma tasdiq yoki dalolatnoma",
-            "Tekshiruv, kasalxona, yakkalash"
-          ],
-          [
-            "Misol",
-            "Rad etish yoki to‘xtatish",
-            "Xavfli yuqumli kasalliklar"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Bemor rad etsa, shifokor nima qiladi? 2) Nega yuqumli kasallikda rozilik shart emas? Doskada: 27- va 28-moddalarni ikki ustunli jadvalda chizdiring. Tipik xato: talabalar yozma rad tasdiqnomasi har holda majburiy deb o‘ylaydi. Manbaga ko‘ra, qonun buni barcha holatda qat’iy talab qilmaydi; aniqlik quyi hujjatlarda bo‘lishi mumkin."
-    },
-    {
-      "title": "Tezkor savol: rozilik va rad etish",
-      "bullets": [
-        {
-          "text": "Tezkor savol: tibbiy aralashuv qaysi holatlarda bemorning roziligisiz o‘tkazilishi mumkin? Bir daqiqada javob bering.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "44-45"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bemor xohishini bildira olmasa va aralashuvni kechiktirib bo‘lmasa, qaror konsiliumda qabul qilinadi. Imkon bo‘lmasa, davolovchi yoki navbatchi vrach hal qiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "44"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Kasallik atrofdagilarga xavf tug‘dirsa, qonunda belgilangan tartibda roziliksiz tekshiruv, yotqizish yoki yakkalab qo‘yish mumkin.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "45"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Diqqat: xato qilish xavfi. Rad etish (27-modda) bemorning huquqi, majburiy yordam (28-modda) esa atrofdagilar xavfi bilan bog‘liq. Ularni aralashtirmang.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "44-45"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Savolni ovoz chiqarib so‘rang, 2-3 talabadan javob oling. Muhokama: 1) Konsilium va navbatchi vrach qarori qanday farqlanadi? 2) Qaror keyin kimga xabar qilinadi? (muassasa rahbariyatiga). Doskada: 27 va 28 ni ’bemor irodasi’ va ’jamiyat xavfi’ deb ikki o‘qqa joylashtiring. Tipik xato: ’roziliksiz’ degan so‘zni ’istalgan holatda’ deb tushunish."
-    },
-    {
-      "title": "Shifokor siri va uning istisnolari (45-modda)",
-      "bullets": [
-        {
-          "text": "Shifokor siri bemor vafotidan keyin ham saqlanadi; istisnolar qonunning 45-moddasida sanab o‘tilgan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "47-48"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "14 yoshgacha yoki layoqatsiz deb topilgan bemorning ota-onasi yoki vakilini xabardor qilish roziliksiz mumkin.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "48"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Jinoyat kodeksi 241-modda: jinoyat haqida xabar bermaslik yoki uni yashirish jinoiy javobgarlikka olib keladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "48"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Sirni oshkor etish holatlari",
-        "nodes": [],
-        "header": [
-          "Holat",
-          "Mazmuni"
-        ],
-        "rows": [
-          [
-            "14 yoshgacha / layoqatsiz",
-            "Vakilni xabardor qilish"
-          ],
-          [
-            "Xohishini bildira olmaydi",
-            "Tekshirish va davolash maqsadida"
-          ],
-          [
-            "Atrofdagilarga xavf",
-            "Yuqumli kasallik, ommaviy zaharlanish"
-          ],
-          [
-            "Rasmiy so‘rov / noqonuniy zarar",
-            "Surishtiruv, tergov, prokuratura, sud; zarar gumoni"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega sir vafotdan keyin ham saqlanadi? 2) Jinoyat shubhasi bo‘lsa, shifokor kimga xabar beradi? (tegishli huquqni muhofaza etuvchi idoralarga). Doskada: ’Sir’ doirasini chizib, 6 ta istisnoni o‘q bilan ko‘rsating. Tipik xato: talabalar istisnolarni sirni ’bekor qilish’ deb tushunadi. Aslida bu cheklangan, qonunda sanalgan holatlardir. Eslatma: jadvaldagi oxirgi qator ikki istisnoni birlashtiradi."
-    },
-    {
-      "title": "Lissabon deklaratsiyasi va qonun: o‘xshashlik va farq",
-      "bullets": [
-        {
-          "text": "Diqqat: Lissabon deklaratsiyasi ≠ qonun. Etika talablari qonun me’yoriga aylangan, ammo to‘liq mos tushmaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "45"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Lissabon 7-tamoyilining 2-bandi: hayotga jiddiy xavf bo‘lsa, ma’lumot bemordan yashirilishi mumkin.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "41"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qonunning 25-moddasi to‘liq ma’lumot olish huquqini beradi; yashirish istisnosi aytilmagan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "43-44"
-          },
-          "uncertain": true
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Deklaratsiya va qonun solishtirmasi",
-        "nodes": [],
-        "header": [
-          "Mezon",
-          "Lissabon dekl.",
-          "Qonun"
-        ],
-        "rows": [
-          [
-            "Qabul qilinishi",
-            "Jahon tibbiyot assotsiatsiyasi, 1981",
-            "1996-yil 29-avgust; 14-sentabrdan kuchda"
-          ],
-          [
-            "Huquqlar bayoni",
-            "11 ta tamoyil",
-            "24-modda: bemor huquqlari ro‘yxati"
-          ],
-          [
-            "Ma’lumot olish",
-            "Jiddiy xavf bo‘lsa, yashirish mumkin",
-            "To‘liq ma’lumot olish huquqi (25-modda)"
-          ],
-          [
-            "Umumiy xulosa",
-            "G‘oyalar qonunga kirgan",
-            "Asosan mos, lekin to‘liq emas"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Bemordan ma’lumotni yashirish qachon oqlanadi? 2) Nega etika va qonun to‘liq mos tushmasligi mumkin? Doskada: ikki ustunli jadval chizdirib, 7-tamoyilning 2-bandini ikkala tomonga yozdiring. Tipik xato: deklaratsiyani majburiy qonun deb tushunish yoki 25-modda matnida istisno bor deb aytish; manbada u ko‘rsatilmagan."
-    },
-    {
-      "title": "Bemor huquqlarining uch guruhi",
-      "bullets": [
-        {
-          "text": "Bemor huquqlari ahamiyat darajasiga ko‘ra shartli ravishda uch guruhga bo‘linadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "45"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Asosiy huquqlar: rozilik, rad etish, sog‘lig‘i va o‘z huquqlari haqida ma’lumot, shifokor siri.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "45"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tashkiliy huquqlar: shifokor va muassasani tanlash, sanitar sharoit, zararning qoplanishi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "46"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Huquqlar guruhlari",
-        "nodes": [],
-        "header": [
-          "Guruh",
-          "Mohiyati",
-          "Misol"
-        ],
-        "rows": [
-          [
-            "Asosiy",
-            "Birinchi navbatda ta’minlanadi",
-            "Ma’lumotli rozilik; shifokor siri"
-          ],
-          [
-            "Qo‘shimcha",
-            "Yordamchi; ba’zan zarur bo‘lmaydi",
-            "Advokat, ruhoniy, og‘riqni yengillatish"
-          ],
-          [
-            "Tashkiliy",
-            "Xizmat tashkil etilishi bilan bog‘liq",
-            "Shifokorni tanlash; zararni qoplash"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega shifokor siri asosiy guruhda? 2) Qo‘shimcha huquq qachon ta’minlanmay qolishi mumkin? Doskada: uchta doira chizib, har biriga 2 tadan misol yozdiring. Tipik xato: shifokorni tanlash huquqini asosiy guruhga kiritish; manbada u tashkiliy guruhda."
-    },
-    {
-      "title": "Bemorlarning majburiyatlari",
-      "bullets": [
-        {
-          "text": "Bemor huquqlari amalda asosan tibbiyot xodimlari harakati bilan ta’minlanadi. Shu sabab ularni xodimlar burchi sifatida ham ko‘rish mumkin.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "46"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Shu bilan birga, bemorlarning tibbiyot xodimlariga nisbatan majburiyatlari ham mavjudligini ta’kidlash zarur.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "46"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "«Fuqarolar sog‘lig‘ini saqlash to‘g‘risida»gi qonunning birinchi tamoyili: inson huquqlariga rioya. Bunda bemorning ham, xodimning ham huquqi ta’minlanadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "46"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Bemorlar va yaqinlari xodimlar bilan umuminsoniy axloq-odob me’yorlariga rioya qilishi, ularning sha’ni va qadr-qimmatini hurmat qilishi kerak.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "46"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Bemor yoki yaqinlari xodimni haqorat qilsa, bu qaysi tamoyilga zid? 2) Huquq, majburiyat va javobgarlik nega o‘zaro bog‘liq? Doskada: ikki tomonli o‘q chizib, «bemor ↔ xodim» orasiga o‘zaro hurmatni yozdiring. Tipik xato: majburiyatlar faqat shifokorda bo‘ladi deb o‘ylash."
-    },
-    {
-      "title": "Voqea tahlili: yuqumli kasallik va rad etish",
-      "bullets": [
-        {
-          "text": "Vaziyat: yuqumli kasallik gumon qilingan bemor davolanishdan voz kechmoqda. Savol: u buni qonuniy rad eta oladimi?",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "44"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "27-modda: bemor yoki qonuniy vakili aralashuvni rad etishi mumkin. Shifokor yozma rad tasdiqnomasini oladi, imkon bo‘lmasa guvohlar bilan dalolatnoma tuzadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "44"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "28-modda: kasallik atrofdagilarga xavf tug‘dirsa, roziliksiz tekshiruv, kasalxonaga yotqizish, kuzatish va yakkalab qo‘yish mumkin. Bu, ayniqsa, yuqumli kasalliklarga tegishli.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "45"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Diqqat: xato qilish xavfi! 27-modda (rad etish huquqi) ≠ 28-modda (xavf tug‘ilganda roziliksiz yordam). Xavf borligi aniqlanishi shart.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "44-45"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Rad etish huquqi qachon cheklanadi? 2) Shifokor qanday hujjat tuzadi? Doskada ikki ustunli sxema chizdiring: 27-modda va 28-modda. Tipik xato: talaba har qanday kasallikda rozilikni chetlab o‘tish mumkin deb o‘ylaydi, aslida shart atrofdagilarga xavf va qonuniy tartibdir."
-    },
-    {
-      "title": "Shifokor majburiyatlari: Jeneva deklaratsiyasi va kodeks",
-      "bullets": [
-        {
-          "text": "Tibbiy etika xalqaro kodeksining 1-bandi: shifokor doim yuqori kasbiy standartlarni ushlaydi, malakasini oshiradi, yangi bilim va ko‘nikma egallaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "47"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Shifokor bemor va hamkasblar bilan rostgo‘y bo‘ladi, nokompetent va yolg‘onchi hamkasblarga qarshi kurashadi. Foyda ko‘zlash mustaqil qarorga ta’sir qilmaydi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "47"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Shifokor hamdardlik va inson sha’niga hurmatni ustun qo‘yadi, hayotni saqlashni burch deb biladi. Zarurat bo‘lsa har kimga shoshilinch yordam beradi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "47"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Jeneva deklaratsiyasi (shifokorlarning xalqaro qasamyodi): umr bo‘yi insoniylikka xizmat, hayotni boshlanishidan hurmat qilish. Tahdid ostida ham bilimni insonlik qonunlariga qarshi ishlatmaslik.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "47"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega o‘zini reklama qilish etikaga mos kelmaydi? 2) Jeneva qasamyodi qaysi holatlarda sinovdan o‘tadi? Doskada ikki ustun chizing: kodeks bandlari va qasamyod majburiyatlari. Tipik xato: Jeneva deklaratsiyasini Lissabon deklaratsiyasi (bemor huquqlari) bilan almashtirish."
-    },
-    {
-      "title": "Shifokor muloqot madaniyati va uning huquqlari",
-      "bullets": [
-        {
-          "text": "Murojaat, sog‘liq holati va tashxis sir saqlanadi, bemor vafotidan keyin ham. Gersen: doktorning qulog‘i bo‘lishi, lekin og‘zi bo‘lmasligi lozim.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "47"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Muloqotda nima emas, qanday aytilgani ham muhim. Shou: «ha» va «yo‘q» ni yozish bir xil, aytish turlicha. Kazins: «besh bemordan ikkitasi o‘ladi» o‘rniga «uchtasi tuzaladi» deyiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "48-49"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Shifokor sha’ni, qadr-qimmati va kasbiy obro‘sini himoya qiladi, malaka oshiradi. Bemorga yordamda aloqa va transportdan bepul, to‘sqinliksiz foydalanadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "49"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Ishonch yo‘q yoki bemor ko‘rsatmaga rioya qilmasa va hayotga xavf bo‘lmasa, shifokor davolashdan bosh tortadi. U boshqa mutaxassisni tavsiya qilib, rahbariyatni xabardor qiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "49"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Yomon tashxisni bemorga qanday yetkazish kerak? 2) Qachon bosh tortish mumkin va keyin nima qilinadi? Doskada «bosh tortish» sxemasini chizdiring: shart, tavsiya, rahbariyatga xabar. Tipik xato: hayotga xavf bo‘lganda ham bosh tortish mumkin deb o‘ylash, aslida shart faqat xavf bo‘lmaganda."
-    },
-    {
-      "title": "Voqea tahlili: davolashdan bosh tortgan shifokor",
-      "bullets": [
-        {
-          "text": "Vaziyat: bemor va shifokor o‘rtasida ishonch yo‘q, bemor shifokor ko‘rsatmalariga amal qilmaydi, biroq uning hayotiga xavf yo‘q.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "49"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Savol: bunday holda shifokor davolashdan bosh tortishi mumkinmi va keyin qanday yo‘l tutishi shart?",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "49"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Javob: shifokor bosh tortishi mumkin. U bemorga boshqa mutaxassisni tavsiya qiladi va o‘z muassasasi rahbariyatiga xabar beradi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "49"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Diqqat: xato qilish xavfi — bosh tortish faqat hayotga xavf bo‘lmaganda mumkin. Zarurat tug‘ilsa, istalgan shaxsga shoshilinch yordam ko‘rsatiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "47, 49"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Ishonch yo‘qligi shifokorga qanday huquq beradi? 2) Rahbariyatga xabar berish nima uchun kerak? Doskada chizish: «sabab → bosh tortish → boshqa mutaxassis → rahbariyatga xabar» zanjirini chizdiring. Tipik xato: talabalar bosh tortishni hayotga xavf bor holatda ham mumkin deb o‘ylaydi. Manbada shart aniq: hayotga xavf tug‘dirmasa."
-    },
-    {
-      "title": "Etika qo‘mitalarining paydo bo‘lishi",
-      "bullets": [
-        {
-          "text": "G‘oya Nyurnberg jarayonida tug‘ildi; Bicher maqolasi va Taskidji tadqiqotlari ochilgach, zarurat oshdi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "151"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Keyin qo‘mitalar fanlararo bo‘ldi: huquqshunos, din vakili, psixolog va boshqalar qo‘shildi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "151"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "AQShda tadqiqot qonuni va Milliy komissiya tuzildi; qo‘mitalar bioetikani amaliyotga olib kirdi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "151"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Qo‘mitalar tarixi",
-        "nodes": [],
-        "header": [
-          "Davr",
-          "Voqea"
-        ],
-        "rows": [
-          [
-            "Nyurnberg jarayoni",
-            "Tajribada insonni himoya qilish g‘oyasi"
-          ],
-          [
-            "1960-yillar, AQSh",
-            "Dastlabki qo‘mitalar, faqat tibbiyotchilar"
-          ],
-          [
-            "1975-yil",
-            "Xelsinki deklaratsiyasida maxsus qo‘mitalar"
-          ],
-          [
-            "1990-yillar, AQSh",
-            "Prezident komissiyasi tuzildi"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nima uchun birinchi qo‘mitalarda faqat shifokorlar bo‘lishi kamchilik edi? 2) Nyurnberg va Taskidji holatlari nimani ko‘rsatdi? Doskada chizish: vaqt chizig‘ini (Nyurnberg → 1960-yillar → 1975 → 1990-yillar) chizdiring. Tipik xato: Xelsinki deklaratsiyasini Jahon tibbiyot assotsiatsiyasi emas, AQSh hujjati deb o‘ylash."
-    },
-    {
-      "title": "Xalqaro tashkilotlar va qo‘mita turlari",
-      "bullets": [
-        {
-          "text": "1990-yillarda YUNESKO huzurida bioetika bo‘yicha xalqaro qo‘mita tashkil etilgan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "152"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Jahon sog‘liqni saqlash tashkiloti, Jahon tibbiyot assotsiatsiyasi, Yevropa Kengashida ham qo‘mitalar bor.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "152"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "YUNESKO qo‘llanmasi bo‘yicha qo‘mitalarning to‘rt turi bo‘lishi mumkin (jadvalda).",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "152"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "YUNESKO bo‘yicha 4 tur",
-        "nodes": [],
-        "header": [
-          "Tur",
-          "Mazmuni"
-        ],
-        "rows": [
-          [
-            "1-tur",
-            "Siyosat va tavsiyalar ishlab chiqish"
-          ],
-          [
-            "2-tur",
-            "Tibbiy kasbiy assotsiatsiyalar qo‘mitasi"
-          ],
-          [
-            "3-tur",
-            "Tibbiy muassasalar bioetika qo‘mitasi"
-          ],
-          [
-            "4-tur",
-            "Ilmiy tadqiqot bioetikasi qo‘mitasi"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Qaysi tur bevosita shifoxonadagi amaliy muammolar bilan ishlaydi? 2) Siyosat ishlab chiqadigan qo‘mita bilan tadqiqot qo‘mitasi nimasi bilan farq qiladi? Doskada chizish: to‘rt turni to‘rt ustun qilib chizing. Tipik xato: tashkilotlarni (YUNESKO, Jahon sog‘liqni saqlash tashkiloti) qo‘mita turlari bilan aralashtirish."
-    },
-    {
-      "title": "Qo‘mita darajalari va mamlakatlar tajribasi",
-      "bullets": [
-        {
-          "text": "Milliy qo‘mita siyosat asoslarini, regional qo‘mita mintaqa muammolarini, mahalliy qo‘mita amaliy yordam va ilmiy loyihalarning etik jihatlarini ko‘radi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "153"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Tuzilishi turlicha: AQShda Kongress Prezident komissiyasini, Fransiyada Prezident farmoni milliy qo‘mitani, Shvetsiyada hukumat qo‘mitani tuzgan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "152-153"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Fransiya — tadqiqotlardagi axloqiy muammolar, Italiya — biotexnologiya xavfsizligi, Polsha — qonunlarni etik baholash. Rossiyada qo‘mitalar 1987-yildan, asosan ilmiy tadqiqotlar bilan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "152-153"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Zamonaviy bioetika 6 qismdan iborat: akademik bioetika, sog‘liqni saqlash idoralari qo‘mitalari, muassasa komissiyalari, kasbiy uyushmalar, bemorlar birlashmalari, ijtimoiy harakatlar.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "153"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 6-7 daq. Muhokama: nega mamlakatlarda qo‘mitani tuzish usuli (Kongress, Prezident farmoni, hukumat) har xil? Milliy, regional va mahalliy qo‘mita vazifalari qanday farqlanadi? Doskada: 3 pog‘onali piramida (milliy–regional–mahalliy) va har biriga bittadan vazifa yozing. Tipik xato: regional qo‘mitani mahalliy bilan aralashtirish (mahalliy — aynan muassasadagi amaliy muammolar va tadqiqot loyihalarini ko‘radi). Eslatma: Shvetsiya bandidagi OCR matni qisman o‘qilmaydi, faqat o‘qiladigan qismi berildi."
-    },
-    {
-      "title": "Qo‘mita tamoyillari va ikki model",
-      "bullets": [
-        {
-          "text": "Tamoyillar: mustaqillik, fanlararolik, oshkoralik, plyuralizm (turli fikrlarni inobatga olish).",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "JSST (Jahon sog‘liqni saqlash tashkiloti) qo‘llanmasi (2000) qo‘mita tarkibi va ekspertiza tartibini beradi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "154-155"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "SOP — standart operatsion protsedura: qo‘mita ishining qadamlari tartibi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "154"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Amerika va Yevropa modeli",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Amerika",
-          "Yevropa"
-        ],
-        "rows": [
-          [
-            "Rasmiylik",
-            "Rasmiyroq, qonun bilan belgilangan",
-            "Nisbatan norasmiy"
-          ],
-          [
-            "Qarorlar",
-            "Majburiy xususiyatda",
-            "Ko‘proq tavsiya xususiyatida"
-          ],
-          [
-            "Huquq",
-            "Taqiqlash huquqiga ega",
-            "Asosan tavsiya beradi"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: nega qo‘mita a’zolari tekshiruv o‘tkazuvchi muassasaga bog‘liq bo‘lmasligi kerak? Oshkoralik tamoyili qarorlar sir saqlanmasligini nimaga xizmat qiladi? Doskada: 4 tamoyilni 4 ta doira ko‘rinishida chizing. Diqqat: xato qilish xavfi — Amerika modeli ≠ Yevropa modeli (birida qaror majburiy, ikkinchisida tavsiya). Tipik xato: SOP ni qo‘mita tamoyili deb o‘ylash; u ish qadamlari standartidir."
-    },
-    {
-      "title": "O‘zbekistonda etika qo‘mitalari va faoliyat yo‘nalishlari",
-      "bullets": [
-        {
-          "text": "Dastlabki bioetika qo‘mitasi Sog‘liqni saqlash vazirligi huzurida tuzilgan; birinchi rahbari akademik M.S. Abdullaxujayeva bo‘lgan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "153-154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Keyinroq shunday tuzilma Ibn Sino nomli Xalqaro jamg‘armada ham tashkil etilgan.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Hududiy va mahalliy idoralar, davolash muassasalari, ilmiy tashkilotlardagi etika qo‘mitalari faoliyati haqida ma’lumot yo‘q.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "154"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Sog‘liqni saqlash idoralari qo‘mitalari yo‘nalishlari: davolash, klinik sinovlar, ta’lim, qonunchilik, xizmatni tashkil etish, ijtimoiy-huquqiy, ekologik masalalar.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "155-156"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 6-7 daq. Muhokama: nega mintaqa va muassasalarda qo‘mita bo‘lishi kerak? Qaysi yo‘nalish talabalar tayyorgarligiga bevosita bog‘liq? Doskada: ikki ustun — «O‘zbekistonda mavjud» (vazirlik, Ibn Sino jamg‘armasi) va «ma’lumot yo‘q» (hududiy, muassasa). Tipik xato: oxirgi bandagi yo‘nalishlarni faqat O‘zbekistonga xos deb o‘ylash; manbada ular sog‘liqni saqlash idoralari qo‘mitalari uchun umumiy ro‘yxat sifatida berilgan."
-    },
-    {
-      "title": "Etik maslahat: 3 model va 3 yondashuv",
-      "bullets": [
-        {
-          "text": "Individual maslahatni bitta konsultant beradi. Undan keng bilim va tajriba talab etiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "156"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Natijasiga ko‘ra uch yondashuv bor: ma’lumot beruvchi, vositachi (kelishuvga yo‘naltiruvchi) va qat’iy yondashuv.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "157"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "AQSh tajribasida kichik guruh modeli ko‘proq qo‘llanadi va ko‘p holatda eng maqbul hisoblanadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "157"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": {
-        "kind": "table",
-        "caption": "Etik maslahat modellari",
-        "nodes": [],
-        "header": [
-          "Model",
-          "Afzallik",
-          "Kamchilik"
-        ],
-        "rows": [
-          [
-            "Individual",
-            "Shoshilinch holatda qulay",
-            "Subyektivlik belgisi bo‘lishi mumkin"
-          ],
-          [
-            "Kichik guruh",
-            "Oddiy holatda tezkor, ishonchliroq",
-            "Subyektivlik to‘liq istisno bo‘lmaydi"
-          ],
-          [
-            "Etika qo‘mitasi",
-            "Eng ishonchli, asoslangan xulosa",
-            "Tashkil etish vaqt talab qiladi"
-          ]
-        ]
-      },
-      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega individual maslahatda subyektivlik xavfi yuqori? 2) Nega AQShda kichik guruh modeli ko‘proq tanlanadi? Doskada chizish: uch modelni ‘tezlik – ishonchlilik’ o‘qida joylashtiring. Tipik xato: kichik guruh maslahatini etika qo‘mitasi bilan aralashtirish; qo‘mita alohida, rasmiy tuzilma."
-    },
-    {
-      "title": "Voqea tahlili: etik nizoni hal qilish",
-      "bullets": [
-        {
-          "text": "1-holat: shifoxonada shoshilinch vaziyatda etik ikkilanish paydo bo‘ldi va qaror zudlik bilan kerak.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "156"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "2-holat: bemor yaqinlari va shifokorlar o‘rtasida qadriyatlar bo‘yicha murakkab nizo cho‘zilmoqda, vaqt bor.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "156"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Manbaga ko‘ra: shoshilinchda individual maslahat qulay, murakkab nizoda etika qo‘mitasi ishonchliroq, ammo vaqt talab qiladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "156-157"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Savol: har ikki holatda qaysi model va qaysi yondashuv (ma’lumot beruvchi, vositachi, qat’iy) mos keladi? Asoslang.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "157"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 7 daq. Vaziyat o‘quv maqsadida manbadagi ma’lumotlardan tuzilgan. Muhokama: 1) 2-holatda kichik guruh modeli yetarlimi? 2) Qat’iy yondashuv uchun konsultantda qanday vakolat kerak? Doskada chizish: ikki holat uchun ‘model + yondashuv’ juftligini yozing. Tipik xato: vaqt omilini hisobga olmay faqat eng ishonchli modelni tanlash."
-    },
-    {
-      "title": "Xulosa: takomillashtirish yo‘nalishlari",
-      "bullets": [
-        {
-          "text": "Konstitutsiyaning 40-moddasi malakali tibbiy xizmat huquqini kafolatlaydi. Lissabon deklaratsiyasi bemor huquqlarining 11 tamoyilini beradi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "39-40"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "“Fuqarolar sog‘lig‘ini saqlash to‘g‘risida”gi qonunning 24-moddasi bemor huquqlarini beradi va deklaratsiyaga asosan mos keladi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "42-43"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Qonun hujjatlarida bemorlarning majburiyatlari, shifokorlarning huquqlari va ularni himoya qilish ham aks etishi zarur.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "49"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Har bir sog‘liqni saqlash idorasi va muassasasida etika tuzilmasi bo‘lishi maqsadga muvofiq: u muammolarni o‘z vaqtida o‘rganadi.",
-          "source": {
-            "author": "G‘iyosov Z.A., Indiaminov S.I.",
-            "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-            "page": "157"
-          },
-          "uncertain": false
-        }
-      ],
-      "diagram": null,
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Konstitutsiya, deklaratsiya, qonun va etika qo‘mitasi bir-birini qanday to‘ldiradi? 2) Manbada viloyat va muassasalardagi etika qo‘mitalari faoliyati haqida ma’lumot yo‘qligi (154-bet) nimani anglatadi? Doskada chizish: to‘rt bosqichli zanjir ‘Konstitutsiya → deklaratsiya → qonun → etika tuzilmasi’. Tipik xato: etika va huquq me’yorlari to‘liq mos keladi deb o‘ylash; manbada bu aytilmagan."
-    }
-  ],
-  "mcq": [
-    {
-      "question": "Tadqiqotchi fuqaroning roziligini olmay, unda ilmiy tajriba o‘tkazmoqchi. Konstitutsiyaning qaysi normasi buni taqiqlaydi?",
-      "options": [
-        "26-modda birinchi qismi: aybsizlik prezumpsiyasi",
-        "26-modda uchinchi qismi: roziliksiz tajriba taqiqi",
-        "24-modda: har bir insonning yashash huquqi",
-        "30-modda: hujjatlar bilan tanishish imkoniyati"
-      ],
-      "correct_index": 1,
-      "explanation": "26-moddaning uchinchi qismida fuqaroning roziligisiz unda tibbiy yoki ilmiy tajriba o‘tkazish taqiqlangan. Birinchi qismi aybsizlik prezumpsiyasiga, ikkinchi qismi qiynoqqa solish taqiqiga oid.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "38-39"
-      }
-    },
-    {
-      "question": "Kasalxonada bemorga millati va diniga qarab ustunlik berilmoqchi. Qaysi konstitutsiyaviy tamoyil buziladi?",
-      "options": [
-        "Fuqarolarning sud orqali himoyalanish tamoyili (44-modda)",
-        "Shaxsiy hayot daxlsizligi tamoyili (27-modda)",
-        "Aybsizlik prezumpsiyasi tamoyili (26-modda)",
-        "Fuqarolarning qonun oldida tengligi tamoyili (18-modda)"
-      ],
-      "correct_index": 3,
-      "explanation": "18-moddaga ko‘ra barcha fuqarolar jinsi, irqi, millati, tili, dinidan qat’i nazar qonun oldida teng. Imtiyozlar faqat qonun bilan belgilanadi va ijtimoiy adolatga mos bo‘lishi shart.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "38"
-      }
-    },
-    {
-      "question": "Mansabdor shaxs fuqaroning huquq va erkinliklarini sud qarorisiz cheklamoqchi. Qaysi modda bunga yo‘l qo‘ymaydi?",
-      "options": [
-        "19-modda: sud qarorisiz mahrum etish yoki cheklash mumkin emas",
-        "20-modda: huquqlar boshqalarning manfaatiga putur yetkazmasligi shart",
-        "25-modda: erkinlik va shaxsiy daxlsizlik huquqi",
-        "45-modda: voyaga yetmaganlar huquqlari davlat himoyasida"
-      ],
-      "correct_index": 0,
-      "explanation": "19-moddada fuqarolarni huquq va erkinliklardan sud qarorisiz mahrum etish yoki cheklashga yo‘l qo‘yilmasligi belgilangan. 20-modda esa huquqlarni amalga oshirish chegarasini ko‘rsatadi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "38"
-      }
-    },
-    {
-      "question": "1972-yilda birinchi bo‘lib “Bemor huquqlari to‘g‘risida Bill”ni qaysi tashkilot qabul qilgan?",
-      "options": [
-        "Jahon tibbiyot assotsiatsiyasi",
-        "Jahon sog‘liqni saqlash tashkiloti",
-        "Amerika kasalxonalar assotsiatsiyasi",
-        "YuNESKO xalqaro bioetika qo‘mitasi"
-      ],
-      "correct_index": 2,
-      "explanation": "Bemor huquqlari harakati XX asr 70-yillarida boshlandi va 1972-yilda “Bemor huquqlari to‘g‘risida Bill”ni Amerika kasalxonalar assotsiatsiyasi qabul qildi. Jahon tibbiyot assotsiatsiyasi esa 1981-yilda Lissabon deklaratsiyasini qabul qilgan.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "40"
-      }
-    },
-    {
-      "question": "Fuqaro tibbiy yordamning barcha turlaridan malakali foydalana olmayapti. Bu huquqni qaysi modda kafolatlaydi?",
-      "options": [
-        "24-modda: yashash huquqi",
-        "40-modda: malakali tibbiy xizmat huquqi",
-        "43-modda: huquqlarni davlat ta’minlashi",
-        "44-modda: sud orqali himoya huquqi"
-      ],
-      "correct_index": 1,
-      "explanation": "Konstitutsiyaning 40-moddasi fuqarolarning malakali tibbiy xizmatdan foydalanish huquqini kafolatlaydi. 43-modda esa huquq va erkinliklarni davlat ta’minlashini ko‘rsatadi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "39"
-      }
-    },
-    {
-      "question": "Viloyat shifoxonasida resurslar cheklangan, bir nechta bemor navbatda turibdi. Lissabon deklaratsiyasiga ko‘ra, tanlov qaysi asosda o‘tkaziladi?",
-      "options": [
-        "Faqat tibbiy mezonlar bo‘yicha, kamsitishsiz",
-        "Bemorning ijtimoiy mavqei bo‘yicha",
-        "Bemorning yashash joyiga qarab",
-        "Murojaat vaqtidan qat’i nazar, qur‘a bilan"
-      ],
-      "correct_index": 0,
-      "explanation": "Deklaratsiyaning 1-tamoyilida resurslar cheklangan bo‘lsa, barcha bemorlar adolatli tanlovda qatnashish huquqiga ega deyiladi. Tanlov hech qanday kamsitishsiz, faqat tibbiy mezonlar bo‘yicha o‘tkazilishi shart.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "40-41"
-      }
-    },
-    {
-      "question": "Lissabon deklaratsiyasining 8-tamoyiliga ko‘ra, bemor vafot etganidan keyin uning diagnozi haqidagi ma’lumotlarga nisbatan qanday talab qo‘yiladi?",
-      "options": [
-        "Sir saqlash muddati tugab, ma’lumot ochiladi",
-        "Ular o‘limdan keyin ham sir saqlanishi lozim",
-        "Ular faqat hamkasblar uchun ochiq bo‘ladi",
-        "Barcha qarindoshlarga berilishi majburiy bo‘ladi"
-      ],
-      "correct_index": 1,
-      "explanation": "8-tamoyilda salomatlik holati, diagnoz, davolanish va prognoz haqidagi ma’lumotlar bemor o‘limidan keyin ham konfidensial bo‘lishi aytilgan. Istisno faqat avlodlarning irsiy kasallik xavfiga oid ma’lumotni olishi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "41-42"
-      }
-    },
-    {
-      "question": "Yo‘l hodisasidan hushsiz holda keltirilgan bemorning qonuniy vakili yetib keldi. Lissabon deklaratsiyasiga ko‘ra, muolajaga rozilik kimdan olinadi?",
-      "options": [
-        "Bemorning o‘zidan, u o‘ziga kelgach og‘zaki",
-        "Navbatchi hamshiradan, ish tartibiga ko‘ra",
-        "Bemorning qonuniy vakilidan",
-        "Faqat konsilium a’zolaridan, vakil bo‘lsa ham"
-      ],
-      "correct_index": 2,
-      "explanation": "4-tamoyil: bemor hushsiz bo‘lsa, rozilik qonuniy vakildan olinadi. Vakil bo‘lmasa va bemor oldin muolajani rad etmagan bo‘lsa, qaror uning manfaatini ko‘zlab qabul qilinadi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "41"
-      }
-    },
-    {
-      "question": "12 yoshli bolaga tibbiy yordam ko‘rsatilmoqda. “Fuqarolar sog‘ligini saqlash to‘g‘risida”gi qonunning 25-moddasiga ko‘ra, uning sog‘lig‘i haqidagi ma’lumot kimga beriladi?",
-      "options": [
-        "Faqat bolaning o‘ziga, to‘liq hajmda",
-        "Faqat maktab ma’muriyatiga, rasmiy xat bilan",
-        "Bola yashaydigan mahalla vakillariga",
-        "Bolaning qonuniy vakillariga"
-      ],
-      "correct_index": 3,
-      "explanation": "25-moddaga ko‘ra, o‘n to‘rt yoshga to‘lmagan yoki muomalaga layoqatsiz deb topilgan shaxslarning sog‘lig‘i haqidagi ma’lumotlar ularning qonuniy vakillariga beriladi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "43-44"
-      }
-    },
-    {
-      "question": "Bemorning ahvoli og‘ir, irodasini bildira olmaydi. Aralashuvni kechiktirib bo‘lmaydi, konsilium yig‘ish imkoni yo‘q. Qonunning 26-moddasiga ko‘ra, qarorni kim qabul qiladi?",
-      "options": [
-        "Bosh shifokor, sud ruxsati bilan",
-        "Davolovchi yoki navbatchi shifokor, rahbariyatni keyin xabardor qilib",
-        "Bemorning qo‘shnilari, o‘zaro kelishib",
-        "Hech kim, bemor o‘zi gapirguncha kutiladi"
-      ],
-      "correct_index": 1,
-      "explanation": "26-modda: bemor irodasini bildira olmasa va aralashuvni kechiktirib bo‘lmasa, masalani konsilium hal qiladi. Konsilium yig‘ish imkoni bo‘lmasa, davolovchi yoki navbatchi shifokor qaror qiladi va keyin muassasa rahbariyatini xabardor qiladi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "44"
-      }
-    },
-    {
-      "question": "Bemor tibbiy aralashuvni rad etdi. 27-moddaga ko‘ra vrach qanday yo‘l tutadi?",
-      "options": [
-        "Rad etishni e‘tiborsiz qoldirib, davolashni majburan davom ettiradi",
-        "Yozma rad tasdiqnomasi oladi, iloji bo‘lmasa guvohlar bilan dalolatnoma tuzadi",
-        "Rad etishni faqat oila a‘zolarining og‘zaki roziligi bilan qabul qiladi",
-        "Masalani hal qilishni navbatchi hamshiraga topshirib, o‘zi chetda turadi"
-      ],
-      "correct_index": 1,
-      "explanation": "27-moddaga ko‘ra bemor yoki uning qonuniy vakili aralashuvni rad etishi yoki to‘xtatishni talab qilishi mumkin. Bunda vrach yozma rad tasdiqnomasi oladi. Buning iloji bo‘lmasa, guvohlar ishtirokida dalolatnoma tuzadi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "44"
-      }
-    },
-    {
-      "question": "Bemorda atrofdagilar uchun xavfli yuqumli kasallik bor, u davolanishdan bosh tortmoqda. 28-moddaga ko‘ra nima mumkin?",
-      "options": [
-        "Faqat bemor yozma rozilik bergandan keyin kasalxonaga yotqizish mumkin",
-        "Bemorni davolamay, faqat oila a‘zolariga xabar berib qo‘yish yetarli",
-        "Hech qanday chorani ko‘rib bo‘lmaydi, chunki rad etish mutlaq huquq",
-        "Belgilangan asos va tartibda roziliksiz tekshirish, yotqizish, yakkalash"
-      ],
-      "correct_index": 3,
-      "explanation": "28-moddaga ko‘ra kasallik atrofdagilar uchun xavf tug‘dirsa, shaxs yoki qonuniy vakilning roziligisiz tibbiy yordam ko‘rsatilishi mumkin. Bunga tibbiy tekshiruv, kasalxonaga yotqizish, kuzatish va yakkalab qo‘yish kiradi. Bu belgilangan asos va tartibda amalga oshiriladi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "45"
-      }
-    },
-    {
-      "question": "Surishtiruv organi bemor haqida rasmiy so‘rov yubordi. 45-moddaga ko‘ra shifokor siri bo‘yicha qanday yo‘l tutiladi?",
-      "options": [
-        "Rozilik talab qilinmaydi: rasmiy so‘rov bo‘yicha sirni berish mumkin",
-        "Sir bemor roziligisiz hech qachon, hatto rasmiy so‘rovda ham berilmaydi",
-        "Sirni faqat bemor vafot etgandan keyingina berish mumkin bo‘ladi",
-        "Sirni faqat shifokorning shaxsiy xohishiga ko‘ra berish mumkin bo‘ladi"
-      ],
-      "correct_index": 0,
-      "explanation": "45-moddadagi istisnolar orasida suriштiruv, tergov, prokuratura va sud idoralarining rasmiy so‘rovi ham bor. Bunda fuqaro yoki qonuniy vakilning roziligisiz ma‘lumot berilishi mumkin.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "48"
-      }
-    },
-    {
-      "question": "Bemor huquqlarining qaysi biri “asosiy” guruhga kiradi?",
-      "options": [
-        "Shifokor va davolash muassasasini tanlash huquqi",
-        "Bemor yoniga advokat kiritilishi huquqi",
-        "Shifokor siri saqlanishi huquqi",
-        "Og‘riq va azobni yengillashtirish huquqi"
-      ],
-      "correct_index": 2,
-      "explanation": "Asosiy guruhga axborotli rozilik, rad etish, sog‘liq va o‘z huquqlari haqida ma‘lumot olish hamda shifokor siri saqlanishi huquqi kiradi. Advokat va og‘riqni yengillashtirish qo‘shimcha, shifokor tanlash esa tashkiliy guruhga kiradi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "45-46"
-      }
-    },
-    {
-      "question": "Bemor shifokorga ishonmaydi va ko‘rsatmalarga rioya qilmaydi, hayoti xavf ostida emas. Vrach davolashdan bosh tortsa, nima qilishi lozim?",
-      "options": [
-        "Davolashni istisnolarsiz davom ettirishga majbur bo‘ladi",
-        "Boshqa mutaxassisni tavsiya etadi va muassasa rahbariyatiga xabar beradi",
-        "Bemorni darhol muassasadan chiqarib yuboradi va hech kimga aytmaydi",
-        "Bemorga jarimani o‘zi belgilab, davolashni bir tomonlama to‘xtatadi"
-      ],
-      "correct_index": 1,
-      "explanation": "O‘zaro ishonch yo‘qligi yoki bemor ko‘rsatmalarga rioya qilmasligi sababli, hayotga xavf bo‘lmasa, vrach davolashdan bosh tortishi mumkin. Bunda u bemorga boshqa mutaxassisni tavsiya qiladi va muassasa rahbariyatiga xabar beradi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "49"
-      }
-    },
-    {
-      "question": "Shifokor va bemor orasida o‘zaro ishonch yo‘q, bemor ko‘rsatmalarga rioya qilmaydi, ammo hayotiga xavf yo‘q. Shifokor qanday yo‘l tutishi mumkin?",
-      "options": [
-        "Bemorga tushuntirmay, hujjatlarini muassasadan yashiradi",
-        "Boshqa mutaxassisni tavsiya qilib, rahbariyatga xabar beradi",
-        "Davolashni to‘xtatib, bemor haqidagi ma’lumotni tarqatadi",
-        "Bemorni o‘z qaroriga ko‘ra majburan davolashda davom etadi"
-      ],
-      "correct_index": 1,
-      "explanation": "Ishonch yo‘qligi yoki bemorning ko‘rsatmalarga rioya qilmasligi hayotga xavf tug‘dirmasa, shifokor davolashdan bosh tortishi mumkin. Shunda u bemorga boshqa mutaxassisni tavsiya qiladi va o‘z muassasasi rahbariyatiga xabar beradi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "49"
-      }
-    },
-    {
-      "question": "Etika tuzilmalari g‘oyasi birinchi marta qaysi jarayon davrida paydo bo‘lgan?",
-      "options": [
-        "Xelsinki deklaratsiyasining 1975-yilgi tahririni muhokama qilish",
-        "Tuskidji tadqiqotlarining keng jamoatchilikka oshkor bo‘lishi",
-        "AQSh Kongressi prezident komissiyasining tuzilishi jarayoni",
-        "Nyurnberg jarayonida nasist shifokorlar jinoyatlarining ko‘rilishi"
-      ],
-      "correct_index": 3,
-      "explanation": "Etika tuzilmalari g‘oyasi dastlab Nyurnberg jarayonida nasist shifokorlar jinoyatlari ko‘rilganda, tajribalarda insonni himoya qilish zarurati sezilganidan paydo bo‘lgan. Tuskidji kabi tadqiqotlarning oshkor bo‘lishi bu zaruratni keyinroq tasdiqlagan.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "151"
-      }
-    },
-    {
-      "question": "Kasalxona qoshida faqat shu muassasadagi etik masalalarni ko‘radigan qo‘mita tuzildi. YUNESKO qo‘llanmasiga ko‘ra u qaysi turga kiradi?",
-      "options": [
-        "Tibbiy muassasalarning bioetika qo‘mitasi turiga",
-        "Kasbiy assotsiatsiyalarning bioetika qo‘mitasi turiga",
-        "Bioetika bo‘yicha siyosat ishlab chiquvchi qo‘mita turiga",
-        "Ilmiy tadqiqot bioetikasi bo‘yicha qo‘mita turiga"
-      ],
-      "correct_index": 0,
-      "explanation": "YUNESKO qo‘llanmasida to‘rt tur keltirilgan, jumladan tibbiy muassasalarning bioetika qo‘mitalari. Muassasa ichidagi etik masalalar bilan shug‘ullanadigan qo‘mita aynan shu turga mos keladi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "152"
-      }
-    },
-    {
-      "question": "Qo‘mita faoliyati qonun hujjatlari bilan belgilangan, u taqiqlash huquqiga ega va qarorlari majburiy. Bu qaysi modelga xos?",
-      "options": [
-        "Yevropa modeli, chunki qarorlar tavsiya xususiyatiga ega",
-        "Norasmiy model, chunki qo‘mita taqiqlay olmaydi",
-        "Amerika modeli, chunki qarorlar majburiy tusga ega",
-        "Kichik guruh modeli, chunki ekspertlar guruhi ishlaydi"
-      ],
-      "correct_index": 2,
-      "explanation": "Amerika modeli rasmiyroq: qo‘mita faoliyati qonun hujjatlari bilan belgilanadi, qo‘mita taqiqlash huquqiga ega, qarorlari majburiy. Yevropa modeli norasmiyroq, qarorlari ko‘proq tavsiya xususiyatiga ega.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "154"
-      }
-    },
-    {
-      "question": "Muassasada etik maslahat zudlik bilan kerak bo‘lib qoldi. Qaysi maslahat modeli shoshilinch holatlar uchun qulay deb ko‘rsatilgan?",
-      "options": [
-        "Etika qo‘mitasidan maslahat olish, chunki u eng ishonchli",
-        "Individual maslahat, chunki u shoshilinch holatlarda qulay",
-        "Kichik guruh maslahati, chunki u subyektivlikni butunlay yo‘qotadi",
-        "Qo‘mita majlisi orqali, chunki u deyarli vaqt talab qilmaydi"
-      ],
-      "correct_index": 1,
-      "explanation": "Individual maslahatda bitta konsultant maslahat beradi va bu shoshilinch holatlarda qulay. Biroq undan keng bilim va tajriba talab etiladi, subyektivlik belgilari ham bo‘lishi mumkin. Qo‘mitadan maslahat olish ishonchliroq, lekin vaqt talab qiladi.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "156"
-      }
-    }
-  ],
-  "extras": [
-    {
-      "text": "Bemor huquqlari harakati XX asrning 70-yillarida boshlangan. 1972 yilda Amerika kasalxonalar assotsiatsiyasi birinchi bo‘lib “Bemor huquqlari to‘g‘risida Bill”ni qabul qilgan. 1981 yilda Jahon tibbiyot assotsiatsiyasi Lissabon deklaratsiyasini qabul qildi (1995 yilda o‘zgartirilgan), unda 11 ta prinsip bor. O‘zbekistonning sog‘liqni saqlash qonunchiligi ham shu deklaratsiyani inobatga olgan.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "40-42"
-      }
-    },
-    {
-      "text": "Hodisa tahlili: so‘z tanlash bemorga ta’sir qiladi. Oshqozon saratoni gumon qilinib operatsiya qilingan bemorda saraton topilmasa, “Siz bekorga operatsiya qilindingiz” demaslik kerak. Manbadagi tavsiya: “Baxtli inson ekansiz, sizda rak yo‘q”. Shuningdek, “besh bemordan ikkitasi o‘ladi” o‘rniga “uchtasi tuzaladi” deyish tavsiya etilgan. Savol: bu haqiqatni yashirishmi yoki muloqot madaniyati?",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "48-49"
-      }
-    },
-    {
-      "text": "Eslab qolish usuli (o‘qituvchi uchun, manba mazmuniga tayangan): bemor huquqlari uch guruhga bo‘linadi. Asosiy: rozilik, rad etish, ma’lumot olish, shifokor siri. Qo‘shimcha (fakultativ): maslahat, advokat, og‘riqni yengillashtirish, diniy xodim. Tashkiliy (kontekstual): shifokorni tanlash, sanitariya sharoiti, zararning qoplanishi. “Asosiy – birinchi navbatda; qo‘shimcha – ba’zan ta’minlanmasligi mumkin.”",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "45-46"
-      }
-    },
-    {
-      "text": "Etika qo‘mitalarining ikki modeli: Amerika modeli rasmiyroq, faoliyati qonun bilan belgilanadi, qo‘mita taqiqlash huquqiga ega va qarorlari majburiy. Yevropa modeli norasmiyroq, qarorlari ko‘proq tavsiya xarakterida. Eslab qolish: “Amerika – majburiy, Yevropa – tavsiya”. Qo‘mita prinsiplari: mustaqillik, fanlararolik, oshkoralik, plyuralizm.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "154"
-      }
-    },
-    {
-      "text": "Etika tuzilmalari g‘oyasi birinchi marta Nyurnberg jarayonida, natsist shifokorlarning jinoyatlari ko‘rib chiqilganda paydo bo‘lgan. Tajribalarda odamlarni himoya qilish zarurligi shunda anglangan. Keyinroq Taskidji tadqiqotlarining oshkor bo‘lishi bu masalaning naqadar dolzarbligini tasdiqlagan. Dastlabki etika qo‘mitalari 1960-yillarda AQShda tashkil etilgan.",
-      "source": {
-        "author": "G‘iyosov Z.A., Indiaminov S.I.",
-        "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-        "page": "151"
-      }
-    }
-  ],
-  "sources": [
-    {
+     "text": "Bemor huquqlari harakati XX asrning 70-yillarida boshlandi. 1972-yilda Amerika kasalxonalar assotsiatsiyasi «Bemor huquqlari to‘g‘risida Bill»ni qabul qildi.",
+     "source": {
       "author": "G‘iyosov Z.A., Indiaminov S.I.",
       "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
-      "year": 2022,
-      "pages": "IV va XV boblar, kitob betlari 38-50; 151-158"
+      "page": "40"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "JTA 1981-yilda Lissabon deklaratsiyasini qabul qildi, 1995-yilda unga o‘zgartishlar kiritildi. Unda bemor huquqlariga oid 11 ta tamoyil bor.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "40"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "O‘zbekistonda “Fuqarolar sog‘ligini saqlash to‘g‘risida”gi qonun 1996-yil 29-avgustda qabul qilingan va shu yilning 14-sentabridan kuchga kirgan.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "42"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Reja: xalqaro tashkilotlar hujjatlari, Konstitutsiya, bemor va vrach huquqlari, etika qo‘mitalari. Maqsad: ularni O‘zbekiston qonunchiligi bilan bog‘lash.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "38-50; 151-158"
+     },
+     "uncertain": false
     }
-  ]
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: Nega bemor huquqlari aynan XX asr o‘rtasida muhim masalaga aylandi? Bemor huquqlari qonunga qanday o‘tadi? Doskada: 1972 → 1981 → 1995 → 1996 vaqt chizig‘ini chizdiring. Eslatma: berilgan manbada Qizil Xoch va Chegara bilmas shifokorlar haqida ma’lumot yo‘q, shuning uchun ular haqida raqam yoki fakt keltirilmaydi. Ma’ruzada manbadagi tashkilotlar (JTA, JSST, YUNESKO, Yevropa Kengashi) olinadi. Tipik xato: talabalar Qizil Xoch va Chegara bilmas shifokorlarni qo‘llanmada bor deb o‘ylaydi."
+  },
+  {
+   "title": "Xalqaro tashkilotlar va ularning hujjatlari",
+   "bullets": [
+    {
+     "text": "JTA hujjatlari vrach burchini (Jeneva, etika kodeksi) va bemor huquqlarini (Lissabon) belgilaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "40; 46-47"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "JSST 2000-yilda biotibbiy tekshiruvlar etika qo‘mitalari uchun qo‘llanma tayyorlagan.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "YUNESKO qo‘llanmasi bioetika qo‘mitalarining to‘rt turini ajratadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "152"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Tashkilotlar va hujjatlar",
+    "nodes": [],
+    "header": [
+     "Tashkilot",
+     "Hujjat",
+     "Mazmuni"
+    ],
+    "rows": [
+     [
+      "JTA",
+      "Jeneva dekl., Tibbiy etika kodeksi",
+      "Vrach majburiyatlari, shifokor siri"
+     ],
+     [
+      "JTA",
+      "Lissabon (1981), Xelsinki (1975)",
+      "Bemor huquqlari; maxsus qo‘mitalar"
+     ],
+     [
+      "JSST",
+      "Qo‘llanma (2000)",
+      "Biotibbiy tekshiruv etika qo‘mitalari"
+     ],
+     [
+      "YUNESKO; Yevropa Kengashi",
+      "Bioetika qo‘mitalari, komissiyalari",
+      "YUNESKO qo‘llanmasida 4 tur"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: Jeneva deklaratsiyasi va Lissabon deklaratsiyasi nima bilan farq qiladi? Etika qo‘mitalari uchun xalqaro qo‘llanma nega kerak? Doskada: jadvalni o‘zlari chizib, har hujjatga bitta kalit so‘z yozsinlar. Diqqat: Jeneva ≠ Lissabon. Jeneva vrach qasamyodi, Lissabon bemor huquqlari. Tipik xato: Xelsinki deklaratsiyasini bemor huquqlari hujjati deb aytish. Manbada u maxsus qo‘mitalar tahririda tilga olingan."
+  },
+  {
+   "title": "Yevropa Kengashi konventsiyasi: asosiy qoidalar",
+   "bullets": [
+    {
+     "text": "Konventsiya yangi tibbiy texnologiyalar salbiy oqibatlarini bartaraf etish, inson huquqlari va qadr-qimmatini himoya qilish uchun qabul qilingan.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "81-82"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Genom sohasida: genetik test faqat belgilangan maqsadlarda; genomga aralashish faqat profilaktik, terapevtik yoki diagnostik maqsadda.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "82"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Embrionlar sohasida: tadqiqot maqsadida inson embrionini yaratish taqiqlanadi.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "82"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Transplantologiyada: tirik donordan organ faqat roziligi bilan va faqat qabul qiluvchini davolash uchun; tana qismlari daromad manbai bo‘lmaydi.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "82"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Konventsiya qoidalari",
+    "children": [
+     {
+      "label": "Genetik test",
+      "items": [
+       "Faqat belgilangan maqsadda"
+      ]
+     },
+     {
+      "label": "Genomga aralashish",
+      "items": [
+       "Profilaktika, terapiya, diagnostika"
+      ]
+     },
+     {
+      "label": "Embrion tadqiqoti",
+      "items": [
+       "Tadqiqot uchun yaratish taqiq"
+      ]
+     },
+     {
+      "label": "Tirik donor",
+      "items": [
+       "Rozilik; qabul qiluvchini davolash uchun"
+      ]
+     },
+     {
+      "label": "Tana qismlari",
+      "items": [
+       "Daromad manbai bo‘lmaydi"
+      ]
+     }
+    ],
+    "caption": "Konventsiya qoidalari (Muxamedova, 82-bet)"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Eslatma: kitobda konventsiya yili ikki xil ko‘rsatilgan (1996 va 1997); slaydda yil keltirilmadi."
+  },
+  {
+   "title": "Biotibbiy hujjatlar: Nyurnbergdan Xelsinkigacha",
+   "bullets": [
+    {
+     "text": "Nyurnberg kodeksi qoidalari bir tezisga qisqaradi: eksperiment uchun ixtiyoriy rozilik va barcha tafsilotlarni to‘liq oshkor qilish shart.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "81"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Xelsinki deklaratsiyasi (JTA 18-sessiyasi, 1964-yil iyun): sub’ektlar manfaati har doim ilm va jamiyat manfaatidan ustun.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "81"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Deklaratsiya bir necha marta tahrir qilindi; tadqiqot protokoli mustaqil axloqiy qo‘mita tomonidan tasdiqlanishi kerak.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "81"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "BMT fuqarolik va siyosiy huquqlar xalqaro paktida (1966; kuchga kirishi 1976): hech kim erkin roziligisiz tibbiy yoki ilmiy tajribaga jalb qilinmaydi.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "81"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Nyurnberg kodeksi",
+      "value": "1947"
+     },
+     {
+      "label": "Xelsinki deklaratsiyasi",
+      "value": "1964"
+     },
+     {
+      "label": "BMT fuqarolik pakti",
+      "value": "1966"
+     },
+     {
+      "label": "Paktning kuchga kirishi",
+      "value": "1976"
+     }
+    ],
+    "caption": "Hujjatlar xronologiyasi"
+   },
+   "teacher_notes": "Vaqt: 4 daq. Esda tuting: Nyurnberg — ixtiyoriy rozilik; Xelsinki — sub’ekt manfaati ustun; mustaqil qo‘mita ekspertizasi."
+  },
+  {
+   "title": "Konstitutsiya: tenglik va daxlsizlik (18–20-moddalar)",
+   "bullets": [
+    {
+     "text": "Konstitutsiyaning ikkinchi bo‘limi inson va fuqarolarning asosiy huquq, erkinlik va burchlariga bag‘ishlangan.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "38"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Huquq, majburiyat va javobgarlik bir-biridan ajralmas tushunchalar sifatida qabul qilinishi lozim.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "40"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Fuqarolar o‘z huquqlarini sud orqali himoya qilish huquqiga ega (44-modda).",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "39"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "18–20-moddalar mazmuni",
+    "nodes": [],
+    "header": [
+     "Modda",
+     "Qoida",
+     "Izoh"
+    ],
+    "rows": [
+     [
+      "18",
+      "Qonun oldida tenglik",
+      "Jinsi, irqi, tilidan qat’i nazar"
+     ],
+     [
+      "19",
+      "Huquq faqat sud qarori bilan cheklanadi",
+      "Qonuniy huquqlar daxlsiz"
+     ],
+     [
+      "20",
+      "Huquqdan foydalanish chegarasi",
+      "Boshqalar manfaatiga zarar yetkazmaslik"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: Bemorning huquqi shifokor yoki jamiyat manfaatiga zid kelsa nima bo‘ladi? 19-modda tibbiyotda qanday ma’no beradi? Doskada: ‘huquq – burch – javobgarlik’ uchburchagini chizdiring. Tipik xato: 18-moddadagi tenglikni imtiyozlar umuman bo‘lmasligi deb tushunish. Manbada imtiyozlar faqat qonun bilan belgilanishi aytilgan. Tezkor savol: huquqni cheklash uchun qanday hujjat kerak?"
+  },
+  {
+   "title": "Yashash huquqi va 26-modda: uch tezis",
+   "bullets": [
+    {
+     "text": "24-modda: yashash huquqi ajralmas; 25-modda: erkinlik va shaxsiy daxlsizlik huquqi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "38"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "27-modda: sha’n-obro‘ himoyasi, shaxsiy hayotga aralashmaslik va turar joy daxlsizligi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "38"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "26-modda uch qismli (jadvalga qarang); qiynoq tibbiyotga xos emas, ammo ehtimoli istisno etilmaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "38-39"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "26-modda",
+    "children": [
+     {
+      "label": "1-qism",
+      "items": [
+       "Aybsizlik prezumpsiyasi"
+      ]
+     },
+     {
+      "label": "2-qism",
+      "items": [
+       "Qiynoq va qadrni kamsitish taqiqi"
+      ]
+     },
+     {
+      "label": "3-qism",
+      "items": [
+       "Roziliksiz tibbiy/ilmiy tajriba taqiqi"
+      ]
+     }
+    ],
+    "caption": "26-modda: uch qism"
+   },
+   "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega rozilikka oid qism aynan tibbiyot uchun muhim? 2) Aybsizlik prezumpsiyasi shifokorga qanday aloqador? Doskada: 24, 25, 27-moddalarni va 26-modda uch qismini ustun shaklida chizdiring. Tipik xato: 26-moddaning qismlarini va moddalarning raqamlarini aralashtirish."
+  },
+  {
+   "title": "Tezkor savol: Konstitutsiya moddalari",
+   "bullets": [
+    {
+     "text": "Savol 1: yashash huquqi qaysi moddada? Shaxsiy daxlsizlik huquqi-chi? (Javob: 24-modda va 25-modda.)",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "38"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Savol 2: sha’n-obro‘ himoyasi va turar joy daxlsizligi qaysi moddada kafolatlangan? (Javob: 27-modda.)",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "38"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Savol 3: aybsizlik prezumpsiyasi 26-moddaning qaysi qismida? Rozilikka oid qism-chi? (Javob: birinchi va uchinchi qism.)",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "38-39"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Diqqat: xato qilish xavfi — 26-modda qismlarini aralashtirmang: aybsizlik ≠ qiynoq taqiqi ≠ tajribaga rozilik.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "38-39"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daq. Savollarni og‘zaki yoki kartochkalar bilan so‘rang, talabalar juftlikda javob beradi. Muhokama: qaysi moddani eslab qolish qiyin va nega? Doskada: modda raqami – mazmun juftliklarini yozdiring. Tipik xato: 24 va 25-moddalarni bir-biriga almashtirib yuborish."
+  },
+  {
+   "title": "Malakali tibbiy xizmat huquqi va davlat kafolati",
+   "bullets": [
+    {
+     "text": "40-modda fuqarolarning malakali tibbiy xizmatdan foydalanish huquqini kafolatlaydi; yordamning barcha turlaridan malakali bahramand bo‘lish nazarda tutiladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "39"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "43-modda: mustahkamlangan huquq va erkinliklarni davlat ta’minlaydi. Bu davlatning burchi; fuqarolarning ham davlat oldida burchlari bor.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "39"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "44-modda: huquqni sud orqali himoya qilish, davlat organlari va mansabdorlarning g‘ayriqonuniy harakati ustidan sudga shikoyat qilish kafolatlangan.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "39"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "45-modda: voyaga yetmaganlar, mehnatga layoqatsizlar va yolg‘iz keksalarning huquqlari davlat himoyasida.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "39"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) 40-modda bemor huquqlari bilan qanday bog‘lanadi? 2) Bemor huquqi buzilsa, 44-modda qanday yo‘l beradi? Doskada: 40, 43, 44, 45-moddalarni ’huquq – kafolat – himoya’ zanjiri sifatida chizdiring. Tipik xato: 43-modda (davlat ta’minoti) bilan 44-moddani (sudga shikoyat) almashtirish."
+  },
+  {
+   "title": "Fuqarolar burchlari: huquq, majburiyat, javobgarlik",
+   "bullets": [
+    {
+     "text": "Konstitutsiyaning XI bobi fuqarolarning burchlariga bag‘ishlangan. Huquqqa ega bo‘lish ma’lum burch va majburiyatlarni ham taqozo etadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "39"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Fuqarolar Konstitutsiya va qonunlarga rioya etishi, boshqalarning huquqi, sha’ni va qadr-qimmatini hurmat qilishi, soliq va mahalliy yig‘imlarni to‘lashi shart.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "39-40"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Fuqarolar O‘zbekistonni himoya qilishi, xalqning tarixiy, ma’naviy va madaniy merosini asrashi, tabiiy muhitga ehtiyotkor bo‘lishi lozim.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "40"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Burchga rioya qilinmasa, javobgarlik kelib chiqadi. Shu sabab huquq, majburiyat va javobgarlik uzviy, ajralmas tushunchalar sifatida qabul qilinadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "40"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nima uchun huquqni burchsiz tasavvur qilib bo‘lmaydi? 2) Tibbiyot xodimi va bemor burchlariga misol keltiring. Doskada: uchburchak chizing (huquq – majburiyat – javobgarlik) va o‘qlar bilan bog‘lang. Tipik xato: talabalar faqat huquqlarni sanab, burchlarni va javobgarlikni unutadi."
+  },
+  {
+   "title": "Voqea tahlili: rozilikka asoslangan tajriba",
+   "bullets": [
+    {
+     "text": "Vaziyat: tadqiqotchi fuqarodan so‘ramasdan, uning roziligisiz o‘zida tibbiy yoki ilmiy tajriba o‘tkazmoqda.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "39"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Savol: bu holat Konstitutsiyaning qaysi normasini buzadi va fuqaro o‘z huquqini qayerda himoya qila oladi?",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "39"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Maslahat: Konstitutsiyaning 26-moddasida uchta tezis bor – aybsizlik prezumpsiyasi, qiynoq va zo‘ravonlikning taqiqi hamda rozilik talabi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "38-39"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Fuqaro o‘z huquqini sud orqali himoya qilishi va noqonuniy harakatlar ustidan sudga shikoyat qilishi mumkin (44-modda).",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "39"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daq. To‘g‘ri javob: 26-moddaning uchinchi qismi buziladi – fuqaroning roziligisiz unda tibbiy yoki ilmiy tajriba o‘tkazish taqiqlangan. Muhokama: 1) Nega rozilik ixtiyoriy va ma’lumotli bo‘lishi kerak? 2) Shikoyat qaysi yo‘llar bilan mumkin? Doskada: 26-moddaning uch qismini ustun shaklida yozing. Tipik xato: 26-moddani faqat aybsizlik prezumpsiyasi deb tushunish."
+  },
+  {
+   "title": "Bemor huquqlari harakati tarixi",
+   "bullets": [
+    {
+     "text": "XX asrning 70-yillarida dunyoning turli mamlakatlarida bemor huquqlari uchun harakat boshlandi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "40"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Lissabon deklaratsiyasida bemor huquqlariga oid 11 ta tamoyil keltirilgan.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "40"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Deklaratsiya aksariyat mamlakatlar, jumladan O‘zbekiston qonunchiligida inobatga olingan.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "42"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "XX asr 70-yillari",
+      "text": "Bemor huquqlari harakati boshlandi — Turli mamlakatlar"
+     },
+     {
+      "title": "1972-yil",
+      "text": "Bemor huquqlari to‘g‘risida Bill — AQSh kasalxonalar assotsiatsiyasi"
+     },
+     {
+      "title": "1981-yil",
+      "text": "Lissabon deklaratsiyasi qabul qilindi — Jahon tibbiyot assotsiatsiyasi"
+     },
+     {
+      "title": "1995-yil",
+      "text": "Deklaratsiyaga o‘zgartish kiritildi — Jahon tibbiyot assotsiatsiyasi"
+     }
+    ],
+    "caption": "Bemor huquqlari harakati"
+   },
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nima uchun harakat aynan XX asr o‘rtalarida kuchaydi? 2) Xalqaro deklaratsiya milliy qonunga qanday ta’sir qiladi? Doskada: to‘rt sanani vaqt o‘qida chizing. Tipik xato: 1972-yildagi AQSh hujjati bilan 1981-yildagi Lissabon deklaratsiyasini adashtirish."
+  },
+  {
+   "title": "Lissabon deklaratsiyasi: 1–5-tamoyillar",
+   "bullets": [
+    {
+     "text": "Jahon tibbiyot assotsiatsiyasi deklaratsiyani 1981-yilda qabul qilgan, 1995-yilda to‘ldirgan; unda 11 tamoyil bor.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "40"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Hushsiz bemorda qonuniy vakil bo‘lmasa, qaror bemorning manfaatidan kelib chiqib qabul qilinadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "41"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Muomalaga layoqatsiz bemor ham qarorda imkon qadar bevosita ishtirok etishi lozim.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "41"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Lissabon: 1–5-tamoyillar",
+    "children": [
+     {
+      "label": "1. Sifatli xizmat",
+      "items": [
+       "Resurs cheklansa, tanlov tibbiy mezonda",
+       "Barcha bemorlar, kamsitishsiz"
+      ]
+     },
+     {
+      "label": "2. Erkin tanlov",
+      "items": [
+       "Shifokor va muassasani tanlash, maslahat",
+       "Bemorning o‘zi"
+      ]
+     },
+     {
+      "label": "3. O‘zi belgilash",
+      "items": [
+       "Ma’lumot olib, o‘zi qaror qiladi",
+       "Bemorning o‘zi"
+      ]
+     },
+     {
+      "label": "4–5. Hushsiz / layoqatsiz",
+      "items": [
+       "Rozilik qonuniy vakildan olinadi",
+       "Qonuniy vakil yoki manfaat"
+      ]
+     }
+    ],
+    "caption": "1–5-tamoyillar qisqacha"
+   },
+   "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Resurs cheklangan bo‘lsa, nega faqat tibbiy mezon qo‘llanadi? 2) Hushsiz bemorda kim rozilik beradi? Doskada: 1–5-tamoyillar jadvalini talabalar bilan birga chizdiring. Tipik xato: 4-tamoyilni (hushsiz bemor) 5-tamoyil (muomalaga layoqatsiz bemor) bilan aralashtirish."
+  },
+  {
+   "title": "Lissabon deklaratsiyasi: 6–8-tamoyillar",
+   "bullets": [
+    {
+     "text": "Bemorning xohishiga qarshi muolaja faqat tibbiy etika tamoyillariga mos holda, qonunda belgilangan istisno hollarda o‘tkaziladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "41"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bemor sog‘lig‘i va tibbiy hujjatlari haqida tushunarli, mahalliy madaniyatni hisobga olgan ma’lumot oladi; ma’lumot beriladigan shaxsni o‘zi tanlaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "41"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Istisno: hayoti va sog‘lig‘iga jiddiy xavf bo‘lishiga yetarli asos bo‘lsa, ma’lumot yashirilishi mumkin. Diqqat: bu band qonun normalariga to‘liq mos kelmaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "41, 45"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Salomatlik holati, tashxis, davolash, prognoz va shaxsiy ma’lumot bemor o‘limidan keyin ham sir. Istisno: avlodlarning irsiy kasallik xavfi haqidagi ma’lumot.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "41-42"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Qanday holatda ma’lumotni bemordan yashirish asosli bo‘ladi? 2) Nega sir o‘limdan keyin ham saqlanadi? Doskada: ‘qoida → istisno’ juftligini 7- va 8-tamoyil uchun yozdiring. Tipik xato: istisnoni umumiy qoida deb o‘ylash, ya’ni ma’lumotni bemordan doim yashirish mumkin deb hisoblash."
+  },
+  {
+   "title": "Lissabon deklaratsiyasi: 9–11-tamoyillar",
+   "bullets": [
+    {
+     "text": "Har kim sog‘lom turmush tarzi, tibbiy xizmat, kasalliklarning oldini olish va erta aniqlash bo‘yicha sanitariya ma’rifatidan foydalanishga haqli.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "42"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Yordam jarayonida inson sha’ni, qadr-qimmati va shaxsiy hayot daxlsizligi hurmat qilinadi. Bemor azobini yengillashtirish huquqiga ega.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "42"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Davolab bo‘lmaydigan kasallikda bemor hayotdan munosib va imkon qadar og‘riqsiz ketish huquqiga ega. Diniy qo‘llab-quvvatlashni olishi yoki rad etishi mumkin.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "42"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Lissabon deklaratsiyasi ko‘p mamlakatlarda, jumladan O‘zbekistonda sog‘liqni saqlash qonun hujjatlarida inobatga olingan.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "42"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Og‘riqsiz munosib ketish huquqi shifokordan nimani talab qiladi? 2) Diniy qo‘llab-quvvatlashni rad etish huquqi nima uchun muhim? Doskada: 11 tamoyilning raqam va qisqa nomlarini ketma-ket yozdiring. Tipik xato: 10-tamoyilni (munosib ketish huquqi) evtanaziya huquqi deb tushunish; kitobda bunday gap yo‘q."
+  },
+  {
+   "title": "Tezkor savol: Lissabon deklaratsiyasi",
+   "bullets": [
+    {
+     "text": "Savol: Lissabon deklaratsiyasini kim qabul qilgan? Javob: Jahon tibbiyot assotsiatsiyasi, 1981-yilda; 1995-yilda unga o‘zgartirishlar kiritilgan.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "40"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Savol: nechta tamoyil bor? Javob: 11 ta, sifatli xizmat olish huquqidan tortib diniy qo‘llab-quvvatlash huquqigacha.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "40-42"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Diqqat: 4-tamoyil (hushsiz bemor) ≠ 5-tamoyil (muomalaga loyiq bo‘lmagan bemor, masalan, balog‘atga yetmagan).",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "41"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "5-tamoyilda rozilikni qonuniy vakil beradi, ammo bemor qaror qabul qilishda imkon qadar maksimal darajada bevosita ishtirok etishi lozim.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "41"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) 11 tamoyildan nechtasini daftarsiz sanay olasiz? 2) 4- va 5-tamoyil farqi nimada? Doskada: 11 tamoyilni ikki ustunga (tibbiy xizmat / bemor erkinligi) ajratib yozdiring. Tipik xato: hushsiz bemor bilan muomalaga layoqatsiz bemorni aralashtirish va 5-tamoyilda bemorning ishtirokini unutish."
+  },
+  {
+   "title": "Voqea tahlili: hushsiz holatdagi bemor",
+   "bullets": [
+    {
+     "text": "Vaziyat: bemor hushsiz holda shifoxonaga keltirildi. Qonuniy vakili topilmadi, davolanishni rad etish haqida oldingi bayonoti ham yo‘q.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "41"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Lissabon deklaratsiyasining 4-tamoyili: bunday holda qaror bemorning manfaatini ko‘zlab qabul qilinadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "41"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "O‘zbekiston qonuniga ko‘ra, kechiktirib bo‘lmaydigan holda masalani konsilium hal qiladi. Imkon bo‘lmasa, davolovchi yoki navbatchi vrach qaror qiladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "44"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Savol talabalarga: kim rozilik beradi va vrach qarordan keyin nima qilishi shart? Maslahat: muassasa rahbariyatini xabardor qilishi kerak.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "44"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Qonuniy vakil kelib qolsa, vaziyat qanday o‘zgaradi? 2) Bemor oldin davolanishni rad etgan bo‘lsa-chi? Doskada: qaror qabul qilish zanjirini chizdiring (vakil → konsilium → navbatchi vrach). Tipik xato: vrach qarorni rahbariyatga xabar qilishni unutadi va ‘manfaat’ tushunchasini o‘zboshimchalik deb talqin qiladi."
+  },
+  {
+   "title": "“Fuqarolar sog‘ligini saqlash to‘g‘risida”gi qonun",
+   "bullets": [
+    {
+     "text": "Keyin qonunga bir qator o‘zgartirishlar kiritilgan, lekin uning asosiy mazmuni o‘zgarmagan.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "42"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "13-modda: sog‘liqni saqlash huquqi daxlsiz; davlat uni kamsitishlardan himoya qilishni kafolatlaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "42"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Besh asosiy tamoyilning birinchisi: sog‘liqni saqlashda inson huquqlariga rioya qilish.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "46"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Qabul qilingan",
+      "value": "29.08.1996"
+     },
+     {
+      "label": "Kuchga kirgan",
+      "value": "14.09.1996"
+     },
+     {
+      "label": "Tuzilishi",
+      "value": "6 qism, 47 modda"
+     },
+     {
+      "label": "42-modda",
+      "value": "kuchini yo‘qotgan"
+     }
+    ],
+    "caption": "Qonunning asosiy ko‘rsatkichlari"
+   },
+   "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega bemor huquqlari bilan birga shifokor huquqlari ham himoyalanishi kerak? 2) 13-modda Konstitutsiyaning qaysi moddasi bilan bog‘liq (18-modda)? Doskada: jadvalni daftarga ko‘chirtiring va sanalarni yozdiring. Tipik xato: qabul qilingan sana (29-avgust) bilan kuchga kirgan sanani (14-sentabr) aralashtirish."
+  },
+  {
+   "title": "Qonunning 24-moddasi: bemor huquqlari",
+   "bullets": [
+    {
+     "text": "Tibbiy yordamga murojaat qilgan bemor hurmat va mehr-muruvvatga haqli. U shifokor va muassasani tanlaydi, sanitariya-gigiena talabiga mos sharoitda davolanadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "43"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bemor so‘rasa, boshqa mutaxassislar konsiliumi va maslahatidan foydalanadi. Tibbiy aralashuvga ixtiyoriy rozilik berishi yoki uni rad etishi mumkin.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "43"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Murojaat faktini, tashxisni va davolash vaqtida olingan ma’lumot sir saqlanadi. Sug‘urta, zararni qoplash va advokat qo‘yish ham huquqlar qatorida.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "43"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Huquq buzilsa, bemor yoki uning qonuniy vakili shikoyatni davolash muassasasi rahbariyatiga, yuqori boshqaruv organiga yoki sudga topshirishi mumkin.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "43"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Qaysi huquqlar bemorning shaxsiy qarori bilan, qaysilari muassasa tashkiliy sharoiti bilan bog‘liq? 2) Huquq buzilsa, bemor birinchi navbatda qayerga murojaat qiladi? Doskada: 24-moddadagi 9 ta huquqni ustunlarga ajrating. Tipik xato: shifokor tanlash huquqini ‘‘istalgan vaqtda istalgan shifokor’’ deb mutlaqlashtirish, shuningdek shikoyat yo‘llarini faqat sud bilan cheklash."
+  },
+  {
+   "title": "JSST va 1994-yildagi zamonaviy model",
+   "bullets": [
+    {
+     "text": "JSST maqsadi — barcha xalqlarga sog‘liqning eng yuqori darajasiga erishish (JSST Nizomi 1-moddasi).",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "270"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "1994-yilda JSST shifokor–bemor munosabatining zamonaviy modelini uch asosiy komponent asosida shakllantirdi.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "270"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "JSST bemorga ishonchli va tushunarli axborot berish tamoyilini rasman tasdiqladi.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "270"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Shifokor bemorni qiziqtirgan hamma narsani tushuntirishi va ob’ektiv, tekshirilishi mumkin ma’lumotlarni ta’minlashi shart.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "270"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "JSST modeli (1994)",
+    "children": [
+     {
+      "label": "Sog‘liq huquqi",
+      "items": [
+       "Barcha odamlarning sog‘ligiga huquqi"
+      ]
+     },
+     {
+      "label": "Axborot huquqi",
+      "items": [
+       "Bemorning xabardor bo‘lish huquqi"
+      ]
+     },
+     {
+      "label": "Shifokor majburiyati",
+      "items": [
+       "Hamma narsani tushuntirish"
+      ]
+     }
+    ],
+    "caption": "Uch komponent"
+   },
+   "teacher_notes": "Vaqt: 3 daq. JSST hujjatlari qo‘mitalar bilan bog‘lanadi: 2000-yildagi qo‘llanma (slaydlar 29–30)."
+  },
+  {
+   "title": "25-modda: ma’lumot olish huquqi",
+   "bullets": [
+    {
+     "text": "Har bir fuqaro sog‘lig‘i holati, tekshiruv va davolash natijalari, tashxis, prognoz, davolash usullari va ularning xavfi haqida to‘liq ma’lumot olishga haqli.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "43"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "O‘n to‘rt yoshga to‘lmagan yoki layoqatsiz deb topilgan shaxslar haqidagi ma’lumot ularning qonuniy vakillariga beriladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "43-44"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kasallik kechishi yomon bo‘lishi taxmin qilinsa, ma’lumot fuqaroga aytiladi. Taqiqlamasa, oila a’zolariga etika me’yoriga rioya qilib xabar qilinadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "44"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Fuqaro talabiga ko‘ra, uning sog‘lig‘i holatini aks ettiruvchi tibbiy hujjatlardan ko‘chirmalar berilishi lozim.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "44"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Yomon prognozni bemorga qanday ‘‘diplomatik’’ yetkazish mumkin? 2) Bemor oilasiga xabar berishni taqiqlagan bo‘lsa nima bo‘ladi? Doskada: ‘‘kimga ma’lumot beriladi’’ sxemasini (bemor, qonuniy vakil, oila) chizing. Tipik xato: oila a’zolariga xabarni bemor roziligisiz har doim berish mumkin deb o‘ylash."
+  },
+  {
+   "title": "26-modda: tibbiy aralashuvga rozilik",
+   "bullets": [
+    {
+     "text": "Tibbiy aralashuv kasallik haqida ma’lumot olgan fuqaroning ixtiyoriy roziligi bilangina o‘tkaziladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "44"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Rozilik shakli (yozma yoki og‘zaki) qonunda belgilanmagan; buni qonun osti hujjatlari aniqlashi mumkin.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "44"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "14 yoshgacha va layoqatsiz deb topilganlar uchun rozilikni qonuniy vakil beradi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "44"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "flow",
+    "caption": "Rozilik olib bo‘lmaganda",
+    "nodes": [
+     "Rozilik bildirish imkoni yo‘q",
+     "Kechiktirib bo‘lmaydigan holat",
+     "Konsilium qaror qiladi",
+     "Konsilium bo‘lmasa: shifokor",
+     "Rahbariyat xabardor qilinadi"
+    ],
+    "header": [],
+    "rows": []
+   },
+   "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega rozilik shaklini qonunda aniq belgilash muhim bo‘lishi mumkin? 2) Navbatchi shifokor qarori qachon asosli bo‘ladi? Doskada: favqulodda holatda qarorlar zanjirini chizing. Tipik xato: kechiktirib bo‘lmaydigan holatda rozilik shart emas deb hisoblash; aslida qarorni konsilium yoki shifokor qabul qiladi va rahbariyat keyin xabardor qilinadi."
+  },
+  {
+   "title": "27–28-moddalar: rad etish va majburiy yordam",
+   "bullets": [
+    {
+     "text": "Bemor yoki uning qonuniy vakili tibbiy aralashuvni rad etishi yoki to‘xtatishni talab qilishi mumkin (27-modda).",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "44"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Shifokor yozma rad tasdiqnomasini oladi; imkoni bo‘lmasa, guvohlar ishtirokida dalolatnoma tuzadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "44"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "28-modda: kasallik atrofdagilarga xavf tug‘dirsa, roziliksiz tibbiy yordam ko‘rsatilishi mumkin.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "45"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "27-modda",
+      "items": [
+       "Asosi: Bemorning xohish-irodasi",
+       "Kim qaror qiladi: Bemor yoki qonuniy vakil",
+       "Rasmiylashtirish: Yozma tasdiq yoki dalolatnoma",
+       "Misol: Rad etish yoki to‘xtatish"
+      ]
+     },
+     {
+      "title": "28-modda",
+      "items": [
+       "Asosi: Atrofdagilarga xavf",
+       "Kim qaror qiladi: Qonundagi asos va tartib",
+       "Rasmiylashtirish: Tekshiruv, kasalxona, yakkalash",
+       "Misol: Xavfli yuqumli kasalliklar"
+      ]
+     }
+    ],
+    "caption": "27- va 28-moddalar"
+   },
+   "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Bemor rad etsa, shifokor nima qiladi? 2) Nega yuqumli kasallikda rozilik shart emas? Doskada: 27- va 28-moddalarni ikki ustunli jadvalda chizdiring. Tipik xato: talabalar yozma rad tasdiqnomasi har holda majburiy deb o‘ylaydi. Manbaga ko‘ra, qonun buni barcha holatda qat’iy talab qilmaydi; aniqlik quyi hujjatlarda bo‘lishi mumkin."
+  },
+  {
+   "title": "Tezkor savol: rozilik va rad etish",
+   "bullets": [
+    {
+     "text": "Tezkor savol: tibbiy aralashuv qaysi holatlarda bemorning roziligisiz o‘tkazilishi mumkin? Bir daqiqada javob bering.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "44-45"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bemor xohishini bildira olmasa va aralashuvni kechiktirib bo‘lmasa, qaror konsiliumda. Imkon bo‘lmasa, davolovchi yoki navbatchi vrach hal qiladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "44"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Kasallik atrofdagilarga xavf tug‘dirsa, qonunda belgilangan tartibda roziliksiz tekshiruv, yotqizish yoki yakkalab qo‘yish mumkin.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "45"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Diqqat: xato qilish xavfi. Rad etish (27-modda) bemorning huquqi, majburiy yordam (28-modda) esa atrofdagilar xavfi bilan bog‘liq. Ularni aralashtirmang.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "44-45"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daq. Savolni ovoz chiqarib so‘rang, 2-3 talabadan javob oling. Muhokama: 1) Konsilium va navbatchi vrach qarori qanday farqlanadi? 2) Qaror keyin kimga xabar qilinadi? (muassasa rahbariyatiga). Doskada: 27 va 28 ni ’bemor irodasi’ va ’jamiyat xavfi’ deb ikki o‘qqa joylashtiring. Tipik xato: ’roziliksiz’ degan so‘zni ’istalgan holatda’ deb tushunish."
+  },
+  {
+   "title": "Shifokor siri va uning istisnolari (45-modda)",
+   "bullets": [
+    {
+     "text": "Shifokor siri bemor vafotidan keyin ham saqlanadi; istisnolar qonunning 45-moddasida sanab o‘tilgan.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "47-48"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "14 yoshgacha yoki layoqatsiz deb topilgan bemorning ota-onasi yoki vakilini xabardor qilish roziliksiz mumkin.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "48"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Jinoyat kodeksi 241-modda: jinoyat haqida xabar bermaslik yoki uni yashirish jinoiy javobgarlikka olib keladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "48"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "table",
+    "caption": "Sirni oshkor etish holatlari",
+    "nodes": [],
+    "header": [
+     "Holat",
+     "Mazmuni"
+    ],
+    "rows": [
+     [
+      "14 yoshgacha / layoqatsiz",
+      "Vakilni xabardor qilish"
+     ],
+     [
+      "Xohishini bildira olmaydi",
+      "Tekshirish va davolash maqsadida"
+     ],
+     [
+      "Atrofdagilarga xavf",
+      "Yuqumli kasallik, ommaviy zaharlanish"
+     ],
+     [
+      "Rasmiy so‘rov / noqonuniy zarar",
+      "Surishtiruv, tergov, sud; zarar gumoni"
+     ]
+    ]
+   },
+   "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega sir vafotdan keyin ham saqlanadi? 2) Jinoyat shubhasi bo‘lsa, shifokor kimga xabar beradi? (tegishli huquqni muhofaza etuvchi idoralarga). Doskada: ’Sir’ doirasini chizib, 6 ta istisnoni o‘q bilan ko‘rsating. Tipik xato: talabalar istisnolarni sirni ’bekor qilish’ deb tushunadi. Aslida bu cheklangan, qonunda sanalgan holatlardir. Eslatma: jadvaldagi oxirgi qator ikki istisnoni birlashtiradi."
+  },
+  {
+   "title": "Lissabon deklaratsiyasi va qonun: o‘xshashlik va farq",
+   "bullets": [
+    {
+     "text": "Diqqat: Lissabon deklaratsiyasi ≠ qonun. Etika talablari qonun me’yoriga aylangan, ammo to‘liq mos tushmaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "45"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Lissabon 7-tamoyilining 2-bandi: hayotga jiddiy xavf bo‘lsa, ma’lumot bemordan yashirilishi mumkin.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "41"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qonunning 25-moddasi to‘liq ma’lumot olish huquqini beradi; yashirish istisnosi aytilmagan.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "43-44"
+     },
+     "uncertain": true
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Lissabon dekl.",
+      "items": [
+       "Qabul qilinishi: Jahon tibbiyot assotsiatsiyasi, 1981",
+       "Huquqlar bayoni: 11 ta tamoyil",
+       "Ma’lumot olish: Jiddiy xavf bo‘lsa, yashirish mumkin",
+       "Umumiy xulosa: G‘oyalar qonunga kirgan"
+      ]
+     },
+     {
+      "title": "Qonun",
+      "items": [
+       "Qabul qilinishi: 1996-yil 29-avgust; 14-sentabrdan kuchda",
+       "Huquqlar bayoni: 24-modda: bemor huquqlari ro‘yxati",
+       "Ma’lumot olish: To‘liq ma’lumot olish huquqi (25-modda)",
+       "Umumiy xulosa: Asosan mos, lekin to‘liq emas"
+      ]
+     }
+    ],
+    "caption": "Deklaratsiya va qonun"
+   },
+   "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Bemordan ma’lumotni yashirish qachon oqlanadi? 2) Nega etika va qonun to‘liq mos tushmasligi mumkin? Doskada: ikki ustunli jadval chizdirib, 7-tamoyilning 2-bandini ikkala tomonga yozdiring. Tipik xato: deklaratsiyani majburiy qonun deb tushunish yoki 25-modda matnida istisno bor deb aytish; manbada u ko‘rsatilmagan."
+  },
+  {
+   "title": "Bemor huquqlarining uch guruhi",
+   "bullets": [
+    {
+     "text": "Bemor huquqlari ahamiyat darajasiga ko‘ra shartli ravishda uch guruhga bo‘linadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "45"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Asosiy huquqlar: rozilik, rad etish, sog‘lig‘i va o‘z huquqlari haqida ma’lumot, shifokor siri.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "45"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tashkiliy huquqlar: shifokor va muassasani tanlash, sanitar sharoit, zararning qoplanishi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "46"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Huquqlar guruhlari",
+    "children": [
+     {
+      "label": "Asosiy",
+      "items": [
+       "Birinchi navbatda ta’minlanadi",
+       "Ma’lumotli rozilik; shifokor siri"
+      ]
+     },
+     {
+      "label": "Qo‘shimcha",
+      "items": [
+       "Yordamchi; ba’zan zarur bo‘lmaydi",
+       "Advokat, ruhoniy, og‘riqni yengillatish"
+      ]
+     },
+     {
+      "label": "Tashkiliy",
+      "items": [
+       "Xizmat tashkil etilishi bilan bog‘liq",
+       "Shifokorni tanlash; zararni qoplash"
+      ]
+     }
+    ],
+    "caption": "Huquqlar guruhlari"
+   },
+   "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega shifokor siri asosiy guruhda? 2) Qo‘shimcha huquq qachon ta’minlanmay qolishi mumkin? Doskada: uchta doira chizib, har biriga 2 tadan misol yozdiring. Tipik xato: shifokorni tanlash huquqini asosiy guruhga kiritish; manbada u tashkiliy guruhda."
+  },
+  {
+   "title": "Bemorlarning majburiyatlari",
+   "bullets": [
+    {
+     "text": "Bemor huquqlari amalda asosan tibbiyot xodimlari harakati bilan ta’minlanadi. Shu sabab ularni xodimlar burchi sifatida ham ko‘rish mumkin.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "46"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Shu bilan birga, bemorlarning tibbiyot xodimlariga nisbatan majburiyatlari ham mavjudligini ta’kidlash zarur.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "46"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "«Fuqarolar sog‘lig‘ini saqlash to‘g‘risida»gi qonunning birinchi tamoyili: inson huquqlariga rioya. Bunda bemorning ham, xodimning ham huquqi ta’minlanadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "46"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Bemorlar va yaqinlari xodimlar bilan umuminsoniy axloq-odob me’yorlariga rioya qilishi, ularning sha’ni va qadr-qimmatini hurmat qilishi kerak.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "46"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Bemor yoki yaqinlari xodimni haqorat qilsa, bu qaysi tamoyilga zid? 2) Huquq, majburiyat va javobgarlik nega o‘zaro bog‘liq? Doskada: ikki tomonli o‘q chizib, «bemor ↔ xodim» orasiga o‘zaro hurmatni yozdiring. Tipik xato: majburiyatlar faqat shifokorda bo‘ladi deb o‘ylash."
+  },
+  {
+   "title": "Voqea tahlili: yuqumli kasallik va rad etish",
+   "bullets": [
+    {
+     "text": "Vaziyat: yuqumli kasallik gumon qilingan bemor davolanishdan voz kechmoqda. Savol: u buni qonuniy rad eta oladimi?",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "44"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "27-modda: bemor yoki qonuniy vakili aralashuvni rad etishi mumkin. Shifokor yozma rad tasdiqnomasini oladi, imkon bo‘lmasa guvohlar bilan dalolatnoma tuzadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "44"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "28-modda: kasallik atrofdagilarga xavf tug‘dirsa, roziliksiz tekshiruv, yotqizish, kuzatish va yakkalash mumkin. Bu ayniqsa yuqumli kasalliklarga tegishli.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "45"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Diqqat: xato qilish xavfi! 27-modda (rad etish huquqi) ≠ 28-modda (xavf tug‘ilganda roziliksiz yordam). Xavf borligi aniqlanishi shart.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "44-45"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Rad etish huquqi qachon cheklanadi? 2) Shifokor qanday hujjat tuzadi? Doskada ikki ustunli sxema chizdiring: 27-modda va 28-modda. Tipik xato: talaba har qanday kasallikda rozilikni chetlab o‘tish mumkin deb o‘ylaydi, aslida shart atrofdagilarga xavf va qonuniy tartibdir."
+  },
+  {
+   "title": "Shifokor majburiyatlari: Jeneva deklaratsiyasi va kodeks",
+   "bullets": [
+    {
+     "text": "Tibbiy etika xalqaro kodeksining 1-bandi: shifokor doim yuqori kasbiy standartlarni ushlaydi, malakasini oshiradi, yangi bilim va ko‘nikma egallaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "47"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Shifokor bemor va hamkasblar bilan rostgo‘y bo‘ladi, nokompetent va yolg‘onchi hamkasblarga qarshi kurashadi. Foyda ko‘zlash mustaqil qarorga ta’sir qilmaydi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "47"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Shifokor hamdardlik va inson sha’niga hurmatni ustun qo‘yadi, hayotni saqlashni burch deb biladi. Zarurat bo‘lsa har kimga shoshilinch yordam beradi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "47"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Jeneva deklaratsiyasi (shifokorlar qasamyodi): umr bo‘yi insoniylikka xizmat, hayotni boshlanishidan hurmat; bilimni insonlik qonunlariga qarshi ishlatmaslik.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "47"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega o‘zini reklama qilish etikaga mos kelmaydi? 2) Jeneva qasamyodi qaysi holatlarda sinovdan o‘tadi? Doskada ikki ustun chizing: kodeks bandlari va qasamyod majburiyatlari. Tipik xato: Jeneva deklaratsiyasini Lissabon deklaratsiyasi (bemor huquqlari) bilan almashtirish."
+  },
+  {
+   "title": "Shifokor muloqot madaniyati va uning huquqlari",
+   "bullets": [
+    {
+     "text": "Murojaat, sog‘liq holati va tashxis sir saqlanadi, bemor vafotidan keyin ham. Gersen: doktorning qulog‘i bo‘lishi, lekin og‘zi bo‘lmasligi lozim.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "47"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Muloqotda nima emas, qanday aytilgani ham muhim. Shou: «ha» va «yo‘q» yozish bir xil, aytish turlicha. Kazins: «uchtasi tuzaladi», «ikkitasi o‘ladi» emas.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "48-49"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Shifokor sha’ni, qadr-qimmati va kasbiy obro‘sini himoya qiladi, malaka oshiradi. Bemorga yordamda aloqa va transportdan bepul, to‘sqinliksiz foydalanadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "49"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Ishonch yo‘q yoki bemor ko‘rsatmaga amal qilmasa va hayotga xavf bo‘lmasa, shifokor bosh tortadi: boshqa mutaxassisni tavsiya qilib, rahbariyatga xabar beradi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "49"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Yomon tashxisni bemorga qanday yetkazish kerak? 2) Qachon bosh tortish mumkin va keyin nima qilinadi? Doskada «bosh tortish» sxemasini chizdiring: shart, tavsiya, rahbariyatga xabar. Tipik xato: hayotga xavf bo‘lganda ham bosh tortish mumkin deb o‘ylash, aslida shart faqat xavf bo‘lmaganda."
+  },
+  {
+   "title": "Voqea tahlili: davolashdan bosh tortgan shifokor",
+   "bullets": [
+    {
+     "text": "Vaziyat: bemor va shifokor o‘rtasida ishonch yo‘q, bemor shifokor ko‘rsatmalariga amal qilmaydi, biroq uning hayotiga xavf yo‘q.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "49"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Savol: bunday holda shifokor davolashdan bosh tortishi mumkinmi va keyin qanday yo‘l tutishi shart?",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "49"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Javob: shifokor bosh tortishi mumkin. U bemorga boshqa mutaxassisni tavsiya qiladi va o‘z muassasasi rahbariyatiga xabar beradi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "49"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Diqqat: xato qilish xavfi — bosh tortish faqat hayotga xavf bo‘lmaganda mumkin. Zarurat tug‘ilsa, istalgan shaxsga shoshilinch yordam ko‘rsatiladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "47, 49"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Ishonch yo‘qligi shifokorga qanday huquq beradi? 2) Rahbariyatga xabar berish nima uchun kerak? Doskada chizish: «sabab → bosh tortish → boshqa mutaxassis → rahbariyatga xabar» zanjirini chizdiring. Tipik xato: talabalar bosh tortishni hayotga xavf bor holatda ham mumkin deb o‘ylaydi. Manbada shart aniq: hayotga xavf tug‘dirmasa."
+  },
+  {
+   "title": "Onkologiya va palliativ yordam dasturi",
+   "bullets": [
+    {
+     "text": "O‘zbekistonda onkologiya xizmatiga palliativ yordam ko‘rsatishni rivojlantirish dasturi tasdiqlangan.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "121"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "2017–2021-yillarga onkologik yordamni takomillashtirish dasturi 2017-yil aprelda Prezident qarori bilan tasdiqlandi; qiymati 155 million dollar.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "121"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Dasturdan kutiladigan natija: onkologik kasalliklardan o‘lim ko‘rsatkichi 38,7 dan 35 gacha kamayishi (aholi birligi manbada aniq emas).",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "121"
+     },
+     "uncertain": true
+    },
+    {
+     "text": "2022-yilgacha respublikaning barcha saraton dispanserlarida palliativ davolash bo‘limlarini ochish rejalashtirilgan.",
+     "source": {
+      "author": "Muxamedova Z.M.",
+      "title": "Bioetika (darslik), Toshkent",
+      "page": "121"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "facts",
+    "items": [
+     {
+      "label": "Dastur muddati",
+      "value": "2017–2021"
+     },
+     {
+      "label": "Dastur qiymati",
+      "value": "155 mln",
+      "unit": "dollar"
+     },
+     {
+      "label": "O‘lim ko‘rsatkichi",
+      "value": "38,7 → 35"
+     },
+     {
+      "label": "Palliativ bo‘limlar",
+      "value": "2022-yilgacha"
+     }
+    ],
+    "caption": "Onkologiya dasturi: asosiy ko‘rsatkichlar"
+   },
+   "teacher_notes": "Vaqt: 4 daq. Diqqat: o‘lim ko‘rsatkichining o‘lchov birligi kitobda aniq o‘qilmaydi — talabalarga ochiq ayting.",
+   "diagram_note": "O‘lim ko‘rsatkichining birligi (ming aholiga) OCR matnida aniq emas."
+  },
+  {
+   "title": "Etika qo‘mitalarining paydo bo‘lishi",
+   "bullets": [
+    {
+     "text": "G‘oya Nyurnberg jarayonida tug‘ildi; Bicher maqolasi va Taskidji tadqiqotlari ochilgach, zarurat oshdi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "151"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Keyin qo‘mitalar fanlararo bo‘ldi: huquqshunos, din vakili, psixolog va boshqalar qo‘shildi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "151"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "AQShda tadqiqot qonuni va Milliy komissiya tuzildi; qo‘mitalar bioetikani amaliyotga olib kirdi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "151"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "steps",
+    "items": [
+     {
+      "title": "Nyurnberg jarayoni",
+      "text": "Tajribada insonni himoya qilish g‘oyasi"
+     },
+     {
+      "title": "1960-yillar, AQSh",
+      "text": "Dastlabki qo‘mitalar, faqat tibbiyotchilar"
+     },
+     {
+      "title": "1975-yil",
+      "text": "Xelsinki deklaratsiyasida maxsus qo‘mitalar"
+     },
+     {
+      "title": "1990-yillar, AQSh",
+      "text": "Prezident komissiyasi tuzildi"
+     }
+    ],
+    "caption": "Qo‘mitalar tarixi"
+   },
+   "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nima uchun birinchi qo‘mitalarda faqat shifokorlar bo‘lishi kamchilik edi? 2) Nyurnberg va Taskidji holatlari nimani ko‘rsatdi? Doskada chizish: vaqt chizig‘ini (Nyurnberg → 1960-yillar → 1975 → 1990-yillar) chizdiring. Tipik xato: Xelsinki deklaratsiyasini Jahon tibbiyot assotsiatsiyasi emas, AQSh hujjati deb o‘ylash."
+  },
+  {
+   "title": "Xalqaro tashkilotlar va qo‘mita turlari",
+   "bullets": [
+    {
+     "text": "1990-yillarda YUNESKO huzurida bioetika bo‘yicha xalqaro qo‘mita tashkil etilgan.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "152"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Jahon sog‘liqni saqlash tashkiloti, Jahon tibbiyot assotsiatsiyasi, Yevropa Kengashida ham qo‘mitalar bor.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "152"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "YUNESKO qo‘llanmasi bo‘yicha qo‘mitalarning to‘rt turi bo‘lishi mumkin (jadvalda).",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "152"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Qo‘mita turlari",
+    "children": [
+     {
+      "label": "1-tur",
+      "items": [
+       "Siyosat va tavsiyalar ishlab chiqish"
+      ]
+     },
+     {
+      "label": "2-tur",
+      "items": [
+       "Tibbiy kasbiy assotsiatsiyalar qo‘mitasi"
+      ]
+     },
+     {
+      "label": "3-tur",
+      "items": [
+       "Tibbiy muassasalar bioetika qo‘mitasi"
+      ]
+     },
+     {
+      "label": "4-tur",
+      "items": [
+       "Ilmiy tadqiqot bioetikasi qo‘mitasi"
+      ]
+     }
+    ],
+    "caption": "YUNESKO bo‘yicha 4 tur"
+   },
+   "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Qaysi tur bevosita shifoxonadagi amaliy muammolar bilan ishlaydi? 2) Siyosat ishlab chiqadigan qo‘mita bilan tadqiqot qo‘mitasi nimasi bilan farq qiladi? Doskada chizish: to‘rt turni to‘rt ustun qilib chizing. Tipik xato: tashkilotlarni (YUNESKO, Jahon sog‘liqni saqlash tashkiloti) qo‘mita turlari bilan aralashtirish."
+  },
+  {
+   "title": "Qo‘mita darajalari va mamlakatlar tajribasi",
+   "bullets": [
+    {
+     "text": "Milliy qo‘mita siyosat asoslarini, regional qo‘mita mintaqa muammolarini, mahalliy qo‘mita amaliy yordam va ilmiy loyihalarning etik jihatlarini ko‘radi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "153"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Tuzilishi turlicha: AQShda Kongress Prezident komissiyasini, Fransiyada Prezident farmoni milliy qo‘mitani, Shvetsiyada hukumat qo‘mitani tuzgan.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "152-153"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Fransiya — tadqiqot axloqi, Italiya — biotexnologiya xavfsizligi, Polsha — qonunlarni etik baholash. Rossiyada qo‘mitalar 1987-yildan, asosan ilmiy tadqiqotda.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "152-153"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Zamonaviy bioetika 6 qismdan iborat: akademik bioetika, idoraviy qo‘mitalar, muassasa komissiyalari, kasbiy uyushmalar, bemor birlashmalari, harakatlar.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "153"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 6-7 daq. Muhokama: nega mamlakatlarda qo‘mitani tuzish usuli (Kongress, Prezident farmoni, hukumat) har xil? Milliy, regional va mahalliy qo‘mita vazifalari qanday farqlanadi? Doskada: 3 pog‘onali piramida (milliy–regional–mahalliy) va har biriga bittadan vazifa yozing. Tipik xato: regional qo‘mitani mahalliy bilan aralashtirish (mahalliy — aynan muassasadagi amaliy muammolar va tadqiqot loyihalarini ko‘radi). Eslatma: Shvetsiya bandidagi OCR matni qisman o‘qilmaydi, faqat o‘qiladigan qismi berildi."
+  },
+  {
+   "title": "Qo‘mita tamoyillari va ikki model",
+   "bullets": [
+    {
+     "text": "Tamoyillar: mustaqillik, fanlararolik, oshkoralik, plyuralizm (turli fikrlarni inobatga olish).",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "JSST (Jahon sog‘liqni saqlash tashkiloti) qo‘llanmasi (2000) qo‘mita tarkibi va ekspertiza tartibini beradi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "154-155"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "SOP — standart operatsion protsedura: qo‘mita ishining qadamlari tartibi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "154"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "compare",
+    "columns": [
+     {
+      "title": "Amerika",
+      "items": [
+       "Rasmiylik: Rasmiyroq, qonun bilan belgilangan",
+       "Qarorlar: Majburiy xususiyatda",
+       "Huquq: Taqiqlash huquqiga ega"
+      ]
+     },
+     {
+      "title": "Yevropa",
+      "items": [
+       "Rasmiylik: Nisbatan norasmiy",
+       "Qarorlar: Ko‘proq tavsiya xususiyatida",
+       "Huquq: Asosan tavsiya beradi"
+      ]
+     }
+    ],
+    "caption": "Amerika va Yevropa modeli"
+   },
+   "teacher_notes": "Vaqt: 6 daq. Muhokama: nega qo‘mita a’zolari tekshiruv o‘tkazuvchi muassasaga bog‘liq bo‘lmasligi kerak? Oshkoralik tamoyili qarorlar sir saqlanmasligini nimaga xizmat qiladi? Doskada: 4 tamoyilni 4 ta doira ko‘rinishida chizing. Diqqat: xato qilish xavfi — Amerika modeli ≠ Yevropa modeli (birida qaror majburiy, ikkinchisida tavsiya). Tipik xato: SOP ni qo‘mita tamoyili deb o‘ylash; u ish qadamlari standartidir."
+  },
+  {
+   "title": "O‘zbekistonda etika qo‘mitalari va faoliyat yo‘nalishlari",
+   "bullets": [
+    {
+     "text": "Dastlabki bioetika qo‘mitasi Sog‘liqni saqlash vazirligi huzurida tuzilgan; birinchi rahbari akademik M.S. Abdullaxujayeva bo‘lgan.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "153-154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Keyinroq shunday tuzilma Ibn Sino nomli Xalqaro jamg‘armada ham tashkil etilgan.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Hududiy va mahalliy idoralar, davolash muassasalari, ilmiy tashkilotlardagi etika qo‘mitalari faoliyati haqida ma’lumot yo‘q.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "154"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Idoraviy qo‘mitalar yo‘nalishlari: davolash, klinik sinovlar, ta’lim, qonunchilik, xizmatni tashkil etish, ijtimoiy-huquqiy, ekologik masalalar.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "155-156"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 6-7 daq. Muhokama: nega mintaqa va muassasalarda qo‘mita bo‘lishi kerak? Qaysi yo‘nalish talabalar tayyorgarligiga bevosita bog‘liq? Doskada: ikki ustun — «O‘zbekistonda mavjud» (vazirlik, Ibn Sino jamg‘armasi) va «ma’lumot yo‘q» (hududiy, muassasa). Tipik xato: oxirgi bandagi yo‘nalishlarni faqat O‘zbekistonga xos deb o‘ylash; manbada ular sog‘liqni saqlash idoralari qo‘mitalari uchun umumiy ro‘yxat sifatida berilgan."
+  },
+  {
+   "title": "Etik maslahat: 3 model va 3 yondashuv",
+   "bullets": [
+    {
+     "text": "Individual maslahatni bitta konsultant beradi. Undan keng bilim va tajriba talab etiladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "156"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Natijasiga ko‘ra uch yondashuv bor: ma’lumot beruvchi, vositachi (kelishuvga yo‘naltiruvchi) va qat’iy yondashuv.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "157"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "AQSh tajribasida kichik guruh modeli ko‘proq qo‘llanadi va ko‘p holatda eng maqbul hisoblanadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "157"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": {
+    "kind": "tree",
+    "root": "Maslahat modellari",
+    "children": [
+     {
+      "label": "Individual",
+      "items": [
+       "Shoshilinch holatda qulay",
+       "Subyektivlik belgisi bo‘lishi mumkin"
+      ]
+     },
+     {
+      "label": "Kichik guruh",
+      "items": [
+       "Oddiy holatda tezkor, ishonchliroq",
+       "Subyektivlik to‘liq istisno bo‘lmaydi"
+      ]
+     },
+     {
+      "label": "Etika qo‘mitasi",
+      "items": [
+       "Eng ishonchli, asoslangan xulosa",
+       "Tashkil etish vaqt talab qiladi"
+      ]
+     }
+    ],
+    "caption": "Etik maslahat modellari"
+   },
+   "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega individual maslahatda subyektivlik xavfi yuqori? 2) Nega AQShda kichik guruh modeli ko‘proq tanlanadi? Doskada chizish: uch modelni ‘tezlik – ishonchlilik’ o‘qida joylashtiring. Tipik xato: kichik guruh maslahatini etika qo‘mitasi bilan aralashtirish; qo‘mita alohida, rasmiy tuzilma."
+  },
+  {
+   "title": "Voqea tahlili: etik nizoni hal qilish",
+   "bullets": [
+    {
+     "text": "1-holat: shifoxonada shoshilinch vaziyatda etik ikkilanish paydo bo‘ldi va qaror zudlik bilan kerak.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "156"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "2-holat: bemor yaqinlari va shifokorlar o‘rtasida qadriyatlar bo‘yicha murakkab nizo cho‘zilmoqda, vaqt bor.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "156"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Manbaga ko‘ra: shoshilinchda individual maslahat qulay, murakkab nizoda etika qo‘mitasi ishonchliroq, ammo vaqt talab qiladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "156-157"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Savol: har ikki holatda qaysi model va qaysi yondashuv (ma’lumot beruvchi, vositachi, qat’iy) mos keladi? Asoslang.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "157"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 7 daq. Vaziyat o‘quv maqsadida manbadagi ma’lumotlardan tuzilgan. Muhokama: 1) 2-holatda kichik guruh modeli yetarlimi? 2) Qat’iy yondashuv uchun konsultantda qanday vakolat kerak? Doskada chizish: ikki holat uchun ‘model + yondashuv’ juftligini yozing. Tipik xato: vaqt omilini hisobga olmay faqat eng ishonchli modelni tanlash."
+  },
+  {
+   "title": "Xulosa: takomillashtirish yo‘nalishlari",
+   "bullets": [
+    {
+     "text": "Konstitutsiyaning 40-moddasi malakali tibbiy xizmat huquqini kafolatlaydi. Lissabon deklaratsiyasi bemor huquqlarining 11 tamoyilini beradi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "39-40"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "“Fuqarolar sog‘lig‘ini saqlash to‘g‘risida”gi qonunning 24-moddasi bemor huquqlarini beradi va deklaratsiyaga asosan mos keladi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "42-43"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Qonun hujjatlarida bemorlarning majburiyatlari, shifokorlarning huquqlari va ularni himoya qilish ham aks etishi zarur.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "49"
+     },
+     "uncertain": false
+    },
+    {
+     "text": "Har bir sog‘liqni saqlash idorasi va muassasasida etika tuzilmasi bo‘lishi maqsadga muvofiq: u muammolarni o‘z vaqtida o‘rganadi.",
+     "source": {
+      "author": "G‘iyosov Z.A., Indiaminov S.I.",
+      "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+      "page": "157"
+     },
+     "uncertain": false
+    }
+   ],
+   "diagram": null,
+   "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Konstitutsiya, deklaratsiya, qonun va etika qo‘mitasi bir-birini qanday to‘ldiradi? 2) Manbada viloyat va muassasalardagi etika qo‘mitalari faoliyati haqida ma’lumot yo‘qligi (154-bet) nimani anglatadi? Doskada chizish: to‘rt bosqichli zanjir ‘Konstitutsiya → deklaratsiya → qonun → etika tuzilmasi’. Tipik xato: etika va huquq me’yorlari to‘liq mos keladi deb o‘ylash; manbada bu aytilmagan."
+  }
+ ],
+ "mcq": [
+  {
+   "question": "Tadqiqotchi fuqaroning roziligini olmay, unda ilmiy tajriba o‘tkazmoqchi. Konstitutsiyaning qaysi normasi buni taqiqlaydi?",
+   "options": [
+    "26-modda uchinchi qismi: roziliksiz tajriba taqiqi",
+    "26-modda birinchi qismi: aybsizlik prezumpsiyasi",
+    "24-modda: har bir insonning yashash huquqi",
+    "30-modda: hujjatlar bilan tanishish imkoniyati"
+   ],
+   "correct_index": 0,
+   "explanation": "26-moddaning uchinchi qismida fuqaroning roziligisiz unda tibbiy yoki ilmiy tajriba o‘tkazish taqiqlangan. Birinchi qismi aybsizlik prezumpsiyasiga, ikkinchi qismi qiynoqqa solish taqiqiga oid.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "38-39"
+   }
+  },
+  {
+   "question": "Kasalxonada bemorga millati va diniga qarab ustunlik berilmoqchi. Qaysi konstitutsiyaviy tamoyil buziladi?",
+   "options": [
+    "Fuqarolarning sud orqali himoyalanish tamoyili (44-modda)",
+    "Shaxsiy hayot daxlsizligi tamoyili (27-modda)",
+    "Aybsizlik prezumpsiyasi tamoyili (26-modda)",
+    "Fuqarolarning qonun oldida tengligi tamoyili (18-modda)"
+   ],
+   "correct_index": 3,
+   "explanation": "18-moddaga ko‘ra barcha fuqarolar jinsi, irqi, millati, tili, dinidan qat’i nazar qonun oldida teng. Imtiyozlar faqat qonun bilan belgilanadi va ijtimoiy adolatga mos bo‘lishi shart.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "38"
+   }
+  },
+  {
+   "question": "Mansabdor shaxs fuqaroning huquq va erkinliklarini sud qarorisiz cheklamoqchi. Qaysi modda bunga yo‘l qo‘ymaydi?",
+   "options": [
+    "19-modda: sud qarorisiz mahrum etish yoki cheklash mumkin emas",
+    "20-modda: huquqlar boshqalarning manfaatiga putur yetkazmasligi shart",
+    "25-modda: erkinlik va shaxsiy daxlsizlik huquqi",
+    "45-modda: voyaga yetmaganlar huquqlari davlat himoyasida"
+   ],
+   "correct_index": 0,
+   "explanation": "19-moddada fuqarolarni huquq va erkinliklardan sud qarorisiz mahrum etish yoki cheklashga yo‘l qo‘yilmasligi belgilangan. 20-modda esa huquqlarni amalga oshirish chegarasini ko‘rsatadi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "38"
+   }
+  },
+  {
+   "question": "1972-yilda birinchi bo‘lib “Bemor huquqlari to‘g‘risida Bill”ni qaysi tashkilot qabul qilgan?",
+   "options": [
+    "Jahon tibbiyot assotsiatsiyasi",
+    "Jahon sog‘liqni saqlash tashkiloti",
+    "Amerika kasalxonalar assotsiatsiyasi",
+    "YuNESKO xalqaro bioetika qo‘mitasi"
+   ],
+   "correct_index": 2,
+   "explanation": "Bemor huquqlari harakati XX asr 70-yillarida boshlandi va 1972-yilda “Bemor huquqlari to‘g‘risida Bill”ni Amerika kasalxonalar assotsiatsiyasi qabul qildi. Jahon tibbiyot assotsiatsiyasi esa 1981-yilda Lissabon deklaratsiyasini qabul qilgan.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "40"
+   }
+  },
+  {
+   "question": "Fuqaro tibbiy yordamning barcha turlaridan malakali foydalana olmayapti. Bu huquqni qaysi modda kafolatlaydi?",
+   "options": [
+    "24-modda: yashash huquqi",
+    "43-modda: huquqlarni davlat ta’minlashi",
+    "40-modda: malakali tibbiy xizmat huquqi",
+    "44-modda: sud orqali himoya huquqi"
+   ],
+   "correct_index": 2,
+   "explanation": "Konstitutsiyaning 40-moddasi fuqarolarning malakali tibbiy xizmatdan foydalanish huquqini kafolatlaydi. 43-modda esa huquq va erkinliklarni davlat ta’minlashini ko‘rsatadi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "39"
+   }
+  },
+  {
+   "question": "Viloyat shifoxonasida resurslar cheklangan, bir nechta bemor navbatda turibdi. Lissabon deklaratsiyasiga ko‘ra, tanlov qaysi asosda o‘tkaziladi?",
+   "options": [
+    "Faqat tibbiy mezonlar bo‘yicha, kamsitishsiz",
+    "Bemorning ijtimoiy mavqei bo‘yicha",
+    "Bemorning yashash joyiga qarab",
+    "Murojaat vaqtidan qat’i nazar, qur‘a bilan"
+   ],
+   "correct_index": 0,
+   "explanation": "Deklaratsiyaning 1-tamoyilida resurslar cheklangan bo‘lsa, barcha bemorlar adolatli tanlovda qatnashish huquqiga ega deyiladi. Tanlov hech qanday kamsitishsiz, faqat tibbiy mezonlar bo‘yicha o‘tkazilishi shart.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "40-41"
+   }
+  },
+  {
+   "question": "Lissabon deklaratsiyasining 8-tamoyiliga ko‘ra, bemor vafot etganidan keyin uning diagnozi haqidagi ma’lumotlarga nisbatan qanday talab qo‘yiladi?",
+   "options": [
+    "Sir saqlash muddati tugab, ma’lumot ochiladi",
+    "Ular o‘limdan keyin ham sir saqlanishi lozim",
+    "Ular faqat hamkasblar uchun ochiq bo‘ladi",
+    "Barcha qarindoshlarga berilishi majburiy bo‘ladi"
+   ],
+   "correct_index": 1,
+   "explanation": "8-tamoyilda salomatlik holati, diagnoz, davolanish va prognoz haqidagi ma’lumotlar bemor o‘limidan keyin ham konfidensial bo‘lishi aytilgan. Istisno faqat avlodlarning irsiy kasallik xavfiga oid ma’lumotni olishi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "41-42"
+   }
+  },
+  {
+   "question": "Yo‘l hodisasidan hushsiz holda keltirilgan bemorning qonuniy vakili yetib keldi. Lissabon deklaratsiyasiga ko‘ra, muolajaga rozilik kimdan olinadi?",
+   "options": [
+    "Bemorning o‘zidan, u o‘ziga kelgach og‘zaki",
+    "Navbatchi hamshiradan, ish tartibiga ko‘ra",
+    "Bemorning qonuniy vakilidan",
+    "Faqat konsilium a’zolaridan, vakil bo‘lsa ham"
+   ],
+   "correct_index": 2,
+   "explanation": "4-tamoyil: bemor hushsiz bo‘lsa, rozilik qonuniy vakildan olinadi. Vakil bo‘lmasa va bemor oldin muolajani rad etmagan bo‘lsa, qaror uning manfaatini ko‘zlab qabul qilinadi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "41"
+   }
+  },
+  {
+   "question": "12 yoshli bolaga tibbiy yordam ko‘rsatilmoqda. “Fuqarolar sog‘ligini saqlash to‘g‘risida”gi qonunning 25-moddasiga ko‘ra, uning sog‘lig‘i haqidagi ma’lumot kimga beriladi?",
+   "options": [
+    "Faqat bolaning o‘ziga, to‘liq hajmda",
+    "Faqat maktab ma’muriyatiga, rasmiy xat bilan",
+    "Bola yashaydigan mahalla vakillariga",
+    "Bolaning qonuniy vakillariga"
+   ],
+   "correct_index": 3,
+   "explanation": "25-moddaga ko‘ra, o‘n to‘rt yoshga to‘lmagan yoki muomalaga layoqatsiz deb topilgan shaxslarning sog‘lig‘i haqidagi ma’lumotlar ularning qonuniy vakillariga beriladi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "43-44"
+   }
+  },
+  {
+   "question": "Bemorning ahvoli og‘ir, irodasini bildira olmaydi. Aralashuvni kechiktirib bo‘lmaydi, konsilium yig‘ish imkoni yo‘q. Qonunning 26-moddasiga ko‘ra, qarorni kim qabul qiladi?",
+   "options": [
+    "Bosh shifokor, sud ruxsati bilan",
+    "Davolovchi yoki navbatchi shifokor, rahbariyatni keyin xabardor qilib",
+    "Bemorning qo‘shnilari, o‘zaro kelishib",
+    "Hech kim, bemor o‘zi gapirguncha kutiladi"
+   ],
+   "correct_index": 1,
+   "explanation": "26-modda: bemor irodasini bildira olmasa va aralashuvni kechiktirib bo‘lmasa, masalani konsilium hal qiladi. Konsilium yig‘ish imkoni bo‘lmasa, davolovchi yoki navbatchi shifokor qaror qiladi va keyin muassasa rahbariyatini xabardor qiladi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "44"
+   }
+  },
+  {
+   "question": "Bemor tibbiy aralashuvni rad etdi. 27-moddaga ko‘ra vrach qanday yo‘l tutadi?",
+   "options": [
+    "Rad etishni e‘tiborsiz qoldirib, davolashni majburan davom ettiradi",
+    "Yozma rad tasdiqnomasi oladi, iloji bo‘lmasa guvohlar bilan dalolatnoma tuzadi",
+    "Rad etishni faqat oila a‘zolarining og‘zaki roziligi bilan qabul qiladi",
+    "Masalani hal qilishni navbatchi hamshiraga topshirib, o‘zi chetda turadi"
+   ],
+   "correct_index": 1,
+   "explanation": "27-moddaga ko‘ra bemor yoki uning qonuniy vakili aralashuvni rad etishi yoki to‘xtatishni talab qilishi mumkin. Bunda vrach yozma rad tasdiqnomasi oladi. Buning iloji bo‘lmasa, guvohlar ishtirokida dalolatnoma tuzadi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "44"
+   }
+  },
+  {
+   "question": "Bemorda atrofdagilar uchun xavfli yuqumli kasallik bor, u davolanishdan bosh tortmoqda. 28-moddaga ko‘ra nima mumkin?",
+   "options": [
+    "Faqat bemor yozma rozilik bergandan keyin kasalxonaga yotqizish mumkin",
+    "Bemorni davolamay, faqat oila a‘zolariga xabar berib qo‘yish yetarli",
+    "Hech qanday chorani ko‘rib bo‘lmaydi, chunki rad etish mutlaq huquq",
+    "Belgilangan asos va tartibda roziliksiz tekshirish, yotqizish, yakkalash"
+   ],
+   "correct_index": 3,
+   "explanation": "28-moddaga ko‘ra kasallik atrofdagilar uchun xavf tug‘dirsa, shaxs yoki qonuniy vakilning roziligisiz tibbiy yordam ko‘rsatilishi mumkin. Bunga tibbiy tekshiruv, kasalxonaga yotqizish, kuzatish va yakkalab qo‘yish kiradi. Bu belgilangan asos va tartibda amalga oshiriladi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "45"
+   }
+  },
+  {
+   "question": "Surishtiruv organi bemor haqida rasmiy so‘rov yubordi. 45-moddaga ko‘ra shifokor siri bo‘yicha qanday yo‘l tutiladi?",
+   "options": [
+    "Rozilik talab qilinmaydi: rasmiy so‘rov bo‘yicha sirni berish mumkin",
+    "Sir bemor roziligisiz hech qachon, hatto rasmiy so‘rovda ham berilmaydi",
+    "Sirni faqat bemor vafot etgandan keyingina berish mumkin bo‘ladi",
+    "Sirni faqat shifokorning shaxsiy xohishiga ko‘ra berish mumkin bo‘ladi"
+   ],
+   "correct_index": 0,
+   "explanation": "45-moddadagi istisnolar orasida surishtiruv, tergov, prokuratura va sud idoralarining rasmiy so‘rovi ham bor. Bunda fuqaro yoki qonuniy vakilning roziligisiz ma‘lumot berilishi mumkin.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "48"
+   }
+  },
+  {
+   "question": "Bemor huquqlarining qaysi biri “asosiy” guruhga kiradi?",
+   "options": [
+    "Shifokor va davolash muassasasini tanlash huquqi",
+    "Bemor yoniga advokat kiritilishi huquqi",
+    "Shifokor siri saqlanishi huquqi",
+    "Og‘riq va azobni yengillashtirish huquqi"
+   ],
+   "correct_index": 2,
+   "explanation": "Asosiy guruhga axborotli rozilik, rad etish, sog‘liq va o‘z huquqlari haqida ma‘lumot olish hamda shifokor siri saqlanishi huquqi kiradi. Advokat va og‘riqni yengillashtirish qo‘shimcha, shifokor tanlash esa tashkiliy guruhga kiradi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "45-46"
+   }
+  },
+  {
+   "question": "Bemor shifokorga ishonmaydi va ko‘rsatmalarga rioya qilmaydi, hayoti xavf ostida emas. Vrach davolashdan bosh tortsa, nima qilishi lozim?",
+   "options": [
+    "Davolashni istisnolarsiz davom ettirishga majbur bo‘ladi",
+    "Boshqa mutaxassisni tavsiya etadi va muassasa rahbariyatiga xabar beradi",
+    "Bemorni darhol muassasadan chiqarib yuboradi va hech kimga aytmaydi",
+    "Bemorga jarimani o‘zi belgilab, davolashni bir tomonlama to‘xtatadi"
+   ],
+   "correct_index": 1,
+   "explanation": "O‘zaro ishonch yo‘qligi yoki bemor ko‘rsatmalarga rioya qilmasligi sababli, hayotga xavf bo‘lmasa, vrach davolashdan bosh tortishi mumkin. Bunda u bemorga boshqa mutaxassisni tavsiya qiladi va muassasa rahbariyatiga xabar beradi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "49"
+   }
+  },
+  {
+   "question": "Shifokor va bemor orasida o‘zaro ishonch yo‘q, bemor ko‘rsatmalarga rioya qilmaydi, ammo hayotiga xavf yo‘q. Shifokor qanday yo‘l tutishi mumkin?",
+   "options": [
+    "Bemorga tushuntirmay, hujjatlarini muassasadan yashiradi",
+    "Boshqa mutaxassisni tavsiya qilib, rahbariyatga xabar beradi",
+    "Davolashni to‘xtatib, bemor haqidagi ma’lumotni tarqatadi",
+    "Bemorni o‘z qaroriga ko‘ra majburan davolashda davom etadi"
+   ],
+   "correct_index": 1,
+   "explanation": "Ishonch yo‘qligi yoki bemorning ko‘rsatmalarga rioya qilmasligi hayotga xavf tug‘dirmasa, shifokor davolashdan bosh tortishi mumkin. Shunda u bemorga boshqa mutaxassisni tavsiya qiladi va o‘z muassasasi rahbariyatiga xabar beradi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "49"
+   }
+  },
+  {
+   "question": "Etika tuzilmalari g‘oyasi birinchi marta qaysi jarayon davrida paydo bo‘lgan?",
+   "options": [
+    "Xelsinki deklaratsiyasining 1975-yilgi tahririni muhokama qilish",
+    "Tuskidji tadqiqotlarining keng jamoatchilikka oshkor bo‘lishi",
+    "AQSh Kongressi prezident komissiyasining tuzilishi jarayoni",
+    "Nyurnberg jarayonida nasist shifokorlar jinoyatlarining ko‘rilishi"
+   ],
+   "correct_index": 3,
+   "explanation": "Etika tuzilmalari g‘oyasi dastlab Nyurnberg jarayonida nasist shifokorlar jinoyatlari ko‘rilganda, tajribalarda insonni himoya qilish zarurati sezilganidan paydo bo‘lgan. Tuskidji kabi tadqiqotlarning oshkor bo‘lishi bu zaruratni keyinroq tasdiqlagan.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "151"
+   }
+  },
+  {
+   "question": "Kasalxona qoshida faqat shu muassasadagi etik masalalarni ko‘radigan qo‘mita tuzildi. YUNESKO qo‘llanmasiga ko‘ra u qaysi turga kiradi?",
+   "options": [
+    "Tibbiy muassasalarning bioetika qo‘mitasi turiga",
+    "Kasbiy assotsiatsiyalarning bioetika qo‘mitasi turiga",
+    "Bioetika bo‘yicha siyosat ishlab chiquvchi qo‘mita turiga",
+    "Ilmiy tadqiqot bioetikasi bo‘yicha qo‘mita turiga"
+   ],
+   "correct_index": 0,
+   "explanation": "YUNESKO qo‘llanmasida to‘rt tur keltirilgan, jumladan tibbiy muassasalarning bioetika qo‘mitalari. Muassasa ichidagi etik masalalar bilan shug‘ullanadigan qo‘mita aynan shu turga mos keladi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "152"
+   }
+  },
+  {
+   "question": "Qo‘mita faoliyati qonun hujjatlari bilan belgilangan, u taqiqlash huquqiga ega va qarorlari majburiy. Bu qaysi modelga xos?",
+   "options": [
+    "Yevropa modeli, chunki qarorlar tavsiya xususiyatiga ega",
+    "Norasmiy model, chunki qo‘mita taqiqlay olmaydi",
+    "Amerika modeli, chunki qarorlar majburiy tusga ega",
+    "Kichik guruh modeli, chunki ekspertlar guruhi ishlaydi"
+   ],
+   "correct_index": 2,
+   "explanation": "Amerika modeli rasmiyroq: qo‘mita faoliyati qonun hujjatlari bilan belgilanadi, qo‘mita taqiqlash huquqiga ega, qarorlari majburiy. Yevropa modeli norasmiyroq, qarorlari ko‘proq tavsiya xususiyatiga ega.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "154"
+   }
+  },
+  {
+   "question": "Muassasada etik maslahat zudlik bilan kerak bo‘lib qoldi. Qaysi maslahat modeli shoshilinch holatlar uchun qulay deb ko‘rsatilgan?",
+   "options": [
+    "Etika qo‘mitasidan maslahat olish, chunki u eng ishonchli",
+    "Individual maslahat, chunki u shoshilinch holatlarda qulay",
+    "Kichik guruh maslahati, chunki u subyektivlikni butunlay yo‘qotadi",
+    "Qo‘mita majlisi orqali, chunki u deyarli vaqt talab qilmaydi"
+   ],
+   "correct_index": 1,
+   "explanation": "Individual maslahatda bitta konsultant maslahat beradi va bu shoshilinch holatlarda qulay. Biroq undan keng bilim va tajriba talab etiladi, subyektivlik belgilari ham bo‘lishi mumkin. Qo‘mitadan maslahat olish ishonchliroq, lekin vaqt talab qiladi.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "156"
+   }
+  }
+ ],
+ "extras": [
+  {
+   "text": "Bemor huquqlari harakati XX asrning 70-yillarida boshlangan. 1972 yilda Amerika kasalxonalar assotsiatsiyasi birinchi bo‘lib “Bemor huquqlari to‘g‘risida Bill”ni qabul qilgan. 1981 yilda Jahon tibbiyot assotsiatsiyasi Lissabon deklaratsiyasini qabul qildi (1995 yilda o‘zgartirilgan), unda 11 ta prinsip bor. O‘zbekistonning sog‘liqni saqlash qonunchiligi ham shu deklaratsiyani inobatga olgan.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "40-42"
+   }
+  },
+  {
+   "text": "Hodisa tahlili: so‘z tanlash bemorga ta’sir qiladi. Oshqozon saratoni gumon qilinib operatsiya qilingan bemorda saraton topilmasa, “Siz bekorga operatsiya qilindingiz” demaslik kerak. Manbadagi tavsiya: “Baxtli inson ekansiz, sizda rak yo‘q”. Shuningdek, “besh bemordan ikkitasi o‘ladi” o‘rniga “uchtasi tuzaladi” deyish tavsiya etilgan. Savol: bu haqiqatni yashirishmi yoki muloqot madaniyati?",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "48-49"
+   }
+  },
+  {
+   "text": "Eslab qolish usuli (o‘qituvchi uchun, manba mazmuniga tayangan): bemor huquqlari uch guruhga bo‘linadi. Asosiy: rozilik, rad etish, ma’lumot olish, shifokor siri. Qo‘shimcha (fakultativ): maslahat, advokat, og‘riqni yengillashtirish, diniy xodim. Tashkiliy (kontekstual): shifokorni tanlash, sanitariya sharoiti, zararning qoplanishi. “Asosiy – birinchi navbatda; qo‘shimcha – ba’zan ta’minlanmasligi mumkin.”",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "45-46"
+   }
+  },
+  {
+   "text": "Etika qo‘mitalarining ikki modeli: Amerika modeli rasmiyroq, faoliyati qonun bilan belgilanadi, qo‘mita taqiqlash huquqiga ega va qarorlari majburiy. Yevropa modeli norasmiyroq, qarorlari ko‘proq tavsiya xarakterida. Eslab qolish: “Amerika – majburiy, Yevropa – tavsiya”. Qo‘mita prinsiplari: mustaqillik, fanlararolik, oshkoralik, plyuralizm.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "154"
+   }
+  },
+  {
+   "text": "Etika tuzilmalari g‘oyasi birinchi marta Nyurnberg jarayonida, natsist shifokorlarning jinoyatlari ko‘rib chiqilganda paydo bo‘lgan. Tajribalarda odamlarni himoya qilish zarurligi shunda anglangan. Keyinroq Taskidji tadqiqotlarining oshkor bo‘lishi bu masalaning naqadar dolzarbligini tasdiqlagan. Dastlabki etika qo‘mitalari 1960-yillarda AQShda tashkil etilgan.",
+   "source": {
+    "author": "G‘iyosov Z.A., Indiaminov S.I.",
+    "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+    "page": "151"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "G‘iyosov Z.A., Indiaminov S.I.",
+   "title": "Bioetika (o‘quv qo‘llanma), Samarqand",
+   "year": 2022,
+   "pages": "IV va XV boblar, kitob betlari 38-50; 151-158"
+  }
+ ]
 }

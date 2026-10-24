@@ -66,7 +66,7 @@
           "uncertain": false
         },
         {
-          "text": "Mehnat huquqi mehnat shartnomasi asosidagi munosabatlarni tartibga soladi. Bunga shartnomani tuzish, o‘zgartirish, to‘xtatish, ish haqi, intizom va bahslarni ko‘rish kiradi.",
+          "text": "Mehnat huquqi mehnat shartnomasi asosidagi munosabatlarni tartibga soladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -75,7 +75,32 @@
           "uncertain": false
         },
         {
-          "text": "Majburiy mehnat, ya’ni jazo bilan tahdid qilib ishga majburlash, taqiqlanadi. Harbiy xizmat, favqulodda holat va sud hukmi kabi istisnolar Mehnat kodeksining 7-moddasida berilgan.",
+          "text": "Bunga shartnomani tuzish, o‘zgartirish, to‘xtatish, ish haqi, intizom va bahslarni ko‘rish kiradi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "78"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daqiqa. Muhokama savollari: 1) Konstitutsiya 37-moddasi qanday huquqlarni beradi? 2) Majburiy mehnatning qaysi istisnolari bor? Doskaga yozing: Konstitutsiya → Mehnat kodeksi → mehnat shartnomasi. Tipik xato: istisnolarni (sud hukmi, favqulodda holat) ham majburiy mehnat taqiqiga kiritish."
+    },
+    {
+      "title": "Mehnat qonunchiligi: Konstitutsiya va Mehnat kodeksi (davomi)",
+      "bullets": [
+        {
+          "text": "Majburiy mehnat, ya’ni jazo bilan tahdid qilib ishga majburlash, taqiqlanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "79"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Harbiy xizmat, favqulodda holat va sud hukmi kabi istisnolar Mehnat kodeksining 7-moddasida berilgan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -119,31 +144,36 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "To‘rt belgi",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Mazmuni"
+        "kind": "tree",
+        "root": "Mehnat munosabati belgilari",
+        "children": [
+          {
+            "label": "A. Ishlab chiqarish",
+            "items": [
+              "Ishlab chiqarishda vujudga keladi"
+            ]
+          },
+          {
+            "label": "B. Jamoa a’zosi",
+            "items": [
+              "Aniq huquq va majburiyat"
+            ]
+          },
+          {
+            "label": "V. Haq to‘lanadi",
+            "items": [
+              "Ehtiyojlar qondiriladi"
+            ]
+          },
+          {
+            "label": "G. Shaxsiy mehnat",
+            "items": [
+              "Aniq kasb va lavozim"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "A",
-            "Ishlab chiqarishda vujudga keladi"
-          ],
-          [
-            "B",
-            "Jamoa a’zosi: aniq huquq va majburiyat"
-          ],
-          [
-            "V",
-            "Haq to‘lanadi; ehtiyojlar qondiriladi"
-          ],
-          [
-            "G",
-            "Shaxsiy mehnat, aniq kasb va lavozim"
-          ]
-        ]
+        "caption": "To‘rt belgi",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama savollari: 1) Shifokor mehnatida to‘rt belgi qanday ko‘rinadi? 2) Haq to‘lanishi nimani anglatadi? Doskaga jadvalni o‘zlari chizib, har belgiga bittadan misol yozsin. Tipik xato: belgilarni sanashda V (haq to‘lanishi) va G (shaxsiy mehnat) belgilarini aralashtirish."
     },
@@ -169,7 +199,16 @@
           "uncertain": false
         },
         {
-          "text": "Keksayganda yoki mehnat qobiliyatini yo‘qotganda ijtimoiy ta’minot olinadi. Mehnat huquqini sud orqali himoya qilish va yuridik yordam olish mumkin (MK 16-modda).",
+          "text": "Keksayganda yoki mehnat qobiliyatini yo‘qotganda ijtimoiy ta’minot olinadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "79-80"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Mehnat huquqini sud orqali himoya qilish va yuridik yordam olish mumkin (MK 16-modda).",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -222,36 +261,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Majburiyatlarni solishtirish (MK 176, 177)",
-        "nodes": [],
-        "header": [
-          "Jihat",
-          "Xodim (176)",
-          "Ish beruvchi (177)"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Xodim (MK 176)",
+            "items": [
+              "Halol, vijdonan bajarish",
+              "Mehnat intizomiga rioya",
+              "Xavfsizlik talablariga rioya",
+              "Ish beruvchi mol-mulkini asrash"
+            ]
+          },
+          {
+            "title": "Ish beruvchi (MK 177)",
+            "items": [
+              "Xodimlar mehnatini tashkil etish",
+              "Intizomni ta’minlash",
+              "Muhofaza qoidalariga rioya",
+              "Shartnomadagi sharoitni yaratish"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Mehnat vazifasi",
-            "Halol, vijdonan bajarish",
-            "Xodimlar mehnatini tashkil etish"
-          ],
-          [
-            "Intizom",
-            "Mehnat intizomiga rioya qilish",
-            "Intizomni ta’minlash"
-          ],
-          [
-            "Mehnat muhofazasi",
-            "Xavfsizlik talablariga rioya qilish",
-            "Muhofaza qoidalariga rioya etish"
-          ],
-          [
-            "Mol-mulk va sharoit",
-            "Ish beruvchi mol-mulkini asrash",
-            "Shartnomadagi sharoitni yaratish"
-          ]
-        ]
+        "caption": "Majburiyatlarni solishtirish",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Ish beruvchi vrachdan vazifasiga kirmaydigan ishni talab qilsa, nima qilish kerak? 2) Mehnat muhofazasi bo‘yicha ikki tarafning majburiyati nima uchun parallel? Doskada: jadvalni qayta chizib, har katakka tibbiyotdan bittadan misol yozdiring. Tipik xato: 176-modda (xodim) va 177-moddani (ish beruvchi) almashtirib yuborish. Qo‘shimcha: jamoa shartnomalarini tuzish ham ish beruvchi majburiyati."
     },
@@ -330,17 +362,31 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Shartnoma tuzish bosqichlari",
-        "nodes": [
-          "Tanlov yoki saylov (bo‘lsa)",
-          "Xodim va ish beruvchi kelishuvi",
-          "Mehnat shartnomasi tuziladi",
-          "Joy, vazifa, boshlanish vaqti",
-          "Muddat va haq miqdori"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Tanlov, saylov",
+            "text": "Agar bo‘lsa"
+          },
+          {
+            "title": "2. Kelishuv",
+            "text": "Xodim va ish beruvchi"
+          },
+          {
+            "title": "3. Shartnoma",
+            "text": "Mehnat shartnomasi tuziladi"
+          },
+          {
+            "title": "4. Ish sharti",
+            "text": "Joy, vazifa, boshlanish vaqti"
+          },
+          {
+            "title": "5. Muddat, haq",
+            "text": "Muddat va haq miqdori"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Shartnoma tuzish bosqichlari",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Nega shartnomada mehnat vazifasi (mutaxassislik, lavozim) aniq yozilishi kerak? 2) Shartnomada xodim huquqlari qonundagidan past belgilansa nima bo‘ladi? Doskada: shartnoma bosqichlari zanjirini chizdiring va har bosqich yoniga tegishli shartni yozing. Tipik xato: shartnoma shartlari bilan qonunda berilgan kafolatlarni aralashtirish; kafolatlar pasaytirilmaydi."
     },
@@ -376,31 +422,36 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ishga qabulda hujjatlar",
-        "nodes": [],
-        "header": [
-          "Hujjat",
-          "Izoh"
+        "kind": "tree",
+        "root": "Ishga qabul hujjatlari",
+        "children": [
+          {
+            "label": "Pasport",
+            "items": [
+              "Yoki uning o‘rnini bosuvchi"
+            ]
+          },
+          {
+            "label": "Mehnat daftarchasi",
+            "items": [
+              "Birinchi marta kirayotganlar mustasno"
+            ]
+          },
+          {
+            "label": "Harbiy hujjat",
+            "items": [
+              "Harbiy bilet yoki hisob guvohnomasi"
+            ]
+          },
+          {
+            "label": "Ta’lim hujjati",
+            "items": [
+              "Diplom yoki maxsus hujjat"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Pasport",
-            "Yoki uning o‘rnini bosuvchi hujjat"
-          ],
-          [
-            "Mehnat daftarchasi",
-            "Birinchi marta kirayotganlar bundan mustasno"
-          ],
-          [
-            "Harbiy hujjat",
-            "Harbiy bilet yoki hisob guvohnomasi"
-          ],
-          [
-            "Ta’lim hujjati",
-            "Oliy/o‘rta maxsus diplom yoki maxsus hujjat"
-          ]
-        ]
+        "caption": "Ishga qabulda hujjatlar",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Muddat yozilmagan shartnoma qanday turga kiradi? 2) Yangi bitirgan vrach qaysi hujjatlarni topshiradi? Doskada: muddat turlarining uch variantini (nomuayyan, 5 yilgacha, muayyan ish) chizing. Tipik xato: besh yil chegarasini nomuayyan shartnomaga ham qo‘llash; u faqat muddatli shartnomaga tegishli."
     },
@@ -436,16 +487,27 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Sinov jarayoni",
-        "nodes": [
-          "Sinov belgilanadi",
-          "Muddat: ko‘pi bilan 3 oy",
-          "Bekor qilish: 3 kun oldin yozma",
-          "Aks holda shartnoma davom etadi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Sinov belgilanadi",
+            "text": "Xodim layoqatini tekshirish"
+          },
+          {
+            "title": "2. Muddat",
+            "text": "Ko‘pi bilan 3 oy"
+          },
+          {
+            "title": "3. Bekor qilish",
+            "text": "3 kun oldin yozma ogohlantirish"
+          },
+          {
+            "title": "4. Aks holda",
+            "text": "Shartnoma davom etadi"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Sinov jarayoni",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Sinov muddatida taraflarning huquqi qanday? 2) Qaysi xodimlarga sinov belgilanmaydi va nima uchun? Doskada: sinov jarayoni zanjirini chizib, ikki yo‘lni (bekor qilish / davom etish) ko‘rsating. Tipik xato: sinovdagi 3 kunlik ogohlantirishni xodim tashabbusidagi 2 haftalik ogohlantirish bilan aralashtirish."
     },
@@ -481,31 +543,37 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Jamoa shartnomasi xususiyatlari",
-        "nodes": [],
-        "header": [
-          "Jihat",
-          "Mazmuni"
+        "kind": "tree",
+        "root": "Jamoa shartnomasi",
+        "children": [
+          {
+            "label": "Tomonlar",
+            "items": [
+              "Kasaba uyushmasi ↔ ish beruvchi"
+            ]
+          },
+          {
+            "label": "Mazmun",
+            "items": [
+              "Mehnat, ijtimoiy, iqtisodiy, kasb"
+            ]
+          },
+          {
+            "label": "Imtiyoz",
+            "items": [
+              "Qo‘shimcha ta’til, pensiyaga ustama"
+            ]
+          },
+          {
+            "label": "Muddat",
+            "items": [
+              "Taraflar belgilaydi",
+              "Yangisigacha amalda"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Tomonlar",
-            "Kasaba uyushmasi ↔ ish beruvchi"
-          ],
-          [
-            "Mazmun",
-            "Mehnat, ijtimoiy, iqtisodiy, kasb masalalari"
-          ],
-          [
-            "Imtiyoz",
-            "Qo‘shimcha ta’til, pensiyaga ustama"
-          ],
-          [
-            "Muddat",
-            "Taraflar belgilaydi; yangisigacha amalda"
-          ]
-        ]
+        "caption": "Jamoa shartnomasi xususiyatlari",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Jamoa shartnomasi individual mehnat shartnomasidan nimasi bilan farq qiladi? 2) Nega qonundagidan imtiyozliroq shartlar kiritish mumkin? Doskada: jadvalni chizib, har qatorga o‘z muassasangizdan misol yozdiring. To‘liq tamoyillar ro‘yxatini ayting: qonunga rioya, vakolatlilik, masalalarni tanlash va muhokama erkinligi, ixtiyoriylik, bajarilishini ta’minlash, muntazam tekshirish, javobgarlikning muqarrarligi. Tipik xato: jamoa shartnomasini xodimning individual shartnomasi bilan aralashtirish."
     },
@@ -541,36 +609,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "To‘rt shaklni solishtirish",
-        "nodes": [],
-        "header": [
-          "Shakl",
-          "Qayerda/nima",
-          "Shart"
+        "kind": "tree",
+        "root": "Ishning to‘rt shakli",
+        "children": [
+          {
+            "label": "Ichki o‘rindoshlik",
+            "items": [
+              "Shu muassasada, haq evaziga",
+              "Asosiy ishdan bo‘sh vaqtda"
+            ]
+          },
+          {
+            "label": "Tashqi o‘rindoshlik",
+            "items": [
+              "Boshqa muassasada, haq evaziga",
+              "Asosiy ishdan bo‘sh vaqtda"
+            ]
+          },
+          {
+            "label": "Bir necha kasb",
+            "items": [
+              "Shu muassasada boshqa lavozim"
+            ]
+          },
+          {
+            "label": "O‘rinbosarlik",
+            "items": [
+              "Vaqtincha yo‘q xodim ishi",
+              "Xodim lavozimi saqlanadi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Ichki o‘rindoshlik",
-            "Shu muassasada, haq evaziga",
-            "Asosiy ishdan bo‘sh vaqtda"
-          ],
-          [
-            "Tashqi o‘rindoshlik",
-            "Boshqa muassasada, haq evaziga",
-            "Asosiy ishdan bo‘sh vaqtda"
-          ],
-          [
-            "Bir necha kasb",
-            "Shu muassasada boshqa lavozim",
-            "Ish hajmi asosiy ish vaqtida bajarilsa"
-          ],
-          [
-            "O‘rinbosarlik",
-            "Vaqtincha yo‘q xodim ishi",
-            "Xodim lavozimi saqlangan"
-          ]
-        ]
+        "caption": "To‘rt shaklni solishtirish",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Tashqi va ichki o‘rindoshlik nimasi bilan farqlanadi? 2) Bir necha kasbda ishlash qachon mumkin? Doskada: to‘rt shaklni vaqt o‘qida (asosiy ish vaqti / bo‘sh vaqt) joylashtiring. Tipik xato: bir necha kasbda ishlashni o‘rindoshlik bilan, o‘rinbosarlikni esa bir necha kasb bilan aralashtirish."
     },
@@ -649,31 +720,31 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ish vaqti muddatlari",
-        "nodes": [],
-        "header": [
-          "Holat",
-          "Davomiyligi"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Normal ish vaqti",
+            "value": "40",
+            "unit": "soat/hafta"
+          },
+          {
+            "label": "6 kunlik hafta",
+            "value": "7",
+            "unit": "soat/kun"
+          },
+          {
+            "label": "5 kunlik hafta",
+            "value": "8",
+            "unit": "soat/kun"
+          },
+          {
+            "label": "Tibbiy xodimlar",
+            "value": "36",
+            "unit": "soat/hafta"
+          }
         ],
-        "rows": [
-          [
-            "Normal ish vaqti",
-            "Haftasiga 40 soatdan oshmaydi"
-          ],
-          [
-            "6 kunlik ish haftasi",
-            "Kuniga 7 soatdan oshmaydi"
-          ],
-          [
-            "5 kunlik ish haftasi",
-            "Kuniga 8 soatdan oshmaydi"
-          ],
-          [
-            "Tibbiy xodimlar",
-            "Haftasiga 36 soatdan oshmaydi"
-          ]
-        ]
+        "caption": "Ish vaqti muddatlari",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Nega tibbiy xodimlar uchun ish vaqti qisqartirilgan (his-hayajon, aqliy zo‘riqish, asab tarangligi)? 2) Qisqartirilgan ish vaqtida ish haqi o‘zgaradimi? Doskaga chizish: 40 soatlik haftani 6 va 5 kunga bo‘lib, kunlik soatlarni hisoblash. Tipik xato: 36 soatni barcha xodimlarga tegishli deb o‘ylash. Bunday xodimlar ro‘yxati va aniq muddatni Hukumat belgilaydi."
     },
@@ -690,7 +761,7 @@
           "uncertain": false
         },
         {
-          "text": "Ishga qabul qilishda yoki boshqa ishga o‘tkazishda ish beruvchi xodimga ish sharoiti, kasbiy kasalliklar xavfi, imtiyozlar, qo‘shimcha haqlar va himoya vositalari haqida ma’lumot beradi.",
+          "text": "Ish beruvchi xodimga ish sharoiti, kasbiy kasallik xavfi, imtiyoz va qo‘shimcha haqlar, himoya vositalari haqida ma’lumot beradi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -883,17 +954,31 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Xodim tashabbusi tartibi",
-        "nodes": [
-          "Yozma ogohlantirish (2 hafta)",
-          "Ariza qaytarilishi mumkin",
-          "Muddat tugadi: ish to‘xtaydi",
-          "Mehnat daftarchasi beriladi",
-          "Hisob-kitob qilinadi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Ogohlantirish",
+            "text": "Yozma, 2 hafta oldin"
+          },
+          {
+            "title": "2. Ariza",
+            "text": "Qaytarib olinishi mumkin"
+          },
+          {
+            "title": "3. Muddat tugadi",
+            "text": "Ish to‘xtaydi"
+          },
+          {
+            "title": "4. Hujjat",
+            "text": "Mehnat daftarchasi beriladi"
+          },
+          {
+            "title": "5. Hisob-kitob",
+            "text": "Hisob-kitob qilinadi"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Xodim tashabbusi tartibi",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: ikki haftalik muddat qisqartirilishi mumkinmi (kelishuv bilan)? Ish davom etishi imkonsiz bo‘lsa (o‘quv yurtiga qabul, pensiya) qanday tartib? Doskada: zanjirni talabalar bilan birga chizing. Tipik xato: ariza qaytarib olish huquqini ogohlantirish tugagandan keyin ham bor deb o‘ylash."
     },
@@ -972,36 +1057,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ogohlantirish muddatlari",
-        "nodes": [],
-        "header": [
-          "Sabab",
-          "Muddat",
-          "Izoh"
+        "kind": "tree",
+        "root": "Ogohlantirish muddatlari",
+        "children": [
+          {
+            "label": "Shtat qisqarishi, tugatish",
+            "items": [
+              "Kamida 2 oy oldin",
+              "Yozma, imzo chektirib"
+            ]
+          },
+          {
+            "label": "Malaka, sog‘liq",
+            "items": [
+              "Kamida 2 hafta oldin",
+              "Yozma, imzo chektirib"
+            ]
+          },
+          {
+            "label": "Muntazam, qo‘pol buzish",
+            "items": [
+              "3 kun oldin xabar",
+              "Yoki mutanosib kompensatsiya"
+            ]
+          },
+          {
+            "label": "Kelishuv bo‘lsa",
+            "items": [
+              "Pullik kompensatsiya"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Shtat qisqarishi, korxona tugatilishi",
-            "Kamida 2 oy oldin",
-            "Yozma, imzo chektirib"
-          ],
-          [
-            "Malaka yetarli emas, sog‘liq",
-            "Kamida 2 hafta oldin",
-            "Yozma, imzo chektirib"
-          ],
-          [
-            "Muntazam yoki qo‘pol buzish",
-            "3 kun oldin xabar",
-            "Yoki mutanosib kompensatsiya"
-          ],
-          [
-            "Yuqoridagi 1-2 sabab, kelishuv",
-            "Pullik kompensatsiya",
-            "Muddatga mos keladi"
-          ]
-        ]
+        "caption": "Sabab va muddat",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega shtat qisqarishida muddat eng uzun? 2) Kompensatsiya qachon ogohlantirish o‘rnini bosadi? Doskada: jadvalni 2 oy – 2 hafta – 3 kun tartibida chizib, taqiqlangan davrlarni (kasallik, ta’til) alohida ramkaga oling. Tipik xato: 2 oy, 2 hafta va 3 kunni aralashtirish; 3 kun faqat intizom buzilishiga tegishli."
     },
@@ -1080,31 +1168,31 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Intizomiy jazo turlari",
-        "nodes": [],
-        "header": [
-          "Jazo turi",
-          "Miqdor/izoh"
+        "kind": "tree",
+        "root": "Intizomiy jazo turlari",
+        "children": [
+          {
+            "label": "Hayfsan",
+            "items": [
+              "Qonunda ko‘zda tutilgan"
+            ]
+          },
+          {
+            "label": "Jarima",
+            "items": [
+              "Oylik ish haqining ≤30 foizi",
+              "Alohida qilmishlarda 50 foizgacha"
+            ]
+          },
+          {
+            "label": "Shartnomani bekor qilish",
+            "items": [
+              "Jazo turi sifatida"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Hayfsan",
-            "Qonunda ko‘zda tutilgan jazo turi"
-          ],
-          [
-            "Jarima",
-            "O‘rtacha oylik ish haqining ≤30 foizi"
-          ],
-          [
-            "Shartnomani bekor qilish",
-            "Jazo turi sifatida ko‘zda tutilgan"
-          ],
-          [
-            "Ichki tartib bo‘yicha jarima",
-            "Alohida qilmishlarda 50 foizgacha"
-          ]
-        ]
+        "caption": "Uch jazo turi",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Tibbiy xodimning qanday xatti-harakati intizomiy qilmish bo‘lishi mumkin? 2) Nega ichki tartibga ko‘ra jarima miqdori farqlanadi? Doskada chizish: 4 qatorli jazo jadvalini talabalar o‘zlari to‘ldirsin. Tipik xato: 30 foiz va 50 foizni aralashtirish hamda jarimani ish haqining to‘liq miqdori bilan adashtirish (u o‘rtacha oylik ish haqidan hisoblanadi)."
     },
@@ -1140,17 +1228,31 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Jazo qo‘llash zanjiri",
-        "nodes": [
-          "Qilmish aniqlanadi",
-          "Yozma tushuntirish xati olinadi",
-          "Bitta qilmishga bitta jazo",
-          "Buyruq bilan e’lon qilinadi",
-          "Jazo 1 yil amal qiladi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Qilmish aniqlanadi",
+            "text": "Jazo 1 oy ichida qo‘llanadi"
+          },
+          {
+            "title": "2. Tushuntirish xati",
+            "text": "Yozma talab qilinadi"
+          },
+          {
+            "title": "3. Bitta jazo",
+            "text": "Bitta qilmishga bitta jazo"
+          },
+          {
+            "title": "4. Buyruq",
+            "text": "Buyruq bilan e’lon qilinadi"
+          },
+          {
+            "title": "5. Amal qilishi",
+            "text": "Jazo 1 yil amal qiladi"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Jazo qo‘llash zanjiri",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Nega jazodan oldin yozma tushuntirish xati talab qilinadi? 2) Jazoning bir yillik amal qilishi xodimga nimani anglatadi? Doskada chizish: 1 oy, 6 oy va 2 yillik muddatlarni vaqt chizig‘ida ko‘rsating. Tipik xato: 1 oylik muddatni qilmish sodir bo‘lgan kundan hisoblash (u qilmish aniqlangan kundan boshlanadi) va bitta qilmishga bir nechta jazo berish mumkin deb o‘ylash."
     },
@@ -1272,36 +1374,27 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Ma’muriy huquqbuzarlik va jinoyat",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Ma’muriy",
-          "Jinoyat"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Ma’muriy huquqbuzarlik",
+            "items": [
+              "Ijtimoiy xavf alomatini tutmaydi",
+              "Ma’muriy javobgarlik",
+              "Misol: sanitariya qoidalari buzilishi"
+            ]
+          },
+          {
+            "title": "Jinoyat",
+            "items": [
+              "Ijtimoiy xavf alomatlari bor",
+              "Jinoiy javobgarlik",
+              "Misol: xavf yuzaga kelsa"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Ijtimoiy xavf",
-            "Xavf alomatini tutmaydi",
-            "Ijtimoiy xavf alomatlari bor"
-          ],
-          [
-            "Javobgarlik",
-            "Ma’muriy javobgarlik",
-            "Jinoiy javobgarlik"
-          ],
-          [
-            "Umumiy belgi",
-            "G‘ayrihuquqiy, aybli qilmish",
-            "Shunga o‘xshash belgilarga ega"
-          ],
-          [
-            "Misol",
-            "Sanitariya qoidalari buzilishi",
-            "Xavf yuzaga kelsa — jinoyat"
-          ]
-        ]
+        "caption": "G‘ayrihuquqiy, aybli qilmish — umumiy belgi",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Ma’muriy huquqbuzarlik jinoyatdan nimasi bilan farq qiladi? 2) Sanitariya yoki epidemiyaga qarshi qoidalar buzilishi qachon jinoyatga aylanishi mumkin? Doskada: ikki ustunli solishtirish jadvalini chizdiring. Tipik xato: ma’muriy huquqbuzarlikni jinoyatning yengil turi deb hisoblash."
     },
@@ -1380,17 +1473,32 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Ma’muriy jazo turlari",
-        "nodes": [
-          "Jarima",
-          "Haq to‘lab olib qo‘yish",
-          "Musodara",
-          "Maxsus huquqdan mahrum qilish",
-          "Ma’muriy qamoq"
+        "kind": "tree",
+        "root": "Ma’muriy jazo (MJhK 23)",
+        "children": [
+          {
+            "label": "Jarima",
+            "items": []
+          },
+          {
+            "label": "Haq to‘lab olib qo‘yish",
+            "items": []
+          },
+          {
+            "label": "Musodara",
+            "items": []
+          },
+          {
+            "label": "Maxsus huquqdan mahrum",
+            "items": []
+          },
+          {
+            "label": "Ma’muriy qamoq",
+            "items": []
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Beshta jazo turi",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nima uchun tibbiy xodimlarga asosan jarima solinadi? 2) Asosiy va qo‘shimcha jazo qanday farqlanadi? Doskada: beshta jazo turini zanjir qilib chizdiring, asosiy va qo‘shimcha jazoni alohida belgilang. Tipik xato: olib qo‘yish (haqi to‘lanadi, pul egasiga qaytadi) bilan musodarani (haqsiz davlat mulkiga o‘tadi) aralashtirish. Diqqat: olib qo‘yish ≠ musodara. Manbaga ko‘ra, bu ikki jazo xususiy tibbiy va farmatsevtika amaliyotida qo‘llanishi mumkin (95-bet)."
     },
@@ -1426,36 +1534,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Jarima chegaralari (eng kam ish haqiga nisbatan)",
-        "nodes": [],
-        "header": [
-          "Ko‘rsatkich",
-          "Fuqaro",
-          "Mansabdor"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Fuqaro",
+            "items": [
+              "Eng kam: 1/50 qismdan kam emas",
+              "Eng ko‘p: 5 baravardan oshmaydi",
+              "Istisno: 100 baravargacha",
+              "Mahalliy qaror: 3 baravargacha"
+            ]
+          },
+          {
+            "title": "Mansabdor shaxs",
+            "items": [
+              "Eng kam: 1/10 qismdan kam emas",
+              "Eng ko‘p: 10 baravardan oshmaydi",
+              "Istisno: 150 baravargacha",
+              "Mahalliy qaror: 5 baravargacha"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Eng kam miqdor",
-            "1/50 qismidan kam emas",
-            "1/10 qismidan kam emas"
-          ],
-          [
-            "Eng ko‘p miqdor",
-            "5 baravaridan oshmaydi",
-            "10 baravaridan oshmaydi"
-          ],
-          [
-            "Istisno holatlar",
-            "100 baravarigacha",
-            "150 baravarigacha"
-          ],
-          [
-            "Mahalliy hokimiyat qarori",
-            "3 baravaridan oshmaydi",
-            "5 baravaridan oshmaydi"
-          ]
-        ]
+        "caption": "Eng kam ish haqiga nisbatan",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Nima uchun mansabdor shaxsga jarima yuqoriroq chegarada belgilanadi? 2) Mahalliy hokimiyat qarorida chegara nega pastroq? Doskada: jadvalni chizib, har bir katakka o‘z so‘zingiz bilan misol yozdiring. Tipik xato: «ellikdan bir» va «o‘ndan bir» kasrlarini aralashtirish, mahalliy hokimiyat chegarasini (3 va 5) umumiy chegara (5 va 10) bilan adashtirish. Diqqat: istisno holatlar (100 va 150 baravar) faqat alohida turdagi huquqbuzarliklarga tegishli."
     },
@@ -1491,31 +1592,26 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Jazo qo‘llash muddatlari",
-        "nodes": [],
-        "header": [
-          "Holat",
-          "Muddat"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Sodir etilgan kundan",
+            "value": "2",
+            "unit": "oy"
+          },
+          {
+            "label": "Aniqlangan kundan",
+            "value": "2",
+            "unit": "oy"
+          },
+          {
+            "label": "Ish rad etilganda",
+            "value": "1",
+            "unit": "oy"
+          }
         ],
-        "rows": [
-          [
-            "Huquqbuzarlik sodir etilgan kundan",
-            "2 oydan kechiktirmay"
-          ],
-          [
-            "Davom etayotgan: aniqlangan kundan",
-            "2 oydan kechiktirmay"
-          ],
-          [
-            "Jinoyat ishi rad etilsa yoki to‘xtatilsa",
-            "1 oydan kechiktirmay"
-          ],
-          [
-            "Bojxona organining musodarasi",
-            "Bu muddatlar tatbiq etilmaydi"
-          ]
-        ]
+        "caption": "Jazo qo‘llash muddatlari",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Muddat qaysi kundan boshlab hisoblanadi? 2) Nima uchun jinoyat ishi rad etilganda muddat qisqaroq? Doskada: vaqt chizig‘ini chizib, 2 oylik va 1 oylik muddatlarni belgilang. Tipik xato: 2 oy va 1 oyni aralashtirish; bojxona musodarasiga bu muddatlar tatbiq etilmasligini unutish. Eslatma: manbada faqat musodara qarorini chiqaruvchi organlar keltirilgan, haq to‘lab olib qo‘yish bo‘yicha alohida organlar ko‘rsatilmagan."
     },
@@ -1637,17 +1733,31 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Bayonnoma zanjiri",
-        "nodes": [
-          "Bayonnoma tuziladi",
-          "Huquqlari tushuntiriladi",
-          "Imzo: tuzgan, huquqbuzar, guvoh",
-          "Imzosiz qolsa, qayd yoziladi",
-          "Shikoyat berish huquqi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Bayonnoma",
+            "text": "Bayonnoma tuziladi"
+          },
+          {
+            "title": "2. Huquqlar",
+            "text": "Huquqlari tushuntiriladi"
+          },
+          {
+            "title": "3. Imzo",
+            "text": "Tuzgan, huquqbuzar, guvoh"
+          },
+          {
+            "title": "4. Imzosiz",
+            "text": "Qayd yoziladi"
+          },
+          {
+            "title": "5. Shikoyat",
+            "text": "Shikoyat berish huquqi"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Bayonnoma zanjiri",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: shaxs imzodan bosh tortsa, bayonnoma bekor bo‘ladimi? Huquqlar nega tushuntirilishi shart? Doskada: zanjirni bosqichma-bosqich chizdiring va har bosqichga mas’ul shaxsni yozing. Tipik xato: imzodan bosh tortishni bayonnomani haqiqiy emas qiladi deb hisoblash. Aslida bu haqda bayonnomaga yozib qo‘yiladi. Qisqartma: MJhK — Ma’muriy javobgarlik to‘g‘risidagi kodeks."
     },
@@ -1695,17 +1805,17 @@
           [
             "Sog‘liq sohasi",
             "52–56",
-            "Sanitariya, epidemiya, radiatsiya, giyohvand"
+            "Sanitariya, epidemiya, giyohvand"
           ],
           [
             "Tanosil, OITS",
             "57–59",
-            "Manbani yashirish, tekshiruvdan bosh tortish"
+            "Manbani yashirish, tekshiruvni rad"
           ],
           [
             "Savdo, moliya",
             "164, 176, 176-1",
-            "Pullik xizmat, tadbirkorlik tartibi, shartnoma"
+            "Pullik xizmat, tadbirkorlik, shartnoma"
           ],
           [
             "Boshqaruv tartibi",
@@ -1715,6 +1825,88 @@
         ]
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Qaysi guruh vrach kundalik ishiga eng yaqin? 2) Nega tuxmat va haqorat ko‘proq rahbarlarga taalluqli? Doskada jadvalni chizdiring va har guruhga bittadan o‘z misolini yozdiring. Tipik xato: modda raqamlarini aralashtirish; 199-moddada subyekt fuqaro, 215-moddada mansabdor shaxs ekanini unutish. Eslatma: OITS — orttirilgan immun tanqisligi sindromi."
+    },
+    {
+      "title": "Tanosil, OITS va boshqaruv tartibi bo‘yicha huquqbuzarliklar",
+      "bullets": [
+        {
+          "text": "57-modda: tanosil kasalligi yoki OITS bilan kasallangan bemor yuqtirish manbasini yoki xavf tug‘diruvchi aloqadagi shaxslarni yashirsa, ma’muriy huquqbuzarlik.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "100"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "58-modda: kasallanganligi haqida yetarli ma’lumot bo‘lsa-da, tekshiruvni rad etish ham ma’muriy javobgarlikka olib kelishi mumkin.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "100"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "59-modda: OITS yuqqanligini aniqlash uchun ko‘rik, tibbiy va kosmetik muolajalarda xavfsizlik ta’minlanmasa, tibbiy xodimlar javob beradi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "100"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "199-modda: tez yordamni qasddan aldab chaqirish (subyekt — fuqaro); 215-modda: statistik hisobot tartibini buzish (subyekt — mansabdor shaxs).",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "101"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Ma’muriy huquqbuzarliklar",
+        "children": [
+          {
+            "label": "57-modda",
+            "items": [
+              "Manba va aloqadagilarni yashirish"
+            ]
+          },
+          {
+            "label": "58-modda",
+            "items": [
+              "Tekshiruvni rad etish"
+            ]
+          },
+          {
+            "label": "59-modda",
+            "items": [
+              "Muolajada xavfsizlik buzilishi"
+            ]
+          },
+          {
+            "label": "199-modda",
+            "items": [
+              "Tez yordamga yolg‘on chaqiruv",
+              "Subyekt — fuqaro"
+            ]
+          },
+          {
+            "label": "215-modda",
+            "items": [
+              "Hisobot tartibini buzish",
+              "Subyekt — mansabdor shaxs"
+            ]
+          }
+        ],
+        "caption": "G‘iyosov, 100–101-betlar",
+        "nodes": []
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: 59-modda tibbiy xodimga qanday talab qo‘yadi? Tipik xato: 57 va 58-moddalarni aralashtirish."
     },
     {
       "title": "Voqea tahlili 5: sanitariya qoidalari buzilishi",
@@ -1807,12 +1999,12 @@
     {
       "question": "O‘zbekiston Respublikasi Konstitutsiyasining qaysi moddasida fuqaroning mehnat qilish va erkin ish tanlash huquqi mustahkamlangan?",
       "options": [
-        "27-modda",
-        "32-modda",
         "37-modda",
-        "47-modda"
+        "47-modda",
+        "27-modda",
+        "32-modda"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "explanation": "Darslikda Konstitutsiyaning 37-moddasiga ko‘ra har bir fuqaro mehnat qilish, erkin ish tanlash, haqqoniy mehnat shartlari asosida ishlash va ishsizlikdan himoyalanish huquqiga ega ekani aytilgan.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1823,12 +2015,12 @@
     {
       "question": "Poliklinika rahbari hamshiradan mehnat vazifasiga kirmaydigan ishni bajarishni talab qildi. Ish beruvchi bunga haqlimi?",
       "options": [
+        "Ha, agar ish haqi vaqtincha oshirilgan bo‘lsa",
         "Yo‘q, bunday ishni talab qilishga haqli emas",
         "Ha, agar ish vaqtincha va qisqa muddatli bo‘lsa",
-        "Ha, agar rahbar yozma buyruq chiqargan bo‘lsa",
-        "Ha, agar ish haqi vaqtincha oshirilgan bo‘lsa"
+        "Ha, agar rahbar yozma buyruq chiqargan bo‘lsa"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Ish beruvchi xodimdan mehnat vazifalari doirasiga kirmaydigan ishni bajarishni talab etishga haqli emas. Bu O‘zbekiston Respublikasi Mehnat kodeksining (MK) 177-moddasi sharhida keltirilgan.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1837,14 +2029,14 @@
       }
     },
     {
-      "question": "Vrach uch oylik dastlabki sinov bilan ishga qabul qilindi. U sinov tugamasidan oldin shartnomani bekor qilmoqchi. Ish beruvchini necha kun oldin yozma ogohlantirishi shart?",
+      "question": "Vrach uch oylik dastlabki sinov bilan ishga qabul qilindi. Sinov tugamasidan oldin tomonlardan biri shartnomani bekor qilmoqchi bo‘lsa, necha kun oldin yozma ogohlantirishi shart?",
       "options": [
+        "Kamida ikki oy oldin",
         "Kamida bir kun oldin",
         "Kamida uch kun oldin",
-        "Kamida ikki hafta oldin",
-        "Kamida ikki oy oldin"
+        "Kamida ikki hafta oldin"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Dastlabki sinov tugaguncha har bir taraf ikkinchisini uch kun oldin yozma ogohlantirib, shartnomani bekor qilishga haqli (MK 87-modda). Ikki hafta xodim tashabbusi bilan odatiy bekor qilishda qo‘llanadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1871,12 +2063,12 @@
     {
       "question": "Quyidagi majburiyatlardan qaysi biri xodimga emas, aynan ish beruvchiga yuklatilgan?",
       "options": [
-        "Ish beruvchining mol-mulkini avaylab asrash",
-        "Mehnat intizomiga o‘z vaqtida rioya qilish",
         "Mehnat sharoitlarini qonunga muvofiq yaratib berish",
-        "Texnologiya intizomiga to‘liq rioya qilish"
+        "Texnologiya intizomiga to‘liq rioya qilish",
+        "Ish beruvchining mol-mulkini avaylab asrash",
+        "Mehnat intizomiga o‘z vaqtida rioya qilish"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "explanation": "Mehnat sharoitlarini yaratib berish ish beruvchining majburiyati (MK 177-modda). Qolgan uchtasi xodimning majburiyatlari (MK 176-modda).",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1903,12 +2095,12 @@
     {
       "question": "Hamshira davriy tibbiy ko‘rikdan o‘tishni rad etdi. Ish beruvchi qaysi chorani qo‘llashga qonuniy asosga ega?",
       "options": [
-        "Ish haqini yarmiga kamaytirish",
         "Ko‘rik xarajatini xodimga yuklash",
         "Ko‘rikni navbatdan tashqari o‘tkazish",
-        "Xodimni ishdan chetlatish"
+        "Xodimni ishdan chetlatish",
+        "Ish haqini yarmiga kamaytirish"
       ],
-      "correct_index": 3,
+      "correct_index": 2,
       "explanation": "Tibbiy ko‘rikni rad etish xodimni ishdan chetlatish uchun asos bo‘ladi. Ko‘rik bilan bog‘liq xarajatlarni xodim to‘lamaydi. Navbatdan tashqari ko‘rikni esa xodimning o‘zi talab qilishi mumkin.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1919,12 +2111,12 @@
     {
       "question": "Vrach muddatsiz mehnat shartnomasini o‘z tashabbusi bilan bekor qilmoqchi. Ish beruvchini qancha oldin yozma ogohlantirishi kerak?",
       "options": [
-        "Ikki hafta oldin",
         "Uch kun oldin",
         "Bir oy oldin",
-        "Ikki oy oldin"
+        "Ikki oy oldin",
+        "Ikki hafta oldin"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Xodim ish beruvchini ikki hafta oldin yozma ogohlantirib, muddatsiz va muddatli shartnomani bekor qilishi mumkin. Uch kun va ikki oy ish beruvchi tashabbusi bilan bekor qilishdagi muddatlardir.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1935,12 +2127,12 @@
     {
       "question": "Shifokor asosiy ishidan bo‘sh vaqtida boshqa muassasada shartnoma asosida haq to‘lanadigan ish bajaradi. Bu qanday ataladi?",
       "options": [
-        "Ichki o‘rindoshlik",
-        "O‘rinbosarlik",
         "Tashqi o‘rindoshlik",
-        "Bir necha kasbda ishlash"
+        "Bir necha kasbda ishlash",
+        "Ichki o‘rindoshlik",
+        "O‘rinbosarlik"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "explanation": "Asosiy ishdan bo‘sh vaqtda boshqa muassasada haq evaziga ishlash tashqi o‘rindoshlik hisoblanadi. O‘z muassasasida ishlansa, bu ichki o‘rindoshlikdir.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1967,12 +2159,12 @@
     {
       "question": "Poliklinikada shtat qisqartirilishi sababli hamshira bilan shartnoma ish beruvchi tashabbusi bilan bekor qilinmoqda. Ish beruvchi uni yozma ravishda kamida qancha oldin ogohlantirishi shart?",
       "options": [
+        "Kamida bir oy oldin",
         "Kamida ikki hafta oldin",
         "Kamida ikki oy oldin",
-        "Kamida uch kun oldin",
-        "Kamida bir oy oldin"
+        "Kamida uch kun oldin"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Texnologiya, ish hajmi yoki shtat o‘zgarishi yoxud korxona tugatilishi sabab bo‘lsa, ish beruvchi xodimni kamida ikki oy oldin yozma ogohlantiradi. Ikki hafta xodim malakasi yoki sog‘lig‘i sababli noloyiq bo‘lib qolgan holatga tegishli. Uch kun esa muntazam yoki bir marta qo‘pol buzish holatida qo‘llanadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1983,12 +2175,12 @@
     {
       "question": "Vrach intizomiy jazo olgan kundan 8 oy o‘tgach, yana intizomga xilof harakat sodir etdi. Bu holat qanday baholanadi?",
       "options": [
-        "Mehnat vazifalarini bir marta qo‘pol buzish",
-        "Mehnat vazifalarini muntazam ravishda buzish",
         "Mehnat shartnomasi muddatining tugashi",
-        "Shartnomaning tomonlar kelishuvi bilan tugashi"
+        "Shartnomaning tomonlar kelishuvi bilan tugashi",
+        "Mehnat vazifalarini bir marta qo‘pol buzish",
+        "Mehnat vazifalarini muntazam ravishda buzish"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Jazo qo‘llangan kundan boshlab bir yil ichida takroran intizomga xilof nojo‘ya harakat sodir etilsa, bu mehnat vazifalarini muntazam buzish hisoblanadi va shartnomani bekor qilish uchun asos bo‘ladi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2015,12 +2207,12 @@
     {
       "question": "Hamshiradan intizomiy jazo oldidan tushuntirish xati talab qilindi, u yozishdan bosh tortdi. Bu jazo qo‘llashga qanday ta’sir qiladi?",
       "options": [
-        "Jazo qo‘llash endi mumkin emas bo‘lib qoladi",
         "Jazo qo‘llash muddati bir yilga uzaytiriladi",
         "Bu holat jazo qo‘llashga to‘siq bo‘la olmaydi",
-        "Ish beruvchi hamshirani majburan ishga tiklaydi"
+        "Ish beruvchi hamshirani majburan ishga tiklaydi",
+        "Jazo qo‘llash endi mumkin emas bo‘lib qoladi"
       ],
-      "correct_index": 2,
+      "correct_index": 1,
       "explanation": "Jazodan oldin xodimdan yozma tushuntirish xati talab qilinadi. Xodimning xat berishdan bosh tortishi ilgari sodir etgan nojo‘ya harakati uchun jazo qo‘llashga to‘siq bo‘la olmaydi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2031,12 +2223,12 @@
     {
       "question": "Shifokor bemorga tahdid solayotgan xavfni boshqa yo‘l bilan bartaraf eta olmadi va xavfdan kichikroq zarar yetkazdi. Bu harakat ma’muriy javobgarlik nuqtai nazaridan qanday baholanadi?",
       "options": [
+        "Faqat jarima solinishi shart bo‘ladi",
         "Ma’muriy huquqbuzarlik hisoblanadi",
         "Ma’muriy huquqbuzarlik hisoblanmaydi",
-        "Faqat ogohlantirish bilan jazolanadi",
-        "Faqat jarima solinishi shart bo‘ladi"
+        "Faqat ogohlantirish bilan jazolanadi"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Xavf boshqacha choralar bilan bartaraf etilmasa va yetkazilgan zarar oldi olingan zarardan kam bo‘lsa, oxirgi zarurat holatidagi harakat ma’muriy huquqbuzarlik hisoblanmaydi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2047,12 +2239,12 @@
     {
       "question": "Ma’muriy huquqbuzarlik haqidagi jinoyat ishi qo‘zg‘atish rad etildi. Shundan keyin bu huquqbuzarlik uchun ma’muriy jazo qaror kunidan boshlab qancha muddatda qo‘llanishi mumkin?",
       "options": [
-        "qaror qabul qilingan kundan boshlab olti oy ichida",
-        "qaror qabul qilingan kundan boshlab bir oy ichida",
-        "qaror qabul qilingan kundan boshlab ikki oy ichida",
-        "qaror qabul qilingan kundan boshlab bir yil ichida"
+        "Ikki oy ichida",
+        "Bir yil ichida",
+        "Olti oy ichida",
+        "Bir oy ichida"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Jinoyat ishi qo‘zg‘atish rad etilgan yoki ish to‘xtatilgan holatlarda jazo qaror kunidan boshlab bir oydan kechiktirmay qo‘llanadi. Umumiy muddat ikki oy, shuning uchun “ikki oy” varianti chalg‘ituvchi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2063,12 +2255,12 @@
     {
       "question": "Poliklinika bosh vrachi mansabdor shaxs sifatida umumiy tartibda jarimaga tortilmoqda. Jarimaning eng ko‘p miqdori qancha bo‘lishi mumkin?",
       "options": [
-        "eng kam oylik ish haqining uch baravaridan oshmasligi kerak",
-        "eng kam oylik ish haqining besh baravaridan oshmasligi kerak",
-        "eng kam oylik ish haqining o‘n baravaridan oshmasligi kerak",
-        "eng kam oylik ish haqining yuz ellik baravaridan oshmasligi kerak"
+        "Eng kam oylik ish haqining o‘n baravaridan oshmasligi kerak",
+        "Eng kam oylik ish haqining yuz ellik baravaridan oshmasligi kerak",
+        "Eng kam oylik ish haqining uch baravaridan oshmasligi kerak",
+        "Eng kam oylik ish haqining besh baravaridan oshmasligi kerak"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "explanation": "Umumiy tartibda mansabdor shaxsga eng ko‘p jarima eng kam ish haqining o‘n baravari. Besh baravar fuqarolarga tegishli. Yuz ellik baravar faqat istisno holatlarga xos.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2079,12 +2271,12 @@
     {
       "question": "Quyidagilardan qaysi biri Ma’muriy javobgarlik to‘g‘risidagi kodeksdagi ma’muriy jazo turlari ro‘yxatiga kirmaydi?",
       "options": [
-        "jarima solish",
-        "ashyoni musodara qilish",
-        "maxsus huquqdan mahrum etish",
-        "hayfsan e’lon qilish"
+        "Maxsus huquqdan mahrum etish",
+        "Hayfsan e’lon qilish",
+        "Jarima solish",
+        "Ashyoni musodara qilish"
       ],
-      "correct_index": 3,
+      "correct_index": 1,
       "explanation": "Ma’muriy jazolar: jarima, ashyoni haqini to‘lab olib qo‘yish, musodara, maxsus huquqdan mahrum qilish va ma’muriy qamoq. Hayfsan esa mehnat qonunchiligidagi intizomiy jazo turi (90-bet).",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2095,12 +2287,12 @@
     {
       "question": "Sanitariya inspektori shifoxona xodimi haqida bayonnoma tuzdi, xodim esa imzolashdan bosh tortdi. Bunda nima qilinadi?",
       "options": [
-        "bayonnomaga bu haqda yozib qo‘yiladi",
-        "bayonnoma bekor qilinib, qayta tuziladi",
-        "ish ko‘rib chiqilmasdan to‘xtatib qo‘yiladi",
-        "bayonnomani guvoh xodim o‘rniga imzolaydi"
+        "Ish ko‘rib chiqilmasdan to‘xtatib qo‘yiladi",
+        "Bayonnomani guvoh xodim o‘rniga imzolaydi",
+        "Bayonnomaga bu haqda yozib qo‘yiladi",
+        "Bayonnoma bekor qilinib, qayta tuziladi"
       ],
-      "correct_index": 0,
+      "correct_index": 2,
       "explanation": "Huquqbuzar imzolashdan bosh tortsa, bayonnomaga bu haqda yozib qo‘yiladi. Shaxs imzodan bosh tortish sabablarini bayon etishga ham haqli.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2111,12 +2303,12 @@
     {
       "question": "Ma’muriy ishda tibbiy xodim harakatiga baho berish uchun maxsus bilim zarur bo‘ldi. Ishni yuritayotgan organ (mansabdor shaxs) nima qiladi?",
       "options": [
-        "ishni maxsus bilimsiz yopib qo‘yadi",
-        "huquqbuzarni bayonnomasiz jarimalaydi",
-        "ekspertiza tayinlaydi",
-        "bayonnomani tuzgan organga qaytaradi"
+        "Bayonnomani tuzgan organga qaytaradi",
+        "Ishni maxsus bilimsiz yopib qo‘yadi",
+        "Huquqbuzarni bayonnomasiz jarimalaydi",
+        "Ekspertiza tayinlaydi"
       ],
-      "correct_index": 2,
+      "correct_index": 3,
       "explanation": "Maxsus bilim kerak bo‘lganda ishni yuritayotgan organ ekspertiza tayinlaydi. Ekspertning huquq va majburiyatlari jinoiy va fuqarolik ishlaridagi ekspertizaga o‘xshash.",
       "source": {
         "author": "G‘iyosov Z.A.",

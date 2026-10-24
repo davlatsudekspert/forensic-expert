@@ -121,31 +121,36 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Fanning to‘rt vazifasi",
-        "nodes": [],
-        "header": [
-          "Band",
-          "Vazifa"
+        "kind": "tree",
+        "root": "Fanning to‘rt vazifasi",
+        "children": [
+          {
+            "label": "A: qonunchilik asoslari",
+            "items": [
+              "Sog‘liqni saqlash qonunchiligi"
+            ]
+          },
+          {
+            "label": "B: huquqiy munosabatlar",
+            "items": [
+              "Xususiyatlari"
+            ]
+          },
+          {
+            "label": "V: kasb huquqbuzarliklari",
+            "items": [
+              "Tibbiyot xodimlari"
+            ]
+          },
+          {
+            "label": "G: qilmish va jinoyat",
+            "items": [
+              "Mohiyatini farqlash"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "A",
-            "Sog‘liqni saqlash qonunchiligi asoslari"
-          ],
-          [
-            "B",
-            "Huquqiy munosabatlar xususiyatlari"
-          ],
-          [
-            "V",
-            "Tibbiyot xodimlarining kasb huquqbuzarliklari"
-          ],
-          [
-            "G",
-            "Qilmish va jinoyat mohiyatini farqlash"
-          ]
-        ]
+        "caption": "Fan vazifalari",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama savoli: nima uchun qilmish va jinoyatni farqlash vrach uchun muhim? Tibbiy yordam nuqsonini qanday hujjatlar asosida aniqlash mumkin? Doskada chizish: A, B, V, G harflari bilan to‘rt vazifaning qisqa sxemasi. Tipik xato: kasb huquqbuzarligi va jinoyatni bir tushuncha deb qabul qilish; talabalar ularni farqlash vazifasi (G) alohida ekanini unutadi."
     },
@@ -181,27 +186,23 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "O‘zlashtirish darajalari",
-        "nodes": [],
-        "header": [
-          "Daraja",
-          "Mazmuni"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Xabardorlik",
+            "text": "Qonunchilik asoslari, huquq va majburiyatlar"
+          },
+          {
+            "title": "Bilish",
+            "text": "Hujjat tahlili, yordam nuqsonlarini farqlash"
+          },
+          {
+            "title": "Amaliy ko‘nikma",
+            "text": "Xizmat tekshiruvi, ekspertizada ishtirok"
+          }
         ],
-        "rows": [
-          [
-            "Xabardorlik",
-            "Qonunchilik asoslari, huquq va majburiyatlar"
-          ],
-          [
-            "Bilish",
-            "Hujjat tahlili, yordam nuqsonlarini farqlash"
-          ],
-          [
-            "Amaliy ko‘nikma",
-            "Xizmat tekshiruvi, ekspertizada ishtirok"
-          ]
-        ]
+        "caption": "O‘zlashtirish darajalari",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 5 daqiqa. Muhokama: 1) Nega tibbiy hujjat tahlili ko‘nikmasi huquqiy bilimsiz mumkin emas? 2) Xizmat tekshiruvida talaba qanday rol o‘ynashi mumkin? Doskada: uch darajali zinapoya (xabardorlik – bilish – ko‘nikma) chizing va har biriga bittadan misol yozing. Tipik xato: talabalar xabardorlik bilan amaliy ko‘nikmani aralashtiradi."
     },
@@ -282,31 +283,27 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Huquq va axloq farqi",
-        "nodes": [],
-        "header": [
-          "Mezon",
-          "Huquq",
-          "Axloq-etika"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Huquq",
+            "items": [
+              "Ma’naviyatning minimumi",
+              "Majburlash orqali ta’minlanadi",
+              "Axloq bilan o‘zaro bog‘liq"
+            ]
+          },
+          {
+            "title": "Axloq-etika",
+            "items": [
+              "Ma’naviyatning yuqori darajasi",
+              "Erkin, ixtiyoriy bajariladi",
+              "Huquqqa qarama-qarshi emas"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Daraja",
-            "Ma’naviyatning minimumi",
-            "Ma’naviyatning yuqori darajasi"
-          ],
-          [
-            "Bajarilishi",
-            "Majburlash orqali ta’minlanadi",
-            "Erkin, ixtiyoriy bajariladi"
-          ],
-          [
-            "Aloqasi",
-            "O‘zaro bog‘liq",
-            "Bir-biriga qarama-qarshi emas"
-          ]
-        ]
+        "caption": "Huquq va axloq farqi",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Vrach qonunni buzmasdan etikaga zid ish qilishi mumkinmi? Misol keltiring. 2) Nima uchun huquq ma’naviyatning minimumi deyiladi? Doskada: pog‘onali sxema – pastda huquq, tepada etika. Tipik xato: huquq va axloqni bir xil narsa deb hisoblash yoki ularni bir-biriga qarama-qarshi qo‘yish."
     },
@@ -342,31 +339,38 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Tibbiyot huquqi tizimi",
-        "nodes": [],
-        "header": [
-          "Daraja",
-          "Tarkibi"
+        "kind": "tree",
+        "root": "Tibbiyot huquqi tizimi",
+        "children": [
+          {
+            "label": "Asos",
+            "items": [
+              "O‘zbekiston Konstitutsiyasi"
+            ]
+          },
+          {
+            "label": "Asosiy qonun",
+            "items": [
+              "Sog‘liqni saqlash to‘g‘risidagi Qonun"
+            ]
+          },
+          {
+            "label": "Maxsus qonunlar",
+            "items": [
+              "Sanitariya, dori, sil",
+              "Donorlik, psixiatriya"
+            ]
+          },
+          {
+            "label": "Qo‘shni sohalar",
+            "items": [
+              "Fuqarolik, mehnat",
+              "Ma’muriy, jinoyat huquqi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Asos",
-            "O‘zbekiston Respublikasi Konstitutsiyasi"
-          ],
-          [
-            "Asosiy qonun",
-            "“Fuqarolar sog‘lig‘ini saqlash to‘g‘risida”"
-          ],
-          [
-            "Maxsus qonunlar",
-            "Sanitariya, dori, sil, donorlik, psixiatriya"
-          ],
-          [
-            "Qo‘shni sohalar",
-            "Fuqarolik, mehnat, ma’muriy, jinoyat huquqi"
-          ]
-        ]
+        "caption": "Daraja va tarkib",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 12 daq. Muhokama: 1) Nima uchun tibbiy faoliyat faqat sog‘liqni saqlash qonunlari bilan cheklanmaydi? 2) Maxsus qonunlardan qaysilari profilaktika yo‘nalishiga yaqin? Doskada: jadvaldagi to‘rt darajani piramida shaklida chizdiring. Tipik xato: talabalar “Fuqarolar sog‘lig‘ini saqlash to‘g‘risida”gi Qonunni yagona manba deb o‘ylaydi; aslida u boshqa hujjatlar bilan bog‘liq."
     },
@@ -444,7 +448,16 @@
           "uncertain": false
         },
         {
-          "text": "44-modda: huquqlarni sud orqali himoya qilish va g‘ayriqonuniy harakatlar ustidan shikoyat huquqi. 45-moddada voyaga yetmaganlar, mehnatga layoqatsizlar, yolg‘iz keksalar davlat himoyasida.",
+          "text": "44-modda: huquqlarni sud orqali himoya qilish va g‘ayriqonuniy harakatlar ustidan shikoyat huquqi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "10"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "45-moddada voyaga yetmaganlar, mehnatga layoqatsizlar, yolg‘iz keksalar davlat himoyasida.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -453,7 +466,47 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Konstitutsiya moddalari",
+        "children": [
+          {
+            "label": "18-modda",
+            "items": [
+              "Fuqarolar teng huquqli"
+            ]
+          },
+          {
+            "label": "19-modda",
+            "items": [
+              "Huquqlar daxlsiz",
+              "Faqat sud qarori bilan cheklanadi"
+            ]
+          },
+          {
+            "label": "20-modda",
+            "items": [
+              "Huquqni amalga oshirish chegarasi"
+            ]
+          },
+          {
+            "label": "44-modda",
+            "items": [
+              "Sud orqali himoya",
+              "Shikoyat huquqi"
+            ]
+          },
+          {
+            "label": "45-modda",
+            "items": [
+              "Voyaga yetmaganlar, layoqatsizlar",
+              "Yolg‘iz keksalar"
+            ]
+          }
+        ],
+        "caption": "G‘iyosov, 9–10-betlar",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) Nima uchun huquqni cheklash faqat sud qarori bilan mumkin? 2) Bemor huquqi buzilsa, 44-modda unga qanday yo‘l ochadi? Doskada: 18, 19, 20, 44, 45-moddalarni “tenglik – daxlsizlik – chegara – himoya” zanjiri sifatida yozdiring. Tipik xato: moddalar raqamlarini aralashtirish (masalan, 44-moddani 18-moddaga almashtirish)."
     },
     {
@@ -488,16 +541,28 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Malakali tibbiy xizmat turlari",
-        "nodes": [
-          "Birlamchi tibbiy-sanitariya",
-          "Tez yordam",
-          "Shoshilinch yordam",
-          "Ixtisoslashtirilgan yordam"
+        "kind": "tree",
+        "root": "Malakali tibbiy xizmat",
+        "children": [
+          {
+            "label": "Birlamchi yordam",
+            "items": []
+          },
+          {
+            "label": "Tez yordam",
+            "items": []
+          },
+          {
+            "label": "Shoshilinch yordam",
+            "items": []
+          },
+          {
+            "label": "Ixtisoslashtirilgan yordam",
+            "items": []
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "40 va 43-moddalar",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega huquq doim burch va javobgarlik bilan birga keladi? 2) 40- va 43-moddalar farqi nimada? Doskada: huquq → burch → javobgarlik zanjirini chizing, ostiga 4 xizmat turini yozing. Tipik xato: 40-moddani (fuqaro huquqi) 43-modda (davlat kafolati) bilan aralashtirish."
     },
@@ -533,32 +598,38 @@
         }
       ],
       "diagram": {
-        "kind": "table",
+        "kind": "tree",
+        "root": "Qonun: 6 qism, 47 modda",
+        "children": [
+          {
+            "label": "1–2-qismlar",
+            "items": [
+              "Umumiy qoidalar",
+              "Huquqiy muhofaza"
+            ]
+          },
+          {
+            "label": "3–4-qismlar",
+            "items": [
+              "Tibbiy-ijtimoiy yordam",
+              "Ekspertiza"
+            ]
+          },
+          {
+            "label": "5-qism",
+            "items": [
+              "Tibbiyot va farmatsevtika xodimlari"
+            ]
+          },
+          {
+            "label": "6-qism",
+            "items": [
+              "Qasamyod, sir, zarar"
+            ]
+          }
+        ],
         "caption": "Qonun qismlari mazmuni",
-        "nodes": [],
-        "header": [
-          "Qismlar",
-          "Mazmuni"
-        ],
-        "rows": [
-          [
-            "1–2-qismlar",
-            "Umumiy qoidalar; huquqiy muhofaza"
-          ],
-          [
-            "3–4-qismlar",
-            "Tibbiy-ijtimoiy yordam; ekspertiza"
-          ],
-          [
-            "5-qism",
-            "Tibbiyot va farmatsevtika xodimlari"
-          ],
-          [
-            "6-qism",
-            "Yakunlovchi: qasamyod, sir, zarar"
-          ]
-        ],
-        "cases": null
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Qonun tuzilishini bilish amaliy ishda nimaga kerak? 2) Qaysi qismda bemor huquqlari joylashgan? (2-qism, 24-modda). Doskada: 6 qism jadvalini talabalar o‘zlari to‘ldirsin. Tipik xato: qabul qilingan sana bilan kuchga kirgan sanani almashtirib yuborish."
     },
@@ -594,32 +665,31 @@
         }
       ],
       "diagram": {
-        "kind": "table",
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Turmush tarzi",
+            "value": "48–52",
+            "unit": "%"
+          },
+          {
+            "label": "Nasl, irsiyat",
+            "value": "18–20",
+            "unit": "%"
+          },
+          {
+            "label": "Ekologik omillar",
+            "value": "18–20",
+            "unit": "%"
+          },
+          {
+            "label": "Tibbiy yordam",
+            "value": "8–10",
+            "unit": "%"
+          }
+        ],
         "caption": "Salomatlikka ta’sir omillari",
-        "nodes": [],
-        "header": [
-          "Omil",
-          "Taxminiy ulushi"
-        ],
-        "rows": [
-          [
-            "Turmush tarzi",
-            "48–52%"
-          ],
-          [
-            "Nasl va irsiy xususiyatlar",
-            "18–20%"
-          ],
-          [
-            "Ekologik omillar",
-            "18–20%"
-          ],
-          [
-            "Tibbiy yordam",
-            "8–10%"
-          ]
-        ],
-        "cases": null
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Nega profilaktika (tibbiy profilaktika yo‘nalishi) ustuvor? 2) Turmush tarzini yaxshilash uchun qanday tadbirlar bor? Doskada: omillarni ulush bo‘yicha ustunli diagramma shaklida chizing. Tipik xato: tibbiy yordamni salomatlikning asosiy omili deb hisoblash."
     },
@@ -655,17 +725,31 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "3-moddadagi 5 tamoyil",
-        "nodes": [
-          "1. Inson huquqlariga rioya",
-          "2. Yordam hammaga ochiq",
-          "3. Profilaktika ustuvorligi",
-          "4. Ijtimoiy himoya",
-          "5. Fan va amaliyot birligi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1. Inson huquqlari",
+            "text": "Rioya qilish"
+          },
+          {
+            "title": "2. Yordam hammaga",
+            "text": "Hammaga ochiq"
+          },
+          {
+            "title": "3. Profilaktika",
+            "text": "Ustuvorlik"
+          },
+          {
+            "title": "4. Ijtimoiy himoya",
+            "text": "Ijtimoiy himoya"
+          },
+          {
+            "title": "5. Fan va amaliyot",
+            "text": "Birligi"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "3-moddadagi 5 tamoyil",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Tezkor savol (yopiq kitob bilan, 1 daq): 5 tamoyilni ketma-ket sanang. Eslab qolish usuli (o‘qituvchi taklifi, manbada yo‘q): har tamoyilning bosh so‘zi — Huquq, Hamma, Profilaktika, Himoya, Fan. Muhokama: nima uchun profilaktika ustuvor deb belgilangan? Tibbiy yordam salomatlikning faqat kichik qismiga ta’sir qiladi-ku? Doskada chizish: 5 bosqichli zanjirni chizib, har biriga bittadan misol yozdiring. Tipik xato: tamoyillarni bemor huquqlari (24-modda) bilan aralashtirish."
     },
@@ -781,7 +865,16 @@
       "title": "Kamsitmaslik, oila va alohida toifalar huquqlari",
       "bullets": [
         {
-          "text": "Davlat sog‘liqni saqlash huquqlarini yoshi, jinsi, millati, dini va mavqeidan qat’i nazar ta’minlaydi. Kasalligi sababli kamsitishdan ham himoya qiladi (13-modda).",
+          "text": "Davlat sog‘liqni saqlash huquqlarini yoshi, jinsi, millati, dini va mavqeidan qat’i nazar ta’minlaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "12"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Kasalligi sababli kamsitishdan ham himoya qiladi (13-modda).",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -799,7 +892,23 @@
           "uncertain": false
         },
         {
-          "text": "Har bir oila oilaviy shifokorni o‘zi tanlaydi, bolali oilalar imtiyozlardan foydalanadi. Nikohdan o‘tuvchilar tibbiy ko‘rikdan o‘tkaziladi (Oila kodeksi, 17-modda).",
+          "text": "Har bir oila oilaviy shifokorni o‘zi tanlaydi, bolali oilalar imtiyozlardan foydalanadi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "12-13"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: 1) Kasalligi sababli kamsitishni qanday holatlarda uchratish mumkin? 2) Nikoh oldi tibbiy ko‘rigi nima uchun kerak? Doskada 17-23-moddalardagi toifalarni ro‘yxat qilib yozdiring. Tipik xato: 13-modda (kamsitishdan himoya) bilan 18-modda (bepul maslahat, oilaviy shifokor) farqini aralashtirish."
+    },
+    {
+      "title": "Kamsitmaslik, oila va alohida toifalar huquqlari (davomi)",
+      "bullets": [
+        {
+          "text": "Nikohdan o‘tuvchilar tibbiy ko‘rikdan o‘tkaziladi (Oila kodeksi, 17-modda).",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -808,7 +917,7 @@
           "uncertain": false
         },
         {
-          "text": "Qonunda alohida toifalar ko‘rsatilgan: kasb egalari, voyaga etmaganlar, harbiy xizmatchilar, pensionerlar, nogironlar va favqulodda vaziyatda jabrlanganlar (17-23-moddalar).",
+          "text": "Alohida toifalar: kasb egalari, voyaga etmaganlar, harbiy xizmatchilar, pensionerlar, nogironlar va favqulodda vaziyatda jabrlanganlar (17-23-moddalar).",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -851,7 +960,16 @@
           "uncertain": false
         },
         {
-          "text": "25-modda: fuqaro tashxis, prognoz, davolash usullari va xavf-xatarlar haqida to‘liq ma’lumot oladi. 14 yoshgacha va layoqatsizlar uchun ma’lumot qonuniy vakilga beriladi.",
+          "text": "25-modda: fuqaro tashxis, prognoz, davolash usullari va xavf-xatarlar haqida to‘liq ma’lumot oladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "14"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "14 yoshgacha va layoqatsizlar uchun ma’lumot qonuniy vakilga beriladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -860,7 +978,41 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Bemor huquqlari (24–25)",
+        "children": [
+          {
+            "label": "Munosabat",
+            "items": [
+              "Hurmat va insoniy munosabat",
+              "Sharoit talablarga mos"
+            ]
+          },
+          {
+            "label": "Tanlov",
+            "items": [
+              "Shifokor va muassasani tanlash"
+            ]
+          },
+          {
+            "label": "Axborot va sir",
+            "items": [
+              "Tashxis, prognoz, xavf haqida",
+              "Tibbiy sirni saqlash"
+            ]
+          },
+          {
+            "label": "Himoya",
+            "items": [
+              "Zararni qoplash",
+              "Shikoyat, advokat"
+            ]
+          }
+        ],
+        "caption": "G‘iyosov, 13–14-betlar",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 10 daqiqa. Muhokama: 1) Bemor shifokorni tanlash huquqidan qanday foydalanadi? 2) Nomaqbul prognozni bemorga qanday aytish kerak (tibbiy etika)? Doskada 24-moddadagi huquqlarni ikki ustunga ajratib yozdiring: tanlash huquqlari va ma’lumot/sir huquqlari. Tipik xato: 14 yoshga to‘lgan bolaning ma’lumot olish huquqini 14 yoshgacha bo‘lganlar bilan aralashtirish."
     },
     {
@@ -895,17 +1047,31 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Rozilik olish imkoni bo‘lmaganda",
-        "nodes": [
-          "Bemor irodasini bildira olmaydi",
-          "Kechiktirib bo‘lmaydi",
-          "Konsilium qaror qiladi",
-          "Imkon yo‘q: navbatchi vrach",
-          "Rahbariyat xabardor qilinadi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Irodani bildira olmaydi",
+            "text": "Bemor ifoda etolmaydi"
+          },
+          {
+            "title": "Kechiktirib bo‘lmaydi",
+            "text": "Shoshilinch holat"
+          },
+          {
+            "title": "Konsilium",
+            "text": "Konsilium qaror qiladi"
+          },
+          {
+            "title": "Imkon yo‘q bo‘lsa",
+            "text": "Navbatchi vrach hal qiladi"
+          },
+          {
+            "title": "Xabar",
+            "text": "Rahbariyat xabardor qilinadi"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Rozilik olish imkoni bo‘lmaganda",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 10 daqiqa. Muhokama: 1) Bemor hushsiz holda kelsa, kim qaror qabul qiladi? 2) Qonuniy vakil bo‘lmasa nima qilinadi? Doskada sxemani o‘zlari chizsin va har bosqichni 26-modda bilan bog‘lasin. Tipik xato: konsilium tashkil etish mumkin bo‘lganda ham qarorni yakka navbatchi vrach chiqarishi mumkin deb o‘ylash."
     },
@@ -940,7 +1106,7 @@
           "uncertain": false
         },
         {
-          "text": "Kasallik atrofdagilarga xavf tug‘dirsa (masalan, yuqumli kasallik), 28-moddaga ko‘ra rozilik olinmasdan tekshiruv, yotqizish, kuzatish va yakkalab qo‘yish mumkin.",
+          "text": "Kasallik atrofdagilarga xavf tug‘dirsa (masalan, yuqumli), 28-moddaga ko‘ra rozilik olinmasdan tekshiruv, yotqizish, kuzatish va yakkalab qo‘yish mumkin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -949,7 +1115,29 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "27-modda: rad etish",
+            "text": "Bemor yoki vakili rad etishi mumkin"
+          },
+          {
+            "title": "Yozma tasdiqnoma",
+            "text": "Rad tasdiqnomasi olinadi"
+          },
+          {
+            "title": "Iloji bo‘lmasa",
+            "text": "Guvohlar ishtirokida dalolatnoma"
+          },
+          {
+            "title": "28-modda",
+            "text": "Xavfli kasallikda rozilik shart emas"
+          }
+        ],
+        "caption": "Rad etish tartibi",
+        "nodes": []
+      },
       "teacher_notes": "Vaqt: 8 daqiqa. Tezkor savol: Qonuniy vakil rad etgan va bu bemorga og‘ir oqibat keltirishi mumkin bo‘lsa, vrach kimga xabar berishi shart? (Javob: vasiylik va homiylik organlariga, bet 15). Muhokama: nima uchun yuqumli kasallikda rozilik shart emas? Doskada chizish: ikki ustunli sxema, chapda bemorning rad etish huquqi, o‘ngda rozilikni talab qilmaydigan holat. Tipik xato: 27-moddadagi rad etishni 28-moddadagi majburiy yordam bilan aralashtirish."
     },
     {
@@ -1027,31 +1215,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "29–31-moddalar bo‘yicha yordam turlari",
-        "nodes": [],
-        "header": [
-          "Yordam turi",
-          "Mazmuni",
-          "Kim belgilaydi"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Birlamchi",
+            "items": [
+              "Asosiy, qulay, bepul",
+              "Vazirlik hajm va tartibni belgilaydi"
+            ]
+          },
+          {
+            "title": "Shoshilinch va tez",
+            "items": [
+              "Barcha davolash muassasalarida",
+              "Hayot xavfida istalgan transport"
+            ]
+          },
+          {
+            "title": "Ixtisoslashgan",
+            "items": [
+              "Maxsus usul, murakkab texnologiya",
+              "Vazirlik: tur, hajm, sifat"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Birlamchi tibbiy-sanitariya",
-            "Asosiy, qulay, bepul; davlat muassasalarida",
-            "Sog‘liqni saqlash vazirligi"
-          ],
-          [
-            "Shoshilinch va tez",
-            "Barcha davolash muassasalarida; hayot xavfida",
-            "Manbada ko‘rsatilmagan"
-          ],
-          [
-            "Ixtisoslashgan",
-            "Maxsus usul va murakkab texnologiya kerak",
-            "Xuddi shu vazirlik: tur, hajm, sifat"
-          ]
-        ]
+        "caption": "29–31-moddalar",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daqiqa. Muhokama: nima uchun birlamchi yordam eng asosiy tur hisoblanadi? Tibbiyot xodimlari yetib kelguncha birlamchi yordamni kim ko‘rsatishi shart? (bet 16). Doskada chizish: jadvalni daftarga ko‘chirib, har turga bitta misol yozish. Tipik xato: birlamchi yordamni ixtisoslashgan yordam bilan, shoshilinch yordamni esa har doim pullik deb adashtirish."
     },
@@ -1059,7 +1248,16 @@
       "title": "Shoshilinch yordam va ijtimoiy ahamiyatli kasalliklar",
       "bullets": [
         {
-          "text": "Fuqaro barcha davolash-profilaktika muassasalarida shoshilinch yordam olish huquqiga ega. Hayot xavf ostida bo‘lsa, xodimlar istalgan transportdan foydalanishi mumkin (30-modda).",
+          "text": "Fuqaro barcha davolash-profilaktika muassasalarida shoshilinch yordam olish huquqiga ega.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "16"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Hayot xavf ostida bo‘lsa, xodimlar istalgan transportdan foydalanishi mumkin (30-modda).",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1086,7 +1284,7 @@
           "uncertain": false
         },
         {
-          "text": "Vazirlar Mahkamasining 1997 yil 20 martdagi 153-son Qarori ro‘yxatiga sil, onkologik va jinsiy yo‘l bilan o‘tadigan kasalliklar, moxov, ruhiy kasalliklar va OITS (orttirilgan immunotanqislik sindromi) kiradi.",
+          "text": "Vazirlar Mahkamasi 1997 yil 20 martdagi 153-son Qarori ro‘yxati: sil, onkologik, jinsiy yo‘l bilan o‘tadigan kasalliklar, moxov, ruhiy kasalliklar, OITS.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1170,7 +1368,16 @@
       "title": "Shifokor qasamyodi va shifokor siri",
       "bullets": [
         {
-          "text": "44-moddada O‘zbekiston Respublikasi shifokori qasamyodining matni berilgan. Tibbiyot oliy o‘quv yurtini bitirib, vrach diplomini olayotganlar uni qabul qiladi. Buzilsa, javobgarlik belgilangan.",
+          "text": "44-moddada O‘zbekiston Respublikasi shifokori qasamyodining matni berilgan. Tibbiyot oliy o‘quv yurtini bitirib, vrach diplomini olayotganlar uni qabul qiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "18"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Buzilsa, javobgarlik belgilangan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1241,31 +1448,37 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Roziliksiz ma’lumot berish holatlari",
-        "nodes": [],
-        "header": [
-          "Holat",
-          "Mazmuni"
+        "kind": "tree",
+        "root": "Roziliksiz ma’lumot",
+        "children": [
+          {
+            "label": "Bola, layoqatsiz",
+            "items": [
+              "Ota-ona yoki vakil xabardor"
+            ]
+          },
+          {
+            "label": "Og‘ir bemor",
+            "items": [
+              "Tekshirish va davolash uchun"
+            ]
+          },
+          {
+            "label": "Atrofga xavf",
+            "items": [
+              "Yuqumli kasallik, yalpi zaharlanish"
+            ]
+          },
+          {
+            "label": "Rasmiy so‘rov",
+            "items": [
+              "Idoralar so‘rovi",
+              "Zarar gumoni"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "14 yoshgacha / layoqatsiz",
-            "Ota-ona yoki qonuniy vakil xabardor"
-          ],
-          [
-            "Ahvoli og‘ir bemor",
-            "Tekshirish va davolash maqsadida"
-          ],
-          [
-            "Atrofdagilarga xavf",
-            "Yuqumli kasallik, yalpi zaharlanish"
-          ],
-          [
-            "Rasmiy so‘rov / zarar gumoni",
-            "Idoralar so‘rovi; g‘ayriqonuniy zarar"
-          ]
-        ]
+        "caption": "Oltita holatdan to‘rt guruh",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 8 daq. Jadvalda oltita holat to‘rt qatorga jamlangan: birinchi qatorda ikkita, to‘rtinchi qatorda ikkita holat bor. Talabalar oltitasini to‘liq sanab chiqsin. Muhokama: 1) Nima uchun yuqumli kasallikda rozilik shart emas? 2) Jinoyat kodeksi 241-moddasi qaysi holatga tegishli? Doskaga chizing: oltita holatli ro‘yxat va yonida «xabar beriladigan idora». Tipik xato: istisnolarni cheksiz kengaytirish yoki ularni sanamay qoldirish."
     },
@@ -1334,7 +1547,16 @@
           "uncertain": false
         },
         {
-          "text": "Diqqat: sir mutlaq emas. Zarar g‘ayriqonuniy harakat yoki baxtsiz tasodifdan yetgan (yoki shunday gumon bor) bo‘lsa, rozilik shart emas. Jinoyatni yashirish uchun Jinoyat kodeksining 241-moddasida javobgarlik bor.",
+          "text": "Diqqat: sir mutlaq emas. Zarar g‘ayriqonuniy harakat yoki baxtsiz tasodifdan yetgan (yoki shunday gumon bor) bo‘lsa, rozilik shart emas.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "19"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Jinoyatni yashirish uchun Jinoyat kodeksining 241-moddasida javobgarlik bor.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1387,36 +1609,29 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Sobiq tizim va islohot",
-        "nodes": [],
-        "header": [
-          "Jihat",
-          "Sobiq tizim",
-          "Islohot"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Sobiq tizim",
+            "items": [
+              "Besh pog‘onali, ko‘p muassasa",
+              "Kamquvvat ko‘p bosqichli qishloq",
+              "Ambulatoriya bemori yotqizilgan",
+              "Xodim, maydon, tashrif bo‘yicha"
+            ]
+          },
+          {
+            "title": "Islohot",
+            "items": [
+              "Ikki pog‘onali tizim",
+              "Qishloq vrachlik punktlari",
+              "Murojaatning ~90% i birlamchida",
+              "Aholi soniga qarab (jon boshiga)"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Birlamchi bo‘g‘in",
-            "Besh pog‘onali, ko‘p muassasa",
-            "Ikki pog‘onali tizim"
-          ],
-          [
-            "Qishloqda",
-            "Kamquvvat ko‘p bosqichli muassasalar",
-            "Qishloq vrachlik punktlari"
-          ],
-          [
-            "Bemor oqimi",
-            "Ambulatoriya bemori yotqizilgan",
-            "Murojaatning qariyib 90% i birlamchida"
-          ],
-          [
-            "Moliyalash",
-            "Xodim soni, maydon, tashrif bo‘yicha",
-            "Aholi soniga qarab (jon boshiga)"
-          ]
-        ]
+        "caption": "Sobiq tizim va islohot",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nima uchun ko‘p pog‘onali tizim sifatni oshirmadi? 2) Moliyalash usuli vrach xulqiga qanday ta’sir qilgan (profilaktikaga e’tibor kamligi)? Doskada chizish: eski besh pog‘onali zanjir va yangi ikki pog‘onali sxemani yonma-yon chizdiring. Tipik xato: islohot sababini faqat «mablag‘ yetishmasligi» deb bilish; aslida muammo samarasiz tuzilma va rag‘batning yo‘qligi edi."
     },
@@ -1433,7 +1648,7 @@
           "uncertain": false
         },
         {
-          "text": "Maqsad - aholi sog‘lig‘ini saqlash va sog‘lom avlod tarbiyasi uchun sharoit yaratish. Tamoyillar: konstitutsion huquqqa rioya, teng bahramandlik, davlat nazorati, profilaktika ustuvorligi.",
+          "text": "Maqsad — aholi sog‘lig‘ini saqlash va sog‘lom avlod tarbiyasi uchun sharoit yaratish.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1442,7 +1657,32 @@
           "uncertain": false
         },
         {
-          "text": "Vazifalardan biri - kafolatlangan birlamchi yordam sifatini ta’minlash. Ustuvor yo‘nalishlar: birlamchi va shoshilinch yordam, moliyalashtirish, onalar va bolalar, tibbiy ta’lim.",
+          "text": "Tamoyillar: konstitutsion huquqqa rioya, teng bahramandlik, davlat nazorati, profilaktika ustuvorligi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "24"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Vazifalardan biri — kafolatlangan birlamchi yordam sifatini ta’minlash.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "25, 27"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 6 daq (tezkor savol - 2 daq). Muhokama: 1) Tamoyillar ichida profilaktika ustuvorligi nima uchun tibbiy profilaktika yo‘nalishi talabalari uchun muhim? 2) Vazifa va ustuvor yo‘nalish farqi nimada? Doskada chizish: «maqsad - tamoyillar - vazifalar - ustuvor yo‘nalishlar» zanjirini chizdiring. Tipik xato: tamoyil, vazifa va ustuvor yo‘nalishni aralashtirish va yillarni (1998–2005) adashtirish."
+    },
+    {
+      "title": "Davlat dasturi: tamoyil va vazifalar (davomi)",
+      "bullets": [
+        {
+          "text": "Ustuvor yo‘nalishlar: birlamchi va shoshilinch yordam, moliyalashtirish, onalar va bolalar, tibbiy ta’lim.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1532,7 +1772,16 @@
       "title": "Shoshilinch yordam, ta’lim va xususiy sektor",
       "bullets": [
         {
-          "text": "Respublika shoshilinch tibbiy yordam ilmiy markazi, viloyatlarda filiallar, tuman va shaharlarda bo‘limlar ishlaydi. Tizimga tez yordam va sanitariya aviatsiyasi kiradi.",
+          "text": "Respublika shoshilinch tibbiy yordam ilmiy markazi, viloyatlarda filiallar, tuman va shaharlarda bo‘limlar ishlaydi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "30"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Tizimga tez yordam va sanitariya aviatsiyasi kiradi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1550,7 +1799,23 @@
           "uncertain": false
         },
         {
-          "text": "Sog‘liqni saqlash vazirligi qoshida vrach va farmatsevtlarni litsenziyalash va attestatsiya markazi tashkil etildi. Oliy ma’lumotli hamshiralar fakultetlari ochildi.",
+          "text": "Sog‘liqni saqlash vazirligi qoshida vrach va farmatsevtlarni litsenziyalash va attestatsiya markazi tashkil etildi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "30"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 8 daq. Muhokama: 1) Nega xususiylashtirish bepul yordam printsipini buzmasligi kerak? 2) Litsenziyalash va attestatsiya nima uchun uzluksiz ta’limning qismi? Doskada: bakalavriatdan magistraturagacha yo‘lni chizing. Tipik xato: bakalavriat va magistratura vazifalarini aralashtirish; 20% ni barcha xizmatga taalluqli deb o‘ylash (u imtiyozli bemorlar uchun)."
+    },
+    {
+      "title": "Shoshilinch yordam, ta’lim va xususiy sektor (davomi)",
+      "bullets": [
+        {
+          "text": "Oliy ma’lumotli hamshiralar fakultetlari ochildi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1603,36 +1868,27 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Islohot hujjatlari xronologiyasi",
-        "nodes": [],
-        "header": [
-          "Sana",
-          "Hujjat",
-          "Mazmuni"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "2003-yil 26-fevral",
+            "text": "Prezident Farmoni: ikkinchi bosqich"
+          },
+          {
+            "title": "2007-yil 19-sentyabr",
+            "text": "Farmon: oltita ilmiy-amaliy markaz"
+          },
+          {
+            "title": "2007-yil 19-sentyabr",
+            "text": "Farmon: tuman tibbiyot birlashmalari"
+          },
+          {
+            "title": "2007-yil 2-oktyabr",
+            "text": "Qaror: boshqaruvni takomillashtirish"
+          }
         ],
-        "rows": [
-          [
-            "2003-yil 26-fevral",
-            "Prezident Farmoni",
-            "Islohotning ikkinchi bosqichi"
-          ],
-          [
-            "2007-yil 19-sentyabr",
-            "Prezident Farmoni",
-            "Oltita yangi ilmiy-amaliy markaz"
-          ],
-          [
-            "2007-yil 19-sentyabr",
-            "Prezident Farmoni",
-            "Tuman (shahar) tibbiyot birlashmalari"
-          ],
-          [
-            "2007-yil 2-oktyabr",
-            "Prezident Qarori",
-            "Boshqaruv tashkilini takomillashtirish"
-          ]
-        ]
+        "caption": "Islohot hujjatlari xronologiyasi",
+        "nodes": []
       },
       "teacher_notes": "Vaqt: 10 daq. Muhokama: 1) 2003-yil Farmoni islohotning qaysi bosqichini boshladi? 2) Tuman tibbiyot birlashmalari qanday vazifa bajaradi? Doskada: 2003 va 2007 yillar vaqt chizig‘ini chizing. Oltita markaz: akusherlik-ginekologiya, pediatriya, terapiya va tibbiy reabilitatsiya, dermatologiya va venerologiya, ftiziatriya va pulmonologiya, endokrinologiya. Tipik xato: 19-sentyabrdagi Farmon bilan 2-oktyabrdagi Qarorni aralashtirish."
     },
@@ -1640,7 +1896,16 @@
       "title": "Voqea tahlili 5: islohot natijalari",
       "bullets": [
         {
-          "text": "Vaziyat: qishloqda feldsher-akusherlik punkti, ambulatoriya, uchastka kasalxonasi, tuman kasalxonasi bor. Besh pog‘onali tizim qimmat, yordam sifati esa past edi.",
+          "text": "Vaziyat: qishloqda feldsher-akusherlik punkti, ambulatoriya, uchastka kasalxonasi, tuman kasalxonasi bor.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "22, 28"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Besh pog‘onali tizim qimmat, yordam sifati esa past edi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1658,20 +1923,11 @@
           "uncertain": false
         },
         {
-          "text": "Yangi tizim: qishloq vrachlik punkti va tuman markaziy kasalxonasi, shaharda oilaviy poliklinika. Mablag‘ biriktirilgan aholi soniga qarab, jon boshiga ajratiladi.",
+          "text": "Yangi tizim: qishloq vrachlik punkti va tuman markaziy kasalxonasi, shaharda oilaviy poliklinika.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
             "page": "28-29"
-          },
-          "uncertain": false
-        },
-        {
-          "text": "Savol: Jahon sog‘liqni saqlash tashkilotiga ko‘ra, birlamchi yordam murojaatlarning qariyb 90% ini qondira oladi. Bu yotqizish va xarajatga qanday ta’sir qiladi?",
-          "source": {
-            "author": "G‘iyosov Z.A.",
-            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
-            "page": "27-28"
           },
           "uncertain": false
         }
@@ -1681,10 +1937,44 @@
       "uncertain": false
     },
     {
+      "title": "Voqea tahlili 5: islohot natijalari (davomi)",
+      "bullets": [
+        {
+          "text": "Mablag‘ biriktirilgan aholi soniga qarab, jon boshiga ajratiladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "28-29"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Jahon sog‘liqni saqlash tashkilotiga ko‘ra, birlamchi yordam murojaatlarning qariyb 90% ini qondira oladi.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "27-28"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Savol: bu yotqizish va xarajatga qanday ta’sir qiladi?",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "27-28"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": null,
+      "teacher_notes": "Vaqt: 7 daqiqa. Muhokama: 1) Nega jon boshiga moliyalash vrachni profilaktikaga undaydi? 2) Eski va yangi tizimda bemor yo‘li qanday farq qiladi? Doskaga chizish: besh pog‘onali zanjir va ikki pog‘onali tizim yonma-yon. Tipik xato: birlamchi yordamni faqat shifokor qabuli deb tushunish. Bu yordam profilaktika va sanitariya chora-tadbirlarini ham o‘z ichiga oladi."
+    },
+    {
       "title": "Xulosa va nazorat savollari",
       "bullets": [
         {
-          "text": "Konstitutsiyaning 40-moddasi malakali tibbiy xizmat huquqini beradi, 43-moddasi davlat kafolatini belgilaydi. “Fuqarolar sog‘lig‘ini saqlash to‘g‘risida”gi Qonun 1996 yilda qabul qilingan.",
+          "text": "40-modda malakali tibbiy xizmat huquqini, 43-modda davlat kafolatini beradi. “Fuqarolar sog‘lig‘ini saqlash to‘g‘risida”gi Qonun 1996 yilda qabul qilingan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1693,7 +1983,7 @@
           "uncertain": false
         },
         {
-          "text": "Qonunda bemor huquqlari (24-modda), ma’lumot olish, ixtiyoriy rozilik yoki rad etish (26-27-moddalar) va shifokor siri (45-modda) belgilangan. Zararni qoplash javobgarlikdan ozod etmaydi.",
+          "text": "Qonunda bemor huquqlari (24-modda), axborot, rozilik yoki rad etish (26-27) va shifokor siri (45) belgilangan; zararni qoplash javobgarlikdan ozod etmaydi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1702,7 +1992,16 @@
           "uncertain": false
         },
         {
-          "text": "Islohot Davlat dasturi (1998) bilan boshlandi. Ustuvor yo‘nalish: birlamchi yordam, shoshilinch yordam, moliyalashtirish, xususiy tarmoq. Keyin 2003 va 2007 yillardagi farmonlar chiqdi.",
+          "text": "Islohot Davlat dasturi (1998) bilan boshlandi; ustuvor yo‘nalishlar: birlamchi va shoshilinch yordam, moliyalashtirish, xususiy tarmoq.",
+          "source": {
+            "author": "G‘iyosov Z.A.",
+            "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "24, 27, 31"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Keyin 2003 va 2007 yillar farmonlari chiqdi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -1793,12 +2092,12 @@
     {
       "question": "Kasalxonada davolash sifati yuzasidan bahsli holat yuz berdi va xizmat tekshiruvi o‘tkazilmoqda. Fan bo‘yicha talaba qaysi amaliy ko‘nikmaga ega bo‘lishi kerak?",
       "options": [
-        "Bemorga mustaqil ravishda jarrohlik amaliyotini o‘tkazish",
         "Bahsli holatlardagi xizmat tekshiruvlarida ishtirok etish",
         "Tibbiy muassasalarni litsenziyalash qarorini chiqarish",
-        "Sud-tibbiy ekspertiza xulosasini sud nomidan tasdiqlash"
+        "Sud-tibbiy ekspertiza xulosasini sud nomidan tasdiqlash",
+        "Bemorga mustaqil ravishda jarrohlik amaliyotini o‘tkazish"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Talaba tibbiy yordam ko‘rsatish bilan bog‘liq bahsli holatlarda o‘tkaziladigan xizmat tekshiruvlarida ishtirok etish, yo‘l qo‘yilgan kamchiliklarni tahlil etish ko‘nikmalariga ega bo‘lishi kerak.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1825,12 +2124,12 @@
     {
       "question": "Tibbiy profilaktika mutaxassisi aholi salomatligiga eng ko‘p ta’sir qiluvchi omilni aniqlamoqchi. Umum qabul qilingan fikrga ko‘ra, salomatlikning eng katta ulushi qaysi omilga bog‘liq?",
       "options": [
-        "Nasl va irsiy xususiyatlar ulushi",
         "Ekologik omillar ulushi",
         "Ko‘rsatiladigan tibbiy yordam ulushi",
-        "Turmush tarzi ulushi"
+        "Turmush tarzi ulushi",
+        "Nasl va irsiy xususiyatlar ulushi"
       ],
-      "correct_index": 3,
+      "correct_index": 2,
       "explanation": "Salomatlikning taxminan 48-52% qismi turmush tarziga bog‘liq. Nasl va irsiyat hamda ekologik omillar har biri 18-20%, tibbiy yordam esa atigi 8-10% ni tashkil etadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1841,12 +2140,12 @@
     {
       "question": "Kasallik tufayli sog‘lig‘ini yo‘qotgan fuqaroga davlat ijtimoiy himoya ko‘rsatmoqda. Bu holat Qonunning qaysi tamoyiliga mos keladi?",
       "options": [
-        "Sog‘liq yo‘qolganda fuqarolarni ijtimoiy himoya qilish",
         "Profilaktika chora-tadbirlarining ustuvorligi tamoyili",
         "Aholi barcha qatlamlarining tibbiy yordamdan bahramandligi",
-        "Tibbiyot fanining amaliyot bilan birligi tamoyili"
+        "Tibbiyot fanining amaliyot bilan birligi tamoyili",
+        "Sog‘liq yo‘qolganda fuqarolarni ijtimoiy himoya qilish"
       ],
-      "correct_index": 0,
+      "correct_index": 3,
       "explanation": "Qonunning 3-moddasidagi beshta tamoyildan biri — sog‘liqni yo‘qotgan taqdirda fuqarolarning ijtimoiy himoya qilinishi. Boshqa variantlar ham shu moddada bor, lekin bu vaziyatga mos kelmaydi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1857,12 +2156,12 @@
     {
       "question": "Oddiy fuqaro xususiy klinikaga birlamchi tibbiy-sanitariya yordami uchun murojaat qildi. Bu yordam odatda qanday asosda ko‘rsatiladi?",
       "options": [
-        "Har doim davlat hisobidan bepul asosda",
-        "Faqat ixtiyoriy sug‘urta polisi asosida",
         "Asosan shartnoma asosida, haq to‘lab",
-        "Faqat sud qarori asosida, majburiy tartibda"
+        "Faqat sud qarori asosida, majburiy tartibda",
+        "Har doim davlat hisobidan bepul asosda",
+        "Faqat ixtiyoriy sug‘urta polisi asosida"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "explanation": "Xususiy va boshqa tizimlarda birlamchi yordam asosan shartnoma asosida ko‘rsatiladi. Ayrim guruhlarga u bepul bo‘ladi, ularning tarkibini Vazirlar Mahkamasi belgilaydi. Davlat tizimida esa davlat kafolatlagan yordam bepul beriladi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1889,12 +2188,12 @@
     {
       "question": "Sakkiz yoshli bolaga rejali jarrohlik amaliyoti tavsiya etildi. Tibbiy aralashuvga rozilikni kim beradi?",
       "options": [
+        "Mahalla qo‘mitasi raisining qarori",
         "Bolaning o‘zi yozma ariza orqali",
         "Bolaning qonuniy vakili (ota-onasi)",
-        "Maktab direktorining ruxsatnomasi",
-        "Mahalla qo‘mitasi raisining qarori"
+        "Maktab direktorining ruxsatnomasi"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "14 yoshgacha bo‘lgan shaxslarga nisbatan tibbiy aralashuvga rozilikni ularning qonuniy vakillari beradi (26-modda). Bola o‘zi rozilik bera olmaydi, boshqa tashkilot rahbarlariga bunday vakolat berilmagan.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1937,12 +2236,12 @@
     {
       "question": "Vazirlar Mahkamasining 153-son qaroriga ko‘ra qaysi kasallik ijtimoiy ahamiyatga molik kasalliklar qatoriga kiritilgan?",
       "options": [
-        "Arterial gipertoniya kasalligi",
         "O‘tkir respirator virusli infeksiya",
         "Sil kasalligi",
-        "Surunkali gastrit kasalligi"
+        "Surunkali gastrit kasalligi",
+        "Arterial gipertoniya kasalligi"
       ],
-      "correct_index": 2,
+      "correct_index": 1,
       "explanation": "Qarorga binoan sil, onkologik kasalliklar, jinsiy yo‘l bilan o‘tadigan kasalliklar, moxov, ruhiy kasalliklar va OITS ijtimoiy ahamiyatga molik hisoblanadi. Boshqa variantlar bu ro‘yxatda ko‘rsatilmagan.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1953,12 +2252,12 @@
     {
       "question": "Sog‘liqni saqlash qonunchiligida ilk bor tibbiy ekspertiza turi maqomini olgan tekshiruv qaysi?",
       "options": [
+        "Ixtiyoriy tibbiy sug‘urta tekshiruvi",
         "Dispanser kuzatuvga olish tekshiruvi",
         "Patologo-anatomik tekshiruv",
-        "Sanitariya-epidemiologik nazorat",
-        "Ixtiyoriy tibbiy sug‘urta tekshiruvi"
+        "Sanitariya-epidemiologik nazorat"
       ],
-      "correct_index": 1,
+      "correct_index": 2,
       "explanation": "Darslikda ta’kidlanishicha, sog‘liqni saqlash qonunchiligida ilk bor patologo-anatomik tekshiruvlar aks etdi va tibbiy ekspertiza turi maqomini oldi (40-modda).",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1969,12 +2268,12 @@
     {
       "question": "Surishtiruv organi fuqaro sog‘lig‘i bo‘yicha rasmiy so‘rov yubordi. Shifokorning qonuniy harakati qaysi?",
       "options": [
-        "Fuqaro roziligi bo‘lmasa, so‘rovga umuman javob bermaydi",
-        "Fuqaro roziligisiz ham rasmiy so‘rov bo‘yicha ma’lumot beradi",
         "Ma’lumotni faqat bemorning yaqin qarindoshlariga topshiradi",
-        "Ma’lumotni faqat bosh vrachning og‘zaki ruxsati bilan beradi"
+        "Ma’lumotni faqat bosh vrachning og‘zaki ruxsati bilan beradi",
+        "Fuqaro roziligi bo‘lmasa, so‘rovga umuman javob bermaydi",
+        "Fuqaro roziligisiz ham rasmiy so‘rov bo‘yicha ma’lumot beradi"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Qonunning 45-moddasiga ko‘ra surishtiruv, tergov, prokuratura va sud organlarining rasmiy so‘rovi shifokor sirini fuqaro roziligisiz berishga ruxsat etilgan istisno holatlardan biridir.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1985,12 +2284,12 @@
     {
       "question": "Vrach xizmat vazifasini lozim bajarmay bemor sog‘lig‘iga zarar yetkazdi va uni qopladi. Bu javobgarligiga qanday ta’sir qiladi?",
       "options": [
-        "Zarar qoplangani uchun faqat intizomiy javobgarlik qoladi",
-        "Zarar qoplangani uchun xodim har qanday javobgarlikdan ozod",
         "Qoplash intizomiy, ma’muriy, jinoiy javobgarlikni bekor qilmaydi",
-        "Qoplash faqat jinoiy javobgarlikni bekor qiladi, qolganini emas"
+        "Qoplash faqat jinoiy javobgarlikni bekor qiladi, qolganini emas",
+        "Zarar qoplangani uchun faqat intizomiy javobgarlik qoladi",
+        "Zarar qoplangani uchun xodim har qanday javobgarlikdan ozod"
       ],
-      "correct_index": 2,
+      "correct_index": 0,
       "explanation": "Qonunning 46-moddasiga ko‘ra zararning o‘rnini qoplash tibbiyot va farmatsevtika xodimlarini intizomiy, ma’muriy va jinoiy javobgarlikdan ozod etmaydi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2001,12 +2300,12 @@
     {
       "question": "Eski tizimda ambulatoriyada davolanishi mumkin bo‘lgan bemorlar ko‘pincha kasalxonaga yotqizilgan. Asosiy sabab qaysi?",
       "options": [
+        "Qishloqlarda mutaxassis vrachlar ehtiyojdan ortiq bo‘lgan edi",
         "Aholi ehtiyojiga mos yordam ko‘rsatishning aniq mezoni yo‘q edi",
         "Ambulatoriyalarda zamonaviy asbob-uskunalar haddan ziyod ko‘p edi",
-        "Kasalxonalarda bemor o‘rinlari doimiy kamaytirib borilgan edi",
-        "Qishloqlarda mutaxassis vrachlar ehtiyojdan ortiq bo‘lgan edi"
+        "Kasalxonalarda bemor o‘rinlari doimiy kamaytirib borilgan edi"
       ],
-      "correct_index": 0,
+      "correct_index": 1,
       "explanation": "Manbada aholi ehtiyojiga mutanosib yordam ko‘rsatishning aniq mezoni bo‘lmagani, xodimlarda esa buning uchun malaka va manfaatdorlik yo‘qligi ta’kidlangan; shu sababli bemorlar kasalxonaga yotqizilgan.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2017,12 +2316,12 @@
     {
       "question": "Poliklinikaga biriktirilgan aholi orasida tug‘ish yoshidagi ayollar va bolalar ko‘p. Jon boshiga moliyalashtirishda mablag‘ qanday taqsimlanadi?",
       "options": [
-        "Barcha biriktirilgan aholiga mablag‘ butunlay teng bo‘linadi",
         "Mablag‘ ko‘proq muassasadagi xodimlar soniga qarab taqsimlanadi",
         "Mablag‘ muassasa maydoni va tashriflar soniga bog‘lab beriladi",
-        "Ayollar va bolalar uchun mablag‘ning ko‘proq qismi ajratiladi"
+        "Ayollar va bolalar uchun mablag‘ning ko‘proq qismi ajratiladi",
+        "Barcha biriktirilgan aholiga mablag‘ butunlay teng bo‘linadi"
       ],
-      "correct_index": 3,
+      "correct_index": 2,
       "explanation": "Jon boshiga moliyalashtirishda yagona me’yor bilan birga aholi soni, zichligi, jinsi va yoshi bo‘yicha koeffitsientlar qo‘llanadi. Ayollar va bolalar tez-tez murojaat qilgani uchun ularga ko‘proq mablag‘ ajratiladi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -2033,12 +2332,12 @@
     {
       "question": "2007 yil 19 sentyabrdagi Farmonga ko‘ra yangi tashkil etilgan markazlardan qaysi biri to‘g‘ri ko‘rsatilgan?",
       "options": [
-        "Jarrohlik va urologiya respublika ixtisoslashtirilgan markazi",
-        "Dermatologiya va venerologiya ilmiy-amaliy tibbiyot markazi",
         "Kardiologiya va ko‘z mikroxirurgiyasi respublika markazlari",
-        "Onkologiya va gematologiya ilmiy-amaliy tibbiyot markazi"
+        "Onkologiya va gematologiya ilmiy-amaliy tibbiyot markazi",
+        "Jarrohlik va urologiya respublika ixtisoslashtirilgan markazi",
+        "Dermatologiya va venerologiya ilmiy-amaliy tibbiyot markazi"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "2007 yilgi Farmonga binoan oltita markaz tashkil etildi, jumladan dermatologiya va venerologiya markazi. Jarrohlik, urologiya, kardiologiya va ko‘z mikroxirurgiyasi markazlari esa 2003 yilgi Farmonga ko‘ra tajriba tariqasida ochilgan.",
       "source": {
         "author": "G‘iyosov Z.A.",

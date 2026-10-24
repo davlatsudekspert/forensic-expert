@@ -5,7 +5,16 @@
       "title": "Mavzu va dars maqsadi",
       "bullets": [
         {
-          "text": "Immunohistokimyo (IHK) to‘qima va hujayra antigenlarini qidiradi: aminokislota, oqsil, infeksion agent va aniq hujayra populyatsiyalari. Buning uchun maxsus antikorlar ishlatiladi.",
+          "text": "Immunohistokimyo (IHK) to‘qima va hujayra antigenlarini qidiradi: aminokislota, oqsil, infeksion agent va aniq hujayra populyatsiyalari.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, Abstract; The Immunohistochemistry Technique"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Buning uchun maxsus antikorlar ishlatiladi.",
           "source": {
             "author": "de Matos et al.",
             "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
@@ -66,7 +75,7 @@
           "uncertain": false
         },
         {
-          "text": "Brandtzaeg fikricha, hujayra markerlarini bo‘yash hujayralar bilan “suhbat” qilishdir. To‘g‘ri antikorlar bilan hujayra kelib chiqishi va tirik organizmdagi vazifasi aniqlanadi.",
+          "text": "Brandtzaeg fikricha, hujayra markerlarini bo‘yash hujayralar bilan “suhbat” qilishdir.",
           "source": {
             "author": "de Matos et al.",
             "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
@@ -75,7 +84,16 @@
           "uncertain": false
         },
         {
-          "text": "Brandtzaeg IHKni faqat tavsifiy usul deb atashni noo‘rin hisoblaydi. In vitro va in situ tajribalar in vivo holatning “suratlari” bo‘lib, biotibbiy tadqiqotning tayanchidir.",
+          "text": "To‘g‘ri antikorlar bilan hujayra kelib chiqishi va tirik organizmdagi vazifasi aniqlanadi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918, The Immunohistochemistry Technique"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Brandtzaeg IHKni faqat tavsifiy usul deb atashni noo‘rin hisoblaydi.",
           "source": {
             "author": "de Matos et al.",
             "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
@@ -85,7 +103,7 @@
         }
       ],
       "diagram": null,
-      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) “Hujayralar bilan suhbat” iborasi nimani anglatadi? 2) Nega IHKni faqat “bo‘yash” deb atash noto‘g‘ri bo‘lishi mumkin? Doskada: antigen, antikor va ko‘rinadigan bo‘yoq o‘rtasidagi bog‘lanishni oddiy strelkalar bilan chizing. Tipik xato: immunositokimyo va IHKni butunlay bir xil deb olish. Manbada atama ishlatilishi mualliflarga qarab farq qiladi."
+      "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) “Hujayralar bilan suhbat” iborasi nimani anglatadi? 2) Nega IHKni faqat “bo‘yash” deb atash noto‘g‘ri bo‘lishi mumkin? Doskada: antigen, antikor va ko‘rinadigan bo‘yoq o‘rtasidagi bog‘lanishni oddiy strelkalar bilan chizing. Tipik xato: immunositokimyo va IHKni butunlay bir xil deb olish. Manbada atama ishlatilishi mualliflarga qarab farq qiladi. In vitro va in situ tajribalar in vivo holatning “suratlari” bo‘lib, biotibbiy tadqiqotning tayanchidir."
     },
     {
       "title": "IHK texnikasining ikki bosqichi",
@@ -165,16 +183,26 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Vaqt chizig‘i",
-        "nodes": [
-          "Marrack: qizil bo‘yoqli reagent",
-          "Coons: ftorestseinli antikor",
-          "Nakane: fermentli antikor",
-          "1960-yillar: optik mikroskop"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Marrack",
+            "text": "Qizil bo‘yoqli reagentlar (tifo, vabo)"
+          },
+          {
+            "title": "Coons",
+            "text": "1940-yillar: ftorestseinli antikor"
+          },
+          {
+            "title": "Nakane",
+            "text": "Fermentli antikor"
+          },
+          {
+            "title": "1960-yillar",
+            "text": "Oddiy optik mikroskopda ko‘rish"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Vaqt chizig‘i"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega Coons qizil rang sezgirligini past deb hisobladi? 2) Fermentli belgilash usulni qanday qilib ko‘plab laboratoriyaga yetkazdi? Doskada: Marrack, Coons va Nakane vaqt chizig‘ini chizdiring va har biriga mikroskop turini yozdiring. Tipik xato: talabalar floresent usulni (Coons) fermentli usul (Nakane) bilan aralashtiradi."
     },
@@ -210,36 +238,39 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Usullar va ahamiyati",
-        "nodes": [],
-        "header": [
-          "Usul",
-          "Mazmuni",
-          "Ahamiyati"
+        "kind": "tree",
+        "root": "IHK usullari",
+        "children": [
+          {
+            "label": "PAP (Sternberger)",
+            "items": [
+              "Belgilanmagan antikor",
+              "Peroksidaza"
+            ]
+          },
+          {
+            "label": "APAAP (Mason)",
+            "items": [
+              "Belgilanmagan antikor",
+              "Ishqoriy fosfataza"
+            ]
+          },
+          {
+            "label": "DAB",
+            "items": [
+              "Peroksidaza xromogeni",
+              "Elektron mikroskopda ferritin o‘rniga"
+            ]
+          },
+          {
+            "label": "Kolloid oltin",
+            "items": [
+              "Immunobo‘yoq zarrachalari",
+              "Hujayra ichi bo‘yash"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "PAP (Sternberger)",
-            "Belgilanmagan antikor, peroksidaza",
-            "Qo‘llanish doirasi sezilarli kengaydi"
-          ],
-          [
-            "APAAP (Mason)",
-            "Belgilanmagan antikor, ishqoriy fosfataza",
-            "Qo‘llanish doirasi sezilarli kengaydi"
-          ],
-          [
-            "DAB",
-            "Peroksidaza xromogeni",
-            "Elektron mikroskopda ferritin o‘rniga"
-          ],
-          [
-            "Kolloid oltin",
-            "Immunobo‘yoq zarrachalari",
-            "Hujayra ichi bo‘yash usuli"
-          ]
-        ]
+        "caption": "Usullar va ahamiyati"
       },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: 1) Belgilanmagan antikor usuli nimasi bilan oldingi usullardan farq qiladi? 2) DAB elektron mikroskopiyada nega foydali? Doskada: jadvalni chizib, har bir usulga muallifni yozdiring. APAAP to‘liq nomi: ishqoriy fosfataza–anti-ishqoriy fosfataza. Tipik xato: PAP (peroksidaza) va APAAP (ishqoriy fosfataza) fermentlarini almashtirib yuborish."
     },
@@ -275,17 +306,26 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "Kundalik tashxisga yo‘l",
-        "nodes": [
-          "Antigenni ochish (Huang)",
-          "ABC/LSAB tizimlari (Hsu)",
-          "Formalin–parafinda aniqlash",
-          "Kundalik tashxisga kirdi",
-          "“Jigarrang inqilob”"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Antigenni ochish",
+            "text": "Huang: epitoplar ochiladi"
+          },
+          {
+            "title": "ABC/LSAB",
+            "text": "Hsu: ikkilamchi antikor tizimlari"
+          },
+          {
+            "title": "Formalin–parafin",
+            "text": "Isbotlangach usul kundalikka kirdi"
+          },
+          {
+            "title": "“Jigarrang inqilob”",
+            "text": "Kundalik tashxis"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "Kundalik tashxisga yo‘l"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Antigenni ochish formalin bilan fiksatsiyalangan to‘qimada nega kerak? 2) Ikkilamchi antikor tizimi nima uchun ishlatiladi? Doskada: jarayon zanjirini chizing. Qo‘shimcha: ABC va LSAB yangi namunalarda ham, fiksatsiyalangan to‘qimada ham qo‘llanishga imkon berdi. Tipik xato: ABC va LSAB ni birlamchi antikor deb o‘ylash."
     },
@@ -365,17 +405,42 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "IHK qo‘llanish sohalari",
-        "nodes": [
-          "O‘sma genezisini aniqlash",
-          "Subtiplash (masalan, limfoma)",
-          "Birlamchi o‘choqni aniqlash",
-          "Prognostik omillarni izlash",
-          "Yaxshi/yomon sifatni ajratish"
+        "kind": "tree",
+        "root": "IHK qo‘llanilishi",
+        "children": [
+          {
+            "label": "O‘sma genezisi",
+            "items": [
+              "Gistogenezni aniqlash"
+            ]
+          },
+          {
+            "label": "Subtiplash",
+            "items": [
+              "Masalan, limfoma"
+            ]
+          },
+          {
+            "label": "Birlamchi o‘choq",
+            "items": [
+              "Metastazda manbani izlash"
+            ]
+          },
+          {
+            "label": "Prognoz",
+            "items": [
+              "Prognostik omillar",
+              "Davo ko‘rsatmalari"
+            ]
+          },
+          {
+            "label": "Sifat",
+            "items": [
+              "Yaxshi/yomon o‘sishni ajratish"
+            ]
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "IHK qo‘llanish sohalari"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Differensiallanmagan o‘smada IHK nima beradi? 2) Yaxshi va yomon sifatli proliferatsiyani ajratish nega muhim? Doskaga: besh sohani markaziy ’IHK’ atrofida chizdiring. Tipik xato: IHK gematoksilin-eozinni almashtiradi deb o‘ylash; u faqat to‘ldiruvchi usul."
     },
@@ -411,30 +476,40 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "3760 namuna: maqsadlar",
-        "header": [
-          "Maqsad",
-          "Ulushi (3760)"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Diagnostik qo‘llanish",
+            "value": "64",
+            "unit": "%"
+          },
+          {
+            "label": "Prognostik omil, indeks",
+            "value": "19",
+            "unit": "%"
+          },
+          {
+            "label": "Mikroorganizm, tuzilma",
+            "value": "17",
+            "unit": "%"
+          },
+          {
+            "label": "Aniq tashxisga hissa",
+            "value": "83",
+            "unit": "%"
+          },
+          {
+            "label": "Noaniq tashxis kamayishi",
+            "value": "12",
+            "unit": "%"
+          },
+          {
+            "label": "Foydali holatlar (jami)",
+            "value": "95",
+            "unit": "%"
+          }
         ],
-        "rows": [
-          [
-            "Prognostik omil, proliferatsiya indeksi",
-            "19%"
-          ],
-          [
-            "Mikroorganizm, hujayra, tuzilma aniqlash",
-            "17%"
-          ],
-          [
-            "Diagnostik qo‘llanish",
-            "64%"
-          ],
-          [
-            "835 diagnostik holatda aniq tashxis",
-            "83%"
-          ]
-        ]
+        "caption": "Werner tadqiqoti: 3760 namuna"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Nega 83% va 95% bir narsa emas? 2) IHK samarasiz bo‘lishining sabablari qanday? Doskaga: 3760 ni 19/17/64% ga bo‘lgan doira diagrammasini chizdiring. Tipik xato: 83% ni barcha namunalarga nisbatan deb o‘ylash; u faqat 835 diagnostik holatga tegishli."
     },
@@ -590,36 +665,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Formalin va etanol: Alves tadqiqoti",
-        "nodes": [],
-        "header": [
-          "Ko‘rsatkich",
-          "Formalin",
-          "Etanol"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Formalin",
+            "items": [
+              "Epitoplar yopilishi mumkin",
+              "Sitokeratin: tripsin bilan yaxshiroq",
+              "Vimentin: tripsin zarar yetkazdi",
+              "Fiksatsiya kechikishi xavfli"
+            ]
+          },
+          {
+            "title": "Etanol",
+            "items": [
+              "Reaktivlik yuqoriroq topilgan",
+              "Sitokeratin: yuqori reaktivlik",
+              "Vimentin: yuqori reaktivlik",
+              "60 kungacha saqlanganda yaxshi"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Asosiy ta’siri",
-            "Epitoplar yopilishi mumkin",
-            "Reaktivlik yuqoriroq topilgan"
-          ],
-          [
-            "Sitokeratin",
-            "Tripsin bilan yaxshiroq",
-            "Yuqori reaktivlik"
-          ],
-          [
-            "Vimentin",
-            "Tripsin zarar yetkazdi",
-            "Yuqori reaktivlik"
-          ],
-          [
-            "Saqlash",
-            "Fiksatsiya kechikishi xavfli",
-            "60 kungacha saqlanganda ham yaxshi"
-          ]
-        ]
+        "caption": "Formalin va etanol: Alves tadqiqoti"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega operatsiya xonasida fiksatorni tanlash muhim? 2) Tripsin bilan ishlov berish nega bir markerga foyda, boshqasiga zarar? Doskada: formalin va etanol uchun ikki ustunli solishtirish jadvalini chizing. Tipik xato: formalin eng yaxshi fiksator deb, barcha epitoplar uchun mos deb o‘ylash."
     },
@@ -787,36 +854,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Antikor turlarini solishtirish",
-        "nodes": [],
-        "header": [
-          "Belgi",
-          "Poliklonal",
-          "Monoklonal"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Poliklonal",
+            "items": [
+              "Hayvonni immunlash (quyon, echki)",
+              "Bir antigenning ko‘p epitopi",
+              "Yuqori sezuvchanlik",
+              "Yangi seriya: qayta titrlash"
+            ]
+          },
+          {
+            "title": "Monoklonal",
+            "items": [
+              "Gibridlardan yaratiladi",
+              "Faqat bitta epitop",
+              "Yuqori o‘ziga xoslik",
+              "Yangi seriya: qayta titrlash"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Olinishi",
-            "Hayvonni immunlash (quyon, echki va b.)",
-            "Gibridlardan yaratiladi"
-          ],
-          [
-            "Epitop",
-            "Bir antigenning ko‘p epitopi",
-            "Faqat bitta epitop"
-          ],
-          [
-            "Afzalligi",
-            "Yuqori sezuvchanlik",
-            "Yuqori o‘ziga xoslik"
-          ],
-          [
-            "Yangi seriya",
-            "Qayta titrlash kerak",
-            "Qayta titrlash kerak"
-          ]
-        ]
+        "caption": "Antikor turlarini solishtirish"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Qaysi holatda sezuvchanlik, qaysida o‘ziga xoslik muhimroq? 2) Titrlash nega har yangi seriyada takrorlanadi? Doskada: bitta antigenda ko‘p epitopni va bitta epitopni chizib, antikorlarni ulang. Tipik xato: monoklonal antikorni doim ‘yaxshiroq’ deb hisoblash."
     },
@@ -895,31 +954,32 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Nazorat turlari",
-        "nodes": [],
-        "header": [
-          "Nazorat turi",
-          "Misol",
-          "Vazifasi"
+        "kind": "tree",
+        "root": "Nazorat turlari",
+        "children": [
+          {
+            "label": "Tashqi nazorat",
+            "items": [
+              "Antitanaga mos maxsus kesma",
+              "Natijalarni tasdiqlaydi"
+            ]
+          },
+          {
+            "label": "Ichki musbat",
+            "items": [
+              "Tomirlar; o‘simta yonidagi yo‘llar",
+              "Kutilgan musbat reaksiya"
+            ]
+          },
+          {
+            "label": "Ichki manfiy",
+            "items": [
+              "Tomir ichidagi eritrotsitlar",
+              "Bir xil ishlov olgan manfiy fon"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Tashqi",
-            "Antitanaga mos maxsus to‘qima kesmasi",
-            "Natijalarni tasdiqlash"
-          ],
-          [
-            "Ichki musbat",
-            "Tomirlar; o‘simta yonidagi ko‘krak yo‘llari",
-            "Kutilgan musbat reaksiya"
-          ],
-          [
-            "Ichki manfiy",
-            "Tomir ichidagi eritrotsitlar",
-            "Bir xil ishlov olgan manfiy fon"
-          ]
-        ]
+        "caption": "Nazorat turlari"
       },
       "teacher_notes": "Vaqt: 6 daqiqa. Muhokama: 1) Nega tashqi nazorat sinov namunasi bilan bir xil sharoitda fiksatsiya qilinishi kerak? 2) Preparatning qaysi tuzilmalari ichki nazorat bo‘la oladi? Doskada chizish: bitta preparat sxemasini chizib, unda tomir, ko‘krak yo‘li va eritrotsitlarni belgilang. Tipik xato: talabalar ichki nazoratni tashqi nazorat bilan aralashtiradi."
     },
@@ -1019,7 +1079,16 @@
           "uncertain": false
         },
         {
-          "text": "Reagentlar ketma-ketligini ish sxemalari bilan nazorat qilish yolg‘on natijalardan saqlaydi. Har bosqich va har antitana naqshini yozib borish ham tavsiya etiladi.",
+          "text": "Reagentlar ketma-ketligini ish sxemalari bilan nazorat qilish yolg‘on natijalardan saqlaydi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Har bosqich va har antitana naqshini yozib borish ham tavsiya etiladi.",
           "source": {
             "author": "de Matos et al.",
             "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
@@ -1121,7 +1190,16 @@
       "title": "Natija talqini: sifat va subyektivlik",
       "bullets": [
         {
-          "text": "Talqin odatda sifat jihatidan va subyektiv bajariladi, miqdoriy baholash ko‘pincha kam ahamiyatli hisoblanadi. Qaror ko‘pincha molekulaning bor-yo‘qligiga tayanadi.",
+          "text": "Talqin odatda sifat jihatidan va subyektiv bajariladi, miqdoriy baholash ko‘pincha kam ahamiyatli hisoblanadi.",
+          "source": {
+            "author": "de Matos et al.",
+            "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
+            "page": "PMID 20212918"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Qaror ko‘pincha molekulaning bor-yo‘qligiga tayanadi.",
           "source": {
             "author": "de Matos et al.",
             "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
@@ -1343,36 +1421,28 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "IHK va ELISA taqqosi",
-        "nodes": [],
-        "header": [
-          "Jihat",
-          "ELISA",
-          "IHK"
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "ELISA",
+            "items": [
+              "Namuna: zardob",
+              "Bir xil reagentlar",
+              "Miqdoriy deb tan olingan",
+              "Keng e’tirof etilgan"
+            ]
+          },
+          {
+            "title": "IHK",
+            "items": [
+              "Namuna: parafin blokdagi kesma",
+              "Bir xil reagentlar",
+              "Ko‘pincha shunchaki “bo‘yalish”",
+              "Western blot bilan bog‘liq"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Namuna",
-            "Zardob",
-            "Parafin blokdagi kesma"
-          ],
-          [
-            "Reagentlar",
-            "Bir xil reagentlar",
-            "Bir xil reagentlar"
-          ],
-          [
-            "Natija atamasi",
-            "Miqdoriy deb tan olingan",
-            "Ko‘pincha shunchaki “bo‘yalish”"
-          ],
-          [
-            "Tasdiqlash",
-            "Keng e‘tirof etilgan",
-            "Western blot bilan bog‘liq"
-          ]
-        ]
+        "caption": "IHK va ELISA taqqosi"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega bir xil tamoyil ELISA da «miqdoriy», IHK da «bo‘yalish» deyiladi? 2) Western blot bilan korrelyatsiya nimani isbotlaydi? Doskada: ELISA va IHK ustunli taqqoslash jadvalini chizdiring. Tipik xato: IHK ni faqat tasviriy (deskriptiv) usul deb o‘ylash."
     },
@@ -1528,6 +1598,79 @@
       "teacher_notes": "Vaqt: 5 daq. Savollarni avval talabalarga bering, so‘ng javobni oching. Muhokama: nega ELISA bilan solishtirish IHK ni “faqat bo‘yash” deb atashga qarshi dalil bo‘ladi? Hujayra bo‘laklari (membrana, sitoplazma, yadro) bo‘yalishini doskada chizdiring. Tipik xato: har qanday jigarrang bo‘yalishni klinik jihatdan ahamiyatli deb hisoblash; HER2 da faqat membrana bo‘yalishi gen amplifikatsiyasi bilan bog‘liq."
     },
     {
+      "title": "FOXO3a: oila va miyadagi roli",
+      "bullets": [
+        {
+          "text": "FOXO transkripsiya omillari proliferatsiya, differensiatsiya, metabolizm, oksidlovchi stress va hujayra umrini boshqaradi.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906, 1. Introduction"
+          }
+        },
+        {
+          "text": "FOXO3a miyada, ayniqsa gippokamp, miya po‘stlog‘i va miyachada ko‘p ifodalanadi.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906, 1. Introduction"
+          }
+        },
+        {
+          "text": "Yetuk neyronlarda FOXO lar ROS yo‘llari, neyroyallig‘lanish, apoptoz va autofagiyani tartiblaydi.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906, 1. Introduction"
+          }
+        },
+        {
+          "text": "FOXO3a ishemik shikastga qarshi neyroprotektiv; TBIda uning darajasi oshadi va shikast og‘irligi bilan bog‘liq.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906, 1. Introduction"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "FOXO3a",
+        "children": [
+          {
+            "label": "Oila",
+            "items": [
+              "FOXO transkripsiya omillari",
+              "Hamma sutemizuvchilarda"
+            ]
+          },
+          {
+            "label": "Joylashuvi",
+            "items": [
+              "Gippokamp, po‘stloq",
+              "Miyacha"
+            ]
+          },
+          {
+            "label": "Vazifasi",
+            "items": [
+              "ROS, apoptoz, autofagiya",
+              "Neyroyallig‘lanish"
+            ]
+          },
+          {
+            "label": "TBIda",
+            "items": [
+              "Darajasi oshadi",
+              "Shikast og‘irligi bilan bog‘liq"
+            ]
+          }
+        ],
+        "caption": "FOXO3a haqida"
+      },
+      "teacher_notes": "Vaqt: 3 daq."
+    },
+    {
       "title": "Sud-tibbiyot: TBI va FOXO3a mohiyati",
       "bullets": [
         {
@@ -1574,6 +1717,126 @@
       "teacher_notes": "Vaqt: 8 daq. Muhokama: nega birlamchi zararni davolash qiyin, ikkilamchisini esa oldini olish mumkin? FOXO3a sud-tibbiy diagnostikada qanday foyda berishi mumkin? Doskada TBI dan apoptozgacha zanjirni chizdiring. Tipik xato: birlamchi va ikkilamchi zararni alohida jarayon deb o‘ylash; ular ko‘pincha birga uchraydi, bo‘linish didaktik."
     },
     {
+      "title": "Birlamchi va ikkilamchi TBI",
+      "bullets": [
+        {
+          "text": "Birlamchi shikast tashqi kuch (to‘g‘ridan-to‘g‘ri zarba, tezlanish/sekinlanish, kirib boruvchi jarohat, zarba to‘lqini) ta’siridan darhol hosil bo‘ladi.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906, 3. Discussion"
+          }
+        },
+        {
+          "text": "Ikkilamchi shikast birlamchidan keyingi hujayra yallig‘lanish javobi tufayli kun-haftalarda rivojlanadi (ishemiya, oksidlovchi stress, apoptoz).",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906, 3. Discussion; 1. Introduction"
+          }
+        },
+        {
+          "text": "Bu ajratish faqat o‘quv maqsadida: ikkalasi ko‘pincha birga uchraydi, ammo davolash protokollarini belgilashga yordam beradi.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906, 3. Discussion"
+          }
+        },
+        {
+          "text": "Birlamchi shikast (masalan, gematoma) ko‘pincha jarrohlik yo‘li bilan, ikkilamchida esa hujayra zarari yo‘llarini erta aniqlash va oldini olish maqsad.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906, 3. Discussion"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Birlamchi shikast",
+            "items": [
+              "Zarba, tezlanish, kirib borish",
+              "Darhol yuz beradi",
+              "Ko‘pincha jarrohlik davo"
+            ]
+          },
+          {
+            "title": "Ikkilamchi shikast",
+            "items": [
+              "Hujayra yallig‘lanish javobi",
+              "Kun–haftalarda: ishemiya, apoptoz",
+              "Erta aniqlash va oldini olish"
+            ]
+          }
+        ],
+        "caption": "Primary va secondary TBI"
+      },
+      "teacher_notes": "Vaqt: 3 daq."
+    },
+    {
+      "title": "Tadqiqot guruhlari va tanlash mezonlari",
+      "bullets": [
+        {
+          "text": "TBIdan o‘lgan 15 holat (4 ayol, 11 erkak, o‘rtacha yosh 43,1) tanlandi: 8 tasida o‘lim darhol, 7 tasida 6 soat ichida yuz berdi.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906, 4.1 Study Group Selection"
+          }
+        },
+        {
+          "text": "Kiritish mezonlari: o‘lim sababi TBI, jarohat oldingi 24 soat ichida, surunkali kasallik tarixi yo‘q.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906, 4.1 Study Group Selection"
+          }
+        },
+        {
+          "text": "Nazorat: 15 ta nontravmatik miya o‘limi (8 ayol, 7 erkak, yosh 49,3): 5 tasi aneurizma yorilishi, 10 tasi o‘tkir yurak-qon aylanishi to‘xtashi.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906, 4.1 Study Group Selection"
+          }
+        },
+        {
+          "text": "Chirigan yoki chirish boshlangan jasadlar ikkala guruhdan chiqarilgan; autopsiya o‘limdan keyin 36 soat ichida o‘tkazilgan.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906, 4.1 Study Group Selection"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "TBI guruhi (15)",
+            "items": [
+              "4 ayol, 11 erkak; yosh 43,1",
+              "8 ta darhol, 7 ta 6 soat ichida",
+              "Jarohat < 24 soat, kasallik yo‘q"
+            ]
+          },
+          {
+            "title": "Nazorat (15)",
+            "items": [
+              "8 ayol, 7 erkak; yosh 49,3",
+              "5 aneurizma yorilishi",
+              "10 o‘tkir yurak-qon aylanishi to‘xtashi"
+            ]
+          }
+        ],
+        "caption": "Tadqiqot guruhlari"
+      },
+      "teacher_notes": "Vaqt: 3 daq."
+    },
+    {
       "title": "FOXO3a tadqiqotining dizayni va IHK protokoli",
       "bullets": [
         {
@@ -1605,17 +1868,30 @@
         }
       ],
       "diagram": {
-        "kind": "flow",
-        "caption": "IHK protokoli bosqichlari",
-        "nodes": [
-          "Holatlar: 15 TBI, 15 nazorat",
-          "10% formalin, parafinga quyish",
-          "4 mkm kesma, antigenni ochish",
-          "+ nazorat: ko‘krak saratoni",
-          "Ball 0–4, ikki kuzatuvchi"
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Guruhlar",
+            "text": "15 TBI va 15 nazorat"
+          },
+          {
+            "title": "Fiksatsiya",
+            "text": "10% formalin, parafinga quyish"
+          },
+          {
+            "title": "Kesma",
+            "text": "4 mkm; antigenni ochish (EDTA, 100 °C, 90 daq.)"
+          },
+          {
+            "title": "Nazorat",
+            "text": "Ko‘krak saratoni to‘qimasida sinov"
+          },
+          {
+            "title": "Baholash",
+            "text": "Ball 0–4, ikki kuzatuvchi"
+          }
         ],
-        "header": [],
-        "rows": []
+        "caption": "IHK protokoli bosqichlari"
       },
       "teacher_notes": "Vaqt: 8 daq. Muhokama: nega musbat nazorat sifatida ko‘krak saratoni ishlatilgan? Nega ikki mustaqil kuzatuvchi va uchinchi hakam kerak? Doskada protokol bosqichlarini tartib bilan chizdiring. Tipik xato: kesma qalinligi va fiksatsiya sharoitini e’tiborsiz qoldirish; bu natijaga ta’sir qiladi. Tadqiqot kichik (30 holat), shuning uchun dastlabki deb baholanadi."
     },
@@ -1651,33 +1927,108 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "FOXO3a ball shkalasi",
-        "nodes": [],
-        "header": [
-          "Ball",
-          "Ma’nosi"
+        "kind": "facts",
+        "items": [
+          {
+            "label": "0 ball",
+            "value": "Yo‘q",
+            "unit": "bo‘yalish"
+          },
+          {
+            "label": "1 ball",
+            "value": "≈ 25",
+            "unit": "% bo‘yalish"
+          },
+          {
+            "label": "2 ball",
+            "value": "≈ 50",
+            "unit": "% bo‘yalish"
+          },
+          {
+            "label": "3 ball",
+            "value": "≈ 75",
+            "unit": "% bo‘yalish"
+          },
+          {
+            "label": "4 ball",
+            "value": "100",
+            "unit": "% bo‘yalish"
+          }
         ],
-        "rows": [
-          [
-            "0",
-            "Bo‘yalish yo‘q (nazorat)"
-          ],
-          [
-            "1–2",
-            "Taxminan 25% va 50% bo‘yalish"
-          ],
-          [
-            "3",
-            "Taxminan 75% bo‘yalish"
-          ],
-          [
-            "4",
-            "100% bo‘yalish"
-          ]
-        ]
+        "caption": "FOXO3a ball shkalasi"
       },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: 1) Nega baholashni ikki mustaqil kishi ko‘r usulda o‘tkazadi? 2) Nazorat guruhi nimani ko‘rsatadi? Doskada: 0–4 shkalani chizib, har ballga bo‘yalish ulushini yozdiring. Tipik xato: ball shkalasini ’kuchli/kuchsiz’ degan subyektiv baho bilan aralashtirish; bu yerda ball bo‘yalgan maydon ulushiga asoslangan."
+    },
+    {
+      "title": "Miqdoriy baholash va statistika",
+      "bullets": [
+        {
+          "text": "Har IHK kesmasida turli maydonlarda 100 marta kattalashtirishda 20 kuzatuv o‘tkazilgan; konfokal mikroskopda 3D rekonstruksiya ham qilingan.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906, 4.3 Quantitative Analysis"
+          }
+        },
+        {
+          "text": "Bo‘yalish intensivligi 0 dan +4 gacha shkalada ikki tadqiqotchi tomonidan ko‘r usulda baholangan; kelishmovchilikda uchinchi kuzatuvchi hal qilgan.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906, 4.3 Quantitative Analysis"
+          }
+        },
+        {
+          "text": "Baho eng kuchli kuzatilgan musbatlikka asoslangan; TBI holatlarida o‘rtacha intensivlik 2,53 (p < 0,05).",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906, 2. Results"
+          }
+        },
+        {
+          "text": "Ordinal ma’lumotlar uchun Kruskal–Wallis testi, farq bo‘lsa Dunn post hoc; ahamiyat darajasi 5%.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906, 4.4 Statistical Analysis"
+          }
+        }
+      ],
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Maydonlar",
+            "value": "20",
+            "unit": "100× da"
+          },
+          {
+            "label": "Ball shkalasi",
+            "value": "0–4"
+          },
+          {
+            "label": "Baholovchilar",
+            "value": "2 + hakam"
+          },
+          {
+            "label": "O‘rtacha intensivlik",
+            "value": "2,53",
+            "unit": "TBI"
+          },
+          {
+            "label": "Test",
+            "value": "Kruskal–Wallis"
+          },
+          {
+            "label": "Ahamiyat darajasi",
+            "value": "5",
+            "unit": "%"
+          }
+        ],
+        "caption": "FOXO3a tadqiqotida baholash"
+      },
+      "teacher_notes": "Vaqt: 3 daq."
     },
     {
       "title": "Voqea tahlili: FOXO3a va post-mortem tashxis",
@@ -1692,7 +2043,16 @@
           "uncertain": false
         },
         {
-          "text": "Bu FOXO3a ning TBIdan keyingi ikkilamchi jarohatda, neyron apoptozi va autofagiyasini boshqarishda ishtirokini ko‘rsatadi. U post-mortem tashxisda istiqbolli vosita bo‘lishi mumkin.",
+          "text": "Bu FOXO3a ning TBIdan keyingi ikkilamchi jarohatda, neyron apoptozi va autofagiyasini boshqarishda ishtirokini ko‘rsatadi.",
+          "source": {
+            "author": "Maiese et al.",
+            "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+            "page": "PMID 36768906"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "U post-mortem tashxisda istiqbolli vosita bo‘lishi mumkin.",
           "source": {
             "author": "Maiese et al.",
             "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
@@ -1835,11 +2195,11 @@
       "question": "Werner tadqiqotida 3760 namunaning 64% i tashxis maqsadida o‘rganilgan (835 holat). Shu toifada IHK necha foiz holatda aniq tashxisga hissa qo‘shdi?",
       "options": [
         "64% holatda",
-        "83% holatda",
+        "12% holatda",
         "95% holatda",
-        "12% holatda"
+        "83% holatda"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "835 ta tashxis holatining 83% ida IHK aniq tashxisga yordam berdi. 64% bu tashxis maqsadidagi holatlar ulushi, 12% aniqlanmagan tashxislar kamayishi, 95% esa umumiy foydali holatlar ulushidir.",
       "source": {
         "author": "de Matos et al.",
@@ -1848,19 +2208,19 @@
       }
     },
     {
-      "question": "Laborant antigenni ochish (retrieval) bosqichini tugatdi. Manbadagi ketma-ketlikda keyingi bosqich qaysi?",
+      "question": "FOXO3a tadqiqotida IHK baholash shkalasida 4 ball nimani bildiradi?",
       "options": [
-        "Birlamchi antikor bilan inkubatsiya qilish",
-        "Nospetsifik joylarni bloklash bosqichi",
-        "Kesmani kontrastlab bo‘yash bosqichi",
-        "Kesmani yopish va saqlash bosqichi"
+        "100% bo‘yalish",
+        "25% bo‘yalish",
+        "50% bo‘yalish",
+        "Bo‘yalish yo‘q"
       ],
-      "correct_index": 1,
-      "explanation": "Reaksiya bosqichlari tartibi: antigenni ochish, nospetsifik joylarni bloklash, endogen peroksidazani bloklash, birlamchi antikor bilan inkubatsiya, aniqlash tizimi, kontrastlab bo‘yash, kesmani yopish va saqlash. Antigenni ochishdan keyin nospetsifik joylar bloklanadi.",
+      "correct_index": 0,
+      "explanation": "Shkala 0 dan +4 gacha: 0 — bo‘yalish yo‘q, 1 — 25%, 2 — 50%, 3 — 75%, 4 — 100% bo‘yalish.",
       "source": {
-        "author": "de Matos et al.",
-        "title": "Immunohistochemistry as an Important Tool in Biomarkers Detection and Clinical Practice, Biomarker Insights",
-        "page": "PMID 20212918"
+        "author": "Maiese et al.",
+        "title": "The Expression of FOXO3a as a Forensic Diagnostic Tool in Cases of Traumatic Brain Injury: An Immunohistochemical Study, International Journal of Molecular Sciences",
+        "page": "PMID 36768906, 4.3 Quantitative Analysis"
       }
     },
     {

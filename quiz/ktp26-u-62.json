@@ -1,0 +1,590 @@
+{
+ "topic_id": "ktp26-u-62",
+ "source_lang": "uz",
+ "title_i18n": {
+  "uz": "Suyak kallusining tuzilishi va yumshoq to'qimalarning gistologik ko'rinishi asosida shikastlanish yoshini aniqlash",
+  "ru": "Suyak kallusining tuzilishi va yumshoq to'qimalarning gistologik ko'rinishi asosida shikastlanish yoshini aniqlash",
+  "en": "Suyak kallusining tuzilishi va yumshoq to'qimalarning gistologik ko'rinishi asosida shikastlanish yoshini aniqlash"
+ },
+ "translation_status": {
+  "uz": "source",
+  "ru": "pending",
+  "en": "pending"
+ },
+ "questions": [
+  {
+   "id": "ktp26-u-62-q01",
+   "question_i18n": {
+    "uz": "Jasadda bir nechta jarohat topildi. Vitallik reaksiyalarini baholash, eng avvalo, qaysi savolga javob berishga yordam beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Jarohat tirik paytda yetkazilgan-yetkazilmaganiga",
+     "Jabrlanuvchining o‘limdan oldingi yoshiga",
+     "Jarohat qaysi qurol bilan yetkazilganiga",
+     "Jarohat atrofidagi to‘qima turini belgilashga"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Qon quyilishi, yallig‘lanish hujayralari infiltratsiyasi va granulyatsion to‘qima hosil bo‘lishi kabi reaksiyalar birgalikda “vitallik” deyiladi. Ular jarohat tirik paytda, agonal davrda yoki o‘limdan keyin yetkazilganini farqlashga yordam beradi. Ikkinchi asosiy savol — jabrlanuvchi jarohatdan keyin qancha yashagani."
+   },
+   "source": {
+    "author": "Li N va boshq.",
+    "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+    "page": "Kirish bo‘limi (Introduction)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-62-q02",
+   "question_i18n": {
+    "uz": "Zo‘ravonlik shubhasi bor bolaning sinishi davolanmagan, oyoq-qo‘l harakatda qolgan. Rentgenda bitta sinishda bir nechta tuzalish bosqichi ko‘rindi. Bu nimaga bog‘liq bo‘lishi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kechikkan davolanish tufayli sinish joyi harakatchan qolganiga",
+     "Sinish joyi gips bilan qattiq mahkamlab qo‘yilganiga",
+     "Suyakning faqat bitta hujayra bosqichidan o‘tganiga",
+     "Rentgen nurining sinish chizig‘ini yo‘qotib qo‘yganiga"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Zo‘ravonlik holatlarida tibbiy yordam kechikishi mumkin va suyak ishlatilishda davom etadi. Natijada sinish joyi harakatchan qoladi, suyak bo‘laklari noto‘g‘ri bitishi yoki tuzalish sekinlashishi mumkin. Shu sababli bitta jarohatda bir vaqtning o‘zida bir nechta tuzalish bosqichi ko‘rinishi mumkin."
+   },
+   "source": {
+    "author": "Charlotte G. Lawrence va boshq.",
+    "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+    "page": "Introduction (PMID 41051499)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-62-q03",
+   "question_i18n": {
+    "uz": "Talaba PRISMA oqimini ko‘rmoqda: 86 ta matn to‘liq baholangan. Ulardan nechtasi kiritish mezonlariga mos keldi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "259 ta",
+     "173 ta",
+     "21 ta",
+     "10 ta"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Qidiruvda 1328 natija chiqqan, sarlavha va annotatsiya bo‘yicha 259 ta ajratilgan, 173 dublikat olib tashlangan. Qolgan 86 matndan 10 tasi mezonga mos kelgan. Ularning havolalaridan yana 11 nashr topilib, jami 21 ta nashr bo‘lgan. 21 — yakuniy son, 86 matndan o‘tganlar soni emas."
+   },
+   "source": {
+    "author": "Charlotte G. Lawrence va boshq.",
+    "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+    "page": "Materials and methods, Paper selection (PMID 41051499)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-62-q04",
+   "question_i18n": {
+    "uz": "Ekspert o‘limdan keyingi namunada sinish yoshini hujayra darajasida aniqlashi kerak. Qaysi usul oltin standart hisoblanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Oddiy 2D rentgenografiya",
+     "Gistologik tekshiruv",
+     "Magnit-rezonans tomografiya (MRT)",
+     "Quruq suyakni makroskopik ko‘rish"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Gistologiya sinish yoshini aniqlashda oltin standart hisoblanadi: yuqori ruxsat tufayli tuzalish belgilari hujayra darajasida ko‘rinadi. Kamchiligi — u buzuvchi va faqat o‘limdan keyin qo‘llanadi. 21 ta nashrning 15 tasi faqat 2D rentgendan foydalangan, lekin bu eng ko‘p ishlatilishini bildiradi, aniqligini emas."
+   },
+   "source": {
+    "author": "Charlotte G. Lawrence va boshq.",
+    "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+    "page": "Abstract; Discussion (PMID 41051499)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-62-q05",
+   "question_i18n": {
+    "uz": "Sinish yoshi bo‘yicha sharhga kirgan namunalarda qaysi suyak eng ko‘p o‘rganilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Qovurg‘a suyagi",
+     "O‘mrov suyagi",
+     "Bosh suyagi",
+     "Bilak suyagi (radius)"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Namunalarning 66,02 foizi uzun naysimon suyaklardan, ayniqsa radiusdan (n = 250, 19,39 foiz). Buning sababi radius bolalikda tasodifiy sinadigan eng tez-tez suyak ekani va tadqiqot uchun klinik rentgenlar ko‘pligidir. Sud-tibbiyot uchun muhim qovurg‘alar kam o‘rganilgan."
+   },
+   "source": {
+    "author": "Charlotte G. Lawrence va boshq.",
+    "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+    "page": "Results; Discussion (PMID 41051499)"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-62-q06",
+   "question_i18n": {
+    "uz": "Eksperti o‘lgan chaqaloqdagi qovurg‘a sinishining jarohatdan keyingi dastlabki haftalardagi hujayra hodisalarini aniqlamoqchi. Qaysi usul eng aniq natija beradi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Oddiy 2D rentgenografiya",
+     "Gistologik tekshiruv",
+     "Faqat makroskopik ko‘rik",
+     "Klinik anamnez tahlili"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Gistologiya oltin standart hisoblanadi. U dastlabki haftalardagi bashorat qilinadigan hujayra hodisalarini ko‘rsata oladi, rentgenda esa bu hodisalarni aniqlab bo‘lmaydi."
+   },
+   "source": {
+    "author": "Charlotte G. Lawrence va boshq.",
+    "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+    "page": "PMID 41051499"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-62-q07",
+   "question_i18n": {
+    "uz": "17 ta 2D rentgen tadqiqotida barcha usullarda doimiy qayd etilgan yagona bitish bosqichi qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Remodellanish (qayta qurilish)",
+     "Subperiostal yangi suyak hosil bo‘lishi",
+     "Ko‘prik hosil bo‘lishi (bridging)",
+     "Kallus shakllanishi bosqichi"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Kallus shakllanishi barcha usullarda uchragan. Periostal reaksiya 13 ta, remodellanish 12 ta, ko‘prik hosil bo‘lishi 10 ta maqolada qayd etilgan."
+   },
+   "source": {
+    "author": "Charlotte G. Lawrence va boshq.",
+    "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+    "page": "PMID 41051499"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-62-q08",
+   "question_i18n": {
+    "uz": "Zo‘ravonlik holatida bolaga tibbiy yordam kechikdi va sinish joyi immobilizatsiyasiz harakatda qoldi. Radiografik jadvallardan foydalanishdagi asosiy xavf nima?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Immobilizatsiyalangan sinishlardan tuzilgan jadval mos kelmasligi",
+     "Rentgen nuri dozasi bosqich muddatini o‘zgartirishi",
+     "Kallus bu holatda hech qachon hosil bo‘lmasligi",
+     "Bitish har doim jadvaldagidan tezroq o‘tishi"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Immobilizatsiyasiz sinish joyida ikkilamchi mikrotravmalar bo‘lishi mumkin. Shu sababli immobilizatsiyalangan sinishlardan tuzilgan bitish jadvallari bunday holatga mos kelmasligi mumkin."
+   },
+   "source": {
+    "author": "Charlotte G. Lawrence va boshq.",
+    "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+    "page": "PMID 41051499"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-62-q09",
+   "question_i18n": {
+    "uz": "Ekspert postmortem namunada kallusning ichki mikrotuzilishini 3D ko‘rinishda va namunani buzmasdan, gistologiyaga yaqin aniqlikda ko‘rmoqchi. Qaysi usul mos keladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Oddiy 2D rentgenografiya",
+     "Standart tibbiy kompyuter tomografiya",
+     "Mikro-kompyuter tomografiya",
+     "Oddiy magnit-rezonans tomografiya"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Mikro-KT yuqori ajratish qobiliyatiga (60 μm gacha), 3D va buzmaydigan xususiyatga ega. Tibbiy KT ajratish qobiliyati esa taxminan 600 μm bilan cheklangan."
+   },
+   "source": {
+    "author": "Charlotte G. Lawrence va boshq.",
+    "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+    "page": "PMID 41051499"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-62-q10",
+   "question_i18n": {
+    "uz": "Tadqiqotchi sinish yoshini baholash uchun yangi bosqichlar jadvalini ishlab chiqdi. Uni amaliyotga tavsiya etishdan oldin eng muhim qadam qaysi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Jadvalga yana yangi bosqichlarni qo‘shish",
+     "Jadvalni yoshi ma’lum sinishlarda sinash",
+     "Bosqich atamalarini o‘zgartirib qo‘llash",
+     "Faqat bitta kuzatuvchi bahosiga tayanish"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Usullarni yoshi ma’lum sinishlarda sinash — birinchi darajali vazifa. Hozirgacha faqat bitta ish oldingi usulni tasdiqlash maqsadida chop etilgan, shuning uchun validatsiya yetishmaydi."
+   },
+   "source": {
+    "author": "Charlotte G. Lawrence va boshq.",
+    "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+    "page": "PMID 41051499"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-62-q11",
+   "question_i18n": {
+    "uz": "Jasad o‘limdan 3 sutka o‘tgach tekshirildi. Jarohat yoshini baholash uchun qaysi marker barqaror bo‘lgani uchun mos keladi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Kannabinoid retseptor-2 mRNKsi",
+     "Matriks metalloproteinaza-2 mRNKsi",
+     "LC3-II va p62 oqsil markerlari",
+     "Arginino-suksinat liaza mRNKsi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "LC3-II va p62 oqsillari o‘limdan keyin 4 sutkagacha barqaror. Kannabinoid retseptor-2 mRNKsi 3 soatdayoq, metalloproteinaza-2 mRNKsi 12 soatda sezilarli parchalanadi. Arginino-suksinat liaza mRNKsi esa 18 soat barqaror, xolos. Shuning uchun postmortem davrda barqaror markerni tanlash kerak."
+   },
+   "source": {
+    "author": "Li N va boshq.",
+    "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+    "page": "PMID 32490306"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-62-q12",
+   "question_i18n": {
+    "uz": "Jarohatdan keyin bir necha daqiqa yoki soat o‘tgan. Gistologiya jarohat hayotlikdami yoki o‘limdan keyinmi ekanini ayta olmaydi. Qaysi usul erta bosqichga mos?"
+   },
+   "options_i18n": {
+    "uz": [
+     "mRNK darajasini real-time PCR bilan o‘lchash",
+     "Gematoksilin-eozin bilan standart bo‘yash",
+     "Berlin ko‘ki bilan temirni bo‘yab ko‘rish",
+     "Ko‘karish rangini ko‘z bilan kuzatish"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "Jarohatdan keyin sitokin va fermentlarning mRNK darajasi oqsil darajasi va gistomorfologiyadan oldinroq o‘zgaradi. Shu sababli mRNKga asoslangan tahlillar erta bosqichdagi jarohat yoshini baholashga mos. Gematoksilin-eozin va Berlin ko‘ki o‘zgarishni faqat taxminan 6 soatdan keyin ko‘rsatadi."
+   },
+   "source": {
+    "author": "Li N va boshq.",
+    "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+    "page": "PMID 32490306"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-62-q13",
+   "question_i18n": {
+    "uz": "Tadqiqotchi jarohatdan keyingi vaqtni o‘zi belgilashi va natijalarni takrorlay olishi kerak. Qaysi namuna turi eng mos?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Autopsiya paytida olingan namunalar",
+     "Jarrohlik vaqtida olingan tirik namuna",
+     "Tirik odamdan olingan surtma namuna",
+     "Laboratoriya hayvonlaridagi tajribalar"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "Hayvon tajribalarida jarohatdan keyingi vaqtni nazorat qilish mumkin, shuning uchun natijalarning takrorlanuvchanligi va ishonchliligi yuqori bo‘ladi. Kamchiligi: natijalar odamga qay darajada tatbiq etilishi aniq emas. Autopsiya namunalarida ma‘lumot ko‘pincha yetarli bo‘lmaydi."
+   },
+   "source": {
+    "author": "Li N va boshq.",
+    "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+    "page": "PMID 32490306"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-62-q14",
+   "question_i18n": {
+    "uz": "Nima uchun ko‘karish rangiga qarab uning yoshini aniqlash amalda yaroqsiz deb topilgan?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Rang faqat o‘limdan keyingi jarayonlarda shakllanishi uchun",
+     "Rang va chiqish vaqti chuqurlik, joy, teri rangiga bog‘liq",
+     "Rangni faqat molekulyar usullar bilan ko‘rib bo‘lishi uchun",
+     "Rang barcha jarohatlarda bir xil muddatda o‘zgarishi uchun"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "Ko‘karishning paydo bo‘lish vaqti va rangiga uning chuqurligi, joylashgan o‘rni va teri rangi ta‘sir qiladi. Shu sababli vizual usul juda o‘zgaruvchan va amaliy foydasi kam. Muammoga ilmiy tajribalar bilan yondashish lozim."
+   },
+   "source": {
+    "author": "Li N va boshq.",
+    "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+    "page": "PMID 32490306"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-62-q15",
+   "question_i18n": {
+    "uz": "Bitta marker keng yoki ziddiyatli yosh oralig‘ini bersa, nima qilish maqsadga muvofiq?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Eng sezgir bitta markerga tayanib qolish",
+     "Jarohat yoshini faqat ko‘z bilan baholash",
+     "Bir nechta markerni birgalikda qo‘llash",
+     "Namunani uzoqroq saqlab qayta tekshirish"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Jarohat bitishiga ichki va tashqi omillar ta‘sir qiladi, shuning uchun bitta parametr yetarli emas. Bir nechta markerni birga ishlatish xatoni kamaytiradi. Masalan, CD14, CD32B va CD68 birikmasi bitta markerga qaraganda aniqroq va torroq yosh oralig‘ini berdi."
+   },
+   "source": {
+    "author": "Li N va boshq.",
+    "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+    "page": "PMID 32490306"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-62-q16",
+   "question_i18n": {
+    "uz": "Otopsiyada diabetik kasal shaxsda yara topildi. Yara yoshini baholashda qaysi holat hisobga olinishi kerak?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Diabetda yara bitishi oddiy holatdan farq qilmaydi, mezonlar bir xil",
+     "Diabetik yarada faqat qon quyilishi belgisi yara yoshini aniqlaydi",
+     "Oddiy yara mezonlari diabetik yaraga mos kelmasligi, boshqa mezon kerak",
+     "Diabetda yara bitishi tezlashadi, shuning uchun yosh kam baholanadi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Sichqonlarda o‘tkazilgan tadqiqotda diabetik yara bitishi oddiy yaradan farq qilgan. Shu sababli oddiy yara yoshini baholash parametrlari diabetik yaraga mos kelmasligi mumkin va boshqa parametrlar izlash kerak. Qon tomir kasalligi va immunosupressiya ham bitishni qiyinlashtiradi yoki kechiktiradi."
+   },
+   "source": {
+    "author": "Li N va boshq.",
+    "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research",
+    "page": "PMID 32490306"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-62-q17",
+   "question_i18n": {
+    "uz": "Teri yarasida FVIIIra markeri 100% sezgir, ixtisosligi esa 47% bo‘ldi. Jarrohlik yaralarida ham ortiq ifodalandi. Bu marker qanday baholanadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Yuqori sezgir, ammo o‘ziga xos bo‘lmagan yara hayotiyligi markeri",
+     "Yuqori ixtisosli, ammo sezgirligi past yara hayotiyligi markeri",
+     "Faqat o‘limdan keyingi jarohatni ishonchli ajratadigan aniq marker",
+     "Yara yoshini kunlar aniqligida beradigan yagona ishonchli marker"
+    ]
+   },
+   "correct_index": 0,
+   "explanation_i18n": {
+    "uz": "FVIIIra sezgirligi 100%, ixtisosligi esa 47% bo‘lgan. Jarrohlik va nazorat yaralarida ham ortiq ifodalangan (53%). Shuning uchun u sezgir, ammo o‘ziga xos bo‘lmagan marker. Yangi tirik davrdagi jarohatni o‘limdan keyingisidan ajratishda CD15 va triptaza foydaliroq hisoblanadi."
+   },
+   "source": {
+    "author": "Luca Tomassini va boshq.",
+    "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+    "page": "PMID 38248045"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-62-q18",
+   "question_i18n": {
+    "uz": "Teri yarasi namunasida COX-2 (siklooksigenaza-2) musbat hujayralar ulushi 45% chiqdi. Bu qaysi yara yoshini ko‘rsatadi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Yara yoshi 30 daqiqadan kam, leykotsit jalb bo‘lishi deyarli yo‘q",
+     "Yara yoshi 7 kundan 14 kungacha, ORP150 kabi kech marker davri",
+     "Yara yoshi 9 kundan 12 kungacha, MMP-2 musbat hujayralar davri",
+     "Yara yoshi 8 soatdan 3 sutkagacha, neytrofillar COX-2 ifodalagan davr"
+    ]
+   },
+   "correct_index": 3,
+   "explanation_i18n": {
+    "uz": "COX-2 musbat ulushi 40% dan yuqori bo‘lsa, yara yoshi 8 soat bilan 3 sutka oralig‘ida bo‘lishi mumkin. 50% dan yuqori ulush sud-tibbiy ahamiyatga ega bo‘lishi mumkin. 30 daqiqagacha bo‘lgan yaralarda COX-2 ni faqat bir necha rezident hujayra ifodalaydi."
+   },
+   "source": {
+    "author": "Luca Tomassini va boshq.",
+    "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+    "page": "PMID 38248045"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-62-q19",
+   "question_i18n": {
+    "uz": "Teri yarasi namunasida I va VI tur kollagenlar immunogistokimyoda aniqlanmadi. Bu yara yoshi haqida nimani ko‘rsatishi mumkin?"
+   },
+   "options_i18n": {
+    "uz": [
+     "Yara yoshi 6–7 kundan ortiq bo‘lishi shart",
+     "Yara yoshi 6–7 kundan kam bo‘lishi mumkin",
+     "Yara o‘limdan keyin hosil bo‘lgan bo‘ladi",
+     "Yara yoshi bir oydan ortiq bo‘lishi mumkin"
+    ]
+   },
+   "correct_index": 1,
+   "explanation_i18n": {
+    "uz": "I va VI tur kollagenlar odam teri yaralarida doimiy ravishda taxminan 6–7 kundan keyin paydo bo‘ladi. Ularning yo‘qligi yara yoshi 6–7 kundan kam bo‘lishini ko‘rsatishi mumkin. Bu belgi yara hayotiyligi haqida xulosa bermaydi."
+   },
+   "source": {
+    "author": "Luca Tomassini va boshq.",
+    "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics",
+    "page": "PMID 38248045"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  },
+  {
+   "id": "ktp26-u-62-q20",
+   "question_i18n": {
+    "uz": "Tirik go‘dakda suyak sinishining yoshini aniqlash kerak. Nima uchun gistologiya bu holatda qo‘llanib bo‘lmaydi?"
+   },
+   "options_i18n": {
+    "uz": [
+     "U suyak shifo jarayonini hujayra darajasida ko‘rsata olmaydi",
+     "U dastlabki haftalardagi hujayra o‘zgarishlarini aniqlab bera olmaydi",
+     "U buzuvchi usul bo‘lib, faqat o‘limdan keyin qo‘llanishi mumkin",
+     "U yuqori nurlanish dozasi tufayli bolalarda umuman ishlatilmaydi"
+    ]
+   },
+   "correct_index": 2,
+   "explanation_i18n": {
+    "uz": "Gistologiya suyak sinishi yoshini aniqlashda oltin standart hisoblanadi va hujayra darajasini ko‘rsatadi. Ammo u buzuvchi usul bo‘lgani uchun faqat o‘limdan keyingi tahlilda qo‘llanadi. Tirik bemor uchun aniq va ishonchli usul hali yetishmaydi."
+   },
+   "source": {
+    "author": "Charlotte G. Lawrence va boshq.",
+    "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine",
+    "page": "PMID 41051499"
+   },
+   "translation_status": {
+    "uz": "source",
+    "ru": "pending",
+    "en": "pending"
+   }
+  }
+ ],
+ "sources": [
+  {
+   "author": "Li N va boshq.",
+   "title": "Vitality and wound-age estimation in forensic pathology: review and future prospects, Forensic Sciences Research"
+  },
+  {
+   "author": "Charlotte G. Lawrence va boshq.",
+   "title": "Comparing imaging modalities and healing criteria for the estimation of fracture age: a systematic review, International Journal of Legal Medicine"
+  },
+  {
+   "author": "Luca Tomassini va boshq.",
+   "title": "Dating Skin Lesions of Forensic Interest by Immunohistochemistry and Immunofluorescence Techniques: A Scoping Literature Review, Diagnostics"
+  }
+ ]
+}

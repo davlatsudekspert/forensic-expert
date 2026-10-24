@@ -5,7 +5,7 @@
       "title": "Kirish: nega komission ekspertiza kerak",
       "bullets": [
         {
-          "text": "Kasb vazifasini lozim darajada bajarmaslik holatlari bo‘yicha tergov va sud muhokamasida tibbiyotning maxsus bilim va ko‘nikmalari talab etiladigan savollar tug‘iladi.",
+          "text": "Kasb vazifasini lozim bajarmaslik holatlari bo‘yicha tergov va sudda tibbiyotning maxsus bilim va ko‘nikmalarini talab etuvchi savollar tug‘iladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -32,14 +32,35 @@
           "uncertain": true
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Komission ekspertiza",
+        "children": [
+          {
+            "label": "Tayinlash asoslari"
+          },
+          {
+            "label": "Komissiya tarkibi"
+          },
+          {
+            "label": "Xulosa tuzilishi"
+          },
+          {
+            "label": "Qatnashchilar huquqi"
+          },
+          {
+            "label": "Xulosani baholash"
+          }
+        ],
+        "caption": "Mashg‘ulotda ko‘riladigan masalalar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: 1) Qaysi savollarni faqat tibbiy mutaxassis hal eta oladi? 2) Nega bu holatda bir ekspert yetarli emas? Doskada: mashg‘ulot rejasi. Tipik xato: komission ekspertizani tergovchi o‘zi xohlagan paytda tayinlanadigan ixtiyoriy tadbir deb bilish."
     },
     {
       "title": "Me’yoriy asoslar",
       "bullets": [
         {
-          "text": "Komission ekspertizalarni tayinlash va o‘tkazish, komissiya xulosasini baholash «Sud ekspertizasi to‘g‘risida»gi Qonun, Jinoyat protsessual va Fuqarolik protsessual kodekslarida belgilangan.",
+          "text": "Komission ekspertizani tayinlash, o‘tkazish va xulosani baholash «Sud ekspertizasi to‘g‘risida»gi Qonun, JPK va FPK da belgilangan.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -93,7 +114,7 @@
           "uncertain": false
         },
         {
-          "text": "Materiallar bo‘yicha ekspertiza murdani, tirik odamni yoki ashyoviy dalilni bevosita tekshirish imkoni bo‘lmaganda o‘tkaziladi; u birlamchi, takroriy, qo‘shimcha va komission bo‘lishi mumkin.",
+          "text": "Murda, tirik odam yoki ashyoviy dalilni bevosita tekshirib bo‘lmaganda materiallar bo‘yicha ekspertiza o‘tkaziladi: birlamchi, takroriy, qo‘shimcha, komission.",
           "source": {
             "author": "Харин Г.М. (Kharin G.M.)",
             "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
@@ -102,7 +123,49 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Ekspertiza turlari",
+        "children": [
+          {
+            "label": "Birlamchi",
+            "items": [
+              "Dastlabki ekspertiza"
+            ]
+          },
+          {
+            "label": "Qo‘shimcha",
+            "items": [
+              "Xulosa yetarli aniq emas"
+            ]
+          },
+          {
+            "label": "Takroriy",
+            "items": [
+              "Asoslanmagan yoki shubhali"
+            ]
+          },
+          {
+            "label": "Komission",
+            "items": [
+              "Bir sohadagi mutaxassislar"
+            ]
+          },
+          {
+            "label": "Kompleks",
+            "items": [
+              "Turli maxsus bilimlar"
+            ]
+          },
+          {
+            "label": "Materiallar bo‘yicha",
+            "items": [
+              "Obyektni tekshirib bo‘lmaganda"
+            ]
+          }
+        ],
+        "caption": "Ekspertiza turlari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Qo‘shimcha va takroriy ekspertizaning farqi nimada? Doskada: besh tur jadvali. Tipik xato: komission va kompleks ekspertizani bir narsa deb bilish."
     },
     {
@@ -136,7 +199,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Asos",
+            "text": "Surishtiruvchi, tergovchi, prokuror qarori yoki sud ajrimi"
+          },
+          {
+            "title": "Bayon qismi",
+            "text": "Ish tafsiloti qisqacha"
+          },
+          {
+            "title": "Tayinlash",
+            "text": "Ekspertiza turi va kimga tayinlangani"
+          },
+          {
+            "title": "Qaror qismi",
+            "text": "Komissiya hal etadigan savollar"
+          }
+        ],
+        "caption": "Qaror va ajrim tarkibi"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Qaror tarkibini sanab bering. Doskada: qaror tuzilishi. Tipik xato: savollarsiz qaror tuzish."
     },
     {
@@ -195,7 +279,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Taqdim etiladi",
+            "items": [
+              "Ish materiallari",
+              "Tibbiy hujjatlar",
+              "Qarorda ko‘rsatilgan obyektlar"
+            ]
+          },
+          {
+            "title": "Istisno holat",
+            "items": [
+              "Rahbar imzolagan, muhrli kseronusxa"
+            ]
+          },
+          {
+            "title": "Mumkin emas",
+            "items": [
+              "Kasallik tarixidan ko‘chirma",
+              "Ma’lumotnomalar asosida"
+            ]
+          }
+        ],
+        "caption": "Materiallar bo‘yicha qoidalar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega ko‘chirma yetarli emas? Doskada: «asl hujjat» tamoyili. Tipik xato: ma’lumotnoma asosida xulosa berish."
     },
     {
@@ -220,7 +330,7 @@
           "uncertain": false
         },
         {
-          "text": "O‘lim holatida murdaning sud-tibbiy ekspertizasi xulosasi yoki patologoanatomik bayonnoma va qo‘shimcha laborator (gistologik, sud-kimyo) natijalari taqdim etiladi.",
+          "text": "O‘lim holatida murda ekspertizasi xulosasi yoki patologoanatomik bayonnoma va qo‘shimcha laborator (gistologik, sud-kimyo) natijalari taqdim etiladi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -229,7 +339,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Qo‘shimcha hujjatlar",
+        "children": [
+          {
+            "label": "Tekshiruvlar",
+            "items": [
+              "Idoraviy va xizmat tekshiruvlari"
+            ]
+          },
+          {
+            "label": "Tavsifnoma",
+            "items": [
+              "Tayyorgarlik, tajriba, toifa"
+            ]
+          },
+          {
+            "label": "O‘lim bo‘lsa",
+            "items": [
+              "Murda ekspertizasi yoki PAB",
+              "Gistologik, sud-kimyo natijalari"
+            ]
+          }
+        ],
+        "caption": "Javobgarlikka tortish ishlari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Tavsifnoma nima uchun kerak? Doskada: hujjatlar ro‘yxati. Tipik xato: o‘lim holatida patologoanatomik bayonnomani qoldirib ketish."
     },
     {
@@ -245,7 +380,7 @@
           "uncertain": false
         },
         {
-          "text": "Savollarni hal qilib bo‘lmasa, obyektlar yaroqsiz yoki yetarli bo‘lmasa, fan va amaliyot holati javob imkonini bermasa, komissiya xulosa berish imkoni yo‘qligi haqida asoslantirilgan hujjat tuzadi.",
+          "text": "Savol hal bo‘lmasa, obyekt yaroqsiz yoki yetarli bo‘lmasa, fan imkon bermasa, komissiya xulosa berish imkoni yo‘qligi haqida asoslantirilgan hujjat tuzadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -272,7 +407,7 @@
       "title": "Komissiyaning o‘tkazilish joyi va soni",
       "bullets": [
         {
-          "text": "Komission sud-tibbiy ekspertizalar faqat sud-tibbiy ekspertiza byurolarida o‘tkaziladi; tuman, tumanlararo va shahar bo‘linmalarida o‘tkazilishiga yo‘l qo‘yilmaydi.",
+          "text": "Komission sud-tibbiy ekspertizalar faqat sud-tibbiy ekspertiza byurolarida o‘tkaziladi; tuman, tumanlararo va shahar bo‘linmalarida yo‘l qo‘yilmaydi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -299,7 +434,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "facts",
+        "items": [
+          {
+            "label": "Komissiya tarkibi",
+            "value": "kamida 3 kishi"
+          },
+          {
+            "label": "O‘tkaziladigan joy",
+            "value": "sud-tibbiy byuro"
+          },
+          {
+            "label": "Tuman/shahar bo‘linma",
+            "value": "yo‘l qo‘yilmaydi"
+          },
+          {
+            "label": "Klinik mutaxassis",
+            "value": "kiritilishi mumkin"
+          }
+        ],
+        "caption": "Komissiya soni va joyi"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega tuman bo‘linmasida o‘tkazilmaydi? (manbada sababi aytilmagan). Doskada: «byuro, ≥3». Tipik xato: komissiyani ikki kishidan tuzish (Kharin esa ≥2 mutaxassisni ko‘rsatadi, 216-bet)."
     },
     {
@@ -333,7 +489,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "1: Tayinlagan organ",
+            "text": "Tarkibni o‘zi belgilashi mumkin"
+          },
+          {
+            "title": "2: Mutaxassis",
+            "text": "Alohida mutaxassisni kiritishi mumkin"
+          },
+          {
+            "title": "3: Ko‘rsatilmasa",
+            "text": "Rahbar organ bilan kelishib o‘z xodimlaridan"
+          },
+          {
+            "title": "4: Bilim yetmasa",
+            "text": "Boshqa muassasa mutaxassisi tavsiyasi"
+          }
+        ],
+        "caption": "Tarkibni belgilash tartibi"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Tarkib qaror bilan ko‘rsatilmasa nima bo‘ladi? Doskada: ikki yo‘l. Tipik xato: rahbar tarkibni mustaqil, kelishmasdan belgilaydi deb o‘ylash."
     },
     {
@@ -367,7 +544,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "A’zo bo‘la olmaydi",
+        "children": [
+          {
+            "label": "Hodisa muassasasi",
+            "items": [
+              "Rahbarlari",
+              "Mutaxassislari"
+            ]
+          },
+          {
+            "label": "Manfaatdorlar",
+            "items": [
+              "Ish natijasidan manfaatdor shaxs"
+            ]
+          },
+          {
+            "label": "Raddiya",
+            "items": [
+              "Tayinlagan organ ko‘rib chiqadi"
+            ]
+          }
+        ],
+        "caption": "Komissiya a’zosiga cheklov"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Bu cheklovlar qanday tamoyilni himoya qiladi? Doskada: «xolislik». Tipik xato: o‘sha muassasa mutaxassisini «malakali» deb komissiyaga kiritish."
     },
     {
@@ -416,7 +618,7 @@
           ],
           [
             "Ish bo‘yicha ma’ruzachi",
-            "Reja, muloqot, materiallar, to‘xtam loyihasi"
+            "Reja, muloqot, to‘xtam loyihasi"
           ],
           [
             "Boshqa a’zolar",
@@ -448,7 +650,33 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Etakchi ekspert",
+            "items": [
+              "Faoliyatni tashkil etadi",
+              "Nazoratni ta’minlaydi"
+            ]
+          },
+          {
+            "title": "Ma’ruzachi",
+            "items": [
+              "Reja, muloqot, materiallar",
+              "To‘xtam loyihasi"
+            ]
+          },
+          {
+            "title": "Hammasi",
+            "items": [
+              "Teng protsessual huquq",
+              "Hech kimda ustunlik yo‘q"
+            ]
+          }
+        ],
+        "caption": "Komissiya a’zolari"
+      },
       "teacher_notes": "Vaqt: 3 daq. Muhokama: Teng huquq xulosa sifatiga qanday ta’sir qiladi? Doskada: «imtiyoz yo‘q». Tipik xato: etakchi ekspert fikrini hal qiluvchi deb bilish."
     },
     {
@@ -473,7 +701,24 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Ruxsat bilan",
+            "items": [
+              "Jinoiy yoki fuqarolik ish materiallari bilan tanishish"
+            ]
+          },
+          {
+            "title": "Talab qilishi mumkin",
+            "items": [
+              "Xodimni komissiya ishtirokida so‘roq qilish"
+            ]
+          }
+        ],
+        "caption": "Komissiya huquqlari"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Nega so‘roq komissiya ishtirokida o‘tadi? Doskada: 2 huquq. Tipik xato: komissiya o‘zi xodimni so‘roq qiladi deb o‘ylash."
     },
     {
@@ -507,7 +752,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Yordam",
+            "text": "Barcha tibbiy muassasalar yordam beradi"
+          },
+          {
+            "title": "Shakli",
+            "text": "Mutaxassis, maslahat, laboratoriya"
+          },
+          {
+            "title": "Statsionar",
+            "text": "Komissiya tavsiyasi va yo‘llanma bilan"
+          },
+          {
+            "title": "Natija",
+            "text": "Tayinlagan organ orqali komissiyaga"
+          }
+        ],
+        "caption": "Muassasalar yordami va statsionar tekshiruv"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Statsionar tekshiruv qachon zarur? Doskada: yo‘llanma zanjiri. Tipik xato: shaxsni komissiya o‘zi yotqizadi deb bilish."
     },
     {
@@ -585,7 +851,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Tekshiruv qismi",
+        "children": [
+          {
+            "label": "Ishning mohiyati",
+            "items": [
+              "Savollarni hal etuvchi dalillar"
+            ]
+          },
+          {
+            "label": "Boshlanish asosi",
+            "items": [
+              "Ishni qo‘zg‘atish asosi",
+              "Ko‘zdan kechirish bayonnomasi"
+            ]
+          },
+          {
+            "label": "Tibbiy hujjatlar",
+            "items": [
+              "Shikoyat va ahvol, dinamika",
+              "Davolash, konsilium",
+              "Paraklinik natijalar"
+            ]
+          }
+        ],
+        "caption": "Tekshiruv qismi mazmuni"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: Tibbiy hujjatlardan qaysi ma’lumotlar zarur? Doskada: ro‘yxat. Tipik xato: hujjat raqami va muassasasini ko‘rsatmaslik."
     },
     {
@@ -619,7 +912,39 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Qo‘shimcha manbalar",
+        "children": [
+          {
+            "label": "Murda ma’lumotlari",
+            "items": [
+              "Ekspertiza xulosasi to‘xtamlari",
+              "Patologoanatomik bayonnoma"
+            ]
+          },
+          {
+            "label": "Laboratoriya",
+            "items": [
+              "Gistologik, toksikologik"
+            ]
+          },
+          {
+            "label": "Konferensiyalar",
+            "items": [
+              "Klinik-anatomik, klinik"
+            ]
+          },
+          {
+            "label": "Xodim va guvohlar",
+            "items": [
+              "Xizmat tavsifnomasi",
+              "So‘roq bayonnomalaridan ko‘chirma"
+            ]
+          }
+        ],
+        "caption": "Tekshiruv qismidagi qo‘shimcha manbalar"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Qaysi manba nimani isbotlaydi? Doskada: manba → dalil. Tipik xato: guvoh ko‘rsatmasini tibbiy hujjat o‘rniga qo‘llash."
     },
     {
@@ -714,7 +1039,27 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Savolni rad etish",
+            "items": [
+              "Obyekt yetarli emas",
+              "Maxsus bilim yetmaydi",
+              "Asoslantirib rad etiladi"
+            ]
+          },
+          {
+            "title": "O‘z tashabbusi",
+            "items": [
+              "Savol qo‘yilmagan holat",
+              "Ahamiyatli bo‘lsa xulosada yoritiladi"
+            ]
+          }
+        ],
+        "caption": "Komissiya savollarga munosabati"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Tashabbus bilan yoritiladigan holatlarga misol? (faqat muhokama). Doskada: «rad etish — asos bilan». Tipik xato: savolga javob bermaslikni asoslamaslik."
     },
     {
@@ -748,7 +1093,32 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "compare",
+        "columns": [
+          {
+            "title": "Umumiy fikr",
+            "items": [
+              "Birgalikda xulosa tuziladi",
+              "Birgalikda imzolanadi"
+            ]
+          },
+          {
+            "title": "Fikr turlicha",
+            "items": [
+              "Har bir a’zo alohida xulosa beradi"
+            ]
+          },
+          {
+            "title": "Rozi bo‘lmagan ekspert",
+            "items": [
+              "Rozi bo‘lgan qismini imzolaydi",
+              "Alohida fikr to‘xtamlardan keyin"
+            ]
+          }
+        ],
+        "caption": "Xulosani imzolash"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Alohida fikr qanday rasmiylashtiriladi? Doskada: jarayon sxemasi. Tipik xato: kelishmovchilik bo‘lsa xulosa chiqarmaslik."
     },
     {
@@ -782,7 +1152,39 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Xulosa tarkibida",
+        "children": [
+          {
+            "label": "Sabablar va sharoitlar",
+            "items": [
+              "Huquqbuzarlik sabablari",
+              "Vujudga keltirgan sharoitlar"
+            ]
+          },
+          {
+            "label": "Tavsiyalar",
+            "items": [
+              "Bartaraf etish",
+              "Oldini olish"
+            ]
+          },
+          {
+            "label": "Ilovalar",
+            "items": [
+              "Ko‘rgazmali materiallar xulosa qismi"
+            ]
+          },
+          {
+            "label": "Saqlash",
+            "items": [
+              "Materiallar belgilangan muddat"
+            ]
+          }
+        ],
+        "caption": "Xulosadagi qo‘shimcha ma’lumotlar"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Oldini olish tavsiyalarining amaliy ahamiyati? Doskada: sabablar → tavsiya. Tipik xato: tavsiyalarni xulosaning majburiy qismi deb hisoblash (manbada «bo‘lishi mumkin»)."
     },
     {
@@ -841,7 +1243,40 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "JPK 179: huquqlar",
+        "children": [
+          {
+            "label": "Ekspertiza oldidan",
+            "items": [
+              "Qaror yoki ajrim bilan tanishish"
+            ]
+          },
+          {
+            "label": "Ekspertga munosabat",
+            "items": [
+              "Raddiya berish",
+              "Ekspert tayinlash tavsiyasi"
+            ]
+          },
+          {
+            "label": "Savollar va materiallar",
+            "items": [
+              "Qo‘shimcha savol qo‘yish",
+              "Qo‘shimcha materiallar taqdim"
+            ]
+          },
+          {
+            "label": "Xulosadan keyin",
+            "items": [
+              "Xulosa bilan tanishish",
+              "Qo‘shimcha/takroriy ekspertiza"
+            ]
+          }
+        ],
+        "caption": "Gumondor va ayblanuvchi huquqlari"
+      },
       "teacher_notes": "Vaqt: 6 daq. Muhokama: Qaysi huquq eng ko‘p ishlatiladi? Doskada: huquqlar ro‘yxati. Tipik xato: huquqlarni ekspertiza tugagandan keyin tushuntirish."
     },
     {
@@ -857,7 +1292,7 @@
           "uncertain": false
         },
         {
-          "text": "Qatnashchilar ekspertiza tayinlagan organ ruxsati bilan ishtirok etadi, tekshiruvga aralashmaydi, usul va natijalar mohiyatini tushuntirishni talab qilishi mumkin.",
+          "text": "Qatnashchilar tayinlagan organ ruxsati bilan ishtirok etadi, tekshiruvga aralashmaydi, usul va natijalar mohiyatini tushuntirishni talab qilishi mumkin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -904,7 +1339,7 @@
       "title": "Komissiya a’zolarini so‘roq qilish",
       "bullets": [
         {
-          "text": "To‘xtamda aniqlik kiritish lozim noaniqliklar yoki qo‘shimcha tekshiruv talab qilmaydigan kamchiliklar bo‘lsa, a’zolar surishtiruvchi, tergovchi yoki sud tomonidan so‘roq qilinishi mumkin.",
+          "text": "Noaniqlik yoki qo‘shimcha tekshiruv talab qilmaydigan kamchiliklar bo‘lsa, a’zolar surishtiruvchi, tergovchi yoki sud tomonidan so‘roq qilinishi mumkin.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -929,7 +1364,7 @@
       "title": "Xulosani baholash (JPK 187)",
       "bullets": [
         {
-          "text": "JPK 187-moddaga ko‘ra komissiya xulosasi boshqa dalillar bilan birga ilmiy asoslanganligi va protsessual me’yorlarga rioya etilganligi nuqtai nazaridan baholanadi.",
+          "text": "JPK 187: komissiya xulosasi boshqa dalillar bilan birga ilmiy asoslanganligi va protsessual me’yorlarga rioya nuqtai nazaridan baholanadi.",
           "source": {
             "author": "G‘iyosov Z.A.",
             "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
@@ -956,7 +1391,28 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "JPK 187",
+            "text": "Boshqa dalillar bilan birga baholanadi"
+          },
+          {
+            "title": "Mezon",
+            "text": "Ilmiy asoslangan, protsess me’yorlariga rioya"
+          },
+          {
+            "title": "Kuchi",
+            "text": "Dalil sifatida ustuvor emas"
+          },
+          {
+            "title": "Rad etish",
+            "text": "Xulosaga qo‘shilmaslik asoslanadi"
+          }
+        ],
+        "caption": "Komissiya xulosasini baholash"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Nega xulosa ustuvor kuchga ega emas? Doskada: «dalillar yig‘indisi». Tipik xato: ekspert xulosasini sud uchun majburiy deb hisoblash."
     },
     {
@@ -981,7 +1437,16 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "flow",
+        "nodes": [
+          "Bir ishda ikki komissiya",
+          "Fikrlar mos kelmaydi",
+          "Bir xulosa inobatga olinadi",
+          "Ikkinchisini rad etish sababi asoslanadi"
+        ],
+        "caption": "Ikki komissiya fikri mos kelmasa"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Takroriy ekspertiza qachon tayinlanadi? Doskada: ikki xulosa → asos. Tipik xato: sabab ko‘rsatmasdan bir xulosani tanlash."
     },
     {
@@ -1015,7 +1480,34 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Materiallar bo‘yicha",
+        "children": [
+          {
+            "label": "Maqsad",
+            "items": [
+              "Yordam nuqsonlari sabablarini aniqlash"
+            ]
+          },
+          {
+            "label": "Qachon tayinlanadi",
+            "items": [
+              "Obyektni berib bo‘lmasa",
+              "Javob uchun ma’lumot yetarli"
+            ]
+          },
+          {
+            "label": "Tekshiriladi",
+            "items": [
+              "Tibbiy kartalar, ma’lumotnomalar",
+              "Patologoanatomik bayonnomalar",
+              "Birlamchi ekspertiza xulosalari"
+            ]
+          }
+        ],
+        "caption": "Materiallar bo‘yicha ekspertiza"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Qachon ekspertizani faqat materiallar bo‘yicha o‘tkazish mumkin? Doskada: 2 shart. Tipik xato: ish materiallarida ma’lumot yetmasa ham materiallar bo‘yicha xulosa berish."
     },
     {
@@ -1031,7 +1523,7 @@
           "uncertain": false
         },
         {
-          "text": "Jinoyat ishi qo‘zg‘atilishidan oldin idoraviy maxsus komissiya xizmat tekshiruvi o‘tkazadi va nuqsonlar, sabablar hamda oqibat bilan bog‘liqligini «Xulosa»da qayd etadi.",
+          "text": "Jinoyat ishi qo‘zg‘atilishidan oldin idoraviy maxsus komissiya xizmat tekshiruvi o‘tkazadi, nuqson, sabab va oqibat bog‘lanishini «Xulosa»da qayd etadi.",
           "source": {
             "author": "Харин Г.М. (Kharin G.M.)",
             "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
@@ -1049,7 +1541,32 @@
           "uncertain": true
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Shikoyat",
+            "text": "Bemor/qarindoshlar yoki ma’muriyat"
+          },
+          {
+            "title": "Xizmat tekshiruvi",
+            "text": "Idoraviy maxsus komissiya"
+          },
+          {
+            "title": "«Xulosa»",
+            "text": "Nuqsonlar, sabablar, bog‘lanish"
+          },
+          {
+            "title": "Ish qo‘zg‘atiladi",
+            "text": "Jinoyat ishi"
+          },
+          {
+            "title": "Ekspertiza",
+            "text": "Tergovchi komission tayinlaydi"
+          }
+        ],
+        "caption": "Rossiya tartibi (Kharin)"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Bizning amaliyotda xizmat tekshiruvi qaysi hujjatlar bilan olib boriladi? (faqat muhokama; manba rus amaliyotini tasvirlaydi). Doskada: zanjir. Tipik xato: Rossiya tartibini O‘zbekiston qonuni deb ko‘rsatish."
     },
     {
@@ -1083,7 +1600,39 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Ekspertiza obyektlari",
+        "children": [
+          {
+            "label": "Bayonnomalar",
+            "items": [
+              "Voqea joyini ko‘zdan kechirish"
+            ]
+          },
+          {
+            "label": "Avvalgi ekspertizalar",
+            "items": [
+              "Sud-tibbiy ekspertiza materiallari"
+            ]
+          },
+          {
+            "label": "Tibbiy hujjatlar",
+            "items": [
+              "Asl nusxalar",
+              "Klinik-anatomik konferensiya"
+            ]
+          },
+          {
+            "label": "Xodim va tekshiruv",
+            "items": [
+              "Idoraviy tekshiruv hujjatlari",
+              "Xodim tavsifnomalari"
+            ]
+          }
+        ],
+        "caption": "Materiallar bo‘yicha ekspertiza obyektlari"
+      },
       "teacher_notes": "Vaqt: 4 daq. Muhokama: Ro‘yxatni O‘zbekiston manbasi (Giyosov) ro‘yxati bilan taqqoslang. Doskada: umumiy hujjatlar. Tipik xato: faqat tibbiy kartani ko‘rib chiqish."
     },
     {
@@ -1160,7 +1709,7 @@
           "uncertain": false
         },
         {
-          "text": "Aralashuv bilan noxush oqibat o‘rtasida bevosita sababiy bog‘lanish bormi? Qanday nuqsonlar yo‘l qo‘yilgan? Oqibatning oldi olinishi mumkinmi? Yo‘riqnoma va buyruqlar buzilganmi?",
+          "text": "Aralashuv bilan noxush oqibat orasida bevosita sababiy bog‘lanish bormi? Qanday nuqson yo‘l qo‘yilgan? Oldi olinishi mumkinmi? Yo‘riqnoma buzilganmi?",
           "source": {
             "author": "Харин Г.М. (Kharin G.M.)",
             "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
@@ -1169,14 +1718,47 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Ekspert savollari",
+        "children": [
+          {
+            "label": "Diagnostika",
+            "items": [
+              "O‘z vaqtida, to‘g‘rimi",
+              "Klinik tashxis to‘g‘rimi"
+            ]
+          },
+          {
+            "label": "Davolash",
+            "items": [
+              "Usul to‘g‘ri tanlanganmi",
+              "Yordam hajmi to‘liqmi"
+            ]
+          },
+          {
+            "label": "Aralashuv",
+            "items": [
+              "Texnik bajarilishi, asoratlar"
+            ]
+          },
+          {
+            "label": "Bog‘lanish va oldini olish",
+            "items": [
+              "Bevosita sababiy bog‘lanish",
+              "Yo‘riqnoma buzilganmi"
+            ]
+          }
+        ],
+        "caption": "Tibbiy yordam nuqsonlari bo‘yicha savollar"
+      },
       "teacher_notes": "Vaqt: 7 daq. Muhokama: Savollarni guruhlarga ajrating (diagnostika, davolash, texnika, sababiy bog‘lanish). Doskada: 4 guruh. Tipik xato: savolni «aybdormi?» shaklida qo‘yish."
     },
     {
       "title": "Kasb huquqbuzarliklari va noxush oqibat sabablari",
       "bullets": [
         {
-          "text": "Kasb huquqbuzarligi — zamonaviy tibbiy fan va amaliyot talablari, etika va deontologiya, qonun va yo‘riqnomalarni buzgan holda sof kasbiy vazifalarni bajarishdagi g‘ayriqonuniy harakat yoki harakatsizlik.",
+          "text": "Kasb huquqbuzarligi — tibbiy fan, etika va deontologiya, qonun va yo‘riqnomalarni buzib, kasbiy vazifani bajarishdagi g‘ayriqonuniy harakat yoki harakatsizlik.",
           "source": {
             "author": "Харин Г.М. (Kharin G.M.)",
             "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
@@ -1185,7 +1767,7 @@
           "uncertain": false
         },
         {
-          "text": "Noxush oqibatlar jinoiy huquqbuzarliklar, vrach xatolari, baxtsiz hodisalar va yatrogeniyalar (xodim faoliyati bilan bog‘liq kasalliklar) bilan bog‘liq bo‘lishi mumkin.",
+          "text": "Noxush oqibatlar jinoiy huquqbuzarlik, vrach xatosi, baxtsiz hodisa va yatrogeniya (xodim faoliyati bilan bog‘liq kasallik) bilan bog‘liq bo‘lishi mumkin.",
           "source": {
             "author": "Харин Г.М. (Kharin G.M.)",
             "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
@@ -1203,8 +1785,104 @@
           "uncertain": false
         }
       ],
-      "diagram": null,
+      "diagram": {
+        "kind": "tree",
+        "root": "Noxush oqibat sabablari",
+        "children": [
+          {
+            "label": "Jinoiy huquqbuzarlik"
+          },
+          {
+            "label": "Vrach xatosi",
+            "items": [
+              "Vijdonan adashish"
+            ]
+          },
+          {
+            "label": "Baxtsiz hodisa"
+          },
+          {
+            "label": "Yatrogeniya",
+            "items": [
+              "Xodim faoliyati bilan bog‘liq kasallik"
+            ]
+          }
+        ],
+        "caption": "Noxush oqibatlar manbalari"
+      },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Ekspert nuqsonni qanday tasniflaydi? Doskada: 4 noxush oqibat sababi. Tipik xato: vrach xatosini huquqiy kategoriya deb hisoblash (manba: huquqiy kategoriya emas)."
+    },
+    {
+      "title": "Javobgarlik turlari va jinoyat guruhlari (Rossiya qonunchiligi)",
+      "bullets": [
+        {
+          "text": "Vrachning kasb huquqbuzarligi uchun javobgarligi jinoiy, fuqarolik-huquqiy, intizomiy, ma’muriy va moddiy javobgarlikni o‘z ichiga oladi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "219"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Huquqbuzarliklar ijtimoiy xavfliligiga ko‘ra jinoyatlarga va fuqarolik, ma’muriy, intizomiy xatti-harakatlarga bo‘linadi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Rossiya JK shaxsga qarshi jinoyatlarni sanaydi: ehtiyotsizlikdan o‘lim va og‘ir zarar, noqonuniy abort, yordam bermaslik, xavfda qoldirish.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "220"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Manba Rossiya Federatsiyasi qonunchiligini bayon qiladi; O‘zbekiston JK moddalari bilan aralashtirmang.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "220"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "tree",
+        "root": "Javobgarlik turlari",
+        "children": [
+          {
+            "label": "Jinoiy"
+          },
+          {
+            "label": "Fuqarolik-huquqiy"
+          },
+          {
+            "label": "Intizomiy"
+          },
+          {
+            "label": "Ma’muriy"
+          },
+          {
+            "label": "Moddiy"
+          },
+          {
+            "label": "Jinoyatlar (RF JK)",
+            "items": [
+              "Shaxsga qarshi",
+              "Aholi salomatligiga qarshi",
+              "Davlat xizmati manfaatiga qarshi"
+            ]
+          }
+        ],
+        "caption": "Kharin: javobgarlik turlari"
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: Kharin darsligi Rossiya qonunchiligiga tayanadi; O‘zbekistondagi mos moddalar G‘iyosov darsligida (JK 102–117 va b.). Doskada: daraxtni chizing. Tipik xato: Rossiya JK modda raqamlarini O‘zbekiston JK ga ko‘chirish."
     },
     {
       "title": "Xato turlari va baxtsiz hodisa",
@@ -1219,7 +1897,7 @@
           "uncertain": false
         },
         {
-          "text": "Baxtsiz hodisa — tasodifiy holatlar bilan bog‘liq noxush oqibat; vrach bunday holatni vijdonan ishlaganda oldindan ko‘ra olmagan va oldini ola olmagan; u ham huquqiy kategoriya emas.",
+          "text": "Baxtsiz hodisa — tasodifiy holat bilan bog‘liq noxush oqibat; vijdonan ishlagan vrach uni oldindan ko‘ra olmagan, oldini ola olmagan; huquqiy kategoriya emas.",
           "source": {
             "author": "Харин Г.М. (Kharin G.M.)",
             "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
@@ -1238,33 +1916,105 @@
         }
       ],
       "diagram": {
-        "kind": "table",
-        "caption": "Xato turlari",
-        "nodes": [],
-        "header": [
-          "Tur",
-          "Mazmuni"
+        "kind": "tree",
+        "root": "Sud-tibbiy amaliyotda xatolar",
+        "children": [
+          {
+            "label": "Diagnostik",
+            "items": [
+              "Tashxis qo‘yishdagi xato"
+            ]
+          },
+          {
+            "label": "Davolash",
+            "items": [
+              "Davolash usuli bilan bog‘liq"
+            ]
+          },
+          {
+            "label": "Tashkiliy",
+            "items": [
+              "Yordam tashkilidagi xato"
+            ]
+          },
+          {
+            "label": "Hujjat",
+            "items": [
+              "Tibbiy hujjatni tuzish, rasmiylashtirish"
+            ]
+          }
         ],
-        "rows": [
-          [
-            "Diagnostik",
-            "Tashxis qo‘yishdagi xato"
-          ],
-          [
-            "Davolash",
-            "Davolash usuli bilan bog‘liq"
-          ],
-          [
-            "Tashkiliy",
-            "Yordam tashkilidagi xato"
-          ],
-          [
-            "Hujjat",
-            "Tibbiy hujjatni tuzish va rasmiylashtirish"
-          ]
-        ]
+        "caption": "Vrach xatolarining turlari"
       },
       "teacher_notes": "Vaqt: 5 daq. Muhokama: Har xato turiga misol keltiring. Doskada: 4 xato turi. Tipik xato: tashkiliy xatoni diagnostik xato bilan aralashtirish."
+    },
+    {
+      "title": "Tibbiy yordam: haq evaziga xizmat shartnomasi (Kharin)",
+      "bullets": [
+        {
+          "text": "Rossiya GK tibbiy yordamni (majburiy va ixtiyoriy sug‘urta doirasida ham) haq evaziga xizmat ko‘rsatish shartnomalariga kiritadi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "223"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Ijrochi (muassasa, xodim) buyurtmachi topshirig‘i bilan tibbiy yordam ko‘rsatadi, buyurtmachi esa xizmatni to‘laydi.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "223"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Umumiy qoidalardan: xizmat sifati va kafolati, ma’lumot berish, foydalanish shartlari haqida ogohlantirish, sifatsizlik uchun javobgarlik.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "223"
+          },
+          "uncertain": false
+        },
+        {
+          "text": "Xizmat sifati shartnoma shartlariga va shu turdagi xizmatga odatda qo‘yiladigan talablarga mos bo‘lishi kerak.",
+          "source": {
+            "author": "Харин Г.М. (Kharin G.M.)",
+            "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+            "page": "223-224"
+          },
+          "uncertain": false
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "items": [
+          {
+            "title": "Ijrochi",
+            "text": "Muassasa yoki tibbiy xodim"
+          },
+          {
+            "title": "Buyurtmachi",
+            "text": "Odatda sug‘urta qildiruvchi"
+          },
+          {
+            "title": "Xizmat",
+            "text": "Bemorga tibbiy yordam"
+          },
+          {
+            "title": "To‘lov",
+            "text": "Buyurtmachi xizmatni to‘laydi"
+          },
+          {
+            "title": "Sifat",
+            "text": "Shartnoma va odatiy talablarga mos"
+          }
+        ],
+        "caption": "Haq evaziga xizmat shartnomasi (RF GK)"
+      },
+      "teacher_notes": "Vaqt: 5 daq. Muhokama: O‘zbekistondagi mos tartib G‘iyosov darsligida (FK 703–707). Doskada: besh qadamni yozing. Tipik xato: GK moddalari raqamlarini ikki mamlakat o‘rtasida almashtirish."
     },
     {
       "title": "Xulosa",
@@ -1305,12 +2055,12 @@
     {
       "question": "Komission sud-tibbiy ekspertiza uchun asos nima bo‘lishi mumkin?",
       "options": [
-        "Faqat prokuror qarori",
         "Surishtiruvchi, tergovchi, prokuror qarori yoki sud ajrimi",
+        "Faqat prokuror qarori",
         "Faqat vrach arizasi",
         "Faqat jabrlanuvchi arizasi"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Asos — surishtiruvchi, tergovchi, prokuror qarori yoki sud ajrimi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1338,11 +2088,11 @@
       "question": "Komissiya eng kamida nechta shaxsdan tuziladi?",
       "options": [
         "Ikki",
-        "Uch",
+        "Yetti",
         "Besh",
-        "Yetti"
+        "Uch"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Ekspertlar komissiyasi uchtadan kam bo‘lmagan shaxsdan tashkil topadi.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1369,12 +2119,12 @@
     {
       "question": "Etakchi ekspertning komissiyadagi huquqiy maqomi qanday?",
       "options": [
-        "Hal qiluvchi ovozga ega",
         "Boshqa a’zolar bilan teng protsessual huquqqa ega",
+        "Hal qiluvchi ovozga ega",
         "Faqat ma’ruzachi",
         "Faqat nazorat qiladi, huquqi yo‘q"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Barcha a’zolar, shu jumladan etakchi ekspert, teng protsessual huquq va majburiyatga ega.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1386,11 +2136,11 @@
       "question": "Ekspertiza xulosasi nechta qismdan tashkil topadi?",
       "options": [
         "Ikki",
-        "Uch",
+        "Besh",
         "To‘rt",
-        "Besh"
+        "Uch"
       ],
-      "correct_index": 1,
+      "correct_index": 3,
       "explanation": "Xulosa uch qismdan iborat: kirish, tekshiruv va to‘xtamlar.",
       "source": {
         "author": "G‘iyosov Z.A.",
@@ -1449,17 +2199,177 @@
     {
       "question": "Kharin manbasiga ko‘ra qasd yoki ehtiyotsizlik, aybdorlik masalasi kimning vakolatida?",
       "options": [
-        "Ekspertlar komissiyasi",
         "Sud",
+        "Ekspertlar komissiyasi",
         "Prokuratura tibbiy bo‘limi",
         "Davolash muassasasi"
       ],
-      "correct_index": 1,
+      "correct_index": 0,
       "explanation": "Qasd, ehtiyotsizlik, xodimning aybi yoki aybsizligi masalasi ekspertlar emas, sud vakolatida.",
       "source": {
         "author": "Харин Г.М. (Kharin G.M.)",
         "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
         "page": "217"
+      }
+    },
+    {
+      "question": "To‘xtamlarga qo‘yiladigan talab qaysi?",
+      "options": [
+        "Taxminiy va umumiy bo‘lishi mumkin",
+        "O‘zaro zid fikrlarni ham o‘z ichiga olishi",
+        "Faqat tayinlagan organ talabiga mos bo‘lishi",
+        "Obyektiv, ilmiy asoslangan, turli talqinga yo‘l qo‘ymaydigan darajada aniq bo‘lishi"
+      ],
+      "correct_index": 3,
+      "explanation": "To‘xtam obyektiv, ilmiy asoslantirilgan, turli talqinga yo‘l qo‘ymaydigan darajada aniq va tushunarli bo‘lishi kerak; taxminiy, noto‘liq, mavhum yoki o‘zaro zid to‘xtamlarga yo‘l qo‘yilmaydi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "139"
+      }
+    },
+    {
+      "question": "Qaysi hujjatlar asosida komission ekspertiza o‘tkazishga yo‘l qo‘yilmaydi?",
+      "options": [
+        "Alohida kasallik tarixidan ko‘chirma va ma’lumotnomalar",
+        "Asl kasallik tarixi",
+        "Patologoanatomik bayonnoma",
+        "Ish materiallari"
+      ],
+      "correct_index": 0,
+      "explanation": "Alohida kasallik tarixidan ko‘chirma va ma’lumotnomalar bo‘yicha komission ekspertiza o‘tkazishga yo‘l qo‘yilmaydi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "134"
+      }
+    },
+    {
+      "question": "Ma’ruzachining vazifasi qaysi?",
+      "options": [
+        "Komissiya a’zolarini tayinlash",
+        "Xodimni so‘roq qilish",
+        "Ish bo‘yicha hukm chiqarish",
+        "Ijro rejasini tuzish, to‘xtam loyihasini tayyorlash va xulosani rasmiylashtirishni nazorat qilish"
+      ],
+      "correct_index": 3,
+      "explanation": "Ma’ruzachi ijro rejasini tuzadi, materiallarni majlisga tayyorlaydi, to‘xtam loyihasini tuzadi va xulosani rasmiylashtirishni nazorat qiladi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "136"
+      }
+    },
+    {
+      "question": "Qarorda komissiya tarkibi ko‘rsatilmagan bo‘lsa, uni kim tuzadi?",
+      "options": [
+        "Ekspertiza muassasasi rahbari, tayinlagan organ bilan kelishib, o‘z xodimlaridan",
+        "Sud kotibi",
+        "Davolash muassasasi bosh vrachi",
+        "Jabrlanuvchi"
+      ],
+      "correct_index": 0,
+      "explanation": "Qarorda tarkib ko‘rsatilmasa, muassasa rahbari tayinlagan organ bilan kelishib, o‘z xodimlaridan komissiya tuzadi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "136"
+      }
+    },
+    {
+      "question": "Komissiya a’zolarini so‘roq qilish qachon mumkin?",
+      "options": [
+        "Xulosa taqdim etilguncha",
+        "Hech qachon mumkin emas",
+        "Faqat komissiya majlisida",
+        "Faqat mavjud xulosa bo‘yicha, aniqlik kiritish zarur bo‘lganda"
+      ],
+      "correct_index": 3,
+      "explanation": "So‘roq faqat mavjud xulosa bo‘yicha o‘tkaziladi; xulosa taqdim etilguncha a’zolarni so‘roq qilishga yo‘l qo‘yilmaydi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "141"
+      }
+    },
+    {
+      "question": "Javobgarlikka tortilayotgan tibbiy xodim haqida ekspertlar komissiyasiga qaysi hujjat taqdim etilishi lozim?",
+      "options": [
+        "Faqat shaxsiy ariza",
+        "Kasbiy tayyorgarligi, tajribasi va toifasi ko‘rsatilgan tavsifnoma",
+        "Pasport nusxasi",
+        "Bemorning roziligi"
+      ],
+      "correct_index": 1,
+      "explanation": "Komissiyaga xodimning kasbiy tayyorgarligi, tajribasi va mutaxassislik toifasi ko‘rsatilgan tavsifnoma taqdim etiladi.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "135"
+      }
+    },
+    {
+      "question": "Umumiy xulosaga rozi bo‘lmagan ekspert qanday harakat qiladi (Kharin)?",
+      "options": [
+        "Imzolashdan butunlay bosh tortadi",
+        "Faqat o‘zi rozi bo‘lgan qismini imzolaydi va alohida fikrni to‘xtamlardan keyin bayon etadi",
+        "Xulosani o‘zgartiradi",
+        "Yangi komissiya tuzadi"
+      ],
+      "correct_index": 1,
+      "explanation": "Umumiy xulosaga rozi bo‘lmagan ekspert faqat o‘zi rozi bo‘lgan qismini imzolaydi va alohida fikrni umumiy to‘xtamlardan keyin bayon etib imzolaydi.",
+      "source": {
+        "author": "Харин Г.М. (Kharin G.M.)",
+        "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "216-217"
+      }
+    },
+    {
+      "question": "Materiallar bo‘yicha ekspertiza qachon o‘tkaziladi (Kharin)?",
+      "options": [
+        "Murdani tekshirish mumkin bo‘lganda",
+        "Murda, tirik odam yoki ashyoviy dalilni bevosita tekshirish imkoni bo‘lmaganda",
+        "Faqat sud ajrimidan keyin",
+        "Faqat takroriy ekspertizada"
+      ],
+      "correct_index": 1,
+      "explanation": "Materiallar bo‘yicha ekspertiza murdani, tirik odamni yoki ashyoviy dalilni bevosita tekshirish imkoni bo‘lmaganda o‘tkaziladi.",
+      "source": {
+        "author": "Харин Г.М. (Kharin G.M.)",
+        "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "214"
+      }
+    },
+    {
+      "question": "JPK 179-moddaga ko‘ra gumondor, ayblanuvchi ekspertiza boshlanishidan oldin nima qila oladi?",
+      "options": [
+        "Ekspertiza natijasini o‘zgartira oladi",
+        "Qaror yoki ajrim bilan tanishadi, ekspertga raddiya beradi, ekspert tayinlash tavsiyasini beradi",
+        "Komissiya majlisida ishtirok etadi",
+        "Ekspert xulosasini imzolaydi"
+      ],
+      "correct_index": 1,
+      "explanation": "Ular ekspertiza boshlanguncha qaror yoki ajrim bilan tanishishi, ekspertga raddiya berishi va ekspert tayinlash haqida tavsiya berishi mumkin.",
+      "source": {
+        "author": "G‘iyosov Z.A.",
+        "title": "Vrach faoliyatining huquqiy asoslari: darslik, Toshkent: Tafakkur-Bo‘stoni (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "140"
+      }
+    },
+    {
+      "question": "Materiallar bo‘yicha ekspertiza komissiyasi tarkibi (Kharin) qanday?",
+      "options": [
+        "Bitta ekspert",
+        "Kamida ikki mutaxassis: biri etakchi ekspert, ikkinchisi tashkiliy ta’minotga javobgar",
+        "Kamida besh mutaxassis",
+        "Faqat sud raisi"
+      ],
+      "correct_index": 1,
+      "explanation": "Materiallar bo‘yicha ekspertiza komissiyasi kamida ikki mutaxassisdan iborat; biri etakchi ekspert, ikkinchisi tashkiliy ta’minotga javobgar.",
+      "source": {
+        "author": "Харин Г.М. (Kharin G.M.)",
+        "title": "Краткий курс судебной медицины: учебное пособие, М.: ГЭОТАР-Медиа (egasi taqdim etgan; yopiq foydalanish)",
+        "page": "216"
       }
     }
   ],
