@@ -267,3 +267,6 @@ Egasi: «Apple’da to‘ldirayotganda hamma davlatlarga deb yozaylik. Esingda s
 - `lesson_topics.audience` ('teacher' | 'all'): «Apparatlar bilan ishlash» kursi `all` — har qanday kirgan foydalanuvchi (mutaxassis) ko‘radi; boshqa ma’ruzalar — faqat ustoz roli. Prod’ga qo‘llandi (`lesson_list`/`lesson_get` yangilandi).
 - Mutaxassis uchun Bosh sahifada «Apparatlar bilan ishlash» plitkasi; dars oxirida test — o‘zi yechadi (guruh testi faqat ustozda).
 - Egasi topshirig‘i: tekshiruvdan o‘tgach Pro versiya tayyorlanadi; Talaba/Mutaxassis/Ustoz rejimlari free/pro bo‘linadi; «Apparatlar bilan ishlash» mutaxassis uchun Pro bo‘ladi (hozircha bepul — tekshiruvdagi buildga tegilmaydi). Taklif va narxlar: `docs/PRO_PLAN_2026-10-24.md` (tasdiq kutilmoqda).
+
+## 2026-10-24 — Pro narxlari (egasi qarori, yakuniy)
+Talaba $1.49/oy, $9.99/yil; Ustoz $2.49/oy, $24.99/yil; Mutaxassis $3.49/oy, $34.99/yil (uchta alohida obuna). Admin panel: istalgan emailga Pro berish (server `admin_set_plan`, audit). Tafsilot: `docs/PRO_PLAN_2026-10-24.md`. Pro — 0.4.0 versiyasida, tekshiruvdagi 0.3.1 ga tegilmaydi.
