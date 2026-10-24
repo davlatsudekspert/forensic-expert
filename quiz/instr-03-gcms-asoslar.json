@@ -2,9 +2,9 @@
  "topic_id": "instr-03-gcms-asoslar",
  "source_lang": "uz",
  "title_i18n": {
-  "uz": "GX-MS da ishlash usullari: asoslar",
-  "ru": "GX-MS da ishlash usullari: asoslar",
-  "en": "GX-MS da ishlash usullari: asoslar"
+  "uz": "GC-MS da ishlash usullari: asoslar",
+  "ru": "GC-MS da ishlash usullari: asoslar",
+  "en": "GC-MS da ishlash usullari: asoslar"
  },
  "translation_status": {
   "uz": "source",
@@ -15,7 +15,7 @@
   {
    "id": "instr-03-gcms-asoslar-q01",
    "question_i18n": {
-    "uz": "GX-MS da MS qismi nima qiladi?"
+    "uz": "GC-MS da MS qismi nima qiladi?"
    },
    "options_i18n": {
     "uz": [
@@ -55,7 +55,7 @@
    },
    "correct_index": 1,
    "explanation_i18n": {
-    "uz": "GX-MS da odatiy elektron energiyasi 70 eV; kutubxonalar shu energiyada yozilgan."
+    "uz": "GC-MS da odatiy elektron energiyasi 70 eV; kutubxonalar shu energiyada yozilgan."
    },
    "source": {
     "author": "Shimadzu Corporation",
@@ -71,7 +71,7 @@
   {
    "id": "instr-03-gcms-asoslar-q03",
    "question_i18n": {
-    "uz": "Nega ko‘p GX-MS da aynan 70 eV ishlatiladi?"
+    "uz": "Nega ko‘p GC-MS da aynan 70 eV ishlatiladi?"
    },
    "options_i18n": {
     "uz": [
@@ -351,7 +351,7 @@
   {
    "id": "instr-03-gcms-asoslar-q13",
    "question_i18n": {
-    "uz": "GX-MS da 44, 72, 207, 221, 280, 323 m/z spektrlar qaysi modda uchun xarakterli?"
+    "uz": "GC-MS da 44, 72, 207, 221, 280, 323 m/z spektrlar qaysi modda uchun xarakterli?"
    },
    "options_i18n": {
     "uz": [
@@ -363,7 +363,7 @@
    },
    "correct_index": 3,
    "explanation_i18n": {
-    "uz": "Kitobga ko‘ra LSD GX-MS da 44, 72, 207, 221, 280, 323 m/z spektrlar hosil qiladi."
+    "uz": "Kitobga ko‘ra LSD GC-MS da 44, 72, 207, 221, 280, 323 m/z spektrlar hosil qiladi."
    },
    "source": {
     "author": "Yuldashev Z.O. va boshq.",
@@ -524,14 +524,14 @@
    "options_i18n": {
     "uz": [
      "Faqat YuQX",
-     "GX-MS va YuSSX-MS",
+     "GC-MS va YuSSX-MS",
      "Faqat UB-spektrofotometriya",
      "Faqat titrlash"
     ]
    },
    "correct_index": 1,
    "explanation_i18n": {
-    "uz": "Geroin va uning metabolitlari 6-monoasetilmorfin hamda morfin GX-MS va YuSSX-MS usullarida aniqlanadi."
+    "uz": "Geroin va uning metabolitlari 6-monoasetilmorfin hamda morfin GC-MS va YuSSX-MS usullarida aniqlanadi."
    },
    "source": {
     "author": "Yuldashev Z.O. va boshq.",
