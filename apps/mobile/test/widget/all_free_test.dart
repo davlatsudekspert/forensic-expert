@@ -291,9 +291,7 @@ void main() {
       expect(find.byType(ProLockCard), findsNothing);
     });
 
-    testWidgets('mashq testi: 5 savoldan keyin qulf (natija nuqtasi)', (
-      tester,
-    ) async {
+    testWidgets('mashq testi: bepulda butunlay qulfli', (tester) async {
       final big = StudyCatalogBuilder.build(
         knowledge: const ListKnowledgeRepository(<KnowledgeEntry>[]),
         library: TestLibrary([
@@ -303,25 +301,8 @@ void main() {
         guidelines: GuidelineBundle.empty,
       );
       await openStudy(tester, Routes.studyQuiz(otherDeck), cat: big);
-      expect(find.text('1-savol / 5 ta'), findsOneWidget);
-      Future<void> tapKey(String key) async {
-        final f = find.byKey(Key(key));
-        await tester.ensureVisible(f);
-        await tester.pumpAndSettle();
-        await tester.tap(f);
-        await tester.pumpAndSettle();
-      }
-
-      for (var n = 0; n < 5; n++) {
-        await tapKey('study.quiz.option.0');
-        await tapKey('study.quiz.check');
-        await tapKey('study.quiz.next');
-      }
-      expect(find.byKey(const Key('study.quiz.score')), findsOneWidget);
-      await tester.ensureVisible(
-        find.byKey(const Key('pro.lock.fullQuizBank')),
-      );
-      expect(find.byKey(const Key('pro.lock.fullQuizBank')), findsOneWidget);
+      expect(find.byKey(const Key('study.quiz.proLock')), findsOneWidget);
+      expect(find.byKey(const Key('study.quiz.option.0')), findsNothing);
     });
   });
 

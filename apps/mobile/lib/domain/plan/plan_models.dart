@@ -209,9 +209,12 @@ abstract final class ProCalculators {
   static bool isPro(String toolId) => ids.contains(toolId);
 }
 
+/// Bepul mashq/guruh chegaralari yo‘q (egasi qarori, 2026-10-24: hammasi Pro;
+/// 1 oylik sinov hammasini ochadi). Talabaning ustoz kodi bilan guruh testiga
+/// qo‘shilishi bepul.
 /// Talabaga bepul mashq savollari soni (har mavzudan).
-const freePracticeQuestions = 5;
+const freePracticeQuestions = 0;
 
 /// Ustozga bepul guruh testi: guruhlar soni va savollar soni.
-const freeGroupLimit = 1;
-const freeGroupTestQuestions = 10;
+const freeGroupLimit = 0;
+const freeGroupTestQuestions = 0;

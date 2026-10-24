@@ -1,5 +1,5 @@
-// Ustoz Pro: guruh testi — 1 guruh va 10 savol bepul, ko‘prog‘i qulfli.
-// Talabaning ustoz bergan testni yechishi va QR bilan qo‘shilishi — doim bepul.
+// Guruh testi: bepul chegara yo‘q (egasi qarori, 2026-10-24) — guruh yaratish
+// va test o‘tkazish Ustoz Pro; talabaning kirishi — Talaba Pro (1 oy sinov).
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -53,12 +53,10 @@ void main() {
     return w;
   }
 
-  testWidgets('bepul: 10 savol ochiq, 15 va 20 qulfli → Pro sahifasi', (
-    tester,
-  ) async {
+  testWidgets('bepul: hamma savol soni qulfli → Pro sahifasi', (tester) async {
     await openLessonTest(tester);
     await scrollTo(tester, const Key('grp.count.20'));
-    expect(lockOn('grp.count.10'), findsNothing);
+    expect(lockOn('grp.count.10'), findsOneWidget);
     expect(lockOn('grp.count.15'), findsOneWidget);
     expect(lockOn('grp.count.20'), findsOneWidget);
     await tester.tap(find.byKey(const Key('grp.count.20')));
@@ -81,7 +79,7 @@ void main() {
     await closeApp(tester);
   });
 
-  testWidgets('bepul: ikkinchi guruh qulfli (1 guruh bepul)', (tester) async {
+  testWidgets('bepul: yangi guruh qulfli (bepul guruh yo‘q)', (tester) async {
     await openLessonTest(tester);
     await scrollTo(tester, const Key('grp.lesson.newGroup'));
     expect(lockOn('grp.lesson.newGroup'), findsOneWidget);
@@ -91,9 +89,7 @@ void main() {
     await closeApp(tester);
   });
 
-  testWidgets('Guruhlar sahifasi: ikkinchi guruh yaratish qulfli', (
-    tester,
-  ) async {
+  testWidgets('Guruhlar sahifasi: guruh yaratish qulfli', (tester) async {
     final w = GroupsWorld.real();
     w.backend.create('teacher', 'Guruh A');
     await w.open(tester, uid: 'teacher', location: Routes.groups);
@@ -120,13 +116,33 @@ void main() {
     await closeApp(tester);
   });
 
-  testWidgets('talaba: guruhga qo‘shilish va test yechish — doim bepul', (
+  testWidgets('talaba (Pro’siz): guruhga qo‘shilish qulfli → Talaba Pro', (
     tester,
   ) async {
     final w = GroupsWorld.real();
     await w.open(tester, uid: 'student1', location: Routes.groupJoin);
+    expect(find.byKey(const Key('pro.lock.fullQuizBank')), findsOneWidget);
+    await closeApp(tester);
+  });
+
+  testWidgets('Ustoz Pro talabaga bepul ochmaydi; Talaba Pro ochadi', (
+    tester,
+  ) async {
+    final w = GroupsWorld.real();
+    await w.open(
+      tester,
+      uid: 'student1',
+      location: Routes.groupJoin,
+      extra: planOverrides(Plan.teacher),
+    );
+    expect(find.byKey(const Key('pro.lock.fullQuizBank')), findsOneWidget);
+    await w.open(
+      tester,
+      uid: 'student1',
+      location: Routes.groupJoin,
+      extra: planOverrides(Plan.student),
+    );
     expect(find.byType(ProLockCard), findsNothing);
-    expect(find.byIcon(Icons.lock_outline), findsNothing);
     await closeApp(tester);
   });
 }

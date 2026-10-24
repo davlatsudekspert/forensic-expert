@@ -10,8 +10,10 @@ import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
 import 'package:forensic_expert/core/settings/settings_controller.dart';
 import 'package:forensic_expert/domain/class_groups/class_groups_models.dart';
+import 'package:forensic_expert/domain/plan/plan_models.dart';
 
 import '../helpers/class_groups_world.dart';
+import '../helpers/pump_app.dart' show testDefaultPlan;
 
 AppLocalizations _l(WidgetTester tester) =>
     AppLocalizations.of(tester.element(find.byType(Scaffold).first));
@@ -61,6 +63,9 @@ void main() {
 
   testWidgets('iPhone: QR havola → taxallus (’) → test → natija, javoblar '
       'yopilgach ochiladi', (tester) async {
+    final prevPlan = testDefaultPlan;
+    testDefaultPlan = Plan.student;
+    addTearDown(() => testDefaultPlan = prevPlan);
     final w = GroupsWorld();
     final s = await _setup(w);
     await w.open(
@@ -107,6 +112,9 @@ void main() {
 
   testWidgets('faqat muddat (vaqt chegarasi yo‘q): «Muddat: …» sana, '
       'teskari sanoq yo‘q', (tester) async {
+    final prevPlan = testDefaultPlan;
+    testDefaultPlan = Plan.student;
+    addTearDown(() => testDefaultPlan = prevPlan);
     final w = GroupsWorld();
     final g = w.backend.create('teacher', 'Muddatli guruh').value!;
     w.backend.join('stu1', code: g.code!, nickname: 'Lola');
@@ -131,6 +139,9 @@ void main() {
       'talaba ko‘rinishida sinash — serverga hech narsa yuborilmaydi', (
     tester,
   ) async {
+    final prevPlan = testDefaultPlan;
+    testDefaultPlan = Plan.student;
+    addTearDown(() => testDefaultPlan = prevPlan);
     final w = GroupsWorld();
     final s = await _setup(w);
     await w.open(
@@ -160,6 +171,9 @@ void main() {
 
   testWidgets('yangi o‘rnatilgan ilova: QR → onboarding → kirish — taklif '
       'yo‘qolmaydi, oxirida qo‘shilish sahifasi ochiladi', (tester) async {
+    final prevPlan = testDefaultPlan;
+    testDefaultPlan = Plan.student;
+    addTearDown(() => testDefaultPlan = prevPlan);
     final w = GroupsWorld();
     final s = await _setup(w);
     final c = await w.open(tester, settings: const AppSettings());
@@ -197,6 +211,9 @@ void main() {
   testWidgets('aniq xatolar: 0/O/1/I kod, band taxallus, guruh to‘lgan', (
     tester,
   ) async {
+    final prevPlan = testDefaultPlan;
+    testDefaultPlan = Plan.student;
+    addTearDown(() => testDefaultPlan = prevPlan);
     final w = GroupsWorld();
     final s = await _setup(w, students: ['a1']);
     await w.open(tester, uid: 'stu1', location: Routes.groupJoin);

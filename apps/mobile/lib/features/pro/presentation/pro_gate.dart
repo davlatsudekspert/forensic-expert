@@ -158,6 +158,21 @@ class CourtPrepGate extends StatelessWidget {
   );
 }
 
+/// Talaba guruh/jonli testga kirishi — Talaba Pro (1 oylik sinov ochadi).
+/// Ustoz Pro talabaga bepul ochmaydi (egasi qarori, 2026-10-24).
+class StudentTestGate extends StatelessWidget {
+  const StudentTestGate({super.key, required this.child});
+
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) => ProGated(
+    feature: ProFeature.fullQuizBank,
+    title: AppLocalizations.of(context).classQuizTitle,
+    child: child,
+  );
+}
+
 /// «Ekspert ish daftari» — Mutaxassis Pro.
 class CasebookGate extends StatelessWidget {
   const CasebookGate({super.key, required this.child});

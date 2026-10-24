@@ -1302,11 +1302,19 @@ class _StudyQuizScreenState extends ConsumerState<StudyQuizScreen> {
         _selected = null;
         _checked = false;
       }
-      // Bepul: har mavzudan 5 ta mashq savoli, keyin qulf (Talaba Pro).
+      // Bepul mashq yo‘q: Talaba Pro kerak (1 oylik sinov ochadi).
       final all = _questions!;
       final capped = !_exam && !fullBank && all.length > freePracticeQuestions;
       final questions = capped ? all.take(freePracticeQuestions).toList() : all;
-      if (questions.isEmpty) {
+      if (capped && questions.isEmpty) {
+        body = const Padding(
+          padding: EdgeInsets.symmetric(vertical: FeSpace.md),
+          child: ProFeatureLock(
+            key: Key('study.quiz.proLock'),
+            feature: ProFeature.fullQuizBank,
+          ),
+        );
+      } else if (questions.isEmpty) {
         body = FeEmptyState(
           key: const Key('study.quiz.unavailable'),
           icon: Icons.quiz_outlined,

@@ -17,6 +17,7 @@ import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
 import 'package:forensic_expert/data/class_quiz/fake_class_quiz_service.dart';
 import 'package:forensic_expert/domain/class_quiz/class_quiz_models.dart';
+import 'package:forensic_expert/domain/plan/plan_models.dart';
 import 'package:forensic_expert/domain/ports/class_quiz_ports.dart';
 
 import '../helpers/pump_app.dart';
@@ -311,6 +312,9 @@ void main() {
   testWidgets('1b: talaba ekranida ball faqat natija ochilgach', (
     tester,
   ) async {
+    final prevPlan = testDefaultPlan;
+    testDefaultPlan = Plan.student;
+    addTearDown(() => testDefaultPlan = prevPlan);
     final w = _World();
     final s = await w.started();
     final cur = await w.current(s.id);
@@ -334,6 +338,9 @@ void main() {
   testWidgets(
     '4: talaba — polling xatosi oxirgi holatni saqlaydi, kichik belgi',
     (tester) async {
+      final prevPlan = testDefaultPlan;
+      testDefaultPlan = Plan.student;
+      addTearDown(() => testDefaultPlan = prevPlan);
       final w = _World();
       final s = await w.started();
       await _open(tester, as: w.student, location: Routes.classPlay(s.id));
@@ -358,6 +365,9 @@ void main() {
   testWidgets('4: hech holat kelmagan bo‘lsa — to‘liq xato ekrani', (
     tester,
   ) async {
+    final prevPlan = testDefaultPlan;
+    testDefaultPlan = Plan.student;
+    addTearDown(() => testDefaultPlan = prevPlan);
     final w = _World();
     final s = await w.started();
     w.student.fail = ClassFailure.offline;
@@ -423,6 +433,9 @@ void main() {
   testWidgets(
     'UX: talaba telefoni va proyektorda variant tartibi va harfi bir xil',
     (tester) async {
+      final prevPlan = testDefaultPlan;
+      testDefaultPlan = Plan.student;
+      addTearDown(() => testDefaultPlan = prevPlan);
       final w = _World();
       final s = await w.started();
       final serverOrder = [
@@ -462,6 +475,9 @@ void main() {
   testWidgets(
     '5: ilova qayta ochildi — tugagan sinf kodini kiritib natijaga o‘tadi',
     (tester) async {
+      final prevPlan = testDefaultPlan;
+      testDefaultPlan = Plan.student;
+      addTearDown(() => testDefaultPlan = prevPlan);
       final w = _World();
       final s = await w.started();
       await w.teacher.finish(s.id);

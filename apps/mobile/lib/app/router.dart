@@ -70,7 +70,7 @@ import '../features/onboarding/presentation/mode_screen.dart';
 import '../features/placeholder/presentation/not_found_screen.dart';
 import '../features/pro/presentation/analysis_plan_screen.dart';
 import '../features/pro/presentation/pro_gate.dart'
-    show CasebookGate, CourtPrepGate;
+    show CasebookGate, CourtPrepGate, StudentTestGate;
 import '../features/pro/presentation/pro_screen.dart';
 import '../features/pro/presentation/pro_search_screen.dart';
 import '../features/professional/presentation/account_choice_screen.dart';
@@ -384,8 +384,10 @@ final routerProvider = Provider<GoRouter>((ref) {
                           GoRoute(
                             path: 'join',
                             parentNavigatorKey: rootKey,
-                            builder: (c, s) => ClassJoinScreen(
-                              initialCode: s.uri.queryParameters['code'],
+                            builder: (c, s) => StudentTestGate(
+                              child: ClassJoinScreen(
+                                initialCode: s.uri.queryParameters['code'],
+                              ),
                             ),
                           ),
                           GoRoute(
@@ -403,8 +405,10 @@ final routerProvider = Provider<GoRouter>((ref) {
                           GoRoute(
                             path: 'play/:id',
                             parentNavigatorKey: rootKey,
-                            builder: (c, s) => ClassPlayScreen(
-                              sessionId: s.pathParameters['id']!,
+                            builder: (c, s) => StudentTestGate(
+                              child: ClassPlayScreen(
+                                sessionId: s.pathParameters['id']!,
+                              ),
                             ),
                           ),
                         ],
@@ -422,9 +426,11 @@ final routerProvider = Provider<GoRouter>((ref) {
                           GoRoute(
                             path: 'join',
                             parentNavigatorKey: rootKey,
-                            builder: (c, s) => GroupJoinScreen(
-                              initialCode: s.uri.queryParameters['code'],
-                              assignmentId: s.uri.queryParameters['a'],
+                            builder: (c, s) => StudentTestGate(
+                              child: GroupJoinScreen(
+                                initialCode: s.uri.queryParameters['code'],
+                                assignmentId: s.uri.queryParameters['a'],
+                              ),
                             ),
                           ),
                           GoRoute(
@@ -442,10 +448,12 @@ final routerProvider = Provider<GoRouter>((ref) {
                           GoRoute(
                             path: 'practice/:topic',
                             parentNavigatorKey: rootKey,
-                            builder: (c, s) => GroupTestScreen(
-                              groupId: '',
-                              assignmentId: '',
-                              practiceTopicId: s.pathParameters['topic'],
+                            builder: (c, s) => StudentTestGate(
+                              child: GroupTestScreen(
+                                groupId: '',
+                                assignmentId: '',
+                                practiceTopicId: s.pathParameters['topic'],
+                              ),
                             ),
                           ),
                           GoRoute(
@@ -499,9 +507,11 @@ final routerProvider = Provider<GoRouter>((ref) {
                               GoRoute(
                                 path: 't/:aid',
                                 parentNavigatorKey: rootKey,
-                                builder: (c, s) => GroupTestScreen(
-                                  groupId: s.pathParameters['gid']!,
-                                  assignmentId: s.pathParameters['aid']!,
+                                builder: (c, s) => StudentTestGate(
+                                  child: GroupTestScreen(
+                                    groupId: s.pathParameters['gid']!,
+                                    assignmentId: s.pathParameters['aid']!,
+                                  ),
                                 ),
                               ),
                               GoRoute(

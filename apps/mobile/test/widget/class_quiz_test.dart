@@ -235,6 +235,9 @@ void main() {
   testWidgets(
     'TO‘LIQ OQIM (talaba UI): kod → laqab → savol → natija → izoh+manba',
     (tester) async {
+      final prevPlan = testDefaultPlan;
+      testDefaultPlan = Plan.student;
+      addTearDown(() => testDefaultPlan = prevPlan);
       final w = _World();
       final session = (await w.teacher.createSession(
         topicId: 'demo-topic',
@@ -313,6 +316,9 @@ void main() {
   testWidgets('qo‘shilish: hisobsiz bo‘lsa avval kirish kartasi', (
     tester,
   ) async {
+    final prevPlan = testDefaultPlan;
+    testDefaultPlan = Plan.student;
+    addTearDown(() => testDefaultPlan = prevPlan);
     final w = _World();
     final strict = FakeClassQuizService(
       w.backend,
@@ -384,6 +390,9 @@ void main() {
   testWidgets('talaba savol ekrani 320 dp va qorong‘i rejimda overflowsiz', (
     tester,
   ) async {
+    final prevPlan = testDefaultPlan;
+    testDefaultPlan = Plan.student;
+    addTearDown(() => testDefaultPlan = prevPlan);
     final w = _World();
     final s = (await w.teacher.createSession(
       topicId: 'demo-topic',
@@ -408,6 +417,9 @@ void main() {
   testWidgets('deep link /join/<kod> qo‘shilish ekraniga olib boradi', (
     tester,
   ) async {
+    final prevPlan = testDefaultPlan;
+    testDefaultPlan = Plan.student;
+    addTearDown(() => testDefaultPlan = prevPlan);
     final w = _World();
     final c = await _open(tester, w, as: w.student, location: '/join/123456');
     expect(find.byKey(const Key('class.nickField')), findsOneWidget);

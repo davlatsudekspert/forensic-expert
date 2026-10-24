@@ -385,6 +385,8 @@ void main() {
   });
 
   group('talaba laqabi', () {
+    setUp(() => testDefaultPlan = Plan.student);
+    tearDown(() => testDefaultPlan = Plan.teacher);
     Future<void> openJoin(
       WidgetTester tester, {
       required bool signedIn,
@@ -698,6 +700,9 @@ void main() {
     testWidgets('tarjima kutilmoqda belgisi natijalarda (talaba)', (
       tester,
     ) async {
+      final prevPlan = testDefaultPlan;
+      testDefaultPlan = Plan.student;
+      addTearDown(() => testDefaultPlan = prevPlan);
       final w = World(
         topics: [lessonTopic('lesson-a', 10, translation: 'pending')],
       );

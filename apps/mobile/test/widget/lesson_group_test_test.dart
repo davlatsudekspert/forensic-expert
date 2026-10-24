@@ -96,6 +96,9 @@ void main() {
       '«Sinfda test» yo‘q; «O‘zim yechib ko‘rish» serverga yubormaydi', (
     tester,
   ) async {
+    final prevPlan = testDefaultPlan;
+    testDefaultPlan = Plan.student;
+    addTearDown(() => testDefaultPlan = prevPlan);
     final w = GroupsWorld.real();
     final g = w.backend.create('teacher', '4-kurs, 2-guruh').value!;
     await _openLesson(tester, w, _realTopic(w));
@@ -240,6 +243,9 @@ void main() {
 
   testWidgets('talaba: profil ismi taxallus maydonida avtomatik; o‘zgartirsa '
       'bo‘ladi; a’zo bo‘lgach qayta ism so‘ralmaydi', (tester) async {
+    final prevPlan = testDefaultPlan;
+    testDefaultPlan = Plan.student;
+    addTearDown(() => testDefaultPlan = prevPlan);
     final w = GroupsWorld.real();
     final g = w.backend.create('teacher', 'Guruh').value!;
     final a = (await w.backend.createAssignment(
