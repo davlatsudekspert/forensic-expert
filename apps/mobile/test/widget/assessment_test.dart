@@ -225,4 +225,46 @@ void main() {
     expect(find.text('Javob tez kunda qo‘shiladi'), findsOne);
     expect(_key('assessment.answer'), findsNothing);
   });
+
+  testWidgets('javob ekrani: eng uzun javoblar 320 px / 2.0 shrift / uch til / '
+      'qorong‘i rejimda xatosiz chiqadi', (tester) async {
+    // Har mutaxassislikdan eng ko‘p bandli javob.
+    final ids = <(String, String)>[];
+    for (final spec in ['sud_tib', 'pat_anat', 'sud_kimyo']) {
+      final answers =
+          (jsonDecode(_oral[spec]!) as Map<String, Object?>)['answers']!
+              as Map<String, Object?>;
+      String? best;
+      var n = -1;
+      for (final e in answers.entries) {
+        final len = ((e.value! as Map<String, Object?>)['p']! as List).length;
+        if (len > n) {
+          n = len;
+          best = e.key;
+        }
+      }
+      ids.add((spec, best!));
+    }
+    for (final (spec, id) in ids) {
+      for (final lang in ['uz', 'ru', 'en']) {
+        await pumpApp(
+          tester,
+          settings: completedSettings(lang: lang),
+          overrides: _overrides(),
+          size: const Size(320, 640),
+          textScale: 2,
+          platformBrightness: Brightness.dark,
+          initialLocation: Routes.assessmentQuestion(spec, id),
+        );
+        expect(_key('assessment.answer'), findsOne, reason: '$spec $lang');
+        expect(tester.takeException(), isNull, reason: '$spec $lang');
+        // Oxirigacha aylantirib chiqamiz — render xatosi bo‘lmasin.
+        final scroll = find.byType(Scrollable).first;
+        await tester.drag(scroll, const Offset(0, -6000));
+        await tester.pumpAndSettle();
+        expect(tester.takeException(), isNull, reason: '$spec $lang end');
+        await tester.pumpWidget(const SizedBox());
+      }
+    }
+  });
 }

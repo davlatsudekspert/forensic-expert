@@ -1,0 +1,12 @@
+# Qayta ishlash ro‘yxati (assembly’dan oldin)
+- pat_anat_07: c23.074 P0,P2; c23.075 P0; c23.076 P0 — «стадия прилива» noto‘g‘ri tarjima (qon quyilishi); to‘g‘risi «qon to‘lishi (giperemiya) davri». Auditor fix berdi; fix qayta ko‘rib chiqilib qabul qilinishi mumkin.
+- QABUL QILINDI: yuqoridagi 4 band auditor fix matni bilan (accept_wrong_fix.json): «прилив» — terminologik tarjima xatosi, fix iqtibos bilan mos.
+- pat_anat.c23.004: barcha 12 band OVERSTATED/weak (mashina tarjimasi TDTU/SamDTU) — qayta yozish kerak (asl o‘zbekcha/ruscha manba: kafedra tarixi, Sog‘liqni saqlash vazirligi hujjatlari).
+- pat_anat.c23.002: 7–9-bandlar (TDTU mashina tarjimasi) tushiriladi; amaldagi Prezident/VM qarorlari topilmagan (gap).
+- ASSEMBLY QOIDASI: source_quality == weak → tushiriladi; OVERSTATED + fix bo‘sh → tushiriladi; WRONG → tushiriladi (accept_wrong_fix.json dan tashqari); oral_exclude.json → tushiriladi; OVERSTATED + fix → fix matni.
+- ASSEMBLY TERMINOLOGIYA (matn almashtirish): «obkladochniy/obkladochnye» → «qoplovchi (parietal)»; «vorsinkali» → «vorsinkasimon (villyoz)»; «Surinkali» → «Surunkali»; «afterload» tarjimasi «zo‘riqish» → «keyingi yuklama». Assembly’da barcha oral matnlarni grep qilib tekshirish.
+- Terminologiya: «ярко-желтый» → «yorqin sariq (oxra-sariq)» (WRONG fix qabul qilindi: c23.102#2, c23.106#6); hujayra «ожирение» → «yog‘lanish (yog‘li distrofiya)», «semirish» emas; «HBcorAg» → «HBcAg».
+- ASSEMBLY MANBASI: matnni oral_out_* dan emas, auditdan o‘tgan oral_ver_in_* dan oling (indekslar shu faylga mos). Agent qoralamani audit'dan keyin o‘zgartirgan bo‘lishi mumkin (kimyo_08 agenti 05/06 ni qayta o‘qigan; tekshirildi — o‘zgarmagan).
+- EGASI TALABI (limit tejash): yangi Opus qoralama agentlari ishga TUSHIRILMAYDI; ishlayotganlar tugatiladi; keyingi auditlar Sonnet bilan; push yo‘q. Qolgan partiyalar: sud_tib 28–33, sud_kimyo 13–15, pat_anat 16–42 (egasi ruxsat berganda davom).
+- topic_ok == false bo‘lgan savol: javob butunlay tushiriladi («tez kunda»): sud_tib.c0.001, sud_tib.c0.007 (va keyingi auditlardagilar).
+- EGASI: «Sonnet qila olsa Sonnet da qil» — barcha qolgan agent ishlari (qoralama ham, audit ham) Sonnet bilan.

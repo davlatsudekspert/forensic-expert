@@ -1,0 +1,965 @@
+[
+ {
+  "id": "pat_anat.c23.001",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OVERSTATED",
+    "fix": "Patologik anatomiyani o‘rganish tuzilma va funksiyaning birligi va o‘zaro bog‘liqligi tamoyiliga asoslanadi; klinik-anatomik yo‘nalish — mahalliy (sovet/rus, «отечественная») patologik anatomiya maktabining o‘ziga xos belgisi.",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "9-band: «klinik-anatomik yo‘nalish» manbada umuman fanning emas, «отечественная» (sovet/rus) patologik anatomiyaning belgisi deyilgan",
+   "BSE (booksite.ru oynasi) — eskirgan ensiklopediya, weak"
+  ]
+ },
+ {
+  "id": "pat_anat.c23.002",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OVERSTATED",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 8,
+    "verdict": "OVERSTATED",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 9,
+    "verdict": "OVERSTATED",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "0–6-bandlar: lex.uz, SSV 2019-yil 25-yanvardagi 68-son buyrug‘i (ro‘yxat №3138), saqlangan matn 07.03.2026 dagi amaldagi tahrir (9-band 2026-yil 25-fevraldagi 9-son buyruq tahririda) — iqtiboslar aniq, amalda ekanligi tasdiqlangan",
+   "7–9-bandlar: patanatomy.med.tma.uz inglizcha sahifasi mashina tarjimasi ('Corus new clinics', 'Republican mortem Bureau'); 9-bandda '17 ta muassasa' ichiga Qozog‘iston ham kirgandek buzilgan matn — asl o‘zbekcha/ruscha manba kerak; sahifa sanasiz, hozirgi holat sifatida keltirilmasin",
+   "10–11-bandlar Strukov–Serov (sovet darsligi) — O‘zbekistonga xos emas, umumiy ahamiyat sifatida qabul qilinadi",
+   "Gaps: amaldagi Prezident/VM qarorlari va xizmat statistikasi yo‘q"
+  ]
+ },
+ {
+  "id": "pat_anat.c23.003",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 6,
+    "verdict": "OVERSTATED",
+    "fix": "Biopsiya (ko‘pincha takroriy) yordamida klinika jarayon dinamikasi, kasallik kechishi, davolash turini qo‘llashning maqsadga muvofiqligi va samaradorligi hamda dorilarning ehtimoliy nojo‘ya ta’siri haqida obyektiv ma’lumot oladi.",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "6-band: manbada «biopsiya, ko‘pincha takroriy» — matn faqat takroriy biopsiyaga toraytirgan",
+   "11-band: «barcha vafot etganlar yoriladi» — sovet darsligi qoidasi; «Darslikka ko‘ra» belgisi bor, O‘zbekistondagi amaldagi tartib (68-son Nizom) sifatida berilmasin"
+  ]
+ },
+ {
+  "id": "pat_anat.c23.004",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OVERSTATED",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 1,
+    "verdict": "OVERSTATED",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 2,
+    "verdict": "OVERSTATED",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 3,
+    "verdict": "OVERSTATED",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 4,
+    "verdict": "OVERSTATED",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 5,
+    "verdict": "OVERSTATED",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 6,
+    "verdict": "OVERSTATED",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 7,
+    "verdict": "OVERSTATED",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 8,
+    "verdict": "OVERSTATED",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 9,
+    "verdict": "OVERSTATED",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 10,
+    "verdict": "OVERSTATED",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 11,
+    "verdict": "OVERSTATED",
+    "fix": "",
+    "source_quality": "weak"
+   }
+  ],
+  "issues": [
+   "Barcha 0–10-bandlar patanatomy.med.tma.uz inglizcha mashina tarjimasidan ('SAGA', 'can translate', 'prozekturu UzMinzdrava'); fakt mazmuni iqtibosga mos, ammo manba sifati past — asl o‘zbekcha/ruscha versiya yoki nashr qilingan kafedra tarixi bilan almashtirish kerak",
+   "11-band: sammu.uz inglizcha sahifasi ham mashina tarjimasi ('Department ... 1931 was established in'); 1931-yil hujjati 'Government of the Republic of Uzbekistan' deb anaxronistik (O‘zSSR) — asl manba bilan tekshirilsin"
+  ]
+ },
+ {
+  "id": "pat_anat.c23.005",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "0–9-bandlar BSE (booksite.ru oynasi, 1970-yillar) — weak; ICD bandlari WHO — strong"
+  ]
+ },
+ {
+  "id": "pat_anat.c23.006",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "weak"
+   },
+   {
+    "i": 11,
+    "verdict": "OVERSTATED",
+    "fix": "Kasalliklar rivojlanishi mexanizmida shikastlanishga javob reaksiyalarining murakkab majmuasi kuzatiladi: ular tur yashashi uchun foydali, alohida shaxs uchun esa ifodalanganlik va davomiyligiga qarab ham foydali, ham zararli bo‘lishi mumkin.",
+    "source_quality": "weak"
+   }
+  ],
+  "issues": [
+   "11-band: «kasallikning biologik ahamiyati» sarlavhasi manbada yo‘q — manba shikastlanishga javob reaksiyalari haqida gapiradi",
+   "BSE bandlari weak"
+  ]
+ },
+ {
+  "id": "pat_anat.c23.007",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OVERSTATED",
+    "fix": "Parenximatoz distrofiyalarning morfogenetik mexanizmlari stereotip: infiltratsiya, transformatsiya, buzilgan (izdan chiqqan) sintez va dekompozitsiya (faneroz).",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "3-band: manbada mexanizmlar parenximatoz distrofiyalarga tegishli, matn umumlashtirgan"
+  ]
+ },
+ {
+  "id": "pat_anat.c23.008",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OVERSTATED",
+    "fix": "Kollikvatsion (nam) nekroz o‘lik to‘qimaning erishi va kista hosil bo‘lishi bilan tavsiflanadi; oqsilga nisbatan kambag‘al, suyuqlikka boy to‘qimalarda rivojlanadi, tipik nam nekroz bosh yoki orqa miyada uchraydi.",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "6-band: «oqsilga nisbatan kambag‘al» qualifier tushib qolgan"
+  ]
+ },
+ {
+  "id": "pat_anat.c23.009",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OVERSTATED",
+    "fix": "I.I. Mechnikov ta’limoti: yallig‘lanish — evolyutsiyada shakllangan moslashuv to‘qima-hujayra reaksiyasi; uning eng muhim ko‘rinishlaridan biri — mikrofag va makrofaglar tomonidan patogen omillarning fagotsitozi.",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "1-band: «одним из важнейших» → «eng muhim» deb kuchaytirilgan"
+  ]
+ },
+ {
+  "id": "pat_anat.c23.010",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "pat_anat.c23.011",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OVERSTATED",
+    "fix": "Bo‘g‘im bo‘shlig‘idagi suyuqlik harakatni cheklaydi, plevra bo‘shlig‘idagisi o‘pka kollapsiga (siqilishiga) olib keladi; yallig‘lanmagan o‘pka seroz ekssudat so‘rilgach yoki chiqarilgach yana yoziladi.",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "11-band: «yallig‘lanmagan o‘pka» qualifier tushib qolgan"
+  ]
+ },
+ {
+  "id": "pat_anat.c23.012",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": []
+ }
+]

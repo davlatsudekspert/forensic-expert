@@ -1,0 +1,765 @@
+[
+ {
+  "id": "sud_tib.c1.020",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "Points 0-7 describe blunt-object wounds in general (book section 'O‘tmas jismlardan yetkazilgan yaralar'), which covers lat yara; acceptable."
+  ]
+ },
+ {
+  "id": "sud_tib.c1.021",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OVERSTATED",
+    "fix": "Tashqi ta’sir manbaiga ko‘ra zo‘raki o‘lim xil bo‘yicha qotillik, o‘z-o‘zini o‘ldirish va baxtsiz hodisaga bo‘linadi."
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "Point 2: book p.59 is internally contradictory/OCR-damaged ('Nozo‘raki o‘lim turlarga bo‘linmaydi' vs next sentence 'Nozo‘raki o‘lim ... turlarga bo‘linadi'); drafter silently changed 'turlarga' to 'xillarga' — logically plausible but not literally supported; fix drops the nozo‘raki clause.",
+   "Point 11: '23 gradus' threshold is as printed in the book (not obviously OCR-damaged), kept OK."
+  ]
+ },
+ {
+  "id": "sud_tib.c1.023",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "Point 0: second clause (tashqaridan qo‘shilgan zahar kiritilmaydi) is on PDF page 11 continuation, not in the p.10 quote; supported by book text."
+  ]
+ },
+ {
+  "id": "sud_tib.c1.024",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_tib.c1.026",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "Point 5: 'destruktiv zaharlar guruhi' is not in the p.66 quote but is stated elsewhere in the same book (classification of destructive poisons: simob, qo‘rg‘oshin...); accepted."
+  ]
+ },
+ {
+  "id": "sud_tib.c1.027",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_tib.c1.028",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_tib.c1.029",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "Question text 'qayta layoqatini' is almost certainly an OCR/typo of 'hayotga layoqatini' (viability); the drafter's interpretation as viability of newborn (hayotga layoqatlilik) is sound and matches the book chapter, so topic_ok=true.",
+   "Points 5-8 (yetuklik/rasolik, gestatsion yosh) are supporting context rather than viability proper, but are tied to viability in the book (p.15)."
+  ]
+ },
+ {
+  "id": "sud_tib.c1.031",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_tib.c1.032",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_tib.c1.033",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_tib.c1.034",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "JPK article numbers for qayta/komissiyaviy ekspertiza are not given in the book (gap acknowledged); partial answer."
+  ]
+ }
+]

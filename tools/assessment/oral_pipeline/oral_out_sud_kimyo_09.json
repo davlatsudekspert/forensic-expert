@@ -1,0 +1,1020 @@
+[
+ {
+  "id": "sud_kimyo.c23.107",
+  "coverage": "partial",
+  "gaps": [
+   "formulasi (kitobda faqat rasm ko‘rinishida, matnda o‘qib bo‘lmaydi)",
+   "IQ-spektr ma’lumotlari (kitobda aminazinniki bilan bir xil raqamlar keltirilgan — shubhali, kiritilmadi)",
+   "metabolit nomi (kitobda «N-dimetilxlordiazepoksid» deb yozilgan — shubhali, kiritilmadi)"
+  ],
+  "points": [
+   {
+    "text": "Xlordiazepoksid — oq-sarg‘ish kristall kukun; sinonimlari: elenium, xlozepid, timazin, librium, dekadil, napoton, radedur.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 138,
+    "quote": "Xlordiazeopksid – oq-sarg‘ish kristall kukun bo‘lib, suvda yaxshi eriydi. Sinonimlari: elenium, xlozepid, timazin, librium, dekadil, napoton, radedur va b."
+   },
+   {
+    "text": "Xlordiazepoksid suvli muhitdan ishqoriy sharoitda organik erituvchilar bilan ekstraksiya qilinadi; metaboliti laktam neytral va kislotali sharoitda dietil efiri bilan olinadi. Biologik materialdan B.N. Izotov usulida ajratiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 138,
+    "quote": "Xlordiazepoksid suvli muhitda ishqoriy sharoitda organik erituvchilar yordamida ekstraksiya qilinadi. Uning metaboliti - laktam neytral va kislotali sharoitda dietil efiri bilan ekstraksiya qilinadi. Biologik materialdan B.N.Izotov usulida ajratib olinadi."
+   },
+   {
+    "text": "B.N. Izotov usuli (1,4-benzodiazepinlar uchun): maydalangan ob’ekt xlorid kislota bilan nordonlashtirilgan suvda (pH=2) 1 soat qoldiriladi, so‘ng suvli ajratma xloroform bilan ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 135,
+    "quote": "Usul mohiyati quyidagicha: maydalangan biologik ob’ekt xlorid kislotasi bilan nordonlashtirilgan suv (pH=2) solib 1 soatga qoldiriladi. Suvli ajratma quyib olinadi va xloroform bilan ekstraksiyalanadi."
+   },
+   {
+    "text": "Xloroform qavati tashlanadi, suvli qatlam pH=9–10 gacha ishqorlanib, dietil efir bilan 3 marta ekstraksiyalanadi; efirli ajralmalar bug‘latilib, qoldiq xloroformda eritiladi (Izotov usuli).",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 135,
+    "quote": "Xloroform qavati to‘kib tashlanadi, suvli qatlam pH=9-10 teng bo‘lguncha ishqor eritmasi qo‘shiladi va dietil efir bilan 3 qayta ekstraksiyalanadi. Efirli ajralmalar birlashtirilib, bug‘latiladi. Quruq qoldiq xloroformda eritiladi."
+   },
+   {
+    "text": "1,4-benzodiazepinlarni gidroliz mahsulotlari bo‘yicha tahlil qilish (B.N. Izotov, I.V. Volkova): 10 ml peshob (2 ml qon) ga 10 ml (2 ml) konsentrlangan xlorid kislota qo‘shilib, qaytar sovutgichli kolbada 1 soat suv hammomida qizdiriladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 134,
+    "quote": "tahlilini B.N. Izotov, I.V. Volkova va boshqalar taklif qilishgan. Buning uchun 10 ml peshob (2 ml qon) olib ustiga 10 ml (2 ml) konsentrlangan xlorid kislota quyib, qaytar sovutgich ulangan kolbada 1 soat davomida suv hammomida qizdiriladi."
+   },
+   {
+    "text": "Gidrolizdan so‘ng natriy gidroksid bilan pH=8–10 ga keltirilib, 10 ml xloroform bilan 2 marta ekstraksiyalanadi; organik qatlam bug‘latilib, qoldiq YuQX usulida tahlil qilinadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 135,
+    "quote": "eritmasi bilan rN=8-10 keltiriladi va 10 ml xloroform bilan 2 marta ekstraksiyalanadi. Organik qatlam ajratilib, bug‘latiladi. Qoldiq YuQX usulida tahlil qilinadi va modda aniqlanadi."
+   },
+   {
+    "text": "17-jadvalga ko‘ra, xlordiazepoksid gidrolizidan AXB hosil bo‘ladi; uning YuQX dagi Rf qiymati 0,35–0,37, UB-maksimumlari 238 va 390 nm.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 136,
+    "quote": "4 Xlordiazepoksid AXB 0,35-0,37 238, 390"
+   },
+   {
+    "text": "Sifat reaksiyalari: Vitali-Moren reaksiyasida xlordiazepoksid sariq rang, ningidrin bilan qo‘ng‘ir rangli mahsulot hosil qiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 139,
+    "quote": "2. Xlordizepoksidni Vitali-Moren reaksiyasi yordamida aniqlash mumkin. Bunda u reaksiya natijasida sariq rang hosil qiladi. 3. Ningidrin bilan xlordizepoksid qo‘ng‘ir rangli mahsulot hosil qiladi."
+   },
+   {
+    "text": "Marki reaktivi bilan sariq rangli aralashma, Frede reaktivi bilan qizil olov rangli mahsulot hosil qiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 139,
+    "quote": "4. Xlordizepoksidga Marki reaktivi qo‘shilganda sariq rangli aralashma hosil qiladi. 5. Frede reaktivi bilan esa xlordizepoksid qizil olov rangli mahsulot hosil qiladi."
+   },
+   {
+    "text": "YuQX: «silufol» plastinkasi, ammiakning 25% eritmasi – metil spirti va xloroformning 3:1 nisbatdagi aseton bilan aralashmasi (26:1,6:3,3); dog‘ Dragendorf reaktivi bilan aniqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 139,
+    "quote": "Xromatografik plastinka sifatida “silufol” plastinkasi va xromatografik sistema sifatida ammiakning 25%eritmasi - metil spirti va xloroformning 3:1 nisbatdagi aseton bilan aralashmasidan (26:1,6:3,3) foydalaniladi. Modda joylashgan o‘rnini aniqlash uchun Dragendorf reaktivi purkaladi."
+   },
+   {
+    "text": "UB-spektr: qoldiqning kislotadagi eritmasi λmax=246 nm va 308 nm, ishqordagi eritmasi 262 nm da maksimal nur yutadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 139,
+    "quote": "6. UB-spektrlari bo‘yicha aniqlash uchun qoldiq kislotada eritiladi va UF- spektri olinadi. Bunda u max=246nm (ε=1112), 308 nm; uning ishqordagi eritmasi esa 262 nm to‘lqin uzunligida maksimal nur yutadi."
+   },
+   {
+    "text": "Miqdor tahlili: ashyoviy dalildan ajratilgan xlordiazepoksid miqdori SF va FEK usullarida aniqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 139,
+    "quote": "Ashyoviy dalil namunalaridan ajratib olingan xlordiazepoksid miqdori SF, FEK usullarida aniqlanadi."
+   }
+  ],
+  "pages_read": [
+   133,
+   134,
+   135,
+   136,
+   137,
+   138,
+   139
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.108",
+  "coverage": "partial",
+  "gaps": [
+   "ayrim moddalarning (diprazin, galoperidol, droperidol) formulalari kitobda faqat rasm ko‘rinishida",
+   "fenotiazin yadrosining umumiy formulasi matnda berilmagan"
+  ],
+  "points": [
+   {
+    "text": "Fenotiazin (tiodifenilamin) avval antigelmint va antiseptik vosita sifatida ishlatilgan; 1945-yilda yadrodagi azotning vodorodi alkilaminoalkil radikallariga almashtirilib, kuchli biologik faol (ko‘pi neyroleptik) birikmalar sintezlangan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 119,
+    "quote": "1945 yilga kelib fenotiazin yadrosidagi azotda joylashgan vodorodni alkilaminoalkil radikallariga almashtirish bilan kuchli biologik faollikka ega bo‘lgan tibbiyot uchun zarur farmakologik xususiyatli birikmalar sintezlanadi. Ularning ko‘plari neyroleptik ta’sirga ega."
+   },
+   {
+    "text": "Kimyoviy tuzilishiga ko‘ra fenotiazin dori vositalari uch guruhga bo‘linadi: alifatik (aminazin, propazin, levomepromazin), piperazinli (meteperazin, etaperazin, triftazin, ftorfenazin) va piperidin hosilalari (tioredazin, peritsiazin).",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 119,
+    "quote": "1) alifatik hosilalari: aminazin, propazin, levomepromazin va boshqalar. 2) piperazinli hosilalari: meteperazin, etaperazin, triftazin, ftorfenazin va boshqalar. 3) piperidin hosilalari: tioredazin, peritsiazin va boshqalar."
+   },
+   {
+    "text": "Aminazin — 2-xlor-10-(3-dimetilaminopropil)-fenotiazin gidroxlorid; sinonimlari: xlorpromazin, xlorazin, largaktil, plegomazin.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 122,
+    "quote": "(2-xlor-10-(3-dimetilaminopropil)-fenotiazin gidroxlorid. Aminazinning xlorpromazin, xlorazin, largaktil, plegomazin va boshqa"
+   },
+   {
+    "text": "Aminazin oq yoki och qizg‘ish mayda kristall kukun, juda gigroskopik, quyosh nurida qoramtir rangga o‘tadi; suv, etil spirti va xloroformda yaxshi eriydi, dietil efirida deyarli erimaydi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 122,
+    "quote": "Aminazin oq yoki och qizg‘ish rangli mayda kristall kukun. Aminazin kukuni juda gigroskopik va quyosh nuri ta’sirida qoramtir rangga o‘tadi. Suv, etil spirti va xloroformda yaxshi erib, dietil efirida deyarli erimaydi."
+   },
+   {
+    "text": "Diprazin (pipolfen, prometazin) — oq kristall kukun, suv (1:60), etil spirti (1:9) va xloroformda (1:2) eriydi, dietil efirida deyarli erimaydi; ishqoriy muhitda organik erituvchilar bilan ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 125,
+    "quote": "Diprazin (pipolfen, prometazin, protazin...) oq kristall kukun, suv (1:60), etil spirti (1:9) va xloroformda (1:2) yaxshi eriydi, dietil efirida deyarli erimaydi. Preparat ishqoriy muhitda organik erituvchilar bilan ekstraksiyalanadi."
+   },
+   {
+    "text": "Tizersin (levomepromazin) — oq kristall kukun; etil spirti, dietil efiri, xloroformda yaxshi, suvda yomon eriydi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 128,
+    "quote": "Tizersin (levomepromazin, levopromozin, metatrimeprazin) oq kristall kukun, etil spirti, dietil efiri, xloroformda yaxshi, suvda yomon eriydi."
+   },
+   {
+    "text": "Narkologik ahamiyati: ayrim fenotiazin hosilalari giyohvand va gangituvchi moddalar ta’sirini kuchaytiradi, shu sababli aminazin, diprazin, tizersin toksikologik va narkologik ahamiyatga ega.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 120,
+    "quote": "Fenotiazin hosilalaridan ayrimlari giyohvand va gangituvchi moddalar ta’sirini kuchaytirish xususiyatiga ega. Shu sababli fenotiazin hosilalariga kiruvchi moddalardan aminazin, diprazin, tizersin va boshqalar toksikologik hamda narkologik ahamiyatga ega."
+   },
+   {
+    "text": "Fenotiazin hosilalari biologik ob’ektdan Ye.M. Salomatin ishlab chiqqan nordonlashtirilgan spirt usulida ajratiladi: ob’ekt oksalat kislotaning 10% spirtli eritmasi bilan 2 soat (3 marta) bo‘ktiriladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 120,
+    "quote": "Ular biologik ob’ektdan Ye.M.Salomatin ishlab chiqqan nordonlashtirilgan spirt usulida ajratib olinadi. Ob’ekt oksalat kislotasining 10% spirtli eritmasi bilan 2 soat (3 marotaba) bo‘ktiriladi."
+   },
+   {
+    "text": "Suvli eritma natriy gidroksidning 50% eritmasi bilan pH=13 gacha keltirilib, dietil efiri bilan 3 marta ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 120,
+    "quote": "Suvli eritmani muhiti natriy gidroksidning 50% eritmasi bilan rN=13 gacha keltiriladi va dietil efiri bilan 3 qayta ekstraksiyalanadi."
+   },
+   {
+    "text": "Ishqoriy muhitdan olingan efirli ekstraktdan fenotiazin hosilalari 0,5 M sulfat kislota bilan reekstraksiyalanib tahlil qilinadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 120,
+    "quote": "Ishqoriy muhitdan olingan efirli ekstraktdan fenotiazin hosilalari sulfat kislotaning 0,5 M eritmasi bilan (10, 10, 10, 5 ml) reekstraksiyalab ajratiladi va tahlil qilinadi."
+   },
+   {
+    "text": "Qon va peshobdan ajratishda olingan ishqoriy gidrolizat uy haroratigacha sovutilib, 3% izoamil spirti saqlagan n-geptan aralashmasi bilan ikki marta (20 ml) ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 121,
+    "quote": "hammomida qizdiriladi. Olingan gidrolizat uy haroratigacha sovitilib, ikki qayta (20 ml) 3% izoamil spirti saqlagan n-geptan aralashmasi bilan ekstraksiyalanadi."
+   },
+   {
+    "text": "Peshobni dastlabki tekshirish: 1 ml peshobga sulfat kislota (10%) va temir(III) xlorid (5%) aralashmasidan iborat reaktiv qo‘shilganda fenotiazin hosilalari to‘q qizil-pushti rang beradi; rang hosil bo‘lmasa, fenotiazin hosilalari yo‘q deb xulosa qilish mumkin.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 120,
+    "quote": "1-usul. 1 ml peshobga 60 ml sulfat kislotaning 10 % eritmasi va 20 ml temir (III) xloridining 5% eritmasi aralashmasidan tarkib topgan reaktivdan 1 ml qo‘shiladi. Fenotiazin va uning hosilalariga kiruvchi moddalar bo‘lsa to‘q-qizil- pushti rang hosil bo‘ladi."
+   }
+  ],
+  "pages_read": [
+   119,
+   120,
+   121,
+   122,
+   123,
+   124,
+   125,
+   126,
+   127,
+   128,
+   129,
+   130,
+   131
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.109",
+  "coverage": "partial",
+  "gaps": [
+   "formulasi (matnda berilmagan)",
+   "suyuqlanish harorati va UB-maksimum (matn va jadval ma’lumotlari mos kelmaydi — kiritilmadi)",
+   "Marki reaktivi bilan rangi (matn va jadvalda turlicha — kiritilmadi)"
+  ],
+  "points": [
+   {
+    "text": "Dionin — etilmorfin gidroxloridi; opiy va omnopon tarkibida uchramaydi, yarim sintetik yo‘l bilan — morfinga etil spirtini biriktirib olinadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 35,
+    "quote": "Dionin - etil morfin gidroxloridi opiy va omnopon tarkibida uchramaydi, uni yarim sintetik yo‘l bilan, morfinga etil spirtini biriktirib olinadi."
+   },
+   {
+    "text": "Kimyoviy toza dionin — prizma shaklidagi rangsiz, hidsiz, achchiq ta’mli tiniq kristallar; suv (1:12) va etil spirtida yaxshi, organik erituvchilarda yomon eriydi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 35,
+    "quote": "Kimyoviy toza dionin prizma shakldagi rangsiz, hidsiz, achchiq ta’mli, tiniq kristallardan iborat. Uning suyuqlanish harorati 93S. Suv (1:12) va etil spirtida yaxshi erib, organik erituvchilarda yomon eriydi."
+   },
+   {
+    "text": "Narkologik ahamiyati: dionin ta’siri kodeinga o‘xshash; kodein singari yo‘talni davolashda va oftalmologiyada tomchi va surtma dori sifatida qo‘llaniladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 35,
+    "quote": "Narkologik ahamiyati. Dionin ta’siri kodeinga o‘xshash. U ham xuddi kodein singari yo‘talni davolashda va oftalmologiyada tomchi hamda surtma dorilari sifatida qo‘llaniladi."
+   },
+   {
+    "text": "Dionin analgetik ta’siri jihatidan kodeinni eslatadi, giyohvand ta’sirga ega emas; organizmga zaharli ta’siri kodeinnikidan yuqori, bir martalik yuqori dozasi 0,03 g.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 35,
+    "quote": "Analgetik ta’siri jihatidan kodeinni eslatadi, giyohvand ta’sirga ega emas. Dioninning organizmga zaharli ta’siri kodeinga qaraganda yuqori. Uning bir marotaba qabul qilinishi mumkin bo‘lgan yuqori dozasi 0,03 g ga teng."
+   },
+   {
+    "text": "Metabolizmi kodeinga o‘xshash. Biologik ob’ektdan nordonlashtirilgan suv yoki spirt yordamida ajratiladi; suvli ajralmalardan ishqoriy muhitda organik erituvchilar bilan yaxshi ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 35,
+    "quote": "Metabolizmi kodeinga o‘xshash. Biologik ob’ektdan nordonlashtirilgan suv yoki spirt yordamida ajratib olinadi. Suvli ajralmalardan dionin ishqoriy muhitda organik erituvchilar bilan yaxshi ekstraksiyalanadi."
+   },
+   {
+    "text": "Dionin alkaloidlarning umumiy cho‘ktiruvchi reaktivlari bilan kodeinga o‘xshash cho‘kmalar beradi; Frede reaktivi (ammoniy molibdatning konsentrlangan sulfat kislotadagi eritmasi) bilan iflos ko‘k rang hosil qiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 35,
+    "quote": "Dionin cho‘kma hosil qiluvchi reaktivlar bilan kodeinga o‘xshash cho‘kmalar hosil qiladi. 2. Frede reaktivi bilan reaksiyasi. Molibdat ammoniyning konsentrlangan sulfat kislotadagi eritmasi bilan dionin iflos ko‘k rang hosil qiladi."
+   },
+   {
+    "text": "Dionin morfindan farqli ravishda temir(III) xlorid bilan rang hosil qilmaydi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 35,
+    "quote": "Dionin morfindan farqli ravishda Temir (III) - xlorid bilan rang hosil qilmaydi."
+   },
+   {
+    "text": "Ishqoriy muhitdan olingan xloroformli ekstrakt qoldig‘iga 0,1 M xlorid kislota va simob(II) xloridning 5% eritmasi tomizilsa, mikroskopda rangsiz yupqa prizmalar shaklidagi kristallar ko‘rinadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 35,
+    "quote": "Buyum oynachasida ishqoriy muhitdan olingan xloroformli ekstraktni porlatilib qolgan quruq qoldiqqa 0,1 M xlorid kislotasi va simob (II) xloridining 5% eritmasidan tomizilib, biroz vaqt o‘tgach mikroskop yordamida ko‘rilsa rangsiz yupqa prizmalar shaklidagi kristallar hosil qiladi."
+   },
+   {
+    "text": "IQ-spektr: kaliy bromid bilan tayyorlangan plastinkasi 1064, 1045, 1129, 1499, 1185, 1264 sm-1 sohalarda yutilish beradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 35,
+    "quote": "7. IQ- spektrlari bo‘yicha aniqlash. Dioninni kaliy bromid bilan tayyorlangan -1 plastinkasi 1064, 1045, 1129, 1499, 1185, 1264 sm nur yutish sohasida hosil qilgan yutilishlar bilan identifikatsiya qilinadi."
+   },
+   {
+    "text": "Miqdori: ajratib olingan dionin 0,2 n sulfat kislotadagi eritmada UB-spektrofotometrik usulda, shuningdek GSX va YuSSX usullarida aniqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 36,
+    "quote": "Miqdorini aniqlash: 1. Biologik ob’ektdan ajratib olingan dionin miqdorini aniqlash uchun uni 0,2 n sulfat kislotadagi eritmasini UB spektrofotometrik usulda aniqlanadi. 2. Dioninni miqdorini GSX va YuSSX usullarda aniqlanishi ham mumkin."
+   },
+   {
+    "text": "Dionin to‘liq kimyo-toksikologik tahlilda tekshiriladigan alkaloidlar ro‘yxatiga kiradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 94,
+    "quote": "Alkaloidlar: morfin, kodеin, dionin, gеroin, gidrokodon, papavеrin, strixnin, atropin, giostsiamin, skopolamin, kokain, paxikarpin, anabazin, nikotin, xinin."
+   }
+  ],
+  "pages_read": [
+   28,
+   29,
+   32,
+   33,
+   34,
+   35,
+   36,
+   94
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.111",
+  "coverage": "partial",
+  "gaps": [
+   "formulasi (matnda faqat rasm parchalari)",
+   "ichki a’zolardan ajratib olishning kokainga xos tartibi (faqat umumiy usul tilga olinadi)",
+   "o‘ldiruvchi doza (kitobda ikki xil qiymat — kiritilmadi)"
+  ],
+  "points": [
+   {
+    "text": "Kokain koka o‘simligi bargidan 1859-yilda Albert Nieman tomonidan ajratib olingan, 1902-yilda sintez qilingan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 54,
+    "quote": "Kokain koka o‘simligi bargidan 1859 yilda Gottingem universitetida Albert Nieman (Albert Niemann) tomonidan ajratib olingan, 1902 yilda sintez qilib olingan."
+   },
+   {
+    "text": "Kokain gidroxlorid — oq kristall kukun, odatda hidsiz, katta rangsiz kristallar holida ham uchraydi; undagi kokain miqdori 80–90%.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 55,
+    "quote": "Kokain gidroxlorid – oq kristall kukun (chow), odatda hidsiz, katta rangsiz kristallar (rock) holida uchraydi. Qon tomirga yuborish yoki kokain asosini olish uchun ishlatiladi. Kokain gidroxloridda kokain miqdori- 80-90% tashkil qiladi."
+   },
+   {
+    "text": "Yarim chiqish davri: kokain — 38–67 daqiqa, benzoilekgonin — 4–6 soat, metilekgonin — 2,5–7,6 soat.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 56,
+    "quote": "Kokainning yarim chiqish davri – 38 – 67 daqiqani, benzoilekgoninniki – 4 – 6 soatni, metilekgoninniki - 2,5 – 7,6 soatni tashkil qiladi."
+   },
+   {
+    "text": "Metabolizmi: bir martalik dozaning 90–95% 2–3 kun ichida peshob bilan chiqadi — o‘zgarmagan kokain (1–9%), asosan benzoilekgonin (35–60%), metilekgonin (32–49%), ekgonin (1–8%), norkokain va gidroksillangan metabolitlar (10% gacha).",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 56,
+    "quote": "Kokainni bir martalik dozasining 90 – 95% peshob orqali 2 – 3 kun davomida kokain (1-9%), asosan metabolitlar benzoilekgonin (35-60%), metilekgonin (32- 49%), ekgonin (1-8%), norkokain i gidroksillangan metabolitlar (10%gacha) holida chiqariladi"
+   },
+   {
+    "text": "Angidroekgoninning metil efiri aniqlanishi krek yoki kokain asosi chekilganidan dalolat beradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 56,
+    "quote": "Angidroekgoninning metil efirini aniqlash esa krek yoki kokain asosi chekilganidan dalolat beradi."
+   },
+   {
+    "text": "Biologik suyuqliklardan (qon, peshob) kokain ishqoriy muhitda (pH=7,0–8,5) xloroform bilan yaxshi ekstraksiyalanadi, qisman kislotali muhitda ham o‘tadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 58,
+    "quote": "Kokain biologik suyuqliklardan (qon, peshob va b.) ishqoriy muhitda (rN=7,0- 8,5) xloroform bilan yaxshi ekstraksiyalanadi. U qisman kislotali muhitda ham ekstraksiyalanadi."
+   },
+   {
+    "text": "Kokain to‘liq tahlilda tekshiriladigan alkaloidlar qatorida; ushbu moddalar ob’ektdan nordonlashtirilgan suv va nordonlashtirilgan spirt yordamida ajratib olinadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 94,
+    "quote": "Yuqorida kеltirilgan birikmalar asosan kristall holatdagi dorivor moddalar bo’lib, ular ob'еktdan nordonlashtirilgan suv va nordonlashtirilgan spirt yordamida ajratib olinadi."
+   },
+   {
+    "text": "Sifat reaksiyalari: umumiy cho‘ktiruvchi reaktivlar (Mayer, Bushard, Dragendorf, pikrin kislota) bilan amorf cho‘kmalar; kaliy permanganat va xlorid kislota ishtirokida to‘g‘ri to‘rtburchak shaklidagi qizil-binafsha kristallar.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 58,
+    "quote": "1. Alkaloidlarni umumiy cho‘ktiruvchi reaktivlar (Maer, Bushard, Dragendorf, pikrin kislotasi) bilan kokain asosan amorf cho‘kmalar hosil qiladi. 2. Kokain kaliy permanganat va xlorid kislota ishtirokida to‘g‘ri to‘rt burchak shaklidagi qizil binafsha rangli kristallar hosil qiladi."
+   },
+   {
+    "text": "Skott reaksiyasi: kobalt tiotsianatning 2% eritmasi va glitserin aralashmasi bilan ko‘k rang; xlorid kislota qo‘shilsa rang o‘chadi, so‘ng xloroform qo‘shilsa, u to‘q ko‘k rangga bo‘yaladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 58,
+    "quote": "kobalt tiotsionatning 2% eritmasi va 96% glitserin (1:1) aralashmasi qo‘shiladi. Kokain bo‘lsa, ko‘k rang xosil bo‘ladi. Aralashma ustiga 1-2 tomchi konsentrlangan xlorid kislota qo‘shilsa rang o‘chadi. So‘ngra bir necha tomchi xloroform qo‘shilsa, u to‘q ko‘k rangga bo‘yaladi."
+   },
+   {
+    "text": "Kokainning gidrolizlanish mahsulotidan o‘ziga xos hidli benzoy etil efiri hosil qilish mumkin.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 58,
+    "quote": "4. Kokainning gidrolizlanish mahsuloti bilan o‘ziga xos hidli benzoy etil efirini hosil qilish mumkin."
+   },
+   {
+    "text": "YuQX: Rf×100 qiymatlari kokain uchun 81 (№1), 59 (№2), 56 (№3) sistemalarda; benzoilekgonin uchun esa 0 (№1), 25 (№2), 0 (№3).",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 59,
+    "quote": "Kokain 81 59 56 Ekgonin 0 84 0 Metilekgonin 61 65 44 Benzoilekgonin 0 25 0"
+   },
+   {
+    "text": "Miqdor tahlili: namuna eritmasining UB-spektridagi 234 nm optik zichligi bo‘yicha kokain gidroxlorid konsentratsiyasi kalibrlash chizig‘idan topiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 59,
+    "quote": "UB spektrdan 234 nm dagi optik zichligi aniqlanadi va kokain gidroxloridning konsentratsiyasi (S, g) kalibrlash chizig‘i yordamida topiladi."
+   }
+  ],
+  "pages_read": [
+   54,
+   55,
+   56,
+   57,
+   58,
+   59,
+   60,
+   94
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.112",
+  "coverage": "partial",
+  "gaps": [
+   "ajratib olishning ahamiyati kitobda alohida ta’rif sifatida bayon etilmagan — quyidagi fikrlar usullarning nazariy asoslaridan olingan"
+  ],
+  "points": [
+   {
+    "text": "Qutbli erituvchilar yordamida ajratiladigan guruhga kimyoviy tuzilishi xilma-xil birikmalar kiradi: organik kislotalar, ko‘p atomli fenollar, polinitrobirikmalar, anilin, p-aminobenzoy kislota hosilalari, barbituratlar, alkaloidlar, azot saqlovchi sintetik birikmalar.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 94,
+    "quote": "Organik kislotalar, ko’p atomli fеnollar, polinitrobirikmalar, anilin, para-aminobеnzoy kislotasi hosilalari, barbituratlar, alkaloidlar, azot saqlovchi sintеtik birikmalar va boshqalar."
+   },
+   {
+    "text": "Toksikologik kimyo tahlilida organik zaharli moddalarni ajratib olish uchun nordonlashtirilgan spirt va nordonlashtirilgan suv usullari qo‘llaniladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 94,
+    "quote": "Toksikologik kimyo tahlilida organik zaharli moddalarni ajratib olish uchun nordonlashtirilgan spirt va nordonlashtirilgan suv usullari qo’llaniladi."
+   },
+   {
+    "text": "Kislotali sharoitda barbiturat va alkaloidlar molekuladagi azot atomi hisobiga tuz hosil qilib, suvli va spirtli eritmaga o‘tadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 94,
+    "quote": "Kislotali sharoitda barbiturat va alkaloidlar molеkuladagi azot atomi hisobiga tuzlar hosil qiladi hamda suvli va spirtli eritmaga o’tadilar."
+   },
+   {
+    "text": "Organizmda alkaloidlar gidroliz, oksidlanish, qaytarilish jarayonlarida o‘zgarishga uchrashi va oqsillar bilan suvda erimaydigan komplekslar hosil qilishi mumkin — bu ajratib olish usulini yaratishda hisobga olingan.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 96,
+    "quote": "a) Bu usul yaratilishida yo’llanma sifatida alkaloidlarni organizmdagi gidrolizlanish, oksidlanish, qaytarilish jarayonlari ta'sirida o’zgarishlarga uchrashi, hamda oqsillar bilan birikib, suvda erimaydigan komplеkslar hosil bo’lishi mumkinligi hisobga olindi."
+   },
+   {
+    "text": "Tirik organizmda pH 7,3–7,5, murdada esa 6,2 atrofida bo‘lgani uchun alkaloidlar organizmda asosan (oqsillar bilan) birikkan holda bo‘ladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 96,
+    "quote": "Tirik organizmda pH-7,3-7,5; murda organizmida esa 6,2 atrofida bo’lishini nazarda tutib, organizmda alkaloidlar asosan birikkan holda bo’lishi o’z-o’zidan ayon bo’ladi."
+   },
+   {
+    "text": "Shu sababli alkaloidlarni ajratishda ular hosil qilgan komplekslarni parchalash uchun pH-muhitini o‘zgartirish kerak; pH 2,5–3 da bunga erishiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 96,
+    "quote": "Shuning uchun alkaloidlarni ajratib olishda, ular hosil qilgan komplеkslarni parchalash maqsadida, pH-muhitini o’zgartirish talab etiladi. pH-2,5-3 bo’lganda bu maqsadga erishiladi"
+   },
+   {
+    "text": "Zaharli, narkotik va gangituvchi moddalarni ob’ektdan to‘liqroq ajratish uchun ularning organik erituvchilarda eruvchanligi va organik qatlamga ekstraksiyalanish darajasini inobatga olish lozim.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 89,
+    "quote": "Zaharli, narkotik va gangituvchi moddalarni ob'еktlardan to’liqroq ajratib olish uchun ularning organik erituvchilarda eruvchanlik xususiyatlari va eritmalardan organik qatlamga ekstraktsiyalanish darajalarini inobatga olish lozim."
+   },
+   {
+    "text": "Qutbli erituvchilar bilan olingan ajralmalarda ajratilgan modda bilan birga oqsillar, aminokislotalar, yog‘ va lipidlar kabi yot moddalar bo‘ladi va ular tahlilga halaqit beradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 92,
+    "quote": "Ular tarkibida ajratilgan modda bilan bir qatorda ekstraktsiyalangan oqsillar, aminokislotalar, yog’ va lipidlar kabi yot moddalar bo’lib, ular tahlil olib borishda halaqit bеradi."
+   },
+   {
+    "text": "Yot moddalar reaktivlar bilan tekshiriluvchi moddaga o‘xshash mahsulot berishi va miqdor tahliliga salbiy ta’sir ko‘rsatishi mumkin; shuning uchun ekstraktlar tozalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 92,
+    "quote": "Ayrim hollarda esa ular rеaktivlar bilan tеkshiriluvchi modda kabi rеaktsiya mahsulotlarini hosil qilishi, hamda miqdori tahlilda ham salbiy ta'sir ko’rsatishi mumkin. Shuning uchun bunday moddalarni yo’qotish maqsadida ekstraktlar tozalanadi."
+   },
+   {
+    "text": "Sud kimyogari qaysi usulni qo‘llamasin, tekshiruvni biomaterialdan ajratilgan ikki xloroformli eritma bilan olib boradi: biri — kislotali muhitda suvli eritmadan organik erituvchiga o‘tgan moddalar, ikkinchisi — ishqoriy muhitda o‘tadigan moddalar.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 93,
+    "quote": "Bulardan biri - kislotali muhitda suvdagi eritmadan organik erituvchi yordamida ajratib olingan zaharli moddalar va ikkinchisi ishqoriy muhitda organik erituvchi qavatiga o’tadigan moddalardir."
+   },
+   {
+    "text": "Kislotali sharoitda olingan ajralma barbituratlar, neytral moddalar (fenatsetin), organik kislotalar (salitsil va pikrin kislotasi) va kuchsiz asos xossali alkaloidlarga (kofein, teobromin, teofillin, papaverin, narkotin, strixnin) tekshiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 97,
+    "quote": "Kislotali sharoitda olingan ajralma barbituratlar, nеytral moddalar (fеnatsеtin), organik kislotalar (salitsil va pikrin kislotasi), kuchsiz asos xossali alkaloidlar (kofеin, tеobromin, tеofеllin, papavеrin, narkotin, strixnin) uchun tеkshiriladi."
+   },
+   {
+    "text": "Ishqoriy sharoitda olingan ajralmadan alkaloidlar va ularning sintetik analoglari tekshiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 97,
+    "quote": "Ishqoriy sharoitda olingan ajralmadan alkaloidlar va ularni sintеtik analoglar tеkshiriladi."
+   }
+  ],
+  "pages_read": [
+   89,
+   92,
+   93,
+   94,
+   95,
+   96,
+   97
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.113",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Nordonlashtirilgan spirt usulini 1851-yilda belgiyalik olim J.S. Stas alkaloidlarni sud kimyosi ob’ektlaridan ajratish uchun tavsiya etgan; usul alkaloidlarning tuz holida spirtda yaxshi erishiga asoslanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 94,
+    "quote": "Nordonlashtirilgan spirt usuli 1851 yilda Bеlgiyalik olim J.S.Stas tomonidan alkaloidlarni sud kimyosi ob'еktlaridan ajratib olish maqsadida tavsiya etilgan. Bunda muallif alkaloidlarni tuz holida spirtda yaxshi erishini asos qilib oladi."
+   },
+   {
+    "text": "Stas usulida ob’ekt ustiga quyiladigan etil spirti oksalat yoki vino kislotasi bilan nordonlashtirilgan, olingan ajralma esa yot moddalardan tozalanmagan holda qo‘llanilgan.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 94,
+    "quote": "Bu usulda ob'еkt ustiga quyiladigan etil spirti oksalat yoki vino kislotasi bilan nordonlashtirilib, olingan ajralma yot moddalardan tozalanmagan holda qo’llanilgan."
+   },
+   {
+    "text": "1856-yilda F. Otto bu usulga o‘zgartirish kiritib, spirtli ajralmani tozalashni taklif etgan va usul Stas-Otto usuli deb atala boshlagan.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 94,
+    "quote": "1856 yilda F.Otto bu usulga o’zgartirish kiritdi va spirtli ajralmani tozalashni taklif etdi va usul Stas-Otto usuli dеb yuritila boshladi."
+   },
+   {
+    "text": "Stas-Otto (nordonlashtirilgan spirt) usulida biomaterial bir necha marta oksalat kislotasi bilan nordonlashtirilgan etil spirtida bo‘ktirilib, 1 sutkaga qoldiriladi; spirtli eritmalar birlashtirilib, oz miqdor spirt qolguncha 35°C da bug‘latiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 95,
+    "quote": "Bu usulda biomatеrial bir nеcha marta oksalat kislotasi yordamida nordonlashtirilgan etil spirti bilan bo’ktirilib, 1 sutkaga qoldiriladi. Spirtli eritmalarni ajratib olinib, umumlashtiriladi va oz miqdorda spirt qolguncha 35°C haroratda bug’latiladi."
+   },
+   {
+    "text": "Hosil bo‘lgan sirop holidagi ajralmaga yot va oqsil moddalarni cho‘ktirish uchun 96% etil spirti qo‘shiladi va bu yot moddalar to‘liq cho‘kkuncha takrorlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 95,
+    "quote": "Olingan sirop holidagi spirtli ajralmaga yot va oqsil moddalarni cho’ktirish maqsadida, 96% etil spirti qo’shiladi. Bu holat yot moddalar to’liq cho’ktirib bo’linguncha takrorlanadi."
+   },
+   {
+    "text": "Spirtli eritmada oqsil va yot moddalar cho‘ktirilgach, u iliq suv bilan suyultiriladi, kerak bo‘lsa filtrlanadi va dietil efiri bilan 3 marta ekstraksiyalanadi; efirga spirt bilan cho‘kmagan yot moddalar o‘tadi va efir qatlami tashlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 95,
+    "quote": "iliq suv bilan suyultiriladi va zarur bo’lsa filtrlanadi hamda dietil efiri bilan 3 qayta ekstraktsiyalanadi, Bunda efir qatlamiga spirt bilan cho’kmagan yot moddalar erib o’tadi. Efir qatlam tashlab yuboriladi."
+   },
+   {
+    "text": "Nordon eritma ammiak yoki natriy bikarbonat bilan ishqoriy muhitga keltirilib, efir bilan 3 marta ekstraksiyalanadi va ajralmadan alkaloidlar tekshiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 95,
+    "quote": "Olingan nordon spirtli eritma ammiak yoki natriy bikarbonat eritmasi bilan ishqoriy muhitga kеltiriladi va efir bilan 3 qayta ekstrtsiyalanib, ajralmadan alkaloidlar tеkshiriladi."
+   },
+   {
+    "text": "Stas-Otto usulining kamchiliklari: uzoq vaqt talab qiladi, sezgirligi past, qimmatbaho erituvchi — spirt kerak, natijalar o‘zgaruvchan.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 95,
+    "quote": "Usul kamchiliklari: uzoq vaqt talab qiladi, sеzgirligi past, qimmatbaho erituvchi spirt kеrak va natijalar o’zgaruvchan."
+   },
+   {
+    "text": "Stas-Otto usulining afzalligi: chirigan ob’ektdan moddalarni ajratish mumkin, chunki tozalash spirt ishtirokida olib borilgani uchun ekstraksiyada deyarli emulsiya hosil bo‘lmaydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 95,
+    "quote": "Usulning qulayliklari: chirigan ob'еktdan moddalarni ajratib olish mumkin, chunki tozalash spirt ishtirokida olib borilganligi sababli ekstraktsiya jarayonida dеyarli emulsiya hosil bo’lmaydi."
+   },
+   {
+    "text": "V.F. Kramarenko usuli asosida Stas-Otto usuliga ham mo‘tadil sharoitlar tatbiq etilgan: hozir ob’ekt qutbli erituvchilar bilan pH 2,5–3,0 da ajratilgach, alkaloidlar suvli ajralmadan pH 9 da ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 96,
+    "quote": "Shu sababli hozirgi vaqtda organik zaharli moddalarni Stas-Otto, A.A.Vasilеva va V.F.Kramarеnko usullari asosida ob'еktni qutbli erituvchilar bilan pH- muhiti 2,5-3,0 ga kеltirilib ajratib olingach, suvli ajralmadan alkaloidlar pH-9 da ekstraktsiyalab olinadi."
+   }
+  ],
+  "pages_read": [
+   94,
+   95,
+   96,
+   97,
+   232,
+   233
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.114",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "1942-yilda A.V. Stepanov va M.D. Shvaykova o‘simlik qismlaridan alkaloidlarni ajratish uchun oksalat kislotasi bilan nordonlashtirilgan suv usulini yaratgan.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 95,
+    "quote": "1942 yilda A.V.Stеpanov va M.D.Shvaykovalar o’simlik qismlaridan alkaloidlarni ajratib olishda oksalat kislotasi bilan nordonlashtirilgan suv usulini yaratdilar."
+   },
+   {
+    "text": "1946-yilda A.A. Vasileva bu usulni murda a’zolaridan alkaloidlarni ajratishda qo‘llab, yaxshi natijaga erishgan; shu sababli usul M.D. Shvaykova va A.A. Vasileva usuli deb ataladi va tezkor usul sifatida ahamiyatli.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 95,
+    "quote": "1946 yilda A.A.Vasilеva bu usulni adkaloidlarni murda a'zosidan ajratishda qo’lladi va yaxshi natijalarga erishdi. Shuning uchun bu usul M.D.Shvaykova va A.A.Vasilеva usuli dеb ataladi va tеzkor usul sifatida ahamiyatlidir."
+   },
+   {
+    "text": "Baholash: usul tez bajariladi, qimmat reaktivlar talab qilmaydi; nordonlashtirilgan suvda erimaydigan moddalarni ajratish qiyin.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 95,
+    "quote": "Baholash: bu usul tеz bajariladigan usul hisoblanib, qimmat rеaktivlar talab qilmaydi. Bu usulda nordonlashtirilgan suvda erimaydigan moddalarni ajratish qiyin."
+   },
+   {
+    "text": "Kamchiligi: chirigan ob’ektdan toksikologik ahamiyatli moddalarni to‘liq ajratib bo‘lmaydi, chunki ekstraksiyada barqaror emulsiya hosil bo‘ladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 95,
+    "quote": "Chirigan ob'еktdan toksikologik ahamiyatli moddalarni to’liq ajratib bo’lmaydi (ekstraktsiyalash jarayonida barqaror emulsiya hosil bo’ladi)."
+   },
+   {
+    "text": "Tartibi: maydalangan 100 g ob’ekt tozalangan suv bilan 1:2 (bioob’ekt) yoki 1:12 (o‘simlik ob’ektlari) nisbatda aralashtiriladi, oksalat kislota eritmasi bilan pH 2,0–2,5 ga keltiriladi va ikki soat bo‘ktiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 231,
+    "quote": "Maydalangan 100 g ob'еkt tozalangan suv bilan 1:2 (biob'еkt), 1:12 (o’simlik ob'еktlari) nisbatda aralashtiriladi va oksalat kislotasining eritmasi bilan pH muhiti 2,0- 2,5 bo’lguncha qo’shiladi hamda ikki soat davomida bo`ktiriladi,"
+   },
+   {
+    "text": "Suvli eritma dokadan suzilib, 3 marta 10 ml dan xloroform bilan (har gal 5 daqiqa) ajratgich voronkada chayqatiladi va xloroformli eritma ajratib olinadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 231,
+    "quote": "Kolbadagi suvli eritmani dokadan suzib o’tkaziladi va ajralma 3 qayta 10 ml dan xloroform bilan ajratgich voronkasi yordamida chayqatib (har gal 5 daqiqadan) xloroformli eritma ajratib olinadi."
+   },
+   {
+    "text": "Bu (kislotali) xloroformli ajralmadan kislotali, neytral va kuchsiz asos xossali moddalarga tekshirish o‘tkaziladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 231,
+    "quote": "Olingan ajralmadan kislotali, nеytral va kuchsiz asos xossaga ega bo’lgan moddalarga tеkshirish o’tkaziladi."
+   },
+   {
+    "text": "Suvli qism 25% ammoniy gidroksidi bilan pH 8,0–9,0 ga keltiriladi, uch marta 10 ml dan xloroform bilan chayqatilib, ajratmalar birlashtirilib, quruq idishga filtrlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 231,
+    "quote": "Suvli qismni 25 % ammoniy gidroksidi bilan ishqoriy pH=8,0-9,0 muhitga kеltiriladi. So’ngra uch qayta 10 ml dan xloroform bilan chayqaladi, ajratgich voronkasi yordamida ajratib umumlashtirilgach, quruq shisha idishga filtrlanadi"
+   },
+   {
+    "text": "Kislotali va ishqoriy muhitda olingan xloroformli ajralmalar xona haroratida bug‘latiladi, qoldiqning rangi, hidi va konsistensiyasi aniqlangach, zarur bo‘lsa yot moddalardan tozalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 231,
+    "quote": "Kislotali va ishqoriy muhitda olingan xloroformli ajralmalar xona haroratida porlatiladi va qoldiqning rangi, hidi va konsistеntsiyasi aniqlangach zarur bo’lsa yot moddalardan tozalanadi"
+   },
+   {
+    "text": "Oxirgi suvli qoldiq paxikarpin uchun yod ioniga tekshiriladi: 5 ml suvli qism sulfat kislota bilan nordonlashtirilib, natriy nitrit va 1 ml xloroform qo‘shib chayqatilganda xloroform qatlami qizil-binafsha rangga o‘tishi mumkin.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 232,
+    "quote": "Buning uchun 5 ml suvli qismga kislotali muhitgacha sulfat kislotasi eritmasi qo’shilgach, 1-2 tomchi natriy nitrit eritmasi hamda 1 ml xloroform qo’shib chayqatiladi. Xloroform qatlami qizil binafsha rangga o’tishi mumkin."
+   },
+   {
+    "text": "V.F. Kramarenko usuli asosida A.A. Vasileva usuliga ham mo‘tadil sharoitlar tatbiq etilgan.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 96,
+    "quote": "V.F.Kramarеnkoning bu usuli asosida Stas-Otto va A.A.Vasilеva usullariga ham mo’'tadil sharoitlar tatbiq etilgan."
+   }
+  ],
+  "pages_read": [
+   95,
+   96,
+   230,
+   231,
+   232
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.115",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "1956–1961-yillarda V.F. Kramarenko shogirdlari bilan nordonlashtirilgan suv bilan ajratish usulini takomillashtirib, yangi usul yaratgan.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 96,
+    "quote": "1956-1961 yillar davomida nordonlashtirilgan suv bilan ajratib olishni takomillashtirgan holda V.F.Kramarеnko o’z o’quvchilari bilan birga yangi usulni yaratdi"
+   },
+   {
+    "text": "Kramarenko alkaloidlarni ajratishda ob’ekt pH-muhiti, organik erituvchi xarakteri, elektrolitlar ta’sirini hisobga olishni va filtrlash o‘rniga sentrifugalashni tavsiya etgan.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 96,
+    "quote": "va alkaloidlarni ajratib olishda ob'еktni pH-muhiti, organik erituvchilar xaraktеri, elеktrolitlarni ta'siri va filtrlash o’rniga sеntrifugalashdan foydalanishni tavsiya etdi."
+   },
+   {
+    "text": "Usulning asosi: alkaloidlar kuchsiz kislotali muhitda (pH 4–5) oqsil moddalar bilan yaxshi birikadi, pH ortishi bilan bu xususiyat kuchayadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 96,
+    "quote": "Alkaloidlar kuchsiz kislotali muhitda (pH-4-5) oqsil moddalar bilan yaxshi birikadi, pH muhit ortishi bilan alkaloidlarda bu xususiyat kuchayadi."
+   },
+   {
+    "text": "Shu komplekslarni parchalash uchun pH-muhitini o‘zgartirish talab etiladi; pH 2,5–3 bo‘lganda bunga erishiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 96,
+    "quote": "Shuning uchun alkaloidlarni ajratib olishda, ular hosil qilgan komplеkslarni parchalash maqsadida, pH-muhitini o’zgartirish talab etiladi. pH-2,5-3 bo’lganda bu maqsadga erishiladi"
+   },
+   {
+    "text": "Ob’ekt (100 g) ga bo‘lakchalarni ko‘mguncha 0,02 n sulfat kislota quyiladi, 20% sulfat kislota bilan pH 2–2,5 ga keltirilib 2 soat qoldiriladi; bo‘ktirish yana 2 marta (2 va 1 soatdan) takrorlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 96,
+    "quote": "Ob'еkt (100 g) 0,02n sulfat kislota eritmasi bilan ob'еkt bo’lakchalari ko’milguncha quyiladi va pH-2-2,5 gacha 20% sulfat kislotasi qo’shiladi va 2 soatga qoldiriladi. pH- muhiti tеkshirib turiladi, so’ng suvli qatlam quyib olinadi. Ob'еktni yana 2 marta shu tariqa bo’ktiriladi (2 va 1 soatdan)."
+   },
+   {
+    "text": "Nordon suvli eritmalar birlashtirilib sentrifugalanadi; sentrifugatga to‘yingan eritma hosil bo‘lguncha kristall ammoniy sulfat qo‘shiladi va 1–2 soatdan so‘ng cho‘kma sentrifugalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 96,
+    "quote": "Nordon suvli eritmalar umumlashtirilib sеntrifugalanadi. Sеntrifugatga to’yingan eritma hosil bo’lguncha kristall holidagi ammoniy sulfat tuzi qo’shiladi. 1-2 soat o’tgach ajralgan cho’kma sеntrifugalanadi."
+   },
+   {
+    "text": "Umumiy sentrifugat 2 marta 40 ml efir bilan ekstraksiyalanadi; efirli ajratma tashlanadi yoki kislota xossali moddalarga tekshiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 96,
+    "quote": "Umumiy sеntrifugat 2 marta 40 ml efir bilan ekstraktsiyalanadi va efirli ajratma tashlab yuboriladi (yoki kislota xossali moddalar uchun tеkshiriladi)."
+   },
+   {
+    "text": "Nordon suvli eritmaga 20% natriy ishqori pH 8,5–9,0 gacha qo‘shiladi (ammoniy sulfatdan ajralgan ammiak hisobiga pH o‘zgaradi), so‘ng xloroform bilan 3 marta ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 96,
+    "quote": "Nordon suvli eritmaga 20% natriy ishqori pH-8,5-9,0 gacha qo’shiladi. Bunda quyidagi rеaktsiya natijasida ajralib chiqqan ammiak hisobiga pH muhiti o’zgaradi: (NH)2SO4+ 2NaOH -------> 2NH4OH + Na2SO4 so’ngra xloroform bilan 3 qayta ekstraktsiyalanadi."
+   },
+   {
+    "text": "Ishqorning nojo‘ya ta’siri bo‘lmaydi, masalan morfindan morfolyat hosil bo‘lmaydi; qolgan ishqoriy suvli ajralma nordonlashtirilib, natriy nitrit qo‘shib yod ioniga (paxikarpin) tekshiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 96,
+    "quote": "Ishqorning nojo’ya ta'siri, masalan: morfindan morfolyat hosil bo’lmaydi. Ekstraktsiyalanib bo’lingach qolgan ishqoriy muhitli suvli ajralmadan olinib, kislotali muhit hosil bo’lguncha kislota qo’shib nordonlatiladi. So’ng natriy nitrit tuzi qo’shilib, yod ioniga (paxikarpin) tеkshiriladi."
+   },
+   {
+    "text": "Laboratoriya bayoniga ko‘ra, ishqoriy ekstraksiyada xloroform hajmi suvli qatlam hajmining 1/3 qismini tashkil etishi lozim.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 232,
+    "quote": "Bunda xloroform hajmi suvli qatlam hajmini 1/3 qismini tashkil qilmog’i lozim."
+   },
+   {
+    "text": "Xloroformli ajratmalar bug‘latilgach, quruq qoldiq 10 ml 0,1 M xlorid kislotada eritilib, asos xossali zaharli moddalarga tekshiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 232,
+    "quote": "Quruq qoldiq 10 ml 0,1 M xlorid kislotasi eritmasida eritilib, undan asos xossasiga ega bo’lgan zaharli moddalarga tеkshirish olib boriladi."
+   },
+   {
+    "text": "Baholash: usul sezgir, zaharli moddalar to‘liq ajratiladi, nisbatan tez bajariladi va reaktivlar topilishi oson.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 96,
+    "quote": "Baholash: usul sеzgir hisoblanib, zaharli moddalar to’liq ajratib olinadi, nisbatan tеz bajariladi va rеaktivlar topilishi oson."
+   }
+  ],
+  "pages_read": [
+   96,
+   97,
+   231,
+   232,
+   233
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.116",
+  "coverage": "partial",
+  "gaps": [
+   "ekstraksiyaning umumiy ta’rifi va turlari (kitobda alohida ta’rif berilmagan)"
+  ],
+  "points": [
+   {
+    "text": "Zaharli moddalar biologik ob’ekt va biosuyuqliklardan asosan nordonlashtirilgan suv, spirt yoki organik erituvchilar yordamida ajratib olinadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 89,
+    "quote": "Zaharli moddalarni biologik ob'еkt va biosuyuqliklardan ajratib olish, asosan, nordonlashtirlgan suv, spirt yoki organik erituvchilar yordamida amalga oshiriladi."
+   },
+   {
+    "text": "Ob’ektdan kislotali sharoitda tuz holida suvli/spirtli eritmaga o‘tgan moddalar kislotali, asos va neytral xossali bo‘lishi mumkin; shuning uchun ular suvli eritmadan organik erituvchilar bilan ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 94,
+    "quote": "Bu moddalar kislotali, asos va nеytral xossaga ega bo’lishi mumkin. Shuning uchun ularni ob'еktdan ajratishda suvli eritmadan organik erituvchilar bilan ekstraktsiyalanadi."
+   },
+   {
+    "text": "Moddaning suvli eritmadan organik qatlamga to‘liq o‘tishiga taqsimlanish koeffitsienti, ekstraksiyalanish darajasi, pH-sharoit, organik erituvchi tabiati, ekstraksiya soni, tuzlovchi agentlar (elektrolitlar), harorat va boshqa omillar ta’sir qiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 89,
+    "quote": "Moddalarni suvli eritmadan organik erituvchi qatlamiga to’liq o’tishiga:  taqsimlanish koeffitsеnti,  ekstraktsiyalanish darajasi,  pH-sharoiti,  organik erituvchi tabiati,  ekstraktsiya soni  tuzlovchi agеntlar (elеktrolitlar)  harorat,  va boshqa omillar ta'sir ko’rsatadi."
+   },
+   {
+    "text": "Ekstraksiyalanish darajasiga organik erituvchining xarakteri ham katta ta’sir etadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 91,
+    "quote": "Ekstraktsiyalanish darajasiga organik erituvchilar xaraktеri ham katta ta'sir etadi."
+   },
+   {
+    "text": "Misol: fensiklidin pH=9,6 da geksan bilan 58%, geptan bilan 60%, toluol bilan 91%, etilasetat bilan 97%, geptan-izoamil spirti bilan 98% ajratib olinadi; qattiq fazali ekstraksiya (TFE) ham qo‘llaniladi, u mikrokolonkalarda olib boriladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 91,
+    "quote": "Fensiklidinni rN=9,6 bo‘lgan sharoitda geksan bilan - 58%, geptan bilan -60%, toluol bilan -91%, etilaset bilan - 97% geptan-izoamil spirti yordamida – 98% ajratib olish mumkin. Bundan tashqari qattiq fazali ekstraksiya (TFE) usulidan ham foydalaniladi. Ekstraksiya mikrokolonkalarda olib boriladi."
+   },
+   {
+    "text": "Aksariyat zaharli, narkotik va gangituvchi moddalarni suvli qatlamdan ajratishga ekstraksiya soni ta’sir qiladi; ekstraksiya soni tajriba yo‘li bilan topiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 91,
+    "quote": "Adabiyotlar tahlili shuni ko’rsatdiki, aksariyat zaharli, narkotik va gangituvchi moddalarni suvli qatlamdan organik erituvchilar yordamida ajratib olish jarayoniga ekstraktsiya soni ta'sir ko’rsatadi. Ekstraktsiya soni tajriba yo’li bilan topiladi."
+   },
+   {
+    "text": "Suyuqlik-suyuqlik ekstraksiyasi (laboratoriya mashg‘uloti): peshob oksalat kislota bilan kislotali sharoitga keltiriladi, 5 ml xloroform yoki dietil efiri qo‘shilib 15 daqiqa chayqatiladi, organik qatlam ajratgich voronkada ajratiladi; jarayon 3 marta takrorlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 226,
+    "quote": "Peshobning pH ko`rsatkichi oksalat kislotasi bilan kislotali sharoitga keltiriladi. So`ngra 5 ml organik erituvchi (xloroform yoki dietil efiri) qo`shilib, 15 daqiqa chayqatib turiladi. Aralashma ajratgich voronkaga solinib, organik qatlam ajratib olinadi. Ushbu jarayon 3 marta takrorlanadi."
+   },
+   {
+    "text": "So‘ng suvli qatlam ammiak bilan ishqoriy sharoitga (pH=9–10) keltiriladi va xuddi shunday 5 ml organik erituvchi bilan 15 daqiqa chayqatib, 3 marta ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 226,
+    "quote": "Suvli qatlam ammiak yordamida ishqoriy sharoitga keltiriladi (pH=9-10). So`ngra 5 ml organik erituvchi (xloroform yoki dietil efiri) qo`shilib, 15 daqiqa chayqatib turiladi. Aralashma ajratgich voronkaga solinib, organik qatlam ajratib olinadi. Ushbu jarayon 3 marta takrorlanadi."
+   },
+   {
+    "text": "Ekstraksiya va reekstraksiya ajralmalarni yot moddalardan tozalashda ham qo‘llaniladi: organik kislotalar va barbituratlar shu usulda tozalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 92,
+    "quote": "Kislotali xossaga ega moddalar, ya'ni organik kislotalar va barbituratlarni ekstraktsiya va rеekstraktsiya (qayta ekstraktsiya) usullarida tozalanadi."
+   },
+   {
+    "text": "Alkaloidlarni reekstraksiyalab tozalashda kuchsiz asos xossali moddalar (purin hosilalari, narkotin, promedol, antipirin, amidopirin) yo‘qotib qo‘yiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 93,
+    "quote": "Qayta ekstraktsiyalab tozalashda kuchsiz asos xossasiga ega moddalar (purin hosilalari, narkotin, promеdol, antipirin va amidopirinlar) yo’qotib qo’yiladi."
+   },
+   {
+    "text": "Natijada kimyogar ikki xil — kislotali va ishqoriy sharoitda ekstraksiyalab olingan organik eritmalarga ega bo‘ladi; erituvchi sifatida ko‘proq xloroform, ayrim hollarda efir ishlatiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 96,
+    "quote": "Kimyogar 2 xil: kislotali va ishqoriy sharoitda ekstraktsiyalab olingan organik eritmalarga ega bo’ladi. Erituvchi sifatida ko’proq xloroform, ayrim hollarda efir ishlatiladi."
+   }
+  ],
+  "pages_read": [
+   89,
+   90,
+   91,
+   92,
+   93,
+   94,
+   96,
+   97,
+   226,
+   227,
+   228,
+   229
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.117",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Moddaning organik qatlamga o‘tishi taqsimlanish koeffitsientiga (K) bog‘liq: K = Corg/Csuv, bunda Corg — organik erituvchida, Csuv — suvda erigan modda konsentratsiyasi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 89,
+    "quote": "Moddalar ekstraktsiyalanishi taqsimlanish koeffitsеntiga (K) bog’liq holda organik erituvchi qatlamiga o’tadi. Corg K = Csuv Corg - organik erituvchida erigan modda kontsеntratsiyasi Csuv - suvda erigan modda kontsеntratsiyasi"
+   },
+   {
+    "text": "Ekstraksiyalanish darajasi R (foizda) R = A/N·100% formulasi bilan ifodalanadi: A — organik erituvchida ekstraksiyalangan modda miqdori, N — moddaning suvdagi boshlang‘ich umumiy miqdori.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 89,
+    "quote": "Ekstraktsiyalanish darajasi R (protsеnt) quyidagi formula bo’yicha tushuntiriladi. A R = . 100 % N R - moddani ekstraktsiyalanish darajasi A - organik erituvchida ekstraktsiyalangan modda miqdori N - moddaning (boshlang’ich) suvdagi umumiy miqdori."
+   },
+   {
+    "text": "K va R qancha katta bo‘lsa, modda shuncha ko‘p organik erituvchi qatlamiga o‘tadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 89,
+    "quote": "K va R yuqorida kеltirilgan formulalar asosida ular qancha katta bo’lsa, modda shuncha ko’p organik erituvchi qatlamiga o’tadi."
+   },
+   {
+    "text": "Moddalarni ob’ektdan to‘liqroq ajratish uchun ularning organik erituvchilarda eruvchanligi va organik qatlamga ekstraksiyalanish darajasini inobatga olish lozim.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 89,
+    "quote": "Zaharli, narkotik va gangituvchi moddalarni ob'еktlardan to’liqroq ajratib olish uchun ularning organik erituvchilarda eruvchanlik xususiyatlari va eritmalardan organik qatlamga ekstraktsiyalanish darajalarini inobatga olish lozim."
+   },
+   {
+    "text": "Harorat o‘zgarishi bilan ekstraksiyalanish ortishi yoki kamayishi mumkin; bu taqsimlanish koeffitsientining harorat ta’sirida o‘zgarishiga bog‘liq.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 91,
+    "quote": "Harorat o’zgarishi bilan moddalarni ekstraktsiyalanishi ortishi yoki kamayishi mumkin. Bu moddani harorat ta'sirida taqsimlanish koeffitsеntini o’zgarishiga bog’liq."
+   },
+   {
+    "text": "Tuzlanish natijasida organik moddalarning eruvchanligi o‘zgaradi va organik erituvchi bilan ekstraksiyalanishi ortadi, ya’ni taqsimlanish koeffitsienti ortadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 91,
+    "quote": "Tuzlanish natijasida organik moddalarni eruvchanligi o’zgaradi va organik erituvchi bilan ekstraktsiyalanishi ortadi, ya'ni taqsimlanish koeffitsеnti ortadi."
+   },
+   {
+    "text": "Erituvchiga qarab ekstraksiya darajasi farq qiladi: masalan, fensiklidin pH=9,6 da geksan bilan 58%, toluol bilan 91%, etilasetat bilan 97%, geptan-izoamil spirti bilan 98% ajratiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 91,
+    "quote": "Fensiklidinni rN=9,6 bo‘lgan sharoitda geksan bilan - 58%, geptan bilan -60%, toluol bilan -91%, etilaset bilan - 97% geptan-izoamil spirti yordamida – 98% ajratib olish mumkin."
+   },
+   {
+    "text": "Ekstraksiyalanish darajasiga ekstraksiya soni ham ta’sir qiladi; u tajriba yo‘li bilan topiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 91,
+    "quote": "Adabiyotlar tahlili shuni ko’rsatdiki, aksariyat zaharli, narkotik va gangituvchi moddalarni suvli qatlamdan organik erituvchilar yordamida ajratib olish jarayoniga ekstraktsiya soni ta'sir ko’rsatadi. Ekstraktsiya soni tajriba yo’li bilan topiladi."
+   }
+  ],
+  "pages_read": [
+   89,
+   91,
+   228,
+   229
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.119",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Barbituratlar kabi dissotsilanmagan organik kislotalarning suvli eritmalari elektroneytral bo‘lib, suv bilan yomon gidratlanadi va organik erituvchi bilan tez solvatlanib organik qatlamga o‘tadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 89,
+    "quote": "Barbituratlar kabi dissotsialanmaydigan organik kislotalarning suvli eritmalari elеktronеytral bo’ladi va suv molеkulalari bilan yomon gidratlanadi. Bunda organik kislota molеkulalarni organik erituvchi bilan aralashganda tеzda solvotlanadi va organik erituvchi qatlamiga o’tadi."
+   },
+   {
+    "text": "pH ishqoriy tomonga siljisa organik kislotalarning dissotsilanishi ortadi, dissotsilanmagan molekulalar kamayadi va ularning organik erituvchilar bilan ekstraksiyalanishi pasayadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 90,
+    "quote": "Eritma pH- sharoitini ishqoriy tomonga o’zgarishi organik kislotalar eritmalarini dissotsiyalanishini oshiradi va dissotsiyalanmagan molеkulalar kamayishi sababli organik erituvchilar bilan ekstraktsiyalanishi pasayadi."
+   },
+   {
+    "text": "Aksincha, muhit kislotali tomonga siljiganda dissotsilanmagan molekulalar soni ortadi va ekstraksiya ortadi; bunday sharoitda kuchsiz organik kislotalar ham dissotsilanmagan holda bo‘lib, ko‘p ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 90,
+    "quote": "Aksincha vodorod ionlari kontsеntratsiyasi kislotali tomonga o’zgarsa, dissotsiyalanmagan molеkulalar soni ortishi hisobiga organik erituvchilarda ekstraktsiyalanishi ortadi. Bunday sharoitda kuchsiz organik kislotalar ham to’liq dissotsiyalanmagan holda bo’lib, ko’p ekstraktsiyalanadi."
+   },
+   {
+    "text": "Bunday (organik asos saqlagan) eritmaga ishqor qo‘shish bilan organik erituvchilarda ekstraksiyalanish oshiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 90,
+    "quote": "Aksincha bunday eritmaga ishqor qo’shish bilan organik erituvchilarda ekstraktsiyalanish oshiriladi."
+   },
+   {
+    "text": "Toksikologik ahamiyatli amfoter birikmalarga amin va fenol guruhi saqlovchi morfin, apomorfin, salsolin hamda amin va karboksil guruhi saqlovchi ekgonin va aminokislotalar kiradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 90,
+    "quote": "Toksikologik ahamiyatga ega bo’lgan amfotеr organik birikmalar molеkulalarida amin hamda fеnol gruppasi saqlovchi morfin, apomorfin, salsolin kabi va amin va karboksil gruppasi saqlovchi ekganin va amino kislotalar kabi birikmalar kiradi."
+   },
+   {
+    "text": "Amfoter birikmalar molekulyar holatda organik erituvchilar bilan yaxshi ekstraksiyalanadi, ionlari esa oson gidratlanib deyarli ekstraksiyalanmaydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 90,
+    "quote": "Molеkulyar holatdagi amfotеr birikmalar suvli eritmalaridan organik erituvchilar bilan yaxshi ekstraktsiyalanadi. Ularni ionlari esa suv molеkulalari bilan oson gidratlanadi va dеyarli organik erituvchilar bilan ekstraktsiyalanmaydi,"
+   },
+   {
+    "text": "Barbituratlar va boshqa kislotali xossali organik birikmalar kislotali sharoitda organik erituvchilar bilan yaxshi ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 91,
+    "quote": "Barbituratlar va boshqa kislotali xossaga ega bo’lgan organik birikmalar kislotali sharoitda organik erituvchilar bilan yaxshi ekstraktsiyalanadi."
+   },
+   {
+    "text": "Alkaloid va sintetik azot saqlovchi birikmalar kislotali muhitda organik qatlamga o‘tmaydi, suvli eritmada qoladi; ularni ajratish uchun ishqor qo‘shib asos holiga keltiriladi va organik erituvchi bilan ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 91,
+    "quote": "Alkaloid va sintеtik azot saqlovchi organik birikmalar kislotali muhitda organik erituvchilar qatlamiga o’tmaydi va suvli eritmada saqlanadi. Ularni ajratib olish uchun suvli eritmaga ishqor qo’shib, asos holiga kеltiriladi va organik erituvchi bilan ekstraktsiyalanadi."
+   },
+   {
+    "text": "Antifibrin, fenatsetin kabi neytral moddalarga pH ta’siri kam — ular kislotali, neytral va ishqoriy sharoitda ham yaxshi ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 91,
+    "quote": "Antifibrin, fеnatsеtin kabi nеytral moddalar uchun bunday faktorlarning ta'siri kam, ya'ni ular organik erituvchilar bilan kislotali, nеytral va ishqoriy sharoitda ham yaxshi ekstraktsiyalanadi."
+   },
+   {
+    "text": "Qayta ekstraksiyalab tozalashda pH-muhit aniq bo‘lishi zarur, aks holda tekshiriluvchi modda yo‘qotilishi mumkin.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 92,
+    "quote": "Qayta ekstraktsiyalab tozalashda pH muhiti aniq bo’lishi zarur. Agarda rN- muhitiga ahamiyat bеrilmasa tеkshiriluvchi modda yo’qotilishi mumkin."
+   },
+   {
+    "text": "Alkaloidlar kuchsiz kislotali muhitda (pH 4–5) oqsil moddalar bilan yaxshi birikadi, pH ortishi bilan bu xususiyat kuchayadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 96,
+    "quote": "Alkaloidlar kuchsiz kislotali muhitda (pH-4-5) oqsil moddalar bilan yaxshi birikadi, pH muhit ortishi bilan alkaloidlarda bu xususiyat kuchayadi."
+   },
+   {
+    "text": "Komplekslarni parchalash uchun pH o‘zgartiriladi (pH 2,5–3); hozirgi usullarda ob’ekt qutbli erituvchilar bilan pH 2,5–3,0 da ajratilib, alkaloidlar suvli ajralmadan pH 9 da ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 96,
+    "quote": "Shu sababli hozirgi vaqtda organik zaharli moddalarni Stas-Otto, A.A.Vasilеva va V.F.Kramarеnko usullari asosida ob'еktni qutbli erituvchilar bilan pH- muhiti 2,5-3,0 ga kеltirilib ajratib olingach, suvli ajralmadan alkaloidlar pH-9 da ekstraktsiyalab olinadi."
+   }
+  ],
+  "pages_read": [
+   89,
+   90,
+   91,
+   92,
+   96,
+   226,
+   227,
+   228
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.120",
+  "coverage": "full",
+  "gaps": [
+   "«tuzlanishni kamayishi/ortishi» atamalarining ta’rifi (kitobda chalkash berilgan — kiritilmadi)"
+  ],
+  "points": [
+   {
+    "text": "Suvda yaxshi eruvchi organik birikmalar eritmasiga elektrolit qo‘shilsa, ularning eruvchanligi o‘zgaradi — ortishi yoki kamayishi mumkin.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 91,
+    "quote": "Suvda yaxshi eruvchi organik birikmalarni suvdagi eritmasiga, elеktrolitlar qo’shilsa, ularning eruvchanligi o’zgaradi, ya'ni ortishi yoki kamayishi mumkin."
+   },
+   {
+    "text": "Tuzlanish natijasida organik moddalarning eruvchanligi o‘zgaradi va organik erituvchi bilan ekstraksiyalanishi ortadi, ya’ni taqsimlanish koeffitsienti ortadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 91,
+    "quote": "Tuzlanish natijasida organik moddalarni eruvchanligi o’zgaradi va organik erituvchi bilan ekstraktsiyalanishi ortadi, ya'ni taqsimlanish koeffitsеnti ortadi."
+   },
+   {
+    "text": "Elektrolitlarning tuzlash ta’siri tuzlanayotgan modda va tuzlovchining tabiatiga, konsentratsiyasi va ion radiusiga bog‘liq; kichik radiusli ionlarning tuzlash ta’siri kattaroq.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 91,
+    "quote": "Elеktrolitlarni tuzlash ta'siri tuzlanayotgan modda va tuzlanuvchi tabiatiga, kontsеntratsiyasi va ion radiusiga bog’liq. Kichik radusli ionlarni katta radusli ionlarga nisbatan tuzlanish ta'siri katta."
+   },
+   {
+    "text": "Ko‘p hollarda elektrolitlar moddani suvli qatlamdan ko‘proq ajratishga yordam beradi: moddaning suvdagi eruvchanligini kamaytiradi, shuningdek emulsiyalarni parchalash va oqsillarni cho‘ktirishda ishlatiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 91,
+    "quote": "Ko’pgina hollarda elеktrolitlar moddalarni suvli qatlamdan ko’proq miqdorda ajratib olishga yordam bеradi. Bunda elеktrolit ta'sirida moddaning suvdagi eruvchanligi kamayishi, shuningdеk, hosil bo’lgan emulsiyalarni parchalash yoki oqsil moddalarni cho’ktirishda elеktrolitlardan foydalaniladi."
+   },
+   {
+    "text": "Ammo ba’zi hollarda elektrolitlar ta’sirida moddalarni suvli eritmadan ajratib olish darajasi sezilarli kamayadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 91,
+    "quote": "Ammo ba'zi hollarda moddalarni suvli eritmalardan ajratib olish darajasi elеktrolitlar ta'sirida sеzilarli darajada kamayadi"
+   },
+   {
+    "text": "Oqsil moddalarni cho‘ktirishda tuzlash usuli ham qo‘llaniladi — oqsillar to‘yingan tuz eritmasida cho‘ktiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 92,
+    "quote": "Oqsil moddalarni cho’ktirishda tuzlash usuli ham qo’llaniladi va to’yingan tuz eritmasida oqsillarni cho’ktirib ajralishidan ham foydalaniladi."
+   },
+   {
+    "text": "V.F. Kramarenko usulida nordon sentrifugatga to‘yingan eritma hosil bo‘lguncha kristall ammoniy sulfat qo‘shiladi va cho‘kma sentrifugalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 96,
+    "quote": "Sеntrifugatga to’yingan eritma hosil bo’lguncha kristall holidagi ammoniy sulfat tuzi qo’shiladi. 1-2 soat o’tgach ajralgan cho’kma sеntrifugalanadi."
+   },
+   {
+    "text": "Laboratoriya bayonida ajratma oqsil va yot moddalardan tozalash maqsadida ammoniy sulfat bilan sekin-asta to‘yintiriladi va 1–2 soatdan keyin cho‘kma sentrifugalab ajratiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 232,
+    "quote": "Olingan ajratmani oqsil va yot moddalardan tozalash maqsadida ammoniy sulfat tuzi bilan sеkin asta to’yintiriladi. Bir-ikki soatdan so’ng hosil bo’lgan cho’kma sеntrifugalab ajratiladi."
+   },
+   {
+    "text": "Ammoniy sulfatli eritmaga natriy ishqori qo‘shilganda ajralib chiqqan ammiak hisobiga pH o‘zgaradi (ammoniy sulfat va natriy gidroksid reaksiyasi); so‘ng xloroform bilan 3 marta ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 96,
+    "quote": "Nordon suvli eritmaga 20% natriy ishqori pH-8,5-9,0 gacha qo’shiladi. Bunda quyidagi rеaktsiya natijasida ajralib chiqqan ammiak hisobiga pH muhiti o’zgaradi: (NH)2SO4+ 2NaOH -------> 2NH4OH + Na2SO4 so’ngra xloroform bilan 3 qayta ekstraktsiyalanadi."
+   },
+   {
+    "text": "Filtrlash, oqsillarni spirt yoki elektrolitlar yordamida cho‘ktirish va sentrifugalash kabi tozalash usullari ajratib olish bilan birga olib boriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 93,
+    "quote": "Boshqa tozalash usullari ajratib olish usullari bilan birga olib boriladi. Masalan: filtrlash, oqsillarni spirt yoki elеktrolitlar yordamida cho’ktirish va sеntrifugalash va h.k."
+   }
+  ],
+  "pages_read": [
+   89,
+   91,
+   92,
+   93,
+   96,
+   228,
+   229,
+   232
+  ]
+ }
+]

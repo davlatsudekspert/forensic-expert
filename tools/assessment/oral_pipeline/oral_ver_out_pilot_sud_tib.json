@@ -1,0 +1,666 @@
+[
+ {
+  "id": "sud_tib.c23.001",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OVERSTATED",
+    "fix": "Qonda kislorod ko‘p bo‘lgani sababli teri qoplamlari va murda dog‘lari pushti-qizg‘ish rangda bo‘ladi; biroq sovuq qotish musbat haroratda (+10°S gacha) ro‘y berganda murda dog‘lari ko‘kimtir-binafsha bo‘lishi mumkin, manfiy haroratda esa pushti-qizg‘ish bo‘ladi."
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "p9: musbat haroratda (+10°S gacha) murda dog‘lari ko‘kimtir-binafsha bo‘lishi mumkinligi haqidagi cheklov tushib qolgan (s.30–31)"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.016",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "p0: manbada «zo‘raki o‘lim alomatlari yoki unga shubha bo‘lgan holatlarda» sharti va 3-holat (tibbiy yordamga shikoyat) tushirilgan — kichik to‘liqsizlik, xato emas"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.031",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_tib.c23.046",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OVERSTATED",
+    "fix": "Belgilari: o‘lim sababi hamisha kasallik, aksariyat holatlarda o‘limdan bevosita oldin simptomlar umuman kuzatilmaydi yoki yaqqol namoyon bo‘lmaydi; o‘lim tez, qisqa muddatda sodir bo‘ladi."
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "p4: «aksariyat holatlarda» qualifier tushib qolgan",
+   "Mavzu nogahon/to‘satdan o‘lim; kitobda ikki atama sinonim — mos"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.061",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_tib.c23.076",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_tib.c23.091",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_tib.c23.106",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_tib.c23.121",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_tib.c23.136",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "p9–p10: shilinish/ifloslanish hoshiyasi umumiy kirish teshigi belgisi (faqat uzoq distansiyaga xos emas), lekin to‘g‘ri"
+  ]
+ }
+]

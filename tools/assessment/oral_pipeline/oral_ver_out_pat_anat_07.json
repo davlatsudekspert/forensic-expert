@@ -1,0 +1,710 @@
+[
+ {
+  "id": "pat_anat.c23.073",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "pat_anat.c23.074",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "WRONG",
+    "fix": "Klassik tasavvurga ko‘ra krupoz pnevmoniya to‘rt davrni o‘taydi: qon to‘lishi (giperemiya, «прилив») davri, qizil jigarlanish (qizil gepatizatsiya), kulrang jigarlanish (kulrang gepatizatsiya) va rezolyutsiya (so‘rilish) davri.",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "WRONG",
+    "fix": "1-davr — qon to‘lishi (giperemiya, «прилив») davri bir sutka davom etadi; zararlangan bo‘lakning keskin giperemiyasi va mikrobli yallig‘lanish shishi bilan tavsiflanadi, shish suyuqligida mikroblar ko‘p bo‘ladi.",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "P0,P2: «qon quyilishi» o‘zbek tilida qon quyilish (кровоизлияние) degani; manbadagi «стадия прилива» — qon to‘lishi (giperemiya) davri"
+  ]
+ },
+ {
+  "id": "pat_anat.c23.075",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "WRONG",
+    "fix": "Krupoz pnevmoniya to‘rt davrda kechadi: qon to‘lishi (giperemiya, «прилив»), qizil jigarlanish, kulrang jigarlanish va rezolyutsiya; 2-davr — qizil jigarlanish (qizil gepatizatsiya).",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OVERSTATED",
+    "fix": "Ehtimol, krupoz pnevmoniya kechishining ikki varianti bor: ulardan biri eritrotsitlar diapedezi ustunligi bilan kechadi, bu qizil gepatizatsiyaga mos keladi va u bevosita rezolyutsiyaga o‘tadi.",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "P0: «qon quyilishi» o‘zbek tilida qon quyilish (кровоизлияние) degani; manbadagi «стадия прилива» — qon to‘lishi (giperemiya) davri",
+   "P7: manbada «По-видимому» (ehtimol) deyilgan; ikki variant g‘oyasi aniq Tsinzerlingga nisbat berilmagan («По данным Цинзерлинга» faqat «moy dog‘i» tarqalishiga tegishli) — atributsiya va ehtiyot so‘zi tuzatildi"
+  ]
+ },
+ {
+  "id": "pat_anat.c23.076",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "WRONG",
+    "fix": "Krupoz pnevmoniya davrlari: qon to‘lishi (giperemiya, «прилив»), qizil jigarlanish, kulrang jigarlanish va rezolyutsiya; 3-davr — kulrang jigarlanish (kulrang gepatizatsiya).",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "P0: «qon quyilishi» o‘zbek tilida qon quyilish (кровоизлияние) degani; manbadagi «стадия прилива» — qon to‘lishi (giperemiya) davri"
+  ]
+ },
+ {
+  "id": "pat_anat.c23.077",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "pat_anat.c23.078",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "Manbada bronxopnevmoniyaning alohida rasmiy ta’rifi yo‘q; javob tasnif va etiologiya orqali beriladi (qisman)"
+  ]
+ },
+ {
+  "id": "pat_anat.c23.079",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "pat_anat.c23.080",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OVERSTATED",
+    "fix": "O‘lim sababi o‘pkadagi yiringlash va yiringli plevrit ham bo‘lishi mumkin; erta bolalik yoshida, ovqatlanish susayishi bilan kechadigan kasalliklarda bolalarda yuzaga keladigan pnevmoniyalar hayot uchun ayniqsa xavfli.",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "P5: «ovqatlanish susayishi bilan kechadigan kasalliklarda» cheklovi tushib qolgan",
+   "P3: gangrena manbada umumiy o‘tkir destruktiv jarayon sifatida berilgan, bronxopnevmoniya asorati deb bevosita bog‘lanmagan (punktning o‘zi to‘g‘ri)"
+  ]
+ },
+ {
+  "id": "pat_anat.c23.081",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "pat_anat.c23.082",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "pat_anat.c23.083",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "pat_anat.c23.084",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": []
+ }
+]

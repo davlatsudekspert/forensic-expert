@@ -1,0 +1,990 @@
+[
+ {
+  "id": "sud_kimyo.c1.067",
+  "coverage": "partial",
+  "gaps": [
+   "YuSSX usulining umumiy nazariyasi va asbob tuzilishi matnda yoritilmagan (faqat chizma sarlavhalari berilgan)",
+   "barcha zaharli moddalar uchun yagona sifat va miqdor aniqlash tartibi kitobda yo‘q: usul faqat ayrim moddalar misolida keltirilgan"
+  ],
+  "points": [
+   {
+    "text": "Sintetik piretroidlarni YuSSX usulida tahlil qilishda Agilent Technologies firmasining «Agilent 1100 series» rusumli xromatografidan foydalanish mumkin.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 276,
+    "quote": "Sintеtik pirеtroidlarni YuSSX usulida tahlil qilishda Agilent Technologies firmasining «Agilent 1100 series» rusumli xromatografidan foydalanish mumkin."
+   },
+   {
+    "text": "Piretroidlar tahlili uchun kolonka 150x3 mm o‘lchamli, zarrachalari 3,5 mkm bo‘lgan Zorbax Eclipse XDB S-18 turdagi sorbent bilan to‘ldirilgan bo‘ladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 276,
+    "quote": "Tahlil 150x3 mm o’lchamli, zarrachalari 3,5 mkm bo’lgan Zorbax Eclipse XDB S-18 turdagi sorbеnt bilan to’ldirilgan kolonkada olib boriladi."
+   },
+   {
+    "text": "Piretroidlarni YuSSX da tahlil qilishda qo‘zg‘aluvchi faza pH=3,0 fosfat buferi (A eritma) va atsetonitril (B eritma) aralashmasidan iborat bo‘lib, chiziqli-gradient elyuirlash qo‘llanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 276,
+    "quote": "Qo’zg’aluvchi fazaning optimal tarkibi - pH=3,0 ga tеng bo’lgan fosfat bufеri (A eritma) va atsеtonitril (B eritma) aralashmasi chiziqli-gradiеnt elyuirlash sharoitida"
+   },
+   {
+    "text": "Sintetik piretroidlar 278-280 nm to‘lqin uzunligida tahlil qilinadi; danitolning ushlanish vaqti 17,4, sipermetrin va uning izomerlariniki 18,7 va 19,7 daqiqa.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 276,
+    "quote": "Sintеtik pirеtroidlar 278- 280 nm to’lqin uzunligida tahlil qilinadi. Tahlil davomiyligi 24 daqiqani va danitolning ushlanish vaqti 17,4; sipеrmеtrin va uning izomеrlari - 18,7 va 19,7"
+   },
+   {
+    "text": "Qondan ajratib olingan piretroidlarning quruq qoldig‘i yupqa qatlam xromatografiya, yuqori samarali suyuqlik xromatografiya va ultrabinafsha-spektrofotometriya usullari bilan tekshiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 275,
+    "quote": "Quruq qoldiq yupqa qatlam xromatografiya, yuqori samarali suyuqlik xromatografiya, ultrabinafsha- spеktrofotomеtriya usullari yordamida tеkshiriladi."
+   },
+   {
+    "text": "Antidepressantlar va ularning metabolitlarining sifati va miqdori YoSSX usulida aniqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 133,
+    "quote": "Antidepressantlar va ularning metabolitlarini sifat va miqdorini aniqlashda YoSSX usulida aniqlanadi."
+   },
+   {
+    "text": "Antidepressantlar tahlilida detektor sifatida UB-spektrofotometr (254 nm), mobil faza sifatida atsetonitril/metanol ko‘rsatilgan.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 133,
+    "quote": "Detektor: UB-spektroftometr (254 nm) Mobil faza: atsetonitril/metanol"
+   },
+   {
+    "text": "Ergoalkaloidlarning sifati va miqdorini aniqlashda UB-spektrofotometrik detektorli «Millixrom» 4-A markali mikrokolonkali suyuqlik xromatografidan foydalaniladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 156,
+    "quote": "Ergoalkaloidlarni sifat va miqdorini aniqlashda UB-spektrofotometrik detektorli «Millixrom» 4-A markali mikrokolonkali suyuqlik xromatografidan foydalaniladi."
+   },
+   {
+    "text": "Fentanilni YuSSX usulida tahlil qilishda kolonka sifatida silikagel sferosorb S5W (125 x 4,9 mm, 5 mkm) ishlatiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 48,
+    "quote": "kolonka – silikagel sferosorb S5W (125 x 4,9 mm, 5 mkm)"
+   },
+   {
+    "text": "Fentanilni YuSSX da tahlil qilishda detektor UB-diod, fentanilning ushlanish vaqti 0,8 daqiqaga teng.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 48,
+    "quote": "detektor - UB – diod; Tahlil jarayonida fentanilning ushlanish vaqti 0,8 daqiqaga teng bo‘ladi."
+   },
+   {
+    "text": "Morfin miqdori gaz-xromato-mass-spektrometriya yoki yuqori samarali suyuqlik xromatografiyasi-mass spektrometriya usulida aniqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 26,
+    "quote": "3. Morfinni miqdorini gaz-xromato-mass-spektrometriya yoki yuqori samarali suyuqlik xromatografiyasi-mass spektrometriya usulida aniqlanadi."
+   },
+   {
+    "text": "Ashyoviy dalillardan ajratib olingan LSD miqdorini, boshqa usullar qatori, yuqori samarali suyuqlik xromatografiya usulida ham aniqlash mumkin.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 97,
+    "quote": "Ashyoviy dalillardan ajratib olingan LSD miqdorini UB-spektrofotometriya, gaz-xromato-mass-spektrometriya va yuqori samarali suyuqlik xromatografiya usullarida aniqlash mumkin."
+   }
+  ],
+  "pages_read": [
+   133,
+   275,
+   276,
+   285,
+   26,
+   34,
+   48,
+   97,
+   156,
+   157
+  ]
+ },
+ {
+  "id": "sud_kimyo.c1.068",
+  "coverage": "partial",
+  "gaps": [
+   "gaz-xromato-mass-spektrometriya usulining nazariy asoslari, asbob tuzilishi va ion hosil qilish tamoyillari kitobda yoritilmagan",
+   "zaharli moddalarni GX-MS bilan tahlil qilishning umumiy tartibi (namuna tayyorlash, kalibrlash) keltirilmagan; faqat ayrim moddalar bo‘yicha m/z ko‘rsatkichlari berilgan"
+  ],
+  "points": [
+   {
+    "text": "Gaz xromatograflari gaz manbai, reduktor, tekshiriluvchi aralashma miqdorini o‘lchagich, xromatografik kolonka, detektorlar, termostat, dozator va yozib oluvchi qurilmadan iborat.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 46,
+    "quote": "Gaz xromatograflari quyidagi qismlardan iborat: gaz manbai, rеduktor, tеkshiriluvchi aralashma miqdorini o’lchagich, xromatografik kolonka, dеtеktorlar, tеrmostat, dozator, yozib oluvchi qurilma."
+   },
+   {
+    "text": "Gaz suyuqlik xromatografiyasida sifat tahlilining usullaridan biri uni UF, IK, mass-spektr, lyuminestsent, YaMR kabi fizik usullar bilan birgalikda bajarishdir.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 47,
+    "quote": "4. Gaz suyuqlik xromatografiyasini UF, IK, Mass-spеktr, lyuminеstsеnt, YaMR tahlillari kabi fizik usullar bilan birgalikda bajarish."
+   },
+   {
+    "text": "Gaz xromatografik tahlillarda modda miqdori ichki standart usuli, absolyut kalibrlash va ichki normallash usullarida aniqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 47,
+    "quote": "Gaz xromatografik tahlillarda modda miqdori uch xil usulda: ichki standart usuli, absolyut kalibrlash va ichki normallash usulida aniqlanadi."
+   },
+   {
+    "text": "Hozirgi davrda geroin gaz-suyuqlik xromatografiya, gaz-xromato-mass spektrometriya va immunobiologik usullar yordamida aniqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 37,
+    "quote": "Hozirgi davrda geroinni gaz-suyuqlik xromatografiya, gaz-xromato-mass spektrometriya va immunobiologik usullar yordamida aniqlanadi."
+   },
+   {
+    "text": "Morfin miqdori gaz-xromato-mass-spektrometriya yoki yuqori samarali suyuqlik xromatografiyasi-mass spektrometriya usulida aniqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 26,
+    "quote": "3. Morfinni miqdorini gaz-xromato-mass-spektrometriya yoki yuqori samarali suyuqlik xromatografiyasi-mass spektrometriya usulida aniqlanadi."
+   },
+   {
+    "text": "LSD gaz-xromato-mass-spektrometriya usulida aniqlanganda xarakterli 44, 72, 207, 221, 280, 323 m/z spektrlar hosil bo‘ladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 97,
+    "quote": "Gaz-xromato-mass-spektrometriya usulida aniqlash. LSD xarakterli 44, 72, 207, 221, 280, 323 m/z spektrlar hosil bo‘ladi."
+   },
+   {
+    "text": "Ashyoviy dalillardan ajratib olingan LSD miqdorini gaz-xromato-mass-spektrometriya usulida ham aniqlash mumkin.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 97,
+    "quote": "Ashyoviy dalillardan ajratib olingan LSD miqdorini UB-spektrofotometriya, gaz-xromato-mass-spektrometriya va yuqori samarali suyuqlik xromatografiya usullarida aniqlash mumkin."
+   },
+   {
+    "text": "Psilotsin xromato-mass spektrometriya usulida aniqlanishi mumkin: u 58, 204, 59, 42, 30, 146, 77, 44 m/z, psilotsibin esa 58, 42, 30, 51, 204, 146, 77, 44 m/z mass-spektrlarini hosil qiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 100,
+    "quote": "Psilotsinni xromato-mass spektrometriya usulida aniqlash mumkin. Bunda u 58, 204, 59, 42, 30, 146, 77, 44, psilotsibin esa 58, 42, 30, 51, 204, 146, 77, 44 m/z mass-spektrlarini hosil qiladi."
+   },
+   {
+    "text": "Psilotsin va psilotsibin miqdorini UB-spektrofotometriya va gaz-xromato-mass-spektrometriya usullarida aniqlash mumkin.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 100,
+    "quote": "Psilotsin va psilotsibin miqdorini UB-spektrofotometriya va gaz-xromato- mass-spektrometriya usullarida aniqlash mumkin."
+   },
+   {
+    "text": "Geksaxloran izomerlari va metabolitlarini GSX, GX-MS, YuSSX usullarida aniqlash mumkin.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 156,
+    "quote": "Gеksaxloran izomеrlarini va mеtabolitlarini GSX, GX-MS, YuSSX usullarda aniqlash mumkin."
+   },
+   {
+    "text": "Sintetik piretroidlarni tahlil qilish uchun YuQX, GSX, YuSSX, GX-MS va UB-spektrofotometrik usullar bo‘yicha uslublar ishlab chiqilgan.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 275,
+    "quote": "Sintеtik pirеtroidlarni YuQX, GSX, YuSSX, GX-MS va UB-spеktrofotomеtrik usullarida tahlil qilish uslublari ishlab chiqilgan."
+   }
+  ],
+  "pages_read": [
+   26,
+   37,
+   46,
+   47,
+   92,
+   97,
+   100,
+   131,
+   156,
+   275
+  ]
+ },
+ {
+  "id": "sud_kimyo.c1.069",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "A-6 standartiga ko‘ra sud kimyo ekspertizasiga yuboriladigan ichki a’zolar, qon va siydik taxmin qilinayotgan zaharning tabiati, kiritilish yo‘li, tarqalishi, chiqish yo‘li va tezligi, intoksikatsiya davomiyligi va davolash muolajalarini hisobga olib tanlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 87,
+    "quote": "taxmin qilinayotgan zaharning tabiati va uni a’zolarga kiritish yo‘li, tarqalishi, chiqish yo‘li va tezligi, intoksikatsiyaning kechish davomiyligi va davolash muolajalarini inobatga olgan holda turli ichki a’zolar, qon va siydik yuboriladi."
+   },
+   {
+    "text": "Sud-kimyo tekshiruviga qusuq moddalari, yuvindi suvning birinchi qismi, kimyoviy va dori moddalar, ovqatlar, ichimliklar va boshqa ob’ektlar ham yuboriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 87,
+    "quote": "Shuningdek sud-kimyo tekshiruviga qusuq moddalari, yuvindi suvning birinchi qismi, kimyoviy va dori moddalar, ovqatlar, ichimliklar va boshqa ob’ektlar ham yuboriladi."
+   },
+   {
+    "text": "Ichki a’zolar va biologik suyuqliklar shunday miqdorda yuboriladiki, uchdan bir qismi qayta tekshiruv uchun arxivda qolishi lozim.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 87,
+    "quote": "Ichki a’zolar va biologik suyuqliklar sud kimyo tekshiruvini o‘tkazish uchun yetarli miqdorda, ya’ni uchdan bir qismi qayta tekshiruv uchun arxivda qolishi lozimligini inobatga olgan holda yuboriladi."
+   },
+   {
+    "text": "Zaharli modda bilan zaharlanishga shubha qilinganda ichki a’zolar kompleksiga oshqozon ichidagi moddasi bilan, jigarning uchdan bir qismi kiradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 87,
+    "quote": "ichki a’zolar kompleksi: oshqozon ichidagi moddasi bilan, jigarning uchdan bir qismi"
+   },
+   {
+    "text": "Shu holda bitta buyrak, siydik (200 ml gacha) va 200 ml qon olinadi; har bir a’zo, qon va siydik alohida toza va quruq shisha bankaga joylanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 87,
+    "quote": "bitta buyrak, shuningdek siydik (200ml.gacha), 200ml qon olinadi. Har bir a’zo, qon, siydik alohida toza va quruq shisha bankaga joylanadi."
+   },
+   {
+    "text": "Zahar teri ostiga yoki mushaklar orasiga yuborilgan bo‘lsa, kiritilgan deb taxmin etilgan sohadan teri va mushaklar olinadi; ingalyatsion zaharlanishda o‘pka bo‘lagi va bosh miya olinadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 87,
+    "quote": "teri ostiga yoki mushaklar orasiga yuborilsa, moddaning kiritilganligi taxmin etilgan sohadan teri va mushaklar olinadi; ingalyatsion zaharlanishda - 300gr.dan eng to‘laqon sohadan o‘pka bo‘lagi va bosh miya olinadi."
+   },
+   {
+    "text": "Etanoldan zaharlanishga shubha bo‘lsa, qon va siydik 10-20 ml dan (tiqingacha to‘ldirilgan idishga) olinadi; qon oyoqlarning yirik venalari yoki miyaning qattiq pardasi sinuslaridan pipetka yoki shpris bilan olinadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 87,
+    "quote": "etanoldan - qon va siydik 10-20ml.dan (tiqingacha to‘ldirilgan idishga); qon oyoqlarning yirik venalari yoki miyaning qattiq pardasi sinuslaridan pipetka yoki shpris bilan olinadi."
+   },
+   {
+    "text": "Giyohvand vositalar va psixotrop moddalardan albatta qon (150 ml), siydik (150-200 ml) va o‘t pufagi olinadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 87,
+    "quote": "giyohvand vositalar va psixotrop moddalardan - albatta qon (150ml,) siydik( 150-200ml), o‘t pufagi"
+   },
+   {
+    "text": "Uchuvchi xlororganik moddalardan (jumladan xlororganik pestitsidlardan) zaharlanishda charvi bo‘lagi, 200 g bosh miya, qon, siydik, jigar va buyrak olinadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 87,
+    "quote": "uchuvchi xlororganik moddalardan (xloroform, xloralgidrat, uglerod to‘rt xlorid, dixloretan, xlororganik pestitsidlar va boshqa galogen hosilalar) - charvi bo‘lagi, 200g bosh miya, qon, siydik, jigar, buyrak;"
+   },
+   {
+    "text": "Ichki a’zolar qizilo‘ngach, oshqozon va ichakdagi moddalar mexanik aralashib ketmasligi uchun ikkitali ligatura qo‘yilgandan so‘ng ajratib olinadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 88,
+    "quote": "Ichki a’zolar qizilo‘ngach, oshqozon va ichakdagi moddalar mexanik aralashib ketmasligi uchun ikkitali ligatura qo‘yilgandan so‘ng ajratib olinadi;"
+   },
+   {
+    "text": "Tekshiriluvchi ob’ektlar faqat yurak glikozidlari bilan zaharlanishga shubha qilingandagina konservatsiya qilinadi; fiksatsiya uchun etil spirti ishlatiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 88,
+    "quote": "Tekshiriluvchi ob’ektlar, faqat yurak glikozidlari bilan zaharlanishga shubha qilingandagina konservatsiya qilinadi. Fiksatsiya uchun etil spirti ishlatiladi"
+   },
+   {
+    "text": "Bankalar zich yopilib, har biriga zarur yozuvli yorliq yopishtiriladi, muhrlangan polietilen xalta yoki konteynerga joylanadi va tekshiruvga yo‘llanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 88,
+    "quote": "Bankalar zich yopilib, har biriga zarur bo‘lgan yozuvli yorliq yopishtiriladi, muhrlangan polietilen xalta yoki konteynerga joylanadi va tekshiruvga yo‘llanadi."
+   }
+  ],
+  "pages_read": [
+   86,
+   87,
+   88
+  ]
+ },
+ {
+  "id": "sud_kimyo.c1.070",
+  "coverage": "partial",
+  "gaps": [
+   "metgemoglobin hosil qiluvchi zaharlarning ta’sir mexanizmi va har bir modda uchun alohida tahlil usullari kitobda yoritilmagan (nitrobenzol va anilin bo‘yicha alohida bo‘limlar faqat o‘quv rejasida nomi bilan keltirilgan)",
+   "qondagi metgemoglobinni aniqlash tartibi to‘liq berilmagan"
+  ],
+  "points": [
+   {
+    "text": "Metgemoglobin hosil qiluvchi zaharlarga ferrotsianidlar, anilin, nitrobenzol, kaliy permanganat, formaldegid, xromatlar, metilen ko‘ki va asetaldegid kiradi; metgemoglobinni aniqlash uchun qon olinadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 88,
+    "quote": "metgemoglobin hosil qiluvchi zaharlardan (ferrotsianidlar, anilin, nitrobenzol, kaliy permanganat, formaldegid, xromatlar, metilen ko‘ki, asetaldegid) - metgemoglobinni aniqlash uchun qon;"
+   },
+   {
+    "text": "Anilin va nitrobenzolni tahlil qilishda distillyatga natriy gidrokarbonat qo‘shib, efir bilan chayqatib ajratib olinadi, so‘ng efir uchirilib modda konsentratsiyasi oshiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 27,
+    "quote": "Fеnol, krеzollar, anilin, nitrobеnzol, amil spirti uchun tahlil olib borishda distillyatni natriy gidrokarbonat qo’shib, so’ng efir bilan chayqab ajratib olish, efirni uchirib, modda kontsеntratsiyasini oshirish."
+   },
+   {
+    "text": "Spektrofotometrik usul toksikologik kimyo laboratoriyalarida is gazi va boshqa gemoglobinga ta’sir etuvchi zaharlarni aniqlashda keng qo‘llanilmoqda.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 80,
+    "quote": "Spеktrofotomеtrik usul Toksikologik kimyo laboratoriyalarida is gazi va boshqa gеmoglobinga ta'sir etuvchi zaharlarni aniqlashda kеng qo’llanilmoqda."
+   }
+  ],
+  "pages_read": [
+   25,
+   26,
+   27,
+   80,
+   81,
+   87,
+   88
+  ]
+ },
+ {
+  "id": "sud_kimyo.c1.077",
+  "coverage": "partial",
+  "gaps": [
+   "brutsinning kimyoviy formulasi matnda berilmagan (faqat tuzilish rasmi bor, matndagi tavsifi OCR xatosi bilan buzilgan)",
+   "brutsinni biologik ob’ektlardan ajratib olishning alohida tartibi keltirilmagan, faqat ekstraksiya pH oralig‘i berilgan",
+   "«suyuq alkaloidlar» uchun yagona umumiy bo‘lim yo‘q: ma’lumot nikotin, koniin va uchuvchi asoslar distillyati bo‘yicha alohida keltirilgan"
+  ],
+  "points": [
+   {
+    "text": "Strixnin alkaloidi kuchala o‘simligi, qustiruvchi yong‘oq va boshqa o‘simliklarda brutsin alkaloidi bilan birgalikda uchraydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 105,
+    "quote": "Strixnin alkaloidi kuchala o’simligi, qustiruvchi yong’oq va boshqa o’simliklarda brutsin alkaloidi bilan birgalikda uchraydi."
+   },
+   {
+    "text": "Brutsin asos holida etil spirtida, xloroformda, dietil efirida yaxshi, suvda yomon eriydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 106,
+    "quote": "Brutsin asos holida etil spirtida, xloroformda, dietilefirida yaxshi, suvda yomon eriydi."
+   },
+   {
+    "text": "Brutsin ishqoriy ham, kislotali sharoitda ham organik erituvchi qatlamiga o‘tadi (pH=7,5-12).",
+    "book": "toks_kimyo_majmua_A",
+    "page": 106,
+    "quote": "Brutsin alkaloidi ham ishqoriy ham kislotali sharoitda organik erituvchi qatlamiga erib o’tadi (pH=7,5-12)."
+   },
+   {
+    "text": "Brutsin tibbiyotda qo‘llanilmaydi, amaliyotda nitrat kislotasini aniqlashda ishlatiladi; toksikologik kimyo tahlillarida kuchala yoki undan olingan preparatlar bilan zaharlanganda bioob’ektdan aniqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 106,
+    "quote": "Brutsin tibbiyotda qo’llanilmaydi, u amaliyotda nitrat kislotasini aniqlashda ishlatiladi. Brutsin Toksikologik kimyo tahlillarida kishi kuchala yoki undan olingan prеparatlar bilan zaharlanganda bioob'еktdan aniqlanadi."
+   },
+   {
+    "text": "Brutsinning asosiy qismi organizmda metabolizmga uchraydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 106,
+    "quote": "Organizmda brutsinning asosiy qismi mеtabolizmga uchraydi."
+   },
+   {
+    "text": "Brutsin qalay (II)-xloridi va nitrat kislota bilan hamda Erdman reaktivi bilan qizil rang beradi (strixnin bermaydi).",
+    "book": "toks_kimyo_majmua_A",
+    "page": 106,
+    "quote": "2. Qalay (II)-xloridi va nitrat kislota bilan qizil rang bеradi (strixnin bеrmaydi). 3. Erdman rеaktivi bilan qizil rang bеradi (strixnin bеrmaydi)."
+   },
+   {
+    "text": "Nitrat kislotasi brutsin uchun xususiy reaktiv hisoblanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 104,
+    "quote": "Masalan: nitrat kislotasi - brutsin uchun, xlorid, sulfat, nitrat kislotalari - veratrin uchun xususiy reaktiv bo‘lib hisoblanadi."
+   },
+   {
+    "text": "Brutsin miqdori FEK va SF usullarida aniqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 106,
+    "quote": "Miqdori. FEK va SF usullarda"
+   },
+   {
+    "text": "Nikotin boshqa suyuq alkaloidlar singari uchuvchan va havoda tez oksidlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 110,
+    "quote": "Nikotin boshqa suyuq alkaloidlar singari uchuvchan va havoda tеz oksidlanadi"
+   },
+   {
+    "text": "Uchuvchi zaharlar suv bug‘i bilan haydab ajratilganda olingan distillyat anilin, piridin, arekolin, koniin, nikotin, anabazin, efedrin, fenamin kabi asos xossasiga ega moddalarga tekshiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 25,
+    "quote": "Olingan distillyat anilin, piridin, arеkolin, koniin, nikotin, anabazin, efеdrin, fеnamin kabi asos xossasiga ega moddalarga tеkshiriladi."
+   },
+   {
+    "text": "Nikotinni ashyoviy dalillardan nordonlashtirilgan spirt yoki suv bilan, shuningdek suv bug‘i bilan haydash usulida ajratib olish tavsiya etiladi; organik erituvchilar bilan asosan ishqoriy muhitda ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 111,
+    "quote": "Nikotinni ashyoviy dalillar tarkibidan ajratib olish uchun nordonlashtirilgan spirt yoki suv usularidan tashqari, suv bug’i bilan haydash usuli ham tavsiya etiladi. Organik erituvchilar bilan qisman kislotali, asosan ishqoriy muhitda ekstraktsiyalanadi."
+   },
+   {
+    "text": "Nikotin miqdori FEK va SF usulida aniqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 112,
+    "quote": "Miqdorini aniqlash. FEK va SF usulda aniqlanadi."
+   }
+  ],
+  "pages_read": [
+   24,
+   25,
+   104,
+   105,
+   106,
+   110,
+   111,
+   112,
+   114,
+   115,
+   116
+  ]
+ },
+ {
+  "id": "sud_kimyo.c1.078",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Atropin tropin spirti va trop kislotasidan hosil bo‘lgan murakkab efir bo‘lib, belladonna o‘simligidan ajratib olinadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 118,
+    "quote": "Atropin - tropin spirti va trop kislotasidan hosil bo’lgan murakkab efir hisoblanib, bеlladonna o’simligidan ajratib olinadi."
+   },
+   {
+    "text": "Atropin izomeri giostsiamin atropindan faqat qutblangan nurni chapga burishi bilan farqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 118,
+    "quote": "Atropin izomеri - giostsiamin, atropindan faqatgina qutblangan nurni chapga burishi bilan farqlanadi."
+   },
+   {
+    "text": "Atropin asos holida organik erituvchilarda yaxshi, suvda yomon eriydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 118,
+    "quote": "Atropin asos holida organik erituvchilarda yaxshi, suvda yomon eriydi."
+   },
+   {
+    "text": "Atropin ishqoriy muhitda organik erituvchilar bilan ekstraksiyalab ajratib olinadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 118,
+    "quote": "Atropin ishqoriy muhitda organik erituvchilar bilan ekstraktsiyalab ajratib olinadi."
+   },
+   {
+    "text": "Organizmda atropin trop kislotasi va tropin spirtigacha parchalanadi va bir necha metabolitlar hosil qiladi; atropinning 50% o‘zgarmagan holda peshob orqali ajraladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 119,
+    "quote": "Umuman, atropin organizmda trop kislotasi va tropin spirtigacha parchalanadi, undan tashqari bir nеcha mеtabolitlar hosil qilib, organizmga tushgan atropinning 50% o’zgarmagan holda pеshob orqali ajraladi."
+   },
+   {
+    "text": "Vitali-Moren reaksiyasida atropin bo‘lganda tez o‘chib ketuvchi binafsha rang hosil bo‘ladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 251,
+    "quote": "Atropin bo’lgan holda tеz o’chib kеtuvchi binafsha rang hosil bo’ladi."
+   },
+   {
+    "text": "Vitali-Moren reaksiyasi manfiy bo‘lsa atropin yo‘qligidan dalolat beradi, musbat bo‘lsa qo‘shimcha tasdiqlovchi reaksiyalar talab etiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 119,
+    "quote": "Rеaktsiya manfiy bo’lsa atropinni yo’qligidan dalolat bеradi, lеkin musbat rеaktsiya qo’shimcha tasdiqlovchi rеaktsiyalar olib borishni taqozo etadi."
+   },
+   {
+    "text": "Reyneke tuzi bilan atropin romb shaklidagi pushti rangli kristallar, pikrin kislota bilan esa to‘g‘ri burchakli plastinka shaklidagi kristallar hosil qiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 119,
+    "quote": "3. Rеynеkе [(NH4)Cr(NH3)2(SCN)4] tuzi bilan romb shaklidagi pushti rangli kristallar hosil qiladi. 4. Pikrin kislota bilan to’g’ri burchakli plastinka shaklidagi kristallar hosil qiladi."
+   },
+   {
+    "text": "Atropin p-dimetilaminobenzaldegid va konsentrlangan H2SO4 bilan qizil rang beradi; shu qizil rang asosida FEK usulida miqdori aniqlanadi, UB-spektri bo‘yicha ham aniqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 119,
+    "quote": "8. p- Dimеtilaminobеnzaldеgid va kontsеntrlangan H2SO4 bilan qizil rang bеradi. Miqdor tahlili FEK - n- dimеtilaminobеnzaldеgid va kontsеntrlangan H2SO4 - qizil rang asosida, UB-spеktri bo’yicha."
+   },
+   {
+    "text": "Atropin YuQX da Rf=0,26 (xloroform-atseton-dietilamin 50:30:2); 0,1 M H2SO4 dagi eritmasi 252, 258, 264 nm da maksimumlar hosil qiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 252,
+    "quote": "7.YuQX usulda aniqlash. Rf=0,26 (xloroform-atsеton-dietilamin 50:30:2) 8. Spеktral tahlil. Atropinning 0,1 M H2SO4 dagi eritmasi λ=252, 258, 264 nm da maksimumlar hosil qiladi."
+   },
+   {
+    "text": "Atropin tajriba hayvonlari ko‘z qorachig‘ini kengaytiradi (farmakologik tekshiruv).",
+    "book": "toks_kimyo_majmua_A",
+    "page": 119,
+    "quote": "7. Farmakologik tеkshiruv. Atropin tajriba hayvonlari ko’z qorachig’ini kеngaytiradi."
+   }
+  ],
+  "pages_read": [
+   104,
+   105,
+   118,
+   119,
+   251,
+   252
+  ]
+ },
+ {
+  "id": "sud_kimyo.c1.079",
+  "coverage": "full",
+  "gaps": [
+   "kitobda skopolaminning Reyneke tuzi va oltin bromid kislotasi bilan hosil qilgan kristallari 120- va 252-sahifalarda turlicha tavsiflangan, shuning uchun bu reaksiyalar javobga kiritilmadi"
+  ],
+  "points": [
+   {
+    "text": "Skopolamin bangidevona o‘simligida uchraydi va skopin hamda trop kislotasidan tashkil topgan murakkab efirdir.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 120,
+    "quote": "Skopolamin bangidеvona o’simligida uchrab, u skopin va trop kislotasidan tashkil topgan murakkab efirdir."
+   },
+   {
+    "text": "Skopolamin asos holida quyuq qiyomsimon modda bo‘lib, organik erituvchilarda yaxshi eriydi; tuzi suvda, spirtda yaxshi eriydi, efir va xloroformda erimaydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 120,
+    "quote": "Asos holida quyuq qiyomsimon modda bo’lib, organik erituvchilarda yaxshi eriydi, tuzi esa suvda, spirtda yaxshi erib, efir va xloroformda erimaydi."
+   },
+   {
+    "text": "Skopolamin organik erituvchilar bilan ishqoriy muhitda ajratib olinadi (pH=8-10).",
+    "book": "toks_kimyo_majmua_A",
+    "page": 120,
+    "quote": "Organik erituvchilar bilan ishqoriy muhitda ajratib olinadi (pH=8-10)."
+   },
+   {
+    "text": "Skopolamin organizmda oqsillar bilan yaxshi birikadi, qisman gidrolizlanadi; asosan jigarda parchalanadi va peshob bilan chiqariladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 120,
+    "quote": "Organizmda oqsillar bilan yaxshi birikadi, qisman gidrolizlanadi. Asosan jigarda parchalanadi va pеshob bilan chiqariladi."
+   },
+   {
+    "text": "Skopolamin atropin kabi ko‘z qorachig‘ini kengaytiradi, shilliq parda mushaklarini bo‘shashtiradi, bezlar sekretsiyasini susaytiradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 120,
+    "quote": "Skopolamin atropin kabi ko’z qorachig’ini kеngaytiradi, shilliq parda mushaklarini bo’shashtiradi, bеzlar sеkrеtsiyasini susaytiradi."
+   },
+   {
+    "text": "Skopolamin ham Vitali-Moren reaksiyasini beradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 252,
+    "quote": "2. Skopolamin ham Vitali-Morеn rеaktsiyasini bеradi."
+   },
+   {
+    "text": "Skopolamin Dragendorf reaktivi bilan qo‘ng‘ir rangli ninasimon kristallar hosil qiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 120,
+    "quote": "3. Dragеndorf rеaktivi bilan qo’ng’ir rangli ninasimon kristallar hosil qiladi."
+   },
+   {
+    "text": "YuQX da skopolamin Rf=0,44; xromatografiyada atropinni aniqlashda qo‘llanilgan sistema ishlatiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 252,
+    "quote": "7. YuQX Rf= 0,44. Xromatografik jarayonni amalga oshirishda atropinni aniqlashda qo’llanilgan sistеmadan foydalaniladi."
+   },
+   {
+    "text": "Skopolamin miqdori ekstraksion fotometrik usulda aniqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 120,
+    "quote": "Miqdor tahlili. Ekstraktsion fotomеtrik usulda."
+   }
+  ],
+  "pages_read": [
+   119,
+   120,
+   251,
+   252
+  ]
+ },
+ {
+  "id": "sud_kimyo.c1.080",
+  "coverage": "partial",
+  "gaps": [
+   "koniinning kimyoviy formulasi matnda OCR xatosi bilan berilgan (propilpiperidin), shuning uchun javobga kiritilmadi",
+   "metabolizmi kitobda «o‘rganilmagan» deb ko‘rsatilgan"
+  ],
+  "points": [
+   {
+    "text": "Koniin alkaloidini soyovongullilar oilasiga mansub dog‘li sikuta yoki boligolov o‘simligi tarkibidan Gofman ajratib olgan.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 114,
+    "quote": "Dog’li sikuta yoki boligolov nomli soyovongullilar oilasiga mansub o’simlik tarkibidan Gofman ajratib olgan."
+   },
+   {
+    "text": "Kimyoviy toza koniin sichqon peshobining hidini eslatuvchi rangsiz moysimon suyuqlik bo‘lib, havoda tez oksidlanib, qo‘ng‘ir rangga o‘tadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 114,
+    "quote": "Kimyoviy toza koniin o’ziga hos sichqon pеshobining hidini eslatuvchi rangsiz moysimon suyuqlik, havoda tеz oksidlanib, qo’ng’ir rangga o’tadi."
+   },
+   {
+    "text": "Asos holidagi koniin suvda, ayniqsa sovuq suvda (1:100), yaxshi eriydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 114,
+    "quote": "Asos holidagi koniin suvda, ayniqsa sovuq suvda, (1:100) yaxshi eriydi"
+   },
+   {
+    "text": "Koniinning metabolitlari o‘rganilmagan.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 115,
+    "quote": "Mеtabolitlari o’rganilmagan."
+   },
+   {
+    "text": "Koniin bo‘yicha ashyoviy dalil sifatida oshqozon, ichak bo‘laklaridan tashqari peshob qopchasi va qon ham kimyoviy tahlilga yuborilishi mumkin.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 115,
+    "quote": "Shuning uchun ham ashyoviy dalillar sifatida oshqozon, ichak bo’laklaridan tashqari pеshob qopchasi va qon kimyoviy tahlilga yuborilishi mumkin."
+   },
+   {
+    "text": "Koniinni ashyoviy dalillardan ajratib olish uchun nordonlashtirilgan spirt yoki bioob’ektni soda bilan aralashtirib suv yordamida va suv bug‘i yordamida haydab ajratib olinadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 115,
+    "quote": "Ashyoviy dalillar tarkibidan ajratib olish uchun nordonlashtirilgan spirt yoki bioob'еktni soda bilan aralashtirib suv yordamida va suv bug’i yordamida haydab ajratib olinadi."
+   },
+   {
+    "text": "Ajralmalardan koniin ishqoriy muhitda efir bilan ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 115,
+    "quote": "Ajralmalardan koniinni ishqoriy muhitda efir bilan ekstraktsiyalanadi."
+   },
+   {
+    "text": "Dragendorf reaktivi koniin bilan qizil rangli romba shaklidagi mikrokristallar hosil qiladi; reaksiyaning sezgirligi 3,5 mkg.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 115,
+    "quote": "Dragеndorf rеaktivi koniin alkaloidi bilan hosil qilgan cho’kma qizil rangli romba shaklidagi xaraktеrli mikrokristallardan iborat bo’ladi (7.18-rasm). Rеaktsiyaning koniinga nisbatan sеzgirligi 3,5 mkg ga tеng."
+   },
+   {
+    "text": "Asos ko‘rinishidagi koniin xlorid kislota bug‘lari bilan koniin xlorid hosil qiladi; u buralgan ninasimon mikrokristallar yig‘indisidan iborat, sezgirligi 0,33 mkg.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 115,
+    "quote": "Asos ko’rinishidagi koniin alkaloidi xlorid kislota bug’lari bilan koniin xlorid hosil qiladi. Koniin xloridi xaraktеrli buralgan ninasimon mikrokristallar yig’indisidan iborat. Rеaktsiyaning sеzgirligi 0,33 mkg ga tеng."
+   },
+   {
+    "text": "Kislotali ajralmadan qolgan qoldiq mis sulfatining ammiakli eritmasi, so‘ng uglerod (IV) sulfidi va benzol aralashmasi bilan ishlansa, koniin bo‘lsa benzol qatlamida qo‘ng‘ir-sariq rang hosil bo‘ladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 116,
+    "quote": "Probirkadagi kislotali ajralmadan qolgan qoldiq ustiga mis sulfatini ammiakli eritmasi qo’shib chayqatiladi, so’ng uglеrod (IV) sulfidi va bеnzol aralashmasi qo’shiladi. Koniin bo’lsa bеnzol qatlamida qo’ng’ir- sariq rang hosil bo’ladi."
+   },
+   {
+    "text": "Koniin 0,2 n sulfat kislotasidagi eritmasida 266 nm, 0,1 n ishqordagi eritmasida 262 nm va 268 nm to‘lqin uzunliklarida maksimal nur yutadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 116,
+    "quote": "6. UB spеktri bo’yicha aniqlash: Koniin 0,2 n sulfat kislotasidagi eritmasi 266 nm to’lqin uzunligida, 0,1 n ishqordagi eritmasi 262 nm va 268 nm to’lqin uzunliklarida maksimal nur yutadi."
+   },
+   {
+    "text": "Koniin miqdori UB spektri asosida spektrofotometrik usulda aniqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 116,
+    "quote": "Miqdorini aniqlash: UB spеktri asosida spеktrofotomеtrik usul qo’llaniladi."
+   }
+  ],
+  "pages_read": [
+   114,
+   115,
+   116,
+   327
+  ]
+ },
+ {
+  "id": "sud_kimyo.c1.081",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Arekolin kislota va ishqorlar ta’sirida gidrolizlanib, metil spirt va arekoidin (N-metil tetragidronikotin kislota) hosil qiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 117,
+    "quote": "Arеkolin kislota va ishqorlar ta'sirida gidrolizlanib, mеtil spirt va arеkoidinni (N - mеtil tеtragidronikotin kislota) hosil qiladi."
+   },
+   {
+    "text": "Kimyoviy toza arekolin rangsiz, quyuq moysimon suyuqlikdir.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 116,
+    "quote": "Kimyoviy toza arеkolin rangsiz, quyuq moysimon suyuqlik"
+   },
+   {
+    "text": "Arekolin suv bug‘i bilan yaxshi haydaladi; suv, spirt, efir va xloroformda eriydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 116,
+    "quote": "Suv bug’i bilan yaxshi haydaladi. Suv, spirt, efir va xloroformda eriydi."
+   },
+   {
+    "text": "Arekolin kuchli zaharli modda bo‘lib, uni 0,5-1,5 mg dan ortiq qabul qilish zaharlanish alomatlarini keltirib chiqaradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 117,
+    "quote": "Arеkolin kuchli zaharli modda, uning 0,5-1,5 mg dan ortiq qabul qilish zaharlanish alomatlarini kеltirib chiqaradi."
+   },
+   {
+    "text": "Arekolin murda organlarida uzoq vaqt saqlanadi: 2 mg arekolin 100 g biologik ob’ektga qo‘shib saqlanganda 2-2,5 oydan keyin ham aniqlangan.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 117,
+    "quote": "Arеkolin alkaloidi murda organlarida uzoq vaqt saqlanadi: 2 mg arеkolinni 100 g biologik ob'еktga qo’shib saqlaganda 2-2,5 oydan kеyin ham aniqlangan."
+   },
+   {
+    "text": "Sud kimyosi amaliyotida arekolinni tekshirish faqat sud organlari topshirig‘i bilan olib boriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 117,
+    "quote": "Sud kimyosi amaliyotida arеkolinni tеkshirish faqat sud organlari topshirig’i bilan olib boriladi."
+   },
+   {
+    "text": "Arekolinni bioob’ektdan ajratishda ishqoriy muhit hosil qilish uchun natriy bikarbonat tuzi eritmasidan foydalanish tavsiya etilgan.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 117,
+    "quote": "Arеkolinni bioob'еktdan ajratishda ishqoriy muhit hosil qilish uchun natriy bikarbonat tuzi eritmasidan foydalanish tavsiya etilgan."
+   },
+   {
+    "text": "Arekolin boshqa uchuvchi alkaloidlar singari nordonlashtirilgan spirt yoki suv bilan hamda suv bug‘i yordamida haydab, so‘ng ishqoriy muhitda ekstraksiyalab ajratiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 117,
+    "quote": "Sud kimyosi tahlillarida arеkolinni ham boshqa uchuvchi alkaloidlarni ashyoviy dalil tarkibidan ajratish singari, nordonlashtirilgan spirt yoki suv bilan hamda suv bug’i yordamida haydab, so’ng ishqoriy muhitda ekstraktsiyalab ajratiladi."
+   },
+   {
+    "text": "Dragendorf reaktivi va 0,1 n HCl bilan 30 daqiqa saqlansa, arekolin qizil rangli «x» shaklidagi mikrokristallar to‘plamini hosil qiladi; aniqlash chegarasi 0,2 mkg.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 117,
+    "quote": "Buyum oynachasidagi qoldiqqa 0,1n HCl va Dragеndorf rеaktivi tomizilib, 30 daqiqa saqlansa arеkolin qizil rangli “x” shaklidagi mikrokristallar to’plamini hosil qiladi (8-rasm). Arеkolin uchun aniqlash chеgarasi 0,2 mkg."
+   },
+   {
+    "text": "Pikrin kislotasi bilan arekolin to‘q yashil rangli sferolitlar hosil qiladi, vaqt o‘tishi bilan ayrim prizmatik kristallar paydo bo‘ladi; aniqlash chegarasi 0,2 mkg.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 117,
+    "quote": "Buyum oynachasidagi qoldiqqa xlorid kislotasi eritmasi, so’ng pikrin kislotasi tomizilsa, bir nеcha daqiqadan so’ng to’q yashil rangli sfеrolitlar hosil bo’lib, vaqt o’tishi bilan ayrim prizmatik kristallar hosil bo’ladi. Aniqlash chеgarasi 0,2 mkg ga tеng."
+   },
+   {
+    "text": "YuQX da qo‘zg‘aluvchi faza metanol – konsentrlangan ammoniy gidroksid (100:1,5), tasdiqlovchi reagent kaliy permanganat eritmasi; Rf=0,53, qizg‘ish fonda oq dog‘ hosil bo‘ladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 117,
+    "quote": "4. Yupqa qatlam xromatografik usulda aniqlash. Qo’zg’aluvchi faza mеtanol – kontsеntrlangan ammoniy gidroksid (100:1,5), tasdiqlovchi rеagеnt - kaliy pеrmanganat eritmasi. Rf=0,53 tеng, qizg’ish fonda oq dog’ hosil bo’ladi."
+   },
+   {
+    "text": "Arekolinning spirtli eritmasi 214 nm to‘lqin uzunligida maksimum hosil qiladi; miqdori spirtli eritmada UB spektri asosida spektrofotometrik usulda aniqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 118,
+    "quote": "5. UB-spеktri bo’yicha aniqlash. Arеkolinni spirtli eritmasi 214 nm to’lqin uzunligida maksimum hosil qiladi. 6. IQ spеktri. 1712, 1650, 1282,1262, 1135, 1020, sm-1 da spеktrlar hosil qiladi. Miqdorini aniqlash. Arеkolinni spirtli eritmada UB spеktri asosida spеktrofotomеtrik usulda aniqlanadi."
+   }
+  ],
+  "pages_read": [
+   116,
+   117,
+   118,
+   327
+  ]
+ },
+ {
+  "id": "sud_kimyo.c1.082",
+  "coverage": "partial",
+  "gaps": [
+   "papaverinning kimyoviy formulasi matnda so‘z bilan berilmagan (faqat tuzilish rasmi bor)",
+   "papaverinni biologik ob’ektlardan ajratib olish bo‘yicha faqat kislotali va ishqoriy xloroformli ajralmalarni qidirish ko‘rsatilgan, batafsil tartib yo‘q"
+  ],
+  "points": [
+   {
+    "text": "1884 yilda opiy tarkibida papaverin alkaloidi borligi aniqlangan; u opiy tarkibida 0,1-1,5% atrofida uchraydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 124,
+    "quote": "1884 yilda opiy tarkibida papaverin alkaloidi borligi aniqlangan, u opiy tarkibida 0,1-1,5% atrofida uchraydi."
+   },
+   {
+    "text": "Papaverin kuchsiz asos xossali modda bo‘lgani tufayli ba’zan kislotali sharoitda ham xloroform qavatiga o‘tadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 124,
+    "quote": "Papaverin kuchsiz asos xossali modda bo‘lgani tufayli ba’zan kislotali sharoitda ham xloroform qavatiga"
+   },
+   {
+    "text": "Papaverin qon tomirlari va qorin bo‘shlig‘i silliq muskullarini bo‘shashtirish xususiyatiga ega, shuning uchun tibbiyotda keng qo‘llaniladi; zaharli ta’siri morfinga nisbatan kuchsiz, eng yuqori dozasi 0,1 g.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 125,
+    "quote": "Papaverin qon tomirlari va qorin boshlig‘i silliq muskullarini bo‘shashtirish xususiyatiga ega, shuning uchun ham u tibbiyotda keng qo‘llaniladi. Zaharli ta’siri morfinga nisbatan kuchsiz, eng yuqori dozasi 0,1 g teng."
+   },
+   {
+    "text": "Papaverinning metabolitlanishi asosan metil radikallarining demetilanishi bilan bog‘liq: fenol birikmalari hosil bo‘lib, glyukuronidlar holida peshob bilan chiqariladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 125,
+    "quote": "Metabolitlanishi asosan metil radikallarini demetilanishi bilan bog‘liq va bunda fenol birikmalari hosil bo‘lib, glyukuronidlar holida peshob bilan chiqariladi."
+   },
+   {
+    "text": "Sud kimyosi tahlilida papaverinni ashyoviy dalillardan ajratib olishda ham kislotali, ham ishqoriy muhitda olinadigan xloroformli eritmalardan qidirish kerak.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 125,
+    "quote": "Sud kimyosi tahlilida papaverin alkaloidini ashyoviy dalillardan ajratib olishda ham kislota, ham ishqoriy muhitda olinadigan xloroformli eritmalaridan qidirish kerak."
+   },
+   {
+    "text": "Papaverin umumiy cho‘ktiruvchi reaktivlar bilan cho‘kma hosil qiladi; Marki, Frede va Erdman reaktivlari bilan xarakterli qizil rang beradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 125,
+    "quote": "1. Umumiy cho‘ktiruvchi reaktivlar bilan papaverin cho‘kma hosil qiladi. 2. Rang hosil qiluvchi Marki, Frede va Erdman reaktivlari papaverin alkaloidi bilan xarakterli qizil rang hosil qiladi."
+   },
+   {
+    "text": "Kadmiy xloridi bilan papaverin rangsiz kub shaklidagi plastinkalar to‘plamidan iborat kristallar hosil qiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 125,
+    "quote": "3. Kadmiy xloridi bilan reaksiyasi. Buyum oynachasidagi qoldiq 0,1 n xlorid kislotasida eritilib yoniga 10% kadmiy xloridi eritmasini tomizilsa, tomchilar birlashganda rangsiz kub shaklidagi plastinkalar to‘plamidan iborat kristallar hosil bo‘ladi."
+   },
+   {
+    "text": "Yod eritmasi papaverin bilan qizil rang beradi; reaksiyaning sezgirligi 0,1 mkg papaveringa teng.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 125,
+    "quote": "4. Yod eritmasi bilan reaksiyasi. Yod eritmasi bu alkaloid bilan qizil rang beradi. Reaksiyaning sezgirligi 0,1 mkg papaveringa teng."
+   },
+   {
+    "text": "Sobolev reaksiyasida Marki reaktivi ta’sirida papaverindan metilenbis-papaverin hosil bo‘ladi; u brom suvi bilan oksidlansa va ammiak eritmasi qo‘shilsa, barqaror binafsha rangga bo‘yaladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 125,
+    "quote": "5. Sobolev taklif etgan reaksiya. Marki reaktivi ta’sirida papaverindan - metilenbis- papaverin hosil bo‘ladi. U brom suvi bilan oksidlansa va so‘ng unga ammiak eritmasi qo‘shilsa barqaror binafsha rangga bo‘yaladi."
+   },
+   {
+    "text": "Papaverin asosining 0,1 n xlorid kislotasidagi eritmasi 250, 284 va 310 nm da spektral maksimumlar hosil qiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 125,
+    "quote": "7. UB-spektral aniqlash. Papaverin asosini 0,1 n xlorid kislotasidagi eritmasi 250, 284 va 310 nm da spektral maksimumlar hosil qiladi."
+   },
+   {
+    "text": "Papaverin miqdori UB-spektri bo‘yicha spektrofotometrik usulda aniqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 125,
+    "quote": "Miqdorini aniqlash: UB-spektri bo‘yicha spektrofotometrik usulda aniqlanadi."
+   }
+  ],
+  "pages_read": [
+   124,
+   125
+  ]
+ },
+ {
+  "id": "sud_kimyo.c1.083",
+  "coverage": "full",
+  "gaps": [
+   "tahlil to‘lqin uzunliklari kitobda sahifalar orasida bir-biriga mos kelmagani uchun (masalan, 534/538 nm va COHb/Hb maksimumlari) javobga kiritilmadi; formulaning o‘zi rasm sifatida berilgan"
+  ],
+  "points": [
+   {
+    "text": "Uglerod (II) oksidi (is gazi) rangsiz, hidsiz, mazasiz, tez ta’sir etuvchi zaharli moddadir.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 78,
+    "quote": "Uglеrod (II) oksidi (is gazi) rangsiz, hidsiz, mazasiz, tеz ta'sir etuvchi zaharli modda."
+   },
+   {
+    "text": "Is gazi bilan zaharlanganda CO gemoglobin bilan juda oson birikib, barqaror karboksigemoglobin birikmasini hosil qiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 79,
+    "quote": "Inson is gazi bilan zaharlanganda CO gеmoglobin bilan juda oson birikadi va barqaror karboksigеmoglobin birikmasini hosil qiladi."
+   },
+   {
+    "text": "Is gazining gemoglobin bilan birikish tezligi kislorodning gemoglobin bilan birikishiga nisbatan 300 marta kuchli.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 79,
+    "quote": "Is gazining gеmoglobin bilan birikish tеzligi, kislorodning gеmoglobin bilan birikishiga nisbatan 300 marta kuchli."
+   },
+   {
+    "text": "Qonda karboksigemoglobin aniqlansa, bemorning is gazi bilan zaharlanganligi isbotlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 80,
+    "quote": "Qonda karboksigеmoglobin moddasi aniqlansa bеmorning is gazi bilan zaharlanganligini isbotlaydi."
+   },
+   {
+    "text": "Is gazini aniqlash qondagi karboksigemoglobinni kimyoviy va fizik-kimyoviy (spektroskopik, spektrofotometrik, fotometrik, gaz xromatografik) usullar yordamida aniqlashga asoslangan.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 80,
+    "quote": "Zaharlanish hollarida is gazini aniqlash qondagi karboksigеmoglobinni kimyoviy va fizik-kimyoviy (spеktroskopik, spеktrofotomеtrik, fotomеtrik, gaz xromatografik) usullar yordamida aniqlashga asoslangan."
+   },
+   {
+    "text": "Is gazini ob’ekt tarkibidan aniqlash uchun ob’ekt ezilib qoni ajratiladi, so‘ng qon tarkibi tekshiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 80,
+    "quote": "Is gazini ob'еkt tarkibidan aniqlash uchun ob'еktni ezib qoni ajratiladi va so’ng qon tarkibi tеkshiriladi."
+   },
+   {
+    "text": "Spektrofotometrik usul mohiyati oksigemoglobin hamda karboksigemoglobinni dezoksigemoglobingacha qaytarib, uning optik ko‘rsatkichini aniqlashga asoslangan.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 80,
+    "quote": "Usul mohiyati oksigеmoglobin hamda karboksigеmoglobinni dеzoksigеmoglobingacha qaytarib, uning optik ko’rsatkichini aniqlashga asoslangan."
+   },
+   {
+    "text": "Dezoksigemoglobin, oksigemoglobin va karboksigemoglobinning chinligi va miqdorini 450-620 nm to‘lqin uzunligi sohasidagi nur yutish spektrlariga asoslanib aniqlash mumkin.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 81,
+    "quote": "Yuqorida kеltirilgan gеmoglobindan hosil bo’ladigan moddalarni (dеzoksigеmoglobin, oksigеmoglobin va karboksigеmoglobin) 450-620 nm to’lqin uzunligi sohasida nur yutish spеktrlariga asoslanib chinligi va miqdorini aniqlash mumkin."
+   },
+   {
+    "text": "A eritma uchun 1 ml quyqalarsiz qonga 100 ml bo‘lguncha pH-7,38 fosfat buferi yoki 0,1% ammiakning suvli eritmasi qo‘shib aralashtiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 81,
+    "quote": "A - eritmani tayyorlash uchun 1 ml quyqalar saqlamagan qonga 100 ml bo’lguncha pH-7,38 ga tеng fosfat bufеri yoki 0,1% ammiakni suvli eritmasidan qo’shib aralashtiriladi."
+   },
+   {
+    "text": "B eritma uchun A eritmaga 3-4 mg natriy ditionit (gidrosulfat) kristallari qo‘shiladi; bunda oksigemoglobin to‘liq dezoksigemoglobingacha qaytariladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 81,
+    "quote": "B - eritmani tayyorlash uchun spеktrofotomеtr kyuvеtasiga A-eritmadan qo’yiladi va ustiga 3-4 mg ditionit (gidrosulfat) natriy (Na2S2O4.2H2O) kristallari qo’shib yaxshilab aralashtiriladi. Bunda oksigеmoglobin to’liq dеzoksigеmoglobingacha qaytariladi."
+   },
+   {
+    "text": "Karboksigemoglobinning qondagi foiz miqdori olingan optik zichliklar asosida formula yordamida hisoblanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 82,
+    "quote": "Olingan ma'lumotlar asosida karboksigеmoglobinning qondagi foiz miqdori formula yordamida hisoblanadi."
+   },
+   {
+    "text": "Qondagi is gazini kimyoviy reaksiyalar bilan tasdiqlashda faqat bitta reaksiya natijasiga asoslanish xatolikka olib kelishi mumkin.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 222,
+    "quote": "faqat bitta rеaksiya natijasiga asoslanish xatolikka olib kеlishi mumkin"
+   }
+  ],
+  "pages_read": [
+   78,
+   79,
+   80,
+   81,
+   82,
+   83,
+   87,
+   88,
+   221,
+   222,
+   223,
+   224
+  ]
+ },
+ {
+  "id": "sud_kimyo.c1.084",
+  "coverage": "partial",
+  "gaps": [
+   "xlororganik pestitsidlar guruhi bo‘yicha yagona umumiy ajratib olish va tahlil sxemasi kitobda yo‘q: sifat va miqdor tahlili asosan geksaxloran (geksaxlortsiklogeksan) misolida berilgan",
+   "149-sahifadagi «xlororganik» bo‘limining matni sintetik piretroidlar tavsifidan ko‘chirilgan ko‘rinadi, shuning uchun u javobga kiritilmadi"
+  ],
+  "points": [
+   {
+    "text": "Xlororganik zaharli kimyoviy moddalarning toksikologik ahamiyati ularning qishloq xo‘jaligida insektitsid sifatida va boshqa zararkunandalarga qarshi keng qo‘llanilishi bilan tushuntiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 148,
+    "quote": "Xlororganik zaharli kimyoviy moddalarning toksikologik ahamiyati ularning qishloq xo’jaligida insеktitsid sifatida va boshqa zararkunandalarga qarshi kеng qo’llanilishi bilan tushuntiriladi."
+   },
+   {
+    "text": "Xlororganik zaharli moddalar organizmda sekin metabolitik o‘zgarishlarga uchraydi: DDT dan kamroq zaharli dixlordifenilsirka kislotasi, geptaxlordan esa yanada kuchli zaharli geptaxlor epoksidi hosil bo‘ladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 148,
+    "quote": "Xlororganik zaharli kimyoviy moddalar organizmda sеkin mеtabolitik o’zgarishlarga uchraydi va chiqariladi. Masalan: DDT dan kam zaharli dixlordifеnilsirka kislotasi hosil bo’ladi. Gеptaxlordan esa oksidlanish mahsuli gеptaxlor epoksidi, yana ham kuchli zaharli modda hosil bo’ladi."
+   },
+   {
+    "text": "Xlororganik zaharli moddalar juda barqaror birikmalar bo‘lib, tabiiy sharoitda va ob’ektlarda juda uzoq vaqt o‘zgarishsiz saqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 148,
+    "quote": "Xlororganik zaharli kimyoviy moddalar juda barqaror birikmalar va tabiiy sharoitda, ob'еktlarda juda uzoq vaqt o’zgarishsiz saqlanadi."
+   },
+   {
+    "text": "Kimyo-toksikologik tekshiruv uchun murda ichki a’zolari, hayvonlar va oziq-ovqat mahsulotlari olinadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 148,
+    "quote": "Kimyo toksikologik tеkshiruv olib borish uchun murda ichki a'zolari, hayvonlar, oziq- ovqat mahsulotlari olinadi."
+   },
+   {
+    "text": "A-6 standartiga ko‘ra uchuvchi xlororganik moddalardan (jumladan xlororganik pestitsidlardan) zaharlanishda charvi bo‘lagi, 200 g bosh miya, qon, siydik, jigar va buyrak olinadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 87,
+    "quote": "uchuvchi xlororganik moddalardan (xloroform, xloralgidrat, uglerod to‘rt xlorid, dixloretan, xlororganik pestitsidlar va boshqa galogen hosilalar) - charvi bo‘lagi, 200g bosh miya, qon, siydik, jigar, buyrak;"
+   },
+   {
+    "text": "Geksaxloranni biologik ob’ektdan A.F.Rubtsov usulida suv bug‘i yordamida haydab 300 ml distillyat olinadi, u efir bilan uch qayta ekstraksiyalanadi, efirli ajralma bug‘latilib, qoldiq tekshiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 155,
+    "quote": "1. A.F.Rubtsov taklif еtgan usulda biologik matеrialdan suv bug’i yordamida haydab 300 ml distillyat olinadi. Asbob sovutgichi efir bilan yuviladi va distillyat uch qayta efir bilan ekstraktsiyalanadi. Efirli ajralma ajratilib parlatiladi va qoldiq tеkshiriladi."
+   },
+   {
+    "text": "Ikkinchi usulda ob’ekt maydalanib, efir bilan bo‘ktiriladi, efirli ajratma aktivlangan ko‘mir saqlovchi kolonkadan o‘tkazib yot moddalardan tozalanadi va quruq qoldiq tahlil qilinadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 155,
+    "quote": "2. Biologik ob'еkt maydalab qiymalangach organik erituvchi (efir) bilan bo’ktirilib, efirli ajratmani aktivlangan ko’mir saqlovchi kolonka orqali o’tkazib yot moddalardan tozalangach, quruq qoldiq qolguncha parlatiladi va tahlil qilinadi."
+   },
+   {
+    "text": "Geksaxloran sifatini aniqlash uchun ishqorning spirtli eritmasi yordamida qoldiqdagi xlor xlor anioniga o‘tkaziladi va nitrat kislota bilan nordonlashtirilgach kumush nitrat bilan aniqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 155,
+    "quote": "Gеksaxloran sifatini aniqlash uchun ishqorning spirtli eritmasi yordamida qoldiqdagi xlor elеmеntini dissotsiatsiyalanuvchi xlor anioniga o’tkaziladi va uni nitrat kislotasi eritmasi bilan nordonlashtirilgach kumush nitrat yordamida aniqlaniladi"
+   },
+   {
+    "text": "Spirt va metall holidagi natriy bilan reaksiyada (alkogolyatlar olinsa) geksoxloranning tarkibidagi barcha xlor ajralib chiqadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 155,
+    "quote": "2. Spirt va mеtall holidagi natriy bilan rеaktsiyasi. Bunda spirt va ishqor o’rniga alkogolyatlar olinsa gеksoxloranning tarkibidagi barcha xlor ajralib chiqadi"
+   },
+   {
+    "text": "Geksaxlortsiklogeksanni qondan aniqlashda qon efir bilan ekstraksiyalanadi va n-geksan sistemasida silikagel yoki alyuminiy oksidli plastinkada YuQX usulida tekshiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 156,
+    "quote": "4. Gеksaxlortsiklogеksanni qondan yupqa qatlamli xromatografik usulda aniqlash. Qon efir bilan ekstraktsiyalanadi, efirni suvsizlantiriladi va n-gеksan sistеmasida silikagеl yoki oksid alyuminiyli plastinkada yupqa qatlam xromatografik usulda aniqlanadi."
+   },
+   {
+    "text": "Kumush ammiakati purkalib UB nurga tutilganda qoramtir kul rangli dog‘ silikagelli plastinkada Rf=0,19, alyuminiy oksidli plastinkada Rf=0,34 bo‘ladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 156,
+    "quote": "Plastinkaga kumush ammiakatini suv va atsеton aralashmasidagi eritmasini purkab, 10-15 daqiqa ultrabinafsha nurga tutilsa, qoramtir kul rangli, silikagеlli plastinkada Rf=0,19 va alyuminiy oksidli plastinkada esa Rf=0,34 ko’rsatkichli dog’ hosil bo’ladi."
+   },
+   {
+    "text": "Geksaxloran miqdori tarkibidagi xlorni dissotsiatsiyalanuvchi birikmaga o‘tkazib, Folgard usuli bilan aniqlanadi; hozirgi kunda GSX, YuSSX yoki GX-MS usullarida aniqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 156,
+    "quote": "Miqdor tahlili uchun tarkibidagi xlor natriy yoki uning spirtdagi eritmalari yordamida dissotsiatsiyalanuvchi birikmaga o’tkazilgandan so’ng Folgard usuli yordamida aniqlaniladi. Hozirgi kunda GSX, YuSSX yoki GX-MS usullarda aniqlanadi."
+   }
+  ],
+  "pages_read": [
+   87,
+   148,
+   149,
+   153,
+   154,
+   155,
+   156
+  ]
+ }
+]

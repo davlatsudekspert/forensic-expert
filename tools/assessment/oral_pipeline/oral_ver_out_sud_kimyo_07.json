@@ -1,0 +1,827 @@
+[
+ {
+  "id": "sud_kimyo.c23.080",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "WRONG",
+    "fix": "Kobalt ammiakati bilan reaksiya: barbituratlar kobalt tuzlarining ammiakli eritmasi bilan metil spirti ishtirokida rangli kompleks birikma hosil qiladi."
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OVERSTATED",
+    "fix": "UB-spektrofotometriya: barbituratlar pH=10 (0,05 M borat bufer) da 238-240 nm, pH=13 (1,0 M ishqor) da 258-260 nm sohada spektral maksimumga ega."
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "Kobalt ammiakati (Zwikker) reaksiyasi: kitobda «xarakterli qizil rang» deyilgan — kitob xatosi; barbituratlar kobalt tuzlari bilan ammiakli/aminli muhitda binafsha (ko‘k-binafsha) rang beradi; da’vo bu xatoni takrorlagan.",
+   "p.10: «miqdor va chinlik uchun» maqsadi iqtibosda yo‘q (iqtibosda faqat spektral maksimumlar).",
+   "Kitobda TLC aniqlovchisi majmuada «difenilkarbazid», giyohvand kitobida (113-bet) «difenilkarbazon» — nomuvofiqlik (amalda difenilkarbazon + simob sulfat).",
+   "Kitob etaminal-natriyni II ro‘yxatda (169-bet), pentobarbitalni 13-jadvalda III ro‘yxatda ko‘rsatadi — ziddiyat; da’volarda ro‘yxat raqami olinmagan (to‘g‘ri).",
+   "14-jadval OCR’da ustun sarlavhalari aralashgan, asl matn tartibi bo‘yicha: uzoq — barbital, fenobarbital; o‘rtacha — barbamil, etaminal; qisqa — geksenal, butobarbital (p.1 to‘g‘ri)."
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.081",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OVERSTATED",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OVERSTATED",
+    "fix": "BMT konvensiyasiga asosan nasha giyohvandlik vositasi deb qabul qilingan."
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "p.3: kitobdagi «1961 yilgi konvensiyaga binoan kokain ta’qiqlangan» — noaniq/xato: Yagona konvensiya kokainni I jadvalga kiritib xalqaro nazoratga olgan, tibbiy/ilmiy maqsadda muomalasi ruxsat etilgan; to‘g‘rilash iqtibosdan mumkin emas.",
+   "p.4: konvensiya nashani nazoratga olgan (I va IV jadval), «muomalasi taqiqlanadi» — milliy qonunga xos, konvensiyaga nisbatan kuchaytirilgan; tuzatishda bu qism olib tashlandi.",
+   "Kitob 1988 yilgi konvensiyani «yagona konvensiya» deb ataydi (Yagona konvensiya — 1961); p.6 bu nomni olmagan — to‘g‘ri.",
+   "Konvensiyalarning tuzilishi, jadvallar tizimi va BMT nazorat organlari (INCB, CND, UNODC) yoritilmagan."
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.082",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OVERSTATED",
+    "fix": "Kokainning organizmga ta’siri: emotsional hayajonlanish, uzoq vaqt tetik bo‘lish, uyquga moyillikning pasayishi, ishtahaning yo‘qolishi, vaznning kamayishi va boshqalar."
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "p.3: iqtibos «kokainning organizmga ta’siri» deydi; «kokainizm ko‘rinishlari» yorlig‘i manbada yo‘q.",
+   "Kitobda o‘limga olib keluvchi doza 200 mg (ilgari qabul qilmagan) va og‘iz orqali letal doza 1,2 g — turli sharoitlar; da’vo faqat birinchisini olgan.",
+   "Ichki a’zolardan ajratish va kokainning strukturaviy formulasi berilmagan."
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.083",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "WRONG",
+    "fix": "Kobalt ammiakati bilan reaksiya: barbituratlar kobalt tuzlarining ammiakli eritmasi bilan metil spirti ishtirokida rangli kompleks birikma hosil qiladi."
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "Kobalt ammiakati (Zwikker) reaksiyasi: kitobda «xarakterli qizil rang» deyilgan — kitob xatosi; barbituratlar kobalt tuzlari bilan ammiakli/aminli muhitda binafsha (ko‘k-binafsha) rang beradi; da’vo bu xatoni takrorlagan.",
+   "Barbitalga xos xususiy reaksiyalar va miqdoriy hisoblash tartibi yo‘q; ko‘p nuqtalar umumiy barbiturat reaksiyalari."
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.084",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "WRONG",
+    "fix": "Opioidlar — organizmga morfinga o‘xshash ta’sir ko‘rsatuvchi, ammo kimyoviy tuzilishi boshqa guruhga kiruvchi sintetik giyohvandlik vositalari: promedol, metadon, fentanil va boshqalar."
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "p.1: kitob fensiklidinni (PCP) opioidlar qatoriga qo‘shgan — kimyoviy/farmakologik xato: fensiklidin arilsiklogeksilamin, dissotsiativ anestetik (NMDA antagonisti), opioid emas; da’vo xatoni takrorlagan.",
+   "p.0: kitob opiatlarni «sintetik» deb ataydi (aslida tabiiy va yarim sintetik) — da’vo bu so‘zni olmagan, to‘g‘ri.",
+   "p.10 konteksti: kitobdagi «1992 yilga kelib marixuana nazorat ro‘yxatiga kiritilgan» — shubhali sana, da’voga olinmagan (to‘g‘ri)."
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.085",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "Kitobdagi «ishqoriy muhitda Rf=8,6-10,2» (pH o‘rniga Rf) xatosi da’voga olinmagan — to‘g‘ri.",
+   "Morfinning molekulyar/strukturaviy formulasi berilmagan."
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.086",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OVERSTATED",
+    "fix": "Kitobda droperidol tavsifidan keyin berilgan qon va peshobdan ajratish: 10 ml peshob va 2 ml qonga natriy gidroksidning 50% eritmasi qo‘shib pH 13 ga yetkaziladi va 30 daqiqa qaynayotgan suv hammomida qizdiriladi."
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "p.4–5: qon va peshobdan ajratish matni kitobda DROPERIDOL tavsifidan keyin, «Galoperidol va droperidolning tahlili»dan oldin keladi; iqtibosda galoperidol nomi yo‘q — galoperidolga tegishliligi kitobda aniq aytilmagan.",
+   "p.10: miqdoriy usul kitobda «droperidolning xlorid kislotadagi eritmasi» va «fenotiazin hosilalari bo‘lsa sariq» deb berilgan (ehtimol nusxa xatosi); yakuniy jumla «droperidol va galoperidolning miqdori» deydi — da’vo shu bilan qo‘llab-quvvatlanadi.",
+   "p.2: «15-22% hollarda o‘lim» — kitob ma’lumoti, shubhali (galoperidol dozasi oshganda o‘lim kamdan-kam); manba bilan mos.",
+   "Strukturaviy formula va ichki a’zolardan ajratish yo‘q."
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.087",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "Kitobda «benzilekgonin» (benzoilekgonin o‘rniga) xatosi bor; p.9 modda nomini olmagan — to‘g‘ri.",
+   "Kokainning to‘qima/a’zolarda tarqalishi va metabolizm reaksiyalari (gidroliz yo‘llari) yoritilmagan."
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.088",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "WRONG",
+    "fix": "Ajralmada barbituratlar kam bo‘lganda kobalt ammiakati bilan reaksiya qo‘llanadi: kobalt tuzlarining ammiakli eritmasi metil spirti ishtirokida barbituratlar bilan rangli kompleks hosil qiladi."
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "Kobalt ammiakati (Zwikker) reaksiyasi: kitobda «xarakterli qizil rang» deyilgan — kitob xatosi; barbituratlar kobalt tuzlari bilan ammiakli/aminli muhitda binafsha (ko‘k-binafsha) rang beradi; da’vo bu xatoni takrorlagan.",
+   "p.6: kobalt asetati + izopropilamin reaksiyasida kitob «qizil pushti» deydi; adabiyotda qizil-binafsha/binafsha — taxminan mos, OK qoldirildi.",
+   "p.9 (majmua) da «difenilkarbazid», giyohvand kitobida «difenilkarbazon ... ko‘k-binafsha» — reaktiv nomi nomuvofiq."
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.089",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OVERSTATED",
+    "fix": "Opiy qoramtir-qo‘ng‘ir, o‘ziga xos hidli, achchiq mazali quyuq qoldiq yoki kukun; tarkibida morfin, narkotin, kodein, tebain, papaverin kabi alkaloidlar bor."
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "p.1: kitobdagi qiymatlar ichki ziddiyatli: 19% morfin + 8-10% narkotin + 1,5-3% kodein = 28-32%, ammo xuddi shu sahifada alkaloidlarning umumiy miqdori 15-20% deyilgan; odatda morfin ~10-12%. Tuzatishda foizlar olib tashlandi."
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.090",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OVERSTATED",
+    "fix": "Marixuana o‘simlikning yuqori qismidagi barglar, gullar va mevalardan iborat."
+   },
+   {
+    "i": 3,
+    "verdict": "WRONG",
+    "fix": "Gashish tarkibida tetragidrokannabinoidlar miqdori 2-10% atrofida bo‘lishi mumkin."
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "p.2–3: kitobda marixuanada TGK 13-15%, gashishda 2-10% deyilgan — odatiy ma’lumotga zid (gashish marixuanadan kuchliroq; klassik adabiyotda marixuana ~0,5-5%). Ishonchsiz raqam.",
+   "p.3: «gashish suyuq, mumsimon, zangori» — xato: gashish qattiq presslangan smola; kitobning o‘zi 63-betda gashishni «maydalanib shibbalangan bo‘laklar yoki kukun, yashil yoki yashil-qo‘ng‘ir» deb ta’riflaydi — ichki ziddiyat.",
+   "Kannabinoidlarning strukturaviy formulalari va metabolitlar nomlari (11-OH-THC, THC-COOH) berilmagan."
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.091",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "WRONG",
+    "fix": "Diprazin (pipolfen, prometazin) oq kristall kukun, etil spirti (1:9) va xloroformda (1:2) yaxshi eriydi, dietil efirida deyarli erimaydi."
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "p.9: kitobda diprazin (prometazin gidroxlorid) suvda «1:60» va «yaxshi eriydi» deyilgan — ichki ziddiyat va xato: prometazin gidroxlorid suvda juda yaxshi eriydi (~1:0,6); 1:60 qiymati OCR/kitob xatosi.",
+   "Formulalar matnda rasm ko‘rinishida (OCR tuzilishi buzilgan); nomlari to‘g‘ri berilgan."
+  ]
+ }
+]

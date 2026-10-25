@@ -1,0 +1,776 @@
+[
+ {
+  "id": "sud_tib.c1.005",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_tib.c1.006",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OVERSTATED",
+    "fix": "Kirish teshigidan farqli ravishda chiqish teshigi chetlarida shilinish va ifloslanish hoshiyalari, atrofida esa qo‘shimcha omillar ta’siri belgilari bo‘lmaydi; faqat o‘q chiqish sohasida tana qattiq jismga zich tiralib turganda yara chetida shilinish hoshiyasi hosil bo‘lishi mumkin."
+   }
+  ],
+  "issues": [
+   "p9: chiqish teshigida shilinish hoshiyasi bo‘lishi mumkin bo‘lgan istisno (tana qattiq jismga tiralganda) tushirib qoldirilgan; jumla tuzilishi noaniq",
+   "p1: OCR 'radikal' to‘g‘ri 'radial' deb tuzatilgan"
+  ]
+ },
+ {
+  "id": "sud_tib.c1.007",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_tib.c1.009",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OVERSTATED",
+    "fix": "Murda kiyimda, so‘ng kiyimsiz, yuzi va alohida belgilari rasmga olinadi; ayrim hollarda yoshni aniqlash uchun ba’zi suyaklar (qo‘l kafti, ko‘krak va b.) rentgenografiya qilinadi."
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OVERSTATED",
+    "fix": "Skeletlangan murdada odatda shaxs noma’lum bo‘ladi; suyaklar bo‘yicha jinsi, yoshi va bo‘yi aniqlanishi mumkin, saqlangan yumshoq to‘qima qoldiqlari va suyaklar bo‘yicha guruhiy mansublik aniqlanadi."
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "p4: 'ayrim hollarda' cheklovi tushirilgan",
+   "p8: 'aniqlanishi mumkin' 'aniqlanadi'ga kuchaytirilgan"
+  ]
+ },
+ {
+  "id": "sud_tib.c1.010",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OVERSTATED",
+    "fix": "Bu ekspertiza zo‘raki o‘lim alomatlari yoki unga shubha bo‘lganda quyidagi hollarda o‘tkaziladi: onasi noma’lum go‘dak murdasi topilganda, davolash muassasasidan tashqaridagi tug‘ruqda o‘lik bola tug‘ilganda va homilador ayolga ko‘rsatilgan tibbiy yordamga shikoyat bo‘lganda."
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "p0: 'zo‘raki o‘lim alomatlari yoki unga shubha bo‘lganda' sharti tushirilgan"
+  ]
+ },
+ {
+  "id": "sud_tib.c1.011",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_tib.c1.012",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_tib.c1.013",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_tib.c1.014",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "Savoldagi eksgumatsiya bo‘yicha JPK moddasi raqami va qo‘shimcha/qayta ekspertiza JPK moddalari keltirilmagan (manbada yo‘q)",
+   "Eksgumatsiya qilingan murdani tekshirish texnikasi yoritilmagan"
+  ]
+ },
+ {
+  "id": "sud_tib.c1.015",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_tib.c1.018",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "p10: '118,119-moddalar — 18 va 14 yosh' kitobdagi siqiq ifodani takrorlaydi; mazmuni (og‘irlashtiruvchi yosh chegaralari) izohsiz noaniq"
+  ]
+ },
+ {
+  "id": "sud_tib.c1.019",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "Murda qotishining o‘lim vaqtini aniqlashdagi ahamiyati alohida aniq bandda aytilmagan (faqat dinamika keltirilgan)"
+  ]
+ }
+]

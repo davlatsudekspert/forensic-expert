@@ -1,0 +1,1118 @@
+[
+ {
+  "id": "sud_kimyo.c1.033",
+  "coverage": "partial",
+  "gaps": [
+   "sintetik fenilalkilaminlarni ichki a’zolardan (biologik ob’ektdan) ajratib olishning alohida tartibi berilmagan (kitobda nordonlashtirilgan suv/spirt usuli faqat tabiiy vakillar — efedrin, efedron, katin, katinon, meskalin — uchun aytilgan)",
+   "sintetik fenilalkilaminlarning miqdoriy tahlili (usul va hisoblash) kitobda berilmagan",
+   "IQ-spektroskopiya, GX-MS kabi tasdiqlovchi usullar sintetik vakillar uchun keltirilmagan",
+   "DOM/STP uchun berilgan «qaynash harorati 60-61 S» (kristall modda uchun) va nazorat ro‘yxati haqidagi da’vo shubhali — olinmadi"
+  ],
+  "points": [
+   {
+    "text": "Fenilalkilaminlar shartli ravishda tabiiy va sintetik guruhlarga bo‘linadi; sintetik hosilalari ham 3 ta sinfga bo‘linadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 73,
+    "quote": "Fenilalkilaminlarni shartli ravishda tabiiy va sintetik guruhlarga sinflashadi. Shuningdek, sintetik hosilalari ham 3 ta sinfga bo‘linadi."
+   },
+   {
+    "text": "Benzol xalqasi vodorodi almashgan hosilalarga monometoksi (PMA, PMMA, 4-MTA), dimetoksi (DOM, DOET, DOX, DOB) va metilendioksi (MDA, MDMA, MBDB, BDB, MDMMA) hosilalari kiradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 74,
+    "quote": "Monometoksi hosilalari: p-metoksiamfetamin (PMA), p- metoksimetamfetamin (PMMA), 4-metoksiamfetamin (4-MTA)  Dimetoksi hosilalar: DOM, DOET, DOX, DOB  Metilendioksi hosilalar: metilendioksiamfetamin (MDA), metilendioksimetamfetamin (MDMA), MBDB, BDB, MDMMA"
+   },
+   {
+    "text": "Amfetamin — rangsiz, uchuvchan, moysimon suyuqlik, «baliq» hidini eslatuvchi hidga ega; suvda yomon, organik erituvchilarda yaxshi eriydi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 82,
+    "quote": "Amfetamin rangsiz, uchuvchan, moysimon suyuqlik, “baliq” hidini eslatuvchi xarakterli hidga ega. Suvda yomon, organik erituvchilarda yaxshi eriydi."
+   },
+   {
+    "text": "Biologik suyuqliklardan fenilalkilaminlar ekstraksiya usulida ajratiladi: 10 ml qon yoki 50 ml peshob ammiakning 25% eritmasi bilan rN 10-11 ga keltirilib, 3 marta xloroform–n-butanol (9:1) aralashmasi bilan ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 79,
+    "quote": "Biologik suyuqliklardan fenilalkilaminlar ekstraksiya usulida ajratib olinadi. Buning uchun 10 ml qon yoki 50 ml peshob ammiakning 25% eritmasi bilan rN ═10-11 ga keltiriladi va 3 qayta xloroform-n-butanolning 9꞉1 nisbatdagi aralashmasi bilan ekstraksiyalanadi."
+   },
+   {
+    "text": "So‘ngra organik qatlam filtrlanadi, unga 100 mkl xlorid kislotaning 5% eritmasi qo‘shilib, hajmi 0,5-1,0 ml qolguncha bug‘latiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 80,
+    "quote": "solingan filtr yordamida filtrlanadi va 100 mkl xlorid kislotaning 5% eritmasi solinib, hajmi 0,5 − 1,0 ml qolguncha bug‘latiladi."
+   },
+   {
+    "text": "Ashyoviy dalil (tabletka) dastlabki tahlili: 5-10 mg tabletka maydalanib, chinni tovoqchada 2-3 tomchi Marki reaktivi qo‘shilganda rang hosil bo‘ladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 86,
+    "quote": "5-10 mg tabletka xovonchada maydalanadi. Maydalangan massa chinni tovoqchaga olinib, unga 2-3 tomchi Marki reaktivi qo‘shilganda rang hosil bo‘ladi."
+   },
+   {
+    "text": "Marki reaktivi bilan MDA, MDMA va MDEA ko‘kimtir-qora (yashil-qora), DOM/STP esa sariq rang beradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 86,
+    "quote": "1 MDA ko‘kimtir-qora yashil-qora 2 MDMA ko‘kimtir-qora yashil-qora 3 MDEA ko‘kimtir-qora yashil-qora 4 DOM/STP sariq"
+   },
+   {
+    "text": "Marki reaktivi bilan DOB zumrad-yashil, DOX sarg‘ish-yashil, metamfetamin esa jigarrang rang beradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 86,
+    "quote": "8 DOB zumrad-yashil 9 DOX sarg‘ish-yashil 10 MBDB ko‘kimtir-qora yashil-qora 11 BDB ko‘kimtir-qora yashil-qora 12 DOET och jigarrang yashil 13 Meskalin zarg‘aldoq 14 Metamfetamin jigarrang"
+   },
+   {
+    "text": "YuQX tahlilida xloroform–aseton–etanol–ammiakning 25% eritmasi (20:3:1:20) sistemasi, Merck va Sorbfil plastinkalari qo‘llaniladi; zonalar Marki reaktivi va ningidrin bilan ochiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 87,
+    "quote": "12-jadval Fenilalkilaminlarning YuQX usulida tahlil natijalari (xloroform-aseton- etanol- ammiakning 25%eritmasi (20:3:1:20)) № Modda Merck Sorbfil Xromatografik zonalarning rangi plastinkasi plastinkasi Rf Rs Rf Rs Marki reaktivi Ningidrin"
+   },
+   {
+    "text": "Shu sistemada metamfetamin Rf 0,25 (Merck) va 0,38 (Sorbfil) qiymatga ega; zonasi Marki reaktivi bilan jigarrang, ningidrin bilan binafsha rangga bo‘yaladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 87,
+    "quote": "14 Metamfetamin 0,25 1,00 0,38 1,00 jigarrang binafsha rang"
+   },
+   {
+    "text": "UB-spektrda (0,1M HCl) amfetamin va metamfetamin 251, 257, 263 nm da maksimum nur yutadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 87,
+    "quote": "Fenilalkilaminlarning UB-nur yutish spektrlari (0,1M NSl) Moddalar nomi ( max), nm Amfetamin 251, 257, 263 Metamfetamin 251, 257, 263"
+   },
+   {
+    "text": "Metilendioksi hosilalari: MDA va MDMA 235 va 286 nm, N-etil-MDA va MBDB 234 va 286 nm da maksimum nur yutadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 87,
+    "quote": "MDA 235, 286 MDMA 235, 286 N-etil-MDA 234, 286 MBDB 234, 286"
+   }
+  ],
+  "pages_read": [
+   73,
+   74,
+   79,
+   80,
+   81,
+   82,
+   83,
+   84,
+   85,
+   86,
+   87,
+   88
+  ]
+ },
+ {
+  "id": "sud_kimyo.c1.034",
+  "coverage": "partial",
+  "gaps": [
+   "katin va katinonning xususiy sifat reaksiyalari va miqdoriy tahlili berilmagan",
+   "meskalin uchun faqat jadvaldagi YuQX/Marki/UB ma’lumotlari bor, xususiy reaksiyalar va miqdoriy tahlil berilmagan",
+   "efedron uchun YuQX sistemasi ikki joyda turlicha (48:2 va 9:1) va asos holdagi efedron UB-maksimumlari jadvaldan farq qiladi — bu ma’lumotlar olinmadi"
+  ],
+  "points": [
+   {
+    "text": "Fenilalkilaminlarning dastlabki vakillari iste’molbop kata (Catha edulis), efedra o‘ti (Herba Ephedrae) va peyot kaktusi (Lophophora williamsii) tarkibida aniqlangan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 74,
+    "quote": "Fenilalkilaminlarning dastlabki vakillari quyidagi o‘simliklar tarkibida aniqlangan: • Iste’molbop kata (Catha edulis) • Efedra o‘ti (Herba Ephedrae) • Peyot kaktusi (Lophophora williamsii)"
+   },
+   {
+    "text": "Iste’molbop kata barglari katinon va katin alkaloidlarini saqlaydi; quritish vaqtida psixostimulyator ta’sirli katinon bug‘lanib ketadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 75,
+    "quote": "barglari tarkibida katinon va katin alkaloidlarini saqlaydi. Katin Katinon Quritish vaqtida psixostimulyator ta’sirga ega bo‘lgan katinon alkaloidi bug‘lanib ketadi."
+   },
+   {
+    "text": "Efedra o‘simligi efedrin, psevdoefedrin alkaloidlari, oshlovchi moddalar va pirokatexin saqlaydi, ulardan faqat efedrin ahamiyatga ega.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 75,
+    "quote": "Efedra o‘simligi tarkibida efedrin, psevdoefedrin alkaloidlari, oshlovchi moddalar, pirokatexin saqlanadi. Lekin ulardan faqat efedrin ahamiyatga ega."
+   },
+   {
+    "text": "Efedrin va uning oksidlanish mahsuloti efedron peshob orqali ajraladi, shuning uchun tahlil uchun asosiy ashyo — peshob.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 76,
+    "quote": "Efedrin va uning oksidlanish mahsuloti - efedron organizmdan peshob orqali ajralib chiqariladi, shu tufayli tahlil uchun asosiy tekshiruv ashyosi sifatida peshob olinadi."
+   },
+   {
+    "text": "Efedrin va efedronni peshobdan ajratish uchun peshob kaliy karbonatning 10% eritmasi bilan rN=10 gacha ishqoriy muhitga keltirilib, xloroform bilan ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 76,
+    "quote": "Efedrin va efedronni peshobdan ajratib olish uchun peshob kaliy karbonatning 10% eritmasi bilan rN=10 gacha ishqoriy muhitga keltirib, xloroform bilan ekstraksiyalanadi."
+   },
+   {
+    "text": "Fenilalkilaminlar (efedrin, efedron, katin, katinon, meskalin) biologik ob’ektlardan nordonlashtirilgan suv yoki spirt usulida ajratiladi; suvli ajratma rN 9-12 ga keltirilib, xloroform bilan uch marta ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 79,
+    "quote": "Fenilalkilaminlarni (efedrin, efedron, katin, katinon, meskalin) biologik ob’ektlardan nordonlashtirilgan suv yoki spirt usulida ajratib olinadi. Suvli ajratmalardan esa rN ═9-12 ga keltirilib, xloroform bilan uch marotaba ekstraksiya qilinadi."
+   },
+   {
+    "text": "Biologik suyuqliklardan: 10 ml qon yoki 50 ml peshob ammiakning 25% eritmasi bilan rN 10-11 ga keltirilib, 3 marta xloroform–n-butanol (9:1) aralashmasi bilan ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 79,
+    "quote": "Biologik suyuqliklardan fenilalkilaminlar ekstraksiya usulida ajratib olinadi. Buning uchun 10 ml qon yoki 50 ml peshob ammiakning 25% eritmasi bilan rN ═10-11 ga keltiriladi va 3 qayta xloroform-n-butanolning 9꞉1 nisbatdagi aralashmasi bilan ekstraksiyalanadi."
+   },
+   {
+    "text": "Efedrin Dragendorf reaktivi bilan to‘q qizil rangli ninasimon kristallar hosil qiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 76,
+    "quote": "1. Dragendorf reaktivi bilan efedrin to‘q qizil rangli ninasimon kristallar hosil qiladi."
+   },
+   {
+    "text": "YuQX: xloroform–aseton (48:2) sistemasi, ochuvchi — ningidrinning asetondagi eritmasi; efedrin Rf=0,28, efedron Rf=0,71.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 77,
+    "quote": "Xromatografik sistema sifatida xloroform va asetonning 48:2 nisbatdagi aralashmasi ishlatiladi. Efedrin va efedronning xromatografik plastinkadagi joylashgan joyini aniqlash uchun ningidrinning asetondagi eritmasi purkaladi. Bunda efedrin uchun Rf=0,28; efedron uchun Rf=0,71 tashkil qiladi."
+   },
+   {
+    "text": "Efedrinning miqdori UB-spektrofotometriya usulida efedrin gidroxloridi eritmasi optik zichligining konsentratsiyaga bog‘liqlik grafigi yordamida hisoblanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 77,
+    "quote": "Efedrinning miqdorini UB-spektrofotometriya usulida efedrin gidroxloridi eritmasining optik zichligini uning konsentratsiyasiga bog‘liqlik grafigi yordamida hisoblab topiladi."
+   },
+   {
+    "text": "Efedron miqdori mis tuzlari va oltingugurt uglerodi bilan hosil qilgan rangli kompleksning optik zichligini FEK usulida o‘lchab aniqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 78,
+    "quote": "Efedronni miqdorini aniqlash 1. Mis tuzlari va oltingugurt uglerodi bilan hosil qilgan rangli kompleks moddaning optik zichligi FEK usulida aniqlanadi."
+   },
+   {
+    "text": "Meskalin YuQX da (xloroform–aseton–etanol–ammiak) Rf 0,36 (Merck) va 0,50 (Sorbfil) qiymatga ega, Marki reaktivi bilan zarg‘aldoq, ningidrin bilan binafsha rang beradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 87,
+    "quote": "13 Meskalin 0,36 1,44 0,50 1,32 zarg‘aldoq binafsha rang"
+   }
+  ],
+  "pages_read": [
+   73,
+   74,
+   75,
+   76,
+   77,
+   78,
+   79,
+   80,
+   81,
+   86,
+   87,
+   88
+  ]
+ },
+ {
+  "id": "sud_kimyo.c1.035",
+  "coverage": "partial",
+  "gaps": [
+   "narkotik moddalar uchun tayyor ekspress test-tizimlar (test-kasseta, test-poloska) turlari va ularning ishlash tartibi berilmagan",
+   "cut-off (chegara) konsentratsiyalari, soxta musbat va soxta manfiy natijalar sabablari berilmagan",
+   "ekspress-test natijasini rasmiylashtirish tartibi va me’yoriy asos berilmagan"
+  ],
+  "points": [
+   {
+    "text": "Ob’ektni tejash va vaqtni iqtisod qilish uchun sud kimyogari aniq reja tuzadi; shu maqsadda dastlabki tekshiruv katta ahamiyatga ega.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 13,
+    "quote": "Shuning uchun yuborilgan ob'еktni iqtisod qilib ishlatish, hamda vaqtni tеjash maqsadida sud kimyogari aniq rеja tuzib olishi lozim. Shu maqsad uchun ob'еktni dastlabki tеkshirish katta ahamiyatga molik bo’ladi."
+   },
+   {
+    "text": "Dastlabki tekshiruv asosida rejadagi ko‘p zaharli moddalarni inkor qilish (manfiy ahamiyat) yoki qaysi modda bo‘lishi mumkinligini taxmin qilish mumkin.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 13,
+    "quote": "Dastlabki tеkshiruv asosida ko’pincha kimyo toksikologik tеkshiruv rеjasidagi ko’p zaharli moddalarni inkor qilish yoki qanday zaharli modda bo’lishi mumkinligiga taxmin qilish mumkin."
+   },
+   {
+    "text": "Dastlabki tekshiruv asosida yakuniy xulosa chiqarib bo‘lmaydi: taxminiy tekshiruv musbat natija bersa, taxmin qilingan moddaga asosiy tekshiruv o‘tkazish shart.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 13,
+    "quote": "dastlabki tеkshiruv asosida biror xulosaga kеlish mumkin emas, agarda taxminiy tеkshiruv musbat natija bеrsa, shu taxmin qilingan zaharli moddalarga lozim bo’lgan asosiy tеkshirish olib borish shart."
+   },
+   {
+    "text": "Dastlabki tekshiruv asosan qon, peshob, yuvindi suvlarda yoki kam miqdordagi ob’ektda sezgir reaksiyalar asosida o‘tkaziladi va ko‘pincha ekspress tekshiruvda ishlatiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 13,
+    "quote": "Dastlabki tеkshiruv asosan qon, pеshob, yuvindi maxsulotlarida yoki kam miqdordagi ob'еkt tarkibidagi sеzgir rеaktsiyalar asosida zaharlanishni aniqlashda qo’llaniladi va bunday tеkshiruvlar ko’pincha ekspеrеss tеkshiruv olib borishda ishlatiladi."
+   },
+   {
+    "text": "Kamchiligi: ayrim taxminiy usullar yuqori sezgir bo‘lsa ham spesifik emas, yuqori sezgirlik tufayli terapevtik dozadagi moddalar ham ob’ektda aniqlanishi mumkin.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 20,
+    "quote": "Ba'zi taxminiy tеkshiruv usullari yuqori sеzgirlikka ega bo’lsa ham spеtsifik emas. Ayrim hollarda yuqori sеzgirligi tufayli rеaktsiyalar tеrapеvtik dozadagi moddalarni ham ob'еktda aniqlanishiga imkon bеradi."
+   },
+   {
+    "text": "Taxminiy tekshiruv natijasiga qo‘shimcha tahlillar o‘tkazib, modda chinligiga ishonch hosil qilinadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 20,
+    "quote": "Taxminiy tеkshiruv natijasiga qo’shimcha tahlillar o’tkazib modda chinligiga ishonch hosil qilish mumkin."
+   },
+   {
+    "text": "Oldindan taxminiy tekshirishda asosan mikrodiffuziya, mikrokristalloskopik reaksiyalar va xromatografik «skrining» usullari qo‘llaniladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 13,
+    "quote": "Zaharli moddalarni oldindan taxminiy tеkshirishda asosan mikrodiffuziya, mikrokristalloskopik rеaktsiyalar, xromatografik \"skrining\" usullaridan foydalaniladi."
+   },
+   {
+    "text": "Musbat va manfiy natija misoli (fenotiazin hosilalari, peshob): rang hosil bo‘lmasa — fenotiazin hosilalari yo‘q degan xulosa beriladi; ijobiy natijada ularning borligi boshqa usullar bilan tasdiqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 120,
+    "quote": "Reaksiyalar natijasida rang hosil bo‘lmasa, fenotiazin hosilalari yo‘q degan xulosa berish mumkin. Reaksiyalar ijobiy natija bersa, fenotiazin hosilalari borligini tasdiqlash maqsadida ularni boshqa usullarda tahlil qilish uchun"
+   },
+   {
+    "text": "YuQX-skrining misoli: Rf 0,74-0,78 da dog‘ hosil bo‘lmasa amitriptilin yo‘q degan xulosa beriladi; dog‘lar bo‘lsa amitriptilin va nortriptilin uchun qo‘shimcha tekshiruv o‘tkaziladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 135,
+    "quote": "Xromatogrammada Rfq0,74-0,78 ga tеng dog’ hosil bo’lmasa amitriptilin yo’q dеgan xulosa bеriladi. Dog’lar hosil bo’lgan holda amitriptilin va nortriptilin uchun qo’shimcha tеkshirish olib boriladi."
+   },
+   {
+    "text": "Ashyoviy dalil (tabletka, kapsula, kukun) dastlabki tahlili: 5-10 mg tabletka maydalanib, 2-3 tomchi Marki reaktivi qo‘shilganda rang hosil bo‘ladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 86,
+    "quote": "Ashyoviy dalil sifatida olingan tabletkalar, kapsulalar, kukun va boshqalarning dastlabki tahlili 5-10 mg tabletka xovonchada maydalanadi. Maydalangan massa chinni tovoqchaga olinib, unga 2-3 tomchi Marki reaktivi qo‘shilganda rang hosil bo‘ladi."
+   },
+   {
+    "text": "Immunokimyoviy ekspress usullarning afzalligi — aniqlashning tezligi va soddaligi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 84,
+    "quote": "Usulning umumiy afzalliklari: Aniqlashlarning tezligi va soddaligi;"
+   },
+   {
+    "text": "Shuningdek, ko‘p tahlillarni avtomatlashtirish imkoniyati, namuna tayyorlashning oddiyligi, yuqori aniqlik, murakkab va qimmat asbob talab etmasligi; kamchiligi — juda tor doiradagi spesifiklik va matritsa komponentlarining ta’siri.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 85,
+    "quote": "tahlillarni amalga oshirishda avtomatlashtirish imkoniyatlarining mavjudligi; namuna tayyorlashning oddiyligi; yuqori darajadagi aniqlik;murakkab va qimmatbaho asbob uskunalarni talab etmaydi. Kamchiligi: juda tor doiradagi spesifiklik va matritsa komponetlarining ta’siri."
+   }
+  ],
+  "pages_read": [
+   12,
+   13,
+   20,
+   21,
+   83,
+   84,
+   85,
+   135,
+   171,
+   173
+  ]
+ },
+ {
+  "id": "sud_kimyo.c1.036",
+  "coverage": "partial",
+  "gaps": [
+   "immunokimyoviy reaksiyalarni narkotik moddalar tahlilida qo‘llashning amaliy tartibi (namuna, reagentlar, test-tizimlar, chegara konsentratsiyalari) berilmagan — faqat geroin va uning metabolitlari misolida qayd etilgan",
+   "radioimmun va immunofluoressent tahlilning bajarilish tartibi berilmagan"
+  ],
+  "points": [
+   {
+    "text": "Immunotahlillar antigen va antitelo (aynan aniqlanuvchi moddaga qarshi ishlab chiqarilgan oqsil) o‘rtasidagi maxsus ta’sirga asoslangan.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 83,
+    "quote": "Immunotahlillar antigen (ifloslantiruvchi modda) va antitelo (aynan aniqlanuvchi moddaga qarshi ishlab chiqarilgan oqsil) o‘rtasidagi maxsus ta’sirga asoslangan."
+   },
+   {
+    "text": "Immunokimyoviy tahlil usulining asosida antigenning antitelo bilan yuqori darajada maxsus va o‘ta sezgir immun reaksiyasi yotadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 83,
+    "quote": "Immunokimyoviy tahlil usulining asosida antigenni antitelo bilan yuqori darajada maxsus va o‘ta sezgir immun reaksiyasi yotadi."
+   },
+   {
+    "text": "Antitelo — immunoglobulin sinfiga mansub oqsil bo‘lib, organizmga yot modda (antigen) kirishi natijasida immun tizimida himoya funksiyasi sifatida ishlab chiqariladi; antigen — antitelolar ishlab chiqarishga olib keladigan modda.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 83,
+    "quote": "Antitelo – immunoglobulin sinfiga mansub oqsil bo‘lib, yot bo‘lgan modda – antigenni organizmga kirishi natijasida immun tizimida hosil bo‘lgan himoya funksiyasi sifatida (immunitet) ishlab chiqariladi. Antigen – antitelolar ishlab chiqarishga olib keladigan modda hisoblanadi."
+   },
+   {
+    "text": "Usul fermentlar, neyropeptidlar, immun tizimi mahsulotlari, antigenlar va boshqalarning juda kam miqdorlarini aniqlashda katta ahamiyatga ega; antitelo olish mumkin bo‘lgan barcha mahsulot va moddalarni shu usullar bilan aniqlash mumkin.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 84,
+    "quote": "fermentlar neyropeptidlar, immun tizimi mahsulotlari, antigenlar va boshqalarni juda kam miqdorlarini aniqlashda katta ahamiyat kasb etadi. Hamma antitelo olish mumkin bo‘lgan mahsulot va moddalarni ushbu usullar yordamida aniqlash mumkin."
+   },
+   {
+    "text": "Qanday amalga oshiriladi: komponentlardan biri (antigen yoki antitelo) ferment, radionuklid, fluoressent bo‘yoq va boshqalar bilan nishonlanadi; reaksiya maxsus avtomatlashtirilgan asbob-uskunada baholanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 84,
+    "quote": "Bunda biror komponent (AG yoki AT) ferment, radionuklid, fluoressent bo‘yoq va boshqalar bilan belgilanadi (mechenie – nishonlash). Reaksiyani baholash maxsus avtomatlashtirilgan asbob-uskunada olib boriladi"
+   },
+   {
+    "text": "Sinflanishi (nishon turi va sinov sharoitiga ko‘ra): immunoferment (IFT), radioimmun (RIA) va immunofluoressent tahlil.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 84,
+    "quote": "Komponentga biriktirilgan nishon turiga va sinovlarni o‘tkazish sharoitiga qarab immun tahlil quyidagicha bo‘lishi mumkin: immunoferment (IFT), radioimmun (RIA), immunofluoressent."
+   },
+   {
+    "text": "Immunokimyoviy tahlilning ikki turi bor: to‘g‘ri va to‘g‘ri bo‘lmagan usullar.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 84,
+    "quote": "Immunokimyoviy tahlilning ikki turi: to‘g‘ri va to‘g‘ri bo‘lmagan usullari mavjud"
+   },
+   {
+    "text": "To‘g‘ri usulda antitelolar qattiq fazaga o‘tkazilgan ferment nishonli antigenga biriktiriladi; afzalligi — bosqichlarning kamligi va avtomatlashtirish imkoniyati.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 84,
+    "quote": "To‘g‘ri usul. Antitelolar qattiq fazaga o‘tkazilgan ferment nishonli antigenga biriktiriladi. Bu usulning afzalligi bosqichlarning kamligi, aniqlashlarni avtomatlashtirish imkoniyatlarini mavjudligi."
+   },
+   {
+    "text": "To‘g‘ri bo‘lmagan usulda antigen qattiq fazaga o‘tkaziladi, ferment nishon bilan esa ikkilamchi antitelo belgilanadi; afzalligi — fermentlarning katalitik xossalariga ta’sirlar yo‘qligi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 84,
+    "quote": "To‘g‘ri bo‘lmagan usul. Antigen qattiq fazaga o‘tkaziladi, ferment nishon bilan antiteloga mos keluvchi immunoglobulinga qarshi olingan ikkilamchi antitelo belgilanadi. Usulning afzalligi fermentlarning katalitik xossalariga turli ta’sirlarni mavjud emasligidir."
+   },
+   {
+    "text": "Umumiy afzalliklari qatorida avtomatlashtirish, namuna tayyorlashning oddiyligi, yuqori aniqlik, qimmat asbob talab etmasligi; kamchiligi — juda tor doiradagi spesifiklik va matritsa komponentlarining ta’siri.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 85,
+    "quote": "tahlillarni amalga oshirishda avtomatlashtirish imkoniyatlarining mavjudligi; namuna tayyorlashning oddiyligi; yuqori darajadagi aniqlik;murakkab va qimmatbaho asbob uskunalarni talab etmaydi. Kamchiligi: juda tor doiradagi spesifiklik va matritsa komponetlarining ta’siri."
+   },
+   {
+    "text": "Narkotik moddalar tahlilida qo‘llanilishi: geroin gaz-suyuqlik xromatografiya, gaz-xromato-mass spektrometriya va immunobiologik usullar yordamida aniqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 37,
+    "quote": "Hozirgi davrda geroinni gaz-suyuqlik xromatografiya, gaz-xromato-mass spektrometriya va immunobiologik usullar yordamida aniqlanadi."
+   },
+   {
+    "text": "Geroin metabolitlari — 6-monoasetilmorfin va morfin — GX-MS va YuSSX-MS usullarida aniqlanadi, ularning miqdori immunoferment tahlil usullarida ham aniqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 38,
+    "quote": "Geroin yoki uning metabolitlari 6-monoasetil morfin va morfin GX- MS v hamda YuSSX-MS usullarda aniqlanadi. 2. Bu moddalarni immunoferment tahlil usullarida ham miqdori aniqlanadi."
+   }
+  ],
+  "pages_read": [
+   37,
+   38,
+   83,
+   84,
+   85,
+   133
+  ]
+ },
+ {
+  "id": "sud_kimyo.c1.038",
+  "coverage": "full",
+  "gaps": [
+   "peshobni dastlabki tekshirish reaktivlarining tarkibi ikki kitobda (va 2-usulda) turlicha berilgan, shu sababli reaktiv nisbatlari javobga kiritilmadi",
+   "dog‘larni ochuvchi sulfat kislota–etanol aralashmasi nisbati matnda 1:9, jadvalda 9:1 — nisbat olinmadi"
+  ],
+  "points": [
+   {
+    "text": "Aminazinning oz qismi o‘zgarmagan holda peshob bilan ajraladi, shuning uchun peshobdan to‘g‘ridan-to‘g‘ri aminazinni aniqlash mumkin.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 123,
+    "quote": "oz qismi o‘zgarmagan holda peshob orqali ajralgani uchun undan to‘g‘ridan-to‘g‘ri aminazinni aniqlash mumkin."
+   },
+   {
+    "text": "Peshobni dastlabki tekshirish (1-usul): 1 ml peshobga sulfat kislota va temir (III) xlorid eritmalari aralashmasidan iborat reaktivdan 1 ml qo‘shiladi; fenotiazin hosilalari bo‘lsa to‘q-qizil-pushti rang hosil bo‘ladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 120,
+    "quote": "1-usul. 1 ml peshobga 60 ml sulfat kislotaning 10 % eritmasi va 20 ml temir (III) xloridining 5% eritmasi aralashmasidan tarkib topgan reaktivdan 1 ml qo‘shiladi. Fenotiazin va uning hosilalariga kiruvchi moddalar bo‘lsa to‘q-qizil- pushti rang hosil bo‘ladi."
+   },
+   {
+    "text": "Rang hosil bo‘lmasa, fenotiazin hosilalari yo‘q degan xulosa beriladi; ijobiy natijada ularning borligini tasdiqlash uchun boshqa usullarda tahlil qilinadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 120,
+    "quote": "Reaksiyalar natijasida rang hosil bo‘lmasa, fenotiazin hosilalari yo‘q degan xulosa berish mumkin. Reaksiyalar ijobiy natija bersa, fenotiazin hosilalari borligini tasdiqlash maqsadida ularni boshqa usullarda tahlil qilish uchun"
+   },
+   {
+    "text": "Ajratish: 10 ml peshob (2 ml qon) alohida idishda natriy gidroksidning 50% eritmasi bilan pH 13 ga yetkazilib, 10 daqiqa qaynayotgan suvda isitiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 120,
+    "quote": "10 ml peshob va 2 ml qon ayrim-ayrim idishlarga quyilib, natriy gidroksidning 50 % eritmasini qo‘shib, pH muhiti 13 ga etkazilgach, 10 daqiqa qaynayotgan suv"
+   },
+   {
+    "text": "Gidrolizat uy haroratigacha sovitilib, ikki marta (20 ml) 3% izoamil spirti saqlagan n-geptan bilan ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 121,
+    "quote": "Olingan gidrolizat uy haroratigacha sovitilib, ikki qayta (20 ml) 3% izoamil spirti saqlagan n-geptan aralashmasi bilan ekstraksiyalanadi."
+   },
+   {
+    "text": "Ekstrakt teng ikki qismga bo‘linadi: biri bilan YuQX tahlili o‘tkaziladi, ikkinchisidan — xromatografik natijalarga tayanib — chinligi va miqdori aniqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 121,
+    "quote": "teng ikki qismga bo‘linadi. Bir qismi bilan fenotiazin hosilalarini yupqa qatlam xramatografiya usulida tahlil qilinadi. Xromatografik tahlil natijalaridan foydalanilgan holda ikkinchi qismdan chinligi va miqdorini aniqlanadi."
+   },
+   {
+    "text": "YuQX: ajralma qismi bug‘latilib, qoldiq 0,2-0,5 ml xloroformda eritiladi va 2 ta plastinkaning start chizig‘iga tomiziladi; yoniga albatta aminazin standart namunasi (yoki taxmin qilingan fenotiazin hosilasi) guvoh eritma sifatida tomiziladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 121,
+    "quote": "Qoldiqni 0,2-0,5 ml xloroformda eritiladi va 2 ta YuQX plastinkaning start chizig‘iga belgilangan nuqtalarga kapillyar naycha yordamida o‘tkaziladi. Tekshiruvchi namuna qatoriga albatta aminazin standart namunasini guvoh eritma yoki boshqa taxmin qilinayotgan fenotiazin hosilasi eritmasi tomiziladi."
+   },
+   {
+    "text": "Birinchi plastinka benzol–dioksan–ammiakning 25% eritmasi (60:35:5) aralashmasi bilan to‘yintirilgan kameraga tushiriladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 121,
+    "quote": "Xromatografik plastinkaning bittasi (1) benzol, dioksan, ammiakning 25% ertimasining 60:35:5 nisbatdagi aralashmasi bilan to‘yintirilgan kameraga,"
+   },
+   {
+    "text": "Ikkinchi plastinka etilasetat, aseton va ammiakning 25% eritmasini etil spirti bilan 1:1 aralashmasidan iborat (50:45:4) sistemada xromatografiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 121,
+    "quote": "ikkinchisi esa (2) etilasetat, aseton va ammiakning 25% eritmasini etil spirti bilan 1:1 aralashmasini 50:45:4 nisbatdagi xromatografik sistema bilan to‘yintirilgan kameraga tushiriladi."
+   },
+   {
+    "text": "Dog‘lar konsentrlangan sulfat kislota va etanol aralashmasi purkab yoki Marki reaktivi tomizib aniqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 121,
+    "quote": "Plastinkadagi dog‘larni aniqlash uchun konsentrlangan sulfat kislota va etanolni 1:9 nisbatdagi aralashmasi purkaladi yoki Marki reaktividan kapillyar naycha yordamida tomiziladi."
+   },
+   {
+    "text": "Natijalar aminazinga nisbatan Rf (Rf st) bo‘yicha baholanadi (1- va 2-sistemada): aminazin 1 va 1, diprazin 0,74 va 2,9 (ikkalasi to‘q qizil dog‘), propazin 1,3 va 1,08, levomepromazin 1,56 va 1,87 (ko‘k dog‘).",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 121,
+    "quote": "Aminazin 1 1 to‘q qizil to‘q qizil Diprazin 0,74 2,9 to‘q qizil to‘q qizil Denizin 2,1 2,9 qizil qizil Propazin 1,3 1,08 qizil qizil Levomepromazin 1,56 1,87 ko‘k ko‘k"
+   },
+   {
+    "text": "Xromatogrammada qo‘shimcha dog‘lar bo‘lsa, geptanli ajralmaning ikkinchi qismi YuQX usulida tozalanadi; qo‘shimcha moddalar bo‘lmasa, tozalamasdan qo‘shimcha reaksiyalar va miqdoriy tahlil o‘tkaziladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 122,
+    "quote": "Xromatogrammada qo‘shimcha dog‘lar hosil bo‘lsa, geptanli alikvotni ikkinchi qismini YuQX usulida tozalash shart. Qo‘shimcha moddalar yo‘q degan xulosaga kelinsa, ikkinchi qismni tozalamasdan porlatib qoldiqdan qo‘shimcha reaksiyalar va miqdoriy tahlil o‘tkaziladi."
+   }
+  ],
+  "pages_read": [
+   119,
+   120,
+   121,
+   122,
+   123,
+   124,
+   125
+  ]
+ },
+ {
+  "id": "sud_kimyo.c1.041",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Qo‘zg‘aluvchi faza — gaz, qo‘zg‘almas faza — yuqori haroratda qaynovchi suyuqlik bo‘lsa, gaz suyuqlik xromatografiyasi deyiladi; suyuq sorbent qattiq neytral moddaga shimdiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 45,
+    "quote": "Qo’zg’aluvchi faza - gaz, qo’zg’almas faza yuqori haroratda qaynovchi suyuqlik bo’lsa gaz suyuqlik xromatografiyasi dеyiladi. Bunda suyuq sorbеnt qattiq nеytral moddaga shimdiriladi."
+   },
+   {
+    "text": "GSX da moddalarning ajralishi taqsimlanish koeffitsiyenti (K) bilan tushuntiriladi: K kichik bo‘lsa, modda qo‘zg‘almas fazada kam shimiladi va kolonkadan tez chiqadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 46,
+    "quote": "GSX da moddalarni ajralishi ularni taqsimlanish koeffitsiеnti (K) bilan tushuntiriladi. Cqo’zg’almas K= ------------------ S qo’zg’aluvchi K - kichik bo’lsa, dеmak modda qo’zg’almas fazada kam shimiladi va kolonkadan tеz chiqariladi."
+   },
+   {
+    "text": "Gaz xromatografi qismlari: gaz manbai, reduktor, aralashma miqdorini o‘lchagich, xromatografik kolonka, detektorlar, termostat, dozator, yozib oluvchi qurilma.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 46,
+    "quote": "Gaz xromatograflari quyidagi qismlardan iborat: gaz manbai, rеduktor, tеkshiriluvchi aralashma miqdorini o’lchagich, xromatografik kolonka, dеtеktorlar, tеrmostat, dozator, yozib oluvchi qurilma."
+   },
+   {
+    "text": "Katarometr universal, sezgirligi alangali-ionizatsion va boshqa detektorlarga nisbatan past, ammo sodda; detektorlar ichida elektron ushlovchi detektorlar eng sezgir.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 191,
+    "quote": "Katoromеtr ko’pgina moddalarni aniqlashda univеrsal bo’lib, uning sеzgirligi alangali- ionizatsion va boshqa dеtеktorlarga nisbatan past, ya'ni 10-2-10-3 tеng, ammo bajarilish tarafidan sodda va oson. Dеtеktorlar ichida, elеktron ushlovchi dеtеktorlar eng sеzgirdir."
+   },
+   {
+    "text": "Moddaning asosiy xarakteristikasi — xromatografik kolonkada ushlanish vaqti yoki masofasi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 46,
+    "quote": "Gaz xromatografiyasida moddani asosiy haraktеristikasi xromatografik kolonkada ushlanish vaqti yoki masofasi bilan haraktеrlanadi."
+   },
+   {
+    "text": "Sifat (chinlik) tahlili: ushlanish parametrlari bo‘yicha; standart modda bilan solishtirish; xromatografiyadan oldin va keyin kimyoviy reaksiyalar o‘tkazish.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 47,
+    "quote": "Chinlik tahlili. Gaz suyuqlik xromatografiyasida quyidagi sifat tahlil usullari qo’llaniladi: 1. Xromatografik kolonkada ushlanish paramеtrlari bo’yicha 2. Standart modda yoki ular aralashmasi bilan solishtirish. 3. Xromatografik tahlildan oldin va kеyin kimyoviy rеaktsiyalar olib borish."
+   },
+   {
+    "text": "Miqdoriy tahlil uch usulda: ichki standart, absolyut kalibrlash va ichki normallash.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 47,
+    "quote": "Miqdori. Gaz xromatografik tahlillarda modda miqdori uch xil usulda: ichki standart usuli, absolyut kalibrlash va ichki normallash usulida aniqlanadi."
+   },
+   {
+    "text": "Afzalliklari: universal usul, murakkab aralashmalarni ayrim komponentlarga ajrata oladi, kam vaqt talab qiladi, yetarli darajada sezgir.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 47,
+    "quote": "1. Univеrsal usul. 2. Xromatografik kolonka murakkab aralashmalarni ayrim komponеntlarga parchala olishi. 3. Tahlil uchun kam vaqt sarflanishi. 4. Еtarli darajada sеzgirligi."
+   },
+   {
+    "text": "Kamchiligi — ayrim suyuq qo‘zg‘almas fazalarning uchuvchanligi va beqarorligi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 47,
+    "quote": "Kamchiligi sifatida ayrim suyuq qo’zg’almas fazalarni uchuvchanligi va bеqarorligini aytish mumkin."
+   },
+   {
+    "text": "Qon va peshobdan spirtlarni aniqlash ularni alkilnitritlarga o‘tkazib, xromatografik ajratishga asoslangan, chunki alkilnitritlar mos spirtlarga nisbatan bir necha marta uchuvchan.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 47,
+    "quote": "Qon va pеshobdan spirtlarni sifat va miqdorini aniqlash, ularni alkilnitritlarga o’tkazib, xromatografik ajratishga asoslangan. Chunki alkilnitritlar, ularga mos spirtlarga nisbatan bir nеcha marotaba uchuvchan bo’ladi."
+   },
+   {
+    "text": "Spirt miqdori ichki standart usulida aniqlanadi, ichki standart sifatida propil spirti olinadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 47,
+    "quote": "Spirt miqdorini ichki standartlash usulida aniqlanadi. Ichki standart sifatida propil spirti olinadi."
+   },
+   {
+    "text": "Barbituratlarning GX tahlili izotermik sharoitda (kolonka 190-200 S, injektor va detektor 220 S) o‘tkaziladi; barbituratlar ushlanish indekslari va Kovach indeksi bilan identifikatsiya qilinadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 114,
+    "quote": "Tahlillar izotermik sharoitda olib borilib, kolonka harorati 190-200 S, injektor harorati 220S, detektor harorati 220S tashkil qiladi. Barbituratlar ushbu sharoitda ushlanish indekslari va Kovach indeksi bilan identifikatsiya qilinadi."
+   }
+  ],
+  "pages_read": [
+   45,
+   46,
+   47,
+   190,
+   191,
+   192,
+   193
+  ]
+ },
+ {
+  "id": "sud_kimyo.c1.042",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Termodesorbsion sirt ionlashuv spektroskopik tahlili organik moddalar tahlilidagi yangi fizik-kimyoviy usullardan bo‘lib, yuqori sezgirligi va juda kam miqdordagi moddalarni aniqlashga imkon berishi bilan ajralib turadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 135,
+    "quote": "Organik moddalar tahlilida qo‘llaniladigan fizik-kimyoviy usullar orasida termodesorbsion sirt ionlashuv spektroskopik tahlili yangi usullardan bo‘lib, o‘zining yuqori sezgirligi, juda kam miqdordagi tekshiriluvchi moddalarni aniqlashga imkon berishi bilan ajralib turadi."
+   },
+   {
+    "text": "Usul turli muhitlarda tarkibida azot saqlovchi, qiyin uchuvchi fiziologik faol birikmalar molekulalarining kam miqdordagi qoldiqlarini aniqlash va tahlil qilish imkonini beradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 135,
+    "quote": "Termodesorbsion sirt-ionlashuv spektroskopiya usuli turli muhitlarda tarkibida azot saqlovchi qiyin uchuvchifiziologik faol birikmalar molekulalarining kam miqdordagi qoldiqlarini aniqlash va tahlilqilish imkonini beradi."
+   },
+   {
+    "text": "Usul dastlabki xromatografik ajratishsiz atrof-muhit ob’ektlari, oziq-ovqat va bionamunalar ekstraktlarini tahlil qilishda ishlatiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 136,
+    "quote": "Dastlabki xromatografik ajratishsiz atrof-muhitob’ektlarini, oziq-ovqatlardan va bionamunalar ekstraktlarini tahlil qilishda ishlatiladi."
+   },
+   {
+    "text": "Mohiyati — modda molekulalarini dasturlashtirilgan harorat rejimida bug‘latish va ularni sirt ionlashuv detektorida (SID) termodesorbsion spektrlar ko‘rinishida qayd qilish.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 135,
+    "quote": "Bu usulning mohiyati – modda molekulalarining haroratini dasturlashtirilgan yo‘sinda bug‘latish va ularning sirt ionlashuv detektorida (SID) termodesorbsion spektrlar ko‘rinishida qayd qilishdan iboratdir."
+   },
+   {
+    "text": "Qayd qilish asosini SID ishlash tizimi tashkil qiladi: detektorning anodi — qizdirilgan emitter, katodi — musbat ionlar kollektori.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 135,
+    "quote": "Qayd qilish asosini sirt ionlashuv detektorining (SID)ishlash tizimi tashkil qiladi. Detektorning anodi bo‘lib qizdirilgan emitter, katodi esa musbat ionlar kollektoridir."
+   },
+   {
+    "text": "Sifat tahlili (standart usul) effektiv desorbsiya haroratlari bo‘yicha o‘tkaziladi; biologik ob’ektdan ajratilgan moddani aniqlashda olingan spektr kompyuter ma’lumotlar bankidagi etalon spektr bilan taqqoslanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 135,
+    "quote": "Moddalarning sifatini aniqlash (standart usul) effektiv desorbsiya haroratlari bo‘yicha amalga oshiriladi. Biologik ob’ektdan ajratib olingan eritmadagi moddani aniqlashda, olingan spektrni kompyuterning ma’lumotlar bankidagi etalon spektr bilan taqqoslash yordamida bajariladi."
+   },
+   {
+    "text": "Tahlil bosqichlari: sirt ionlashuv indikatori PII-N-S «Iskovich-1» ni tayyorlash, namuna eritmalarini tayyorlash, eritmani bug‘latgich lentasiga kiritish va TDSIS tahlilini o‘tkazish.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 260,
+    "quote": "TDSIStahlilini o‘tkazish bir necha bosqichda kechadi: 1. sirt ionlashuv indikatori PII-N-S “Iskovich-1” ni tahlilga tayyorlash, 2. namuna eritmalarini tayyorlash, 3. namuna eritmasini PII-N-S “Iskovich-1” ning bug‘latgich lentasiga kiritish, 4. TDSIStahlilini amalga oshirish,"
+   },
+   {
+    "text": "So‘ngra termodesorbsion spektrlar olinib kompyuter ma’lumotlar bankiga saqlanadi, etalon spektr bilan solishtiriladi, natijalar izohlanadi va qayd etiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 260,
+    "quote": "5. termodesorbsion spektrlari olish va kompyuterning ma’lumotlar bankiga saqlab qo‘yish, 6. olingantermodesorbsion spektrlarni kompyuterning ma’lumotlar bankiga etalon spektr solishtirish, 7. natijalarni izoxlash va qayd etish."
+   },
+   {
+    "text": "Tahlil sharoiti: emitter — iridiy qorishmali oksidlangan molibden, emitter kuchlanishi 405 V, emitter harorati 390–420 0S, bug‘latish harorati xona haroratidan 505 0S gacha, havo oqimi 50 l/soat, namuna hajmi 1,0 mkl.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 136,
+    "quote": "emitter – iridiy qorishmali oksidlangan molibden; • emitter kuchlanishi – 405 V; • emitter harorati – 390 – 420 0S; • bug‘latish harorati – xona haroratidan 505 0S gacha; • havo oqimi – 50 l/soat (kompressor kuchlanishi 12 V); tahlil uchun olingan tekshiriluvchi namuna hajmi - 1,0 mkl;"
+   },
+   {
+    "text": "Miqdoriy tahlil uchun toza standartlarning kalibrovka grafiklari aniqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 136,
+    "quote": "Tashqi muhitob’ektlari, oziq-ovqatlar va bionamunalardagi tarkibida azot bo‘lgan birikmalarnimiqdoriy tahlil qilish uchun toza standartlarining kalibrovkagrafiklari"
+   },
+   {
+    "text": "Tahlilda O‘zbekiston Respublikasi FA U.A.Orifov nomidagi Elektronika instituti xodimlari tomonidan giyohvand va gangituvchi dorivor moddalarni tez aniqlash uchun tavsiya etilgan PII-N-S «Iskovich-1» indikatoridan foydalaniladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 261,
+    "quote": "O‘zbekiston Respublikasi Fanlar Akademiyasining U.A.Orifov nomdagi Elektronika instituti xodimlari tomonidan giyohvand va boshqa gangituvchi ta’sirga ega bo‘lgan dorivor moddalarni tez aniqlash uchun tavsiya etilgan sirt ionlashuv indikatori PII-N-S “Iskovich-1” dan foydalanadi."
+   },
+   {
+    "text": "Misol (sertralin): 1 mkl standart eritma «Iskovich-1» bug‘latgich lentasidagi chuqurchaga solinib spektr olinganda ~131±15 oS va ~190±15 oS da sertralinga xos cho‘qqilar kuzatiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 261,
+    "quote": "mikroshiprits yordamida 1 mkl miqdorda PII-N-S “Iskovich-1” apparatining bug‘latgich lentasidagi silindrik chuqurchaga solinib, sertralinning termodesorbsion spektrlari olindi. Bunda ~131±15oS va~190±15oS sertralinga xos chiziqli cho‘qqilar paydo bo‘lishi kuzatiladi."
+   }
+  ],
+  "pages_read": [
+   135,
+   136,
+   260,
+   261,
+   262
+  ]
+ },
+ {
+  "id": "sud_kimyo.c1.043",
+  "coverage": "partial",
+  "gaps": [
+   "fotoelektrokolorimetr asbobining tuzilishi va ishlash tartibi berilmagan",
+   "fotometriya asosiy qonunining (Buger–Lambert–Ber) to‘liq bayoni va hisoblash formulalari berilmagan",
+   "chinlik va miqdor natijalarini baholash mezonlari (aniqlik, xatolik) berilmagan"
+  ],
+  "points": [
+   {
+    "text": "Moddalarni nur yutishi bo‘yicha miqdorini aniqlash fotometriya deyiladi va kolorimetriya, fotokolorimetriya, spektrofotometriyaga bo‘linadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 244,
+    "quote": "Moddalarni nur yutishi bo‘yicha miqdorini aniqlash – fotometriya deb yuritiladi va quyidagi usullarga bo‘linadi. 1. Kolorimetriya 2. Fotokolorimetriya 3. Spektrofotometriya."
+   },
+   {
+    "text": "Fotokolorimetriya — moddani polixromatik nurlanishda spektrning ko‘rinadigan qismida o‘lchab tahlil qilishga asoslangan.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 244,
+    "quote": "Fotokolorimetriya – moddani polixromatik nurlanishda spektrning ko‘rinadigan qismida o‘lchab tahlil qilishga asoslangan."
+   },
+   {
+    "text": "Svetofiltr tanlash: rangli eritmaning nur yutish maksimumi svetofiltrning nur yutish minimumiga to‘g‘ri kelishi kerak.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 130,
+    "quote": "Tekshiriluvchi moddaning nur yutish spektriga asoslangan holda rangli eritmaning maksimal nur yutish spektri va svetofiltrning, yani eritmaning nur yutish maksimumi svetofiltrning nur yutish minimumiga to`g`ri kelishi kerak."
+   },
+   {
+    "text": "Fotokolorimetrik usulda eritmaning nur yutish maksimumi kerakli svetofiltr yordamida tanlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 246,
+    "quote": "Fotokolorimetrik usulda aniqlash modda eritmalarining nur yutish maksimumi kerakli svetofiltri yordamida amalga oshiriladi."
+   },
+   {
+    "text": "O‘lchash to‘lqin uzunligiga talablar: fotoelement sezgirligi yuqori bo‘lishi, nur biroz siljiganda ham yaqin natijalar olinishi va fotometriyaning asosiy qonuniga bo‘ysunish.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 245,
+    "quote": "1. Tanlangan to‘lqin uzunligiga fotoelement retseptorlarining sezgirligi yuqori bo‘lishi kerak. 2. Yutilayotgan nur to‘lqin uzunligini biroz siljishida olinayotgan natijalarni qayta tekshirilganda bir-biriga yaqin natijalar olish. 3. Fotometriyaning asosiy qonuniga bo‘ysunish kerak."
+   },
+   {
+    "text": "Spektrofotometrik aniqlash fotokolorimetrikdan farqli o‘laroq keng to‘lqin diapazonida va monoxromatik nur bilan katta aniqlikda ishlash imkonini beradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 245,
+    "quote": "Spektrofotometrik aniqlash fotokolorimetrik usuldan farqli xolda to‘lqin uzunliklarining keng diapazonida aniqlash hamda monoxromatik nurlanishni qo‘llashda katta aniqlik bilan ishlashning imkonini beradi."
+   },
+   {
+    "text": "Misol (novokain): chinlik tahlili uchun azobo‘yoq reaksiyasi o‘tkaziladi va olingan eritmaning turli svetofiltrlarda maksimal nur yutishi o‘lchanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 130,
+    "quote": "Novokainning Chinlik tahlilini FEK usulida olib borish uchun yuqorida keltirilgan tartibda azobo`yoq reaksiyasini o`tkaziladi. Olingan eritmaning turli svetofiltrlarda maksimal nur yutish spektri o`lchanadi."
+   },
+   {
+    "text": "1,4-benzodiazepinlar miqdori: Brattan-Marshal reaksiyasidan keyin hosil bo‘lgan qizil olcha rangli eritmaning optik zichligi standart eritma bilan FEK usulida solishtiriladi, miqdor kalibrlash grafigi bo‘yicha hisoblanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 137,
+    "quote": "qizil olcha rangli eritma optik zichligi standart eritma bilan fotoelektrokolorimetrik usulda solishtirib aniqlandi. Benzodiazepin miqdori kalibrlash grafigi yordamida hisoblanadi."
+   },
+   {
+    "text": "Efedron miqdori mis tuzlari va oltingugurt uglerodi bilan hosil qilgan rangli kompleksning optik zichligini FEK usulida o‘lchab aniqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 78,
+    "quote": "1. Mis tuzlari va oltingugurt uglerodi bilan hosil qilgan rangli kompleks moddaning optik zichligi FEK usulida aniqlanadi."
+   },
+   {
+    "text": "Aminazin miqdori konsentrlangan sulfat kislota bilan hosil qilgan qizil rangining optik zichligiga asoslanib fotoelektrokolorimetrik usulda (yoki UB-spektri bo‘yicha) aniqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 124,
+    "quote": "Aminazinni miqdorini aniqlash. Ob’ektlardan ajratib olingan aminazinning miqdorini UB-spektri bo‘yicha spektrofotometrik yoki konsentrlangan sulfat kislota bilan hosil qilgan qizil rangining optik zichligini aniqlashga asoslanib fotoelektrokolorimetrik usulda aniqlanadi."
+   },
+   {
+    "text": "Anabazin miqdori KCN va xloramin bilan glyutakon aldegidi hosil qilib, uning barbitur kislotasi bilan bergan sariq-qo‘ng‘ir rangini FEK da o‘lchashga asoslanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 113,
+    "quote": "2. FEK usuli. Bu usul anabazinni KCN va xloramin bilan glyutakon aldеgidi hosil qilishi, u esa barbitur kislotasi bilan hosil qilgan sariq qo’ng’ir rangni FEK da aniqlashga asoslangan."
+   },
+   {
+    "text": "Dimedrol miqdori fotoelektrokolorimetrik (xrom qora indikatori ishtirokida ekstraksion-fotometrik) usulda aniqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 129,
+    "quote": "1. Fotoelеktrokoloromеtrik usul: xrom qora indikatori ishtirokida ekstraktsion-fotomеtrik usulida aniqlanadi."
+   }
+  ],
+  "pages_read": [
+   78,
+   113,
+   124,
+   129,
+   130,
+   137,
+   244,
+   245,
+   246
+  ]
+ },
+ {
+  "id": "sud_kimyo.c1.044",
+  "coverage": "partial",
+  "gaps": [
+   "spektrofotometr asbobining tuzilishi berilmagan",
+   "solishtirma (molyar) nur yutish ko‘rsatkichi orqali hisoblash formulalari va chinlik mezonlari batafsil berilmagan",
+   "barbituratlar UB-maksimumlari matn va jadvallarda turlicha bo‘lgani uchun misol sifatida olinmadi"
+  ],
+  "points": [
+   {
+    "text": "Spektrofotometriya — monoxromatik nurlarda spektrning ko‘rinadigan hamda unga yondoshgan ultrabinafsha va infraqizil qismida aniqlashga asoslangan.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 244,
+    "quote": "Spektrofotometriya – monoxromatik nurlarni ko‘rinadigan hamda spektrning unga yondoshgan ultrabinafsha va infraqizil qismida aniqlashga asoslangan."
+   },
+   {
+    "text": "Nur yutilishining to‘lqin uzunligiga bog‘liqligi moddaning nur yutish spektri deyiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 109,
+    "quote": "Nur yutilishining to`lqin zunligiga bog`liqligi moddaning nur yutish spektri deyiladi."
+   },
+   {
+    "text": "Optik zichlik eritmaning maksimum nur yutishiga mos to‘lqin uzunligida o‘lchanadi; konsentratsiya optik ko‘rsatkich 0,2 dan 1,0 gacha bo‘ladigan qilib tanlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 109,
+    "quote": "Eritmalarning optic ko`rsatkichini tekshiriluvchi eritmaning maksimum nur yutishiga mos bo`lgan tolqin uzunligida o`lchash lozim. Tekshiriluvchi modda konsentratsiyasini tanlashda eritmalarning optik ko`rsatkichi 0,2 dan 1,0 gacha oralig`ida bo`lishi lozim."
+   },
+   {
+    "text": "Aralashmadagi bitta moddani o‘lchashda bir kyuvetaga tekshiriluvchi eritma, ikkinchisiga undagi boshqa barcha komponentlardan iborat solishtiruvchi eritma solinadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 109,
+    "quote": "Aralashmadagi faqat bir moddaning optik ko`rsatkichini o`lchashda bir kyuvetaga tekshiriluvchi eritma solinib, boshqa kyuvetaga esa tekshiriluvchi eritmada bo`lgan hamma komponentlardan iborat eritma solinadi. Ikkinchi kyuvetaga solingan eritma solishtiruvchi eritma deyiladi."
+   },
+   {
+    "text": "Spektrofotometriya fotokolorimetriyadan farqli o‘laroq keng to‘lqin diapazonida va monoxromatik nur bilan katta aniqlikda ishlash imkonini beradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 245,
+    "quote": "Spektrofotometrik aniqlash fotokolorimetrik usuldan farqli xolda to‘lqin uzunliklarining keng diapazonida aniqlash hamda monoxromatik nurlanishni qo‘llashda katta aniqlik bilan ishlashning imkonini beradi."
+   },
+   {
+    "text": "Misol (kofein): spirtli standart eritmaning yutilish spektri 200-400 nm da o‘lchanadi, kofein 273 nm da maksimumga ega; ob’ektdan ajratilgan kofeinning optik zichligi shu to‘lqin uzunligida o‘lchanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 109,
+    "quote": "Olingan eritmaning yutilish spektri 200-400 nm to`lqin uzunligida o`lchanadi. Kofeinning etil spirtidagi eritmasi 273 nm to`lqin uzunligida maksimumga ega. Shu tartibda ob`yektdan ajratib olingan kofeinning 273 nm to`lqin uzunligida optik zichligi o`lchanadi."
+   },
+   {
+    "text": "Efedrin miqdori efedrin gidroxloridi eritmasi optik zichligining konsentratsiyaga bog‘liqlik grafigi yordamida hisoblanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 77,
+    "quote": "Efedrinning miqdorini UB-spektrofotometriya usulida efedrin gidroxloridi eritmasining optik zichligini uning konsentratsiyasiga bog‘liqlik grafigi yordamida hisoblab topiladi."
+   },
+   {
+    "text": "Chinlikni aniqlash misoli: aminazinning 0,1 M sulfat kislotadagi eritmasi 255 va 307 nm da maksimum nur yutadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 123,
+    "quote": "8. UB-spektrofotometriya usulida aniqlash. Aminazinni 0,1 M sulfat kislotasidagi eritmasi 255 va 307 nm maksimum nur yutadi."
+   },
+   {
+    "text": "Aminazinning asosiy metaboliti — sulfoksidi — xuddi shunday eritmada 239, 274, 300 va 341 nm maksimumlar berishi bilan farqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 124,
+    "quote": "sulfoksidi esa xuddi shunday eritmada 239, 274, 300 va 341 nm spektr maksimumlari berishi bilan farqlanadi."
+   },
+   {
+    "text": "Nikotinning 0,1 M sulfat kislotadagi eritmasi 260 nm da nur yutish maksimumiga ega.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 248,
+    "quote": "6. Nikotinni UB-nurlarini yutish spеktrlari bo’yicha aniqlash. Nikotinni 0,1 M sulfat kislotasidagi eritmasi UB 260 nm -nurlarida nur yutish maksimumini namoyish etadi."
+   },
+   {
+    "text": "Amfetamin va metamfetaminning 0,1M HCl dagi eritmalari 251, 257, 263 nm da maksimum nur yutadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 87,
+    "quote": "Fenilalkilaminlarning UB-nur yutish spektrlari (0,1M NSl) Moddalar nomi ( max), nm Amfetamin 251, 257, 263 Metamfetamin 251, 257, 263"
+   },
+   {
+    "text": "1,4-benzodiazepinlarning spektrofotometrik miqdoriy tahlili spirtli eritmalarning 200-300 nm sohadagi maksimal nur yutishi optik zichligini o‘lchashga asoslanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 138,
+    "quote": "2. Spektrofotometrik usul. Benzodiazepin spirtli eritmalarining ultrabinafsha sohadagi to‘lqin uzunligi 200-300 nm sohadagi maksimal nur yutishi optik zichligini o‘lchashga asoslanadi."
+   }
+  ],
+  "pages_read": [
+   77,
+   87,
+   109,
+   123,
+   124,
+   138,
+   244,
+   245,
+   246,
+   248
+  ]
+ },
+ {
+  "id": "sud_kimyo.c1.045",
+  "coverage": "full",
+  "gaps": [
+   "kitobdagi nikotinning sintez yili («1935») shubhali — olinmadi",
+   "miqdoriy tahlil uchun faqat usul nomlari (FEK, SF) berilgan, bajarilish tartibi yo‘q"
+  ],
+  "points": [
+   {
+    "text": "Tamaki o‘simligi 0,6 % dan 8% gacha nikotin (piridin-3-N-metilpirrolidin) alkaloidi va unga o‘xshash ko‘p birikmalar saqlaydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 110,
+    "quote": "Tamaki o’simligi 0,6 % dan 8% gacha nikotin (piridin-3-N-mеtilpirrolidin) alkaloidi va yana unga o’xshash ko’p birikmalar saqlaydi."
+   },
+   {
+    "text": "Kimyoviy toza nikotin asos holida rangsiz, hidsiz moysimon suyuqlik.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 110,
+    "quote": "Kimyoviy toza nikotin alkaloidi asos holida rangsiz, hidsiz moysimon suyuqlik."
+   },
+   {
+    "text": "Sud organlari ko‘rsatmasiga ko‘ra yoki tekshiruv vaqtida xloroform qoldig‘i moysimon va xarakterli hidli bo‘lsa, nikotinga tekshirish olib boriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 110,
+    "quote": "Sud ijrochilarining alohida ko’rsatmalariga muvofiq yoki kimyoviy tеkshirish vaqtida xloroform qoldig’i moysimon va u xaraktеrli hidga ega bo’lsa nikotin alkaloidiga tеkshirish olib boriladi."
+   },
+   {
+    "text": "Suyuq alkaloidlar (jumladan nikotin) umumiy usullardan tashqari biologik ob’ektdan ishqoriy sharoitda suv bug‘i bilan haydab ajratiladi; distillyat ishqoriy muhitga keltirilib, xloroform bilan ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 97,
+    "quote": "Suyuq alkaloidlarni umumiy ajratish usullaridan tashqari biologik ob'еktdan ishqoriy sharoitda suv bug’i yordamida haydab ajratiladi, olingan distillyat ishqoriy muhitga kеltirilib, xloroform bilan ekstraktsiya qilinadi."
+   },
+   {
+    "text": "Nikotinni ashyoviy dalillardan ajratish uchun nordonlashtirilgan spirt yoki suv usullaridan tashqari suv bug‘i bilan haydash tavsiya etiladi; organik erituvchilar bilan qisman kislotali, asosan ishqoriy muhitda ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 111,
+    "quote": "Nikotinni ashyoviy dalillar tarkibidan ajratib olish uchun nordonlashtirilgan spirt yoki suv usularidan tashqari, suv bug’i bilan haydash usuli ham tavsiya etiladi. Organik erituvchilar bilan qisman kislotali, asosan ishqoriy muhitda ekstraktsiyalanadi."
+   },
+   {
+    "text": "Dragendorf reaktivi (xlorid kislota ishtirokida) bilan nikotin qizg‘ish rangli «X» va «K» shaklidagi kristallar hosil qiladi; aniqlanish chegarasi 1 mkg.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 111,
+    "quote": "Qoldiqqa xlorid kislotasi va Dragеndorf rеaktivi tomizilsa nikotin qizg’ish rangli, \"X\" va \"K\" shaklidagi ba'zan uchib kеtayotgan qushlar ko’rinishiga o’xshash kristallar hosil qiladi. Aniqlanish chеgarasi 1 mkg ga tеng."
+   },
+   {
+    "text": "Reyneke tuzi bilan (xlorid kislota ishtirokida) nikotin prizmatik shakldagi qizil-pushti kristallar o‘simtasini hosil qiladi; aniqlanish chegarasi 1,2 mkg.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 111,
+    "quote": "3. Rеynеkе tuzi bilan rеaktsiyasi. Buyum oynachasidagi qoldiqqa xlorid kislota va Rеynеkе tuzining yangi tayyorlangan eritmasi tomizilsa nikotin prizmatik shakldagi qizil pushti rangli kristallar o’simtasini hosil qiladi. Aniqlanish chеgarasi 1,2 mkg."
+   },
+   {
+    "text": "Formaldegid va konsentrlangan nitrat kislota ta’sirida nikotin qizil rangli birikma hosil qiladi (anabazin bu reaksiyani bermaydi).",
+    "book": "toks_kimyo_majmua_A",
+    "page": 111,
+    "quote": "4. Formaldеgid ishtirokidagi rеaktsiyasi. Formaldеgid va kontsеntrlangan nitrat kislotasi ta'sirida nikotin qizil rangli birikma hosil qiladi (anabazin bu rеaktsiyani bеrmaydi)."
+   },
+   {
+    "text": "YuQX: qo‘zg‘aluvchi faza geksan–aseton (4:1), kislotali yodplatinat reaktivi purkalganda nikotin Rf=0,4 da ko‘k dog‘ beradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 111,
+    "quote": "7. Yupqa qatlam xromatografiyasi usulda aniqlash. Qo’zg’aluvchi faza gеksan- atsеton (4:1), tasdiqlovchi rеagant - kislotali sharoitdagi yodplatinat rеaktivi purkalganda Rf=0,4 ga tеng, ko’k rangli dog’ hosil bo’ladi."
+   },
+   {
+    "text": "UB-spektr: 0,1n H2SO4 dagi eritmasi 260 nm da maksimal nur yutadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 111,
+    "quote": "8. UB spеktri bo’yicha aniqlash. 0,1n H2SO4 dagi eritmasi (max -260 nm to’lqin uzunligida maksimal nur yutish ko’rsatgichiga ega."
+   },
+   {
+    "text": "Nikotin farmakologik ta’siri va Dragendorf reaktivi bilan aniqlanishi mumkin; «murda nikotini» bu reaktiv bilan kristall hosil qilsa ham farmakologik ta’sir bermaydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 105,
+    "quote": "Nikotin farmakologik ta’siri bo‘yicha hamda Dragendorf reaktivi bilan aniqlanishi mumkin, \"murda nikotini\" ushbu reaktiv bilan kristall hosil qilsa ham, lekin farmakologik ta’sirni bermaydi."
+   },
+   {
+    "text": "Farmakologik tekshiruv: nikotin yoki uning suvli eritmasi baqaning orqa tanasiga tomizilsa, bir necha daqiqadan so‘ng baqa o‘ziga xos tirishadi; miqdori FEK va SF usulda aniqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 112,
+    "quote": "agarda nikotin moddasidan yoki uning suvli eritmasidan baqaning opqa tanasiga ozroq tomizilsa, baqa bir nеcha daqiqadan so’ng (6-rasm) o’tirganga o’xshab tirishib qoladi. Miqdorini aniqlash. FEK va SF usulda aniqlanadi."
+   }
+  ],
+  "pages_read": [
+   97,
+   104,
+   105,
+   110,
+   111,
+   112,
+   247,
+   248,
+   249
+  ]
+ },
+ {
+  "id": "sud_kimyo.c1.046",
+  "coverage": "partial",
+  "gaps": [
+   "YuQX sharoitlari (sistema, Rf) berilmagan — faqat usul nomi",
+   "UB- va IQ-spektr ma’lumotlari berilmagan",
+   "metabolitlari kam o‘rganilgan (kitobda shunday qayd etilgan)",
+   "Dragendorf reaktivi bilan anabazin kristallarining shakli va rangi kitobning ikki joyida turlicha berilgan — shakl/rang olinmadi"
+  ],
+  "points": [
+   {
+    "text": "Anabazin Anabasis aphulla o‘simligida va qisman tamakida uchraydi; rangsiz moysimon modda, organik erituvchilarda yaxshi eriydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 112,
+    "quote": "Anabazin - Anabasis aphulla o’simligida, hamda qisman tamakida uchraydigan alkaloid. U rangsiz moysimon modda bo’lib, organik erituvchilarda yaxshi eriydi."
+   },
+   {
+    "text": "Anabazin qisman kislotali, asosan ishqoriy muhitda organik erituvchilar bilan ekstraksiyalanadi, ishqoriy muhitda suv bug‘i bilan haydaladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 112,
+    "quote": "Qisman kislotali va asosan ishqoriy muhitda organik erituvchilar bilan ekstraktsiyalanadi. Ishqoriy muhitda suv bug’i yordamida haydaladi."
+   },
+   {
+    "text": "Biologik ob’ektdan anabazin sulfat kislota bilan nordonlashtirilgan suv usulida va suv bug‘i yordamida haydab ajratiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 112,
+    "quote": "Biologik ob'еktdan anabazin sulfat kislota bilan nordonlashtirilgan suv usulida va suv bug’i yordamida haydab ajratiladi."
+   },
+   {
+    "text": "Dragendorf reaktivi bilan anabazin kristallar hosil qiladi; koniin va nikotin bu reaktiv bilan boshqa shakldagi kristallar beradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 112,
+    "quote": "1. Dragеndorf rеaktivi bilan anabazin mayda qizil-qo’ng’ir rangli cho’qqisimon kristallarni o’simtasini hosil qiladi. Koniin va nikotin bu rеaktiv bilan boshqa shakldagi kristallar hosil qiladi."
+   },
+   {
+    "text": "Anabazin pikrin kislotasi bilan sariq cho‘kma beradi, nikotin esa bermaydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 112,
+    "quote": "2. Anabazin pikrin kislotasi bilan sariq cho’kma bеradi, nikotin esa bеrmaydi."
+   },
+   {
+    "text": "Bushard reaktivi bilan anabazin qizil-qo‘ng‘ir cho‘kma beradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 112,
+    "quote": "3. Anabazin Bushard rеaktivi bilan qizil-qo’ng’ir cho’kma bеradi."
+   },
+   {
+    "text": "Pergidrol va konsentrlangan H2SO4 bilan anabazin qizil rang beradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 112,
+    "quote": "4. Anabazin pеrgidrol va kontsеntrlangan H2SO4 bilan qizil rang bеradi."
+   },
+   {
+    "text": "Vanilin kristali va 1-2 tomchi konsentrlangan H2SO4 bilan anabazin qizil yoki olchadek qizil rang beradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 113,
+    "quote": "5. Anabazin vanilin kristali va 1-2 tomchi kontsеntrlangan H2SO4 bilan qizil yoki olchadеk qizil rang bеradi."
+   },
+   {
+    "text": "KCN, xloramin B va barbitur kislotasi bilan anabazin sariq-qo‘ng‘ir rang hosil qiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 113,
+    "quote": "6. KCN, xloramin B va barbitur kislotasi bilan anabazin sariq qo’ng’ir rang hosil qiladi."
+   },
+   {
+    "text": "Reyneke tuzi bilan anabazin ninasimon kristallar beradi; anabazin YuQX usulida ham aniqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 113,
+    "quote": "8. Rеynеkе tuzi bilan ninasimon kristallar. 9. Yupqa qatlam xromatografiyasi usulida aniqlanadi."
+   },
+   {
+    "text": "Formaldegid va konsentrlangan nitrat kislota bilan reaksiyani nikotin beradi, anabazin bermaydi (farqlash).",
+    "book": "toks_kimyo_majmua_A",
+    "page": 111,
+    "quote": "Formaldеgid va kontsеntrlangan nitrat kislotasi ta'sirida nikotin qizil rangli birikma hosil qiladi (anabazin bu rеaktsiyani bеrmaydi)."
+   },
+   {
+    "text": "Miqdori SF va FEK usulida aniqlanadi; FEK usuli anabazinning KCN va xloramin bilan glyutakon aldegidi hosil qilishi va uning barbitur kislotasi bilan bergan sariq-qo‘ng‘ir rangini o‘lchashga asoslangan.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 113,
+    "quote": "Miqdori. 1. SF usul. 2. FEK usuli. Bu usul anabazinni KCN va xloramin bilan glyutakon aldеgidi hosil qilishi, u esa barbitur kislotasi bilan hosil qilgan sariq qo’ng’ir rangni FEK da aniqlashga asoslangan."
+   }
+  ],
+  "pages_read": [
+   97,
+   111,
+   112,
+   113,
+   247,
+   248,
+   249
+  ]
+ },
+ {
+  "id": "sud_kimyo.c1.047",
+  "coverage": "partial",
+  "gaps": [
+   "YuQX va UB-spektr bo‘yicha aniqlash sharoitlari berilmagan",
+   "metabolizmi haqida ma’lumot berilmagan",
+   "yod ioniga reaksiyada xloroform qatlami rangi kitobning turli joylarida turlicha (binafsha, qizil binafsha, qizil pushti) berilgan"
+  ],
+  "points": [
+   {
+    "text": "Paxikarpin safora o‘simligining ustki qismlari va termopsis bargida saqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 113,
+    "quote": "Paxikarpin - safora o’simligini ustki qismlari va tеrmopsis bargida saqlanadi."
+   },
+   {
+    "text": "Asos holdagi sof paxikarpin tiniq, rangsiz moysimon suyuqlik, havoda turganda o‘zgaradi; tibbiyotda yodid tuzi holida ishlatiladi, u suv va spirtda yaxshi eriydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 113,
+    "quote": "Asos holdagi sof paxikarpin tiniq, rangsiz moysimon suyuqlik bo’lib, havoda turishi natijasida o’zgaradi. Tibbiyotda paxikarpin yodid tuzi holida ishlatiladi hamda u suv va spirtda yaxshi eriydi."
+   },
+   {
+    "text": "Paxikarpin bioob’ektdan nordonlashtirilgan spirt va nordonlashtirilgan suv usullaridan tashqari elektrodializ usulida ham ajratib olinadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 113,
+    "quote": "Paxikarpin bioob'еkt tarkibidan nordonlashtirilgan spirt va nordonlashtirilgan suv usulidan tashqari elеktrodializ usulida ham ajratib olinadi."
+   },
+   {
+    "text": "Paxikarpinning asosiy qismi ishqoriy, oz qismi kislotali sharoitda organik erituvchi bilan ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 113,
+    "quote": "Paxikarpinni asosiy qismi ishqoriy sharoitda, oz qismi kislotali sharoitda organik erituvchi bilan ekstraktsiyalanadi"
+   },
+   {
+    "text": "Elektrodializ strixnin, paxikarpin kabi moddalarni ajratish va tozalashda qo‘llaniladi: alkaloid tuzlari doimiy tok ta’sirida yarim o‘tkazgich pardadan katodga siljiydi, tahlil uchun katod suyuqligi ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 93,
+    "quote": "A. Elеktrodializ usulida tozalash - strixnin, paxikarpin kabi ayrim moddalarni ajratish va tozalashda qo’llaniladi. Bu usulda alkaloidlarning tuzlari doimiy tok ta'sirida yarim o’tkazgich pardadan katodga tomon siljishi asos qilib olingan. Tahlil uchun katod suyuqligi ekstraktsiyalab ishlatiladi."
+   },
+   {
+    "text": "Nordonlashtirilgan suv usullarida ekstraksiyadan keyin qolgan suvli qism paxikarpin uchun yod ioniga tekshiriladi: sulfat kislota bilan nordonlashtirilib, natriy nitrit eritmasi va xloroform qo‘shib chayqatiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 232,
+    "quote": "Har ikkala usulda ham oxirgi suvli qoldiqdan paxikarpin uchun yod ioniga tеkshiruv o’tkaziladi. Buning uchun 5 ml suvli qismga kislotali muhitgacha sulfat kislotasi eritmasi qo’shilgach, 1-2 tomchi natriy nitrit eritmasi hamda 1 ml xloroform qo’shib chayqatiladi."
+   },
+   {
+    "text": "Paxikarpin xloroform bilan ajratilgach, qolgan ammiakli suvli eritma 10% H2SO4 bilan nordonlashtirilib, 1% natriy nitrit va xloroform qo‘shib chayqatilsa, xloroform qatlami binafsha rangga bo‘yaladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 113,
+    "quote": "Paxikarpinni xloroform bilan ajratib olingach, qolgan ammiakli suvi eritmani 10% H2SO4 bilan nordonlashtiriladi, (lakmus bo’yicha) unga 2-3 tomchi 1% nitrit natriy va 3 ml xloroform qo’shib chayqatilsa, xloroform qatlami binafsha rangga bo’yaladi"
+   },
+   {
+    "text": "Bushard reaktivi bilan paxikarpin sariq rangli dub (eman) bargi shaklidagi kristallar hosil qiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 114,
+    "quote": "2. Bushard rеaktivi bilan paxikarpin sariq rangli dub bargi shaklidagi kristallar hosil qiladi."
+   },
+   {
+    "text": "Kobalt rodanid kompleksi bilan havo rangli prizmatik kristallar o‘simtasini hosil qiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 114,
+    "quote": "3. Kobalt rodanid komplеksi bilan havo rangli prizmatik kristallar o’simtasini hosil qiladi."
+   },
+   {
+    "text": "Brom bilan oksidlanish: paxikarpin shimdirilgan filtr qog‘oz brom bug‘ida sariq rang beradi, ammiak bilan qizdirilganda qizil rangga o‘tadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 114,
+    "quote": "5. Paxikarpinni brom bilan oksidlanish rеaktsiyasi. Paxikarpin eritmasi bilan shimdirilgan filtr qog’ozni brom bug’iga tutilsa sariq rang hosil bo’ladi, sariq rang ammiak bilan birga qizdirilganda qizil rangga o’tadi."
+   },
+   {
+    "text": "Mis yodid kompleksi bilan sariq rangli kristallar to‘plamini hosil qiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 114,
+    "quote": "6. Mis yodid komplеksi bilan sariq rangli kristallar to’plamini hosil qiladi."
+   },
+   {
+    "text": "Miqdoriy tahlil: paxikarpinning bromfenol ko‘ki bilan hosil qilgan kompleksi xloroform bilan ekstraksiyalanib, ekstraksion fotometrik usulda aniqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 114,
+    "quote": "Paxikarpin bromfеnol ko’ki bilan hosil qilgan komplеksi xloroform bilan ekstraktsiyalanib, so’ng ekstraktsion fotomеtrik usulda aniqlanadi."
+   }
+  ],
+  "pages_read": [
+   93,
+   96,
+   97,
+   113,
+   114,
+   230,
+   231,
+   232,
+   247,
+   248,
+   249
+  ]
+ }
+]

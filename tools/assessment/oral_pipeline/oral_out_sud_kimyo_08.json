@@ -1,0 +1,1147 @@
+[
+ {
+  "id": "sud_kimyo.c23.093",
+  "coverage": "partial",
+  "gaps": [
+   "strukturaviy formula (kitobda faqat rasm; matnda kimyoviy nomi berilmagan)",
+   "oksazepamni aynan qon/peshobdan ajratishning alohida tartibi (faqat benzodiazepinlar uchun umumiy gidroliz usuli bor; 17-jadvalda oksazepam yo‘q)",
+   "135-betdagi o‘rinbosarlar ro‘yxatida oksazepam uchun «R1-Sh3» deb yozilgan (OCR/xato) — bu qism da’vo qilinmadi"
+  ],
+  "points": [
+   {
+    "text": "Oksazepam 1,4-benzodiazepin hosilalari — trankvilizatorlar qatoriga kiradi; o‘tgan asrning 60-yillarida xlordiazepoksiddan keyin diazepam, nitrazepam bilan birga sintez qilingan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 133,
+    "quote": "1,4-benzodiazepin hosilalari trankvilizatorlar qatoriga kiradi. O‘tgan asrning 60 yillari boshida xlordiazepoksid, keyinroq unga o‘xshash qator moddalar: diazepam, nitrazepam va oksazepamlar sintez qilindi."
+   },
+   {
+    "text": "Oksazepam — oq kristall kukun; suvda deyarli erimaydi, etil spirti va xloroformda yaxshi eriydi; ishqoriy muhitda organik erituvchilar bilan yaxshi ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 142,
+    "quote": "Oksazepam oq kristall kukun bo‘lib, suvda deyarli erimaydi. Etil spirti va xloroformda esa yaxshi eriydi. Ishqoriy muhitda organik erituvchilar bilan yaxshi ekstraksiyalanadi."
+   },
+   {
+    "text": "Oksazepam diazepamning metabolitlaridan biri; organizmga yuborilgach 4 soatdan keyin plazmada glyukuronid holida yuqori konsentratsiyaga yetadi va 48 soat davomida plazmadan yo‘qoladi; peshob bilan glyukuronid holida, axlat bilan o‘zgarmagan holda chiqariladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 142,
+    "quote": "Oksazepam diazepamning metabolitlaridan biri bo‘lib, organizmga yuborilsa 4 soatdan keyin plazmada glyukuronid holida yuqori konsentratsiyaga etadi, 48 soat davomida plazmadan yo‘qoladi. Organizmdan peshob bilan glyukuronid holida, axlat bilan o‘zgarmagan holda chiqariladi."
+   },
+   {
+    "text": "Biologik ob’ektdan A.F. Fartushniy usulida ajratiladi: 25 g maydalangan ob’ektga gidrofosfatning suvli eritmasidan 3 ml qo‘shib gomogenlashtiriladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 142,
+    "quote": "Oksazepam biologik ob’ektdan A.F.Fartushnыy tavsiya etgan quyidagi usulda ajratib olinadi: 25 g maydalangan ob’ektga gidrofosfatni suvli eritmasidan 3 ml qo‘shib, gomogenlashtiriladi."
+   },
+   {
+    "text": "Gomogenat 3 marta 10 ml etil efiri bilan ekstraksiya qilinadi; filtrlab olingan efirli ekstrakt oksazepamning sifat va miqdor tahlili uchun ishlatiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 142,
+    "quote": "Gomegenat 3 marta 10 ml etil efiri bilan ekstraksiya qilinadi. Filtrlab ajratib olingan efirli ekstrakt oksazepamni sifat va miqdorini aniqlashga ishlatiladi."
+   },
+   {
+    "text": "Biologik suyuqliklarda (Izotov, Volkova va boshqalar taklifi bo‘yicha) gidroliz mahsulotlari orqali tahlil: 10 ml peshob (2 ml qon) ga 10 ml (2 ml) konsentrlangan xlorid kislota qo‘shilib, qaytar sovutgichli kolbada 1 soat suv hammomida qizdiriladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 134,
+    "quote": "Buning uchun 10 ml peshob (2 ml qon) olib ustiga 10 ml (2 ml) konsentrlangan xlorid kislota quyib, qaytar sovutgich ulangan kolbada 1 soat davomida suv hammomida qizdiriladi."
+   },
+   {
+    "text": "Kislotali gidrolizda oksazepamdan AXB (2-amino-5-xlorbenzofenon) hosil bo‘ladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 135,
+    "quote": "Oksazepam - R1-Sh3, R2-Cl, AXB (2-amino-5-xlor benzofenon)"
+   },
+   {
+    "text": "YuQX: erituvchilar aralashmasi xloroform–propil spirti–aseton (9:0,4:1), aniqlovchi reaktiv natriy tiosulfat eritmasi bo‘lganda oksazepam sariq yoki zarg‘aldoq rangli dog‘ beradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 142,
+    "quote": "Erituvchilar aralashmasi sifatida xloroform-propil spirti-asetonning 9:0,4:1 nisbatdagi aralashmasi, aniqlovchi reaktiv sifatida esa natriy tiosulfat eritmasi qo‘llanganda oksazepam sariq yoki zarg‘aldog‘ rangli dog‘ hosil qiladi."
+   },
+   {
+    "text": "UB-spektr: kislotadagi eritmasi 234 va 280 nm, ishqordagi eritmasi 233 va 344 nm, etanoldagi eritmasi 230 nm (ε=1235) va 315 nm (ε=85) da maksimum nur yutadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 142,
+    "quote": "kislotada eritiladi va 234 nm va 280 nm, ishqordagi eritmasi 233 va 344 nm, etanoldagi eritmasi 230 nm (ε=1235) va 315 nm (ε=85) maksimum nur yutadi."
+   },
+   {
+    "text": "IK-spektr: kaliy bromidli plastinkasi 698, 1325, 1129, 1711, 1693 sm-1 yutilish chiziqlarini beradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 143,
+    "quote": "Oksazepamning kaliy bromiddagi plastinkasi quyidagi yutilish chiziqlarini 698, 1325, 1129, 1711, 1693 sm-1 namoyon qiladi."
+   },
+   {
+    "text": "Mass-spektr: oksazepam 257, 77, 268, 239, 205, 267, 233, 259 m/z cho‘qqilari bilan identifikatsiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 143,
+    "quote": "Oksazepam 257, 77, 268, 239, 205, 267, 233, 259 m/z cho‘qqilar hosil qilishi bilan identifikatsiyalanadi."
+   },
+   {
+    "text": "Miqdori SF (spektrofotometriya) va FEK (fotoelektrokolorimetriya) usullarida aniqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 143,
+    "quote": "Oksazepamning miqdorini SF, FEK usullarida aniqlanadi."
+   }
+  ],
+  "pages_read": [
+   133,
+   134,
+   135,
+   136,
+   137,
+   138,
+   142,
+   143,
+   144
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.094",
+  "coverage": "full",
+  "gaps": [
+   "UB-spektrda pH=13 dagi maksimum matnda 258-260 nm, spektral jadvalda esa 254-256 nm — ziddiyat, shu qiymat olinmadi",
+   "UB-spektrofotometrik miqdoriy tahlil va differensial spektrofotometriyaning bajarilish tartibi (faqat nazorat savollarida tilga olingan)",
+   "YuQX aniqlovchi reaktivi «difenilkarbozon» (Giyohvand moddalar tahlili) va «difinilkarbazid» (Majmua) deb turlicha yozilgan"
+  ],
+  "points": [
+   {
+    "text": "Barbituratlarni aniqlashda rang va cho‘kma hosil qiluvchi, mikrokristalloskopik reaksiyalar bilan bir qatorda fizik-kimyoviy usullardan ham foydalaniladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 108,
+    "quote": "Barbituratlarni aniqlashda rang va cho‘kma hosil qiluvchi hamda mikrokristalloskopik reaksiyalar, shuningdek fizik-kimyoviy usullardan foydalaniladi."
+   },
+   {
+    "text": "Tekshiriluvchi qoldiq ko‘p yoki ashyoviy dalil toza kukun bo‘lsa, suyuqlanish harorati aniqlanadi; barbituratlarning suyuqlanish haroratlari 15-jadvalda keltirilgan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 108,
+    "quote": "Tekshiriluvchi qoldiq ko‘p yoki ashyoviy dalil toza kukun holida bo‘lganda barbituratlarni aniqlash uchun quyidagi reaksiyalar qo‘llanadi: 1. Suyuqlanish haroratini aniqlash. Ayrim barbituratlarning xossalariga oid ma’lumotlar va suyuqlanish haroratlari 15-jadvalda keltirilgan."
+   },
+   {
+    "text": "Barbituratlar yuqori haroratda quruq haydaladi (sublimatsiya); hosil bo‘lgan sublimat kristallari ayrim barbituratlar uchun xarakterli.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 106,
+    "quote": "Barbituratlar yuqori haroratda quruq haydaladi. Olingan sublimat kristallari esa ayrim barbituratlar uchun xarakterli bo‘ladi."
+   },
+   {
+    "text": "Quruq haydash (vozgonka) barbituratlarni yot moddalardan tozalashda ham qo‘llaniladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 93,
+    "quote": "a) quruq xaydash (vozgonka). Harorat ta'sirida sublimatsiyalanuvchi - ya'ni barbituratlar, bеnzoy va salitsil kislotalari, kofеin kabi moddalarni tozalashda foydalaniladi."
+   },
+   {
+    "text": "YuQX: barbituratlarni tozalash va aniqlashda xloroform – n-butanol – 25% NH4OH (70:40:5) sistemasi ishlatiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 93,
+    "quote": "kislota xossali moddalardan barbituratlarni tozalash va aniqlashda xloroform - n-butanol - 25% NH4OH (70:40:5) sistеmasidan foydalaniladi."
+   },
+   {
+    "text": "Aniqlovchi reaktiv sifatida difenilkarbazidning 0,02% xloroformli eritmasi va simob sulfatning suvli eritmasi purkaladi; barbituratlar turli Rf qiymatlarda siyoh rangli dog‘lar beradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 93,
+    "quote": "Aniqlovchi rеaktiv 0,02% difinilkarbazidning xloroformli eritmasi va simob sulfatning suvli eritmasi purkaladi. Barbituratlar siyox rangda turli Rf oralig’ida dog’lar hosil qiladi."
+   },
+   {
+    "text": "Gaz xromatografiyasi: 3% SE-30 shimdirilgan xromosorb G-HP bilan to‘ldirilgan, uzunligi 2 m, ichki diametri 2-4 mm shisha kolonka ishlatiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 113,
+    "quote": "tahlilda ichi 3% SE-30 shimdirilgan xromosorb G-HP sorbenti bilan to‘ldirilgan, uzunligi 2 m, ichki diametri 2-4 mm bo‘lgan shisha kolonkadan foydalaniladi."
+   },
+   {
+    "text": "GX sharoiti: izotermik rejim, kolonka harorati 190-200 °S, injektor va detektor 220 °S; barbituratlar ushlanish indekslari va Kovach indeksi bo‘yicha identifikatsiya qilinadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 114,
+    "quote": "Tahlillar izotermik sharoitda olib borilib, kolonka harorati 190-200 S, injektor harorati 220S, detektor harorati 220S tashkil qiladi. Barbituratlar ushbu sharoitda ushlanish indekslari va Kovach indeksi bilan identifikatsiya qilinadi."
+   },
+   {
+    "text": "YuSSX: uzunligi 150 mm, ichki diametri 2,6 mm, oktadesil silikagelli kolonka; mobil faza — pH 3,5 li 0,1 M fosfat buferi va metanol (60:40).",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 114,
+    "quote": "Tahlil sharoiti: tahlilda uzunligi 150 mm, ichki diametri 2,6 mm bo‘lgan, oktadesil slikagel bilan to‘ldirilgan kolonkadan foydalaniladi. Mobil faza sifatida rN 3,5 bo‘lgan 0,1 M fosfat buferi va metanolning 60:40 nisbatdagi aralashmasi ishlatiladi."
+   },
+   {
+    "text": "YuSSX detektori — UB-spektrometr, aniqlash to‘lqin uzunligi 216 nm; mobil faza tezligi 2 ml/daqiqa, namuna hajmi 20 mkl.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 114,
+    "quote": "Detektor – UB-spektrometr, aniqlash to‘lqin uzunligi 216 nm. Mobil fazaning harakat tezligi 2 ml/daqiqani tashkil etadi. Injektorga yuboriladigan namuna miqdori – 20 mkl."
+   },
+   {
+    "text": "UB-spektrofotometriya: barbituratlar pH=10 muhitida (0,05 M borat buferi) monoimid shaklida 238-240 nm sohada spektral maksimum beradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 114,
+    "quote": "Ular rN=10 muhitida (0,05 M borat buferi) monoimid ko‘rinishida 238 - 240 nm sohada spektral maksimum"
+   },
+   {
+    "text": "Kitobda barbituratlarning UB- (borat bufer pH 9,2 va 1 M NaOH pH 13), IQ- (KBr disk) va mass-spektrlari jadval holida berilgan — identifikatsiyada solishtirish uchun.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 115,
+    "quote": "Barbitur kislotalarning spektral tahlil natijalari Modda nomi UB-spektrlari IQ-spektrlari Mass spektrlari"
+   }
+  ],
+  "pages_read": [
+   106,
+   108,
+   109,
+   110,
+   113,
+   114,
+   115,
+   116,
+   91,
+   92,
+   93,
+   229,
+   230
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.095",
+  "coverage": "partial",
+  "gaps": [
+   "strukturaviy formula (kitobda faqat rasm; matnda kimyoviy nomi berilmagan)",
+   "chiqarilish foizlari bir-biriga zid (134-betda 20% metabolit holida; 141-betda 48 soatda 23%, peshob bilan 95% metabolit holida) — olinmadi",
+   "135-betdagi matnda nitrazepam gidrolizi «AXB» deb yozilgan, jadval va o‘rinbosarlar ro‘yxatida ANB/DAB — matndagi jumla olinmadi",
+   "«qondagi maksimal miqdori 0,005 g, 24 soatdan so‘ng» jumlasi shubhali — olinmadi"
+  ],
+  "points": [
+   {
+    "text": "Nitrazepam (sinonimlari: eunoktin, radedorm, magadon, neozepam) 1963 yilda sintez qilingan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 141,
+    "quote": "Sinonimlari: eunoktin, radedorm, magadon, neozepam va boshqalar 1963 yilda sintez qilingan."
+   },
+   {
+    "text": "Biologik suyuqliklarda (Izotov, Volkova va boshqalar taklifi bo‘yicha) gidroliz mahsulotlari orqali tahlil: 10 ml peshob (2 ml qon) ga 10 ml (2 ml) konsentrlangan xlorid kislota qo‘shilib, qaytar sovutgichli kolbada 1 soat suv hammomida qizdiriladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 134,
+    "quote": "Buning uchun 10 ml peshob (2 ml qon) olib ustiga 10 ml (2 ml) konsentrlangan xlorid kislota quyib, qaytar sovutgich ulangan kolbada 1 soat davomida suv hammomida qizdiriladi."
+   },
+   {
+    "text": "Asosiy metabolitlari — 7-aminonitrazepam va 7-asetoaminonitrazepam, ular erkin va oqsillar bilan birikkan holda bo‘ladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 141,
+    "quote": "Asosiy metabolitlari 7-aminonitrazepam va 7-asetoaminonitrazepam erkin holda va oqsillar bilan birikkan holda bo‘ladi."
+   },
+   {
+    "text": "Nitrazepam ishqoriy suvli eritmalardan organik erituvchilar bilan ajratiladi; biologik ob’ekt 3 marta to‘yintirilgan oksalat kislota eritmasi (pH=1-2) bilan 1 soatdan bo‘ktirilib, ajratma sentrifugalab olinadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 141,
+    "quote": "Nitrazepam ishqoriy suvli eritmalardan organik ajratuvchilar yordamida ajratiladi. Biologik ob’ektdan ajratish uchun 3 marta to‘yintirilgan oksalat kislotasi eritmasi bilan (rN=1-2) 1 soatdan qoldirilib qo‘yiladi. Ajratmani biologik ob’ektdan sentrifugalab ajratib olinadi."
+   },
+   {
+    "text": "Birlashtirilgan sentrifugat avval kislotali muhitda xloroform–etilasetat (1:1) bilan 3 marta (20, 15, 15 ml), so‘ng ishqor bilan pH=10 ga yetkazilib, yana shu aralashma bilan 3 marta ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 141,
+    "quote": "Birlashtirilgan sentrifugat 3 marta xloroform-etilasetatning 1:1 nisbatdagi aralashmasi bilan ekstraksiyalanadi (20, 15 va 15 ml). So‘ng sentrifugatga ishqor qo‘shib rN=10 ga etkazilib, 3 marta xloroform va etilasetatning 1:1 nisbatdagi aralashmasi bilan (20, 15 va 15 ml) chayqatilib ekstrakt"
+   },
+   {
+    "text": "Gidroliz mahsulotlari bo‘yicha tahlilda (17-jadval) nitrazepam ANB (Rf 0,17-0,18; UB 238, 358 nm) va DAB (startda qoladi) beradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 136,
+    "quote": "1 Nitrazepam ANB 0,17-0,18 238, 358 DAB start"
+   },
+   {
+    "text": "Gidroliz mahsulotlari YuQX plastinkasida diazotirlab-azo birikishdan keyin farqlanadi: AXB dog‘i qizil, ANB — yorqin zarg‘aldoq rangga bo‘yaladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 136,
+    "quote": "AXB dog‘i qizil rangga, ANB – yorqin zarg‘aldoq rangga bo‘yaladi."
+   },
+   {
+    "text": "Kaliy ferritsianidning 5% eritmasi bilan nitrazepam prizma shaklidagi kristallar beradi; boshqa 1,4-benzodiazepin hosilalari bu reaksiyani bermaydi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 141,
+    "quote": "Kaliy ferritsianidning 5% eritmasi bilan prizma shaklidagi kristallar hosil bo‘ladi. 1-4 benzodiazepinning boshqa hosilalari bu reaksiyani bermaydi."
+   },
+   {
+    "text": "UB-spektr: etil spirtidagi eritmasi 218 va 260 nm, sulfat kislotadagi eritmasi 277 va 340 nm da maksimum nur yutadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 141,
+    "quote": "Nitrazepamning etil spirtidagi eritmasi max =218, 260 nm; sulfat kislotadagi eritmasi 277 va 340 nm maksimum nur yutadi."
+   },
+   {
+    "text": "IK-spektrda nitrazepam 696, 1339, 1534, 1611, 1695 sm-1 sohalarda yutilish beradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 141,
+    "quote": "IK- spektrida 696, 1339, 1534, 1611, 1695 sm -1 namoyon bo‘ladi."
+   },
+   {
+    "text": "Mass-spektrda 280, 253, 281, 206, 234, 252, 254, 264 m/z cho‘qqilari hosil bo‘ladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 142,
+    "quote": "Mass-spektri 280, 253, 281, 206, 234, 252, 254, 264 m/z"
+   },
+   {
+    "text": "Miqdori SF va FEK usullarida aniqlanadi; FEK usuli Bratton–Marshall reaksiyasida hosil bo‘ladigan olcha-qizil mahsulotni o‘lchashga asoslanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 142,
+    "quote": "SF, FEK usulida aniqlanadi. FEK usulida Brattan-Marshall reaksiyasi natijasida hosil bo‘ladigan olcha rang qizil mahsulotni FEK da tekshirish yo‘li bilan olib boriladi."
+   }
+  ],
+  "pages_read": [
+   133,
+   134,
+   135,
+   136,
+   137,
+   140,
+   141,
+   142,
+   144,
+   145
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.096",
+  "coverage": "partial",
+  "gaps": [
+   "strukturaviy formulalar (kitobda faqat rasmlar; 135-betdagi R1/R2 o‘rinbosarlar ro‘yxati OCR’da buzilgan va nitrazepam uchun matnda AXB deb noto‘g‘ri yozilgan)",
+   "umumiy kimyoviy nomlanish va tuzilish qonuniyatlari (1,4-benzodiazepin halqasi) matnda tushuntirilmagan",
+   "immunokimyoviy skrining (sarlavhada bor, matnda bayon qilinmagan)"
+  ],
+  "points": [
+   {
+    "text": "1,4-benzodiazepin hosilalari trankvilizatorlar qatoriga kiradi; 60-yillar boshida xlordiazepoksid, keyin diazepam, nitrazepam va oksazepam sintez qilingan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 133,
+    "quote": "1,4-benzodiazepin hosilalari trankvilizatorlar qatoriga kiradi. O‘tgan asrning 60 yillari boshida xlordiazepoksid, keyinroq unga o‘xshash qator moddalar: diazepam, nitrazepam va oksazepamlar sintez qilindi."
+   },
+   {
+    "text": "Hozir bu guruhning 2 mingdan ortiq hosilasi bor, ulardan 12-15 tasi tibbiyotda keng qo‘llaniladi; xlordiazepoksid, diazepam, oksazepam, nitrazepam toksikologik va narkologik ahamiyatga ega.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 133,
+    "quote": "Hozir bu guruh moddalarni 2 mingdan ortiq hosilalari mavjud bo‘lib, ulardan 12-15 tasi tibbiyotda keng qo‘llaniladi. Bu dori vositalari orasida xlordiazepoksid, diazepam, oksazepam, nitrazepam va boshqalar toksikologik hamda narkologik ahamiyatga ega."
+   },
+   {
+    "text": "Ular tinchlantiruvchi (trankvilizator) va uxlatuvchi faollikka ega: qo‘rquv, bezovtalik, hayajonlanishni va vegetativ o‘zgarishlarni, bosh og‘rig‘ini qoldiradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 133,
+    "quote": "Bu guruh preparatlari tinchlantiruvchi (trankvilizator) va uxlatuvchi kabi farmakologik faollikka ega. Ular qo‘rqish, bezovtalik, hayajonlanish va boshqa o‘zgarishlarni hamda vegetativ asab tizimidagi o‘zgarishlarni, shuningdek bosh og‘rig‘ini qoldiradi."
+   },
+   {
+    "text": "Benzodiazepinlar uxlatuvchi va miorelaksant xossaga ham ega; etil spirti, giyohvandlik vositalari, giyohvand analgetiklar va uxlatuvchi moddalar ta’sirini kuchaytiradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 133,
+    "quote": "Bundan tashqari benzodiazepinlar uxlatuvchi va miorelaksantlik xossasiga ham ega. Ular etil spirti, giyohvandlik vositalar, giyohvand analgetiklar, uxlatuvchi moddalar ta’sirini kuchaytiradi."
+   },
+   {
+    "text": "Narkologik ahamiyati: uzoq qabul qilinganda kumulyatsiyalanadi, ularga o‘rganib qolish, psixik va fizik qaramlik kuzatiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 133,
+    "quote": "1,4-benzodiazepinlarni uzoq vaqt qabul qilinganda kumulyatsiyalanadi hamda ularga o‘rganib qolish mumkin. Undan tashqari psixik va fizik qaramlik kuzatiladi."
+   },
+   {
+    "text": "Oshqozon-ichakdan tez so‘riladi; qonda yarim parchalanish davri o‘rtacha 1-2 sutka.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 133,
+    "quote": "1,4-benzodiazepin hosilalari oshqozon-ichak orqali organizmda tez so‘riladi. Benzodiazepinlarning qonda yarim parchalanish davri o‘rtacha 1-2 sutkani tashkil etadi."
+   },
+   {
+    "text": "Benzodiazepinlar psixotrop va neyrotoksik ta’sirga ega; qondagi 5-20 mg/l miqdori zaharlanishga, 50 mg/l o‘limga olib keladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 134,
+    "quote": "Benzodiazepinlar psixotrop va neyrotoksik ta’sirga ega. Benzodiazepinlarning qondagi 5-20 mg/l miqdori zaharlanishga, 50 mg/l o‘limga olib keladi."
+   },
+   {
+    "text": "Zaharlanishda 3 klinik bosqich: 1) mudrash, yengil uxlab qolish; 2) yuzaki koma; 3) hushdan ketish.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 134,
+    "quote": "Benzodiazepin hosilalari preparatlari bilan zaharlanishda 3 klinik bosqich kuzatiladi: 1) mudrash, yengil uxlab qolish; 2) yuzaki koma: behush bo‘lib qolish; 3) hushdan ketish."
+   },
+   {
+    "text": "Fizik-kimyoviy xossalariga misol: oksazepam oq kristall kukun, suvda deyarli erimaydi, etil spirti va xloroformda yaxshi eriydi, ishqoriy muhitda organik erituvchilar bilan yaxshi ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 142,
+    "quote": "Oksazepam oq kristall kukun bo‘lib, suvda deyarli erimaydi. Etil spirti va xloroformda esa yaxshi eriydi. Ishqoriy muhitda organik erituvchilar bilan yaxshi ekstraksiyalanadi."
+   },
+   {
+    "text": "Fenazepam oq yoki och sarg‘ish kristall kukun; suv va efirda deyarli erimaydi, 95% spirtda kam, xloroformda qiyin eriydi; suyuqlanish harorati 225-230 °S.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 143,
+    "quote": "Fenazepam oq yoki bir oz och sarg‘ish rangli kristall kukun bo‘lib, suvda va efirda deyarli erimaydi, 95% spirtda kam eriydi, xloroformda qiyin eriydi. Suyuqlanish harorati- 225-230"
+   },
+   {
+    "text": "Kislotali gidrolizda benzofenonlar hosil bo‘ladi: nitrazepam — ANB va DAB, fenazepam — BXB, diazepam — MXB, xlordiazepoksid — AXB; ular Rf va UB-maksimumlari bo‘yicha farqlanadi (17-jadval).",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 136,
+    "quote": "№ Moddalar Gidroliz mahsulotlari Rf UB-spektri 1 Nitrazepam ANB 0,17-0,18 238, 358 DAB start 2 Fenazepam BXB 0,43-0,45 230, 400 3 Diazepam MXB 0,57 238, 410 AXB 0,35-0,37 238, 390 4 Xlordiazepoksid AXB 0,35-0,37 238, 390"
+   },
+   {
+    "text": "Barcha 1,4-benzodiazepin hosilalari uchun Vitali-Moren reaksiyasi umumiy; ular ko‘p cho‘ktiruvchi reaktivlar bilan amorf yoki kristall cho‘kmalar hosil qiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 136,
+    "quote": "Vitali-Moren reaksiyasi. Barcha 1,4-benzodiazepin hosilalari uchun bu reaksiya umumiydir. 3. Cho‘kma hosil qilish reaksiyalari. Benzodiazepin hosilalari ko‘p cho‘ktiruvchi reaktivlar bilan o‘ziga xos tuzilishga ega bo‘lgan amorf yoki kristall cho‘kmalar hosil qiladi."
+   }
+  ],
+  "pages_read": [
+   133,
+   134,
+   135,
+   136,
+   137,
+   138,
+   142,
+   143,
+   144
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.097",
+  "coverage": "partial",
+  "gaps": [
+   "kannabinoidlarning strukturaviy formulalari (kitobda faqat test rasmida, izohsiz)",
+   "qon va peshobdan kannabinoidlarni ajratib olish usuli (kitobda faqat so‘lak, og‘iz chayindisi va qo‘l tamponlari uchun berilgan)",
+   "marixuana (13-15%) va gashish (2-10%) dagi TGK foizlari shubhali (odatda gashish kuchliroq) — olinmadi",
+   "immunokimyoviy va GX-MS tasdiqlash usullari"
+  ],
+  "points": [
+   {
+    "text": "Nasha (gashish, marixuana, plan, bang va b.) — giyohvand faol moddalar saqlovchi kanop o‘simligi gullari shirasi, bargi va boshqa qismlaridan iborat aralashma.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 61,
+    "quote": "Nasha gashish, marixuanna, plan, bang, dur’, shira va boshqa nomlar bilan ma’lum faol giyohvand moddalar saqlovchi kanop o‘simligi gullaridan chiqadigan shira, bargi va boshqa qisimlaridan iborat aralashma bo‘lishi mumkin."
+   },
+   {
+    "text": "Nasha kimyoviy jihatdan murakkab aralashma; uning asosini fenolli funksional guruhlar saqlovchi dibenzpiran hosilalari — kannabinollar tashkil qiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 65,
+    "quote": "Nasha kimyoviy tuzilishi nuqtai nazaridan ko‘p komponentli, murakkab aralashmalardan iborat bo‘lib, fenolli funksional guruhlar saqlovchi dibenzpiran hosilalariga oid kimyoviy tuzilishi to‘liq o‘rganilgan kannabinollardan tarkib topgan."
+   },
+   {
+    "text": "Nashada doimo kannabinol, kannabidiol va tetragidrokannabinol uchraydi, lekin faqat tetragidrokannabinol giyohvand ta’sirga ega.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 65,
+    "quote": "Nasha tarkibida kannabinollardan asosan kannabinol, kannabidiol va tetragidrokannabinol doimo uchrab turadi, lekin ulardan faqat tetragidrokannabinol giyohvand ta’sirga ega."
+   },
+   {
+    "text": "Shuning uchun tekshiriluvchi namunaning giyohvand xossasi uning tarkibidan tetragidrokannabinolni aniqlash bilan isbotlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 65,
+    "quote": "Shuning uchun tekshiriluvchi namunani giyohvand xossaga egaligi uning tarkibidan tetragidrokannabinolni aniqlash bilan amalga oshiriladi."
+   },
+   {
+    "text": "Narkologik ahamiyati: nashavandlik giyohvandlik turlari orasida birinchi o‘rinda turadi, bu qabul qilinishi osonligi bilan izohlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 63,
+    "quote": "Nashavandlik giyohvandlik vositalari orasida birinchi o‘rinda turadi. Bu uning qabul qilinishining osonligi bilan tushuntiriladi."
+   },
+   {
+    "text": "Kannabinoidlar asosan jigarda metabolizmga uchraydi; 5 kun ichida 80-90% chiqib ketadi — 20% peshob, 80% axlat bilan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 65,
+    "quote": "Organizmga tushgan kannabinoidlar asosan jigarda metabolizmga uchraydi. Besh kun ichida 80-90% chiqib ketadi. Undan 20% peshob orqali, 80% axlat chiqindilar bilan chiqib ketadi."
+   },
+   {
+    "text": "O‘simlik namunasidan ajratish: 1 g namunaga 10 ml 96% spirt qo‘shib, 1 soat bo‘ktirilib filtrlanadi va kannabinoidlarga tekshiriladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 66,
+    "quote": "Nashadan kannabinollarni ajratib olish uchun 1 g tekshiriluvchi namuna ustiga 10 ml 96% spirt qo‘shib yaxshilab aralashtiriladi va 1 soat bo‘ktirilgach filtrlab olinadi va kannabinoidlar borligi tekshiriladi."
+   },
+   {
+    "text": "Rangli reaksiyalar: filtr qog‘ozga shimdirilgan spirtli ekstraktga yangi tayyorlangan 1- va 2-reaktivlar (Pauli reaktivi, mustahkam ko‘k B) purkalganda kannabinoidlar avval qizil-pushti, so‘ng ko‘kish va to‘q-pushti rang beradi; sezgirligi 1 mkg.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 66,
+    "quote": "spirtli ekstrakt filtr qog‘oziga nuqta holida shimdiriladi, quritilgach yangi tayyorlangan 1- va 2- reaktivlar purkaladi. Kannabinoidlar bo‘lsa avval qizil pushti, so‘ng ko‘kish va oxirida to‘q-pushti ranglar hosil bo‘ladi. Reaksiyalarning sezgirligi 1 mkg teng."
+   },
+   {
+    "text": "Bu rangli reaksiyalar nasha uchun xususiy emas: ularni TGK saqlamagan nasha o‘simliklari va boshqa kannabinoidlar ham berishi mumkin.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 67,
+    "quote": "Yuqoridagi reaksiyalar nasha uchun xususiy emas. Reaksiyalar tetragidrokannabinol saqlamagan nasha o‘simliklari hamda boshqa kannabinoidlar ham berishi mumkin."
+   },
+   {
+    "text": "Reaksiya ijobiy bo‘lsa, TGK bor-yo‘qligini hal qilish uchun qog‘oz, yupqa qatlamli va gaz-suyuqlik xromatografik tahlillar o‘tkaziladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 67,
+    "quote": "Reaksiya ijobiy natija bergan holda esa nasha o‘z tarkibida haqiqatdan giyohvand ta’sirli modda, ya’ni tetragidrokannabinol saqlashi yoki saqlamasligini hal qilish zarur bo‘ladi. Buning uchun qog‘oz, yupqa qatlamli va gaz-suyuqlik xromatografik tahlillar o‘tkazilishi zarur."
+   },
+   {
+    "text": "GSX: faol kannabinoidlar miqdori harorat rejimi dasturlanadigan xromatografda ichki standart (kokain gidroxlorid) usulida aniqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 69,
+    "quote": "Faol kannabinoidlarning miqdori harorat rejimi dasturlanadigan xromatograflarda ichki standartlash usulida bajariladi. Ichki standart sifatida kokain gidroxlorididan foydalaniladi."
+   },
+   {
+    "text": "Biologik suyuqliklar: so‘lak va og‘iz chayindisi aralashmasidan 10 ml olinib, NaCl ning to‘yingan eritmasi (10 ml) bilan aralashtiriladi va 5 ml dietil efir bilan 2 marta 5 daqiqadan ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 71,
+    "quote": "Tekshiriluvchi so‘lak va chayqalma aralashmasidan 10 ml olib suyuqlik ustiga 10 ml natriy xloridning to‘yingan eritmasi bilan aralashtiriladi, so‘ng 5 ml dietil efir bilan ikki marotaba 5 daqiqa ekstraksiyalanadi."
+   }
+  ],
+  "pages_read": [
+   61,
+   62,
+   63,
+   64,
+   65,
+   66,
+   67,
+   68,
+   69,
+   70,
+   71,
+   72
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.098",
+  "coverage": "partial",
+  "gaps": [
+   "strukturaviy formula (kitobda faqat rasm; matnda kimyoviy nomi berilmagan)",
+   "fenazepamni qon/peshobdan ajratishning alohida tartibi (faqat benzodiazepinlar uchun umumiy gidroliz usuli)",
+   "metabolit BXB ning kimyoviy nomi kitobda ikki xil va shubhali yozilgan («2-amino-5-brom, 21-xloramino benzofenon» / «7-brom-6 gidroksi 11-xloramino benzofenon») — nomi olinmadi"
+  ],
+  "points": [
+   {
+    "text": "Fenazepam sinonimlari: fenorelaksan, elzepam, trankvizepam, fezanef, fezipam va boshqalar.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 143,
+    "quote": "Sinonimlari: fenorelaksan, elzepam, trankvizepam, fezanef, fezipam va boshqalar."
+   },
+   {
+    "text": "Fenazepam oq yoki och sarg‘ish kristall kukun; suv va efirda deyarli erimaydi, 95% spirtda kam, xloroformda qiyin eriydi; suyuqlanish harorati 225-230 °S.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 143,
+    "quote": "Fenazepam oq yoki bir oz och sarg‘ish rangli kristall kukun bo‘lib, suvda va efirda deyarli erimaydi, 95% spirtda kam eriydi, xloroformda qiyin eriydi. Suyuqlanish harorati- 225-230"
+   },
+   {
+    "text": "Fenazepam kuchli trankvilizator, bu xossasi bilan boshqa trankvilizatorlardan ustun turadi; titroqqa qarshi va uxlatuvchi ta’sir ham ko‘rsatadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 143,
+    "quote": "Fenazepam kuchli trankvilizator ta’sirga ega. U shu xossasi bilan boshqa trankvilizatorlardan birmuncha ustun turadi. U yana titroqqa qarshi va uxlatuvchi ta’sir ko‘rsatadi."
+   },
+   {
+    "text": "Fenazepam metabolitlari glyukuron kislotasi bilan birikib glyukuronidlar hosil qiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 143,
+    "quote": "Glyukuron kislotasi bilan birikib glyukuronidlar hosil qiladi."
+   },
+   {
+    "text": "Biologik ob’ektdan B.N. Izotov usulida ajratib olinadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 143,
+    "quote": "Biologik ob’ektdan B.N. Izotov usulida ajratib olinadi."
+   },
+   {
+    "text": "Izotov usulida maydalangan ob’ektning nordon suvli ajratmasi avval xloroform bilan ekstraksiyalanib, xloroform qavati to‘kib tashlanadi; so‘ng suvli qatlam pH=9-10 gacha ishqorlanib, dietil efir bilan 3 marta ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 135,
+    "quote": "Suvli ajratma quyib olinadi va xloroform bilan ekstraksiyalanadi. Xloroform qavati to‘kib tashlanadi, suvli qatlam pH=9-10 teng bo‘lguncha ishqor eritmasi qo‘shiladi va dietil efir bilan 3 qayta ekstraksiyalanadi."
+   },
+   {
+    "text": "Biologik suyuqliklarda (Izotov, Volkova va boshqalar taklifi bo‘yicha) gidroliz mahsulotlari orqali tahlil: 10 ml peshob (2 ml qon) ga 10 ml (2 ml) konsentrlangan xlorid kislota qo‘shilib, qaytar sovutgichli kolbada 1 soat suv hammomida qizdiriladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 134,
+    "quote": "Buning uchun 10 ml peshob (2 ml qon) olib ustiga 10 ml (2 ml) konsentrlangan xlorid kislota quyib, qaytar sovutgich ulangan kolbada 1 soat davomida suv hammomida qizdiriladi."
+   },
+   {
+    "text": "Gidrolizda fenazepamdan BXB hosil bo‘ladi (17-jadval: Rf 0,43-0,45; UB 230, 400 nm).",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 136,
+    "quote": "2 Fenazepam BXB 0,43-0,45 230, 400"
+   },
+   {
+    "text": "YuQX: xloroform–aseton (9:1) yoki benzol–etanol–dietilamin (9:1:1) sistemasi, Mune bo‘yicha modifikatsiyalangan Dragendorf reaktivi bilan fenazepam zarg‘aldoq rangli dog‘ beradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 143,
+    "quote": "Erituvchilar sistemasi sifatida xloroform-aseton (9:1) yoki benzol-etanol-dietilamin (9:1:1) erituvchilar aralashmasi, aniqlovchi reagent sifatida Mune bo‘yicha modifikatsiyalangan Dragendorf reaktivi qo‘llanganda fenazepam zarg‘aldog‘ rangli dog‘ hosil qiladi."
+   },
+   {
+    "text": "Molekuladagi organik birikkan xlor va brom Belshteyin usulida aniqlanadi: mis simchasidagi fenazepam kristali alangaga tutilsa, alanga yashil rangga bo‘yaladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 143,
+    "quote": "Tarkibidagi organik birikkan xlor va bromni Belshteyin usuli bo‘yicha aniqlanadi. Bunda mis simchasi ustiga fenazepam kristalini alangaga tutilsa, uning rangsiz qismini yashil rangga bo‘yaydi."
+   },
+   {
+    "text": "UB-spektr: xloroformli eritmasi 320 nm, spirtli eritmasi 230 nm da maksimum nur yutadi; IK-spektr (KBr): 2896, 1655, 1432, 1091, 1035, 877 sm-1.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 144,
+    "quote": "Fenazepamning xloroformli eritmasi max=320nm, spirtli eritmasi max= 230 nm maksimum nur yutish ko‘rsatkichlariga ega. IK-spektri bo‘yicha aniqlash. Fenazepamning kaliy bromiddagi plastinkasi quyidagi yutilish chiziqlarini 2896, 1655, 1432, 1091, 1035, 877 sm-1"
+   },
+   {
+    "text": "Mass-spektrda fenazepam 321, 349, 177, 75 m/z cho‘qqilarini beradi; miqdori SF va FEK usullarida aniqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 144,
+    "quote": "Fenazepam 321, 349, 177, 75 m/z cho‘qqilar hosil bo‘ladi. Miqdori. Fenazepamning miqdorini SF, FEK usullarida aniqlanadi"
+   }
+  ],
+  "pages_read": [
+   133,
+   134,
+   135,
+   136,
+   137,
+   138,
+   143,
+   144
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.099",
+  "coverage": "partial",
+  "gaps": [
+   "barbituratlarni ajratib olishning xususiy usullari (masalan, Valov usuli) tafsiloti — kitobda faqat «ayrim barbituratlar xususiy usullarda ajratib olinadi» deb aytilgan va testda nomi bor",
+   "O‘zbekistondagi ro‘yxatlar (101- va 105/106-betlarda ro‘yxat raqamlari bir-biriga mos emas) — olinmadi",
+   "«dietil efirida yaxshi, xloroform va spirtda yomonroq eriydi» degan umumiy jumla 15-jadvaldagi eruvchanlik ma’lumotlariga zid — olinmadi"
+  ],
+  "points": [
+   {
+    "text": "Barbituratlar — barbitur kislota hosilalari; asosan malon kislotasi va mochevinadan sintez qilinadi, turli radikallar kiritilib 2500 dan ortiq barbiturat olingan, ulardan 50 dan ortig‘i tibbiyotda qo‘llaniladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 101,
+    "quote": "Bular barbitur kislotasi hosilasi bo‘lib, asosan malon kislotasi va mochevina yordamida sintez qilinib, turli radikallarning kiritilishi natijasida 2500 dan ortiq barbituratlar sintez qilingan, shulardan hozirda dunyoda 50 dan ortig‘i tibbiyot amaliyotida qo‘llanilib kelinmoqda."
+   },
+   {
+    "text": "Tibbiyotda tinchlantiruvchi, uxlatuvchi, anesteziya va tutqanoqqa qarshi vosita sifatida ishlatiladi va giyohvandlik xususiyatini namoyon qiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 101,
+    "quote": "Barbituratlar tibbiyot amaliyotida NH tinchlantiruvchi, uxlatuvchi, aneteziyada va O tutqanoqqa qarshi vositalar sifatida ishlatilib, o‘zida giyohvandlik xususiyatini namoyon qiladi."
+   },
+   {
+    "text": "BMTning 1971 yilgi «Psixotrop moddalar to‘g‘risida»gi Konvensiyasiga binoan 12 ta barbiturat xalqaro nazoratga olingan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 101,
+    "quote": "BMT 1971 yildagi “Psixotrop moddalar to‘g‘risidagi” Konvensiyasiga binoan quyidagi 12 barbituratlar xalqaro miqyosda nazoratga olingan"
+   },
+   {
+    "text": "Uyqu chaqiruvchi ta’siriga ko‘ra: uzoq ta’sir etuvchilar — barbital, fenobarbital; o‘rtacha — barbamil, etaminal; qisqa — geksenal, butobarbital.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 106,
+    "quote": "Barbituratlarning uyqu chaqiruvchi ta’siriga ko‘ra guruhlanishi O‘rtacha ta’sir Qisqa ta’sir Uzoq ta’sir etuvchilar etuvchilar etuvchilar Barbital barbamil geksenal Fenobarbital etaminal butobarbital"
+   },
+   {
+    "text": "Toksikologik ahamiyati: o‘lim chaqiruvchi doza terapevtik dozadan 20 baravar ko‘p (barbital uchun 6-10 g, fenobarbital uchun 4-6 g); ayrimlari kumulyatsiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 106,
+    "quote": "Barbituratlarning o‘lim chaqiruvchi dozasi terapevtik dozaga qaraganda 20 baravar ko‘p. Masalan, o‘lim chaqiruvchi doza barbital uchun 6-10 g, fenobarbital uchun 4-6 g ga teng. Ba’zi barbituratlar kumulyatsiyalanish xususiyatiga ham ega."
+   },
+   {
+    "text": "Patologoanatomik tekshiruvda barbituratlarga xos alomat bo‘lmaydi, shuning uchun biologik ob’ektni sud-kimyoviy tahlil qilish va miqdorini aniqlash nihoyatda muhim.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 106,
+    "quote": "O‘lim ro‘y berganda patologo-anatomik tekshirishlar barbituratlar uchun hech qanday xarakterli alomatlar ko‘rsatmaydi. Shu sababli zaharlanganda biologik ob’ektni sud-kimyoviy tahlili qilish nihoyatda katta ahamiyatga ega. Albatta, bunda moddaning miqdorini aniqlash zarur."
+   },
+   {
+    "text": "Organizmda metabolizm bir necha yo‘nalishda — dezalkillanish, gidroksillanish, karboksillanish orqali kechadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 106,
+    "quote": "Metabolizm bir necha yo‘nalishlarda kechadi. Bunda dezalkillanish, gidroksillanish, karboksillanish kabi biokimyoviy jarayonlar yuz beradi"
+   },
+   {
+    "text": "Peshob bilan ajralish tuzilishga bog‘liq: barbitalning 70-80%, fenobarbitalning 15-20% peshob bilan chiqadi, shuning uchun zaharlanishda peshob albatta tekshiriladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 107,
+    "quote": "qabul qilingan barbitalning 70-80%, fenobarbitalning 15-20% peshob bilan chiqariladi. Shuning uchun zaharlanish ro‘y berganda, albatta bemor peshobini tekshirish zarur."
+   },
+   {
+    "text": "Zaharlanganda bemor (ba’zan 1-2 kungacha) uyg‘onmaydi, xurrak otib nafas oladi, qon bosimi pasayadi, oyoq-qo‘llari soviydi; o‘lim nafas va qon tomir markazlari falajidan sodir bo‘ladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 107,
+    "quote": "uyg‘onmaydi, xurrak otib nafas oladi, qon bosimi pasayadi, oyoq-qo‘llari soviy boshlaydi, ba’zan ko‘ngli aynib qusadi, pirovardida nafas va qon tomirlar ishini boshqaruvchi markazlarning falajlanishi natijasida o‘lim sodir bo‘ladi."
+   },
+   {
+    "text": "Ajratib olish: barbituratlar biologik ob’ektdan nordonlashtirilgan spirt yoki suv usulida ajratiladi; ayrimlari xususiy usullarda ajratiladi; biologik suyuqliklardan organik erituvchilar bilan ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 108,
+    "quote": "Barbituratlarni biologik ob’ektdan nordonlashtirilgan spirt yoki suv usulida ajratib olinadi. Ayrim barbituratlar biologik ob’ektdan xususiy usullarda ajratib olinadi. Biologik suyuqliklardan barbituratlar organik erituvchilar bilan ekstraksiyalab ajratib olinadi."
+   },
+   {
+    "text": "Barbituratlar kislotali xossali birikmalar sifatida kislotali sharoitda organik erituvchilar bilan yaxshi ekstraksiyalanadi (alkaloidlar esa bu sharoitda suvli qatlamda qoladi).",
+    "book": "toks_kimyo_majmua_A",
+    "page": 91,
+    "quote": "Barbituratlar va boshqa kislotali xossaga ega bo’lgan organik birikmalar kislotali sharoitda organik erituvchilar bilan yaxshi ekstraktsiyalanadi. Alkaloid va sintеtik azot saqlovchi organik birikmalar kislotali muhitda organik erituvchilar qatlamiga o’tmaydi va suvli eritmada saqlanadi."
+   },
+   {
+    "text": "Barbiturat saqlovchi ajralmalar ekstraksiya va reekstraksiya (qayta ekstraksiya) usulida yot moddalardan tozalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 92,
+    "quote": "Kislotali xossaga ega moddalar, ya'ni organik kislotalar va barbituratlarni ekstraktsiya va rеekstraktsiya (qayta ekstraktsiya) usullarida tozalanadi."
+   }
+  ],
+  "pages_read": [
+   101,
+   102,
+   103,
+   104,
+   105,
+   106,
+   107,
+   108,
+   116,
+   117,
+   118,
+   89,
+   90,
+   91,
+   92,
+   93,
+   94,
+   96,
+   97
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.100",
+  "coverage": "partial",
+  "gaps": [
+   "strukturaviy formula (kitobda faqat rasm; matnda kimyoviy nomi berilmagan)",
+   "17-jadvalda diazepam qatorida MXB bilan birga AXB ham ko‘rsatilgan, matnda izohsiz — faqat MXB olindi"
+  ],
+  "points": [
+   {
+    "text": "Diazepam sinonimlari: seduksen, relanium, eridan, sibazon, apaurin, valium va boshqalar.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 139,
+    "quote": "Sinonimlari: seduksen, relanium, eridan, sibazon, apaurin, valium va b."
+   },
+   {
+    "text": "Qabul qilingandan so‘ng diazepam va metabolitlari qonda 2-6 soat ichida aniqlanadi va 18 soat davomida sekin kamayadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 139,
+    "quote": "Qabul qilingandan so‘ng diazepam va uning metabolitlari qon tarkibida 2-6 soat ichida aniqlanadi va 18 soat ichida sekin kamayib boradi."
+   },
+   {
+    "text": "Diazepam jigarda N-demetillanadi; metaboliti dezmetildiazepam gidroksillanish orqali biotransformatsiyaga uchraydi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 133,
+    "quote": "diazepam va xlordiazepoksid jigarda N-demetillanish orqali metabolitlariga parchalanadi. Ulardan biri bo‘lgan dezmetildiazepam gidroksillanish orqali biotransformatsiyaga uchraydi."
+   },
+   {
+    "text": "Og‘iz orqali qabul qilingan diazepamning 60-70% peshob, 9-10% najas bilan chiqadi; peshob orqali yarim chiqarilish davri 2-7 sutka; asosan metabolitlar holida chiqariladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 140,
+    "quote": "Og‘iz orqali qabul qilingan diazepamning 60-70% peshob orqali, 9- 10% najas orqali chiqadi. Peshob orqali yarim chiqarilish davri 2-7 sutkaga teng. Preparat asosan metabolitlar holida, juda oz miqdori esa o‘zgarmagan holda chiqariladi."
+   },
+   {
+    "text": "Biologik ob’ektdan diazepam kislotali va ishqoriy sharoitda organik erituvchilar bilan ekstraksiyalanib ajratiladi; ajratish B.N. Izotov usulida bajariladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 140,
+    "quote": "Biologik ob’ektdan diazepam kislotali va ishqoriy sharoitda organik erituvchilar yordamida ekstraksiyalab ajratiladi. Ajratish B.N.Izotov usulida bajariladi."
+   },
+   {
+    "text": "Izotov usulida maydalangan ob’ektning nordon suvli ajratmasi avval xloroform bilan ekstraksiyalanib, xloroform qavati to‘kib tashlanadi; so‘ng suvli qatlam pH=9-10 gacha ishqorlanib, dietil efir bilan 3 marta ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 135,
+    "quote": "Suvli ajratma quyib olinadi va xloroform bilan ekstraksiyalanadi. Xloroform qavati to‘kib tashlanadi, suvli qatlam pH=9-10 teng bo‘lguncha ishqor eritmasi qo‘shiladi va dietil efir bilan 3 qayta ekstraksiyalanadi."
+   },
+   {
+    "text": "Biologik suyuqliklarda (Izotov, Volkova va boshqalar taklifi bo‘yicha) gidroliz mahsulotlari orqali tahlil: 10 ml peshob (2 ml qon) ga 10 ml (2 ml) konsentrlangan xlorid kislota qo‘shilib, qaytar sovutgichli kolbada 1 soat suv hammomida qizdiriladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 134,
+    "quote": "Buning uchun 10 ml peshob (2 ml qon) olib ustiga 10 ml (2 ml) konsentrlangan xlorid kislota quyib, qaytar sovutgich ulangan kolbada 1 soat davomida suv hammomida qizdiriladi."
+   },
+   {
+    "text": "Kislotali gidrolizda diazepamdan MXB (2-metilamino-5-xlorbenzofenon) hosil bo‘ladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 135,
+    "quote": "Diazepam - R1-H, R2-Cl, MXB (2-metilamino-5-xlor benzofenon)"
+   },
+   {
+    "text": "Mikrokristalloskopiya: simob yodidning kaliy yodiddagi eritmasi bilan amorf cho‘kma, nam kamerada 10-15 daqiqadan so‘ng olti burchakli plastinka va cho‘zinchoq prizma shaklidagi mikrokristallar hosil bo‘ladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 140,
+    "quote": "Simob yodidning kaliy yodiddagi eritmasi bilan diazepam amorf cho‘kma hosil qiladi, nam kamerada 10-15 daqiqa qoldirilib, mikroskop ostida qaraganda olti burchakli plastinka shaklidagi, cho‘zinchoq prizmalar shaklidagi mikrokristallar"
+   },
+   {
+    "text": "YuQX: etilasetat–25% ammiak–metanol (26:1,6:3,3) yoki xloroform–aseton (9:1) sistemalari, aniqlovchi reaktiv — Dragendorf reaktivi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 140,
+    "quote": "Erituvchilar aralashmasi sifatida etilasetat, 25% ammiak eritmasi va metil spirtining 26:1,6:3,3 nisbatdagi aralashmasi yoki xloroform va asetonning 9:1 nisbatdagi aralashmasi ishlatiladi. Modda joylashgan joyni aniqlash uchun aniqlovchi reaktiv sifatida Dragendorf reaktivi purkaladi."
+   },
+   {
+    "text": "UB-spektr: kislotadagi eritmasi 242 nm (ε=1020), 284 va 366 nm da maksimum nur yutadi; IK-spektr (KBr): 749, 1325, 1485, 1692 sm-1.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 140,
+    "quote": "Diazepamning qoldig‘i kislotada eritiladi va UB-spektri olinadi. Bunda max = 242 nm (ε=1020), 284, 366 nm maksimum nur yutish kuzatiladi. 5. IK- spektri bo‘yicha aniqlash. Diazepamning kaliy bromid bilan tayyorlangan plastinkasi quyidagi yutilish sohalari 749, 1325, 1485, 1692 sm -1"
+   },
+   {
+    "text": "Mass-spektrda 256, 283, 284, 285, 257, 255, 258, 286 m/z cho‘qqilari; miqdori SF va FEK usullarida aniqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 140,
+    "quote": "Diazepam 256, 283, 284, 285, 257, 255, 258, 286 m/z mass-spektrlarni hosil qiladi. Miqdor tahlili Diazepamning miqdori SF, FEK usullarida aniqlanadi."
+   }
+  ],
+  "pages_read": [
+   133,
+   134,
+   135,
+   136,
+   137,
+   138,
+   139,
+   140,
+   144
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.101",
+  "coverage": "partial",
+  "gaps": [
+   "biologik suyuqliklardan (qon, peshob) ajratishning alohida tartibi berilmagan",
+   "strukturaviy formula matnda faqat kimyoviy nomi va rasm parchalari ko‘rinishida",
+   "IQ-spektr bo‘limida berilgan «186, 42, 201, 56…» qiymatlari mass-spektr qiymatlariga o‘xshaydi (petidin bo‘limida ham takrorlangan) — olinmadi",
+   "suyuqlanish harorati «107-108 S» shubhali — olinmadi"
+  ],
+  "points": [
+   {
+    "text": "Opioidlar — morfinga o‘xshash ta’sir ko‘rsatuvchi, ammo kimyoviy tuzilishi boshqa guruhga kiruvchi sintetik giyohvandlik vositalari; ularga promedol, metadon, fentanil va boshqalar kiradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 16,
+    "quote": "Opioidlar – bular inson organizmiga morfinga o‘xshash ta’sir ko‘rsatib, kimyoviy tuzilishiga ko‘ra boshqa guruhga kiruvchi sintetik giyohvandlik vositalari bo‘lib, ularga promedol, fensiklidin, metadon, fentanil va boshqalar kiradi."
+   },
+   {
+    "text": "Promedol — trimeperidin-1,2,5-trimetil-4-propioniloksi-4-fenilpiperidin gidroxlorid; kimyoviy tuzilishida piperidin hosilasi bor.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 40,
+    "quote": "Promedol - (trimeperidin-1,2,5-trimetil-4- O C CH2 CH3 propioniloksi-4-fenilpiperidina gidroxlorid) kimyoviy O tuzilishi bo‘yicha piperidin hosilasini saqlaydi."
+   },
+   {
+    "text": "Kimyoviy toza promedol — achchiq ta’mli, deyarli hidsiz oq kristall kukun; gidroxlorid tuzi suvda yaxshi, etil spirti va xloroformda qisman eriydi, dietil efirida erimaydi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 40,
+    "quote": "toza promedol oq kristall holidagi kukun. Mazasi achchiq, N CH3 deyarli hidsiz. Promedol gidroxlorid tuzi suvda yaxshi CH3 eriydi. U etil spirti va xloroformda qisman eriydi. Dietil efirida erimaydi."
+   },
+   {
+    "text": "Promedol shokka qarshi birlamchi vosita; og‘riq qoldirishda morfinga juda yaqin, lekin organizmga zaharliligi morfinnikidan kuchliroq.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 41,
+    "quote": "Promedol shokka qarshi birlamchi vosita hisoblanadi, miya qobig‘iga ta’sir etib, uning og‘riq sezuvchi markazlari ishini susaytiradi. Og‘riqni qoldirish jihatidan promedol morfinga juda yaqin turadi, lekin uning organizmga nisbatan zaharliligi morfinga qaraganda kuchliroqdir."
+   },
+   {
+    "text": "Narkologik ahamiyati: tez-tez iste’mol qilinsa, promedolga ham morfin singari o‘rganib qolish mumkin; zaharlanganda ko‘ngil aynishi, bosh aylanishi, darmonsizlanish, mastlik kuzatiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 41,
+    "quote": "Tez-tez is’temol qilinsa promedolga ham xuddi morfin singari «o‘rganib» qolish mumkinligi va organizmga u kabi ta’sir etishi, uning katta kamchiligi hisoblanadi. Promedol bilan zaharlanganda ko‘ngil aynishi, bosh aylanishi, darmonsizlanish, mastlik kabi holatlar sodir bo‘ladi."
+   },
+   {
+    "text": "Promedol biologik ob’ektdan nordonlashtirilgan spirt yoki nordonlashtirilgan suv bilan ajratiladi; suvli ajratmadan xloroform bilan pH=6,9-8,5 da maksimal ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 41,
+    "quote": "Promedol biologik ob’ekt tarkibidan nordonlashtirilgan spirt yoki nordonlashtirilgan suv yordamida ajratib olinadi. Suvli ajratmalardan xloroform bilan rN=6,9-8,5 sharoitida maksimal ekstraksiyalanadi."
+   },
+   {
+    "text": "Promedol kuchsiz asos xossali modda bo‘lgani uchun qayta ekstraksiyalab tozalashda yo‘qotilishi mumkin.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 93,
+    "quote": "Qayta ekstraktsiyalab tozalashda kuchsiz asos xossasiga ega moddalar (purin hosilalari, narkotin, promеdol, antipirin va amidopirinlar) yo’qotib qo’yiladi."
+   },
+   {
+    "text": "Marki reaktivi (formaldegidli sulfat kislota) bilan promedol to‘q qizil rang beradi, sezgirligi 10 mkg.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 41,
+    "quote": "Formaldegid saqlagan sulfat kislota bilan promedol to‘q qizil rang hosil qiladi. Reaksiyaning sezgirligi 10 mkg promedolga teng."
+   },
+   {
+    "text": "Pikrin kislota bilan promedol uchlamchi azot hisobiga sariq rangli qo‘sh molekular birikma — cho‘kma hosil qiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 41,
+    "quote": "Promedol pikrin kislota bilan molekuladagi uchlamchi azot hisobiga sariq rangli qo‘sh molekular birikma – cho‘kma hosil qilib cho‘kadi."
+   },
+   {
+    "text": "YuQX: metanol–muzlovchi sirka kislota (9:1) sistemasi, Dragendorf reaktivi purkalganda sarg‘ish dog‘, standart namuna dog‘i bilan solishtiriladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 41,
+    "quote": "Uni metil spirti va muzlovchi sirka kislotaning 9:1 nisbatdan iborat xromatografik sistemasida xromatografiyalanganda hamda ochuvchi reagent sifatida Dragendorf reaktivi purkalsa sarg‘ish rangdagi dog‘ hosil bo‘ladi va u promedolning standart namunasi dog‘iga solishtirib aniqlanadi."
+   },
+   {
+    "text": "UB-spektr: 0,1 M xlorid kislotadagi eritmasi 251, 257 va 263 nm da maksimal nur yutadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 42,
+    "quote": "Promedolning 0,1 M xlorid kislotadagi eritmasi 251, 257 nm va 263 nm to‘lqin uzunligida maksimal nur yutadi."
+   },
+   {
+    "text": "Miqdoriy tahlil: spektrofotometrik usul, shuningdek GSX yoki YuSSX usullari.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 42,
+    "quote": "Miqdorini aniqlash: 1. Promedolning miqdorini spektrofotometrik usul yordamida aniqlanadi. 2. Promedolning miqdorini GSX yoki YuSSX usullarida ham aniqlanadi."
+   }
+  ],
+  "pages_read": [
+   16,
+   39,
+   40,
+   41,
+   42,
+   52,
+   53,
+   93,
+   94
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.102",
+  "coverage": "partial",
+  "gaps": [
+   "strukturaviy formula (kitobda faqat rasm; matnda kimyoviy nomi berilmagan)",
+   "oksazepamga xos narkologik ma’lumot (kitobda narkologik ahamiyat 1,4-benzodiazepinlar uchun umumiy berilgan)",
+   "oksazepamni aynan qon/peshobdan ajratishning alohida tartibi (faqat benzodiazepinlar uchun umumiy gidroliz usuli)"
+  ],
+  "points": [
+   {
+    "text": "Sinonimlari: tazepam, adumbron, nozepam, praksiten, seraks, serenal va boshqalar.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 142,
+    "quote": "Sinonimlar: tazepam, adumbron, nozepam, praksiten, seraks, serenal va boshqalar."
+   },
+   {
+    "text": "Oksazepam — oq kristall kukun; suvda deyarli erimaydi, etil spirti va xloroformda yaxshi eriydi; ishqoriy muhitda organik erituvchilar bilan yaxshi ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 142,
+    "quote": "Oksazepam oq kristall kukun bo‘lib, suvda deyarli erimaydi. Etil spirti va xloroformda esa yaxshi eriydi. Ishqoriy muhitda organik erituvchilar bilan yaxshi ekstraksiyalanadi."
+   },
+   {
+    "text": "Narkologik ahamiyati: oksazepam xlordiazepoksid, diazepam, nitrazepam bilan birga toksikologik va narkologik ahamiyatga ega 1,4-benzodiazepinlar qatoriga kiradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 133,
+    "quote": "Bu dori vositalari orasida xlordiazepoksid, diazepam, oksazepam, nitrazepam va boshqalar toksikologik hamda narkologik ahamiyatga ega."
+   },
+   {
+    "text": "1,4-benzodiazepinlar uzoq qabul qilinganda kumulyatsiyalanadi, ularga o‘rganib qolish mumkin, psixik va fizik qaramlik kuzatiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 133,
+    "quote": "1,4-benzodiazepinlarni uzoq vaqt qabul qilinganda kumulyatsiyalanadi hamda ularga o‘rganib qolish mumkin. Undan tashqari psixik va fizik qaramlik kuzatiladi."
+   },
+   {
+    "text": "Oksazepam farmakologik ta’siri bo‘yicha xlordiazepoksid va diazepamga yaqin, diazepamga nisbatan kam zaharli; depressiya, nevroz va uyqusizlikda qo‘llaniladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 142,
+    "quote": "Farmakologik ta’siri bo‘yicha xlordiazepoksid va diazepamga yaqin. Diazepamga nisbatan kam zaharli, kuchsiz tirishishga qarshi va miorelaksant ta’sirga ega. Tibbiyotda depressiya holatida, nevroz va uyqusizlikda qo‘llaniladi."
+   },
+   {
+    "text": "Oksazepam diazepamning metabolitlaridan biri; organizmga yuborilgach 4 soatdan keyin plazmada glyukuronid holida yuqori konsentratsiyaga yetadi va 48 soat davomida plazmadan yo‘qoladi; peshob bilan glyukuronid holida, axlat bilan o‘zgarmagan holda chiqariladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 142,
+    "quote": "Oksazepam diazepamning metabolitlaridan biri bo‘lib, organizmga yuborilsa 4 soatdan keyin plazmada glyukuronid holida yuqori konsentratsiyaga etadi, 48 soat davomida plazmadan yo‘qoladi. Organizmdan peshob bilan glyukuronid holida, axlat bilan o‘zgarmagan holda chiqariladi."
+   },
+   {
+    "text": "Biologik ob’ektdan A.F. Fartushniy usulida ajratiladi: 25 g maydalangan ob’ektga gidrofosfatning suvli eritmasidan 3 ml qo‘shib gomogenlashtiriladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 142,
+    "quote": "Oksazepam biologik ob’ektdan A.F.Fartushnыy tavsiya etgan quyidagi usulda ajratib olinadi: 25 g maydalangan ob’ektga gidrofosfatni suvli eritmasidan 3 ml qo‘shib, gomogenlashtiriladi."
+   },
+   {
+    "text": "Gomogenat 3 marta 10 ml etil efiri bilan ekstraksiya qilinadi; filtrlab olingan efirli ekstrakt oksazepamning sifat va miqdor tahlili uchun ishlatiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 142,
+    "quote": "Gomegenat 3 marta 10 ml etil efiri bilan ekstraksiya qilinadi. Filtrlab ajratib olingan efirli ekstrakt oksazepamni sifat va miqdorini aniqlashga ishlatiladi."
+   },
+   {
+    "text": "Biologik suyuqliklarda (Izotov, Volkova va boshqalar taklifi bo‘yicha) gidroliz mahsulotlari orqali tahlil: 10 ml peshob (2 ml qon) ga 10 ml (2 ml) konsentrlangan xlorid kislota qo‘shilib, qaytar sovutgichli kolbada 1 soat suv hammomida qizdiriladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 134,
+    "quote": "Buning uchun 10 ml peshob (2 ml qon) olib ustiga 10 ml (2 ml) konsentrlangan xlorid kislota quyib, qaytar sovutgich ulangan kolbada 1 soat davomida suv hammomida qizdiriladi."
+   },
+   {
+    "text": "YuQX: erituvchilar aralashmasi xloroform–propil spirti–aseton (9:0,4:1), aniqlovchi reaktiv natriy tiosulfat eritmasi bo‘lganda oksazepam sariq yoki zarg‘aldoq rangli dog‘ beradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 142,
+    "quote": "Erituvchilar aralashmasi sifatida xloroform-propil spirti-asetonning 9:0,4:1 nisbatdagi aralashmasi, aniqlovchi reaktiv sifatida esa natriy tiosulfat eritmasi qo‘llanganda oksazepam sariq yoki zarg‘aldog‘ rangli dog‘ hosil qiladi."
+   },
+   {
+    "text": "UB-spektr: kislotadagi eritmasi 234 va 280 nm, ishqordagi eritmasi 233 va 344 nm, etanoldagi eritmasi 230 nm (ε=1235) va 315 nm (ε=85) da maksimum nur yutadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 142,
+    "quote": "kislotada eritiladi va 234 nm va 280 nm, ishqordagi eritmasi 233 va 344 nm, etanoldagi eritmasi 230 nm (ε=1235) va 315 nm (ε=85) maksimum nur yutadi."
+   },
+   {
+    "text": "Miqdori SF (spektrofotometriya) va FEK (fotoelektrokolorimetriya) usullarida aniqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 143,
+    "quote": "Oksazepamning miqdorini SF, FEK usullarida aniqlanadi."
+   }
+  ],
+  "pages_read": [
+   133,
+   134,
+   135,
+   136,
+   137,
+   142,
+   143,
+   144
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.103",
+  "coverage": "full",
+  "gaps": [
+   "strukturaviy formula matnda to‘liq emas (rasm qismlari)",
+   "kitobdagi shubhali/zid jumlalar olinmadi: kodeinning eruvchanligi («sovuq suv… dietil efiri… yaxshi eriydi»), opiydagi miqdori (17-betda 1,5-3%, 26-betda 0,2-2%), «24 soat davomida organizmda aniqlanmaydi», «ko‘z qorachig‘ini toraytirmaydi»"
+  ],
+  "points": [
+   {
+    "text": "Kodein — morfinning monometilli efiri.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 26,
+    "quote": "Kodein morfinning monometilli efiri hisoblanadi."
+   },
+   {
+    "text": "Kodein ishqor eritmalarida erimaydi va shu bilan morfindan farq qiladi; suyuqlanish harorati 153-155°C.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 26,
+    "quote": "Kodein ishqor eritmalarida erimaydi, by xususiyati bilan u morfindan farq qiladi. Kodeinning suyuqlanish harorati 153-155°C tashkil qiladi."
+   },
+   {
+    "text": "UB-spektr: kodein asosining spirtli eritmasi 286 nm da maksimum nur yutadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 28,
+    "quote": "Kodein asosining spirtli eritmasi 286 nm maksimum nur yutish sohasini hosil qiladi."
+   },
+   {
+    "text": "Yo‘tal markaziga ta’sir etib yo‘talni to‘xtatadi; tibbiyotda asos va fosfat tuzi holida qo‘llaniladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 27,
+    "quote": "yo‘tal markazlariga ta’sir etib, yo‘talni to‘xtatadi. Tibbiyotda kodein asos va fosfatli tuzi holida qo‘llaniladi."
+   },
+   {
+    "text": "Narkologik ahamiyati: tibbiyotda keng qo‘llaniladi, giyohvand ta’siri tufayli organizm unga o‘rganib qolishi mumkin.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 27,
+    "quote": "Narkologik ahamiyati. Kodein tibbiyotda keng miqiyosda qo‘llaniladi, giyohvand ta’siri tufayli organizm bu moddaga o‘rganib qolishi mumkin."
+   },
+   {
+    "text": "Metabolizmi uch yo‘nalishda: bir qismi glyukuronid holida peshob bilan chiqadi, qisman O-demetillanib morfin, N-demetillanib norkodein hosil qiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 27,
+    "quote": "Kodein organizmda uch yo‘nalishda metabolitlanadi. Bir qismi glyukuron kislotasi bilan birikib, glyukuronid holida peshob bilan ajralib chiqadi. Qisman O- demetillanib morfin, N - demetillanib norkodein hosil qiladi,"
+   },
+   {
+    "text": "Biologik ob’ektdan nordonlashtirilgan suv yoki spirt usulida ajratiladi; suvli ajralmadan ishqoriy muhitda to‘liq ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 27,
+    "quote": "biologik ob’ektdan ajratib olish uchun nordonlashtirilgan suv yoki spirt usullaridan foydalaniladi. Suvli ajralmalardan ishqoriy muhitda to‘liq ekstraksiyalanadi."
+   },
+   {
+    "text": "Marki reaktivi (formaldegid + konsentrlangan sulfat kislota) bilan och binafsha rang, sezgirligi 0,05 mg.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 27,
+    "quote": "Formaldegid va konsentrlangan sulfat kislota aralashmasi kodein bilan och binafsha rang hosil qiladi. Reaksiyaning sezgirligi 0,05 mg kodeinga teng."
+   },
+   {
+    "text": "Temir(III) xlorid va kaliy geksatsianoferrat(III) aralashmasi kodein bilan rang bermaydi, chunki erkin fenol guruhi metil bilan almashgan — bu kodeinni morfindan farqlaydi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 28,
+    "quote": "Temir (III) xlorid hamda kaliy (III) geksatsianoferrat aralashmasi kodein bilan rang hosil qilmaydi, chunki kodeinda bo‘sh fenol guruhi yo‘q, bu guruh metil radikali bilan almashgan."
+   },
+   {
+    "text": "YuQX: xloroform–aseton–dietilamin (50:30:2), Mune bo‘yicha modifikatsiyalangan Dragendorf reaktivi bilan Rf=0,40 oralig‘ida qo‘ng‘ir-qizg‘ish dog‘ hosil bo‘ladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 28,
+    "quote": "Erituvchilar sistemasi sifatida xloroform-aseton-dietilamin (50:30:2) aralashmasidan foydalaniladi. Aniqlovchi reagent sifatida Mune bo‘yicha modifikatsiyalangan Dragendorf reaktivi purkalsa Rf=0,40 oralig‘ida qo‘ng‘ir-qizg‘ish rangdagi dog‘ hosil qiladi."
+   },
+   {
+    "text": "Kodein va morfinni ajratish: ishqorda morfin morfolyat hosil qilib suvli qatlamda qoladi, kodein efir qatlamiga o‘tadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 29,
+    "quote": "Bunda morfindan morfolyat hosil bo‘ladi va efir bilan ekstraksiyalanmaydi, kodein ishqorda erimaganligi tufayli efir qatlamiga erib o‘tadi."
+   },
+   {
+    "text": "Miqdoriy tahlil (ekstraksion-fotometrik usul): kodein tropeolin 00 bilan ion assotsiati hosil qiladi, u xloroform bilan ekstraksiyalanib, muhit o‘zgartirilgach kompleks buziladi va hosil bo‘lgan rang fotokolorimetrik o‘lchanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 29,
+    "quote": "Kodeinni tropeolin 00 bilan ion assotsiati hosil qilib, uni xloroform bilan quruq sharoitda ekstraksiyalangach, muhit o‘zgartirilib kompleks buziladi va hosil bo‘lgan rang fotokolorimetrik usulda aniqlanadi."
+   }
+  ],
+  "pages_read": [
+   16,
+   17,
+   26,
+   27,
+   28,
+   29,
+   30,
+   32,
+   33,
+   34
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.106",
+  "coverage": "partial",
+  "gaps": [
+   "metadonning miqdoriy tahlil usuli (kitobda berilmagan)",
+   "biologik suyuqliklardan ajratishning alohida tartibi",
+   "strukturaviy formula (matnda faqat kimyoviy nomi)",
+   "metadon asosi va gidroxloridi uchun «qaynash harorati 76-79 S / 229-231 S» deb yozilgan (mazmunan suyuqlanish harorati bo‘lishi kerak) — olinmadi"
+  ],
+  "points": [
+   {
+    "text": "Metadon — 6-dimetilamino-4,4-difenil-3-geptanon; sintetik opioid, morfin o‘rnini bosuvchi modda sifatida Ikkinchi jahon urushi davrida Germaniyada sintez qilingan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 42,
+    "quote": "Metadon (6-dimetilamino-4,4-difenil-3-geptanon) sintetik opioid birinchi marta morfinni o‘rnini bosuvchi modda sifatida ikkinchi jahon urushi davrida Germaniyada sintez qilingan."
+   },
+   {
+    "text": "Tibbiyotda morfin o‘rnini bosuvchi sifatida qo‘llanadi, terapiyada narkomanlarga buyuriladi; analgetik ta’siri morfinnikidan 5 marta yuqori, zaharliligi kamroq.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 42,
+    "quote": "Tibbiyotda morfinning o‘rnini bosuvchi modda sifatida qo‘llaniladi va terapiyada narkomanlarga metadon buyuriladi. Tabletka (40 mg), eritma ko‘rinishida (10 mg/ml) ishlab chiqariladi. Uning analgetik ta’siri morfinga nisbatan 5 marta yuqoriroq, lekin zaharliligi kamroq."
+   },
+   {
+    "text": "Ta’siri morfinnikidan uzoqroq — 24 soatgacha; unga tolerantlik oshib boradi va jismoniy qaramlik yuzaga keladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 42,
+    "quote": "Metadonning ta’sir vaqti morfinga nisbatan uzoqroq bo‘lib, 24 soat davom etishi mumkin. Preparatga o‘rganib qolish (tolerantlik) oshib boradi va u jismoniy qaramlikni keltirib chiqaradi."
+   },
+   {
+    "text": "Metabolizmda normetadol va asetilmetadol kabi giyohvand ta’sirli metabolitlar hosil qiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 43,
+    "quote": "normetadol va asetilmetadol kabi giyohvand ta’sirga ega metabolitlarni hosil qiladi."
+   },
+   {
+    "text": "O‘lim bilan tugagan zaharlanishda metadon konsentratsiyasi (mg/l yoki mg/kg): qon 1,0 (0,4-1,8), bosh miya 1,0, jigar 3,8, o‘t pufagi 7,5, buyraklar 2,9.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 43,
+    "quote": "1 Qon 1,0 (0,4-1,8) 2 Bosh miya 1,0 (0,5-1.4) 3 Jigar 3,8 (1,8-7,5) 4 O‘t pufagi 7,5 (2,9-18,0) 5 Buyraklar 2,9 (1,1-6,0)"
+   },
+   {
+    "text": "Dastlabki tahlil: kukunga kobalt rodanidning suvdagi 2% eritmasidan 1-2 tomchi qo‘shilganda ko‘k rang hosil bo‘ladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 44,
+    "quote": "Kukunga 1-2 tomchi kobalt rodanidning suvdagi 2% eritmasi qo‘shilganda ko‘k rang hosil bo‘ladi."
+   },
+   {
+    "text": "Rangli reaksiyalar: Liberman reaktivi bilan zarg‘aldoq, Mandelin reaktivi bilan yashil so‘ng moviy, Marki reaktivi bilan pushti-qizil so‘ng fluoressensiyalanuvchi qizil rang.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 44,
+    "quote": "1. Liberman reaktivi bilan – zarg‘aldoq rang; 2. Mandelin reaktivi bilan – yashil, so‘ngra moviy rang; 3. Marki reaktivi - pushti-qizil, so‘ngra fluoressensiyalanuvchi qizil rang."
+   },
+   {
+    "text": "Ajratib olish: namunalardan nordonlashtirilgan spirt yoki suv usulida ajratiladi, suvli ajratmadan ishqoriy muhitda (pH=9-10) organik erituvchilar bilan ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 44,
+    "quote": "Namunalardan nordonlashtirilgan spirt yoki suv usulida ajratib olinadi. Suvli ajratmalardan ishqoriy muhitda (rN=9-10) organik erituvchilar bilan ekstraksiyalanadi."
+   },
+   {
+    "text": "YuQX: «Sorbfil» va «Silufol» plastinkalari; sistemalar — siklogeksan–toluol–dietilamin (10:10:1), geksan–aseton–25% ammiak (2:2:0,2), benzol–etanol–dietilamin (9:1:1).",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 44,
+    "quote": "Xromatografik plastinkalar sifatida «Sorbfil» va «Silufol» ishlatiladi. Erituvchilar sistemasi sifatida quyidagi organik erituvchilar aralashmasidan foydalaniladi: siklogeksan-toluol-dietilamin (10:10:1), geksan- aseton-ammiakning 25% eritmasi (2:2:0,2), benzol-etanol-dietilamin (9:1:1)."
+   },
+   {
+    "text": "Dog‘ Mandelin reaktivi bilan ochiladi (yashildan ko‘kka o‘tadi); benzol–etanol–dietilamin (9:1:1) sistemasida Rf=0,80.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 44,
+    "quote": "Metadonning xromatografik plastinkadagi dog‘ini Mandelin reaktivi bilan aniqlanadi. Bunda metadon yashildan ko‘k rangga o‘tuvchi dog‘ hosil qiladi. Benzol-etanol-dietilamin (9:1:1) xromatografik sistemasida Rf=0,80 hosil qiladi."
+   },
+   {
+    "text": "UB-spektr: sulfat kislotadagi eritmasi 253, 259, 264, 292 nm da maksimum nur yutadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 44,
+    "quote": "Metadonning sulfat kislotadagi eritmasi 253, 259, 264, 292 nm (A11=18a) to‘lqin uzunlikda maksimum nur yutadi."
+   },
+   {
+    "text": "IQ-spektr: KBr plastinkasi 710, 1709, 769, 1107, 943, 1133 sm−1 sohalarda nur yutishi bilan identifikatsiya qilinadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 45,
+    "quote": "Metadonni kaliy bromid tuzi bilan tayyorlangan plastinkasi 710, 1709, 769, 1107, 943, 1133 sm−1 sohalarda nur yutish bilan identifikatsiya qilinadi."
+   }
+  ],
+  "pages_read": [
+   16,
+   42,
+   43,
+   44,
+   45,
+   53,
+   164
+  ]
+ }
+]

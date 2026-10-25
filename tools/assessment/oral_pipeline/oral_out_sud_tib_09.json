@@ -1,0 +1,962 @@
+[
+ {
+  "id": "sud_tib.c23.104",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Suvdan chiqarilgan murda ekspertizasidagi asosiy masalalardan biri — suvga tushishning hayotiyligini aniqlash; buning uchun makroskopik ma’lumotlardan tashqari laboratoriya usullari qo‘llaniladi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 45,
+    "quote": "Suv havzasidan chiqarib olingan murdalaming sud-tibbiy ekspertizasida hal etiladigan asosiy masalalardan biri suvga tushishning hayotiyligini aniqlashdir. Ushbu savolning yechimida makrokskopik tekshimv m a’lumotlaridan tashqari laboratoriya tekshiruvlari usullaridan foydalaniladi."
+   },
+   {
+    "text": "Ichki a’zolar bo‘lakchalarining mikroskopik tekshiruvida obturatsion asfiksiya belgilari, chin cho‘kishda esa nafas yo‘llari va alveolalarda suv bilan kirgan yot moddalar aniqlanadi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 45,
+    "quote": "Murda ichki a’zolari bo'lakchalarining mikroskopik tekshimvida obturatsion asfiksiyaga xos belgilar, xususan chin cho'kish holatlarida nafas yo'llari, alveolalarda suv bilan kirgan yot moddalar aniqlanadi."
+   },
+   {
+    "text": "Maxsus laboratoriya tekshiruvlariga diatom planktoni, psevdoplankton, bakteriologik, krioskopik va boshqa tekshiruvlar kiradi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 45,
+    "quote": "Suvga tushishning hayotiyligini aniqlashda maxsus laboratoriya tekshiruvlari ham o'tkaziladi. Ular qatoriga diatom planktoniga tekshimv, psevdoplankton, bakteriologik, krioskopik va boshqa turdagi tekshiruvlar kiradi."
+   },
+   {
+    "text": "Cho‘kishning hayotiyligini aniqlashda diatom planktoni tekshiruvi o‘ta ahamiyatli; diatom planktoni — kremniy birikmali qobiqqa ega bir hujayrali suv o‘simligi, barcha suv havzalarida bo‘ladi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 45,
+    "quote": "Cho'kishning hayotiyligini aniqlashda diatom planktoniga tekshimv o'ta ahamiyatli. Diatom planktoni bir hujayrali kremniy birikmalarini saqlovchi qobiqqa ega suv o'simligi bo'lib, barcha suv havzalarida bo'ladi."
+   },
+   {
+    "text": "Parenximatoz a’zolar va suyak ko‘migida diatom planktonining topilishi cho‘kishning hayotiyligidan dalolat beradi; plankton turi murda topilgan yoki cho‘kish gumon qilingan havza suvidagi planktonga mos kelishi lozim.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 46,
+    "quote": "Parenximatoz a’zolarda, suyak miyada diatom planktonining topilishi cho'kishning hayotiyligidan dalolat beradi. Zero, ushbu plankton turi murda topilgan yoki cho'kish gumon qilingan havza suvidagi planktonga mos kelishi lozim."
+   },
+   {
+    "text": "Hodisa joyida diatom planktoni tekshiruvi uchun suv havzasining uch qatlamidan (suv yuzasi, oraliq va tubidan) bir litrdan suv kontrol namuna sifatida olinadi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 27,
+    "quote": "Diatom planktoniga tekshiruv uchun suv havzasining uch qatlamidan (suv yuzasi, oraliq va tubidan) bir litrdan suv kontrol namuna sifatida olinadi."
+   },
+   {
+    "text": "Asfiktik cho‘kishda parenximatoz a’zolar va suyak ko‘migida diatom planktoni bo‘lmasligi mumkin; bunda kalla asos suyagi bo‘shlig‘idagi suyuqlik namunasi olinadi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 46,
+    "quote": "Asfiktik cho'kish holatlarida mexanizm bo'yicha parenximatoz a’zolar, suyak miyada diatom planktoni bo'lmasligi mumkin. Bunda plankton tekshiruvi uchun kallaning asos suyagi bo'shlig'idan olingan suyuqlikning namunasi olinadi."
+   },
+   {
+    "text": "O‘pka to‘qimasida diatom planktonining topilishi diagnostik ahamiyatga ega emas, chunki u o‘limdan keyin suvga tushganda ham kuzatilishi mumkin.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 46,
+    "quote": "O 'pka to'qimasida diatom planktonining topilishi diagnostik ahamiyatga ega emas. Bu holat o'limdan so'ng suvga tushganda ham (suvning nafas yoilariga o'tishi tufayli) kuzatilishi mumkin"
+   },
+   {
+    "text": "Psevdoplankton (o‘ta mayda qum zarralari, o‘simlik changi, suv o‘simliklari qismlari) ham ichki a’zolar va suyak ko‘migiga o‘tishi mumkin va polyarizatsion mikroskopiyada aniqlanadi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 47,
+    "quote": "Psevdoplankton suvdagi o'ta mayda qum zarrachalari, o'simlik changi, suv o'simliklarining qismlari bo'lib, ular suv bilan diatom planktoni kabi ichki a’zolarga, suyak miyaga o'tishi mumkin. Psevdoplankton polyarizatsion mikroskopiyada aniqlanadi."
+   },
+   {
+    "text": "Ichki a’zolarning bakteriologik tekshiruvida suvdagi tegishli bakteriyalarning topilishi suvga hayotiy tushganlikni tasdiqlaydi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 47,
+    "quote": "Murda ichki a’zolarining bakteriologik tekshiruvida tegishli bakteriyalaming topilishi suvga hayotiy tushganlikni tasdiqlaydi."
+   },
+   {
+    "text": "Krioskopik (muzlash harorati), refraktometrik (nur sindirish), qon quyuqligi va elektr o‘tkazuvchanligi tekshiruvlari natijalari bo‘yicha ham suvga tushishning hayotiyligi aniqlanishi mumkin.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 47,
+    "quote": "Bulardan tashqari cho'kish holatlarida krioskopik (muzlash harorati), refraktometrik (nur sindirish), qonning quyushqoqligi hamda elektr о ‘tkazuvchanligi tekshiruvlari natijalari bo'yicha suvga tushishining hayotiyligi aniqlanishi mumkin."
+   },
+   {
+    "text": "Bu tekshiruvlar yurakning chap va o‘ng kameralaridagi qon xususiyatlarini taqqoslashga asoslangan.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 47,
+    "quote": "Mazkur tekshiruvlar yurakning chap va o'ng kameralaridagi qonning xususiyatlarini taqqoslashga asoslangan."
+   }
+  ],
+  "pages_read": [
+   "giyosov_2_oqotar_asfiksiya_toksikologiya1:42",
+   "giyosov_2_oqotar_asfiksiya_toksikologiya1:43",
+   "giyosov_2_oqotar_asfiksiya_toksikologiya1:44",
+   "giyosov_2_oqotar_asfiksiya_toksikologiya1:45",
+   "giyosov_2_oqotar_asfiksiya_toksikologiya1:46",
+   "giyosov_2_oqotar_asfiksiya_toksikologiya1:47",
+   "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar:27",
+   "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar:69"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.105",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Jinoyat huquqida «tan jarohati» qasddan yoki ehtiyotsizlik orqasida sodir etilgan g‘ayriqonuniy harakatlar natijasida sog‘liqqa yetkazilgan ziyonni anglatadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 27,
+    "quote": "“Tan jarohati” tushunchasi jinoyat huquqida qasddan yoki ehtiyotsizlik orqasida sodir etilgan g ‘ayriqonuniy harakatlar natijasida sog‘liqqa etkazilgan ziyonni anglatadi."
+   },
+   {
+    "text": "Sud tibbiyotida sog‘liqning buzilishi yoki o‘limga olib kelgan tashqi ta’sir natijasida a’zo va to‘qimalar anatomik butunligi yoki fiziologik funksiyasining buzilishi tan jarohati deyiladi; ichki ta’sirdan kelib chiqqan holat esa kasallik deb tushuniladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 27,
+    "quote": "tibbiyotida sogiiqning buzilishi yoki o‘limga olib kelgan biron-bir tashqi ta’sir natijasidagi organizm a ’zo va to'qimalarining anatomik butunligi yoki fiziologik funksiyasining buzilishi tan jarohati deb nomlanadi. Zero, ushbu holat ichki ta’sir tufayli vujudga kelganda kasallik deb tushuniladi."
+   },
+   {
+    "text": "Shikastlovchi tashqi ta’sirning to‘rt turi farqlanadi: fizik, kimyoviy, biologik va ruhiy; ruhiy ta’sir natijalari sud psixiatriyasi predmeti bo‘lib, bunda sud-psixiatrik ekspertiza tayinlanadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 28,
+    "quote": "Shikastlovchi tashqi ta’siming to‘rt turi farqlanadi: fizik, kimyoviy, biologik va ruhiy. Odatda ruhiy ta’sir natijalarini o'rganish sud psixiatriyasining predmeti bo‘lib, bunday holatlarda sud-psixiatrik ekspertiza tayinlanadi."
+   },
+   {
+    "text": "Fizik ta’sirning mexanik, termik, elektr, barometrik va nur ta’siri kabi turchalari bor; ba’zan bir necha tashqi omil birgalikda ta’sir qiladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 28,
+    "quote": "Fizik ta’sir o‘z navbatida mexanik, termik, elektr, barometrik va nur ta’sir kabi turchalari mavjud (jadval 2.1.). Ayni paytda b a’zi holatlarda bir necha tashqi omillaming birgalikdagi ta’siri ham kuzatilishi mumkin."
+   },
+   {
+    "text": "Shikastlovchi omillar jism, modda va holat yoki hodisa ko‘rinishida bo‘ladi: jismlar turg‘un shaklga ega, moddalar qattiq (qum, tuproq), suyuq (kislota, ishqorlar) va gazsimon (is gazi, metan) holatda bo‘lib, turg‘un shaklga ega emas.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 28,
+    "quote": "Shikastlovchi omillar jism, modda va holat yoki hodisa ko'rinishida bo'lishi mumkin. Jismlar turg'un o'lchamli shaklga ega b o isa , moddalar qattiq (qum, tuproq), suyuq (kislota, ishqorlar) va gazsimon (is gazi, metan) holatda b o iib , ular turg'un shaklga ega emas."
+   },
+   {
+    "text": "Holat yoki hodisalar qatoriga elektr toki va bosimning o‘zgarishi kiradi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 28,
+    "quote": "Holat yoki hodisalar qatoriga elektr toki, bosimning o'zgarishini kiritsa boiadi."
+   },
+   {
+    "text": "Bitta shikastlovchi omil ta’siridagi jarohat oddiy, ikki va undan ortiq turdagi tashqi ta’sir natijasidagisi murakkab jarohat deyiladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 28,
+    "quote": "Bitta shikastlovchi omil ta’sirida vujudga kelgan jarohat oddiy jarohat, ikki va undan ortiq turdagi tashqi ta’sir natijasida vujudga kelgan holatga murakkab jarohat deb nomlandi."
+   },
+   {
+    "text": "Shikastlanish bir anatomik soha (bosh, bo‘yin, ko‘krak, qorin, tos) yoki tayanch-harakat tizimining bir segmentini egallasa, cheklangan jarohat deyiladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 28,
+    "quote": "Shikastlanish bir anatomik soha (bosh, bo'yin, ko'krak, qorin, tos) yoki tayanch- harakat tizimining bir segmentini egallasa cheklangan jarohat,"
+   },
+   {
+    "text": "Ikki va undan ortiq soha yoki ikki va undan ortiq segment, yoxud bir anatomik soha va bir segment qamralsa, qo‘sh jarohat deyiladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 28,
+    "quote": "ikki va undan ortiq soha yoki tayanch-harakat tizimining ikki va undan ortiq segmentini yoxud bir anatomik soha va tayanch-harakat tizimining bir segmentini qamrasa qo'sh jarohat deb ataladi."
+   },
+   {
+    "text": "Soniga qarab yakka va ko‘p jarohatlar farqlanadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 28,
+    "quote": "Soniga qarab yakka va ко ‘p jarohatlar farqlanadi (jadval 2.2.)."
+   },
+   {
+    "text": "Anatomik struktura va funksiya bog‘liqligi sababli shartli ravishda asosan anatomik va asosan funksional shikastlanishlar farqlanadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 28,
+    "quote": "Shu sababli, shartli ravishda asosan anatomik va asosan funksional shikastlanishlar farqlanadi."
+   },
+   {
+    "text": "Birinchi (asosan anatomik) guruhga shilinma, qontalash, yara, sinish, chiqish, majaqlanish, ichki a’zolar yorilishi; ikkinchi (asosan funksional) guruhga refleksogen sohalarga zarbdan shok, bosh miya va ichki a’zolar chayqalishi, aspiratsion asfiksiya kiradi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 28,
+    "quote": "Birinchi guruhga shilinma, qontalash, yara, sinish, chiqish, majaqlanish, ichki a’zolaming yorilishi kabilar kirsa, ikkinchi guruh qatorida refleksogen sohalarga zarb natijasida shok, bosh miya va ichki a ’zolaming chayqalishi, aspiratsion asfiksiyani ko'rsatsa boiadi."
+   }
+  ],
+  "pages_read": [
+   "giyosov_1_asoslar_travmatologiya:27",
+   "giyosov_1_asoslar_travmatologiya:28",
+   "giyosov_1_asoslar_travmatologiya:29"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.107",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Sud-tibbiy ekspertiza amaliyotida mexanik jarohatlar shikastlanishlarning eng ko‘p uchraydigan turi hisoblanadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 31,
+    "quote": "Sud-tibbiy ekspertiza amaliyotida mexanik jarohatlar shikastlanishlaming eng ko‘p uchraydigan turi hisoblanadi."
+   },
+   {
+    "text": "So‘nggi yillarda o‘lim sabablari strukturasida mexanik jarohatlar yurak-qon tomir va onkologik kasalliklardan keyin turadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 28,
+    "quote": "So'nggi yillarda o'lim sabablari strukturasida mexanik jarohatlar yurak-qon tomir va onkologik kasalliklardan keyin turadi."
+   },
+   {
+    "text": "Mexanik jarohat vujudga kelishining asosiy sharti — harakat: shikastlovchi jism yoki tana va uning qismlari harakatda bo‘lishi lozim.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 31,
+    "quote": "Mexanik jarohatlaming vujudga kelishidagi asosiy shart harakatning boiishidir. Bunda shikastlovchi jism yoki tana va uning qismlari harakatda boiishi lozim."
+   },
+   {
+    "text": "Shikastlanish xususiyatlari o‘zaro ta’sir vaqtidagi kinetik energiya kattaligiga bog‘liq.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 31,
+    "quote": "Shikastlanishning xususiyatlari o‘zaro ta’sir vaqtidagi kinetik energiya kattaligiga b ogiiq"
+   },
+   {
+    "text": "Jarohat ko‘lami harakatdagi omilning (shikastlovchi vosita yoki tana va uning qismlarining) massasi va harakat tezligiga to‘g‘ri proporsional bo‘ladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 32,
+    "quote": "ko'lami harakatdagi omilning (shikastlovchi vosita yoki tana va uning qismlarining) massasi va harakat tezligiga to 'g 'ri proporsional bo'ladi."
+   },
+   {
+    "text": "Mexanik jarohat yetkazuvchi vositalarda qurol, anjom va jism farqlanadi; hujum yoki mudofaa uchun maxsus tayyorlangan mahsulot (pistolet, miltiq, xanjar) qurol deyiladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 32,
+    "quote": "Mexanik jarohat etkazuvchi vositalarda qurol, anjom va jism farqlanadi. Hujum yoki mudofaa qilish uchun maxsus tayyorlangan mahsulot (masalan, pistolet, miltiq, hanjar va hk.) qurol deb ataladi."
+   },
+   {
+    "text": "Anjomlarga ishlab chiqarish, uy-ro‘zg‘or yoki kundalik hayotda ishlatiladigan mahsulotlar (bolta, arra, qaychi) kiradi; aniq qo‘llanish maqsadi bo‘lmagan narsalar (tosh, tayoq) jism deyiladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 32,
+    "quote": "Anjomlarga m a’lum bir ishlab chiqarish,uy-ro‘zg‘or yoki kundalik hayotda ishlatiladigan mahsulotlar (bolta, arra, qaychi va hk.) kiradi. Aniq qo'llanilish maqsadiga ega bo'lmagan narsalar (tosh, tayoq va hk.) jism deb nomlanadi."
+   },
+   {
+    "text": "Mexanik jarohatlar o‘tmas, o‘tkir jismlar va o‘q otar qurollardan yetkazilgan shikastlanishlarga bo‘linadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 32,
+    "quote": "Mexanik jarohatlar o'tmas, o'tkir jismlar va o'q otar qurollardan etkazilgan shikastlanishlarga bo'linadi."
+   },
+   {
+    "text": "O‘tmas jarohatlar o‘tmas jism ta’sirida, transport vositalaridan va balandlikdan yiqilishda yetkazilganlarga, o‘q otar jarohatlar esa o‘q otar va portlashda olinganlarga bo‘linadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 32,
+    "quote": "o'tmas jarohatlar xususan o'tm as jism ta’sirida, transport vositalaridan va balandlikdan yiqilishda etkazilgan, o'q otar jarohatlar esa o 'z navbatida xususan o 'q otar va portlashda olinganlarga bo'linadi."
+   },
+   {
+    "text": "Jarohatlarning turi, ko‘lami va boshqa jihatlari shikastlovchi vosita, shikastlanayotgan soha va ularning o‘zaro ta’siri xususiyatlariga bog‘liq.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 32,
+    "quote": "Jarohatlaming turi, ko'lam i va boshqa jihatlari shikastlovchi vosita, shikastlanayotgan soha hamda ulaming o'zaro ta’siri xususiyatlariga bogiiqdir."
+   },
+   {
+    "text": "Bu xususiyatlarga shikastlovchi jismning massasi, qattiqligi, tezligi, shikastlovchi yuza yoki o‘tkir uch/tig‘ xususiyatlari, shikastlanayotgan sohaning anatomik-fiziologik xususiyatlari, shaxsning yoshi va kasalliklari kiradi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 32,
+    "quote": "shikastlovchi jismning massasi, qattiqligi, tezligi, shikastlovchi yuza yoki o'tkir uch yoxud tig'ning xususiyatlari, shikastlanayotgan sohaning anatomik, fiziologik xususiyatlari, shaxsning yoshi, kasalliklaming mavjudligi"
+   }
+  ],
+  "pages_read": [
+   "giyosov_1_asoslar_travmatologiya:28",
+   "giyosov_1_asoslar_travmatologiya:31",
+   "giyosov_1_asoslar_travmatologiya:32"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.108",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Mexanik jarohatlarda o‘limning birlamchi va ikkilamchi sabablari farqlanadi: birlamchida o‘lim shikastlanish paytida yoki qisqa vaqt ichida, ikkilamchida esa birmuncha muddatdan so‘ng sodir bo‘ladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 32,
+    "quote": "Mexanik jarohatlar natijasida o'limning birlamchi va ikkilamchi sabablari farqlanadi. Agar birlamchi sababda shikastlanish yoki undan keyin qisqa vaqt ichida o'limga olib kelsa, ikkilamchi sabablarda o'lim birmuncha muddatdan so'ng sodir bo'ladi."
+   },
+   {
+    "text": "Hayot bilan nomutanosib jarohatlarga boshning tanadan ajralishi, tananing ikkiga bo‘linishi, boshning majaqlanishi, ichki a’zolarning qo‘pol shikastlanishlari (masalan, yurakning majaqlanishi yoki uzilishi) kiradi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 32,
+    "quote": "Ushbu jarohatlar guruhiga shikastlanish natijasida boshning tanadan ajrashi, tananing ikkiga bo'linishi, boshning majaqlanishi, ichki a’zolaming qo'pol shikastlanishlari (masalan, yurakning majaqlanishi yoki uzilib ketilishi) kiradi."
+   },
+   {
+    "text": "Hayot uchun muhim a’zolarning shikastlanishiga bosh miya va yurakning lat yeyishi, yurak chayqalishi kiradi; yurak chayqalishi yurakning reflektor to‘xtashi va yurak mushaklarining yorilishiga olib kelishi mumkin.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 32,
+    "quote": "Bular qatoriga bosh miyaning lat eyishi, yurakning lat eyishi, chayqalishi. Xususan, yurakning chayqalishi yurakning reflektor to'xtashi, yurak mushaklarining yorilishiga olib kelishi mumkin."
+   },
+   {
+    "text": "Qon yo‘qotishda nafaqat yo‘qotilgan qon hajmi, balki qon yo‘qotish sur’ati ham ahamiyatli.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 32,
+    "quote": "3. Qon yo'qotish. Mazkur holatda nafaqat yo'qotilgan qonning hajmi, balki qon yo'qotish sur’ati ham ahamiyatlidir."
+   },
+   {
+    "text": "Yirik arteriyalar shikastlanganda o‘tkir qon yo‘qotish rivojlanadi: nisbatan oz (500 ml gacha) qon yo‘qotilsa ham o‘lim dastlabki minutlarda yurak qorinchalari fibrillyatsiyasida sodir bo‘ladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 33,
+    "quote": "Yirik arterial qon tomirlarining shikastlanishida o‘tkir qon yo'qotish rivojlanadi va nisbatan oz miqdorda qon yo‘qotilgan (500 ml.gacha) boisa-da, o iim dastlabki minutlarda yurak qorinchalarining fibrillyatsiyasida sodir boiadi."
+   },
+   {
+    "text": "Yurak chap qorinchasi endokardi ostidagi tasmasimon qon quyilishlar (Minakov dog‘lari) o‘tkir qon yo‘qotish uchun xos belgi hisoblanadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 33,
+    "quote": "Yurak chap qorinchasi endokardi ostida tasmasimon qon quyilishlaming (Minakov dogiari) boiishi o'tkir qon yo'qotish uchun xos belgi hisoblanadi."
+   },
+   {
+    "text": "Ko‘p qon yo‘qotish (50% dan ortiq, ya’ni 2,5 litr va undan ko‘p) odatda sekinroq — bir necha soat davomida yuz beradi va umumiy kamqonlik alomatlari rivojlanib ulguradi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 33,
+    "quote": "K o'p qon yo‘qotish (50%dan ortiq, ya’ni 2,5 litr va undan ko‘p) odatda sekinroq - bir necha soat davomida yuz beradi va organizmda umumiy kamqonlik alomatlari rivojlanib ulguradi."
+   },
+   {
+    "text": "Travmatik shok — shikastlanishga javoban markaziy nerv, yurak-qon tomir va endokrin tizimlari faoliyatining jiddiy buzilishi ko‘rinishidagi javob reaksiyasi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 33,
+    "quote": "4. Travmatik shok. Bu organizmning shikastlanishga nisbatan markaziy nerv, yurak-qon tomir va endokrin tizimlari faoliyatining jiddiy buzilishi ko‘rinishidagi javob reaksiyasidir."
+   },
+   {
+    "text": "Bosh va orqa miya, yurak, o‘pkaning qon va havo bilan qisilishi: kalla-miya jarohatlarida epidural, subdural, subaraxnoidal, qorinchalar ichi va miya to‘qimasidagi gematomalarda kuzatiladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 33,
+    "quote": "5. Bosh va orqa miya, yurak, о ‘p kaning qon va havo bilan qisilishi. Bu asorat kalla-miya jarohatlarida - suyak ichi (epidural, subdural, subaraxnoidal, qorinchalar ichi va miya to‘qimasidagi) gematomalarda"
+   },
+   {
+    "text": "Mexanik jarohatlarda asosan havo va yog‘ emboliyasi kuzatiladi; tromb, to‘qima va yot jism bilan emboliya ancha kam uchraydi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 33,
+    "quote": "6. Emboliya. Mexanik jarohatlarda asosan havo, yog‘ emboliyasi kuzatiladi. Tromb, to‘qima va yot jism bilan emboliya nisbatan ancha kam uchraydi."
+   },
+   {
+    "text": "Halqum, nafas yo‘llari shikastlanishi, kalla asosi va burun suyaklari sinishida qon nafas yo‘llariga tushib, aspiratsion asfiksiyaga olib kelishi mumkin.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 34,
+    "quote": "Qonning aspiratsiyasi natijasida asfiktsiya. Halqum, nafas yo'llarining shikastlanishi, kalla asosi va bumn suyaklarining sinishida qon nafas yo'llariga tushib, aspiratsion asfiktsiyaga olib kelishi mumkin."
+   },
+   {
+    "text": "Ikkilamchi sabablarga asosan infeksion asoratlar (sepsisga olib kelgan yiringli peritonit, plevrit, meningit, osteomielit, gaz gangrenasi, qoqshol) va intoksikatsiyalar (travmatik toksikoz) kiradi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 35,
+    "quote": "Mexanik jarohatlardan oiim ning ikkilamchi sabablariga asosan turli infeksion asoratlar (sepsisga olib kelgan yiringli peritonit, plevrit, meningit, osteomielit, anaerob infeksiya - gaz gangrenasi, qoqshol), intoksikatsiyalar (travmatik toksikoz) kiradi."
+   }
+  ],
+  "pages_read": [
+   "giyosov_1_asoslar_travmatologiya:32",
+   "giyosov_1_asoslar_travmatologiya:33",
+   "giyosov_1_asoslar_travmatologiya:34",
+   "giyosov_1_asoslar_travmatologiya:35"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.109",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Sud-tibbiy ekspertiza amaliyotida o‘tmas jismlardan yetkazilgan jarohatlar yetakchi o‘rinni egallaydi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 35,
+    "quote": "Sud-tibbiy ekspertiza amaliyotida o'tmas jismlardan etkazilgan jarohatlar etakchi o'rinni egallaydi."
+   },
+   {
+    "text": "Shikastlanish ma’lum bir yuzaning ta’sirida vujudga kelganda jism o‘tmas hisoblanadi; qattiq (tosh, tayoq), yumshoq (sharf, sochiq) va elastik (rezina to‘p) o‘tmas jismlar farqlanadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 35,
+    "quote": "Shikastlanish m aium bir yuzaning ta’sirida vujudga kelganda, bunday jismlar o ‘tmas, deb hisoblanadi. Qattiq (tosh, tayoq), yumshoq (sharf, sochiq), elastik (rezina to‘pi) o ‘tmas jismlar farqlanadi."
+   },
+   {
+    "text": "O‘tmas jismlar ta’sir yuzasining o‘lchami, shakli va relefi xususiyatlariga qarab tasniflanadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 35,
+    "quote": "O'tmas jismlar ta'sir yuzasi oicham i, shakli va relefining xususiyatlariga qarab tasniflanadi (jadval 2.3.)."
+   },
+   {
+    "text": "Ta’sir yuzasi maydonining o‘lchami bo‘yicha cheklangan va cheklanmagan yuzalar farqlanadi; bu bo‘linish nisbiy bo‘lib, shikastlovchi va shikastlanuvchi yuzalar nisbati inobatga olinadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 35,
+    "quote": "Ta’sir yuzalari maydonining oicham lari bo'yicha cheklangan va cheklanmagan yuzalar farqlanadi. Ayni paytda, ushbu boiinish absolyut emas, balki nisbiy tusga ega b o iib , bunda shikastlovchi va shikastlanuvchi yuzalarining nisbati inobatga olinadi."
+   },
+   {
+    "text": "Ta’sir yuzasi shikastlangan soha yuzasidan kichik bo‘lsa — cheklangan, katta bo‘lsa — cheklanmagan (keng) yuza deb baholanadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 35,
+    "quote": "Jumladan, o'tmas jismning ta’sir yuzasi shikastlangan soha yuzasidan kichik boiganda, shikastlovchi yuza cheklangan sifatida e’tirof qilinadi. Aksincha shikastlovchi yuza shikastlangan sohadan katta b o isa, cheklanmagan, keng yuza"
+   },
+   {
+    "text": "Shu sababli bir o‘tmas jismning ta’sir yuzasi shikastlanish sohasi maydoniga qarab bir holatda cheklangan, boshqasida cheklanmagan yuza xususiyatiga ega bo‘lishi mumkin.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 36,
+    "quote": "Demak, bir о ‘tmas jismning ta’sir yuzasi shikastlanish sohasining maydoniga qarab, bir holatda cheklangan yuza, ikkinchisida esa cheklanmagan yuza xususiyatlariga ega boiishi mumkin"
+   },
+   {
+    "text": "Ta’sir yuzasining shakli bo‘yicha yassi, egri, qirrali va murakkab shakldagi yuzalar ajratiladi; har bir shaklning qator ko‘rinishlari bor, yuza relefi silliq yoki g‘adir-budur bo‘lishi mumkin.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 36,
+    "quote": "Ta’sir yuzasining shakli bo'yicha yassi, egri, qirrali va murakkab shakldagi yuzalar ajratiladi. Har bir shakldagi yuzaning o‘z navbatida qator ko‘rinishlari farqlanadi. Yuzaning relefi silliq yoki g‘adir-budur b oiishi mumkin."
+   },
+   {
+    "text": "Muxanov bo‘yicha o‘tmas jismlar turlari: cheklanmagan yassi yuzali, cheklangan yassi yuzali, sferik yuzali, silindr yuzali, uch chekkali qirrali va ikki chekkali qirrali.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 36,
+    "quote": "Turli o'tm as jism lar (A.l.M uxanov (1969) bo‘yicha): a - cheklanmagan yassi yuzali; b - cheklangan yassi yuzali; v - sferik yuzali; g - silindr yuzali; d-ueh chekkali qirrali; e - ikki chekkali qirrali."
+   },
+   {
+    "text": "O‘tmas jism shikastlovchi yuzasining o‘lchami, shakli va relefi vujudga keladigan jarohatlarning turi, shakli, o‘lchami va boshqa xususiyatlarini belgilaydi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 36,
+    "quote": "0 ‘tmas jism shikastlovchi yuzasining oicham i, shakli va relefi ta’sir natijasida vujudga keladigan jarohatlaming turi, shakli, oicham i va boshqa xususiyatlarini belgilaydi."
+   }
+  ],
+  "pages_read": [
+   "giyosov_1_asoslar_travmatologiya:35",
+   "giyosov_1_asoslar_travmatologiya:36"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.110",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Shikastlovchi jism massasi tananing shikastlanayotgan sohasi massasidan kichik bo‘lsa, impression travma vujudga keladi va shikastlanish faqat ta’sir sohasi bilan cheklanadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 36,
+    "quote": "Agar shikastlovchi jismning massasi tananing shikastlanayotgan sohasining massasidan kichik boisa, impression travma vujudga keladi va bunda shikastlanish faqat ta’sir sohasi bilan cheklanadi."
+   },
+   {
+    "text": "Ta’sir kuchi shikastlanayotgan soha, ba’zan tana massasidan ancha katta bo‘lsa, inersion (tezlanish) travma rivojlanadi: bilvosita jarohatlar, tananing umumiy chayqalish belgilari, kalla-miya jarohatlarida aks zarb shikastlanishlar aniqlanadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 36,
+    "quote": "T a’sir kuchi shikastlanayotgan soha, ba’zan tana massasidan ancha katta boiganda inersion yoki tezlanish travmasi rivojlanadi. Bunda bilvosita jarohatlar, tananing umumiy chayqalish belgilari, kalla-miya jarohatlarida aks zarb shikastlanishlar aniqlanadi."
+   },
+   {
+    "text": "O‘tmas jismlardan jarohatlar asosan zarb, qisilish, cho‘zilish va ishqalanish mexanizmlari bo‘yicha, ayrim holatlarda buralish va chayqalish orqali vujudga keladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 36,
+    "quote": "O 'tmas jismlardan etkazilgan jarohatlar asosan zarb, qisilish, cho‘zilish va ishqalanish mexanizmi bo‘yicha vujudga keladi. Ayrim holatlarda buralish va chayqalish mexanizmlari ham kuzatilishi mumkin."
+   },
+   {
+    "text": "Zarb — bir tomonga yo‘nalgan, qisqa muddatli ta’sir.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 37,
+    "quote": "Zarb. Bu bir tomonga yo'nalgan, qisqa muddatli ta’sir."
+   },
+   {
+    "text": "Siqilishda tanaga bir-biriga qarab (markazga intiluvchi) yo‘nalgan ikki, ba’zan undan ko‘p kuch nisbatan uzoq vaqt ta’sir etadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 37,
+    "quote": "Siqilish. Bu mexanizmda tanaga bir-biriga qarab yo'nalgan, y a’ni markazga intiluvchi ikki, ba’zan undan ko‘p kuch nisbatan uzoq vaqt ta’sir etadi."
+   },
+   {
+    "text": "Siqilish mexanizmida tashqi jarohatlarga nisbatan ichki a’zolar va suyaklarning shikastlanishi ancha jiddiyroq bo‘ladi, ba’zan tana sohasi deformatsiyasi vujudga keladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 37,
+    "quote": "Siqilish mexanizmida tashqi jarohatlarga nisbatan ichki a’zolar va suyaklaming shikastlanishi ancha jiddiyroq boiadi, ba’zan tana sohasining deformatsiyasi vujudga keladi."
+   },
+   {
+    "text": "Cho‘zilish siqilishga qarama-qarshi jarayon bo‘lib, tanaga markazdan qochuvchi ikki yoki undan ortiq kuch ta’sir etadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 37,
+    "quote": "Bu jarayon qisilishga qarama-qarshi b o iib , tanaga markazdan qochuvchi ikki yoki undan ortiq kuch ta’sir etadi."
+   },
+   {
+    "text": "Cho‘zilish mexanizmi uchun bilvosita jarohatlar xos: yirtma yaralar, yorilishlar, tana qismlarining ajralishi aniqlanadi; tishlama yaralar vujudga kelishida ham u ishtirok etadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 37,
+    "quote": "Mazkur mexanizm uchun bilvosita jarohatlar xos b o iib , yirtma yaralar, yorilishlar, tana qismlarining ajralishi aniqlanadi. Tishlama yaralaming vujudga kelishida ham cho'zilish mexanizmi ishtirok etadi."
+   },
+   {
+    "text": "Ishqalanishda jism tanaga (yoki tana jismga) nisbatan burchak ostida ta’sir etib harakatlanadi; bunda faqat bevosita jarohatlar, asosan shilinmalar vujudga keladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 37,
+    "quote": "Ishqalanish. Bunda shikastlovchi jism tanaga nisbatan yoki tana jismga nisbatan burchak ostida ta’sir etib, harakatlanadi. Ishqalanish mexanizmida faqat bevosita jarohatlar vujudga kelib, ular asosan shilinma ko'rinishida boiadi."
+   },
+   {
+    "text": "Buralish mexanizmida asosan bilvosita jarohatlar, xususan suyaklarning spiralsimon sinishlari vujudga keladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 38,
+    "quote": "asosan bilvosita jarohatlar etka/.iladi. Xususan, suyaklarning spiralsimon sinishlari vujudga keladi."
+   },
+   {
+    "text": "Chayqalish odatda zarbdan so‘ng yoki tana silkinishida kuzatiladi; jarohatlar ta’sir kuchi va sohaga bog‘liq bo‘lib, kuchsiz ta’sirda bosh miya chayqalishi kabi funksional o‘zgarishlar ustun bo‘ladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 38,
+    "quote": "ushbu mexanizm zarbdan so‘ng yoki tananing silkinishi natijasida kuzatiladi. Vujudga keladigan jarohatlar ta’sir kuchining kattaligi va ta’sir etilayotgan sohaga bogiiq. Ta’sir uncha kuchli boim asa, bosh miyaning chayqalishi kabi funksional o'zgarishlar ustuvor b oig an jarohatlar vujudga keladi."
+   },
+   {
+    "text": "Ko‘pincha o‘tmas jismlardan yetkazilgan jarohatlar ikki va undan ortiq mexanizm orqali vujudga keladi va bu jarohatlar xususiyatlariga ta’sir ko‘rsatadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 38,
+    "quote": "Aksariyat holatlarda o'tmas jismlardan etkazilgan jarohatlar ikki va undan ortiq mexanizmlar orqali vujudga keladi. Bu esa o ‘z navbatida jarohatlaming xususiyatlariga ta’sir ko'rsatadi."
+   }
+  ],
+  "pages_read": [
+   "giyosov_1_asoslar_travmatologiya:35",
+   "giyosov_1_asoslar_travmatologiya:36",
+   "giyosov_1_asoslar_travmatologiya:37",
+   "giyosov_1_asoslar_travmatologiya:38"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.111",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Shilinma — terining yuza qavatlari (epidermis, dermaning so‘rg‘ichsimon qavati) butunligining buzilishi; ko‘p uchraydigan jarohat turi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 38,
+    "quote": "Shilinmalar terming yuza qavatlari - epidermis, dermaning so'rg'ichsimon qavati butunligining buzilishi bo'lib, ular ko'p uchraydigan jarohatlar turiga kiradi."
+   },
+   {
+    "text": "Faqat epidermis shikastlansa yuzaki, so‘rg‘ichsimon qavatga o‘tsa chuqur shilinma deyiladi; chiziqsimon shilinmalar timalma deb ataladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 38,
+    "quote": "Faqat epidermisning shikastlanishi yuzaki shilinma, shikastlanish so'rg'ichsimon qavatga o'tsa chuqur shilinma deb nomlanadi. Chiziqsimon shilinmalar timalma deb ataladi."
+   },
+   {
+    "text": "Shilinma o‘tmas jismning burchak ostidagi ta’sirida zarb, siqilish va ishqalanish mexanizmlari bo‘yicha vujudga keladi; ta’sir burchagi qancha o‘tkir bo‘lsa, ishqalanish o‘rni ortadi va shilinma yo‘lkasimon bo‘ladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 38,
+    "quote": "Shilinma o'tmas jismning burchak ostidagi ta’sirida zarb, siqilish va ishqalanish mexanizmlari bo'yicha vujudga keladi. Ta’sir burchagi qanchalik o'tkir bo'lsa, jarohatning vujudga kelishida ishqalanish mexanizmining o'm i ortadi va shilinmalar yoikasim on shaklga ega bo'ladi."
+   },
+   {
+    "text": "Shilinmalar rivojlanishida A.F. Taykov bo‘yicha 4 bosqich farqlanadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 38,
+    "quote": "Shilinmalaming rivojlanishida A.F.Taykov (1951) bo'yicha 4 bosqich farqlanadi"
+   },
+   {
+    "text": "1-bosqich — yangi shilinma: yuzasi avval nam, keyin quriydi, shikastlanmagan teri sathidan past; 12 soatgacha davom etadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 38,
+    "quote": "Yangi shilinma bosqichi. Bunda shilinma yuzasi avval nam bo'ladi, keyinroq quriydi. Shilinma yuzasi shikastlanmagan teri sathidan past. Bu bosqich 12 soatgacha davom etadi."
+   },
+   {
+    "text": "2-bosqich — qoplama hosil bo‘lishi: 2–3 sutkagacha davom etishi mumkin; nekrozga uchragan teri to‘qimasi, limfa, chuqur shilinmalarda qon qurib qoplama asosini hosil qiladi, avval u sog‘lom teri sathida bo‘ladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 38,
+    "quote": "Qoplamaning hosil bo'lish bosqichi. Bu bosqich 2-3 sutkagacha davom etishi mumkin. Shilinma yuzasidagi nekrozga uchragan teri to'qimasi, limfa, chuqur shilinmalarda qon qurib, qoplamaning asosini tashkil etadi. Avvaliga qoplama sog'lom teri sathida bo'ladi."
+   },
+   {
+    "text": "3-bosqich — epitelizatsiya: 7–9 sutkagacha davom etadi; qoplama qattiqlashib, qalinlashib, sog‘lom teri sathidan ko‘tariladi va chekkalardan ko‘cha boshlaydi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 38,
+    "quote": "Epitelizatsiya bosqichi 7-9 sutkagacha davom etadi. Qoplama qattiqlashadi, qalinlashadi va sog'lom teri sathidan ko'tariladi. Epitelizatsiya tufayli qoplama periferik sohalardan boshlab ko'cha boshlaydi."
+   },
+   {
+    "text": "4-bosqich — iz: tushgan qoplama o‘rnida pushti dog‘ qoladi va 10–15 sutkada yo‘qoladi; shilinma shaklidan qat’i nazar iz dumaloq yoki oval bo‘ladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 39,
+    "quote": "Iz bosqichi. Tushib ketgan qoplama o ‘mida pushti dog' ko'rinishidagi iz qolib, u 10-15 sutkaga kelib yo'qoladi. Shilinmaning shaklidan qat’iy nazar shilinmadan qolgan iz dumaloq, oval shaklda boiadi."
+   },
+   {
+    "text": "Bu muddatlar shartli bo‘lib, shaxsning yoshi, sog‘lig‘i, shikastlangan soha terisi xususiyatlari va jarohat chuqurligiga bog‘liq.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 39,
+    "quote": "Shilinmalaming rivojlanishidagi yuqorida keltirilgan muddatlar shartli b o iib , ular shaxsning yoshi, sogiiq holati, shikastlanish sohasidagi terming xususiyatlari, jarohatning chuqurligi bilan uzviy bogiiq."
+   },
+   {
+    "text": "Sud-tibbiy ahamiyati: shilinma mexanik ta’sir bo‘lganini tasdiqlaydi, shikastlanish mexanizmi va muddatini aniqlash imkonini beradi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 39,
+    "quote": "Shilinmalaming sud-tibbiy ahamiyati quyidagilar bilan belgilanadi: - mexanik ta’sir boiganligini tasdiqlaydi; - shikastlanishning mexanizmi va muddatini aniqlash mumkin;"
+   },
+   {
+    "text": "Ayrim holatlarda joylashuvi, shakli va soniga qarab hodisa tafsiloti taxmin qilinadi (masalan, bo‘yindagi yoysimon shilinmalar qo‘l bilan bo‘g‘ishda); ba’zan shilinmalar bo‘yicha tan jarohatining og‘irlik darajasi aniqlanadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 39,
+    "quote": "ayrim holatlarda shilinmalaming joylashgan o ‘mi, shakli, soniga qarab hodisa tafsiloti buyicha taxmin qilsa bo'ladi (masalan: bo’yinda yoysimon shilinmalar b o isa , qo'l bilan bo'g'ishda vujudga kelganligi haqida); - b a’zan shilinmalar bo'yicha tan jarohatlarining og'irlik darajasi aniqlanadi."
+   },
+   {
+    "text": "Murda ekspertizalarida shilinmalarni o‘limdan keyingi qurish alomati bo‘lgan pergament dog‘laridan farqlash lozim.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 39,
+    "quote": "Murda ekspertizalarida shilinmalami o'limdan so'ng qo'rish alomati b o ig an pergament dog'laridan farqlash lozim bo'ladi."
+   }
+  ],
+  "pages_read": [
+   "giyosov_1_asoslar_travmatologiya:38",
+   "giyosov_1_asoslar_travmatologiya:39"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.112",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Murda ekspertizasida shilinmalarni o‘limdan keyingi qurish alomati — pergament dog‘laridan farqlash lozim.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 39,
+    "quote": "Murda ekspertizalarida shilinmalami o'limdan so'ng qo'rish alomati b o ig an pergament dog'laridan farqlash lozim bo'ladi."
+   },
+   {
+    "text": "O‘limdan so‘ng murda terisining shikastlangan sohalari qurib, atrofdagi sog‘ teriga nisbatan qattiqroq va sarg‘imtir-qo‘ng‘ir tusga kiradi — bu pergament dog‘lari.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 63,
+    "quote": "O'limdan so'ng murda terisining shikastlangan sohalari qurish natijasida atrofdagi sog' teriga nisbatan qattiqroq bo'lib, sarg'im tir-qo'ng'ir tusga kiradi (pergament dog'lari)."
+   },
+   {
+    "text": "Bunday dog‘lar shikastlanmagan, lekin shox qavati yupqa yoki umuman yo‘q sohalarda (lablarning qizil hoshiyasi, moyak terisi, jinsiy olat boshchasi) ham vujudga kelishi mumkin.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 63,
+    "quote": "Ayni shunday dog'lar shikastlanmagan, lekin terining shox qavati yupqa bo'lgan yoki umuman bo'lmagan sohalarida (lablaming qizil hoshiyasi, moyak terisi, jinsiy olatning boshchasi) vujudga kelishi mumkin."
+   },
+   {
+    "text": "Pergament dog‘lari sariq, jigarrang bo‘lib, atrofdagi teri sathida yoki undan pastroq joylashadi; ularda qoplama hosil bo‘lmaydi va hayotiy jarohatlarga xos o‘zgarishlar aniqlanmaydi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 39,
+    "quote": "Pergament d o g iari sariq, jigar rangda b o iib , atrofdagi teri sathida yoki undan pastroq bo'ladi, ularda qoplama hosil boim aydi va hayotiy jarohatlarga xos o'zgarishlar aniqlanmaydi."
+   },
+   {
+    "text": "Hayotiy shilinmada esa qoplama hosil bo‘ladi: nekrozga uchragan teri to‘qimasi, limfa, chuqur shilinmalarda qon qurib qoplama asosini tashkil etadi (2–3 sutkagacha).",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 38,
+    "quote": "Qoplamaning hosil bo'lish bosqichi. Bu bosqich 2-3 sutkagacha davom etishi mumkin. Shilinma yuzasidagi nekrozga uchragan teri to'qimasi, limfa, chuqur shilinmalarda qon qurib, qoplamaning asosini tashkil etadi."
+   },
+   {
+    "text": "Epitelizatsiya bosqichida hayotiy shilinma qoplamasi qattiqlashib, qalinlashib, sog‘lom teri sathidan ko‘tariladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 38,
+    "quote": "Qoplama qattiqlashadi, qalinlashadi va sog'lom teri sathidan ko'tariladi."
+   },
+   {
+    "text": "Farqlashning oddiy usuli bor, uni shifokorlar ham murdani tashqi ko‘zdan kechirishda qo‘llashi mumkin.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 63,
+    "quote": "Buning oddiy usuli mavjud bo'lib, undan shifokorlar ham murdaning tashqi ko'zdan kechirishda foydalanishi mumkin."
+   },
+   {
+    "text": "Shubhali sohaga iliq fiziologik eritma yoki suv bilan ho‘llangan doka yoki paxta 5–10 daqiqaga qo‘yiladi: pergament dog‘lari biroz yumshaydi va oqaradi, hayotiy shilinmalar o‘zgarmaydi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 63,
+    "quote": "Shubhali sohaga iliq fiziologik eritma yoki suv bilan ho'llangan doka yoki paxta bo'lagi 5-10 daqiqaga qo'yiladi. Pergament dog'lari bunda biroz yumshaydi va oqaradi, hayotiy shilinmalar esa o'zgarmaydi."
+   },
+   {
+    "text": "Sud-tibbiy ekspertizada bu masalani hal etishda jarohatlar hayotiyligini aniqlashning boshqa usullari ham qo‘llaniladi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 63,
+    "quote": "Sud-tibbiy ekspertizada ushbu masalani hal etishda jarohatlaming hayotiyligini aniqlashning boshqa usullari ham qo'llaniladi."
+   }
+  ],
+  "pages_read": [
+   "giyosov_1_asoslar_travmatologiya:38",
+   "giyosov_1_asoslar_travmatologiya:39",
+   "giyosov_3_toksikologiya2_fizik_tanatologiya:63"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.113",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Qontalash — o‘tmas jism ta’sirida zarb, siqilish va cho‘zilish mexanizmlari orqali qon tomirlar yorilishi natijasida teri, teri osti yog‘ to‘qimasi va yumshoq to‘qimalarga qon quyilishi; shikastlangan sohada shish, mahalliy harorat ko‘tarilishi va og‘riq kuzatiladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 39,
+    "quote": "Qontalashlar. Ular o'tmas jismlar ta’sirida zarb, siqilish va cho'zilish mexanizmlari orqali qon tomirlaming yorilishi natijasida teri, teri osti yog' to'qimasi va yumshoq to'qimalarga qon quyilishlaridir. Shikastlanish sohasida shish, mahalliy haroratning ko'tarilishi va og'riq kuzatiladi."
+   },
+   {
+    "text": "Biron bo‘shliq yoki to‘qimalar oralig‘ida qon to‘planishi gematoma deyiladi; qontalashlar ko‘pincha ta’sir sohasida, ba’zan boshqa joyda (bilvosita qontalashlar) paydo bo‘ladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 39,
+    "quote": "Biron-bir bo'shliq yoki to'qimalar oralig'ida qonning to'planishi gematoma deb ataladi. Qontalashlar ko'pincha ta’sir sohasida paydo bo'ladi. Ba’zan ular ayni shu ta’sir natijasida boshqa joyda ham vujudga kelishi mumkin (bilvosita qontalashlar)."
+   },
+   {
+    "text": "Cheklanmagan yuzali jism ta’sirida qontalashlar odatda dumaloq, oval bo‘ladi; cheklangan yuzali jism ta’sirida ularning shakli va o‘lchamlari shikastlovchi yuzaga o‘xshaydi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 39,
+    "quote": "Cheklanmagan yuzali jismning ta’sirida qontalashlar odatda dumaloq, oval shakllarda bo'ladi (rasm 2.4.). Cheklangan yuzali jismning ta’sirida qontalashlarlaming shakli, oicham lari shikastlovchi yuzaning shakli, oicham lariga o'xshash boiadi."
+   },
+   {
+    "text": "Shikastlangan soha suyakka qancha yaqin bo‘lsa, shikastlovchi yuza va qontalash o‘rtasidagi o‘xshashlik shuncha kuchli bo‘ladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 39,
+    "quote": "Shikastlanish sohasi qanchalik suyaklarga yaqin joylashsa, shunchalik shikastlovchi yuza va qontalash o'rtasidagi o'xshashlik kuchliroq bo'ladi."
+   },
+   {
+    "text": "Qontalash rangi vaqt o‘tishi bilan gemoglobin o‘zgarishlari tufayli o‘zgaradi: dastlabki kunlarda oksigemoglobin qaytarilishi hisobiga qizg‘ish-ko‘kimtir yoki ko‘kimtir bo‘ladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 40,
+    "quote": "Biokimyoviy jarayonlar tufayli vaqt davomida qontalashlaming rangi o‘zgaradi va ushbu holat gemoglobinning o ‘zgarishlari bilan bog‘liq. Dastlabki kunlarda quyilgan qondagi oksigemoglobinning qaytarilishi hisobiga qontalashlar qizg'ish- ko‘kimtir yoki ko'kim tir rangda bo'ladi."
+   },
+   {
+    "text": "Keyinroq verdogemoxromogen va biliverdin yashil, bilirubin va gemosiderin sariq tus beradi; 3–4 sutkada yashil, 6–8 sutkada sariq tus paydo bo‘la boshlaydi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 40,
+    "quote": "Keyinchalik verdogemoxromogen va biliverdinning hosil bo'lishi qontalashlarga yashil, bilirubin va gemosiderin esa sariq tus beradi. 3-4 sutkalarda qontalashlarda yashil, 6-8 sutkalarda esa sariq tus paydo b o ia boshlaydi."
+   },
+   {
+    "text": "Rang o‘zgarishiga oid muddatlar taxminiy bo‘lib, shikastlovchi jism va shikastlangan soha xususiyatlariga bog‘liq.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 40,
+    "quote": "Qontalashlarda ranglaming o'zgarishiga oid keltirilgan muddatlar taxminiy bo'lib, ular shikastlovchi jism va shikastlanish sohasining xususiyatlariga bog'liqdir."
+   },
+   {
+    "text": "Ko‘z, lab shilliq qavati va bo‘yindagi qontalashlar turli ranglarga kirmaydi, dastlabki qizg‘ish-ko‘kimtir rangi asta oqarib yo‘qoladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 40,
+    "quote": "ayrim sohalarda (ko'z, labning shilliq qavati, bo'yinda ) joylashgan qontalash yoki qon quyilishlar turli ranglarda tuslanmaydi, ulaming dastlabki rangi odatda qizg'ish-ko'kimtir rang sekin asta oqarib yo'qoladi."
+   },
+   {
+    "text": "Bilvosita qontalashlar bir necha kundan so‘ng namoyon bo‘ladi, rang o‘zgarishi kechikadi, shakli va o‘lchami shikastlovchi yuzaga bog‘liq bo‘lmaydi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 40,
+    "quote": "Bilvosita qontalashlar bir necha kundan so'ng namoyon bo'ladi, ularda ranglaming o'zgarish dinamikasi ham kechikadi. Bu qontalashlaming shakli va oicham lari bilan shikastlovchi yuzaning xususiyatlari o'rtasida bog'liqlik bo'lmaydi."
+   },
+   {
+    "text": "Qontalashlarning sud-tibbiy ahamiyati shilinmalarnikiga o‘xshash; ular ko‘pincha shilinma, yara, suyak sinishlari bilan birga uchraydi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 40,
+    "quote": "Qontalashlaming sud-tibbiy ahamiyati shilinmalarga o'xshash bo'lib, aksariyat holatlarda ular boshqa jarohatlar - shilinma, yara, suyak sinishlari bilan birga uchraydi."
+   },
+   {
+    "text": "Shilinmalar uchun sanalgan ahamiyat: mexanik ta’sir bo‘lganini tasdiqlash, shikastlanish mexanizmi va muddatini aniqlash.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 39,
+    "quote": "Shilinmalaming sud-tibbiy ahamiyati quyidagilar bilan belgilanadi: - mexanik ta’sir boiganligini tasdiqlaydi; - shikastlanishning mexanizmi va muddatini aniqlash mumkin;"
+   },
+   {
+    "text": "O‘lim holatlarida qontalashlarni murda dog‘laridan farqlash zarurati tug‘iladi, ayniqsa ular murda dog‘lari joylashadigan sohalarda bo‘lsa.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 40,
+    "quote": "O 'lim holatlarida ko'pincha qontalashlami murda dogiaridan farqlash zaruriyati tug'iladi. Ayniqsa murda dogiari joylashadigan sohalarda qontalashlaming bo'lish ehtimoli ushbu masalani hal etishda m aiu m bir murakkablik yaratadi."
+   }
+  ],
+  "pages_read": [
+   "giyosov_1_asoslar_travmatologiya:39",
+   "giyosov_1_asoslar_travmatologiya:40",
+   "giyosov_1_asoslar_travmatologiya:41"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.114",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "O‘lim holatlarida ko‘pincha qontalashlarni murda dog‘laridan farqlash zarurati tug‘iladi; murda dog‘lari joylashadigan sohalarda qontalash bo‘lishi bu masalani murakkablashtiradi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 40,
+    "quote": "O 'lim holatlarida ko'pincha qontalashlami murda dogiaridan farqlash zaruriyati tug'iladi. Ayniqsa murda dogiari joylashadigan sohalarda qontalashlaming bo'lish ehtimoli ushbu masalani hal etishda m aiu m bir murakkablik yaratadi."
+   },
+   {
+    "text": "Murda dog‘lari — teri va teri osti yog‘ qatlamida to‘plangan qonning teri orqali ko‘rinishi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 65,
+    "quote": "Murda dog'lari teri va teri osti yog' qatlamida to'plangan qonning teri orqali ko'rinishidir."
+   },
+   {
+    "text": "Ayrim holatlarda oddiy fuqarolar murda dog‘larini qontalash deb yanglish baholaydi va asossiz murda ekspertizalari, jumladan eksgumatsiya qilingan murdani tekshirish holatlari uchraydi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 66,
+    "quote": "ayrim holatlarda oddiy fuqarolar tomonidan murda dog'lari qontalashlar sifatida yanglish baholanib, asossiz tarzda murda ekspertizalari, shu jumladan eksgumatsiya qilingan murdani tekshirish holatlari uchrab turadi."
+   },
+   {
+    "text": "Murda dog‘lari o‘limdan ma’lum vaqt o‘tgach tananing past joylashgan sohalarida paydo bo‘ladi, chegaralari noaniq, bir-biriga qo‘shilib ketadi; gipostaz va staz bosqichlarida barmoq bilan bosilganda yo‘qoladi yoki oqaradi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 66,
+    "quote": "Qayd etilganidek, murda dog'lari o'limdan m aium bir vaqt o'tgach, tananing past joylashgan sohalarida paydo bo'ladi. Ulaming shakli, chegarali noaniq, bir-biriga qo'shilib ketadi. Gipostaz va staz bosqichlarida murda dog'lari barmoq bilan bosilganda yo'qoladi yoki rangi oqaradi."
+   },
+   {
+    "text": "Qontalashlar tananing turli sohalarida bo‘lishi mumkin, odatda ma’lum shakl va aniq chegaraga ega, bir-biriga qo‘shilmaydi, barmoq bilan bosilganda rangi o‘zgarmaydi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 66,
+    "quote": "Qontalashlar tananing turli sohalarida b o iishi mumkin. Odatda qontalashlar m aiu m bir shaklga, aniq chegaralarga ega bo'lib, bir-biriga qo'shilib ketmaydi. Barmoq bilan bosilganda qontalashlaming rangi o'zgarmaydi."
+   },
+   {
+    "text": "O‘limdan ancha oldin yetkazilgan qontalashlar yashil, sarg‘imtir rangda bo‘ladi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 66,
+    "quote": "O'limdan ancha oldin etkazilgan qontalashlar yashil, sarg'imtir rangda boiadi."
+   },
+   {
+    "text": "Gipostaz bosqichida murda holati o‘zgartirilsa, murda dog‘lari yo‘qolib, tananing past joylashgan yangi sohalarida paydo bo‘ladi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 65,
+    "quote": "Murdaning holati o'zgartirilganda murda dog'lari yo'qolib, tananing past joylashgan yangi sohalarida paydo bo'ladi."
+   },
+   {
+    "text": "Imbibitsiya bosqichida murda dog‘lari bosilganda rangini o‘zgartirmaydi va holat o‘zgartirilganda yangi joylarda paydo bo‘lmaydi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 66,
+    "quote": "Imbibitsiya bosqichida chirish hisobiga eritrotsitlaming gemolizi sodir bo‘lib, gemoglobin qon tomir devori va uning atrofidagi to'qimalarga singadi. Shuning uchun bu bosqichda murda dog'lari bosilganda o‘z rangini o ‘zgartirmaydi va murdaning holati o‘zgartirilganda yangi joylarda paydo boim aydi."
+   },
+   {
+    "text": "Murdani sud-tibbiy tekshirishda ularni farqlash uchun shubhali sohada xochsimon kesma qilinadi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 66,
+    "quote": "Murdaning sud-tibbiy tekshiruvida murda dog'lari va qontalashlami farqlash uchun shubhali sohada xochsimon kesma qilinadi."
+   },
+   {
+    "text": "Kesmada murda dog‘ida qon tomchilari yoki (imbibitsiya bosqichida) qon singgan teri osti yog‘ to‘qimasi, qontalashda esa to‘qimalarga quyilgan va ivigan qon topiladi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 67,
+    "quote": "boiganda qon tomchilari yoki imbibitsiya bosqichida qon singgan teri osti yog‘ to ‘qimasi aniqlanadi. Qontalashlarda esa to'qimalarga quyilgan hamda ivigan qon topiladi."
+   }
+  ],
+  "pages_read": [
+   "giyosov_1_asoslar_travmatologiya:40",
+   "giyosov_3_toksikologiya2_fizik_tanatologiya:65",
+   "giyosov_3_toksikologiya2_fizik_tanatologiya:66",
+   "giyosov_3_toksikologiya2_fizik_tanatologiya:67"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.115",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Terining barcha qavatlari va chuqur joylashgan yumshoq to‘qimalarning ajralishi yara deyiladi; yuzaki yarada shikastlanish faqat teri qatlamlari bilan cheklanadi, chuqur yarada teri ostidagi yumshoq to‘qimalar ham qamraladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 41,
+    "quote": "Terming barcha qavatlari va chuqur joylashgan yumshoq to'qimalaming ajralishi ko'rinishidagi jarohatlar yara deb ataladi. Yuzaki yaralarda shikastlanish faqat teri qatlamlari bilan cheklansa, chuqur yaralarda jarohat teri ostidagi yumshoq to'qimalami ham qamraydi."
+   },
+   {
+    "text": "O‘tmas jism yaralarida asosan zarb, siqilish va cho‘zilish ishtirok etadi: zarb va siqilishda lat, kuchli zarb va siqilishda majaqlangan, zarb va cho‘zilishda yirtma, o‘tkir burchak ostida zarb va cho‘zilishda laxtaksimon yaralar hosil bo‘ladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 41,
+    "quote": "Zarb va siqilish natijasida lat yaralar, kuchli zarb va siqilishda - majaqlangan yaralar, zarb va cho'zilishda - yirtma yaralar, o'tkir burchak ostida zarb va cho'zilishda - laxtaksimon yaralar hosil bo'ladi."
+   },
+   {
+    "text": "Bunday yaralarning chetlari odatda notekis, shilinish va qon quyilishli, ba’zan majaqlangan; uchlari odatda o‘tmas bo‘ladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 41,
+    "quote": "O'tmas jismlardan yetkazilgan yaralaming chetlari odatda notekis, shilinish va qon quyilishlar bilan, ba’zan majaqlangan bo'ladi. Yaralaming uchlari odatda o'tmas, ba’zan boshqa shaklda bo'lishi mumkin."
+   },
+   {
+    "text": "Chekka devorlari notekis, devorlar orasida mushak, biriktiruvchi to‘qima yoki sochlardan iborat «ko‘prikchalar», ba’zan ko‘chgan yoki bo‘rtgan soch piyozchalari bo‘ladi; yara tubi ham notekis.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 41,
+    "quote": "Chekka devorlar notekis, devorlar orasida mushak, biriktiruvchi to'qimalar yoki sochlardan iborat “ko'prikchalar”, b a’zan ko'chgan yoki bo'rtib turgan soch piyozchalari aniqlanadi. Yaraning tubi ham notekis sathli bo'ladi."
+   },
+   {
+    "text": "Odatda bunday yaralarda tashqi qon ketishi kuchli bo‘lmaydi; tibbiy yordam ko‘rsatilmasa, ikkilamchi tortilish orqali bitib, qo‘pol chandiq qoldiradi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 41,
+    "quote": "Odatda bu turdagi yaralarda tashqi qon ketishi kuchli boim aydi va tegishli tibbiy yordam ko'rsatilmasa, ikkilamchi tortilish orqali bitadi, ya’ni qo'pol chandiq qoldiradi."
+   },
+   {
+    "text": "Yara chekka devorlarida ikki zona farqlanadi: markaziy zonada to‘qimalar majaqlanishi va nekrozi, periferik zonada qon aylanishi buzilishi bilan bog‘liq o‘zgarishlar.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 41,
+    "quote": "Yaralaming chekka devorlarida ikki zona farqlanib, markaziy zonada to'qimalaming majaqlanishi, nekrozi, periferik zonada esa qon aylanishining buzilishi bilan bog'liq o'zgarishlar aniqlanadi."
+   },
+   {
+    "text": "Yaralar chiziqsimon, yoriqsimon, o‘roqsimon, burchaksimon, yulduzsimon va boshqa shaklda bo‘ladi; shakli asosan shikastlovchi yuza xususiyatlariga bog‘liq va jismni identifikatsiya qilishda foydalaniladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 41,
+    "quote": "O'tmas jismdan yetkazilgan yaralar chiziqsimon, yoriqsimon, o'roqsimon, burchaksimon, yulduzsimon va boshqa shakllarda bo'lishi mumkin. Yaralaming shakli asosan shikastlovchi yuzaning xususiyatlariga bog'liq bo'lib, ayni shu holatdan jarohat yetkazgan jismning identifikatsiyasida foydalaniladi."
+   },
+   {
+    "text": "Cheklanmagan yassi yuza ta’sirida shoxsimon, zigzagsimon, yulduzsimon, chetlari ancha shilingan, majaqlangan yaralar vujudga keladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 41,
+    "quote": "Cheklanmagan yassi yuzaning ta’sirida shoxsimon, zigzagsimon, yulduzsimon, chetlari ancha shilingan, majaqlangan yaralar vujudga keladi."
+   },
+   {
+    "text": "Cheklangan yassi yuzalarning perpendikulyar ta’sirida ko‘pincha uch, to‘rt va ko‘p nurli yulduzsimon yaralar hosil bo‘ladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 41,
+    "quote": "Cheklangan yassi yuzalar ta’sirida yaraning shakli yuzaning shakli va ta’sir burchagiga bog'liq. Perpendikulyar ta’sirda ko'pincha uch, to'rt va ko'p nurli yulduzsimon yaralar hosil bo'ladi."
+   },
+   {
+    "text": "Sferik yuzali jismlardan nurlari bir xil uzunlikdagi, markazi majaqlanib botgan yulduzsimon yaralar, chekkasida halqasimon shilinish bo‘lishi mumkin.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 42,
+    "quote": "Sferik yuzali jismlar ta’sirida nurlari bir xil uzunlikdagi, markaziy qismi majaqlanib botib turgan yuzduzsimon yaralar vujudga keladi. Yaraning chekkasida halqasimon shilinish bo‘lishi mumkin."
+   },
+   {
+    "text": "Ikki chekkali qirrali jismlardan chiziqsimon, yoriqsimon, chetlari tekis, biroz shilingan, chopma yaralarga o‘xshash yaralar vujudga keladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 42,
+    "quote": "Ikki chekkali qirrali jismlardan chiziqsimon, yoriqsimon, chetlari tekis, biroz shilingan yaralar vujudga kelib, ular chopma yaralarga o ‘xshash bo'ladi."
+   },
+   {
+    "text": "O‘tmas jism ta’siridagi teri yorilishlari yaralardan farqli ravishda uchlari ko‘pincha o‘tkir, chetlari tekis, shilinishsiz, chekka devorlari tikka, tubi yassi bo‘ladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 42,
+    "quote": "Yaralardan farqli ravishda yorilishlaming uchlari ko‘pincha o‘tkir, chetlari tekis, shilinish alomatlarisiz, chekka devorlari tikka, tubi yassi, bir sathda boiadi."
+   }
+  ],
+  "pages_read": [
+   "giyosov_1_asoslar_travmatologiya:41",
+   "giyosov_1_asoslar_travmatologiya:42"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.116",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Yiqilishdan jarohatlar mexanik jarohatlardan o‘lim holatlarida transport travmasidan keyin ikkinchi o‘rinda turadi; ularning mexanizmida harakatdagi tananing harakatsiz shikastlovchi yuzaga zarblanishi yotadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 45,
+    "quote": "Yiqilish natijasida etkazilgan jarohatlar mexanik jarohatlardan yuz bergan o iim holatlari tarkibida transport travmasidan keyingi ikkinchi o'rinni egallaydi. Ushbu jarohatlar vujudga kelish mexanizmida harakatdagi tananing harakatsiz shikastlovchi yuzaga zarblanishi yotadi"
+   },
+   {
+    "text": "Balandlikdan yiqilishning bevosita, bosqichli va erkin bo‘lmagan turlari bor; bevosita yiqilishda tana to‘siqsiz yuzaga tushadi va jarohatlar shu yuzadan yetkaziladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 46,
+    "quote": "Balandlikdan yiqilishning bevosita, bosqichli va erkin boim agan turlari mavjud. Balandlikdan bevosita yiqilishda tana biron-bir to ‘siqlarsiz yuzaga tushadi va jarohatlar ushbu yuza ta’sirida etkaziladi."
+   },
+   {
+    "text": "Bosqichli yiqilishda tananing harakat yo‘lida to‘siqlar (daraxt, binoning chiqib turgan qismi) bo‘lib, jarohatlar yiqilish yuzasi va to‘siqlardan yetkaziladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 46,
+    "quote": "Balandlikdan bosqichli yiqilishda tananing harakat traektoriyasida turli to'siqlar (daraxt, binoning chiqib turgan qismi va hk.) b o iib , jarohatlar yiqilish yuzasi va to‘siqlardan etkaziladi."
+   },
+   {
+    "text": "Ko‘pincha yiqilish tasodifan (passiv) yuz beradi; boshqa shaxs ta’sirida (itarish, zarb) yoki o‘zi sakraganda tana dastlabki tezlanishga ega bo‘ladi (aktiv yiqilish).",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 46,
+    "quote": "Aksariyat holatlarda yiqilish tasodifan yuz beradi (passiv yiqilish). Boshqa shaxs tomonidan ta’sir (itarib yuborish, zarb) boiganda yoki jabrlanganning o ‘zi sakraganda tana yiqilishdan oldin dastlabki tezlanishga ega b o ia d i (aktiv yiqilish)."
+   },
+   {
+    "text": "Yu.I. Pigolkin bo‘yicha balandlikdan yiqilishda olti bosqich farqlanadi: I — muvozanat yo‘qolib, tana tayanch nuqtasiga nisbatan buriladi; II — og‘irlik markazi atrofida aylanadi; III — tayanch yuzadan ajraladi; IV — parvoz.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 46,
+    "quote": "Balandlikdan yiqilishda quyidagi olti bosqich farqlanadi (Yu.I.Pigolkin, 2012): I-bosqichda tana muvozanatni yo'qotib, tayanch nuqtasiga nisbatan buriladi. II-bosqichda tana og'irlik markazi atrofida aylanadi. III-bosqichda tana tayanch yuzadan ajraladi. IV-bosqichda tana parvozda boiadi."
+   },
+   {
+    "text": "I–IV bosqichlarda odatda xos jarohatlar bo‘lmaydi; faqat II bosqichda poyabzal tagida ishqalanish izlari bo‘lishi mumkin.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 46,
+    "quote": "Yuqorida keltirilgan bosqichlarda odatda tanada xos jarohatlar vujudga kelmaydi. Faqat ikkinchi bosqichda jabrlanganning poyafzalining pastki yuzasida ishqalanish izlari boiishi mumkin."
+   },
+   {
+    "text": "V bosqichda tana yiqilish yuzasiga zarblanadi va asosiy jarohatlarning aksariyati shunda vujudga keladi; ularning turi, joylashuvi va ko‘lami balandlik, yuza xususiyatlari va tananing qaysi qismi bilan tushishiga bog‘liq.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 46,
+    "quote": "V bosqichda tana yiqilish yuzasi bilan zarblanadi. Asosiy jarohatlaming aksariyati ayni shu bosqichda vujudga keladi. Shikastlanishlaming turi, joylashishi, k o iam i yiqilish balandligining kattaligi, yiqilish yuzasining xususiyatlari hamda tananing qaysi qismi bilan yuzaga tushishiga b o g iiq"
+   },
+   {
+    "text": "VI bosqichda tana inersiya bo‘yicha oldinga, orqaga yoki yonga harakatlanib, yuzaga yana zarblanadi va asosan bevosita tusdagi ikkilamchi jarohatlar vujudga keladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 46,
+    "quote": "VI bosqichda tana birlamchi ta’sir sohasiga nisbatan inersiya bo'yicha oldinga, orqaga yoki yonga harakatlanib, yiqilish yuzasi bilan yana bir bor zarblanadi va bunda asosan bevosita tusga ega ikkilamchi jarohatlar vujudga keladi."
+   },
+   {
+    "text": "Ekspertiza ma’lumotlariga ko‘ra ko‘pincha birinchi zarblanish tana va bosh sohalariga to‘g‘ri keladi; oyoq panjasi, tizza va dumba bilan tushish kamroq uchraydi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 47,
+    "quote": "Sud - tibbiy ekspertiza m a’lumotlari bo‘yicha balandlikdan yiqilishda ko‘pincha birinchi zarblanish tana va bosh sohalariga to‘g ‘ri keladi. Oyoq panjasi, tizza va dumba bilan tushish nisbatan kamroq uchraydi."
+   },
+   {
+    "text": "Bosh bilan tushganda birlamchi bevosita jarohatlar kalla suyaklarining ko‘p siniqli sinishi, bosh miya va pardalarining shikastlanishi, bosh va yuz yumshoq to‘qimalarida shilinma, qon quyilish va yaralar ko‘rinishida bo‘ladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 47,
+    "quote": "Bosh bilan tushganda birlamchi bevosita jarohatlar kalla suyaklarining ko‘p siniqli sinishi, bosh miya va uning pardalarining shikastlanishi, bosh va yuzning yumshoq to'qimalarida shilinma, qon quyilish va yaralar ko'rinishida b oiishi mumkin."
+   },
+   {
+    "text": "Oyoq panjasi bilan tushganda tananing umumiy chayqalishi bilan bog‘liq ichki a’zolar shikastlanishi bosh bilan yiqilgandagiga nisbatan jiddiyroq bo‘ladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 48,
+    "quote": "Oyoq panjasi bilan tushganda tananing umumiy chayqalishi bilan b o g iiq ichki a’zolaming shikastlanishi bosh bilan yiqilganga nisbatan jiddiyroq bo'ladi."
+   },
+   {
+    "text": "Balandlikdan yiqilish jarohatlarining o‘ziga xos xususiyatlari: tashqi jarohatlar asosan tananing bir tomonida; ichki shikastlanishlar tashqilarga nisbatan ko‘lamli va jiddiyroq; tananing umumiy chayqalishidan shikastlanishlar vujudga keladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 48,
+    "quote": "- tashqi jarohatlar asosan tananing bir tomonida joylashadi; - ichki shikastlanishlar tashqi jarohatlarga nisbatan k oiam li va jiddiyroq boiadi; - tananing umumiy chayqalishi natijasida shikastlanishlar vujudga keladi."
+   }
+  ],
+  "pages_read": [
+   "giyosov_1_asoslar_travmatologiya:45",
+   "giyosov_1_asoslar_travmatologiya:46",
+   "giyosov_1_asoslar_travmatologiya:47",
+   "giyosov_1_asoslar_travmatologiya:48"
+  ]
+ }
+]

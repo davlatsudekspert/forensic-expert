@@ -1,0 +1,801 @@
+[
+ {
+  "id": "sud_kimyo.c23.002",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_kimyo.c23.003",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_kimyo.c23.004",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "WRONG",
+    "fix": "Rang hosil qiluvchi reaktivlar: sulfat va nitrat kislota aralashmasi — Erdman, formaldegid va sulfat kislota — Marki, ammoniy molibdati va sulfat kislota — Frede reaktivi; shuningdek kaliy bixromat va sulfat kislota aralashmasi qo‘llaniladi."
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "p8: kitobdagi xato takrorlangan — Mandelin reaktivi ammoniy vanadati + sulfat kislota (ammoniy volframati emas); fix Mandelin qismini olib tashlaydi"
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.005",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OVERSTATED",
+    "fix": "Istisno: sirka kislota bilan zaharlanganda u kuchsiz (oksalat/tartrat) kislotali muhitda suv bug‘i bilan deyarli haydalmaydi; shunday hollarda ob’ekt sulfat yoki fosfat kabi kuchli mineral kislota bilan nordonlashtirilishi mumkin."
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "p9: kitobdagi izoh kimyoviy noto‘g‘ri — pH 2–2,5 da sirka kislota (pKa≈4,76) deyarli dissotsialanmagan holda bo‘ladi; «ionlarga oson dissotsialanadi» sababi olib tashlandi, faktning o‘zi (kuchli mineral kislota bilan nordonlashtirish) sahifada bor"
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.006",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "p2: foizlar azeotropdagi SUV ulushi (masalan, etanol–suv azeotropida ~4,4% suv, propanol 28,3% suv, fenol ~91% suv); matn kitob iborasini aynan takrorlaydi, lekin o‘quvchi uchun «suv ulushi» deb aniqlashtirish tavsiya etiladi"
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.007",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_kimyo.c23.008",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_kimyo.c23.009",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_kimyo.c23.010",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "p9: kitobda «xlorat kislotasi» deyilgan, matn «perxlorat» deb yozgan — sahifadagi HClO4 sarlavhasiga mos, asosli tuzatish; «Kaan usuli» nomi sahifa kontekstida bor"
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.011",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "sud_kimyo.c23.012",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "p3: «Stas–Otto» nomi iqtibosda yo‘q, lekin oldingi sahifa (94) kontekstida usul Stas–Otto deb atalgan — mos"
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.013",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": []
+ }
+]

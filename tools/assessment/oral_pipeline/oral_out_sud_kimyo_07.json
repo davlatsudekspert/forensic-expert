@@ -1,0 +1,1105 @@
+[
+ {
+  "id": "sud_kimyo.c23.080",
+  "coverage": "partial",
+  "gaps": [
+   "etaminal natriyning strukturaviy formulasi (matnda faqat pentobarbital uchun molekulyar formula va kimyoviy nom bor)",
+   "etaminal natriyga xos (xususiy) rangli va mikrokristalloskopik reaksiyalar",
+   "biologik suyuqliklardan ajratishning batafsil tartibi (pH, erituvchi, hajmlar)",
+   "miqdoriy tahlilning hisoblash tartibi",
+   "kitobda etaminal-natriy II ro‘yxatda, pentobarbital esa III ro‘yxatda ko‘rsatilgan — ziddiyat, nazorat ro‘yxati haqida da’vo olinmadi"
+  ],
+  "points": [
+   {
+    "text": "Etaminal hozirgi vaqtda tibbiyotda qo‘llanilayotgan barbituratlar qatoriga kiradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 106,
+    "quote": "Hozirgi vaqtda tibbiyotda quyidagi barbituratlar qo‘llanilmoqda: barbital, fenobarbital, geksenal, barbamil, etaminal, benzonal, butobarbital."
+   },
+   {
+    "text": "Uyqu chaqiruvchi ta’siriga ko‘ra etaminal (barbamil bilan birga) o‘rtacha ta’sir etuvchi barbituratlar guruhiga kiradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 106,
+    "quote": "Barbituratlarning uyqu chaqiruvchi ta’siriga ko‘ra guruhlanishi O‘rtacha ta’sir Qisqa ta’sir Uzoq ta’sir etuvchilar etuvchilar etuvchilar Barbital barbamil geksenal Fenobarbital etaminal butobarbital"
+   },
+   {
+    "text": "Kitob ilovasidagi ro‘yxatda etaminal-natriy pentobarbital nomi bilan birga keltirilgan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 169,
+    "quote": "51. Etaminal-natriya (Pentobarbital)*"
+   },
+   {
+    "text": "Pentobarbital (sinonimlaridan biri — Aethaminalum): kimyoviy formulasi C11H18N2O3, kimyoviy nomi 5-Ethyl–5-(1–methylbutyl)-2,4,6(1H,3H,5H)-pyrimidinetrion, molekulyar massasi 226.3.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 104,
+    "quote": "8. Pentobarbital Kimyoviy- Kimyoviy nomi: 5-Ethyl–5-(1– formulasi: methylbutyl)-2,4,6(1H,3H,5H)- C11H18N2O3 pyrimidinetrion CAS kodi: 76–74–4 Sinonimlari: Aethaminalum; M. m.: 226.3 Mebubarbital;"
+   },
+   {
+    "text": "Pentobarbital oq kristall kukun, kislotali tabiatli, suyuqlanish harorati 129-130° S; suvda juda kam, etanol (1:4.5), xloroform (1:4), dietil efiri (1:10), aseton, metanol va ishqor eritmalarida eriydi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 104,
+    "quote": "pKa: 8.0 (20°). Tasnifi: oq kristall kukun Tabiati: kislotali Eruvchanligi: suvda juda kam, etanol Tcuyuq : 129-130° S (1:4.5), xlorofom (1:4), dietil efiri (1:10), O‘z.R: III ro‘yxat aseton, metanol va ishqor eritmalarida eriydi."
+   },
+   {
+    "text": "Etaminal nordonlashtirilgan suv va spirt usulida ajratib olinadigan zaharlar guruhiga (7 barbiturat qatoriga) kiradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 19,
+    "quote": "Nordonlashtirilgan suv va spirt usulida ajratib olinadigan zaharlar: (7 barbiturat, 14 alkaloid, 7 sintеtik moddalar) barbital, fеnobarbital, barbamil, etaminal,"
+   },
+   {
+    "text": "Barbituratlar biologik ob’ektdan nordonlashtirilgan spirt yoki suv usulida, biologik suyuqliklardan esa organik erituvchilar bilan ekstraksiyalab ajratib olinadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 108,
+    "quote": "Barbituratlarni biologik ob’ektdan nordonlashtirilgan spirt yoki suv usulida ajratib olinadi. Ayrim barbituratlar biologik ob’ektdan xususiy usullarda ajratib olinadi. Biologik suyuqliklardan barbituratlar organik erituvchilar bilan ekstraksiyalab ajratib olinadi."
+   },
+   {
+    "text": "Barbituratlar va boshqa kislotali xossali organik birikmalar kislotali sharoitda organik erituvchilar bilan yaxshi ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 91,
+    "quote": "Barbituratlar va boshqa kislotali xossaga ega bo’lgan organik birikmalar kislotali sharoitda organik erituvchilar bilan yaxshi ekstraktsiyalanadi."
+   },
+   {
+    "text": "Sifat tahlili (umumiy reaksiya): barcha barbituratlar kobalt tuzlarining ammiakli eritmasi bilan metil spirti ishtirokida xarakterli qizil rang hosil qiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 110,
+    "quote": "2. Kobalt ammiakati bilan reaksiyasi. Barcha barbituratlar kobalt tuzlarining ammiakli eritmasi bilan metil spirti ishtirokida xarakterli qizil rang hosil qiladi."
+   },
+   {
+    "text": "YuQX: xloroform–n-butanol–25% ammiak (70:40:5) sistemasi; aniqlovchi reaktiv — difenilkarbazidning xloroformli eritmasi va simob sulfatning suvli eritmasi; barbituratlar siyoh rangli dog‘lar hosil qiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 93,
+    "quote": "barbituratlarni tozalash va aniqlashda xloroform - n-butanol - 25% NH4OH (70:40:5) sistеmasidan foydalaniladi. Aniqlovchi rеaktiv 0,02% difinilkarbazidning xloroformli eritmasi va simob sulfatning suvli eritmasi purkaladi. Barbituratlar siyox rangda turli Rf oralig’ida dog’lar hosil qiladi."
+   },
+   {
+    "text": "Miqdor va chinlik uchun UB-spektrofotometriya: barbituratlar pH=10 da 238-240 nm, pH=13 da 258-260 nm sohada spektral maksimumga ega.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 114,
+    "quote": "Barbituratlar keto (kislotali) ko‘rinishda optik faol emas. Ular rN=10 muhitida (0,05 M borat buferi) monoimid ko‘rinishida 238 - 240 nm sohada spektral maksimum va rN=13 muhitida (1,0 M ishqor eritmasi) diimid shaklida 258-260 nm sohada spektral maksimum"
+   },
+   {
+    "text": "Pentobarbitalning UB-spektri: pH 9.2 da 239 nm, pH 13 da 255 nm.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 115,
+    "quote": "8. Pentobarbital (pH 9.2) — 239 1685, 1719, 1744, 141, 156, 43, 41, (A 1=438a); (pH 13) — 1 1315, 1218, 845 157, 55, 39, 98; 3’- 255 nm (A11=327b)."
+   }
+  ],
+  "pages_read": [
+   104,
+   106,
+   108,
+   109,
+   110,
+   113,
+   114,
+   115,
+   169,
+   19,
+   91,
+   93,
+   94
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.081",
+  "coverage": "partial",
+  "gaps": [
+   "konvensiyalarning tuzilishi va asosiy moddalari (ro‘yxat/jadvallar tizimi, majburiyatlar)",
+   "BMTning nazorat organlari va ularning vazifalari",
+   "BMT Bosh Assambleyasining boshqa qarorlari va siyosiy deklaratsiyalari"
+  ],
+  "points": [
+   {
+    "text": "O‘zbekiston 1995 yilda BMT konvensiyalariga qo‘shilgan: Giyohvandlik vositalari haqidagi xalqaro konvensiya (1961) va Psixotrop moddalar haqidagi xalqaro konvensiya (1971).",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 11,
+    "quote": "Mamlakatimiz 1995 yilda BMTning quyidagi konvensiyalariga qo‘shildi:  Giyohvandlik vositalari haqidagi xalqaro konvensiya - 1961 yil;  Psixotrop moddalar haqidagi xalqaro konvensiya - 1971 yil;"
+   },
+   {
+    "text": "Uchinchi hujjat — giyohvandlik vositalari va psixotrop moddalarni noqonuniy ayirboshlashga qarshi kurash haqidagi BMT konvensiyasi (1988).",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 11,
+    "quote": "Giyohvandlik vositalari va psixotrop moddalarni noqonuniy ayirboshlashga qarshi kurash haqidagi BMT konvensiyalari - 1988 yil."
+   },
+   {
+    "text": "1999 yil 19 avgustda qabul qilingan «Giyohvandlik vositalari va psixotrop moddalar to‘g‘risida»gi №813-I qonun BMTning shu uchta konvensiyasiga mutanosib ravishda ishlab chiqilgan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 13,
+    "quote": "O‘zbekiston Respublikasida 1999 yilning 19 avgustida \"Giyohvandlik vositalari va psixotrop moddalar to‘g‘risida\"gi №813-I qonuni qabul qilindi. Bu qonun BMTning quyidagi uchta konvensiyalariga mutanosib ravishda ishlab chiqilgan:"
+   },
+   {
+    "text": "1961 yilda qabul qilingan «Giyohvandlik vositalarini nazorat qilish» haqidagi xalqaro konvensiyaga binoan kokain ta’qiqlangan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 54,
+    "quote": "Jumladan, 1961 yilda “Giyohvandlik vositalarini nazorat qilish” haqidagi Xalqaro konvensiya qabul qilingan. Unga binoan kokain ta’qiqlangan."
+   },
+   {
+    "text": "BMT konvensiyasiga asosan nasha giyohvand vosita deb qabul qilingan, nasha saqlagan har qanday tarkib giyohvandlik vositasi hisoblanadi va muomalasi taqiqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 61,
+    "quote": "BMT konvensiyasiga asosan nasha giyohvand vosita deb qabul qilingan hamda nasha saqlagan har qanday tarkib giyohvandlik vositasi hisoblanadi va muomalasi taqiqlanadi."
+   },
+   {
+    "text": "BMTning 1971 yildagi «Psixotrop moddalar to‘g‘risidagi» konvensiyasiga binoan 12 ta barbiturat xalqaro nazoratga olingan, jumladan II ro‘yxatga sekobarbital, III ro‘yxatga amobarbital, butalbital, siklobarbital va pentobarbital kiritilgan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 101,
+    "quote": "BMT 1971 yildagi “Psixotrop moddalar to‘g‘risidagi” Konvensiyasiga binoan quyidagi 12 barbituratlar xalqaro miqyosda nazoratga olingan: II-ro‘yxatga: sekobarbital (1) III-ro‘yxatga: amobarbital, butalbital, siklobarbital va pentobarbital (4)"
+   },
+   {
+    "text": "BMTning 1988 yildagi konvensiyasi qarorlariga asosan 26 ta modda prekursor sifatida xalqaro nazoratga olingan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 146,
+    "quote": "BMT 1988 yildagi yagona konvensiyasining qarorlariga asosan “Noqonuniy ravishda giyohvand va gangituvchi moddalarni qo‘llash” bo‘yicha 26 ta modda prekursorlar sifatida xalqaro nazoratga olingan."
+   },
+   {
+    "text": "O‘zbekiston dunyoning 30 dan ortiq davlati bilan giyohvand moddalarni tarqatishga qarshi kurash bo‘yicha hamkorlik bitimlarini imzolagan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 11,
+    "quote": "Ayni paytda dunyoning 30 dan ortiq davlati bilan giyohvand moddalarni tarqatishga qarshi kurash masalalarida hamkorlik bo‘yicha idoralar va hukumatlararo bitimlar imzolangan."
+   },
+   {
+    "text": "I.Karimov BMT Bosh Assambleyasining 48-sessiyasidagi ma’ruzasida (1993 yil 28 sentabr) giyohvandlik vositalari va psixotrop moddalarni noqonuniy ishlatish masalasiga e’tibor qaratgan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 8,
+    "quote": "O‘zbekiston Respublikasining Birinchi Prezidenti Islom Karimov BMT Bosh Assambleyasining 48-sessiyasidagi ma’ruzasida (1993 yil 28 sentabr) giyohvandlik vositalari va psixotrop moddalarni noqonuniy ishlatish masalasiga barchaning e’tiborini qaratib,"
+   },
+   {
+    "text": "BMT ma’lumotlariga ko‘ra, dunyoda 18 mln kishi geroin, 200 mln nafardan ziyod kishi turli giyohvand moddalarni iste’mol qiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 9,
+    "quote": "BMT ma’lumotlariga qaraganda, dunyoda hozir 18 mln kishi geroin, 200 mln nafardan ziyod kishi esa turli xil giyohvand moddalarni iste’mol qiladi."
+   }
+  ],
+  "pages_read": [
+   8,
+   9,
+   11,
+   12,
+   13,
+   54,
+   61,
+   101,
+   146
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.082",
+  "coverage": "partial",
+  "gaps": [
+   "kokainning strukturaviy formulasi (matnda faqat rasm)",
+   "kokainizmning klinik bosqichlari va tasnifi",
+   "biologik ob’ektlardan (ichki a’zolardan) ajratish tartibi; biologik suyuqliklardan ajratishning batafsil bosqichlari"
+  ],
+  "points": [
+   {
+    "text": "Kokain koka o‘simligi bargidan 1859 yilda Albert Nieman tomonidan ajratib olingan, 1902 yilda sintez qilib olingan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 54,
+    "quote": "Kokain koka o‘simligi bargidan 1859 yilda Gottingem universitetida Albert Nieman (Albert Niemann) tomonidan ajratib olingan, 1902 yilda sintez qilib olingan."
+   },
+   {
+    "text": "Koka butasi barglarida 0,5-1,5% alkaloidlar bo‘lib, ulardan asosiysi kokain hisoblanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 54,
+    "quote": "Koka butasining barglarida turli alkaloidlar mavjud bo‘lib (0,5 - 1,5%), ulardan asosiysi kokain hisoblanadi."
+   },
+   {
+    "text": "Kokain inson miyasining dofaminergik tizimiga ta’sir ko‘rsatadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 55,
+    "quote": "Kokain inson miyasining dofaminergik tizimiga ta’sir ko‘rsatadi."
+   },
+   {
+    "text": "Kokainning organizmga ta’siri (kokainizm ko‘rinishlari): emotsional hayajonlanish, uzoq vaqt tetik bo‘lish, uyquga moyillikning pasayishi, ishtahaning yo‘qolishi, vaznning kamayishi va boshqalar.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 55,
+    "quote": "- emotsional hayajonlanish, ma’lum miqdorda undan quvvat, energiya olish, aqliy faoliyatning «shiddatlashuvi», uzoq vaqt tetik bo‘lish, uyquga moyillikning pasayishi, ishtahani yo‘qolishi, jismoniy holatning faollashuvi, jinsiy aloqaga moyillikning oshishi, vaznning kamayishi,"
+   },
+   {
+    "text": "Kokainning klinik dozasi 1,5 mg/kg, o‘limga olib keluvchi dozasi (ilgari qabul qilmagan inson uchun) 200 mg.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 56,
+    "quote": "Kokainning klinik dozasi 1,5 mg/kg, o‘limga olib keluvchi dozasi (ilgari qabul qilmagan inson uchun) 200 mg,"
+   },
+   {
+    "text": "Kokain biologik suyuqliklardan (qon, peshob) ishqoriy muhitda (pH=7,0-8,5) xloroform bilan yaxshi ekstraksiyalanadi, qisman kislotali muhitda ham ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 58,
+    "quote": "Kokain biologik suyuqliklardan (qon, peshob va b.) ishqoriy muhitda (rN=7,0- 8,5) xloroform bilan yaxshi ekstraksiyalanadi. U qisman kislotali muhitda ham ekstraksiyalanadi."
+   },
+   {
+    "text": "Alkaloidlarning umumiy cho‘ktiruvchi reaktivlari (Maer, Bushard, Dragendorf, pikrin kislotasi) bilan kokain asosan amorf cho‘kmalar hosil qiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 58,
+    "quote": "1. Alkaloidlarni umumiy cho‘ktiruvchi reaktivlar (Maer, Bushard, Dragendorf, pikrin kislotasi) bilan kokain asosan amorf cho‘kmalar hosil qiladi."
+   },
+   {
+    "text": "Kokain kaliy permanganat va xlorid kislota ishtirokida to‘g‘ri to‘rtburchak shaklidagi qizil binafsha rangli kristallar hosil qiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 58,
+    "quote": "2. Kokain kaliy permanganat va xlorid kislota ishtirokida to‘g‘ri to‘rt burchak shaklidagi qizil binafsha rangli kristallar hosil qiladi."
+   },
+   {
+    "text": "Skott reaksiyasi: kobalt tiotsionatning 2% eritmasi va glitserin aralashmasi bilan ko‘k rang hosil bo‘ladi, ustiga konsentrlangan xlorid kislota qo‘shilsa rang o‘chadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 58,
+    "quote": "3. Skott reaksiyasi. Kokain saqlagan namunaga 5 tomchi kobalt tiotsionatning 2% eritmasi va 96% glitserin (1:1) aralashmasi qo‘shiladi. Kokain bo‘lsa, ko‘k rang xosil bo‘ladi. Aralashma ustiga 1-2 tomchi konsentrlangan xlorid kislota qo‘shilsa rang o‘chadi."
+   },
+   {
+    "text": "Gidroliz mahsuloti bilan o‘ziga xos hidli benzoy etil efirini hosil qilish orqali ham aniqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 58,
+    "quote": "4. Kokainning gidrolizlanish mahsuloti bilan o‘ziga xos hidli benzoy etil efirini hosil qilish mumkin."
+   },
+   {
+    "text": "YuQX uchun xromatografik sistemalar: xloroform:dioksan:etilasetat:ammiak 25% (25:60:10:5), metanol:ammiak 25% (100:1,5), siklogeksan:toluol:dietilamin (75:15:10).",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 58,
+    "quote": "№1. Xloroform:dioksan:etilasetat:ammiakning 25% eritmasi (25:60:10:5). №2. Metanol: ammiakning 25% eritmasi (100:1,5). №3. Siklogeksan: toluol: dietilamin (75:15:10)."
+   },
+   {
+    "text": "Miqdoriy tahlil: namuna eritmasining UB spektrida 234 nm dagi optik zichligi aniqlanadi va kokain gidroxlorid konsentratsiyasi kalibrlash chizig‘i yordamida topiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 59,
+    "quote": "Bu eritmaning UB spektri olinadi. UB spektrdan 234 nm dagi optik zichligi aniqlanadi va kokain gidroxloridning konsentratsiyasi (S, g) kalibrlash chizig‘i yordamida topiladi."
+   }
+  ],
+  "pages_read": [
+   54,
+   55,
+   56,
+   57,
+   58,
+   59,
+   60,
+   61,
+   126
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.083",
+  "coverage": "partial",
+  "gaps": [
+   "barbitalning strukturaviy formulasi (matnda molekulyar formula va kimyoviy nom bor, struktura rasmda)",
+   "biologik suyuqliklardan ajratishning batafsil tartibi (pH, erituvchi, hajmlar)",
+   "barbitalga xos xususiy mikrokristalloskopik reaksiyalar tavsifi",
+   "miqdoriy tahlilning hisoblash tartibi"
+  ],
+  "points": [
+   {
+    "text": "Barbital: kimyoviy formulasi C8H12N2O3, kimyoviy nomi 5,5-Diethyl–2,4,6 (1H, 3H, 5H)–pyrimidinetrion, molekulyar massasi 184.2; sinonimlari Alvenol, Diemalum, Veronal va boshqalar.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 102,
+    "quote": "Kimyoviy nomi: 5,5-Diethyl–2,4,6 (1H, 3. Barbital formulasi: 3H, 5H) –pyrimidinetrion C8H12N2O3 CAS kodi: 57–44-3 Sinonimlari: Alvenol, Barbitural, Barb, M. m.: 184.2 Diemalum, Malonal, Sonal,Veronal va b."
+   },
+   {
+    "text": "Barbital oq kristall kukun, kislotali tabiatli, suyuqlanish harorati 188-192 °S; suv (1:130), issiq suv (1:13), etanol (1:14), dietil efiri (1:35), xloroform (1:75), aseton va ishqor eritmalarida eriydi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 102,
+    "quote": "pKa: 8.0 (25°). Tasnifi: oq kristall kukun Tabiati: kislotali Eruvchanligi: suv (1:130), issiq suv Tcuyuq : 188-192 °S (1:13), etanol (1:14), dietil efiri (1:35) O‘z. R: III ro‘yxat xloroform (1:75), aseton va ishqor eritmalarida eriydi."
+   },
+   {
+    "text": "Uyqu chaqiruvchi ta’siriga ko‘ra barbital (fenobarbital bilan) uzoq ta’sir etuvchi barbituratlarga kiradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 106,
+    "quote": "Barbituratlarning uyqu chaqiruvchi ta’siriga ko‘ra guruhlanishi O‘rtacha ta’sir Qisqa ta’sir Uzoq ta’sir etuvchilar etuvchilar etuvchilar Barbital barbamil geksenal Fenobarbital etaminal butobarbital"
+   },
+   {
+    "text": "O‘lim chaqiruvchi doza barbital uchun 6-10 g ga teng.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 106,
+    "quote": "Masalan, o‘lim chaqiruvchi doza barbital uchun 6-10 g, fenobarbital uchun 4-6 g ga teng."
+   },
+   {
+    "text": "Qabul qilingan barbitalning 70-80% peshob bilan chiqariladi, shuning uchun zaharlanishda bemor peshobini tekshirish zarur.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 107,
+    "quote": "Masalan, sog‘lom kishilarda o‘tkazilgan tajribalarning ko‘rsatishicha qabul qilingan barbitalning 70-80%, fenobarbitalning 15-20% peshob bilan chiqariladi. Shuning uchun zaharlanish ro‘y berganda, albatta bemor peshobini tekshirish zarur."
+   },
+   {
+    "text": "Barbituratlar biologik ob’ektdan nordonlashtirilgan spirt yoki suv usulida, biologik suyuqliklardan organik erituvchilar bilan ekstraksiyalab ajratib olinadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 108,
+    "quote": "Barbituratlarni biologik ob’ektdan nordonlashtirilgan spirt yoki suv usulida ajratib olinadi. Ayrim barbituratlar biologik ob’ektdan xususiy usullarda ajratib olinadi. Biologik suyuqliklardan barbituratlar organik erituvchilar bilan ekstraksiyalab ajratib olinadi."
+   },
+   {
+    "text": "Ishqor ishtirokida yuqori haroratda qizdirilganda barbituratlar parchalanib ammiak hidi keladi; ammiak hidining chiqishi barcha barbituratlar uchun umumiy.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 109,
+    "quote": "Faqat ularni ishqor ishtirokida yuqori haroratda qizdirilganda parchalanadi va ammiak hidi keladi: Ammiak hidining chiqishi barcha barbituratlar uchun umumiy bo‘lib,"
+   },
+   {
+    "text": "Kobalt ammiakati bilan reaksiya: barcha barbituratlar kobalt tuzlarining ammiakli eritmasi bilan metil spirti ishtirokida xarakterli qizil rang hosil qiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 110,
+    "quote": "2. Kobalt ammiakati bilan reaksiyasi. Barcha barbituratlar kobalt tuzlarining ammiakli eritmasi bilan metil spirti ishtirokida xarakterli qizil rang hosil qiladi."
+   },
+   {
+    "text": "Mis-piridin reaktivi barbiturat saqlovchi qoldiq bilan amorf yoki kristall cho‘kma hosil qiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 113,
+    "quote": "Barbiturat saqlovchi qoldiq ustiga mis piridin reaktivi qo‘shilsa amorf yoki kristall cho‘kma hosil qiladi."
+   },
+   {
+    "text": "YuQX: xloroform–n-butanol–25% ammiak (70:40:5) sistemasi; aniqlovchi reaktiv — difenilkarbazidning xloroformli eritmasi va simob sulfatning suvli eritmasi; barbituratlar siyoh rangli dog‘lar hosil qiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 93,
+    "quote": "barbituratlarni tozalash va aniqlashda xloroform - n-butanol - 25% NH4OH (70:40:5) sistеmasidan foydalaniladi. Aniqlovchi rеaktiv 0,02% difinilkarbazidning xloroformli eritmasi va simob sulfatning suvli eritmasi purkaladi. Barbituratlar siyox rangda turli Rf oralig’ida dog’lar hosil qiladi."
+   },
+   {
+    "text": "Barbitalning UB-spektri: pH 9.2 da 239 nm (A11=549), pH 13 da 254 nm (A11=427).",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 115,
+    "quote": "3. Barbital (pH 9.2) — 239 nm 1680, 1720, 1767, 156, 141, 55, 155, (A11=549a); (pH 13) — 1320, 1245, 875 98, 39, 82, 43 254 nm (A11=427b)."
+   },
+   {
+    "text": "Gaz xromatografiyada barbituratlar ushlanish indekslari va Kovach indeksi bilan identifikatsiya qilinadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 114,
+    "quote": "Barbituratlar ushbu sharoitda ushlanish indekslari va Kovach indeksi bilan identifikatsiya qilinadi."
+   }
+  ],
+  "pages_read": [
+   101,
+   102,
+   106,
+   107,
+   108,
+   109,
+   110,
+   113,
+   114,
+   115
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.084",
+  "coverage": "partial",
+  "gaps": [
+   "giyohvandlik vositasi tushunchasining qonuniy ta’rifi (kitobda faqat test variantlari ko‘rinishida)",
+   "giyohvandlik vositalarining to‘liq tasnifi (barcha kimyoviy/farmakologik guruhlar)",
+   "har bir moddaning tibbiy dozalari va qo‘llanish ko‘rsatmalari batafsil"
+  ],
+  "points": [
+   {
+    "text": "Opiatlar — kimyoviy tuzilishi morfinga o‘xshash va undan olinadigan giyohvandlik vositalari: morfin, kodein, geroin va uning metaboliti 6-monoasetilmorfin.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 16,
+    "quote": "Opiatlar – kimyoviy tuzilishiga ko‘ra morfinga o‘xshash va undan olinadigan sintetik giyohvandlik vositalari bo‘lib, ularga morfin, kodein, morfinning yarim sintetik mahsulotlari – geroin (diasetilmorfin DAM) va uning asosiy metaboliti 6- monoasetilmorfin (6-MAM) kiradi."
+   },
+   {
+    "text": "Opioidlar — organizmga morfinga o‘xshash ta’sir ko‘rsatuvchi, ammo kimyoviy tuzilishi boshqa guruhga kiruvchi sintetik giyohvandlik vositalari: promedol, fensiklidin, metadon, fentanil va boshqalar.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 16,
+    "quote": "Opioidlar – bular inson organizmiga morfinga o‘xshash ta’sir ko‘rsatib, kimyoviy tuzilishiga ko‘ra boshqa guruhga kiruvchi sintetik giyohvandlik vositalari bo‘lib, ularga promedol, fensiklidin, metadon, fentanil va boshqalar kiradi."
+   },
+   {
+    "text": "O‘zbekistonda muomalasi ta’qiqlangan giyohvandlik vositalari ro‘yxati (I ro‘yxat) 246 ta, muomalasi cheklangan giyohvandlik vositalari ro‘yxati (II ro‘yxat) 51 ta moddadan iborat.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 13,
+    "quote": "Muomalada bo‘lishi O‘zbekiston Respublikasida ta’qiqlangan giyohvandlik vositalari ro‘yxati (bundan buyon matnda I ro‘yxat deb yuritiladi) - 246 ta;  Muomalada bo‘lishi O‘zbekiston Respublikasida cheklangan giyohvandlik vositalari ro‘yxati (bundan buyon matnda II ro‘yxat deb yuritiladi) - 51 ta;"
+   },
+   {
+    "text": "Opiyning quruq ekstrakti omnopon (pantopon) onkologik kasalliklarda kuchli og‘riq qoldiruvchi sifatida qo‘llaniladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 17,
+    "quote": "Shuningdek quruq ekstrakti omnopon (pantopon) esa kuchli og‘riq qoldiruvchi sifatida onkologik kasalliklarda qo‘llaniladi."
+   },
+   {
+    "text": "Morfin tibbiyotda asosan gidroxlorid tuzi holida qo‘llaniladi va giyohvand analgetiklarning asosiy vakili hisoblanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 20,
+    "quote": "Narkologik ahamiyati. Tibbiyotda morfin asosan gidroxlorid tuzi holida qo‘llaniladi, u giyohvand analgetiklarning asosiy vakili hisoblanadi."
+   },
+   {
+    "text": "Kodein analgin, amidopirin, kofein, fenobarbital bilan birga bosh og‘rig‘i va nevralgiyada qo‘llaniladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 27,
+    "quote": "Kodein analgin, amidopirin, kofein, fenobarbital va shu kabi moddalar bilan birgalikda bosh og‘riganda va nevralgiyani davolashda qo‘llaniladi."
+   },
+   {
+    "text": "Promedol turli xastaliklarda og‘riqni qoldirish uchun jarrohlikdan oldin va keyin keng qo‘llaniladi, tug‘ruqxonalarda ham ishlatiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 41,
+    "quote": "Bu preparat hozirgi vaqtda turli xastaliklarda og‘riqni qoldirish uchun jarrohlik amaliyotidan oldin va keyingi holatlarda keng qo‘llaniladi. U tug‘ruqxonalarda homilani tug‘ilishiga yordam beruvchi va og‘riqni sezdirmaydigan modda sifatida ham ishlatiladi."
+   },
+   {
+    "text": "Metadon tibbiyotda morfin o‘rnini bosuvchi modda sifatida qo‘llaniladi va terapiyada narkomanlarga buyuriladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 42,
+    "quote": "Tibbiyotda morfinning o‘rnini bosuvchi modda sifatida qo‘llaniladi va terapiyada narkomanlarga metadon buyuriladi."
+   },
+   {
+    "text": "Fentanil klinik amaliyotda qon tomiriga yuboriluvchi anestetik vosita sifatida jarrohlikdan oldin va keyin (kardioxirurgiyada) ishlatiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 45,
+    "quote": "Klinika amaliyotida qon tomiriga yuboriluvchi anestetik vosita sifatida jarrohlikdan oldin va jarrohlikdan keyingi davolash jarayonida (kardioxirurgiyada) ishlatiladi."
+   },
+   {
+    "text": "Kokain 18–19 asrlarda stimulyator va og‘riq qoldiruvchi sifatida ishlatilgan, dori vositalari va ichimliklar tarkibiga kiritilgan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 54,
+    "quote": "18 – 19 asrlarda kokain ommabop va “zararsiz” stimulyator sifatida keng tarqalgan edi. U og‘riq qoldiruvchi modda sifatida ishlatilgan, ko‘pgina dori vositalari, salqin ichimliklar, vino va shirinliklar tarkibiga kiritilgan edi."
+   },
+   {
+    "text": "Marixuana O‘zbekiston giyohvandlik vositalari ro‘yxatiga kiritilgan va qo‘llash ta’qiqlangan; asosan tamakiga qo‘shib chekiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 62,
+    "quote": "Bu vosita O‘zR giyohvandlik vositalari ro‘yxatiga kiritilgan bo‘lib qo‘llash ta’qiqlangan. Uning asosiy qo‘llanishi bu chekish orqali (tamaki tarkibiga qo‘shib 500 mg-750 mg)"
+   }
+  ],
+  "pages_read": [
+   13,
+   14,
+   16,
+   17,
+   20,
+   27,
+   41,
+   42,
+   45,
+   54,
+   62,
+   161,
+   162,
+   168,
+   169
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.085",
+  "coverage": "partial",
+  "gaps": [
+   "morfinning strukturaviy/molekulyar formulasi (matnda faqat rasm)",
+   "kitobda «ishqoriy muhitda Rf=8,6-10,2 organik erituvchi bilan ekstraksiyalanadi» deyilgan (pH o‘rniga Rf — xato) — olinmadi",
+   "GX-MS/YuSSX-MS sezgirligi «10-11» deb noaniq (OCR) yozilgan — olinmadi"
+  ],
+  "points": [
+   {
+    "text": "Opiy alkaloidlaridan fenantrenizoxinolin hosilalariga morfin, kodein, tebain kiradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 17,
+    "quote": "Fenantrenizoxinolin hosilalariga morfin, kodein, tebain, benzilizoxinolin hosilalariga esa papaverin va narkotin alkaloidlari kiradi."
+   },
+   {
+    "text": "Morfin opiyning asosiy alkaloidi; 1806 yilda ko‘knori mevasidan ajratib olingan, kimyoviy tuzilishi 1925 yilda aniqlangan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 19,
+    "quote": "Morfin - opiyning asosiy alkaloidi hisoblanadi. Uni 1806 yilda ko‘knori mevasidan ajratib olingan. Kimyoviy tuzilishi esa 1925 yilda aniqlangan."
+   },
+   {
+    "text": "Asos holidagi morfin mayda romb shaklidagi kristall kukun, suyuqlanish harorati 253-254 S; sovuq suvda yomon, qaynoq suvda nisbatan yaxshi, efir, benzol va xloroformda yomon eriydi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 19,
+    "quote": "asos holidagi morfin mayda romb shaklidagi kristall kukundan iborat, uning suyuqlanish harorati 253-254 S. Morfin asosi sovuq suvda yomon, qaynoq suvda nisbatan yaxshi, efirda, benzolda, xloroformda esa, yomon eriydi."
+   },
+   {
+    "text": "Morfin oqsil moddalar bilan tez birikib kon’yugatlar hosil qiladi, shuning uchun nordonlashtirilgan spirt yoki suv usulida to‘liq ajralmaydi va asosiy qismi yo‘qotiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 20,
+    "quote": "Morfin alkaloidi oqsil moddalar bilan juda tez birikib, murakkab kon’yugatlar hosil qiladi. Bu birikmalar nordonlashtirilgan spirt yoki nordonlashtirilgan suv usullari yordamida biologik ob’ekt tarkibidan to‘liq suyuqlik qavatiga o‘tmaydi. Natijada kimyogar morfinning asosiy qismini yo‘qotadi."
+   },
+   {
+    "text": "Metabolizmi: morfin glyukuron kislotasi bilan glyukuronidlar hosil qiladi; dastlabki 8 soatda 50%, 24 soatdan so‘ng taxminan 90% morfin glyukuronidlar holida peshob bilan chiqariladi; qisman normorfin va kodeinga aylanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 23,
+    "quote": "Metabolizmi. Organizmga tushgan morfin glyukuron kislotasi bilan birikib glyukuronidlar hosil qiladi. Avvalgi 8 soat davomida 50% morfin, 24 soatdan so‘ng taxminan 90% morfin glyukuronidlar holida peshob bilan chiqariladi. Organizmda qisman N-demetillanib normorfin, O-metillanib kodeinga aylanadi."
+   },
+   {
+    "text": "Murda a’zolarida morfin psevdomorfin, digidromorfin hosil qiladi; eritmalari ochiq saqlanganda yanada zaharli oksidimorfinga oksidlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 23,
+    "quote": "Murda a’zolarida asta-sekin o‘zgarishlarga uchrab psevdomorfin, digidromorfin hosil qiladi. Morfin organizmga kiritilganda va uning eritmalari uzoq vaqt ochiq idishda saqlanganda tez oksidlanib yanada kuchli zaharli modda oksidimorfinni hosil qiladi."
+   },
+   {
+    "text": "Biologik ob’ektdan morfin nordonlashtirilgan spirt va sulfat kislotasi bilan nordonlashtirilgan suv yordamida bo‘ktirib ajratib olinadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 23,
+    "quote": "Morfin biologik ob’ekt namunalaridan nordonlashtirilgan spirt va sulfat kislotasi bilan nordonlashtirilgan suv yordamida bo‘ktirib ajratib olinadi,"
+   },
+   {
+    "text": "Qon va peshobdan ajratish: cho‘kkan oqsillar filtrlab ajratilgach, filtrat pH 6,5-7,0 ga keltiriladi va natriy bikarbonat qo‘shib butanol-xloroform (1:9) aralashmasi bilan 2 marta ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 23,
+    "quote": "Cho‘kmaga tushgan oqsil moddalarni filtrlab ajratilgach, filtratni ajratgich voronkasiga o‘tkazilib, rN-muhiti 6,5-7,0 bo‘lgunga qadar ammiakning 25%eritmasi qo‘shiladi. Aralashma ustiga natriy bikarbonat tuzidan qo‘shib butanol-xloroform (1:9) aralashmasi bilan 2 marta ekstraksiyalanadi."
+   },
+   {
+    "text": "Ushbu ajratish va YuQX usulida morfinning aniqlash chegarasi 10-15 mkg; usul bilan morfinni qondan 83%, peshobdan 71% gacha ajratib aniqlash mumkin.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 24,
+    "quote": "Aniqlash chegarasi morfin uchun 10-15 mkg tashkil qiladi. Tavsiya etilgan usul bilan morfinni qondan 83%, peshobdan 71% gacha ajratib aniqlash mumkinligi tasdiqlangan"
+   },
+   {
+    "text": "Temir (III) xlorid morfinning fenol gidroksili bilan zangori rang beradi va uni boshqa opiy alkaloidlaridan farqlaydi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 24,
+    "quote": "Temir (III) xloridning eritmasi morfin molekulasi tarkibidagi fenol gidroksili bilan reaksiyaga kirishib zangori rang hosil qiladi. Bu reaksiya sezgirligi yuqoridagi reaksiyalar sezgirligidan kam, lekin u morfinni boshqa opiy alkaloidlardan farq qilishda ahamiyatga ega."
+   },
+   {
+    "text": "Vagner reaktivi bilan morfin to‘g‘ri to‘rtburchakli plastinkalar ko‘rinishidagi kristall cho‘kma hosil qiladi; sezgirligi 0,03 mg.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 25,
+    "quote": "3. Vagner reaktivi bilan reaksiyasi. Yodning kaliy yodiddagi eritmasi (Vagner reaktivi) morfin bilan kristall cho‘kma hosil qiladi. Cho‘kmani mikroskop ostida qaralsa, xarakterli to‘g‘ri to‘rtburchakli plastinkalardan iborat kristallar ko‘rinadi. Reaksiyaning sezgirligi 0,03 mg morfinga teng."
+   },
+   {
+    "text": "Miqdori UB-spektrlari asosida spektrofotometrik usulda yoki kremniy molibdat kompleksi bilan fotokolorimetrik usulda aniqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 26,
+    "quote": "Miqdorini aniqlash: 1. Namunalardan ajratib olingan morfin miqdorini UB spektrlariga asoslanib spektrofotometrik usulda aniqlanishi mumkin. 2. Morfin miqdorini kremniy molibdat kompleksi bilan fotokolorimetrik aniqlash."
+   }
+  ],
+  "pages_read": [
+   16,
+   17,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   29
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.086",
+  "coverage": "partial",
+  "gaps": [
+   "galoperidolning strukturaviy formulasi (matnda faqat rasm)",
+   "biologik ob’ektlardan (ichki a’zolardan) ajratish tartibi",
+   "qon va peshobdan ajratish matni droperidol tavsifidan keyin, «Galoperidol va droperidolning tahlili» bo‘limidan oldin berilgan — galoperidolga ham tegishliligi kitobda aniq aytilmagan",
+   "miqdoriy usul matnida «xloroform qatlami fenotiazin hosilalari bo‘lsa sariq rangga bo‘yaladi» deyilgan (ehtimol xato) — olinmadi"
+  ],
+  "points": [
+   {
+    "text": "Galoperidol oq sarg‘imtir amorf yoki kristall kukun; amalda suvda erimaydi, etanol (1:50), xloroform (1:20), dietil efir (1:200) va metanolda (1:55) eriydi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 130,
+    "quote": "Galoperidol tashqi ko‘rinishi bo‘yicha oq sarg‘imtir amorf yoki kristall kukun. Amalda suvda erimaydi, etanol (1:50), xloroform (1:20), dietilefir (1:200) va metanolda (1:55) da eriydi."
+   },
+   {
+    "text": "Galoperidol kuchli neyroleptik vosita: sedativ va qusishga qarshi ta’sir ko‘rsatadi, giyohvand, uyqu chaqiruvchi, psixotrop, neyroleptik va analgetik moddalar ta’sirini kuchaytiradi, agressiyani pasaytiradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 130,
+    "quote": "Galoperidol kuchli ta’sirga ega neyroleptik vosita bo‘lib, sedativ va qusishga qarshi ta’sir ko‘rsatadi. Giyohvand, uyqu chaqiruvchi psixotrop, neyroleptik hamda analgetik moddalar ta’sirini kuchaytiradi, agressiyani pasaytiradi."
+   },
+   {
+    "text": "Dozasi oshirilganda markaziy asab tizimida harakat faolligining buzilishi kuzatiladi; 15-22% hollarda o‘lim bilan tugaydi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 130,
+    "quote": "Galoperidolning dozasini oshirib yuborilishi oqibatida markaziy asab tizimiga harakat faolligining buzilishi bilan boradigan ta’sir ko‘rsatadi. 15-22% hollarda o‘lim bilan tugaydi."
+   },
+   {
+    "text": "Galoperidolning asosiy metaboliti 4-(4-xlorfenil)-4-gidroksipiperidin.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 130,
+    "quote": "Galoperidolning asosiy metaboliti 4-(4-xlorfenil)-4- gidroksipiperidin hisoblanadi."
+   },
+   {
+    "text": "Qon va peshobdan ajratish (galoperidol–droperidol bo‘limida): 10 ml peshob va 2 ml qonga natriy gidroksidning 50% eritmasi qo‘shib pH 13 ga yetkaziladi va 30 daqiqa qaynayotgan suv hammomida qizdiriladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 130,
+    "quote": "10 ml peshob va 2 ml qon ayrim-ayrim idishlarda natriy gidroksidning 50% eritmasini qo‘shib, rN muhiti 13 ga etkazilgach, 30 daqiqa qaynayotgan suv hammomida qizdiriladi."
+   },
+   {
+    "text": "Gidrolizat sovitilib uch qayta etilasetat bilan ekstraksiyalanadi, suvsiz natriy sulfat orqali filtrlanib bug‘latiladi, qoldiq 95% etil spirtida eritilib YuQX qilinadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 130,
+    "quote": "Olingan gidrolizat uy haroratigacha sovitilib, uch qayta etilasetat bilan ekstraksiyalanadi. Ajralmalar suvsiz natriy sulfat orqali filtrlanib, quruq qoldiq qolguncha bug‘latiladi. Qoldiq 95% etil spirtida eritilib, yupqa qatlamli xromatografik tahlil qilinadi."
+   },
+   {
+    "text": "Rangli reaksiyalar: Marki reaktivi bilan sariq, Frede reaktivi bilan zarg‘aldoq rangli mahsulot hosil qiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 130,
+    "quote": "Marki reaktivi bilan galoperidol va droperidol sariq rangli mahsulot hosil qiladi. Frede reaktivi bilan esa galoperidol zarg‘aldoq"
+   },
+   {
+    "text": "Mandelin reaktivi bilan galoperidol to‘q sariq rang hosil qiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 131,
+    "quote": "Mandelin reaktivi bilan galoperidol to‘q sariq, droperidol sariq-yashil rang hosil qiladi."
+   },
+   {
+    "text": "YuQXda dog‘ o‘rnini aniqlash uchun UB-254 nm nurlantirish va Dragendorf reaktividan foydalaniladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 131,
+    "quote": "Galoperidol va droperidolni xromatografik plastinkada joylashgan o‘rnini aniqlash uchun UB-254 nm nurlantirish va Dragendorf reaktividan foydalaniladi."
+   },
+   {
+    "text": "UB-spektrofotometriya: galoperidolning 95% etil spirtdagi eritmasi 246 nm da maksimum nur yutadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 131,
+    "quote": "UB-spektrofotometriya usulida aniqlash. Galoperidol 95% etil spirtdagi eritmasi max = 246 nm maksimum nur yutadi."
+   },
+   {
+    "text": "Miqdoriy tahlil: rangli xloroformli eritmaning optik zichligi 400 nm da, 10 mm kyuvetada fotokolorimetrik aniqlanadi; chiziqli diapazon 1-10 mkg/ml, miqdor kalibrlash grafigi yordamida topiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 131,
+    "quote": "rangli xloroformli eritmasining optik zichligi 400 nm, qatlam qalinligi 10 mm bo‘lgan kyuvetada fotokolorimetrik aniqlanadi. Aniqlashning chiziqli diapazoni 1-10 mkg/ml ga teng. Avvaldan tayyorlangan kalibrlash grafigi yordamida droperidol va galoperidolning miqdori aniqlanadi."
+   },
+   {
+    "text": "Sezgir usul sifatida gaz-xromato-mass spektrometrik tahlil ham qo‘llanishi mumkin.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 131,
+    "quote": "Yana sezgir usullardan gaz-xromato-mass spektrometrik tahlilni ham qo‘llash mumkin."
+   }
+  ],
+  "pages_read": [
+   119,
+   120,
+   129,
+   130,
+   131,
+   132
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.087",
+  "coverage": "partial",
+  "gaps": [
+   "kokainning organizm to‘qima va a’zolarida tarqalishi (kitobda faqat biosamaradorlik ko‘rsatkichlari)",
+   "metabolizm reaksiyalari (gidroliz yo‘nalishlari) matnda bayon etilmagan — faqat «Kokain metabolizmi yo‘nalishlari» rasmi",
+   "kitobda «benzilekgonin» deb yozilgan joylar (benzoilekgonin o‘rniga, ehtimol xato) — da’vo matnida modda nomi olinmadi"
+  ],
+  "points": [
+   {
+    "text": "Koka barglari qora bozorda tarqatiladigan «Coca mate» choyini ishlab chiqarishda ishlatiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 55,
+    "quote": "Koka barglari. Koka barglari hozirgi vaqtda qora bozorda tarqatiladigan «Coca mate» choyini ishlab chiqarishda ishlatiladi."
+   },
+   {
+    "text": "Kokain pastasi (kokain sulfat, «basuco», «basa» va b.) — koka bargiga ishlov berishdagi oraliq mahsulot, past navli giyohvand vosita.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 55,
+    "quote": "Kokain pastasi - kokain sulfat, “basuco”, “basa”, “pitillo”, “testo” degan nomlar bilan uchraydi. Bu past navli giyohvand vosita bo‘lib, Janubiy Amerika past tabaqa aholi orasida keng tarqalgan. Pasta koka bargiga ishlov berishdagi oraliq mahsulotdir."
+   },
+   {
+    "text": "Kokain gidroxloridda kokain miqdori 80-90%; «ko‘cha savdosi» uchun pirasetam, kofein, lidokain, prokain va boshqalar qo‘shib suyultiriladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 55,
+    "quote": "Kokain gidroxloridda kokain miqdori- 80-90% tashkil qiladi. “Ko‘cha savdosi” uchun 12 – 50 % gacha pirasetam, kofein, lidokain, prokain, benzokain, shakar va kraxmal qo‘shib suyultiriladi."
+   },
+   {
+    "text": "Kokain asosi («krek», «freebase») kokain gidroxloriddan olinadi; «qo‘ng‘ir» kokain kokain tuzini kobalt xlorid yoki temir xlorid bilan aralashtirib olinadi va 40% kokain saqlaydi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 55,
+    "quote": "Kokain asosi (“krek”, “freebase”/“crack”) kokain gidroxloriddan olinadi. «Qo‘ng‘ir» kokain – giyohvandni maskirovka qilish uchun (xuddi eruvchan kofe yoki choy holida ko‘rinishi uchun) kokain tuzi kobalt xlorid yoki temir xlorid bilan aralashtiriladi. Uning tarkibida 40% kokain bo‘ladi."
+   },
+   {
+    "text": "«Qora» kokain kokain tuzini polimer material bilan aralashtirib olinadi; «Spidbol» — kokain va geroinning teng nisbatdagi aralashmasi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 55,
+    "quote": "«Qora» kokain - kokain tuzini polimer material bilan aralashtirib olinadi va undan haykalchalar, diplomat, ushlagichlar va boshqa predmetlar tayyorlanadi. Giyohvand moddalarning qora bozorida «Spidbol» - kokain va geroinning teng nisbatdagi aralashmasi ham muomalada bo‘ladi."
+   },
+   {
+    "text": "Koka barglarida kokaindan tashqari ekgonin hosilalari: metilekgonin, sis- va trans-sinnamoilkokain, benzoilekgonin, tropakokain, truksillin kislota va boshqalar bor.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 55,
+    "quote": "Qolgan alkaloidlarni esa ekgonin hosilalaridan metilekgonin, sis- va trans-sinnamoilkokain, benzoilekgonin, tropakokain, truksillin kislota va boshqalar tashkil qiladi."
+   },
+   {
+    "text": "Kokainning biosamaradorligi: og‘iz va burun orqali 20-40%, chekilganda 6-32%, qon tomirga yuborilganda 100%.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 56,
+    "quote": "Kokainning biosamaradorligi: og‘iz orqali qabul qilganda 20 – 40%; burun orqali qabul qilganda – 20 - 40%; chekilganda – 6 - 32%; qon tomirga yuborilganda - 100% tashkil qiladi."
+   },
+   {
+    "text": "Kokainning yarim chiqish davri 38-67 daqiqa, benzoilekgoninniki 4-6 soat, metilekgoninniki 2,5-7,6 soat.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 56,
+    "quote": "Kokainning yarim chiqish davri – 38 – 67 daqiqani, benzoilekgoninniki – 4 – 6 soatni, metilekgoninniki - 2,5 – 7,6 soatni tashkil qiladi."
+   },
+   {
+    "text": "Bir martalik dozaning 90-95% peshob orqali 2-3 kun davomida chiqariladi: kokain (1-9%), asosan metabolitlar benzoilekgonin (35-60%), metilekgonin (32-49%), ekgonin (1-8%), norkokain va gidroksillangan metabolitlar (10% gacha) holida.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 56,
+    "quote": "Kokainni bir martalik dozasining 90 – 95% peshob orqali 2 – 3 kun davomida kokain (1-9%), asosan metabolitlar benzoilekgonin (35-60%), metilekgonin (32- 49%), ekgonin (1-8%), norkokain i gidroksillangan metabolitlar (10%gacha) holida chiqariladi"
+   },
+   {
+    "text": "Bir martalik dozada kokain o‘zgarmagan holda peshobda 8-24 soat, asosiy metabolitlari holida 48 soat aniqlanadi; surunkali qabul qilinganda aniqlash vaqti 5 kunga uzayadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 56,
+    "quote": "Kokainni bir martalik dozasi qabul qilinganda uni o‘zgarmagan holda peshob tarkibida 8-24 soat, benzilekgonin va metilekgonin holida esa 48 soat mobaynida aniqlash mumkin. Surunkali qabul qilinganda aniqlash vaqti 5 kunga uzayadi."
+   },
+   {
+    "text": "Angidroekgonin metil efirining aniqlanishi krek yoki kokain asosi chekilganidan dalolat beradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 56,
+    "quote": "Angidroekgoninning metil efirini aniqlash esa krek yoki kokain asosi chekilganidan dalolat beradi."
+   }
+  ],
+  "pages_read": [
+   54,
+   55,
+   56,
+   57,
+   58,
+   59
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.088",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Barbituratlarni aniqlashda rang va cho‘kma hosil qiluvchi hamda mikrokristalloskopik reaksiyalar, shuningdek fizik-kimyoviy usullardan foydalaniladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 108,
+    "quote": "Barbituratlarni aniqlashda rang va cho‘kma hosil qiluvchi hamda mikrokristalloskopik reaksiyalar, shuningdek fizik-kimyoviy usullardan foydalaniladi."
+   },
+   {
+    "text": "Qoldiq ko‘p yoki toza kukun bo‘lganda suyuqlanish harorati aniqlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 108,
+    "quote": "Tekshiriluvchi qoldiq ko‘p yoki ashyoviy dalil toza kukun holida bo‘lganda barbituratlarni aniqlash uchun quyidagi reaksiyalar qo‘llanadi: 1. Suyuqlanish haroratini aniqlash."
+   },
+   {
+    "text": "Ishqor bilan yuqori haroratda qizdirilganda barbituratlar parchalanib ammiak hidi keladi; bu barcha barbituratlar uchun umumiy.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 109,
+    "quote": "Faqat ularni ishqor ishtirokida yuqori haroratda qizdirilganda parchalanadi va ammiak hidi keladi: Ammiak hidining chiqishi barcha barbituratlar uchun umumiy bo‘lib,"
+   },
+   {
+    "text": "Izonitrozabarbitur kislota reaksiyasi: nitritlar bilan qizil rangli izonitrozabarbitur kislota hosil bo‘ladi, u temir tuzlari bilan birikib ko‘k rangli temirli kompleksga o‘tadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 109,
+    "quote": "nitritlar bilan qizil rangli izonitrozabarbitur kislotasi hosil qiladi. U temir tuzlari bilan birikib ko‘k rangli temirli kompleksga o‘tadi:"
+   },
+   {
+    "text": "Ajralmada barbituratlar kam bo‘lganda kobalt ammiakati bilan reaksiya qo‘llanadi: kobalt tuzlarining ammiakli eritmasi metil spirti ishtirokida xarakterli qizil rang hosil qiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 110,
+    "quote": "Barbituratlar ajratmalar tarkibida kam miqdorda bo‘lganda quyidagi umumiy reaksiyalar bilan aniqlanadi. 2. Kobalt ammiakati bilan reaksiyasi. Barcha barbituratlar kobalt tuzlarining ammiakli eritmasi bilan metil spirti ishtirokida xarakterli qizil rang hosil qiladi."
+   },
+   {
+    "text": "Kobalt ammiakati reaksiyasiga purin alkaloidlari va byuret zanjiri saqlovchi moddalar halaqit beradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 110,
+    "quote": "Reaksiyani borishiga purin alkaloidlari va byuret C NH C NH zanjiri saqlovchi moddalar halaqit beradi."
+   },
+   {
+    "text": "Kobalt asetati va izopropilamin bilan reaksiya: xloroformli eritmada barbituratlar qizil pushti rangli ichki kompleks hosil qiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 110,
+    "quote": "3. Kobalt tuzlari va izopropilamin bilan reaksiyasi. Xloroformli eritmaga kobalt asetati va izopropilaminning spirtli eritmalari qo‘shib chayqatilsa, barbituratlar bo‘lgan taqdirda qizil pushti rang hosil bo‘ladi"
+   },
+   {
+    "text": "Konsentrlangan sulfat kislotada eritilgan qoldiq suv bilan suyultirilsa oq loyqa hosil bo‘ladi; aksariyat barbituratlar cho‘kmasining kristallari o‘ziga xos shaklga ega.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 113,
+    "quote": "Tekshiriluvchi qoldiq konsentrlangan sulfat kislotada eritiladi va unga suv qo‘shib suyultirilsa oq loyqa hosil bo‘ladi. Aksariyat barbituratlarning cho‘kmasi kristallari o‘ziga xos shaklga ega bo‘ladi."
+   },
+   {
+    "text": "Mis-piridin reaktivi bilan barbituratlar amorf yoki kristall cho‘kma hosil qiladi; bu birikma mineral kislotalar ta’siridan parchalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 113,
+    "quote": "Barbiturat saqlovchi qoldiq ustiga mis piridin reaktivi qo‘shilsa amorf yoki kristall cho‘kma hosil qiladi. Reaksiya kimyoviy tenglamasi quyidagicha: N O O R1 N O C C N R2 R1 HN O +2 2R C CO + 2 + Cu Cu 2 N O N N R1 O H N O C C R2 HN O Ushbu birikma mineral kislotalar ta’siridan parchalanadi."
+   },
+   {
+    "text": "YuQX: xloroform–n-butanol–25% ammiak (70:40:5) sistemasi; aniqlovchi reaktiv — difenilkarbazidning xloroformli eritmasi va simob sulfatning suvli eritmasi; barbituratlar siyoh rangli dog‘lar hosil qiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 93,
+    "quote": "barbituratlarni tozalash va aniqlashda xloroform - n-butanol - 25% NH4OH (70:40:5) sistеmasidan foydalaniladi. Aniqlovchi rеaktiv 0,02% difinilkarbazidning xloroformli eritmasi va simob sulfatning suvli eritmasi purkaladi. Barbituratlar siyox rangda turli Rf oralig’ida dog’lar hosil qiladi."
+   },
+   {
+    "text": "Taxminiy tekshiruv: peshobga kobalt atsetati eritmasini ammiak yoki litiy ishqori sharoitida qo‘shib ekstraksiyalab barbituratlarni aniqlash mumkin.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 20,
+    "quote": "Masalan: barbituratlar bilan zaharlanishni taxminiy tеkshirish uchun tеkshiriluvchi pеshobga kobalt atsеtati eritmasini ammiak yoki litiy ishqori sharoitida qo’shib ekstraktsiyalab aniqlash mumkin."
+   },
+   {
+    "text": "UB-spektrofotometriya: barbituratlar pH=10 (0,05 M borat bufer) da 238-240 nm, pH=13 (1,0 M ishqor) da 258-260 nm da maksimumga ega.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 114,
+    "quote": "Barbituratlar keto (kislotali) ko‘rinishda optik faol emas. Ular rN=10 muhitida (0,05 M borat buferi) monoimid ko‘rinishida 238 - 240 nm sohada spektral maksimum va rN=13 muhitida (1,0 M ishqor eritmasi) diimid shaklida 258-260 nm sohada spektral maksimum"
+   }
+  ],
+  "pages_read": [
+   108,
+   109,
+   110,
+   111,
+   112,
+   113,
+   114,
+   115,
+   116,
+   117,
+   118,
+   20,
+   93
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.089",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Opiy (qora dori) ko‘knori o‘simligining pishmagan mevasi po‘stlog‘idan chiqqan shiraning quritilishidan olinadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 17,
+    "quote": "Opiy (qora dori), ko‘knori o‘simligining pishmagan mevasining po‘stloq suyuqligidan (shira) olinadi. Buning uchun ko‘knori gul boshog‘i terisi o‘tkir tig‘li keskich bilan tilinadi. Shu erdan silqib chiqqan suyuqlik (shira) havoda qurigandan so‘ng qirib yig‘ib olinadi va quritiladi."
+   },
+   {
+    "text": "Opiy qoramtir-qo‘ng‘ir, o‘ziga xos hidli, achchiq mazali quyuq qoldiq yoki kukun; tarkibida 19% morfin, 8-10% narkotin, 1,5-3% kodein, tebain, papaverin bor.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 17,
+    "quote": "Opiy (qora dori), qoramtir-qo‘ng‘ir rangga ega, o‘ziga xos hidli quyuq qoldiq yoki kukun. Mazasi achchiq. Suvda qisman eriydi, suvli eritmasi nordon muhitga ega. Opiy tarkibida 19% morfin, 8-10% narkotin, 1,5-3% kodein hamda tebain, papaverin kabi alkaloidlar borligi adabiyotlarda keltiriladi."
+   },
+   {
+    "text": "Opiyda 60 dan ortiq alkaloid bo‘lib, ular mekon kislotasi bilan tuzlar holida uchraydi; shu sababli opiy bilan zaharlanishda morfin, narkotin bilan birga mekon kislotasini ham aniqlash talab qilinadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 17,
+    "quote": "Bu alkaloidlar opiy tarkibida mekon kislotasi bilan birikkan tuzlar holida uchraydi. Shuning uchun ham opiy bilan zaharlanish yuz bergan taqdirda ashyoviy dalillar tarkibida morfin, narkotin alkaloidlaridan tashqari mekon kislotasini ham aniqlashlari talab qilinadi."
+   },
+   {
+    "text": "Opiy va undan olinadigan dori vositalari giyohvand ta’sirga ega va «morfinizm» xastaligini keltirib chiqaradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 17,
+    "quote": "Opiy hamda opiy asosida olinadigan barcha dori vositalari giyohvand ta’sirga ega va “morfinizm” xastaligini keltirib chiqaradi."
+   },
+   {
+    "text": "Opiy ichish, teri osti va venaga yuborish, burun orqali tortish yoki chekish yo‘li bilan qabul qilinadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 21,
+    "quote": "Opiyni ichish, teri osti va venaga yuborish, kukunlarni burun orqali nafas bilan tortish yoki chekish yo‘li bilan qabul qilinadi."
+   },
+   {
+    "text": "Morfin narkomaniyasidagi xumorlik sindromi oxirgi dozadan bir necha soat o‘tib boshlanadi va 5-7 kun davom etadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 21,
+    "quote": "Morfin narkomaniyasidagi xumorlik sindromi giyohvandning oxirgi miqdorini qabul qilingandan bir necha soat o‘tgach boshlanadi va 5-7 kun davom etadi."
+   },
+   {
+    "text": "Morfin, kodein, narkotin va mekon kislotasining aniqlanishi namunada opiy borligini isbotlaydi; mekon kislotasini aniqlash reaksiyasining sezgirligi kam va u biologik ob’ektda tez parchalangani sababli namuna tezda tahlil qilinadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 17,
+    "quote": "Morfin, kodein, narkotin va mekon kislotasini aniqlanishi tekshiriluvchi namunada opiy borligini isbotlaydi. Ammo mekon kislotasini aniqlash reaksiyasini sezgirligi kamligi hamda biologik ob’ektda tez parchalanishi sababli tekshiriluvchi namuna tezda tahlil qilinadi."
+   },
+   {
+    "text": "Omnopon tarkibida mekon kislotasi va mekonin bo‘lmaydi; ob’ektda morfin, kodein va narkotin aniqlansa omnopon iste’mol qilingan degan xulosaga kelinadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 18,
+    "quote": "Tahlil natijasida biologik ob’ektda morfin, kodein va narkotinlar borligi aniqlansa omnopon iste’mol qilingan degan xulosaga kelinadi. Omnopon tarkibida mekon kislotasi va mekonin bo‘lmaydi."
+   },
+   {
+    "text": "Mekon kislotasini ajratish: ob’ekt xlorid kislota bilan nordonlashtirilib etil spirti bilan bo‘ktiriladi, filtrat quritiladi, qoldiq suvda eritib qaynatiladi, magniy oksidi qo‘shilib issiq holda filtrlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 18,
+    "quote": "Biologik ob’ekt xlorid kislota bilan nordonlashtiriladi va etil spirti bilan bo‘ktiriladi, so‘ng filtrlab ajratiladi. Filtratni suv hammomida quriguncha porlatiladi. Quruq qoldiq suvda eritilgach, qaynaguncha qizdiriladi, so‘ng unga magniy oksidi qo‘shilib chayqatiladi hamda issiq holda filtrlanadi."
+   },
+   {
+    "text": "Mekon kislotasi temir (III) xlorid bilan qizil-qon rang hosil qiladi (qizdirilsa o‘zgarmaydi); suvli eritmasi 210, 284 va 303 nm da spektral maksimumga ega.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 18,
+    "quote": "Temir (III) xloridi eritmasidan tomizilsa qizil-qon rangi hosil bo‘ladi. Rang qizdirilsa o‘zgarmaydi. 2. UB-spektri bo‘yicha aniqlash. Mekon kislotani suvli eritmasi 210, 284 va 303 nm da spektral maksimumlar hosil qiladi."
+   },
+   {
+    "text": "Mekoninni ajratish: ob’ekt etil spirti bilan bo‘ktirilib sulfat kislota bilan nordonlashtiriladi, filtrat kam hajmgacha porlatilib benzol yordamida ekstraksiyalanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 19,
+    "quote": "Biologik ob’ektdan ajratib olish. Maydalangan ob’ekt etil spirti bilan bo‘ktiriladi va sulfat kislota bilan nordonlashtiriladi, suyuqlik filtrlab ajratiladi, kam hajm qolgunga qadar porlatiladi so‘ng benzol yordamida ekstraksiyalanadi."
+   },
+   {
+    "text": "Mekonin qoldig‘iga konsentrlangan sulfat kislota qo‘shilsa yashil rang hosil bo‘ladi, ikki kunda qizilga o‘tadi; isitilsa yashil-zumrad, so‘ng pushti va oxirida qizil rang beradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 19,
+    "quote": "Mekoninni aniqlash. Qoldiqqa konsentrlangan sulfat kislota qo‘shilsa yashil rang hosil bo‘ladi. Uni ikki kun saqlansa, qizil rangga o‘tadi. Sekin asta isitilsa yashil-zumrad rang, so‘ng pushti va oxirida yana qizil rang hosil bo‘ladi."
+   }
+  ],
+  "pages_read": [
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   30,
+   31
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.090",
+  "coverage": "partial",
+  "gaps": [
+   "kannabinoidlarning strukturaviy formulalari (matnda faqat rasm va test chizmasi)",
+   "metabolitlar nomlari va metabolik o‘zgarish yo‘llari (matnda faqat «Kannabinoidlar metabolizmi» rasmi)"
+  ],
+  "points": [
+   {
+    "text": "Nasha (gashish, marixuana, plan, bang va b.) — kanop o‘simligi gullaridan chiqadigan shira, bargi va boshqa qismlaridan iborat aralashma bo‘lishi mumkin.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 61,
+    "quote": "Nasha gashish, marixuanna, plan, bang, dur’, shira va boshqa nomlar bilan ma’lum faol giyohvand moddalar saqlovchi kanop o‘simligi gullaridan chiqadigan shira, bargi va boshqa qisimlaridan iborat aralashma bo‘lishi mumkin."
+   },
+   {
+    "text": "Nasha — hind kanopi gullaridan ajraluvchi, giyohvand faol tetragidrokannabinol saqlovchi shira.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 61,
+    "quote": "Aniq ma’lumotlarga ko‘ra nasha hind kanopi (Sannabis sativa) gullaridan ajraluvchi giyohvand faol tetragidrokannabinol saqlovchi shiradan iborat."
+   },
+   {
+    "text": "Marixuana o‘simlikning yuqori qismidagi barglar, gullar va mevalardan iborat; undagi tetragidrokannabinoidlar 13-15%.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 62,
+    "quote": "Marixuana o‘simlikni yuqori qismidagi barglar va gullari hamda mevalaridan tashkil topgan. Undagi biologik faol moddalar (tetragidrokannabinoidlar) miqdori 13-15% ni tashkil etadi."
+   },
+   {
+    "text": "Gashish suyuq, mumsimon, zangori yoki qoramtir rangli bo‘lib, tetragidrokannabinoidlar 2-10% atrofida.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 62,
+    "quote": "Gashish suyuq, mumsimon holda bo‘lib, asosan zangori yoki qoramtir rangda bo‘ladi. Tarkibida tetragidrokannabinoidlarning miqdori 2%-10% atrofida bo‘lishi mumkin."
+   },
+   {
+    "text": "Gashish yog‘i — erituvchi yoki o‘simlik moyi yordamida olingan quyuq ekstrakt; 10-60% tetragidrokannabinoidlar saqlashi mumkin.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 62,
+    "quote": "Gashish yog‘i o‘simlikdan biror erituvchi yoki o‘simlik moyi yordamida olingan quyuq ekstrakt yoki mumsimon suyuqlik holda bo‘ladi. Tarkibida 10-60 % tetragidrokannabinoidlar bo‘lishi mumkin."
+   },
+   {
+    "text": "Nasha o‘simligidan olinadigan giyohvandlik vositalariga marixuana, gashish, bang, kif, xusus, plan, haras, dagga kabilar kiradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 63,
+    "quote": "Giyohvandlik vositalarining ushbu guruhiga nasha o‘simligidan olingan turli giyohvandlik vositalari: marixuana, gashish, bang, kif, xusus, plan, haras, dagga kabilar kiradi."
+   },
+   {
+    "text": "Quritilgan marixuanada 400 ga yaqin kimyoviy birikma, 70 dan ziyod kannabinoid aniqlangan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 62,
+    "quote": "Quritib olingan marixuana tarkibida 400 yaqin kimyoviy birikma borligi aniqlangan. Chekish vaqtida tutun tarkibidagi kimyoviy moddalarning soni 2000 taga etishi mumkin. Marixuana tarkibida 70 dan ziyod kannabinoidlar mavjud."
+   },
+   {
+    "text": "Nasha dibenzpiran hosilalariga oid kannabinollardan tarkib topgan; doimo kannabinol, kannabidiol va tetragidrokannabinol uchraydi, ulardan faqat tetragidrokannabinol giyohvand ta’sirga ega.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 65,
+    "quote": "dibenzpiran hosilalariga oid kimyoviy tuzilishi to‘liq o‘rganilgan kannabinollardan tarkib topgan. Nasha tarkibida kannabinollardan asosan kannabinol, kannabidiol va tetragidrokannabinol doimo uchrab turadi, lekin ulardan faqat tetragidrokannabinol giyohvand ta’sirga ega."
+   },
+   {
+    "text": "Iste’mol qilinganda nashaning ta’siri 15-30 daqiqadan so‘ng boshlanadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 63,
+    "quote": "Iste’mol qilinganda nashaning ta’siri 15-30 daqiqadan so‘ng boshlanadi."
+   },
+   {
+    "text": "Chekilganda 5-30 daqiqa oralig‘ida kannabinoidlar va 9-TGK qonda yuqori ko‘rsatkichga yetadi, so‘ngra tez kamayadi; boshqa yo‘llar bilan tushganda ta’sir muddati 1,5-3 soat.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 65,
+    "quote": "5-30 daqiqa oralig‘ida kannabinoidlar va 9 – TGK lar yuqori ko‘rsatkichga ega bo‘ladi. So‘ngra tezda ularni miqdori qonda kamayishi kuzatiladi. Organizmga boshqa usullar bilan tushganda ularni ta’sir etish muddati 1,5-3 soat oralig‘ini tashkil etadi."
+   },
+   {
+    "text": "Organizmga tushgan kannabinoidlar asosan jigarda metabolizmga uchraydi; 5 kun ichida 80-90% chiqib ketadi: 20% peshob, 80% axlat bilan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 65,
+    "quote": "Organizmga tushgan kannabinoidlar asosan jigarda metabolizmga uchraydi. Besh kun ichida 80-90% chiqib ketadi. Undan 20% peshob orqali, 80% axlat chiqindilar bilan chiqib ketadi."
+   }
+  ],
+  "pages_read": [
+   60,
+   61,
+   62,
+   63,
+   64,
+   65,
+   66,
+   70,
+   71
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.091",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Fenotiazin (tiodifenilamin) avval antigelmint va antiseptik, keyinchalik peshob yo‘llari shamollashini davolash uchun qo‘llanilgan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 119,
+    "quote": "Fenotiazin (tiodifenilamin) avvallari tibbiyotda antigelmint va antiseptik ta’sirli dori vositasi sifatida, keyinchalik u peshob yo‘llarini shamollash xastaligini davolash uchun qo‘llanilgan."
+   },
+   {
+    "text": "1945 yilda fenotiazin yadrosidagi azotdagi vodorodni alkilaminoalkil radikallariga almashtirib, ko‘plari neyroleptik ta’sirli birikmalar sintezlangan.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 119,
+    "quote": "1945 yilga kelib fenotiazin yadrosidagi azotda joylashgan vodorodni alkilaminoalkil radikallariga almashtirish bilan kuchli biologik faollikka ega bo‘lgan tibbiyot uchun zarur farmakologik xususiyatli birikmalar sintezlanadi. Ularning ko‘plari neyroleptik ta’sirga ega."
+   },
+   {
+    "text": "Tuzilishiga ko‘ra guruhlar: alifatik (aminazin, propazin, levomepromazin), piperazinli (meteperazin, etaperazin, triftazin, ftorfenazin) va piperidin hosilalari (tioredazin, peritsiazin).",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 119,
+    "quote": "1) alifatik hosilalari: aminazin, propazin, levomepromazin va boshqalar. 2) piperazinli hosilalari: meteperazin, etaperazin, triftazin, ftorfenazin va boshqalar. 3) piperidin hosilalari: tioredazin, peritsiazin va boshqalar."
+   },
+   {
+    "text": "Ayrim fenotiazin hosilalari giyohvand va gangituvchi moddalar ta’sirini kuchaytiradi, shuning uchun aminazin, diprazin, tizersin va boshqalar toksikologik hamda narkologik ahamiyatga ega.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 120,
+    "quote": "Fenotiazin hosilalaridan ayrimlari giyohvand va gangituvchi moddalar ta’sirini kuchaytirish xususiyatiga ega. Shu sababli fenotiazin hosilalariga kiruvchi moddalardan aminazin, diprazin, tizersin va boshqalar toksikologik hamda narkologik ahamiyatga ega."
+   },
+   {
+    "text": "Aminazin — 2-xlor-10-(3-dimetilaminopropil)-fenotiazin gidroxlorid; sinonimlari xlorpromazin, xlorazin, largaktil, plegomazin.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 122,
+    "quote": "(2-xlor-10-(3-dimetilaminopropil)-fenotiazin gidroxlorid. Aminazinning xlorpromazin, xlorazin, largaktil, plegomazin va boshqa juda ko‘p nomli sinonimlari bor."
+   },
+   {
+    "text": "Aminazin oq yoki och qizg‘ish mayda kristall kukun, juda gigroskopik, quyosh nurida qorayadi; suv, etil spirti va xloroformda yaxshi eriydi, dietil efirida deyarli erimaydi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 122,
+    "quote": "Aminazin oq yoki och qizg‘ish rangli mayda kristall kukun. Aminazin kukuni juda gigroskopik va quyosh nuri ta’sirida qoramtir rangga o‘tadi. Suv, etil spirti va xloroformda yaxshi erib, dietil efirida deyarli erimaydi."
+   },
+   {
+    "text": "Aminazin uyqu chaqiruvchi dorilar, barbituratlar, giyohvandlar, analgetiklar, mahalliy anestetiklar va psixotrop moddalar ta’sirini kuchaytiradi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 123,
+    "quote": "Aminazin uyqu chaqiruvchi dorilar, barbituratlar, giyohvandlar, analgetiklar, mahalliy anestetiklar va psixotrop moddalar ta’sirini kuchaytiradi."
+   },
+   {
+    "text": "Propazin — 10-(3-dimetilaminopropil)-fenotiazin gidroxlorid.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 124,
+    "quote": "10-(3-dimetilaminopropil )-fenotiazin gidroxlorid."
+   },
+   {
+    "text": "Etaperazin — 10-[4-(oksietil)piperazinil-1]-propil-2-xlor-fenotiazin digidroxlorid; aminazinga nisbatan ancha kuchli neyroleptik.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 127,
+    "quote": "10-[4-(- oksietil) piperazinil-1]- propil-2-xlor-fenotiazin digidro -xlorid. Etaperazin faol neyroleptik dori vositalariga mansub bo‘lib aminazinga nisbatan ancha kuchli ta’sirga ega."
+   },
+   {
+    "text": "Diprazin (pipolfen, prometazin) oq kristall kukun, suv (1:60), etil spirti (1:9), xloroformda (1:2) yaxshi eriydi, dietil efirida deyarli erimaydi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 125,
+    "quote": "Diprazin (pipolfen, prometazin, protazin...) oq kristall kukun, suv (1:60), etil spirti (1:9) va xloroformda (1:2) yaxshi eriydi, dietil efirida deyarli erimaydi."
+   },
+   {
+    "text": "Tizersin (levomepromazin) oq kristall kukun, etil spirti, dietil efiri, xloroformda yaxshi, suvda yomon eriydi; ishqoriy muhitda organik erituvchilarda yaxshi eriydi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 128,
+    "quote": "Tizersin (levomepromazin, levopromozin, metatrimeprazin) oq kristall kukun, etil spirti, dietil efiri, xloroformda yaxshi, suvda yomon eriydi. Preparat ishqoriy muhitda organik erituvchilarda yaxshi eriydi."
+   },
+   {
+    "text": "Tizersin adrenolitik, antigistamin, analgetik ta’sirga ega, tez va kuchli sedativ ta’sir etadi; psixoz, alkogol psixozi, uyqusizlik va dermatozda qo‘llaniladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 129,
+    "quote": "Narkologik ahamiyati. Tizersin adrenolitik, antigistamin, analgetik ta’sirga ega. U tez va kuchli sedativ ta’sir etadi va shuning uchun psixoz, alkogol psixozi, uyqusizlik hamda dermatoz xastaliklarida tinchlantiruvchi vosita sifatida qo‘llaniladi."
+   }
+  ],
+  "pages_read": [
+   119,
+   120,
+   121,
+   122,
+   123,
+   124,
+   125,
+   126,
+   127,
+   128,
+   129
+  ]
+ }
+]

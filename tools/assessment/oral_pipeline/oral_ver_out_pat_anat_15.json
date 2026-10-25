@@ -1,0 +1,905 @@
+[
+ {
+  "id": "pat_anat.c1.019",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "pat_anat.c1.020",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OVERSTATED",
+    "fix": "Pnevmoskleroz va pnevmotsirrozda to‘qima gipoksiyasi va kichik qon aylanish doirasidagi qon aylanishining qiyinlashuvi o‘ng qorincha gipertrofiyasiga (o‘pka yuragi) olib keladi; keyinchalik dekompensatsiya belgilari bilan yurak yetishmovchiligi yuzaga kelishi mumkin (manbada bu «o‘lim sababi» sifatida alohida aytilmagan).",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "i=8: «O‘lim sabablari» yorlig‘i manbada yo‘q (manba faqat o‘pka yuragi/yurak yetishmovchiligi rivojlanishini aytadi); sanogenez qisman (faqat antiproteazalar)."
+  ]
+ },
+ {
+  "id": "pat_anat.c1.021",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OVERSTATED",
+    "fix": "Qo‘llanmaga ko‘ra, Shor usulining muayyan afzalligi — a’zolar orasidagi anatomik-topografik bog‘lanishlarning saqlanishi bo‘lib, bu jarohat kanali yo‘nalishini, o‘sma va boshqa kasallik jarayonlarining tarqalishini kuzatishga imkon beradi.",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OVERSTATED",
+    "fix": "Qo‘llanmada K.I. Xijnyakova (1986) taklif qilgan metodika bayonida (oshqozon-ichak tarkibini o‘rganish uchun) ichak a’zolarini Abrikosov bo‘yicha ajratish eslatilgan: ingichka ichak boshlang‘ich qismida ikki ligatura orasidan kesiladi va ichak tutqichidan ajratiladi.",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "i=2: Rossiya MV 1996 N407 buyrug‘i Rossiya hujjati sifatida sana bilan keltirilgan (OK), lekin consultant.ru sahifasi «Документ утратил силу или отменен» deydi — tarixiy hujjat, O‘zbekiston uchun majburiy emas; matnda «tarixiy» belgisi yo‘q, ilovada shuni aniq yozish tavsiya etiladi.",
+   "i=6: Shor–Abrikosov solishtirmasi manbada yo‘q.",
+   "i=7: Abrikosov-ga oid ichak bandi Xijnyakova metodikasi (oshqozon-ichak tarkibi) ichidan olingan, Abrikosov usulining mohiyati emas."
+  ]
+ },
+ {
+  "id": "pat_anat.c1.022",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "pat_anat.c1.023",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "Qon tomir o‘smalarining JSST zamonaviy tasnifi yo‘q (gaps), darslik tasnifi eski — mavzu qisman yoritilgan."
+  ]
+ },
+ {
+  "id": "pat_anat.c1.024",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "Gripp ma’lumotlari eski darslikdan (A1, A2 Gonkong viruslari) — matnda «darslik davri» deb qayd etilgan (OK)."
+  ]
+ },
+ {
+  "id": "pat_anat.c1.025",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "pat_anat.c1.026",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OVERSTATED",
+    "fix": "Aralash shaklda dastlabki ikki turga xos to‘qima o‘zgarishlari birga uchraydi; bunda ancha tez-tez retension kelib chiqishli kistoz hosilalar paydo bo‘ladi.",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "i=7: «нередко» -> «ko‘p hollarda» (kuchaytirilgan); «ancha tez-tez» bo‘lishi kerak. Sanogenez manbada yo‘q (gaps)."
+  ]
+ },
+ {
+  "id": "pat_anat.c1.027",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OVERSTATED",
+    "fix": "Miomalarda ancha tez-tez ikkilamchi o‘zgarishlar — nekroz, kistalar hosil bo‘lishi, gialinoz, jumladan tomir devorining gialinozi va tromboz kuzatiladi.",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "i=2: «нередко» -> «ko‘p hollarda» (kuchaytirilgan)."
+  ]
+ },
+ {
+  "id": "pat_anat.c1.028",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OVERSTATED",
+    "fix": "Surunkali mieloid leykozning terminal bosqichida o‘lganlarda yassi suyaklar, naysimon suyaklar epifiz va diafizlarining ilik to‘qimasi shirali, kulrang-qizil yoki kulrang-sariq, yiringsimon bo‘ladi (pioid suyak iligi).",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OVERSTATED",
+    "fix": "Surunkali mieloid leykozning terminal bosqichida o‘lganlarni yorib ko‘rishda taloq keskin kattalashgan, ba’zan deyarli butun qorin bo‘shlig‘ini egallaydi, massasi 6–8 kg ga yetadi.",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OVERSTATED",
+    "fix": "Surunkali mieloid leykozda leykoz hujayralari tomirlar bo‘shlig‘ida ko‘p miqdorda topiladi, leykoz trombolarini hosil qiladi va tomir devorini infiltratsiyalaydi; shu o‘zgarishlar tufayli infarktlar ham, qon quyilishlar ham ancha tez-tez uchraydi.",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "i=6,7: terminal bosqich qaydi tushib qolgan; i=8: «нередки» -> «ko‘p uchraydi» (kuchaytirilgan). Sanogenez va monotsitar/paraproteinemik leykozlar yoritilmagan."
+  ]
+ },
+ {
+  "id": "pat_anat.c1.029",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OVERSTATED",
+    "fix": "Rossiya SSVning 1996-yil 10-dekabrdagi 407-son buyrug‘i (Rossiya hujjati, 1996-yil) 6.7-bandida a’zolarni chiqarishda ekspert ixtiyori bilan va aniq holatlarga qarab alohida yoki to‘liq eviseratsiya usuli qo‘llanishi yozilgan (to‘liq eviseratsiyada a’zolar yagona kompleks holida chiqarilib, ajratilmasdan kesmalar bilan tekshiriladi).",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OVERSTATED",
+    "fix": "Rossiya SSVning 1996-yil 10-dekabrdagi 407-son buyrug‘ida zarur bo‘lganda boshqa usullar ham qo‘llanishi mumkinligi aytilgan; ulardan biri — Virxov usuli (har bir a’zo alohida chiqariladi).",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OVERSTATED",
+    "fix": "Izhevsk qo‘llanmasiga (2008) ko‘ra, sud-tibbiy tekshiruvlar uchun Shor va Abrikosov usullari tavsiya etiladi, chunki ular har bir a’zoni yetarlicha to‘liq va har tomonlama tekshirishni ta’minlaydi.",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OVERSTATED",
+    "fix": "Rossiya SSVning 1996-yil 10-dekabrdagi 407-son buyrug‘ida (6.7.1-band) alohida murakkab holatlar uchun «istisno qilish usuli» ko‘rsatilgan: u o‘smaning birlamchi o‘chog‘ini aniqlash maqsadida, a’zolar kompleksida zich bitishmalar bo‘lganda qo‘llanadi.",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OVERSTATED",
+    "fix": "Rossiya SSVning 1996-yil 10-dekabrdagi 407-son buyrug‘ida (6.7.2-band) «izlash» usuli a’zolar orasida juda zich bitishma konglomeratlari bo‘lganda qo‘llanishi aytilgan: uzun yumshoq metall zondlar, tumshuqsimon metall bujlar va kateterlar yordamida bir-biriga yopishgan a’zolarning anatomik-topografik munosabatlari aniqlanadi.",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OVERSTATED",
+    "fix": "Rossiya SSVning 1996-yil 10-dekabrdagi 407-son buyrug‘ida (6.7.3-band) «tekislik birikmalari» usuli keltirilgan: a’zolar munosabatini buzadigan keng, massiv bitishmalarda organokompleks (konglomerat) chuqur parallel kesmalar bilan ochilgan kitob ko‘rinishidagi yupqa to‘qima plastinkalariga ajratiladi.",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "Mavzu «kam qo‘llaniladigan usullar»: manbalarda ularning kamligi haqida son-raqam yo‘q (gaps). Rossiya MV 1996 N407 buyrug‘i bekor qilingan (consultant.ru: «утратил силу») — i=0,1,5,6,7 matnlarida buyruq manbasi ko‘rsatilmagan yoki hozirgi zamon amaliyoti sifatida ko‘rinadi; tuzatishda hujjat nomi/sanasi bilan atributsiya qilindi, ilovada «tarixiy Rossiya hujjati» deb belgilash kerak.",
+   "i=8,9: Italiya — COVID-19 autopsiya protokoli (maxsus holat), umumiy amaliyot emas; ‘Italiyada’ muallif tashkiloti (Milan) asosida."
+  ]
+ },
+ {
+  "id": "pat_anat.c1.030",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "Savoldagi «yelbo‘g‘oz» = emfizema deb talqin qilingan; bu talqin manbadan tekshirib bo‘lmaydi (so‘rov mualliflari qarori). Manba makro+mikro belgilarni aralash beradi."
+  ]
+ }
+]

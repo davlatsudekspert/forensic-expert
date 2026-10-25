@@ -1,0 +1,935 @@
+[
+ {
+  "id": "pat_anat.c23.097",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "pat_anat.c23.098",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OVERSTATED",
+    "fix": "Etiologiyasi aniqlanmagan; ammo kelib chiqishida mahalliy allergiyaning ahamiyati shubhasiz, bu allergiya, ehtimol, ichak mikroflorasi bilan bog‘liq.",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "p9: «безусловно значение местной аллергии» noto‘g‘ri kuchsizlantirilgan («ehtimol» butun da’voga qo‘yilgan; manbada «ehtimol» faqat mikroflora bog‘lanishiga tegishli)."
+  ]
+ },
+ {
+  "id": "pat_anat.c23.099",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "pat_anat.c23.100",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": []
+ },
+ {
+  "id": "pat_anat.c23.101",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OVERSTATED",
+    "fix": "Darslikdagi rasm izohlariga ko‘ra: flegmonoz appenditsitda devor shishgan va yiringli ekssudat bilan qatlamlarga ajralgan; o‘tkir flegmonoz appenditsit periappenditsit bilan birga tasvirlangan.",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "p2: dalil faqat rasm izohlari (figure captions); «Mikroskopik ko‘rinish» va «birga kelishi mumkin» manba matnida aytilmagan — xulosa.",
+   "Flegmonoz turning mikroskopik tavsifi yupqa: asosan leykotsitar infiltratning butun devorga tarqalishi (p1) va rasm izohlari."
+  ]
+ },
+ {
+  "id": "pat_anat.c23.102",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "WRONG",
+    "fix": "Birinchi kunlarda jigar biroz kattalashgan, zichroq yoki bo‘sh, sirtida ham, kesimda ham yorqin sariq rangda; so‘ngra jigar tez kichrayadi («ko‘z oldida eriydi»), bo‘shashadi, kapsulasi burishadi, kesimda kulrang, loysimon ko‘rinadi.",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "p2: tarjima xatosi — «ярко-желтую» = «yorqin sariq», «och sariq» (бледно-жёлтый) emas."
+  ]
+ },
+ {
+  "id": "pat_anat.c23.103",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "Terminologiya: «ожирение гепатоцитов» «semirish» deb kalkalangan (p7–p10); patologiya atamasi sifatida «yog‘lanish / yog‘li infiltratsiya» aniqroq (ma’no saqlangan, verdikt o‘zgarmadi)."
+  ]
+ },
+ {
+  "id": "pat_anat.c23.104",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OVERSTATED",
+    "fix": "Strukov darsligiga ko‘ra, (B tipidagi) virusli gepatit patogenezida virus-immunogenetik nazariya qabul qilingan: kasallik shakllarining xilma-xilligi virusga immun javob xususiyatlari bilan bog‘lanadi.",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OVERSTATED",
+    "fix": "Darslikka ko‘ra (B tipi misolida), virus avval regionar limfa tugunlarida ko‘payadi (regionar limfadenit), so‘ng viremiya boshlanadi, deb hisoblanadi.",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "p6–p11 patogenez Strukovda faqat B tipi uchun yozilgan («(типа В)»); p6 bu cheklovni va darslik davridagi «hozir qabul qilingan» atributsiyasini tushirib qo‘ygan; p7 «считают» ehtiyot so‘zi yo‘qolgan.",
+   "Strukov matni etiologiyada faqat A va B viruslarini sanaydi (eskirgan); javob 5 virusni WHO manbasidan beradi (p0–p2) va Strukov ro‘yxatini to‘liq deb da’vo qilmaydi — to‘g‘ri. C, D, E uchun inkubatsiya/patogenez berilmagan (qisman).",
+   "p4: «HBcorAg» — darslikdagi eski belgi; zamonaviy belgi HBcAg."
+  ]
+ },
+ {
+  "id": "pat_anat.c23.105",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OVERSTATED",
+    "fix": "Strukov darsligiga ko‘ra, koagulyatsion nekroz va Kaunsilmen tanachalarining hosil bo‘lishi — o‘tkir virusli gepatitning klassik belgisi (zamonaviy adabiyotda Kaunsilmen tanachasi apoptozga uchragan hujayra — atsidofil tana sifatida talqin qilinadi).",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "p1 (Strukov: Kaunsilmen tanachalari koagulyatsion nekroz bilan) va p2 (PMC: Kaunsilmen tanasi = apoptoz) bir-biriga zid ko‘rinadi; eskirgan darslik talqini hozirgi deb berilgan — atributsiya va zamonaviy izoh kerak."
+  ]
+ },
+ {
+  "id": "pat_anat.c23.106",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "WRONG",
+    "fix": "Yomon sifatli shaklda jigar massiv nekrozga uchrab tez kichrayadi, kapsulasi burishadi, to‘qimasi yorqin sariq (oxra-sariq) bo‘ladi.",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "p6: tarjima xatosi — «ярко желтой (охряно-желтой)» = «yorqin sariq (oxra-sariq)», «och sariq» emas."
+  ]
+ },
+ {
+  "id": "pat_anat.c23.107",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OVERSTATED",
+    "fix": "Strukov darsligiga ko‘ra (darslik yozilgan davr uchun), asosiy klinik ahamiyatga ega bo‘lganlari — virusli, alkogolli va biliar sirrozlar; darslikda virusli sirroz odatda B gepatitidan, alkogolli sirroz alkogolli gepatit xurujlaridan keyin rivojlanadi deyilgan.",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "p4: darslikdagi «в настоящее время» (1990-yillar holati) hozirgi holat sifatida berilgan; bugun virusli sirrozning asosiy sababi B va C gepatitlari (WHO, c23.104 manbasi), MASLD/NAFLD ham muhim — atributsiya kerak."
+  ]
+ },
+ {
+  "id": "pat_anat.c23.108",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": "",
+    "source_quality": "strong"
+   }
+  ],
+  "issues": [
+   "p6–p10 manbasi umumiy jigar sirrozi bo‘limi (portal sirrozga xos emas) — matnlar ham umumiy tarzda yozilgan, xato emas."
+  ]
+ }
+]

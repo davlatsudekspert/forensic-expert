@@ -106,6 +106,10 @@ def web_ok(src, quote):
 def clean_text(t):
     for pat, rep in TERMS:
         t = re.sub(pat, rep, t)
+    # Apostrof birligi: o', g' -> oʻ/gʻ (‘), boshqa harf'harf -> tutuq belgisi (’)
+    t = re.sub(r"([oOgG])['`ʼ’]([A-Za-z])", lambda m: m.group(1) + '‘' + m.group(2), t)
+    t = re.sub(r"([A-Za-z])['`ʼ]([A-Za-z])", lambda m: m.group(1) + '’' + m.group(2), t)
+    t = re.sub(r',{2,}', ',', t)
     return t.strip()
 
 
@@ -209,7 +213,7 @@ for fin in sorted(glob.glob(os.path.join(W, 'oral_ver_in_*.json'))):
         if len(pts) < 3:
             drop('3 tadan kam band')
             continue
-        gaps = [g for g in q.get('gaps', []) if not GAP_BAD.search(g)]
+        gaps = [clean_text(g) for g in q.get('gaps', []) if not GAP_BAD.search(g)]
         cov = 'full' if (q['coverage'] == 'full' and len(pts) >= 0.8 * len(q['points'])) else 'partial'
         ans = {'c': cov, 'p': pts}
         if cov == 'partial' and gaps:

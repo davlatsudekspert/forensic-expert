@@ -1,0 +1,1023 @@
+[
+ {
+  "id": "sud_kimyo.c23.121",
+  "coverage": "partial",
+  "gaps": [
+   "ekstraksiya sonining miqdoriy asoslanishi (ko‘p martalik ekstraksiyada suvli fazada qolgan modda ulushini hisoblash formulasi) kitobda keltirilmagan",
+   "ekstraksiya soni va erituvchi hajmini tanlash bo‘yicha aniq tavsiyalar yo‘q (faqat «tajriba yo‘li bilan topiladi» deyilgan)"
+  ],
+  "points": [
+   {
+    "text": "Zaharli moddalarni ob’ektdan to‘liqroq ajratib olish uchun ularning organik erituvchilarda eruvchanligi va eritmadan organik qatlamga ekstraksiyalanish darajasini hisobga olish lozim.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 89,
+    "quote": "Zaharli, narkotik va gangituvchi moddalarni ob'еktlardan to’liqroq ajratib olish uchun ularning organik erituvchilarda eruvchanlik xususiyatlari va eritmalardan organik qatlamga ekstraktsiyalanish darajalarini inobatga olish lozim."
+   },
+   {
+    "text": "Zaharli moddalarni ob’ektdan ajratib olishga ta’sir qiluvchi omillar qatoriga pH muhiti, elektrolitlar, organik erituvchi tabiati bilan birga ekstraksiya soni va qayta ekstraksiyalash (reekstraksiyalash) kiradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 294,
+    "quote": "Zaharli moddalarni ob’ektdan ajratib olishda ta’sir qiluvchi omillar: pH- muhiti, elektrolitlar, organik erituvchilar tabiati, ekstraksiya soni, qayta ekstraksiyalash (reekstraksiyalash)."
+   },
+   {
+    "text": "Moddaning organik qatlamga o‘tishi taqsimlanish koeffitsientiga (K = Corg/Csuv) bog‘liq.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 89,
+    "quote": "Moddalar ekstraktsiyalanishi taqsimlanish koeffitsеntiga (K) bog’liq holda organik erituvchi qatlamiga o’tadi."
+   },
+   {
+    "text": "Ekstraksiyalanish darajasi R = A/N·100% (A — organik erituvchiga o‘tgan modda miqdori, N — moddaning suvdagi boshlang‘ich umumiy miqdori); K va R qancha katta bo‘lsa, modda shuncha ko‘p organik qatlamga o‘tadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 89,
+    "quote": "R - moddani ekstraktsiyalanish darajasi A - organik erituvchida ekstraktsiyalangan modda miqdori N - moddaning (boshlang’ich) suvdagi umumiy miqdori. K va R yuqorida kеltirilgan formulalar asosida ular qancha katta bo’lsa, modda shuncha ko’p organik erituvchi qatlamiga o’tadi."
+   },
+   {
+    "text": "Aksariyat zaharli, narkotik va gangituvchi moddalarni suvli qatlamdan organik erituvchi bilan ajratib olish jarayoniga ekstraksiya soni ta’sir ko‘rsatadi; ekstraksiya soni tajriba yo‘li bilan topiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 91,
+    "quote": "Adabiyotlar tahlili shuni ko’rsatdiki, aksariyat zaharli, narkotik va gangituvchi moddalarni suvli qatlamdan organik erituvchilar yordamida ajratib olish jarayoniga ekstraktsiya soni ta'sir ko’rsatadi. Ekstraktsiya soni tajriba yo’li bilan topiladi."
+   },
+   {
+    "text": "Peshobdan (fenasetin yoki salitsil kislotasi) suyuqlik-suyuqlik ekstraksiyasida 5 ml organik erituvchi (xloroform yoki dietil efiri) bilan 15 daqiqa chayqatish jarayoni 3 marta takrorlanadi va organik qatlamlar birlashtiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 226,
+    "quote": "So`ngra 5 ml organik erituvchi (xloroform yoki dietil efiri) qo`shilib, 15 daqiqa chayqatib turiladi. Aralashma ajratgich voronkaga solinib, organik qatlam ajratib olinadi. Ushbu jarayon 3 marta takrorlanadi. Organik qatlamlar birlashtiriladi."
+   },
+   {
+    "text": "Oksalat kislotasi bilan nordonlashtirilgan etil spirti bilan ajratishda nordon eritma ishqoriy muhitga keltirilib, efir bilan 3 qayta ekstraksiyalanadi va ajralmadan alkaloidlar tekshiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 95,
+    "quote": "Olingan nordon spirtli eritma ammiak yoki natriy bikarbonat eritmasi bilan ishqoriy muhitga kеltiriladi va efir bilan 3 qayta ekstrtsiyalanib, ajralmadan alkaloidlar tеkshiriladi."
+   },
+   {
+    "text": "V.F.Kramarenko usulida nordon umumiy sentrifugat 2 marta 40 ml efir bilan ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 96,
+    "quote": "Umumiy sеntrifugat 2 marta 40 ml efir bilan ekstraktsiyalanadi va efirli ajratma tashlab yuboriladi (yoki kislota xossali moddalar uchun tеkshiriladi)."
+   },
+   {
+    "text": "Kramarenko usulida keyingi bosqichda eritma xloroform bilan 3 qayta ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 96,
+    "quote": "so’ngra xloroform bilan 3 qayta ekstraktsiyalanadi."
+   }
+  ],
+  "pages_read": [
+   89,
+   90,
+   91,
+   95,
+   96,
+   226,
+   227,
+   228,
+   229,
+   294
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.122",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Qutbli erituvchilar bilan olingan kislotali va ishqoriy ajralmalarda ajratilgan modda bilan birga oqsillar, aminokislotalar, yog‘ va lipidlar kabi yot moddalar bo‘ladi va ular tahlilga halaqit beradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 92,
+    "quote": "Ular tarkibida ajratilgan modda bilan bir qatorda ekstraktsiyalangan oqsillar, aminokislotalar, yog’ va lipidlar kabi yot moddalar bo’lib, ular tahlil olib borishda halaqit bеradi."
+   },
+   {
+    "text": "Yot moddalar reaktivlar bilan tekshiriluvchi moddaga o‘xshash reaksiya mahsulotlarini berishi va miqdoriy tahlilga salbiy ta’sir qilishi mumkin; shuning uchun ekstraktlar tozalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 92,
+    "quote": "Ayrim hollarda esa ular rеaktivlar bilan tеkshiriluvchi modda kabi rеaktsiya mahsulotlarini hosil qilishi, hamda miqdori tahlilda ham salbiy ta'sir ko’rsatishi mumkin. Shuning uchun bunday moddalarni yo’qotish maqsadida ekstraktlar tozalanadi."
+   },
+   {
+    "text": "Tozalash usullari: suzish, filtrlash, sentrifugalash, cho‘ktirish va qayta ekstraksiyalash.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 92,
+    "quote": "Tozalashni suzish, filtrlash, sеntrifugalash, cho’ktirish va qayta ekstraktsiyalash kabi usullari mavjud."
+   },
+   {
+    "text": "Qayta ekstraksiyalash usuli zaharli moddalarning fizik-kimyoviy xossalariga asoslanib, ularni yot moddalardan tozalaydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 92,
+    "quote": "5- Qayta ekstratsiyalash usuli. Qayta ekstratsiyalash usulida zaharli moddalarni yot moddalardan tozalashda fizik-kimyoviy xossalariga asoslaniladi."
+   },
+   {
+    "text": "Kislotali xossali moddalar (organik kislotalar, barbituratlar) ekstraksiya va reekstraksiya (qayta ekstraksiya) usulida tozalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 92,
+    "quote": "Kislotali xossaga ega moddalar, ya'ni organik kislotalar va barbituratlarni ekstraktsiya va rеekstraktsiya (qayta ekstraktsiya) usullarida tozalanadi."
+   },
+   {
+    "text": "Ishqoriy xossali moddalar — alkaloidlar va ularning sintetik analoglari ham reekstraksiya usulida tozalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 92,
+    "quote": "Ishqoriy xossaga ega bo’lgan moddalar alkaloidlar va ularni sintеtik analoglari ham rеekstraktsiya usulida tozalanadi"
+   },
+   {
+    "text": "Qayta ekstraksiyalab tozalashda pH muhiti aniq bo‘lishi zarur, aks holda tekshiriluvchi modda yo‘qotilishi mumkin.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 92,
+    "quote": "Qayta ekstraktsiyalab tozalashda pH muhiti aniq bo’lishi zarur. Agarda rN- muhitiga ahamiyat bеrilmasa tеkshiriluvchi modda yo’qotilishi mumkin."
+   },
+   {
+    "text": "Kislotali ajralmani bu usulda tozalashda neytral va kuchsiz asos xossali moddalar yo‘qotiladi, shuning uchun ularni shu yo‘l bilan tozalab bo‘lmaydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 92,
+    "quote": "Bu usulda nеytral va kuchsiz asos xossali moddalarni qayta ekstraktsiyalab tozalab bo’lmaydi, chunki ularni tozalash davomida yo’qotib qo’yiladi."
+   },
+   {
+    "text": "Ishqoriy ajralmani qayta ekstraksiyalab tozalashda kuchsiz asos xossali moddalar (purin hosilalari, narkotin, promedol, antipirin, amidopirin) yo‘qotiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 93,
+    "quote": "Qayta ekstraktsiyalab tozalashda kuchsiz asos xossasiga ega moddalar (purin hosilalari, narkotin, promеdol, antipirin va amidopirinlar) yo’qotib qo’yiladi."
+   },
+   {
+    "text": "Biosuyuqliklar (qon, peshob) tahlilida (paroksetin misolida) namuna ishqoriy muhitda n-geksan kabi erituvchi bilan ekstraksiyalanadi, so‘ng organik qatlam kislotali eritmaga o‘tkazilib YuSSX usulida yoki organik erituvchiga reekstraksiyalanib gaz xromatografiya usulida aniqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 131,
+    "quote": "Namuna (qon,peshob) ishqoriy muhitda turli organik erituvchilar masalan, n-geksanda ekstraksiyalanadi. So‘ngra organik qatlam kislotali eritmada eskstraksiyalanib, YUSSX usulida yoki organik erituvchida reekstraksiyalanib gaz xromatografiya usulida aniqlanadi."
+   }
+  ],
+  "pages_read": [
+   92,
+   93,
+   131,
+   228,
+   229,
+   230
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.123",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Kislotali muhitda olingan ajralmadagi kislotali xossali moddalar (organik kislotalar, barbituratlar) ekstraksiya va reekstraksiya (qayta ekstraksiya) usulida yot moddalardan tozalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 229,
+    "quote": "1. Kislotali xossaga ega moddalar, ya'ni organik kislotalar va barbituratlarni ekstraktsiya va rеekstraktsiya (qayta ekstraktsiya) usullarida tozalanadi."
+   },
+   {
+    "text": "1-bosqich: qoldiqqa ishqor qo‘shib (pH-13) ekstraksiyalanadi; organik qatlam keraksiz, ishqoriy suvli qatlam esa kerakli qism hisoblanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 229,
+    "quote": "OH- org. qatlam kеraksiz qoldiq + ishqor ----------> ekstraktsiyalash pH-13 ishq-y suvli qatlam, kerak"
+   },
+   {
+    "text": "2-bosqich: ishqoriy suvli qatlam kislota bilan (pH-1) reekstraksiya qilinadi; tekshiriladigan moddalar organik qatlamga o‘tadi, suvli qatlam keraksiz.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 229,
+    "quote": "org.qatlam tеk.moddalar kislota (pH-1) - rеekstraktsiya suvli qatlam kеraksiz"
+   },
+   {
+    "text": "Usulning asosi: eritma pH ishqoriy tomonga o‘zgarsa, organik kislotalar dissotsilanishi ortib, organik erituvchiga ekstraksiyalanishi pasayadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 90,
+    "quote": "Eritma pH- sharoitini ishqoriy tomonga o’zgarishi organik kislotalar eritmalarini dissotsiyalanishini oshiradi va dissotsiyalanmagan molеkulalar kamayishi sababli organik erituvchilar bilan ekstraktsiyalanishi pasayadi."
+   },
+   {
+    "text": "Aksincha, muhit kislotali tomonga o‘zgarsa, dissotsilanmagan molekulalar soni ortib, organik erituvchiga ekstraksiyalanish ortadi; kuchsiz organik kislotalar ham ko‘p ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 90,
+    "quote": "Aksincha vodorod ionlari kontsеntratsiyasi kislotali tomonga o’zgarsa, dissotsiyalanmagan molеkulalar soni ortishi hisobiga organik erituvchilarda ekstraktsiyalanishi ortadi. Bunday sharoitda kuchsiz organik kislotalar ham to’liq dissotsiyalanmagan holda bo’lib, ko’p ekstraktsiyalanadi."
+   },
+   {
+    "text": "Qayta ekstraksiyalab tozalashda pH muhiti aniq bo‘lishi kerak, aks holda tekshiriluvchi modda yo‘qotilishi mumkin.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 92,
+    "quote": "Qayta ekstraktsiyalab tozalashda pH muhiti aniq bo’lishi zarur. Agarda rN- muhitiga ahamiyat bеrilmasa tеkshiriluvchi modda yo’qotilishi mumkin."
+   },
+   {
+    "text": "Bu usulda neytral va kuchsiz asos xossali moddalarni tozalab bo‘lmaydi, chunki ular yo‘qotib qo‘yiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 229,
+    "quote": "Bu usulda nеytral va kuchsiz asos xossali moddalarni tozalab bo’lmaydi, chunki ularni yo’qotib qo’yiladi."
+   },
+   {
+    "text": "Barbituratlar, benzoy va salitsil kislotalari, kofein kabi sublimatsiyalanuvchi moddalarni tozalashda quruq haydash (vozgonka) ham qo‘llaniladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 229,
+    "quote": "Issiqlik ta'sirida sublimatsiyalanuvchi ya'ni barbituratlar, bеnzoy va salitsil kislotalari, kofеin kabi moddalarni tozalashda foydalaniladi."
+   },
+   {
+    "text": "Kislota xossali moddalardan barbituratlarni xromatografik tozalash va aniqlashda xloroform – n-butanol – 25% NH4OH (70:40:5) sistemasi qo‘llaniladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 93,
+    "quote": "Masalan: kislota xossali moddalardan barbituratlarni tozalash va aniqlashda xloroform - n-butanol - 25% NH4OH (70:40:5) sistеmasidan foydalaniladi."
+   }
+  ],
+  "pages_read": [
+   89,
+   90,
+   91,
+   92,
+   93,
+   228,
+   229,
+   230
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.124",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Ishqoriy muhitda olingan ajralmadagi ishqoriy xossali moddalar — alkaloidlar va ularning sintetik analoglari reekstraksiya usulida tozalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 229,
+    "quote": "2. Ishqoriy xossaga ega bo’lgan moddalar, alkaloidlar va ularni sintеtik analoglari ham rеekstraktsiya usulida tozalanadi:"
+   },
+   {
+    "text": "1-bosqich: qoldiqqa kislota qo‘shib (pH-1) ekstraksiyalanadi; organik qatlam keraksiz, moddalar kislotali suvli qatlamda qoladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 229,
+    "quote": "H+ org. qatlam, kеraksiz qoldiq + kislota --------- > ekstraktsiyalash pH-1 kislotali suvli qatlam"
+   },
+   {
+    "text": "2-bosqich: kislotali suvli qatlam ishqor bilan (pH-13) reekstraksiya qilinadi; tekshiriladigan moddalar organik qatlamga o‘tadi, suvli qatlam keraksiz.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 229,
+    "quote": "org.qatlam tеk.moddalar ishqor (pH-13) - rеekstraktsiya suvli qatlam kеraksiz"
+   },
+   {
+    "text": "Usulning asosi: alkaloidlar va sintetik azot saqlovchi birikmalar kislotali muhitda organik qatlamga o‘tmay suvli eritmada qoladi; ularni ajratish uchun eritmaga ishqor qo‘shib asos holiga keltiriladi va organik erituvchi bilan ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 91,
+    "quote": "Alkaloid va sintеtik azot saqlovchi organik birikmalar kislotali muhitda organik erituvchilar qatlamiga o’tmaydi va suvli eritmada saqlanadi. Ularni ajratib olish uchun suvli eritmaga ishqor qo’shib, asos holiga kеltiriladi va organik erituvchi bilan ekstraktsiyalanadi."
+   },
+   {
+    "text": "Bu yerda ham pH muhitiga e’tibor berish kerak: qayta ekstraksiyalab tozalashda kuchsiz asos xossali moddalar (purin hosilalari, narkotin, promedol, antipirin, amidopirin) yo‘qotiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 93,
+    "quote": "Bu еrda ham pH –muhitiga ahamiyat bеrish kеrak. Qayta ekstraktsiyalab tozalashda kuchsiz asos xossasiga ega moddalar (purin hosilalari, narkotin, promеdol, antipirin va amidopirinlar) yo’qotib qo’yiladi."
+   },
+   {
+    "text": "Misol: fenotiazin hosilalari ishqoriy (pH 13) muhitdan olingan efirli ekstraktdan 0,5 M sulfat kislota eritmasi bilan (10, 10, 10, 5 ml) reekstraksiyalab ajratiladi va tahlil qilinadi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 120,
+    "quote": "Ishqoriy muhitdan olingan efirli ekstraktdan fenotiazin hosilalari sulfat kislotaning 0,5 M eritmasi bilan (10, 10, 10, 5 ml) reekstraksiyalab ajratiladi va tahlil qilinadi."
+   },
+   {
+    "text": "Ishqoriy ajralmani xromatografik tozalashda alkaloidlar uchun xloroform–atseton–dietilamin (50:30:2) yoki xloroform–atseton–ammiak (30:20:2) sistemalari, aniqlovchi reaktiv sifatida Dragendorf reaktivi qo‘llaniladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 93,
+    "quote": "Ishqoriy ajralmani tozalashda alkaloidlar uchun xloroform-atsеton-dietilamin (50:30:2), xloroform-atsеton-ammiak (30:20:2) yoki boshqa qo’zg’aluvchi faza, aniqlovchi rеaktiv sifatida Dragеndorf rеaktivi qo’llaniladi."
+   },
+   {
+    "text": "Strixnin, paxikarpin kabi moddalarni ajratish va tozalashda elektrodializ qo‘llaniladi: alkaloid tuzlari doimiy tok ta’sirida yarim o‘tkazgich pardadan katod tomon siljiydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 93,
+    "quote": "A. Elеktrodializ usulida tozalash - strixnin, paxikarpin kabi ayrim moddalarni ajratish va tozalashda qo’llaniladi. Bu usulda alkaloidlarning tuzlari doimiy tok ta'sirida yarim o’tkazgich pardadan katodga tomon siljishi asos qilib olingan."
+   }
+  ],
+  "pages_read": [
+   90,
+   91,
+   92,
+   93,
+   229,
+   230,
+   120
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.125",
+  "coverage": "full",
+  "gaps": [
+   "kitobning 104-sahifasida Mandelin reaktivi «ammoniy volframati va sulfat kislota» deb berilgan, 105 va 240-sahifalarda esa «ammoniy vanadat» — nomuvofiqlik sababli 104-sahifadagi tarkib olinmadi",
+   "Marme reaktivi formulasi (OCR’da «SdI2/KI») ishonchsiz bo‘lgani uchun keltirilmadi"
+  ],
+  "points": [
+   {
+    "text": "Alkaloidlar tahlilida faqat bitta reaksiyaga tayanmasdan, 2 yoki undan ortiq reaksiya va usul qo‘llash zarur.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 103,
+    "quote": "Alkaloidlar tahlilida kimyogar faqat bitta reaksiya natijasiga asoslanmasdan, 2 yoki undan ortiq reaksiya va usullarni qo‘llashi zarur."
+   },
+   {
+    "text": "Umumiy cho‘ktiruvchi reaktivlarning 1-guruhi alkaloidlar bilan oddiy tuz hosil qiladi: tanin, KMnO4, pikrin va pikrolon kislotalari, xromatlar.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 103,
+    "quote": "1. Alkaloidlar bilan oddiy tuz hosil qiluvchi reaktivlar: tanin, KMnO 4 , pikrin, pikrolon kislotalari, xromatlar (H2CrO4) va boshqalar."
+   },
+   {
+    "text": "2-guruh — kompleks birikma hosil qiluvchilar; ulardan metalloid saqlovchilari: I2/KI, Br2/KBr, ICl, Zonnenshteyn (H3PO4·12MoO3·2H2O) va Sheybler (H3PO4·12WO3·2H2O) reaktivlari.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 103,
+    "quote": "a) tarkibida metalloidlar saqlovchi reaktivlar I2/KI, Br2/KBr, ICl, H3PO4 ·12MoO3 · 2H2O,(Zonnenshteyn), H3PO4 · 12WO3 · 2H2O (SHeybler reaktivi) va xakozo."
+   },
+   {
+    "text": "Metall saqlovchi kompleks hosil qiluvchi reaktivlar: HgI2/KI (Mayer), BiI3/KI (Dragendorf), HgCl2 va boshqalar.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 103,
+    "quote": "HgI2/KI (Mayer), BiI3/KI (Dragendorf), HgCl2"
+   },
+   {
+    "text": "Sheybler, Zonnenshteyn, Dragendorf reaktivlari, pikrin va pikrolon kislotalari sezgir reaktivlar hisoblanadi; umumiy cho‘ktiruvchi reaktivlar esa manfiy ahamiyatga ega.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 104,
+    "quote": "Sheybler, Zonnenshteyn, Dragendorf reaktivlari, pikrin va pikrolon kislotalari sezgir reaktivlar hisoblanadi. Umumiy cho‘ktiruvchi reaktivlar manfiy ahamiyatga ega."
+   },
+   {
+    "text": "Bunday reaktivlar bilan tahlilda reaksiyalarni doimo toza alkaloidlar bilan ham qaytarib, natijalarni solishtirib, so‘ng xulosa qilish lozim.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 104,
+    "quote": "Tekshiriluvchi eritma yoki qoldiqni ana shuday reaktivlar yordamida tahlil qilishda doimo, toza aniq alkaloidlar bilan ham reaksiyalarni qaytarib ko‘rish va natijalarni solishtirib, so‘ng aniq xulosaga kelish lozim."
+   },
+   {
+    "text": "Rang hosil qiluvchi reaksiyalar molekuladan suvni tortib olish, moddani oksidlash yoki reaktiv bilan kondensatsiya mahsulotlari hosil bo‘lishiga asoslanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 104,
+    "quote": "Bu reakiyalar modda molekulasidagi suvni tortib olish, izlanayotgan moddani oksidlashi, reaktiv bilan kondensatsiyalanish mahsulotlarini hosil qilishi mumkin."
+   },
+   {
+    "text": "Rang hosil qiluvchi reaktivlar: nitrat, xlorid, sulfat kislotalari va ularning aralashmalari — Erdman (sulfat + nitrat kislota), Marki (formaldegid + sulfat kislota), Frede (ammoniy molibdati + sulfat kislota).",
+    "book": "toks_kimyo_majmua_A",
+    "page": 104,
+    "quote": "Rang hosil qiluvchi reaktivlar sifatida nitrat, xlorid va sulfat kislotalari va ularning aralashmalari: sulfat va nitrat kislota aralashmasi - Erdman reaktivi, formaldegid va sulfat kislota - Marki reaktivi, ammoniy molibdati va sulfat kislotasi - Frede reaktivi"
+   },
+   {
+    "text": "Mandelin reaktivi 0,01 g ammoniy vanadatga 2 ml konsentrlangan sulfat kislota qo‘shib tayyorlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 240,
+    "quote": "5. Mandеlin reaktivi. 0,01g ammoniy vanadatga 2 ml konsentrik sulfat kislota qo`shib chayqatiladi."
+   },
+   {
+    "text": "Ayrim reaksiyalar guruh uchun umumiy: Marki reaktivi — morfin hosilalari, mureksid reaksiyasi — purin hosilalari, kobalt ammiakati — barbituratlar uchun.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 104,
+    "quote": "Masalan, Marki reaktivi morfin hosilalari uchun, mureksid reaksiyasi esa purin hosilasi uchun kobalt ammiakati esa barbituratlar uchun umumiy reaksiyalar hisoblanadi."
+   },
+   {
+    "text": "Rang reaktivlari yot moddalar bilan ham rang berib xato xulosaga olib kelishi mumkinligi uchun mikrokristalloskopik reaksiyalar va farmakologik tekshiruv tavsiya etiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 105,
+    "quote": "Rang hosil qiluvchi reaktivlar ba’zi yot moddalar bilan rang berib, xato xulosaga olib kelishi mumkinligini nazarda tutgan holda mikrokristalloskopik reaksiyalar va farmakologik tekshiruv olib borish tavsiya etiladi."
+   },
+   {
+    "text": "Cho‘kma va rang hosil qiluvchi reaktivlarni laboratoriyada yangi tayyorlash reaksiyaning aniq va to‘g‘ri bajarilishini ta’minlaydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 240,
+    "quote": "Alkaloidlar tahlilida qo`llaniladigan cho`kma va rang hosil qiluvchi reaktivlarni laboratoriya sharoitida yangi tayyorlanishi kimyoviy reaksiyaning aniq va to`g`ri bajarilishini ta`minlaydi."
+   }
+  ],
+  "pages_read": [
+   102,
+   103,
+   104,
+   105,
+   240,
+   241
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.126",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Biologik ob’ekt chirishida oqsil va boshqa moddalar o‘zgarishidan hosil bo‘ladigan gistidin, gistamin kabi yot moddalar ham alkaloidlar kabi cho‘kma berishi mumkin.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 104,
+    "quote": "Bu holat bioob’ekt chirishi natijasida uning tarkibidagi oqsil va boshqa moddalar metabolitlanishi natijasida hosil bo‘ladigan gistidin, gistamin kabi yot moddalar ham alkaloidlar kabi cho‘kma borishi mumkinligi bilan tushuntiriladi."
+   },
+   {
+    "text": "Bunday moddalar «murda alkaloidlari» deb ataladi (masalan, murda atropini, murda nikotini, murda strixnini) va ular shu alkaloidlar uchun tavsiya etilgan ayrim kimyoviy reaksiyalarni berishi mumkin.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 104,
+    "quote": "Bunday moddalarni ayrim vaqtda “murda alkaloidlari” deb ataladi. Masalan: murda atropini, murda nikotini, murda strixnini. Ular shu alkaloidlar uchun tavsiya etilgan ba’zi kimyoviy reaksiyalarni berishlari mumkin:"
+   },
+   {
+    "text": "Shu sababli umumiy cho‘ktiruvchi reaktivlar manfiy (inkor etuvchi) ahamiyatga ega.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 104,
+    "quote": "Umumiy cho‘ktiruvchi reaktivlar manfiy ahamiyatga ega."
+   },
+   {
+    "text": "Alkaloidlarni tekshirish tartibida ba’zi alkaloidlar uchun qo‘shimcha farmakologik tekshiruv o‘tkazish bosqichi bor.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 103,
+    "quote": "5. Ba’zi bir alkaloidlarga nisbatan qo‘shimcha farmakologik tekshiruv o‘tkazish;"
+   },
+   {
+    "text": "Rang reaktivlari yot moddalar bilan ham rang berishi mumkinligi sababli mikrokristalloskopik reaksiyalar va farmakologik tekshiruv tavsiya etiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 105,
+    "quote": "Rang hosil qiluvchi reaktivlar ba’zi yot moddalar bilan rang berib, xato xulosaga olib kelishi mumkinligini nazarda tutgan holda mikrokristalloskopik reaksiyalar va farmakologik tekshiruv olib borish tavsiya etiladi."
+   },
+   {
+    "text": "Tabiiy atropin ham farmakologik tekshiruvda ijobiy natija, ham Vitali-Moren reaksiyasini beradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 105,
+    "quote": "Farmakologik tekshiruv. Ayrim hollarda farmakologik tekshiruv natijalariga tayaniladi: tabiiy o‘simlik alkaloidi atropin farmakologik tekshiruv reaksiyasini, hamda Vitali-Moren reaksiyasini beradi."
+   },
+   {
+    "text": "«Murda atropini» Vitali-Moren reaksiyasini bersa ham ko‘z qorachig‘ini kengaytirmaydi — farmakologik tekshiruvning ahamiyati shunda.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 105,
+    "quote": "\"Murda atropini\" Vitali-Moren reaksiyasini bergan holda ko‘z qorachig‘ini kengaytirmaydi."
+   },
+   {
+    "text": "Nikotin farmakologik ta’siri va Dragendorf reaktivi bilan aniqlanadi; «murda nikotini» bu reaktiv bilan kristall hosil qilsa ham farmakologik ta’sir bermaydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 105,
+    "quote": "Nikotin farmakologik ta’siri bo‘yicha hamda Dragendorf reaktivi bilan aniqlanishi mumkin, \"murda nikotini\" ushbu reaktiv bilan kristall hosil qilsa ham, lekin farmakologik ta’sirni bermaydi."
+   },
+   {
+    "text": "Nikotinga farmakologik tekshiruv: nikotin yoki uning suvli eritmasi baqaning orqa tanasiga tomizilsa, bir necha daqiqadan so‘ng baqa o‘tirganga o‘xshab tirishib qoladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 112,
+    "quote": "agarda nikotin moddasidan yoki uning suvli eritmasidan baqaning opqa tanasiga ozroq tomizilsa, baqa bir nеcha daqiqadan so’ng (6-rasm) o’tirganga o’xshab tirishib qoladi."
+   },
+   {
+    "text": "Atropinga farmakologik tekshiruv: atropin tajriba hayvonlari ko‘z qorachig‘ini kengaytiradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 119,
+    "quote": "Atropin tajriba hayvonlari ko’z qorachig’ini kеngaytiradi."
+   },
+   {
+    "text": "Strixninga farmakologik tekshiruv: baqada tetanik tirishish holatini chaqiradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 106,
+    "quote": "7. Farmakologik tеkshiruv - baqada tеtanik tirishish holatini chaqiradi."
+   },
+   {
+    "text": "Kokainga farmakologik tekshiruv: kokain eritmasi mushukning bir ko‘ziga tomizilganda qorachiq kengayishi kuzatiladi.",
+    "book": "giyohvand_moddalar_tahlili",
+    "page": 58,
+    "quote": "Kokain eritmasi mushukning bir ko‘ziga tomizilganda uning qorachig‘ini kengayishi kuzatiladi."
+   }
+  ],
+  "pages_read": [
+   102,
+   103,
+   104,
+   105,
+   106,
+   111,
+   112,
+   119,
+   251,
+   252,
+   58
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.127",
+  "coverage": "partial",
+  "gaps": [
+   "struktura formulasi rasmi OCR’da buzilgan — faqat kimyoviy nomi (1,3,7-trimetilksantin) keltirildi",
+   "kofein metabolitlarining nomlari kitobda berilmagan",
+   "kitobdagi «organizmda yig‘iladi» jumlasi va YuQX dog‘ rangi (107/108 va 243-sahifalarda turlicha) olinmadi"
+  ],
+  "points": [
+   {
+    "text": "Kofein — 1,3,7-trimetilksantin; purin (ksantin hosilasi) alkaloidi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 107,
+    "quote": "Kofеin (1,3,7-trimеtilksantin)."
+   },
+   {
+    "text": "Kofein asos holida xloroform, spirt va suvda yaxshi, efirda kam eriydi; asosan kislotali, qisman ishqoriy sharoitda xloroform bilan ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 107,
+    "quote": "Kofеin asos holida xloroform, spirt, suvda yaxshi, efirda kam eriydi, asosan kislotali shapoitda, qisman ishqoriy sharoitda xloroform bilan ekstraktsiyalanadi."
+   },
+   {
+    "text": "Biologik ob’ektdan kislotali sharoitda olingan ajralma kuchsiz asos xossali alkaloidlar, jumladan kofein, teobromin, teofillin uchun tekshiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 97,
+    "quote": "Kislotali sharoitda olingan ajralma barbituratlar, nеytral moddalar (fеnatsеtin), organik kislotalar (salitsil va pikrin kislotasi), kuchsiz asos xossali alkaloidlar (kofеin, tеobromin, tеofеllin, papavеrin, narkotin, strixnin) uchun tеkshiriladi."
+   },
+   {
+    "text": "Ishqoriy ajralmani qayta ekstraksiyalab tozalashda kuchsiz asos xossali purin hosilalari yo‘qotib qo‘yiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 93,
+    "quote": "Qayta ekstraktsiyalab tozalashda kuchsiz asos xossasiga ega moddalar (purin hosilalari, narkotin, promеdol, antipirin va amidopirinlar) yo’qotib qo’yiladi."
+   },
+   {
+    "text": "Kofein markaziy nerv sistemasini qo‘zg‘atadi, narkotik va uyqu chaqiruvchi preparatlar ta’sirini kamaytiradi, nafas va boshqa markazlarni qo‘zg‘atadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 107,
+    "quote": "Kofеin markaziy nеrv sistеmasiga qo’zg’atuvchi ta'sir qiladi, narkotik va uyqu chaqiruvchi prеparatlar ta'sirini kamaytirib, nafas olish va boshqa markazlarni ham qo’zg’otadi."
+   },
+   {
+    "text": "Metabolizmi: kofein organizmda tez so‘riladi va parchalanadi, peshob orqali juda oz qismi ajraladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 107,
+    "quote": "Kofеin organizmda tеz so’riladi va parchalanadi, pеshob orqali juda oz qismi ajraladi."
+   },
+   {
+    "text": "Kofein umumiy cho‘ktiruvchi reaktivlar bilan cho‘kma, HgCl2 ta’sirida ninasimon kristallar beradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 107,
+    "quote": "1. Umumiy cho’ktiruvchi rеaktivlar bilan cho’kma bеradi. 2. HgCl2 ta'sirida ninasimon kristallar bеradi."
+   },
+   {
+    "text": "Mureksid reaksiyasi: xloroformli eritma qoldig‘i pergidrol (yoki boshqa oksidlovchi) bilan quriguncha bug‘latiladi, so‘ng ammiak tomizilganda kofein bo‘lsa to‘q qizil-binafsha rang hosil bo‘ladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 243,
+    "quote": "1 ml xloroformli eritma suv hammomida chinni tovoqchada quriguncha porlatilgach, qolgan qoldiqqa 1 ml pеrgidrol (yoki boshqa oksidlovchi) qo’shib qurigunga qadar porlatiladi. Qoldiq ustiga 1 tomchi ammiak eritmasi tomizilganda, kofеin bo’lgan holda to’q qizil binafsha rang hosil bo’ladi."
+   },
+   {
+    "text": "Mureksid reaksiyasini teobromin va teofillin ham beradi, ya’ni u kofein uchun xos emas.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 108,
+    "quote": "Murеksid hosil qilish rеaktsiyasini tеobromin va tеofillin ham bеradi."
+   },
+   {
+    "text": "Nessler reaktivi bilan suv hammomida isitilganda kofein qizil-qo‘ng‘ir rang hosil qiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 243,
+    "quote": "Kofеin saqlovchi ajralmaga 1-2 tomchi Nеsslеr rеaktivi qo’shib suv hammomida isitilsa qizil-qo’ng’ir rang hosil qiladi."
+   },
+   {
+    "text": "UB-spektri: etil spirtidagi eritmasi 273 nm, 0,1 M xlorid kislotadagi eritmasi 272 nm da maksimum beradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 243,
+    "quote": "Kofеinni etil spirtidagi eritmasi UB-nurlarida nur yutish maksimumi 273 nm ni, 0,1M xlorid kislotasidagi eritmasi λ=272 nm tashkil etadi."
+   },
+   {
+    "text": "Miqdori spektrofotometrik usulda aniqlanadi: ob’ektdan ajratilgan kofeinning optik zichligi 273 nm da o‘lchanadi (solishtiruvchi eritma — etil spirti).",
+    "book": "toks_kimyo_majmua_A",
+    "page": 109,
+    "quote": "Shu tartibda ob`yektdan ajratib olingan kofeinning 273 nm to`lqin uzunligida optik zichligi o`lchanadi. Solishtiruvchi eritma etil spirti."
+   }
+  ],
+  "pages_read": [
+   93,
+   97,
+   106,
+   107,
+   108,
+   109,
+   242,
+   243,
+   244
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.128",
+  "coverage": "partial",
+  "gaps": [
+   "struktura formulasi rasmi OCR’da buzilgan — faqat kimyoviy nomi keltirildi",
+   "metabolitlar nomlari: kitobdagi «3-metil-7-metilksantin» nomi noaniq bo‘lgani uchun olinmadi; peshob bilan chiqarilishi ham shu jumlada",
+   "kitobdagi «CCl4 da yaxshi eriydi (kofeindan farqi)» da’vosi olinmadi"
+  ],
+  "points": [
+   {
+    "text": "Teobromin — 3,7-dimetilksantin (purin alkaloidi).",
+    "book": "toks_kimyo_majmua_A",
+    "page": 107,
+    "quote": "Tеobromin (3,7-dimеtil ksantin)."
+   },
+   {
+    "text": "Teobromin kakao va choy bargida bo‘ladi, sintez qilib ham olingan; oksidlanganda metilmochevina va metilalloksanga parchalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 108,
+    "quote": "Ushbu alkaloid kakao va choy bargida saqlanib, sintеz qilib ham olingan. Uni oksidlaganda mеtilmochеvina va mеtilaloksanga parchalanadi."
+   },
+   {
+    "text": "Teobromin o‘yuvchi ishqorli eritmadan organik qatlamga deyarli o‘tmaydi, kislotali eritmadan esa yaxshi o‘tadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 108,
+    "quote": "Tеobromin o’yuvchi ishqorli eritmadan organik qatlamga dеyarli o’tmaydi, kislotali eritmadan esa organik qatlamga yaxshi erib o’tadi."
+   },
+   {
+    "text": "Teobromin biologik ob’ektdan olingan kislotali ajralmada (kuchsiz asos xossali alkaloidlar qatorida) tekshiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 97,
+    "quote": "Kislotali sharoitda olingan ajralma barbituratlar, nеytral moddalar (fеnatsеtin), organik kislotalar (salitsil va pikrin kislotasi), kuchsiz asos xossali alkaloidlar (kofеin, tеobromin, tеofеllin, papavеrin, narkotin, strixnin) uchun tеkshiriladi."
+   },
+   {
+    "text": "Teobromin yurak faoliyatini stimullaydi, yurak tomirlari va bronx muskullarini kengaytiradi, diurezni kuchaytiradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 108,
+    "quote": "Tеobromin yurak faoliyatini stimullaydi, yurak vеna tomirlarini va bronx muskullarini kеngaytiradi, diurеzni kuchaytiradi."
+   },
+   {
+    "text": "Metabolizmi: teobromin organizmda yaxshi so‘riladi, oksidlanish va N-demetillanishga uchraydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 108,
+    "quote": "Tеobromin organizmda yaxshi so’rilib, oksidlanishi va N-dеmеtillanishi natijasida"
+   },
+   {
+    "text": "Teobromin umumiy cho‘ktiruvchi reaktivlar bilan cho‘kma hosil qiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 108,
+    "quote": "Umumiy cho’ktiruvchi rеaktivlar bilan cho’kma hosil qiladi."
+   },
+   {
+    "text": "Kaliy yod vismutat (Dragendorf) reaktivi bilan to‘q zarg‘aldoq rangli ninasimon kristallar hosil qiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 108,
+    "quote": "Tеobromin kaliy yod vismutat rеaktivi ta'sirida to’q zarg’aldoq rangli ninasimon kristallar hosil qiladi."
+   },
+   {
+    "text": "Teobromin mureksid reaksiyasini beradi, Nessler reaktivi bilan och-qo‘ng‘ir rang hosil qiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 243,
+    "quote": "2. Murеksid hosil qilish rеaktsiyasini bеradi. 3. Nеsslеr rеaktivi bilan och-qo’ng’ir rang hosil qiladi."
+   },
+   {
+    "text": "UB-spektri: 0,1 M ishqordagi eritmasi 273 nm da maksimum nur yutadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 243,
+    "quote": "UF spеktrlari - 0,1 M ishqordagi eritmasi (q273 nmda maksimu nur yutish spеktrini namoyn qiladi."
+   },
+   {
+    "text": "YuQX kofein sistemasida o‘tkaziladi (Rf=0,47±0,01); miqdori SF va FEK usullarida aniqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 109,
+    "quote": "4. Yupqa qatlam xromatografiyasi bo’yicha (kofеinga qarang) Rf=0,47±0,01 Miqdori: SF va FEK usulda aniqlanadi."
+   },
+   {
+    "text": "Teofillinni teobromindan diazotirlangan sulfanil kislota bilan reaksiya orqali farqlanadi — teobromin va kofein bu reaksiyani bermaydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 244,
+    "quote": "1. Tеofеllinni tеobromindan farqlash uchun diazotirlangan sulfanil kislotasi bilan rеaktsiyasidan foydalaniladi, chunki tеobromin va kofеin bu rеaktsiyani bеrmaydi."
+   }
+  ],
+  "pages_read": [
+   97,
+   106,
+   107,
+   108,
+   109,
+   242,
+   243,
+   244,
+   246
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.129",
+  "coverage": "partial",
+  "gaps": [
+   "struktura formulasi rasmi OCR’da buzilgan — faqat kimyoviy nomi keltirildi",
+   "biologik ob’ektdan ajratib olish bo‘yicha teofillinga xos alohida tartib berilmagan (faqat kislotali ajralmada tekshirilishi aytilgan)"
+  ],
+  "points": [
+   {
+    "text": "Teofillin — 1,3-dimetilksantin (purin alkaloidi).",
+    "book": "toks_kimyo_majmua_A",
+    "page": 107,
+    "quote": "Tеofillin (1,3-dimеtil ksantin)."
+   },
+   {
+    "text": "Teofillin choy bargidan va sintez yo‘li bilan olinadi, kislotali eritmadan organik erituvchi qatlamiga o‘tadi; u teobrominning izomeri.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 109,
+    "quote": "Tеofillin choy bargidan va sintеz qilib olinadi, kislotali eritma tarkibidan organik erituvchi qatlamiga o’tadi, u tеobrominni izomеri hisoblanadi."
+   },
+   {
+    "text": "Biologik ob’ektdan olingan kislotali ajralma kuchsiz asos xossali alkaloidlar, jumladan teofillin uchun tekshiriladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 97,
+    "quote": "Kislotali sharoitda olingan ajralma barbituratlar, nеytral moddalar (fеnatsеtin), organik kislotalar (salitsil va pikrin kislotasi), kuchsiz asos xossali alkaloidlar (kofеin, tеobromin, tеofеllin, papavеrin, narkotin, strixnin) uchun tеkshiriladi."
+   },
+   {
+    "text": "Ishqoriy ajralmani qayta ekstraksiyalab tozalashda kuchsiz asos xossali purin hosilalari yo‘qotib qo‘yiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 93,
+    "quote": "Qayta ekstraktsiyalab tozalashda kuchsiz asos xossasiga ega moddalar (purin hosilalari, narkotin, promеdol, antipirin va amidopirinlar) yo’qotib qo’yiladi."
+   },
+   {
+    "text": "Teofillin tibbiyotda kukun va tabletka (eufillin, teofedrin, antastman) holida ishlatiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 109,
+    "quote": "Tеofillin tibbiyotda kukun, tablеtka (eufillin, tеofеdrin, antastman) holida ishlatiladi."
+   },
+   {
+    "text": "U peshob haydovchi, astmaga qarshi vosita sifatida va yurak ishemik kasalligida qo‘llaniladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 109,
+    "quote": "Tеofillin xususiyatlarini hisobga olgan holda pеshob ajratuvchi, astmaga qarshi, yurakni ishеmik kasalligida qo’llaniladi."
+   },
+   {
+    "text": "Metabolizmi: teofillin metabolizmga uchrab, organizmdan 1,3-dimetil, 3-metil, 1-metil mochevina (kislotasi) holida peshob orqali ajraladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 109,
+    "quote": "Mеtabolizmiga uchrab, organizmdan 1,3-dimеtil, 3-mеtil, 1-mеtil mochеvina holida pеshob orqali ajraladi."
+   },
+   {
+    "text": "Teofillinning boshqa reaksiyalari (cho‘ktiruvchi reaktivlar, mureksid va b.) kofeinni aniqlash usullari bilan bir xil.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 244,
+    "quote": "4. Qolgan rеaktsiyalari kofеinni aniqlash usullari bilan bir xil."
+   },
+   {
+    "text": "Teofillinni teobromindan farqlash uchun diazotirlangan sulfanil kislota bilan reaksiya qo‘llaniladi — teobromin va kofein bu reaksiyani bermaydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 244,
+    "quote": "1. Tеofеllinni tеobromindan farqlash uchun diazotirlangan sulfanil kislotasi bilan rеaktsiyasidan foydalaniladi, chunki tеobromin va kofеin bu rеaktsiyani bеrmaydi."
+   },
+   {
+    "text": "YuQX (kofein sistemasida) Rf=0,22.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 244,
+    "quote": "2. YuQX (kofеinga qarang), Rf =0,22."
+   },
+   {
+    "text": "UB-spektri: 0,1 M HCl dagi eritmasi 270 nm da maksimum beradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 244,
+    "quote": "3. UB spеktri. 0,1M HCl dagi eritmasi λ=270 nmda maksimum nur spеktrini namoyon qiladi."
+   },
+   {
+    "text": "Miqdori SF va FEK usullarida aniqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 109,
+    "quote": "3. UB- va IK- spеktrlari bo’yicha. Miqdori: SF va FEK usulda aniqlanadi."
+   }
+  ],
+  "pages_read": [
+   93,
+   97,
+   107,
+   108,
+   109,
+   243,
+   244
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.130",
+  "coverage": "full",
+  "gaps": [
+   "struktura formulasi OCR’da buzilgan — keltirilmadi"
+  ],
+  "points": [
+   {
+    "text": "Fenatsetin oq kristall kukun, suvda qiyin, organik erituvchilarda yaxshi eriydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 97,
+    "quote": "Fеnatsеtin oq kristall kukun bo’lib, suvda qiyin, organik erituvchilarda yaxshi eriydi."
+   },
+   {
+    "text": "Fenatsetin isitma tushiruvchi, og‘riq qoldiruvchi, yallig‘lanishga qarshi ta’sir qiladi; katta dozada metgemoglobinemiya, anemiya, nefrit chaqirishi mumkin.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 97,
+    "quote": "Fеnatsеtin harorat tushuruvchi, og’riq qoldiruvchi va shamollashga qarshi ta'sir ko’rsatadi. Katta dozada qabul qilinganda mеtgеmoglobinеmiya, anеmiya, nеfrit xastaliklarini chaqirishi mumkin."
+   },
+   {
+    "text": "Metabolizmi: organizmda fenatsetin gidrolizlanib para-aminofenol hosil qiladi; u oksidlanib gemoglobinga ta’sir qiluvchi xinoniminga aylanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 97,
+    "quote": "Organizmda fеnatsеtin gidrolizlanib, paroaminofеnolni hosil qiladi. U oksidlanib gеmoglobinga ta'sir qiluvchi xinoniminni hosil qiladi."
+   },
+   {
+    "text": "Preparat to‘liq gidrolizlanmaganda kuchli zaharli p-fenetidin hosil bo‘ladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 97,
+    "quote": "Prеparat to’liq gidrolizlanmaganda kuchli zaharli n-fеnеtidinni hosil qiladi."
+   },
+   {
+    "text": "Fenatsetinning bir qismi metabolit holida, bir qismi glyukuronid va sulfatlar bilan konyugat holida peshob orqali ajraladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 98,
+    "quote": "Fеnatsеtinni bir qismi mеtabolit holida, yana bir qismi glyukuronid va sulfatlar bilan kon'yugat holida pеshob orqali ajraladi."
+   },
+   {
+    "text": "Fenatsetin neytral modda bo‘lgani uchun pH ta’siri kam: kislotali, neytral va ishqoriy sharoitda ham organik erituvchilar bilan yaxshi ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 91,
+    "quote": "Antifibrin, fеnatsеtin kabi nеytral moddalar uchun bunday faktorlarning ta'siri kam, ya'ni ular organik erituvchilar bilan kislotali, nеytral va ishqoriy sharoitda ham yaxshi ekstraktsiyalanadi."
+   },
+   {
+    "text": "Peshobdan ajratish: peshob oksalat kislota bilan kislotali sharoitga keltirilib, organik erituvchi bilan ekstraksiya qilinadi (suyuqlik-suyuqlik ekstraksiyasi).",
+    "book": "toks_kimyo_majmua_A",
+    "page": 226,
+    "quote": "Buning uchun talabalarga fenasetin yoki salitsil kislotasi bilan zaharlangan peshob beriladi. Peshobning pH ko`rsatkichi oksalat kislotasi bilan kislotali sharoitga keltiriladi."
+   },
+   {
+    "text": "Sifat reaksiyalari fenatsetinni konsentrlangan xlorid kislota bilan qizdirib gidrolizlangandan keyingi mahsulotlarga asoslanadi: sirka etil efiri, azobo‘yoq, indofenol hosil qilish reaksiyalari.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 98,
+    "quote": "1.Fеnatsеtinni kontsеntrlangan xlorid kislota bilan qizdirib gidrolizlangandan so’ng hosil bo’lgan mahsulotlarga asoslanib tеkshiriladi. a) Sirka etil efirini hosil bo’lish rеaktsiyasi bilan, b) Azobo’yoq hosil qilish rеaktsiyasi bilan, v) indofеnol hosil qilish rеaktsiyasi bilan,"
+   },
+   {
+    "text": "Azobo‘yoq reaksiyasi: gidrolizatga 1% natriy nitrit, so‘ng β-naftolning ishqoriy eritmasi qo‘shilganda qizil rang hosil bo‘ladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 235,
+    "quote": "Aralashma sovitilgach ustiga 1 % natriy nitrit eritmasidan qo’shilib, aralashmaga asta-sеkin β-naftolning ishqoriy eritmasi solinadi. Eritmaning qizil rangga bo’yalishi fеnatsеtindan azobo’yoq hosil bo’lganini bildiradi."
+   },
+   {
+    "text": "Xrom angidridi bilan reaksiya: gidroliz mahsuloti para-aminofenol oksidlanib to‘q qizil rang beradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 235,
+    "quote": "Gidrolizlanish mahsuloti para- aminofеnol oksidlanishidan to’q qizil rang hosil bo’ladi."
+   },
+   {
+    "text": "UB-spektri: etil spirtidagi eritmasi 250 nm da maksimum beradi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 235,
+    "quote": "Fеnatsеtinni etil spirtidagi eritmasi UB-nurlarining 250 nm to’lqin uzunligida maksimum nur yutish spеktrini namoyon qiladi."
+   },
+   {
+    "text": "Miqdori azobo‘yoq reaksiyasi asosida fotokolorimetrik (FEK yoki SF) usulda aniqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 98,
+    "quote": "Azobo’yoq rеaktsiyasi asosida fotokolorimеtrik (FEK yoki SF) usulda aniqlashga asoslangan."
+   }
+  ],
+  "pages_read": [
+   91,
+   94,
+   97,
+   98,
+   226,
+   227,
+   234,
+   235
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.131",
+  "coverage": "partial",
+  "gaps": [
+   "salitsil kislotaning struktura formulasi kitob matnida berilmagan",
+   "Trindler reaktivi tarkibi kitobda «HgCl2 va Fe(NO2)» deb noto‘g‘ri yozilgan — tarkib keltirilmadi"
+  ],
+  "points": [
+   {
+    "text": "Salitsil kislota mayda ninasimon, yengil, hidsiz kristall; sovuq suvda yomon, issiq suvda juda yaxshi, spirt va efirda yaxshi eriydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 98,
+    "quote": "Salitsil kislota mayda ninasimon, еngil, hidsiz kristall bo’lib, nordon-shirin mazaga ega. Sovyq suvda yomon, issiq suvda esa juda yaxshi, spirt va efirda yaxshi eriydi."
+   },
+   {
+    "text": "Salitsil kislota suv bug‘i bilan haydaladi, shuning uchun uni biologik ob’ektdan suv bug‘i bilan haydab ajratish mumkin; 159°C da suyuqlanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 98,
+    "quote": "Suv bug’i bilan haydaladi. Shuning uchun bu moddani biologik ob'еkt tarkibidan suv bug’i bilan haydab ajratib olish mumkin. 159°C da suyuqlanadi."
+   },
+   {
+    "text": "Salitsil kislota bilan zaharlanganda ob’ektdan qutbli erituvchilar yordamida kislotali muhitda ajratib olinadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 99,
+    "quote": "Salitsil kislotasi bilan zaharlanganda ob'еktdan qutbli erituvchilar yordamida kislotali muhitda ajratib olinadi."
+   },
+   {
+    "text": "Metabolizmi: salitsil kislota va uning hosilalari me’dadan qonga juda tez so‘riladi va natriyli tuz holida oqsillarga birikadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 98,
+    "quote": "Odam salitsil kislota va uning hosilalaridan zaharlanganda ular me'dadan qonga nihoyatda tеz so’riladi va natriyli tuz holida oqsil moddalarga birikadi."
+   },
+   {
+    "text": "Salitsilatlarning asosiy qismi (80%) buyrak orqali chiqadi; peshobda tez paydo bo‘lib, 24 soat ichida batamom chiqib ketadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 99,
+    "quote": "Ular asosan (80%) buyraklar orqali chiqib kеtadi, pеshobda esa qabul qilingandan so’ng tеz paydo bo’ladi va 24 soat ichida batamom chiqib kеtadi."
+   },
+   {
+    "text": "Qolgan 20% to‘qimalarda metabolitlanib, 2,3-digidroksibenzoy, 2,5-digidroksibenzoy va 2,3,5-trigidroksibenzoy kislotalari hosil bo‘ladi va peshob bilan chiqariladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 99,
+    "quote": "Qolgan 20% salitsil kislota to’qimalarda mеtabolitlanadi. Bunda 2,3-digidroksibеnzoy, 2,5-digidroksibеnzoy va 2,3,5,- trigidroksibеnzoy kislotalari hosil bo’ladi va ular ham pеshob bilan chiqariladi."
+   },
+   {
+    "text": "Temir(III) xlorid bilan zangori-binafsha rang hosil qiladi; kompleks tarkibi va rangi pH ga bog‘liq.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 99,
+    "quote": "Salitsil kislota tеmir (III)-xlorid bilan zangori-binafsha rang hosil qiladi. Salitsil kislotasini tеmir ioni bilan hosil qilgan komplеks tarkibi va rangi rеaktsiyaning pH muhiti bilan bog’liq."
+   },
+   {
+    "text": "Bromli suv bilan reaksiya juda sezgir (1:40000), shuning uchun manfiy ahamiyatga ega: reaksiya chiqmasa, eritmada salitsil kislota va shunga o‘xshash moddalar yo‘q.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 99,
+    "quote": "Lеkin rеaktsiya nihoyatda sеzgirdir, uning salitsil kislotaga nisbatan sеzgirligi 1:40000 ga tеng. Shuning uchun bu rеaktsiya sud kimyosi amaliyotida manfiy ahamiyatga ega, rеaktsiya chiqmasa tеkshiriluvchi eritmada salitsil kislota va shunga o’xshash moddalar yo’qligini ko’rsatadi."
+   },
+   {
+    "text": "Metil spirti bilan konsentrlangan sulfat kislotali muhitda qizdirilganda metil salitsilat efirining xarakterli hidi seziladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 99,
+    "quote": "Salitsil kislota mеtil spirti bilan birga kontsеntrlangan sulfat kislotali muhitda qizdirilsa, xaraktеrli mеtil salitsilat efiri hidi sеziladi."
+   },
+   {
+    "text": "UB-spektri: 0,5 n natriy ishqoridagi eritmasi 300 nm, 0,1 n sulfat kislotadagi eritmasi 302 nm da maksimum nur yutadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 99,
+    "quote": "Salitsil kislotasini 0,5n natriy ishqordagi eritmasi 300 nm, 0,1n sulfat kislotasidagi eritmasi esa 302 nm to’lqin uzunligida masimal nur yutish xususiyatiga ega."
+   },
+   {
+    "text": "Qon va peshobni dastlabki tekshirish: temir(III) nitratning nitrat kislotadagi eritmasi tomizilsa, salitsil kislota bo‘lganda qizil-alvon rang hosil bo‘ladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 100,
+    "quote": "Tеmir (III)-nitratni nitrat kislotadagi eritmasidan pеshob yoki qon zardobiga tomizilsa salitsil kislotasi bo’lsa qizil-alvon rang hosil qiladi."
+   },
+   {
+    "text": "Miqdori uch usulda aniqlanadi: ishqor bilan titrlash, bromatometrik (hajmiy) usul va ishqorli yoki sulfat kislotali eritmasini UB-spektrofotometriya.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 100,
+    "quote": "1. Salitsil kislotaning kislotali xususiyatidan foydalanib ishqor bilan titrlanadi. 2. Bromatomеtrik (hajmiy) usul ham salitsil kislota miqdorini aniqlashda qo’llanadi. 3. Ishqorli yoki sulfat kislotadagi eritmasini UB-spеktofotomеtriya usulda aniqlanadi."
+   }
+  ],
+  "pages_read": [
+   93,
+   98,
+   99,
+   100,
+   226,
+   227,
+   235,
+   236
+  ]
+ },
+ {
+  "id": "sud_kimyo.c23.132",
+  "coverage": "partial",
+  "gaps": [
+   "struktura formulasi rasmi OCR’da buzilgan — keltirilmadi",
+   "metabolitlari: kitobda «hali yaxshi o‘rganilmagan» deyilgan, nomlari yo‘q"
+  ],
+  "points": [
+   {
+    "text": "Strixnin kuchala o‘simligi, qusturuvchi yong‘oq va boshqa o‘simliklarda brutsin bilan birga uchraydi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 105,
+    "quote": "Strixnin alkaloidi kuchala o’simligi, qustiruvchi yong’oq va boshqa o’simliklarda brutsin alkaloidi bilan birgalikda uchraydi."
+   },
+   {
+    "text": "Strixnin bilan zaharlanishda markaziy asab tizimi qo‘zg‘aladi, tez qaytariladigan tetanik tirishishlar yuz beradi; o‘lim markaziy asab tizimi falajidan sodir bo‘ladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 105,
+    "quote": "Strixnin bilan zaharlanganda organizmda markaziy asab tizimini qo’zg’otadi va tеz qaytariladigan tеtanik tirishish alomatlari yuz bеradi, organizmda markaziy asab tizimini falajlanishidan o’lim sodir bo’ladi."
+   },
+   {
+    "text": "Metabolizmi: organizmda tez so‘riladi, 80% ga yaqini metabolizmga uchraydi, qolgani peshob orqali o‘zgarmagan holda chiqadi; metabolitlari hali yaxshi o‘rganilmagan.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 105,
+    "quote": "Organizmda tеz so’rilib, 80% yaqini mеtabolizmga uchraydi, qolgan qismi pеshob orqali o’zgarmagan holda chiqariladi. Mеtabolitlari hali yaxshi o’rganilmagan."
+   },
+   {
+    "text": "Strixnin organizmda yig‘ilib qolishi va murda organlarida bir necha yil saqlanishi mumkin.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 105,
+    "quote": "Strixnin organizmda yig’ilib qolishi mumkin, hamda murda organlarida bir nеcha yil saqlanishi mumkin."
+   },
+   {
+    "text": "Strixnin biologik ob’ektdan nordonlashtirilgan suv, nordonlashtirilgan spirt va elektrodializ usulida ajratib olinadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 105,
+    "quote": "Strixninni biologik ob'еkt tarkibidan nordonlashtirilgan suv, nordonlashtirilgan spirt va elеktrodializ usulida ajratib olish mumkin."
+   },
+   {
+    "text": "Strixnin ishqoriy va kislotali sharoitda ham organik erituvchiga o‘tadi, asosiy qismi ishqoriy sharoitda ekstraksiyalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 105,
+    "quote": "Strixnin ham ishqoriy, ham kislotali sharoitda organik erituvchi tarkibiga erib o’tadi, asosiy qismi ishqoriy sharoitda ekstraktsiyalanadi."
+   },
+   {
+    "text": "Strixnin Dragendorf, Mayer, Sheybler, Zonnenshteyn reaktivlari, pikrin kislota, tanin bilan cho‘kma hosil qiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 241,
+    "quote": "1. Strixnin alkaloidlarni cho’ktiruvchi Dragеndorf, Mayеr, Shеyblеr, Zonnеnshtеyn, pikrin kislotasi, tanin kabi rеktivlar bilan cho’kma hosil qiladi."
+   },
+   {
+    "text": "Kaliy bixromat va konsentrlangan H2SO4 bilan tez yo‘qoluvchi binafsha rang beradi; brutsin halaqit beradi, shuning uchun brutsin avval konsentrlangan H2SO4 va HNO3 bilan parchalanadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 105,
+    "quote": "2. Bixromat kaliy va kontsеntrlangan H2SO4 ishtirokida strixnin binafsha rangli, tеz yo’qolib kеtuvchi rеaktsiya bеradi. Ushbu rеaktsiyaga brutsin halaqit bеradi, shuning uchun brutsinni kontsеntrlangan H2SO4 va HNO3 ishtirokida parchalagandan so’ng strixninga rеaktsiya qilinadi."
+   },
+   {
+    "text": "Mandelin reaktivi (ammoniy vanadat + konsentrlangan sulfat kislota) bilan qizilga o‘tuvchi ko‘k-binafsha rang hosil qiladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 105,
+    "quote": "3. Mandеlin rеaktivi (ammoniy vanadat va kontsеntrlangan sulfat kislota) bilan strixnin qizil rangga o’tuvchi ko’k binafsha rangli birikma hosil qiladi."
+   },
+   {
+    "text": "UB-spektri: etil spirtidagi va 0,1 M sulfat kislotadagi eritmalari 255 nm da maksimum nur yutadi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 241,
+    "quote": "Strixninni etil spirtidagi va 0,1 M sulfat kislotadagi eritmalari UB-nurlarida 255 nm da nur yutish maksimumini namoyon qiladi."
+   },
+   {
+    "text": "Farmakologik tekshiruv: strixnin baqada tetanik tirishish chaqiradi; YuQX da Rf = 0,33.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 106,
+    "quote": "5. YuQX. (Rf = 0,33). 6. UB- va IK- spеktrlari bo’yicha aniqlash mumkin. 7. Farmakologik tеkshiruv - baqada tеtanik tirishish holatini chaqiradi."
+   },
+   {
+    "text": "Miqdori FEK usulida Malaken-Denije reaksiyasi bo‘yicha: strixnin HCl va Zn kukuni bilan qaytariladi, mahsulotga NaNO2 qo‘shilganda qizil rang hosil bo‘ladi.",
+    "book": "toks_kimyo_majmua_A",
+    "page": 106,
+    "quote": "1.FEK usulda, Malakеn-Dеnijе rеaktsiyasi yordamida -strixninni HCl va Zn kukuni ishtirokida qaytarilib, qaytarilish mahsulotiga NaNO2 eritmasi qo’shilsa qizil rang hosil bo’ladi. Shu asosda strixnin miqdori fotokolorimеtrik usulda aniqlaniladi."
+   }
+  ],
+  "pages_read": [
+   93,
+   97,
+   105,
+   106,
+   240,
+   241,
+   242
+  ]
+ }
+]

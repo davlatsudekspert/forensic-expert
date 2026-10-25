@@ -54,6 +54,12 @@ Jarayon (hamma bosqich Opus/Sonnet agent + dasturiy tekshiruv, `tools/assessment
 Cheklov: javoblar — manbadagi bayon (kitob/darslik davri); amaldagi O‘zbekiston normativ hujjatlari uchun (JPK/JK moddalari, buyruqlar) rasmiy matn bilan solishtirish kerak. Mustaqil inson-mutaxassis taqrizi o‘tmagan.
 RU/EN: javob matni o‘zbekcha (CLAUDE.md: avval faqat o‘zbekcha); RU/EN foydalanuvchiga «Javob o‘zbek tilida; tarjimasi keyin qo‘shiladi» belgisi chiqadi.
 
+## Yakuniy sifat auditi (2026-10-25, lokal)
+* Avtomatik tekshiruvlar: 917 javob / ~10 000 band (takror savollar bilan); barcha iqtiboslar kitob sahifasida (±1) yoki saqlangan veb-manbada so‘zma-so‘z topilgan; matndagi raqamlar iqtibos/sahifa kontekstida tekshirilgan (qo‘lda ko‘rib chiqilgan: 175 ta farq — yillar, ro‘yxat raqamlari, jadval raqamlari, so‘z bilan yozilgan sonlar; haqiqiy nomuvofiqlik topilmadi); 94 ta JK/JPK modda raqami kitob sahifasida mavjud.
+* Matn tuzatishlari: apostrof va tinish belgilari birlashtirildi, terminologiya almashtirishlari qo‘llandi.
+* Havolalar: 328 ta noyob URL — 309 tasi 200, 16 tasi (europepmc.org/article) botlarga 403 beradi (brauzerda ochiladi), 2 tasi (e-lib.krsu.kg, ter-arkhiv.ru) tarmoq vaqti tugadi — tekshirish kerak.
+* Normativ hujjatlar: `docs/ORAL_NORMATIVE_CHECK.md`. Kalitsiz testlar: `docs/ASSESSMENT_UNKEYED_TESTS.md`. Javobsiz 353 savol: `docs/ORAL_REMAINING.md`. Pipeline: `tools/assessment/oral_pipeline/`.
+
 ## Ochiq ishlar
 * 482 ta kalitsiz test: ko‘pi klinik holatga tashxis qo‘llash (patanatomiya 286–401) — mahalliy qo‘llanma (masalan, Зайратьянц «Формулировка патологоанатомического диагноза» yoki O‘zbekiston kafedrasi) kerak.
 * Og‘zaki javoblar: qolgan partiyalar (pat_anat 16–42; ~320 savol) yozilmagan — ilovada «Javob tez kunda qo‘shiladi». Egasi ruxsat berganda **Sonnet** bilan davom etiladi (pipeline pastda).

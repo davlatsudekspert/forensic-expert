@@ -1,0 +1,261 @@
+[
+ {
+  "id": "sud_tib.c0.144",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OVERSTATED",
+    "fix": "Darslikka ko‘ra, amaldagi qonun hujjatlariga binoan tan jarohatlarining og‘irlik darajasini aniqlashda mezon sifatida faqat umumiy mehnat qobiliyatining yo‘qotilishi inobatga olinadi; kasbiy mehnat qobiliyatining yo‘qotilishi masalasi moddiy va ma’naviy ziyonni qoplashga oid fuqarolik ishlarida ko‘rilishi mumkin."
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "Savol «yengil tan jarohatlari mezonlari» deb talqin qilindi; darslik yengil jarohatlar uchun alohida mezonlar ro‘yxatini emas, tasniflovchi belgilarni (davomiylik, mehnat qobiliyati foizi) beradi - talqin o‘rinli, lekin to‘liq emas.",
+   "Pt4: manbaning aniq so‘zi «mezon sifatida faqat umumiy mehnat qobiliyatining yo‘qotilishi» - bu pt0dagi boshqa mezonlar (hayot uchun xavf, davomiylik va h.k.) bilan ziddiyatli ko‘rinadi; drafter «mehnat qobiliyati bo‘yicha» deb o‘zi moslashtirgan (matnda yo‘q qo‘shimcha). Fix manba so‘ziga yaqin qoldirildi, ziddiyat esa manbaning o‘zida.",
+   "Pt2/pt3 (6 va 21 kun, 10 va 33 foiz) manbada «amaldagi qoidalarga binoan» deb keltirilgan; javobda «Darslikka ko‘ra» ta’kidi yo‘q - o‘quvchiga amaldagi qoida sifatida ko‘rinmasligi kerak. 10 foiz chegarasi manbada ikki toifada ham ishtirok etadi (o‘n foizgacha / o‘n foizdan), bu manbaning o‘zidagi noaniqlik.",
+   "JK moddalari (104, 105, 109) faqat darslikka ko‘ra; amaldagi tahririni alohida tekshirish kerak."
+  ]
+ },
+ {
+  "id": "sud_tib.c0.146",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OVERSTATED",
+    "fix": "Darslikka ko‘ra, ko‘p miqdorda etil spirti qabul qilinganda tormozlanish jarayoni po‘stloq osti, uzunchoq miya va miyachaga o‘tadi; uning toksik ta’siri nafas olish hamda yurak-qon tomirlar markazlari faoliyatining buzilishida aks etadi. Etil spirtining letal dozasi darslikda 250-300 ml deb berilgan (konsentratsiyasi/spirt turi manbada ko‘rsatilmagan)."
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OVERSTATED",
+    "fix": "Bunday holatlarda (o‘lim bir necha kundan keyin sodir bo‘lib, etil spirti qonda past konsentratsiyada aniqlanishi yoki umuman bo‘lmasligi mumkin) o‘lim odatda alkogol intoksikatsiyasi fonidagi yurakning ishemik kasalligi yoki alkogolning surunkali iste’moli bilan bog‘liq kardiomiopatiyada o‘tkir yurak etishmovchiligining rivojlanishi sababli vujudga keladi."
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OVERSTATED",
+    "fix": "Etil spirtidan zaharlanishdan o‘lgan murdaning tashqi tekshiruvida yuzning ko‘kimtirligi, shishinqiraganligi, subkonyunktival ekximozlar aniqlanadi; ichki tekshiruvda bo‘shliqlardan spetsifik hid seziladi, bosh miya va ichki a’zolar to‘laqon, bosh miya shishgan, ichki a’zolarda va seroz pardalar ostida mayda nuqtasimon qon quyilishlar bor, siydik qopi to‘la bo‘ladi."
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "Pt0: «ko‘p miqdorda qabul qilinganda» sharti tushirib qoldirilgan; letal doza 250-300 ml uchun spirt konsentratsiyasi manbada yo‘q.",
+   "Pt6: manbada ikkita sabab («yoki» bilan: yurak ishemik kasalligi yoki surunkali alkogoldan kardiomiopatiyada o‘tkir yurak etishmovchiligi) - javobda faqat birinchisi berilgan.",
+   "Pt8: sahifa chegarasida «yuzning» so‘zi PDF-sahifa 81 oxirida qolgan, matn uni tushirib «ko‘kimtirlik» deb umumlashtirgan; shuningdek manbada «spetsifik o‘zgarishlar aniqlanmaydi» (pt7) va «bo‘shliqlardan spetsifik hid seziladi» yonma-yon - manbaning ichki noaniqligi; belgilarni etil spirtiga xos deb ko‘rsatmaslik kerak.",
+   "Matn etil spirti bo‘limida (PDF 81-82, surrogat/metanol bo‘limidan oldin) ekanligi tekshirildi - etil/metanol aralashmasi pt8da yo‘q; ko‘rish buzilishi to‘g‘ri chiqarib tashlangan.",
+   "O‘lim sabablari darslikda yagona ro‘yxat emas, tarqoq berilgan (drafter gaps'da ta’kidlagan)."
+  ]
+ },
+ {
+  "id": "sud_tib.c0.147",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "Savol «hayotiylikdagi kechishi» darslikdagi 5.3 «Asfiksiyaning hayotiy kechishi» deb talqin qilindi - sarlavha deyarli bir xil, lekin drafter talqini; hayotiylik (vital reaksiya) belgilari emas, klinik bosqichlar berilgan.",
+   "Davomiylik raqamlari (20-30, 40-60, ~1 daq, 30-40 sek) manbaning o‘zida «shartli, taxminiy» (pt10); alohida raqamlar (pt1, pt7) shu qaydsiz o‘qilmasligi kerak.",
+   "Terminal nafas olish bosqichining davomiyligi (5 daqiqagacha) va yurak 3-10 daqiqa urishi javobga kiritilmagan."
+  ]
+ },
+ {
+  "id": "sud_tib.c0.149",
+  "topic_ok": true,
+  "points": [
+   {
+    "i": 0,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 1,
+    "verdict": "OVERSTATED",
+    "fix": "Birinchi bosqichni asosan hodisa sodir bo‘lgan yoki murda topilgan joyni sud tibbiyoti sohasidagi mutaxassis ishtirokida ko‘zdan kechirish tashkil etadi: ko‘zdan kechirishda joydagi shart-sharoitga, yot hid mavjudligiga, dori moddalari idishlari, o‘ramlari, ishlatilgan shpritslar, retseptlarga e’tibor qaratiladi."
+   },
+   {
+    "i": 2,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 3,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 4,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 5,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 6,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 7,
+    "verdict": "OVERSTATED",
+    "fix": "Darslikka ko‘ra, zaharlovchi modda ma’lum bo‘lgan hollarda (kitob matnida bu shart OCR xatosi bilan «m aiu m» deb buzilgan, «ma’lum» deb o‘qildi) laboratoriya tekshiruvi uchun ob’ektlar «uch nuqta» qoidasiga binoan - zahar kirgan, asosan ta’sir etgan va organizmdan chiqqan joylardan - olinadi. Zaharlanish manbai noma’lum bo‘lganda darslikda boshqa ro‘yxat berilgan."
+   },
+   {
+    "i": 8,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 9,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 10,
+    "verdict": "OK",
+    "fix": ""
+   },
+   {
+    "i": 11,
+    "verdict": "OK",
+    "fix": ""
+   }
+  ],
+  "issues": [
+   "Savol «isbotlash manbalari» deb talqin qilindi - darslik «dalillar uch bosqichda to‘planadi» deb beradi; huquqiy ma’nodagi dalil turlari (JPK) kitoblarda yo‘q, shu sababli javob tibbiy-diagnostik dalil to‘plash bosqichlari bilan cheklangan (drafter talqini).",
+   "Pt1: «asosan» qaydi tushirib qoldirilgan (birinchi bosqich faqat joyni ko‘zdan kechirish emas - pt3 ham shu bosqichga kiradi).",
+   "Pt7: «uch nuqta» qoidasining sharti («zaharlovchi modda ma’lum bo‘lgan hollarda») shartsiz yozilgan; shart OCR bilan buzilgan («m aiu m», keyingi gapda «nom aium» = noma’lum), o‘qilishi taxminiy - qoida shartli ekani ko‘rsatilishi kerak.",
+   "Pt8: giyosov_2 (sud-kimyoviy eng ko‘p) va giyosov_3 (sud-kimyoviy va gistologik eng ko‘p) formulalari bir oz farq qiladi - ikkalasi ziddiyatli emas, lekin birlashtirilmasin.",
+   "Pt11: sabablar ro‘yxati to‘liq emas (manbada yana ob’ekt olish/tekshirishdagi kamchiliklar va aniqlash usuli ishlab chiqilmaganligi bor); «ba’zan» qaydi saqlansin."
+  ]
+ }
+]

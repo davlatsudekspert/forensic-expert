@@ -1,0 +1,918 @@
+[
+ {
+  "id": "sud_tib.c23.002",
+  "coverage": "partial",
+  "gaps": [
+   "qayta ekspertiza va eksgumatsiyaga oid JPK moddalarining raqami kitobda keltirilmagan"
+  ],
+  "points": [
+   {
+    "text": "Qayta ekspertiza dastlabki (birlamchi, komissiyaviy, kompleks) ekspertiza xulosasi asoslantirilmagan yoki to‘g‘riligiga shubha uyg‘otgan, unga asos qilingan dalillar ishonchsiz deb topilgan yoki oldingi ekspertizada protsessual qoidalar jiddiy buzilgan hollarda tayinlanadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 22,
+    "quote": "ekspertiza xulosasi asoslantirilmagan yoki uning to'g'riligiga shubha uyg'otgan, dastlabki ekspertizaga asos qilib olingan dalillar ishonchsiz deb topilgan, oldingi ekspertiza o'tkazish jarayonida protsessual qoidalar jiddiy buzilgan hollarda tayinlanadi."
+   },
+   {
+    "text": "Qayta ekspertiza odatda ikki va undan ortiq ekspert tomonidan o‘tkaziladi; ular umumiy fikrga kela olmasa, har biri jami yoki ayrim masalalar bo‘yicha alohida xulosa berishi mumkin.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 22,
+    "quote": "Qayta ekspertizalar odatda ikki va undan ortiq ekspertlar tomonidan o'tkaziladi. Ekspertlar umumiy fikrga kela olmagan taqdirda, har bir ekspert jami yoki ayrim masalalar yuzasidan alohida xulosa berishi mumkin."
+   },
+   {
+    "text": "Dastlabki ekspertizani o‘tkazgan ekspertga qayta ekspertizani topshirish man etiladi; u zarurat bo‘lsa tushuntirish berishi mumkin, lekin tekshiruv va xulosa tuzishda ishtirok etmaydi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 22,
+    "quote": "Dastlabki ekspertizani o'tkazgan ekspertga qayta ekspertizaning ijrosini topshirish m a’n etiladi. Zarurat hollarida u qayta ekspertizani o'tkazayotgan ekspertlar talabiga muvofiq ekspertiza tayinlagan shaxs huzurida tegishli tushuntirishlar berishi mumkin, lekin u ekspert tekshiruvini"
+   },
+   {
+    "text": "Qayta ekspertiza tayinlash haqidagi qaror yoki ajrimda dastlabki xulosaga qo‘shilmaslik sabablari ko‘rsatilishi kerak; manfaatdor tomonlarning oldingi xulosadan noroziligi qayta ekspertiza uchun asos bo‘la olmaydi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 22,
+    "quote": "Qayta ekspertiza tayinlash haqidagi qaror yoki ajrimda dastlabki ekspertiza xulosasiga qo'shilmaslik sabablari keltirilishi kerak. Binobarin, ko'rib chiqilayotgan ish bo'yicha manfaatdor tomonlaming oldingi ekspertiza xulosasidan noroziligi qayta ekspertiza tayinlash uchun asos bo'la olmaydi."
+   },
+   {
+    "text": "Qayta ekspertizada ekspertlar oldiga yangi emas, balki dastlabki ekspertizada hal qilingan savollar takroran qo‘yiladi; avvalgi ekspertizada qo‘llanilgan usullarning ilmiy asoslanganligi masalasi ham qo‘yilishi mumkin.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 22,
+    "quote": "qayta ekspertizada ekspertlar oldiga yangi emas, balki dastlabki ekspertizada hal qilingan savol, masalalar takroran qo'yilishi lozim. Ayni paytda ekspertlar oldiga avvalgi ekspertizada qoilanilgan tekshiruv usullarining ilmiy asoslanganligi masalasi ham qo'yilishi mumkin."
+   },
+   {
+    "text": "Qayta, komissiyaviy va kompleks ekspertizalar faqat sud-tibbiy ekspertiza byurosining qayta, komission ekspertizalar bo‘limida o‘tkaziladi; ularni morfologik bo‘lim, ambulatoriya va tuman, tumanlararo, shahar bo‘linmalarida o‘tkazish taqiqlanadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 23,
+    "quote": "qayta, komissiyaviy va kompleks ekspertizalar faqat sud- tibbiy ekspertiza byurosining qayta, komission ekspertizalar b oiim ida o‘tkazilishi mumkin. Ulaming morfologik boiim , sud-tibbiy ambulatoriya va tuman, tumanlararo, shahar boiinm alarida o‘tkazilishi ta’qiqlanadi."
+   },
+   {
+    "text": "Qabrdan murdani chiqarib olish eksgumatsiya deyiladi; bu protsessual harakat bo‘lib, ko‘zdan kechirish, tanib olish, tekshirish yoki ekspertizaga namunalar olish maqsadida alohida qaror, ajrim asosida surishtiruvchi, tergovchi, sud tomonidan o‘tkaziladi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 82,
+    "quote": "Qabrdan murdani chiqarib olish eksgumatsiya deyiladi. Eksgumatsiya protsessual harakat b o iib , ko'zdan kechirish, tanib olish, tekshirish yoki ekspertizaga namunalar maqsadida alohida qaror, ajrim asosida surishtiruvchi, tergovchi, sud tomonidan o ‘tkaziladai."
+   },
+   {
+    "text": "Eksgumatsiyada xolislar, sud tibbiyoti sohasidagi mutaxassis, zarurat bo‘lsa boshqa mutaxassislar qatnashadi; zarur hollarda ayblanuvchi, sudlanuvchi va murdani tanib olishi mumkin bo‘lgan shaxslar jalb qilinishi mumkin.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 82,
+    "quote": "Bu jarayonda xolislar, sud tibbiyoti sohasidagi mutaxassis, zarurat hollarida boshqa mutaxassislar ham qatnashadilar. Zarur hollarda ayblanuvchi, sudlanuvchi, shuningdek murdani tanib olishi mumkin b oigan shaxslar jalb qilinishi mumkin."
+   },
+   {
+    "text": "Surishtiruvchi, tergovchi eksgumatsiya jarayoni va natijalari bo‘yicha bayonnoma tuzadi, sud esa ularni sud majlisi bayonnomasida qayd etadi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 82,
+    "quote": "Surishtiruvchi, tergovchi eksgumatsiya jarayoni va uning natijalari bo'yicha bayonnoma tuzadi, sud esa bu jarayon va uning natijalarini sud majlisining bayonnomasida qayd etadi."
+   },
+   {
+    "text": "Eksgumatsiya ekspertiza maqsadida qilinsa, ekspertiza haqida qaror yoki ajrim chiqariladi; ekspertiza murda ko‘milgan joyning o‘zida o‘tkaziladi yoki murda maxsus murdaxonaga jo‘natiladi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 82,
+    "quote": "Eksgumatsiya ekspertiza o‘tkazish maqsadida qilingan b o isa , ekspertiza o ‘tkazish haqida qaror yoki ajrim chiqariladi. Ekspert eksgumatsiya qilingan murdani tekshiradi. Bu holatda ekspertiza murda ko'milgan joyning o ‘zida o‘tkaziladi yoki murda maxsus murdaxonaga jo ‘natiladi."
+   },
+   {
+    "text": "Eksgumatsiya va boshqa protsessual harakatlardan so‘ng dafn etish eksgumatsiya haqida qaror, ajrim chiqargan shaxs ishtirokida amalga oshiriladi va dafn haqida bayonnoma tuziladi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 82,
+    "quote": "Eksgumatsiya va boshqa protsessual harakatlardan so‘ng dafn etish murdani eksgumatsiya qilish to‘g‘risida qaror, ajrim chiqargan shaxsning ishtirokida amalga oshiriladi. Murda dafn etilganligi to‘g ‘risida bayonnoma tuziladi."
+   },
+   {
+    "text": "Eksgumatsiya turlari: qonuniy eksgumatsiyadan tashqari tasodifiy (asosan yer ishlarida, poydevor uchun chuqur qazilganda) va jinoiy (murda yoki undagi qimmatbaho ashyolarni o‘g‘irlash, murdani tahqirlash va boshqa maqsadlarda) eksgumatsiyalar bo‘ladi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 82,
+    "quote": "Qonuniy eksgumatsiyadan tashqari, tasodifiy, jinoiy eksgumatsiyalar ham b o iish i mumkin. Tasodifiy eksgumatsiya asosan er ishlarida, binolar poydevori uchun chuqur qaziganda kuzatiladi. Jinoiy eksgumatsiya esa murdani yoki undagi qimmatbaho ashyolami o‘g ‘irlash, murdani tahqirlash"
+   }
+  ],
+  "pages_read": [
+   "giyosov_1_asoslar_travmatologiya:16-23",
+   "giyosov_3_toksikologiya2_fizik_tanatologiya:82-83"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.003",
+  "coverage": "partial",
+  "gaps": [
+   "«Pirogov belgisi» atamasi kitobda alohida nom sifatida ishlatilmagan; kitob Pirogov nomini to‘qima defekti (1849) va shilinish/ifloslanish hoshiyalari (1865) tavsifi bilan bog‘laydi"
+  ],
+  "points": [
+   {
+    "text": "To‘qima defekti (minus-to‘qima) ilk bor N.I.Pirogov tomonidan 1849 yilda «Kavkaz bo‘ylab sayohat haqida hisobot» asarida tavsiflangan va u bu holatni «to‘qima o‘zligini yo‘qotishi» deb nomlagan.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 6,
+    "quote": "To'qima defekti yoki minus-to'qima ilk bor N.I.Pirogov tomonidan 1849 yilda “Kavkaz bo'ylab sayohat haqida hisobot” asarda tavsiflangan va bu holatni u “to'qim a o'zligini yo'qotishi” deb nomlagan."
+   },
+   {
+    "text": "Snaryad bir necha yuz joul energiyaga ega bo‘lganda yulma ta’sir kuzatiladi: o‘q to‘qimaning bir qismini yulib, o‘lchami snaryad diametridan kichikroq, dumaloq yoki oval, chetlari tekis defekt hosil qiladi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 6,
+    "quote": "Snaryad bir necha yuz joul energiyaga ega bo'lganda yulma ta’sir kuzatiladi. O 'q to'qimaning bir qismini yulib, dumaloq yoki oval shaklidagi, oicham lari snaryadning diametridan kichikroq boigan, chetlari tekis defektni vujudga keltiradi."
+   },
+   {
+    "text": "Bir necha o‘n joul energiyali o‘q ponasimon ta’sir ko‘rsatib, to‘qima defekti bo‘lmagan yoriqsimon, yulduzsimon yaralar hosil qiladi; odatda o‘qning chiqish teshigi ponasimon ta’sir natijasida vujudga keladi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 6,
+    "quote": "Bunda to'qima defekti bo'lmagan yoriqsimon, yulduzsimon yaralar vujudga keladi. Odatda o'qning chiqish teshigi ponasimon ta’sir natijasida vujudga keladi."
+   },
+   {
+    "text": "Snaryadning yulma ta’sirida kirish teshigida to‘qima defekti aniqlanadi, uning o‘lchami o‘q diametriga nisbatan kichikroq bo‘ladi; defekt konussimon bo‘lib, uchi ichkariga yo‘nalgan.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 11,
+    "quote": "Snaryadning yulma ta’sirida kirish teshigida to'qima defekti aniqlanadi va uning oicham i o'qning diametriga nisbatan kichikrok bo'ladi. Defekt konussimon bo'lib, uning uchi ichkariga yo'nalgan."
+   },
+   {
+    "text": "To‘qima defektini tekshirish: defekti bor yara chetlari yaqinlashtirilganda atrofda teri burmalari hosil bo‘ladi; defekti yo‘q yara chetlari oson yaqinlashib, bir-biriga mos tushadi va burmalar bo‘lmaydi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 12,
+    "quote": "To'qima defekti bo'lgan yaraning chetlarini yaqinlashtirilganda atrof tomonlarda teri burmalari hosil bo'ladi. To'qim a defekti bo'lmagan yaralaming chetlari oson yaqinlashib, bir-biriga mos tushadi va atrof tomonlarda teri burmalari bo'lmaydi"
+   },
+   {
+    "text": "Kirish va chiqish teshiklari jadvaliga ko‘ra, to‘qima defekti kirish teshigida ko‘pincha bo‘ladi, chiqish teshigida esa kamdan-kam hollarda uchraydi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 13,
+    "quote": "To'qima defektining         ko'pincha bo'ladi                  kamdan kam hollarda"
+   },
+   {
+    "text": "O‘q tanaga kirayotganda yon tomonlari teriga ishqalanib, kirish teshigi chetida kengligi 1-3 mm bo‘lgan shilinish hoshiyasi hosil bo‘ladi; uning tashqi diametri snaryad diametriga teng.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 12,
+    "quote": "O 'q tanaga kirayotganda, uning yon tomonlari teriga ishqalanadi va natijada kirish teshigi chetlarida kengligi 1-3 mm. bo'lgan shilinish hoshiyasi vujudga keladi. Ushbu hoshiyaning tashqi diametri snaryadning diametriga teng bo'ladi."
+   },
+   {
+    "text": "O‘q yuzasidagi qurum, moy zarrachalari yara chetidagi terida qolib, ifloslanish hoshiyasini hosil qiladi; ikki hoshiya ustma-ust joylashadi. Shilinish va ifloslanish hoshiyalari birinchi marta 1865 yilda N.I.Pirogovning «Umumiy harbiy-dala jarrohligi asoslari» kitobida keltirilgan.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 12,
+    "quote": "o'qning yuzasidagi qurum, moy zarrachalari ham yaraning chetidagi terida qolib, ifloslanish hoshiyasini hosil qiladi. Bu ikki hoshiya ustma-ust joylashadi. SHilinish va ifloslanish hoshiyalari birinchi marta 1865 yilda N.I.Pirogovning “Umumiy harbiy- dala jarrohligi asoslari” kitobida keltirilgan"
+   },
+   {
+    "text": "Kirish va chiqish teshiklarini aniqlash orqali yara kanalining yo‘nalishi, stvol va jabrlanganning o‘zaro joylashish holati aniqlanadi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 11,
+    "quote": "O 'q otar jarohatlar bilan bog'liq sud-tibbiy ekspertizalarda o'qning kirish va chiqish teshiklarini aniqlash muhim vazifalardan biridir. Bu masalani hal qilish orqali yara kanalining yo'nalishi, stvol va jabrlanganning o'zaro joylashish holati aniqlanadi."
+   }
+  ],
+  "pages_read": [
+   "giyosov_2_oqotar_asfiksiya_toksikologiya1:6-7",
+   "giyosov_2_oqotar_asfiksiya_toksikologiya1:11-13"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.004",
+  "coverage": "partial",
+  "gaps": [
+   "homiladorlik belgilarining «erta» va «kech» (shubhali/ehtimoliy) deb aniq tasnifi kitobda berilmagan — faqat ayrim belgilarning paydo bo‘lish muddati ko‘rsatilgan"
+  ],
+  "points": [
+   {
+    "text": "Homiladorlikni aniqlash zarurati go‘dak o‘ldirish, bola o‘g‘irlash, jinoiy abort, nomusga tegish, fahsh harakatlari, tan jarohatlari yetkazilishi bilan bog‘liq jinoyatlarni ko‘rib chiqishda vujudga keladi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 46,
+    "quote": "Ushbu masalani hal etish zarurati go'dak o'ldirish, bola o'g'irlash, jinoiy abort, nomusga tegish, fahsh harakatlari, tan jarohatlari yetkazilishi bilan b o g iiq jinoyatlarini ko'rib chiqishda vujudga keladi."
+   },
+   {
+    "text": "JPK 173-moddasiga ko‘ra jinsiy aloqada bo‘lganlik, homiladorlik holati va homilani sun’iy yo‘l bilan tushirish belgilarini aniqlash zarur bo‘lganda sud-tibbiy ekspertiza tayinlanishi shart.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 17,
+    "quote": "jinsiy aloqada boiganlikni, homiladorlik holatini va homilani sun’iy yo'l bilan tushirish belgilarini;"
+   },
+   {
+    "text": "Bunday ekspertizalar akusher-ginekologlar ishtirokida tegishli klinik-laborator, instrumental tekshiruvlar o‘tkazilgan holda bajariladi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 46,
+    "quote": "Ushbu holatlarda ekspertizalar akusher-ginekologlar       ishtirokida   tegishli   klinik-laborator,    instrumental tekshiruvlami o'tkazgan holda bajariladi."
+   },
+   {
+    "text": "Homiladorlik davrida menstruatsiyalar bo‘lmaydi; biroq ba’zan homilador ayollarda qonli ajralmalar bo‘lishi yoki ayrim kasalliklar menopauza bilan kechishi nazarda tutilishi lozim.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 46,
+    "quote": "homiladorlik davrida menstruatsiyalar boim aydi (shu bilan birga ba’zan homilador ayollarda qonli ajratmalaming bo'lishi yoki ayrim kasalliklar menopauza bilan kechishi nazarda tutilishi lozim );"
+   },
+   {
+    "text": "Sut bezlari, so‘rg‘ich va uning atrofidagi doiraning kattalashuvi, pigmentatsiyasi, ajralmalar bo‘lishi — bu belgilar homiladorlikning 2-oyidan yaqqol namoyon bo‘ladi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 46,
+    "quote": "sut bezlarining kattalashishi, so'rg'ich va uning atrofidagi doiraning kattalashuvi hamda pigmentatsiyasi, ajralmalaming boiishi (bu belgilar homiladorlikning 2-oyidan yaqqol namoyon bo'ladi);"
+   },
+   {
+    "text": "Laboratoriya tekshiruvi — homiladorlik gormoni xorial gonadotropinni aniqlash; bu gormon homiladorlikning dastlabki davridan boshlab ishlab chiqariladi. Bachadon o‘lchami, shakli va zichligining o‘zgarishi ham inobatga olinadi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 46,
+    "quote": "homiladorlikni aniqlashga doir laboratoriya tekshimvlari (homiladorlik gormoni - xorial gonadotropinni aniqlash, bu gormon ayol organizmida homiladorlikning dastlabki davridan boshlab ishlab chiqariladi); - bachadon oicham i, shakli va zichligining o'zgarishi;"
+   },
+   {
+    "text": "Homiladorlikning ikkinchi yarmida qorin kattalashadi, qorinda oqimtir vertikal yoy shaklidagi chiziqlar (stria gravidarum) va o‘rta chiziqda pigmentatsiya paydo bo‘ladi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 46,
+    "quote": "qorinning kattalashuvi, qorinda oqimtir vertikal yoy shaklidagi chiziqlar (stria gravidamm), o'rta chiziqda pigmentatsiyaning paydo bo'lishi (homiladorlikning ikkinchi yarmida);"
+   },
+   {
+    "text": "Auskultatsiyada homila yuragi urishini eshitish, palpatsiya va ultratovush tekshiruvida homila tanasi qismlari va ularning qimirlashini aniqlash homiladorlikning ishonchli belgilariga kiradi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 46,
+    "quote": "Auskultatsiyada homila yuragining urishini eshitish, palpatsiya hamda ultratovush tekshiruvida homila tanasi qismlari, ulaming qimirlashini aniqlash homiladorlik mavjudligining ishonchi belgilari qatoriga kiradi."
+   }
+  ],
+  "pages_read": [
+   "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar:45-47",
+   "giyosov_1_asoslar_travmatologiya:16-17"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.005",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Sud ekspertizasi, jumladan sud-tibbiy ekspertiza, surishtiruv, tergov idoralarining qarori yoki sud ajrimiga asosan o‘tkaziladi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 16,
+    "quote": "Amaldagi qonunlarga muvofiq sud ekspertizasi, jumladan sud-tibbiy ekspertiza surishtiruv, tergov idoralarining qarori yoki sud ajrimiga asosan o'tkaziladi."
+   },
+   {
+    "text": "JPK 173-moddasiga ko‘ra ekspertiza shart bo‘lgan holatlarga jinsiy aloqa, homiladorlik va homilani sun’iy tushirish belgilari, hujjat bo‘lmasa yoki shubhali bo‘lsa — gumon qilinuvchi, ayblanuvchi, sudlanuvchi, jabrlanuvchining yoshini aniqlash kiradi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 17,
+    "quote": "jinsiy aloqada boiganlikni, homiladorlik holatini va homilani sun’iy yo'l bilan tushirish belgilarini; 3) gumon qilinuvchi, ayblanuvchi, sudlanuvchi, jabrlanuvchining yoshini, agar bu haqda hujjat bo'lm asa yoki hujjatlar shubha tug'dirsa;"
+   },
+   {
+    "text": "Shuningdek, 173-moddaga ko‘ra gumon qilinuvchi, ayblanuvchi, sudlanuvchi, jabrlanuvchi va guvohning jismoniy holatini, tanosil va boshqa yuqumli kasalliklarga chalingan shaxslarni davolash zarurligi va imkoniyatini aniqlash uchun ham ekspertiza tayinlanadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 17,
+    "quote": "5) jabrlanuvchining, guvohning jismoniy holatini; 6) tanosil va boshqa yuqumli kasalliklarga chalingan shaxslami davolash zarurligini va imkoniyatlarini."
+   },
+   {
+    "text": "Tirik shaxslar ekspertizasi amaliyotda eng ko‘p o‘tkaziladigan ekspertiza bo‘lib, jinoiy, fuqarolik va ma’muriy ishlar bo‘yicha tan jarohatlarining xarakteri va og‘irlik darajasini aniqlash uchun tayinlanadi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 29,
+    "quote": "Tirik shaxslarning sud-tibbiy ekspertizalari amaliyotda eng ko‘p o‘tkaziladigan ekspertizalar bo'lib, ular turli jinoiy, fuqarolik va m a’muriy ishlar bo'yicha quyidagi holatlarda tayinlanadi: - tan jarohatlari yetkazilishida ulaming xarakteri va og'irlik darajasini aniqlash uchun;"
+   },
+   {
+    "text": "Jinsiy holatlar yuzasidan (jins, bokiralik, jinsiy yetuklik, nasl qoldirish qobiliyati, homiladorlik, tug‘ruq va abort, tanosil kasalliklari va OIV infeksiyasi yuqtirilganini aniqlash) va jinsiy jinoyatlarda (zo‘rlash, besoqolbozlik, fahsh harakatlari) ham tayinlanadi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 29,
+    "quote": "jinsiy holatlar yuzasidan (jinsni, bokiralikni, jinsiy yetuklikni, nasi qoldirish qobiliyatini, homiladorlik, sodir bo'lgan tug'ruq va abortni, tanosil kasalliklari va OIV infeksiyasi yuqtirilganligini aniqlash uchun); - jinsiy jinoyatlarda (zo'rlash, besoqolbozlik, fahsh harakatlari holatlarida);"
+   },
+   {
+    "text": "Salomatlik holati, simulyatsiya, dissimulyatsiya, aggravatsiya, sun’iy kasalliklar va o‘ziga jarohat yetkazilganlikni hamda yoshni aniqlash uchun ham tayinlanadi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 29,
+    "quote": "salomatlik holati, simulyasiya, dissimulyasiya, aggravatsiya, sun’iy kasalliklar va o'ziga jarohat yetkazilganlikni aniqlash uchun; - yoshni aniqlash uchun."
+   },
+   {
+    "text": "Bu ekspertizalar sud-tibbiy ekspertiza muassasalarining ambulatoriyasi, tuman, shahar va tumanlararo bo‘linmalarida, ayrim holatlarda zarur sharoit bo‘lgan davolash muassasalari va boshqa joylarda o‘tkaziladi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 29,
+    "quote": "Mazkur ekspertizalar sud-tibbiy ekspertiza muassasalarining ambulatoriyasi, tuman, shahar va tumanlararo boiinm alarida o'tkaziladi. Ayrim holatlarda tirik shaxslarning ekspertizasi zarur shart-sharoitlar           mavjud bo'lgan davolash muassasalari va boshqa joylarda ham o'tkazilishi mumkin."
+   },
+   {
+    "text": "Tirik shaxslar ekspertizasi Jinoyat, Jinoyat-protsessual, Fuqarolik, Fuqarolik protsessual kodekslari, Ma’muriy javobgarlik to‘g‘risidagi kodeks, «Fuqarolar sog‘lig‘ini saqlash to‘g‘risida» va «Sud ekspertizasi to‘g‘risida» qonunlar talablariga rioya qilingan holda o‘tkaziladi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 52,
+    "quote": "Mazkur turdagi ekspertizalar 0 ‘zbekiston Respublikasi Jinoyat kodeksi, Jinoyat-protsessual kodeksi, Fuqarolik kodeksi, Fuqarolik protsessual kodeksi, M a’muriy javobgarlik to ‘g ‘risidagi kodeksi, ’’Fuqarolar sog‘lig‘ini saqlash to ‘g ‘risida” hamda “Sud ekspertizasi to‘g ‘risida” qonunlari"
+   },
+   {
+    "text": "Umumiy algoritm: hodisa tafsilotlari bilan tanishish, tibbiy hujjatlarni o‘rganish, shaxsning so‘rovi, ko‘rik, zarur bo‘lsa qo‘shimcha maxsus tekshiruvlar va mutaxassislar maslahati, ekspert xulosasini tuzish.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 53,
+    "quote": "3.ekspertizadan o'tayotgan shaxsning so‘rovi; 4.shaxsni ko'rikdan o'tkazish; 5.zarurat hollarida qo'shimcha maxsus (laboratoriya, funksional, instrumental va bshq.) tekshiruvlar o'tkazish, tegishli mutaxassislaming maslahat fikrini olish; 6.ekspert xulosasini tuzish."
+   },
+   {
+    "text": "Taqdim etiladigan tibbiy hujjatlarning asl nusxalari berilishi lozim va ularning ishonchliligi uchun ekspertiza tayinlagan shaxs javob beradi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 53,
+    "quote": "Amaldagi tartib-qoidalarga muvofiq bu hujjatlaming asl nusxalari berilishi lozim va ulaming ishonchliligi uchun sud-tibbiy ekspertiza tayinlagan shaxs javob beradi."
+   },
+   {
+    "text": "Ko‘rikdan o‘tayotganning shaxsi hujjatlar (pasport, harbiy bilet, tug‘ilganlik haqidagi guvohnoma) orqali tasdiqlanadi; istisno holatlarda hujjat bo‘lmasa, jarayonda ishtirok etayotgan ekspertiza tayinlagan shaxs tasdiqlashi mumkin.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 53,
+    "quote": "Shundan so'ng tegishli hujjatlami (pasport, harbiy bilet, tug'ilganlik haqidagi guvohnoma) o'rganish orqali ko'rikdan o'tayotganning shaxsi tasdiqlanadi. Istisno holatlarda qayd etilgan hujjatlar bo'lmagan taqdirda ko'rikdan o'tayotganning shaxsi mazkur jarayonda bevosita ishtirok etayotgan"
+   },
+   {
+    "text": "Balog‘atga yetmaganlarning ko‘rigi ota-onasi yoki pedagoglari, muomalaga layoqatsizlarniki qonuniy vakili ishtirokida o‘tkaziladi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 54,
+    "quote": "Balog‘atga yetmagan shaxslaming ko‘rigi ota -onasi yoki pedagoglari ishtirokida, muomalaga layoqatsiz shaxslaming ko‘rigi ulaming qonuniy vakili ishtirokida o‘tkaziladi."
+   }
+  ],
+  "pages_read": [
+   "giyosov_1_asoslar_travmatologiya:16-20",
+   "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar:29-31",
+   "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar:52-54"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.006",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "O‘zbekiston Respublikasi Jinoyat kodeksining 118-moddasiga binoan nomusga tegish jabrlanuvchining xohishiga qarshi zo‘rlik ishlatib, qo‘rqitib yoki uning ojizligidan foydalangan holda jinsiy aloqa qilishni anglatadi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 48,
+    "quote": "0 ‘zbekiston Respublikasi Jinoyat kodeksining 118-moddasiga binoan, ushbu tushuncha jabrlanuvchining xohishiga qarshi zo‘rlik ishlatib, qo‘rqitib yoki uning ojizligidan foydalangan holda jinsiy aloqa qilishni anglatadi."
+   },
+   {
+    "text": "Moddaning mazmuniga ko‘ra nazariy jihatdan nafaqat ayollar, erkaklar ham jabrlanishi mumkin, lekin amaliyotda bu jinoyat asosan ayollarga nisbatan kuzatiladi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 48,
+    "quote": "Bu moddaning mazmun-mohiyati bo'yicha nazariy jihatdan nafaqat ayollar, erkaklar ham nomusga tegishdan jabrlanishi mumkin. Lekin amaliyotda mazkur jinoyat asosan ayollarga nisbatan kuzatiladi."
+   },
+   {
+    "text": "«Nomusga tegish» huquqiy tushuncha; ekspertizada jinsiy aloqa bo‘lgani yoki unga harakat qilingani hamda zo‘rlik ishlatilgani, ojizlik holatini tasdiqlovchi ob’ektiv tibbiy-biologik belgilar o‘rganiladi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 48,
+    "quote": "“Nomusga tegish” huquqiy tushuncha bo'lib, bunday holatlarda ekspertiza jarayonida jabrlanganlarda jinsiy aloqa boigani yoki unga harakat qilingani hamda zo'rlik ishlatilgani, ojizlik holatini tasdiqlovchi ob’ektiv tibbiy-biologik belgilar"
+   },
+   {
+    "text": "Qo‘rqitish jabrlanganlarda xos ob’ektiv belgilar qoldirmaydi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 49,
+    "quote": "Binobarin, qo'rqitish jabrlanganlarda xos ob’ektiv belgilar qoldirmaydi."
+   },
+   {
+    "text": "Jabrlangan ayollarda ojizlik ruhiy kasalliklar, travma, jismoniy nuqsonlar, kichik yosh yoki qarilik, alkogol yoki narkotik mastlik, gangituvchi moddalar ta’siri bilan bog‘liq bo‘lishi mumkin.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 49,
+    "quote": "Jabrlangan ayollarda ojizlik turli, shu jumladan ruhiy kasalliklar, travma, jismoniy nuqsonlar, kichik yoshdaligi yoki qariligi, alkogol yoki narkotik mastlik, gangituvchi moddalar ta’siri holatlari bilan b o g iiq b o iish i mumkin."
+   },
+   {
+    "text": "Jabrlanuvchiga nisbatan zo‘rlik ishlatib, qo‘rqitib yoki ojizligidan foydalanib jinsiy ehtiyojni g‘ayritabiiy usulda (og‘iz, orqa chiqaruv teshigiga) qondirish uchun javobgarlik Jinoyat kodeksining 119-moddasida belgilangan.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 50,
+    "quote": "Bunda jabrlanuvchiga nisbatan zo‘rlik ishlatib, uni qo‘rqitib yoki ojizligidan foydalanib og‘iz, orqa chiqaruv teshigiga jinsiy aloqa qilinadi. Bu turdagi jinoyatlar uchun javobgarlik 0 ‘zbekiston Respublikasi Jinoyat kodeksining 119- moddasida belgilangan."
+   },
+   {
+    "text": "Nomusga tegish hollarida qontalash, shilinmalar ko‘pincha sonning ichki yuzalarida va jinsiy a’zolar sohasida aniqlanadi; ular asosan jinoyatchining qo‘l-oyoqlari bilan yetkaziladi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 49,
+    "quote": "Ular asosan qontalash, shilinmalar ko'rinishida b o iib , jinoyatchining qoi-oyoqlari bilan yetkaziladi. Nomusga tegish hollarida qontalash, shilinmalar ko'pincha sonning ichki yuzalarida, jinsiy a ’zolar sohalarida aniqlanadi"
+   },
+   {
+    "text": "Qin ichida, tashqi jinsiy a’zolar, qov, oraliq va sonning old-ichki yuzalarida maniy topilishi muhim dalil hisoblanadi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 49,
+    "quote": "Qin ichida, shuningdek tashqi jinsiy a’zolar, qov, oraliq sohalarida, sonning old va ichki yuzalarida maniyning topilishi ushbu jinoyatda muhim dalil hisoblanadi."
+   }
+  ],
+  "pages_read": [
+   "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar:48-50"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.007",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Murdaning kech o‘zgarishlari o‘limdan so‘ng ikkinchi kun va undan keyin vujudga kelib, yemiruvchi (destruktiv) va saqlovchi (konservatsiyalovchi) o‘zgarishlarga bo‘linadi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 61,
+    "quote": "yemiruvchi (destruktiv) va saqlovchi (konservatsiya-lovchi) o ‘zgarishlarga bo'linadi."
+   },
+   {
+    "text": "Yemiruvchi o‘zgarishlarga chirish, murdaning hasharotlar, hayvonlar, qushlar va baliqlar tomonidan yemirilishi kiradi; mumifikatsiya, yog‘-mo‘m (sovunlanish), torfli oshlanish saqlovchi o‘zgarishlar hisoblanadi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 61,
+    "quote": "Yemiruvchi o'zgarishlarga chirish, murdaning hasharotlar, hayvonlar, qushlar va baliqlar tomonidan yemirilishi kiradi. Mumifikatsiya, yog‘-m o ‘m (sovunlanish), torfli oshlanish saqlovchi o'zgarishlar hisoblanadi."
+   },
+   {
+    "text": "Chirish — mikroorganizmlar faoliyati natijasida murda to‘qimalaridagi organik birikmalar, jumladan oqsillarning yemirilishi; u asosan aerob bakteriyalar ta’sirida rivojlanadi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 67,
+    "quote": "Chirish asosan organizmdagi aerob bakteriyalaming ta’sirida rivojlanadi. Bu jarayonda anaerob mikrofloraning ishtiroki kamroq boiadi."
+   },
+   {
+    "text": "Chirish ochiq havoda, +20°S – +40°S haroratda, o‘rtacha namlikda yaxshi kechadi; minus haroratda hamda +55°S va undan yuqori haroratda to‘xtaydi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 67,
+    "quote": "Xususan, chirish ochiq havoda, +20°S- +40°S haroratda, o'rtacha namlikda yaxshi kechadi. Minus haroratda hamda +55°S va undan yuqori haroratda chirish jarayoni to'xtaydi."
+   },
+   {
+    "text": "Chirish belgilariga murda yashili, chirish venoz to‘ri, chirish gazlari, murda emfizemasi, chirish pufaklari kiradi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 68,
+    "quote": "Chirish belgilariga murda yashili, chirish venoz to'ri, chirish gazlari, murda emfizemasi, chirish pufaklari kiradi."
+   },
+   {
+    "text": "Murda yashili vodorod sulfidning gemoglobinga birikib sulfgemoglobin hosil bo‘lishi bilan bog‘liq; o‘limdan so‘ng ikkinchi kunda o‘ng yonbosh sohada xira-yashil tus paydo bo‘ladi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 68,
+    "quote": "Murda yashili vodorod sulfidning gemoglobinga birikishi natijasida sulfgemoglobining hosil boiishi bilan bog'liq. O iim dan so'ng ikkinchi kunda o'ng yonbosh sohada murda yashili - xira-yashil tus paydo bo'ladi."
+   },
+   {
+    "text": "Mumifikatsiya — murdaning kech qurishi bo‘lib, issiq, quruq havo va yaxshi ventilyatsiya sharoitida rivojlanadi; bunday sharoitda odatda chirish to‘xtaydi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 71,
+    "quote": "Mumifikatsiya mohiyati bo'yicha murdaning kech qurishi b o iib , issiq, quruq havo hamda yaxshi ventillyasiya sharoitida rivojlanadi. Bunday sharoitda odatda chirish jarayoni to‘xtaydi."
+   },
+   {
+    "text": "To‘liq va qisman mumifikatsiya farqlanadi; to‘liq mumifikatsiya tananing barcha qismlarida kuzatilib, murda tanadagi 80-90% gacha namlikni yo‘qotadi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 71,
+    "quote": "T o iiq va qisman mumifikatsiya farqlanadi. T o iiq mumifikatsiya tananing barcha qismlarida kuzatilib, bunda murda tanadagi 80- 90% gacha namlikni yo‘qotadi."
+   },
+   {
+    "text": "Katta yoshdagi odam murdasining to‘liq mumifikatsiyasi 6-12 oyda, kichik yoshdagi bolalarda 4-6 oyda sodir bo‘ladi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 71,
+    "quote": "Katta yoshdagi odam murdasining to'liq mumifikatsiyasi 6-12 oyda, kichik yoshdagi bolalarda - 4-6 oyda sodir bo'ladi."
+   },
+   {
+    "text": "Yog‘-mo‘m (sovunlanish, saponifikatsiya) suvli yoki namligi katta, havosiz yoki havosi juda kam va nisbatan sovuq sharoitda rivojlanadi; bunday sharoitda chirish to‘xtaydi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 72,
+    "quote": "Yog - mo ‘m (sovunlanish, saponifikatsiya) suvli yoki namlik katta boigan, havo boim agan yoki juda kam b o ig a n hamda nisbatan sovuq haroratli sharoitda rivojlanadi. Bunday sharoitda chirish jarayoni to'xtaydi."
+   },
+   {
+    "text": "Yog‘-mo‘m 2-3 oydan keyin rivojlana boshlaydi; katta yoshdagi odam murdasining to‘liq yog‘-mo‘mlanishi 10-12 oyda, kichik yoshdagi bolalarda 4-5 oyda vujudga keladi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 72,
+    "quote": "Murda tegishli sharoitda bo'lganda y o g'-m o'm 2-3 oydan keyin rivojlana boshlaydi. Katta yoshdagi odam murdasining to'liq yog'-m o'm lanishi 10-12 oyda vujudga keladi. Kichik yoshdagi bolalar murdasida bu muddat ancha qisqa (4-5 oy) bo'ladi."
+   },
+   {
+    "text": "Torfli oshlash murda torfli botqoqlarga tushganda sodir bo‘ladi: gumus kislotalari va boshqa oshlovchi moddalar ta’sirida to‘qimalar suvsizlanadi, oshlanadi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 72,
+    "quote": "Torfli oshlash murda torfli botqoqlarga tushganda sodir bo'ladi. Bu botqoqlardagi gumus kislotalari va boshqa oshlovchi moddalar ta’sirida to'qimalar suvsizlanadi, oshlanadi."
+   }
+  ],
+  "pages_read": [
+   "giyosov_3_toksikologiya2_fizik_tanatologiya:60-73"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.008",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Jarohatlarning hayotiyligini aniqlash muhim, chunki o‘limdan so‘ng qasddan (murdani qismlash, asl holatni o‘zgartirish) yoki tasodifan (reanimatsiya, tekshirish, transportirovka, hayvonlar, qushlar, baliqlar) jarohatlar yetkazilishi mumkin.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 30,
+    "quote": "shaxsning oiim idan so'ng qasddan (murdani qismlarga ajratish, oiim ning sababi bo‘yicha mavjud asl holatni o'zgartirish) yoki tasodifan (reanimatsion tadbirlar, murdani tekshirish, transportirovka qilish jarayonida, hayvonlar, qushlar, baliqlar tomonidan) jarohatlar etkazilishi mumkin."
+   },
+   {
+    "text": "Hayotiylik organizm yoki a’zo, to‘qimaning shikastlanishga reaksiyasi belgilari orqali aniqlanadi; bunda asosan qon aylanish tizimi bilan bog‘liq o‘zgarishlar amaliy ahamiyatga ega. Umumiy va mahalliy belgilar farqlanadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 30,
+    "quote": "Jarohatlaming hayotiyligi butun organizm yoki konkret a ’zo, to'qimaning shikastlanishiga nisbatan reaksiyasining belgilarini aniqlash orqali amalga oshiriladi. Bu borada asosan qon aylanish tizimi bilan b o g iiq o'zgarishlar amaliy ahamiyatga ega."
+   },
+   {
+    "text": "Umumiy belgilar: tashqi va ichki qon ketishi, ichki a’zolarning umumiy kamqonligi, nafas yo‘llarida qon va yot moddalar aspiratsiyasi, oshqozon-ichakda qon, yot moddalar va shikastlangan a’zolarning mayda bo‘lakchalari topilishi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 30,
+    "quote": "tashqi va ichki qon ketishi; - ichki a ’zolarning umumiy kamqonligi; - nafas yoilarida qon va boshqa yot moddalarining aspiratsiyasi; - oshqozon, ichakda qon, yot moddalar, shikastlangan a ’zolarda mayda boiakchalarning topilishi;"
+   },
+   {
+    "text": "Shuningdek: siydik va buyrak naychalarida mioglobin, yog‘ to‘qimali sohalar shikastlanganda limfada eritrotsitlar va yog‘, regional limfa tugunlarida eritrotsitlar (eritrofagiya), emboliyalar (havo, yog‘, to‘qima, yot modda) aniqlanishi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 30,
+    "quote": "siydik va buyrak naychalarida mioglobinning boiishi; - yog‘ to‘qimasi b oigan sohalaming shikastlanishida limfada eritrotsitlar, yog'ning topilishi; - shikastlanish sohasiga nisbatan regional limfa tugunlarida eritrotsitlaming b o iishi (eritrofagiya); - embollaming aniqlanishi"
+   },
+   {
+    "text": "Mahalliy belgilar: jarohat sohasidagi to‘qimaga qon quyilishi, shu sohadagi tomirlarda tromblar, to‘qimaning reaktiv shishi, yallig‘lanish alomatlari.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 30,
+    "quote": "jarohat sohasidagi to'qimaga qon quyilishi; - shikastlangan sohadagi qon tomirlarida tromblaming topilishi; - shikastlangan to'qimaning reaktiv shishi; - shikastlanish sohasida yalligianish alomatlari;"
+   },
+   {
+    "text": "Mahalliy belgilarga yana shikastlangan mushaklarning qisqarishi, hujayralar nekrozi va shikastlangan sohadagi turli gistokimyoviy o‘zgarishlar kiradi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 30,
+    "quote": "shikastlangan mushaklaming qisqarishi; - hujayralaming nekrozi; - shikastlangan sohadagi to'qimalarda turli gistokimyoviy o'zgarishlar."
+   },
+   {
+    "text": "Hayotiylik belgilarining aniqligi jarohat ko‘lamiga hamda organizmning umumiy va shikastlangan sohaning mahalliy xususiyatlariga ham bog‘liq.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 31,
+    "quote": "ko'lamiga bog'liq b o isa , ikkinchi      tomondan organizmning umumiy va shikastlangan sohaning mahalliy xususiyatlariga ham bogiiq."
+   },
+   {
+    "text": "Biologik o‘limdan so‘ng to‘qimalarda hayotiy jarayonlarning to‘xtashi ularning filogenetik yoshiga bog‘liq; shu sababli filogenetik katta yoshdagi ayrim to‘qimalarning o‘limdan keyingi jarohatlari hayotiy jarohatlarga o‘xshash bo‘lishi mumkin.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 31,
+    "quote": "Binobarin, ayrim filogenetik katta yoshga ega to‘qimalaming oiim dan keyin etkazilgan jarohatlari hayotiy jarohatlarga o'xshash boiishi mumkin."
+   },
+   {
+    "text": "Jarohatlarning hayotiyligi va yetkazilish muddati gistologik tekshiruvlar yordamida aniqlanadi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 31,
+    "quote": "Jarohatlaming hayotiyligi va etkazilish muddati gistologik tekshiruvlar yordamida aniqlanadi."
+   },
+   {
+    "text": "O‘q otar jarohatda yara kanali o‘tgan ayrim to‘qimalarning qisqarishi natijasida uzlukli yara kanallari hosil bo‘ladi va bu odatda shikastlanishning hayotiyligidan dalolat beradi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 11,
+    "quote": "YAra kanali o'tgan ayrim to'qimalaming qisqarishi natijasida uzlukli yara kanallari hosil bo'ladi va bu holat odatda shikastlanishning hayotiyligidan dalolat beradi."
+   }
+  ],
+  "pages_read": [
+   "giyosov_1_asoslar_travmatologiya:30-32",
+   "giyosov_2_oqotar_asfiksiya_toksikologiya1:11"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.009",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Sud-tibbiy nuqtai nazardan o‘limning toifasi, xili va turi farqlanadi. Toifa bo‘yicha o‘lim zo‘raki (biron-bir tashqi ta’sir natijasida) va nozo‘raki (turli kasalliklardan) bo‘ladi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 59,
+    "quote": "Sud-tibbiy nuqtai nazardan o'limning toifasi, xili va turi farqlanadi ( jadval 8.2.). Toifa bo'yicha o'lim zo'raki va nozo'raki bo'lishi mumkin. Zo'raki o'lim biron-bir tashqi ta’sir natijasida yuz beradi. Nozo'raki o'lim turli kasalliklardan sodir bo'ladi."
+   },
+   {
+    "text": "Zo‘raki o‘lim xil bo‘yicha qotillik, o‘z-o‘zini o‘ldirish va baxtsiz hodisaga bo‘linadi; nozo‘raki o‘lim xillarga bo‘linmaydi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 59,
+    "quote": "Tashqi ta’sir manbaiga ko'ra zo'raki o'lim xil bo'yicha qotillik, o'z-o 'zin i o'ldirish va baxtsiz hodisalarga bo'linadi. Nozo'raki o'lim turlarga bo'linmaydi."
+   },
+   {
+    "text": "Zo‘raki o‘lim turlari: mexanik jarohatlardan, mexanik asfiksiyadan, zaharlanishdan, yuqori va past harorat, elektr toki va boshqa fizik omillar ta’siridan; nozo‘raki o‘lim sabab bo‘lgan kasalliklar bo‘yicha turlarga bo‘linadi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 59,
+    "quote": "Tashqi ta’siming xususiyatlariga qarab zo'raki o'limning quyidagi turlari farqlanadi: mexanik jarohatlardan, mexanik asfiksiyadan, zaharlanishdan, yuqori va past harorat, elektr toki va boshqa fizik omillaming ta’siridan. Nozo'raki o'lim sabab bo'lgan kasalliklar bo'yicha turlarga bo'linadi."
+   },
+   {
+    "text": "O‘limning toifasi va turini sud-tibbiy ekspertlar aniqlaydi; xilini aniqlash huquqni muhofaza etuvchi idoralar vakolatiga kiradi, chunki uning asosini qasd mavjudligini aniqlash tashkil etadi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 59,
+    "quote": "O'limning toifasi va turi sud-tibbiy ekspertlar tomonidan aniqlanadi. O'limning xilini aniqlash huquqni muhofaza etuvchi idoralar xodimlarining vakolatiga kiradi, chunki bu masalaning asosini qasdning mavjudligini aniqlash tashkil etadi."
+   },
+   {
+    "text": "Klinik o‘lim yurak urishi to‘xtagandan so‘ng boshlanadi; bosh miya, jumladan stvoli chuqur buzilgan bo‘lsa-da, faoliyatini tiklash imkoniyati bo‘ladi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 56,
+    "quote": "Klinik о ‘lim bosqichi yurak urishi to‘xtagandan so‘ng boshlanadi. Bosh miya, jumladan uning stvoli chuqur buzilish holatida bo‘lsa-da, ulaming faoliyatini tiklash imkoniyati bo'ladi."
+   },
+   {
+    "text": "Klinik o‘lim odatdagi sharoitda 5-6 daqiqagacha davom etadi, chunki shundan so‘ng bosh miya po‘stlog‘ida tiklab bo‘lmaydigan o‘zgarishlar rivojlanadi; past haroratda 30 daqiqagacha cho‘zilishi mumkin.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 56,
+    "quote": "Klinik o'lim odatdagi sharoitda 5-6 daqiqagacha davom etadi. Zero, bu muddatdan so'ng bosh miyaning po'stloq qismida tiklab bo‘lmaydigan o'zgarishlar rivojlanadi. Past harorat sharoitida klinik o'limning davomiyligi 30 daqiqagacha cho'zilishi mumkin."
+   },
+   {
+    "text": "Biologik o‘limda a’zo va to‘qimalarda, avvalo bosh miyada tiklab bo‘lmaydigan o‘zgarishlar sodir bo‘ladi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 56,
+    "quote": "So'nggi bosqich - biologik o'lim da a ’zo va to'qimalarda, avvalbor bosh miyada tiklab bo'lmaydigan o'zgarishlar sodir bo'ladi."
+   },
+   {
+    "text": "Bosh miya po‘stlog‘ining o‘limi biologik o‘limning boshlanishi hisoblanib, «miya o‘limi» sifatida qabul qilinadi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 58,
+    "quote": "Bosh miya po‘stlog‘ining o'lim i biologik o'limning boshlanishi hisoblanib, “miya o'limi\" sifatida qabul qilinadi."
+   },
+   {
+    "text": "O‘lim yuz berganini aniqlashning dastlabki (ehtimoliy) va ishonchli belgilari farqlanadi. Ehtimoliy belgilar: tananing passiv, harakatsiz holati, teri oqarishi, hush, nafas, yurak urishining yo‘qligi, tananing biroz sovushi, tashqi ta’sirlarga javob reaksiyasining yo‘qligi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 58,
+    "quote": "Dastlabki belgilar o'limdan so'ng darhol aniqlansa-da, ehtimoliy tusga ega bo'ladi. Ular qatoriga tananing passiv, harakatsiz holati, teri qoplamlarining oqarib ketishi, hush, nafas olish, yurak urishining yo'qligi, tananing biroz sovushi, tashqi ta’sirlarga javob reaksiyasining bo'lmasligi kiradi."
+   },
+   {
+    "text": "O‘limning eng erta ishonchli belgisi — Beloglazov simptomi («mushuk ko‘zi») 15-20 daqiqadan so‘ng aniqlanadi: ko‘z olmasi yon tomondan siqilganda qorachiq ovalsimon shaklni oladi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 58,
+    "quote": "O'limning eng erta ishonchli belgisi - Beloglazov simptomi (\"mushuk ko'zi” simptomi) 15-20 daqiqadan so'ng aniqlanadi. Bunda ko'z olmasi yon tomonlardan siqilganda qorachiq ovalsimon shaklni oladi."
+   },
+   {
+    "text": "Tana haroratining 23 gradusgacha va undan pastroq sovushi ham ishonchli belgi; bu guruhga murdaning boshqa ilk o‘zgarishlari — murda dog‘lari, qotishi va qurishi kiradi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 59,
+    "quote": "Tana haroratining 23 gradusgacha va undan pastroq sovushi ham o'limning ishonchli belgisi deb hisoblanadi. Bulardan tashqari ushbu guruhga murdaning boshqa ilk o'zgarishlari - murda dog'lari, murdaning qotishi va qurishi kiradi."
+   }
+  ],
+  "pages_read": [
+   "giyosov_3_toksikologiya2_fizik_tanatologiya:55-60"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.010",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Asfiksiya tashqi nafas olish buzilishi tufayli organizmda kislorod tanqisligi va karbonat angidrid ko‘payishi natijasida hayot uchun muhim tizimlar faoliyatining o‘tkir buzilishidir; mexanik omil ta’sirida vujudga kelgani mexanik asfiksiya deyiladi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 26,
+    "quote": "Bunda organizmda gipoksiya holati giperkapniya bilan birgalikda rivojlanadi. Mexanik omil ta ’sirida tashqi nafas olishning buzilishi natijasida vujudga kelgan holat mexanik asfiksiya deb nomlanadi."
+   },
+   {
+    "text": "Asfiksiyaning kechishida preasfiktik va asfiktik davrlar farqlanadi; preasfiktik davr o‘rtacha 20-30 sek. davom etadi va bunda organizm kompensator-moslashuv imkoniyatlari bilan o‘zgarishlarni bartaraf qilishga harakat qiladi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 27,
+    "quote": "Asfiksiyaning kechishida preasfiktik va asfiktik davrlar farqlanadi. Preasfiktik davr o'rtacha 20-30 sek. davom etib, nafas olish qisqa vaqtga to ‘xtaydi,"
+   },
+   {
+    "text": "Inspirator hansirash bosqichida nafas olish tezlashadi va uzayadi, arterial bosim pasayib venoz bosim ortadi; odatda asfiksiya boshlangandan 40-60 sek. o‘tganda hush yo‘qoladi, bosqich bir minutga yaqin davom etadi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 27,
+    "quote": "Odatda asfiksiya boshlangandan 40-60 sek. o'tganda hush yo'qoladi. Ushbu bosqich bir minutga yaqin davom etishi mumkin."
+   },
+   {
+    "text": "Ekspirator hansirash bosqichida nafas chiqarish kuchliroq bo‘ladi, arterial bosim ko‘tariladi; siydik, maniy, axlat ajralishi bilan kechadigan kuchli klonik talvasalar kuzatilishi mumkin.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 27,
+    "quote": "Ekspirator hansirash bosqichi. Bu bosqichda aksincha nafas chiqarish kuchliroq va davomiyroq boiadi."
+   },
+   {
+    "text": "Nafasning qisqa vaqtga to‘xtashi (nisbiy tinchlik) bosqichida arterial va venoz bosim pasayadi, puls sekinlashadi, mushaklar bo‘shashadi, reflekslar so‘na boshlaydi; bosqich 30-40 sek. davom etadi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 27,
+    "quote": "Arteril va venoz bosimlar pasayadi, puls sekinlashadi, mushaklar bo‘shashadi, reflekslar so‘na boshlaydi. Bu bosqich 30-40 sek. davom etadi."
+   },
+   {
+    "text": "Nafasning to‘liq to‘xtash bosqichida nafas markazining falajlanishi bilan nafas butunlay to‘xtaydi; yurak yana 3-10 minut urib turishi mumkin, so‘ng to‘xtab, klinik o‘limga olib keladi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 28,
+    "quote": "Nafas olish markazining falajlanishi natijasida nafas olish butunlay to‘xtaydi. Ayni paytda m aium bir vaqt oraligida (3-10 minut) yurak urib turishi mumkin."
+   },
+   {
+    "text": "Asfiksiyaning hayotiy kechishi asfiktik ta’sirning turi, jadalligiga va organizmning salomatlik holatiga bog‘liq; davr va bosqichlarning kechishi hamda davomiyligi shartli, taxminiy tusga ega.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 28,
+    "quote": "Asfiksiyaning hayotiy kechishi bir tomondan asfiktik ta’siming turi, jadalligiga, ikkinchi tomondan esa organizmning salomatlik holatiga bogiiq."
+   },
+   {
+    "text": "Mexanik asfiksiyadan o‘limda bosh miya gipoksiyasi bilan birga yurakning (jumladan reflektor) to‘xtashi ham ahamiyatli; 30 sekundgacha yurak reflektor to‘xtasa, umumasfiktik belgilar rivojlanib ulgurmaydi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 28,
+    "quote": "Asfiktik ta’sirdan qisqa vaqt oraligida (30 sekundgacha) yurak reflektor to‘xtagan holatlarda, umumasfiktik belgilar rivojlanib ulgurmaydi va shu sababli ular murda tekshiruvida aniqlanmasligi mumkin."
+   },
+   {
+    "text": "Asfiktik ta’sir o‘lim bilan tugamasa (masalan, cho‘kayotgan qutqarilsa, osilgan o‘z vaqtida sirtmoqdan olinsa), asfiksiya holatida bo‘lganlik organizmda qator o‘zgarishlarni keltirib chiqaradi va ularning majmui postasfiktik holat deyiladi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 28,
+    "quote": "M aium bir davr oraligida asfiksiya holatida boiganlik organizmda qator o ‘zgarishlami vujudga keltiradi        va ulaming majmuyi        postasfiktik holat deb nomlanadi."
+   },
+   {
+    "text": "Terminal nafas olish bosqichida onda-sonda noritmik nafas harakatlari bo‘ladi; oxirida arterial bosim o‘ta pasayadi, reflekslar yo‘qoladi; bu bosqich 5 minutgacha davom etishi mumkin.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 28,
+    "quote": "oxirida arterial bosim o ‘ta pasayib ketadi, reflekslar yo‘qoladi. Ayrim holatlarda kuchli talvasalar ham b o iish i mumkin. Bu bosqich 5 minutgacha davom etishi mumkin."
+   },
+   {
+    "text": "Postasfiktik holatning kechishida to‘rtta davr farqlanadi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 28,
+    "quote": "Postasfiktik holatning kechishida to ‘rtta davr farqlanadi"
+   },
+   {
+    "text": "Dezorientatsiya va xotiraning buzilishi davrida hush tiklangan bo‘lsa-da, jabrlangan zamon va makonda chalkashadi; konfabulyatsiya belgilari bilan retrograd amneziya kuzatiladi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 29,
+    "quote": "Jabrlanganning hushi tiklangan boisa-da, zamon va makondagi orientatsiyada chalkashadi. Konfabulyasiya (xotiradagi yo'qotishlami anglamagan holda soxta xotira bilan toidirish) belgilari bilan retrograd amneziya kuzatiladi."
+   }
+  ],
+  "pages_read": [
+   "giyosov_2_oqotar_asfiksiya_toksikologiya1:25-29"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.011",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Murdaning sud-tibbiy ekspertizasi zo‘rakilik alomatlari yoki ularga shubha bo‘lganda surishtiruv, tergov va sud idoralarining qarori yoki ajrimiga asosan o‘tkaziladi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 76,
+    "quote": "Murdaning sud-tibbiy ekspertizasi zo'rakilik alomatlari yoki ularga shubha boiganda surishtiruv, tergov va sud idoralarining qarori yoki ajrimiga asosan o'tkaziladi."
+   },
+   {
+    "text": "Ekspertiza zo‘raki o‘limning barcha turlarida va zo‘raki o‘limga shubha bo‘lganda (o‘lim qayerda, qachon sodir bo‘lganidan qat’iy nazar), noma’lum shaxslar o‘limida hamda o‘limdan oldin ko‘rsatilgan tibbiy yordamga shikoyat, e’tiroz bo‘lganda tayinlanadi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 76,
+    "quote": "oiim ning sababi, joyi va vaqtidan qat’iy nazar nom aium shaxslar oiim ida; - oiim dan oldin ko‘rsatilgan tibbiy yordamga nisbatan shikoyat, e ’tiroz boiganda."
+   },
+   {
+    "text": "Ekspertiza Sog‘liqni saqlash vazirligi tasdiqlagan qoidalar va standartlarga muvofiq, asosan maxsus murdaxonalarda o‘tkaziladi; istisno ravishda zarur sharoit yaratilganda boshqa joylarda ham o‘tkazilishi mumkin.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 76,
+    "quote": "Murdaning sud-tibbiy ekspertizasi Sogiiqni saqlash vazirligi tomonidan tasdiqlangan qoidalar va standartlarga muvofiq ravishda o‘tkaziladi. Murda tekshiruvi asosan maxsus m oijallangan murdaxonalarda o'tkaziladi."
+   },
+   {
+    "text": "Birinchi bosqich — taqdim etilgan materiallar (qaror yoki ajrim, ko‘zdan kechirish bayonnomasi, tibbiy hujjatlar) bilan tanishish va tekshiruv rejasini tuzish; ikkinchisi — kiyim-bosh, poyafzal, tana, murda o‘zgarishlari va jarohatlarni o‘rganuvchi tashqi tekshiruv.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 77,
+    "quote": "Bunda ekspertiza tayinlash to ‘g‘risidagi qaror yoki ajrim, hodisa, murda topilgan joyni ko‘zdan kechirish bayonnomasi, tibbiy hujjatlar m aium otlari bo‘yicha voqea tafsilotlari o'rganiladi va tekshiruvning rejasi tuziladi."
+   },
+   {
+    "text": "Ichki tekshiruvda barcha holatlarda uch asosiy (kalla, ko‘krak, qorin) bo‘shliq ochilishi shart; bu bosqich qo‘shimcha laboratoriya tekshiruvlari uchun murdadan materiallar olish bilan yakunlanadi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 77,
+    "quote": "uch asosiy (kalla, ko‘krak, qorin) bo‘shliqlar ochilib tekshirilishi shart. Zarurat hollarida boshqa (umurtqa, bo‘g ‘im) bo‘shliqlar ham ochilishi mumkin. Bu bosqich qo‘shimcha laboratoriya tekshiruvlari uchun murdadan materiallar olish bilan yakunlanadi."
+   },
+   {
+    "text": "Keyingi bosqichlar: sud-tibbiy diagnozni tuzish va o‘lim haqidagi tibbiy guvohnomani rasmiylashtirish, qo‘shimcha laboratoriya tekshiruvlarini o‘tkazish va baholash (ularning natijalari qat’iy kuchga ega emas), ekspert xulosasi to‘xtamini tuzish.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 77,
+    "quote": "Ushbu tekshiruvlar asosiy - murda tekshiruviga nisbatan qo'shimcha hisoblanadi va ulaming natijalari ekspert tomonidan tanqidiy baholanadi, ya’ni qat’iy kuchga ega emas."
+   },
+   {
+    "text": "Ekspert xulosasining tekshiruv qismida qo‘shimcha laboratoriya tekshiruvlari uchun murdadan olingan ob’ektlar ro‘yxati va boshqa ekspertizalar uchun tergovchiga taqdim etilgan ob’ektlar keltiriladi.",
+    "book": "giyosov_3_toksikologiya2_fizik_tanatologiya",
+    "page": 78,
+    "quote": "qo‘shimcha laboratoriya tekshiruvlari uchun murdadan olingan ob’ektlar ro'yxati; boshqa turdagi ekspertizalami o ‘tkazish uchun tergovchiga taqdim etilgan ob’ektlar keltiriladi."
+   },
+   {
+    "text": "JPK 203-moddasiga ko‘ra ashyoviy dalillarga asosan jinoyat quroli bo‘lgan yoki jinoyat izlarini saqlagan, jinoiy harakatlar ob’ekti bo‘lgan predmetlar va ish holatlarini aniqlashga xizmat qiladigan predmetlar kiradi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 56,
+    "quote": "Ushbu ta’rifdan kelib chiqqan holda ashyoviy dalillar qatoriga asosan jinoyat quroli b o ig an yoki o‘zida jinoyatning izlarini saqlagan, shuningdek jinoiy harakatlar ob’ekti b oigan predmetlar,"
+   },
+   {
+    "text": "Biologik kelib chiqishli ashyoviy dalillar — to‘qima qismlari, zarralari, qon, ajralmalar (so‘lak, siydik, ter, maniy, najas) va ularning dog‘lari, sochlar — sud-tibbiy ekspertiza muassasalarining laboratoriya tuzilmalarida tekshiriladi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 56,
+    "quote": "Biologik kelib chiqishga ega boigan ashyoviy dalillar - organizm to'qimalarining qismlari, zarralari, shuningdek qon, inson ajratmalari (soiak, siydik, ter, maniy, najas) va ulaming dogiari, sochlar sud-tibbiy ekspertiza ob’ekti boiishi mumkin."
+   },
+   {
+    "text": "Hodisa joyidan ashyoviy dalillarni, jumladan qon izlarini olishni tergovchi amalga oshiradi; zarur hollarda shifokorlar ham jalb qilinadi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 57,
+    "quote": "Amaldagi qonun hujjatlariga binoan hodisa joyidan ashyoviy dalillarni, shu jumladan qon izlarini olish tergovchi tomonidan amalga oshiriladi."
+   },
+   {
+    "text": "Zaharlovchi modda ma’lum bo‘lsa, ob’ektlar «uch nuqta» qoidasi bo‘yicha — zahar kirgan, asosan ta’sir etgan va organizmdan chiqqan joylardan olinadi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 57,
+    "quote": "Zaharlovchi modda m aiu m bo'lgan hollarda laboratoriya tekshiravi uchun ob’ektlar “uch nuqta” qoidasiga binoan, ya’ni zahar kirgan, asosan ta’sir etgan va organizmdan chiqqan joylardan olinadi."
+   },
+   {
+    "text": "Zaharlanish manbai noma’lum bo‘lsa, toksikologik tekshiruv uchun bosh miyaning uchdan bir, o‘pkaning to‘rtdan bir, jigarning uchdan bir qismi o‘t qopi bilan, bir butun buyrak siydik bilan, oshqozon massasi bilan, bir metrdan ingichka va yo‘g‘on ichak, 100-200 ml qon (har biri alohida idishda) olinadi.",
+    "book": "giyosov_2_oqotar_asfiksiya_toksikologiya1",
+    "page": 57,
+    "quote": "toksikologik tekshimv uchun bosh miyaning uchdan bir qismi, o'pkaning to'rtdan bir qismi, jigaming uchdan bir qismi o 't qopi va o 't bilan, bir butun buyrak siydik bilan, oshqozon ichidagi massa bilan, bir metrdan ingichka va yo'g'on ichak, 100-200 ml. qon (har biri alohida idishda) olinadi."
+   }
+  ],
+  "pages_read": [
+   "giyosov_3_toksikologiya2_fizik_tanatologiya:76-78",
+   "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar:56-57",
+   "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar:73",
+   "giyosov_2_oqotar_asfiksiya_toksikologiya1:56-57"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.012",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Sud tibbiyotida «yangi tug‘ilganlik» tushunchasi pediatriya (to‘rt hafta) va akusherlik-ginekologiyadagi (etti kun) tushunchalardan farq qiladi: bu davr dastlabki 24 soatni tashkil etadi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 9,
+    "quote": "Agar pediatriyada mazkur tushuncha tug‘ruqdan keyingi to‘rt hafta (neonatal davr), akusherlik- ginekologiyada - etti kundan iborat davmi anglatsa, sud tibbiyotida ushbu davr dastlabki 24 soatni tashkil etadi."
+   },
+   {
+    "text": "Bu xususiyat qonunchilik bilan bog‘liq: JKda hayotga qarshi jinoyatlar qatorida onaning o‘z go‘dagini tug‘ish vaqtida yoki tug‘ilishi hamon qasddan o‘ldirishi alohida ajratilgan (99-modda).",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 9,
+    "quote": "O'zbekiston Respublikasi JK da hayotga qarshi jinoyatlar qatorida onaning o‘z go‘dagini tu g ish vaqtida yoki tugilishi hamon qasddan oidirishi alohida ajratilgan (99- modda)"
+   },
+   {
+    "text": "Agar bu harakat ona tomonidan emas, boshqa shaxslar tomonidan amalga oshirilsa, qasddan odam o‘ldirish (97-modda) sifatida baholanadi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 9,
+    "quote": "Agar bu harakat ona tomonidan emas, balki boshqa shaxslar tomonidan amalga oshirilsa, jinoyat huquqiga binoan qasddan odam o idirish (97-modda) sifatida baholanadi."
+   },
+   {
+    "text": "Tashqi belgilar: tashqi jarohat bo‘lmaganda tanada qon izlarining topilishi yangi tug‘ilganlik belgisi; ular tug‘ruq yo‘llari yumshoq to‘qimalarining yorilishidan hosil bo‘ladi va yuvilganda yo‘qoladi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 10,
+    "quote": "Tashqi harohatlar boim agan taqdirda              tanada qon izlarining topilishi yangi tugilganlik belgisi sifatida baholanadi. Ular tug‘ruq yo‘llaridagi yumshoq to'qimalaming yorilish, darz ketishi tufayli hosil boiadi."
+   },
+   {
+    "text": "Mo‘msimon qoplama — oqimtir-kulrang massa (yog‘ bezlari sekreti, ko‘chgan epidermis, tuk sochlar, qog‘onoq suvlari aralashmasi); ayniqsa teri burmalari, qo‘ltiq osti, oraliqda ko‘p bo‘ladi, yuvilmasa bir haftagacha saqlanishi mumkin.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 10,
+    "quote": "Mo'msimon qoplama ayniqsa terining tabiiy burmalari, q o itiq osti, oraliq sohalarida ko‘proq b o iad i va uzoqroq saqlanadi. Go‘dak tanasi yuvilmaganda mo'msimon qoplama bir haftagacha saqlanishi mumkin."
+   },
+   {
+    "text": "Tug‘ruq shishi — homila tanasining oldingi qismi tos halqasiga qisilishidan yumshoq to‘qimalarning shishi; ko‘pincha bosh, ba’zan dumbada bo‘ladi va odatda 2-3 kunda so‘riladi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 10,
+    "quote": "Tug‘ruq jarayonida homila tanasining oldingi qismi tos halqasiga qisilishi bilan b o g iiq mahalliy qon aylanishining buzilishi natijasida yumshoq to‘qimalaming shishishi vujudga keladi."
+   },
+   {
+    "text": "Mekoniy (birlamchi najas) — to‘q-yashil, qo‘ng‘ir-yashil yarim suyuq gomogen massa bo‘lib, yo‘g‘on ichak, orqa chiqaruv teshigi atrofi, dumba, son sohalarida aniqlanadi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 10,
+    "quote": "Mekoniy (birlamchi najas) to‘q-yashil, qo‘ng‘ir-yashil yarim suyuq gomogen massa b o iib , yo‘g ‘on ichak, orqa chiqaruv teshigi atrofi, dumba, son sohalarida aniqlanadi"
+   },
+   {
+    "text": "Mekoniy odatda tug‘ruqdan keyin 1-2 kun ichida ichakdan to‘liq chiqariladi; noraso tug‘ilgan go‘daklarda bu muddat uzoqroq (3-4 kungacha).",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 10,
+    "quote": "Odatda tug‘rukdan keyin 1-2 kun ichida mekoniy ichakdan to iiq chiqariladi. Lekin noraso tugilgan go‘daklarda bu muddat uzoqroq (3-4 kungacha) boiadi."
+   },
+   {
+    "text": "Kindik: raso go‘daklarda uzunligi 50-60 sm, qalinligi 1,5-2 sm; yangi tug‘ilganlarda nam, yaltiroq, oqimtir-qizg‘ish bo‘ladi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 11,
+    "quote": "Raso go'daklarda kindikning uzunligi 50-60 sm., qalinligi 1,5-2 sm. boiadi. Yangi tugilganlarda kindik nam, yaltiroq, oqim tir-qizgish rang b o iib , qurish natijasida bujmayadi,"
+   },
+   {
+    "text": "Tirik tug‘ilganlarda kindik halqasida bir necha soatdan so‘ng, ba’zan birinchi kun oxirida reaktiv yallig‘lanish (demarkatsion halqa) paydo bo‘ladi; 5-7 kundan so‘ng shu chiziq bo‘yicha kindik ajraladi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 11,
+    "quote": "uning asosida - kindik halqasi sohasida bir necha soatdan so‘ng, ba’zan birinchi kunning oxirida qizgish hoshiya ko‘rinishida reaktiv yalligianish (demarkatsion halqa) vujudga keladi. Keyinchalik 5-7 kundan so‘ng ayni shu chiziq bo'yicha kindik ajraladi"
+   },
+   {
+    "text": "Ichki belgi: nafas olmagan o‘pka birlamchi atelektaz holatida bo‘ladi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 11,
+    "quote": "O'pkaning birlamchi atelektazi. Nafas olmagan o‘pka birlamchi atelektaz holatida boiadi."
+   },
+   {
+    "text": "Faqat o‘pkaning birlamchi atelektazi hamda kindikda demarkatsion halqaning yo‘qligi yoki dastlabki belgilari, jumladan tana va yo‘ldoshdan ajratilmagan kindik mutloq ishonchli; qolgan belgilar nisbiy bo‘lib, ikkinchi va keyingi kunlarda ham aniqlanishi mumkin.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 12,
+    "quote": "belgilarining aniqlanishi, shu jum ladan tana va yo'ldoshdan ajratilmagan kindik absolyut xarakterga ega, ya’ni m utloq ishonchli hisoblanadi. Qolgan belgilar esa nisbiy xarakterga ega b o iib , go‘dak hayotining ikkinchi va keyingi kunlarida ham aniqlanishi mumkin."
+   }
+  ],
+  "pages_read": [
+   "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar:9-12"
+  ]
+ },
+ {
+  "id": "sud_tib.c23.013",
+  "coverage": "full",
+  "gaps": [],
+  "points": [
+   {
+    "text": "Hodisa joyini ko‘zdan kechirish muhim va kechiktirib bo‘lmaydigan protsessual harakat bo‘lib, surishtiruvchi, tergovchi va sud tomonidan JPK talablari (137, 138-moddalar) doirasida o‘tkaziladi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 21,
+    "quote": "Hodisa joyini ko‘zdan kechirish muhim va kechiktirib boim aydigan protsessual harakat hisoblanadi va u surishtiruvchi, tergovchi va sud tomonidan 0 ‘zbekiston Respublikasi JPK talablari (137, 138-moddalar) doirasida o'tkaziladi."
+   },
+   {
+    "text": "Murdani ko‘zdan kechirish hodisa joyini ko‘zdan kechirishning tarkibiy qismi bo‘lib, xolislar va sud tibbiyoti sohasidagi mutaxassis ishtirokida o‘tkaziladi; mutaxassisning huquq va majburiyatlari JPK 70-moddasida keltirilgan. Mutaxassis qatnasha olmasa, boshqa shifokor ishtirok etishi mumkin.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 21,
+    "quote": "Mutaxassisning huquq va majburiyatlari 0 ‘zbekiston Respublikasi       JPK     70-moddasida keltirilgan. Mutaxassisning qatnashishiga imkon boim agan hollarda ko‘zdan kechirish boshqa shifokor ishtirokida o'tkazilishi mumkin."
+   },
+   {
+    "text": "Ko‘zdan kechirish usullari: markazdan qochuvchi (ekssentrik) — avval murda, so‘ng atrofi; markazga intiluvchi (konsentrik) — atrofdan boshlanib, murda bilan yakunlanadi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 21,
+    "quote": "Markazdan qochuvchi turda aw al murda, keyinchalik esa uning tevarak-atrofi ko‘zdan kechiriladi. Markazga intiluvchi turda ko'zdan kechirish tevarak-atrofdan boshlanib, markazga qarab davom etadi va murdani ko'zdan kechirish bilan yakunlanadi."
+   },
+   {
+    "text": "Statik bosqichda ob’ektlar holati o‘zgartirilmay o‘rganiladi; dinamik bosqichda ularni surish, ag‘darish, ko‘tarib ko‘rish mumkin va murda to‘liqroq o‘rganiladi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 22,
+    "quote": "Hodisa joyini ko‘zdan kechirishda statik va dinamik bosqichlar farqlanadi. Statik bosqichda hodisa joyi va undagi ob’ektlar ulaming holatini o‘zgartirmagan holda o'rganiladi."
+   },
+   {
+    "text": "Mutaxassis vazifalari: o‘lim faktini qayd etish, murdani to‘g‘ri ko‘zdan kechirishda yordam berish, daliliy ahamiyatli holatlarga e’tibor qaratish, biologik ashyoviy dalillarni topish va olishda hamkorlik qilish.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 22,
+    "quote": "o'lim faktini qayd etadi; - murdani to 'g 'ri va tartib bilan ko'zdan kechirishda yordam beradi; - murda topilish fakti bo'yicha daliliy ahamiyatga ega b o ig an holatlarga surishtiruvchi, tergovchining e’tiborini qaratadi;"
+   },
+   {
+    "text": "Hodisa joyidagi mutaxassis sud ekspert maqomiga ega emas, hech qanday yozma hujjat, jumladan ekspert xulosasini bermaydi; fikrlari og‘zaki, dastlabki va taxminiy tusda bo‘ladi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 23,
+    "quote": "mutaxassis sud ekspert maqomiga ega emas va u mazkur jarayonda bironta yozma hujjat, jumladan ekspert xulosasini bermaydi. Mutaxassis fikrlarini og‘zaki bildiradi va ular dastlabki, taxminiy tusga ega."
+   },
+   {
+    "text": "Mutaxassisning birinchi vazifasi o‘lim faktini qayd etish bo‘lib, asosan o‘limning ishonchli belgisi bo‘lgan murda o‘zgarishlari orqali hal etiladi; hayot belgilari bo‘lsa yoki o‘lim shubhali bo‘lsa, tibbiy yordam ko‘rsatishi lozim.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 23,
+    "quote": "Bu vazifa asosan oiim ning ishonchli belgisi b o ig a n murda o'zgarishlarining aniqlanishi orqali hal etiladi. Agar hayot belgilari aniqlansa yoki oiim ning sodir bo'lganligi shubhali b o isa , mutaxassis tegishli tibbiy yordamni ko'rsatishi lozim."
+   },
+   {
+    "text": "Hodisa joyida murdadagi jarohatlarni kesib ko‘rish, zondlash, ulardagi yot moddalarni olib tashlash, yuvish yoki artish taqiqlanadi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 24,
+    "quote": "Ayni paytda jarohatlami kesib ko'rish, zondlash, ulardagi yot moddalar olib tashlash, ulami yuvish yoki artish taqiqlanadi."
+   },
+   {
+    "text": "JPK 141-moddasiga binoan surishtiruvchi, tergovchi ko‘zdan kechirish bayonnomasini tuzadi (kirish, tavsiflash, yakuniy qismlar); sud esa jarayon va natijalarni sud majlisi bayonnomasida qayd etadi.",
+    "book": "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar",
+    "page": 25,
+    "quote": "JPK 141 rnoddasiga binoan surishtiruvchi, tergovchi ko‘zdan kechirish o ‘tkazilganligi to‘g‘risida bayonnoma tuzadi, sud esa ko‘zdan kechirish jarayoni va uning natijalarini sud majlisi bayonnomasida qayd etadi."
+   },
+   {
+    "text": "JPKda tergov va sud muhokamasida dalillarni topish va mustahkamlashda yordam berish uchun mutaxassis chaqirilishi belgilangan; mutaxassis sifatida shifokor, pedagog va zarur bilimga ega boshqa shaxslar chaqirilishi mumkin (69-modda).",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 20,
+    "quote": "Mutaxassis       sifatida shifokor, pedagog hamda zarur bilim va malakaga ega b oigan boshqa shaxslar chaqirilishi mumkin (69-modda)."
+   },
+   {
+    "text": "Sud-tibbiy ekspert ish uchun ahamiyatli tibbiy fakt va holatlarni aniqlaydi, o‘rganadi, baholaydi va bu jarayonni xulosa shaklida hujjatlashtiradi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 18,
+    "quote": "Sud-tibbiy ekspert ish uchun ahamiyatli boigan tibbiy fakt, holatlami aniqlaydi, o'rganadi, baholaydi va bu jarayonni xulosa shaklida hujjatlashtiradi."
+   },
+   {
+    "text": "Sud tibbiyoti sohasidagi mutaxassis hodisa yoki murda topilgan joyni ko‘zdan kechirish kabi protsessual harakatlarda ishtirok etishi mumkin va bu jarayonlarda mustaqil ravishda hech qanday hujjat tuzmaydi.",
+    "book": "giyosov_1_asoslar_travmatologiya",
+    "page": 20,
+    "quote": "U turli protsessual harakatlarda (hodisa yoki murda topilgan joyni ko‘zdan kechirish, guvohlantirish, eksgumatsiya, tergov eksperimenti va h.k.) ishtirok etishi mumkin. Ushbu jarayonlarda mutaxassis mustaqil ravishda hech qanday hujjat tuzmaydi."
+   }
+  ],
+  "pages_read": [
+   "giyosov_4_murda_ekspertizasi_ashyoviy_dalillar:21-25",
+   "giyosov_1_asoslar_travmatologiya:18-20"
+  ]
+ }
+]
