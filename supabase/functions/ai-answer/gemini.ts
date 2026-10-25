@@ -3,11 +3,15 @@
 // (never key, question or answer text).
 
 export const API = "https://generativelanguage.googleapis.com/v1beta";
-export const DEADLINE_MS = 45_000; // the app waits up to 60 s: keep a >= 15 s margin
-export const ATTEMPT_MS = 12_000;
+export const DEADLINE_MS = 50_000; // the app waits up to 60 s: keep a >= 10 s margin
+// A healthy flash answers in 2-5 s; a slower attempt is cut so the next model
+// (e.g. a lighter one) gets its turn while the upstream is overloaded.
+export const ATTEMPT_MS = 8_000;
 export const MIN_ATTEMPT_MS = 3_000;
 export const BACKOFF_MS = 1_200;
-export const MAX_MODELS = 4;
+export const MAX_MODELS = 5;
+/** Stable fallbacks appended when discovery did not list them (404 is instant). */
+export const FALLBACK_MODELS = ["gemini-2.5-flash", "gemini-2.5-flash-lite"];
 export const MAX_WEB_SOURCES = 8;
 
 export type Mode = "kb" | "web";
@@ -52,7 +56,19 @@ export function rankModels(models: ModelInfo[]): string[] {
 
 /** Preferred (explicit FE_AI_MODEL may name anything, e.g. a preview) first. */
 export function candidateList(preferred: string[], discovered: string[]): string[] {
-  return [...new Set([...preferred, ...discovered])].slice(0, MAX_MODELS);
+  // Under upstream overload the lighter model is the likeliest to answer in
+  // time: try it second, right after the first full model.
+  const firstLite = discovered.find((n) => /lite/i.test(n));
+  const full = discovered.filter((n) => !/lite/i.test(n));
+  const ordered = [
+    ...preferred,
+    ...(full[0] ? [full[0]] : []),
+    ...(firstLite ? [firstLite] : []),
+    ...full.slice(1),
+    ...discovered.filter((n) => /lite/i.test(n) && n !== firstLite),
+    ...FALLBACK_MODELS,
+  ];
+  return [...new Set(ordered)].slice(0, MAX_MODELS);
 }
 
 export async function discoverModels(key: string, d: Deps = realDeps): Promise<string[]> {
