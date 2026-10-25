@@ -14,7 +14,7 @@ Ogohlantirish/«kafolat» jumlalari yo‘q (egasi talabi). Hozircha hamma funksi
 * Savollar rasmiy ro‘yxatdagi kabi **faqat o‘zbekcha** (tarjima qilinmaydi).
 
 ## Javob kalitlari (faqat tasdiqlanganlari baholanadi)
-Jami **791 ta** test kalitli; qolgan 482 tasi «Javob kaliti tasdiqlanmagan» deb ko‘rinadi va mashqqa kirmaydi.
+Jami **791 ta** test kalitli; qolgan 482 tasi «Javob kaliti hali qo‘shilmagan» deb ko‘rinadi va mashqqa kirmaydi.
 
 | Mutaxassislik | Kalitli | Manba |
 |---|---|---|
@@ -30,6 +30,11 @@ Jarayon (tekshiruv izi — `tools/assessment/data/audit/`):
 5. Jahon adabiyoti kalitlarida manba nomi va havolasi «Javob manbasi» qatorida ko‘rsatiladi.
 
 Qayta qurish: `tools/assessment/build_assessment.py` (og‘zaki), `merge_tests.py <data> <json>` (testlar + kalitlar), `assemble_web_keys.py`.
+
+## Adabiyot — javob asosi (egasi qarori, 2026-10-25)
+Har bir kalitli savolda «Javob manbasi» (kitob + PDF-bet, yoki nom + havola) va «Asos» (aniq iqtibos) ko‘rsatiladi;
+bo‘lim bosh sahifasida «Foydalanilgan adabiyotlar» ro‘yxati (har manba bo‘yicha savollar soni). Ilovada «tasdiqlanmagan» so‘zi ishlatilmaydi:
+adabiyot asos bo‘ladi; kaliti yo‘q savol «Javob kaliti hali qo‘shilmagan» deb turadi.
 
 ## Ochiq ishlar
 * 482 ta kalitsiz test: ko‘pi klinik holatga tashxis qo‘llash (patanatomiya 286–401) — mahalliy qo‘llanma (masalan, Зайратьянц «Формулировка патологоанатомического диагноза» yoki O‘zbekiston kafedrasi) kerak.

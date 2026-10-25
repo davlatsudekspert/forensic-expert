@@ -117,6 +117,25 @@ void main() {
     expect(_key('assessment.retry'), findsOne);
   });
 
+  testWidgets('«Foydalanilgan adabiyotlar»: kitob, ustoz banki va jahon '
+      'adabiyoti; javobda asos iqtibosi ko‘rinadi', (tester) async {
+    await pumpApp(
+      tester,
+      settings: completedSettings(lang: 'uz'),
+      overrides: _overrides(),
+      initialLocation: Routes.assessment,
+    );
+    await tester.tap(_key('assessment.sourcesEntry'));
+    await tester.pumpAndSettle();
+    expect(_key('assessment.sources'), findsOne);
+    expect(find.text('Darsliklar va qo‘llanmalar'), findsOne);
+    expect(find.text('Ustoz taqdim etgan test banki'), findsOne);
+    expect(find.text('Jahon adabiyoti va qonunchilik'), findsOne);
+    expect(find.textContaining('G‘iyosov'), findsWidgets);
+    expect(find.textContaining('lex.uz'), findsWidgets);
+    expect(find.textContaining('tasdiqlanmagan'), findsNothing);
+  });
+
   testWidgets('talaba: bo‘lim yo‘q — Home’da plitka yo‘q, havola Asosiyga', (
     tester,
   ) async {

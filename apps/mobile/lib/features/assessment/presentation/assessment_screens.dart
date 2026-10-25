@@ -127,7 +127,21 @@ class AssessmentHubScreen extends ConsumerWidget {
               _SpecialtyCard(spec: s, ready: ready),
               const SizedBox(height: FeSpace.sm),
             ],
-            const SizedBox(height: FeSpace.xs),
+            FeCard(
+              key: const Key('assessment.sourcesEntry'),
+              onTap: () => context.push(Routes.assessmentSources),
+              child: Row(
+                children: [
+                  Icon(Icons.menu_book_outlined, color: c.accent),
+                  const SizedBox(width: FeSpace.sm),
+                  Expanded(
+                    child: Text(l.assessmentSourcesTitle, style: t.titleSmall),
+                  ),
+                  Icon(Icons.chevron_right, color: c.textSecondary),
+                ],
+              ),
+            ),
+            const SizedBox(height: FeSpace.sm),
             const _SourceNote(),
           ];
         },
@@ -595,6 +609,17 @@ class _TestBody extends StatelessWidget {
             l.assessmentAnswerSource(_keySourceText(l, question.keySource!)),
             style: t.bodySmall?.copyWith(color: c.textSecondary),
           ),
+          if (question.keySource!.quote.isNotEmpty) ...[
+            const SizedBox(height: 4),
+            Text(
+              l.assessmentBasis(question.keySource!.quote),
+              key: const Key('assessment.basis'),
+              style: t.bodySmall?.copyWith(
+                color: c.textSecondary,
+                fontStyle: FontStyle.italic,
+              ),
+            ),
+          ],
         ],
         if (showAi) ...[
           const SizedBox(height: FeSpace.sm),
@@ -931,6 +956,79 @@ class _AssessmentTestScreenState extends ConsumerState<AssessmentTestScreen> {
           const SizedBox(height: FeSpace.xs),
           _AskAiButton(question: q),
         ],
+      ],
+    );
+  }
+}
+
+/// «Foydalanilgan adabiyotlar»: javob kalitlari asoslangan barcha manbalar.
+class AssessmentSourcesScreen extends ConsumerWidget {
+  const AssessmentSourcesScreen({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final bundle = ref.watch(assessmentProvider).value;
+    // (tur, nom, havola) -> savollar soni
+    final counts = <(String, String, String), int>{};
+    for (final s in bundle?.specialties ?? const <AssessmentSpecialty>[]) {
+      for (final q in s.tests) {
+        final k = q.keySource;
+        if (k == null) continue;
+        final id = (k.kind, k.kind == 'teacher' ? '' : k.title, k.url);
+        counts[id] = (counts[id] ?? 0) + 1;
+      }
+    }
+    List<Widget> group(String kind, String heading) {
+      final rows = [
+        for (final e in counts.entries)
+          if (e.key.$1 == kind) e,
+      ]..sort((a, b) => b.value.compareTo(a.value));
+      if (rows.isEmpty) return const [];
+      return [
+        FeSectionHeader(heading),
+        for (final e in rows)
+          Padding(
+            padding: const EdgeInsets.only(bottom: FeSpace.xs),
+            child: FeCard(
+              padding: const EdgeInsets.all(FeSpace.sm),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    kind == 'teacher' ? l.assessmentKeyTeacher : e.key.$2,
+                    style: t.bodyMedium,
+                  ),
+                  if (e.key.$3.isNotEmpty)
+                    SelectableText(
+                      e.key.$3,
+                      style: t.bodySmall?.copyWith(color: c.textSecondary),
+                    ),
+                  const SizedBox(height: 2),
+                  Text(
+                    l.assessmentCountQuestions(e.value),
+                    style: t.labelSmall?.copyWith(color: c.textSecondary),
+                  ),
+                ],
+              ),
+            ),
+          ),
+      ];
+    }
+
+    return _Frame(
+      title: l.assessmentSourcesTitle,
+      listKey: const Key('assessment.sources'),
+      children: [
+        Text(
+          l.assessmentSourcesIntro,
+          style: t.bodyMedium?.copyWith(color: c.textSecondary),
+        ),
+        ...group('book', l.assessmentSourcesBooks),
+        ...group('teacher', l.assessmentSourcesTeacher),
+        ...group('web', l.assessmentSourcesWeb),
       ],
     );
   }

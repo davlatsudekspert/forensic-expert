@@ -782,6 +782,10 @@ final routerProvider = Provider<GoRouter>((ref) {
                     builder: (c, s) => const AssessmentHubScreen(),
                     routes: [
                       GoRoute(
+                        path: 'sources',
+                        builder: (c, s) => const AssessmentSourcesScreen(),
+                      ),
+                      GoRoute(
                         path: ':spec',
                         builder: (c, s) => AssessmentSpecialtyScreen(
                           specialtyId: s.pathParameters['spec']!,

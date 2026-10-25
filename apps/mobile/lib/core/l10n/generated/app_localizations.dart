@@ -19647,22 +19647,22 @@ abstract class AppLocalizations {
   /// **'Start practice'**
   String get assessmentTestStart;
 
-  /// Number of tests with a confirmed answer key.
+  /// Number of tests with an answer key.
   ///
   /// In en, this message translates to:
-  /// **'{n} questions with a confirmed answer key'**
+  /// **'{n} questions with an answer key'**
   String assessmentTestPool(int n);
 
-  /// Number of tests without a confirmed key (not in practice).
+  /// Number of tests without an answer key yet (not in practice).
   ///
   /// In en, this message translates to:
-  /// **'{n} questions have no confirmed answer yet and are not included in practice.'**
+  /// **'An answer key has not been added yet for {n} questions; they are not included in practice.'**
   String assessmentTestUnkeyed(int n);
 
-  /// No test has a confirmed key yet.
+  /// No test has an answer key yet.
   ///
   /// In en, this message translates to:
-  /// **'Answer keys for this specialty are being verified against the books.'**
+  /// **'Answer keys for this specialty are being added.'**
   String get assessmentTestNone;
 
   /// Button: list all test questions.
@@ -19671,10 +19671,10 @@ abstract class AppLocalizations {
   /// **'All test questions'**
   String get assessmentTestList;
 
-  /// Label on a test question without a confirmed key.
+  /// Label on a test question without an answer key yet.
   ///
   /// In en, this message translates to:
-  /// **'Answer key not confirmed'**
+  /// **'Answer key not added yet'**
   String get assessmentKeyPending;
 
   /// Answer feedback: correct.
@@ -19826,6 +19826,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'The GC-MS module could not be loaded.'**
   String get gcmsUnavailable;
+
+  /// Literature list: title (hub button and screen).
+  ///
+  /// In en, this message translates to:
+  /// **'References'**
+  String get assessmentSourcesTitle;
+
+  /// Literature list: intro.
+  ///
+  /// In en, this message translates to:
+  /// **'Answer keys are based on the literature below; each question shows its exact source and quotation.'**
+  String get assessmentSourcesIntro;
+
+  /// Literature list: books and manuals.
+  ///
+  /// In en, this message translates to:
+  /// **'Textbooks and manuals'**
+  String get assessmentSourcesBooks;
+
+  /// Literature list: teacher-supplied bank.
+  ///
+  /// In en, this message translates to:
+  /// **'Test bank supplied by the teacher'**
+  String get assessmentSourcesTeacher;
+
+  /// Literature list: world literature and laws.
+  ///
+  /// In en, this message translates to:
+  /// **'World literature and legislation'**
+  String get assessmentSourcesWeb;
+
+  /// The quotation that is the basis of the answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Basis: “{quote}”'**
+  String assessmentBasis(String quote);
 }
 
 class _AppLocalizationsDelegate

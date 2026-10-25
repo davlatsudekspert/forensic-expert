@@ -11304,23 +11304,23 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String assessmentTestPool(int n) {
-    return 'Javob kaliti tasdiqlangan savollar: $n ta';
+    return 'Javob kaliti bor savollar: $n ta';
   }
 
   @override
   String assessmentTestUnkeyed(int n) {
-    return '$n ta savolning javob kaliti hali tasdiqlanmagan, ular mashqqa kiritilmagan.';
+    return '$n ta savol uchun javob kaliti hali qo‘shilmagan, ular mashqqa kiritilmagan.';
   }
 
   @override
   String get assessmentTestNone =>
-      'Bu mutaxassislik uchun javob kalitlari kitoblar bo‘yicha tekshirilmoqda.';
+      'Bu mutaxassislik uchun javob kalitlari qo‘shilmoqda.';
 
   @override
   String get assessmentTestList => 'Barcha test savollari';
 
   @override
-  String get assessmentKeyPending => 'Javob kaliti tasdiqlanmagan';
+  String get assessmentKeyPending => 'Javob kaliti hali qo‘shilmagan';
 
   @override
   String get assessmentCorrect => 'To‘g‘ri';
@@ -11408,4 +11408,25 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get gcmsUnavailable => 'GC-MS modulini yuklab bo‘lmadi.';
+
+  @override
+  String get assessmentSourcesTitle => 'Foydalanilgan adabiyotlar';
+
+  @override
+  String get assessmentSourcesIntro =>
+      'Javob kalitlari quyidagi adabiyotlarga asoslangan; har bir savolda aniq manba va iqtibos ko‘rsatiladi.';
+
+  @override
+  String get assessmentSourcesBooks => 'Darsliklar va qo‘llanmalar';
+
+  @override
+  String get assessmentSourcesTeacher => 'Ustoz taqdim etgan test banki';
+
+  @override
+  String get assessmentSourcesWeb => 'Jahon adabiyoti va qonunchilik';
+
+  @override
+  String assessmentBasis(String quote) {
+    return 'Asos: «$quote»';
+  }
 }

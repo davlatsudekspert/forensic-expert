@@ -3281,11 +3281,11 @@
   "assessmentAskAi": "Спросить Forensic AI",
   "assessmentQuestionNo": "Вопрос {n}",
   "assessmentTestStart": "Начать тренировку",
-  "assessmentTestPool": "Вопросов с подтверждённым ключом: {n}",
-  "assessmentTestUnkeyed": "У {n} вопросов ключ пока не подтверждён, они не включены в тренировку.",
-  "assessmentTestNone": "Ключи для этой специальности сверяются с учебниками.",
+  "assessmentTestPool": "Вопросов с ключом ответа: {n}",
+  "assessmentTestUnkeyed": "Для {n} вопросов ключ ответа ещё не добавлен, они не включены в тренировку.",
+  "assessmentTestNone": "Ключи ответов для этой специальности добавляются.",
   "assessmentTestList": "Все тестовые вопросы",
-  "assessmentKeyPending": "Ключ не подтверждён",
+  "assessmentKeyPending": "Ключ ответа ещё не добавлен",
   "assessmentCorrect": "Верно",
   "assessmentWrong": "Неверно",
   "assessmentCorrectAnswer": "Правильный ответ: {a}",
@@ -3310,5 +3310,11 @@
   "gcmsSourceLine": "Источник: {source}",
   "gcmsZoomHint": "Нажмите, чтобы увеличить",
   "gcmsClose": "Закрыть",
-  "gcmsUnavailable": "Не удалось загрузить модуль GC-MS."
+  "gcmsUnavailable": "Не удалось загрузить модуль GC-MS.",
+  "assessmentSourcesTitle": "Использованная литература",
+  "assessmentSourcesIntro": "Ключи ответов основаны на указанной литературе; в каждом вопросе показаны точный источник и цитата.",
+  "assessmentSourcesBooks": "Учебники и пособия",
+  "assessmentSourcesTeacher": "Тестовый банк от преподавателя",
+  "assessmentSourcesWeb": "Мировая литература и законодательство",
+  "assessmentBasis": "Основание: «{quote}»"
 }

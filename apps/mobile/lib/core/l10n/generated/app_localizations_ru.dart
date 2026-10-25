@@ -11418,23 +11418,23 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String assessmentTestPool(int n) {
-    return 'Вопросов с подтверждённым ключом: $n';
+    return 'Вопросов с ключом ответа: $n';
   }
 
   @override
   String assessmentTestUnkeyed(int n) {
-    return 'У $n вопросов ключ пока не подтверждён, они не включены в тренировку.';
+    return 'Для $n вопросов ключ ответа ещё не добавлен, они не включены в тренировку.';
   }
 
   @override
   String get assessmentTestNone =>
-      'Ключи для этой специальности сверяются с учебниками.';
+      'Ключи ответов для этой специальности добавляются.';
 
   @override
   String get assessmentTestList => 'Все тестовые вопросы';
 
   @override
-  String get assessmentKeyPending => 'Ключ не подтверждён';
+  String get assessmentKeyPending => 'Ключ ответа ещё не добавлен';
 
   @override
   String get assessmentCorrect => 'Верно';
@@ -11522,4 +11522,25 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get gcmsUnavailable => 'Не удалось загрузить модуль GC-MS.';
+
+  @override
+  String get assessmentSourcesTitle => 'Использованная литература';
+
+  @override
+  String get assessmentSourcesIntro =>
+      'Ключи ответов основаны на указанной литературе; в каждом вопросе показаны точный источник и цитата.';
+
+  @override
+  String get assessmentSourcesBooks => 'Учебники и пособия';
+
+  @override
+  String get assessmentSourcesTeacher => 'Тестовый банк от преподавателя';
+
+  @override
+  String get assessmentSourcesWeb => 'Мировая литература и законодательство';
+
+  @override
+  String assessmentBasis(String quote) {
+    return 'Основание: «$quote»';
+  }
 }

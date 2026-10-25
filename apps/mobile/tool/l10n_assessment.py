@@ -113,26 +113,26 @@ k('assessmentTestStart', 'Button: start practice.',
   'Start practice',
   'Начать тренировку',
   'Mashqni boshlash')
-k('assessmentTestPool', 'Number of tests with a confirmed answer key.',
-  '{n} questions with a confirmed answer key',
-  'Вопросов с подтверждённым ключом: {n}',
-  'Javob kaliti tasdiqlangan savollar: {n} ta', S)
-k('assessmentTestUnkeyed', 'Number of tests without a confirmed key (not in practice).',
-  '{n} questions have no confirmed answer yet and are not included in practice.',
-  'У {n} вопросов ключ пока не подтверждён, они не включены в тренировку.',
-  '{n} ta savolning javob kaliti hali tasdiqlanmagan, ular mashqqa kiritilmagan.', S)
-k('assessmentTestNone', 'No test has a confirmed key yet.',
-  'Answer keys for this specialty are being verified against the books.',
-  'Ключи для этой специальности сверяются с учебниками.',
-  'Bu mutaxassislik uchun javob kalitlari kitoblar bo‘yicha tekshirilmoqda.')
+k('assessmentTestPool', 'Number of tests with an answer key.',
+  '{n} questions with an answer key',
+  'Вопросов с ключом ответа: {n}',
+  'Javob kaliti bor savollar: {n} ta', S)
+k('assessmentTestUnkeyed', 'Number of tests without an answer key yet (not in practice).',
+  'An answer key has not been added yet for {n} questions; they are not included in practice.',
+  'Для {n} вопросов ключ ответа ещё не добавлен, они не включены в тренировку.',
+  '{n} ta savol uchun javob kaliti hali qo‘shilmagan, ular mashqqa kiritilmagan.', S)
+k('assessmentTestNone', 'No test has an answer key yet.',
+  'Answer keys for this specialty are being added.',
+  'Ключи ответов для этой специальности добавляются.',
+  'Bu mutaxassislik uchun javob kalitlari qo‘shilmoqda.')
 k('assessmentTestList', 'Button: list all test questions.',
   'All test questions',
   'Все тестовые вопросы',
   'Barcha test savollari')
-k('assessmentKeyPending', 'Label on a test question without a confirmed key.',
-  'Answer key not confirmed',
-  'Ключ не подтверждён',
-  'Javob kaliti tasdiqlanmagan')
+k('assessmentKeyPending', 'Label on a test question without an answer key yet.',
+  'Answer key not added yet',
+  'Ключ ответа ещё не добавлен',
+  'Javob kaliti hali qo‘shilmagan')
 k('assessmentCorrect', 'Answer feedback: correct.',
   'Correct',
   'Верно',
@@ -189,6 +189,31 @@ k('assessmentOpenSource', 'Link text to the official page.',
   'Official list',
   'Официальный перечень',
   'Rasmiy ro‘yxat')
+
+k('assessmentSourcesTitle', 'Literature list: title (hub button and screen).',
+  'References',
+  'Использованная литература',
+  'Foydalanilgan adabiyotlar')
+k('assessmentSourcesIntro', 'Literature list: intro.',
+  'Answer keys are based on the literature below; each question shows its exact source and quotation.',
+  'Ключи ответов основаны на указанной литературе; в каждом вопросе показаны точный источник и цитата.',
+  'Javob kalitlari quyidagi adabiyotlarga asoslangan; har bir savolda aniq manba va iqtibos ko‘rsatiladi.')
+k('assessmentSourcesBooks', 'Literature list: books and manuals.',
+  'Textbooks and manuals',
+  'Учебники и пособия',
+  'Darsliklar va qo‘llanmalar')
+k('assessmentSourcesTeacher', 'Literature list: teacher-supplied bank.',
+  'Test bank supplied by the teacher',
+  'Тестовый банк от преподавателя',
+  'Ustoz taqdim etgan test banki')
+k('assessmentSourcesWeb', 'Literature list: world literature and laws.',
+  'World literature and legislation',
+  'Мировая литература и законодательство',
+  'Jahon adabiyoti va qonunchilik')
+k('assessmentBasis', 'The quotation that is the basis of the answer.',
+  'Basis: “{quote}”',
+  'Основание: «{quote}»',
+  'Asos: «{quote}»', {'quote': 'String'})
 
 for idx, code in enumerate(["en", "ru", "uz"]):
     p = f"{D}/app_{code}.arb"

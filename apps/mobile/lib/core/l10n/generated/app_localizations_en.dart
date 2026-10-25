@@ -11373,23 +11373,23 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String assessmentTestPool(int n) {
-    return '$n questions with a confirmed answer key';
+    return '$n questions with an answer key';
   }
 
   @override
   String assessmentTestUnkeyed(int n) {
-    return '$n questions have no confirmed answer yet and are not included in practice.';
+    return 'An answer key has not been added yet for $n questions; they are not included in practice.';
   }
 
   @override
   String get assessmentTestNone =>
-      'Answer keys for this specialty are being verified against the books.';
+      'Answer keys for this specialty are being added.';
 
   @override
   String get assessmentTestList => 'All test questions';
 
   @override
-  String get assessmentKeyPending => 'Answer key not confirmed';
+  String get assessmentKeyPending => 'Answer key not added yet';
 
   @override
   String get assessmentCorrect => 'Correct';
@@ -11477,4 +11477,25 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get gcmsUnavailable => 'The GC-MS module could not be loaded.';
+
+  @override
+  String get assessmentSourcesTitle => 'References';
+
+  @override
+  String get assessmentSourcesIntro =>
+      'Answer keys are based on the literature below; each question shows its exact source and quotation.';
+
+  @override
+  String get assessmentSourcesBooks => 'Textbooks and manuals';
+
+  @override
+  String get assessmentSourcesTeacher => 'Test bank supplied by the teacher';
+
+  @override
+  String get assessmentSourcesWeb => 'World literature and legislation';
+
+  @override
+  String assessmentBasis(String quote) {
+    return 'Basis: “$quote”';
+  }
 }

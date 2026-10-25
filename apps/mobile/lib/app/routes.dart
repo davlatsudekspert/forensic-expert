@@ -67,6 +67,7 @@ abstract final class Routes {
       '/library/guidelines/card/${Uri.encodeComponent(id)}';
   // «Sudda so‘roq: tayyorgarlik» .
   static const assessment = '/library/assessment';
+  static const assessmentSources = '/library/assessment/sources';
   static String assessmentSpecialty(String id) => '/library/assessment/$id';
   static String assessmentQuestion(String id, String qid) =>
       '/library/assessment/$id/q/$qid';
