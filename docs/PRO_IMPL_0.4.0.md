@@ -72,7 +72,7 @@ Paket: `in_app_purchase` (so‘nggi stabil). Yangi qatlam:
 - l10n: yangi skript `tool/l10n_pro_plans.py` (uz/ru/en, CLAUDE.md tartibiga `l10n_group_wording.py` dan keyin), matnlar adabiy o‘zbek; Apple 3.1.2 talab qiladigan jumlalar (narx, muddat, avto-uzayish, bekor qilish, Shartlar/Maxfiylik) Pro sahifasida.
 - Testlar: unit (Entitlements.allows — reja faqat o‘z rejimini ochadi, muddati tugagan → yo‘q), widget (Pro sahifa holatlari: free/trial/active/store-not-configured; qulf kartalari; admin Pro berish), `test/widget/all_free_test.dart` ni yangi holatga moslash (endi Pro bor — test nomi/mantiqi o‘zgaradi), goldenlar.
 - iOS: `ios/Runner/Runner.entitlements` in-app purchase, `PrivacyInfo.xcprivacy` purchase history; Android: `BILLING` ruxsati `in_app_purchase` orqali avtomatik.
-- Versiya: `0.4.0+20` (pubspec + `app_info.dart`).
+- Versiya: `0.4.0+21` (pubspec + `app_info.dart`).
 
 ## 4. Egasi qiladigan ishlar (men qila olmayman)
 App Store Connect: Paid Apps Agreement, 6 obuna (guruh «FORENSIC EXPERT Pro», yuqoridagi id/narx), 1 oylik intro-offer, In-App Purchase API kaliti (`ASC_IAP_*` sekretlari); Sandbox tester akkaunt. Play Console: 6 obuna, narx, intro-offer, License testers, service account JSON. Sekretlar GitHub/Supabase’ga qo‘yiladi (men emas).
