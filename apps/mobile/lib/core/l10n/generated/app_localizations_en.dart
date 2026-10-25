@@ -11521,4 +11521,27 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get assessmentAnswerNote =>
       'A short summary of the cited literature, for study and reference. Statutes and normative thresholds are given as in the textbook: check them against the official text. It does not replace an official expert conclusion or legal advice.';
+
+  @override
+  String get admProCustom => 'Custom';
+
+  @override
+  String get admProAmount => 'Number';
+
+  @override
+  String get admProUnitDay => 'Days';
+
+  @override
+  String get admProUnitMonth => 'Months';
+
+  @override
+  String admProUntilDate(String date) {
+    return 'Valid until $date';
+  }
+
+  @override
+  String get admProBadDuration => 'Enter 1–3650 days or 1–120 months.';
+
+  @override
+  String get proPlanAdminAll => 'Administrator · everything open';
 }

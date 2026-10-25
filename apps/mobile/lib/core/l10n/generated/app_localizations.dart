@@ -19904,6 +19904,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'A short summary of the cited literature, for study and reference. Statutes and normative thresholds are given as in the textbook: check them against the official text. It does not replace an official expert conclusion or legal advice.'**
   String get assessmentAnswerNote;
+
+  /// Admin Pro grant: chip that opens a custom duration field.
+  ///
+  /// In en, this message translates to:
+  /// **'Custom'**
+  String get admProCustom;
+
+  /// Admin Pro grant: label of the custom duration number field.
+  ///
+  /// In en, this message translates to:
+  /// **'Number'**
+  String get admProAmount;
+
+  /// Admin Pro grant: duration unit chip (days).
+  ///
+  /// In en, this message translates to:
+  /// **'Days'**
+  String get admProUnitDay;
+
+  /// Admin Pro grant: duration unit chip (months).
+  ///
+  /// In en, this message translates to:
+  /// **'Months'**
+  String get admProUnitMonth;
+
+  /// Admin Pro grant: preview of the end date of the custom duration.
+  ///
+  /// In en, this message translates to:
+  /// **'Valid until {date}'**
+  String admProUntilDate(String date);
+
+  /// Admin Pro grant: custom duration out of range.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter 1–3650 days or 1–120 months.'**
+  String get admProBadDuration;
+
+  /// Profile plan row value for administrators.
+  ///
+  /// In en, this message translates to:
+  /// **'Administrator · everything open'**
+  String get proPlanAdminAll;
 }
 
 class _AppLocalizationsDelegate

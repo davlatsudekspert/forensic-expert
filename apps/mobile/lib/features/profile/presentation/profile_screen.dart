@@ -33,7 +33,12 @@ import '../../support/presentation/support_widgets.dart';
 import 'avatar_widgets.dart';
 
 /// «Reja» qatori qiymati: Bepul / Talaba Pro (sinov) …
-String _planValue(AppLocalizations l, AsyncValue<Entitlements> e) {
+String _planValue(
+  AppLocalizations l,
+  AsyncValue<Entitlements> e, {
+  bool isAdmin = false,
+}) {
+  if (isAdmin) return l.proPlanAdminAll;
   final v = e.value;
   final plan = v?.plan;
   if (v == null || plan == null || !v.isActive) return l.proStateFree;
@@ -257,7 +262,11 @@ class ProfileScreen extends ConsumerWidget {
                         key: const Key('profile.plan'),
                         icon: Icons.workspace_premium_outlined,
                         title: l.proProfileRow,
-                        value: _planValue(l, ref.watch(entitlementsProvider)),
+                        value: _planValue(
+                          l,
+                          ref.watch(entitlementsProvider),
+                          isAdmin: ref.watch(isAdminProvider),
+                        ),
                         onTap: () => context.push(Routes.pro),
                       ),
                       _Row(

@@ -11566,4 +11566,27 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get assessmentAnswerNote =>
       'Краткое изложение указанной литературы для обучения и справки. Статьи законов и нормативные пороги приведены по учебнику: сверяйте с официальным текстом. Не заменяет официальное заключение эксперта или юридическую консультацию.';
+
+  @override
+  String get admProCustom => 'Другой срок';
+
+  @override
+  String get admProAmount => 'Количество';
+
+  @override
+  String get admProUnitDay => 'Дни';
+
+  @override
+  String get admProUnitMonth => 'Месяцы';
+
+  @override
+  String admProUntilDate(String date) {
+    return 'Действует до $date';
+  }
+
+  @override
+  String get admProBadDuration => 'Введите 1–3650 дней или 1–120 месяцев.';
+
+  @override
+  String get proPlanAdminAll => 'Администратор · всё открыто';
 }

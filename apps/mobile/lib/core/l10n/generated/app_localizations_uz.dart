@@ -11453,4 +11453,27 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get assessmentAnswerNote =>
       'Ko‘rsatilgan adabiyotdan qisqa bayon (o‘quv va ma’lumotnoma uchun). Qonun moddalari va normativ chegaralar «Darslikka ko‘ra» beriladi: rasmiy matn bilan tekshiring. Rasmiy ekspert xulosasi yoki huquqiy maslahat o‘rnini bosmaydi.';
+
+  @override
+  String get admProCustom => 'Boshqa muddat';
+
+  @override
+  String get admProAmount => 'Soni';
+
+  @override
+  String get admProUnitDay => 'Kun';
+
+  @override
+  String get admProUnitMonth => 'Oy';
+
+  @override
+  String admProUntilDate(String date) {
+    return 'Amal qilish muddati: $date';
+  }
+
+  @override
+  String get admProBadDuration => '1–3650 kun yoki 1–120 oy kiriting.';
+
+  @override
+  String get proPlanAdminAll => 'Administrator · hammasi ochiq';
 }

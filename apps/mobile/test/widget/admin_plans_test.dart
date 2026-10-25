@@ -115,4 +115,55 @@ void main() {
     );
     expect(find.byKey(const Key('admin.nav.plans')), findsOneWidget);
   });
+  Future<void> grantCustom(
+    WidgetTester tester,
+    String amount, {
+    bool months = false,
+  }) async {
+    await tester.enterText(
+      find.byKey(const Key('adminPlans.email')),
+      'Vali@Lab.uz',
+    );
+    await tapKey(tester, 'adminPlans.days.custom');
+    await tester.enterText(find.byKey(const Key('adminPlans.amount')), amount);
+    await tester.pumpAndSettle();
+    if (months) await tapKey(tester, 'adminPlans.unit.month');
+  }
+
+  testWidgets('ixtiyoriy muddat: 45 kun → tugash sanasi ~45 kun keyin', (
+    tester,
+  ) async {
+    final svc = await open(tester);
+    await grantCustom(tester, '45');
+    expect(find.byKey(const Key('adminPlans.untilPreview')), findsOneWidget);
+    await tapKey(tester, 'adminPlans.grant');
+    final until = svc.rows.single.expiresAt!;
+    final days = until.difference(DateTime.now().toUtc()).inHours / 24;
+    expect(days, closeTo(45, 0.1));
+  });
+
+  testWidgets('ixtiyoriy muddat: 6 oy → tegishli kalendar oyi', (tester) async {
+    final svc = await open(tester);
+    await grantCustom(tester, '6', months: true);
+    await tapKey(tester, 'adminPlans.grant');
+    final until = svc.rows.single.expiresAt!;
+    final now = DateTime.now().toUtc();
+    final want = DateTime.utc(now.year, now.month + 6, now.day);
+    expect(until.year, want.year);
+    expect(until.month, want.month);
+  });
+
+  testWidgets('ixtiyoriy muddat noto‘g‘ri (0 va 121 oy): so‘rov yuborilmaydi', (
+    tester,
+  ) async {
+    final svc = await open(tester);
+    await grantCustom(tester, '0');
+    await tapKey(tester, 'adminPlans.grant');
+    expect(find.text('1–3650 kun yoki 1–120 oy kiriting.'), findsOneWidget);
+    await tester.enterText(find.byKey(const Key('adminPlans.amount')), '121');
+    await tapKey(tester, 'adminPlans.unit.month');
+    await tapKey(tester, 'adminPlans.grant');
+    expect(find.text('1–3650 kun yoki 1–120 oy kiriting.'), findsOneWidget);
+    expect(svc.calls.where((c) => c.startsWith('set')), isEmpty);
+  });
 }

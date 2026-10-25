@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../app/plan.dart';
@@ -31,6 +32,9 @@ class _AdminPlansScreenState extends ConsumerState<AdminPlansScreen> {
   final _search = TextEditingController();
   Plan _plan = Plan.student;
   int? _days = 30;
+  bool _custom = false;
+  bool _months = false;
+  final _amount = TextEditingController();
   String _query = '';
   bool _busy = false;
   String? _message;
@@ -39,7 +43,19 @@ class _AdminPlansScreenState extends ConsumerState<AdminPlansScreen> {
   void dispose() {
     _email.dispose();
     _search.dispose();
+    _amount.dispose();
     super.dispose();
+  }
+
+  /// Ixtiyoriy muddat: kun (1–3650) yoki oy (1–120) → tugash vaqti (UTC);
+  /// noto‘g‘ri kiritishda `null`.
+  DateTime? _customUntil() {
+    final n = int.tryParse(_amount.text.trim());
+    if (n == null || n < 1 || n > (_months ? 120 : 3650)) return null;
+    final now = DateTime.now().toUtc();
+    return _months
+        ? DateTime.utc(now.year, now.month + n, now.day, now.hour, now.minute)
+        : now.add(Duration(days: n));
   }
 
   Future<void> _apply({required bool revoke, String? email}) async {
@@ -47,6 +63,11 @@ class _AdminPlansScreenState extends ConsumerState<AdminPlansScreen> {
     final target = (email ?? _email.text).trim();
     if (target.isEmpty || !target.contains('@')) {
       setState(() => _message = l.admProInvalid);
+      return;
+    }
+    final customUntil = _custom && !revoke ? _customUntil() : null;
+    if (_custom && !revoke && customUntil == null) {
+      setState(() => _message = l.admProBadDuration);
       return;
     }
     setState(() {
@@ -58,7 +79,11 @@ class _AdminPlansScreenState extends ConsumerState<AdminPlansScreen> {
         .setPlan(
           email: target,
           plan: revoke ? null : _plan,
-          until: revoke || _days == null
+          until: revoke
+              ? null
+              : _custom
+              ? customUntil
+              : _days == null
               ? null
               : DateTime.now().toUtc().add(Duration(days: _days!)),
         );
@@ -76,7 +101,10 @@ class _AdminPlansScreenState extends ConsumerState<AdminPlansScreen> {
     setState(() {
       _busy = false;
       _message = msg;
-      if (r.value == AdminPlanResult.granted) _email.clear();
+      if (r.value == AdminPlanResult.granted) {
+        _email.clear();
+        _amount.clear();
+      }
     });
   }
 
@@ -179,11 +207,77 @@ class _AdminPlansScreenState extends ConsumerState<AdminPlansScreen> {
                           ChoiceChip(
                             key: Key('adminPlans.days.${d ?? 'none'}'),
                             label: Text(_daysLabel(l, d)),
-                            selected: _days == d,
-                            onSelected: (_) => setState(() => _days = d),
+                            selected: !_custom && _days == d,
+                            onSelected: (_) => setState(() {
+                              _custom = false;
+                              _days = d;
+                            }),
                           ),
+                        ChoiceChip(
+                          key: const Key('adminPlans.days.custom'),
+                          label: Text(l.admProCustom),
+                          selected: _custom,
+                          onSelected: (_) => setState(() => _custom = true),
+                        ),
                       ],
                     ),
+                    if (_custom) ...[
+                      const SizedBox(height: FeSpace.xs),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(
+                            child: TextField(
+                              key: const Key('adminPlans.amount'),
+                              controller: _amount,
+                              onTapOutside: (_) =>
+                                  FocusScope.of(context).unfocus(),
+                              keyboardType: TextInputType.number,
+                              inputFormatters: [
+                                FilteringTextInputFormatter.digitsOnly,
+                                LengthLimitingTextInputFormatter(4),
+                              ],
+                              onChanged: (_) => setState(() {}),
+                              decoration: InputDecoration(
+                                labelText: l.admProAmount,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: FeSpace.xs),
+                          Padding(
+                            padding: const EdgeInsets.only(top: FeSpace.xs),
+                            child: Wrap(
+                              spacing: FeSpace.xs,
+                              children: [
+                                ChoiceChip(
+                                  key: const Key('adminPlans.unit.day'),
+                                  label: Text(l.admProUnitDay),
+                                  selected: !_months,
+                                  onSelected: (_) =>
+                                      setState(() => _months = false),
+                                ),
+                                ChoiceChip(
+                                  key: const Key('adminPlans.unit.month'),
+                                  label: Text(l.admProUnitMonth),
+                                  selected: _months,
+                                  onSelected: (_) =>
+                                      setState(() => _months = true),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                      if (_customUntil() case final until?)
+                        Padding(
+                          padding: const EdgeInsets.only(top: FeSpace.xxs),
+                          child: Text(
+                            l.admProUntilDate(feDate(context, until.toLocal())),
+                            key: const Key('adminPlans.untilPreview'),
+                            style: t.bodySmall,
+                          ),
+                        ),
+                    ],
                     const SizedBox(height: FeSpace.md),
                     Row(
                       children: [
