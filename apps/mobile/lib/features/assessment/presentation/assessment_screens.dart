@@ -30,7 +30,7 @@ String assessmentCatTitle(AppLocalizations l, String id) => switch (id) {
 String _keySourceText(AppLocalizations l, AssessmentKeySource s) {
   if (s.kind == 'teacher') return l.assessmentKeyTeacher;
   if (s.kind == 'web') {
-    return s.url.isEmpty ? s.title : '${s.title} — ${s.url}';
+    return [s.title, s.url].where((x) => x.isNotEmpty).join(' — ');
   }
   return s.page > 0 ? l.assessmentBookPage(s.title, s.page) : s.title;
 }
@@ -305,6 +305,7 @@ class _AssessmentSpecialtyScreenState
                         hintText: l.assessmentSearchHint,
                       ),
                       onChanged: (v) => setState(() => _query = v),
+                      onTapOutside: (_) => FocusScope.of(context).unfocus(),
                     ),
                     const SizedBox(height: FeSpace.sm),
                     if (!_tests)
@@ -523,6 +524,7 @@ void _showTestSheet(BuildContext context, AssessmentTestQuestion q) {
       maxChildSize: 0.95,
       builder: (ctx, controller) => ListView(
         key: const Key('assessment.testSheet'),
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
         controller: controller,
         padding: const EdgeInsets.all(FeSpace.md),
         children: [

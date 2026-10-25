@@ -279,3 +279,14 @@ Ilovada «Sinfda test» degan joy qolmaydi: jonli test — «Guruh testi (jonli)
 Free sinov muddati **30 kun** (1 oy) — har rejada; «3 oy» hech qayerda ishlatilmaydi. Bir telefon va bir akkaunt — bir marta (server `plan_claim_trial`); do‘kon intro-offer ham 1 oy.
 ## 2026-10-24 — Tarjima navbati (egasi qarori)
 Pro 0.4.0 test buildidan keyin darslar va test savollari RU/EN ga tarjima qilinadi (avtomatik raqam/birlik/formula nazorati, «tekshirilmagan» belgisi), so‘ng qozoq, tojik, qirg‘iz. Ro‘yxat: `docs/ACTIVE_TASKS.md` «Navbatdagi ishlar».
+
+## 2026-10-25 — «Bilim va malakani baholash» bo‘limi
+
+* Egasi so‘rovi: «Toifaga tayyorlanish» nomi kodda mavjud emas edi; rasmiy og‘zaki imtihon savollari va test sinovi savollari asosida
+  yangi bo‘lim ochildi: UZ «Bilim va malakani baholash», RU «Проверка знаний и компетенций», EN «Knowledge & Skills Assessment».
+* Mutaxassis va Ustoz rejimlari uchun; talabaga yo‘q. Ogohlantirish matnlari (kafolat/rasmiy emas) olib tashlandi, o‘quv testlardagi
+  `studyNoGuaranteeNote` ham.
+* **Javob kaliti qoidasi:** faqat manba (kitob+bet yoki URL+iqtibos) bilan va mustaqil auditdan o‘tgan kalit baholanadi; taxmin, inkor yo‘li,
+  zaif manba kalitga kirmaydi. Batafsil: `docs/ASSESSMENT.md`.
+* Hozircha bepul (egasi aytmaguncha Pro darvozasi yo‘q). Push yo‘q — egasi «push» deguncha lokal.
+

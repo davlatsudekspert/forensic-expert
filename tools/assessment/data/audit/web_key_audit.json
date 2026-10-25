@@ -1,0 +1,3662 @@
+[
+{
+"id": "pat_anat:272",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Peer-reviewed article quotes definition: diagnosis = medical conclusion on state of health; matches option 1 only.",
+"accepted": true,
+"url": "https://for-medex.ru/jour/article/download/45/55"
+},
+{
+"id": "pat_anat:273",
+"claimed": 2,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source: nosological unit causing death; option 2 adds 'clinical signs' — partial match, chosen by elimination.",
+"accepted": false,
+"url": "https://zakon.uchet.kz/rus/docs/V2000021790"
+},
+{
+"id": "pat_anat:274",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Official standard: competing = nosological units each of which alone could cause death; option 2 exact.",
+"accepted": true,
+"url": "https://zakon.uchet.kz/rus/docs/V2000021790"
+},
+{
+"id": "pat_anat:275",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Background disease plays significant role in origin/development of main disease, aggravates thanatogenesis = option 3.",
+"accepted": true,
+"url": "https://zakon.uchet.kz/rus/docs/V2000021790"
+},
+{
+"id": "pat_anat:276",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Concomitant disease had no unfavourable influence on course of main disease = option 1.",
+"accepted": true,
+"url": "https://zakon.uchet.kz/rus/docs/V2000021790"
+},
+{
+"id": "pat_anat:277",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Complication = pathological process pathogenetically/etiologically linked to main disease = option 3.",
+"accepted": true,
+"url": "https://zakon.uchet.kz/rus/docs/V2000021790"
+},
+{
+"id": "pat_anat:278",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "BSE text on booksite.ru mirror: nosology = study of disease; option 3. Mirror host, hence weak.",
+"accepted": false,
+"url": "https://booksite.ru/fulltext/1/001/008/082/446.htm"
+},
+{
+"id": "pat_anat:280",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Iatrogeny = condition resulting from any medical care; option 2 exact.",
+"accepted": true,
+"url": "https://zakon.uchet.kz/rus/docs/V2000021790"
+},
+{
+"id": "pat_anat:281",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "KRSU pathology manual: line I a) = immediate cause of death; option 3.",
+"accepted": true,
+"url": "https://e-lib.krsu.kg/uploads/files/public/11068.pdf/download?lang=en"
+},
+{
+"id": "pat_anat:282",
+"claimed": 3,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source says main disease listed last, but options are garbled split fragments ('after immediate cause' / 'then') also defensible.",
+"accepted": false,
+"url": "https://e-lib.krsu.kg/uploads/files/public/11068.pdf/download?lang=en"
+},
+{
+"id": "pat_anat:283",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "MSD: severe LV failure causes pulmonary venous hypertension and pulmonary edema; option 3, others are right-heart signs.",
+"accepted": true,
+"url": "https://www.msdmanuals.com/professional/cardiovascular-disorders/heart-failure/pulmonary-edema"
+},
+{
+"id": "pat_anat:285",
+"claimed": 2,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Worked certificate example (ulcer-perforation-peritonitis), not a general statement; key from example.",
+"accepted": false,
+"url": "https://e-lib.krsu.kg/uploads/files/public/11068.pdf/download?lang=en"
+},
+{
+"id": "pat_anat:337",
+"claimed": 2,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Analogous stillbirth example lists asphyxia as fetal main disease, not 'immediate cause'; scenario differs (anemia, gestosis).",
+"accepted": false,
+"url": "https://bashgmu.ru/upload/kafedry/%D0%94%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D0%B7%20%D0%B8%20%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B5%20%D1%81%D0%B2%D0%B8%D0%B4%D0%B5%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE%20%D0%BE%20%D1%81%D0%BC%D0%B5%D1%80%D1%82%D0%B8%20%D0%B2%20%D0%BF%D0%B5%D0%B4%D0%B8%D0%B0%D1%82%D1%80%D0%B8%D0%B8.pdf"
+},
+{
+"id": "pat_anat:342",
+"claimed": 1,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Analogous worked example (line a = intrauterine asphyxia) applied to this scenario.",
+"accepted": false,
+"url": "https://bashgmu.ru/upload/kafedry/%D0%94%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D0%B7%20%D0%B8%20%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B5%20%D1%81%D0%B2%D0%B8%D0%B4%D0%B5%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE%20%D0%BE%20%D1%81%D0%BC%D0%B5%D1%80%D1%82%D0%B8%20%D0%B2%20%D0%BF%D0%B5%D0%B4%D0%B8%D0%B0%D1%82%D1%80%D0%B8%D0%B8.pdf"
+},
+{
+"id": "pat_anat:344",
+"claimed": 3,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Analogous example (line v = abruption); scenario also has gestosis, applied by analogy.",
+"accepted": false,
+"url": "https://bashgmu.ru/upload/kafedry/%D0%94%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D0%B7%20%D0%B8%20%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B5%20%D1%81%D0%B2%D0%B8%D0%B4%D0%B5%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE%20%D0%BE%20%D1%81%D0%BC%D0%B5%D1%80%D1%82%D0%B8%20%D0%B2%20%D0%BF%D0%B5%D0%B4%D0%B8%D0%B0%D1%82%D1%80%D0%B8%D0%B8.pdf"
+},
+{
+"id": "pat_anat:351",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "PathologyOutlines: BCL2 inhibits apoptosis; Ki-67 proliferation marker (standard). Option 2 only correct one.",
+"accepted": true,
+"url": "https://www.pathologyoutlines.com/topic/stainsbcl2.html"
+},
+{
+"id": "pat_anat:367",
+"claimed": 3,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Analogous textbook stillbirth example; asphyxia given as main disease, applied to this case.",
+"accepted": false,
+"url": "https://bashgmu.ru/upload/kafedry/%D0%94%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D0%B7%20%D0%B8%20%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B5%20%D1%81%D0%B2%D0%B8%D0%B4%D0%B5%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE%20%D0%BE%20%D1%81%D0%BC%D0%B5%D1%80%D1%82%D0%B8%20%D0%B2%20%D0%BF%D0%B5%D0%B4%D0%B8%D0%B0%D1%82%D1%80%D0%B8%D0%B8.pdf"
+},
+{
+"id": "pat_anat:369",
+"claimed": 2,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Analogous maternal-death case (preeclampsia background); mother's main disease in this scenario ambiguous (sepsis present).",
+"accepted": false,
+"url": "https://journals.tma.uz/index.php/ttaa/article/download/170/163/324"
+},
+{
+"id": "pat_anat:372",
+"claimed": 3,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Analogous worked example, line a = intrauterine asphyxia, applied to this case.",
+"accepted": false,
+"url": "https://bashgmu.ru/upload/kafedry/%D0%94%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D0%B7%20%D0%B8%20%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B5%20%D1%81%D0%B2%D0%B8%D0%B4%D0%B5%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE%20%D0%BE%20%D1%81%D0%BC%D0%B5%D1%80%D1%82%D0%B8%20%D0%B2%20%D0%BF%D0%B5%D0%B4%D0%B8%D0%B0%D1%82%D1%80%D0%B8%D0%B8.pdf"
+},
+{
+"id": "pat_anat:373",
+"claimed": 3,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Example shows b) empty; 'none correct' derived by analogy.",
+"accepted": false,
+"url": "https://bashgmu.ru/upload/kafedry/%D0%94%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D0%B7%20%D0%B8%20%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B5%20%D1%81%D0%B2%D0%B8%D0%B4%D0%B5%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE%20%D0%BE%20%D1%81%D0%BC%D0%B5%D1%80%D1%82%D0%B8%20%D0%B2%20%D0%BF%D0%B5%D0%B4%D0%B8%D0%B0%D1%82%D1%80%D0%B8%D0%B8.pdf"
+},
+{
+"id": "pat_anat:374",
+"claimed": 2,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Analogous example, line v = premature abruption of normally situated placenta.",
+"accepted": false,
+"url": "https://bashgmu.ru/upload/kafedry/%D0%94%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D0%B7%20%D0%B8%20%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B5%20%D1%81%D0%B2%D0%B8%D0%B4%D0%B5%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE%20%D0%BE%20%D1%81%D0%BC%D0%B5%D1%80%D1%82%D0%B8%20%D0%B2%20%D0%BF%D0%B5%D0%B4%D0%B8%D0%B0%D1%82%D1%80%D0%B8%D0%B8.pdf"
+},
+{
+"id": "pat_anat:375",
+"claimed": 1,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "General rule (most important maternal condition in v, others in g) applied to gestosis.",
+"accepted": false,
+"url": "https://bashgmu.ru/upload/kafedry/%D0%94%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D0%B7%20%D0%B8%20%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B5%20%D1%81%D0%B2%D0%B8%D0%B4%D0%B5%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE%20%D0%BE%20%D1%81%D0%BC%D0%B5%D1%80%D1%82%D0%B8%20%D0%B2%20%D0%BF%D0%B5%D0%B4%D0%B8%D0%B0%D1%82%D1%80%D0%B8%D0%B8.pdf"
+},
+{
+"id": "pat_anat:376",
+"claimed": 3,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "General rule for line d (non-disease circumstances) applied; elimination.",
+"accepted": false,
+"url": "https://bashgmu.ru/upload/kafedry/%D0%94%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D0%B7%20%D0%B8%20%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B5%20%D1%81%D0%B2%D0%B8%D0%B4%D0%B5%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE%20%D0%BE%20%D1%81%D0%BC%D0%B5%D1%80%D1%82%D0%B8%20%D0%B2%20%D0%BF%D0%B5%D0%B4%D0%B8%D0%B0%D1%82%D1%80%D0%B8%D0%B8.pdf"
+},
+{
+"id": "pat_anat:381",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Guideline example for different case (stroke) lists atherosclerosis as concomitant; applied by analogy.",
+"accepted": false,
+"url": "https://niioz.ru/upload/iblock/649/64934b02d4e8ef6da90105511118cc60.pdf"
+},
+{
+"id": "pat_anat:382",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Analogous renal-disease example: uremia as fatal complication; applied to amyloidosis case.",
+"accepted": false,
+"url": "https://niioz.ru/upload/iblock/649/64934b02d4e8ef6da90105511118cc60.pdf"
+},
+{
+"id": "pat_anat:383",
+"claimed": 3,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Example line I a) = terminal stage renal disease (N18), synonym leap to 'uremia', different case.",
+"accepted": false,
+"url": "https://niioz.ru/upload/iblock/649/64934b02d4e8ef6da90105511118cc60.pdf"
+},
+{
+"id": "pat_anat:387",
+"claimed": 2,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "General rule: hemorrhage main when hypertension background; older tradition puts hypertensive disease main — two defensible.",
+"accepted": false,
+"url": "https://niioz.ru/upload/iblock/649/64934b02d4e8ef6da90105511118cc60.pdf"
+},
+{
+"id": "pat_anat:391",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "NIIOZ guideline: ICH coded as main disease only with background essential hypertension (hypertensive disease).",
+"accepted": true,
+"url": "https://niioz.ru/upload/iblock/649/64934b02d4e8ef6da90105511118cc60.pdf"
+},
+{
+"id": "pat_anat:402",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "MSD: scarlet fever follows strep pharyngitis, punctate rash; PSGN occurs 1-3 weeks after strep pharyngitis.",
+"accepted": true,
+"url": "https://www.msdmanuals.com/professional/infectious-diseases/gram-positive-cocci/streptococcal-infections"
+},
+{
+"id": "pat_anat:403",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "MSD: tough adherent pseudomembrane, removal bleeds, bull neck, fever = diphtheria; lacunar plaques detach easily.",
+"accepted": true,
+"url": "https://www.msdmanuals.com/professional/infectious-diseases/gram-positive-bacilli/diphtheria"
+},
+{
+"id": "pat_anat:404",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Peer-reviewed case report: diphtheritic myocarditis with myocytolysis and lipid accumulation (fatty change).",
+"accepted": true,
+"url": "https://cvja.co.za/onlinejournal/vol34/vol34_issue2/56/"
+},
+{
+"id": "pat_anat:405",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source describes loose croupous membrane and asphyxial diphtheritic croup, but never names it 'true croup'; synonym leap.",
+"accepted": false,
+"url": "https://e-lib.krsu.kg/uploads/files/public/11510.pdf/download"
+},
+{
+"id": "pat_anat:406",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "MSD: meningococci gram-negative diplococci; Waterhouse-Friderichsen with purpura and adrenal hemorrhage.",
+"accepted": true,
+"url": "https://www.msdmanuals.com/professional/infectious-diseases/gram-negative-cocci-and-coccobacilli/meningococcal-diseases"
+},
+{
+"id": "pat_anat:407",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "PathologyOutlines (fetched via WebFetch): hemorrhagic necrosis of adrenal glands, classically meningococcal.",
+"accepted": true,
+"url": "https://www.pathologyoutlines.com/topic/adrenalWFsyndrome.html"
+},
+{
+"id": "pat_anat:408",
+"claimed": 2,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source: typhoid affects terminal ileum Peyer patches; follicle enlargement not stated explicitly; partial match.",
+"accepted": false,
+"url": "https://pathologyoutlines.com/topic/smallbowelsalmonella.html"
+},
+{
+"id": "pat_anat:410",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "KFU lecture: septicopyemia = purulent foci/abscesses in many organs from bacterial embolism.",
+"accepted": true,
+"url": "https://kpfu.ru/portal/docs/F1531521405/12.OOI.Sepsis.pdf"
+},
+{
+"id": "pat_anat:411",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source lists dystrophy, interstitial inflammation, hyperplasia; 'all' requires combining options; vague question.",
+"accepted": false,
+"url": "https://kpfu.ru/portal/docs/F1531521405/12.OOI.Sepsis.pdf"
+},
+{
+"id": "pat_anat:412",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "KFU lecture: first (primary) abscesses in septicopyemia form in the lungs.",
+"accepted": true,
+"url": "https://kpfu.ru/portal/docs/F1531521405/12.OOI.Sepsis.pdf"
+},
+{
+"id": "pat_anat:413",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "KFU lecture: septicopyemia characterized by metastatic purulent foci (abscesses) from bacterial embolism.",
+"accepted": true,
+"url": "https://kpfu.ru/portal/docs/F1531521405/12.OOI.Sepsis.pdf"
+},
+{
+"id": "pat_anat:414",
+"claimed": 3,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Hyperplasia stated for septicemia, but septic spleen (leukocytosis) is part of that hyperplasia; option 1 also defensible.",
+"accepted": false,
+"url": "https://kpfu.ru/portal/docs/F1531521405/12.OOI.Sepsis.pdf"
+},
+{
+"id": "pat_anat:415",
+"claimed": 1,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source ties thromboembolic syndrome to septic endocarditis but does not state 'non-purulent'; discriminator from knowledge.",
+"accepted": false,
+"url": "https://kpfu.ru/portal/docs/F1531521405/12.OOI.Sepsis.pdf"
+},
+{
+"id": "pat_anat:416",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Research article: evidence for both blood and neural routes; 'all' needs combination; research-level, question vague.",
+"accepted": false,
+"url": "https://europepmc.org/article/PMC/PMC2832671"
+},
+{
+"id": "pat_anat:418",
+"claimed": 1,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "JCI (PDF fetched): muscle atrophy and bone growth retardation/osteoporosis; garbled option wording, partial match.",
+"accepted": false,
+"url": "https://www.jci.org/articles/view/103496"
+},
+{
+"id": "pat_anat:419",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "CDC Pink Book (WebFetch): destruction of motor neurons of anterior horn of spinal cord.",
+"accepted": true,
+"url": "https://www.cdc.gov/pinkbook/hcp/table-of-contents/chapter-18-poliomyelitis.html"
+},
+{
+"id": "pat_anat:420",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source: Paramyxoviridae Morbillivirus; option says 'myxovirus' - naming/synonym leap.",
+"accepted": false,
+"url": "https://e-lib.krsu.kg/uploads/files/public/11510.pdf/download"
+},
+{
+"id": "pat_anat:421",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "CDC Pink Book (WebFetch): person-to-person via respiratory droplets and airborne.",
+"accepted": true,
+"url": "https://www.cdc.gov/pinkbook/hcp/table-of-contents/chapter-13-measles.html"
+},
+{
+"id": "pat_anat:422",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text: measles virus causes anergy state, increasing secondary infection.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/bolezni_detskogo_vozrasta/18156.html"
+},
+{
+"id": "pat_anat:423",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text: local measles changes are catarrhal inflammation of mucosa.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/bolezni_detskogo_vozrasta/18157.html"
+},
+{
+"id": "pat_anat:424",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text: characteristic metaplasia of epithelium into stratified squamous.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/bolezni_detskogo_vozrasta/18157.html"
+},
+{
+"id": "pat_anat:425",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text: in uncomplicated measles interstitial giant-cell pneumonia; others are complications.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/bolezni_detskogo_vozrasta/18157.html"
+},
+{
+"id": "pat_anat:426",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source: necrotic/purulent-necrotic panbronchitis, abscess, purulent pleurisy; 'purulent' is a partial generalization.",
+"accepted": false,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/bolezni_detskogo_vozrasta/18158.html"
+},
+{
+"id": "pat_anat:427",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text: in measles laryngeal edema/necrosis causes so-called false croup.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/bolezni_detskogo_vozrasta/18157.html"
+},
+{
+"id": "pat_anat:428",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text: influenza caused by related RNA viruses (myxovirus influenzae).",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/infekcionnye_bolezni/18000.html"
+},
+{
+"id": "pat_anat:429",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Catarrhal (mild) and necrotic (complicated, other page) combined into 'all'; requires combination of two pages.",
+"accepted": false,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/infekcionnye_bolezni/18000.html"
+},
+{
+"id": "pat_anat:430",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov: 'большое пестрое гриппозное легкое' = katta ola-bula o'pka.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/infekcionnye_bolezni/18001.html"
+},
+{
+"id": "pat_anat:431",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov: diphtheria of pharynx and tonsils is diphtheritic type inflammation.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/bolezni_detskogo_vozrasta/18163.html"
+},
+{
+"id": "pat_anat:432",
+"claimed": 3,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source describes toxic myocarditis (fatty dystrophy, myolysis, also interstitial form); doesn't tie early paralysis uniquely to option 3.",
+"accepted": false,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/bolezni_detskogo_vozrasta/18163.html"
+},
+{
+"id": "pat_anat:433",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov: causative agent belongs to corynebacteria.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/bolezni_detskogo_vozrasta/18162.html"
+},
+{
+"id": "pat_anat:434",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Quote gives sites of local changes, not entry routes; equating them is a leap; tonsils overlap throat.",
+"accepted": false,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/bolezni_detskogo_vozrasta/18163.html"
+},
+{
+"id": "pat_anat:435",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov: primary affect overwhelmingly in pharynx and tonsils.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/bolezni_detskogo_vozrasta/18166.html"
+},
+{
+"id": "pat_anat:436",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "First period = catarrhal then necrotic angina; purulent-necrotic stated for septic form only; partial match.",
+"accepted": false,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/bolezni_detskogo_vozrasta/18166.html"
+},
+{
+"id": "pat_anat:437",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov second period: glomerulonephritis, vasculitis, serous arthritis all listed.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/bolezni_detskogo_vozrasta/18166.html"
+},
+{
+"id": "pat_anat:438",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov: infection spreads by airborne droplets.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/bolezni_detskogo_vozrasta/18167.html"
+},
+{
+"id": "pat_anat:440",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov: meningococcemia affects skin, joints, choroid of eye, adrenals.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/bolezni_detskogo_vozrasta/18169.html"
+},
+{
+"id": "pat_anat:441",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov: adrenal hemorrhages/necrosis = Waterhouse-Friderichsen syndrome.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/bolezni_detskogo_vozrasta/18169.html"
+},
+{
+"id": "pat_anat:442",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "MSD: HIV is a retrovirus, enveloped RNA virus.",
+"accepted": true,
+"url": "https://www.msdmanuals.com/professional/infectious-diseases/human-immunodeficiency-virus-hiv/human-immunodeficiency-virus-hiv-infection"
+},
+{
+"id": "pat_anat:443",
+"claimed": 1,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "MSD: body-fluid contact required; mapping to 'kontakt' is terminological leap (MSD says casual contact doesn't transmit).",
+"accepted": false,
+"url": "https://www.msdmanuals.com/professional/infectious-diseases/human-immunodeficiency-virus-hiv/human-immunodeficiency-virus-hiv-infection"
+},
+{
+"id": "pat_anat:444",
+"claimed": 3,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "CDC states saliva and CSF; internal organs only from a second source (MSD); composite inference.",
+"accepted": false,
+"url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/00023587.htm"
+},
+{
+"id": "pat_anat:445",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Corrin & Nicholson: virus attacks CD4+ helper T lymphocytes.",
+"accepted": true,
+"url": "https://europepmc.org/article/PMC/PMC7182120"
+},
+{
+"id": "pat_anat:446",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "CDC AIDS-defining list includes candidiasis, histoplasmosis, Pneumocystis pneumonia.",
+"accepted": true,
+"url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/rr5710a2.htm"
+},
+{
+"id": "pat_anat:448",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov: round ulcer, smooth base, cartilage-like edges, lymphoplasmacytic infiltrate = hard chancre.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/infekcionnye_bolezni/18065.html"
+},
+{
+"id": "pat_anat:449",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source describes septic endocarditis morphology; answer 'sepsis' needs classification step; rheumatic valve background arguable.",
+"accepted": false,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/infekcionnye_bolezni/18076.html"
+},
+{
+"id": "sud_tib:1",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Imam Bukhari Research Center page refers to al-Marghinani's 'Hidaya'.",
+"accepted": true,
+"url": "https://bukhari.uz/?p=3277"
+},
+{
+"id": "sud_tib:2",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Current UPK on lex.uz: Article 137 'Осмотр места происшествия'.",
+"accepted": true,
+"url": "https://lex.uz/docs/111463"
+},
+{
+"id": "sud_tib:3",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Current JK on lex.uz: Article 133 on organ/tissue removal and transplantation (ed. 2022).",
+"accepted": true,
+"url": "https://lex.uz/docs/111453"
+},
+{
+"id": "sud_tib:8",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Current JK on lex.uz: Article 99 mother's intentional killing of newborn.",
+"accepted": true,
+"url": "https://lex.uz/docs/111453"
+},
+{
+"id": "sud_tib:12",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "SumDU lecture explicitly lists bumper fracture under 'характерні', distinct from 'специфічні'.",
+"accepted": true,
+"url": "https://pathology.med.sumdu.edu.ua/wp-content/uploads/2024/08/Лекція-5-2.pdf"
+},
+{
+"id": "sud_tib:13",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Peer-reviewed article: fingernail pressure produces crescentic marks on skin.",
+"accepted": true,
+"url": "https://journals.innovareacademics.in/index.php/ajpcr/article/download/47298/28292"
+},
+{
+"id": "sud_tib:14",
+"claimed": 3,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Law Art.39 lists officials, not victim's application; district inspector mapped to pre-investigation body by inference.",
+"accepted": false,
+"url": "https://lex.uz/docs/41329"
+},
+{
+"id": "sud_tib:15",
+"claimed": 2,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source gives general Tsoliklon/standard-erythrocyte worked example; applied to this differently-worded case; key B(III) correct.",
+"accepted": false,
+"url": "https://stgmu.ru/upload/iblock/718/xriaif604ios9w2oxphbj7itfpu5qonl.pdf"
+},
+{
+"id": "sud_tib:16",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Current law on lex.uz: Article 39 forensic-medical and forensic-psychiatric expertise.",
+"accepted": true,
+"url": "https://lex.uz/docs/41329"
+},
+{
+"id": "sud_tib:17",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Current lex.uz UPK: Article 138 'Осмотр трупа'; 136 general rules, 140 objects/documents, 142 examination grounds.",
+"accepted": true,
+"url": "https://lex.uz/docs/111463"
+},
+{
+"id": "sud_tib:27",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "SumDU lecture: tread imprint is a specific (специфічна) sign of wheel run-over; 'o‘ziga xos' = specific.",
+"accepted": true,
+"url": "https://pathology.med.sumdu.edu.ua/wp-content/uploads/2024/08/Лекція-5-2.pdf"
+},
+{
+"id": "sud_tib:28",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Sechenov lecture: forensic significance of fractures - fact of trauma and blunt nature of the action.",
+"accepted": true,
+"url": "https://www.sechenov.ru/upload/iblock/dbc/Trauma-1.pdf"
+},
+{
+"id": "sud_tib:30",
+"claimed": 3,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Quote concerns Tsoliklon anti-A/anti-B, not α/β standard sera; mapping α=anti-A applied by analogy. AB(IV) correct by standard knowledge.",
+"accepted": false,
+"url": "https://stgmu.ru/upload/iblock/718/xriaif604ios9w2oxphbj7itfpu5qonl.pdf"
+},
+{
+"id": "sud_tib:31",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Current lex.uz UPK: Article 68 'Права и обязанности эксперта'; 67 is Expert, 70 specialist.",
+"accepted": true,
+"url": "https://lex.uz/docs/111463"
+},
+{
+"id": "sud_tib:32",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Current lex.uz UPK: Article 141 'Протокол осмотра'; 142-143 concern examination of persons.",
+"accepted": true,
+"url": "https://lex.uz/docs/111463"
+},
+{
+"id": "sud_tib:43",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Page states slash (incised) wounds bleed profusely; but anonymous Webnode site, not peer-reviewed.",
+"accepted": false,
+"url": "https://www.forensicmed.co.uk/wounds/sharp-force-trauma/slash-wounds/"
+},
+{
+"id": "sud_tib:47",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "UN/WHO definition: breathes or shows any other evidence of life; options 1-2 are only single instances.",
+"accepted": true,
+"url": "https://unstats.un.org/unsd/demographic/sources/civilreg/civilregmethods.htm"
+},
+{
+"id": "sud_tib:49",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Peradeniya atlas: persistent froth shows person not incapacitated; washerwoman skin, cutis anserina are immersion/non-specific signs.",
+"accepted": true,
+"url": "https://med.pdn.ac.lk/departments/forensic/Traumatology/Asphyxia/Drowning.pdf"
+},
+{
+"id": "sud_tib:50",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "SumDU lecture: specific injuries are contact imprints of vehicle parts (tread, headlights).",
+"accepted": true,
+"url": "https://pathology.med.sumdu.edu.ua/wp-content/uploads/2024/08/Лекція-5-2.pdf"
+},
+{
+"id": "sud_tib:51",
+"claimed": 2,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "NIJ report concerns saws/serrated knives marking bone; generalised to cutting objects by the key author.",
+"accepted": false,
+"url": "https://www.ojp.gov/pdffiles1/nij/grants/232227.pdf"
+},
+{
+"id": "sud_tib:54",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Current lex.uz UK Article 238 'Лжесвидетельство' includes knowingly false expert conclusion; 239/240 differ.",
+"accepted": true,
+"url": "https://lex.uz/docs/111457"
+},
+{
+"id": "sud_tib:62",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Sechenov thanatology lecture: putrefactive gases create pressure, causing corpses to surface.",
+"accepted": true,
+"url": "https://www.sechenov.ru/upload/iblock/d7e/Thanatology.pdf"
+},
+{
+"id": "sud_tib:67",
+"claimed": 1,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Current Art.177 regulates conducting commission expertise; its ordering/determination is in Art.176-1 (not an option). Question wording mismatched.",
+"accepted": false,
+"url": "https://lex.uz/docs/111463"
+},
+{
+"id": "sud_tib:80",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "PMC review: diatoms in solid organs are specific for drowning, reaching them only via beating heart.",
+"accepted": true,
+"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10421782/"
+},
+{
+"id": "sud_tib:81",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Peer-reviewed series: within 72 h burn shock was most common cause of death; sepsis later.",
+"accepted": true,
+"url": "https://jtraumainj.org/journal/view.php?number=834"
+},
+{
+"id": "sud_tib:85",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Russian methodological guideline lists hymen shape, height, thickness, elasticity, extensibility, opening size, injury localisation - all options.",
+"accepted": true,
+"url": "https://for-medex.ru/jour/article/download/16340/1028"
+},
+{
+"id": "sud_tib:90",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "NLM autopsy transcript: saw through costal cartilages close to ribs when removing sternum.",
+"accepted": true,
+"url": "https://www.nlm.nih.gov/exhibition/visibleproofs/galleries/media/autopsy/transcripts/transcript_1.html"
+},
+{
+"id": "sud_tib:92",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Sohag lecture: suspended animation/apparent death = vital functions at very low level, undetectable clinically.",
+"accepted": true,
+"url": "https://med.sohag-univ.edu.eg/main/wp-content/uploads/2021/09/Death-and-Post-mortem22.pdf"
+},
+{
+"id": "sud_tib:105",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source gives 1-3 h; '2-3 h' only partially matches the stated range.",
+"accepted": false,
+"url": "https://www.sechenov.ru/upload/iblock/d7e/Thanatology.pdf"
+},
+{
+"id": "sud_tib:106",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "OrGMU forensic dept material: research part = 2.1 external and 2.2 internal examination.",
+"accepted": true,
+"url": "https://www.orgma.ru/sveden/education/Metod_Sudebnaya_medicina_Stomatologiya-015.docx"
+},
+{
+"id": "sud_tib:107",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "studfile student notes; lists cord ligation and clean body only, not milk/wrapping; 'begona shaxs' wording garbled.",
+"accepted": false,
+"url": "https://studfile.net/preview/3004394/page:24/"
+},
+{
+"id": "sud_tib:109",
+"claimed": 1,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source gives general asphyxia sign (liquid dark-red blood) applied to hanging by the key author.",
+"accepted": false,
+"url": "https://www.orgma.ru/sveden/education/Metod_Sudebnaya_medicina_Stomatologiya-013.docx"
+},
+{
+"id": "sud_tib:111",
+"claimed": 2,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Cut-wound signs (linear, sharp ends) plus elimination of chop wound (no bone damage) needed; 'deep' vs shallow cut tension.",
+"accepted": false,
+"url": "https://www.sechenov.ru/upload/iblock/dbc/Trauma-1.pdf"
+},
+{
+"id": "sud_tib:114",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Am J Clin Pathol abstract: vaginal glycogenated cells on penis indicate penile-vaginal penetration (checked via Europe PMC; PubMed blocked).",
+"accepted": true,
+"url": "https://pubmed.ncbi.nlm.nih.gov/4036882/"
+},
+{
+"id": "sud_tib:116",
+"claimed": 2,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Art.138: forensic doctor, otherwise 'another doctor'; 'any doctor' is synonym leap and dentist/district doctor are also doctors.",
+"accepted": false,
+"url": "https://lex.uz/docs/111460"
+},
+{
+"id": "sud_tib:119",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Belarus MoH autopsy instruction: right half opened first; scissors enter right atrium through the auricle opening.",
+"accepted": true,
+"url": "https://www.bsmu.by/upload/iblock/2bc/t50yj9asfbtj1d6gavjnjwv4lqr293at/20121214111939kardiologia12.pdf"
+},
+{
+"id": "sud_tib:126",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Sechenov lecture: suicide cut wounds are multiple parallel transverse wounds on forearm/neck; only option 1 fits.",
+"accepted": true,
+"url": "https://www.sechenov.ru/upload/iblock/dbc/Trauma-1.pdf"
+},
+{
+"id": "sud_tib:127",
+"claimed": 1,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "CPC art.184 names document 'xulosa'; options 1 and 2 near-duplicates (singular/plural), question flawed.",
+"accepted": false,
+"url": "https://lex.uz/docs/111460"
+},
+{
+"id": "sud_tib:129",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Current lex.uz CC art.239 (2025 ed.) titled disclosure of inquiry/preliminary investigation data.",
+"accepted": true,
+"url": "https://lex.uz/docs/111453"
+},
+{
+"id": "sud_tib:136",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Studfile notes: abandoned newborn usually dies of hypothermia; studfile host is weak.",
+"accepted": false,
+"url": "https://studfile.net/preview/3004394/page:24/"
+},
+{
+"id": "sud_tib:138",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Klevno 2020 journal: fine-bubbled persistent foam at mouth/nose = Krushevsky sign.",
+"accepted": true,
+"url": "https://for-medex.ru/jour/article/download/326/308"
+},
+{
+"id": "sud_tib:143",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "PMC case: heat-induced bubbles thinning cortex; mapping to 'swellings, cortex breakdown' is a synonym leap, dermatology context.",
+"accepted": false,
+"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5596648"
+},
+{
+"id": "sud_tib:144",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Current lex.uz CPC art.178 is 'Комплекс экспертиза'; 176 additional, 179 rights, 180 order.",
+"accepted": true,
+"url": "https://lex.uz/docs/111460"
+},
+{
+"id": "sud_tib:147",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Forensic medicine dept lecture: first sign of putrefaction is greenish discoloration of right iliac fossa.",
+"accepted": true,
+"url": "https://www.narayanamedicalcollege.com/wp-content/uploads/2022/03/04.03.2021-Forensic-Medicine-late-postmortem-changes.pdf"
+},
+{
+"id": "sud_tib:150",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "AECVP 2017 guideline: multiple transverse cuts at 3-mm intervals along coronary arteries.",
+"accepted": true,
+"url": "https://openaccess.sgul.ac.uk/109175/1/s00428-017-2221-0.pdf"
+},
+{
+"id": "sud_tib:151",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "DocCheck Flexikon (editable medical wiki): 28th week to 7th day postpartum; only option 2 matches.",
+"accepted": false,
+"url": "https://flexikon.doccheck.com/de/Perinatalperiode"
+},
+{
+"id": "sud_tib:153",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Klevno 2020: fluid in sphenoid sinus (Sveshnikov); '5 ml' detail not in source but only option 3 fits.",
+"accepted": true,
+"url": "https://for-medex.ru/jour/article/download/326/308"
+},
+{
+"id": "sud_tib:155",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Sechenov lecture: thin connective-tissue bridges between edges are a sign of contused (lacerated) wounds.",
+"accepted": true,
+"url": "https://www.sechenov.ru/upload/iblock/dbc/Trauma-1.pdf"
+},
+{
+"id": "sud_tib:157",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Peer-reviewed case report: suicidal incised wounds show preliminary tentative (hesitation) cuts.",
+"accepted": true,
+"url": "https://journals.nauss.edu.sa/index.php/AJFSFM/article/download/1362/954"
+},
+{
+"id": "sud_kimyo:27",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Textbook: Ag dithizonate yellow, Hg orange-yellow; 'lemon-yellow' not stated, synonym/elimination needed.",
+"accepted": false,
+"url": "https://new.krmu.edu.kz/%D0%91%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0/%D0%A0%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9_%D1%82%D1%80%D1%83%D0%B4%D0%BE%D0%B2_%D0%9F%D0%9F%D0%A1/%D0%A3%D1%87%D0%B5%D0%B1%D0%BD%D0%B8%D0%BA%D0%B8/toksikologicheskaya-himiya.-uchebnik.-ch.-3.-t.-bajzoldanov.-almaty-evero-2021.-252-s..pdf"
+},
+{
+"id": "sud_kimyo:100",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Textbook: morphine maximally extracted by chloroform at pH 8.6-10.2; pH 9-10 within range.",
+"accepted": true,
+"url": "https://new.krmu.edu.kz/%D0%91%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0/%D0%A0%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9_%D1%82%D1%80%D1%83%D0%B4%D0%BE%D0%B2_%D0%9F%D0%9F%D0%A1/%D0%A3%D1%87%D0%B5%D0%B1%D0%BD%D0%B8%D0%BA%D0%B8/toksikologicheskaya-himiya.-uchebnik.-ch.-2.-t.-bajzoldanov.-almaty-evero-2021.-268-s..pdf"
+},
+{
+"id": "sud_kimyo:110",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Journal: acid hydrolysis 60 min of benzodiazepines then extraction of formed aminobenzophenones.",
+"accepted": true,
+"url": "https://www.bsmu.by/upload/iblock/afd/qajrhsjatzvts7di7w47qrt7c1pg3r7k/201405121126364.pdf"
+},
+{
+"id": "sud_kimyo:113",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Ankara University lecture: Vitali-Morin reaction detects tropane alkaloids.",
+"accepted": true,
+"url": "https://acikders.ankara.edu.tr/mod/resource/view.php?id=152907"
+},
+{
+"id": "sud_kimyo:114",
+"claimed": 2,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "USP: violet precipitate, violet-red crystalline aggregates; mapping to 'pink crystal aggregates' is a colour synonym leap.",
+"accepted": false,
+"url": "https://www.drugfuture.com/Pharmacopoeia/USP32/pub/data/v32270/usp32nf27s0_m19330.html"
+},
+{
+"id": "sud_kimyo:135",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Encyclopedia.com: barbital marketed as Veronal; general encyclopedia aggregator.",
+"accepted": false,
+"url": "https://www.encyclopedia.com/medicine/drugs/pharmacology/barbiturates"
+},
+{
+"id": "sud_kimyo:136",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Encyclopedia.com: phenobarbital introduced as Luminal; general encyclopedia aggregator.",
+"accepted": false,
+"url": "https://www.encyclopedia.com/medicine/drugs/pharmacology/barbiturates"
+},
+{
+"id": "sud_kimyo:148",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "SKMA lecture: barbiturate purification by extraction and microsublimation; filtration/centrifugation not listed.",
+"accepted": true,
+"url": "https://new.skma.edu.kz/uploads/%D0%9A%D0%B0%D1%84%D0%B5%D0%B4%D1%80%D1%8B/%D0%9A%D0%B0%D1%84%D0%B5%D0%B4%D1%80%D0%B0%20%D1%84%D0%B0%D1%80%D0%BC%D0%B0%D1%86%D0%B5%D0%B2%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9%20%D0%B8%20%D1%82%D0%BE%D0%BA%D1%81%D0%B8%D0%BA%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9%20%D1%85%D0%B8%D0%BC%D0%B8%D0%B8/%D0%A3%D0%9C%D0%9A%D0%94/%D0%91%D0%B0%D0%BA%D0%B0%D0%BB%D0%B0%D0%B2%D1%80%D0%B8%D0%B0%D1%82/%D0%9B%D0%95%D0%9A%D0%A6%D0%98%D0%98%202024-2025/%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81%20%D0%A2%D0%A5-2%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9.pdf"
+},
+{
+"id": "sud_kimyo:149",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "SKMA lecture: Valov alkalized-water method yields >50% vs 25-30% for acidified water/alcohol methods.",
+"accepted": true,
+"url": "https://new.skma.edu.kz/uploads/%D0%9A%D0%B0%D1%84%D0%B5%D0%B4%D1%80%D1%8B/%D0%9A%D0%B0%D1%84%D0%B5%D0%B4%D1%80%D0%B0%20%D1%84%D0%B0%D1%80%D0%BC%D0%B0%D1%86%D0%B5%D0%B2%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9%20%D0%B8%20%D1%82%D0%BE%D0%BA%D1%81%D0%B8%D0%BA%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9%20%D1%85%D0%B8%D0%BC%D0%B8%D0%B8/%D0%A3%D0%9C%D0%9A%D0%94/%D0%91%D0%B0%D0%BA%D0%B0%D0%BB%D0%B0%D0%B2%D1%80%D0%B8%D0%B0%D1%82/%D0%9B%D0%95%D0%9A%D0%A6%D0%98%D0%98%202024-2025/%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81%20%D0%A2%D0%A5-2%20%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9.pdf"
+},
+{
+"id": "sud_kimyo:150",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Textbook: etaminal with FeCl3+KI gives crystalline prisms (microcrystal reaction); other options are colour reactions.",
+"accepted": true,
+"url": "https://new.krmu.edu.kz/%D0%91%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0/%D0%A0%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9_%D1%82%D1%80%D1%83%D0%B4%D0%BE%D0%B2_%D0%9F%D0%9F%D0%A1/%D0%A3%D1%87%D0%B5%D0%B1%D0%BD%D0%B8%D0%BA%D0%B8/toksikologicheskaya-himiya.-uchebnik.-ch.-2.-t.-bajzoldanov.-almaty-evero-2021.-268-s..pdf"
+},
+{
+"id": "sud_kimyo:164",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Teva product monograph: haloperidol is a butyrophenone derivative.",
+"accepted": true,
+"url": "https://pdf.hres.ca/dpd_pm/00036413.PDF"
+},
+{
+"id": "sud_kimyo:283",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Textbook: classification of toxic substances by method of isolation from biological objects.",
+"accepted": true,
+"url": "https://new.krmu.edu.kz/%D0%91%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0/%D0%A0%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9_%D1%82%D1%80%D1%83%D0%B4%D0%BE%D0%B2_%D0%9F%D0%9F%D0%A1/%D0%A3%D1%87%D0%B5%D0%B1%D0%BD%D0%B8%D0%BA%D0%B8/toksikologicheskaya-himiya.-uchebnik.-ch.-1.-t.-bajzoldanov.-almaty-evero-2021.-240-s..pdf"
+},
+{
+"id": "pat_anat:242",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Serov-Paltsev lecture copy: sensitization gives exudative tissue reaction with caseous necrosis; matches option 0. Studfile host.",
+"accepted": false,
+"url": "https://studfile.net/preview/535822/"
+},
+{
+"id": "pat_anat:243",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Growth of primary affect -> caseous pneumonia -> acute cavity; route of progression is option 2. Studfile copy.",
+"accepted": false,
+"url": "https://studfile.net/preview/5792201/"
+},
+{
+"id": "pat_anat:244",
+"claimed": 3,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Source: chronic primary TB arises 'prежде всего' via lymph-node progression (not offered); cavity is secondary criterion; garbled question text.",
+"accepted": false,
+"url": "https://studfile.net/preview/6859776/page:5/"
+},
+{
+"id": "pat_anat:245",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Paraspecific joint reactions in chronic primary TB described as Poncet rheumatism; matches option 3. Studfile copy.",
+"accepted": false,
+"url": "https://studfile.net/preview/6859776/page:5/"
+},
+{
+"id": "pat_anat:246",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Hematogenous TB: productive reaction predominates, tendency to hematogenous generalization; option 1. Studfile copy.",
+"accepted": false,
+"url": "https://studfile.net/preview/6859776/page:5/"
+},
+{
+"id": "pat_anat:248",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Acutest TB sepsis: necrotic foci in all organs; option 3. Studfile copy.",
+"accepted": false,
+"url": "https://studfile.net/preview/6859776/page:5/"
+},
+{
+"id": "pat_anat:249",
+"claimed": 3,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Analogous worked example (stillbirth, abruption in line v); not this case with gestosis/pyelonephritis; key applied by analogy.",
+"accepted": false,
+"url": "https://bashgmu.ru/upload/kafedry/%D0%94%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D0%B7%20%D0%B8%20%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B5%20%D1%81%D0%B2%D0%B8%D0%B4%D0%B5%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE%20%D0%BE%20%D1%81%D0%BC%D0%B5%D1%80%D1%82%D0%B8%20%D0%B2%20%D0%BF%D0%B5%D0%B4%D0%B8%D0%B0%D1%82%D1%80%D0%B8%D0%B8.pdf"
+},
+{
+"id": "pat_anat:250",
+"claimed": 1,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Analogous worked example: line a = intrauterine asphyxia for abruption; case-specific application by analogy plus ICD rule.",
+"accepted": false,
+"url": "https://bashgmu.ru/upload/kafedry/%D0%94%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D0%B7%20%D0%B8%20%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B5%20%D1%81%D0%B2%D0%B8%D0%B4%D0%B5%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE%20%D0%BE%20%D1%81%D0%BC%D0%B5%D1%80%D1%82%D0%B8%20%D0%B2%20%D0%BF%D0%B5%D0%B4%D0%B8%D0%B0%D1%82%D1%80%D0%B8%D0%B8.pdf"
+},
+{
+"id": "pat_anat:270",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "SibGMU textbook: deaths after diagnostic/surgical/therapeutic interventions and drug disease discussed at clinical-anatomical conferences.",
+"accepted": true,
+"url": "https://elar.ssmu.ru/bitstream/20.500.12701/4414/1/tut_ssmu-2024-31.pdf"
+},
+{
+"id": "pat_anat:271",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Immediate cause defined as changes making continued life impossible; option 0. Unattributed textbook copy on rf-u.ru.",
+"accepted": false,
+"url": "http://www.rf-u.ru/sud/Data/2/19.htm"
+},
+{
+"id": "sud_tib:158",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source covers only flask-shaped swelling from gunshot flame singeing; twisting/lustre loss not stated; generalized to heat.",
+"accepted": false,
+"url": "https://nuozu.edu.ua/images/FakPidVik/kafSudMed/03_09_20-9.pdf"
+},
+{
+"id": "sud_tib:159",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Current lex.uz UPK art.187: conclusion evaluated by inquiry officer, investigator or court, i.e. those appointing expertise.",
+"accepted": true,
+"url": "https://lex.uz/docs/111463"
+},
+{
+"id": "sud_tib:161",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Weak rigor stated for highly toxic Amanita mushrooms generally; option 2 'mushrooms' also arguable. Studref host.",
+"accepted": false,
+"url": "https://studref.com/414833/meditsina/sudebno_meditsinskaya_ekspertiza_otravleniy_yadovitymi_svoey_prirode_pischevymi_produktami_rastitelnogo"
+},
+{
+"id": "sud_tib:165",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "IGMA manual lists Virchow, Abrikosov, Chiari-Maresch, Shor, Lutel evisceration methods exactly as option 1.",
+"accepted": true,
+"url": "https://igma.ru/attachments/article/1896/Tanatologia.pdf"
+},
+{
+"id": "sud_tib:169",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "OrGMU lecture: ethanol belongs to narcotic poisons of the fatty series; option 1.",
+"accepted": true,
+"url": "https://www.orgma.ru/sveden/education/Metod_Sudebnaya_medicina_Lechebnoe_delo-009.docx"
+},
+{
+"id": "sud_tib:173",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Science-faculty slides say root region stays natural; examining periphery, shaft and root is inferred.",
+"accepted": false,
+"url": "https://physics.sc.mahidol.ac.th/downloads/scpy451_2563/Hair%20analysis%20in%20forensic%20science_63.pdf"
+},
+{
+"id": "sud_tib:180",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Sechenov slides: non-violent (natural) death from diseases of various systems; option 2.",
+"accepted": true,
+"url": "https://www.sechenov.ru/upload/iblock/d7e/Thanatology.pdf"
+},
+{
+"id": "sud_tib:181",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Dissertation: I.V. Markovin first studied meconium forensically in 1934 doctoral thesis; option 0.",
+"accepted": true,
+"url": "https://www.sechenov.ru/upload/iblock/9ae/Dissertatsiya-CHetvertnovoy-A.P..pdf"
+},
+{
+"id": "sud_tib:186",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Entsov text: entry-wound tissue defect forms with sufficient bullet kinetic energy; option 2.",
+"accepted": true,
+"url": "https://online.zakon.kz/Document/?doc_id=30997772"
+},
+{
+"id": "sud_tib:188",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "SWGMAT: pulled anagen root pigmented, sheathed, elongated; hook shape not stated; anagen->'living' mapping.",
+"accepted": false,
+"url": "https://www.asteetrace.org/static/images/pdf/01%20Forensic%20Human%20Hair%20Examination%20Guidelines.pdf"
+},
+{
+"id": "sud_tib:189",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Current lex.uz UPK: Article 68 'Rights and duties of expert'; option 2.",
+"accepted": true,
+"url": "https://lex.uz/docs/111463"
+},
+{
+"id": "sud_tib:193",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "IGMA manual: kidney cut in one stroke from convex surface to hilum opening pelvis; option 3.",
+"accepted": true,
+"url": "https://igma.ru/attachments/article/1896/Tanatologia.pdf"
+},
+{
+"id": "sud_tib:195",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "SumDU lecture: non-violent death by kind is sudden; always from disease; option 1.",
+"accepted": true,
+"url": "https://pathology.med.sumdu.edu.ua/wp-content/uploads/2024/08/Лекція-5.pdf"
+},
+{
+"id": "sud_tib:196",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Dissertation: meconium has characteristic dark-green colour; option 0.",
+"accepted": true,
+"url": "https://www.sechenov.ru/upload/iblock/9ae/Dissertatsiya-CHetvertnovoy-A.P..pdf"
+},
+{
+"id": "sud_tib:208",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "IGMA manual: histological/histochemical methods used to establish intravitality of injuries; option 1.",
+"accepted": true,
+"url": "https://igma.ru/attachments/article/1896/Tanatologia.pdf"
+},
+{
+"id": "sud_tib:218",
+"claimed": 1,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Article says similarity concluded 'по ряду признаков'; mapping to 'sum of features' is a synonym leap.",
+"accepted": false,
+"url": "https://journals.rta.lv/index.php/ACJ/article/download/2811/2801/4064"
+},
+{
+"id": "sud_tib:222",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Sechenov slides (two-column layout): cooling to ambient usually completes by end of first day (~24 h); option 2.",
+"accepted": true,
+"url": "https://www.sechenov.ru/upload/iblock/d7e/Thanatology.pdf"
+},
+{
+"id": "sud_tib:229",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Sechenov slides list external/internal injury mismatch with internal predominance as main diagnostic sign; option 3.",
+"accepted": true,
+"url": "https://www.sechenov.ru/upload/iblock/b34/Trauma-2.pdf"
+},
+{
+"id": "sud_tib:235",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Sechenov lecture: after 24-35 h lividity does not blanch on pressure; 48 h is later imbibition stage, color unchanged.",
+"accepted": true,
+"url": "https://www.sechenov.ru/upload/iblock/d7e/Thanatology.pdf"
+},
+{
+"id": "sud_tib:237",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Quote found in Sechenov test bank: Larche spots on cornea/sclera of half-open eyes (drying); lecture slides concur. Test bank source.",
+"accepted": false,
+"url": "https://www.sechenov.ru/upload/iblock/ad4/osmotr-trupa-na-meste-ego-obnaruzheniya.doc"
+},
+{
+"id": "sud_tib:242",
+"claimed": 1,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "AAFS abstract confirms Socrates died of hemlock (Conium); option 'sikuta' requires hemlock=цикута naming leap (botanically Cicuta differs).",
+"accepted": false,
+"url": "https://www.aafs.org/sites/default/files/media/documents/AAFS-2019-E91.pdf"
+},
+{
+"id": "sud_tib:246",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Current lex.uz CPC: Article 175 'Объекты исследования' contains the quoted text.",
+"accepted": true,
+"url": "https://lex.uz/docs/111463"
+},
+{
+"id": "sud_tib:249",
+"claimed": 1,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Review lists location and blanching separately, but also color and border as differences; key combines two criteria.",
+"accepted": false,
+"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12450430/"
+},
+{
+"id": "sud_tib:250",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Sechenov lecture: postmortem phenomena sequence used to establish time since death.",
+"accepted": true,
+"url": "https://www.sechenov.ru/upload/iblock/d7e/Thanatology.pdf"
+},
+{
+"id": "sud_tib:252",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "PathologyOutlines (fetched): Virchow - organs removed and inspected one by one.",
+"accepted": true,
+"url": "https://pathologyoutlines.com/topic/forensicsautopsytechniques.html"
+},
+{
+"id": "sud_tib:256",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "AAFS abstract: calcium oxalate crystals in renal tubules; oxalic acid from ethylene glycol precipitates in kidneys.",
+"accepted": true,
+"url": "https://www.aafs.org/sites/default/files/media/documents/AAFS-2018-H30.pdf"
+},
+{
+"id": "sud_tib:257",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source describes butt end of stab-incised wounds (P-shaped rare, rounded sometimes); rounded wounds also from stabbing objects; ambiguous.",
+"accepted": false,
+"url": "https://www.orgma.ru/sveden/education/Metod_Sudebnaya_medicina_Stomatologiya-011.docx"
+},
+{
+"id": "sud_tib:258",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Stavropol manual: agglutination with anti-A and anti-B (and table with all standard sera) means AB(IV).",
+"accepted": true,
+"url": "https://stgmu.ru/upload/iblock/718/xriaif604ios9w2oxphbj7itfpu5qonl.pdf"
+},
+{
+"id": "sud_tib:266",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Text: asphyctic ('dry') drowning results from laryngospasm without water aspiration into lungs.",
+"accepted": true,
+"url": "https://www.cardio.by/files/299/Utoplenie.pdf"
+},
+{
+"id": "sud_tib:269",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Orenburg text: conical stab wound shows abrasion and wiping rings like gunshot entry; both weapon types.",
+"accepted": true,
+"url": "https://www.orgma.ru/sveden/education/Metod_Sudebnaya_medicina_Stomatologiya-011.docx"
+},
+{
+"id": "sud_tib:273",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "DRZE: active euthanasia = death caused by an action; lethal dose at request is active.",
+"accepted": true,
+"url": "https://www.drze.de/en/research-publications/in-focus/euthanasia/modules/passive-euthanasia-vs-active-euthanasia"
+},
+{
+"id": "sud_tib:275",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Sechenov: cadaveric green appears first in iliac regions of abdominal wall (anterolateral abdomen).",
+"accepted": true,
+"url": "https://www.sechenov.ru/upload/iblock/d7e/Thanatology.pdf"
+},
+{
+"id": "sud_tib:276",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Izhevsk manual: Chiari-Maresch - organs opened in situ, only then extracted.",
+"accepted": true,
+"url": "https://igma.ru/attachments/article/1896/Tanatologia.pdf"
+},
+{
+"id": "sud_tib:281",
+"claimed": 1,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Slide only lists 'defective (sawn-offs)'; mapping to 'altered factory weapon' is inference; option 'manufactured with defect' literally defensible.",
+"accepted": false,
+"url": "https://www.sechenov.ru/upload/iblock/bd4/Gunshot-wounding.pdf"
+},
+{
+"id": "sud_tib:290",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Izhevsk manual: Letulle - after evisceration each organ cut from complex, examined separately.",
+"accepted": true,
+"url": "https://igma.ru/attachments/article/1896/Tanatologia.pdf"
+},
+{
+"id": "sud_tib:292",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Orenburg: asphyctic period stage (a) is inspiratory dyspnea.",
+"accepted": true,
+"url": "https://www.orgma.ru/sveden/education/Metod_Sudebnaya_medicina_Stomatologiya-013.docx"
+},
+{
+"id": "sud_tib:293",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source supports only foam; pallor and goose skin in option not supported (goose skin non-specific).",
+"accepted": false,
+"url": "https://bsmu.by/upload/docs/universitet/izdaniya/voen-medicina/2024/2024-3/9.pdf"
+},
+{
+"id": "sud_tib:294",
+"claimed": 1,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "PubMed: phallolysin is haemolysin of Amanita phalloides; amanitohemolysin=phallolysin and 'oq poganka' mapping are synonym leaps.",
+"accepted": false,
+"url": "https://pubmed.ncbi.nlm.nih.gov/1172197/"
+},
+{
+"id": "sud_tib:296",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Sechenov: wounds without tissue defect formed by projectiles with low specific kinetic energy.",
+"accepted": true,
+"url": "https://www.sechenov.ru/upload/iblock/bd4/Gunshot-wounding.pdf"
+},
+{
+"id": "sud_tib:301",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Sechenov: by end of first week cadaveric emphysema develops.",
+"accepted": true,
+"url": "https://www.sechenov.ru/upload/iblock/d7e/Thanatology.pdf"
+},
+{
+"id": "sud_tib:304",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Orenburg: stage (b) expiratory dyspnea with intensified expiratory movements.",
+"accepted": true,
+"url": "https://www.orgma.ru/sveden/education/Metod_Sudebnaya_medicina_Stomatologiya-013.docx"
+},
+{
+"id": "sud_tib:305",
+"claimed": 1,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source says Tardieu spots nonspecific, occur in other rapid deaths; 'indicate rapid death' is inferred.",
+"accepted": false,
+"url": "https://www.orgma.ru/sveden/education/Metod_Sudebnaya_medicina_Stomatologiya-013.docx"
+},
+{
+"id": "sud_tib:306",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Orenburg lecture: poison action depends on poison properties, organism state, routes of entry, etc.",
+"accepted": true,
+"url": "https://www.orgma.ru/sveden/education/Metod_Sudebnaya_medicina_Lechebnoe_delo-009.docx"
+},
+{
+"id": "pat_anat:3",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Urate-crystal granulomas (tophi) with inflammation define gout; PMC systematic review states it.",
+"accepted": true,
+"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6444644/"
+},
+{
+"id": "pat_anat:5",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "RNIMU pathology dept: hemosiderin-laden alveolar phagocytes are called siderophages.",
+"accepted": true,
+"url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_pat_anat/plany_PZ/1_2.pdf"
+},
+{
+"id": "pat_anat:6",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Hemorrhage = bleeding into tissue; option 0 is Strukov's definition of bleeding (krovotechenie) generally. Wiki mirror.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/ruwiki/1836506"
+},
+{
+"id": "pat_anat:7",
+"claimed": 2,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Key right per Strukov (preserved elements), but MME quote says infiltration destroys parenchyma, not preserved elements.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/enc_medicine/15469/%D0%9A%D1%80%D0%BE%D0%B2%D0%BE%D0%B8%D0%B7%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5"
+},
+{
+"id": "pat_anat:8",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Page lists coagulation/anticoagulation imbalance as general factor; intima damage, slowing, turbulence as local.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/ruwiki/1836506"
+},
+{
+"id": "pat_anat:9",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Description is phlegmon (not an option); needs leap to its parent category purulent inflammation.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/enc_medicine/6728/%D0%92%D0%BE%D1%81%D0%BF%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5"
+},
+{
+"id": "pat_anat:10",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Protein-rich fluid with blood cells leaving vessels in inflammation is exudate.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/enc_medicine/35296/%D0%AD%D0%BA%D1%81%D1%81%D1%83%D0%B4%D0%B0%CC%81%D1%86%D0%B8%D1%8F"
+},
+{
+"id": "pat_anat:11",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Quote describes disease-specific granulomas under 'productive specific'; granulomatous option overlaps; mapping needed.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/enc_medicine/6728/%D0%92%D0%BE%D1%81%D0%BF%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5"
+},
+{
+"id": "pat_anat:12",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "MME: hematoma is a hemorrhage (krovoizliyanie) forming a tissue cavity.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/enc_medicine/15469/%D0%9A%D1%80%D0%BE%D0%B2%D0%BE%D0%B8%D0%B7%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5"
+},
+{
+"id": "pat_anat:14",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Embolus = circulating substrate not found normally; matches option 2.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/enc_medicine/462/%D0%AD%CC%81%D0%BC%D0%B1%D0%BE%D0%BB"
+},
+{
+"id": "pat_anat:15",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Redness, heat, pain are classic inflammation signs; acute inflammation is intended.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/enc_medicine/6728/%D0%92%D0%BE%D1%81%D0%BF%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5"
+},
+{
+"id": "pat_anat:16",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Diphtheritic: deep necrosis, hard-to-remove films on mucosa (tonsils); removal leaves deep ulcers.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/enc_medicine/6728/%D0%92%D0%BE%D1%81%D0%BF%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5"
+},
+{
+"id": "pat_anat:18",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Hydronephrosis: rising intrapelvic pressure causes parenchymal atrophy = pressure atrophy.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/enc_medicine/8394/%D0%93%D0%B8%D0%B4%D1%80%D0%BE%D0%BD%D0%B5%D1%84%D1%80%D0%BE%D0%B7"
+},
+{
+"id": "pat_anat:19",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Pseudohypertrophy = parenchymal atrophy with stromal hypertrophy.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/ruwiki/1855322"
+},
+{
+"id": "pat_anat:20",
+"claimed": 2,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source says cell-mediated (T) and humoral (B); option 3 T-cell/B-cell is arguably also correct.",
+"accepted": false,
+"url": "https://courses.lumenlearning.com/suny-biology2xmaster/chapter/adaptive-immune-response/"
+},
+{
+"id": "pat_anat:22",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "PathologyOutlines (fetched via WebFetch): Paget disease shows bone remodeling with mosaic cement-line pattern.",
+"accepted": true,
+"url": "https://www.pathologyoutlines.com/topic/bonepagets.html"
+},
+{
+"id": "pat_anat:23",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "RAE guideline: parathyroid osteodystrophy is skeletal disease caused by parathyroid hyperfunction.",
+"accepted": true,
+"url": "https://medi.ru/klinicheskie-rekomendatsii/pervichnyj-giperparatireoz_14174/"
+},
+{
+"id": "pat_anat:24",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Osteomyelitis = inflammation of bone and marrow; quote verified via WebFetch.",
+"accepted": true,
+"url": "https://www.pathologyoutlines.com/topic/mandiblemaxillaosteomyelitis.html"
+},
+{
+"id": "pat_anat:25",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "FD: normal bone and marrow replaced by fibrous tissue (PMC guideline).",
+"accepted": true,
+"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3359960/"
+},
+{
+"id": "pat_anat:26",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "MeSH: metrorrhagia is abnormal uterine bleeding.",
+"accepted": true,
+"url": "https://www.ncbi.nlm.nih.gov/mesh/?term=Metrorrhagia"
+},
+{
+"id": "pat_anat:27",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "MedGen/HPO: hemopericardium = blood in pericardial sac.",
+"accepted": true,
+"url": "https://www.ncbi.nlm.nih.gov/medgen/6795"
+},
+{
+"id": "pat_anat:28",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "PMC review: hemothorax = blood in pleural space.",
+"accepted": true,
+"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7799890/"
+},
+{
+"id": "pat_anat:29",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "MedGen/HPO: hemoperitoneum = blood in peritoneal cavity.",
+"accepted": true,
+"url": "https://www.ncbi.nlm.nih.gov/medgen/6796"
+},
+{
+"id": "pat_anat:30",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Petechiae are pinpoint hemorrhages.",
+"accepted": true,
+"url": "https://www.ncbi.nlm.nih.gov/medgen/10680"
+},
+{
+"id": "pat_anat:32",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov text: necrosis (infarct) is most dangerous process leading to heart rupture.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17569.html"
+},
+{
+"id": "pat_anat:33",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov: systemic diapedetic hemorrhages manifest hemorrhagic syndrome.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17570.html"
+},
+{
+"id": "pat_anat:35",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov: plasmorrhagia = exit of plasma from the bloodstream.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17571.html"
+},
+{
+"id": "pat_anat:36",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov: plasmatic impregnation = vessel wall and surrounding tissue soaked with plasma.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17571.html"
+},
+{
+"id": "pat_anat:37",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov: chronic lymph stasis is sclerogenic.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17576.html"
+},
+{
+"id": "pat_anat:38",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov: sclerogenic effect is due to tissue hypoxia.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17576.html"
+},
+{
+"id": "pat_anat:39",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text (medchitalka, attributed): subcutaneous edema fluid = anasarca.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17579.html"
+},
+{
+"id": "pat_anat:40",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text (medchitalka, attributed): transudate in pericardial cavity = hydropericardium.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17579.html"
+},
+{
+"id": "pat_anat:41",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text (medchitalka, attributed): edema fluid in pleural cavity = hydrothorax.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17579.html"
+},
+{
+"id": "pat_anat:42",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text (medchitalka, attributed): increased blood content due to reduced outflow, inflow unchanged.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17534.html"
+},
+{
+"id": "pat_anat:43",
+"claimed": 3,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Negative item: source lists plasmorrhagia, edema, stasis for acute congestion; hyalinosis absent -> key by elimination, correct.",
+"accepted": false,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17535.html"
+},
+{
+"id": "pat_anat:44",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text (medchitalka, attributed): chronic congestion causes sclerotic changes (connective tissue growth).",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17536.html"
+},
+{
+"id": "pat_anat:45",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text (medchitalka, attributed): prolonged tissue hypoxia determines all changes in chronic congestion.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17536.html"
+},
+{
+"id": "pat_anat:46",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text (medchitalka, attributed): chronic hypoxia stimulates tropocollagen synthesis by fibroblasts.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17536.html"
+},
+{
+"id": "pat_anat:47",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text (medchitalka, attributed): liver in chronic congestion called nutmeg (muscat) liver.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17536.html"
+},
+{
+"id": "pat_anat:49",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text (medchitalka, attributed): connective tissue (sclerosis) causes congestive induration.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17536.html"
+},
+{
+"id": "pat_anat:50",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text (medchitalka, attributed): muscat (cardiac) cirrhosis in chronic heart failure.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17537.html"
+},
+{
+"id": "pat_anat:51",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text (medchitalka, attributed): kidneys: cyanotic induration.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17539.html"
+},
+{
+"id": "pat_anat:52",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text (medchitalka, attributed): spleen: cyanotic induration.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17539.html"
+},
+{
+"id": "pat_anat:53",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text (medchitalka, attributed): local venous congestion arises from impeded venous outflow from organ/body part.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17540.html"
+},
+{
+"id": "pat_anat:54",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text (medchitalka, attributed): anemia/ischemia = reduced blood content due to insufficient inflow.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17541.html"
+},
+{
+"id": "pat_anat:55",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text (medchitalka, attributed): acute obturation anemia often leads to infarction.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17542.html"
+},
+{
+"id": "pat_anat:56",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text (medchitalka, attributed): thrombosis = intravital clotting in vessel lumen or heart cavities.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17551.html"
+},
+{
+"id": "pat_anat:57",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text (medchitalka, attributed): white, red, mixed, hyaline thrombi; only option 0 is a composition type.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17554.html"
+},
+{
+"id": "pat_anat:58",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text (medchitalka, attributed): white thrombus: platelets, fibrin, leukocytes.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17554.html"
+},
+{
+"id": "pat_anat:59",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text (medchitalka, attributed): red thrombus: platelets, fibrin, many erythrocytes.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17554.html"
+},
+{
+"id": "pat_anat:61",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Strukov textbook text (medchitalka, attributed): local factors: vessel wall changes, slowing/disturbance of blood flow.",
+"accepted": true,
+"url": "https://www.medchitalka.ru/patologicheskaya_anatomiya/narusheniya_krovoobrascheniya_i_limfoobrasch/17556.html"
+},
+{
+"id": "pat_anat:62",
+"claimed": 1,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "KFU lecture: organization = connective tissue ingrowth; but question says \"qayta tiklanish\" (restoration), terminology leap; key likely correct.",
+"accepted": false,
+"url": "https://kpfu.ru/portal/docs/F_1122984503/Lekciya._.4.Patologiya.krovoobrashheniya..Tromboz_.emboliya..pdf"
+},
+{
+"id": "pat_anat:64",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Edinburgh Pathologia: vast majority of emboli arise from thrombi -> thromboembolism.",
+"accepted": true,
+"url": "https://pathologia.ed.ac.uk/topic/embolism/"
+},
+{
+"id": "pat_anat:65",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "RSMU pathology dept: bacterial emboli in embolic abscesses in septicopyemia (sepsis).",
+"accepted": true,
+"url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_pat_anat/plany_PZ/2_14.pdf"
+},
+{
+"id": "pat_anat:66",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Paltsev says \"cellular\" embolism in malignant tumors; question says tissue embolism - synonym leap (Strukov equates them). Key correct.",
+"accepted": false,
+"url": "https://arm.ssuv.uz/frontend/web/uploads/pdf_6a06fb6d0dc45.pdf"
+},
+{
+"id": "pat_anat:67",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Peer-reviewed article: excess hemosiderin deposition in tissues is called hemosiderosis.",
+"accepted": true,
+"url": "https://recipe.by/wp-content/uploads/2023/12/483-496_nevr_4-2023_v13.pdf"
+},
+{
+"id": "pat_anat:68",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "TashPMI lecture: intravascular hemolysis -> general hemosiderosis.",
+"accepted": true,
+"url": "https://api.ziyonet.uz/uploads/books/459675/56d952a939939.pdf"
+},
+{
+"id": "pat_anat:69",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "TashPMI lecture: general hemosiderosis in spleen, bone marrow, lymph nodes, liver.",
+"accepted": true,
+"url": "https://api.ziyonet.uz/uploads/books/459675/56d952a939939.pdf"
+},
+{
+"id": "pat_anat:70",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "TashPMI lecture: extravascular hemolysis -> local hemosiderosis.",
+"accepted": true,
+"url": "https://api.ziyonet.uz/uploads/books/459675/56d952a939939.pdf"
+},
+{
+"id": "pat_anat:71",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "TashPMI lecture: Prussian blue / Perls reaction detects hemosiderin.",
+"accepted": true,
+"url": "https://api.ziyonet.uz/uploads/books/459675/56d952a939939.pdf"
+},
+{
+"id": "pat_anat:72",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Lecture: lungs become dense and brown (бурые) from hemosiderin; matches option 1.",
+"accepted": true,
+"url": "https://api.ziyonet.uz/uploads/books/459675/56d952a939939.pdf"
+},
+{
+"id": "pat_anat:73",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Lecture: siderophages/sideroblasts fill alveolar cavities; option 0.",
+"accepted": true,
+"url": "https://api.ziyonet.uz/uploads/books/459675/56d952a939939.pdf"
+},
+{
+"id": "pat_anat:74",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Perls gives Prussian blue (берлинская лазурь); garbled option \"lazer\" = lazur; other options wrong.",
+"accepted": true,
+"url": "https://api.ziyonet.uz/uploads/books/459675/56d952a939939.pdf"
+},
+{
+"id": "pat_anat:75",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Lecture: small diapedetic hemorrhages form only hemosiderin.",
+"accepted": true,
+"url": "https://api.ziyonet.uz/uploads/books/459675/56d952a939939.pdf"
+},
+{
+"id": "pat_anat:76",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Lecture lists liver among organs accumulating hemosiderin in general hemosiderosis.",
+"accepted": true,
+"url": "https://api.ziyonet.uz/uploads/books/459675/56d952a939939.pdf"
+},
+{
+"id": "pat_anat:77",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Lecture: subhepatic jaundice from impaired bile outflow through ducts.",
+"accepted": true,
+"url": "https://api.ziyonet.uz/uploads/books/459675/56d952a939939.pdf"
+},
+{
+"id": "pat_anat:78",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Lecture: obstruction of bile ducts by stone causes subhepatic jaundice.",
+"accepted": true,
+"url": "https://api.ziyonet.uz/uploads/books/459675/56d952a939939.pdf"
+},
+{
+"id": "pat_anat:79",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Lecture: lungs turn brown due to hemosiderin accumulation.",
+"accepted": true,
+"url": "https://api.ziyonet.uz/uploads/books/459675/56d952a939939.pdf"
+},
+{
+"id": "pat_anat:80",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Lecture: hematoidin deposited in hematoma center, hemosiderin at periphery.",
+"accepted": true,
+"url": "https://api.ziyonet.uz/uploads/books/459675/56d952a939939.pdf"
+},
+{
+"id": "pat_anat:81",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Lecture: hydrochloric acid hematin forms in stomach (erosion floor); option 1.",
+"accepted": true,
+"url": "https://api.ziyonet.uz/uploads/books/459675/56d952a939939.pdf"
+},
+{
+"id": "pat_anat:83",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Lecture: malarial pigment is hemomelanin.",
+"accepted": true,
+"url": "https://api.ziyonet.uz/uploads/books/459675/56d952a939939.pdf"
+},
+{
+"id": "pat_anat:85",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Lecture: enterochromaffin cells belong to APUD system.",
+"accepted": true,
+"url": "https://api.ziyonet.uz/uploads/books/459675/56d952a939939.pdf"
+},
+{
+"id": "pat_anat:86",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Lecture: bronze skin in Addison disease from melanin accumulation.",
+"accepted": true,
+"url": "https://api.ziyonet.uz/uploads/books/459675/56d952a939939.pdf"
+},
+{
+"id": "pat_anat:87",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Lecture: acquired widespread melanoderma, most marked in Addison disease.",
+"accepted": true,
+"url": "https://api.ziyonet.uz/uploads/books/459675/56d952a939939.pdf"
+},
+{
+"id": "pat_anat:88",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Lecture: bilateral adrenal cortex lesion causes Addison disease.",
+"accepted": true,
+"url": "https://api.ziyonet.uz/uploads/books/459675/56d952a939939.pdf"
+},
+{
+"id": "pat_anat:89",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Lecture: Addison disease = melanoderma (melanin metabolism disorder).",
+"accepted": true,
+"url": "https://api.ziyonet.uz/uploads/books/459675/56d952a939939.pdf"
+},
+{
+"id": "pat_anat:90",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Lecture lists lipofuscin among pigments serving oxidation-reduction processes.",
+"accepted": true,
+"url": "https://api.ziyonet.uz/uploads/books/459675/56d952a939939.pdf"
+},
+{
+"id": "pat_anat:91",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "SIU histology: lipofuscin granules evident in hepatocytes.",
+"accepted": true,
+"url": "https://histology.siu.edu/erg/GI150b.htm"
+},
+{
+"id": "pat_anat:92",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Kazan methodical text: brown atrophy shows lipofuscin in cells; standard knowledge.",
+"accepted": true,
+"url": "https://kpfu.ru//staff_files/F_971557549/Obschaya_patologicheskaya_anatomiya_dlya_prepodavatelej.pdf"
+},
+{
+"id": "pat_anat:95",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "PMC article: metastatic calcification results from hypercalcemia.",
+"accepted": true,
+"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5586513/"
+},
+{
+"id": "pat_anat:97",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "PMC: metastatic calcification occurs under hypercalcemia (raised blood calcium).",
+"accepted": true,
+"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5586513/"
+},
+{
+"id": "pat_anat:98",
+"claimed": 2,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "MSD states vitamin D deficiency causes rickets, but hypophosphatemia is also a recognized rickets cause.",
+"accepted": false,
+"url": "https://www.msdmanuals.com/professional/nutritional-disorders/vitamin-deficiency-dependency-and-toxicity/vitamin-d-deficiency-and-dependency"
+},
+{
+"id": "pat_anat:100",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Sechenov material: causes of myocardial fatty degeneration include hypoxia.",
+"accepted": true,
+"url": "https://www.sechenov.ru/upload/iblock/fa6/qk61nb3v74a71uvvjpklm0jgqswd1hx9/26materialy.pdf"
+},
+{
+"id": "pat_anat:101",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Sechenov: fatty degeneration micropreparation stained with Sudan III.",
+"accepted": true,
+"url": "https://www.sechenov.ru/upload/iblock/fa6/qk61nb3v74a71uvvjpklm0jgqswd1hx9/26materialy.pdf"
+},
+{
+"id": "pat_anat:102",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "MSD names hypokalemic form of periodic paralysis; other forms hyper/normokalemic; partial match plus elimination.",
+"accepted": false,
+"url": "https://www.msdmanuals.com/professional/pediatrics/inherited-muscular-disorders/familial-periodic-paralysis"
+},
+{
+"id": "pat_anat:103",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Sechenov lists hyaline-droplet among parenchymal dysproteinoses; amyloid/hyalinosis are stromal.",
+"accepted": true,
+"url": "https://www.sechenov.ru/upload/iblock/fa6/qk61nb3v74a71uvvjpklm0jgqswd1hx9/26materialy.pdf"
+},
+{
+"id": "pat_anat:107",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Kazan text: fatty liver called \"goose liver\".",
+"accepted": true,
+"url": "https://kpfu.ru//staff_files/F_971557549/Obschaya_patologicheskaya_anatomiya_dlya_prepodavatelej.pdf"
+},
+{
+"id": "pat_anat:108",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Rostov GMU: nephrotic syndrome is clinical equivalent of tubular hyaline-droplet/hydropic changes.",
+"accepted": true,
+"url": "https://dotest.rostgmu.ru/mod/resource/view.php?id=17566"
+},
+{
+"id": "pat_anat:109",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Kazan text: hydropic/ballooning hepatocyte degeneration in viral hepatitis.",
+"accepted": true,
+"url": "https://kpfu.ru//staff_files/F_971557549/Obschaya_patologicheskaya_anatomiya_dlya_prepodavatelej.pdf"
+},
+{
+"id": "pat_anat:110",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Quote concerns parenchymal dystrophies generally (reduced cell function), not fatty dystrophy specifically.",
+"accepted": false,
+"url": "https://new.skma.edu.kz/uploads/%D0%9A%D0%B0%D1%84%D0%B5%D0%B4%D1%80%D1%8B/%D0%9A%D0%B0%D1%84%D0%B5%D0%B4%D1%80%D0%B0%20%D0%9F%D0%B0%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8%20%D0%B8%20%D1%81%D1%83%D0%B4%D0%B5%D0%B1%D0%BD%D0%BE%D0%B9%20%D0%BC%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D0%BD%D1%8B/%D0%A3%D0%9C%D0%9A%D0%94/%D0%91%D0%B0%D0%BA%D0%B0%D0%BB%D0%B0%D0%B2%D1%80%D0%B8%D0%B0%D1%82/%D0%9B%D0%95%D0%9A%D0%A6%D0%98%D0%98%202025-2026/%D0%9B%D0%9A%20%D0%9E%D0%B1%D1%89%D0%B0%D1%8F%20%D0%BF%D0%B0%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20(%D0%BF%D0%B0%D1%82%20%D0%B0%D0%BD%D0%B0%D1%82)%206%D0%9210117%20%D0%A1%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%203%D0%BA.pdf"
+},
+{
+"id": "pat_anat:111",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Quote gives mechanisms for myocardial fatty dystrophy only; applied to parenchymal dystrophy in general; decomposition chosen by elimination.",
+"accepted": false,
+"url": "https://www.sechenov.ru/upload/iblock/fa6/qk61nb3v74a71uvvjpklm0jgqswd1hx9/26materialy.pdf"
+},
+{
+"id": "pat_anat:114",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Sechenov slide list pairs fatty dystrophy with Sudan III; other pairings (hyaline-droplet, hydropic with Sudan) incorrect.",
+"accepted": true,
+"url": "https://www.sechenov.ru/upload/iblock/fa6/qk61nb3v74a71uvvjpklm0jgqswd1hx9/26materialy.pdf"
+},
+{
+"id": "pat_anat:115",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Rostov GMU: liver cut surface yellow due to neutral fat in hepatocytes; matches 'sarg'ish'.",
+"accepted": true,
+"url": "https://dotest.rostgmu.ru/mod/resource/view.php?id=17566"
+},
+{
+"id": "pat_anat:117",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "PMC review: Anitschkow lipid infiltration theory, cholesterol deposition in vessel wall; infiltration is the mechanism.",
+"accepted": true,
+"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13447202/"
+},
+{
+"id": "pat_anat:118",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Slide 'Lipoidoz aorty' labelled Sudan III but elsewhere 'H&E; Sudan III'; inference that Sudan detects cholesterol, not stated.",
+"accepted": false,
+"url": "https://www.sechenov.ru/upload/iblock/fa6/qk61nb3v74a71uvvjpklm0jgqswd1hx9/26materialy.pdf"
+},
+{
+"id": "pat_anat:120",
+"claimed": 2,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Wells: Zenker waxy degeneration of striated muscle in typhoid; rectus abdominis and 'necrosis' not stated; answer correct by standard knowledge.",
+"accepted": false,
+"url": "https://pdfs.semanticscholar.org/a75b/07306c8d1f219604b4652e116fba1614e9c1.pdf"
+},
+{
+"id": "pat_anat:121",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "PMC: dry gangrene affects lower extremities (toes, feet).",
+"accepted": true,
+"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5987754/"
+},
+{
+"id": "pat_anat:122",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Non-medical college notes list wet gangrene sites incl. bowel; only bowel among options.",
+"accepted": false,
+"url": "https://siesascs.edu.in/docs/notes/General%20Pathology%20-Gangrene_83182.pdf"
+},
+{
+"id": "pat_anat:123",
+"claimed": 1,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source: hyperemia, hemorrhages, cellular infiltrates; leukocyte = synonym leap; hemorrhage (erythrocytes) option also partially supported.",
+"accepted": false,
+"url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_pat_anat/plany_PZ/1_4.pdf"
+},
+{
+"id": "pat_anat:124",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "RNIMU: zone of demarcation inflammation surrounds necrosis zone.",
+"accepted": true,
+"url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_pat_anat/plany_PZ/1_4.pdf"
+},
+{
+"id": "pat_anat:128",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "NovSU: morphological types of necrosis include bedsore (prolezhen).",
+"accepted": true,
+"url": "https://portal.novsu.ru/file/2121032"
+},
+{
+"id": "pat_anat:129",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Poltava lecture: vascular necrosis is called infarct.",
+"accepted": true,
+"url": "https://path-anatomy.pdmu.edu.ua/educational/bachelors/paramedic/lecture/oc/nekroz-osnovi-tanatologiyi-educational-bachelors-lecture-oc-v8ad"
+},
+{
+"id": "pat_anat:131",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Orenburg GMU: paranecrosis - dystrophies of reversible character.",
+"accepted": true,
+"url": "https://www.orgma.ru/sveden/education/Metod_Patologicheskaya_anatomiya_Sudebno_medicinskaya_e'kspertiza-002.doc"
+},
+{
+"id": "pat_anat:132",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Orenburg GMU etiological classification includes toxic necrosis; other options not etiological.",
+"accepted": true,
+"url": "https://www.orgma.ru/sveden/education/Metod_Patologicheskaya_anatomiya_Sudebno_medicinskaya_e'kspertiza-002.doc"
+},
+{
+"id": "pat_anat:133",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "NovSU: indirect necroses = allergic, vascular, trophoneurotic; toxic/traumatic are direct.",
+"accepted": true,
+"url": "https://portal.novsu.ru/file/2121032"
+},
+{
+"id": "pat_anat:134",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Poltava lecture lists coagulative necrosis among clinico-morphological forms; others are etiological.",
+"accepted": true,
+"url": "https://path-anatomy.pdmu.edu.ua/educational/bachelors/paramedic/lecture/oc/nekroz-osnovi-tanatologiyi-educational-bachelors-lecture-oc-v8ad"
+},
+{
+"id": "pat_anat:135",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Poltava: gangrene classified dry and wet; only 'quruq' matches.",
+"accepted": true,
+"url": "https://path-anatomy.pdmu.edu.ua/educational/bachelors/paramedic/lecture/oc/nekroz-osnovi-tanatologiyi-educational-bachelors-lecture-oc-v8ad"
+},
+{
+"id": "pat_anat:136",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Poltava: gangrene is necrosis of tissues contacting external environment.",
+"accepted": true,
+"url": "https://path-anatomy.pdmu.edu.ua/educational/bachelors/paramedic/lecture/oc/nekroz-osnovi-tanatologiyi-educational-bachelors-lecture-oc-v8ad"
+},
+{
+"id": "pat_anat:137",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "BSMU: primary TB - sensitization and allergy, HRT reactions; only sensitization option fits.",
+"accepted": true,
+"url": "https://www.bsmu.by/upload/docs/vypusknik/internatura/2021/12-21/1-12/present/2-zn-bragina.pdf"
+},
+{
+"id": "pat_anat:138",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source: exudative-necrotic changes in primary TB generally, not progression; necrosis->alteration synonym leap.",
+"accepted": false,
+"url": "https://www.bsmu.by/upload/docs/vypusknik/internatura/2021/12-21/1-12/present/2-zn-bragina.pdf"
+},
+{
+"id": "pat_anat:139",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "BSMU: primary complex triad primary affect + lymphangitis + lymphadenitis; only option with triad.",
+"accepted": true,
+"url": "https://www.bsmu.by/upload/docs/vypusknik/internatura/2021/12-21/1-12/present/2-zn-bragina.pdf"
+},
+{
+"id": "pat_anat:140",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "BSMU: subpleural focus, right, segments III, VIII, IX, X.",
+"accepted": true,
+"url": "https://www.bsmu.by/upload/docs/vypusknik/internatura/2021/12-21/1-12/present/2-zn-bragina.pdf"
+},
+{
+"id": "pat_anat:141",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "BSMU: basis of primary TB is primary tuberculous complex.",
+"accepted": true,
+"url": "https://www.bsmu.by/upload/docs/vypusknik/internatura/2021/12-21/1-12/present/2-zn-bragina.pdf"
+},
+{
+"id": "pat_anat:142",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "BSMU: main types of primary complex - pulmonary and intestinal.",
+"accepted": true,
+"url": "https://www.bsmu.by/upload/docs/vypusknik/internatura/2021/12-21/1-12/present/2-zn-bragina.pdf"
+},
+{
+"id": "pat_anat:143",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "BSMU Strukov classification: primary, hematogenous, secondary TB; others are foci names.",
+"accepted": true,
+"url": "https://www.bsmu.by/upload/docs/vypusknik/internatura/2021/12-21/1-12/present/2-zn-bragina.pdf"
+},
+{
+"id": "pat_anat:144",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Poltava: lymph node component - granulomas, caseation necrosis.",
+"accepted": true,
+"url": "https://path-anatomy.pdmu.edu.ua/educational/forenger-students/masters/medicine/lectures/oc/tuberculosis"
+},
+{
+"id": "pat_anat:145",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "BSMU: progression of primary complex - hematogenous (2.1), lymphogenous; bronchogenic not listed.",
+"accepted": true,
+"url": "https://www.bsmu.by/upload/docs/vypusknik/internatura/2021/12-21/1-12/present/2-zn-bragina.pdf"
+},
+{
+"id": "pat_anat:146",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "RNIMU: healed primary affect - connective tissue capsule, caseous necrosis with petrification.",
+"accepted": true,
+"url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_pat_anat/plany_PZ/2_13.pdf"
+},
+{
+"id": "pat_anat:147",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "BSMU: healed affect in lungs - Ghon focus.",
+"accepted": true,
+"url": "https://www.bsmu.by/upload/docs/vypusknik/internatura/2021/12-21/1-12/present/2-zn-bragina.pdf"
+},
+{
+"id": "pat_anat:149",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "MSD: acute coronary syndromes (unstable angina, myocardial infarction) are IHD manifestations.",
+"accepted": true,
+"url": "https://www.msdmanuals.com/ru/professional/нарушения-сердечно-сосудистой-системы/ишемическая-болезнь-сердца/обзор-ишемической-болезни-сердца-overview-of-coronary-artery-disease"
+},
+{
+"id": "pat_anat:151",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Medical encyclopedia (academic.ru mirror): most IHD patients die of ventricular fibrillation.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/enc_medicine/13050/%D0%98%D1%88%D0%B5%D0%BC%D0%B8%CC%81%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F"
+},
+{
+"id": "pat_anat:154",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "RNIMU pathology lecture plan: angiogenic (vascular) necroses = infarcts.",
+"accepted": true,
+"url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_pat_anat/plany_PZ/1_4.pdf"
+},
+{
+"id": "pat_anat:157",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Merck: ventricular aneurysms cause mural thrombosis with systemic embolism; systemic = greater circulation.",
+"accepted": true,
+"url": "https://www.merckmanuals.com/professional/cardiovascular-disorders/coronary-artery-disease/complications-of-acute-coronary-syndromes"
+},
+{
+"id": "pat_anat:161",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Merck: transmural infarcts involve whole myocardial thickness.",
+"accepted": true,
+"url": "https://www.merckmanuals.com/professional/cardiovascular-disorders/coronary-artery-disease/overview-of-acute-coronary-syndromes-acs"
+},
+{
+"id": "pat_anat:162",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "PubMed abstract: true LV aneurysm wall replaced by fibrous tissue; histology showed scar tissue.",
+"accepted": true,
+"url": "https://europepmc.org/abstract/MED/12184036"
+},
+{
+"id": "pat_anat:165",
+"claimed": 3,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source says MI is acute IHD; question wording 'leads to acute IHD' is garbled.",
+"accepted": false,
+"url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_pat_anat/plany_PZ/2_1.pdf"
+},
+{
+"id": "pat_anat:168",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Merck: ACS (incl. MI) usually results from acute coronary artery obstruction.",
+"accepted": true,
+"url": "https://www.merckmanuals.com/professional/cardiovascular-disorders/coronary-artery-disease/overview-of-acute-coronary-syndromes-acs"
+},
+{
+"id": "pat_anat:169",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Merck: free wall rupture almost always fatal.",
+"accepted": true,
+"url": "https://www.merckmanuals.com/professional/cardiovascular-disorders/coronary-artery-disease/complications-of-acute-coronary-syndromes"
+},
+{
+"id": "pat_anat:171",
+"claimed": 2,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source mentions substitution complications (LV aneurysm), and regenerative hypertrophy in infarct healing; not explicit scar=substitution.",
+"accepted": false,
+"url": "https://rsmu.ru/fileadmin/templates/DOC/Faculties/PF/Dept_pat_anat/plany_PZ/1_12.pdf"
+},
+{
+"id": "pat_anat:172",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Abstract: IHC uses antigen-antibody interactions to detect proteins.",
+"accepted": true,
+"url": "https://europepmc.org/abstract/MED/35483927"
+},
+{
+"id": "pat_anat:173",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "PMC article: Ki-67 proliferation marker, BCL-2 anti-apoptotic protein, used to estimate growth and apoptosis.",
+"accepted": true,
+"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11510083/"
+},
+{
+"id": "pat_anat:174",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Breast SRCC case defines carcinoma of signet cells; 'finding signet cells in mucosal biopsy = malignant' is inferred.",
+"accepted": false,
+"url": "https://europepmc.org/abstract/MED/39532332"
+},
+{
+"id": "pat_anat:176",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "PMC review: HTLV-1 is etiological agent of adult T-cell leukemia/lymphoma; other options non-viral.",
+"accepted": true,
+"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13465464/"
+},
+{
+"id": "pat_anat:179",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Journal lecture: thesaurismoses with hereditary lysosomal enzyme defect; hereditary enzymopathies grouped as storage diseases.",
+"accepted": true,
+"url": "https://umedp.ru/upload/iblock/519/Gorbach.pdf"
+},
+{
+"id": "pat_anat:181",
+"claimed": 1,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "CDC confirms erythematous sandpaper rash and circumoral pallor; partial match to option wording.",
+"accepted": false,
+"url": "https://www.cdc.gov/group-a-strep/hcp/clinical-guidance/scarlet-fever.html"
+},
+{
+"id": "pat_anat:182",
+"claimed": 1,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Ruwiki mirror; needs sepsis=meningococcemia leap; option 3 (meningoencephalitis, septicemia) partly defensible.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/ruwiki/1847518"
+},
+{
+"id": "pat_anat:183",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Ruwiki mirror supports ependymatitis and hydrocephalus; quote stitched with omissions; partial match.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/ruwiki/1847518"
+},
+{
+"id": "pat_anat:184",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Ruwiki mirror: diphtheritic toxic myocarditis, interstitial form, myocarditic cardiosclerosis in survivors.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/ruwiki/1847518"
+},
+{
+"id": "pat_anat:185",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Radiopaedia: primary TB seen in patients not previously exposed to M. tuberculosis.",
+"accepted": true,
+"url": "https://radiopaedia.org/articles/primary-pulmonary-tuberculosis"
+},
+{
+"id": "pat_anat:186",
+"claimed": 2,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "academic.ru general primary complex definition (affect, lymphangitis, lymphadenitis); affect=caseous focus is a leap.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/enc_medicine/22889/%D0%9F%D0%B5%D1%80%D0%B2%D0%B8%D1%87%D0%BD%D1%8B%D0%B9"
+},
+{
+"id": "pat_anat:187",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Ruwiki mirror: Ghon focus heals into capsule where bone tissue forms.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/ruwiki/1845466"
+},
+{
+"id": "pat_anat:191",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "MSD: Mallory (alcoholic hyaline) bodies in alcohol-related liver disease.",
+"accepted": true,
+"url": "https://www.msdmanuals.com/professional/hepatic-and-biliary-disorders/alcohol-related-liver-disease/alcohol-related-liver-disease"
+},
+{
+"id": "pat_anat:193",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Ruwiki mirror: hyaline-droplet dystrophy = protein droplets stained by acidic dyes in parenchymal cells.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/ruwiki/1846943"
+},
+{
+"id": "pat_anat:194",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Ruwiki mirror: proliferative inflammation, infiltrate mainly lymphocytes and macrophages.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/ruwiki/1847521"
+},
+{
+"id": "pat_anat:195",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Source defines specific granulomas, applied to inflammation; 'granulomatous' arguably defensible.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/ruwiki/1847521"
+},
+{
+"id": "pat_anat:196",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "BSE (academic.ru mirror): restitution = complete regeneration with equivalent tissue.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/bse/127277/%D0%A0%D0%B5%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%86%D0%B8%D1%8F"
+},
+{
+"id": "pat_anat:197",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Medical dictionary (academic.ru): diphtheritic inflammation, deep necrosis, hard-to-remove films.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/medic2/9951"
+},
+{
+"id": "pat_anat:198",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Ruwiki mirror: venous hyperemia = impaired outflow and retention of venous blood.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/ruwiki/1836506"
+},
+{
+"id": "pat_anat:199",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Radiopaedia lists nutmeg liver among CT findings of Budd-Chiari; other options unrelated.",
+"accepted": true,
+"url": "https://radiopaedia.org/articles/budd-chiari-syndrome"
+},
+{
+"id": "pat_anat:200",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Ruwiki mirror: local venous congestion due to impaired outflow via specific veins.",
+"accepted": false,
+"url": "https://dic.academic.ru/dic.nsf/ruwiki/1836506"
+},
+{
+"id": "pat_anat:201",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Nucleoproteins = nucleic acid (DNP/RNP) + protein complexes; gufo.me encyclopedia mirror.",
+"accepted": false,
+"url": "https://gufo.me/dict/biology/%D0%BD%D1%83%D0%BA%D0%BB%D0%B5%D0%BE%D0%BF%D1%80%D0%BE%D1%82%D0%B5%D0%B8%D0%B4%D1%8B"
+},
+{
+"id": "pat_anat:202",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Metastatic calcification arises from hypercalcemia; gufo.me mirror.",
+"accepted": false,
+"url": "https://gufo.me/dict/medical_encyclopedia/%D0%9A%D0%B0%D0%BB%D1%8C%D1%86%D0%B8%D0%BD%D0%BE%D0%B7"
+},
+{
+"id": "pat_anat:204",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "WHO: noma is gangrenous disease of mouth/face in malnourished children; no other option fits.",
+"accepted": true,
+"url": "https://www.who.int/news-room/fact-sheets/detail/noma"
+},
+{
+"id": "pat_anat:207",
+"claimed": 2,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Source says splenic infarcts white wedge-shaped; question says 'necrosis', wedge-to-triangle synonym leap; gufo.me mirror.",
+"accepted": false,
+"url": "https://gufo.me/dict/medical_encyclopedia/%D0%98%D0%BD%D1%84%D0%B0%D1%80%D0%BA%D1%82"
+},
+{
+"id": "pat_anat:208",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Cyst forms at site of colliquative-necrosis infarct (brain); gufo.me mirror.",
+"accepted": false,
+"url": "https://gufo.me/dict/medical_encyclopedia/%D0%98%D0%BD%D1%84%D0%B0%D1%80%D0%BA%D1%82"
+},
+{
+"id": "pat_anat:211",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "weak",
+"why": "Source states earliest glycogen loss by electron microscopy, not histochemical method; gufo.me mirror.",
+"accepted": false,
+"url": "https://gufo.me/dict/medical_encyclopedia/%D0%98%D0%BD%D1%84%D0%B0%D1%80%D0%BA%D1%82_%D0%BC%D0%B8%D0%BE%D0%BA%D0%B0%D1%80%D0%B4%D0%B0"
+},
+{
+"id": "pat_anat:212",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Paper discusses disuse atrophy after fracture immobilization; 'dysfunctional' = disuse is a terminology mapping.",
+"accepted": false,
+"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9745468/"
+},
+{
+"id": "pat_anat:213",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "WebPath: hypertensive benign nephrosclerosis causes ischemic atrophy (insufficient blood supply) of kidney.",
+"accepted": true,
+"url": "https://www.tau.ac.il/medicine/tau-only/webpath/renahtml/renal033.htm"
+},
+{
+"id": "pat_anat:215",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "OrGMU lecture: BPH obstructs urine outflow causing work hypertrophy of bladder wall smooth muscle.",
+"accepted": true,
+"url": "https://ipo.orgma.ru/files/kafedry/kafedra-patologicheskoy-anatomii/info/PF/pat_anatomiya/2_kurs/педиатрический факультет_2курс_патологичнская анатомия_ КПР_лекция.docx"
+},
+{
+"id": "pat_anat:216",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Lecture: regenerative hypertrophy in surviving myocardium after myocardial infarction.",
+"accepted": true,
+"url": "https://ipo.orgma.ru/files/kafedry/kafedra-patologicheskoy-anatomii/info/PF/pat_anatomiya/2_kurs/педиатрический факультет_2курс_патологичнская анатомия_ КПР_лекция.docx"
+},
+{
+"id": "pat_anat:217",
+"claimed": 3,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Lecture gives general rule (growths in chronic inflammation); nasal polyps not named, applied by author.",
+"accepted": false,
+"url": "https://ipo.orgma.ru/files/kafedry/kafedra-patologicheskoy-anatomii/info/PF/pat_anatomiya/2_kurs/педиатрический факультет_2курс_патологичнская анатомия_ КПР_лекция.docx"
+},
+{
+"id": "pat_anat:218",
+"claimed": 1,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Increased lobule number implies hyperplasia by definition; epithelial cell enlargement also noted, hypertrophy arguable.",
+"accepted": false,
+"url": "https://www.pathologyoutlines.com/topic/breastnormal.html"
+},
+{
+"id": "pat_anat:219",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Lecture: compensatory myocardial hypertrophy in arterial hypertension.",
+"accepted": true,
+"url": "https://ipo.orgma.ru/files/kafedry/kafedra-patologicheskoy-anatomii/info/PF/pat_anatomiya/2_kurs/педиатрический факультет_2курс_патологичнская анатомия_ КПР_лекция.docx"
+},
+{
+"id": "pat_anat:220",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Lecture: hydronephrosis is pressure atrophy; organ enlarged by fluid while parenchyma reduced.",
+"accepted": true,
+"url": "https://ipo.orgma.ru/files/kafedry/kafedra-patologicheskoy-anatomii/info/PF/pat_anatomiya/2_kurs/педиатрический факультет_2курс_патологичнская анатомия_ КПР_лекция.docx"
+},
+{
+"id": "pat_anat:221",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Lecture: endometrial hyperplasia from increased estrogen stimulation.",
+"accepted": true,
+"url": "https://ipo.orgma.ru/files/kafedry/kafedra-patologicheskoy-anatomii/info/PF/pat_anatomiya/2_kurs/педиатрический факультет_2курс_патологичнская анатомия_ КПР_лекция.docx"
+},
+{
+"id": "pat_anat:222",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Lecture: with maturation collagen fibers increase while vessels decrease.",
+"accepted": true,
+"url": "https://ipo.orgma.ru/files/kafedry/kafedra-patologicheskoy-anatomii/info/PF/pat_anatomiya/2_kurs/педиатрический факультет_2курс_патологичнская анатомия_ КПР_лекция.docx"
+},
+{
+"id": "pat_anat:223",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "StatPearls: activated macrophages transform into epithelioid cells.",
+"accepted": true,
+"url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK554586/"
+},
+{
+"id": "pat_anat:224",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Am J Pathol: eosinophils degrade mediators (histamine, SRS-A, PAF) at hypersensitivity sites.",
+"accepted": true,
+"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2032558/"
+},
+{
+"id": "pat_anat:225",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "StatPearls: toluidine blue stains mast cell granules metachromatically.",
+"accepted": true,
+"url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK499904/"
+},
+{
+"id": "pat_anat:226",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "StatPearls: plasma cells are differentiated B lymphocytes.",
+"accepted": true,
+"url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK556082/"
+},
+{
+"id": "pat_anat:227",
+"claimed": 1,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Sarcoidosis-specific example of cytokine-driven macrophage activation, generalized; leukotrienes also chemotactic for macrophages.",
+"accepted": false,
+"url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK482315/"
+},
+{
+"id": "pat_anat:231",
+"claimed": 2,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "IARC: aflatoxin causes liver cancer, so stomach pairing false; exception format, nitrosamine-stomach pairing not in source.",
+"accepted": false,
+"url": "https://monographs.iarc.who.int/wp-content/uploads/2019/07/Cogliano_2011_JNCI_Preventable_Exposures.pdf"
+},
+{
+"id": "pat_anat:233",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Review: influenza-induced immunosuppression allows bacterial superinfection.",
+"accepted": true,
+"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5481322/"
+},
+{
+"id": "pat_anat:235",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source reports epithelial vacuolization; mapping to 'hydropic dystrophy' is a terminology leap.",
+"accepted": false,
+"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2605683"
+},
+{
+"id": "pat_anat:236",
+"claimed": 0,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "'Short-lasting changes' implies but does not state complete regeneration in mild form.",
+"accepted": false,
+"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2605683"
+},
+{
+"id": "pat_anat:237",
+"claimed": 1,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "StatPearls: HIV is a retrovirus with single-stranded RNA genome.",
+"accepted": true,
+"url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK568679/"
+},
+{
+"id": "pat_anat:238",
+"claimed": 2,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Cohort paper: AIDS opportunistic infections most frequent cause of death; other options implausible.",
+"accepted": true,
+"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3157754/"
+},
+{
+"id": "pat_anat:239",
+"claimed": 3,
+"verdict": "INFERRED",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "Source says HIV immunosuppression causes OIs; equating to 'secondary immunodeficiency' is a terminology mapping.",
+"accepted": false,
+"url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK568679/"
+},
+{
+"id": "pat_anat:240",
+"claimed": 3,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "StatPearls: immunosuppression causes opportunistic infections and HIV-associated malignancies.",
+"accepted": true,
+"url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK568679/"
+},
+{
+"id": "pat_anat:241",
+"claimed": 0,
+"verdict": "DIRECT",
+"quote_ok": true,
+"source_quality": "strong",
+"why": "BSMU lecture: primary affect is subpleural focus, usually right S3, S8, S9, S10.",
+"accepted": true,
+"url": "https://www.bsmu.by/upload/docs/vypusknik/internatura/2021/12-21/1-12/present/2-zn-bragina.pdf"
+}
+]
