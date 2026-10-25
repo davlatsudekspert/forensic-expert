@@ -97,6 +97,7 @@ import '../features/qa/presentation/qa_verify_screen.dart';
 import '../features/referral/presentation/referral_screen.dart';
 import '../features/shell/presentation/app_shell.dart';
 import '../features/support/presentation/support_screens.dart';
+import '../features/tools/presentation/gcms_screen.dart';
 import '../features/tools/presentation/module_hub_screen.dart';
 import '../features/tools/presentation/tool_detail_screen.dart';
 import '../features/tools/presentation/tools_screen.dart';
@@ -706,6 +707,7 @@ final routerProvider = Provider<GoRouter>((ref) {
                     builder: (c, s) =>
                         ToolDetailScreen(toolId: s.pathParameters['id']!),
                   ),
+                  GoRoute(path: 'gc-ms', builder: (c, s) => const GcMsScreen()),
                   GoRoute(
                     path: 'casebook',
                     builder: (c, s) =>

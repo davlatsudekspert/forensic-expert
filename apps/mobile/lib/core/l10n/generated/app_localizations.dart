@@ -19760,6 +19760,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{title}, PDF p. {page}'**
   String assessmentBookPage(String title, int page);
+
+  /// Tools entry and screen title: GC-MS schematic.
+  ///
+  /// In en, this message translates to:
+  /// **'GC-MS instrument schematic'**
+  String get gcmsTitle;
+
+  /// Tools entry hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Gas chromatograph–mass spectrometer: parts and working principle'**
+  String get gcmsEntryHint;
+
+  /// Status chip: expert review pending.
+  ///
+  /// In en, this message translates to:
+  /// **'Expert review pending'**
+  String get gcmsReviewPending;
+
+  /// Collapsible panel title.
+  ///
+  /// In en, this message translates to:
+  /// **'Parts and working principle'**
+  String get gcmsPanelTitle;
+
+  /// Heading: working principle.
+  ///
+  /// In en, this message translates to:
+  /// **'Working principle'**
+  String get gcmsPrinciple;
+
+  /// Heading: result.
+  ///
+  /// In en, this message translates to:
+  /// **'Result'**
+  String get gcmsResult;
+
+  /// Heading: where the instrument is used (sourced sentence).
+  ///
+  /// In en, this message translates to:
+  /// **'Use'**
+  String get gcmsUsedFor;
+
+  /// Source line under the sourced sentence.
+  ///
+  /// In en, this message translates to:
+  /// **'Source: {source}'**
+  String gcmsSourceLine(String source);
+
+  /// Hint on the picture.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap to enlarge'**
+  String get gcmsZoomHint;
+
+  /// Close the full-screen picture.
+  ///
+  /// In en, this message translates to:
+  /// **'Close'**
+  String get gcmsClose;
+
+  /// Shown when the module data cannot be loaded.
+  ///
+  /// In en, this message translates to:
+  /// **'The GC-MS module could not be loaded.'**
+  String get gcmsUnavailable;
 }
 
 class _AppLocalizationsDelegate

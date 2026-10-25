@@ -11441,4 +11441,40 @@ class AppLocalizationsEn extends AppLocalizations {
   String assessmentBookPage(String title, int page) {
     return '$title, PDF p. $page';
   }
+
+  @override
+  String get gcmsTitle => 'GC-MS instrument schematic';
+
+  @override
+  String get gcmsEntryHint =>
+      'Gas chromatograph–mass spectrometer: parts and working principle';
+
+  @override
+  String get gcmsReviewPending => 'Expert review pending';
+
+  @override
+  String get gcmsPanelTitle => 'Parts and working principle';
+
+  @override
+  String get gcmsPrinciple => 'Working principle';
+
+  @override
+  String get gcmsResult => 'Result';
+
+  @override
+  String get gcmsUsedFor => 'Use';
+
+  @override
+  String gcmsSourceLine(String source) {
+    return 'Source: $source';
+  }
+
+  @override
+  String get gcmsZoomHint => 'Tap to enlarge';
+
+  @override
+  String get gcmsClose => 'Close';
+
+  @override
+  String get gcmsUnavailable => 'The GC-MS module could not be loaded.';
 }

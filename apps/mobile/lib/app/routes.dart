@@ -125,6 +125,7 @@ abstract final class Routes {
 
   /// «Ekspert ish daftari» — faqat qurilmada saqlanadigan shaxsiy yozuvlar.
   static const casebook = '/tools/casebook';
+  static const gcms = '/tools/gc-ms';
   static String casebookEntry(String id) =>
       '/tools/casebook/entry/${Uri.encodeComponent(id)}';
 

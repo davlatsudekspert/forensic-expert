@@ -11486,4 +11486,40 @@ class AppLocalizationsRu extends AppLocalizations {
   String assessmentBookPage(String title, int page) {
     return '$title, PDF, с. $page';
   }
+
+  @override
+  String get gcmsTitle => 'Схема GC-MS';
+
+  @override
+  String get gcmsEntryHint =>
+      'Газовый хромато-масс-спектрометр: узлы и принцип работы';
+
+  @override
+  String get gcmsReviewPending => 'Ожидает экспертной проверки';
+
+  @override
+  String get gcmsPanelTitle => 'Узлы и принцип работы';
+
+  @override
+  String get gcmsPrinciple => 'Принцип работы';
+
+  @override
+  String get gcmsResult => 'Результат';
+
+  @override
+  String get gcmsUsedFor => 'Применение';
+
+  @override
+  String gcmsSourceLine(String source) {
+    return 'Источник: $source';
+  }
+
+  @override
+  String get gcmsZoomHint => 'Нажмите, чтобы увеличить';
+
+  @override
+  String get gcmsClose => 'Закрыть';
+
+  @override
+  String get gcmsUnavailable => 'Не удалось загрузить модуль GC-MS.';
 }

@@ -1,0 +1,166 @@
+{
+ "schematic_key": "mass_spec_gc",
+ "alt_text": {
+  "uz": "GC-MS apparat sinfi — tashuvchi gaz ballon, avtonamunaoluvchili gaz xromatografi va termostatdagi kapillyar kolonka, ion manbai, kvadrupol mass-analizator, detektor, vakuum nasoslari va ma’lumotlar tizimi",
+  "ru": "Класс приборов ГХ-МС — баллон с газом-носителем, газовый хроматограф с автосэмплером и капиллярной колонкой в термостате, ионный источник, квадрупольный масс-анализатор, детектор, вакуумные насосы и система обработки данных",
+  "en": "GC-MS instrument class — carrier gas cylinder, gas chromatograph with autosampler and a capillary column in the oven, ion source, quadrupole mass analyser, detector, vacuum pumps and data system"
+ },
+ "not_a_photo_caption": {
+  "uz": "Sxematik tasvir — aniq model emas",
+  "ru": "Схематичное изображение — не фото конкретной модели",
+  "en": "Schematic illustration — not a photo of this exact model"
+ },
+ "not_a_photo_note": {
+  "uz": "LabGuide chizgan original umumiy sinf sxemasi. Ishlab chiqaruvchining haqiqiy apparat fotosurati emas; ko‘rsatilgan qismlar tamoyil darajasida va aniq modelning o‘ziga xos xususiyatlarini bildirmaydi.",
+  "ru": "Оригинальная схема класса приборов, нарисованная в LabGuide. Это не реальная фотография прибора производителя; узлы показаны на уровне принципа и не отражают особенностей конкретной модели.",
+  "en": "An original generic class schematic drawn by LabGuide. It is not a real photograph of the manufacturer’s instrument; parts are shown at principle level and do not represent model-specific features."
+ },
+ "parts": [
+  {
+   "n": 1,
+   "name": {
+    "uz": "Tashuvchi gaz ballon",
+    "ru": "Баллон с газом-носителем",
+    "en": "Carrier gas cylinder"
+   },
+   "function": {
+    "uz": "Inert gaz (odatda geliy) namunani kolonka bo‘ylab olib yuradi.",
+    "ru": "Инертный газ (обычно гелий) переносит пробу по колонке.",
+    "en": "An inert gas (usually helium) carries the sample through the column."
+   }
+  },
+  {
+   "n": 2,
+   "name": {
+    "uz": "Avtonamunaoluvchi",
+    "ru": "Автосэмплер",
+    "en": "Autosampler"
+   },
+   "function": {
+    "uz": "Flakondan namunani shpris bilan olib, injektorga kiritadi.",
+    "ru": "Отбирает пробу из флакона шприцем и вводит её в инжектор.",
+    "en": "Takes the sample from a vial with a syringe and injects it."
+   }
+  },
+  {
+   "n": 3,
+   "name": {
+    "uz": "Injektor (bug‘lantirgich)",
+    "ru": "Инжектор (испаритель)",
+    "en": "Injector (inlet)"
+   },
+   "function": {
+    "uz": "Qizdirilgan kirish joyi: suyuq namuna bug‘lanib, gaz oqimiga qo‘shiladi.",
+    "ru": "Нагреваемый ввод: жидкая проба испаряется и попадает в поток газа.",
+    "en": "Heated inlet: the liquid sample vaporises into the gas stream."
+   }
+  },
+  {
+   "n": 4,
+   "name": {
+    "uz": "Termostat va kapillyar kolonka",
+    "ru": "Термостат и капиллярная колонка",
+    "en": "Oven and capillary column"
+   },
+   "function": {
+    "uz": "Harorat dasturi bo‘yicha qizdiriladi; moddalar kolonkada ajraladi.",
+    "ru": "Нагревается по температурной программе; вещества разделяются в колонке.",
+    "en": "Heated by a temperature programme; compounds separate in the column."
+   }
+  },
+  {
+   "n": 5,
+   "name": {
+    "uz": "Issiq uzatish liniyasi",
+    "ru": "Обогреваемая линия переноса",
+    "en": "Heated transfer line"
+   },
+   "function": {
+    "uz": "Ajralgan moddalarni kondensatsiyasiz mass-spektrometrga o‘tkazadi.",
+    "ru": "Переносит разделённые вещества в масс-спектрометр без конденсации.",
+    "en": "Carries separated compounds into the mass spectrometer without condensation."
+   }
+  },
+  {
+   "n": 6,
+   "name": {
+    "uz": "Ion manbai",
+    "ru": "Ионный источник",
+    "en": "Ion source"
+   },
+   "function": {
+    "uz": "Molekulalarni ionlaydi (GC-MS da ko‘pincha elektron zarbasi bilan), ionlar bo‘laklarga ajraladi.",
+    "ru": "Ионизирует молекулы (в ГХ-МС чаще электронным ударом) с образованием фрагментов.",
+    "en": "Ionises molecules (in GC-MS usually by electron ionisation), producing fragments."
+   }
+  },
+  {
+   "n": 7,
+   "name": {
+    "uz": "Mass-analizator (kvadrupol)",
+    "ru": "Масс-анализатор (квадруполь)",
+    "en": "Mass analyser (quadrupole)"
+   },
+   "function": {
+    "uz": "Elektr maydoni ionlarni m/z bo‘yicha ajratadi va navbat bilan o‘tkazadi.",
+    "ru": "Электрическое поле разделяет ионы по m/z и пропускает их по очереди.",
+    "en": "Electric fields sort ions by m/z and pass them through in turn."
+   }
+  },
+  {
+   "n": 8,
+   "name": {
+    "uz": "Detektor (elektron ko‘paytirgich)",
+    "ru": "Детектор (электронный умножитель)",
+    "en": "Detector (electron multiplier)"
+   },
+   "function": {
+    "uz": "Kelgan ionlarni kuchaytirilgan elektr signaliga aylantiradi.",
+    "ru": "Превращает приходящие ионы в усиленный электрический сигнал.",
+    "en": "Turns arriving ions into an amplified electrical signal."
+   }
+  },
+  {
+   "n": 9,
+   "name": {
+    "uz": "Vakuum nasoslari",
+    "ru": "Вакуумные насосы",
+    "en": "Vacuum pumps"
+   },
+   "function": {
+    "uz": "Turbomolekulyar va forvakuum nasoslari yuqori vakuum hosil qiladi — ionlar havo molekulalariga urilmaydi.",
+    "ru": "Турбомолекулярный и форвакуумный насосы создают высокий вакуум, чтобы ионы не сталкивались с молекулами воздуха.",
+    "en": "Turbomolecular and roughing pumps keep a high vacuum so ions do not collide with air molecules."
+   }
+  },
+  {
+   "n": 10,
+   "name": {
+    "uz": "Ma’lumotlar tizimi",
+    "ru": "Система обработки данных",
+    "en": "Data system"
+   },
+   "function": {
+    "uz": "Xromatogramma va spektrlarni yozadi, kutubxona bilan solishtiradi.",
+    "ru": "Записывает хроматограммы и спектры, сравнивает с библиотекой.",
+    "en": "Records chromatograms and spectra and compares them with a library."
+   }
+  }
+ ],
+ "principle": {
+  "uz": "Namuna injektorda bug‘lanadi, tashuvchi gaz (odatda geliy) uni termostatdagi kapillyar kolonkaga olib kiradi. Moddalar uchuvchanligi va kolonka bilan o‘zaro ta’siriga ko‘ra turli vaqtda chiqadi (ushlanish vaqti). Mass-spektrometrda ular ionlanadi, ionlar massa/zaryad nisbati (m/z) bo‘yicha ajratiladi va detektor qayd etadi.",
+  "ru": "Проба испаряется в инжекторе, газ-носитель (обычно гелий) переносит её в капиллярную колонку в термостате. Вещества выходят из колонки в разное время в зависимости от летучести и взаимодействия с колонкой (время удерживания). В масс-спектрометре они ионизируются, ионы разделяются по отношению массы к заряду (m/z) и регистрируются детектором.",
+  "en": "The sample is vaporised in the injector and a carrier gas (usually helium) carries it into a capillary column in the oven. Compounds leave the column at different times according to volatility and interaction with the column (retention time). In the mass spectrometer they are ionised, the ions are sorted by mass-to-charge ratio (m/z) and recorded by the detector."
+ },
+ "result": {
+  "uz": "Xromatogramma (signal — ushlanish vaqti bo‘yicha) va har cho‘qqining mass-spektri (m/z — nisbiy intensivlik); moddalar spektrlar kutubxonasi yoki standartlar bilan solishtirib aniqlanadi.",
+  "ru": "Хроматограмма (сигнал по времени удерживания) и масс-спектр каждого пика (m/z — относительная интенсивность); вещества идентифицируют сравнением с библиотекой спектров или стандартами.",
+  "en": "A chromatogram (signal against retention time) and a mass spectrum for each peak (m/z against relative intensity); compounds are identified against a spectral library or standards."
+ },
+ "status": "NEEDS_EXPERT: class-level textbook anatomy; not a specific manufacturer model",
+ "title": {
+  "uz": "Gaz xromatografi-mass-spektrometr (GC-MS)",
+  "ru": "Газовый хромато-масс-спектрометр (ГХ-МС)",
+  "en": "Gas chromatograph-mass spectrometer (GC-MS)"
+ }
+}

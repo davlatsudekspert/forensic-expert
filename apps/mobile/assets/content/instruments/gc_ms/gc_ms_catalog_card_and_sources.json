@@ -1,0 +1,102 @@
+{
+ "card": {
+  "id": "a3-tox-gc-ms",
+  "lab_direction": "toxicology",
+  "card_kind": "platform",
+  "name": {
+   "uz": "Gaz xromatografi-mass-spektrometr (GC-MS)",
+   "ru": "Газовый хромато-масс-спектрометр (ГХ-МС)",
+   "en": "Gas chromatograph-mass spectrometer (GC-MS)"
+  },
+  "instrument_vs_test_note": {
+   "uz": "Bu karta faqat apparat (platforma) haqida; unga alohida test yoki usul kartasi hozircha yo‘q.",
+   "ru": "Эта карточка описывает только прибор (платформу); отдельной карточки теста или метода для него пока нет.",
+   "en": "This card covers the instrument (platform) only; no separate test or method card exists for it yet."
+  },
+  "technology": {
+   "text": {
+    "uz": "Gaz xromatografi mass-spektrometr bilan ulangan: ion manbai, massa analizatori va detektordan iborat.",
+    "ru": "Газовый хроматограф, соединённый с масс-спектрометром: источник ионов, масс-анализатор и детектор.",
+    "en": "A gas chromatograph coupled to a mass spectrometer, which has an ion source, a mass analyser and a detector."
+   },
+   "sources": [
+    "a3-statpearls-ms"
+   ]
+  },
+  "principle": {
+   "text": {
+    "uz": "Namuna ionlanadi, ionlar massa/zaryad (m/z) nisbati bo‘yicha ajratiladi va detektor ularni o‘lchaydi; natija m/z va nisbiy intensivlik spektri sifatida ko‘rsatiladi.",
+    "ru": "Образец ионизируется, ионы разделяются по отношению массы к заряду (m/z) и регистрируются детектором; результат представляется спектром m/z и относительной интенсивности.",
+    "en": "The sample is ionised, ions are sorted by mass-to-charge ratio (m/z) and measured by a detector; the result is shown as a spectrum of m/z against relative intensity."
+   },
+   "sources": [
+    "a3-statpearls-ms"
+   ]
+  },
+  "specimens": [
+   {
+    "text": {
+     "uz": "Gaz xromatografiyasi uchun namuna uchuvchan bo‘lishi, ya’ni parchalanmasdan gaz fazasiga o‘ta olishi kerak; uchuvchanlik va termik barqarorlikni oshirish uchun hosilalash (derivatizatsiya) qo‘llanishi mumkin.",
+     "ru": "Для газовой хроматографии образец должен быть летучим, то есть переходить в газовую фазу без разложения; для повышения летучести и термостабильности может применяться дериватизация.",
+     "en": "For gas chromatography the analyte must be volatile, i.e. able to enter the gas phase without breaking down; derivatization may be used to raise volatility and thermal stability."
+    },
+    "sources": [
+     "a3-statpearls-ms"
+    ]
+   }
+  ],
+  "tasks": [
+   {
+    "text": {
+     "uz": "Sud-tibbiy toksikologiya va dori vositalarini aniqlashda qo‘llanadi; noma’lum modda qabul qilgan bemor namunasida tarkibni aniqlash misol qilib keltirilgan.",
+     "ru": "Применяется в судебной токсикологии и при определении лекарственных средств; в источнике приведён пример анализа образца пациента, принявшего неизвестное вещество.",
+     "en": "Used in forensic toxicology and drug testing; the source gives the example of analysing a patient sample after ingestion of an unknown compound."
+    },
+    "sources": [
+     "a3-statpearls-ms"
+    ]
+   }
+  ],
+  "limitations": [],
+  "qc_calibration_note": {
+   "text": {
+    "uz": "Nazorat (QC) qo‘llanmasa, spektrda namunaga tegishli bo‘lmagan cho‘qqilar paydo bo‘lishi mumkin; xromatografiyada to‘g‘ri o‘lchov vositalaridan foydalanish muhim. Manba ushbu bo‘limda kalibrlash tartibini bermaydi.",
+    "ru": "Без контроля качества в спектре могут появляться пики, не относящиеся к ионам образца; важно использовать правильные измерительные средства при хроматографии. Процедура калибровки в источнике не приводится.",
+    "en": "Without quality control, peaks that do not correspond to sample ions may appear in the spectrum; correct measuring tools matter during chromatography. The source gives no calibration procedure."
+   },
+   "sources": [
+    "a3-statpearls-ms"
+   ]
+  },
+  "preanalytic_analytic_errors": [],
+  "biosafety": {
+   "text": {
+    "uz": "Qurilmaning ba’zi qismlari qizib ketadi (kuyish xavfi), namunalar teri yoki nafas yo‘li orqali xavfli bo‘lishi mumkin; himoya ko‘zoynagi, uzun ishchi kiyim, yopiq poyabzal, xalat va qo‘lqop tavsiya etiladi.",
+    "ru": "Части прибора сильно нагреваются (риск ожогов), образцы могут быть опасны при контакте с кожей или вдыхании; рекомендуются защитные очки, закрытая обувь, длинный халат и перчатки.",
+    "en": "Parts of the apparatus get hot (burn risk) and samples may be hazardous by skin contact or inhalation; safety glasses, long trousers, closed shoes, a long lab coat and gloves are recommended."
+   },
+   "sources": [
+    "a3-statpearls-ms"
+   ]
+  },
+  "models": [],
+  "schematic": "mass_spec_gc",
+  "linked": [],
+  "sources": [
+   "a3-statpearls-ms"
+  ],
+  "audit_status": "NEEDS_REVIEW",
+  "expert_reviewed": false
+ },
+ "sources": [
+  {
+   "id": "a3-statpearls-ms",
+   "title": "StatPearls - Mass Spectrometer (Garg, Zubair)",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK589702/",
+   "doc_ref": "Last update 2024-11-22",
+   "accessed": "2026-10-24",
+   "type": "official_agency",
+   "publisher": "NCBI Bookshelf (NIH/NLM), StatPearls Publishing"
+  }
+ ]
+}

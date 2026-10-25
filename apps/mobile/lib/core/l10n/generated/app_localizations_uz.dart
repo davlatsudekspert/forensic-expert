@@ -11372,4 +11372,40 @@ class AppLocalizationsUz extends AppLocalizations {
   String assessmentBookPage(String title, int page) {
     return '$title, PDF $page-bet';
   }
+
+  @override
+  String get gcmsTitle => 'GC-MS apparat sxemasi';
+
+  @override
+  String get gcmsEntryHint =>
+      'Gaz xromatografi-mass-spektrometr: qismlar va ishlash tamoyili';
+
+  @override
+  String get gcmsReviewPending => 'Ekspert tekshiruvi kutilmoqda';
+
+  @override
+  String get gcmsPanelTitle => 'Qismlar va ishlash tamoyili';
+
+  @override
+  String get gcmsPrinciple => 'Ishlash tamoyili';
+
+  @override
+  String get gcmsResult => 'Natija';
+
+  @override
+  String get gcmsUsedFor => 'Qo‘llanilishi';
+
+  @override
+  String gcmsSourceLine(String source) {
+    return 'Manba: $source';
+  }
+
+  @override
+  String get gcmsZoomHint => 'Kattalashtirish uchun bosing';
+
+  @override
+  String get gcmsClose => 'Yopish';
+
+  @override
+  String get gcmsUnavailable => 'GC-MS modulini yuklab bo‘lmadi.';
 }
