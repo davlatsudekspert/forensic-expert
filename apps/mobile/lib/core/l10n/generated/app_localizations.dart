@@ -19898,6 +19898,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Source'**
   String get assessmentAnswerSourceLabel;
+
+  /// Small note under every literature-based answer.
+  ///
+  /// In en, this message translates to:
+  /// **'A short summary of the cited literature, for study and reference. Statutes and normative thresholds are given as in the textbook: check them against the official text. It does not replace an official expert conclusion or legal advice.'**
+  String get assessmentAnswerNote;
 }
 
 class _AppLocalizationsDelegate

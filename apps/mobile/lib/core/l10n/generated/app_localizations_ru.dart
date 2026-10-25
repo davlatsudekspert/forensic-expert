@@ -11562,4 +11562,8 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get assessmentAnswerSourceLabel => 'Источник';
+
+  @override
+  String get assessmentAnswerNote =>
+      'Краткое изложение указанной литературы для обучения и справки. Статьи законов и нормативные пороги приведены по учебнику: сверяйте с официальным текстом. Не заменяет официальное заключение эксперта или юридическую консультацию.';
 }

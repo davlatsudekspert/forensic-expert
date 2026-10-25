@@ -11517,4 +11517,8 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get assessmentAnswerSourceLabel => 'Source';
+
+  @override
+  String get assessmentAnswerNote =>
+      'A short summary of the cited literature, for study and reference. Statutes and normative thresholds are given as in the textbook: check them against the official text. It does not replace an official expert conclusion or legal advice.';
 }

@@ -849,6 +849,12 @@ class _OralAnswerView extends StatelessWidget {
             padding: const EdgeInsets.only(bottom: FeSpace.xs),
             child: _OralPointTile(number: i + 1, point: a.points[i]),
           ),
+        const SizedBox(height: FeSpace.xs),
+        Text(
+          l.assessmentAnswerNote,
+          key: const Key('assessment.answerNote'),
+          style: t.bodySmall?.copyWith(color: c.textSecondary),
+        ),
         if (a.gaps.isNotEmpty) ...[
           const SizedBox(height: FeSpace.xs),
           Text(

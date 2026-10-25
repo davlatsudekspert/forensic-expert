@@ -14533,5 +14533,7 @@
   "assessmentAnswerUzOnly": "The answer is in Uzbek; translation is coming",
   "@assessmentAnswerUzOnly": {"description": "Note under an answer shown in Uzbek for ru/en users."},
   "assessmentAnswerSourceLabel": "Source",
-  "@assessmentAnswerSourceLabel": {"description": "Heading of the source sheet of an answer point."}
+  "@assessmentAnswerSourceLabel": {"description": "Heading of the source sheet of an answer point."},
+  "assessmentAnswerNote": "A short summary of the cited literature, for study and reference. Statutes and normative thresholds are given as in the textbook: check them against the official text. It does not replace an official expert conclusion or legal advice.",
+  "@assessmentAnswerNote": {"description": "Small note under every literature-based answer."}
 }

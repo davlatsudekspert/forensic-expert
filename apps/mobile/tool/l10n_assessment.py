@@ -240,6 +240,11 @@ k('assessmentAnswerUzOnly', 'Note under an answer shown in Uzbek for ru/en users
   'Ответ на узбекском языке; перевод появится позже',
   'Javob o‘zbek tilida; tarjimasi keyin qo‘shiladi')
 
+k('assessmentAnswerNote', 'Small note under every literature-based answer.',
+  'A short summary of the cited literature, for study and reference. Statutes and normative thresholds are given as in the textbook: check them against the official text. It does not replace an official expert conclusion or legal advice.',
+  'Краткое изложение указанной литературы для обучения и справки. Статьи законов и нормативные пороги приведены по учебнику: сверяйте с официальным текстом. Не заменяет официальное заключение эксперта или юридическую консультацию.',
+  'Ko‘rsatilgan adabiyotdan qisqa bayon (o‘quv va ma’lumotnoma uchun). Qonun moddalari va normativ chegaralar «Darslikka ko‘ra» beriladi: rasmiy matn bilan tekshiring. Rasmiy ekspert xulosasi yoki huquqiy maslahat o‘rnini bosmaydi.')
+
 for idx, code in enumerate(["en", "ru", "uz"]):
     p = f"{D}/app_{code}.arb"
     text = open(p, encoding="utf-8").read()

@@ -11449,4 +11449,8 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get assessmentAnswerSourceLabel => 'Manba';
+
+  @override
+  String get assessmentAnswerNote =>
+      'Ko‘rsatilgan adabiyotdan qisqa bayon (o‘quv va ma’lumotnoma uchun). Qonun moddalari va normativ chegaralar «Darslikka ko‘ra» beriladi: rasmiy matn bilan tekshiring. Rasmiy ekspert xulosasi yoki huquqiy maslahat o‘rnini bosmaydi.';
 }

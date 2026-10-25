@@ -207,6 +207,7 @@ void main() {
       initialLocation: Routes.assessmentQuestion('pat_anat', yes),
     );
     expect(_key('assessment.answer'), findsOne);
+    expect(_key('assessment.answerNote'), findsOne);
     expect(find.text('Javob (adabiyot asosida)'), findsOne);
     expect(_key('assessment.answerSoon'), findsNothing);
     // Birinchi bandning manbasi — iqtibos bilan alohida oynada.
