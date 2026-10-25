@@ -1,7 +1,8 @@
 import 'package:flutter/foundation.dart';
 
 /// «Bilim va malakani baholash»: malaka toifalari uchun rasmiy og‘zaki imtihon
-/// savollari ro‘yxati. Faqat savollar — javoblar manbada yo‘q va to‘qilmaydi.
+/// savollari ro‘yxati. Javoblar rasmiy manbada yo‘q: ular alohida, adabiyot
+/// (kitob, bet, iqtibos) asosida yoziladi va to‘qilmaydi.
 /// Savollar rasmiy hujjatning o‘zbekcha matni (tarjima qilinmaydi).
 @immutable
 class AssessmentSource {
@@ -198,6 +199,102 @@ class AssessmentBundle {
     }
     return null;
   }
+}
+
+/// Og‘zaki javobda ishlatilgan adabiyot (kitob yoki veb-manba).
+@immutable
+class OralSource {
+  const OralSource({required this.kind, required this.title, this.url = ''});
+
+  factory OralSource.fromJson(Map<String, Object?> j) =>
+      OralSource(kind: _s(j['k']), title: _s(j['t']), url: _s(j['u']));
+
+  /// `book` yoki `web`.
+  final String kind;
+  final String title;
+  final String url;
+}
+
+/// Javobning bitta bandi: o‘zbekcha matn + asos (adabiyot, bet, iqtibos).
+@immutable
+class OralPoint {
+  const OralPoint({
+    required this.text,
+    required this.source,
+    required this.quote,
+    this.page = 0,
+    this.url = '',
+  });
+
+  factory OralPoint.fromJson(Map<String, Object?> j, List<OralSource> sources) {
+    final i = j['s'] is int ? j['s']! as int : -1;
+    return OralPoint(
+      text: _s(j['t']),
+      source: i >= 0 && i < sources.length ? sources[i] : null,
+      quote: _s(j['q']),
+      page: j['p'] is int ? j['p']! as int : 0,
+      url: _s(j['u']),
+    );
+  }
+
+  final String text;
+  final OralSource? source;
+  final String quote;
+  final int page;
+  final String url;
+}
+
+/// Savolga adabiyot asosida yozilgan javob.
+@immutable
+class OralAnswer {
+  const OralAnswer({
+    required this.full,
+    required this.points,
+    this.gaps = const [],
+  });
+
+  factory OralAnswer.fromJson(
+    Map<String, Object?> j,
+    List<OralSource> sources,
+  ) => OralAnswer(
+    full: _s(j['c']) == 'full',
+    points: [
+      for (final p in _list(j['p'])) OralPoint.fromJson(_map(p), sources),
+    ],
+    gaps: [for (final g in _list(j['g'])) _s(g)],
+  );
+
+  /// `true` — savolning asosiy jihatlari yoritilgan.
+  final bool full;
+  final List<OralPoint> points;
+
+  /// Adabiyotda yoritilmagan jihatlar (faqat qisman javobda).
+  final List<String> gaps;
+}
+
+/// Bitta mutaxassislikning og‘zaki javoblari (`oral_<id>.json`).
+@immutable
+class OralAnswers {
+  const OralAnswers({required this.sources, required this.answers});
+
+  factory OralAnswers.fromJson(Map<String, Object?> j) {
+    final sources = [
+      for (final s in _list(j['sources'])) OralSource.fromJson(_map(s)),
+    ];
+    final raw = _map(j['answers']);
+    return OralAnswers(
+      sources: sources,
+      answers: {
+        for (final e in raw.entries)
+          e.key: OralAnswer.fromJson(_map(e.value), sources),
+      },
+    );
+  }
+
+  static const empty = OralAnswers(sources: [], answers: {});
+
+  final List<OralSource> sources;
+  final Map<String, OralAnswer> answers;
 }
 
 /// Shaxsiy belgi: savolga tayyor («bilaman»). Faqat qurilmada saqlanadi.

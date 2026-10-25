@@ -41,7 +41,7 @@ Future<void> _loadFonts() async {
   ]);
 }
 
-final _dirG = 'assets/content/instruments/gc_ms';
+const _dirG = 'assets/content/instruments/gc_ms';
 final _parts = File('$_dirG/gc_ms_parts_3lang.json').readAsStringSync();
 final _card = File('$_dirG/gc_ms_catalog_card_and_sources.json')
     .readAsStringSync();

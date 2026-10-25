@@ -250,6 +250,7 @@ class _AssessmentSpecialtyScreenState
       );
     }
     final ready = ref.watch(assessmentProgressProvider);
+    final answered = ref.watch(oralAnswersProvider(spec.id)).value;
     final q = _fold(_query.trim());
     final cat =
         spec.category(_cat ?? spec.categories.first.id) ??
@@ -358,6 +359,9 @@ class _AssessmentSpecialtyScreenState
                         spec: spec,
                         question: oral[idx],
                         isReady: ready.contains(oral[idx].id),
+                        hasAnswer:
+                            answered?.answers.containsKey(oral[idx].id) ??
+                            false,
                       ),
               ),
             );
@@ -401,11 +405,13 @@ class _OralTile extends StatelessWidget {
     required this.spec,
     required this.question,
     required this.isReady,
+    required this.hasAnswer,
   });
 
   final AssessmentSpecialty spec;
   final AssessmentQuestion question;
   final bool isReady;
+  final bool hasAnswer;
 
   @override
   Widget build(BuildContext context) {
@@ -429,6 +435,10 @@ class _OralTile extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
             ),
           ),
+          if (hasAnswer) ...[
+            const SizedBox(width: FeSpace.xs),
+            Icon(Icons.menu_book_outlined, color: c.textSecondary, size: 20),
+          ],
           if (isReady) ...[
             const SizedBox(width: FeSpace.xs),
             Icon(Icons.check_circle, color: c.verified, size: 22),
@@ -758,6 +768,13 @@ class AssessmentQuestionScreen extends ConsumerWidget {
         ),
         const SizedBox(height: FeSpace.xs),
         Text(q.text, style: t.titleMedium),
+        const SizedBox(height: FeSpace.md),
+        _OralAnswerView(
+          answer: ref
+              .watch(oralAnswersProvider(specialtyId))
+              .value
+              ?.answers[q.id],
+        ),
         const SizedBox(height: FeSpace.lg),
         FilledButton.icon(
           key: const Key('assessment.markReady'),
@@ -780,6 +797,179 @@ class AssessmentQuestionScreen extends ConsumerWidget {
       ],
     );
   }
+}
+
+/// Adabiyot asosida yozilgan javob: bandlar, har birining manbasi (bet,
+/// iqtibos) va yoritilmagan jihatlar. Javob yo‘q bo‘lsa — «tez kunda».
+class _OralAnswerView extends StatelessWidget {
+  const _OralAnswerView({required this.answer});
+
+  final OralAnswer? answer;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final a = answer;
+    if (a == null || a.points.isEmpty) {
+      return FeCard(
+        key: const Key('assessment.answerSoon'),
+        padding: const EdgeInsets.all(FeSpace.sm),
+        child: Row(
+          children: [
+            Icon(Icons.hourglass_empty, color: c.textSecondary, size: 20),
+            const SizedBox(width: FeSpace.xs),
+            Expanded(
+              child: Text(
+                l.assessmentAnswerSoon,
+                style: t.bodyMedium?.copyWith(color: c.textSecondary),
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+    final uzOnly = Localizations.localeOf(context).languageCode != 'uz';
+    return Column(
+      key: const Key('assessment.answer'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        FeSectionHeader(l.assessmentAnswerTitle),
+        if (uzOnly)
+          Padding(
+            padding: const EdgeInsets.only(bottom: FeSpace.xs),
+            child: Text(
+              l.assessmentAnswerUzOnly,
+              style: t.labelMedium?.copyWith(color: c.textSecondary),
+            ),
+          ),
+        for (var i = 0; i < a.points.length; i++)
+          Padding(
+            padding: const EdgeInsets.only(bottom: FeSpace.xs),
+            child: _OralPointTile(number: i + 1, point: a.points[i]),
+          ),
+        if (a.gaps.isNotEmpty) ...[
+          const SizedBox(height: FeSpace.xs),
+          Text(
+            l.assessmentAnswerGaps,
+            style: t.labelLarge?.copyWith(color: c.textSecondary),
+          ),
+          for (final g in a.gaps)
+            Padding(
+              padding: const EdgeInsets.only(top: 2),
+              child: Text(
+                '• $g',
+                style: t.bodySmall?.copyWith(color: c.textSecondary),
+              ),
+            ),
+        ],
+      ],
+    );
+  }
+}
+
+class _OralPointTile extends StatelessWidget {
+  const _OralPointTile({required this.number, required this.point});
+
+  final int number;
+  final OralPoint point;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final src = point.source;
+    final cite = src == null
+        ? ''
+        : (point.page > 0
+              ? l.assessmentBookPage(src.title, point.page)
+              : src.title);
+    return FeCard(
+      padding: const EdgeInsets.all(FeSpace.sm),
+      onTap: src == null ? null : () => _showSource(context, point, cite),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          _NumberBadge(number),
+          const SizedBox(width: FeSpace.sm),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(point.text, style: t.bodyMedium),
+                if (cite.isNotEmpty) ...[
+                  const SizedBox(height: 4),
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.menu_book_outlined,
+                        size: 14,
+                        color: c.textSecondary,
+                      ),
+                      const SizedBox(width: 4),
+                      Expanded(
+                        child: Text(
+                          cite,
+                          style: t.labelSmall?.copyWith(color: c.textSecondary),
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+void _showSource(BuildContext context, OralPoint point, String cite) {
+  final l = AppLocalizations.of(context);
+  final c = FeTheme.of(context);
+  final t = Theme.of(context).textTheme;
+  final url = point.url.isNotEmpty ? point.url : (point.source?.url ?? '');
+  showModalBottomSheet<void>(
+    context: context,
+    isScrollControlled: true,
+    showDragHandle: true,
+    builder: (ctx) => SafeArea(
+      child: SingleChildScrollView(
+        key: const Key('assessment.sourceSheet'),
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
+        padding: const EdgeInsets.fromLTRB(
+          FeSpace.md,
+          0,
+          FeSpace.md,
+          FeSpace.lg,
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(l.assessmentAnswerSourceLabel, style: t.titleSmall),
+            const SizedBox(height: FeSpace.xs),
+            Text(cite, style: t.bodyMedium),
+            if (url.isNotEmpty) ...[
+              const SizedBox(height: 2),
+              SelectableText(
+                url,
+                style: t.bodySmall?.copyWith(color: c.textSecondary),
+              ),
+            ],
+            const SizedBox(height: FeSpace.md),
+            Text(l.assessmentAnswerOriginal, style: t.titleSmall),
+            const SizedBox(height: FeSpace.xs),
+            SelectableText(l.assessmentBasis(point.quote), style: t.bodyMedium),
+          ],
+        ),
+      ),
+    ),
+  );
 }
 
 /// Test mashqi: faqat javob kaliti tasdiqlangan savollar.
@@ -979,6 +1169,23 @@ class AssessmentSourcesScreen extends ConsumerWidget {
         if (k == null) continue;
         final id = (k.kind, k.kind == 'teacher' ? '' : k.title, k.url);
         counts[id] = (counts[id] ?? 0) + 1;
+      }
+    }
+    for (final id in oralSpecialties) {
+      final oral = ref.watch(oralAnswersProvider(id)).value;
+      if (oral == null) continue;
+      // Har bir manba uchun javob berilgan savollar soni.
+      final perSource = <int, Set<String>>{};
+      for (final e in oral.answers.entries) {
+        for (final p in e.value.points) {
+          final i = p.source == null ? -1 : oral.sources.indexOf(p.source!);
+          if (i >= 0) (perSource[i] ??= <String>{}).add(e.key);
+        }
+      }
+      for (final e in perSource.entries) {
+        final src = oral.sources[e.key];
+        final key = (src.kind, src.title, src.url);
+        counts[key] = (counts[key] ?? 0) + e.value.length;
       }
     }
     List<Widget> group(String kind, String heading) {

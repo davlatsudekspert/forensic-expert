@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -14,8 +15,15 @@ import '../helpers/pump_app.dart';
 final _pack = File('assets/content/assessment/assessment_v1.json')
     .readAsStringSync();
 
+/// Og‘zaki javoblar (mutaxassislik bo‘yicha) — haqiqiy asset’lar.
+final _oral = {
+  for (final id in ['sud_tib', 'pat_anat', 'sud_kimyo'])
+    id: File('assets/content/assessment/oral_$id.json').readAsStringSync(),
+};
+
 List<Override> _overrides() => [
   assessmentLoaderProvider.overrideWithValue(() async => _pack),
+  oralLoaderProvider.overrideWithValue((id) async => _oral[id]!),
 ];
 
 Finder _key(String k) => find.byKey(Key(k));
@@ -35,6 +43,30 @@ Future<void> _tapCentered(WidgetTester tester, Finder f) async {
   await tester.pumpAndSettle();
   await tester.tap(f);
   await tester.pumpAndSettle();
+}
+
+/// (javobi bor savol, javobi yo‘q savol) — haqiqiy paketdan.
+(String, String) _answeredAndSoon() {
+  final pack = jsonDecode(_pack) as Map<String, Object?>;
+  final spec = (pack['specialties']! as List)
+      .cast<Map<String, Object?>>()
+      .firstWhere((s) => s['id'] == 'pat_anat');
+  final answers =
+      (jsonDecode(_oral['pat_anat']!) as Map<String, Object?>)['answers']!
+          as Map<String, Object?>;
+  String? yes;
+  String? no;
+  for (final c in (spec['categories']! as List).cast<Map<String, Object?>>()) {
+    for (final q in (c['questions']! as List).cast<Map<String, Object?>>()) {
+      final id = q['id']! as String;
+      if (answers.containsKey(id)) {
+        yes ??= id;
+      } else {
+        no ??= id;
+      }
+    }
+  }
+  return (yes!, no!);
 }
 
 void main() {
@@ -86,8 +118,7 @@ void main() {
     await tester.tap(q);
     await tester.pumpAndSettle();
     expect(_key('assessment.detail.sud_kimyo.c23.001'), findsOne);
-    await tester.tap(_key('assessment.markReady'));
-    await tester.pumpAndSettle();
+    await _tapCentered(tester, _key('assessment.markReady'));
     expect(c.read(assessmentProgressProvider), contains('sud_kimyo.c23.001'));
     expect(find.text('Belgini olib tashlash'), findsOne);
     expect(_key('assessment.askAi'), findsOne);
@@ -164,5 +195,34 @@ void main() {
       expect(find.descendant(of: tile, matching: find.text(name)), findsOne);
       await tester.pumpWidget(const SizedBox());
     }
+  });
+
+  testWidgets('og‘zaki savol: javobi bor — bandlar va manba oynasi; yo‘q — '
+      '«tez kunda»', (tester) async {
+    final (yes, no) = _answeredAndSoon();
+    await pumpApp(
+      tester,
+      settings: completedSettings(lang: 'uz'),
+      overrides: _overrides(),
+      initialLocation: Routes.assessmentQuestion('pat_anat', yes),
+    );
+    expect(_key('assessment.answer'), findsOne);
+    expect(find.text('Javob (adabiyot asosida)'), findsOne);
+    expect(_key('assessment.answerSoon'), findsNothing);
+    // Birinchi bandning manbasi — iqtibos bilan alohida oynada.
+    await tester.tap(find.byIcon(Icons.menu_book_outlined).first);
+    await tester.pumpAndSettle();
+    expect(_key('assessment.sourceSheet'), findsOne);
+    expect(find.text('Asl matn'), findsOne);
+
+    await pumpApp(
+      tester,
+      settings: completedSettings(lang: 'uz'),
+      overrides: _overrides(),
+      initialLocation: Routes.assessmentQuestion('pat_anat', no),
+    );
+    expect(_key('assessment.answerSoon'), findsOne);
+    expect(find.text('Javob tez kunda qo‘shiladi'), findsOne);
+    expect(_key('assessment.answer'), findsNothing);
   });
 }

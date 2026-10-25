@@ -19862,6 +19862,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Basis: “{quote}”'**
   String assessmentBasis(String quote);
+
+  /// Heading of the literature-based answer to an oral question.
+  ///
+  /// In en, this message translates to:
+  /// **'Answer (based on literature)'**
+  String get assessmentAnswerTitle;
+
+  /// Shown on an oral question whose answer is not added yet.
+  ///
+  /// In en, this message translates to:
+  /// **'The answer will be added soon'**
+  String get assessmentAnswerSoon;
+
+  /// Heading: aspects not covered by the literature used.
+  ///
+  /// In en, this message translates to:
+  /// **'Not covered in the literature used'**
+  String get assessmentAnswerGaps;
+
+  /// Heading of the verbatim quotation in the source sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Original text'**
+  String get assessmentAnswerOriginal;
+
+  /// Note under an answer shown in Uzbek for ru/en users.
+  ///
+  /// In en, this message translates to:
+  /// **'The answer is in Uzbek; translation is coming'**
+  String get assessmentAnswerUzOnly;
+
+  /// Heading of the source sheet of an answer point.
+  ///
+  /// In en, this message translates to:
+  /// **'Source'**
+  String get assessmentAnswerSourceLabel;
 }
 
 class _AppLocalizationsDelegate

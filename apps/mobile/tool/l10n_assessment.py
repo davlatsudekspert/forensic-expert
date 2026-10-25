@@ -215,6 +215,31 @@ k('assessmentBasis', 'The quotation that is the basis of the answer.',
   'Основание: «{quote}»',
   'Asos: «{quote}»', {'quote': 'String'})
 
+k('assessmentAnswerTitle', 'Heading of the literature-based answer to an oral question.',
+  'Answer (based on literature)',
+  'Ответ (по литературе)',
+  'Javob (adabiyot asosida)')
+k('assessmentAnswerSoon', 'Shown on an oral question whose answer is not added yet.',
+  'The answer will be added soon',
+  'Ответ скоро будет добавлен',
+  'Javob tez kunda qo‘shiladi')
+k('assessmentAnswerGaps', 'Heading: aspects not covered by the literature used.',
+  'Not covered in the literature used',
+  'Не освещено в использованной литературе',
+  'Foydalanilgan adabiyotda yoritilmagan jihatlar')
+k('assessmentAnswerSourceLabel', 'Heading of the source sheet of an answer point.',
+  'Source',
+  'Источник',
+  'Manba')
+k('assessmentAnswerOriginal', 'Heading of the verbatim quotation in the source sheet.',
+  'Original text',
+  'Исходный текст',
+  'Asl matn')
+k('assessmentAnswerUzOnly', 'Note under an answer shown in Uzbek for ru/en users.',
+  'The answer is in Uzbek; translation is coming',
+  'Ответ на узбекском языке; перевод появится позже',
+  'Javob o‘zbek tilida; tarjimasi keyin qo‘shiladi')
+
 for idx, code in enumerate(["en", "ru", "uz"]):
     p = f"{D}/app_{code}.arb"
     text = open(p, encoding="utf-8").read()

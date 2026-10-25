@@ -14521,5 +14521,17 @@
   "assessmentSourcesWeb": "World literature and legislation",
   "@assessmentSourcesWeb": {"description": "Literature list: world literature and laws."},
   "assessmentBasis": "Basis: “{quote}”",
-  "@assessmentBasis": {"description": "The quotation that is the basis of the answer.", "placeholders": {"quote": {"type": "String"}}}
+  "@assessmentBasis": {"description": "The quotation that is the basis of the answer.", "placeholders": {"quote": {"type": "String"}}},
+  "assessmentAnswerTitle": "Answer (based on literature)",
+  "@assessmentAnswerTitle": {"description": "Heading of the literature-based answer to an oral question."},
+  "assessmentAnswerSoon": "The answer will be added soon",
+  "@assessmentAnswerSoon": {"description": "Shown on an oral question whose answer is not added yet."},
+  "assessmentAnswerGaps": "Not covered in the literature used",
+  "@assessmentAnswerGaps": {"description": "Heading: aspects not covered by the literature used."},
+  "assessmentAnswerOriginal": "Original text",
+  "@assessmentAnswerOriginal": {"description": "Heading of the verbatim quotation in the source sheet."},
+  "assessmentAnswerUzOnly": "The answer is in Uzbek; translation is coming",
+  "@assessmentAnswerUzOnly": {"description": "Note under an answer shown in Uzbek for ru/en users."},
+  "assessmentAnswerSourceLabel": "Source",
+  "@assessmentAnswerSourceLabel": {"description": "Heading of the source sheet of an answer point."}
 }

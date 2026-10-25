@@ -11498,4 +11498,23 @@ class AppLocalizationsEn extends AppLocalizations {
   String assessmentBasis(String quote) {
     return 'Basis: “$quote”';
   }
+
+  @override
+  String get assessmentAnswerTitle => 'Answer (based on literature)';
+
+  @override
+  String get assessmentAnswerSoon => 'The answer will be added soon';
+
+  @override
+  String get assessmentAnswerGaps => 'Not covered in the literature used';
+
+  @override
+  String get assessmentAnswerOriginal => 'Original text';
+
+  @override
+  String get assessmentAnswerUzOnly =>
+      'The answer is in Uzbek; translation is coming';
+
+  @override
+  String get assessmentAnswerSourceLabel => 'Source';
 }

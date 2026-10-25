@@ -11429,4 +11429,24 @@ class AppLocalizationsUz extends AppLocalizations {
   String assessmentBasis(String quote) {
     return 'Asos: «$quote»';
   }
+
+  @override
+  String get assessmentAnswerTitle => 'Javob (adabiyot asosida)';
+
+  @override
+  String get assessmentAnswerSoon => 'Javob tez kunda qo‘shiladi';
+
+  @override
+  String get assessmentAnswerGaps =>
+      'Foydalanilgan adabiyotda yoritilmagan jihatlar';
+
+  @override
+  String get assessmentAnswerOriginal => 'Asl matn';
+
+  @override
+  String get assessmentAnswerUzOnly =>
+      'Javob o‘zbek tilida; tarjimasi keyin qo‘shiladi';
+
+  @override
+  String get assessmentAnswerSourceLabel => 'Manba';
 }

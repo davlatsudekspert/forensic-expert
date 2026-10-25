@@ -11543,4 +11543,23 @@ class AppLocalizationsRu extends AppLocalizations {
   String assessmentBasis(String quote) {
     return 'Основание: «$quote»';
   }
+
+  @override
+  String get assessmentAnswerTitle => 'Ответ (по литературе)';
+
+  @override
+  String get assessmentAnswerSoon => 'Ответ скоро будет добавлен';
+
+  @override
+  String get assessmentAnswerGaps => 'Не освещено в использованной литературе';
+
+  @override
+  String get assessmentAnswerOriginal => 'Исходный текст';
+
+  @override
+  String get assessmentAnswerUzOnly =>
+      'Ответ на узбекском языке; перевод появится позже';
+
+  @override
+  String get assessmentAnswerSourceLabel => 'Источник';
 }

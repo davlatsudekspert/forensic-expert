@@ -25,6 +25,32 @@ final assessmentProvider = FutureProvider<AssessmentBundle>((ref) async {
   }
 });
 
+/// Og‘zaki javoblar (mutaxassislik bo‘yicha alohida asset, oflayn).
+String oralAsset(String specialtyId) =>
+    'assets/content/assessment/oral_$specialtyId.json';
+
+final oralLoaderProvider = Provider<Future<String> Function(String)>(
+  (ref) =>
+      (id) => rootBundle.loadString(oralAsset(id)),
+);
+
+const oralSpecialties = ['sud_tib', 'pat_anat', 'sud_kimyo'];
+
+final oralAnswersProvider = FutureProvider.family<OralAnswers, String>((
+  ref,
+  specialtyId,
+) async {
+  try {
+    final text = await ref.watch(oralLoaderProvider)(specialtyId);
+    return OralAnswers.fromJson(
+      (jsonDecode(text) as Map).cast<String, Object?>(),
+    );
+  } on Object {
+    // Javoblar paketi yo‘q yoki buzilgan — savollar «tez kunda» holatida.
+    return OralAnswers.empty;
+  }
+});
+
 /// Bootstrap’da SharedPreferences bilan override qilinadi (faqat lokal).
 final assessmentProgressStoreProvider = Provider<AssessmentProgressStore>(
   (ref) => InMemoryAssessmentProgressStore(),
