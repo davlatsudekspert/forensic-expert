@@ -65,7 +65,7 @@ void main() {
       findsOneWidget,
     );
     // Hech biri «tasdiqlangan» emas; dalil darajasi ko‘rinadi.
-    expect(inAnalysis('morphine', find.text('Tasdiqlash kerak')), findsWidgets);
+    expect(inAnalysis('morphine', find.text('Xalqaro adabiyot')), findsWidgets);
     expect(inAnalysis('morphine', find.text('Tasdiqlangan')), findsNothing);
     // Metabolitlar.
     await see(

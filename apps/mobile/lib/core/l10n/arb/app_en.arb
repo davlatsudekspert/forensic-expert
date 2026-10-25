@@ -4139,10 +4139,8 @@
   "@aiRagJurisdictionNotApplicable": {
     "description": "Value."
   },
-  "aiLimNotVerified": "Evidence is not yet verified by qualified human reviewers.",
-  "@aiLimNotVerified": {
-    "description": "Limitation."
-  },
+  "aiLimNotVerified": "Information is taken from the literature and is for reference; it does not replace an official expert conclusion.",
+  "@aiLimNotVerified": {"description": "AI limitation: evidence is from literature, for reference."},
   "aiLimConflict": "Sources disagree or overlap — see EVIDENCE CONFLICT.",
   "@aiLimConflict": {
     "description": "Limitation."
@@ -11140,14 +11138,10 @@
   "@confirmedSourceChip": {
     "description": "Chip: the claim's source is confirmed."
   },
-  "needsConfirmationChip": "Needs confirmation",
-  "@needsConfirmationChip": {
-    "description": "Chip: a claim from international literature still needs confirmation."
-  },
-  "needsConfirmationBanner": "From international literature (article, thesis): needs confirmation.",
-  "@needsConfirmationBanner": {
-    "description": "Banner for claims from international literature."
-  },
+  "needsConfirmationChip": "International literature",
+  "@needsConfirmationChip": {"description": "Chip: a claim from international literature (article, thesis)."},
+  "needsConfirmationBanner": "From international literature (article, thesis); see the original source for important decisions.",
+  "@needsConfirmationBanner": {"description": "Banner for claims from international literature."},
   "avatarSemantics": "Profile photo",
   "@avatarSemantics": {
     "description": "Semantics label of the profile photo."
@@ -14549,5 +14543,7 @@
   "admProBadDuration": "Enter 1–3650 days or 1–120 months.",
   "@admProBadDuration": {"description": "Admin Pro grant: custom duration out of range."},
   "proPlanAdminAll": "Administrator · everything open",
-  "@proPlanAdminAll": {"description": "Profile plan row value for administrators."}
+  "@proPlanAdminAll": {"description": "Profile plan row value for administrators."},
+  "statusSourced": "Source cited",
+  "@statusSourced": {"description": "Status badge for content that cites a source but has no reviewer sign-off yet."}
 }

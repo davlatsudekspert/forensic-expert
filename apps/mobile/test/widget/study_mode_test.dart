@@ -110,7 +110,7 @@ void main() {
     expect(find.text('TEST topic A'), findsOneWidget);
     expect(find.text('TEST excerpt for A.'), findsNothing);
     expect(find.text('New card'), findsOneWidget);
-    expect(find.text('Needs review'), findsWidgets);
+    expect(find.text('Source cited'), findsWidgets);
 
     await tap(tester, 'study.card');
     expect(find.text('TEST excerpt for A.'), findsOneWidget);

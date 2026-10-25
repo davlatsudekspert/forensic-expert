@@ -5818,10 +5818,10 @@ abstract class AppLocalizations {
   /// **'Not a legal question — no jurisdiction applied'**
   String get aiRagJurisdictionNotApplicable;
 
-  /// Limitation.
+  /// AI limitation: evidence is from literature, for reference.
   ///
   /// In en, this message translates to:
-  /// **'Evidence is not yet verified by qualified human reviewers.'**
+  /// **'Information is taken from the literature and is for reference; it does not replace an official expert conclusion.'**
   String get aiLimNotVerified;
 
   /// Limitation.
@@ -15021,16 +15021,16 @@ abstract class AppLocalizations {
   /// **'Confirmed source'**
   String get confirmedSourceChip;
 
-  /// Chip: a claim from international literature still needs confirmation.
+  /// Chip: a claim from international literature (article, thesis).
   ///
   /// In en, this message translates to:
-  /// **'Needs confirmation'**
+  /// **'International literature'**
   String get needsConfirmationChip;
 
   /// Banner for claims from international literature.
   ///
   /// In en, this message translates to:
-  /// **'From international literature (article, thesis): needs confirmation.'**
+  /// **'From international literature (article, thesis); see the original source for important decisions.'**
   String get needsConfirmationBanner;
 
   /// Semantics label of the profile photo.
@@ -19946,6 +19946,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Administrator · everything open'**
   String get proPlanAdminAll;
+
+  /// Status badge for content that cites a source but has no reviewer sign-off yet.
+  ///
+  /// In en, this message translates to:
+  /// **'Source cited'**
+  String get statusSourced;
 }
 
 class _AppLocalizationsDelegate

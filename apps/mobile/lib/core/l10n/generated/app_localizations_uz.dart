@@ -3170,7 +3170,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get aiLimNotVerified =>
-      'Dalillar hali malakali taqrizchilar tomonidan tasdiqlanmagan.';
+      'Ma’lumotlar adabiyotdan olingan va ma’lumot uchun; rasmiy ekspert xulosasi o‘rnini bosmaydi.';
 
   @override
   String get aiLimConflict =>
@@ -8597,11 +8597,11 @@ class AppLocalizationsUz extends AppLocalizations {
   String get confirmedSourceChip => 'Tasdiqlangan manba';
 
   @override
-  String get needsConfirmationChip => 'Tasdiqlash kerak';
+  String get needsConfirmationChip => 'Xalqaro adabiyot';
 
   @override
   String get needsConfirmationBanner =>
-      'Xalqaro adabiyotdan (maqola, tezis): tasdiqlash kerak.';
+      'Xalqaro adabiyotdan (maqola, tezis) olingan; muhim qarorlar uchun asl manbani ko‘ring.';
 
   @override
   String get avatarSemantics => 'Profil rasmi';
@@ -11476,4 +11476,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get proPlanAdminAll => 'Administrator · hammasi ochiq';
+
+  @override
+  String get statusSourced => 'Manba keltirilgan';
 }

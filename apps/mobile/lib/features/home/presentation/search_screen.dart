@@ -305,6 +305,7 @@ class _Results extends ConsumerWidget {
       ScientificStatus.verified => l.statusVerified,
       ScientificStatus.reviewed => l.statusReviewed,
       ScientificStatus.outdated => l.statusOutdated,
+      ScientificStatus.needsReview => l.statusSourced,
       _ => l.statusNeedsReview,
     };
 

@@ -50,7 +50,7 @@ class ReviewStatusBadge extends StatelessWidget {
       ),
       // «Manbali · tekshiruvda» — xato emas, holat: vazmin teal.
       ScientificStatus.needsReview => (
-        l.statusNeedsReview,
+        l.statusSourced,
         c.accent,
         Icons.pending_outlined,
       ),

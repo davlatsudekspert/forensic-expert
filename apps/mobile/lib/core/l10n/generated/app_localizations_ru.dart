@@ -3173,7 +3173,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get aiLimNotVerified =>
-      'Данные ещё не проверены квалифицированными рецензентами.';
+      'Сведения взяты из литературы и носят справочный характер; не заменяют официальное заключение эксперта.';
 
   @override
   String get aiLimConflict =>
@@ -8686,11 +8686,11 @@ class AppLocalizationsRu extends AppLocalizations {
   String get confirmedSourceChip => 'Подтверждённый источник';
 
   @override
-  String get needsConfirmationChip => 'Требует подтверждения';
+  String get needsConfirmationChip => 'Международная литература';
 
   @override
   String get needsConfirmationBanner =>
-      'Из международной литературы (статья, тезис): требует подтверждения.';
+      'Из международной литературы (статья, тезис); для важных решений см. оригинальный источник.';
 
   @override
   String get avatarSemantics => 'Фото профиля';
@@ -11589,4 +11589,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get proPlanAdminAll => 'Администратор · всё открыто';
+
+  @override
+  String get statusSourced => 'Источник указан';
 }

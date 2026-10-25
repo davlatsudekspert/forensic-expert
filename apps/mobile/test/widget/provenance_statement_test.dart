@@ -40,7 +40,7 @@ void main() {
     // Tahlil ro‘yxatidagi «manbani ko‘rsat» tugmasi (skrinshotdagi yo‘l).
     final src = find.byKey(const Key('analysis.source.$id'));
     await scrollTo(tester, src);
-    // Ro‘yxat qatorida «Tekshirilmagan» emas, «Tasdiqlangan manba».
+    // Ro‘yxat qatorida «Manba keltirilgan» emas, «Tasdiqlangan manba».
     expect(find.textContaining('Tasdiqlangan manba'), findsWidgets);
     await tester.tap(src);
     await tester.pumpAndSettle();
@@ -73,7 +73,7 @@ void main() {
     final chip = find.byKey(const Key('claim.trust.$id'));
     await scrollTo(tester, chip);
     expect(
-      find.descendant(of: chip, matching: find.text('Tasdiqlash kerak')),
+      find.descendant(of: chip, matching: find.text('Xalqaro adabiyot')),
       findsOneWidget,
     );
     expect(
@@ -111,7 +111,7 @@ void main() {
     expect(
       find.descendant(
         of: liver,
-        matching: find.textContaining('Tasdiqlash kerak'),
+        matching: find.textContaining('Xalqaro adabiyot'),
       ),
       findsOneWidget,
     );

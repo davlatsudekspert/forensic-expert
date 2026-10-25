@@ -340,7 +340,7 @@ void main() {
       await open(tester, Routes.searchWith('fentanyl'));
       await tester.pump(const Duration(milliseconds: 400));
       await tester.pumpAndSettle();
-      expect(find.textContaining('Needs review'), findsWidgets);
+      expect(find.textContaining('Source cited'), findsWidgets);
     });
   });
 

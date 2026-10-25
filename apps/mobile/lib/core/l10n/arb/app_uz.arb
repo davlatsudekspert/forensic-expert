@@ -953,7 +953,7 @@
   "disciplineSourcedTopics": "Manbali mavzular",
   "aiRagAnswer": "Javob",
   "aiRagJurisdictionNotApplicable": "Huquqiy savol emas — yurisdiksiya qo‘llanmadi",
-  "aiLimNotVerified": "Dalillar hali malakali taqrizchilar tomonidan tasdiqlanmagan.",
+  "aiLimNotVerified": "Ma’lumotlar adabiyotdan olingan va ma’lumot uchun; rasmiy ekspert xulosasi o‘rnini bosmaydi.",
   "aiLimConflict": "Manbalar mos kelmaydi yoki ustma-ust tushadi — DALILLAR ZIDDIYATI ga qarang.",
   "aiLimRetracted": "Retraksiya qilingan yoki almashtirilgan manbalardan {n} ta da’vo chiqarib tashlandi.",
   "aiLimExpert": "Muayyan holatni talqin qilish malakali ekspertni talab qiladi.",
@@ -2486,8 +2486,8 @@
   "provOwnWordsNote": "Manbadagi mazmun o‘z so‘zlarimiz bilan berilgan; asl matn ko‘chirilmagan. Aniq joyi quyida.",
   "confirmedSourceChip": "Tasdiqlangan manba",
   "confirmedSourceBannerTextbook": "Tasdiqlangan manba asosida: ustoz kitobi. Aniq joyi ko‘rsatilgan.",
-  "needsConfirmationChip": "Tasdiqlash kerak",
-  "needsConfirmationBanner": "Xalqaro adabiyotdan (maqola, tezis): tasdiqlash kerak.",
+  "needsConfirmationChip": "Xalqaro adabiyot",
+  "needsConfirmationBanner": "Xalqaro adabiyotdan (maqola, tezis) olingan; muhim qarorlar uchun asl manbani ko‘ring.",
   "avatarSemantics": "Profil rasmi",
   "avatarChange": "Rasmni o‘zgartirish",
   "avatarChoose": "Galereyadan tanlash",
@@ -3330,5 +3330,6 @@
   "admProUnitMonth": "Oy",
   "admProUntilDate": "Amal qilish muddati: {date}",
   "admProBadDuration": "1–3650 kun yoki 1–120 oy kiriting.",
-  "proPlanAdminAll": "Administrator · hammasi ochiq"
+  "proPlanAdminAll": "Administrator · hammasi ochiq",
+  "statusSourced": "Manba keltirilgan"
 }

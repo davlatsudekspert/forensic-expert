@@ -3162,7 +3162,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get aiLimNotVerified =>
-      'Evidence is not yet verified by qualified human reviewers.';
+      'Information is taken from the literature and is for reference; it does not replace an official expert conclusion.';
 
   @override
   String get aiLimConflict =>
@@ -8633,11 +8633,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get confirmedSourceChip => 'Confirmed source';
 
   @override
-  String get needsConfirmationChip => 'Needs confirmation';
+  String get needsConfirmationChip => 'International literature';
 
   @override
   String get needsConfirmationBanner =>
-      'From international literature (article, thesis): needs confirmation.';
+      'From international literature (article, thesis); see the original source for important decisions.';
 
   @override
   String get avatarSemantics => 'Profile photo';
@@ -11544,4 +11544,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get proPlanAdminAll => 'Administrator · everything open';
+
+  @override
+  String get statusSourced => 'Source cited';
 }
