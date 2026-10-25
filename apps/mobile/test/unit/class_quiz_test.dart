@@ -362,4 +362,16 @@ void main() {
       expect(ClassQuizSettings(seconds: s).valid, isTrue);
     }
   });
+
+  test('ClassTopic.fromJson: kurs maydoni ixtiyoriy', () {
+    final a = ClassTopic.fromJson({
+      'topic_id': 'x',
+      'title': 'T',
+      'count': 5,
+      'course': 'Toksikologik kimyo',
+    });
+    expect(a.course, 'Toksikologik kimyo');
+    final b = ClassTopic.fromJson({'topic_id': 'y', 'title': 'T', 'count': 1});
+    expect(b.course, '');
+  });
 }

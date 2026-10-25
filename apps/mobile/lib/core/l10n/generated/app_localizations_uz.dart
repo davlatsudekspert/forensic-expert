@@ -11208,4 +11208,12 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get proPremiumBack => 'O‘z rejamga qaytish';
+
+  @override
+  String get disciplineSharedModule =>
+      'Umumiy bo‘lim: bu fan shu bo‘limga kiradi';
+
+  @override
+  String get disciplineSparseNote =>
+      'Bu fan bo‘yicha manbali kontent bosqichma-bosqich qo‘shilmoqda. Hozircha mavjud yozuvlar ko‘rsatilgan.';
 }

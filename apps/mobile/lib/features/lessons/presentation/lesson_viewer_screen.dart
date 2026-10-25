@@ -11,6 +11,8 @@ import '../../../app/plan.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
+import '../../../core/settings/app_settings.dart' show UserMode;
+import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart' show ClassFailure;
 import '../../../domain/lessons/lesson_models.dart';
@@ -396,6 +398,11 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
     final page = pages[_index];
     final lang = Localizations.localeOf(context).languageCode;
     final pending = lang != widget.deck.sourceLang;
+    // «Ustoz eslatmalari» (vaqt, muhokama savollari, tipik xatolar) faqat
+    // «Ustoz» rejimida — Mutaxassis/Talabaga bu panel ko‘rinmaydi.
+    final canNotes =
+        ref.watch(settingsControllerProvider.select((s) => s.userMode)) ==
+        UserMode.teacher;
     final wideNotes = MediaQuery.sizeOf(context).width >= 900;
     final quizReady = ref.watch(
       lessonQuizAvailableProvider(widget.deck.deckId),
@@ -417,14 +424,15 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
               icon: const Icon(Icons.quiz_outlined),
               onPressed: quizReady ? _startQuiz : null,
             ),
-          IconButton(
-            key: const Key('lesson.notesToggle'),
-            tooltip: l.lessonViewerNotes,
-            isSelected: _notes,
-            icon: const Icon(Icons.sticky_note_2_outlined),
-            selectedIcon: const Icon(Icons.sticky_note_2),
-            onPressed: () => setState(() => _notes = !_notes),
-          ),
+          if (canNotes)
+            IconButton(
+              key: const Key('lesson.notesToggle'),
+              tooltip: l.lessonViewerNotes,
+              isSelected: _notes,
+              icon: const Icon(Icons.sticky_note_2_outlined),
+              selectedIcon: const Icon(Icons.sticky_note_2),
+              onPressed: () => setState(() => _notes = !_notes),
+            ),
           IconButton(
             key: const Key('lesson.outlineButton'),
             tooltip: l.lessonViewerOutline,
@@ -452,7 +460,7 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
                 ),
               ),
             Expanded(
-              child: _notes && wideNotes
+              child: canNotes && _notes && wideNotes
                   ? Row(
                       children: [
                         Expanded(flex: 3, child: slide),
@@ -468,7 +476,7 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
                     )
                   : slide,
             ),
-            if (_notes && !wideNotes)
+            if (canNotes && _notes && !wideNotes)
               ConstrainedBox(
                 constraints: BoxConstraints(
                   maxHeight: MediaQuery.sizeOf(context).height * 0.3,

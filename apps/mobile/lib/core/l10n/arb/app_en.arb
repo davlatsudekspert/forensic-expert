@@ -14685,5 +14685,13 @@
   "proPremiumBack": "Back to my plan",
   "@proPremiumBack": {
     "description": "Pro page: button to go back to the mode plan."
+  },
+  "disciplineSharedModule": "Shared section: this discipline belongs to it",
+  "@disciplineSharedModule": {
+    "description": "Discipline page: this module is shared with a parent discipline."
+  },
+  "disciplineSparseNote": "Sourced content for this discipline is being added step by step. Only the records available now are shown.",
+  "@disciplineSparseNote": {
+    "description": "Discipline page: little sourced content yet."
   }
 }

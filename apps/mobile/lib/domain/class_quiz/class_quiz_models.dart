@@ -392,6 +392,7 @@ class ClassTopic {
     required this.title,
     required this.count,
     this.isDemo = false,
+    this.course = '',
   });
 
   factory ClassTopic.fromJson(Map<String, Object?> j) => ClassTopic(
@@ -399,12 +400,16 @@ class ClassTopic {
     title: _str(j['title']),
     count: _int(j['count']),
     isDemo: j['is_demo'] == true,
+    course: _str(j['course']),
   );
 
   final String id;
   final String title;
   final int count;
   final bool isDemo;
+
+  /// Dars kursi (server `lesson_topics.course`); bo‘sh — noma’lum.
+  final String course;
 }
 
 @immutable

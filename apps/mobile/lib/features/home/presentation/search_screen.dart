@@ -29,9 +29,12 @@ import '../../tools/tool_strings.dart';
 ///   · TA’LIM · MANBALAR.
 /// * Qidiruv tarixi faqat qurilmada; tozalash mumkin.
 class SearchScreen extends ConsumerStatefulWidget {
-  const SearchScreen({super.key, this.initialQuery});
+  const SearchScreen({super.key, this.initialQuery, this.initialDiscipline});
 
   final String? initialQuery;
+
+  /// Fan sahifasidan: shu fan filtri oldindan yoqilgan.
+  final ForensicDiscipline? initialDiscipline;
 
   @override
   ConsumerState<SearchScreen> createState() => _SearchScreenState();
@@ -51,6 +54,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
   @override
   void initState() {
     super.initState();
+    _discipline = widget.initialDiscipline;
     _controller = TextEditingController(text: widget.initialQuery ?? '');
     if ((widget.initialQuery ?? '').isNotEmpty) {
       _query = widget.initialQuery!;

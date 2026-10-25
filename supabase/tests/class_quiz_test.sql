@@ -161,6 +161,8 @@ select pg_temp.cq_as('79000000-0000-0000-0000-0000000000a1');
 select pg_temp.cq_check((public.class_status()->>'is_teacher')::boolean, 'the teacher role is read from the server');
 select pg_temp.cq_check((public.class_topics()->0->>'count')::int in (2, 8),
   'a teacher sees topics with question counts');
+select pg_temp.cq_check((public.class_topics()->0) ? 'course',
+  'class_topics rows carry a course key (null when the topic has no lesson)');
 select pg_temp.cq_check((public.class_create_session('demo-topic', 4, 30, 30)->>'error') = 'invalid_settings',
   'fewer than 5 questions is refused');
 select pg_temp.cq_check((public.class_create_session('demo-topic', 5, 4, 30)->>'error') = 'invalid_settings',

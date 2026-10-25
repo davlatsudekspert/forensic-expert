@@ -163,6 +163,12 @@ class DisciplinesScreen extends ConsumerWidget {
   }
 }
 
+/// Bo‘limi (modul) shu fanning o‘ziniki: sud tibbiyoti, toksikologiya, kimyo.
+bool _ownsModule(ForensicDiscipline d) =>
+    d == ForensicDiscipline.forensicMedicine ||
+    d == ForensicDiscipline.forensicToxicology ||
+    d == ForensicDiscipline.forensicChemistry;
+
 class DisciplineScreen extends ConsumerWidget {
   const DisciplineScreen({super.key, required this.code});
 
@@ -230,9 +236,20 @@ class DisciplineScreen extends ConsumerWidget {
                         key: Key('discipline.module.${m.name}'),
                         icon: m.icon,
                         title: m.label(l),
+                        // Boshqa fanning umumiy bo‘limi (masalan, patologiya →
+                        // Sud tibbiyoti): chalkashmasligi uchun aniq yoziladi.
+                        body: _ownsModule(d) ? null : l.disciplineSharedModule,
                         onTap: () => context.push(m.route),
                       ),
                     ],
+                  ],
+                  if (count <= 1 && !d.referenceOnly) ...[
+                    const SizedBox(height: FeSpace.sm),
+                    FeBanner(
+                      key: const Key('discipline.sparseNote'),
+                      icon: Icons.hourglass_empty_rounded,
+                      text: l.disciplineSparseNote,
+                    ),
                   ],
                   ..._lessonsSection(context, ref, d),
                   if (ownTopics.isNotEmpty) ...[
@@ -310,8 +327,7 @@ class DisciplineScreen extends ConsumerWidget {
                     icon: Icons.search,
                     title: l.disciplineSearchCta,
                     body: l.disciplineSearchBody,
-                    onTap: () =>
-                        context.push(Routes.searchWith(l.disciplineName(d))),
+                    onTap: () => context.push(Routes.searchIn(d.code)),
                   ),
                   const SizedBox(height: FeSpace.sm),
                   _NextStepTile(

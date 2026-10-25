@@ -349,13 +349,16 @@ List<_TopicGroupData> _groupTopics(
     final topic = v[lang] ?? v['uz'] ?? v.values.first;
     final meta = bank.meta(e.key);
     final g = meta == null ? null : bank.group(meta.groupId);
-    final gid = g?.id ?? '_other';
+    // Bank meta’si yo‘q mavzular: dars kursi bo‘yicha (bo‘lmasa — «Boshqa»).
+    final course = g == null ? topic.course.trim() : '';
+    final gid = g?.id ?? (course.isEmpty ? '_other' : 'course:$course');
     final group = groups.putIfAbsent(
       gid,
       () => _TopicGroupData(
         gid,
-        g?.title(lang) ?? l.classTopicGroupOther,
-        g?.order ?? 1 << 20,
+        g?.title(lang) ?? (course.isEmpty ? l.classTopicGroupOther : course),
+        g?.order ??
+            (course.isEmpty ? 1 << 20 : (1 << 19) + course.hashCode % 1000),
       ),
     );
     final title = _choiceTitle(topic, bank, lang);
@@ -377,10 +380,14 @@ List<_TopicGroupData> _groupTopics(
       ),
     );
   }
-  final out = [
-    for (final g in groups.values)
-      if (g.items.isNotEmpty) g,
-  ]..sort((a, b) => a.order.compareTo(b.order));
+  final out =
+      [
+        for (final g in groups.values)
+          if (g.items.isNotEmpty) g,
+      ]..sort((a, b) {
+        final c = a.order.compareTo(b.order);
+        return c != 0 ? c : a.title.compareTo(b.title);
+      });
   for (final g in out) {
     g.items.sort((a, b) {
       final c = (a.meta?.number ?? 0).compareTo(b.meta?.number ?? 0);

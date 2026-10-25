@@ -15,6 +15,10 @@ abstract final class Routes {
   static const search = '/home/search';
   static String searchWith(String query) =>
       Uri(path: search, queryParameters: {'q': query}).toString();
+
+  /// Qidiruv, fan filtri oldindan tanlangan (matn kiritilmaydi).
+  static String searchIn(String disciplineCode) =>
+      Uri(path: search, queryParameters: {'d': disciplineCode}).toString();
   static String module(String id) => '/home/module/$id';
   static const learn = '/home/learn';
   static const compare = '/home/compare';

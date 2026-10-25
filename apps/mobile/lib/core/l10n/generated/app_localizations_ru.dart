@@ -11322,4 +11322,12 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get proPremiumBack => 'Назад к моему тарифу';
+
+  @override
+  String get disciplineSharedModule =>
+      'Общий раздел: эта дисциплина входит в него';
+
+  @override
+  String get disciplineSparseNote =>
+      'Материалы по этой дисциплине добавляются постепенно. Показаны только имеющиеся записи.';
 }

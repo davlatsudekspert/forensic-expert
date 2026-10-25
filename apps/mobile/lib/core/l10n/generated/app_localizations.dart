@@ -19490,6 +19490,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Back to my plan'**
   String get proPremiumBack;
+
+  /// Discipline page: this module is shared with a parent discipline.
+  ///
+  /// In en, this message translates to:
+  /// **'Shared section: this discipline belongs to it'**
+  String get disciplineSharedModule;
+
+  /// Discipline page: little sourced content yet.
+  ///
+  /// In en, this message translates to:
+  /// **'Sourced content for this discipline is being added step by step. Only the records available now are shown.'**
+  String get disciplineSparseNote;
 }
 
 class _AppLocalizationsDelegate

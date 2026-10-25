@@ -1,6 +1,7 @@
 import 'dart:async';
 
-import 'package:fe_content_schema/fe_content_schema.dart' show KnowledgeArea;
+import 'package:fe_content_schema/fe_content_schema.dart'
+    show ForensicDiscipline, KnowledgeArea;
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -320,8 +321,12 @@ final routerProvider = Provider<GoRouter>((ref) {
                   // qo‘shiladi, «Back» natijalarga qaytaradi.
                   GoRoute(
                     path: 'search',
-                    builder: (c, s) =>
-                        SearchScreen(initialQuery: s.uri.queryParameters['q']),
+                    builder: (c, s) => SearchScreen(
+                      initialQuery: s.uri.queryParameters['q'],
+                      initialDiscipline: ForensicDiscipline.fromCode(
+                        s.uri.queryParameters['d'] ?? '',
+                      ),
+                    ),
                     routes: [
                       GoRoute(
                         path: 'pro',

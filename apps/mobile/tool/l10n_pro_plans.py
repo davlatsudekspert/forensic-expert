@@ -70,6 +70,14 @@ k('settingsMode', 'Profile row title: usage mode (student, teacher or expert).',
   'Mode',
   'Режим',
   'Rejim')
+k('disciplineSharedModule', 'Discipline page: this module is shared with a parent discipline.',
+  'Shared section: this discipline belongs to it',
+  'Общий раздел: эта дисциплина входит в него',
+  'Umumiy bo‘lim: bu fan shu bo‘limga kiradi')
+k('disciplineSparseNote', 'Discipline page: little sourced content yet.',
+  'Sourced content for this discipline is being added step by step. Only the records available now are shown.',
+  'Материалы по этой дисциплине добавляются постепенно. Показаны только имеющиеся записи.',
+  'Bu fan bo‘yicha manbali kontent bosqichma-bosqich qo‘shilmoqda. Hozircha mavjud yozuvlar ko‘rsatilgan.')
 k('proProfileRow', 'Profile row title: current plan.',
   'Plan',
   'Тариф',

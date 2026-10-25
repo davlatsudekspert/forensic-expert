@@ -11277,4 +11277,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get proPremiumBack => 'Back to my plan';
+
+  @override
+  String get disciplineSharedModule =>
+      'Shared section: this discipline belongs to it';
+
+  @override
+  String get disciplineSparseNote =>
+      'Sourced content for this discipline is being added step by step. Only the records available now are shown.';
 }
