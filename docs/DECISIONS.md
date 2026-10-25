@@ -295,5 +295,5 @@ Pro 0.4.0 test buildidan keyin darslar va test savollari RU/EN ga tarjima qilina
 
 * Egasi: «javoblarni adabiyotlardan, bo‘lmasa jahon adabiyotidan yoz; adabiyot asos bo‘lsin; xato bo‘lmasin». Har javob bandi — so‘zma-so‘z iqtibos + kitob/bet yoki havola; mustaqil audit; shubhali/eskirgan/kitob xatosi bandlar tushirilgan.
 * Egasi: patologik anatomiyada ish ko‘p — tayyori chiqariladi, qolgani «Javob tez kunda qo‘shiladi»; limit tejash: yangi Opus agentlar yo‘q, imkon qadar **Sonnet**.
-* Hozircha: sud_tib 365/436, sud_kimyo 274/333, pat_anat 177/501 savolga javob. Qolgan partiyalar (sud_tib 28–33, sud_kimyo 13–15, pat_anat 16–42) — egasi ruxsat berganda Sonnet bilan. Batafsil: `docs/ASSESSMENT.md`.
+* Hozircha: sud_tib 427/436, sud_kimyo 313/333, pat_anat 177/501 savolga javob. Qolgan partiyalar (pat_anat 16–42) — egasi ruxsat berganda Sonnet bilan. Batafsil: `docs/ASSESSMENT.md`.
 * Mustaqil inson-mutaxassis taqrizi o‘tmagan; normativ hujjatlar (JK/JPK moddalari, buyruqlar) rasmiy matn bilan solishtirilishi kerak. Push yo‘q.

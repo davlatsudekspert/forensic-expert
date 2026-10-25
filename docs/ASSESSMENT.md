@@ -41,14 +41,14 @@ Ilovada: savol ekranida «Javob (adabiyot asosida)» — qisqa bandlar; har band
 Javobi yo‘q savolda «Javob tez kunda qo‘shiladi». «Foydalanilgan adabiyotlar» ekraniga og‘zaki javob manbalari ham qo‘shildi.
 Ma’lumot: `assets/content/assessment/oral_{sud_tib,pat_anat,sud_kimyo}.json` (`answers{qid:{c,g?,p[{t,s,p?,q,u?}]}}`, `sources[]`), model: `OralAnswers` (`assessment_models.dart`), test: `test/unit/assessment_oral_data_test.dart`.
 
-Hozirgi holat (yig‘ilgan, takror savollar bilan): sud_tib 365/436, sud_kimyo 274/333, pat_anat 177/501 savolga javob (~7 200 band, ~3,6 MB).
+Hozirgi holat (yig‘ilgan, takror savollar bilan): sud_tib 427/436, sud_kimyo 313/333, pat_anat 177/501 savolga javob (~8 100 band, ~4 MB). Sud-tibbiyot va sud-kimyo partiyalari tugagan; qolgani — patologik anatomiya (pat_anat 16–42).
 Egasi qarori (2026-10-25): patologik anatomiyada tayyor qismi chiqariladi, qolgani «tez kunda» (ish ko‘p, limit tejash).
 
 Jarayon (hamma bosqich Opus/Sonnet agent + dasturiy tekshiruv, `tools/assessment/assemble_oral.py`):
 1. **Qoralama** (agent): savolga 6–12 band; har band — o‘z so‘zi bilan o‘zbekcha da’vo + **so‘zma-so‘z iqtibos (≤300 belgi)** + kitob/bet yoki saqlangan veb-manba. Kitoblar: G‘iyosov «Sud tibbiyoti» 1–4, toksikologik kimyo majmuasi, Yuldashev «Giyohvand moddalar tahlili». Patanatomiya: Strukov–Serov darsligi (medchitalka.ru), MSD, WHO, PMC va h.k.; Vikipediya/studfile/mashina tarjimasi yo‘q.
 2. **Dasturiy tekshiruv** (`oral_build_ver.py`): iqtibos sahifada (±1)/saqlangan manba faylida topiladimi; topilmasa band tushadi.
 3. **Mustaqil audit** (boshqa agent): har band `OK / OVERSTATED / WRONG`; manba sifati (`strong/weak`); savol mavzuga mosligi (`topic_ok`).
-4. **Yig‘ish qoidalari:** `topic_ok=false` → savol «tez kunda»; OVERSTATED → faqat auditor `fix` matni (iqtibosdan; bo‘sh bo‘lsa tushadi); WRONG → tushadi (4+2 tarjima-xatosi bandi tuzatish bilan qabul qilingan); `weak` manba tushadi; kitob/darslik xatosini takrorlagan, eskirgan (nashr paytidagi tashkiliy holat, bekor qilingan buyruq, JK modda raqami tahriri noaniq), OCR bilan buzilgan, boshqa usuldan ko‘chirilgan bandlar qo‘lda tushirilgan (`oral_exclude.json`, ~67 band); 3 tadan kam band qolsa — javob tushadi. Terminologiya tuzatishlari (`qoplovchi (parietal)`, `vorsinkasimon (villyoz)`, «нередко» → «ancha tez-tez» …) skriptda.
+4. **Yig‘ish qoidalari:** `topic_ok=false` → savol «tez kunda»; OVERSTATED → faqat auditor `fix` matni (iqtibosdan; bo‘sh bo‘lsa tushadi); WRONG → tushadi (tarjima-xatosi bo‘lgan 6 band tuzatish bilan qabul qilingan); `weak` manba tushadi; kitob/darslik xatosini takrorlagan, eskirgan (nashr paytidagi tashkiliy holat, bekor qilingan buyruq, JK modda raqami tahriri noaniq), OCR bilan buzilgan, boshqa usuldan ko‘chirilgan bandlar qo‘lda tushirilgan (`oral_exclude.json`, ~79 band); 3 tadan kam band qolsa — javob tushadi. Terminologiya tuzatishlari (`qoplovchi (parietal)`, `vorsinkasimon (villyoz)`, «нередко» → «ancha tez-tez» …) skriptda.
 5. `gaps` (adabiyotda yoritilmagan jihatlar) faqat qisman javobda ko‘rsatiladi; kitob xatolariga oid izohlar ko‘rsatilmaydi.
 
 Cheklov: javoblar — manbadagi bayon (kitob/darslik davri); amaldagi O‘zbekiston normativ hujjatlari uchun (JPK/JK moddalari, buyruqlar) rasmiy matn bilan solishtirish kerak. Mustaqil inson-mutaxassis taqrizi o‘tmagan.
@@ -56,5 +56,5 @@ RU/EN: javob matni o‘zbekcha (CLAUDE.md: avval faqat o‘zbekcha); RU/EN foyda
 
 ## Ochiq ishlar
 * 482 ta kalitsiz test: ko‘pi klinik holatga tashxis qo‘llash (patanatomiya 286–401) — mahalliy qo‘llanma (masalan, Зайратьянц «Формулировка патологоанатомического диагноза» yoki O‘zbekiston kafedrasi) kerak.
-* Og‘zaki javoblar: qolgan partiyalar (sud_tib 28–33, sud_kimyo 13–15, pat_anat 16–42; ~330 savol) yozilmagan — ilovada «Javob tez kunda qo‘shiladi». Egasi ruxsat berganda **Sonnet** bilan davom etiladi (pipeline pastda).
+* Og‘zaki javoblar: qolgan partiyalar (pat_anat 16–42; ~320 savol) yozilmagan — ilovada «Javob tez kunda qo‘shiladi». Egasi ruxsat berganda **Sonnet** bilan davom etiladi (pipeline pastda).
 * Eski reja: patologik anatomiya uchun mahalliy kitob yo‘q.
