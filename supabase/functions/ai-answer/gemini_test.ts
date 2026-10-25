@@ -2,6 +2,7 @@
 import { assert, assertEquals } from "jsr:@std/assert@1";
 import {
   callModels,
+  candidateList,
   classifyFailure,
   type Deps,
   isStableFlash,
@@ -111,7 +112,7 @@ Deno.test("deadline stops further attempts", async () => {
   const clock = { t: 0 };
   const m = mock({ a: [{ status: 503 }, { status: 503 }] }, clock);
   m.deps.sleep = (ms) => {
-    clock.t += ms + 44_000; // simulate a very slow retry
+    clock.t += ms + 48_000; // simulate a very slow retry
     return Promise.resolve();
   };
   const r = await callModels("k", ["a", "b"], kb, accept, m.deps, 0);
@@ -172,4 +173,19 @@ Deno.test("web mode: text and deduplicated groundingChunks sources (max 8)", asy
   }
   assertEquals(m.calls[0].body.tools, [{ google_search: {} }]);
   assertEquals(webSourcesOf({}), []);
+});
+
+Deno.test("candidateList: preferred, newest full, lite second, fallbacks last (max 5)", () => {
+  const list = candidateList(
+    ["gemini-flash-latest"],
+    ["gemini-3.8-flash", "gemini-3.7-flash", "gemini-3.8-flash-lite"],
+  );
+  assertEquals(list, [
+    "gemini-flash-latest",
+    "gemini-3.8-flash",
+    "gemini-3.8-flash-lite",
+    "gemini-3.7-flash",
+    "gemini-2.5-flash",
+  ]);
+  assertEquals(candidateList([], []), ["gemini-2.5-flash", "gemini-2.5-flash-lite"]);
 });
