@@ -28,6 +28,7 @@ import '../features/admin/presentation/admin_screen.dart';
 import '../features/admin/presentation/admin_support_screens.dart';
 import '../features/admin/presentation/admin_verification_screens.dart';
 import '../features/ai/presentation/ai_screen.dart';
+import '../features/assessment/presentation/assessment_screens.dart';
 import '../features/casebook/presentation/casebook_screens.dart';
 import '../features/class_groups/presentation/assign_test_screen.dart';
 import '../features/class_groups/presentation/group_detail_screen.dart';
@@ -267,6 +268,12 @@ final routerProvider = Provider<GoRouter>((ref) {
       }
       if (mode == UserMode.student &&
           (loc == Routes.lessons || loc.startsWith('${Routes.lessons}/'))) {
+        return Routes.home;
+      }
+      // «Bilim va malakani baholash» — Mutaxassis va Ustoz uchun (talabaga yo‘q).
+      if (mode == UserMode.student &&
+          (loc == Routes.assessment ||
+              loc.startsWith('${Routes.assessment}/'))) {
         return Routes.home;
       }
       _recordFirstStep(ref, loc);
@@ -769,6 +776,33 @@ final routerProvider = Provider<GoRouter>((ref) {
                     ],
                   ),
                   GoRoute(
+                    path: 'assessment',
+                    builder: (c, s) => const AssessmentHubScreen(),
+                    routes: [
+                      GoRoute(
+                        path: ':spec',
+                        builder: (c, s) => AssessmentSpecialtyScreen(
+                          specialtyId: s.pathParameters['spec']!,
+                        ),
+                        routes: [
+                          GoRoute(
+                            path: 'test',
+                            builder: (c, s) => AssessmentTestScreen(
+                              specialtyId: s.pathParameters['spec']!,
+                            ),
+                          ),
+                          GoRoute(
+                            path: 'q/:id',
+                            builder: (c, s) => AssessmentQuestionScreen(
+                              specialtyId: s.pathParameters['spec']!,
+                              questionId: s.pathParameters['id']!,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  GoRoute(
                     path: 'court-prep',
                     builder: (c, s) =>
                         const CourtPrepGate(child: CourtPrepScreen()),
@@ -938,7 +972,11 @@ final routerProvider = Provider<GoRouter>((ref) {
           ),
           StatefulShellBranch(
             routes: [
-              GoRoute(path: Routes.ai, builder: (c, s) => const AiScreen()),
+              GoRoute(
+                path: Routes.ai,
+                builder: (c, s) =>
+                    AiScreen(initialQuestion: s.uri.queryParameters['q']),
+              ),
             ],
           ),
           StatefulShellBranch(

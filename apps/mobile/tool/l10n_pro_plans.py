@@ -154,10 +154,6 @@ k('proCtxInstrumentsRest', 'Offer at the end of the free instruments lesson.',
   'All lessons of this course and their tests open with Expert Pro.',
   'Все уроки этого курса и тесты к ним открываются с Pro для специалиста.',
   'Bu kursning barcha darslari va ularning testlari Mutaxassis Pro bilan ochiladi.')
-k('studyNoGuaranteeNote', 'Small note under the test start: no guarantee about real exam questions.',
-  'Practice questions are prepared for study from open sources. They are not a guarantee that the same questions will appear in an official exam.',
-  'Вопросы подготовлены для обучения по открытым источникам. Они не гарантируют, что такие же вопросы попадутся на официальном экзамене.',
-  'Savollar o‘quv maqsadida, ochiq manbalar asosida tuzilgan. Rasmiy imtihonda aynan shu savollar tushishiga kafolat berilmaydi.')
 k('proCtxGroupLimit', 'Shown when a free teacher tries to create a second group.',
   'The free plan includes one group. Create more groups with Teacher Pro.',
   'В бесплатном тарифе одна группа. Больше групп — с Pro для преподавателя.',

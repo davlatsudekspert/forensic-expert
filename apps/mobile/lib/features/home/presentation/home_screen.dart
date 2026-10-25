@@ -301,6 +301,14 @@ class HomeScreen extends ConsumerWidget {
                   if (mode != UserMode.student) ...[
                     const SizedBox(height: FeSpace.sm),
                     _ResourceTile(
+                      key: const Key('home.assessment'),
+                      icon: Icons.fact_check_outlined,
+                      title: l.assessmentTitle,
+                      body: l.assessmentSubtitle,
+                      onTap: () => context.push(Routes.assessment),
+                    ),
+                    const SizedBox(height: FeSpace.sm),
+                    _ResourceTile(
                       key: const Key('home.courtPrep'),
                       icon: Icons.gavel_outlined,
                       title: l.courtTitle,

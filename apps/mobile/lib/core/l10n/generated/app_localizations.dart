@@ -19437,12 +19437,6 @@ abstract class AppLocalizations {
   /// **'No plans yet.'**
   String get admProEmpty;
 
-  /// Small note under the test start: no guarantee about real exam questions.
-  ///
-  /// In en, this message translates to:
-  /// **'Practice questions are prepared for study from open sources. They are not a guarantee that the same questions will appear in an official exam.'**
-  String get studyNoGuaranteeNote;
-
   /// Plan name: premium (everything unlocked).
   ///
   /// In en, this message translates to:
@@ -19502,6 +19496,270 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Sourced content for this discipline is being added step by step. Only the records available now are shown.'**
   String get disciplineSparseNote;
+
+  /// Section title (home tile, screen title, menus).
+  ///
+  /// In en, this message translates to:
+  /// **'Knowledge & Skills Assessment'**
+  String get assessmentTitle;
+
+  /// Home tile body.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions and tests for forensic medicine, pathological anatomy and forensic chemistry'**
+  String get assessmentSubtitle;
+
+  /// Hub intro line.
+  ///
+  /// In en, this message translates to:
+  /// **'Official oral-exam question lists and practice tests by specialty and qualification category.'**
+  String get assessmentIntro;
+
+  /// Specialty: forensic medical examination.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic medical examination'**
+  String get assessmentSpecSudTib;
+
+  /// Specialty: pathological anatomy.
+  ///
+  /// In en, this message translates to:
+  /// **'Pathological anatomy'**
+  String get assessmentSpecPatAnat;
+
+  /// Specialty: forensic chemical examination.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic chemical examination'**
+  String get assessmentSpecSudKimyo;
+
+  /// Qualification category group: third and second.
+  ///
+  /// In en, this message translates to:
+  /// **'Third and second category'**
+  String get assessmentCatC23;
+
+  /// Qualification category: first.
+  ///
+  /// In en, this message translates to:
+  /// **'First category'**
+  String get assessmentCatC1;
+
+  /// Qualification category: highest.
+  ///
+  /// In en, this message translates to:
+  /// **'Highest category'**
+  String get assessmentCatC0;
+
+  /// Tab: oral exam questions.
+  ///
+  /// In en, this message translates to:
+  /// **'Oral questions'**
+  String get assessmentTabOral;
+
+  /// Tab: tests.
+  ///
+  /// In en, this message translates to:
+  /// **'Tests'**
+  String get assessmentTabTests;
+
+  /// Number of questions.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} questions'**
+  String assessmentCountQuestions(int n);
+
+  /// Number of tests.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} tests'**
+  String assessmentCountTests(int n);
+
+  /// Personal progress: ready questions.
+  ///
+  /// In en, this message translates to:
+  /// **'{done} of {total} ready'**
+  String assessmentReadyProgress(int done, int total);
+
+  /// Search field hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search questions'**
+  String get assessmentSearchHint;
+
+  /// Empty search result.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing found'**
+  String get assessmentNoResults;
+
+  /// Hint: question text language.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions are shown in Uzbek, exactly as in the official list.'**
+  String get assessmentUzOnly;
+
+  /// Source line.
+  ///
+  /// In en, this message translates to:
+  /// **'Source: {source}'**
+  String assessmentSourceLine(String source);
+
+  /// Official source name of the question lists.
+  ///
+  /// In en, this message translates to:
+  /// **'Center for Assessing the Qualification of Medical and Pharmaceutical Workers (tmbm.ssv.uz)'**
+  String get assessmentSourceName;
+
+  /// Button: mark question as ready.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark as ready'**
+  String get assessmentMarkReady;
+
+  /// Button: remove ready mark.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove ready mark'**
+  String get assessmentUnmarkReady;
+
+  /// Chip on a ready question.
+  ///
+  /// In en, this message translates to:
+  /// **'Ready'**
+  String get assessmentReadyChip;
+
+  /// Button: send the question to Forensic AI.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask Forensic AI'**
+  String get assessmentAskAi;
+
+  /// Question number label.
+  ///
+  /// In en, this message translates to:
+  /// **'Question {n}'**
+  String assessmentQuestionNo(int n);
+
+  /// Button: start practice.
+  ///
+  /// In en, this message translates to:
+  /// **'Start practice'**
+  String get assessmentTestStart;
+
+  /// Number of tests with a confirmed answer key.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} questions with a confirmed answer key'**
+  String assessmentTestPool(int n);
+
+  /// Number of tests without a confirmed key (not in practice).
+  ///
+  /// In en, this message translates to:
+  /// **'{n} questions have no confirmed answer yet and are not included in practice.'**
+  String assessmentTestUnkeyed(int n);
+
+  /// No test has a confirmed key yet.
+  ///
+  /// In en, this message translates to:
+  /// **'Answer keys for this specialty are being verified against the books.'**
+  String get assessmentTestNone;
+
+  /// Button: list all test questions.
+  ///
+  /// In en, this message translates to:
+  /// **'All test questions'**
+  String get assessmentTestList;
+
+  /// Label on a test question without a confirmed key.
+  ///
+  /// In en, this message translates to:
+  /// **'Answer key not confirmed'**
+  String get assessmentKeyPending;
+
+  /// Answer feedback: correct.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct'**
+  String get assessmentCorrect;
+
+  /// Answer feedback: wrong.
+  ///
+  /// In en, this message translates to:
+  /// **'Incorrect'**
+  String get assessmentWrong;
+
+  /// Shows the correct answer text.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct answer: {a}'**
+  String assessmentCorrectAnswer(String a);
+
+  /// Where the answer key comes from.
+  ///
+  /// In en, this message translates to:
+  /// **'Answer source: {src}'**
+  String assessmentAnswerSource(String src);
+
+  /// Key source: file supplied by the teacher.
+  ///
+  /// In en, this message translates to:
+  /// **'answer-keyed test bank supplied by the teacher (Toxicological chemistry)'**
+  String get assessmentKeyTeacher;
+
+  /// Button: next question.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get assessmentNext;
+
+  /// Button: finish practice.
+  ///
+  /// In en, this message translates to:
+  /// **'Finish'**
+  String get assessmentFinish;
+
+  /// Result screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Result'**
+  String get assessmentResultTitle;
+
+  /// Result score.
+  ///
+  /// In en, this message translates to:
+  /// **'{c} of {n} correct'**
+  String assessmentResultScore(int c, int n);
+
+  /// Button: practice again.
+  ///
+  /// In en, this message translates to:
+  /// **'Practice again'**
+  String get assessmentRetry;
+
+  /// Heading: questions answered wrongly.
+  ///
+  /// In en, this message translates to:
+  /// **'Review your mistakes'**
+  String get assessmentMistakes;
+
+  /// Fallback when the question pack is missing.
+  ///
+  /// In en, this message translates to:
+  /// **'The question pack could not be loaded.'**
+  String get assessmentEmpty;
+
+  /// Link text to the official page.
+  ///
+  /// In en, this message translates to:
+  /// **'Official list'**
+  String get assessmentOpenSource;
+
+  /// Book citation with the PDF page of the supplied file.
+  ///
+  /// In en, this message translates to:
+  /// **'{title}, PDF p. {page}'**
+  String assessmentBookPage(String title, int page);
 }
 
 class _AppLocalizationsDelegate

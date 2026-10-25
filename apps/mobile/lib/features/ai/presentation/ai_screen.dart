@@ -34,7 +34,10 @@ import 'web_answer_view.dart';
 /// cheklovlar), har bir da’vo yonida raqamli citation, manbalar ro‘yxati
 /// dalil darajasi bilan va ekspert xulosasi haqidagi doimiy izoh.
 class AiScreen extends ConsumerStatefulWidget {
-  const AiScreen({super.key});
+  const AiScreen({super.key, this.initialQuestion});
+
+  /// Boshqa bo‘limdan (masalan, savol kartasidan) kelgan tayyor savol matni.
+  final String? initialQuestion;
 
   @override
   ConsumerState<AiScreen> createState() => _AiScreenState();
@@ -52,9 +55,20 @@ class _AiScreenState extends ConsumerState<AiScreen> {
   @override
   void initState() {
     super.initState();
+    final q = widget.initialQuestion?.trim();
+    if (q != null && q.isNotEmpty) _controller.text = q;
     // Talaba rejimida standart uslub — «Tushuntirib bering».
     if (ref.read(settingsControllerProvider).userMode == UserMode.student) {
       _experience = AiExperience.tutor;
+    }
+  }
+
+  @override
+  void didUpdateWidget(AiScreen old) {
+    super.didUpdateWidget(old);
+    final q = widget.initialQuestion?.trim();
+    if (q != null && q.isNotEmpty && q != old.initialQuestion?.trim()) {
+      _controller.text = q;
     }
   }
 

@@ -11293,10 +11293,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get admProEmpty => 'Тарифов пока нет.';
 
   @override
-  String get studyNoGuaranteeNote =>
-      'Вопросы подготовлены для обучения по открытым источникам. Они не гарантируют, что такие же вопросы попадутся на официальном экзамене.';
-
-  @override
   String get proPlanPremium => 'Премиум';
 
   @override
@@ -11330,4 +11326,164 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get disciplineSparseNote =>
       'Материалы по этой дисциплине добавляются постепенно. Показаны только имеющиеся записи.';
+
+  @override
+  String get assessmentTitle => 'Проверка знаний и компетенций';
+
+  @override
+  String get assessmentSubtitle =>
+      'Вопросы и тесты по судебной медицине, патологической анатомии и судебной химии';
+
+  @override
+  String get assessmentIntro =>
+      'Официальные перечни вопросов устного экзамена и тренировочные тесты по специальностям и квалификационным категориям.';
+
+  @override
+  String get assessmentSpecSudTib => 'Судебно-медицинская экспертиза';
+
+  @override
+  String get assessmentSpecPatAnat => 'Патологическая анатомия';
+
+  @override
+  String get assessmentSpecSudKimyo => 'Судебно-химическая экспертиза';
+
+  @override
+  String get assessmentCatC23 => 'Третья и вторая категория';
+
+  @override
+  String get assessmentCatC1 => 'Первая категория';
+
+  @override
+  String get assessmentCatC0 => 'Высшая категория';
+
+  @override
+  String get assessmentTabOral => 'Устные вопросы';
+
+  @override
+  String get assessmentTabTests => 'Тесты';
+
+  @override
+  String assessmentCountQuestions(int n) {
+    return 'Вопросов: $n';
+  }
+
+  @override
+  String assessmentCountTests(int n) {
+    return 'Тестов: $n';
+  }
+
+  @override
+  String assessmentReadyProgress(int done, int total) {
+    return 'Готово: $done из $total';
+  }
+
+  @override
+  String get assessmentSearchHint => 'Поиск по вопросам';
+
+  @override
+  String get assessmentNoResults => 'Ничего не найдено';
+
+  @override
+  String get assessmentUzOnly =>
+      'Вопросы приведены на узбекском языке, как в официальном перечне.';
+
+  @override
+  String assessmentSourceLine(String source) {
+    return 'Источник: $source';
+  }
+
+  @override
+  String get assessmentSourceName =>
+      'Центр оценки квалификации медицинских и фармацевтических работников (tmbm.ssv.uz)';
+
+  @override
+  String get assessmentMarkReady => 'Отметить как выученный';
+
+  @override
+  String get assessmentUnmarkReady => 'Снять отметку';
+
+  @override
+  String get assessmentReadyChip => 'Готов';
+
+  @override
+  String get assessmentAskAi => 'Спросить Forensic AI';
+
+  @override
+  String assessmentQuestionNo(int n) {
+    return 'Вопрос $n';
+  }
+
+  @override
+  String get assessmentTestStart => 'Начать тренировку';
+
+  @override
+  String assessmentTestPool(int n) {
+    return 'Вопросов с подтверждённым ключом: $n';
+  }
+
+  @override
+  String assessmentTestUnkeyed(int n) {
+    return 'У $n вопросов ключ пока не подтверждён, они не включены в тренировку.';
+  }
+
+  @override
+  String get assessmentTestNone =>
+      'Ключи для этой специальности сверяются с учебниками.';
+
+  @override
+  String get assessmentTestList => 'Все тестовые вопросы';
+
+  @override
+  String get assessmentKeyPending => 'Ключ не подтверждён';
+
+  @override
+  String get assessmentCorrect => 'Верно';
+
+  @override
+  String get assessmentWrong => 'Неверно';
+
+  @override
+  String assessmentCorrectAnswer(String a) {
+    return 'Правильный ответ: $a';
+  }
+
+  @override
+  String assessmentAnswerSource(String src) {
+    return 'Источник ответа: $src';
+  }
+
+  @override
+  String get assessmentKeyTeacher =>
+      'тестовый банк с ключами от преподавателя (токсикологическая химия)';
+
+  @override
+  String get assessmentNext => 'Далее';
+
+  @override
+  String get assessmentFinish => 'Завершить';
+
+  @override
+  String get assessmentResultTitle => 'Результат';
+
+  @override
+  String assessmentResultScore(int c, int n) {
+    return 'Верно: $c из $n';
+  }
+
+  @override
+  String get assessmentRetry => 'Повторить';
+
+  @override
+  String get assessmentMistakes => 'Разбор ошибок';
+
+  @override
+  String get assessmentEmpty => 'Не удалось загрузить набор вопросов.';
+
+  @override
+  String get assessmentOpenSource => 'Официальный перечень';
+
+  @override
+  String assessmentBookPage(String title, int page) {
+    return '$title, PDF, с. $page';
+  }
 }

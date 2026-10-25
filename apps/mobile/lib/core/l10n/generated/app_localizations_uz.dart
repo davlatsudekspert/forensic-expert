@@ -11179,10 +11179,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get admProEmpty => 'Hozircha rejalar yo‘q.';
 
   @override
-  String get studyNoGuaranteeNote =>
-      'Savollar o‘quv maqsadida, ochiq manbalar asosida tuzilgan. Rasmiy imtihonda aynan shu savollar tushishiga kafolat berilmaydi.';
-
-  @override
   String get proPlanPremium => 'Premium rejasi';
 
   @override
@@ -11216,4 +11212,164 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get disciplineSparseNote =>
       'Bu fan bo‘yicha manbali kontent bosqichma-bosqich qo‘shilmoqda. Hozircha mavjud yozuvlar ko‘rsatilgan.';
+
+  @override
+  String get assessmentTitle => 'Bilim va malakani baholash';
+
+  @override
+  String get assessmentSubtitle =>
+      'Sud tibbiyoti, patologik anatomiya va sud kimyosi bo‘yicha savollar va testlar';
+
+  @override
+  String get assessmentIntro =>
+      'Mutaxassislik va malaka toifalari bo‘yicha rasmiy og‘zaki imtihon savollari ro‘yxati va test mashqlari.';
+
+  @override
+  String get assessmentSpecSudTib => 'Sud-tibbiy ekspertiza';
+
+  @override
+  String get assessmentSpecPatAnat => 'Patologik anatomiya';
+
+  @override
+  String get assessmentSpecSudKimyo => 'Sud-kimyogar ekspertiza';
+
+  @override
+  String get assessmentCatC23 => 'Uchinchi va ikkinchi toifa';
+
+  @override
+  String get assessmentCatC1 => 'Birinchi toifa';
+
+  @override
+  String get assessmentCatC0 => 'Oliy toifa';
+
+  @override
+  String get assessmentTabOral => 'Og‘zaki savollar';
+
+  @override
+  String get assessmentTabTests => 'Testlar';
+
+  @override
+  String assessmentCountQuestions(int n) {
+    return '$n ta savol';
+  }
+
+  @override
+  String assessmentCountTests(int n) {
+    return '$n ta test';
+  }
+
+  @override
+  String assessmentReadyProgress(int done, int total) {
+    return '$done/$total tayyor';
+  }
+
+  @override
+  String get assessmentSearchHint => 'Savollar bo‘yicha qidirish';
+
+  @override
+  String get assessmentNoResults => 'Hech narsa topilmadi';
+
+  @override
+  String get assessmentUzOnly =>
+      'Savollar rasmiy ro‘yxatdagi kabi o‘zbek tilida keltirilgan.';
+
+  @override
+  String assessmentSourceLine(String source) {
+    return 'Manba: $source';
+  }
+
+  @override
+  String get assessmentSourceName =>
+      'Tibbiyot va farmatsevtika xodimlarining malakasini baholash markazi (tmbm.ssv.uz)';
+
+  @override
+  String get assessmentMarkReady => 'Tayyor deb belgilash';
+
+  @override
+  String get assessmentUnmarkReady => 'Belgini olib tashlash';
+
+  @override
+  String get assessmentReadyChip => 'Tayyor';
+
+  @override
+  String get assessmentAskAi => 'Forensic AI’dan so‘rash';
+
+  @override
+  String assessmentQuestionNo(int n) {
+    return '$n-savol';
+  }
+
+  @override
+  String get assessmentTestStart => 'Mashqni boshlash';
+
+  @override
+  String assessmentTestPool(int n) {
+    return 'Javob kaliti tasdiqlangan savollar: $n ta';
+  }
+
+  @override
+  String assessmentTestUnkeyed(int n) {
+    return '$n ta savolning javob kaliti hali tasdiqlanmagan, ular mashqqa kiritilmagan.';
+  }
+
+  @override
+  String get assessmentTestNone =>
+      'Bu mutaxassislik uchun javob kalitlari kitoblar bo‘yicha tekshirilmoqda.';
+
+  @override
+  String get assessmentTestList => 'Barcha test savollari';
+
+  @override
+  String get assessmentKeyPending => 'Javob kaliti tasdiqlanmagan';
+
+  @override
+  String get assessmentCorrect => 'To‘g‘ri';
+
+  @override
+  String get assessmentWrong => 'Noto‘g‘ri';
+
+  @override
+  String assessmentCorrectAnswer(String a) {
+    return 'To‘g‘ri javob: $a';
+  }
+
+  @override
+  String assessmentAnswerSource(String src) {
+    return 'Javob manbasi: $src';
+  }
+
+  @override
+  String get assessmentKeyTeacher =>
+      'ustoz taqdim etgan kalitli test banki (Toksikologik kimyo)';
+
+  @override
+  String get assessmentNext => 'Keyingisi';
+
+  @override
+  String get assessmentFinish => 'Yakunlash';
+
+  @override
+  String get assessmentResultTitle => 'Natija';
+
+  @override
+  String assessmentResultScore(int c, int n) {
+    return '$c / $n to‘g‘ri';
+  }
+
+  @override
+  String get assessmentRetry => 'Qayta mashq qilish';
+
+  @override
+  String get assessmentMistakes => 'Xatolar tahlili';
+
+  @override
+  String get assessmentEmpty => 'Savollar to‘plamini yuklab bo‘lmadi.';
+
+  @override
+  String get assessmentOpenSource => 'Rasmiy ro‘yxat';
+
+  @override
+  String assessmentBookPage(String title, int page) {
+    return '$title, PDF $page-bet';
+  }
 }

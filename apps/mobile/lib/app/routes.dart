@@ -66,6 +66,11 @@ abstract final class Routes {
   static String guideline(String id) =>
       '/library/guidelines/card/${Uri.encodeComponent(id)}';
   // «Sudda so‘roq: tayyorgarlik» .
+  static const assessment = '/library/assessment';
+  static String assessmentSpecialty(String id) => '/library/assessment/$id';
+  static String assessmentQuestion(String id, String qid) =>
+      '/library/assessment/$id/q/$qid';
+  static String assessmentTest(String id) => '/library/assessment/$id/test';
   static const courtPrep = '/library/court-prep';
   static const courtPrepPractice = '/library/court-prep/practice';
   static const courtPrepPrinciples = '/library/court-prep/principles';
@@ -130,6 +135,7 @@ abstract final class Routes {
       '/library/source/${Uri.encodeComponent(id)}';
 
   static const ai = '/ai';
+  static String aiAsk(String q) => '/ai?q=${Uri.encodeQueryComponent(q)}';
   static const profile = '/profile';
   static const profileLanguage = '/profile/language';
   static const profileMode = '/profile/mode';

@@ -217,9 +217,7 @@
     "description": "Theme option."
   },
   "settingsMode": "Mode",
-  "@settingsMode": {
-    "description": "Profile row title: usage mode (student, teacher or expert)."
-  },
+  "@settingsMode": {"description": "Profile row title: usage mode (student, teacher or expert)."},
   "scientificDatabaseLabel": "Scientific database",
   "@scientificDatabaseLabel": {
     "description": "Settings row showing content pack version."
@@ -14149,549 +14147,345 @@
     }
   },
   "proUnlock": "Unlock with Pro",
-  "@proUnlock": {
-    "description": "Button on a Pro lock card: opens the Pro page."
-  },
+  "@proUnlock": {"description": "Button on a Pro lock card: opens the Pro page."},
   "proTitle": "Pro plan",
-  "@proTitle": {
-    "description": "Pro page title."
-  },
+  "@proTitle": {"description": "Pro page title."},
   "proPlanStudent": "Student Pro",
-  "@proPlanStudent": {
-    "description": "Plan name: student."
-  },
+  "@proPlanStudent": {"description": "Plan name: student."},
   "proPlanTeacher": "Teacher Pro",
-  "@proPlanTeacher": {
-    "description": "Plan name: teacher."
-  },
+  "@proPlanTeacher": {"description": "Plan name: teacher."},
   "proPlanExpert": "Expert Pro",
-  "@proPlanExpert": {
-    "description": "Plan name: expert (professional mode)."
-  },
+  "@proPlanExpert": {"description": "Plan name: expert (professional mode)."},
   "proProfileRow": "Plan",
-  "@proProfileRow": {
-    "description": "Profile row title: current plan."
-  },
+  "@proProfileRow": {"description": "Profile row title: current plan."},
   "proFreeAlways": "Safety information, sources and provenance are always free.",
-  "@proFreeAlways": {
-    "description": "Pro page and lock pages: safety/sources are always free."
-  },
+  "@proFreeAlways": {"description": "Pro page and lock pages: safety/sources are always free."},
   "proBenefitFullQuizBank": "Full question bank: 4,370 questions in 211 topics",
-  "@proBenefitFullQuizBank": {
-    "description": "Lock card benefit."
-  },
+  "@proBenefitFullQuizBank": {"description": "Lock card benefit."},
   "proBenefitExamMode": "Exam mode with a review of every answer",
-  "@proBenefitExamMode": {
-    "description": "Lock card benefit."
-  },
+  "@proBenefitExamMode": {"description": "Lock card benefit."},
   "proBenefitAllFlashcards": "Flashcards for all subjects",
-  "@proBenefitAllFlashcards": {
-    "description": "Lock card benefit."
-  },
+  "@proBenefitAllFlashcards": {"description": "Lock card benefit."},
   "proBenefitErrorAnalytics": "Error analysis and statistics",
-  "@proBenefitErrorAnalytics": {
-    "description": "Lock card benefit."
-  },
+  "@proBenefitErrorAnalytics": {"description": "Lock card benefit."},
   "proBenefitOfflineDownload": "Download materials for offline study",
-  "@proBenefitOfflineDownload": {
-    "description": "Lock card benefit."
-  },
+  "@proBenefitOfflineDownload": {"description": "Lock card benefit."},
   "proBenefitAllLessons": "All 211 lecture presentations",
-  "@proBenefitAllLessons": {
-    "description": "Lock card benefit."
-  },
+  "@proBenefitAllLessons": {"description": "Lock card benefit."},
   "proBenefitUnlimitedGroupTests": "Unlimited groups and group tests of more than 10 questions",
-  "@proBenefitUnlimitedGroupTests": {
-    "description": "Lock card benefit."
-  },
+  "@proBenefitUnlimitedGroupTests": {"description": "Lock card benefit."},
   "proBenefitResultsCsv": "Export results to CSV",
-  "@proBenefitResultsCsv": {
-    "description": "Lock card benefit."
-  },
+  "@proBenefitResultsCsv": {"description": "Lock card benefit."},
   "proBenefitHardestDiscussion": "Discussion of the hardest questions",
-  "@proBenefitHardestDiscussion": {
-    "description": "Lock card benefit."
-  },
+  "@proBenefitHardestDiscussion": {"description": "Lock card benefit."},
   "proBenefitLiveTestLarge": "Live tests for large audiences",
-  "@proBenefitLiveTestLarge": {
-    "description": "Lock card benefit."
-  },
+  "@proBenefitLiveTestLarge": {"description": "Lock card benefit."},
   "proBenefitInstrumentsCourseFull": "The full «Working with instruments» course",
-  "@proBenefitInstrumentsCourseFull": {
-    "description": "Lock card benefit."
-  },
+  "@proBenefitInstrumentsCourseFull": {"description": "Lock card benefit."},
   "proBenefitProCalculators": "Professional calculators: PMI, concentration, LOD/LOQ and more",
-  "@proBenefitProCalculators": {
-    "description": "Lock card benefit."
-  },
+  "@proBenefitProCalculators": {"description": "Lock card benefit."},
   "proBenefitCaseNotebook": "Expert casebook with sourced blocks for your conclusions",
-  "@proBenefitCaseNotebook": {
-    "description": "Lock card benefit."
-  },
+  "@proBenefitCaseNotebook": {"description": "Lock card benefit."},
   "proBenefitCourtPrep": "Court testimony preparation: simulator, drills and statistics",
-  "@proBenefitCourtPrep": {
-    "description": "Lock card benefit."
-  },
+  "@proBenefitCourtPrep": {"description": "Lock card benefit."},
   "proBenefitAiExtended": "A higher daily AI limit",
-  "@proBenefitAiExtended": {
-    "description": "Lock card benefit."
-  },
+  "@proBenefitAiExtended": {"description": "Lock card benefit."},
   "proCtxAllLessons": "All 211 lecture presentations and their tests open with Teacher Pro.",
-  "@proCtxAllLessons": {
-    "description": "Offer at the end of a free lecture lesson."
-  },
+  "@proCtxAllLessons": {"description": "Offer at the end of a free lecture lesson."},
   "proCtxInstrumentsRest": "All lessons of this course and their tests open with Expert Pro.",
-  "@proCtxInstrumentsRest": {
-    "description": "Offer at the end of the free instruments lesson."
-  },
+  "@proCtxInstrumentsRest": {"description": "Offer at the end of the free instruments lesson."},
   "proCtxGroupLimit": "The free plan includes one group. Create more groups with Teacher Pro.",
-  "@proCtxGroupLimit": {
-    "description": "Shown when a free teacher tries to create a second group."
-  },
+  "@proCtxGroupLimit": {"description": "Shown when a free teacher tries to create a second group."},
   "proStateFree": "Free plan",
-  "@proStateFree": {
-    "description": "Pro page status: free plan."
-  },
+  "@proStateFree": {"description": "Pro page status: free plan."},
   "proStateFreeBody": "Reference, sources and safety information are always free. Pro adds extra tools for your mode.",
-  "@proStateFreeBody": {
-    "description": "Pro page status body for the free plan."
-  },
+  "@proStateFreeBody": {"description": "Pro page status body for the free plan."},
   "proStateTrial": "{plan}: free trial",
-  "@proStateTrial": {
-    "description": "Pro page status: trial active. {plan} is the plan name.",
-    "placeholders": {
-      "plan": {
-        "type": "String"
-      }
-    }
-  },
+  "@proStateTrial": {"description": "Pro page status: trial active. {plan} is the plan name.", "placeholders": {"plan": {"type": "String"}}},
   "proStateActive": "{plan} is active",
-  "@proStateActive": {
-    "description": "Pro page status: plan active. {plan} is the plan name.",
-    "placeholders": {
-      "plan": {
-        "type": "String"
-      }
-    }
-  },
+  "@proStateActive": {"description": "Pro page status: plan active. {plan} is the plan name.", "placeholders": {"plan": {"type": "String"}}},
   "proStateUntil": "Until {date}",
-  "@proStateUntil": {
-    "description": "Pro page: end date. {date} is a formatted date.",
-    "placeholders": {
-      "date": {
-        "type": "String"
-      }
-    }
-  },
+  "@proStateUntil": {"description": "Pro page: end date. {date} is a formatted date.", "placeholders": {"date": {"type": "String"}}},
   "proStateNoEnd": "No end date",
-  "@proStateNoEnd": {
-    "description": "Pro page: plan without an end date."
-  },
+  "@proStateNoEnd": {"description": "Pro page: plan without an end date."},
   "proAutoRenewOn": "Auto-renews",
-  "@proAutoRenewOn": {
-    "description": "Pro page: subscription renews automatically."
-  },
+  "@proAutoRenewOn": {"description": "Pro page: subscription renews automatically."},
   "proAutoRenewOff": "Does not renew",
-  "@proAutoRenewOff": {
-    "description": "Pro page: subscription does not renew."
-  },
+  "@proAutoRenewOff": {"description": "Pro page: subscription does not renew."},
   "proSourceStore": "Store subscription",
-  "@proSourceStore": {
-    "description": "Plan source: store subscription."
-  },
+  "@proSourceStore": {"description": "Plan source: store subscription."},
   "proSourceAdmin": "Granted by administrator",
-  "@proSourceAdmin": {
-    "description": "Plan source: granted by an administrator."
-  },
+  "@proSourceAdmin": {"description": "Plan source: granted by an administrator."},
   "proSourceTrial": "Free trial",
-  "@proSourceTrial": {
-    "description": "Plan source: free trial."
-  },
+  "@proSourceTrial": {"description": "Plan source: free trial."},
   "proOwnModeNote": "A plan unlocks features of its own mode only. Switching the mode does not unlock another plan’s features.",
-  "@proOwnModeNote": {
-    "description": "Pro page: a plan unlocks only its own mode."
-  },
+  "@proOwnModeNote": {"description": "Pro page: a plan unlocks only its own mode."},
   "proTeacherRoleNote": "The Teacher panel still requires the teacher role on the server; Pro does not grant the role.",
-  "@proTeacherRoleNote": {
-    "description": "Pro page (teacher plan): server role is still required."
-  },
+  "@proTeacherRoleNote": {"description": "Pro page (teacher plan): server role is still required."},
   "proIncludesStudent1": "Full question bank: 4,370 questions in 211 topics",
-  "@proIncludesStudent1": {
-    "description": "Pro page: what the student plan includes, item 1."
-  },
+  "@proIncludesStudent1": {"description": "Pro page: what the student plan includes, item 1."},
   "proIncludesStudent2": "Exam mode with a review of every answer",
-  "@proIncludesStudent2": {
-    "description": "Pro page: what the student plan includes, item 2."
-  },
+  "@proIncludesStudent2": {"description": "Pro page: what the student plan includes, item 2."},
   "proIncludesStudent3": "Flashcards for all subjects",
-  "@proIncludesStudent3": {
-    "description": "Pro page: what the student plan includes, item 3."
-  },
+  "@proIncludesStudent3": {"description": "Pro page: what the student plan includes, item 3."},
   "proIncludesStudent4": "Error analysis and statistics",
-  "@proIncludesStudent4": {
-    "description": "Pro page: what the student plan includes, item 4."
-  },
+  "@proIncludesStudent4": {"description": "Pro page: what the student plan includes, item 4."},
   "proIncludesTeacher1": "All 211 lecture presentations (projector mode)",
-  "@proIncludesTeacher1": {
-    "description": "Pro page: what the teacher plan includes, item 1."
-  },
+  "@proIncludesTeacher1": {"description": "Pro page: what the teacher plan includes, item 1."},
   "proIncludesTeacher2": "Unlimited groups and tests of more than 10 questions",
-  "@proIncludesTeacher2": {
-    "description": "Pro page: what the teacher plan includes, item 2."
-  },
+  "@proIncludesTeacher2": {"description": "Pro page: what the teacher plan includes, item 2."},
   "proIncludesTeacher3": "Results export to CSV",
-  "@proIncludesTeacher3": {
-    "description": "Pro page: what the teacher plan includes, item 3."
-  },
+  "@proIncludesTeacher3": {"description": "Pro page: what the teacher plan includes, item 3."},
   "proIncludesTeacher4": "Discussion of the hardest questions",
-  "@proIncludesTeacher4": {
-    "description": "Pro page: what the teacher plan includes, item 4."
-  },
+  "@proIncludesTeacher4": {"description": "Pro page: what the teacher plan includes, item 4."},
   "proIncludesExpert1": "The full «Working with instruments» course: Kristallyuks/ethanol, UV-1900/COHb, GC-MS",
-  "@proIncludesExpert1": {
-    "description": "Pro page: what the expert plan includes, item 1."
-  },
+  "@proIncludesExpert1": {"description": "Pro page: what the expert plan includes, item 1."},
   "proIncludesExpert2": "Professional calculators: PMI, concentration, LOD/LOQ and more",
-  "@proIncludesExpert2": {
-    "description": "Pro page: what the expert plan includes, item 2."
-  },
+  "@proIncludesExpert2": {"description": "Pro page: what the expert plan includes, item 2."},
   "proIncludesExpert3": "Expert casebook and court testimony preparation",
-  "@proIncludesExpert3": {
-    "description": "Pro page: what the expert plan includes, item 3."
-  },
+  "@proIncludesExpert3": {"description": "Pro page: what the expert plan includes, item 3."},
   "proIncludesExpert4": "A higher daily AI limit",
-  "@proIncludesExpert4": {
-    "description": "Pro page: what the expert plan includes, item 4."
-  },
+  "@proIncludesExpert4": {"description": "Pro page: what the expert plan includes, item 4."},
   "proGuestTitle": "Sign in to use Pro",
-  "@proGuestTitle": {
-    "description": "Pro page for a signed-out user."
-  },
+  "@proGuestTitle": {"description": "Pro page for a signed-out user."},
   "proGuestBody": "A plan is tied to your account and works on all your devices. The reference and safety information stay free without an account.",
-  "@proGuestBody": {
-    "description": "Pro page for a signed-out user."
-  },
+  "@proGuestBody": {"description": "Pro page for a signed-out user."},
   "proGuestSignIn": "Sign in with an email code",
-  "@proGuestSignIn": {
-    "description": "Button: sign in with an email code."
-  },
+  "@proGuestSignIn": {"description": "Button: sign in with an email code."},
   "proChoose": "Choose a subscription",
-  "@proChoose": {
-    "description": "Pro page section: choose a subscription."
-  },
+  "@proChoose": {"description": "Pro page section: choose a subscription."},
   "proAlreadyActive": "This plan is already active on your account.",
-  "@proAlreadyActive": {
-    "description": "Pro page: this plan is already active."
-  },
+  "@proAlreadyActive": {"description": "Pro page: this plan is already active."},
   "proStoreUnavailable": "The store is not available right now (for example on an emulator or without a store account). The price is shown in the store when you subscribe.",
-  "@proStoreUnavailable": {
-    "description": "Pro page: store not available; price is shown in the store."
-  },
+  "@proStoreUnavailable": {"description": "Pro page: store not available; price is shown in the store."},
   "proStoreNoProducts": "The store did not return this plan’s subscriptions yet. Try again later; the price is shown in the store.",
-  "@proStoreNoProducts": {
-    "description": "Pro page: the store returned no products."
-  },
+  "@proStoreNoProducts": {"description": "Pro page: the store returned no products."},
   "proMonthly": "Monthly",
-  "@proMonthly": {
-    "description": "Subscription period."
-  },
+  "@proMonthly": {"description": "Subscription period."},
   "proYearly": "Yearly",
-  "@proYearly": {
-    "description": "Subscription period."
-  },
+  "@proYearly": {"description": "Subscription period."},
   "proBuy": "Buy",
-  "@proBuy": {
-    "description": "Button: buy the subscription."
-  },
+  "@proBuy": {"description": "Button: buy the subscription."},
   "proTrialButton": "Try free for 30 days",
-  "@proTrialButton": {
-    "description": "Button: start the free trial."
-  },
+  "@proTrialButton": {"description": "Button: start the free trial."},
   "proTrialNote": "The free trial is available once per device and once per account. It ends on its own and nothing is charged.",
-  "@proTrialNote": {
-    "description": "Pro page: trial rules."
-  },
+  "@proTrialNote": {"description": "Pro page: trial rules."},
   "proRestore": "Restore purchases",
-  "@proRestore": {
-    "description": "Button: restore purchases."
-  },
+  "@proRestore": {"description": "Button: restore purchases."},
   "proFlowWorking": "Please wait…",
-  "@proFlowWorking": {
-    "description": "Pro page: working."
-  },
+  "@proFlowWorking": {"description": "Pro page: working."},
   "proFlowSuccess": "Done. Your plan is active.",
-  "@proFlowSuccess": {
-    "description": "Pro page: success."
-  },
+  "@proFlowSuccess": {"description": "Pro page: success."},
   "proFlowPending": "The purchase is waiting for approval. The plan turns on after it is confirmed.",
-  "@proFlowPending": {
-    "description": "Pro page: purchase pending approval."
-  },
+  "@proFlowPending": {"description": "Pro page: purchase pending approval."},
   "proFlowCanceled": "The purchase was cancelled. Nothing was charged.",
-  "@proFlowCanceled": {
-    "description": "Pro page: purchase cancelled."
-  },
+  "@proFlowCanceled": {"description": "Pro page: purchase cancelled."},
   "proFlowStoreNotConfigured": "Store purchase verification is not connected on the server yet. Your purchase is kept and will be checked once it is connected.",
-  "@proFlowStoreNotConfigured": {
-    "description": "Pro page: server-side store verification is not connected."
-  },
+  "@proFlowStoreNotConfigured": {"description": "Pro page: server-side store verification is not connected."},
   "proFlowInvalid": "The purchase could not be verified. If you were charged, contact support.",
-  "@proFlowInvalid": {
-    "description": "Pro page: purchase could not be verified."
-  },
+  "@proFlowInvalid": {"description": "Pro page: purchase could not be verified."},
   "proFlowOffline": "No connection. The purchase will be checked when the internet is back.",
-  "@proFlowOffline": {
-    "description": "Pro page: no connection."
-  },
+  "@proFlowOffline": {"description": "Pro page: no connection."},
   "proFlowError": "Something went wrong. Please try again.",
-  "@proFlowError": {
-    "description": "Pro page: generic error."
-  },
+  "@proFlowError": {"description": "Pro page: generic error."},
   "proFlowRestoreNothing": "No purchases to restore were found for this store account.",
-  "@proFlowRestoreNothing": {
-    "description": "Pro page: nothing to restore."
-  },
+  "@proFlowRestoreNothing": {"description": "Pro page: nothing to restore."},
   "proTrialUsedDevice": "The free trial has already been used on this device.",
-  "@proTrialUsedDevice": {
-    "description": "Pro page: trial already used on this device."
-  },
+  "@proTrialUsedDevice": {"description": "Pro page: trial already used on this device."},
   "proTrialUsedAccount": "The free trial has already been used on this account.",
-  "@proTrialUsedAccount": {
-    "description": "Pro page: trial already used on this account."
-  },
+  "@proTrialUsedAccount": {"description": "Pro page: trial already used on this account."},
   "proTrialHasPlan": "You already have an active plan, so the trial is not needed.",
-  "@proTrialHasPlan": {
-    "description": "Pro page: user already has a plan."
-  },
+  "@proTrialHasPlan": {"description": "Pro page: user already has a plan."},
   "proTrialUnavailable": "The trial cannot be offered on this device.",
-  "@proTrialUnavailable": {
-    "description": "Pro page: trial cannot be offered on this device."
-  },
+  "@proTrialUnavailable": {"description": "Pro page: trial cannot be offered on this device."},
   "proTermsTitle": "Subscription terms",
-  "@proTermsTitle": {
-    "description": "Pro page section: subscription terms."
-  },
+  "@proTermsTitle": {"description": "Pro page section: subscription terms."},
   "proTermsBody": "Subscriptions are monthly or yearly and renew automatically. The price and billing period are shown in the store before you confirm. Payment is charged to your Apple ID or Google Play account at confirmation. The subscription renews unless it is cancelled at least 24 hours before the end of the current period, and your account is charged for the next period within 24 hours before the end. You can manage or cancel it at any time in your store account settings; cancelling takes effect at the end of the paid period. A free trial or introductory offer shown by the store ends automatically.",
-  "@proTermsBody": {
-    "description": "Pro page: Apple 3.1.2 subscription disclosure (period, price in store, auto-renewal, cancellation)."
-  },
+  "@proTermsBody": {"description": "Pro page: Apple 3.1.2 subscription disclosure (period, price in store, auto-renewal, cancellation)."},
   "proCancelHowIos": "To cancel on iPhone: Settings → your name → Subscriptions → FORENSIC EXPERT → Cancel Subscription.",
-  "@proCancelHowIos": {
-    "description": "Pro page: how to cancel on iPhone."
-  },
+  "@proCancelHowIos": {"description": "Pro page: how to cancel on iPhone."},
   "proCancelHowAndroid": "To cancel on Android: Google Play → profile icon → Payments & subscriptions → Subscriptions → FORENSIC EXPERT → Cancel subscription.",
-  "@proCancelHowAndroid": {
-    "description": "Pro page: how to cancel on Android."
-  },
+  "@proCancelHowAndroid": {"description": "Pro page: how to cancel on Android."},
   "proManage": "Manage or cancel subscription",
-  "@proManage": {
-    "description": "Button: open the store subscription settings."
-  },
+  "@proManage": {"description": "Button: open the store subscription settings."},
   "proManageFailed": "Could not open the store page. Open your store account settings manually.",
-  "@proManageFailed": {
-    "description": "Snackbar: the store page could not be opened."
-  },
+  "@proManageFailed": {"description": "Snackbar: the store page could not be opened."},
   "proTermsLink": "Terms of Use",
-  "@proTermsLink": {
-    "description": "Link: Terms of Use."
-  },
+  "@proTermsLink": {"description": "Link: Terms of Use."},
   "proPrivacyLink": "Privacy Policy",
-  "@proPrivacyLink": {
-    "description": "Link: Privacy Policy."
-  },
+  "@proPrivacyLink": {"description": "Link: Privacy Policy."},
   "proOfferStudentTitle": "Study without limits",
-  "@proOfferStudentTitle": {
-    "description": "Home: one-time soft offer for student mode."
-  },
+  "@proOfferStudentTitle": {"description": "Home: one-time soft offer for student mode."},
   "proOfferStudentBody": "Student Pro opens the full question bank, exam mode, all flashcards and error analysis. A free trial, if available, is shown on the Pro page.",
-  "@proOfferStudentBody": {
-    "description": "Home: one-time soft offer for student mode."
-  },
+  "@proOfferStudentBody": {"description": "Home: one-time soft offer for student mode."},
   "proOfferTeacherTitle": "Teach with more tools",
-  "@proOfferTeacherTitle": {
-    "description": "Home: one-time soft offer for teacher mode."
-  },
+  "@proOfferTeacherTitle": {"description": "Home: one-time soft offer for teacher mode."},
   "proOfferTeacherBody": "Teacher Pro opens all 211 presentations, unlimited groups, longer tests, CSV export and discussion of the hardest questions. A free trial, if available, is shown on the Pro page.",
-  "@proOfferTeacherBody": {
-    "description": "Home: one-time soft offer for teacher mode."
-  },
+  "@proOfferTeacherBody": {"description": "Home: one-time soft offer for teacher mode."},
   "proOfferExpertTitle": "Tools for your casework",
-  "@proOfferExpertTitle": {
-    "description": "Home: one-time soft offer for professional mode."
-  },
+  "@proOfferExpertTitle": {"description": "Home: one-time soft offer for professional mode."},
   "proOfferExpertBody": "Expert Pro opens the full instruments course, professional calculators, the casebook, court testimony preparation and a higher AI limit. A free trial, if available, is shown on the Pro page.",
-  "@proOfferExpertBody": {
-    "description": "Home: one-time soft offer for professional mode."
-  },
+  "@proOfferExpertBody": {"description": "Home: one-time soft offer for professional mode."},
   "proOfferOpen": "Learn more",
-  "@proOfferOpen": {
-    "description": "Button on the soft offer."
-  },
+  "@proOfferOpen": {"description": "Button on the soft offer."},
   "proOfferDismiss": "Dismiss",
-  "@proOfferDismiss": {
-    "description": "Tooltip: close the soft offer."
-  },
+  "@proOfferDismiss": {"description": "Tooltip: close the soft offer."},
   "studyStatsTitle": "Error statistics",
-  "@studyStatsTitle": {
-    "description": "Study hub: error statistics card (Student Pro)."
-  },
+  "@studyStatsTitle": {"description": "Study hub: error statistics card (Student Pro)."},
   "studyStatsEmpty": "Review some cards first — statistics will appear here.",
-  "@studyStatsEmpty": {
-    "description": "Study hub: no reviewed cards yet."
-  },
+  "@studyStatsEmpty": {"description": "Study hub: no reviewed cards yet."},
   "studyStatsSummary": "Reviewed: {reviewed} · difficult: {weak} · mastered: {learned}",
-  "@studyStatsSummary": {
-    "description": "Study hub: summary counts.",
-    "placeholders": {
-      "reviewed": {
-        "type": "int"
-      },
-      "weak": {
-        "type": "int"
-      },
-      "learned": {
-        "type": "int"
-      }
-    }
-  },
+  "@studyStatsSummary": {"description": "Study hub: summary counts.", "placeholders": {"reviewed": {"type": "int"}, "weak": {"type": "int"}, "learned": {"type": "int"}}},
   "studyStatsWeakDeck": "{deck}: {count} difficult",
-  "@studyStatsWeakDeck": {
-    "description": "Study hub: a deck with difficult cards. {deck} deck name, {count} number.",
-    "placeholders": {
-      "deck": {
-        "type": "String"
-      },
-      "count": {
-        "type": "int"
-      }
-    }
-  },
+  "@studyStatsWeakDeck": {"description": "Study hub: a deck with difficult cards. {deck} deck name, {count} number.", "placeholders": {"deck": {"type": "String"}, "count": {"type": "int"}}},
   "admProTitle": "Grant Pro",
-  "@admProTitle": {
-    "description": "Admin: grant Pro screen title."
-  },
+  "@admProTitle": {"description": "Admin: grant Pro screen title."},
   "admProHint": "Plan for an email, duration, list, revoke",
-  "@admProHint": {
-    "description": "Admin: grant Pro tile hint."
-  },
+  "@admProHint": {"description": "Admin: grant Pro tile hint."},
   "admProNote": "A plan granted here is recorded in the audit log with the source “administrator”. A store subscription takes precedence.",
-  "@admProNote": {
-    "description": "Admin: grant Pro note."
-  },
+  "@admProNote": {"description": "Admin: grant Pro note."},
   "admProGrantTitle": "Grant a plan",
-  "@admProGrantTitle": {
-    "description": "Admin: section title."
-  },
+  "@admProGrantTitle": {"description": "Admin: section title."},
   "admProEmail": "User email",
-  "@admProEmail": {
-    "description": "Admin: email field."
-  },
+  "@admProEmail": {"description": "Admin: email field."},
   "admProPlan": "Plan",
-  "@admProPlan": {
-    "description": "Admin: plan choice label."
-  },
+  "@admProPlan": {"description": "Admin: plan choice label."},
   "admProUntil": "Duration",
-  "@admProUntil": {
-    "description": "Admin: duration choice label."
-  },
+  "@admProUntil": {"description": "Admin: duration choice label."},
   "admProDays30": "30 days",
-  "@admProDays30": {
-    "description": "Admin: duration."
-  },
+  "@admProDays30": {"description": "Admin: duration."},
   "admProDays90": "90 days",
-  "@admProDays90": {
-    "description": "Admin: duration."
-  },
+  "@admProDays90": {"description": "Admin: duration."},
   "admProYear": "1 year",
-  "@admProYear": {
-    "description": "Admin: duration."
-  },
+  "@admProYear": {"description": "Admin: duration."},
   "admProNoLimit": "No limit",
-  "@admProNoLimit": {
-    "description": "Admin: no end date."
-  },
+  "@admProNoLimit": {"description": "Admin: no end date."},
   "admProGrant": "Grant",
-  "@admProGrant": {
-    "description": "Admin: grant button."
-  },
+  "@admProGrant": {"description": "Admin: grant button."},
   "admProRevoke": "Revoke",
-  "@admProRevoke": {
-    "description": "Admin: revoke button/tooltip."
-  },
+  "@admProRevoke": {"description": "Admin: revoke button/tooltip."},
   "admProGranted": "The plan has been granted.",
-  "@admProGranted": {
-    "description": "Admin: result."
-  },
+  "@admProGranted": {"description": "Admin: result."},
   "admProRevoked": "The plan has been revoked.",
-  "@admProRevoked": {
-    "description": "Admin: result."
-  },
+  "@admProRevoked": {"description": "Admin: result."},
   "admProNotFound": "No user with this email.",
-  "@admProNotFound": {
-    "description": "Admin: result."
-  },
+  "@admProNotFound": {"description": "Admin: result."},
   "admProInvalid": "Enter a valid email address.",
-  "@admProInvalid": {
-    "description": "Admin: result."
-  },
+  "@admProInvalid": {"description": "Admin: result."},
   "admProError": "Could not complete the request. Try again.",
-  "@admProError": {
-    "description": "Admin: error."
-  },
+  "@admProError": {"description": "Admin: error."},
   "admProListTitle": "Granted plans",
-  "@admProListTitle": {
-    "description": "Admin: list title."
-  },
+  "@admProListTitle": {"description": "Admin: list title."},
   "admProSearch": "Search by email",
-  "@admProSearch": {
-    "description": "Admin: search hint."
-  },
+  "@admProSearch": {"description": "Admin: search hint."},
   "admProEmpty": "No plans yet.",
-  "@admProEmpty": {
-    "description": "Admin: empty list."
-  },
-  "studyNoGuaranteeNote": "Practice questions are prepared for study from open sources. They are not a guarantee that the same questions will appear in an official exam.",
-  "@studyNoGuaranteeNote": {
-    "description": "Small note under the test start: no guarantee about real exam questions."
-  },
+  "@admProEmpty": {"description": "Admin: empty list."},
   "proPlanPremium": "Premium",
-  "@proPlanPremium": {
-    "description": "Plan name: premium (everything unlocked)."
-  },
+  "@proPlanPremium": {"description": "Plan name: premium (everything unlocked)."},
   "proIncludesPremium1": "Everything in Student Pro, Teacher Pro and Expert Pro in one plan",
-  "@proIncludesPremium1": {
-    "description": "Pro page: what Premium includes, item 1."
-  },
+  "@proIncludesPremium1": {"description": "Pro page: what Premium includes, item 1."},
   "proIncludesPremium2": "All lessons and presentations, tests, exam mode, flashcards and error analytics",
-  "@proIncludesPremium2": {
-    "description": "Pro page: what Premium includes, item 2."
-  },
+  "@proIncludesPremium2": {"description": "Pro page: what Premium includes, item 2."},
   "proIncludesPremium3": "Groups and group tests, results CSV, the instruments course, professional calculators, casebook and court preparation",
-  "@proIncludesPremium3": {
-    "description": "Pro page: what Premium includes, item 3."
-  },
+  "@proIncludesPremium3": {"description": "Pro page: what Premium includes, item 3."},
   "proPremiumBest": "Best value: Premium — everything unlocked",
-  "@proPremiumBest": {
-    "description": "Pro page: Premium card title."
-  },
+  "@proPremiumBest": {"description": "Pro page: Premium card title."},
   "proPremiumBody": "Cheaper than buying the three plans separately.",
-  "@proPremiumBody": {
-    "description": "Pro page: Premium card body."
-  },
+  "@proPremiumBody": {"description": "Pro page: Premium card body."},
   "proPremiumSee": "See Premium",
-  "@proPremiumSee": {
-    "description": "Pro page: button to view Premium."
-  },
+  "@proPremiumSee": {"description": "Pro page: button to view Premium."},
   "proPremiumBack": "Back to my plan",
-  "@proPremiumBack": {
-    "description": "Pro page: button to go back to the mode plan."
-  },
+  "@proPremiumBack": {"description": "Pro page: button to go back to the mode plan."},
   "disciplineSharedModule": "Shared section: this discipline belongs to it",
-  "@disciplineSharedModule": {
-    "description": "Discipline page: this module is shared with a parent discipline."
-  },
+  "@disciplineSharedModule": {"description": "Discipline page: this module is shared with a parent discipline."},
   "disciplineSparseNote": "Sourced content for this discipline is being added step by step. Only the records available now are shown.",
-  "@disciplineSparseNote": {
-    "description": "Discipline page: little sourced content yet."
-  }
+  "@disciplineSparseNote": {"description": "Discipline page: little sourced content yet."},
+  "assessmentTitle": "Knowledge & Skills Assessment",
+  "@assessmentTitle": {"description": "Section title (home tile, screen title, menus)."},
+  "assessmentSubtitle": "Questions and tests for forensic medicine, pathological anatomy and forensic chemistry",
+  "@assessmentSubtitle": {"description": "Home tile body."},
+  "assessmentIntro": "Official oral-exam question lists and practice tests by specialty and qualification category.",
+  "@assessmentIntro": {"description": "Hub intro line."},
+  "assessmentSpecSudTib": "Forensic medical examination",
+  "@assessmentSpecSudTib": {"description": "Specialty: forensic medical examination."},
+  "assessmentSpecPatAnat": "Pathological anatomy",
+  "@assessmentSpecPatAnat": {"description": "Specialty: pathological anatomy."},
+  "assessmentSpecSudKimyo": "Forensic chemical examination",
+  "@assessmentSpecSudKimyo": {"description": "Specialty: forensic chemical examination."},
+  "assessmentCatC23": "Third and second category",
+  "@assessmentCatC23": {"description": "Qualification category group: third and second."},
+  "assessmentCatC1": "First category",
+  "@assessmentCatC1": {"description": "Qualification category: first."},
+  "assessmentCatC0": "Highest category",
+  "@assessmentCatC0": {"description": "Qualification category: highest."},
+  "assessmentTabOral": "Oral questions",
+  "@assessmentTabOral": {"description": "Tab: oral exam questions."},
+  "assessmentTabTests": "Tests",
+  "@assessmentTabTests": {"description": "Tab: tests."},
+  "assessmentCountQuestions": "{n} questions",
+  "@assessmentCountQuestions": {"description": "Number of questions.", "placeholders": {"n": {"type": "int"}}},
+  "assessmentCountTests": "{n} tests",
+  "@assessmentCountTests": {"description": "Number of tests.", "placeholders": {"n": {"type": "int"}}},
+  "assessmentReadyProgress": "{done} of {total} ready",
+  "@assessmentReadyProgress": {"description": "Personal progress: ready questions.", "placeholders": {"done": {"type": "int"}, "total": {"type": "int"}}},
+  "assessmentSearchHint": "Search questions",
+  "@assessmentSearchHint": {"description": "Search field hint."},
+  "assessmentNoResults": "Nothing found",
+  "@assessmentNoResults": {"description": "Empty search result."},
+  "assessmentUzOnly": "Questions are shown in Uzbek, exactly as in the official list.",
+  "@assessmentUzOnly": {"description": "Hint: question text language."},
+  "assessmentSourceLine": "Source: {source}",
+  "@assessmentSourceLine": {"description": "Source line.", "placeholders": {"source": {"type": "String"}}},
+  "assessmentSourceName": "Center for Assessing the Qualification of Medical and Pharmaceutical Workers (tmbm.ssv.uz)",
+  "@assessmentSourceName": {"description": "Official source name of the question lists."},
+  "assessmentMarkReady": "Mark as ready",
+  "@assessmentMarkReady": {"description": "Button: mark question as ready."},
+  "assessmentUnmarkReady": "Remove ready mark",
+  "@assessmentUnmarkReady": {"description": "Button: remove ready mark."},
+  "assessmentReadyChip": "Ready",
+  "@assessmentReadyChip": {"description": "Chip on a ready question."},
+  "assessmentAskAi": "Ask Forensic AI",
+  "@assessmentAskAi": {"description": "Button: send the question to Forensic AI."},
+  "assessmentQuestionNo": "Question {n}",
+  "@assessmentQuestionNo": {"description": "Question number label.", "placeholders": {"n": {"type": "int"}}},
+  "assessmentTestStart": "Start practice",
+  "@assessmentTestStart": {"description": "Button: start practice."},
+  "assessmentTestPool": "{n} questions with a confirmed answer key",
+  "@assessmentTestPool": {"description": "Number of tests with a confirmed answer key.", "placeholders": {"n": {"type": "int"}}},
+  "assessmentTestUnkeyed": "{n} questions have no confirmed answer yet and are not included in practice.",
+  "@assessmentTestUnkeyed": {"description": "Number of tests without a confirmed key (not in practice).", "placeholders": {"n": {"type": "int"}}},
+  "assessmentTestNone": "Answer keys for this specialty are being verified against the books.",
+  "@assessmentTestNone": {"description": "No test has a confirmed key yet."},
+  "assessmentTestList": "All test questions",
+  "@assessmentTestList": {"description": "Button: list all test questions."},
+  "assessmentKeyPending": "Answer key not confirmed",
+  "@assessmentKeyPending": {"description": "Label on a test question without a confirmed key."},
+  "assessmentCorrect": "Correct",
+  "@assessmentCorrect": {"description": "Answer feedback: correct."},
+  "assessmentWrong": "Incorrect",
+  "@assessmentWrong": {"description": "Answer feedback: wrong."},
+  "assessmentCorrectAnswer": "Correct answer: {a}",
+  "@assessmentCorrectAnswer": {"description": "Shows the correct answer text.", "placeholders": {"a": {"type": "String"}}},
+  "assessmentAnswerSource": "Answer source: {src}",
+  "@assessmentAnswerSource": {"description": "Where the answer key comes from.", "placeholders": {"src": {"type": "String"}}},
+  "assessmentKeyTeacher": "answer-keyed test bank supplied by the teacher (Toxicological chemistry)",
+  "@assessmentKeyTeacher": {"description": "Key source: file supplied by the teacher."},
+  "assessmentNext": "Next",
+  "@assessmentNext": {"description": "Button: next question."},
+  "assessmentFinish": "Finish",
+  "@assessmentFinish": {"description": "Button: finish practice."},
+  "assessmentResultTitle": "Result",
+  "@assessmentResultTitle": {"description": "Result screen title."},
+  "assessmentResultScore": "{c} of {n} correct",
+  "@assessmentResultScore": {"description": "Result score.", "placeholders": {"c": {"type": "int"}, "n": {"type": "int"}}},
+  "assessmentRetry": "Practice again",
+  "@assessmentRetry": {"description": "Button: practice again."},
+  "assessmentMistakes": "Review your mistakes",
+  "@assessmentMistakes": {"description": "Heading: questions answered wrongly."},
+  "assessmentEmpty": "The question pack could not be loaded.",
+  "@assessmentEmpty": {"description": "Fallback when the question pack is missing."},
+  "assessmentOpenSource": "Official list",
+  "@assessmentOpenSource": {"description": "Link text to the official page."},
+  "assessmentBookPage": "{title}, PDF p. {page}",
+  "@assessmentBookPage": {"description": "Book citation with the PDF page of the supplied file.", "placeholders": {"title": {"type": "String"}, "page": {"type": "int"}}}
 }
