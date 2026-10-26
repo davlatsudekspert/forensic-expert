@@ -11592,4 +11592,35 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get statusSourced => 'Источник указан';
+
+  @override
+  String get lessonAutoTooltip => 'Автолистание';
+
+  @override
+  String get lessonAutoManual => 'Вручную';
+
+  @override
+  String get lessonAutoAuto => 'Авто';
+
+  @override
+  String get lessonAutoSpeed => 'Время на слайд';
+
+  @override
+  String lessonAutoSeconds(int n) {
+    return '$n с';
+  }
+
+  @override
+  String lessonAutoRunning(int n) {
+    return 'Авто: $n с на слайд';
+  }
+
+  @override
+  String get lessonAutoPaused => 'Пауза';
+
+  @override
+  String get lessonAutoPause => 'Пауза';
+
+  @override
+  String get lessonAutoResume => 'Продолжить';
 }

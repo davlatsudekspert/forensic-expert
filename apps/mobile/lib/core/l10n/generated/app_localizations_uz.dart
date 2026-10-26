@@ -11479,4 +11479,35 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get statusSourced => 'Manba keltirilgan';
+
+  @override
+  String get lessonAutoTooltip => 'Avto varaqlash';
+
+  @override
+  String get lessonAutoManual => 'Qo‘lda';
+
+  @override
+  String get lessonAutoAuto => 'Avto';
+
+  @override
+  String get lessonAutoSpeed => 'Har bir slayd vaqti';
+
+  @override
+  String lessonAutoSeconds(int n) {
+    return '$n soniya';
+  }
+
+  @override
+  String lessonAutoRunning(int n) {
+    return 'Avto: har slayd $n soniya';
+  }
+
+  @override
+  String get lessonAutoPaused => 'Pauza';
+
+  @override
+  String get lessonAutoPause => 'Pauza';
+
+  @override
+  String get lessonAutoResume => 'Davom etish';
 }

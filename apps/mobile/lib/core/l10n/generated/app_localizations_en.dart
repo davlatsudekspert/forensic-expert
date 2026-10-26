@@ -11547,4 +11547,35 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get statusSourced => 'Source cited';
+
+  @override
+  String get lessonAutoTooltip => 'Auto-advance';
+
+  @override
+  String get lessonAutoManual => 'Manual';
+
+  @override
+  String get lessonAutoAuto => 'Auto';
+
+  @override
+  String get lessonAutoSpeed => 'Time per slide';
+
+  @override
+  String lessonAutoSeconds(int n) {
+    return '$n s';
+  }
+
+  @override
+  String lessonAutoRunning(int n) {
+    return 'Auto: $n s per slide';
+  }
+
+  @override
+  String get lessonAutoPaused => 'Paused';
+
+  @override
+  String get lessonAutoPause => 'Pause';
+
+  @override
+  String get lessonAutoResume => 'Resume';
 }

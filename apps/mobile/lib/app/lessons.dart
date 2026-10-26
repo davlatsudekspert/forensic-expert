@@ -1,5 +1,6 @@
 import 'package:flutter/services.dart' show MethodChannel;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../core/settings/app_settings.dart' show UserMode;
 import '../core/settings/settings_controller.dart';
@@ -90,3 +91,61 @@ final lessonQuizAvailableProvider = Provider.autoDispose.family<bool, String>((
   final base = ClassQuizBank.baseId(deckId);
   return topics.any((t) => ClassQuizBank.baseId(t.id) == base);
 });
+
+/// Dars ko‘rgichida avto-varaqlash tanlovi (rejim va tezlik).
+class LessonAutoPrefs {
+  const LessonAutoPrefs({this.auto = false, this.seconds = 30});
+
+  /// Ruxsat etilgan tezliklar (soniya).
+  static const options = <int>[15, 30, 60];
+
+  final bool auto;
+  final int seconds;
+
+  LessonAutoPrefs copyWith({bool? auto, int? seconds}) => LessonAutoPrefs(
+    auto: auto ?? this.auto,
+    seconds: seconds ?? this.seconds,
+  );
+}
+
+/// Tanlovni qurilmada saqlash (faqat bu ikki qiymat; shaxsiy ma’lumot yo‘q).
+abstract interface class LessonAutoStore {
+  Future<LessonAutoPrefs> load();
+  Future<void> save(LessonAutoPrefs prefs);
+}
+
+class PrefsLessonAutoStore implements LessonAutoStore {
+  const PrefsLessonAutoStore();
+
+  static const _kAuto = 'lesson.autoAdvance';
+  static const _kSeconds = 'lesson.autoSeconds';
+
+  @override
+  Future<LessonAutoPrefs> load() async {
+    try {
+      final p = await SharedPreferences.getInstance();
+      final s = p.getInt(_kSeconds);
+      return LessonAutoPrefs(
+        auto: p.getBool(_kAuto) ?? false,
+        seconds: LessonAutoPrefs.options.contains(s) ? s! : 30,
+      );
+    } on Object {
+      return const LessonAutoPrefs();
+    }
+  }
+
+  @override
+  Future<void> save(LessonAutoPrefs prefs) async {
+    try {
+      final p = await SharedPreferences.getInstance();
+      await p.setBool(_kAuto, prefs.auto);
+      await p.setInt(_kSeconds, prefs.seconds);
+    } on Object {
+      // Saqlab bo‘lmasa — keyingi safar standart qiymat.
+    }
+  }
+}
+
+final lessonAutoStoreProvider = Provider<LessonAutoStore>(
+  (ref) => const PrefsLessonAutoStore(),
+);

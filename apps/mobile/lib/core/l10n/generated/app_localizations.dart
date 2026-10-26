@@ -19952,6 +19952,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Source cited'**
   String get statusSourced;
+
+  /// Lesson viewer: button that opens the auto-advance settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Auto-advance'**
+  String get lessonAutoTooltip;
+
+  /// Lesson viewer: manual paging mode.
+  ///
+  /// In en, this message translates to:
+  /// **'Manual'**
+  String get lessonAutoManual;
+
+  /// Lesson viewer: automatic paging mode.
+  ///
+  /// In en, this message translates to:
+  /// **'Auto'**
+  String get lessonAutoAuto;
+
+  /// Lesson viewer: heading of the auto-advance interval choice.
+  ///
+  /// In en, this message translates to:
+  /// **'Time per slide'**
+  String get lessonAutoSpeed;
+
+  /// Lesson viewer: interval in seconds.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} s'**
+  String lessonAutoSeconds(int n);
+
+  /// Lesson viewer: status line while auto-advance runs.
+  ///
+  /// In en, this message translates to:
+  /// **'Auto: {n} s per slide'**
+  String lessonAutoRunning(int n);
+
+  /// Lesson viewer: status line while auto-advance is paused.
+  ///
+  /// In en, this message translates to:
+  /// **'Paused'**
+  String get lessonAutoPaused;
+
+  /// Lesson viewer: pause button.
+  ///
+  /// In en, this message translates to:
+  /// **'Pause'**
+  String get lessonAutoPause;
+
+  /// Lesson viewer: resume button.
+  ///
+  /// In en, this message translates to:
+  /// **'Resume'**
+  String get lessonAutoResume;
 }
 
 class _AppLocalizationsDelegate

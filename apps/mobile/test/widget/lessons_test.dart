@@ -33,6 +33,15 @@ class _Orient implements ClassOrientationControl {
   Future<void> restore() async => calls.add('restore');
 }
 
+class _AutoStore implements LessonAutoStore {
+  _AutoStore([this.prefs = const LessonAutoPrefs()]);
+  LessonAutoPrefs prefs;
+  @override
+  Future<LessonAutoPrefs> load() async => prefs;
+  @override
+  Future<void> save(LessonAutoPrefs p) async => prefs = p;
+}
+
 class _Guard implements LessonScreenGuard {
   int secured = 0;
   int released = 0;
@@ -104,6 +113,7 @@ void main() {
   late _Orient orient;
   late _Guard guard;
   late FakeClassQuizBackend backend;
+  late _AutoStore autoStore;
 
   Future<void> open(
     WidgetTester tester, {
@@ -114,7 +124,9 @@ void main() {
     String deckId = 'demo-topic',
     FakeLessonsService? lessons,
     bool prompt = false,
+    LessonAutoPrefs? autoPrefs,
   }) async {
+    autoStore = _AutoStore(autoPrefs ?? const LessonAutoPrefs());
     awake = _Awake();
     orient = _Orient();
     guard = _Guard();
@@ -145,6 +157,7 @@ void main() {
         classScreenAwakeProvider.overrideWithValue(awake),
         classOrientationControlProvider.overrideWithValue(orient),
         lessonScreenGuardProvider.overrideWithValue(guard),
+        lessonAutoStoreProvider.overrideWithValue(autoStore),
         classLandscapePromptEnabledProvider.overrideWithValue(prompt),
       ],
     );
@@ -571,6 +584,145 @@ void main() {
           await tester.pumpAndSettle();
           expect(tester.takeException(), isNull);
         }
+      });
+    }
+  });
+  group('avto-varaqlash', () {
+    String counter(WidgetTester t) =>
+        t.widget<Text>(find.byKey(const Key('lesson.counter'))).data!;
+
+    Future<void> chooseAuto(WidgetTester tester, {int seconds = 15}) async {
+      await tester.tap(find.byKey(const Key('lesson.autoButton')));
+      await tester.pumpAndSettle();
+      await tester.tap(
+        find.descendant(
+          of: find.byKey(const Key('lesson.autoMode')),
+          matching: find.text('Avto'),
+        ),
+      );
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(Key('lesson.autoSeconds.$seconds')));
+      await tester.pumpAndSettle();
+      await tester.tapAt(const Offset(195, 30)); // varaqni yopish
+      await tester.pumpAndSettle();
+    }
+
+    testWidgets('standart — «Qo‘lda»: slayd o‘zi almashmaydi', (tester) async {
+      await open(tester, path: Routes.lesson('a1'));
+      expect(find.byKey(const Key('lesson.autoStatus')), findsNothing);
+      await tester.pump(const Duration(seconds: 90));
+      expect(counter(tester), '1 / 5');
+    });
+
+    testWidgets('Avto: tanlangan soniyada o‘tadi, oxirgida to‘xtaydi', (
+      tester,
+    ) async {
+      await open(tester, path: Routes.lesson('a1'));
+      await chooseAuto(tester);
+      expect(find.byKey(const Key('lesson.autoStatus')), findsOneWidget);
+      expect(awake.enabled, greaterThan(0));
+      expect(autoStore.prefs.auto, isTrue);
+      expect(autoStore.prefs.seconds, 15);
+
+      await tester.pump(const Duration(seconds: 14));
+      expect(counter(tester), '1 / 5');
+      await tester.pump(const Duration(seconds: 1));
+      await tester.pump(const Duration(milliseconds: 400));
+      expect(counter(tester), '2 / 5');
+      for (var i = 0; i < 3; i++) {
+        await tester.pump(const Duration(seconds: 15));
+        await tester.pump(const Duration(milliseconds: 400));
+      }
+      expect(counter(tester), '5 / 5');
+      // Oxirgi slayd: keyingi tikda avto o‘chadi, boshiga qaytmaydi.
+      await tester.pump(const Duration(seconds: 15));
+      await tester.pump(const Duration(milliseconds: 400));
+      expect(counter(tester), '5 / 5');
+      expect(find.byKey(const Key('lesson.autoStatus')), findsNothing);
+      expect(autoStore.prefs.auto, isFalse);
+    });
+
+    testWidgets('pauza: slaydga bosilsa to‘xtaydi, qayta bosilsa davom etadi', (
+      tester,
+    ) async {
+      await open(tester, path: Routes.lesson('a1'));
+      await chooseAuto(tester);
+      await tester.tap(find.byKey(const Key('lesson.autoToggle')));
+      await tester.pump();
+      expect(find.text('Pauza'), findsWidgets);
+      await tester.pump(const Duration(seconds: 60));
+      expect(counter(tester), '1 / 5');
+      await tester.tap(find.byKey(const Key('lesson.autoToggle')));
+      await tester.pump();
+      await tester.pump(const Duration(seconds: 15));
+      await tester.pump(const Duration(milliseconds: 400));
+      expect(counter(tester), '2 / 5');
+    });
+
+    testWidgets('qo‘lda varaqlansa avto pauzaga o‘tadi', (tester) async {
+      await open(tester, path: Routes.lesson('a1'));
+      await chooseAuto(tester);
+      await tester.tap(find.byKey(const Key('lesson.next')));
+      await tester.pumpAndSettle();
+      expect(counter(tester), '2 / 5');
+      expect(find.text('Pauza'), findsWidgets);
+      await tester.pump(const Duration(seconds: 60));
+      expect(counter(tester), '2 / 5');
+    });
+
+    testWidgets('saqlangan tanlov: Avto o‘zi boshlanadi, tezlik 60 s', (
+      tester,
+    ) async {
+      await open(
+        tester,
+        path: Routes.lesson('a1'),
+        autoPrefs: const LessonAutoPrefs(auto: true, seconds: 60),
+      );
+      await tester.pump();
+      expect(find.byKey(const Key('lesson.autoStatus')), findsOneWidget);
+      await tester.pump(const Duration(seconds: 59));
+      expect(counter(tester), '1 / 5');
+      await tester.pump(const Duration(seconds: 1));
+      await tester.pump(const Duration(milliseconds: 400));
+      expect(counter(tester), '2 / 5');
+    });
+
+    testWidgets('ekrandan chiqilganda taymer ham, wake-lock ham tozalanadi', (
+      tester,
+    ) async {
+      await open(
+        tester,
+        path: Routes.lesson('a1'),
+        autoPrefs: const LessonAutoPrefs(auto: true, seconds: 15),
+      );
+      await tester.pump();
+      final before = awake.disabled;
+      await tester.pumpWidget(const SizedBox());
+      expect(awake.disabled, greaterThan(before));
+      await tester.pump(const Duration(seconds: 60)); // kutilmagan taymer yo‘q
+    });
+
+    testWidgets('proyektor: o‘ynatish/pauza tugmasi bor', (tester) async {
+      await open(tester, path: Routes.lesson('a1'));
+      await tester.tap(find.byKey(const Key('lesson.projectorButton')));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const Key('lesson.projectorAuto')));
+      await tester.pump();
+      expect(autoStore.prefs.auto, isTrue);
+    });
+
+    for (final lang in ['uz', 'ru', 'en']) {
+      testWidgets('320 dp, 2.0 shrift, $lang: toshmaydi', (tester) async {
+        await open(
+          tester,
+          lang: lang,
+          size: const Size(320, 640),
+          path: Routes.lesson('a1'),
+          autoPrefs: const LessonAutoPrefs(auto: true, seconds: 30),
+        );
+        await tester.pump();
+        expect(find.byKey(const Key('lesson.autoStatus')), findsOneWidget);
+        expect(tester.takeException(), isNull);
       });
     }
   });

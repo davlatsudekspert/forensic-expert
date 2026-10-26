@@ -124,7 +124,8 @@ class LessonViewer extends ConsumerStatefulWidget {
   ConsumerState<LessonViewer> createState() => _LessonViewerState();
 }
 
-class _LessonViewerState extends ConsumerState<LessonViewer> {
+class _LessonViewerState extends ConsumerState<LessonViewer>
+    with WidgetsBindingObserver {
   late PageController _pc = PageController();
   final _focus = FocusNode();
   int _index = 0;
@@ -143,9 +144,19 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
   Timer? _hideTimer;
   static const _hideAfter = Duration(seconds: 3);
 
+  // Avto-varaqlash: rejim, tezlik, pauza. Taymer faqat ekran ochiq, ilova
+  // oldingi planda va pauza bo‘lmaganda ishlaydi.
+  bool _auto = false;
+  bool _autoPaused = false;
+  int _autoSeconds = 30;
+  bool _selfNav = false;
+  Timer? _autoTimer;
+
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addObserver(this);
+    unawaited(_loadAuto());
     _guard = ref.read(lessonScreenGuardProvider);
     _awake = ref.read(classScreenAwakeProvider);
     _orientation = ref.read(classOrientationControlProvider);
@@ -154,13 +165,179 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    _autoTimer?.cancel();
     _guard.release();
     _hideTimer?.cancel();
-    if (_projector) _awake.disable();
+    if (_projector || _auto) _awake.disable();
     if (_forcedLandscape) _orientation.restore();
     _pc.dispose();
     _focus.dispose();
     super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed) {
+      _scheduleAuto();
+    } else {
+      _autoTimer?.cancel();
+    }
+  }
+
+  Future<void> _loadAuto() async {
+    final p = await ref.read(lessonAutoStoreProvider).load();
+    if (!mounted) return;
+    setState(() {
+      _auto = p.auto;
+      _autoSeconds = p.seconds;
+    });
+    if (_auto) {
+      unawaited(_awake.enable());
+      _scheduleAuto();
+    }
+  }
+
+  void _saveAuto() => unawaited(
+    ref
+        .read(lessonAutoStoreProvider)
+        .save(LessonAutoPrefs(auto: _auto, seconds: _autoSeconds)),
+  );
+
+  /// Keyingi o‘tishni rejalashtiradi (faqat Avto yoniq va pauzada emas).
+  void _scheduleAuto() {
+    _autoTimer?.cancel();
+    if (!_auto || _autoPaused || !mounted) return;
+    _autoTimer = Timer(Duration(seconds: _autoSeconds), _autoTick);
+  }
+
+  void _autoTick() {
+    if (!mounted || !_auto || _autoPaused) return;
+    final total = _pages?.length ?? 0;
+    if (total == 0 || _index >= total - 1) {
+      _setAuto(false); // oxirgi slayd: to‘xtaydi, boshiga qaytmaydi
+      return;
+    }
+    _go(_index + 1, total, auto: true);
+  }
+
+  void _setAuto(bool on) {
+    _autoTimer?.cancel();
+    setState(() {
+      _auto = on;
+      _autoPaused = false;
+    });
+    if (on) {
+      unawaited(_awake.enable());
+      _scheduleAuto();
+    } else if (!_projector) {
+      unawaited(_awake.disable());
+    }
+    _saveAuto();
+  }
+
+  void _setAutoSeconds(int seconds) {
+    setState(() => _autoSeconds = seconds);
+    _scheduleAuto();
+    _saveAuto();
+  }
+
+  void _toggleAutoPause() {
+    if (!_auto) return;
+    setState(() => _autoPaused = !_autoPaused);
+    if (_autoPaused) {
+      _autoTimer?.cancel();
+    } else {
+      _scheduleAuto();
+    }
+  }
+
+  /// Foydalanuvchi o‘zi varaqlasa — avto vaqtincha to‘xtaydi.
+  void _pauseByUser() {
+    if (_auto && !_autoPaused) {
+      _autoTimer?.cancel();
+      setState(() => _autoPaused = true);
+    }
+  }
+
+  Future<void> _openAutoSheet() async {
+    await showModalBottomSheet<void>(
+      context: context,
+      showDragHandle: true,
+      builder: (c) => StatefulBuilder(
+        builder: (c, setSheet) {
+          final l = AppLocalizations.of(c);
+          return SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(
+                FeSpace.md,
+                0,
+                FeSpace.md,
+                FeSpace.md,
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Semantics(
+                    header: true,
+                    child: Text(
+                      l.lessonAutoTooltip,
+                      style: Theme.of(c).textTheme.titleMedium,
+                    ),
+                  ),
+                  const SizedBox(height: FeSpace.sm),
+                  SizedBox(
+                    width: double.infinity,
+                    child: SegmentedButton<bool>(
+                      key: const Key('lesson.autoMode'),
+                      showSelectedIcon: false,
+                      segments: [
+                        ButtonSegment(
+                          value: false,
+                          label: Text(l.lessonAutoManual),
+                        ),
+                        ButtonSegment(
+                          value: true,
+                          label: Text(l.lessonAutoAuto),
+                        ),
+                      ],
+                      selected: {_auto},
+                      onSelectionChanged: (v) {
+                        _setAuto(v.first);
+                        setSheet(() {});
+                      },
+                    ),
+                  ),
+                  const SizedBox(height: FeSpace.md),
+                  Text(
+                    l.lessonAutoSpeed,
+                    style: Theme.of(c).textTheme.labelLarge,
+                  ),
+                  const SizedBox(height: FeSpace.xs),
+                  Wrap(
+                    spacing: FeSpace.xs,
+                    runSpacing: FeSpace.xs,
+                    children: [
+                      for (final n in LessonAutoPrefs.options)
+                        ChoiceChip(
+                          key: Key('lesson.autoSeconds.$n'),
+                          label: Text(l.lessonAutoSeconds(n)),
+                          selected: _autoSeconds == n,
+                          onSelected: (_) {
+                            _setAutoSeconds(n);
+                            setSheet(() {});
+                          },
+                        ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          );
+        },
+      ),
+    );
   }
 
   List<LessonPage> _pageList(BuildContext context) {
@@ -172,9 +349,14 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
     return _pages!;
   }
 
-  void _go(int i, int total) {
+  void _go(int i, int total, {bool auto = false}) {
     final t = i.clamp(0, total - 1);
     if (t == _index) return;
+    _selfNav = auto;
+    if (MediaQuery.disableAnimationsOf(context)) {
+      _pc.jumpToPage(t);
+      return;
+    }
     _pc.animateToPage(
       t,
       duration: const Duration(milliseconds: 220),
@@ -209,7 +391,7 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
   void _exitProjector() {
     _hideTimer?.cancel();
     _controls = true;
-    _awake.disable();
+    if (!_auto) _awake.disable();
     if (_forcedLandscape) {
       _forcedLandscape = false;
       _orientation.restore();
@@ -353,7 +535,15 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
     key: Key(projector ? 'lesson.pages.projector' : 'lesson.pages'),
     controller: _pc,
     itemCount: pages.length,
-    onPageChanged: (i) => setState(() => _index = i),
+    onPageChanged: (i) {
+      setState(() => _index = i);
+      if (_selfNav) {
+        _selfNav = false;
+        _scheduleAuto();
+      } else {
+        _pauseByUser();
+      }
+    },
     itemBuilder: (c, i) {
       final l = AppLocalizations.of(c);
       return Semantics(
@@ -411,7 +601,14 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
       key: const Key('lesson.notes'),
       text: page.notes,
     );
-    final slide = _pageView(pages, projector: false);
+    final slide = _auto
+        ? GestureDetector(
+            key: const Key('lesson.autoTap'),
+            behavior: HitTestBehavior.translucent,
+            onTap: _toggleAutoPause,
+            child: _pageView(pages, projector: false),
+          )
+        : _pageView(pages, projector: false);
     return Scaffold(
       appBar: AppBar(
         title: FeAppBarTitle(widget.deck.title),
@@ -438,6 +635,14 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
             tooltip: l.lessonViewerOutline,
             icon: const Icon(Icons.view_list_outlined),
             onPressed: () => _openOutline(pages),
+          ),
+          IconButton(
+            key: const Key('lesson.autoButton'),
+            tooltip: l.lessonAutoTooltip,
+            isSelected: _auto,
+            icon: const Icon(Icons.slideshow_outlined),
+            selectedIcon: const Icon(Icons.slideshow),
+            onPressed: _openAutoSheet,
           ),
           IconButton(
             key: const Key('lesson.projectorButton'),
@@ -508,6 +713,12 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
                       ),
               ),
             ],
+            if (_auto)
+              _AutoBar(
+                seconds: _autoSeconds,
+                paused: _autoPaused,
+                onToggle: _toggleAutoPause,
+              ),
             _ControlBar(
               index: _index,
               total: pages.length,
@@ -609,6 +820,28 @@ class _LessonViewerState extends ConsumerState<LessonViewer> {
                                           _go(_index - 1, pages.length);
                                         }
                                       : null,
+                                ),
+                                IconButton(
+                                  key: const Key('lesson.projectorAuto'),
+                                  tooltip: !_auto
+                                      ? l.lessonAutoAuto
+                                      : _autoPaused
+                                      ? l.lessonAutoResume
+                                      : l.lessonAutoPause,
+                                  icon: Icon(
+                                    !_auto || _autoPaused
+                                        ? Icons.play_arrow_rounded
+                                        : Icons.pause_rounded,
+                                  ),
+                                  color: c.textSecondary,
+                                  onPressed: () {
+                                    _showControls();
+                                    if (!_auto) {
+                                      _setAuto(true);
+                                    } else {
+                                      _toggleAutoPause();
+                                    }
+                                  },
                                 ),
                                 IconButton(
                                   key: const Key('lesson.projectorNext'),
@@ -753,6 +986,49 @@ class _NotesPanel extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+}
+
+/// Avto-varaqlash holati: tezlik yoki «Pauza» va pauza/davom tugmasi.
+class _AutoBar extends StatelessWidget {
+  const _AutoBar({
+    required this.seconds,
+    required this.paused,
+    required this.onToggle,
+  });
+
+  final int seconds;
+  final bool paused;
+  final VoidCallback onToggle;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: c.surfaceSunken,
+        border: Border(top: BorderSide(color: c.border)),
+      ),
+      child: Row(
+        children: [
+          IconButton(
+            key: const Key('lesson.autoToggle'),
+            tooltip: paused ? l.lessonAutoResume : l.lessonAutoPause,
+            icon: Icon(paused ? Icons.play_arrow_rounded : Icons.pause_rounded),
+            onPressed: onToggle,
+          ),
+          Expanded(
+            child: Text(
+              paused ? l.lessonAutoPaused : l.lessonAutoRunning(seconds),
+              key: const Key('lesson.autoStatus'),
+              style: Theme.of(context).textTheme.bodySmall,
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
