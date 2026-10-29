@@ -50,8 +50,9 @@ def main() -> None:
         sys.exit("No draft release with an uploaded build on the internal track")
     target = max(drafts, key=newest)
     target["status"] = "completed"
-    # Chiqarilayotgan reliz bilan birga boshqa qoralamalar saqlanib qoladi.
-    track["releases"] = releases
+    # Play trekda faqat BITTA «completed» relizga ruxsat beradi: yangi reliz
+    # avvalgisini almashtiradi (eski versiya kodlari endi eskirgan).
+    track["releases"] = [target]
     r = s.put(f"{base}/edits/{edit}/tracks/{TRACK}", json=track)
     if not r.ok:
         sys.exit(f"Track update refused: {r.status_code} {r.text[:400]}")
