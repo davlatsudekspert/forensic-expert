@@ -271,7 +271,8 @@ void main() {
     tester,
   ) async {
     await open(tester, path: Routes.lesson('a1'));
-    expect(guard.secured, 1);
+    expect(guard.secured, 0);
+    expect(guard.released, 1);
     expect(find.byType(LessonViewer), findsOneWidget);
     expect(find.text('Birinchi slayd'), findsOneWidget);
     expect(find.text('1 / 5'), findsOneWidget); // 3 + qiziqarli + adabiyotlar
@@ -313,25 +314,24 @@ void main() {
 
     GoRouter.of(tester.element(find.byType(LessonViewer))).go(Routes.teacher);
     await tester.pumpAndSettle();
-    expect(guard.released, 1);
+    expect(guard.released, 2);
   });
 
-  testWidgets('proyektor (televizor): himoya o‘chadi, chiqqach qaytadi', (
+  testWidgets('televizorga uzatish: himoya hech qachon yoqilmaydi', (
     tester,
   ) async {
     await open(tester, path: Routes.lesson('a1'));
-    expect(guard.secured, 1);
-    expect(guard.released, 0);
+    expect(guard.secured, 0);
 
     await tester.tap(find.byKey(const Key('lesson.projectorButton')));
     await tester.pumpAndSettle();
     expect(find.byKey(const Key('lesson.projector')), findsOneWidget);
-    expect(guard.released, 1);
+    expect(guard.secured, 0);
 
     await tester.tap(find.byKey(const Key('lesson.projectorExit')));
     await tester.pumpAndSettle();
     expect(find.byKey(const Key('lesson.projector')), findsNothing);
-    expect(guard.secured, 2);
+    expect(guard.secured, 0);
   });
 
   testWidgets(

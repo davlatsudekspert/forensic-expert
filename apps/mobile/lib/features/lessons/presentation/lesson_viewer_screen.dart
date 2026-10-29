@@ -160,7 +160,10 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
     _guard = ref.read(lessonScreenGuardProvider);
     _awake = ref.read(classScreenAwakeProvider);
     _orientation = ref.read(classOrientationControlProvider);
-    _guard.secure();
+    // Skrinshot/yozib olish himoyasi (FLAG_SECURE) YOQILMAYDI: ustozlar darsni
+    // televizorga uzatadi (Cast/Miracast/HDMI), himoya esa ekranni qora qiladi.
+    // `release()` — oldingi holatdan qolgan bayroqni olib tashlash uchun.
+    unawaited(_guard.release());
   }
 
   @override
@@ -380,9 +383,6 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
 
   void _enterProjector() {
     _resetController();
-    // Televizorga uzatish (Miracast/Cast/Smart View) uchun yozib olish
-    // himoyasi proyektor rejimida o‘chiriladi, aks holda ekran qora chiqadi.
-    unawaited(_guard.release());
     setState(() => _projector = true);
     _showControls();
     unawaited(_awake.enable());
@@ -400,7 +400,6 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
       _orientation.restore();
     }
     _resetController();
-    unawaited(_guard.secure());
     setState(() => _projector = false);
   }
 
