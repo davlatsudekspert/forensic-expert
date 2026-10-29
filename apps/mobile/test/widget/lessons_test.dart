@@ -316,6 +316,24 @@ void main() {
     expect(guard.released, 1);
   });
 
+  testWidgets('proyektor (televizor): himoya o‘chadi, chiqqach qaytadi', (
+    tester,
+  ) async {
+    await open(tester, path: Routes.lesson('a1'));
+    expect(guard.secured, 1);
+    expect(guard.released, 0);
+
+    await tester.tap(find.byKey(const Key('lesson.projectorButton')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('lesson.projector')), findsOneWidget);
+    expect(guard.released, 1);
+
+    await tester.tap(find.byKey(const Key('lesson.projectorExit')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('lesson.projector')), findsNothing);
+    expect(guard.secured, 2);
+  });
+
   testWidgets(
     'ko‘rish oynasi: matn tanlanmaydi, ulashish/yuklash tugmasi yo‘q',
     (tester) async {

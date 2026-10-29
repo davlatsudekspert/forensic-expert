@@ -380,6 +380,9 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
 
   void _enterProjector() {
     _resetController();
+    // Televizorga uzatish (Miracast/Cast/Smart View) uchun yozib olish
+    // himoyasi proyektor rejimida o‘chiriladi, aks holda ekran qora chiqadi.
+    unawaited(_guard.release());
     setState(() => _projector = true);
     _showControls();
     unawaited(_awake.enable());
@@ -397,6 +400,7 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
       _orientation.restore();
     }
     _resetController();
+    unawaited(_guard.secure());
     setState(() => _projector = false);
   }
 
