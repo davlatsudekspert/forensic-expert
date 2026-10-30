@@ -279,6 +279,15 @@ void main() {
       final wrong = cur.options.firstWhere((o) => o.id != cur.correctOption).id;
       await tester.tap(find.byKey(Key('class.option.$wrong')));
       await _frames(tester);
+      // Selection remains editable and has not reached the server.
+      expect((await w.student.state(session.id)).value!.myOption, isNull);
+      await tester.tap(find.byKey(Key('class.option.${cur.correctOption}')));
+      await _frames(tester);
+      await tester.tap(find.byKey(Key('class.option.$wrong')));
+      await _frames(tester);
+      await tester.ensureVisible(find.byKey(const Key('class.confirm')));
+      await tester.tap(find.byKey(const Key('class.confirm')));
+      await _frames(tester);
       expect(find.text(l.classAnswerAccepted), findsOneWidget);
       // Ikkinchi marta bosib bo‘lmaydi (tugma o‘chiq), to‘g‘ri javob hali yo‘q.
       expect(find.text(l.classOptionCorrect), findsNothing);

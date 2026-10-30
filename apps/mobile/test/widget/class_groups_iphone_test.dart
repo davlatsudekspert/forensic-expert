@@ -47,6 +47,8 @@ Future<void> _answerAll(WidgetTester tester, int n) async {
   for (var i = 0; i < n; i++) {
     await tester.tap(find.byKey(Key('grp.option.${i % 4}')));
     await frames(tester, 2);
+    await tester.tap(find.byKey(const Key('grp.confirm')));
+    await frames(tester, 2);
     if (i < n - 1) {
       await tester.tap(find.byKey(const Key('grp.next')));
       await frames(tester, 2);
@@ -60,6 +62,45 @@ void main() {
     debugDefaultTargetPlatformOverride = TargetPlatform.iOS;
   });
   tearDown(() => debugDefaultTargetPlatformOverride = null);
+
+  testWidgets(
+    'selection is editable, confirmed separately, and private per student',
+    (tester) async {
+      final prevPlan = testDefaultPlan;
+      testDefaultPlan = Plan.student;
+      addTearDown(() => testDefaultPlan = prevPlan);
+      final w = GroupsWorld();
+      final s = await _setup(w, students: ['stu1', 'stu2']);
+      await w.open(
+        tester,
+        uid: 'stu1',
+        location: Routes.groupTest(s.gid, s.aid),
+      );
+      final attempt = w.backend.open('stu1', s.aid).value!;
+      final qid = attempt.questions.first.id;
+      await tester.tap(find.byKey(const Key('grp.option.0')));
+      await frames(tester);
+      expect(w.backend.open('stu1', s.aid).value!.answers, isEmpty);
+      expect(
+        tester
+            .widget<FilledButton>(find.byKey(const Key('grp.next')))
+            .onPressed,
+        isNull,
+      );
+      await tester.tap(find.byKey(const Key('grp.option.1')));
+      await frames(tester);
+      await tester.tap(find.byKey(const Key('grp.confirm')));
+      await frames(tester);
+      expect(w.backend.open('stu1', s.aid).value!.answers[qid], 1);
+      expect(w.backend.open('stu2', s.aid).value!.answers, isEmpty);
+      // Confirmation does not move to the following question.
+      expect(find.text(attempt.questions.first.text), findsOneWidget);
+      await tester.tap(find.byKey(const Key('grp.next')));
+      await frames(tester);
+      expect(find.text(attempt.questions[1].text), findsOneWidget);
+      await closeApp(tester);
+    },
+  );
 
   testWidgets('iPhone: QR havola → taxallus (’) → test → natija, javoblar '
       'yopilgach ochiladi', (tester) async {

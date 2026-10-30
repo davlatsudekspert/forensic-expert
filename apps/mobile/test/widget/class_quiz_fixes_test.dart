@@ -323,6 +323,9 @@ void main() {
     expect(find.byKey(const Key('class.score')), findsNothing);
     await tester.tap(find.byKey(Key('class.option.${cur.correctOption}')));
     await _frames(tester);
+    await tester.ensureVisible(find.byKey(const Key('class.confirm')));
+    await tester.tap(find.byKey(const Key('class.confirm')));
+    await _frames(tester);
     expect(find.byKey(const Key('class.score')), findsNothing);
     w.tick(30300); // yopildi, lekin hali revealed emas
     await _frames(tester);

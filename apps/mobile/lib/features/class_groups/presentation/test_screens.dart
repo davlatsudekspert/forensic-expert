@@ -50,6 +50,8 @@ class _GroupTestState extends ConsumerState<GroupTestScreen> {
   /// Sinov rejimi: to‘g‘ri javoblar (faqat xotirada).
   Map<String, int> _previewKey = const {};
   final _answers = <String, int>{};
+  final _draftAnswers = <String, int>{};
+  bool _saving = false;
   int _index = 0;
   bool _submitting = false;
   GroupClock? _clock;
@@ -181,16 +183,44 @@ class _GroupTestState extends ConsumerState<GroupTestScreen> {
   }
 
   void _choose(GroupQuestion q, int option) {
-    setState(() => _answers[q.id] = option);
-    if (widget.local) return;
-    unawaited(() async {
+    setState(() => _draftAnswers[q.id] = option);
+  }
+
+  Future<void> _confirm(GroupQuestion q) async {
+    final option = _draftAnswers[q.id];
+    if (option == null || _saving || _submitting) return;
+    setState(() => _saving = true);
+    if (!widget.local) {
       final r = await ref.read(classGroupsServiceProvider).save(
         widget.assignmentId,
         {q.id: option},
       );
       if (!mounted) return;
-      if (r.failure == GroupFailure.timeOver) await _submit(force: true);
-    }());
+      if (r.failure != null) {
+        setState(() => _saving = false);
+        if (r.failure == GroupFailure.timeOver) {
+          await _submit(force: true);
+        } else {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(
+                groupFailureText(
+                  AppLocalizations.of(context),
+                  r.failure!,
+                  r.extra,
+                ),
+              ),
+            ),
+          );
+        }
+        return;
+      }
+    }
+    setState(() {
+      _answers[q.id] = option;
+      _draftAnswers.remove(q.id);
+      _saving = false;
+    });
   }
 
   Future<void> _submit({bool force = false}) async {
@@ -305,7 +335,9 @@ class _GroupTestState extends ConsumerState<GroupTestScreen> {
     }
     final q = a.questions[_index];
     final last = _index == a.questions.length - 1;
-    final chosen = _answers[q.id];
+    final chosen = _draftAnswers[q.id] ?? _answers[q.id];
+    final confirmed =
+        _answers.containsKey(q.id) && !_draftAnswers.containsKey(q.id);
 
     return Scaffold(
       appBar: AppBar(title: FeAppBarTitle(a.assignment.topicTitle)),
@@ -382,7 +414,9 @@ class _GroupTestState extends ConsumerState<GroupTestScreen> {
                             child: FeCard(
                               key: Key('grp.option.$i'),
                               color: chosen == i ? c.accentContainer : null,
-                              onTap: _submitting ? null : () => _choose(q, i),
+                              onTap: _submitting || _saving
+                                  ? null
+                                  : () => _choose(q, i),
                               semanticLabel:
                                   '${String.fromCharCode(0x41 + i)}. $o',
                               child: ExcludeSemantics(
@@ -423,30 +457,52 @@ class _GroupTestState extends ConsumerState<GroupTestScreen> {
             FeContentFrame(
               child: Padding(
                 padding: const EdgeInsets.only(bottom: FeSpace.sm),
-                child: Row(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    Expanded(
-                      child: OutlinedButton(
-                        key: const Key('grp.prev'),
-                        onPressed: _index == 0
+                    if (!confirmed) ...[
+                      FilledButton(
+                        key: const Key('grp.confirm'),
+                        onPressed: chosen == null || _saving || _submitting
                             ? null
-                            : () => setState(() => _index--),
-                        child: Text(l.grpPrev),
+                            : () => _confirm(q),
+                        child: Text(l.verifySubmit),
                       ),
-                    ),
-                    const SizedBox(width: FeSpace.xs),
-                    Expanded(
-                      child: last
-                          ? FilledButton(
-                              key: const Key('grp.finish'),
-                              onPressed: _submitting ? null : _submit,
-                              child: Text(l.grpFinish),
-                            )
-                          : FilledButton(
-                              key: const Key('grp.next'),
-                              onPressed: () => setState(() => _index++),
-                              child: Text(l.grpNext),
-                            ),
+                      const SizedBox(height: FeSpace.xs),
+                    ],
+                    Row(
+                      children: [
+                        Expanded(
+                          child: OutlinedButton(
+                            key: const Key('grp.prev'),
+                            onPressed: _index == 0 || _saving || _submitting
+                                ? null
+                                : () => setState(() => _index--),
+                            child: Text(l.grpPrev),
+                          ),
+                        ),
+                        const SizedBox(width: FeSpace.xs),
+                        Expanded(
+                          child: last
+                              ? FilledButton(
+                                  key: const Key('grp.finish'),
+                                  onPressed:
+                                      _submitting || _saving || !confirmed
+                                      ? null
+                                      : _submit,
+                                  child: Text(l.grpFinish),
+                                )
+                              : FilledButton(
+                                  key: const Key('grp.next'),
+                                  onPressed:
+                                      _saving || _submitting || !confirmed
+                                      ? null
+                                      : () => setState(() => _index++),
+                                  child: Text(l.grpNext),
+                                ),
+                        ),
+                      ],
                     ),
                   ],
                 ),

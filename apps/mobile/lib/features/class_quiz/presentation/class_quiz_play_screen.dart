@@ -210,6 +210,8 @@ class _StudentQuestionState extends ConsumerState<_StudentQuestion> {
   String? _local;
   int? _localIndex;
   bool _busy = false;
+  String? _pending;
+  int? _pendingIndex;
 
   Future<void> _answer(ClassQuestionView q, String optionId) async {
     if (_busy) return;
@@ -251,7 +253,8 @@ class _StudentQuestionState extends ConsumerState<_StudentQuestion> {
     final st = widget.st;
     final q = st.question;
     if (q == null) return const Center(child: CircularProgressIndicator());
-    final selected = st.myOption ?? (_localIndex == q.index ? _local : null);
+    final submitted = st.myOption ?? (_localIndex == q.index ? _local : null);
+    final selected = submitted ?? (_pendingIndex == q.index ? _pending : null);
     final open = st.phase == ClassPhase.open;
     final reveal = st.reveal;
     // Proyektor bilan bir xil (server) tartib: «B» ikkala ekranda bir variant.
@@ -277,7 +280,7 @@ class _StudentQuestionState extends ConsumerState<_StudentQuestion> {
           : l.classResultWrong;
     } else if (!open) {
       status = l.classTimeUpWaiting;
-    } else if (selected != null) {
+    } else if (submitted != null) {
       status = l.classAnswerAccepted;
     } else {
       status = l.classChooseAnswer;
@@ -323,12 +326,23 @@ class _StudentQuestionState extends ConsumerState<_StudentQuestion> {
                     letter: classOptionLetter(i),
                     text: order[i].text,
                     state: stateOf(order[i].id),
-                    onTap: open && selected == null && !_busy
-                        ? () => _answer(q, order[i].id)
+                    onTap: open && submitted == null && !_busy
+                        ? () => setState(() {
+                            _pending = order[i].id;
+                            _pendingIndex = q.index;
+                          })
                         : null,
                   ),
                 ),
               const SizedBox(height: FeSpace.xs),
+              if (open && submitted == null)
+                FilledButton(
+                  key: const Key('class.confirm'),
+                  onPressed: selected == null || _busy
+                      ? null
+                      : () => _answer(q, selected),
+                  child: Text(l.verifySubmit),
+                ),
               Semantics(
                 liveRegion: true,
                 child: Text(
