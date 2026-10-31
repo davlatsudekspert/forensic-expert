@@ -12204,4 +12204,124 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get proLockedBadge => 'Pro bilan ochiladi';
+
+  @override
+  String get workbenchTitle => 'Ish stolim';
+
+  @override
+  String get workbenchFactTitle => 'Bugungi ma’lumot';
+
+  @override
+  String get workbenchFactSource => 'Manba';
+
+  @override
+  String get workbenchFactSemantics => 'To‘liq yozuvni ochish';
+
+  @override
+  String get workbenchCasebookTitle => 'Ish daftari';
+
+  @override
+  String get workbenchCasebookBody =>
+      'Ishlaringiz bo‘yicha yozuvlar — faqat qurilmada';
+
+  @override
+  String get workbenchCourtTitle => 'Sudda so‘roq';
+
+  @override
+  String get workbenchCourtBody =>
+      'Sud savollariga ilmiy asosli javobga tayyorgarlik';
+
+  @override
+  String get workbenchCalcTitle => 'Kalkulyatorlar';
+
+  @override
+  String get workbenchCalcMedBody => 'PMI, Widmark va boshqa hisoblar';
+
+  @override
+  String get workbenchCalcMixedBody =>
+      'Sud tibbiyoti va laboratoriya hisoblari';
+
+  @override
+  String get workbenchAiBody => 'Manbali javoblar va iqtiboslar';
+
+  @override
+  String get workbenchLabTitle => 'Laboratoriya usullari';
+
+  @override
+  String get workbenchLabBody => 'Reaktivlardan GC-MS gacha — bir joyda';
+
+  @override
+  String get workbenchLabReagents => 'Reaktivlar';
+
+  @override
+  String get workbenchLabReagentsSub => 'Eritmalar va retseptlar';
+
+  @override
+  String get workbenchLabExpress => 'Ekspress test tahlillari';
+
+  @override
+  String get workbenchLabExpressSub => 'Skrining va rangli sinamalar';
+
+  @override
+  String get workbenchLabSpectro => 'Spektrofotometriya usullari';
+
+  @override
+  String get workbenchLabSpectroSub => 'Buger–Lambert–Ber qonuni';
+
+  @override
+  String get workbenchLabMs => 'GC-MS / LC-MS';
+
+  @override
+  String get workbenchLabMsSub => 'Xromatografiya va mass-spektrometriya';
+
+  @override
+  String get workbenchSolutionTitle => 'Reaktiv va eritma kalkulyatori';
+
+  @override
+  String get workbenchSolutionBody => 'Massa, suyultirish, konsentratsiya';
+
+  @override
+  String get workbenchLodTitle => 'LOD/LOQ · kalibrlash';
+
+  @override
+  String get workbenchLodBody => 'Aniqlash chegarasi va validatsiya';
+
+  @override
+  String get studentDeskTitle => 'O‘qish stolim';
+
+  @override
+  String get deskLessonsTitle => 'Darslar va kitoblar';
+
+  @override
+  String get deskLessonsBody => 'Sud tibbiyoti, toksikologiya, biokimyo';
+
+  @override
+  String get deskTestsTitle => 'Testlar va kartochkalar';
+
+  @override
+  String get deskTestsBody => 'O‘zingizni tekshiring va takrorlang';
+
+  @override
+  String get deskExamTitle => 'Imtihon rejimi';
+
+  @override
+  String get deskExamBody => 'Baholanadigan, manbali savollar';
+
+  @override
+  String get deskGroupTitle => 'Guruhim';
+
+  @override
+  String get deskGroupBody => 'Guruhga qo‘shiling va ustoz testlarini yeching';
+
+  @override
+  String get dailyQuestionTitle => 'Bugungi savol';
+
+  @override
+  String get dailyQuestionCorrect => 'To‘g‘ri';
+
+  @override
+  String get dailyQuestionWrong => 'Noto‘g‘ri — to‘g‘ri javob belgilangan';
+
+  @override
+  String get dailyQuestionExplain => 'To‘liq izoh va mashq';
 }

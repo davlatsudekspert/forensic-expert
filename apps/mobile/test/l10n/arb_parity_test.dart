@@ -38,6 +38,8 @@ void main() {
     'tcNetTiktok',
     'tcSocialHintWeb',
     'moduleAi',
+    // Ish stolim (2026-10-31): xalqaro qisqartma «GC-MS / LC-MS».
+    'workbenchLabMs',
     'navAi',
     // PHASE 2: brend/texnik nomlar va xalqaro atamalar.
     'testDataBadge',

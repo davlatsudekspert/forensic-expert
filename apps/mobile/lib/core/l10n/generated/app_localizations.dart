@@ -21224,6 +21224,240 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Unlocked with Pro'**
   String get proLockedBadge;
+
+  /// Expert Home section title: the expert's personal workbench.
+  ///
+  /// In en, this message translates to:
+  /// **'My workbench'**
+  String get workbenchTitle;
+
+  /// Expert Home card title: one sourced fact per day.
+  ///
+  /// In en, this message translates to:
+  /// **'Today’s fact'**
+  String get workbenchFactTitle;
+
+  /// Label before the source line of the daily fact.
+  ///
+  /// In en, this message translates to:
+  /// **'Source'**
+  String get workbenchFactSource;
+
+  /// Screen-reader hint for the daily fact card.
+  ///
+  /// In en, this message translates to:
+  /// **'Open the full entry'**
+  String get workbenchFactSemantics;
+
+  /// Workbench card: personal casebook.
+  ///
+  /// In en, this message translates to:
+  /// **'Casebook'**
+  String get workbenchCasebookTitle;
+
+  /// Workbench card subtitle: casebook.
+  ///
+  /// In en, this message translates to:
+  /// **'Your case notes — on this device only'**
+  String get workbenchCasebookBody;
+
+  /// Workbench card: court questioning preparation.
+  ///
+  /// In en, this message translates to:
+  /// **'Court questioning'**
+  String get workbenchCourtTitle;
+
+  /// Workbench card subtitle: court preparation.
+  ///
+  /// In en, this message translates to:
+  /// **'Prepare evidence-based answers to court questions'**
+  String get workbenchCourtBody;
+
+  /// Workbench card: calculators.
+  ///
+  /// In en, this message translates to:
+  /// **'Calculators'**
+  String get workbenchCalcTitle;
+
+  /// Workbench card subtitle: forensic-medicine calculators.
+  ///
+  /// In en, this message translates to:
+  /// **'PMI, Widmark and other calculations'**
+  String get workbenchCalcMedBody;
+
+  /// Workbench card subtitle: calculators for a mixed profile.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic medicine and laboratory calculations'**
+  String get workbenchCalcMixedBody;
+
+  /// Workbench card subtitle: Forensic AI.
+  ///
+  /// In en, this message translates to:
+  /// **'Sourced answers with citations'**
+  String get workbenchAiBody;
+
+  /// Wide workbench card for chemistry experts: laboratory methods.
+  ///
+  /// In en, this message translates to:
+  /// **'Laboratory methods'**
+  String get workbenchLabTitle;
+
+  /// Subtitle of the laboratory methods card.
+  ///
+  /// In en, this message translates to:
+  /// **'From reagents to GC-MS — in one place'**
+  String get workbenchLabBody;
+
+  /// Laboratory methods item: reagents.
+  ///
+  /// In en, this message translates to:
+  /// **'Reagents'**
+  String get workbenchLabReagents;
+
+  /// Subtitle: reagents item.
+  ///
+  /// In en, this message translates to:
+  /// **'Solutions and recipes'**
+  String get workbenchLabReagentsSub;
+
+  /// Laboratory methods item: express tests.
+  ///
+  /// In en, this message translates to:
+  /// **'Express test analyses'**
+  String get workbenchLabExpress;
+
+  /// Subtitle: express tests item.
+  ///
+  /// In en, this message translates to:
+  /// **'Screening and colour tests'**
+  String get workbenchLabExpressSub;
+
+  /// Laboratory methods item: spectrophotometry.
+  ///
+  /// In en, this message translates to:
+  /// **'Spectrophotometry methods'**
+  String get workbenchLabSpectro;
+
+  /// Subtitle: spectrophotometry item.
+  ///
+  /// In en, this message translates to:
+  /// **'Beer–Lambert law'**
+  String get workbenchLabSpectroSub;
+
+  /// Laboratory methods item (and card): GC-MS / LC-MS.
+  ///
+  /// In en, this message translates to:
+  /// **'GC-MS / LC-MS'**
+  String get workbenchLabMs;
+
+  /// Subtitle: GC-MS / LC-MS item.
+  ///
+  /// In en, this message translates to:
+  /// **'Chromatography and mass spectrometry'**
+  String get workbenchLabMsSub;
+
+  /// Workbench card: reagent and solution calculator.
+  ///
+  /// In en, this message translates to:
+  /// **'Reagent and solution calculator'**
+  String get workbenchSolutionTitle;
+
+  /// Subtitle: reagent and solution calculator.
+  ///
+  /// In en, this message translates to:
+  /// **'Mass, dilution, concentration'**
+  String get workbenchSolutionBody;
+
+  /// Workbench card: LOD/LOQ and calibration.
+  ///
+  /// In en, this message translates to:
+  /// **'LOD/LOQ · calibration'**
+  String get workbenchLodTitle;
+
+  /// Subtitle: LOD/LOQ and validation.
+  ///
+  /// In en, this message translates to:
+  /// **'Detection limits and validation'**
+  String get workbenchLodBody;
+
+  /// Student Home section title: the student's study desk.
+  ///
+  /// In en, this message translates to:
+  /// **'My study desk'**
+  String get studentDeskTitle;
+
+  /// Study desk card: lessons and books.
+  ///
+  /// In en, this message translates to:
+  /// **'Lessons and books'**
+  String get deskLessonsTitle;
+
+  /// Study desk card subtitle: lessons.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic medicine, toxicology, biochemistry'**
+  String get deskLessonsBody;
+
+  /// Study desk card: self-study quizzes and flashcards.
+  ///
+  /// In en, this message translates to:
+  /// **'Quizzes and flashcards'**
+  String get deskTestsTitle;
+
+  /// Study desk card subtitle: quizzes and flashcards.
+  ///
+  /// In en, this message translates to:
+  /// **'Check yourself and review'**
+  String get deskTestsBody;
+
+  /// Study desk card: exam mode.
+  ///
+  /// In en, this message translates to:
+  /// **'Exam mode'**
+  String get deskExamTitle;
+
+  /// Study desk card subtitle: exam mode.
+  ///
+  /// In en, this message translates to:
+  /// **'Graded questions with sources'**
+  String get deskExamBody;
+
+  /// Study desk card: my group.
+  ///
+  /// In en, this message translates to:
+  /// **'My group'**
+  String get deskGroupTitle;
+
+  /// Study desk card subtitle: group.
+  ///
+  /// In en, this message translates to:
+  /// **'Join a group and take teacher tests'**
+  String get deskGroupBody;
+
+  /// Student Home card title: one quiz question per day.
+  ///
+  /// In en, this message translates to:
+  /// **'Today’s question'**
+  String get dailyQuestionTitle;
+
+  /// Feedback after a correct answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct'**
+  String get dailyQuestionCorrect;
+
+  /// Feedback after a wrong answer (correct option is highlighted).
+  ///
+  /// In en, this message translates to:
+  /// **'Not quite — the correct answer is highlighted'**
+  String get dailyQuestionWrong;
+
+  /// Button: open the full explanation in the normal quiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Full explanation and practice'**
+  String get dailyQuestionExplain;
 }
 
 class _AppLocalizationsDelegate

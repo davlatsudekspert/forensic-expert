@@ -217,7 +217,9 @@
     "description": "Theme option."
   },
   "settingsMode": "Mode",
-  "@settingsMode": {"description": "Profile row title: usage mode (student, teacher or expert)."},
+  "@settingsMode": {
+    "description": "Profile row title: usage mode (student, teacher or expert)."
+  },
   "scientificDatabaseLabel": "Scientific database",
   "@scientificDatabaseLabel": {
     "description": "Settings row showing content pack version."
@@ -4140,7 +4142,9 @@
     "description": "Value."
   },
   "aiLimNotVerified": "Information is taken from the literature and is for reference; it does not replace an official expert conclusion.",
-  "@aiLimNotVerified": {"description": "AI limitation: evidence is from literature, for reference."},
+  "@aiLimNotVerified": {
+    "description": "AI limitation: evidence is from literature, for reference."
+  },
   "aiLimConflict": "Sources disagree or overlap — see EVIDENCE CONFLICT.",
   "@aiLimConflict": {
     "description": "Limitation."
@@ -11139,9 +11143,13 @@
     "description": "Chip: the claim's source is confirmed."
   },
   "needsConfirmationChip": "International literature",
-  "@needsConfirmationChip": {"description": "Chip: a claim from international literature (article, thesis)."},
+  "@needsConfirmationChip": {
+    "description": "Chip: a claim from international literature (article, thesis)."
+  },
   "needsConfirmationBanner": "From international literature (article, thesis); see the original source for important decisions.",
-  "@needsConfirmationBanner": {"description": "Banner for claims from international literature."},
+  "@needsConfirmationBanner": {
+    "description": "Banner for claims from international literature."
+  },
   "avatarSemantics": "Profile photo",
   "@avatarSemantics": {
     "description": "Semantics label of the profile photo."
@@ -14141,833 +14149,2062 @@
     }
   },
   "proUnlock": "Unlock with Pro",
-  "@proUnlock": {"description": "Button on a Pro lock card: opens the Pro page."},
+  "@proUnlock": {
+    "description": "Button on a Pro lock card: opens the Pro page."
+  },
   "proTitle": "Pro plan",
-  "@proTitle": {"description": "Pro page title."},
+  "@proTitle": {
+    "description": "Pro page title."
+  },
   "proPlanStudent": "Student Pro",
-  "@proPlanStudent": {"description": "Plan name: student."},
+  "@proPlanStudent": {
+    "description": "Plan name: student."
+  },
   "proPlanTeacher": "Teacher Pro",
-  "@proPlanTeacher": {"description": "Plan name: teacher."},
+  "@proPlanTeacher": {
+    "description": "Plan name: teacher."
+  },
   "proPlanExpert": "Expert Pro",
-  "@proPlanExpert": {"description": "Plan name: expert (professional mode)."},
+  "@proPlanExpert": {
+    "description": "Plan name: expert (professional mode)."
+  },
   "proProfileRow": "Plan",
-  "@proProfileRow": {"description": "Profile row title: current plan."},
+  "@proProfileRow": {
+    "description": "Profile row title: current plan."
+  },
   "proFreeAlways": "Safety information, sources and provenance are always free.",
-  "@proFreeAlways": {"description": "Pro page and lock pages: safety/sources are always free."},
+  "@proFreeAlways": {
+    "description": "Pro page and lock pages: safety/sources are always free."
+  },
   "proBenefitFullQuizBank": "Full question bank: 4,370 questions in 211 topics",
-  "@proBenefitFullQuizBank": {"description": "Lock card benefit."},
+  "@proBenefitFullQuizBank": {
+    "description": "Lock card benefit."
+  },
   "proBenefitExamMode": "Exam mode with a review of every answer",
-  "@proBenefitExamMode": {"description": "Lock card benefit."},
+  "@proBenefitExamMode": {
+    "description": "Lock card benefit."
+  },
   "proBenefitAllFlashcards": "Flashcards for all subjects",
-  "@proBenefitAllFlashcards": {"description": "Lock card benefit."},
+  "@proBenefitAllFlashcards": {
+    "description": "Lock card benefit."
+  },
   "proBenefitErrorAnalytics": "Error analysis and statistics",
-  "@proBenefitErrorAnalytics": {"description": "Lock card benefit."},
+  "@proBenefitErrorAnalytics": {
+    "description": "Lock card benefit."
+  },
   "proBenefitOfflineDownload": "Download materials for offline study",
-  "@proBenefitOfflineDownload": {"description": "Lock card benefit."},
+  "@proBenefitOfflineDownload": {
+    "description": "Lock card benefit."
+  },
   "proBenefitAllLessons": "All 211 lecture presentations",
-  "@proBenefitAllLessons": {"description": "Lock card benefit."},
+  "@proBenefitAllLessons": {
+    "description": "Lock card benefit."
+  },
   "proBenefitUnlimitedGroupTests": "Unlimited groups and group tests of more than 10 questions",
-  "@proBenefitUnlimitedGroupTests": {"description": "Lock card benefit."},
+  "@proBenefitUnlimitedGroupTests": {
+    "description": "Lock card benefit."
+  },
   "proBenefitResultsCsv": "Export results to CSV",
-  "@proBenefitResultsCsv": {"description": "Lock card benefit."},
+  "@proBenefitResultsCsv": {
+    "description": "Lock card benefit."
+  },
   "proBenefitHardestDiscussion": "Discussion of the hardest questions",
-  "@proBenefitHardestDiscussion": {"description": "Lock card benefit."},
+  "@proBenefitHardestDiscussion": {
+    "description": "Lock card benefit."
+  },
   "proBenefitLiveTestLarge": "Live tests for large audiences",
-  "@proBenefitLiveTestLarge": {"description": "Lock card benefit."},
+  "@proBenefitLiveTestLarge": {
+    "description": "Lock card benefit."
+  },
   "proBenefitInstrumentsCourseFull": "The full «Working with instruments» course",
-  "@proBenefitInstrumentsCourseFull": {"description": "Lock card benefit."},
+  "@proBenefitInstrumentsCourseFull": {
+    "description": "Lock card benefit."
+  },
   "proBenefitProCalculators": "Professional calculators: PMI, concentration, LOD/LOQ and more",
-  "@proBenefitProCalculators": {"description": "Lock card benefit."},
+  "@proBenefitProCalculators": {
+    "description": "Lock card benefit."
+  },
   "proBenefitCaseNotebook": "Expert casebook with sourced blocks for your conclusions",
-  "@proBenefitCaseNotebook": {"description": "Lock card benefit."},
+  "@proBenefitCaseNotebook": {
+    "description": "Lock card benefit."
+  },
   "proBenefitCourtPrep": "Court testimony preparation: simulator, drills and statistics",
-  "@proBenefitCourtPrep": {"description": "Lock card benefit."},
+  "@proBenefitCourtPrep": {
+    "description": "Lock card benefit."
+  },
   "proBenefitAiExtended": "A higher daily AI limit",
-  "@proBenefitAiExtended": {"description": "Lock card benefit."},
+  "@proBenefitAiExtended": {
+    "description": "Lock card benefit."
+  },
   "proCtxAllLessons": "All 211 lecture presentations and their tests open with Teacher Pro.",
-  "@proCtxAllLessons": {"description": "Offer at the end of a free lecture lesson."},
+  "@proCtxAllLessons": {
+    "description": "Offer at the end of a free lecture lesson."
+  },
   "proCtxInstrumentsRest": "All lessons of this course and their tests open with Expert Pro.",
-  "@proCtxInstrumentsRest": {"description": "Offer at the end of the free instruments lesson."},
+  "@proCtxInstrumentsRest": {
+    "description": "Offer at the end of the free instruments lesson."
+  },
   "proCtxGroupLimit": "The free plan includes one group. Create more groups with Teacher Pro.",
-  "@proCtxGroupLimit": {"description": "Shown when a free teacher tries to create a second group."},
+  "@proCtxGroupLimit": {
+    "description": "Shown when a free teacher tries to create a second group."
+  },
   "proStateFree": "Free plan",
-  "@proStateFree": {"description": "Pro page status: free plan."},
+  "@proStateFree": {
+    "description": "Pro page status: free plan."
+  },
   "proStateFreeBody": "Reference, sources and safety information are always free. Pro adds extra tools for your mode.",
-  "@proStateFreeBody": {"description": "Pro page status body for the free plan."},
+  "@proStateFreeBody": {
+    "description": "Pro page status body for the free plan."
+  },
   "proStateTrial": "{plan}: free trial",
-  "@proStateTrial": {"description": "Pro page status: trial active. {plan} is the plan name.", "placeholders": {"plan": {"type": "String"}}},
+  "@proStateTrial": {
+    "description": "Pro page status: trial active. {plan} is the plan name.",
+    "placeholders": {
+      "plan": {
+        "type": "String"
+      }
+    }
+  },
   "proStateActive": "{plan} is active",
-  "@proStateActive": {"description": "Pro page status: plan active. {plan} is the plan name.", "placeholders": {"plan": {"type": "String"}}},
+  "@proStateActive": {
+    "description": "Pro page status: plan active. {plan} is the plan name.",
+    "placeholders": {
+      "plan": {
+        "type": "String"
+      }
+    }
+  },
   "proStateUntil": "Until {date}",
-  "@proStateUntil": {"description": "Pro page: end date. {date} is a formatted date.", "placeholders": {"date": {"type": "String"}}},
+  "@proStateUntil": {
+    "description": "Pro page: end date. {date} is a formatted date.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
   "proStateNoEnd": "No end date",
-  "@proStateNoEnd": {"description": "Pro page: plan without an end date."},
+  "@proStateNoEnd": {
+    "description": "Pro page: plan without an end date."
+  },
   "proAutoRenewOn": "Auto-renews",
-  "@proAutoRenewOn": {"description": "Pro page: subscription renews automatically."},
+  "@proAutoRenewOn": {
+    "description": "Pro page: subscription renews automatically."
+  },
   "proAutoRenewOff": "Does not renew",
-  "@proAutoRenewOff": {"description": "Pro page: subscription does not renew."},
+  "@proAutoRenewOff": {
+    "description": "Pro page: subscription does not renew."
+  },
   "proSourceStore": "Store subscription",
-  "@proSourceStore": {"description": "Plan source: store subscription."},
+  "@proSourceStore": {
+    "description": "Plan source: store subscription."
+  },
   "proSourceAdmin": "Granted by administrator",
-  "@proSourceAdmin": {"description": "Plan source: granted by an administrator."},
+  "@proSourceAdmin": {
+    "description": "Plan source: granted by an administrator."
+  },
   "proSourceTrial": "Free trial",
-  "@proSourceTrial": {"description": "Plan source: free trial."},
+  "@proSourceTrial": {
+    "description": "Plan source: free trial."
+  },
   "proOwnModeNote": "A plan unlocks features of its own mode only. Switching the mode does not unlock another plan’s features.",
-  "@proOwnModeNote": {"description": "Pro page: a plan unlocks only its own mode."},
+  "@proOwnModeNote": {
+    "description": "Pro page: a plan unlocks only its own mode."
+  },
   "proTeacherRoleNote": "The Teacher panel still requires the teacher role on the server; Pro does not grant the role.",
-  "@proTeacherRoleNote": {"description": "Pro page (teacher plan): server role is still required."},
+  "@proTeacherRoleNote": {
+    "description": "Pro page (teacher plan): server role is still required."
+  },
   "proIncludesStudent1": "Full question bank: 4,370 questions in 211 topics",
-  "@proIncludesStudent1": {"description": "Pro page: what the student plan includes, item 1."},
+  "@proIncludesStudent1": {
+    "description": "Pro page: what the student plan includes, item 1."
+  },
   "proIncludesStudent2": "Exam mode with a review of every answer",
-  "@proIncludesStudent2": {"description": "Pro page: what the student plan includes, item 2."},
+  "@proIncludesStudent2": {
+    "description": "Pro page: what the student plan includes, item 2."
+  },
   "proIncludesStudent3": "Flashcards for all subjects",
-  "@proIncludesStudent3": {"description": "Pro page: what the student plan includes, item 3."},
+  "@proIncludesStudent3": {
+    "description": "Pro page: what the student plan includes, item 3."
+  },
   "proIncludesStudent4": "Error analysis and statistics",
-  "@proIncludesStudent4": {"description": "Pro page: what the student plan includes, item 4."},
+  "@proIncludesStudent4": {
+    "description": "Pro page: what the student plan includes, item 4."
+  },
   "proIncludesTeacher1": "All 211 lecture presentations (projector mode)",
-  "@proIncludesTeacher1": {"description": "Pro page: what the teacher plan includes, item 1."},
+  "@proIncludesTeacher1": {
+    "description": "Pro page: what the teacher plan includes, item 1."
+  },
   "proIncludesTeacher2": "Unlimited groups and tests of more than 10 questions",
-  "@proIncludesTeacher2": {"description": "Pro page: what the teacher plan includes, item 2."},
+  "@proIncludesTeacher2": {
+    "description": "Pro page: what the teacher plan includes, item 2."
+  },
   "proIncludesTeacher3": "Results export to CSV",
-  "@proIncludesTeacher3": {"description": "Pro page: what the teacher plan includes, item 3."},
+  "@proIncludesTeacher3": {
+    "description": "Pro page: what the teacher plan includes, item 3."
+  },
   "proIncludesTeacher4": "Discussion of the hardest questions",
-  "@proIncludesTeacher4": {"description": "Pro page: what the teacher plan includes, item 4."},
+  "@proIncludesTeacher4": {
+    "description": "Pro page: what the teacher plan includes, item 4."
+  },
   "proIncludesExpert1": "The full «Working with instruments» course: Kristallyuks/ethanol, UV-1900/COHb, GC-MS",
-  "@proIncludesExpert1": {"description": "Pro page: what the expert plan includes, item 1."},
+  "@proIncludesExpert1": {
+    "description": "Pro page: what the expert plan includes, item 1."
+  },
   "proIncludesExpert2": "Professional calculators: PMI, concentration, LOD/LOQ and more",
-  "@proIncludesExpert2": {"description": "Pro page: what the expert plan includes, item 2."},
+  "@proIncludesExpert2": {
+    "description": "Pro page: what the expert plan includes, item 2."
+  },
   "proIncludesExpert3": "Expert casebook and court testimony preparation",
-  "@proIncludesExpert3": {"description": "Pro page: what the expert plan includes, item 3."},
+  "@proIncludesExpert3": {
+    "description": "Pro page: what the expert plan includes, item 3."
+  },
   "proIncludesExpert4": "A higher daily AI limit",
-  "@proIncludesExpert4": {"description": "Pro page: what the expert plan includes, item 4."},
+  "@proIncludesExpert4": {
+    "description": "Pro page: what the expert plan includes, item 4."
+  },
   "proGuestTitle": "Sign in to use Pro",
-  "@proGuestTitle": {"description": "Pro page for a signed-out user."},
+  "@proGuestTitle": {
+    "description": "Pro page for a signed-out user."
+  },
   "proGuestBody": "A plan is tied to your account and works on all your devices. The reference and safety information stay free without an account.",
-  "@proGuestBody": {"description": "Pro page for a signed-out user."},
+  "@proGuestBody": {
+    "description": "Pro page for a signed-out user."
+  },
   "proGuestSignIn": "Sign in with an email code",
-  "@proGuestSignIn": {"description": "Button: sign in with an email code."},
+  "@proGuestSignIn": {
+    "description": "Button: sign in with an email code."
+  },
   "proChoose": "Choose a subscription",
-  "@proChoose": {"description": "Pro page section: choose a subscription."},
+  "@proChoose": {
+    "description": "Pro page section: choose a subscription."
+  },
   "proAlreadyActive": "This plan is already active on your account.",
-  "@proAlreadyActive": {"description": "Pro page: this plan is already active."},
+  "@proAlreadyActive": {
+    "description": "Pro page: this plan is already active."
+  },
   "proStoreUnavailable": "The store is not available right now (for example on an emulator or without a store account). The price is shown in the store when you subscribe.",
-  "@proStoreUnavailable": {"description": "Pro page: store not available; price is shown in the store."},
+  "@proStoreUnavailable": {
+    "description": "Pro page: store not available; price is shown in the store."
+  },
   "proStoreNoProducts": "The store did not return this plan’s subscriptions yet. Try again later; the price is shown in the store.",
-  "@proStoreNoProducts": {"description": "Pro page: the store returned no products."},
+  "@proStoreNoProducts": {
+    "description": "Pro page: the store returned no products."
+  },
   "proMonthly": "Monthly",
-  "@proMonthly": {"description": "Subscription period."},
+  "@proMonthly": {
+    "description": "Subscription period."
+  },
   "proYearly": "Yearly",
-  "@proYearly": {"description": "Subscription period."},
+  "@proYearly": {
+    "description": "Subscription period."
+  },
   "proBuy": "Buy",
-  "@proBuy": {"description": "Button: buy the subscription."},
+  "@proBuy": {
+    "description": "Button: buy the subscription."
+  },
   "proTrialButton": "Try free for 30 days",
-  "@proTrialButton": {"description": "Button: start the free trial."},
+  "@proTrialButton": {
+    "description": "Button: start the free trial."
+  },
   "proTrialNote": "The free trial is available once per device and once per account. It ends on its own and nothing is charged.",
-  "@proTrialNote": {"description": "Pro page: trial rules."},
+  "@proTrialNote": {
+    "description": "Pro page: trial rules."
+  },
   "proRestore": "Restore purchases",
-  "@proRestore": {"description": "Button: restore purchases."},
+  "@proRestore": {
+    "description": "Button: restore purchases."
+  },
   "proFlowWorking": "Please wait…",
-  "@proFlowWorking": {"description": "Pro page: working."},
+  "@proFlowWorking": {
+    "description": "Pro page: working."
+  },
   "proFlowSuccess": "Done. Your plan is active.",
-  "@proFlowSuccess": {"description": "Pro page: success."},
+  "@proFlowSuccess": {
+    "description": "Pro page: success."
+  },
   "proFlowPending": "The purchase is waiting for approval. The plan turns on after it is confirmed.",
-  "@proFlowPending": {"description": "Pro page: purchase pending approval."},
+  "@proFlowPending": {
+    "description": "Pro page: purchase pending approval."
+  },
   "proFlowCanceled": "The purchase was cancelled. Nothing was charged.",
-  "@proFlowCanceled": {"description": "Pro page: purchase cancelled."},
+  "@proFlowCanceled": {
+    "description": "Pro page: purchase cancelled."
+  },
   "proFlowStoreNotConfigured": "Store purchase verification is not connected on the server yet. Your purchase is kept and will be checked once it is connected.",
-  "@proFlowStoreNotConfigured": {"description": "Pro page: server-side store verification is not connected."},
+  "@proFlowStoreNotConfigured": {
+    "description": "Pro page: server-side store verification is not connected."
+  },
   "proFlowInvalid": "The purchase could not be verified. If you were charged, contact support.",
-  "@proFlowInvalid": {"description": "Pro page: purchase could not be verified."},
+  "@proFlowInvalid": {
+    "description": "Pro page: purchase could not be verified."
+  },
   "proFlowOffline": "No connection. The purchase will be checked when the internet is back.",
-  "@proFlowOffline": {"description": "Pro page: no connection."},
+  "@proFlowOffline": {
+    "description": "Pro page: no connection."
+  },
   "proFlowError": "Something went wrong. Please try again.",
-  "@proFlowError": {"description": "Pro page: generic error."},
+  "@proFlowError": {
+    "description": "Pro page: generic error."
+  },
   "proFlowRestoreNothing": "No purchases to restore were found for this store account.",
-  "@proFlowRestoreNothing": {"description": "Pro page: nothing to restore."},
+  "@proFlowRestoreNothing": {
+    "description": "Pro page: nothing to restore."
+  },
   "proTrialUsedDevice": "The free trial has already been used on this device.",
-  "@proTrialUsedDevice": {"description": "Pro page: trial already used on this device."},
+  "@proTrialUsedDevice": {
+    "description": "Pro page: trial already used on this device."
+  },
   "proTrialUsedAccount": "The free trial has already been used on this account.",
-  "@proTrialUsedAccount": {"description": "Pro page: trial already used on this account."},
+  "@proTrialUsedAccount": {
+    "description": "Pro page: trial already used on this account."
+  },
   "proTrialHasPlan": "You already have an active plan, so the trial is not needed.",
-  "@proTrialHasPlan": {"description": "Pro page: user already has a plan."},
+  "@proTrialHasPlan": {
+    "description": "Pro page: user already has a plan."
+  },
   "proTrialUnavailable": "The trial cannot be offered on this device.",
-  "@proTrialUnavailable": {"description": "Pro page: trial cannot be offered on this device."},
+  "@proTrialUnavailable": {
+    "description": "Pro page: trial cannot be offered on this device."
+  },
   "proTermsTitle": "Subscription terms",
-  "@proTermsTitle": {"description": "Pro page section: subscription terms."},
+  "@proTermsTitle": {
+    "description": "Pro page section: subscription terms."
+  },
   "proTermsBody": "Subscriptions are monthly or yearly and renew automatically. The price and billing period are shown in the store before you confirm. Payment is charged to your Apple ID or Google Play account at confirmation. The subscription renews unless it is cancelled at least 24 hours before the end of the current period, and your account is charged for the next period within 24 hours before the end. You can manage or cancel it at any time in your store account settings; cancelling takes effect at the end of the paid period. A free trial or introductory offer shown by the store ends automatically.",
-  "@proTermsBody": {"description": "Pro page: Apple 3.1.2 subscription disclosure (period, price in store, auto-renewal, cancellation)."},
+  "@proTermsBody": {
+    "description": "Pro page: Apple 3.1.2 subscription disclosure (period, price in store, auto-renewal, cancellation)."
+  },
   "proCancelHowIos": "To cancel on iPhone: Settings → your name → Subscriptions → FORENSIC EXPERT → Cancel Subscription.",
-  "@proCancelHowIos": {"description": "Pro page: how to cancel on iPhone."},
+  "@proCancelHowIos": {
+    "description": "Pro page: how to cancel on iPhone."
+  },
   "proCancelHowAndroid": "To cancel on Android: Google Play → profile icon → Payments & subscriptions → Subscriptions → FORENSIC EXPERT → Cancel subscription.",
-  "@proCancelHowAndroid": {"description": "Pro page: how to cancel on Android."},
+  "@proCancelHowAndroid": {
+    "description": "Pro page: how to cancel on Android."
+  },
   "proManage": "Manage or cancel subscription",
-  "@proManage": {"description": "Button: open the store subscription settings."},
+  "@proManage": {
+    "description": "Button: open the store subscription settings."
+  },
   "proManageFailed": "Could not open the store page. Open your store account settings manually.",
-  "@proManageFailed": {"description": "Snackbar: the store page could not be opened."},
+  "@proManageFailed": {
+    "description": "Snackbar: the store page could not be opened."
+  },
   "proTermsLink": "Terms of Use",
-  "@proTermsLink": {"description": "Link: Terms of Use."},
+  "@proTermsLink": {
+    "description": "Link: Terms of Use."
+  },
   "proPrivacyLink": "Privacy Policy",
-  "@proPrivacyLink": {"description": "Link: Privacy Policy."},
+  "@proPrivacyLink": {
+    "description": "Link: Privacy Policy."
+  },
   "proOfferStudentTitle": "Study without limits",
-  "@proOfferStudentTitle": {"description": "Home: one-time soft offer for student mode."},
+  "@proOfferStudentTitle": {
+    "description": "Home: one-time soft offer for student mode."
+  },
   "proOfferStudentBody": "Student Pro opens the full question bank, exam mode, all flashcards and error analysis. A free trial, if available, is shown on the Pro page.",
-  "@proOfferStudentBody": {"description": "Home: one-time soft offer for student mode."},
+  "@proOfferStudentBody": {
+    "description": "Home: one-time soft offer for student mode."
+  },
   "proOfferTeacherTitle": "Teach with more tools",
-  "@proOfferTeacherTitle": {"description": "Home: one-time soft offer for teacher mode."},
+  "@proOfferTeacherTitle": {
+    "description": "Home: one-time soft offer for teacher mode."
+  },
   "proOfferTeacherBody": "Teacher Pro opens all 211 presentations, unlimited groups, longer tests, CSV export and discussion of the hardest questions. A free trial, if available, is shown on the Pro page.",
-  "@proOfferTeacherBody": {"description": "Home: one-time soft offer for teacher mode."},
+  "@proOfferTeacherBody": {
+    "description": "Home: one-time soft offer for teacher mode."
+  },
   "proOfferExpertTitle": "Tools for your casework",
-  "@proOfferExpertTitle": {"description": "Home: one-time soft offer for professional mode."},
+  "@proOfferExpertTitle": {
+    "description": "Home: one-time soft offer for professional mode."
+  },
   "proOfferExpertBody": "Expert Pro opens the full instruments course, professional calculators, the casebook, court testimony preparation and a higher AI limit. A free trial, if available, is shown on the Pro page.",
-  "@proOfferExpertBody": {"description": "Home: one-time soft offer for professional mode."},
+  "@proOfferExpertBody": {
+    "description": "Home: one-time soft offer for professional mode."
+  },
   "proOfferOpen": "Learn more",
-  "@proOfferOpen": {"description": "Button on the soft offer."},
+  "@proOfferOpen": {
+    "description": "Button on the soft offer."
+  },
   "proOfferDismiss": "Dismiss",
-  "@proOfferDismiss": {"description": "Tooltip: close the soft offer."},
+  "@proOfferDismiss": {
+    "description": "Tooltip: close the soft offer."
+  },
   "studyStatsTitle": "Error statistics",
-  "@studyStatsTitle": {"description": "Study hub: error statistics card (Student Pro)."},
+  "@studyStatsTitle": {
+    "description": "Study hub: error statistics card (Student Pro)."
+  },
   "studyStatsEmpty": "Review some cards first — statistics will appear here.",
-  "@studyStatsEmpty": {"description": "Study hub: no reviewed cards yet."},
+  "@studyStatsEmpty": {
+    "description": "Study hub: no reviewed cards yet."
+  },
   "studyStatsSummary": "Reviewed: {reviewed} · difficult: {weak} · mastered: {learned}",
-  "@studyStatsSummary": {"description": "Study hub: summary counts.", "placeholders": {"reviewed": {"type": "int"}, "weak": {"type": "int"}, "learned": {"type": "int"}}},
+  "@studyStatsSummary": {
+    "description": "Study hub: summary counts.",
+    "placeholders": {
+      "reviewed": {
+        "type": "int"
+      },
+      "weak": {
+        "type": "int"
+      },
+      "learned": {
+        "type": "int"
+      }
+    }
+  },
   "studyStatsWeakDeck": "{deck}: {count} difficult",
-  "@studyStatsWeakDeck": {"description": "Study hub: a deck with difficult cards. {deck} deck name, {count} number.", "placeholders": {"deck": {"type": "String"}, "count": {"type": "int"}}},
+  "@studyStatsWeakDeck": {
+    "description": "Study hub: a deck with difficult cards. {deck} deck name, {count} number.",
+    "placeholders": {
+      "deck": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "admProTitle": "Grant Pro",
-  "@admProTitle": {"description": "Admin: grant Pro screen title."},
+  "@admProTitle": {
+    "description": "Admin: grant Pro screen title."
+  },
   "admProHint": "Plan for an email, duration, list, revoke",
-  "@admProHint": {"description": "Admin: grant Pro tile hint."},
+  "@admProHint": {
+    "description": "Admin: grant Pro tile hint."
+  },
   "admProNote": "A plan granted here is recorded in the audit log with the source “administrator”. A store subscription takes precedence.",
-  "@admProNote": {"description": "Admin: grant Pro note."},
+  "@admProNote": {
+    "description": "Admin: grant Pro note."
+  },
   "admProGrantTitle": "Grant a plan",
-  "@admProGrantTitle": {"description": "Admin: section title."},
+  "@admProGrantTitle": {
+    "description": "Admin: section title."
+  },
   "admProEmail": "User email",
-  "@admProEmail": {"description": "Admin: email field."},
+  "@admProEmail": {
+    "description": "Admin: email field."
+  },
   "admProPlan": "Plan",
-  "@admProPlan": {"description": "Admin: plan choice label."},
+  "@admProPlan": {
+    "description": "Admin: plan choice label."
+  },
   "admProUntil": "Duration",
-  "@admProUntil": {"description": "Admin: duration choice label."},
+  "@admProUntil": {
+    "description": "Admin: duration choice label."
+  },
   "admProDays30": "30 days",
-  "@admProDays30": {"description": "Admin: duration."},
+  "@admProDays30": {
+    "description": "Admin: duration."
+  },
   "admProDays90": "90 days",
-  "@admProDays90": {"description": "Admin: duration."},
+  "@admProDays90": {
+    "description": "Admin: duration."
+  },
   "admProYear": "1 year",
-  "@admProYear": {"description": "Admin: duration."},
+  "@admProYear": {
+    "description": "Admin: duration."
+  },
   "admProNoLimit": "No limit",
-  "@admProNoLimit": {"description": "Admin: no end date."},
+  "@admProNoLimit": {
+    "description": "Admin: no end date."
+  },
   "admProGrant": "Grant",
-  "@admProGrant": {"description": "Admin: grant button."},
+  "@admProGrant": {
+    "description": "Admin: grant button."
+  },
   "admProRevoke": "Revoke",
-  "@admProRevoke": {"description": "Admin: revoke button/tooltip."},
+  "@admProRevoke": {
+    "description": "Admin: revoke button/tooltip."
+  },
   "admProGranted": "The plan has been granted.",
-  "@admProGranted": {"description": "Admin: result."},
+  "@admProGranted": {
+    "description": "Admin: result."
+  },
   "admProRevoked": "The plan has been revoked.",
-  "@admProRevoked": {"description": "Admin: result."},
+  "@admProRevoked": {
+    "description": "Admin: result."
+  },
   "admProNotFound": "No user with this email.",
-  "@admProNotFound": {"description": "Admin: result."},
+  "@admProNotFound": {
+    "description": "Admin: result."
+  },
   "admProInvalid": "Enter a valid email address.",
-  "@admProInvalid": {"description": "Admin: result."},
+  "@admProInvalid": {
+    "description": "Admin: result."
+  },
   "admProError": "Could not complete the request. Try again.",
-  "@admProError": {"description": "Admin: error."},
+  "@admProError": {
+    "description": "Admin: error."
+  },
   "admProListTitle": "Granted plans",
-  "@admProListTitle": {"description": "Admin: list title."},
+  "@admProListTitle": {
+    "description": "Admin: list title."
+  },
   "admProSearch": "Search by email",
-  "@admProSearch": {"description": "Admin: search hint."},
+  "@admProSearch": {
+    "description": "Admin: search hint."
+  },
   "admProEmpty": "No plans yet.",
-  "@admProEmpty": {"description": "Admin: empty list."},
+  "@admProEmpty": {
+    "description": "Admin: empty list."
+  },
   "proPlanPremium": "Premium",
-  "@proPlanPremium": {"description": "Plan name: premium (everything unlocked)."},
+  "@proPlanPremium": {
+    "description": "Plan name: premium (everything unlocked)."
+  },
   "proIncludesPremium1": "Everything in Student Pro, Teacher Pro and Expert Pro in one plan",
-  "@proIncludesPremium1": {"description": "Pro page: what Premium includes, item 1."},
+  "@proIncludesPremium1": {
+    "description": "Pro page: what Premium includes, item 1."
+  },
   "proIncludesPremium2": "All lessons and presentations, tests, exam mode, flashcards and error analytics",
-  "@proIncludesPremium2": {"description": "Pro page: what Premium includes, item 2."},
+  "@proIncludesPremium2": {
+    "description": "Pro page: what Premium includes, item 2."
+  },
   "proIncludesPremium3": "Groups and group tests, results CSV, the instruments course, professional calculators, casebook and court preparation",
-  "@proIncludesPremium3": {"description": "Pro page: what Premium includes, item 3."},
+  "@proIncludesPremium3": {
+    "description": "Pro page: what Premium includes, item 3."
+  },
   "proPremiumBest": "Best value: Premium — everything unlocked",
-  "@proPremiumBest": {"description": "Pro page: Premium card title."},
+  "@proPremiumBest": {
+    "description": "Pro page: Premium card title."
+  },
   "proPremiumBody": "Cheaper than buying the three plans separately.",
-  "@proPremiumBody": {"description": "Pro page: Premium card body."},
+  "@proPremiumBody": {
+    "description": "Pro page: Premium card body."
+  },
   "proPremiumSee": "See Premium",
-  "@proPremiumSee": {"description": "Pro page: button to view Premium."},
+  "@proPremiumSee": {
+    "description": "Pro page: button to view Premium."
+  },
   "proPremiumBack": "Back to my plan",
-  "@proPremiumBack": {"description": "Pro page: button to go back to the mode plan."},
+  "@proPremiumBack": {
+    "description": "Pro page: button to go back to the mode plan."
+  },
   "disciplineSharedModule": "Shared section: this discipline belongs to it",
-  "@disciplineSharedModule": {"description": "Discipline page: this module is shared with a parent discipline."},
+  "@disciplineSharedModule": {
+    "description": "Discipline page: this module is shared with a parent discipline."
+  },
   "disciplineSparseNote": "Sourced content for this discipline is being added step by step. Only the records available now are shown.",
-  "@disciplineSparseNote": {"description": "Discipline page: little sourced content yet."},
+  "@disciplineSparseNote": {
+    "description": "Discipline page: little sourced content yet."
+  },
   "assessmentTitle": "Knowledge & Skills Assessment",
-  "@assessmentTitle": {"description": "Section title (home tile, screen title, menus)."},
+  "@assessmentTitle": {
+    "description": "Section title (home tile, screen title, menus)."
+  },
   "assessmentSubtitle": "Questions and tests for forensic medicine, pathological anatomy and forensic chemistry",
-  "@assessmentSubtitle": {"description": "Home tile body."},
+  "@assessmentSubtitle": {
+    "description": "Home tile body."
+  },
   "assessmentIntro": "Official oral-exam question lists and practice tests by specialty and qualification category.",
-  "@assessmentIntro": {"description": "Hub intro line."},
+  "@assessmentIntro": {
+    "description": "Hub intro line."
+  },
   "assessmentSpecSudTib": "Forensic medical examination",
-  "@assessmentSpecSudTib": {"description": "Specialty: forensic medical examination."},
+  "@assessmentSpecSudTib": {
+    "description": "Specialty: forensic medical examination."
+  },
   "assessmentSpecPatAnat": "Pathological anatomy",
-  "@assessmentSpecPatAnat": {"description": "Specialty: pathological anatomy."},
+  "@assessmentSpecPatAnat": {
+    "description": "Specialty: pathological anatomy."
+  },
   "assessmentSpecSudKimyo": "Forensic chemical examination",
-  "@assessmentSpecSudKimyo": {"description": "Specialty: forensic chemical examination."},
+  "@assessmentSpecSudKimyo": {
+    "description": "Specialty: forensic chemical examination."
+  },
   "assessmentCatC23": "Third and second category",
-  "@assessmentCatC23": {"description": "Qualification category group: third and second."},
+  "@assessmentCatC23": {
+    "description": "Qualification category group: third and second."
+  },
   "assessmentCatC1": "First category",
-  "@assessmentCatC1": {"description": "Qualification category: first."},
+  "@assessmentCatC1": {
+    "description": "Qualification category: first."
+  },
   "assessmentCatC0": "Highest category",
-  "@assessmentCatC0": {"description": "Qualification category: highest."},
+  "@assessmentCatC0": {
+    "description": "Qualification category: highest."
+  },
   "assessmentTabOral": "Oral questions",
-  "@assessmentTabOral": {"description": "Tab: oral exam questions."},
+  "@assessmentTabOral": {
+    "description": "Tab: oral exam questions."
+  },
   "assessmentTabTests": "Tests",
-  "@assessmentTabTests": {"description": "Tab: tests."},
+  "@assessmentTabTests": {
+    "description": "Tab: tests."
+  },
   "assessmentCountQuestions": "{n} questions",
-  "@assessmentCountQuestions": {"description": "Number of questions.", "placeholders": {"n": {"type": "int"}}},
+  "@assessmentCountQuestions": {
+    "description": "Number of questions.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
   "assessmentCountTests": "{n} tests",
-  "@assessmentCountTests": {"description": "Number of tests.", "placeholders": {"n": {"type": "int"}}},
+  "@assessmentCountTests": {
+    "description": "Number of tests.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
   "assessmentReadyProgress": "{done} of {total} ready",
-  "@assessmentReadyProgress": {"description": "Personal progress: ready questions.", "placeholders": {"done": {"type": "int"}, "total": {"type": "int"}}},
+  "@assessmentReadyProgress": {
+    "description": "Personal progress: ready questions.",
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "assessmentSearchHint": "Search questions",
-  "@assessmentSearchHint": {"description": "Search field hint."},
+  "@assessmentSearchHint": {
+    "description": "Search field hint."
+  },
   "assessmentNoResults": "Nothing found",
-  "@assessmentNoResults": {"description": "Empty search result."},
+  "@assessmentNoResults": {
+    "description": "Empty search result."
+  },
   "assessmentUzOnly": "Questions are shown in Uzbek, exactly as in the official list.",
-  "@assessmentUzOnly": {"description": "Hint: question text language."},
+  "@assessmentUzOnly": {
+    "description": "Hint: question text language."
+  },
   "assessmentSourceLine": "Source: {source}",
-  "@assessmentSourceLine": {"description": "Source line.", "placeholders": {"source": {"type": "String"}}},
+  "@assessmentSourceLine": {
+    "description": "Source line.",
+    "placeholders": {
+      "source": {
+        "type": "String"
+      }
+    }
+  },
   "assessmentSourceName": "Center for Assessing the Qualification of Medical and Pharmaceutical Workers (tmbm.ssv.uz)",
-  "@assessmentSourceName": {"description": "Official source name of the question lists."},
+  "@assessmentSourceName": {
+    "description": "Official source name of the question lists."
+  },
   "assessmentMarkReady": "Mark as ready",
-  "@assessmentMarkReady": {"description": "Button: mark question as ready."},
+  "@assessmentMarkReady": {
+    "description": "Button: mark question as ready."
+  },
   "assessmentUnmarkReady": "Remove ready mark",
-  "@assessmentUnmarkReady": {"description": "Button: remove ready mark."},
+  "@assessmentUnmarkReady": {
+    "description": "Button: remove ready mark."
+  },
   "assessmentReadyChip": "Ready",
-  "@assessmentReadyChip": {"description": "Chip on a ready question."},
+  "@assessmentReadyChip": {
+    "description": "Chip on a ready question."
+  },
   "assessmentAskAi": "Ask Forensic AI",
-  "@assessmentAskAi": {"description": "Button: send the question to Forensic AI."},
+  "@assessmentAskAi": {
+    "description": "Button: send the question to Forensic AI."
+  },
   "assessmentQuestionNo": "Question {n}",
-  "@assessmentQuestionNo": {"description": "Question number label.", "placeholders": {"n": {"type": "int"}}},
+  "@assessmentQuestionNo": {
+    "description": "Question number label.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
   "assessmentTestStart": "Start practice",
-  "@assessmentTestStart": {"description": "Button: start practice."},
+  "@assessmentTestStart": {
+    "description": "Button: start practice."
+  },
   "assessmentTestPool": "{n} questions with an answer key",
-  "@assessmentTestPool": {"description": "Number of tests with an answer key.", "placeholders": {"n": {"type": "int"}}},
+  "@assessmentTestPool": {
+    "description": "Number of tests with an answer key.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
   "assessmentTestUnkeyed": "An answer key has not been added yet for {n} questions; they are not included in practice.",
-  "@assessmentTestUnkeyed": {"description": "Number of tests without an answer key yet (not in practice).", "placeholders": {"n": {"type": "int"}}},
+  "@assessmentTestUnkeyed": {
+    "description": "Number of tests without an answer key yet (not in practice).",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
   "assessmentTestNone": "Answer keys for this specialty are being added.",
-  "@assessmentTestNone": {"description": "No test has an answer key yet."},
+  "@assessmentTestNone": {
+    "description": "No test has an answer key yet."
+  },
   "assessmentTestList": "All test questions",
-  "@assessmentTestList": {"description": "Button: list all test questions."},
+  "@assessmentTestList": {
+    "description": "Button: list all test questions."
+  },
   "assessmentKeyPending": "Answer key not added yet",
-  "@assessmentKeyPending": {"description": "Label on a test question without an answer key yet."},
+  "@assessmentKeyPending": {
+    "description": "Label on a test question without an answer key yet."
+  },
   "assessmentCorrect": "Correct",
-  "@assessmentCorrect": {"description": "Answer feedback: correct."},
+  "@assessmentCorrect": {
+    "description": "Answer feedback: correct."
+  },
   "assessmentWrong": "Incorrect",
-  "@assessmentWrong": {"description": "Answer feedback: wrong."},
+  "@assessmentWrong": {
+    "description": "Answer feedback: wrong."
+  },
   "assessmentCorrectAnswer": "Correct answer: {a}",
-  "@assessmentCorrectAnswer": {"description": "Shows the correct answer text.", "placeholders": {"a": {"type": "String"}}},
+  "@assessmentCorrectAnswer": {
+    "description": "Shows the correct answer text.",
+    "placeholders": {
+      "a": {
+        "type": "String"
+      }
+    }
+  },
   "assessmentAnswerSource": "Answer source: {src}",
-  "@assessmentAnswerSource": {"description": "Where the answer key comes from.", "placeholders": {"src": {"type": "String"}}},
+  "@assessmentAnswerSource": {
+    "description": "Where the answer key comes from.",
+    "placeholders": {
+      "src": {
+        "type": "String"
+      }
+    }
+  },
   "assessmentKeyTeacher": "answer-keyed test bank supplied by the teacher (Toxicological chemistry)",
-  "@assessmentKeyTeacher": {"description": "Key source: file supplied by the teacher."},
+  "@assessmentKeyTeacher": {
+    "description": "Key source: file supplied by the teacher."
+  },
   "assessmentNext": "Next",
-  "@assessmentNext": {"description": "Button: next question."},
+  "@assessmentNext": {
+    "description": "Button: next question."
+  },
   "assessmentFinish": "Finish",
-  "@assessmentFinish": {"description": "Button: finish practice."},
+  "@assessmentFinish": {
+    "description": "Button: finish practice."
+  },
   "assessmentResultTitle": "Result",
-  "@assessmentResultTitle": {"description": "Result screen title."},
+  "@assessmentResultTitle": {
+    "description": "Result screen title."
+  },
   "assessmentResultScore": "{c} of {n} correct",
-  "@assessmentResultScore": {"description": "Result score.", "placeholders": {"c": {"type": "int"}, "n": {"type": "int"}}},
+  "@assessmentResultScore": {
+    "description": "Result score.",
+    "placeholders": {
+      "c": {
+        "type": "int"
+      },
+      "n": {
+        "type": "int"
+      }
+    }
+  },
   "assessmentRetry": "Practice again",
-  "@assessmentRetry": {"description": "Button: practice again."},
+  "@assessmentRetry": {
+    "description": "Button: practice again."
+  },
   "assessmentMistakes": "Review your mistakes",
-  "@assessmentMistakes": {"description": "Heading: questions answered wrongly."},
+  "@assessmentMistakes": {
+    "description": "Heading: questions answered wrongly."
+  },
   "assessmentEmpty": "The question pack could not be loaded.",
-  "@assessmentEmpty": {"description": "Fallback when the question pack is missing."},
+  "@assessmentEmpty": {
+    "description": "Fallback when the question pack is missing."
+  },
   "assessmentOpenSource": "Official list",
-  "@assessmentOpenSource": {"description": "Link text to the official page."},
+  "@assessmentOpenSource": {
+    "description": "Link text to the official page."
+  },
   "assessmentBookPage": "{title}, PDF p. {page}",
-  "@assessmentBookPage": {"description": "Book citation with the PDF page of the supplied file.", "placeholders": {"title": {"type": "String"}, "page": {"type": "int"}}},
+  "@assessmentBookPage": {
+    "description": "Book citation with the PDF page of the supplied file.",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "page": {
+        "type": "int"
+      }
+    }
+  },
   "gcmsTitle": "GC-MS instrument schematic",
-  "@gcmsTitle": {"description": "Tools entry and screen title: GC-MS schematic."},
+  "@gcmsTitle": {
+    "description": "Tools entry and screen title: GC-MS schematic."
+  },
   "gcmsEntryHint": "Gas chromatograph–mass spectrometer: parts and working principle",
-  "@gcmsEntryHint": {"description": "Tools entry hint."},
+  "@gcmsEntryHint": {
+    "description": "Tools entry hint."
+  },
   "gcmsReviewPending": "Expert review pending",
-  "@gcmsReviewPending": {"description": "Status chip: expert review pending."},
+  "@gcmsReviewPending": {
+    "description": "Status chip: expert review pending."
+  },
   "gcmsPanelTitle": "Parts and working principle",
-  "@gcmsPanelTitle": {"description": "Collapsible panel title."},
+  "@gcmsPanelTitle": {
+    "description": "Collapsible panel title."
+  },
   "gcmsPrinciple": "Working principle",
-  "@gcmsPrinciple": {"description": "Heading: working principle."},
+  "@gcmsPrinciple": {
+    "description": "Heading: working principle."
+  },
   "gcmsResult": "Result",
-  "@gcmsResult": {"description": "Heading: result."},
+  "@gcmsResult": {
+    "description": "Heading: result."
+  },
   "gcmsUsedFor": "Use",
-  "@gcmsUsedFor": {"description": "Heading: where the instrument is used (sourced sentence)."},
+  "@gcmsUsedFor": {
+    "description": "Heading: where the instrument is used (sourced sentence)."
+  },
   "gcmsSourceLine": "Source: {source}",
-  "@gcmsSourceLine": {"description": "Source line under the sourced sentence.", "placeholders": {"source": {"type": "String"}}},
+  "@gcmsSourceLine": {
+    "description": "Source line under the sourced sentence.",
+    "placeholders": {
+      "source": {
+        "type": "String"
+      }
+    }
+  },
   "gcmsZoomHint": "Tap to enlarge",
-  "@gcmsZoomHint": {"description": "Hint on the picture."},
+  "@gcmsZoomHint": {
+    "description": "Hint on the picture."
+  },
   "gcmsClose": "Close",
-  "@gcmsClose": {"description": "Close the full-screen picture."},
+  "@gcmsClose": {
+    "description": "Close the full-screen picture."
+  },
   "gcmsUnavailable": "The GC-MS module could not be loaded.",
-  "@gcmsUnavailable": {"description": "Shown when the module data cannot be loaded."},
+  "@gcmsUnavailable": {
+    "description": "Shown when the module data cannot be loaded."
+  },
   "assessmentSourcesTitle": "References",
-  "@assessmentSourcesTitle": {"description": "Literature list: title (hub button and screen)."},
+  "@assessmentSourcesTitle": {
+    "description": "Literature list: title (hub button and screen)."
+  },
   "assessmentSourcesIntro": "Answer keys are based on the literature below; each question shows its exact source and quotation.",
-  "@assessmentSourcesIntro": {"description": "Literature list: intro."},
+  "@assessmentSourcesIntro": {
+    "description": "Literature list: intro."
+  },
   "assessmentSourcesBooks": "Textbooks and manuals",
-  "@assessmentSourcesBooks": {"description": "Literature list: books and manuals."},
+  "@assessmentSourcesBooks": {
+    "description": "Literature list: books and manuals."
+  },
   "assessmentSourcesTeacher": "Test bank supplied by the teacher",
-  "@assessmentSourcesTeacher": {"description": "Literature list: teacher-supplied bank."},
+  "@assessmentSourcesTeacher": {
+    "description": "Literature list: teacher-supplied bank."
+  },
   "assessmentSourcesWeb": "World literature and legislation",
-  "@assessmentSourcesWeb": {"description": "Literature list: world literature and laws."},
+  "@assessmentSourcesWeb": {
+    "description": "Literature list: world literature and laws."
+  },
   "assessmentBasis": "Basis: “{quote}”",
-  "@assessmentBasis": {"description": "The quotation that is the basis of the answer.", "placeholders": {"quote": {"type": "String"}}},
+  "@assessmentBasis": {
+    "description": "The quotation that is the basis of the answer.",
+    "placeholders": {
+      "quote": {
+        "type": "String"
+      }
+    }
+  },
   "assessmentAnswerTitle": "Answer (based on literature)",
-  "@assessmentAnswerTitle": {"description": "Heading of the literature-based answer to an oral question."},
+  "@assessmentAnswerTitle": {
+    "description": "Heading of the literature-based answer to an oral question."
+  },
   "assessmentAnswerSoon": "The answer will be added soon",
-  "@assessmentAnswerSoon": {"description": "Shown on an oral question whose answer is not added yet."},
+  "@assessmentAnswerSoon": {
+    "description": "Shown on an oral question whose answer is not added yet."
+  },
   "assessmentAnswerGaps": "Not covered in the literature used",
-  "@assessmentAnswerGaps": {"description": "Heading: aspects not covered by the literature used."},
+  "@assessmentAnswerGaps": {
+    "description": "Heading: aspects not covered by the literature used."
+  },
   "assessmentAnswerOriginal": "Original text",
-  "@assessmentAnswerOriginal": {"description": "Heading of the verbatim quotation in the source sheet."},
+  "@assessmentAnswerOriginal": {
+    "description": "Heading of the verbatim quotation in the source sheet."
+  },
   "assessmentAnswerUzOnly": "The answer is in Uzbek; translation is coming",
-  "@assessmentAnswerUzOnly": {"description": "Note under an answer shown in Uzbek for ru/en users."},
+  "@assessmentAnswerUzOnly": {
+    "description": "Note under an answer shown in Uzbek for ru/en users."
+  },
   "assessmentAnswerSourceLabel": "Source",
-  "@assessmentAnswerSourceLabel": {"description": "Heading of the source sheet of an answer point."},
+  "@assessmentAnswerSourceLabel": {
+    "description": "Heading of the source sheet of an answer point."
+  },
   "assessmentAnswerNote": "A short summary of the cited literature, for study and reference. Statutes and normative thresholds are given as in the textbook: check them against the official text. It does not replace an official expert conclusion or legal advice.",
-  "@assessmentAnswerNote": {"description": "Small note under every literature-based answer."},
+  "@assessmentAnswerNote": {
+    "description": "Small note under every literature-based answer."
+  },
   "admProCustom": "Custom",
-  "@admProCustom": {"description": "Admin Pro grant: chip that opens a custom duration field."},
+  "@admProCustom": {
+    "description": "Admin Pro grant: chip that opens a custom duration field."
+  },
   "admProAmount": "Number",
-  "@admProAmount": {"description": "Admin Pro grant: label of the custom duration number field."},
+  "@admProAmount": {
+    "description": "Admin Pro grant: label of the custom duration number field."
+  },
   "admProUnitDay": "Days",
-  "@admProUnitDay": {"description": "Admin Pro grant: duration unit chip (days)."},
+  "@admProUnitDay": {
+    "description": "Admin Pro grant: duration unit chip (days)."
+  },
   "admProUnitMonth": "Months",
-  "@admProUnitMonth": {"description": "Admin Pro grant: duration unit chip (months)."},
+  "@admProUnitMonth": {
+    "description": "Admin Pro grant: duration unit chip (months)."
+  },
   "admProUntilDate": "Valid until {date}",
-  "@admProUntilDate": {"description": "Admin Pro grant: preview of the end date of the custom duration.", "placeholders": {"date": {"type": "String"}}},
+  "@admProUntilDate": {
+    "description": "Admin Pro grant: preview of the end date of the custom duration.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
   "admProBadDuration": "Enter 1–3650 days or 1–120 months.",
-  "@admProBadDuration": {"description": "Admin Pro grant: custom duration out of range."},
+  "@admProBadDuration": {
+    "description": "Admin Pro grant: custom duration out of range."
+  },
   "proPlanAdminAll": "Administrator · everything open",
-  "@proPlanAdminAll": {"description": "Profile plan row value for administrators."},
+  "@proPlanAdminAll": {
+    "description": "Profile plan row value for administrators."
+  },
   "statusSourced": "Source cited",
-  "@statusSourced": {"description": "Status badge for content that cites a source but has no reviewer sign-off yet."},
+  "@statusSourced": {
+    "description": "Status badge for content that cites a source but has no reviewer sign-off yet."
+  },
   "lessonAutoTooltip": "Auto-advance",
-  "@lessonAutoTooltip": {"description": "Lesson viewer: button that opens the auto-advance settings."},
+  "@lessonAutoTooltip": {
+    "description": "Lesson viewer: button that opens the auto-advance settings."
+  },
   "lessonAutoManual": "Manual",
-  "@lessonAutoManual": {"description": "Lesson viewer: manual paging mode."},
+  "@lessonAutoManual": {
+    "description": "Lesson viewer: manual paging mode."
+  },
   "lessonAutoAuto": "Auto",
-  "@lessonAutoAuto": {"description": "Lesson viewer: automatic paging mode."},
+  "@lessonAutoAuto": {
+    "description": "Lesson viewer: automatic paging mode."
+  },
   "lessonAutoSpeed": "Time per slide",
-  "@lessonAutoSpeed": {"description": "Lesson viewer: heading of the auto-advance interval choice."},
+  "@lessonAutoSpeed": {
+    "description": "Lesson viewer: heading of the auto-advance interval choice."
+  },
   "lessonAutoSeconds": "{n} s",
-  "@lessonAutoSeconds": {"description": "Lesson viewer: interval in seconds.", "placeholders": {"n": {"type": "int"}}},
+  "@lessonAutoSeconds": {
+    "description": "Lesson viewer: interval in seconds.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
   "lessonAutoRunning": "Auto: {n} s per slide",
-  "@lessonAutoRunning": {"description": "Lesson viewer: status line while auto-advance runs.", "placeholders": {"n": {"type": "int"}}},
+  "@lessonAutoRunning": {
+    "description": "Lesson viewer: status line while auto-advance runs.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
   "lessonAutoPaused": "Paused",
-  "@lessonAutoPaused": {"description": "Lesson viewer: status line while auto-advance is paused."},
+  "@lessonAutoPaused": {
+    "description": "Lesson viewer: status line while auto-advance is paused."
+  },
   "lessonAutoPause": "Pause",
-  "@lessonAutoPause": {"description": "Lesson viewer: pause button."},
+  "@lessonAutoPause": {
+    "description": "Lesson viewer: pause button."
+  },
   "lessonAutoResume": "Resume",
-  "@lessonAutoResume": {"description": "Lesson viewer: resume button."},
+  "@lessonAutoResume": {
+    "description": "Lesson viewer: resume button."
+  },
   "classPaceSection": "Quiz mode",
-  "@classPaceSection": {"description": "Section header on the new-test screen: who controls the pace of the quiz."},
+  "@classPaceSection": {
+    "description": "Section header on the new-test screen: who controls the pace of the quiz."
+  },
   "classPaceHost": "Teacher controls",
-  "@classPaceHost": {"description": "Mode option: the teacher controls the questions and the time for everyone (default)."},
+  "@classPaceHost": {
+    "description": "Mode option: the teacher controls the questions and the time for everyone (default)."
+  },
   "classPaceHostHint": "Everyone is on the same question; the time is shared.",
-  "@classPaceHostHint": {"description": "One-line explanation under the 'teacher controls' option."},
+  "@classPaceHostHint": {
+    "description": "One-line explanation under the 'teacher controls' option."
+  },
   "classPaceSelf": "Everyone at their own pace",
-  "@classPaceSelf": {"description": "Mode option: every student works at their own speed."},
+  "@classPaceSelf": {
+    "description": "Mode option: every student works at their own speed."
+  },
   "classPaceSelfHint": "Each student's time starts from their own start.",
-  "@classPaceSelfHint": {"description": "One-line explanation under the self-paced option."},
+  "@classPaceSelfHint": {
+    "description": "One-line explanation under the self-paced option."
+  },
   "classPaceLine": "Mode: {mode}",
-  "@classPaceLine": {"description": "Line in the lobby: which mode this quiz uses, e.g. 'Mode: Teacher controls'.", "placeholders": {"mode": {"type": "String"}}},
+  "@classPaceLine": {
+    "description": "Line in the lobby: which mode this quiz uses, e.g. 'Mode: Teacher controls'.",
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
   "classLobbySelfHint": "Everyone works at their own pace: after the teacher starts, you open the questions yourself.",
-  "@classLobbySelfHint": {"description": "Student lobby hint in self-paced mode."},
+  "@classLobbySelfHint": {
+    "description": "Student lobby hint in self-paced mode."
+  },
   "classErrNotClosed": "Answer this question first, or wait until your time runs out.",
-  "@classErrNotClosed": {"description": "Error: tried to go to the next question before answering and before the own time ran out."},
+  "@classErrNotClosed": {
+    "description": "Error: tried to go to the next question before answering and before the own time ran out."
+  },
   "classSelfReadyTitle": "Ready?",
-  "@classSelfReadyTitle": {"description": "Self-paced student screen before the first question."},
+  "@classSelfReadyTitle": {
+    "description": "Self-paced student screen before the first question."
+  },
   "classSelfReadyBody": "{seconds} seconds per question. Your time starts when you open a question, and you move on by yourself.",
-  "@classSelfReadyBody": {"description": "Explains the own timer in self-paced mode; seconds per question.", "placeholders": {"seconds": {"type": "int"}}},
+  "@classSelfReadyBody": {
+    "description": "Explains the own timer in self-paced mode; seconds per question.",
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
   "classSelfStart": "Start",
-  "@classSelfStart": {"description": "Button: open the first question (the timer starts)."},
+  "@classSelfStart": {
+    "description": "Button: open the first question (the timer starts)."
+  },
   "classSelfNext": "Next question",
-  "@classSelfNext": {"description": "Button: go to the next question yourself."},
+  "@classSelfNext": {
+    "description": "Button: go to the next question yourself."
+  },
   "classSelfFinish": "Finish",
-  "@classSelfFinish": {"description": "Button after the last question: finish my part of the quiz."},
+  "@classSelfFinish": {
+    "description": "Button after the last question: finish my part of the quiz."
+  },
   "classAnswerFlowHint": "Choose an answer and press «Confirm». You move to the next question yourself.",
-  "@classAnswerFlowHint": {"description": "Small hint under the answer options of quizzes (group test and self-paced live quiz): choose, confirm, move on yourself."},
+  "@classAnswerFlowHint": {
+    "description": "Small hint under the answer options of quizzes (group test and self-paced live quiz): choose, confirm, move on yourself."
+  },
   "grpScoreReadyNote": "Your score is ready.",
-  "@grpScoreReadyNote": {"description": "Group test result screen: the score is ready (answers are still locked; the existing reveal note follows)."},
+  "@grpScoreReadyNote": {
+    "description": "Group test result screen: the score is ready (answers are still locked; the existing reveal note follows)."
+  },
   "classSelfResultWait": "Read the result, then move on when you are ready.",
-  "@classSelfResultWait": {"description": "Shown after the own answer: the student decides when to move on."},
+  "@classSelfResultWait": {
+    "description": "Shown after the own answer: the student decides when to move on."
+  },
   "classSelfDoneTitle": "You have finished all questions",
-  "@classSelfDoneTitle": {"description": "Self-paced student finished all questions."},
+  "@classSelfDoneTitle": {
+    "description": "Self-paced student finished all questions."
+  },
   "classSelfDoneBody": "Your result is below. The overall leaderboard appears when the teacher ends the quiz.",
-  "@classSelfDoneBody": {"description": "The overall leaderboard appears when the teacher ends the quiz."},
+  "@classSelfDoneBody": {
+    "description": "The overall leaderboard appears when the teacher ends the quiz."
+  },
   "classBoardTitle": "Student progress",
-  "@classBoardTitle": {"description": "Teacher board header in self-paced mode."},
+  "@classBoardTitle": {
+    "description": "Teacher board header in self-paced mode."
+  },
   "classBoardHint": "Everyone works at their own pace. End the quiz when you are ready.",
-  "@classBoardHint": {"description": "Teacher hint in self-paced mode."},
+  "@classBoardHint": {
+    "description": "Teacher hint in self-paced mode."
+  },
   "classBoardSummary": "{opened} started · {done} finished · {joined} in total",
-  "@classBoardSummary": {"description": "Teacher summary: how many students started and finished, out of all.", "placeholders": {"opened": {"type": "int"}, "done": {"type": "int"}, "joined": {"type": "int"}}},
+  "@classBoardSummary": {
+    "description": "Teacher summary: how many students started and finished, out of all.",
+    "placeholders": {
+      "opened": {
+        "type": "int"
+      },
+      "done": {
+        "type": "int"
+      },
+      "joined": {
+        "type": "int"
+      }
+    }
+  },
   "classBoardAllDone": "Everyone has finished — you can end the quiz.",
-  "@classBoardAllDone": {"description": "Teacher banner: every student finished."},
+  "@classBoardAllDone": {
+    "description": "Teacher banner: every student finished."
+  },
   "classBoardNotStarted": "Not started",
-  "@classBoardNotStarted": {"description": "Row status: the student has not opened the first question yet."},
+  "@classBoardNotStarted": {
+    "description": "Row status: the student has not opened the first question yet."
+  },
   "classBoardDone": "Finished",
-  "@classBoardDone": {"description": "Row status: the student finished all questions."},
+  "@classBoardDone": {
+    "description": "Row status: the student finished all questions."
+  },
   "classBoardAnsweredCorrect": "{correct}/{answered} correct",
-  "@classBoardAnsweredCorrect": {"description": "Row detail: correct answers out of answered questions.", "placeholders": {"correct": {"type": "int"}, "answered": {"type": "int"}}},
+  "@classBoardAnsweredCorrect": {
+    "description": "Row detail: correct answers out of answered questions.",
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "answered": {
+        "type": "int"
+      }
+    }
+  },
   "tcTitle": "My teacher card",
-  "@tcTitle": {"description": "Title of the teacher card editor and the profile row."},
+  "@tcTitle": {
+    "description": "Title of the teacher card editor and the profile row."
+  },
   "tcProfileHint": "Photo, workplace, links — shown to your students",
-  "@tcProfileHint": {"description": "Profile row subtitle under the teacher card entry."},
+  "@tcProfileHint": {
+    "description": "Profile row subtitle under the teacher card entry."
+  },
   "tcProfileOn": "Visible",
-  "@tcProfileOn": {"description": "Profile row value: the card is shown to the students."},
+  "@tcProfileOn": {
+    "description": "Profile row value: the card is shown to the students."
+  },
   "tcProfileOff": "Hidden",
-  "@tcProfileOff": {"description": "Profile row value: the card exists but is hidden from the students."},
+  "@tcProfileOff": {
+    "description": "Profile row value: the card exists but is hidden from the students."
+  },
   "tcProfileNone": "Not set",
-  "@tcProfileNone": {"description": "Profile row value: the card has not been filled in."},
+  "@tcProfileNone": {
+    "description": "Profile row value: the card has not been filled in."
+  },
   "tcLead": "A short introduction your students see on the group page. Only your name is required.",
-  "@tcLead": {"description": "Intro text at the top of the teacher card editor."},
+  "@tcLead": {
+    "description": "Intro text at the top of the teacher card editor."
+  },
   "tcStudentLabel": "Teacher",
-  "@tcStudentLabel": {"description": "Small label above the teacher card on the group page (student view)."},
+  "@tcStudentLabel": {
+    "description": "Small label above the teacher card on the group page (student view)."
+  },
   "tcPhotoSection": "Photo",
-  "@tcPhotoSection": {"description": "Section label: teacher photo."},
+  "@tcPhotoSection": {
+    "description": "Section label: teacher photo."
+  },
   "tcPhotoChoose": "Choose photo",
-  "@tcPhotoChoose": {"description": "Button: pick a photo."},
+  "@tcPhotoChoose": {
+    "description": "Button: pick a photo."
+  },
   "tcPhotoChange": "Change photo",
-  "@tcPhotoChange": {"description": "Button: replace the photo."},
+  "@tcPhotoChange": {
+    "description": "Button: replace the photo."
+  },
   "tcPhotoRemove": "Remove photo",
-  "@tcPhotoRemove": {"description": "Button: remove the photo."},
+  "@tcPhotoRemove": {
+    "description": "Button: remove the photo."
+  },
   "tcPhotoNote": "This photo is separate from your profile picture, which stays on this phone. It is uploaded when you save the card, and your group members can see it only if «Show to my students» is on.",
-  "@tcPhotoNote": {"description": "Privacy note under the photo: it is separate from the on-device profile picture."},
+  "@tcPhotoNote": {
+    "description": "Privacy note under the photo: it is separate from the on-device profile picture."
+  },
   "tcPhotoSemantics": "Photo of {name}",
-  "@tcPhotoSemantics": {"description": "Semantics label of the teacher's photo.", "placeholders": {"name": {"type": "String"}}},
+  "@tcPhotoSemantics": {
+    "description": "Semantics label of the teacher's photo.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "tcName": "Full name",
-  "@tcName": {"description": "Field label: teacher's full name."},
+  "@tcName": {
+    "description": "Field label: teacher's full name."
+  },
   "tcNameHelper": "2–60 characters",
-  "@tcNameHelper": {"description": "Helper under the name field."},
+  "@tcNameHelper": {
+    "description": "Helper under the name field."
+  },
   "tcWorkplace": "Workplace",
-  "@tcWorkplace": {"description": "Field label: workplace."},
+  "@tcWorkplace": {
+    "description": "Field label: workplace."
+  },
   "tcWorkplaceHint": "e.g. university, bureau, laboratory",
-  "@tcWorkplaceHint": {"description": "Hint in the workplace field."},
+  "@tcWorkplaceHint": {
+    "description": "Hint in the workplace field."
+  },
   "tcLogoSection": "Workplace logo (optional)",
-  "@tcLogoSection": {"description": "Section label: optional workplace logo."},
+  "@tcLogoSection": {
+    "description": "Section label: optional workplace logo."
+  },
   "tcLogoChoose": "Choose logo",
-  "@tcLogoChoose": {"description": "Button: pick a logo."},
+  "@tcLogoChoose": {
+    "description": "Button: pick a logo."
+  },
   "tcLogoRemove": "Remove logo",
-  "@tcLogoRemove": {"description": "Button: remove the logo."},
+  "@tcLogoRemove": {
+    "description": "Button: remove the logo."
+  },
   "tcLogoSemantics": "Workplace logo",
-  "@tcLogoSemantics": {"description": "Semantics label of the workplace logo."},
+  "@tcLogoSemantics": {
+    "description": "Semantics label of the workplace logo."
+  },
   "tcBio": "About me",
-  "@tcBio": {"description": "Field label: short self-description."},
+  "@tcBio": {
+    "description": "Field label: short self-description."
+  },
   "tcBioHint": "A few sentences about your experience and subjects",
-  "@tcBioHint": {"description": "Hint in the about-me field."},
+  "@tcBioHint": {
+    "description": "Hint in the about-me field."
+  },
   "tcSocials": "Social networks and website",
-  "@tcSocials": {"description": "Section label: social networks and website."},
+  "@tcSocials": {
+    "description": "Section label: social networks and website."
+  },
   "tcSocialsHint": "Paste a link or @username. Only secure (https) links to the network's own site are accepted.",
-  "@tcSocialsHint": {"description": "Hint under the social links section."},
+  "@tcSocialsHint": {
+    "description": "Hint under the social links section."
+  },
   "tcNetTelegram": "Telegram",
-  "@tcNetTelegram": {"description": "Network name."},
+  "@tcNetTelegram": {
+    "description": "Network name."
+  },
   "tcNetInstagram": "Instagram",
-  "@tcNetInstagram": {"description": "Network name."},
+  "@tcNetInstagram": {
+    "description": "Network name."
+  },
   "tcNetYoutube": "YouTube",
-  "@tcNetYoutube": {"description": "Network name."},
+  "@tcNetYoutube": {
+    "description": "Network name."
+  },
   "tcNetFacebook": "Facebook",
-  "@tcNetFacebook": {"description": "Network name."},
+  "@tcNetFacebook": {
+    "description": "Network name."
+  },
   "tcNetLinkedin": "LinkedIn",
-  "@tcNetLinkedin": {"description": "Network name."},
+  "@tcNetLinkedin": {
+    "description": "Network name."
+  },
   "tcNetTiktok": "TikTok",
-  "@tcNetTiktok": {"description": "Network name."},
+  "@tcNetTiktok": {
+    "description": "Network name."
+  },
   "tcNetWebsite": "Website",
-  "@tcNetWebsite": {"description": "Name of the personal/work website field."},
+  "@tcNetWebsite": {
+    "description": "Name of the personal/work website field."
+  },
   "tcSocialHintUser": "@username or link",
-  "@tcSocialHintUser": {"description": "Hint in a network field that accepts @username or a link."},
+  "@tcSocialHintUser": {
+    "description": "Hint in a network field that accepts @username or a link."
+  },
   "tcSocialHintWeb": "https://example.org",
-  "@tcSocialHintWeb": {"description": "Hint in the website field."},
+  "@tcSocialHintWeb": {
+    "description": "Hint in the website field."
+  },
   "tcSocialInvalid": "Invalid link. Use https and the network's own address.",
-  "@tcSocialInvalid": {"description": "Inline error under an invalid social link."},
+  "@tcSocialInvalid": {
+    "description": "Inline error under an invalid social link."
+  },
   "tcVisibleTitle": "Show to my students",
-  "@tcVisibleTitle": {"description": "Switch title: show the card to the teacher's students."},
+  "@tcVisibleTitle": {
+    "description": "Switch title: show the card to the teacher's students."
+  },
   "tcConsent": "Your photo and details are visible only to members of your groups. You can turn this off at any time or delete the card completely.",
-  "@tcConsent": {"description": "Consent text under the visibility switch."},
+  "@tcConsent": {
+    "description": "Consent text under the visibility switch."
+  },
   "tcVisibleOn": "Visible to your group members",
-  "@tcVisibleOn": {"description": "Status under the switch when on."},
+  "@tcVisibleOn": {
+    "description": "Status under the switch when on."
+  },
   "tcVisibleOff": "Not visible to anyone yet",
-  "@tcVisibleOff": {"description": "Status under the switch when off."},
+  "@tcVisibleOff": {
+    "description": "Status under the switch when off."
+  },
   "tcPreview": "Preview",
-  "@tcPreview": {"description": "Button: preview the card as students see it."},
+  "@tcPreview": {
+    "description": "Button: preview the card as students see it."
+  },
   "tcPreviewTitle": "This is how your students see it",
-  "@tcPreviewTitle": {"description": "Title of the preview sheet."},
+  "@tcPreviewTitle": {
+    "description": "Title of the preview sheet."
+  },
   "tcPreviewNote": "Students see it only after you turn on «Show to my students».",
-  "@tcPreviewNote": {"description": "Note in the preview sheet."},
+  "@tcPreviewNote": {
+    "description": "Note in the preview sheet."
+  },
   "tcSave": "Save card",
-  "@tcSave": {"description": "Button: save the card."},
+  "@tcSave": {
+    "description": "Button: save the card."
+  },
   "tcSaved": "Card saved",
-  "@tcSaved": {"description": "Snackbar after saving."},
+  "@tcSaved": {
+    "description": "Snackbar after saving."
+  },
   "tcDelete": "Delete card",
-  "@tcDelete": {"description": "Button: delete the card."},
+  "@tcDelete": {
+    "description": "Button: delete the card."
+  },
   "tcDeleteTitle": "Delete the card?",
-  "@tcDeleteTitle": {"description": "Dialog title: delete the card."},
+  "@tcDeleteTitle": {
+    "description": "Dialog title: delete the card."
+  },
   "tcDeleteBody": "The card and its photos will be deleted from the server. Students will no longer see it.",
-  "@tcDeleteBody": {"description": "Dialog body: delete the card."},
+  "@tcDeleteBody": {
+    "description": "Dialog body: delete the card."
+  },
   "tcDeleteConfirm": "Delete",
-  "@tcDeleteConfirm": {"description": "Dialog button: confirm deletion."},
+  "@tcDeleteConfirm": {
+    "description": "Dialog button: confirm deletion."
+  },
   "tcCancel": "Cancel",
-  "@tcCancel": {"description": "Dialog button: cancel."},
+  "@tcCancel": {
+    "description": "Dialog button: cancel."
+  },
   "tcDeleted": "Card deleted",
-  "@tcDeleted": {"description": "Snackbar after deleting."},
+  "@tcDeleted": {
+    "description": "Snackbar after deleting."
+  },
   "tcRetry": "Try again",
-  "@tcRetry": {"description": "Button: retry loading."},
+  "@tcRetry": {
+    "description": "Button: retry loading."
+  },
   "tcReport": "Report this card",
-  "@tcReport": {"description": "Tooltip/button: report the teacher card (UGC)."},
+  "@tcReport": {
+    "description": "Tooltip/button: report the teacher card (UGC)."
+  },
   "tcOpenLink": "Open {network}",
-  "@tcOpenLink": {"description": "Semantics/tooltip of a social icon.", "placeholders": {"network": {"type": "String"}}},
+  "@tcOpenLink": {
+    "description": "Semantics/tooltip of a social icon.",
+    "placeholders": {
+      "network": {
+        "type": "String"
+      }
+    }
+  },
   "tcLinkOpenFailed": "Could not open the link.",
-  "@tcLinkOpenFailed": {"description": "Snackbar when a link cannot be opened."},
+  "@tcLinkOpenFailed": {
+    "description": "Snackbar when a link cannot be opened."
+  },
   "tcErrName": "Enter your name (2–60 characters).",
-  "@tcErrName": {"description": "Error: invalid name."},
+  "@tcErrName": {
+    "description": "Error: invalid name."
+  },
   "tcErrWorkplace": "Workplace is too long (up to 120 characters).",
-  "@tcErrWorkplace": {"description": "Error: workplace too long."},
+  "@tcErrWorkplace": {
+    "description": "Error: workplace too long."
+  },
   "tcErrBio": "«About me» is too long (up to 300 characters).",
-  "@tcErrBio": {"description": "Error: bio too long."},
+  "@tcErrBio": {
+    "description": "Error: bio too long."
+  },
   "tcErrImage": "The image could not be used. Choose another one (JPEG, PNG or WebP).",
-  "@tcErrImage": {"description": "Error: the image cannot be used."},
+  "@tcErrImage": {
+    "description": "Error: the image cannot be used."
+  },
   "tcErrImageLarge": "The image is too large even after compression. Choose a smaller one.",
-  "@tcErrImageLarge": {"description": "Error: the image is too large even after compression."},
+  "@tcErrImageLarge": {
+    "description": "Error: the image is too large even after compression."
+  },
   "tcErrSocial": "One of the links is not accepted. Check the fields marked in red.",
-  "@tcErrSocial": {"description": "Error: some social link was rejected."},
+  "@tcErrSocial": {
+    "description": "Error: some social link was rejected."
+  },
   "tcErrHidden": "Your card was hidden by a moderator. Write to us via «Suggestions & support».",
-  "@tcErrHidden": {"description": "Banner/error: the card was hidden by a moderator."},
+  "@tcErrHidden": {
+    "description": "Banner/error: the card was hidden by a moderator."
+  },
   "tcErrForbidden": "The teacher card works only for accounts with the teacher role.",
-  "@tcErrForbidden": {"description": "Error: not a teacher account."},
+  "@tcErrForbidden": {
+    "description": "Error: not a teacher account."
+  },
   "tcErrOffline": "No internet connection. Try again.",
-  "@tcErrOffline": {"description": "Error: offline."},
+  "@tcErrOffline": {
+    "description": "Error: offline."
+  },
   "tcErrNotConfigured": "This service is not connected yet.",
-  "@tcErrNotConfigured": {"description": "Error: backend not connected."},
+  "@tcErrNotConfigured": {
+    "description": "Error: backend not connected."
+  },
   "tcErrServer": "Could not complete the action. Please try again later.",
-  "@tcErrServer": {"description": "Error: generic server failure."},
+  "@tcErrServer": {
+    "description": "Error: generic server failure."
+  },
   "tcErrSignIn": "Sign in to your account first.",
-  "@tcErrSignIn": {"description": "Error: not signed in."},
+  "@tcErrSignIn": {
+    "description": "Error: not signed in."
+  },
   "scoringScore100Label": "Score (100)",
-  "@scoringScore100Label": {"description": "Label of the 100-point score (correct answers / questions x 100)."},
+  "@scoringScore100Label": {
+    "description": "Label of the 100-point score (correct answers / questions x 100)."
+  },
   "scoringGradeLabel": "Grade",
-  "@scoringGradeLabel": {"description": "Label of the approximate grade."},
+  "@scoringGradeLabel": {
+    "description": "Label of the approximate grade."
+  },
   "scoringGradeApproxTitle": "Approximate grade (per the {year} order)",
-  "@scoringGradeApproxTitle": {"description": "Heading above the approximate grade; year is the academic year of the grading order.", "placeholders": {"year": {"type": "String"}}},
+  "@scoringGradeApproxTitle": {
+    "description": "Heading above the approximate grade; year is the academic year of the grading order.",
+    "placeholders": {
+      "year": {
+        "type": "String"
+      }
+    }
+  },
   "scoringGradeBelowMin": "Below the minimum pass score",
-  "@scoringGradeBelowMin": {"description": "Grade label when the score is below the minimum pass score (70.0). Must not sound like failure or debt."},
+  "@scoringGradeBelowMin": {
+    "description": "Grade label when the score is below the minimum pass score (70.0). Must not sound like failure or debt."
+  },
   "scoringApproxNote": "This grade is an estimate calculated by the app from the share of correct answers (100-point scale; minimum pass score {minPass}). It is not an official grade.",
-  "@scoringApproxNote": {"description": "One-time note on result screens: the grade is an estimate made by the app, not official.", "placeholders": {"minPass": {"type": "String"}}},
+  "@scoringApproxNote": {
+    "description": "One-time note on result screens: the grade is an estimate made by the app, not official.",
+    "placeholders": {
+      "minPass": {
+        "type": "String"
+      }
+    }
+  },
   "scoringRowLine": "Score (100): {score} · Grade: {grade}",
-  "@scoringRowLine": {"description": "Teacher result row: 100-point score and grade of a student.", "placeholders": {"score": {"type": "String"}, "grade": {"type": "String"}}},
+  "@scoringRowLine": {
+    "description": "Teacher result row: 100-point score and grade of a student.",
+    "placeholders": {
+      "score": {
+        "type": "String"
+      },
+      "grade": {
+        "type": "String"
+      }
+    }
+  },
   "scoringSpeedPointsNote": "Speed points count only for the class ranking.",
-  "@scoringSpeedPointsNote": {"description": "Caption in the live class result: speed points are only for the class ranking."},
+  "@scoringSpeedPointsNote": {
+    "description": "Caption in the live class result: speed points are only for the class ranking."
+  },
   "scoringMidtermTitle": "Midterm check",
-  "@scoringMidtermTitle": {"description": "Title of the one-tap midterm preset card and the test-name prefix."},
+  "@scoringMidtermTitle": {
+    "description": "Title of the one-tap midterm preset card and the test-name prefix."
+  },
   "scoringMidtermIntro": "Pick a course: all its topics are selected automatically. Defaults: up to {count} questions, {minutes} minutes, open for {days} day. You can edit everything before creating.",
-  "@scoringMidtermIntro": {"description": "Intro of the midterm preset card: pick a course; all its topics are selected automatically.", "placeholders": {"count": {"type": "int"}, "minutes": {"type": "int"}, "days": {"type": "int"}}},
+  "@scoringMidtermIntro": {
+    "description": "Intro of the midterm preset card: pick a course; all its topics are selected automatically.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
   "scoringMidtermCourseLine": "{topics} topics · {questions} questions",
-  "@scoringMidtermCourseLine": {"description": "Subtitle of a course button: number of topics and questions.", "placeholders": {"topics": {"type": "int"}, "questions": {"type": "int"}}},
+  "@scoringMidtermCourseLine": {
+    "description": "Subtitle of a course button: number of topics and questions.",
+    "placeholders": {
+      "topics": {
+        "type": "int"
+      },
+      "questions": {
+        "type": "int"
+      }
+    }
+  },
   "scoringMidtermApplied": "Midterm check set up for “{course}”: all topics selected. Review the settings below.",
-  "@scoringMidtermApplied": {"description": "Confirmation after choosing a course in the midterm preset.", "placeholders": {"course": {"type": "String"}}},
+  "@scoringMidtermApplied": {
+    "description": "Confirmation after choosing a course in the midterm preset.",
+    "placeholders": {
+      "course": {
+        "type": "String"
+      }
+    }
+  },
   "scoringMidtermPoolShort": "The course has only {pool} questions, so the number of questions is set to {pool}.",
-  "@scoringMidtermPoolShort": {"description": "Shown when the course has fewer questions than the default count; the count was reduced.", "placeholders": {"pool": {"type": "int"}}},
+  "@scoringMidtermPoolShort": {
+    "description": "Shown when the course has fewer questions than the default count; the count was reduced.",
+    "placeholders": {
+      "pool": {
+        "type": "int"
+      }
+    }
+  },
   "scoringMidtermVariantOff": "Variants are off: the question pool ({pool}) is smaller than twice the number of questions per student. Set {max} questions or fewer to turn variants on.",
-  "@scoringMidtermVariantOff": {"description": "Shown when per-student variants were switched off because the pool is smaller than twice the question count.", "placeholders": {"pool": {"type": "int"}, "max": {"type": "int"}}},
+  "@scoringMidtermVariantOff": {
+    "description": "Shown when per-student variants were switched off because the pool is smaller than twice the question count.",
+    "placeholders": {
+      "pool": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
   "scoringMidtermVariantOn": "Each student gets a different set of questions (variants are on).",
-  "@scoringMidtermVariantOn": {"description": "Shown when per-student variants are on in the midterm preset."},
+  "@scoringMidtermVariantOn": {
+    "description": "Shown when per-student variants are on in the midterm preset."
+  },
   "acShuffleHint": "Answer options (A, B, C, D) are shuffled for each student separately.",
-  "@acShuffleHint": {"description": "Always-visible hint for the teacher: answer options are shuffled per student."},
+  "@acShuffleHint": {
+    "description": "Always-visible hint for the teacher: answer options are shuffled per student."
+  },
   "acCountWarning": "The topic has {pool} questions. With {count} questions students will not get different sets, only a different option order. To make copying harder, keep it to {recommended} questions or fewer.",
-  "@acCountWarning": {"description": "Warning shown when the question pool is smaller than twice the chosen number of questions, so students cannot get different question sets.", "placeholders": {"pool": {"type": "int"}, "count": {"type": "int"}, "recommended": {"type": "int"}}},
+  "@acCountWarning": {
+    "description": "Warning shown when the question pool is smaller than twice the chosen number of questions, so students cannot get different question sets.",
+    "placeholders": {
+      "pool": {
+        "type": "int"
+      },
+      "count": {
+        "type": "int"
+      },
+      "recommended": {
+        "type": "int"
+      }
+    }
+  },
   "acStudentNote": "If you leave the app during the test, your teacher can see it.",
-  "@acStudentNote": {"description": "One calm line shown to the student during a test: the teacher can see leaving the app."},
+  "@acStudentNote": {
+    "description": "One calm line shown to the student during a test: the teacher can see leaving the app."
+  },
   "acLeftCount": "left the app: {count} times",
-  "@acLeftCount": {"description": "Teacher-only note: how many times the student left the app during the test.", "placeholders": {"count": {"type": "int"}}},
+  "@acLeftCount": {
+    "description": "Teacher-only note: how many times the student left the app during the test.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "acFastCorrect": "fast and correct answers — worth a look",
-  "@acFastCorrect": {"description": "Neutral teacher-only hint: the student answered quickly with a high score. Never an accusation."},
+  "@acFastCorrect": {
+    "description": "Neutral teacher-only hint: the student answered quickly with a high score. Never an accusation."
+  },
   "acSecondsHint": "Any whole number from 5 to 300 seconds.",
-  "@acSecondsHint": {"description": "Helper text under the seconds-per-question field in live class creation."},
+  "@acSecondsHint": {
+    "description": "Helper text under the seconds-per-question field in live class creation."
+  },
   "acSecondsError": "Enter a whole number from 5 to 300.",
-  "@acSecondsError": {"description": "Error under the seconds-per-question field when the value is outside 5-300 or not a whole number."},
+  "@acSecondsError": {
+    "description": "Error under the seconds-per-question field when the value is outside 5-300 or not a whole number."
+  },
   "acSecondsLabel": "Seconds",
-  "@acSecondsLabel": {"description": "Label of the seconds-per-question text field."},
+  "@acSecondsLabel": {
+    "description": "Label of the seconds-per-question text field."
+  },
   "acSecondsMinus": "Decrease time by 5 seconds",
-  "@acSecondsMinus": {"description": "Accessibility label of the button that decreases the seconds per question by 5."},
+  "@acSecondsMinus": {
+    "description": "Accessibility label of the button that decreases the seconds per question by 5."
+  },
   "acSecondsPlus": "Increase time by 5 seconds",
-  "@acSecondsPlus": {"description": "Accessibility label of the button that increases the seconds per question by 5."},
+  "@acSecondsPlus": {
+    "description": "Accessibility label of the button that increases the seconds per question by 5."
+  },
   "scdTitle": "My student card",
-  "@scdTitle": {"description": "Title of the student card editor and the profile row."},
+  "@scdTitle": {
+    "description": "Title of the student card editor and the profile row."
+  },
   "scdProfileHint": "Optional: photo and a short intro for your groupmates and teacher",
-  "@scdProfileHint": {"description": "Profile row subtitle under the student card entry."},
+  "@scdProfileHint": {
+    "description": "Profile row subtitle under the student card entry."
+  },
   "scdProfileOn": "Visible to my groups",
-  "@scdProfileOn": {"description": "Profile row value: the card is shown to group members."},
+  "@scdProfileOn": {
+    "description": "Profile row value: the card is shown to group members."
+  },
   "scdProfileOff": "Hidden",
-  "@scdProfileOff": {"description": "Profile row value: the card is hidden."},
+  "@scdProfileOff": {
+    "description": "Profile row value: the card is hidden."
+  },
   "scdLead": "A short, optional introduction. Only your groupmates and your teacher can see it, and only if you turn it on below. Only a name is required — a nickname is fine.",
-  "@scdLead": {"description": "Intro text at the top of the student card editor."},
+  "@scdLead": {
+    "description": "Intro text at the top of the student card editor."
+  },
   "scdLabel": "Student card",
-  "@scdLabel": {"description": "Small label above the student card in the viewer sheet."},
+  "@scdLabel": {
+    "description": "Small label above the student card in the viewer sheet."
+  },
   "scdPhotoSection": "Photo",
-  "@scdPhotoSection": {"description": "Section label: student photo."},
+  "@scdPhotoSection": {
+    "description": "Section label: student photo."
+  },
   "scdPhotoChoose": "Choose photo",
-  "@scdPhotoChoose": {"description": "Button: pick a photo."},
+  "@scdPhotoChoose": {
+    "description": "Button: pick a photo."
+  },
   "scdPhotoChange": "Change photo",
-  "@scdPhotoChange": {"description": "Button: replace the photo."},
+  "@scdPhotoChange": {
+    "description": "Button: replace the photo."
+  },
   "scdPhotoRemove": "Remove photo",
-  "@scdPhotoRemove": {"description": "Button: remove the photo."},
+  "@scdPhotoRemove": {
+    "description": "Button: remove the photo."
+  },
   "scdPhotoNote": "The photo is optional — you can use only your initial. It is separate from your profile picture, which stays on this phone.",
-  "@scdPhotoNote": {"description": "Privacy note under the photo."},
+  "@scdPhotoNote": {
+    "description": "Privacy note under the photo."
+  },
   "scdPhotoSemantics": "Photo of {name}",
-  "@scdPhotoSemantics": {"description": "Semantics label of the student's photo.", "placeholders": {"name": {"type": "String"}}},
+  "@scdPhotoSemantics": {
+    "description": "Semantics label of the student's photo.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "scdName": "Name or nickname",
-  "@scdName": {"description": "Field label: name or nickname."},
+  "@scdName": {
+    "description": "Field label: name or nickname."
+  },
   "scdNameHelper": "2–40 characters. A nickname is fine.",
-  "@scdNameHelper": {"description": "Helper under the name field."},
+  "@scdNameHelper": {
+    "description": "Helper under the name field."
+  },
   "scdBio": "About me",
-  "@scdBio": {"description": "Field label: short self-description."},
+  "@scdBio": {
+    "description": "Field label: short self-description."
+  },
   "scdBioHint": "One or two sentences: interests, field of study",
-  "@scdBioHint": {"description": "Hint in the about-me field."},
+  "@scdBioHint": {
+    "description": "Hint in the about-me field."
+  },
   "scdNoContact": "Do not write links, phone numbers, e-mail, @usernames or social network names — such text is rejected. Do not share personal contact details.",
-  "@scdNoContact": {"description": "Rule shown under the fields: no links or contact details."},
+  "@scdNoContact": {
+    "description": "Rule shown under the fields: no links or contact details."
+  },
   "scdVisibleTitle": "Show to my groupmates and teacher",
-  "@scdVisibleTitle": {"description": "Switch title: show the card to groupmates and teacher."},
+  "@scdVisibleTitle": {
+    "description": "Switch title: show the card to groupmates and teacher."
+  },
   "scdVisibleOn": "Visible to members and the teacher of your groups",
-  "@scdVisibleOn": {"description": "Switch subtitle when on."},
+  "@scdVisibleOn": {
+    "description": "Switch subtitle when on."
+  },
   "scdVisibleOff": "Hidden — nobody sees it",
-  "@scdVisibleOff": {"description": "Switch subtitle when off."},
+  "@scdVisibleOff": {
+    "description": "Switch subtitle when off."
+  },
   "scdConsent": "If you turn this on, your photo, name and short text will be visible only to the other members and the teacher of the groups you belong to. Nobody outside your groups can see it, and there are no likes or followers. You can turn it off or delete the card at any time. Do not share personal contact details.",
-  "@scdConsent": {"description": "Consent text next to the visibility switch."},
+  "@scdConsent": {
+    "description": "Consent text next to the visibility switch."
+  },
   "scdPreview": "Preview",
-  "@scdPreview": {"description": "Button: preview the card as others see it."},
+  "@scdPreview": {
+    "description": "Button: preview the card as others see it."
+  },
   "scdPreviewTitle": "How others see your card",
-  "@scdPreviewTitle": {"description": "Title of the preview sheet."},
+  "@scdPreviewTitle": {
+    "description": "Title of the preview sheet."
+  },
   "scdPreviewNote": "Only people in your groups can see it, and only when the switch is on.",
-  "@scdPreviewNote": {"description": "Note under the preview."},
+  "@scdPreviewNote": {
+    "description": "Note under the preview."
+  },
   "scdSave": "Save card",
-  "@scdSave": {"description": "Button: save the card."},
+  "@scdSave": {
+    "description": "Button: save the card."
+  },
   "scdSaved": "Card saved",
-  "@scdSaved": {"description": "Snackbar: saved."},
+  "@scdSaved": {
+    "description": "Snackbar: saved."
+  },
   "scdDelete": "Delete card",
-  "@scdDelete": {"description": "Button: delete the card."},
+  "@scdDelete": {
+    "description": "Button: delete the card."
+  },
   "scdDeleteTitle": "Delete the card?",
-  "@scdDeleteTitle": {"description": "Dialog title: delete the card."},
+  "@scdDeleteTitle": {
+    "description": "Dialog title: delete the card."
+  },
   "scdDeleteBody": "Your card and its photo will be removed from the server. This cannot be undone.",
-  "@scdDeleteBody": {"description": "Dialog body: delete the card."},
+  "@scdDeleteBody": {
+    "description": "Dialog body: delete the card."
+  },
   "scdDeleteConfirm": "Delete",
-  "@scdDeleteConfirm": {"description": "Dialog confirm button: delete."},
+  "@scdDeleteConfirm": {
+    "description": "Dialog confirm button: delete."
+  },
   "scdDeleted": "Card deleted",
-  "@scdDeleted": {"description": "Snackbar: card deleted."},
+  "@scdDeleted": {
+    "description": "Snackbar: card deleted."
+  },
   "scdCancel": "Cancel",
-  "@scdCancel": {"description": "Dialog cancel button."},
+  "@scdCancel": {
+    "description": "Dialog cancel button."
+  },
   "scdRetry": "Try again",
-  "@scdRetry": {"description": "Retry button."},
+  "@scdRetry": {
+    "description": "Retry button."
+  },
   "scdAdminHidden": "Your card was hidden by a moderator. Write to us via «Suggestions & support».",
-  "@scdAdminHidden": {"description": "Banner: the card was hidden by a moderator."},
+  "@scdAdminHidden": {
+    "description": "Banner: the card was hidden by a moderator."
+  },
   "scdTeacherHidden": "Your teacher hid your card in some groups. Members of those groups cannot see it.",
-  "@scdTeacherHidden": {"description": "Banner: the teacher hid the card in some groups."},
+  "@scdTeacherHidden": {
+    "description": "Banner: the teacher hid the card in some groups."
+  },
   "scdErrName": "The name must be 2–40 characters.",
-  "@scdErrName": {"description": "Error: invalid name."},
+  "@scdErrName": {
+    "description": "Error: invalid name."
+  },
   "scdErrBio": "«About me» is too long (up to 150 characters).",
-  "@scdErrBio": {"description": "Error: bio too long."},
+  "@scdErrBio": {
+    "description": "Error: bio too long."
+  },
   "scdErrContact": "Links, phone numbers, e-mail, @usernames and social network names are not allowed. Remove them and try again.",
-  "@scdErrContact": {"description": "Error: the text contains a link or contact details."},
+  "@scdErrContact": {
+    "description": "Error: the text contains a link or contact details."
+  },
   "scdErrImage": "The image could not be used. Choose another one (JPEG, PNG or WebP).",
-  "@scdErrImage": {"description": "Error: the image cannot be used."},
+  "@scdErrImage": {
+    "description": "Error: the image cannot be used."
+  },
   "scdErrImageLarge": "The image is too large even after compression. Choose a smaller one.",
-  "@scdErrImageLarge": {"description": "Error: the image is too large even after compression."},
+  "@scdErrImageLarge": {
+    "description": "Error: the image is too large even after compression."
+  },
   "scdErrLimit": "Too many hidden cards. Restore some first.",
-  "@scdErrLimit": {"description": "Error: too many hidden cards."},
+  "@scdErrLimit": {
+    "description": "Error: too many hidden cards."
+  },
   "scdErrForbidden": "You do not have access to this card.",
-  "@scdErrForbidden": {"description": "Error: no access."},
+  "@scdErrForbidden": {
+    "description": "Error: no access."
+  },
   "scdErrNotFound": "This student is no longer in the group.",
-  "@scdErrNotFound": {"description": "Error: the student is not in this group."},
+  "@scdErrNotFound": {
+    "description": "Error: the student is not in this group."
+  },
   "scdErrOffline": "No internet connection. Try again.",
-  "@scdErrOffline": {"description": "Error: offline."},
+  "@scdErrOffline": {
+    "description": "Error: offline."
+  },
   "scdErrNotConfigured": "This service is not connected yet.",
-  "@scdErrNotConfigured": {"description": "Error: backend not connected."},
+  "@scdErrNotConfigured": {
+    "description": "Error: backend not connected."
+  },
   "scdErrServer": "Could not complete the action. Please try again later.",
-  "@scdErrServer": {"description": "Error: generic server failure."},
+  "@scdErrServer": {
+    "description": "Error: generic server failure."
+  },
   "scdErrSignIn": "Sign in to your account first.",
-  "@scdErrSignIn": {"description": "Error: not signed in."},
+  "@scdErrSignIn": {
+    "description": "Error: not signed in."
+  },
   "scdGroupSection": "Groupmates",
-  "@scdGroupSection": {"description": "Section header in the group screen: groupmates with cards."},
+  "@scdGroupSection": {
+    "description": "Section header in the group screen: groupmates with cards."
+  },
   "scdOpenCard": "Open {name}'s card",
-  "@scdOpenCard": {"description": "Semantics/tooltip: open a student's card.", "placeholders": {"name": {"type": "String"}}},
+  "@scdOpenCard": {
+    "description": "Semantics/tooltip: open a student's card.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "scdSheetReport": "Report this card",
-  "@scdSheetReport": {"description": "Sheet action: report the card."},
+  "@scdSheetReport": {
+    "description": "Sheet action: report the card."
+  },
   "scdSheetHide": "Hide this card for me",
-  "@scdSheetHide": {"description": "Sheet action: hide the card for me."},
+  "@scdSheetHide": {
+    "description": "Sheet action: hide the card for me."
+  },
   "scdSheetHideNote": "Only you will stop seeing it. You can restore it under «Hidden cards» on the group page.",
-  "@scdSheetHideNote": {"description": "Note under the hide action."},
+  "@scdSheetHideNote": {
+    "description": "Note under the hide action."
+  },
   "scdHiddenToast": "Card hidden",
-  "@scdHiddenToast": {"description": "Snackbar: card hidden for me."},
+  "@scdHiddenToast": {
+    "description": "Snackbar: card hidden for me."
+  },
   "scdSheetGroupHide": "Hide from this group",
-  "@scdSheetGroupHide": {"description": "Sheet action (teacher): hide the card from the group."},
+  "@scdSheetGroupHide": {
+    "description": "Sheet action (teacher): hide the card from the group."
+  },
   "scdSheetGroupUnhide": "Show in this group again",
-  "@scdSheetGroupUnhide": {"description": "Sheet action (teacher): restore the card to the group."},
+  "@scdSheetGroupUnhide": {
+    "description": "Sheet action (teacher): restore the card to the group."
+  },
   "scdSheetGroupNote": "As the teacher you can hide an inappropriate card from the group. The student cannot turn it back on.",
-  "@scdSheetGroupNote": {"description": "Note under the teacher moderation action."},
+  "@scdSheetGroupNote": {
+    "description": "Note under the teacher moderation action."
+  },
   "scdGroupHiddenLabel": "Hidden from the group",
-  "@scdGroupHiddenLabel": {"description": "Label (teacher): this card is hidden from the group."},
+  "@scdGroupHiddenLabel": {
+    "description": "Label (teacher): this card is hidden from the group."
+  },
   "scdGroupHiddenToast": "Card hidden from the group",
-  "@scdGroupHiddenToast": {"description": "Snackbar (teacher): card hidden from the group."},
+  "@scdGroupHiddenToast": {
+    "description": "Snackbar (teacher): card hidden from the group."
+  },
   "scdGroupShownToast": "Card shown in the group again",
-  "@scdGroupShownToast": {"description": "Snackbar (teacher): card restored to the group."},
+  "@scdGroupShownToast": {
+    "description": "Snackbar (teacher): card restored to the group."
+  },
   "scdHiddenSection": "Hidden cards",
-  "@scdHiddenSection": {"description": "Section header: cards the viewer hid."},
+  "@scdHiddenSection": {
+    "description": "Section header: cards the viewer hid."
+  },
   "scdHiddenItem": "Hidden card",
-  "@scdHiddenItem": {"description": "Row title: a hidden card (no personal data shown)."},
+  "@scdHiddenItem": {
+    "description": "Row title: a hidden card (no personal data shown)."
+  },
   "scdRestore": "Restore",
-  "@scdRestore": {"description": "Button: restore a hidden card."},
+  "@scdRestore": {
+    "description": "Button: restore a hidden card."
+  },
   "scdRestored": "Card restored",
-  "@scdRestored": {"description": "Snackbar: card restored."},
+  "@scdRestored": {
+    "description": "Snackbar: card restored."
+  },
   "ttsListen": "Listen",
-  "@ttsListen": {"description": "Tooltip of the button that reads the current text aloud."},
+  "@ttsListen": {
+    "description": "Tooltip of the button that reads the current text aloud."
+  },
   "ttsPause": "Pause",
-  "@ttsPause": {"description": "Tooltip of the button while audio is playing (pauses it)."},
+  "@ttsPause": {
+    "description": "Tooltip of the button while audio is playing (pauses it)."
+  },
   "ttsResume": "Resume",
-  "@ttsResume": {"description": "Tooltip of the button while audio is paused (continues it)."},
+  "@ttsResume": {
+    "description": "Tooltip of the button while audio is paused (continues it)."
+  },
   "ttsReplay": "Listen again",
-  "@ttsReplay": {"description": "Tooltip of the button after the audio has finished (plays again)."},
+  "@ttsReplay": {
+    "description": "Tooltip of the button after the audio has finished (plays again)."
+  },
   "ttsLoading": "Preparing audio…",
-  "@ttsLoading": {"description": "Tooltip/status while the audio is being prepared on the server."},
+  "@ttsLoading": {
+    "description": "Tooltip/status while the audio is being prepared on the server."
+  },
   "ttsErrOffline": "Audio could not be loaded. Check your internet connection.",
-  "@ttsErrOffline": {"description": "Snackbar: audio could not be fetched because there is no network."},
+  "@ttsErrOffline": {
+    "description": "Snackbar: audio could not be fetched because there is no network."
+  },
   "ttsErrDailyLimit": "Today’s audio limit is used up. Try again tomorrow.",
-  "@ttsErrDailyLimit": {"description": "Snackbar: the daily audio limit is used up."},
+  "@ttsErrDailyLimit": {
+    "description": "Snackbar: the daily audio limit is used up."
+  },
   "ttsErrSignIn": "Sign in to listen.",
-  "@ttsErrSignIn": {"description": "Snackbar: listening needs a signed-in account."},
+  "@ttsErrSignIn": {
+    "description": "Snackbar: listening needs a signed-in account."
+  },
   "ttsErrBusy": "The audio service is busy. Try again in a moment.",
-  "@ttsErrBusy": {"description": "Snackbar: the audio service is temporarily busy or timed out."},
+  "@ttsErrBusy": {
+    "description": "Snackbar: the audio service is temporarily busy or timed out."
+  },
   "ttsErrNotConfigured": "The audio service is not available yet.",
-  "@ttsErrNotConfigured": {"description": "Snackbar: the audio service is not set up on the server."},
+  "@ttsErrNotConfigured": {
+    "description": "Snackbar: the audio service is not set up on the server."
+  },
   "ttsErrTooLong": "This text is too long to listen to.",
-  "@ttsErrTooLong": {"description": "Snackbar: the text is too long to be read aloud."},
+  "@ttsErrTooLong": {
+    "description": "Snackbar: the text is too long to be read aloud."
+  },
   "ttsErrGeneric": "Audio could not be played. Try again.",
-  "@ttsErrGeneric": {"description": "Snackbar: audio could not be played for another reason."},
+  "@ttsErrGeneric": {
+    "description": "Snackbar: audio could not be played for another reason."
+  },
   "updReqTitle": "A new version is available",
-  "@updReqTitle": {"description": "Title of the blocking page shown when this app version is too old."},
+  "@updReqTitle": {
+    "description": "Title of the blocking page shown when this app version is too old."
+  },
   "updReqBody": "This version of the app is out of date. Update the app to continue.",
-  "@updReqBody": {"description": "Body of the blocking page: the installed version is outdated."},
+  "@updReqBody": {
+    "description": "Body of the blocking page: the installed version is outdated."
+  },
   "updReqButton": "Update",
-  "@updReqButton": {"description": "Primary button of the blocking page: opens the store listing."},
+  "@updReqButton": {
+    "description": "Primary button of the blocking page: opens the store listing."
+  },
   "updReqStoreHint": "Update the app from the App Store.",
-  "@updReqStoreHint": {"description": "Shown instead of the button when there is no store link (iOS)."},
+  "@updReqStoreHint": {
+    "description": "Shown instead of the button when there is no store link (iOS)."
+  },
   "proBenefitModules": "All sections: reagents, substances, methods, screening, law and research",
-  "@proBenefitModules": {"description": "Lock card benefit: all sections beyond the free three."},
+  "@proBenefitModules": {
+    "description": "Lock card benefit: all sections beyond the free three."
+  },
   "proBenefitTools": "Calculators and analysis tools (GC-MS, spectrophotometry)",
-  "@proBenefitTools": {"description": "Lock card benefit: calculators and tools."},
+  "@proBenefitTools": {
+    "description": "Lock card benefit: calculators and tools."
+  },
   "proBenefitAi": "Forensic AI: answers with sources",
-  "@proBenefitAi": {"description": "Lock card benefit: Forensic AI."},
+  "@proBenefitAi": {
+    "description": "Lock card benefit: Forensic AI."
+  },
   "proBenefitListen": "Listen to the text read aloud",
-  "@proBenefitListen": {"description": "Lock card benefit: listen (text to speech)."},
+  "@proBenefitListen": {
+    "description": "Lock card benefit: listen (text to speech)."
+  },
   "proBenefitGroupReview": "Correct answers, explanations and error analysis of this test",
-  "@proBenefitGroupReview": {"description": "Lock card benefit: group test review for the student."},
+  "@proBenefitGroupReview": {
+    "description": "Lock card benefit: group test review for the student."
+  },
   "proBenefitTeacherPanel": "Run live tests and use the full teacher panel",
-  "@proBenefitTeacherPanel": {"description": "Lock card benefit: full teacher panel (live tests)."},
+  "@proBenefitTeacherPanel": {
+    "description": "Lock card benefit: full teacher panel (live tests)."
+  },
   "proSampleTitle": "Sample",
-  "@proSampleTitle": {"description": "Section header above a short sample inside a locked section."},
+  "@proSampleTitle": {
+    "description": "Section header above a short sample inside a locked section."
+  },
   "proSampleNote": "A short sample. The full section opens with Pro.",
-  "@proSampleNote": {"description": "Note under a sample: the full section needs Pro."},
+  "@proSampleNote": {
+    "description": "Note under a sample: the full section needs Pro."
+  },
   "proLockedBadge": "Unlocked with Pro",
-  "@proLockedBadge": {"description": "Accessibility label of the small lock badge on a Pro section card."}
+  "@proLockedBadge": {
+    "description": "Accessibility label of the small lock badge on a Pro section card."
+  },
+  "workbenchTitle": "My workbench",
+  "@workbenchTitle": {
+    "description": "Expert Home section title: the expert's personal workbench."
+  },
+  "workbenchFactTitle": "Today’s fact",
+  "@workbenchFactTitle": {
+    "description": "Expert Home card title: one sourced fact per day."
+  },
+  "workbenchFactSource": "Source",
+  "@workbenchFactSource": {
+    "description": "Label before the source line of the daily fact."
+  },
+  "workbenchFactSemantics": "Open the full entry",
+  "@workbenchFactSemantics": {
+    "description": "Screen-reader hint for the daily fact card."
+  },
+  "workbenchCasebookTitle": "Casebook",
+  "@workbenchCasebookTitle": {
+    "description": "Workbench card: personal casebook."
+  },
+  "workbenchCasebookBody": "Your case notes — on this device only",
+  "@workbenchCasebookBody": {
+    "description": "Workbench card subtitle: casebook."
+  },
+  "workbenchCourtTitle": "Court questioning",
+  "@workbenchCourtTitle": {
+    "description": "Workbench card: court questioning preparation."
+  },
+  "workbenchCourtBody": "Prepare evidence-based answers to court questions",
+  "@workbenchCourtBody": {
+    "description": "Workbench card subtitle: court preparation."
+  },
+  "workbenchCalcTitle": "Calculators",
+  "@workbenchCalcTitle": {
+    "description": "Workbench card: calculators."
+  },
+  "workbenchCalcMedBody": "PMI, Widmark and other calculations",
+  "@workbenchCalcMedBody": {
+    "description": "Workbench card subtitle: forensic-medicine calculators."
+  },
+  "workbenchCalcMixedBody": "Forensic medicine and laboratory calculations",
+  "@workbenchCalcMixedBody": {
+    "description": "Workbench card subtitle: calculators for a mixed profile."
+  },
+  "workbenchAiBody": "Sourced answers with citations",
+  "@workbenchAiBody": {
+    "description": "Workbench card subtitle: Forensic AI."
+  },
+  "workbenchLabTitle": "Laboratory methods",
+  "@workbenchLabTitle": {
+    "description": "Wide workbench card for chemistry experts: laboratory methods."
+  },
+  "workbenchLabBody": "From reagents to GC-MS — in one place",
+  "@workbenchLabBody": {
+    "description": "Subtitle of the laboratory methods card."
+  },
+  "workbenchLabReagents": "Reagents",
+  "@workbenchLabReagents": {
+    "description": "Laboratory methods item: reagents."
+  },
+  "workbenchLabReagentsSub": "Solutions and recipes",
+  "@workbenchLabReagentsSub": {
+    "description": "Subtitle: reagents item."
+  },
+  "workbenchLabExpress": "Express test analyses",
+  "@workbenchLabExpress": {
+    "description": "Laboratory methods item: express tests."
+  },
+  "workbenchLabExpressSub": "Screening and colour tests",
+  "@workbenchLabExpressSub": {
+    "description": "Subtitle: express tests item."
+  },
+  "workbenchLabSpectro": "Spectrophotometry methods",
+  "@workbenchLabSpectro": {
+    "description": "Laboratory methods item: spectrophotometry."
+  },
+  "workbenchLabSpectroSub": "Beer–Lambert law",
+  "@workbenchLabSpectroSub": {
+    "description": "Subtitle: spectrophotometry item."
+  },
+  "workbenchLabMs": "GC-MS / LC-MS",
+  "@workbenchLabMs": {
+    "description": "Laboratory methods item (and card): GC-MS / LC-MS."
+  },
+  "workbenchLabMsSub": "Chromatography and mass spectrometry",
+  "@workbenchLabMsSub": {
+    "description": "Subtitle: GC-MS / LC-MS item."
+  },
+  "workbenchSolutionTitle": "Reagent and solution calculator",
+  "@workbenchSolutionTitle": {
+    "description": "Workbench card: reagent and solution calculator."
+  },
+  "workbenchSolutionBody": "Mass, dilution, concentration",
+  "@workbenchSolutionBody": {
+    "description": "Subtitle: reagent and solution calculator."
+  },
+  "workbenchLodTitle": "LOD/LOQ · calibration",
+  "@workbenchLodTitle": {
+    "description": "Workbench card: LOD/LOQ and calibration."
+  },
+  "workbenchLodBody": "Detection limits and validation",
+  "@workbenchLodBody": {
+    "description": "Subtitle: LOD/LOQ and validation."
+  },
+  "studentDeskTitle": "My study desk",
+  "@studentDeskTitle": {
+    "description": "Student Home section title: the student's study desk."
+  },
+  "deskLessonsTitle": "Lessons and books",
+  "@deskLessonsTitle": {
+    "description": "Study desk card: lessons and books."
+  },
+  "deskLessonsBody": "Forensic medicine, toxicology, biochemistry",
+  "@deskLessonsBody": {
+    "description": "Study desk card subtitle: lessons."
+  },
+  "deskTestsTitle": "Quizzes and flashcards",
+  "@deskTestsTitle": {
+    "description": "Study desk card: self-study quizzes and flashcards."
+  },
+  "deskTestsBody": "Check yourself and review",
+  "@deskTestsBody": {
+    "description": "Study desk card subtitle: quizzes and flashcards."
+  },
+  "deskExamTitle": "Exam mode",
+  "@deskExamTitle": {
+    "description": "Study desk card: exam mode."
+  },
+  "deskExamBody": "Graded questions with sources",
+  "@deskExamBody": {
+    "description": "Study desk card subtitle: exam mode."
+  },
+  "deskGroupTitle": "My group",
+  "@deskGroupTitle": {
+    "description": "Study desk card: my group."
+  },
+  "deskGroupBody": "Join a group and take teacher tests",
+  "@deskGroupBody": {
+    "description": "Study desk card subtitle: group."
+  },
+  "dailyQuestionTitle": "Today’s question",
+  "@dailyQuestionTitle": {
+    "description": "Student Home card title: one quiz question per day."
+  },
+  "dailyQuestionCorrect": "Correct",
+  "@dailyQuestionCorrect": {
+    "description": "Feedback after a correct answer."
+  },
+  "dailyQuestionWrong": "Not quite — the correct answer is highlighted",
+  "@dailyQuestionWrong": {
+    "description": "Feedback after a wrong answer (correct option is highlighted)."
+  },
+  "dailyQuestionExplain": "Full explanation and practice",
+  "@dailyQuestionExplain": {
+    "description": "Button: open the full explanation in the normal quiz."
+  }
 }

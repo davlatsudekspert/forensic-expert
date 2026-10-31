@@ -47,7 +47,12 @@ void main() {
       'Learning',
       'Forensic AI',
     ]) {
-      expect(find.text(m), findsOneWidget, reason: m);
+      // Ekspert «Ish stolim»i ham «Forensic AI» kartasini beradi.
+      expect(
+        find.text(m),
+        m == 'Forensic AI' ? findsWidgets : findsOneWidget,
+        reason: m,
+      );
     }
     await tester.ensureVisible(find.byKey(const Key('home.search')));
     await tester.pumpAndSettle();

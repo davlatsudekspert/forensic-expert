@@ -12316,4 +12316,124 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get proLockedBadge => 'Открывается с Pro';
+
+  @override
+  String get workbenchTitle => 'Мой рабочий стол';
+
+  @override
+  String get workbenchFactTitle => 'Сведение дня';
+
+  @override
+  String get workbenchFactSource => 'Источник';
+
+  @override
+  String get workbenchFactSemantics => 'Открыть полную запись';
+
+  @override
+  String get workbenchCasebookTitle => 'Рабочий журнал';
+
+  @override
+  String get workbenchCasebookBody =>
+      'Записи по вашим делам — только на устройстве';
+
+  @override
+  String get workbenchCourtTitle => 'Допрос в суде';
+
+  @override
+  String get workbenchCourtBody =>
+      'Подготовка к вопросам суда с научным обоснованием';
+
+  @override
+  String get workbenchCalcTitle => 'Калькуляторы';
+
+  @override
+  String get workbenchCalcMedBody => 'PMI, Widmark и другие расчёты';
+
+  @override
+  String get workbenchCalcMixedBody =>
+      'Расчёты для судебной медицины и лаборатории';
+
+  @override
+  String get workbenchAiBody => 'Ответы с источниками и цитатами';
+
+  @override
+  String get workbenchLabTitle => 'Лабораторные методы';
+
+  @override
+  String get workbenchLabBody => 'От реактивов до ГХ-МС — в одном месте';
+
+  @override
+  String get workbenchLabReagents => 'Реактивы';
+
+  @override
+  String get workbenchLabReagentsSub => 'Растворы и рецептуры';
+
+  @override
+  String get workbenchLabExpress => 'Экспресс-тесты';
+
+  @override
+  String get workbenchLabExpressSub => 'Скрининг и цветные пробы';
+
+  @override
+  String get workbenchLabSpectro => 'Спектрофотометрические методы';
+
+  @override
+  String get workbenchLabSpectroSub => 'Закон Бугера–Ламберта–Бера';
+
+  @override
+  String get workbenchLabMs => 'ГХ-МС / ЖХ-МС';
+
+  @override
+  String get workbenchLabMsSub => 'Хроматография и масс-спектрометрия';
+
+  @override
+  String get workbenchSolutionTitle => 'Калькулятор реактивов и растворов';
+
+  @override
+  String get workbenchSolutionBody => 'Масса, разбавление, концентрация';
+
+  @override
+  String get workbenchLodTitle => 'LOD/LOQ · калибровка';
+
+  @override
+  String get workbenchLodBody => 'Пределы обнаружения и валидация';
+
+  @override
+  String get studentDeskTitle => 'Мой учебный стол';
+
+  @override
+  String get deskLessonsTitle => 'Уроки и книги';
+
+  @override
+  String get deskLessonsBody => 'Судебная медицина, токсикология, биохимия';
+
+  @override
+  String get deskTestsTitle => 'Тесты и карточки';
+
+  @override
+  String get deskTestsBody => 'Проверьте себя и повторите';
+
+  @override
+  String get deskExamTitle => 'Режим экзамена';
+
+  @override
+  String get deskExamBody => 'Оцениваемые вопросы с источниками';
+
+  @override
+  String get deskGroupTitle => 'Моя группа';
+
+  @override
+  String get deskGroupBody => 'Вступить в группу и пройти тесты преподавателя';
+
+  @override
+  String get dailyQuestionTitle => 'Вопрос дня';
+
+  @override
+  String get dailyQuestionCorrect => 'Верно';
+
+  @override
+  String get dailyQuestionWrong => 'Неверно — правильный ответ выделен';
+
+  @override
+  String get dailyQuestionExplain => 'Полное объяснение и практика';
 }

@@ -12274,4 +12274,124 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get proLockedBadge => 'Unlocked with Pro';
+
+  @override
+  String get workbenchTitle => 'My workbench';
+
+  @override
+  String get workbenchFactTitle => 'Today’s fact';
+
+  @override
+  String get workbenchFactSource => 'Source';
+
+  @override
+  String get workbenchFactSemantics => 'Open the full entry';
+
+  @override
+  String get workbenchCasebookTitle => 'Casebook';
+
+  @override
+  String get workbenchCasebookBody => 'Your case notes — on this device only';
+
+  @override
+  String get workbenchCourtTitle => 'Court questioning';
+
+  @override
+  String get workbenchCourtBody =>
+      'Prepare evidence-based answers to court questions';
+
+  @override
+  String get workbenchCalcTitle => 'Calculators';
+
+  @override
+  String get workbenchCalcMedBody => 'PMI, Widmark and other calculations';
+
+  @override
+  String get workbenchCalcMixedBody =>
+      'Forensic medicine and laboratory calculations';
+
+  @override
+  String get workbenchAiBody => 'Sourced answers with citations';
+
+  @override
+  String get workbenchLabTitle => 'Laboratory methods';
+
+  @override
+  String get workbenchLabBody => 'From reagents to GC-MS — in one place';
+
+  @override
+  String get workbenchLabReagents => 'Reagents';
+
+  @override
+  String get workbenchLabReagentsSub => 'Solutions and recipes';
+
+  @override
+  String get workbenchLabExpress => 'Express test analyses';
+
+  @override
+  String get workbenchLabExpressSub => 'Screening and colour tests';
+
+  @override
+  String get workbenchLabSpectro => 'Spectrophotometry methods';
+
+  @override
+  String get workbenchLabSpectroSub => 'Beer–Lambert law';
+
+  @override
+  String get workbenchLabMs => 'GC-MS / LC-MS';
+
+  @override
+  String get workbenchLabMsSub => 'Chromatography and mass spectrometry';
+
+  @override
+  String get workbenchSolutionTitle => 'Reagent and solution calculator';
+
+  @override
+  String get workbenchSolutionBody => 'Mass, dilution, concentration';
+
+  @override
+  String get workbenchLodTitle => 'LOD/LOQ · calibration';
+
+  @override
+  String get workbenchLodBody => 'Detection limits and validation';
+
+  @override
+  String get studentDeskTitle => 'My study desk';
+
+  @override
+  String get deskLessonsTitle => 'Lessons and books';
+
+  @override
+  String get deskLessonsBody => 'Forensic medicine, toxicology, biochemistry';
+
+  @override
+  String get deskTestsTitle => 'Quizzes and flashcards';
+
+  @override
+  String get deskTestsBody => 'Check yourself and review';
+
+  @override
+  String get deskExamTitle => 'Exam mode';
+
+  @override
+  String get deskExamBody => 'Graded questions with sources';
+
+  @override
+  String get deskGroupTitle => 'My group';
+
+  @override
+  String get deskGroupBody => 'Join a group and take teacher tests';
+
+  @override
+  String get dailyQuestionTitle => 'Today’s question';
+
+  @override
+  String get dailyQuestionCorrect => 'Correct';
+
+  @override
+  String get dailyQuestionWrong =>
+      'Not quite — the correct answer is highlighted';
+
+  @override
+  String get dailyQuestionExplain => 'Full explanation and practice';
 }

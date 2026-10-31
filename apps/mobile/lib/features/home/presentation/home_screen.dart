@@ -28,6 +28,7 @@ import '../../pro/presentation/pro_gate.dart'
 import '../../referral/presentation/invite_card.dart';
 import '../../tools/tool_strings.dart';
 import 'first_steps_card.dart';
+import 'home_desks.dart';
 
 /// Home modullari (professional bo‘limlar). ID’lar marshrut parametri.
 enum HomeModule {
@@ -279,6 +280,15 @@ class HomeScreen extends ConsumerWidget {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   const SizedBox(height: FeSpace.lg),
+                  // Ekspert: «Ish stolim»; talaba: «O‘qish stolim» (+ kunlik
+                  // ma’lumot/savol). Ustoz bosh sahifasi o‘zgarmaydi.
+                  if (mode == UserMode.professional) ...[
+                    const ExpertWorkbench(),
+                    const SizedBox(height: FeSpace.sm),
+                  ] else if (mode == UserMode.student) ...[
+                    const StudentDesk(),
+                    const SizedBox(height: FeSpace.sm),
+                  ],
                   _ActionGrid(actions: actions),
                   if (FeFlags.showTestFixtures) ...[
                     const SizedBox(height: FeSpace.md),
