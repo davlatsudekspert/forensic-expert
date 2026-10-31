@@ -12271,4 +12271,17 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get ttsErrGeneric => 'Не удалось воспроизвести озвучку. Повторите.';
+
+  @override
+  String get updReqTitle => 'Вышла новая версия';
+
+  @override
+  String get updReqBody =>
+      'Эта версия приложения устарела. Чтобы продолжить, обновите приложение.';
+
+  @override
+  String get updReqButton => 'Обновить';
+
+  @override
+  String get updReqStoreHint => 'Обновите приложение в App Store.';
 }

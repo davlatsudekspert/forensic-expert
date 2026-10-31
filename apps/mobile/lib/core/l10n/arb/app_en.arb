@@ -14943,5 +14943,13 @@
   "ttsErrTooLong": "This text is too long to listen to.",
   "@ttsErrTooLong": {"description": "Snackbar: the text is too long to be read aloud."},
   "ttsErrGeneric": "Audio could not be played. Try again.",
-  "@ttsErrGeneric": {"description": "Snackbar: audio could not be played for another reason."}
+  "@ttsErrGeneric": {"description": "Snackbar: audio could not be played for another reason."},
+  "updReqTitle": "A new version is available",
+  "@updReqTitle": {"description": "Title of the blocking page shown when this app version is too old."},
+  "updReqBody": "This version of the app is out of date. Update the app to continue.",
+  "@updReqBody": {"description": "Body of the blocking page: the installed version is outdated."},
+  "updReqButton": "Update",
+  "@updReqButton": {"description": "Primary button of the blocking page: opens the store listing."},
+  "updReqStoreHint": "Update the app from the App Store.",
+  "@updReqStoreHint": {"description": "Shown instead of the button when there is no store link (iOS)."}
 }

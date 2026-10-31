@@ -12229,4 +12229,17 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get ttsErrGeneric => 'Audio could not be played. Try again.';
+
+  @override
+  String get updReqTitle => 'A new version is available';
+
+  @override
+  String get updReqBody =>
+      'This version of the app is out of date. Update the app to continue.';
+
+  @override
+  String get updReqButton => 'Update';
+
+  @override
+  String get updReqStoreHint => 'Update the app from the App Store.';
 }

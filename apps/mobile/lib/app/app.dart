@@ -12,6 +12,7 @@ import 'providers.dart';
 import 'referral.dart';
 import 'router.dart';
 import 'routes.dart';
+import 'update_gate.dart';
 
 class ForensicExpertApp extends ConsumerWidget {
   const ForensicExpertApp({super.key});
@@ -65,6 +66,9 @@ class ForensicExpertApp extends ConsumerWidget {
       debugShowCheckedModeBanner: false,
       onGenerateTitle: (context) => AppLocalizations.of(context).appTitle,
       routerConfig: router,
+      // Router tepasida: eski versiya bloklanganda deep link ham aylanib o‘tolmaydi.
+      builder: (context, child) =>
+          UpdateGateHost(child: child ?? const SizedBox.shrink()),
       locale: locale,
       supportedLocales: SupportedLanguages.locales,
       localizationsDelegates: AppLocalizations.localizationsDelegates,

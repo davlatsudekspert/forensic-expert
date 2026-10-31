@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../app/fe_client_headers.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../domain/lessons/lesson_models.dart';
@@ -9,7 +10,10 @@ import '../../../domain/lessons/lesson_models.dart';
 ImageProvider Function(String url)? lessonImageProviderOverride;
 
 ImageProvider _provider(String url) =>
-    (lessonImageProviderOverride ?? NetworkImage.new)(url);
+    (lessonImageProviderOverride ?? _networkImage)(url);
+
+ImageProvider _networkImage(String url) =>
+    NetworkImage(url, headers: feHeadersForUrl(url));
 
 /// Rasm (raster) + yuklanish/xato holati + caption va kichik litsenziya
 /// qatori. Bosilganda — to‘liq ekran. Xato/oflayn: ikonka + «Rasm

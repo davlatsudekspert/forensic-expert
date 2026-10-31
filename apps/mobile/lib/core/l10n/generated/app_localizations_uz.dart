@@ -12160,4 +12160,17 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get ttsErrGeneric => 'Ovoz ijro etilmadi. Qayta urinib ko‘ring.';
+
+  @override
+  String get updReqTitle => 'Yangi versiya chiqdi';
+
+  @override
+  String get updReqBody =>
+      'Ilovaning bu versiyasi eskirgan. Davom etish uchun ilovani yangilang.';
+
+  @override
+  String get updReqButton => 'Yangilash';
+
+  @override
+  String get updReqStoreHint => 'App Store’dan yangilang.';
 }

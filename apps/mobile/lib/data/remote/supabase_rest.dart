@@ -2,6 +2,8 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 
+import 'fe_client_headers.dart';
+
 /// Supabase REST (GoTrue / PostgREST / Storage) uchun yengil mijoz — SDK’siz.
 ///
 /// Konfiguratsiya: `--dart-define=FE_SUPABASE_URL=https://<ref>.supabase.co`
@@ -90,6 +92,7 @@ class HttpClientTransport implements RestTransport, BytesFetcher {
     }
     final req = await _client.openUrl(method, uri).timeout(timeout);
     headers.forEach(req.headers.set);
+    feClientHeaders().forEach(req.headers.set);
     if (bytes != null) {
       req.headers.set(
         HttpHeaders.contentTypeHeader,
@@ -110,6 +113,7 @@ class HttpClientTransport implements RestTransport, BytesFetcher {
         json = null;
       }
     }
+    reportIfUpdateRequired(res.statusCode, json);
     return RestResponse(res.statusCode, json);
   }
 
@@ -124,8 +128,10 @@ class HttpClientTransport implements RestTransport, BytesFetcher {
     }
     final req = await _client.openUrl('GET', uri).timeout(timeout);
     headers.forEach(req.headers.set);
+    feClientHeaders().forEach(req.headers.set);
     final res = await req.close().timeout(timeout);
     if (res.statusCode < 200 || res.statusCode >= 300) {
+      reportIfUpdateRequired(res.statusCode, null);
       await res.drain<void>();
       return null;
     }

@@ -27,6 +27,7 @@ import '../data/offline/offline_backend.dart';
 import '../data/remote/http_auth_repository.dart';
 import '../data/remote/supabase_account.dart';
 import '../data/remote/supabase_ai_provider.dart';
+import '../data/remote/supabase_app_version.dart';
 import '../data/remote/supabase_auth_repository.dart';
 import '../data/remote/supabase_class_groups.dart';
 import '../data/remote/supabase_class_quiz.dart';
@@ -65,6 +66,7 @@ import 'study.dart';
 import 'support.dart';
 import 'teacher_card.dart';
 import 'tts.dart';
+import 'update_gate.dart';
 import 'user_data.dart';
 
 /// Ilovani ishga tushirish.
@@ -163,6 +165,10 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
           ),
         ],
         if (supabase != null) ...[
+          // Majburiy yangilash: eski build’ni o‘chirish (fonda, xatoda bloklamaydi).
+          appVersionServiceProvider.overrideWithValue(
+            SupabaseAppVersionService(config: supabase),
+          ),
           professionalVerificationServiceProvider.overrideWithValue(
             SupabaseVerificationService(config: supabase, auth: auth),
           ),

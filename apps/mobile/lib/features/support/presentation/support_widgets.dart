@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/fe_client_headers.dart';
 import '../../../app/guidelines.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
@@ -253,7 +254,12 @@ class _AttachmentChip extends ConsumerWidget {
         await showDialog<void>(
           context: context,
           builder: (c) => Dialog(
-            child: InteractiveViewer(child: Image.network(url.toString())),
+            child: InteractiveViewer(
+              child: Image.network(
+                url.toString(),
+                headers: feHeadersForUrl(url.toString()),
+              ),
+            ),
           ),
         );
       },

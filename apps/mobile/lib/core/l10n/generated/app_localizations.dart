@@ -21146,6 +21146,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Audio could not be played. Try again.'**
   String get ttsErrGeneric;
+
+  /// Title of the blocking page shown when this app version is too old.
+  ///
+  /// In en, this message translates to:
+  /// **'A new version is available'**
+  String get updReqTitle;
+
+  /// Body of the blocking page: the installed version is outdated.
+  ///
+  /// In en, this message translates to:
+  /// **'This version of the app is out of date. Update the app to continue.'**
+  String get updReqBody;
+
+  /// Primary button of the blocking page: opens the store listing.
+  ///
+  /// In en, this message translates to:
+  /// **'Update'**
+  String get updReqButton;
+
+  /// Shown instead of the button when there is no store link (iOS).
+  ///
+  /// In en, this message translates to:
+  /// **'Update the app from the App Store.'**
+  String get updReqStoreHint;
 }
 
 class _AppLocalizationsDelegate

@@ -8,6 +8,7 @@ import 'package:path_provider/path_provider.dart';
 
 import '../../domain/ports/backend_ports.dart';
 import '../../domain/ports/tts_ports.dart';
+import 'fe_client_headers.dart';
 import 'supabase_rest.dart';
 
 /// Ikkilik javobli POST (WAV). [RestTransport] javobni matn deb o‘qiydi,
@@ -48,6 +49,7 @@ class HttpClientTtsHttp implements TtsHttp {
     if (uri.scheme != 'https') throw const SocketException('HTTPS required');
     final req = await _client.openUrl('POST', uri).timeout(timeout);
     headers.forEach(req.headers.set);
+    feClientHeaders().forEach(req.headers.set);
     req.headers.contentType = ContentType.json;
     req.write(jsonEncode(body));
     final res = await req.close().timeout(timeout);
@@ -58,7 +60,17 @@ class HttpClientTtsHttp implements TtsHttp {
         throw const HttpException('response too large');
       }
     }
-    return TtsHttpResponse(res.statusCode, out.takeBytes());
+    final bytes = out.takeBytes();
+    if (res.statusCode >= 400 && bytes.length < 64 * 1024) {
+      Object? json;
+      try {
+        json = jsonDecode(utf8.decode(bytes));
+      } on Object {
+        json = null;
+      }
+      reportIfUpdateRequired(res.statusCode, json);
+    }
+    return TtsHttpResponse(res.statusCode, bytes);
   }
 }
 
