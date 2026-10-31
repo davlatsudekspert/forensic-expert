@@ -415,7 +415,8 @@ class _DailyQuestionCardState extends State<DailyQuestionCard> {
     final item = q.item;
     final answered = _picked != null;
     final source = [
-      for (final s in item.citations)
+      // Kartada faqat birinchi manba (to‘liq ro‘yxat test ekranida).
+      for (final s in item.citations.take(1))
         [
           s.title,
           ?s.detail,
@@ -484,6 +485,8 @@ class _DailyQuestionCardState extends State<DailyQuestionCard> {
           Text(
             sourceLine,
             key: const Key('desk.dailyQuestion.source'),
+            maxLines: 3,
+            overflow: TextOverflow.ellipsis,
             style: t.bodySmall?.copyWith(color: c.textSecondary),
           ),
           if (answered)
