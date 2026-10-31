@@ -32,6 +32,11 @@ COURSES = {
     "2 kurs bioetika": "Bioetika",
 }
 TOKS_COURSE = "Toksikologik kimyo"
+# «Sud-tibbiy toksikologiya» (2026-10-31): alohida kurs; G'iyosov darsligi 6-bob.
+# Deck fayli content/lessons/corrections/sud-toks-NN.json (slides-out'da yo'q);
+# deck_id = topic_id = sud-toks-NN, tartib = NN. Fayl bo'lmasa kurs chiqmaydi.
+SUD_TOKS_COURSE = "Sud-tibbiy toksikologiya"
+SUD_TOKS_RE = re.compile(r"^sud-toks-(\d+)\.json$")
 # «Apparatlar bilan ishlash» (2026-10-24): deck fayli out/instr-NN-<id>.json, tartib = NN.
 INSTR_COURSE = "Apparatlar bilan ishlash"
 # Eski rejadagi mavzular joriy rejadan keyin turadi.
@@ -57,10 +62,25 @@ def search_text(deck):
     return " ".join(p for p in parts if p)[:20000]
 
 
+def load_deck(ref, deck_id):
+    """Checked-in editorial corrections take precedence over older generated decks."""
+    correction = ROOT / "content/lessons/corrections" / f"{deck_id}.json"
+    if correction.exists():
+        d = json.loads(correction.read_text(encoding="utf-8"))
+    else:
+        d = json.loads(git_show(ref, f"out/{deck_id}.json"))
+    if not d.get("topic") or not d.get("slides"):
+        raise ValueError(f"Invalid lesson deck: {deck_id}")
+    d.pop("mcq", None)
+    return d
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--git-ref", default="origin/slides-out")
     ap.add_argument("--out", required=True)
+    ap.add_argument("--only-prefix", default=None,
+                    help="faqat shu prefiksli deck_id/topic_id chiqariladi (masalan sud-toks)")
     a = ap.parse_args()
 
     names = subprocess.run(["git", "ls-tree", "--name-only", a.git_ref, "out/"], cwd=ROOT,
@@ -87,8 +107,7 @@ def main():
         rows.append((t["id"], did, course, t["title"], pos, hidden))
         decks.setdefault(did, None)
     for did in decks:
-        d = json.loads(git_show(a.git_ref, f"out/{did}.json"))
-        d.pop("mcq", None)
+        d = load_deck(a.git_ref, did)
         decks[did] = d
 
     # «Toksikologik kimyo» kursi (docs/toks/toks_syllabus.json): deck fayli
@@ -101,17 +120,27 @@ def main():
         title = re.sub(r"^\[[^\]]*\]\s*", "", les["title_uz"]).strip()
         rows.append((did, did, TOKS_COURSE, title, les["n"], False))
         if did not in decks:
-            d = json.loads(git_show(a.git_ref, f"out/{did}.json"))
-            d.pop("mcq", None)
+            d = load_deck(a.git_ref, did)
             decks[did] = d
     for did in deck_ids:
         m = re.match(r"^instr-(\d+)-", did)
         if not m:
             continue
-        d = json.loads(git_show(a.git_ref, f"out/{did}.json"))
-        d.pop("mcq", None)
+        d = load_deck(a.git_ref, did)
         decks[did] = d
         rows.append((did, did, INSTR_COURSE, str(d.get("topic") or did), int(m.group(1)), False))
+    corr_dir = ROOT / "content/lessons/corrections"
+    for f in sorted(corr_dir.glob("sud-toks-*.json")) if corr_dir.exists() else []:
+        m = SUD_TOKS_RE.match(f.name)
+        if not m:
+            continue
+        did = f"sud-toks-{int(m.group(1)):02d}"
+        d = load_deck(a.git_ref, did)
+        decks[did] = d
+        rows.append((did, did, SUD_TOKS_COURSE, str(d.get("topic") or did), int(m.group(1)), False))
+    if a.only_prefix:
+        decks = {k: v for k, v in decks.items() if k.startswith(a.only_prefix)}
+        rows = [r for r in rows if r[0].startswith(a.only_prefix)]
     out = []
     for did, d in sorted(decks.items()):
         out.append(
@@ -133,8 +162,10 @@ def main():
     pathlib.Path(a.out).write_text("\n".join(out) + "\n", encoding="utf-8")
     shown = [r for r in rows if not r[5]]
     print(f"lessons: {len(decks)} deck, {len(rows)} mavzu ({len(shown)} ko'rinadi) → {a.out}")
-    for c in [*dict.fromkeys(COURSES.values()), TOKS_COURSE, INSTR_COURSE]:
-        print(f"  {c}: {sum(1 for r in shown if r[2] == c)}")
+    for c in [*dict.fromkeys(COURSES.values()), TOKS_COURSE, INSTR_COURSE, SUD_TOKS_COURSE]:
+        n = sum(1 for r in shown if r[2] == c)
+        if n or c != SUD_TOKS_COURSE:
+            print(f"  {c}: {n}")
 
 
 if __name__ == "__main__":
