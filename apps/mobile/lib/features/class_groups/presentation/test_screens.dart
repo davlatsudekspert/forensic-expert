@@ -20,6 +20,33 @@ import 'group_widgets.dart';
 /// Talaba testi. [preview] — ustozning «Talaba ko‘rinishida sinash»i:
 /// o‘sha savollar va vaqt, lekin sessiya faqat xotirada, **serverga hech
 /// narsa yuborilmaydi** (faqat hovuz o‘qiladi).
+/// Har talabaga savollar TARTIBI alohida (qo‘shnidan ko‘chirib bo‘lmasin):
+/// server bir xil to‘plam bergan bo‘lsa ham tartib `drawVariant` bilan
+/// talaba identifikatoriga ko‘ra aralashtiriladi (to‘plam o‘zgarmaydi).
+/// Identifikator yo‘q bo‘lsa — serverdagi tartib.
+@visibleForTesting
+GroupAttempt? groupOrderForStudent(GroupAttempt? a, String? userId) {
+  if (a == null || userId == null || a.questions.length < 2) return a;
+  final byId = {for (final q in a.questions) q.id: q};
+  final ids = drawVariant(
+    assignmentId: a.assignment.id,
+    userId: userId,
+    pool: byId.keys.toList()..sort(),
+    count: byId.length,
+  );
+  return GroupAttempt(
+    assignment: a.assignment,
+    finished: a.finished,
+    questions: [for (final id in ids) byId[id]!],
+    answers: a.answers,
+    startedAt: a.startedAt,
+    endsAt: a.endsAt,
+    serverNow: a.serverNow,
+    score: a.score,
+    total: a.total,
+  );
+}
+
 class GroupTestScreen extends ConsumerStatefulWidget {
   const GroupTestScreen({
     super.key,
@@ -162,7 +189,7 @@ class _GroupTestState extends ConsumerState<GroupTestScreen> {
     }
     final r = await svc.open(widget.assignmentId);
     if (!mounted) return;
-    final a = r.value;
+    final a = groupOrderForStudent(r.value, svc.userId);
     if (a == null) {
       setState(() => _failure = r.failure);
       return;
