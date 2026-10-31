@@ -317,14 +317,11 @@ Pro 0.4.0 test buildidan keyin darslar va test savollari RU/EN ga tarjima qilina
   qoidasi, Apple 2.3). Xabar ijtimoiy tarmoqlarda beriladi; Pro chiqqanda «1 oy bepul» va
   «Nima yangi» oynasi ko‘rsatiladi.
 
-## 2026-10-31 — Taklif mukofoti: «3 do‘st = 1 oy Pro» (egasi qarori)
-- Taklif qilgan odamning havolasi orqali **3 kishi** ro‘yxatdan o‘tsa va har biri ilovadan **kamida 3 xil kunda**
-  foydalansa, taklif qilgan odamga **1 oy (30 kun) Pro** beriladi (`plan_source = 'referral'`).
-- Soxta akkauntlarga qarshi chora (serverda):
-  - faqat tasdiqlangan email;
-  - o‘zini o‘zi taklif qilib bo‘lmaydi;
-  - faol kunni ilova kuniga bir marta `referral_touch()` bilan yozadi;
-  - bitta odamga yiliga ko‘pi bilan 3 oy;
-  - har bir mukofot audit logga yoziladi, admin bekor qila oladi.
-- Ilovada ko‘rinadigan narsalar: taklif sahifasida «2/3 do‘st» progress va mukofot holati.
+## 2026-10-31 — Taklif mukofoti: «3 do‘st sotib olsa = 1 oy Pro» (egasi qarori, aniqlashtirilgan)
+- Taklif qilgan odamning havolasi orqali kelgan **3 kishi Pro sotib olsa** (do‘kon xaridi server tomonida
+  tasdiqlangan; faqat ro‘yxatdan o‘tish **hisoblanmaydi**), taklif qilgan odamga **1 oy (30 kun) Pro** beriladi
+  (`plan_source = 'referral'`).
+- Xarid qaytarilsa (refund), u do‘st hisobdan chiqariladi. Agar mukofot hali berilmagan bo‘lsa, u ham bekor bo‘ladi.
+- O‘zini o‘zi taklif qilib bo‘lmaydi. Har bir mukofot audit logga yoziladi, admin bekor qila oladi.
+- Ilovada ko‘rinadigan narsalar: taklif sahifasida «1/3 do‘st Pro oldi» progress va mukofot holati.
 - Pro (xarid) yoqilganda birga ishga tushadi. Hozir o‘chiq: `referral_config.rewards_enabled = false`.
