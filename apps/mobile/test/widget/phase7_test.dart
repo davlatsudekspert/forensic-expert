@@ -159,7 +159,7 @@ void main() {
         find.descendant(
           of: find.byKey(const Key('provenance.sheet')),
           matching: find.text(
-            'From international literature (article, thesis): needs confirmation.',
+            'From international literature (article, thesis); see the original source for important decisions.',
           ),
         ),
         findsOneWidget,
