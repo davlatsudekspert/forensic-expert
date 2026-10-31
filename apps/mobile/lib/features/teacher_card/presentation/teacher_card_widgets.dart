@@ -228,114 +228,206 @@ class TeacherCardView extends ConsumerWidget {
       for (final s in TeacherSocial.values)
         if (card.socials[s] case final url?) (s, url),
     ];
+    final hasLogo = card.logoPath != null || logoBytes != null;
+    const photoSize = 88.0;
+    const bandHeight = 64.0;
     return FeCard(
       key: const Key('tc.card'),
-      padding: const EdgeInsets.all(FeSpace.sm),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              TeacherPhoto(
-                key: const Key('tc.photo'),
-                name: card.displayName,
-                path: card.photoPath,
-                bytes: photoBytes,
-              ),
-              const SizedBox(width: FeSpace.sm),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      l.tcStudentLabel,
-                      style: t.labelSmall?.copyWith(color: c.textSecondary),
-                    ),
-                    Text(
-                      card.displayName,
-                      key: const Key('tc.name'),
-                      style: t.titleMedium,
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    if (card.workplace.isNotEmpty ||
-                        card.logoPath != null ||
-                        logoBytes != null)
-                      Padding(
-                        padding: const EdgeInsets.only(top: FeSpace.xxs),
-                        child: Row(
-                          children: [
-                            if (card.logoPath != null || logoBytes != null) ...[
-                              _Logo(path: card.logoPath, bytes: logoBytes),
-                              const SizedBox(width: FeSpace.xs),
-                            ],
-                            if (card.workplace.isNotEmpty)
-                              Expanded(
-                                child: Text(
-                                  card.workplace,
-                                  key: const Key('tc.workplace'),
-                                  style: t.bodySmall?.copyWith(
-                                    color: c.textSecondary,
-                                  ),
-                                  maxLines: 2,
-                                  overflow: TextOverflow.ellipsis,
-                                ),
-                              ),
+      padding: EdgeInsets.zero,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(FeRadius.card),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            // Premium sarlavha: brend rangidagi tasma, ustiga yumaloq rasm.
+            SizedBox(
+              height: bandHeight + photoSize / 2,
+              child: Stack(
+                clipBehavior: Clip.none,
+                children: [
+                  Positioned(
+                    left: 0,
+                    right: 0,
+                    top: 0,
+                    height: bandHeight,
+                    child: DecoratedBox(
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                          colors: [
+                            c.brand,
+                            Color.lerp(c.brand, c.accent, 0.35)!,
                           ],
-                        ),
-                      ),
-                  ],
-                ),
-              ),
-              if (onReport != null)
-                IconButton(
-                  key: const Key('tc.report'),
-                  tooltip: l.tcReport,
-                  visualDensity: VisualDensity.compact,
-                  icon: const Icon(Icons.flag_outlined),
-                  onPressed: onReport,
-                ),
-            ],
-          ),
-          if (card.bio.isNotEmpty) ...[
-            const SizedBox(height: FeSpace.xs),
-            Text(
-              card.bio,
-              key: const Key('tc.bio'),
-              style: t.bodyMedium,
-              maxLines: 4,
-              overflow: TextOverflow.ellipsis,
-            ),
-          ],
-          if (socials.isNotEmpty) ...[
-            const SizedBox(height: FeSpace.xs),
-            Wrap(
-              spacing: FeSpace.xxs,
-              runSpacing: FeSpace.xxs,
-              children: [
-                for (final (s, url) in socials)
-                  Semantics(
-                    button: true,
-                    label: l.tcOpenLink(teacherSocialName(l, s)),
-                    child: Tooltip(
-                      message: l.tcOpenLink(teacherSocialName(l, s)),
-                      child: InkResponse(
-                        key: Key('tc.social.${s.key}'),
-                        radius: 24,
-                        onTap: () => _open(context, ref, s, url),
-                        child: SizedBox(
-                          width: FeTouch.minTarget,
-                          height: FeTouch.minTarget,
-                          child: Center(child: SocialBadge(social: s)),
                         ),
                       ),
                     ),
                   ),
-              ],
+                  if (onReport != null)
+                    Positioned(
+                      top: FeSpace.xxs,
+                      right: FeSpace.xxs,
+                      child: IconButton(
+                        key: const Key('tc.report'),
+                        tooltip: l.tcReport,
+                        visualDensity: VisualDensity.compact,
+                        color: c.textOnBrand,
+                        icon: const Icon(Icons.flag_outlined),
+                        onPressed: onReport,
+                      ),
+                    ),
+                  Positioned(
+                    left: 0,
+                    right: 0,
+                    top: bandHeight - photoSize / 2,
+                    child: Center(
+                      child: Container(
+                        padding: const EdgeInsets.all(3),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: c.surfaceRaised,
+                          border: Border.all(color: c.accent, width: 2),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Color(0x22000000),
+                              blurRadius: 10,
+                              offset: Offset(0, 3),
+                            ),
+                          ],
+                        ),
+                        child: TeacherPhoto(
+                          key: const Key('tc.photo'),
+                          name: card.displayName,
+                          path: card.photoPath,
+                          bytes: photoBytes,
+                          size: photoSize - 10,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(
+                FeSpace.md,
+                FeSpace.xs,
+                FeSpace.md,
+                FeSpace.md,
+              ),
+              child: Column(
+                children: [
+                  Text(
+                    l.tcStudentLabel.toUpperCase(),
+                    textAlign: TextAlign.center,
+                    style: t.labelSmall?.copyWith(
+                      color: c.accent,
+                      letterSpacing: 1.6,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  const SizedBox(height: FeSpace.xxs),
+                  Text(
+                    card.displayName,
+                    key: const Key('tc.name'),
+                    textAlign: TextAlign.center,
+                    style: t.titleLarge,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  if (card.workplace.isNotEmpty || hasLogo) ...[
+                    const SizedBox(height: FeSpace.xxs),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        if (hasLogo) ...[
+                          _Logo(path: card.logoPath, bytes: logoBytes),
+                          const SizedBox(width: FeSpace.xs),
+                        ],
+                        if (card.workplace.isNotEmpty)
+                          Flexible(
+                            child: Text(
+                              card.workplace,
+                              key: const Key('tc.workplace'),
+                              textAlign: TextAlign.center,
+                              style: t.bodySmall?.copyWith(
+                                color: c.textSecondary,
+                              ),
+                              maxLines: 2,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ),
+                      ],
+                    ),
+                  ],
+                  if (card.bio.isNotEmpty) ...[
+                    const SizedBox(height: FeSpace.sm),
+                    Container(
+                      width: 36,
+                      height: 2,
+                      decoration: BoxDecoration(
+                        color: c.accent,
+                        borderRadius: BorderRadius.circular(1),
+                      ),
+                    ),
+                    const SizedBox(height: FeSpace.sm),
+                    Text(
+                      card.bio,
+                      key: const Key('tc.bio'),
+                      textAlign: TextAlign.center,
+                      style: t.bodyMedium,
+                      maxLines: 4,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ],
+                  if (socials.isNotEmpty) ...[
+                    const SizedBox(height: FeSpace.sm),
+                    Wrap(
+                      alignment: WrapAlignment.center,
+                      spacing: FeSpace.xs,
+                      runSpacing: FeSpace.xs,
+                      children: [
+                        for (final (s, url) in socials)
+                          Semantics(
+                            button: true,
+                            label: l.tcOpenLink(teacherSocialName(l, s)),
+                            child: Tooltip(
+                              message: l.tcOpenLink(teacherSocialName(l, s)),
+                              child: InkResponse(
+                                key: Key('tc.social.${s.key}'),
+                                radius: 28,
+                                onTap: () => _open(context, ref, s, url),
+                                child: SizedBox(
+                                  width: 52,
+                                  height: 52,
+                                  child: Center(
+                                    child: DecoratedBox(
+                                      decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: SocialBadge.colorOf(s)
+                                                .withValues(alpha: 0.35),
+                                            blurRadius: 8,
+                                            offset: const Offset(0, 3),
+                                          ),
+                                        ],
+                                      ),
+                                      child: SocialBadge(social: s, size: 42),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                      ],
+                    ),
+                  ],
+                ],
+              ),
             ),
           ],
-        ],
+        ),
       ),
     );
   }
