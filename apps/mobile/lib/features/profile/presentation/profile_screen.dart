@@ -12,6 +12,7 @@ import '../../../app/plan.dart';
 import '../../../app/professional.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
+import '../../../app/student_card.dart';
 import '../../../app/support.dart';
 import '../../../app/teacher_card.dart';
 import '../../../app/user_data.dart';
@@ -266,6 +267,32 @@ class ProfileScreen extends ConsumerWidget {
                             _ => l.tcProfileOff,
                           },
                           onTap: () => context.push(Routes.teacherCard),
+                        ),
+                      ],
+                    ),
+                  ],
+                  // «Talaba kartam»: ixtiyoriy, har qanday kirgan hisob uchun
+                  // (karta xizmati ulangan bo‘lsa). DEFAULT hech kimga ko‘rinmaydi.
+                  if (signedIn &&
+                      ref.watch(studentCardServiceProvider).isConfigured) ...[
+                    FeSectionHeader(l.scdTitle),
+                    _Group(
+                      children: [
+                        _Row(
+                          key: const Key('profile.studentCard'),
+                          icon: Icons.face_outlined,
+                          title: l.scdTitle,
+                          value: switch (ref
+                              .watch(myStudentCardProvider)
+                              .value
+                              ?.value) {
+                            null => l.scdProfileHint,
+                            final card
+                                when card.visible && !card.hiddenByAdmin =>
+                              l.scdProfileOn,
+                            _ => l.scdProfileOff,
+                          },
+                          onTap: () => context.push(Routes.studentCard),
                         ),
                       ],
                     ),

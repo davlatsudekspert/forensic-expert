@@ -57,6 +57,7 @@ va o‘quv ilovasi. Bog‘lanish: <a href="mailto:davlatsudekspert@gmail.com">da
 <tr><td>Malaka hujjatlari (diplom, sertifikat va b.)</td><td>Siz yuklasangiz</td><td>Maqomni qo‘lda tekshirish</td></tr>
 <tr><td>Murojaat xabarlari va ixtiyoriy skrinshot</td><td>«Taklif va murojaatlar» orqali yuborsangiz</td><td>Sizga javob berish</td></tr>
 <tr><td>Ustoz kartasi: ism, ish joyi, qisqa matn, tarmoq havolalari, rasm va logotip</td><td>Faqat ustoz roli bor foydalanuvchi o‘zi to‘ldirsa (ixtiyoriy)</td><td>Ustozning guruh a’zolariga o‘zini tanishtirishi</td></tr>
+<tr><td>Talaba kartasi: ism yoki taxallus, qisqa matn va rasm (havola va aloqa ma’lumoti yo‘q)</td><td>Foydalanuvchi o‘zi to‘ldirsa (ixtiyoriy)</td><td>Guruhdoshlari va ustoziga o‘zini tanishtirishi</td></tr>
 <tr><td>Taklif (referal) bog‘lanishi va pochtaning tuzli xeshi</td><td>Taklif kodidan foydalansangiz</td><td>Suiiste’molning oldini olish</td></tr>
 <tr><td>AI yordamchiga yuborgan savolingiz</td><td>Savol yozsangiz</td><td>Javobni shakllantirish</td></tr>
 </table>
@@ -91,6 +92,7 @@ uzatish TLS bilan shifrlanadi.</p>
   <li>Murojaatingizni faqat FORENSIC EXPERT jamoasining vakolatli administratori ko‘radi; javobda administrator ismi emas, jamoa nomi ko‘rsatiladi.</li>
   <li>Sizni taklif qilgan hamkasbingiz faqat umumiy sonlarni ko‘radi — ismingizni, pochtangizni, profilingiz yoki hujjatlaringizni <strong>hech qachon</strong> ko‘rmaydi.</li>
   <li>Ustoz kartasini (7b-bo‘lim) faqat shu ustozning guruhlari a’zolari ko‘radi, ustoz «Talabalarimga ko‘rsatish»ni yoqqan bo‘lsagina.</li>
+  <li>Talaba kartasini (7c-bo‘lim) faqat siz bilan umumiy guruhdagi boshqa a’zolar va shu guruhning ustozi ko‘radi, siz «Guruhdoshlarimga va ustozimga ko‘rsatish»ni yoqqan bo‘lsagina. Ommaviy emas.</li>
   <li>Boshqa foydalanuvchilar sizning ma’lumotingizni ko‘ra olmaydi — bu baza darajasida cheklangan.</li>
 </ul>
 <p>Ma’lumotlaringizni sotmaymiz, reklama uchun ishlatmaymiz va AI modellarini
@@ -135,10 +137,25 @@ rasm (1 MB gacha; JPEG, PNG yoki WebP). Bu ma’lumot serverda saqlanadi.</p>
   <li><strong>O‘chirish:</strong> kartani istalgan vaqtda <em>Ustoz kartam → Kartani o‘chirish</em> bilan, yoki hisobni o‘chirish bilan to‘liq (rasmlari bilan) o‘chirasiz.</li>
 </ul>
 
+<h3>7c. Talaba kartasi</h3>
+<p>Har qanday kirgan foydalanuvchi <em>Profil → Talaba kartam</em> bo‘limida
+ixtiyoriy ravishda qisqa karta to‘ldirishi mumkin: ism yoki taxallus
+(majburiy, 2–40 belgi), 150 belgigacha «o‘zim haqimda» matni va rasm (1 MB gacha;
+JPEG, PNG yoki WebP; rasm ham ixtiyoriy). Ijtimoiy tarmoq va boshqa havolalar,
+layk va obuna <strong>yo‘q</strong>. Bu ma’lumot serverda saqlanadi.</p>
+<ul>
+  <li><strong>Kim ko‘radi:</strong> faqat siz a’zo bo‘lgan guruhlarning boshqa a’zolari va shu guruhlarning ustozi — guruh sahifasida. Boshqa guruhlardagi talabalar, boshqa ustozlar, kirmaganlar va boshqa foydalanuvchilar ko‘rmaydi. Guruhdan chiqsangiz, o‘sha guruh a’zolari kartani ko‘rishdan to‘xtaydi. Karta ommaviy emas.</li>
+  <li><strong>Standart holat — yashirin:</strong> karta «Guruhdoshlarimga va ustozimga ko‘rsatish» kaliti yoqilmaguncha hech kimga ko‘rinmaydi; kalit rozilik matni bilan alohida yoqiladi va istalgan vaqtda o‘chiriladi.</li>
+  <li><strong>Qoidalar:</strong> havola, telefon raqami, elektron pochta, @username va ijtimoiy tarmoq nomini yozish taqiqlanadi — server bunday matnni qabul qilmaydi. Shaxsiy aloqa ma’lumotini (manzil, telefon, maktab va h.k.) ulashmang. Kamsituvchi, haqoratli yoki nomaqbul matn va rasm qo‘yish mumkin emas.</li>
+  <li><strong>Rasm:</strong> profildagi (faqat telefonda saqlanadigan) rasmdan alohida; xususiy omborda saqlanadi, ochiq havolasi yo‘q. Rasm o‘rniga ism bosh harfi ko‘rsatiladi.</li>
+  <li><strong>Shikoyat va yashirish:</strong> har bir ko‘ruvchi kartaga «Shikoyat qilish» orqali murojaat yuborishi va «Bu kartani yashirish» bilan uni faqat o‘zi uchun yashirishi (va qaytarishi) mumkin. Guruh ustozi nomaqbul kartani guruhdan yashira oladi (amal jurnalga yoziladi), administrator esa butunlay yashirishi mumkin; karta egasi bunday kartani o‘zi qayta yoqa olmaydi.</li>
+  <li><strong>O‘chirish:</strong> kartani istalgan vaqtda <em>Talaba kartam → Kartani o‘chirish</em> bilan, yoki hisobni o‘chirish bilan to‘liq (rasmi bilan) o‘chirasiz.</li>
+</ul>
+
 <h3>8. Saqlash muddati va o‘chirish</h3>
 <p>Hisobingizni ilovaning o‘zidan (<em>Profil → Hisobni o‘chirish</em>) butunlay
 o‘chirishingiz mumkin. Hisob o‘chirilganda profilingiz, hujjatlaringiz,
-murojaatlaringiz, skrinshotlaringiz, ustoz kartangiz va uning rasmlari ham o‘chiriladi. Administrator
+murojaatlaringiz, skrinshotlaringiz, ustoz va talaba kartangiz hamda ularning rasmlari ham o‘chiriladi. Administrator
 amallarining jurnali xabar matnisiz saqlanib qolishi mumkin.</p>
 
 <h3>9. Huquqlaringiz</h3>
@@ -193,6 +210,7 @@ muvofiq bekor qilinadi. Akkauntni ilova ichidan o‘chirish mumkin. Savollar:
 <tr><td>Документы о квалификации</td><td>Если вы их загрузите</td><td>Ручная проверка статуса</td></tr>
 <tr><td>Сообщения обращений и необязательный скриншот</td><td>При отправке через «Предложения и обращения»</td><td>Ответ вам</td></tr>
 <tr><td>Карточка преподавателя: имя, место работы, короткий текст, ссылки на соцсети, фото и логотип</td><td>Только если пользователь с ролью преподавателя сам заполнит (необязательно)</td><td>Знакомство преподавателя с участниками его групп</td></tr>
+<tr><td>Карточка студента: имя или псевдоним, короткий текст и фото (без ссылок и контактов)</td><td>Только если пользователь сам заполнит (необязательно)</td><td>Знакомство с одногруппниками и преподавателем</td></tr>
 <tr><td>Реферальная связь и солёный хеш почты</td><td>При использовании кода приглашения</td><td>Предотвращение злоупотреблений</td></tr>
 <tr><td>Ваш вопрос ИИ-помощнику</td><td>При отправке вопроса</td><td>Формирование ответа</td></tr>
 </table>
@@ -227,6 +245,7 @@ muvofiq bekor qilinadi. Akkauntni ilova ichidan o‘chirish mumkin. Savollar:
   <li>Ваше обращение видит только уполномоченный администратор команды FORENSIC EXPERT; в ответе указывается название команды, а не имя администратора.</li>
   <li>Пригласивший вас коллега видит только общие счётчики — ваше имя, почту, профиль и документы он <strong>никогда</strong> не видит.</li>
   <li>Карточку преподавателя (раздел 7b) видят только участники групп этого преподавателя, и только если преподаватель включил «Показывать моим студентам».</li>
+  <li>Карточку студента (раздел 7c) видят только другие участники общих с вами групп и преподаватель этой группы, и только если вы включили «Показывать одногруппникам и преподавателю». Она не публичная.</li>
   <li>Другие пользователи не могут видеть ваши данные — это ограничено на уровне базы данных.</li>
 </ul>
 <p>Мы не продаём ваши данные, не используем их для рекламы и не передаём для
@@ -272,10 +291,25 @@ muvofiq bekor qilinadi. Akkauntni ilova ichidan o‘chirish mumkin. Savollar:
   <li><strong>Удаление:</strong> карточку можно удалить в любой момент (<em>Моя карточка преподавателя → Удалить карточку</em>) или вместе с аккаунтом — полностью, с фото.</li>
 </ul>
 
+<h3>7c. Карточка студента</h3>
+<p>Любой вошедший пользователь может добровольно заполнить короткую карточку в
+разделе <em>Профиль → Моя карточка студента</em>: имя или псевдоним
+(обязательно, 2–40 символов), текст «о себе» до 150 символов и фото (до 1 МБ;
+JPEG, PNG или WebP; фото тоже необязательно). Ссылок на соцсети и другие сайты,
+лайков и подписок <strong>нет</strong>. Эти данные хранятся на сервере.</p>
+<ul>
+  <li><strong>Кто видит:</strong> только другие участники групп, в которых вы состоите, и преподаватель этих групп — на странице группы. Студенты из других групп, другие преподаватели, гости и другие пользователи не видят. Если вы выходите из группы, её участники перестают видеть карточку. Карточка не публичная.</li>
+  <li><strong>По умолчанию скрыта:</strong> карточка никому не видна, пока не включён переключатель «Показывать одногруппникам и преподавателю»; он включается отдельно, с текстом согласия, и выключается в любой момент.</li>
+  <li><strong>Правила:</strong> запрещено писать ссылки, номера телефонов, e-mail, @username и названия соцсетей — сервер не принимает такой текст. Не делитесь личными контактами (адрес, телефон, школа и т. п.). Нельзя размещать оскорбительный, дискриминационный или неподобающий текст и фото.</li>
+  <li><strong>Фото:</strong> отдельно от фото профиля (оно остаётся только на телефоне); хранится в закрытом хранилище, публичной ссылки нет. Вместо фото показывается первая буква имени.</li>
+  <li><strong>Жалоба и скрытие:</strong> любой, кто видит карточку, может пожаловаться («Пожаловаться на карточку») и скрыть её только для себя («Скрыть эту карточку для меня») с возможностью вернуть. Преподаватель группы может скрыть недопустимую карточку из группы (действие записывается в журнал), администратор — скрыть полностью; владелец не может сам включить такую карточку обратно.</li>
+  <li><strong>Удаление:</strong> карточку можно удалить в любой момент (<em>Моя карточка студента → Удалить карточку</em>) или вместе с аккаунтом — полностью, с фото.</li>
+</ul>
+
 <h3>8. Срок хранения и удаление</h3>
 <p>Вы можете полностью удалить учётную запись из самого приложения
 (<em>Профиль → Удалить учётную запись</em>). При удалении стираются профиль,
-документы, обращения, скриншоты, карточка преподавателя и её фото. Журнал действий администратора может
+документы, обращения, скриншоты, карточки преподавателя и студента и их фото. Журнал действий администратора может
 сохраняться без текста сообщений.</p>
 
 <h3>9. Ваши права</h3>
@@ -332,6 +366,7 @@ practitioners. Contact:
 <tr><td>Qualification documents</td><td>If you upload them</td><td>Manual review of status</td></tr>
 <tr><td>Support messages and an optional screenshot</td><td>When you use the support form</td><td>To reply to you</td></tr>
 <tr><td>Teacher card: name, workplace, short text, social links, photo and logo</td><td>Only if a user with the teacher role fills it in (optional)</td><td>Lets a teacher introduce themselves to their group members</td></tr>
+<tr><td>Student card: name or nickname, short text and photo (no links or contact details)</td><td>Only if the user fills it in (optional)</td><td>Lets a student introduce themselves to groupmates and the teacher</td></tr>
 <tr><td>Referral link and a salted hash of your email</td><td>If you use an invite code</td><td>Abuse prevention</td></tr>
 <tr><td>Your question to the AI assistant</td><td>When you send a question</td><td>To produce an answer</td></tr>
 </table>
@@ -366,6 +401,7 @@ encrypted with TLS.</p>
   <li>Your support message is seen only by an authorised FORENSIC EXPERT administrator; replies are signed with the team name, not a personal name.</li>
   <li>A colleague who invited you sees only aggregate counts — <strong>never</strong> your name, email, profile or documents.</li>
   <li>A teacher card (section 7b) is visible only to members of that teacher's groups, and only if the teacher turned on «Show to my students».</li>
+  <li>A student card (section 7c) is visible only to other members of the groups you share and to that group's teacher, and only if you turned on «Show to my groupmates and teacher». It is not public.</li>
   <li>Other users cannot see your data; this is enforced at the database level.</li>
 </ul>
 <p>We do not sell your data, use it for advertising, or supply it for training
@@ -409,10 +445,26 @@ a website (https only, and only the network's own address) and a photo (up to
   <li><strong>Deletion:</strong> delete the card at any time (<em>My teacher card → Delete card</em>) or delete your account to remove it completely, photos included.</li>
 </ul>
 
+<h3>7c. Student card</h3>
+<p>Any signed-in user may, optionally, fill in a short card under
+<em>Profile → My student card</em>: a name or nickname (required, 2–40
+characters), an «about me» text of up to 150 characters and a photo (up to 1 MB;
+JPEG, PNG or WebP; the photo is optional too). There are <strong>no</strong>
+social-network or other links, likes or followers. This data is stored on the
+server.</p>
+<ul>
+  <li><strong>Who can see it:</strong> only the other members of the groups you belong to and the teacher of those groups, on the group page. Students in other groups, other teachers, signed-out visitors and other users cannot. If you leave a group, its members stop seeing the card. The card is not public.</li>
+  <li><strong>Hidden by default:</strong> nobody sees the card until the «Show to my groupmates and teacher» switch is turned on; it is enabled separately, next to a consent text, and can be turned off at any time.</li>
+  <li><strong>Rules:</strong> links, phone numbers, e-mail addresses, @usernames and social network names are not allowed — the server rejects such text. Do not share personal contact details (address, phone, school, etc.). Offensive, discriminatory or otherwise inappropriate text and photos are not allowed.</li>
+  <li><strong>Photo:</strong> separate from the profile picture (which stays on the phone only); stored in a private bucket with no public link. Without a photo, the initial of the name is shown.</li>
+  <li><strong>Reporting and hiding:</strong> anyone who can see a card can report it («Report this card») and hide it for themselves only («Hide this card for me»), and restore it later. The teacher of the group can hide an inappropriate card from the group (the action is logged) and an administrator can hide it completely; the owner cannot turn such a card back on.</li>
+  <li><strong>Deletion:</strong> delete the card at any time (<em>My student card → Delete card</em>) or delete your account to remove it completely, photo included.</li>
+</ul>
+
 <h3>8. Retention and deletion</h3>
 <p>You can delete your account entirely from inside the app
 (<em>Profile → Delete account</em>). Deletion removes your profile, documents,
-support messages, screenshots, teacher card and its photos. Administrator action logs may be retained
+support messages, screenshots, teacher and student cards and their photos. Administrator action logs may be retained
 without message content.</p>
 
 <h3>9. Your rights</h3>

@@ -5,14 +5,17 @@ import 'package:go_router/go_router.dart';
 
 import '../../../app/class_groups.dart';
 import '../../../app/routes.dart';
+import '../../../app/student_card.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/class_groups/class_groups_models.dart';
+import '../../../domain/student_card/student_card.dart';
 import '../../class_quiz/presentation/class_quiz_widgets.dart' show ClassQr;
 import '../../professional/presentation/professional_widgets.dart' show FeNote;
+import '../../student_card/presentation/student_card_widgets.dart';
 import '../../teacher_card/presentation/teacher_card_widgets.dart';
 import 'group_widgets.dart';
 
@@ -169,6 +172,9 @@ class _GroupDetailState extends ConsumerState<GroupDetailScreen> {
     final t = Theme.of(context).textTheme;
     final c = FeTheme.of(context);
     final code = d.group.code ?? '';
+    // Talaba kartalari (ixtiyoriy): a’zo kartasi bo‘lsa — rasm va bosilsa
+    // kichik oyna; bo‘lmasa a’zo avvalgidek ko‘rinadi.
+    final cards = ref.watch(groupStudentCardsProvider(d.group.id)).value?.value;
     return [
       Text(
         l.grpMembersCount(d.group.memberCount, d.group.memberLimit),
@@ -283,21 +289,61 @@ class _GroupDetailState extends ConsumerState<GroupDetailScreen> {
           body: l.grpMembersEmpty,
           compact: true,
         ),
-      for (final m in d.members)
-        ListTile(
-          key: Key('grp.member.${m.id}'),
-          contentPadding: EdgeInsets.zero,
-          leading: const Icon(Icons.person_outline),
-          title: Text(m.nickname),
-          trailing: IconButton(
-            tooltip: l.grpRemoveAction,
-            icon: const Icon(Icons.person_remove_outlined),
-            onPressed: () => _remove(d, m),
-          ),
-        ),
+      for (final m in d.members) _teacherMember(context, l, d, m, cards),
+      GroupHiddenStudentCards(groupId: d.group.id),
       const SizedBox(height: FeSpace.md),
       FeNote(icon: Icons.privacy_tip_outlined, text: l.grpPrivacyNote),
     ];
+  }
+
+  Widget _teacherMember(
+    BuildContext context,
+    AppLocalizations l,
+    GroupDetail d,
+    GroupMember m,
+    StudentGroupCards? cards,
+  ) {
+    final card = cards?.byMember(m.id);
+    final remove = IconButton(
+      tooltip: l.grpRemoveAction,
+      icon: const Icon(Icons.person_remove_outlined),
+      onPressed: () => _remove(d, m),
+    );
+    if (card == null) {
+      return ListTile(
+        key: Key('grp.member.${m.id}'),
+        contentPadding: EdgeInsets.zero,
+        leading: const Icon(Icons.person_outline),
+        title: Text(m.nickname),
+        trailing: remove,
+      );
+    }
+    return ListTile(
+      key: Key('grp.member.${m.id}'),
+      contentPadding: EdgeInsets.zero,
+      leading: StudentPhoto(
+        key: Key('grp.memberCard.${m.id}'),
+        name: card.displayName,
+        path: card.photoPath,
+        size: 40,
+      ),
+      title: Text(m.nickname),
+      subtitle: Text(
+        card.groupHidden
+            ? '${card.displayName} · ${l.scdGroupHiddenLabel}'
+            : card.displayName,
+        maxLines: 1,
+        overflow: TextOverflow.ellipsis,
+      ),
+      onTap: () => showStudentCardSheet(
+        context,
+        ref,
+        card: card,
+        groupId: d.group.id,
+        isTeacher: true,
+      ),
+      trailing: remove,
+    );
   }
 
   List<Widget> _student(
@@ -316,6 +362,8 @@ class _GroupDetailState extends ConsumerState<GroupDetailScreen> {
       // «Ustoz kartasi»: server faqat ustoz «Talabalarimga ko‘rsatish»ni
       // yoqqan bo‘lsa beradi; yo‘q/xato bo‘lsa — hech narsa ko‘rinmaydi.
       GroupTeacherCard(groupId: d.group.id),
+      GroupStudentCards(groupId: d.group.id),
+      GroupHiddenStudentCards(groupId: d.group.id),
       FeSectionHeader(l.grpTestsSection),
       if (d.assignments.isEmpty)
         FeEmptyState(

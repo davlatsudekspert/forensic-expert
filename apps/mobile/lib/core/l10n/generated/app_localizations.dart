@@ -1423,7 +1423,7 @@ abstract class AppLocalizations {
   /// Privacy summary.
   ///
   /// In en, this message translates to:
-  /// **'The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically. Your profile photo (if you set one) stays on this device only. If you fill in the optional teacher card, its name, workplace, text, links and photo are stored on the server and visible only to members of your groups, and only if you turned on «Show to my students»; you can delete the card at any time, and it is deleted with your account.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.\n\nSuggestions & support: the message you send in «Suggestions & support», an optional screenshot (JPEG/PNG/WebP only, up to 5 MB), the request type and your account e-mail are stored on our server only to reply to you and improve the app. Only an authorised FORENSIC EXPERT team administrator can see them; other users never can. Replies are signed «FORENSIC EXPERT team», not with an administrator\'s name. Administrator actions are logged (without message text). Your consent is requested before a request is sent. Requests and screenshots are not shared with third parties and are not used for advertising or AI training. If you delete your account, your requests, messages and screenshots are deleted permanently.\n\nExpert casebook: your entries (title, case reference, text, linked items and copied statements) are stored only on this device. They are not sent to a server, to telemetry, to AI or to other users, and are not included in backups. An entry is shared or copied only when you press the button. You can delete the casebook at any time via “Casebook → Clear entire casebook”; if you delete the app, the entries are gone too.'**
+  /// **'The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically. Your profile photo (if you set one) stays on this device only. If you fill in the optional teacher card, its name, workplace, text, links and photo are stored on the server and visible only to members of your groups, and only if you turned on «Show to my students»; you can delete the card at any time, and it is deleted with your account. If you fill in the optional student card, its name or nickname, short text and photo are stored on the server and visible only to the members and the teacher of the groups you belong to, and only if you turned on «Show to my groupmates and teacher»; the card is not public and contains no links or contact details; an inappropriate card can be reported and hidden; you can delete the card at any time, and it is deleted with your account.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.\n\nSuggestions & support: the message you send in «Suggestions & support», an optional screenshot (JPEG/PNG/WebP only, up to 5 MB), the request type and your account e-mail are stored on our server only to reply to you and improve the app. Only an authorised FORENSIC EXPERT team administrator can see them; other users never can. Replies are signed «FORENSIC EXPERT team», not with an administrator\'s name. Administrator actions are logged (without message text). Your consent is requested before a request is sent. Requests and screenshots are not shared with third parties and are not used for advertising or AI training. If you delete your account, your requests, messages and screenshots are deleted permanently.\n\nExpert casebook: your entries (title, case reference, text, linked items and copied statements) are stored only on this device. They are not sent to a server, to telemetry, to AI or to other users, and are not included in backups. An entry is shared or copied only when you press the button. You can delete the casebook at any time via “Casebook → Clear entire casebook”; if you delete the app, the entries are gone too.'**
   String get privacySummary;
 
   /// About text.
@@ -20696,6 +20696,384 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Increase time by 5 seconds'**
   String get acSecondsPlus;
+
+  /// Title of the student card editor and the profile row.
+  ///
+  /// In en, this message translates to:
+  /// **'My student card'**
+  String get scdTitle;
+
+  /// Profile row subtitle under the student card entry.
+  ///
+  /// In en, this message translates to:
+  /// **'Optional: photo and a short intro for your groupmates and teacher'**
+  String get scdProfileHint;
+
+  /// Profile row value: the card is shown to group members.
+  ///
+  /// In en, this message translates to:
+  /// **'Visible to my groups'**
+  String get scdProfileOn;
+
+  /// Profile row value: the card is hidden.
+  ///
+  /// In en, this message translates to:
+  /// **'Hidden'**
+  String get scdProfileOff;
+
+  /// Intro text at the top of the student card editor.
+  ///
+  /// In en, this message translates to:
+  /// **'A short, optional introduction. Only your groupmates and your teacher can see it, and only if you turn it on below. Only a name is required — a nickname is fine.'**
+  String get scdLead;
+
+  /// Small label above the student card in the viewer sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Student card'**
+  String get scdLabel;
+
+  /// Section label: student photo.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo'**
+  String get scdPhotoSection;
+
+  /// Button: pick a photo.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose photo'**
+  String get scdPhotoChoose;
+
+  /// Button: replace the photo.
+  ///
+  /// In en, this message translates to:
+  /// **'Change photo'**
+  String get scdPhotoChange;
+
+  /// Button: remove the photo.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove photo'**
+  String get scdPhotoRemove;
+
+  /// Privacy note under the photo.
+  ///
+  /// In en, this message translates to:
+  /// **'The photo is optional — you can use only your initial. It is separate from your profile picture, which stays on this phone.'**
+  String get scdPhotoNote;
+
+  /// Semantics label of the student's photo.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo of {name}'**
+  String scdPhotoSemantics(String name);
+
+  /// Field label: name or nickname.
+  ///
+  /// In en, this message translates to:
+  /// **'Name or nickname'**
+  String get scdName;
+
+  /// Helper under the name field.
+  ///
+  /// In en, this message translates to:
+  /// **'2–40 characters. A nickname is fine.'**
+  String get scdNameHelper;
+
+  /// Field label: short self-description.
+  ///
+  /// In en, this message translates to:
+  /// **'About me'**
+  String get scdBio;
+
+  /// Hint in the about-me field.
+  ///
+  /// In en, this message translates to:
+  /// **'One or two sentences: interests, field of study'**
+  String get scdBioHint;
+
+  /// Rule shown under the fields: no links or contact details.
+  ///
+  /// In en, this message translates to:
+  /// **'Do not write links, phone numbers, e-mail, @usernames or social network names — such text is rejected. Do not share personal contact details.'**
+  String get scdNoContact;
+
+  /// Switch title: show the card to groupmates and teacher.
+  ///
+  /// In en, this message translates to:
+  /// **'Show to my groupmates and teacher'**
+  String get scdVisibleTitle;
+
+  /// Switch subtitle when on.
+  ///
+  /// In en, this message translates to:
+  /// **'Visible to members and the teacher of your groups'**
+  String get scdVisibleOn;
+
+  /// Switch subtitle when off.
+  ///
+  /// In en, this message translates to:
+  /// **'Hidden — nobody sees it'**
+  String get scdVisibleOff;
+
+  /// Consent text next to the visibility switch.
+  ///
+  /// In en, this message translates to:
+  /// **'If you turn this on, your photo, name and short text will be visible only to the other members and the teacher of the groups you belong to. Nobody outside your groups can see it, and there are no likes or followers. You can turn it off or delete the card at any time. Do not share personal contact details.'**
+  String get scdConsent;
+
+  /// Button: preview the card as others see it.
+  ///
+  /// In en, this message translates to:
+  /// **'Preview'**
+  String get scdPreview;
+
+  /// Title of the preview sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'How others see your card'**
+  String get scdPreviewTitle;
+
+  /// Note under the preview.
+  ///
+  /// In en, this message translates to:
+  /// **'Only people in your groups can see it, and only when the switch is on.'**
+  String get scdPreviewNote;
+
+  /// Button: save the card.
+  ///
+  /// In en, this message translates to:
+  /// **'Save card'**
+  String get scdSave;
+
+  /// Snackbar: saved.
+  ///
+  /// In en, this message translates to:
+  /// **'Card saved'**
+  String get scdSaved;
+
+  /// Button: delete the card.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete card'**
+  String get scdDelete;
+
+  /// Dialog title: delete the card.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete the card?'**
+  String get scdDeleteTitle;
+
+  /// Dialog body: delete the card.
+  ///
+  /// In en, this message translates to:
+  /// **'Your card and its photo will be removed from the server. This cannot be undone.'**
+  String get scdDeleteBody;
+
+  /// Dialog confirm button: delete.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get scdDeleteConfirm;
+
+  /// Snackbar: card deleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Card deleted'**
+  String get scdDeleted;
+
+  /// Dialog cancel button.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get scdCancel;
+
+  /// Retry button.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get scdRetry;
+
+  /// Banner: the card was hidden by a moderator.
+  ///
+  /// In en, this message translates to:
+  /// **'Your card was hidden by a moderator. Write to us via «Suggestions & support».'**
+  String get scdAdminHidden;
+
+  /// Banner: the teacher hid the card in some groups.
+  ///
+  /// In en, this message translates to:
+  /// **'Your teacher hid your card in some groups. Members of those groups cannot see it.'**
+  String get scdTeacherHidden;
+
+  /// Error: invalid name.
+  ///
+  /// In en, this message translates to:
+  /// **'The name must be 2–40 characters.'**
+  String get scdErrName;
+
+  /// Error: bio too long.
+  ///
+  /// In en, this message translates to:
+  /// **'«About me» is too long (up to 150 characters).'**
+  String get scdErrBio;
+
+  /// Error: the text contains a link or contact details.
+  ///
+  /// In en, this message translates to:
+  /// **'Links, phone numbers, e-mail, @usernames and social network names are not allowed. Remove them and try again.'**
+  String get scdErrContact;
+
+  /// Error: the image cannot be used.
+  ///
+  /// In en, this message translates to:
+  /// **'The image could not be used. Choose another one (JPEG, PNG or WebP).'**
+  String get scdErrImage;
+
+  /// Error: the image is too large even after compression.
+  ///
+  /// In en, this message translates to:
+  /// **'The image is too large even after compression. Choose a smaller one.'**
+  String get scdErrImageLarge;
+
+  /// Error: too many hidden cards.
+  ///
+  /// In en, this message translates to:
+  /// **'Too many hidden cards. Restore some first.'**
+  String get scdErrLimit;
+
+  /// Error: no access.
+  ///
+  /// In en, this message translates to:
+  /// **'You do not have access to this card.'**
+  String get scdErrForbidden;
+
+  /// Error: the student is not in this group.
+  ///
+  /// In en, this message translates to:
+  /// **'This student is no longer in the group.'**
+  String get scdErrNotFound;
+
+  /// Error: offline.
+  ///
+  /// In en, this message translates to:
+  /// **'No internet connection. Try again.'**
+  String get scdErrOffline;
+
+  /// Error: backend not connected.
+  ///
+  /// In en, this message translates to:
+  /// **'This service is not connected yet.'**
+  String get scdErrNotConfigured;
+
+  /// Error: generic server failure.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not complete the action. Please try again later.'**
+  String get scdErrServer;
+
+  /// Error: not signed in.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in to your account first.'**
+  String get scdErrSignIn;
+
+  /// Section header in the group screen: groupmates with cards.
+  ///
+  /// In en, this message translates to:
+  /// **'Groupmates'**
+  String get scdGroupSection;
+
+  /// Semantics/tooltip: open a student's card.
+  ///
+  /// In en, this message translates to:
+  /// **'Open {name}\'s card'**
+  String scdOpenCard(String name);
+
+  /// Sheet action: report the card.
+  ///
+  /// In en, this message translates to:
+  /// **'Report this card'**
+  String get scdSheetReport;
+
+  /// Sheet action: hide the card for me.
+  ///
+  /// In en, this message translates to:
+  /// **'Hide this card for me'**
+  String get scdSheetHide;
+
+  /// Note under the hide action.
+  ///
+  /// In en, this message translates to:
+  /// **'Only you will stop seeing it. You can restore it under «Hidden cards» on the group page.'**
+  String get scdSheetHideNote;
+
+  /// Snackbar: card hidden for me.
+  ///
+  /// In en, this message translates to:
+  /// **'Card hidden'**
+  String get scdHiddenToast;
+
+  /// Sheet action (teacher): hide the card from the group.
+  ///
+  /// In en, this message translates to:
+  /// **'Hide from this group'**
+  String get scdSheetGroupHide;
+
+  /// Sheet action (teacher): restore the card to the group.
+  ///
+  /// In en, this message translates to:
+  /// **'Show in this group again'**
+  String get scdSheetGroupUnhide;
+
+  /// Note under the teacher moderation action.
+  ///
+  /// In en, this message translates to:
+  /// **'As the teacher you can hide an inappropriate card from the group. The student cannot turn it back on.'**
+  String get scdSheetGroupNote;
+
+  /// Label (teacher): this card is hidden from the group.
+  ///
+  /// In en, this message translates to:
+  /// **'Hidden from the group'**
+  String get scdGroupHiddenLabel;
+
+  /// Snackbar (teacher): card hidden from the group.
+  ///
+  /// In en, this message translates to:
+  /// **'Card hidden from the group'**
+  String get scdGroupHiddenToast;
+
+  /// Snackbar (teacher): card restored to the group.
+  ///
+  /// In en, this message translates to:
+  /// **'Card shown in the group again'**
+  String get scdGroupShownToast;
+
+  /// Section header: cards the viewer hid.
+  ///
+  /// In en, this message translates to:
+  /// **'Hidden cards'**
+  String get scdHiddenSection;
+
+  /// Row title: a hidden card (no personal data shown).
+  ///
+  /// In en, this message translates to:
+  /// **'Hidden card'**
+  String get scdHiddenItem;
+
+  /// Button: restore a hidden card.
+  ///
+  /// In en, this message translates to:
+  /// **'Restore'**
+  String get scdRestore;
+
+  /// Snackbar: card restored.
+  ///
+  /// In en, this message translates to:
+  /// **'Card restored'**
+  String get scdRestored;
 }
 
 class _AppLocalizationsDelegate

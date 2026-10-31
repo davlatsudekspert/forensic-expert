@@ -745,7 +745,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get privacySummary =>
-      'Asosiy kutubxona va kalkulyatorlar oflayn ishlaydi. Qidiruv tarixi, natijalar va ixtiyoriy profilingiz (ism, tashkilot, mutaxassislik) qurilmangizda saqlanadi. Profil ma’lumotlari va malaka hujjatlari faqat professional tasdiqlash xizmati ulangandan keyin ariza yuborsangiz jo‘natiladi; hujjatlar maxfiy saqlanadi va hech qachon ochiq ko‘rsatilmaydi. Ilovada reklama SDK’lari yo‘q. Shaxsiy ma’lumot va ish tafsilotlari AI’ga hech qachon avtomatik yuborilmaydi. Profil rasmingiz (agar qo‘ysangiz) faqat shu qurilmada saqlanadi. Ustoz kartasini (ixtiyoriy) to‘ldirsangiz, undagi ism, ish joyi, matn, havolalar va rasm serverda saqlanadi va faqat sizning guruhlaringiz a’zolariga, siz «Talabalarimga ko‘rsatish»ni yoqqan bo‘lsangina ko‘rinadi; kartani istalgan vaqtda o‘chirishingiz mumkin, hisob o‘chirilsa ham o‘chadi.\n\nTakliflar: hamkasbingiz taklif kodidan foydalansangiz, server faqat ikki hisob orasidagi bog‘lanishni va elektron pochtangizning tuzli xeshini saqlaydi (hisobni qayta ochish orqali suiiste’molning oldini olish uchun). Taklif qilgan kishi faqat umumiy sonlarni ko‘radi — ismingiz, elektron pochtangiz, profilingiz yoki hujjatlaringizni hech qachon ko‘rmaydi. Ilova kontaktlaringizni o‘qimaydi.\n\nTaklif va murojaatlar: «Taklif va murojaatlar» bo‘limi orqali yuborgan xabaringiz, ixtiyoriy skrinshotingiz (faqat JPEG/PNG/WebP, 5 MB gacha), murojaat turi va hisobingiz elektron pochtasi serverimizda faqat sizga javob berish va ilovani yaxshilash uchun saqlanadi. Ularni faqat FORENSIC EXPERT jamoasining vakolatli administratori ko‘radi; boshqa foydalanuvchilar hech qachon ko‘rmaydi. Javobda administrator ismi emas, «FORENSIC EXPERT jamoasi» ko‘rsatiladi. Administrator amallari jurnalga yoziladi (xabar matnisiz). Murojaat yuborishdan oldin roziligingiz so‘raladi. Murojaatlar va skrinshotlar uchinchi shaxslarga berilmaydi, reklama yoki AI o‘qitish uchun ishlatilmaydi. Hisobingizni o‘chirsangiz, murojaatlaringiz, xabarlaringiz va skrinshotlaringiz ham butunlay o‘chiriladi.\n\nEkspert ish daftari: daftardagi yozuvlaringiz (sarlavha, ish belgisi, matn, bog‘langan obyektlar va ko‘chirilgan bayonlar) faqat shu qurilmada saqlanadi. Ular serverga, telemetriyaga, AI’ga yoki boshqa foydalanuvchilarga yuborilmaydi va zaxira nusxaga kiritilmaydi. Yozuvni ulashish yoki nusxalash faqat siz tugmani bossangiz amalga oshadi. Daftarni istalgan vaqtda «Ish daftari → Butun daftarni tozalash» orqali o‘chirishingiz mumkin; ilova o‘chirilsa, yozuvlar ham yo‘qoladi.';
+      'Asosiy kutubxona va kalkulyatorlar oflayn ishlaydi. Qidiruv tarixi, natijalar va ixtiyoriy profilingiz (ism, tashkilot, mutaxassislik) qurilmangizda saqlanadi. Profil ma’lumotlari va malaka hujjatlari faqat professional tasdiqlash xizmati ulangandan keyin ariza yuborsangiz jo‘natiladi; hujjatlar maxfiy saqlanadi va hech qachon ochiq ko‘rsatilmaydi. Ilovada reklama SDK’lari yo‘q. Shaxsiy ma’lumot va ish tafsilotlari AI’ga hech qachon avtomatik yuborilmaydi. Profil rasmingiz (agar qo‘ysangiz) faqat shu qurilmada saqlanadi. Ustoz kartasini (ixtiyoriy) to‘ldirsangiz, undagi ism, ish joyi, matn, havolalar va rasm serverda saqlanadi va faqat sizning guruhlaringiz a’zolariga, siz «Talabalarimga ko‘rsatish»ni yoqqan bo‘lsangina ko‘rinadi; kartani istalgan vaqtda o‘chirishingiz mumkin, hisob o‘chirilsa ham o‘chadi. Talaba kartasini (ixtiyoriy) to‘ldirsangiz, undagi ism yoki taxallus, qisqa matn va rasm serverda saqlanadi va faqat siz a’zo bo‘lgan guruhlarning a’zolari va ustoziga, siz «Guruhdoshlarimga va ustozimga ko‘rsatish»ni yoqqan bo‘lsangina ko‘rinadi; karta ommaviy emas, unda havola yoki aloqa ma’lumoti bo‘lmaydi; nomaqbul kartaga shikoyat qilish va uni yashirish mumkin; kartani istalgan vaqtda o‘chirishingiz mumkin, hisob o‘chirilsa ham o‘chadi.\n\nTakliflar: hamkasbingiz taklif kodidan foydalansangiz, server faqat ikki hisob orasidagi bog‘lanishni va elektron pochtangizning tuzli xeshini saqlaydi (hisobni qayta ochish orqali suiiste’molning oldini olish uchun). Taklif qilgan kishi faqat umumiy sonlarni ko‘radi — ismingiz, elektron pochtangiz, profilingiz yoki hujjatlaringizni hech qachon ko‘rmaydi. Ilova kontaktlaringizni o‘qimaydi.\n\nTaklif va murojaatlar: «Taklif va murojaatlar» bo‘limi orqali yuborgan xabaringiz, ixtiyoriy skrinshotingiz (faqat JPEG/PNG/WebP, 5 MB gacha), murojaat turi va hisobingiz elektron pochtasi serverimizda faqat sizga javob berish va ilovani yaxshilash uchun saqlanadi. Ularni faqat FORENSIC EXPERT jamoasining vakolatli administratori ko‘radi; boshqa foydalanuvchilar hech qachon ko‘rmaydi. Javobda administrator ismi emas, «FORENSIC EXPERT jamoasi» ko‘rsatiladi. Administrator amallari jurnalga yoziladi (xabar matnisiz). Murojaat yuborishdan oldin roziligingiz so‘raladi. Murojaatlar va skrinshotlar uchinchi shaxslarga berilmaydi, reklama yoki AI o‘qitish uchun ishlatilmaydi. Hisobingizni o‘chirsangiz, murojaatlaringiz, xabarlaringiz va skrinshotlaringiz ham butunlay o‘chiriladi.\n\nEkspert ish daftari: daftardagi yozuvlaringiz (sarlavha, ish belgisi, matn, bog‘langan obyektlar va ko‘chirilgan bayonlar) faqat shu qurilmada saqlanadi. Ular serverga, telemetriyaga, AI’ga yoki boshqa foydalanuvchilarga yuborilmaydi va zaxira nusxaga kiritilmaydi. Yozuvni ulashish yoki nusxalash faqat siz tugmani bossangiz amalga oshadi. Daftarni istalgan vaqtda «Ish daftari → Butun daftarni tozalash» orqali o‘chirishingiz mumkin; ilova o‘chirilsa, yozuvlar ham yo‘qoladi.';
 
   @override
   String get aboutBody =>
@@ -11912,4 +11912,214 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get acSecondsPlus => 'Vaqtni 5 soniyaga oshirish';
+
+  @override
+  String get scdTitle => 'Talaba kartam';
+
+  @override
+  String get scdProfileHint =>
+      'Ixtiyoriy: guruhdoshlaringiz va ustozingiz uchun rasm va qisqa tanishtiruv';
+
+  @override
+  String get scdProfileOn => 'Guruhlarimga ko‘rinadi';
+
+  @override
+  String get scdProfileOff => 'Yashirin';
+
+  @override
+  String get scdLead =>
+      'Qisqa va ixtiyoriy tanishtiruv. Uni faqat guruhdoshlaringiz va ustozingiz ko‘radi, va faqat siz quyida yoqsangiz. Faqat ism majburiy — taxallus ham bo‘ladi.';
+
+  @override
+  String get scdLabel => 'Talaba kartasi';
+
+  @override
+  String get scdPhotoSection => 'Rasm';
+
+  @override
+  String get scdPhotoChoose => 'Rasm tanlash';
+
+  @override
+  String get scdPhotoChange => 'Rasmni almashtirish';
+
+  @override
+  String get scdPhotoRemove => 'Rasmni olib tashlash';
+
+  @override
+  String get scdPhotoNote =>
+      'Rasm ixtiyoriy — faqat ism bosh harfi ham bo‘ladi. U profildagi (faqat shu telefonda qoladigan) rasmdan alohida.';
+
+  @override
+  String scdPhotoSemantics(String name) {
+    return '$name rasmi';
+  }
+
+  @override
+  String get scdName => 'Ism yoki taxallus';
+
+  @override
+  String get scdNameHelper => '2–40 ta belgi. Taxallus ham bo‘ladi.';
+
+  @override
+  String get scdBio => 'O‘zim haqimda';
+
+  @override
+  String get scdBioHint =>
+      'Bir-ikki gap: qiziqishlaringiz, o‘qish yo‘nalishingiz';
+
+  @override
+  String get scdNoContact =>
+      'Havola, telefon raqami, elektron pochta, @username va ijtimoiy tarmoq nomini yozmang — bunday matn qabul qilinmaydi. Shaxsiy aloqa ma’lumotini ulashmang.';
+
+  @override
+  String get scdVisibleTitle => 'Guruhdoshlarimga va ustozimga ko‘rsatish';
+
+  @override
+  String get scdVisibleOn => 'Guruhlaringiz a’zolari va ustoziga ko‘rinadi';
+
+  @override
+  String get scdVisibleOff => 'Yashirin — hech kim ko‘rmaydi';
+
+  @override
+  String get scdConsent =>
+      'Yoqsangiz, rasmingiz, ismingiz va qisqa matningiz faqat siz a’zo bo‘lgan guruhlarning boshqa a’zolari va ustoziga ko‘rinadi. Guruhingizdan tashqaridagi hech kim ko‘ra olmaydi, layk va obunachilar yo‘q. Istalgan vaqtda ko‘rsatishni o‘chirishingiz yoki kartani o‘chirishingiz mumkin. Shaxsiy aloqa ma’lumotini ulashmang.';
+
+  @override
+  String get scdPreview => 'Ko‘rish';
+
+  @override
+  String get scdPreviewTitle => 'Kartangizni boshqalar shunday ko‘radi';
+
+  @override
+  String get scdPreviewNote =>
+      'Faqat guruhlaringizdagi odamlar ko‘radi va faqat kalit yoqilgan bo‘lsa.';
+
+  @override
+  String get scdSave => 'Kartani saqlash';
+
+  @override
+  String get scdSaved => 'Karta saqlandi';
+
+  @override
+  String get scdDelete => 'Kartani o‘chirish';
+
+  @override
+  String get scdDeleteTitle => 'Kartani o‘chiramizmi?';
+
+  @override
+  String get scdDeleteBody =>
+      'Kartangiz va rasmi serverdan o‘chiriladi. Buni qaytarib bo‘lmaydi.';
+
+  @override
+  String get scdDeleteConfirm => 'O‘chirish';
+
+  @override
+  String get scdDeleted => 'Karta o‘chirildi';
+
+  @override
+  String get scdCancel => 'Bekor qilish';
+
+  @override
+  String get scdRetry => 'Qayta urinish';
+
+  @override
+  String get scdAdminHidden =>
+      'Kartangiz moderator tomonidan yashirilgan. «Taklif va murojaatlar» orqali bizga yozing.';
+
+  @override
+  String get scdTeacherHidden =>
+      'Ustozingiz kartangizni ba’zi guruhlarda yashirgan. O‘sha guruhlar a’zolari uni ko‘rmaydi.';
+
+  @override
+  String get scdErrName => 'Ism 2–40 ta belgidan iborat bo‘lishi kerak.';
+
+  @override
+  String get scdErrBio => '«O‘zim haqimda» juda uzun (150 ta belgigacha).';
+
+  @override
+  String get scdErrContact =>
+      'Havola, telefon raqami, elektron pochta, @username va ijtimoiy tarmoq nomi taqiqlangan. Ularni olib tashlab, qayta urinib ko‘ring.';
+
+  @override
+  String get scdErrImage =>
+      'Rasmdan foydalanib bo‘lmadi. Boshqasini tanlang (JPEG, PNG yoki WebP).';
+
+  @override
+  String get scdErrImageLarge =>
+      'Rasm siqilgandan keyin ham juda katta. Kichikroq rasm tanlang.';
+
+  @override
+  String get scdErrLimit =>
+      'Yashirilgan kartalar juda ko‘p. Avval ba’zilarini qaytaring.';
+
+  @override
+  String get scdErrForbidden => 'Bu kartaga ruxsatingiz yo‘q.';
+
+  @override
+  String get scdErrNotFound => 'Bu talaba endi guruhda emas.';
+
+  @override
+  String get scdErrOffline => 'Internet yo‘q. Qayta urinib ko‘ring.';
+
+  @override
+  String get scdErrNotConfigured => 'Bu xizmat hali ulanmagan.';
+
+  @override
+  String get scdErrServer =>
+      'Amalni bajarib bo‘lmadi. Keyinroq qayta urinib ko‘ring.';
+
+  @override
+  String get scdErrSignIn => 'Avval hisobingizga kiring.';
+
+  @override
+  String get scdGroupSection => 'Guruhdoshlar';
+
+  @override
+  String scdOpenCard(String name) {
+    return '$name kartasini ochish';
+  }
+
+  @override
+  String get scdSheetReport => 'Kartaga shikoyat qilish';
+
+  @override
+  String get scdSheetHide => 'Bu kartani yashirish';
+
+  @override
+  String get scdSheetHideNote =>
+      'Faqat siz ko‘rmaysiz. Guruh sahifasidagi «Yashirilgan kartalar»dan qaytarishingiz mumkin.';
+
+  @override
+  String get scdHiddenToast => 'Karta yashirildi';
+
+  @override
+  String get scdSheetGroupHide => 'Guruhdan yashirish';
+
+  @override
+  String get scdSheetGroupUnhide => 'Guruhga qaytarish';
+
+  @override
+  String get scdSheetGroupNote =>
+      'Ustoz sifatida nomaqbul kartani guruhdan yashira olasiz. Talaba uni qayta yoqa olmaydi.';
+
+  @override
+  String get scdGroupHiddenLabel => 'Guruhdan yashirilgan';
+
+  @override
+  String get scdGroupHiddenToast => 'Karta guruhdan yashirildi';
+
+  @override
+  String get scdGroupShownToast => 'Karta guruhga qaytarildi';
+
+  @override
+  String get scdHiddenSection => 'Yashirilgan kartalar';
+
+  @override
+  String get scdHiddenItem => 'Yashirilgan karta';
+
+  @override
+  String get scdRestore => 'Qaytarish';
+
+  @override
+  String get scdRestored => 'Karta qaytarildi';
 }

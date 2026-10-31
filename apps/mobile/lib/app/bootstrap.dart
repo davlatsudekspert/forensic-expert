@@ -38,6 +38,7 @@ import '../data/remote/supabase_publications.dart';
 import '../data/remote/supabase_qa.dart';
 import '../data/remote/supabase_referral.dart';
 import '../data/remote/supabase_rest.dart';
+import '../data/remote/supabase_student_card.dart';
 import '../data/remote/supabase_support.dart';
 import '../data/remote/supabase_teacher_card.dart';
 import '../data/store/iap_store_service.dart';
@@ -58,6 +59,7 @@ import 'providers.dart';
 import 'publications.dart';
 import 'qa.dart';
 import 'referral.dart';
+import 'student_card.dart';
 import 'study.dart';
 import 'support.dart';
 import 'teacher_card.dart';
@@ -188,6 +190,9 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
           ),
           teacherCardServiceProvider.overrideWithValue(
             SupabaseTeacherCardService(config: supabase, auth: auth),
+          ),
+          studentCardServiceProvider.overrideWithValue(
+            SupabaseStudentCardService(config: supabase, auth: auth),
           ),
           lessonsServiceProvider.overrideWithValue(
             SupabaseLessonsService(config: supabase, auth: auth),

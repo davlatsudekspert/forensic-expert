@@ -151,7 +151,12 @@ insert into matrix_tables values
  ('public.trial_devices',          'user_id',      false, false, 'plan'),
  ('private.plan_events',           null,           false, false, 'action'),
  -- «Ustoz kartasi» (20261031020000): no grant, only teacher_card_* RPCs.
- ('public.teacher_cards',          'user_id',      false, false, 'display_name');
+ ('public.teacher_cards',          'user_id',      false, false, 'display_name'),
+ -- «Talaba kartasi» (20261031040000): no grant, only student_card_* RPCs.
+ ('public.student_cards',          'user_id',      false, false, 'display_name'),
+ ('public.student_card_hides',     'viewer_id',    false, false, 'student_id'),
+ ('public.student_card_group_hides', null,         false, false, 'reason'),
+ ('private.student_card_audit',    null,           false, false, 'action');
 grant select on matrix_tables to anon, authenticated;
 
 -- Fix the column used for the no-op UPDATE to a real column of each table.
@@ -373,6 +378,17 @@ values ('60000000-0000-0000-0000-0000000000d1'::uuid,
 insert into teacher_cards (user_id, display_name, workplace, socials, visible, consent_at)
 values ('50000000-0000-0000-0000-00000000000a', 'Matritsa ustoz', 'Matritsa markaz',
         '{"telegram":"https://t.me/matrix"}'::jsonb, true, now());
+-- «Talaba kartasi» (20261031040000): b's card, a hid it for self and for the group.
+insert into student_cards (user_id, display_name, bio, visible, consent_at)
+values ('50000000-0000-0000-0000-00000000000b', 'Matritsa talaba', 'Matritsa bio', true, now());
+insert into student_card_hides (viewer_id, student_id)
+values ('50000000-0000-0000-0000-00000000000a', '50000000-0000-0000-0000-00000000000b');
+insert into student_card_group_hides (group_id, student_id, hidden_by, reason)
+values ('60000000-0000-0000-0000-0000000000d1'::uuid, '50000000-0000-0000-0000-00000000000b',
+        '50000000-0000-0000-0000-00000000000a', 'matritsa');
+insert into private.student_card_audit (actor_id, action, group_id, student_id, reason)
+values ('50000000-0000-0000-0000-00000000000a', 'GROUP_HIDE', '60000000-0000-0000-0000-0000000000d1'::uuid,
+        '50000000-0000-0000-0000-00000000000b', 'matritsa');
 insert into class_assignments (id, group_id, topic_id, question_count)
 values ('60000000-0000-0000-0000-0000000000d2'::uuid,
         '60000000-0000-0000-0000-0000000000d1'::uuid, 'matrix', 1);

@@ -741,7 +741,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get privacySummary =>
-      'The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically. Your profile photo (if you set one) stays on this device only. If you fill in the optional teacher card, its name, workplace, text, links and photo are stored on the server and visible only to members of your groups, and only if you turned on «Show to my students»; you can delete the card at any time, and it is deleted with your account.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.\n\nSuggestions & support: the message you send in «Suggestions & support», an optional screenshot (JPEG/PNG/WebP only, up to 5 MB), the request type and your account e-mail are stored on our server only to reply to you and improve the app. Only an authorised FORENSIC EXPERT team administrator can see them; other users never can. Replies are signed «FORENSIC EXPERT team», not with an administrator\'s name. Administrator actions are logged (without message text). Your consent is requested before a request is sent. Requests and screenshots are not shared with third parties and are not used for advertising or AI training. If you delete your account, your requests, messages and screenshots are deleted permanently.\n\nExpert casebook: your entries (title, case reference, text, linked items and copied statements) are stored only on this device. They are not sent to a server, to telemetry, to AI or to other users, and are not included in backups. An entry is shared or copied only when you press the button. You can delete the casebook at any time via “Casebook → Clear entire casebook”; if you delete the app, the entries are gone too.';
+      'The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically. Your profile photo (if you set one) stays on this device only. If you fill in the optional teacher card, its name, workplace, text, links and photo are stored on the server and visible only to members of your groups, and only if you turned on «Show to my students»; you can delete the card at any time, and it is deleted with your account. If you fill in the optional student card, its name or nickname, short text and photo are stored on the server and visible only to the members and the teacher of the groups you belong to, and only if you turned on «Show to my groupmates and teacher»; the card is not public and contains no links or contact details; an inappropriate card can be reported and hidden; you can delete the card at any time, and it is deleted with your account.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.\n\nSuggestions & support: the message you send in «Suggestions & support», an optional screenshot (JPEG/PNG/WebP only, up to 5 MB), the request type and your account e-mail are stored on our server only to reply to you and improve the app. Only an authorised FORENSIC EXPERT team administrator can see them; other users never can. Replies are signed «FORENSIC EXPERT team», not with an administrator\'s name. Administrator actions are logged (without message text). Your consent is requested before a request is sent. Requests and screenshots are not shared with third parties and are not used for advertising or AI training. If you delete your account, your requests, messages and screenshots are deleted permanently.\n\nExpert casebook: your entries (title, case reference, text, linked items and copied statements) are stored only on this device. They are not sent to a server, to telemetry, to AI or to other users, and are not included in backups. An entry is shared or copied only when you press the button. You can delete the casebook at any time via “Casebook → Clear entire casebook”; if you delete the app, the entries are gone too.';
 
   @override
   String get aboutBody =>
@@ -11982,4 +11982,213 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get acSecondsPlus => 'Increase time by 5 seconds';
+
+  @override
+  String get scdTitle => 'My student card';
+
+  @override
+  String get scdProfileHint =>
+      'Optional: photo and a short intro for your groupmates and teacher';
+
+  @override
+  String get scdProfileOn => 'Visible to my groups';
+
+  @override
+  String get scdProfileOff => 'Hidden';
+
+  @override
+  String get scdLead =>
+      'A short, optional introduction. Only your groupmates and your teacher can see it, and only if you turn it on below. Only a name is required — a nickname is fine.';
+
+  @override
+  String get scdLabel => 'Student card';
+
+  @override
+  String get scdPhotoSection => 'Photo';
+
+  @override
+  String get scdPhotoChoose => 'Choose photo';
+
+  @override
+  String get scdPhotoChange => 'Change photo';
+
+  @override
+  String get scdPhotoRemove => 'Remove photo';
+
+  @override
+  String get scdPhotoNote =>
+      'The photo is optional — you can use only your initial. It is separate from your profile picture, which stays on this phone.';
+
+  @override
+  String scdPhotoSemantics(String name) {
+    return 'Photo of $name';
+  }
+
+  @override
+  String get scdName => 'Name or nickname';
+
+  @override
+  String get scdNameHelper => '2–40 characters. A nickname is fine.';
+
+  @override
+  String get scdBio => 'About me';
+
+  @override
+  String get scdBioHint => 'One or two sentences: interests, field of study';
+
+  @override
+  String get scdNoContact =>
+      'Do not write links, phone numbers, e-mail, @usernames or social network names — such text is rejected. Do not share personal contact details.';
+
+  @override
+  String get scdVisibleTitle => 'Show to my groupmates and teacher';
+
+  @override
+  String get scdVisibleOn =>
+      'Visible to members and the teacher of your groups';
+
+  @override
+  String get scdVisibleOff => 'Hidden — nobody sees it';
+
+  @override
+  String get scdConsent =>
+      'If you turn this on, your photo, name and short text will be visible only to the other members and the teacher of the groups you belong to. Nobody outside your groups can see it, and there are no likes or followers. You can turn it off or delete the card at any time. Do not share personal contact details.';
+
+  @override
+  String get scdPreview => 'Preview';
+
+  @override
+  String get scdPreviewTitle => 'How others see your card';
+
+  @override
+  String get scdPreviewNote =>
+      'Only people in your groups can see it, and only when the switch is on.';
+
+  @override
+  String get scdSave => 'Save card';
+
+  @override
+  String get scdSaved => 'Card saved';
+
+  @override
+  String get scdDelete => 'Delete card';
+
+  @override
+  String get scdDeleteTitle => 'Delete the card?';
+
+  @override
+  String get scdDeleteBody =>
+      'Your card and its photo will be removed from the server. This cannot be undone.';
+
+  @override
+  String get scdDeleteConfirm => 'Delete';
+
+  @override
+  String get scdDeleted => 'Card deleted';
+
+  @override
+  String get scdCancel => 'Cancel';
+
+  @override
+  String get scdRetry => 'Try again';
+
+  @override
+  String get scdAdminHidden =>
+      'Your card was hidden by a moderator. Write to us via «Suggestions & support».';
+
+  @override
+  String get scdTeacherHidden =>
+      'Your teacher hid your card in some groups. Members of those groups cannot see it.';
+
+  @override
+  String get scdErrName => 'The name must be 2–40 characters.';
+
+  @override
+  String get scdErrBio => '«About me» is too long (up to 150 characters).';
+
+  @override
+  String get scdErrContact =>
+      'Links, phone numbers, e-mail, @usernames and social network names are not allowed. Remove them and try again.';
+
+  @override
+  String get scdErrImage =>
+      'The image could not be used. Choose another one (JPEG, PNG or WebP).';
+
+  @override
+  String get scdErrImageLarge =>
+      'The image is too large even after compression. Choose a smaller one.';
+
+  @override
+  String get scdErrLimit => 'Too many hidden cards. Restore some first.';
+
+  @override
+  String get scdErrForbidden => 'You do not have access to this card.';
+
+  @override
+  String get scdErrNotFound => 'This student is no longer in the group.';
+
+  @override
+  String get scdErrOffline => 'No internet connection. Try again.';
+
+  @override
+  String get scdErrNotConfigured => 'This service is not connected yet.';
+
+  @override
+  String get scdErrServer =>
+      'Could not complete the action. Please try again later.';
+
+  @override
+  String get scdErrSignIn => 'Sign in to your account first.';
+
+  @override
+  String get scdGroupSection => 'Groupmates';
+
+  @override
+  String scdOpenCard(String name) {
+    return 'Open $name\'s card';
+  }
+
+  @override
+  String get scdSheetReport => 'Report this card';
+
+  @override
+  String get scdSheetHide => 'Hide this card for me';
+
+  @override
+  String get scdSheetHideNote =>
+      'Only you will stop seeing it. You can restore it under «Hidden cards» on the group page.';
+
+  @override
+  String get scdHiddenToast => 'Card hidden';
+
+  @override
+  String get scdSheetGroupHide => 'Hide from this group';
+
+  @override
+  String get scdSheetGroupUnhide => 'Show in this group again';
+
+  @override
+  String get scdSheetGroupNote =>
+      'As the teacher you can hide an inappropriate card from the group. The student cannot turn it back on.';
+
+  @override
+  String get scdGroupHiddenLabel => 'Hidden from the group';
+
+  @override
+  String get scdGroupHiddenToast => 'Card hidden from the group';
+
+  @override
+  String get scdGroupShownToast => 'Card shown in the group again';
+
+  @override
+  String get scdHiddenSection => 'Hidden cards';
+
+  @override
+  String get scdHiddenItem => 'Hidden card';
+
+  @override
+  String get scdRestore => 'Restore';
+
+  @override
+  String get scdRestored => 'Card restored';
 }

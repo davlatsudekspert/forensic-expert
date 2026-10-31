@@ -182,6 +182,9 @@ abstract final class Routes {
   /// Ustoz o‘z kartasini tahrirlaydi (Profil → «Ustoz kartam»).
   static const teacherCard = '/profile/teacher-card';
 
+  /// Talaba o‘z kartasini tahrirlaydi (Profil → «Talaba kartam»).
+  static const studentCard = '/profile/student-card';
+
   /// «Taklif va murojaatlar» (foydalanuvchi).
   static const support = '/profile/support';
   static const supportNew = '/profile/support/new';
