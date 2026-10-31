@@ -57,11 +57,10 @@ StudyQuestion? pickDailyQuestion({
 }
 
 /// Til bo‘yicha bugungi savol (talaba Home’i).
-final dailyQuestionProvider = Provider.autoDispose
-    .family<StudyQuestion?, String>(
-      (ref, lang) => pickDailyQuestion(
-        catalog: ref.watch(studyCatalogProvider),
-        lang: lang,
-        today: ref.watch(workbenchClockProvider)(),
-      ),
-    );
+final dailyQuestionProvider = Provider.family<StudyQuestion?, String>(
+  (ref, lang) => pickDailyQuestion(
+    catalog: ref.watch(studyCatalogProvider),
+    lang: lang,
+    today: ref.watch(workbenchClockProvider)(),
+  ),
+);

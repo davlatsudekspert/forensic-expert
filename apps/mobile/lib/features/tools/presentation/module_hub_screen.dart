@@ -222,35 +222,38 @@ class _HubLink extends StatelessWidget {
   Widget build(BuildContext context) {
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
-    return Card(
-      margin: const EdgeInsets.only(bottom: FeSpace.xs),
-      child: ListTile(
-        leading: Icon(icon, color: c.accent),
-        title: Text(label),
-        trailing: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              '$count',
-              style: FeThemeBuilder.numeric(
-                t.titleSmall!.copyWith(color: c.textSecondary),
-              ),
-            ),
-            const SizedBox(width: FeSpace.xs),
-            if (locked) ...[
-              ProLockBadge(
-                key: Key(
-                  key is ValueKey<String>
-                      ? '${(key! as ValueKey<String>).value}.lock'
-                      : 'moduleHub.lock',
+    return Padding(
+      padding: const EdgeInsets.only(bottom: FeSpace.xs),
+      child: FeCard(
+        padding: EdgeInsets.zero,
+        child: ListTile(
+          leading: Icon(icon, color: c.accent),
+          title: Text(label),
+          trailing: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                '$count',
+                style: FeThemeBuilder.numeric(
+                  t.titleSmall!.copyWith(color: c.textSecondary),
                 ),
               ),
               const SizedBox(width: FeSpace.xs),
+              if (locked) ...[
+                ProLockBadge(
+                  key: Key(
+                    key is ValueKey<String>
+                        ? '${(key! as ValueKey<String>).value}.lock'
+                        : 'moduleHub.lock',
+                  ),
+                ),
+                const SizedBox(width: FeSpace.xs),
+              ],
+              const Icon(Icons.chevron_right),
             ],
-            const Icon(Icons.chevron_right),
-          ],
+          ),
+          onTap: onTap,
         ),
-        onTap: onTap,
       ),
     );
   }

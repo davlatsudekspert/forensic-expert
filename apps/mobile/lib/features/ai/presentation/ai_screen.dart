@@ -977,9 +977,9 @@ class _AiHeader extends ConsumerWidget {
         gradient: const LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [Color(0xFF0F1E3D), Color(0xFF123A4A)],
+          colors: [Color(0xFF0F1E3D), Color(0xFF17305A)],
         ),
-        borderRadius: BorderRadius.circular(FeRadius.lg),
+        borderRadius: BorderRadius.circular(FeRadius.hero),
       ),
       child: Padding(
         padding: const EdgeInsets.all(FeSpace.md),
@@ -990,14 +990,14 @@ class _AiHeader extends ConsumerWidget {
               children: [
                 const DecoratedBox(
                   decoration: BoxDecoration(
-                    color: Color(0x264CC9D6),
+                    color: Color(0x26D0B076),
                     shape: BoxShape.circle,
                   ),
                   child: Padding(
                     padding: EdgeInsets.all(10),
                     child: Icon(
                       Icons.auto_awesome_outlined,
-                      color: Color(0xFF7FDDE6),
+                      color: FeBrand.goldOnDark,
                       size: 22,
                     ),
                   ),

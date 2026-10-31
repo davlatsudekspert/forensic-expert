@@ -301,10 +301,10 @@ abstract final class FeShadow {
             offset: Offset(0, 1),
           ),
           BoxShadow(
-            color: Color(0x0B1A212C),
-            blurRadius: 28,
-            spreadRadius: -6,
-            offset: Offset(0, 10),
+            color: Color(0x081A212C),
+            blurRadius: 24,
+            spreadRadius: -8,
+            offset: Offset(0, 8),
           ),
         ];
 

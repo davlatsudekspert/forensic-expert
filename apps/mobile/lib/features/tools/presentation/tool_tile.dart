@@ -33,70 +33,65 @@ class ToolTile extends ConsumerWidget {
         (ProCalculators.isPro(tool.id) &&
             !proGate(ref, ProFeature.proCalculators)) ||
         proSectionLocked(ref, ProFeature.proTools);
-    return Card(
+    return FeCard(
       key: Key('tool.${tool.id}'),
-      clipBehavior: Clip.antiAlias,
-      child: InkWell(
-        onTap: () => context.push(Routes.tool(tool.id)),
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(
-            FeSpace.md,
-            FeSpace.sm,
-            FeSpace.xxs,
-            FeSpace.sm,
+      onTap: () => context.push(Routes.tool(tool.id)),
+      padding: const EdgeInsets.fromLTRB(
+        FeSpace.md,
+        FeSpace.sm,
+        FeSpace.xxs,
+        FeSpace.sm,
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 2),
+            child: Icon(
+              locked
+                  ? Icons.lock_outline
+                  : tool.isAvailable
+                  ? Icons.calculate_outlined
+                  : Icons.schedule_outlined,
+              color: tool.isAvailable ? c.accent : c.textSecondary,
+            ),
           ),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(top: 2),
-                child: Icon(
-                  locked
-                      ? Icons.lock_outline
-                      : tool.isAvailable
-                      ? Icons.calculate_outlined
-                      : Icons.schedule_outlined,
-                  color: tool.isAvailable ? c.accent : c.textSecondary,
+          const SizedBox(width: FeSpace.sm),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(l.toolName(tool), style: t.titleSmall),
+                const SizedBox(height: 2),
+                Text(
+                  l.toolDescription(tool),
+                  style: t.bodySmall?.copyWith(color: c.textSecondary),
                 ),
-              ),
-              const SizedBox(width: FeSpace.sm),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(l.toolName(tool), style: t.titleSmall),
-                    const SizedBox(height: 2),
-                    Text(
-                      l.toolDescription(tool),
-                      style: t.bodySmall?.copyWith(color: c.textSecondary),
-                    ),
-                    if (!tool.isAvailable) ...[
-                      const SizedBox(height: FeSpace.xs),
-                      Wrap(
-                        spacing: FeSpace.xs,
-                        runSpacing: FeSpace.xxs,
-                        children: [
-                          // Modul/formula holati har plitkada takrorlanmaydi —
-                          // ro‘yxat ustida bitta [ToolsReviewNote]; to‘liq
-                          // holat vosita sahifasida.
-                          if (!tool.isAvailable)
-                            StatusChip(
-                              icon: Icons.schedule_outlined,
-                              label: tool.plannedRelease == null
-                                  ? l.toolStatusPlanned
-                                  : '${l.toolStatusPlanned} · ${tool.plannedRelease}',
-                              color: c.textSecondary,
-                            ),
-                        ],
-                      ),
+                if (!tool.isAvailable) ...[
+                  const SizedBox(height: FeSpace.xs),
+                  Wrap(
+                    spacing: FeSpace.xs,
+                    runSpacing: FeSpace.xxs,
+                    children: [
+                      // Modul/formula holati har plitkada takrorlanmaydi —
+                      // ro‘yxat ustida bitta [ToolsReviewNote]; to‘liq
+                      // holat vosita sahifasida.
+                      if (!tool.isAvailable)
+                        StatusChip(
+                          icon: Icons.schedule_outlined,
+                          label: tool.plannedRelease == null
+                              ? l.toolStatusPlanned
+                              : '${l.toolStatusPlanned} · ${tool.plannedRelease}',
+                          color: c.textSecondary,
+                        ),
                     ],
-                  ],
-                ),
-              ),
-              if (showFavorite) FavoriteButton(id: tool.id),
-            ],
+                  ),
+                ],
+              ],
+            ),
           ),
-        ),
+          if (showFavorite) FavoriteButton(id: tool.id),
+        ],
       ),
     );
   }

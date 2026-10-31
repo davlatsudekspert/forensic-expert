@@ -756,7 +756,7 @@ class _IdentityCard extends ConsumerWidget {
       padding: const EdgeInsets.only(top: FeSpace.sm),
       child: Material(
         key: const Key('profile.identityCard'),
-        borderRadius: BorderRadius.circular(FeRadius.lg),
+        borderRadius: BorderRadius.circular(FeRadius.hero),
         clipBehavior: Clip.antiAlias,
         child: Ink(
           decoration: const BoxDecoration(
