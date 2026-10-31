@@ -6,6 +6,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../app/class_groups.dart';
 import '../../../app/class_quiz.dart';
+import '../../../app/lessons.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -83,10 +84,22 @@ class _GroupTestState extends ConsumerState<GroupTestScreen> {
   bool _submitting = false;
   GroupClock? _clock;
 
+  late final LessonScreenGuard _guard;
+
   @override
   void initState() {
     super.initState();
+    // Test yechilayotganda skrinshot/yozib olish bloklanadi (Android FLAG_SECURE;
+    // iOS’da ishonchli usul yo‘q). Ustozning ko‘rib chiqishi va mashq — yo‘q.
+    _guard = ref.read(lessonScreenGuardProvider);
+    if (!widget.local) unawaited(_guard.secure());
     WidgetsBinding.instance.addPostFrameCallback((_) => unawaited(_load()));
+  }
+
+  @override
+  void dispose() {
+    if (!widget.local) unawaited(_guard.release());
+    super.dispose();
   }
 
   Future<void> _load() async {

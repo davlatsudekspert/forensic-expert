@@ -1,8 +1,11 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../app/class_quiz.dart';
+import '../../../app/lessons.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -29,8 +32,25 @@ class ClassPlayScreen extends ConsumerStatefulWidget {
 
 class _ClassPlayScreenState extends ConsumerState<ClassPlayScreen> {
   ClassStudentState? _last;
+  late final LessonScreenGuard _guard;
 
   String get sessionId => widget.sessionId;
+
+  @override
+  void initState() {
+    super.initState();
+    // Talaba test yechayotganda skrinshot/yozib olish bloklanadi (Android
+    // FLAG_SECURE; iOS’da ishonchli usul yo‘q). Ustoz ekrani bloklanmaydi:
+    // u proyektorga uzatiladi.
+    _guard = ref.read(lessonScreenGuardProvider);
+    unawaited(_guard.secure());
+  }
+
+  @override
+  void dispose() {
+    unawaited(_guard.release());
+    super.dispose();
+  }
 
   void _exit(BuildContext context, WidgetRef ref) {
     ref.read(classActiveJoinProvider.notifier).set(null);
