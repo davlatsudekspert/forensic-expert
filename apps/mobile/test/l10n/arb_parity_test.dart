@@ -29,6 +29,14 @@ void main() {
     // Reaktiv retsepti: SI birligi «g» o‘zbekchada ham aynan shunday.
     'reagentUnitG',
     'languageOptionSemantics',
+    // Ustoz kartasi (2026-10-31): tarmoq brend nomlari va namunaviy havola.
+    'tcNetTelegram',
+    'tcNetInstagram',
+    'tcNetYoutube',
+    'tcNetFacebook',
+    'tcNetLinkedin',
+    'tcNetTiktok',
+    'tcSocialHintWeb',
     'moduleAi',
     'navAi',
     // PHASE 2: brend/texnik nomlar va xalqaro atamalar.

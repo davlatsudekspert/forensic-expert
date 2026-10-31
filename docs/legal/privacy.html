@@ -34,7 +34,7 @@
 <div class="wrap">
 
 <h1>FORENSIC EXPERT — Maxfiylik siyosati</h1>
-<p class="meta">Oxirgi yangilanish: 2026-10-25 · Ilova paketi: <code>uz.forensicexpert.forensic_expert</code></p>
+<p class="meta">Oxirgi yangilanish: 2026-10-31 · Ilova paketi: <code>uz.forensicexpert.forensic_expert</code></p>
 
 <nav>
   <a href="#uz">O‘zbekcha</a>
@@ -56,6 +56,7 @@ va o‘quv ilovasi. Bog‘lanish: <a href="mailto:davlatsudekspert@gmail.com">da
 <tr><td>Professional profil (ism, lavozim, tashkilot, mutaxassislik, tajriba)</td><td>Siz to‘ldirsangiz</td><td>Professional maqomni tasdiqlash</td></tr>
 <tr><td>Malaka hujjatlari (diplom, sertifikat va b.)</td><td>Siz yuklasangiz</td><td>Maqomni qo‘lda tekshirish</td></tr>
 <tr><td>Murojaat xabarlari va ixtiyoriy skrinshot</td><td>«Taklif va murojaatlar» orqali yuborsangiz</td><td>Sizga javob berish</td></tr>
+<tr><td>Ustoz kartasi: ism, ish joyi, qisqa matn, tarmoq havolalari, rasm va logotip</td><td>Faqat ustoz roli bor foydalanuvchi o‘zi to‘ldirsa (ixtiyoriy)</td><td>Ustozning guruh a’zolariga o‘zini tanishtirishi</td></tr>
 <tr><td>Taklif (referal) bog‘lanishi va pochtaning tuzli xeshi</td><td>Taklif kodidan foydalansangiz</td><td>Suiiste’molning oldini olish</td></tr>
 <tr><td>AI yordamchiga yuborgan savolingiz</td><td>Savol yozsangiz</td><td>Javobni shakllantirish</td></tr>
 </table>
@@ -89,6 +90,7 @@ uzatish TLS bilan shifrlanadi.</p>
   <li>Profilingiz va hujjatlaringizni <strong>faqat vakolatli tekshiruvchi</strong> ko‘radi. Hujjatlar ochiq ko‘rsatilmaydi va ochiq havolasi yo‘q.</li>
   <li>Murojaatingizni faqat FORENSIC EXPERT jamoasining vakolatli administratori ko‘radi; javobda administrator ismi emas, jamoa nomi ko‘rsatiladi.</li>
   <li>Sizni taklif qilgan hamkasbingiz faqat umumiy sonlarni ko‘radi — ismingizni, pochtangizni, profilingiz yoki hujjatlaringizni <strong>hech qachon</strong> ko‘rmaydi.</li>
+  <li>Ustoz kartasini (7b-bo‘lim) faqat shu ustozning guruhlari a’zolari ko‘radi, ustoz «Talabalarimga ko‘rsatish»ni yoqqan bo‘lsagina.</li>
   <li>Boshqa foydalanuvchilar sizning ma’lumotingizni ko‘ra olmaydi — bu baza darajasida cheklangan.</li>
 </ul>
 <p>Ma’lumotlaringizni sotmaymiz, reklama uchun ishlatmaymiz va AI modellarini
@@ -118,10 +120,25 @@ bajaradi; unga faqat hujjat tasviri va tanlagan rolingiz yuboriladi.</p>
 dvigateliga faqat post matni yuboriladi — muallif identifikatori yoki
 elektron pochtasi emas. Tarjima «Mashina tarjimasi» deb belgilanadi.</p>
 
+<h3>7b. Ustoz kartasi</h3>
+<p>Ustoz roli bor foydalanuvchi <em>Profil → Ustoz kartam</em> bo‘limida
+ixtiyoriy ravishda o‘z kartasini to‘ldirishi mumkin: ism-familiya (majburiy),
+ish joyi va uning logotipi, 300 belgigacha «o‘zim haqimda» matni, ijtimoiy
+tarmoq va vebsayt havolalari (faqat https va tarmoqning o‘z manzili) hamda
+rasm (1 MB gacha; JPEG, PNG yoki WebP). Bu ma’lumot serverda saqlanadi.</p>
+<ul>
+  <li><strong>Kim ko‘radi:</strong> faqat shu ustozning guruhlari a’zolari (talabalar) — guruh sahifasida. Boshqa foydalanuvchilar, kirmaganlar va boshqa ustozlar ko‘rmaydi. Talaba guruhdan chiqsa, kartani ko‘rishdan to‘xtaydi.</li>
+  <li><strong>Standart holat — yashirin:</strong> karta «Talabalarimga ko‘rsatish» kaliti yoqilmaguncha hech kimga ko‘rinmaydi; kalit rozilik matni bilan alohida yoqiladi va istalgan vaqtda o‘chiriladi.</li>
+  <li><strong>Rasm:</strong> profildagi (faqat telefonda saqlanadigan) rasmdan alohida; xususiy omborda saqlanadi, ochiq havolasi yo‘q.</li>
+  <li><strong>Havolalar:</strong> ilova ularni faqat siz yoki talaba belgini bosganda tashqi ilovada ochadi; ilova tarmoqlarning hech qanday kuzatuv kodini o‘z ichiga olmaydi.</li>
+  <li><strong>Shikoyat:</strong> talaba kartadan «Shikoyat qilish» orqali murojaat yuborishi mumkin; administrator nomaqbul kartani yashirishi mumkin (amal jurnalga yoziladi).</li>
+  <li><strong>O‘chirish:</strong> kartani istalgan vaqtda <em>Ustoz kartam → Kartani o‘chirish</em> bilan, yoki hisobni o‘chirish bilan to‘liq (rasmlari bilan) o‘chirasiz.</li>
+</ul>
+
 <h3>8. Saqlash muddati va o‘chirish</h3>
 <p>Hisobingizni ilovaning o‘zidan (<em>Profil → Hisobni o‘chirish</em>) butunlay
 o‘chirishingiz mumkin. Hisob o‘chirilganda profilingiz, hujjatlaringiz,
-murojaatlaringiz va skrinshotlaringiz ham o‘chiriladi. Administrator
+murojaatlaringiz, skrinshotlaringiz, ustoz kartangiz va uning rasmlari ham o‘chiriladi. Administrator
 amallarining jurnali xabar matnisiz saqlanib qolishi mumkin.</p>
 
 <h3>9. Huquqlaringiz</h3>
@@ -175,6 +192,7 @@ muvofiq bekor qilinadi. Akkauntni ilova ichidan o‘chirish mumkin. Savollar:
 <tr><td>Профессиональный профиль (имя, должность, организация, специальность, стаж)</td><td>Если вы его заполните</td><td>Подтверждение профессионального статуса</td></tr>
 <tr><td>Документы о квалификации</td><td>Если вы их загрузите</td><td>Ручная проверка статуса</td></tr>
 <tr><td>Сообщения обращений и необязательный скриншот</td><td>При отправке через «Предложения и обращения»</td><td>Ответ вам</td></tr>
+<tr><td>Карточка преподавателя: имя, место работы, короткий текст, ссылки на соцсети, фото и логотип</td><td>Только если пользователь с ролью преподавателя сам заполнит (необязательно)</td><td>Знакомство преподавателя с участниками его групп</td></tr>
 <tr><td>Реферальная связь и солёный хеш почты</td><td>При использовании кода приглашения</td><td>Предотвращение злоупотреблений</td></tr>
 <tr><td>Ваш вопрос ИИ-помощнику</td><td>При отправке вопроса</td><td>Формирование ответа</td></tr>
 </table>
@@ -208,6 +226,7 @@ muvofiq bekor qilinadi. Akkauntni ilova ichidan o‘chirish mumkin. Savollar:
   <li>Ваш профиль и документы видит <strong>только уполномоченный проверяющий</strong>. Документы не показываются публично и не имеют открытых ссылок.</li>
   <li>Ваше обращение видит только уполномоченный администратор команды FORENSIC EXPERT; в ответе указывается название команды, а не имя администратора.</li>
   <li>Пригласивший вас коллега видит только общие счётчики — ваше имя, почту, профиль и документы он <strong>никогда</strong> не видит.</li>
+  <li>Карточку преподавателя (раздел 7b) видят только участники групп этого преподавателя, и только если преподаватель включил «Показывать моим студентам».</li>
   <li>Другие пользователи не могут видеть ваши данные — это ограничено на уровне базы данных.</li>
 </ul>
 <p>Мы не продаём ваши данные, не используем их для рекламы и не передаём для
@@ -238,10 +257,25 @@ muvofiq bekor qilinadi. Akkauntni ilova ichidan o‘chirish mumkin. Savollar:
 публикации — не идентификатор автора и не его адрес электронной почты.
 Перевод помечается как «Машинный перевод».</p>
 
+<h3>7b. Карточка преподавателя</h3>
+<p>Пользователь с ролью преподавателя может добровольно заполнить карточку в
+разделе <em>Профиль → Моя карточка преподавателя</em>: имя и фамилия
+(обязательно), место работы и его логотип, текст «о себе» до 300 символов,
+ссылки на соцсети и сайт (только https и собственный адрес сети) и фото (до
+1 МБ; JPEG, PNG или WebP). Эти данные хранятся на сервере.</p>
+<ul>
+  <li><strong>Кто видит:</strong> только участники групп этого преподавателя (студенты) — на странице группы. Другие пользователи, гости и другие преподаватели не видят. Если студент выходит из группы, он перестаёт видеть карточку.</li>
+  <li><strong>По умолчанию скрыта:</strong> карточка никому не видна, пока не включён переключатель «Показывать моим студентам»; он включается отдельно, с текстом согласия, и выключается в любой момент.</li>
+  <li><strong>Фото:</strong> отдельно от фото профиля (оно остаётся только на телефоне); хранится в закрытом хранилище, публичной ссылки нет.</li>
+  <li><strong>Ссылки:</strong> приложение открывает их во внешнем приложении только когда вы или студент нажимаете на значок; приложение не содержит трекеров соцсетей.</li>
+  <li><strong>Жалоба:</strong> студент может пожаловаться на карточку («Пожаловаться на карточку»); администратор может скрыть недопустимую карточку (действие записывается в журнал).</li>
+  <li><strong>Удаление:</strong> карточку можно удалить в любой момент (<em>Моя карточка преподавателя → Удалить карточку</em>) или вместе с аккаунтом — полностью, с фото.</li>
+</ul>
+
 <h3>8. Срок хранения и удаление</h3>
 <p>Вы можете полностью удалить учётную запись из самого приложения
 (<em>Профиль → Удалить учётную запись</em>). При удалении стираются профиль,
-документы, обращения и скриншоты. Журнал действий администратора может
+документы, обращения, скриншоты, карточка преподавателя и её фото. Журнал действий администратора может
 сохраняться без текста сообщений.</p>
 
 <h3>9. Ваши права</h3>
@@ -297,6 +331,7 @@ practitioners. Contact:
 <tr><td>Professional profile (name, position, organisation, specialty, experience)</td><td>If you fill it in</td><td>Verification of professional status</td></tr>
 <tr><td>Qualification documents</td><td>If you upload them</td><td>Manual review of status</td></tr>
 <tr><td>Support messages and an optional screenshot</td><td>When you use the support form</td><td>To reply to you</td></tr>
+<tr><td>Teacher card: name, workplace, short text, social links, photo and logo</td><td>Only if a user with the teacher role fills it in (optional)</td><td>Lets a teacher introduce themselves to their group members</td></tr>
 <tr><td>Referral link and a salted hash of your email</td><td>If you use an invite code</td><td>Abuse prevention</td></tr>
 <tr><td>Your question to the AI assistant</td><td>When you send a question</td><td>To produce an answer</td></tr>
 </table>
@@ -330,6 +365,7 @@ encrypted with TLS.</p>
   <li>Your profile and documents are seen <strong>only by an authorised reviewer</strong>. Documents are never shown publicly and have no public links.</li>
   <li>Your support message is seen only by an authorised FORENSIC EXPERT administrator; replies are signed with the team name, not a personal name.</li>
   <li>A colleague who invited you sees only aggregate counts — <strong>never</strong> your name, email, profile or documents.</li>
+  <li>A teacher card (section 7b) is visible only to members of that teacher's groups, and only if the teacher turned on «Show to my students».</li>
   <li>Other users cannot see your data; this is enforced at the database level.</li>
 </ul>
 <p>We do not sell your data, use it for advertising, or supply it for training
@@ -358,10 +394,25 @@ with Google Gemini as the fallback) and is cached; only the post text is sent
 to the translation engine — not the author's id or e-mail address. The result
 is labelled "machine translation".</p>
 
+<h3>7b. Teacher card</h3>
+<p>A user with the teacher role may, optionally, fill in a card under
+<em>Profile → My teacher card</em>: full name (required), workplace and its
+logo, an «about me» text of up to 300 characters, links to social networks and
+a website (https only, and only the network's own address) and a photo (up to
+1 MB; JPEG, PNG or WebP). This data is stored on the server.</p>
+<ul>
+  <li><strong>Who can see it:</strong> only members (students) of that teacher's groups, on the group page. Other users, signed-out visitors and other teachers cannot. A student who leaves the group stops seeing the card.</li>
+  <li><strong>Hidden by default:</strong> nobody sees the card until the «Show to my students» switch is turned on; it is enabled separately, next to a consent text, and can be turned off at any time.</li>
+  <li><strong>Photo:</strong> separate from the profile picture (which stays on the phone only); stored in a private bucket with no public link.</li>
+  <li><strong>Links:</strong> the app opens them in an external app only when you or a student tap the icon; the app includes no social-network tracking code.</li>
+  <li><strong>Reporting:</strong> a student can report a card («Report this card»); an administrator can hide an inappropriate card (the action is logged).</li>
+  <li><strong>Deletion:</strong> delete the card at any time (<em>My teacher card → Delete card</em>) or delete your account to remove it completely, photos included.</li>
+</ul>
+
 <h3>8. Retention and deletion</h3>
 <p>You can delete your account entirely from inside the app
 (<em>Profile → Delete account</em>). Deletion removes your profile, documents,
-support messages and screenshots. Administrator action logs may be retained
+support messages, screenshots, teacher card and its photos. Administrator action logs may be retained
 without message content.</p>
 
 <h3>9. Your rights</h3>

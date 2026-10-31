@@ -44,9 +44,10 @@ Deno.serve(async (req) => {
     appleReason = r.reason;
     if (!r.revoked) console.warn(`apple revoke skipped/failed: ${r.reason}`);
   }
-  // Private files first (credentials, support screenshots), then the auth
-  // user (cascades to support threads/messages and all other rows).
-  for (const bucket of ["credentials", "support-attachments"]) {
+  // Private files first (credentials, support screenshots, teacher-card
+  // photo/logo), then the auth user (cascades to support threads/messages,
+  // teacher_cards and all other rows).
+  for (const bucket of ["credentials", "support-attachments", "teacher-cards"]) {
     const { data: files } = await admin.storage.from(bucket).list(data.user.id);
     if (files && files.length > 0) {
       await admin.storage.from(bucket).remove(files.map((f) => `${data.user.id}/${f.name}`));

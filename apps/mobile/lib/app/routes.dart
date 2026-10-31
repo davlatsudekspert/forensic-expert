@@ -179,6 +179,9 @@ abstract final class Routes {
   /// Shikoyat yuborish (kirmagan foydalanuvchi ham).
   static const report = '/profile/report';
 
+  /// Ustoz o‘z kartasini tahrirlaydi (Profil → «Ustoz kartam»).
+  static const teacherCard = '/profile/teacher-card';
+
   /// «Taklif va murojaatlar» (foydalanuvchi).
   static const support = '/profile/support';
   static const supportNew = '/profile/support/new';

@@ -32,6 +32,7 @@ $P -d fe -v fixture="$FIXTURE" -f "$HERE/class_groups_test.sql"
 $P -d fe -f "$HERE/class_groups_e2e.sql"
 $P -d fe -f "$HERE/group_hardest_detail_test.sql"
 $P -d fe -f "$HERE/plans_test.sql"
+$P -d fe -f "$HERE/teacher_card_test.sql"
 # RLS role matrix: fresh database with Supabase-like default table grants
 # (the files above grant/revoke privileges for their own checks). Roles are
 # cluster-wide, so stubs.sql is loaded without its CREATE ROLE lines.
@@ -40,3 +41,4 @@ grep -v '^create role ' "$HERE/stubs.sql" | $P -d fe_matrix
 $P -d fe_matrix -f "$HERE/stubs_supabase_defaults.sql"
 for m in "$HERE"/../migrations/*.sql; do $P -d fe_matrix -f "$m"; done
 $P -d fe_matrix -f "$HERE/rls_role_matrix_test.sql"
+$P -d fe_matrix -f "$HERE/teacher_card_storage_test.sql"

@@ -149,7 +149,9 @@ insert into matrix_tables values
  -- Pro plans (20261025000000): no grant, only my_plan / plan_* / admin_*_plan RPCs.
  ('public.plans',                  'user_id',      false, false, 'plan'),
  ('public.trial_devices',          'user_id',      false, false, 'plan'),
- ('private.plan_events',           null,           false, false, 'action');
+ ('private.plan_events',           null,           false, false, 'action'),
+ -- «Ustoz kartasi» (20261031020000): no grant, only teacher_card_* RPCs.
+ ('public.teacher_cards',          'user_id',      false, false, 'display_name');
 grant select on matrix_tables to anon, authenticated;
 
 -- Fix the column used for the no-op UPDATE to a real column of each table.
@@ -367,6 +369,10 @@ values ('60000000-0000-0000-0000-0000000000d1'::uuid,
 insert into class_group_members (group_id, user_id, nickname)
 values ('60000000-0000-0000-0000-0000000000d1'::uuid,
         '50000000-0000-0000-0000-00000000000b', 'Matritsa');
+-- «Ustoz kartasi» (20261031020000): a's card, visible to b (group member) only via RPC.
+insert into teacher_cards (user_id, display_name, workplace, socials, visible, consent_at)
+values ('50000000-0000-0000-0000-00000000000a', 'Matritsa ustoz', 'Matritsa markaz',
+        '{"telegram":"https://t.me/matrix"}'::jsonb, true, now());
 insert into class_assignments (id, group_id, topic_id, question_count)
 values ('60000000-0000-0000-0000-0000000000d2'::uuid,
         '60000000-0000-0000-0000-0000000000d1'::uuid, 'matrix', 1);

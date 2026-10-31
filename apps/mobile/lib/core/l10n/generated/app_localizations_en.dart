@@ -741,7 +741,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get privacySummary =>
-      'The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically. Your profile photo (if you set one) stays on this device only.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.\n\nSuggestions & support: the message you send in «Suggestions & support», an optional screenshot (JPEG/PNG/WebP only, up to 5 MB), the request type and your account e-mail are stored on our server only to reply to you and improve the app. Only an authorised FORENSIC EXPERT team administrator can see them; other users never can. Replies are signed «FORENSIC EXPERT team», not with an administrator\'s name. Administrator actions are logged (without message text). Your consent is requested before a request is sent. Requests and screenshots are not shared with third parties and are not used for advertising or AI training. If you delete your account, your requests, messages and screenshots are deleted permanently.\n\nExpert casebook: your entries (title, case reference, text, linked items and copied statements) are stored only on this device. They are not sent to a server, to telemetry, to AI or to other users, and are not included in backups. An entry is shared or copied only when you press the button. You can delete the casebook at any time via “Casebook → Clear entire casebook”; if you delete the app, the entries are gone too.';
+      'The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically. Your profile photo (if you set one) stays on this device only. If you fill in the optional teacher card, its name, workplace, text, links and photo are stored on the server and visible only to members of your groups, and only if you turned on «Show to my students»; you can delete the card at any time, and it is deleted with your account.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.\n\nSuggestions & support: the message you send in «Suggestions & support», an optional screenshot (JPEG/PNG/WebP only, up to 5 MB), the request type and your account e-mail are stored on our server only to reply to you and improve the app. Only an authorised FORENSIC EXPERT team administrator can see them; other users never can. Replies are signed «FORENSIC EXPERT team», not with an administrator\'s name. Administrator actions are logged (without message text). Your consent is requested before a request is sent. Requests and screenshots are not shared with third parties and are not used for advertising or AI training. If you delete your account, your requests, messages and screenshots are deleted permanently.\n\nExpert casebook: your entries (title, case reference, text, linked items and copied statements) are stored only on this device. They are not sent to a server, to telemetry, to AI or to other users, and are not included in backups. An entry is shared or copied only when you press the button. You can delete the casebook at any time via “Casebook → Clear entire casebook”; if you delete the app, the entries are gone too.';
 
   @override
   String get aboutBody =>
@@ -11670,4 +11670,220 @@ class AppLocalizationsEn extends AppLocalizations {
   String classBoardAnsweredCorrect(int correct, int answered) {
     return '$correct/$answered correct';
   }
+
+  @override
+  String get tcTitle => 'My teacher card';
+
+  @override
+  String get tcProfileHint =>
+      'Photo, workplace, links — shown to your students';
+
+  @override
+  String get tcProfileOn => 'Visible';
+
+  @override
+  String get tcProfileOff => 'Hidden';
+
+  @override
+  String get tcProfileNone => 'Not set';
+
+  @override
+  String get tcLead =>
+      'A short introduction your students see on the group page. Only your name is required.';
+
+  @override
+  String get tcStudentLabel => 'Teacher';
+
+  @override
+  String get tcPhotoSection => 'Photo';
+
+  @override
+  String get tcPhotoChoose => 'Choose photo';
+
+  @override
+  String get tcPhotoChange => 'Change photo';
+
+  @override
+  String get tcPhotoRemove => 'Remove photo';
+
+  @override
+  String get tcPhotoNote =>
+      'This photo is separate from your profile picture, which stays on this phone. It is uploaded when you save the card, and your group members can see it only if «Show to my students» is on.';
+
+  @override
+  String tcPhotoSemantics(String name) {
+    return 'Photo of $name';
+  }
+
+  @override
+  String get tcName => 'Full name';
+
+  @override
+  String get tcNameHelper => '2–60 characters';
+
+  @override
+  String get tcWorkplace => 'Workplace';
+
+  @override
+  String get tcWorkplaceHint => 'e.g. university, bureau, laboratory';
+
+  @override
+  String get tcLogoSection => 'Workplace logo (optional)';
+
+  @override
+  String get tcLogoChoose => 'Choose logo';
+
+  @override
+  String get tcLogoRemove => 'Remove logo';
+
+  @override
+  String get tcLogoSemantics => 'Workplace logo';
+
+  @override
+  String get tcBio => 'About me';
+
+  @override
+  String get tcBioHint => 'A few sentences about your experience and subjects';
+
+  @override
+  String get tcSocials => 'Social networks and website';
+
+  @override
+  String get tcSocialsHint =>
+      'Paste a link or @username. Only secure (https) links to the network\'s own site are accepted.';
+
+  @override
+  String get tcNetTelegram => 'Telegram';
+
+  @override
+  String get tcNetInstagram => 'Instagram';
+
+  @override
+  String get tcNetYoutube => 'YouTube';
+
+  @override
+  String get tcNetFacebook => 'Facebook';
+
+  @override
+  String get tcNetLinkedin => 'LinkedIn';
+
+  @override
+  String get tcNetTiktok => 'TikTok';
+
+  @override
+  String get tcNetWebsite => 'Website';
+
+  @override
+  String get tcSocialHintUser => '@username or link';
+
+  @override
+  String get tcSocialHintWeb => 'https://example.org';
+
+  @override
+  String get tcSocialInvalid =>
+      'Invalid link. Use https and the network\'s own address.';
+
+  @override
+  String get tcVisibleTitle => 'Show to my students';
+
+  @override
+  String get tcConsent =>
+      'Your photo and details are visible only to members of your groups. You can turn this off at any time or delete the card completely.';
+
+  @override
+  String get tcVisibleOn => 'Visible to your group members';
+
+  @override
+  String get tcVisibleOff => 'Not visible to anyone yet';
+
+  @override
+  String get tcPreview => 'Preview';
+
+  @override
+  String get tcPreviewTitle => 'This is how your students see it';
+
+  @override
+  String get tcPreviewNote =>
+      'Students see it only after you turn on «Show to my students».';
+
+  @override
+  String get tcSave => 'Save card';
+
+  @override
+  String get tcSaved => 'Card saved';
+
+  @override
+  String get tcDelete => 'Delete card';
+
+  @override
+  String get tcDeleteTitle => 'Delete the card?';
+
+  @override
+  String get tcDeleteBody =>
+      'The card and its photos will be deleted from the server. Students will no longer see it.';
+
+  @override
+  String get tcDeleteConfirm => 'Delete';
+
+  @override
+  String get tcCancel => 'Cancel';
+
+  @override
+  String get tcDeleted => 'Card deleted';
+
+  @override
+  String get tcRetry => 'Try again';
+
+  @override
+  String get tcReport => 'Report this card';
+
+  @override
+  String tcOpenLink(String network) {
+    return 'Open $network';
+  }
+
+  @override
+  String get tcLinkOpenFailed => 'Could not open the link.';
+
+  @override
+  String get tcErrName => 'Enter your name (2–60 characters).';
+
+  @override
+  String get tcErrWorkplace => 'Workplace is too long (up to 120 characters).';
+
+  @override
+  String get tcErrBio => '«About me» is too long (up to 300 characters).';
+
+  @override
+  String get tcErrImage =>
+      'The image could not be used. Choose another one (JPEG, PNG or WebP).';
+
+  @override
+  String get tcErrImageLarge =>
+      'The image is too large even after compression. Choose a smaller one.';
+
+  @override
+  String get tcErrSocial =>
+      'One of the links is not accepted. Check the fields marked in red.';
+
+  @override
+  String get tcErrHidden =>
+      'Your card was hidden by a moderator. Write to us via «Suggestions & support».';
+
+  @override
+  String get tcErrForbidden =>
+      'The teacher card works only for accounts with the teacher role.';
+
+  @override
+  String get tcErrOffline => 'No internet connection. Try again.';
+
+  @override
+  String get tcErrNotConfigured => 'This service is not connected yet.';
+
+  @override
+  String get tcErrServer =>
+      'Could not complete the action. Please try again later.';
+
+  @override
+  String get tcErrSignIn => 'Sign in to your account first.';
 }

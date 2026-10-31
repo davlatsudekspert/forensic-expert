@@ -1423,7 +1423,7 @@ abstract class AppLocalizations {
   /// Privacy summary.
   ///
   /// In en, this message translates to:
-  /// **'The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically. Your profile photo (if you set one) stays on this device only.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.\n\nSuggestions & support: the message you send in «Suggestions & support», an optional screenshot (JPEG/PNG/WebP only, up to 5 MB), the request type and your account e-mail are stored on our server only to reply to you and improve the app. Only an authorised FORENSIC EXPERT team administrator can see them; other users never can. Replies are signed «FORENSIC EXPERT team», not with an administrator\'s name. Administrator actions are logged (without message text). Your consent is requested before a request is sent. Requests and screenshots are not shared with third parties and are not used for advertising or AI training. If you delete your account, your requests, messages and screenshots are deleted permanently.\n\nExpert casebook: your entries (title, case reference, text, linked items and copied statements) are stored only on this device. They are not sent to a server, to telemetry, to AI or to other users, and are not included in backups. An entry is shared or copied only when you press the button. You can delete the casebook at any time via “Casebook → Clear entire casebook”; if you delete the app, the entries are gone too.'**
+  /// **'The core library and calculators work offline. Search history, progress and your optional profile (name, organisation, specialty) stay on your device. Profile details and qualification documents are sent only if you submit a professional verification application once that service is connected; documents are stored privately and never shown publicly. The app contains no advertising SDKs. Personal or case data is never sent to AI automatically. Your profile photo (if you set one) stays on this device only. If you fill in the optional teacher card, its name, workplace, text, links and photo are stored on the server and visible only to members of your groups, and only if you turned on «Show to my students»; you can delete the card at any time, and it is deleted with your account.\n\nInvitations: if you use a colleague’s invitation code, the server stores only the link between the two accounts and a salted hash of your email (to prevent abuse after account re-creation). Inviters see only totals — never your name, email, profile or documents. The app never reads your contacts.\n\nSuggestions & support: the message you send in «Suggestions & support», an optional screenshot (JPEG/PNG/WebP only, up to 5 MB), the request type and your account e-mail are stored on our server only to reply to you and improve the app. Only an authorised FORENSIC EXPERT team administrator can see them; other users never can. Replies are signed «FORENSIC EXPERT team», not with an administrator\'s name. Administrator actions are logged (without message text). Your consent is requested before a request is sent. Requests and screenshots are not shared with third parties and are not used for advertising or AI training. If you delete your account, your requests, messages and screenshots are deleted permanently.\n\nExpert casebook: your entries (title, case reference, text, linked items and copied statements) are stored only on this device. They are not sent to a server, to telemetry, to AI or to other users, and are not included in backups. An entry is shared or copied only when you press the button. You can delete the casebook at any time via “Casebook → Clear entire casebook”; if you delete the app, the entries are gone too.'**
   String get privacySummary;
 
   /// About text.
@@ -20156,6 +20156,402 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{correct}/{answered} correct'**
   String classBoardAnsweredCorrect(int correct, int answered);
+
+  /// Title of the teacher card editor and the profile row.
+  ///
+  /// In en, this message translates to:
+  /// **'My teacher card'**
+  String get tcTitle;
+
+  /// Profile row subtitle under the teacher card entry.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo, workplace, links — shown to your students'**
+  String get tcProfileHint;
+
+  /// Profile row value: the card is shown to the students.
+  ///
+  /// In en, this message translates to:
+  /// **'Visible'**
+  String get tcProfileOn;
+
+  /// Profile row value: the card exists but is hidden from the students.
+  ///
+  /// In en, this message translates to:
+  /// **'Hidden'**
+  String get tcProfileOff;
+
+  /// Profile row value: the card has not been filled in.
+  ///
+  /// In en, this message translates to:
+  /// **'Not set'**
+  String get tcProfileNone;
+
+  /// Intro text at the top of the teacher card editor.
+  ///
+  /// In en, this message translates to:
+  /// **'A short introduction your students see on the group page. Only your name is required.'**
+  String get tcLead;
+
+  /// Small label above the teacher card on the group page (student view).
+  ///
+  /// In en, this message translates to:
+  /// **'Teacher'**
+  String get tcStudentLabel;
+
+  /// Section label: teacher photo.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo'**
+  String get tcPhotoSection;
+
+  /// Button: pick a photo.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose photo'**
+  String get tcPhotoChoose;
+
+  /// Button: replace the photo.
+  ///
+  /// In en, this message translates to:
+  /// **'Change photo'**
+  String get tcPhotoChange;
+
+  /// Button: remove the photo.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove photo'**
+  String get tcPhotoRemove;
+
+  /// Privacy note under the photo: it is separate from the on-device profile picture.
+  ///
+  /// In en, this message translates to:
+  /// **'This photo is separate from your profile picture, which stays on this phone. It is uploaded when you save the card, and your group members can see it only if «Show to my students» is on.'**
+  String get tcPhotoNote;
+
+  /// Semantics label of the teacher's photo.
+  ///
+  /// In en, this message translates to:
+  /// **'Photo of {name}'**
+  String tcPhotoSemantics(String name);
+
+  /// Field label: teacher's full name.
+  ///
+  /// In en, this message translates to:
+  /// **'Full name'**
+  String get tcName;
+
+  /// Helper under the name field.
+  ///
+  /// In en, this message translates to:
+  /// **'2–60 characters'**
+  String get tcNameHelper;
+
+  /// Field label: workplace.
+  ///
+  /// In en, this message translates to:
+  /// **'Workplace'**
+  String get tcWorkplace;
+
+  /// Hint in the workplace field.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. university, bureau, laboratory'**
+  String get tcWorkplaceHint;
+
+  /// Section label: optional workplace logo.
+  ///
+  /// In en, this message translates to:
+  /// **'Workplace logo (optional)'**
+  String get tcLogoSection;
+
+  /// Button: pick a logo.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose logo'**
+  String get tcLogoChoose;
+
+  /// Button: remove the logo.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove logo'**
+  String get tcLogoRemove;
+
+  /// Semantics label of the workplace logo.
+  ///
+  /// In en, this message translates to:
+  /// **'Workplace logo'**
+  String get tcLogoSemantics;
+
+  /// Field label: short self-description.
+  ///
+  /// In en, this message translates to:
+  /// **'About me'**
+  String get tcBio;
+
+  /// Hint in the about-me field.
+  ///
+  /// In en, this message translates to:
+  /// **'A few sentences about your experience and subjects'**
+  String get tcBioHint;
+
+  /// Section label: social networks and website.
+  ///
+  /// In en, this message translates to:
+  /// **'Social networks and website'**
+  String get tcSocials;
+
+  /// Hint under the social links section.
+  ///
+  /// In en, this message translates to:
+  /// **'Paste a link or @username. Only secure (https) links to the network\'s own site are accepted.'**
+  String get tcSocialsHint;
+
+  /// Network name.
+  ///
+  /// In en, this message translates to:
+  /// **'Telegram'**
+  String get tcNetTelegram;
+
+  /// Network name.
+  ///
+  /// In en, this message translates to:
+  /// **'Instagram'**
+  String get tcNetInstagram;
+
+  /// Network name.
+  ///
+  /// In en, this message translates to:
+  /// **'YouTube'**
+  String get tcNetYoutube;
+
+  /// Network name.
+  ///
+  /// In en, this message translates to:
+  /// **'Facebook'**
+  String get tcNetFacebook;
+
+  /// Network name.
+  ///
+  /// In en, this message translates to:
+  /// **'LinkedIn'**
+  String get tcNetLinkedin;
+
+  /// Network name.
+  ///
+  /// In en, this message translates to:
+  /// **'TikTok'**
+  String get tcNetTiktok;
+
+  /// Name of the personal/work website field.
+  ///
+  /// In en, this message translates to:
+  /// **'Website'**
+  String get tcNetWebsite;
+
+  /// Hint in a network field that accepts @username or a link.
+  ///
+  /// In en, this message translates to:
+  /// **'@username or link'**
+  String get tcSocialHintUser;
+
+  /// Hint in the website field.
+  ///
+  /// In en, this message translates to:
+  /// **'https://example.org'**
+  String get tcSocialHintWeb;
+
+  /// Inline error under an invalid social link.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid link. Use https and the network\'s own address.'**
+  String get tcSocialInvalid;
+
+  /// Switch title: show the card to the teacher's students.
+  ///
+  /// In en, this message translates to:
+  /// **'Show to my students'**
+  String get tcVisibleTitle;
+
+  /// Consent text under the visibility switch.
+  ///
+  /// In en, this message translates to:
+  /// **'Your photo and details are visible only to members of your groups. You can turn this off at any time or delete the card completely.'**
+  String get tcConsent;
+
+  /// Status under the switch when on.
+  ///
+  /// In en, this message translates to:
+  /// **'Visible to your group members'**
+  String get tcVisibleOn;
+
+  /// Status under the switch when off.
+  ///
+  /// In en, this message translates to:
+  /// **'Not visible to anyone yet'**
+  String get tcVisibleOff;
+
+  /// Button: preview the card as students see it.
+  ///
+  /// In en, this message translates to:
+  /// **'Preview'**
+  String get tcPreview;
+
+  /// Title of the preview sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'This is how your students see it'**
+  String get tcPreviewTitle;
+
+  /// Note in the preview sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Students see it only after you turn on «Show to my students».'**
+  String get tcPreviewNote;
+
+  /// Button: save the card.
+  ///
+  /// In en, this message translates to:
+  /// **'Save card'**
+  String get tcSave;
+
+  /// Snackbar after saving.
+  ///
+  /// In en, this message translates to:
+  /// **'Card saved'**
+  String get tcSaved;
+
+  /// Button: delete the card.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete card'**
+  String get tcDelete;
+
+  /// Dialog title: delete the card.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete the card?'**
+  String get tcDeleteTitle;
+
+  /// Dialog body: delete the card.
+  ///
+  /// In en, this message translates to:
+  /// **'The card and its photos will be deleted from the server. Students will no longer see it.'**
+  String get tcDeleteBody;
+
+  /// Dialog button: confirm deletion.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get tcDeleteConfirm;
+
+  /// Dialog button: cancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get tcCancel;
+
+  /// Snackbar after deleting.
+  ///
+  /// In en, this message translates to:
+  /// **'Card deleted'**
+  String get tcDeleted;
+
+  /// Button: retry loading.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get tcRetry;
+
+  /// Tooltip/button: report the teacher card (UGC).
+  ///
+  /// In en, this message translates to:
+  /// **'Report this card'**
+  String get tcReport;
+
+  /// Semantics/tooltip of a social icon.
+  ///
+  /// In en, this message translates to:
+  /// **'Open {network}'**
+  String tcOpenLink(String network);
+
+  /// Snackbar when a link cannot be opened.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not open the link.'**
+  String get tcLinkOpenFailed;
+
+  /// Error: invalid name.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your name (2–60 characters).'**
+  String get tcErrName;
+
+  /// Error: workplace too long.
+  ///
+  /// In en, this message translates to:
+  /// **'Workplace is too long (up to 120 characters).'**
+  String get tcErrWorkplace;
+
+  /// Error: bio too long.
+  ///
+  /// In en, this message translates to:
+  /// **'«About me» is too long (up to 300 characters).'**
+  String get tcErrBio;
+
+  /// Error: the image cannot be used.
+  ///
+  /// In en, this message translates to:
+  /// **'The image could not be used. Choose another one (JPEG, PNG or WebP).'**
+  String get tcErrImage;
+
+  /// Error: the image is too large even after compression.
+  ///
+  /// In en, this message translates to:
+  /// **'The image is too large even after compression. Choose a smaller one.'**
+  String get tcErrImageLarge;
+
+  /// Error: some social link was rejected.
+  ///
+  /// In en, this message translates to:
+  /// **'One of the links is not accepted. Check the fields marked in red.'**
+  String get tcErrSocial;
+
+  /// Banner/error: the card was hidden by a moderator.
+  ///
+  /// In en, this message translates to:
+  /// **'Your card was hidden by a moderator. Write to us via «Suggestions & support».'**
+  String get tcErrHidden;
+
+  /// Error: not a teacher account.
+  ///
+  /// In en, this message translates to:
+  /// **'The teacher card works only for accounts with the teacher role.'**
+  String get tcErrForbidden;
+
+  /// Error: offline.
+  ///
+  /// In en, this message translates to:
+  /// **'No internet connection. Try again.'**
+  String get tcErrOffline;
+
+  /// Error: backend not connected.
+  ///
+  /// In en, this message translates to:
+  /// **'This service is not connected yet.'**
+  String get tcErrNotConfigured;
+
+  /// Error: generic server failure.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not complete the action. Please try again later.'**
+  String get tcErrServer;
+
+  /// Error: not signed in.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in to your account first.'**
+  String get tcErrSignIn;
 }
 
 class _AppLocalizationsDelegate

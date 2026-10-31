@@ -13,6 +13,7 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/class_groups/class_groups_models.dart';
 import '../../class_quiz/presentation/class_quiz_widgets.dart' show ClassQr;
 import '../../professional/presentation/professional_widgets.dart' show FeNote;
+import '../../teacher_card/presentation/teacher_card_widgets.dart';
 import 'group_widgets.dart';
 
 /// Katta sarlavha AppBar’ga o‘tadigan nuqta (px).
@@ -312,6 +313,9 @@ class _GroupDetailState extends ConsumerState<GroupDetailScreen> {
         key: const Key('grp.myNickname'),
         style: t.bodyMedium?.copyWith(color: c.textSecondary),
       ),
+      // «Ustoz kartasi»: server faqat ustoz «Talabalarimga ko‘rsatish»ni
+      // yoqqan bo‘lsa beradi; yo‘q/xato bo‘lsa — hech narsa ko‘rinmaydi.
+      GroupTeacherCard(groupId: d.group.id),
       FeSectionHeader(l.grpTestsSection),
       if (d.assignments.isEmpty)
         FeEmptyState(

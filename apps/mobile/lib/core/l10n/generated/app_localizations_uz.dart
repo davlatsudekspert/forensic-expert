@@ -745,7 +745,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get privacySummary =>
-      'Asosiy kutubxona va kalkulyatorlar oflayn ishlaydi. Qidiruv tarixi, natijalar va ixtiyoriy profilingiz (ism, tashkilot, mutaxassislik) qurilmangizda saqlanadi. Profil ma’lumotlari va malaka hujjatlari faqat professional tasdiqlash xizmati ulangandan keyin ariza yuborsangiz jo‘natiladi; hujjatlar maxfiy saqlanadi va hech qachon ochiq ko‘rsatilmaydi. Ilovada reklama SDK’lari yo‘q. Shaxsiy ma’lumot va ish tafsilotlari AI’ga hech qachon avtomatik yuborilmaydi. Profil rasmingiz (agar qo‘ysangiz) faqat shu qurilmada saqlanadi.\n\nTakliflar: hamkasbingiz taklif kodidan foydalansangiz, server faqat ikki hisob orasidagi bog‘lanishni va elektron pochtangizning tuzli xeshini saqlaydi (hisobni qayta ochish orqali suiiste’molning oldini olish uchun). Taklif qilgan kishi faqat umumiy sonlarni ko‘radi — ismingiz, elektron pochtangiz, profilingiz yoki hujjatlaringizni hech qachon ko‘rmaydi. Ilova kontaktlaringizni o‘qimaydi.\n\nTaklif va murojaatlar: «Taklif va murojaatlar» bo‘limi orqali yuborgan xabaringiz, ixtiyoriy skrinshotingiz (faqat JPEG/PNG/WebP, 5 MB gacha), murojaat turi va hisobingiz elektron pochtasi serverimizda faqat sizga javob berish va ilovani yaxshilash uchun saqlanadi. Ularni faqat FORENSIC EXPERT jamoasining vakolatli administratori ko‘radi; boshqa foydalanuvchilar hech qachon ko‘rmaydi. Javobda administrator ismi emas, «FORENSIC EXPERT jamoasi» ko‘rsatiladi. Administrator amallari jurnalga yoziladi (xabar matnisiz). Murojaat yuborishdan oldin roziligingiz so‘raladi. Murojaatlar va skrinshotlar uchinchi shaxslarga berilmaydi, reklama yoki AI o‘qitish uchun ishlatilmaydi. Hisobingizni o‘chirsangiz, murojaatlaringiz, xabarlaringiz va skrinshotlaringiz ham butunlay o‘chiriladi.\n\nEkspert ish daftari: daftardagi yozuvlaringiz (sarlavha, ish belgisi, matn, bog‘langan obyektlar va ko‘chirilgan bayonlar) faqat shu qurilmada saqlanadi. Ular serverga, telemetriyaga, AI’ga yoki boshqa foydalanuvchilarga yuborilmaydi va zaxira nusxaga kiritilmaydi. Yozuvni ulashish yoki nusxalash faqat siz tugmani bossangiz amalga oshadi. Daftarni istalgan vaqtda «Ish daftari → Butun daftarni tozalash» orqali o‘chirishingiz mumkin; ilova o‘chirilsa, yozuvlar ham yo‘qoladi.';
+      'Asosiy kutubxona va kalkulyatorlar oflayn ishlaydi. Qidiruv tarixi, natijalar va ixtiyoriy profilingiz (ism, tashkilot, mutaxassislik) qurilmangizda saqlanadi. Profil ma’lumotlari va malaka hujjatlari faqat professional tasdiqlash xizmati ulangandan keyin ariza yuborsangiz jo‘natiladi; hujjatlar maxfiy saqlanadi va hech qachon ochiq ko‘rsatilmaydi. Ilovada reklama SDK’lari yo‘q. Shaxsiy ma’lumot va ish tafsilotlari AI’ga hech qachon avtomatik yuborilmaydi. Profil rasmingiz (agar qo‘ysangiz) faqat shu qurilmada saqlanadi. Ustoz kartasini (ixtiyoriy) to‘ldirsangiz, undagi ism, ish joyi, matn, havolalar va rasm serverda saqlanadi va faqat sizning guruhlaringiz a’zolariga, siz «Talabalarimga ko‘rsatish»ni yoqqan bo‘lsangina ko‘rinadi; kartani istalgan vaqtda o‘chirishingiz mumkin, hisob o‘chirilsa ham o‘chadi.\n\nTakliflar: hamkasbingiz taklif kodidan foydalansangiz, server faqat ikki hisob orasidagi bog‘lanishni va elektron pochtangizning tuzli xeshini saqlaydi (hisobni qayta ochish orqali suiiste’molning oldini olish uchun). Taklif qilgan kishi faqat umumiy sonlarni ko‘radi — ismingiz, elektron pochtangiz, profilingiz yoki hujjatlaringizni hech qachon ko‘rmaydi. Ilova kontaktlaringizni o‘qimaydi.\n\nTaklif va murojaatlar: «Taklif va murojaatlar» bo‘limi orqali yuborgan xabaringiz, ixtiyoriy skrinshotingiz (faqat JPEG/PNG/WebP, 5 MB gacha), murojaat turi va hisobingiz elektron pochtasi serverimizda faqat sizga javob berish va ilovani yaxshilash uchun saqlanadi. Ularni faqat FORENSIC EXPERT jamoasining vakolatli administratori ko‘radi; boshqa foydalanuvchilar hech qachon ko‘rmaydi. Javobda administrator ismi emas, «FORENSIC EXPERT jamoasi» ko‘rsatiladi. Administrator amallari jurnalga yoziladi (xabar matnisiz). Murojaat yuborishdan oldin roziligingiz so‘raladi. Murojaatlar va skrinshotlar uchinchi shaxslarga berilmaydi, reklama yoki AI o‘qitish uchun ishlatilmaydi. Hisobingizni o‘chirsangiz, murojaatlaringiz, xabarlaringiz va skrinshotlaringiz ham butunlay o‘chiriladi.\n\nEkspert ish daftari: daftardagi yozuvlaringiz (sarlavha, ish belgisi, matn, bog‘langan obyektlar va ko‘chirilgan bayonlar) faqat shu qurilmada saqlanadi. Ular serverga, telemetriyaga, AI’ga yoki boshqa foydalanuvchilarga yuborilmaydi va zaxira nusxaga kiritilmaydi. Yozuvni ulashish yoki nusxalash faqat siz tugmani bossangiz amalga oshadi. Daftarni istalgan vaqtda «Ish daftari → Butun daftarni tozalash» orqali o‘chirishingiz mumkin; ilova o‘chirilsa, yozuvlar ham yo‘qoladi.';
 
   @override
   String get aboutBody =>
@@ -11600,4 +11600,220 @@ class AppLocalizationsUz extends AppLocalizations {
   String classBoardAnsweredCorrect(int correct, int answered) {
     return '$correct/$answered to‘g‘ri';
   }
+
+  @override
+  String get tcTitle => 'Ustoz kartam';
+
+  @override
+  String get tcProfileHint =>
+      'Rasm, ish joyi, havolalar — talabalaringizga ko‘rinadi';
+
+  @override
+  String get tcProfileOn => 'Ko‘rinadi';
+
+  @override
+  String get tcProfileOff => 'Yashirin';
+
+  @override
+  String get tcProfileNone => 'To‘ldirilmagan';
+
+  @override
+  String get tcLead =>
+      'Talabalaringiz guruh sahifasida ko‘radigan qisqa tanishtiruv. Faqat ism majburiy.';
+
+  @override
+  String get tcStudentLabel => 'Ustoz';
+
+  @override
+  String get tcPhotoSection => 'Rasm';
+
+  @override
+  String get tcPhotoChoose => 'Rasm tanlash';
+
+  @override
+  String get tcPhotoChange => 'Rasmni almashtirish';
+
+  @override
+  String get tcPhotoRemove => 'Rasmni olib tashlash';
+
+  @override
+  String get tcPhotoNote =>
+      'Bu rasm profildagi (faqat shu telefonda qoladigan) rasmdan alohida. Karta saqlanganda serverga yuklanadi, guruhingiz a’zolari uni faqat «Talabalarimga ko‘rsatish» yoqilgan bo‘lsa ko‘radi.';
+
+  @override
+  String tcPhotoSemantics(String name) {
+    return '$name rasmi';
+  }
+
+  @override
+  String get tcName => 'Ism va familiya';
+
+  @override
+  String get tcNameHelper => '2–60 ta belgi';
+
+  @override
+  String get tcWorkplace => 'Ish joyi';
+
+  @override
+  String get tcWorkplaceHint => 'masalan: universitet, byuro, laboratoriya';
+
+  @override
+  String get tcLogoSection => 'Ish joyi logotipi (ixtiyoriy)';
+
+  @override
+  String get tcLogoChoose => 'Logotip tanlash';
+
+  @override
+  String get tcLogoRemove => 'Logotipni olib tashlash';
+
+  @override
+  String get tcLogoSemantics => 'Ish joyi logotipi';
+
+  @override
+  String get tcBio => 'O‘zim haqimda';
+
+  @override
+  String get tcBioHint => 'Tajriba va fanlaringiz haqida bir-ikki gap';
+
+  @override
+  String get tcSocials => 'Ijtimoiy tarmoqlar va vebsayt';
+
+  @override
+  String get tcSocialsHint =>
+      'Havola yoki @username kiriting. Faqat tarmoqning o‘z manziliga olib boradigan xavfsiz (https) havolalar qabul qilinadi.';
+
+  @override
+  String get tcNetTelegram => 'Telegram';
+
+  @override
+  String get tcNetInstagram => 'Instagram';
+
+  @override
+  String get tcNetYoutube => 'YouTube';
+
+  @override
+  String get tcNetFacebook => 'Facebook';
+
+  @override
+  String get tcNetLinkedin => 'LinkedIn';
+
+  @override
+  String get tcNetTiktok => 'TikTok';
+
+  @override
+  String get tcNetWebsite => 'Vebsayt';
+
+  @override
+  String get tcSocialHintUser => '@username yoki havola';
+
+  @override
+  String get tcSocialHintWeb => 'https://example.org';
+
+  @override
+  String get tcSocialInvalid =>
+      'Havola noto‘g‘ri. https va tarmoqning o‘z manzili kerak.';
+
+  @override
+  String get tcVisibleTitle => 'Talabalarimga ko‘rsatish';
+
+  @override
+  String get tcConsent =>
+      'Rasm va ma’lumotlaringiz faqat sizning guruhlaringiz a’zolariga ko‘rinadi. Istalgan vaqtda ko‘rsatishni o‘chirib qo‘yishingiz yoki kartani butunlay o‘chirishingiz mumkin.';
+
+  @override
+  String get tcVisibleOn => 'Guruhlaringiz a’zolariga ko‘rinadi';
+
+  @override
+  String get tcVisibleOff => 'Hozircha hech kimga ko‘rinmaydi';
+
+  @override
+  String get tcPreview => 'Ko‘rish';
+
+  @override
+  String get tcPreviewTitle => 'Talabalar shunday ko‘radi';
+
+  @override
+  String get tcPreviewNote =>
+      'Talabalar buni faqat «Talabalarimga ko‘rsatish» yoqilgach ko‘radi.';
+
+  @override
+  String get tcSave => 'Kartani saqlash';
+
+  @override
+  String get tcSaved => 'Karta saqlandi';
+
+  @override
+  String get tcDelete => 'Kartani o‘chirish';
+
+  @override
+  String get tcDeleteTitle => 'Kartani o‘chiraymi?';
+
+  @override
+  String get tcDeleteBody =>
+      'Karta va uning rasmlari serverdan o‘chiriladi. Talabalar uni endi ko‘rmaydi.';
+
+  @override
+  String get tcDeleteConfirm => 'O‘chirish';
+
+  @override
+  String get tcCancel => 'Bekor qilish';
+
+  @override
+  String get tcDeleted => 'Karta o‘chirildi';
+
+  @override
+  String get tcRetry => 'Qayta urinish';
+
+  @override
+  String get tcReport => 'Kartadan shikoyat qilish';
+
+  @override
+  String tcOpenLink(String network) {
+    return '$network ni ochish';
+  }
+
+  @override
+  String get tcLinkOpenFailed => 'Havolani ochib bo‘lmadi.';
+
+  @override
+  String get tcErrName => 'Ismingizni kiriting (2–60 ta belgi).';
+
+  @override
+  String get tcErrWorkplace => 'Ish joyi juda uzun (120 ta belgigacha).';
+
+  @override
+  String get tcErrBio => '«O‘zim haqimda» juda uzun (300 ta belgigacha).';
+
+  @override
+  String get tcErrImage =>
+      'Rasmdan foydalanib bo‘lmadi. Boshqasini tanlang (JPEG, PNG yoki WebP).';
+
+  @override
+  String get tcErrImageLarge =>
+      'Rasm siqilgandan keyin ham juda katta. Kichikroq rasm tanlang.';
+
+  @override
+  String get tcErrSocial =>
+      'Havolalardan biri qabul qilinmadi. Qizil belgilangan maydonlarni tekshiring.';
+
+  @override
+  String get tcErrHidden =>
+      'Kartangiz moderator tomonidan yashirilgan. «Taklif va murojaatlar» orqali bizga yozing.';
+
+  @override
+  String get tcErrForbidden =>
+      'Ustoz kartasi faqat ustoz roli bor hisobda ishlaydi.';
+
+  @override
+  String get tcErrOffline => 'Internet yo‘q. Qayta urinib ko‘ring.';
+
+  @override
+  String get tcErrNotConfigured => 'Bu xizmat hali ulanmagan.';
+
+  @override
+  String get tcErrServer =>
+      'Amalni bajarib bo‘lmadi. Keyinroq qayta urinib ko‘ring.';
+
+  @override
+  String get tcErrSignIn => 'Avval hisobingizga kiring.';
 }

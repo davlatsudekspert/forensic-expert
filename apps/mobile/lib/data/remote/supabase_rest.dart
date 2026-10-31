@@ -57,7 +57,17 @@ abstract interface class RestTransport {
   });
 }
 
-class HttpClientTransport implements RestTransport {
+/// Ikkilik javobni (rasm) olish: [RestTransport] javobni matn deb o‘qiydi.
+/// `null` — status 2xx emas yoki hajm [maxBytes] dan katta.
+abstract interface class BytesFetcher {
+  Future<List<int>?> getBytes(
+    Uri uri, {
+    Map<String, String> headers,
+    int maxBytes,
+  });
+}
+
+class HttpClientTransport implements RestTransport, BytesFetcher {
   HttpClientTransport({
     HttpClient? client,
     this.timeout = const Duration(seconds: 20),
@@ -101,5 +111,29 @@ class HttpClientTransport implements RestTransport {
       }
     }
     return RestResponse(res.statusCode, json);
+  }
+
+  @override
+  Future<List<int>?> getBytes(
+    Uri uri, {
+    Map<String, String> headers = const {},
+    int maxBytes = 2 * 1024 * 1024,
+  }) async {
+    if (uri.scheme != 'https') {
+      throw const SocketException('HTTPS required');
+    }
+    final req = await _client.openUrl('GET', uri).timeout(timeout);
+    headers.forEach(req.headers.set);
+    final res = await req.close().timeout(timeout);
+    if (res.statusCode < 200 || res.statusCode >= 300) {
+      await res.drain<void>();
+      return null;
+    }
+    final out = <int>[];
+    await for (final chunk in res.timeout(timeout)) {
+      out.addAll(chunk);
+      if (out.length > maxBytes) return null;
+    }
+    return out;
   }
 }

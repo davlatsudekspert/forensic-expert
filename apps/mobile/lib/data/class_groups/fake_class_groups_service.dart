@@ -232,6 +232,17 @@ class FakeClassGroupsBackend {
     ),
   );
 
+  /// Guruh egasi-ustoz id si — faqat guruh egasi yoki a'zosi uchun (aks holda
+  /// `null`). «Ustoz kartasi» demo/test adapteri a'zolikni shu orqali tekshiradi.
+  String? teacherIdFor(String uid, String groupId) {
+    final g = _groups[groupId];
+    if (g == null) return null;
+    if (g.teacherId == uid || g.members.any((m) => m.userId == uid)) {
+      return g.teacherId;
+    }
+    return null;
+  }
+
   GroupCall<GroupDetail> detail(String uid, String groupId) {
     final g = _groups[groupId];
     if (g == null) return const GroupCall.fail(GroupFailure.forbidden);

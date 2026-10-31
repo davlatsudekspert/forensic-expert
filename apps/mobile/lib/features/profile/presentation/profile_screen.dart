@@ -6,12 +6,14 @@ import 'package:go_router/go_router.dart';
 import '../../../app/account.dart';
 import '../../../app/app_info.dart';
 import '../../../app/avatar.dart';
+import '../../../app/class_quiz.dart' show classIsTeacherProvider;
 import '../../../app/moderation.dart';
 import '../../../app/plan.dart';
 import '../../../app/professional.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../app/support.dart';
+import '../../../app/teacher_card.dart';
 import '../../../app/user_data.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -241,6 +243,33 @@ class ProfileScreen extends ConsumerWidget {
                         ),
                       ),
                     ),
+                  // «Ustoz kartam»: faqat ustoz roli bor (server aytadi) va karta
+                  // xizmati ulangan hisobda.
+                  if (signedIn &&
+                      ref.watch(teacherCardServiceProvider).isConfigured &&
+                      (ref.watch(classIsTeacherProvider).value ?? false)) ...[
+                    FeSectionHeader(l.tcTitle),
+                    _Group(
+                      children: [
+                        _Row(
+                          key: const Key('profile.teacherCard'),
+                          icon: Icons.badge_outlined,
+                          title: l.tcTitle,
+                          value: switch (ref
+                              .watch(myTeacherCardProvider)
+                              .value
+                              ?.value) {
+                            null => l.tcProfileHint,
+                            final card
+                                when card.visible && !card.hiddenByAdmin =>
+                              l.tcProfileOn,
+                            _ => l.tcProfileOff,
+                          },
+                          onTap: () => context.push(Routes.teacherCard),
+                        ),
+                      ],
+                    ),
+                  ],
                   FeSectionHeader(l.profileSectionPreferences),
                   _Group(
                     children: [

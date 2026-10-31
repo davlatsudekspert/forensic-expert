@@ -39,6 +39,7 @@ import '../data/remote/supabase_qa.dart';
 import '../data/remote/supabase_referral.dart';
 import '../data/remote/supabase_rest.dart';
 import '../data/remote/supabase_support.dart';
+import '../data/remote/supabase_teacher_card.dart';
 import '../data/store/iap_store_service.dart';
 import '../domain/ports/backend_ports.dart';
 import '../domain/ports/plan_ports.dart';
@@ -59,6 +60,7 @@ import 'qa.dart';
 import 'referral.dart';
 import 'study.dart';
 import 'support.dart';
+import 'teacher_card.dart';
 import 'user_data.dart';
 
 /// Ilovani ishga tushirish.
@@ -183,6 +185,9 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
           ),
           classGroupsServiceProvider.overrideWithValue(
             SupabaseClassGroupsService(config: supabase, auth: auth),
+          ),
+          teacherCardServiceProvider.overrideWithValue(
+            SupabaseTeacherCardService(config: supabase, auth: auth),
           ),
           lessonsServiceProvider.overrideWithValue(
             SupabaseLessonsService(config: supabase, auth: auth),

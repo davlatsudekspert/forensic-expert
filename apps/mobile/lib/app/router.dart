@@ -97,6 +97,7 @@ import '../features/qa/presentation/qa_verify_screen.dart';
 import '../features/referral/presentation/referral_screen.dart';
 import '../features/shell/presentation/app_shell.dart';
 import '../features/support/presentation/support_screens.dart';
+import '../features/teacher_card/presentation/teacher_card_screen.dart';
 import '../features/tools/presentation/gcms_screen.dart';
 import '../features/tools/presentation/module_hub_screen.dart';
 import '../features/tools/presentation/tool_detail_screen.dart';
@@ -1143,6 +1144,11 @@ final routerProvider = Provider<GoRouter>((ref) {
                             : ReportKind.fromWire(q['kind']),
                       );
                     },
+                  ),
+                  GoRoute(
+                    path: 'teacher-card',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) => const TeacherCardScreen(),
                   ),
                   GoRoute(
                     path: 'support',
