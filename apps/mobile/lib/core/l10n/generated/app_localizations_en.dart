@@ -110,7 +110,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get moduleForensicMedicine => 'Forensic Medicine';
 
   @override
-  String get moduleToxicology => 'Forensic Toxicology';
+  String get moduleToxicology => 'Toxicology';
 
   @override
   String get moduleLaboratory => 'Laboratory';
@@ -2129,7 +2129,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get disc_forensicPsychiatry => 'Forensic psychiatry & psychology';
 
   @override
-  String get disc_forensicToxicology => 'Forensic toxicology';
+  String get disc_forensicToxicology => 'Toxicology';
 
   @override
   String get disc_forensicChemistry => 'Forensic chemistry';

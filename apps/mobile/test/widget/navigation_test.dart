@@ -41,7 +41,7 @@ void main() {
     await pumpApp(tester, settings: completedSettings());
     for (final m in [
       'Forensic Medicine',
-      'Forensic Toxicology',
+      'Toxicology',
       'Laboratory',
       'Substances',
       'Learning',

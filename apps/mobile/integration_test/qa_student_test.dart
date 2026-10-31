@@ -132,8 +132,8 @@ void main() {
       await qa.tapTooltip('Asosiy');
       await qa.scrollToTop();
       await qa.tapText('Barcha sud-ekspert fanlari');
-      await qa.tapText('Sud toksikologiyasi');
-      qa.expectText('Sud toksikologiyasi', s);
+      await qa.tapText('Toksikologiya');
+      qa.expectText('Toksikologiya', s);
     });
 
     await qa.step('Kutubxona markazi', (s) async {
@@ -212,7 +212,7 @@ void main() {
 
     await qa.step('Qidiruv: fan filtri (Sud toksikologiyasi)', (s) async {
       await qa.tapFinder(
-        find.widgetWithText(ChoiceChip, 'Sud toksikologiyasi'),
+        find.widgetWithText(ChoiceChip, 'Toksikologiya'),
       );
       qa.expectText('Etanol', s);
     }, shot: false);

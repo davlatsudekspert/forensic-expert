@@ -110,7 +110,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get moduleForensicMedicine => 'Судебная медицина';
 
   @override
-  String get moduleToxicology => 'Судебная токсикология';
+  String get moduleToxicology => 'Токсикология';
 
   @override
   String get moduleLaboratory => 'Лаборатория';
@@ -2130,7 +2130,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get disc_forensicPsychiatry => 'Судебная психиатрия и психология';
 
   @override
-  String get disc_forensicToxicology => 'Судебная токсикология';
+  String get disc_forensicToxicology => 'Токсикология';
 
   @override
   String get disc_forensicChemistry => 'Судебная химия';

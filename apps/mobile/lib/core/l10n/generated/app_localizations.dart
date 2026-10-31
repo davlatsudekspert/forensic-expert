@@ -283,7 +283,7 @@ abstract class AppLocalizations {
   /// Home module.
   ///
   /// In en, this message translates to:
-  /// **'Forensic Toxicology'**
+  /// **'Toxicology'**
   String get moduleToxicology;
 
   /// Home module.
@@ -3925,7 +3925,7 @@ abstract class AppLocalizations {
   /// Forensic discipline name.
   ///
   /// In en, this message translates to:
-  /// **'Forensic toxicology'**
+  /// **'Toxicology'**
   String get disc_forensicToxicology;
 
   /// Forensic discipline name.
