@@ -29,14 +29,9 @@ void main() {
       for (final f in ProFeature.values) {
         expect(c.read(proAllowedProvider(f)), admin, reason: f.name);
       }
-      expect(
-        find.byType(GroupJoinScreen),
-        admin ? findsOneWidget : findsNothing,
-      );
-      expect(
-        find.byKey(const Key('pro.lock.fullQuizBank')),
-        admin ? findsNothing : findsOneWidget,
-      );
+      // 2026-10-31: talabaning guruhga qo‘shilishi hozircha bepul (admin ham, oddiy ham).
+      expect(find.byType(GroupJoinScreen), findsOneWidget);
+      expect(find.byKey(const Key('pro.lock.fullQuizBank')), findsNothing);
     });
   }
 }

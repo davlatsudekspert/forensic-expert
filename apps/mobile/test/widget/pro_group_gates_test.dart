@@ -1,5 +1,5 @@
-// Guruh testi: bepul chegara yo‘q (egasi qarori, 2026-10-24) — guruh yaratish
-// va test o‘tkazish Ustoz Pro; talabaning kirishi — Talaba Pro (1 oy sinov).
+// Guruh testi: guruh yaratish va test o‘tkazish — Ustoz Pro (egasi qarori, 2026-10-24);
+// talabaning guruhga qo‘shilishi va testni yechishi HOZIRCHA BEPUL (2026-10-31).
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -116,33 +116,14 @@ void main() {
     await closeApp(tester);
   });
 
-  testWidgets('talaba (Pro’siz): guruhga qo‘shilish qulfli → Talaba Pro', (
-    tester,
-  ) async {
-    final w = GroupsWorld.real();
-    await w.open(tester, uid: 'student1', location: Routes.groupJoin);
-    expect(find.byKey(const Key('pro.lock.fullQuizBank')), findsOneWidget);
-    await closeApp(tester);
-  });
-
-  testWidgets('Ustoz Pro talabaga bepul ochmaydi; Talaba Pro ochadi', (
-    tester,
-  ) async {
-    final w = GroupsWorld.real();
-    await w.open(
-      tester,
-      uid: 'student1',
-      location: Routes.groupJoin,
-      extra: planOverrides(Plan.teacher),
-    );
-    expect(find.byKey(const Key('pro.lock.fullQuizBank')), findsOneWidget);
-    await w.open(
-      tester,
-      uid: 'student1',
-      location: Routes.groupJoin,
-      extra: planOverrides(Plan.student),
-    );
-    expect(find.byType(ProLockCard), findsNothing);
-    await closeApp(tester);
-  });
+  testWidgets(
+    'talaba (Pro’siz): guruhga qo‘shilish BEPUL (2026-10-31 qarori)',
+    (tester) async {
+      final w = GroupsWorld.real();
+      await w.open(tester, uid: 'student1', location: Routes.groupJoin);
+      expect(find.byKey(const Key('pro.lock.fullQuizBank')), findsNothing);
+      expect(find.byType(ProLockCard), findsNothing);
+      await closeApp(tester);
+    },
+  );
 }

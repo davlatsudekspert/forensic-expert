@@ -159,19 +159,20 @@ class CourtPrepGate extends StatelessWidget {
   );
 }
 
-/// Talaba guruh/jonli testga kirishi — Talaba Pro (1 oylik sinov ochadi).
-/// Ustoz Pro talabaga bepul ochmaydi (egasi qarori, 2026-10-24).
+/// Talaba guruh/jonli testga kirishi.
+///
+/// EGASI QARORI (2026-10-31): talaba guruhga qo‘shilishi va ustoz bergan testni
+/// yechishi HOZIRCHA BEPUL (sinfni to‘xtatib qo‘ymaslik uchun). Pullik qilish
+/// keyingi bosqichda — shunda bu qo‘riqchi yana [ProFeature.fullQuizBank] ni
+/// (Talaba Pro, 1 oylik sinov) tekshiradi. Marshrutlar shu sinf orqali o‘ralgani
+/// uchun qayta yoqish bitta joyda.
 class StudentTestGate extends StatelessWidget {
   const StudentTestGate({super.key, required this.child});
 
   final Widget child;
 
   @override
-  Widget build(BuildContext context) => ProGated(
-    feature: ProFeature.fullQuizBank,
-    title: AppLocalizations.of(context).classQuizTitle,
-    child: child,
-  );
+  Widget build(BuildContext context) => child;
 }
 
 /// «Ekspert ish daftari» — Mutaxassis Pro.
