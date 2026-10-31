@@ -9,6 +9,7 @@ import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
 import 'package:forensic_expert/data/class_quiz/fake_class_quiz_service.dart';
 import 'package:forensic_expert/domain/class_quiz/class_quiz_models.dart';
+import 'package:forensic_expert/domain/grading/grade_scale.dart';
 import 'package:forensic_expert/domain/plan/plan_models.dart';
 import 'package:forensic_expert/domain/ports/class_quiz_ports.dart';
 
@@ -214,6 +215,14 @@ void main() {
       // Yakun: reyting, eng qiyin savol va CSV.
       expect(find.byKey(const Key('class.finishedTitle')), findsOneWidget);
       expect(find.byKey(const Key('class.finalBoard')), findsOneWidget);
+      // Ustoz natijasi: 100 ballik ball + taxminiy baho (1/10 → 10.0), reyting
+      // va tezlik ballari o‘zgarmagan; taxminiy baho izohi bir marta.
+      expect(find.byKey(const Key('class.scoreApproxNote')), findsOneWidget);
+      expect(
+        find.text(l.scoringRowLine('10.0', l.scoringGradeBelowMin)),
+        findsOneWidget,
+      );
+      expect(find.textContaining('qarzdor'), findsNothing);
       await tester.ensureVisible(find.byKey(const Key('class.exportButton')));
       await tester.tap(find.byKey(const Key('class.exportButton')));
       await _frames(tester);
@@ -224,9 +233,10 @@ void main() {
       );
       expect(
         file.content.split('\r\n').first,
-        'laqab,ball,togri_soni,javob_vaqti_s',
+        'laqab,ball,togri_soni,javob_vaqti_s,Ball (100),Baho',
       );
       expect(file.content, contains('Ali,1000,1,'));
+      expect(file.content, contains(',10.0,${l.scoringGradeBelowMin}'));
       expect(file.content.contains('@'), isFalse);
       await _close(tester);
     },
@@ -303,6 +313,22 @@ void main() {
       await _frames(tester);
       expect(find.byKey(const Key('class.summary')), findsOneWidget);
       expect(find.text(l.classScoreLine(0)), findsOneWidget);
+      // 100 ballik natija va taxminiy baho (0/5 → 0.0): tezlik balli ham qoladi.
+      expect(find.byKey(const Key('score100.block')), findsOneWidget);
+      expect(
+        tester.widget<Text>(find.byKey(const Key('score100.value'))).data,
+        '0.0',
+      );
+      expect(
+        tester.widget<Text>(find.byKey(const Key('score100.grade'))).data,
+        l.scoringGradeBelowMin,
+      );
+      expect(
+        find.text(l.scoringGradeApproxTitle(GradeScale.academicYear)),
+        findsOneWidget,
+      );
+      expect(find.byKey(const Key('score100.note')), findsOneWidget);
+      expect(find.textContaining('qarzdor'), findsNothing);
       await tester.scrollUntilVisible(
         find.byKey(const Key('class.mistake.0')),
         200,

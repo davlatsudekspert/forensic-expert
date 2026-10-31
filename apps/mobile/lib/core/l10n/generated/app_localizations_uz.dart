@@ -11816,4 +11816,64 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get tcErrSignIn => 'Avval hisobingizga kiring.';
+
+  @override
+  String get scoringScore100Label => 'Ball (100)';
+
+  @override
+  String get scoringGradeLabel => 'Baho';
+
+  @override
+  String scoringGradeApproxTitle(String year) {
+    return 'Taxminiy baho ($year tartibi bo‘yicha)';
+  }
+
+  @override
+  String get scoringGradeBelowMin => 'Minimal o‘tish balidan past';
+
+  @override
+  String scoringApproxNote(String minPass) {
+    return 'Bu baho ilova to‘g‘ri javoblar ulushidan hisoblagan taxminiy baho (100 ballik shkala; minimal o‘tish bali $minPass). Rasmiy baho emas.';
+  }
+
+  @override
+  String scoringRowLine(String score, String grade) {
+    return 'Ball (100): $score · Baho: $grade';
+  }
+
+  @override
+  String get scoringSpeedPointsNote =>
+      'Tezlik ballari faqat sinf reytingi uchun.';
+
+  @override
+  String get scoringMidtermTitle => 'Oraliq nazorat';
+
+  @override
+  String scoringMidtermIntro(int count, int minutes, int days) {
+    return 'Kursni tanlang: uning barcha mavzulari avtomatik tanlanadi. Standart: $count tagacha savol, $minutes daqiqa, $days kun ochiq. Yaratishdan oldin hammasini tahrirlash mumkin.';
+  }
+
+  @override
+  String scoringMidtermCourseLine(int topics, int questions) {
+    return '$topics ta mavzu · $questions ta savol';
+  }
+
+  @override
+  String scoringMidtermApplied(String course) {
+    return '«$course» uchun oraliq nazorat tayyor: barcha mavzular tanlandi. Sozlamalarni pastda tekshiring.';
+  }
+
+  @override
+  String scoringMidtermPoolShort(int pool) {
+    return 'Kursda faqat $pool ta savol bor, shuning uchun savollar soni $pool qilindi.';
+  }
+
+  @override
+  String scoringMidtermVariantOff(int pool, int max) {
+    return 'Variantlar o‘chirildi: savollar hovuzi ($pool) har talabaga beriladigan savollar sonining ikki baravaridan kam. Variantlarni yoqish uchun savollar sonini $max yoki undan kam qiling.';
+  }
+
+  @override
+  String get scoringMidtermVariantOn =>
+      'Har talaba boshqa savollar to‘plamini oladi (variantlar yoqilgan).';
 }

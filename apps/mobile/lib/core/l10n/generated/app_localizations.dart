@@ -20552,6 +20552,90 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Sign in to your account first.'**
   String get tcErrSignIn;
+
+  /// Label of the 100-point score (correct answers / questions x 100).
+  ///
+  /// In en, this message translates to:
+  /// **'Score (100)'**
+  String get scoringScore100Label;
+
+  /// Label of the approximate grade.
+  ///
+  /// In en, this message translates to:
+  /// **'Grade'**
+  String get scoringGradeLabel;
+
+  /// Heading above the approximate grade; year is the academic year of the grading order.
+  ///
+  /// In en, this message translates to:
+  /// **'Approximate grade (per the {year} order)'**
+  String scoringGradeApproxTitle(String year);
+
+  /// Grade label when the score is below the minimum pass score (70.0). Must not sound like failure or debt.
+  ///
+  /// In en, this message translates to:
+  /// **'Below the minimum pass score'**
+  String get scoringGradeBelowMin;
+
+  /// One-time note on result screens: the grade is an estimate made by the app, not official.
+  ///
+  /// In en, this message translates to:
+  /// **'This grade is an estimate calculated by the app from the share of correct answers (100-point scale; minimum pass score {minPass}). It is not an official grade.'**
+  String scoringApproxNote(String minPass);
+
+  /// Teacher result row: 100-point score and grade of a student.
+  ///
+  /// In en, this message translates to:
+  /// **'Score (100): {score} · Grade: {grade}'**
+  String scoringRowLine(String score, String grade);
+
+  /// Caption in the live class result: speed points are only for the class ranking.
+  ///
+  /// In en, this message translates to:
+  /// **'Speed points count only for the class ranking.'**
+  String get scoringSpeedPointsNote;
+
+  /// Title of the one-tap midterm preset card and the test-name prefix.
+  ///
+  /// In en, this message translates to:
+  /// **'Midterm check'**
+  String get scoringMidtermTitle;
+
+  /// Intro of the midterm preset card: pick a course; all its topics are selected automatically.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick a course: all its topics are selected automatically. Defaults: up to {count} questions, {minutes} minutes, open for {days} day. You can edit everything before creating.'**
+  String scoringMidtermIntro(int count, int minutes, int days);
+
+  /// Subtitle of a course button: number of topics and questions.
+  ///
+  /// In en, this message translates to:
+  /// **'{topics} topics · {questions} questions'**
+  String scoringMidtermCourseLine(int topics, int questions);
+
+  /// Confirmation after choosing a course in the midterm preset.
+  ///
+  /// In en, this message translates to:
+  /// **'Midterm check set up for “{course}”: all topics selected. Review the settings below.'**
+  String scoringMidtermApplied(String course);
+
+  /// Shown when the course has fewer questions than the default count; the count was reduced.
+  ///
+  /// In en, this message translates to:
+  /// **'The course has only {pool} questions, so the number of questions is set to {pool}.'**
+  String scoringMidtermPoolShort(int pool);
+
+  /// Shown when per-student variants were switched off because the pool is smaller than twice the question count.
+  ///
+  /// In en, this message translates to:
+  /// **'Variants are off: the question pool ({pool}) is smaller than twice the number of questions per student. Set {max} questions or fewer to turn variants on.'**
+  String scoringMidtermVariantOff(int pool, int max);
+
+  /// Shown when per-student variants are on in the midterm preset.
+  ///
+  /// In en, this message translates to:
+  /// **'Each student gets a different set of questions (variants are on).'**
+  String get scoringMidtermVariantOn;
 }
 
 class _AppLocalizationsDelegate

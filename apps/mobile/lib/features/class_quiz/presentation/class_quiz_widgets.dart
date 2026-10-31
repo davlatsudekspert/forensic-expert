@@ -75,7 +75,11 @@ Future<void> exportClassResultsCsv(
   }
   await share.shareCsv(
     fileName: ClassResultsCsv.fileName(s.code, DateTime.now()),
-    content: ClassResultsCsv.build(ex.rows),
+    content: ClassResultsCsv.build(
+      ex.rows,
+      total: ex.session.total,
+      belowMinLabel: l.scoringGradeBelowMin,
+    ),
     subject: l.classCsvSubject,
   );
 }

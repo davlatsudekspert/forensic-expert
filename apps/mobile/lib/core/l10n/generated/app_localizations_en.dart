@@ -11886,4 +11886,64 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tcErrSignIn => 'Sign in to your account first.';
+
+  @override
+  String get scoringScore100Label => 'Score (100)';
+
+  @override
+  String get scoringGradeLabel => 'Grade';
+
+  @override
+  String scoringGradeApproxTitle(String year) {
+    return 'Approximate grade (per the $year order)';
+  }
+
+  @override
+  String get scoringGradeBelowMin => 'Below the minimum pass score';
+
+  @override
+  String scoringApproxNote(String minPass) {
+    return 'This grade is an estimate calculated by the app from the share of correct answers (100-point scale; minimum pass score $minPass). It is not an official grade.';
+  }
+
+  @override
+  String scoringRowLine(String score, String grade) {
+    return 'Score (100): $score · Grade: $grade';
+  }
+
+  @override
+  String get scoringSpeedPointsNote =>
+      'Speed points count only for the class ranking.';
+
+  @override
+  String get scoringMidtermTitle => 'Midterm check';
+
+  @override
+  String scoringMidtermIntro(int count, int minutes, int days) {
+    return 'Pick a course: all its topics are selected automatically. Defaults: up to $count questions, $minutes minutes, open for $days day. You can edit everything before creating.';
+  }
+
+  @override
+  String scoringMidtermCourseLine(int topics, int questions) {
+    return '$topics topics · $questions questions';
+  }
+
+  @override
+  String scoringMidtermApplied(String course) {
+    return 'Midterm check set up for “$course”: all topics selected. Review the settings below.';
+  }
+
+  @override
+  String scoringMidtermPoolShort(int pool) {
+    return 'The course has only $pool questions, so the number of questions is set to $pool.';
+  }
+
+  @override
+  String scoringMidtermVariantOff(int pool, int max) {
+    return 'Variants are off: the question pool ($pool) is smaller than twice the number of questions per student. Set $max questions or fewer to turn variants on.';
+  }
+
+  @override
+  String get scoringMidtermVariantOn =>
+      'Each student gets a different set of questions (variants are on).';
 }

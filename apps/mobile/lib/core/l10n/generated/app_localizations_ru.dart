@@ -11929,4 +11929,64 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get tcErrSignIn => 'Сначала войдите в аккаунт.';
+
+  @override
+  String get scoringScore100Label => 'Балл (100)';
+
+  @override
+  String get scoringGradeLabel => 'Оценка';
+
+  @override
+  String scoringGradeApproxTitle(String year) {
+    return 'Ориентировочная оценка (по порядку $year)';
+  }
+
+  @override
+  String get scoringGradeBelowMin => 'Ниже минимального проходного балла';
+
+  @override
+  String scoringApproxNote(String minPass) {
+    return 'Это ориентировочная оценка, рассчитанная приложением по доле правильных ответов (100-балльная шкала; минимальный проходной балл $minPass). Это не официальная оценка.';
+  }
+
+  @override
+  String scoringRowLine(String score, String grade) {
+    return 'Балл (100): $score · Оценка: $grade';
+  }
+
+  @override
+  String get scoringSpeedPointsNote =>
+      'Баллы за скорость учитываются только в рейтинге класса.';
+
+  @override
+  String get scoringMidtermTitle => 'Промежуточный контроль';
+
+  @override
+  String scoringMidtermIntro(int count, int minutes, int days) {
+    return 'Выберите курс: все его темы выбираются автоматически. По умолчанию: до $count вопросов, $minutes минут, открыт $days день. Всё можно изменить перед созданием.';
+  }
+
+  @override
+  String scoringMidtermCourseLine(int topics, int questions) {
+    return '$topics тем · $questions вопросов';
+  }
+
+  @override
+  String scoringMidtermApplied(String course) {
+    return 'Промежуточный контроль для «$course»: выбраны все темы. Проверьте настройки ниже.';
+  }
+
+  @override
+  String scoringMidtermPoolShort(int pool) {
+    return 'В курсе всего $pool вопросов, поэтому количество вопросов установлено $pool.';
+  }
+
+  @override
+  String scoringMidtermVariantOff(int pool, int max) {
+    return 'Варианты выключены: банк вопросов ($pool) меньше удвоенного числа вопросов на студента. Установите $max вопросов или меньше, чтобы включить варианты.';
+  }
+
+  @override
+  String get scoringMidtermVariantOn =>
+      'Каждый студент получает свой набор вопросов (варианты включены).';
 }

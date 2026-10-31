@@ -549,7 +549,11 @@ void main() {
         expect(ex.rows.map((r) => r.nickname), ['Ali', 'Vali']);
         expect(ex.rows.first.correct, 5);
         expect(ex.rows.first.score, greaterThan(ex.rows.last.score));
-        final csv = ClassResultsCsv.build(ex.rows);
+        final csv = ClassResultsCsv.build(
+          ex.rows,
+          total: ex.session.total,
+          belowMinLabel: 'Minimal o‘tish balidan past',
+        );
         expect(csv.split('\r\n').first, ClassResultsCsv.header);
         expect(csv, contains('Ali,'));
       },

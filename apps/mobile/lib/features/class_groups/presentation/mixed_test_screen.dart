@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../app/class_groups.dart';
 import '../../../app/class_quiz.dart';
+import '../../../app/plan.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -12,7 +13,10 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/class_groups/variant_draw.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart' show ClassTopic;
+import '../../../domain/plan/plan_models.dart';
+import '../../pro/presentation/pro_gate.dart' show openPro;
 import 'group_widgets.dart';
+import 'midterm_preset.dart';
 import 'test_settings.dart';
 
 /// Manba (kurs/fan guruhi) va undagi tanlanadigan mavzular.
@@ -89,6 +93,38 @@ class _MixedTestState extends ConsumerState<MixedTestScreen> {
   var _s = const TestSettings(count: 20);
   bool _busy = false;
   String? _error;
+
+  /// «Oraliq nazorat» tanlangan kurs (bo‘lsa) va sozlamalar bo‘limi kaliti.
+  MixedSource? _midterm;
+  final _settingsKey = GlobalKey();
+
+  /// «Oraliq nazorat»: kursning BARCHA mavzulari, nom, 30 savol / 40 daqiqa /
+  /// 1 kun; hammasi yaratishdan oldin tahrirlanadi.
+  void _applyMidterm(MixedSource src, AppLocalizations l) {
+    if (!ref.read(proAllowedProvider(ProFeature.unlimitedGroupTests))) {
+      openPro(context, Plan.teacher);
+      return;
+    }
+    setState(() {
+      _midterm = src;
+      _selected
+        ..clear()
+        ..addAll(src.topics.map((x) => x.id));
+      _titleEdited = true;
+      _title.text = midtermTitle(l.scoringMidtermTitle, src.title);
+      _s = midtermSettings(midtermPool(src));
+      _error = null;
+    });
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final ctx = _settingsKey.currentContext;
+      if (ctx != null && ctx.mounted) {
+        Scrollable.ensureVisible(
+          ctx,
+          duration: const Duration(milliseconds: 250),
+        );
+      }
+    });
+  }
 
   @override
   void dispose() {
@@ -252,6 +288,14 @@ class _MixedTestState extends ConsumerState<MixedTestScreen> {
                     l.grpMixedIntro,
                     style: t.bodyMedium?.copyWith(color: c.textSecondary),
                   ),
+                  if (midtermCourses(sources).isNotEmpty) ...[
+                    const SizedBox(height: FeSpace.xs),
+                    MidtermPresetCard(
+                      courses: midtermCourses(sources),
+                      pickedId: _midterm?.id,
+                      onPick: (src) => _applyMidterm(src, l),
+                    ),
+                  ],
                   FeSectionHeader(l.grpMixedSources),
                   if (topics.isLoading)
                     FeListSkeleton(semanticLabel: l.grpMixedSources)
@@ -262,7 +306,12 @@ class _MixedTestState extends ConsumerState<MixedTestScreen> {
                     ),
                   for (final src in sources) _source(context, src),
                   if (chosen.isNotEmpty) ...[
-                    FeSectionHeader(l.grpMixedSelected(chosen.length, total)),
+                    KeyedSubtree(
+                      key: _settingsKey,
+                      child: FeSectionHeader(
+                        l.grpMixedSelected(chosen.length, total),
+                      ),
+                    ),
                     TextField(
                       key: const Key('grp.mixedTitle'),
                       controller: _title,
@@ -282,6 +331,12 @@ class _MixedTestState extends ConsumerState<MixedTestScreen> {
                       now: ref.read(groupNowProvider),
                       onChanged: (v) => setState(() => _s = v),
                     ),
+                    if (_midterm != null)
+                      MidtermNotes(
+                        course: _midterm!.title,
+                        pool: total,
+                        settings: _s,
+                      ),
                     const SizedBox(height: FeSpace.sm),
                     OutlinedButton.icon(
                       key: const Key('grp.mixedPreviewButton'),

@@ -13,6 +13,8 @@ import 'dart:math';
 
 import 'package:flutter/foundation.dart';
 
+import '../grading/grade_scale.dart';
+
 /// Chegaralar (server CHECK’lari bilan bir xil).
 abstract final class ClassQuizRules {
   static const int minQuestions = 5;
@@ -1117,10 +1119,14 @@ class ClassQuizMe {
   final bool isTeacher;
 }
 
-/// Natijani CSV’ga aylantirish. Ustunlar: laqab, ball, to‘g‘ri soni, javoblar
-/// vaqti (o‘rtacha, soniya). Sarlavhalar ASCII; fayl nomi ham ASCII.
+/// Natijani CSV’ga aylantirish. Ustunlar: laqab, ball (tezlik ballari — jonli
+/// reyting), to‘g‘ri soni, javoblar vaqti (o‘rtacha, soniya), «Ball (100)» va
+/// «Baho» (to‘g‘ri/jami × 100 va taxminiy baho, [GradeScale]). Sarlavhalar
+/// ASCII (ikki oxirgisi — ustoz reestri uchun); fayl nomi ham ASCII.
 abstract final class ClassResultsCsv {
-  static const header = 'laqab,ball,togri_soni,javob_vaqti_s';
+  static const header =
+      'laqab,ball,togri_soni,javob_vaqti_s,${GradeScaleCsv.scoreHeader},'
+      '${GradeScaleCsv.gradeHeader}';
 
   /// Formula in’yeksiyasidan himoya (`=`, `+`, `-`, `@`, tab, CR).
   static String cell(String v) {
@@ -1132,11 +1138,21 @@ abstract final class ClassResultsCsv {
     return s;
   }
 
-  static String build(List<ClassExportRow> rows) {
+  /// [total] — sessiyadagi savollar soni; [belowMinLabel] — «Minimal o‘tish
+  /// balidan past» (ilova tilida).
+  static String build(
+    List<ClassExportRow> rows, {
+    required int total,
+    required String belowMinLabel,
+  }) {
     final b = StringBuffer('$header\r\n');
     for (final r in rows) {
       final secs = (r.avgMs / 1000).toStringAsFixed(1);
-      b.write('${cell(r.nickname)},${r.score},${r.correct},$secs\r\n');
+      final g = GradeScale.of(r.correct, total);
+      b.write(
+        '${cell(r.nickname)},${r.score},${r.correct},$secs,${g.text},'
+        '${cell(GradeScaleCsv.gradeCell(g.grade, belowMinLabel))}\r\n',
+      );
     }
     return b.toString();
   }

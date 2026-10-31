@@ -12,6 +12,7 @@ import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../core/widgets/score_grade.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart';
 import 'class_quiz_widgets.dart';
 
@@ -755,6 +756,15 @@ class _SelfDone extends ConsumerWidget {
                   key: const Key('class.finalCorrect'),
                   style: t.bodyMedium,
                 ),
+              if (results != null && results.total > 0) ...[
+                const SizedBox(height: FeSpace.sm),
+                ScoreGradeBlock(correct: results.correct, total: results.total),
+                Text(
+                  l.scoringSpeedPointsNote,
+                  textAlign: TextAlign.center,
+                  style: t.bodySmall?.copyWith(color: c.textSecondary),
+                ),
+              ],
               const SizedBox(height: FeSpace.xs),
               Text(
                 l.classSelfDoneBody,
@@ -879,6 +889,18 @@ class _StudentFinished extends ConsumerWidget {
                         key: const Key('class.finalCorrect'),
                         style: t.bodyMedium,
                       ),
+                    if (results != null && results.total > 0) ...[
+                      const SizedBox(height: FeSpace.sm),
+                      ScoreGradeBlock(
+                        correct: results.correct,
+                        total: results.total,
+                      ),
+                      Text(
+                        l.scoringSpeedPointsNote,
+                        textAlign: TextAlign.center,
+                        style: t.bodySmall?.copyWith(color: c.textSecondary),
+                      ),
+                    ],
                   ],
                 ),
               ),

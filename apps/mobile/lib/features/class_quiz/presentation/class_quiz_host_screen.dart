@@ -11,6 +11,7 @@ import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../core/widgets/score_grade.dart';
 
 import '../../../domain/class_quiz/class_quiz_models.dart';
 import '../../../domain/plan/plan_models.dart';
@@ -1887,13 +1888,22 @@ class _HardestRow extends StatelessWidget {
 }
 
 class _LeaderRowView extends StatelessWidget {
-  const _LeaderRowView({required this.row, this.compact = false, this.total});
+  const _LeaderRowView({
+    required this.row,
+    this.compact = false,
+    this.total,
+    this.showGrade = false,
+  });
 
   final ClassLeaderRow row;
   final bool compact;
 
   /// Sessiyadagi savollar soni («7/10 to‘g‘ri» uchun); bilinmasa — ko‘rsatilmaydi.
   final int? total;
+
+  /// Yakuniy natija: «Ball (100) · Baho» qatori (tezlik ballari reytingi
+  /// o‘zgarmaydi).
+  final bool showGrade;
 
   @override
   Widget build(BuildContext context) {
@@ -1940,6 +1950,16 @@ class _LeaderRowView extends StatelessWidget {
                   Text(
                     parts.join(' · '),
                     key: Key('class.rankDetail.${row.participantId}'),
+                    style: t.bodySmall?.copyWith(
+                      fontFamily: FeFonts.sans,
+                      color: c.textSecondary,
+                    ),
+                  ),
+                if (showGrade && total != null && total! > 0)
+                  ScoreGradeLine(
+                    key: Key('class.grade.${row.participantId}'),
+                    correct: row.correct,
+                    total: total!,
                     style: t.bodySmall?.copyWith(
                       fontFamily: FeFonts.sans,
                       color: c.textSecondary,
@@ -2004,12 +2024,22 @@ class _Finished extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(l.classLeaderboard, style: t.titleMedium),
+                    const SizedBox(height: FeSpace.xxs),
+                    Text(
+                      scoreApproxNote(l),
+                      key: const Key('class.scoreApproxNote'),
+                      style: t.bodySmall?.copyWith(color: c.textSecondary),
+                    ),
                     const SizedBox(height: FeSpace.xs),
                     if (d.leaderboard.isEmpty)
                       Text(l.classNoScoresYet)
                     else
                       for (final r in d.leaderboard)
-                        _LeaderRowView(row: r, total: d.session.total),
+                        _LeaderRowView(
+                          row: r,
+                          total: d.session.total,
+                          showGrade: true,
+                        ),
                   ],
                 ),
               ),
@@ -2094,6 +2124,11 @@ class _Finished extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Text(l.classLeaderboard, style: t.titleMedium),
+              Text(
+                scoreApproxNote(l),
+                key: const Key('class.scoreApproxNote'),
+                style: t.bodySmall?.copyWith(color: c.textSecondary),
+              ),
               SizedBox(height: gap),
               Expanded(
                 child: d.leaderboard.isEmpty
@@ -2103,7 +2138,11 @@ class _Finished extends StatelessWidget {
                             ScrollViewKeyboardDismissBehavior.onDrag,
                         children: [
                           for (final r in d.leaderboard)
-                            _LeaderRowView(row: r, total: d.session.total),
+                            _LeaderRowView(
+                              row: r,
+                              total: d.session.total,
+                              showGrade: true,
+                            ),
                         ],
                       ),
               ),

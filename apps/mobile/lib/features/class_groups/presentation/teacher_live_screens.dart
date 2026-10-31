@@ -12,6 +12,7 @@ import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../core/widgets/score_grade.dart';
 import '../../../domain/class_groups/class_groups_models.dart';
 import '../../../domain/plan/plan_models.dart';
 import '../../class_quiz/presentation/class_hardest_screen.dart'
@@ -20,6 +21,7 @@ import '../../class_quiz/presentation/class_quiz_widgets.dart'
     show ClassQr, ClassReconnectingBar;
 import '../../pro/presentation/pro_gate.dart' show ProIcon;
 import '../../professional/presentation/professional_widgets.dart' show FeNote;
+import 'group_results_export.dart';
 import 'group_widgets.dart';
 
 /// Oxirgi yaxshi holatni ushlab turadigan polling: bitta xato ekranni xato
@@ -298,6 +300,16 @@ class _TeacherAssignmentState extends ConsumerState<TeacherAssignmentScreen> {
           ),
         for (final x in d.ranked)
           _LiveRow(key: Key('grp.row.${x.row.memberId}'), item: x),
+        if (d.count(BoardState.finished) > 0) ...[
+          const SizedBox(height: FeSpace.xs),
+          Text(
+            scoreApproxNote(l),
+            key: const Key('grp.scoreApproxNote'),
+            style: t.bodySmall?.copyWith(color: c.textSecondary),
+          ),
+          const SizedBox(height: FeSpace.sm),
+          GroupCsvButton(board: d),
+        ],
         const SizedBox(height: FeSpace.md),
         FeNote(
           icon: Icons.lock_clock_outlined,
@@ -408,6 +420,8 @@ class _LiveRow extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                 ),
                 GroupStatePill(state: row.state),
+                if (finished && row.total != null)
+                  ScoreGradeLine(correct: row.score ?? 0, total: row.total!),
               ],
             ),
           ),

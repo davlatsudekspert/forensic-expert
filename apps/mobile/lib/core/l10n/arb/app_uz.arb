@@ -3431,5 +3431,19 @@
   "tcErrOffline": "Internet yo‘q. Qayta urinib ko‘ring.",
   "tcErrNotConfigured": "Bu xizmat hali ulanmagan.",
   "tcErrServer": "Amalni bajarib bo‘lmadi. Keyinroq qayta urinib ko‘ring.",
-  "tcErrSignIn": "Avval hisobingizga kiring."
+  "tcErrSignIn": "Avval hisobingizga kiring.",
+  "scoringScore100Label": "Ball (100)",
+  "scoringGradeLabel": "Baho",
+  "scoringGradeApproxTitle": "Taxminiy baho ({year} tartibi bo‘yicha)",
+  "scoringGradeBelowMin": "Minimal o‘tish balidan past",
+  "scoringApproxNote": "Bu baho ilova to‘g‘ri javoblar ulushidan hisoblagan taxminiy baho (100 ballik shkala; minimal o‘tish bali {minPass}). Rasmiy baho emas.",
+  "scoringRowLine": "Ball (100): {score} · Baho: {grade}",
+  "scoringSpeedPointsNote": "Tezlik ballari faqat sinf reytingi uchun.",
+  "scoringMidtermTitle": "Oraliq nazorat",
+  "scoringMidtermIntro": "Kursni tanlang: uning barcha mavzulari avtomatik tanlanadi. Standart: {count} tagacha savol, {minutes} daqiqa, {days} kun ochiq. Yaratishdan oldin hammasini tahrirlash mumkin.",
+  "scoringMidtermCourseLine": "{topics} ta mavzu · {questions} ta savol",
+  "scoringMidtermApplied": "«{course}» uchun oraliq nazorat tayyor: barcha mavzular tanlandi. Sozlamalarni pastda tekshiring.",
+  "scoringMidtermPoolShort": "Kursda faqat {pool} ta savol bor, shuning uchun savollar soni {pool} qilindi.",
+  "scoringMidtermVariantOff": "Variantlar o‘chirildi: savollar hovuzi ({pool}) har talabaga beriladigan savollar sonining ikki baravaridan kam. Variantlarni yoqish uchun savollar sonini {max} yoki undan kam qiling.",
+  "scoringMidtermVariantOn": "Har talaba boshqa savollar to‘plamini oladi (variantlar yoqilgan)."
 }

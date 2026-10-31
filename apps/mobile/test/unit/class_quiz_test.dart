@@ -188,17 +188,28 @@ void main() {
       ),
     ];
 
-    test('ustunlar: laqab, ball, to‘g‘ri soni, javob vaqti', () {
-      final csv = ClassResultsCsv.build(rows);
-      final lines = csv.trim().split('\r\n');
-      expect(lines.first, 'laqab,ball,togri_soni,javob_vaqti_s');
-      expect(lines[1], 'Ali,1800,2,4.3');
+    const below = 'Minimal o‘tish balidan past';
+    String build() =>
+        ClassResultsCsv.build(rows, total: 2, belowMinLabel: below);
+
+    test('ustunlar: mavjudlari saqlangan + «Ball (100)» va «Baho»', () {
+      final lines = build().trim().split('\r\n');
+      expect(
+        lines.first,
+        'laqab,ball,togri_soni,javob_vaqti_s,Ball (100),Baho',
+      );
+      expect(lines.first, ClassResultsCsv.header);
+      // 2/2 → 100.0 → 5 (tezlik balli 1800 o‘zgarmaydi).
+      expect(lines[1], 'Ali,1800,2,4.3,100.0,5');
+      // 0/2 → 0.0 → «Minimal o‘tish balidan past» (qarzdorlik emas).
+      expect(lines[2], '"\'=HYPERLINK(""x"")",0,0,0.0,0.0,$below');
     });
 
     test('formula in’yeksiyasi va vergul', () {
-      final csv = ClassResultsCsv.build(rows);
+      final csv = build();
       expect(csv, contains('\'=HYPERLINK'));
-      expect(csv, contains('"A,B",500,1,30.0'));
+      // 1/2 → 50.0 → minimal o‘tish balidan past.
+      expect(csv, contains('"A,B",500,1,30.0,50.0,$below'));
     });
 
     test('fayl nomi ASCII va sanaga ega', () {

@@ -13,6 +13,7 @@ import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../core/widgets/score_grade.dart';
 import '../../../domain/class_groups/class_groups_models.dart';
 import '../../../domain/class_groups/variant_draw.dart';
 import '../../professional/presentation/professional_widgets.dart' show FeNote;
@@ -604,6 +605,8 @@ class GroupResultScreen extends ConsumerWidget {
                 style: t.displaySmall?.copyWith(fontWeight: FontWeight.w700),
               ),
               Text(l.grpScoreCaption, style: t.bodySmall),
+              const SizedBox(height: FeSpace.sm),
+              ScoreGradeBlock(correct: r.score, total: r.total),
               if (r.expired) ...[
                 const SizedBox(height: FeSpace.xs),
                 Text(l.grpExpiredNote, style: t.bodySmall),
