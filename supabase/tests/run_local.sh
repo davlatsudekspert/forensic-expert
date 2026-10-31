@@ -31,6 +31,7 @@ FIXTURE="$HERE/../../apps/mobile/test/fixtures/class_group_variant_vectors.json"
 $P -d fe -v fixture="$FIXTURE" -f "$HERE/class_groups_test.sql"
 $P -d fe -f "$HERE/class_groups_e2e.sql"
 $P -d fe -f "$HERE/group_hardest_detail_test.sql"
+$P -d fe -f "$HERE/anti_cheat_seconds_leave_test.sql"
 $P -d fe -f "$HERE/plans_test.sql"
 $P -d fe -f "$HERE/teacher_card_test.sql"
 # RLS role matrix: fresh database with Supabase-like default table grants

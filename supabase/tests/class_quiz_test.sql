@@ -167,8 +167,11 @@ select pg_temp.cq_check((public.class_create_session('demo-topic', 4, 30, 30)->>
   'fewer than 5 questions is refused');
 select pg_temp.cq_check((public.class_create_session('demo-topic', 5, 4, 30)->>'error') = 'invalid_settings',
   'fewer than 5 students is refused');
-select pg_temp.cq_check((public.class_create_session('demo-topic', 5, 30, 20)->>'error') = 'invalid_settings',
-  'a time other than 15/30/45/60 is refused');
+-- Free seconds (5..300) since migration 20261031010000; values outside are refused
+-- both before and after it (the old whitelist 15/30/45/60 is covered by the rollback run).
+select pg_temp.cq_check((public.class_create_session('demo-topic', 5, 30, 3)->>'error') = 'invalid_settings'
+  and (public.class_create_session('demo-topic', 5, 30, 301)->>'error') = 'invalid_settings',
+  'a time outside the allowed range is refused (3 and 301 s)');
 select pg_temp.cq_check((public.class_create_session('tiny-topic', 5, 30, 30)->>'error') = 'not_enough_questions',
   'a topic with too few questions is refused');
 select pg_temp.cq_check((public.class_create_session('missing', 5, 30, 30)->>'error') = 'not_enough_questions',
