@@ -148,6 +148,43 @@ class ReferralDashboard {
   final bool hasReferrer;
 }
 
+/// «3 do‘st Pro sotib olsa = 1 oy Pro» — server hisoblagan progress
+/// (`my_referral_reward_progress`). Mijoz hech narsa hisoblamaydi/yozmaydi.
+@immutable
+class ReferralRewardProgress {
+  const ReferralRewardProgress({
+    this.qualifiedBuyers = 0,
+    this.needed = 3,
+    this.rewardsGranted = 0,
+    this.rewardsEnabled = false,
+  });
+
+  factory ReferralRewardProgress.fromJson(Map<String, Object?> j) {
+    int i(String k, int d) => switch (j[k]) {
+      final num n => n.toInt(),
+      final String s => int.tryParse(s) ?? d,
+      _ => d,
+    };
+    return ReferralRewardProgress(
+      qualifiedBuyers: i('qualified_buyers', 0),
+      needed: i('needed', 3) <= 0 ? 3 : i('needed', 3),
+      rewardsGranted: i('rewards_granted', 0),
+      rewardsEnabled: j['rewards_enabled'] == true,
+    );
+  }
+
+  /// Pro sotib olgan, hali mukofotga ishlatilmagan do‘stlar.
+  final int qualifiedBuyers;
+  final int needed;
+  final int rewardsGranted;
+
+  /// Server o‘chirgichi: `false` bo‘lsa ekranda hech narsa ko‘rsatilmaydi.
+  final bool rewardsEnabled;
+
+  /// Ekranga mos son (0…needed-1; mukofot berilgach progress qayta boshlanadi).
+  int get shown => qualifiedBuyers % needed;
+}
+
 enum ReferralClaimOutcome {
   valid,
   pendingVerification,

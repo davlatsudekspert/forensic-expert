@@ -21458,6 +21458,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Full explanation and practice'**
   String get dailyQuestionExplain;
+
+  /// Referral screen: progress toward the Pro reward (shown only when rewards are enabled).
+  ///
+  /// In en, this message translates to:
+  /// **'{n} of {needed} friends got Pro. At {needed}, you get 1 month of Pro.'**
+  String referralRewardProgress(int n, int needed);
+
+  /// Referral screen: how many 1-month Pro rewards were already granted.
+  ///
+  /// In en, this message translates to:
+  /// **'Rewards earned: {count} × 1 month of Pro'**
+  String referralRewardGranted(int count);
 }
 
 class _AppLocalizationsDelegate

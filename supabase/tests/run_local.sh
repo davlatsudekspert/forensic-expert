@@ -33,6 +33,7 @@ $P -d fe -f "$HERE/class_groups_e2e.sql"
 $P -d fe -f "$HERE/group_hardest_detail_test.sql"
 $P -d fe -f "$HERE/anti_cheat_seconds_leave_test.sql"
 $P -d fe -f "$HERE/plans_test.sql"
+$P -d fe -f "$HERE/referral_pro_reward_test.sql"
 $P -d fe -f "$HERE/teacher_card_test.sql"
 $P -d fe -f "$HERE/student_card_test.sql"
 # RLS role matrix: fresh database with Supabase-like default table grants

@@ -86,4 +86,28 @@ class SupabaseReferralService implements ReferralService {
       return ReferralClaimOutcome.offline;
     }
   }
+
+  @override
+  Future<ReferralRewardProgress?> rewardProgress() async {
+    final h = await _headers();
+    if (h == null) return null;
+    try {
+      final r = await _http.send(
+        'POST',
+        _rpc('my_referral_reward_progress'),
+        headers: h,
+        jsonBody: const <String, Object?>{},
+      );
+      if (!r.ok) return null;
+      return ReferralRewardProgress.fromJson(r.map);
+    } on FormatException {
+      return null;
+    } on SocketException {
+      return null;
+    } on TimeoutException {
+      return null;
+    } on HandshakeException {
+      return null;
+    }
+  }
 }

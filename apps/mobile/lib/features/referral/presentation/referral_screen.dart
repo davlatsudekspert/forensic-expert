@@ -299,6 +299,7 @@ class _Dashboard extends ConsumerWidget {
         ),
         FeSectionHeader(l.referralStatsTitle),
         _Stats(dashboard: dashboard),
+        const _RewardProgress(),
         const SizedBox(height: FeSpace.sm),
         FeNote(
           key: const Key('referral.privacy'),
@@ -306,6 +307,41 @@ class _Dashboard extends ConsumerWidget {
           text: l.referralPrivacyNote,
         ),
       ],
+    );
+  }
+}
+
+/// «Do‘stlaringizdan N/3 tasi Pro oldi…» — faqat server `rewards_enabled`
+/// desa (Pro xaridlari yoqilmaguncha hech narsa ko‘rinmaydi).
+class _RewardProgress extends ConsumerWidget {
+  const _RewardProgress();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final p = ref.watch(referralRewardProgressProvider).value;
+    if (p == null || !p.rewardsEnabled) return const SizedBox.shrink();
+    final l = AppLocalizations.of(context);
+    return Padding(
+      padding: const EdgeInsets.only(top: FeSpace.sm),
+      child: Column(
+        key: const Key('referral.reward'),
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          FeNote(
+            key: const Key('referral.rewardProgress'),
+            icon: Icons.card_giftcard_outlined,
+            text: l.referralRewardProgress(p.shown, p.needed),
+          ),
+          if (p.rewardsGranted > 0) ...[
+            const SizedBox(height: FeSpace.xs),
+            FeNote(
+              key: const Key('referral.rewardGranted'),
+              icon: Icons.verified_outlined,
+              text: l.referralRewardGranted(p.rewardsGranted),
+            ),
+          ],
+        ],
+      ),
     );
   }
 }

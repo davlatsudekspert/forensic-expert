@@ -2,6 +2,7 @@
 create role anon nologin;
 create role authenticated nologin;
 create role service_role nologin bypassrls;
+create role authenticator nologin;
 create schema auth;
 create table auth.users (id uuid primary key, email text,
   created_at timestamptz not null default now(), email_confirmed_at timestamptz,

@@ -12394,4 +12394,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get dailyQuestionExplain => 'Full explanation and practice';
+
+  @override
+  String referralRewardProgress(int n, int needed) {
+    return '$n of $needed friends got Pro. At $needed, you get 1 month of Pro.';
+  }
+
+  @override
+  String referralRewardGranted(int count) {
+    return 'Rewards earned: $count × 1 month of Pro';
+  }
 }

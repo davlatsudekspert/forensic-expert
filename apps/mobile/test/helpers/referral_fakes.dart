@@ -11,11 +11,13 @@ class FakeReferralService implements ReferralService {
     this.dashboard = const ReferralDashboard(code: 'K7QH2MPX'),
     this.claimOutcome = ReferralClaimOutcome.valid,
     this.configured = true,
+    this.progress,
   });
 
   ReferralDashboard dashboard;
   ReferralClaimOutcome claimOutcome;
   final bool configured;
+  ReferralRewardProgress? progress;
   final claims = <String>[];
   int fetches = 0;
 
@@ -27,6 +29,9 @@ class FakeReferralService implements ReferralService {
     fetches++;
     return ReferralResult.ok(dashboard);
   }
+
+  @override
+  Future<ReferralRewardProgress?> rewardProgress() async => progress;
 
   @override
   Future<ReferralClaimOutcome> claim(String code) async {

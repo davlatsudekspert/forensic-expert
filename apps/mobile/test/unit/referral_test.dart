@@ -100,6 +100,29 @@ void main() {
     });
   });
 
+  group('Pro mukofoti progressi (model)', () {
+    test('fromJson: standart qiymatlar va o‘chiq bayroq', () {
+      final p = ReferralRewardProgress.fromJson(const {});
+      expect(p.rewardsEnabled, isFalse);
+      expect(p.needed, 3);
+      expect(p.shown, 0);
+      final q = ReferralRewardProgress.fromJson(const {
+        'qualified_buyers': '4',
+        'needed': 3,
+        'rewards_enabled': true,
+      });
+      expect(q.shown, 1);
+      expect(ReferralRewardProgress.fromJson(const {'needed': 0}).needed, 3);
+    });
+
+    test('ulanmagan xizmat: progress yo‘q', () async {
+      expect(
+        await const UnconfiguredReferralService().rewardProgress(),
+        isNull,
+      );
+    });
+  });
+
   group('Panel va natijalar', () {
     test('agregat JSON → model; kredit formati', () {
       final d = ReferralDashboard.fromJson({
@@ -193,6 +216,36 @@ void main() {
       expect(call.$1.path, '/rest/v1/rpc/referral_dashboard');
       expect(call.$2['Authorization'], 'Bearer access-1');
       expect(call.$3, isEmpty);
+    });
+
+    test('Pro mukofoti progressi: RPC + Bearer, xatoda null', () async {
+      var fail = false;
+      final t = _Transport((u, b) {
+        if (u.path.endsWith('rpc/my_referral_reward_progress')) {
+          return fail
+              ? const RestResponse(500, {})
+              : const RestResponse(200, {
+                  'qualified_buyers': 2,
+                  'needed': 3,
+                  'rewards_granted': 1,
+                  'rewards_enabled': true,
+                });
+        }
+        return session();
+      });
+      final svc = SupabaseReferralService(
+        config: _cfg,
+        auth: await signedIn(t),
+        transport: t,
+      );
+      final p = await svc.rewardProgress();
+      expect(p?.qualifiedBuyers, 2);
+      expect(p?.rewardsGranted, 1);
+      expect(p?.rewardsEnabled, isTrue);
+      expect(t.calls.last.$1.path, '/rest/v1/rpc/my_referral_reward_progress');
+      expect(t.calls.last.$2['Authorization'], 'Bearer access-1');
+      fail = true;
+      expect(await svc.rewardProgress(), isNull);
     });
 
     test('kod qo‘llash: normallashgan kod; mukofot yozilmaydi', () async {

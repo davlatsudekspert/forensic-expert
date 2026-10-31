@@ -10,6 +10,9 @@ abstract interface class ReferralService {
 
   /// Taklif kodini qo‘llash (faqat yangi, kirgan akkaunt uchun).
   Future<ReferralClaimOutcome> claim(String code);
+
+  /// Pro mukofoti progressi. Xatoda yoki ulanmaganda `null` (ekran jim qoladi).
+  Future<ReferralRewardProgress?> rewardProgress();
 }
 
 /// Backend yo‘q — hech narsa soxtalashtirilmaydi.
@@ -26,6 +29,9 @@ class UnconfiguredReferralService implements ReferralService {
   @override
   Future<ReferralClaimOutcome> claim(String code) async =>
       ReferralClaimOutcome.notConfigured;
+
+  @override
+  Future<ReferralRewardProgress?> rewardProgress() async => null;
 }
 
 /// Kutilayotgan taklif kodi (deep link yoki qo‘lda kiritilgan) — faqat

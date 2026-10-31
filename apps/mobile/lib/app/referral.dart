@@ -35,6 +35,15 @@ final referralDashboardProvider = FutureProvider.autoDispose<ReferralResult>((
   return svc.fetch();
 });
 
+/// Pro mukofoti progressi (faqat server `rewards_enabled` bo‘lsa ko‘rsatiladi).
+final referralRewardProgressProvider =
+    FutureProvider.autoDispose<ReferralRewardProgress?>((ref) async {
+      final auth = ref.watch(authStateProvider);
+      final svc = ref.watch(referralServiceProvider);
+      if (!svc.isConfigured || !auth.signedIn) return null;
+      return svc.rewardProgress();
+    });
+
 /// Kutilayotgan taklif kodi va uni qo‘llash natijasi.
 class PendingReferralState {
   const PendingReferralState({this.code, this.lastOutcome});

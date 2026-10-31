@@ -407,4 +407,67 @@ void main() {
       expect(find.text('Saved to your library'), findsOneWidget);
     });
   });
+
+  Future<void> pumpReward(
+    WidgetTester tester,
+    ReferralRewardProgress? progress,
+  ) async {
+    await pumpApp(
+      tester,
+      settings: completedSettings(),
+      initialLocation: Routes.referral,
+      overrides: [
+        authRepositoryProvider.overrideWithValue(await signedInMockAuth()),
+        referralServiceProvider.overrideWithValue(
+          FakeReferralService(progress: progress),
+        ),
+      ],
+    );
+    await tester.scrollUntilVisible(
+      find.byKey(const Key('referral.stats')),
+      200,
+      scrollable: find.byType(Scrollable).first,
+    );
+    await tester.pumpAndSettle();
+  }
+
+  testWidgets(
+    'Pro mukofoti: server o‘chiq (yoki javob yo‘q) — hech narsa ko‘rinmaydi',
+    (tester) async {
+      await pumpReward(
+        tester,
+        const ReferralRewardProgress(qualifiedBuyers: 2),
+      );
+      expect(find.byKey(const Key('referral.reward')), findsNothing);
+      expect(find.textContaining('friends got Pro'), findsNothing);
+      expect(find.textContaining('1 month'), findsNothing);
+    },
+  );
+
+  testWidgets('Pro mukofoti: progress null — hech narsa ko‘rinmaydi', (
+    tester,
+  ) async {
+    await pumpReward(tester, null);
+    expect(find.byKey(const Key('referral.reward')), findsNothing);
+  });
+
+  testWidgets('Pro mukofoti: yoqilgan — N/3 va olingan mukofot ko‘rinadi', (
+    tester,
+  ) async {
+    await pumpReward(
+      tester,
+      const ReferralRewardProgress(
+        qualifiedBuyers: 2,
+        rewardsGranted: 1,
+        rewardsEnabled: true,
+      ),
+    );
+    expect(find.byKey(const Key('referral.rewardProgress')), findsOneWidget);
+    expect(
+      find.text('2 of 3 friends got Pro. At 3, you get 1 month of Pro.'),
+      findsOneWidget,
+    );
+    expect(find.byKey(const Key('referral.rewardGranted')), findsOneWidget);
+    expect(find.text('Rewards earned: 1 × 1 month of Pro'), findsOneWidget);
+  });
 }

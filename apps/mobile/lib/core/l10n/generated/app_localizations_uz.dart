@@ -12324,4 +12324,14 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get dailyQuestionExplain => 'To‘liq izoh va mashq';
+
+  @override
+  String referralRewardProgress(int n, int needed) {
+    return 'Do‘stlaringizdan $n/$needed tasi Pro oldi — $needed ta bo‘lsa, sizga 1 oy Pro';
+  }
+
+  @override
+  String referralRewardGranted(int count) {
+    return 'Olingan mukofotlar: $count × 1 oy Pro';
+  }
 }

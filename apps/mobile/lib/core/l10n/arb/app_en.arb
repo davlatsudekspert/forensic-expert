@@ -16206,5 +16206,9 @@
   "dailyQuestionExplain": "Full explanation and practice",
   "@dailyQuestionExplain": {
     "description": "Button: open the full explanation in the normal quiz."
-  }
+  },
+  "referralRewardProgress": "{n} of {needed} friends got Pro. At {needed}, you get 1 month of Pro.",
+  "@referralRewardProgress": {"description": "Referral screen: progress toward the Pro reward (shown only when rewards are enabled).", "placeholders": {"n": {"type": "int"}, "needed": {"type": "int"}}},
+  "referralRewardGranted": "Rewards earned: {count} × 1 month of Pro",
+  "@referralRewardGranted": {"description": "Referral screen: how many 1-month Pro rewards were already granted.", "placeholders": {"count": {"type": "int"}}}
 }

@@ -113,6 +113,11 @@ insert into matrix_tables values
  ('private.referral_secret',       null,           false, false, 'id'),
  ('private.account_email_history', null,           false, false, 'email_hash'),
  ('private.referral_audit',        null,           false, false, 'event'),
+ -- «3 do‘st Pro» (20261031070000): no grant, only SECURITY DEFINER functions.
+ ('public.tts_usage',              'user_id',      false, false, 'chars'),
+ ('public.app_config',             null,           false, false, 'min_build'),
+ ('private.referral_purchases',    null,           false, false, 'status'),
+ ('private.referral_pro_rewards',  null,           false, false, 'status'),
  -- «Savol-javob»: no policy at all, so every role is denied directly and
  -- only the SECURITY DEFINER functions let anything through.
  ('public.qa_profiles',            'user_id',      false, false, 'status'),
@@ -290,6 +295,14 @@ insert into referrals (referrer_id, referred_id, code, status)
 insert into referral_rewards (referral_id, referrer_id, referred_user_id, reward_percent,
   purchase_amount_minor, reward_amount_minor, currency, source_transaction)
   select id, referrer_id, referred_id, 10, 1000, 100, 'USD', 'matrix-tx-1' from referrals;
+insert into public.tts_usage (user_id, chars) select '50000000-0000-0000-0000-00000000000a', 10
+  where not exists (select 1 from public.tts_usage);
+insert into private.referral_pro_rewards (referrer_id, buyers, days)
+  select '50000000-0000-0000-0000-00000000000a', array['50000000-0000-0000-0000-00000000000b'::uuid], 30
+  where not exists (select 1 from private.referral_pro_rewards);
+insert into private.referral_purchases (buyer_id, referrer_id, purchase_ref)
+  select '50000000-0000-0000-0000-00000000000b', '50000000-0000-0000-0000-00000000000a', 'matrix-purchase-1'
+  where not exists (select 1 from private.referral_purchases);
 insert into private.admin_audit (action) select 'MATRIX_SEED' where not exists (select 1 from private.admin_audit);
 insert into private.referral_audit (event) select 'MATRIX_SEED'
   where not exists (select 1 from private.referral_audit);
