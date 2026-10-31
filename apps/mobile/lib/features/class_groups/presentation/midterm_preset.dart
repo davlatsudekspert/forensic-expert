@@ -105,6 +105,10 @@ class MidtermPresetCard extends StatelessWidget {
                 style: FilledButton.styleFrom(
                   minimumSize: const Size.fromHeight(52),
                   alignment: AlignmentDirectional.centerStart,
+                  // Tema FilledButton'ni to'q fon (brand) bilan beradi; matn
+                  // ranglari shu fonga mos aniq beriladi (o'qiladigan).
+                  backgroundColor: c.accentContainer,
+                  foregroundColor: c.textPrimary,
                 ),
                 child: Row(
                   children: [
@@ -117,14 +121,16 @@ class MidtermPresetCard extends StatelessWidget {
                             src.title,
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
-                            style: t.titleSmall,
+                            style: t.titleSmall?.copyWith(color: c.textPrimary),
                           ),
                           Text(
                             l.scoringMidtermCourseLine(
                               src.topics.length,
                               midtermPool(src),
                             ),
-                            style: t.bodySmall,
+                            style: t.bodySmall?.copyWith(
+                              color: c.textSecondary,
+                            ),
                           ),
                         ],
                       ),
