@@ -77,6 +77,20 @@ function clean(s: unknown, max: number): string {
   return String(s ?? "").replaceAll(FENCE, "").replace(/[<>]/g, "").slice(0, max);
 }
 
+// Eski ilova versiyalari (public.app_config.min_build; 0 = cheklov yo‘q). 60 s kesh.
+let gate: { min: number; at: number } | null = null;
+// deno-lint-ignore no-explicit-any
+async function updateRequired(req: Request, db: any): Promise<boolean> {
+  if (req.headers.get("x-fe-check") === "probe") return true;
+  if (!gate || Date.now() - gate.at > 60_000) {
+    const { data } = await db.rpc("app_version_info");
+    gate = { min: Number(data?.min_build ?? 0) || 0, at: Date.now() };
+  }
+  if (gate.min <= 0) return false;
+  const raw = req.headers.get("x-fe-build") ?? "";
+  return !/^[0-9]{1,9}$/.test(raw) || Number(raw) < gate.min;
+}
+
 function json(body: unknown, status = 200): Response {
   return new Response(JSON.stringify(body), {
     status,
@@ -96,6 +110,7 @@ Deno.serve(async (req) => {
   });
   const { data: u, error: authError } = await db.auth.getUser();
   if (authError || !u.user) return json({ error: "unauthorized" }, 401);
+  if (await updateRequired(req, db)) return json({ error: "update_required" }, 426);
 
   // Per-user hourly limit (RLS: users insert/read only their own rows).
   const since = new Date(Date.now() - 3600_000).toISOString();
