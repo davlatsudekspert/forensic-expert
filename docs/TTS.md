@@ -26,7 +26,7 @@ Sulafat, Leda, Charon — 200, WAV 24 kHz mono 16-bit, birinchi so‘rov ~7–8 
 | `GEMINI_API_KEY` | — (bor) | Majburiy, allaqachon o‘rnatilgan |
 | `FE_TTS_MODEL` | `gemini-3.8-flash-tts` | Sifatli, darslik uchun |
 | `FE_TTS_MODEL_LITE` | `gemini-3.8-flash-lite-tts` | `quality: "lite"` — qisqa UI matnlari |
-| `FE_TTS_VOICE` | `Kore` | Standart ovoz (egasi tanlaydi) |
+| `FE_TTS_VOICE` | `Charon` | Standart ovoz — erkak (egasi tanlovi, 2026-10-31) |
 | `FE_TTS_DAILY_LIMIT` | `60` | Foydalanuvchi boshiga kunlik generatsiya |
 
 Agar 3.8 modellari ishlamasa, avtomatik zaxira modeli: `gemini-3.1-flash-tts-preview`.

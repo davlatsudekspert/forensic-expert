@@ -25,7 +25,7 @@ const BUCKET = "tts-cache";
 const MODEL = Deno.env.get("FE_TTS_MODEL") || "gemini-3.8-flash-tts";
 const MODEL_LITE = Deno.env.get("FE_TTS_MODEL_LITE") || "gemini-3.8-flash-lite-tts";
 const FALLBACK = "gemini-3.1-flash-tts-preview";
-const VOICE = Deno.env.get("FE_TTS_VOICE") || "Kore";
+const VOICE = Deno.env.get("FE_TTS_VOICE") || "Charon";
 const DAILY_LIMIT = Number(Deno.env.get("FE_TTS_DAILY_LIMIT") ?? "60");
 
 function json(body: unknown, status = 200): Response {
