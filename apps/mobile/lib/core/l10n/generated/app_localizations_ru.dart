@@ -12360,7 +12360,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get workbenchLabTitle => 'Лабораторные методы';
 
   @override
-  String get workbenchLabBody => 'От реактивов до ГХ-МС — в одном месте';
+  String get workbenchLabBody => 'От реактивов до GC-MS — в одном месте';
 
   @override
   String get workbenchLabReagents => 'Реактивы';
@@ -12381,7 +12381,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get workbenchLabSpectroSub => 'Закон Бугера–Ламберта–Бера';
 
   @override
-  String get workbenchLabMs => 'ГХ-МС / ЖХ-МС';
+  String get workbenchLabMs => 'GC-MS / LC-MS';
 
   @override
   String get workbenchLabMsSub => 'Хроматография и масс-спектрометрия';

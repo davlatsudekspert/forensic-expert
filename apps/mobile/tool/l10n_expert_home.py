@@ -56,7 +56,7 @@ k("workbenchLabTitle", "Wide workbench card for chemistry experts: laboratory me
   "Laboratory methods", "Лабораторные методы", "Laboratoriya usullari")
 k("workbenchLabBody", "Subtitle of the laboratory methods card.",
   "From reagents to GC-MS — in one place",
-  "От реактивов до ГХ-МС — в одном месте",
+  "От реактивов до GC-MS — в одном месте",
   "Reaktivlardan GC-MS gacha — bir joyda")
 k("workbenchLabReagents", "Laboratory methods item: reagents.",
   "Reagents", "Реактивы", "Reaktivlar")
@@ -73,7 +73,7 @@ k("workbenchLabSpectro", "Laboratory methods item: spectrophotometry.",
 k("workbenchLabSpectroSub", "Subtitle: spectrophotometry item.",
   "Beer–Lambert law", "Закон Бугера–Ламберта–Бера", "Buger–Lambert–Ber qonuni")
 k("workbenchLabMs", "Laboratory methods item (and card): GC-MS / LC-MS.",
-  "GC-MS / LC-MS", "ГХ-МС / ЖХ-МС", "GC-MS / LC-MS")
+  "GC-MS / LC-MS", "GC-MS / LC-MS", "GC-MS / LC-MS")
 k("workbenchLabMsSub", "Subtitle: GC-MS / LC-MS item.",
   "Chromatography and mass spectrometry",
   "Хроматография и масс-спектрометрия",
