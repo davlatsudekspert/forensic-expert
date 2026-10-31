@@ -368,9 +368,12 @@ void main() {
     expect(const ClassQuizSettings(questionCount: 21).valid, isFalse);
     expect(const ClassQuizSettings(studentLimit: 4).valid, isFalse);
     expect(const ClassQuizSettings(studentLimit: 201).valid, isFalse);
-    expect(const ClassQuizSettings(seconds: 20).valid, isFalse);
-    for (final s in [15, 30, 45, 60]) {
-      expect(ClassQuizSettings(seconds: s).valid, isTrue);
+    // Soniya: server bilan bir xil 5..300 (erkin butun son).
+    for (final s in [4, 0, -1, 301, 1000]) {
+      expect(ClassQuizSettings(seconds: s).valid, isFalse, reason: '$s');
+    }
+    for (final s in [5, 15, 20, 30, 45, 60, 90, 300]) {
+      expect(ClassQuizSettings(seconds: s).valid, isTrue, reason: '$s');
     }
   });
 

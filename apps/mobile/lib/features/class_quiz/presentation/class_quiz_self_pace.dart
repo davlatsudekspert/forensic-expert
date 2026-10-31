@@ -4,7 +4,9 @@ import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../domain/anti_cheat/anti_cheat_rules.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart';
+import '../../anti_cheat/presentation/anti_cheat_widgets.dart';
 
 /// «Test rejimi» tanlovi (yangi test ekrani): ikki aniq variant, har birining
 /// tagida bir qatorli izoh. Standart — ustoz boshqaradi (o‘zgarmagan xulq).
@@ -176,7 +178,11 @@ class ClassSelfBoard extends StatelessWidget {
                   child: Column(
                     children: [
                       for (final r in d.leaderboard)
-                        _LeaderLine(row: r, total: total),
+                        _LeaderLine(
+                          row: r,
+                          total: total,
+                          tooFast: classLeaderLooksTooFast(r, total),
+                        ),
                     ],
                   ),
                 ),
@@ -268,6 +274,11 @@ class _ProgressRow extends StatelessWidget {
                 style: t.bodySmall?.copyWith(color: c.textSecondary),
               ),
             ),
+          AntiCheatFlags(
+            leaveCount: p.leaveCount,
+            tooFast: false,
+            idSuffix: '.${p.id}',
+          ),
         ],
       ),
     );
@@ -275,10 +286,15 @@ class _ProgressRow extends StatelessWidget {
 }
 
 class _LeaderLine extends StatelessWidget {
-  const _LeaderLine({required this.row, required this.total});
+  const _LeaderLine({
+    required this.row,
+    required this.total,
+    this.tooFast = false,
+  });
 
   final ClassLeaderRow row;
   final int total;
+  final bool tooFast;
 
   @override
   Widget build(BuildContext context) {
@@ -311,6 +327,11 @@ class _LeaderLine extends StatelessWidget {
                 Text(
                   l.classLeaderCorrect(row.correct, total),
                   style: t.bodySmall?.copyWith(color: c.textSecondary),
+                ),
+                AntiCheatFlags(
+                  leaveCount: 0,
+                  tooFast: tooFast,
+                  idSuffix: '.${row.participantId}',
                 ),
               ],
             ),

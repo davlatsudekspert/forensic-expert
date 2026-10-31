@@ -3445,5 +3445,15 @@
   "scoringMidtermApplied": "«{course}» uchun oraliq nazorat tayyor: barcha mavzular tanlandi. Sozlamalarni pastda tekshiring.",
   "scoringMidtermPoolShort": "Kursda faqat {pool} ta savol bor, shuning uchun savollar soni {pool} qilindi.",
   "scoringMidtermVariantOff": "Variantlar o‘chirildi: savollar hovuzi ({pool}) har talabaga beriladigan savollar sonining ikki baravaridan kam. Variantlarni yoqish uchun savollar sonini {max} yoki undan kam qiling.",
-  "scoringMidtermVariantOn": "Har talaba boshqa savollar to‘plamini oladi (variantlar yoqilgan)."
+  "scoringMidtermVariantOn": "Har talaba boshqa savollar to‘plamini oladi (variantlar yoqilgan).",
+  "acShuffleHint": "Variantlar (A, B, C, D) tartibi har talabaga alohida aralashtiriladi.",
+  "acCountWarning": "Mavzuda {pool} ta savol bor. {count} ta savolda talabalarga turli to‘plam tushmaydi, faqat variantlar tartibi farq qiladi. Ko‘chirishni qiyinlashtirish uchun {recommended} tadan oshirmaslik tavsiya etiladi.",
+  "acStudentNote": "Test paytida ilovadan chiqsangiz, ustoz buni ko‘ra oladi.",
+  "acLeftCount": "ilovadan chiqdi: {count} marta",
+  "acFastCorrect": "tez va to‘g‘ri javob — tekshirib ko‘ring",
+  "acSecondsHint": "5 dan 300 gacha istalgan butun son (soniya).",
+  "acSecondsError": "5 dan 300 gacha butun son kiriting.",
+  "acSecondsLabel": "Soniya",
+  "acSecondsMinus": "Vaqtni 5 soniyaga kamaytirish",
+  "acSecondsPlus": "Vaqtni 5 soniyaga oshirish"
 }

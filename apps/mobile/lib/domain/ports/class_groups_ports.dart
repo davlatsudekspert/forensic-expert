@@ -65,6 +65,11 @@ abstract interface class ClassGroupsService {
   );
 
   Future<GroupCall<GroupTestResult>> result(String assignmentId);
+
+  /// Anti-cheat: talaba test paytida ilovadan chiqdi (fonga o‘tdi). Server
+  /// sanaydi, faqat ustoz ko‘radi; ball/jazo yo‘q. Mijoz xatoni e’tiborsiz
+  /// qoldiradi (fire-and-forget).
+  Future<GroupCall<void>> reportLeave(String assignmentId);
 }
 
 /// Backend yo‘q — hech narsa soxtalashtirilmaydi.
@@ -134,6 +139,9 @@ class UnconfiguredClassGroupsService implements ClassGroupsService {
   ) async => const GroupCall.fail(_f);
   @override
   Future<GroupCall<GroupTestResult>> result(String assignmentId) async =>
+      const GroupCall.fail(_f);
+  @override
+  Future<GroupCall<void>> reportLeave(String assignmentId) async =>
       const GroupCall.fail(_f);
 }
 

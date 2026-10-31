@@ -65,7 +65,7 @@ ClassBankTopic groupTestTopic(String id, String title, int n) => ClassBankTopic(
 
 /// Bitta «server» (xotirada) va bir nechta foydalanuvchi.
 class GroupsWorld {
-  GroupsWorld({List<ClassBankTopic>? topics}) {
+  GroupsWorld({List<ClassBankTopic>? topics, DateTime Function()? quizClock}) {
     this.topics =
         topics ??
         [
@@ -77,7 +77,11 @@ class GroupsWorld {
       teachers: {'teacher'},
       clock: () => now,
     );
-    quiz = FakeClassQuizBackend(topics: this.topics, teachers: {'teacher'});
+    quiz = FakeClassQuizBackend(
+      topics: this.topics,
+      teachers: {'teacher'},
+      clock: quizClock,
+    );
   }
 
   /// Ilovadagi HAQIQIY savollar banki (asset, 18 mavzu × 3 til).

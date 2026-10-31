@@ -11946,4 +11946,40 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get scoringMidtermVariantOn =>
       'Each student gets a different set of questions (variants are on).';
+
+  @override
+  String get acShuffleHint =>
+      'Answer options (A, B, C, D) are shuffled for each student separately.';
+
+  @override
+  String acCountWarning(int pool, int count, int recommended) {
+    return 'The topic has $pool questions. With $count questions students will not get different sets, only a different option order. To make copying harder, keep it to $recommended questions or fewer.';
+  }
+
+  @override
+  String get acStudentNote =>
+      'If you leave the app during the test, your teacher can see it.';
+
+  @override
+  String acLeftCount(int count) {
+    return 'left the app: $count times';
+  }
+
+  @override
+  String get acFastCorrect => 'fast and correct answers — worth a look';
+
+  @override
+  String get acSecondsHint => 'Any whole number from 5 to 300 seconds.';
+
+  @override
+  String get acSecondsError => 'Enter a whole number from 5 to 300.';
+
+  @override
+  String get acSecondsLabel => 'Seconds';
+
+  @override
+  String get acSecondsMinus => 'Decrease time by 5 seconds';
+
+  @override
+  String get acSecondsPlus => 'Increase time by 5 seconds';
 }

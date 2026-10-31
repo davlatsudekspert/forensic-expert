@@ -20636,6 +20636,66 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Each student gets a different set of questions (variants are on).'**
   String get scoringMidtermVariantOn;
+
+  /// Always-visible hint for the teacher: answer options are shuffled per student.
+  ///
+  /// In en, this message translates to:
+  /// **'Answer options (A, B, C, D) are shuffled for each student separately.'**
+  String get acShuffleHint;
+
+  /// Warning shown when the question pool is smaller than twice the chosen number of questions, so students cannot get different question sets.
+  ///
+  /// In en, this message translates to:
+  /// **'The topic has {pool} questions. With {count} questions students will not get different sets, only a different option order. To make copying harder, keep it to {recommended} questions or fewer.'**
+  String acCountWarning(int pool, int count, int recommended);
+
+  /// One calm line shown to the student during a test: the teacher can see leaving the app.
+  ///
+  /// In en, this message translates to:
+  /// **'If you leave the app during the test, your teacher can see it.'**
+  String get acStudentNote;
+
+  /// Teacher-only note: how many times the student left the app during the test.
+  ///
+  /// In en, this message translates to:
+  /// **'left the app: {count} times'**
+  String acLeftCount(int count);
+
+  /// Neutral teacher-only hint: the student answered quickly with a high score. Never an accusation.
+  ///
+  /// In en, this message translates to:
+  /// **'fast and correct answers — worth a look'**
+  String get acFastCorrect;
+
+  /// Helper text under the seconds-per-question field in live class creation.
+  ///
+  /// In en, this message translates to:
+  /// **'Any whole number from 5 to 300 seconds.'**
+  String get acSecondsHint;
+
+  /// Error under the seconds-per-question field when the value is outside 5-300 or not a whole number.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a whole number from 5 to 300.'**
+  String get acSecondsError;
+
+  /// Label of the seconds-per-question text field.
+  ///
+  /// In en, this message translates to:
+  /// **'Seconds'**
+  String get acSecondsLabel;
+
+  /// Accessibility label of the button that decreases the seconds per question by 5.
+  ///
+  /// In en, this message translates to:
+  /// **'Decrease time by 5 seconds'**
+  String get acSecondsMinus;
+
+  /// Accessibility label of the button that increases the seconds per question by 5.
+  ///
+  /// In en, this message translates to:
+  /// **'Increase time by 5 seconds'**
+  String get acSecondsPlus;
 }
 
 class _AppLocalizationsDelegate

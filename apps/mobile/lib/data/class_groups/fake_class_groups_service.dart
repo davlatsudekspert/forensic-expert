@@ -75,6 +75,10 @@ class _Attempt {
   DateTime? submittedAt;
   int? score;
   bool expired = false;
+
+  // Anti-cheat: ilovadan chiqish hisobi (server `class_assignment_attempts`).
+  int leaveCount = 0;
+  DateTime? lastLeftAt;
 }
 
 /// Server o‘rnidagi xotira modeli — SQL funksiyalaridagi qoidalarning nusxasi
@@ -441,6 +445,8 @@ class FakeClassGroupsBackend {
             answered: t?.answers.length ?? 0,
             startedAt: t?.startedAt,
             submittedAt: t?.submittedAt,
+            leaveCount: t?.leaveCount ?? 0,
+            lastLeftAt: t?.lastLeftAt,
           );
         }(),
     ]..sort(boardOrder);
@@ -769,6 +775,24 @@ class FakeClassGroupsBackend {
     );
   }
 
+  /// SQL `group_report_leave`: a’zo bo‘lmasa — `forbidden`; urinish yo‘q
+  /// yoki yuborilgan bo‘lsa — sanalmaydi; 1 soniyada ko‘pi bilan bir marta.
+  GroupCall<void> reportLeave(String uid, String aid) {
+    final a = _memberAssignment(uid, aid);
+    if (a == null) return const GroupCall.fail(GroupFailure.forbidden);
+    final t = a.attempts[uid];
+    if (t == null || t.submittedAt != null) return const GroupCall.ok(null);
+    final last = t.lastLeftAt;
+    final n = now();
+    if (last != null && n.difference(last) < const Duration(seconds: 1)) {
+      return const GroupCall.ok(null);
+    }
+    t
+      ..leaveCount += 1
+      ..lastLeftAt = n;
+    return const GroupCall.ok(null);
+  }
+
   /// Demo/test: talaba qo‘shish (xuddi QR bilan qo‘shilgandek).
   String? codeOf(String groupId) => _groups[groupId]?.code;
 }
@@ -867,4 +891,7 @@ class FakeClassGroupsService implements ClassGroupsService {
   @override
   Future<GroupCall<GroupTestResult>> result(String assignmentId) =>
       _as((u) => backend.result(u, assignmentId));
+  @override
+  Future<GroupCall<void>> reportLeave(String assignmentId) =>
+      _as((u) => backend.reportLeave(u, assignmentId));
 }

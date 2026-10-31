@@ -6,6 +6,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../app/class_quiz.dart';
 import '../../../app/lessons.dart';
+import '../../../app/providers.dart' show authStateProvider;
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -14,6 +15,7 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../core/widgets/score_grade.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart';
+import '../../anti_cheat/presentation/anti_cheat_widgets.dart';
 import 'class_quiz_widgets.dart';
 
 /// Talaba ekrani: kutish zali → savollar → natija. Holat serverdan har ~2 s
@@ -116,17 +118,28 @@ class _ClassPlayScreenState extends ConsumerState<ClassPlayScreen> {
       body = const Center(child: CircularProgressIndicator());
     }
 
-    return Scaffold(
-      appBar: AppBar(
-        title: FeAppBarTitle(st?.session.topicTitle ?? l.classQuizTitle),
-      ),
-      body: SafeArea(
-        child: Column(
-          children: [
-            // Aloqa uzildi, oxirgi holat bor — ekran saqlanadi, kichik belgi.
-            if (reconnecting) const ClassReconnectingBar(),
-            Expanded(child: body),
-          ],
+    // Anti-cheat: test ketayotganda ilova fonga o‘tsa ustozga hisoblanadi
+    // (fire-and-forget; talabaga jazo/xabar yo‘q). Savol ochilmagan/tugagan
+    // holatni server o‘zi sanamaydi.
+    return LeaveReporter(
+      enabled:
+          st != null &&
+          !st.kicked &&
+          st.status == ClassSessionStatus.running &&
+          st.selfStage != ClassSelfStage.done,
+      onLeave: () => ref.read(classQuizServiceProvider).reportLeave(sessionId),
+      child: Scaffold(
+        appBar: AppBar(
+          title: FeAppBarTitle(st?.session.topicTitle ?? l.classQuizTitle),
+        ),
+        body: SafeArea(
+          child: Column(
+            children: [
+              // Aloqa uzildi, oxirgi holat bor — ekran saqlanadi, kichik belgi.
+              if (reconnecting) const ClassReconnectingBar(),
+              Expanded(child: body),
+            ],
+          ),
         ),
       ),
     );
@@ -215,6 +228,8 @@ class _StudentLobby extends StatelessWidget {
                       l.classJoinedCount(st.joined, st.session.studentLimit),
                       style: t.titleSmall,
                     ),
+                    const SizedBox(height: FeSpace.xs),
+                    const AntiCheatStudentNote(),
                   ],
                 ),
               ),
@@ -287,8 +302,14 @@ class _StudentQuestionState extends ConsumerState<_StudentQuestion> {
     final selected = submitted ?? (_pendingIndex == q.index ? _pending : null);
     final open = st.phase == ClassPhase.open;
     final reveal = st.reveal;
-    // Proyektor bilan bir xil (server) tartib: «B» ikkala ekranda bir variant.
-    final order = q.options;
+    // Har talabaga boshqa joylashuv (qo‘shnidan/rasmdan ko‘chirib bo‘lmasin);
+    // variant id lari va serverga ketadigan javob o‘zgarmaydi. Ustoz ekrani
+    // asl tartibda, shuning uchun harflar proyektordagidan farq qilishi mumkin.
+    final order = classStudentOptionOrder(
+      sessionId: widget.sessionId,
+      studentKey: ref.read(authStateProvider).userId ?? st.nickname,
+      q: q,
+    );
 
     ClassOptionState stateOf(String id) {
       if (reveal != null) {
@@ -550,6 +571,11 @@ class _SelfPlayState extends ConsumerState<_SelfPlay> {
         final open = st.phase == ClassPhase.open;
         final reveal = st.reveal;
         final last = st.position + 1 >= total;
+        final order = classStudentOptionOrder(
+          sessionId: widget.sessionId,
+          studentKey: ref.read(authStateProvider).userId ?? st.nickname,
+          q: q,
+        );
         ClassOptionState stateOf(String id) {
           if (reveal != null) {
             if (id == reveal.correctOption) return ClassOptionState.correct;
@@ -604,17 +630,17 @@ class _SelfPlayState extends ConsumerState<_SelfPlay> {
               style: t.titleLarge?.copyWith(fontWeight: FontWeight.w700),
             ),
             const SizedBox(height: FeSpace.md),
-            for (var i = 0; i < q.options.length; i++)
+            for (var i = 0; i < order.length; i++)
               Padding(
                 padding: const EdgeInsets.only(bottom: FeSpace.xs),
                 child: ClassOptionTile(
-                  key: Key('class.option.${q.options[i].id}'),
+                  key: Key('class.option.${order[i].id}'),
                   letter: classOptionLetter(i),
-                  text: q.options[i].text,
-                  state: stateOf(q.options[i].id),
+                  text: order[i].text,
+                  state: stateOf(order[i].id),
                   onTap: open && submitted == null && !_busy
                       ? () => setState(() {
-                          _pending = q.options[i].id;
+                          _pending = order[i].id;
                           _pendingIndex = q.index;
                         })
                       : null,

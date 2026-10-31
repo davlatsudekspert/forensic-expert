@@ -717,6 +717,8 @@ class GroupBoardRow {
     this.answered = 0,
     this.startedAt,
     this.submittedAt,
+    this.leaveCount = 0,
+    this.lastLeftAt,
   });
 
   factory GroupBoardRow.fromJson(Map<String, Object?> j) => GroupBoardRow(
@@ -728,6 +730,8 @@ class GroupBoardRow {
     answered: _int(j['answered']),
     startedAt: _date(j['started_at']),
     submittedAt: _date(j['submitted_at']),
+    leaveCount: _int(j['leave_count']),
+    lastLeftAt: _date(j['last_left_at']),
   );
 
   final String memberId;
@@ -740,6 +744,11 @@ class GroupBoardRow {
   /// Urinish boshlangan / yakunlangan vaqt (server soati).
   final DateTime? startedAt;
   final DateTime? submittedAt;
+
+  /// Test paytida ilovadan chiqqan marta (server sanaydi; eski serverda 0).
+  /// Faqat ustozga ishora — talabaga ko‘rinmaydi, ballga ta’sir qilmaydi.
+  final int leaveCount;
+  final DateTime? lastLeftAt;
 
   /// Sarflangan vaqt (faqat tugatganlar uchun).
   Duration? get spent {

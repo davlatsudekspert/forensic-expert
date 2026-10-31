@@ -13,13 +13,16 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../core/widgets/score_grade.dart';
 
+import '../../../domain/anti_cheat/anti_cheat_rules.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart';
 import '../../../domain/plan/plan_models.dart';
+import '../../anti_cheat/presentation/anti_cheat_widgets.dart';
 import '../../pro/presentation/pro_gate.dart';
 import '../../professional/presentation/professional_widgets.dart' show FeNote;
 import 'class_hardest_screen.dart';
 import 'class_quiz_self_pace.dart';
 import 'class_quiz_widgets.dart';
+import 'class_seconds_picker.dart';
 
 /// Yangi sinf testi: mavzu, savollar soni, talaba chegarasi, har savolga vaqt.
 class ClassCreateScreen extends StatelessWidget {
@@ -208,6 +211,11 @@ class _CreateBodyState extends ConsumerState<_CreateBody> {
                 () => _settings = _settings.copyWith(questionCount: v),
               ),
             ),
+            AntiCheatCountNote(
+              poolSize: selected.count,
+              count: qCount,
+              minCount: ClassQuizRules.minQuestions,
+            ),
             _LabeledSlider(
               key: const Key('class.sliderStudents'),
               label: l.classStudentLimit,
@@ -222,17 +230,10 @@ class _CreateBodyState extends ConsumerState<_CreateBody> {
             const SizedBox(height: FeSpace.xs),
             Text(l.classSecondsPerQuestion, style: t.titleSmall),
             const SizedBox(height: FeSpace.xs),
-            SegmentedButton<int>(
-              key: const Key('class.seconds'),
-              showSelectedIcon: false,
-              segments: [
-                for (final s in ClassQuizRules.secondsChoices)
-                  ButtonSegment(value: s, label: Text(l.classSecondsShort(s))),
-              ],
-              selected: {_settings.seconds},
-              onSelectionChanged: (v) => setState(
-                () => _settings = _settings.copyWith(seconds: v.first),
-              ),
+            ClassSecondsPicker(
+              value: _settings.seconds,
+              onChanged: (v) =>
+                  setState(() => _settings = _settings.copyWith(seconds: v)),
             ),
             const SizedBox(height: FeSpace.xs),
             FeSectionHeader(l.classPaceSection),
@@ -253,7 +254,8 @@ class _CreateBodyState extends ConsumerState<_CreateBody> {
               ),
             FilledButton.icon(
               key: const Key('class.createSubmit'),
-              onPressed: _busy
+              onPressed:
+                  _busy || !ClassQuizRules.validSeconds(_settings.seconds)
                   ? null
                   : () {
                       _settings = _settings.copyWith(questionCount: qCount);
@@ -1893,10 +1895,16 @@ class _LeaderRowView extends StatelessWidget {
     this.compact = false,
     this.total,
     this.showGrade = false,
+    this.leaveCount = 0,
+    this.tooFast = false,
   });
 
   final ClassLeaderRow row;
   final bool compact;
+
+  /// Anti-cheat ishoralari (faqat ustoz natijalarida; ayblov emas).
+  final int leaveCount;
+  final bool tooFast;
 
   /// Sessiyadagi savollar soni («7/10 to‘g‘ri» uchun); bilinmasa — ko‘rsatilmaydi.
   final int? total;
@@ -1965,6 +1973,11 @@ class _LeaderRowView extends StatelessWidget {
                       color: c.textSecondary,
                     ),
                   ),
+                AntiCheatFlags(
+                  leaveCount: leaveCount,
+                  tooFast: tooFast,
+                  idSuffix: '.${row.participantId}',
+                ),
               ],
             ),
           ),
@@ -2039,6 +2052,8 @@ class _Finished extends StatelessWidget {
                           row: r,
                           total: d.session.total,
                           showGrade: true,
+                          leaveCount: d.leaveCountOf(r.participantId),
+                          tooFast: classLeaderLooksTooFast(r, d.session.total),
                         ),
                   ],
                 ),
@@ -2142,6 +2157,11 @@ class _Finished extends StatelessWidget {
                               row: r,
                               total: d.session.total,
                               showGrade: true,
+                              leaveCount: d.leaveCountOf(r.participantId),
+                              tooFast: classLeaderLooksTooFast(
+                                r,
+                                d.session.total,
+                              ),
                             ),
                         ],
                       ),

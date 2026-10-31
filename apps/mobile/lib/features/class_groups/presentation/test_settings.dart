@@ -14,6 +14,7 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/class_groups/class_groups_models.dart';
 import '../../../domain/class_groups/variant_draw.dart';
 import '../../../domain/plan/plan_models.dart';
+import '../../anti_cheat/presentation/anti_cheat_widgets.dart';
 import '../../pro/presentation/pro_gate.dart';
 
 /// Topshirish sozlamalari (mavzu testi va «Umumiy test» uchun bitta shakl).
@@ -304,6 +305,7 @@ class TestSettingsSection extends ConsumerWidget {
           l.grpCountHint(value.count, poolSize),
           key: const Key('grp.countHint'),
         ),
+        AntiCheatCountNote(poolSize: poolSize, count: value.count),
         FeSectionHeader(l.grpTimeLimitLabel),
         Wrap(
           spacing: FeSpace.xs,

@@ -10,6 +10,7 @@ import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
 import 'package:forensic_expert/core/settings/settings_controller.dart';
 import 'package:forensic_expert/domain/class_groups/class_groups_models.dart';
+import 'package:forensic_expert/domain/class_groups/variant_draw.dart';
 import 'package:forensic_expert/domain/plan/plan_models.dart';
 
 import '../helpers/class_groups_world.dart';
@@ -87,7 +88,14 @@ void main() {
             .onPressed,
         isNull,
       );
-      await tester.tap(find.byKey(const Key('grp.option.1')));
+      // Variantlar har talabaga boshqa tartibda; serverga ASL indeks (1) ketadi.
+      final order = optionDisplayOrder(
+        assignmentId: s.aid,
+        userId: 'stu1',
+        questionId: qid,
+        count: attempt.questions.first.options.length,
+      );
+      await tester.tap(find.byKey(Key('grp.option.${order.indexOf(1)}')));
       await frames(tester);
       await tester.tap(find.byKey(const Key('grp.confirm')));
       await frames(tester);

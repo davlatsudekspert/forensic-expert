@@ -25,8 +25,16 @@ abstract final class ClassQuizRules {
   static const int defaultQuestions = 10;
   static const int minStudents = 5;
   static const int maxStudents = 200;
+
+  /// Har savolga vaqt: server `class_create_session` — 5..300 butun son.
+  static const int minSeconds = 5;
+  static const int maxSeconds = 300;
+
+  /// Tez tanlov chiplari (ixtiyoriy butun son ham mumkin); standart — 30.
   static const List<int> secondsChoices = [15, 30, 45, 60];
   static const int defaultSeconds = 30;
+
+  static bool validSeconds(int s) => s >= minSeconds && s <= maxSeconds;
   static const int nickMin = 2;
   static const int nickMax = 20;
   static const int codeLength = 6;
@@ -82,7 +90,7 @@ class ClassQuizSettings {
       questionCount <= ClassQuizRules.maxQuestions &&
       studentLimit >= ClassQuizRules.minStudents &&
       studentLimit <= ClassQuizRules.maxStudents &&
-      ClassQuizRules.secondsChoices.contains(seconds);
+      ClassQuizRules.validSeconds(seconds);
 
   ClassQuizSettings copyWith({
     int? questionCount,
@@ -762,6 +770,8 @@ class ClassParticipant {
     required this.nickname,
     this.answered = false,
     this.progress,
+    this.leaveCount = 0,
+    this.lastLeftAt,
   });
 
   /// `answered` — server qo‘shgan maydon (joriy savolga javob berdimi); eski
@@ -771,11 +781,20 @@ class ClassParticipant {
     nickname: _str(j['nickname']),
     answered: j['answered'] == true,
     progress: j.containsKey('position') ? ClassSelfProgress.fromJson(j) : null,
+    leaveCount: _int(j['leave_count']),
+    lastLeftAt: j['last_left_at'] is String
+        ? DateTime.tryParse(j['last_left_at']! as String)
+        : null,
   );
 
   final String id;
   final String nickname;
   final bool answered;
+
+  /// Test paytida ilovadan chiqqan marta (server sanaydi; eski serverda 0).
+  /// Faqat ustozga ishora — ballga ta’sir qilmaydi.
+  final int leaveCount;
+  final DateTime? lastLeftAt;
 
   /// Faqat self rejimda (ustoz doskasi): talabaning progressi.
   final ClassSelfProgress? progress;
@@ -984,6 +1003,15 @@ class ClassDashboard {
 
   /// Proyektor to‘g‘ri javob, sonlar va izohni faqat shunda ko‘rsatadi.
   final bool revealed;
+
+  /// Ishtirokchining ilovadan chiqish soni (reyting qatori `participantId`
+  /// bo‘yicha); topilmasa 0.
+  int leaveCountOf(String participantId) =>
+      participants
+          .where((p) => p.id == participantId)
+          .firstOrNull
+          ?.leaveCount ??
+      0;
 }
 
 /// Tugagach talabaning bitta savol bo‘yicha natijasi.

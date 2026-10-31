@@ -11876,4 +11876,40 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get scoringMidtermVariantOn =>
       'Har talaba boshqa savollar to‘plamini oladi (variantlar yoqilgan).';
+
+  @override
+  String get acShuffleHint =>
+      'Variantlar (A, B, C, D) tartibi har talabaga alohida aralashtiriladi.';
+
+  @override
+  String acCountWarning(int pool, int count, int recommended) {
+    return 'Mavzuda $pool ta savol bor. $count ta savolda talabalarga turli to‘plam tushmaydi, faqat variantlar tartibi farq qiladi. Ko‘chirishni qiyinlashtirish uchun $recommended tadan oshirmaslik tavsiya etiladi.';
+  }
+
+  @override
+  String get acStudentNote =>
+      'Test paytida ilovadan chiqsangiz, ustoz buni ko‘ra oladi.';
+
+  @override
+  String acLeftCount(int count) {
+    return 'ilovadan chiqdi: $count marta';
+  }
+
+  @override
+  String get acFastCorrect => 'tez va to‘g‘ri javob — tekshirib ko‘ring';
+
+  @override
+  String get acSecondsHint => '5 dan 300 gacha istalgan butun son (soniya).';
+
+  @override
+  String get acSecondsError => '5 dan 300 gacha butun son kiriting.';
+
+  @override
+  String get acSecondsLabel => 'Soniya';
+
+  @override
+  String get acSecondsMinus => 'Vaqtni 5 soniyaga kamaytirish';
+
+  @override
+  String get acSecondsPlus => 'Vaqtni 5 soniyaga oshirish';
 }

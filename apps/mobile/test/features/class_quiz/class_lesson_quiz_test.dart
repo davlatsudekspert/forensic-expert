@@ -348,6 +348,7 @@ void main() {
       );
       // Sessiya shu son bilan yaratiladi.
       await tester.ensureVisible(find.byKey(const Key('class.createSubmit')));
+      await tester.pump();
       await tester.tap(find.byKey(const Key('class.createSubmit')));
       await frames(tester);
       final mine = (await w.teacher.mySessions()).value!;

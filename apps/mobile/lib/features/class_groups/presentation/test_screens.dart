@@ -16,6 +16,7 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../core/widgets/score_grade.dart';
 import '../../../domain/class_groups/class_groups_models.dart';
 import '../../../domain/class_groups/variant_draw.dart';
+import '../../anti_cheat/presentation/anti_cheat_widgets.dart';
 import '../../professional/presentation/professional_widgets.dart' show FeNote;
 import 'group_widgets.dart';
 
@@ -86,6 +87,24 @@ class _GroupTestState extends ConsumerState<GroupTestScreen> {
   GroupClock? _clock;
 
   late final LessonScreenGuard _guard;
+
+  /// Har talabaga variantlar tartibi alohida: savol id → ko‘rsatish o‘rni →
+  /// ASL variant indeksi. `_answers`/`_draftAnswers` va serverga ketadigan
+  /// qiymat hamisha ASL indeks; aralashtirish faqat ekranda.
+  final _optionOrders = <String, List<int>>{};
+
+  List<int> _orderOf(GroupAttempt a, GroupQuestion q) =>
+      _optionOrders.putIfAbsent(
+        q.id,
+        () => optionDisplayOrder(
+          assignmentId: a.assignment.id,
+          userId:
+              ref.read(classGroupsServiceProvider).userId ??
+              (widget.local ? commonUser : null),
+          questionId: q.id,
+          count: q.options.length,
+        ),
+      );
 
   @override
   void initState() {
@@ -376,192 +395,213 @@ class _GroupTestState extends ConsumerState<GroupTestScreen> {
     }
     final q = a.questions[_index];
     final last = _index == a.questions.length - 1;
+    // `chosen` — ASL variant indeksi; ekranda `order[i]` o‘rniga qarab.
     final chosen = _draftAnswers[q.id] ?? _answers[q.id];
+    final order = _orderOf(a, q);
     final confirmed =
         _answers.containsKey(q.id) && !_draftAnswers.containsKey(q.id);
 
-    return Scaffold(
-      appBar: AppBar(title: FeAppBarTitle(a.assignment.topicTitle)),
-      body: SafeArea(
-        child: Column(
-          children: [
-            FeContentFrame(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  if (widget.local)
-                    Padding(
-                      padding: const EdgeInsets.only(top: FeSpace.xs),
-                      child: FeBanner(
-                        key: const Key('grp.previewBanner'),
-                        icon: Icons.visibility_outlined,
-                        text: widget.practiceTopicId != null
-                            ? l.grpPracticeBanner
-                            : l.grpPreviewBanner,
-                        tone: FeBannerTone.warning,
-                      ),
-                    ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: FeSpace.xs),
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: Text(
-                            l.grpQuestionOf(_index + 1, a.questions.length),
-                            key: const Key('grp.questionOf'),
-                            style: t.labelLarge,
-                          ),
-                        ),
-                        if (_clock != null)
-                          GroupTimeChip(
-                            clock: _clock!,
-                            now: ref.read(groupNowProvider),
-                            onExpired: () => _submit(force: true),
-                          ),
-                      ],
-                    ),
-                  ),
-                  LinearProgressIndicator(
-                    value: _answers.length / a.questions.length,
-                    semanticsLabel: l.grpAnsweredOf(
-                      _answers.length,
-                      a.questions.length,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Expanded(
-              child: ListView(
-                key: const Key('grp.testList'),
-                padding: const EdgeInsets.only(
-                  top: FeSpace.md,
-                  bottom: FeSpace.lg,
-                ),
-                children: [
-                  FeContentFrame(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        Text(
-                          q.text,
-                          key: const Key('grp.questionText'),
-                          style: t.titleMedium,
-                        ),
-                        const SizedBox(height: FeSpace.md),
-                        for (final (i, o) in q.options.indexed)
-                          Padding(
-                            padding: const EdgeInsets.only(bottom: FeSpace.xs),
-                            child: FeCard(
-                              key: Key('grp.option.$i'),
-                              color: chosen == i ? c.accentContainer : null,
-                              onTap: _submitting || _saving
-                                  ? null
-                                  : () => _choose(q, i),
-                              semanticLabel:
-                                  '${String.fromCharCode(0x41 + i)}. $o',
-                              child: ExcludeSemantics(
-                                child: Row(
-                                  children: [
-                                    CircleAvatar(
-                                      radius: 14,
-                                      backgroundColor: chosen == i
-                                          ? c.accent
-                                          : c.surfaceSunken,
-                                      foregroundColor: chosen == i
-                                          ? c.onAccent
-                                          : c.textPrimary,
-                                      child: Text(
-                                        String.fromCharCode(0x41 + i),
-                                        style: t.labelLarge?.copyWith(
-                                          color: chosen == i
-                                              ? c.onAccent
-                                              : c.textPrimary,
-                                        ),
-                                      ),
-                                    ),
-                                    const SizedBox(width: FeSpace.sm),
-                                    Expanded(
-                                      child: Text(o, style: t.bodyLarge),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
-                        if (!confirmed)
-                          Padding(
-                            padding: const EdgeInsets.only(top: FeSpace.xxs),
-                            child: Text(
-                              l.classAnswerFlowHint,
-                              key: const Key('grp.flowHint'),
-                              textAlign: TextAlign.center,
-                              style: t.bodySmall?.copyWith(
-                                color: c.textSecondary,
-                              ),
-                            ),
-                          ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            FeContentFrame(
-              child: Padding(
-                padding: const EdgeInsets.only(bottom: FeSpace.sm),
+    return LeaveReporter(
+      // Anti-cheat: test ketayotganda ilova fonga o‘tsa ustozga hisoblanadi
+      // (fire-and-forget; talabaga jazo yo‘q). Ustoz sinovi/mashqda — yo‘q.
+      enabled: !widget.local && !_submitting,
+      onLeave: () =>
+          ref.read(classGroupsServiceProvider).reportLeave(widget.assignmentId),
+      child: Scaffold(
+        appBar: AppBar(title: FeAppBarTitle(a.assignment.topicTitle)),
+        body: SafeArea(
+          child: Column(
+            children: [
+              FeContentFrame(
                 child: Column(
-                  mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    if (!confirmed) ...[
-                      FilledButton(
-                        key: const Key('grp.confirm'),
-                        onPressed: chosen == null || _saving || _submitting
-                            ? null
-                            : () => _confirm(q),
-                        child: Text(l.verifySubmit),
+                    if (widget.local)
+                      Padding(
+                        padding: const EdgeInsets.only(top: FeSpace.xs),
+                        child: FeBanner(
+                          key: const Key('grp.previewBanner'),
+                          icon: Icons.visibility_outlined,
+                          text: widget.practiceTopicId != null
+                              ? l.grpPracticeBanner
+                              : l.grpPreviewBanner,
+                          tone: FeBannerTone.warning,
+                        ),
                       ),
-                      const SizedBox(height: FeSpace.xs),
-                    ],
-                    Row(
-                      children: [
-                        Expanded(
-                          child: OutlinedButton(
-                            key: const Key('grp.prev'),
-                            onPressed: _index == 0 || _saving || _submitting
-                                ? null
-                                : () => setState(() => _index--),
-                            child: Text(l.grpPrev),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: FeSpace.xs),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Text(
+                              l.grpQuestionOf(_index + 1, a.questions.length),
+                              key: const Key('grp.questionOf'),
+                              style: t.labelLarge,
+                            ),
                           ),
-                        ),
-                        const SizedBox(width: FeSpace.xs),
-                        Expanded(
-                          child: last
-                              ? FilledButton(
-                                  key: const Key('grp.finish'),
-                                  onPressed:
-                                      _submitting || _saving || !confirmed
-                                      ? null
-                                      : _submit,
-                                  child: Text(l.grpFinish),
-                                )
-                              : FilledButton(
-                                  key: const Key('grp.next'),
-                                  onPressed:
-                                      _saving || _submitting || !confirmed
-                                      ? null
-                                      : () => setState(() => _index++),
-                                  child: Text(l.grpNext),
-                                ),
-                        ),
-                      ],
+                          if (_clock != null)
+                            GroupTimeChip(
+                              clock: _clock!,
+                              now: ref.read(groupNowProvider),
+                              onExpired: () => _submit(force: true),
+                            ),
+                        ],
+                      ),
+                    ),
+                    LinearProgressIndicator(
+                      value: _answers.length / a.questions.length,
+                      semanticsLabel: l.grpAnsweredOf(
+                        _answers.length,
+                        a.questions.length,
+                      ),
                     ),
                   ],
                 ),
               ),
-            ),
-          ],
+              Expanded(
+                child: ListView(
+                  key: const Key('grp.testList'),
+                  padding: const EdgeInsets.only(
+                    top: FeSpace.md,
+                    bottom: FeSpace.lg,
+                  ),
+                  children: [
+                    FeContentFrame(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text(
+                            q.text,
+                            key: const Key('grp.questionText'),
+                            style: t.titleMedium,
+                          ),
+                          const SizedBox(height: FeSpace.md),
+                          for (var i = 0; i < order.length; i++)
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                bottom: FeSpace.xs,
+                              ),
+                              child: FeCard(
+                                key: Key('grp.option.$i'),
+                                color: chosen == order[i]
+                                    ? c.accentContainer
+                                    : null,
+                                onTap: _submitting || _saving
+                                    ? null
+                                    : () => _choose(q, order[i]),
+                                semanticLabel:
+                                    '${String.fromCharCode(0x41 + i)}. ${q.options[order[i]]}',
+                                child: ExcludeSemantics(
+                                  child: Row(
+                                    children: [
+                                      CircleAvatar(
+                                        radius: 14,
+                                        backgroundColor: chosen == order[i]
+                                            ? c.accent
+                                            : c.surfaceSunken,
+                                        foregroundColor: chosen == order[i]
+                                            ? c.onAccent
+                                            : c.textPrimary,
+                                        child: Text(
+                                          String.fromCharCode(0x41 + i),
+                                          style: t.labelLarge?.copyWith(
+                                            color: chosen == order[i]
+                                                ? c.onAccent
+                                                : c.textPrimary,
+                                          ),
+                                        ),
+                                      ),
+                                      const SizedBox(width: FeSpace.sm),
+                                      Expanded(
+                                        child: Text(
+                                          q.options[order[i]],
+                                          style: t.bodyLarge,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                          if (!confirmed)
+                            Padding(
+                              padding: const EdgeInsets.only(top: FeSpace.xxs),
+                              child: Text(
+                                l.classAnswerFlowHint,
+                                key: const Key('grp.flowHint'),
+                                textAlign: TextAlign.center,
+                                style: t.bodySmall?.copyWith(
+                                  color: c.textSecondary,
+                                ),
+                              ),
+                            ),
+                          if (!widget.local)
+                            const Padding(
+                              padding: EdgeInsets.only(top: FeSpace.xs),
+                              child: AntiCheatStudentNote(),
+                            ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              FeContentFrame(
+                child: Padding(
+                  padding: const EdgeInsets.only(bottom: FeSpace.sm),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      if (!confirmed) ...[
+                        FilledButton(
+                          key: const Key('grp.confirm'),
+                          onPressed: chosen == null || _saving || _submitting
+                              ? null
+                              : () => _confirm(q),
+                          child: Text(l.verifySubmit),
+                        ),
+                        const SizedBox(height: FeSpace.xs),
+                      ],
+                      Row(
+                        children: [
+                          Expanded(
+                            child: OutlinedButton(
+                              key: const Key('grp.prev'),
+                              onPressed: _index == 0 || _saving || _submitting
+                                  ? null
+                                  : () => setState(() => _index--),
+                              child: Text(l.grpPrev),
+                            ),
+                          ),
+                          const SizedBox(width: FeSpace.xs),
+                          Expanded(
+                            child: last
+                                ? FilledButton(
+                                    key: const Key('grp.finish'),
+                                    onPressed:
+                                        _submitting || _saving || !confirmed
+                                        ? null
+                                        : _submit,
+                                    child: Text(l.grpFinish),
+                                  )
+                                : FilledButton(
+                                    key: const Key('grp.next'),
+                                    onPressed:
+                                        _saving || _submitting || !confirmed
+                                        ? null
+                                        : () => setState(() => _index++),
+                                    child: Text(l.grpNext),
+                                  ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
