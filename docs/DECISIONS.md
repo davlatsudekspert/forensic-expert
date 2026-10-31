@@ -297,3 +297,19 @@ Pro 0.4.0 test buildidan keyin darslar va test savollari RU/EN ga tarjima qilina
 * Egasi: patologik anatomiyada ish ko‘p — tayyori chiqariladi, qolgani «Javob tez kunda qo‘shiladi»; limit tejash: yangi Opus agentlar yo‘q, imkon qadar **Sonnet**.
 * Hozircha: sud_tib 427/436, sud_kimyo 313/333, pat_anat 177/501 savolga javob. Qolgan partiyalar (pat_anat 16–42) — egasi ruxsat berganda Sonnet bilan. Batafsil: `docs/ASSESSMENT.md`.
 * Mustaqil inson-mutaxassis taqrizi o‘tmagan; normativ hujjatlar (JK/JPK moddalari, buyruqlar) rasmiy matn bilan solishtirilishi kerak. Push yo‘q.
+
+## 2026-10-31 — Bepul / Pro bo‘linishi (egasi qarori)
+- **Bepul (hamma rejim):** Sud tibbiyoti, Toksikologiya va Biokimyo kitob/darslarini **faqat o‘qish**;
+  qidiruv; lug‘at; manba, provenance va xavfsizlik ogohlantirishlari (hech qachon to‘lov ortida emas).
+- **Pro (qolgan hammasi):** Laboratoriya, Reagentlar, Ekspress/skrining, Huquq, Tadqiqotlar, Moddalar,
+  Kalkulyatorlar, AI, «Tinglash», mustaqil testlar/kartochkalar/imtihon, Sudda so‘roq, Ish daftari,
+  Ustoz paneli (to‘liq).
+- **Talaba va guruh testi:** ustoz bergan testni yechish **bepul**, ustoz natijani ko‘radi. Talaba
+  faqat ballni ko‘radi. To‘g‘ri javoblar, tushuntirish va xatolar tahlili — **Pro**.
+- **Ko‘rinishi:** Pro bo‘limlar ko‘rinadi, ustida qulf bo‘ladi; bosilganda qisqa namuna va «Pro bilan oching».
+- **Qachon:** faqat haqiqiy xarid (sandbox: sotib olish, restore, bekor qilish, tugash) ishlagandan keyin.
+  Shu paytgacha bo‘linish kodda tayyor turadi, lekin **o‘chiq**. Yoqilganda serverda ham tekshiriladi
+  va eski APK’lar `app_config.min_build` orqali o‘chiriladi.
+- **Ilovada oldindan e’lon yo‘q** («bu keyin Pro bo‘ladi» yozuvi qo‘yilmaydi: CLAUDE.md 2026-10-17
+  qoidasi, Apple 2.3). Xabar ijtimoiy tarmoqlarda beriladi; Pro chiqqanda «1 oy bepul» va
+  «Nima yangi» oynasi ko‘rsatiladi.
