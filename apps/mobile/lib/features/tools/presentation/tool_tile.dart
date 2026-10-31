@@ -11,6 +11,7 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/plan/plan_models.dart';
 import '../../common/favorite_button.dart';
+import '../../pro/presentation/pro_gate.dart' show proSectionLocked;
 import '../../professional/presentation/professional_widgets.dart';
 import '../tool_strings.dart';
 
@@ -27,9 +28,11 @@ class ToolTile extends ConsumerWidget {
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     // Professional kalkulyator: ko‘rinadi, lekin Mutaxassis Pro bilan ochiladi.
+    // Qat’iy Bepul/Pro bo‘linishida (2026-10-31) hamma vosita Pro.
     final locked =
-        ProCalculators.isPro(tool.id) &&
-        !proGate(ref, ProFeature.proCalculators);
+        (ProCalculators.isPro(tool.id) &&
+            !proGate(ref, ProFeature.proCalculators)) ||
+        proSectionLocked(ref, ProFeature.proTools);
     return Card(
       key: Key('tool.${tool.id}'),
       clipBehavior: Clip.antiAlias,

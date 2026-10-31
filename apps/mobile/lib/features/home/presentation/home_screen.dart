@@ -20,7 +20,11 @@ import '../../../core/widgets/brand_mark.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
+import '../../../domain/plan/plan_models.dart' show ProFeature;
+import '../../../domain/plan/pro_split.dart';
 import '../../pro/presentation/pro_first_offer.dart';
+import '../../pro/presentation/pro_gate.dart'
+    show ProLockBadge, proSectionLocked;
 import '../../referral/presentation/invite_card.dart';
 import '../../tools/tool_strings.dart';
 import 'first_steps_card.dart';
@@ -113,6 +117,10 @@ enum HomeModule {
   /// Pastki tab (AI) — almashtiriladi; qolganlari ustiga ochiladi (Back).
   bool get isTab => this == HomeModule.ai;
 
+  /// Bo‘lim o‘qishini Pro’da yopadigan funksiya (faqat `FE_PRO_STRICT`
+  /// yoqilganda amal qiladi); `null` — bepul (Bepul/Pro bo‘linishi).
+  ProFeature? get proFeature => ProSplit.featureForModule(name);
+
   /// Modul kartochkasi qayerga olib boradi.
   String get route => switch (this) {
     HomeModule.ai => Routes.ai,
@@ -156,7 +164,16 @@ class HomeAction {
   /// AI — oltin aksentli karta.
   final bool highlight;
 
-  Key get key => Key(module == null ? 'home.$id' : 'home.module.$id');
+  String get keyName => module == null ? 'home.$id' : 'home.module.$id';
+
+  Key get key => Key(keyName);
+
+  /// Karta o‘qishini Pro’da yopadigan funksiya (qat’iy bo‘linishda).
+  ProFeature? get proFeature => switch (id) {
+    'guidelines' => ProFeature.proModules,
+    'tools' => ProFeature.proTools,
+    _ => module?.proFeature,
+  };
 
   String title(AppLocalizations l) => switch (id) {
     'learn' => l.homeActLearnTitle,
@@ -281,6 +298,7 @@ class HomeScreen extends ConsumerWidget {
                       icon: Icons.assignment_outlined,
                       title: l.guidelinesTitle,
                       body: l.guidelinesSubtitle,
+                      lock: ProFeature.proModules,
                       onTap: () => context.push(Routes.guidelines),
                     ),
                   ],
@@ -295,6 +313,7 @@ class HomeScreen extends ConsumerWidget {
                       icon: Icons.biotech_outlined,
                       title: l.homeInstrumentsTitle,
                       body: l.homeInstrumentsBody,
+                      lock: ProFeature.instrumentsCourseFull,
                       onTap: () => context.push(Routes.lessons),
                     ),
                   ],
@@ -305,6 +324,7 @@ class HomeScreen extends ConsumerWidget {
                       icon: Icons.fact_check_outlined,
                       title: l.assessmentTitle,
                       body: l.assessmentSubtitle,
+                      lock: ProFeature.proModules,
                       onTap: () => context.push(Routes.assessment),
                     ),
                     const SizedBox(height: FeSpace.sm),
@@ -313,6 +333,7 @@ class HomeScreen extends ConsumerWidget {
                       icon: Icons.gavel_outlined,
                       title: l.courtTitle,
                       body: l.courtSubtitle,
+                      lock: ProFeature.courtPrep,
                       onTap: () => context.push(Routes.courtPrep),
                     ),
                   ],
@@ -387,14 +408,15 @@ class _ActionGrid extends StatelessWidget {
   }
 }
 
-class _ActionCard extends StatelessWidget {
+class _ActionCard extends ConsumerWidget {
   const _ActionCard({required this.action});
 
   final HomeAction action;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
+    final locked = proSectionLocked(ref, action.proFeature);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     final b = Theme.of(context).brightness;
@@ -413,20 +435,28 @@ class _ActionCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          DecoratedBox(
-            decoration: BoxDecoration(
-              color: gold ? c.surfaceRaised : action.hue.bg(b),
-              borderRadius: BorderRadius.circular(FeRadius.md),
-              border: gold ? Border.all(color: c.accentBorder) : null,
-            ),
-            child: SizedBox.square(
-              dimension: 44,
-              child: Icon(
-                action.icon,
-                color: gold ? c.accent : action.hue.fg(b),
-                size: 24,
+          Row(
+            children: [
+              DecoratedBox(
+                decoration: BoxDecoration(
+                  color: gold ? c.surfaceRaised : action.hue.bg(b),
+                  borderRadius: BorderRadius.circular(FeRadius.md),
+                  border: gold ? Border.all(color: c.accentBorder) : null,
+                ),
+                child: SizedBox.square(
+                  dimension: 44,
+                  child: Icon(
+                    action.icon,
+                    color: gold ? c.accent : action.hue.fg(b),
+                    size: 24,
+                  ),
+                ),
               ),
-            ),
+              if (locked) ...[
+                const Spacer(),
+                ProLockBadge(key: Key('${action.keyName}.lock')),
+              ],
+            ],
           ),
           const SizedBox(height: FeSpace.sm),
           Text(
@@ -451,13 +481,14 @@ class _ActionCard extends StatelessWidget {
 }
 
 /// Kutubxona / vositalar kirishi — ikonka, sarlavha, qisqa tavsif.
-class _ResourceTile extends StatelessWidget {
+class _ResourceTile extends ConsumerWidget {
   const _ResourceTile({
     super.key,
     required this.icon,
     required this.title,
     required this.body,
     required this.onTap,
+    this.lock,
   });
 
   final IconData icon;
@@ -465,10 +496,16 @@ class _ResourceTile extends StatelessWidget {
   final String body;
   final VoidCallback onTap;
 
+  /// Bo‘lim Pro’da yopilsa qulf belgisi (faqat `FE_PRO_STRICT` yoqilganda).
+  final ProFeature? lock;
+
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
+    final locked = proSectionLocked(ref, lock);
+    final k = key;
+    final lockKey = k is ValueKey<String> ? '${k.value}.lock' : 'home.lock';
     return FeCard(
       onTap: onTap,
       child: _EntryLayout(
@@ -484,7 +521,16 @@ class _ResourceTile extends StatelessWidget {
         ),
         title: Text(title, style: t.titleSmall),
         body: body,
-        trailing: Icon(Icons.chevron_right, color: c.textSecondary),
+        trailing: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            if (locked) ...[
+              ProLockBadge(key: Key(lockKey)),
+              const SizedBox(width: FeSpace.xxs),
+            ],
+            Icon(Icons.chevron_right, color: c.textSecondary),
+          ],
+        ),
       ),
     );
   }
@@ -957,16 +1003,17 @@ class _ReviewNotice extends StatelessWidget {
   }
 }
 
-class _ModuleCard extends StatelessWidget {
+class _ModuleCard extends ConsumerWidget {
   const _ModuleCard({required this.module});
 
   final HomeModule module;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
     final b = Theme.of(context).brightness;
     final hue = module.hue;
+    final locked = proSectionLocked(ref, module.proFeature);
     return FeCard(
       key: Key('home.module.${module.name}'),
       padding: const EdgeInsets.fromLTRB(
@@ -995,6 +1042,10 @@ class _ModuleCard extends StatelessWidget {
                   ),
                 ),
                 const Spacer(),
+                if (locked) ...[
+                  ProLockBadge(key: Key('home.module.${module.name}.lock')),
+                  const SizedBox(width: FeSpace.xs),
+                ],
                 Icon(
                   Icons.arrow_outward_rounded,
                   size: 16,

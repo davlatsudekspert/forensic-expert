@@ -20,11 +20,15 @@ import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/library/library_models.dart';
+import '../../../domain/plan/plan_models.dart' show ProFeature;
+import '../../../domain/plan/pro_split.dart';
 import '../../evidence/evidence_strings.dart';
 import '../../evidence/presentation/provenance_screens.dart';
 import '../../legal/presentation/instrument_title.dart';
 import '../../legal/presentation/jurisdiction_screens.dart';
 import '../../placeholder/presentation/in_development_view.dart';
+import '../../pro/presentation/pro_gate.dart'
+    show ProLockBadge, proSectionLocked;
 import 'source_detail_screen.dart';
 
 extension LibrarySectionL10n on LibrarySection {
@@ -81,6 +85,12 @@ class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
     _filter = '';
     _filterController.clear();
   });
+
+  /// Qat’iy bo‘linishda yopiq (Pro) kutubxona bo‘limi.
+  bool _sectionLocked(LibrarySection s) => proSectionLocked(
+    ref,
+    ProSplit.isFreeLibrarySection(s) ? null : ProFeature.proModules,
+  );
 
   bool _matches(LibraryEntry e) {
     if (_section == LibrarySection.substances &&
@@ -147,13 +157,26 @@ class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
                               padding: const EdgeInsets.only(right: FeSpace.xs),
                               child: ChoiceChip(
                                 key: Key('library.section.${s.name}'),
-                                avatar: Icon(s.icon, size: 18),
+                                avatar: Icon(
+                                  _sectionLocked(s)
+                                      ? Icons.lock_outline
+                                      : s.icon,
+                                  size: 18,
+                                ),
                                 label: Text(s.label(l)),
                                 selected: _section == s,
-                                onSelected: (_) => setState(() {
-                                  _section = s;
-                                  _group = null;
-                                }),
+                                onSelected: (_) {
+                                  // Pro bo‘lim (qat’iy bo‘linishda): o‘z
+                                  // qulfli sahifasida ochiladi (namuna + taklif).
+                                  if (_sectionLocked(s)) {
+                                    context.push(Routes.librarySection(s.name));
+                                    return;
+                                  }
+                                  setState(() {
+                                    _section = s;
+                                    _group = null;
+                                  });
+                                },
                               ),
                             ),
                         ],
@@ -235,12 +258,22 @@ class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
                           (
                             label: l.availBrowseAll,
                             icon: Icons.local_library_outlined,
-                            onTap: () => setState(() {
-                              _section = LibrarySection.substances;
-                              _group = null;
-                              _filter = '';
-                              _filterController.clear();
-                            }),
+                            onTap: () {
+                              if (_sectionLocked(LibrarySection.substances)) {
+                                context.push(
+                                  Routes.librarySection(
+                                    LibrarySection.substances.name,
+                                  ),
+                                );
+                                return;
+                              }
+                              setState(() {
+                                _section = LibrarySection.substances;
+                                _group = null;
+                                _filter = '';
+                                _filterController.clear();
+                              });
+                            },
                           ),
                         ],
                       ),
@@ -495,9 +528,24 @@ class LibraryScreen extends ConsumerWidget {
       _ => Routes.jurisdictions,
     };
 
+    // Qat’iy bo‘linishda Pro bo‘limlar ko‘rinadi, lekin qulf belgisi bilan.
+    ProFeature? lockOf(String id) => switch (id) {
+      'substances' ||
+      'methods' ||
+      'reagents' ||
+      'rapid' ||
+      'guidelines' ||
+      'standards' ||
+      'research' ||
+      'jurisdictions' => ProFeature.proModules,
+      'court' => ProFeature.courtPrep,
+      _ => null,
+    };
+
     Widget tile((String, IconData, String, int) x) {
       final (id, icon, title, count) = x;
       final c = FeTheme.of(context);
+      final locked = proSectionLocked(ref, lockOf(id));
       return Padding(
         padding: const EdgeInsets.only(bottom: FeSpace.xs),
         child: FeCard(
@@ -524,6 +572,10 @@ class LibraryScreen extends ConsumerWidget {
                   ],
                 ),
               ),
+              if (locked) ...[
+                ProLockBadge(key: Key('library.hub.$id.lock')),
+                const SizedBox(width: FeSpace.xs),
+              ],
               ExcludeSemantics(
                 child: Icon(Icons.chevron_right, color: c.textSecondary),
               ),

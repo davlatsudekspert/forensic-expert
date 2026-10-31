@@ -14,10 +14,13 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/library/library_models.dart';
+import '../../../domain/plan/plan_models.dart' show ProFeature;
 import '../../disciplines/presentation/disciplines_screens.dart'
     show DisciplineLessonsSection;
 import '../../knowledge/knowledge_strings.dart';
 import '../../placeholder/presentation/in_development_view.dart';
+import '../../pro/presentation/pro_gate.dart'
+    show ProLockBadge, proSectionLocked;
 import '../../professional/presentation/professional_widgets.dart';
 import 'tool_tile.dart';
 
@@ -175,6 +178,16 @@ class ModuleHubScreen extends ConsumerWidget {
                         icon: icon,
                         label: label,
                         count: count,
+                        // Qat’iy bo‘linishda Pro bo‘limlar qulf belgisi bilan.
+                        locked: proSectionLocked(ref, switch (id) {
+                          'substances' ||
+                          'screening' ||
+                          'methods' ||
+                          'reagents' ||
+                          'standards' ||
+                          'research' => ProFeature.proModules,
+                          _ => null,
+                        }),
                         onTap: () => context.push(route),
                       ),
                   ],
@@ -196,12 +209,14 @@ class _HubLink extends StatelessWidget {
     required this.label,
     required this.count,
     required this.onTap,
+    this.locked = false,
   });
 
   final IconData icon;
   final String label;
   final int count;
   final VoidCallback onTap;
+  final bool locked;
 
   @override
   Widget build(BuildContext context) {
@@ -222,6 +237,16 @@ class _HubLink extends StatelessWidget {
               ),
             ),
             const SizedBox(width: FeSpace.xs),
+            if (locked) ...[
+              ProLockBadge(
+                key: Key(
+                  key is ValueKey<String>
+                      ? '${(key! as ValueKey<String>).value}.lock'
+                      : 'moduleHub.lock',
+                ),
+              ),
+              const SizedBox(width: FeSpace.xs),
+            ],
             const Icon(Icons.chevron_right),
           ],
         ),

@@ -7,6 +7,7 @@ import 'package:go_router/go_router.dart';
 import '../../../app/class_groups.dart';
 import '../../../app/class_quiz.dart';
 import '../../../app/lessons.dart';
+import '../../../app/plan.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -16,7 +17,9 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../core/widgets/score_grade.dart';
 import '../../../domain/class_groups/class_groups_models.dart';
 import '../../../domain/class_groups/variant_draw.dart';
+import '../../../domain/plan/plan_models.dart' show ProFeature;
 import '../../anti_cheat/presentation/anti_cheat_widgets.dart';
+import '../../pro/presentation/pro_gate.dart' show ProFeatureLock;
 import '../../professional/presentation/professional_widgets.dart' show FeNote;
 import 'group_widgets.dart';
 
@@ -677,6 +680,10 @@ class GroupResultScreen extends ConsumerWidget {
             icon: const Icon(Icons.refresh),
             label: Text(l.grpRefresh),
           ),
+        ] else if (!proOpen(ref, ProFeature.groupTestReview)) ...[
+          // Qat’iy Bepul/Pro bo‘linishi (2026-10-31): talaba faqat ballni
+          // ko‘radi; to‘g‘ri javoblar, izoh va xatolar tahlili — Pro.
+          const ProFeatureLock(feature: ProFeature.groupTestReview),
         ] else ...[
           FeSectionHeader(l.grpAnswersSection),
           for (final (i, it) in r.items.indexed)

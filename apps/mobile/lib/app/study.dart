@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../domain/guidelines/guideline_models.dart';
 import '../domain/learn/study_models.dart';
 import 'guidelines.dart';
+import 'plan.dart' show proStrictProvider;
 import 'providers.dart';
 
 /// O‘quv rejimi katalogi — kutubxona, bilim yozuvlari va yo‘riqnomalardan
@@ -16,8 +17,13 @@ final studyCatalogProvider = Provider<StudyCatalog>((ref) {
 });
 
 /// Talabaga bepul kartochkalar to‘plami (1 fan): katalogdagi birinchisi.
+///
+/// Qat’iy Bepul/Pro bo‘linishida (2026-10-31) mustaqil kartochkalar ham Pro:
+/// bepul to‘plam yo‘q.
 final studyFreeDeckIdProvider = Provider<String?>(
-  (ref) => ref.watch(studyCatalogProvider).decks.firstOrNull?.id,
+  (ref) => ref.watch(proStrictProvider)
+      ? null
+      : ref.watch(studyCatalogProvider).decks.firstOrNull?.id,
 );
 
 /// Manbalar hali yuklanmoqdami (bo‘sh holat o‘rniga skelet ko‘rsatish uchun).

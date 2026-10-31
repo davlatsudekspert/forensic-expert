@@ -77,6 +77,7 @@ class TeacherPanelScreen extends ConsumerWidget {
                     title: l.teacherRunTitle,
                     body: teacher ? l.teacherRunBody : l.teacherRoleNeeded,
                     primary: true,
+                    locked: proSectionLocked(ref, ProFeature.teacherPanel),
                     onTap: teacher ? () => context.push(Routes.classNew) : null,
                   ),
                   const SizedBox(height: FeSpace.sm),
@@ -141,7 +142,11 @@ class TeacherActionTile extends StatelessWidget {
     required this.body,
     required this.onTap,
     this.primary = false,
+    this.locked = false,
   });
+
+  /// Pro’da yopiq (qat’iy bo‘linishda): qulf belgisi.
+  final bool locked;
 
   final IconData icon;
   final String title;
@@ -204,6 +209,10 @@ class TeacherActionTile extends StatelessWidget {
                     ],
                   ),
                 ),
+                if (locked) ...[
+                  const SizedBox(width: FeSpace.xs),
+                  const ProLockBadge(key: Key('teacher.run.lock')),
+                ],
                 if (enabled) ...[
                   const SizedBox(width: FeSpace.xs),
                   Icon(Icons.chevron_right, color: fg),

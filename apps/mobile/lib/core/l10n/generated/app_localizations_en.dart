@@ -12242,4 +12242,36 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get updReqStoreHint => 'Update the app from the App Store.';
+
+  @override
+  String get proBenefitModules =>
+      'All sections: reagents, substances, methods, screening, law and research';
+
+  @override
+  String get proBenefitTools =>
+      'Calculators and analysis tools (GC-MS, spectrophotometry)';
+
+  @override
+  String get proBenefitAi => 'Forensic AI: answers with sources';
+
+  @override
+  String get proBenefitListen => 'Listen to the text read aloud';
+
+  @override
+  String get proBenefitGroupReview =>
+      'Correct answers, explanations and error analysis of this test';
+
+  @override
+  String get proBenefitTeacherPanel =>
+      'Run live tests and use the full teacher panel';
+
+  @override
+  String get proSampleTitle => 'Sample';
+
+  @override
+  String get proSampleNote =>
+      'A short sample. The full section opens with Pro.';
+
+  @override
+  String get proLockedBadge => 'Unlocked with Pro';
 }

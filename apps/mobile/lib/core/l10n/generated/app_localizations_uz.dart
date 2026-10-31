@@ -12173,4 +12173,35 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get updReqStoreHint => 'App Store’dan yangilang.';
+
+  @override
+  String get proBenefitModules =>
+      'Barcha bo‘limlar: reagentlar, moddalar, usullar, skrining, huquq va tadqiqotlar';
+
+  @override
+  String get proBenefitTools =>
+      'Kalkulyatorlar va tahlil vositalari (GC-MS, spektrofotometriya)';
+
+  @override
+  String get proBenefitAi => 'Forensic AI: manbali javoblar';
+
+  @override
+  String get proBenefitListen => 'Matnni ovozli tinglash';
+
+  @override
+  String get proBenefitGroupReview =>
+      'Bu testning to‘g‘ri javoblari, izohlari va xatolar tahlili';
+
+  @override
+  String get proBenefitTeacherPanel =>
+      'Jonli test o‘tkazish va to‘liq ustoz paneli';
+
+  @override
+  String get proSampleTitle => 'Namuna';
+
+  @override
+  String get proSampleNote => 'Qisqa namuna. To‘liq bo‘lim Pro bilan ochiladi.';
+
+  @override
+  String get proLockedBadge => 'Pro bilan ochiladi';
 }

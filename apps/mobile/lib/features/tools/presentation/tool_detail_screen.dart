@@ -2,6 +2,7 @@ import 'package:fe_calc_engine/fe_calc_engine.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../app/pro_samples.dart' show ProSampleSource;
 import '../../../app/user_data.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -50,11 +51,20 @@ class _ToolDetailScreenState extends ConsumerState<ToolDetailScreen> {
     }
     final page = _page(context, l, tool);
     // Professional kalkulyator: Mutaxassis Pro (oddiy hisoblar bepul).
-    if (!ProCalculators.isPro(tool.id)) return page;
+    final gated = ProCalculators.isPro(tool.id)
+        ? ProGated(
+            feature: ProFeature.proCalculators,
+            title: l.toolName(tool),
+            child: page,
+          )
+        : page;
+    // Qat’iy Bepul/Pro bo‘linishida (2026-10-31) hamma vosita Pro; o‘chiqda
+    // bu qatlam hech narsa o‘zgartirmaydi.
     return ProGated(
-      feature: ProFeature.proCalculators,
+      feature: ProFeature.proTools,
       title: l.toolName(tool),
-      child: page,
+      sample: ProSampleSource.methods,
+      child: gated,
     );
   }
 

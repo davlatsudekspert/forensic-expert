@@ -21170,6 +21170,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Update the app from the App Store.'**
   String get updReqStoreHint;
+
+  /// Lock card benefit: all sections beyond the free three.
+  ///
+  /// In en, this message translates to:
+  /// **'All sections: reagents, substances, methods, screening, law and research'**
+  String get proBenefitModules;
+
+  /// Lock card benefit: calculators and tools.
+  ///
+  /// In en, this message translates to:
+  /// **'Calculators and analysis tools (GC-MS, spectrophotometry)'**
+  String get proBenefitTools;
+
+  /// Lock card benefit: Forensic AI.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic AI: answers with sources'**
+  String get proBenefitAi;
+
+  /// Lock card benefit: listen (text to speech).
+  ///
+  /// In en, this message translates to:
+  /// **'Listen to the text read aloud'**
+  String get proBenefitListen;
+
+  /// Lock card benefit: group test review for the student.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct answers, explanations and error analysis of this test'**
+  String get proBenefitGroupReview;
+
+  /// Lock card benefit: full teacher panel (live tests).
+  ///
+  /// In en, this message translates to:
+  /// **'Run live tests and use the full teacher panel'**
+  String get proBenefitTeacherPanel;
+
+  /// Section header above a short sample inside a locked section.
+  ///
+  /// In en, this message translates to:
+  /// **'Sample'**
+  String get proSampleTitle;
+
+  /// Note under a sample: the full section needs Pro.
+  ///
+  /// In en, this message translates to:
+  /// **'A short sample. The full section opens with Pro.'**
+  String get proSampleNote;
+
+  /// Accessibility label of the small lock badge on a Pro section card.
+  ///
+  /// In en, this message translates to:
+  /// **'Unlocked with Pro'**
+  String get proLockedBadge;
 }
 
 class _AppLocalizationsDelegate

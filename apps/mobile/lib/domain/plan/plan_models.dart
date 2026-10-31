@@ -90,9 +90,48 @@ enum ProFeature {
   proCalculators,
   caseNotebook,
   courtPrep,
-  aiExtended;
+  aiExtended,
+  // Bepul / Pro bo‘linishi (egasi qarori, 2026-10-31). Bular faqat
+  // [kProStrict] yoqilganda qulflanadi; o‘chiq bo‘lsa — hamma narsa avvalgidek
+  // ochiq ([strictOnly]).
+  /// Bepul uchtadan (Sud tibbiyoti, Toksikologiya, Biokimyo) tashqari
+  /// bo‘limlarni o‘qish: har qanday pullik reja ochadi.
+  proModules,
 
-  /// Funksiyani ochadigan yagona reja.
+  /// Kalkulyatorlar va vositalar (har qanday pullik reja).
+  proTools,
+
+  /// Forensic AI (har qanday pullik reja).
+  proAi,
+
+  /// «Tinglash» (matnni ovozga aylantirish).
+  listen,
+
+  /// Guruh testi natijasida to‘g‘ri javoblar, izoh va xatolar tahlili.
+  groupTestReview,
+
+  /// Ustoz paneli: jonli test o‘tkazish.
+  teacherPanel;
+
+  /// Faqat [kProStrict] bilan qulflanadigan funksiya (o‘chiqda har doim ochiq).
+  bool get strictOnly => switch (this) {
+    proModules ||
+    proTools ||
+    proAi ||
+    listen ||
+    groupTestReview ||
+    teacherPanel => true,
+    _ => false,
+  };
+
+  /// Reja turidan qat’i nazar har qanday faol pullik reja ochadi.
+  bool get anyPlan => switch (this) {
+    proModules || proTools || proAi || listen || groupTestReview => true,
+    _ => false,
+  };
+
+  /// Funksiyani ochadigan yagona reja ([anyPlan] bo‘lsa — eng arzoni, faqat
+  /// tartib uchun; haqiqiy tekshiruv [Entitlements.allows] da).
   Plan get requiredPlan => switch (this) {
     fullQuizBank ||
     examMode ||
@@ -109,6 +148,12 @@ enum ProFeature {
     caseNotebook ||
     courtPrep ||
     aiExtended => Plan.expert,
+    proModules ||
+    proTools ||
+    proAi ||
+    listen ||
+    groupTestReview => Plan.student,
+    teacherPanel => Plan.teacher,
   };
 }
 
@@ -162,6 +207,12 @@ class Entitlements {
   bool allows(ProFeature feature, {DateTime? now}) =>
       isActiveAt(now ?? DateTime.now()) &&
       (plan == Plan.premium || plan == feature.requiredPlan);
+
+  /// [allows] + [ProFeature.anyPlan]: har qanday faol pullik reja ochadi
+  /// (Bepul/Pro bo‘linishi, 2026-10-31). Gate’lar shuni ishlatadi.
+  bool unlocks(ProFeature feature, {DateTime? now}) =>
+      allows(feature, now: now) ||
+      (feature.anyPlan && isActiveAt(now ?? DateTime.now()));
 
   bool get isTrial => source == PlanSource.trial;
 

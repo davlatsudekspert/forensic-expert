@@ -12284,4 +12284,36 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get updReqStoreHint => 'Обновите приложение в App Store.';
+
+  @override
+  String get proBenefitModules =>
+      'Все разделы: реагенты, вещества, методы, скрининг, право и исследования';
+
+  @override
+  String get proBenefitTools =>
+      'Калькуляторы и аналитические инструменты (GC-MS, спектрофотометрия)';
+
+  @override
+  String get proBenefitAi => 'Forensic AI: ответы с источниками';
+
+  @override
+  String get proBenefitListen => 'Прослушивание текста вслух';
+
+  @override
+  String get proBenefitGroupReview =>
+      'Правильные ответы, пояснения и разбор ошибок этого теста';
+
+  @override
+  String get proBenefitTeacherPanel =>
+      'Проведение живых тестов и полная панель учителя';
+
+  @override
+  String get proSampleTitle => 'Образец';
+
+  @override
+  String get proSampleNote =>
+      'Короткий образец. Полный раздел открывается с Pro.';
+
+  @override
+  String get proLockedBadge => 'Открывается с Pro';
 }

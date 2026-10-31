@@ -62,6 +62,9 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
     // o‘quv rejimiga olib boradi.
     final noQuiz = repo.quiz().isEmpty;
     final examLocked = !proGate(ref, ProFeature.examMode);
+    // Qat’iy bo‘linishda mustaqil test va kartochkalar ham Pro (qulf belgisi).
+    final quizLocked = !proStrictGate(ref, ProFeature.fullQuizBank);
+    final cardsLocked = !proStrictGate(ref, ProFeature.allFlashcards);
     final noCards = repo.flashcards().isEmpty;
 
     return Scaffold(
@@ -287,14 +290,16 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
                       items: [
                         (
                           const Key('learn.quiz'),
-                          Icons.quiz_outlined,
+                          quizLocked ? Icons.lock_outline : Icons.quiz_outlined,
                           l.learnQuiz,
                           () =>
                               context.push(noQuiz ? Routes.study : Routes.quiz),
                         ),
                         (
                           const Key('learn.flashcards'),
-                          Icons.style_outlined,
+                          cardsLocked
+                              ? Icons.lock_outline
+                              : Icons.style_outlined,
                           l.learnFlashcards,
                           () => context.push(
                             noCards ? Routes.study : Routes.flashcards,

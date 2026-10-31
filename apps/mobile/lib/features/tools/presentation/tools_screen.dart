@@ -13,6 +13,7 @@ import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/plan/plan_models.dart';
+import '../../pro/presentation/pro_gate.dart' show proSectionLocked;
 import '../tool_strings.dart';
 import 'tool_tile.dart';
 
@@ -85,7 +86,12 @@ class ToolsScreen extends ConsumerWidget {
                       onTap: () => context.push(Routes.gcms),
                       child: Row(
                         children: [
-                          Icon(Icons.biotech_outlined, color: c.accent),
+                          Icon(
+                            proSectionLocked(ref, ProFeature.proTools)
+                                ? Icons.lock_outline
+                                : Icons.biotech_outlined,
+                            color: c.accent,
+                          ),
                           const SizedBox(width: FeSpace.sm),
                           Expanded(
                             child: Column(

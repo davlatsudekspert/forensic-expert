@@ -18,7 +18,8 @@ import '../domain/knowledge/knowledge_models.dart';
 import '../domain/learn/study_models.dart' show StudyQuizMode;
 import '../domain/library/library_models.dart';
 import '../domain/moderation/moderation_models.dart';
-import '../domain/plan/plan_models.dart' show Plan;
+import '../domain/plan/plan_models.dart' show Plan, ProFeature;
+import '../domain/plan/pro_split.dart';
 import '../domain/publications/publication_models.dart';
 import '../domain/referral/referral_models.dart';
 import '../domain/support/support_models.dart';
@@ -50,6 +51,7 @@ import '../features/glossary/presentation/glossary_screens.dart';
 import '../features/guidelines/presentation/guidelines_screens.dart';
 import '../features/home/presentation/home_screen.dart';
 import '../features/home/presentation/search_screen.dart';
+import '../features/knowledge/knowledge_strings.dart';
 import '../features/knowledge/presentation/knowledge_detail_screen.dart';
 import '../features/knowledge/presentation/knowledge_list_screen.dart';
 import '../features/learn/presentation/learn_screens.dart';
@@ -72,7 +74,15 @@ import '../features/onboarding/presentation/mode_screen.dart';
 import '../features/placeholder/presentation/not_found_screen.dart';
 import '../features/pro/presentation/analysis_plan_screen.dart';
 import '../features/pro/presentation/pro_gate.dart'
-    show CasebookGate, CourtPrepGate, StudentTestGate;
+    show
+        CasebookGate,
+        CourtPrepGate,
+        KnowledgeEntryGate,
+        LibraryEntryGate,
+        LibrarySectionGate,
+        ProGated,
+        ProSampleIdGate,
+        StudentTestGate;
 import '../features/pro/presentation/pro_screen.dart';
 import '../features/pro/presentation/pro_search_screen.dart';
 import '../features/professional/presentation/account_choice_screen.dart';
@@ -105,6 +115,7 @@ import '../features/tools/presentation/tool_detail_screen.dart';
 import '../features/tools/presentation/tools_screen.dart';
 import 'class_groups.dart';
 import 'class_quiz.dart';
+import 'pro_samples.dart' show ProSampleSource;
 import 'referral.dart';
 import 'routes.dart';
 import 'user_data.dart';
@@ -177,6 +188,33 @@ void _recordFirstStep(Ref ref, String location) {
     () => ref.read(userDataProvider.notifier).recordMilestone(step),
   );
 }
+
+/// Qat’iy Bepul/Pro bo‘linishida (`FE_PRO_STRICT`, 2026-10-31) Pro bo‘lim
+/// sahifasini qulflaydi: bo‘lim ko‘rinadi, ichida qisqa namuna va Pro taklifi.
+/// Bo‘linish o‘chiq bo‘lsa — [child] o‘zgarishsiz. To‘g‘ridan-to‘g‘ri havola
+/// (deep link) ham shu orqali qulflanadi.
+Widget _proModule(
+  BuildContext c, {
+  required String title,
+  required Widget child,
+  ProSampleSource? sample,
+  ProFeature feature = ProFeature.proModules,
+  bool free = false,
+}) => ProGated(
+  feature: feature,
+  title: title,
+  freeIf: free,
+  sample: sample,
+  child: child,
+);
+
+ProSampleSource? _sampleOfKind(KnowledgeKind kind) => switch (kind) {
+  KnowledgeKind.reagent => ProSampleSource.reagents,
+  KnowledgeKind.screeningTest => ProSampleSource.screening,
+  KnowledgeKind.method => ProSampleSource.methods,
+  KnowledgeKind.emergingIssue => ProSampleSource.emerging,
+  KnowledgeKind.topic => null,
+};
 
 final routerProvider = Provider<GoRouter>((ref) {
   final rootKey = GlobalKey<NavigatorState>(debugLabel: 'root');
@@ -375,11 +413,21 @@ final routerProvider = Provider<GoRouter>((ref) {
                     routes: [
                       GoRoute(
                         path: 'quiz',
-                        builder: (c, s) => const QuizScreen(),
+                        builder: (c, s) => ProGated(
+                          feature: ProFeature.fullQuizBank,
+                          title: AppLocalizations.of(c).learnQuiz,
+                          strictOnly: true,
+                          child: const QuizScreen(),
+                        ),
                       ),
                       GoRoute(
                         path: 'flashcards',
-                        builder: (c, s) => const FlashcardsScreen(),
+                        builder: (c, s) => ProGated(
+                          feature: ProFeature.allFlashcards,
+                          title: AppLocalizations.of(c).learnFlashcards,
+                          strictOnly: true,
+                          child: const FlashcardsScreen(),
+                        ),
                       ),
                       GoRoute(
                         path: 'exam',
@@ -392,8 +440,13 @@ final routerProvider = Provider<GoRouter>((ref) {
                           GoRoute(
                             path: 'new',
                             parentNavigatorKey: rootKey,
-                            builder: (c, s) => ClassCreateScreen(
-                              initialTopicId: s.uri.queryParameters['topic'],
+                            builder: (c, s) => _proModule(
+                              c,
+                              title: AppLocalizations.of(c).teacherPanelTitle,
+                              feature: ProFeature.teacherPanel,
+                              child: ClassCreateScreen(
+                                initialTopicId: s.uri.queryParameters['topic'],
+                              ),
                             ),
                           ),
                           GoRoute(
@@ -566,14 +619,24 @@ final routerProvider = Provider<GoRouter>((ref) {
                   ),
                   GoRoute(
                     path: 'research',
-                    builder: (c, s) => ResearchLibraryScreen(
-                      entityId: s.uri.queryParameters['entity'],
+                    builder: (c, s) => _proModule(
+                      c,
+                      title: AppLocalizations.of(c).moduleResearch,
+                      sample: ProSampleSource.research,
+                      child: ResearchLibraryScreen(
+                        entityId: s.uri.queryParameters['entity'],
+                      ),
                     ),
                     routes: [
                       GoRoute(
                         path: ':id',
-                        builder: (c, s) => ResearchDetailScreen(
-                          researchId: s.pathParameters['id']!,
+                        builder: (c, s) => ProSampleIdGate(
+                          id: s.pathParameters['id']!,
+                          feature: ProFeature.proModules,
+                          title: AppLocalizations.of(c).moduleResearch,
+                          child: ResearchDetailScreen(
+                            researchId: s.pathParameters['id']!,
+                          ),
                         ),
                       ),
                     ],
@@ -585,7 +648,11 @@ final routerProvider = Provider<GoRouter>((ref) {
                   ),
                   GoRoute(
                     path: 'compare',
-                    builder: (c, s) => const CompareJurisdictionsScreen(),
+                    builder: (c, s) => _proModule(
+                      c,
+                      title: AppLocalizations.of(c).jurisdictionsTitle,
+                      child: const CompareJurisdictionsScreen(),
+                    ),
                   ),
                   GoRoute(
                     path: 'disciplines',
@@ -600,16 +667,25 @@ final routerProvider = Provider<GoRouter>((ref) {
                   ),
                   GoRoute(
                     path: 'jurisdictions',
-                    builder: (c, s) => const JurisdictionHubScreen(),
+                    builder: (c, s) => _proModule(
+                      c,
+                      title: AppLocalizations.of(c).jurisdictionsTitle,
+                      child: const JurisdictionHubScreen(),
+                    ),
                     routes: [
+                      // Yurisdiksiya tanlash — sozlama (doim bepul).
                       GoRoute(
                         path: 'select',
                         builder: (c, s) => const JurisdictionSelectScreen(),
                       ),
                       GoRoute(
                         path: ':id',
-                        builder: (c, s) => JurisdictionDetailScreen(
-                          id: s.pathParameters['id']!,
+                        builder: (c, s) => _proModule(
+                          c,
+                          title: AppLocalizations.of(c).jurisdictionsTitle,
+                          child: JurisdictionDetailScreen(
+                            id: s.pathParameters['id']!,
+                          ),
                         ),
                       ),
                     ],
@@ -618,20 +694,47 @@ final routerProvider = Provider<GoRouter>((ref) {
                     path: 'knowledge/:kind',
                     builder: (c, s) => switch (KnowledgeKind.values
                         .asNameMap()[s.pathParameters['kind']]) {
-                      final kind? => KnowledgeListScreen(kind: kind),
+                      final kind? => _proModule(
+                        c,
+                        title: AppLocalizations.of(c).knowledgeKindTitle(kind),
+                        free: kind == KnowledgeKind.topic,
+                        sample: _sampleOfKind(kind),
+                        child: KnowledgeListScreen(kind: kind),
+                      ),
                       null => const NotFoundScreen(),
                     },
                   ),
                   GoRoute(
                     path: 'entry/:id',
-                    builder: (c, s) =>
-                        KnowledgeDetailScreen(entryId: s.pathParameters['id']!),
+                    builder: (c, s) => KnowledgeEntryGate(
+                      entryId: s.pathParameters['id']!,
+                      child: KnowledgeDetailScreen(
+                        entryId: s.pathParameters['id']!,
+                      ),
+                    ),
                   ),
                   GoRoute(
                     path: 'area/:area',
                     builder: (c, s) => switch (KnowledgeArea.values
                         .asNameMap()[s.pathParameters['area']]) {
-                      final area? => AreaHubScreen(area: area),
+                      final area? => _proModule(
+                        c,
+                        title: switch (area) {
+                          KnowledgeArea.histology => AppLocalizations.of(
+                            c,
+                          ).moduleHistology,
+                          KnowledgeArea.laboratory => AppLocalizations.of(
+                            c,
+                          ).moduleLaboratory,
+                          _ => AppLocalizations.of(c).appTitle,
+                        },
+                        free: ProSplit.isFreeArea(area),
+                        sample: switch (area) {
+                          KnowledgeArea.histology => ProSampleSource.histology,
+                          _ => null,
+                        },
+                        child: AreaHubScreen(area: area),
+                      ),
                       null => const NotFoundScreen(),
                     },
                   ),
@@ -640,13 +743,20 @@ final routerProvider = Provider<GoRouter>((ref) {
                   // tablardagi ekranlarning o‘zi qayta ishlatiladi.
                   GoRoute(
                     path: 'substance/:id',
-                    builder: (c, s) =>
-                        EntryDetailScreen(entryId: s.pathParameters['id']!),
+                    builder: (c, s) => LibraryEntryGate(
+                      entryId: s.pathParameters['id']!,
+                      child: EntryDetailScreen(
+                        entryId: s.pathParameters['id']!,
+                      ),
+                    ),
                     routes: [
                       GoRoute(
                         path: 'plan',
-                        builder: (c, s) => AnalysisPlanScreen(
-                          entityId: s.pathParameters['id']!,
+                        builder: (c, s) => LibraryEntryGate(
+                          entryId: s.pathParameters['id']!,
+                          child: AnalysisPlanScreen(
+                            entityId: s.pathParameters['id']!,
+                          ),
                         ),
                       ),
                     ],
@@ -658,8 +768,13 @@ final routerProvider = Provider<GoRouter>((ref) {
                   ),
                   GoRoute(
                     path: 'guideline/:id',
-                    builder: (c, s) =>
-                        GuidelineDetailScreen(cardId: s.pathParameters['id']!),
+                    builder: (c, s) => _proModule(
+                      c,
+                      title: AppLocalizations.of(c).guidelinesTitle,
+                      child: GuidelineDetailScreen(
+                        cardId: s.pathParameters['id']!,
+                      ),
+                    ),
                   ),
                   GoRoute(
                     path: 'specimen/:id',
@@ -676,7 +791,11 @@ final routerProvider = Provider<GoRouter>((ref) {
                   ),
                   GoRoute(
                     path: 'standards',
-                    builder: (c, s) => const StandardsScreen(),
+                    builder: (c, s) => _proModule(
+                      c,
+                      title: AppLocalizations.of(c).libraryStandards,
+                      child: const StandardsScreen(),
+                    ),
                   ),
                   GoRoute(
                     path: 'module/:id',
@@ -684,13 +803,20 @@ final routerProvider = Provider<GoRouter>((ref) {
                       final module = HomeModule.values
                           .asNameMap()[s.pathParameters['id']];
                       final l = AppLocalizations.of(c);
-                      return ModuleHubScreen(
+                      return _proModule(
+                        c,
                         title: module?.label(l) ?? l.appTitle,
-                        category: switch (module) {
-                          HomeModule.toxicology => ToolCategory.toxicology,
-                          HomeModule.laboratory => ToolCategory.laboratory,
-                          _ => null,
-                        },
+                        free:
+                            module != null &&
+                            ProSplit.featureForModule(module.name) == null,
+                        child: ModuleHubScreen(
+                          title: module?.label(l) ?? l.appTitle,
+                          category: switch (module) {
+                            HomeModule.toxicology => ToolCategory.toxicology,
+                            HomeModule.laboratory => ToolCategory.laboratory,
+                            _ => null,
+                          },
+                        ),
                       );
                     },
                   ),
@@ -709,7 +835,16 @@ final routerProvider = Provider<GoRouter>((ref) {
                     builder: (c, s) =>
                         ToolDetailScreen(toolId: s.pathParameters['id']!),
                   ),
-                  GoRoute(path: 'gc-ms', builder: (c, s) => const GcMsScreen()),
+                  GoRoute(
+                    path: 'gc-ms',
+                    builder: (c, s) => _proModule(
+                      c,
+                      title: AppLocalizations.of(c).gcmsTitle,
+                      feature: ProFeature.proTools,
+                      sample: ProSampleSource.methods,
+                      child: const GcMsScreen(),
+                    ),
+                  ),
                   GoRoute(
                     path: 'casebook',
                     builder: (c, s) =>
@@ -737,14 +872,22 @@ final routerProvider = Provider<GoRouter>((ref) {
                 routes: [
                   GoRoute(
                     path: 'entry/:id',
-                    builder: (c, s) =>
-                        EntryDetailScreen(entryId: s.pathParameters['id']!),
+                    builder: (c, s) => LibraryEntryGate(
+                      entryId: s.pathParameters['id']!,
+                      child: EntryDetailScreen(
+                        entryId: s.pathParameters['id']!,
+                      ),
+                    ),
                   ),
                   GoRoute(
                     path: 'section/:section',
                     builder: (c, s) => switch (LibrarySection.values
                         .asNameMap()[s.pathParameters['section']]) {
-                      final section? => LibrarySectionScreen(section: section),
+                      final section? => LibrarySectionGate(
+                        section: section,
+                        title: section.label(AppLocalizations.of(c)),
+                        child: LibrarySectionScreen(section: section),
+                      ),
                       null => const NotFoundScreen(),
                     },
                   ),
@@ -754,7 +897,11 @@ final routerProvider = Provider<GoRouter>((ref) {
                   ),
                   GoRoute(
                     path: 'standards',
-                    builder: (c, s) => const StandardsScreen(),
+                    builder: (c, s) => _proModule(
+                      c,
+                      title: AppLocalizations.of(c).libraryStandards,
+                      child: const StandardsScreen(),
+                    ),
                   ),
                   GoRoute(
                     path: 'glossary',
@@ -769,41 +916,69 @@ final routerProvider = Provider<GoRouter>((ref) {
                   ),
                   GoRoute(
                     path: 'guidelines',
-                    builder: (c, s) => const GuidelinesScreen(),
+                    builder: (c, s) => _proModule(
+                      c,
+                      title: AppLocalizations.of(c).guidelinesTitle,
+                      child: const GuidelinesScreen(),
+                    ),
                     routes: [
                       GoRoute(
                         path: 'card/:id',
-                        builder: (c, s) => GuidelineDetailScreen(
-                          cardId: s.pathParameters['id']!,
+                        builder: (c, s) => _proModule(
+                          c,
+                          title: AppLocalizations.of(c).guidelinesTitle,
+                          child: GuidelineDetailScreen(
+                            cardId: s.pathParameters['id']!,
+                          ),
                         ),
                       ),
                     ],
                   ),
                   GoRoute(
                     path: 'assessment',
-                    builder: (c, s) => const AssessmentHubScreen(),
+                    builder: (c, s) => _proModule(
+                      c,
+                      title: AppLocalizations.of(c).assessmentTitle,
+                      child: const AssessmentHubScreen(),
+                    ),
                     routes: [
                       GoRoute(
                         path: 'sources',
-                        builder: (c, s) => const AssessmentSourcesScreen(),
+                        builder: (c, s) => _proModule(
+                          c,
+                          title: AppLocalizations.of(c).assessmentTitle,
+                          child: const AssessmentSourcesScreen(),
+                        ),
                       ),
                       GoRoute(
                         path: ':spec',
-                        builder: (c, s) => AssessmentSpecialtyScreen(
-                          specialtyId: s.pathParameters['spec']!,
+                        builder: (c, s) => _proModule(
+                          c,
+                          title: AppLocalizations.of(c).assessmentTitle,
+                          child: AssessmentSpecialtyScreen(
+                            specialtyId: s.pathParameters['spec']!,
+                          ),
                         ),
                         routes: [
                           GoRoute(
                             path: 'test',
-                            builder: (c, s) => AssessmentTestScreen(
-                              specialtyId: s.pathParameters['spec']!,
+                            builder: (c, s) => _proModule(
+                              c,
+                              title: AppLocalizations.of(c).assessmentTitle,
+                              child: AssessmentTestScreen(
+                                specialtyId: s.pathParameters['spec']!,
+                              ),
                             ),
                           ),
                           GoRoute(
                             path: 'q/:id',
-                            builder: (c, s) => AssessmentQuestionScreen(
-                              specialtyId: s.pathParameters['spec']!,
-                              questionId: s.pathParameters['id']!,
+                            builder: (c, s) => _proModule(
+                              c,
+                              title: AppLocalizations.of(c).assessmentTitle,
+                              child: AssessmentQuestionScreen(
+                                specialtyId: s.pathParameters['spec']!,
+                                questionId: s.pathParameters['id']!,
+                              ),
                             ),
                           ),
                         ],
@@ -982,8 +1157,12 @@ final routerProvider = Provider<GoRouter>((ref) {
             routes: [
               GoRoute(
                 path: Routes.ai,
-                builder: (c, s) =>
-                    AiScreen(initialQuestion: s.uri.queryParameters['q']),
+                builder: (c, s) => _proModule(
+                  c,
+                  title: AppLocalizations.of(c).moduleAi,
+                  feature: ProFeature.proAi,
+                  child: AiScreen(initialQuestion: s.uri.queryParameters['q']),
+                ),
               ),
             ],
           ),

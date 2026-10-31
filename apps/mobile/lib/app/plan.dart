@@ -14,6 +14,7 @@ import '../data/plan/fake_plan_service.dart';
 import '../data/store/fake_store_service.dart';
 import '../domain/lessons/lesson_models.dart';
 import '../domain/plan/plan_models.dart';
+import '../domain/plan/pro_split.dart';
 import '../domain/ports/plan_ports.dart';
 import 'lessons.dart';
 import 'providers.dart';
@@ -106,19 +107,38 @@ class EntitlementsNotifier extends AsyncNotifier<Entitlements> {
   }
 }
 
+/// Qat’iy Bepul/Pro bo‘linishi yoqilganmi. Standart — [kProStrict] (yig‘ish
+/// bayrog‘i `FE_PRO_STRICT`, standart o‘chiq); masofadan yoqilmaydi. Testlarda
+/// `overrideWithValue` bilan almashtiriladi.
+final proStrictProvider = Provider<bool>((ref) => kProStrict);
+
 /// [feature] ochiqmi (yuklanayotgan yoki xatoda — yopiq).
 ///
 /// Admin (server `my_access`, email emas) — VIP: hamma funksiya ochiq
-/// (egasi qarori, 2026-10-24). Boshqa foydalanuvchilar — faqat o‘z rejasi.
+/// (egasi qarori, 2026-10-24). Boshqa foydalanuvchilar — faqat o‘z rejasi
+/// ([ProFeature.anyPlan] — har qanday faol reja). Bu — sof «huquq bormi»;
+/// bo‘linish o‘chiqligi [proOpen] da hisobga olinadi.
 final proAllowedProvider = Provider.family<bool, ProFeature>(
   (ref, feature) =>
       ref.watch(isAdminProvider) ||
-      (ref.watch(entitlementsProvider).value?.allows(feature) ?? false),
+      (ref.watch(entitlementsProvider).value?.unlocks(feature) ?? false),
 );
 
 /// Funksiya shu foydalanuvchiga ochiqmi. Rejim emas, **reja** tekshiriladi.
 bool proGate(WidgetRef ref, ProFeature feature) =>
     ref.watch(proAllowedProvider(feature));
+
+/// Funksiya hozir ochiqmi: [ProFeature.strictOnly] funksiya bo‘linish o‘chiq
+/// bo‘lsa har doim ochiq (avvalgi xatti-harakat), aks holda [proGate].
+bool proOpen(WidgetRef ref, ProFeature feature) =>
+    (feature.strictOnly && !ref.watch(proStrictProvider)) ||
+    proGate(ref, feature);
+
+/// Qat’iy bo‘linish o‘chiq bo‘lsa — har doim `true` (avvalgi xatti-harakat);
+/// yoqilgan bo‘lsa — [proGate]. Allaqachon mavjud (strictOnly bo‘lmagan)
+/// funksiyani FAQAT qat’iy rejimda qo‘shimcha joyda qulflash uchun.
+bool proStrictGate(WidgetRef ref, ProFeature feature) =>
+    !ref.watch(proStrictProvider) || proGate(ref, feature);
 
 /// Huquq hali yuklanayotgan bo‘lsa `true` (qulf kartasi o‘rniga skelet).
 bool proLoading(WidgetRef ref) =>
@@ -133,15 +153,20 @@ final lessonLocksProvider = Provider.autoDispose<Map<String, ProFeature>?>((
   if (res == null) return null;
   if (ref.watch(isAdminProvider)) return const <String, ProFeature>{};
   final ent = ref.watch(entitlementsProvider).value ?? Entitlements.none;
-  return computeLessonLocks(res, ent);
+  return computeLessonLocks(res, ent, strict: ref.watch(proStrictProvider));
 });
 
 /// Sof funksiya (testlanadi): bepul dars yo‘q — Mutaxassis Pro
 /// «Apparatlar» kursini, Ustoz Pro Ustoz darslarini ochadi.
+///
+/// [strict] (Bepul/Pro bo‘linishi yoqilgan): Sud tibbiyoti va Toksikologiya
+/// darslarini o‘qish hamma uchun bepul ([ProSplit.isFreeLessonTopic]);
+/// «Apparatlar» kursi Pro’da qoladi.
 Map<String, ProFeature> computeLessonLocks(
   List<LessonSummary> all,
-  Entitlements ent,
-) {
+  Entitlements ent, {
+  bool strict = false,
+}) {
   final out = <String, ProFeature>{};
   var teacherIndex = 0;
   for (final s in all) {
@@ -151,7 +176,9 @@ Map<String, ProFeature> computeLessonLocks(
         out[s.topicId] = ProFeature.instrumentsCourseFull;
       }
     } else {
-      final free = teacherIndex < LessonAccess.freeTeacherLessons;
+      final free =
+          teacherIndex < LessonAccess.freeTeacherLessons ||
+          (strict && ProSplit.isFreeLessonTopic(s.topicId));
       teacherIndex++;
       if (!free && !ent.allows(ProFeature.allLessons)) {
         out[s.topicId] = ProFeature.allLessons;

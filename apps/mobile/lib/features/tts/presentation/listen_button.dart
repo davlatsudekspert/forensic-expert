@@ -2,9 +2,13 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
+import '../../../app/plan.dart';
+import '../../../app/routes.dart';
 import '../../../app/tts.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
+import '../../../domain/plan/plan_models.dart' show ProFeature;
 import '../../../domain/ports/tts_ports.dart';
 
 /// «Tinglash» tugmasi holati.
@@ -190,6 +194,16 @@ class _ListenButtonState extends ConsumerState<ListenButton> {
       return const SizedBox.shrink();
     }
     final l = AppLocalizations.of(context);
+    // Qat’iy Bepul/Pro bo‘linishida (2026-10-31) «Tinglash» Pro: tugma
+    // ko‘rinadi, lekin qulf belgisi bilan Pro sahifasiga olib boradi.
+    if (!proOpen(ref, ProFeature.listen)) {
+      return IconButton(
+        key: const Key('tts.locked'),
+        tooltip: l.ttsListen,
+        icon: Icon(Icons.lock_outline, color: widget.color),
+        onPressed: () => context.push(Routes.pro),
+      );
+    }
     final (icon, tooltip, onTap) = switch (_state) {
       ListenState.idle => (Icons.volume_up_outlined, l.ttsListen, _start),
       ListenState.loading => (null, l.ttsLoading, null),
