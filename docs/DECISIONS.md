@@ -304,6 +304,9 @@ Pro 0.4.0 test buildidan keyin darslar va test savollari RU/EN ga tarjima qilina
 - **Pro (qolgan hammasi):** Laboratoriya, Reagentlar, Ekspress/skrining, Huquq, Tadqiqotlar, Moddalar,
   Kalkulyatorlar, AI, «Tinglash», mustaqil testlar/kartochkalar/imtihon, Sudda so‘roq, Ish daftari,
   Ustoz paneli (to‘liq).
+- **Laboratoriya (egasi, 2026-10-31 kech):** bo‘limga kirish va ro‘yxatni ko‘rish **bepul**; ichidagi vositalar —
+  GC-MS/LC-MS, spektrofotometriya usullari, ekspress test tahlillari, reaktivlar tafsiloti, lab kalkulyatorlari —
+  **Pro** (ochganda namuna + «Pro bilan oching»).
 - **Talaba va guruh testi:** ustoz bergan testni yechish **bepul**, ustoz natijani ko‘radi. Talaba
   faqat ballni ko‘radi. To‘g‘ri javoblar, tushuntirish va xatolar tahlili — **Pro**.
 - **Ko‘rinishi:** Pro bo‘limlar ko‘rinadi, ustida qulf bo‘ladi; bosilganda qisqa namuna va «Pro bilan oching».
