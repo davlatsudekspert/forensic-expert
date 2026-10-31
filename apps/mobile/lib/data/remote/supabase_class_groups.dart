@@ -223,4 +223,8 @@ class SupabaseClassGroupsService implements ClassGroupsService {
     await _rpc('group_assignment_result', _a(assignmentId)),
     GroupTestResult.fromJson,
   );
+
+  @override
+  Future<GroupCall<void>> reportLeave(String assignmentId) async =>
+      _void(await _rpc('group_report_leave', _a(assignmentId)));
 }

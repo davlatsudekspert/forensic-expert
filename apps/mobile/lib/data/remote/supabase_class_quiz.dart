@@ -245,6 +245,10 @@ class SupabaseClassQuizService implements ClassQuizService {
   );
 
   @override
+  Future<ClassResult<void>> reportLeave(String sessionId) async =>
+      _void(await _rpc('class_report_leave', _sid(sessionId)));
+
+  @override
   Future<ClassResult<void>> reportNickname({
     required String sessionId,
     required String participantId,

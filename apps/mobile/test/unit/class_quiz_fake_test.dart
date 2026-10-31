@@ -87,10 +87,14 @@ void main() {
         await f(const ClassQuizSettings(studentLimit: 4)),
         ClassFailure.invalidSettings,
       );
-      expect(
-        await f(const ClassQuizSettings(seconds: 20)),
-        ClassFailure.invalidSettings,
-      );
+      // Soniya 5..300 (erkin); chegaradan tashqarisi — rad etiladi.
+      for (final bad in [4, 0, 301]) {
+        expect(
+          await f(ClassQuizSettings(seconds: bad)),
+          ClassFailure.invalidSettings,
+          reason: '$bad',
+        );
+      }
       expect(
         await f(const ClassQuizSettings(), 'yo‘q-mavzu'),
         ClassFailure.notEnoughQuestions,

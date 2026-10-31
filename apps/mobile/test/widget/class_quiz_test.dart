@@ -141,7 +141,7 @@ void main() {
       // Mavzu tanlash va yaratish.
       await tester.tap(find.byKey(const Key('class.topic.demo-topic')));
       await _frames(tester);
-      await tester.tap(find.byKey(const Key('class.seconds')).first);
+      await tester.tap(find.byKey(const Key('class.seconds.45')));
       await tester.ensureVisible(find.byKey(const Key('class.createSubmit')));
       await tester.pump();
       await tester.tap(find.byKey(const Key('class.createSubmit')));

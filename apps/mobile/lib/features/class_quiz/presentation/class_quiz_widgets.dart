@@ -13,6 +13,7 @@ import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../domain/class_groups/variant_draw.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart';
 import '../../../domain/plan/plan_models.dart';
 import '../../pro/presentation/pro_gate.dart';
@@ -93,6 +94,26 @@ String classSourceCitation(AppLocalizations l, ClassSource src) {
 
 /// Variant belgisi: A, B, C, D (tartib raqami bo‘yicha).
 String classOptionLetter(int i) => String.fromCharCode(0x41 + i);
+
+/// Talaba ekranida variantlar KO‘RSATISH tartibi: har talabaga boshqa
+/// (deterministik: sessiya + talaba + savol), shuning uchun qayta chizilganda
+/// yoki ilova qayta ochilganda o‘zgarmaydi. Variant `id` lari ('o0'…) va
+/// serverga ketadigan javob o‘zgarmaydi — faqat ekrandagi joylashuv.
+/// [studentKey] bo‘sh bo‘lsa — server tartibi. Ustoz (proyektor) ekrani va
+/// natijalar bu funksiyadan foydalanmaydi (asl tartib).
+List<ClassOption> classStudentOptionOrder({
+  required String sessionId,
+  required String? studentKey,
+  required ClassQuestionView q,
+}) {
+  final order = optionDisplayOrder(
+    assignmentId: sessionId,
+    userId: studentKey,
+    questionId: '${q.index}',
+    count: q.options.length,
+  );
+  return [for (final i in order) q.options[i]];
+}
 
 /// Demo (Fake) adapter belgisi: ma’lumot faqat shu qurilmada.
 class ClassDemoBanner extends ConsumerWidget {

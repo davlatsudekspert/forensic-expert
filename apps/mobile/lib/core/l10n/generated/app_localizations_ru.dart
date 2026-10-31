@@ -11929,4 +11929,40 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get tcErrSignIn => 'Сначала войдите в аккаунт.';
+
+  @override
+  String get acShuffleHint =>
+      'Порядок вариантов (A, B, C, D) у каждого студента свой.';
+
+  @override
+  String acCountWarning(int pool, int count, int recommended) {
+    return 'В теме $pool вопросов. При $count вопросах у студентов не будет разных наборов, отличаться будет только порядок вариантов. Чтобы списывать было труднее, возьмите не больше $recommended вопросов.';
+  }
+
+  @override
+  String get acStudentNote =>
+      'Если вы выйдете из приложения во время теста, преподаватель это увидит.';
+
+  @override
+  String acLeftCount(int count) {
+    return 'выходил из приложения: $count раз';
+  }
+
+  @override
+  String get acFastCorrect => 'быстрые и верные ответы — стоит проверить';
+
+  @override
+  String get acSecondsHint => 'Любое целое число от 5 до 300 секунд.';
+
+  @override
+  String get acSecondsError => 'Введите целое число от 5 до 300.';
+
+  @override
+  String get acSecondsLabel => 'Секунды';
+
+  @override
+  String get acSecondsMinus => 'Уменьшить время на 5 секунд';
+
+  @override
+  String get acSecondsPlus => 'Увеличить время на 5 секунд';
 }

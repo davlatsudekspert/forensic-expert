@@ -71,6 +71,11 @@ abstract interface class ClassQuizService {
   /// yopilmagan bo‘lsa — [ClassFailure.notClosed] (avto-o‘tish yo‘q).
   Future<ClassResult<bool>> nextMine(String sessionId);
 
+  /// Anti-cheat: talaba test paytida ilovadan chiqdi (fonga o‘tdi). Server
+  /// sanaydi, faqat ustoz ko‘radi; ball/jazo yo‘q. Mijoz xatoni e’tiborsiz
+  /// qoldiradi (fire-and-forget).
+  Future<ClassResult<void>> reportLeave(String sessionId);
+
   /// Laqabga shikoyat (UGC, App Store 1.2).
   Future<ClassResult<void>> reportNickname({
     required String sessionId,
@@ -152,6 +157,9 @@ class UnconfiguredClassQuizService implements ClassQuizService {
       const ClassResult.fail(_f);
   @override
   Future<ClassResult<bool>> nextMine(String sessionId) async =>
+      const ClassResult.fail(_f);
+  @override
+  Future<ClassResult<void>> reportLeave(String sessionId) async =>
       const ClassResult.fail(_f);
   @override
   Future<ClassResult<void>> reportNickname({

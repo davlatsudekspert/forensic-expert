@@ -34,6 +34,10 @@ class _P {
   int pos = 0;
   DateTime? startedAt;
   DateTime? finishedAt;
+
+  // Anti-cheat: ilovadan chiqish hisobi (server `class_participants`).
+  int leaveCount = 0;
+  DateTime? lastLeftAt;
 }
 
 class _A {
@@ -571,6 +575,34 @@ class FakeClassQuizBackend {
     return const ClassResult.ok(null);
   }
 
+  /// SQL `class_report_leave`: talaba test paytida ilovadan chiqdi. Server
+  /// bilan bir xil qoidalar: ishtirokchi bo‘lmasa — `forbidden`; sessiya
+  /// `running` bo‘lmasa, self rejimda savol hali ochilmagan yoki test
+  /// tugagan bo‘lsa — sanalmaydi; 1 soniyada ko‘pi bilan bir marta.
+  ClassResult<void> reportLeave(String user, String id) {
+    final p = _member(user, id);
+    if (p == null || p.kicked) {
+      return const ClassResult.fail(ClassFailure.forbidden);
+    }
+    final s = _sessions[id]!;
+    if (s.status != ClassSessionStatus.running) {
+      return const ClassResult.ok(null);
+    }
+    if (s.pace == ClassPace.self &&
+        (p.startedAt == null || p.finishedAt != null)) {
+      return const ClassResult.ok(null);
+    }
+    final last = p.lastLeftAt;
+    final t = now();
+    if (last != null && t.difference(last) < const Duration(seconds: 1)) {
+      return const ClassResult.ok(null);
+    }
+    p
+      ..leaveCount += 1
+      ..lastLeftAt = t;
+    return const ClassResult.ok(null);
+  }
+
   /// SQL `class_next_mine`: talabaning o‘zi birinchi savolni ochadi (taymer
   /// shu paytdan) yoki yopilgan savoldan keyingisiga o‘tadi / tugatadi.
   ClassResult<bool> nextMine(String user, String id) {
@@ -734,6 +766,7 @@ class FakeClassQuizBackend {
           score: r.score,
           correct: r.correct,
           rank: rank,
+          avgMs: r.avg == _noAvg || r.avg <= 0 ? null : r.avg,
         ),
       );
     }
@@ -940,6 +973,8 @@ class FakeClassQuizBackend {
                 return ClassParticipant(
                   id: p.id,
                   nickname: p.nickname,
+                  leaveCount: p.leaveCount,
+                  lastLeftAt: p.lastLeftAt,
                   answered: p.finishedAt != null,
                   progress: ClassSelfProgress(
                     position: p.startedAt == null ? 0 : p.pos + 1,
@@ -953,6 +988,8 @@ class FakeClassQuizBackend {
               ClassParticipant(
                 id: p.id,
                 nickname: p.nickname,
+                leaveCount: p.leaveCount,
+                lastLeftAt: p.lastLeftAt,
                 answered:
                     s.status == ClassSessionStatus.running &&
                     s.answers['${p.id}|${s.currentIndex}'] != null,
@@ -1184,6 +1221,9 @@ class FakeClassQuizService implements ClassQuizService {
   @override
   Future<ClassResult<bool>> nextMine(String sessionId) async =>
       backend.nextMine(userId, sessionId);
+  @override
+  Future<ClassResult<void>> reportLeave(String sessionId) async =>
+      backend.reportLeave(userId, sessionId);
   @override
   Future<ClassResult<void>> reportNickname({
     required String sessionId,

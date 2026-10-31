@@ -434,7 +434,8 @@ void main() {
   );
 
   testWidgets(
-    'UX: talaba telefoni va proyektorda variant tartibi va harfi bir xil',
+    'anti-cheat: talaba telefonida variantlar har talabaga boshqa tartibda '
+    '(id lar o‘zgarmaydi, harflar ekran tartibida), proyektor — asl tartib',
     (tester) async {
       final prevPlan = testDefaultPlan;
       testDefaultPlan = Plan.student;
@@ -453,12 +454,17 @@ void main() {
       );
       final host = _optionOrder(tester, 'class.hostOption.');
       await _close(tester);
+      // Proyektor (ustoz) — server tartibi, o‘zgarmagan.
+      expect(host, serverOrder);
 
+      final seen = <List<String>>[];
       for (final stu in [w.student, w.s2, w.s3]) {
         await _open(tester, as: stu, location: Routes.classPlay(s.id));
         final phone = _optionOrder(tester, 'class.option.');
-        expect(phone, host, reason: 'har talabada proyektor tartibi');
-        // Harf: A, B, C, D — bir xil variant.
+        seen.add(phone);
+        // To‘plam va variant id lari bir xil (faqat joylashuv farq qiladi).
+        expect([...phone]..sort(), [...host]..sort());
+        // Harf: A, B, C, D — EKRANDAGI tartib bo‘yicha.
         for (var i = 0; i < phone.length; i++) {
           final letter = String.fromCharCode(0x41 + i);
           expect(
@@ -470,8 +476,39 @@ void main() {
           );
         }
         await _close(tester);
+        // Qayta ochilganda tartib o‘zgarmaydi.
+        await _open(tester, as: stu, location: Routes.classPlay(s.id));
+        expect(_optionOrder(tester, 'class.option.'), phone);
+        await _close(tester);
       }
-      expect(host, serverOrder);
+      // Kamida bitta talabada tartib proyektordan farq qiladi.
+      expect(seen.any((o) => o.join() != host.join()), isTrue);
+    },
+  );
+
+  testWidgets(
+    'anti-cheat: aralashgan ekranda tanlangan variantning ASL id si serverga '
+    'ketadi va tasdiqdan keyin shu variant belgilanadi',
+    (tester) async {
+      final prevPlan = testDefaultPlan;
+      testDefaultPlan = Plan.student;
+      addTearDown(() => testDefaultPlan = prevPlan);
+      final w = _World();
+      final s = await w.started();
+      await _open(tester, as: w.s2, location: Routes.classPlay(s.id));
+      final shownIds = _optionOrder(tester, 'class.option.');
+      // Ekrandagi 3-variant (C) — id si har qanday bo‘lishi mumkin.
+      final pick = shownIds[2];
+      await tester.tap(find.byKey(Key('class.option.$pick')));
+      await _frames(tester);
+      await tester.ensureVisible(find.byKey(const Key('class.confirm')));
+      await tester.tap(find.byKey(const Key('class.confirm')));
+      await _frames(tester);
+      final st = (await w.s2.state(s.id)).value!;
+      expect(st.myOption, pick, reason: 'serverga ASL id ketadi');
+      // Ekran tartibi tasdiqdan keyin ham o‘zgarmaydi.
+      expect(_optionOrder(tester, 'class.option.'), shownIds);
+      await _close(tester);
     },
   );
 

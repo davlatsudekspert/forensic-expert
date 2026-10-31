@@ -12,8 +12,10 @@ import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../domain/anti_cheat/anti_cheat_rules.dart';
 import '../../../domain/class_groups/class_groups_models.dart';
 import '../../../domain/plan/plan_models.dart';
+import '../../anti_cheat/presentation/anti_cheat_widgets.dart';
 import '../../class_quiz/presentation/class_hardest_screen.dart'
     show openGroupHardestDiscussion;
 import '../../class_quiz/presentation/class_quiz_widgets.dart'
@@ -408,6 +410,12 @@ class _LiveRow extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                 ),
                 GroupStatePill(state: row.state),
+                // Anti-cheat ishoralari (faqat ustoz paneli; katta ekranda yo‘q).
+                AntiCheatFlags(
+                  leaveCount: row.leaveCount,
+                  tooFast: groupRowLooksTooFast(row),
+                  idSuffix: '.${row.memberId}',
+                ),
               ],
             ),
           ),
