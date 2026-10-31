@@ -1,6 +1,8 @@
 # PROJECT STATUS — FORENSIC EXPERT
 
 Yangilangan: 2026-10-08 · Branch: `claude/phase-8-12-final-release` · Audit asosi: HEAD `cd1fe66` (Phase A, read-only).
+
+> **2026-10-31 — build 37 (0.4.0+37, `d285595`, branch `claude/pro-0.4.0`):** Play internal’ga chiqarildi (versionCode 37) va TestFlight’ga yuklandi (review’ga yuborilmagan). To‘liq suite: 3704 o‘tdi, 1 xato (RU’da GC-MS kirillcha yozilgan edi) tuzatildi, terminologiya + 221 golden qayta o‘tdi. Tarkibi: ekspert «Ish stolim» + «Bugungi ma’lumot», talaba «O‘qish stolim» + «Bugungi savol», bepul/Pro bo‘linishi (FE_PRO_STRICT o‘chiq), taklif mukofoti (rewards_enabled=false), «Toksikologiya» nomi, TTS (Charon), majburiy yangilash (min_build=0), premium dizayn. Sinalmagan: real qurilma, iOS qurilma, xaridlar, prod’da min_build>0, strict rejim real ilovada. `app_config.latest_build` hali 35 (production’ga chiqqanda 37 qilinadi).
 Statuslar: WORKING (avtomatik test yoki real sinov dalili bor) · IMPLEMENTED-UNVERIFIED · PARTIAL · MOCK/DEMO · MISSING · BLOCKED.
 "Real qurilmada sinalgan" — faqat egasi qayd etgan holatlar; emulyator (BlueStacks) real qurilma emas.
 
