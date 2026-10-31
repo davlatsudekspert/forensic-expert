@@ -1,20 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/misc.dart' show Override;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/class_quiz.dart';
 import 'package:forensic_expert/app/lessons.dart';
 import 'package:forensic_expert/app/routes.dart';
+import 'package:forensic_expert/app/tts.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
 import 'package:forensic_expert/data/class_quiz/class_quiz_demo_bank.dart';
 import 'package:forensic_expert/data/class_quiz/fake_class_quiz_service.dart';
 import 'package:forensic_expert/data/lessons/fake_lessons_service.dart';
 import 'package:forensic_expert/domain/class_quiz/class_quiz_models.dart';
 import 'package:forensic_expert/domain/plan/plan_models.dart';
+import 'package:forensic_expert/domain/ports/tts_ports.dart';
 import 'package:forensic_expert/features/lessons/presentation/lesson_viewer_screen.dart';
 import 'package:forensic_expert/features/lessons/presentation/lessons_list_screen.dart';
 import 'package:go_router/go_router.dart';
 
 import '../helpers/pump_app.dart';
+import '../helpers/tts_fakes.dart';
 
 class _Awake implements ClassScreenAwake {
   int enabled = 0;
@@ -125,6 +129,8 @@ void main() {
     FakeLessonsService? lessons,
     bool prompt = false,
     LessonAutoPrefs? autoPrefs,
+    List<Override> extra = const [],
+    double textScale = 1.0,
   }) async {
     autoStore = _AutoStore(autoPrefs ?? const LessonAutoPrefs());
     awake = _Awake();
@@ -138,6 +144,7 @@ void main() {
         mode: teacher ? UserMode.teacher : UserMode.professional,
       ),
       size: size,
+      textScale: textScale,
       initialLocation: path,
       overrides: [
         classQuizServiceProvider.overrideWithValue(
@@ -159,6 +166,7 @@ void main() {
         lessonScreenGuardProvider.overrideWithValue(guard),
         lessonAutoStoreProvider.overrideWithValue(autoStore),
         classLandscapePromptEnabledProvider.overrideWithValue(prompt),
+        ...extra,
       ],
     );
   }
@@ -740,6 +748,112 @@ void main() {
         );
         await tester.pump();
         expect(find.byKey(const Key('lesson.autoStatus')), findsOneWidget);
+        expect(tester.takeException(), isNull);
+      });
+    }
+  });
+
+  group('Tinglash (TTS)', () {
+    const listen = Key('tts.listen');
+
+    Future<(FakeTtsService, FakeTtsPlayer)> openWithTts(
+      WidgetTester tester, {
+      bool configured = true,
+      Size size = const Size(390, 844),
+      String lang = 'uz',
+      double textScale = 1.0,
+    }) async {
+      final svc = FakeTtsService(configured: configured);
+      final player = FakeTtsPlayer();
+      await open(
+        tester,
+        lang: lang,
+        size: size,
+        textScale: textScale,
+        path: Routes.lesson('a1'),
+        extra: [
+          ttsServiceProvider.overrideWithValue(svc),
+          ttsPlayerFactoryProvider.overrideWithValue(() => player),
+        ],
+      );
+      return (svc, player);
+    }
+
+    testWidgets('server sozlanmagan: tugma yo‘q', (tester) async {
+      await openWithTts(tester, configured: false);
+      expect(find.byKey(listen), findsNothing);
+      expect(find.byType(LessonViewer), findsOneWidget);
+    });
+
+    testWidgets('slayd sarlavhasi + bandlari o‘qiladi, eslatma emas', (
+      tester,
+    ) async {
+      final (svc, player) = await openWithTts(tester);
+      expect(find.byKey(listen), findsOneWidget);
+      await tester.tap(find.byKey(listen));
+      await tester.pump();
+      await tester.pump();
+      expect(svc.texts, ['Birinchi slayd.\nAsosiy fikr.\nShubhali fikr.']);
+      expect(svc.texts.single, isNot(contains('MAXFIY')));
+      expect(player.calls, ['play:/tmp/a.wav']);
+    });
+
+    testWidgets('sahifa almashsa ovoz to‘xtaydi; yangi sahifa o‘z matni', (
+      tester,
+    ) async {
+      final (svc, player) = await openWithTts(tester);
+      await tester.tap(find.byKey(listen));
+      await tester.pump();
+      await tester.pump();
+      await tester.tap(find.byKey(const Key('lesson.next')));
+      await tester.pumpAndSettle();
+      expect(player.calls, containsAllInOrder(['stop', 'dispose']));
+      expect(find.byKey(const Key('tts.icon.idle')), findsOneWidget);
+      await tester.tap(find.byKey(listen));
+      await tester.pump();
+      expect(svc.texts.last, 'Ikkinchi slayd.\nJadvaldan keyin.');
+    });
+
+    testWidgets('adabiyotlar sahifasida tugma yo‘q', (tester) async {
+      await openWithTts(tester);
+      for (var i = 0; i < 4; i++) {
+        await tester.tap(find.byKey(const Key('lesson.next')));
+        await tester.pumpAndSettle();
+      }
+      expect(find.text('5 / 5'), findsOneWidget);
+      expect(find.byKey(listen), findsNothing);
+    });
+
+    testWidgets('xatoda SnackBar chiqadi, slayd matni o‘qiladigan qoladi', (
+      tester,
+    ) async {
+      final (svc, _) = await openWithTts(tester);
+      svc.fail = TtsFailure.dailyLimit;
+      await tester.tap(find.byKey(listen));
+      await tester.pump();
+      await tester.pump();
+      expect(
+        find.text('Bugungi ovoz limiti tugadi, ertaga qayta urinib ko‘ring.'),
+        findsOneWidget,
+      );
+      expect(find.text('Birinchi slayd'), findsOneWidget);
+    });
+
+    for (final lang in ['uz', 'ru', 'en']) {
+      testWidgets('320 dp, 2.0 shrift, $lang: toshmaydi', (tester) async {
+        final (svc, _) = await openWithTts(
+          tester,
+          size: const Size(320, 640),
+          textScale: 2.0,
+          lang: lang,
+        );
+        expect(find.byKey(listen), findsOneWidget);
+        expect(find.byKey(const Key('lesson.counter')), findsOneWidget);
+        // Yuklash va xato holatlari ham toshmasin.
+        svc.fail = TtsFailure.offline;
+        await tester.tap(find.byKey(listen));
+        await tester.pump();
+        await tester.pump();
         expect(tester.takeException(), isNull);
       });
     }

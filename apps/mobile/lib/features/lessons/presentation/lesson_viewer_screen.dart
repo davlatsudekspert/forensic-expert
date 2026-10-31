@@ -20,6 +20,7 @@ import '../../../domain/plan/plan_models.dart';
 import '../../class_groups/presentation/topic_test_choice.dart';
 import '../../class_quiz/presentation/class_quiz_widgets.dart';
 import '../../pro/presentation/pro_gate.dart';
+import '../../tts/presentation/listen_button.dart';
 import 'lesson_slide_view.dart';
 
 /// Dars ko‘rish oynasi (faqat ilova ichida). Yuklash, xato holatlari va
@@ -725,6 +726,7 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
             _ControlBar(
               index: _index,
               total: pages.length,
+              listenText: lessonListenText(page),
               onPrev: _index > 0 ? () => _go(_index - 1, pages.length) : null,
               onNext: _index < pages.length - 1
                   ? () => _go(_index + 1, pages.length)
@@ -1040,12 +1042,16 @@ class _ControlBar extends StatelessWidget {
   const _ControlBar({
     required this.index,
     required this.total,
+    required this.listenText,
     required this.onPrev,
     required this.onNext,
   });
 
   final int index;
   final int total;
+
+  /// Joriy sahifaning «Tinglash» matni (bo‘sh yoki server yo‘q — tugma yo‘q).
+  final String listenText;
   final VoidCallback? onPrev;
   final VoidCallback? onNext;
 
@@ -1067,6 +1073,11 @@ class _ControlBar extends StatelessWidget {
               tooltip: l.lessonViewerPrev,
               icon: const Icon(Icons.chevron_left_rounded, size: 32),
               onPressed: onPrev,
+            ),
+            // Sahifa almashsa tugma qayta yaratiladi: eski ovoz to‘xtaydi.
+            ListenButton(
+              key: ValueKey('lesson.listen.$index'),
+              text: listenText,
             ),
             Expanded(
               child: Text(

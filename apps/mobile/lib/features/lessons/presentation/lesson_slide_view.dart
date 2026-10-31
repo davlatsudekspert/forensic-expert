@@ -57,6 +57,23 @@ class LessonPage {
   String get baseTitle => originalTitle ?? title;
 }
 
+/// «Tinglash» uchun matn: sarlavha + band matnlari. Ustoz eslatmalari,
+/// manbalar va adabiyotlar kirmaydi (adabiyotlar sahifasi uchun — bo‘sh).
+/// Har qism nuqta bilan tugaydi — ovoz pauza qilishi uchun.
+String lessonListenText(LessonPage page) {
+  if (page.kind == LessonPageKind.references) return '';
+  String sentence(String raw) {
+    final t = raw.trim();
+    if (t.isEmpty) return '';
+    return RegExp(r'[.!?:;…]$').hasMatch(t) ? t : '$t.';
+  }
+
+  return [
+    sentence(page.baseTitle),
+    for (final b in page.bullets) sentence(b.text),
+  ].where((s) => s.isNotEmpty).join('\n');
+}
+
 /// Bir kitobning shu sahifadagi betlari.
 class LessonSourceGroup {
   const LessonSourceGroup(this.author, this.title, this.pages);

@@ -12122,4 +12122,42 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get scdRestored => 'Karta qaytarildi';
+
+  @override
+  String get ttsListen => 'Tinglash';
+
+  @override
+  String get ttsPause => 'Pauza';
+
+  @override
+  String get ttsResume => 'Davom etish';
+
+  @override
+  String get ttsReplay => 'Qayta tinglash';
+
+  @override
+  String get ttsLoading => 'Ovoz tayyorlanmoqda…';
+
+  @override
+  String get ttsErrOffline => 'Ovoz yuklanmadi. Internetni tekshiring.';
+
+  @override
+  String get ttsErrDailyLimit =>
+      'Bugungi ovoz limiti tugadi, ertaga qayta urinib ko‘ring.';
+
+  @override
+  String get ttsErrSignIn => 'Tinglash uchun hisobingizga kiring.';
+
+  @override
+  String get ttsErrBusy =>
+      'Ovoz xizmati band. Birozdan keyin qayta urinib ko‘ring.';
+
+  @override
+  String get ttsErrNotConfigured => 'Ovoz xizmati hozircha ulanmagan.';
+
+  @override
+  String get ttsErrTooLong => 'Bu matn tinglash uchun juda uzun.';
+
+  @override
+  String get ttsErrGeneric => 'Ovoz ijro etilmadi. Qayta urinib ko‘ring.';
 }

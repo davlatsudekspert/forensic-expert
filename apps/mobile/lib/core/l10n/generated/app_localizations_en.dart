@@ -12191,4 +12191,42 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get scdRestored => 'Card restored';
+
+  @override
+  String get ttsListen => 'Listen';
+
+  @override
+  String get ttsPause => 'Pause';
+
+  @override
+  String get ttsResume => 'Resume';
+
+  @override
+  String get ttsReplay => 'Listen again';
+
+  @override
+  String get ttsLoading => 'Preparing audio…';
+
+  @override
+  String get ttsErrOffline =>
+      'Audio could not be loaded. Check your internet connection.';
+
+  @override
+  String get ttsErrDailyLimit =>
+      'Today’s audio limit is used up. Try again tomorrow.';
+
+  @override
+  String get ttsErrSignIn => 'Sign in to listen.';
+
+  @override
+  String get ttsErrBusy => 'The audio service is busy. Try again in a moment.';
+
+  @override
+  String get ttsErrNotConfigured => 'The audio service is not available yet.';
+
+  @override
+  String get ttsErrTooLong => 'This text is too long to listen to.';
+
+  @override
+  String get ttsErrGeneric => 'Audio could not be played. Try again.';
 }

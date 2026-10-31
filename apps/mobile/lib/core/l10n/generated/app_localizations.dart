@@ -21074,6 +21074,78 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Card restored'**
   String get scdRestored;
+
+  /// Tooltip of the button that reads the current text aloud.
+  ///
+  /// In en, this message translates to:
+  /// **'Listen'**
+  String get ttsListen;
+
+  /// Tooltip of the button while audio is playing (pauses it).
+  ///
+  /// In en, this message translates to:
+  /// **'Pause'**
+  String get ttsPause;
+
+  /// Tooltip of the button while audio is paused (continues it).
+  ///
+  /// In en, this message translates to:
+  /// **'Resume'**
+  String get ttsResume;
+
+  /// Tooltip of the button after the audio has finished (plays again).
+  ///
+  /// In en, this message translates to:
+  /// **'Listen again'**
+  String get ttsReplay;
+
+  /// Tooltip/status while the audio is being prepared on the server.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparing audio…'**
+  String get ttsLoading;
+
+  /// Snackbar: audio could not be fetched because there is no network.
+  ///
+  /// In en, this message translates to:
+  /// **'Audio could not be loaded. Check your internet connection.'**
+  String get ttsErrOffline;
+
+  /// Snackbar: the daily audio limit is used up.
+  ///
+  /// In en, this message translates to:
+  /// **'Today’s audio limit is used up. Try again tomorrow.'**
+  String get ttsErrDailyLimit;
+
+  /// Snackbar: listening needs a signed-in account.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in to listen.'**
+  String get ttsErrSignIn;
+
+  /// Snackbar: the audio service is temporarily busy or timed out.
+  ///
+  /// In en, this message translates to:
+  /// **'The audio service is busy. Try again in a moment.'**
+  String get ttsErrBusy;
+
+  /// Snackbar: the audio service is not set up on the server.
+  ///
+  /// In en, this message translates to:
+  /// **'The audio service is not available yet.'**
+  String get ttsErrNotConfigured;
+
+  /// Snackbar: the text is too long to be read aloud.
+  ///
+  /// In en, this message translates to:
+  /// **'This text is too long to listen to.'**
+  String get ttsErrTooLong;
+
+  /// Snackbar: audio could not be played for another reason.
+  ///
+  /// In en, this message translates to:
+  /// **'Audio could not be played. Try again.'**
+  String get ttsErrGeneric;
 }
 
 class _AppLocalizationsDelegate

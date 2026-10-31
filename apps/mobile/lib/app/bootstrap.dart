@@ -41,6 +41,7 @@ import '../data/remote/supabase_rest.dart';
 import '../data/remote/supabase_student_card.dart';
 import '../data/remote/supabase_support.dart';
 import '../data/remote/supabase_teacher_card.dart';
+import '../data/remote/supabase_tts.dart';
 import '../data/store/iap_store_service.dart';
 import '../domain/ports/backend_ports.dart';
 import '../domain/ports/plan_ports.dart';
@@ -63,6 +64,7 @@ import 'student_card.dart';
 import 'study.dart';
 import 'support.dart';
 import 'teacher_card.dart';
+import 'tts.dart';
 import 'user_data.dart';
 
 /// Ilovani ishga tushirish.
@@ -196,6 +198,10 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
           ),
           lessonsServiceProvider.overrideWithValue(
             SupabaseLessonsService(config: supabase, auth: auth),
+          ),
+          // «Tinglash»: ovoz Edge Function `tts` orqali, qurilmada keshlanadi.
+          ttsServiceProvider.overrideWithValue(
+            SupabaseTtsService(config: supabase, auth: auth),
           ),
           planServiceProvider.overrideWithValue(
             SupabasePlanService(config: supabase, auth: auth),

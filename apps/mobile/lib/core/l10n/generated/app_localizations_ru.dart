@@ -12233,4 +12233,42 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get scdRestored => 'Карточка возвращена';
+
+  @override
+  String get ttsListen => 'Слушать';
+
+  @override
+  String get ttsPause => 'Пауза';
+
+  @override
+  String get ttsResume => 'Продолжить';
+
+  @override
+  String get ttsReplay => 'Слушать снова';
+
+  @override
+  String get ttsLoading => 'Готовим озвучку…';
+
+  @override
+  String get ttsErrOffline =>
+      'Не удалось загрузить озвучку. Проверьте интернет.';
+
+  @override
+  String get ttsErrDailyLimit =>
+      'Дневной лимит озвучки исчерпан. Попробуйте завтра.';
+
+  @override
+  String get ttsErrSignIn => 'Войдите в аккаунт, чтобы слушать.';
+
+  @override
+  String get ttsErrBusy => 'Сервис озвучки занят. Повторите чуть позже.';
+
+  @override
+  String get ttsErrNotConfigured => 'Сервис озвучки пока недоступен.';
+
+  @override
+  String get ttsErrTooLong => 'Этот текст слишком длинный для озвучки.';
+
+  @override
+  String get ttsErrGeneric => 'Не удалось воспроизвести озвучку. Повторите.';
 }
