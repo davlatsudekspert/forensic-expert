@@ -475,6 +475,18 @@ class _GroupTestState extends ConsumerState<GroupTestScreen> {
                               ),
                             ),
                           ),
+                        if (!confirmed)
+                          Padding(
+                            padding: const EdgeInsets.only(top: FeSpace.xxs),
+                            child: Text(
+                              l.classAnswerFlowHint,
+                              key: const Key('grp.flowHint'),
+                              textAlign: TextAlign.center,
+                              style: t.bodySmall?.copyWith(
+                                color: c.textSecondary,
+                              ),
+                            ),
+                          ),
                       ],
                     ),
                   ),
@@ -588,6 +600,15 @@ class GroupResultScreen extends ConsumerWidget {
         ),
         const SizedBox(height: FeSpace.md),
         if (!r.revealed) ...[
+          Padding(
+            padding: const EdgeInsets.only(bottom: FeSpace.xs),
+            child: Text(
+              l.grpScoreReadyNote,
+              key: const Key('grp.scoreReady'),
+              textAlign: TextAlign.center,
+              style: t.bodySmall?.copyWith(color: c.textSecondary),
+            ),
+          ),
           FeNote(
             key: const Key('grp.revealLocked'),
             icon: Icons.lock_clock_outlined,

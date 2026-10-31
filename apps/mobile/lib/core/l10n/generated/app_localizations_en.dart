@@ -11578,4 +11578,96 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get lessonAutoResume => 'Resume';
+
+  @override
+  String get classPaceSection => 'Quiz mode';
+
+  @override
+  String get classPaceHost => 'Teacher controls';
+
+  @override
+  String get classPaceHostHint =>
+      'Everyone is on the same question; the time is shared.';
+
+  @override
+  String get classPaceSelf => 'Everyone at their own pace';
+
+  @override
+  String get classPaceSelfHint =>
+      'Each student\'s time starts from their own start.';
+
+  @override
+  String classPaceLine(String mode) {
+    return 'Mode: $mode';
+  }
+
+  @override
+  String get classLobbySelfHint =>
+      'Everyone works at their own pace: after the teacher starts, you open the questions yourself.';
+
+  @override
+  String get classErrNotClosed =>
+      'Answer this question first, or wait until your time runs out.';
+
+  @override
+  String get classSelfReadyTitle => 'Ready?';
+
+  @override
+  String classSelfReadyBody(int seconds) {
+    return '$seconds seconds per question. Your time starts when you open a question, and you move on by yourself.';
+  }
+
+  @override
+  String get classSelfStart => 'Start';
+
+  @override
+  String get classSelfNext => 'Next question';
+
+  @override
+  String get classSelfFinish => 'Finish';
+
+  @override
+  String get classAnswerFlowHint =>
+      'Choose an answer and press «Confirm». You move to the next question yourself.';
+
+  @override
+  String get grpScoreReadyNote => 'Your score is ready.';
+
+  @override
+  String get classSelfResultWait =>
+      'Read the result, then move on when you are ready.';
+
+  @override
+  String get classSelfDoneTitle => 'You have finished all questions';
+
+  @override
+  String get classSelfDoneBody =>
+      'Your result is below. The overall leaderboard appears when the teacher ends the quiz.';
+
+  @override
+  String get classBoardTitle => 'Student progress';
+
+  @override
+  String get classBoardHint =>
+      'Everyone works at their own pace. End the quiz when you are ready.';
+
+  @override
+  String classBoardSummary(int opened, int done, int joined) {
+    return '$opened started · $done finished · $joined in total';
+  }
+
+  @override
+  String get classBoardAllDone =>
+      'Everyone has finished — you can end the quiz.';
+
+  @override
+  String get classBoardNotStarted => 'Not started';
+
+  @override
+  String get classBoardDone => 'Finished';
+
+  @override
+  String classBoardAnsweredCorrect(int correct, int answered) {
+    return '$correct/$answered correct';
+  }
 }

@@ -13,7 +13,11 @@ import 'supabase_rest.dart';
 /// `class_join_session`, `class_start`, `class_next`, `class_close_question`,
 /// `class_finish`, `class_kick`, `class_submit_answer`, `class_session_state`,
 /// `class_my_results`, `class_teacher_dashboard`, `class_export_results`,
-/// `class_report_nickname`. Jadvalga to‘g‘ridan-to‘g‘ri kirish yo‘q.
+/// `class_report_nickname`. «Har kim o‘z tezligida» rejimi
+/// (`20261031000000_class_quiz_self_pace.sql`): `class_create_session_pace`
+/// (rejim tanlab yaratish; host rejimda eski `class_create_session` chaqiriladi —
+/// migratsiya qo‘llanmagan serverda ham ishlaydi) va `class_next_mine`.
+/// Jadvalga to‘g‘ridan-to‘g‘ri kirish yo‘q.
 ///
 /// Realtime: SDK’siz REST mijoz va yopiq RLS tufayli polling (2 s) — qarang
 /// `docs/CLASS_QUIZ.md`. Kutilgan xatolar `{ok:false,error}` ko‘rinishida
@@ -121,12 +125,19 @@ class SupabaseClassQuizService implements ClassQuizService {
     required String topicId,
     required ClassQuizSettings settings,
   }) async => _map(
-    await _rpc('class_create_session', {
-      'p_topic': topicId,
-      'p_question_count': settings.questionCount,
-      'p_student_limit': settings.studentLimit,
-      'p_seconds': settings.seconds,
-    }),
+    await _rpc(
+      // Standart (ustoz boshqaradi) — eski RPC: o‘zgarmagan yo‘l.
+      settings.pace == ClassPace.self
+          ? 'class_create_session_pace'
+          : 'class_create_session',
+      {
+        'p_topic': topicId,
+        'p_question_count': settings.questionCount,
+        'p_student_limit': settings.studentLimit,
+        'p_seconds': settings.seconds,
+        if (settings.pace == ClassPace.self) 'p_pace': settings.pace.wire,
+      },
+    ),
     (m) => ClassSessionInfo.fromJson((m['session'] as Map).cast()),
   );
 
@@ -225,6 +236,12 @@ class SupabaseClassQuizService implements ClassQuizService {
   Future<ClassResult<ClassMyResults>> myResults(String sessionId) async => _map(
     await _rpc('class_my_results', _sid(sessionId)),
     ClassMyResults.fromJson,
+  );
+
+  @override
+  Future<ClassResult<bool>> nextMine(String sessionId) async => _map(
+    await _rpc('class_next_mine', _sid(sessionId)),
+    (m) => m['finished'] == true,
   );
 
   @override

@@ -17,6 +17,7 @@ import '../../../domain/plan/plan_models.dart';
 import '../../pro/presentation/pro_gate.dart';
 import '../../professional/presentation/professional_widgets.dart' show FeNote;
 import 'class_hardest_screen.dart';
+import 'class_quiz_self_pace.dart';
 import 'class_quiz_widgets.dart';
 
 /// Yangi sinf testi: mavzu, savollar soni, talaba chegarasi, har savolga vaqt.
@@ -231,6 +232,13 @@ class _CreateBodyState extends ConsumerState<_CreateBody> {
               onSelectionChanged: (v) => setState(
                 () => _settings = _settings.copyWith(seconds: v.first),
               ),
+            ),
+            const SizedBox(height: FeSpace.xs),
+            FeSectionHeader(l.classPaceSection),
+            ClassPacePicker(
+              value: _settings.pace,
+              onChanged: (v) =>
+                  setState(() => _settings = _settings.copyWith(pace: v)),
             ),
             const SizedBox(height: FeSpace.md),
             if (_error != null)
@@ -798,6 +806,15 @@ class _HostBodyState extends ConsumerState<_HostBody> {
   Future<void> _export(ClassSessionInfo s) =>
       exportClassResultsCsv(context, ref, s);
 
+  /// Testni tasdiq bilan tugatish (AppBar tugmasi va self doskasi uchun bitta yo‘l).
+  Future<void> _endSession(String sessionId) async {
+    final l = AppLocalizations.of(context);
+    final svc = ref.read(classQuizServiceProvider);
+    if (await _confirm(l.classEndTitle, l.classEndBody, l.classEndAction)) {
+      await _run(() => svc.finish(sessionId));
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
@@ -833,6 +850,7 @@ class _HostBodyState extends ConsumerState<_HostBody> {
         onExport: () => _export(d.session),
         onDone: () =>
             context.canPop() ? context.pop() : context.go(Routes.classQuiz),
+        onFinish: () => _endSession(d.session.id),
       );
     } else if (failure != null) {
       body = Center(
@@ -872,15 +890,7 @@ class _HostBodyState extends ConsumerState<_HostBody> {
               key: const Key('class.endButton'),
               tooltip: l.classEndAction,
               icon: const Icon(Icons.stop_circle_outlined),
-              onPressed: () async {
-                if (await _confirm(
-                  l.classEndTitle,
-                  l.classEndBody,
-                  l.classEndAction,
-                )) {
-                  await _run(() => svc.finish(d.session.id));
-                }
-              },
+              onPressed: () => _endSession(d.session.id),
             ),
         ],
       ),
@@ -906,6 +916,7 @@ class _HostView extends ConsumerWidget {
     required this.onKick,
     required this.onExport,
     required this.onDone,
+    required this.onFinish,
   });
 
   final ClassDashboard d;
@@ -916,6 +927,9 @@ class _HostView extends ConsumerWidget {
   final void Function(ClassParticipant) onKick;
   final VoidCallback onExport;
   final VoidCallback onDone;
+
+  /// «Testni tugatish» (tasdiqlash bilan) — o‘z tezligida rejimining asosiy amali.
+  final VoidCallback onFinish;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -928,13 +942,16 @@ class _HostView extends ConsumerWidget {
         onStart: onStart,
         onKick: onKick,
       ),
-      ClassSessionStatus.running => _Running(
-        d: d,
-        wide: wide,
-        busy: busy,
-        onNext: onNext,
-        onClose: onClose,
-      ),
+      ClassSessionStatus.running =>
+        d.session.isSelfPaced
+            ? ClassSelfBoard(d: d, busy: busy, onFinish: onFinish)
+            : _Running(
+                d: d,
+                wide: wide,
+                busy: busy,
+                onNext: onNext,
+                onClose: onClose,
+              ),
       ClassSessionStatus.finished => _Finished(
         d: d,
         onExport: onExport,
@@ -995,6 +1012,15 @@ class _Lobby extends ConsumerWidget {
     final people = Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
+        if (d.session.isSelfPaced)
+          Padding(
+            padding: const EdgeInsets.only(bottom: FeSpace.xs),
+            child: Text(
+              l.classPaceLine(l.classPaceSelf),
+              key: const Key('class.paceLine'),
+              style: t.titleSmall?.copyWith(color: FeBrand.goldOnDark),
+            ),
+          ),
         Text(
           l.classJoinedCount(d.joined, d.session.studentLimit),
           key: const Key('class.joinedCount'),

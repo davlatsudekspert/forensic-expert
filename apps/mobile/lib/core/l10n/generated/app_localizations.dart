@@ -20006,6 +20006,156 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Resume'**
   String get lessonAutoResume;
+
+  /// Section header on the new-test screen: who controls the pace of the quiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Quiz mode'**
+  String get classPaceSection;
+
+  /// Mode option: the teacher controls the questions and the time for everyone (default).
+  ///
+  /// In en, this message translates to:
+  /// **'Teacher controls'**
+  String get classPaceHost;
+
+  /// One-line explanation under the 'teacher controls' option.
+  ///
+  /// In en, this message translates to:
+  /// **'Everyone is on the same question; the time is shared.'**
+  String get classPaceHostHint;
+
+  /// Mode option: every student works at their own speed.
+  ///
+  /// In en, this message translates to:
+  /// **'Everyone at their own pace'**
+  String get classPaceSelf;
+
+  /// One-line explanation under the self-paced option.
+  ///
+  /// In en, this message translates to:
+  /// **'Each student\'s time starts from their own start.'**
+  String get classPaceSelfHint;
+
+  /// Line in the lobby: which mode this quiz uses, e.g. 'Mode: Teacher controls'.
+  ///
+  /// In en, this message translates to:
+  /// **'Mode: {mode}'**
+  String classPaceLine(String mode);
+
+  /// Student lobby hint in self-paced mode.
+  ///
+  /// In en, this message translates to:
+  /// **'Everyone works at their own pace: after the teacher starts, you open the questions yourself.'**
+  String get classLobbySelfHint;
+
+  /// Error: tried to go to the next question before answering and before the own time ran out.
+  ///
+  /// In en, this message translates to:
+  /// **'Answer this question first, or wait until your time runs out.'**
+  String get classErrNotClosed;
+
+  /// Self-paced student screen before the first question.
+  ///
+  /// In en, this message translates to:
+  /// **'Ready?'**
+  String get classSelfReadyTitle;
+
+  /// Explains the own timer in self-paced mode; seconds per question.
+  ///
+  /// In en, this message translates to:
+  /// **'{seconds} seconds per question. Your time starts when you open a question, and you move on by yourself.'**
+  String classSelfReadyBody(int seconds);
+
+  /// Button: open the first question (the timer starts).
+  ///
+  /// In en, this message translates to:
+  /// **'Start'**
+  String get classSelfStart;
+
+  /// Button: go to the next question yourself.
+  ///
+  /// In en, this message translates to:
+  /// **'Next question'**
+  String get classSelfNext;
+
+  /// Button after the last question: finish my part of the quiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Finish'**
+  String get classSelfFinish;
+
+  /// Small hint under the answer options of quizzes (group test and self-paced live quiz): choose, confirm, move on yourself.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose an answer and press «Confirm». You move to the next question yourself.'**
+  String get classAnswerFlowHint;
+
+  /// Group test result screen: the score is ready (answers are still locked; the existing reveal note follows).
+  ///
+  /// In en, this message translates to:
+  /// **'Your score is ready.'**
+  String get grpScoreReadyNote;
+
+  /// Shown after the own answer: the student decides when to move on.
+  ///
+  /// In en, this message translates to:
+  /// **'Read the result, then move on when you are ready.'**
+  String get classSelfResultWait;
+
+  /// Self-paced student finished all questions.
+  ///
+  /// In en, this message translates to:
+  /// **'You have finished all questions'**
+  String get classSelfDoneTitle;
+
+  /// The overall leaderboard appears when the teacher ends the quiz.
+  ///
+  /// In en, this message translates to:
+  /// **'Your result is below. The overall leaderboard appears when the teacher ends the quiz.'**
+  String get classSelfDoneBody;
+
+  /// Teacher board header in self-paced mode.
+  ///
+  /// In en, this message translates to:
+  /// **'Student progress'**
+  String get classBoardTitle;
+
+  /// Teacher hint in self-paced mode.
+  ///
+  /// In en, this message translates to:
+  /// **'Everyone works at their own pace. End the quiz when you are ready.'**
+  String get classBoardHint;
+
+  /// Teacher summary: how many students started and finished, out of all.
+  ///
+  /// In en, this message translates to:
+  /// **'{opened} started · {done} finished · {joined} in total'**
+  String classBoardSummary(int opened, int done, int joined);
+
+  /// Teacher banner: every student finished.
+  ///
+  /// In en, this message translates to:
+  /// **'Everyone has finished — you can end the quiz.'**
+  String get classBoardAllDone;
+
+  /// Row status: the student has not opened the first question yet.
+  ///
+  /// In en, this message translates to:
+  /// **'Not started'**
+  String get classBoardNotStarted;
+
+  /// Row status: the student finished all questions.
+  ///
+  /// In en, this message translates to:
+  /// **'Finished'**
+  String get classBoardDone;
+
+  /// Row detail: correct answers out of answered questions.
+  ///
+  /// In en, this message translates to:
+  /// **'{correct}/{answered} correct'**
+  String classBoardAnsweredCorrect(int correct, int answered);
 }
 
 class _AppLocalizationsDelegate

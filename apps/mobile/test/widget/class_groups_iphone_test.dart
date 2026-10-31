@@ -129,6 +129,9 @@ void main() {
     expect(find.text(l.grpQuestionOf(1, 4)), findsOneWidget);
     expect(find.byKey(const Key('grp.time.countdown')), findsOneWidget);
     expect(tester.takeException(), isNull);
+    // Variantlar tagida ish tartibi izohi (tugmasiz, qisqa).
+    expect(find.byKey(const Key('grp.flowHint')), findsOneWidget);
+    expect(find.text(_l(tester).classAnswerFlowHint), findsOneWidget);
     await _answerAll(tester, 4);
     await tester.tap(find.byKey(const Key('grp.finish')));
     await frames(tester, 3);
@@ -137,6 +140,7 @@ void main() {
     // Natija: ball server hisobidan; to‘g‘ri javoblar hali yopiq.
     expect(find.byKey(const Key('grp.score')), findsOneWidget);
     expect(find.byKey(const Key('grp.revealLocked')), findsOneWidget);
+    expect(find.byKey(const Key('grp.scoreReady')), findsOneWidget);
     expect(find.text(l.grpRevealAfterCloseNote), findsOneWidget);
     final board = w.backend.board('teacher', s.aid).value!;
     expect(board.rows.single.nickname, "G'ayrat");

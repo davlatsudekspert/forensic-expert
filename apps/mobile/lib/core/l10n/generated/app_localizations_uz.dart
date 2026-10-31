@@ -11510,4 +11510,94 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get lessonAutoResume => 'Davom etish';
+
+  @override
+  String get classPaceSection => 'Test rejimi';
+
+  @override
+  String get classPaceHost => 'Ustoz boshqaradi';
+
+  @override
+  String get classPaceHostHint => 'Hamma bir savolda, vaqt umumiy.';
+
+  @override
+  String get classPaceSelf => 'Har kim o‘z tezligida';
+
+  @override
+  String get classPaceSelfHint => 'Har talabaning vaqti o‘zidan boshlanadi.';
+
+  @override
+  String classPaceLine(String mode) {
+    return 'Rejim: $mode';
+  }
+
+  @override
+  String get classLobbySelfHint =>
+      'Har kim o‘z tezligida ishlaydi: ustoz boshlagach, savollarni o‘zingiz ochasiz.';
+
+  @override
+  String get classErrNotClosed =>
+      'Avval shu savolga javob bering yoki vaqt tugashini kuting.';
+
+  @override
+  String get classSelfReadyTitle => 'Tayyormisiz?';
+
+  @override
+  String classSelfReadyBody(int seconds) {
+    return 'Har savolga $seconds soniya. Vaqt savolni ochganingizdan boshlanadi, keyingisiga o‘zingiz o‘tasiz.';
+  }
+
+  @override
+  String get classSelfStart => 'Boshlash';
+
+  @override
+  String get classSelfNext => 'Keyingi savol';
+
+  @override
+  String get classSelfFinish => 'Yakunlash';
+
+  @override
+  String get classAnswerFlowHint =>
+      'Javobni tanlang va «Tasdiqlash»ni bosing. Keyingi savolga o‘zingiz o‘tasiz.';
+
+  @override
+  String get grpScoreReadyNote => 'Balingiz tayyor.';
+
+  @override
+  String get classSelfResultWait =>
+      'Natijani o‘qing va tayyor bo‘lganda keyingisiga o‘ting.';
+
+  @override
+  String get classSelfDoneTitle => 'Siz hamma savolni tugatdingiz';
+
+  @override
+  String get classSelfDoneBody =>
+      'Natijangiz quyida. Umumiy reyting ustoz testni tugatgach chiqadi.';
+
+  @override
+  String get classBoardTitle => 'Talabalar progressi';
+
+  @override
+  String get classBoardHint =>
+      'Har kim o‘z tezligida ishlamoqda. Tayyor bo‘lganda testni tugating.';
+
+  @override
+  String classBoardSummary(int opened, int done, int joined) {
+    return '$opened ta boshladi · $done ta tugatdi · jami $joined ta';
+  }
+
+  @override
+  String get classBoardAllDone =>
+      'Hamma tugatdi — testni tugatishingiz mumkin.';
+
+  @override
+  String get classBoardNotStarted => 'Hali boshlamagan';
+
+  @override
+  String get classBoardDone => 'Tugatdi';
+
+  @override
+  String classBoardAnsweredCorrect(int correct, int answered) {
+    return '$correct/$answered to‘g‘ri';
+  }
 }

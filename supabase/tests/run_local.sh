@@ -25,6 +25,7 @@ $P -d fe -f "$HERE/qa_community_test.sql"
 $P -d fe -f "$HERE/qa_service_api_test.sql"
 $P -d fe -f "$HERE/class_quiz_test.sql"
 $P -d fe -f "$HERE/class_hardest_detail_test.sql"
+$P -d fe -f "$HERE/class_quiz_self_pace_test.sql"
 # «Ustoz–talaba testi»: shared variant vectors (also used by the Dart tests).
 FIXTURE="$HERE/../../apps/mobile/test/fixtures/class_group_variant_vectors.json"
 $P -d fe -v fixture="$FIXTURE" -f "$HERE/class_groups_test.sql"

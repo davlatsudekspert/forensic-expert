@@ -65,6 +65,12 @@ abstract interface class ClassQuizService {
 
   Future<ClassResult<ClassMyResults>> myResults(String sessionId);
 
+  /// Faqat «har kim o‘z tezligida» rejimida: talabaning o‘zi birinchi savolni
+  /// ochadi (taymer shu paytdan) yoki yopilgan savoldan keyingisiga o‘tadi.
+  /// Natija — `true`, agar talaba hamma savolni tugatgan bo‘lsa. Savol hali
+  /// yopilmagan bo‘lsa — [ClassFailure.notClosed] (avto-o‘tish yo‘q).
+  Future<ClassResult<bool>> nextMine(String sessionId);
+
   /// Laqabga shikoyat (UGC, App Store 1.2).
   Future<ClassResult<void>> reportNickname({
     required String sessionId,
@@ -143,6 +149,9 @@ class UnconfiguredClassQuizService implements ClassQuizService {
   }) async => const ClassResult.fail(_f);
   @override
   Future<ClassResult<ClassMyResults>> myResults(String sessionId) async =>
+      const ClassResult.fail(_f);
+  @override
+  Future<ClassResult<bool>> nextMine(String sessionId) async =>
       const ClassResult.fail(_f);
   @override
   Future<ClassResult<void>> reportNickname({

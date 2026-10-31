@@ -29,6 +29,11 @@ class _P {
   final bool bot;
   final int botIndex;
   bool kicked = false;
+
+  // Faqat self rejim: talabaning o‘z progressi (server `class_participants`).
+  int pos = 0;
+  DateTime? startedAt;
+  DateTime? finishedAt;
 }
 
 class _A {
@@ -49,6 +54,7 @@ class _S {
     required this.settings,
     required this.questions,
     required this.createdAt,
+    this.pace = ClassPace.host,
   });
 
   final String id;
@@ -58,6 +64,7 @@ class _S {
   final ClassQuizSettings settings;
   final List<_Q> questions;
   final DateTime createdAt;
+  final ClassPace pace;
   ClassSessionStatus status = ClassSessionStatus.lobby;
   int currentIndex = -1;
   DateTime? questionStartedAt;
@@ -141,17 +148,100 @@ class FakeClassQuizBackend {
     ClassSessionStatus.lobby => ClassPhase.lobby,
     ClassSessionStatus.finished => ClassPhase.finished,
     ClassSessionStatus.running =>
-      _elapsedMs(s) < _limitMs(s) ? ClassPhase.open : ClassPhase.closed,
+      s.pace == ClassPace.self || _elapsedMs(s) < _limitMs(s)
+          ? ClassPhase.open
+          : ClassPhase.closed,
   };
 
-  int _remainingMs(_S s) => s.status != ClassSessionStatus.running
+  int _remainingMs(_S s) =>
+      s.status != ClassSessionStatus.running || s.pace == ClassPace.self
       ? 0
       : max(_limitMs(s) - _elapsedMs(s), 0);
 
   bool _revealed(_S s) =>
       s.status == ClassSessionStatus.finished ||
       (s.status == ClassSessionStatus.running &&
+          s.pace != ClassPace.self &&
           _elapsedMs(s) >= _limitMs(s) + ClassQuizRules.revealDelayMs);
+
+  // ---- self rejim (SQL: private.class_self_order, class_next_mine, ...)
+
+  /// Talabaning o‘z savollar tartibi (asl indekslar). Deterministik: har
+  /// talabaga boshqacha. SQL’da md5(participant_id:idx); bu yerda FNV-1a —
+  /// xotira modeli uchun yetarli (SQL bilan baytma-bayt bir xil emas).
+  List<int> _order(_S s, _P p) {
+    int h(int i) {
+      var x = 0x811c9dc5;
+      for (final c in '${p.id}:$i'.codeUnits) {
+        x = ((x ^ c) * 0x01000193) & 0xffffffff;
+      }
+      return x;
+    }
+
+    final idx = List.generate(s.questions.length, (i) => i);
+    idx.sort((a, b) {
+      final c = h(a).compareTo(h(b));
+      return c != 0 ? c : a.compareTo(b);
+    });
+    return idx;
+  }
+
+  int _selfElapsedMs(_P p) => p.startedAt == null
+      ? 0
+      : now().difference(p.startedAt!).inMilliseconds.clamp(0, 1 << 31);
+
+  /// Talabaning hozirgi savoli yopilganmi: javob bor yoki o‘z vaqti tugagan.
+  bool _selfClosed(_S s, _P p) {
+    final idx = _order(s, p)[p.pos];
+    return s.answers.containsKey('${p.id}|$idx') ||
+        _selfElapsedMs(p) >= _limitMs(s);
+  }
+
+  /// Demo ishtirokchilari (self rejim): har biri o‘z sur’atida savollarni
+  /// ketma-ket yechadi (bir-biridan mustaqil).
+  void _runBotsSelf(_S s) {
+    if (s.status != ClassSessionStatus.running || s.pace != ClassPace.self) {
+      return;
+    }
+    final begun = s.questionStartedAt;
+    if (begun == null) return;
+    final elapsed = now().difference(begun).inMilliseconds;
+    final limit = _limitMs(s);
+    for (final p in s.participants) {
+      if (!p.bot || p.kicked || p.finishedAt != null) continue;
+      final per = min(2500 + p.botIndex * 1700, limit - 1);
+      final done = min(elapsed ~/ per, s.questions.length);
+      final order = _order(s, p);
+      for (var k = 0; k < done; k++) {
+        final idx = order[k];
+        final key = '${p.id}|$idx';
+        if (s.answers.containsKey(key)) continue;
+        final r = Random(idx * 97 + p.botIndex * 31 + 7);
+        final q = s.questions[idx];
+        final wrong = [
+          for (final o in q.options)
+            if (o.id != q.correctId) o.id,
+        ];
+        final opt = r.nextDouble() < 0.7
+            ? q.correctId
+            : wrong[r.nextInt(wrong.length)];
+        final correct = opt == q.correctId;
+        s.answers[key] = _A(
+          opt,
+          correct,
+          ClassScoring.points(correct: correct, elapsedMs: per, limitMs: limit),
+          per,
+        );
+      }
+      p.startedAt ??= begun;
+      if (done >= s.questions.length) {
+        p.pos = s.questions.length - 1;
+        p.finishedAt = now();
+      } else {
+        p.pos = done;
+      }
+    }
+  }
 
   ClassSessionInfo _info(_S s, {bool withJoined = false}) => ClassSessionInfo(
     id: s.id,
@@ -164,6 +254,7 @@ class FakeClassQuizBackend {
     studentLimit: s.settings.studentLimit,
     seconds: s.settings.seconds,
     joined: withJoined ? _active(s).length : null,
+    pace: s.pace,
   );
 
   List<_P> _active(_S s) => [
@@ -173,7 +264,9 @@ class FakeClassQuizBackend {
 
   /// Demo ishtirokchilari: vaqt o‘tishi bilan joriy savolga javob beradi.
   void _runBots(_S s) {
-    if (s.status != ClassSessionStatus.running) return;
+    if (s.status != ClassSessionStatus.running || s.pace == ClassPace.self) {
+      return;
+    }
     final idx = s.currentIndex;
     final elapsed = _elapsedMs(s);
     final limit = _limitMs(s);
@@ -272,6 +365,7 @@ class FakeClassQuizBackend {
       settings: settings,
       questions: qs,
       createdAt: now(),
+      pace: settings.pace,
     );
     for (var i = 0; i < demoBots && i < settings.studentLimit; i++) {
       s.participants.add(
@@ -379,7 +473,7 @@ class FakeClassQuizBackend {
   ClassResult<bool> next(String user, String id) {
     final s = _owned(user, id);
     if (s == null) return const ClassResult.fail(ClassFailure.forbidden);
-    if (s.status != ClassSessionStatus.running) {
+    if (s.status != ClassSessionStatus.running || s.pace == ClassPace.self) {
       return const ClassResult.fail(ClassFailure.badState);
     }
     _runBots(s);
@@ -398,7 +492,7 @@ class FakeClassQuizBackend {
   ClassResult<void> closeQuestion(String user, String id) {
     final s = _owned(user, id);
     if (s == null) return const ClassResult.fail(ClassFailure.forbidden);
-    if (s.status != ClassSessionStatus.running) {
+    if (s.status != ClassSessionStatus.running || s.pace == ClassPace.self) {
       return const ClassResult.fail(ClassFailure.badState);
     }
     _runBots(s);
@@ -412,6 +506,7 @@ class FakeClassQuizBackend {
     final s = _owned(user, id);
     if (s == null) return const ClassResult.fail(ClassFailure.forbidden);
     _runBots(s);
+    _runBotsSelf(s);
     if (s.status != ClassSessionStatus.finished) {
       s
         ..status = ClassSessionStatus.finished
@@ -441,13 +536,23 @@ class FakeClassQuizBackend {
       return const ClassResult.fail(ClassFailure.forbidden);
     }
     final s = _sessions[id]!;
-    if (s.status != ClassSessionStatus.running || s.currentIndex != index) {
+    final self = s.pace == ClassPace.self;
+    if (s.status != ClassSessionStatus.running) {
+      return const ClassResult.fail(ClassFailure.notCurrent);
+    }
+    if (self) {
+      if (p.finishedAt != null ||
+          p.startedAt == null ||
+          _order(s, p)[p.pos] != index) {
+        return const ClassResult.fail(ClassFailure.notCurrent);
+      }
+    } else if (s.currentIndex != index) {
       return const ClassResult.fail(ClassFailure.notCurrent);
     }
     if (!RegExp(r'^o[0-3]$').hasMatch(option)) {
       return const ClassResult.fail(ClassFailure.badOption);
     }
-    final elapsed = _elapsedMs(s);
+    final elapsed = self ? _selfElapsedMs(p) : _elapsedMs(s);
     final limit = _limitMs(s);
     if (elapsed > limit + ClassQuizRules.submitGraceMs) {
       return const ClassResult.fail(ClassFailure.timeOver);
@@ -466,10 +571,111 @@ class FakeClassQuizBackend {
     return const ClassResult.ok(null);
   }
 
+  /// SQL `class_next_mine`: talabaning o‘zi birinchi savolni ochadi (taymer
+  /// shu paytdan) yoki yopilgan savoldan keyingisiga o‘tadi / tugatadi.
+  ClassResult<bool> nextMine(String user, String id) {
+    final p = _member(user, id);
+    if (p == null || p.kicked) {
+      return const ClassResult.fail(ClassFailure.forbidden);
+    }
+    final s = _sessions[id]!;
+    if (s.pace != ClassPace.self || s.status != ClassSessionStatus.running) {
+      return const ClassResult.fail(ClassFailure.badState);
+    }
+    if (p.finishedAt != null) return const ClassResult.ok(true);
+    if (p.startedAt == null) {
+      p
+        ..pos = 0
+        ..startedAt = now();
+      return const ClassResult.ok(false);
+    }
+    if (!_selfClosed(s, p)) {
+      return const ClassResult.fail(ClassFailure.notClosed);
+    }
+    if (p.pos + 1 >= s.questions.length) {
+      p.finishedAt = now();
+      return const ClassResult.ok(true);
+    }
+    p
+      ..pos += 1
+      ..startedAt = now();
+    return const ClassResult.ok(false);
+  }
+
+  /// SQL `private.class_self_state`: faqat o‘z progressim va o‘z savolim.
+  ClassStudentState _selfState(_S s, _P p) {
+    var score = 0;
+    var correct = 0;
+    var answered = 0;
+    for (var i = 0; i < s.questions.length; i++) {
+      final a = s.answers['${p.id}|$i'];
+      if (a == null) continue;
+      answered++;
+      score += a.points;
+      if (a.correct) correct++;
+    }
+    ClassStudentState build({
+      required ClassSelfStage stage,
+      ClassPhase phase = ClassPhase.closed,
+      int remaining = 0,
+      ClassQuestionView? question,
+      String? myOption,
+      ClassReveal? reveal,
+    }) => ClassStudentState(
+      session: ClassSessionInfo(
+        id: s.id,
+        code: s.code,
+        topicId: s.topic.id,
+        topicTitle: s.topic.title,
+        status: s.status,
+        currentIndex: p.pos,
+        total: s.questions.length,
+        studentLimit: s.settings.studentLimit,
+        seconds: s.settings.seconds,
+        pace: s.pace,
+      ),
+      phase: phase,
+      remainingMs: remaining,
+      joined: _active(s).length,
+      nickname: p.nickname,
+      score: score,
+      correct: correct,
+      question: question,
+      myOption: myOption,
+      reveal: reveal,
+      selfStage: stage,
+      position: p.pos,
+      answeredCount: answered,
+    );
+    if (p.finishedAt != null) return build(stage: ClassSelfStage.done);
+    if (p.startedAt == null) return build(stage: ClassSelfStage.ready);
+    final idx = _order(s, p)[p.pos];
+    final q = s.questions[idx];
+    final a = s.answers['${p.id}|$idx'];
+    final elapsed = _selfElapsedMs(p);
+    final limit = _limitMs(s);
+    return build(
+      stage: ClassSelfStage.question,
+      phase: a == null && elapsed < limit ? ClassPhase.open : ClassPhase.closed,
+      remaining: a == null ? max(limit - elapsed, 0) : 0,
+      question: ClassQuestionView(index: idx, text: q.text, options: q.options),
+      myOption: a?.optionId,
+      reveal: a != null || elapsed >= limit + ClassQuizRules.revealDelayMs
+          ? ClassReveal(
+              correctOption: q.correctId,
+              explanation: q.explanation,
+              myCorrect: a?.correct ?? false,
+              myPoints: a?.points ?? 0,
+            )
+          : null,
+    );
+  }
+
   /// Server qoidasi (private.class_scores): ochiq savol javoblari hali
   /// sanalmaydi — faqat oldingi savollar, joriysi revealed bo‘lgach, yoki
   /// sessiya tugagach.
   bool _visible(_S s, int index) =>
+      s.pace == ClassPace.self ||
       s.status == ClassSessionStatus.finished ||
       index < s.currentIndex ||
       (index == s.currentIndex && _revealed(s));
@@ -539,6 +745,7 @@ class FakeClassQuizBackend {
     if (p == null) return const ClassResult.fail(ClassFailure.forbidden);
     final s = _sessions[id]!;
     _runBots(s);
+    _runBotsSelf(s);
     if (p.kicked) {
       return ClassResult.ok(
         ClassStudentState(
@@ -552,6 +759,9 @@ class FakeClassQuizBackend {
           correct: 0,
         ),
       );
+    }
+    if (s.pace == ClassPace.self && s.status == ClassSessionStatus.running) {
+      return ClassResult.ok(_selfState(s, p));
     }
     final scores = _scores(s);
     final mine = scores.where((r) => r.participantId == p.id).firstOrNull;
@@ -603,25 +813,35 @@ class FakeClassQuizBackend {
       return const ClassResult.fail(ClassFailure.forbidden);
     }
     final s = _sessions[id]!;
-    if (s.status != ClassSessionStatus.finished) {
+    _runBotsSelf(s);
+    final self = s.pace == ClassPace.self;
+    if (s.status != ClassSessionStatus.finished &&
+        !(self &&
+            s.status == ClassSessionStatus.running &&
+            p.finishedAt != null)) {
       return const ClassResult.fail(ClassFailure.notFinished);
     }
     final mine = _scores(s).where((r) => r.participantId == p.id).firstOrNull;
+    // Self rejim: savollar talabaning O‘Z tartibida (index = o‘rni).
+    final order = self
+        ? _order(s, p)
+        : List.generate(s.questions.length, (i) => i);
     return ClassResult.ok(
       ClassMyResults(
         nickname: p.nickname,
         score: mine?.score ?? 0,
-        rank: mine?.rank,
+        rank: s.status == ClassSessionStatus.finished ? mine?.rank : null,
         correct: mine?.correct ?? 0,
         total: s.questions.length,
         participants: _active(s).length,
         items: [
-          for (var i = 0; i < s.questions.length; i++)
+          for (var k = 0; k < order.length; k++)
             () {
+              final i = order[k];
               final q = s.questions[i];
               final a = s.answers['${p.id}|$i'];
               return ClassResultItem(
-                index: i,
+                index: k,
                 text: q.text,
                 options: q.options,
                 myOption: a?.optionId,
@@ -641,9 +861,10 @@ class FakeClassQuizBackend {
     final s = _owned(user, id);
     if (s == null) return const ClassResult.fail(ClassFailure.forbidden);
     _runBots(s);
+    _runBotsSelf(s);
     final scores = _scores(s);
     ClassCurrentQuestion? current;
-    if (s.status == ClassSessionStatus.running) {
+    if (s.status == ClassSessionStatus.running && s.pace != ClassPace.self) {
       final q = s.questions[s.currentIndex];
       var answered = 0;
       var correct = 0;
@@ -671,6 +892,7 @@ class FakeClassQuizBackend {
     final hard = <ClassHardQuestion>[];
     for (var i = 0; i < s.questions.length; i++) {
       final closed =
+          s.pace == ClassPace.self ||
           s.status == ClassSessionStatus.finished ||
           i < s.currentIndex ||
           (i == s.currentIndex && _revealed(s));
@@ -705,19 +927,48 @@ class FakeClassQuizBackend {
         joined: _active(s).length,
         participants: [
           for (final p in _active(s))
-            ClassParticipant(
-              id: p.id,
-              nickname: p.nickname,
-              answered:
-                  s.status == ClassSessionStatus.running &&
-                  s.answers['${p.id}|${s.currentIndex}'] != null,
-            ),
+            if (s.pace == ClassPace.self)
+              () {
+                var n = 0;
+                var ok = 0;
+                for (var i = 0; i < s.questions.length; i++) {
+                  final a = s.answers['${p.id}|$i'];
+                  if (a == null) continue;
+                  n++;
+                  if (a.correct) ok++;
+                }
+                return ClassParticipant(
+                  id: p.id,
+                  nickname: p.nickname,
+                  answered: p.finishedAt != null,
+                  progress: ClassSelfProgress(
+                    position: p.startedAt == null ? 0 : p.pos + 1,
+                    answered: n,
+                    correct: ok,
+                    done: p.finishedAt != null,
+                  ),
+                );
+              }()
+            else
+              ClassParticipant(
+                id: p.id,
+                nickname: p.nickname,
+                answered:
+                    s.status == ClassSessionStatus.running &&
+                    s.answers['${p.id}|${s.currentIndex}'] != null,
+              ),
         ],
         leaderboard: scores.take(10).toList(),
         hardest: hard.take(3).toList(),
         reports: s.reports.length,
         current: current,
         revealed: _revealed(s),
+        selfOpened: s.pace == ClassPace.self
+            ? _active(s).where((p) => p.startedAt != null).length
+            : 0,
+        selfDone: s.pace == ClassPace.self
+            ? _active(s).where((p) => p.finishedAt != null).length
+            : 0,
       ),
     );
   }
@@ -774,6 +1025,7 @@ class FakeClassQuizBackend {
     final s = _owned(user, id);
     if (s == null) return const ClassResult.fail(ClassFailure.forbidden);
     _runBots(s);
+    _runBotsSelf(s);
     final rows = <ClassExportRow>[];
     for (final r in _scores(s)) {
       final p = s.participants.firstWhere((x) => x.id == r.participantId);
@@ -836,6 +1088,10 @@ class FakeClassQuizBackend {
   }
 
   int get sessionCount => _sessions.length;
+
+  /// Faqat testlar uchun: savolning to‘g‘ri variant id’si (xotira modeli).
+  String debugCorrectOption(String sessionId, int index) =>
+      _sessions[sessionId]!.questions[index].correctId;
 }
 
 /// Bitta foydalanuvchi ko‘rinishi. Demo rejimda [isDemo] `true`.
@@ -925,6 +1181,9 @@ class FakeClassQuizService implements ClassQuizService {
   @override
   Future<ClassResult<ClassMyResults>> myResults(String sessionId) async =>
       backend.myResults(userId, sessionId);
+  @override
+  Future<ClassResult<bool>> nextMine(String sessionId) async =>
+      backend.nextMine(userId, sessionId);
   @override
   Future<ClassResult<void>> reportNickname({
     required String sessionId,

@@ -69,10 +69,10 @@ class _ClassPlayScreenState extends ConsumerState<ClassPlayScreen> {
             )
           : switch (st.status) {
               ClassSessionStatus.lobby => _StudentLobby(st: st),
-              ClassSessionStatus.running => _StudentQuestion(
-                sessionId: sessionId,
-                st: st,
-              ),
+              ClassSessionStatus.running =>
+                st.selfStage != null
+                    ? _SelfPlay(sessionId: sessionId, st: st)
+                    : _StudentQuestion(sessionId: sessionId, st: st),
               ClassSessionStatus.finished => _StudentFinished(
                 sessionId: sessionId,
                 st: st,
@@ -181,6 +181,15 @@ class _StudentLobby extends StatelessWidget {
                       style: t.bodyMedium,
                     ),
                     const SizedBox(height: FeSpace.xs),
+                    if (st.session.isSelfPaced) ...[
+                      Text(
+                        l.classLobbySelfHint,
+                        key: const Key('class.lobbySelfHint'),
+                        textAlign: TextAlign.center,
+                        style: t.bodySmall,
+                      ),
+                      const SizedBox(height: FeSpace.xs),
+                    ],
                     Text(
                       l.classJoinedCount(st.joined, st.session.studentLimit),
                       style: t.titleSmall,
@@ -391,6 +400,366 @@ class _StudentQuestionState extends ConsumerState<_StudentQuestion> {
             ],
           ),
         ),
+      ],
+    );
+  }
+}
+
+/// «Har kim o‘z tezligida» rejimi: talabaning o‘z savoli va o‘z taymeri.
+/// Variant tanlash serverga ketmaydi — faqat «Tasdiqlash» bosilganda; keyingi
+/// savolga talaba o‘zi o‘tadi (avto-o‘tish yo‘q). Hammasi server holatidan
+/// (har ~2 s polling): savol, o‘z vaqti, natija.
+class _SelfPlay extends ConsumerStatefulWidget {
+  const _SelfPlay({required this.sessionId, required this.st});
+
+  final String sessionId;
+  final ClassStudentState st;
+
+  @override
+  ConsumerState<_SelfPlay> createState() => _SelfPlayState();
+}
+
+class _SelfPlayState extends ConsumerState<_SelfPlay> {
+  bool _busy = false;
+  String? _pending;
+  int? _pendingIndex;
+  String? _local;
+  int? _localIndex;
+
+  Future<ClassResult<Object?>?> _call(
+    Future<ClassResult<Object?>> Function() action,
+  ) async {
+    if (_busy) return null;
+    final l = AppLocalizations.of(context);
+    final messenger = ScaffoldMessenger.of(context);
+    setState(() => _busy = true);
+    final r = await action();
+    if (!mounted) return r;
+    setState(() => _busy = false);
+    if (!r.ok && r.failure != ClassFailure.alreadyAnswered) {
+      messenger
+        ..hideCurrentSnackBar()
+        ..showSnackBar(
+          SnackBar(content: Text(classFailureText(l, r.failure!))),
+        );
+    }
+    ref.invalidate(classStudentStateProvider(widget.sessionId));
+    return r;
+  }
+
+  Future<void> _confirm(ClassQuestionView q, String optionId) async {
+    setState(() {
+      _local = optionId;
+      _localIndex = q.index;
+    });
+    final r = await _call(
+      () => ref
+          .read(classQuizServiceProvider)
+          .submitAnswer(
+            sessionId: widget.sessionId,
+            questionIndex: q.index,
+            optionId: optionId,
+          ),
+    );
+    // Rad etilsa (vaqt tugagan va h.k.) — tanlov qayta ochiladi; server
+    // holati (my_option) haqiqat manbai.
+    if (mounted &&
+        r != null &&
+        !r.ok &&
+        r.failure != ClassFailure.alreadyAnswered) {
+      setState(() {
+        _local = null;
+        _localIndex = null;
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final t = Theme.of(context).textTheme;
+    final c = FeTheme.of(context);
+    final st = widget.st;
+    final svc = ref.read(classQuizServiceProvider);
+    final total = st.session.total;
+
+    Widget content;
+    switch (st.selfStage) {
+      case ClassSelfStage.ready:
+        content = FeCard(
+          key: const Key('class.selfReady'),
+          child: Column(
+            children: [
+              const Icon(Icons.timer_outlined, size: 36),
+              const SizedBox(height: FeSpace.sm),
+              Text(
+                l.classSelfReadyTitle,
+                textAlign: TextAlign.center,
+                style: t.titleLarge,
+              ),
+              const SizedBox(height: FeSpace.xs),
+              Text(
+                l.classSelfReadyBody(st.session.seconds),
+                textAlign: TextAlign.center,
+                style: t.bodyMedium,
+              ),
+              const SizedBox(height: FeSpace.md),
+              FilledButton(
+                key: const Key('class.selfStart'),
+                onPressed: _busy
+                    ? null
+                    : () => _call(() => svc.nextMine(widget.sessionId)),
+                child: Text(l.classSelfStart),
+              ),
+            ],
+          ),
+        );
+      case ClassSelfStage.done:
+        content = _SelfDone(sessionId: widget.sessionId, st: st);
+      case ClassSelfStage.question || null:
+        final q = st.question;
+        if (q == null) {
+          content = const Center(child: CircularProgressIndicator());
+          break;
+        }
+        final submitted =
+            st.myOption ?? (_localIndex == q.index ? _local : null);
+        final selected =
+            submitted ?? (_pendingIndex == q.index ? _pending : null);
+        final open = st.phase == ClassPhase.open;
+        final reveal = st.reveal;
+        final last = st.position + 1 >= total;
+        ClassOptionState stateOf(String id) {
+          if (reveal != null) {
+            if (id == reveal.correctOption) return ClassOptionState.correct;
+            if (id == selected) return ClassOptionState.wrong;
+            return ClassOptionState.neutral;
+          }
+          return id == selected
+              ? ClassOptionState.chosen
+              : ClassOptionState.neutral;
+        }
+
+        final String status;
+        if (reveal != null) {
+          status = selected == null
+              ? l.classResultNoAnswer
+              : reveal.myCorrect
+              ? l.classResultCorrect(reveal.myPoints)
+              : l.classResultWrong;
+        } else if (!open) {
+          status = l.classTimeUpWaiting;
+        } else if (submitted != null) {
+          status = l.classAnswerAccepted;
+        } else {
+          status = l.classChooseAnswer;
+        }
+        content = Column(
+          key: const Key('class.selfQuestion'),
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    l.classQuestionOf(st.position + 1, total),
+                    key: const Key('class.selfPosition'),
+                    style: t.titleMedium?.copyWith(color: c.textSecondary),
+                  ),
+                ),
+                if (open)
+                  ClassCountdown(
+                    key: ValueKey('self${st.position}'),
+                    remainingMs: st.remainingMs,
+                    totalMs: st.session.seconds * 1000,
+                    size: 56,
+                  ),
+              ],
+            ),
+            const SizedBox(height: FeSpace.xs),
+            Text(
+              q.text,
+              key: const Key('class.question'),
+              style: t.titleLarge?.copyWith(fontWeight: FontWeight.w700),
+            ),
+            const SizedBox(height: FeSpace.md),
+            for (var i = 0; i < q.options.length; i++)
+              Padding(
+                padding: const EdgeInsets.only(bottom: FeSpace.xs),
+                child: ClassOptionTile(
+                  key: Key('class.option.${q.options[i].id}'),
+                  letter: classOptionLetter(i),
+                  text: q.options[i].text,
+                  state: stateOf(q.options[i].id),
+                  onTap: open && submitted == null && !_busy
+                      ? () => setState(() {
+                          _pending = q.options[i].id;
+                          _pendingIndex = q.index;
+                        })
+                      : null,
+                ),
+              ),
+            if (open && submitted == null) ...[
+              Padding(
+                padding: const EdgeInsets.only(bottom: FeSpace.xs),
+                child: Text(
+                  l.classAnswerFlowHint,
+                  key: const Key('class.flowHint'),
+                  textAlign: TextAlign.center,
+                  style: t.bodySmall?.copyWith(color: c.textSecondary),
+                ),
+              ),
+              FilledButton(
+                key: const Key('class.confirm'),
+                onPressed: selected == null || _busy
+                    ? null
+                    : () => _confirm(q, selected),
+                child: Text(l.verifySubmit),
+              ),
+            ],
+            Semantics(
+              liveRegion: true,
+              child: Text(
+                status,
+                key: const Key('class.status'),
+                style: t.titleSmall?.copyWith(
+                  color: reveal == null
+                      ? c.textSecondary
+                      : (reveal.myCorrect ? c.verified : c.danger),
+                ),
+              ),
+            ),
+            if (reveal != null && reveal.explanation.isNotEmpty) ...[
+              const SizedBox(height: FeSpace.xs),
+              FeBanner(
+                key: const Key('class.explanation'),
+                icon: Icons.lightbulb_outline,
+                text: reveal.explanation,
+                tone: FeBannerTone.review,
+              ),
+            ],
+            if (reveal != null) ...[
+              const SizedBox(height: FeSpace.xs),
+              Text(l.classSelfResultWait, style: t.bodySmall),
+            ],
+            if (st.phase == ClassPhase.closed) ...[
+              const SizedBox(height: FeSpace.sm),
+              FilledButton(
+                key: const Key('class.selfNext'),
+                onPressed: _busy
+                    ? null
+                    : () => _call(() => svc.nextMine(widget.sessionId)),
+                child: Text(last ? l.classSelfFinish : l.classSelfNext),
+              ),
+            ],
+            const SizedBox(height: FeSpace.md),
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    st.nickname,
+                    overflow: TextOverflow.ellipsis,
+                    style: t.bodyMedium,
+                  ),
+                ),
+                if (reveal != null)
+                  Text(
+                    l.classScoreLine(st.score),
+                    key: const Key('class.score'),
+                    style: t.titleSmall,
+                  ),
+              ],
+            ),
+          ],
+        );
+    }
+
+    return ListView(
+      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
+      children: [
+        FeContentFrame(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              const SizedBox(height: FeSpace.sm),
+              const ClassDemoBanner(),
+              content,
+              const SizedBox(height: FeSpace.lg),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+/// Self rejim: talaba o‘z savollarini tugatdi — o‘z natijasi va xatolari;
+/// umumiy reyting ustoz testni tugatgach chiqadi.
+class _SelfDone extends ConsumerWidget {
+  const _SelfDone({required this.sessionId, required this.st});
+
+  final String sessionId;
+  final ClassStudentState st;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final t = Theme.of(context).textTheme;
+    final c = FeTheme.of(context);
+    final results = ref.watch(classMyResultsProvider(sessionId)).value?.value;
+    final mistakes = results?.mistakes ?? const <ClassResultItem>[];
+    return Column(
+      key: const Key('class.selfDone'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        FeCard(
+          child: Column(
+            children: [
+              Text(
+                l.classSelfDoneTitle,
+                textAlign: TextAlign.center,
+                style: t.titleLarge,
+              ),
+              const SizedBox(height: FeSpace.xs),
+              Text(
+                l.classScoreLine(st.score),
+                key: const Key('class.finalScore'),
+                style: t.headlineMedium?.copyWith(
+                  color: c.accent,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              if (results != null)
+                Text(
+                  l.classCorrectOfTotal(results.correct, results.total),
+                  key: const Key('class.finalCorrect'),
+                  style: t.bodyMedium,
+                ),
+              const SizedBox(height: FeSpace.xs),
+              Text(
+                l.classSelfDoneBody,
+                textAlign: TextAlign.center,
+                style: t.bodySmall?.copyWith(color: c.textSecondary),
+              ),
+            ],
+          ),
+        ),
+        FeSectionHeader(l.classMistakesTitle),
+        if (results == null)
+          const Center(child: CircularProgressIndicator())
+        else if (mistakes.isEmpty)
+          FeBanner(
+            key: const Key('class.noMistakes'),
+            icon: Icons.verified_outlined,
+            text: l.classNoMistakes,
+            tone: FeBannerTone.review,
+          )
+        else
+          for (final m in mistakes)
+            Padding(
+              padding: const EdgeInsets.only(bottom: FeSpace.sm),
+              child: ClassMistakeCard(item: m),
+            ),
       ],
     );
   }

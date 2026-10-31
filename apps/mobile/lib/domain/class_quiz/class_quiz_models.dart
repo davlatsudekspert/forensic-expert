@@ -42,6 +42,22 @@ abstract final class ClassQuizRules {
   static const int retentionDays = 30;
 }
 
+/// Test o‘tkazish rejimi (server `class_sessions.pace`).
+///
+/// [host] — ustoz boshqaradi (standart, avvalgidek): savol va vaqt hammaga
+/// umumiy, ustoz «Keyingi» bosadi. [self] — har kim o‘z tezligida: har
+/// talabaning o‘z savoli, o‘z taymeri (savolni ochgan paytdan, server soati),
+/// keyingisiga o‘zi o‘tadi; ustoz progress doskasini ko‘radi.
+enum ClassPace {
+  host,
+  self;
+
+  static ClassPace parse(Object? v) => v == 'self' ? self : host;
+
+  /// Server qiymati (`host` / `self`).
+  String get wire => name;
+}
+
 /// Sinf sozlamalari.
 @immutable
 class ClassQuizSettings {
@@ -49,11 +65,15 @@ class ClassQuizSettings {
     this.questionCount = ClassQuizRules.defaultQuestions,
     this.studentLimit = 30,
     this.seconds = ClassQuizRules.defaultSeconds,
+    this.pace = ClassPace.host,
   });
 
   final int questionCount;
   final int studentLimit;
   final int seconds;
+
+  /// Rejim; standart — ustoz boshqaradi (o‘zgarmagan xulq).
+  final ClassPace pace;
 
   bool get valid =>
       questionCount >= ClassQuizRules.minQuestions &&
@@ -66,10 +86,12 @@ class ClassQuizSettings {
     int? questionCount,
     int? studentLimit,
     int? seconds,
+    ClassPace? pace,
   }) => ClassQuizSettings(
     questionCount: questionCount ?? this.questionCount,
     studentLimit: studentLimit ?? this.studentLimit,
     seconds: seconds ?? this.seconds,
+    pace: pace ?? this.pace,
   );
 }
 
@@ -337,6 +359,7 @@ enum ClassFailure {
   alreadyAnswered,
   badOption,
   notFinished,
+  notClosed,
   badReason;
 
   static ClassFailure fromServer(Object? code) => switch (code) {
@@ -361,6 +384,7 @@ enum ClassFailure {
     'already_answered' => alreadyAnswered,
     'bad_option' => badOption,
     'not_finished' => notFinished,
+    'not_closed' => notClosed,
     'bad_reason' => badReason,
     _ => server,
   };
@@ -425,6 +449,7 @@ class ClassSessionInfo {
     required this.studentLimit,
     required this.seconds,
     this.joined,
+    this.pace = ClassPace.host,
   });
 
   factory ClassSessionInfo.fromJson(Map<String, Object?> j) => ClassSessionInfo(
@@ -438,6 +463,7 @@ class ClassSessionInfo {
     studentLimit: _int(j['student_limit']),
     seconds: _int(j['seconds'], ClassQuizRules.defaultSeconds),
     joined: j['joined'] == null ? null : _int(j['joined']),
+    pace: ClassPace.parse(j['pace']),
   );
 
   final String id;
@@ -450,6 +476,11 @@ class ClassSessionInfo {
   final int studentLimit;
   final int seconds;
   final int? joined;
+
+  /// Eski serverda maydon yo‘q — [ClassPace.host].
+  final ClassPace pace;
+
+  bool get isSelfPaced => pace == ClassPace.self;
 }
 
 @immutable
@@ -602,6 +633,22 @@ class ClassLeaderRow {
   final int rank;
 }
 
+/// Self rejimda talabaning o‘z bosqichi: [ready] — birinchi savolni hali
+/// ochmagan; [question] — o‘z savoli (ochiq yoki yopilgan); [done] — o‘z
+/// savollarini tugatgan.
+enum ClassSelfStage {
+  ready,
+  question,
+  done;
+
+  static ClassSelfStage? parse(Object? v) => switch (v) {
+    'ready' => ready,
+    'question' => question,
+    'done' => done,
+    _ => null,
+  };
+}
+
 /// Talaba uchun sessiya holati (polling natijasi).
 @immutable
 class ClassStudentState {
@@ -619,6 +666,9 @@ class ClassStudentState {
     this.myOption,
     this.reveal,
     this.leaderboard = const [],
+    this.selfStage,
+    this.position = 0,
+    this.answeredCount = 0,
   });
 
   factory ClassStudentState.fromJson(Map<String, Object?> j) {
@@ -644,8 +694,20 @@ class ClassStudentState {
         for (final r in _list(j['leaderboard']))
           ClassLeaderRow.fromJson(_map(r)),
       ],
+      selfStage: ClassSelfStage.parse(j['stage']),
+      position: _int(j['my_position']),
+      answeredCount: _int(j['answered']),
     );
   }
+
+  /// Faqat self rejimda (ketayotgan sessiya): talabaning o‘z bosqichi.
+  final ClassSelfStage? selfStage;
+
+  /// Self rejim: o‘z tartibimdagi hozirgi savol o‘rni (0 dan).
+  final int position;
+
+  /// Self rejim: shu paytgacha berilgan javoblar soni.
+  final int answeredCount;
 
   final ClassSessionInfo session;
   final bool kicked;
@@ -697,6 +759,7 @@ class ClassParticipant {
     required this.id,
     required this.nickname,
     this.answered = false,
+    this.progress,
   });
 
   /// `answered` — server qo‘shgan maydon (joriy savolga javob berdimi); eski
@@ -705,11 +768,43 @@ class ClassParticipant {
     id: _str(j['id']),
     nickname: _str(j['nickname']),
     answered: j['answered'] == true,
+    progress: j.containsKey('position') ? ClassSelfProgress.fromJson(j) : null,
   );
 
   final String id;
   final String nickname;
   final bool answered;
+
+  /// Faqat self rejimda (ustoz doskasi): talabaning progressi.
+  final ClassSelfProgress? progress;
+}
+
+/// Self rejimda ustozga ko‘rinadigan talaba progressi (faqat sonlar; qaysi
+/// variant tanlangani yo‘q).
+@immutable
+class ClassSelfProgress {
+  const ClassSelfProgress({
+    required this.position,
+    required this.answered,
+    required this.correct,
+    required this.done,
+  });
+
+  factory ClassSelfProgress.fromJson(Map<String, Object?> j) =>
+      ClassSelfProgress(
+        position: _int(j['position']),
+        answered: _int(j['answered_count']),
+        correct: _int(j['correct_count']),
+        done: j['done'] == true,
+      );
+
+  /// Nechanchi savolda (1 dan; 0 — hali boshlamagan).
+  final int position;
+  final int answered;
+  final int correct;
+  final bool done;
+
+  bool get started => position > 0;
 }
 
 /// Ustozning joriy savol bo‘yicha jonli ko‘rinishi (to‘g‘ri javob bilan).
@@ -838,6 +933,8 @@ class ClassDashboard {
     required this.reports,
     this.current,
     this.revealed = false,
+    this.selfOpened = 0,
+    this.selfDone = 0,
   });
 
   /// `revealed` — server (private.class_revealed): vaqt tugab, javob qabul
@@ -865,7 +962,13 @@ class ClassDashboard {
     current: j['current'] is Map
         ? ClassCurrentQuestion.fromJson(_map(j['current']))
         : null,
+    selfOpened: _int(_map(j['self'])['opened']),
+    selfDone: _int(_map(j['self'])['done']),
   );
+
+  /// Self rejim: birinchi savolni ochgan / hammasini tugatgan talabalar soni.
+  final int selfOpened;
+  final int selfDone;
 
   final ClassSessionInfo session;
   final ClassPhase phase;

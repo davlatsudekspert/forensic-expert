@@ -46,6 +46,7 @@ String classFailureText(AppLocalizations l, ClassFailure f) => switch (f) {
   ClassFailure.alreadyAnswered => l.classErrAlreadyAnswered,
   ClassFailure.badOption => l.classErrServer,
   ClassFailure.notFinished => l.classErrNotFinished,
+  ClassFailure.notClosed => l.classErrNotClosed,
   ClassFailure.badReason => l.classErrBadReason,
 };
 

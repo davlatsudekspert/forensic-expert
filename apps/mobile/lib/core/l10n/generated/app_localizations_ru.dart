@@ -11623,4 +11623,94 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get lessonAutoResume => 'Продолжить';
+
+  @override
+  String get classPaceSection => 'Режим теста';
+
+  @override
+  String get classPaceHost => 'Ведёт преподаватель';
+
+  @override
+  String get classPaceHostHint => 'Все на одном вопросе, время общее.';
+
+  @override
+  String get classPaceSelf => 'Каждый в своём темпе';
+
+  @override
+  String get classPaceSelfHint =>
+      'У каждого студента время идёт с его собственного старта.';
+
+  @override
+  String classPaceLine(String mode) {
+    return 'Режим: $mode';
+  }
+
+  @override
+  String get classLobbySelfHint =>
+      'Каждый работает в своём темпе: после старта преподавателя вы сами открываете вопросы.';
+
+  @override
+  String get classErrNotClosed =>
+      'Сначала ответьте на этот вопрос или дождитесь конца времени.';
+
+  @override
+  String get classSelfReadyTitle => 'Готовы?';
+
+  @override
+  String classSelfReadyBody(int seconds) {
+    return '$seconds секунд на вопрос. Время идёт с момента, когда вы открыли вопрос, дальше вы переходите сами.';
+  }
+
+  @override
+  String get classSelfStart => 'Начать';
+
+  @override
+  String get classSelfNext => 'Следующий вопрос';
+
+  @override
+  String get classSelfFinish => 'Завершить';
+
+  @override
+  String get classAnswerFlowHint =>
+      'Выберите ответ и нажмите «Подтвердить». К следующему вопросу вы переходите сами.';
+
+  @override
+  String get grpScoreReadyNote => 'Ваш балл готов.';
+
+  @override
+  String get classSelfResultWait =>
+      'Прочитайте результат и переходите дальше, когда будете готовы.';
+
+  @override
+  String get classSelfDoneTitle => 'Вы ответили на все вопросы';
+
+  @override
+  String get classSelfDoneBody =>
+      'Ваш результат ниже. Общий рейтинг появится, когда преподаватель завершит тест.';
+
+  @override
+  String get classBoardTitle => 'Прогресс студентов';
+
+  @override
+  String get classBoardHint =>
+      'Каждый работает в своём темпе. Завершите тест, когда будете готовы.';
+
+  @override
+  String classBoardSummary(int opened, int done, int joined) {
+    return 'Начали: $opened · закончили: $done · всего: $joined';
+  }
+
+  @override
+  String get classBoardAllDone => 'Все закончили — можно завершать тест.';
+
+  @override
+  String get classBoardNotStarted => 'Ещё не начал';
+
+  @override
+  String get classBoardDone => 'Закончил';
+
+  @override
+  String classBoardAnsweredCorrect(int correct, int answered) {
+    return '$correct/$answered верно';
+  }
 }
