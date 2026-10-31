@@ -43,3 +43,7 @@ o'tish. Uchtasini bir vaqtda boshlash sifatni tushiradi.
 - **3D anatomiya ko‘rinishi (egasi taklifi, 2026-10-17):** ochiq «Human Atlas» (BodyParts3D asosida, GitHub) kabi 3D atlas. Hozir boshlanmaydi. Avval: (1) litsenziya (BodyParts3D CC BY-SA — nomlash va share-alike talabi tekshiriladi), (2) hajm (2 234 qism — faqat kerakli to‘plam), (3) Flutter 3D ko‘rish usuli va past qurilmada tezlik, (4) oflayn. Foydasi: sud-tibbiy jarohat joyi va a’zolar uchun ustoz/talaba rejimi. Qaror egasida.
 
 - **Serverdagi Pro qoldiqlari (2026-10-17):** `admin_set_access`, `account_access`/tier ustuni, `admin_users(p_tier)`, `admin_stats().tiers` va xarid-tekshiruv edge funksiyalari ilova tomonidan chaqirilmaydi. Egasi tasdig‘idan keyin alohida migratsiya bilan olib tashlanadi (production DB o‘zgarishi — tasdiq kerak).
+
+## 2026-10-31 — ustozlar so‘rovi: masofaviy dars (Variant 1, keyinga)
+- Guruh kartasida «Onlayn dars» havolasi (Zoom / Google Meet / Telegram): ustoz havolani qo‘yadi, talaba bosadi va tashqi ilovada ochiladi. Ilova video yozmaydi/uzatmaydi → kamera/mikrofon ruxsati va yangi do‘kon deklaratsiyasi kerak emas.
+- Egasi qarori (2026-10-31): Variant 1 qilinadi, lekin keyinroq (qiyin bo‘lsa ham keyinga qoldiriladi). Variant 2 (ilova ichida video: Jitsi/LiveKit/Agora/Zoom SDK) — ommaviy chiqarishdan keyin alohida loyiha; Play (Data safety, foreground service, UGC) va Apple (App Privacy, Guideline 1.2, ReplayKit) bandlari rasmiy sahifalardan qayta tekshiriladi.
