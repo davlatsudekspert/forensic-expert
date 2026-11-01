@@ -75,9 +75,8 @@ void main() {
     });
     // ------------------------------------------- USTOZ PANELI (premium dizayn)
     // Demo sinf serveri (ma’lumot shu qurilmada; demo foydalanuvchi ustoz).
-    await qa.step('USTOZ paneli: Asosiydan 1 bosish', (s) async {
-      await open(Routes.home);
-      await qa.tapFinder(find.byKey(const Key('home.teacher')));
+    await qa.step('USTOZ paneli (ish stolidagi «Ustoz» bo‘limi)', (s) async {
+      await open(Routes.teacher);
       qa.expectText(l.teacherPanelTitle, s);
       qa.expectText(l.teacherRunTitle, s);
       qa.expectText(l.teacherResultsTitle, s);

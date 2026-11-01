@@ -68,13 +68,13 @@ k("labHubCalc", "Lab topic page section: calculation.",
 k("labHubLessonCohb", "Lab topic page: COHb lesson on the UV-1900.",
   "Determining CO (COHb) on the Shimadzu UV-1900", "Определение CO (COHb) на Shimadzu UV-1900", "Shimadzu UV-1900 spektrofotometrida CO (COHb) ni aniqlash")
 k("labHubLessonGcms", "Lab topic page: GC-MS basics lesson.",
-  "Working with GC-MS: basics", "Работа на ГХ-МС: основы", "GC-MS da ishlash usullari: asoslar")
+  "Working with GC-MS: basics", "Работа на GC-MS: основы", "GC-MS da ishlash usullari: asoslar")
 k("labHubLessonEthanol", "Lab topic page: ethanol on Kristallyuks GC lesson.",
   "Ethanol on the Kristallyuks gas chromatograph", "Этанол на газовом хроматографе «Кристаллюкс»", "«Kristallyuks» gaz xromatografida etanolni aniqlash")
 k("labHubLessonBody", "Lab topic page: lesson tile subtitle.",
   "Step-by-step procedure with pictures and a test", "Пошаговый порядок работы с иллюстрациями и тестом", "Ish tartibi rasmlar bilan, bosqichma-bosqich, test bilan")
 k("labHubGcmsScheme", "Lab topic page: GC-MS instrument schematic.",
-  "GC-MS instrument: diagram and parts", "Прибор ГХ-МС: схема и узлы", "GC-MS apparati: sxema va qismlari")
+  "GC-MS instrument: diagram and parts", "Прибор GC-MS: схема и узлы", "GC-MS apparati: sxema va qismlari")
 k("labHubGcmsSchemeBody", "Lab topic page: GC-MS schematic subtitle.",
   "Injector, column, ion source, quadrupole, detector", "Инжектор, колонка, источник ионов, квадруполь, детектор", "Injektor, kolonka, ion manbai, kvadrupol, detektor")
 k("labHubReading", "GC-MS: reading the chromatogram and mass spectrum (page title).",

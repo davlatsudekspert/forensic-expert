@@ -12508,7 +12508,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get labHubLessonCohb => 'Определение CO (COHb) на Shimadzu UV-1900';
 
   @override
-  String get labHubLessonGcms => 'Работа на ГХ-МС: основы';
+  String get labHubLessonGcms => 'Работа на GC-MS: основы';
 
   @override
   String get labHubLessonEthanol =>
@@ -12519,7 +12519,7 @@ class AppLocalizationsRu extends AppLocalizations {
       'Пошаговый порядок работы с иллюстрациями и тестом';
 
   @override
-  String get labHubGcmsScheme => 'Прибор ГХ-МС: схема и узлы';
+  String get labHubGcmsScheme => 'Прибор GC-MS: схема и узлы';
 
   @override
   String get labHubGcmsSchemeBody =>

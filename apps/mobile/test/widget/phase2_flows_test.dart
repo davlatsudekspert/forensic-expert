@@ -117,7 +117,9 @@ void main() {
       expect(c.read(userDataProvider).favorites, ['tool.lab.dilution']);
       c.read(routerProvider).go(Routes.home);
       await tester.pumpAndSettle();
-      final fav = find.byKey(const Key('home.favorites'));
+      // Mutaxassis rejimida «Tanlanganlar» ish stolida (Home’dagi qisqa
+      // ro‘yxat o‘rniga) — takrorlanmaydi.
+      final fav = find.byKey(const Key('workbench.favorites'));
       await tester.ensureVisible(fav);
       expect(
         find.descendant(of: fav, matching: find.textContaining('Dilution')),
