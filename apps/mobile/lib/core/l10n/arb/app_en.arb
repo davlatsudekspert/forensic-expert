@@ -16403,5 +16403,61 @@
         "type": "int"
       }
     }
+  },
+  "equipTitle": "Instruments and equipment",
+  "@equipTitle": {
+    "description": "Section title: laboratory and autopsy equipment."
+  },
+  "equipCardBody": "Laboratory instruments and autopsy tools: what they are and what they are used for",
+  "@equipCardBody": {
+    "description": "Workbench card subtitle for the equipment section."
+  },
+  "equipIntro": "Each card shows what the instrument is, what it is used for in forensic practice, and the source.",
+  "@equipIntro": {
+    "description": "Intro text at the top of the equipment section."
+  },
+  "equipGroupLab": "Laboratory",
+  "@equipGroupLab": {
+    "description": "Segment: laboratory instruments."
+  },
+  "equipGroupMorgue": "Autopsy",
+  "@equipGroupMorgue": {
+    "description": "Segment: autopsy (morgue) instruments."
+  },
+  "equipIllustrationNote": "Illustration (drawn with AI) — not a photo of a specific device.",
+  "@equipIllustrationNote": {
+    "description": "Honest caption under AI-drawn instrument illustrations."
+  },
+  "equipWhat": "What it is",
+  "@equipWhat": {
+    "description": "Detail section: what the instrument is."
+  },
+  "equipUse": "What it is used for",
+  "@equipUse": {
+    "description": "Detail section: what it is used for."
+  },
+  "equipCare": "Keep in mind",
+  "@equipCare": {
+    "description": "Detail section: cautions and limitations."
+  },
+  "equipRelated": "Related in the app",
+  "@equipRelated": {
+    "description": "Detail section: related topics, methods and lessons in the app."
+  },
+  "equipSources": "Sources",
+  "@equipSources": {
+    "description": "Detail section: sources."
+  },
+  "equipLesson": "Instrument lesson (slides)",
+  "@equipLesson": {
+    "description": "Related link: the instrument lesson (slides)."
+  },
+  "equipEmpty": "This section is not available yet.",
+  "@equipEmpty": {
+    "description": "Empty state when the equipment pack is unavailable."
+  },
+  "equipOpenDevice": "Instrument card",
+  "@equipOpenDevice": {
+    "description": "Lab hub tile prefix: open the instrument card."
   }
 }

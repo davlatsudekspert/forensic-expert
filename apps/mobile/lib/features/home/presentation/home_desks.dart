@@ -8,6 +8,7 @@ import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../domain/equipment/equipment.dart';
 import '../../../domain/learn/study_models.dart';
 import '../../class_quiz/presentation/teacher_panel_screen.dart'
     show watchIsTeacher;
@@ -71,6 +72,10 @@ class ExpertWorkbench extends ConsumerWidget {
           const _DeathCauseCard(),
           const SizedBox(height: FeSpace.sm),
         ],
+        EquipmentCard(
+          group: chemistry ? EquipmentGroup.lab : EquipmentGroup.morgue,
+        ),
+        const SizedBox(height: FeSpace.sm),
         _DeskGrid(items: Workbench.cardsFor(specialty)),
         const SizedBox(height: FeSpace.sm),
         // ★ Tanlanganlar — ikkala stolda ham: foydalanuvchi o‘zi belgilagan
@@ -105,6 +110,8 @@ class StudentDesk extends ConsumerWidget {
           padding: const EdgeInsets.only(bottom: FeSpace.xs),
         ),
         _DeskGrid(items: Workbench.studentCards),
+        const SizedBox(height: FeSpace.sm),
+        const EquipmentCard(group: EquipmentGroup.lab),
         if (question != null) ...[
           const SizedBox(height: FeSpace.sm),
           // Kun o‘zgarganda (kalit) javob holati yangidan boshlanadi.
@@ -780,6 +787,85 @@ class _DeathCauseCard extends StatelessWidget {
             ),
           ),
           Icon(Icons.chevron_right, color: c.onAccentContainer),
+        ],
+      ),
+    );
+  }
+}
+
+/// «Asbob-uskunalar» kartasi: 3 ta kichik illyustratsiya + sarlavha.
+/// Ekspert stolida ko‘rinishga mos bo‘lim ochiladi (Sud-kimyo → Laboratoriya,
+/// Sud-tibbiy → Morg).
+class EquipmentCard extends StatelessWidget {
+  const EquipmentCard({super.key, required this.group});
+
+  final EquipmentGroup group;
+
+  static const _lab = ['gc_ms', 'uv_vis', 'microscope'];
+  static const _morgue = ['autopsy_set', 'brain_knife', 'organ_scale'];
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final ids = group == EquipmentGroup.lab ? _lab : _morgue;
+    return FeCard(
+      key: const Key('desk.equipment'),
+      padding: const EdgeInsets.all(FeSpace.md),
+      onTap: () => context.push(Routes.equipmentGroup(group.name)),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      l.equipTitle,
+                      style: t.titleMedium?.copyWith(
+                        fontSize: 18,
+                        height: 1.25,
+                      ),
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      l.equipCardBody,
+                      style: t.bodySmall?.copyWith(color: c.textSecondary),
+                    ),
+                  ],
+                ),
+              ),
+              Icon(Icons.chevron_right, color: c.textSecondary),
+            ],
+          ),
+          const SizedBox(height: FeSpace.sm),
+          Row(
+            children: [
+              for (final (i, id) in ids.indexed) ...[
+                if (i > 0) const SizedBox(width: FeSpace.xs),
+                Expanded(
+                  child: AspectRatio(
+                    aspectRatio: 1,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(FeRadius.md),
+                      child: ColoredBox(
+                        color: const Color(0xFFF4EFE6),
+                        child: Image.asset(
+                          'assets/images/instruments/$id.webp',
+                          fit: BoxFit.cover,
+                          excludeFromSemantics: true,
+                          errorBuilder: (_, _, _) => const SizedBox.shrink(),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ],
+          ),
         ],
       ),
     );

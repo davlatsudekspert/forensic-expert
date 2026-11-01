@@ -51,6 +51,8 @@ import '../features/evidence/presentation/scientific_image.dart';
 import '../features/glossary/presentation/glossary_screens.dart';
 import '../features/guidelines/presentation/guidelines_screens.dart';
 import '../features/home/presentation/gcms_reading_screen.dart';
+import '../domain/equipment/equipment.dart';
+import '../features/equipment/presentation/equipment_screens.dart';
 import '../features/home/presentation/home_screen.dart';
 import '../features/home/presentation/lab_topic_hub.dart';
 import '../features/home/presentation/search_screen.dart';
@@ -714,6 +716,21 @@ final routerProvider = Provider<GoRouter>((ref) {
                       ),
                       null => const NotFoundScreen(),
                     },
+                  ),
+                  GoRoute(
+                    path: 'equipment',
+                    builder: (c, s) => EquipmentHubScreen(
+                      initial: s.uri.queryParameters['group'] == 'morgue'
+                          ? EquipmentGroup.morgue
+                          : EquipmentGroup.lab,
+                    ),
+                    routes: [
+                      GoRoute(
+                        path: 'item/:id',
+                        builder: (c, s) =>
+                            EquipmentDetailScreen(id: s.pathParameters['id']!),
+                      ),
+                    ],
                   ),
                   GoRoute(
                     path: 'lab-reading/gcms',

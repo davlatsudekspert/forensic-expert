@@ -12475,4 +12475,49 @@ class AppLocalizationsUz extends AppLocalizations {
   String labHubQuizScore(int correct, int total) {
     return 'To‘g‘ri: $total tadan $correct ta';
   }
+
+  @override
+  String get equipTitle => 'Asbob-uskunalar';
+
+  @override
+  String get equipCardBody =>
+      'Laboratoriya apparatlari va morg asboblari: nima ekani va nima uchun ishlatiladi';
+
+  @override
+  String get equipIntro =>
+      'Har bir kartada apparat nima ekani, ekspertiza amaliyotida nima uchun ishlatilishi va manbasi berilgan.';
+
+  @override
+  String get equipGroupLab => 'Laboratoriya';
+
+  @override
+  String get equipGroupMorgue => 'Morg';
+
+  @override
+  String get equipIllustrationNote =>
+      'Illyustratsiya (AI yordamida chizilgan) — muayyan apparatning surati emas.';
+
+  @override
+  String get equipWhat => 'Bu nima';
+
+  @override
+  String get equipUse => 'Nima uchun ishlatiladi';
+
+  @override
+  String get equipCare => 'E’tibor bering';
+
+  @override
+  String get equipRelated => 'Ilovada bog‘liq mavzular';
+
+  @override
+  String get equipSources => 'Manbalar';
+
+  @override
+  String get equipLesson => 'Apparat bo‘yicha dars (slaydlar)';
+
+  @override
+  String get equipEmpty => 'Bu bo‘lim hozircha mavjud emas.';
+
+  @override
+  String get equipOpenDevice => 'Apparat kartasi';
 }

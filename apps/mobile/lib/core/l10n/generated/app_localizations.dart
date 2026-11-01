@@ -21722,6 +21722,90 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Correct: {correct} of {total}'**
   String labHubQuizScore(int correct, int total);
+
+  /// Section title: laboratory and autopsy equipment.
+  ///
+  /// In en, this message translates to:
+  /// **'Instruments and equipment'**
+  String get equipTitle;
+
+  /// Workbench card subtitle for the equipment section.
+  ///
+  /// In en, this message translates to:
+  /// **'Laboratory instruments and autopsy tools: what they are and what they are used for'**
+  String get equipCardBody;
+
+  /// Intro text at the top of the equipment section.
+  ///
+  /// In en, this message translates to:
+  /// **'Each card shows what the instrument is, what it is used for in forensic practice, and the source.'**
+  String get equipIntro;
+
+  /// Segment: laboratory instruments.
+  ///
+  /// In en, this message translates to:
+  /// **'Laboratory'**
+  String get equipGroupLab;
+
+  /// Segment: autopsy (morgue) instruments.
+  ///
+  /// In en, this message translates to:
+  /// **'Autopsy'**
+  String get equipGroupMorgue;
+
+  /// Honest caption under AI-drawn instrument illustrations.
+  ///
+  /// In en, this message translates to:
+  /// **'Illustration (drawn with AI) — not a photo of a specific device.'**
+  String get equipIllustrationNote;
+
+  /// Detail section: what the instrument is.
+  ///
+  /// In en, this message translates to:
+  /// **'What it is'**
+  String get equipWhat;
+
+  /// Detail section: what it is used for.
+  ///
+  /// In en, this message translates to:
+  /// **'What it is used for'**
+  String get equipUse;
+
+  /// Detail section: cautions and limitations.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep in mind'**
+  String get equipCare;
+
+  /// Detail section: related topics, methods and lessons in the app.
+  ///
+  /// In en, this message translates to:
+  /// **'Related in the app'**
+  String get equipRelated;
+
+  /// Detail section: sources.
+  ///
+  /// In en, this message translates to:
+  /// **'Sources'**
+  String get equipSources;
+
+  /// Related link: the instrument lesson (slides).
+  ///
+  /// In en, this message translates to:
+  /// **'Instrument lesson (slides)'**
+  String get equipLesson;
+
+  /// Empty state when the equipment pack is unavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'This section is not available yet.'**
+  String get equipEmpty;
+
+  /// Lab hub tile prefix: open the instrument card.
+  ///
+  /// In en, this message translates to:
+  /// **'Instrument card'**
+  String get equipOpenDevice;
 }
 
 class _AppLocalizationsDelegate

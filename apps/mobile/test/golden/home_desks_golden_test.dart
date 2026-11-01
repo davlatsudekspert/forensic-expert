@@ -3,10 +3,12 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:forensic_expert/app/equipment.dart';
 import 'package:forensic_expert/app/guidelines.dart';
 import 'package:forensic_expert/app/professional.dart';
 import 'package:forensic_expert/app/study.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
+import 'package:forensic_expert/domain/equipment/equipment.dart';
 import 'package:forensic_expert/domain/guidelines/guideline_models.dart';
 import 'package:forensic_expert/domain/learn/study_models.dart';
 import 'package:forensic_expert/domain/professional/professional_models.dart';
@@ -61,6 +63,12 @@ void main() {
         workbenchClockProvider.overrideWithValue(() => fixedNow),
         studyCatalogProvider.overrideWithValue(catalog),
         guidelinesProvider.overrideWith((ref) => guidelines),
+        equipmentProvider.overrideWith(
+          (ref) => EquipmentBundle.fromJson(
+            jsonDecode(File(equipmentAsset).readAsStringSync())
+                as Map<String, dynamic>,
+          ),
+        ),
       ],
     );
     await settleImages(tester);
@@ -140,6 +148,47 @@ void main() {
       mode: UserMode.professional,
       location: '/home/lab-reading/gcms',
       size: const Size(390, 2600),
+    );
+  });
+
+  testWidgets('equipment_hub_lab_uz', (t) async {
+    await shot(
+      t,
+      name: 'equipment_hub_lab_uz',
+      mode: UserMode.professional,
+      location: '/home/equipment',
+      size: const Size(390, 2000),
+    );
+  });
+
+  testWidgets('equipment_hub_morgue_uz', (t) async {
+    await shot(
+      t,
+      name: 'equipment_hub_morgue_uz',
+      mode: UserMode.professional,
+      location: '/home/equipment?group=morgue',
+      size: const Size(390, 1600),
+    );
+  });
+
+  testWidgets('equipment_detail_gcms_uz', (t) async {
+    await shot(
+      t,
+      name: 'equipment_detail_gcms_uz',
+      mode: UserMode.professional,
+      location: '/home/equipment/item/gc_ms',
+      size: const Size(390, 2400),
+    );
+  });
+
+  testWidgets('equipment_detail_knife_uz_dark', (t) async {
+    await shot(
+      t,
+      name: 'equipment_detail_knife_uz_dark',
+      mode: UserMode.professional,
+      theme: ThemeMode.dark,
+      location: '/home/equipment/item/section_knife',
+      size: const Size(390, 1800),
     );
   });
 }

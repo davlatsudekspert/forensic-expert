@@ -12543,4 +12543,49 @@ class AppLocalizationsEn extends AppLocalizations {
   String labHubQuizScore(int correct, int total) {
     return 'Correct: $correct of $total';
   }
+
+  @override
+  String get equipTitle => 'Instruments and equipment';
+
+  @override
+  String get equipCardBody =>
+      'Laboratory instruments and autopsy tools: what they are and what they are used for';
+
+  @override
+  String get equipIntro =>
+      'Each card shows what the instrument is, what it is used for in forensic practice, and the source.';
+
+  @override
+  String get equipGroupLab => 'Laboratory';
+
+  @override
+  String get equipGroupMorgue => 'Autopsy';
+
+  @override
+  String get equipIllustrationNote =>
+      'Illustration (drawn with AI) — not a photo of a specific device.';
+
+  @override
+  String get equipWhat => 'What it is';
+
+  @override
+  String get equipUse => 'What it is used for';
+
+  @override
+  String get equipCare => 'Keep in mind';
+
+  @override
+  String get equipRelated => 'Related in the app';
+
+  @override
+  String get equipSources => 'Sources';
+
+  @override
+  String get equipLesson => 'Instrument lesson (slides)';
+
+  @override
+  String get equipEmpty => 'This section is not available yet.';
+
+  @override
+  String get equipOpenDevice => 'Instrument card';
 }

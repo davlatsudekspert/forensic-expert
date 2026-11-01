@@ -28,6 +28,12 @@ abstract final class Routes {
   /// «Laboratoriya usullari» mavzu sahifasi: `spectro` | `chromatography`.
   static String labHub(String topic) => '/home/lab/$topic';
   static const gcmsReading = '/home/lab-reading/gcms';
+
+  /// «Asbob-uskunalar»: Laboratoriya / Morg (`?group=morgue`).
+  static const equipment = '/home/equipment';
+  static String equipmentGroup(String group) => '/home/equipment?group=$group';
+  static String equipmentItem(String id) =>
+      '/home/equipment/item/${Uri.encodeComponent(id)}';
   static String area(String area) => '/home/area/$area';
   static const forensicMedicine = '/home/area/forensicMedicine';
   static const biochemistry = '/home/area/biochemistry';

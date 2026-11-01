@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/equipment.dart';
 import '../../../app/guidelines.dart' show guidelinesProvider;
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
@@ -11,6 +12,7 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
+import '../../../domain/equipment/equipment.dart';
 import '../../../domain/guidelines/guideline_models.dart';
 import '../../tools/tool_strings.dart';
 
@@ -166,6 +168,8 @@ class LabTopicHubScreen extends ConsumerWidget {
     final bundle = ref.watch(guidelinesProvider).value ?? GuidelineBundle.empty;
     final spectro = topic == LabTopic.spectro;
     final death = topic == LabTopic.causeOfDeath;
+    final equipment =
+        ref.watch(equipmentProvider).value ?? EquipmentBundle.empty;
 
     List<_HubTile> guides(List<String> ids) => [
       for (final id in ids)
@@ -185,6 +189,17 @@ class LabTopicHubScreen extends ConsumerWidget {
             e.name.resolve(lang),
             null,
             Routes.knowledgeEntry(id),
+          ),
+    ];
+
+    List<_HubTile> devices(List<String> ids) => [
+      for (final id in ids)
+        if (equipment.byId(id) case final d?)
+          _HubTile(
+            Icons.precision_manufacturing_outlined,
+            d.name,
+            l.equipOpenDevice,
+            Routes.equipmentItem(id),
           ),
     ];
 
@@ -257,9 +272,18 @@ class LabTopicHubScreen extends ConsumerWidget {
         ? <(String, List<_HubTile>)>[
             for (final (key, k, g, t) in _deathGroups)
               (_groupTitle(l, key), [...topics(k), ...guides(g), ...tools(t)]),
+            (l.equipTitle, devices(const ['autopsy_set', 'organ_scale'])),
           ]
         : <(String, List<_HubTile>)>[
             (l.labHubPractice, lessons),
+            (
+              l.equipTitle,
+              devices(
+                spectro
+                    ? const ['uv_vis']
+                    : const ['gc_ms', 'lc_msms', 'hplc', 'tlc'],
+              ),
+            ),
             (l.labHubGuides, guides(spectro ? _spectroGuides : _chromGuides)),
             (
               l.labHubMethods,

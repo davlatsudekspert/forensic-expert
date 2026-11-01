@@ -12587,4 +12587,49 @@ class AppLocalizationsRu extends AppLocalizations {
   String labHubQuizScore(int correct, int total) {
     return 'Верно: $correct из $total';
   }
+
+  @override
+  String get equipTitle => 'Приборы и инструменты';
+
+  @override
+  String get equipCardBody =>
+      'Лабораторные приборы и секционные инструменты: что это и для чего';
+
+  @override
+  String get equipIntro =>
+      'В каждой карточке — что это за прибор, для чего он нужен в экспертной практике и источник.';
+
+  @override
+  String get equipGroupLab => 'Лаборатория';
+
+  @override
+  String get equipGroupMorgue => 'Секционная';
+
+  @override
+  String get equipIllustrationNote =>
+      'Иллюстрация (нарисована с помощью ИИ) — не фотография конкретного прибора.';
+
+  @override
+  String get equipWhat => 'Что это';
+
+  @override
+  String get equipUse => 'Для чего применяется';
+
+  @override
+  String get equipCare => 'Обратите внимание';
+
+  @override
+  String get equipRelated => 'Связанное в приложении';
+
+  @override
+  String get equipSources => 'Источники';
+
+  @override
+  String get equipLesson => 'Урок по прибору (слайды)';
+
+  @override
+  String get equipEmpty => 'Раздел пока недоступен.';
+
+  @override
+  String get equipOpenDevice => 'Карточка прибора';
 }
