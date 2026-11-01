@@ -152,3 +152,8 @@ topilmadi — Baizoldanov. **Egasidan:** Baizoldanov fayli; katta PDF’larni �
 3. **Apparat rasmlari:** Shimadzu (info@shimadzu.eu) va Meta-Xrom (m_chrom@mari-el.ru) ga xat yuborilgan; 14 kun javob bo‘lmasa takrorlash; javob kelsa rasmlarni kredit bilan qo‘shish.
 4. Egasi tomonida: Apple Resolution Center javobi, TestFlight’da ko‘rish, ilmiy muharrir (shubhali joylar `slides-out/verify/`).
 5. Admin panelga dars/guruh testi statistikasi (hali yo‘q) — egasi xohlasa.
+
+## Build 43 (egasi qarori, 2026-11-01: «A»)
+- Spektrofotometr sahifasiga COHb/Hb yutilish cho‘qqilari sxemasi (Hb 557 nm; COHb 541 va 571 nm; o‘lchash 538/550 nm — Yuldashev, Toksikologik kimyo, 84-bet).
+- GC-MS apparati sahifasiga «Natijani o‘qish (cho‘qqilar)» havolasi (`Routes.gcmsReading`).
+- `app_config.min_build = 42` — egasi TestFlight 42 ni tasdiqlagach.
