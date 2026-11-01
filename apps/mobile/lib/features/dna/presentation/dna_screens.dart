@@ -218,6 +218,32 @@ class DnaTopicScreen extends ConsumerWidget {
                         pending,
                         const SizedBox(height: FeSpace.sm),
                       ],
+                      for (final g in tp.images) ...[
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(FeRadius.md),
+                          child: ConstrainedBox(
+                            constraints: const BoxConstraints(maxHeight: 320),
+                            child: Image.asset(
+                              g.image,
+                              fit: BoxFit.contain,
+                              semanticLabel: _u(g.caption),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: FeSpace.xxs),
+                        Text(
+                          _u(g.caption),
+                          style: Theme.of(context).textTheme.bodySmall,
+                        ),
+                        const SizedBox(height: FeSpace.sm),
+                      ],
+                      if (tp.images.isNotEmpty) ...[
+                        Text(
+                          l.equipIllustrationNote,
+                          style: Theme.of(context).textTheme.labelSmall,
+                        ),
+                        const SizedBox(height: FeSpace.sm),
+                      ],
                       for (final (i, s) in tp.statements.indexed)
                         _StatementCard(
                           key: Key('dna.statement.$id.$i'),

@@ -1,0 +1,837 @@
+{
+ "source_lang": "uz",
+ "compiled": "2026-11-01",
+ "sources": [
+  {
+   "id": "nist8351",
+   "authors": "Butler JM, Iyer H, Press R, Taylor MK, Vallone PM, Willis S",
+   "title": "DNA Mixture Interpretation: A NIST Scientific Foundation Review (NIST IR 8351)",
+   "year": 2024,
+   "doi": "10.6028/NIST.IR.8351",
+   "url": "https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8351.pdf"
+  },
+  {
+   "id": "enfsi_bpm03",
+   "authors": "ENFSI DNA Working Group",
+   "title": "Best Practice Manual for Human Forensic Biology and DNA Profiling (ENFSI-DNA-BPM-03, version 01)",
+   "year": 2022,
+   "doi": "",
+   "url": "https://enfsi.eu/wp-content/uploads/2022/12/ENFSI-DNA-BPM-03.pdf"
+  },
+  {
+   "id": "enfsi_gdl003",
+   "authors": "ENFSI DNA Working Group",
+   "title": "Guideline for DNA Contamination Minimization in DNA Laboratories (DNA-GDL-003)",
+   "year": 2023,
+   "doi": "",
+   "url": "https://enfsi.eu/wp-content/uploads/2023/10/ENFSI-GUIDELINE-FOR-DNA-CONTAMINATION-MINIMIZATION-IN-DNA-LABORATORIES.pdf"
+  },
+  {
+   "id": "enfsi_gdl002",
+   "authors": "ENFSI DNA Working Group",
+   "title": "Guideline for Internal Validation / Verification of Various Aspects of the DNA Profiling Process (DNA-GDL-002)",
+   "year": 2023,
+   "doi": "",
+   "url": "https://enfsi.eu/wp-content/uploads/2024/02/ENFSI-Validation-Guideline-04012024.pdf"
+  },
+  {
+   "id": "swgdam_pg2025",
+   "authors": "Scientific Working Group on DNA Analysis Methods (SWGDAM)",
+   "title": "SWGDAM Guidelines for the Use of Probabilistic Genotyping with Autosomal STR Typing Results",
+   "year": 2025,
+   "doi": "",
+   "url": "https://www.swgdam.org/_files/ugd/4344b0_8fabde7c6aac46e4825d2468aa6763cc.pdf"
+  },
+  {
+   "id": "nistir7928",
+   "authors": "Technical Working Group on Biological Evidence Preservation (Ballou S, Kiley W, Stolorow M, Latta J, Taylor M va boshqalar)",
+   "title": "The Biological Evidence Preservation Handbook: Best Practices for Evidence Handlers (NISTIR 7928)",
+   "year": 2013,
+   "doi": "10.6028/NIST.IR.7928",
+   "url": "https://nvlpubs.nist.gov/nistpubs/ir/2013/NIST.IR.7928.pdf"
+  },
+  {
+   "id": "interpol_dvi2023",
+   "authors": "INTERPOL",
+   "title": "Disaster Victim Identification Guide (version 2023, final)",
+   "year": 2023,
+   "doi": "",
+   "url": "https://www.interpol.int/content/download/589/file/18Y1344%20E%20DVI_Guide.pdf"
+  },
+  {
+   "id": "gill2012_dropout",
+   "authors": "Gill P, Gusmão L, Haned H, Mayr WR, Morling N, Parson W va boshqalar",
+   "title": "DNA commission of the International Society of Forensic Genetics: Recommendations on the evaluation of STR typing results that may include drop-out and/or drop-in using probabilistic methods",
+   "year": 2012,
+   "doi": "10.1016/j.fsigen.2012.06.002",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4689582/"
+  },
+  {
+   "id": "roewer2020_ystr",
+   "authors": "Roewer L va boshqalar (ISFG DNA komissiyasi)",
+   "title": "DNA commission of the International Society of Forensic Genetics (ISFG): Recommendations on the interpretation of Y-STR results in forensic analysis",
+   "year": 2020,
+   "doi": "10.1016/j.fsigen.2020.102308",
+   "url": "https://doi.org/10.1016/j.fsigen.2020.102308"
+  },
+  {
+   "id": "prinz2007_dvi",
+   "authors": "Prinz M va boshqalar (ISFG DNA komissiyasi)",
+   "title": "DNA Commission of the International Society for Forensic Genetics (ISFG): recommendations regarding the role of forensic genetics for disaster victim identification (DVI)",
+   "year": 2007,
+   "doi": "10.1016/j.fsigen.2006.10.003",
+   "url": "https://doi.org/10.1016/j.fsigen.2006.10.003"
+  },
+  {
+   "id": "gjertson2007_pat",
+   "authors": "Gjertson DW va boshqalar (ISFG Otalik komissiyasi)",
+   "title": "ISFG: Recommendations on biostatistics in paternity testing",
+   "year": 2007,
+   "doi": "10.1016/j.fsigen.2007.06.006",
+   "url": "https://doi.org/10.1016/j.fsigen.2007.06.006"
+  },
+  {
+   "id": "gutierrez2025",
+   "authors": "Gutiérrez-Hurtado IA, García-Acéves ME, Puga-Carrillo Y, Guardado-Estrada M, Becerra-Loaiza DS, Carrillo-Rodríguez VD va boshqalar",
+   "title": "Past, Present and Future Perspectives of Forensic Genetics",
+   "year": 2025,
+   "doi": "10.3390/biom15050713",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12109078/"
+  },
+  {
+   "id": "grover2017",
+   "authors": "Grover R, Jiang H, Turingan RS, French JL, Tan E, Selden RF",
+   "title": "FlexPlex27—highly multiplexed rapid DNA identification for law enforcement, kinship, and military applications",
+   "year": 2017,
+   "doi": "10.1007/s00414-017-1567-9",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5635076/"
+  },
+  {
+   "id": "jager2024",
+   "authors": "Jäger R",
+   "title": "Genomic Multicopy Loci Targeted by Current Forensic Quantitative PCR Assays",
+   "year": 2024,
+   "doi": "10.3390/genes15101299",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11507060/"
+  },
+  {
+   "id": "caine2026",
+   "authors": "Cainé L, Henriques M, Rohovska A, Sousa B, Afonso Costa H, Correia Dias H va boshqalar",
+   "title": "Genetic Identification of Human Skeletal Remains in Forensic Context: A Review",
+   "year": 2026,
+   "doi": "10.3390/genes17040492",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13116297/"
+  },
+  {
+   "id": "pajnic2025_degraded",
+   "authors": "Zupanič Pajnič I",
+   "title": "Analysis of Human Degraded DNA in Forensic Genetics",
+   "year": 2025,
+   "doi": "10.3390/genes16111375",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12652486/"
+  },
+  {
+   "id": "pajnic2026_str",
+   "authors": "Zupanič Pajnič I",
+   "title": "Autosomal STR Markers for Forensic Genetics: Applications, Challenges, and Future Directions",
+   "year": 2026,
+   "doi": "10.3390/genes17030285",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13025442/"
+  },
+  {
+   "id": "tozzo2022",
+   "authors": "Tozzo P, Mazzobel E, Marcante B, Delicati A, Caenazzo L",
+   "title": "Touch DNA Sampling Methods: Efficacy Evaluation and Systematic Review",
+   "year": 2022,
+   "doi": "10.3390/ijms232415541",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9779423/"
+  },
+  {
+   "id": "rayimoglu2025",
+   "authors": "Rayimoglu G, Yonar FC, Anılanmert B",
+   "title": "From One Strand Dyed/Undyed Hair With/Without Root to Fast and Successful STR Profiling and Evaluation With Principal Component Analysis",
+   "year": 2025,
+   "doi": "10.1002/elps.8142",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12514424/"
+  },
+  {
+   "id": "soldati2023",
+   "authors": "Soldati G, Turrina S, Saccardo C, Ausania F, De Leo D",
+   "title": "Internal validation study to assess the SeqStudio for human identification's performance",
+   "year": 2023,
+   "doi": "10.1007/s00414-023-03016-y",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10247830/"
+  }
+ ],
+ "topics": [
+  {
+   "id": "dna_basics",
+   "title": "DNK tahlilining asoslari: STR, autosomal, Y-STR, mtDNK, asosiy lokuslar",
+   "images": [],
+   "statements": [
+    {
+     "uz": "STR (qisqa tandem takrorlar) — DNK ketma-ketligining qisqa takrorlanuvchi bo‘lagi bo‘lib, takrorlar soni odamdan odamga farq qiladi. Aynan shu o‘zgaruvchanlik DNK namunasini muayyan shaxs bilan taqqoslash imkonini beradi.",
+     "quote": "The number of repeats at each STR marker varies from person to person.",
+     "source_id": "nist8351",
+     "locator": "§2.1.1 DNA Basics, p. 33"
+    },
+    {
+     "uz": "Sud-tibbiy DNK profili genlar orasidagi, oqsil kodlamaydigan hududlardan tanlangan lokuslarga asoslanadi. Shu sababli bunday profil tashqi belgilar yoki kasallikka moyillik haqida ma’lumot bermaydi deb kutiladi.",
+     "quote": "results from forensic DNA profiles are not expected to contain information on physical traits or susceptibility to genetic diseases",
+     "source_id": "nist8351",
+     "locator": "§2.1.1 DNA Basics, pp. 32–33"
+    },
+    {
+     "uz": "Odam diploid: har bir autosomaning ikki nusxasi bor, har bir lokusda bir allel onadan, ikkinchisi otadan keladi. Bir xil allellar juftligi gomozigota, farq qiluvchilari geterozigota deb ataladi.",
+     "quote": "Humans are diploid, i.e., they possess two copies of each non-sex-determining chromosome (autosome)",
+     "source_id": "nist8351",
+     "locator": "§2.1.1 DNA Basics, p. 33"
+    },
+    {
+     "uz": "Y-xromosoma va mitoxondrial DNK (mtDNK) markerlari «chiziqli» (lineage) meros qiladi: ular odatda ota yoki ona avlodlaridan o‘zgarmasdan o‘tadi, faqat kamdan-kam mutatsiya bo‘ladi. Shuning uchun bu markerlar yaqin qarindoshlarda umumiy bo‘ladi.",
+     "quote": "Lineage markers, such those found on Y-chromosomes and mitochondrial DNA, typically pass from parent to offspring unchanged although an occasional mutation may occur",
+     "source_id": "nist8351",
+     "locator": "Principle 4, p. 58 (asl matndagi «such those» — manbadagi yozuv)"
+    },
+    {
+     "uz": "Y-STR lokuslari bir-biri bilan bog‘liq (birga meros bo‘ladi), shu sababli Y-STR haplotipini autosomal STR kabi mustaqil lokuslar ko‘paytmasi (product rule) bilan baholab bo‘lmaydi; haplotip chastotasi va qarindoshlik tuzilmasi alohida hisobga olinadi.",
+     "quote": "This precludes the treatment of Y-STR loci as independently inherited variables and the application of the product rule.",
+     "source_id": "roewer2020_ystr",
+     "locator": "Abstract (faqat annotatsiya o‘qilgan)"
+    },
+    {
+     "uz": "mtDNK aylana shaklidagi, ona chizig‘i bo‘yicha meros bo‘ladigan genom; har bir hujayrada yuzlab–minglab nusxada bo‘ladi. Shu sababli u suyak, tish va soch tanasidan ham ajratilishi mumkin — yumshoq to‘qima kam yoki juda buzilgan holatlarda foydali.",
+     "quote": "it can be extracted from teeth, bones, and hair shafts, which can be useful in forensic scenarios where soft tissue samples may be scarce",
+     "source_id": "gutierrez2025",
+     "locator": "§3.4 Mitochondrial DNA Polymorphisms"
+    },
+    {
+     "uz": "mtDNK tahlilining chegarasi: mtDNK profillari yadro DNKsi profillari kabi shaxsni ajratish kuchiga ega emas. Shuning uchun mtDNK mosligi «shaxs aniqlandi» degani emas, balki ona chizig‘idagi mosliklikdir.",
+     "quote": "However, mtDNA profiles lack the identification power of nuclear DNA profiles",
+     "source_id": "rayimoglu2025",
+     "locator": "Introduction, 3-4 abzas"
+    },
+    {
+     "uz": "AQShdagi CODIS tizimining dastlabki yadro to‘plami 13 ta STR lokusdan iborat edi (1996-yildan loyiha).",
+     "quote": "selected the following 13 STR loci: CSF1PO, FGA, TH01, TPOX, VWA, D3S1358, D5S818, D7S820, D8S1179, D13S317, D16S539, D18S51, and D21S11",
+     "source_id": "gutierrez2025",
+     "locator": "§3.1 STRs: The Gold Standard Markers in Forensic Genetics"
+    },
+    {
+     "uz": "FBI CODIS yadro lokuslarini 13 tadan 20 taga kengaytirishni e’lon qilgan; maqsad — tasodifiy mos kelishlar ehtimolini kamaytirish va xalqaro bazalar bilan muvofiqlikni oshirish. Ayni paytda ko‘pchilik inson identifikatsiyasi to‘plamlari kamida 20 ta autosomal STR lokusni qamrab oladi (20 ta lokusning to‘liq ro‘yxati manbalardan o‘qilmadi — not_found).",
+     "quote": "the FBI has announced the expansion of the US Combined DNA Index System (CODIS) core loci from 13 to 20, with a goal of reducing the likelihood of adventitious matches",
+     "source_id": "grover2017",
+     "locator": "Introduction, 2-abzas"
+    },
+    {
+     "uz": "Yevropada milliy DNK bazalari va Yevropa/Interpol almashinuvi uchun 12 ta lokusdan iborat Yevropa standart to‘plami (ESS) tavsiya etiladi; ko‘p davlatlar esa CODIS yadro lokuslari kabi kengroq to‘plamlarni qo‘llaydi.",
+     "quote": "These are the 12 ESS markers ESS Loci: D3S1358, VWA, D8S1179, D21S11, D18S51, HUMTH01, FGA, D1S1656, D2S441, D10S1248, D12S391, D22S1045",
+     "source_id": "enfsi_bpm03",
+     "locator": "§4.3.4 International Standards – ESS Loci, p. 13"
+    }
+   ]
+  },
+  {
+   "id": "samples",
+   "title": "Biologik namunalar: olish, qadoqlash, saqlash, nazorat zanjiri",
+   "images": [
+    {
+     "image": "dna_sample_kit",
+     "caption": "Biologik namunalarni olish to‘plami: steril tamponlar, qog‘oz konvert, qo‘lqop, niqob, muhr tasmasi."
+    },
+    {
+     "image": "dna_bone_tooth",
+     "caption": "Suyak va tishdan namuna olish: steril idish, burg‘ulash moslamasi, kukun uchun probirka."
+    }
+   ],
+   "statements": [
+    {
+     "uz": "Teginish (contact/touch) izlarida hujayralar soni odatda juda kam (taxminan o‘nlab hujayra), shuning uchun ularda allel signali yo‘qolish ehtimoli ko‘rinadigan qon yoki sperma dog‘lariga nisbatan yuqori.",
+     "quote": "which typically have a relatively small quantity of biological material deposited (with perhaps tens of cells), are more likely to exhibit loss of allelic signal compared to visible blood or semen stains",
+     "source_id": "nist8351",
+     "locator": "§2.1.1 DNA Basics, p. 34"
+    },
+    {
+     "uz": "«Touch DNA» — odamdan buyumga teginish orqali o‘tgan DNK. Uning manbasi (teri hujayralari, so‘lak, ter va boshqalar) haqida ilmiy bahs davom etadi.",
+     "quote": "“Touch DNA” can be defined as DNA transferred from a person to an object via contact with the object itself.",
+     "source_id": "tozzo2022",
+     "locator": "§1 Introduction, 2-abzas"
+    },
+    {
+     "uz": "Teginish izlarini olishda bitta namlangan surtma (swab) samarali birinchi bosqich usuli sifatida topilgan; ikki marta surtish natijani oshirmagan. Boshqa usullar (lenta, qirqib olish) oldindan o‘ylab tanlanishi kerak.",
+     "quote": "While single-swabbing appears more efficient than alternative methods, double-swabbing does not improve touch DNA collections in advance.",
+     "source_id": "tozzo2022",
+     "locator": "§5 Conclusions (tizimli sharh, 60 ta tadqiqot)"
+    },
+    {
+     "uz": "Soch ildizi bilan olinganda ko‘proq buzilmagan hujayra bo‘ladi, soch tanasida esa hujayra kam va buzilgan. Shu sababli ildizli soch yadro DNKsi bo‘yicha muvaffaqiyat ehtimolini oshiradi.",
+     "quote": "Hair shaft bears fewer and degraded cells. The hair root includes more undegraded cells providing a higher chance of successful DNA identification.",
+     "source_id": "rayimoglu2025",
+     "locator": "Introduction, 2-abzas"
+    },
+    {
+     "uz": "Ildizsiz soch bo‘yicha tadqiqotlar ko‘proq mtDNKga qaratilgan, chunki mtDNK soch tanasida nusxa soni yuqori va yadro DNKsiga qaraganda kamroq buziladi.",
+     "quote": "studies on rootless hairs in the literature have concentrated on mitochondrial DNA (mtDNA) analysis because of its circular nature, relatively high copy number in hair shafts, and smaller diameter, being less prone to degradation than nuclear DNA",
+     "source_id": "rayimoglu2025",
+     "locator": "Introduction, 4-abzas"
+    },
+    {
+     "uz": "Suyakdan namuna tanlashda zich (kortikal) suyaklar DNK saqlanishi uchun yaxshi tanlov; tishning qattiq to‘qimalari (emal, dentin, sement) ham yemirilishga va ifloslanish manbalariga chidamliroq.",
+     "quote": "Compact/cortical bones are good choices for DNA extraction due to their high bone density, which allows for better DNA preservation",
+     "source_id": "caine2026",
+     "locator": "§5 Types of Bone Samples for Genetic Identification"
+    },
+    {
+     "uz": "Taqqoslash tadqiqotlarida piramida (petrous) suyagi eng ko‘p va sifatli DNK bergan; shuning uchun eng ko‘p ishlatiladigan namunalar — zich suyaklar, uzun suyaklar (son, katta boldir) va tishlar.",
+     "quote": "with the petrous bone showing the highest quantity and quality of DNA retrieved",
+     "source_id": "caine2026",
+     "locator": "§5 Types of Bone Samples for Genetic Identification"
+    },
+    {
+     "uz": "Ho‘l biologik buyum, agar suyuq holatda qolishi shart bo‘lmasa (masalan, qon olish probirkasi), qadoqlashdan oldin quritilishi kerak. DNK ko‘pincha havoda quritilgan, suvsiz muhitda eng yaxshi saqlanadi.",
+     "quote": "In most cases, nucleic acids, such as DNA, are best preserved in an air-dried, water-free environment.",
+     "source_id": "nistir7928",
+     "locator": "Dry Storage, p. 12 (ho‘l buyumlar uchun — «Wet versus Dry Evidence», p. 10)"
+    },
+    {
+     "uz": "Quruq buyum har biri alohida, ilgari ishlatilmagan qog‘oz xaltaga yoki boshqa nafas oluvchi idishga solinadi; plastik xaltalar bakteriya va mog‘or xavfi tufayli uzoq saqlash uchun afzal emas. Buyumlar bir-biriga aralashtirilmaydi.",
+     "quote": "Package each item separately; avoid comingling items to prevent cross-contamination.",
+     "source_id": "nistir7928",
+     "locator": "Packaging Best Practices Summary, p. 16"
+    },
+    {
+     "uz": "Qadoq kamida noyob identifikator, namunani olgan shaxs va olingan sana bilan belgilanadi; qadoq muhri ochilsa ko‘rinib qolishi kerak.",
+     "quote": "At a minimum, mark each package with a unique identifier, the identification of the person who collected it, and the date of collection.",
+     "source_id": "nistir7928",
+     "locator": "Packaging Best Practices Summary, p. 16"
+    },
+    {
+     "uz": "Saqlash sharoitlari namuna turiga qarab farqlanadi: masalan, shisha idishdagi suyuq qonni muzlatib bo‘lmaydi (idish yorilishi mumkin). Soch va suyak uchun uzoq muddatli saqlashda «haroratli nazorat qilinadigan» xona eng yaxshi toifaga kiritilgan (jadval III-2).",
+     "quote": "Glass vials of blood should never be frozen because the vial might explode or crack.",
+     "source_id": "nistir7928",
+     "locator": "Blood Samples, p. 13; Table III-1 p. 18; Table III-2 p. 19"
+    },
+    {
+     "uz": "Nazorat zanjiri namuna yig‘ilgan paytdan to oxirgi tasarrufgacha uni kim, qachon, qanday qabul qilganini to‘liq yozib boradi; laboratoriyada ham barcha buyumlarning kuzatilishi yozilishi va boshqarilishi shart.",
+     "quote": "An accurate chain of custody identifies and tracks the evidence from the time it was collected—including the method by which it was obtained—through final disposition for each individual who had possession and responsibility.",
+     "source_id": "nistir7928",
+     "locator": "Executive Summary, «Chain of Custody and Evidence Tracking», p. v"
+    },
+    {
+     "uz": "Evropa laboratoriyalari qo‘llanmasi ham buyumlar uchun kuzatuv (zanjir) yozuvi majburiyligini belgilaydi.",
+     "quote": "Chain of custody/traceability of all items shall be recorded and controlled.",
+     "source_id": "enfsi_bpm03",
+     "locator": "§8 Handling Items, p. 22"
+    }
+   ]
+  },
+  {
+   "id": "contamination",
+   "title": "Ifloslanishning oldini olish, nazorat namunalari va eliminatsiya bazalari",
+   "images": [],
+   "statements": [
+    {
+     "uz": "Evropa laboratoriyalari qo‘llanmasida ifloslanish — sud-tibbiy jarayonning istalgan nuqtasida buyumga kiritilgan nomaqbul moddadir; manba odamlar, sarf materiallari, laboratoriya muhiti yoki boshqa buyumlar bo‘lishi mumkin.",
+     "quote": "Undesirable introduction of a substance to an item at any point in the forensic process.",
+     "source_id": "enfsi_gdl003",
+     "locator": "§3 Terms and Definitions, «Contamination», p. 2"
+    },
+    {
+     "uz": "NIST sharhida «ifloslanish» tergov davomida ahamiyatsiz DNKning o‘tishini bildiradi; bu ta’rif ENFSI va ISFG (Gill) ta’riflaridan farq qiladi — conflicts bo‘limiga qarang.",
+     "quote": "This report uses the word contamination to describe the transfer of irrelevant DNA during an investigation.",
+     "source_id": "nist8351",
+     "locator": "Executive summary / Chapter 5 kirish, p. 17"
+    },
+    {
+     "uz": "Har bir seriya (batch) uchun reagent/ekstraksiya bo‘sh namunalari va PCR manfiy nazoratlari qo‘llanishi shart; ular reagentlar va sarf materiallaridan tizimli ifloslanishni kuzatadi.",
+     "quote": "A sufficient/representative number of reagent/extraction blanks (carried from start to end of the analytical process) and negative PCR controls shall be used for every series/run/batch of analyses",
+     "source_id": "enfsi_gdl003",
+     "locator": "§5.9.1 Detection of Contamination, a), p. 7"
+    },
+    {
+     "uz": "«Toza» manfiy nazorat ifloslanish yoki drop-in bo‘lmaganini kafolatlamaydi: nazorat bo‘sh bo‘lsa ham, namunada u yuz bergan bo‘lishi mumkin.",
+     "quote": "Drop-in and contamination may have occurred even if the negative control is ‘clean’ and does not show any allele at all.",
+     "source_id": "gill2012_dropout",
+     "locator": "§7.2 Drop-in and contamination"
+    },
+    {
+     "uz": "ISFG tavsiyasiga ko‘ra drop-in ehtimoli manfiy nazoratlardagi tasodifiy allellar soni orqali baholanadi: n ta manfiy nazoratda x ta begona allel kuzatilsa, Pr(C) = x/n.",
+     "quote": "If n negative controls are analysed and there are x spurious alleles observed (where the counts are restricted to one or two events per profile) then Pr( C ) is estimated as x / n.",
+     "source_id": "gill2012_dropout",
+     "locator": "§7.2 Drop-in and contamination"
+    },
+    {
+     "uz": "Eliminatsiya bazasiga laboratoriya xodimlari, voqea joyi mutaxassislari, buyumni olib keluvchi politsiya xodimlari, tozalovchilar va xizmat ko‘rsatuvchi texniklar kiritiladi; ularning profillari ifloslanishni aniqlash uchun tekshiriladi. Bazadan foydalanish milliy qonunchilik ruxsat bergan taqdirdagina mumkin.",
+     "quote": "In the EDB, include biology/DNA laboratory staff, crime scene investigators, police officers transporting items to the DNA Laboratory, cleaning staff, service technicians and other visitors.",
+     "source_id": "enfsi_gdl003",
+     "locator": "§5.9.1 Detection of Contamination, c)–d), pp. 7–8"
+    },
+    {
+     "uz": "Ifloslanishdan saqlanish laboratoriyadagina emas, voqea joyida ham mustahkam bo‘lishi kerak; shu jumladan xodimlar uchun eliminatsiya bazasini yuritish.",
+     "quote": "KEY TAKEAWAY #5.3: Contamination avoidance procedures should be robust both at the crime scene and in the laboratory.",
+     "source_id": "nist8351",
+     "locator": "Key Takeaway #5.3, pp. 18–19"
+    },
+    {
+     "uz": "Laboratoriya ish jarayoni bir yo‘nalishli bo‘lishi kerak; qiyosiy (reference) va voqea joyidan olingan namunalar alohida seriyalarda tahlil qilinadi, post-PCR zonasi boshqa joylardan ajratiladi.",
+     "quote": "Reference and crime scene samples shall be analyzed in separate batches.",
+     "source_id": "enfsi_gdl003",
+     "locator": "§5.8.4 Analysis of Items, p. 7 (bir yo‘nalishli ish oqimi — shu bandning davomi)"
+    },
+    {
+     "uz": "Qo‘lqop tez-tez almashtiriladi: buyumlar orasida hamda namunali probirka va plastinkalarni ochishdan oldin va keyin.",
+     "quote": "Gloves should be changed frequently and between items and before/after opening tubes and reaction plates containing samples.",
+     "source_id": "enfsi_gdl003",
+     "locator": "§5.6 Protective Clothing, p. 5"
+    }
+   ]
+  },
+  {
+   "id": "lab_workflow",
+   "title": "Laboratoriya jarayoni: ekstraksiya, kvantifikatsiya, PCR, elektroforez, elektroferogramma",
+   "images": [],
+   "statements": [
+    {
+     "uz": "Umumiy ketma-ketlik: DNK ajratib olish, miqdorini aniqlash (inson DNKsi ulushi hisobga olingan holda), tanlangan STR lokuslari to‘plamida PCR kuchaytirish, so‘ng mahsulotlarni ajratish va aniqlash.",
+     "quote": "Following DNA extraction, DNA quantitation (with adjustments for amount of human DNA present), and PCR amplification with predefined DNA marker sets of STR loci, the amplification products are separated and detected.",
+     "source_id": "nist8351",
+     "locator": "§2.2 The DNA Testing Process, p. 35"
+    },
+    {
+     "uz": "DNK tozalash bosqichi ifloslantiruvchilar, ingibitorlar va nukleazalarni olib tashlaydi va keyingi yemirilishning oldini oladi.",
+     "quote": "DNA purification removes contaminants, inhibitors and nucleases, preventing further degradation.",
+     "source_id": "caine2026",
+     "locator": "§7 Methods for Extracting Nucleic Acids from Bone Samples"
+    },
+    {
+     "uz": "Kvantifikatsiya real vaqt PCR (qPCR) bilan o‘tkaziladi. Zamonaviy testlar bir vaqtda DNK miqdori, buzilish darajasi, PCR ingibitorlari va erkak DNKsi ulushi haqida ma’lumot beradi.",
+     "quote": "By this means they can provide additional information, such as on DNA degradation and the presence of PCR inhibitors or male components",
+     "source_id": "jager2024",
+     "locator": "§1 Introduction"
+    },
+    {
+     "uz": "Buzilish indeksi (DI) qisqa va uzun amplikon natijalari nisbatidan olinadi: faqat butun DNK kuchayadi, shuning uchun nisbat DNK buzilishi bilan bog‘liq.",
+     "quote": "the ratio between the two quantitation results correlates with the DNA degradation and is expressed as degradation index (DI)",
+     "source_id": "jager2024",
+     "locator": "§3.2 DNA Integrity"
+    },
+    {
+     "uz": "Ichki PCR nazorati (IPC) ingibitorlarni aniqlaydi: IPC uchun Ct qiymatining kutilganidan yuqoriga siljishi namunada PCR ingibitorlari borligini ko‘rsatadi.",
+     "quote": "a shift to higher Ct values than to be expected for the IPC input is indicative of PCR inhibitors present in the sample.",
+     "source_id": "jager2024",
+     "locator": "§3.3 PCR Inhibition"
+    },
+    {
+     "uz": "PCR har bir STR markerining millionlab nusxasini hosil qiladi; ushbu bosqich (amplifikatsiya) laboratoriya tahlili uchun yetarli miqdordagi STR allellarini beradi.",
+     "quote": "When analyzing the DNA sample, a technique called the polymerase chain reaction (PCR) is used to create millions of copies of each STR marker.",
+     "source_id": "nist8351",
+     "locator": "§2.1.1 DNA Basics, p. 33"
+    },
+    {
+     "uz": "Kapillyar elektroforez (CE) kuchaytirilgan va bo‘yoq bilan belgilangan fragmentlarni ajratadi; cho‘qqilarning o‘rni, balandligi va o‘lchami allel narvoni (allelic ladder) bilan taqqoslanib, elektroferogrammada (EPG) ko‘rsatiladi.",
+     "quote": "Peak positions, heights, and sizes relative to a calibration “allelic ladder” standard are visualized by dye-channel color and DNA size in a chart format called an electropherogram (EPG).",
+     "source_id": "nist8351",
+     "locator": "§2.1.1 DNA Basics, p. 33"
+    },
+    {
+     "uz": "Cho‘qqi o‘rni allelni aniq belgilash uchun ishlatiladi, cho‘qqi balandligi esa tasodifiy (stoxastik) ta’sirlarga uchraydi va o‘zgaruvchan.",
+     "quote": "Peak positions are used to accurately designate alleles whereas peak heights are subject to stochastic effects and are variable.",
+     "source_id": "nist8351",
+     "locator": "Principle 9, p. 59"
+    },
+    {
+     "uz": "Stutter — PCR paytida DNK zanjirining sirpanishi tufayli paydo bo‘ladigan sun’iy mahsulot; odatda asl allelga nisbatan bitta takror qisqa yoki uzun bo‘ladi.",
+     "quote": "Stutter products are produced during PCR amplification from slippage of the DNA strands while being copied, and are typically one repeat shorter or longer than the originating STR allele",
+     "source_id": "nist8351",
+     "locator": "§2.2.1 Factors that Affect Measurement Reliability, p. 38"
+    },
+    {
+     "uz": "Stutter holatidagi cho‘qqi faqat stutter deb qabul qilinmasligi kerak: u kichik ishtirokchining alleli yoki kichik ishtirokchi alleli va stutter yig‘indisi bo‘lishi mumkin.",
+     "quote": "When a peak is observed in a stutter position, interpretation should consider the possibility that the peak represents a minor contributor or a minor contributor plus stutter rather than a stutter product only.",
+     "source_id": "nist8351",
+     "locator": "Principle 12, p. 60"
+    },
+    {
+     "uz": "Geterozigota cho‘qqilar balandligi nisbatining o‘zgaruvchanligi cho‘qqi balandligi pasayishi bilan ortadi; DNK miqdori kam bo‘lganda juftlikdan bir allel yo‘qolishi (drop-out) mumkin.",
+     "quote": "The variability of peak height ratios (and heterozygote imbalance) increases as peak height decreases.",
+     "source_id": "nist8351",
+     "locator": "Principle 10, p. 60"
+    },
+    {
+     "uz": "Allel drop-out — profildan allel ma’lumotining yo‘qolishi; ikkala allel ham topilmasa, bu lokus drop-out deb ataladi. Drop-in esa profilga tasodifiy, odatda bir-ikkita begona allelning qo‘shilishi.",
+     "quote": "The drop-in phenomenon is restricted to 1 or 2 alleles per profile.",
+     "source_id": "gill2012_dropout",
+     "locator": "Abstract (drop-out ta’rifi: NIST §2.1.1, pp. 33–34)"
+    },
+    {
+     "uz": "Buzilgan DNKda cho‘qqi balandliklari elektroferogrammada chapdan o‘ngga — kichik o‘lchamli allellardan kattalariga — kamayib boradi.",
+     "quote": "When analyzing degraded DNA, peak heights decrease from left to right across an EPG (small-size to large-size STR alleles)",
+     "source_id": "nist8351",
+     "locator": "§2.2.1, p. 38"
+    },
+    {
+     "uz": "Aniqlash chegarasi laboratoriyaning o‘zi belgilaydigan qiymat: ko‘pgina laboratoriyalar 50 rfu atrofida belgilagan, ammo u laboratoriya va usulga qarab o‘zgaradi.",
+     "quote": "Many laboratories have typically set this level to 50rfu – this value can vary both between laboratories and methods or processes used.",
+     "source_id": "gill2012_dropout",
+     "locator": "§5 (limit of detection threshold)"
+    }
+   ]
+  },
+  {
+   "id": "interpretation",
+   "title": "Talqin: bir manbali va aralash profillar, ehtimollar nisbati (LR), propozitsiyalar darajalari",
+   "images": [],
+   "statements": [
+    {
+     "uz": "Bir manbali namunada har bir lokusda faqat bitta genotip mumkin; aralashmada esa bir nechta genotip kombinatsiyasi mumkin. Shu noaniqlik aralash profil talqinini murakkablashtiradi.",
+     "quote": "In single-source samples, only a single genotype is possible at each locus. With DNA mixtures, however, more than one genotype combination may be possible at each locus.",
+     "source_id": "nist8351",
+     "locator": "§2.1.2 DNA Mixtures, p. 34"
+    },
+    {
+     "uz": "Ekstraksiyadan keyin turli ishtirokchilarning DNKsini jismonan ajratib bo‘lmaydi; talqin — ehtimoliy genotiplarni matematik jihatdan aniqlash va shaxsning aralashmaga kirgan yoki kirmaganligi bo‘yicha dalil kuchini baholashdir.",
+     "quote": "DNA from multiple contributors cannot be physically separated once DNA molecules are extracted from their biological cells",
+     "source_id": "nist8351",
+     "locator": "§2.1.2 DNA Mixtures, p. 34"
+    },
+    {
+     "uz": "Qisman profilda drop-out yoki drop-in ehtimoli bo‘lsa, «mos / mos emas» ikkilik qarori yetarli emas; imkoniyatlar ehtimollar nisbati tamoyillari bilan baholanadi.",
+     "quote": "if drop-out and/or drop-in are possible (this includes any partial DNA profile), it is not possible to think only in terms of a match or non-match",
+     "source_id": "gill2012_dropout",
+     "locator": "§1 Introduction"
+    },
+    {
+     "uz": "LR — topilmalarning birinchi propozitsiya (proposition) (H1) to‘g‘ri bo‘lganda ehtimolining ikkinchi propozitsiya (H2) to‘g‘ri bo‘lgandagi ehtimoliga nisbati. LR qiymati propozitsiyaning to‘g‘ri bo‘lish ehtimoli (odds) emas.",
+     "quote": "Note that a reported LR value is not the odds that a particular proposition is true.",
+     "source_id": "nist8351",
+     "locator": "§2.5.1 Likelihood Ratio Framework, p. 49"
+    },
+    {
+     "uz": "LR o‘lchanmaydi, balki ekspert tomonidan baholanadi (assigned); bir xil dalil uchun turli ekspertlar turli qiymat belgilashi mumkin, «yagona haqiqiy LR» mavjud emas.",
+     "quote": "Likelihood ratios are assigned and not measured.",
+     "source_id": "nist8351",
+     "locator": "Key Takeaway #2.6, p. 54"
+    },
+    {
+     "uz": "LR propozitsiyalar (proposition) tanloviga bog‘liq: bir xil ikki lokusli ma’lumot uchun qurilgan misolda LR taxminlarga qarab 4000 dan oshiqdan 10 dan kamgacha o‘zgargan.",
+     "quote": "The LRs varied from over 4,000 (moderate support on SWGDAM 2018 verbal scale) to less than 10 (limited support) depending on the propositions and assumptions made",
+     "source_id": "nist8351",
+     "locator": "§2.5.4 Propositions Impact LR Results, p. 53 (Table 2.4)"
+    },
+    {
+     "uz": "Propozitsiyalar iyerarxiyasi: manba (source), faoliyat (activity) va jinoyat (offence) — ular turli savollarga javob beradi va bir darajadagi LR keyingi darajaga o‘tkazilmaydi.",
+     "quote": "There are 3 main levels in the hierarchy of propositions: source, activity and offence.",
+     "source_id": "enfsi_bpm03",
+     "locator": "Appendix A1.5 The Hierarchy of Propositions, p. 37"
+    },
+    {
+     "uz": "Hozirgi ehtimoliy genotiplash dasturlari beradigan LR sub-source (DNK qaysi shaxsga tegishli) va sub-sub-source (aralashma tarkibiy qismi) darajalariga qaratilgan; ular hujayra manbasini, faoliyatni yoki jinoyatni hisobga olmaydi.",
+     "quote": "The LRs calculated do not consider the cellular source of the DNA (e.g., blood, saliva, or semen), the activity that led to the presence of the DNA on the evidence, or the alleged offense.",
+     "source_id": "swgdam_pg2025",
+     "locator": "Section 2, «Hierarchy of propositions», p. 8"
+    },
+    {
+     "uz": "Agar shaxs DNKsi qonuniy sabablarga ko‘ra ham bo‘lishi mumkin bo‘lsa (masalan, buyum uning mashinasidan topilgan yoki u shikoyatchini taniydi), yoki o‘tkazilish haqida savol bo‘lsa, faqat manba darajasidagi (source level) baho odatda ma’noli emas.",
+     "quote": "If the DNA of the POI may be present for legitimate reasons (e.g., the item was recovered on the POI’s car or the POI knows the complainant), or if there are questions about transfer",
+     "source_id": "enfsi_bpm03",
+     "locator": "§12, 1-band, p. 26"
+    },
+    {
+     "uz": "LR (sub-source darajasida) DNK qachon va qanday o‘tgani yoki ishga aloqadorligi haqida ma’lumot bermaydi.",
+     "quote": "DNA statistical results such as a likelihood ratio given sub-source propositions do not provide information about how or when DNA was transferred, or whether it is relevant to circumstances of a case.",
+     "source_id": "nist8351",
+     "locator": "Key Takeaway #5.4, p. 19"
+    },
+    {
+     "uz": "Ishtirokchilarning haqiqiy soni noma’lum. Ishtirokchilar soni oshgan, DNK miqdori kamaygan yoki ishtirokchilar qarindosh bo‘lib allellar ustma-ust tushgan hollarda son kam baholanishi mumkin.",
+     "quote": "The true number of contributors to an evidentiary DNA typing result is unknown.",
+     "source_id": "swgdam_pg2025",
+     "locator": "Section 2, «Number of contributors», p. 9; NIST Principle 13, p. 61"
+    },
+    {
+     "uz": "Ishtirokchilar sonini dastlabki baholashda gumon qilinuvchi (POI) genotipi hisobga olinmaydi.",
+     "quote": "The genotype of any person of interest (POI) shall not be considered in this initial assessment.",
+     "source_id": "swgdam_pg2025",
+     "locator": "Section 1, band 1.5, p. 6"
+    },
+    {
+     "uz": "Qarindoshlik hisobga olinmasa, qarindosh bo‘lgan, ishtirok etmagan shaxsni aralashmaga noto‘g‘ri kiritish xavfi ortadi.",
+     "quote": "relatedness can increase the risk of falsely including a non-contributor relative in the DNA mixture.",
+     "source_id": "nist8351",
+     "locator": "Principle 6, pp. 58–59"
+    },
+    {
+     "uz": "Ehtimoliy genotiplash dasturi tahlilchi fikrini almashtirmaydi: u sub’ektivlikni kamaytirishi va murakkab hisoblarni imkon etishi mumkin, xolos.",
+     "quote": "Probabilistic genotyping is not intended to replace human interpretation but can reduce subjectivity and enable complex analyses and calculations.",
+     "source_id": "swgdam_pg2025",
+     "locator": "Background, p. 2"
+    },
+    {
+     "uz": "LRga so‘zli ta’rif berish usullari turli yurisdiksiyalarda turlicha. SWGDAM shkalasi: LR = 1 — ma’lumotsiz; 2 dan <100 gacha — cheklangan; 100 dan <10 000 gacha — o‘rtacha; 10 000 dan <1 million gacha — kuchli; 1 milliondan yuqori — juda kuchli qo‘llab-quvvatlash.",
+     "quote": "uninformative (LR=1), limited support (LR = 2 to <100), moderate support (LR = 100 to <10,000), strong support (LR = 10,000 to < 1 million), and very strong support (LR > 1 million)",
+     "source_id": "nist8351",
+     "locator": "§2.5.2 Communicating LR Results, p. 50 (SWGDAM 2018 shkalasi)"
+    }
+   ]
+  },
+  {
+   "id": "kinship",
+   "title": "Qarindoshlikni aniqlash va ommaviy halokatda shaxsni identifikatsiya qilish (DVI)",
+   "images": [],
+   "statements": [
+    {
+     "uz": "Qarindoshlik tahlili Mendel merosiga asoslanadi: farzand har bir STR lokusda bitta allelni otadan, bittasini onadan oladi — bular «majburiy allellar» (obligate alleles) hisoblanadi.",
+     "quote": "An offspring inherits two alleles at each STR locus, one from each parent—these are “obligate alleles” in the sense that the genome of the offspring must contain these alleles",
+     "source_id": "grover2017",
+     "locator": "Introduction, 4-abzas (istisno: kichik mutatsiyalar va xromosoma anomaliyalari)"
+    },
+    {
+     "uz": "Biologik qarindoshlik qanchalik yaqin bo‘lsa, ikki kishining umumiy allellari shunchalik ko‘p bo‘ladi; ammo aka-uka-opa-singillar hamma vaqt bir xil allelni olmaydi, shuning uchun ularda umumiy belgilar o‘zgarib turadi.",
+     "quote": "For this reason, the genetic characteristics shared among siblings can vary.",
+     "source_id": "nist8351",
+     "locator": "Principle 4, p. 58"
+    },
+    {
+     "uz": "Faqat CODIS 13 lokusi bilan aka-uka-opa-singillik tahlilida noto‘g‘ri musbat va noto‘g‘ri manfiy natijalar ehtimoli sezilarli; bu Butler va hamkasblarining modellashtirish natijasi bo‘lib, Grover va hamkasblari maqolasida keltirilgan (ikkilamchi manba).",
+     "quote": "an assay which targets only the CODIS core 13 loci leads to a 2.7% false positive rate and 3.3% false negative rate for sibling pairs",
+     "source_id": "grover2017",
+     "locator": "Introduction, 4-abzas"
+    },
+    {
+     "uz": "Otalikni baholashda ISFG Otalik komissiyasi biostatistik baholash ehtimollar nisbati tamoyiliga, ya’ni otalik indeksi (PI) ga asoslanishini tavsiya etgan.",
+     "quote": "In the initial set, the PTC recommended that biostatistical evaluations of paternity are based on a likelihood ratio principle - yielding the paternity index, PI.",
+     "source_id": "gjertson2007_pat",
+     "locator": "Abstract (faqat annotatsiya o‘qilgan)"
+    },
+    {
+     "uz": "Otalik testida hisob-kitob uchun zarur hujjatlashtirish, hisobotdagi tafsilotlar va hisoblash taxminlari ham tavsiyalar tarkibiga kiradi.",
+     "quote": "The fifth recommendation covers necessary documentation, reporting details and assumptions underlying calculations.",
+     "source_id": "gjertson2007_pat",
+     "locator": "Abstract (faqat annotatsiya o‘qilgan)"
+    },
+    {
+     "uz": "Mutatsiya sababli otalik tahlilida «ko‘rinma istisno» (apparent exclusion) paydo bo‘lishi mumkin; bunday holat belgilangan qoidalar («uch istisno qoidasi» kabi) bo‘yicha talqin qilinishi kerak, aks holda noto‘g‘ri tasnif xavfi bor.",
+     "quote": "In paternity testing, germline mutations may produce apparent exclusions that must be interpreted using established guidelines, such as the “triple exclusion rule”, to avoid misclassification",
+     "source_id": "pajnic2026_str",
+     "locator": "§5 Evolutionary and Population Dynamics of STR Mutations, 5-abzas"
+    },
+    {
+     "uz": "Mutatsiya darajasi yuqori lokuslar (har avlodda 1% dan oshiq) yaqin qarindoshlik tahlilidan odatda chiqarib tashlanadi; aniq yondashuv laboratoriya va ISFG qoidalariga bog‘liq — conflicts bo‘limidagi eslatmaga qarang.",
+     "quote": "Loci with mutation rates exceeding 1% per generation are generally excluded from close kinship analyses to minimize the risk of false exclusions",
+     "source_id": "pajnic2026_str",
+     "locator": "§5, 5-abzas (sharh maqola)"
+    },
+    {
+     "uz": "Ommaviy halokatlarda INTERPOL qo‘llanmasiga ko‘ra asosiy (primary) identifikatsiya usullari — papillyar izlar, taqqosiy stomatologik tahlil va DNK tahlili.",
+     "quote": "The PRIMARY and most reliable means of identification are friction ridge analysis, comparative dental analysis and DNA analysis.",
+     "source_id": "interpol_dvi2023",
+     "locator": "§6 Methods of Identification (Primary and Secondary), PDF p. 16 of 110"
+    },
+    {
+     "uz": "Ommaviy halokatda shaxs shaxsini tasdiqlash qo‘llanmaga ko‘ra Identifikatsiya kengashi yoki mahalliy vakolatli organ tomonidan, ishonchli ma’lumotlarni sinchiklab baholagandan keyin amalga oshiriladi; faqat ko‘z bilan tanish ishonchsiz hisoblanadi.",
+     "quote": "In mass fatality incidents, confirmation of the identity of human remains should only be made by the Identification Board or local authority after close assessment and evaluation of relevant and reliable data is undertaken.",
+     "source_id": "interpol_dvi2023",
+     "locator": "§5.4 Phase 4: Reconciliation, PDF p. 15 of 110"
+    },
+    {
+     "uz": "ISFG DVI tavsiyalari laboratoriyaning tayyorgarligi, o‘lim oldi va o‘limdan keyingi namunalarni yig‘ish va saqlash, DNK ajratish va genetik tipirovka strategiyalari, ma’lumotlar boshqaruvi hamda biostatistik talqin va hisobot masalalarini qamrab oladi.",
+     "quote": "on collecting and storing ante-mortem and post-mortem samples suitable for DNA analysis, on DNA extraction and genetic typing strategies, on data management, and on issues related to the biostatistical interpretation and reporting of results",
+     "source_id": "prinz2007_dvi",
+     "locator": "Abstract (faqat annotatsiya o‘qilgan)"
+    }
+   ]
+  },
+  {
+   "id": "reporting_and_court",
+   "title": "Xulosa berish va sudda ishtirok: prokuror xatosi, ekspert rolining chegaralari",
+   "images": [],
+   "statements": [
+    {
+     "uz": "Ekspert topilmalar ehtimoli haqida xulosa beradi, propozitsiyalarning (proposition) to‘g‘ri bo‘lish ehtimoli haqida emas.",
+     "quote": "The scientist shall give an opinion on the probability of the findings, not on the probability of the propositions.",
+     "source_id": "enfsi_bpm03",
+     "locator": "§12, 3-band, p. 26"
+    },
+    {
+     "uz": "Baholash uchun kamida ikkita o‘zaro istisno qiluvchi propozitsiya (proposition) ko‘rib chiqiladi (odatda ayblov va himoya pozitsiyalari).",
+     "quote": "At least two mutually exclusive propositions shall be considered.",
+     "source_id": "enfsi_bpm03",
+     "locator": "§12, 2-band, p. 26"
+    },
+    {
+     "uz": "Prokuror xatosi (shartli ehtimolni almashtirish): «DNK natijasi X dan kelgan bo‘lishi boshqalardan million marta ehtimolroq» deyish noto‘g‘ri. To‘g‘risi: natijalarni kuzatish ehtimoli X manba bo‘lganda Y manba bo‘lgandagidan million marta yuqori.",
+     "quote": "For DNA evidence, a statement such as “The DNA results are one million times more likely to have come from Person X than anyone else” transposes the conditional.",
+     "source_id": "nist8351",
+     "locator": "§2.5.2 Communicating LR Results, p. 50"
+    },
+    {
+     "uz": "ISFG tavsiyasiga ko‘ra ekspert «eng ehtimoliy o‘tish yo‘li» (to‘g‘ridan-to‘g‘ri yoki bilvosita) haqida fikr bildirmasligi kerak: bu faoliyat haqida fikr bo‘lib, prokuror xatosiga olib keladi.",
+     "quote": "Scientists must not give their opinion on what is the ‘most likely way of transfer’ (direct or indirect), as this would amount to giving an opinion on the activities",
+     "source_id": "enfsi_bpm03",
+     "locator": "§13, 6-band (ISFG DNA Commission II, Recommendation 3 sifatida keltirilgan), p. 28"
+    },
+    {
+     "uz": "Hisobotda taxminlar va propozitsiyalar (proposition) aniq ko‘rsatiladi, yangi ma’lumot paydo bo‘lsa qayta baholash talab etilishi mumkinligi haqida ogohlantirish beriladi.",
+     "quote": "The assumptions and the propositions, where applicable, shall be clearly stated and a caveat applied that informs the court that should new information become available that could affect the validity of the propositions",
+     "source_id": "enfsi_bpm03",
+     "locator": "§12, 6-band, p. 26"
+    },
+    {
+     "uz": "Agar laboratoriya faoliyat darajasida (activity level) baholamasa, hisobotda natija faqat DNK manbasi haqida ma’lumot berishi aniq yozilishi kerak.",
+     "quote": "If a laboratory does not report given activity level propositions then the report should make clear that the opinion only provides information regarding the source of the DNA",
+     "source_id": "enfsi_bpm03",
+     "locator": "§12, 9-band, p. 27"
+    },
+    {
+     "uz": "Yagona LR raqami taxminlar va propozitsiyalar (proposition) darajasi ko‘rsatilmasa, chalg‘itishi mumkin.",
+     "quote": "reporting a likelihood ratio as a standalone number can be misleading without sharing the assumptions made in the LR assignments and the level in the hierarchy of propositions being addressed",
+     "source_id": "nist8351",
+     "locator": "Key Takeaway #5.4, p. 19"
+    },
+    {
+     "uz": "LR e’lon qilinganda «xatolik foizi» yoki ishonch oralig‘i qo‘llanmaydi va tavsiya etilmaydi; ma’lumot va taxminlarga sezgirlik tahlili investigativ maqsadda ishlatilishi mumkin.",
+     "quote": "When likelihood ratios are reported, an 'error rate' or 'confidence interval' is neither applied nor recommended.",
+     "source_id": "enfsi_bpm03",
+     "locator": "§6.2, p. 19"
+    },
+    {
+     "uz": "So‘zli ifoda LR bilan birga keladi, uning o‘rniga emas: so‘zli shkala LR tartibi ko‘rsatilmasdan ishlatilmaydi, chunki bunday shkalalar ixtiyoriy va kelishuvga asoslangan.",
+     "quote": "the verbal scale shall not be used without an accompanying order of magnitude of the LR value",
+     "source_id": "enfsi_bpm03",
+     "locator": "§13, 4-band, p. 28"
+    },
+    {
+     "uz": "Ekspert o‘z hisobotida ko‘rilmagan masalalar bo‘yicha fikr bildirmaydi; agar fikr akkreditatsiya yoki o‘z vakolatidan tashqarida bo‘lsa, buni ochiq aytadi.",
+     "quote": "The expert shall not give opinions on matters that were not addressed in their report(s).",
+     "source_id": "enfsi_bpm03",
+     "locator": "§13, 1-band, p. 28"
+    },
+    {
+     "uz": "Jinoyat (aybdorlik) darajasidagi savollarga sud javob beradi, DNK ekspert emas; ekspert faqat topilmalarini berilgan propozitsiyalar (proposition) ostida baholaydi.",
+     "quote": "The trier-of-fact, and never the scientist, addresses questions at this level using DNA findings plus additional information",
+     "source_id": "nist8351",
+     "locator": "Table 2.5 Levels in the hierarchy of propositions, «Offense» qatori, p. 56 (jadval katagida iqtibos qatorlari ustunlar bilan aralash chiqadi)"
+    },
+    {
+     "uz": "Sub-source darajasidagi LRni yuqoriroq darajaga (faoliyat) o‘tkazishning xavfini ekspert o‘zi faol tushuntirishi kerak.",
+     "quote": "The expert shall be pro-active to explain the dangers of carry-over of the LR value to a higher level of the hierarchy of propositions",
+     "source_id": "enfsi_bpm03",
+     "locator": "§13, 5-band, p. 28"
+    },
+    {
+     "uz": "Sud majlisida hisobotda ko‘rilmagan savol tug‘ilsa, ekspert joriy hisobot chegaralarini aytadi va javob uchun qo‘shimcha ish zarurligini taklif qila oladi.",
+     "quote": "The scientist must state the limitations of the current report; then he/she can suggest that in order to answer the court query, further work is necessary",
+     "source_id": "enfsi_bpm03",
+     "locator": "§13, 9-band, p. 29"
+    }
+   ]
+  }
+ ],
+ "court_questions": [
+  {
+   "q": "«Ayblanuvchining DNKsi topilgan buyumdan chiqdi. Bu uning jinoyatni sodir etganini isbotlaydimi?»",
+   "good_answer_uz": "Mening vazifam — DNK natijalarini oldindan belgilangan ikki propozitsiya (proposition) ostida baholash va dalil kuchini (ehtimollar nisbati, LR) aytish. Buyumdagi DNK kimga tegishli ekanini, jinoyatni kim va qanday sodir etganini sud boshqa dalillar bilan birga hal qiladi.",
+   "boundary_uz": "Ekspert shaxsning aybdorligi, jinoyatni sodir etgani yoki harakat (faoliyat) haqida «isbotlaydi/isbotlamaydi» deb fikr bildirmaydi. DNK natijasi faqat DNK manbasi darajasida.",
+   "source_id": "enfsi_bpm03",
+   "locator": "Appendix A1.5, p. 37 (shuningdek NIST Table 2.5, «Offense», p. 56)"
+  },
+  {
+   "q": "«Bu DNK ayblanuvchidan kelganligi ehtimoli necha foiz?»",
+   "good_answer_uz": "Men DNK manbasi ayblanuvchi ekanligi ehtimolini aytmayman. Men natijalarni kuzatish ehtimoli ikki taxmin ostida qanchalik farq qilishini ko‘rsataman: DNK ayblanuvchidan kelgan bo‘lsa va u noma’lum, unga qarindosh bo‘lmagan shaxsdan kelgan bo‘lsa. Bu nisbat LR deb ataladi.",
+   "boundary_uz": "«DNK ayblanuvchidan kelgan ehtimoli 99,99%» yoki «natijalar boshqa har kimdan ko‘ra million marta ehtimolroq unga tegishli» kabi iboralar ishlatilmaydi (prokuror xatosi). LR — propozitsiyaning (proposition) to‘g‘ri bo‘lish ehtimoli emas.",
+   "source_id": "nist8351",
+   "locator": "§2.5.2, p. 50; §2.5.1, p. 49 (ENFSI §12, 3-band, p. 26)"
+  },
+  {
+   "q": "«DNK izi qachon va qanday qoldirilganini aniq ayta olasizmi?»",
+   "good_answer_uz": "DNK profilining o‘zida uning qachon va qanday o‘tgani haqida ma’lumot yo‘q. Men faqat DNK kimga mos kelishini baholayman; o‘tkazilish va saqlanish bo‘yicha savol alohida, ishning holatlari va ma’lumotlariga tayangan holda ko‘riladi.",
+   "boundary_uz": "Ekspert LR bo‘yicha DNK qachon yoki qanday qoldirilgani, to‘g‘ridan-to‘g‘ri teginish yoki bilvosita o‘tgan-o‘tmagani haqida xulosa chiqarmaydi.",
+   "source_id": "gill2012_dropout",
+   "locator": "§7.3 Contamination is distinct from drop-in"
+  },
+  {
+   "q": "«Ikkilamchi (bilvosita) o‘tish ehtimoli past emasmi? Demak, ayblanuvchi buyumga tegangan?»",
+   "good_answer_uz": "Men bilvosita o‘tishning «ehtimoli past yoki yuqori» ekanligi haqida fikr bildirmayman. Agar faoliyat bo‘yicha savol bo‘lsa, ikki aniq faoliyat taxmini ostida topilmalarni baholash mumkin, buning uchun mos ma’lumot va ishning holatlari kerak.",
+   "boundary_uz": "«Ikkilamchi o‘tish uzoq ehtimol» kabi iboralar manbalarda qabul qilib bo‘lmaydigan deb belgilangan: ular propozitsiya (proposition) haqida fikr bo‘lib, prokuror xatosiga olib keladi.",
+   "source_id": "enfsi_bpm03",
+   "locator": "§13, 6-band, p. 28"
+  },
+  {
+   "q": "«Namuna ifloslangan bo‘lishi mumkin emasmi?»",
+   "good_answer_uz": "Laboratoriyada har bir seriyada reagent va ekstraksiya bo‘sh namunalari hamda PCR manfiy nazoratlari qo‘llanadi, xodimlar profillari eliminatsiya bazasi bilan solishtiriladi (qonun ruxsat bergan hollarda). Biroq toza nazorat ifloslanish bo‘lmaganini mutlaq kafolatlamaydi; ehtimol ifloslanish va drop-in ehtimoli hisobga olinadi.",
+   "boundary_uz": "Ekspert «ifloslanish mutlaqo istisno» deb aytmaydi va nazorat namunalari yo‘q yoki ishlamagan bo‘lsa, shuni ochiq bayon qiladi. Voqea joyi va qadoqlash bosqichidagi ifloslanishni laboratoriya nazorat qila olmasligini ham aytadi.",
+   "source_id": "gill2012_dropout",
+   "locator": "§7.2 Drop-in and contamination (ENFSI GDL-003 §5.9.1, pp. 7–8)"
+  },
+  {
+   "q": "«Aralash profilda nechta kishi ishtirok etgan? Aniq ayting.»",
+   "good_answer_uz": "Ishtirokchilar sonining haqiqiy qiymati noma’lum. Men ma’lumotlarga eng yaxshi mos keladigan sonni belgilayman (gumon qilinuvchi genotipini hisobga olmasdan); agar bir nechta son oqilona bo‘lsa, ularning har biri uchun LR baholanadi.",
+   "boundary_uz": "Ekspert ishtirokchilar sonini «aniq» deb da’vo qilmaydi; ayniqsa ko‘p ishtirokchi, DNK miqdori kam yoki qarindoshlar bo‘lgan holatlarda.",
+   "source_id": "swgdam_pg2025",
+   "locator": "Section 2, «Number of contributors», p. 9; Section 1, band 1.5, p. 6"
+  },
+  {
+   "q": "«Bu DNK ayblanuvchining aka-ukasi yoki boshqa qarindoshiga ham tegishli bo‘lishi mumkinmi?»",
+   "good_answer_uz": "Ha, yaqin qarindoshlarning DNK profillari ko‘proq o‘xshash bo‘ladi. Agar ishdagi ma’lumot qarindosh ishtirokiga ishora qilsa, hisob qarindosh faraziga ham o‘tkaziladi; bunda LR sezilarli kamayishi mumkin (nashr etilgan misolda taxminan 8 gacha).",
+   "boundary_uz": "Ekspert qarindosh ehtimolini e’tiborsiz qoldirib «faqat bir kishiga mos» deb aytmaydi; qarindoshlar tekshirilmagan bo‘lsa, buni hisobotda ko‘rsatadi.",
+   "source_id": "nist8351",
+   "locator": "Principle 6, pp. 58–59; Table 2.4, p. 53"
+  },
+  {
+   "q": "«Sizning LR hisobingizning xatolik darajasi qancha?»",
+   "good_answer_uz": "LR o‘lchov emas, balki ma’lumot va taxminlarga tayanadigan baho. Shu sababli unga «xatolik foizi» yoki ishonch oralig‘i qo‘llanmaydi. Taxminlar o‘zgarsa LR qanchalik o‘zgarishini sezgirlik tahlili orqali ko‘rsatish mumkin, lekin bu xatolik o‘lchovi emas.",
+   "boundary_uz": "Ekspert «dasturning xatolik foizi X%» kabi raqamni o‘ylab topmaydi; validatsiya natijalari bo‘lsa, ularni aniq manba bilan keltiradi.",
+   "source_id": "enfsi_bpm03",
+   "locator": "§6.2, p. 19"
+  },
+  {
+   "q": "«Hisobotdagi «juda kuchli qo‘llab-quvvatlaydi» degan so‘z nimani anglatadi?»",
+   "good_answer_uz": "So‘zli ibora LR raqamiga qo‘shimcha, uning o‘rniga emas. U shartli va laboratoriya yoki yurisdiksiya shkalasiga bog‘liq; shu sababli raqamli tartib birga ko‘rsatiladi.",
+   "boundary_uz": "So‘zli iborani LR tartibisiz ishlatmaslik; so‘zni «ishonch foizi» yoki «isbot» ma’nosida talqin qilmaslik.",
+   "source_id": "enfsi_bpm03",
+   "locator": "§13, 4-band, p. 28 (NIST §2.5.2, p. 50)"
+  },
+  {
+   "q": "«Ildizsiz sochdan DNK profili chiqardingiz. Bu aniq shaxsni ko‘rsatadimi?»",
+   "good_answer_uz": "Ildizsiz sochda hujayra kam va buzilgan, shuning uchun yadro DNKsi bo‘yicha profil ko‘pincha to‘liq bo‘lmaydi; tahlil ko‘pincha mtDNKga tayanadi. mtDNK ona chizig‘i bo‘yicha meros bo‘ladi va u bilan shaxsni ajratish kuchi yadro DNKsiga qaraganda past.",
+   "boundary_uz": "mtDNK mosligi asosida «shaxs aniqlandi» deb aytilmaydi; natija faqat ona chizig‘idagi mosliklik va unga mos populyatsiya ma’lumotlari bilan baholanadi.",
+   "source_id": "rayimoglu2025",
+   "locator": "Introduction, 2–4 abzaslar"
+  },
+  {
+   "q": "«Y-STR natijasi bitta erkakni ko‘rsatadimi?»",
+   "good_answer_uz": "Y-STR otalik chizig‘i bo‘yicha meros bo‘ladi; shu sababli bir xil Y-haplotipga ega bo‘lishi mumkin bo‘lgan otalik qarindoshlari bor. Natijani baholashda haplotip chastotasi va qarindoshlik tuzilmasi alohida hisobga olinadi.",
+   "boundary_uz": "Y-STR mosligi bitta shaxsni ko‘rsatadi deb aytilmaydi; lokuslarni mustaqil deb ko‘paytirib, autosomal STR kabi «noyoblik» da’vo qilinmaydi.",
+   "source_id": "roewer2020_ystr",
+   "locator": "Abstract (faqat annotatsiya o‘qilgan)"
+  },
+  {
+   "q": "«Namunada ayblanuvchi DNKsi topilmadi. Bu uning joyda bo‘lmaganini bildiradimi?»",
+   "good_answer_uz": "DNKning topilmasligi teginish bo‘lmaganini isbotlamaydi. Teginish izlarida hujayra kam bo‘ladi va allel signali yo‘qolishi mumkin; shuningdek DNK buyumga o‘tmasligi yoki keyinchalik ketishi ham mumkin. Topilmaslikni baholash faoliyat darajasidagi (activity level) propozitsiyalar (proposition) ostida alohida ko‘rib chiqiladi.",
+   "boundary_uz": "Ekspert DNK yo‘qligidan «shaxs buyumga tegmagan» yoki «joyda bo‘lmagan» degan xulosa chiqarmaydi.",
+   "source_id": "nist8351",
+   "locator": "§2.1.1, p. 34; ENFSI Appendix A1.9, p. 40"
+  },
+  {
+   "q": "«Himoya taklif qilgan boshqa tushuntirishsiz qanday baholadingiz?»",
+   "good_answer_uz": "Himoyadan ma’lumot bo‘lmasa, ishdagi ma’lumotga tayangan oqilona taxminlar asosida muqobil propozitsiyani (proposition) o‘zim shakllantiraman va bu taxminlar hisobotda aniq yoziladi. Taxminlar ishga mos kelmasa, qayta baholash va, ehtimol, qo‘shimcha tahlil kerak bo‘ladi.",
+   "boundary_uz": "Muqobil propozitsiyani (proposition) natija ko‘rilgandan keyin natijaga moslab o‘zgartirmaslik; taxminlarni yashirmaslik.",
+   "source_id": "enfsi_bpm03",
+   "locator": "§12, 7-band, p. 26"
+  },
+  {
+   "q": "«Profil qisman (ba’zi lokuslarda allel yo‘q). Demak, u ayblanuvchiga mos kelmaydi-ku?»",
+   "good_answer_uz": "Qisman profilda drop-out bo‘lishi mumkin, shuning uchun «mos kelmaydi» deb xulosa qilish uchun ikkilik «mos / mos emas» yondashuv yetarli emas. Men natijani drop-out va drop-in ehtimollarini hisobga olgan holda LR bilan baholayman.",
+   "boundary_uz": "Ekspert qisman profilni avtomatik ravishda istisno yoki mos kelish deb talqin qilmaydi; qaysi taxminlar va ehtimollar ishlatilganini ko‘rsatadi.",
+   "source_id": "gill2012_dropout",
+   "locator": "§1 Introduction; §5"
+  },
+  {
+   "q": "«Ommaviy halokatdan keyin DNK mosligi bilan shaxs aniqlandi, buni kim rasman tasdiqlaydi?»",
+   "good_answer_uz": "INTERPOL qo‘llanmasida DNK asosiy identifikatsiya usullaridan biri hisoblanadi, lekin shaxsni rasmiy tasdiqlash ishonchli ma’lumotlarni baholagandan keyin Identifikatsiya kengashi yoki mahalliy vakolatli organ tomonidan amalga oshiriladi. DNK ekspert o‘z taqqoslash natijasini va uning statistik baholashini taqdim etadi.",
+   "boundary_uz": "DNK ekspert vakolatli organ qarorini o‘rniga o‘zi «shaxs aniqlandi» deb e’lon qilmaydi; ko‘z bilan tanish yoki fotosuratni yagona asos qilmaslik.",
+   "source_id": "interpol_dvi2023",
+   "locator": "§5.4, PDF p. 15 of 110; §6, p. 16 of 110"
+  }
+ ]
+}

@@ -1,7 +1,7 @@
 name: forensic_expert
 description: "FORENSIC EXPERT — professional forensic reference, education and scientific calculation software."
 publish_to: 'none'
-version: 0.4.0+41
+version: 0.4.0+42
 resolution: workspace
 
 environment:
@@ -70,6 +70,7 @@ flutter:
     - assets/content/instruments/gc_ms/
     # «Asbob-uskunalar»: manbali matn (uz) + AI illyustratsiyalar (egasi bergan)
     - assets/content/equipment/
+    - assets/content/dna/
     - assets/images/instruments/
     # «Sinfda test» savollar banki (uz/ru/en): tools/class_quiz/import_quiz_bank.py
     - assets/content/class_quiz/

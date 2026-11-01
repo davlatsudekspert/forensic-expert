@@ -865,6 +865,227 @@
      "caption": "Radiolog va sud-tibbiy ekspert tasvirlarni birga o‘qiydi: 3D model va kesimlar"
     }
    ]
+  },
+  {
+   "id": "dna_thermocycler",
+   "group": "lab",
+   "name": "Termotsikler (PCR amplifikatori)",
+   "what": "STR lokuslarining millionlab nusxasini hosil qilish (PCR) uchun harorat sikllarini avtomatik bajaradigan asbob. Bu bosqichda bo‘yoq bilan belgilangan fragmentlar ham olinadi, ularni keyin kapillyar elektroforez ajratadi.",
+   "use": [
+    "Ekstraksiyadan va kvantifikatsiyadan keyin tanlangan STR to‘plami bilan DNKni kuchaytirish.",
+    "Har bir seriyada manfiy va musbat nazorat namunalari bilan ishlash."
+   ],
+   "care": [
+    "Yangi qPCR/PCR asbobini ishga tushirishdan oldin tekshirish: avval aniqlangan namunalarni yangi asbobda takrorlash, qizdirish blokidagi lunkalar orasida bir xillikni haroratni o‘lchash yoki takroriy namunalar bilan tekshirish.",
+    "Kalibrlash va profilaktik xizmat dasturi hujjatlashtiriladi; harorat kalibrlash maqsadlari qatoriga kiradi.",
+    "Kuchaytirish mahsulotini ochishga oid ishlar post-PCR zonasida bajariladi; zonadan zonaga o‘tishda qo‘lqop va kiyim almashtiriladi."
+   ],
+   "links": {
+    "methods": [],
+    "guides": [],
+    "lessons": []
+   },
+   "sources": [
+    {
+     "author": "Butler JM, Iyer H, Press R, Taylor MK, Vallone PM, Willis S",
+     "title": "DNA Mixture Interpretation: A NIST Scientific Foundation Review (NIST IR 8351), 2024",
+     "page": "§2.1.1, p. 33 (PCR vazifasi)",
+     "doi": "10.6028/NIST.IR.8351"
+    },
+    {
+     "author": "ENFSI DNA Working Group",
+     "title": "Guideline for Internal Validation / Verification of Various Aspects of the DNA Profiling Process (DNA-GDL-002), 2023",
+     "page": "§5.5 qPCR / PCR Instrument, p. 8",
+     "doi": ""
+    },
+    {
+     "author": "ENFSI DNA Working Group",
+     "title": "Best Practice Manual for Human Forensic Biology and DNA Profiling (ENFSI-DNA-BPM-03, version 01), 2022",
+     "page": "§4.2.6 Equipment Calibration and Preventive Maintenance, p. 12",
+     "doi": ""
+    },
+    {
+     "author": "ENFSI DNA Working Group",
+     "title": "Guideline for DNA Contamination Minimization in DNA Laboratories (DNA-GDL-003), 2023",
+     "page": "§5.6 Protective Clothing, p. 5; §5.8.4, p. 7",
+     "doi": ""
+    }
+   ]
+  },
+  {
+   "id": "dna_qpcr",
+   "group": "lab",
+   "name": "Real vaqt PCR asbobi (qPCR, kvantifikatsiya)",
+   "what": "Ajratilgan DNK miqdorini real vaqtda o‘lchaydi; bir nechta nishon orqali inson DNKsi miqdori, buzilish (DI), ingibitorlar (IPC) va erkak DNKsi ulushi haqida ham ma’lumot beradi.",
+   "use": [
+    "STR kuchaytirishga qancha DNK solinishini aniqlash.",
+    "Namunaning tahlilga yaroqli yoki yaroqsizligini oldindan baholash (buzilish va ingibitorlar bo‘yicha).",
+    "Jinsiy zo‘ravonlik ishlarida erkak DNKsi ulushini baholash."
+   ],
+   "care": [
+    "Kvantifikatsiyada ma’lum, sertifikatlangan miqdordagi standartlar bilan kalibrlash egri chizig‘i quriladi.",
+    "Har bir seriyada manfiy nazorat qo‘llaniladi; musbat nazorat ham ishlatilishi mumkin.",
+    "Asbob uchun aniqlash chegarasi (LOD), miqdoriy aniqlash chegarasi (LOQ) va ishchi oraliq tekshiriladi, qizdirish bloki bir xilligi nazorat qilinadi."
+   ],
+   "links": {
+    "methods": [],
+    "guides": [],
+    "lessons": []
+   },
+   "sources": [
+    {
+     "author": "Jäger R",
+     "title": "Genomic Multicopy Loci Targeted by Current Forensic Quantitative PCR Assays, 2024",
+     "page": "§1–3 (qPCR tamoyillari va ko‘p parametrli testlar)",
+     "doi": "10.3390/genes15101299"
+    },
+    {
+     "author": "ENFSI DNA Working Group",
+     "title": "Best Practice Manual for Human Forensic Biology and DNA Profiling (ENFSI-DNA-BPM-03, version 01), 2022",
+     "page": "§4.3.3 (kvantifikatsiya standartlari), p. 13; §7.2, p. 20",
+     "doi": ""
+    },
+    {
+     "author": "ENFSI DNA Working Group",
+     "title": "Guideline for Internal Validation / Verification of Various Aspects of the DNA Profiling Process (DNA-GDL-002), 2023",
+     "page": "§5.3 Quantification Kit, p. 7; §5.5, p. 8",
+     "doi": ""
+    }
+   ]
+  },
+  {
+   "id": "dna_genetic_analyzer",
+   "group": "lab",
+   "name": "Genetik analizator (kapillyar elektroforez, CE)",
+   "what": "Kuchaytirilgan va bo‘yoq bilan belgilangan STR fragmentlarini o‘lchami bo‘yicha kapillyarda ajratadi va lazer yordamida aniqlaydi; natija elektroferogramma (EPG) ko‘rinishida beriladi.",
+   "use": [
+    "Allel o‘lchamini ichki o‘lcham standarti va allel narvoniga nisbatan aniqlash.",
+    "Cho‘qqi balandligi (RFU) bo‘yicha aralashmalar va stutter, drop-out belgilarini baholash uchun ma’lumot olish."
+   ],
+   "care": [
+    "Ko‘p in’ektsiyadan keyin kapillyarlar ishdan chiqadi va ajratish sifati yomonlashadi; ajratish sifati allel narvonidagi allellarning ajralishi orqali kuzatiladi.",
+    "Takroriylik: allellar allel narvonidagi mos allelning o‘lchangan o‘lchamidan ± 0,5 bp oralig‘ida bo‘lishi kerak; in’ektsiyalar orasidagi o‘tish (carry-over) va kanallar orasidagi interferensiya (crosstalk) tekshiriladi.",
+    "Yangi asbobdan oldin ishlab chiqaruvchining texnik sertifikati va ishlash ko‘rsatkichlarini tekshirish tavsiya etiladi.",
+    "Ba’zi zamonaviy modellarda kartrij bir butun bo‘lib, kapillyarlar to‘plami, polimer va anod buferi bir joyda; kartrij o‘rnatilganda optik tekislash va spektral kalibrlash avtomatik bajariladi."
+   ],
+   "links": {
+    "methods": [],
+    "guides": [],
+    "lessons": []
+   },
+   "sources": [
+    {
+     "author": "Butler JM, Iyer H, Press R, Taylor MK, Vallone PM, Willis S",
+     "title": "DNA Mixture Interpretation: A NIST Scientific Foundation Review (NIST IR 8351), 2024",
+     "page": "§2.1.1, p. 33; §2.2.1, p. 37",
+     "doi": "10.6028/NIST.IR.8351"
+    },
+    {
+     "author": "ENFSI DNA Working Group",
+     "title": "Guideline for Internal Validation / Verification of Various Aspects of the DNA Profiling Process (DNA-GDL-002), 2023",
+     "page": "§5.6 Capillary Electrophoresis Instrument, pp. 8–9",
+     "doi": ""
+    },
+    {
+     "author": "ENFSI DNA Working Group",
+     "title": "Best Practice Manual for Human Forensic Biology and DNA Profiling (ENFSI-DNA-BPM-03, version 01), 2022",
+     "page": "§4.3.3, p. 13 (allel narvonlari va ichki o‘lcham standartlari)",
+     "doi": ""
+    },
+    {
+     "author": "Soldati G, Turrina S, Saccardo C, Ausania F, De Leo D",
+     "title": "Internal validation study to assess the SeqStudio for human identification's performance, 2023",
+     "page": "Introduction (SeqStudio kartriji)",
+     "doi": "10.1007/s00414-023-03016-y"
+    }
+   ]
+  },
+  {
+   "id": "dna_extraction",
+   "group": "lab",
+   "name": "Ekstraksiya roboti (avtomatlashtirilgan DNK ajratish)",
+   "what": "DNK ajratish va tozalash bosqichlarini qisman yoki to‘liq avtomatlashtiradi (masalan, magnit zarrachalar yoki silika asosli usullar). Avtomatlashtirish qo‘l bilan ishlashni kamaytiradi va ifloslanish xavfini pasaytiradi, lekin barcha ingibitorlarni olib tashlamaydi.",
+   "use": [
+    "Ko‘p namunali seriyalarni bir xil usulda qayta ishlash.",
+    "Buzilgan namunalar (suyak, tish) uchun silika/magnit zarracha asosidagi tozalash."
+   ],
+   "care": [
+    "Ochiq probirka yoki plastinkalar bilan ishlaydigan avtomatlashtirilgan tizimlar uchun validatsiya davomida ifloslanish xavfi tahlil qilinadi.",
+    "Robot tizimlari va ularning aksessuarlarini tozalash va dekontaminatsiya qilish bo‘yicha yozma tartiblar bo‘lishi kerak.",
+    "Robot dasturiy ta’minoti (firmware) o‘zgarishlari yozib boriladi va kerak bo‘lsa validatsiya qilinadi.",
+    "Avtomatik tayyorlashda ifloslanish musbat namunalar va bo‘sh namunalarni shaxmat tartibida joylashtirish bilan sinaladi."
+   ],
+   "links": {
+    "methods": [],
+    "guides": [],
+    "lessons": []
+   },
+   "sources": [
+    {
+     "author": "Cainé L, Henriques M, Rohovska A, Sousa B, Afonso Costa H, Correia Dias H va boshqalar",
+     "title": "Genetic Identification of Human Skeletal Remains in Forensic Context: A Review, 2026",
+     "page": "§7 (avtomatlashtirish va ifloslanish xavfi)",
+     "doi": "10.3390/genes17040492"
+    },
+    {
+     "author": "Zupanič Pajnič I",
+     "title": "Analysis of Human Degraded DNA in Forensic Genetics, 2025",
+     "page": "§3 Strategies for Successful DNA Acquisition (silika/paramagnit zarrachalar)",
+     "doi": "10.3390/genes16111375"
+    },
+    {
+     "author": "ENFSI DNA Working Group",
+     "title": "Guideline for DNA Contamination Minimization in DNA Laboratories (DNA-GDL-003), 2023",
+     "page": "§5.4 Equipment, pp. 4–5; §5.5 Procedures a), p. 5",
+     "doi": ""
+    },
+    {
+     "author": "ENFSI DNA Working Group",
+     "title": "Best Practice Manual for Human Forensic Biology and DNA Profiling (ENFSI-DNA-BPM-03, version 01), 2022",
+     "page": "§4.2.5 Software and Firmware, p. 12",
+     "doi": ""
+    },
+    {
+     "author": "ENFSI DNA Working Group",
+     "title": "Guideline for Internal Validation / Verification of Various Aspects of the DNA Profiling Process (DNA-GDL-002), 2023",
+     "page": "§5.2, p. 7; §5.4, p. 8",
+     "doi": ""
+    }
+   ]
+  },
+  {
+   "id": "dna_laminar",
+   "group": "lab",
+   "name": "PCR toza stoli (laminar shkaf)",
+   "what": "ENFSI qo‘llanmasi buyumlarni ko‘zdan kechirishda biologik xavf bo‘lgan joyda tegishli ventilyatsiyali shkaf ishlatilishini talab qiladi. PCR tayyorlash uchun laminar toza stol yoki ultrabinafsha dekontaminatsiyasi haqidagi aniq talablar o‘qilgan manbalarda topilmadi.",
+   "use": [
+    "Biologik xavfli buyumlarni ko‘rikdan o‘tkazish va namuna olishda xodim xavfsizligini ta’minlash (ventilyatsiya).",
+    "Pre-PCR zonasini tozaligini saqlash: ish yuzalari oson tozalanadigan bo‘lishi, pre-PCR va post-PCR ish zonalari ajratilgan bo‘lishi."
+   ],
+   "care": [
+    "Laboratoriya jihozlari va ish yuzalarini dekontaminatsiya qilish uchun yozma tartib va dekontaminatsiya samaradorligini ko‘rsatish talab etiladi.",
+    "Atrof-muhit monitoringi (ish yuzalaridan surtmalar) rejalashtirilishi tavsiya etiladi.",
+    "Pre-PCR va post-PCR ishlari orasida zonadan zonaga o‘tishda jihoz dekontaminatsiya qilinadi yoki kiyim almashtiriladi."
+   ],
+   "links": {
+    "methods": [],
+    "guides": [],
+    "lessons": []
+   },
+   "sources": [
+    {
+     "author": "ENFSI DNA Working Group",
+     "title": "Best Practice Manual for Human Forensic Biology and DNA Profiling (ENFSI-DNA-BPM-03, version 01), 2022",
+     "page": "§14.1.4 Biological Hazards (health and safety bobi); §4.4.3, p. 14",
+     "doi": ""
+    },
+    {
+     "author": "ENFSI DNA Working Group",
+     "title": "Guideline for DNA Contamination Minimization in DNA Laboratories (DNA-GDL-003), 2023",
+     "page": "§5.3 Facility, p. 4; §5.5 Procedures, p. 5; §5.8.4, p. 7",
+     "doi": ""
+    }
+   ]
   }
  ]
 }

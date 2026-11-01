@@ -68,11 +68,15 @@ class DnaTopic {
     required this.id,
     required this.title,
     required this.statements,
+    this.images = const [],
   });
 
   final String id;
   final String title;
   final List<DnaStatement> statements;
+
+  /// Illyustratsiyalar (AI yordamida chizilgan; izoh bilan).
+  final List<({String image, String caption})> images;
 }
 
 /// Sudda so‘roq: savol, to‘g‘ri javob va ekspert vakolati chegarasi.
@@ -127,7 +131,23 @@ class DnaBundle {
       final id = _s(m['id']);
       final title = _s(m['title']);
       if (id.isEmpty || title.isEmpty || statements.isEmpty) continue;
-      topics.add(DnaTopic(id: id, title: title, statements: statements));
+      topics.add(
+        DnaTopic(
+          id: id,
+          title: title,
+          statements: statements,
+          images: [
+            for (final g in _l(m['images']))
+              if (g is Map &&
+                  _s(g['image']).isNotEmpty &&
+                  _s(g['caption']).isNotEmpty)
+                (
+                  image: 'assets/images/instruments/${_s(g['image'])}.webp',
+                  caption: _s(g['caption']),
+                ),
+          ],
+        ),
+      );
     }
     final court = <DnaCourtQuestion>[
       for (final c in _l(j['court_questions']))
