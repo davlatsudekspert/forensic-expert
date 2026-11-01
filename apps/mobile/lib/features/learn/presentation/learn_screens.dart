@@ -14,8 +14,6 @@ import '../../../core/widgets/common.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/learn/learn_models.dart';
 import '../../../domain/plan/plan_models.dart';
-import '../../class_groups/presentation/groups_screens.dart'
-    show GroupsEntryCard;
 import '../../placeholder/presentation/in_development_view.dart';
 import '../../pro/presentation/pro_gate.dart';
 
@@ -77,48 +75,9 @@ class _LearnScreenState extends ConsumerState<LearnScreen> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   const SizedBox(height: FeSpace.xs),
-                  // «Sinfda test» — O‘qish bo‘limining tepasida (Asosiydan
-                  // 2 bosish; ustozlar uchun — Asosiydagi «Ustoz paneli»).
-                  FeCard(
-                    key: const Key('learn.classQuiz'),
-                    onTap: () => context.push(Routes.classQuiz),
-                    child: Row(
-                      children: [
-                        DecoratedBox(
-                          decoration: BoxDecoration(
-                            color: c.accentContainer,
-                            borderRadius: BorderRadius.circular(FeRadius.md),
-                          ),
-                          child: SizedBox.square(
-                            dimension: 44,
-                            child: Icon(
-                              Icons.groups_2_outlined,
-                              color: c.accent,
-                            ),
-                          ),
-                        ),
-                        const SizedBox(width: FeSpace.md),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(l.classQuizTitle, style: t.titleSmall),
-                              const SizedBox(height: 2),
-                              Text(
-                                l.classQuizCardSubtitle,
-                                style: t.bodySmall?.copyWith(
-                                  color: c.textSecondary,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Icon(Icons.chevron_right, color: c.textSecondary),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(height: FeSpace.xs),
-                  const GroupsEntryCard(),
+                  // Egasi qarori (2026-11-01): «O‘qish» — faqat kurslar.
+                  // Jonli guruh testi — talaba bosh sahifasida
+                  // ([ClassQuizEntryCard]); guruhlar — «Guruhlarim» kartasida.
                   FeSectionHeader(l.learnProgress),
                   if (lessons.isEmpty)
                     FeEmptyState(
@@ -863,4 +822,50 @@ class FeScrollableFlashcard extends StatelessWidget {
   @override
   Widget build(BuildContext context) =>
       ListView(children: [FeContentFrame(child: child)]);
+}
+
+/// Jonli guruh testiga kirish (kod yoki QR) — talaba bosh sahifasining
+/// tepasida.
+class ClassQuizEntryCard extends StatelessWidget {
+  const ClassQuizEntryCard({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return FeCard(
+      key: const Key('learn.classQuiz'),
+      onTap: () => context.push(Routes.classQuiz),
+      child: Row(
+        children: [
+          DecoratedBox(
+            decoration: BoxDecoration(
+              color: c.accentContainer,
+              borderRadius: BorderRadius.circular(FeRadius.md),
+            ),
+            child: SizedBox.square(
+              dimension: 44,
+              child: Icon(Icons.groups_2_outlined, color: c.accent),
+            ),
+          ),
+          const SizedBox(width: FeSpace.md),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(l.classQuizTitle, style: t.titleSmall),
+                const SizedBox(height: 2),
+                Text(
+                  l.classQuizCardSubtitle,
+                  style: t.bodySmall?.copyWith(color: c.textSecondary),
+                ),
+              ],
+            ),
+          ),
+          Icon(Icons.chevron_right, color: c.textSecondary),
+        ],
+      ),
+    );
+  }
 }

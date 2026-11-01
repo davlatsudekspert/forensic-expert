@@ -13,6 +13,7 @@ import '../../../domain/equipment/equipment.dart';
 import '../../../domain/learn/study_models.dart';
 import '../../class_quiz/presentation/teacher_panel_screen.dart'
     show watchIsTeacher;
+import '../../learn/presentation/learn_screens.dart' show ClassQuizEntryCard;
 import '../daily_fact.dart';
 import '../daily_question.dart';
 import '../workbench.dart';
@@ -111,6 +112,8 @@ class StudentDesk extends ConsumerWidget {
           l.studentDeskTitle,
           padding: const EdgeInsets.only(bottom: FeSpace.xs),
         ),
+        const ClassQuizEntryCard(),
+        const SizedBox(height: FeSpace.sm),
         _DeskGrid(items: Workbench.studentCards),
         const SizedBox(height: FeSpace.sm),
         const EquipmentCard(group: EquipmentGroup.lab),

@@ -20,6 +20,8 @@ void main() {
     'appTagline',
     // Slayd hisoblagichi: faqat raqamlar va «/».
     'lessonViewerCounter',
+    // DNK sudda so‘roq: «1. Savol» — faqat raqam va nuqta.
+    'dnaQuestionNumbered',
     // Manba bo‘limi havolasi: faqat «§» belgisi + lokal bo‘lim nomi.
     'sourceSectionRef',
     // Yakuniy: xalqaro identifikator (PubMed ID).
