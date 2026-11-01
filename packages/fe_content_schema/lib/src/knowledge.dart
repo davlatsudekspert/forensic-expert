@@ -141,7 +141,11 @@ class SourcedNote {
   final String? kind;
 
   /// [lang] uchun matn; topilmasa `en`, so‘ng [text].
-  String resolve(String lang) => texts[lang] ?? texts['en'] ?? text;
+  String resolve(String lang) {
+    final v = texts[lang];
+    if (v != null) return LocalizedTextHook.display(lang, v);
+    return texts['en'] ?? text;
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -213,7 +217,11 @@ class PreparationStep {
   /// Retsept varianti (`a`, `b`…).
   final String? variant;
 
-  String resolve(String lang) => texts[lang] ?? texts['en'] ?? text;
+  String resolve(String lang) {
+    final v = texts[lang];
+    if (v != null) return LocalizedTextHook.display(lang, v);
+    return texts['en'] ?? text;
+  }
 }
 
 /// Bir reaktivning muqobil tayyorlash usuli (manbada «а)», «б)» yoki
@@ -603,4 +611,13 @@ class KnowledgeTopic {
   /// PHASE 8: aniq fan (genetika, entomologiya, mikrobiologiya…). Berilmasa
   /// — maydon / FM mavzusidan.
   final ForensicDiscipline? discipline;
+}
+
+/// Ilova ko‘rsatish qatlami uchun ilgak (masalan, o‘zbekcha matnni yangi
+/// alifboda ko‘rsatish). Paket ma’lumotni o‘zgartirmaydi — faqat
+/// `resolve` qaytaradigan qiymat.
+abstract final class LocalizedTextHook {
+  static String Function(String lang, String text) display = _identity;
+
+  static String _identity(String lang, String text) => text;
 }

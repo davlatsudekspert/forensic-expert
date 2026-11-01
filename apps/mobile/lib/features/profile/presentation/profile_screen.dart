@@ -333,6 +333,17 @@ class ProfileScreen extends ConsumerWidget {
                         value: jurisdiction.name(lang),
                         onTap: () => context.push(Routes.profileJurisdiction),
                       ),
+                      // Yangi alifbo (O‘RQ-1184) — faqat o‘zbekcha UI’da;
+                      // standart o‘chiq (egasi qarori, 2026-11-01).
+                      if (lang == 'uz')
+                        SwitchListTile(
+                          key: const Key('profile.newAlphabet'),
+                          secondary: const Icon(Icons.translate),
+                          title: Text(l.settingsNewAlphabet),
+                          subtitle: Text(l.settingsNewAlphabetHint),
+                          value: settings.newUzAlphabet,
+                          onChanged: controller.setNewUzAlphabet,
+                        ),
                     ],
                   ),
                   FeSectionHeader(l.profileSectionAppearance),

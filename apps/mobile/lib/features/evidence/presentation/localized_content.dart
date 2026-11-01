@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../app/providers.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
+import '../../../core/l10n/fe_localizations_delegate.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../domain/evidence/content_translations.dart';
 
@@ -40,16 +41,29 @@ LocalizedContent resolveContent(
   required String source,
   String? originalLang,
   Set<String> sameTextKinds = const {},
-}) => ref
-    .watch(contentTranslationsProvider)
-    .resolve(
-      kind,
-      id,
-      source: source,
-      lang: Localizations.localeOf(context).languageCode,
-      originalLang: originalLang,
-      sameTextKinds: sameTextKinds,
-    );
+}) {
+  final r = ref
+      .watch(contentTranslationsProvider)
+      .resolve(
+        kind,
+        id,
+        source: source,
+        lang: Localizations.localeOf(context).languageCode,
+        originalLang: originalLang,
+        sameTextKinds: sameTextKinds,
+      );
+  // Yangi alifbo — faqat ko‘rsatiladigan matnga; asl matn (dalil) o‘zgarmaydi.
+  final shown = uzDisplay(r.textLang, r.text);
+  if (identical(shown, r.text) || shown == r.text) return r;
+  return LocalizedContent(
+    text: shown,
+    textLang: r.textLang,
+    original: r.original,
+    originalLang: r.originalLang,
+    requestedLang: r.requestedLang,
+    status: r.status,
+  );
+}
 
 /// Tarjima holati belgisi: «Avtomatik tarjima — tekshirilmagan».
 class TranslationStatusBadge extends StatelessWidget {

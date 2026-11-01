@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../core/design/theme.dart';
+import '../core/l10n/fe_localizations_delegate.dart';
 import '../core/l10n/generated/app_localizations.dart';
 import '../core/settings/app_settings.dart';
 import '../core/settings/settings_controller.dart';
@@ -27,6 +28,9 @@ class ForensicExpertApp extends ConsumerWidget {
     );
     final contrast = ref.watch(
       settingsControllerProvider.select((s) => s.contrast),
+    );
+    final newUz = ref.watch(
+      settingsControllerProvider.select((s) => s.newUzAlphabet),
     );
     final router = ref.watch(routerProvider);
     // Taklif kodi kuzatuvchisi doim faol: foydalanuvchi kirgach kutilayotgan
@@ -71,7 +75,7 @@ class ForensicExpertApp extends ConsumerWidget {
           UpdateGateHost(child: child ?? const SizedBox.shrink()),
       locale: locale,
       supportedLocales: SupportedLanguages.locales,
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      localizationsDelegates: FeLocalizationsDelegate.all(newUz: newUz),
       localeResolutionCallback: (device, supported) {
         if (device != null) {
           for (final s in supported) {

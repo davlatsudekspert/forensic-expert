@@ -77,6 +77,8 @@ print(f'l10n_visual_audit: {len(UZ)} keys')
 # Yangi kalitlar (uch tilda; ru/en — UI matni, kontent emas).
 NEW = {
   'fmTopicsPreparing': {'uz': 'Tayyorlanayotgan mavzular', 'ru': 'Темы в подготовке', 'en': 'Topics in preparation'},
+  'settingsNewAlphabet': {'uz': 'Yangi alifbo (Ö, Ğ, Ş, Ç)', 'ru': 'Новый узбекский алфавит (Ö, Ğ, Ş, Ç)', 'en': 'New Uzbek alphabet (Ö, Ğ, Ş, Ç)'},
+  'settingsNewAlphabetHint': {'uz': 'O‘RQ-1184 bo‘yicha; 2027-yil 22-apreldan majburiy. Manba iqtiboslari va adabiyotlar asl yozuvda qoladi.', 'ru': 'По закону ЗРУ-1184; обязателен с 22 апреля 2027 года. Цитаты из источников и библиография остаются в исходном написании.', 'en': 'Per Law No. 1184; mandatory from 22 April 2027. Source quotes and references keep their original spelling.'},
 }
 for lang in ('uz', 'ru', 'en'):
     f = ARB.parent / f'app_{lang}.arb'

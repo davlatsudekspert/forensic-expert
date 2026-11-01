@@ -8,6 +8,7 @@ import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
+import '../../../core/l10n/fe_localizations_delegate.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
@@ -117,7 +118,7 @@ class _EquipmentTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
-    final (title, subtitle) = tileTitle(item.name);
+    final (title, subtitle) = tileTitle(_u(item.name));
     return FeCard(
       key: Key('equipment.tile.${item.id}'),
       padding: EdgeInsets.zero,
@@ -284,7 +285,7 @@ class EquipmentDetailScreen extends ConsumerWidget {
       ],
     );
     return Scaffold(
-      appBar: AppBar(title: FeAppBarTitle(item.name)),
+      appBar: AppBar(title: FeAppBarTitle(_u(item.name))),
       body: ListView(
         key: Key('equipment.detail.${item.id}'),
         padding: EdgeInsets.only(
@@ -329,14 +330,14 @@ class EquipmentDetailScreen extends ConsumerWidget {
                   ),
                 ],
                 FeSectionHeader(l.equipWhat),
-                Text(item.what, style: t.bodyLarge),
+                Text(_u(item.what), style: t.bodyLarge),
                 if (item.use.isNotEmpty) ...[
                   FeSectionHeader(l.equipUse),
-                  bullets(item.use),
+                  bullets(item.use.map(_u).toList()),
                 ],
                 if (item.steps.isNotEmpty) ...[
                   FeSectionHeader(l.equipSteps),
-                  for (final (i, x) in item.steps.indexed)
+                  for (final (i, x) in item.steps.map(_u).indexed)
                     Padding(
                       padding: const EdgeInsets.only(bottom: FeSpace.sm),
                       child: Row(
@@ -406,7 +407,7 @@ class EquipmentDetailScreen extends ConsumerWidget {
                               ),
                               const SizedBox(height: 4),
                               Text(
-                                g.caption,
+                                _u(g.caption),
                                 maxLines: 2,
                                 overflow: TextOverflow.ellipsis,
                                 style: t.bodySmall?.copyWith(
@@ -422,18 +423,18 @@ class EquipmentDetailScreen extends ConsumerWidget {
                 ],
                 if (item.findings.isNotEmpty) ...[
                   FeSectionHeader(l.equipFindings),
-                  bullets(item.findings),
+                  bullets(item.findings.map(_u).toList()),
                 ],
                 if (item.care.isNotEmpty) ...[
                   FeSectionHeader(l.equipCare),
-                  bullets(item.care),
+                  bullets(item.care.map(_u).toList()),
                 ],
                 if (item.national.isNotEmpty) ...[
                   const SizedBox(height: FeSpace.md),
                   FeBanner(
                     key: const Key('equipment.national'),
                     icon: Icons.flag_outlined,
-                    text: item.national,
+                    text: _u(item.national),
                   ),
                 ],
                 if (related.isNotEmpty) ...[
@@ -525,3 +526,6 @@ void _openFull(BuildContext context, String image, String caption) {
     ),
   );
 }
+
+/// Kontent matni (asli o‘zbekcha) — yangi alifbo yoqilgan bo‘lsa o‘giriladi.
+String _u(String s) => uzDisplay('uz', s);

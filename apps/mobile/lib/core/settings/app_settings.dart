@@ -39,6 +39,7 @@ class AppSettings {
     this.contrast = ContrastPreference.system,
     this.jurisdictionId = internationalJurisdictionId,
     this.declaredRole,
+    this.newUzAlphabet = false,
   });
 
   /// `null` — foydalanuvchi hali til tanlamagan (birinchi ishga tushirish).
@@ -56,6 +57,11 @@ class AppSettings {
   /// nomi). Faqat UI’ni moslashtiradi — hech qanday huquq bermaydi.
   final String? declaredRole;
 
+  /// O‘zbekcha matnni yangi alifboda ko‘rsatish (O‘RQ-1184: ö, ğ, ş, ç, ʼ).
+  /// Standart — o‘chiq (qonun 22.04.2027 dan majburiy; egasi qarori,
+  /// 2026-11-01). Faqat ko‘rsatish: ma’lumot asl yozuvda qoladi.
+  final bool newUzAlphabet;
+
   bool get hasLanguage => locale != null;
 
   bool get disclaimerAccepted =>
@@ -72,6 +78,7 @@ class AppSettings {
     ContrastPreference? contrast,
     String? jurisdictionId,
     String? declaredRole,
+    bool? newUzAlphabet,
   }) => AppSettings(
     locale: locale ?? this.locale,
     themeMode: themeMode ?? this.themeMode,
@@ -81,5 +88,6 @@ class AppSettings {
     contrast: contrast ?? this.contrast,
     jurisdictionId: jurisdictionId ?? this.jurisdictionId,
     declaredRole: declaredRole ?? this.declaredRole,
+    newUzAlphabet: newUzAlphabet ?? this.newUzAlphabet,
   );
 }

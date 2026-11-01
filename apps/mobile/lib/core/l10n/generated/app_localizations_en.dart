@@ -12597,4 +12597,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get fmTopicsPreparing => 'Topics in preparation';
+
+  @override
+  String get settingsNewAlphabet => 'New Uzbek alphabet (Ö, Ğ, Ş, Ç)';
+
+  @override
+  String get settingsNewAlphabetHint =>
+      'Per Law No. 1184; mandatory from 22 April 2027. Source quotes and references keep their original spelling.';
 }

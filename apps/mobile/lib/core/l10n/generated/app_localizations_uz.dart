@@ -12523,4 +12523,11 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get fmTopicsPreparing => 'Tayyorlanayotgan mavzular';
+
+  @override
+  String get settingsNewAlphabet => 'Yangi alifbo (Ö, Ğ, Ş, Ç)';
+
+  @override
+  String get settingsNewAlphabetHint =>
+      'O‘RQ-1184 bo‘yicha; 2027-yil 22-apreldan majburiy. Manba iqtiboslari va adabiyotlar asl yozuvda qoladi.';
 }

@@ -10,6 +10,8 @@ library;
 import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/foundation.dart';
 
+import '../../core/l10n/fe_localizations_delegate.dart';
+
 import '../evidence/content_translations.dart';
 
 /// Uch tilli matn. Tanlangan tilda bo‘lmasa — boshqa tildagi asl matn
@@ -32,10 +34,10 @@ class Tri {
 
   LocalizedPick pick(String lang) {
     final v = values[lang];
-    if (v != null) return LocalizedPick(v, lang, false);
+    if (v != null) return LocalizedPick(uzDisplay(lang, v), lang, false);
     for (final l in _order) {
       final x = values[l];
-      if (x != null) return LocalizedPick(x, l, true);
+      if (x != null) return LocalizedPick(uzDisplay(l, x), l, true);
     }
     return const LocalizedPick('', 'uz', true);
   }

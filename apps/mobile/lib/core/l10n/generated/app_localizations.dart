@@ -21824,6 +21824,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Topics in preparation'**
   String get fmTopicsPreparing;
+
+  /// Forensic medicine hub: header above topics that have no sourced entries yet.
+  ///
+  /// In en, this message translates to:
+  /// **'New Uzbek alphabet (Ö, Ğ, Ş, Ç)'**
+  String get settingsNewAlphabet;
+
+  /// Forensic medicine hub: header above topics that have no sourced entries yet.
+  ///
+  /// In en, this message translates to:
+  /// **'Per Law No. 1184; mandatory from 22 April 2027. Source quotes and references keep their original spelling.'**
+  String get settingsNewAlphabetHint;
 }
 
 class _AppLocalizationsDelegate

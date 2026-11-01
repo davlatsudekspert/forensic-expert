@@ -43,6 +43,9 @@ class SettingsController extends Notifier<AppSettings> {
   Future<void> setUserMode(UserMode mode, {String? role}) =>
       _update(state.copyWith(userMode: mode, declaredRole: role));
 
+  Future<void> setNewUzAlphabet(bool on) =>
+      _update(state.copyWith(newUzAlphabet: on));
+
   Future<void> acceptDisclaimer() => _update(
     state.copyWith(acceptedDisclaimerVersion: currentDisclaimerVersion),
   );

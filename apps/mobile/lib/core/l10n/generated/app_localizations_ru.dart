@@ -12641,4 +12641,11 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get fmTopicsPreparing => 'Темы в подготовке';
+
+  @override
+  String get settingsNewAlphabet => 'Новый узбекский алфавит (Ö, Ğ, Ş, Ç)';
+
+  @override
+  String get settingsNewAlphabetHint =>
+      'По закону ЗРУ-1184; обязателен с 22 апреля 2027 года. Цитаты из источников и библиография остаются в исходном написании.';
 }
