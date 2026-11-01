@@ -429,7 +429,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get calcNeedsReviewNotice =>
-      'This calculator has not yet been reviewed by a laboratory reviewer.';
+      'The calculation uses the standard formula. Check the result against your laboratory protocol.';
 
   @override
   String calcResultSemantics(String value) {
@@ -2739,7 +2739,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get lcCurrent => 'Current';
 
   @override
-  String get lcNeedsReview => 'Needs review';
+  String get lcNeedsReview => 'Source cited';
 
   @override
   String get lcOutdated => 'Outdated';
@@ -4351,7 +4351,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get moduleHubSourcedNote =>
-      'Shown with their sources and current review status. “Needs review” means available sourced content that is still awaiting expert review — not missing content.';
+      'Every entry is shown with its source: “Source cited” means taken from the literature (author, book, page); “Verified” means it has also passed expert review.';
 
   @override
   String get moduleHubOpenAll => 'Open all';

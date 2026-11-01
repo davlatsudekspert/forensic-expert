@@ -526,7 +526,7 @@
   "@calcDefinitional": {
     "description": "Reference note for definitional formulas."
   },
-  "calcNeedsReviewNotice": "This calculator has not yet been reviewed by a laboratory reviewer.",
+  "calcNeedsReviewNotice": "The calculation uses the standard formula. Check the result against your laboratory protocol.",
   "@calcNeedsReviewNotice": {
     "description": "Calculator review notice."
   },
@@ -3573,7 +3573,7 @@
   "@lcCurrent": {
     "description": "Lifecycle."
   },
-  "lcNeedsReview": "Needs review",
+  "lcNeedsReview": "Source cited",
   "@lcNeedsReview": {
     "description": "Lifecycle."
   },
@@ -5645,7 +5645,7 @@
   "@moduleHubSourced": {
     "description": "Section."
   },
-  "moduleHubSourcedNote": "Shown with their sources and current review status. “Needs review” means available sourced content that is still awaiting expert review — not missing content.",
+  "moduleHubSourcedNote": "Every entry is shown with its source: “Source cited” means taken from the literature (author, book, page); “Verified” means it has also passed expert review.",
   "@moduleHubSourcedNote": {
     "description": "Note."
   },

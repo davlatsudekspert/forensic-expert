@@ -936,7 +936,7 @@ class ClaimMeta extends StatelessWidget {
         c.outdated,
         Icons.history,
       ),
-      ScientificStatus.rejected => (l.statusNeedsReview, c.danger, Icons.block),
+      ScientificStatus.rejected => (l.statusRejected, c.danger, Icons.block),
       _ when confirmedSource => (
         l.confirmedSourceChip,
         c.accent,

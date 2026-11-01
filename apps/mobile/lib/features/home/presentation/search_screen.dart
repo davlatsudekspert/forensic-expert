@@ -306,7 +306,8 @@ class _Results extends ConsumerWidget {
       ScientificStatus.reviewed => l.statusReviewed,
       ScientificStatus.outdated => l.statusOutdated,
       ScientificStatus.needsReview => l.statusSourced,
-      _ => l.statusNeedsReview,
+      ScientificStatus.rejected => l.statusRejected,
+      _ => l.statusDraft,
     };
 
     /// Natijaning tekshiruv holati (bo‘lsa).

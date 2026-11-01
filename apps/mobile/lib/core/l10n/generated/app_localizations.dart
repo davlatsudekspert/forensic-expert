@@ -865,7 +865,7 @@ abstract class AppLocalizations {
   /// Calculator review notice.
   ///
   /// In en, this message translates to:
-  /// **'This calculator has not yet been reviewed by a laboratory reviewer.'**
+  /// **'The calculation uses the standard formula. Check the result against your laboratory protocol.'**
   String get calcNeedsReviewNotice;
 
   /// Screen reader label for the result.
@@ -5041,7 +5041,7 @@ abstract class AppLocalizations {
   /// Lifecycle.
   ///
   /// In en, this message translates to:
-  /// **'Needs review'**
+  /// **'Source cited'**
   String get lcNeedsReview;
 
   /// Lifecycle.
@@ -7950,7 +7950,7 @@ abstract class AppLocalizations {
   /// Note.
   ///
   /// In en, this message translates to:
-  /// **'Shown with their sources and current review status. “Needs review” means available sourced content that is still awaiting expert review — not missing content.'**
+  /// **'Every entry is shown with its source: “Source cited” means taken from the literature (author, book, page); “Verified” means it has also passed expert review.'**
   String get moduleHubSourcedNote;
 
   /// Action.

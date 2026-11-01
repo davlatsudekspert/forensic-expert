@@ -154,15 +154,16 @@ class EntryDetailScreen extends ConsumerWidget {
                       label: l.detailEvidenceStatus,
                       value: ReviewStatusBadge(status: entry.status),
                     ),
-                    _KeyValue(
-                      label: l.detailLastReviewed,
-                      value: Text(
-                        entry.lastReviewed == null
-                            ? l.detailNotReviewed
-                            : feDate(context, entry.lastReviewed!),
-                        style: t.bodyMedium,
+                    // Taqriz sanasi bo‘lmasa qator ko‘rsatilmaydi («Tekshirilmagan»
+                    // o‘rniga — holat yuqoridagi belgida: «Manba keltirilgan»).
+                    if (entry.lastReviewed != null)
+                      _KeyValue(
+                        label: l.detailLastReviewed,
+                        value: Text(
+                          feDate(context, entry.lastReviewed!),
+                          style: t.bodyMedium,
+                        ),
                       ),
-                    ),
                   ],
                   if (entry.details != null)
                     // Kontent paketi yozuvi: «Qisqacha» → nomlar → …

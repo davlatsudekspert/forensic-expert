@@ -429,7 +429,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get calcNeedsReviewNotice =>
-      'Калькулятор ещё не проверен лабораторным рецензентом.';
+      'Расчёт выполняется по стандартной формуле. Сверьте результат с протоколом вашей лаборатории.';
 
   @override
   String calcResultSemantics(String value) {
@@ -2748,7 +2748,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get lcCurrent => 'Актуально';
 
   @override
-  String get lcNeedsReview => 'Требует проверки';
+  String get lcNeedsReview => 'Источник указан';
 
   @override
   String get lcOutdated => 'Устарело';
@@ -4361,7 +4361,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get moduleHubSourcedNote =>
-      'Показаны с источниками и текущим статусом проверки. «Требует проверки» означает доступные материалы с источниками, ожидающие экспертной проверки, — а не отсутствие материалов.';
+      'Каждая запись показана с источником: «Источник указан» — взято из литературы (автор, книга, страница); «Подтверждено» — дополнительно прошло экспертную рецензию.';
 
   @override
   String get moduleHubOpenAll => 'Открыть все';

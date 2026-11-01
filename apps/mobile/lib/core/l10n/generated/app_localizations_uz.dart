@@ -434,7 +434,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get calcNeedsReviewNotice =>
-      'Bu kalkulyator hali laboratoriya taqrizchisi tomonidan tekshirilmagan.';
+      'Hisob standart formula bo‘yicha bajariladi. Natijani laboratoriyangiz protokoli bilan solishtiring.';
 
   @override
   String calcResultSemantics(String value) {
