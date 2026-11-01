@@ -81,7 +81,7 @@ void main() {
       await qa.tapTooltip('Profil');
       await qa.tapText('Kirish (email kod)');
       qa.expectText(l.emailCodeSend, s);
-      qa.expectText('SINOV', s, why: 'MOCK backend belgisi ko‘rinishi kerak');
+      qa.expectText('Sinov rejimi', s, why: 'MOCK backend belgisi ko‘rinishi kerak');
     });
 
     await qa.step('Noto‘g‘ri email → tushunarli xato', (s) async {
