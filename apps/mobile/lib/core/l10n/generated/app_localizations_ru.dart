@@ -7367,7 +7367,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get trTopicSummaryNote =>
-      'Составлено по утверждениям карточки с источниками; оригинальная цитата — ниже.';
+      'Кратко по данным источника; оригинальная цитата — ниже.';
 
   @override
   String get legalTitleUnofficial =>

@@ -12894,7 +12894,7 @@ abstract class AppLocalizations {
   /// Note under the topic card explanation header.
   ///
   /// In en, this message translates to:
-  /// **'Compiled from the sourced statements on this card; the original quote is below.'**
+  /// **'A short summary of the source; the original quotation is below.'**
   String get trTopicSummaryNote;
 
   /// Status line under a legal document title shown as a translation.

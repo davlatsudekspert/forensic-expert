@@ -22,6 +22,11 @@ V = {
         "ru": "Каждая запись показана с источником: «Источник указан» — взято из литературы (автор, книга, страница); «Подтверждено» — дополнительно прошло экспертную рецензию.",
         "en": "Every entry is shown with its source: “Source cited” means taken from the literature (author, book, page); “Verified” means it has also passed expert review.",
     },
+    "trTopicSummaryNote": {
+        "uz": "Manbadagi ma’lumot asosida qisqacha; asl iqtibos quyida.",
+        "ru": "Кратко по данным источника; оригинальная цитата — ниже.",
+        "en": "A short summary of the source; the original quotation is below.",
+    },
 }
 
 

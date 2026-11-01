@@ -7303,7 +7303,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get trTopicSummaryNote =>
-      'Kartadagi manbali da’volar asosida tuzilgan; asl iqtibos quyida.';
+      'Manbadagi ma’lumot asosida qisqacha; asl iqtibos quyida.';
 
   @override
   String get legalTitleUnofficial =>

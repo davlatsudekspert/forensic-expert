@@ -7330,7 +7330,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get trTopicSummaryNote =>
-      'Compiled from the sourced statements on this card; the original quote is below.';
+      'A short summary of the source; the original quotation is below.';
 
   @override
   String get legalTitleUnofficial =>
