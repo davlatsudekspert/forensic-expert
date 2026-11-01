@@ -79,6 +79,15 @@ class GcmsReadingScreen extends StatelessWidget {
     ('Ketamin', [180, 209, 182, 152, 181, 30, 211, 138]),
   ];
 
+  /// Mashq uchun (darsdagi 23–26-slaydlar; ko‘pdan kamga tartib).
+  static const quizIons = <(String, List<int>)>[
+    ..._ions,
+    ('Psilotsin', [58, 204, 59, 42, 30, 146, 77, 44]),
+    ('Psilotsibin', [58, 42, 30, 51, 204, 146, 77, 44]),
+    ('Xlordiazepoksid', [282, 299, 284, 283, 241, 56, 301, 253]),
+    ('Fensiklidin', [243, 214, 200, 186, 166, 158, 84, 77]),
+  ];
+
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
@@ -171,6 +180,8 @@ class GcmsReadingScreen extends StatelessWidget {
                     ],
                   ),
                 ),
+                FeSectionHeader(l.labHubQuiz),
+                const _IonQuiz(),
                 const SizedBox(height: FeSpace.md),
                 Text(
                   source,
@@ -447,4 +458,138 @@ class _Spec extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant _Spec old) => false;
+}
+
+/// Mashq: «Spektrga qarab moddani toping». Javob variantlari — asosiy ioni
+/// bir xil yoki yaqin moddalar (efedrin/efedron, psilotsin/psilotsibin …),
+/// ya’ni farqni 2- va 3- ionlar bo‘yicha ko‘rish o‘rgatiladi.
+class _IonQuiz extends StatefulWidget {
+  const _IonQuiz();
+
+  @override
+  State<_IonQuiz> createState() => _IonQuizState();
+}
+
+class _IonQuizState extends State<_IonQuiz> {
+  static const _order = [1, 5, 0, 8, 2, 6, 3, 4, 7, 9];
+  int _step = 0;
+  int? _picked;
+  int _score = 0;
+
+  List<(String, List<int>)> get _all => GcmsReadingScreen.quizIons;
+
+  int get _answer => _order[_step % _order.length];
+
+  /// Variantlar: to‘g‘ri javob + asosiy ioni eng yaqin 3 modda (barqaror).
+  List<int> _options() {
+    final a = _all[_answer];
+    final others =
+        [
+          for (var i = 0; i < _all.length; i++)
+            if (i != _answer) i,
+        ]..sort((x, y) {
+          final dx = (_all[x].$2.first - a.$2.first).abs();
+          final dy = (_all[y].$2.first - a.$2.first).abs();
+          return dx != dy ? dx.compareTo(dy) : x.compareTo(y);
+        });
+    final opts = [_answer, ...others.take(3)]
+      ..sort((x, y) => _all[x].$1.compareTo(_all[y].$1));
+    return opts;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final (name, ions) = _all[_answer];
+    final done = _picked != null;
+    return FeCard(
+      key: const Key('gcms.quiz'),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text(
+            '${_step % _order.length + 1}/${_order.length} · '
+            '${l.labHubQuizPrompt}',
+            style: t.titleSmall?.copyWith(fontWeight: FontWeight.w600),
+          ),
+          const SizedBox(height: FeSpace.xs),
+          Wrap(
+            spacing: 6,
+            runSpacing: 6,
+            children: [
+              for (final (i, m) in ions.indexed) _IonChip(mz: m, base: i == 0),
+            ],
+          ),
+          const SizedBox(height: FeSpace.sm),
+          for (final o in _options())
+            Padding(
+              padding: const EdgeInsets.only(bottom: FeSpace.xs),
+              child: OutlinedButton(
+                key: Key('gcms.quiz.opt.$o'),
+                style: OutlinedButton.styleFrom(
+                  alignment: Alignment.centerLeft,
+                  minimumSize: const Size.fromHeight(44),
+                  backgroundColor: !done
+                      ? null
+                      : o == _answer
+                      ? c.verified.withValues(alpha: 0.14)
+                      : o == _picked
+                      ? c.danger.withValues(alpha: 0.12)
+                      : null,
+                ),
+                onPressed: done
+                    ? null
+                    : () => setState(() {
+                        _picked = o;
+                        if (o == _answer) _score++;
+                      }),
+                child: Text(_all[o].$1),
+              ),
+            ),
+          if (done) ...[
+            const SizedBox(height: FeSpace.xs),
+            Text(
+              '${_picked == _answer ? '✓' : '✗'} $name: asosiy ion m/z '
+              '${ions[0]}, keyingilari ${ions[1]} va ${ions[2]}. '
+              '${_twinNote(name)}',
+              key: const Key('gcms.quiz.explain'),
+              style: t.bodySmall,
+            ),
+            const SizedBox(height: FeSpace.sm),
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    l.labHubQuizScore(_score, _step + 1),
+                    style: t.bodySmall?.copyWith(color: c.textSecondary),
+                  ),
+                ),
+                FilledButton(
+                  key: const Key('gcms.quiz.next'),
+                  onPressed: () => setState(() {
+                    _step = (_step + 1) % _order.length;
+                    if (_step == 0) _score = 0;
+                    _picked = null;
+                  }),
+                  child: Text(l.labHubQuizNext),
+                ),
+              ],
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+
+  String _twinNote(String name) => switch (name) {
+    'Efedrin' ||
+    'Efedron' => 'Efedrin va efedronda 58 asosiy; farq 2-ionda (146 / 77).',
+    'Psilotsin' || 'Psilotsibin' =>
+      'Psilotsin va psilotsibinda 58 asosiy; farq 2-ionda (204 / 42).',
+    'Diazepam' || 'Xlordiazepoksid' =>
+      'Benzodiazepinlar: diazepamda 256, xlordiazepoksidda 282 asosiy.',
+    _ => '',
+  };
 }

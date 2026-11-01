@@ -21698,6 +21698,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Histology: interpretation limits'**
   String get deathHubHistology;
+
+  /// GC-MS reading: practice section header.
+  ///
+  /// In en, this message translates to:
+  /// **'Practice: identify the substance by its spectrum'**
+  String get labHubQuiz;
+
+  /// GC-MS practice: question prompt.
+  ///
+  /// In en, this message translates to:
+  /// **'Main m/z ions (most to least abundant). Which substance is it?'**
+  String get labHubQuizPrompt;
+
+  /// GC-MS practice: next button.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get labHubQuizNext;
+
+  /// GC-MS practice: running score.
+  ///
+  /// In en, this message translates to:
+  /// **'Correct: {correct} of {total}'**
+  String labHubQuizScore(int correct, int total);
 }
 
 class _AppLocalizationsDelegate

@@ -12460,4 +12460,19 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get deathHubHistology => 'Gistologiya: talqin cheklovlari';
+
+  @override
+  String get labHubQuiz => 'Mashq: spektrga qarab moddani toping';
+
+  @override
+  String get labHubQuizPrompt =>
+      'Asosiy m/z ionlar (ko‘pdan kamga). Bu qaysi modda?';
+
+  @override
+  String get labHubQuizNext => 'Keyingisi';
+
+  @override
+  String labHubQuizScore(int correct, int total) {
+    return 'To‘g‘ri: $total tadan $correct ta';
+  }
 }

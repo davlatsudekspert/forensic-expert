@@ -12572,4 +12572,19 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get deathHubHistology => 'Гистология: ограничения интерпретации';
+
+  @override
+  String get labHubQuiz => 'Практика: определите вещество по спектру';
+
+  @override
+  String get labHubQuizPrompt =>
+      'Основные ионы m/z (по убыванию). Какое это вещество?';
+
+  @override
+  String get labHubQuizNext => 'Дальше';
+
+  @override
+  String labHubQuizScore(int correct, int total) {
+    return 'Верно: $correct из $total';
+  }
 }

@@ -104,6 +104,14 @@ k("deathHubSudden", "Cause of death hub group.", "Sudden death: laboratory help"
 k("deathHubPoison", "Cause of death hub group.", "Suspected poisoning", "Подозрение на отравление", "Zaharlanish gumoni")
 k("deathHubIdentification", "Cause of death hub group.", "Imaging and identification", "Визуализация и идентификация", "Tasvirlash va identifikatsiya")
 k("deathHubHistology", "Cause of death hub group.", "Histology: interpretation limits", "Гистология: ограничения интерпретации", "Gistologiya: talqin cheklovlari")
+k("labHubQuiz", "GC-MS reading: practice section header.",
+  "Practice: identify the substance by its spectrum", "Практика: определите вещество по спектру", "Mashq: spektrga qarab moddani toping")
+k("labHubQuizPrompt", "GC-MS practice: question prompt.",
+  "Main m/z ions (most to least abundant). Which substance is it?", "Основные ионы m/z (по убыванию). Какое это вещество?", "Asosiy m/z ionlar (ko‘pdan kamga). Bu qaysi modda?")
+k("labHubQuizNext", "GC-MS practice: next button.", "Next", "Дальше", "Keyingisi")
+k("labHubQuizScore", "GC-MS practice: running score.",
+  "Correct: {correct} of {total}", "Верно: {correct} из {total}", "To‘g‘ri: {total} tadan {correct} ta",
+  {"correct": {"type": "int"}, "total": {"type": "int"}})
 k("workbenchFactTitle", "Expert Home card title: one sourced fact per day.",
   "Today’s fact", "Сведение дня", "Bugungi ma’lumot")
 k("workbenchFactSource", "Label before the source line of the daily fact.",

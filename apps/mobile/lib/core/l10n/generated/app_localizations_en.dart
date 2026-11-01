@@ -12528,4 +12528,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get deathHubHistology => 'Histology: interpretation limits';
+
+  @override
+  String get labHubQuiz => 'Practice: identify the substance by its spectrum';
+
+  @override
+  String get labHubQuizPrompt =>
+      'Main m/z ions (most to least abundant). Which substance is it?';
+
+  @override
+  String get labHubQuizNext => 'Next';
+
+  @override
+  String labHubQuizScore(int correct, int total) {
+    return 'Correct: $correct of $total';
+  }
 }

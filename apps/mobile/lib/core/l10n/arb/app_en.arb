@@ -16379,5 +16379,29 @@
   "deathHubHistology": "Histology: interpretation limits",
   "@deathHubHistology": {
     "description": "Cause of death hub group."
+  },
+  "labHubQuiz": "Practice: identify the substance by its spectrum",
+  "@labHubQuiz": {
+    "description": "GC-MS reading: practice section header."
+  },
+  "labHubQuizPrompt": "Main m/z ions (most to least abundant). Which substance is it?",
+  "@labHubQuizPrompt": {
+    "description": "GC-MS practice: question prompt."
+  },
+  "labHubQuizNext": "Next",
+  "@labHubQuizNext": {
+    "description": "GC-MS practice: next button."
+  },
+  "labHubQuizScore": "Correct: {correct} of {total}",
+  "@labHubQuizScore": {
+    "description": "GC-MS practice: running score.",
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
   }
 }
