@@ -936,33 +936,43 @@ class _StudentFinished extends ConsumerWidget {
                 key: const Key('class.topBoard'),
                 child: Column(
                   children: [
+                    // Har qator bir xil balandlikda (bayroq tugmasi bor-yo‘qligidan
+                    // qat’i nazar); o‘z qatori qalin.
                     for (final r in st.leaderboard)
-                      Row(
-                        children: [
-                          SizedBox(
-                            width: 28,
-                            child: RankMedal(
-                              rank: r.rank,
-                              size: 22,
-                              fallbackStyle: t.titleSmall,
+                      SizedBox(
+                        height: FeTouch.minTarget,
+                        child: Row(
+                          children: [
+                            SizedBox(
+                              width: 28,
+                              child: RankMedal(
+                                rank: r.rank,
+                                size: 22,
+                                fallbackStyle: t.titleSmall,
+                              ),
                             ),
-                          ),
-                          Expanded(
-                            child: Text(
-                              r.nickname,
-                              overflow: TextOverflow.ellipsis,
+                            Expanded(
+                              child: Text(
+                                r.nickname,
+                                overflow: TextOverflow.ellipsis,
+                                style: r.nickname == st.nickname
+                                    ? const TextStyle(
+                                        fontWeight: FontWeight.w700,
+                                      )
+                                    : null,
+                              ),
                             ),
-                          ),
-                          Text(r.score.toString(), style: t.titleSmall),
-                          if (r.nickname != st.nickname)
-                            IconButton(
-                              tooltip: l.classReportAction,
-                              icon: const Icon(Icons.flag_outlined, size: 20),
-                              onPressed: () => _report(context, ref, r),
-                            )
-                          else
-                            const SizedBox(width: FeTouch.minTarget),
-                        ],
+                            Text(r.score.toString(), style: t.titleSmall),
+                            if (r.nickname != st.nickname)
+                              IconButton(
+                                tooltip: l.classReportAction,
+                                icon: const Icon(Icons.flag_outlined, size: 20),
+                                onPressed: () => _report(context, ref, r),
+                              )
+                            else
+                              const SizedBox(width: FeTouch.minTarget),
+                          ],
+                        ),
                       ),
                   ],
                 ),
