@@ -12480,4 +12480,52 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get labHubGcmsSchemeBody =>
       'Injector, column, ion source, quadrupole, detector';
+
+  @override
+  String get labHubReading => 'Reading results: chromatogram and mass spectrum';
+
+  @override
+  String get labHubReadingBody =>
+      'Retention time, TIC, m/z, base peak, Scan and SIM — with diagrams';
+
+  @override
+  String get labHubChromatogram => 'Chromatogram';
+
+  @override
+  String get labHubSpectrum => 'Mass spectrum';
+
+  @override
+  String get labHubIons => 'Examples: main ions';
+
+  @override
+  String get deathHubTitle => 'Cause of death: difficult cases';
+
+  @override
+  String get deathHubCardBody =>
+      'Time of death, injuries, sudden death, suspected poisoning — sourced';
+
+  @override
+  String get deathHubIntro =>
+      'Sourced topics grouped by the question in a difficult case. Each entry shows its source and review status; the conclusion is the expert’s.';
+
+  @override
+  String get deathHubPmi => 'Time of death (PMI)';
+
+  @override
+  String get deathHubTrauma => 'Injuries and asphyxia';
+
+  @override
+  String get deathHubPhysical => 'Physical factors';
+
+  @override
+  String get deathHubSudden => 'Sudden death: laboratory help';
+
+  @override
+  String get deathHubPoison => 'Suspected poisoning';
+
+  @override
+  String get deathHubIdentification => 'Imaging and identification';
+
+  @override
+  String get deathHubHistology => 'Histology: interpretation limits';
 }

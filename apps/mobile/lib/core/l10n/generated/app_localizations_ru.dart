@@ -12524,4 +12524,52 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get labHubGcmsSchemeBody =>
       'Инжектор, колонка, источник ионов, квадруполь, детектор';
+
+  @override
+  String get labHubReading => 'Чтение результата: хроматограмма и масс-спектр';
+
+  @override
+  String get labHubReadingBody =>
+      'Время удерживания, TIC, m/z, основной пик, Scan и SIM — со схемами';
+
+  @override
+  String get labHubChromatogram => 'Хроматограмма';
+
+  @override
+  String get labHubSpectrum => 'Масс-спектр';
+
+  @override
+  String get labHubIons => 'Примеры: основные ионы';
+
+  @override
+  String get deathHubTitle => 'Причина смерти: сложные случаи';
+
+  @override
+  String get deathHubCardBody =>
+      'Давность смерти, повреждения, внезапная смерть, подозрение на отравление — с источниками';
+
+  @override
+  String get deathHubIntro =>
+      'Темы с источниками, сгруппированные по вопросу в сложном случае. У каждой записи — источник и статус проверки; вывод делает эксперт.';
+
+  @override
+  String get deathHubPmi => 'Давность смерти (PMI)';
+
+  @override
+  String get deathHubTrauma => 'Повреждения и асфиксия';
+
+  @override
+  String get deathHubPhysical => 'Физические факторы';
+
+  @override
+  String get deathHubSudden => 'Внезапная смерть: помощь лаборатории';
+
+  @override
+  String get deathHubPoison => 'Подозрение на отравление';
+
+  @override
+  String get deathHubIdentification => 'Визуализация и идентификация';
+
+  @override
+  String get deathHubHistology => 'Гистология: ограничения интерпретации';
 }

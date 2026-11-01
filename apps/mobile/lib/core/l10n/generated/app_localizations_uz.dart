@@ -12412,4 +12412,52 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get labHubGcmsSchemeBody =>
       'Injektor, kolonka, ion manbai, kvadrupol, detektor';
+
+  @override
+  String get labHubReading => 'Natijani o‘qish: xromatogramma va mass-spektr';
+
+  @override
+  String get labHubReadingBody =>
+      'Ushlanish vaqti, TIC, m/z, asosiy cho‘qqi, Scan va SIM — diagrammalar bilan';
+
+  @override
+  String get labHubChromatogram => 'Xromatogramma';
+
+  @override
+  String get labHubSpectrum => 'Mass-spektr';
+
+  @override
+  String get labHubIons => 'Misollar: asosiy ionlar';
+
+  @override
+  String get deathHubTitle => 'O‘lim sababini aniqlash';
+
+  @override
+  String get deathHubCardBody =>
+      'Qiyin holatlar: o‘lim vaqti, jarohatlar, to‘satdan o‘lim, zaharlanish gumoni — manbali';
+
+  @override
+  String get deathHubIntro =>
+      'Qiyin holatda tug‘iladigan savol bo‘yicha guruhlangan manbali mavzular. Har yozuvda manba va tekshiruv holati bor; xulosani ekspert chiqaradi.';
+
+  @override
+  String get deathHubPmi => 'O‘lim vaqti (PMI)';
+
+  @override
+  String get deathHubTrauma => 'Jarohatlar va asfiksiya';
+
+  @override
+  String get deathHubPhysical => 'Fizik omillar';
+
+  @override
+  String get deathHubSudden => 'To‘satdan o‘lim: laboratoriya yordami';
+
+  @override
+  String get deathHubPoison => 'Zaharlanish gumoni';
+
+  @override
+  String get deathHubIdentification => 'Tasvirlash va identifikatsiya';
+
+  @override
+  String get deathHubHistology => 'Gistologiya: talqin cheklovlari';
 }

@@ -67,6 +67,9 @@ class ExpertWorkbench extends ConsumerWidget {
         if (chemistry) ...[
           const _LabMethodsCard(),
           const SizedBox(height: FeSpace.sm),
+        ] else ...[
+          const _DeathCauseCard(),
+          const SizedBox(height: FeSpace.sm),
         ],
         _DeskGrid(items: Workbench.cardsFor(specialty)),
         const SizedBox(height: FeSpace.sm),
@@ -721,6 +724,63 @@ class _DeskDailyQuestion extends ConsumerWidget {
       child: DailyQuestionCard(
         key: ValueKey('daily.q.${question.item.id}'),
         question: question,
+      ),
+    );
+  }
+}
+
+/// Sud-tibbiy ekspertning keng kartasi: «O‘lim sababini aniqlash» — qiyin
+/// holatlar uchun manbali yozuvlar savol bo‘yicha (o‘lim vaqti, jarohatlar,
+/// to‘satdan o‘lim, zaharlanish gumoni …). «Laboratoriya usullari» juftligi.
+class _DeathCauseCard extends StatelessWidget {
+  const _DeathCauseCard();
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return FeCard(
+      key: const Key('workbench.deathCause'),
+      color: c.accentContainer,
+      padding: const EdgeInsets.all(FeSpace.md),
+      onTap: () => context.push(Routes.labHub('causeOfDeath')),
+      child: Row(
+        children: [
+          DecoratedBox(
+            decoration: BoxDecoration(
+              color: c.surfaceRaised,
+              borderRadius: BorderRadius.circular(FeRadius.md),
+              border: Border.all(color: c.accentBorder),
+            ),
+            child: SizedBox.square(
+              dimension: 44,
+              child: Icon(Icons.manage_search_rounded, color: c.accent),
+            ),
+          ),
+          const SizedBox(width: FeSpace.sm),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  l.deathHubTitle,
+                  style: t.titleMedium?.copyWith(
+                    fontSize: 18,
+                    height: 1.25,
+                    color: c.onAccentContainer,
+                  ),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  l.deathHubCardBody,
+                  style: t.bodySmall?.copyWith(color: c.onAccentContainer),
+                ),
+              ],
+            ),
+          ),
+          Icon(Icons.chevron_right, color: c.onAccentContainer),
+        ],
       ),
     );
   }

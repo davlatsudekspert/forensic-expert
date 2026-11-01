@@ -122,4 +122,24 @@ void main() {
       location: '/home/lab/chromatography',
     );
   });
+
+  testWidgets('death_cause_hub_uz', (t) async {
+    await shot(
+      t,
+      name: 'death_cause_hub_uz',
+      mode: UserMode.professional,
+      location: '/home/lab/causeOfDeath',
+      size: const Size(390, 2400),
+    );
+  });
+
+  testWidgets('gcms_reading_uz', (t) async {
+    await shot(
+      t,
+      name: 'gcms_reading_uz',
+      mode: UserMode.professional,
+      location: '/home/lab-reading/gcms',
+      size: const Size(390, 2600),
+    );
+  });
 }

@@ -50,6 +50,7 @@ import '../features/evidence/presentation/research_screens.dart';
 import '../features/evidence/presentation/scientific_image.dart';
 import '../features/glossary/presentation/glossary_screens.dart';
 import '../features/guidelines/presentation/guidelines_screens.dart';
+import '../features/home/presentation/gcms_reading_screen.dart';
 import '../features/home/presentation/home_screen.dart';
 import '../features/home/presentation/lab_topic_hub.dart';
 import '../features/home/presentation/search_screen.dart';
@@ -713,6 +714,10 @@ final routerProvider = Provider<GoRouter>((ref) {
                       ),
                       null => const NotFoundScreen(),
                     },
+                  ),
+                  GoRoute(
+                    path: 'lab-reading/gcms',
+                    builder: (c, s) => const GcmsReadingScreen(),
                   ),
                   GoRoute(
                     path: 'lab/:topic',

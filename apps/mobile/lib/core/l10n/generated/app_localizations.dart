@@ -21608,6 +21608,96 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Injector, column, ion source, quadrupole, detector'**
   String get labHubGcmsSchemeBody;
+
+  /// GC-MS: reading the chromatogram and mass spectrum (page title).
+  ///
+  /// In en, this message translates to:
+  /// **'Reading results: chromatogram and mass spectrum'**
+  String get labHubReading;
+
+  /// GC-MS reading tile subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Retention time, TIC, m/z, base peak, Scan and SIM — with diagrams'**
+  String get labHubReadingBody;
+
+  /// GC-MS reading: chromatogram diagram header.
+  ///
+  /// In en, this message translates to:
+  /// **'Chromatogram'**
+  String get labHubChromatogram;
+
+  /// GC-MS reading: mass spectrum diagram header.
+  ///
+  /// In en, this message translates to:
+  /// **'Mass spectrum'**
+  String get labHubSpectrum;
+
+  /// GC-MS reading: example ions header.
+  ///
+  /// In en, this message translates to:
+  /// **'Examples: main ions'**
+  String get labHubIons;
+
+  /// Forensic medicine expert: hard cases — determining the cause of death (page title).
+  ///
+  /// In en, this message translates to:
+  /// **'Cause of death: difficult cases'**
+  String get deathHubTitle;
+
+  /// Workbench card subtitle: cause of death hub.
+  ///
+  /// In en, this message translates to:
+  /// **'Time of death, injuries, sudden death, suspected poisoning — sourced'**
+  String get deathHubCardBody;
+
+  /// Cause of death hub intro.
+  ///
+  /// In en, this message translates to:
+  /// **'Sourced topics grouped by the question in a difficult case. Each entry shows its source and review status; the conclusion is the expert’s.'**
+  String get deathHubIntro;
+
+  /// Cause of death hub group.
+  ///
+  /// In en, this message translates to:
+  /// **'Time of death (PMI)'**
+  String get deathHubPmi;
+
+  /// Cause of death hub group.
+  ///
+  /// In en, this message translates to:
+  /// **'Injuries and asphyxia'**
+  String get deathHubTrauma;
+
+  /// Cause of death hub group.
+  ///
+  /// In en, this message translates to:
+  /// **'Physical factors'**
+  String get deathHubPhysical;
+
+  /// Cause of death hub group.
+  ///
+  /// In en, this message translates to:
+  /// **'Sudden death: laboratory help'**
+  String get deathHubSudden;
+
+  /// Cause of death hub group.
+  ///
+  /// In en, this message translates to:
+  /// **'Suspected poisoning'**
+  String get deathHubPoison;
+
+  /// Cause of death hub group.
+  ///
+  /// In en, this message translates to:
+  /// **'Imaging and identification'**
+  String get deathHubIdentification;
+
+  /// Cause of death hub group.
+  ///
+  /// In en, this message translates to:
+  /// **'Histology: interpretation limits'**
+  String get deathHubHistology;
 }
 
 class _AppLocalizationsDelegate

@@ -27,6 +27,7 @@ abstract final class Routes {
 
   /// «Laboratoriya usullari» mavzu sahifasi: `spectro` | `chromatography`.
   static String labHub(String topic) => '/home/lab/$topic';
+  static const gcmsReading = '/home/lab-reading/gcms';
   static String area(String area) => '/home/area/$area';
   static const forensicMedicine = '/home/area/forensicMedicine';
   static const biochemistry = '/home/area/biochemistry';

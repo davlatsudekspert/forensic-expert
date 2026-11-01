@@ -16319,5 +16319,65 @@
   "labHubGcmsSchemeBody": "Injector, column, ion source, quadrupole, detector",
   "@labHubGcmsSchemeBody": {
     "description": "Lab topic page: GC-MS schematic subtitle."
+  },
+  "labHubReading": "Reading results: chromatogram and mass spectrum",
+  "@labHubReading": {
+    "description": "GC-MS: reading the chromatogram and mass spectrum (page title)."
+  },
+  "labHubReadingBody": "Retention time, TIC, m/z, base peak, Scan and SIM — with diagrams",
+  "@labHubReadingBody": {
+    "description": "GC-MS reading tile subtitle."
+  },
+  "labHubChromatogram": "Chromatogram",
+  "@labHubChromatogram": {
+    "description": "GC-MS reading: chromatogram diagram header."
+  },
+  "labHubSpectrum": "Mass spectrum",
+  "@labHubSpectrum": {
+    "description": "GC-MS reading: mass spectrum diagram header."
+  },
+  "labHubIons": "Examples: main ions",
+  "@labHubIons": {
+    "description": "GC-MS reading: example ions header."
+  },
+  "deathHubTitle": "Cause of death: difficult cases",
+  "@deathHubTitle": {
+    "description": "Forensic medicine expert: hard cases — determining the cause of death (page title)."
+  },
+  "deathHubCardBody": "Time of death, injuries, sudden death, suspected poisoning — sourced",
+  "@deathHubCardBody": {
+    "description": "Workbench card subtitle: cause of death hub."
+  },
+  "deathHubIntro": "Sourced topics grouped by the question in a difficult case. Each entry shows its source and review status; the conclusion is the expert’s.",
+  "@deathHubIntro": {
+    "description": "Cause of death hub intro."
+  },
+  "deathHubPmi": "Time of death (PMI)",
+  "@deathHubPmi": {
+    "description": "Cause of death hub group."
+  },
+  "deathHubTrauma": "Injuries and asphyxia",
+  "@deathHubTrauma": {
+    "description": "Cause of death hub group."
+  },
+  "deathHubPhysical": "Physical factors",
+  "@deathHubPhysical": {
+    "description": "Cause of death hub group."
+  },
+  "deathHubSudden": "Sudden death: laboratory help",
+  "@deathHubSudden": {
+    "description": "Cause of death hub group."
+  },
+  "deathHubPoison": "Suspected poisoning",
+  "@deathHubPoison": {
+    "description": "Cause of death hub group."
+  },
+  "deathHubIdentification": "Imaging and identification",
+  "@deathHubIdentification": {
+    "description": "Cause of death hub group."
+  },
+  "deathHubHistology": "Histology: interpretation limits",
+  "@deathHubHistology": {
+    "description": "Cause of death hub group."
   }
 }

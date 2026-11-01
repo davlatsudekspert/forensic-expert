@@ -19,7 +19,7 @@ import '../../tools/tool_strings.dart';
 /// bir joyda — apparat bilan ishlash darsi (rasmlar, ish tartibi), aniqlash
 /// yo‘riqnomalari (kitob boblari), usul tavsiflari va hisob-kitob.
 /// Yangi ma’lumot to‘qilmaydi: faqat mavjud yozuvlarga havola.
-enum LabTopic { spectro, chromatography }
+enum LabTopic { spectro, chromatography, causeOfDeath }
 
 class _HubTile {
   const _HubTile(this.icon, this.title, this.body, this.route);
@@ -55,6 +55,109 @@ class LabTopicHubScreen extends ConsumerWidget {
     'method-identification-criteria',
   ];
 
+  /// Sud-tibbiy ekspert: qiyin holatlarda o‘lim sababini aniqlashga yordam
+  /// beruvchi mavjud manbali yozuvlar, savol bo‘yicha guruhlangan.
+  /// Har guruh: (sarlavha kaliti, bilim yozuvlari, yo‘riqnomalar, vositalar).
+  static const _deathGroups =
+      <(String, List<String>, List<String>, List<String>)>[
+        (
+          'pmi',
+          [
+            'fm-postmortem-interval',
+            'fm-postmortem-changes',
+            'fm-algor-mortis',
+            'fm-livor-mortis',
+            'fm-rigor-mortis',
+            'fm-decomposition',
+            'bio-vitreous-potassium',
+            'ent-pmi-insects',
+            'mic-thanatomicrobiome',
+          ],
+          [],
+          ['tool.fm.pmi_henssge'],
+        ),
+        (
+          'trauma',
+          [
+            'fm-blunt-trauma',
+            'fm-firearm',
+            'fm-asphyxia',
+            'fm-drowning',
+            'his-wound-vitality',
+            'his-fat-embolism',
+          ],
+          ['guideline.path.diatom_test'],
+          [],
+        ),
+        (
+          'physical',
+          ['fm-burns', 'fm-hypothermia', 'bio-temperature-effect'],
+          [],
+          [],
+        ),
+        (
+          'sudden',
+          [
+            'bio-cardiac-markers',
+            'his-mi-early',
+            'bio-tryptase',
+            'bio-crp-procalcitonin',
+            'bio-bhb-ketoacidosis',
+            'bio-vitreous-glucose',
+            'bio-hba1c',
+            'bio-insulin-cpeptide',
+            'bio-vitreous-sodium-chloride',
+            'bio-vitreous-urea-creatinine',
+            'bio-csf',
+          ],
+          [],
+          [],
+        ),
+        (
+          'poison',
+          [
+            'tox-postmortem-redistribution',
+            'bio-sampling-site',
+            'bio-ethanol-neoformation',
+            'bio-preanalytical-hemolysis',
+          ],
+          [
+            'guideline.tox.postmortem_interpretation',
+            'guideline.tox.specimen_preanalytics',
+          ],
+          ['tool.tox.widmark', 'tool.tox.back_calculation'],
+        ),
+        (
+          'identification',
+          [
+            'rad-pmct',
+            'fm-age-estimation',
+            'fm-stature-estimation',
+            'fm-odontology',
+            'fm-anthropology',
+            'fm-dvi',
+          ],
+          ['guideline.anthro.stature_long_bones'],
+          [],
+        ),
+        (
+          'histology',
+          ['his-putrefaction-artifact', 'his-ihc', 'his-fixation'],
+          [],
+          [],
+        ),
+      ];
+
+  String _groupTitle(AppLocalizations l, String key) => switch (key) {
+    'pmi' => l.deathHubPmi,
+    'trauma' => l.deathHubTrauma,
+    'physical' => l.deathHubPhysical,
+    'sudden' => l.deathHubSudden,
+    'poison' => l.deathHubPoison,
+    'identification' => l.deathHubIdentification,
+    _ => l.deathHubHistology,
+  };
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
@@ -62,6 +165,7 @@ class LabTopicHubScreen extends ConsumerWidget {
     final knowledge = ref.watch(knowledgeRepositoryProvider);
     final bundle = ref.watch(guidelinesProvider).value ?? GuidelineBundle.empty;
     final spectro = topic == LabTopic.spectro;
+    final death = topic == LabTopic.causeOfDeath;
 
     List<_HubTile> guides(List<String> ids) => [
       for (final id in ids)
@@ -95,6 +199,12 @@ class LabTopicHubScreen extends ConsumerWidget {
           ]
         : [
             _HubTile(
+              Icons.stacked_line_chart,
+              l.labHubReading,
+              l.labHubReadingBody,
+              Routes.gcmsReading,
+            ),
+            _HubTile(
               Icons.biotech_outlined,
               l.labHubGcmsScheme,
               l.labHubGcmsSchemeBody,
@@ -123,17 +233,49 @@ class LabTopicHubScreen extends ConsumerWidget {
             Routes.homeTool(t.id),
           ),
     ];
-    final sections = <(String, List<_HubTile>)>[
-      (l.labHubPractice, lessons),
-      (l.labHubGuides, guides(spectro ? _spectroGuides : _chromGuides)),
-      (l.labHubMethods, methods(spectro ? _spectroMethods : _chromMethods)),
-      (l.labHubCalc, calc),
+    List<_HubTile> tools(List<String> ids) => [
+      for (final id in ids)
+        if (ToolsCatalog.byId(id) case final t?)
+          _HubTile(
+            Icons.calculate_outlined,
+            l.toolName(t),
+            null,
+            Routes.homeTool(t.id),
+          ),
     ];
+    List<_HubTile> topics(List<String> ids) => [
+      for (final id in ids)
+        if (knowledge.byId(id) case final e? when e.claims.isNotEmpty)
+          _HubTile(
+            Icons.menu_book_outlined,
+            e.name.resolve(lang),
+            null,
+            Routes.knowledgeEntry(id),
+          ),
+    ];
+    final sections = death
+        ? <(String, List<_HubTile>)>[
+            for (final (key, k, g, t) in _deathGroups)
+              (_groupTitle(l, key), [...topics(k), ...guides(g), ...tools(t)]),
+          ]
+        : <(String, List<_HubTile>)>[
+            (l.labHubPractice, lessons),
+            (l.labHubGuides, guides(spectro ? _spectroGuides : _chromGuides)),
+            (
+              l.labHubMethods,
+              methods(spectro ? _spectroMethods : _chromMethods),
+            ),
+            (l.labHubCalc, calc),
+          ];
 
     return Scaffold(
       appBar: AppBar(
         title: FeAppBarTitle(
-          spectro ? l.workbenchLabSpectro : l.workbenchLabMs,
+          death
+              ? l.deathHubTitle
+              : spectro
+              ? l.workbenchLabSpectro
+              : l.workbenchLabMs,
         ),
       ),
       body: ListView(
@@ -148,7 +290,11 @@ class LabTopicHubScreen extends ConsumerWidget {
               children: [
                 const SizedBox(height: FeSpace.sm),
                 Text(
-                  spectro ? l.labHubSpectroIntro : l.labHubChromIntro,
+                  death
+                      ? l.deathHubIntro
+                      : spectro
+                      ? l.labHubSpectroIntro
+                      : l.labHubChromIntro,
                   style: Theme.of(context).textTheme.bodyMedium
                       ?.copyWith(color: FeTheme.of(context).textSecondary),
                 ),

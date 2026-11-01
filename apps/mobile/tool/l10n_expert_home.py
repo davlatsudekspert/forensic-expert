@@ -77,6 +77,33 @@ k("labHubGcmsScheme", "Lab topic page: GC-MS instrument schematic.",
   "GC-MS instrument: diagram and parts", "Прибор ГХ-МС: схема и узлы", "GC-MS apparati: sxema va qismlari")
 k("labHubGcmsSchemeBody", "Lab topic page: GC-MS schematic subtitle.",
   "Injector, column, ion source, quadrupole, detector", "Инжектор, колонка, источник ионов, квадруполь, детектор", "Injektor, kolonka, ion manbai, kvadrupol, detektor")
+k("labHubReading", "GC-MS: reading the chromatogram and mass spectrum (page title).",
+  "Reading results: chromatogram and mass spectrum", "Чтение результата: хроматограмма и масс-спектр", "Natijani o‘qish: xromatogramma va mass-spektr")
+k("labHubReadingBody", "GC-MS reading tile subtitle.",
+  "Retention time, TIC, m/z, base peak, Scan and SIM — with diagrams", "Время удерживания, TIC, m/z, основной пик, Scan и SIM — со схемами", "Ushlanish vaqti, TIC, m/z, asosiy cho‘qqi, Scan va SIM — diagrammalar bilan")
+k("labHubChromatogram", "GC-MS reading: chromatogram diagram header.",
+  "Chromatogram", "Хроматограмма", "Xromatogramma")
+k("labHubSpectrum", "GC-MS reading: mass spectrum diagram header.",
+  "Mass spectrum", "Масс-спектр", "Mass-spektr")
+k("labHubIons", "GC-MS reading: example ions header.",
+  "Examples: main ions", "Примеры: основные ионы", "Misollar: asosiy ionlar")
+k("deathHubTitle", "Forensic medicine expert: hard cases — determining the cause of death (page title).",
+  "Cause of death: difficult cases", "Причина смерти: сложные случаи", "O‘lim sababini aniqlash")
+k("deathHubCardBody", "Workbench card subtitle: cause of death hub.",
+  "Time of death, injuries, sudden death, suspected poisoning — sourced",
+  "Давность смерти, повреждения, внезапная смерть, подозрение на отравление — с источниками",
+  "Qiyin holatlar: o‘lim vaqti, jarohatlar, to‘satdan o‘lim, zaharlanish gumoni — manbali")
+k("deathHubIntro", "Cause of death hub intro.",
+  "Sourced topics grouped by the question in a difficult case. Each entry shows its source and review status; the conclusion is the expert’s.",
+  "Темы с источниками, сгруппированные по вопросу в сложном случае. У каждой записи — источник и статус проверки; вывод делает эксперт.",
+  "Qiyin holatda tug‘iladigan savol bo‘yicha guruhlangan manbali mavzular. Har yozuvda manba va tekshiruv holati bor; xulosani ekspert chiqaradi.")
+k("deathHubPmi", "Cause of death hub group.", "Time of death (PMI)", "Давность смерти (PMI)", "O‘lim vaqti (PMI)")
+k("deathHubTrauma", "Cause of death hub group.", "Injuries and asphyxia", "Повреждения и асфиксия", "Jarohatlar va asfiksiya")
+k("deathHubPhysical", "Cause of death hub group.", "Physical factors", "Физические факторы", "Fizik omillar")
+k("deathHubSudden", "Cause of death hub group.", "Sudden death: laboratory help", "Внезапная смерть: помощь лаборатории", "To‘satdan o‘lim: laboratoriya yordami")
+k("deathHubPoison", "Cause of death hub group.", "Suspected poisoning", "Подозрение на отравление", "Zaharlanish gumoni")
+k("deathHubIdentification", "Cause of death hub group.", "Imaging and identification", "Визуализация и идентификация", "Tasvirlash va identifikatsiya")
+k("deathHubHistology", "Cause of death hub group.", "Histology: interpretation limits", "Гистология: ограничения интерпретации", "Gistologiya: talqin cheklovlari")
 k("workbenchFactTitle", "Expert Home card title: one sourced fact per day.",
   "Today’s fact", "Сведение дня", "Bugungi ma’lumot")
 k("workbenchFactSource", "Label before the source line of the daily fact.",
