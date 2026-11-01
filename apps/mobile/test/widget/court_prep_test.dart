@@ -68,7 +68,8 @@ void main() {
       settings: completedSettings(lang: 'uz'),
       overrides: _overrides(),
     );
-    final tile = _key('home.courtPrep');
+    // Mutaxassis: «Ish stolim» → «Sudda so‘roq» (Asosiyda takror yo‘q).
+    final tile = find.text('Sudda so‘roq').first;
     await _scrollTo(tester, tile);
     await tester.tap(tile);
     await tester.pumpAndSettle();

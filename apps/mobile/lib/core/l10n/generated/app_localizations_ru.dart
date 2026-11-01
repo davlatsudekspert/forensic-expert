@@ -12794,4 +12794,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String dnaQuestionNumbered(int n, String q) {
     return '$n. $q';
   }
+
+  @override
+  String get settingsTextSize => 'Размер шрифта';
+
+  @override
+  String get textSizeNormal => 'Обычный';
+
+  @override
+  String get textSizeLarge => 'Крупный';
+
+  @override
+  String get textSizeXLarge => 'Очень крупный';
 }

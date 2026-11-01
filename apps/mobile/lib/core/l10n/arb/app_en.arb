@@ -16669,5 +16669,21 @@
         "type": "String"
       }
     }
+  },
+  "settingsTextSize": "Text size",
+  "@settingsTextSize": {
+    "description": "Profile: in-app text size setting."
+  },
+  "textSizeNormal": "Normal",
+  "@textSizeNormal": {
+    "description": "Profile: in-app text size setting."
+  },
+  "textSizeLarge": "Large",
+  "@textSizeLarge": {
+    "description": "Profile: in-app text size setting."
+  },
+  "textSizeXLarge": "Extra large",
+  "@textSizeXLarge": {
+    "description": "Profile: in-app text size setting."
   }
 }

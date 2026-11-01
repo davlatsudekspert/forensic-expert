@@ -32,6 +32,9 @@ class ForensicExpertApp extends ConsumerWidget {
     final newUz = ref.watch(
       settingsControllerProvider.select((s) => s.newUzAlphabet),
     );
+    final textScale = ref.watch(
+      settingsControllerProvider.select((s) => s.textScale),
+    );
     final router = ref.watch(routerProvider);
     // Taklif kodi kuzatuvchisi doim faol: foydalanuvchi kirgach kutilayotgan
     // kodni serverga bir marta yuboradi (qaror serverda).
@@ -71,8 +74,19 @@ class ForensicExpertApp extends ConsumerWidget {
       onGenerateTitle: (context) => AppLocalizations.of(context).appTitle,
       routerConfig: router,
       // Router tepasida: eski versiya bloklanganda deep link ham aylanib o‘tolmaydi.
-      builder: (context, child) =>
-          UpdateGateHost(child: child ?? const SizedBox.shrink()),
+      // Shrift o‘lchami: telefon sozlamasi × ilova sozlamasi (Profil).
+      builder: (context, child) {
+        final gate = UpdateGateHost(child: child ?? const SizedBox.shrink());
+        if (textScale == 1.0) return gate;
+        final mq = MediaQuery.of(context);
+        final base = mq.textScaler.scale(1);
+        return MediaQuery(
+          data: mq.copyWith(
+            textScaler: TextScaler.linear((base * textScale).clamp(1.0, 2.6)),
+          ),
+          child: gate,
+        );
+      },
       locale: locale,
       supportedLocales: SupportedLanguages.locales,
       localizationsDelegates: FeLocalizationsDelegate.all(newUz: newUz),

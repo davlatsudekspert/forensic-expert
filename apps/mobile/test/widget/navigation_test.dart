@@ -160,24 +160,22 @@ void main() {
     // Biokimyo) eng tepada (egasi talabi, 2026-10-31), keyin tezkor amallar.
     await pumpApp(tester, settings: completedSettings(mode: UserMode.student));
     expect(find.text('Core disciplines'), findsOneWidget);
-    expect(find.text('Learning'), findsOneWidget);
     for (final m in ['forensicMedicine', 'toxicology', 'biochemistry']) {
       expect(find.byKey(Key('home.module.$m')), findsOneWidget);
     }
-    expect(
-      at('home.module.toxicology').dy,
-      lessThan(at('home.module.learn').dy),
-    );
-    // Yo‘riqnomalar va bo‘limlar to‘ri — Kutubxonada (egasi qarori,
-    // 2026-11-01); tepada «Yangi bo‘limlar».
-    expect(at('home.module.learn').dy, lessThan(at('home.guidelines').dy + 1));
+    // Takrorlar yo‘q (egasi talabi, 2026-11-01): O‘qish — «O‘qish stolim»
+    // ichida; tepada «Yangi bo‘limlar».
+    expect(find.byKey(const Key('home.module.learn')), findsNothing);
+    expect(find.byKey(const Key('desk.student')), findsOneWidget);
     expect(find.byKey(const Key('home.new')), findsOneWidget);
     expect(find.byKey(const Key('home.tools')), findsNothing);
     // Mutaxassis: asosiy fanlar → Ish stolim → moddalar, usullar,
     // kalkulyatorlar, AI.
     await pumpApp(tester, settings: completedSettings());
     expect(find.text('Core disciplines'), findsOneWidget);
-    expect(find.byKey(const Key('home.tools')), findsOneWidget);
+    // Kalkulyatorlar, AI va Sudda so‘roq — «Ish stolim»da (takror yo‘q).
+    expect(find.byKey(const Key('home.tools')), findsNothing);
+    expect(find.byKey(const Key('home.courtPrep')), findsNothing);
     for (final m in ['forensicMedicine', 'toxicology', 'biochemistry']) {
       expect(find.byKey(Key('home.module.$m')), findsOneWidget);
     }
@@ -187,6 +185,6 @@ void main() {
     );
     expect(find.byKey(const Key('home.module.laboratory')), findsNothing);
     expect(find.byKey(const Key('home.module.methods')), findsOneWidget);
-    expect(find.byKey(const Key('home.module.ai')), findsOneWidget);
+    expect(find.byKey(const Key('home.module.ai')), findsNothing);
   });
 }

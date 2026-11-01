@@ -377,6 +377,30 @@ class ProfileScreen extends ConsumerWidget {
                                 controller.setThemeMode(s.single),
                           ),
                           const SizedBox(height: FeSpace.md),
+                          Text(l.settingsTextSize, style: t.titleSmall),
+                          const SizedBox(height: FeSpace.xs),
+                          SegmentedButton<double>(
+                            key: const Key('profile.textSize'),
+                            showSelectedIcon: false,
+                            segments: [
+                              ButtonSegment(
+                                value: 1.0,
+                                label: Text(l.textSizeNormal),
+                              ),
+                              ButtonSegment(
+                                value: 1.15,
+                                label: Text(l.textSizeLarge),
+                              ),
+                              ButtonSegment(
+                                value: 1.3,
+                                label: Text(l.textSizeXLarge),
+                              ),
+                            ],
+                            selected: {settings.textScale},
+                            onSelectionChanged: (s) =>
+                                controller.setTextScale(s.single),
+                          ),
+                          const SizedBox(height: FeSpace.md),
                           Text(l.settingsContrast, style: t.titleSmall),
                           const SizedBox(height: FeSpace.xs),
                           SegmentedButton<ContrastPreference>(

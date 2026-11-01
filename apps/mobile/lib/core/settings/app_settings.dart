@@ -40,6 +40,7 @@ class AppSettings {
     this.jurisdictionId = internationalJurisdictionId,
     this.declaredRole,
     this.newUzAlphabet = false,
+    this.textScale = 1.0,
   });
 
   /// `null` — foydalanuvchi hali til tanlamagan (birinchi ishga tushirish).
@@ -62,6 +63,10 @@ class AppSettings {
   /// 2026-11-01). Faqat ko‘rsatish: ma’lumot asl yozuvda qoladi.
   final bool newUzAlphabet;
 
+  /// Ilova ichidagi shrift o‘lchami (egasi talabi, 2026-11-01): telefon
+  /// sozlamasiga qo‘shimcha ko‘paytiruvchi — 1.0, 1.15, 1.3.
+  final double textScale;
+
   bool get hasLanguage => locale != null;
 
   bool get disclaimerAccepted =>
@@ -79,6 +84,7 @@ class AppSettings {
     String? jurisdictionId,
     String? declaredRole,
     bool? newUzAlphabet,
+    double? textScale,
   }) => AppSettings(
     locale: locale ?? this.locale,
     themeMode: themeMode ?? this.themeMode,
@@ -89,5 +95,6 @@ class AppSettings {
     jurisdictionId: jurisdictionId ?? this.jurisdictionId,
     declaredRole: declaredRole ?? this.declaredRole,
     newUzAlphabet: newUzAlphabet ?? this.newUzAlphabet,
+    textScale: textScale ?? this.textScale,
   );
 }

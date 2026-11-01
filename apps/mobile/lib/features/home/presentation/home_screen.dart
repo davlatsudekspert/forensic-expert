@@ -247,12 +247,22 @@ class HomeScreen extends ConsumerWidget {
     final mode = ref.watch(
       settingsControllerProvider.select((s) => s.userMode),
     );
-    final actions = HomeAction.forMode(mode);
+    final lean = mode == UserMode.professional || mode == UserMode.student;
+    // Takrorlar yo‘q (egasi talabi, 2026-11-01): Kalkulyatorlar — «Vositalar»
+    // tabida va Ish stolida, AI — markaziy tugmada, O‘qish — talaba
+    // stolida.
+    final actions = [
+      for (final a in HomeAction.forMode(mode))
+        if (!lean ||
+            (a != HomeAction.tools &&
+                a.module != HomeModule.ai &&
+                a.module != HomeModule.learn))
+          a,
+    ];
     final featured = {for (final a in actions) ?a.module};
     // Asosiy fanlar (Sud tibbiyoti, Toksikologiya, Biokimyo) — Mutaxassis va
     // Talaba bosh sahifasining eng yuqorisida (egasi talabi, 2026-10-31).
     final coreTop = mode != null;
-    final lean = mode == UserMode.professional || mode == UserMode.student;
     // Tezkor amallardagi bo‘limlar to‘rda takrorlanmaydi.
     final modules = [
       for (final m in HomeModule.orderFor(mode))
@@ -367,6 +377,9 @@ class HomeScreen extends ConsumerWidget {
                       lock: ProFeature.proModules,
                       onTap: () => context.push(Routes.assessment),
                     ),
+                  ],
+                  if (mode != UserMode.student &&
+                      mode != UserMode.professional) ...[
                     const SizedBox(height: FeSpace.sm),
                     _ResourceTile(
                       key: const Key('home.courtPrep'),
@@ -1000,73 +1013,6 @@ class _CoreDisciplinesCard extends ConsumerWidget {
               ),
             ),
           ],
-          // DNK ekspertizasi — alohida bo‘lim (egasi talabi, 2026-11-01);
-          // manbali paket bo‘lsagina ko‘rinadi.
-          if (!(ref.watch(dnaProvider).value?.isEmpty ?? true)) ...[
-            Divider(
-              height: 1,
-              thickness: 1,
-              indent: compact ? FeSpace.md : FeSpace.md + 44 + FeSpace.sm,
-              color: c.border.withValues(alpha: 0.6),
-            ),
-            InkWell(
-              key: const Key('home.core.dna'),
-              borderRadius: const BorderRadius.vertical(
-                bottom: Radius.circular(FeRadius.lg),
-              ),
-              onTap: () => context.push(Routes.dna),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: FeSpace.md,
-                  vertical: FeSpace.sm + 2,
-                ),
-                child: Row(
-                  children: [
-                    if (!compact) ...[
-                      DecoratedBox(
-                        decoration: BoxDecoration(
-                          color: c.accentContainer,
-                          borderRadius: BorderRadius.circular(FeRadius.md),
-                        ),
-                        child: SizedBox.square(
-                          dimension: 44,
-                          child: Icon(
-                            Icons.biotech_outlined,
-                            color: c.onAccentContainer,
-                            size: 22,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(width: FeSpace.sm),
-                    ],
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            l.dnaTitle,
-                            style: (compact ? t.titleSmall : t.titleMedium)
-                                ?.copyWith(
-                                  fontWeight: FontWeight.w600,
-                                  height: 1.25,
-                                ),
-                          ),
-                          const SizedBox(height: 2),
-                          Text(
-                            l.dnaCoreBody,
-                            style: t.bodySmall?.copyWith(
-                              color: c.textSecondary,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Icon(Icons.chevron_right, color: c.textSecondary),
-                  ],
-                ),
-              ),
-            ),
-          ],
         ],
       ),
     );
@@ -1419,10 +1365,8 @@ class _NewSections extends ConsumerWidget {
                       ),
                       Padding(
                         padding: const EdgeInsets.all(FeSpace.xs),
-                        child: Text(
+                        child: _NoSplitLabel(
                           title,
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
                           style: t.labelLarge?.copyWith(height: 1.2),
                         ),
                       ),
@@ -1434,6 +1378,44 @@ class _NewSections extends ConsumerWidget {
           ],
         ),
       ],
+    );
+  }
+}
+
+/// Tor kartadagi sarlavha: so‘z o‘rtasidan bo‘linmaydi («DNK eksp|ertizasi»).
+/// Chiziqchadan keyin satr ko‘chishi mumkin. Eng uzun so‘z sig‘masa, shrift shu so‘z sig‘adigan darajada kichrayadi.
+class _NoSplitLabel extends StatelessWidget {
+  const _NoSplitLabel(this.text, {this.style});
+
+  final String text;
+  final TextStyle? style;
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, box) {
+        final scaler = MediaQuery.textScalerOf(context);
+        var factor = 1.0;
+        for (final w in text.split(RegExp(r'(?<=-)|\s+'))) {
+          final tp = TextPainter(
+            text: TextSpan(text: w, style: style),
+            textDirection: Directionality.of(context),
+            textScaler: scaler,
+            maxLines: 1,
+          )..layout();
+          if (tp.width > box.maxWidth && tp.width > 0) {
+            factor = (box.maxWidth / tp.width).clamp(0.6, factor);
+          }
+          tp.dispose();
+        }
+        final base = style?.fontSize ?? 14;
+        return Text(
+          text,
+          maxLines: 2,
+          overflow: TextOverflow.ellipsis,
+          style: style?.copyWith(fontSize: base * factor * 0.98),
+        );
+      },
     );
   }
 }

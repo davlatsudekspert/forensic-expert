@@ -312,7 +312,18 @@ void main() {
       );
       // Ta’lim — modullar to‘ridagi bitta kirish (takroriy karta yo‘q).
       expect(find.byKey(const Key('home.continueLearning')), findsNothing);
-      await tapKey(tester, 'home.module.learn');
+      // O‘qish — «O‘qish stolim» kartasi orqali.
+      final lessons = find.text('Lessons and books');
+      await tester.scrollUntilVisible(
+        lessons,
+        300,
+        scrollable: find.byType(Scrollable).first,
+      );
+      // Pastki menyu ostida qolmasin.
+      await Scrollable.ensureVisible(tester.element(lessons), alignment: 0.3);
+      await tester.pumpAndSettle();
+      await tester.tap(lessons);
+      await tester.pumpAndSettle();
       expect(find.byType(LearnScreen), findsOneWidget);
       expect(find.text('SAMPLE'), findsWidgets);
       c.read(routerProvider).go(Routes.home);

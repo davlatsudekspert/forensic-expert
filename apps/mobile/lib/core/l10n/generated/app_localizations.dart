@@ -22094,6 +22094,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{n}. {q}'**
   String dnaQuestionNumbered(int n, String q);
+
+  /// Profile: in-app text size setting.
+  ///
+  /// In en, this message translates to:
+  /// **'Text size'**
+  String get settingsTextSize;
+
+  /// Profile: in-app text size setting.
+  ///
+  /// In en, this message translates to:
+  /// **'Normal'**
+  String get textSizeNormal;
+
+  /// Profile: in-app text size setting.
+  ///
+  /// In en, this message translates to:
+  /// **'Large'**
+  String get textSizeLarge;
+
+  /// Profile: in-app text size setting.
+  ///
+  /// In en, this message translates to:
+  /// **'Extra large'**
+  String get textSizeXLarge;
 }
 
 class _AppLocalizationsDelegate

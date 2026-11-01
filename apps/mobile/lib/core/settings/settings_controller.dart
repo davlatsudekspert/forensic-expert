@@ -46,6 +46,9 @@ class SettingsController extends Notifier<AppSettings> {
   Future<void> setNewUzAlphabet(bool on) =>
       _update(state.copyWith(newUzAlphabet: on));
 
+  Future<void> setTextScale(double scale) =>
+      _update(state.copyWith(textScale: scale));
+
   Future<void> acceptDisclaimer() => _update(
     state.copyWith(acceptedDisclaimerVersion: currentDisclaimerVersion),
   );

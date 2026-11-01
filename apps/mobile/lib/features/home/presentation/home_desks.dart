@@ -888,7 +888,6 @@ class DnaCard extends ConsumerWidget {
     final b = ref.watch(dnaProvider).value;
     if (b == null || b.isEmpty) return const SizedBox.shrink();
     final l = AppLocalizations.of(context);
-    final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     return Padding(
       padding: const EdgeInsets.only(top: FeSpace.sm),
@@ -896,15 +895,13 @@ class DnaCard extends ConsumerWidget {
         key: const Key('desk.dna'),
         padding: EdgeInsets.zero,
         onTap: () => context.push(Routes.dna),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            ClipRRect(
-              borderRadius: const BorderRadius.vertical(
-                top: Radius.circular(FeRadius.lg),
-              ),
-              child: AspectRatio(
-                aspectRatio: 3 / 1.2,
+        // Rasm o‘ng tomonda, matn chap bo‘sh joyda (egasi talabi,
+        // 2026-11-01): karta ixcham, bo‘sh maydon qolmaydi.
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(FeRadius.lg),
+          child: Stack(
+            children: [
+              Positioned.fill(
                 child: Image.asset(
                   'assets/images/instruments/dna_banner.webp',
                   fit: BoxFit.cover,
@@ -912,35 +909,50 @@ class DnaCard extends ConsumerWidget {
                   excludeFromSemantics: true,
                 ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(FeSpace.md),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          l.dnaTitle,
-                          style: t.titleMedium?.copyWith(
-                            fontSize: 18,
-                            height: 1.25,
+              Padding(
+                padding: const EdgeInsets.fromLTRB(
+                  FeSpace.md,
+                  FeSpace.lg,
+                  FeSpace.md,
+                  FeSpace.lg,
+                ),
+                child: Row(
+                  children: [
+                    Expanded(
+                      flex: 11,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            l.dnaTitle,
+                            style: t.titleMedium?.copyWith(
+                              fontSize: 18,
+                              height: 1.25,
+                              color: const Color(0xFF0B1B2B),
+                            ),
                           ),
-                        ),
-                        const SizedBox(height: 2),
-                        Text(
-                          l.dnaSubtitle,
-                          style: t.bodySmall?.copyWith(color: c.textSecondary),
-                        ),
-                      ],
+                          const SizedBox(height: FeSpace.xs),
+                          Text(
+                            l.dnaSubtitle,
+                            style: t.bodySmall?.copyWith(
+                              color: const Color(0xFF4A5563),
+                            ),
+                          ),
+                          const SizedBox(height: FeSpace.sm),
+                          const Icon(
+                            Icons.arrow_forward,
+                            size: 20,
+                            color: Color(0xFF0B1B2B),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                  Icon(Icons.chevron_right, color: c.textSecondary),
-                ],
+                    const Spacer(flex: 9),
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

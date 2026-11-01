@@ -24,6 +24,7 @@ class SharedPrefsSettingsRepository implements SettingsRepository {
   static const _kJurisdiction = 'fe.settings.jurisdiction';
   static const _kRole = 'fe.settings.role';
   static const _kNewUz = 'fe.settings.new_uz_alphabet';
+  static const _kTextScale = 'fe.settings.text_scale';
 
   @override
   Future<AppSettings> load() async => AppSettings(
@@ -40,6 +41,7 @@ class SharedPrefsSettingsRepository implements SettingsRepository {
         _prefs.getString(_kJurisdiction) ?? internationalJurisdictionId,
     declaredRole: _prefs.getString(_kRole),
     newUzAlphabet: _prefs.getBool(_kNewUz) ?? false,
+    textScale: (_prefs.getDouble(_kTextScale) ?? 1.0).clamp(1.0, 1.3),
   );
 
   /// Eski «research» rejimi talaba (tadqiqotchi) rejimiga ko‘chiriladi.
@@ -54,6 +56,7 @@ class SharedPrefsSettingsRepository implements SettingsRepository {
     await _prefs.setString(_kContrast, s.contrast.name);
     await _prefs.setString(_kJurisdiction, s.jurisdictionId);
     await _prefs.setBool(_kNewUz, s.newUzAlphabet);
+    await _prefs.setDouble(_kTextScale, s.textScale);
     final mode = s.userMode;
     if (mode != null) await _prefs.setString(_kMode, mode.name);
     final role = s.declaredRole;

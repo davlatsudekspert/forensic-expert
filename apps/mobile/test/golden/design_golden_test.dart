@@ -27,7 +27,7 @@ void main() {
       ThemeMode.light,
       const Size(390, 844),
       1,
-      const Key('home.courtPrep'),
+      const Key('home.allDisciplines'),
     ),
     (
       'lux_03_home_areas_ru_320_x2',
@@ -43,7 +43,7 @@ void main() {
       ThemeMode.dark,
       const Size(320, 640),
       2,
-      const Key('home.courtPrep'),
+      const Key('home.allDisciplines'),
     ),
   ];
 

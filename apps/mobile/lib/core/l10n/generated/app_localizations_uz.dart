@@ -12674,4 +12674,16 @@ class AppLocalizationsUz extends AppLocalizations {
   String dnaQuestionNumbered(int n, String q) {
     return '$n. $q';
   }
+
+  @override
+  String get settingsTextSize => 'Shrift o‘lchami';
+
+  @override
+  String get textSizeNormal => 'Oddiy';
+
+  @override
+  String get textSizeLarge => 'Katta';
+
+  @override
+  String get textSizeXLarge => 'Juda katta';
 }
