@@ -18,7 +18,6 @@ import '../../../core/settings/app_settings.dart';
 import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/brand_mark.dart';
 import '../../../core/widgets/fe_components.dart';
-import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/plan/plan_models.dart' show ProFeature;
 import '../../../domain/plan/pro_split.dart';
@@ -26,9 +25,9 @@ import '../../pro/presentation/pro_first_offer.dart';
 import '../../pro/presentation/pro_gate.dart'
     show ProLockBadge, proSectionLocked;
 import '../../referral/presentation/invite_card.dart';
-import '../../tools/tool_strings.dart';
 import 'first_steps_card.dart';
 import 'home_desks.dart';
+import 'saved_items.dart';
 
 /// Home modullari (professional bo‘limlar). ID’lar marshrut parametri.
 enum HomeModule {
@@ -631,42 +630,13 @@ class _QuickAccess extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
-    final lang = Localizations.localeOf(context).languageCode;
     final data = ref.watch(userDataProvider);
-    final library = ref.watch(libraryRepositoryProvider);
-    final knowledge = ref.watch(knowledgeRepositoryProvider);
-    final evidence = ref.watch(evidenceDataProvider);
-
-    String? nameOf(String id) {
-      final tool = ToolsCatalog.byId(id);
-      if (tool != null) return l.toolName(tool);
-      final k = knowledge.byId(id);
-      if (k != null) return k.name.resolve(lang);
-      final entry = library.byId(id);
-      if (entry != null) return entry.name.resolve(lang);
-      final r = evidence.researchById(id);
-      if (r != null) {
-        return r.title.length > 60 ? '${r.title.substring(0, 57)}…' : r.title;
-      }
-      return null; // O‘chirilgan yoki paketda yo‘q yozuv — ko‘rsatilmaydi.
-    }
-
-    void openId(String id) {
-      if (ToolsCatalog.byId(id) != null) {
-        context.push(Routes.homeTool(id));
-      } else if (knowledge.byId(id) != null) {
-        context.push(Routes.knowledgeEntry(id));
-      } else if (evidence.researchById(id) != null) {
-        context.push(Routes.researchEntry(id));
-      } else {
-        context.push(Routes.homeSubstance(id));
-      }
-    }
-
-    List<(String, VoidCallback)> items(List<String> ids) => [
-      for (final id in ids)
-        if (nameOf(id) case final n?) (n, () => openId(id)),
-    ];
+    List<(String, VoidCallback)> items(List<String> ids) =>
+        resolveSavedItems(context, ref, ids);
+    // Mutaxassisda «Tanlanganlar» — «Ish stolim» ichida (takrorlanmaydi).
+    final favInDesk =
+        ref.watch(settingsControllerProvider.select((s) => s.userMode)) ==
+        UserMode.professional;
 
     final blocks = <Widget>[
       if (items(data.recentlyViewed) case final xs when xs.isNotEmpty)
@@ -683,13 +653,14 @@ class _QuickAccess extends ConsumerWidget {
           title: l.homeRecentTools,
           items: xs,
         ),
-      if (items(data.favorites) case final xs when xs.isNotEmpty)
-        _QuickBlock(
-          key: const Key('home.favorites'),
-          icon: Icons.star_border,
-          title: l.homeFavorites,
-          items: xs,
-        ),
+      if (!favInDesk)
+        if (items(data.favorites) case final xs when xs.isNotEmpty)
+          _QuickBlock(
+            key: const Key('home.favorites'),
+            icon: Icons.star_border,
+            title: l.homeFavorites,
+            items: xs,
+          ),
       if (data.recentSearches.isNotEmpty)
         _QuickBlock(
           key: const Key('home.recentSearches'),

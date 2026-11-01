@@ -12357,4 +12357,17 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get teacherDeskLessonsBody =>
       'Fan va kurs bo‘yicha mavzular — proyektorda ko‘rsatish';
+
+  @override
+  String get workbenchViewMedicine => 'Sud-tibbiy';
+
+  @override
+  String get workbenchViewChemistry => 'Sud-kimyo';
+
+  @override
+  String get workbenchFavTitle => 'Tanlanganlar';
+
+  @override
+  String get workbenchFavEmpty =>
+      'Kerakli mavzu, modda yoki kalkulyatorni ★ bilan belgilang — shu yerda turadi.';
 }

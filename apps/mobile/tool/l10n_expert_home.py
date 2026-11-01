@@ -39,6 +39,16 @@ k("teacherDeskLessonsBody", "Teacher desk card subtitle: lecture slide decks by 
   "Topics by subject and course — show on the projector",
   "Темы по дисциплинам и курсам — показ на проекторе",
   "Fan va kurs bo‘yicha mavzular — proyektorda ko‘rsatish")
+k("workbenchViewMedicine", "Expert workbench switch: forensic medical expert view.",
+  "Forensic medicine", "Судмедэксперт", "Sud-tibbiy")
+k("workbenchViewChemistry", "Expert workbench switch: forensic chemistry/toxicology expert view.",
+  "Forensic chemistry", "Судебная химия", "Sud-kimyo")
+k("workbenchFavTitle", "Expert workbench: the user's starred items.",
+  "Starred", "Избранное", "Tanlanganlar")
+k("workbenchFavEmpty", "Expert workbench: empty starred list hint.",
+  "Star (★) any topic, substance or calculator — it will appear here.",
+  "Отметьте (★) тему, вещество или калькулятор — они появятся здесь.",
+  "Kerakli mavzu, modda yoki kalkulyatorni ★ bilan belgilang — shu yerda turadi.")
 k("workbenchFactTitle", "Expert Home card title: one sourced fact per day.",
   "Today’s fact", "Сведение дня", "Bugungi ma’lumot")
 k("workbenchFactSource", "Label before the source line of the daily fact.",

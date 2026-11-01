@@ -108,26 +108,35 @@ void main() {
       expect(k('workbench.ai'), findsNothing);
     });
 
-    testWidgets('noma’lum mutaxassislik (profil yo‘q): aralash 4 karta', (
-      t,
-    ) async {
+    testWidgets('profil yo‘q: sud-tibbiy stol, almashtirgich bilan '
+        'sud-kimyoga o‘tiladi; «Tanlanganlar» ikkalasida', (t) async {
       await pumpHome(t);
-      expect(k('workbench.mixed'), findsOneWidget);
-      for (final id in ['casebook', 'labMs', 'calculators', 'ai']) {
+      expect(k('workbench.medicine'), findsOneWidget);
+      expect(k('workbench.view'), findsOneWidget);
+      for (final id in ['casebook', 'courtPrep', 'calculators', 'ai']) {
         expect(k('workbench.$id'), findsOneWidget, reason: id);
       }
+      expect(k('workbench.favorites'), findsOneWidget);
       expect(k('workbench.labMethods'), findsNothing);
+      await t.ensureVisible(k('workbench.view.chemistry'));
+      await t.pumpAndSettle();
+      await t.tap(k('workbench.view.chemistry'));
+      await t.pumpAndSettle();
+      expect(k('workbench.chemistry'), findsOneWidget);
+      expect(k('workbench.labMethods'), findsOneWidget);
+      expect(k('workbench.casebook'), findsNothing);
+      expect(k('workbench.favorites'), findsOneWidget);
     });
 
-    testWidgets('«Boshqa» mutaxassislik ham aralash', (t) async {
+    testWidgets('«Boshqa» mutaxassislik — sud-tibbiy stol', (t) async {
       await pumpHome(t, specialty: Specialty.other);
-      expect(k('workbench.mixed'), findsOneWidget);
+      expect(k('workbench.medicine'), findsOneWidget);
     });
 
     testWidgets('talaba va ustoz Home’ida Ish stolim yo‘q', (t) async {
       await pumpHome(t, mode: UserMode.student);
       expect(find.text('Ish stolim'), findsNothing);
-      expect(k('workbench.mixed'), findsNothing);
+      expect(k('workbench.view'), findsNothing);
       expect(k('desk.student'), findsOneWidget);
     });
 
@@ -138,7 +147,7 @@ void main() {
       expect(find.text('Ish stolim'), findsNothing);
       expect(find.text('O‘qish stolim'), findsNothing);
       expect(k('desk.student'), findsNothing);
-      expect(k('workbench.mixed'), findsNothing);
+      expect(k('workbench.view'), findsNothing);
       expect(k('desk.teacher'), findsOneWidget);
       for (final id in [
         'teachLessons',
@@ -229,7 +238,12 @@ void main() {
         'workbench.lodLoq',
         '/home/tool/tool.lab.lod_loq',
       ),
-      ('mixed.labMs', null, 'workbench.labMs', '/home/knowledge/method'),
+      (
+        'labMs',
+        Specialty.forensicChemistry,
+        'workbench.labMs',
+        '/home/knowledge/method',
+      ),
     ];
     for (final (name, spec, key, expected) in cases) {
       testWidgets(name, (t) async {
@@ -399,6 +413,9 @@ void main() {
             libraryRepositoryProvider.overrideWithValue(pool),
             knowledgeRepositoryProvider.overrideWithValue(knowledge),
             workbenchClockProvider.overrideWithValue(() => d),
+            workbenchEffectiveProvider.overrideWithValue(
+              WorkbenchSpecialty.mixed,
+            ),
           ],
         );
         addTearDown(c.dispose);

@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../app/routes.dart';
+import '../../../app/user_data.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
@@ -13,6 +14,7 @@ import '../../class_quiz/presentation/teacher_panel_screen.dart'
 import '../daily_fact.dart';
 import '../daily_question.dart';
 import '../workbench.dart';
+import 'saved_items.dart';
 
 /// Ekspert Home: «Ish stolim» (mutaxassislikka mos kirishlar) va
 /// «Bugungi ma’lumot». Faqat mavjud ekranlarga olib boradi.
@@ -22,7 +24,7 @@ class ExpertWorkbench extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
-    final specialty = ref.watch(workbenchSpecialtyProvider);
+    final specialty = ref.watch(workbenchEffectiveProvider);
     final lang = Localizations.localeOf(context).languageCode;
     final fact = ref.watch(dailyFactProvider(lang));
     final chemistry = specialty == WorkbenchSpecialty.chemistry;
@@ -34,11 +36,43 @@ class ExpertWorkbench extends ConsumerWidget {
           l.workbenchTitle,
           padding: const EdgeInsets.only(bottom: FeSpace.xs),
         ),
+        SegmentedButton<WorkbenchSpecialty>(
+          key: const Key('workbench.view'),
+          showSelectedIcon: false,
+          segments: [
+            ButtonSegment(
+              value: WorkbenchSpecialty.medicine,
+              icon: const Icon(Icons.monitor_heart_outlined, size: 18),
+              label: Text(
+                l.workbenchViewMedicine,
+                key: const Key('workbench.view.medicine'),
+                overflow: TextOverflow.ellipsis,
+              ),
+            ),
+            ButtonSegment(
+              value: WorkbenchSpecialty.chemistry,
+              icon: const Icon(Icons.science_outlined, size: 18),
+              label: Text(
+                l.workbenchViewChemistry,
+                key: const Key('workbench.view.chemistry'),
+                overflow: TextOverflow.ellipsis,
+              ),
+            ),
+          ],
+          selected: {specialty},
+          onSelectionChanged: (s) =>
+              ref.read(workbenchViewProvider.notifier).select(s.first),
+        ),
+        const SizedBox(height: FeSpace.sm),
         if (chemistry) ...[
           const _LabMethodsCard(),
           const SizedBox(height: FeSpace.sm),
         ],
         _DeskGrid(items: Workbench.cardsFor(specialty)),
+        const SizedBox(height: FeSpace.sm),
+        // ★ Tanlanganlar — ikkala stolda ham: foydalanuvchi o‘zi belgilagan
+        // mavzu, modda va kalkulyatorlar shu yerda turadi.
+        const _DeskFavorites(),
         if (fact != null) ...[
           const SizedBox(height: FeSpace.sm),
           DailyFactCard(fact: fact),
@@ -589,6 +623,82 @@ class _AnswerRow extends StatelessWidget {
             ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+/// «Tanlanganlar» (★): bo‘sh bo‘lsa — qanday qo‘shishni aytuvchi bitta qator.
+class _DeskFavorites extends ConsumerWidget {
+  const _DeskFavorites();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final b = Theme.of(context).brightness;
+    final ids = ref.watch(userDataProvider.select((d) => d.favorites));
+    final items = resolveSavedItems(context, ref, ids).take(8).toList();
+    return FeCard(
+      key: const Key('workbench.favorites'),
+      padding: const EdgeInsets.all(FeSpace.md),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              DecoratedBox(
+                decoration: BoxDecoration(
+                  color: FeHues.ochre.bg(b),
+                  borderRadius: BorderRadius.circular(FeRadius.sm),
+                ),
+                child: SizedBox.square(
+                  dimension: 36,
+                  child: Icon(Icons.star_rounded, color: FeHues.ochre.fg(b)),
+                ),
+              ),
+              const SizedBox(width: FeSpace.sm),
+              Expanded(
+                child: Text(
+                  l.workbenchFavTitle,
+                  style: t.titleSmall?.copyWith(fontWeight: FontWeight.w600),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: FeSpace.xs),
+          if (items.isEmpty)
+            Text(
+              l.workbenchFavEmpty,
+              key: const Key('workbench.favorites.empty'),
+              style: t.bodySmall?.copyWith(color: c.textSecondary),
+            )
+          else
+            for (final (name, open) in items)
+              InkWell(
+                borderRadius: BorderRadius.circular(FeRadius.sm),
+                onTap: open,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: FeSpace.xs),
+                  child: Row(
+                    children: [
+                      Icon(Icons.star_rounded, size: 16, color: c.accent),
+                      const SizedBox(width: FeSpace.xs),
+                      Expanded(
+                        child: Text(
+                          name,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: t.bodyMedium,
+                        ),
+                      ),
+                      Icon(Icons.chevron_right, color: c.textSecondary),
+                    ],
+                  ),
+                ),
+              ),
+        ],
       ),
     );
   }

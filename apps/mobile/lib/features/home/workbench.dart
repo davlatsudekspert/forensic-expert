@@ -53,6 +53,31 @@ final workbenchSpecialtyProvider = Provider<WorkbenchSpecialty>((ref) {
   );
 });
 
+/// «Ish stolim»da tanlangan ko‘rinish: Sud-tibbiy yoki Sud-kimyo ekspert
+/// (egasi talabi, 2026-11-01: ikkalasi ham chiqsin). `null` — profildagi
+/// mutaxassislik (aralash bo‘lsa — sud-tibbiy).
+class WorkbenchViewController extends Notifier<WorkbenchSpecialty?> {
+  @override
+  WorkbenchSpecialty? build() => null;
+
+  void select(WorkbenchSpecialty v) => state = v;
+}
+
+final workbenchViewProvider =
+    NotifierProvider<WorkbenchViewController, WorkbenchSpecialty?>(
+      WorkbenchViewController.new,
+    );
+
+/// Hozir ko‘rsatiladigan stol (faqat sud-tibbiy yoki sud-kimyo).
+final workbenchEffectiveProvider = Provider<WorkbenchSpecialty>((ref) {
+  final picked = ref.watch(workbenchViewProvider);
+  if (picked != null) return picked;
+  final own = ref.watch(workbenchSpecialtyProvider);
+  return own == WorkbenchSpecialty.chemistry
+      ? WorkbenchSpecialty.chemistry
+      : WorkbenchSpecialty.medicine;
+});
+
 /// Ish stoli elementlari. Har biri MAVJUD ekranga olib boradi.
 enum WorkbenchItemId {
   casebook,
@@ -154,6 +179,7 @@ abstract final class Workbench {
     title: (l) => l.workbenchCalcTitle,
     body: (l) => l.workbenchCalcMixedBody,
   );
+
   static final ai = WorkbenchItem(
     id: WorkbenchItemId.ai,
     icon: Icons.auto_awesome_outlined,

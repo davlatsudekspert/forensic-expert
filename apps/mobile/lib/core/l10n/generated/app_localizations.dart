@@ -21512,6 +21512,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Topics by subject and course — show on the projector'**
   String get teacherDeskLessonsBody;
+
+  /// Expert workbench switch: forensic medical expert view.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic medicine'**
+  String get workbenchViewMedicine;
+
+  /// Expert workbench switch: forensic chemistry/toxicology expert view.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic chemistry'**
+  String get workbenchViewChemistry;
+
+  /// Expert workbench: the user's starred items.
+  ///
+  /// In en, this message translates to:
+  /// **'Starred'**
+  String get workbenchFavTitle;
+
+  /// Expert workbench: empty starred list hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Star (★) any topic, substance or calculator — it will appear here.'**
+  String get workbenchFavEmpty;
 }
 
 class _AppLocalizationsDelegate

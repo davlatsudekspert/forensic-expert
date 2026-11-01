@@ -12470,4 +12470,17 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get teacherDeskLessonsBody =>
       'Темы по дисциплинам и курсам — показ на проекторе';
+
+  @override
+  String get workbenchViewMedicine => 'Судмедэксперт';
+
+  @override
+  String get workbenchViewChemistry => 'Судебная химия';
+
+  @override
+  String get workbenchFavTitle => 'Избранное';
+
+  @override
+  String get workbenchFavEmpty =>
+      'Отметьте (★) тему, вещество или калькулятор — они появятся здесь.';
 }

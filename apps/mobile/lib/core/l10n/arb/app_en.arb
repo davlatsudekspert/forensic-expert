@@ -16255,5 +16255,21 @@
   "teacherDeskLessonsBody": "Topics by subject and course — show on the projector",
   "@teacherDeskLessonsBody": {
     "description": "Teacher desk card subtitle: lecture slide decks by course and topic."
+  },
+  "workbenchViewMedicine": "Forensic medicine",
+  "@workbenchViewMedicine": {
+    "description": "Expert workbench switch: forensic medical expert view."
+  },
+  "workbenchViewChemistry": "Forensic chemistry",
+  "@workbenchViewChemistry": {
+    "description": "Expert workbench switch: forensic chemistry/toxicology expert view."
+  },
+  "workbenchFavTitle": "Starred",
+  "@workbenchFavTitle": {
+    "description": "Expert workbench: the user's starred items."
+  },
+  "workbenchFavEmpty": "Star (★) any topic, substance or calculator — it will appear here.",
+  "@workbenchFavEmpty": {
+    "description": "Expert workbench: empty starred list hint."
   }
 }

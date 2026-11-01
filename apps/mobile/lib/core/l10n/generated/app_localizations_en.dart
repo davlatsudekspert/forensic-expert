@@ -12425,4 +12425,17 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get teacherDeskLessonsBody =>
       'Topics by subject and course — show on the projector';
+
+  @override
+  String get workbenchViewMedicine => 'Forensic medicine';
+
+  @override
+  String get workbenchViewChemistry => 'Forensic chemistry';
+
+  @override
+  String get workbenchFavTitle => 'Starred';
+
+  @override
+  String get workbenchFavEmpty =>
+      'Star (★) any topic, substance or calculator — it will appear here.';
 }

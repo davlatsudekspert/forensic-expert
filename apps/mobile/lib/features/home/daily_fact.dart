@@ -179,7 +179,7 @@ final dailyFactProvider = Provider.family<DailyFact?, String>((ref, lang) {
   return pickDailyFact(
     library: ref.watch(libraryRepositoryProvider),
     knowledge: ref.watch(knowledgeRepositoryProvider),
-    specialty: ref.watch(workbenchSpecialtyProvider),
+    specialty: ref.watch(workbenchEffectiveProvider),
     lang: lang,
     today: ref.watch(workbenchClockProvider)(),
   );
