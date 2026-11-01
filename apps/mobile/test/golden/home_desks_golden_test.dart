@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:forensic_expert/app/guidelines.dart';
 import 'package:forensic_expert/app/professional.dart';
 import 'package:forensic_expert/app/study.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
@@ -34,6 +35,7 @@ void main() {
     ThemeMode theme = ThemeMode.light,
     String lang = 'uz',
     Size size = const Size(390, 1500),
+    String? location,
   }) async {
     final guidelines = GuidelineBundle.fromJson(
       jsonDecode(
@@ -51,12 +53,14 @@ void main() {
       size: size,
       pixelRatio: 1.5,
       testFixtures: false,
+      initialLocation: location,
       overrides: [
         ...content.overrides,
         if (specialty != null)
           initialProfileProvider.overrideWithValue(profileOf(specialty)),
         workbenchClockProvider.overrideWithValue(() => fixedNow),
         studyCatalogProvider.overrideWithValue(catalog),
+        guidelinesProvider.overrideWith((ref) => guidelines),
       ],
     );
     await settleImages(tester);
@@ -98,6 +102,24 @@ void main() {
       name: 'teacher_home_desk_uz_dark',
       mode: UserMode.teacher,
       theme: ThemeMode.dark,
+    );
+  });
+
+  testWidgets('lab_hub_spectro_uz', (t) async {
+    await shot(
+      t,
+      name: 'lab_hub_spectro_uz',
+      mode: UserMode.professional,
+      location: '/home/lab/spectro',
+    );
+  });
+
+  testWidgets('lab_hub_chromatography_uz', (t) async {
+    await shot(
+      t,
+      name: 'lab_hub_chromatography_uz',
+      mode: UserMode.professional,
+      location: '/home/lab/chromatography',
     );
   });
 }

@@ -51,6 +51,7 @@ import '../features/evidence/presentation/scientific_image.dart';
 import '../features/glossary/presentation/glossary_screens.dart';
 import '../features/guidelines/presentation/guidelines_screens.dart';
 import '../features/home/presentation/home_screen.dart';
+import '../features/home/presentation/lab_topic_hub.dart';
 import '../features/home/presentation/search_screen.dart';
 import '../features/knowledge/knowledge_strings.dart';
 import '../features/knowledge/presentation/knowledge_detail_screen.dart';
@@ -710,6 +711,14 @@ final routerProvider = Provider<GoRouter>((ref) {
                         sample: _sampleOfKind(kind),
                         child: KnowledgeListScreen(kind: kind),
                       ),
+                      null => const NotFoundScreen(),
+                    },
+                  ),
+                  GoRoute(
+                    path: 'lab/:topic',
+                    builder: (c, s) => switch (LabTopic.values
+                        .asNameMap()[s.pathParameters['topic']]) {
+                      final t? => LabTopicHubScreen(topic: t),
                       null => const NotFoundScreen(),
                     },
                   ),

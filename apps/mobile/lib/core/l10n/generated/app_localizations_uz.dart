@@ -12370,4 +12370,46 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get workbenchFavEmpty =>
       'Kerakli mavzu, modda yoki kalkulyatorni ★ bilan belgilang — shu yerda turadi.';
+
+  @override
+  String get labHubSpectroIntro =>
+      'Qonda CO (COHb), dori va giyohvand moddalarni UB-ko‘rinadigan spektrofotometriyada aniqlash: apparatda ishlash, manbali yo‘riqnomalar, usul tavsifi va hisoblash.';
+
+  @override
+  String get labHubChromIntro =>
+      'Gaz va suyuqlik xromatografiyasi hamda mass-spektrometriya: apparat tuzilishi, apparatda ishlash, manbali yo‘riqnomalar va usul tavsifi.';
+
+  @override
+  String get labHubPractice => 'Apparatda ishlash';
+
+  @override
+  String get labHubGuides => 'Aniqlash yo‘riqnomalari';
+
+  @override
+  String get labHubMethods => 'Usullar';
+
+  @override
+  String get labHubCalc => 'Hisoblash';
+
+  @override
+  String get labHubLessonCohb =>
+      'Shimadzu UV-1900 spektrofotometrida CO (COHb) ni aniqlash';
+
+  @override
+  String get labHubLessonGcms => 'GC-MS da ishlash usullari: asoslar';
+
+  @override
+  String get labHubLessonEthanol =>
+      '«Kristallyuks» gaz xromatografida etanolni aniqlash';
+
+  @override
+  String get labHubLessonBody =>
+      'Ish tartibi rasmlar bilan, bosqichma-bosqich, test bilan';
+
+  @override
+  String get labHubGcmsScheme => 'GC-MS apparati: sxema va qismlari';
+
+  @override
+  String get labHubGcmsSchemeBody =>
+      'Injektor, kolonka, ion manbai, kvadrupol, detektor';
 }

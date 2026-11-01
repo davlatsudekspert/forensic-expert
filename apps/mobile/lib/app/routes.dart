@@ -24,6 +24,9 @@ abstract final class Routes {
   static const compare = '/home/compare';
   static String knowledge(String kind) => '/home/knowledge/$kind';
   static String knowledgeEntry(String id) => '/home/entry/$id';
+
+  /// «Laboratoriya usullari» mavzu sahifasi: `spectro` | `chromatography`.
+  static String labHub(String topic) => '/home/lab/$topic';
   static String area(String area) => '/home/area/$area';
   static const forensicMedicine = '/home/area/forensicMedicine';
   static const biochemistry = '/home/area/biochemistry';

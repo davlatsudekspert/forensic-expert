@@ -21536,6 +21536,78 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Star (★) any topic, substance or calculator — it will appear here.'**
   String get workbenchFavEmpty;
+
+  /// Lab topic page intro: spectrophotometry.
+  ///
+  /// In en, this message translates to:
+  /// **'Determining CO (COHb) in blood, medicines and narcotics by UV-Vis spectrophotometry: working with the instrument, sourced procedures, method notes and calculation.'**
+  String get labHubSpectroIntro;
+
+  /// Lab topic page intro: GC-MS / LC-MS.
+  ///
+  /// In en, this message translates to:
+  /// **'Gas and liquid chromatography with mass spectrometry: instrument layout, working with the instrument, sourced procedures and method notes.'**
+  String get labHubChromIntro;
+
+  /// Lab topic page section: instrument practice (lessons, schematic).
+  ///
+  /// In en, this message translates to:
+  /// **'Working with the instrument'**
+  String get labHubPractice;
+
+  /// Lab topic page section: sourced determination procedures.
+  ///
+  /// In en, this message translates to:
+  /// **'Determination procedures'**
+  String get labHubGuides;
+
+  /// Lab topic page section: method descriptions.
+  ///
+  /// In en, this message translates to:
+  /// **'Methods'**
+  String get labHubMethods;
+
+  /// Lab topic page section: calculation.
+  ///
+  /// In en, this message translates to:
+  /// **'Calculation'**
+  String get labHubCalc;
+
+  /// Lab topic page: COHb lesson on the UV-1900.
+  ///
+  /// In en, this message translates to:
+  /// **'Determining CO (COHb) on the Shimadzu UV-1900'**
+  String get labHubLessonCohb;
+
+  /// Lab topic page: GC-MS basics lesson.
+  ///
+  /// In en, this message translates to:
+  /// **'Working with GC-MS: basics'**
+  String get labHubLessonGcms;
+
+  /// Lab topic page: ethanol on Kristallyuks GC lesson.
+  ///
+  /// In en, this message translates to:
+  /// **'Ethanol on the Kristallyuks gas chromatograph'**
+  String get labHubLessonEthanol;
+
+  /// Lab topic page: lesson tile subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Step-by-step procedure with pictures and a test'**
+  String get labHubLessonBody;
+
+  /// Lab topic page: GC-MS instrument schematic.
+  ///
+  /// In en, this message translates to:
+  /// **'GC-MS instrument: diagram and parts'**
+  String get labHubGcmsScheme;
+
+  /// Lab topic page: GC-MS schematic subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Injector, column, ion source, quadrupole, detector'**
+  String get labHubGcmsSchemeBody;
 }
 
 class _AppLocalizationsDelegate

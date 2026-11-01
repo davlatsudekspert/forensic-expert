@@ -211,7 +211,7 @@ abstract final class Workbench {
     id: WorkbenchItemId.labSpectro,
     icon: Icons.waves_outlined,
     hue: FeHues.indigo,
-    route: Routes.homeTool('tool.lab.beer_lambert'),
+    route: Routes.labHub('spectro'),
     title: (l) => l.workbenchLabSpectro,
     body: (l) => l.workbenchLabSpectroSub,
   );
@@ -222,7 +222,7 @@ abstract final class Workbench {
     id: WorkbenchItemId.labMs,
     icon: Icons.troubleshoot_outlined,
     hue: FeHues.slate,
-    route: Routes.knowledge(KnowledgeKind.method.name),
+    route: Routes.labHub('chromatography'),
     title: (l) => l.workbenchLabMs,
     body: (l) => l.workbenchLabMsSub,
   );

@@ -49,6 +49,34 @@ k("workbenchFavEmpty", "Expert workbench: empty starred list hint.",
   "Star (★) any topic, substance or calculator — it will appear here.",
   "Отметьте (★) тему, вещество или калькулятор — они появятся здесь.",
   "Kerakli mavzu, modda yoki kalkulyatorni ★ bilan belgilang — shu yerda turadi.")
+k("labHubSpectroIntro", "Lab topic page intro: spectrophotometry.",
+  "Determining CO (COHb) in blood, medicines and narcotics by UV-Vis spectrophotometry: working with the instrument, sourced procedures, method notes and calculation.",
+  "Определение CO (COHb) в крови, лекарств и наркотиков методом УФ-видимой спектрофотометрии: работа на приборе, руководства с источниками, описание методов и расчёт.",
+  "Qonda CO (COHb), dori va giyohvand moddalarni UB-ko‘rinadigan spektrofotometriyada aniqlash: apparatda ishlash, manbali yo‘riqnomalar, usul tavsifi va hisoblash.")
+k("labHubChromIntro", "Lab topic page intro: GC-MS / LC-MS.",
+  "Gas and liquid chromatography with mass spectrometry: instrument layout, working with the instrument, sourced procedures and method notes.",
+  "Газовая и жидкостная хроматография с масс-спектрометрией: устройство прибора, работа на приборе, руководства с источниками и описание методов.",
+  "Gaz va suyuqlik xromatografiyasi hamda mass-spektrometriya: apparat tuzilishi, apparatda ishlash, manbali yo‘riqnomalar va usul tavsifi.")
+k("labHubPractice", "Lab topic page section: instrument practice (lessons, schematic).",
+  "Working with the instrument", "Работа на приборе", "Apparatda ishlash")
+k("labHubGuides", "Lab topic page section: sourced determination procedures.",
+  "Determination procedures", "Методики определения", "Aniqlash yo‘riqnomalari")
+k("labHubMethods", "Lab topic page section: method descriptions.",
+  "Methods", "Методы", "Usullar")
+k("labHubCalc", "Lab topic page section: calculation.",
+  "Calculation", "Расчёт", "Hisoblash")
+k("labHubLessonCohb", "Lab topic page: COHb lesson on the UV-1900.",
+  "Determining CO (COHb) on the Shimadzu UV-1900", "Определение CO (COHb) на Shimadzu UV-1900", "Shimadzu UV-1900 spektrofotometrida CO (COHb) ni aniqlash")
+k("labHubLessonGcms", "Lab topic page: GC-MS basics lesson.",
+  "Working with GC-MS: basics", "Работа на ГХ-МС: основы", "GC-MS da ishlash usullari: asoslar")
+k("labHubLessonEthanol", "Lab topic page: ethanol on Kristallyuks GC lesson.",
+  "Ethanol on the Kristallyuks gas chromatograph", "Этанол на газовом хроматографе «Кристаллюкс»", "«Kristallyuks» gaz xromatografida etanolni aniqlash")
+k("labHubLessonBody", "Lab topic page: lesson tile subtitle.",
+  "Step-by-step procedure with pictures and a test", "Пошаговый порядок работы с иллюстрациями и тестом", "Ish tartibi rasmlar bilan, bosqichma-bosqich, test bilan")
+k("labHubGcmsScheme", "Lab topic page: GC-MS instrument schematic.",
+  "GC-MS instrument: diagram and parts", "Прибор ГХ-МС: схема и узлы", "GC-MS apparati: sxema va qismlari")
+k("labHubGcmsSchemeBody", "Lab topic page: GC-MS schematic subtitle.",
+  "Injector, column, ion source, quadrupole, detector", "Инжектор, колонка, источник ионов, квадруполь, детектор", "Injektor, kolonka, ion manbai, kvadrupol, detektor")
 k("workbenchFactTitle", "Expert Home card title: one sourced fact per day.",
   "Today’s fact", "Сведение дня", "Bugungi ma’lumot")
 k("workbenchFactSource", "Label before the source line of the daily fact.",

@@ -77,6 +77,7 @@ class ExpertWorkbench extends ConsumerWidget {
           const SizedBox(height: FeSpace.sm),
           DailyFactCard(fact: fact),
         ],
+        const _DeskDailyQuestion(),
         const SizedBox(height: FeSpace.xs),
       ],
     );
@@ -134,6 +135,7 @@ class TeacherDesk extends ConsumerWidget {
         _DeskGrid(
           items: Workbench.teacherCards(isTeacher: watchIsTeacher(ref)),
         ),
+        const _DeskDailyQuestion(),
         const SizedBox(height: FeSpace.xs),
       ],
     );
@@ -699,6 +701,26 @@ class _DeskFavorites extends ConsumerWidget {
                 ),
               ),
         ],
+      ),
+    );
+  }
+}
+
+/// «Bugungi savol» — mutaxassis va ustoz stolida ham (egasi talabi,
+/// 2026-11-01); talabaniki «O‘qish stolim» ichida.
+class _DeskDailyQuestion extends ConsumerWidget {
+  const _DeskDailyQuestion();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final lang = Localizations.localeOf(context).languageCode;
+    final question = ref.watch(dailyQuestionProvider(lang));
+    if (question == null) return const SizedBox.shrink();
+    return Padding(
+      padding: const EdgeInsets.only(top: FeSpace.sm),
+      child: DailyQuestionCard(
+        key: ValueKey('daily.q.${question.item.id}'),
+        question: question,
       ),
     );
   }

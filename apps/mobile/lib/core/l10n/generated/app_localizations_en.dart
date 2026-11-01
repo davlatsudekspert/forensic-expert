@@ -12438,4 +12438,46 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get workbenchFavEmpty =>
       'Star (★) any topic, substance or calculator — it will appear here.';
+
+  @override
+  String get labHubSpectroIntro =>
+      'Determining CO (COHb) in blood, medicines and narcotics by UV-Vis spectrophotometry: working with the instrument, sourced procedures, method notes and calculation.';
+
+  @override
+  String get labHubChromIntro =>
+      'Gas and liquid chromatography with mass spectrometry: instrument layout, working with the instrument, sourced procedures and method notes.';
+
+  @override
+  String get labHubPractice => 'Working with the instrument';
+
+  @override
+  String get labHubGuides => 'Determination procedures';
+
+  @override
+  String get labHubMethods => 'Methods';
+
+  @override
+  String get labHubCalc => 'Calculation';
+
+  @override
+  String get labHubLessonCohb =>
+      'Determining CO (COHb) on the Shimadzu UV-1900';
+
+  @override
+  String get labHubLessonGcms => 'Working with GC-MS: basics';
+
+  @override
+  String get labHubLessonEthanol =>
+      'Ethanol on the Kristallyuks gas chromatograph';
+
+  @override
+  String get labHubLessonBody =>
+      'Step-by-step procedure with pictures and a test';
+
+  @override
+  String get labHubGcmsScheme => 'GC-MS instrument: diagram and parts';
+
+  @override
+  String get labHubGcmsSchemeBody =>
+      'Injector, column, ion source, quadrupole, detector';
 }

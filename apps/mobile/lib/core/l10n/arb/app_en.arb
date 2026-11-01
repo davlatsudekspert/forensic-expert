@@ -16271,5 +16271,53 @@
   "workbenchFavEmpty": "Star (★) any topic, substance or calculator — it will appear here.",
   "@workbenchFavEmpty": {
     "description": "Expert workbench: empty starred list hint."
+  },
+  "labHubSpectroIntro": "Determining CO (COHb) in blood, medicines and narcotics by UV-Vis spectrophotometry: working with the instrument, sourced procedures, method notes and calculation.",
+  "@labHubSpectroIntro": {
+    "description": "Lab topic page intro: spectrophotometry."
+  },
+  "labHubChromIntro": "Gas and liquid chromatography with mass spectrometry: instrument layout, working with the instrument, sourced procedures and method notes.",
+  "@labHubChromIntro": {
+    "description": "Lab topic page intro: GC-MS / LC-MS."
+  },
+  "labHubPractice": "Working with the instrument",
+  "@labHubPractice": {
+    "description": "Lab topic page section: instrument practice (lessons, schematic)."
+  },
+  "labHubGuides": "Determination procedures",
+  "@labHubGuides": {
+    "description": "Lab topic page section: sourced determination procedures."
+  },
+  "labHubMethods": "Methods",
+  "@labHubMethods": {
+    "description": "Lab topic page section: method descriptions."
+  },
+  "labHubCalc": "Calculation",
+  "@labHubCalc": {
+    "description": "Lab topic page section: calculation."
+  },
+  "labHubLessonCohb": "Determining CO (COHb) on the Shimadzu UV-1900",
+  "@labHubLessonCohb": {
+    "description": "Lab topic page: COHb lesson on the UV-1900."
+  },
+  "labHubLessonGcms": "Working with GC-MS: basics",
+  "@labHubLessonGcms": {
+    "description": "Lab topic page: GC-MS basics lesson."
+  },
+  "labHubLessonEthanol": "Ethanol on the Kristallyuks gas chromatograph",
+  "@labHubLessonEthanol": {
+    "description": "Lab topic page: ethanol on Kristallyuks GC lesson."
+  },
+  "labHubLessonBody": "Step-by-step procedure with pictures and a test",
+  "@labHubLessonBody": {
+    "description": "Lab topic page: lesson tile subtitle."
+  },
+  "labHubGcmsScheme": "GC-MS instrument: diagram and parts",
+  "@labHubGcmsScheme": {
+    "description": "Lab topic page: GC-MS instrument schematic."
+  },
+  "labHubGcmsSchemeBody": "Injector, column, ion source, quadrupole, detector",
+  "@labHubGcmsSchemeBody": {
+    "description": "Lab topic page: GC-MS schematic subtitle."
   }
 }

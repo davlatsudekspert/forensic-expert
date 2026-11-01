@@ -12483,4 +12483,45 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get workbenchFavEmpty =>
       'Отметьте (★) тему, вещество или калькулятор — они появятся здесь.';
+
+  @override
+  String get labHubSpectroIntro =>
+      'Определение CO (COHb) в крови, лекарств и наркотиков методом УФ-видимой спектрофотометрии: работа на приборе, руководства с источниками, описание методов и расчёт.';
+
+  @override
+  String get labHubChromIntro =>
+      'Газовая и жидкостная хроматография с масс-спектрометрией: устройство прибора, работа на приборе, руководства с источниками и описание методов.';
+
+  @override
+  String get labHubPractice => 'Работа на приборе';
+
+  @override
+  String get labHubGuides => 'Методики определения';
+
+  @override
+  String get labHubMethods => 'Методы';
+
+  @override
+  String get labHubCalc => 'Расчёт';
+
+  @override
+  String get labHubLessonCohb => 'Определение CO (COHb) на Shimadzu UV-1900';
+
+  @override
+  String get labHubLessonGcms => 'Работа на ГХ-МС: основы';
+
+  @override
+  String get labHubLessonEthanol =>
+      'Этанол на газовом хроматографе «Кристаллюкс»';
+
+  @override
+  String get labHubLessonBody =>
+      'Пошаговый порядок работы с иллюстрациями и тестом';
+
+  @override
+  String get labHubGcmsScheme => 'Прибор ГХ-МС: схема и узлы';
+
+  @override
+  String get labHubGcmsSchemeBody =>
+      'Инжектор, колонка, источник ионов, квадруполь, детектор';
 }

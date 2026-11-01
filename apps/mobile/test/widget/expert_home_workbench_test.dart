@@ -218,13 +218,13 @@ void main() {
         'labSpectro',
         Specialty.forensicChemistry,
         'workbench.labSpectro',
-        '/home/tool/tool.lab.beer_lambert',
+        '/home/lab/spectro',
       ),
       (
         'labMs',
         Specialty.forensicChemistry,
         'workbench.labMs',
-        '/home/knowledge/method',
+        '/home/lab/chromatography',
       ),
       (
         'solutionCalc',
@@ -242,7 +242,7 @@ void main() {
         'labMs',
         Specialty.forensicChemistry,
         'workbench.labMs',
-        '/home/knowledge/method',
+        '/home/lab/chromatography',
       ),
     ];
     for (final (name, spec, key, expected) in cases) {
