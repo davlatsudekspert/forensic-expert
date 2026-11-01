@@ -77,11 +77,8 @@ void main() {
     expect(find.byKey(const Key('entry.glance.row.sources')), findsOne);
     // Holat ogohlantirishi va «Ma’lumotlar kelib chiqishi» joyida.
     // Ixcham holat chipi; to‘liq ma’no semantik yorliqda.
-    expect(find.text('Ekspert hali tasdiqlamagan'), findsOne);
-    expect(
-      find.bySemanticsLabel('Ma’lumot hali ekspert tomonidan tasdiqlanmagan'),
-      findsOne,
-    );
+    // Egasi qarori (2026-11-01): «Ekspert hali tasdiqlamagan» chipi yo‘q.
+    expect(find.text('Ekspert hali tasdiqlamagan'), findsNothing);
     expect(find.byKey(const Key('entry.provenance')), findsOne);
 
     // «Manbalar» qatori sahifadagi manbalar ro‘yxatiga olib boradi.

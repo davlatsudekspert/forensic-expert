@@ -41,7 +41,10 @@ void main() {
   ) async {
     await open(tester, 'reagent-dragendorff');
     expect(find.text('Dragendorf reaktivi'), findsWidgets);
-    expect(find.byType(UnverifiedBanner), findsWidgets);
+    expect(
+      find.byType(UnverifiedBanner),
+      findsNothing,
+    ); // egasi qarori 2026-11-01
     // Xavflar sahifa boshida, bepul foydalanuvchiga ham ochiq.
     expect(find.byKey(const Key('reagent.hazardBanner')), findsOneWidget);
     expect(find.byKey(const Key('reagent.hazard.ghs')), findsWidgets);

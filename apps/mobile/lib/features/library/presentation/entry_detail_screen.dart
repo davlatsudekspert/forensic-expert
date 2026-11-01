@@ -131,12 +131,10 @@ class EntryDetailScreen extends ConsumerWidget {
                         ],
                       ),
                       if (entry.isTestData) const TestDataBadge(),
-                      // Hamma da’vo egasi bergan manbaga (ustoz kitobi)
-                      // tayansa — banner pastda; aks holda «tasdiqlanmagan»
-                      // holat chipi shu qatorda.
-                      if (entry.status != ScientificStatus.verified &&
-                          !_allConfirmed(entry))
-                        const UnverifiedBanner(),
+                      // Egasi qarori (2026-11-01): «Ekspert hali
+                      // tasdiqlamagan» chipi ko‘rsatilmaydi — taqrizchi tizimi
+                      // hali yo‘q; holat manba bilan ko‘rsatiladi («Manba
+                      // keltirilgan»), «Tasdiqlangan» faqat haqiqiy taqrizda.
                     ],
                   ),
                   const SizedBox(height: FeSpace.sm),

@@ -401,16 +401,15 @@ class _ProvenanceCard extends StatelessWidget {
           ),
           const SizedBox(height: FeSpace.xxs),
           row(l.detailEvidenceStatus, ReviewStatusBadge(status: entry.status)),
-          row(
-            l.detailReviewerStatus,
-            Text(
-              reviews == 0
-                  ? l.detailReviewsNone
-                  : l.detailReviewsCount(reviews),
-              key: const Key('entry.reviewStatus'),
-              style: t.bodySmall,
+          if (reviews > 0)
+            row(
+              l.detailReviewerStatus,
+              Text(
+                l.detailReviewsCount(reviews),
+                key: const Key('entry.reviewStatus'),
+                style: t.bodySmall,
+              ),
             ),
-          ),
           if (draft)
             row(
               '',

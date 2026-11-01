@@ -257,7 +257,10 @@ void main() {
   ) async {
     await open(tester, Routes.knowledgeEntry('his-mi-early'));
     expect(find.byKey(const Key('histology.noDiagnosis')), findsOneWidget);
-    expect(find.byType(UnverifiedBanner), findsWidgets);
+    expect(
+      find.byType(UnverifiedBanner),
+      findsNothing,
+    ); // egasi qarori 2026-11-01
     await see(tester, find.byKey(const Key('gallery.his-mi-early')));
   });
 

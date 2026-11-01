@@ -8,7 +8,6 @@ import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/data/class_quiz/fake_class_quiz_service.dart';
 import 'package:forensic_expert/domain/class_quiz/class_quiz_models.dart';
 import 'package:forensic_expert/domain/plan/plan_models.dart';
-import 'package:forensic_expert/domain/ports/class_quiz_ports.dart';
 
 import '../helpers/pump_app.dart';
 

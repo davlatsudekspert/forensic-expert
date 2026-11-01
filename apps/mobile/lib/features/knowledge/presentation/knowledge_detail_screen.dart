@@ -132,13 +132,6 @@ class KnowledgeDetailScreen extends ConsumerWidget {
                     ),
                     const SizedBox(height: FeSpace.xs),
                   ],
-                  if (e.status != ScientificStatus.verified) ...[
-                    const Align(
-                      alignment: AlignmentDirectional.centerStart,
-                      child: UnverifiedBanner(),
-                    ),
-                    const SizedBox(height: FeSpace.sm),
-                  ],
                   if (e.kind == KnowledgeKind.screeningTest) ...[
                     FeBanner(
                       key: const Key('screening.banner'),
@@ -259,11 +252,11 @@ class _Header extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(height: FeSpace.xxs),
-          Text(
-            reviews == 0 ? l.detailReviewsNone : l.detailReviewsCount(reviews),
-            style: t.bodySmall,
-          ),
+          // Taqriz bo‘lmasa qator ko‘rsatilmaydi (egasi qarori 2026-11-01).
+          if (reviews > 0) ...[
+            const SizedBox(height: FeSpace.xxs),
+            Text(l.detailReviewsCount(reviews), style: t.bodySmall),
+          ],
         ],
       ),
     );

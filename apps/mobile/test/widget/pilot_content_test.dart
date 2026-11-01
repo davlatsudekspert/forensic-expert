@@ -45,10 +45,14 @@ void main() {
   testWidgets('yozuv: ilmiy qatlam, iqtibos va manbalar ochiq', (tester) async {
     await open(tester, 'methanol');
     // «MA’LUMOT TEKSHIRILMAGAN — EKSPERT TASDIG‘I KERAK» banneri.
-    expect(find.byType(UnverifiedBanner), findsOneWidget);
+    expect(
+      find.byType(UnverifiedBanner),
+      findsNothing,
+    ); // egasi qarori 2026-11-01
     expect(find.byKey(const Key('badge.freeDemo')), findsNothing);
     expect(find.byKey(const Key('entry.provenance')), findsOneWidget);
-    expect(find.text('No expert reviews yet (2 required)'), findsOneWidget);
+    // Taqriz bo‘lmasa «taqriz yo‘q» qatori yo‘q (egasi qarori 2026-11-01).
+    expect(find.text('No expert reviews yet (2 required)'), findsNothing);
     expect(find.byKey(const Key('entry.locked')), findsNothing);
     await see(tester, find.byKey(const Key('claim.C-METHANOL-IDENTITY')));
     await see(
