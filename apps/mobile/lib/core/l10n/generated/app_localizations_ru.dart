@@ -9463,7 +9463,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get classNoAnswersYet => 'Ответов нет.';
 
   @override
-  String get classExportCsv => 'Сохранить / отправить результаты (CSV)';
+  String get classExportCsv => 'Сохранить / отправить результаты';
 
   @override
   String get classCsvSubject => 'Результаты теста группы';
@@ -9688,7 +9688,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get teacherPanelHomeBody =>
-      'Проведите тест для группы и получите результаты в CSV';
+      'Проведите тест для группы и сохраните результаты';
 
   @override
   String get teacherPanelHomeBodyStudent =>
@@ -9706,10 +9706,10 @@ class AppLocalizationsRu extends AppLocalizations {
       'Выберите тему — для группы появятся 6-значный код и QR';
 
   @override
-  String get teacherResultsTitle => 'Результаты и CSV';
+  String get teacherResultsTitle => 'Результаты';
 
   @override
-  String get teacherResultsBody => 'Проведённые тесты, рейтинг и файл CSV';
+  String get teacherResultsBody => 'Проведённые тесты, рейтинг и оценки';
 
   @override
   String get teacherJoinTitle => 'Войти в тест группы (студент)';
@@ -10936,7 +10936,7 @@ class AppLocalizationsRu extends AppLocalizations {
       'Неограниченное число групп и тесты длиннее 10 вопросов';
 
   @override
-  String get proBenefitResultsCsv => 'Экспорт результатов в CSV';
+  String get proBenefitResultsCsv => 'Скачивание результатов';
 
   @override
   String get proBenefitHardestDiscussion => 'Разбор самых трудных вопросов';
@@ -11045,7 +11045,7 @@ class AppLocalizationsRu extends AppLocalizations {
       'Неограниченное число групп и тесты длиннее 10 вопросов';
 
   @override
-  String get proIncludesTeacher3 => 'Экспорт результатов в CSV';
+  String get proIncludesTeacher3 => 'Скачивание результатов';
 
   @override
   String get proIncludesTeacher4 => 'Разбор самых трудных вопросов';
@@ -12446,4 +12446,28 @@ class AppLocalizationsRu extends AppLocalizations {
   String referralRewardGranted(int count) {
     return 'Получено наград: $count × 1 месяц Pro';
   }
+
+  @override
+  String get homeCoreTitle => 'Основные дисциплины';
+
+  @override
+  String get homeCoreMedicineBody =>
+      'Танатология, повреждения, давность смерти';
+
+  @override
+  String get homeCoreToxBody => 'Яды, лекарства и наркотические вещества';
+
+  @override
+  String get homeCoreBiochemBody =>
+      'Биологические жидкости и биохимические показатели';
+
+  @override
+  String get teacherDeskTitle => 'Стол преподавателя';
+
+  @override
+  String get teacherDeskLessonsTitle => 'Лекционные презентации';
+
+  @override
+  String get teacherDeskLessonsBody =>
+      'Темы по дисциплинам и курсам — показ на проекторе';
 }

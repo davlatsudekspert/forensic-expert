@@ -70,6 +70,10 @@ enum WorkbenchItemId {
   deskTests,
   deskExam,
   deskGroup,
+  teachLessons,
+  teachRun,
+  teachGroups,
+  teachResults,
 }
 
 /// Pro darvozasi uchun YAGONA moslik jadvali (ekspert «Ish stolim» va talaba
@@ -249,6 +253,43 @@ abstract final class Workbench {
     title: (l) => l.deskGroupTitle,
     body: (l) => l.deskGroupBody,
   );
+
+  /// Ustoz stoli kartalari. Server tomonidan ustoz roli bo‘lmasa, rol talab
+  /// qiladigan kartalar «Ustoz paneli»ga olib boradi (u yerda tartib yozilgan).
+  static List<WorkbenchItem> teacherCards({required bool isTeacher}) => [
+    WorkbenchItem(
+      id: WorkbenchItemId.teachLessons,
+      icon: Icons.slideshow_rounded,
+      hue: FeHues.ochre,
+      route: isTeacher ? Routes.lessons : Routes.teacher,
+      title: (l) => l.teacherDeskLessonsTitle,
+      body: (l) => l.teacherDeskLessonsBody,
+    ),
+    WorkbenchItem(
+      id: WorkbenchItemId.teachRun,
+      icon: Icons.play_circle_outline_rounded,
+      hue: FeHues.teal,
+      route: isTeacher ? Routes.classNew : Routes.teacher,
+      title: (l) => l.teacherRunTitle,
+      body: (l) => l.teacherRunBody,
+    ),
+    WorkbenchItem(
+      id: WorkbenchItemId.teachGroups,
+      icon: Icons.assignment_outlined,
+      hue: FeHues.plum,
+      route: Routes.groups,
+      title: (l) => l.grpTitle,
+      body: (l) => l.grpTeacherTileBody,
+    ),
+    WorkbenchItem(
+      id: WorkbenchItemId.teachResults,
+      icon: Icons.insights_outlined,
+      hue: FeHues.indigo,
+      route: isTeacher ? Routes.teacherResults : Routes.teacher,
+      title: (l) => l.teacherResultsTitle,
+      body: (l) => l.teacherResultsBody,
+    ),
+  ];
 
   /// Talaba stoli kartalari (tartib o‘zgarmas).
   static final studentCards = [deskLessons, deskTests, deskExam, deskGroup];

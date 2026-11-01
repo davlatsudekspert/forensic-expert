@@ -9375,7 +9375,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get classNoAnswersYet => 'Javoblar qayd etilmagan.';
 
   @override
-  String get classExportCsv => 'Natijani saqlash / ulashish (CSV)';
+  String get classExportCsv => 'Natijalarni saqlash / ulashish';
 
   @override
   String get classCsvSubject => 'Guruh testi natijalari';
@@ -9601,7 +9601,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get teacherPanelHomeBody =>
-      'Guruh testi o‘tkazing, natijalarni CSV’da oling';
+      'Guruh testi o‘tkazing, natijalarni saqlab oling';
 
   @override
   String get teacherPanelHomeBodyStudent =>
@@ -9619,10 +9619,10 @@ class AppLocalizationsUz extends AppLocalizations {
       'Mavzuni tanlang — guruh uchun 6 xonali kod va QR chiqadi';
 
   @override
-  String get teacherResultsTitle => 'Natijalar va CSV';
+  String get teacherResultsTitle => 'Natijalar';
 
   @override
-  String get teacherResultsBody => 'O‘tkazilgan testlar, reyting va CSV fayl';
+  String get teacherResultsBody => 'O‘tkazilgan testlar, reyting va baholar';
 
   @override
   String get teacherJoinTitle => 'Guruh testiga qo‘shilish (talaba)';
@@ -10822,7 +10822,7 @@ class AppLocalizationsUz extends AppLocalizations {
       'Cheksiz guruhlar va 10 tadan ko‘p savolli guruh testlari';
 
   @override
-  String get proBenefitResultsCsv => 'Natijalarni CSV ga yuklab olish';
+  String get proBenefitResultsCsv => 'Natijalarni yuklab olish';
 
   @override
   String get proBenefitHardestDiscussion => 'Eng qiyin savollar muhokamasi';
@@ -10932,7 +10932,7 @@ class AppLocalizationsUz extends AppLocalizations {
       'Cheksiz guruhlar va 10 tadan ko‘p savolli testlar';
 
   @override
-  String get proIncludesTeacher3 => 'Natijalarni CSV ga yuklab olish';
+  String get proIncludesTeacher3 => 'Natijalarni yuklab olish';
 
   @override
   String get proIncludesTeacher4 => 'Eng qiyin savollar muhokamasi';
@@ -12334,4 +12334,27 @@ class AppLocalizationsUz extends AppLocalizations {
   String referralRewardGranted(int count) {
     return 'Olingan mukofotlar: $count × 1 oy Pro';
   }
+
+  @override
+  String get homeCoreTitle => 'Asosiy fanlar';
+
+  @override
+  String get homeCoreMedicineBody => 'Tanatologiya, jarohatlar, o‘lim vaqti';
+
+  @override
+  String get homeCoreToxBody => 'Zaharlar, dorilar va giyohvand moddalar';
+
+  @override
+  String get homeCoreBiochemBody =>
+      'Biologik suyuqliklar va biokimyoviy ko‘rsatkichlar';
+
+  @override
+  String get teacherDeskTitle => 'Ustoz stolim';
+
+  @override
+  String get teacherDeskLessonsTitle => 'Ma’ruza prezentatsiyalari';
+
+  @override
+  String get teacherDeskLessonsBody =>
+      'Fan va kurs bo‘yicha mavzular — proyektorda ko‘rsatish';
 }

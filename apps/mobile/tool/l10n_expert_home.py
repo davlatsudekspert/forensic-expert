@@ -17,6 +17,28 @@ def k(key, desc, en, ru, uz, ph=None):
 
 k("workbenchTitle", "Expert Home section title: the expert's personal workbench.",
   "My workbench", "Мой рабочий стол", "Ish stolim")
+k("homeCoreTitle", "Home section title (expert/student): the three core disciplines at the top.",
+  "Core disciplines", "Основные дисциплины", "Asosiy fanlar")
+k("homeCoreMedicineBody", "Core disciplines card: forensic medicine subtitle.",
+  "Thanatology, injuries, time of death",
+  "Танатология, повреждения, давность смерти",
+  "Tanatologiya, jarohatlar, o‘lim vaqti")
+k("homeCoreToxBody", "Core disciplines card: toxicology subtitle.",
+  "Poisons, medicines and narcotics",
+  "Яды, лекарства и наркотические вещества",
+  "Zaharlar, dorilar va giyohvand moddalar")
+k("homeCoreBiochemBody", "Core disciplines card: biochemistry subtitle.",
+  "Body fluids and biochemical markers",
+  "Биологические жидкости и биохимические показатели",
+  "Biologik suyuqliklar va biokimyoviy ko‘rsatkichlar")
+k("teacherDeskTitle", "Teacher Home section title: the teacher's desk.",
+  "My teaching desk", "Стол преподавателя", "Ustoz stolim")
+k("teacherDeskLessonsTitle", "Teacher desk card: lecture slide decks.",
+  "Lecture presentations", "Лекционные презентации", "Ma’ruza prezentatsiyalari")
+k("teacherDeskLessonsBody", "Teacher desk card subtitle: lecture slide decks by course and topic.",
+  "Topics by subject and course — show on the projector",
+  "Темы по дисциплинам и курсам — показ на проекторе",
+  "Fan va kurs bo‘yicha mavzular — proyektorda ko‘rsatish")
 k("workbenchFactTitle", "Expert Home card title: one sourced fact per day.",
   "Today’s fact", "Сведение дня", "Bugungi ma’lumot")
 k("workbenchFactSource", "Label before the source line of the daily fact.",

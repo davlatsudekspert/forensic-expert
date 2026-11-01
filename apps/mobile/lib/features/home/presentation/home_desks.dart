@@ -8,6 +8,8 @@ import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/learn/study_models.dart';
+import '../../class_quiz/presentation/teacher_panel_screen.dart'
+    show watchIsTeacher;
 import '../daily_fact.dart';
 import '../daily_question.dart';
 import '../workbench.dart';
@@ -73,6 +75,31 @@ class StudentDesk extends ConsumerWidget {
             question: question,
           ),
         ],
+        const SizedBox(height: FeSpace.xs),
+      ],
+    );
+  }
+}
+
+/// Ustoz Home: «Ustoz stolim» — darslar (prezentatsiyalar), jonli guruh
+/// testi, guruhlar va mavzu testlari, Ustoz paneli (natijalar, CSV).
+class TeacherDesk extends ConsumerWidget {
+  const TeacherDesk({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    return Column(
+      key: const Key('desk.teacher'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        FeSectionHeader(
+          l.teacherDeskTitle,
+          padding: const EdgeInsets.only(bottom: FeSpace.xs),
+        ),
+        _DeskGrid(
+          items: Workbench.teacherCards(isTeacher: watchIsTeacher(ref)),
+        ),
         const SizedBox(height: FeSpace.xs),
       ],
     );

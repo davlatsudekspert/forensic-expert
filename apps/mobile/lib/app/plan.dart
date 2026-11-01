@@ -112,6 +112,10 @@ class EntitlementsNotifier extends AsyncNotifier<Entitlements> {
 /// `overrideWithValue` bilan almashtiriladi.
 final proStrictProvider = Provider<bool>((ref) => kProStrict);
 
+/// Pro yoqilganmi ([kProEnabled]; testlarda almashtiriladi). O‘chiq bo‘lsa
+/// [proAllowedProvider] har doim `true`.
+final proEnabledProvider = Provider<bool>((ref) => kProEnabled);
+
 /// [feature] ochiqmi (yuklanayotgan yoki xatoda — yopiq).
 ///
 /// Admin (server `my_access`, email emas) — VIP: hamma funksiya ochiq
@@ -120,6 +124,7 @@ final proStrictProvider = Provider<bool>((ref) => kProStrict);
 /// bo‘linish o‘chiqligi [proOpen] da hisobga olinadi.
 final proAllowedProvider = Provider.family<bool, ProFeature>(
   (ref, feature) =>
+      !ref.watch(proEnabledProvider) ||
       ref.watch(isAdminProvider) ||
       (ref.watch(entitlementsProvider).value?.unlocks(feature) ?? false),
 );

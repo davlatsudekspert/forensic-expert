@@ -314,17 +314,18 @@ class ProfileScreen extends ConsumerWidget {
                         value: modeLabel(settings.userMode),
                         onTap: () => context.push(Routes.profileMode),
                       ),
-                      _Row(
-                        key: const Key('profile.plan'),
-                        icon: Icons.workspace_premium_outlined,
-                        title: l.proProfileRow,
-                        value: _planValue(
-                          l,
-                          ref.watch(entitlementsProvider),
-                          isAdmin: ref.watch(isAdminProvider),
+                      if (ref.watch(proEnabledProvider))
+                        _Row(
+                          key: const Key('profile.plan'),
+                          icon: Icons.workspace_premium_outlined,
+                          title: l.proProfileRow,
+                          value: _planValue(
+                            l,
+                            ref.watch(entitlementsProvider),
+                            isAdmin: ref.watch(isAdminProvider),
+                          ),
+                          onTap: () => context.push(Routes.pro),
                         ),
-                        onTap: () => context.push(Routes.pro),
-                      ),
                       _Row(
                         key: const Key('profile.jurisdiction'),
                         icon: Icons.public,

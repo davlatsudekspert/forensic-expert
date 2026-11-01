@@ -54,7 +54,10 @@ String languageName(AppLocalizations l, String code) => switch (code) {
 /// «Yo‘riqnomalar» — fanlar bo‘yicha mustaqil ilmiy-amaliy kartalar.
 /// Admin uchun qo‘shimcha: qurilmadagi yopiq amaliyot kodlari katalogi.
 class GuidelinesScreen extends ConsumerStatefulWidget {
-  const GuidelinesScreen({super.key});
+  const GuidelinesScreen({super.key, this.area});
+
+  /// Berilsa — faqat shu soha (masalan, fan sahifasidan «Mavzular»).
+  final GuidelineArea? area;
 
   @override
   ConsumerState<GuidelinesScreen> createState() => _GuidelinesScreenState();
@@ -115,7 +118,12 @@ class _GuidelinesScreenState extends ConsumerState<GuidelinesScreen> {
                         style: t.bodyMedium?.copyWith(color: c.textSecondary),
                       ),
                     ),
-                  for (final area in GuidelineArea.values) ...[
+                  for (final area in [
+                    if (widget.area != null)
+                      widget.area!
+                    else
+                      ...GuidelineArea.values,
+                  ]) ...[
                     if (_query.isEmpty || cards.any((x) => x.area == area)) ...[
                       FeSectionHeader(area.label(l)),
                       ..._areaCards(context, area, cards, lang, l),

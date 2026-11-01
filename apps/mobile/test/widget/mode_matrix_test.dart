@@ -25,7 +25,7 @@ void main() {
         ],
       );
       expect(
-        find.byKey(const Key('home.teacher')),
+        find.byKey(const Key('desk.teacher')),
         mode == UserMode.teacher ? findsOneWidget : findsNothing,
       );
     });

@@ -11,8 +11,8 @@ import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../core/widgets/rank_medal.dart';
 import '../../../core/widgets/score_grade.dart';
-
 import '../../../domain/anti_cheat/anti_cheat_rules.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart';
 import '../../../domain/plan/plan_models.dart';
@@ -1936,11 +1936,12 @@ class _LeaderRowView extends StatelessWidget {
         children: [
           SizedBox(
             width: 28,
-            child: Text(
-              row.rank.toString(),
-              key: Key('class.rank.${row.participantId}'),
-              style: style?.copyWith(
-                color: row.rank == 1 ? FeBrand.goldOnDark : c.textSecondary,
+            child: RankMedal(
+              rank: row.rank,
+              size: 22,
+              textKey: Key('class.rank.${row.participantId}'),
+              fallbackStyle: style?.copyWith(
+                color: c.textSecondary,
                 fontWeight: FontWeight.w700,
               ),
             ),

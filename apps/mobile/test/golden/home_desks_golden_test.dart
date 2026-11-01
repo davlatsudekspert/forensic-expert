@@ -87,4 +87,17 @@ void main() {
   testWidgets('student_home_desk_uz', (t) async {
     await shot(t, name: 'student_home_desk_uz', mode: UserMode.student);
   });
+
+  testWidgets('teacher_home_desk_uz', (t) async {
+    await shot(t, name: 'teacher_home_desk_uz', mode: UserMode.teacher);
+  });
+
+  testWidgets('teacher_home_desk_uz_dark', (t) async {
+    await shot(
+      t,
+      name: 'teacher_home_desk_uz_dark',
+      mode: UserMode.teacher,
+      theme: ThemeMode.dark,
+    );
+  });
 }

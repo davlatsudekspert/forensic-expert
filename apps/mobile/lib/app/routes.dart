@@ -57,6 +57,10 @@ abstract final class Routes {
   static String librarySection(String section) => '/library/section/$section';
   static const libraryStandards = '/library/standards';
   static const guidelines = '/library/guidelines';
+
+  /// Faqat bitta soha yo‘riqnomalari (masalan, Toksikologiya → mavzular).
+  static String guidelinesArea(String area) =>
+      '$guidelines?area=${Uri.encodeQueryComponent(area)}';
   // «Ilmiy lug‘at» (term_translations).
   static const glossary = '/library/glossary';
   static String glossaryTerm(String id) =>

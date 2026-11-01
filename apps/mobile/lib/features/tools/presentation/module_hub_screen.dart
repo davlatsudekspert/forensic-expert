@@ -4,15 +4,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/guidelines.dart' show guidelinesProvider;
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
+import '../../../app/study.dart' show studyCatalogProvider;
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
+import '../../../domain/guidelines/guideline_models.dart'
+    show GuidelineArea, GuidelineCard;
 import '../../../domain/knowledge/knowledge_models.dart';
+import '../../../domain/learn/study_models.dart' show StudyDeckKind;
 import '../../../domain/library/library_models.dart';
 import '../../../domain/plan/plan_models.dart' show ProFeature;
 import '../../disciplines/presentation/disciplines_screens.dart'
@@ -49,6 +54,18 @@ class ModuleHubScreen extends ConsumerWidget {
     final knowledge = ref.watch(knowledgeRepositoryProvider);
     final index = ref.watch(provenanceIndexProvider);
     final evidence = ref.watch(evidenceDataProvider);
+    // Toksikologiya testlari: o‘quv-uslubiy majmua savollari, fan va modda
+    // guruhlari bo‘yicha kartochkalar (o‘quv rejimidagi haqiqiy bank).
+    final toxQuestions = category == ToolCategory.toxicology
+        ? [
+            for (final d in ref.watch(studyCatalogProvider).decks)
+              if (d.kind == StudyDeckKind.teachingMaterial ||
+                  d.kind == StudyDeckKind.substanceGroup ||
+                  (d.kind == StudyDeckKind.discipline &&
+                      d.key == ForensicDiscipline.forensicToxicology.name))
+                d.items.length,
+          ].fold<int>(0, (a, b) => a + b)
+        : 0;
 
     // Shu bo‘limning manbali mavzulari (masalan, milliy amaliyot
     // yo‘riqnomasidan olingan sud-kimyo va sud-biologiya yozuvlari). Soni 0
@@ -59,7 +76,23 @@ class ModuleHubScreen extends ConsumerWidget {
       _ => null,
     };
     final links = <(String, IconData, String, int, String)>[
-      if (topicArea != null)
+      // Toksikologiya mavzulari — o‘quv-uslubiy majmua va yo‘riqnomalar
+      // (ustoz kitoblari asosidagi bo‘limlar); umumiy bilim mavzusi soni bu
+      // yerda chalg‘itadi (masalan, «1»).
+      if (category == ToolCategory.toxicology)
+        (
+          'topics',
+          Icons.menu_book_outlined,
+          l.knowledgeTaxonomy,
+          [
+            for (final g
+                in ref.watch(guidelinesProvider).value?.cards ??
+                    const <GuidelineCard>[])
+              if (g.area == GuidelineArea.forensicChemistry) g,
+          ].length,
+          Routes.guidelinesArea(GuidelineArea.forensicChemistry.name),
+        )
+      else if (topicArea != null)
         (
           'topics',
           Icons.menu_book_outlined,
@@ -68,6 +101,13 @@ class ModuleHubScreen extends ConsumerWidget {
           Routes.area(topicArea.name),
         ),
       if (category == ToolCategory.toxicology) ...[
+        (
+          'tests',
+          Icons.quiz_outlined,
+          l.deskTestsTitle,
+          toxQuestions,
+          Routes.study,
+        ),
         (
           'substances',
           Icons.hub_outlined,

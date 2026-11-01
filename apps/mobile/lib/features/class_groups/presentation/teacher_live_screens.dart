@@ -12,6 +12,7 @@ import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../core/widgets/rank_medal.dart';
 import '../../../core/widgets/score_grade.dart';
 import '../../../domain/anti_cheat/anti_cheat_rules.dart';
 import '../../../domain/class_groups/class_groups_models.dart';
@@ -401,15 +402,20 @@ class _LiveRow extends StatelessWidget {
             child: Semantics(
               label: item.rank == null ? null : l.grpRankSpoken(item.rank!),
               excludeSemantics: item.rank != null,
-              child: Text(
-                item.rank?.toString() ?? FeGlyphs.emDash,
-                key: Key('grp.rank.${row.memberId}'),
-                style: t.titleSmall?.copyWith(
-                  color: item.rank != null && item.rank! <= 3
-                      ? c.accent
-                      : c.textSecondary,
-                ),
-              ),
+              child: item.rank == null
+                  ? Text(
+                      FeGlyphs.emDash,
+                      key: Key('grp.rank.${row.memberId}'),
+                      style: t.titleSmall?.copyWith(color: c.textSecondary),
+                    )
+                  : RankMedal(
+                      rank: item.rank!,
+                      size: 24,
+                      textKey: Key('grp.rank.${row.memberId}'),
+                      fallbackStyle: t.titleSmall?.copyWith(
+                        color: c.textSecondary,
+                      ),
+                    ),
             ),
           ),
           Expanded(
@@ -712,7 +718,6 @@ class _BigBoard extends StatelessWidget {
         Widget cell(RankedBoardRow x) {
           final r = x.row;
           final finished = r.state == BoardState.finished;
-          final top = x.rank != null && x.rank! <= 3;
           return SizedBox(
             height: rowH,
             child: Row(
@@ -723,15 +728,22 @@ class _BigBoard extends StatelessWidget {
                   child: Semantics(
                     label: x.rank == null ? null : l.grpRankSpoken(x.rank!),
                     excludeSemantics: x.rank != null,
-                    child: Text(
-                      x.rank?.toString() ?? '',
-                      key: Key('grp.bigRank.${r.memberId}'),
-                      style: TextStyle(
-                        color: top ? FeBrand.goldOnDark : Colors.white54,
-                        fontSize: 22 * fs,
-                        fontWeight: FontWeight.w800,
-                      ),
-                    ),
+                    child: x.rank == null
+                        ? Text(
+                            FeGlyphs.emDash,
+                            key: Key('grp.bigRank.${r.memberId}'),
+                            style: const TextStyle(color: Colors.white24),
+                          )
+                        : RankMedal(
+                            rank: x.rank!,
+                            size: 34 * fs,
+                            textKey: Key('grp.bigRank.${r.memberId}'),
+                            fallbackStyle: TextStyle(
+                              color: Colors.white54,
+                              fontSize: 22 * fs,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
                   ),
                 ),
                 Expanded(

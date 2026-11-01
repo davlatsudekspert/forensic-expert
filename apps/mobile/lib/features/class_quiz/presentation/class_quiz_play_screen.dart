@@ -13,6 +13,7 @@ import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../core/widgets/rank_medal.dart';
 import '../../../core/widgets/score_grade.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart';
 import '../../anti_cheat/presentation/anti_cheat_widgets.dart';
@@ -940,7 +941,11 @@ class _StudentFinished extends ConsumerWidget {
                         children: [
                           SizedBox(
                             width: 28,
-                            child: Text(r.rank.toString(), style: t.titleSmall),
+                            child: RankMedal(
+                              rank: r.rank,
+                              size: 22,
+                              fallbackStyle: t.titleSmall,
+                            ),
                           ),
                           Expanded(
                             child: Text(

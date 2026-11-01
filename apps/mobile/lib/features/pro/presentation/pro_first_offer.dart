@@ -16,6 +16,7 @@ class ProFirstOfferCard extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    if (!ref.watch(proEnabledProvider)) return const SizedBox.shrink();
     if (!ref.watch(proFirstOfferProvider)) return const SizedBox.shrink();
     final ent = ref.watch(entitlementsProvider);
     if (ent.isLoading && !ent.hasValue) return const SizedBox.shrink();

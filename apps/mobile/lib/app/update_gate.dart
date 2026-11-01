@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../data/remote/fe_client_headers.dart';
@@ -35,6 +36,55 @@ final storeLinkLauncherProvider = Provider<StoreLinkLauncher>(
 /// Orqa fonddan qaytganda qayta tekshirish oralig‘i.
 const updateRecheckInterval = Duration(minutes: 5);
 
+/// Serverdan oxirgi ko‘rilgan `min_build` qurilmada saqlanadi: bir marta
+/// bloklangan eski versiya internetsiz qayta ochilganda ham ochilmaydi.
+/// Server min_build’ni pasaytirsa (onlayn tekshiruvda) — blok yechiladi.
+abstract interface class UpdateGateStore {
+  Future<int?> readMinBuild();
+  Future<void> writeMinBuild(int minBuild);
+}
+
+class PrefsUpdateGateStore implements UpdateGateStore {
+  const PrefsUpdateGateStore();
+
+  static const key = 'fe.update.min_build_seen';
+
+  @override
+  Future<int?> readMinBuild() async {
+    try {
+      return (await SharedPreferences.getInstance()).getInt(key);
+    } on Object {
+      return null;
+    }
+  }
+
+  @override
+  Future<void> writeMinBuild(int minBuild) async {
+    try {
+      await (await SharedPreferences.getInstance()).setInt(key, minBuild);
+    } on Object {
+      // Saqlab bo‘lmasa ham ilova ishlashda davom etadi.
+    }
+  }
+}
+
+/// Xotiradagi saqlagich (testlar va qurilmasiz muhit uchun).
+class MemoryUpdateGateStore implements UpdateGateStore {
+  MemoryUpdateGateStore([this.value]);
+
+  int? value;
+
+  @override
+  Future<int?> readMinBuild() async => value;
+
+  @override
+  Future<void> writeMinBuild(int minBuild) async => value = minBuild;
+}
+
+final updateGateStoreProvider = Provider<UpdateGateStore>(
+  (ref) => const PrefsUpdateGateStore(),
+);
+
 /// Vaqtni almashtirish (testlar uchun).
 final updateGateClockProvider = Provider<DateTime Function()>(
   (ref) => DateTime.now,
@@ -52,6 +102,12 @@ class UpdateGateNotifier extends Notifier<UpdateGate> {
   UpdateGate build() {
     final signal = UpdateRequiredSignal.instance.required;
     void onSignal() {
+      if (signal.value) {
+        // Server 426 qaytardi: joriy build eskirgan — qurilmada eslab qolinadi.
+        unawaited(
+          ref.read(updateGateStoreProvider).writeMinBuild(AppInfo.build + 1),
+        );
+      }
       if (signal.value && !state.required) {
         state = UpdateGate(
           required: true,
@@ -81,9 +137,32 @@ class UpdateGateNotifier extends Notifier<UpdateGate> {
     }
     _lastCheck = now;
     _inFlight = true;
+    final store = ref.read(updateGateStoreProvider);
     try {
+      // Avval qurilmadagi oxirgi ma’lum min_build (internetsiz ham ishlaydi).
+      final seen = await store.readMinBuild();
+      if (seen != null && seen > AppInfo.build && !state.required) {
+        state = UpdateGate(
+          required: true,
+          androidUrl: state.androidUrl,
+          iosUrl: state.iosUrl,
+        );
+      }
       final info = await service.fetch();
       if (info == null) return;
+      await store.writeMinBuild(info.minBuild);
+      if (!info.blocks(AppInfo.build) &&
+          seen != null &&
+          seen > AppInfo.build &&
+          !UpdateRequiredSignal.instance.required.value) {
+        // Server blokni bekor qildi (min_build pasaytirildi).
+        state = UpdateGate(
+          required: false,
+          androidUrl: info.androidUrl,
+          iosUrl: info.iosUrl,
+        );
+        return;
+      }
       state = UpdateGate(
         required: state.required || info.blocks(AppInfo.build),
         androidUrl: info.androidUrl,

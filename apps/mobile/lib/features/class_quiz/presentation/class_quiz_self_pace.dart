@@ -4,6 +4,7 @@ import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../core/widgets/rank_medal.dart';
 import '../../../domain/anti_cheat/anti_cheat_rules.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart';
 import '../../anti_cheat/presentation/anti_cheat_widgets.dart';
@@ -308,10 +309,11 @@ class _LeaderLine extends StatelessWidget {
         children: [
           SizedBox(
             width: 28,
-            child: Text(
-              row.rank.toString(),
-              key: Key('class.boardRank.${row.participantId}'),
-              style: t.titleSmall?.copyWith(color: c.textSecondary),
+            child: RankMedal(
+              rank: row.rank,
+              size: 22,
+              textKey: Key('class.boardRank.${row.participantId}'),
+              fallbackStyle: t.titleSmall?.copyWith(color: c.textSecondary),
             ),
           ),
           Expanded(

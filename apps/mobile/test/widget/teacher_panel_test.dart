@@ -22,36 +22,47 @@ void main() {
     await tester.pumpAndSettle();
   }
 
-  testWidgets('ustoz rejimi: panel «Bo‘limlar» ichida, 3 amal ≤ 2 bosish', (
+  testWidgets('ustoz rejimi: «Ustoz stolim» — har amal 1 bosishda', (
     tester,
   ) async {
     await pumpApp(
       tester,
       settings: completedSettings(lang: 'uz', mode: UserMode.teacher),
     );
-    final card = find.byKey(const Key('home.teacher'));
-    await tester.ensureVisible(card);
-    await tester.pumpAndSettle();
-    expect(card, findsOneWidget);
-    expect(find.text('Ustoz paneli'), findsOneWidget);
-    // «Bo‘limlar» to‘rida: «Barcha fanlar» plitkasi bilan bir qatorlar oralig‘ida.
+    expect(find.byKey(const Key('desk.teacher')), findsOneWidget);
+    expect(find.text('Ustoz stolim'), findsOneWidget);
+    expect(find.text('Ma’ruza prezentatsiyalari'), findsOneWidget);
+    // Alohida «Ustoz paneli» kartasi yo‘q: stolning o‘zi panel.
+    expect(find.text('Ustoz paneli'), findsNothing);
+    // Stol «Bo‘limlar» to‘ridan oldin.
+    final desk = find.byKey(const Key('desk.teacher'));
     final all = find.byKey(const Key('home.allDisciplines'));
-    expect(tester.getTopLeft(card).dy, lessThan(tester.getTopLeft(all).dy));
+    await tester.ensureVisible(all);
+    await tester.pumpAndSettle();
+    expect(tester.getTopLeft(desk).dy, lessThan(tester.getTopLeft(all).dy));
 
-    await tapKey(tester, 'home.teacher');
-    expect(find.byType(TeacherPanelScreen), findsOneWidget);
-    expect(find.byKey(const Key('class.demoBanner')), findsOneWidget);
-    await tapKey(tester, 'teacher.run');
+    await tapKey(tester, 'workbench.teachRun');
     expect(find.byType(ClassCreateScreen), findsOneWidget);
     await tester.binding.handlePopRoute();
     await tester.pumpAndSettle();
 
-    await tapKey(tester, 'teacher.results');
+    await tapKey(tester, 'workbench.teachResults');
     expect(find.byType(TeacherResultsScreen), findsOneWidget);
     expect(find.byKey(const Key('teacher.resultsEmpty')), findsOneWidget);
     await tester.binding.handlePopRoute();
     await tester.pumpAndSettle();
+  });
 
+  testWidgets('ustoz: panel marshruti saqlangan (qo‘shilish, rol izohi)', (
+    tester,
+  ) async {
+    await pumpApp(
+      tester,
+      settings: completedSettings(lang: 'uz', mode: UserMode.teacher),
+      initialLocation: Routes.teacher,
+    );
+    expect(find.byType(TeacherPanelScreen), findsOneWidget);
+    expect(find.byKey(const Key('class.demoBanner')), findsOneWidget);
     await tapKey(tester, 'teacher.join');
     expect(find.byType(ClassQuizHubScreen), findsOneWidget);
     expect(find.byKey(const Key('class.codeField')), findsOneWidget);
@@ -72,8 +83,8 @@ void main() {
           ),
         ],
       );
-      expect(find.byKey(const Key('home.teacher')), findsNothing);
-      expect(find.text('Ustoz paneli'), findsNothing);
+      expect(find.byKey(const Key('desk.teacher')), findsNothing);
+      expect(find.text('Ustoz stolim'), findsNothing);
     });
 
     testWidgets('${mode.name}: /teacher marshruti yopiq', (tester) async {

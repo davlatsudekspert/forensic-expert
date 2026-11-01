@@ -9409,7 +9409,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get classNoAnswersYet => 'No answers recorded.';
 
   @override
-  String get classExportCsv => 'Save / share results (CSV)';
+  String get classExportCsv => 'Save / share results';
 
   @override
   String get classCsvSubject => 'Group test results';
@@ -9635,8 +9635,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get teacherPanelTitle => 'Teacher panel';
 
   @override
-  String get teacherPanelHomeBody =>
-      'Run a group test and get the results as CSV';
+  String get teacherPanelHomeBody => 'Run a group test and save the results';
 
   @override
   String get teacherPanelHomeBodyStudent =>
@@ -9654,10 +9653,10 @@ class AppLocalizationsEn extends AppLocalizations {
       'Pick a topic — a 6-digit code and QR appear for the group';
 
   @override
-  String get teacherResultsTitle => 'Results and CSV';
+  String get teacherResultsTitle => 'Results';
 
   @override
-  String get teacherResultsBody => 'Past quizzes, leaderboard and a CSV file';
+  String get teacherResultsBody => 'Past quizzes, leaderboard and grades';
 
   @override
   String get teacherJoinTitle => 'Join a group test (student)';
@@ -10888,7 +10887,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Unlimited groups and group tests of more than 10 questions';
 
   @override
-  String get proBenefitResultsCsv => 'Export results to CSV';
+  String get proBenefitResultsCsv => 'Download results';
 
   @override
   String get proBenefitHardestDiscussion =>
@@ -10998,7 +10997,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Unlimited groups and tests of more than 10 questions';
 
   @override
-  String get proIncludesTeacher3 => 'Results export to CSV';
+  String get proIncludesTeacher3 => 'Download results';
 
   @override
   String get proIncludesTeacher4 => 'Discussion of the hardest questions';
@@ -12404,4 +12403,26 @@ class AppLocalizationsEn extends AppLocalizations {
   String referralRewardGranted(int count) {
     return 'Rewards earned: $count × 1 month of Pro';
   }
+
+  @override
+  String get homeCoreTitle => 'Core disciplines';
+
+  @override
+  String get homeCoreMedicineBody => 'Thanatology, injuries, time of death';
+
+  @override
+  String get homeCoreToxBody => 'Poisons, medicines and narcotics';
+
+  @override
+  String get homeCoreBiochemBody => 'Body fluids and biochemical markers';
+
+  @override
+  String get teacherDeskTitle => 'My teaching desk';
+
+  @override
+  String get teacherDeskLessonsTitle => 'Lecture presentations';
+
+  @override
+  String get teacherDeskLessonsBody =>
+      'Topics by subject and course — show on the projector';
 }

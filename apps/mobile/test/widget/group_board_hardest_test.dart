@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/routes.dart';
+import 'package:forensic_expert/core/design/tokens.dart' show FeGlyphs;
 import 'package:forensic_expert/core/floating_nav_flag.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
 import 'package:forensic_expert/domain/class_groups/class_groups_models.dart';
@@ -165,7 +166,7 @@ void main() {
       expect(_text(tester, Key('grp.bigRank.${s.ids['c']}')), '1');
       expect(_text(tester, Key('grp.bigRank.${s.ids['b']}')), '2');
       expect(_text(tester, Key('grp.bigRank.${s.ids['a']}')), '3');
-      expect(_text(tester, Key('grp.bigRank.${s.ids['d']}')), '');
+      expect(_text(tester, Key('grp.bigRank.${s.ids['d']}')), FeGlyphs.emDash);
       expect(_text(tester, Key('grp.bigScore.${s.ids['c']}')), '10/10');
       expect(_text(tester, Key('grp.bigScore.${s.ids['b']}')), '8/10');
       expect(_text(tester, Key('grp.bigTime.${s.ids['c']}')), '4:00');

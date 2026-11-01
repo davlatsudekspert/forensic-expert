@@ -160,6 +160,52 @@ void main() {
       expect(find.byKey(const Key('update.required')), findsOneWidget);
     });
 
+    testWidgets('bir marta bloklangan eski versiya internetsiz qayta '
+        'ochilganda ham ochilmaydi', (tester) async {
+      // Avval server min_build’ni ko‘rsatgan (qurilmada saqlangan),
+      // endi tarmoq yo‘q (fetch → null).
+      final store = MemoryUpdateGateStore(AppInfo.build + 1);
+      await pumpApp(
+        tester,
+        settings: completedSettings(lang: 'uz'),
+        updateStore: store,
+        overrides: [appVersionServiceProvider.overrideWithValue(_Svc())],
+      );
+      await tester.pump();
+      expect(find.byKey(const Key('update.required')), findsOneWidget);
+    });
+
+    testWidgets('server min_build’ni pasaytirsa — blok yechiladi', (
+      tester,
+    ) async {
+      final store = MemoryUpdateGateStore(AppInfo.build + 1);
+      await pumpApp(
+        tester,
+        settings: completedSettings(lang: 'uz'),
+        updateStore: store,
+        overrides: [
+          appVersionServiceProvider.overrideWithValue(
+            _Svc(const AppVersionInfo(minBuild: 0, latestBuild: 0)),
+          ),
+        ],
+      );
+      await tester.pump();
+      expect(find.byKey(const Key('update.required')), findsNothing);
+      expect(store.value, 0);
+    });
+
+    testWidgets('426 signali qurilmada eslab qolinadi', (tester) async {
+      final store = MemoryUpdateGateStore();
+      await pumpApp(
+        tester,
+        settings: completedSettings(lang: 'uz'),
+        updateStore: store,
+      );
+      UpdateRequiredSignal.instance.raise();
+      await tester.pump();
+      expect(store.value, AppInfo.build + 1);
+    });
+
     testWidgets('signal (426 va h.k.) → to‘siq sahifa; Android tugmasi '
         'Play Market’ni ochadi', (tester) async {
       debugDefaultTargetPlatformOverride = TargetPlatform.android;

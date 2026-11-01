@@ -84,6 +84,9 @@ enum HomeModule {
 
   /// Home’dagi asosiy 12 bo‘lim (rejimga mos tartib). Qolgan sohalar
   /// (gistologiya, yangi muammolar va 20 fan) — «Barcha fanlar» ichida.
+  /// Asosiy uch fan — Mutaxassis/Talaba bosh sahifasining tepasida.
+  static const core = [forensicMedicine, toxicology, biochemistry];
+
   static List<HomeModule> orderFor(UserMode? mode) => switch (mode) {
     UserMode.student => const [
       learn,
@@ -248,17 +251,22 @@ class HomeScreen extends ConsumerWidget {
     );
     final actions = HomeAction.forMode(mode);
     final featured = {for (final a in actions) ?a.module};
+    // Asosiy fanlar (Sud tibbiyoti, Toksikologiya, Biokimyo) — Mutaxassis va
+    // Talaba bosh sahifasining eng yuqorisida (egasi talabi, 2026-10-31).
+    final coreTop = mode != null;
     // Tezkor amallardagi bo‘limlar to‘rda takrorlanmaydi.
     final modules = [
       for (final m in HomeModule.orderFor(mode))
-        if (!featured.contains(m) && m != HomeModule.ai) m,
+        if (!featured.contains(m) &&
+            m != HomeModule.ai &&
+            !(coreTop && HomeModule.core.contains(m)))
+          m,
     ];
     final guidelinesFeatured = actions.contains(HomeAction.guidelines);
     // Ustoz paneli FAQAT «Ustoz» rejimida (egasi qarori, 2026-10-24): Talaba va
     // Mutaxassis rejimida karta ham, havola ham yo‘q — server roli (masalan
     // admin) bo‘lsa ham. Talaba guruhga «O‘qish» bo‘limidan qo‘shiladi.
     // Ustoz rejimida server roli bo‘lmasa — ichida rolni olish tartibi yozilgan.
-    final teacherTop = mode == UserMode.teacher;
 
     // Ierarxiya: sarlavha (salom, rejim, qidiruv) → rejimga mos 4 ta tezkor
     // amal → birinchi qadamlar → bo‘limlar → davom ettirish → taklif →
@@ -282,11 +290,22 @@ class HomeScreen extends ConsumerWidget {
                   const SizedBox(height: FeSpace.lg),
                   // Ekspert: «Ish stolim»; talaba: «O‘qish stolim» (+ kunlik
                   // ma’lumot/savol). Ustoz bosh sahifasi o‘zgarmaydi.
+                  if (coreTop) ...[
+                    FeSectionHeader(
+                      l.homeCoreTitle,
+                      padding: const EdgeInsets.only(bottom: FeSpace.xs),
+                    ),
+                    const _CoreDisciplinesCard(),
+                    const SizedBox(height: FeSpace.lg),
+                  ],
                   if (mode == UserMode.professional) ...[
                     const ExpertWorkbench(),
                     const SizedBox(height: FeSpace.sm),
                   ] else if (mode == UserMode.student) ...[
                     const StudentDesk(),
+                    const SizedBox(height: FeSpace.sm),
+                  ] else if (mode == UserMode.teacher) ...[
+                    const TeacherDesk(),
                     const SizedBox(height: FeSpace.sm),
                   ],
                   _ActionGrid(actions: actions),
@@ -300,7 +319,7 @@ class HomeScreen extends ConsumerWidget {
                   const FirstStepsCard(),
                   const ProFirstOfferCard(),
                   FeSectionHeader(l.homeAreasTitle),
-                  _ModuleGrid(modules: modules, teacherTile: teacherTop),
+                  _ModuleGrid(modules: modules),
                   if (!guidelinesFeatured) ...[
                     const SizedBox(height: FeSpace.sm),
                     _ResourceTile(
@@ -539,67 +558,6 @@ class _ResourceTile extends ConsumerWidget {
               const SizedBox(width: FeSpace.xxs),
             ],
             Icon(Icons.chevron_right, color: c.textSecondary),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-/// «Ustoz paneli» — faqat Ustoz rejimida, «Bo‘limlar» to‘rining ichida
-/// (boshqa bo‘lim plitkalari bilan bir xil ko‘rinish, oltin aksent bilan).
-class _TeacherPanelTile extends StatelessWidget {
-  const _TeacherPanelTile();
-
-  @override
-  Widget build(BuildContext context) {
-    final l = AppLocalizations.of(context);
-    final c = FeTheme.of(context);
-    return FeCard(
-      key: const Key('home.teacher'),
-      padding: const EdgeInsets.fromLTRB(
-        FeSpace.md,
-        FeSpace.md,
-        FeSpace.sm,
-        FeSpace.md,
-      ),
-      onTap: () => context.push(Routes.teacher),
-      child: ConstrainedBox(
-        constraints: const BoxConstraints(minHeight: 84),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                DecoratedBox(
-                  decoration: BoxDecoration(
-                    color: c.accentContainer,
-                    borderRadius: BorderRadius.circular(10),
-                    border: Border.all(color: c.accentBorder),
-                  ),
-                  child: SizedBox.square(
-                    dimension: 38,
-                    child: Icon(
-                      Icons.co_present_outlined,
-                      color: c.accent,
-                      size: 21,
-                    ),
-                  ),
-                ),
-                const Spacer(),
-                Icon(
-                  Icons.arrow_outward_rounded,
-                  size: 16,
-                  color: c.textSecondary,
-                ),
-              ],
-            ),
-            const SizedBox(height: FeSpace.sm),
-            Text(
-              l.teacherPanelTitle,
-              style: Theme.of(context).textTheme.titleSmall
-                  ?.copyWith(fontWeight: FontWeight.w600, height: 1.25),
-            ),
           ],
         ),
       ),
@@ -931,12 +889,9 @@ class _QuickBlock extends StatelessWidget {
 }
 
 class _ModuleGrid extends StatelessWidget {
-  const _ModuleGrid({required this.modules, this.teacherTile = false});
+  const _ModuleGrid({required this.modules});
 
   final List<HomeModule> modules;
-
-  /// Faqat «Ustoz» rejimida: «Ustoz paneli» — «Bo‘limlar» to‘rining 1-plitkasi.
-  final bool teacherTile;
 
   @override
   Widget build(BuildContext context) {
@@ -949,7 +904,6 @@ class _ModuleGrid extends StatelessWidget {
         const gap = FeSpace.sm;
         // Oxirgi karta — «Barcha fanlar» (to‘r yarim bo‘sh qolmaydi).
         final cards = <Widget>[
-          if (teacherTile) const _TeacherPanelTile(),
           for (final m in modules) _ModuleCard(module: m),
           const _AllDisciplinesCard(),
         ];
@@ -1009,6 +963,115 @@ class _ReviewNotice extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+}
+
+/// «Asosiy fanlar»: Sud tibbiyoti, Toksikologiya, Biokimyo — bitta kartada,
+/// har biri alohida qator (nom bo‘linmaydi, tor ekranda ham). Mutaxassis va
+/// Talaba bosh sahifasining tepasida.
+class _CoreDisciplinesCard extends ConsumerWidget {
+  const _CoreDisciplinesCard();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final b = Theme.of(context).brightness;
+    String body(HomeModule m) => switch (m) {
+      HomeModule.forensicMedicine => l.homeCoreMedicineBody,
+      HomeModule.toxicology => l.homeCoreToxBody,
+      _ => l.homeCoreBiochemBody,
+    };
+    // Tor ekran + katta shrift: ikonka yashiriladi, sarlavha kichrayadi —
+    // fan nomi so‘z o‘rtasidan bo‘linmasin.
+    final width = MediaQuery.sizeOf(context).width;
+    final scale = MediaQuery.textScalerOf(context).scale(1);
+    final compact = width < 380 && scale > 1.3;
+    return FeCard(
+      key: const Key('home.core'),
+      padding: EdgeInsets.zero,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          for (final (i, m) in HomeModule.core.indexed) ...[
+            if (i > 0)
+              Divider(
+                height: 1,
+                thickness: 1,
+                indent: compact ? FeSpace.md : FeSpace.md + 44 + FeSpace.sm,
+                color: c.border.withValues(alpha: 0.6),
+              ),
+            Semantics(
+              button: true,
+              child: InkWell(
+                key: Key('home.module.${m.name}'),
+                borderRadius: BorderRadius.vertical(
+                  top: i == 0
+                      ? const Radius.circular(FeRadius.lg)
+                      : Radius.zero,
+                  bottom: i == HomeModule.core.length - 1
+                      ? const Radius.circular(FeRadius.lg)
+                      : Radius.zero,
+                ),
+                onTap: () =>
+                    m.isTab ? context.go(m.route) : context.push(m.route),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: FeSpace.md,
+                    vertical: FeSpace.sm + 2,
+                  ),
+                  child: Row(
+                    children: [
+                      if (!compact) ...[
+                        DecoratedBox(
+                          decoration: BoxDecoration(
+                            color: m.hue.bg(b),
+                            borderRadius: BorderRadius.circular(FeRadius.md),
+                          ),
+                          child: SizedBox.square(
+                            dimension: 44,
+                            child: Icon(m.icon, color: m.hue.fg(b), size: 22),
+                          ),
+                        ),
+                        const SizedBox(width: FeSpace.sm),
+                      ],
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              m.label(l),
+                              style: (compact ? t.titleSmall : t.titleMedium)
+                                  ?.copyWith(
+                                    fontWeight: FontWeight.w600,
+                                    height: 1.25,
+                                  ),
+                            ),
+                            const SizedBox(height: 2),
+                            Text(
+                              body(m),
+                              style: t.bodySmall?.copyWith(
+                                color: c.textSecondary,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      if (proSectionLocked(ref, m.proFeature)) ...[
+                        ProLockBadge(key: Key('home.module.${m.name}.lock')),
+                        const SizedBox(width: FeSpace.xs),
+                      ],
+                      Icon(Icons.chevron_right, color: c.textSecondary),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ],
+      ),
     );
   }
 }

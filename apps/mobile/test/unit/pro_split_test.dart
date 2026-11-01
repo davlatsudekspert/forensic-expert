@@ -29,6 +29,7 @@ Future<ProviderContainer> _c({
 }) async {
   final c = ProviderContainer(
     overrides: [
+      proEnabledProvider.overrideWithValue(true),
       proStrictProvider.overrideWithValue(strict),
       isAdminProvider.overrideWithValue(admin),
       ...planOverrides(plan),
@@ -58,6 +59,18 @@ void main() {
     final c = ProviderContainer();
     addTearDown(c.dispose);
     expect(c.read(proStrictProvider), isFalse);
+  });
+
+  test('FE_PRO standarti — o‘chiq: har qanday funksiya ochiq (to‘lovsiz '
+      'yig‘ma)', () async {
+    expect(kProEnabled, isFalse);
+    final c = ProviderContainer(overrides: planOverrides(null));
+    addTearDown(c.dispose);
+    await c.read(entitlementsProvider.future);
+    expect(c.read(proEnabledProvider), isFalse);
+    for (final f in ProFeature.values) {
+      expect(c.read(proAllowedProvider(f)), isTrue, reason: f.name);
+    }
   });
 
   group('bayroq o‘chiq: hammasi avvalgidek ochiq', () {

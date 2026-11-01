@@ -16398,7 +16398,7 @@ abstract class AppLocalizations {
   /// Button.
   ///
   /// In en, this message translates to:
-  /// **'Save / share results (CSV)'**
+  /// **'Save / share results'**
   String get classExportCsv;
 
   /// Share subject.
@@ -16776,7 +16776,7 @@ abstract class AppLocalizations {
   /// Home card subtitle for users with the teacher role.
   ///
   /// In en, this message translates to:
-  /// **'Run a group test and get the results as CSV'**
+  /// **'Run a group test and save the results'**
   String get teacherPanelHomeBody;
 
   /// Home card subtitle for users without the teacher role.
@@ -16806,13 +16806,13 @@ abstract class AppLocalizations {
   /// Teacher panel action and screen title: past class quizzes with CSV export.
   ///
   /// In en, this message translates to:
-  /// **'Results and CSV'**
+  /// **'Results'**
   String get teacherResultsTitle;
 
   /// Teacher panel action subtitle.
   ///
   /// In en, this message translates to:
-  /// **'Past quizzes, leaderboard and a CSV file'**
+  /// **'Past quizzes, leaderboard and grades'**
   String get teacherResultsBody;
 
   /// Teacher panel action: the student join flow.
@@ -18822,7 +18822,7 @@ abstract class AppLocalizations {
   /// Lock card benefit.
   ///
   /// In en, this message translates to:
-  /// **'Export results to CSV'**
+  /// **'Download results'**
   String get proBenefitResultsCsv;
 
   /// Lock card benefit.
@@ -19002,7 +19002,7 @@ abstract class AppLocalizations {
   /// Pro page: what the teacher plan includes, item 3.
   ///
   /// In en, this message translates to:
-  /// **'Results export to CSV'**
+  /// **'Download results'**
   String get proIncludesTeacher3;
 
   /// Pro page: what the teacher plan includes, item 4.
@@ -21470,6 +21470,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Rewards earned: {count} × 1 month of Pro'**
   String referralRewardGranted(int count);
+
+  /// Home section title (expert/student): the three core disciplines at the top.
+  ///
+  /// In en, this message translates to:
+  /// **'Core disciplines'**
+  String get homeCoreTitle;
+
+  /// Core disciplines card: forensic medicine subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Thanatology, injuries, time of death'**
+  String get homeCoreMedicineBody;
+
+  /// Core disciplines card: toxicology subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Poisons, medicines and narcotics'**
+  String get homeCoreToxBody;
+
+  /// Core disciplines card: biochemistry subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Body fluids and biochemical markers'**
+  String get homeCoreBiochemBody;
+
+  /// Teacher Home section title: the teacher's desk.
+  ///
+  /// In en, this message translates to:
+  /// **'My teaching desk'**
+  String get teacherDeskTitle;
+
+  /// Teacher desk card: lecture slide decks.
+  ///
+  /// In en, this message translates to:
+  /// **'Lecture presentations'**
+  String get teacherDeskLessonsTitle;
+
+  /// Teacher desk card subtitle: lecture slide decks by course and topic.
+  ///
+  /// In en, this message translates to:
+  /// **'Topics by subject and course — show on the projector'**
+  String get teacherDeskLessonsBody;
 }
 
 class _AppLocalizationsDelegate

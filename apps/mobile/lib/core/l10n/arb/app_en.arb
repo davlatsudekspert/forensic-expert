@@ -12173,7 +12173,7 @@
   "@classNoAnswersYet": {
     "description": "Empty."
   },
-  "classExportCsv": "Save / share results (CSV)",
+  "classExportCsv": "Save / share results",
   "@classExportCsv": {
     "description": "Button."
   },
@@ -12492,7 +12492,7 @@
   "@teacherPanelTitle": {
     "description": "Home card and screen title: teacher tools for the class quiz."
   },
-  "teacherPanelHomeBody": "Run a group test and get the results as CSV",
+  "teacherPanelHomeBody": "Run a group test and save the results",
   "@teacherPanelHomeBody": {
     "description": "Home card subtitle for users with the teacher role."
   },
@@ -12512,11 +12512,11 @@
   "@teacherRunBody": {
     "description": "Teacher panel action subtitle."
   },
-  "teacherResultsTitle": "Results and CSV",
+  "teacherResultsTitle": "Results",
   "@teacherResultsTitle": {
     "description": "Teacher panel action and screen title: past class quizzes with CSV export."
   },
-  "teacherResultsBody": "Past quizzes, leaderboard and a CSV file",
+  "teacherResultsBody": "Past quizzes, leaderboard and grades",
   "@teacherResultsBody": {
     "description": "Teacher panel action subtitle."
   },
@@ -14204,7 +14204,7 @@
   "@proBenefitUnlimitedGroupTests": {
     "description": "Lock card benefit."
   },
-  "proBenefitResultsCsv": "Export results to CSV",
+  "proBenefitResultsCsv": "Download results",
   "@proBenefitResultsCsv": {
     "description": "Lock card benefit."
   },
@@ -14339,7 +14339,7 @@
   "@proIncludesTeacher2": {
     "description": "Pro page: what the teacher plan includes, item 2."
   },
-  "proIncludesTeacher3": "Results export to CSV",
+  "proIncludesTeacher3": "Download results",
   "@proIncludesTeacher3": {
     "description": "Pro page: what the teacher plan includes, item 3."
   },
@@ -16227,5 +16227,33 @@
         "type": "int"
       }
     }
+  },
+  "homeCoreTitle": "Core disciplines",
+  "@homeCoreTitle": {
+    "description": "Home section title (expert/student): the three core disciplines at the top."
+  },
+  "homeCoreMedicineBody": "Thanatology, injuries, time of death",
+  "@homeCoreMedicineBody": {
+    "description": "Core disciplines card: forensic medicine subtitle."
+  },
+  "homeCoreToxBody": "Poisons, medicines and narcotics",
+  "@homeCoreToxBody": {
+    "description": "Core disciplines card: toxicology subtitle."
+  },
+  "homeCoreBiochemBody": "Body fluids and biochemical markers",
+  "@homeCoreBiochemBody": {
+    "description": "Core disciplines card: biochemistry subtitle."
+  },
+  "teacherDeskTitle": "My teaching desk",
+  "@teacherDeskTitle": {
+    "description": "Teacher Home section title: the teacher's desk."
+  },
+  "teacherDeskLessonsTitle": "Lecture presentations",
+  "@teacherDeskLessonsTitle": {
+    "description": "Teacher desk card: lecture slide decks."
+  },
+  "teacherDeskLessonsBody": "Topics by subject and course — show on the projector",
+  "@teacherDeskLessonsBody": {
+    "description": "Teacher desk card subtitle: lecture slide decks by course and topic."
   }
 }

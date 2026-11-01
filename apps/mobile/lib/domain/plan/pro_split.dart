@@ -16,8 +16,18 @@ import '../knowledge/knowledge_models.dart' show KnowledgeKind;
 import '../library/library_models.dart' show LibrarySection;
 import 'plan_models.dart';
 
+/// Pro umuman yoqilganmi (kompilyatsiya vaqtida; standart — O‘CHIQ).
+///
+/// O‘chiq (`FE_PRO` berilmagan): HAMMA funksiya bepul va ochiq — qulf, Pro
+/// taklifi, «Pro rejasi» qatori va ekrani ko‘rinmaydi (egasi qarori,
+/// 2026-10-17/2026-11-01: xarid ishlamaguncha ilovada to‘lovga oid hech narsa
+/// yo‘q). Haqiqiy xarid sandboxda sinalgandan keyin `--dart-define=FE_PRO=true`
+/// bilan alohida versiya yig‘iladi.
+const kProEnabled = bool.fromEnvironment('FE_PRO');
+
 /// Qat’iy bo‘linish yoqilganmi (kompilyatsiya vaqtida; standart — o‘chiq).
-const kProStrict = bool.fromEnvironment('FE_PRO_STRICT');
+/// Faqat [kProEnabled] bilan birga ma’noga ega.
+const kProStrict = kProEnabled && bool.fromEnvironment('FE_PRO_STRICT');
 
 /// Bepul/Pro bo‘linishi qoidalari (sof funksiyalar; UI’siz).
 abstract final class ProSplit {

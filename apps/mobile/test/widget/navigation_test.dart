@@ -158,26 +158,40 @@ void main() {
     tester,
   ) async {
     Offset at(String key) => tester.getTopLeft(find.byKey(Key(key)));
-    // Talaba: o‘qish, yo‘riqnomalar, moddalar, AI — bo‘limlardan oldin.
+    // Talaba va Mutaxassis: asosiy fanlar (Sud tibbiyoti, Toksikologiya,
+    // Biokimyo) eng tepada (egasi talabi, 2026-10-31), keyin tezkor amallar.
     await pumpApp(tester, settings: completedSettings(mode: UserMode.student));
+    expect(find.text('Core disciplines'), findsOneWidget);
     expect(find.text('Learning'), findsOneWidget);
+    for (final m in ['forensicMedicine', 'toxicology', 'biochemistry']) {
+      expect(find.byKey(Key('home.module.$m')), findsOneWidget);
+    }
     expect(
-      at('home.module.learn').dy,
-      lessThan(at('home.module.toxicology').dy),
+      at('home.module.toxicology').dy,
+      lessThan(at('home.module.learn').dy),
     );
-    expect(at('home.guidelines').dy, lessThan(at('home.module.toxicology').dy));
+    expect(at('home.module.learn').dy, lessThan(at('home.guidelines').dy + 1));
     expect(find.byKey(const Key('home.tools')), findsNothing);
-    // Mutaxassis: moddalar, usullar, kalkulyatorlar, AI.
+    // Mutaxassis: asosiy fanlar → Ish stolim → moddalar, usullar,
+    // kalkulyatorlar, AI.
     await pumpApp(tester, settings: completedSettings());
+    expect(find.text('Core disciplines'), findsOneWidget);
     expect(find.byKey(const Key('home.tools')), findsOneWidget);
+    for (final m in ['forensicMedicine', 'toxicology', 'biochemistry']) {
+      expect(find.byKey(Key('home.module.$m')), findsOneWidget);
+    }
+    expect(
+      at('home.module.forensicMedicine').dy,
+      lessThan(at('home.module.substances').dy),
+    );
     expect(
       at('home.module.substances').dy,
-      lessThan(at('home.module.toxicology').dy),
+      lessThan(at('home.module.laboratory').dy),
     );
     expect(
       at('home.module.methods').dy,
-      lessThan(at('home.module.toxicology').dy),
+      lessThan(at('home.module.laboratory').dy),
     );
-    expect(at('home.module.ai').dy, lessThan(at('home.module.toxicology').dy));
+    expect(at('home.module.ai').dy, lessThan(at('home.module.laboratory').dy));
   });
 }

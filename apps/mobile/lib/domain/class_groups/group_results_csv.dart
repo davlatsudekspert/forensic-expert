@@ -11,13 +11,13 @@ import 'class_groups_models.dart';
 
 abstract final class GroupResultsCsv {
   static const header =
-      'laqab,holat,togri_soni,jami,${GradeScaleCsv.scoreHeader},'
-      '${GradeScaleCsv.gradeHeader},sarflangan_vaqt_s';
+      'Laqab,Holat,To‘g‘ri javoblar,Savollar soni,${GradeScaleCsv.scoreHeader},'
+      '${GradeScaleCsv.gradeHeader},Sarflangan vaqt (soniya)';
 
   static String _state(BoardState s) => switch (s) {
-    BoardState.finished => 'tugatdi',
-    BoardState.solving => 'yechmoqda',
-    BoardState.joined => 'qoshildi',
+    BoardState.finished => 'Tugatdi',
+    BoardState.solving => 'Yechmoqda',
+    BoardState.joined => 'Qo‘shildi',
   };
 
   /// [rows] — odatda `GroupBoard.ranked` tartibida (tugatganlar reyting

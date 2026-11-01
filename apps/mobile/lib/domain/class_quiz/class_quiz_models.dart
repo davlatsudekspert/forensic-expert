@@ -1153,8 +1153,8 @@ class ClassQuizMe {
 /// ASCII (ikki oxirgisi — ustoz reestri uchun); fayl nomi ham ASCII.
 abstract final class ClassResultsCsv {
   static const header =
-      'laqab,ball,togri_soni,javob_vaqti_s,${GradeScaleCsv.scoreHeader},'
-      '${GradeScaleCsv.gradeHeader}';
+      'Laqab,Reyting ochkosi,To‘g‘ri javoblar,O‘rtacha javob vaqti (soniya),'
+      '${GradeScaleCsv.scoreHeader},${GradeScaleCsv.gradeHeader}';
 
   /// Formula in’yeksiyasidan himoya (`=`, `+`, `-`, `@`, tab, CR).
   static String cell(String v) {

@@ -14,6 +14,7 @@ import '../core/settings/settings_controller.dart';
 import '../domain/catalog/tools_catalog.dart';
 import '../domain/class_groups/class_groups_models.dart';
 import '../domain/class_quiz/class_quiz_models.dart';
+import '../domain/guidelines/guideline_models.dart' show GuidelineArea;
 import '../domain/knowledge/knowledge_models.dart';
 import '../domain/learn/study_models.dart' show StudyQuizMode;
 import '../domain/library/library_models.dart';
@@ -115,6 +116,7 @@ import '../features/tools/presentation/tool_detail_screen.dart';
 import '../features/tools/presentation/tools_screen.dart';
 import 'class_groups.dart';
 import 'class_quiz.dart';
+import 'plan.dart' show proEnabledProvider;
 import 'pro_samples.dart' show ProSampleSource;
 import 'referral.dart';
 import 'routes.dart';
@@ -295,6 +297,13 @@ final routerProvider = Provider<GoRouter>((ref) {
         }
         return onboardingRedirect(settings, Routes.home) ??
             (inv == null ? Routes.groups : Routes.home);
+      }
+      // Pro o‘chiq (FE_PRO yo‘q): «Pro rejasi» ekrani yo‘q — har qanday havola
+      // Asosiyga qaytadi (ilovada to‘lovga oid hech narsa ko‘rinmaydi).
+      if (!ref.read(proEnabledProvider) &&
+          (state.matchedLocation == Routes.pro ||
+              state.matchedLocation.startsWith('${Routes.pro}/'))) {
+        return Routes.home;
       }
       // Rejim chegaralari (egasi qarori, 2026-10-24): Ustoz paneli va natijalar
       // faqat «Ustoz» rejimida; «Darslar» Talabaga yo‘q (Mutaxassis — faqat
@@ -919,7 +928,13 @@ final routerProvider = Provider<GoRouter>((ref) {
                     builder: (c, s) => _proModule(
                       c,
                       title: AppLocalizations.of(c).guidelinesTitle,
-                      child: const GuidelinesScreen(),
+                      child: GuidelinesScreen(
+                        area: GuidelineArea.values
+                            .where(
+                              (a) => a.name == s.uri.queryParameters['area'],
+                            )
+                            .firstOrNull,
+                      ),
                     ),
                     routes: [
                       GoRoute(

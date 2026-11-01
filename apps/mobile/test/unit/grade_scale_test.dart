@@ -121,20 +121,20 @@ void main() {
       final lines = csv.trim().split('\r\n');
       expect(
         lines.first,
-        'laqab,holat,togri_soni,jami,Ball (100),Baho,sarflangan_vaqt_s',
+        'Laqab,Holat,To‘g‘ri javoblar,Savollar soni,Ball (100),Baho,Sarflangan vaqt (soniya)',
       );
-      expect(lines[1], 'Ali,tugatdi,28,30,93.3,5,754.0');
-      expect(lines[2], 'Vali,tugatdi,21,30,70.0,3,600.0');
-      expect(lines[3], 'Gul,tugatdi,12,30,40.0,$below,300.0');
-      expect(lines[4], 'Sher,yechmoqda,,,,,');
-      expect(lines[5], 'Nur,qoshildi,,,,,');
+      expect(lines[1], 'Ali,Tugatdi,28,30,93.3,5,754.0');
+      expect(lines[2], 'Vali,Tugatdi,21,30,70.0,3,600.0');
+      expect(lines[3], 'Gul,Tugatdi,12,30,40.0,$below,300.0');
+      expect(lines[4], 'Sher,Yechmoqda,,,,,');
+      expect(lines[5], 'Nur,Qo‘shildi,,,,,');
     });
 
     test('formula in’yeksiyasidan himoya va ASCII fayl nomi', () {
       final csv = GroupResultsCsv.build([
         row('=1+1', BoardState.finished, score: 3, total: 4, secs: 5),
       ], belowMinLabel: below);
-      expect(csv, contains("'=1+1,tugatdi,3,4,75.0,3,5.0"));
+      expect(csv, contains("'=1+1,Tugatdi,3,4,75.0,3,5.0"));
       final n = GroupResultsCsv.fileName(DateTime(2026, 10, 31));
       expect(n, 'guruh_test_natija_2026-10-31.csv');
       expect(n.codeUnits.every((c) => c < 128), isTrue);

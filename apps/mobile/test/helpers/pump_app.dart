@@ -3,8 +3,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_riverpod/misc.dart' show Override;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/app.dart';
+import 'package:forensic_expert/app/plan.dart';
 import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/router.dart';
+import 'package:forensic_expert/app/update_gate.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
 import 'package:forensic_expert/core/settings/settings_controller.dart';
 import 'package:forensic_expert/core/settings/settings_repository.dart';
@@ -45,6 +47,10 @@ Future<ProviderContainer> pumpApp(
   double pixelRatio = 3,
   List<Override> overrides = const [],
   bool testFixtures = true,
+  UpdateGateStore? updateStore,
+  // Testlar standart bo‘yicha Pro yig‘masini sinaydi (qulflar, rejalar);
+  // haqiqiy release (FE_PRO yo‘q) — `proEnabled: false`.
+  bool proEnabled = true,
 }) async {
   tester.view.physicalSize = size * pixelRatio;
   tester.view.devicePixelRatio = pixelRatio;
@@ -59,6 +65,12 @@ Future<ProviderContainer> pumpApp(
       initialSettingsProvider.overrideWithValue(settings),
       settingsRepositoryProvider.overrideWithValue(repo),
       contentStoreProvider.overrideWithValue(const FakeContentStore()),
+      // Har sinovda toza saqlagich: majburiy yangilash holati sinovlar
+      // orasida qolmaydi.
+      proEnabledProvider.overrideWithValue(proEnabled),
+      updateGateStoreProvider.overrideWithValue(
+        updateStore ?? MemoryUpdateGateStore(),
+      ),
       // Ilova standarti — fixture’siz (faqat kontent paketi). UI testlari
       // barqaror bo‘lishi uchun TEST fixture’lar shu yerda aniq ulanadi.
       if (testFixtures) ...[

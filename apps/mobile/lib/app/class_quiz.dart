@@ -218,7 +218,8 @@ class NativeClassFileShare implements ClassFileShare {
       ShareParams(
         files: [
           XFile.fromData(
-            Uint8List.fromList(utf8.encode(content)),
+            // UTF-8 BOM: Excel o‘zbek/rus harflarini to‘g‘ri ko‘rsatadi.
+            Uint8List.fromList([0xEF, 0xBB, 0xBF, ...utf8.encode(content)]),
             mimeType: 'text/csv',
             name: fileName,
           ),

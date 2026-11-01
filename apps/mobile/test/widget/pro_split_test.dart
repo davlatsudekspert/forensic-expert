@@ -516,6 +516,7 @@ void main() {
     Widget host({required bool strict, Plan? plan}) => ProviderScope(
       key: UniqueKey(),
       overrides: [
+        proEnabledProvider.overrideWithValue(true),
         proStrictProvider.overrideWithValue(strict),
         ...planOverrides(plan),
         ttsServiceProvider.overrideWithValue(FakeTtsService()),

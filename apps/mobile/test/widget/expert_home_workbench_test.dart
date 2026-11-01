@@ -131,13 +131,24 @@ void main() {
       expect(k('desk.student'), findsOneWidget);
     });
 
-    testWidgets('ustoz Home’i o‘zgarmagan: ish/o‘qish stoli yo‘q', (t) async {
+    testWidgets('ustoz Home’i: «Ustoz stolim», ish/o‘qish stoli yo‘q', (
+      t,
+    ) async {
       await pumpHome(t, mode: UserMode.teacher);
       expect(find.text('Ish stolim'), findsNothing);
       expect(find.text('O‘qish stolim'), findsNothing);
       expect(k('desk.student'), findsNothing);
       expect(k('workbench.mixed'), findsNothing);
-      expect(k('home.teacher'), findsOneWidget);
+      expect(k('desk.teacher'), findsOneWidget);
+      for (final id in [
+        'teachLessons',
+        'teachRun',
+        'teachGroups',
+        'teachResults',
+      ]) {
+        expect(k('workbench.$id'), findsOneWidget);
+      }
+      expect(find.text('Ustoz paneli'), findsNothing);
     });
 
     testWidgets('ekspertda O‘qish stolim yo‘q', (t) async {
