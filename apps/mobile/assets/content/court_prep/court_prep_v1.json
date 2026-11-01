@@ -530,6 +530,23 @@
     "court.q.win_alcohol",
     "court.q.win_benzo_amph"
    ]
+  },
+  {
+   "id": "court.topic.neighbors",
+   "order": 38,
+   "icon": "public",
+   "title": {
+    "uz": "Qo‘shni davlatlarda (Qozog‘iston, Qirg‘iziston, Tojikiston)"
+   },
+   "summary": {
+    "uz": "Ekspert huquqlari, majburiyatlari va javobgarligi — faqat rasmiy matn bilan tasdiqlangan moddalar."
+   },
+   "pending": false,
+   "question_ids": [
+    "court.q.neighbors_kz",
+    "court.q.neighbors_kg",
+    "court.q.neighbors_tj"
+   ]
   }
  ],
  "questions": [
@@ -4399,7 +4416,7 @@
     "en": "Isn't thin-layer chromatography (TLC) enough to identify a substance?"
    },
    "tests": {
-    "uz": "TLC ning tuzilma haqida ma’lumot bermasligini va B toifasiga kirishini bilish [swgdrug2024, cheng2011].",
+    "uz": "TLCning tuzilma haqida ma’lumot bermasligini va B toifasiga kirishini bilish [swgdrug2024, cheng2011].",
     "ru": "Знание того, что TLC не даёт структурной информации и относится к категории B [swgdrug2024, cheng2011].",
     "en": "Knowing that TLC gives no structural information and is a Category B technique [swgdrug2024, cheng2011]."
    },
@@ -4434,7 +4451,7 @@
    "followups": [
     {
      "q": {
-      "uz": "TLC ni mass-spektrometriya bilan birlashtirish mumkinmi?",
+      "uz": "TLCni mass-spektrometriya bilan birlashtirish mumkinmi?",
       "ru": "Можно ли сочетать TLC с масс-спектрометрией?",
       "en": "Can TLC be coupled with mass spectrometry?"
      },
@@ -4642,12 +4659,12 @@
    "followups": [
     {
      "q": {
-      "uz": "LC-MS (suyuqlik xromatografiyasi — mass-spektrometriya) GC-MS dan yaxshiroqmi?",
+      "uz": "LC-MS (suyuqlik xromatografiyasi — mass-spektrometriya) GC-MSdan yaxshiroqmi?",
       "ru": "LC-MS (жидкостная хроматография — масс-спектрометрия) лучше GC-MS?",
       "en": "Is LC-MS (liquid chromatography–mass spectrometry) better than GC-MS?"
      },
      "a": {
-      "uz": "Amaliyotda GC-MS dan LC-MS ga o‘tish kuzatilmoqda, yuqori aniqlikdagi MS murakkab biologik namunalarda muhim [ojanpera2012]; tanlov savol va validatsiyaga bog‘liq.",
+      "uz": "Amaliyotda GC-MSdan LC-MSga o‘tish kuzatilmoqda, yuqori aniqlikdagi MS murakkab biologik namunalarda muhim [ojanpera2012]; tanlov savol va validatsiyaga bog‘liq.",
       "ru": "В практике наблюдается переход от GC-MS к LC-MS, МС высокого разрешения важна в сложных биологических образцах [ojanpera2012]; выбор зависит от вопроса и валидации.",
       "en": "Practice is shifting from GC-MS to LC-MS, and high-resolution MS matters in complex biological samples [ojanpera2012]; the choice depends on the question and validation."
      }
@@ -8535,7 +8552,7 @@
     "en": "Doesn't 'not detected' mean the substance was not there at all?"
    },
    "tests": {
-    "uz": "Aniqlash chegarasi (LOD) va miqdoriy aniqlash chegarasi (LOQ) ma’nosini tushunish: LOQ — oldindan belgilangan xatolik va pretsiziya maqsadlari bajariladigan eng past konsentratsiya va u LOD dan ancha yuqori bo‘lishi mumkin [court_armbruster2008].",
+    "uz": "Aniqlash chegarasi (LOD) va miqdoriy aniqlash chegarasi (LOQ) ma’nosini tushunish: LOQ — oldindan belgilangan xatolik va pretsiziya maqsadlari bajariladigan eng past konsentratsiya va u LODdan ancha yuqori bo‘lishi mumkin [court_armbruster2008].",
     "ru": "Понимание предела обнаружения (LOD) и предела количественного определения (LOQ): LOQ — наименьшая концентрация, при которой выполняются заданные цели по смещению и прецизионности, и он может быть значительно выше LOD [court_armbruster2008].",
     "en": "Understanding LOD and LOQ: the LOQ is the lowest concentration at which predefined bias and imprecision goals are met, and it may be much higher than the LOD [court_armbruster2008]."
    },
@@ -8615,7 +8632,7 @@
    ],
    "limitations": [
     {
-     "uz": "LOD/LOQ ni hisoblash usullari turlicha (bo‘sh namuna, signal/shovqin, kalibrlash); qiymat usulga bog‘liq.",
+     "uz": "LOD/LOQni hisoblash usullari turlicha (bo‘sh namuna, signal/shovqin, kalibrlash); qiymat usulga bog‘liq.",
      "ru": "Способы расчёта LOD/LOQ различаются (холостая проба, сигнал/шум, калибровка); значение зависит от способа.",
      "en": "LOD/LOQ calculation approaches differ (blank, signal-to-noise, calibration); the value depends on the approach."
     }
@@ -8783,7 +8800,7 @@
     ],
     "explain": [
      {
-      "uz": "Noaniqlikni baholash va ifodalashning umumiy qoidalari GUM da [court_jcgm100_2008], analitik kimyoga tatbiqi Eurachem/CITAC qo‘llanmasida berilgan [court_quam2012].",
+      "uz": "Noaniqlikni baholash va ifodalashning umumiy qoidalari GUMda [court_jcgm100_2008], analitik kimyoga tatbiqi Eurachem/CITAC qo‘llanmasida berilgan [court_quam2012].",
       "ru": "Общие правила оценки и выражения неопределённости даны в GUM [court_jcgm100_2008], их применение в аналитической химии — в руководстве Eurachem/CITAC [court_quam2012].",
       "en": "General rules for evaluating and expressing uncertainty are in the GUM [court_jcgm100_2008]; their application to analytical chemistry is in the Eurachem/CITAC guide [court_quam2012]."
      },
@@ -11734,7 +11751,7 @@
       "en": "What does the uncertainty interval mean?"
      },
      "a": {
-      "uz": "Oraliq natija qanchalik aniq ekanini ko‘rsatadi; uni baholash va ifodalashning umumiy qoidalari GUM da berilgan [court_jcgm100_2008].",
+      "uz": "Oraliq natija qanchalik aniq ekanini ko‘rsatadi; uni baholash va ifodalashning umumiy qoidalari GUMda berilgan [court_jcgm100_2008].",
       "ru": "Интервал показывает, насколько точен результат; общие правила его оценки и выражения даны в GUM [court_jcgm100_2008].",
       "en": "The interval shows how precise the result is; the GUM sets general rules for evaluating and expressing it [court_jcgm100_2008]."
      }
@@ -21128,7 +21145,7 @@
     "uz": "Kimyogar moddaga xos muddat ma’lumoti bo‘lmasa, umumiy oraliqni va uning cheklovlarini ochiq aytadimi [court_verstraete2004]."
    },
    "short_answer": {
-    "uz": "Bu doza, iste’mol tarzi, namuna turi va usul sezgirligiga bog‘liq; muayyan modda uchun aniq raqamni manbasiz aytmayman. Umumiy sharhga ko‘ra siydikda bir martalik dozadan keyin 1,5–4 kun, surunkali iste’molda taxminan 1 hafta aniqlanadi [court_verstraete2004]. Benzodiazepinlardan flunitrazepamning 1–2 mg dozasidan keyin eng sezgir usullar 7-aminoflunitrazepamni siydikda 4 haftagacha aniqlay olgan [court_verstraete2004]. Shuning uchun natija manfiy bo‘lsa: «aniqlanmadi — vaqt oynasidan tashqarida yoki LOD dan past bo‘lishi mumkin» deyman."
+    "uz": "Bu doza, iste’mol tarzi, namuna turi va usul sezgirligiga bog‘liq; muayyan modda uchun aniq raqamni manbasiz aytmayman. Umumiy sharhga ko‘ra siydikda bir martalik dozadan keyin 1,5–4 kun, surunkali iste’molda taxminan 1 hafta aniqlanadi [court_verstraete2004]. Benzodiazepinlardan flunitrazepamning 1–2 mg dozasidan keyin eng sezgir usullar 7-aminoflunitrazepamni siydikda 4 haftagacha aniqlay olgan [court_verstraete2004]. Shuning uchun natija manfiy bo‘lsa: «aniqlanmadi — vaqt oynasidan tashqarida yoki LODdan past bo‘lishi mumkin» deyman."
    },
    "prepare": {
     "documents": [
@@ -21312,6 +21329,322 @@
        "key": "court_verstraete2004",
        "locator": [
         "abstract"
+       ],
+       "support": "full"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "court.q.neighbors_kz",
+   "jurisdiction": "ALL",
+   "status": "NEEDS_REVIEW",
+   "question": {
+    "uz": "Qozog‘istonda sud eksperti qanday qoidalarga bo‘ysunadi va bu O‘zbekistondan nimasi bilan farq qiladi?"
+   },
+   "tests": {
+    "uz": "Ekspert qo‘shni davlat qonunidagi asosiy talablarni bilib, o‘z amaliyotini ular bilan solishtira oladimi [court_kz_expertise_law]."
+   },
+   "short_answer": {
+    "uz": "Qozog‘istonda sud-ekspertlik faoliyati alohida qonun bilan tartibga solinadi (№ 44-VI, 2017). Asosiy tamoyillar: qonuniylik, ekspert mustaqilligi, tadqiqotning har tomonlama, to‘liq, xolis va ilmiy asoslanganligi [court_kz_expertise_law]. Ekspert ekspertizani tayinlagan organdan mustaqil; xulosa tekshirib ko‘rish mumkin bo‘lgan qoidalarga asoslanishi va davlat reestriga kiritilgan metodikalar bilan bajarilishi kerak [court_kz_expertise_law]. Xulosa berilguncha ekspertni so‘roq qilish taqiqlanadi [court_kz_expertise_law]."
+   },
+   "prepare": {
+    "documents": [
+     {
+      "uz": "Agar savollar bilimingizdan tashqarida bo‘lsa — xulosa berish imkonsizligi haqidagi xabar (40-modda) [court_kz_expertise_law]."
+     }
+    ],
+    "explain": [
+     {
+      "uz": "Ekspert ish materiallari bilan tanishish va qo‘shimcha material so‘rash huquqiga ega (23-modda) [court_kz_expertise_law]."
+     },
+     {
+      "uz": "Tirik shaxs sud-tibbiy ekspertizasida bilib qolgan, xulosaga aloqasi yo‘q holatlar bo‘yicha ekspert so‘roq qilinmaydi (41-modda 3-band) [court_kz_expertise_law]."
+     }
+    ],
+    "pitfalls": [
+     {
+      "uz": "Ekspertning o‘zi tadqiqot uchun material yig‘ishi taqiqlanadi (23-modda 2-band) [court_kz_expertise_law]."
+     }
+    ]
+   },
+   "followups": [
+    {
+     "q": {
+      "uz": "Shaxsni statsionar ekspertizaga majburan joylash mumkinmi?"
+     },
+     "a": {
+      "uz": "Qamoqda bo‘lmagan shaxsni sud-tibbiy yoki sud-psixiatrik ekspertiza uchun majburan joylash faqat sud qarori bilan; muddat — odatda 30 sutkagacha (46–47-moddalar) [court_kz_expertise_law]."
+     }
+    },
+    {
+     "q": {
+      "uz": "Ekspert savol bilimidan tashqarida bo‘lsa nima qiladi?"
+     },
+     "a": {
+      "uz": "Tadqiqotdan oldin buni aniqlasa, xulosa berish imkonsizligi haqida yozma xabar beradi (40-modda) [court_kz_expertise_law]."
+     }
+    }
+   ],
+   "limitations": [
+    {
+     "uz": "Karta Qozog‘istonning «Sud-ekspertlik faoliyati to‘g‘risida»gi qonuni (№ 44-VI) rasmiy matni asosida; qonunga keyingi o‘zgartishlar adilet.zan.kz da kuzatiladi."
+    }
+   ],
+   "links": [],
+   "citations": [
+    "court_kz_expertise_law"
+   ],
+   "locators": {
+    "court_kz_expertise_law": [
+     "art:5",
+     "art:8",
+     "art:9",
+     "art:10",
+     "art:23",
+     "art:40",
+     "art:41",
+     "art:46",
+     "art:47"
+    ]
+   },
+   "topic": "court.topic.neighbors",
+   "sample": false,
+   "updated": "2026-11-01",
+   "translation_status": {
+    "uz": "AUTHORED"
+   },
+   "claims": [
+    {
+     "id": "court.q.neighbors_kz.short_answer",
+     "sources": [
+      {
+       "key": "court_kz_expertise_law",
+       "locator": [
+        "art:5",
+        "art:8",
+        "art:9",
+        "art:10",
+        "art:23",
+        "art:40",
+        "art:41",
+        "art:46",
+        "art:47"
+       ],
+       "support": "full"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "court.q.neighbors_kg",
+   "jurisdiction": "ALL",
+   "status": "NEEDS_REVIEW",
+   "question": {
+    "uz": "Qirg‘izistonda sud eksperti qanday qoidalarga bo‘ysunadi va bu O‘zbekistondan nimasi bilan farq qiladi?"
+   },
+   "tests": {
+    "uz": "Ekspert qo‘shni davlatdagi huquq, majburiyat va javobgarlik qoidalarini O‘zbekiston bilan solishtira oladimi [court_kg_cpc]."
+   },
+   "short_answer": {
+    "uz": "Qirg‘izistonda ekspert maqomi Jinoyat-protsessual kodeksida (№ 129, 2021) belgilangan: ekspert fan, texnika yoki san’at sohasida maxsus bilimga ega bo‘lishi, ishda manfaatdor bo‘lmasligi kerak (56-modda) [court_kg_cpc]. Ekspert ish materiallari bilan tanishadi, qo‘shimcha material so‘raydi va savollar bilimidan tashqarida bo‘lsa xulosa berishdan bosh tortishi mumkin; u xolis xulosa berishga majbur [court_kg_cpc]. Zarar og‘irligini aniqlash uchun ekspertiza majburiy (178-modda) [court_kg_cpc]; og‘ir zarar mezoni — hayot uchun xavfli shikast yoki mehnat qobiliyatining kamida 1/3 qismi doimiy yo‘qolishi (UK 130-modda) [court_kg_cc]."
+   },
+   "prepare": {
+    "documents": [
+     {
+      "uz": "Jinoiy javobgarlik haqida ogohlantirilganlik to‘g‘risidagi tilxat (UPK 193-modda) [court_kg_cpc]."
+     }
+    ],
+    "explain": [
+     {
+      "uz": "Ekspertiza davlat va nodavlat ekspert tashkilotlarida o‘tkazilishi mumkin (178–185-moddalar) [court_kg_cpc]."
+     },
+     {
+      "uz": "Ekspert ish ishtirokchilari bilan ekspertiza bo‘yicha muzokara olib bormasligi kerak (56-modda) [court_kg_cpc]."
+     }
+    ],
+    "pitfalls": [
+     {
+      "uz": "Ekspertiza savollari kompetensiyangizga kirmasa — rad etish asosi (72-modda) [court_kg_cpc]."
+     }
+    ]
+   },
+   "followups": [
+    {
+     "q": {
+      "uz": "Yolg‘on xulosa uchun javobgarlik qayerda?"
+     },
+     "a": {
+      "uz": "UPK 56-moddasiga ko‘ra ekspert Jinoyat kodeksining 364-moddasi bo‘yicha javob beradi [court_kg_cpc]."
+     }
+    },
+    {
+     "q": {
+      "uz": "Menga hamma narsa aniq bo‘lmasa-chi?"
+     },
+     "a": {
+      "uz": "Savollar maxsus bilimingizdan tashqarida bo‘lsa, xulosa berishdan bosh tortish huquqingiz bor (56-modda) [court_kg_cpc]."
+     }
+    }
+   ],
+   "limitations": [
+    {
+     "uz": "Karta Qirg‘iziston JPK (№ 129) va JK (№ 127) rasmiy matni asosida; keyingi o‘zgartishlar cbd.minjust.gov.kg da kuzatiladi."
+    }
+   ],
+   "links": [],
+   "citations": [
+    "court_kg_cpc",
+    "court_kg_cc"
+   ],
+   "locators": {
+    "court_kg_cpc": [
+     "art:56",
+     "art:72",
+     "art:178",
+     "art:193"
+    ],
+    "court_kg_cc": [
+     "art:130",
+     "art:364"
+    ]
+   },
+   "topic": "court.topic.neighbors",
+   "sample": false,
+   "updated": "2026-11-01",
+   "translation_status": {
+    "uz": "AUTHORED"
+   },
+   "claims": [
+    {
+     "id": "court.q.neighbors_kg.short_answer",
+     "sources": [
+      {
+       "key": "court_kg_cpc",
+       "locator": [
+        "art:56",
+        "art:72",
+        "art:178",
+        "art:193"
+       ],
+       "support": "full"
+      },
+      {
+       "key": "court_kg_cc",
+       "locator": [
+        "art:130",
+        "art:364"
+       ],
+       "support": "full"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "court.q.neighbors_tj",
+   "jurisdiction": "ALL",
+   "status": "NEEDS_REVIEW",
+   "question": {
+    "uz": "Tojikistonda sud eksperti qanday qoidalarga bo‘ysunadi va bu O‘zbekistondan nimasi bilan farq qiladi?"
+   },
+   "tests": {
+    "uz": "Ekspert qo‘shni davlatdagi asosiy protsessual qoidalarni O‘zbekiston bilan solishtira oladimi [court_tj_cpc]."
+   },
+   "short_answer": {
+    "uz": "Tojikistonda ekspert dastlabki tergov va sudda maxsus bilim kerak bo‘lganda chaqiriladi (UPK 58-modda) [court_tj_cpc]. Ekspert ish materiallari bilan tanishadi, savollar bilimidan tashqarida bo‘lsa xulosa berishdan bosh tortishi mumkin va asoslangan, xolis yozma xulosa berishga majbur [court_tj_cpc]. Tan jarohatlarining xususiyati va og‘irligini aniqlash uchun ekspertiza majburiy (209-modda) [court_tj_cpc]; yolg‘on xulosa uchun javobgarlik — Jinoyat kodeksining 351–352-moddalari [court_tj_cc]."
+   },
+   "prepare": {
+    "documents": [
+     {
+      "uz": "Ekspertiza tayinlash to‘g‘risidagi qaror: asoslar, savollar va beriladigan materiallar ko‘rsatilgan bo‘lishi kerak (208-modda) [court_tj_cpc]."
+     }
+    ],
+    "explain": [
+     {
+      "uz": "Ekspertiza ekspert muassasalari, boshqa davlat yoki nodavlat muassasalar mutaxassislari tomonidan o‘tkazilishi mumkin (208-modda 3-qism) [court_tj_cpc]."
+     },
+     {
+      "uz": "Xulosada ekspertga qo‘yilgan savollar va ularga asoslangan javoblar bo‘lishi shart (217-modda) [court_tj_cpc]."
+     }
+    ],
+    "pitfalls": [
+     {
+      "uz": "Ekspert noma’lum qilmasdan ishtirokchilar bilan ekspertiza bo‘yicha muloqot qilmasligi kerak (58-modda 5-qism) [court_tj_cpc]."
+     }
+    ]
+   },
+   "followups": [
+    {
+     "q": {
+      "uz": "Ekspert qachon rad etiladi?"
+     },
+     "a": {
+      "uz": "Uning nokompetentligi aniqlanganda ham ekspert rad etiladi (69-modda) [court_tj_cpc]."
+     }
+    },
+    {
+     "q": {
+      "uz": "Zarar og‘irligi qaysi moddada?"
+     },
+     "a": {
+      "uz": "Og‘ir, o‘rtacha va yengil zarar — Jinoyat kodeksining 110–112-moddalari [court_tj_cc]."
+     }
+    }
+   ],
+   "limitations": [
+    {
+     "uz": "Karta Tojikiston JPK va JK rasmiy matni asosida; keyingi o‘zgartishlar adlia.tj da kuzatiladi."
+    }
+   ],
+   "links": [],
+   "citations": [
+    "court_tj_cpc",
+    "court_tj_cc"
+   ],
+   "locators": {
+    "court_tj_cpc": [
+     "art:58",
+     "art:69",
+     "art:208",
+     "art:209",
+     "art:217"
+    ],
+    "court_tj_cc": [
+     "art:110",
+     "art:351",
+     "art:352"
+    ]
+   },
+   "topic": "court.topic.neighbors",
+   "sample": false,
+   "updated": "2026-11-01",
+   "translation_status": {
+    "uz": "AUTHORED"
+   },
+   "claims": [
+    {
+     "id": "court.q.neighbors_tj.short_answer",
+     "sources": [
+      {
+       "key": "court_tj_cpc",
+       "locator": [
+        "art:58",
+        "art:69",
+        "art:208",
+        "art:209",
+        "art:217"
+       ],
+       "support": "full"
+      },
+      {
+       "key": "court_tj_cc",
+       "locator": [
+        "art:110",
+        "art:351",
+        "art:352"
        ],
        "support": "full"
       }
@@ -24580,6 +24913,91 @@
    "pmid": "11599592",
    "used_for": "Single controlled heroin doses, 11 men: total morphine last positive at 300 ng/mL 7.4-31.9 h (≤7 mg) and 10.7-53.5 h (>10 mg); 6-AM peak usually in first void and only that specimen positive at 10 ng/mL; large inter/intra-subject variation, creatinine normalisation improves predictability.",
    "verified_via": "PubMed MCP get_article_metadata (abstract)",
+   "verified_on": "2026-11-01"
+  },
+  {
+   "key": "court_kz_expertise_law",
+   "type": "law",
+   "authors": [
+    "Republic of Kazakhstan"
+   ],
+   "title": "Закон Республики Казахстан «О судебно-экспертной деятельности» № 44-VI (10.02.2017), ст. 5, 8, 9, 10, 23, 24, 40, 41, 46, 47",
+   "publisher": "adilet.zan.kz",
+   "year": 2017,
+   "doi": null,
+   "pmid": null,
+   "url": "https://adilet.zan.kz/rus/docs/Z1700000044",
+   "note": "Russian text with amendments to 14.07.2026 (Law № 350-VIII).",
+   "used_for": "KZ comparison",
+   "verified_via": "Owner-supplied PDF of the official full text, verbatim match",
+   "verified_on": "2026-11-01"
+  },
+  {
+   "key": "court_kg_cpc",
+   "type": "law",
+   "authors": [
+    "Kyrgyz Republic"
+   ],
+   "title": "Уголовно-процессуальный кодекс Кыргызской Республики № 129 (28.10.2021), ст. 56, 72, 178, 193",
+   "publisher": "cbd.minjust.gov.kg",
+   "year": 2021,
+   "doi": null,
+   "pmid": null,
+   "url": "https://cbd.minjust.gov.kg/",
+   "note": "Edition with amendments of 22.11.2024 № 186 (in force 01.07.2025).",
+   "used_for": "KG comparison",
+   "verified_via": "Owner-supplied PDF of the official text, verbatim match",
+   "verified_on": "2026-11-01"
+  },
+  {
+   "key": "court_kg_cc",
+   "type": "law",
+   "authors": [
+    "Kyrgyz Republic"
+   ],
+   "title": "Уголовный кодекс Кыргызской Республики № 127 (28.10.2021), ст. 130, 131, 364",
+   "publisher": "cbd.minjust.gov.kg",
+   "year": 2021,
+   "doi": null,
+   "pmid": null,
+   "url": "https://cbd.minjust.gov.kg/",
+   "note": "Edition with amendments of 22.11.2024 № 186.",
+   "used_for": "KG comparison",
+   "verified_via": "Owner-supplied PDF of the official text, verbatim match",
+   "verified_on": "2026-11-01"
+  },
+  {
+   "key": "court_tj_cpc",
+   "type": "law",
+   "authors": [
+    "Republic of Tajikistan"
+   ],
+   "title": "Уголовно-процессуальный кодекс Республики Таджикистан (2009), ст. 58, 69, 208, 209, 217",
+   "publisher": "Ахбори Маджлиси Оли Республики Таджикистан",
+   "year": 2009,
+   "doi": null,
+   "pmid": null,
+   "url": "https://www.adlia.tj/",
+   "note": "Russian text with amendments (owner-supplied PDF, 2024 edition).",
+   "used_for": "TJ comparison",
+   "verified_via": "Owner-supplied PDF of the official text, verbatim match",
+   "verified_on": "2026-11-01"
+  },
+  {
+   "key": "court_tj_cc",
+   "type": "law",
+   "authors": [
+    "Republic of Tajikistan"
+   ],
+   "title": "Уголовный кодекс Республики Таджикистан (1998), ст. 110–112, 351, 352",
+   "publisher": "Ахбори Маджлиси Оли Республики Таджикистан",
+   "year": 1998,
+   "doi": null,
+   "pmid": null,
+   "url": "https://www.adlia.tj/",
+   "note": "Russian text (owner-supplied PDF, WIPO Lex copy).",
+   "used_for": "TJ comparison",
+   "verified_via": "Owner-supplied PDF of the official text, verbatim match",
    "verified_on": "2026-11-01"
   }
  ]

@@ -13,6 +13,10 @@ K = {
  'dnaIntro': ('Bo‘lim xalqaro tavsiyalar (ISFG, SWGDAM, ENFSI) va ilmiy adabiyot asosida tuzilgan. Har bir bayon manbasi va manbadagi joyi bilan berilgan.',
               'Раздел составлен по международным рекомендациям (ISFG, SWGDAM, ENFSI) и научной литературе. Каждое положение дано с источником и местом в нём.',
               'Built on international recommendations (ISFG, SWGDAM, ENFSI) and the scientific literature. Every statement is given with its source and location.'),
+ 'dnaCoreBody': ('STR, namunalar, talqin va sudda so‘roq', 'STR, образцы, интерпретация, допрос в суде', 'STR, samples, interpretation, court'),
+ 'homeNewTitle': ('YANGI BO‘LIMLAR', 'НОВЫЕ РАЗДЕЛЫ', 'NEW SECTIONS'),
+ 'homeNewVirtopsy': ('Virtual autopsiya', 'Виртуальная аутопсия', 'Virtual autopsy'),
+ 'dnaQuestionNumbered': ('{n}. {q}', '{n}. {q}', '{n}. {q}'),
  'dnaTopics': ('Mavzular', 'Темы', 'Topics'),
  'dnaCourt': ('Sudda so‘roq', 'Допрос в суде', 'Testifying in court'),
  'dnaCourtIntro': ('DNK ekspertiga beriladigan savollar: to‘g‘ri javob va ekspert aytmasligi kerak bo‘lgan narsa.',
@@ -35,6 +39,8 @@ for i, lang in enumerate(('uz', 'ru', 'en')):
             meta = {'description': 'DNA (forensic genetics) section UI.'}
             if '{n}' in v[2]:
                 meta['placeholders'] = {'n': {'type': 'int'}}
+            if '{q}' in v[2]:
+                meta['placeholders']['q'] = {'type': 'String'}
             b['@' + k] = meta
     f.write_text(json.dumps(b, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 print('l10n_dna:', len(K), 'keys')

@@ -301,7 +301,10 @@ class DnaCourtScreen extends ConsumerWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
-                          Text('${i + 1}. ${_u(q.q)}', style: t.titleSmall),
+                          Text(
+                            l.dnaQuestionNumbered(i + 1, _u(q.q)),
+                            style: t.titleSmall,
+                          ),
                           const SizedBox(height: FeSpace.xs),
                           Text(
                             l.dnaAnswer,

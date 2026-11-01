@@ -149,26 +149,25 @@ void main() {
     expect(navBar, findsOneWidget);
   });
 
-  testWidgets('Kutubxona tugmasi Asosiy tepasida (qidiruvdan keyin, '
-      'bo‘limlardan oldin) va Kutubxonani ochadi', (tester) async {
+  testWidgets('Asosiy tepasida «Yangi bo‘limlar» (qidiruvdan keyin, '
+      'fanlardan oldin); Kutubxona — pastki menyuda', (tester) async {
     await pumpApp(tester, settings: completedSettings());
-    final cta = find.byKey(const Key('home.library'));
-    expect(cta, findsOneWidget);
+    final row = find.byKey(const Key('home.new'));
+    expect(row, findsOneWidget);
+    expect(find.byKey(const Key('home.library')), findsNothing);
     expect(
-      tester.getTopLeft(cta).dy,
+      tester.getTopLeft(row).dy,
       greaterThan(tester.getTopLeft(find.byKey(const Key('home.search'))).dy),
     );
     expect(
-      tester.getTopLeft(cta).dy,
+      tester.getTopLeft(row).dy,
       lessThan(
         tester.getTopLeft(find.byKey(const Key('home.module.toxicology'))).dy,
       ),
     );
-    expect(find.text('Library'), findsWidgets);
-    await tester.tap(cta);
+    await tester.tap(find.byKey(const Key('nav.library')));
     await tester.pumpAndSettle();
     expect(find.byType(LibraryScreen), findsOneWidget);
-    // Kutubxonada hech bir tab tanlanmagan, menyu esa joyida.
     expect(navBar, findsOneWidget);
     await tester.tap(find.byKey(const Key('nav.home')));
     await tester.pumpAndSettle();

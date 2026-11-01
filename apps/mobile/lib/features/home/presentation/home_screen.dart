@@ -5,13 +5,12 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../app/providers.dart';
+import '../../../app/dna.dart';
 import '../../../app/routes.dart';
 import '../../../app/user_data.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/flags.dart';
-import '../../../core/floating_nav_flag.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/settings/app_settings.dart';
@@ -253,6 +252,7 @@ class HomeScreen extends ConsumerWidget {
     // Asosiy fanlar (Sud tibbiyoti, Toksikologiya, Biokimyo) — Mutaxassis va
     // Talaba bosh sahifasining eng yuqorisida (egasi talabi, 2026-10-31).
     final coreTop = mode != null;
+    final lean = mode == UserMode.professional || mode == UserMode.student;
     // Tezkor amallardagi bo‘limlar to‘rda takrorlanmaydi.
     final modules = [
       for (final m in HomeModule.orderFor(mode))
@@ -317,9 +317,15 @@ class HomeScreen extends ConsumerWidget {
                   ],
                   const FirstStepsCard(),
                   const ProFirstOfferCard(),
-                  FeSectionHeader(l.homeAreasTitle),
-                  _ModuleGrid(modules: modules),
-                  if (!guidelinesFeatured) ...[
+                  // Egasi qarori (2026-11-01): Mutaxassis va Talaba bosh
+                  // sahifasida faqat asosiylar; bo‘limlar to‘ri, yo‘riqnomalar,
+                  // apparatlar kursi va tezkor kirish — Kutubxonada, taklif —
+                  // Profilda. Ustoz bosh sahifasi o‘zgarmaydi.
+                  if (!lean) ...[
+                    FeSectionHeader(l.homeAreasTitle),
+                    _ModuleGrid(modules: modules),
+                  ],
+                  if (!lean && !guidelinesFeatured) ...[
                     const SizedBox(height: FeSpace.sm),
                     _ResourceTile(
                       key: const Key('home.guidelines'),
@@ -334,7 +340,7 @@ class HomeScreen extends ConsumerWidget {
                   // Talabada — Kutubxonada.
                   // Mutaxassis: apparatlar bilan ishlash kursi
                   // (hammaga ochiq darslar) — egasi qarori, 2026-10-24.
-                  if (mode == UserMode.professional) ...[
+                  if (!lean && mode == UserMode.professional) ...[
                     const SizedBox(height: FeSpace.sm),
                     _ResourceTile(
                       key: const Key('home.instruments'),
@@ -368,11 +374,13 @@ class HomeScreen extends ConsumerWidget {
                   // Kutubxona va Vositalar — pastki tablarda; baza holati —
                   // Profil → Ilova haqida.
                   const _QuickAccess(),
-                  const SizedBox(height: FeSpace.lg),
-                  const InviteColleagueCard(
-                    key: Key('home.invite'),
-                    compact: true,
-                  ),
+                  if (!lean) ...[
+                    const SizedBox(height: FeSpace.lg),
+                    const InviteColleagueCard(
+                      key: Key('home.invite'),
+                      compact: true,
+                    ),
+                  ],
                   if (!FeFlags.showTestFixtures &&
                       FeFlags.contentChannel != 'production') ...[
                     const SizedBox(height: FeSpace.lg),
@@ -682,61 +690,6 @@ class _QuickAccess extends ConsumerWidget {
   }
 }
 
-/// Joriy yurisdiksiya — ilmiy kontent yurisdiksiyasiz ishlaydi; bu faqat
-/// huquqiy/protsessual qatlam uchun. Bayroq ishlatilmaydi (ISO kod + nom).
-class _JurisdictionContext extends ConsumerWidget {
-  const _JurisdictionContext();
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final l = AppLocalizations.of(context);
-    final c = FeTheme.of(context);
-    final t = Theme.of(context).textTheme;
-    final lang = Localizations.localeOf(context).languageCode;
-    final id = ref.watch(
-      settingsControllerProvider.select((s) => s.jurisdictionId),
-    );
-    final j = ref.watch(jurisdictionResolverProvider).byId(id);
-    final name = j?.name(lang) ?? id;
-    return Semantics(
-      button: true,
-      label: l.homeJurisdictionChip(name),
-      excludeSemantics: true,
-      child: InkWell(
-        key: const Key('home.jurisdiction'),
-        borderRadius: BorderRadius.circular(FeRadius.sm),
-        onTap: () => context.push(Routes.jurisdictions),
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(minHeight: 48),
-          child: Row(
-            children: [
-              Icon(Icons.public, size: 18, color: c.textSecondary),
-              const SizedBox(width: FeSpace.xs),
-              // Bitta o‘raladigan matn — 320 dp va ×2 shriftda ham sig‘adi.
-              Expanded(
-                child: Text.rich(
-                  TextSpan(
-                    children: [
-                      TextSpan(
-                        text: '${l.homeJurisdictionChip(name)} · ',
-                        style: t.bodySmall?.copyWith(color: c.textSecondary),
-                      ),
-                      TextSpan(
-                        text: l.homeChange,
-                        style: t.labelMedium?.copyWith(color: c.accent),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
 /// «Barcha sud-ekspert fanlari» — to‘rdagi oxirgi karta (oltin aksent).
 class _AllDisciplinesCard extends StatelessWidget {
   const _AllDisciplinesCard();
@@ -1041,6 +994,73 @@ class _CoreDisciplinesCard extends ConsumerWidget {
               ),
             ),
           ],
+          // DNK ekspertizasi — alohida bo‘lim (egasi talabi, 2026-11-01);
+          // manbali paket bo‘lsagina ko‘rinadi.
+          if (!(ref.watch(dnaProvider).value?.isEmpty ?? true)) ...[
+            Divider(
+              height: 1,
+              thickness: 1,
+              indent: compact ? FeSpace.md : FeSpace.md + 44 + FeSpace.sm,
+              color: c.border.withValues(alpha: 0.6),
+            ),
+            InkWell(
+              key: const Key('home.core.dna'),
+              borderRadius: const BorderRadius.vertical(
+                bottom: Radius.circular(FeRadius.lg),
+              ),
+              onTap: () => context.push(Routes.dna),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: FeSpace.md,
+                  vertical: FeSpace.sm + 2,
+                ),
+                child: Row(
+                  children: [
+                    if (!compact) ...[
+                      DecoratedBox(
+                        decoration: BoxDecoration(
+                          color: c.accentContainer,
+                          borderRadius: BorderRadius.circular(FeRadius.md),
+                        ),
+                        child: SizedBox.square(
+                          dimension: 44,
+                          child: Icon(
+                            Icons.biotech_outlined,
+                            color: c.onAccentContainer,
+                            size: 22,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: FeSpace.sm),
+                    ],
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            l.dnaTitle,
+                            style: (compact ? t.titleSmall : t.titleMedium)
+                                ?.copyWith(
+                                  fontWeight: FontWeight.w600,
+                                  height: 1.25,
+                                ),
+                          ),
+                          const SizedBox(height: 2),
+                          Text(
+                            l.dnaCoreBody,
+                            style: t.bodySmall?.copyWith(
+                              color: c.textSecondary,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Icon(Icons.chevron_right, color: c.textSecondary),
+                  ],
+                ),
+              ),
+            ),
+          ],
         ],
       ),
     );
@@ -1225,14 +1245,11 @@ class _HomeHero extends ConsumerWidget {
                         prominent: true,
                         onTap: () => context.push(Routes.search),
                       ),
-                      // Kutubxona suzuvchi menyuda tab emas — Asosiy
-                      // tepasida katta tugma (eski menyuda tab bor).
-                      if (floatingNavEnabled) ...[
-                        const SizedBox(height: FeSpace.sm),
-                        const _LibraryCta(),
-                      ],
-                      const SizedBox(height: FeSpace.xxs),
-                      const _JurisdictionContext(),
+                      // Egasi qarori (2026-11-01): Kutubxona — pastki
+                      // menyuda, Yurisdiksiya — Profilda; tepada yangi
+                      // bo‘limlar ko‘rinadi.
+                      const SizedBox(height: FeSpace.sm),
+                      const _NewSections(),
                     ],
                   ),
                 ),
@@ -1240,54 +1257,6 @@ class _HomeHero extends ConsumerWidget {
             ),
           ),
         ),
-      ),
-    );
-  }
-}
-
-/// Kutubxonaga katta, ajralib turuvchi kirish (suzuvchi menyuda tab yo‘q).
-/// Marshrut o‘zgarmaydi: `/library` (shell ichidagi alohida branch).
-class _LibraryCta extends StatelessWidget {
-  const _LibraryCta();
-
-  @override
-  Widget build(BuildContext context) {
-    final l = AppLocalizations.of(context);
-    final c = FeTheme.of(context);
-    final t = Theme.of(context).textTheme;
-    return FeCard(
-      key: const Key('home.library'),
-      color: c.accentContainer,
-      padding: const EdgeInsets.symmetric(
-        horizontal: FeSpace.md,
-        vertical: FeSpace.sm,
-      ),
-      onTap: () => context.go(Routes.library),
-      child: _EntryLayout(
-        leading: DecoratedBox(
-          decoration: BoxDecoration(
-            color: c.surfaceRaised,
-            borderRadius: BorderRadius.circular(FeRadius.md),
-            border: Border.all(color: c.accentBorder),
-          ),
-          child: SizedBox.square(
-            dimension: 48,
-            child: Icon(
-              Icons.local_library_outlined,
-              color: c.accent,
-              size: 26,
-            ),
-          ),
-        ),
-        title: Text(
-          l.libraryTitle,
-          style: t.titleMedium?.copyWith(
-            fontWeight: FontWeight.w700,
-            color: c.onAccentContainer,
-          ),
-        ),
-        body: l.homeLibraryBody,
-        trailing: Icon(Icons.chevron_right, color: c.onAccentContainer),
       ),
     );
   }
@@ -1378,4 +1347,87 @@ class _HeroPatternPainter extends CustomPainter {
   @override
   bool shouldRepaint(covariant _HeroPatternPainter oldDelegate) =>
       oldDelegate.accent != accent;
+}
+
+/// «Yangi bo‘limlar»: DNK, virtual autopsiya (KT/MRT), asbob-uskunalar —
+/// rasmli kichik kartalar, birinchi ekranda.
+class _NewSections extends ConsumerWidget {
+  const _NewSections();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final hasDna = !(ref.watch(dnaProvider).value?.isEmpty ?? true);
+    final items = [
+      if (hasDna) ('home.new.dna', 'dna_banner', l.dnaTitle, Routes.dna),
+      (
+        'home.new.virtopsy',
+        'virtopsy',
+        l.homeNewVirtopsy,
+        Routes.equipmentItem('virtopsy'),
+      ),
+      ('home.new.equipment', 'gc_ms', l.equipTitle, Routes.equipment),
+    ];
+    return Column(
+      key: const Key('home.new'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          l.homeNewTitle,
+          style: t.labelLarge?.copyWith(color: c.accent, letterSpacing: 0.6),
+        ),
+        const SizedBox(height: FeSpace.xs),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            for (final (i, (key, img, title, route)) in items.indexed) ...[
+              if (i > 0) const SizedBox(width: FeSpace.xs),
+              Expanded(
+                child: FeCard(
+                  key: Key(key),
+                  padding: EdgeInsets.zero,
+                  onTap: () => context.push(route),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      ClipRRect(
+                        borderRadius: const BorderRadius.vertical(
+                          top: Radius.circular(FeRadius.lg),
+                        ),
+                        child: AspectRatio(
+                          aspectRatio: 1.25,
+                          child: ColoredBox(
+                            color: const Color(0xFFF4EFE6),
+                            child: Image.asset(
+                              'assets/images/instruments/$img.webp',
+                              fit: BoxFit.cover,
+                              alignment: img == 'dna_banner'
+                                  ? Alignment.centerRight
+                                  : Alignment.center,
+                              excludeFromSemantics: true,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(FeSpace.xs),
+                        child: Text(
+                          title,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: t.labelLarge?.copyWith(height: 1.2),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ],
+        ),
+      ],
+    );
+  }
 }

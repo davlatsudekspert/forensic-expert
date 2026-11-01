@@ -12780,4 +12780,18 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get pmdAlgorNote =>
       'Скорость охлаждения зависит от температуры и влажности воздуха, ветра, одежды, возраста, упитанности и причины смерти.';
+
+  @override
+  String get dnaCoreBody => 'STR, образцы, интерпретация, допрос в суде';
+
+  @override
+  String get homeNewTitle => 'НОВЫЕ РАЗДЕЛЫ';
+
+  @override
+  String get homeNewVirtopsy => 'Виртуальная аутопсия';
+
+  @override
+  String dnaQuestionNumbered(int n, String q) {
+    return '$n. $q';
+  }
 }

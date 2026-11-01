@@ -8,6 +8,9 @@ import 'package:forensic_expert/domain/knowledge/knowledge_models.dart';
 import 'package:forensic_expert/domain/plan/plan_models.dart';
 
 import '../helpers/pilot_content.dart';
+
+import 'package:forensic_expert/core/settings/app_settings.dart';
+
 import '../helpers/pump_app.dart';
 
 /// PHASE 4 bilim sohalari — HAQIQIY pilot paket bilan.
@@ -22,9 +25,11 @@ void main() {
     String location, {
     bool owned = false,
     String jurisdiction = 'INT',
+    UserMode mode = UserMode.professional,
   }) => pumpApp(
     tester,
-    settings: completedSettings().copyWith(jurisdictionId: jurisdiction),
+    settings: completedSettings(mode: mode)
+        .copyWith(jurisdictionId: jurisdiction),
     initialLocation: location,
     testFixtures: false,
     overrides: [...pilot.overrides],
@@ -171,7 +176,7 @@ void main() {
     // Baza holati — Profil → Ilova haqida (Home qisqa).
     await open(tester, Routes.about);
     expect(find.byKey(const Key('about.database')), findsOneWidget);
-    await open(tester, Routes.home);
+    await open(tester, Routes.home, mode: UserMode.teacher);
     expect(find.byKey(const Key('home.database')), findsNothing);
     await see(tester, find.byKey(const Key('home.module.screening')));
     await tester.tap(find.byKey(const Key('home.module.screening')));

@@ -17,6 +17,9 @@ import 'package:forensic_expert/domain/plan/plan_models.dart';
 import 'package:forensic_expert/domain/privacy/telemetry_policy.dart';
 
 import '../helpers/pilot_content.dart';
+
+import 'package:forensic_expert/core/settings/app_settings.dart';
+
 import '../helpers/pump_app.dart';
 
 /// PHASE 6: global multidisiplinar platforma — fanlar, yurisdiksiya qatlami,
@@ -33,10 +36,13 @@ void main() {
     bool owned = true,
     String lang = 'en',
     String jurisdiction = 'INT',
+    UserMode mode = UserMode.professional,
   }) => pumpApp(
     tester,
-    settings: completedSettings(lang: lang)
-        .copyWith(jurisdictionId: jurisdiction),
+    settings: completedSettings(
+      lang: lang,
+      mode: mode,
+    ).copyWith(jurisdictionId: jurisdiction),
     initialLocation: location,
     testFixtures: false,
     overrides: [...pilot.overrides],
@@ -56,8 +62,11 @@ void main() {
     testWidgets('12 asosiy bo‘lim, yurisdiksiya konteksti, barcha fanlar', (
       tester,
     ) async {
-      await open(tester, Routes.home);
-      expect(find.byKey(const Key('home.jurisdiction')), findsOneWidget);
+      // Bo‘limlar to‘ri — Ustoz bosh sahifasida (Mutaxassis/Talaba —
+      // Kutubxonada; egasi qarori, 2026-11-01).
+      await open(tester, Routes.home, mode: UserMode.teacher);
+      // Yurisdiksiya — Profilda (egasi qarori, 2026-11-01).
+      expect(find.byKey(const Key('home.jurisdiction')), findsNothing);
       for (final m in [
         'forensicMedicine',
         'toxicology',

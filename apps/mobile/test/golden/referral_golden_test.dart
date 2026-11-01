@@ -109,7 +109,11 @@ void main() {
         ),
         (
           name: 'ref_08_home_invite_en_dark',
-          settings: completedSettings(theme: ThemeMode.dark),
+          // Taklif kartasi Ustoz bosh sahifasida (Mutaxassis — Profilda).
+          settings: completedSettings(
+            theme: ThemeMode.dark,
+            mode: UserMode.teacher,
+          ),
           route: Routes.home,
           size: const Size(390, 844),
           scale: 1,

@@ -10,6 +10,9 @@ import 'package:forensic_expert/domain/ports/referral_ports.dart';
 import 'package:forensic_expert/domain/referral/referral_models.dart';
 
 import '../helpers/pilot_content.dart';
+
+import 'package:forensic_expert/core/settings/app_settings.dart';
+
 import '../helpers/pump_app.dart';
 import '../helpers/referral_fakes.dart';
 
@@ -321,8 +324,12 @@ void main() {
       );
     });
 
-    testWidgets('Home’da sokin taklif kartasi bor', (tester) async {
-      await pumpApp(tester, settings: completedSettings());
+    testWidgets('Home’da sokin taklif kartasi bor (Ustoz; Mutaxassis — '
+        'Profilda)', (tester) async {
+      await pumpApp(
+        tester,
+        settings: completedSettings(mode: UserMode.teacher),
+      );
       final invite = find.byKey(const Key('home.invite'));
       await tester.scrollUntilVisible(
         invite,

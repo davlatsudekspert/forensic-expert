@@ -12660,4 +12660,18 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get pmdAlgorNote =>
       'Sovish tezligi havo harorati va namligi, shamol, kiyim, yosh, oziqlanish darajasi va o‘lim sababiga bog‘liq.';
+
+  @override
+  String get dnaCoreBody => 'STR, namunalar, talqin va sudda so‘roq';
+
+  @override
+  String get homeNewTitle => 'YANGI BO‘LIMLAR';
+
+  @override
+  String get homeNewVirtopsy => 'Virtual autopsiya';
+
+  @override
+  String dnaQuestionNumbered(int n, String q) {
+    return '$n. $q';
+  }
 }

@@ -22070,6 +22070,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'The cooling rate depends on air temperature and humidity, wind, clothing, age, body build and cause of death.'**
   String get pmdAlgorNote;
+
+  /// DNA (forensic genetics) section UI.
+  ///
+  /// In en, this message translates to:
+  /// **'STR, samples, interpretation, court'**
+  String get dnaCoreBody;
+
+  /// DNA (forensic genetics) section UI.
+  ///
+  /// In en, this message translates to:
+  /// **'NEW SECTIONS'**
+  String get homeNewTitle;
+
+  /// DNA (forensic genetics) section UI.
+  ///
+  /// In en, this message translates to:
+  /// **'Virtual autopsy'**
+  String get homeNewVirtopsy;
+
+  /// DNA (forensic genetics) section UI.
+  ///
+  /// In en, this message translates to:
+  /// **'{n}. {q}'**
+  String dnaQuestionNumbered(int n, String q);
 }
 
 class _AppLocalizationsDelegate

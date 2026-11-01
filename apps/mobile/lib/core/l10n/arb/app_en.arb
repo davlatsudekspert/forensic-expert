@@ -16645,5 +16645,29 @@
   "pmdAlgorNote": "The cooling rate depends on air temperature and humidity, wind, clothing, age, body build and cause of death.",
   "@pmdAlgorNote": {
     "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "dnaCoreBody": "STR, samples, interpretation, court",
+  "@dnaCoreBody": {
+    "description": "DNA (forensic genetics) section UI."
+  },
+  "homeNewTitle": "NEW SECTIONS",
+  "@homeNewTitle": {
+    "description": "DNA (forensic genetics) section UI."
+  },
+  "homeNewVirtopsy": "Virtual autopsy",
+  "@homeNewVirtopsy": {
+    "description": "DNA (forensic genetics) section UI."
+  },
+  "dnaQuestionNumbered": "{n}. {q}",
+  "@dnaQuestionNumbered": {
+    "description": "DNA (forensic genetics) section UI.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "q": {
+        "type": "String"
+      }
+    }
   }
 }

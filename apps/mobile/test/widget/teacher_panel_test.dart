@@ -94,7 +94,7 @@ void main() {
         initialLocation: Routes.teacher,
       );
       expect(find.byType(TeacherPanelScreen), findsNothing);
-      expect(find.byKey(const Key('home.allDisciplines')), findsOneWidget);
+      expect(find.byKey(const Key('home.core')), findsOneWidget);
     });
   }
 

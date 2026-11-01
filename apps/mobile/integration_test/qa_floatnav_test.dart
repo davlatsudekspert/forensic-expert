@@ -47,7 +47,7 @@ void main() {
       await qa.tapFinder(find.byKey(const Key('account.skip')));
       qa.expectText(l.homeGreetingStudent, s);
       expect(find.byKey(const Key('nav.floating')), findsOneWidget);
-      expect(find.byKey(const Key('home.library')), findsOneWidget);
+      expect(find.byKey(const Key('home.new')), findsOneWidget);
     });
     final full = tester.getSize(find.byKey(const Key('nav.floating')));
     await qa.step('Asosiy pastga skroll (ixcham menyu)', (s) async {
@@ -66,7 +66,7 @@ void main() {
     });
     await qa.scrollToTop();
     await qa.step('Kutubxona tugmasi → Kutubxona', (s) async {
-      await qa.tapFinder(find.byKey(const Key('home.library')));
+      await qa.tapFinder(find.byKey(const Key('nav.library')));
       qa.expectText(l.libraryTitle, s);
     });
     await qa.step('Kutubxona oxiri', (s) async {

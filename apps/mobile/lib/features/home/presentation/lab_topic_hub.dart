@@ -272,7 +272,6 @@ class LabTopicHubScreen extends ConsumerWidget {
         ? <(String, List<_HubTile>)>[
             for (final (key, k, g, t) in _deathGroups)
               (_groupTitle(l, key), [...topics(k), ...guides(g), ...tools(t)]),
-            (l.equipTitle, devices(const ['autopsy_set', 'organ_scale'])),
           ]
         : <(String, List<_HubTile>)>[
             (l.labHubPractice, lessons),

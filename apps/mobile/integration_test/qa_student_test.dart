@@ -141,7 +141,7 @@ void main() {
       goTo(tester, Routes.home);
       await qa.settle();
       await qa.scrollToTop();
-      await qa.tapFinder(find.byKey(const Key('home.library')));
+      await qa.tapFinder(find.byKey(const Key('nav.library')));
       qa.expectText('Moddalar', s);
       qa.expectText('Yo‘riqnomalar', s);
     }, shot: false);

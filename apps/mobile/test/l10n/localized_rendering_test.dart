@@ -13,7 +13,7 @@ void main() {
       final l = lookupAppLocalizations(Locale(code));
       expect(find.text(l.navHome), findsWidgets);
       // Kutubxona — Asosiy tepasidagi katta tugma (tab emas).
-      await tester.tap(find.byKey(const Key('home.library')));
+      await tester.tap(find.byKey(const Key('nav.library')));
       await tester.pumpAndSettle();
       expect(tester.takeException(), isNull);
       expect(find.text(l.libraryTitle), findsWidgets);

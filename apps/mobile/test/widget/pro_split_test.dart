@@ -139,7 +139,9 @@ void main() {
         await pumpApp(
           tester,
           size: _tall,
-          settings: completedSettings(lang: lang),
+          // Bo‘limlar to‘ri Ustoz bosh sahifasida (Mutaxassis/Talaba —
+          // Kutubxonada; egasi qarori, 2026-11-01).
+          settings: completedSettings(lang: lang, mode: UserMode.teacher),
           overrides: [..._strict(true).cast()],
         );
         for (final m in [
@@ -212,7 +214,7 @@ void main() {
         await pumpApp(
           tester,
           size: const Size(320, 3600),
-          settings: completedSettings(lang: lang),
+          settings: completedSettings(lang: lang, mode: UserMode.teacher),
           overrides: [..._strict(true).cast()],
         );
         expect(tester.takeException(), isNull, reason: lang);
@@ -245,7 +247,7 @@ void main() {
       await pumpApp(
         tester,
         size: _tall,
-        settings: completedSettings(lang: 'uz'),
+        settings: completedSettings(lang: 'uz', mode: UserMode.teacher),
         overrides: [..._strict(true).cast()],
       );
       await tester.tap(find.byKey(const Key('home.module.reagents')));

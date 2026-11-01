@@ -29,6 +29,7 @@ IconData courtTopicIcon(String name) => switch (name) {
   'forum' => Icons.forum_outlined,
   'gavel' => Icons.gavel_outlined,
   'biotech' => Icons.biotech_outlined,
+  'public' => Icons.public,
   _ => Icons.help_outline,
 };
 

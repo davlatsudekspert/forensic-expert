@@ -12734,4 +12734,18 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get pmdAlgorNote =>
       'The cooling rate depends on air temperature and humidity, wind, clothing, age, body build and cause of death.';
+
+  @override
+  String get dnaCoreBody => 'STR, samples, interpretation, court';
+
+  @override
+  String get homeNewTitle => 'NEW SECTIONS';
+
+  @override
+  String get homeNewVirtopsy => 'Virtual autopsy';
+
+  @override
+  String dnaQuestionNumbered(int n, String q) {
+    return '$n. $q';
+  }
 }

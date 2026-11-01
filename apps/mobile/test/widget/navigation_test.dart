@@ -31,7 +31,7 @@ void main() {
         expect(find.byType(type), findsOneWidget, reason: key);
       }
       // Kutubxona — tab emas; Asosiy tepasidagi katta tugma orqali.
-      await tester.tap(find.byKey(const Key('home.library')));
+      await tester.tap(find.byKey(const Key('nav.library')));
       await tester.pumpAndSettle();
       expect(find.byType(LibraryScreen), findsOneWidget);
     },
@@ -42,9 +42,7 @@ void main() {
     for (final m in [
       'Forensic Medicine',
       'Toxicology',
-      'Laboratory',
       'Substances',
-      'Learning',
       'Forensic AI',
     ]) {
       // Ekspert «Ish stolim»i ham «Forensic AI» kartasini beradi.
@@ -75,7 +73,7 @@ void main() {
   });
 
   testWidgets('tab almashganda stack holati saqlanadi', (tester) async {
-    await pumpApp(tester, settings: completedSettings());
+    await pumpApp(tester, settings: completedSettings(mode: UserMode.teacher));
     await tester.ensureVisible(find.byKey(const Key('home.module.laboratory')));
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(const Key('home.module.laboratory')));
@@ -170,7 +168,10 @@ void main() {
       at('home.module.toxicology').dy,
       lessThan(at('home.module.learn').dy),
     );
+    // Yo‘riqnomalar va bo‘limlar to‘ri — Kutubxonada (egasi qarori,
+    // 2026-11-01); tepada «Yangi bo‘limlar».
     expect(at('home.module.learn').dy, lessThan(at('home.guidelines').dy + 1));
+    expect(find.byKey(const Key('home.new')), findsOneWidget);
     expect(find.byKey(const Key('home.tools')), findsNothing);
     // Mutaxassis: asosiy fanlar → Ish stolim → moddalar, usullar,
     // kalkulyatorlar, AI.
@@ -184,14 +185,8 @@ void main() {
       at('home.module.forensicMedicine').dy,
       lessThan(at('home.module.substances').dy),
     );
-    expect(
-      at('home.module.substances').dy,
-      lessThan(at('home.module.laboratory').dy),
-    );
-    expect(
-      at('home.module.methods').dy,
-      lessThan(at('home.module.laboratory').dy),
-    );
-    expect(at('home.module.ai').dy, lessThan(at('home.module.laboratory').dy));
+    expect(find.byKey(const Key('home.module.laboratory')), findsNothing);
+    expect(find.byKey(const Key('home.module.methods')), findsOneWidget);
+    expect(find.byKey(const Key('home.module.ai')), findsOneWidget);
   });
 }
