@@ -146,7 +146,7 @@ void main() {
 
     await qa.step('Usul yozuvini ochish (GX)', (s) async {
       await qa.tapText('gaz xromatografiya');
-      qa.expectText('Tekshirilmagan', s);
+      qa.expectText('Manba keltirilgan', s);
     });
 
     await qa.step('Yo‘riqnoma: preanalitika kartasi', (s) async {
