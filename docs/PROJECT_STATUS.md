@@ -37,3 +37,8 @@ Statuslar: WORKING (avtomatik test yoki real sinov dalili bor) · IMPLEMENTED-UN
 4. Human review: 0 ta tasdiqlangan yozuv.
 5. Gemini real E2E qaydi (v5 deploy qilingan; telefonda savol bilan sinov kerak).
 6. Resend domen tasdig‘i (OTP xatlari spam).
+
+## Buildlar (0.4.0, `claude/pro-0.4.0`)
+- **Build 40** (0.4.0+40): Play internal + TestFlight, keyin Play rollout — bajarilgan.
+- **Build 41** (0.4.0+41, commit `2e3e6c1`, 2026-11-01): release run 41293999454 yashil (Android + iOS). Play rollout dispatch qilindi. APK: aapt2 versionCode 41, SHA256SUMS mos; egasiga yuborildi. Tarkibi: «Asbob-uskunalar» bo‘limi (17 ta karta, illyustratsiyalar), virtual autopsiya, «Sudda so‘roq» kengaytmasi (97 savol, 1152-son qonun, kimyogar vakolat chegarasi, aniqlash muddatlari), «Manba keltirilgan» yozuvlari.
+- Release build’da `FE_PRO_STRICT` yo‘q, ya’ni Pro qulflari foydalanuvchiga ko‘rinmaydi. Ekran katalogidagi qulflar faqat test sozlamasidan chiqqan.
