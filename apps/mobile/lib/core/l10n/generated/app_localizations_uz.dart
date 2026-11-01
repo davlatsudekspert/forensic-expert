@@ -12576,4 +12576,88 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get dnaPendingTranslation => 'Matn o‘zbek tilida.';
+
+  @override
+  String get pmdTitle => 'Sxema';
+
+  @override
+  String get pmdSourceLabel => 'Manba';
+
+  @override
+  String get pmdHoursShort => 'soat';
+
+  @override
+  String get pmdDaysShort => 'kun';
+
+  @override
+  String get pmdLivorHypostasis => 'Gipostaz';
+
+  @override
+  String get pmdLivorStasis => 'Staz';
+
+  @override
+  String get pmdLivorImbibition => 'Imbibitsiya';
+
+  @override
+  String get pmdPressVanish => 'Bosilsa yo‘qoladi, tez tiklanadi';
+
+  @override
+  String get pmdPressPale => 'Bosilsa oqaradi, sekin tiklanadi';
+
+  @override
+  String get pmdPressFixed => 'Bosilsa rangi o‘zgarmaydi';
+
+  @override
+  String get pmdLivorNote =>
+      'Bosqichlar orasida aniq chegara yo‘q — ular asta-sekin almashadi.';
+
+  @override
+  String get pmdLivorColors => 'Rangi o‘lim sababiga bog‘liq';
+
+  @override
+  String get pmdLivorCo => 'Is gazi — pushti-qizil';
+
+  @override
+  String get pmdLivorCn => 'Sianidlar — olcha rang';
+
+  @override
+  String get pmdLivorMethb =>
+      'Metgemoglobin hosil qiluvchi moddalar — qo‘ng‘ir-jigarrang';
+
+  @override
+  String get pmdRigorGrowth => 'Rivojlanadi';
+
+  @override
+  String get pmdRigorMax => 'Maksimal';
+
+  @override
+  String get pmdRigorResolve => 'Yo‘qoladi';
+
+  @override
+  String get pmdRigorFacts =>
+      '1–3 soatda aniqlana boshlaydi · 12–16 soatda barcha mushaklarda · 24 soatda maksimal · ikkinchi kunning o‘rtasidan yo‘qola boshlaydi · 3–7 kunda to‘liq yo‘qoladi';
+
+  @override
+  String get pmdRigorOrder =>
+      'Tartib: chaynash mushaklari → bo‘yin → tana → qo‘llar → oyoqlar (Nisten bo‘yicha pastga yo‘nalgan tip)';
+
+  @override
+  String get pmdAlgorRate =>
+      'Xona sharoitida tana harorati taxminan soatiga 1 °C pasayadi';
+
+  @override
+  String get pmdAlgorEquals => 'Muhit harorati bilan tenglashadi';
+
+  @override
+  String get pmdAlgorAxilla => 'Qo‘ltiq osti';
+
+  @override
+  String get pmdAlgorRectum => 'To‘g‘ri ichak';
+
+  @override
+  String get pmdAlgorLiver => 'Jigar';
+
+  @override
+  String get pmdAlgorNote =>
+      'Sovish tezligi havo harorati va namligi, shamol, kiyim, yosh, oziqlanish darajasi va o‘lim sababiga bog‘liq.';
 }

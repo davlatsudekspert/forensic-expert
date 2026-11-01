@@ -16541,5 +16541,109 @@
   },
   "@dnaPendingTranslation": {
     "description": "DNA (forensic genetics) section UI."
+  },
+  "pmdTitle": "Diagram",
+  "@pmdTitle": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdSourceLabel": "Source",
+  "@pmdSourceLabel": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdHoursShort": "h",
+  "@pmdHoursShort": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdDaysShort": "d",
+  "@pmdDaysShort": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdLivorHypostasis": "Hypostasis",
+  "@pmdLivorHypostasis": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdLivorStasis": "Stasis",
+  "@pmdLivorStasis": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdLivorImbibition": "Imbibition",
+  "@pmdLivorImbibition": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdPressVanish": "Disappears on pressure, returns quickly",
+  "@pmdPressVanish": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdPressPale": "Blanches on pressure, returns slowly",
+  "@pmdPressPale": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdPressFixed": "Colour does not change on pressure",
+  "@pmdPressFixed": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdLivorNote": "There is no sharp boundary between the stages; they change gradually.",
+  "@pmdLivorNote": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdLivorColors": "Colour depends on the cause of death",
+  "@pmdLivorColors": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdLivorCo": "Carbon monoxide — pink-red",
+  "@pmdLivorCo": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdLivorCn": "Cyanides — cherry",
+  "@pmdLivorCn": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdLivorMethb": "Methaemoglobin formers — brown",
+  "@pmdLivorMethb": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdRigorGrowth": "Develops",
+  "@pmdRigorGrowth": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdRigorMax": "Maximum",
+  "@pmdRigorMax": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdRigorResolve": "Resolves",
+  "@pmdRigorResolve": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdRigorFacts": "Detectable at 1–3 h · all muscles by 12–16 h · maximal at 24 h · begins to resolve from mid-day 2 · fully resolved by 3–7 days",
+  "@pmdRigorFacts": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdRigorOrder": "Order: masseters → neck → trunk → arms → legs (Nysten’s descending type)",
+  "@pmdRigorOrder": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdAlgorRate": "In room conditions body temperature falls by about 1 °C per hour",
+  "@pmdAlgorRate": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdAlgorEquals": "Equals the ambient temperature",
+  "@pmdAlgorEquals": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdAlgorAxilla": "Axilla",
+  "@pmdAlgorAxilla": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdAlgorRectum": "Rectum",
+  "@pmdAlgorRectum": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdAlgorLiver": "Liver",
+  "@pmdAlgorLiver": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
+  },
+  "pmdAlgorNote": "The cooling rate depends on air temperature and humidity, wind, clothing, age, body build and cause of death.",
+  "@pmdAlgorNote": {
+    "description": "Postmortem change diagram label (source: Giyosov 2018)."
   }
 }

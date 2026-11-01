@@ -12651,4 +12651,87 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get dnaPendingTranslation =>
       'Text is in Uzbek for now — translation pending.';
+
+  @override
+  String get pmdTitle => 'Diagram';
+
+  @override
+  String get pmdSourceLabel => 'Source';
+
+  @override
+  String get pmdHoursShort => 'h';
+
+  @override
+  String get pmdDaysShort => 'd';
+
+  @override
+  String get pmdLivorHypostasis => 'Hypostasis';
+
+  @override
+  String get pmdLivorStasis => 'Stasis';
+
+  @override
+  String get pmdLivorImbibition => 'Imbibition';
+
+  @override
+  String get pmdPressVanish => 'Disappears on pressure, returns quickly';
+
+  @override
+  String get pmdPressPale => 'Blanches on pressure, returns slowly';
+
+  @override
+  String get pmdPressFixed => 'Colour does not change on pressure';
+
+  @override
+  String get pmdLivorNote =>
+      'There is no sharp boundary between the stages; they change gradually.';
+
+  @override
+  String get pmdLivorColors => 'Colour depends on the cause of death';
+
+  @override
+  String get pmdLivorCo => 'Carbon monoxide — pink-red';
+
+  @override
+  String get pmdLivorCn => 'Cyanides — cherry';
+
+  @override
+  String get pmdLivorMethb => 'Methaemoglobin formers — brown';
+
+  @override
+  String get pmdRigorGrowth => 'Develops';
+
+  @override
+  String get pmdRigorMax => 'Maximum';
+
+  @override
+  String get pmdRigorResolve => 'Resolves';
+
+  @override
+  String get pmdRigorFacts =>
+      'Detectable at 1–3 h · all muscles by 12–16 h · maximal at 24 h · begins to resolve from mid-day 2 · fully resolved by 3–7 days';
+
+  @override
+  String get pmdRigorOrder =>
+      'Order: masseters → neck → trunk → arms → legs (Nysten’s descending type)';
+
+  @override
+  String get pmdAlgorRate =>
+      'In room conditions body temperature falls by about 1 °C per hour';
+
+  @override
+  String get pmdAlgorEquals => 'Equals the ambient temperature';
+
+  @override
+  String get pmdAlgorAxilla => 'Axilla';
+
+  @override
+  String get pmdAlgorRectum => 'Rectum';
+
+  @override
+  String get pmdAlgorLiver => 'Liver';
+
+  @override
+  String get pmdAlgorNote =>
+      'The cooling rate depends on air temperature and humidity, wind, clothing, age, body build and cause of death.';
 }

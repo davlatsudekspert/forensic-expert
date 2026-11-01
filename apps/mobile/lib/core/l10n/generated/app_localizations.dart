@@ -21914,6 +21914,162 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Text is in Uzbek for now — translation pending.'**
   String get dnaPendingTranslation;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'Diagram'**
+  String get pmdTitle;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'Source'**
+  String get pmdSourceLabel;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'h'**
+  String get pmdHoursShort;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'d'**
+  String get pmdDaysShort;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'Hypostasis'**
+  String get pmdLivorHypostasis;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'Stasis'**
+  String get pmdLivorStasis;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'Imbibition'**
+  String get pmdLivorImbibition;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'Disappears on pressure, returns quickly'**
+  String get pmdPressVanish;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'Blanches on pressure, returns slowly'**
+  String get pmdPressPale;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'Colour does not change on pressure'**
+  String get pmdPressFixed;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'There is no sharp boundary between the stages; they change gradually.'**
+  String get pmdLivorNote;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'Colour depends on the cause of death'**
+  String get pmdLivorColors;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'Carbon monoxide — pink-red'**
+  String get pmdLivorCo;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'Cyanides — cherry'**
+  String get pmdLivorCn;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'Methaemoglobin formers — brown'**
+  String get pmdLivorMethb;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'Develops'**
+  String get pmdRigorGrowth;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'Maximum'**
+  String get pmdRigorMax;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'Resolves'**
+  String get pmdRigorResolve;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'Detectable at 1–3 h · all muscles by 12–16 h · maximal at 24 h · begins to resolve from mid-day 2 · fully resolved by 3–7 days'**
+  String get pmdRigorFacts;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'Order: masseters → neck → trunk → arms → legs (Nysten’s descending type)'**
+  String get pmdRigorOrder;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'In room conditions body temperature falls by about 1 °C per hour'**
+  String get pmdAlgorRate;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'Equals the ambient temperature'**
+  String get pmdAlgorEquals;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'Axilla'**
+  String get pmdAlgorAxilla;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'Rectum'**
+  String get pmdAlgorRectum;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'Liver'**
+  String get pmdAlgorLiver;
+
+  /// Postmortem change diagram label (source: Giyosov 2018).
+  ///
+  /// In en, this message translates to:
+  /// **'The cooling rate depends on air temperature and humidity, wind, clothing, age, body build and cause of death.'**
+  String get pmdAlgorNote;
 }
 
 class _AppLocalizationsDelegate

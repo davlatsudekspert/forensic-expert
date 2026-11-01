@@ -27,6 +27,7 @@ import '../../library/presentation/content_entry_sections.dart';
 import '../../professional/presentation/review_section.dart';
 import '../../support/presentation/support_widgets.dart' show ReportErrorMenu;
 import '../knowledge_strings.dart';
+import 'postmortem_diagrams.dart';
 
 /// Bilim yozuvi sahifasi.
 ///
@@ -187,6 +188,7 @@ class KnowledgeDetailScreen extends ConsumerWidget {
                         ),
                     ],
                   ],
+                  ?PostmortemDiagrams.forEntity(e.id),
                   ScientificImageGallery(entityId: e.id),
                   RelatedSection(entityId: e.id),
                   TemplateCoverageCard(entry: e),

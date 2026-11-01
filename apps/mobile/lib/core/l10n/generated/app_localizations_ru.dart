@@ -12695,4 +12695,89 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get dnaPendingTranslation =>
       'Текст пока на узбекском — перевод готовится.';
+
+  @override
+  String get pmdTitle => 'Схема';
+
+  @override
+  String get pmdSourceLabel => 'Источник';
+
+  @override
+  String get pmdHoursShort => 'ч';
+
+  @override
+  String get pmdDaysShort => 'сут';
+
+  @override
+  String get pmdLivorHypostasis => 'Гипостаз';
+
+  @override
+  String get pmdLivorStasis => 'Стаз';
+
+  @override
+  String get pmdLivorImbibition => 'Имбибиция';
+
+  @override
+  String get pmdPressVanish =>
+      'При надавливании исчезает и быстро восстанавливается';
+
+  @override
+  String get pmdPressPale =>
+      'При надавливании бледнеет, медленно восстанавливается';
+
+  @override
+  String get pmdPressFixed => 'При надавливании цвет не меняется';
+
+  @override
+  String get pmdLivorNote =>
+      'Чёткой границы между стадиями нет — они сменяются постепенно.';
+
+  @override
+  String get pmdLivorColors => 'Цвет зависит от причины смерти';
+
+  @override
+  String get pmdLivorCo => 'Угарный газ — розово-красные';
+
+  @override
+  String get pmdLivorCn => 'Цианиды — вишнёвые';
+
+  @override
+  String get pmdLivorMethb => 'Метгемоглобинообразователи — буро-коричневые';
+
+  @override
+  String get pmdRigorGrowth => 'Развивается';
+
+  @override
+  String get pmdRigorMax => 'Максимум';
+
+  @override
+  String get pmdRigorResolve => 'Разрешается';
+
+  @override
+  String get pmdRigorFacts =>
+      'Выявляется через 1–3 ч · во всех мышцах через 12–16 ч · максимум к 24 ч · с середины вторых суток начинает разрешаться · полностью разрешается за 3–7 сут';
+
+  @override
+  String get pmdRigorOrder =>
+      'Порядок: жевательные мышцы → шея → туловище → руки → ноги (нисходящий тип по Нистену)';
+
+  @override
+  String get pmdAlgorRate =>
+      'В комнатных условиях температура тела снижается примерно на 1 °C в час';
+
+  @override
+  String get pmdAlgorEquals => 'Сравнивается с температурой среды';
+
+  @override
+  String get pmdAlgorAxilla => 'Подмышечная впадина';
+
+  @override
+  String get pmdAlgorRectum => 'Прямая кишка';
+
+  @override
+  String get pmdAlgorLiver => 'Печень';
+
+  @override
+  String get pmdAlgorNote =>
+      'Скорость охлаждения зависит от температуры и влажности воздуха, ветра, одежды, возраста, упитанности и причины смерти.';
 }
