@@ -813,6 +813,121 @@
      "page": "Chapter 6. Sudden death from natural causes, p.57"
     }
    ]
+  },
+  {
+   "id": "virtopsy",
+   "group": "morgue",
+   "name": "Virtual autopsiya (virtopsiya: PMCT, PMMR)",
+   "what": "Virtual autopsiya — murdani yormasdan, kompyuter tomografiya (KT) va magnit-rezonans tomografiya (MRT) yordamida butun tana yoki uning qismlarini uch o‘lchamli tasvirda tekshirib, o‘lim sababi va turini aniqlashga yordam beruvchi usul.",
+   "use": [
+    "O‘limdan keyingi KT (PMCT) sud-tibbiy o‘lim tekshiruvlarida standart tasvirlash usuliga aylangan; KT va MRT tananing bir nechta sohasini bir vaqtda ko‘rish imkonini beradi.",
+    "Jarohatlarda PMCT yorib ko‘rishdan oldin yo‘l ko‘rsatuvchi yoki u bilan birga qo‘llanadigan to‘ldiruvchi tekshiruv sifatida ishlatiladi.",
+    "Tasvirlar saqlanadi va qayta ko‘rib chiqilishi mumkin; bu hujjatlashtirish va yakuniy xulosa tayyorlashda yordam beradi.",
+    "3D tasvirlar tibbiyotdan uzoq tinglovchilarga (masalan, prokuror, sud) topilmalarni tushuntirishda qulay; 2D tasvirlar esa radiologik baholash uchun mayda tafsilotlarni yaxshiroq ko‘rsatadi."
+   ],
+   "care": [
+    "Adabiyotga ko‘ra PMCT yorib ko‘rishning o‘rnini bosuvchi emas, uni to‘ldiruvchi vosita sifatida qo‘llanishi kerak.",
+    "PMCT ba’zan o‘limdan oldingi va o‘limdan keyingi o‘zgarishlarni farqlashda qiyinchilik tug‘diradi; PMCT tasvirlarini baholash uchun yagona standartlar hali ishlab chiqilmoqda."
+   ],
+   "national": "O‘zbekistonda: Respublika sud-tibbiy ekspertiza ilmiy-amaliy markazining 2026-yil rejalarida MRT va KT asosida virtual autopsiya (virtopsiya) texnologiyasini joriy etish ko‘zda tutilgan.",
+   "links": {
+    "methods": [],
+    "guides": [],
+    "lessons": []
+   },
+   "sources": [
+    {
+     "author": "Gascho D.",
+     "title": "VIRTual autOPSY — applying CT and MRI for modern forensic death investigations. Front Radiol 2025;5:1557636",
+     "page": "Abstract; to‘liq matn: «The role of post-mortem CT in forensic medicine», «Post-mortem CT angiography», «Virtual autopsy in practice», «The evolving role of MRI in post-mortem imaging», «Summary»",
+     "doi": "10.3389/fradi.2025.1557636"
+    },
+    {
+     "author": "Ebert L.C., Franckenberg S., Sieberth T., Schweitzer W., Thali M., Ford J., Decker S.",
+     "title": "A review of visualization techniques of post-mortem computed tomography data for forensic death investigations. Int J Legal Med 2021;135(5):1855–1867",
+     "page": "Abstract",
+     "doi": "10.1007/s00414-021-02581-4"
+    },
+    {
+     "author": "Chandy P.E., Murray N., Khasanova E., Nasir M.U., Nicolaou S., Macri F.",
+     "title": "Postmortem CT in Trauma: An Overview. Can Assoc Radiol J 2020;71(3):403–414",
+     "page": "Abstract",
+     "doi": "10.1177/0846537120909503"
+    },
+    {
+     "author": "Modzelewski W., Janica J.",
+     "title": "The role of computed tomography in post-mortem examinations. Arch Med Sadowej Kryminol 2024;74(2):124–133",
+     "page": "Abstract",
+     "doi": "10.4467/16891716AMSIK.24.011.20340"
+    },
+    {
+     "author": "Respublika sud-tibbiy ekspertiza ilmiy-amaliy markazi (RSTEIAM) matbuot xizmati",
+     "title": "«Sog‘liqni saqlash vazirligida yig‘ilish bo‘lib o‘tdi» (forensic.uz, Telegram)",
+     "page": "matbuot xabari, 2026-yil rejalari"
+    },
+    {
+     "author": "Grabherr S., Doenz F., Steger B., Dirnhofer R., Dominguez A., Sollberger B., Gygax E., Rizzo E., Chevallier C., Meuli R., Mangin P.",
+     "title": "Multi-phase post-mortem CT angiography: development of a standardized protocol. Int J Legal Med 2011;125(6):791–802",
+     "page": "Abstract",
+     "doi": "10.1007/s00414-010-0526-5"
+    },
+    {
+     "author": "Thali M.J., Braun M., Buck U., Aghayev E., Jackowski C., Vock P., Sonnenschein M., Dirnhofer R.",
+     "title": "VIRTOPSY — scientific documentation, reconstruction and animation in forensic: individual and real 3D data based geo-metric approach including optical body/object surface and radiological CT/MRI scanning. J Forensic Sci 2005;50(2):428–442",
+     "page": "Abstract",
+     "pmid": "15813556"
+    },
+    {
+     "author": "Dedouit F., Ducloyer M., Elifritz J., Adolphi N.L., Yi-Li G.W., Decker S., Ford J., Kolev Y., Thali M.",
+     "title": "The current state of forensic imaging — perspectives. Int J Legal Med 2025;139(6):2819–2827",
+     "page": "«Forensic documentation» (Surface scanning, Photogrammetry, Forensic applications), «Forensic applications of 3D printing», «Imaging databases»",
+     "doi": "10.1007/s00414-025-03466-6"
+    },
+    {
+     "author": "Ebert L.C., Ptacek W., Breitbeck R., Fürst M., Kronreif G., Martinez R.M., Thali M., Flach P.M.",
+     "title": "Virtobot 2.0: the future of automated surface documentation and CT-guided needle placement in forensic medicine. Forensic Sci Med Pathol 2014;10(2):179–186",
+     "page": "Abstract",
+     "doi": "10.1007/s12024-013-9520-9"
+    },
+    {
+     "author": "Hagita T., Takeuchi A., Shimbashi S., Hyodoh H., Matoba K., Matoba T., Kiuchi T., Jin S.",
+     "title": "Usefulness of computed tomography-guided postmortem biopsy to evaluate pneumonia. Forensic Sci Int 2025;377:112612",
+     "page": "Abstract",
+     "doi": "10.1016/j.forsciint.2025.112612"
+    },
+    {
+     "author": "Grabherr S., Dominguez A., Mangin P.",
+     "title": "Angio-CT post-mortem: une nouvelle approche diagnostique [Post-mortem angio-CT: a new diagnostic approach]. Rev Med Suisse 2011;7(303):1507–1510",
+     "page": "Abstract (inglizcha)",
+     "pmid": "21899218"
+    }
+   ],
+   "steps": [
+    "Tana yuzasini 3D hujjatlashtirish: fotogrammetriya (turli burchakdan olingan ko‘p suratlardan dastur yordamida 3D model) va optik 3D skanerlash tana yuzasidagi jarohatlarni yormasdan va buzmasdan qayd etadi; lazer skaner aniq o‘lchanadigan rangsiz «nuqtalar buluti»ni beradi, strukturali yorug‘lik skaneri va fotogrammetriya esa rang va teksturani saqlaydi, lekin kalibrlash va masshtablashni talab qiladi.",
+    "Butun tana PMCT: yorib ko‘rishdan oldin murda KT dan o‘tkaziladi; KT butun tanani bir necha soniyada hujjatlashtiradi va ayniqsa suyak shikastlarini aniqlashda kuchli.",
+    "PMCTA uchun tomirga kirish: kichik kesma orqali tomir ochiladi, kanyula kiritilib, tomir jguti bilan mahkamlanadi; aorta bifurkatsiyasidan miya tomirlarigacha kontrastlash uchun son arteriyasi, koronar tomirlarni maqsadli ko‘rish uchun esa o‘mrov osti arteriyasi orqali kirish tavsiya etiladi; bu arteriya va venalar uchun alohida bajariladi.",
+    "PMCTA fazalari: odatda avval arterial faza — tomir kontrast aralashmasi bilan to‘ldirilib KT qilinadi, so‘ng xuddi shunday venoz faza bajariladi; Grabherr va hamkorlarining standartlashtirilgan ko‘p fazali protokoliga ko‘ra, perfuziya artefaktlaridan qochish uchun kamida bitta kontrastsiz (nativ) skan va uchta angiografik faza zarur.",
+    "Kontrast aralashmasi va maqsad: aralashma odatda yod asosidagi KT kontrast moddasi va tashuvchi modda (polietilenglikol yoki Ringer asetat eritmasi) dan taxminan 1:20 nisbatda tayyorlanadi; PMCTA aorta disseksiyasi kabi tabiiy o‘lim sabablarini va kontrastning sizib chiqishi orqali eng mayda tomir shikastlarini ko‘rsatadi.",
+    "PMMR (tanlangan holatlarda, odatda KT ga qo‘shimcha): yumshoq to‘qima shikastlari va ayrim organ patologiyalari — masalan, bo‘g‘ishdan keyin bo‘yin mushaklaridagi qon quyilish yoki o‘tkir va subo‘tkir miokard infarkti — uchun KT dan afzal; bolalarni tekshirishda ko‘proq qo‘llanadi; kuchli magnit maydonida ferromagnit yot jismlar xavfi tufayli skanerni ehtiyotkorlik bilan boshqarish talab etiladi.",
+    "Tasvir nazoratidagi biopsiya va namuna olish: KT ma’lumotlari asosida igna traektoriyasi rejalashtirilib, to‘qima yoki suyuqlik namunasi olinadi yoki yo‘naltiruvchi sim qo‘yiladi (Virtobot robot tizimida fantomdagi aniqlik 1,4 mm ±0,9 mm); KT nazoratidagi o‘pka biopsiyasi PMCT va qon tahlilida ko‘rinmagan pnevmoniyani aniqlashga yordam bergan.",
+    "Radiologik o‘qish va xulosa: tasvirlarni radiolog va sud-tibbiy ekspert hamkorlikda baholaydi (zarur bo‘lsa teleradiologiya orqali); o‘limdan keyingi tasvirlar klinik tasvirlardan sezilarli farq qiladi, shuning uchun ikkala mutaxassis uchun ham maxsus tayyorgarlik zarur, tabiiy o‘lim sabablarini autoliz va chirish tufayli yuzaga keladigan «normal» o‘limdan keyingi topilmalardan farqlash kerak.",
+    "Kerak bo‘lganda an’anaviy yorib ko‘rish: KT aniq topilma bergan taqdirda ham qotillik tergovi uchun u odatda autopsiyasiz yetarli emas; autopsiya sud-tibbiy o‘lim tekshiruvining «oltin standarti» bo‘lib qoladi.",
+    "Ma’lumotlarni saqlash va sudda taqdim etish: 3D raqamli yozuvni keyinchalik qayta ko‘rib chiqish va tahlil qilish mumkin, voqea joyining virtual modellari sud a’zolariga hodisani tushunarli ko‘rsatishga yordam beradi, 3D bosma modellar esa jarohatni qonli autopsiya suratlariga nisbatan xolis tarzda ko‘rsatishi mumkin; katta hajmdagi ma’lumotlar samarali saqlash va qayta ishlash imkoniyatlarini talab qiladi."
+   ],
+   "findings": [
+    "Yaxshi ko‘rsatadi: KT suyak shikastlarini aniqlashda kuchli, shuning uchun jarohat holatlarida ayniqsa qadrlanadi.",
+    "Yaxshi ko‘rsatadi: PMCTA aorta disseksiyasini, kontrast sizib chiqishi orqali eng mayda tomir yorilishlarini, qon ketish manbai, tomir malformatsiyalari va okklyuziyalarini ko‘rsatadi.",
+    "Yaxshi ko‘rsatadi: PMMR yumshoq to‘qima shikastlarini (masalan, bo‘yin mushaklaridagi qon quyilish) va autopsiyada ko‘pincha ko‘rinmaydigan o‘tkir yoki subo‘tkir miokard infarktini aniqlaydi.",
+    "Ko‘rsata olmaydi: KT rang, teginish va hid haqidagi ma’lumotni bermaydi; metall yot jismlar va implantlar artefakt hosil qiladi; yumshoq to‘qimalar orasidagi kontrast past.",
+    "Ehtiyot bo‘lish kerak: PMCTA da tomirdagi qon laxtalari kontrast bilan o‘ralib, noto‘g‘ri talqin qilinishi mumkin; polietilenglikol a’zolarning rangi va konsistensiyasini o‘zgartiradi (keyingi autopsiya uchun muhim), Ringer asetat esa ko‘proq ekstravazatsiya beradi.",
+    "Ehtiyot bo‘lish kerak: PMMR kontrasti tana harorati va chirish jarayonlariga kuchli bog‘liq, bu talqinni qiyinlashtiradi."
+   ],
+   "gallery": [
+    {
+     "image": "virtopsy_mri",
+     "caption": "O‘limdan keyingi MRT (PMMR) — yumshoq to‘qimalar uchun"
+    }
+   ]
   }
  ]
 }

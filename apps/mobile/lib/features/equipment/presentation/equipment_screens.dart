@@ -334,9 +334,102 @@ class EquipmentDetailScreen extends ConsumerWidget {
                   FeSectionHeader(l.equipUse),
                   bullets(item.use),
                 ],
+                if (item.steps.isNotEmpty) ...[
+                  FeSectionHeader(l.equipSteps),
+                  for (final (i, x) in item.steps.indexed)
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: FeSpace.sm),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            width: 26,
+                            height: 26,
+                            alignment: Alignment.center,
+                            margin: const EdgeInsets.only(right: FeSpace.sm),
+                            decoration: BoxDecoration(
+                              color: c.accentContainer,
+                              shape: BoxShape.circle,
+                              border: Border.all(color: c.accentBorder),
+                            ),
+                            child: Text(
+                              '${i + 1}',
+                              style: t.labelMedium?.copyWith(
+                                color: c.onAccentContainer,
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ),
+                          Expanded(child: Text(x, style: t.bodyMedium)),
+                        ],
+                      ),
+                    ),
+                ],
+                if (item.gallery.isNotEmpty) ...[
+                  const SizedBox(height: FeSpace.sm),
+                  SizedBox(
+                    height: 230,
+                    child: ListView.separated(
+                      key: const Key('equipment.gallery'),
+                      scrollDirection: Axis.horizontal,
+                      itemCount: item.gallery.length,
+                      separatorBuilder: (_, _) =>
+                          const SizedBox(width: FeSpace.sm),
+                      itemBuilder: (context, i) {
+                        final g = item.gallery[i];
+                        return SizedBox(
+                          width: 180,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(
+                                  FeRadius.md,
+                                ),
+                                child: ColoredBox(
+                                  color: const Color(0xFFF4EFE6),
+                                  child: Image.asset(
+                                    g.image,
+                                    width: 180,
+                                    height: 180,
+                                    fit: BoxFit.cover,
+                                    semanticLabel: g.caption,
+                                    errorBuilder: (_, _, _) =>
+                                        const SizedBox.square(dimension: 180),
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              Text(
+                                g.caption,
+                                maxLines: 2,
+                                overflow: TextOverflow.ellipsis,
+                                style: t.bodySmall?.copyWith(
+                                  color: c.textSecondary,
+                                ),
+                              ),
+                            ],
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                ],
+                if (item.findings.isNotEmpty) ...[
+                  FeSectionHeader(l.equipFindings),
+                  bullets(item.findings),
+                ],
                 if (item.care.isNotEmpty) ...[
                   FeSectionHeader(l.equipCare),
                   bullets(item.care),
+                ],
+                if (item.national.isNotEmpty) ...[
+                  const SizedBox(height: FeSpace.md),
+                  FeBanner(
+                    key: const Key('equipment.national'),
+                    icon: Icons.flag_outlined,
+                    text: item.national,
+                  ),
                 ],
                 if (related.isNotEmpty) ...[
                   FeSectionHeader(l.equipRelated),

@@ -12632,4 +12632,10 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get equipOpenDevice => 'Карточка прибора';
+
+  @override
+  String get equipSteps => 'Как проводится';
+
+  @override
+  String get equipFindings => 'Что показывает и чего не может';
 }

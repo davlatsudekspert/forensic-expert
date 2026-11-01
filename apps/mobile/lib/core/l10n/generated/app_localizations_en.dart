@@ -12588,4 +12588,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get equipOpenDevice => 'Instrument card';
+
+  @override
+  String get equipSteps => 'How it is done';
+
+  @override
+  String get equipFindings => 'What it shows and what it cannot';
 }

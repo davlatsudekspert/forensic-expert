@@ -45,6 +45,10 @@ k("equipLesson", "Related link: the instrument lesson (slides).",
   "Instrument lesson (slides)", "Урок по прибору (слайды)", "Apparat bo‘yicha dars (slaydlar)")
 k("equipEmpty", "Empty state when the equipment pack is unavailable.",
   "This section is not available yet.", "Раздел пока недоступен.", "Bu bo‘lim hozircha mavjud emas.")
+k("equipSteps", "Detail section: how the procedure is performed (ordered steps).",
+  "How it is done", "Как проводится", "Qanday o‘tkaziladi")
+k("equipFindings", "Detail section: what the method shows well and its limits.",
+  "What it shows and what it cannot", "Что показывает и чего не может", "Nimani ko‘rsatadi va nimani ko‘rsata olmaydi")
 k("equipOpenDevice", "Lab hub tile prefix: open the instrument card.",
   "Instrument card", "Карточка прибора", "Apparat kartasi")
 

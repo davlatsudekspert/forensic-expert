@@ -191,4 +191,14 @@ void main() {
       size: const Size(390, 1800),
     );
   });
+
+  testWidgets('equipment_detail_virtopsy_uz', (t) async {
+    await shot(
+      t,
+      name: 'equipment_detail_virtopsy_uz',
+      mode: UserMode.professional,
+      location: '/home/equipment/item/virtopsy',
+      size: const Size(390, 4200),
+    );
+  });
 }

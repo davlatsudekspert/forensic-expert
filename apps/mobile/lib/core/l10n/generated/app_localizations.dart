@@ -21806,6 +21806,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Instrument card'**
   String get equipOpenDevice;
+
+  /// Detail section: how the procedure is performed (ordered steps).
+  ///
+  /// In en, this message translates to:
+  /// **'How it is done'**
+  String get equipSteps;
+
+  /// Detail section: what the method shows well and its limits.
+  ///
+  /// In en, this message translates to:
+  /// **'What it shows and what it cannot'**
+  String get equipFindings;
 }
 
 class _AppLocalizationsDelegate

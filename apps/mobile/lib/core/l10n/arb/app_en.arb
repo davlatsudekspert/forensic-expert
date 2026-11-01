@@ -16459,5 +16459,13 @@
   "equipOpenDevice": "Instrument card",
   "@equipOpenDevice": {
     "description": "Lab hub tile prefix: open the instrument card."
+  },
+  "equipSteps": "How it is done",
+  "@equipSteps": {
+    "description": "Detail section: how the procedure is performed (ordered steps)."
+  },
+  "equipFindings": "What it shows and what it cannot",
+  "@equipFindings": {
+    "description": "Detail section: what the method shows well and its limits."
   }
 }

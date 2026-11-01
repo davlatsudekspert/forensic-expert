@@ -42,6 +42,10 @@ class EquipmentItem {
     this.guides = const [],
     this.lessons = const [],
     this.sources = const [],
+    this.national = '',
+    this.steps = const [],
+    this.findings = const [],
+    this.gallery = const [],
   });
 
   static EquipmentItem? fromJson(Map<String, Object?> j) {
@@ -74,6 +78,19 @@ class EquipmentItem {
       guides: strs(links['guides']),
       lessons: strs(links['lessons']),
       sources: sources,
+      national: (j['national'] as String? ?? '').trim(),
+      steps: strs(j['steps']),
+      findings: strs(j['findings']),
+      gallery: [
+        for (final g in (j['gallery'] as List? ?? const []))
+          if (g is Map &&
+              (g['image'] as String? ?? '').isNotEmpty &&
+              (g['caption'] as String? ?? '').isNotEmpty)
+            (
+              image: 'assets/images/instruments/${g['image']}.webp',
+              caption: (g['caption'] as String).trim(),
+            ),
+      ],
     );
   }
 
@@ -87,6 +104,18 @@ class EquipmentItem {
   final List<String> guides;
   final List<String> lessons;
   final List<EquipmentSource> sources;
+
+  /// O‘zbekistondagi holat (ixtiyoriy, manbali) — alohida blokda.
+  final String national;
+
+  /// «Qanday o‘tkaziladi» — tartibli qadamlar (manbali).
+  final List<String> steps;
+
+  /// Nimani yaxshi ko‘rsatadi / ko‘rsata olmaydi (manbali).
+  final List<String> findings;
+
+  /// Qo‘shimcha illyustratsiyalar (izoh bilan).
+  final List<({String image, String caption})> gallery;
 
   /// Illyustratsiya (ilova asseti). Fayl nomi = yozuv id’si.
   String get image => 'assets/images/instruments/$id.webp';

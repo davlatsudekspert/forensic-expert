@@ -12520,4 +12520,10 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get equipOpenDevice => 'Apparat kartasi';
+
+  @override
+  String get equipSteps => 'Qanday o‘tkaziladi';
+
+  @override
+  String get equipFindings => 'Nimani ko‘rsatadi va nimani ko‘rsata olmaydi';
 }
