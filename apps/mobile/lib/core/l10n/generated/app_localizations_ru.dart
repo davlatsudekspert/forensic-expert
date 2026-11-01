@@ -12648,4 +12648,51 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get settingsNewAlphabetHint =>
       'По закону ЗРУ-1184; обязателен с 22 апреля 2027 года. Цитаты из источников и библиография остаются в исходном написании.';
+
+  @override
+  String get dnaTitle => 'ДНК-экспертиза';
+
+  @override
+  String get dnaSubtitle =>
+      'Судебно-медицинская молекулярно-генетическая экспертиза: образцы, лаборатория, интерпретация, суд';
+
+  @override
+  String get dnaIntro =>
+      'Раздел составлен по международным рекомендациям (ISFG, SWGDAM, ENFSI) и научной литературе. Каждое положение дано с источником и местом в нём.';
+
+  @override
+  String get dnaTopics => 'Темы';
+
+  @override
+  String get dnaCourt => 'Допрос в суде';
+
+  @override
+  String get dnaCourtIntro =>
+      'Вопросы эксперту по ДНК: корректный ответ и то, чего эксперт утверждать не должен.';
+
+  @override
+  String get dnaAnswer => 'Ответ';
+
+  @override
+  String get dnaBoundary => 'Эксперт не утверждает';
+
+  @override
+  String get dnaQuote => 'Исходный текст';
+
+  @override
+  String get dnaEquipment => 'Оборудование ДНК-лаборатории';
+
+  @override
+  String dnaStatementCount(int n) {
+    return 'Положений с источником: $n';
+  }
+
+  @override
+  String dnaCourtCount(int n) {
+    return 'Вопросов: $n';
+  }
+
+  @override
+  String get dnaPendingTranslation =>
+      'Текст пока на узбекском — перевод готовится.';
 }

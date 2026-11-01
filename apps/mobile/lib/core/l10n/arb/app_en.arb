@@ -16479,5 +16479,67 @@
   "settingsNewAlphabetHint": "Per Law No. 1184; mandatory from 22 April 2027. Source quotes and references keep their original spelling.",
   "@settingsNewAlphabetHint": {
     "description": "Forensic medicine hub: header above topics that have no sourced entries yet."
+  },
+  "dnaTitle": "Forensic DNA",
+  "dnaSubtitle": "Forensic molecular genetics: samples, laboratory, interpretation, court",
+  "dnaIntro": "Built on international recommendations (ISFG, SWGDAM, ENFSI) and the scientific literature. Every statement is given with its source and location.",
+  "dnaTopics": "Topics",
+  "dnaCourt": "Testifying in court",
+  "dnaCourtIntro": "Questions put to a DNA expert: a sound answer and what the expert must not claim.",
+  "dnaAnswer": "Answer",
+  "dnaBoundary": "The expert does not claim",
+  "dnaQuote": "Original text",
+  "dnaEquipment": "DNA laboratory equipment",
+  "dnaStatementCount": "{n} sourced statements",
+  "@dnaStatementCount": {
+    "description": "DNA (forensic genetics) section UI.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "dnaCourtCount": "{n} questions",
+  "@dnaCourtCount": {
+    "description": "DNA (forensic genetics) section UI.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "dnaPendingTranslation": "Text is in Uzbek for now — translation pending.",
+  "@dnaTitle": {
+    "description": "DNA (forensic genetics) section UI."
+  },
+  "@dnaSubtitle": {
+    "description": "DNA (forensic genetics) section UI."
+  },
+  "@dnaIntro": {
+    "description": "DNA (forensic genetics) section UI."
+  },
+  "@dnaTopics": {
+    "description": "DNA (forensic genetics) section UI."
+  },
+  "@dnaCourt": {
+    "description": "DNA (forensic genetics) section UI."
+  },
+  "@dnaCourtIntro": {
+    "description": "DNA (forensic genetics) section UI."
+  },
+  "@dnaAnswer": {
+    "description": "DNA (forensic genetics) section UI."
+  },
+  "@dnaBoundary": {
+    "description": "DNA (forensic genetics) section UI."
+  },
+  "@dnaQuote": {
+    "description": "DNA (forensic genetics) section UI."
+  },
+  "@dnaEquipment": {
+    "description": "DNA (forensic genetics) section UI."
+  },
+  "@dnaPendingTranslation": {
+    "description": "DNA (forensic genetics) section UI."
   }
 }

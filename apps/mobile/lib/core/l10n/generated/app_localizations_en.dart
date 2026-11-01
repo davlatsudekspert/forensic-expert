@@ -12604,4 +12604,51 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get settingsNewAlphabetHint =>
       'Per Law No. 1184; mandatory from 22 April 2027. Source quotes and references keep their original spelling.';
+
+  @override
+  String get dnaTitle => 'Forensic DNA';
+
+  @override
+  String get dnaSubtitle =>
+      'Forensic molecular genetics: samples, laboratory, interpretation, court';
+
+  @override
+  String get dnaIntro =>
+      'Built on international recommendations (ISFG, SWGDAM, ENFSI) and the scientific literature. Every statement is given with its source and location.';
+
+  @override
+  String get dnaTopics => 'Topics';
+
+  @override
+  String get dnaCourt => 'Testifying in court';
+
+  @override
+  String get dnaCourtIntro =>
+      'Questions put to a DNA expert: a sound answer and what the expert must not claim.';
+
+  @override
+  String get dnaAnswer => 'Answer';
+
+  @override
+  String get dnaBoundary => 'The expert does not claim';
+
+  @override
+  String get dnaQuote => 'Original text';
+
+  @override
+  String get dnaEquipment => 'DNA laboratory equipment';
+
+  @override
+  String dnaStatementCount(int n) {
+    return '$n sourced statements';
+  }
+
+  @override
+  String dnaCourtCount(int n) {
+    return '$n questions';
+  }
+
+  @override
+  String get dnaPendingTranslation =>
+      'Text is in Uzbek for now — translation pending.';
 }

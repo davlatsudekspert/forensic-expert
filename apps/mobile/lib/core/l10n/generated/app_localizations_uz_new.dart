@@ -11221,4 +11221,45 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   @override
   String get settingsNewAlphabetHint => toUzNewAlphabet(super.settingsNewAlphabetHint);
 
+  @override
+  String get dnaTitle => toUzNewAlphabet(super.dnaTitle);
+
+  @override
+  String get dnaSubtitle => toUzNewAlphabet(super.dnaSubtitle);
+
+  @override
+  String get dnaIntro => toUzNewAlphabet(super.dnaIntro);
+
+  @override
+  String get dnaTopics => toUzNewAlphabet(super.dnaTopics);
+
+  @override
+  String get dnaCourt => toUzNewAlphabet(super.dnaCourt);
+
+  @override
+  String get dnaCourtIntro => toUzNewAlphabet(super.dnaCourtIntro);
+
+  @override
+  String get dnaAnswer => toUzNewAlphabet(super.dnaAnswer);
+
+  @override
+  String get dnaBoundary => toUzNewAlphabet(super.dnaBoundary);
+
+  @override
+  String get dnaQuote => toUzNewAlphabet(super.dnaQuote);
+
+  @override
+  String get dnaEquipment => toUzNewAlphabet(super.dnaEquipment);
+
+  @override
+  String dnaStatementCount(int n) =>
+      toUzNewAlphabet(super.dnaStatementCount(n));
+
+  @override
+  String dnaCourtCount(int n) =>
+      toUzNewAlphabet(super.dnaCourtCount(n));
+
+  @override
+  String get dnaPendingTranslation => toUzNewAlphabet(super.dnaPendingTranslation);
+
 }

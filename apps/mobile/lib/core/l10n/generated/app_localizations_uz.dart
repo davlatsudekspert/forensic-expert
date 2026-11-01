@@ -12530,4 +12530,50 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get settingsNewAlphabetHint =>
       'O‘RQ-1184 bo‘yicha; 2027-yil 22-apreldan majburiy. Manba iqtiboslari va adabiyotlar asl yozuvda qoladi.';
+
+  @override
+  String get dnaTitle => 'DNK ekspertizasi';
+
+  @override
+  String get dnaSubtitle =>
+      'Sud-tibbiy molekulyar-genetik ekspertiza: namunalar, laboratoriya, talqin, sud';
+
+  @override
+  String get dnaIntro =>
+      'Bo‘lim xalqaro tavsiyalar (ISFG, SWGDAM, ENFSI) va ilmiy adabiyot asosida tuzilgan. Har bir bayon manbasi va manbadagi joyi bilan berilgan.';
+
+  @override
+  String get dnaTopics => 'Mavzular';
+
+  @override
+  String get dnaCourt => 'Sudda so‘roq';
+
+  @override
+  String get dnaCourtIntro =>
+      'DNK ekspertiga beriladigan savollar: to‘g‘ri javob va ekspert aytmasligi kerak bo‘lgan narsa.';
+
+  @override
+  String get dnaAnswer => 'Javob';
+
+  @override
+  String get dnaBoundary => 'Ekspert aytmaydi';
+
+  @override
+  String get dnaQuote => 'Asl matn';
+
+  @override
+  String get dnaEquipment => 'DNK laboratoriyasi apparatlari';
+
+  @override
+  String dnaStatementCount(int n) {
+    return '$n ta manbali bayon';
+  }
+
+  @override
+  String dnaCourtCount(int n) {
+    return '$n ta savol';
+  }
+
+  @override
+  String get dnaPendingTranslation => 'Matn o‘zbek tilida.';
 }

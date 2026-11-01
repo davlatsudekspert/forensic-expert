@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/l10n/fe_localizations_delegate.dart';
-import 'package:forensic_expert/core/settings/app_settings.dart';
 import 'package:forensic_expert/core/settings/settings_controller.dart';
 
 import '../helpers/pump_app.dart';

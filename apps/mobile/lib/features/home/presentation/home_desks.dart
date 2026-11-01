@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/dna.dart';
 import '../../../app/routes.dart';
 import '../../../app/user_data.dart';
 import '../../../core/design/theme.dart';
@@ -75,6 +76,7 @@ class ExpertWorkbench extends ConsumerWidget {
         EquipmentCard(
           group: chemistry ? EquipmentGroup.lab : EquipmentGroup.morgue,
         ),
+        const DnaCard(),
         const SizedBox(height: FeSpace.sm),
         _DeskGrid(items: Workbench.cardsFor(specialty)),
         const SizedBox(height: FeSpace.sm),
@@ -112,6 +114,7 @@ class StudentDesk extends ConsumerWidget {
         _DeskGrid(items: Workbench.studentCards),
         const SizedBox(height: FeSpace.sm),
         const EquipmentCard(group: EquipmentGroup.lab),
+        const DnaCard(),
         if (question != null) ...[
           const SizedBox(height: FeSpace.sm),
           // Kun o‘zgarganda (kalit) javob holati yangidan boshlanadi.
@@ -867,6 +870,75 @@ class EquipmentCard extends StatelessWidget {
             ],
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// «DNK ekspertizasi» kartasi — bo‘lim paketi bo‘lsagina ko‘rinadi
+/// (manbali kontent yo‘q bo‘lsa karta ham yo‘q).
+class DnaCard extends ConsumerWidget {
+  const DnaCard({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final b = ref.watch(dnaProvider).value;
+    if (b == null || b.isEmpty) return const SizedBox.shrink();
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return Padding(
+      padding: const EdgeInsets.only(top: FeSpace.sm),
+      child: FeCard(
+        key: const Key('desk.dna'),
+        padding: EdgeInsets.zero,
+        onTap: () => context.push(Routes.dna),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            ClipRRect(
+              borderRadius: const BorderRadius.vertical(
+                top: Radius.circular(FeRadius.lg),
+              ),
+              child: AspectRatio(
+                aspectRatio: 3 / 1.2,
+                child: Image.asset(
+                  'assets/images/instruments/dna_banner.webp',
+                  fit: BoxFit.cover,
+                  alignment: Alignment.centerRight,
+                  excludeFromSemantics: true,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(FeSpace.md),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          l.dnaTitle,
+                          style: t.titleMedium?.copyWith(
+                            fontSize: 18,
+                            height: 1.25,
+                          ),
+                        ),
+                        const SizedBox(height: 2),
+                        Text(
+                          l.dnaSubtitle,
+                          style: t.bodySmall?.copyWith(color: c.textSecondary),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Icon(Icons.chevron_right, color: c.textSecondary),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

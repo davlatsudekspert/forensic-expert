@@ -21836,6 +21836,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Per Law No. 1184; mandatory from 22 April 2027. Source quotes and references keep their original spelling.'**
   String get settingsNewAlphabetHint;
+
+  /// DNA (forensic genetics) section UI.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic DNA'**
+  String get dnaTitle;
+
+  /// DNA (forensic genetics) section UI.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic molecular genetics: samples, laboratory, interpretation, court'**
+  String get dnaSubtitle;
+
+  /// DNA (forensic genetics) section UI.
+  ///
+  /// In en, this message translates to:
+  /// **'Built on international recommendations (ISFG, SWGDAM, ENFSI) and the scientific literature. Every statement is given with its source and location.'**
+  String get dnaIntro;
+
+  /// DNA (forensic genetics) section UI.
+  ///
+  /// In en, this message translates to:
+  /// **'Topics'**
+  String get dnaTopics;
+
+  /// DNA (forensic genetics) section UI.
+  ///
+  /// In en, this message translates to:
+  /// **'Testifying in court'**
+  String get dnaCourt;
+
+  /// DNA (forensic genetics) section UI.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions put to a DNA expert: a sound answer and what the expert must not claim.'**
+  String get dnaCourtIntro;
+
+  /// DNA (forensic genetics) section UI.
+  ///
+  /// In en, this message translates to:
+  /// **'Answer'**
+  String get dnaAnswer;
+
+  /// DNA (forensic genetics) section UI.
+  ///
+  /// In en, this message translates to:
+  /// **'The expert does not claim'**
+  String get dnaBoundary;
+
+  /// DNA (forensic genetics) section UI.
+  ///
+  /// In en, this message translates to:
+  /// **'Original text'**
+  String get dnaQuote;
+
+  /// DNA (forensic genetics) section UI.
+  ///
+  /// In en, this message translates to:
+  /// **'DNA laboratory equipment'**
+  String get dnaEquipment;
+
+  /// DNA (forensic genetics) section UI.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} sourced statements'**
+  String dnaStatementCount(int n);
+
+  /// DNA (forensic genetics) section UI.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} questions'**
+  String dnaCourtCount(int n);
+
+  /// DNA (forensic genetics) section UI.
+  ///
+  /// In en, this message translates to:
+  /// **'Text is in Uzbek for now — translation pending.'**
+  String get dnaPendingTranslation;
 }
 
 class _AppLocalizationsDelegate

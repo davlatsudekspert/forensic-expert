@@ -31,6 +31,10 @@ abstract final class Routes {
 
   /// «Asbob-uskunalar»: Laboratoriya / Morg (`?group=morgue`).
   static const equipment = '/home/equipment';
+  static const dna = '/home/dna';
+  static const dnaCourt = '/home/dna/court';
+  static String dnaTopic(String id) =>
+      '/home/dna/topic/${Uri.encodeComponent(id)}';
   static String equipmentGroup(String group) => '/home/equipment?group=$group';
   static String equipmentItem(String id) =>
       '/home/equipment/item/${Uri.encodeComponent(id)}';
