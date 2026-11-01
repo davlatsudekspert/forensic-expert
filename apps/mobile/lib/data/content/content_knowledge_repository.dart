@@ -4,6 +4,7 @@ import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:fe_database/fe_database.dart' show ContentDatabase;
 import 'package:flutter/foundation.dart';
 
+import '../../domain/knowledge/content_corrections.dart';
 import '../../domain/knowledge/knowledge_models.dart';
 import '../../domain/library/library_models.dart';
 import 'content_provenance.dart';
@@ -51,7 +52,10 @@ abstract final class ContentKnowledgeLoader {
         _ => null,
       };
       if (kind == null) continue;
-      final claims = prov.claimsByEntity[id] ?? const <ClaimView>[];
+      final claims = [
+        for (final c in prov.claimsByEntity[id] ?? const <ClaimView>[])
+          if (!ContentCorrections.hiddenClaims.contains(c.claimId)) c,
+      ];
       final ownStatus = ScientificStatus.fromCode(
         r.read<String>('review_status'),
       );
@@ -62,7 +66,9 @@ abstract final class ContentKnowledgeLoader {
         KnowledgeEntry(
           id: id,
           kind: kind,
-          area: KnowledgeArea.values.byName(r.read<String>('area')),
+          area:
+              ContentCorrections.areaOverrides[id] ??
+              KnowledgeArea.values.byName(r.read<String>('area')),
           name: LocalizedText(
             (jsonDecode(r.read<String>('names_json')) as Map)
                 .cast<String, String>(),

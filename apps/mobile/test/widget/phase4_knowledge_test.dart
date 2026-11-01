@@ -1,6 +1,7 @@
 import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:forensic_expert/domain/knowledge/content_corrections.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/widgets/common.dart';
 import 'package:forensic_expert/domain/knowledge/knowledge_models.dart';
@@ -44,7 +45,12 @@ void main() {
       for (final e in pilot.knowledge.byKind(kind)) {
         expect(e.status, ScientificStatus.needsReview, reason: e.id);
         expect(e.isTestData, isFalse, reason: e.id);
-        expect(e.allSources, isNotEmpty, reason: e.id);
+        // Audit (2026-11-01): noto‘g‘ri iqtibosi yashirilgan yozuv manbasiz
+        // qoladi va «manbali ma’lumot yo‘q» deb halol ko‘rsatiladi.
+        final emptied =
+            e.claims.isEmpty &&
+            ContentCorrections.correctedEntries.contains(e.id);
+        if (!emptied) expect(e.allSources, isNotEmpty, reason: e.id);
       }
     }
   });

@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:forensic_expert/domain/knowledge/content_corrections.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/domain/evidence/content_translations.dart';
 
@@ -169,7 +170,9 @@ void main() {
         missing.add(id);
       }
     }
-    expect(missing, isEmpty);
+    // Audit (2026-11-01): mavzuga tegishli bo‘lmagan iqtibosi yashirilgan
+    // yozuvlarda shu iqtibosdan qilingan tushuntirish ham ko‘rsatilmaydi.
+    expect(missing.toSet(), ContentCorrections.correctedEntries);
   });
 
   testWidgets('usul kartasi (method_body) — ru/uz tarjima, en tushuntirish', (

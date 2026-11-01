@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:fe_database/fe_database.dart';
 
+import '../../domain/knowledge/content_corrections.dart';
 import '../../domain/library/library_models.dart';
 import 'content_provenance.dart';
 
@@ -100,7 +101,9 @@ class ContentLibraryRepository implements LibraryRepository {
           status: aggregateStatus([for (final c in claims) c.status]),
           isTestData: r.read<int>('is_test_data') == 1,
           lastReviewed: _date(r.data['last_reviewed_at']),
-          group: r.readNullable<String>('substance_group'),
+          group:
+              ContentCorrections.substanceGroupOverrides[id] ??
+              r.readNullable<String>('substance_group'),
           details: EntryDetails(
             entityKind: r.read<String>('entity_kind'),
             packVersion: packVersion,

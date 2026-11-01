@@ -156,7 +156,9 @@ final lessonLocksProvider = Provider.autoDispose<Map<String, ProFeature>?>((
 ) {
   final res = ref.watch(lessonListProvider('')).value?.value;
   if (res == null) return null;
-  if (ref.watch(isAdminProvider)) return const <String, ProFeature>{};
+  if (!ref.watch(proEnabledProvider) || ref.watch(isAdminProvider)) {
+    return const <String, ProFeature>{};
+  }
   final ent = ref.watch(entitlementsProvider).value ?? Entitlements.none;
   return computeLessonLocks(res, ent, strict: ref.watch(proStrictProvider));
 });
