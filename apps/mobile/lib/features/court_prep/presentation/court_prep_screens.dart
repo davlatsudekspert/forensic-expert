@@ -513,7 +513,16 @@ class CourtQuestionScreen extends ConsumerWidget {
         ),
         const SizedBox(height: FeSpace.sm),
         const CourtDisclaimer(),
-        if (q.translationFor(lang) == GuidelineTranslationStatus.draft) ...[
+        // Yangi (asli o‘zbekcha) savol: tarjima yo‘q — asl matn va belgi.
+        if (title.isFallback) ...[
+          const SizedBox(height: FeSpace.xs),
+          FeBanner(
+            key: const Key('court.pendingTranslation'),
+            icon: Icons.translate,
+            text: l.trPendingTranslation,
+          ),
+        ] else if (q.translationFor(lang) ==
+            GuidelineTranslationStatus.draft) ...[
           const SizedBox(height: FeSpace.xs),
           FeBanner(
             key: const Key('court.draftTranslation'),

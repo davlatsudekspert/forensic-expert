@@ -279,17 +279,22 @@ void main() {
     expect(_row('court.q.rights_uz'), findsNothing);
   });
 
-  testWidgets('tayyorlanayotgan mavzu: savolsiz, aniq belgi bilan', (
-    tester,
-  ) async {
+  testWidgets('gistologiya mavzusi to‘ldirildi; yangi savol ru’da — '
+      'asl o‘zbekcha matn va «tarjima kutilmoqda»', (tester) async {
     await pumpApp(
       tester,
       settings: completedSettings(lang: 'uz'),
       initialLocation: Routes.courtPrepTopic('court.topic.histology'),
       overrides: _overrides(),
     );
-    expect(_key('court.topicPending'), findsOne);
-    expect(find.text('Tayyorlanmoqda — manbalar tekshirilmoqda'), findsOne);
+    expect(_key('court.topicPending'), findsNothing);
+    await pumpApp(
+      tester,
+      settings: completedSettings(lang: 'ru'),
+      initialLocation: Routes.courtPrepQuestion('court.q.histo_wound_age'),
+      overrides: _overrides(),
+    );
+    expect(_key('court.pendingTranslation'), findsOne);
   });
 
   testWidgets('halollik tamoyillari — bepul foydalanuvchiga ham ochiq', (

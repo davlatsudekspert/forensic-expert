@@ -27,7 +27,7 @@ void main() {
 
   test('mavzular: tayyorlanayotgan mavzu savolsiz, qolganlarida savol bor', () {
     expect(bundle.topics.length, greaterThanOrEqualTo(14));
-    expect(bundle.questions.length, inInclusiveRange(30, 60));
+    expect(bundle.questions.length, inInclusiveRange(30, 140));
     for (final t in bundle.topics) {
       final n = bundle.questions.where((q) => q.topicId == t.id).length;
       expect(n == 0, t.pending, reason: t.id);
@@ -38,7 +38,10 @@ void main() {
   test('karta tuzilmasi: A savol, B qisqa javob, C asos, E/F 2–5 qo‘shimcha '
       'savol, G cheklov, tayyorgarlik; uch til', () {
     for (final q in bundle.questions) {
-      for (final lang in langs) {
+      // Yangi kontent avval faqat o‘zbekcha (egasi qarori 2026-10-12):
+      // ru/en — asl matn + «tarjima kutilmoqda».
+      final uzOnly = q.question.pick('ru').isFallback;
+      for (final lang in uzOnly ? const ['uz'] : langs) {
         expect(q.question.pick(lang).isFallback, isFalse, reason: q.id);
         expect(q.tests.pick(lang).isFallback, isFalse, reason: q.id);
         expect(q.shortAnswer.pick(lang).isFallback, isFalse, reason: q.id);

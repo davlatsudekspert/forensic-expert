@@ -298,7 +298,7 @@ class EquipmentDetailScreen extends ConsumerWidget {
                 const SizedBox(height: FeSpace.sm),
                 Center(
                   child: ConstrainedBox(
-                    constraints: const BoxConstraints(maxWidth: 420),
+                    constraints: const BoxConstraints(maxWidth: 560),
                     child: AspectRatio(
                       aspectRatio: 1,
                       child: ClipRRect(
@@ -368,7 +368,7 @@ class EquipmentDetailScreen extends ConsumerWidget {
                 if (item.gallery.isNotEmpty) ...[
                   const SizedBox(height: FeSpace.sm),
                   SizedBox(
-                    height: 230,
+                    height: 340,
                     child: ListView.separated(
                       key: const Key('equipment.gallery'),
                       scrollDirection: Axis.horizontal,
@@ -378,24 +378,29 @@ class EquipmentDetailScreen extends ConsumerWidget {
                       itemBuilder: (context, i) {
                         final g = item.gallery[i];
                         return SizedBox(
-                          width: 180,
+                          width: 290,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(
-                                  FeRadius.md,
-                                ),
-                                child: ColoredBox(
-                                  color: const Color(0xFFF4EFE6),
-                                  child: Image.asset(
-                                    g.image,
-                                    width: 180,
-                                    height: 180,
-                                    fit: BoxFit.cover,
-                                    semanticLabel: g.caption,
-                                    errorBuilder: (_, _, _) =>
-                                        const SizedBox.square(dimension: 180),
+                              GestureDetector(
+                                key: Key('equipment.gallery.$i'),
+                                onTap: () =>
+                                    _openFull(context, g.image, g.caption),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(
+                                    FeRadius.md,
+                                  ),
+                                  child: ColoredBox(
+                                    color: const Color(0xFFF4EFE6),
+                                    child: Image.asset(
+                                      g.image,
+                                      width: 290,
+                                      height: 290,
+                                      fit: BoxFit.cover,
+                                      semanticLabel: g.caption,
+                                      errorBuilder: (_, _, _) =>
+                                          const SizedBox.square(dimension: 290),
+                                    ),
                                   ),
                                 ),
                               ),
@@ -492,4 +497,31 @@ String _dot(String x) => x.endsWith('.') ? x : '$x.';
   final rest = m.group(1)!.trim();
   final title = short[0].toUpperCase() + short.substring(1);
   return (title, rest.isEmpty ? null : rest);
+}
+
+/// Rasmni to‘liq ekranda ochish (kattalashtirish — barmoq bilan).
+void _openFull(BuildContext context, String image, String caption) {
+  Navigator.of(context).push(
+    MaterialPageRoute<void>(
+      fullscreenDialog: true,
+      builder: (context) => Scaffold(
+        backgroundColor: const Color(0xFFF4EFE6),
+        appBar: AppBar(
+          backgroundColor: const Color(0xFFF4EFE6),
+          foregroundColor: const Color(0xFF0B1B2B),
+          title: Text(
+            caption,
+            maxLines: 2,
+            style: const TextStyle(fontSize: 15),
+          ),
+        ),
+        body: Center(
+          child: InteractiveViewer(
+            maxScale: 4,
+            child: Image.asset(image, semanticLabel: caption),
+          ),
+        ),
+      ),
+    ),
+  );
 }
