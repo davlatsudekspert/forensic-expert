@@ -44,7 +44,10 @@ import '../helpers/pump_app.dart';
 import '../helpers/referral_fakes.dart';
 import '../helpers/support_fakes.dart';
 
-const _out = String.fromEnvironment('CATALOG_OUT', defaultValue: '../../docs/qa/screen_catalog_20261017');
+const _out = String.fromEnvironment(
+  'CATALOG_OUT',
+  defaultValue: '../../docs/qa/screen_catalog_20261017',
+);
 
 enum Persona { student, expert, admin, guestOnboarding }
 

@@ -76,10 +76,7 @@ void main() {
       );
     }
     expect(
-      find.text(
-        'Bu bo‘lim uchun manbali ma’lumot hali yo‘q — manba kerak. '
-        'Hech narsa taxmin qilinmaydi.',
-      ),
+      find.text('Bu bo‘lim bo‘yicha ma’lumot tayyorlanmoqda.'),
       findsWidgets,
     );
   });

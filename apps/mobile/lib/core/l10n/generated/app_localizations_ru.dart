@@ -12638,4 +12638,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get equipFindings => 'Что показывает и чего не может';
+
+  @override
+  String get fmTopicsPreparing => 'Темы в подготовке';
 }

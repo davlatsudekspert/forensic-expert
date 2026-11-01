@@ -12594,4 +12594,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get equipFindings => 'What it shows and what it cannot';
+
+  @override
+  String get fmTopicsPreparing => 'Topics in preparation';
 }

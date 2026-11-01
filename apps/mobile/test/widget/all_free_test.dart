@@ -162,9 +162,7 @@ void main() {
       expect(find.byKey(const Key('pro.lock.courtPrep')), findsOneWidget);
       // Xavfsizlik matni qulf sahifasida ham eslatiladi.
       expect(
-        find.text(
-          'Xavfsizlik ma’lumotlari, manbalar va ma’lumotning kelib chiqishi (provenance) doim bepul.',
-        ),
+        find.text('Xavfsizlik ma’lumotlari va manbalar doim bepul.'),
         findsOneWidget,
       );
     });

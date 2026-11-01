@@ -65,8 +65,10 @@ class ResearchTile extends ConsumerWidget {
         key: Key('research.${entry.id}'),
         padding: const EdgeInsets.all(FeSpace.sm),
         onTap: () => context.push(Routes.researchEntry(entry.id)),
+        // stretch: karta har doim to‘liq kenglikda (vizual audit L25 —
+        // qisqa sarlavhali kartalar zinapoya bo‘lib markazlashardi).
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Wrap(
               spacing: FeSpace.xs,

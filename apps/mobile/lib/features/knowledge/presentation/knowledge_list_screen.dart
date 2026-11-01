@@ -161,22 +161,12 @@ class AreaHubScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
     final topics = ref.watch(knowledgeRepositoryProvider).topicsIn(area);
-    final t = Theme.of(context).textTheme;
 
     final isFm = area == KnowledgeArea.forensicMedicine;
     final children = <Widget>[];
     if (isFm) {
       final covered = {for (final e in topics) e.forensicMedicineTopic};
-      final total = ForensicMedicineTopic.values.length;
       children.addAll([
-        Text(
-          l.knowledgeTopicCount(
-            ForensicMedicineTopic.values.where(covered.contains).length,
-            total,
-          ),
-          key: const Key('fm.coverage'),
-          style: t.bodySmall,
-        ),
         FeSectionHeader(l.moduleHubTools),
         const ToolsReviewNote(),
         const SizedBox(height: FeSpace.xs),
@@ -187,16 +177,25 @@ class AreaHubScreen extends ConsumerWidget {
             padding: const EdgeInsets.only(bottom: FeSpace.xs),
             child: ToolTile(tool: tool),
           ),
-        FeSectionHeader(l.knowledgeTaxonomy),
-        for (final topic in ForensicMedicineTopic.values) ...[
+        // Vizual audit L29 (2026-11-01): manbali mavzular avval; hali
+        // to‘ldirilmaganlari «Tayyorlanayotgan mavzular» ostida oxirida
+        // (yashirilmaydi, to‘qilmaydi). «N mavzudan M tasida» hisoblagichi yo‘q.
+        KeyedSubtree(
+          key: const Key('fm.coverage'),
+          child: FeSectionHeader(l.knowledgeTaxonomy),
+        ),
+        for (final topic in ForensicMedicineTopic.values)
           for (final e in topics)
             if (e.forensicMedicineTopic == topic) KnowledgeTile(entry: e),
-          if (!covered.contains(topic))
-            _EmptyTopicRow(
-              key: Key('fm.topic.${topic.name}'),
-              title: l.fmTopicName(topic),
-              body: l.knowledgeNoSourcedContent,
-            ),
+        if (ForensicMedicineTopic.values.any((x) => !covered.contains(x))) ...[
+          FeSectionHeader(l.fmTopicsPreparing),
+          for (final topic in ForensicMedicineTopic.values)
+            if (!covered.contains(topic))
+              _EmptyTopicRow(
+                key: Key('fm.topic.${topic.name}'),
+                title: l.fmTopicName(topic),
+                body: l.knowledgeNoSourcedContent,
+              ),
         ],
       ]);
     } else {

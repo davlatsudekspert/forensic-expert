@@ -21818,6 +21818,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'What it shows and what it cannot'**
   String get equipFindings;
+
+  /// Forensic medicine hub: header above topics that have no sourced entries yet.
+  ///
+  /// In en, this message translates to:
+  /// **'Topics in preparation'**
+  String get fmTopicsPreparing;
 }
 
 class _AppLocalizationsDelegate

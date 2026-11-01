@@ -562,7 +562,11 @@ class InstrumentCard extends ConsumerWidget {
       if (authority != null) (l.instrAuthority, authority),
       if (i.publicationDate != null)
         (l.instrPublished, date(i.publicationDate!)),
-      (l.instrEffectiveFrom, date(i.effectiveFrom)),
+      // Kuchga kirgan sana manbada yo‘q bo‘lsa, `effective_from` faqat
+      // tekshirilgan tahrir sanasini saqlaydi — uni «Kuchga kirgan» deb
+      // ko‘rsatmaymiz (vizual audit J2, 2026-11-01).
+      if (i.effectiveFrom != i.lastVerifiedAt)
+        (l.instrEffectiveFrom, date(i.effectiveFrom)),
       if (i.effectiveTo != null) (l.instrEffectiveTo, date(i.effectiveTo!)),
       if (i.lastAmendedAt != null) (l.instrAmended, date(i.lastAmendedAt!)),
       (l.instrVersion, i.version),

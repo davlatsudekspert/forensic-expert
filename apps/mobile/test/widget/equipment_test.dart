@@ -22,11 +22,11 @@ const _fixture = {
       'name': 'Gaz xromatografiya – mass-spektrometriya (GC-MS)',
       'what': 'Moddalarni ajratib, mass-spektri bo‘yicha aniqlaydi.',
       'use': ['Biologik namunada moddani aniqlash'],
-      'care': [],
+      'care': <String>[],
       'links': {
         'methods': ['method-gcms'],
-        'guides': [],
-        'lessons': [],
+        'guides': <String>[],
+        'lessons': <String>[],
       },
       'sources': [
         {'author': 'Muallif A.', 'title': 'Kitob', 'page': '12-b.'},
@@ -47,7 +47,7 @@ const _fixture = {
       'group': 'lab',
       'name': 'Sentrifuga',
       'what': 'Manbasiz matn.',
-      'sources': [],
+      'sources': <Map<String, String>>[],
     },
   ],
 };

@@ -5,5 +5,5 @@
 
 /// Ilovaga o‘rnatilgan pilot paketni tekshiruvchi ochiq kalitlar.
 const bundledPackTrustedKeys = <String, String>{
-  'development-e049cf8053bf': 'p/3eBTh9JP1If7At5qrFIEYyTwzWt811NY3A2wEPiOI=',
+  'development-4eba8187985d': 'bWrLoKmqwWmhmNE1MPVVQwh1edPYR0+tkcB+eU28hKg=',
 };
