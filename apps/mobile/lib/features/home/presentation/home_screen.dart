@@ -295,6 +295,12 @@ class HomeScreen extends ConsumerWidget {
                       padding: const EdgeInsets.only(bottom: FeSpace.xs),
                     ),
                     const _CoreDisciplinesCard(),
+                    // «Barcha fanlar» (gistologiya, kriminalistika …) —
+                    // bo‘limlar to‘ri Kutubxonada bo‘lgani uchun shu yerda.
+                    if (lean) ...[
+                      const SizedBox(height: FeSpace.sm),
+                      const _AllDisciplinesCard(),
+                    ],
                     const SizedBox(height: FeSpace.lg),
                   ],
                   if (mode == UserMode.professional) ...[
