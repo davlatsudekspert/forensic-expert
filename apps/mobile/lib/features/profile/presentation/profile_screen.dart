@@ -271,10 +271,12 @@ class ProfileScreen extends ConsumerWidget {
                       ],
                     ),
                   ],
-                  // «Talaba kartam»: ixtiyoriy, har qanday kirgan hisob uchun
-                  // (karta xizmati ulangan bo‘lsa). DEFAULT hech kimga ko‘rinmaydi.
+                  // «Talaba kartam»: ixtiyoriy, kirgan hisob uchun (karta xizmati
+                  // ulangan bo‘lsa). Ustoz rolida ko‘rsatilmaydi — ustozda
+                  // «Ustoz kartam» bor (egasi so‘rovi, 2026-11-02).
                   if (signedIn &&
-                      ref.watch(studentCardServiceProvider).isConfigured) ...[
+                      ref.watch(studentCardServiceProvider).isConfigured &&
+                      !(ref.watch(classIsTeacherProvider).value ?? false)) ...[
                     FeSectionHeader(l.scdTitle),
                     _Group(
                       children: [

@@ -8,6 +8,7 @@ import 'package:go_router/go_router.dart';
 import '../../../app/class_quiz.dart';
 import '../../../app/lessons.dart';
 import '../../../app/plan.dart';
+import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
@@ -97,6 +98,18 @@ class LessonFailureView extends StatelessWidget {
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
     final forbidden = failure == ClassFailure.forbidden;
+    // Kirmagan foydalanuvchi: «Qayta urinish» emas, to‘g‘ridan-to‘g‘ri
+    // «Hisobga kirish» (egasi fikri, 2026-11-02).
+    if (failure == ClassFailure.notSignedIn) {
+      return FeEmptyState(
+        key: const Key('lessons.signIn'),
+        icon: Icons.login_rounded,
+        body: classFailureText(l, ClassFailure.notSignedIn),
+        actionLabel: l.classSignInAction,
+        actionIcon: Icons.login_rounded,
+        onAction: () => context.push(Routes.accountSignIn),
+      );
+    }
     return FeEmptyState(
       key: Key(forbidden ? 'lessons.forbidden' : 'lessons.error'),
       icon: forbidden

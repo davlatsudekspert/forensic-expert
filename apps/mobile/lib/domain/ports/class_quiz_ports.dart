@@ -82,6 +82,13 @@ abstract interface class ClassQuizService {
     required String participantId,
     required String reason,
   });
+
+  /// «O‘zim yechib ko‘rish»: mavzudan tasodifiy savollar (xom yozuvlar —
+  /// `ClassBankQuestion.tryParse` bilan o‘qiladi). Faqat kirgan foydalanuvchi.
+  Future<ClassResult<List<Map<String, Object?>>>> practiceQuestions(
+    String topicId, {
+    int count = 10,
+  });
 }
 
 /// Backend yo‘q — hech narsa soxtalashtirilmaydi.
@@ -166,5 +173,11 @@ class UnconfiguredClassQuizService implements ClassQuizService {
     required String sessionId,
     required String participantId,
     required String reason,
+  }) async => const ClassResult.fail(_f);
+
+  @override
+  Future<ClassResult<List<Map<String, Object?>>>> practiceQuestions(
+    String topicId, {
+    int count = 10,
   }) async => const ClassResult.fail(_f);
 }

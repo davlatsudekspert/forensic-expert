@@ -260,4 +260,19 @@ class SupabaseClassQuizService implements ClassQuizService {
       'p_reason': reason,
     }),
   );
+
+  @override
+  Future<ClassResult<List<Map<String, Object?>>>> practiceQuestions(
+    String topicId, {
+    int count = 10,
+  }) async => _map(
+    await _rpc('class_practice_questions', {
+      'p_topic': topicId,
+      'p_count': count,
+    }),
+    (m) => [
+      for (final q in (m['items'] as List? ?? const []))
+        if (q is Map) q.cast<String, Object?>(),
+    ],
+  );
 }

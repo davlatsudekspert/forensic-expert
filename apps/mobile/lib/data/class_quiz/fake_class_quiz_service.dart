@@ -1230,4 +1230,11 @@ class FakeClassQuizService implements ClassQuizService {
     required String participantId,
     required String reason,
   }) async => backend.report(userId, sessionId, participantId, reason);
+
+  /// Demo: mashq savollari ilova ichidagi bankdan olinadi (server yo‘q).
+  @override
+  Future<ClassResult<List<Map<String, Object?>>>> practiceQuestions(
+    String topicId, {
+    int count = 10,
+  }) async => const ClassResult.fail(ClassFailure.notEnoughQuestions);
 }

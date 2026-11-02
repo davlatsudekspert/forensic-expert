@@ -17,6 +17,7 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../core/widgets/score_grade.dart';
 import '../../../domain/class_groups/class_groups_models.dart';
 import '../../../domain/class_groups/variant_draw.dart';
+import '../../../domain/class_quiz/class_quiz_models.dart' show ClassFailure;
 import '../../../domain/plan/plan_models.dart' show ProFeature;
 import '../../anti_cheat/presentation/anti_cheat_widgets.dart';
 import '../../pro/presentation/pro_gate.dart' show ProFeatureLock;
@@ -125,6 +126,75 @@ class _GroupTestState extends ConsumerState<GroupTestScreen> {
     super.dispose();
   }
 
+  bool _needsSignIn = false;
+
+  Future<void> _loadServerPractice(
+    String topicId,
+    String lang,
+    DateTime now,
+  ) async {
+    final base = ClassQuizBank.baseId(topicId);
+    final r = await ref
+        .read(classQuizServiceProvider)
+        .practiceQuestions(ClassQuizBank.variantId(base, lang));
+    if (!mounted) return;
+    final raw = r.value;
+    if (raw == null) {
+      setState(() {
+        _needsSignIn = r.failure == ClassFailure.notSignedIn;
+        _failure = _needsSignIn
+            ? GroupFailure.notSignedIn
+            : r.failure == ClassFailure.offline
+            ? GroupFailure.offline
+            : GroupFailure.notEnoughQuestions;
+      });
+      return;
+    }
+    final qs = <String, ClassBankQuestion>{};
+    var title = '';
+    for (final (i, m) in raw.indexed) {
+      final q = ClassBankQuestion.tryParse(m);
+      if (q == null) continue;
+      qs[q.id.isEmpty ? 'q$i' : q.id] = q;
+      if (title.isEmpty && m['topic_title'] is String) {
+        title = m['topic_title']! as String;
+      }
+    }
+    if (qs.isEmpty) {
+      setState(() => _failure = GroupFailure.notEnoughQuestions);
+      return;
+    }
+    final attempt = GroupAttempt(
+      assignment: GroupAssignment(
+        id: base,
+        groupId: '',
+        topicId: base,
+        topicTitle: title.isEmpty ? base : title,
+        questionCount: qs.length,
+        variantMode: false,
+        reveal: RevealPolicy.afterClose,
+        closed: false,
+        revealed: false,
+      ),
+      finished: false,
+      questions: [
+        for (final e in qs.entries)
+          GroupQuestion(
+            id: e.key,
+            text: e.value.question,
+            options: e.value.options,
+          ),
+      ],
+      answers: const {},
+      serverNow: now.toUtc(),
+    );
+    setState(() {
+      _previewKey = {for (final e in qs.entries) e.key: e.value.correctIndex};
+      _attempt = attempt;
+      _clock = GroupClock.of(attempt, now);
+    });
+  }
+
   Future<void> _load() async {
     final svc = ref.read(classGroupsServiceProvider);
     final now = ref.read(groupNowProvider)();
@@ -140,7 +210,9 @@ class _GroupTestState extends ConsumerState<GroupTestScreen> {
               .firstOrNull ??
           bank.variants.where((v) => v.id == base).firstOrNull;
       if (topic == null || topic.questions.isEmpty) {
-        setState(() => _failure = GroupFailure.notEnoughQuestions);
+        // Dars savollari faqat serverda (egasi qarori «A», 2026-11-02):
+        // kirgan foydalanuvchiga tasodifiy 10 ta savol olinadi.
+        await _loadServerPractice(practice, lang, now);
         return;
       }
       final ids = drawVariant(
@@ -379,13 +451,31 @@ class _GroupTestState extends ConsumerState<GroupTestScreen> {
               ? const CircularProgressIndicator()
               : Padding(
                   padding: const EdgeInsets.all(FeSpace.lg),
-                  child: FeEmptyState(
-                    key: const Key('grp.testError'),
-                    icon: Icons.lock_clock_outlined,
-                    body: groupFailureText(l, f),
-                    actionLabel: l.grpBackToGroup,
-                    onAction: () => context.go(Routes.group(widget.groupId)),
-                  ),
+                  child: _needsSignIn
+                      ? FeEmptyState(
+                          key: const Key('grp.practiceSignIn'),
+                          icon: Icons.login_rounded,
+                          body: l.classErrNotSignedIn,
+                          actionLabel: l.classSignInAction,
+                          actionIcon: Icons.login_rounded,
+                          onAction: () => context.push(Routes.accountSignIn),
+                        )
+                      : FeEmptyState(
+                          key: const Key('grp.testError'),
+                          icon: Icons.lock_clock_outlined,
+                          body: groupFailureText(l, f),
+                          actionLabel: widget.practiceTopicId != null
+                              ? l.lessonsRetry
+                              : l.grpBackToGroup,
+                          onAction: () {
+                            if (widget.practiceTopicId == null) {
+                              context.go(Routes.group(widget.groupId));
+                              return;
+                            }
+                            setState(() => _failure = null);
+                            unawaited(_load());
+                          },
+                        ),
                 ),
         ),
       );

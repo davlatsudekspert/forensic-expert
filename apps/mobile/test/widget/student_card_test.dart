@@ -134,7 +134,7 @@ void main() {
   tearDown(() => debugDefaultTargetPlatformOverride = null);
 
   testWidgets(
-    'Profil: «Talaba kartam» har qanday kirgan hisobda; kirmaganda yo‘q',
+    'Profil: «Talaba kartam» kirgan talabada; ustozda va kirmaganda yo‘q',
     (tester) async {
       final s = _World();
       await s.open(tester, 's1', location: Routes.profile);
@@ -153,14 +153,14 @@ void main() {
       final s2 = _World();
       await s2.open(tester, 'teacher', location: Routes.profile);
       await tester.scrollUntilVisible(
-        find.byKey(const Key('profile.studentCard')),
+        find.byKey(const Key('profile.language')),
         200,
         scrollable: find.byType(Scrollable).first,
       );
       expect(
         find.byKey(const Key('profile.studentCard')),
-        findsOneWidget,
-        reason: 'ustoz ham o‘z talaba kartasini to‘ldira oladi',
+        findsNothing,
+        reason: 'ustoz profilida faqat «Ustoz kartam» (egasi so‘rovi)',
       );
       await closeApp(tester);
     },
