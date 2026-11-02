@@ -280,8 +280,8 @@ class CatalogStarButton extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: FeSpace.sm),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(999),
-            color: on ? gold.withValues(alpha: 0.15) : null,
-            border: Border.all(color: on ? gold : gold.withValues(alpha: 0.45)),
+            color: gold.withValues(alpha: on ? 0.15 : 0.08),
+            border: Border.all(color: on ? gold : gold.withValues(alpha: 0.8)),
           ),
           child: child,
         ),

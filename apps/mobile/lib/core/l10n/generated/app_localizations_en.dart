@@ -13217,4 +13217,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get oralExamNoName => 'No name';
+
+  @override
+  String get equipSchemeNote =>
+      'Schematic (original drawing), not a photo of a specific instrument. Numbers match the steps; gold dots are the analyte, grey dots are matrix interferences.';
+
+  @override
+  String get methodDeviceCard =>
+      'Equipment, precautions and the situation in Uzbekistan';
 }

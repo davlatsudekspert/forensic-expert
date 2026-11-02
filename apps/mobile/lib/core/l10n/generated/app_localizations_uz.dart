@@ -13148,4 +13148,12 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get oralExamNoName => 'Ismsiz';
+
+  @override
+  String get equipSchemeNote =>
+      'Sxema (original chizma) — muayyan apparatning surati emas. Raqamlar bosqichlarga mos; oltin nuqtalar — aniqlanadigan modda, kulrang nuqtalar — matritsa halaqitlari.';
+
+  @override
+  String get methodDeviceCard =>
+      'Qurilma, ehtiyot choralari va O‘zbekistondagi holat';
 }

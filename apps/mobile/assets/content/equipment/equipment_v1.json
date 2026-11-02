@@ -354,6 +354,110 @@
    ]
   },
   {
+   "id": "spe",
+   "group": "lab",
+   "name": "Qattiq fazali ekstraksiya (SPE) qurilmasi",
+   "what": "Qattiq fazali ekstraksiya (SPE) — namunani tahlilga tayyorlash usuli: u yordamida modda tozalanadi, konsentrlanadi, fraksiyalarga ajratiladi yoki erituvchisi almashtiriladi. Modda suyuq namuna bilan qattiq sorbent o‘rtasida taqsimlanadi. Sorbent odatda kartrij, disk, pipetka uchligi yoki 96 o‘rinli plansetda bo‘ladi; suyuqlik sorbent orqali vakuum, musbat bosim yoki sentrifugalash yordamida o‘tkaziladi. Avtomatlashtirilgan tizimlar namunani oflayn va onlayn qayta ishlash imkonini beradi.",
+   "use": [
+    "Sud-toksikologik tahlilda qon, peshob va boshqa biologik namunalardan dorivor va giyohvandlik vositalarini ajratib olish hamda ularni keyingi instrumental tahlilga (GC/MS, LC-MS/MS) tayyorlash. Masalan, peshobdagi giyohvand moddalarni GC/MS bilan tasdiqlash uchun modda avval peshob matritsasidan ajratib olinadi, ko‘p hollarda keyin derivatizatsiya qilinadi. An’anaviy suyuqlik–suyuqlik ekstraksiyasi o‘rniga qattiq faza kartrijlari tobora ko‘p qo‘llanmoqda: 1991-yilgi so‘rovda NIDA laboratoriyalarida ekstraksiya protseduralarining 40–50 foizi kartrijlar bilan bajarilgan.",
+    "Misol: tetragidrokannabinol (THC) ni to‘liq qondan SPE va LC-MS/MS bilan miqdoriy aniqlash usuli ishlab chiqilgan va uning o‘lchov noaniqligi baholangan (Klu va b., 2021).",
+    "Sorbent turlari: teskari fazali, normal fazali, ion almashinuvchi, cheklangan kirishli (restricted-access) va immunoaffin sorbentlar, molekulyar izlangan polimerlar hamda ularning birikmalari. Bitta kartrijda kislotali, asosli va neytral dorilarni ajratadigan uch komponentli kolonkalar ham ishlab chiqarilgan.",
+    "Afzalliklari: operator vaqti va erituvchi hajmi kamayadi, ekstraksiya samaradorligi oshadi; qutbli, vodorod bog‘lanishli va ion almashinuvchi sorbentlar toza ekstrakt beradi.",
+    "Zamonaviy mikroekstraksiya usullari — qattiq fazali mikroekstraksiya (SPME), to‘ldirilgan sorbentli mikroekstraksiya (MEPS), aralashtirgichli sorbsion ekstraksiya (SBSE), bir tomchi yoki ichi bo‘sh tola asosidagi suyuq fazali mikroekstraksiya va dispersiv suyuqlik–suyuqlik mikroekstraksiyasi (DLLME): ular halaqitlarni ketkazish, matritsa ta’sirini kamaytirish va moddani konsentrlash uchun qo‘llanadi, odatda tezroq va ekologik jihatdan qulayroq deb ta’riflanadi (qon, to‘qima va soch tahlilida)."
+   ],
+   "care": [
+    "Kondisionlash va namuna yuklash orasida sorbent qatlami qurib qolmasligi kerak.",
+    "Namuna sorbent orqali sekin, tomchilab o‘tkaziladi: oqim juda tez bo‘lsa, modda sorbentda ushlanmay o‘tib ketadi (breakthrough) va ajratib olish darajasi pasayadi. Odatdagi oqim tezligi taxminan 1 mL/min; ion almashinuv va vodorod bog‘lanish kabi nuqtama-nuqta ta’sirlarda sekinroq bo‘lishi kerak.",
+    "Kartrij o‘lchami namuna hajmi va modda miqdoriga moslab tanlanadi; sig‘imdan oshganda modda sorbentda ushlanmay o‘tib ketadi.",
+    "Sorbent tanlanayotganda modda tuzilishi, logD va pKa e’tiborga olinadi; «hamma uchun bir xil» umumiy protokolga tayanish tavsiya etilmaydi.",
+    "Yuvish eritmasi juda kuchsiz bo‘lsa, ekstrakt iflos qoladi; juda kuchli bo‘lsa, modda yuvilib ketadi — eritma kuchi (pH, ion kuchi) bosqichma-bosqich sinab tanlanadi. Elyuentning ham eng kuchsiz yetarli kuchi sinab topiladi.",
+    "Barcha bosqichlar har doim ham kerak emas; aniq protsedura har bir modda va matritsa uchun tahlilga qadar laboratoriyada ishlab chiqiladi."
+   ],
+   "links": {
+    "methods": [
+     "method-spe",
+     "method-lle",
+     "method-lcmsms",
+     "method-gcms",
+     "method-derivatization"
+    ],
+    "guides": [
+     "guideline.chem.tlc_screening"
+    ],
+    "lessons": [
+     "toks-16-toks-ekstraksiya"
+    ]
+   },
+   "national": "O‘zbekistonda: Respublika sud-tibbiy ekspertiza ilmiy-amaliy markazining Sud-kimyo bo‘limiga qattiq fazali ekstraksiya (SPE) usulini qo‘llash uchun zamonaviy qurilma olib kelingani markaz e’lonida qayd etilgan: qurilma qon, peshob va boshqa biologik namunalardan giyohvandlik vositalari, psixotrop va kuchli ta’sir etuvchi moddalarni ajratib olish hamda namunalarni keyingi instrumental tahlilga tayyorlashda qo‘llanadi (markaz e’loni, ijtimoiy tarmoqlar).",
+   "steps": [
+    "Kondisionlash: kartrijlar (yoki planshet) vakuum manifoldiga, ostiga chiqindi idishi bilan joylanadi (muqobil: musbat bosim yoki sentrifugalash). Sorbent kuchli erituvchi bilan (teskari fazada odatda metanol) faollashtiriladi: qatlam ho‘llanadi va joylashadi, 1–2 kartrij hajmi ishlatiladi. Qatlam qurib qolmasligi kerak.",
+    "Muvozanatlash: sorbent suv yoki bufer (kuchsiz erituvchi) bilan namuna muhitiga moslanadi; ion almashinuvchi sorbentda pH sorbent pKa siga nisbatan tanlanadi.",
+    "Namunani yuklash: yuklashdan oldin namuna tayyorlanadi — kerak bo‘lsa suyultiriladi, pH yoki erituvchi tarkibi moslanadi; zarralar bo‘lsa, filtrlanadi yoki sentrifugalanadi (qattiq namuna avval eritiladi yoki ekstraksiya qilinadi). So‘ng namuna sekin, tomchilab o‘tkaziladi; vakuum eng past darajadan boshlanib, kerak bo‘lsa asta oshiriladi. Modda sorbentda ushlanadi, matritsaning ko‘p qismi o‘tib ketadi.",
+    "Yuvish: kuchsiz erituvchi bilan sust bog‘langan matritsa halaqitlari chiqarib tashlanadi, modda sorbentda qoladi. Qoldiq yuvish eritmasi chiqib ketishi uchun yana 30–60 soniya vakuum qo‘llanadi.",
+    "Elyuatsiya: vakuum pasaytirilib, chiqindi suyuqlik to‘kiladi va ostiga toza yig‘uvchi idish qo‘yiladi; zarur bo‘lsa sorbent inert gaz (azot) yoki vakuum bilan quritiladi (odatda 1–10 daqiqa; uchuvchan moddalarda ehtiyotkorlik bilan). Kuchli erituvchi yoki bufer bilan modda sorbentdan ajratib olinadi, qattiq bog‘langan halaqitlar sorbentda qoladi. Elyuent hajmi va oqim tezligi aniq nazorat qilinadi, eluat toza idishga tushadi.",
+    "Ekstraktni tahlilga tayyorlash: eluat tahlil idishiga o‘tkaziladi; konsentrlash kerak bo‘lsa, bug‘latilib boshqa erituvchida qayta eritiladi. GC/MS uchun ko‘p hollarda derivatizatsiya qilinadi; keyin ekstrakt asbobga (xromatogrammaga) yuboriladi."
+   ],
+   "sources": [
+    {
+     "author": "Restek Corporation",
+     "title": "Resprep SPE Products: umumiy SPE protsedurasi (texnik qo‘llanma), 2025. https://discover.restek.com/wp-content/uploads/800-00-001.pdf",
+     "page": "Extraction Steps (1–8-bosqichlar); Sample Pretreatment; Table I–II; Preventing Breakthrough"
+    },
+    {
+     "author": "Taylor T.",
+     "title": "Eight Steps to Better Results from Solid-Phase Extraction. LCGC International, 2015-yil 7-iyul. https://chromatographyonline.com/view/eight-steps-better-results-solid-phase-extraction-0",
+     "page": "sorbent tanlash; kondisionlash va muvozanatlash; yuvish va elyuatsiya kuchi; oqim tezligi; quritish"
+    },
+    {
+     "author": "Walker V., Mills G.A.",
+     "title": "Solid-phase extraction in clinical biochemistry. Ann Clin Biochem 2002;39:464–477",
+     "page": "Abstract",
+     "doi": "10.1258/000456302320314476",
+     "pmid": "12227852"
+    },
+    {
+     "author": "Platoff G.E., Gere J.A.",
+     "title": "Solid phase extraction of abused drugs. Forensic Sci Rev 1991;3(2):117–133",
+     "page": "Abstract",
+     "pmid": "26267161"
+    },
+    {
+     "author": "Scheurer J., Moore C.M.",
+     "title": "Solid-phase extraction of drugs from biological tissues — a review. J Anal Toxicol 1992;16:264–269",
+     "page": "Abstract",
+     "doi": "10.1093/jat/16.4.264",
+     "pmid": "1501481"
+    },
+    {
+     "author": "Klu J.K., Officer J.A., Park A., Mudie R., NicDaeid N.",
+     "title": "Measurement uncertainty in quantifying delta-9-tetrahydrocannabinol (THC) in blood using SPE and LC/MS/MS. Forensic Sci Int 2021;322:110744",
+     "page": "Abstract",
+     "doi": "10.1016/j.forsciint.2021.110744",
+     "pmid": "33721827"
+    },
+    {
+     "author": "He Y., Concheiro-Guisan M.",
+     "title": "Microextraction sample preparation techniques in forensic analytical toxicology. Biomed Chromatogr 2019;33:e4444",
+     "page": "Abstract",
+     "doi": "10.1002/bmc.4444",
+     "pmid": "30468511"
+    },
+    {
+     "author": "Samanidou V., Kovatsi L., Fragou D., Rentifis K.",
+     "title": "Novel strategies for sample preparation in forensic toxicology. Bioanalysis 2011;3:2019–2046",
+     "page": "Abstract",
+     "doi": "10.4155/bio.11.168",
+     "pmid": "21899509"
+    },
+    {
+     "author": "Respublika sud-tibbiy ekspertiza ilmiy-amaliy markazi (RSTEIAM) axborot xizmati",
+     "title": "«Sud-kimyo ekspertizasida yangi texnologik qadam» (markazning ijtimoiy tarmoqlardagi e’loni)",
+     "page": "e’lon matni (egasi tomonidan taqdim etilgan, sana ko‘rsatilmagan)"
+    }
+   ],
+   "image_note": "scheme"
+  },
+  {
    "id": "microscope",
    "group": "lab",
    "name": "Yorug‘lik mikroskopi (sud-gistologiya)",

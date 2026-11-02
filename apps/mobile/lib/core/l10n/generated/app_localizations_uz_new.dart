@@ -12415,4 +12415,10 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
 
   @override
   String get oralExamNoName => toUzNewAlphabet(super.oralExamNoName);
+
+  @override
+  String get equipSchemeNote => toUzNewAlphabet(super.equipSchemeNote);
+
+  @override
+  String get methodDeviceCard => toUzNewAlphabet(super.methodDeviceCard);
 }

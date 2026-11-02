@@ -321,7 +321,11 @@ class EquipmentDetailScreen extends ConsumerWidget {
                   ),
                 ),
                 const SizedBox(height: FeSpace.xs),
-                _IllustrationNote(text: l.equipIllustrationNote),
+                _IllustrationNote(
+                  text: item.schematic
+                      ? l.equipSchemeNote
+                      : l.equipIllustrationNote,
+                ),
                 if (lang != 'uz') ...[
                   const SizedBox(height: FeSpace.sm),
                   FeBanner(

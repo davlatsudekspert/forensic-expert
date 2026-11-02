@@ -22898,6 +22898,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No name'**
   String get oralExamNoName;
+
+  /// Note under a schematic (original drawing) in an equipment card.
+  ///
+  /// In en, this message translates to:
+  /// **'Schematic (original drawing), not a photo of a specific instrument. Numbers match the steps; gold dots are the analyte, grey dots are matrix interferences.'**
+  String get equipSchemeNote;
+
+  /// Link on a method page to the full equipment card.
+  ///
+  /// In en, this message translates to:
+  /// **'Equipment, precautions and the situation in Uzbekistan'**
+  String get methodDeviceCard;
 }
 
 class _AppLocalizationsDelegate

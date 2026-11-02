@@ -1,11 +1,14 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/equipment.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
+import '../../../core/l10n/fe_localizations_delegate.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/fe_components.dart';
 
@@ -26,6 +29,7 @@ abstract final class EquipmentDiagrams {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [_GcmsReadingCard(), WorkedExampleCard('gcms_drugs_qp2020')],
     ),
+    'method-spe' => const SpeMethodCard(),
     _ => null,
   };
 
@@ -372,4 +376,123 @@ class WorkedExampleCard extends StatelessWidget {
       ],
     );
   }
+}
+
+/// «Qattiq fazali ekstraksiya (SPE)» usul sahifasi: bosqichlar sxemasi,
+/// tartibli qadamlar va manbalar — «Asbob-uskunalar» kartochkasidagi (`spe`)
+/// manbali matndan; to‘liq kartochka (qurilma, ehtiyot choralari, O‘zbekiston)
+/// havola orqali ochiladi.
+class SpeMethodCard extends ConsumerWidget {
+  const SpeMethodCard({super.key});
+
+  static String _u(String s) => uzDisplay('uz', s);
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final item = ref.watch(equipmentProvider).value?.byId('spe');
+    if (item == null) return const SizedBox.shrink();
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final pending = Localizations.localeOf(context).languageCode != 'uz';
+    return Column(
+      key: const Key('method.spe'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        FeSectionHeader(l.equipSteps),
+        if (pending)
+          Padding(
+            padding: const EdgeInsets.only(bottom: FeSpace.xs),
+            child: FeBanner(
+              key: const Key('method.spe.translationPending'),
+              icon: Icons.translate,
+              text: l.trPendingTranslation,
+            ),
+          ),
+        Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 520),
+            child: AspectRatio(
+              aspectRatio: 1,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(FeRadius.lg),
+                child: ColoredBox(
+                  color: const Color(0xFFF7F1E8),
+                  child: Image.asset(
+                    item.image,
+                    fit: BoxFit.cover,
+                    semanticLabel: _u(item.name),
+                    errorBuilder: (_, _, _) => const Center(
+                      child: Icon(Icons.image_not_supported_outlined),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+        const SizedBox(height: FeSpace.xs),
+        Text(
+          l.equipSchemeNote,
+          key: const Key('method.spe.note'),
+          style: t.bodySmall?.copyWith(color: c.textSecondary),
+        ),
+        const SizedBox(height: FeSpace.sm),
+        for (final (i, x) in item.steps.map(_u).indexed)
+          Padding(
+            padding: const EdgeInsets.only(bottom: FeSpace.sm),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  width: 26,
+                  height: 26,
+                  alignment: Alignment.center,
+                  margin: const EdgeInsets.only(right: FeSpace.sm),
+                  decoration: BoxDecoration(
+                    color: c.accentContainer,
+                    shape: BoxShape.circle,
+                    border: Border.all(color: c.accentBorder),
+                  ),
+                  child: Text(
+                    '${i + 1}',
+                    style: t.labelMedium?.copyWith(
+                      color: c.onAccentContainer,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+                Expanded(child: Text(x, style: t.bodyMedium)),
+              ],
+            ),
+          ),
+        FeCard(
+          key: const Key('method.spe.device'),
+          padding: const EdgeInsets.all(FeSpace.sm),
+          onTap: () => context.push(Routes.equipmentItem(item.id)),
+          child: Row(
+            children: [
+              Icon(Icons.biotech_outlined, color: c.accent),
+              const SizedBox(width: FeSpace.sm),
+              Expanded(child: Text(l.methodDeviceCard, style: t.titleSmall)),
+              Icon(Icons.chevron_right, color: c.textSecondary),
+            ],
+          ),
+        ),
+        FeSectionHeader(l.equipSources),
+        for (final s in item.sources)
+          Padding(
+            padding: const EdgeInsets.only(bottom: FeSpace.xs),
+            child: Text(
+              '${_dot(s.author)} ${_dot(s.title)} ${s.page}'
+              '${s.doi.isEmpty ? '' : ' · DOI ${s.doi}'}',
+              key: const Key('method.spe.source'),
+              style: t.bodySmall?.copyWith(color: c.textSecondary),
+            ),
+          ),
+      ],
+    );
+  }
+
+  static String _dot(String x) => x.endsWith('.') ? x : '$x.';
 }

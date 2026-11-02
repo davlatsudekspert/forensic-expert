@@ -46,6 +46,7 @@ class EquipmentItem {
     this.steps = const [],
     this.findings = const [],
     this.gallery = const [],
+    this.schematic = false,
   });
 
   static EquipmentItem? fromJson(Map<String, Object?> j) {
@@ -79,6 +80,7 @@ class EquipmentItem {
       lessons: strs(links['lessons']),
       sources: sources,
       national: (j['national'] as String? ?? '').trim(),
+      schematic: j['image_note'] == 'scheme',
       steps: strs(j['steps']),
       findings: strs(j['findings']),
       gallery: [
@@ -116,6 +118,9 @@ class EquipmentItem {
 
   /// Qo‘shimcha illyustratsiyalar (izoh bilan).
   final List<({String image, String caption})> gallery;
+
+  /// Rasm — AI illyustratsiyasi emas, original sxema (izoh shunga mos).
+  final bool schematic;
 
   /// Illyustratsiya (ilova asseti). Fayl nomi = yozuv id’si.
   String get image => 'assets/images/instruments/$id.webp';

@@ -17338,5 +17338,13 @@
   "oralExamNoName": "No name",
   "@oralExamNoName": {
     "description": "History row without a name."
+  },
+  "equipSchemeNote": "Schematic (original drawing), not a photo of a specific instrument. Numbers match the steps; gold dots are the analyte, grey dots are matrix interferences.",
+  "@equipSchemeNote": {
+    "description": "Note under a schematic (original drawing) in an equipment card."
+  },
+  "methodDeviceCard": "Equipment, precautions and the situation in Uzbekistan",
+  "@methodDeviceCard": {
+    "description": "Link on a method page to the full equipment card."
   }
 }
