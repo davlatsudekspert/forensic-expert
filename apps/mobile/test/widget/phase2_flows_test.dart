@@ -8,8 +8,8 @@ import 'package:forensic_expert/core/design/theme.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
 import 'package:forensic_expert/core/settings/settings_controller.dart';
 import 'package:forensic_expert/features/home/presentation/search_screen.dart';
-import 'package:forensic_expert/features/lessons/presentation/lessons_list_screen.dart';
 import 'package:forensic_expert/features/legal/presentation/jurisdiction_screens.dart';
+import 'package:forensic_expert/features/lessons/presentation/lessons_list_screen.dart';
 import 'package:forensic_expert/features/library/presentation/entry_detail_screen.dart';
 
 import '../helpers/pump_app.dart';

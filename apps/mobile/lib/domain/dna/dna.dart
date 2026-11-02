@@ -104,12 +104,12 @@ class DnaBundle {
   });
 
   factory DnaBundle.fromJson(Map<String, Object?> j) {
-    final sources = <String, DnaSource>{
-      for (final x in _l(j['sources']))
-        if (x is Map)
-          if (DnaSource.fromJson(x.cast<String, Object?>()) case final s?)
-            s.id: s,
-    };
+    final sources = <String, DnaSource>{};
+    for (final x in _l(j['sources'])) {
+      if (x is! Map) continue;
+      final s = DnaSource.fromJson(x.cast<String, Object?>());
+      if (s != null) sources[s.id] = s;
+    }
     DnaSource? src(Object? id) => sources[_s(id)];
     final topics = <DnaTopic>[];
     for (final t in _l(j['topics'])) {

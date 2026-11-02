@@ -6,13 +6,11 @@ import 'package:forensic_expert/app/router.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/app/share.dart';
 import 'package:forensic_expert/app/user_data.dart';
+import 'package:forensic_expert/core/settings/app_settings.dart';
 import 'package:forensic_expert/domain/ports/referral_ports.dart';
 import 'package:forensic_expert/domain/referral/referral_models.dart';
 
 import '../helpers/pilot_content.dart';
-
-import 'package:forensic_expert/core/settings/app_settings.dart';
-
 import '../helpers/pump_app.dart';
 import '../helpers/referral_fakes.dart';
 

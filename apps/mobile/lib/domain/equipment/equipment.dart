@@ -128,9 +128,7 @@ class EquipmentBundle {
     sourceLang: (j['source_lang'] as String?) ?? 'uz',
     items: [
       for (final x in (j['items'] as List? ?? const []))
-        if (x is Map)
-          if (EquipmentItem.fromJson(x.cast<String, Object?>()) case final i?)
-            i,
+        if (x is Map) ?EquipmentItem.fromJson(x.cast<String, Object?>()),
     ],
   );
 

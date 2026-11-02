@@ -6,6 +6,7 @@ import 'package:forensic_expert/app/router.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/app/search_service.dart';
 import 'package:forensic_expert/app/user_data.dart';
+import 'package:forensic_expert/core/settings/app_settings.dart';
 import 'package:forensic_expert/core/settings/settings_controller.dart';
 import 'package:forensic_expert/core/widgets/fe_components.dart';
 import 'package:forensic_expert/data/fixtures/test_fixtures.dart';
@@ -17,9 +18,6 @@ import 'package:forensic_expert/domain/plan/plan_models.dart';
 import 'package:forensic_expert/domain/privacy/telemetry_policy.dart';
 
 import '../helpers/pilot_content.dart';
-
-import 'package:forensic_expert/core/settings/app_settings.dart';
-
 import '../helpers/pump_app.dart';
 
 /// PHASE 6: global multidisiplinar platforma — fanlar, yurisdiksiya qatlami,

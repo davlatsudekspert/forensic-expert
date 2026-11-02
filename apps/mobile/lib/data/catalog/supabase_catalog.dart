@@ -83,8 +83,7 @@ class SupabaseCatalogService implements CatalogService {
     if (v is! List) return const CatalogResult.fail(CatalogFailure.server);
     return CatalogResult.ok([
       for (final e in v)
-        if (e is Map)
-          if (CatalogEntry.tryParse(e.cast<String, Object?>()) case final x?) x,
+        if (e is Map) ?CatalogEntry.tryParse(e.cast<String, Object?>()),
     ]);
   }
 

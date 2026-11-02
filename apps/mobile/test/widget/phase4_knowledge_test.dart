@@ -1,16 +1,14 @@
 import 'package:fe_content_schema/fe_content_schema.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forensic_expert/domain/knowledge/content_corrections.dart';
 import 'package:forensic_expert/app/routes.dart';
+import 'package:forensic_expert/core/settings/app_settings.dart';
 import 'package:forensic_expert/core/widgets/common.dart';
+import 'package:forensic_expert/domain/knowledge/content_corrections.dart';
 import 'package:forensic_expert/domain/knowledge/knowledge_models.dart';
 import 'package:forensic_expert/domain/plan/plan_models.dart';
 
 import '../helpers/pilot_content.dart';
-
-import 'package:forensic_expert/core/settings/app_settings.dart';
-
 import '../helpers/pump_app.dart';
 
 /// PHASE 4 bilim sohalari — HAQIQIY pilot paket bilan.

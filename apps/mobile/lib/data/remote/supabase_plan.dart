@@ -207,8 +207,7 @@ class SupabaseAdminPlanService implements AdminPlanService {
     if (v is! List) return const PlanResult.fail(PlanFailure.server);
     return PlanResult.ok([
       for (final e in v)
-        if (_map(e) case final m?)
-          if (AdminClassTest.tryParse(m) case final t?) t,
+        if (_map(e) case final m?) ?AdminClassTest.tryParse(m),
     ]);
   }
 
@@ -229,8 +228,7 @@ class SupabaseAdminPlanService implements AdminPlanService {
     }
     return PlanResult.ok([
       for (final e in rows)
-        if (_map(e) case final r?)
-          if (AdminClassTestResult.tryParse(r) case final x?) x,
+        if (_map(e) case final r?) ?AdminClassTestResult.tryParse(r),
     ]);
   }
 }

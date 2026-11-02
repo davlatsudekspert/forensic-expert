@@ -50,7 +50,8 @@ void main() {
   test('haqiqiy ro‘yxat namunasi (ixtiyoriy fayl)', () {
     final f = File('/dev/shm/tmp/lesson_list.json');
     if (!f.existsSync()) return;
-    final rows = (jsonDecode(f.readAsStringSync()) as List).cast<Map<String, Object?>>();
+    final rows = (jsonDecode(f.readAsStringSync()) as List)
+        .cast<Map<String, Object?>>();
     final out = StringBuffer();
     for (final r in rows.take(400)) {
       final p = LessonGrouping.titleParts(r['n'] as String);

@@ -8,8 +8,8 @@ import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart' show UserMode;
 import 'package:forensic_expert/data/catalog/fake_catalog_service.dart';
-import 'package:forensic_expert/domain/ports/backend_ports.dart';
 import 'package:forensic_expert/domain/catalog/catalog.dart';
+import 'package:forensic_expert/domain/ports/backend_ports.dart';
 import 'package:forensic_expert/domain/teacher_card/teacher_card.dart';
 
 import '../helpers/class_groups_world.dart' show TestAuth, signedInAs;

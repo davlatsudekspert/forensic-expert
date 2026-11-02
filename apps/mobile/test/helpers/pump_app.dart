@@ -4,7 +4,6 @@ import 'package:flutter_riverpod/misc.dart' show Override;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/app.dart';
 import 'package:forensic_expert/app/lessons.dart' show narrationSourceProvider;
-import 'package:forensic_expert/data/lessons/narration_overlay.dart';
 import 'package:forensic_expert/app/plan.dart';
 import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/router.dart';
@@ -14,6 +13,7 @@ import 'package:forensic_expert/core/settings/settings_controller.dart';
 import 'package:forensic_expert/core/settings/settings_repository.dart';
 import 'package:forensic_expert/data/fixtures/knowledge_fixtures.dart';
 import 'package:forensic_expert/data/fixtures/test_fixtures.dart';
+import 'package:forensic_expert/data/lessons/narration_overlay.dart';
 import 'package:forensic_expert/data/local/content_store.dart';
 import 'package:forensic_expert/domain/plan/plan_models.dart';
 
