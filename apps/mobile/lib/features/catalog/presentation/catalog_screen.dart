@@ -324,7 +324,9 @@ class _EntryCard extends StatelessWidget {
   }
 }
 
-/// To‘liq ko‘rinish: profil boshi uslubida + katta yulduzcha tugmasi.
+/// To‘liq ko‘rinish (premium, sokin): to‘q brend sarlavha nozik oltin
+/// halqalar bilan, katta rasm, ism, ish joyi, toifa, ma’lumot, tarmoqlar va
+/// pastda yulduzcha. Bo‘sh maydonlar ko‘rsatilmaydi (egasi, 2026-11-02).
 class _EntrySheet extends StatefulWidget {
   const _EntrySheet({required this.entry, required this.onStar});
 
@@ -338,39 +340,248 @@ class _EntrySheet extends StatefulWidget {
 class _EntrySheetState extends State<_EntrySheet> {
   late CatalogEntry _e = widget.entry;
 
+  Future<void> _toggle() async {
+    await widget.onStar();
+    if (!mounted) return;
+    setState(
+      () => _e = _e.copyWith(
+        starred: !_e.starred,
+        stars: _e.stars + (_e.starred ? -1 : 1),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    const photo = 116.0;
+    const band = 132.0;
+    final card = _e.toCard();
+    final cat = _e.category;
+    final hasCat = cat != null && cat != TeacherCategory.none;
+    final hasSocials = _e.socials.isNotEmpty;
     return SafeArea(
+      top: false,
       child: SingleChildScrollView(
+        key: const Key('cat.sheet'),
         keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
-        padding: const EdgeInsets.fromLTRB(
-          FeSpace.md,
-          0,
-          FeSpace.md,
-          FeSpace.lg,
-        ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            TeacherCardView(card: _e.toCard()),
-            const SizedBox(height: FeSpace.md),
-            CatalogStarButton(
-              key: const Key('cat.sheetStar'),
-              entry: _e,
-              large: true,
-              onTap: () async {
-                await widget.onStar();
-                if (!mounted) return;
-                setState(
-                  () => _e = _e.copyWith(
-                    starred: !_e.starred,
-                    stars: _e.stars + (_e.starred ? -1 : 1),
+            SizedBox(
+              height: band + photo / 2,
+              child: Stack(
+                clipBehavior: Clip.none,
+                children: [
+                  Positioned(
+                    left: FeSpace.md,
+                    right: FeSpace.md,
+                    top: 0,
+                    height: band,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(FeRadius.card),
+                      child: DecoratedBox(
+                        decoration: const BoxDecoration(
+                          // Har ikki mavzuda bir xil to‘q «muhr» rangi.
+                          gradient: LinearGradient(
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                            colors: [Color(0xFF1C2433), Color(0xFF0E1219)],
+                          ),
+                        ),
+                        child: CustomPaint(
+                          painter: _RingsPainter(c.accent),
+                          child: const SizedBox.expand(),
+                        ),
+                      ),
+                    ),
                   ),
-                );
-              },
+                  Positioned(
+                    left: 0,
+                    right: 0,
+                    top: band - photo / 2,
+                    child: Center(
+                      child: Container(
+                        padding: const EdgeInsets.all(4),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: c.surface,
+                          border: Border.all(
+                            color: c.accent.withValues(alpha: 0.85),
+                            width: 1.5,
+                          ),
+                          boxShadow: const [
+                            BoxShadow(color: Color(0x1F000000), blurRadius: 16),
+                          ],
+                        ),
+                        child: TeacherPhoto(
+                          name: _e.name,
+                          path: _e.photoPath,
+                          size: photo - 11,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(
+                FeSpace.lg,
+                FeSpace.md,
+                FeSpace.lg,
+                FeSpace.lg,
+              ),
+              child: Column(
+                children: [
+                  Text(
+                    (_e.kind == CatalogKind.teacher
+                            ? l.modeTeacher
+                            : l.modeProfessional)
+                        .toUpperCase(),
+                    style: t.labelSmall?.copyWith(
+                      color: c.accent,
+                      letterSpacing: 2.4,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  const SizedBox(height: FeSpace.xs),
+                  Text(
+                    _e.name,
+                    key: const Key('cat.sheetName'),
+                    textAlign: TextAlign.center,
+                    style: t.headlineSmall?.copyWith(height: 1.15),
+                  ),
+                  if (_e.subtitle.isNotEmpty) ...[
+                    const SizedBox(height: FeSpace.xs),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(top: 2),
+                          child: Icon(
+                            Icons.apartment_outlined,
+                            size: 18,
+                            color: c.textSecondary,
+                          ),
+                        ),
+                        const SizedBox(width: FeSpace.xxs),
+                        Flexible(
+                          child: Text(
+                            _e.subtitle,
+                            textAlign: TextAlign.center,
+                            style: t.bodyMedium?.copyWith(
+                              color: c.textSecondary,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                  if (hasCat) ...[
+                    const SizedBox(height: FeSpace.sm),
+                    Container(
+                      key: const Key('cat.sheetCategory'),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: FeSpace.sm,
+                        vertical: FeSpace.xxs,
+                      ),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(999),
+                        border: Border.all(
+                          color: c.accent.withValues(alpha: 0.6),
+                        ),
+                      ),
+                      child: Text(
+                        teacherCategoryName(l, cat),
+                        style: t.labelLarge?.copyWith(color: c.accent),
+                      ),
+                    ),
+                  ],
+                  const SizedBox(height: FeSpace.md),
+                  _HairlineDivider(color: c.accent),
+                  if (_e.bio.isNotEmpty) ...[
+                    const SizedBox(height: FeSpace.md),
+                    Text(
+                      _e.bio,
+                      key: const Key('cat.sheetBio'),
+                      textAlign: TextAlign.center,
+                      style: t.bodyLarge?.copyWith(height: 1.5),
+                    ),
+                  ],
+                  if (hasSocials) ...[
+                    const SizedBox(height: FeSpace.md),
+                    TeacherSocialRow(card: card),
+                  ],
+                  const SizedBox(height: FeSpace.lg),
+                  CatalogStarButton(
+                    key: const Key('cat.sheetStar'),
+                    entry: _e,
+                    large: true,
+                    onTap: _toggle,
+                  ),
+                ],
+              ),
             ),
           ],
         ),
       ),
     );
   }
+}
+
+/// Markazda kichik oltin romb bilan ikki tomonga ingichka chiziq.
+class _HairlineDivider extends StatelessWidget {
+  const _HairlineDivider({required this.color});
+
+  final Color color;
+
+  @override
+  Widget build(BuildContext context) {
+    final line = Expanded(
+      child: Container(height: 1, color: color.withValues(alpha: 0.25)),
+    );
+    return Row(
+      children: [
+        line,
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: FeSpace.sm),
+          child: Transform.rotate(
+            angle: 0.785398,
+            child: Container(
+              width: 6,
+              height: 6,
+              color: color.withValues(alpha: 0.7),
+            ),
+          ),
+        ),
+        line,
+      ],
+    );
+  }
+}
+
+/// Sarlavhadagi nozik konsentrik halqalar (bosh sahifa uslubida).
+class _RingsPainter extends CustomPainter {
+  const _RingsPainter(this.color);
+
+  final Color color;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final p = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1
+      ..color = color.withValues(alpha: 0.18);
+    final center = Offset(size.width * 0.86, size.height * 0.1);
+    for (var r = 36.0; r < size.width; r += 30) {
+      canvas.drawCircle(center, r, p);
+    }
+  }
+
+  @override
+  bool shouldRepaint(_RingsPainter old) => old.color != color;
 }
