@@ -294,3 +294,10 @@ Egasi yuborgan 6-kurs davolash rejasi (7 mavzu, 18+18=36 soat) bo‘yicha: «Dar
 - **Tinglash talaffuzi:** TTS `style` dars tiliga qarab beriladi. O‘zbekcha uchun: «Native Tashkent Uzbek speaker. Pure Uzbek pronunciation…, no English or Russian accent». Haqiqiy ovoz sifatini egasi qurilmada tinglab tasdiqlaydi.
 - Pro (tinglash, test va boshqalar) — keyingi versiyada, hozir hammasi bepul (egasi, 2026-11-02).
 - Kontent kamchiligi (egasiga ma’lum qilindi): Davolash 6-mavzu sarlavhasiga begona pedagogika matni («Kasbiy aks ettirishning psixologik va akmeologik asoslari…») qo‘shilib qolgan. Server ma’lumoti tuzatilmadi, egasi tasdig‘i kerak.
+
+## 2026-11-02 — Ovozli «Tushuntirish» barcha mavzular uchun (build 50)
+- **Uzluksiz tinglash:** «Ovoz tugagach» rejimi — slayd tushuntirishi o‘qib bo‘lingach keyingi slaydga o‘zi o‘tadi; TTS bo‘lmasa 30 soniya.
+- **Tushuntirish matni (egasi: «pptx ni o‘qimasin, aniq tushuntirsin»):** har slayd uchun ravon o‘zbekcha ma’ruza matni, faqat shu slayd faktlari (raqam/yil slaydda bor-yo‘qligi avtomatik tekshirildi, «keyingi slayd» yo‘q). Pilot (Davolash 1-mavzu) egasi ma’qulladi; qolgan 203 ta deck shu uslubda agentlar tomonidan qo‘lda yozildi. AI yordamida tayyorlangan, ilmiy reviewer tasdig‘idan o‘tmagan.
+- **Saqlash joyi:** 26 deck — serverda (`lesson_decks.deck->slides[i].narration`, zaxira `lesson_decks_backup_narration_20261102`). Qolganlari — ilova ichida `assets/content/narration/<deck>.json`; ilova faqat server matni bo‘sh va slayd sarlavhasi aynan mos bo‘lsa qo‘yadi (server slaydi o‘zgarsa eski matn o‘qilmaydi). Sabab: serverga har deck uchun alohida ruxsat kerak edi, ayrim toksikologiya/asfiksiya matnlari yuklashda xavfsizlik filtri tomonidan to‘xtatildi.
+- RU tushuntirish — keyingi bosqich («Avtomatik tarjima — tekshirilmagan» belgisi bilan).
+- Taklif (egasi bilan muhokamada): **og‘zaki imtihon** — har talabaga takrorlanmas 5 savollik bilet, ustoz telefondan 0–20 ball/savol, 100 ballik natija ekranda. Savollar ro‘yxati ustozdan; build 50 dan keyin.
