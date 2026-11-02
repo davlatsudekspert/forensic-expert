@@ -274,6 +274,32 @@ class LabTopicHubScreen extends ConsumerWidget {
               (_groupTitle(l, key), [...topics(k), ...guides(g), ...tools(t)]),
           ]
         : <(String, List<_HubTile>)>[
+            (
+              l.labHubExamples,
+              spectro
+                  ? [
+                      _HubTile(
+                        Icons.science_outlined,
+                        l.weBarbTitle,
+                        l.weBarbBody,
+                        Routes.workedExample('phenobarbital_blood_uv'),
+                      ),
+                      _HubTile(
+                        Icons.science_outlined,
+                        l.weTropicamideTitle,
+                        l.weTropicamideBody,
+                        Routes.workedExample('tropicamide_uv'),
+                      ),
+                    ]
+                  : [
+                      _HubTile(
+                        Icons.science_outlined,
+                        l.weGcmsTitle,
+                        l.weGcmsBody,
+                        Routes.workedExample('gcms_drugs_qp2020'),
+                      ),
+                    ],
+            ),
             (l.labHubPractice, lessons),
             (
               l.equipTitle,

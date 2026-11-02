@@ -13,18 +13,34 @@ import '../../../core/widgets/fe_components.dart';
 /// spektrofotometr — COHb va Hb yutilish cho‘qqilari; GC-MS — natijani
 /// (cho‘qqilarni) o‘qish sahifasiga kirish.
 abstract final class EquipmentDiagrams {
+  /// «Usullar» bo‘limidagi usul sahifasi uchun amaliy misollar.
+  static Widget? forMethod(String id) => switch (id) {
+    'method-uvvis' => const Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        WorkedExampleCard('phenobarbital_blood_uv'),
+        WorkedExampleCard('tropicamide_uv'),
+      ],
+    ),
+    'method-gcms' => const Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [_GcmsReadingCard(), WorkedExampleCard('gcms_drugs_qp2020')],
+    ),
+    _ => null,
+  };
+
   static Widget? forItem(String id) => switch (id) {
     'uv_vis' => const Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         _CohbSpectrumCard(),
-        _WorkedExampleCard('phenobarbital_blood_uv'),
-        _WorkedExampleCard('tropicamide_uv'),
+        WorkedExampleCard('phenobarbital_blood_uv'),
+        WorkedExampleCard('tropicamide_uv'),
       ],
     ),
     'gc_ms' => const Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [_GcmsReadingCard(), _WorkedExampleCard('gcms_drugs_qp2020')],
+      children: [_GcmsReadingCard(), WorkedExampleCard('gcms_drugs_qp2020')],
     ),
     _ => null,
   };
@@ -309,8 +325,8 @@ class _GcmsReadingCard extends StatelessWidget {
 }
 
 /// Amaliy misolga kirish (masalan, tropikamidni miqdoriy aniqlash).
-class _WorkedExampleCard extends StatelessWidget {
-  const _WorkedExampleCard(this.id);
+class WorkedExampleCard extends StatelessWidget {
+  const WorkedExampleCard(this.id, {super.key});
 
   final String id;
 

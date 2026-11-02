@@ -91,9 +91,16 @@ void main() {
       expect(k('workbench.chemistry'), findsOneWidget);
       expect(k('workbench.labMethods'), findsOneWidget);
       expect(find.text('Laboratoriya usullari'), findsOneWidget);
-      // Tartib: Reaktivlar → Ekspress → Spektrofotometriya → GC-MS/LC-MS.
+      // Tartib: Barcha usullar → Spektrofotometriya → GC-MS/LC-MS →
+      // Reaktivlar → Ekspress (egasi talabi, 2026-11-02).
       final ys = [
-        for (final id in ['labReagents', 'labExpress', 'labSpectro', 'labMs'])
+        for (final id in [
+          'labAllMethods',
+          'labSpectro',
+          'labMs',
+          'labReagents',
+          'labExpress',
+        ])
           t.getTopLeft(k('workbench.$id')).dy,
       ];
       expect(ys, orderedEquals([...ys]..sort()));
@@ -101,6 +108,7 @@ void main() {
       expect(find.text('Ekspress test tahlillari'), findsOneWidget);
       expect(find.text('Spektrofotometriya usullari'), findsOneWidget);
       expect(find.text('GC-MS / LC-MS'), findsOneWidget);
+      expect(find.text('Barcha usullar va SOP'), findsOneWidget);
       expect(k('workbench.solutionCalc'), findsOneWidget);
       expect(k('workbench.lodLoq'), findsOneWidget);
       // Takror yo‘q: kimyogarda daftar/sud kartalari yo‘q.

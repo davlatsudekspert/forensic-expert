@@ -5,6 +5,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 import 'package:forensic_expert/app/equipment.dart';
 import 'package:forensic_expert/app/routes.dart';
+import 'package:forensic_expert/features/equipment/presentation/equipment_diagrams.dart';
 import 'package:forensic_expert/features/equipment/presentation/worked_example_screen.dart';
 
 import '../helpers/pump_app.dart';
@@ -105,5 +106,11 @@ void main() {
     expect(find.byKey(const Key('worked.ms.Kokain')), findsOneWidget);
     expect(find.byKey(const Key('worked.ms.Tramadol')), findsOneWidget);
     expect(find.textContaining('asosiy ion 82'), findsOneWidget);
+  });
+
+  test('usullar sahifasi uchun misollar', () {
+    expect(EquipmentDiagrams.forMethod('method-uvvis'), isNotNull);
+    expect(EquipmentDiagrams.forMethod('method-gcms'), isNotNull);
+    expect(EquipmentDiagrams.forMethod('method-tlc'), isNull);
   });
 }

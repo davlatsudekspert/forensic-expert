@@ -17,8 +17,11 @@ K = {
  'weTropicamideBody': ('Ko‘z tomchisi: ion-juft, xloroform, 408 nm — sxema, kalibrlash chizig‘i va hisob', 'Глазные капли: ионная пара, хлороформ, 408 нм — схема, калибровочный график и расчёт', 'Eye drops: ion pair, chloroform, 408 nm — scheme, calibration line and calculation'),
  'weBarbTitle': ('Qon va siydikda fenobarbital (UV-1900i)', 'Фенобарбитал в крови и моче (UV-1900i)', 'Phenobarbital in blood and urine (UV-1900i)'),
  'weBarbBody': ('pH 10 → pH 13 farqi, 260 nm — ajratib olish sxemasi, spektrlar va hisob', 'Разность pH 10 → pH 13, 260 нм — схема извлечения, спектры и расчёт', 'pH 10 → pH 13 difference at 260 nm — extraction scheme, spectra and calculation'),
- 'weGcmsTitle': ('GC-MS: giyohvand va dori moddalari (Shimadzu)', 'ГХ-МС: наркотические и лекарственные вещества (Shimadzu)', 'GC-MS: drugs of abuse and medicines (Shimadzu)'),
+ 'weGcmsTitle': ('GC-MS: giyohvand va dori moddalari (Shimadzu)', 'GC-MS: наркотические и лекарственные вещества (Shimadzu)', 'GC-MS: drugs of abuse and medicines (Shimadzu)'),
  'weGcmsBody': ('THC, kokain, geroin, tramadol, amfetaminlar va boshq. — mass-spektr cho‘qqilari', 'ТГК, кокаин, героин, трамадол, амфетамины и др. — пики масс-спектров', 'THC, cocaine, heroin, tramadol, amphetamines and more — mass spectrum peaks'),
+ 'workbenchLabAllMethods': ('Barcha usullar va SOP', 'Все методы и СОП', 'All methods and SOPs'),
+ 'workbenchLabAllMethodsSub': ('Usul yozuvlari, amaliy misollar bilan', 'Записи методов с практическими примерами', 'Method records with worked examples'),
+ 'labHubExamples': ('Amaliy misollar', 'Практические примеры', 'Worked examples'),
  'gcmsPeaksTitle': ('Cho‘qqilarni o‘qish', 'Чтение пиков', 'Reading the peaks'),
 }
 P = {

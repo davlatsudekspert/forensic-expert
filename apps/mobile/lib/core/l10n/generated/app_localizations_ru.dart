@@ -12868,9 +12868,19 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get weGcmsTitle =>
-      'ГХ-МС: наркотические и лекарственные вещества (Shimadzu)';
+      'GC-MS: наркотические и лекарственные вещества (Shimadzu)';
 
   @override
   String get weGcmsBody =>
       'ТГК, кокаин, героин, трамадол, амфетамины и др. — пики масс-спектров';
+
+  @override
+  String get workbenchLabAllMethods => 'Все методы и СОП';
+
+  @override
+  String get workbenchLabAllMethodsSub =>
+      'Записи методов с практическими примерами';
+
+  @override
+  String get labHubExamples => 'Практические примеры';
 }

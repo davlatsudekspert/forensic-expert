@@ -12825,4 +12825,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get weGcmsBody =>
       'THC, cocaine, heroin, tramadol, amphetamines and more — mass spectrum peaks';
+
+  @override
+  String get workbenchLabAllMethods => 'All methods and SOPs';
+
+  @override
+  String get workbenchLabAllMethodsSub => 'Method records with worked examples';
+
+  @override
+  String get labHubExamples => 'Worked examples';
 }

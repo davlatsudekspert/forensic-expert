@@ -12751,4 +12751,14 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get weGcmsBody =>
       'THC, kokain, geroin, tramadol, amfetaminlar va boshq. — mass-spektr cho‘qqilari';
+
+  @override
+  String get workbenchLabAllMethods => 'Barcha usullar va SOP';
+
+  @override
+  String get workbenchLabAllMethodsSub =>
+      'Usul yozuvlari, amaliy misollar bilan';
+
+  @override
+  String get labHubExamples => 'Amaliy misollar';
 }

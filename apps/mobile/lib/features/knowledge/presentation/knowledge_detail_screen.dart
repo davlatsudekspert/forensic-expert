@@ -19,6 +19,7 @@ import '../../../domain/referral/share_text.dart';
 import '../../common/favorite_button.dart';
 import '../../common/share_button.dart';
 import '../../common/view_recorder.dart';
+import '../../equipment/presentation/equipment_diagrams.dart';
 import '../../evidence/evidence_strings.dart';
 import '../../evidence/presentation/research_screens.dart';
 import '../../evidence/presentation/scientific_image.dart';
@@ -189,6 +190,7 @@ class KnowledgeDetailScreen extends ConsumerWidget {
                     ],
                   ],
                   ?PostmortemDiagrams.forEntity(e.id),
+                  ?EquipmentDiagrams.forMethod(e.id),
                   ScientificImageGallery(entityId: e.id),
                   RelatedSection(entityId: e.id),
                   TemplateCoverageCard(entry: e),

@@ -22226,6 +22226,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'THC, cocaine, heroin, tramadol, amphetamines and more — mass spectrum peaks'**
   String get weGcmsBody;
+
+  /// Equipment page: COHb spectrum diagram / GC-MS peak reading.
+  ///
+  /// In en, this message translates to:
+  /// **'All methods and SOPs'**
+  String get workbenchLabAllMethods;
+
+  /// Equipment page: COHb spectrum diagram / GC-MS peak reading.
+  ///
+  /// In en, this message translates to:
+  /// **'Method records with worked examples'**
+  String get workbenchLabAllMethodsSub;
+
+  /// Equipment page: COHb spectrum diagram / GC-MS peak reading.
+  ///
+  /// In en, this message translates to:
+  /// **'Worked examples'**
+  String get labHubExamples;
 }
 
 class _AppLocalizationsDelegate

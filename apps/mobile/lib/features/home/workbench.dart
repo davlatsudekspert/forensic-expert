@@ -85,6 +85,7 @@ enum WorkbenchItemId {
   calculators,
   ai,
   labMethods,
+  labAllMethods,
   labReagents,
   labExpress,
   labSpectro,
@@ -243,8 +244,26 @@ abstract final class Workbench {
     body: (l) => l.workbenchLodBody,
   );
 
-  /// Keng karta ichidagi 4 band (tartib: reaktivlar, ekspress, spektro, MS).
-  static final labItems = [labReagents, labExpress, labSpectro, labMs];
+  /// «Usullar» bo‘limi (barcha usul va SOP yozuvlari) — Sud-kimyo stolida
+  /// birinchi qator (egasi talabi, 2026-11-02).
+  static final labAllMethods = WorkbenchItem(
+    id: WorkbenchItemId.labAllMethods,
+    icon: Icons.rule_folder_outlined,
+    hue: FeHues.ochre,
+    route: Routes.knowledge(KnowledgeKind.method.name),
+    title: (l) => l.workbenchLabAllMethods,
+    body: (l) => l.workbenchLabAllMethodsSub,
+  );
+
+  /// Keng karta ichidagi bandlar (tartib: barcha usullar, spektro, MS,
+  /// reaktivlar, ekspress).
+  static final labItems = [
+    labAllMethods,
+    labSpectro,
+    labMs,
+    labReagents,
+    labExpress,
+  ];
 
   // Talaba «O‘qish stolim»: hammasi mavjud o‘quv ekranlari.
   static final deskLessons = WorkbenchItem(
