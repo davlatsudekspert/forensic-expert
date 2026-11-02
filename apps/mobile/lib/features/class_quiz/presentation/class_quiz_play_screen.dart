@@ -16,6 +16,7 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../core/widgets/rank_medal.dart';
 import '../../../core/widgets/score_grade.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart';
+import '../../../domain/grading/grade_scale.dart';
 import '../../anti_cheat/presentation/anti_cheat_widgets.dart';
 import 'class_quiz_widgets.dart';
 
@@ -768,30 +769,29 @@ class _SelfDone extends ConsumerWidget {
                 textAlign: TextAlign.center,
                 style: t.titleLarge,
               ),
-              const SizedBox(height: FeSpace.xs),
-              Text(
-                l.classScoreLine(st.score),
-                key: const Key('class.finalScore'),
-                style: t.headlineMedium?.copyWith(
-                  color: c.accent,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
+              // Asosiy natija — 100 ballik ball va PF-191 bahosi (egasi
+              // so‘rovi, 2026-11-02); tezlik bali faqat kichik «Reyting bali».
+              if (results != null && results.total > 0) ...[
+                const SizedBox(height: FeSpace.xs),
+                ScoreGradeBlock(correct: results.correct, total: results.total),
+              ],
               if (results != null)
                 Text(
                   l.classCorrectOfTotal(results.correct, results.total),
                   key: const Key('class.finalCorrect'),
                   style: t.bodyMedium,
                 ),
-              if (results != null && results.total > 0) ...[
-                const SizedBox(height: FeSpace.sm),
-                ScoreGradeBlock(correct: results.correct, total: results.total),
-                Text(
-                  l.scoringSpeedPointsNote,
-                  textAlign: TextAlign.center,
-                  style: t.bodySmall?.copyWith(color: c.textSecondary),
-                ),
-              ],
+              const SizedBox(height: FeSpace.xs),
+              Text(
+                l.classScoreLine(st.score),
+                key: const Key('class.finalScore'),
+                style: t.bodyMedium?.copyWith(color: c.textSecondary),
+              ),
+              Text(
+                l.scoringSpeedPointsNote,
+                textAlign: TextAlign.center,
+                style: t.bodySmall?.copyWith(color: c.textSecondary),
+              ),
               const SizedBox(height: FeSpace.xs),
               Text(
                 l.classSelfDoneBody,
@@ -895,39 +895,38 @@ class _StudentFinished extends ConsumerWidget {
                 child: Column(
                   children: [
                     Text(l.classFinishedTitle, style: t.titleLarge),
-                    const SizedBox(height: FeSpace.xs),
-                    Text(
-                      l.classScoreLine(st.score),
-                      key: const Key('class.finalScore'),
-                      style: t.headlineMedium?.copyWith(
-                        color: c.accent,
-                        fontWeight: FontWeight.w700,
+                    // Asosiy natija — 100 ballik ball va PF-191 bahosi (egasi
+                    // so‘rovi, 2026-11-02); tezlik bali — kichik «Reyting bali».
+                    if (results != null && results.total > 0) ...[
+                      const SizedBox(height: FeSpace.xs),
+                      ScoreGradeBlock(
+                        correct: results.correct,
+                        total: results.total,
                       ),
-                    ),
-                    if (st.rank != null)
-                      Text(
-                        l.classRankLine(st.rank!, st.joined),
-                        key: const Key('class.finalRank'),
-                        style: t.titleSmall,
-                      ),
+                    ],
                     if (results != null)
                       Text(
                         l.classCorrectOfTotal(results.correct, results.total),
                         key: const Key('class.finalCorrect'),
                         style: t.bodyMedium,
                       ),
-                    if (results != null && results.total > 0) ...[
-                      const SizedBox(height: FeSpace.sm),
-                      ScoreGradeBlock(
-                        correct: results.correct,
-                        total: results.total,
-                      ),
+                    const SizedBox(height: FeSpace.xs),
+                    if (st.rank != null)
                       Text(
-                        l.scoringSpeedPointsNote,
-                        textAlign: TextAlign.center,
-                        style: t.bodySmall?.copyWith(color: c.textSecondary),
+                        l.classRankLine(st.rank!, st.joined),
+                        key: const Key('class.finalRank'),
+                        style: t.titleSmall,
                       ),
-                    ],
+                    Text(
+                      l.classScoreLine(st.score),
+                      key: const Key('class.finalScore'),
+                      style: t.bodyMedium?.copyWith(color: c.textSecondary),
+                    ),
+                    Text(
+                      l.scoringSpeedPointsNote,
+                      textAlign: TextAlign.center,
+                      style: t.bodySmall?.copyWith(color: c.textSecondary),
+                    ),
                   ],
                 ),
               ),
@@ -962,7 +961,18 @@ class _StudentFinished extends ConsumerWidget {
                                     : null,
                               ),
                             ),
-                            Text(r.score.toString(), style: t.titleSmall),
+                            if (results != null && results.total > 0) ...[
+                              Text(
+                                GradeScale.of(r.correct, results.total).text,
+                                key: Key('class.top.score100.${r.rank}'),
+                                style: t.titleSmall,
+                              ),
+                              const SizedBox(width: FeSpace.xs),
+                              _GradeChip(
+                                GradeScale.of(r.correct, results.total).grade,
+                              ),
+                            ] else
+                              Text(r.score.toString(), style: t.titleSmall),
                             if (r.nickname != st.nickname)
                               IconButton(
                                 tooltip: l.classReportAction,
@@ -1122,6 +1132,39 @@ class ClassMistakeCard extends StatelessWidget {
           ],
         ],
       ),
+    );
+  }
+}
+
+/// Reyting qatorida baho belgisi: «5»/«4»/«3» yoki minus belgisi (minimal
+/// o‘tish balidan past).
+class _GradeChip extends StatelessWidget {
+  const _GradeChip(this.grade);
+
+  final PfGrade grade;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return Container(
+      constraints: const BoxConstraints(minWidth: 28),
+      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+      decoration: BoxDecoration(
+        color: grade.passed ? c.accentContainer : c.warningContainer,
+        borderRadius: BorderRadius.circular(FeRadius.sm),
+      ),
+      child: grade.value == null
+          ? Icon(
+              Icons.remove,
+              size: 16,
+              semanticLabel: AppLocalizations.of(context).scoringGradeBelowMin,
+            )
+          : Text(
+              grade.value.toString(),
+              textAlign: TextAlign.center,
+              style: t.labelLarge?.copyWith(fontWeight: FontWeight.w700),
+            ),
     );
   }
 }
