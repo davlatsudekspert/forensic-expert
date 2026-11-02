@@ -75,6 +75,7 @@ class FakeCatalogService implements CatalogService {
       teacherCatalog: kind == CatalogKind.teacher ? on : me0.teacherCatalog,
       expertCatalog: kind == CatalogKind.expert ? on : me0.expertCatalog,
       expertEligible: me0.expertEligible,
+      expertVerified: me0.expertVerified,
     );
     return const CatalogResult.ok(null);
   }

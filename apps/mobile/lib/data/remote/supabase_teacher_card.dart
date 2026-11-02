@@ -225,11 +225,39 @@ class SupabaseTeacherCardService implements TeacherCardService {
     final c = _card(r);
     final card = c.value;
     if (card == null) return fail(TeacherCardFailure.server);
+    var saved = card;
+    // Fon rasmi alohida RPC orqali (karta yaratilgandan keyin).
+    if (draft.cover != null || draft.removeCover) {
+      String? coverPath;
+      if (draft.cover != null) {
+        final up = await _upload(uid, 'cover', draft.cover!);
+        if (!up.ok) return fail(up.failure!);
+        coverPath = up.value;
+        uploaded.add(coverPath!);
+      }
+      final cr = await _rpc('teacher_card_set_cover', {'p_path': coverPath});
+      if (!cr.ok) return fail(cr.failure!);
+      final old = cr.value?['old_path'];
+      if (old is String) await _remove(old);
+      saved = TeacherCard(
+        teacherId: card.teacherId,
+        displayName: card.displayName,
+        workplace: card.workplace,
+        category: card.category,
+        bio: card.bio,
+        photoPath: card.photoPath,
+        logoPath: card.logoPath,
+        coverPath: coverPath,
+        socials: card.socials,
+        visible: card.visible,
+        hiddenByAdmin: card.hiddenByAdmin,
+      );
+    }
     // Almashtirilgan/olib tashlangan eski fayllar (best effort).
     for (final old in [previous?.photoPath, previous?.logoPath]) {
       if (old != null && old != photo && old != logo) await _remove(old);
     }
-    return TeacherCardResult.ok(card);
+    return TeacherCardResult.ok(saved);
   }
 
   @override
@@ -237,7 +265,7 @@ class SupabaseTeacherCardService implements TeacherCardService {
     final r = await _rpc('teacher_card_delete', const {});
     final v = r.value;
     if (v == null) return TeacherCardResult.fail(r.failure!);
-    for (final k in ['photo_path', 'logo_path']) {
+    for (final k in ['photo_path', 'logo_path', 'cover_path']) {
       final p = v[k];
       if (p is String) await _remove(p);
     }

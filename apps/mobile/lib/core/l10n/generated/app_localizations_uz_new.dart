@@ -11667,4 +11667,34 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String assessmentExamTimer(String t) =>
       toUzNewAlphabet(super.assessmentExamTimer(t));
 
+  @override
+  String get catShowMeTeachers => toUzNewAlphabet(super.catShowMeTeachers);
+
+  @override
+  String get catShowMeExperts => toUzNewAlphabet(super.catShowMeExperts);
+
+  @override
+  String get catExpertUnverifiedHint => toUzNewAlphabet(super.catExpertUnverifiedHint);
+
+  @override
+  String get catVerifiedExpert => toUzNewAlphabet(super.catVerifiedExpert);
+
+  @override
+  String get tcCoverSection => toUzNewAlphabet(super.tcCoverSection);
+
+  @override
+  String get tcCoverChoose => toUzNewAlphabet(super.tcCoverChoose);
+
+  @override
+  String get tcCoverChange => toUzNewAlphabet(super.tcCoverChange);
+
+  @override
+  String get tcCoverRemove => toUzNewAlphabet(super.tcCoverRemove);
+
+  @override
+  String get tcCoverHint => toUzNewAlphabet(super.tcCoverHint);
+
+  @override
+  String get tcCoverSemantics => toUzNewAlphabet(super.tcCoverSemantics);
+
 }

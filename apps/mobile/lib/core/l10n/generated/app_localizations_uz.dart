@@ -12887,7 +12887,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get catEmptyExperts =>
-      'Hozircha katalogda mutaxassis yo‘q. Bu yerda faqat tasdiqlangan mutaxassislar chiqadi.';
+      'Hozircha katalogda mutaxassis yo‘q. Mutaxassis profilida «Mutaxassislar katalogida ko‘rsatish»ni yoqishi bilan shu yerda chiqadi.';
 
   @override
   String get catLoadFailed =>
@@ -13026,4 +13026,36 @@ class AppLocalizationsUz extends AppLocalizations {
   String assessmentExamTimer(String t) {
     return 'Qolgan vaqt: $t';
   }
+
+  @override
+  String get catShowMeTeachers => 'Ustozlar katalogida ko‘rsatish';
+
+  @override
+  String get catShowMeExperts => 'Mutaxassislar katalogida ko‘rsatish';
+
+  @override
+  String get catExpertUnverifiedHint =>
+      'Tasdiqlangandan keyin ismingiz yonida belgi chiqadi';
+
+  @override
+  String get catVerifiedExpert => 'Tasdiqlangan mutaxassis';
+
+  @override
+  String get tcCoverSection => 'Fon rasmi';
+
+  @override
+  String get tcCoverChoose => 'Fon rasmini tanlash';
+
+  @override
+  String get tcCoverChange => 'Fon rasmini almashtirish';
+
+  @override
+  String get tcCoverRemove => 'Fonni olib tashlash';
+
+  @override
+  String get tcCoverHint =>
+      'Tavsiya: 1500×500 px (3:1), JPG yoki PNG, 1 MB gacha';
+
+  @override
+  String get tcCoverSemantics => 'Fon rasmi';
 }

@@ -75,12 +75,25 @@ class _CatalogVisibilityTileState extends ConsumerState<CatalogVisibilityTile> {
           contentPadding: EdgeInsets.zero,
           value: on,
           onChanged: _busy ? null : _set,
-          title: Text(l.catShowMe),
+          title: Text(
+            widget.kind == CatalogKind.teacher
+                ? l.catShowMeTeachers
+                : l.catShowMeExperts,
+          ),
           subtitle: Text(
             l.catShowMeHint,
             style: t.bodySmall?.copyWith(color: c.textSecondary),
           ),
         ),
+        if (widget.kind == CatalogKind.expert && !me.expertVerified)
+          Align(
+            alignment: AlignmentDirectional.centerStart,
+            child: Text(
+              l.catExpertUnverifiedHint,
+              key: const Key('catalog.unverifiedHint'),
+              style: t.bodySmall?.copyWith(color: c.textSecondary),
+            ),
+          ),
       ],
     );
   }

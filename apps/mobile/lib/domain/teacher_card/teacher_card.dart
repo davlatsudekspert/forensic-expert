@@ -178,6 +178,7 @@ class TeacherCard {
     this.bio = '',
     this.photoPath,
     this.logoPath,
+    this.coverPath,
     this.socials = const {},
     this.visible = false,
     this.hiddenByAdmin = false,
@@ -194,6 +195,9 @@ class TeacherCard {
   /// Storage yo‘li (`<uid>/photo-<uuid>.png`); rasm baytlari alohida yuklanadi.
   final String? photoPath;
   final String? logoPath;
+
+  /// Fon rasmi (`<uid>/cover-<uuid>.<ext>`); ixtiyoriy.
+  final String? coverPath;
   final Map<TeacherSocial, String> socials;
 
   /// Faqat egasining o‘z javobida ma’noli (talabaga server bermaydi).
@@ -210,6 +214,10 @@ class TeacherCard {
       bio: _str(j['bio']),
       photoPath: j['photo_path'] is String ? j['photo_path']! as String : null,
       logoPath: j['logo_path'] is String ? j['logo_path']! as String : null,
+      coverPath:
+          j['cover_path'] is String && (j['cover_path']! as String).isNotEmpty
+          ? j['cover_path']! as String
+          : null,
       socials: TeacherLinks.safe(
         soc is Map ? soc.cast<String, Object?>() : const {},
       ),
@@ -236,8 +244,10 @@ class TeacherCardDraft {
     this.visible = false,
     this.photo,
     this.logo,
+    this.cover,
     this.removePhoto = false,
     this.removeLogo = false,
+    this.removeCover = false,
   });
 
   final String displayName;
@@ -252,8 +262,12 @@ class TeacherCardDraft {
   /// Yangi rasm (PNG/JPEG baytlari, ≤ 1 MB).
   final Uint8List? photo;
   final Uint8List? logo;
+
+  /// Yangi fon rasmi (≤ 1 MB).
+  final Uint8List? cover;
   final bool removePhoto;
   final bool removeLogo;
+  final bool removeCover;
 
   /// Mijoz tomondagi birinchi tekshiruv (server baribir qayta tekshiradi).
   TeacherCardDraftError? get error {
@@ -268,7 +282,8 @@ class TeacherCardDraft {
       return TeacherCardDraftError.bio;
     }
     if ((photo?.length ?? 0) > TeacherCardLimits.imageBytes ||
-        (logo?.length ?? 0) > TeacherCardLimits.imageBytes) {
+        (logo?.length ?? 0) > TeacherCardLimits.imageBytes ||
+        (cover?.length ?? 0) > TeacherCardLimits.imageBytes) {
       return TeacherCardDraftError.image;
     }
     for (final e in socials.entries) {

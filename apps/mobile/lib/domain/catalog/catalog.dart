@@ -24,6 +24,8 @@ class CatalogEntry {
     this.category,
     this.bio = '',
     this.photoPath,
+    this.coverPath,
+    this.verified = false,
     this.socials = const {},
     this.stars = 0,
     this.starred = false,
@@ -37,6 +39,12 @@ class CatalogEntry {
   final TeacherCategory? category;
   final String bio;
   final String? photoPath;
+
+  /// Fon (cover) rasmi yo‘li (faqat ustozlar; ixtiyoriy).
+  final String? coverPath;
+
+  /// Tasdiqlangan mutaxassis (server belgisi); ustozlarda `false`.
+  final bool verified;
   final Map<TeacherSocial, String> socials;
   final int stars;
   final bool starred;
@@ -52,6 +60,8 @@ class CatalogEntry {
     category: category,
     bio: bio,
     photoPath: photoPath,
+    coverPath: coverPath,
+    verified: verified,
     socials: socials,
     stars: stars ?? this.stars,
     starred: starred ?? this.starred,
@@ -66,6 +76,7 @@ class CatalogEntry {
     category: category,
     bio: bio,
     photoPath: photoPath,
+    coverPath: coverPath,
     socials: socials,
   );
 
@@ -76,6 +87,7 @@ class CatalogEntry {
     String s(Object? v) => v is String ? v : '';
     final soc = j['socials'];
     final photo = s(j['photo_path']);
+    final cover = s(j['cover_path']);
     return CatalogEntry(
       id: id,
       kind: j['kind'] == 'expert' ? CatalogKind.expert : CatalogKind.teacher,
@@ -84,6 +96,8 @@ class CatalogEntry {
       category: TeacherCategory.parse(j['category']),
       bio: s(j['bio']),
       photoPath: photo.isEmpty ? null : photo,
+      coverPath: cover.isEmpty ? null : cover,
+      verified: j['verified'] == true,
       socials: TeacherLinks.safe(
         soc is Map ? soc.cast<String, Object?>() : const {},
       ),
@@ -102,6 +116,7 @@ class CatalogMe {
     this.teacherCatalog = false,
     this.expertCatalog = false,
     this.expertEligible = false,
+    this.expertVerified = false,
   });
 
   static const empty = CatalogMe();
@@ -109,13 +124,19 @@ class CatalogMe {
   final int stars;
   final bool teacherCatalog;
   final bool expertCatalog;
+
+  /// Kasbiy profili bor (tasdiqlangan bo‘lishi shart emas).
   final bool expertEligible;
+
+  /// Kasbiy profili tasdiqlangan (ismi yonida belgi chiqadi).
+  final bool expertVerified;
 
   factory CatalogMe.fromJson(Map<String, Object?> j) => CatalogMe(
     stars: j['stars'] is num ? (j['stars']! as num).toInt() : 0,
     teacherCatalog: j['teacher_catalog'] == true,
     expertCatalog: j['expert_catalog'] == true,
     expertEligible: j['expert_eligible'] == true,
+    expertVerified: j['expert_verified'] == true,
   );
 }
 

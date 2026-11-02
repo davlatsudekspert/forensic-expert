@@ -3749,7 +3749,7 @@
   "catSearch": "Ism yoki ish joyi bo‘yicha qidirish",
   "catSignIn": "Katalogni ko‘rish va yulduzcha bosish uchun hisobga kiring.",
   "catEmptyTeachers": "Hozircha katalogda ustoz yo‘q. Ustozlar profilida «Katalogda ko‘rsatish»ni yoqishi bilan shu yerda chiqadi.",
-  "catEmptyExperts": "Hozircha katalogda mutaxassis yo‘q. Bu yerda faqat tasdiqlangan mutaxassislar chiqadi.",
+  "catEmptyExperts": "Hozircha katalogda mutaxassis yo‘q. Mutaxassis profilida «Mutaxassislar katalogida ko‘rsatish»ni yoqishi bilan shu yerda chiqadi.",
   "catLoadFailed": "Katalog yuklanmadi. Internetni tekshirib, qayta urining.",
   "catStarFailed": "Yulduzcha saqlanmadi. Qayta urining.",
   "catStar": "Yulduzcha bosish",
@@ -3787,5 +3787,15 @@
   "assessmentBlockUnsolved": "Yechilmagan",
   "assessmentExamHint": "Natija imtihon oxirida ko‘rsatiladi",
   "assessmentExamTimeUp": "Vaqt tugadi",
-  "assessmentExamTimer": "Qolgan vaqt: {t}"
+  "assessmentExamTimer": "Qolgan vaqt: {t}",
+  "catShowMeTeachers": "Ustozlar katalogida ko‘rsatish",
+  "catShowMeExperts": "Mutaxassislar katalogida ko‘rsatish",
+  "catExpertUnverifiedHint": "Tasdiqlangandan keyin ismingiz yonida belgi chiqadi",
+  "catVerifiedExpert": "Tasdiqlangan mutaxassis",
+  "tcCoverSection": "Fon rasmi",
+  "tcCoverChoose": "Fon rasmini tanlash",
+  "tcCoverChange": "Fon rasmini almashtirish",
+  "tcCoverRemove": "Fonni olib tashlash",
+  "tcCoverHint": "Tavsiya: 1500×500 px (3:1), JPG yoki PNG, 1 MB gacha",
+  "tcCoverSemantics": "Fon rasmi"
 }

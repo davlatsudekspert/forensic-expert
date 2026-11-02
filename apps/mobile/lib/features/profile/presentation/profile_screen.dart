@@ -508,7 +508,8 @@ class ProfileScreen extends ConsumerWidget {
                           ),
                       ],
                     ),
-                    // Tasdiqlangan mutaxassis: katalogda ko‘rinish roziligi.
+                    // Kasbiy profili bor mutaxassis: katalogda ko‘rinish roziligi (tasdiqlangan
+                    // bo‘lsa ism yonida belgi chiqadi).
                     if (signedIn &&
                         (ref.watch(catalogMeProvider).value?.expertEligible ??
                             false))

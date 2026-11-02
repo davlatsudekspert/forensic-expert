@@ -16961,7 +16961,7 @@
   "@catEmptyTeachers": {
     "description": "Teachers and experts catalogue with stars."
   },
-  "catEmptyExperts": "No experts in the catalogue yet. Only verified experts appear here.",
+  "catEmptyExperts": "No specialists in the catalogue yet. They appear here once they turn on “Show in the specialists catalogue” in their profile.",
   "@catEmptyExperts": {
     "description": "Teachers and experts catalogue with stars."
   },
@@ -17165,5 +17165,45 @@
         "type": "String"
       }
     }
+  },
+  "catShowMeTeachers": "Show in the teachers catalogue",
+  "@catShowMeTeachers": {
+    "description": "Teacher profile switch: show in teachers catalogue."
+  },
+  "catShowMeExperts": "Show in the specialists catalogue",
+  "@catShowMeExperts": {
+    "description": "Expert profile switch: show in specialists catalogue."
+  },
+  "catExpertUnverifiedHint": "A badge appears next to your name once you are verified",
+  "@catExpertUnverifiedHint": {
+    "description": "Hint under the specialists switch while the profile is not verified."
+  },
+  "catVerifiedExpert": "Verified specialist",
+  "@catVerifiedExpert": {
+    "description": "Tooltip/semantics of the verified badge."
+  },
+  "tcCoverSection": "Cover image",
+  "@tcCoverSection": {
+    "description": "Teacher card edit: cover image section."
+  },
+  "tcCoverChoose": "Choose cover",
+  "@tcCoverChoose": {
+    "description": "Pick cover image."
+  },
+  "tcCoverChange": "Change cover",
+  "@tcCoverChange": {
+    "description": "Change cover image."
+  },
+  "tcCoverRemove": "Remove cover",
+  "@tcCoverRemove": {
+    "description": "Remove cover image."
+  },
+  "tcCoverHint": "Recommended: 1500×500 px (3:1), JPG or PNG, up to 1 MB",
+  "@tcCoverHint": {
+    "description": "Recommended cover image size."
+  },
+  "tcCoverSemantics": "Cover image",
+  "@tcCoverSemantics": {
+    "description": "Semantics label of the cover image."
   }
 }

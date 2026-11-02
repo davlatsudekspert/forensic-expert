@@ -22458,7 +22458,7 @@ abstract class AppLocalizations {
   /// Teachers and experts catalogue with stars.
   ///
   /// In en, this message translates to:
-  /// **'No experts in the catalogue yet. Only verified experts appear here.'**
+  /// **'No specialists in the catalogue yet. They appear here once they turn on “Show in the specialists catalogue” in their profile.'**
   String get catEmptyExperts;
 
   /// Teachers and experts catalogue with stars.
@@ -22688,6 +22688,66 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Time left: {t}'**
   String assessmentExamTimer(String t);
+
+  /// Teacher profile switch: show in teachers catalogue.
+  ///
+  /// In en, this message translates to:
+  /// **'Show in the teachers catalogue'**
+  String get catShowMeTeachers;
+
+  /// Expert profile switch: show in specialists catalogue.
+  ///
+  /// In en, this message translates to:
+  /// **'Show in the specialists catalogue'**
+  String get catShowMeExperts;
+
+  /// Hint under the specialists switch while the profile is not verified.
+  ///
+  /// In en, this message translates to:
+  /// **'A badge appears next to your name once you are verified'**
+  String get catExpertUnverifiedHint;
+
+  /// Tooltip/semantics of the verified badge.
+  ///
+  /// In en, this message translates to:
+  /// **'Verified specialist'**
+  String get catVerifiedExpert;
+
+  /// Teacher card edit: cover image section.
+  ///
+  /// In en, this message translates to:
+  /// **'Cover image'**
+  String get tcCoverSection;
+
+  /// Pick cover image.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose cover'**
+  String get tcCoverChoose;
+
+  /// Change cover image.
+  ///
+  /// In en, this message translates to:
+  /// **'Change cover'**
+  String get tcCoverChange;
+
+  /// Remove cover image.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove cover'**
+  String get tcCoverRemove;
+
+  /// Recommended cover image size.
+  ///
+  /// In en, this message translates to:
+  /// **'Recommended: 1500×500 px (3:1), JPG or PNG, up to 1 MB'**
+  String get tcCoverHint;
+
+  /// Semantics label of the cover image.
+  ///
+  /// In en, this message translates to:
+  /// **'Cover image'**
+  String get tcCoverSemantics;
 }
 
 class _AppLocalizationsDelegate

@@ -164,6 +164,105 @@ class TeacherPhoto extends ConsumerWidget {
   }
 }
 
+/// Fon (cover) rasmi qatlami: `BoxFit.cover` + nozik qora gradient (matn va
+/// tugmalar ko‘rinishi uchun). Rasm yo‘q yoki hali yuklanmagan bo‘lsa —
+/// [fallback] (odatiy tasma). Rasm baytlari yoki Storage yo‘li bo‘yicha
+/// ([teacherCardImageProvider], [TeacherPhoto] bilan bir xil).
+class TeacherCoverLayer extends ConsumerWidget {
+  const TeacherCoverLayer({
+    super.key,
+    this.path,
+    this.bytes,
+    required this.fallback,
+    this.overlay = true,
+  });
+
+  final String? path;
+  final Uint8List? bytes;
+  final Widget fallback;
+  final bool overlay;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    Uint8List? data = bytes;
+    if (data == null && path != null) {
+      data = ref.watch(teacherCardImageProvider(path!)).value;
+    }
+    if (data == null) return fallback;
+    return Semantics(
+      label: l.tcCoverSemantics,
+      image: true,
+      child: ExcludeSemantics(
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            Image.memory(
+              data,
+              key: const Key('tc.coverImage'),
+              fit: BoxFit.cover,
+              gaplessPlayback: true,
+              errorBuilder: (_, _, _) => fallback,
+            ),
+            if (overlay)
+              const DecoratedBox(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [Color(0x40000000), Color(0x8C000000)],
+                  ),
+                ),
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Tahrirlash ekranidagi fon rasmi ko‘rinishi (kichik, 3:1).
+class TeacherCoverImage extends StatelessWidget {
+  const TeacherCoverImage({
+    super.key,
+    this.path,
+    this.bytes,
+    required this.width,
+    required this.height,
+    required this.borderRadius,
+    required this.placeholder,
+  });
+
+  final String? path;
+  final Uint8List? bytes;
+  final double width;
+  final double height;
+  final BorderRadius borderRadius;
+  final Widget placeholder;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
+    final empty = Center(child: placeholder);
+    return Container(
+      width: width,
+      height: height,
+      clipBehavior: Clip.antiAlias,
+      decoration: BoxDecoration(
+        borderRadius: borderRadius,
+        color: c.surfaceSunken,
+        border: Border.all(color: c.border),
+      ),
+      child: TeacherCoverLayer(
+        path: path,
+        bytes: bytes,
+        overlay: false,
+        fallback: empty,
+      ),
+    );
+  }
+}
+
 class _Initial extends StatelessWidget {
   const _Initial(this.letter, this.size);
 
@@ -194,6 +293,7 @@ class TeacherCardView extends ConsumerWidget {
     required this.card,
     this.photoBytes,
     this.logoBytes,
+    this.coverBytes,
     this.onReport,
   });
 
@@ -202,6 +302,7 @@ class TeacherCardView extends ConsumerWidget {
   /// Tahrirlashda hali yuklanmagan rasm (ko‘rish uchun).
   final Uint8List? photoBytes;
   final Uint8List? logoBytes;
+  final Uint8List? coverBytes;
 
   /// `null` — shikoyat tugmasi ko‘rsatilmaydi (ustozning o‘z ko‘rinishi).
   final VoidCallback? onReport;
@@ -237,15 +338,19 @@ class TeacherCardView extends ConsumerWidget {
                     right: 0,
                     top: 0,
                     height: bandHeight,
-                    child: DecoratedBox(
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topLeft,
-                          end: Alignment.bottomRight,
-                          colors: [
-                            c.brand,
-                            Color.lerp(c.brand, c.accent, 0.35)!,
-                          ],
+                    child: TeacherCoverLayer(
+                      path: card.coverPath,
+                      bytes: coverBytes,
+                      fallback: DecoratedBox(
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                            colors: [
+                              c.brand,
+                              Color.lerp(c.brand, c.accent, 0.35)!,
+                            ],
+                          ),
                         ),
                       ),
                     ),

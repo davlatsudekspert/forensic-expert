@@ -354,6 +354,50 @@ void main() {
     await closeApp(tester);
   });
 
+  testWidgets(
+    'Tahrirlash: fon rasmi — maslahat, tanlash, saqlash, olib tashlash',
+    (tester) async {
+      final w = GroupsWorld();
+      final cards = _Cards(w);
+      final png = await tester.runAsync(() => _noisePng(64));
+      await w.open(
+        tester,
+        uid: 'teacher',
+        location: Routes.teacherCard,
+        extra: [
+          ...cards.overrides('teacher'),
+          avatarPickerProvider.overrideWithValue(_Picker(png!)),
+        ],
+      );
+      final l = _l(tester);
+      await _type(tester, 'tc.field.name', 'Dilshod Karimov');
+      await _scrollTo(tester, const Key('tc.list'), const Key('tc.coverHint'));
+      expect(find.text(l.tcCoverHint), findsOneWidget);
+      expect(l.tcCoverHint, contains('1500×500'));
+      expect(find.byKey(const Key('tc.coverRow.remove')), findsNothing);
+      await _tap(tester, 'tc.coverRow.choose');
+      expect(find.byKey(const Key('tc.coverImage')), findsOneWidget);
+      await _tap(tester, 'tc.save');
+      final c = cards.backend.cards['teacher']!;
+      expect(c.coverPath, isNotNull);
+      expect(cards.backend.files[c.coverPath], png);
+      final old = c.coverPath;
+      await _tap(tester, 'tc.coverRow.remove');
+      await _tap(tester, 'tc.save');
+      expect(cards.backend.cards['teacher']!.coverPath, isNull);
+      expect(cards.backend.files.containsKey(old), isFalse);
+      await closeApp(tester);
+    },
+  );
+
+  test('TeacherCard.fromJson: cover_path bo‘lmasa null', () {
+    expect(TeacherCard.fromJson({'display_name': 'A'}).coverPath, isNull);
+    expect(
+      TeacherCard.fromJson({'cover_path': 'u/cover-1.jpg'}).coverPath,
+      'u/cover-1.jpg',
+    );
+  });
+
   testWidgets('fitTeacherImage: 1 MB dan katta rasm siqiladi', (tester) async {
     final big = await tester.runAsync(() => _noisePng(1024));
     expect(big!.length, greaterThan(TeacherCardLimits.imageBytes));

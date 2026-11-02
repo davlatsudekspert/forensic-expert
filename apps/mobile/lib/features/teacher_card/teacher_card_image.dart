@@ -5,12 +5,22 @@ import '../../domain/teacher_card/teacher_card.dart';
 
 /// Rasmni 1 MB gacha siqadi: PNG qilib qayta kodlaydi va kerak bo‘lsa
 /// kattaroq tomonini 512 → 384 → 256 → 160 px gacha kichraytiradi.
-/// Sig‘masa yoki rasm o‘qilmasa — `null`.
+/// [keepIfFits] — yaroqli va sig‘adigan rasm o‘zgarishsiz qaytariladi (fon
+/// rasmi uchun, [teacherCoverSides] bilan). Sig‘masa yoki rasm o‘qilmasa —
+/// `null`.
 Future<Uint8List?> fitTeacherImage(
   Uint8List src, {
   int maxBytes = TeacherCardLimits.imageBytes,
   List<int> sides = const [512, 384, 256, 160],
+  bool keepIfFits = false,
 }) async {
+  // Fon rasmi: tanlagich allaqachon siqqan JPEG/PNG/WebP sig‘sa — o‘zgarishsiz
+  // (sifat yo‘qolmaydi; dart:ui JPEG yoza olmaydi).
+  if (keepIfFits &&
+      src.length <= maxBytes &&
+      TeacherImageKind.of(src) != null) {
+    return src;
+  }
   try {
     final probe = await ui.instantiateImageCodec(src);
     final frame = (await probe.getNextFrame()).image;
@@ -41,3 +51,6 @@ Future<Uint8List?> fitTeacherImage(
   }
   return null;
 }
+
+/// Fon rasmi (3:1, tavsiya 1500×500) uchun kattalashtirilgan o‘lchamlar.
+const teacherCoverSides = [1500, 1200, 900, 640, 480];

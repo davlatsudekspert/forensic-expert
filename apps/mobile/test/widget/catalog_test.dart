@@ -5,6 +5,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/catalog.dart';
 import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/routes.dart';
+import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
+import 'package:forensic_expert/core/settings/app_settings.dart' show UserMode;
 import 'package:forensic_expert/data/catalog/fake_catalog_service.dart';
 import 'package:forensic_expert/domain/ports/backend_ports.dart';
 import 'package:forensic_expert/domain/catalog/catalog.dart';
@@ -24,6 +26,18 @@ void main() {
       stars: 4,
     ),
     CatalogEntry(
+      id: 'x1',
+      kind: CatalogKind.expert,
+      name: 'Tasdiqlangan Ekspert',
+      subtitle: 'Toksikolog',
+      verified: true,
+    ),
+    CatalogEntry(
+      id: 'x2',
+      kind: CatalogKind.expert,
+      name: 'Tasdiqlanmagan Ekspert',
+    ),
+    CatalogEntry(
       id: 'me',
       kind: CatalogKind.teacher,
       name: 'Men o‘zim',
@@ -32,11 +46,15 @@ void main() {
     ),
   ];
 
-  Future<FakeCatalogService> open(WidgetTester tester, {String? uid}) async {
+  Future<FakeCatalogService> open(
+    WidgetTester tester, {
+    String? uid,
+    UserMode mode = UserMode.student,
+  }) async {
     final svc = FakeCatalogService(userIdOf: () => uid, entries: entries);
     await pumpApp(
       tester,
-      settings: completedSettings(lang: 'uz'),
+      settings: completedSettings(lang: 'uz', mode: mode),
       initialLocation: Routes.catalog,
       overrides: [
         authStateProvider.overrideWith(
@@ -66,8 +84,148 @@ void main() {
     expect(find.byKey(const Key('cat.star.me')), findsNothing);
   });
 
-  testWidgets('mutaxassislar bo‘sh: tushunarli matn', (tester) async {
+  testWidgets('talaba: ikkala yorliq; mutaxassislar yorlig‘ida belgi', (
+    tester,
+  ) async {
     await open(tester, uid: 'me');
+    expect(find.byKey(const Key('cat.tab.teacher')), findsOneWidget);
+    expect(find.byKey(const Key('cat.tab.expert')), findsOneWidget);
+    await tester.tap(find.byKey(const Key('cat.tab.expert')));
+    await tester.pumpAndSettle();
+    expect(find.text('Tasdiqlangan Ekspert'), findsOneWidget);
+    expect(find.text('Tasdiqlanmagan Ekspert'), findsOneWidget);
+    // Belgi faqat tasdiqlanganda.
+    expect(find.byKey(const Key('cat.verifiedBadge')), findsOneWidget);
+    final l = AppLocalizations.of(tester.element(find.byType(Scaffold).first));
+    expect(find.byTooltip(l.catVerifiedExpert), findsOneWidget);
+    // To‘liq ko‘rinishda ham belgi.
+    await tester.tap(find.byKey(const Key('cat.item.x1')));
+    await tester.pumpAndSettle();
+    expect(
+      find.descendant(
+        of: find.byKey(const Key('cat.sheet')),
+        matching: find.byKey(const Key('cat.verifiedBadge')),
+      ),
+      findsOneWidget,
+    );
+  });
+
+  testWidgets('Ustoz rejimi: faqat ustozlar, yorliqsiz', (tester) async {
+    final svc = await open(tester, uid: 'me', mode: UserMode.teacher);
+    expect(find.byType(TabBar), findsNothing);
+    expect(find.text('Qutbiddin Siddiqov'), findsOneWidget);
+    expect(find.text('Tasdiqlangan Ekspert'), findsNothing);
+    expect(svc.calls, ['list:teacher']);
+  });
+
+  testWidgets('Mutaxassis rejimi: faqat mutaxassislar, yorliqsiz', (
+    tester,
+  ) async {
+    final svc = await open(tester, uid: 'me', mode: UserMode.professional);
+    expect(find.byType(TabBar), findsNothing);
+    expect(find.text('Tasdiqlangan Ekspert'), findsOneWidget);
+    expect(find.text('Tasdiqlanmagan Ekspert'), findsOneWidget);
+    expect(find.text('Qutbiddin Siddiqov'), findsNothing);
+    expect(svc.calls, ['list:expert']);
+  });
+
+  testWidgets(
+    'ustozlar kartasida fon rasmi bo‘lsa to‘liq ko‘rinishda chiqadi',
+    (tester) async {
+      await open(tester, uid: 'me');
+      await tester.tap(find.byKey(const Key('cat.item.t1')));
+      await tester.pumpAndSettle();
+      // Fon yo‘q (yuklanmagan) — odatiy tasma, xato yo‘q.
+      expect(find.byKey(const Key('cat.sheet')), findsOneWidget);
+      expect(find.byKey(const Key('tc.coverImage')), findsNothing);
+    },
+  );
+
+  test(
+    'CatalogEntry.tryParse: verified/cover_path; eski javob — null/false',
+    () {
+      final a = CatalogEntry.tryParse({
+        'id': 'a',
+        'name': 'A',
+        'kind': 'expert',
+        'verified': true,
+        'cover_path': 'u/cover-1.jpg',
+      })!;
+      expect(a.verified, isTrue);
+      expect(a.coverPath, 'u/cover-1.jpg');
+      final b = CatalogEntry.tryParse({'id': 'b', 'name': 'B'})!;
+      expect(b.verified, isFalse);
+      expect(b.coverPath, isNull);
+      expect(
+        CatalogMe.fromJson({'expert_eligible': true}).expertVerified,
+        false,
+      );
+      expect(
+        CatalogMe.fromJson({'expert_verified': true}).expertVerified,
+        isTrue,
+      );
+    },
+  );
+
+  test('mutaxassis yozuvi ustoz kartasi maydonlarini ham o‘qiydi', () {
+    final e = CatalogEntry.tryParse({
+      'id': 'e',
+      'name': 'E',
+      'kind': 'expert',
+      'verified': true,
+      'category': 'higher',
+      'photo_path': 'u/photo-1.png',
+      'cover_path': 'u/cover-1.png',
+      'socials': {'telegram': 'https://t.me/e'},
+    })!;
+    expect(e.kind, CatalogKind.expert);
+    expect(e.category, TeacherCategory.higher);
+    expect(e.photoPath, 'u/photo-1.png');
+    expect(e.coverPath, 'u/cover-1.png');
+    expect(e.socials, {TeacherSocial.telegram: 'https://t.me/e'});
+  });
+
+  testWidgets('profil: tasdiqlanmagan kasbiy profilda ham katalog kaliti', (
+    tester,
+  ) async {
+    final svc = FakeCatalogService(
+      userIdOf: () => 'me',
+      me0: const CatalogMe(expertEligible: true),
+    );
+    await pumpApp(
+      tester,
+      settings: completedSettings(lang: 'uz', mode: UserMode.professional),
+      initialLocation: Routes.profile,
+      overrides: [
+        authStateProvider.overrideWith(() => TestAuth(signedInAs('me'))),
+        catalogServiceProvider.overrideWithValue(svc),
+      ],
+    );
+    await tester.scrollUntilVisible(
+      find.byKey(const Key('catalog.toggle.expert')),
+      200,
+      scrollable: find.byType(Scrollable).first,
+    );
+    final l = AppLocalizations.of(tester.element(find.byType(Scaffold).first));
+    expect(find.text(l.catShowMeExperts), findsOneWidget);
+    expect(find.byKey(const Key('catalog.unverifiedHint')), findsOneWidget);
+    expect(
+      find.text('Tasdiqlangandan keyin ismingiz yonida belgi chiqadi'),
+      findsOneWidget,
+    );
+  });
+
+  testWidgets('mutaxassislar bo‘sh: tushunarli matn', (tester) async {
+    final svc = FakeCatalogService(userIdOf: () => 'me');
+    await pumpApp(
+      tester,
+      settings: completedSettings(lang: 'uz', mode: UserMode.student),
+      initialLocation: Routes.catalog,
+      overrides: [
+        authStateProvider.overrideWith(() => TestAuth(signedInAs('me'))),
+        catalogServiceProvider.overrideWithValue(svc),
+      ],
+    );
     await tester.tap(find.byKey(const Key('cat.tab.expert')));
     await tester.pumpAndSettle();
     expect(find.byKey(const Key('cat.empty.expert')), findsOneWidget);

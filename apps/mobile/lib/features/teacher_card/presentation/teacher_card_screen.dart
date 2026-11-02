@@ -42,8 +42,10 @@ class _TeacherCardState extends ConsumerState<TeacherCardScreen> {
   bool _showErrors = false;
   Uint8List? _photo;
   Uint8List? _logo;
+  Uint8List? _cover;
   bool _removePhoto = false;
   bool _removeLogo = false;
+  bool _removeCover = false;
 
   @override
   void dispose() {
@@ -93,8 +95,10 @@ class _TeacherCardState extends ConsumerState<TeacherCardScreen> {
       visible: _visible,
       photo: _photo,
       logo: _logo,
+      cover: _cover,
       removePhoto: _removePhoto,
       removeLogo: _removeLogo,
+      removeCover: _removeCover,
     );
   }
 
@@ -150,6 +154,32 @@ class _TeacherCardState extends ConsumerState<TeacherCardScreen> {
     });
   }
 
+  Future<void> _pickCover() async {
+    final l = AppLocalizations.of(context);
+    Uint8List? picked;
+    try {
+      picked = await ref.read(avatarPickerProvider).pick();
+    } on Object {
+      if (mounted) _snack(l.tcErrImage);
+      return;
+    }
+    if (picked == null || !mounted) return;
+    final fitted = await fitTeacherImage(
+      picked,
+      sides: teacherCoverSides,
+      keepIfFits: true,
+    );
+    if (!mounted) return;
+    if (fitted == null) {
+      _snack(l.tcErrImageLarge);
+      return;
+    }
+    setState(() {
+      _cover = fitted;
+      _removeCover = false;
+    });
+  }
+
   Future<void> _save() async {
     final l = AppLocalizations.of(context);
     setState(() => _showErrors = true);
@@ -190,8 +220,10 @@ class _TeacherCardState extends ConsumerState<TeacherCardScreen> {
       _saved = card;
       _photo = null;
       _logo = null;
+      _cover = null;
       _removePhoto = false;
       _removeLogo = false;
+      _removeCover = false;
       _visible = card.visible;
     });
     ref.invalidate(myTeacherCardProvider);
@@ -240,6 +272,7 @@ class _TeacherCardState extends ConsumerState<TeacherCardScreen> {
       bio: d.bio.trim(),
       photoPath: _removePhoto ? null : _saved?.photoPath,
       logoPath: _removeLogo ? null : _saved?.logoPath,
+      coverPath: _removeCover ? null : _saved?.coverPath,
       socials: d.socials,
     );
     await showModalBottomSheet<void>(
@@ -265,7 +298,12 @@ class _TeacherCardState extends ConsumerState<TeacherCardScreen> {
                 style: Theme.of(ctx).textTheme.titleMedium,
               ),
               const SizedBox(height: FeSpace.sm),
-              TeacherCardView(card: card, photoBytes: _photo, logoBytes: _logo),
+              TeacherCardView(
+                card: card,
+                photoBytes: _photo,
+                logoBytes: _logo,
+                coverBytes: _cover,
+              ),
               const SizedBox(height: FeSpace.sm),
               Text(
                 l.tcPreviewNote,
@@ -341,6 +379,8 @@ class _TeacherCardState extends ConsumerState<TeacherCardScreen> {
       final hidden = _saved?.hiddenByAdmin ?? false;
       final shownPhotoPath = _removePhoto ? null : _saved?.photoPath;
       final shownLogoPath = _removeLogo ? null : _saved?.logoPath;
+      final shownCoverPath = _removeCover ? null : _saved?.coverPath;
+      final hasCover = _cover != null || shownCoverPath != null;
       final hasPhoto = _photo != null || shownPhotoPath != null;
       final hasLogo = _logo != null || shownLogoPath != null;
       body = Column(
@@ -377,6 +417,36 @@ class _TeacherCardState extends ConsumerState<TeacherCardScreen> {
           const SizedBox(height: FeSpace.xs),
           Text(
             l.tcPhotoNote,
+            style: t.bodySmall?.copyWith(color: c.textSecondary),
+          ),
+          FeSectionHeader(l.tcCoverSection),
+          _imageRow(
+            id: 'tc.coverRow',
+            preview: TeacherCoverImage(
+              key: const Key('tc.coverPreview'),
+              path: shownCoverPath,
+              bytes: _cover,
+              width: 120,
+              height: 40,
+              borderRadius: BorderRadius.circular(FeRadius.sm),
+              placeholder: Icon(
+                Icons.panorama_outlined,
+                color: c.textSecondary,
+              ),
+            ),
+            has: hasCover,
+            chooseLabel: hasCover ? l.tcCoverChange : l.tcCoverChoose,
+            removeLabel: l.tcCoverRemove,
+            onChoose: _pickCover,
+            onRemove: () => setState(() {
+              _cover = null;
+              _removeCover = true;
+            }),
+          ),
+          const SizedBox(height: FeSpace.xs),
+          Text(
+            l.tcCoverHint,
+            key: const Key('tc.coverHint'),
             style: t.bodySmall?.copyWith(color: c.textSecondary),
           ),
           const SizedBox(height: FeSpace.md),

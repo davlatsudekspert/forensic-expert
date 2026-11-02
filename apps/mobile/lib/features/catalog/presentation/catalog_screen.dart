@@ -9,6 +9,8 @@ import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
+import '../../../core/settings/app_settings.dart' show UserMode;
+import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/catalog.dart';
 import '../../../domain/teacher_card/teacher_card.dart';
@@ -58,17 +60,36 @@ class _CatalogScreenState extends ConsumerState<CatalogScreen> {
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
     final signedIn = ref.watch(authStateProvider).signedIn;
+    final mode = ref.watch(
+      settingsControllerProvider.select((s) => s.userMode),
+    );
+    // Ustoz — faqat ustozlar, Mutaxassis — faqat mutaxassislar (yorliqsiz);
+    // Talaba (yoki rejim tanlanmagan) ikkalasini ko‘radi.
+    final kinds = switch (mode) {
+      UserMode.teacher => const [CatalogKind.teacher],
+      UserMode.professional => const [CatalogKind.expert],
+      _ => CatalogKind.values,
+    };
     return DefaultTabController(
-      length: 2,
+      key: ValueKey(kinds.length),
+      length: kinds.length,
       child: Scaffold(
         appBar: AppBar(
           title: FeAppBarTitle(l.catTitle),
-          bottom: TabBar(
-            tabs: [
-              Tab(key: const Key('cat.tab.teacher'), text: l.catTabTeachers),
-              Tab(key: const Key('cat.tab.expert'), text: l.catTabExperts),
-            ],
-          ),
+          bottom: kinds.length < 2
+              ? null
+              : TabBar(
+                  tabs: [
+                    Tab(
+                      key: const Key('cat.tab.teacher'),
+                      text: l.catTabTeachers,
+                    ),
+                    Tab(
+                      key: const Key('cat.tab.expert'),
+                      text: l.catTabExperts,
+                    ),
+                  ],
+                ),
         ),
         body: SafeArea(
           child: !signedIn
@@ -103,17 +124,24 @@ class _CatalogScreenState extends ConsumerState<CatalogScreen> {
                       ),
                     ),
                     Expanded(
-                      child: TabBarView(
-                        children: [
-                          for (final kind in CatalogKind.values)
-                            _CatalogList(
-                              kind: kind,
+                      child: kinds.length < 2
+                          ? _CatalogList(
+                              kind: kinds.single,
                               query: _query,
                               merged: _merged,
                               onStar: _toggle,
+                            )
+                          : TabBarView(
+                              children: [
+                                for (final kind in kinds)
+                                  _CatalogList(
+                                    kind: kind,
+                                    query: _query,
+                                    merged: _merged,
+                                    onStar: _toggle,
+                                  ),
+                              ],
                             ),
-                        ],
-                      ),
                     ),
                   ],
                 ),
@@ -294,11 +322,11 @@ class _EntryCard extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  entry.name,
+                _NameWithBadge(
+                  name: entry.name,
+                  verified: entry.verified,
                   style: t.titleSmall,
                   maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
                 ),
                 if (entry.subtitle.isNotEmpty)
                   Text(
@@ -382,18 +410,21 @@ class _EntrySheetState extends State<_EntrySheet> {
                     height: band,
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(FeRadius.card),
-                      child: DecoratedBox(
-                        decoration: const BoxDecoration(
-                          // Har ikki mavzuda bir xil to‘q «muhr» rangi.
-                          gradient: LinearGradient(
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                            colors: [Color(0xFF1C2433), Color(0xFF0E1219)],
+                      child: TeacherCoverLayer(
+                        path: _e.coverPath,
+                        fallback: DecoratedBox(
+                          decoration: const BoxDecoration(
+                            // Har ikki mavzuda bir xil to‘q «muhr» rangi.
+                            gradient: LinearGradient(
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
+                              colors: [Color(0xFF1C2433), Color(0xFF0E1219)],
+                            ),
                           ),
-                        ),
-                        child: CustomPaint(
-                          painter: _RingsPainter(c.accent),
-                          child: const SizedBox.expand(),
+                          child: CustomPaint(
+                            painter: _RingsPainter(c.accent),
+                            child: const SizedBox.expand(),
+                          ),
                         ),
                       ),
                     ),
@@ -448,11 +479,13 @@ class _EntrySheetState extends State<_EntrySheet> {
                     ),
                   ),
                   const SizedBox(height: FeSpace.xs),
-                  Text(
-                    _e.name,
-                    key: const Key('cat.sheetName'),
-                    textAlign: TextAlign.center,
+                  _NameWithBadge(
+                    name: _e.name,
+                    verified: _e.verified,
+                    nameKey: const Key('cat.sheetName'),
                     style: t.headlineSmall?.copyWith(height: 1.15),
+                    textAlign: TextAlign.center,
+                    iconSize: 22,
                   ),
                   if (_e.subtitle.isNotEmpty) ...[
                     const SizedBox(height: FeSpace.xs),
@@ -529,6 +562,68 @@ class _EntrySheetState extends State<_EntrySheet> {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// Ism + (tasdiqlangan bo‘lsa) kichik belgi. Belgi ism bilan bir qatorda
+/// qoladi (uzun ismda ham), semantikada «Tasdiqlangan mutaxassis».
+class _NameWithBadge extends StatelessWidget {
+  const _NameWithBadge({
+    required this.name,
+    required this.verified,
+    required this.style,
+    this.nameKey,
+    this.maxLines = 3,
+    this.textAlign = TextAlign.start,
+    this.iconSize = 17,
+  });
+
+  final String name;
+  final bool verified;
+  final TextStyle? style;
+  final Key? nameKey;
+  final int maxLines;
+  final TextAlign textAlign;
+  final double iconSize;
+
+  @override
+  Widget build(BuildContext context) {
+    final text = Text(
+      name,
+      key: nameKey,
+      style: style,
+      textAlign: textAlign,
+      maxLines: maxLines,
+      overflow: TextOverflow.ellipsis,
+    );
+    if (!verified) return text;
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: textAlign == TextAlign.center
+          ? MainAxisAlignment.center
+          : MainAxisAlignment.start,
+      children: [
+        Flexible(child: text),
+        const SizedBox(width: FeSpace.xxs),
+        Tooltip(
+          message: l.catVerifiedExpert,
+          child: Semantics(
+            label: l.catVerifiedExpert,
+            image: true,
+            child: ExcludeSemantics(
+              child: Icon(
+                Icons.verified,
+                key: const Key('cat.verifiedBadge'),
+                size: iconSize,
+                color: c.accent,
+              ),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

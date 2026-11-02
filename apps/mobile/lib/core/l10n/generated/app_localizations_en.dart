@@ -12958,7 +12958,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get catEmptyExperts =>
-      'No experts in the catalogue yet. Only verified experts appear here.';
+      'No specialists in the catalogue yet. They appear here once they turn on “Show in the specialists catalogue” in their profile.';
 
   @override
   String get catLoadFailed =>
@@ -13096,4 +13096,36 @@ class AppLocalizationsEn extends AppLocalizations {
   String assessmentExamTimer(String t) {
     return 'Time left: $t';
   }
+
+  @override
+  String get catShowMeTeachers => 'Show in the teachers catalogue';
+
+  @override
+  String get catShowMeExperts => 'Show in the specialists catalogue';
+
+  @override
+  String get catExpertUnverifiedHint =>
+      'A badge appears next to your name once you are verified';
+
+  @override
+  String get catVerifiedExpert => 'Verified specialist';
+
+  @override
+  String get tcCoverSection => 'Cover image';
+
+  @override
+  String get tcCoverChoose => 'Choose cover';
+
+  @override
+  String get tcCoverChange => 'Change cover';
+
+  @override
+  String get tcCoverRemove => 'Remove cover';
+
+  @override
+  String get tcCoverHint =>
+      'Recommended: 1500×500 px (3:1), JPG or PNG, up to 1 MB';
+
+  @override
+  String get tcCoverSemantics => 'Cover image';
 }

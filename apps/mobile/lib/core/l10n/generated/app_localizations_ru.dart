@@ -13009,7 +13009,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get catEmptyExperts =>
-      'В каталоге пока нет экспертов. Здесь показываются только подтверждённые эксперты.';
+      'В каталоге пока нет специалистов. Они появятся здесь, как только включат «Показывать в каталоге специалистов» в профиле.';
 
   @override
   String get catLoadFailed =>
@@ -13148,4 +13148,36 @@ class AppLocalizationsRu extends AppLocalizations {
   String assessmentExamTimer(String t) {
     return 'Осталось: $t';
   }
+
+  @override
+  String get catShowMeTeachers => 'Показывать в каталоге преподавателей';
+
+  @override
+  String get catShowMeExperts => 'Показывать в каталоге специалистов';
+
+  @override
+  String get catExpertUnverifiedHint =>
+      'После подтверждения рядом с вашим именем появится значок';
+
+  @override
+  String get catVerifiedExpert => 'Подтверждённый специалист';
+
+  @override
+  String get tcCoverSection => 'Фоновое изображение';
+
+  @override
+  String get tcCoverChoose => 'Выбрать фон';
+
+  @override
+  String get tcCoverChange => 'Заменить фон';
+
+  @override
+  String get tcCoverRemove => 'Убрать фон';
+
+  @override
+  String get tcCoverHint =>
+      'Рекомендуем: 1500×500 px (3:1), JPG или PNG, до 1 МБ';
+
+  @override
+  String get tcCoverSemantics => 'Фоновое изображение';
 }

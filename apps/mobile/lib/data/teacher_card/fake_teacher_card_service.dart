@@ -58,6 +58,7 @@ class FakeTeacherCardService implements TeacherCardService {
               bio: c.bio,
               photoPath: c.photoPath,
               logoPath: c.logoPath,
+              coverPath: c.coverPath,
               socials: c.socials,
               visible: c.visible,
               hiddenByAdmin: backend.hidden.contains(uid),
@@ -94,6 +95,7 @@ class FakeTeacherCardService implements TeacherCardService {
     final old = backend.cards[uid];
     String? photo = draft.removePhoto ? null : old?.photoPath;
     String? logo = draft.removeLogo ? null : old?.logoPath;
+    String? cover = draft.removeCover ? null : old?.coverPath;
     if (draft.photo != null) {
       photo = backend.newPath(uid, 'photo', draft.photo!);
       backend.files[photo] = draft.photo!;
@@ -102,8 +104,14 @@ class FakeTeacherCardService implements TeacherCardService {
       logo = backend.newPath(uid, 'logo', draft.logo!);
       backend.files[logo] = draft.logo!;
     }
-    for (final p in [old?.photoPath, old?.logoPath]) {
-      if (p != null && p != photo && p != logo) backend.files.remove(p);
+    if (draft.cover != null) {
+      cover = backend.newPath(uid, 'cover', draft.cover!);
+      backend.files[cover] = draft.cover!;
+    }
+    for (final p in [old?.photoPath, old?.logoPath, old?.coverPath]) {
+      if (p != null && p != photo && p != logo && p != cover) {
+        backend.files.remove(p);
+      }
     }
     final saved = TeacherCard(
       teacherId: uid,
@@ -113,6 +121,7 @@ class FakeTeacherCardService implements TeacherCardService {
       bio: draft.bio.trim(),
       photoPath: photo,
       logoPath: logo,
+      coverPath: cover,
       socials: draft.socials,
       visible: draft.visible,
     );
@@ -128,7 +137,7 @@ class FakeTeacherCardService implements TeacherCardService {
       return const TeacherCardResult.fail(TeacherCardFailure.notSignedIn);
     }
     final c = backend.cards.remove(uid);
-    for (final p in [c?.photoPath, c?.logoPath]) {
+    for (final p in [c?.photoPath, c?.logoPath, c?.coverPath]) {
       if (p != null) backend.files.remove(p);
     }
     return const TeacherCardResult.ok(null);
@@ -162,6 +171,7 @@ class FakeTeacherCardService implements TeacherCardService {
         bio: c.bio,
         photoPath: c.photoPath,
         logoPath: c.logoPath,
+        coverPath: c.coverPath,
         socials: c.socials,
       ),
     );
