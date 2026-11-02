@@ -990,7 +990,8 @@ class AssessmentTestScreen extends ConsumerStatefulWidget {
 }
 
 class _AssessmentTestScreenState extends ConsumerState<AssessmentTestScreen> {
-  static const _size = 20;
+  /// Bir mashqda 50 ta savol (egasi, 2026-11-02).
+  static const _size = 50;
   List<AssessmentTestQuestion>? _run;
   final _answers = <int?>[];
   int _i = 0;

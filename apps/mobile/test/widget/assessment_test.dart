@@ -138,8 +138,9 @@ void main() {
     expect(_key('assessment.testsHeader'), findsOne);
     await tester.tap(_key('assessment.testStart'));
     await tester.pumpAndSettle();
-    expect(find.text('1 / 20'), findsOne);
-    for (var i = 0; i < 20; i++) {
+    // Bir mashqda 50 ta savol (egasi, 2026-11-02).
+    expect(find.text('1 / 50'), findsOne);
+    for (var i = 0; i < 50; i++) {
       await _tapCentered(tester, _key('assessment.opt.0'));
       expect(_key('assessment.verdict'), findsOne);
       await _tapCentered(tester, _key('assessment.next'));
