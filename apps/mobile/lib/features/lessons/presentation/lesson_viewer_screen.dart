@@ -164,13 +164,9 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
   bool _auto = false;
   bool _autoPaused = false;
 
-  /// «Tinglash» ovoz chiqaryapti — o‘qilayotgan matn ekranda ko‘rinadi.
-  bool _speaking = false;
-
-  /// Yuqoridagi «Matn» tugmasi: `null` — ovoz o‘qiyotganda o‘zi chiqadi;
-  /// `true`/`false` — foydalanuvchi o‘zi yoqdi/yopdi.
-  bool? _textPref;
-  bool get _textVisible => _textPref ?? _speaking;
+  /// Yuqoridagi 🗣 tugmasi: bosilganda slayd o‘rnida to‘liq «Tushuntirish»
+  /// ochiladi, yana bosilsa slaydga qaytadi (egasi, 2026-11-02).
+  bool _textVisible = false;
   int _autoSeconds = 30;
   bool _selfNav = false;
   Timer? _autoTimer;
@@ -619,9 +615,6 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
     onPageChanged: (i) {
       setState(() {
         _index = i;
-        // Eski sahifa ovozi to‘xtadi; «Ovoz tugagach» rejimida yangisi o‘zi
-        // boshlanadi va panelni yana ko‘rsatadi.
-        if (!_voiceAuto) _speaking = false;
       });
       if (_selfNav) {
         _selfNav = false;
@@ -715,7 +708,7 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
               isSelected: _textVisible,
               icon: const Icon(Icons.record_voice_over_outlined),
               selectedIcon: const Icon(Icons.record_voice_over),
-              onPressed: () => setState(() => _textPref = !_textVisible),
+              onPressed: () => setState(() => _textVisible = !_textVisible),
             ),
           // Tor telefonda sarlavhaga joy qoladi: test tugmasi oxirgi slaydda bor.
           if (MediaQuery.sizeOf(context).width >= 420)
@@ -838,13 +831,6 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
               listenLang: widget.deck.sourceLang,
               listenAuto: _voiceAuto,
               onListenFinished: _onListenFinished,
-              onListenState: (st) {
-                final on =
-                    st == ListenState.loading ||
-                    st == ListenState.playing ||
-                    st == ListenState.paused;
-                if (on != _speaking) setState(() => _speaking = on);
-              },
               onPrev: _index > 0 ? () => _go(_index - 1, pages.length) : null,
               onNext: _index < pages.length - 1
                   ? () => _go(_index + 1, pages.length)
@@ -1205,7 +1191,6 @@ class _ControlBar extends StatelessWidget {
     this.listenLang,
     this.listenAuto = false,
     this.onListenFinished,
-    this.onListenState,
     required this.onPrev,
     required this.onNext,
   });
@@ -1220,7 +1205,6 @@ class _ControlBar extends StatelessWidget {
   /// «Ovoz tugagach» avto rejimi: har slayd o‘zi o‘qila boshlaydi.
   final bool listenAuto;
   final VoidCallback? onListenFinished;
-  final ValueChanged<ListenState>? onListenState;
   final VoidCallback? onPrev;
   final VoidCallback? onNext;
 
@@ -1248,7 +1232,6 @@ class _ControlBar extends StatelessWidget {
               key: ValueKey('lesson.listen.$index'),
               autoStart: listenAuto,
               onFinished: onListenFinished,
-              onStateChanged: onListenState,
               text: listenText,
               lang: listenLang,
               // Tor ekran yoki katta shriftda — faqat belgi (sig‘sin).

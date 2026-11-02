@@ -895,7 +895,10 @@ void main() {
       await tester.pump();
       await tester.pump();
       expect(svc.texts.single, 'Bu slaydda asosiy fikr ravon tushuntiriladi.');
-      // O‘qiyotganda matn pastda ko‘rinadi; «Matn» tugmasi yopadi/ochadi.
+      // Tinglash o‘zi matnni ochmaydi; tepadagi 🗣 tugmasi ochadi/yopadi.
+      expect(find.byKey(const Key('lesson.spokenText')), findsNothing);
+      await tester.tap(find.byKey(const Key('lesson.explain')));
+      await tester.pump();
       expect(find.byKey(const Key('lesson.spokenText')), findsOneWidget);
       expect(
         find.text('Bu slaydda asosiy fikr ravon tushuntiriladi.'),
@@ -904,9 +907,6 @@ void main() {
       await tester.tap(find.byKey(const Key('lesson.explain')));
       await tester.pump();
       expect(find.byKey(const Key('lesson.spokenText')), findsNothing);
-      await tester.tap(find.byKey(const Key('lesson.explain')));
-      await tester.pump();
-      expect(find.byKey(const Key('lesson.spokenText')), findsOneWidget);
       // Tushuntirishsiz slaydda tugma yo‘q.
       await tester.tap(find.byKey(const Key('lesson.next')));
       await tester.pumpAndSettle();
