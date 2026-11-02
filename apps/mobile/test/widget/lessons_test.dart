@@ -857,6 +857,59 @@ void main() {
       },
     );
 
+    testWidgets('tushuntirish bo‘lsa — u o‘qiladi va ekranda ochiladi', (
+      tester,
+    ) async {
+      final svc = FakeTtsService();
+      final base = _deck('a1', 'demo-topic');
+      final inner = base['deck']! as Map<String, Object?>;
+      final slides = inner['slides']! as List<Object?>;
+      final deck = {
+        ...base,
+        'deck': {
+          ...inner,
+          'slides': [
+            {
+              ...slides.first! as Map<String, Object?>,
+              'narration': 'Bu slaydda asosiy fikr ravon tushuntiriladi.',
+            },
+            ...slides.skip(1),
+          ],
+        },
+      };
+      await open(
+        tester,
+        path: Routes.lesson('a1'),
+        lessons: FakeLessonsService(
+          isTeacher: false,
+          demo: false,
+          decks: {'a1': deck},
+        ),
+        teacher: false,
+        extra: [
+          ttsServiceProvider.overrideWithValue(svc),
+          ttsPlayerFactoryProvider.overrideWithValue(FakeTtsPlayer.new),
+        ],
+      );
+      await tester.tap(find.byKey(listen));
+      await tester.pump();
+      await tester.pump();
+      expect(svc.texts.single, 'Bu slaydda asosiy fikr ravon tushuntiriladi.');
+      await tester.tap(find.byKey(const Key('lesson.explain')));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const Key('lesson.explainSheet')), findsOneWidget);
+      expect(
+        find.text('Bu slaydda asosiy fikr ravon tushuntiriladi.'),
+        findsOneWidget,
+      );
+      // Tushuntirishsiz slaydda tugma yo‘q.
+      await tester.tapAt(const Offset(10, 10));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const Key('lesson.next')));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const Key('lesson.explain')), findsNothing);
+    });
+
     testWidgets('adabiyotlar sahifasida tugma yo‘q', (tester) async {
       await openWithTts(tester);
       for (var i = 0; i < 4; i++) {

@@ -6,6 +6,8 @@ K = {
  'lessonAutoVoice': ('Ovoz tugagach', 'После озвучки', 'After narration'),
  'lessonAutoVoiceRunning': ('Avto: o‘qib bo‘lingach keyingi slayd', 'Авто: после озвучки — следующий слайд', 'Auto: next slide after narration'),
  'lessonListenDone': ('Slayd o‘qib bo‘lindi', 'Слайд озвучен', 'Slide finished'),
+ 'lessonExplainTitle': ('Tushuntirish', 'Пояснение', 'Explanation'),
+ 'lessonExplainNote': ('Slayd matni asosida sun’iy intellekt yordamida tayyorlangan, mutaxassis tomonidan hali tekshirilmagan. Faktlar va manbalar — slaydning o‘zida.', 'Подготовлено с помощью ИИ на основе текста слайда, специалистом ещё не проверено. Факты и источники — на самом слайде.', 'Prepared with AI from the slide text; not yet reviewed by an expert. Facts and sources are on the slide itself.'),
  'lessonListenContinue': ('Davom ettirish', 'Продолжить', 'Continue'),
 }
 for i, lang in enumerate(('uz', 'ru', 'en')):

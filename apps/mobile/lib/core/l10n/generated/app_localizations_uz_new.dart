@@ -3964,7 +3964,10 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get dashboardQueueEmpty => toUzNewAlphabet(super.dashboardQueueEmpty);
 
   @override
-  String dashboardItemMeta(int claims, int sources, String level, String version) =>
+  String dashboardItemMeta(int claims,
+    int sources,
+    String level,
+    String version,) =>
       toUzNewAlphabet(super.dashboardItemMeta(claims, sources, level, version));
 
   @override
@@ -11598,5 +11601,11 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
 
   @override
   String get lessonListenContinue => toUzNewAlphabet(super.lessonListenContinue);
+
+  @override
+  String get lessonExplainTitle => toUzNewAlphabet(super.lessonExplainTitle);
+
+  @override
+  String get lessonExplainNote => toUzNewAlphabet(super.lessonExplainNote);
 
 }

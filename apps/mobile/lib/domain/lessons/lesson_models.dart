@@ -607,6 +607,7 @@ class LessonSlide {
     this.teacherNotes = '',
     this.diagram,
     this.image,
+    this.narration = '',
   });
 
   factory LessonSlide.fromJson(Object? raw) {
@@ -621,6 +622,7 @@ class LessonSlide {
       teacherNotes: _s(j['teacher_notes']),
       diagram: LessonDiagram.tryParse(j['diagram']),
       image: LessonImage.tryParse(j['image']),
+      narration: _s(j['narration']),
     );
   }
 
@@ -628,6 +630,11 @@ class LessonSlide {
   final List<LessonBullet> bullets;
   final String teacherNotes;
   final LessonDiagram? diagram;
+
+  /// Ovozli tushuntirish (ravon o‘zbekcha, faqat shu slayd faktlari asosida;
+  /// AI yordamida tayyorlangan, tekshirilmagan). Bo‘sh — «Tinglash» bandlarni
+  /// o‘qiydi.
+  final String narration;
 
   /// Ixtiyoriy rasm (qurilma fotosi yoki sxema; PNG/JPG). Yo‘q/buzuq — null.
   final LessonImage? image;

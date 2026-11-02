@@ -27,6 +27,8 @@ class LessonPage {
     this.part = 1,
     this.parts = 1,
     this.originalTitle,
+    this.narration = '',
+    this.narrated = false,
   });
 
   final LessonPageKind kind;
@@ -55,6 +57,29 @@ class LessonPage {
 
   /// Asl slayd sarlavhasi — ro‘yxat uchun.
   String get baseTitle => originalTitle ?? title;
+
+  /// Slaydning ovozli tushuntirishi (faqat slaydning birinchi sahifasida).
+  final String narration;
+
+  /// Slaydda tushuntirish bor (davom sahifalarida ham `true`: ular alohida
+  /// o‘qilmaydi — tushuntirish butun slaydni qamraydi).
+  final bool narrated;
+
+  LessonPage withNarration(String text, {required bool first}) => LessonPage(
+    kind: kind,
+    title: title,
+    bullets: bullets,
+    diagram: diagram,
+    image: image,
+    notes: notes,
+    sources: sources,
+    group: group,
+    part: part,
+    parts: parts,
+    originalTitle: originalTitle,
+    narration: first ? text : '',
+    narrated: true,
+  );
 }
 
 /// «Tinglash» uchun matn: sarlavha + band matnlari. Ustoz eslatmalari,
@@ -62,6 +87,7 @@ class LessonPage {
 /// Har qism nuqta bilan tugaydi — ovoz pauza qilishi uchun.
 String lessonListenText(LessonPage page) {
   if (page.kind == LessonPageKind.references) return '';
+  if (page.narrated) return page.narration.trim();
   String sentence(String raw) {
     final t = raw.trim();
     if (t.isEmpty) return '';
@@ -116,19 +142,22 @@ List<LessonPage> buildLessonPages(LessonDeck d, AppLocalizations l) {
   final groups = <List<LessonPage>>[];
   for (var i = 0; i < d.slides.length; i++) {
     final s = d.slides[i];
-    groups.add(
-      b.slide(
-        group: i,
-        kind: LessonPageKind.slide,
-        title: s.title.isEmpty ? l.lessonViewerSlideLabel(i + 1) : s.title,
-        bullets: s.bullets,
-        diagram: s.diagram,
-        image: s.image != null && LessonImage.isAllowedUrl(s.image!.url)
-            ? s.image
-            : null,
-        notes: s.teacherNotes,
-      ),
+    final built = b.slide(
+      group: i,
+      kind: LessonPageKind.slide,
+      title: s.title.isEmpty ? l.lessonViewerSlideLabel(i + 1) : s.title,
+      bullets: s.bullets,
+      diagram: s.diagram,
+      image: s.image != null && LessonImage.isAllowedUrl(s.image!.url)
+          ? s.image
+          : null,
+      notes: s.teacherNotes,
     );
+    final n = s.narration.trim();
+    groups.add([
+      for (var k = 0; k < built.length; k++)
+        n.isEmpty ? built[k] : built[k].withNarration(n, first: k == 0),
+    ]);
   }
   if (d.extras.isNotEmpty) {
     groups.add(

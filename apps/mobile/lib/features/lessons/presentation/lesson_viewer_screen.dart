@@ -329,6 +329,49 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
     }
   }
 
+  Future<void> _showExplain(String text) => showModalBottomSheet<void>(
+    context: context,
+    showDragHandle: true,
+    isScrollControlled: true,
+    builder: (c) {
+      final l = AppLocalizations.of(c);
+      final t = Theme.of(c).textTheme;
+      return SafeArea(
+        child: ConstrainedBox(
+          constraints: BoxConstraints(
+            maxHeight: MediaQuery.sizeOf(c).height * 0.8,
+          ),
+          child: ListView(
+            key: const Key('lesson.explainSheet'),
+            shrinkWrap: true,
+            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
+            padding: const EdgeInsets.fromLTRB(
+              FeSpace.md,
+              0,
+              FeSpace.md,
+              FeSpace.lg,
+            ),
+            children: [
+              Semantics(
+                header: true,
+                child: Text(l.lessonExplainTitle, style: t.titleMedium),
+              ),
+              const SizedBox(height: FeSpace.xs),
+              Text(
+                l.lessonExplainNote,
+                style: t.bodySmall?.copyWith(
+                  color: FeTheme.of(c).textSecondary,
+                ),
+              ),
+              const SizedBox(height: FeSpace.sm),
+              SelectableText(text, style: t.bodyLarge),
+            ],
+          ),
+        ),
+      );
+    },
+  );
+
   Future<void> _openAutoSheet() async {
     await showModalBottomSheet<void>(
       context: context,
@@ -659,6 +702,15 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     final page = pages[_index];
+    // Slaydning ovozli tushuntirishi (davom sahifasida — birinchi qismdan).
+    final explain = page.narrated
+        ? pages
+              .firstWhere(
+                (p) => p.group == page.group && p.narration.isNotEmpty,
+                orElse: () => page,
+              )
+              .narration
+        : '';
     final lang = Localizations.localeOf(context).languageCode;
     final pending = lang != widget.deck.sourceLang;
     // «Ustoz eslatmalari» (vaqt, muhokama savollari, tipik xatolar) faqat
@@ -686,6 +738,13 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
       appBar: AppBar(
         title: FeAppBarTitle(widget.deck.title),
         actions: [
+          if (explain.isNotEmpty)
+            IconButton(
+              key: const Key('lesson.explain'),
+              tooltip: l.lessonExplainTitle,
+              icon: const Icon(Icons.record_voice_over_outlined),
+              onPressed: () => _showExplain(explain),
+            ),
           // Tor telefonda sarlavhaga joy qoladi: test tugmasi oxirgi slaydda bor.
           if (MediaQuery.sizeOf(context).width >= 420)
             IconButton(
