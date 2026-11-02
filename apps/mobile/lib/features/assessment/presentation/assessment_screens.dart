@@ -1141,7 +1141,8 @@ class AssessmentTestScreen extends ConsumerStatefulWidget {
       _AssessmentTestScreenState();
 }
 
-class _AssessmentTestScreenState extends ConsumerState<AssessmentTestScreen> {
+class _AssessmentTestScreenState extends ConsumerState<AssessmentTestScreen>
+    with WidgetsBindingObserver {
   List<AssessmentTestQuestion>? _run;
   final _answers = <int?>[];
   int _i = 0;
@@ -1152,8 +1153,39 @@ class _AssessmentTestScreenState extends ConsumerState<AssessmentTestScreen> {
 
   bool get _exam => widget.mode == AssessmentTestMode.exam;
 
+  /// Ilova fonga o‘tgan vaqt: qaytganda o‘tgan soniyalar taymerdan ayiriladi
+  /// (fonda Timer to‘xtashi mumkin — imtihon vaqti baribir o‘tadi).
+  DateTime? _pausedAt;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (!_exam || _timer == null || _done) return;
+    if (state == AppLifecycleState.paused ||
+        state == AppLifecycleState.hidden) {
+      _pausedAt ??= DateTime.now();
+    } else if (state == AppLifecycleState.resumed && _pausedAt != null) {
+      final gone = DateTime.now().difference(_pausedAt!).inSeconds;
+      _pausedAt = null;
+      if (gone > 0) {
+        _left.value = (_left.value - gone).clamp(0, assessmentExamSeconds);
+        final spec = ref
+            .read(assessmentProvider)
+            .value
+            ?.specialty(widget.specialtyId);
+        if (_left.value <= 0 && spec != null) _finish(spec, timeUp: true);
+      }
+    }
+  }
+
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
     _timer?.cancel();
     _left.dispose();
     super.dispose();
