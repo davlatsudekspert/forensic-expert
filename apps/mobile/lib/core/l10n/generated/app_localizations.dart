@@ -22190,6 +22190,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Eye drops: ion pair, chloroform, 408 nm — scheme, calibration line and calculation'**
   String get weTropicamideBody;
+
+  /// Equipment page: COHb spectrum diagram / GC-MS peak reading.
+  ///
+  /// In en, this message translates to:
+  /// **'Phenobarbital in blood and urine (UV-1900i)'**
+  String get weBarbTitle;
+
+  /// Equipment page: COHb spectrum diagram / GC-MS peak reading.
+  ///
+  /// In en, this message translates to:
+  /// **'pH 10 → pH 13 difference at 260 nm — extraction scheme, spectra and calculation'**
+  String get weBarbBody;
 }
 
 class _AppLocalizationsDelegate

@@ -85,6 +85,12 @@ void main() {
     ),
     ('6_gcms', UserMode.professional, '/home/equipment/item/gc_ms', 1.0),
     (
+      '8_fenobarbital',
+      UserMode.professional,
+      '/home/equipment/example/phenobarbital_blood_uv',
+      1.0,
+    ),
+    (
       '7_tropikamid',
       UserMode.professional,
       '/home/equipment/example/tropicamide_uv',

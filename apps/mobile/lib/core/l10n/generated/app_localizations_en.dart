@@ -12801,4 +12801,11 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get weTropicamideBody =>
       'Eye drops: ion pair, chloroform, 408 nm — scheme, calibration line and calculation';
+
+  @override
+  String get weBarbTitle => 'Phenobarbital in blood and urine (UV-1900i)';
+
+  @override
+  String get weBarbBody =>
+      'pH 10 → pH 13 difference at 260 nm — extraction scheme, spectra and calculation';
 }

@@ -15,6 +15,8 @@ K = {
  'weHeader': ('Amaliy misol', 'Практический пример', 'Worked example'),
  'weTropicamideTitle': ('Tropikamidni miqdoriy aniqlash (UV-1900i)', 'Количественное определение тропикамида (UV-1900i)', 'Assay of tropicamide (UV-1900i)'),
  'weTropicamideBody': ('Ko‘z tomchisi: ion-juft, xloroform, 408 nm — sxema, kalibrlash chizig‘i va hisob', 'Глазные капли: ионная пара, хлороформ, 408 нм — схема, калибровочный график и расчёт', 'Eye drops: ion pair, chloroform, 408 nm — scheme, calibration line and calculation'),
+ 'weBarbTitle': ('Qon va siydikda fenobarbital (UV-1900i)', 'Фенобарбитал в крови и моче (UV-1900i)', 'Phenobarbital in blood and urine (UV-1900i)'),
+ 'weBarbBody': ('pH 10 → pH 13 farqi, 260 nm — ajratib olish sxemasi, spektrlar va hisob', 'Разность pH 10 → pH 13, 260 нм — схема извлечения, спектры и расчёт', 'pH 10 → pH 13 difference at 260 nm — extraction scheme, spectra and calculation'),
  'gcmsPeaksTitle': ('Cho‘qqilarni o‘qish', 'Чтение пиков', 'Reading the peaks'),
 }
 for i, lang in enumerate(('uz', 'ru', 'en')):

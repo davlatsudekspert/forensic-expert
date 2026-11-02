@@ -16,7 +16,11 @@ abstract final class EquipmentDiagrams {
   static Widget? forItem(String id) => switch (id) {
     'uv_vis' => const Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [_CohbSpectrumCard(), _WorkedExampleCard('tropicamide_uv')],
+      children: [
+        _CohbSpectrumCard(),
+        _WorkedExampleCard('phenobarbital_blood_uv'),
+        _WorkedExampleCard('tropicamide_uv'),
+      ],
     ),
     'gc_ms' => const _GcmsReadingCard(),
     _ => null,
@@ -328,10 +332,17 @@ class _WorkedExampleCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(l.weTropicamideTitle, style: t.titleSmall),
+                    Text(
+                      id == 'tropicamide_uv'
+                          ? l.weTropicamideTitle
+                          : l.weBarbTitle,
+                      style: t.titleSmall,
+                    ),
                     const SizedBox(height: 2),
                     Text(
-                      l.weTropicamideBody,
+                      id == 'tropicamide_uv'
+                          ? l.weTropicamideBody
+                          : l.weBarbBody,
                       style: t.bodySmall?.copyWith(color: c.textSecondary),
                     ),
                   ],

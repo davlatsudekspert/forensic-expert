@@ -12727,4 +12727,11 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get weTropicamideBody =>
       'Ko‘z tomchisi: ion-juft, xloroform, 408 nm — sxema, kalibrlash chizig‘i va hisob';
+
+  @override
+  String get weBarbTitle => 'Qon va siydikda fenobarbital (UV-1900i)';
+
+  @override
+  String get weBarbBody =>
+      'pH 10 → pH 13 farqi, 260 nm — ajratib olish sxemasi, spektrlar va hisob';
 }

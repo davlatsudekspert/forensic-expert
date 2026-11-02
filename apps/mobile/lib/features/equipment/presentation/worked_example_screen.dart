@@ -15,7 +15,7 @@ import '../../../core/widgets/fe_components.dart';
 /// Amaliy misol: dori moddasini miqdoriy aniqlash, sxema va diagrammalar
 /// bilan (egasi talabi, 2026-11-02). Matn asli o‘zbekcha, JSON paketda;
 /// har band manbaga (`src` — `sources` ro‘yxatidagi indeks) bog‘langan.
-const workedExampleIds = ['tropicamide_uv'];
+const workedExampleIds = ['tropicamide_uv', 'phenobarbital_blood_uv'];
 
 final workedExampleLoaderProvider =
     Provider<Future<String> Function(String id)>(
@@ -161,10 +161,7 @@ class WorkedExampleScreen extends ConsumerWidget {
                           color: c.accentContainer,
                           shape: BoxShape.circle,
                         ),
-                        child: Text(
-                          (i + 1).toString(),
-                          style: t.labelMedium,
-                        ),
+                        child: Text((i + 1).toString(), style: t.labelMedium),
                       ),
                       Expanded(
                         child: Text(
@@ -194,7 +191,8 @@ class WorkedExampleScreen extends ConsumerWidget {
         case 'calibration':
           final eps = _d(s['epsilon']);
           final m = _d(s['molar_mass']);
-          final slope = m == 0 ? 0.0 : eps / m / 1000;
+          final direct = _d(s['slope_per_unit']);
+          final slope = direct > 0 ? direct : (m == 0 ? 0.0 : eps / m / 1000);
           final pts = [
             for (final p in (s['points'] as List? ?? const []))
               if (p is num) p.toDouble(),
@@ -218,6 +216,73 @@ class WorkedExampleScreen extends ConsumerWidget {
                   ),
                 ),
               ),
+              const SizedBox(height: FeSpace.xs),
+              Text(
+                '${u(_s(s['note']))} ${ref0(s['src'])}',
+                style: t.bodySmall?.copyWith(color: c.textSecondary),
+              ),
+            ],
+          );
+        case 'spectra':
+          final range = [
+            for (final x in (s['range'] as List? ?? const [220, 300]))
+              if (x is num) x.toDouble(),
+          ];
+          final curves = _maps(s['curves']);
+          final colors = [c.accent, const Color(0xFFC0392B), c.textSecondary];
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              AspectRatio(
+                aspectRatio: 1.5,
+                child: CustomPaint(
+                  key: const Key('worked.spectra'),
+                  painter: _SpectraPainter(
+                    from: range.isEmpty ? 220 : range.first,
+                    to: range.length < 2 ? 300 : range[1],
+                    curves: [
+                      for (final cv in curves)
+                        (
+                          base: _d(cv['base']),
+                          peaks: [
+                            for (final pk in _maps(cv['peaks']))
+                              (
+                                nm: _d(pk['nm']),
+                                h: _d(pk['h']),
+                                w: _d(pk['w']),
+                              ),
+                          ],
+                        ),
+                    ],
+                    colors: colors,
+                    markers: [
+                      for (final x in (s['markers'] as List? ?? const []))
+                        if (x is num) x.toDouble(),
+                    ],
+                    grid: c.border,
+                    text: c.textSecondary,
+                    style: t.labelSmall ?? const TextStyle(fontSize: 11),
+                  ),
+                ),
+              ),
+              const SizedBox(height: FeSpace.xs),
+              for (final (i, cv) in curves.indexed)
+                Padding(
+                  padding: const EdgeInsets.only(top: 2),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 18,
+                        height: 3,
+                        color: colors[i % colors.length],
+                      ),
+                      const SizedBox(width: FeSpace.xs),
+                      Expanded(
+                        child: Text(u(_s(cv['label'])), style: t.bodySmall),
+                      ),
+                    ],
+                  ),
+                ),
               const SizedBox(height: FeSpace.xs),
               Text(
                 '${u(_s(s['note']))} ${ref0(s['src'])}',
@@ -384,4 +449,97 @@ class _CalibrationPainter extends CustomPainter {
   @override
   bool shouldRepaint(_CalibrationPainter old) =>
       old.points != points || old.slope != slope || old.line != line;
+}
+
+typedef _Peak = ({double nm, double h, double w});
+typedef _Curve = ({double base, List<_Peak> peaks});
+
+class _SpectraPainter extends CustomPainter {
+  _SpectraPainter({
+    required this.from,
+    required this.to,
+    required this.curves,
+    required this.colors,
+    required this.markers,
+    required this.grid,
+    required this.text,
+    required this.style,
+  });
+
+  final double from;
+  final double to;
+  final List<_Curve> curves;
+  final List<Color> colors;
+  final List<double> markers;
+  final Color grid;
+  final Color text;
+  final TextStyle style;
+
+  double _a(_Curve cv, double x) {
+    var y = cv.base;
+    for (final p in cv.peaks) {
+      final w = p.w <= 0 ? 10 : p.w;
+      y += p.h * math.exp(-math.pow(x - p.nm, 2) / (2 * w * w));
+    }
+    return y;
+  }
+
+  void _t(Canvas c, String s, Offset at) {
+    final tp = TextPainter(
+      text: TextSpan(
+        text: s,
+        style: style.copyWith(color: text),
+      ),
+      textDirection: TextDirection.ltr,
+    )..layout();
+    tp.paint(c, at - Offset(tp.width / 2, 0));
+  }
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    if (to <= from) return;
+    const left = 6.0;
+    const top = 14.0;
+    final bottom = size.height - 22;
+    final right = size.width - 6;
+    double px(double nm) => left + (nm - from) / (to - from) * (right - left);
+    double py(double a) => bottom - a.clamp(0.0, 1.0) * (bottom - top);
+    final g = Paint()
+      ..color = grid
+      ..strokeWidth = 1;
+    canvas.drawLine(Offset(left, bottom), Offset(right, bottom), g);
+    final step = (to - from) <= 100 ? 20.0 : 50.0;
+    for (var nm = (from / step).ceil() * step; nm <= to; nm += step) {
+      canvas.drawLine(Offset(px(nm), bottom), Offset(px(nm), bottom + 3), g);
+      _t(canvas, nm.toStringAsFixed(0), Offset(px(nm), bottom + 4));
+    }
+    final dash = Paint()
+      ..color = text
+      ..strokeWidth = 1;
+    for (final m in markers) {
+      final x = px(m);
+      for (var y = top; y < bottom; y += 6) {
+        canvas.drawLine(Offset(x, y), Offset(x, math.min(y + 3, bottom)), dash);
+      }
+      _t(canvas, m.toStringAsFixed(0), Offset(x, 0));
+    }
+    for (final (i, cv) in curves.indexed) {
+      final path = Path();
+      for (var nm = from; nm <= to; nm += 0.5) {
+        final o = Offset(px(nm), py(_a(cv, nm)));
+        nm == from ? path.moveTo(o.dx, o.dy) : path.lineTo(o.dx, o.dy);
+      }
+      canvas.drawPath(
+        path,
+        Paint()
+          ..color = colors[i % colors.length]
+          ..strokeWidth = 2.4
+          ..style = PaintingStyle.stroke,
+      );
+    }
+  }
+
+  @override
+  bool shouldRepaint(_SpectraPainter old) =>
+      old.curves != curves || old.from != from || old.to != to;
 }

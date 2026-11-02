@@ -1,0 +1,196 @@
+{
+ "source_lang": "uz",
+ "generated": "2026-11-02",
+ "id": "phenobarbital_blood_uv",
+ "title": "Qon va siydikda fenobarbitalni spektrofotometrik aniqlash (UV-1900i misolida)",
+ "intro": "Barbituratlar muhit pH iga qarab UV nurni turlicha yutadi: pH 10 da 240 nm atrofida maksimum bor, pH 2 da u yo‘qoladi, pH 13 da esa siljiydi. Shu farq (differensial spektrofotometriya) qon va siydikdan ajratilgan barbituratni boshqa moddalar fonida aniqlash va miqdorini hisoblash imkonini beradi. Usul darslikdan; UV-1900i da bajarish tartibini ustoz tasdiqlaydi.",
+ "sections": [
+  {
+   "kind": "facts",
+   "title": "Asosiy raqamlar",
+   "items": [
+    {
+     "label": "pH 10 da maksimum (5,5-hosilalar)",
+     "value": "≈ 240 nm",
+     "src": 0
+    },
+    {
+     "label": "pH 13 da maksimum (5,5-hosilalar)",
+     "value": "255 nm",
+     "src": 0
+    },
+    {
+     "label": "Qon/siydik uchun o‘lchash",
+     "value": "260 nm",
+     "src": 0
+    },
+    {
+     "label": "ΔD",
+     "value": "D(pH 13) − D(pH 10)",
+     "src": 0
+    },
+    {
+     "label": "Fenobarbital E¹%₁ₛₘ (260 nm, ΔD)",
+     "value": "210",
+     "src": 0
+    },
+    {
+     "label": "Namuna",
+     "value": "1–2 ml qon yoki siydik",
+     "src": 0
+    }
+   ]
+  },
+  {
+   "kind": "spectra",
+   "title": "pH ga qarab spektr o‘zgarishi (sxema)",
+   "range": [
+    220,
+    300
+   ],
+   "markers": [
+    260
+   ],
+   "curves": [
+    {
+     "label": "pH 10 — maksimum ≈ 240 nm",
+     "peaks": [
+      {
+       "nm": 240,
+       "h": 0.75,
+       "w": 12
+      }
+     ],
+     "base": 0.05
+    },
+    {
+     "label": "pH 13 — maksimum 255 nm",
+     "peaks": [
+      {
+       "nm": 255,
+       "h": 0.85,
+       "w": 13
+      }
+     ],
+     "base": 0.05
+    },
+    {
+     "label": "pH 2 — maksimum yo‘qoladi",
+     "peaks": [
+      {
+       "nm": 225,
+       "h": 0.25,
+       "w": 10
+      }
+     ],
+     "base": 0.04
+    }
+   ],
+   "note": "5,5-almashingan barbituratlar (fenobarbital, barbital, barbamil va boshq.) uchun. Egri chiziqlar shakli — sxema; maksimum to‘lqin uzunliklari manbadan. 260 nm dagi farq (ΔD) miqdoriy hisobda ishlatiladi.",
+   "src": 0
+  },
+  {
+   "kind": "flow",
+   "title": "Qon/siydikdan ajratib olish (sxema)",
+   "caption": "Baizoldanov, 2021, 146–147-betlar",
+   "src": 0,
+   "nodes": [
+    "1–2 ml qon yoki siydik",
+    "2 M HCl bilan pH 2,0–2,5 gacha kislotalash",
+    "+ 3–5 g suvsiz Na2SO4",
+    "Xloroform 3×10 ml, har safar 1 daqiqa chayqatish",
+    "Xloroform qatlami 10 ml fosfat bufer (pH 7,4) bilan yuviladi",
+    "Qayta ekstraksiya: 10 ml 0,1 M NaOH (pH 13,0)",
+    "Ishqoriy faza 5 daqiqa sentrifugalanadi",
+    "5 ml sentrifugat + 5 ml borat bufer → pH 10,0"
+   ]
+  },
+  {
+   "kind": "steps",
+   "title": "UV-1900i da o‘lchash",
+   "items": [
+    {
+     "text": "Nol eritma (blank): borat bufer, pH 10,0. Ikkala kyuvetaga solinadi, [Auto Zero] yoki [Base Corr.] bajariladi.",
+     "src": 1
+    },
+    {
+     "text": "Spectrum rejimi: namuna eritmasining (pH 10,0) spektri 220–280 nm oralig‘ida yoziladi; 240 nm atrofidagi maksimum barbiturat borligining belgisidir.",
+     "src": 0
+    },
+    {
+     "text": "Ikkala kyuvetaga (namuna va blank) 2 tomchidan to‘yingan natriy gidroksid eritmasi qo‘shiladi (pH ≈ 13,0), yaxshilab aralashtiriladi va spektr qayta yoziladi.",
+     "src": 0
+    },
+    {
+     "text": "260 nm dagi optik zichliklar olinadi: ΔD = D(pH 13) − D(pH 10). Agar D 0,9 dan katta bo‘lsa, eritma borat bufer bilan suyultiriladi va hajm hisobda inobatga olinadi.",
+     "src": 0
+    },
+    {
+     "text": "Kalibrlash: standart eritma (fosfat bufer pH 7,4 da 50 µg/ml) dan borat bufer bilan bir qator suyultirishlar tayyorlanib, E¹% shu apparatda tekshiriladi.",
+     "src": 0
+    }
+   ]
+  },
+  {
+   "kind": "calibration",
+   "title": "ΔD ning konsentratsiyaga bog‘liqligi (nazariy)",
+   "slope_per_unit": 0.021,
+   "points": [
+    5,
+    10,
+    15,
+    20
+   ],
+   "x_label": "µg/ml",
+   "y_label": "ΔD (260 nm)",
+   "note": "Qiyalik manbadagi E¹% = 210 dan hisoblangan: 1 % = 10 000 µg/ml, demak 1 µg/ml ≈ 0,021. Bu nazariy chiziq — haqiqiy qiymat har laboratoriyada standart bilan tekshiriladi.",
+   "src": 0
+  },
+  {
+   "kind": "calc",
+   "title": "Hisoblash misoli (shartli sonlar)",
+   "lines": [
+    "Formula: C (%) = ΔD / (l · E¹%), l = 1 sm.",
+    "Aytaylik, ΔD = 0,105 → C = 0,105 / 210 = 0,0005 % = 5 µg/ml (kyuvetadagi eritmada).",
+    "Kyuvetadagi eritma: 5 ml sentrifugat + 5 ml bufer → 2 marta suyultirilgan: 5 × 2 = 10 µg/ml ishqoriy ekstraktda.",
+    "Ishqoriy ekstrakt hajmi 10 ml: 10 × 10 = 100 µg fenobarbital.",
+    "Olingan qon 2 ml: 100 / 2 = 50 µg/ml qonda."
+   ],
+   "note": "Sonlar o‘quv uchun shartli: ekstraksiya to‘liq (100 %) deb olingan. Amalda ajratib olish darajasi (qaytarilish) standart qo‘shish bilan tekshiriladi va natija sud-tibbiy baholash uchun tasdiqlovchi usul bilan solishtiriladi."
+  },
+  {
+   "kind": "bullets",
+   "title": "E’tibor bering",
+   "items": [
+    {
+     "text": "Organlar uchun ΔD = D(pH 10) − D(pH 2) 239 nm da ishlatiladi; qon va siydik uchun — ΔD = D(pH 13) − D(pH 10) 260 nm da.",
+     "src": 0
+    },
+    {
+     "text": "Tiobarbituratlar boshqacha: pH 10 da ikki maksimum (305 va 255 nm), pH 2 da 290 va 239 nm ga siljiydi.",
+     "src": 0
+    },
+    {
+     "text": "Benzonal uchun maksimum 250 nm atrofida.",
+     "src": 0
+    },
+    {
+     "text": "260 nm, ΔD bo‘yicha boshqa barbituratlarning E¹%: barbital 260, barbamil 195, etaminal-natriy 195, butobarbital 206.",
+     "src": 0
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "author": "Байзолданов Т.",
+   "title": "Токсикологическая химия: учебник, 2-qism. Almaty: Evero, 2021",
+   "page": "8-bob: 139–140-betlar (UV spektrlar, pH ta’siri); 143–147-betlar (miqdoriy aniqlash, qon va siydik)"
+  },
+  {
+   "author": "Shimadzu Corporation",
+   "title": "UV-1900i Instruction Manual: Operation Guide, 207-90563, 2019",
+   "page": "5-bob (Spectrum), 9-bob (Quantitation)"
+  }
+ ]
+}

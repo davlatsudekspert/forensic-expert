@@ -12848,4 +12848,11 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get weTropicamideBody =>
       'Глазные капли: ионная пара, хлороформ, 408 нм — схема, калибровочный график и расчёт';
+
+  @override
+  String get weBarbTitle => 'Фенобарбитал в крови и моче (UV-1900i)';
+
+  @override
+  String get weBarbBody =>
+      'Разность pH 10 → pH 13, 260 нм — схема извлечения, спектры и расчёт';
 }

@@ -67,4 +67,25 @@ void main() {
       findsOneWidget,
     );
   });
+
+  testWidgets('fenobarbital misoli: pH spektrlari va ajratib olish', (
+    tester,
+  ) async {
+    final json = File(
+      'assets/content/worked_examples/phenobarbital_blood_uv.json',
+    ).readAsStringSync();
+    await pumpApp(
+      tester,
+      settings: completedSettings(lang: 'uz'),
+      size: const Size(390, 5200),
+      initialLocation: Routes.workedExample('phenobarbital_blood_uv'),
+      proEnabled: false,
+      overrides: [
+        workedExampleLoaderProvider.overrideWithValue((_) async => json),
+      ],
+    );
+    expect(find.byKey(const Key('worked.spectra')), findsOneWidget);
+    expect(find.byKey(const Key('worked.calibration')), findsOneWidget);
+    expect(find.textContaining('260 nm'), findsWidgets);
+  });
 }

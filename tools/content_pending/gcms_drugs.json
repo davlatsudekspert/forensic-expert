@@ -1,0 +1,1411 @@
+{
+ "generated": "2026-11-02",
+ "status": "PENDING - ekspert tekshiruvidan o'tmagan; faqat o'zbekcha, tarjimasiz",
+ "caveat": "RT va ion intensivliklari asbob/shartga bog'liq. SWGDRUG intensivliklari PDF vektor grafikasidan o'lchangan (taxmin emas), NIST - peak jadvalidan. 'topilmadi' = manbada yo'q. SWGDRUG 'GC' metodlari eski monograflarda FID (MS emas).",
+ "instrument": [
+  {
+   "fact": "Ion manbalari (spetsifikatsiya): EI, BEIS, PCI, NCI, Smart Source; Smart EI/CI manbasi EI va CI o'rtasida manbani almashtirmasdan o'tish imkonini beradi.",
+   "source": "Shimadzu SSI GCMS-QP2020 NX sahifasi",
+   "url": "https://ssi.shimadzu.com/products/gas-chromatography-mass-spectrometry/gcms-qp2020-nx.html"
+  },
+  {
+   "fact": "Massa diapazoni m/z 1.5-1090; tezkor skanerlash (ASSP): 20,000 u/sec gacha.",
+   "source": "Shimadzu SSI GCMS-QP2020 NX sahifasi",
+   "url": "https://ssi.shimadzu.com/products/gas-chromatography-mass-spectrometry/gcms-qp2020-nx.html"
+  },
+  {
+   "fact": "IDL (OFN, 1 uL): EI manbasi <=10 fg (geliy tashuvchi), BEIS <=1 fg.",
+   "source": "Shimadzu SSI GCMS-QP2020 NX sahifasi",
+   "url": "https://ssi.shimadzu.com/products/gas-chromatography-mass-spectrometry/gcms-qp2020-nx.html"
+  },
+  {
+   "fact": "Smart SIM avtomatik SIM metodini retention vaqtlariga moslab yaratadi; Scan/SIM bir yurishda (simultaneous Scan/SIM) ishlaydi.",
+   "source": "Shimadzu GCMS-QP2020 NX Features",
+   "url": "https://www.shimadzu.com/an/products/gas-chromatograph-mass-spectrometry/single-quadrupole-gc-ms/gcms-qp2020-nx/features.html"
+  },
+  {
+   "fact": "NIST Mass Spectral Library \"registered with approx. 350,643 spectra\" (Features sahifasi); boshqa Shimadzu sahifasida 306,622 deb yozilgan - nashr versiyasiga bog'liq, aniq versiyani buyurtma paytida tekshiring.",
+   "source": "Shimadzu GCMS-QP2020 NX Features",
+   "url": "https://www.shimadzu.com/an/products/gas-chromatograph-mass-spectrometry/single-quadrupole-gc-ms/gcms-qp2020-nx/features.html"
+  },
+  {
+   "fact": "Ma'lumotlar tahlili: LabSolutions Insight.",
+   "source": "Shimadzu GCMS-QP2020 NX sahifasi",
+   "url": "https://www.shimadzu.com/an/products/gas-chromatograph-mass-spectrometry/single-quadrupole-gc-ms/gcms-qp2020-nx/index.html"
+  }
+ ],
+ "substances": [
+  {
+   "name": "Tramadol",
+   "formula": "C16H25NO2",
+   "mw": "263.38 (base)",
+   "mw_source": "SWGDRUG Tramadol monograph, rev. 11/22/2016, 2.1 Chemical data (p.1-2)",
+   "ei": {
+    "base_peak": 58,
+    "molecular_ion": {
+     "mz": 263,
+     "rel": 7.2
+    },
+    "ions": [
+     {
+      "mz": 58,
+      "rel": 100.0
+     },
+     {
+      "mz": 263,
+      "rel": 7.2
+     },
+     {
+      "mz": 135,
+      "rel": 5.0
+     },
+     {
+      "mz": 77,
+      "rel": 3.9
+     },
+     {
+      "mz": 59,
+      "rel": 3.8
+     },
+     {
+      "mz": 55,
+      "rel": 3.4
+     },
+     {
+      "mz": 42,
+      "rel": 3.3
+     },
+     {
+      "mz": 44,
+      "rel": 2.9
+     },
+     {
+      "mz": 45,
+      "rel": 2.7
+     },
+     {
+      "mz": 107,
+      "rel": 2.7
+     }
+    ],
+    "source": "SWGDRUG Tramadol monograph (rev. 11/22/2016) https://swgdrug.org/Monographs/Tramadol.pdf , p.3, 'EI Mass Spectrum: Tramadol HCl; Lot# BCBK9246V'",
+    "note": "Intensivlik: PDF vektor grafigidagi (yuqori panel, asosiy cho'qqi=100%) chiziq balandliklaridan o'lchangan, taxmin emas; faqat rasmda yorliqlangan ionlar olindi. Pastki panel kattalashtirilgan."
+   },
+   "gc": {
+    "column": "HP-5 MS (yoki ekvivalent) 30 m x 0.25 mm x 0.25 um",
+    "program": "100 C (1.0 min) -> 300 C, 12 C/min -> 9.0 min ushlash; inj 280 C, transfer line 280 C, source 230 C, quad 150 C; split 25:1; He 0.6 mL/min; scan 30-550 amu",
+    "rt": "12.263 min (DEA laboratoriyasi asbobida; asbobga bog'liq)",
+    "source": "SWGDRUG Tramadol monograph https://swgdrug.org/Monographs/Tramadol.pdf , 3.2 GC/MS (p.3)"
+   },
+   "deriv": [],
+   "notes": [
+    "Namuna tayyorlash: ~4 mg/mL metanolda eritiladi (SWGDRUG 3.2).",
+    "Qo'shimcha: NIST WebBook (Chemical Concepts) ham tramadol uchun 58 asosiy cho'qqi va 263 ni ko'rsatadi (CAS 27203-92-5)."
+   ],
+   "not_found": [
+    "Hosilalash (derivatizatsiya) ma'lumoti topilmadi"
+   ]
+  },
+  {
+   "name": "Alprazolam",
+   "formula": "C17H13ClN4",
+   "mw": "308 (base)",
+   "mw_source": "SWGDRUG Alprazolam monograph, rev. 7/14/14, 2.1 (p.1)",
+   "ei": {
+    "base_peak": 279,
+    "molecular_ion": {
+     "mz": 308,
+     "rel": 67.7
+    },
+    "ions": [
+     {
+      "mz": 279,
+      "rel": 100.0
+     },
+     {
+      "mz": 204,
+      "rel": 99.5
+     },
+     {
+      "mz": 308,
+      "rel": 67.7
+     },
+     {
+      "mz": 273,
+      "rel": 56.0
+     },
+     {
+      "mz": 77,
+      "rel": 53.1
+     },
+     {
+      "mz": 137,
+      "rel": 38.5
+     },
+     {
+      "mz": 102,
+      "rel": 38.3
+     },
+     {
+      "mz": 177,
+      "rel": 37.3
+     },
+     {
+      "mz": 51,
+      "rel": 27.1
+     },
+     {
+      "mz": 163,
+      "rel": 23.5
+     }
+    ],
+    "source": "SWGDRUG Alprazolam monograph (rev. 7/14/14) https://swgdrug.org/Monographs/Alprazolam.pdf , p.3, 'EI Mass Spectrum Alprazolam Lot I0G195'",
+    "note": "Intensivlik PDF vektor grafikasidan o'lchangan (279 va 204 deyarli teng balandlikda: 100 va 99.5%). NIST (Virginia DFS) spektrida 204 asosiy (100), 279 = 92, 308 = 73."
+   },
+   "gc": {
+    "column": "DB-1 MS (yoki ekvivalent) 30 m x 0.25 mm x 0.25 um",
+    "program": "90 C (2.0 min) -> 300 C, 15 C/min -> 15.0 min ushlash; split 25:1; He 1 mL/min; transfer line 280 C (monograf: 3.2)",
+    "rt": "18.084 min (asbobga bog'liq)",
+    "source": "SWGDRUG Alprazolam monograph https://swgdrug.org/Monographs/Alprazolam.pdf , 3.2 (p.3)"
+   },
+   "deriv": [],
+   "notes": [
+    "Namuna: ~4 mg/mL metanolda."
+   ],
+   "not_found": [
+    "Hosilalash ma'lumoti topilmadi"
+   ]
+  },
+  {
+   "name": "Cannabidiol (CBD)",
+   "formula": "C21H30O2",
+   "mw": "314.46",
+   "mw_source": "SWGDRUG Cannabidiol monograph, rev. 2/2/2022, 2.1 (p.1)",
+   "ei": {
+    "base_peak": 231,
+    "molecular_ion": {
+     "mz": 314,
+     "rel": 19.1
+    },
+    "ions": [
+     {
+      "mz": 231,
+      "rel": 100.0
+     },
+     {
+      "mz": 314,
+      "rel": 19.1
+     },
+     {
+      "mz": 246,
+      "rel": 18.6
+     },
+     {
+      "mz": 174,
+      "rel": 10.0
+     },
+     {
+      "mz": 193,
+      "rel": 8.1
+     },
+     {
+      "mz": 299,
+      "rel": 8.0
+     },
+     {
+      "mz": 121,
+      "rel": 7.3
+     },
+     {
+      "mz": 271,
+      "rel": 4.6
+     },
+     {
+      "mz": 91,
+      "rel": 4.3
+     },
+     {
+      "mz": 67,
+      "rel": 3.2
+     }
+    ],
+    "source": "SWGDRUG Cannabidiol monograph (rev. 2/2/2022) https://swgdrug.org/Monographs/Cannabidiol.pdf , p.3, 'EI Mass Spectrum: Cannabidiol; Lot# 3857-52-1'",
+    "note": "Intensivlik PDF vektor grafikasidan o'lchangan. NIST WebBook (CAS 13956-29-1): 231 (100), 232 (17), 246 (13), 174 (12), 121 (11), 193 (8), 314 (7) - umumiy tartib mos."
+   },
+   "gc": {
+    "column": "HP-5 MS (yoki ekvivalent) 30 m x 0.25 mm x 0.25 um",
+    "program": "100 C (1.0 min) -> 280 C, 12 C/min -> 9.0 min ushlash; split 25:1; He 1.5 mL/min; source 230 C, quad 150 C",
+    "rt": "14.52 min (asbobga bog'liq)",
+    "source": "SWGDRUG Cannabidiol monograph https://swgdrug.org/Monographs/Cannabidiol.pdf , 3.2 (p.3)"
+   },
+   "deriv": [],
+   "notes": [
+    "Namuna: ~5 mg/mL metanolda."
+   ],
+   "not_found": [
+    "CBD hosilalash ionlari topilmadi"
+   ]
+  },
+  {
+   "name": "MDMB-4en-PINACA",
+   "formula": "C20H27N3O3",
+   "mw": "357.45",
+   "mw_source": "SWGDRUG MDMB-4en-PINACA monograph, rev. 04/25/2023, 2.1 (p.1)",
+   "ei": {
+    "base_peak": 213,
+    "molecular_ion": {
+     "mz": 357,
+     "rel": 17.2
+    },
+    "ions": [
+     {
+      "mz": 213,
+      "rel": 100.0
+     },
+     {
+      "mz": 145,
+      "rel": 39.8
+     },
+     {
+      "mz": 301,
+      "rel": 28.2
+     },
+     {
+      "mz": 171,
+      "rel": 23.2
+     },
+     {
+      "mz": 131,
+      "rel": 21.4
+     },
+     {
+      "mz": 357,
+      "rel": 17.2
+     },
+     {
+      "mz": 41,
+      "rel": 12.8
+     },
+     {
+      "mz": 185,
+      "rel": 12.6
+     },
+     {
+      "mz": 269,
+      "rel": 12.4
+     },
+     {
+      "mz": 103,
+      "rel": 12.2
+     }
+    ],
+    "source": "SWGDRUG MDMB-4en-PINACA monograph (rev. 04/25/2023) https://swgdrug.org/Monographs/MDMB-4en-PINACA.pdf , p.3, 'EI Mass Spectrum: MDMB-4en-PINACA; Lot #0587477-1'",
+    "note": "Intensivlik PDF vektor grafikasidan o'lchangan (yuqori panel); faqat rasmda yorliqlangan ionlar. Rasmdagi yorliqlar orasida 145, 171, 131, 185, 269, 301, 357 bor."
+   },
+   "gc": {
+    "column": "HP-5 MS (yoki ekvivalent) 30 m x 0.25 mm x 0.25 um",
+    "program": "100 C (1.0 min) -> 280 C, 12 C/min -> 9.0 min ushlash; split 25:1; He 1.5 mL/min; inj 280 C; scan 30-550 amu",
+    "rt": "15.456 min (asbobga bog'liq)",
+    "source": "SWGDRUG MDMB-4en-PINACA monograph https://swgdrug.org/Monographs/MDMB-4en-PINACA.pdf , 3.2 (p.3)"
+   },
+   "deriv": [],
+   "notes": [
+    "Namuna: ~4 mg/mL metanolda."
+   ],
+   "not_found": [
+    "Hosilalash ma'lumoti topilmadi"
+   ]
+  },
+  {
+   "name": "THCA-A (THC kislotasi, MSTFA hosilasi)",
+   "formula": "C22H30O4",
+   "mw": "358.47 (erkin kislota)",
+   "mw_source": "SWGDRUG THCA-A monograph, rev. 4/27/2018, 2.1 (p.1)",
+   "ei": {
+    "base_peak": 488,
+    "molecular_ion": "topilmadi (rasmda yorliqlanmagan; 503 ~2%)",
+    "ions": [
+     {
+      "mz": 488,
+      "rel": 100.0
+     },
+     {
+      "mz": 489,
+      "rel": 37.7
+     },
+     {
+      "mz": 73,
+      "rel": 24.7
+     },
+     {
+      "mz": 490,
+      "rel": 11.6
+     },
+     {
+      "mz": 340,
+      "rel": 4.9
+     },
+     {
+      "mz": 414,
+      "rel": 3.6
+     },
+     {
+      "mz": 75,
+      "rel": 2.9
+     }
+    ],
+    "source": "SWGDRUG THCA-A monograph (rev. 4/27/2018) https://swgdrug.org/Monographs/THCA-A.pdf , p.3, 'EI Mass Spectrum: THCA-A derivatized with MSTFA; Lot 0477793-1'",
+    "note": "Bu - MSTFA bilan hosilalangan THCA-A spektri, erkin THC emas. Intensivlik PDF vektor grafikasidan. 73 = TMS ioni."
+   },
+   "gc": {
+    "column": "HP-5 MS (yoki ekvivalent) 30 m x 0.25 mm x 0.25 um",
+    "program": "100 C (1.0 min) -> 280 C, 12 C/min -> 9.0 min ushlash; split 25:1; He 1.5 mL/min",
+    "rt": "16.253 min (hosila; asbobga bog'liq)",
+    "source": "SWGDRUG THCA-A monograph https://swgdrug.org/Monographs/THCA-A.pdf , 3.2 (p.3)"
+   },
+   "deriv": [
+    "MSTFA bilan hosilalash: ~4 mg/mL xloroformda (SWGDRUG 3.2). Eslatma (monograf): hosilalanmagan THCA-A GC injektorida Δ9-THC ga aylanadi."
+   ],
+   "notes": [
+    "Muhim: GC-MS da kislotali kannabinoidlar issiqlikdan dekarboksillanadi - shuning uchun THC aniqlashda hosilalash yoki dekarboksillanishni hisobga olish kerak."
+   ],
+   "not_found": []
+  },
+  {
+   "name": "alpha-PVP (alfa-pirrolidinovalerofenon)",
+   "formula": "C15H21NO",
+   "mw": "231 (base); 267 (HCl)",
+   "mw_source": "SWGDRUG a-PVP monograph, rev. January 25, 2013, 2.1",
+   "ei": {
+    "base_peak": 126,
+    "molecular_ion": "topilmadi (rasmda 229 gacha yorliq; M+ 231 yorliqlanmagan)",
+    "ions": [
+     {
+      "mz": 126,
+      "rel": 100
+     },
+     {
+      "mz": 127,
+      "rel": "topilmadi"
+     },
+     {
+      "mz": 77,
+      "rel": "topilmadi"
+     },
+     {
+      "mz": 55,
+      "rel": "topilmadi"
+     },
+     {
+      "mz": 84,
+      "rel": "topilmadi"
+     },
+     {
+      "mz": 96,
+      "rel": "topilmadi"
+     },
+     {
+      "mz": 105,
+      "rel": "topilmadi"
+     },
+     {
+      "mz": 42,
+      "rel": "topilmadi"
+     },
+     {
+      "mz": 69,
+      "rel": "topilmadi"
+     },
+     {
+      "mz": 115,
+      "rel": "topilmadi"
+     }
+    ],
+    "source": "SWGDRUG a-PVP monograph (rev. 25 Jan 2013) https://swgdrug.org/Monographs/a-PVP.pdf , p.5, 'EI Mass Spectrum: alpha-PVP HCl Lot # N17-P29H' (rastr rasm)",
+    "note": "Spektr rastr rasm: yorliqlangan m/z lar rasmdan o'qildi; asosiy cho'qqi 126 (100%). Boshqa ionlarning % qiymati manbada raqam sifatida berilmagan - 'topilmadi'."
+   },
+   "gc": {
+    "column": "DB-1 MS 30 m x 0.25 mm x 0.25 um",
+    "program": "100 C (1.0 min) -> 300 C, 12 C/min -> 9.0 min ushlash; split 20:1; He 1 mL/min; scan 30-550 amu",
+    "rt": "10.208 min (asbobga bog'liq)",
+    "source": "SWGDRUG a-PVP monograph https://swgdrug.org/Monographs/a-PVP.pdf , 4.2 (p.4)"
+   },
+   "deriv": [],
+   "notes": [
+    "Namuna: ~1 mg/mL metanolda."
+   ],
+   "not_found": [
+    "Ion intensivliklari (m/z 126 dan tashqari) raqam sifatida topilmadi"
+   ]
+  },
+  {
+   "name": "Mephedrone (4-metilmetkatinon, 4-MMC)",
+   "formula": "C11H15NO",
+   "mw": "177 (base); 213 (HCl)",
+   "mw_source": "SWGDRUG 4-Methylmethcathinone monograph, rev. April 5, 2013, 2.1",
+   "ei": {
+    "base_peak": 58,
+    "molecular_ion": "topilmadi (177 rasmda yorliqlangan, juda past intensivlikda)",
+    "ions": [
+     {
+      "mz": 58,
+      "rel": 100
+     },
+     {
+      "mz": 91,
+      "rel": "topilmadi"
+     },
+     {
+      "mz": 119,
+      "rel": "topilmadi"
+     },
+     {
+      "mz": 65,
+      "rel": "topilmadi"
+     },
+     {
+      "mz": 42,
+      "rel": "topilmadi"
+     },
+     {
+      "mz": 30,
+      "rel": "topilmadi"
+     },
+     {
+      "mz": 77,
+      "rel": "topilmadi"
+     },
+     {
+      "mz": 105,
+      "rel": "topilmadi"
+     },
+     {
+      "mz": 177,
+      "rel": "topilmadi"
+     }
+    ],
+    "source": "SWGDRUG 4-Methylmethcathinone monograph (rev. 5 Apr 2013) https://swgdrug.org/Monographs/4-methylmethcathinone.pdf , p.5, 'EI Mass Spectrum: 4-Methylmethcathinone HCl Lot # SF0002' (rastr rasm)",
+    "note": "Rastr rasm: yorliqlangan m/z lar (30, 42, 51, 65, 77, 86, 91, 98, 105, 115, 119, 128, 133, 142, 147, 157, 162, 173, 177) o'qildi; asosiy 58 (100%). Boshqa ionlarning aniq % qiymati manbada raqam sifatida berilmagan."
+   },
+   "gc": {
+    "column": "DB-1 MS (yoki ekvivalent) 30 m x 0.25 mm x 0.25 um",
+    "program": "100 C (1.0 min) -> 300 C, 12 C/min -> 9.0 min ushlash; split 20:1; He 1 mL/min",
+    "rt": "7.145 min (asbobga bog'liq)",
+    "source": "SWGDRUG 4-Methylmethcathinone monograph https://swgdrug.org/Monographs/4-methylmethcathinone.pdf , 4.2 (p.4)"
+   },
+   "deriv": [],
+   "notes": [
+    "Namuna: ~1 mg/mL, asos (base) ko'rinishida xloroformda ekstraksiya."
+   ],
+   "not_found": [
+    "Ion intensivliklari (m/z 58 dan tashqari) topilmadi; NIST WebBook da mefedron spektri topilmadi"
+   ]
+  },
+  {
+   "name": "Cocaine",
+   "formula": "C17H21NO4",
+   "mw": "303.4 (base)",
+   "mw_source": "SWGDRUG COCAINE monograph rev. May 2, 2005, 2.1",
+   "ei": {
+    "base_peak": 82,
+    "molecular_ion": {
+     "mz": 303,
+     "rel": 17
+    },
+    "ions": [
+     {
+      "mz": 82,
+      "rel": 100
+     },
+     {
+      "mz": 182,
+      "rel": 72
+     },
+     {
+      "mz": 83,
+      "rel": 37
+     },
+     {
+      "mz": 94,
+      "rel": 37
+     },
+     {
+      "mz": 77,
+      "rel": 36
+     },
+     {
+      "mz": 105,
+      "rel": 30
+     },
+     {
+      "mz": 96,
+      "rel": 25
+     },
+     {
+      "mz": 42,
+      "rel": 23
+     }
+    ],
+    "source": "NIST Chemistry WebBook, Mass spectrum (electron ionization), Cocaine (CAS 50-36-2); spectr manbasi: NIST Mass Spectrometry Data Center, 1990.; JCAMP: https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C50362&Index=0&Type=Mass ; sahifa: https://webbook.nist.gov/cgi/cbook.cgi?ID=C50362&Mask=200#Mass-Spec",
+    "note": "NIST WebBook spektri: elektron ionlanish (EI, odatda 70 eV; manba sahifasida eV alohida ko'rsatilmagan). Nisbiy intensivlik (%) NIST peak jadvalidan (999 -> 100% ga normallangan), faqat 8 ta eng baland ion."
+   },
+   "gc": {
+    "column": "5% fenil/95% metil silikon 12 m x 0.2 mm x 0.33 um (GC-FID metodi COC-GCS1, GC-MS emas)",
+    "program": "175 C (1.0 min) -> 275 C, 15 C/min -> 3.0 min ushlash; inj 270 C; split 60:1",
+    "rt": "kokain 5.32 min (RRT 1.00; benzoilekgonin RRT 1.41; heroin 1.44) - FID, asbobga bog'liq",
+    "source": "SWGDRUG COCAINE monograph (rev. May 2, 2005) https://swgdrug.org/Monographs/COCAINE.pdf , 3.4 GC (Method COC-GCS1)"
+   },
+   "deriv": [],
+   "notes": [
+    "SWGDRUG kokain PDF da EI-MS spektr sahifasi yo'q (faqat IR/NMR); shuning uchun ion ro'yxati NIST dan.",
+    "Namuna: xloroformda eritiladi, filtrlanadi (SWGDRUG)."
+   ],
+   "not_found": [
+    "Kokain uchun SWGDRUG GC-MS sharti topilmadi (faqat GC-FID)"
+   ]
+  },
+  {
+   "name": "Benzoylecgonine",
+   "formula": "C16H19NO4",
+   "mw": "289 (nominal)",
+   "mw_source": "NIST WebBook (MW=289)",
+   "ei": {
+    "base_peak": 124,
+    "molecular_ion": {
+     "mz": 289,
+     "rel": 5
+    },
+    "ions": [
+     {
+      "mz": 124,
+      "rel": 100
+     },
+     {
+      "mz": 82,
+      "rel": 61
+     },
+     {
+      "mz": 77,
+      "rel": 41
+     },
+     {
+      "mz": 105,
+      "rel": 31
+     },
+     {
+      "mz": 83,
+      "rel": 30
+     },
+     {
+      "mz": 94,
+      "rel": 26
+     },
+     {
+      "mz": 168,
+      "rel": 26
+     },
+     {
+      "mz": 93,
+      "rel": 20
+     }
+    ],
+    "source": "NIST Chemistry WebBook, Mass spectrum (electron ionization), Benzoylecgonine (CAS 519-09-5); spectr manbasi: AAFS Toxicology Section MS DB Committee, U. Alberta, Canada; JCAMP: https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C519095&Index=0&Type=Mass ; sahifa: https://webbook.nist.gov/cgi/cbook.cgi?ID=C519095&Mask=200#Mass-Spec",
+    "note": "NIST WebBook spektri: elektron ionlanish (EI, odatda 70 eV; manba sahifasida eV alohida ko'rsatilmagan). Nisbiy intensivlik (%) NIST peak jadvalidan (999 -> 100% ga normallangan), faqat 8 ta eng baland ion."
+   },
+   "gc": {
+    "column": "topilmadi (NIST WebBook yozuvida GC sharti yo'q)",
+    "program": "topilmadi",
+    "rt": "topilmadi",
+    "source": ""
+   },
+   "deriv": [
+    "Biologik namunada odatda TMS/PFPA-hosila sifatida aniqlanadi; hosila ionlari topilmadi."
+   ],
+   "notes": [
+    "Kokain metaboliti; SWGDRUG kokain monografida RRT 1.41 (FID, 5.32 min kokainga nisbatan) keltirilgan."
+   ],
+   "not_found": [
+    "GC-MS sharti va hosila ionlari topilmadi"
+   ]
+  },
+  {
+   "name": "Amphetamine",
+   "formula": "C9H13N",
+   "mw": "135.2 (base)",
+   "mw_source": "SWGDRUG AMPHETAMINE monograph rev. May 5, 2005, 2.1",
+   "ei": {
+    "base_peak": 44,
+    "molecular_ion": "jadvalda topilmadi",
+    "ions": [
+     {
+      "mz": 44,
+      "rel": 100
+     },
+     {
+      "mz": 91,
+      "rel": 12
+     },
+     {
+      "mz": 65,
+      "rel": 6
+     },
+     {
+      "mz": 42,
+      "rel": 4
+     },
+     {
+      "mz": 51,
+      "rel": 3
+     },
+     {
+      "mz": 45,
+      "rel": 3
+     },
+     {
+      "mz": 120,
+      "rel": 3
+     },
+     {
+      "mz": 63,
+      "rel": 2
+     }
+    ],
+    "source": "NIST Chemistry WebBook, Mass spectrum (electron ionization), Amphetamine (CAS 300-62-9); spectr manbasi: Drug Lab; JCAMP: https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C300629&Index=0&Type=Mass ; sahifa: https://webbook.nist.gov/cgi/cbook.cgi?ID=C300629&Mask=200#Mass-Spec",
+    "note": "NIST WebBook spektri: elektron ionlanish (EI, odatda 70 eV; manba sahifasida eV alohida ko'rsatilmagan). Nisbiy intensivlik (%) NIST peak jadvalidan (999 -> 100% ga normallangan), faqat 8 ta eng baland ion."
+   },
+   "gc": {
+    "column": "5% fenil/95% metil silikon 12 m x 0.2 mm x 0.33 um (GC-FID, metod AMP-GCS1)",
+    "program": "175 C (1.0 min) -> 280 C, 15 C/min -> 4.0 min ushlash; split 60:1; inj 270 C",
+    "rt": "manbada \"Amphetamine: 0.77 min\" (FID, ichki standart tetrakozan 6.01 min); asbobga bog'liq",
+    "source": "SWGDRUG AMPHETAMINE monograph (rev. May 5, 2005) https://swgdrug.org/Monographs/AMPHETAMINE.pdf , 3.4 GC"
+   },
+   "deriv": [
+    "SWGDRUG: sirka angidridi bilan hosilalash (GC metodi); TFAA/PFPA hosilalarining ionlari manbadan topilmadi."
+   ],
+   "notes": [
+    "NIST spektri \"Drug Lab\" manbasidan: asosiy 44; M+ 135 NIST jadvalida asosiy 8 ion orasida emas (juda kuchsiz).",
+    "SWGDRUG amfetamin PDF da EI-MS spektri rasm sifatida bor, lekin vektor/matn shaklida emas."
+   ],
+   "not_found": [
+    "GC-MS sharti va hosila ionlari (TFA/PFP) topilmadi"
+   ]
+  },
+  {
+   "name": "Methamphetamine",
+   "formula": "C10H15N",
+   "mw": "149.2 (base)",
+   "mw_source": "SWGDRUG METHAMPHETAMINE monograph rev. March 15, 2005, 2.1",
+   "ei": {
+    "base_peak": 58,
+    "molecular_ion": {
+     "mz": 149,
+     "rel": 1
+    },
+    "ions": [
+     {
+      "mz": 58,
+      "rel": 100
+     },
+     {
+      "mz": 91,
+      "rel": 7
+     },
+     {
+      "mz": 56,
+      "rel": 5
+     },
+     {
+      "mz": 65,
+      "rel": 4
+     },
+     {
+      "mz": 59,
+      "rel": 4
+     },
+     {
+      "mz": 30,
+      "rel": 3
+     },
+     {
+      "mz": 134,
+      "rel": 2
+     },
+     {
+      "mz": 42,
+      "rel": 2
+     }
+    ],
+    "source": "NIST Chemistry WebBook, Mass spectrum (electron ionization), Methamphetamine (CAS 537-46-2); spectr manbasi: AAFS Toxicology Section MS DB Committee, U. Alberta, Canada; JCAMP: https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C537462&Index=0&Type=Mass ; sahifa: https://webbook.nist.gov/cgi/cbook.cgi?ID=C537462&Mask=200#Mass-Spec",
+    "note": "NIST WebBook spektri: elektron ionlanish (EI, odatda 70 eV; manba sahifasida eV alohida ko'rsatilmagan). Nisbiy intensivlik (%) NIST peak jadvalidan (999 -> 100% ga normallangan), faqat 8 ta eng baland ion."
+   },
+   "gc": {
+    "column": "5% fenil/95% metil silikon 10 m x 0.32 mm x 0.52 um (GC-FID, metod MEM-GCS1)",
+    "program": "120 C (1.0 min) -> 280 C, 25 C/min -> 1.0 min ushlash; H2 1.5 mL/min; split 100:1",
+    "rt": "metamfetamin 1.42 min (RRT 1.00; FID, asbobga bog'liq)",
+    "source": "SWGDRUG METHAMPHETAMINE monograph (rev. March 15, 2005) https://swgdrug.org/Monographs/METHAMPHETAMINE.pdf , 3.4 GC"
+   },
+   "deriv": [],
+   "notes": [
+    "Asosiy cho'qqi 58 ([CH3CH=NHCH3]+); molekulyar ion 149 juda kuchsiz."
+   ],
+   "not_found": [
+    "TFA/PFP hosila ionlari topilmadi"
+   ]
+  },
+  {
+   "name": "MDMA (3,4-metilendioksimetamfetamin)",
+   "formula": "C11H15NO2",
+   "mw": "193.2 (base); 229.7 (HCl)",
+   "mw_source": "SWGDRUG 3,4-METHYLENEDIOXYMETHAMPHETAMINE monograph rev. Aug 18, 2005, 2.1",
+   "ei": {
+    "base_peak": 58,
+    "molecular_ion": {
+     "mz": 193,
+     "rel": 0
+    },
+    "ions": [
+     {
+      "mz": 58,
+      "rel": 100
+     },
+     {
+      "mz": 135,
+      "rel": 7
+     },
+     {
+      "mz": 77,
+      "rel": 7
+     },
+     {
+      "mz": 51,
+      "rel": 5
+     },
+     {
+      "mz": 30,
+      "rel": 5
+     },
+     {
+      "mz": 56,
+      "rel": 4
+     },
+     {
+      "mz": 136,
+      "rel": 4
+     },
+     {
+      "mz": 59,
+      "rel": 4
+     }
+    ],
+    "source": "NIST Chemistry WebBook, Mass spectrum (electron ionization), N-Methyl-3,4-methylenedioxyamphetamine (CAS 42542-10-9); spectr manbasi: Virginia Division of Forensic Science; JCAMP: https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C42542109&Index=0&Type=Mass ; sahifa: https://webbook.nist.gov/cgi/cbook.cgi?ID=C42542109&Mask=200#Mass-Spec",
+    "note": "NIST WebBook spektri: elektron ionlanish (EI, odatda 70 eV; manba sahifasida eV alohida ko'rsatilmagan). Nisbiy intensivlik (%) NIST peak jadvalidan (999 -> 100% ga normallangan), faqat 8 ta eng baland ion."
+   },
+   "gc": {
+    "column": "5% fenil/95% metil silikon 30 m x 0.25 mm x 0.25 um (GC-FID, metod MDMA-GCS1)",
+    "program": "90 C (1.0 min) -> 295 C, 30 C/min -> 2.6 min ushlash; H2 2.0 mL/min; split 50:1",
+    "rt": "MDMA 4.39 min (RRT 1.00; MDA 0.95, MDEA 1.04) - FID, asbobga bog'liq",
+    "source": "SWGDRUG MDMA monograph https://swgdrug.org/Monographs/3,4-METHYLENEDIOXYMETHAMPHETAMINE.pdf , 3.4 GC"
+   },
+   "deriv": [],
+   "notes": [
+    "Asosiy ion 58; M+ 193 jadvalda topilmadi (NIST nominal 194 ga M+1 tegishli)."
+   ],
+   "not_found": [
+    "GC-MS sharti va hosila ionlari topilmadi"
+   ]
+  },
+  {
+   "name": "Heroin (diatsetilmorfin)",
+   "formula": "C21H23NO5",
+   "mw": "369.4 (base)",
+   "mw_source": "SWGDRUG HEROIN monograph rev. March 18, 2005, 2.1",
+   "ei": {
+    "base_peak": 327,
+    "molecular_ion": {
+     "mz": 369,
+     "rel": 73
+    },
+    "ions": [
+     {
+      "mz": 327,
+      "rel": 100
+     },
+     {
+      "mz": 43,
+      "rel": 95
+     },
+     {
+      "mz": 369,
+      "rel": 73
+     },
+     {
+      "mz": 268,
+      "rel": 60
+     },
+     {
+      "mz": 310,
+      "rel": 53
+     },
+     {
+      "mz": 204,
+      "rel": 37
+     },
+     {
+      "mz": 42,
+      "rel": 34
+     },
+     {
+      "mz": 215,
+      "rel": 32
+     }
+    ],
+    "source": "NIST Chemistry WebBook, Mass spectrum (electron ionization), Diacetylmorphine (CAS 561-27-3); spectr manbasi: NIST Mass Spectrometry Data Center; JCAMP: https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C561273&Index=0&Type=Mass ; sahifa: https://webbook.nist.gov/cgi/cbook.cgi?ID=C561273&Mask=200#Mass-Spec",
+    "note": "NIST WebBook spektri: elektron ionlanish (EI, odatda 70 eV; manba sahifasida eV alohida ko'rsatilmagan). Nisbiy intensivlik (%) NIST peak jadvalidan (999 -> 100% ga normallangan), faqat 8 ta eng baland ion."
+   },
+   "gc": {
+    "column": "5% fenil/95% metil silikon 12.0 m x 0.2 mm x 0.33 um (GC-FID, metod HER-GCS1)",
+    "program": "175 C (1.0 min) -> 280 C, 15 C/min -> 4.0 min ushlash; split 60:1",
+    "rt": "geroin 9.57 min (tetrakozan 6.01 min); boshqa metodda 8.60 min - FID, asbobga bog'liq",
+    "source": "SWGDRUG HEROIN monograph (rev. March 18, 2005) https://swgdrug.org/Monographs/HEROIN.pdf , 3.4 GC"
+   },
+   "deriv": [],
+   "notes": [
+    "SWGDRUG kokain monografida RRT: geroin 1.44, 6-MAM 1.33, morfin 1.24, kodein 1.19 (FID, kokain 5.32 min ga nisbatan)."
+   ],
+   "not_found": [
+    "GC-MS sharti topilmadi"
+   ]
+  },
+  {
+   "name": "6-Monoacetylmorphine (6-MAM)",
+   "formula": "C19H21NO4",
+   "mw": "327 (nominal)",
+   "mw_source": "NIST WebBook (MW=327)",
+   "ei": {
+    "base_peak": 327,
+    "molecular_ion": {
+     "mz": 327,
+     "rel": 100
+    },
+    "ions": [
+     {
+      "mz": 327,
+      "rel": 100
+     },
+     {
+      "mz": 268,
+      "rel": 94
+     },
+     {
+      "mz": 43,
+      "rel": 62
+     },
+     {
+      "mz": 42,
+      "rel": 52
+     },
+     {
+      "mz": 215,
+      "rel": 40
+     },
+     {
+      "mz": 146,
+      "rel": 37
+     },
+     {
+      "mz": 44,
+      "rel": 30
+     },
+     {
+      "mz": 115,
+      "rel": 29
+     }
+    ],
+    "source": "NIST Chemistry WebBook, Mass spectrum (electron ionization), 6-Monoacetylmorphine (CAS 2784-73-8); spectr manbasi: NIST Mass Spectrometry Data Center; JCAMP: https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C2784738&Index=0&Type=Mass ; sahifa: https://webbook.nist.gov/cgi/cbook.cgi?ID=C2784738&Mask=200#Mass-Spec",
+    "note": "NIST WebBook spektri: elektron ionlanish (EI, odatda 70 eV; manba sahifasida eV alohida ko'rsatilmagan). Nisbiy intensivlik (%) NIST peak jadvalidan (999 -> 100% ga normallangan), faqat 8 ta eng baland ion."
+   },
+   "gc": {
+    "column": "topilmadi (NIST WebBook yozuvida GC sharti yo'q)",
+    "program": "topilmadi",
+    "rt": "topilmadi",
+    "source": ""
+   },
+   "deriv": [
+    "Biologik namunada odatda TMS/PFPA hosila; ionlar topilmadi."
+   ],
+   "notes": [
+    "SWGDRUG kokain monografi: 6-MAM RRT 1.33 (FID)."
+   ],
+   "not_found": [
+    "GC-MS sharti va hosila ionlari topilmadi"
+   ]
+  },
+  {
+   "name": "Morphine",
+   "formula": "C17H19NO3",
+   "mw": "285 (nominal)",
+   "mw_source": "NIST WebBook (MW=285)",
+   "ei": {
+    "base_peak": 285,
+    "molecular_ion": {
+     "mz": 285,
+     "rel": 100
+    },
+    "ions": [
+     {
+      "mz": 285,
+      "rel": 100
+     },
+     {
+      "mz": 42,
+      "rel": 25
+     },
+     {
+      "mz": 162,
+      "rel": 25
+     },
+     {
+      "mz": 215,
+      "rel": 21
+     },
+     {
+      "mz": 286,
+      "rel": 20
+     },
+     {
+      "mz": 44,
+      "rel": 18
+     },
+     {
+      "mz": 124,
+      "rel": 18
+     },
+     {
+      "mz": 59,
+      "rel": 17
+     }
+    ],
+    "source": "NIST Chemistry WebBook, Mass spectrum (electron ionization), Morphine (CAS 57-27-2); spectr manbasi: R RYHAGE MS-LAB KAROLINSKA INSTITUTET STOCKHOLM SWEDEN; JCAMP: https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C57272&Index=0&Type=Mass ; sahifa: https://webbook.nist.gov/cgi/cbook.cgi?ID=C57272&Mask=200#Mass-Spec",
+    "note": "NIST WebBook spektri: elektron ionlanish (EI, odatda 70 eV; manba sahifasida eV alohida ko'rsatilmagan). Nisbiy intensivlik (%) NIST peak jadvalidan (999 -> 100% ga normallangan), faqat 8 ta eng baland ion."
+   },
+   "gc": {
+    "column": "topilmadi (NIST WebBook yozuvida GC sharti yo'q)",
+    "program": "topilmadi",
+    "rt": "topilmadi",
+    "source": ""
+   },
+   "deriv": [
+    "Morfin odatda TMS/propionil hosila sifatida; ionlar topilmadi."
+   ],
+   "notes": [
+    "NIST manbasi: Karolinska Institutet (R. Ryhage)."
+   ],
+   "not_found": [
+    "GC-MS sharti va hosila ionlari topilmadi"
+   ]
+  },
+  {
+   "name": "Codeine",
+   "formula": "C18H21NO3",
+   "mw": "299 (nominal)",
+   "mw_source": "NIST WebBook (MW=299)",
+   "ei": {
+    "base_peak": 299,
+    "molecular_ion": {
+     "mz": 299,
+     "rel": 100
+    },
+    "ions": [
+     {
+      "mz": 299,
+      "rel": 100
+     },
+     {
+      "mz": 162,
+      "rel": 55
+     },
+     {
+      "mz": 115,
+      "rel": 32
+     },
+     {
+      "mz": 124,
+      "rel": 30
+     },
+     {
+      "mz": 42,
+      "rel": 29
+     },
+     {
+      "mz": 229,
+      "rel": 29
+     },
+     {
+      "mz": 214,
+      "rel": 22
+     },
+     {
+      "mz": 300,
+      "rel": 20
+     }
+    ],
+    "source": "NIST Chemistry WebBook, Mass spectrum (electron ionization), Codeine (CAS 76-57-3); spectr manbasi: Drug Lab; JCAMP: https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C76573&Index=0&Type=Mass ; sahifa: https://webbook.nist.gov/cgi/cbook.cgi?ID=C76573&Mask=200#Mass-Spec",
+    "note": "NIST WebBook spektri: elektron ionlanish (EI, odatda 70 eV; manba sahifasida eV alohida ko'rsatilmagan). Nisbiy intensivlik (%) NIST peak jadvalidan (999 -> 100% ga normallangan), faqat 8 ta eng baland ion."
+   },
+   "gc": {
+    "column": "topilmadi (NIST WebBook yozuvida GC sharti yo'q)",
+    "program": "topilmadi",
+    "rt": "topilmadi",
+    "source": ""
+   },
+   "deriv": [],
+   "notes": [
+    "NIST jadvalida 314 gacha peak bor (ehtimol manba artefakti) - ishlatilmadi."
+   ],
+   "not_found": [
+    "GC-MS sharti topilmadi"
+   ]
+  },
+  {
+   "name": "Methadone",
+   "formula": "C21H27NO",
+   "mw": "309 (nominal)",
+   "mw_source": "NIST WebBook (MW=309)",
+   "ei": {
+    "base_peak": 72,
+    "molecular_ion": {
+     "mz": 309,
+     "rel": 2
+    },
+    "ions": [
+     {
+      "mz": 72,
+      "rel": 100
+     },
+     {
+      "mz": 86,
+      "rel": 8
+     },
+     {
+      "mz": 73,
+      "rel": 8
+     },
+     {
+      "mz": 294,
+      "rel": 7
+     },
+     {
+      "mz": 57,
+      "rel": 6
+     },
+     {
+      "mz": 223,
+      "rel": 6
+     },
+     {
+      "mz": 71,
+      "rel": 4
+     },
+     {
+      "mz": 91,
+      "rel": 4
+     }
+    ],
+    "source": "NIST Chemistry WebBook, Mass spectrum (electron ionization), Methadone (CAS 76-99-3); spectr manbasi: Chemical Concepts; JCAMP: https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C76993&Index=0&Type=Mass ; sahifa: https://webbook.nist.gov/cgi/cbook.cgi?ID=C76993&Mask=200#Mass-Spec",
+    "note": "NIST WebBook spektri: elektron ionlanish (EI, odatda 70 eV; manba sahifasida eV alohida ko'rsatilmagan). Nisbiy intensivlik (%) NIST peak jadvalidan (999 -> 100% ga normallangan), faqat 8 ta eng baland ion."
+   },
+   "gc": {
+    "column": "topilmadi (NIST WebBook yozuvida GC sharti yo'q)",
+    "program": "topilmadi",
+    "rt": "topilmadi",
+    "source": ""
+   },
+   "deriv": [],
+   "notes": [
+    "Asosiy ion 72 (dimetilaminopropil fragment); M+ 309 juda kuchsiz."
+   ],
+   "not_found": [
+    "GC-MS sharti topilmadi"
+   ]
+  },
+  {
+   "name": "Diazepam",
+   "formula": "C16H13ClN2O",
+   "mw": "284.7",
+   "mw_source": "SWGDRUG DIAZEPAM monograph rev. Feb 15, 1999, 2.1",
+   "ei": {
+    "base_peak": 256,
+    "molecular_ion": {
+     "mz": 284,
+     "rel": 72
+    },
+    "ions": [
+     {
+      "mz": 256,
+      "rel": 100
+     },
+     {
+      "mz": 283,
+      "rel": 95
+     },
+     {
+      "mz": 284,
+      "rel": 72
+     },
+     {
+      "mz": 255,
+      "rel": 47
+     },
+     {
+      "mz": 257,
+      "rel": 46
+     },
+     {
+      "mz": 285,
+      "rel": 40
+     },
+     {
+      "mz": 221,
+      "rel": 37
+     },
+     {
+      "mz": 258,
+      "rel": 36
+     }
+    ],
+    "source": "NIST Chemistry WebBook, Mass spectrum (electron ionization), Diazepam (CAS 439-14-5); spectr manbasi: NIST Mass Spectrometry Data Center, 1990.; JCAMP: https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C439145&Index=0&Type=Mass ; sahifa: https://webbook.nist.gov/cgi/cbook.cgi?ID=C439145&Mask=200#Mass-Spec",
+    "note": "NIST WebBook spektri: elektron ionlanish (EI, odatda 70 eV; manba sahifasida eV alohida ko'rsatilmagan). Nisbiy intensivlik (%) NIST peak jadvalidan (999 -> 100% ga normallangan), faqat 8 ta eng baland ion."
+   },
+   "gc": {
+    "column": "100% dimetilpolisiloksan 30 m x 0.25 mm x 0.25 um (GC-FID, metod DIA-GCS1)",
+    "program": "120 C (1.0 min) -> 270 C, 15 C/min -> 4.0 min ushlash; H2 1.9 mL/min; split 25:1",
+    "rt": "diazepam 11.65 min (RRT 1.00) - FID, asbobga bog'liq",
+    "source": "SWGDRUG DIAZEPAM monograph (rev. Feb 15, 1999) https://swgdrug.org/Monographs/DIAZEPAM.pdf , 3.3 GC"
+   },
+   "deriv": [],
+   "notes": [
+    "Xlor izotop klasterlari (284/286) tufayli M+ yonida 2 ta cho'qqi bo'ladi."
+   ],
+   "not_found": [
+    "GC-MS sharti topilmadi"
+   ]
+  },
+  {
+   "name": "Delta9-THC (dronabinol)",
+   "formula": "C21H30O2",
+   "mw": "314.46 (CBD bilan izomer; NIST MW=314)",
+   "mw_source": "NIST WebBook (MW=314)",
+   "ei": {
+    "base_peak": 299,
+    "molecular_ion": {
+     "mz": 314,
+     "rel": 80
+    },
+    "ions": [
+     {
+      "mz": 299,
+      "rel": 100
+     },
+     {
+      "mz": 314,
+      "rel": 80
+     },
+     {
+      "mz": 231,
+      "rel": 79
+     },
+     {
+      "mz": 271,
+      "rel": 48
+     },
+     {
+      "mz": 243,
+      "rel": 33
+     },
+     {
+      "mz": 41,
+      "rel": 28
+     },
+     {
+      "mz": 258,
+      "rel": 26
+     },
+     {
+      "mz": 43,
+      "rel": 25
+     }
+    ],
+    "source": "NIST Chemistry WebBook, Mass spectrum (electron ionization), Dronabinol (CAS 1972-08-3); spectr manbasi: NIST Mass Spectrometry Data Center; JCAMP: https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C1972083&Index=0&Type=Mass ; sahifa: https://webbook.nist.gov/cgi/cbook.cgi?ID=C1972083&Mask=200#Mass-Spec",
+    "note": "NIST WebBook spektri: elektron ionlanish (EI, odatda 70 eV; manba sahifasida eV alohida ko'rsatilmagan). Nisbiy intensivlik (%) NIST peak jadvalidan (999 -> 100% ga normallangan), faqat 8 ta eng baland ion."
+   },
+   "gc": {
+    "column": "topilmadi (NIST yozuvida yo'q); UCT usuli: Rxi-5sil MS 30 m x 0.25 mm x 0.25 um",
+    "program": "UCT (TMS hosila): 100 C 1 min; 40 C/min -> 280 C; 10 C/min -> 310 C (1.5 min)",
+    "rt": "topilmadi (UCT GC-MS jadvalida nisbiy retention vaqtlari alohida; aniq qiymat tekshirilmadi)",
+    "source": "UCT application note SSTHC (2019): https://www.unitedchem.com/wp-content/uploads/2019/08/THC_THC-OH_and_THC-COOH_IN_WHOLE_BLOOD_SSTHC.pdf , GC-MS jadvallari"
+   },
+   "deriv": [
+    "BSTFA + 1% TMCS: qoldiq 50 uL piridin + 50 uL BSTFA/1%TMCS, 70 C da 30 min, 2 uL inyeksiya (UCT, qon namunasi).",
+    "THC-TMS SIM ionlari: 386.30 (miqdoriy), 371.3, 303.15 (UCT). THC-COOH-TMS: 371.2, 488.4, 473.3; THC-OH-TMS: 371.3, 474.4, 459.3."
+   ],
+   "notes": [
+    "Hosilalanmagan THC: asosiy ion 299 (M-15), M+ 314 ~80% (NIST). Eslatma: NIST spektri nashr \"Dronabinol\" nomi ostida.",
+    "Biologik (qon) namuna: qattiq fazali ekstraksiya (Styre Screen SSTHC, 100 mg) keyin hosilalash (UCT).",
+    "Qamalgan material: SWGDRUG da THC monografi ro'yxatda topilmadi (MARIJUANA.pdf, THCA-A, CBD, CBG, CBC bor)."
+   ],
+   "not_found": [
+    "SWGDRUG da Delta9-THC monografi topilmadi",
+    "THC-TMS to'liq EI spektri (ion ro'yxati) topilmadi - faqat SIM ionlari"
+   ]
+  },
+  {
+   "name": "Cannabinol (CBN)",
+   "formula": "C21H26O2",
+   "mw": "310 (nominal)",
+   "mw_source": "NIST WebBook (MW=310)",
+   "ei": {
+    "base_peak": 295,
+    "molecular_ion": {
+     "mz": 310,
+     "rel": 11
+    },
+    "ions": [
+     {
+      "mz": 295,
+      "rel": 100
+     },
+     {
+      "mz": 296,
+      "rel": 23
+     },
+     {
+      "mz": 238,
+      "rel": 14
+     },
+     {
+      "mz": 310,
+      "rel": 11
+     },
+     {
+      "mz": 165,
+      "rel": 5
+     },
+     {
+      "mz": 223,
+      "rel": 4
+     },
+     {
+      "mz": 251,
+      "rel": 4
+     },
+     {
+      "mz": 239,
+      "rel": 3
+     }
+    ],
+    "source": "NIST Chemistry WebBook, Mass spectrum (electron ionization), Cannabinol (CAS 521-35-7); spectr manbasi: NIST Mass Spectrometry Data Center; JCAMP: https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C521357&Index=0&Type=Mass ; sahifa: https://webbook.nist.gov/cgi/cbook.cgi?ID=C521357&Mask=200#Mass-Spec",
+    "note": "NIST WebBook spektri: elektron ionlanish (EI, odatda 70 eV; manba sahifasida eV alohida ko'rsatilmagan). Nisbiy intensivlik (%) NIST peak jadvalidan (999 -> 100% ga normallangan), faqat 8 ta eng baland ion."
+   },
+   "gc": {
+    "column": "topilmadi (NIST WebBook yozuvida GC sharti yo'q)",
+    "program": "topilmadi",
+    "rt": "topilmadi",
+    "source": ""
+   },
+   "deriv": [],
+   "notes": [
+    "Asosiy ion 295 (M-15); M+ 310 ~11%."
+   ],
+   "not_found": [
+    "GC-MS sharti topilmadi",
+    "SWGDRUG CBN monografi topilmadi"
+   ]
+  },
+  {
+   "name": "Pregabalin",
+   "formula": "C8H17NO2",
+   "mw": "159.23 (umumiy ma'lumot; manbada tekshirilmagan)",
+   "mw_source": "topilmadi (manba tekshirilmagan)",
+   "ei": {
+    "base_peak": "topilmadi",
+    "molecular_ion": "topilmadi",
+    "ions": [],
+    "source": "",
+    "note": "Pregabalin EI spektri SWGDRUG/NIST WebBook da topilmadi."
+   },
+   "gc": {
+    "column": "topilmadi",
+    "program": "topilmadi",
+    "rt": "topilmadi",
+    "source": ""
+   },
+   "deriv": [
+    "Pregabalin amino kislota: GC injektorida/transfer liniyasida siklik laktamga (pregabalin lactam) aylanishi mumkin; metillash (HCl/metanol yoki SOCl2/MeOH) so'ng amin hosilalash usuli tavsiya etilgan (PubMed 30080926, annotatsiya).",
+    "Ash, Hickey, Goodpaster, Forensic Chemistry 2018: TFAA, BSTFA, DMF-DMA yaxshi ishlamagan (bir nechta cho'qqi) - qidiruv natijasidagi annotatsiya, to'liq matn tekshirilmagan.",
+    "Cayman Chemical (S)-pregabalin lactam standarti va bepul GC-MS kutubxonasi mavjud: https://www.caymanchem.com/product/43247 (ionlari topilmadi)."
+   ],
+   "notes": [
+    "Pregabalin ko'pincha LC-MS bilan aniqlanadi; GC-MS da to'g'ridan-to'g'ri tahlil qiyin."
+   ],
+   "not_found": [
+    "EI ion ro'yxati topilmadi",
+    "GC sharti topilmadi"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "swgdrug",
+   "title": "SWGDRUG Monographs index",
+   "org": "SWGDRUG (Scientific Working Group for the Analysis of Seized Drugs)",
+   "url": "https://swgdrug.org/monographs.htm",
+   "note": "Alohida PDF lar: https://swgdrug.org/Monographs/<NOM>.pdf. Cocaine, Heroin, Amphetamine, Methamphetamine, MDMA, Diazepam PDF larida EI-MS spektr sahifasi yo'q; faqat GC-FID."
+  },
+  {
+   "id": "nist",
+   "title": "NIST Chemistry WebBook, Mass spectrum (electron ionization)",
+   "org": "NIST Mass Spectrometry Data Center (U.S. Secretary of Commerce); yozuv manbalari alohida (Drug Lab, Virginia DFS, AAFS Toxicology DB ...)",
+   "url": "https://webbook.nist.gov/chemistry/",
+   "note": "JCAMP-DX peak jadvali 2026-11-02 da yuklab olindi. Qayta tarqatish shartlarini NIST sahifasida tekshiring."
+  },
+  {
+   "id": "uct",
+   "title": "THC, THC-OH, and THC-COOH confirmations in whole blood by LC-MS/MS or GC-MS using 100 mg Styre Screen SSTHC",
+   "org": "United Chemical Technologies (UCT)",
+   "year": 2019,
+   "url": "https://www.unitedchem.com/wp-content/uploads/2019/08/THC_THC-OH_and_THC-COOH_IN_WHOLE_BLOOD_SSTHC.pdf",
+   "note": "Ilova yozuvi (application note), peer-review emas."
+  },
+  {
+   "id": "unodc40",
+   "title": "Recommended methods for the identification and analysis of cannabis and cannabis products (ST/NAR/40)",
+   "org": "UNODC",
+   "year": 2009,
+   "url": "https://www.unodc.org/unodc/en/scientists/recommended-methods-for-the-identification-and-analysis-of-cannabis-and-cannabis-products.html",
+   "note": "Sahifa topildi; PDF matni o'qilmadi, shuning uchun undan raqam olinmadi."
+  },
+  {
+   "id": "pubmed_pregabalin",
+   "title": "Enantiomeric Identification of Pregabalin by GC-MS via Methylation and S-TPC Chiral Derivatization",
+   "org": "J Forensic Sci",
+   "year": 2019,
+   "url": "https://pubmed.ncbi.nlm.nih.gov/30080926/",
+   "note": "Annotatsiya darajasida."
+  },
+  {
+   "id": "ash2018",
+   "title": "Formation and identification of novel derivatives of primary amine and zwitterionic drugs",
+   "org": "Ash, Hickey, Goodpaster; Forensic Chemistry",
+   "year": 2018,
+   "url": "https://scholarworks.indianapolis.iu.edu/items/cb967564-23a8-4cb6-a06d-61e9affe742a/full",
+   "note": "Annotatsiya darajasida."
+  },
+  {
+   "id": "cayman",
+   "title": "Cayman Chemical forensic standards / GC-MS spectral library",
+   "org": "Cayman Chemical",
+   "url": "https://www.caymanchem.com/product/43247",
+   "note": "Kutubxona ichidagi spektrlarga kirilmadi; ion ma'lumoti olinmadi."
+  }
+ ]
+}
