@@ -63,16 +63,13 @@ class _CatalogScreenState extends ConsumerState<CatalogScreen> {
     final mode = ref.watch(
       settingsControllerProvider.select((s) => s.userMode),
     );
-    // Ustoz — faqat ustozlar, Mutaxassis — faqat mutaxassislar (yorliqsiz);
-    // Talaba (yoki rejim tanlanmagan) ikkalasini ko‘radi.
-    final kinds = switch (mode) {
-      UserMode.teacher => const [CatalogKind.teacher],
-      UserMode.professional => const [CatalogKind.expert],
-      _ => CatalogKind.values,
-    };
+    // Ikkala yorliq hammaga; rejimga qarab o‘z bo‘limi birinchi ochiladi
+    // (Mutaxassis → «Mutaxassislar»), egasi, 2026-11-02.
+    const kinds = CatalogKind.values;
     return DefaultTabController(
-      key: ValueKey(kinds.length),
+      key: ValueKey(mode),
       length: kinds.length,
+      initialIndex: mode == UserMode.professional ? 1 : 0,
       child: Scaffold(
         appBar: AppBar(
           title: FeAppBarTitle(l.catTitle),
@@ -326,7 +323,6 @@ class _EntryCard extends StatelessWidget {
                   name: entry.name,
                   verified: entry.verified,
                   style: t.titleSmall,
-                  maxLines: 2,
                 ),
                 if (entry.founder)
                   const Padding(
@@ -586,7 +582,6 @@ class _NameWithBadge extends StatelessWidget {
     required this.verified,
     required this.style,
     this.nameKey,
-    this.maxLines = 3,
     this.textAlign = TextAlign.start,
     this.iconSize = 17,
   });
@@ -595,7 +590,7 @@ class _NameWithBadge extends StatelessWidget {
   final bool verified;
   final TextStyle? style;
   final Key? nameKey;
-  final int maxLines;
+  static const maxLines = 3;
   final TextAlign textAlign;
   final double iconSize;
 
@@ -612,30 +607,40 @@ class _NameWithBadge extends StatelessWidget {
     if (!verified) return text;
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      mainAxisAlignment: textAlign == TextAlign.center
-          ? MainAxisAlignment.center
-          : MainAxisAlignment.start,
-      children: [
-        Flexible(child: text),
-        const SizedBox(width: FeSpace.xxs),
-        Tooltip(
-          message: l.catVerifiedExpert,
-          child: Semantics(
-            label: l.catVerifiedExpert,
-            image: true,
-            child: ExcludeSemantics(
-              child: Icon(
-                Icons.verified,
-                key: const Key('cat.verifiedBadge'),
-                size: iconSize,
-                color: c.accent,
+    // Belgi ismning oxirgi so‘zidan keyin darhol turadi (uzun ism bo‘lsa ham
+    // ism bilan birga ko‘chadi).
+    return Text.rich(
+      TextSpan(
+        text: name,
+        children: [
+          WidgetSpan(
+            alignment: PlaceholderAlignment.middle,
+            child: Padding(
+              padding: const EdgeInsetsDirectional.only(start: FeSpace.xxs),
+              child: Tooltip(
+                message: l.catVerifiedExpert,
+                child: Semantics(
+                  label: l.catVerifiedExpert,
+                  image: true,
+                  child: ExcludeSemantics(
+                    child: Icon(
+                      Icons.verified,
+                      key: const Key('cat.verifiedBadge'),
+                      size: iconSize,
+                      color: c.accent,
+                    ),
+                  ),
+                ),
               ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
+      key: nameKey,
+      style: style,
+      textAlign: textAlign,
+      maxLines: maxLines,
+      overflow: TextOverflow.ellipsis,
     );
   }
 }

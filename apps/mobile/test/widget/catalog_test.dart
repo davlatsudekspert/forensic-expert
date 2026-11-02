@@ -98,7 +98,10 @@ void main() {
     expect(find.byKey(const Key('cat.tab.expert')), findsOneWidget);
     await tester.tap(find.byKey(const Key('cat.tab.expert')));
     await tester.pumpAndSettle();
-    expect(find.text('Tasdiqlangan Ekspert'), findsOneWidget);
+    expect(
+      find.textContaining('Tasdiqlangan Ekspert', findRichText: true),
+      findsOneWidget,
+    );
     expect(find.text('Tasdiqlanmagan Ekspert'), findsOneWidget);
     // Belgi faqat tasdiqlanganda.
     expect(find.byKey(const Key('cat.verifiedBadge')), findsOneWidget);
@@ -157,23 +160,31 @@ void main() {
     expect(TeacherCard.fromJson({}).founder, isFalse);
   });
 
-  testWidgets('Ustoz rejimi: faqat ustozlar, yorliqsiz', (tester) async {
-    final svc = await open(tester, uid: 'me', mode: UserMode.teacher);
-    expect(find.byType(TabBar), findsNothing);
-    expect(find.text('Qutbiddin Siddiqov'), findsOneWidget);
-    expect(find.text('Tasdiqlangan Ekspert'), findsNothing);
-    expect(svc.calls, ['list:teacher']);
-  });
-
-  testWidgets('Mutaxassis rejimi: faqat mutaxassislar, yorliqsiz', (
+  testWidgets('Ustoz rejimi: ikkala yorliq, «Ustozlar» birinchi', (
     tester,
   ) async {
-    final svc = await open(tester, uid: 'me', mode: UserMode.professional);
-    expect(find.byType(TabBar), findsNothing);
-    expect(find.text('Tasdiqlangan Ekspert'), findsOneWidget);
+    await open(tester, uid: 'me', mode: UserMode.teacher);
+    expect(find.byType(TabBar), findsOneWidget);
+    expect(find.text('Qutbiddin Siddiqov'), findsOneWidget);
+    expect(
+      find.textContaining('Tasdiqlangan Ekspert', findRichText: true),
+      findsNothing,
+    );
+  });
+
+  testWidgets('Mutaxassis rejimi: ikkala yorliq, «Mutaxassislar» birinchi', (
+    tester,
+  ) async {
+    await open(tester, uid: 'me', mode: UserMode.professional);
+    expect(find.byType(TabBar), findsOneWidget);
+    expect(
+      find.textContaining('Tasdiqlangan Ekspert', findRichText: true),
+      findsOneWidget,
+    );
     expect(find.text('Tasdiqlanmagan Ekspert'), findsOneWidget);
-    expect(find.text('Qutbiddin Siddiqov'), findsNothing);
-    expect(svc.calls, ['list:expert']);
+    await tester.tap(find.byKey(const Key('cat.tab.teacher')));
+    await tester.pumpAndSettle();
+    expect(find.text('Qutbiddin Siddiqov'), findsOneWidget);
   });
 
   testWidgets(
