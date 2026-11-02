@@ -13061,4 +13061,91 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get catFounder => 'Forensic Expert asoschisi';
+
+  @override
+  String get oralExamStart => 'Og‘zaki imtihon (bilet)';
+
+  @override
+  String get oralExamStartDesc =>
+      '5 ta savol, har biriga 0–20 ball, jami 100 ball';
+
+  @override
+  String get oralExamTitle => 'Og‘zaki imtihon';
+
+  @override
+  String oralExamTicketNo(int n) {
+    return 'Bilet № $n';
+  }
+
+  @override
+  String get oralExamName => 'Talaba ismi (ixtiyoriy)';
+
+  @override
+  String oralExamQuestionN(int n) {
+    return 'Savol $n';
+  }
+
+  @override
+  String get oralExamShowKey => 'Javob kaliti (ustoz uchun)';
+
+  @override
+  String oralExamScore(int s) {
+    return 'Ball: $s / 20';
+  }
+
+  @override
+  String get oralExamUnscored => 'Ball qo‘yilmagan';
+
+  @override
+  String oralExamTotal(int s) {
+    return 'Jami: $s / 100';
+  }
+
+  @override
+  String get oralExamSave => 'Natijani saqlash va keyingi bilet';
+
+  @override
+  String get oralExamSaveHint => 'Saqlash uchun hamma savolga ball qo‘ying';
+
+  @override
+  String oralExamSaved(int s) {
+    return 'Natija saqlandi: $s / 100';
+  }
+
+  @override
+  String get oralExamNext => 'Bilet chiqarish';
+
+  @override
+  String get oralExamPoolReset =>
+      'Hamma savollar ishlatilgan edi — yangi aylanish boshlandi';
+
+  @override
+  String oralExamPool(int used, int total) {
+    return 'Ishlatilgan savollar: $used / $total';
+  }
+
+  @override
+  String get oralExamResetPool => 'Savollarni qaytadan boshlash';
+
+  @override
+  String get oralExamHistory => 'Oldingi natijalar';
+
+  @override
+  String get oralExamHistoryEmpty => 'Hozircha natija yo‘q';
+
+  @override
+  String get oralExamHistoryClear => 'Tarixni tozalash';
+
+  @override
+  String get oralExamHistoryClearBody =>
+      'Saqlangan barcha natijalar shu telefondan o‘chiriladi.';
+
+  @override
+  String get oralExamCancel => 'Bekor qilish';
+
+  @override
+  String get oralExamDeviceNote => 'Natijalar faqat shu telefonda saqlanadi.';
+
+  @override
+  String get oralExamNoName => 'Ismsiz';
 }

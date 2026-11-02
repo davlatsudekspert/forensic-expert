@@ -318,6 +318,41 @@ class _AssessmentSpecialtyScreenState
                             ),
                         ],
                       ),
+                    if (!_tests)
+                      Padding(
+                        padding: const EdgeInsets.only(top: FeSpace.sm),
+                        child: FeCard(
+                          key: const Key('assessment.oralExam'),
+                          padding: const EdgeInsets.all(FeSpace.sm),
+                          onTap: () => context.push(
+                            Routes.assessmentExam(spec.id, cat.id),
+                          ),
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.confirmation_number_outlined,
+                                color: c.brand,
+                              ),
+                              const SizedBox(width: FeSpace.sm),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(l.oralExamStart, style: t.titleSmall),
+                                    Text(
+                                      l.oralExamStartDesc,
+                                      style: t.bodySmall?.copyWith(
+                                        color: c.textSecondary,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              const Icon(Icons.chevron_right),
+                            ],
+                          ),
+                        ),
+                      ),
                     if (_tests) _TestsHeader(spec: spec, graded: graded),
                     const SizedBox(height: FeSpace.sm),
                     TextField(
@@ -880,7 +915,7 @@ class AssessmentQuestionScreen extends ConsumerWidget {
         const SizedBox(height: FeSpace.xs),
         Text(q.text, style: t.titleMedium),
         const SizedBox(height: FeSpace.md),
-        _OralAnswerView(
+        OralAnswerView(
           answer: ref
               .watch(oralAnswersProvider(specialtyId))
               .value
@@ -912,8 +947,8 @@ class AssessmentQuestionScreen extends ConsumerWidget {
 
 /// Adabiyot asosida yozilgan javob: bandlar, har birining manbasi (bet,
 /// iqtibos) va yoritilmagan jihatlar. Javob yo‘q bo‘lsa — «tez kunda».
-class _OralAnswerView extends StatelessWidget {
-  const _OralAnswerView({required this.answer});
+class OralAnswerView extends StatelessWidget {
+  const OralAnswerView({super.key, required this.answer});
 
   final OralAnswer? answer;
 

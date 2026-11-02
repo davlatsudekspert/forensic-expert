@@ -19,6 +19,7 @@ import '../data/local/assessment_test_stats_store.dart';
 import '../data/local/casebook_store.dart';
 import '../data/local/court_history_store.dart';
 import '../data/local/group_invite_store.dart';
+import '../data/local/oral_exam_store.dart';
 import '../data/local/pro_offer_store.dart';
 import '../data/local/profile_store.dart';
 import '../data/local/referral_store.dart';
@@ -140,6 +141,9 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
         ),
         assessmentTestStatsStoreProvider.overrideWithValue(
           SharedPrefsAssessmentTestStatsStore(prefs),
+        ),
+        oralExamStoreProvider.overrideWithValue(
+          SharedPrefsOralExamStore(prefs),
         ),
         courtHistoryStoreProvider.overrideWithValue(
           SharedPrefsCourtHistoryStore(prefs),

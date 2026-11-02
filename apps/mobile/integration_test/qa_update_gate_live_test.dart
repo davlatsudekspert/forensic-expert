@@ -22,9 +22,15 @@ void main() {
     final info = await SupabaseAppVersionService(config: cfg).fetch();
     expect(info, isNotNull);
     // ignore: avoid_print
-    print('LIVE info min=${info!.minBuild} latest=${info.latestBuild} '
-        'android=${info.androidUrl} build=${AppInfo.build}');
-    expect(info.minBuild <= AppInfo.build, isTrue, reason: 'joriy build bloklanmasin');
+    print(
+      'LIVE info min=${info!.minBuild} latest=${info.latestBuild} '
+      'android=${info.androidUrl} build=${AppInfo.build}',
+    );
+    expect(
+      info.minBuild <= AppInfo.build,
+      isTrue,
+      reason: 'joriy build bloklanmasin',
+    );
     expect(UpdateRequiredSignal.instance.required.value, isFalse);
 
     // 2) Oddiy so‘rov — signal ko‘tarilmaydi.
@@ -32,7 +38,10 @@ void main() {
     final ok = await http.send(
       'POST',
       cfg.url.resolve('rest/v1/rpc/app_version_info'),
-      headers: {'apikey': cfg.anonKey, 'Authorization': 'Bearer ${cfg.anonKey}'},
+      headers: {
+        'apikey': cfg.anonKey,
+        'Authorization': 'Bearer ${cfg.anonKey}',
+      },
       jsonBody: const <String, Object?>{},
     );
     expect(ok.status, 200);

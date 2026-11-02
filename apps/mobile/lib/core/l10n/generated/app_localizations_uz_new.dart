@@ -12338,4 +12338,81 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
 
   @override
   String get catFounder => toUzNewAlphabet(super.catFounder);
+
+  @override
+  String get oralExamStart => toUzNewAlphabet(super.oralExamStart);
+
+  @override
+  String get oralExamStartDesc => toUzNewAlphabet(super.oralExamStartDesc);
+
+  @override
+  String get oralExamTitle => toUzNewAlphabet(super.oralExamTitle);
+
+  @override
+  String oralExamTicketNo(int n) => toUzNewAlphabet(super.oralExamTicketNo(n));
+
+  @override
+  String get oralExamName => toUzNewAlphabet(super.oralExamName);
+
+  @override
+  String oralExamQuestionN(int n) =>
+      toUzNewAlphabet(super.oralExamQuestionN(n));
+
+  @override
+  String get oralExamShowKey => toUzNewAlphabet(super.oralExamShowKey);
+
+  @override
+  String oralExamScore(int s) => toUzNewAlphabet(super.oralExamScore(s));
+
+  @override
+  String get oralExamUnscored => toUzNewAlphabet(super.oralExamUnscored);
+
+  @override
+  String oralExamTotal(int s) => toUzNewAlphabet(super.oralExamTotal(s));
+
+  @override
+  String get oralExamSave => toUzNewAlphabet(super.oralExamSave);
+
+  @override
+  String get oralExamSaveHint => toUzNewAlphabet(super.oralExamSaveHint);
+
+  @override
+  String oralExamSaved(int s) => toUzNewAlphabet(super.oralExamSaved(s));
+
+  @override
+  String get oralExamNext => toUzNewAlphabet(super.oralExamNext);
+
+  @override
+  String get oralExamPoolReset => toUzNewAlphabet(super.oralExamPoolReset);
+
+  @override
+  String oralExamPool(int used, int total) =>
+      toUzNewAlphabet(super.oralExamPool(used, total));
+
+  @override
+  String get oralExamResetPool => toUzNewAlphabet(super.oralExamResetPool);
+
+  @override
+  String get oralExamHistory => toUzNewAlphabet(super.oralExamHistory);
+
+  @override
+  String get oralExamHistoryEmpty =>
+      toUzNewAlphabet(super.oralExamHistoryEmpty);
+
+  @override
+  String get oralExamHistoryClear =>
+      toUzNewAlphabet(super.oralExamHistoryClear);
+
+  @override
+  String get oralExamHistoryClearBody =>
+      toUzNewAlphabet(super.oralExamHistoryClearBody);
+
+  @override
+  String get oralExamCancel => toUzNewAlphabet(super.oralExamCancel);
+
+  @override
+  String get oralExamDeviceNote => toUzNewAlphabet(super.oralExamDeviceNote);
+
+  @override
+  String get oralExamNoName => toUzNewAlphabet(super.oralExamNoName);
 }

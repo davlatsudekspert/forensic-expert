@@ -13131,4 +13131,90 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get catFounder => 'Founder of Forensic Expert';
+
+  @override
+  String get oralExamStart => 'Oral exam (ticket)';
+
+  @override
+  String get oralExamStartDesc => '5 questions, 0–20 points each, 100 in total';
+
+  @override
+  String get oralExamTitle => 'Oral exam';
+
+  @override
+  String oralExamTicketNo(int n) {
+    return 'Ticket no. $n';
+  }
+
+  @override
+  String get oralExamName => 'Examinee name (optional)';
+
+  @override
+  String oralExamQuestionN(int n) {
+    return 'Question $n';
+  }
+
+  @override
+  String get oralExamShowKey => 'Answer key (for the examiner)';
+
+  @override
+  String oralExamScore(int s) {
+    return 'Score: $s / 20';
+  }
+
+  @override
+  String get oralExamUnscored => 'Not scored yet';
+
+  @override
+  String oralExamTotal(int s) {
+    return 'Total: $s / 100';
+  }
+
+  @override
+  String get oralExamSave => 'Save the result and next ticket';
+
+  @override
+  String get oralExamSaveHint => 'Score every question to save';
+
+  @override
+  String oralExamSaved(int s) {
+    return 'Result saved: $s / 100';
+  }
+
+  @override
+  String get oralExamNext => 'Draw a ticket';
+
+  @override
+  String get oralExamPoolReset =>
+      'Every question was used — a new round has started';
+
+  @override
+  String oralExamPool(int used, int total) {
+    return 'Questions used: $used / $total';
+  }
+
+  @override
+  String get oralExamResetPool => 'Restart the question round';
+
+  @override
+  String get oralExamHistory => 'Previous results';
+
+  @override
+  String get oralExamHistoryEmpty => 'No results yet';
+
+  @override
+  String get oralExamHistoryClear => 'Clear history';
+
+  @override
+  String get oralExamHistoryClearBody =>
+      'All saved results will be deleted from this phone.';
+
+  @override
+  String get oralExamCancel => 'Cancel';
+
+  @override
+  String get oralExamDeviceNote => 'Results are stored on this phone only.';
+
+  @override
+  String get oralExamNoName => 'No name';
 }

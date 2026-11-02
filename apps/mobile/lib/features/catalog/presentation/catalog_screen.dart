@@ -241,7 +241,6 @@ class CatalogStarButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
-    final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     final on = entry.starred;
     const gold = Color(0xFFE0A100);
@@ -250,7 +249,7 @@ class CatalogStarButton extends StatelessWidget {
       children: [
         Icon(
           on ? Icons.star_rounded : Icons.star_outline_rounded,
-          color: on || entry.mine ? gold : c.textSecondary,
+          color: gold,
           size: large ? 28 : 24,
         ),
         const SizedBox(width: FeSpace.xxs),
@@ -282,7 +281,7 @@ class CatalogStarButton extends StatelessWidget {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(999),
             color: on ? gold.withValues(alpha: 0.15) : null,
-            border: Border.all(color: on ? gold : c.border),
+            border: Border.all(color: on ? gold : gold.withValues(alpha: 0.45)),
           ),
           child: child,
         ),

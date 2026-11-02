@@ -93,6 +93,8 @@ abstract final class Routes {
   static String assessmentSpecialty(String id) => '/library/assessment/$id';
   static String assessmentQuestion(String id, String qid) =>
       '/library/assessment/$id/q/$qid';
+  static String assessmentExam(String id, String cat) =>
+      '/library/assessment/$id/exam?c=$cat';
   static String assessmentTest(String id, {String? mode, int? block}) {
     final q = [if (mode != null) 'mode=$mode', if (block != null) 'b=$block'];
     return '/library/assessment/$id/test${q.isEmpty ? '' : '?${q.join('&')}'}';

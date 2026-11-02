@@ -33,6 +33,7 @@ import '../features/admin/presentation/admin_support_screens.dart';
 import '../features/admin/presentation/admin_verification_screens.dart';
 import '../features/ai/presentation/ai_screen.dart';
 import '../features/assessment/presentation/assessment_screens.dart';
+import '../features/assessment/presentation/oral_exam_screen.dart';
 import '../features/casebook/presentation/casebook_screens.dart';
 import '../features/catalog/presentation/catalog_screen.dart';
 import '../features/class_groups/presentation/assign_test_screen.dart';
@@ -1045,6 +1046,17 @@ final routerProvider = Provider<GoRouter>((ref) {
                                       s.uri.queryParameters['b'] ?? '',
                                     ) ??
                                     0,
+                              ),
+                            ),
+                          ),
+                          GoRoute(
+                            path: 'exam',
+                            builder: (c, s) => _proModule(
+                              c,
+                              title: AppLocalizations.of(c).assessmentTitle,
+                              child: AssessmentOralExamScreen(
+                                specialtyId: s.pathParameters['spec']!,
+                                categoryId: s.uri.queryParameters['c'] ?? '',
                               ),
                             ),
                           ),

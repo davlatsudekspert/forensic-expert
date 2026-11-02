@@ -22754,6 +22754,150 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Founder of Forensic Expert'**
   String get catFounder;
+
+  /// Specialty oral tab: start the oral exam.
+  ///
+  /// In en, this message translates to:
+  /// **'Oral exam (ticket)'**
+  String get oralExamStart;
+
+  /// Oral exam entry description.
+  ///
+  /// In en, this message translates to:
+  /// **'5 questions, 0–20 points each, 100 in total'**
+  String get oralExamStartDesc;
+
+  /// Oral exam screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Oral exam'**
+  String get oralExamTitle;
+
+  /// Ticket heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket no. {n}'**
+  String oralExamTicketNo(int n);
+
+  /// Optional examinee name field.
+  ///
+  /// In en, this message translates to:
+  /// **'Examinee name (optional)'**
+  String get oralExamName;
+
+  /// Question label in a ticket.
+  ///
+  /// In en, this message translates to:
+  /// **'Question {n}'**
+  String oralExamQuestionN(int n);
+
+  /// Expandable answer key.
+  ///
+  /// In en, this message translates to:
+  /// **'Answer key (for the examiner)'**
+  String get oralExamShowKey;
+
+  /// Score of a question.
+  ///
+  /// In en, this message translates to:
+  /// **'Score: {s} / 20'**
+  String oralExamScore(int s);
+
+  /// Question has no score yet.
+  ///
+  /// In en, this message translates to:
+  /// **'Not scored yet'**
+  String get oralExamUnscored;
+
+  /// Running total.
+  ///
+  /// In en, this message translates to:
+  /// **'Total: {s} / 100'**
+  String oralExamTotal(int s);
+
+  /// Save the result and draw the next ticket.
+  ///
+  /// In en, this message translates to:
+  /// **'Save the result and next ticket'**
+  String get oralExamSave;
+
+  /// Shown while some questions are unscored.
+  ///
+  /// In en, this message translates to:
+  /// **'Score every question to save'**
+  String get oralExamSaveHint;
+
+  /// Snackbar after saving.
+  ///
+  /// In en, this message translates to:
+  /// **'Result saved: {s} / 100'**
+  String oralExamSaved(int s);
+
+  /// Draw a ticket button.
+  ///
+  /// In en, this message translates to:
+  /// **'Draw a ticket'**
+  String get oralExamNext;
+
+  /// Notice: every question was used, a new round began.
+  ///
+  /// In en, this message translates to:
+  /// **'Every question was used — a new round has started'**
+  String get oralExamPoolReset;
+
+  /// Pool usage line.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions used: {used} / {total}'**
+  String oralExamPool(int used, int total);
+
+  /// Reset the used-questions round.
+  ///
+  /// In en, this message translates to:
+  /// **'Restart the question round'**
+  String get oralExamResetPool;
+
+  /// History heading.
+  ///
+  /// In en, this message translates to:
+  /// **'Previous results'**
+  String get oralExamHistory;
+
+  /// History is empty.
+  ///
+  /// In en, this message translates to:
+  /// **'No results yet'**
+  String get oralExamHistoryEmpty;
+
+  /// Clear history button.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear history'**
+  String get oralExamHistoryClear;
+
+  /// Clear history confirmation text.
+  ///
+  /// In en, this message translates to:
+  /// **'All saved results will be deleted from this phone.'**
+  String get oralExamHistoryClearBody;
+
+  /// Cancel in the confirmation.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get oralExamCancel;
+
+  /// Where results are stored.
+  ///
+  /// In en, this message translates to:
+  /// **'Results are stored on this phone only.'**
+  String get oralExamDeviceNote;
+
+  /// History row without a name.
+  ///
+  /// In en, this message translates to:
+  /// **'No name'**
+  String get oralExamNoName;
 }
 
 class _AppLocalizationsDelegate

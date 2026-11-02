@@ -13183,4 +13183,93 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get catFounder => 'Основатель Forensic Expert';
+
+  @override
+  String get oralExamStart => 'Устный экзамен (билет)';
+
+  @override
+  String get oralExamStartDesc =>
+      '5 вопросов, за каждый 0–20 баллов, всего 100';
+
+  @override
+  String get oralExamTitle => 'Устный экзамен';
+
+  @override
+  String oralExamTicketNo(int n) {
+    return 'Билет № $n';
+  }
+
+  @override
+  String get oralExamName => 'Имя экзаменуемого (необязательно)';
+
+  @override
+  String oralExamQuestionN(int n) {
+    return 'Вопрос $n';
+  }
+
+  @override
+  String get oralExamShowKey => 'Ключ ответа (для экзаменатора)';
+
+  @override
+  String oralExamScore(int s) {
+    return 'Баллы: $s / 20';
+  }
+
+  @override
+  String get oralExamUnscored => 'Баллы не выставлены';
+
+  @override
+  String oralExamTotal(int s) {
+    return 'Итого: $s / 100';
+  }
+
+  @override
+  String get oralExamSave => 'Сохранить результат и следующий билет';
+
+  @override
+  String get oralExamSaveHint =>
+      'Чтобы сохранить, выставьте баллы за все вопросы';
+
+  @override
+  String oralExamSaved(int s) {
+    return 'Результат сохранён: $s / 100';
+  }
+
+  @override
+  String get oralExamNext => 'Выдать билет';
+
+  @override
+  String get oralExamPoolReset =>
+      'Все вопросы были использованы — начат новый круг';
+
+  @override
+  String oralExamPool(int used, int total) {
+    return 'Использовано вопросов: $used / $total';
+  }
+
+  @override
+  String get oralExamResetPool => 'Начать вопросы заново';
+
+  @override
+  String get oralExamHistory => 'Предыдущие результаты';
+
+  @override
+  String get oralExamHistoryEmpty => 'Результатов пока нет';
+
+  @override
+  String get oralExamHistoryClear => 'Очистить историю';
+
+  @override
+  String get oralExamHistoryClearBody =>
+      'Все сохранённые результаты будут удалены с этого телефона.';
+
+  @override
+  String get oralExamCancel => 'Отмена';
+
+  @override
+  String get oralExamDeviceNote =>
+      'Результаты хранятся только на этом телефоне.';
+
+  @override
+  String get oralExamNoName => 'Без имени';
 }

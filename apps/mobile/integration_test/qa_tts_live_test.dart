@@ -32,7 +32,9 @@ class _TokenAuth implements AuthRepository {
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
-  testWidgets('live: Tinglash — server → kesh → ijro → qayta tinglash', (tester) async {
+  testWidgets('live: Tinglash — server → kesh → ijro → qayta tinglash', (
+    tester,
+  ) async {
     final cfg = SupabaseConfig.fromEnvironment();
     if (_jwt.isEmpty || cfg == null) {
       markTestSkipped('QA_TTS_JWT / Supabase sozlamasi yo‘q');
@@ -44,7 +46,8 @@ void main() {
       auth: _TokenAuth(),
       cacheDir: () async => cache,
     );
-    const text = 'Sud-tibbiy toksikologiya. Qondagi etanol miqdori gaz '
+    const text =
+        'Sud-tibbiy toksikologiya. Qondagi etanol miqdori gaz '
         'xromatografiya usulida aniqlanadi.';
 
     await tester.pumpWidget(
@@ -59,7 +62,9 @@ void main() {
             GlobalWidgetsLocalizations.delegate,
             GlobalCupertinoLocalizations.delegate,
           ],
-          home: Scaffold(body: Center(child: ListenButton(text: text))),
+          home: Scaffold(
+            body: Center(child: ListenButton(text: text)),
+          ),
         ),
       ),
     );
@@ -79,7 +84,11 @@ void main() {
     expect(find.byType(CircularProgressIndicator), findsOneWidget);
     await waitFor(find.byIcon(Icons.pause_rounded));
     final first = sw.elapsedMilliseconds;
-    final wavs = cache.listSync(recursive: true).whereType<File>().where((f) => f.path.endsWith('.wav')).toList();
+    final wavs = cache
+        .listSync(recursive: true)
+        .whereType<File>()
+        .where((f) => f.path.endsWith('.wav'))
+        .toList();
     expect(wavs, hasLength(1));
     final head = wavs.single.openSync().readSync(4);
     expect(String.fromCharCodes(head), 'RIFF');

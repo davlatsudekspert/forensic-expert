@@ -17209,5 +17209,134 @@
   "catFounder": "Founder of Forensic Expert",
   "@catFounder": {
     "description": "Quiet gold badge for the founder of the app."
+  },
+  "oralExamStart": "Oral exam (ticket)",
+  "@oralExamStart": {
+    "description": "Specialty oral tab: start the oral exam."
+  },
+  "oralExamStartDesc": "5 questions, 0–20 points each, 100 in total",
+  "@oralExamStartDesc": {
+    "description": "Oral exam entry description."
+  },
+  "oralExamTitle": "Oral exam",
+  "@oralExamTitle": {
+    "description": "Oral exam screen title."
+  },
+  "oralExamTicketNo": "Ticket no. {n}",
+  "@oralExamTicketNo": {
+    "description": "Ticket heading.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "oralExamName": "Examinee name (optional)",
+  "@oralExamName": {
+    "description": "Optional examinee name field."
+  },
+  "oralExamQuestionN": "Question {n}",
+  "@oralExamQuestionN": {
+    "description": "Question label in a ticket.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "oralExamShowKey": "Answer key (for the examiner)",
+  "@oralExamShowKey": {
+    "description": "Expandable answer key."
+  },
+  "oralExamScore": "Score: {s} / 20",
+  "@oralExamScore": {
+    "description": "Score of a question.",
+    "placeholders": {
+      "s": {
+        "type": "int"
+      }
+    }
+  },
+  "oralExamUnscored": "Not scored yet",
+  "@oralExamUnscored": {
+    "description": "Question has no score yet."
+  },
+  "oralExamTotal": "Total: {s} / 100",
+  "@oralExamTotal": {
+    "description": "Running total.",
+    "placeholders": {
+      "s": {
+        "type": "int"
+      }
+    }
+  },
+  "oralExamSave": "Save the result and next ticket",
+  "@oralExamSave": {
+    "description": "Save the result and draw the next ticket."
+  },
+  "oralExamSaveHint": "Score every question to save",
+  "@oralExamSaveHint": {
+    "description": "Shown while some questions are unscored."
+  },
+  "oralExamSaved": "Result saved: {s} / 100",
+  "@oralExamSaved": {
+    "description": "Snackbar after saving.",
+    "placeholders": {
+      "s": {
+        "type": "int"
+      }
+    }
+  },
+  "oralExamNext": "Draw a ticket",
+  "@oralExamNext": {
+    "description": "Draw a ticket button."
+  },
+  "oralExamPoolReset": "Every question was used — a new round has started",
+  "@oralExamPoolReset": {
+    "description": "Notice: every question was used, a new round began."
+  },
+  "oralExamPool": "Questions used: {used} / {total}",
+  "@oralExamPool": {
+    "description": "Pool usage line.",
+    "placeholders": {
+      "used": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "oralExamResetPool": "Restart the question round",
+  "@oralExamResetPool": {
+    "description": "Reset the used-questions round."
+  },
+  "oralExamHistory": "Previous results",
+  "@oralExamHistory": {
+    "description": "History heading."
+  },
+  "oralExamHistoryEmpty": "No results yet",
+  "@oralExamHistoryEmpty": {
+    "description": "History is empty."
+  },
+  "oralExamHistoryClear": "Clear history",
+  "@oralExamHistoryClear": {
+    "description": "Clear history button."
+  },
+  "oralExamHistoryClearBody": "All saved results will be deleted from this phone.",
+  "@oralExamHistoryClearBody": {
+    "description": "Clear history confirmation text."
+  },
+  "oralExamCancel": "Cancel",
+  "@oralExamCancel": {
+    "description": "Cancel in the confirmation."
+  },
+  "oralExamDeviceNote": "Results are stored on this phone only.",
+  "@oralExamDeviceNote": {
+    "description": "Where results are stored."
+  },
+  "oralExamNoName": "No name",
+  "@oralExamNoName": {
+    "description": "History row without a name."
   }
 }
