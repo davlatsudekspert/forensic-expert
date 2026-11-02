@@ -713,8 +713,8 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
               key: const Key('lesson.explain'),
               tooltip: l.lessonExplainTitle,
               isSelected: _textVisible,
-              icon: const Icon(Icons.subtitles_outlined),
-              selectedIcon: const Icon(Icons.subtitles),
+              icon: const Icon(Icons.record_voice_over_outlined),
+              selectedIcon: const Icon(Icons.record_voice_over),
               onPressed: () => setState(() => _textPref = !_textVisible),
             ),
           // Tor telefonda sarlavhaga joy qoladi: test tugmasi oxirgi slaydda bor.
@@ -783,7 +783,15 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
                         ),
                       ],
                     )
-                  : slide,
+                  : Stack(
+                      children: [
+                        Positioned.fill(child: slide),
+                        // «Tushuntirish» ochiq — slayd o‘rnida to‘liq matn
+                        // (sahifalash ostida ishlayveradi).
+                        if (_textVisible && explain.isNotEmpty)
+                          Positioned.fill(child: _SpokenText(text: explain)),
+                      ],
+                    ),
             ),
             if (canNotes && _notes && !wideNotes)
               ConstrainedBox(
@@ -817,8 +825,6 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
                       ),
               ),
             ],
-            // Ovoz o‘qiyotganda — o‘qilayotgan tushuntirish matni (subtitr).
-            if (_textVisible && explain.isNotEmpty) _SpokenText(text: explain),
             if (_auto)
               _AutoBar(
                 seconds: _autoSeconds,
@@ -1164,36 +1170,27 @@ class _SpokenText extends StatelessWidget {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
-    return ConstrainedBox(
+    return ColoredBox(
       key: const Key('lesson.spokenText'),
-      constraints: BoxConstraints(
-        maxHeight: MediaQuery.sizeOf(context).height * 0.32,
-      ),
-      child: DecoratedBox(
-        decoration: BoxDecoration(
-          color: c.surfaceSunken,
-          border: Border(top: BorderSide(color: c.border)),
-        ),
-        child: SingleChildScrollView(
-          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
-          padding: const EdgeInsets.fromLTRB(
-            FeSpace.md,
-            FeSpace.sm,
-            FeSpace.md,
-            FeSpace.sm,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(l.lessonExplainTitle, style: t.labelLarge),
-              Text(
-                l.lessonExplainNote,
-                style: t.bodySmall?.copyWith(color: c.textSecondary),
-              ),
-              const SizedBox(height: FeSpace.xs),
-              Text(text, style: t.bodyLarge),
-            ],
-          ),
+      color: c.surface,
+      child: SingleChildScrollView(
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
+        padding: const EdgeInsets.all(FeSpace.md),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Semantics(
+              header: true,
+              child: Text(l.lessonExplainTitle, style: t.titleLarge),
+            ),
+            const SizedBox(height: FeSpace.xxs),
+            Text(
+              l.lessonExplainNote,
+              style: t.bodySmall?.copyWith(color: c.textSecondary),
+            ),
+            const SizedBox(height: FeSpace.md),
+            Text(text, style: t.bodyLarge?.copyWith(height: 1.5)),
+          ],
         ),
       ),
     );
