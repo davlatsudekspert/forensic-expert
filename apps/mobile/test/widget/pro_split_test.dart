@@ -361,7 +361,8 @@ void main() {
           'qulf oladi', (tester) async {
         for (final (route, feature) in proRoutes()) {
           // Baholash talabaga yo‘q (rejim redirect’i) — qolganlari barchaga.
-          if (mode == UserMode.student && route.startsWith(Routes.assessment)) {
+          if (mode != UserMode.professional &&
+              route.startsWith(Routes.assessment)) {
             continue;
           }
           await _reset(tester);
@@ -384,7 +385,8 @@ void main() {
       testWidgets('${mode.name}: qat’iy O‘CHIQ → hech bir marshrutda yangi '
           'qulf yo‘q', (tester) async {
         for (final (route, feature) in proRoutes()) {
-          if (mode == UserMode.student && route.startsWith(Routes.assessment)) {
+          if (mode != UserMode.professional &&
+              route.startsWith(Routes.assessment)) {
             continue;
           }
           await _reset(tester);

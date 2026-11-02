@@ -304,6 +304,19 @@ class HomeScreen extends ConsumerWidget {
                     const StudentDesk(),
                     const SizedBox(height: FeSpace.lg),
                   ],
+                  // «Bilim va malakani baholash» — faqat Mutaxassisda, eng
+                  // tepada (egasi, 2026-11-02).
+                  if (mode == UserMode.professional) ...[
+                    _ResourceTile(
+                      key: const Key('home.assessment'),
+                      icon: Icons.fact_check_outlined,
+                      title: l.assessmentTitle,
+                      body: l.assessmentSubtitle,
+                      lock: ProFeature.proModules,
+                      onTap: () => context.push(Routes.assessment),
+                    ),
+                    const SizedBox(height: FeSpace.lg),
+                  ],
                   if (coreTop) ...[
                     FeSectionHeader(
                       l.homeCoreTitle,
@@ -367,17 +380,6 @@ class HomeScreen extends ConsumerWidget {
                       body: l.homeInstrumentsBody,
                       lock: ProFeature.instrumentsCourseFull,
                       onTap: () => context.push(Routes.lessons),
-                    ),
-                  ],
-                  if (mode != UserMode.student) ...[
-                    const SizedBox(height: FeSpace.sm),
-                    _ResourceTile(
-                      key: const Key('home.assessment'),
-                      icon: Icons.fact_check_outlined,
-                      title: l.assessmentTitle,
-                      body: l.assessmentSubtitle,
-                      lock: ProFeature.proModules,
-                      onTap: () => context.push(Routes.assessment),
                     ),
                   ],
                   if (mode != UserMode.student &&

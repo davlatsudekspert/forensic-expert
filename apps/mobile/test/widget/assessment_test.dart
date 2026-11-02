@@ -181,14 +181,23 @@ void main() {
     expect(_key('home.assessment'), findsNothing);
   });
 
-  testWidgets('ustoz rejimida ham bor; ru/en nomlar', (tester) async {
+  testWidgets('ustozda yo‘q; mutaxassisda ru/en nomlar', (tester) async {
+    await pumpApp(
+      tester,
+      settings: completedSettings(lang: 'uz', mode: UserMode.teacher),
+      overrides: _overrides(),
+      initialLocation: Routes.assessment,
+    );
+    expect(_key('assessment.hub'), findsNothing);
+    expect(_key('home.assessment'), findsNothing);
+    await tester.pumpWidget(const SizedBox());
     for (final (lang, name) in [
       ('ru', 'Проверка знаний и компетенций'),
       ('en', 'Knowledge & Skills Assessment'),
     ]) {
       await pumpApp(
         tester,
-        settings: completedSettings(lang: lang, mode: UserMode.teacher),
+        settings: completedSettings(lang: lang),
         overrides: _overrides(),
       );
       final tile = _key('home.assessment');

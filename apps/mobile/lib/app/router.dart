@@ -323,8 +323,9 @@ final routerProvider = Provider<GoRouter>((ref) {
           (loc == Routes.teacher || loc == Routes.teacherResults)) {
         return Routes.home;
       }
-      // «Bilim va malakani baholash» — Mutaxassis va Ustoz uchun (talabaga yo‘q).
-      if (mode == UserMode.student &&
+      // «Bilim va malakani baholash» — faqat Mutaxassis (egasi, 2026-11-02).
+      if (mode != null &&
+          mode != UserMode.professional &&
           (loc == Routes.assessment ||
               loc.startsWith('${Routes.assessment}/'))) {
         return Routes.home;
