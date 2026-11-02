@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../domain/assessment/assessment_models.dart';
+import '../domain/assessment/assessment_test_stats.dart';
 
 /// Rasmiy og‘zaki imtihon savollari paketi (ilovaga qo‘shilgan, oflayn).
 const assessmentAsset = 'assets/content/assessment/assessment_v1.json';
@@ -76,4 +77,42 @@ class AssessmentProgressController extends Notifier<Set<String>> {
     state = const {};
     await ref.read(assessmentProgressStoreProvider).save(const {});
   }
+}
+
+/// Bootstrap’da SharedPreferences bilan override qilinadi (faqat lokal).
+final assessmentTestStatsStoreProvider = Provider<AssessmentTestStatsStore>(
+  (ref) => InMemoryAssessmentTestStatsStore(),
+);
+
+final assessmentTestStatsProvider =
+    NotifierProvider<AssessmentTestStatsController, AssessmentTestStats>(
+      AssessmentTestStatsController.new,
+    );
+
+class AssessmentTestStatsController extends Notifier<AssessmentTestStats> {
+  @override
+  AssessmentTestStats build() =>
+      ref.read(assessmentTestStatsStoreProvider).load();
+
+  Future<void> _set(AssessmentTestStats next) async {
+    state = next;
+    await ref.read(assessmentTestStatsStoreProvider).save(next);
+  }
+
+  Future<void> recordAnswer(
+    String spec,
+    String id, {
+    required bool isCorrect,
+    bool inMistakesMode = false,
+  }) => _set(
+    state.recordAnswer(
+      spec,
+      id,
+      isCorrect: isCorrect,
+      inMistakesMode: inMistakesMode,
+    ),
+  );
+
+  Future<void> recordBlock(String spec, int block, int score) =>
+      _set(state.recordBlock(spec, block, score));
 }

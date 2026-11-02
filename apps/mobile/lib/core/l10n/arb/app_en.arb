@@ -17059,5 +17059,111 @@
   "lessonExplainNote": "Prepared with AI from the slide text; not yet reviewed by an expert. Facts and sources are on the slide itself.",
   "@lessonExplainNote": {
     "description": "Lesson viewer: continuous listening."
+  },
+  "assessmentMasteredLine": "Mastered: {x} / {y}",
+  "@assessmentMasteredLine": {
+    "description": "Specialty tests tab: mastered progress.",
+    "placeholders": {
+      "x": {
+        "type": "int"
+      },
+      "y": {
+        "type": "int"
+      }
+    }
+  },
+  "assessmentModesTitle": "Practice mode",
+  "@assessmentModesTitle": {
+    "description": "Heading above the practice modes."
+  },
+  "assessmentModeRandom": "Mixed practice",
+  "@assessmentModeRandom": {
+    "description": "Practice mode: random 50."
+  },
+  "assessmentModeRandomDesc": "50 random questions, verdict after every answer",
+  "@assessmentModeRandomDesc": {
+    "description": "Random mode description."
+  },
+  "assessmentModeBlocks": "Solve by blocks",
+  "@assessmentModeBlocks": {
+    "description": "Practice mode: blocks of 50 in order."
+  },
+  "assessmentModeBlocksDesc": "Questions in order, blocks of 50",
+  "@assessmentModeBlocksDesc": {
+    "description": "Blocks mode description."
+  },
+  "assessmentModeMistakes": "My mistakes ({n})",
+  "@assessmentModeMistakes": {
+    "description": "Practice mode: my mistakes.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "assessmentModeMistakesDesc": "A question leaves the list after 2 correct answers in a row",
+  "@assessmentModeMistakesDesc": {
+    "description": "Mistakes mode description."
+  },
+  "assessmentModeMistakesEmpty": "No mistakes yet — wrong answers will appear here",
+  "@assessmentModeMistakesEmpty": {
+    "description": "Mistakes mode hint when there are none."
+  },
+  "assessmentModeExam": "Exam mode",
+  "@assessmentModeExam": {
+    "description": "Practice mode: exam."
+  },
+  "assessmentModeExamDesc": "50 questions, 60 minutes, result only at the end",
+  "@assessmentModeExamDesc": {
+    "description": "Exam mode description."
+  },
+  "assessmentBlocksPick": "Choose a block",
+  "@assessmentBlocksPick": {
+    "description": "Heading on the block picker."
+  },
+  "assessmentBlockRange": "Questions {a}–{b}",
+  "@assessmentBlockRange": {
+    "description": "Block label, e.g. 1–50.",
+    "placeholders": {
+      "a": {
+        "type": "int"
+      },
+      "b": {
+        "type": "int"
+      }
+    }
+  },
+  "assessmentBlockBest": "Best: {c}/{n}",
+  "@assessmentBlockBest": {
+    "description": "Best saved score of a block.",
+    "placeholders": {
+      "c": {
+        "type": "int"
+      },
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "assessmentBlockUnsolved": "Not solved",
+  "@assessmentBlockUnsolved": {
+    "description": "Block not yet solved."
+  },
+  "assessmentExamHint": "The result is shown at the end of the exam",
+  "@assessmentExamHint": {
+    "description": "Exam: note while answering."
+  },
+  "assessmentExamTimeUp": "Time is up",
+  "@assessmentExamTimeUp": {
+    "description": "Exam: time ran out."
+  },
+  "assessmentExamTimer": "Time left: {t}",
+  "@assessmentExamTimer": {
+    "description": "Exam countdown in the app bar (semantic label).",
+    "placeholders": {
+      "t": {
+        "type": "String"
+      }
+    }
   }
 }

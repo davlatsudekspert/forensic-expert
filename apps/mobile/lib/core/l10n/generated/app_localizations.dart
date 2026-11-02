@@ -22580,6 +22580,114 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Prepared with AI from the slide text; not yet reviewed by an expert. Facts and sources are on the slide itself.'**
   String get lessonExplainNote;
+
+  /// Specialty tests tab: mastered progress.
+  ///
+  /// In en, this message translates to:
+  /// **'Mastered: {x} / {y}'**
+  String assessmentMasteredLine(int x, int y);
+
+  /// Heading above the practice modes.
+  ///
+  /// In en, this message translates to:
+  /// **'Practice mode'**
+  String get assessmentModesTitle;
+
+  /// Practice mode: random 50.
+  ///
+  /// In en, this message translates to:
+  /// **'Mixed practice'**
+  String get assessmentModeRandom;
+
+  /// Random mode description.
+  ///
+  /// In en, this message translates to:
+  /// **'50 random questions, verdict after every answer'**
+  String get assessmentModeRandomDesc;
+
+  /// Practice mode: blocks of 50 in order.
+  ///
+  /// In en, this message translates to:
+  /// **'Solve by blocks'**
+  String get assessmentModeBlocks;
+
+  /// Blocks mode description.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions in order, blocks of 50'**
+  String get assessmentModeBlocksDesc;
+
+  /// Practice mode: my mistakes.
+  ///
+  /// In en, this message translates to:
+  /// **'My mistakes ({n})'**
+  String assessmentModeMistakes(int n);
+
+  /// Mistakes mode description.
+  ///
+  /// In en, this message translates to:
+  /// **'A question leaves the list after 2 correct answers in a row'**
+  String get assessmentModeMistakesDesc;
+
+  /// Mistakes mode hint when there are none.
+  ///
+  /// In en, this message translates to:
+  /// **'No mistakes yet — wrong answers will appear here'**
+  String get assessmentModeMistakesEmpty;
+
+  /// Practice mode: exam.
+  ///
+  /// In en, this message translates to:
+  /// **'Exam mode'**
+  String get assessmentModeExam;
+
+  /// Exam mode description.
+  ///
+  /// In en, this message translates to:
+  /// **'50 questions, 60 minutes, result only at the end'**
+  String get assessmentModeExamDesc;
+
+  /// Heading on the block picker.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a block'**
+  String get assessmentBlocksPick;
+
+  /// Block label, e.g. 1–50.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions {a}–{b}'**
+  String assessmentBlockRange(int a, int b);
+
+  /// Best saved score of a block.
+  ///
+  /// In en, this message translates to:
+  /// **'Best: {c}/{n}'**
+  String assessmentBlockBest(int c, int n);
+
+  /// Block not yet solved.
+  ///
+  /// In en, this message translates to:
+  /// **'Not solved'**
+  String get assessmentBlockUnsolved;
+
+  /// Exam: note while answering.
+  ///
+  /// In en, this message translates to:
+  /// **'The result is shown at the end of the exam'**
+  String get assessmentExamHint;
+
+  /// Exam: time ran out.
+  ///
+  /// In en, this message translates to:
+  /// **'Time is up'**
+  String get assessmentExamTimeUp;
+
+  /// Exam countdown in the app bar (semantic label).
+  ///
+  /// In en, this message translates to:
+  /// **'Time left: {t}'**
+  String assessmentExamTimer(String t);
 }
 
 class _AppLocalizationsDelegate

@@ -11608,4 +11608,63 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   @override
   String get lessonExplainNote => toUzNewAlphabet(super.lessonExplainNote);
 
+  @override
+  String assessmentMasteredLine(int x, int y) =>
+      toUzNewAlphabet(super.assessmentMasteredLine(x, y));
+
+  @override
+  String get assessmentModesTitle => toUzNewAlphabet(super.assessmentModesTitle);
+
+  @override
+  String get assessmentModeRandom => toUzNewAlphabet(super.assessmentModeRandom);
+
+  @override
+  String get assessmentModeRandomDesc => toUzNewAlphabet(super.assessmentModeRandomDesc);
+
+  @override
+  String get assessmentModeBlocks => toUzNewAlphabet(super.assessmentModeBlocks);
+
+  @override
+  String get assessmentModeBlocksDesc => toUzNewAlphabet(super.assessmentModeBlocksDesc);
+
+  @override
+  String assessmentModeMistakes(int n) =>
+      toUzNewAlphabet(super.assessmentModeMistakes(n));
+
+  @override
+  String get assessmentModeMistakesDesc => toUzNewAlphabet(super.assessmentModeMistakesDesc);
+
+  @override
+  String get assessmentModeMistakesEmpty => toUzNewAlphabet(super.assessmentModeMistakesEmpty);
+
+  @override
+  String get assessmentModeExam => toUzNewAlphabet(super.assessmentModeExam);
+
+  @override
+  String get assessmentModeExamDesc => toUzNewAlphabet(super.assessmentModeExamDesc);
+
+  @override
+  String get assessmentBlocksPick => toUzNewAlphabet(super.assessmentBlocksPick);
+
+  @override
+  String assessmentBlockRange(int a, int b) =>
+      toUzNewAlphabet(super.assessmentBlockRange(a, b));
+
+  @override
+  String assessmentBlockBest(int c, int n) =>
+      toUzNewAlphabet(super.assessmentBlockBest(c, n));
+
+  @override
+  String get assessmentBlockUnsolved => toUzNewAlphabet(super.assessmentBlockUnsolved);
+
+  @override
+  String get assessmentExamHint => toUzNewAlphabet(super.assessmentExamHint);
+
+  @override
+  String get assessmentExamTimeUp => toUzNewAlphabet(super.assessmentExamTimeUp);
+
+  @override
+  String assessmentExamTimer(String t) =>
+      toUzNewAlphabet(super.assessmentExamTimer(t));
+
 }

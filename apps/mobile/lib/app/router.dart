@@ -1037,6 +1037,14 @@ final routerProvider = Provider<GoRouter>((ref) {
                               title: AppLocalizations.of(c).assessmentTitle,
                               child: AssessmentTestScreen(
                                 specialtyId: s.pathParameters['spec']!,
+                                mode: AssessmentTestMode.parse(
+                                  s.uri.queryParameters['mode'],
+                                ),
+                                block:
+                                    int.tryParse(
+                                      s.uri.queryParameters['b'] ?? '',
+                                    ) ??
+                                    0,
                               ),
                             ),
                           ),

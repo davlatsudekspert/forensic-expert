@@ -7,6 +7,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/assessment.dart';
 import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
+import 'package:forensic_expert/domain/assessment/assessment_test_stats.dart';
 import 'package:forensic_expert/domain/plan/plan_models.dart';
 
 import '../helpers/pump_app.dart';
@@ -67,6 +68,33 @@ Future<void> _tapCentered(WidgetTester tester, Finder f) async {
     }
   }
   return (yes!, no!);
+}
+
+/// To‘g‘ri variantni bosadi (savol matni bo‘yicha paketdan kalitni topadi).
+Future<void> _answerQ(
+  WidgetTester tester, {
+  required bool right,
+  bool settle = true,
+}) async {
+  final pack = jsonDecode(_pack) as Map<String, Object?>;
+  final spec = (pack['specialties']! as List)
+      .cast<Map<String, Object?>>()
+      .firstWhere((s) => s['id'] == 'sud_kimyo');
+  final texts = <String, int>{
+    for (final q in (spec['tests']! as List).cast<Map<String, Object?>>())
+      if (q['key'] is int) q['text']! as String: q['key']! as int,
+  };
+  int? key;
+  for (final e in texts.entries) {
+    if (find.text(e.key).evaluate().isNotEmpty) key = e.value;
+  }
+  expect(key, isNotNull);
+  final idx = right ? key! : (key! + 1) % 4;
+  final f = _key('assessment.opt.$idx');
+  await Scrollable.ensureVisible(tester.element(f), alignment: 0.5);
+  await tester.pump();
+  await tester.tap(f);
+  await (settle ? tester.pumpAndSettle() : tester.pump());
 }
 
 void main() {
@@ -147,6 +175,199 @@ void main() {
     }
     expect(_key('assessment.score'), findsOne);
     expect(_key('assessment.retry'), findsOne);
+  });
+
+  testWidgets(
+    'rejimlar ro‘yxati: aralash, bloklab, xatolarim (0 — o‘chirilgan), '
+    'imtihon; o‘zlashtirildi qatori',
+    (tester) async {
+      await pumpApp(
+        tester,
+        settings: completedSettings(lang: 'uz'),
+        overrides: _overrides(),
+        initialLocation: Routes.assessmentSpecialty('sud_kimyo'),
+      );
+      await tester.tap(find.text('Testlar'));
+      await tester.pumpAndSettle();
+      expect(_key('assessment.testStart'), findsOne);
+      expect(_key('assessment.mode.blocks'), findsOne);
+      expect(_key('assessment.mode.exam'), findsOne);
+      expect(find.text('Xatolarim (0)'), findsOne);
+      expect(find.textContaining('Hozircha xato yo‘q'), findsOne);
+      expect(find.textContaining('O‘zlashtirildi: 0 / '), findsOne);
+      // Xatolarim 0 bo‘lsa bosilmaydi.
+      await tester.tap(_key('assessment.mode.mistakes'), warnIfMissed: false);
+      await tester.pumpAndSettle();
+      expect(_key('assessment.testsHeader'), findsOne);
+      expect(_key('assessment.run.sud_kimyo'), findsNothing);
+    },
+  );
+
+  testWidgets(
+    'bloklab yechish: bloklar ro‘yxati, blok tartib bilan, eng yaxshi '
+    'ball saqlanadi',
+    (tester) async {
+      final c = await pumpApp(
+        tester,
+        settings: completedSettings(lang: 'uz'),
+        overrides: _overrides(),
+        initialLocation: Routes.assessmentSpecialty('sud_kimyo'),
+      );
+      await tester.tap(find.text('Testlar'));
+      await tester.pumpAndSettle();
+      await _tapCentered(tester, _key('assessment.mode.blocks'));
+      expect(_key('assessment.blocks.sud_kimyo'), findsOne);
+      expect(find.text('Savollar 1–50'), findsOne);
+      expect(find.text('Savollar 51–100'), findsOne);
+      expect(find.text('Yechilmagan'), findsWidgets);
+      await tester.tap(_key('assessment.block.0'));
+      await tester.pumpAndSettle();
+      expect(find.text('1 / 50'), findsOne);
+      // Birinchi savol — blokdagi eng kichik raqamli savol.
+      final pack = jsonDecode(_pack) as Map<String, Object?>;
+      final spec = (pack['specialties']! as List)
+          .cast<Map<String, Object?>>()
+          .firstWhere((s) => s['id'] == 'sud_kimyo');
+      final graded =
+          (spec['tests']! as List)
+              .cast<Map<String, Object?>>()
+              .where((q) => q['key'] is int)
+              .toList()
+            ..sort((a, b) => (a['n']! as int).compareTo(b['n']! as int));
+      expect(find.text(graded.first['text']! as String), findsOne);
+      // 50 tadan 1 tasi to‘g‘ri, qolgani noto‘g‘ri.
+      for (var i = 0; i < 50; i++) {
+        await _answerQ(tester, right: i == 0);
+        expect(_key('assessment.verdict'), findsOne);
+        await _tapCentered(tester, _key('assessment.next'));
+      }
+      expect(c.read(assessmentTestStatsProvider).bestScore('sud_kimyo', 0), 1);
+      expect(c.read(assessmentTestStatsProvider).mistakeCount('sud_kimyo'), 49);
+      // Orqaga: blok ro‘yxatida natija ko‘rinadi.
+      final router = tester.element(_key('assessment.score'));
+      Navigator.of(router).pop();
+      await tester.pumpAndSettle();
+      expect(find.text('Eng yaxshi: 1/50'), findsOne);
+    },
+  );
+
+  testWidgets('xatolarim: ketma-ket 2 to‘g‘ri javobdan keyin chiqadi, xato '
+      'seriyani 0 qiladi', (tester) async {
+    final pack = jsonDecode(_pack) as Map<String, Object?>;
+    final spec = (pack['specialties']! as List)
+        .cast<Map<String, Object?>>()
+        .firstWhere((s) => s['id'] == 'sud_kimyo');
+    final id =
+        (spec['tests']! as List).cast<Map<String, Object?>>().firstWhere(
+              (q) => q['key'] is int,
+            )['id']!
+            as String;
+    final store = InMemoryAssessmentTestStatsStore();
+    await store.save(
+      AssessmentTestStats.empty.recordAnswer('sud_kimyo', id, isCorrect: false),
+    );
+    final c = await pumpApp(
+      tester,
+      settings: completedSettings(lang: 'uz'),
+      overrides: [
+        ..._overrides(),
+        assessmentTestStatsStoreProvider.overrideWithValue(store),
+      ],
+      initialLocation: Routes.assessmentSpecialty('sud_kimyo'),
+    );
+    await tester.tap(find.text('Testlar'));
+    await tester.pumpAndSettle();
+    expect(find.text('Xatolarim (1)'), findsOne);
+    await _tapCentered(tester, _key('assessment.mode.mistakes'));
+    expect(find.text('1 / 1'), findsOne);
+    // 1-to‘g‘ri: hali ro‘yxatda.
+    await _answerQ(tester, right: true);
+    expect(c.read(assessmentTestStatsProvider).mistakes['sud_kimyo']![id], 1);
+    await _tapCentered(tester, _key('assessment.next'));
+    // Qayta: bu safar xato — seriya 0.
+    await _tapCentered(tester, _key('assessment.retry'));
+    await _answerQ(tester, right: false);
+    expect(c.read(assessmentTestStatsProvider).mistakes['sud_kimyo']![id], 0);
+    await _tapCentered(tester, _key('assessment.next'));
+    // Ketma-ket ikkita to‘g‘ri: ro‘yxatdan chiqadi.
+    await _tapCentered(tester, _key('assessment.retry'));
+    await _answerQ(tester, right: true);
+    await _tapCentered(tester, _key('assessment.next'));
+    expect(c.read(assessmentTestStatsProvider).mistakeCount('sud_kimyo'), 1);
+    await _tapCentered(tester, _key('assessment.retry'));
+    await _answerQ(tester, right: true);
+    expect(c.read(assessmentTestStatsProvider).mistakeCount('sud_kimyo'), 0);
+    expect(
+      c.read(assessmentTestStatsProvider).masteredCount('sud_kimyo', [id]),
+      1,
+    );
+  });
+
+  testWidgets('imtihon rejimi: taymer ko‘rinadi, javob paytida natija yo‘q, '
+      'oxirida ball va xatolar ro‘yxati; xatolar «Xatolarim»ga tushadi', (
+    tester,
+  ) async {
+    final c = await pumpApp(
+      tester,
+      settings: completedSettings(lang: 'uz'),
+      overrides: _overrides(),
+      initialLocation: Routes.assessmentTest('sud_kimyo', mode: 'exam'),
+    );
+    await tester.pump();
+    await tester.pump();
+    expect(_key('assessment.timer'), findsOne);
+    expect(find.text('60:00'), findsOne);
+    await tester.pump(const Duration(seconds: 5));
+    expect(find.text('59:55'), findsOne);
+    expect(find.text('1 / 50'), findsOne);
+    for (var i = 0; i < 50; i++) {
+      await _answerQ(tester, right: i < 40, settle: false);
+      expect(_key('assessment.verdict'), findsNothing);
+      expect(find.text('To‘g‘ri'), findsNothing);
+      expect(_key('assessment.examHint'), findsOne);
+      final next = _key('assessment.next');
+      await Scrollable.ensureVisible(tester.element(next), alignment: 0.5);
+      await tester.pump();
+      await tester.tap(next);
+      await tester.pump();
+    }
+    await tester.pumpAndSettle();
+    expect(_key('assessment.score'), findsOne);
+    expect(find.text('40 / 50 to‘g‘ri'), findsOne);
+    expect(_key('assessment.timer'), findsNothing);
+    expect(find.text('Xatolar tahlili'), findsOne);
+    expect(c.read(assessmentTestStatsProvider).mistakeCount('sud_kimyo'), 10);
+  });
+
+  testWidgets('imtihon rejimi: vaqt tugasa avtomatik yakunlanadi', (
+    tester,
+  ) async {
+    await pumpApp(
+      tester,
+      settings: completedSettings(lang: 'uz'),
+      overrides: _overrides(),
+      initialLocation: Routes.assessmentTest('sud_kimyo', mode: 'exam'),
+    );
+    await tester.pump();
+    await tester.pump();
+    await _answerQ(tester, right: true, settle: false);
+    await tester.pump(const Duration(minutes: 60));
+    await tester.pumpAndSettle();
+    expect(_key('assessment.timeUp'), findsOne);
+    expect(find.text('Vaqt tugadi'), findsOne);
+    expect(find.text('1 / 50 to‘g‘ri'), findsOne);
+  });
+
+  testWidgets('noma’lum rejim — aralash; eski havola ishlaydi', (tester) async {
+    await pumpApp(
+      tester,
+      settings: completedSettings(lang: 'uz'),
+      overrides: _overrides(),
+      initialLocation: '/library/assessment/sud_kimyo/test?mode=zzz&b=x',
+    );
+    await tester.pumpAndSettle();
+    expect(find.text('1 / 50'), findsOne);
+    expect(_key('assessment.timer'), findsNothing);
   });
 
   testWidgets('«Foydalanilgan adabiyotlar»: kitob, ustoz banki va jahon '

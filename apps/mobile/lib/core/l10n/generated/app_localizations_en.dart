@@ -13028,4 +13028,72 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get lessonExplainNote =>
       'Prepared with AI from the slide text; not yet reviewed by an expert. Facts and sources are on the slide itself.';
+
+  @override
+  String assessmentMasteredLine(int x, int y) {
+    return 'Mastered: $x / $y';
+  }
+
+  @override
+  String get assessmentModesTitle => 'Practice mode';
+
+  @override
+  String get assessmentModeRandom => 'Mixed practice';
+
+  @override
+  String get assessmentModeRandomDesc =>
+      '50 random questions, verdict after every answer';
+
+  @override
+  String get assessmentModeBlocks => 'Solve by blocks';
+
+  @override
+  String get assessmentModeBlocksDesc => 'Questions in order, blocks of 50';
+
+  @override
+  String assessmentModeMistakes(int n) {
+    return 'My mistakes ($n)';
+  }
+
+  @override
+  String get assessmentModeMistakesDesc =>
+      'A question leaves the list after 2 correct answers in a row';
+
+  @override
+  String get assessmentModeMistakesEmpty =>
+      'No mistakes yet — wrong answers will appear here';
+
+  @override
+  String get assessmentModeExam => 'Exam mode';
+
+  @override
+  String get assessmentModeExamDesc =>
+      '50 questions, 60 minutes, result only at the end';
+
+  @override
+  String get assessmentBlocksPick => 'Choose a block';
+
+  @override
+  String assessmentBlockRange(int a, int b) {
+    return 'Questions $a–$b';
+  }
+
+  @override
+  String assessmentBlockBest(int c, int n) {
+    return 'Best: $c/$n';
+  }
+
+  @override
+  String get assessmentBlockUnsolved => 'Not solved';
+
+  @override
+  String get assessmentExamHint => 'The result is shown at the end of the exam';
+
+  @override
+  String get assessmentExamTimeUp => 'Time is up';
+
+  @override
+  String assessmentExamTimer(String t) {
+    return 'Time left: $t';
+  }
 }

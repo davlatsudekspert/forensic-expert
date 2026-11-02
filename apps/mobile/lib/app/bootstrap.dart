@@ -14,6 +14,7 @@ import '../core/settings/settings_repository.dart';
 import '../data/auth/mock_auth_repository.dart';
 import '../data/auth/secure_session_store.dart';
 import '../data/local/assessment_progress_store.dart';
+import '../data/local/assessment_test_stats_store.dart';
 import '../data/local/casebook_store.dart';
 import '../data/local/court_history_store.dart';
 import '../data/local/group_invite_store.dart';
@@ -136,6 +137,9 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
         // «Sud so‘rog‘i simulyatori» tarixi — faqat lokal.
         assessmentProgressStoreProvider.overrideWithValue(
           SharedPrefsAssessmentProgressStore(prefs),
+        ),
+        assessmentTestStatsStoreProvider.overrideWithValue(
+          SharedPrefsAssessmentTestStatsStore(prefs),
         ),
         courtHistoryStoreProvider.overrideWithValue(
           SharedPrefsCourtHistoryStore(prefs),

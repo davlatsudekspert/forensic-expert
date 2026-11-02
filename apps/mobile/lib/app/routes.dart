@@ -93,7 +93,11 @@ abstract final class Routes {
   static String assessmentSpecialty(String id) => '/library/assessment/$id';
   static String assessmentQuestion(String id, String qid) =>
       '/library/assessment/$id/q/$qid';
-  static String assessmentTest(String id) => '/library/assessment/$id/test';
+  static String assessmentTest(String id, {String? mode, int? block}) {
+    final q = [if (mode != null) 'mode=$mode', if (block != null) 'b=$block'];
+    return '/library/assessment/$id/test${q.isEmpty ? '' : '?${q.join('&')}'}';
+  }
+
   static const courtPrep = '/library/court-prep';
   static const courtPrepPractice = '/library/court-prep/practice';
   static const courtPrepPrinciples = '/library/court-prep/principles';

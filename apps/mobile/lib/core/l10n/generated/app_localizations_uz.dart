@@ -12958,4 +12958,72 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get lessonExplainNote =>
       'Slayd matni asosida sun’iy intellekt yordamida tayyorlangan, mutaxassis tomonidan hali tekshirilmagan. Faktlar va manbalar — slaydning o‘zida.';
+
+  @override
+  String assessmentMasteredLine(int x, int y) {
+    return 'O‘zlashtirildi: $x / $y';
+  }
+
+  @override
+  String get assessmentModesTitle => 'Mashq usuli';
+
+  @override
+  String get assessmentModeRandom => 'Aralash mashq';
+
+  @override
+  String get assessmentModeRandomDesc =>
+      '50 ta tasodifiy savol, har javobdan keyin natija';
+
+  @override
+  String get assessmentModeBlocks => 'Bloklab yechish';
+
+  @override
+  String get assessmentModeBlocksDesc => 'Savollar tartib bilan, 50 tadan blok';
+
+  @override
+  String assessmentModeMistakes(int n) {
+    return 'Xatolarim ($n)';
+  }
+
+  @override
+  String get assessmentModeMistakesDesc =>
+      'Savol ketma-ket 2 marta to‘g‘ri javobdan keyin ro‘yxatdan chiqadi';
+
+  @override
+  String get assessmentModeMistakesEmpty =>
+      'Hozircha xato yo‘q — noto‘g‘ri javoblaringiz shu yerga tushadi';
+
+  @override
+  String get assessmentModeExam => 'Imtihon rejimi';
+
+  @override
+  String get assessmentModeExamDesc =>
+      '50 savol, 60 daqiqa, natija faqat oxirida';
+
+  @override
+  String get assessmentBlocksPick => 'Blokni tanlang';
+
+  @override
+  String assessmentBlockRange(int a, int b) {
+    return 'Savollar $a–$b';
+  }
+
+  @override
+  String assessmentBlockBest(int c, int n) {
+    return 'Eng yaxshi: $c/$n';
+  }
+
+  @override
+  String get assessmentBlockUnsolved => 'Yechilmagan';
+
+  @override
+  String get assessmentExamHint => 'Natija imtihon oxirida ko‘rsatiladi';
+
+  @override
+  String get assessmentExamTimeUp => 'Vaqt tugadi';
+
+  @override
+  String assessmentExamTimer(String t) {
+    return 'Qolgan vaqt: $t';
+  }
 }

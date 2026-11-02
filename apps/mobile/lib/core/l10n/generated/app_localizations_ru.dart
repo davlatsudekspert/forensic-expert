@@ -13080,4 +13080,72 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get lessonExplainNote =>
       'Подготовлено с помощью ИИ на основе текста слайда, специалистом ещё не проверено. Факты и источники — на самом слайде.';
+
+  @override
+  String assessmentMasteredLine(int x, int y) {
+    return 'Освоено: $x / $y';
+  }
+
+  @override
+  String get assessmentModesTitle => 'Режим тренировки';
+
+  @override
+  String get assessmentModeRandom => 'Смешанная тренировка';
+
+  @override
+  String get assessmentModeRandomDesc =>
+      '50 случайных вопросов, результат после каждого ответа';
+
+  @override
+  String get assessmentModeBlocks => 'Решение блоками';
+
+  @override
+  String get assessmentModeBlocksDesc => 'Вопросы по порядку, блоки по 50';
+
+  @override
+  String assessmentModeMistakes(int n) {
+    return 'Мои ошибки ($n)';
+  }
+
+  @override
+  String get assessmentModeMistakesDesc =>
+      'Вопрос уходит из списка после 2 верных ответов подряд';
+
+  @override
+  String get assessmentModeMistakesEmpty =>
+      'Ошибок пока нет — неверные ответы появятся здесь';
+
+  @override
+  String get assessmentModeExam => 'Режим экзамена';
+
+  @override
+  String get assessmentModeExamDesc =>
+      '50 вопросов, 60 минут, результат только в конце';
+
+  @override
+  String get assessmentBlocksPick => 'Выберите блок';
+
+  @override
+  String assessmentBlockRange(int a, int b) {
+    return 'Вопросы $a–$b';
+  }
+
+  @override
+  String assessmentBlockBest(int c, int n) {
+    return 'Лучший результат: $c/$n';
+  }
+
+  @override
+  String get assessmentBlockUnsolved => 'Не решён';
+
+  @override
+  String get assessmentExamHint => 'Результат будет показан в конце экзамена';
+
+  @override
+  String get assessmentExamTimeUp => 'Время вышло';
+
+  @override
+  String assessmentExamTimer(String t) {
+    return 'Осталось: $t';
+  }
 }

@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
@@ -37,15 +38,21 @@ String _keySourceText(AppLocalizations l, AssessmentKeySource s) {
 
 /// Boshqa ekranlarda ham ishlatiladigan umumiy ramka.
 class _Frame extends StatelessWidget {
-  const _Frame({required this.title, required this.children, this.listKey});
+  const _Frame({
+    required this.title,
+    required this.children,
+    this.listKey,
+    this.actions,
+  });
 
   final String title;
+  final List<Widget>? actions;
   final List<Widget> children;
   final Key? listKey;
 
   @override
   Widget build(BuildContext context) => Scaffold(
-    appBar: AppBar(title: FeAppBarTitle(title)),
+    appBar: AppBar(title: FeAppBarTitle(title), actions: actions),
     body: SafeArea(
       child: ListView(
         key: listKey,
@@ -449,18 +456,23 @@ class _OralTile extends StatelessWidget {
   }
 }
 
-class _TestsHeader extends StatelessWidget {
+class _TestsHeader extends ConsumerWidget {
   const _TestsHeader({required this.spec, required this.graded});
 
   final AssessmentSpecialty spec;
   final int graded;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     final unkeyed = spec.tests.length - graded;
+    final stats = ref.watch(assessmentTestStatsProvider);
+    final mistakes = stats.mistakeCount(spec.id);
+    final mastered = stats.masteredCount(spec.id, [
+      for (final q in spec.gradedTests) q.id,
+    ]);
     return FeCard(
       key: const Key('assessment.testsHeader'),
       child: Column(
@@ -478,15 +490,114 @@ class _TestsHeader extends StatelessWidget {
             ),
           ],
           if (graded > 0) ...[
+            const SizedBox(height: FeSpace.xs),
+            Text(
+              l.assessmentMasteredLine(mastered, graded),
+              key: const Key('assessment.mastered'),
+              style: t.labelLarge?.copyWith(color: c.verified),
+            ),
             const SizedBox(height: FeSpace.sm),
+            Text(l.assessmentModesTitle, style: t.titleSmall),
+            const SizedBox(height: FeSpace.xs),
             FilledButton.icon(
               key: const Key('assessment.testStart'),
               onPressed: () => context.push(Routes.assessmentTest(spec.id)),
-              icon: const Icon(Icons.play_arrow),
-              label: Text(l.assessmentTestStart),
+              icon: const Icon(Icons.shuffle),
+              label: Text(l.assessmentModeRandom),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(4, 4, 4, FeSpace.xs),
+              child: Text(
+                l.assessmentModeRandomDesc,
+                style: t.bodySmall?.copyWith(color: c.textSecondary),
+              ),
+            ),
+            _ModeTile(
+              tileKey: const Key('assessment.mode.blocks'),
+              icon: Icons.view_list_outlined,
+              title: l.assessmentModeBlocks,
+              body: l.assessmentModeBlocksDesc,
+              onTap: () =>
+                  context.push(Routes.assessmentTest(spec.id, mode: 'blocks')),
+            ),
+            _ModeTile(
+              tileKey: const Key('assessment.mode.mistakes'),
+              icon: Icons.replay,
+              title: l.assessmentModeMistakes(mistakes),
+              body: mistakes == 0
+                  ? l.assessmentModeMistakesEmpty
+                  : l.assessmentModeMistakesDesc,
+              onTap: mistakes == 0
+                  ? null
+                  : () => context.push(
+                      Routes.assessmentTest(spec.id, mode: 'mistakes'),
+                    ),
+            ),
+            _ModeTile(
+              tileKey: const Key('assessment.mode.exam'),
+              icon: Icons.timer_outlined,
+              title: l.assessmentModeExam,
+              body: l.assessmentModeExamDesc,
+              onTap: () =>
+                  context.push(Routes.assessmentTest(spec.id, mode: 'exam')),
             ),
           ],
         ],
+      ),
+    );
+  }
+}
+
+class _ModeTile extends StatelessWidget {
+  const _ModeTile({
+    required this.tileKey,
+    required this.icon,
+    required this.title,
+    required this.body,
+    required this.onTap,
+  });
+
+  final Key tileKey;
+  final IconData icon;
+  final String title;
+  final String body;
+  final VoidCallback? onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final on = onTap != null;
+    return Padding(
+      padding: const EdgeInsets.only(bottom: FeSpace.xs),
+      child: FeCard(
+        key: tileKey,
+        onTap: onTap,
+        child: Row(
+          children: [
+            Icon(icon, color: on ? c.accent : c.textSecondary),
+            const SizedBox(width: FeSpace.sm),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    title,
+                    style: t.titleSmall?.copyWith(
+                      color: on ? null : c.textSecondary,
+                    ),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    body,
+                    style: t.bodySmall?.copyWith(color: c.textSecondary),
+                  ),
+                ],
+              ),
+            ),
+            if (on) Icon(Icons.chevron_right, color: c.textSecondary),
+          ],
+        ),
       ),
     );
   }
@@ -978,11 +1089,52 @@ void _showSource(BuildContext context, OralPoint point, String cite) {
   );
 }
 
+/// Test mashqi usuli (marshrutdagi `?mode=`; noma’lum — aralash).
+enum AssessmentTestMode {
+  random,
+  blocks,
+  block,
+  mistakes,
+  exam;
+
+  static AssessmentTestMode parse(String? v) => switch (v) {
+    'blocks' => blocks,
+    'block' => block,
+    'mistakes' => mistakes,
+    'exam' => exam,
+    _ => random,
+  };
+}
+
+/// Bir mashqda 50 ta savol (egasi, 2026-11-02); imtihon — 60 daqiqa.
+const assessmentRunSize = 50;
+const assessmentExamSeconds = 60 * 60;
+
+/// Savollar asl tartibda (raqami bo‘yicha), 50 tadan bloklarga bo‘lingan.
+List<List<AssessmentTestQuestion>> assessmentBlocks(AssessmentSpecialty spec) {
+  final all = spec.gradedTests.toList()
+    ..sort((a, b) => a.number.compareTo(b.number));
+  return [
+    for (var i = 0; i < all.length; i += assessmentRunSize)
+      all.sublist(i, math.min(i + assessmentRunSize, all.length)),
+  ];
+}
+
+String _clock(int s) =>
+    '${(s ~/ 60).toString().padLeft(2, '0')}:${(s % 60).toString().padLeft(2, '0')}';
+
 /// Test mashqi: faqat javob kaliti tasdiqlangan savollar.
 class AssessmentTestScreen extends ConsumerStatefulWidget {
-  const AssessmentTestScreen({super.key, required this.specialtyId});
+  const AssessmentTestScreen({
+    super.key,
+    required this.specialtyId,
+    this.mode = AssessmentTestMode.random,
+    this.block = 0,
+  });
 
   final String specialtyId;
+  final AssessmentTestMode mode;
+  final int block;
 
   @override
   ConsumerState<AssessmentTestScreen> createState() =>
@@ -990,22 +1142,105 @@ class AssessmentTestScreen extends ConsumerStatefulWidget {
 }
 
 class _AssessmentTestScreenState extends ConsumerState<AssessmentTestScreen> {
-  /// Bir mashqda 50 ta savol (egasi, 2026-11-02).
-  static const _size = 50;
   List<AssessmentTestQuestion>? _run;
   final _answers = <int?>[];
   int _i = 0;
   bool _done = false;
+  bool _timeUp = false;
+  Timer? _timer;
+  final _left = ValueNotifier<int>(assessmentExamSeconds);
+
+  bool get _exam => widget.mode == AssessmentTestMode.exam;
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    _left.dispose();
+    super.dispose();
+  }
+
+  List<AssessmentTestQuestion> _pick(AssessmentSpecialty spec) {
+    switch (widget.mode) {
+      case AssessmentTestMode.block:
+        final blocks = assessmentBlocks(spec);
+        return widget.block >= 0 && widget.block < blocks.length
+            ? blocks[widget.block]
+            : const [];
+      case AssessmentTestMode.mistakes:
+        final ids = ref.read(assessmentTestStatsProvider).mistakeIds(spec.id);
+        final pool = [
+          for (final q in spec.gradedTests)
+            if (ids.contains(q.id)) q,
+        ]..shuffle(math.Random());
+        return pool.take(assessmentRunSize).toList();
+      case AssessmentTestMode.random:
+      case AssessmentTestMode.blocks:
+      case AssessmentTestMode.exam:
+        final pool = spec.gradedTests.toList()..shuffle(math.Random());
+        return pool.take(assessmentRunSize).toList();
+    }
+  }
 
   void _start(AssessmentSpecialty spec) {
-    final pool = spec.gradedTests.toList()..shuffle(math.Random());
+    final run = _pick(spec);
+    _timer?.cancel();
     setState(() {
-      _run = pool.take(_size).toList();
+      _run = run;
       _answers
         ..clear()
-        ..addAll(List<int?>.filled(_run!.length, null));
+        ..addAll(List<int?>.filled(run.length, null));
       _i = 0;
       _done = false;
+      _timeUp = false;
+    });
+    if (_exam && run.isNotEmpty) {
+      _left.value = assessmentExamSeconds;
+      _timer = Timer.periodic(const Duration(seconds: 1), (_) {
+        if (!mounted || _done) return;
+        _left.value = _left.value - 1;
+        if (_left.value <= 0) _finish(spec, timeUp: true);
+      });
+    }
+  }
+
+  void _select(AssessmentSpecialty spec, int v) {
+    final q = _run![_i];
+    setState(() => _answers[_i] = v);
+    if (_exam) return; // imtihonda hisob oxirida yuritiladi
+    ref
+        .read(assessmentTestStatsProvider.notifier)
+        .recordAnswer(
+          spec.id,
+          q.id,
+          isCorrect: v == q.key,
+          inMistakesMode: widget.mode == AssessmentTestMode.mistakes,
+        );
+  }
+
+  void _finish(AssessmentSpecialty spec, {bool timeUp = false}) {
+    if (_done) return;
+    _timer?.cancel();
+    final run = _run!;
+    final stats = ref.read(assessmentTestStatsProvider.notifier);
+    if (_exam) {
+      for (var k = 0; k < run.length; k++) {
+        stats.recordAnswer(
+          spec.id,
+          run[k].id,
+          isCorrect: _answers[k] == run[k].key,
+        );
+      }
+    }
+    if (widget.mode == AssessmentTestMode.block) {
+      final score = [
+        for (var k = 0; k < run.length; k++)
+          if (_answers[k] == run[k].key) k,
+      ].length;
+      stats.recordBlock(spec.id, widget.block, score);
+    }
+    setState(() {
+      _done = true;
+      _timeUp = timeUp;
     });
   }
 
@@ -1027,6 +1262,9 @@ class _AssessmentTestScreenState extends ConsumerState<AssessmentTestScreen> {
         ],
       );
     }
+    if (widget.mode == AssessmentTestMode.blocks) {
+      return _BlockPicker(spec: spec, title: title);
+    }
     if (_run == null) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (mounted && _run == null) _start(spec);
@@ -1037,6 +1275,19 @@ class _AssessmentTestScreenState extends ConsumerState<AssessmentTestScreen> {
       );
     }
     final run = _run!;
+    if (run.isEmpty) {
+      return _Frame(
+        title: title,
+        children: [
+          FeEmptyState(
+            icon: Icons.quiz_outlined,
+            body: widget.mode == AssessmentTestMode.mistakes
+                ? l.assessmentModeMistakesEmpty
+                : l.assessmentTestNone,
+          ),
+        ],
+      );
+    }
     if (_done) {
       final correct = [
         for (var k = 0; k < run.length; k++)
@@ -1053,6 +1304,14 @@ class _AssessmentTestScreenState extends ConsumerState<AssessmentTestScreen> {
           FeCard(
             child: Column(
               children: [
+                if (_timeUp) ...[
+                  Text(
+                    l.assessmentExamTimeUp,
+                    key: const Key('assessment.timeUp'),
+                    style: t.titleSmall?.copyWith(color: c.danger),
+                  ),
+                  const SizedBox(height: 4),
+                ],
                 Text(
                   l.assessmentResultScore(correct.length, run.length),
                   key: const Key('assessment.score'),
@@ -1094,9 +1353,34 @@ class _AssessmentTestScreenState extends ConsumerState<AssessmentTestScreen> {
     final q = run[_i];
     final picked = _answers[_i];
     final answered = picked != null;
+    final reveal = answered && !_exam;
     return _Frame(
       title: title,
       listKey: Key('assessment.run.${spec.id}'),
+      actions: _exam
+          ? [
+              ValueListenableBuilder<int>(
+                valueListenable: _left,
+                builder: (context, s, _) => Padding(
+                  padding: const EdgeInsets.only(right: FeSpace.md),
+                  child: Center(
+                    child: Semantics(
+                      label: l.assessmentExamTimer(_clock(s)),
+                      excludeSemantics: true,
+                      child: Text(
+                        _clock(s),
+                        key: const Key('assessment.timer'),
+                        style: t.titleMedium?.copyWith(
+                          color: s <= 300 ? c.danger : null,
+                          fontFeatures: const [FontFeature.tabularFigures()],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ]
+          : null,
       children: [
         Row(
           children: [
@@ -1122,12 +1406,20 @@ class _AssessmentTestScreenState extends ConsumerState<AssessmentTestScreen> {
         const SizedBox(height: FeSpace.md),
         _TestBody(
           question: q,
-          reveal: answered,
+          reveal: reveal,
           selected: picked,
           showAi: false,
-          onSelect: answered ? null : (v) => setState(() => _answers[_i] = v),
+          onSelect: reveal ? null : (v) => _select(spec, v),
         ),
-        if (answered) ...[
+        if (_exam) ...[
+          const SizedBox(height: FeSpace.xs),
+          Text(
+            l.assessmentExamHint,
+            key: const Key('assessment.examHint'),
+            style: t.bodySmall?.copyWith(color: c.textSecondary),
+          ),
+        ],
+        if (reveal) ...[
           const SizedBox(height: FeSpace.sm),
           Text(
             picked == q.key ? l.assessmentCorrect : l.assessmentWrong,
@@ -1136,23 +1428,90 @@ class _AssessmentTestScreenState extends ConsumerState<AssessmentTestScreen> {
               color: picked == q.key ? c.verified : c.danger,
             ),
           ),
+        ],
+        if (answered) ...[
           const SizedBox(height: FeSpace.sm),
           FilledButton(
             key: const Key('assessment.next'),
-            onPressed: () => setState(() {
+            onPressed: () {
               if (_i + 1 >= run.length) {
-                _done = true;
+                _finish(spec);
               } else {
-                _i++;
+                setState(() => _i++);
               }
-            }),
+            },
             child: Text(
               _i + 1 >= run.length ? l.assessmentFinish : l.assessmentNext,
             ),
           ),
-          const SizedBox(height: FeSpace.xs),
-          _AskAiButton(question: q),
+          if (!_exam) ...[
+            const SizedBox(height: FeSpace.xs),
+            _AskAiButton(question: q),
+          ],
         ],
+      ],
+    );
+  }
+}
+
+/// «Bloklab yechish»: bloklar ro‘yxati va har birining eng yaxshi natijasi.
+class _BlockPicker extends ConsumerWidget {
+  const _BlockPicker({required this.spec, required this.title});
+
+  final AssessmentSpecialty spec;
+  final String title;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final stats = ref.watch(assessmentTestStatsProvider);
+    final blocks = assessmentBlocks(spec);
+    var from = 1;
+    return _Frame(
+      title: title,
+      listKey: Key('assessment.blocks.${spec.id}'),
+      children: [
+        FeSectionHeader(l.assessmentBlocksPick),
+        for (var b = 0; b < blocks.length; b++)
+          Builder(
+            builder: (context) {
+              final a = from;
+              final z = from + blocks[b].length - 1;
+              from = z + 1;
+              final best = stats.bestScore(spec.id, b);
+              return Padding(
+                padding: const EdgeInsets.only(bottom: FeSpace.xs),
+                child: FeCard(
+                  key: Key('assessment.block.$b'),
+                  onTap: () => context.push(
+                    Routes.assessmentTest(spec.id, mode: 'block', block: b),
+                  ),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          l.assessmentBlockRange(a, z),
+                          style: t.titleSmall,
+                        ),
+                      ),
+                      Text(
+                        best == null
+                            ? l.assessmentBlockUnsolved
+                            : l.assessmentBlockBest(best, blocks[b].length),
+                        key: Key('assessment.block.$b.best'),
+                        style: t.bodySmall?.copyWith(
+                          color: best == null ? c.textSecondary : c.verified,
+                        ),
+                      ),
+                      Icon(Icons.chevron_right, color: c.textSecondary),
+                    ],
+                  ),
+                ),
+              );
+            },
+          ),
       ],
     );
   }
