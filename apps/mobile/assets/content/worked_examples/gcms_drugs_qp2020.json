@@ -1,0 +1,904 @@
+{
+ "source_lang": "uz",
+ "generated": "2026-11-02",
+ "id": "gcms_drugs_qp2020",
+ "title": "GC-MS da giyohvand va dori moddalarini aniqlash (Shimadzu GCMS-QP2020 NX misolida)",
+ "intro": "Gaz xromatografi moddalarni ushlanish vaqti (RT) bo‘yicha ajratadi, mass-spektrometr esa har biriga «barmoq izi» — mass-spektr beradi. Quyida kannabis, kokain, opioidlar, amfetaminlar, benzodiazepinlar va yangi psixoaktiv moddalarning EI mass-spektrlari (asosiy ionlar va nisbiy intensivliklar) chizilgan. Raqamlar SWGDRUG monografiyalari va NIST WebBook dan; o‘z apparatingizdagi spektr standart namuna bilan tasdiqlanadi.",
+ "sections": [
+  {
+   "kind": "facts",
+   "title": "Shimadzu GCMS-QP2020 NX (rasmiy ma’lumot)",
+   "items": [
+    {
+     "label": "Ion manbalari",
+     "value": "EI, BEIS, PCI, NCI, Smart EI/CI",
+     "src": 2
+    },
+    {
+     "label": "Massa diapazoni",
+     "value": "m/z 1,5–1090",
+     "src": 2
+    },
+    {
+     "label": "Skanerlash tezligi",
+     "value": "20 000 u/s gacha",
+     "src": 2
+    },
+    {
+     "label": "Rejimlar",
+     "value": "Scan, SIM, Scan/SIM birga",
+     "src": 2
+    },
+    {
+     "label": "Kutubxona",
+     "value": "NIST (versiyaga qarab ~306–350 ming spektr)",
+     "src": 2
+    }
+   ]
+  },
+  {
+   "kind": "flow",
+   "title": "GC-MS da aniqlash tartibi (sxema)",
+   "caption": "SWGDRUG monografiyalari (namuna tayyorlash, GC sharti) va Shimadzu (EI, kutubxona qidiruvi)",
+   "src": 0,
+   "nodes": [
+    "Namuna: ashyoviy dalil metanol yoki xloroformda eritiladi (masalan, ~5 mg/ml), filtrlanadi",
+    "Injektor (split), kolonka: 5 % fenil-metilsiloksan (HP-5MS kabi), 30 m",
+    "Harorat dasturi: masalan 100 °C → 280–300 °C, 12 °C/min",
+    "Moddalar ushlanish vaqti (RT) bo‘yicha ajraladi — xromatogrammada cho‘qqilar",
+    "EI, 70 eV: har cho‘qqi uchun mass-spektr (m/z va nisbiy intensivlik)",
+    "Spektr kutubxona (NIST) va standart namuna bilan solishtiriladi"
+   ]
+  },
+  {
+   "kind": "bullets",
+   "title": "Mass-spektrni qanday o‘qish kerak",
+   "items": [
+    {
+     "text": "Asosiy cho‘qqi (base peak) — eng baland ion, 100 % deb olinadi; boshqa ionlar unga nisbatan foizda beriladi.",
+     "src": 1
+    },
+    {
+     "text": "Molekulyar ion (M⁺) moddaning molyar massasiga mos; ba’zi moddalarda (amfetamin, metamfetamin, MDMA) u juda kuchsiz yoki ko‘rinmaydi — asosiy ion 44 yoki 58 bo‘ladi.",
+     "src": 1
+    },
+    {
+     "text": "58 m/z bir nechta moddada asosiy ion: metamfetamin va MDMA (NIST), tramadol (SWGDRUG) — shuning uchun faqat asosiy ion bo‘yicha xulosa qilinmaydi, butun spektr va RT birga baholanadi."
+    },
+    {
+     "text": "Ushlanish vaqti (RT) va intensivliklar apparat, kolonka va dasturga bog‘liq; jadvaldagi RT faqat manbadagi shart uchun.",
+     "src": 0
+    }
+   ]
+  },
+  {
+   "kind": "massspec",
+   "title": "Kannabis",
+   "entries": [
+    {
+     "name": "Δ9-THC (tetragidrokannabinol)",
+     "formula": "C21H30O2",
+     "base": 299,
+     "mplus": 314,
+     "ions": [
+      [
+       299,
+       100
+      ],
+      [
+       314,
+       80
+      ],
+      [
+       231,
+       79
+      ],
+      [
+       271,
+       48
+      ],
+      [
+       243,
+       33
+      ],
+      [
+       41,
+       28
+      ],
+      [
+       258,
+       26
+      ],
+      [
+       43,
+       25
+      ]
+     ],
+     "gc": "",
+     "src": 1,
+     "src_note": "NIST WebBook, CAS 1972-08-3"
+    },
+    {
+     "name": "Kannabidiol (CBD)",
+     "formula": "C21H30O2",
+     "base": 231,
+     "mplus": 314,
+     "ions": [
+      [
+       231,
+       100.0
+      ],
+      [
+       314,
+       19.1
+      ],
+      [
+       246,
+       18.6
+      ],
+      [
+       174,
+       10.0
+      ],
+      [
+       193,
+       8.1
+      ],
+      [
+       299,
+       8.0
+      ],
+      [
+       121,
+       7.3
+      ],
+      [
+       271,
+       4.6
+      ],
+      [
+       91,
+       4.3
+      ],
+      [
+       67,
+       3.2
+      ]
+     ],
+     "gc": "Kolonka: HP-5 MS (yoki ekvivalent) 30 m x 0.25 mm x 0.25 um; dastur: 100 C (1.0 min) -> 280 C, 12 C/min -> 9.0 min ushlash; split 25:1; He 1.5 mL/min; source 230 C, quad 150 C; RT: 14.52 min (asbobga bog'liq)",
+     "src": 0,
+     "src_note": "SWGDRUG Cannabidiol monograph (rev. 2/2/2022) , p.3, 'EI Mass Spectrum: Cannabidiol; Lot# 3857-52-1'"
+    },
+    {
+     "name": "Kannabinol (CBN)",
+     "formula": "C21H26O2",
+     "base": 295,
+     "mplus": 310,
+     "ions": [
+      [
+       295,
+       100
+      ],
+      [
+       296,
+       23
+      ],
+      [
+       238,
+       14
+      ],
+      [
+       310,
+       11
+      ],
+      [
+       165,
+       5
+      ],
+      [
+       223,
+       4
+      ],
+      [
+       251,
+       4
+      ],
+      [
+       239,
+       3
+      ]
+     ],
+     "gc": "",
+     "src": 1,
+     "src_note": "NIST WebBook, CAS 521-35-7"
+    }
+   ]
+  },
+  {
+   "kind": "massspec",
+   "title": "Kokain",
+   "entries": [
+    {
+     "name": "Kokain",
+     "formula": "C17H21NO4",
+     "base": 82,
+     "mplus": 303,
+     "ions": [
+      [
+       82,
+       100
+      ],
+      [
+       182,
+       72
+      ],
+      [
+       83,
+       37
+      ],
+      [
+       94,
+       37
+      ],
+      [
+       77,
+       36
+      ],
+      [
+       105,
+       30
+      ],
+      [
+       96,
+       25
+      ],
+      [
+       42,
+       23
+      ]
+     ],
+     "gc": "",
+     "src": 1,
+     "src_note": "NIST WebBook, CAS 50-36-2"
+    },
+    {
+     "name": "Benzoilekgonin (kokain metaboliti)",
+     "formula": "C16H19NO4",
+     "base": 124,
+     "mplus": 289,
+     "ions": [
+      [
+       124,
+       100
+      ],
+      [
+       82,
+       61
+      ],
+      [
+       77,
+       41
+      ],
+      [
+       105,
+       31
+      ],
+      [
+       83,
+       30
+      ],
+      [
+       94,
+       26
+      ],
+      [
+       168,
+       26
+      ],
+      [
+       93,
+       20
+      ]
+     ],
+     "gc": "",
+     "src": 1,
+     "src_note": "NIST WebBook, CAS 519-09-5"
+    }
+   ]
+  },
+  {
+   "kind": "massspec",
+   "title": "Opioidlar",
+   "entries": [
+    {
+     "name": "Geroin (diatsetilmorfin)",
+     "formula": "C21H23NO5",
+     "base": 327,
+     "mplus": 369,
+     "ions": [
+      [
+       327,
+       100
+      ],
+      [
+       43,
+       95
+      ],
+      [
+       369,
+       73
+      ],
+      [
+       268,
+       60
+      ],
+      [
+       310,
+       53
+      ],
+      [
+       204,
+       37
+      ],
+      [
+       42,
+       34
+      ],
+      [
+       215,
+       32
+      ]
+     ],
+     "gc": "",
+     "src": 1,
+     "src_note": "NIST WebBook, CAS 561-27-3"
+    },
+    {
+     "name": "6-monoatsetilmorfin (6-MAM, geroin metaboliti)",
+     "formula": "C19H21NO4",
+     "base": 327,
+     "mplus": 327,
+     "ions": [
+      [
+       327,
+       100
+      ],
+      [
+       268,
+       94
+      ],
+      [
+       43,
+       62
+      ],
+      [
+       42,
+       52
+      ],
+      [
+       215,
+       40
+      ],
+      [
+       146,
+       37
+      ],
+      [
+       44,
+       30
+      ],
+      [
+       115,
+       29
+      ]
+     ],
+     "gc": "",
+     "src": 1,
+     "src_note": "NIST WebBook, CAS 2784-73-8"
+    },
+    {
+     "name": "Morfin",
+     "formula": "C17H19NO3",
+     "base": 285,
+     "mplus": 285,
+     "ions": [
+      [
+       285,
+       100
+      ],
+      [
+       42,
+       25
+      ],
+      [
+       162,
+       25
+      ],
+      [
+       215,
+       21
+      ],
+      [
+       286,
+       20
+      ],
+      [
+       44,
+       18
+      ],
+      [
+       124,
+       18
+      ],
+      [
+       59,
+       17
+      ]
+     ],
+     "gc": "",
+     "src": 1,
+     "src_note": "NIST WebBook, CAS 57-27-2"
+    },
+    {
+     "name": "Kodein",
+     "formula": "C18H21NO3",
+     "base": 299,
+     "mplus": 299,
+     "ions": [
+      [
+       299,
+       100
+      ],
+      [
+       162,
+       55
+      ],
+      [
+       115,
+       32
+      ],
+      [
+       124,
+       30
+      ],
+      [
+       42,
+       29
+      ],
+      [
+       229,
+       29
+      ],
+      [
+       214,
+       22
+      ],
+      [
+       300,
+       20
+      ]
+     ],
+     "gc": "",
+     "src": 1,
+     "src_note": "NIST WebBook, CAS 76-57-3"
+    },
+    {
+     "name": "Metadon",
+     "formula": "C21H27NO",
+     "base": 72,
+     "mplus": 309,
+     "ions": [
+      [
+       72,
+       100
+      ],
+      [
+       86,
+       8
+      ],
+      [
+       73,
+       8
+      ],
+      [
+       294,
+       7
+      ],
+      [
+       57,
+       6
+      ],
+      [
+       223,
+       6
+      ],
+      [
+       71,
+       4
+      ],
+      [
+       91,
+       4
+      ]
+     ],
+     "gc": "",
+     "src": 1,
+     "src_note": "NIST WebBook, CAS 76-99-3"
+    },
+    {
+     "name": "Tramadol",
+     "formula": "C16H25NO2",
+     "base": 58,
+     "mplus": 263,
+     "ions": [
+      [
+       58,
+       100.0
+      ],
+      [
+       263,
+       7.2
+      ],
+      [
+       135,
+       5.0
+      ],
+      [
+       77,
+       3.9
+      ],
+      [
+       59,
+       3.8
+      ],
+      [
+       55,
+       3.4
+      ],
+      [
+       42,
+       3.3
+      ],
+      [
+       44,
+       2.9
+      ],
+      [
+       45,
+       2.7
+      ],
+      [
+       107,
+       2.7
+      ]
+     ],
+     "gc": "Kolonka: HP-5 MS (yoki ekvivalent) 30 m x 0.25 mm x 0.25 um; dastur: 100 C (1.0 min) -> 300 C, 12 C/min -> 9.0 min ushlash; inj 280 C, transfer line 280 C, source 230 C, quad 150 C; split 25:1; He 0.6 mL/min; scan 30-550 amu; RT: 12.263 min (DEA laboratoriyasi asbobida; asbobga bog'liq)",
+     "src": 0,
+     "src_note": "SWGDRUG Tramadol monograph (rev. 11/22/2016) , p.3, 'EI Mass Spectrum: Tramadol HCl; Lot# BCBK9246V'"
+    }
+   ]
+  },
+  {
+   "kind": "massspec",
+   "title": "Stimulyatorlar (amfetamin guruhi)",
+   "entries": [
+    {
+     "name": "Amfetamin",
+     "formula": "C9H13N",
+     "base": 44,
+     "mplus": null,
+     "ions": [
+      [
+       44,
+       100
+      ],
+      [
+       91,
+       12
+      ],
+      [
+       65,
+       6
+      ],
+      [
+       42,
+       4
+      ],
+      [
+       51,
+       3
+      ],
+      [
+       45,
+       3
+      ],
+      [
+       120,
+       3
+      ],
+      [
+       63,
+       2
+      ]
+     ],
+     "gc": "",
+     "src": 1,
+     "src_note": "NIST WebBook, CAS 300-62-9"
+    },
+    {
+     "name": "Metamfetamin",
+     "formula": "C10H15N",
+     "base": 58,
+     "mplus": 149,
+     "ions": [
+      [
+       58,
+       100
+      ],
+      [
+       91,
+       7
+      ],
+      [
+       56,
+       5
+      ],
+      [
+       65,
+       4
+      ],
+      [
+       59,
+       4
+      ],
+      [
+       30,
+       3
+      ],
+      [
+       134,
+       2
+      ],
+      [
+       42,
+       2
+      ]
+     ],
+     "gc": "",
+     "src": 1,
+     "src_note": "NIST WebBook, CAS 537-46-2"
+    },
+    {
+     "name": "MDMA (ekstazi)",
+     "formula": "C11H15NO2",
+     "base": 58,
+     "mplus": 193,
+     "ions": [
+      [
+       58,
+       100
+      ],
+      [
+       135,
+       7
+      ],
+      [
+       77,
+       7
+      ],
+      [
+       51,
+       5
+      ],
+      [
+       30,
+       5
+      ],
+      [
+       56,
+       4
+      ],
+      [
+       136,
+       4
+      ],
+      [
+       59,
+       4
+      ]
+     ],
+     "gc": "",
+     "src": 1,
+     "src_note": "NIST WebBook, CAS 42542-10-9"
+    }
+   ]
+  },
+  {
+   "kind": "massspec",
+   "title": "Benzodiazepinlar",
+   "entries": [
+    {
+     "name": "Alprazolam",
+     "formula": "C17H13ClN4",
+     "base": 279,
+     "mplus": 308,
+     "ions": [
+      [
+       279,
+       100.0
+      ],
+      [
+       204,
+       99.5
+      ],
+      [
+       308,
+       67.7
+      ],
+      [
+       273,
+       56.0
+      ],
+      [
+       77,
+       53.1
+      ],
+      [
+       137,
+       38.5
+      ],
+      [
+       102,
+       38.3
+      ],
+      [
+       177,
+       37.3
+      ],
+      [
+       51,
+       27.1
+      ],
+      [
+       163,
+       23.5
+      ]
+     ],
+     "gc": "Kolonka: DB-1 MS (yoki ekvivalent) 30 m x 0.25 mm x 0.25 um; dastur: 90 C (2.0 min) -> 300 C, 15 C/min -> 15.0 min ushlash; split 25:1; He 1 mL/min; transfer line 280 C (monograf: 3.2); RT: 18.084 min (asbobga bog'liq)",
+     "src": 0,
+     "src_note": "SWGDRUG Alprazolam monograph (rev. 7/14/14) , p.3, 'EI Mass Spectrum Alprazolam Lot I0G195'"
+    },
+    {
+     "name": "Diazepam",
+     "formula": "C16H13ClN2O",
+     "base": 256,
+     "mplus": 284,
+     "ions": [
+      [
+       256,
+       100
+      ],
+      [
+       283,
+       95
+      ],
+      [
+       284,
+       72
+      ],
+      [
+       255,
+       47
+      ],
+      [
+       257,
+       46
+      ],
+      [
+       285,
+       40
+      ],
+      [
+       221,
+       37
+      ],
+      [
+       258,
+       36
+      ]
+     ],
+     "gc": "",
+     "src": 1,
+     "src_note": "NIST WebBook, CAS 439-14-5"
+    }
+   ]
+  },
+  {
+   "kind": "massspec",
+   "title": "Yangi psixoaktiv moddalar",
+   "entries": [
+    {
+     "name": "MDMB-4en-PINACA (sintetik kannabinoid)",
+     "formula": "C20H27N3O3",
+     "base": 213,
+     "mplus": 357,
+     "ions": [
+      [
+       213,
+       100.0
+      ],
+      [
+       145,
+       39.8
+      ],
+      [
+       301,
+       28.2
+      ],
+      [
+       171,
+       23.2
+      ],
+      [
+       131,
+       21.4
+      ],
+      [
+       357,
+       17.2
+      ],
+      [
+       41,
+       12.8
+      ],
+      [
+       185,
+       12.6
+      ],
+      [
+       269,
+       12.4
+      ],
+      [
+       103,
+       12.2
+      ]
+     ],
+     "gc": "Kolonka: HP-5 MS (yoki ekvivalent) 30 m x 0.25 mm x 0.25 um; dastur: 100 C (1.0 min) -> 280 C, 12 C/min -> 9.0 min ushlash; split 25:1; He 1.5 mL/min; inj 280 C; scan 30-550 amu; RT: 15.456 min (asbobga bog'liq)",
+     "src": 0,
+     "src_note": "SWGDRUG MDMB-4en-PINACA monograph (rev. 04/25/2023) , p.3, 'EI Mass Spectrum: MDMB-4en-PINACA; Lot #0587477-1'"
+    }
+   ]
+  },
+  {
+   "kind": "bullets",
+   "title": "Bo‘shliqlar (manba topilmadi)",
+   "items": [
+    {
+     "text": "Pregabalin: EI mass-spektri va GC sharti ochiq manbadan topilmadi; GC da hosilalashda laktamga aylanishi muammosi qayd etilgan."
+    },
+    {
+     "text": "Kokain, geroin, amfetaminlar va diazepam uchun SWGDRUG faqat GC-FID shartini beradi; ion ro‘yxati NIST WebBook dan, GC-MS sharti — laboratoriyada tanlanadi.",
+     "src": 0
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "author": "SWGDRUG",
+   "title": "Monographs (har modda uchun alohida PDF)",
+   "page": "swgdrug.org/monographs.htm"
+  },
+  {
+   "author": "NIST Mass Spectrometry Data Center",
+   "title": "NIST Chemistry WebBook: Mass spectrum (electron ionization)",
+   "page": "webbook.nist.gov"
+  },
+  {
+   "author": "Shimadzu Corporation",
+   "title": "GCMS-QP2020 NX: mahsulot va xususiyatlar sahifalari",
+   "page": "shimadzu.com"
+  }
+ ]
+}

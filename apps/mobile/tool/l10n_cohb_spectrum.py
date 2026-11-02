@@ -17,8 +17,22 @@ K = {
  'weTropicamideBody': ('Ko‘z tomchisi: ion-juft, xloroform, 408 nm — sxema, kalibrlash chizig‘i va hisob', 'Глазные капли: ионная пара, хлороформ, 408 нм — схема, калибровочный график и расчёт', 'Eye drops: ion pair, chloroform, 408 nm — scheme, calibration line and calculation'),
  'weBarbTitle': ('Qon va siydikda fenobarbital (UV-1900i)', 'Фенобарбитал в крови и моче (UV-1900i)', 'Phenobarbital in blood and urine (UV-1900i)'),
  'weBarbBody': ('pH 10 → pH 13 farqi, 260 nm — ajratib olish sxemasi, spektrlar va hisob', 'Разность pH 10 → pH 13, 260 нм — схема извлечения, спектры и расчёт', 'pH 10 → pH 13 difference at 260 nm — extraction scheme, spectra and calculation'),
+ 'weGcmsTitle': ('GC-MS: giyohvand va dori moddalari (Shimadzu)', 'ГХ-МС: наркотические и лекарственные вещества (Shimadzu)', 'GC-MS: drugs of abuse and medicines (Shimadzu)'),
+ 'weGcmsBody': ('THC, kokain, geroin, tramadol, amfetaminlar va boshq. — mass-spektr cho‘qqilari', 'ТГК, кокаин, героин, трамадол, амфетамины и др. — пики масс-спектров', 'THC, cocaine, heroin, tramadol, amphetamines and more — mass spectrum peaks'),
  'gcmsPeaksTitle': ('Cho‘qqilarni o‘qish', 'Чтение пиков', 'Reading the peaks'),
 }
+P = {
+ 'weMsBase': ('asosiy ion {mz}', 'основной ион {mz}', 'base peak {mz}'),
+ 'weMsMol': ('M⁺ {mz}', 'M⁺ {mz}', 'M⁺ {mz}'),
+}
+for i, lang in enumerate(('uz', 'ru', 'en')):
+    f = D / f'app_{lang}.arb'
+    b = json.loads(f.read_text(encoding='utf-8'))
+    for k, v in P.items():
+        b[k] = v[i]
+        if lang == 'en':
+            b['@' + k] = {'description': 'Mass spectrum label.', 'placeholders': {'mz': {'type': 'String'}}}
+    f.write_text(json.dumps(b, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 for i, lang in enumerate(('uz', 'ru', 'en')):
     f = D / f'app_{lang}.arb'
     b = json.loads(f.read_text(encoding='utf-8'))

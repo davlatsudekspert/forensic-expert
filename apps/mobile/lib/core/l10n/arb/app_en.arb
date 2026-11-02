@@ -16741,5 +16741,31 @@
   "weBarbBody": "pH 10 → pH 13 difference at 260 nm — extraction scheme, spectra and calculation",
   "@weBarbBody": {
     "description": "Equipment page: COHb spectrum diagram / GC-MS peak reading."
+  },
+  "weMsBase": "base peak {mz}",
+  "@weMsBase": {
+    "description": "Mass spectrum label.",
+    "placeholders": {
+      "mz": {
+        "type": "String"
+      }
+    }
+  },
+  "weMsMol": "M⁺ {mz}",
+  "@weMsMol": {
+    "description": "Mass spectrum label.",
+    "placeholders": {
+      "mz": {
+        "type": "String"
+      }
+    }
+  },
+  "weGcmsTitle": "GC-MS: drugs of abuse and medicines (Shimadzu)",
+  "@weGcmsTitle": {
+    "description": "Equipment page: COHb spectrum diagram / GC-MS peak reading."
+  },
+  "weGcmsBody": "THC, cocaine, heroin, tramadol, amphetamines and more — mass spectrum peaks",
+  "@weGcmsBody": {
+    "description": "Equipment page: COHb spectrum diagram / GC-MS peak reading."
   }
 }

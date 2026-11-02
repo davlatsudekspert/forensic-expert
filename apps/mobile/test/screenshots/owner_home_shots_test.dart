@@ -85,6 +85,12 @@ void main() {
     ),
     ('6_gcms', UserMode.professional, '/home/equipment/item/gc_ms', 1.0),
     (
+      '9_gcms_moddalar',
+      UserMode.professional,
+      '/home/equipment/example/gcms_drugs_qp2020',
+      1.0,
+    ),
+    (
       '8_fenobarbital',
       UserMode.professional,
       '/home/equipment/example/phenobarbital_blood_uv',
@@ -105,7 +111,7 @@ void main() {
           lang: 'uz',
           mode: mode,
         ).copyWith(textScale: scale),
-        size: const Size(390, 5200),
+        size: const Size(390, 9000),
         pixelRatio: 1,
         initialLocation: loc,
         proEnabled: false,

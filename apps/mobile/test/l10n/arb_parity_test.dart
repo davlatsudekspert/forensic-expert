@@ -22,6 +22,9 @@ void main() {
     'lessonViewerCounter',
     // DNK sudda so‘roq: «1. Savol» — faqat raqam va nuqta.
     'dnaQuestionNumbered',
+    'weMsMol',
+    // SI birligi (nm) — barcha tillarda bir xil.
+    'cohbSpecAxis',
     // Manba bo‘limi havolasi: faqat «§» belgisi + lokal bo‘lim nomi.
     'sourceSectionRef',
     // Yakuniy: xalqaro identifikator (PubMed ID).

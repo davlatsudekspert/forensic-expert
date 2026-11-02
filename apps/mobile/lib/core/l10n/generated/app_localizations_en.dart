@@ -12808,4 +12808,21 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get weBarbBody =>
       'pH 10 → pH 13 difference at 260 nm — extraction scheme, spectra and calculation';
+
+  @override
+  String weMsBase(String mz) {
+    return 'base peak $mz';
+  }
+
+  @override
+  String weMsMol(String mz) {
+    return 'M⁺ $mz';
+  }
+
+  @override
+  String get weGcmsTitle => 'GC-MS: drugs of abuse and medicines (Shimadzu)';
+
+  @override
+  String get weGcmsBody =>
+      'THC, cocaine, heroin, tramadol, amphetamines and more — mass spectrum peaks';
 }

@@ -88,4 +88,22 @@ void main() {
     expect(find.byKey(const Key('worked.calibration')), findsOneWidget);
     expect(find.textContaining('260 nm'), findsWidgets);
   });
+
+  testWidgets('GC-MS moddalar: mass-spektrlar va manbalar', (tester) async {
+    final json = File('assets/content/worked_examples/gcms_drugs_qp2020.json')
+        .readAsStringSync();
+    await pumpApp(
+      tester,
+      settings: completedSettings(lang: 'uz'),
+      size: const Size(390, 9000),
+      initialLocation: Routes.workedExample('gcms_drugs_qp2020'),
+      proEnabled: false,
+      overrides: [
+        workedExampleLoaderProvider.overrideWithValue((_) async => json),
+      ],
+    );
+    expect(find.byKey(const Key('worked.ms.Kokain')), findsOneWidget);
+    expect(find.byKey(const Key('worked.ms.Tramadol')), findsOneWidget);
+    expect(find.textContaining('asosiy ion 82'), findsOneWidget);
+  });
 }

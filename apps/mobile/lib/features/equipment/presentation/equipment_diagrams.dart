@@ -22,7 +22,10 @@ abstract final class EquipmentDiagrams {
         _WorkedExampleCard('tropicamide_uv'),
       ],
     ),
-    'gc_ms' => const _GcmsReadingCard(),
+    'gc_ms' => const Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [_GcmsReadingCard(), _WorkedExampleCard('gcms_drugs_qp2020')],
+    ),
     _ => null,
   };
 }
@@ -332,19 +335,17 @@ class _WorkedExampleCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      id == 'tropicamide_uv'
-                          ? l.weTropicamideTitle
-                          : l.weBarbTitle,
-                      style: t.titleSmall,
-                    ),
+                    Text(switch (id) {
+                      'tropicamide_uv' => l.weTropicamideTitle,
+                      'gcms_drugs_qp2020' => l.weGcmsTitle,
+                      _ => l.weBarbTitle,
+                    }, style: t.titleSmall),
                     const SizedBox(height: 2),
-                    Text(
-                      id == 'tropicamide_uv'
-                          ? l.weTropicamideBody
-                          : l.weBarbBody,
-                      style: t.bodySmall?.copyWith(color: c.textSecondary),
-                    ),
+                    Text(switch (id) {
+                      'tropicamide_uv' => l.weTropicamideBody,
+                      'gcms_drugs_qp2020' => l.weGcmsBody,
+                      _ => l.weBarbBody,
+                    }, style: t.bodySmall?.copyWith(color: c.textSecondary)),
                   ],
                 ),
               ),

@@ -22202,6 +22202,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'pH 10 → pH 13 difference at 260 nm — extraction scheme, spectra and calculation'**
   String get weBarbBody;
+
+  /// Mass spectrum label.
+  ///
+  /// In en, this message translates to:
+  /// **'base peak {mz}'**
+  String weMsBase(String mz);
+
+  /// Mass spectrum label.
+  ///
+  /// In en, this message translates to:
+  /// **'M⁺ {mz}'**
+  String weMsMol(String mz);
+
+  /// Equipment page: COHb spectrum diagram / GC-MS peak reading.
+  ///
+  /// In en, this message translates to:
+  /// **'GC-MS: drugs of abuse and medicines (Shimadzu)'**
+  String get weGcmsTitle;
+
+  /// Equipment page: COHb spectrum diagram / GC-MS peak reading.
+  ///
+  /// In en, this message translates to:
+  /// **'THC, cocaine, heroin, tramadol, amphetamines and more — mass spectrum peaks'**
+  String get weGcmsBody;
 }
 
 class _AppLocalizationsDelegate

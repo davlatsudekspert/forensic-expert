@@ -12029,4 +12029,16 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
 
   @override
   String get weBarbBody => toUzNewAlphabet(super.weBarbBody);
+
+  @override
+  String weMsBase(String mz) => toUzNewAlphabet(super.weMsBase(mz));
+
+  @override
+  String weMsMol(String mz) => toUzNewAlphabet(super.weMsMol(mz));
+
+  @override
+  String get weGcmsTitle => toUzNewAlphabet(super.weGcmsTitle);
+
+  @override
+  String get weGcmsBody => toUzNewAlphabet(super.weGcmsBody);
 }

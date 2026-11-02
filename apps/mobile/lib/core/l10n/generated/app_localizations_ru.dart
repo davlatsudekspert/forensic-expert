@@ -12855,4 +12855,22 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get weBarbBody =>
       'Разность pH 10 → pH 13, 260 нм — схема извлечения, спектры и расчёт';
+
+  @override
+  String weMsBase(String mz) {
+    return 'основной ион $mz';
+  }
+
+  @override
+  String weMsMol(String mz) {
+    return 'M⁺ $mz';
+  }
+
+  @override
+  String get weGcmsTitle =>
+      'ГХ-МС: наркотические и лекарственные вещества (Shimadzu)';
+
+  @override
+  String get weGcmsBody =>
+      'ТГК, кокаин, героин, трамадол, амфетамины и др. — пики масс-спектров';
 }

@@ -12734,4 +12734,21 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get weBarbBody =>
       'pH 10 → pH 13 farqi, 260 nm — ajratib olish sxemasi, spektrlar va hisob';
+
+  @override
+  String weMsBase(String mz) {
+    return 'asosiy ion $mz';
+  }
+
+  @override
+  String weMsMol(String mz) {
+    return 'M⁺ $mz';
+  }
+
+  @override
+  String get weGcmsTitle => 'GC-MS: giyohvand va dori moddalari (Shimadzu)';
+
+  @override
+  String get weGcmsBody =>
+      'THC, kokain, geroin, tramadol, amfetaminlar va boshq. — mass-spektr cho‘qqilari';
 }

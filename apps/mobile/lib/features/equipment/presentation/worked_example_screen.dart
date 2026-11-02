@@ -15,7 +15,11 @@ import '../../../core/widgets/fe_components.dart';
 /// Amaliy misol: dori moddasini miqdoriy aniqlash, sxema va diagrammalar
 /// bilan (egasi talabi, 2026-11-02). Matn asli o‘zbekcha, JSON paketda;
 /// har band manbaga (`src` — `sources` ro‘yxatidagi indeks) bog‘langan.
-const workedExampleIds = ['tropicamide_uv', 'phenobarbital_blood_uv'];
+const workedExampleIds = [
+  'tropicamide_uv',
+  'phenobarbital_blood_uv',
+  'gcms_drugs_qp2020',
+];
 
 final workedExampleLoaderProvider =
     Provider<Future<String> Function(String id)>(
@@ -290,6 +294,75 @@ class WorkedExampleScreen extends ConsumerWidget {
               ),
             ],
           );
+        case 'massspec':
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              for (final e in _maps(s['entries']))
+                Padding(
+                  padding: const EdgeInsets.only(bottom: FeSpace.md),
+                  child: Container(
+                    key: Key('worked.ms.${_s(e['name'])}'),
+                    padding: const EdgeInsets.all(FeSpace.sm),
+                    decoration: BoxDecoration(
+                      color: c.surface,
+                      border: Border.all(color: c.border),
+                      borderRadius: BorderRadius.circular(FeRadius.md),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Text(u(_s(e['name'])), style: t.titleSmall),
+                        Text(
+                          [
+                            _s(e['formula']),
+                            if (e['base'] is num)
+                              l.weMsBase(e['base'].toString()),
+                            if (e['mplus'] is num)
+                              l.weMsMol(e['mplus'].toString()),
+                          ].where((x) => x.isNotEmpty).join(' · '),
+                          style: t.bodySmall?.copyWith(color: c.textSecondary),
+                        ),
+                        const SizedBox(height: FeSpace.xs),
+                        AspectRatio(
+                          aspectRatio: 2.1,
+                          child: CustomPaint(
+                            painter: _MassSpecPainter(
+                              ions: [
+                                for (final i
+                                    in (e['ions'] as List? ?? const []))
+                                  if (i is List &&
+                                      i.length == 2 &&
+                                      i[0] is num &&
+                                      i[1] is num)
+                                    (
+                                      mz: (i[0] as num).toDouble(),
+                                      rel: (i[1] as num).toDouble(),
+                                    ),
+                              ],
+                              bar: c.accent,
+                              grid: c.border,
+                              text: c.textSecondary,
+                              style:
+                                  t.labelSmall ?? const TextStyle(fontSize: 10),
+                            ),
+                          ),
+                        ),
+                        if (_s(e['gc']).isNotEmpty) ...[
+                          const SizedBox(height: FeSpace.xs),
+                          Text(u(_s(e['gc'])), style: t.bodySmall),
+                        ],
+                        const SizedBox(height: 2),
+                        Text(
+                          '${ref0(e['src'])} ${_s(e['src_note'])}',
+                          style: t.labelSmall?.copyWith(color: c.textSecondary),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+            ],
+          );
         case 'calc':
           return Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -542,4 +615,67 @@ class _SpectraPainter extends CustomPainter {
   @override
   bool shouldRepaint(_SpectraPainter old) =>
       old.curves != curves || old.from != from || old.to != to;
+}
+
+class _MassSpecPainter extends CustomPainter {
+  _MassSpecPainter({
+    required this.ions,
+    required this.bar,
+    required this.grid,
+    required this.text,
+    required this.style,
+  });
+
+  final List<({double mz, double rel})> ions;
+  final Color bar;
+  final Color grid;
+  final Color text;
+  final TextStyle style;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    if (ions.isEmpty) return;
+    const left = 4.0;
+    const top = 14.0;
+    final bottom = size.height - 16;
+    final right = size.width - 4;
+    final maxMz = ions.map((i) => i.mz).reduce(math.max);
+    final hi = ((maxMz / 50).ceil() * 50 + 10).toDouble();
+    const lo = 30.0;
+    double px(double mz) => left + (mz - lo) / (hi - lo) * (right - left);
+    double py(double r) => bottom - r.clamp(0, 100) / 100 * (bottom - top);
+    final g = Paint()
+      ..color = grid
+      ..strokeWidth = 1;
+    canvas.drawLine(Offset(left, bottom), Offset(right, bottom), g);
+    void label(String s, Offset at, Color color) {
+      final tp = TextPainter(
+        text: TextSpan(
+          text: s,
+          style: style.copyWith(color: color),
+        ),
+        textDirection: TextDirection.ltr,
+      )..layout();
+      tp.paint(canvas, at - Offset(tp.width / 2, 0));
+    }
+
+    for (var m = 50.0; m < hi; m += 50) {
+      label(m.toStringAsFixed(0), Offset(px(m), bottom + 2), text);
+    }
+    final p = Paint()
+      ..color = bar
+      ..strokeWidth = 2.6;
+    final sorted = [...ions]..sort((a, b) => b.rel.compareTo(a.rel));
+    final top5 = sorted.take(5).map((i) => i.mz).toSet();
+    for (final i in ions) {
+      final x = px(i.mz);
+      canvas.drawLine(Offset(x, bottom), Offset(x, py(i.rel)), p);
+      if (top5.contains(i.mz)) {
+        label(i.mz.toStringAsFixed(0), Offset(x, py(i.rel) - 13), bar);
+      }
+    }
+  }
+
+  @override
+  bool shouldRepaint(_MassSpecPainter old) => old.ions != ions;
 }
