@@ -12791,4 +12791,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get gcmsPeaksTitle => 'Reading the peaks';
+
+  @override
+  String get weHeader => 'Worked example';
+
+  @override
+  String get weTropicamideTitle => 'Assay of tropicamide (UV-1900i)';
+
+  @override
+  String get weTropicamideBody =>
+      'Eye drops: ion pair, chloroform, 408 nm — scheme, calibration line and calculation';
 }

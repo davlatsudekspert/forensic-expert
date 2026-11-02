@@ -1,0 +1,177 @@
+{
+ "source_lang": "uz",
+ "generated": "2026-11-02",
+ "id": "tropicamide_uv",
+ "title": "Tropikamidni spektrofotometrik miqdoriy aniqlash (UV-1900i misolida)",
+ "intro": "Ko‘z tomchisidagi tropikamid bromkrezol binafsha (BCP) bilan ion-juft hosil qiladi; sariq kompleks xloroformga ekstraksiya qilinib, 408 nm da o‘lchanadi. Usul maqolada Optima SP-3000 plus spektrofotometrida ishlab chiqilgan; quyida xuddi shu tartib Shimadzu UV-1900i ning Quantitation rejimiga moslab ko‘rsatilgan — apparatga moslashtirishni ustoz tasdiqlaydi.",
+ "sections": [
+  {
+   "kind": "facts",
+   "title": "Modda va usul",
+   "items": [
+    {
+     "label": "Formula",
+     "value": "C17H20N2O2",
+     "src": 1
+    },
+    {
+     "label": "Molyar massa",
+     "value": "284,35 g/mol",
+     "src": 1
+    },
+    {
+     "label": "To‘lqin uzunligi (BCP)",
+     "value": "408 nm",
+     "src": 0
+    },
+    {
+     "label": "Chiziqli oraliq",
+     "value": "1,0–16 µg/ml",
+     "src": 0
+    },
+    {
+     "label": "Molyar yutilish ε",
+     "value": "1,641×10⁴ l·mol⁻¹·sm⁻¹",
+     "src": 0
+    },
+    {
+     "label": "LOD / LOQ",
+     "value": "0,091 / 0,303 µg/ml",
+     "src": 0
+    }
+   ]
+  },
+  {
+   "kind": "flow",
+   "title": "Ish tartibi (sxema)",
+   "caption": "Shoaibi va Gouda, 2012, «Construction of calibration curves»",
+   "src": 0,
+   "nodes": [
+    "Namuna yoki standart (0,1–1,6 ml, 100 µg/ml)",
+    "+ 2,0 ml BCP (1,0×10⁻³ M)",
+    "+ 3,0 ml ftalat–HCl bufer, pH 3,0",
+    "Suv bilan 10 ml gacha",
+    "Xloroform 2×5 ml, 2 daqiqa chayqatish",
+    "Xloroform qatlami Na2SO4 dan o‘tkaziladi, 10 ml gacha",
+    "408 nm da reagent blankiga nisbatan o‘lchash"
+   ]
+  },
+  {
+   "kind": "steps",
+   "title": "Eritmalarni tayyorlash",
+   "items": [
+    {
+     "text": "Standart: 0,01 g toza tropikamid 10 ml metanolda eritiladi va bidistillangan suv bilan 100 ml gacha yetkaziladi (100 µg/ml). Muzlatgichda 1 oy barqaror.",
+     "src": 0
+    },
+    {
+     "text": "Reagent: BCP 1,0×10⁻³ M — 10 ml metanolda eritilib, suv bilan 100 ml gacha; muzlatgichda kamida 1 hafta barqaror.",
+     "src": 0
+    },
+    {
+     "text": "Ko‘z tomchisi: 5 ta flakon aralashtiriladi, bitta flakonning o‘rtacha hajmi 100 ml o‘lchov kolbasiga o‘tkazilib, bidistillangan suv bilan to‘ldiriladi va ish eritmasigacha suyultiriladi.",
+     "src": 0
+    },
+    {
+     "text": "Ketma-ketlik muhim: dori → reagent → bufer → erituvchi; boshqa tartibda rang sekinroq rivojlanadi va yutilish kamroq bo‘ladi.",
+     "src": 0
+    }
+   ]
+  },
+  {
+   "kind": "calibration",
+   "title": "Kalibrlash chizig‘i (nazariy)",
+   "epsilon": 16410,
+   "molar_mass": 284.35,
+   "points": [
+    1,
+    4,
+    8,
+    12,
+    16
+   ],
+   "x_label": "µg/ml",
+   "y_label": "A (408 nm)",
+   "note": "Nuqtalar maqoladagi ε va molyar massadan hisoblangan nazariy qiymatlar (A = ε·c/M): 1 µg/ml ≈ 0,058; 16 µg/ml ≈ 0,92. Bu o‘lchov natijasi emas — haqiqiy chiziq har safar standartlar bilan quriladi.",
+   "src": 0
+  },
+  {
+   "kind": "steps",
+   "title": "UV-1900i da o‘lchash (Quantitation rejimi)",
+   "items": [
+    {
+     "text": "Rejim: [Quantitation]; usul — ko‘p nuqtali kalibrlash (Multi-point), tartib 1 (chiziqli), to‘lqin uzunligi 408 nm.",
+     "src": 2
+    },
+    {
+     "text": "Standartlar soni: Zero Interception yoqilgan bo‘lsa — tartibga teng yoki ko‘p, o‘chirilgan bo‘lsa — tartib + 1 yoki ko‘p (95-bet). Misolda 5 ta standart: 1, 4, 8, 12, 16 µg/ml.",
+     "src": 2
+    },
+    {
+     "text": "Standartlarni o‘lchashdan oldin kyuvetaga reagent blanki qo‘yilib, [Auto Zero] yoki [Base Corr.] bajariladi (108-bet).",
+     "src": 2
+    },
+    {
+     "text": "Standartlar o‘lchanadi — ekranda kalibrlash tenglamasi va r² ko‘rinadi (108–109-betlar); usul maqolasida [1] r ≥ 0,9991 (n = 6).",
+     "src": 2
+    },
+    {
+     "text": "Noma’lum namuna o‘lchanadi; apparat konsentratsiyani kalibrlash chizig‘idan hisoblaydi (113–115-betlar).",
+     "src": 2
+    }
+   ]
+  },
+  {
+   "kind": "calc",
+   "title": "Hisoblash misoli (shartli sonlar)",
+   "lines": [
+    "1 % li tomchi: 10 mg/ml = 10 000 µg/ml.",
+    "1,0 ml → 100 ml: 100 µg/ml (ish eritmasi).",
+    "1,0 ml ish eritmasi → ekstraksiya → 10 ml xloroform: kutilgan 10 µg/ml, A ≈ 0,58.",
+    "Aytaylik, o‘lchangan A = 0,570 → c = 0,570 / 0,0577 ≈ 9,88 µg/ml.",
+    "Qayta hisob: 9,88 × 10 × 100 = 9 880 µg/ml ≈ 0,99 % (yorliqdagi 1 % ga mos)."
+   ],
+   "note": "Sonlar o‘quv uchun shartli: suyultirish sxemasi va o‘lchangan A misol sifatida berilgan; qiyalik 0,0577 — nazariy chiziqdan. Amalda qiyalik o‘z kalibrlash chizig‘ingizdan olinadi."
+  },
+  {
+   "kind": "bullets",
+   "title": "E’tibor bering",
+   "items": [
+    {
+     "text": "Rang 2 daqiqada to‘liq rivojlanadi va kamida 24 soat barqaror; 30 °C dan yuqorida yutilish kamaya boshlaydi.",
+     "src": 0
+    },
+    {
+     "text": "Laktoza, dekstroza, etanol, kraxmal, propilenglikol, gidroksipropilmetilsellyuloza va sellyuloza halaqit bermagan.",
+     "src": 0
+    },
+    {
+     "text": "Natijalar BP dagi nosuvli titrlash usuli bilan statistik farq qilmagan (t-test, 95 %).",
+     "src": 0
+    },
+    {
+     "text": "USP xomashyo uchun nosuvli titrlashni (0,1 N HClO4) va UV identifikatsiyani (25 µg/ml, 3 N HCl) ko‘zda tutadi.",
+     "src": 1
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "author": "Shoaibi Z.A., Gouda A.A.",
+   "title": "Extractive spectrophotometric method for the determination of tropicamide. J Young Pharm 2012;4(1)",
+   "page": "42–48-betlar; PMID 22523460",
+   "doi": "10.4103/0975-1483.93572"
+  },
+  {
+   "author": "USP 29–NF 24",
+   "title": "Tropicamide (monografiya)",
+   "page": "2223-bet"
+  },
+  {
+   "author": "Shimadzu Corporation",
+   "title": "UV-1900i Instruction Manual: Operation Guide, 207-90563, 2019",
+   "page": "9-bob, 89–121-betlar"
+  }
+ ]
+}

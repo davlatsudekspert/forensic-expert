@@ -84,6 +84,12 @@ void main() {
       1.0,
     ),
     ('6_gcms', UserMode.professional, '/home/equipment/item/gc_ms', 1.0),
+    (
+      '7_tropikamid',
+      UserMode.professional,
+      '/home/equipment/example/tropicamide_uv',
+      1.0,
+    ),
   ];
   for (final (name, mode, loc, scale) in cases) {
     testWidgets(name, (tester) async {

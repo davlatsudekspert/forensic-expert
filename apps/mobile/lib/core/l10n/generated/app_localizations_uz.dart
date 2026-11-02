@@ -12717,4 +12717,14 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get gcmsPeaksTitle => 'Cho‘qqilarni o‘qish';
+
+  @override
+  String get weHeader => 'Amaliy misol';
+
+  @override
+  String get weTropicamideTitle => 'Tropikamidni miqdoriy aniqlash (UV-1900i)';
+
+  @override
+  String get weTropicamideBody =>
+      'Ko‘z tomchisi: ion-juft, xloroform, 408 nm — sxema, kalibrlash chizig‘i va hisob';
 }

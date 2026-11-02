@@ -36,6 +36,10 @@ abstract final class Routes {
   static String dnaTopic(String id) =>
       '/home/dna/topic/${Uri.encodeComponent(id)}';
   static String equipmentGroup(String group) => '/home/equipment?group=$group';
+
+  /// Amaliy misol (dori moddasini miqdoriy aniqlash).
+  static String workedExample(String id) =>
+      '/home/equipment/example/${Uri.encodeComponent(id)}';
   static String equipmentItem(String id) =>
       '/home/equipment/item/${Uri.encodeComponent(id)}';
   static String area(String area) => '/home/area/$area';

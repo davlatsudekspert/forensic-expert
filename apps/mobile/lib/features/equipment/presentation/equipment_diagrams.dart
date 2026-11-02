@@ -14,7 +14,10 @@ import '../../../core/widgets/fe_components.dart';
 /// (cho‘qqilarni) o‘qish sahifasiga kirish.
 abstract final class EquipmentDiagrams {
   static Widget? forItem(String id) => switch (id) {
-    'uv_vis' => const _CohbSpectrumCard(),
+    'uv_vis' => const Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [_CohbSpectrumCard(), _WorkedExampleCard('tropicamide_uv')],
+    ),
     'gc_ms' => const _GcmsReadingCard(),
     _ => null,
   };
@@ -284,6 +287,51 @@ class _GcmsReadingCard extends StatelessWidget {
                     const SizedBox(height: 2),
                     Text(
                       l.labHubReadingBody,
+                      style: t.bodySmall?.copyWith(color: c.textSecondary),
+                    ),
+                  ],
+                ),
+              ),
+              Icon(Icons.chevron_right, color: c.textSecondary),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+/// Amaliy misolga kirish (masalan, tropikamidni miqdoriy aniqlash).
+class _WorkedExampleCard extends StatelessWidget {
+  const _WorkedExampleCard(this.id);
+
+  final String id;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        FeSectionHeader(l.weHeader),
+        FeCard(
+          key: Key('equipment.worked.$id'),
+          onTap: () => context.push(Routes.workedExample(id)),
+          padding: const EdgeInsets.all(FeSpace.md),
+          child: Row(
+            children: [
+              Icon(Icons.science_outlined, color: c.accent, size: 32),
+              const SizedBox(width: FeSpace.md),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(l.weTropicamideTitle, style: t.titleSmall),
+                    const SizedBox(height: 2),
+                    Text(
+                      l.weTropicamideBody,
                       style: t.bodySmall?.copyWith(color: c.textSecondary),
                     ),
                   ],

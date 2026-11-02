@@ -22172,6 +22172,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reading the peaks'**
   String get gcmsPeaksTitle;
+
+  /// Equipment page: COHb spectrum diagram / GC-MS peak reading.
+  ///
+  /// In en, this message translates to:
+  /// **'Worked example'**
+  String get weHeader;
+
+  /// Equipment page: COHb spectrum diagram / GC-MS peak reading.
+  ///
+  /// In en, this message translates to:
+  /// **'Assay of tropicamide (UV-1900i)'**
+  String get weTropicamideTitle;
+
+  /// Equipment page: COHb spectrum diagram / GC-MS peak reading.
+  ///
+  /// In en, this message translates to:
+  /// **'Eye drops: ion pair, chloroform, 408 nm — scheme, calibration line and calculation'**
+  String get weTropicamideBody;
 }
 
 class _AppLocalizationsDelegate

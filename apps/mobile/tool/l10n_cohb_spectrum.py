@@ -12,6 +12,9 @@ K = {
  'cohbSpecHb': ('Hb (deoksigemoglobin) — 557 nm da bitta maksimum', 'Hb (дезоксигемоглобин) — один максимум при 557 нм', 'Hb (deoxyhaemoglobin) — one maximum at 557 nm'),
  'cohbSpecIsoLegend': ('Izobestik nuqtalar — 550, 565, 579 nm (hisobda 550 nm ishlatiladi)', 'Изобестические точки — 550, 565, 579 нм (в расчёте используется 550 нм)', 'Isosbestic points — 550, 565, 579 nm (550 nm is used in the calculation)'),
  'cohbSpecNote': ('Oksigemoglobin spektri COHbnikiga juda o‘xshaydi (cho‘qqilar 1–2 nm farq qiladi). Shuning uchun natriy ditionit qo‘shiladi: u oksigemoglobinni deoksigemoglobinga aylantiradi, COHb esa o‘zgarmaydi — ikki cho‘qqi saqlansa, COHb bor. Egri chiziqlar shakli — sxema, o‘lchov natijasi emas.', 'Спектр оксигемоглобина очень похож на спектр COHb (максимумы отличаются на 1–2 нм). Поэтому добавляют дитионит натрия: он восстанавливает оксигемоглобин до дезоксигемоглобина, а COHb не меняется — если два максимума сохраняются, COHb присутствует. Форма кривых — схема, а не результат измерения.', 'The oxyhaemoglobin spectrum is very similar to that of COHb (peaks differ by 1–2 nm). Sodium dithionite is therefore added: it reduces oxyhaemoglobin to deoxyhaemoglobin while COHb is unchanged — if two peaks remain, COHb is present. Curve shapes are schematic, not a measurement.'),
+ 'weHeader': ('Amaliy misol', 'Практический пример', 'Worked example'),
+ 'weTropicamideTitle': ('Tropikamidni miqdoriy aniqlash (UV-1900i)', 'Количественное определение тропикамида (UV-1900i)', 'Assay of tropicamide (UV-1900i)'),
+ 'weTropicamideBody': ('Ko‘z tomchisi: ion-juft, xloroform, 408 nm — sxema, kalibrlash chizig‘i va hisob', 'Глазные капли: ионная пара, хлороформ, 408 нм — схема, калибровочный график и расчёт', 'Eye drops: ion pair, chloroform, 408 nm — scheme, calibration line and calculation'),
  'gcmsPeaksTitle': ('Cho‘qqilarni o‘qish', 'Чтение пиков', 'Reading the peaks'),
 }
 for i, lang in enumerate(('uz', 'ru', 'en')):

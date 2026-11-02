@@ -54,6 +54,7 @@ import '../features/home/presentation/gcms_reading_screen.dart';
 import '../domain/equipment/equipment.dart';
 import '../features/dna/presentation/dna_screens.dart';
 import '../features/equipment/presentation/equipment_screens.dart';
+import '../features/equipment/presentation/worked_example_screen.dart';
 import '../features/home/presentation/home_screen.dart';
 import '../features/home/presentation/lab_topic_hub.dart';
 import '../features/home/presentation/search_screen.dart';
@@ -730,6 +731,11 @@ final routerProvider = Provider<GoRouter>((ref) {
                         path: 'item/:id',
                         builder: (c, s) =>
                             EquipmentDetailScreen(id: s.pathParameters['id']!),
+                      ),
+                      GoRoute(
+                        path: 'example/:id',
+                        builder: (c, s) =>
+                            WorkedExampleScreen(id: s.pathParameters['id']!),
                       ),
                     ],
                   ),

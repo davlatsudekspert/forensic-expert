@@ -12837,4 +12837,15 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get gcmsPeaksTitle => 'Чтение пиков';
+
+  @override
+  String get weHeader => 'Практический пример';
+
+  @override
+  String get weTropicamideTitle =>
+      'Количественное определение тропикамида (UV-1900i)';
+
+  @override
+  String get weTropicamideBody =>
+      'Глазные капли: ионная пара, хлороформ, 408 нм — схема, калибровочный график и расчёт';
 }
