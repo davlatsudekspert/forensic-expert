@@ -16779,5 +16779,158 @@
   "labHubExamples": "Worked examples",
   "@labHubExamples": {
     "description": "Equipment page: COHb spectrum diagram / GC-MS peak reading."
+  },
+  "tcCategoryLabel": "Category",
+  "@tcCategoryLabel": {
+    "description": "Admin conducted tests / teacher profile header."
+  },
+  "tcCategoryHigher": "Highest category",
+  "@tcCategoryHigher": {
+    "description": "Admin conducted tests / teacher profile header."
+  },
+  "tcCategoryFirst": "First category",
+  "@tcCategoryFirst": {
+    "description": "Admin conducted tests / teacher profile header."
+  },
+  "tcCategorySecond": "Second category",
+  "@tcCategorySecond": {
+    "description": "Admin conducted tests / teacher profile header."
+  },
+  "tcCategoryNone": "No category",
+  "@tcCategoryNone": {
+    "description": "Admin conducted tests / teacher profile header."
+  },
+  "profTeacherEdit": "Edit profile",
+  "@profTeacherEdit": {
+    "description": "Admin conducted tests / teacher profile header."
+  },
+  "profTeacherFill": "Complete your teacher profile",
+  "@profTeacherFill": {
+    "description": "Admin conducted tests / teacher profile header."
+  },
+  "profTeacherFillHint": "Add a photo, workplace and category — your students will see them in the group.",
+  "@profTeacherFillHint": {
+    "description": "Admin conducted tests / teacher profile header."
+  },
+  "profTeacherVisibleOn": "Visible to students",
+  "@profTeacherVisibleOn": {
+    "description": "Admin conducted tests / teacher profile header."
+  },
+  "profTeacherVisibleOff": "Hidden from students",
+  "@profTeacherVisibleOff": {
+    "description": "Admin conducted tests / teacher profile header."
+  },
+  "admTestsTitle": "Tests conducted",
+  "@admTestsTitle": {
+    "description": "Admin conducted tests / teacher profile header."
+  },
+  "admTestsHint": "Teachers, groups and results",
+  "@admTestsHint": {
+    "description": "Admin conducted tests / teacher profile header."
+  },
+  "admTestsRefresh": "Refresh",
+  "@admTestsRefresh": {
+    "description": "Admin conducted tests / teacher profile header."
+  },
+  "admTestsSearch": "Search by teacher, group or topic",
+  "@admTestsSearch": {
+    "description": "Admin conducted tests / teacher profile header."
+  },
+  "admTestsEmpty": "No tests have been conducted yet.",
+  "@admTestsEmpty": {
+    "description": "Admin conducted tests / teacher profile header."
+  },
+  "admTestsKindLive": "Live class",
+  "@admTestsKindLive": {
+    "description": "Admin conducted tests / teacher profile header."
+  },
+  "admTestsKindAssignment": "Group test",
+  "@admTestsKindAssignment": {
+    "description": "Admin conducted tests / teacher profile header."
+  },
+  "admTestsNoAvg": "No results yet",
+  "@admTestsNoAvg": {
+    "description": "Admin conducted tests / teacher profile header."
+  },
+  "admTestsResultsTitle": "Results",
+  "@admTestsResultsTitle": {
+    "description": "Admin conducted tests / teacher profile header."
+  },
+  "admTestsNoStudents": "No students in this test.",
+  "@admTestsNoStudents": {
+    "description": "Admin conducted tests / teacher profile header."
+  },
+  "admTestsNotDone": "Not submitted",
+  "@admTestsNotDone": {
+    "description": "Admin conducted tests / teacher profile header."
+  },
+  "admTestsTeacher": "Teacher: {name}",
+  "@admTestsTeacher": {
+    "description": "Admin conducted tests.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "admTestsGroup": "Group: {name}",
+  "@admTestsGroup": {
+    "description": "Admin conducted tests.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "admTestsCode": "Code: {code}",
+  "@admTestsCode": {
+    "description": "Admin conducted tests.",
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "admTestsQuestions": "{n} questions",
+  "@admTestsQuestions": {
+    "description": "Admin conducted tests.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "admTestsJoined": "{n} students took part",
+  "@admTestsJoined": {
+    "description": "Admin conducted tests.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "admTestsFinished": "{done} of {total} submitted",
+  "@admTestsFinished": {
+    "description": "Admin conducted tests.",
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "admTestsAvg": "Average score (100): {score} · Grade: {grade}",
+  "@admTestsAvg": {
+    "description": "Admin conducted tests.",
+    "placeholders": {
+      "score": {
+        "type": "String"
+      },
+      "grade": {
+        "type": "String"
+      }
+    }
   }
 }

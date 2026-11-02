@@ -148,12 +148,33 @@ abstract final class TeacherLinks {
 String _str(Object? v, [String d = '']) => v is String ? v : d;
 
 /// Serverdagi karta (talaba ko‘rinishi + egasi uchun qo‘shimcha maydonlar).
+/// Ustozning malaka toifasi (ixtiyoriy; profil boshida ko‘rsatiladi).
+enum TeacherCategory {
+  higher('higher'),
+  first('first'),
+  second('second'),
+  none('none');
+
+  const TeacherCategory(this.wire);
+
+  final String wire;
+
+  static TeacherCategory? parse(Object? v) => switch (v) {
+    'higher' => higher,
+    'first' => first,
+    'second' => second,
+    'none' => none,
+    _ => null,
+  };
+}
+
 @immutable
 class TeacherCard {
   const TeacherCard({
     required this.teacherId,
     required this.displayName,
     this.workplace = '',
+    this.category,
     this.bio = '',
     this.photoPath,
     this.logoPath,
@@ -165,6 +186,9 @@ class TeacherCard {
   final String teacherId;
   final String displayName;
   final String workplace;
+
+  /// Malaka toifasi; ko‘rsatilmagan bo‘lsa `null`.
+  final TeacherCategory? category;
   final String bio;
 
   /// Storage yo‘li (`<uid>/photo-<uuid>.png`); rasm baytlari alohida yuklanadi.
@@ -182,6 +206,7 @@ class TeacherCard {
       teacherId: _str(j['teacher_id']),
       displayName: _str(j['display_name']),
       workplace: _str(j['workplace']),
+      category: TeacherCategory.parse(j['category']),
       bio: _str(j['bio']),
       photoPath: j['photo_path'] is String ? j['photo_path']! as String : null,
       logoPath: j['logo_path'] is String ? j['logo_path']! as String : null,
@@ -205,6 +230,7 @@ class TeacherCardDraft {
   const TeacherCardDraft({
     required this.displayName,
     this.workplace = '',
+    this.category,
     this.bio = '',
     this.socials = const {},
     this.visible = false,
@@ -216,6 +242,9 @@ class TeacherCardDraft {
 
   final String displayName;
   final String workplace;
+
+  /// `null` — toifa ko‘rsatilmaydi.
+  final TeacherCategory? category;
   final String bio;
   final Map<TeacherSocial, String> socials;
   final bool visible;

@@ -193,6 +193,7 @@ abstract final class Routes {
   static const adminUsers = '/profile/admin/users';
   static const adminAudit = '/profile/admin/audit';
   static const adminPlans = '/profile/admin/plans';
+  static const adminClassTests = '/profile/admin/tests';
   static const adminReports = '/profile/admin/reports';
   static const adminVerifications = '/profile/admin/verifications';
   static String adminVerification(String applicantId) =>

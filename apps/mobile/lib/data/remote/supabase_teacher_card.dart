@@ -218,6 +218,8 @@ class SupabaseTeacherCardService implements TeacherCardService {
       'p_logo_path': logo,
       'p_socials': {for (final e in draft.socials.entries) e.key.key: e.value},
       'p_visible': draft.visible,
+      // '' — toifani tozalash (NULL eski ilovalar uchun «o‘zgartirmaslik»).
+      'p_category': draft.category?.wire ?? '',
     });
     if (!r.ok) return fail(r.failure!);
     final c = _card(r);

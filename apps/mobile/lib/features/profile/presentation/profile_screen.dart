@@ -34,6 +34,7 @@ import '../../professional/professional_strings.dart';
 import '../../referral/presentation/invite_card.dart';
 import '../../support/presentation/support_widgets.dart';
 import 'avatar_widgets.dart';
+import 'teacher_profile_header.dart';
 
 /// «Reja» qatori qiymati: Bepul / Talaba Pro (sinov) …
 String _planValue(
@@ -87,6 +88,10 @@ class ProfileScreen extends ConsumerWidget {
     final account = authState.account;
     final supportOn = ref.watch(supportAvailableProvider);
     final isAdmin = ref.watch(serverAccessProvider).value?.isAdmin ?? false;
+    final isTeacherHeader =
+        signedIn &&
+        ref.watch(teacherCardServiceProvider).isConfigured &&
+        (ref.watch(classIsTeacherProvider).value ?? false);
     // Talabaga professional tasdiq bo‘limi faqat jarayon boshlangan bo‘lsa.
     final showVerification =
         settings.userMode != UserMode.student ||
@@ -136,11 +141,16 @@ class ProfileScreen extends ConsumerWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  _IdentityCard(
-                    mode: settings.userMode,
-                    declaredRole: settings.declaredRole,
-                    profile: localProfile,
-                  ),
+                  // Ustoz (server roli): namuna uslubidagi profil boshi —
+                  // rasm, ism, ish joyi, toifa, reja belgisi (2026-11-02).
+                  if (isTeacherHeader)
+                    const TeacherProfileHeader()
+                  else
+                    _IdentityCard(
+                      mode: settings.userMode,
+                      declaredRole: settings.declaredRole,
+                      profile: localProfile,
+                    ),
                   FeSectionHeader(l.accountSection),
                   if (!signedIn && !authRepo.isConfigured) ...[
                     // Akkaunt xizmati ulanmagan: ishlamaydigan kirish
@@ -244,33 +254,6 @@ class ProfileScreen extends ConsumerWidget {
                         ),
                       ),
                     ),
-                  // «Ustoz kartam»: faqat ustoz roli bor (server aytadi) va karta
-                  // xizmati ulangan hisobda.
-                  if (signedIn &&
-                      ref.watch(teacherCardServiceProvider).isConfigured &&
-                      (ref.watch(classIsTeacherProvider).value ?? false)) ...[
-                    FeSectionHeader(l.tcTitle),
-                    _Group(
-                      children: [
-                        _Row(
-                          key: const Key('profile.teacherCard'),
-                          icon: Icons.badge_outlined,
-                          title: l.tcTitle,
-                          value: switch (ref
-                              .watch(myTeacherCardProvider)
-                              .value
-                              ?.value) {
-                            null => l.tcProfileHint,
-                            final card
-                                when card.visible && !card.hiddenByAdmin =>
-                              l.tcProfileOn,
-                            _ => l.tcProfileOff,
-                          },
-                          onTap: () => context.push(Routes.teacherCard),
-                        ),
-                      ],
-                    ),
-                  ],
                   // «Talaba kartam»: ixtiyoriy, kirgan hisob uchun (karta xizmati
                   // ulangan bo‘lsa). Ustoz rolida ko‘rsatilmaydi — ustozda
                   // «Ustoz kartam» bor (egasi so‘rovi, 2026-11-02).

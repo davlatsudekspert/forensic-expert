@@ -118,7 +118,7 @@ void main() {
       location: Routes.profile,
       extra: cards.overrides('stu'),
     );
-    expect(find.byKey(const Key('profile.teacherCard')), findsNothing);
+    expect(find.byKey(const Key('profile.teacherHeader')), findsNothing);
     await closeApp(tester);
 
     final w2 = GroupsWorld();
@@ -129,18 +129,56 @@ void main() {
       location: Routes.profile,
       extra: cards2.overrides('teacher'),
     );
-    await tester.scrollUntilVisible(
-      find.byKey(const Key('profile.teacherCard')),
-      200,
-      scrollable: find.byType(Scrollable).first,
-    );
-    expect(find.byKey(const Key('profile.teacherCard')), findsOneWidget);
-    expect(find.text(_l(tester).tcProfileHint), findsOneWidget);
-    await tester.tap(find.byKey(const Key('profile.teacherCard')));
+    // Ustoz profilining boshi: rasm, ism, «Ustoz profilini to‘ldiring».
+    expect(find.byKey(const Key('profile.teacherHeader')), findsOneWidget);
+    expect(find.byKey(const Key('profile.teacherPhoto')), findsOneWidget);
+    expect(find.text(_l(tester).profTeacherFill), findsOneWidget);
+    await tester.tap(find.byKey(const Key('profile.teacherEdit')));
     await frames(tester);
     expect(find.byKey(const Key('tc.save')), findsOneWidget);
     await closeApp(tester);
   });
+
+  testWidgets(
+    'Toifa: tanlanadi, saqlanadi va profil boshida ism/ish joyi ostida chiqadi',
+    (tester) async {
+      final w = GroupsWorld();
+      final cards = _Cards(w);
+      await w.open(
+        tester,
+        uid: 'teacher',
+        location: Routes.teacherCard,
+        extra: cards.overrides('teacher'),
+      );
+      await _type(tester, 'tc.field.name', 'Qutbiddin Siddiqov');
+      await _type(
+        tester,
+        'tc.field.workplace',
+        'Toshkent tibbiyot akademiyasi',
+      );
+      await _tap(tester, 'tc.category.higher');
+      await _tap(tester, 'tc.save');
+      expect(cards.backend.cards['teacher']?.category, TeacherCategory.higher);
+      await closeApp(tester);
+
+      final w2 = GroupsWorld();
+      final cards2 = _Cards(w2);
+      cards2.backend.cards['teacher'] = cards.backend.cards['teacher']!;
+      await w2.open(
+        tester,
+        uid: 'teacher',
+        location: Routes.profile,
+        extra: cards2.overrides('teacher'),
+      );
+      final l = _l(tester);
+      expect(find.byKey(const Key('profile.teacherHeader')), findsOneWidget);
+      expect(find.text('Qutbiddin Siddiqov'), findsOneWidget);
+      expect(find.text('Toshkent tibbiyot akademiyasi'), findsOneWidget);
+      expect(find.text(l.tcCategoryHigher), findsOneWidget);
+      expect(find.text(l.profTeacherEdit), findsOneWidget);
+      await closeApp(tester);
+    },
+  );
 
   testWidgets(
     'Tahrirlash: rozilik kaliti DEFAULT o‘chiq; @username normallashadi; '

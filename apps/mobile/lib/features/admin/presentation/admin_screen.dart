@@ -262,6 +262,14 @@ class _AdminSections extends ConsumerWidget {
           hint: l.admProHint,
           onTap: () => context.push(Routes.adminPlans),
         ),
+      if (ref.watch(adminPlanServiceProvider).isConfigured)
+        AdminNavTile(
+          key: const Key('admin.nav.tests'),
+          icon: Icons.quiz_outlined,
+          title: l.admTestsTitle,
+          hint: l.admTestsHint,
+          onTap: () => context.push(Routes.adminClassTests),
+        ),
       if (ref.watch(reportAvailableProvider))
         AdminNavTile(
           key: const Key('admin.nav.reports'),

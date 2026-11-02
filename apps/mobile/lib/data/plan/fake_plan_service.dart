@@ -1,3 +1,4 @@
+import '../../domain/admin/admin_class_tests.dart';
 import '../../domain/plan/plan_models.dart';
 import '../../domain/ports/plan_ports.dart';
 
@@ -78,10 +79,18 @@ class FakePlanService implements PlanService {
 
 /// Test/demo admin xizmati.
 class FakeAdminPlanService implements AdminPlanService {
-  FakeAdminPlanService({List<AdminPlanRow>? rows, this.failure})
-    : rows = rows ?? [];
+  FakeAdminPlanService({
+    List<AdminPlanRow>? rows,
+    this.failure,
+    this.tests = const [],
+    this.results = const {},
+  }) : rows = rows ?? [];
 
   final List<AdminPlanRow> rows;
+
+  /// O‘tkazilgan testlar (admin ro‘yxati uchun soxta ma’lumot).
+  final List<AdminClassTest> tests;
+  final Map<String, List<AdminClassTestResult>> results;
   PlanFailure? failure;
   final calls = <String>[];
 
@@ -139,5 +148,30 @@ class FakeAdminPlanService implements AdminPlanService {
         adminActive: rows.length,
       ),
     );
+  }
+
+  @override
+  Future<PlanResult<List<AdminClassTest>>> classTests({String? query}) async {
+    calls.add('classTests');
+    if (failure != null) return PlanResult.fail(failure!);
+    final q = (query ?? '').trim().toLowerCase();
+    return PlanResult.ok([
+      for (final t in tests)
+        if (q.isEmpty ||
+            t.topicTitle.toLowerCase().contains(q) ||
+            t.teacherName.toLowerCase().contains(q) ||
+            (t.groupName ?? '').toLowerCase().contains(q))
+          t,
+    ]);
+  }
+
+  @override
+  Future<PlanResult<List<AdminClassTestResult>>> classTestDetail(
+    AdminClassTestKind kind,
+    String id,
+  ) async {
+    calls.add('classTestDetail:$id');
+    if (failure != null) return PlanResult.fail(failure!);
+    return PlanResult.ok(results[id] ?? const []);
   }
 }

@@ -12,6 +12,15 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/teacher_card/teacher_card.dart';
 
+/// Malaka toifasining mahalliy nomi.
+String teacherCategoryName(AppLocalizations l, TeacherCategory c) =>
+    switch (c) {
+      TeacherCategory.higher => l.tcCategoryHigher,
+      TeacherCategory.first => l.tcCategoryFirst,
+      TeacherCategory.second => l.tcCategorySecond,
+      TeacherCategory.none => l.tcCategoryNone,
+    };
+
 /// Tarmoqning mahalliy nomi.
 String teacherSocialName(AppLocalizations l, TeacherSocial s) => switch (s) {
   TeacherSocial.telegram => l.tcNetTelegram,
@@ -197,28 +206,6 @@ class TeacherCardView extends ConsumerWidget {
   /// `null` — shikoyat tugmasi ko‘rsatilmaydi (ustozning o‘z ko‘rinishi).
   final VoidCallback? onReport;
 
-  Future<void> _open(
-    BuildContext context,
-    WidgetRef ref,
-    TeacherSocial s,
-    String url,
-  ) async {
-    final l = AppLocalizations.of(context);
-    final messenger = ScaffoldMessenger.of(context);
-    final uri = TeacherLinks.openable(s, url);
-    var ok = false;
-    if (uri != null) {
-      try {
-        ok = await ref.read(teacherLinkOpenerProvider)(uri);
-      } on Object {
-        ok = false;
-      }
-    }
-    if (!ok) {
-      messenger.showSnackBar(SnackBar(content: Text(l.tcLinkOpenFailed)));
-    }
-  }
-
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
@@ -360,6 +347,16 @@ class TeacherCardView extends ConsumerWidget {
                       ],
                     ),
                   ],
+                  if (card.category case final cat?
+                      when cat != TeacherCategory.none) ...[
+                    const SizedBox(height: FeSpace.xxs),
+                    Text(
+                      teacherCategoryName(l, cat),
+                      key: const Key('tc.category'),
+                      textAlign: TextAlign.center,
+                      style: t.labelLarge?.copyWith(color: c.accent),
+                    ),
+                  ],
                   if (card.bio.isNotEmpty) ...[
                     const SizedBox(height: FeSpace.sm),
                     Container(
@@ -382,46 +379,7 @@ class TeacherCardView extends ConsumerWidget {
                   ],
                   if (socials.isNotEmpty) ...[
                     const SizedBox(height: FeSpace.sm),
-                    Wrap(
-                      alignment: WrapAlignment.center,
-                      spacing: FeSpace.xs,
-                      runSpacing: FeSpace.xs,
-                      children: [
-                        for (final (s, url) in socials)
-                          Semantics(
-                            button: true,
-                            label: l.tcOpenLink(teacherSocialName(l, s)),
-                            child: Tooltip(
-                              message: l.tcOpenLink(teacherSocialName(l, s)),
-                              child: InkResponse(
-                                key: Key('tc.social.${s.key}'),
-                                radius: 28,
-                                onTap: () => _open(context, ref, s, url),
-                                child: SizedBox(
-                                  width: 52,
-                                  height: 52,
-                                  child: Center(
-                                    child: DecoratedBox(
-                                      decoration: BoxDecoration(
-                                        shape: BoxShape.circle,
-                                        boxShadow: [
-                                          BoxShadow(
-                                            color: SocialBadge.colorOf(s)
-                                                .withValues(alpha: 0.35),
-                                            blurRadius: 8,
-                                            offset: const Offset(0, 3),
-                                          ),
-                                        ],
-                                      ),
-                                      child: SocialBadge(social: s, size: 42),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                      ],
-                    ),
+                    TeacherSocialRow(card: card),
                   ],
                 ],
               ),
@@ -429,6 +387,86 @@ class TeacherCardView extends ConsumerWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// Ustoz tarmoqlari: rangli doira belgilari; bosilganda havola tashqi
+/// ilovada ochiladi — faqat ruxsat etilgan domen ([TeacherLinks.openable]).
+class TeacherSocialRow extends ConsumerWidget {
+  const TeacherSocialRow({super.key, required this.card, this.size = 42});
+
+  final TeacherCard card;
+  final double size;
+
+  Future<void> _open(
+    BuildContext context,
+    WidgetRef ref,
+    TeacherSocial s,
+    String url,
+  ) async {
+    final l = AppLocalizations.of(context);
+    final messenger = ScaffoldMessenger.of(context);
+    final uri = TeacherLinks.openable(s, url);
+    var ok = false;
+    if (uri != null) {
+      try {
+        ok = await ref.read(teacherLinkOpenerProvider)(uri);
+      } on Object {
+        ok = false;
+      }
+    }
+    if (!ok) {
+      messenger.showSnackBar(SnackBar(content: Text(l.tcLinkOpenFailed)));
+    }
+  }
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final socials = [
+      for (final s in TeacherSocial.values)
+        if (card.socials[s] case final url?) (s, url),
+    ];
+    return Wrap(
+      alignment: WrapAlignment.center,
+      spacing: FeSpace.xs,
+      runSpacing: FeSpace.xs,
+      children: [
+        for (final (s, url) in socials)
+          Semantics(
+            button: true,
+            label: l.tcOpenLink(teacherSocialName(l, s)),
+            child: Tooltip(
+              message: l.tcOpenLink(teacherSocialName(l, s)),
+              child: InkResponse(
+                key: Key('tc.social.${s.key}'),
+                radius: 28,
+                onTap: () => _open(context, ref, s, url),
+                child: SizedBox(
+                  width: size + 10,
+                  height: size + 10,
+                  child: Center(
+                    child: DecoratedBox(
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        boxShadow: [
+                          BoxShadow(
+                            color: SocialBadge.colorOf(s)
+                                .withValues(alpha: 0.35),
+                            blurRadius: 8,
+                            offset: const Offset(0, 3),
+                          ),
+                        ],
+                      ),
+                      child: SocialBadge(social: s, size: size),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+      ],
     );
   }
 }

@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 
+import '../../domain/admin/admin_class_tests.dart';
 import '../../domain/plan/plan_models.dart';
 import '../../domain/ports/backend_ports.dart';
 import '../../domain/ports/plan_ports.dart';
@@ -192,5 +193,44 @@ class SupabaseAdminPlanService implements AdminPlanService {
     final m = _map(res.value);
     if (m == null) return const PlanResult.fail(PlanFailure.server);
     return PlanResult.ok(AdminPlanStats.fromJson(m));
+  }
+
+  @override
+  Future<PlanResult<List<AdminClassTest>>> classTests({String? query}) async {
+    final q = query?.trim();
+    final res = await _r.rpc('admin_class_tests', {
+      'p_query': (q == null || q.isEmpty) ? null : q,
+      'p_limit': 200,
+    });
+    if (!res.ok) return PlanResult.fail(res.failure!);
+    final v = res.value;
+    if (v is! List) return const PlanResult.fail(PlanFailure.server);
+    return PlanResult.ok([
+      for (final e in v)
+        if (_map(e) case final m?)
+          if (AdminClassTest.tryParse(m) case final t?) t,
+    ]);
+  }
+
+  @override
+  Future<PlanResult<List<AdminClassTestResult>>> classTestDetail(
+    AdminClassTestKind kind,
+    String id,
+  ) async {
+    final res = await _r.rpc('admin_class_test_detail', {
+      'p_kind': kind.wire,
+      'p_id': id,
+    });
+    if (!res.ok) return PlanResult.fail(res.failure!);
+    final m = _map(res.value);
+    final rows = m?['rows'];
+    if (m == null || m['ok'] != true || rows is! List) {
+      return const PlanResult.fail(PlanFailure.server);
+    }
+    return PlanResult.ok([
+      for (final e in rows)
+        if (_map(e) case final r?)
+          if (AdminClassTestResult.tryParse(r) case final x?) x,
+    ]);
   }
 }

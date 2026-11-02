@@ -1,3 +1,4 @@
+import '../admin/admin_class_tests.dart';
 import '../plan/plan_models.dart';
 
 /// Reja xizmati xatolari.
@@ -247,6 +248,15 @@ abstract interface class AdminPlanService {
   Future<PlanResult<List<AdminPlanRow>>> list({String? query, int limit});
 
   Future<PlanResult<AdminPlanStats>> stats();
+
+  /// O‘tkazilgan testlar (jonli sinf + guruh vazifalari), eng yangisi birinchi.
+  Future<PlanResult<List<AdminClassTest>>> classTests({String? query});
+
+  /// Bitta test natijalari (server audit jurnaliga yozadi).
+  Future<PlanResult<List<AdminClassTestResult>>> classTestDetail(
+    AdminClassTestKind kind,
+    String id,
+  );
 }
 
 class UnconfiguredAdminPlanService implements AdminPlanService {
@@ -271,6 +281,16 @@ class UnconfiguredAdminPlanService implements AdminPlanService {
   @override
   Future<PlanResult<AdminPlanStats>> stats() async =>
       const PlanResult.fail(PlanFailure.notConfigured);
+
+  @override
+  Future<PlanResult<List<AdminClassTest>>> classTests({String? query}) async =>
+      const PlanResult.fail(PlanFailure.notConfigured);
+
+  @override
+  Future<PlanResult<List<AdminClassTestResult>>> classTestDetail(
+    AdminClassTestKind kind,
+    String id,
+  ) async => const PlanResult.fail(PlanFailure.notConfigured);
 }
 
 /// «Birinchi kirishdagi yumshoq taklif» faqat bir marta ko‘rsatiladi

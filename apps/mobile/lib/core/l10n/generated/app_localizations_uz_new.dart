@@ -11430,4 +11430,95 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   @override
   String get labHubExamples => toUzNewAlphabet(super.labHubExamples);
 
+  @override
+  String get tcCategoryLabel => toUzNewAlphabet(super.tcCategoryLabel);
+
+  @override
+  String get tcCategoryHigher => toUzNewAlphabet(super.tcCategoryHigher);
+
+  @override
+  String get tcCategoryFirst => toUzNewAlphabet(super.tcCategoryFirst);
+
+  @override
+  String get tcCategorySecond => toUzNewAlphabet(super.tcCategorySecond);
+
+  @override
+  String get tcCategoryNone => toUzNewAlphabet(super.tcCategoryNone);
+
+  @override
+  String get profTeacherEdit => toUzNewAlphabet(super.profTeacherEdit);
+
+  @override
+  String get profTeacherFill => toUzNewAlphabet(super.profTeacherFill);
+
+  @override
+  String get profTeacherFillHint => toUzNewAlphabet(super.profTeacherFillHint);
+
+  @override
+  String get profTeacherVisibleOn => toUzNewAlphabet(super.profTeacherVisibleOn);
+
+  @override
+  String get profTeacherVisibleOff => toUzNewAlphabet(super.profTeacherVisibleOff);
+
+  @override
+  String get admTestsTitle => toUzNewAlphabet(super.admTestsTitle);
+
+  @override
+  String get admTestsHint => toUzNewAlphabet(super.admTestsHint);
+
+  @override
+  String get admTestsRefresh => toUzNewAlphabet(super.admTestsRefresh);
+
+  @override
+  String get admTestsSearch => toUzNewAlphabet(super.admTestsSearch);
+
+  @override
+  String get admTestsEmpty => toUzNewAlphabet(super.admTestsEmpty);
+
+  @override
+  String get admTestsKindLive => toUzNewAlphabet(super.admTestsKindLive);
+
+  @override
+  String get admTestsKindAssignment => toUzNewAlphabet(super.admTestsKindAssignment);
+
+  @override
+  String get admTestsNoAvg => toUzNewAlphabet(super.admTestsNoAvg);
+
+  @override
+  String get admTestsResultsTitle => toUzNewAlphabet(super.admTestsResultsTitle);
+
+  @override
+  String get admTestsNoStudents => toUzNewAlphabet(super.admTestsNoStudents);
+
+  @override
+  String get admTestsNotDone => toUzNewAlphabet(super.admTestsNotDone);
+
+  @override
+  String admTestsTeacher(String name) =>
+      toUzNewAlphabet(super.admTestsTeacher(name));
+
+  @override
+  String admTestsGroup(String name) =>
+      toUzNewAlphabet(super.admTestsGroup(name));
+
+  @override
+  String admTestsCode(String code) =>
+      toUzNewAlphabet(super.admTestsCode(code));
+
+  @override
+  String admTestsQuestions(int n) =>
+      toUzNewAlphabet(super.admTestsQuestions(n));
+
+  @override
+  String admTestsJoined(int n) =>
+      toUzNewAlphabet(super.admTestsJoined(n));
+
+  @override
+  String admTestsFinished(int done, int total) =>
+      toUzNewAlphabet(super.admTestsFinished(done, total));
+
+  @override
+  String admTestsAvg(String score, String grade) =>
+      toUzNewAlphabet(super.admTestsAvg(score, grade));
+
 }

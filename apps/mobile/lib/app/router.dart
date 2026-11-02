@@ -25,6 +25,7 @@ import '../domain/publications/publication_models.dart';
 import '../domain/referral/referral_models.dart';
 import '../domain/support/support_models.dart';
 import '../features/account/presentation/auth_screens.dart';
+import '../features/admin/presentation/admin_class_tests_screen.dart';
 import '../features/admin/presentation/admin_plans_screen.dart';
 import '../features/admin/presentation/admin_screen.dart';
 import '../features/admin/presentation/admin_support_screens.dart';
@@ -1359,6 +1360,11 @@ final routerProvider = Provider<GoRouter>((ref) {
                         path: 'plans',
                         parentNavigatorKey: rootKey,
                         builder: (c, s) => const AdminPlansScreen(),
+                      ),
+                      GoRoute(
+                        path: 'tests',
+                        parentNavigatorKey: rootKey,
+                        builder: (c, s) => const AdminClassTestsScreen(),
                       ),
                       GoRoute(
                         path: 'reports',

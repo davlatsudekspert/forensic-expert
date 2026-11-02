@@ -37,6 +37,7 @@ class _TeacherCardState extends ConsumerState<TeacherCardScreen> {
   TeacherCard? _saved;
   bool _inited = false;
   bool _visible = false;
+  TeacherCategory? _category;
   bool _busy = false;
   bool _showErrors = false;
   Uint8List? _photo;
@@ -61,6 +62,7 @@ class _TeacherCardState extends ConsumerState<TeacherCardScreen> {
     if (c == null) return;
     _name.text = c.displayName;
     _work.text = c.workplace;
+    _category = c.category;
     _bio.text = c.bio;
     _visible = c.visible && !c.hiddenByAdmin;
     for (final e in c.socials.entries) {
@@ -85,6 +87,7 @@ class _TeacherCardState extends ConsumerState<TeacherCardScreen> {
     return TeacherCardDraft(
       displayName: _name.text,
       workplace: _work.text,
+      category: _category,
       bio: _bio.text,
       socials: soc,
       visible: _visible,
@@ -233,6 +236,7 @@ class _TeacherCardState extends ConsumerState<TeacherCardScreen> {
       teacherId: '',
       displayName: d.displayName.trim().isEmpty ? '—' : d.displayName.trim(),
       workplace: d.workplace.trim(),
+      category: d.category,
       bio: d.bio.trim(),
       photoPath: _removePhoto ? null : _saved?.photoPath,
       logoPath: _removeLogo ? null : _saved?.logoPath,
@@ -406,6 +410,27 @@ class _TeacherCardState extends ConsumerState<TeacherCardScreen> {
               labelText: l.tcWorkplace,
               hintText: l.tcWorkplaceHint,
             ),
+          ),
+          const SizedBox(height: FeSpace.xs),
+          Text(
+            l.tcCategoryLabel,
+            style: Theme.of(context).textTheme.labelLarge,
+          ),
+          const SizedBox(height: FeSpace.xxs),
+          Wrap(
+            key: const Key('tc.field.category'),
+            spacing: FeSpace.xs,
+            runSpacing: FeSpace.xxs,
+            children: [
+              for (final cat in TeacherCategory.values)
+                ChoiceChip(
+                  key: Key('tc.category.${cat.wire}'),
+                  label: Text(teacherCategoryName(l, cat)),
+                  selected: _category == cat,
+                  onSelected: (on) =>
+                      setState(() => _category = on ? cat : null),
+                ),
+            ],
           ),
           const SizedBox(height: FeSpace.xs),
           FeSectionHeader(l.tcLogoSection),

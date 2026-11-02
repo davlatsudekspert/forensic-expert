@@ -63,7 +63,8 @@ import 'app_localizations_uz.dart';
 /// be consistent with the languages listed in the AppLocalizations.supportedLocales
 /// property.
 abstract class AppLocalizations {
-  AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+  AppLocalizations(String locale)
+    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -71,7 +72,8 @@ abstract class AppLocalizations {
     return Localizations.of<AppLocalizations>(context, AppLocalizations)!;
   }
 
-  static const LocalizationsDelegate<AppLocalizations> delegate = _AppLocalizationsDelegate();
+  static const LocalizationsDelegate<AppLocalizations> delegate =
+      _AppLocalizationsDelegate();
 
   /// A list of this localizations delegate along with the default localizations
   /// delegates.
@@ -83,18 +85,19 @@ abstract class AppLocalizations {
   /// Additional delegates can be added by appending to this list in
   /// MaterialApp. This list does not have to be used at all if a custom list
   /// of delegates is preferred or required.
-  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates = <LocalizationsDelegate<dynamic>>[
-    delegate,
-    GlobalMaterialLocalizations.delegate,
-    GlobalCupertinoLocalizations.delegate,
-    GlobalWidgetsLocalizations.delegate,
-  ];
+  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
+      <LocalizationsDelegate<dynamic>>[
+        delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('en'),
     Locale('ru'),
-    Locale('uz')
+    Locale('uz'),
   ];
 
   /// Brand name. Not translated.
@@ -7865,7 +7868,12 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Claims: {claims} · sources: {sources} · evidence: {level} · version {version}'**
-  String dashboardItemMeta(int claims, int sources, String level, String version);
+  String dashboardItemMeta(
+    int claims,
+    int sources,
+    String level,
+    String version,
+  );
 
   /// Queue.
   ///
@@ -22236,9 +22244,178 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Worked examples'**
   String get labHubExamples;
+
+  /// Admin conducted tests / teacher profile header.
+  ///
+  /// In en, this message translates to:
+  /// **'Category'**
+  String get tcCategoryLabel;
+
+  /// Admin conducted tests / teacher profile header.
+  ///
+  /// In en, this message translates to:
+  /// **'Highest category'**
+  String get tcCategoryHigher;
+
+  /// Admin conducted tests / teacher profile header.
+  ///
+  /// In en, this message translates to:
+  /// **'First category'**
+  String get tcCategoryFirst;
+
+  /// Admin conducted tests / teacher profile header.
+  ///
+  /// In en, this message translates to:
+  /// **'Second category'**
+  String get tcCategorySecond;
+
+  /// Admin conducted tests / teacher profile header.
+  ///
+  /// In en, this message translates to:
+  /// **'No category'**
+  String get tcCategoryNone;
+
+  /// Admin conducted tests / teacher profile header.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit profile'**
+  String get profTeacherEdit;
+
+  /// Admin conducted tests / teacher profile header.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete your teacher profile'**
+  String get profTeacherFill;
+
+  /// Admin conducted tests / teacher profile header.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a photo, workplace and category — your students will see them in the group.'**
+  String get profTeacherFillHint;
+
+  /// Admin conducted tests / teacher profile header.
+  ///
+  /// In en, this message translates to:
+  /// **'Visible to students'**
+  String get profTeacherVisibleOn;
+
+  /// Admin conducted tests / teacher profile header.
+  ///
+  /// In en, this message translates to:
+  /// **'Hidden from students'**
+  String get profTeacherVisibleOff;
+
+  /// Admin conducted tests / teacher profile header.
+  ///
+  /// In en, this message translates to:
+  /// **'Tests conducted'**
+  String get admTestsTitle;
+
+  /// Admin conducted tests / teacher profile header.
+  ///
+  /// In en, this message translates to:
+  /// **'Teachers, groups and results'**
+  String get admTestsHint;
+
+  /// Admin conducted tests / teacher profile header.
+  ///
+  /// In en, this message translates to:
+  /// **'Refresh'**
+  String get admTestsRefresh;
+
+  /// Admin conducted tests / teacher profile header.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by teacher, group or topic'**
+  String get admTestsSearch;
+
+  /// Admin conducted tests / teacher profile header.
+  ///
+  /// In en, this message translates to:
+  /// **'No tests have been conducted yet.'**
+  String get admTestsEmpty;
+
+  /// Admin conducted tests / teacher profile header.
+  ///
+  /// In en, this message translates to:
+  /// **'Live class'**
+  String get admTestsKindLive;
+
+  /// Admin conducted tests / teacher profile header.
+  ///
+  /// In en, this message translates to:
+  /// **'Group test'**
+  String get admTestsKindAssignment;
+
+  /// Admin conducted tests / teacher profile header.
+  ///
+  /// In en, this message translates to:
+  /// **'No results yet'**
+  String get admTestsNoAvg;
+
+  /// Admin conducted tests / teacher profile header.
+  ///
+  /// In en, this message translates to:
+  /// **'Results'**
+  String get admTestsResultsTitle;
+
+  /// Admin conducted tests / teacher profile header.
+  ///
+  /// In en, this message translates to:
+  /// **'No students in this test.'**
+  String get admTestsNoStudents;
+
+  /// Admin conducted tests / teacher profile header.
+  ///
+  /// In en, this message translates to:
+  /// **'Not submitted'**
+  String get admTestsNotDone;
+
+  /// Admin conducted tests.
+  ///
+  /// In en, this message translates to:
+  /// **'Teacher: {name}'**
+  String admTestsTeacher(String name);
+
+  /// Admin conducted tests.
+  ///
+  /// In en, this message translates to:
+  /// **'Group: {name}'**
+  String admTestsGroup(String name);
+
+  /// Admin conducted tests.
+  ///
+  /// In en, this message translates to:
+  /// **'Code: {code}'**
+  String admTestsCode(String code);
+
+  /// Admin conducted tests.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} questions'**
+  String admTestsQuestions(int n);
+
+  /// Admin conducted tests.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} students took part'**
+  String admTestsJoined(int n);
+
+  /// Admin conducted tests.
+  ///
+  /// In en, this message translates to:
+  /// **'{done} of {total} submitted'**
+  String admTestsFinished(int done, int total);
+
+  /// Admin conducted tests.
+  ///
+  /// In en, this message translates to:
+  /// **'Average score (100): {score} · Grade: {grade}'**
+  String admTestsAvg(String score, String grade);
 }
 
-class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
+class _AppLocalizationsDelegate
+    extends LocalizationsDelegate<AppLocalizations> {
   const _AppLocalizationsDelegate();
 
   @override
@@ -22247,26 +22424,28 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
   }
 
   @override
-  bool isSupported(Locale locale) => <String>['en', 'ru', 'uz'].contains(locale.languageCode);
+  bool isSupported(Locale locale) =>
+      <String>['en', 'ru', 'uz'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
 }
 
 AppLocalizations lookupAppLocalizations(Locale locale) {
-
-
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
-    case 'en': return AppLocalizationsEn();
-    case 'ru': return AppLocalizationsRu();
-    case 'uz': return AppLocalizationsUz();
+    case 'en':
+      return AppLocalizationsEn();
+    case 'ru':
+      return AppLocalizationsRu();
+    case 'uz':
+      return AppLocalizationsUz();
   }
 
   throw FlutterError(
     'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
     'an issue with the localizations generation tool. Please file an issue '
     'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.'
+    'that was used.',
   );
 }
