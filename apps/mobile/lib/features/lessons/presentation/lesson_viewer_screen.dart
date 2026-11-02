@@ -9,6 +9,7 @@ import '../../../app/class_quiz.dart';
 import '../../../app/lessons.dart';
 import '../../../app/plan.dart';
 import '../../../app/routes.dart';
+import '../../../app/tts.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
@@ -221,11 +222,62 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
         .save(LessonAutoPrefs(auto: _auto, seconds: _autoSeconds)),
   );
 
+  /// «Ovoz tugagach» rejimi ishlay oladimi (ovoz xizmati sozlangan).
+  bool get _voiceAvailable => ref.read(ttsServiceProvider).isConfigured;
+
+  /// Hozir «Ovoz tugagach» avto rejimi faolmi.
+  bool get _voiceAuto =>
+      _auto &&
+      !_autoPaused &&
+      _autoSeconds == LessonAutoPrefs.voice &&
+      _voiceAvailable;
+
   /// Keyingi o‘tishni rejalashtiradi (faqat Avto yoniq va pauzada emas).
+  /// «Ovoz tugagach» rejimida taymer yo‘q — o‘tishni ovoz oxiri boshqaradi
+  /// (ovoz xizmati bo‘lmasa — 30 soniya).
   void _scheduleAuto() {
     _autoTimer?.cancel();
     if (!_auto || _autoPaused || !mounted) return;
+    if (_autoSeconds == LessonAutoPrefs.voice) {
+      if (_voiceAvailable) return;
+      _autoTimer = Timer(const Duration(seconds: 30), _autoTick);
+      return;
+    }
     _autoTimer = Timer(Duration(seconds: _autoSeconds), _autoTick);
+  }
+
+  /// Slayd ovozda oxirigacha o‘qildi.
+  void _onListenFinished() {
+    if (!mounted) return;
+    if (_voiceAuto) {
+      _autoTick();
+      return;
+    }
+    if (_auto) return;
+    final total = _pages?.length ?? 0;
+    if (_index >= total - 1) return;
+    // Avto o‘chiq: davom ettirishni taklif qilamiz (bir bosishda yoqiladi).
+    final l = AppLocalizations.of(context);
+    final m = ScaffoldMessenger.maybeOf(context);
+    m?.hideCurrentSnackBar();
+    m?.showSnackBar(
+      SnackBar(
+        key: const Key('lesson.listenContinue'),
+        content: Text(l.lessonListenDone),
+        action: SnackBarAction(
+          label: l.lessonListenContinue,
+          onPressed: () {
+            if (!mounted) return;
+            setState(() => _autoSeconds = LessonAutoPrefs.voice);
+            _setAuto(true);
+            // Avto paneli paydo bo‘lgach (qayta chizilgandan keyin) o‘tamiz.
+            WidgetsBinding.instance.addPostFrameCallback((_) {
+              if (mounted) _go(_index + 1, total, auto: true);
+            });
+          },
+        ),
+      ),
+    );
   }
 
   void _autoTick() {
@@ -339,7 +391,11 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
                       for (final n in LessonAutoPrefs.options)
                         ChoiceChip(
                           key: Key('lesson.autoSeconds.$n'),
-                          label: Text(l.lessonAutoSeconds(n)),
+                          label: Text(
+                            n == LessonAutoPrefs.voice
+                                ? l.lessonAutoVoice
+                                : l.lessonAutoSeconds(n),
+                          ),
                           selected: _autoSeconds == n,
                           onSelected: (_) {
                             _setAutoSeconds(n);
@@ -741,6 +797,8 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
               total: pages.length,
               listenText: lessonListenText(page),
               listenLang: widget.deck.sourceLang,
+              listenAuto: _voiceAuto,
+              onListenFinished: _onListenFinished,
               onPrev: _index > 0 ? () => _go(_index - 1, pages.length) : null,
               onNext: _index < pages.length - 1
                   ? () => _go(_index + 1, pages.length)
@@ -1040,7 +1098,11 @@ class _AutoBar extends StatelessWidget {
           ),
           Expanded(
             child: Text(
-              paused ? l.lessonAutoPaused : l.lessonAutoRunning(seconds),
+              paused
+                  ? l.lessonAutoPaused
+                  : seconds == LessonAutoPrefs.voice
+                  ? l.lessonAutoVoiceRunning
+                  : l.lessonAutoRunning(seconds),
               key: const Key('lesson.autoStatus'),
               style: Theme.of(context).textTheme.bodySmall,
               overflow: TextOverflow.ellipsis,
@@ -1058,6 +1120,8 @@ class _ControlBar extends StatelessWidget {
     required this.total,
     required this.listenText,
     this.listenLang,
+    this.listenAuto = false,
+    this.onListenFinished,
     required this.onPrev,
     required this.onNext,
   });
@@ -1068,6 +1132,10 @@ class _ControlBar extends StatelessWidget {
   /// Joriy sahifaning «Tinglash» matni (bo‘sh yoki server yo‘q — tugma yo‘q).
   final String listenText;
   final String? listenLang;
+
+  /// «Ovoz tugagach» avto rejimi: har slayd o‘zi o‘qila boshlaydi.
+  final bool listenAuto;
+  final VoidCallback? onListenFinished;
   final VoidCallback? onPrev;
   final VoidCallback? onNext;
 
@@ -1093,6 +1161,8 @@ class _ControlBar extends StatelessWidget {
             // Sahifa almashsa tugma qayta yaratiladi: eski ovoz to‘xtaydi.
             ListenButton(
               key: ValueKey('lesson.listen.$index'),
+              autoStart: listenAuto,
+              onFinished: onListenFinished,
               text: listenText,
               lang: listenLang,
               // Tor ekran yoki katta shriftda — faqat belgi (sig‘sin).

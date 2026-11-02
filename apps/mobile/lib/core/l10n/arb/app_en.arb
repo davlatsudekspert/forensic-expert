@@ -17035,5 +17035,21 @@
         "type": "int"
       }
     }
+  },
+  "lessonAutoVoice": "After narration",
+  "@lessonAutoVoice": {
+    "description": "Lesson viewer: continuous listening."
+  },
+  "lessonAutoVoiceRunning": "Auto: next slide after narration",
+  "@lessonAutoVoiceRunning": {
+    "description": "Lesson viewer: continuous listening."
+  },
+  "lessonListenDone": "Slide finished",
+  "@lessonListenDone": {
+    "description": "Lesson viewer: continuous listening."
+  },
+  "lessonListenContinue": "Continue",
+  "@lessonListenContinue": {
+    "description": "Lesson viewer: continuous listening."
   }
 }

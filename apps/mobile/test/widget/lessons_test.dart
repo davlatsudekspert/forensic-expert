@@ -817,6 +817,46 @@ void main() {
       expect(svc.texts.last, 'Ikkinchi slayd.\nJadvaldan keyin.');
     });
 
+    testWidgets(
+      'ovoz tugagach: «Davom ettirish» → keyingi slaydlar o‘zi o‘qiladi',
+      (tester) async {
+        final (svc, player) = await openWithTts(tester);
+        await tester.tap(find.byKey(listen));
+        await tester.pump();
+        await tester.pump();
+        expect(svc.langs.single, 'uz');
+        player.complete.add(null);
+        await tester.pump();
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 800));
+        // Taklif dars ekranining o‘zida chiqadi.
+        expect(
+          find.descendant(
+            of: find.byType(LessonViewer),
+            matching: find.byKey(const Key('lesson.listenContinue')),
+          ),
+          findsOneWidget,
+        );
+        await tester.tap(find.text('Davom ettirish'));
+        await tester.pumpAndSettle();
+        expect(find.text('2 / 5'), findsOneWidget);
+        // Avto «Ovoz tugagach»: yangi slayd o‘zi o‘qila boshladi.
+        expect(svc.texts.last, 'Ikkinchi slayd.\nJadvaldan keyin.');
+        expect(find.byKey(const Key('lesson.autoStatus')), findsOneWidget);
+        // Shu slayd ham tugadi — o‘zi uchinchisiga o‘tadi.
+        player.complete.add(null);
+        await tester.pumpAndSettle();
+        expect(find.text('3 / 5'), findsOneWidget);
+        expect(svc.texts.length, 3);
+        // Pauza — ovoz to‘xtaydi, keyingisiga o‘tmaydi.
+        await tester.tap(find.byKey(const Key('lesson.autoToggle')));
+        await tester.pumpAndSettle();
+        player.complete.add(null);
+        await tester.pumpAndSettle();
+        expect(find.text('3 / 5'), findsOneWidget);
+      },
+    );
+
     testWidgets('adabiyotlar sahifasida tugma yo‘q', (tester) async {
       await openWithTts(tester);
       for (var i = 0; i < 4; i++) {

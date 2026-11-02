@@ -98,8 +98,12 @@ final lessonQuizAvailableProvider = Provider.autoDispose.family<bool, String>((
 class LessonAutoPrefs {
   const LessonAutoPrefs({this.auto = false, this.seconds = 30});
 
-  /// Ruxsat etilgan tezliklar (soniya).
-  static const options = <int>[15, 30, 60];
+  /// Ruxsat etilgan tezliklar (soniya). `0` — «Ovoz tugagach»: slayd
+  /// ovozda o‘qib bo‘lingach keyingisiga o‘tadi va o‘qishni davom ettiradi.
+  static const options = <int>[voice, 15, 30, 60];
+
+  /// «Ovoz tugagach» rejimi.
+  static const voice = 0;
 
   final bool auto;
   final int seconds;

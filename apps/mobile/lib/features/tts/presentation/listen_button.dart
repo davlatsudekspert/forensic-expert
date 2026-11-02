@@ -28,6 +28,8 @@ class ListenButton extends ConsumerStatefulWidget {
     this.color,
     this.labeled = false,
     this.lang,
+    this.autoStart = false,
+    this.onFinished,
   });
 
   final String text;
@@ -38,6 +40,13 @@ class ListenButton extends ConsumerStatefulWidget {
 
   /// Matn tili — ovoz shu tilning sof talaffuzida o‘qiydi.
   final String? lang;
+
+  /// `true` — vidjet paydo bo‘lishi bilan o‘zi o‘qiy boshlaydi (dars
+  /// «Ovoz tugagach» avto rejimi).
+  final bool autoStart;
+
+  /// Matn oxirigacha o‘qib bo‘linganda (pauza/xatoda chaqirilmaydi).
+  final VoidCallback? onFinished;
 
   @override
   ConsumerState<ListenButton> createState() => _ListenButtonState();
@@ -54,9 +63,44 @@ class _ListenButtonState extends ConsumerState<ListenButton> {
   int _gen = 0;
 
   @override
+  void initState() {
+    super.initState();
+    if (widget.autoStart) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (!mounted || _state != ListenState.idle) return;
+        if (widget.text.trim().isEmpty) {
+          widget.onFinished?.call();
+          return;
+        }
+        if (!ref.read(ttsServiceProvider).isConfigured) return;
+        if (!proOpen(ref, ProFeature.listen)) return;
+        unawaited(_start());
+      });
+    }
+  }
+
+  @override
   void didUpdateWidget(covariant ListenButton old) {
     super.didUpdateWidget(old);
-    if (old.text != widget.text) unawaited(_reset());
+    if (old.text != widget.text) {
+      unawaited(_reset());
+    } else if (old.autoStart && !widget.autoStart) {
+      // Avto pauza/o‘chirildi — ovoz to‘xtaydi.
+      unawaited(_reset());
+    } else if (!old.autoStart &&
+        widget.autoStart &&
+        _state == ListenState.idle) {
+      // Avto davom ettirildi — shu slayd qaytadan o‘qiladi (tugaganini
+      // qayta o‘qimaymiz).
+      unawaited(_start());
+    } else if (!old.autoStart &&
+        widget.autoStart &&
+        _state == ListenState.finished) {
+      // Avto yoqilganda bu slayd allaqachon o‘qilgan — keyingisiga.
+      WidgetsBinding.instance.addPostFrameCallback(
+        (_) => mounted ? widget.onFinished?.call() : null,
+      );
+    }
   }
 
   @override
@@ -111,6 +155,7 @@ class _ListenButtonState extends ConsumerState<ListenButton> {
       await _playPart(_gen);
     } else {
       setState(() => _state = ListenState.finished);
+      widget.onFinished?.call();
     }
   }
 
