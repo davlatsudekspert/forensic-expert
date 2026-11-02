@@ -30,6 +30,7 @@ class ListenButton extends ConsumerStatefulWidget {
     this.lang,
     this.autoStart = false,
     this.onFinished,
+    this.onStateChanged,
   });
 
   final String text;
@@ -48,12 +49,21 @@ class ListenButton extends ConsumerStatefulWidget {
   /// Matn oxirigacha o‘qib bo‘linganda (pauza/xatoda chaqirilmaydi).
   final VoidCallback? onFinished;
 
+  /// Holat o‘zgarganda (masalan, o‘qilayotgan matnni ekranda ko‘rsatish uchun).
+  final ValueChanged<ListenState>? onStateChanged;
+
   @override
   ConsumerState<ListenButton> createState() => _ListenButtonState();
 }
 
 class _ListenButtonState extends ConsumerState<ListenButton> {
   ListenState _state = ListenState.idle;
+
+  void _setListen(ListenState v) {
+    setState(() => _state = v);
+    widget.onStateChanged?.call(v);
+  }
+
   TtsPlayer? _player;
   StreamSubscription<void>? _sub;
   List<String> _paths = const [];
@@ -135,7 +145,7 @@ class _ListenButtonState extends ConsumerState<ListenButton> {
     } on Object {
       // e’tiborsiz
     }
-    if (mounted) setState(() => _state = ListenState.idle);
+    if (mounted) _setListen(ListenState.idle);
   }
 
   TtsPlayer _ensurePlayer() {
@@ -154,7 +164,7 @@ class _ListenButtonState extends ConsumerState<ListenButton> {
       _part = next;
       await _playPart(_gen);
     } else {
-      setState(() => _state = ListenState.finished);
+      _setListen(ListenState.finished);
       widget.onFinished?.call();
     }
   }
@@ -164,7 +174,7 @@ class _ListenButtonState extends ConsumerState<ListenButton> {
       await _ensurePlayer().play(_paths[_part]);
     } on Object {
       if (!mounted || gen != _gen) return;
-      setState(() => _state = ListenState.idle);
+      _setListen(ListenState.idle);
       _snack(AppLocalizations.of(context).ttsErrGeneric);
     }
   }
@@ -172,7 +182,7 @@ class _ListenButtonState extends ConsumerState<ListenButton> {
   Future<void> _start() async {
     final gen = ++_gen;
     final l = AppLocalizations.of(context);
-    setState(() => _state = ListenState.loading);
+    _setListen(ListenState.loading);
     final TtsAudio audio;
     try {
       audio = await ref
@@ -180,29 +190,29 @@ class _ListenButtonState extends ConsumerState<ListenButton> {
           .synthesize(widget.text, lang: widget.lang);
     } on TtsException catch (e) {
       if (!mounted || gen != _gen) return;
-      setState(() => _state = ListenState.idle);
+      _setListen(ListenState.idle);
       _snack(_message(l, e.failure));
       return;
     } on Object {
       if (!mounted || gen != _gen) return;
-      setState(() => _state = ListenState.idle);
+      _setListen(ListenState.idle);
       _snack(l.ttsErrGeneric);
       return;
     }
     if (!mounted || gen != _gen) return;
     if (audio.paths.isEmpty) {
-      setState(() => _state = ListenState.idle);
+      _setListen(ListenState.idle);
       _snack(l.ttsErrGeneric);
       return;
     }
     _paths = audio.paths;
     _part = 0;
-    setState(() => _state = ListenState.playing);
+    _setListen(ListenState.playing);
     await _playPart(gen);
   }
 
   Future<void> _pause() async {
-    setState(() => _state = ListenState.paused);
+    _setListen(ListenState.paused);
     try {
       await _player?.pause();
     } on Object {
@@ -211,12 +221,12 @@ class _ListenButtonState extends ConsumerState<ListenButton> {
   }
 
   Future<void> _resume() async {
-    setState(() => _state = ListenState.playing);
+    _setListen(ListenState.playing);
     try {
       await _player?.resume();
     } on Object {
       if (!mounted) return;
-      setState(() => _state = ListenState.idle);
+      _setListen(ListenState.idle);
     }
   }
 
@@ -224,7 +234,7 @@ class _ListenButtonState extends ConsumerState<ListenButton> {
     if (_paths.isEmpty) return _start();
     final gen = ++_gen;
     _part = 0;
-    setState(() => _state = ListenState.playing);
+    _setListen(ListenState.playing);
     await _playPart(gen);
   }
 

@@ -163,6 +163,14 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
   // oldingi planda va pauza bo‘lmaganda ishlaydi.
   bool _auto = false;
   bool _autoPaused = false;
+
+  /// «Tinglash» ovoz chiqaryapti — o‘qilayotgan matn ekranda ko‘rinadi.
+  bool _speaking = false;
+
+  /// Yuqoridagi «Matn» tugmasi: `null` — ovoz o‘qiyotganda o‘zi chiqadi;
+  /// `true`/`false` — foydalanuvchi o‘zi yoqdi/yopdi.
+  bool? _textPref;
+  bool get _textVisible => _textPref ?? _speaking;
   int _autoSeconds = 30;
   bool _selfNav = false;
   Timer? _autoTimer;
@@ -328,49 +336,6 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
       setState(() => _autoPaused = true);
     }
   }
-
-  Future<void> _showExplain(String text) => showModalBottomSheet<void>(
-    context: context,
-    showDragHandle: true,
-    isScrollControlled: true,
-    builder: (c) {
-      final l = AppLocalizations.of(c);
-      final t = Theme.of(c).textTheme;
-      return SafeArea(
-        child: ConstrainedBox(
-          constraints: BoxConstraints(
-            maxHeight: MediaQuery.sizeOf(c).height * 0.8,
-          ),
-          child: ListView(
-            key: const Key('lesson.explainSheet'),
-            shrinkWrap: true,
-            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
-            padding: const EdgeInsets.fromLTRB(
-              FeSpace.md,
-              0,
-              FeSpace.md,
-              FeSpace.lg,
-            ),
-            children: [
-              Semantics(
-                header: true,
-                child: Text(l.lessonExplainTitle, style: t.titleMedium),
-              ),
-              const SizedBox(height: FeSpace.xs),
-              Text(
-                l.lessonExplainNote,
-                style: t.bodySmall?.copyWith(
-                  color: FeTheme.of(c).textSecondary,
-                ),
-              ),
-              const SizedBox(height: FeSpace.sm),
-              SelectableText(text, style: t.bodyLarge),
-            ],
-          ),
-        ),
-      );
-    },
-  );
 
   Future<void> _openAutoSheet() async {
     await showModalBottomSheet<void>(
@@ -652,7 +617,12 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
     controller: _pc,
     itemCount: pages.length,
     onPageChanged: (i) {
-      setState(() => _index = i);
+      setState(() {
+        _index = i;
+        // Eski sahifa ovozi to‘xtadi; «Ovoz tugagach» rejimida yangisi o‘zi
+        // boshlanadi va panelni yana ko‘rsatadi.
+        if (!_voiceAuto) _speaking = false;
+      });
       if (_selfNav) {
         _selfNav = false;
         _scheduleAuto();
@@ -742,8 +712,10 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
             IconButton(
               key: const Key('lesson.explain'),
               tooltip: l.lessonExplainTitle,
-              icon: const Icon(Icons.record_voice_over_outlined),
-              onPressed: () => _showExplain(explain),
+              isSelected: _textVisible,
+              icon: const Icon(Icons.subtitles_outlined),
+              selectedIcon: const Icon(Icons.subtitles),
+              onPressed: () => setState(() => _textPref = !_textVisible),
             ),
           // Tor telefonda sarlavhaga joy qoladi: test tugmasi oxirgi slaydda bor.
           if (MediaQuery.sizeOf(context).width >= 420)
@@ -845,6 +817,8 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
                       ),
               ),
             ],
+            // Ovoz o‘qiyotganda — o‘qilayotgan tushuntirish matni (subtitr).
+            if (_textVisible && explain.isNotEmpty) _SpokenText(text: explain),
             if (_auto)
               _AutoBar(
                 seconds: _autoSeconds,
@@ -858,6 +832,13 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
               listenLang: widget.deck.sourceLang,
               listenAuto: _voiceAuto,
               onListenFinished: _onListenFinished,
+              onListenState: (st) {
+                final on =
+                    st == ListenState.loading ||
+                    st == ListenState.playing ||
+                    st == ListenState.paused;
+                if (on != _speaking) setState(() => _speaking = on);
+              },
               onPrev: _index > 0 ? () => _go(_index - 1, pages.length) : null,
               onNext: _index < pages.length - 1
                   ? () => _go(_index + 1, pages.length)
@@ -1173,6 +1154,52 @@ class _AutoBar extends StatelessWidget {
   }
 }
 
+class _SpokenText extends StatelessWidget {
+  const _SpokenText({required this.text});
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return ConstrainedBox(
+      key: const Key('lesson.spokenText'),
+      constraints: BoxConstraints(
+        maxHeight: MediaQuery.sizeOf(context).height * 0.32,
+      ),
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          color: c.surfaceSunken,
+          border: Border(top: BorderSide(color: c.border)),
+        ),
+        child: SingleChildScrollView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
+          padding: const EdgeInsets.fromLTRB(
+            FeSpace.md,
+            FeSpace.sm,
+            FeSpace.md,
+            FeSpace.sm,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(l.lessonExplainTitle, style: t.labelLarge),
+              Text(
+                l.lessonExplainNote,
+                style: t.bodySmall?.copyWith(color: c.textSecondary),
+              ),
+              const SizedBox(height: FeSpace.xs),
+              Text(text, style: t.bodyLarge),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class _ControlBar extends StatelessWidget {
   const _ControlBar({
     required this.index,
@@ -1181,6 +1208,7 @@ class _ControlBar extends StatelessWidget {
     this.listenLang,
     this.listenAuto = false,
     this.onListenFinished,
+    this.onListenState,
     required this.onPrev,
     required this.onNext,
   });
@@ -1195,6 +1223,7 @@ class _ControlBar extends StatelessWidget {
   /// «Ovoz tugagach» avto rejimi: har slayd o‘zi o‘qila boshlaydi.
   final bool listenAuto;
   final VoidCallback? onListenFinished;
+  final ValueChanged<ListenState>? onListenState;
   final VoidCallback? onPrev;
   final VoidCallback? onNext;
 
@@ -1222,6 +1251,7 @@ class _ControlBar extends StatelessWidget {
               key: ValueKey('lesson.listen.$index'),
               autoStart: listenAuto,
               onFinished: onListenFinished,
+              onStateChanged: onListenState,
               text: listenText,
               lang: listenLang,
               // Tor ekran yoki katta shriftda — faqat belgi (sig‘sin).

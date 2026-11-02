@@ -895,16 +895,19 @@ void main() {
       await tester.pump();
       await tester.pump();
       expect(svc.texts.single, 'Bu slaydda asosiy fikr ravon tushuntiriladi.');
-      await tester.tap(find.byKey(const Key('lesson.explain')));
-      await tester.pumpAndSettle();
-      expect(find.byKey(const Key('lesson.explainSheet')), findsOneWidget);
+      // O‘qiyotganda matn pastda ko‘rinadi; «Matn» tugmasi yopadi/ochadi.
+      expect(find.byKey(const Key('lesson.spokenText')), findsOneWidget);
       expect(
         find.text('Bu slaydda asosiy fikr ravon tushuntiriladi.'),
         findsOneWidget,
       );
+      await tester.tap(find.byKey(const Key('lesson.explain')));
+      await tester.pump();
+      expect(find.byKey(const Key('lesson.spokenText')), findsNothing);
+      await tester.tap(find.byKey(const Key('lesson.explain')));
+      await tester.pump();
+      expect(find.byKey(const Key('lesson.spokenText')), findsOneWidget);
       // Tushuntirishsiz slaydda tugma yo‘q.
-      await tester.tapAt(const Offset(10, 10));
-      await tester.pumpAndSettle();
       await tester.tap(find.byKey(const Key('lesson.next')));
       await tester.pumpAndSettle();
       expect(find.byKey(const Key('lesson.explain')), findsNothing);
