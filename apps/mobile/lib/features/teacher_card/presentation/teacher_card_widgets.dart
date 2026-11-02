@@ -164,6 +164,57 @@ class TeacherPhoto extends ConsumerWidget {
   }
 }
 
+/// «Forensic Expert asoschisi» — jimgina oltin kapsula (ingichka chiziq).
+class FounderBadge extends StatelessWidget {
+  const FounderBadge({super.key, this.compact = false});
+
+  /// Ro‘yxat qatori uchun: ixcham, bir qatorda.
+  final bool compact;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final t = Theme.of(context).textTheme;
+    const gold = Color(0xFFB8860B);
+    return Container(
+      key: const Key('founder.badge'),
+      padding: EdgeInsets.symmetric(
+        horizontal: compact ? FeSpace.xs : FeSpace.sm,
+        vertical: compact ? 2 : FeSpace.xxs,
+      ),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(999),
+        color: gold.withValues(alpha: 0.08),
+        border: Border.all(color: gold.withValues(alpha: 0.7)),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(
+            Icons.workspace_premium_outlined,
+            size: compact ? 12 : 14,
+            color: gold,
+          ),
+          const SizedBox(width: FeSpace.xxs),
+          Flexible(
+            child: Text(
+              l.catFounder,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: t.labelSmall?.copyWith(
+                color: gold,
+                fontWeight: FontWeight.w700,
+                letterSpacing: compact ? 0 : 0.4,
+                fontSize: compact ? 10.5 : null,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 /// Fon (cover) rasmi qatlami: `BoxFit.cover` + nozik qora gradient (matn va
 /// tugmalar ko‘rinishi uchun). Rasm yo‘q yoki hali yuklanmagan bo‘lsa —
 /// [fallback] (odatiy tasma). Rasm baytlari yoki Storage yo‘li bo‘yicha
@@ -427,6 +478,10 @@ class TeacherCardView extends ConsumerWidget {
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                   ),
+                  if (card.founder) ...[
+                    const SizedBox(height: FeSpace.xs),
+                    const FounderBadge(),
+                  ],
                   if (card.workplace.isNotEmpty || hasLogo) ...[
                     const SizedBox(height: FeSpace.xxs),
                     Row(

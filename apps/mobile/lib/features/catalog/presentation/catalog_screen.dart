@@ -328,6 +328,14 @@ class _EntryCard extends StatelessWidget {
                   style: t.titleSmall,
                   maxLines: 2,
                 ),
+                if (entry.founder)
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: FeSpace.xxs),
+                    child: Align(
+                      alignment: AlignmentDirectional.centerStart,
+                      child: FounderBadge(compact: true),
+                    ),
+                  ),
                 if (entry.subtitle.isNotEmpty)
                   Text(
                     entry.subtitle,
@@ -487,6 +495,10 @@ class _EntrySheetState extends State<_EntrySheet> {
                     textAlign: TextAlign.center,
                     iconSize: 22,
                   ),
+                  if (_e.founder) ...[
+                    const SizedBox(height: FeSpace.xs),
+                    const FounderBadge(),
+                  ],
                   if (_e.subtitle.isNotEmpty) ...[
                     const SizedBox(height: FeSpace.xs),
                     Row(

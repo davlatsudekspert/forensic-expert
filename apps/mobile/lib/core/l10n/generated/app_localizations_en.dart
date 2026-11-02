@@ -13128,4 +13128,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tcCoverSemantics => 'Cover image';
+
+  @override
+  String get catFounder => 'Founder of Forensic Expert';
 }

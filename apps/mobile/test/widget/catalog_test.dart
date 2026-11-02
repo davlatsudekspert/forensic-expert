@@ -33,6 +33,12 @@ void main() {
       verified: true,
     ),
     CatalogEntry(
+      id: 'x3',
+      kind: CatalogKind.expert,
+      name: 'Asoschi Ekspert',
+      founder: true,
+    ),
+    CatalogEntry(
       id: 'x2',
       kind: CatalogKind.expert,
       name: 'Tasdiqlanmagan Ekspert',
@@ -108,6 +114,40 @@ void main() {
       ),
       findsOneWidget,
     );
+  });
+
+  testWidgets(
+    'asoschi belgisi: ro‘yxatda va to‘liq ko‘rinishda, faqat asoschida',
+    (tester) async {
+      await open(tester, uid: 'me');
+      await tester.tap(find.byKey(const Key('cat.tab.expert')));
+      await tester.pumpAndSettle();
+      final l = AppLocalizations.of(
+        tester.element(find.byType(Scaffold).first),
+      );
+      expect(find.byKey(const Key('founder.badge')), findsOneWidget);
+      expect(find.text(l.catFounder), findsOneWidget);
+      expect(l.catFounder, 'Forensic Expert asoschisi');
+      await tester.tap(find.byKey(const Key('cat.item.x3')));
+      await tester.pumpAndSettle();
+      expect(
+        find.descendant(
+          of: find.byKey(const Key('cat.sheet')),
+          matching: find.byKey(const Key('founder.badge')),
+        ),
+        findsOneWidget,
+      );
+    },
+  );
+
+  test('founder: tryParse va TeacherCard.fromJson, yo‘q bo‘lsa false', () {
+    expect(
+      CatalogEntry.tryParse({'id': 'a', 'name': 'A', 'founder': true})!.founder,
+      isTrue,
+    );
+    expect(CatalogEntry.tryParse({'id': 'a', 'name': 'A'})!.founder, isFalse);
+    expect(TeacherCard.fromJson({'founder': true}).founder, isTrue);
+    expect(TeacherCard.fromJson({}).founder, isFalse);
   });
 
   testWidgets('Ustoz rejimi: faqat ustozlar, yorliqsiz', (tester) async {

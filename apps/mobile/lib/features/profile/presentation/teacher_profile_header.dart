@@ -114,6 +114,10 @@ class TeacherProfileHeader extends ConsumerWidget {
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                 ),
+                if (card != null && card.founder) ...[
+                  const SizedBox(height: FeSpace.xs),
+                  const FounderBadge(),
+                ],
                 if (card != null && card.workplace.isNotEmpty) ...[
                   const SizedBox(height: FeSpace.xxs),
                   Text(

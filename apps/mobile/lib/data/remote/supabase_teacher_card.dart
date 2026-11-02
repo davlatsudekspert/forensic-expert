@@ -248,6 +248,7 @@ class SupabaseTeacherCardService implements TeacherCardService {
         photoPath: card.photoPath,
         logoPath: card.logoPath,
         coverPath: coverPath,
+        founder: card.founder,
         socials: card.socials,
         visible: card.visible,
         hiddenByAdmin: card.hiddenByAdmin,

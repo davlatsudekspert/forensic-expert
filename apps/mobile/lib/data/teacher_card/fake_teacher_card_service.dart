@@ -59,6 +59,7 @@ class FakeTeacherCardService implements TeacherCardService {
               photoPath: c.photoPath,
               logoPath: c.logoPath,
               coverPath: c.coverPath,
+              founder: c.founder,
               socials: c.socials,
               visible: c.visible,
               hiddenByAdmin: backend.hidden.contains(uid),
@@ -122,6 +123,7 @@ class FakeTeacherCardService implements TeacherCardService {
       photoPath: photo,
       logoPath: logo,
       coverPath: cover,
+      founder: old?.founder ?? false,
       socials: draft.socials,
       visible: draft.visible,
     );
@@ -172,6 +174,7 @@ class FakeTeacherCardService implements TeacherCardService {
         photoPath: c.photoPath,
         logoPath: c.logoPath,
         coverPath: c.coverPath,
+        founder: c.founder,
         socials: c.socials,
       ),
     );

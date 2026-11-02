@@ -179,6 +179,7 @@ class TeacherCard {
     this.photoPath,
     this.logoPath,
     this.coverPath,
+    this.founder = false,
     this.socials = const {},
     this.visible = false,
     this.hiddenByAdmin = false,
@@ -198,6 +199,9 @@ class TeacherCard {
 
   /// Fon rasmi (`<uid>/cover-<uuid>.<ext>`); ixtiyoriy.
   final String? coverPath;
+
+  /// «Forensic Expert asoschisi» belgisi (faqat admin serverda qo‘yadi).
+  final bool founder;
   final Map<TeacherSocial, String> socials;
 
   /// Faqat egasining o‘z javobida ma’noli (talabaga server bermaydi).
@@ -218,6 +222,7 @@ class TeacherCard {
           j['cover_path'] is String && (j['cover_path']! as String).isNotEmpty
           ? j['cover_path']! as String
           : null,
+      founder: j['founder'] == true,
       socials: TeacherLinks.safe(
         soc is Map ? soc.cast<String, Object?>() : const {},
       ),

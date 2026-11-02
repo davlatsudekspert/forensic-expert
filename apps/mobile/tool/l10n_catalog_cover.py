@@ -42,6 +42,10 @@ k('tcCoverHint', 'Recommended cover image size.',
 k('tcCoverSemantics', 'Semantics label of the cover image.',
   'Fon rasmi', 'Фоновое изображение', 'Cover image')
 
+k('catFounder', 'Quiet gold badge for the founder of the app.',
+  'Forensic Expert asoschisi', 'Основатель Forensic Expert',
+  'Founder of Forensic Expert')
+
 OVERRIDE['catEmptyExperts'] = (
     'Hozircha katalogda mutaxassis yo‘q. Mutaxassis profilida «Mutaxassislar katalogida ko‘rsatish»ni yoqishi bilan shu yerda chiqadi.',
     'В каталоге пока нет специалистов. Они появятся здесь, как только включат «Показывать в каталоге специалистов» в профиле.',

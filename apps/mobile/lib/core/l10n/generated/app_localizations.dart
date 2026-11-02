@@ -22748,6 +22748,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Cover image'**
   String get tcCoverSemantics;
+
+  /// Quiet gold badge for the founder of the app.
+  ///
+  /// In en, this message translates to:
+  /// **'Founder of Forensic Expert'**
+  String get catFounder;
 }
 
 class _AppLocalizationsDelegate

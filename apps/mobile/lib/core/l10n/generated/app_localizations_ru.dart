@@ -13180,4 +13180,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get tcCoverSemantics => 'Фоновое изображение';
+
+  @override
+  String get catFounder => 'Основатель Forensic Expert';
 }

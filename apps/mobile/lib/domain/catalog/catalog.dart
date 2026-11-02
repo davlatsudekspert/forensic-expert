@@ -26,6 +26,7 @@ class CatalogEntry {
     this.photoPath,
     this.coverPath,
     this.verified = false,
+    this.founder = false,
     this.socials = const {},
     this.stars = 0,
     this.starred = false,
@@ -45,6 +46,9 @@ class CatalogEntry {
 
   /// Tasdiqlangan mutaxassis (server belgisi); ustozlarda `false`.
   final bool verified;
+
+  /// Asoschi belgisi (faqat admin serverda qo‘yadi).
+  final bool founder;
   final Map<TeacherSocial, String> socials;
   final int stars;
   final bool starred;
@@ -62,6 +66,7 @@ class CatalogEntry {
     photoPath: photoPath,
     coverPath: coverPath,
     verified: verified,
+    founder: founder,
     socials: socials,
     stars: stars ?? this.stars,
     starred: starred ?? this.starred,
@@ -77,6 +82,7 @@ class CatalogEntry {
     bio: bio,
     photoPath: photoPath,
     coverPath: coverPath,
+    founder: founder,
     socials: socials,
   );
 
@@ -98,6 +104,7 @@ class CatalogEntry {
       photoPath: photo.isEmpty ? null : photo,
       coverPath: cover.isEmpty ? null : cover,
       verified: j['verified'] == true,
+      founder: j['founder'] == true,
       socials: TeacherLinks.safe(
         soc is Map ? soc.cast<String, Object?>() : const {},
       ),

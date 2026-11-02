@@ -13058,4 +13058,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get tcCoverSemantics => 'Fon rasmi';
+
+  @override
+  String get catFounder => 'Forensic Expert asoschisi';
 }
