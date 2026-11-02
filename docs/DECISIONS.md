@@ -277,3 +277,6 @@ Ilovada «Sinfda test» degan joy qolmaydi: jonli test — «Guruh testi (jonli)
 
 ## 2026-10-24 — Tarjima navbati (egasi qarori)
 Pro 0.4.0 test buildidan keyin darslar va test savollari RU/EN ga tarjima qilinadi (avtomatik raqam/birlik/formula nazorati, «tekshirilmagan» belgisi), so‘ng qozoq, tojik, qirg‘iz. Ro‘yxat: `docs/ACTIVE_TASKS.md` «Navbatdagi ishlar».
+
+## 2026-11-02 — 6-kurs davolash: to‘liq 7 mavzulik reja (egasi so‘rovi)
+Egasi yuborgan 6-kurs davolash rejasi (7 mavzu, 18+18=36 soat) bo‘yicha: «Darslar»da 6-kurs uchun yashirilgan 3 takror mavzu ochildi (`6-kurs-davolash-02/04/10` → slaydlar `4-kurs-davolash-14/16/19` bilan umumiy; «bir xil bo‘lsa 6-kursga ham qo‘y»). Zaxira: `public.lesson_topics_backup_20261102`. Guruh testi: `6-kurs-davolash-10` («Tibbiy yordam ko‘rsatish nuqsonlari») — `4-kurs-davolash-19` ning 60 savoli (uz/ru/en) nusxalandi, ilova bankiga qo‘shildi (build 46). `tools/class_quiz/import_quiz_bank.py` bu mavzuni bilmaydi — qayta generatsiyada qo‘lda qo‘shish kerak. Ma’ruzalar (02/04) uchun test savollari yo‘q.
