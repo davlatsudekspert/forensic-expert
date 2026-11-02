@@ -280,3 +280,9 @@ Pro 0.4.0 test buildidan keyin darslar va test savollari RU/EN ga tarjima qilina
 
 ## 2026-11-02 — 6-kurs davolash: to‘liq 7 mavzulik reja (egasi so‘rovi)
 Egasi yuborgan 6-kurs davolash rejasi (7 mavzu, 18+18=36 soat) bo‘yicha: «Darslar»da 6-kurs uchun yashirilgan 3 takror mavzu ochildi (`6-kurs-davolash-02/04/10` → slaydlar `4-kurs-davolash-14/16/19` bilan umumiy; «bir xil bo‘lsa 6-kursga ham qo‘y»). Zaxira: `public.lesson_topics_backup_20261102`. Guruh testi: `6-kurs-davolash-10` («Tibbiy yordam ko‘rsatish nuqsonlari») — `4-kurs-davolash-19` ning 60 savoli (uz/ru/en) nusxalandi, ilova bankiga qo‘shildi (build 46). `tools/class_quiz/import_quiz_bank.py` bu mavzuni bilmaydi — qayta generatsiyada qo‘lda qo‘shish kerak. Ma’ruzalar (02/04) uchun test savollari yo‘q.
+
+## 2026-11-02 — Ustoz profili boshi, toifa, reja belgisi; admin «O‘tkazilgan testlar» (build 47)
+- Egasi namunasi (NFC profil): ustozda Profil boshida katta dumaloq rasm, ism, ish joyi, **toifa** (Oliy/Birinchi/Ikkinchi/Toifasiz — `teacher_cards.category`), qisqa ma’lumot, tarmoqlar, «Profilni tahrirlash». Alohida «Ustoz kartam» qatori olib tashlandi (bosh qismning o‘zi).
+- **Pro belgisi:** egasi «pro so‘zi ham tursin» dedi — ustozda faol reja bo‘lsa (masalan admin bergan «Ustoz Pro») profil boshida reja nomi belgisi ko‘rsatiladi. Bu 2026-10-17/24 dagi «Pro belgisi qo‘yilmaydi» qarorini shu belgi uchun o‘zgartiradi; to‘lov tugmasi/paywall qo‘shilmagan.
+- Admin: `admin_class_tests` / `admin_class_test_detail` (faqat identity_admin, detal ko‘rish audit jurnaliga `CLASS_TEST_VIEW`). Migratsiya `20261102070000_teacher_category_admin_tests.sql` prod’ga qo‘llandi; `teacher_card_upsert` ga `p_category` (NULL — eski qiymat saqlanadi).
+- Keyingi so‘rov (rejasi alohida): ustozlar bir-birini ko‘rishi va «klass» bosishi; hisobga kirgan talabalar ham ko‘rishi.
