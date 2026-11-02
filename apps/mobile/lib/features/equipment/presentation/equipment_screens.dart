@@ -14,6 +14,7 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/equipment/equipment.dart';
 import '../../../domain/guidelines/guideline_models.dart';
+import 'equipment_diagrams.dart';
 
 /// «Asbob-uskunalar»: Laboratoriya / Morg bo‘limlari, illyustratsiyali
 /// kartalar. Boshlang‘ich bo‘lim — chaqiruvchi (ish stoli) ko‘rinishidan.
@@ -421,6 +422,7 @@ class EquipmentDetailScreen extends ConsumerWidget {
                     ),
                   ),
                 ],
+                ?EquipmentDiagrams.forItem(item.id),
                 if (item.findings.isNotEmpty) ...[
                   FeSectionHeader(l.equipFindings),
                   bullets(item.findings.map(_u).toList()),

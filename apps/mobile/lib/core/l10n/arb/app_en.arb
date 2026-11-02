@@ -16685,5 +16685,41 @@
   "textSizeXLarge": "Extra large",
   "@textSizeXLarge": {
     "description": "Profile: in-app text size setting."
+  },
+  "cohbSpecTitle": "Carbon monoxide (COHb): absorption peaks",
+  "@cohbSpecTitle": {
+    "description": "Equipment page: COHb spectrum diagram / GC-MS peak reading."
+  },
+  "cohbSpecSemantics": "Diagram: COHb has two peaks at 541 and 571 nm, deoxyhaemoglobin one peak at 557 nm; isosbestic points 550, 565 and 579 nm",
+  "@cohbSpecSemantics": {
+    "description": "Equipment page: COHb spectrum diagram / GC-MS peak reading."
+  },
+  "cohbSpecAxis": "nm",
+  "@cohbSpecAxis": {
+    "description": "Equipment page: COHb spectrum diagram / GC-MS peak reading."
+  },
+  "cohbSpecIso": "isosbestic points",
+  "@cohbSpecIso": {
+    "description": "Equipment page: COHb spectrum diagram / GC-MS peak reading."
+  },
+  "cohbSpecCohb": "COHb (carboxyhaemoglobin) — two maxima at 540–541 and 570–571 nm",
+  "@cohbSpecCohb": {
+    "description": "Equipment page: COHb spectrum diagram / GC-MS peak reading."
+  },
+  "cohbSpecHb": "Hb (deoxyhaemoglobin) — one maximum at 557 nm",
+  "@cohbSpecHb": {
+    "description": "Equipment page: COHb spectrum diagram / GC-MS peak reading."
+  },
+  "cohbSpecIsoLegend": "Isosbestic points — 550, 565, 579 nm (550 nm is used in the calculation)",
+  "@cohbSpecIsoLegend": {
+    "description": "Equipment page: COHb spectrum diagram / GC-MS peak reading."
+  },
+  "cohbSpecNote": "The oxyhaemoglobin spectrum is very similar to that of COHb (peaks differ by 1–2 nm). Sodium dithionite is therefore added: it reduces oxyhaemoglobin to deoxyhaemoglobin while COHb is unchanged — if two peaks remain, COHb is present. Curve shapes are schematic, not a measurement.",
+  "@cohbSpecNote": {
+    "description": "Equipment page: COHb spectrum diagram / GC-MS peak reading."
+  },
+  "gcmsPeaksTitle": "Reading the peaks",
+  "@gcmsPeaksTitle": {
+    "description": "Equipment page: COHb spectrum diagram / GC-MS peak reading."
   }
 }

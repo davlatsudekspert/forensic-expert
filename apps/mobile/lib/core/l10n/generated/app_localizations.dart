@@ -22118,6 +22118,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Extra large'**
   String get textSizeXLarge;
+
+  /// Equipment page: COHb spectrum diagram / GC-MS peak reading.
+  ///
+  /// In en, this message translates to:
+  /// **'Carbon monoxide (COHb): absorption peaks'**
+  String get cohbSpecTitle;
+
+  /// Equipment page: COHb spectrum diagram / GC-MS peak reading.
+  ///
+  /// In en, this message translates to:
+  /// **'Diagram: COHb has two peaks at 541 and 571 nm, deoxyhaemoglobin one peak at 557 nm; isosbestic points 550, 565 and 579 nm'**
+  String get cohbSpecSemantics;
+
+  /// Equipment page: COHb spectrum diagram / GC-MS peak reading.
+  ///
+  /// In en, this message translates to:
+  /// **'nm'**
+  String get cohbSpecAxis;
+
+  /// Equipment page: COHb spectrum diagram / GC-MS peak reading.
+  ///
+  /// In en, this message translates to:
+  /// **'isosbestic points'**
+  String get cohbSpecIso;
+
+  /// Equipment page: COHb spectrum diagram / GC-MS peak reading.
+  ///
+  /// In en, this message translates to:
+  /// **'COHb (carboxyhaemoglobin) — two maxima at 540–541 and 570–571 nm'**
+  String get cohbSpecCohb;
+
+  /// Equipment page: COHb spectrum diagram / GC-MS peak reading.
+  ///
+  /// In en, this message translates to:
+  /// **'Hb (deoxyhaemoglobin) — one maximum at 557 nm'**
+  String get cohbSpecHb;
+
+  /// Equipment page: COHb spectrum diagram / GC-MS peak reading.
+  ///
+  /// In en, this message translates to:
+  /// **'Isosbestic points — 550, 565, 579 nm (550 nm is used in the calculation)'**
+  String get cohbSpecIsoLegend;
+
+  /// Equipment page: COHb spectrum diagram / GC-MS peak reading.
+  ///
+  /// In en, this message translates to:
+  /// **'The oxyhaemoglobin spectrum is very similar to that of COHb (peaks differ by 1–2 nm). Sodium dithionite is therefore added: it reduces oxyhaemoglobin to deoxyhaemoglobin while COHb is unchanged — if two peaks remain, COHb is present. Curve shapes are schematic, not a measurement.'**
+  String get cohbSpecNote;
+
+  /// Equipment page: COHb spectrum diagram / GC-MS peak reading.
+  ///
+  /// In en, this message translates to:
+  /// **'Reading the peaks'**
+  String get gcmsPeaksTitle;
 }
 
 class _AppLocalizationsDelegate

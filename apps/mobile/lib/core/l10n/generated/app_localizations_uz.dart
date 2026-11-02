@@ -12686,4 +12686,35 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get textSizeXLarge => 'Juda katta';
+
+  @override
+  String get cohbSpecTitle => 'Is gazi (COHb): yutilish cho‘qqilari';
+
+  @override
+  String get cohbSpecSemantics =>
+      'Sxema: COHb 541 va 571 nm da ikki cho‘qqi, deoksigemoglobin 557 nm da bitta cho‘qqi; izobestik nuqtalar 550, 565 va 579 nm';
+
+  @override
+  String get cohbSpecAxis => 'nm';
+
+  @override
+  String get cohbSpecIso => 'izobestik nuqtalar';
+
+  @override
+  String get cohbSpecCohb =>
+      'COHb (karboksigemoglobin) — 540–541 va 570–571 nm da ikki maksimum';
+
+  @override
+  String get cohbSpecHb => 'Hb (deoksigemoglobin) — 557 nm da bitta maksimum';
+
+  @override
+  String get cohbSpecIsoLegend =>
+      'Izobestik nuqtalar — 550, 565, 579 nm (hisobda 550 nm ishlatiladi)';
+
+  @override
+  String get cohbSpecNote =>
+      'Oksigemoglobin spektri COHbnikiga juda o‘xshaydi (cho‘qqilar 1–2 nm farq qiladi). Shuning uchun natriy ditionit qo‘shiladi: u oksigemoglobinni deoksigemoglobinga aylantiradi, COHb esa o‘zgarmaydi — ikki cho‘qqi saqlansa, COHb bor. Egri chiziqlar shakli — sxema, o‘lchov natijasi emas.';
+
+  @override
+  String get gcmsPeaksTitle => 'Cho‘qqilarni o‘qish';
 }

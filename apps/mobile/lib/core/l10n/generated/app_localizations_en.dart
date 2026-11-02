@@ -12760,4 +12760,35 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get textSizeXLarge => 'Extra large';
+
+  @override
+  String get cohbSpecTitle => 'Carbon monoxide (COHb): absorption peaks';
+
+  @override
+  String get cohbSpecSemantics =>
+      'Diagram: COHb has two peaks at 541 and 571 nm, deoxyhaemoglobin one peak at 557 nm; isosbestic points 550, 565 and 579 nm';
+
+  @override
+  String get cohbSpecAxis => 'nm';
+
+  @override
+  String get cohbSpecIso => 'isosbestic points';
+
+  @override
+  String get cohbSpecCohb =>
+      'COHb (carboxyhaemoglobin) — two maxima at 540–541 and 570–571 nm';
+
+  @override
+  String get cohbSpecHb => 'Hb (deoxyhaemoglobin) — one maximum at 557 nm';
+
+  @override
+  String get cohbSpecIsoLegend =>
+      'Isosbestic points — 550, 565, 579 nm (550 nm is used in the calculation)';
+
+  @override
+  String get cohbSpecNote =>
+      'The oxyhaemoglobin spectrum is very similar to that of COHb (peaks differ by 1–2 nm). Sodium dithionite is therefore added: it reduces oxyhaemoglobin to deoxyhaemoglobin while COHb is unchanged — if two peaks remain, COHb is present. Curve shapes are schematic, not a measurement.';
+
+  @override
+  String get gcmsPeaksTitle => 'Reading the peaks';
 }

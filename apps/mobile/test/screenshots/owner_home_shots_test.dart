@@ -10,6 +10,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:forensic_expert/app/dna.dart';
+import 'package:forensic_expert/app/equipment.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
 
 import '../helpers/pump_app.dart';
@@ -47,7 +48,6 @@ Future<void> _loadFonts() async {
   ]);
 }
 
-
 void main() {
   setUpAll(_loadFonts);
   final dir = Platform.environment['OWNER_SHOT_DIR'] ?? '/dev/shm/owner42c';
@@ -70,24 +70,37 @@ void main() {
   }
 
   final dna = File('assets/content/dna/dna_v1.json').readAsStringSync();
+  final equip = File('assets/content/equipment/equipment_v1.json')
+      .readAsStringSync();
   final cases = <(String, UserMode, String, double)>[
     ('1_mutaxassis_asosiy', UserMode.professional, '/home', 1.0),
     ('2_talaba_asosiy', UserMode.student, '/home', 1.0),
     ('3_profil_shrift', UserMode.professional, '/profile', 1.0),
     ('4_asosiy_juda_katta_shrift', UserMode.professional, '/home', 1.3),
+    (
+      '5_spektrofotometr',
+      UserMode.professional,
+      '/home/equipment/item/uv_vis',
+      1.0,
+    ),
+    ('6_gcms', UserMode.professional, '/home/equipment/item/gc_ms', 1.0),
   ];
   for (final (name, mode, loc, scale) in cases) {
     testWidgets(name, (tester) async {
       await pumpApp(
         tester,
-        settings: completedSettings(lang: 'uz', mode: mode).copyWith(
-          textScale: scale,
-        ),
-        size: const Size(390, 2600),
+        settings: completedSettings(
+          lang: 'uz',
+          mode: mode,
+        ).copyWith(textScale: scale),
+        size: const Size(390, 5200),
         pixelRatio: 1,
         initialLocation: loc,
         proEnabled: false,
-        overrides: [dnaLoaderProvider.overrideWithValue(() async => dna)],
+        overrides: [
+          dnaLoaderProvider.overrideWithValue(() async => dna),
+          equipmentLoaderProvider.overrideWithValue(() async => equip),
+        ],
       );
       await tester.pumpAndSettle();
       await tester.runAsync(() async {

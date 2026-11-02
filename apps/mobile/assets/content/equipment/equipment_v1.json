@@ -44,7 +44,7 @@
     {
      "author": "Baizoldanov T. (Байзолданов Т.)",
      "title": "Токсикологическая химия: учебник, 3-qism. Almaty: Evero, 2021",
-     "page": "15-bob, 223-bet (COHb ni aniqlash usullari)"
+     "page": "15-bob, 223-bet (COHb ni aniqlash usullari); 15-bob, 228–231-betlar (COHbni spektrofotometrik aniqlash: maksimumlar, izobestik nuqtalar, ditionit, hisoblash, qonni O2 va CO bilan to‘yintirish)"
     },
     {
      "author": "Tabian D., Bulgaru Iliescu D., Iov T., Barna B., Toma S.I., Drochioiu G.",
@@ -78,6 +78,17 @@
      "doi": "10.1016/s0379-0738(01)00465-0",
      "pmid": "11516900"
     }
+   ],
+   "steps": [
+    "Qonda COHbni aniqlash (Baizoldanov tartibi). Avval apparatni nolga qo‘yish: solishtiruvchi eritma — 0,1 % ammiak eritmasi, kyuveta qalinligi 1 sm, spektr 500–600 nm oralig‘ida yoziladi. Kyuvetalar toza bo‘lishi, qo‘lqop yoki barmoqqopda ishlash kerak: qo‘ldagi ter-yog‘ izlari optik zichlikni 0,009 ga oshirishi mumkin (229-bet).",
+    "Qon eritmasi: tekshiriladigan qonning 0,1 % ammiakdagi 0,5 % eritmasi tayyorlanadi va burmali filtrdan o‘tkaziladi. Optik zichlik 550 nm da kamida 0,5, 540 nm dagi maksimumda 0,9–1,0 dan oshmasligi kerak; 550 nm da 0,5 dan kam bo‘lsa, eritmaga bir necha tomchi qon qo‘shiladi (228–229-betlar).",
+    "Birinchi o‘lchash: qon eritmasining yutilish spektri 500–600 nm da yoziladi. Xatoni kamaytirish uchun optik zichliklar 0,2–0,9 oralig‘ida bo‘lgani ma’qul (229-bet).",
+    "Ditionit bilan ikkinchi o‘lchash: o‘lchov va solishtiruvchi kyuvetalarga 4 mg dan natriy ditionit qo‘shilib, ehtiyotkorlik bilan aralashtiriladi va spektr qayta yoziladi. Ditionit oksigemoglobin va metgemoglobinni deoksigemoglobingacha qaytaradi, COHb esa u bilan reaksiyaga kirishmaydi (229-bet).",
+    "Baholash: ditionitdan keyin ikki maksimum (540–541 va 570–571 nm) saqlanib qolsa, namunada COHb borligini ko‘rsatadi; deoksigemoglobinda 557 nm da bitta maksimum bo‘ladi (228–229-betlar).",
+    "Hisoblash: %COHb = (D1 − D2·K1)·100 / (D2·K2), bu yerda D1 — ditionitdan keyin 540 nm dagi, D2 — 550 nm (izobestik nuqta) dagi optik zichlik; manbada K1 = 0,77, K2 = 0,37. Koeffitsiyentlar 10 ta namunaviy aniqlash bo‘yicha topilgan va kamida yiliga bir marta tekshiriladi (229–231-betlar).",
+    "Koeffitsiyentlarni topish uchun qonni to‘yintirish — kislorod bilan: qon eritmasidan 10 daqiqa kislorod o‘tkaziladi; bunda qon metgemoglobin va qoldiq COHbdan tozalanadi (230-bet).",
+    "Qonni is gazi (CO) bilan to‘yintirish: kolbaga 50 ml konsentrlangan sulfat kislota solinadi, tomchilatgich voronkadan 10 ml chumoli kislota tomchilab qo‘shiladi va CO ajraladi. Gaz 4 ta Drexsel idishidan o‘tadi: 1-sida 10 % natriy gidroksid, 2- va 3-sida distillangan suv, 4-sida kislorod bilan to‘yintirilgan qon eritmasi. CO 15 daqiqa o‘tkaziladi; 5 daqiqadan keyin qonli idishga 5–7 mg natriy ditionit qo‘shib chayqatiladi, so‘ng yana 5 daqiqa CO o‘tkaziladi. To‘yingan eritma tiniq bo‘lishi kerak (230–231-betlar).",
+    "Xavfsizlik: CO juda zaharli — uni olish va qonni to‘yintirish faqat yaxshi tortadigan mo‘rili shkafda bajariladi, gazni nafasga olmaslik kerak (231-bet)."
    ]
   },
   {

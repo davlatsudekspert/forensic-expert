@@ -12806,4 +12806,35 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get textSizeXLarge => 'Очень крупный';
+
+  @override
+  String get cohbSpecTitle => 'Угарный газ (COHb): максимумы поглощения';
+
+  @override
+  String get cohbSpecSemantics =>
+      'Схема: COHb — два максимума при 541 и 571 нм, дезоксигемоглобин — один при 557 нм; изобестические точки 550, 565 и 579 нм';
+
+  @override
+  String get cohbSpecAxis => 'нм';
+
+  @override
+  String get cohbSpecIso => 'изобестические точки';
+
+  @override
+  String get cohbSpecCohb =>
+      'COHb (карбоксигемоглобин) — два максимума при 540–541 и 570–571 нм';
+
+  @override
+  String get cohbSpecHb => 'Hb (дезоксигемоглобин) — один максимум при 557 нм';
+
+  @override
+  String get cohbSpecIsoLegend =>
+      'Изобестические точки — 550, 565, 579 нм (в расчёте используется 550 нм)';
+
+  @override
+  String get cohbSpecNote =>
+      'Спектр оксигемоглобина очень похож на спектр COHb (максимумы отличаются на 1–2 нм). Поэтому добавляют дитионит натрия: он восстанавливает оксигемоглобин до дезоксигемоглобина, а COHb не меняется — если два максимума сохраняются, COHb присутствует. Форма кривых — схема, а не результат измерения.';
+
+  @override
+  String get gcmsPeaksTitle => 'Чтение пиков';
 }
