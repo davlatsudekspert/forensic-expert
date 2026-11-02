@@ -101,7 +101,8 @@ Deno.serve(async (req) => {
   const style = cleanText(body?.style ?? "", MAX_STYLE_CHARS);
   const voice = /^[A-Za-z0-9_\-]{2,64}$/.test(body?.voice ?? "") ? body.voice : VOICE;
   const lite = body?.quality === "lite";
-  const models = lite ? [MODEL_LITE, MODEL, FALLBACK] : [MODEL, FALLBACK];
+  // Each model has its own Gemini quota: when one is exhausted, the next answers.
+  const models = lite ? [MODEL_LITE, MODEL, FALLBACK] : [MODEL, FALLBACK, MODEL_LITE];
 
   const admin = createClient(url, Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!);
   const path = `v1/${await cacheKey(models[0], voice, style, text)}.wav`;
@@ -114,10 +115,11 @@ Deno.serve(async (req) => {
     .eq("user_id", u.user.id).gte("created_at", since);
   if (countError) return json({ error: "server" }, 500);
   if ((count ?? 0) >= DAILY_LIMIT) return json({ error: "too_many_requests" }, 429);
-  await admin.from("tts_usage").insert({ user_id: u.user.id, chars: text.length });
 
   const res = await synthesize(key, models, voice, style, text);
   if (!res.ok) return json({ error: res.error }, res.status === 404 ? 502 : res.status);
+  // Only a successful generation counts toward the user's daily limit.
+  await admin.from("tts_usage").insert({ user_id: u.user.id, chars: text.length });
 
   // Best effort: a failed upload must not lose the audio already generated.
   await admin.storage.from(BUCKET).upload(path, res.wav, {

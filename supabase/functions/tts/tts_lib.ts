@@ -169,8 +169,8 @@ export type Fail = { ok: false; status: number; error: string };
 export type ChunkResult = { ok: true; pcm: Uint8Array } | Fail;
 
 /** One chunk with retry: 429 / 5xx / network → exponential backoff, at most
- *  [RETRIES] attempts. 404 (unknown model) is returned at once so the caller
- *  can fall back to the next model. */
+ *  [RETRIES] attempts. 404 (unknown model) is returned at once; the caller
+ *  falls back to the next model on 404 and on a persistent 429. */
 export async function synthChunk(
   key: string,
   model: string,
@@ -234,7 +234,9 @@ export async function synthesize(
     }
     if (!modelFail) return { ok: true, wav: wavOf(concat(pcm)), model };
     fail = modelFail;
-    if (modelFail.status !== 404) break; // only an unknown model falls back
+    // An unknown model or an exhausted quota (each model has its own quota)
+    // falls back to the next model; other errors stop here.
+    if (modelFail.status !== 404 && modelFail.status !== 429) break;
   }
   return fail;
 }

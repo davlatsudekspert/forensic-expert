@@ -98,12 +98,33 @@ Deno.test("429 retries with backoff, 404 falls back to next model", async () => 
   if (r.ok) assertEquals(r.model, "old");
 });
 
-Deno.test("persistent 429 gives up after 3 attempts", async () => {
+Deno.test("persistent 429 retries 3 times, then falls back to next model", async () => {
   const calls: string[] = [];
   const r = await synthesize("k", ["m", "n"], "Kore", "", "Salom.", deps([
     () => new Response("", { status: 429 }),
   ], calls));
   assertEquals(r.ok, false);
   if (!r.ok) assertEquals(r.status, 429);
-  assertEquals(calls.length, 3); // no fallback on quota
+  assertEquals(calls, ["m", "m", "m", "n", "n", "n"]); // each model: own quota
+});
+
+Deno.test("429 on the first model, second model answers", async () => {
+  const calls: string[] = [];
+  const r = await synthesize("k", ["m", "n"], "Kore", "", "Salom.", deps([
+    () => new Response("", { status: 429 }),
+    () => new Response("", { status: 429 }),
+    () => new Response("", { status: 429 }),
+    () => okBody(new Uint8Array([7])),
+  ], calls));
+  assert(r.ok);
+  if (r.ok) assertEquals(r.model, "n");
+});
+
+Deno.test("other 4xx does not fall back", async () => {
+  const calls: string[] = [];
+  const r = await synthesize("k", ["m", "n"], "Kore", "", "Salom.", deps([
+    () => new Response("", { status: 400 }),
+  ], calls));
+  assertEquals(r.ok, false);
+  assertEquals(calls, ["m"]);
 });
