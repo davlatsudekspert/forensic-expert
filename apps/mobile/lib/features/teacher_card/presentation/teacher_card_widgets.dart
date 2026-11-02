@@ -190,15 +190,14 @@ class FounderBadge extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(
-            Icons.workspace_premium_outlined,
-            size: compact ? 12 : 14,
-            color: gold,
-          ),
+          Icon(Icons.star_rounded, size: compact ? 12 : 14, color: gold),
           const SizedBox(width: FeSpace.xxs),
           Flexible(
+            // Ko‘rinadigan matn — ilova nomi; to‘liq ma’nosi ekran o‘quvchi
+            // uchun Semantics’da (egasi, 2026-11-02).
             child: Text(
-              l.catFounder,
+              l.appTitle,
+              semanticsLabel: l.catFounder,
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               style: t.labelSmall?.copyWith(

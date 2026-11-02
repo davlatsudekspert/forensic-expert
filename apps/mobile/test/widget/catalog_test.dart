@@ -126,7 +126,14 @@ void main() {
         tester.element(find.byType(Scaffold).first),
       );
       expect(find.byKey(const Key('founder.badge')), findsOneWidget);
-      expect(find.text(l.catFounder), findsOneWidget);
+      // Ko‘rinadigan matn — ilova nomi + yulduzcha; ma’nosi Semantics’da.
+      expect(
+        find.descendant(
+          of: find.byKey(const Key('founder.badge')),
+          matching: find.text(l.appTitle),
+        ),
+        findsOneWidget,
+      );
       expect(l.catFounder, 'Forensic Expert asoschisi');
       await tester.tap(find.byKey(const Key('cat.item.x3')));
       await tester.pumpAndSettle();
