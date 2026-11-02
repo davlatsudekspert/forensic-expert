@@ -163,6 +163,7 @@ class _CatalogList extends ConsumerWidget {
           ],
         ),
       AsyncData(:final value) when value.ok => ListView(
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
         children: [
           FeContentFrame(
             child: FeEmptyState(
@@ -178,6 +179,7 @@ class _CatalogList extends ConsumerWidget {
         ],
       ),
       AsyncData() || AsyncError() => ListView(
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
         children: [
           FeContentFrame(
             child: FeEmptyState(
@@ -340,6 +342,7 @@ class _EntrySheetState extends State<_EntrySheet> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: SingleChildScrollView(
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
         padding: const EdgeInsets.fromLTRB(
           FeSpace.md,
           0,

@@ -2886,7 +2886,7 @@
   "@disciplineModules": {
     "description": "Section header."
   },
-  "disciplineTopics": "Planned topic structure",
+  "disciplineTopics": "Topic structure",
   "@disciplineTopics": {
     "description": "Section header."
   },
@@ -14135,7 +14135,7 @@
   "@homeInstrumentsBody": {
     "description": "Home tile body: instrument course contents."
   },
-  "lessonsOpenNote": "You see the open courses. Lecture decks for teaching open with the teacher role.",
+  "lessonsOpenNote": "All topics are open: read, listen and take the self-test at the end of each topic.",
   "@lessonsOpenNote": {
     "description": "Lessons list note for a signed-in user without the teacher role."
   },
@@ -16155,15 +16155,15 @@
   "@workbenchLodBody": {
     "description": "Subtitle: LOD/LOQ and validation."
   },
-  "studentDeskTitle": "My study desk",
+  "studentDeskTitle": "Student panel",
   "@studentDeskTitle": {
     "description": "Student Home section title: the student's study desk."
   },
-  "deskLessonsTitle": "Lessons and books",
+  "deskLessonsTitle": "All topics",
   "@deskLessonsTitle": {
     "description": "Study desk card: lessons and books."
   },
-  "deskLessonsBody": "Forensic medicine, toxicology, biochemistry",
+  "deskLessonsBody": "By faculty and course: read, listen, test",
   "@deskLessonsBody": {
     "description": "Study desk card subtitle: lessons."
   },
@@ -16996,6 +16996,40 @@
   "catStarsCount": "{n} stars",
   "@catStarsCount": {
     "description": "Catalogue star count.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "disciplinePlannedMore": "Planned topics ({n})",
+  "@disciplinePlannedMore": {
+    "description": "Discipline page (student).",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "lessonsAllCourses": "All",
+  "lessonKindLecture": "Lecture",
+  "lessonKindPractice": "Practical class",
+  "@lessonsAllCourses": {
+    "description": "Student panel / lessons list."
+  },
+  "@lessonKindLecture": {
+    "description": "Student panel / lessons list."
+  },
+  "@lessonKindPractice": {
+    "description": "Student panel / lessons list."
+  },
+  "disciplineLessonsTitleStudent": "Lessons: read, listen and test",
+  "@disciplineLessonsTitleStudent": {
+    "description": "Student panel / lessons list."
+  },
+  "disciplineLessonsBodyStudent": "{n} lessons. Open a lesson to read and listen, then take the self-test at the end.",
+  "@disciplineLessonsBodyStudent": {
+    "description": "Discipline page (student).",
     "placeholders": {
       "n": {
         "type": "int"

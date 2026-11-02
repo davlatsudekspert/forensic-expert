@@ -46,6 +46,9 @@ class LessonGroup {
   final List<LessonSummary> items;
 }
 
+/// Mashg‘ulot turi (sarlavha boshidagi «Ma’ruza:» / «Amaliy mashg‘ulot:»).
+enum LessonKind { lecture, practice }
+
 abstract final class LessonGrouping {
   /// Serverdan kelgan tartibni saqlab, kurs bo‘yicha guruhlaydi.
   static List<LessonGroup> group(Iterable<LessonSummary> all) {
@@ -58,6 +61,62 @@ abstract final class LessonGrouping {
       })()).add(s);
     }
     return [for (final c in order) LessonGroup(c, map[c]!)];
+  }
+
+  /// O‘quv rejasidan ko‘chgan uzun sarlavhani ajratadi: mashg‘ulot turi
+  /// («Ma’ruza»/«Amaliy»), asosiy nom va «1. … 2. …» bandlari (ro‘yxatda
+  /// bandlar mayda, alohida qatorda). So‘zlar o‘zgartirilmaydi — faqat
+  /// bo‘linadi va yopishgan bandlar orasiga bo‘sh joy qo‘yiladi.
+  static ({LessonKind? kind, String main, String points}) titleParts(
+    String title,
+  ) {
+    var t = title.trim();
+    LessonKind? kind;
+    final pre = RegExp(
+      r'^(?:№\s*\d+\s*[.)]?\s*)?'
+      r'(Ma[’ʼ‘`'
+      "'"
+      r']?ruza|Amaliy\s+mashg[’ʻʼ‘`'
+      "'"
+      r']?ulot|Seminar)\s*[:.]\s*',
+      caseSensitive: false,
+    ).firstMatch(t);
+    if (pre != null) {
+      kind = pre[1]!.toLowerCase().startsWith('ma')
+          ? LessonKind.lecture
+          : LessonKind.practice;
+      t = t.substring(pre.end).trim();
+    }
+    t = t.replaceAll(RegExp(r'^[“”"«»]+|[“”"«»]+$'), '').trim();
+    String fix(String x) => x
+        .replaceAllMapped(
+          RegExp(r'(?<=[^\s\d])(\d{1,2}\s*[.)])(?=\s*\S)'),
+          (m) => ' ${m[1]}',
+        )
+        .replaceAll(RegExp(r'\s{2,}'), ' ')
+        .trim();
+    String trimEnd(String x) =>
+        x.trim().replaceFirst(RegExp(r'[\s.:;,]+$'), '');
+    final m = RegExp(r'(?:^|[\s.:;,])1\s*[.)]\s*(?=\S)').firstMatch(t);
+    if (m != null && m.start >= 8) {
+      final main = trimEnd(t.substring(0, m.start));
+      final points = fix(
+        t.substring(m.start).trim().replaceFirst(RegExp(r'^[.:;,]\s*'), ''),
+      );
+      return (kind: kind, main: main, points: points);
+    }
+    // Bandsiz uzun matn: birinchi gap — nom, qolgani — mayda qatorda.
+    if (t.length > 90) {
+      final dot = RegExp(r'[.:]\s+(?=\S)').firstMatch(t);
+      if (dot != null && dot.start >= 15 && dot.start < t.length - 10) {
+        return (
+          kind: kind,
+          main: trimEnd(t.substring(0, dot.start)),
+          points: fix(t.substring(dot.end)),
+        );
+      }
+    }
+    return (kind: kind, main: trimEnd(t).isEmpty ? t : trimEnd(t), points: '');
   }
 
   /// Tezkor mahalliy filtr (sarlavha va kurs bo‘yicha, registrsiz).

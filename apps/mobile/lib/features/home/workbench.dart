@@ -270,7 +270,7 @@ abstract final class Workbench {
     id: WorkbenchItemId.deskLessons,
     icon: Icons.menu_book_outlined,
     hue: FeHues.ochre,
-    route: Routes.learn,
+    route: Routes.lessons,
     title: (l) => l.deskLessonsTitle,
     body: (l) => l.deskLessonsBody,
   );

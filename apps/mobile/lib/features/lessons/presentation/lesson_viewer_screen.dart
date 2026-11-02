@@ -740,6 +740,7 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
               index: _index,
               total: pages.length,
               listenText: lessonListenText(page),
+              listenLang: widget.deck.sourceLang,
               onPrev: _index > 0 ? () => _go(_index - 1, pages.length) : null,
               onNext: _index < pages.length - 1
                   ? () => _go(_index + 1, pages.length)
@@ -1056,6 +1057,7 @@ class _ControlBar extends StatelessWidget {
     required this.index,
     required this.total,
     required this.listenText,
+    this.listenLang,
     required this.onPrev,
     required this.onNext,
   });
@@ -1065,6 +1067,7 @@ class _ControlBar extends StatelessWidget {
 
   /// Joriy sahifaning «Tinglash» matni (bo‘sh yoki server yo‘q — tugma yo‘q).
   final String listenText;
+  final String? listenLang;
   final VoidCallback? onPrev;
   final VoidCallback? onNext;
 
@@ -1091,6 +1094,7 @@ class _ControlBar extends StatelessWidget {
             ListenButton(
               key: ValueKey('lesson.listen.$index'),
               text: listenText,
+              lang: listenLang,
               // Tor ekran yoki katta shriftda — faqat belgi (sig‘sin).
               labeled:
                   MediaQuery.sizeOf(context).width >= 360 &&

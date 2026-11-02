@@ -32,12 +32,14 @@ final lessonListProvider = FutureProvider.autoDispose
       final items = res.value;
       if (items == null) return res;
       // Rejimlar aralashmaydi: Ustoz — ustoz darslari; Mutaxassis — faqat
-      // «Apparatlar bilan ishlash»; Talabada darslar yo‘q.
+      // «Apparatlar bilan ishlash»; Talaba — hamma mavzu (o‘qish, tinglash,
+      // o‘zi test yechish; egasi so‘rovi, 2026-11-02).
       return ClassResult.ok([
         for (final s in items)
           if (switch (mode) {
             UserMode.teacher => s.course != openLessonCourse,
             UserMode.professional => s.course == openLessonCourse,
+            UserMode.student => true,
             _ => false,
           })
             s,

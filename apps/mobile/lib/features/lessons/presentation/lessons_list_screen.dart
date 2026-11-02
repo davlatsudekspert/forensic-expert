@@ -36,6 +36,9 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
   String _typed = '';
   String _server = '';
 
+  /// Tanlangan kurs/fakultet (`null` — hammasi).
+  String? _course;
+
   /// Qidiruv kechikishi (testlarda ham shu qiymat).
   static const debounceDelay = Duration(milliseconds: 350);
 
@@ -88,6 +91,17 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
       }
     }
     final lang = Localizations.localeOf(context).languageCode;
+    final courses = [
+      for (final g in LessonGrouping.group(all ?? const <LessonSummary>[]))
+        (g.course, g.items.length),
+    ];
+    final course = courses.any((x) => x.$1 == _course) ? _course : null;
+    if (items != null && course != null) {
+      items = [
+        for (final s in items)
+          if (s.course == course) s,
+      ];
+    }
 
     return Scaffold(
       appBar: AppBar(title: FeAppBarTitle(l.lessonsTitle)),
@@ -149,6 +163,32 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
               ),
             ),
           ),
+          if (courses.length > 1)
+            SizedBox(
+              height: 48,
+              child: ListView(
+                key: const Key('lessons.courses'),
+                scrollDirection: Axis.horizontal,
+                keyboardDismissBehavior:
+                    ScrollViewKeyboardDismissBehavior.onDrag,
+                padding: const EdgeInsets.symmetric(horizontal: FeSpace.md),
+                children: [
+                  _CourseChip(
+                    key: const Key('lessons.course.all'),
+                    label: l.lessonsAllCourses,
+                    selected: course == null,
+                    onTap: () => setState(() => _course = null),
+                  ),
+                  for (final (name, n) in courses)
+                    _CourseChip(
+                      key: Key('lessons.course.$name'),
+                      label: [name, '$n'].join(' · '),
+                      selected: course == name,
+                      onTap: () => setState(() => _course = name),
+                    ),
+                ],
+              ),
+            ),
           Expanded(child: _body(context, base, items)),
         ],
       ),
@@ -214,8 +254,8 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
                 ),
               for (final g in groups) ...[
                 _CourseHeader(g.course),
-                for (final s in g.items)
-                  _LessonRow(summary: s, lock: locks[s.topicId]),
+                for (final (i, s) in g.items.indexed)
+                  _LessonRow(summary: s, number: i + 1, lock: locks[s.topicId]),
               ],
             ],
           ),
@@ -244,10 +284,38 @@ class _CourseHeader extends StatelessWidget {
   }
 }
 
+class _CourseChip extends StatelessWidget {
+  const _CourseChip({
+    super.key,
+    required this.label,
+    required this.selected,
+    required this.onTap,
+  });
+
+  final String label;
+  final bool selected;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) => Padding(
+    padding: const EdgeInsetsDirectional.only(end: FeSpace.xs),
+    child: Center(
+      child: ChoiceChip(
+        label: Text(label),
+        selected: selected,
+        onSelected: (_) => onTap(),
+      ),
+    ),
+  );
+}
+
 class _LessonRow extends StatelessWidget {
-  const _LessonRow({required this.summary, this.lock});
+  const _LessonRow({required this.summary, this.number, this.lock});
 
   final LessonSummary summary;
+
+  /// Kurs ichidagi tartib raqami.
+  final int? number;
 
   /// Qulf sababi (`null` — ochiq).
   final ProFeature? lock;
@@ -258,6 +326,12 @@ class _LessonRow extends StatelessWidget {
     final t = Theme.of(context).textTheme;
     final c = FeTheme.of(context);
     final count = l.lessonsSlideCount(summary.slides);
+    final parts = LessonGrouping.titleParts(summary.title);
+    final kind = switch (parts.kind) {
+      LessonKind.lecture => l.lessonKindLecture,
+      LessonKind.practice => l.lessonKindPractice,
+      null => null,
+    };
     return Padding(
       padding: const EdgeInsets.only(bottom: FeSpace.xs),
       child: FeCard(
@@ -275,25 +349,50 @@ class _LessonRow extends StatelessWidget {
             constraints: const BoxConstraints(minHeight: 48),
             child: Row(
               children: [
-                Icon(
-                  lock == null ? Icons.slideshow_rounded : Icons.lock_outline,
-                  color: c.accent,
-                ),
+                if (number != null && lock == null)
+                  SizedBox(
+                    width: 32,
+                    child: Text(
+                      '$number',
+                      textAlign: TextAlign.center,
+                      style: t.titleMedium?.copyWith(
+                        color: c.accent,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  )
+                else
+                  Icon(
+                    lock == null ? Icons.slideshow_rounded : Icons.lock_outline,
+                    color: c.accent,
+                  ),
                 const SizedBox(width: FeSpace.sm),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        summary.title,
-                        maxLines: 2,
+                        parts.main,
+                        maxLines: 3,
                         overflow: TextOverflow.ellipsis,
                         style: t.titleSmall,
                       ),
+                      if (parts.points.isNotEmpty)
+                        Padding(
+                          padding: const EdgeInsets.only(top: 2),
+                          child: Text(
+                            parts.points,
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                            style: t.bodySmall?.copyWith(
+                              color: c.textSecondary,
+                            ),
+                          ),
+                        ),
                       const SizedBox(height: 2),
                       Text(
-                        count,
-                        style: t.bodySmall?.copyWith(color: c.textSecondary),
+                        kind == null ? count : '$kind · $count',
+                        style: t.labelSmall?.copyWith(color: c.accent),
                       ),
                     ],
                   ),

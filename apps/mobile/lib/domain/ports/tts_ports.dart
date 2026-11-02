@@ -50,8 +50,9 @@ abstract interface class TtsService {
   bool get isConfigured;
 
   /// Matnni ovozga aylantiradi (avval qurilma keshi, so‘ng server).
-  /// Xato — [TtsException].
-  Future<TtsAudio> synthesize(String text);
+  /// [lang] — matn tili (`uz`/`ru`/`en`): ovoz shu tilning sof talaffuzida
+  /// o‘qiydi. Xato — [TtsException].
+  Future<TtsAudio> synthesize(String text, {String? lang});
 }
 
 /// Supabase ulanmagan yig‘ma: tugma ko‘rinmaydi.
@@ -62,7 +63,7 @@ class UnconfiguredTtsService implements TtsService {
   bool get isConfigured => false;
 
   @override
-  Future<TtsAudio> synthesize(String text) =>
+  Future<TtsAudio> synthesize(String text, {String? lang}) =>
       Future.error(const TtsException(TtsFailure.notConfigured));
 }
 
@@ -146,3 +147,14 @@ List<String> _splitLong(String p, int max) {
   if (rest.isNotEmpty) parts.add(rest);
   return parts.where((s) => s.isNotEmpty).toList();
 }
+
+/// Matn tiliga ko‘ra ovoz uslubi (server `style`, ≤120 belgi). Noma’lum til —
+/// bo‘sh (model matndan o‘zi aniqlaydi).
+String ttsStyleFor(String? lang) => switch (lang) {
+  'uz' =>
+    'Native Tashkent Uzbek speaker. Pure Uzbek pronunciation (q, g‘, o‘, x, h); '
+        'no English or Russian accent.',
+  'ru' => 'Read in Russian with clear, natural native Russian pronunciation.',
+  'en' => 'Read in English with clear, natural pronunciation.',
+  _ => '',
+};

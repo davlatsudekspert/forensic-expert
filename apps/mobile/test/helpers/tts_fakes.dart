@@ -43,13 +43,15 @@ class FakeTtsService implements TtsService {
   TtsFailure? fail;
   TtsAudio audio = const TtsAudio(['/tmp/a.wav']);
   final texts = <String>[];
+  final langs = <String?>[];
 
   @override
   bool get isConfigured => configured;
 
   @override
-  Future<TtsAudio> synthesize(String text) {
+  Future<TtsAudio> synthesize(String text, {String? lang}) {
     texts.add(text);
+    langs.add(lang);
     if (fail != null) return Future.error(TtsException(fail!));
     return pending?.future ?? Future.value(audio);
   }

@@ -2214,7 +2214,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get disciplineModules => 'Modules';
 
   @override
-  String get disciplineTopics => 'Planned topic structure';
+  String get disciplineTopics => 'Topic structure';
 
   @override
   String get disciplineEmpty =>
@@ -10833,7 +10833,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get lessonsOpenNote =>
-      'You see the open courses. Lecture decks for teaching open with the teacher role.';
+      'All topics are open: read, listen and take the self-test at the end of each topic.';
 
   @override
   String disciplineLessonsMore(int count) {
@@ -12355,13 +12355,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get workbenchLodBody => 'Detection limits and validation';
 
   @override
-  String get studentDeskTitle => 'My study desk';
+  String get studentDeskTitle => 'Student panel';
 
   @override
-  String get deskLessonsTitle => 'Lessons and books';
+  String get deskLessonsTitle => 'All topics';
 
   @override
-  String get deskLessonsBody => 'Forensic medicine, toxicology, biochemistry';
+  String get deskLessonsBody => 'By faculty and course: read, listen, test';
 
   @override
   String get deskTestsTitle => 'Quizzes and flashcards';
@@ -12986,5 +12986,27 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String catStarsCount(int n) {
     return '$n stars';
+  }
+
+  @override
+  String disciplinePlannedMore(int n) {
+    return 'Planned topics ($n)';
+  }
+
+  @override
+  String get lessonsAllCourses => 'All';
+
+  @override
+  String get lessonKindLecture => 'Lecture';
+
+  @override
+  String get lessonKindPractice => 'Practical class';
+
+  @override
+  String get disciplineLessonsTitleStudent => 'Lessons: read, listen and test';
+
+  @override
+  String disciplineLessonsBodyStudent(int n) {
+    return '$n lessons. Open a lesson to read and listen, then take the self-test at the end.';
   }
 }

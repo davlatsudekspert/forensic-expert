@@ -98,20 +98,21 @@ void main() {
     expect(LessonGrouping.filter(all, '  ').length, 3);
   });
 
-  test('Fake: qidiruv slayd matni bo‘yicha, ustoz emas — forbidden', () async {
+  test('Fake: qidiruv slayd matni bo‘yicha; ustoz emas — eslatmasiz', () async {
     final s = FakeLessonsService();
     final r = await s.list(query: 'jadvalda');
     expect(r.value!.length, 1);
     expect((await s.list(query: 'yo‘q-yo‘q')).value, isEmpty);
     expect((await s.get('nope')).ok, isFalse);
-    // 2026-10-24: ustoz bo‘lmagan — faqat ochiq kurslar (namunada yo‘q → bo‘sh).
+    // 2026-11-02: hamma dars hammaga ochiq; ustoz bo‘lmaganga «Ustoz
+    // eslatmalari» berilmaydi (server kabi).
     final no = await FakeLessonsService(isTeacher: false).list();
-    expect(no.ok, isTrue);
-    expect(no.value, isEmpty);
-    expect(
-      (await FakeLessonsService(isTeacher: false).get('demo-toks')).ok,
-      isFalse,
-    );
+    expect(no.value, isNotEmpty);
+    final d = await FakeLessonsService(isTeacher: false).get('demo-toks');
+    expect(d.ok, isTrue);
+    expect(d.value!.slides.every((x) => x.teacherNotes.isEmpty), isTrue);
+    final t = await FakeLessonsService().get('demo-toks');
+    expect(t.value!.slides.any((x) => x.teacherNotes.isNotEmpty), isTrue);
   });
 
   test('adabiyot qatorida yil takrorlanmaydi', () {

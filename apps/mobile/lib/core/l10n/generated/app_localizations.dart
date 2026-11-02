@@ -4075,7 +4075,7 @@ abstract class AppLocalizations {
   /// Section header.
   ///
   /// In en, this message translates to:
-  /// **'Planned topic structure'**
+  /// **'Topic structure'**
   String get disciplineTopics;
 
   /// Empty state.
@@ -18726,7 +18726,7 @@ abstract class AppLocalizations {
   /// Lessons list note for a signed-in user without the teacher role.
   ///
   /// In en, this message translates to:
-  /// **'You see the open courses. Lecture decks for teaching open with the teacher role.'**
+  /// **'All topics are open: read, listen and take the self-test at the end of each topic.'**
   String get lessonsOpenNote;
 
   /// Discipline lessons: expand the rest of a course. {count} more lessons.
@@ -21384,19 +21384,19 @@ abstract class AppLocalizations {
   /// Student Home section title: the student's study desk.
   ///
   /// In en, this message translates to:
-  /// **'My study desk'**
+  /// **'Student panel'**
   String get studentDeskTitle;
 
   /// Study desk card: lessons and books.
   ///
   /// In en, this message translates to:
-  /// **'Lessons and books'**
+  /// **'All topics'**
   String get deskLessonsTitle;
 
   /// Study desk card subtitle: lessons.
   ///
   /// In en, this message translates to:
-  /// **'Forensic medicine, toxicology, biochemistry'**
+  /// **'By faculty and course: read, listen, test'**
   String get deskLessonsBody;
 
   /// Study desk card: self-study quizzes and flashcards.
@@ -22508,6 +22508,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{n} stars'**
   String catStarsCount(int n);
+
+  /// Discipline page (student).
+  ///
+  /// In en, this message translates to:
+  /// **'Planned topics ({n})'**
+  String disciplinePlannedMore(int n);
+
+  /// Student panel / lessons list.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get lessonsAllCourses;
+
+  /// Student panel / lessons list.
+  ///
+  /// In en, this message translates to:
+  /// **'Lecture'**
+  String get lessonKindLecture;
+
+  /// Student panel / lessons list.
+  ///
+  /// In en, this message translates to:
+  /// **'Practical class'**
+  String get lessonKindPractice;
+
+  /// Student panel / lessons list.
+  ///
+  /// In en, this message translates to:
+  /// **'Lessons: read, listen and test'**
+  String get disciplineLessonsTitleStudent;
+
+  /// Discipline page (student).
+  ///
+  /// In en, this message translates to:
+  /// **'{n} lessons. Open a lesson to read and listen, then take the self-test at the end.'**
+  String disciplineLessonsBodyStudent(int n);
 }
 
 class _AppLocalizationsDelegate

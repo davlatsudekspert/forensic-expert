@@ -15,7 +15,8 @@ class FakeLessonsService implements LessonsService {
 
   final bool isTeacher;
 
-  /// Ustoz bo‘lmaganga ochiq kurslar (server: `lesson_topics.audience = 'all'`).
+  /// Eski parametr (2026-11-02 dan server hamma darsni ochadi; ustoz
+  /// bo‘lmaganga faqat «Ustoz eslatmalari» berilmaydi). Endi ishlatilmaydi.
   final Set<String> openCourses;
   final bool demo;
   final Map<String, Map<String, Object?>> _decks;
@@ -46,7 +47,6 @@ class FakeLessonsService implements LessonsService {
           for (final b in s.bullets) b.text,
         ],
       ].join(' ').toLowerCase();
-      if (!isTeacher && !openCourses.contains(d.course)) continue;
       if (q.isEmpty || hay.contains(q)) {
         out.add(
           LessonSummary(
@@ -67,11 +67,22 @@ class FakeLessonsService implements LessonsService {
     if (failure != null) return ClassResult.fail(failure!);
     final j = _decks[topicId];
     if (j == null) return const ClassResult.fail(ClassFailure.notFound);
-    final deck = LessonDeck.fromJson(j);
-    if (!isTeacher && !openCourses.contains(deck.course)) {
-      return const ClassResult.fail(ClassFailure.forbidden);
+    if (isTeacher) return ClassResult.ok(LessonDeck.fromJson(j));
+    // Server kabi: ustoz bo‘lmaganga «Ustoz eslatmalari» berilmaydi.
+    final inner = Map<String, Object?>.of(
+      (j['deck'] as Map?)?.cast<String, Object?>() ?? const {},
+    );
+    if (inner['slides'] case final List<Object?> slides) {
+      inner['slides'] = [
+        for (final s in slides)
+          if (s is Map)
+            Map<String, Object?>.of(s.cast<String, Object?>())
+              ..remove('teacher_notes')
+          else
+            s,
+      ];
     }
-    return ClassResult.ok(deck);
+    return ClassResult.ok(LessonDeck.fromJson({...j, 'deck': inner}));
   }
 }
 

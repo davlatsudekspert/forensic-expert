@@ -132,7 +132,7 @@ void main() {
     expect(find.byType(LessonViewerScreen), findsOneWidget);
   });
 
-  testWidgets('ustoz rejimi, server roli yo‘q, ochiq dars yo‘q — havola', (
+  testWidgets('ustoz rejimi, server roli yo‘q — darslar baribir ochiq', (
     tester,
   ) async {
     await open(
@@ -144,9 +144,9 @@ void main() {
     );
     expect(
       find.byKey(const Key('discipline.lessonsTeacherOnly')),
-      findsOneWidget,
+      findsNothing,
     );
-    expect(find.byKey(const Key('discipline.lesson.toks-01')), findsNothing);
+    expect(find.byKey(const Key('discipline.lessonsBody')), findsOneWidget);
   });
 
   testWidgets(

@@ -314,18 +314,13 @@ final routerProvider = Provider<GoRouter>((ref) {
         return Routes.home;
       }
       // Rejim chegaralari (egasi qarori, 2026-10-24): Ustoz paneli va natijalar
-      // faqat «Ustoz» rejimida; «Darslar» Talabaga yo‘q (Mutaxassis — faqat
-      // ochiq «Apparatlar» kursi, server o‘zi cheklaydi). To‘g‘ridan-to‘g‘ri
-      // havola ham Asosiyga qaytaradi.
+      // faqat «Ustoz» rejimida. «Darslar» hamma uchun o‘qishga ochiq (egasi
+      // so‘rovi, 2026-11-02); ustoz eslatmalari va guruh testi — faqat ustozda.
       final loc = state.matchedLocation;
       final mode = settings.userMode;
       if (mode != null &&
           mode != UserMode.teacher &&
           (loc == Routes.teacher || loc == Routes.teacherResults)) {
-        return Routes.home;
-      }
-      if (mode == UserMode.student &&
-          (loc == Routes.lessons || loc.startsWith('${Routes.lessons}/'))) {
         return Routes.home;
       }
       // «Bilim va malakani baholash» — Mutaxassis va Ustoz uchun (talabaga yo‘q).

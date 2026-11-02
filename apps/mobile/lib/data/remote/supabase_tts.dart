@@ -122,18 +122,23 @@ class SupabaseTtsService implements TtsService {
       sha256.convert(utf8.encode('$voice|$style|$text')).toString();
 
   @override
-  Future<TtsAudio> synthesize(String text) async {
+  Future<TtsAudio> synthesize(String text, {String? lang}) async {
+    final st = style.isNotEmpty ? style : ttsStyleFor(lang);
     final parts = splitTtsText(text);
     if (parts.isEmpty) throw const TtsException(TtsFailure.empty);
     final dir = await _cacheDir();
     final paths = <String>[];
     for (final part in parts) {
-      paths.add(await _synthesizePart(dir, part));
+      paths.add(await _synthesizePart(dir, part, st));
     }
     return TtsAudio(paths);
   }
 
-  Future<String> _synthesizePart(Directory dir, String text) async {
+  Future<String> _synthesizePart(
+    Directory dir,
+    String text,
+    String style,
+  ) async {
     final file = File(
       '${dir.path}${Platform.pathSeparator}${cacheKey(voice, style, text)}.wav',
     );

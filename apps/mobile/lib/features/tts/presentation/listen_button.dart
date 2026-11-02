@@ -27,6 +27,7 @@ class ListenButton extends ConsumerStatefulWidget {
     required this.text,
     this.color,
     this.labeled = false,
+    this.lang,
   });
 
   final String text;
@@ -34,6 +35,9 @@ class ListenButton extends ConsumerStatefulWidget {
 
   /// `true` — «🔊 Tinglash» yozuvli tugma (dars pastki paneli).
   final bool labeled;
+
+  /// Matn tili — ovoz shu tilning sof talaffuzida o‘qiydi.
+  final String? lang;
 
   @override
   ConsumerState<ListenButton> createState() => _ListenButtonState();
@@ -126,7 +130,9 @@ class _ListenButtonState extends ConsumerState<ListenButton> {
     setState(() => _state = ListenState.loading);
     final TtsAudio audio;
     try {
-      audio = await ref.read(ttsServiceProvider).synthesize(widget.text);
+      audio = await ref
+          .read(ttsServiceProvider)
+          .synthesize(widget.text, lang: widget.lang);
     } on TtsException catch (e) {
       if (!mounted || gen != _gen) return;
       setState(() => _state = ListenState.idle);

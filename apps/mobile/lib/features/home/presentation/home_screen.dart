@@ -299,6 +299,11 @@ class HomeScreen extends ConsumerWidget {
                   const SizedBox(height: FeSpace.lg),
                   // Ekspert: «Ish stolim»; talaba: «O‘qish stolim» (+ kunlik
                   // ma’lumot/savol). Ustoz bosh sahifasi o‘zgarmaydi.
+                  // Talaba: o‘z paneli birinchi (egasi so‘rovi, 2026-11-02).
+                  if (mode == UserMode.student) ...[
+                    const StudentDesk(),
+                    const SizedBox(height: FeSpace.lg),
+                  ],
                   if (coreTop) ...[
                     FeSectionHeader(
                       l.homeCoreTitle,
@@ -315,9 +320,6 @@ class HomeScreen extends ConsumerWidget {
                   ],
                   if (mode == UserMode.professional) ...[
                     const ExpertWorkbench(),
-                    const SizedBox(height: FeSpace.sm),
-                  ] else if (mode == UserMode.student) ...[
-                    const StudentDesk(),
                     const SizedBox(height: FeSpace.sm),
                   ] else if (mode == UserMode.teacher) ...[
                     const TeacherDesk(),

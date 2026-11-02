@@ -2219,7 +2219,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get disciplineModules => 'Modullar';
 
   @override
-  String get disciplineTopics => 'Rejalashtirilgan mavzular tuzilmasi';
+  String get disciplineTopics => 'Mavzular tuzilmasi';
 
   @override
   String get disciplineEmpty =>
@@ -10762,7 +10762,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get lessonsOpenNote =>
-      'Sizga ochiq kurslar ko‘rsatilgan. Ma’ruza prezentatsiyalari ustoz roli bilan ochiladi.';
+      'Hamma mavzu ochiq: o‘qing, tinglang va mavzu oxirida o‘zingiz test yeching.';
 
   @override
   String disciplineLessonsMore(int count) {
@@ -12281,13 +12281,14 @@ class AppLocalizationsUz extends AppLocalizations {
   String get workbenchLodBody => 'Aniqlash chegarasi va validatsiya';
 
   @override
-  String get studentDeskTitle => 'O‘qish stolim';
+  String get studentDeskTitle => 'Talaba paneli';
 
   @override
-  String get deskLessonsTitle => 'Darslar va kitoblar';
+  String get deskLessonsTitle => 'Barcha mavzular';
 
   @override
-  String get deskLessonsBody => 'Sud tibbiyoti, toksikologiya, biokimyo';
+  String get deskLessonsBody =>
+      'Fakultet va kurslar bo‘yicha: o‘qish, tinglash, test';
 
   @override
   String get deskTestsTitle => 'Testlar va kartochkalar';
@@ -12914,5 +12915,28 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String catStarsCount(int n) {
     return '$n ta yulduzcha';
+  }
+
+  @override
+  String disciplinePlannedMore(int n) {
+    return 'Rejadagi mavzular ($n)';
+  }
+
+  @override
+  String get lessonsAllCourses => 'Hammasi';
+
+  @override
+  String get lessonKindLecture => 'Ma’ruza';
+
+  @override
+  String get lessonKindPractice => 'Amaliy mashg‘ulot';
+
+  @override
+  String get disciplineLessonsTitleStudent =>
+      'Darslar: o‘qish, tinglash va test';
+
+  @override
+  String disciplineLessonsBodyStudent(int n) {
+    return '$n ta dars. Darsni oching — o‘qing, tinglang, oxirida o‘zingiz test yeching.';
   }
 }

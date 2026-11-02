@@ -8,7 +8,7 @@ import 'package:forensic_expert/core/design/theme.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
 import 'package:forensic_expert/core/settings/settings_controller.dart';
 import 'package:forensic_expert/features/home/presentation/search_screen.dart';
-import 'package:forensic_expert/features/learn/presentation/learn_screens.dart';
+import 'package:forensic_expert/features/lessons/presentation/lessons_list_screen.dart';
 import 'package:forensic_expert/features/legal/presentation/jurisdiction_screens.dart';
 import 'package:forensic_expert/features/library/presentation/entry_detail_screen.dart';
 
@@ -312,8 +312,8 @@ void main() {
       );
       // Ta’lim — modullar to‘ridagi bitta kirish (takroriy karta yo‘q).
       expect(find.byKey(const Key('home.continueLearning')), findsNothing);
-      // O‘qish — «O‘qish stolim» kartasi orqali.
-      final lessons = find.text('Lessons and books');
+      // O‘qish — «Talaba paneli» → «Barcha mavzular» (darslar ro‘yxati).
+      final lessons = find.text('All topics');
       await tester.scrollUntilVisible(
         lessons,
         300,
@@ -324,8 +324,7 @@ void main() {
       await tester.pumpAndSettle();
       await tester.tap(lessons);
       await tester.pumpAndSettle();
-      expect(find.byType(LearnScreen), findsOneWidget);
-      expect(find.text('SAMPLE'), findsWidgets);
+      expect(find.byType(LessonsListScreen), findsOneWidget);
       c.read(routerProvider).go(Routes.home);
       await tester.pumpAndSettle();
     });

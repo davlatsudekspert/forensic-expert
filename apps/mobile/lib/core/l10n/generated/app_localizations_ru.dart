@@ -2219,7 +2219,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get disciplineModules => 'Модули';
 
   @override
-  String get disciplineTopics => 'Планируемая структура тем';
+  String get disciplineTopics => 'Структура тем';
 
   @override
   String get disciplineEmpty =>
@@ -10882,7 +10882,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get lessonsOpenNote =>
-      'Вам показаны открытые курсы. Лекционные презентации открываются с ролью преподавателя.';
+      'Все темы открыты: читайте, слушайте и в конце темы решите тест сами.';
 
   @override
   String disciplineLessonsMore(int count) {
@@ -12399,13 +12399,14 @@ class AppLocalizationsRu extends AppLocalizations {
   String get workbenchLodBody => 'Пределы обнаружения и валидация';
 
   @override
-  String get studentDeskTitle => 'Мой учебный стол';
+  String get studentDeskTitle => 'Панель студента';
 
   @override
-  String get deskLessonsTitle => 'Уроки и книги';
+  String get deskLessonsTitle => 'Все темы';
 
   @override
-  String get deskLessonsBody => 'Судебная медицина, токсикология, биохимия';
+  String get deskLessonsBody =>
+      'По факультетам и курсам: чтение, прослушивание, тест';
 
   @override
   String get deskTestsTitle => 'Тесты и карточки';
@@ -13036,5 +13037,28 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String catStarsCount(int n) {
     return 'Звёздочек: $n';
+  }
+
+  @override
+  String disciplinePlannedMore(int n) {
+    return 'Запланированные темы ($n)';
+  }
+
+  @override
+  String get lessonsAllCourses => 'Все';
+
+  @override
+  String get lessonKindLecture => 'Лекция';
+
+  @override
+  String get lessonKindPractice => 'Практическое занятие';
+
+  @override
+  String get disciplineLessonsTitleStudent =>
+      'Уроки: чтение, прослушивание и тест';
+
+  @override
+  String disciplineLessonsBodyStudent(int n) {
+    return 'Уроков: $n. Откройте урок — читайте, слушайте, в конце решите тест сами.';
   }
 }

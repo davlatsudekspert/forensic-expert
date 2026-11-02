@@ -266,8 +266,7 @@ class DisciplineScreen extends ConsumerWidget {
                   ],
                   if (fmTopics.isNotEmpty) ...[
                     FeSectionHeader(l.disciplineTopics),
-                    // Yoritilgan mavzu — yozuvga havola; yoritilmagani —
-                    // oddiy (bosilmaydigan) matn.
+                    // Yoritilgan mavzu — yozuvga havola.
                     for (final topic in fmTopics)
                       if (covered[topic] case final entryId?)
                         ListTile(
@@ -283,33 +282,56 @@ class DisciplineScreen extends ConsumerWidget {
                           trailing: const Icon(Icons.chevron_right),
                           onTap: () =>
                               context.push(Routes.knowledgeEntry(entryId)),
-                        )
-                      else
-                        Padding(
-                          key: Key('discipline.fmTopic.${topic.name}'),
-                          padding: const EdgeInsets.symmetric(
-                            vertical: FeSpace.xs,
+                        ),
+                    // Hali yozuvi yo‘q mavzular — yig‘ilgan holda (sahifa
+                    // bosilmaydigan qatorlar bilan to‘lib ketmasin).
+                    if (fmTopics.any((x) => covered[x] == null))
+                      Theme(
+                        data: Theme.of(context)
+                            .copyWith(dividerColor: Colors.transparent),
+                        child: ExpansionTile(
+                          key: const Key('discipline.plannedMore'),
+                          tilePadding: EdgeInsets.zero,
+                          childrenPadding: EdgeInsets.zero,
+                          title: Text(
+                            l.disciplinePlannedMore(
+                              fmTopics.where((x) => covered[x] == null).length,
+                            ),
+                            style: t.bodyMedium?.copyWith(
+                              color: c.textSecondary,
+                            ),
                           ),
-                          child: Row(
-                            children: [
-                              Icon(
-                                Icons.radio_button_unchecked,
-                                size: 20,
-                                color: c.textSecondary,
-                                semanticLabel: l.disciplineRecords(0),
-                              ),
-                              const SizedBox(width: FeSpace.md),
-                              Expanded(
-                                child: Text(
-                                  l.fmTopicName(topic),
-                                  style: t.bodyMedium?.copyWith(
-                                    color: c.textSecondary,
+                          children: [
+                            for (final topic in fmTopics)
+                              if (covered[topic] == null)
+                                Padding(
+                                  key: Key('discipline.fmTopic.${topic.name}'),
+                                  padding: const EdgeInsets.symmetric(
+                                    vertical: FeSpace.xs,
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      Icon(
+                                        Icons.radio_button_unchecked,
+                                        size: 20,
+                                        color: c.textSecondary,
+                                        semanticLabel: l.disciplineRecords(0),
+                                      ),
+                                      const SizedBox(width: FeSpace.md),
+                                      Expanded(
+                                        child: Text(
+                                          l.fmTopicName(topic),
+                                          style: t.bodyMedium?.copyWith(
+                                            color: c.textSecondary,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
-                              ),
-                            ],
-                          ),
+                          ],
                         ),
+                      ),
                   ],
                   if (count == 0 && modules.isEmpty) ...[
                     const SizedBox(height: FeSpace.md),
@@ -451,8 +473,6 @@ List<Widget> _lessonsSection(
   final t = Theme.of(context).textTheme;
   final teacher = watchIsTeacher(ref);
   final mode = ref.watch(settingsControllerProvider.select((s) => s.userMode));
-  // Talaba rejimida «Darslar» bo‘limi yo‘q (Ustoz/Mutaxassis uchun).
-  if (mode == UserMode.student) return const [];
   // Server: ustoz — hamma dars; boshqa kirgan foydalanuvchi — faqat ochiq
   // kurslar (audience = 'all', masalan «Apparatlar bilan ishlash»).
   final res = ref.watch(lessonListProvider(''));
@@ -481,9 +501,13 @@ List<Widget> _lessonsSection(
   }
   final groups = LessonGrouping.group(items);
   return [
-    FeSectionHeader(l.disciplineLessonsTitle),
+    FeSectionHeader(
+      teacher ? l.disciplineLessonsTitle : l.disciplineLessonsTitleStudent,
+    ),
     Text(
-      l.disciplineLessonsBody(items.length),
+      teacher
+          ? l.disciplineLessonsBody(items.length)
+          : l.disciplineLessonsBodyStudent(items.length),
       key: const Key('discipline.lessonsBody'),
       style: t.bodySmall?.copyWith(color: c.textSecondary),
     ),
@@ -564,7 +588,11 @@ class _CourseLessonsState extends State<_CourseLessons> {
                   : Icons.slideshow_rounded,
               color: c.accent,
             ),
-            title: Text(s.title, maxLines: 2, overflow: TextOverflow.ellipsis),
+            title: Text(
+              LessonGrouping.titleParts(s.title).main,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+            ),
             subtitle: Text(l.lessonsSlideCount(s.slides)),
             trailing: widget.locks.containsKey(s.topicId)
                 ? const Icon(Icons.chevron_right)

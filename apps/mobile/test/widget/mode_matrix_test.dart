@@ -36,18 +36,14 @@ void main() {
         settings: completedSettings(lang: 'uz', mode: mode),
         initialLocation: Routes.lessons,
       );
-      if (mode == UserMode.student) {
-        // Talabada «Darslar» yo‘q — Asosiyga qaytadi.
-        expect(find.byType(LessonsListScreen), findsNothing);
-        return;
-      }
+      // «Darslar» hamma rejimda o‘qishga ochiq (egasi so‘rovi, 2026-11-02).
       expect(find.byType(LessonsListScreen), findsOneWidget);
       final container = ProviderScope.containerOf(
         t.element(find.byType(LessonsListScreen)),
       );
       final res = await container.read(lessonListProvider('').future);
       final courses = {for (final s in res.value!) s.course};
-      if (mode == UserMode.teacher) {
+      if (mode == UserMode.teacher || mode == UserMode.student) {
         expect(courses.length, greaterThan(1));
       } else {
         expect(courses.difference({openLessonCourse}), isEmpty);

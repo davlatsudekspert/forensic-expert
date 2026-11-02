@@ -237,7 +237,9 @@ void main() {
     expect(find.byKey(const Key('lessons.row.a1')), findsNothing);
   });
 
-  testWidgets('ustoz emas: yopiq kurs darsi — forbidden', (tester) async {
+  testWidgets('ustoz emas: dars ochiladi, ustoz eslatmalari yo‘q', (
+    tester,
+  ) async {
     await open(
       tester,
       lessons: FakeLessonsService(
@@ -248,7 +250,8 @@ void main() {
       teacher: false,
       path: Routes.lesson('a1'),
     );
-    expect(find.byKey(const Key('lessons.forbidden')), findsOneWidget);
+    expect(find.byKey(const Key('lessons.forbidden')), findsNothing);
+    expect(find.byKey(const Key('lesson.notes')), findsNothing);
   });
 
   testWidgets('ro‘yxat: offline xato va qayta urinish', (tester) async {

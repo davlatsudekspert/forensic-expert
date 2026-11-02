@@ -11570,4 +11570,24 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String catStarsCount(int n) =>
       toUzNewAlphabet(super.catStarsCount(n));
 
+  @override
+  String disciplinePlannedMore(int n) =>
+      toUzNewAlphabet(super.disciplinePlannedMore(n));
+
+  @override
+  String get lessonsAllCourses => toUzNewAlphabet(super.lessonsAllCourses);
+
+  @override
+  String get lessonKindLecture => toUzNewAlphabet(super.lessonKindLecture);
+
+  @override
+  String get lessonKindPractice => toUzNewAlphabet(super.lessonKindPractice);
+
+  @override
+  String get disciplineLessonsTitleStudent => toUzNewAlphabet(super.disciplineLessonsTitleStudent);
+
+  @override
+  String disciplineLessonsBodyStudent(int n) =>
+      toUzNewAlphabet(super.disciplineLessonsBodyStudent(n));
+
 }
