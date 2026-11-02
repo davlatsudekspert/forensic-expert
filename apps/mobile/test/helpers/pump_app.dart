@@ -48,6 +48,7 @@ Future<ProviderContainer> pumpApp(
   String? initialLocation,
   double pixelRatio = 3,
   List<Override> overrides = const [],
+  NarrationSource narrationSource = const NoNarrationSource(),
   bool testFixtures = true,
   UpdateGateStore? updateStore,
   // Testlar standart bo‘yicha Pro yig‘masini sinaydi (qulflar, rejalar);
@@ -71,7 +72,7 @@ Future<ProviderContainer> pumpApp(
       // orasida qolmaydi.
       proEnabledProvider.overrideWithValue(proEnabled),
       // Ilova ichidagi tushuntirish fayllari (rootBundle) sinovda o‘qilmaydi.
-      narrationSourceProvider.overrideWithValue(const NoNarrationSource()),
+      narrationSourceProvider.overrideWithValue(narrationSource),
       updateGateStoreProvider.overrideWithValue(
         updateStore ?? MemoryUpdateGateStore(),
       ),
