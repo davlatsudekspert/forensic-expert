@@ -636,6 +636,15 @@ class LessonSlide {
   /// o‘qiydi.
   final String narration;
 
+  LessonSlide withNarration(String text) => LessonSlide(
+    title: title,
+    bullets: bullets,
+    teacherNotes: teacherNotes,
+    diagram: diagram,
+    image: image,
+    narration: text,
+  );
+
   /// Ixtiyoriy rasm (qurilma fotosi yoki sxema; PNG/JPG). Yo‘q/buzuq — null.
   final LessonImage? image;
 
@@ -744,4 +753,15 @@ class LessonDeck {
   final List<LessonSlide> slides;
   final List<LessonExtra> extras;
   final List<LessonReference> references;
+
+  LessonDeck withSlides(List<LessonSlide> next) => LessonDeck(
+    topicId: topicId,
+    title: title,
+    course: course,
+    deckId: deckId,
+    sourceLang: sourceLang,
+    slides: next,
+    extras: extras,
+    references: references,
+  );
 }

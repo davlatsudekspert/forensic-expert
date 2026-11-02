@@ -5,6 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../core/settings/app_settings.dart' show UserMode;
 import '../core/settings/settings_controller.dart';
 import '../data/lessons/fake_lessons_service.dart';
+import '../data/lessons/narration_overlay.dart';
 import '../domain/class_quiz/class_quiz_models.dart' show ClassResult;
 import '../domain/lessons/lesson_models.dart';
 import '../domain/ports/lessons_ports.dart';
@@ -46,10 +47,19 @@ final lessonListProvider = FutureProvider.autoDispose
       ]);
     });
 
+/// Ilova ichidagi tushuntirishlar manbasi (testlarda almashtiriladi).
+final narrationSourceProvider = Provider<NarrationSource>(
+  (ref) => const AssetNarrationSource(),
+);
+
 final lessonDeckProvider = FutureProvider.autoDispose
-    .family<ClassResult<LessonDeck>, String>(
-      (ref, topicId) => ref.watch(lessonsServiceProvider).get(topicId),
-    );
+    .family<ClassResult<LessonDeck>, String>((ref, topicId) async {
+      final res = await ref.watch(lessonsServiceProvider).get(topicId);
+      final deck = res.value;
+      if (deck == null || deck.deckId.isEmpty) return res;
+      final items = await ref.watch(narrationSourceProvider).load(deck.deckId);
+      return ClassResult.ok(applyNarration(deck, items));
+    });
 
 /// Ko‘rish oynasida skrinshot/yozib olishni cheklash (Android FLAG_SECURE;
 /// iOS’da ishonchli usul yo‘q). Testlarda almashtiriladi.
