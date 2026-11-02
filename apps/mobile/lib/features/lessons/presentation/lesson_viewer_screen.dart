@@ -831,6 +831,8 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
               listenLang: widget.deck.sourceLang,
               listenAuto: _voiceAuto,
               onListenFinished: _onListenFinished,
+              autoOn: _auto,
+              onMode: _openAutoSheet,
               onPrev: _index > 0 ? () => _go(_index - 1, pages.length) : null,
               onNext: _index < pages.length - 1
                   ? () => _go(_index + 1, pages.length)
@@ -1183,6 +1185,61 @@ class _SpokenText extends StatelessWidget {
   }
 }
 
+/// «Qo‘lda | Avto» — ixcham ikki holatli tanlov; bosilganda sozlama oynasi.
+class _ModeToggle extends StatelessWidget {
+  const _ModeToggle({required this.auto, required this.onTap});
+
+  final bool auto;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme.labelLarge;
+    Widget seg(String label, bool on) => AnimatedContainer(
+      duration: const Duration(milliseconds: 180),
+      padding: const EdgeInsets.symmetric(
+        horizontal: FeSpace.sm,
+        vertical: FeSpace.xxs,
+      ),
+      decoration: BoxDecoration(
+        color: on ? c.brand : null,
+        borderRadius: BorderRadius.circular(999),
+      ),
+      child: Text(
+        label,
+        style: t?.copyWith(color: on ? c.textOnBrand : c.textSecondary),
+      ),
+    );
+    return Semantics(
+      button: true,
+      label: l.lessonAutoTooltip,
+      value: auto ? l.lessonAutoAuto : l.lessonAutoManual,
+      excludeSemantics: true,
+      child: InkWell(
+        key: const Key('lesson.listenMode'),
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(999),
+        child: Container(
+          padding: const EdgeInsets.all(2),
+          decoration: BoxDecoration(
+            border: Border.all(color: c.border),
+            borderRadius: BorderRadius.circular(999),
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              seg(l.lessonAutoManual, !auto),
+              seg(l.lessonAutoAuto, auto),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class _ControlBar extends StatelessWidget {
   const _ControlBar({
     required this.index,
@@ -1191,9 +1248,15 @@ class _ControlBar extends StatelessWidget {
     this.listenLang,
     this.listenAuto = false,
     this.onListenFinished,
+    this.autoOn = false,
+    this.onMode,
     required this.onPrev,
     required this.onNext,
   });
+
+  /// Ko‘rinadigan «Qo‘lda / Avto» tugmasi — o‘qish rejimi sozlamasi.
+  final bool autoOn;
+  final VoidCallback? onMode;
 
   final int index;
   final int total;
@@ -1218,40 +1281,67 @@ class _ControlBar extends StatelessWidget {
         border: Border(top: BorderSide(color: c.border)),
       ),
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: FeSpace.xs),
-        child: Row(
+        padding: const EdgeInsets.fromLTRB(
+          FeSpace.sm,
+          FeSpace.xs,
+          FeSpace.sm,
+          FeSpace.xxs,
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
-            IconButton(
-              key: const Key('lesson.prev'),
-              tooltip: l.lessonViewerPrev,
-              icon: const Icon(Icons.chevron_left_rounded, size: 32),
-              onPressed: onPrev,
+            // Player boshi: slayd raqami + o‘qish rejimi (Qo‘lda / Avto).
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    l.lessonViewerCounter(index + 1, total),
+                    key: const Key('lesson.counter'),
+                    style: Theme.of(context).textTheme.titleSmall,
+                  ),
+                ),
+                if (onMode != null)
+                  Flexible(
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      alignment: Alignment.centerRight,
+                      child: _ModeToggle(auto: autoOn, onTap: onMode!),
+                    ),
+                  ),
+              ],
             ),
-            // Sahifa almashsa tugma qayta yaratiladi: eski ovoz to‘xtaydi.
-            ListenButton(
-              key: ValueKey('lesson.listen.$index'),
-              autoStart: listenAuto,
-              onFinished: onListenFinished,
-              text: listenText,
-              lang: listenLang,
-              // Tor ekran yoki katta shriftda — faqat belgi (sig‘sin).
-              labeled:
-                  MediaQuery.sizeOf(context).width >= 360 &&
-                  MediaQuery.textScalerOf(context).scale(1) <= 1.3,
-            ),
-            Expanded(
-              child: Text(
-                l.lessonViewerCounter(index + 1, total),
-                key: const Key('lesson.counter'),
-                textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.titleSmall,
-              ),
-            ),
-            IconButton(
-              key: const Key('lesson.next'),
-              tooltip: l.lessonViewerNext,
-              icon: const Icon(Icons.chevron_right_rounded, size: 32),
-              onPressed: onNext,
+            // Player: oldingi · Tinglash/Pauza · keyingi.
+            Row(
+              children: [
+                IconButton(
+                  key: const Key('lesson.prev'),
+                  tooltip: l.lessonViewerPrev,
+                  icon: const Icon(Icons.skip_previous_rounded, size: 32),
+                  onPressed: onPrev,
+                ),
+                Expanded(
+                  child: Center(
+                    // Sahifa almashsa tugma qayta yaratiladi: eski ovoz to‘xtaydi.
+                    child: ListenButton(
+                      key: ValueKey('lesson.listen.$index'),
+                      autoStart: listenAuto,
+                      onFinished: onListenFinished,
+                      text: listenText,
+                      lang: listenLang,
+                      // Juda tor ekran yoki katta shriftda — faqat belgi.
+                      labeled:
+                          MediaQuery.sizeOf(context).width >= 300 &&
+                          MediaQuery.textScalerOf(context).scale(1) <= 1.6,
+                    ),
+                  ),
+                ),
+                IconButton(
+                  key: const Key('lesson.next'),
+                  tooltip: l.lessonViewerNext,
+                  icon: const Icon(Icons.skip_next_rounded, size: 32),
+                  onPressed: onNext,
+                ),
+              ],
             ),
           ],
         ),
