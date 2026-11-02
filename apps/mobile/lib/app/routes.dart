@@ -194,6 +194,9 @@ abstract final class Routes {
   static const adminAudit = '/profile/admin/audit';
   static const adminPlans = '/profile/admin/plans';
   static const adminClassTests = '/profile/admin/tests';
+
+  /// «Ustozlar va mutaxassislar» katalogi.
+  static const catalog = '/home/catalog';
   static const adminReports = '/profile/admin/reports';
   static const adminVerifications = '/profile/admin/verifications';
   static String adminVerification(String applicantId) =>

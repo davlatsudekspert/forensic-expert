@@ -11521,4 +11521,53 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String admTestsAvg(String score, String grade) =>
       toUzNewAlphabet(super.admTestsAvg(score, grade));
 
+  @override
+  String get catTitle => toUzNewAlphabet(super.catTitle);
+
+  @override
+  String get catHomeHint => toUzNewAlphabet(super.catHomeHint);
+
+  @override
+  String get catTabTeachers => toUzNewAlphabet(super.catTabTeachers);
+
+  @override
+  String get catTabExperts => toUzNewAlphabet(super.catTabExperts);
+
+  @override
+  String get catSearch => toUzNewAlphabet(super.catSearch);
+
+  @override
+  String get catSignIn => toUzNewAlphabet(super.catSignIn);
+
+  @override
+  String get catEmptyTeachers => toUzNewAlphabet(super.catEmptyTeachers);
+
+  @override
+  String get catEmptyExperts => toUzNewAlphabet(super.catEmptyExperts);
+
+  @override
+  String get catLoadFailed => toUzNewAlphabet(super.catLoadFailed);
+
+  @override
+  String get catStarFailed => toUzNewAlphabet(super.catStarFailed);
+
+  @override
+  String get catStar => toUzNewAlphabet(super.catStar);
+
+  @override
+  String get catUnstar => toUzNewAlphabet(super.catUnstar);
+
+  @override
+  String get catShowMe => toUzNewAlphabet(super.catShowMe);
+
+  @override
+  String get catShowMeHint => toUzNewAlphabet(super.catShowMeHint);
+
+  @override
+  String get catVisibleFailed => toUzNewAlphabet(super.catVisibleFailed);
+
+  @override
+  String catStarsCount(int n) =>
+      toUzNewAlphabet(super.catStarsCount(n));
+
 }

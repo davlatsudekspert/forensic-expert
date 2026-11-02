@@ -1091,6 +1091,10 @@ class _ControlBar extends StatelessWidget {
             ListenButton(
               key: ValueKey('lesson.listen.$index'),
               text: listenText,
+              // Tor ekran yoki katta shriftda — faqat belgi (sig‘sin).
+              labeled:
+                  MediaQuery.sizeOf(context).width >= 360 &&
+                  MediaQuery.textScalerOf(context).scale(1) <= 1.3,
             ),
             Expanded(
               child: Text(

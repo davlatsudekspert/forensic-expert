@@ -9,7 +9,9 @@ import '../../../app/teacher_card.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
+import '../../../domain/catalog/catalog.dart';
 import '../../../domain/teacher_card/teacher_card.dart';
+import '../../catalog/presentation/catalog_widgets.dart';
 import '../../pro/presentation/pro_gate.dart' show proPlanName;
 import '../../teacher_card/presentation/teacher_card_widgets.dart';
 
@@ -150,6 +152,8 @@ class TeacherProfileHeader extends ConsumerWidget {
             ),
           ),
           if (card != null) ...[
+            const SizedBox(height: FeSpace.sm),
+            const CatalogVisibilityTile(kind: CatalogKind.teacher),
             const SizedBox(height: FeSpace.xs),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,

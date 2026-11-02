@@ -12860,4 +12860,59 @@ class AppLocalizationsUz extends AppLocalizations {
   String admTestsAvg(String score, String grade) {
     return 'O‘rtacha ball (100): $score · Baho: $grade';
   }
+
+  @override
+  String get catTitle => 'Ustozlar va mutaxassislar';
+
+  @override
+  String get catHomeHint => 'Eng yaxshilarini toping va yulduzcha bosing';
+
+  @override
+  String get catTabTeachers => 'Ustozlar';
+
+  @override
+  String get catTabExperts => 'Mutaxassislar';
+
+  @override
+  String get catSearch => 'Ism yoki ish joyi bo‘yicha qidirish';
+
+  @override
+  String get catSignIn =>
+      'Katalogni ko‘rish va yulduzcha bosish uchun hisobga kiring.';
+
+  @override
+  String get catEmptyTeachers =>
+      'Hozircha katalogda ustoz yo‘q. Ustozlar profilida «Katalogda ko‘rsatish»ni yoqishi bilan shu yerda chiqadi.';
+
+  @override
+  String get catEmptyExperts =>
+      'Hozircha katalogda mutaxassis yo‘q. Bu yerda faqat tasdiqlangan mutaxassislar chiqadi.';
+
+  @override
+  String get catLoadFailed =>
+      'Katalog yuklanmadi. Internetni tekshirib, qayta urining.';
+
+  @override
+  String get catStarFailed => 'Yulduzcha saqlanmadi. Qayta urining.';
+
+  @override
+  String get catStar => 'Yulduzcha bosish';
+
+  @override
+  String get catUnstar => 'Yulduzchani olib tashlash';
+
+  @override
+  String get catShowMe => 'Katalogda ko‘rsatish';
+
+  @override
+  String get catShowMeHint =>
+      'Yoqilsa, hisobga kirgan barcha foydalanuvchilar profilingizni katalogda ko‘radi va yulduzcha bosa oladi. Standart holatda o‘chiq.';
+
+  @override
+  String get catVisibleFailed => 'Sozlama saqlanmadi. Qayta urining.';
+
+  @override
+  String catStarsCount(int n) {
+    return '$n ta yulduzcha';
+  }
 }

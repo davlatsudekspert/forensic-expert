@@ -12982,4 +12982,59 @@ class AppLocalizationsRu extends AppLocalizations {
   String admTestsAvg(String score, String grade) {
     return 'Средний балл (100): $score · Оценка: $grade';
   }
+
+  @override
+  String get catTitle => 'Преподаватели и эксперты';
+
+  @override
+  String get catHomeHint => 'Найдите лучших и поставьте звёздочку';
+
+  @override
+  String get catTabTeachers => 'Преподаватели';
+
+  @override
+  String get catTabExperts => 'Эксперты';
+
+  @override
+  String get catSearch => 'Поиск по имени или месту работы';
+
+  @override
+  String get catSignIn =>
+      'Войдите, чтобы смотреть каталог и ставить звёздочки.';
+
+  @override
+  String get catEmptyTeachers =>
+      'В каталоге пока нет преподавателей. Они появятся, когда включат «Показывать в каталоге» в профиле.';
+
+  @override
+  String get catEmptyExperts =>
+      'В каталоге пока нет экспертов. Здесь показываются только подтверждённые эксперты.';
+
+  @override
+  String get catLoadFailed =>
+      'Каталог не загрузился. Проверьте интернет и повторите.';
+
+  @override
+  String get catStarFailed => 'Звёздочка не сохранилась. Повторите.';
+
+  @override
+  String get catStar => 'Поставить звёздочку';
+
+  @override
+  String get catUnstar => 'Убрать звёздочку';
+
+  @override
+  String get catShowMe => 'Показывать в каталоге';
+
+  @override
+  String get catShowMeHint =>
+      'Если включить, все вошедшие пользователи увидят ваш профиль в каталоге и смогут ставить звёздочки. По умолчанию выключено.';
+
+  @override
+  String get catVisibleFailed => 'Настройка не сохранилась. Повторите.';
+
+  @override
+  String catStarsCount(int n) {
+    return 'Звёздочек: $n';
+  }
 }

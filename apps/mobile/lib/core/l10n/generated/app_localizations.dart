@@ -22412,6 +22412,102 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Average score (100): {score} · Grade: {grade}'**
   String admTestsAvg(String score, String grade);
+
+  /// Teachers and experts catalogue with stars.
+  ///
+  /// In en, this message translates to:
+  /// **'Teachers and experts'**
+  String get catTitle;
+
+  /// Teachers and experts catalogue with stars.
+  ///
+  /// In en, this message translates to:
+  /// **'Find the best and give them a star'**
+  String get catHomeHint;
+
+  /// Teachers and experts catalogue with stars.
+  ///
+  /// In en, this message translates to:
+  /// **'Teachers'**
+  String get catTabTeachers;
+
+  /// Teachers and experts catalogue with stars.
+  ///
+  /// In en, this message translates to:
+  /// **'Experts'**
+  String get catTabExperts;
+
+  /// Teachers and experts catalogue with stars.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by name or workplace'**
+  String get catSearch;
+
+  /// Teachers and experts catalogue with stars.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in to browse the catalogue and give stars.'**
+  String get catSignIn;
+
+  /// Teachers and experts catalogue with stars.
+  ///
+  /// In en, this message translates to:
+  /// **'No teachers in the catalogue yet. They appear once they turn on “Show in catalogue” in their profile.'**
+  String get catEmptyTeachers;
+
+  /// Teachers and experts catalogue with stars.
+  ///
+  /// In en, this message translates to:
+  /// **'No experts in the catalogue yet. Only verified experts appear here.'**
+  String get catEmptyExperts;
+
+  /// Teachers and experts catalogue with stars.
+  ///
+  /// In en, this message translates to:
+  /// **'The catalogue did not load. Check your connection and try again.'**
+  String get catLoadFailed;
+
+  /// Teachers and experts catalogue with stars.
+  ///
+  /// In en, this message translates to:
+  /// **'The star was not saved. Try again.'**
+  String get catStarFailed;
+
+  /// Teachers and experts catalogue with stars.
+  ///
+  /// In en, this message translates to:
+  /// **'Give a star'**
+  String get catStar;
+
+  /// Teachers and experts catalogue with stars.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove star'**
+  String get catUnstar;
+
+  /// Teachers and experts catalogue with stars.
+  ///
+  /// In en, this message translates to:
+  /// **'Show in catalogue'**
+  String get catShowMe;
+
+  /// Teachers and experts catalogue with stars.
+  ///
+  /// In en, this message translates to:
+  /// **'When on, all signed-in users can see your profile in the catalogue and give you stars. Off by default.'**
+  String get catShowMeHint;
+
+  /// Teachers and experts catalogue with stars.
+  ///
+  /// In en, this message translates to:
+  /// **'The setting was not saved. Try again.'**
+  String get catVisibleFailed;
+
+  /// Catalogue star count.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} stars'**
+  String catStarsCount(int n);
 }
 
 class _AppLocalizationsDelegate

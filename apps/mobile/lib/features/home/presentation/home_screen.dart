@@ -1202,6 +1202,8 @@ class _HomeHero extends ConsumerWidget {
                       // bo‘limlar ko‘rinadi.
                       const SizedBox(height: FeSpace.sm),
                       const _NewSections(),
+                      const SizedBox(height: FeSpace.sm),
+                      const _CatalogBanner(),
                     ],
                   ),
                 ),
@@ -1378,6 +1380,56 @@ class _NewSections extends ConsumerWidget {
           ],
         ),
       ],
+    );
+  }
+}
+
+/// «Ustozlar va mutaxassislar ⭐» — katalog kartasi (egasi so‘rovi,
+/// 2026-11-02).
+class _CatalogBanner extends StatelessWidget {
+  const _CatalogBanner();
+
+  @override
+  Widget build(BuildContext context) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    return FeCard(
+      key: const Key('home.catalog'),
+      onTap: () => context.push(Routes.catalog),
+      child: Row(
+        children: [
+          Container(
+            width: 48,
+            height: 48,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              gradient: LinearGradient(
+                colors: [c.brand, Color.lerp(c.brand, c.accent, 0.7)!],
+              ),
+            ),
+            child: const Icon(
+              Icons.star_rounded,
+              color: Color(0xFFFFC83D),
+              size: 28,
+            ),
+          ),
+          const SizedBox(width: FeSpace.sm),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(l.catTitle, style: t.titleSmall),
+                Text(
+                  l.catHomeHint,
+                  style: t.bodySmall?.copyWith(color: c.textSecondary),
+                ),
+              ],
+            ),
+          ),
+          Icon(Icons.chevron_right, color: c.textSecondary),
+        ],
+      ),
     );
   }
 }

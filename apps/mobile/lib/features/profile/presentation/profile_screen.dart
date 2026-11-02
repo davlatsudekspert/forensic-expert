@@ -6,6 +6,7 @@ import 'package:go_router/go_router.dart';
 import '../../../app/account.dart';
 import '../../../app/app_info.dart';
 import '../../../app/avatar.dart';
+import '../../../app/catalog.dart';
 import '../../../app/class_quiz.dart' show classIsTeacherProvider;
 import '../../../app/moderation.dart';
 import '../../../app/plan.dart';
@@ -24,9 +25,11 @@ import '../../../core/perf/startup_metrics.dart';
 import '../../../core/settings/app_settings.dart';
 import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../domain/catalog/catalog.dart';
 import '../../../domain/plan/plan_models.dart';
 import '../../../domain/ports/professional_ports.dart';
 import '../../../domain/professional/professional_models.dart';
+import '../../catalog/presentation/catalog_widgets.dart';
 import '../../pro/presentation/pro_gate.dart' show proPlanName;
 import '../../professional/presentation/professional_widgets.dart';
 import '../../professional/presentation/verification_screens.dart';
@@ -505,6 +508,14 @@ class ProfileScreen extends ConsumerWidget {
                           ),
                       ],
                     ),
+                    // Tasdiqlangan mutaxassis: katalogda ko‘rinish roziligi.
+                    if (signedIn &&
+                        (ref.watch(catalogMeProvider).value?.expertEligible ??
+                            false))
+                      const Padding(
+                        padding: EdgeInsets.only(top: FeSpace.sm),
+                        child: CatalogVisibilityTile(kind: CatalogKind.expert),
+                      ),
                   ],
                   FeSectionHeader(l.profileSectionData),
                   _Group(

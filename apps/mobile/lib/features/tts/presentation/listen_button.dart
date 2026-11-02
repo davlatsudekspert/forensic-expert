@@ -7,6 +7,7 @@ import 'package:go_router/go_router.dart';
 import '../../../app/plan.dart';
 import '../../../app/routes.dart';
 import '../../../app/tts.dart';
+import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../domain/plan/plan_models.dart' show ProFeature;
 import '../../../domain/ports/tts_ports.dart';
@@ -21,10 +22,18 @@ enum ListenState { idle, loading, playing, paused, finished }
 /// bo‘lib qoladi. Vidjet olib tashlansa yoki [text] o‘zgarsa, ijro to‘xtaydi.
 /// Server sozlanmagan bo‘lsa (yoki matn bo‘sh) — hech narsa ko‘rsatilmaydi.
 class ListenButton extends ConsumerStatefulWidget {
-  const ListenButton({super.key, required this.text, this.color});
+  const ListenButton({
+    super.key,
+    required this.text,
+    this.color,
+    this.labeled = false,
+  });
 
   final String text;
   final Color? color;
+
+  /// `true` — «🔊 Tinglash» yozuvli tugma (dars pastki paneli).
+  final bool labeled;
 
   @override
   ConsumerState<ListenButton> createState() => _ListenButtonState();
@@ -211,19 +220,36 @@ class _ListenButtonState extends ConsumerState<ListenButton> {
       ListenState.paused => (Icons.play_arrow_rounded, l.ttsResume, _resume),
       ListenState.finished => (Icons.replay_rounded, l.ttsReplay, _replay),
     };
+    final iconW = icon == null
+        ? const SizedBox(
+            key: Key('tts.loading'),
+            width: 20,
+            height: 20,
+            child: CircularProgressIndicator(strokeWidth: 2.5),
+          )
+        : Icon(icon, key: Key('tts.icon.${_state.name}'));
+    // Yozuvli tugma (egasi topa olmadi, 2026-11-02): «🔊 Tinglash».
+    if (widget.labeled) {
+      return Tooltip(
+        message: tooltip,
+        child: FilledButton.tonalIcon(
+          key: const Key('tts.listen'),
+          style: FilledButton.styleFrom(
+            visualDensity: VisualDensity.compact,
+            padding: const EdgeInsets.symmetric(horizontal: FeSpace.sm),
+          ),
+          onPressed: onTap == null ? null : () => unawaited(onTap()),
+          icon: iconW,
+          label: Text(tooltip, maxLines: 1, overflow: TextOverflow.fade),
+        ),
+      );
+    }
     return IconButton(
       key: const Key('tts.listen'),
       tooltip: tooltip,
       color: widget.color,
       onPressed: onTap == null ? null : () => unawaited(onTap()),
-      icon: icon == null
-          ? const SizedBox(
-              key: Key('tts.loading'),
-              width: 20,
-              height: 20,
-              child: CircularProgressIndicator(strokeWidth: 2.5),
-            )
-          : Icon(icon, key: Key('tts.icon.${_state.name}')),
+      icon: iconW,
     );
   }
 }

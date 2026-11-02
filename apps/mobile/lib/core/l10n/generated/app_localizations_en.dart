@@ -12933,4 +12933,58 @@ class AppLocalizationsEn extends AppLocalizations {
   String admTestsAvg(String score, String grade) {
     return 'Average score (100): $score · Grade: $grade';
   }
+
+  @override
+  String get catTitle => 'Teachers and experts';
+
+  @override
+  String get catHomeHint => 'Find the best and give them a star';
+
+  @override
+  String get catTabTeachers => 'Teachers';
+
+  @override
+  String get catTabExperts => 'Experts';
+
+  @override
+  String get catSearch => 'Search by name or workplace';
+
+  @override
+  String get catSignIn => 'Sign in to browse the catalogue and give stars.';
+
+  @override
+  String get catEmptyTeachers =>
+      'No teachers in the catalogue yet. They appear once they turn on “Show in catalogue” in their profile.';
+
+  @override
+  String get catEmptyExperts =>
+      'No experts in the catalogue yet. Only verified experts appear here.';
+
+  @override
+  String get catLoadFailed =>
+      'The catalogue did not load. Check your connection and try again.';
+
+  @override
+  String get catStarFailed => 'The star was not saved. Try again.';
+
+  @override
+  String get catStar => 'Give a star';
+
+  @override
+  String get catUnstar => 'Remove star';
+
+  @override
+  String get catShowMe => 'Show in catalogue';
+
+  @override
+  String get catShowMeHint =>
+      'When on, all signed-in users can see your profile in the catalogue and give you stars. Off by default.';
+
+  @override
+  String get catVisibleFailed => 'The setting was not saved. Try again.';
+
+  @override
+  String catStarsCount(int n) {
+    return '$n stars';
+  }
 }

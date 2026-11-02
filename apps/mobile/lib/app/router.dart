@@ -26,6 +26,7 @@ import '../domain/referral/referral_models.dart';
 import '../domain/support/support_models.dart';
 import '../features/account/presentation/auth_screens.dart';
 import '../features/admin/presentation/admin_class_tests_screen.dart';
+import '../features/catalog/presentation/catalog_screen.dart';
 import '../features/admin/presentation/admin_plans_screen.dart';
 import '../features/admin/presentation/admin_screen.dart';
 import '../features/admin/presentation/admin_support_screens.dart';
@@ -719,6 +720,10 @@ final routerProvider = Provider<GoRouter>((ref) {
                       ),
                       null => const NotFoundScreen(),
                     },
+                  ),
+                  GoRoute(
+                    path: 'catalog',
+                    builder: (c, s) => const CatalogScreen(),
                   ),
                   GoRoute(
                     path: 'equipment',
