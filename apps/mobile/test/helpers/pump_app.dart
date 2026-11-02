@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_riverpod/misc.dart' show Override;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/app/app.dart';
+import 'package:forensic_expert/app/lessons.dart' show narrationSourceProvider;
+import 'package:forensic_expert/data/lessons/narration_overlay.dart';
 import 'package:forensic_expert/app/plan.dart';
 import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/router.dart';
@@ -68,6 +70,8 @@ Future<ProviderContainer> pumpApp(
       // Har sinovda toza saqlagich: majburiy yangilash holati sinovlar
       // orasida qolmaydi.
       proEnabledProvider.overrideWithValue(proEnabled),
+      // Ilova ichidagi tushuntirish fayllari (rootBundle) sinovda o‘qilmaydi.
+      narrationSourceProvider.overrideWithValue(const NoNarrationSource()),
       updateGateStoreProvider.overrideWithValue(
         updateStore ?? MemoryUpdateGateStore(),
       ),

@@ -41,6 +41,15 @@ class AssetNarrationSource implements NarrationSource {
   }
 }
 
+/// Tushuntirishsiz manba (sinovlar va demo uchun).
+class NoNarrationSource implements NarrationSource {
+  const NoNarrationSource();
+
+  @override
+  Future<List<({String title, String text})>?> load(String deckId) async =>
+      null;
+}
+
 /// Bo‘sh `narration`larni mos sarlavhali ilova matni bilan to‘ldiradi.
 /// Faqat o‘zbekcha (asl tili `uz`) dekka qo‘llanadi.
 LessonDeck applyNarration(
