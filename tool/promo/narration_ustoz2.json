@@ -1,0 +1,125 @@
+{
+ "video": "ustoz2",
+ "voice": "ru-RU-DmitryNeural",
+ "lines": [
+  {
+   "id": "w01",
+   "scene": "intro",
+   "ru": "Форэ́нзик Э́кспэрт для преподавателей: проведите тест и устный экзамен по QR-коду и работайте над собой.",
+   "uz": "Forensic Expert ustozlar uchun: testni va og‘zaki imtihonni QR-kod bilan o‘tkazing, o‘z ustingizda ishlang."
+  },
+  {
+   "id": "w02",
+   "scene": "desk",
+   "ru": "В режиме преподавателя всё нужное собрано на одном экране: «Стол преподавателя».",
+   "uz": "Ustoz rejimida kerakli hamma narsa bitta ekranda: «Ustoz stolim».",
+   "steps": [
+    "Profil → Rejim → «Ustoz»",
+    "Bosh sahifa → «Ustoz stolim»"
+   ]
+  },
+  {
+   "id": "w03",
+   "scene": "test",
+   "ru": "Выберите тему, число студентов и время. На экране появятся код и QR — студенты подключаются сами.",
+   "uz": "Mavzuni, talabalar sonini va vaqtni tanlang. Ekranda kod va QR chiqadi: talabalar o‘zlari qo‘shiladi.",
+   "steps": [
+    "«Guruh testi» → mavzuni tanlang",
+    "Talabalar soni (200 gacha) → «Yaratish",
+    "Doskada kod va QR ko‘rinadi"
+   ]
+  },
+  {
+   "id": "w04",
+   "scene": "test2",
+   "ru": "Видно, сколько студентов подключилось. Нажмите «Начать» — вопросы идут один за другим.",
+   "uz": "Nechta talaba qo‘shilgani ko‘rinadi. «Boshlash» ni bosing: savollar ketma-ket ochiladi.",
+   "steps": [
+    "«Qo‘shildi: x / N» ni kuzating",
+    "«Boshlash» ni bosing"
+   ]
+  },
+  {
+   "id": "w05",
+   "scene": "results",
+   "ru": "После теста — баллы, оценки и файл с результатами.",
+   "uz": "Testdan keyin — ballar, baholar va natijalar fayli.",
+   "steps": [
+    "«Natijalar» bo‘limi",
+    "CSV faylni saqlang"
+   ]
+  },
+  {
+   "id": "w06",
+   "scene": "oral",
+   "ru": "Устный экзамен: выберите темы, нажмите «Группе (QR)» и укажите число студентов и время подготовки.",
+   "uz": "Og‘zaki imtihon: mavzularni tanlang, «Guruhga (QR)» ni bosing, talabalar sonini va tayyorlanish vaqtini kiriting.",
+   "steps": [
+    "«Og‘zaki imtihon» → mavzular",
+    "«Guruhga (QR)» → talabalar soni",
+    "Tayyorlanish vaqtini tanlang"
+   ]
+  },
+  {
+   "id": "w07",
+   "scene": "oral2",
+   "ru": "На экране — QR и код. Каждый студент получает свой билет сразу после подключения.",
+   "uz": "Ekranda QR va kod chiqadi. Har bir talaba qo‘shilishi bilan o‘z biletini oladi.",
+   "steps": [
+    "Doskada QR va kod",
+    "Talabalar skanerlaydi, ism yozadi",
+    "Har kimga alohida bilet"
+   ]
+  },
+  {
+   "id": "w08",
+   "scene": "oral3",
+   "ru": "Очередь: первыми — те, кто готов отвечать. Выберите студента, послушайте ответ и поставьте от нуля до двадцати баллов за каждый вопрос.",
+   "uz": "Navbat: birinchi bo‘lib javobga tayyorlar chiqadi. Talabani tanlang, javobni eshiting va har savolga 0 dan 20 gacha ball qo‘ying.",
+   "steps": [
+    "«Navbat»: tayyorlar birinchi",
+    "Talabani bosing → javobni eshiting",
+    "Har savolga 0–20 ball → «Saqlash"
+   ]
+  },
+  {
+   "id": "w09",
+   "scene": "oral4",
+   "ru": "Студент видит только свой балл. Если он вышел из приложения, вы это увидите.",
+   "uz": "Talaba faqat o‘z balini ko‘radi. Ilovadan chiqib ketsa, siz buni ko‘rasiz.",
+   "steps": [
+    "Doskada ballar ko‘rinmaydi",
+    "«Ilovadan chiqdi: N» belgisi"
+   ]
+  },
+  {
+   "id": "w10",
+   "scene": "self",
+   "ru": "А для себя — готовые лекции со ссылками на книги и страницы, пояснения, тесты и справочник по методам и веществам.",
+   "uz": "O‘zingiz uchun — kitob va betlarga havolali tayyor ma’ruzalar, tushuntirishlar, testlar va usullar hamda moddalar ma’lumotnomasi.",
+   "steps": [
+    "«Darslar» → mavzu",
+    "«Tushuntirish» va testlar",
+    "Kutubxona: usullar va moddalar"
+   ]
+  },
+  {
+   "id": "w11",
+   "scene": "thanks",
+   "ru": "Благодарим профессора Гиясова и всех авторов учебников: их труды — надёжный источник знаний для студентов и преподавателей.",
+   "uz": "Professor G‘iyosov Z.A. va barcha mualliflarga katta rahmat: ularning mehnati — talaba va ustozlar uchun ishonchli bilim manbai."
+  },
+  {
+   "id": "w12",
+   "scene": "thanks_note",
+   "ru": "Материалы изложены кратко, своими словами, по содержанию учебников; у каждого пункта указаны книга и страница, а полный текст — в оригинальной книге.",
+   "uz": "Materiallar darsliklar mazmuni asosida, o‘z so‘zlarimiz bilan qisqacha bayon qilingan; har bir bandda kitob va beti ko‘rsatilgan. To‘liq matn — asl kitobda."
+  },
+  {
+   "id": "w13",
+   "scene": "outro",
+   "ru": "Форэ́нзик Э́кспэрт. Доказательства. Наука. Точность.",
+   "uz": "Forensic Expert. Dalil. Ilm. Aniqlik."
+  }
+ ]
+}
