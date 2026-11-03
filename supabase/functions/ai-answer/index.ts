@@ -112,6 +112,11 @@ Deno.serve(async (req) => {
   if (authError || !u.user) return json({ error: "unauthorized" }, 401);
   if (await updateRequired(req, db)) return json({ error: "update_required" }, 426);
 
+  // Imtihon paytida AI yopiq: jonli test yoki baholanmagan og‘zaki bilet
+  // (public.ai_exam_lock, migratsiya 20261103040000). RPC xatosida — ochiq qoladi.
+  const { data: locked } = await db.rpc("ai_exam_lock");
+  if (locked === true) return json({ error: "exam_locked" }, 423);
+
   // Per-user hourly limit (RLS: users insert/read only their own rows).
   const since = new Date(Date.now() - 3600_000).toISOString();
   const { count } = await db.from("ai_usage").select("id", { count: "exact", head: true })
