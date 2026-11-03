@@ -32,7 +32,7 @@ void main() {
     expect(i.steps.length, 6, reason: '5 bosqich + tahlilga tayyorlash');
     expect(i.sources.length, greaterThanOrEqualTo(5));
     expect(i.sources.every((s) => s.valid), isTrue);
-    expect(i.national, contains('Sud-kimyo bo‘limiga'));
+    expect(i.national, isEmpty, reason: 'faqat usul yoziladi, yangilik emas');
     expect(i.methods, contains('method-spe'));
     expect(File(i.image).existsSync(), isTrue, reason: i.image);
   });

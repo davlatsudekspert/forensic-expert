@@ -69,8 +69,7 @@ void main() {
       await qa.tapFinder(find.byKey(const Key('method.spe.device')));
       await qa.settle(maxMs: 4000);
       qa.expectText('Qattiq fazali ekstraksiya (SPE) qurilmasi', s);
-      await qa.scrollUntil(find.byKey(const Key('equipment.national')));
-      qa.expectText('Sud-kimyo bo‘limiga', s);
+      qa.expectNoText('markaz e’loni', s);
     });
 
     await qa.step('Tarmoq o‘chiq: oflayn ishladi', (s) async {

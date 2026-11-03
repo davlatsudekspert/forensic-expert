@@ -10,10 +10,9 @@ import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/core/design/theme.dart';
 import 'package:forensic_expert/core/l10n/generated/app_localizations.dart';
+import 'package:forensic_expert/core/settings/app_settings.dart';
 import 'package:forensic_expert/domain/catalog/catalog.dart';
 import 'package:forensic_expert/features/catalog/presentation/catalog_screen.dart';
-
-import 'package:forensic_expert/core/settings/app_settings.dart';
 
 import '../helpers/pump_app.dart';
 
