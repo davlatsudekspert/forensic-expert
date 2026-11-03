@@ -317,3 +317,8 @@ Egasi yuborgan 6-kurs davolash rejasi (7 mavzu, 18+18=36 soat) bo‘yicha: «Dar
 - **Yulduzcha:** bosilmagan holat ham oltin «tabletka» (ustoz bilan bir xil o‘lcham va rang; farq — faqat yulduz to‘liq/bo‘sh).
 
 - **Tuzatish (egasi, 2026-11-03):** SPE kartochkasidan markaz e’loni (O‘zbekiston bloki va manba) olib tashlandi — «faqat usulni yozamiz». Keyingi buildda.
+
+## 2026-11-03 — O‘z kartochkasidagi yulduzcha (build 55)
+- **Muammo (egasi):** «Mutaxassis — menda 1 ta yulduzcha bor, sen yo‘q deding». Bazada (`catalog_stars`) egasining mutaxassis kartochkasiga 1 ta yulduz bor edi; server `stars=1` qaytaradi. Xato ilovada: o‘z kartochkasida yulduz belgisi «men bosganmanmi» (`starred`) bo‘yicha chizilardi — o‘ziga bosib bo‘lmagani uchun u doim `false`, natijada olingan yulduz bo‘sh kontur bo‘lib ko‘rinardi.
+- **Tuzatish:** o‘z kartochkasida yulduz `stars > 0` bo‘lsa to‘liq oltin, tabletka ustozlar ro‘yxatidagi bilan bir xil; bosilmaydi (`cat.starMine.<id>`). Widget test + skrinshot (`star_shots_test`).
+- Build 55 tarkibi: SPE kartochkasi markaz e’lonisiz + shu tuzatish.
