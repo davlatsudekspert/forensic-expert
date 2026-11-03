@@ -6,6 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../app/class_quiz.dart';
+import '../../../app/keep_awake.dart';
 import '../../../app/lessons.dart';
 import '../../../app/plan.dart';
 import '../../../app/routes.dart';
@@ -148,7 +149,7 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
   bool _projector = false;
   bool _forcedLandscape = false;
   late final LessonScreenGuard _guard;
-  late final ClassScreenAwake _awake;
+  late final KeepAwake _keep;
   late final ClassOrientationControl _orientation;
   List<LessonPage>? _pages;
   Locale? _pagesLocale;
@@ -177,7 +178,7 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
     WidgetsBinding.instance.addObserver(this);
     unawaited(_loadAuto());
     _guard = ref.read(lessonScreenGuardProvider);
-    _awake = ref.read(classScreenAwakeProvider);
+    _keep = ref.read(keepAwakeProvider);
     _orientation = ref.read(classOrientationControlProvider);
     // Skrinshot/yozib olish himoyasi (FLAG_SECURE) YOQILMAYDI: ustozlar darsni
     // televizorga uzatadi (Cast/Miracast/HDMI), himoya esa ekranni qora qiladi.
@@ -191,7 +192,8 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
     _autoTimer?.cancel();
     _guard.release();
     _hideTimer?.cancel();
-    if (_projector || _auto) _awake.disable();
+    _keep.release('projector', this);
+    _keep.release('auto', this);
     if (_forcedLandscape) _orientation.restore();
     _pc.dispose();
     _focus.dispose();
@@ -215,7 +217,7 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
       _autoSeconds = p.seconds;
     });
     if (_auto) {
-      unawaited(_awake.enable());
+      _keep.acquire('auto', this);
       _scheduleAuto();
     }
   }
@@ -301,10 +303,10 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
       _autoPaused = false;
     });
     if (on) {
-      unawaited(_awake.enable());
+      _keep.acquire('auto', this);
       _scheduleAuto();
-    } else if (!_projector) {
-      unawaited(_awake.disable());
+    } else {
+      _keep.release('auto', this);
     }
     _saveAuto();
   }
@@ -459,7 +461,7 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
     _resetController();
     setState(() => _projector = true);
     _showControls();
-    unawaited(_awake.enable());
+    _keep.acquire('projector', this);
     WidgetsBinding.instance.addPostFrameCallback(
       (_) => unawaited(_askLandscape()),
     );
@@ -468,7 +470,7 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
   void _exitProjector() {
     _hideTimer?.cancel();
     _controls = true;
-    if (!_auto) _awake.disable();
+    _keep.release('projector', this);
     if (_forcedLandscape) {
       _forcedLandscape = false;
       _orientation.restore();

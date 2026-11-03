@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/keep_awake.dart';
 import '../../../app/plan.dart';
 import '../../../app/routes.dart';
 import '../../../app/tts.dart';
@@ -56,11 +57,30 @@ class ListenButton extends ConsumerStatefulWidget {
   ConsumerState<ListenButton> createState() => _ListenButtonState();
 }
 
-class _ListenButtonState extends ConsumerState<ListenButton> {
+class _ListenButtonState extends ConsumerState<ListenButton>
+    with WidgetsBindingObserver {
   ListenState _state = ListenState.idle;
+  late final KeepAwake _keep;
+  bool _foreground = true;
+
+  /// Ovoz chalinayotganda (va ilova oldingi planda) ekran o‘chmaydi.
+  void _syncAwake() {
+    if (_state == ListenState.playing && _foreground) {
+      _keep.acquire('listen', this);
+    } else {
+      _keep.release('listen', this);
+    }
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    _foreground = state == AppLifecycleState.resumed;
+    _syncAwake();
+  }
 
   void _setListen(ListenState v) {
     setState(() => _state = v);
+    _syncAwake();
     widget.onStateChanged?.call(v);
   }
 
@@ -75,6 +95,8 @@ class _ListenButtonState extends ConsumerState<ListenButton> {
   @override
   void initState() {
     super.initState();
+    _keep = ref.read(keepAwakeProvider);
+    WidgetsBinding.instance.addObserver(this);
     if (widget.autoStart) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (!mounted || _state != ListenState.idle) return;
@@ -115,6 +137,8 @@ class _ListenButtonState extends ConsumerState<ListenButton> {
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    _keep.release('listen', this);
     _gen++;
     final player = _player;
     unawaited(_sub?.cancel());

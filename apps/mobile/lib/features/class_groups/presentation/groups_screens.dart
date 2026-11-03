@@ -16,6 +16,8 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/class_groups/class_groups_models.dart';
 import '../../../domain/plan/plan_models.dart';
+import '../../oral_group/presentation/oral_group_widgets.dart'
+    show routeOralScan;
 import '../../pro/presentation/pro_gate.dart';
 import '../../professional/presentation/professional_widgets.dart' show FeNote;
 import 'group_widgets.dart';
@@ -773,6 +775,11 @@ class _GroupScanState extends State<GroupScanScreen> {
   void _onDetect(BarcodeCapture capture) {
     if (_done) return;
     for (final b in capture.barcodes) {
+      // Guruh og‘zaki imtihoni QR’i: to‘g‘ridan-to‘g‘ri uning ekraniga.
+      if (routeOralScan(context, b.rawValue)) {
+        _done = true;
+        return;
+      }
       final inv = GroupCode.fromText(b.rawValue);
       if (inv != null) {
         _done = true;

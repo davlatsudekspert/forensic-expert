@@ -22964,6 +22964,558 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'From the lesson slide (original text).'**
   String get teacherOralKeyNote;
+
+  /// Topic picker: start a QR group oral exam.
+  ///
+  /// In en, this message translates to:
+  /// **'For a group (QR)'**
+  String get oralGroupButton;
+
+  /// Topic picker: link to open group exams.
+  ///
+  /// In en, this message translates to:
+  /// **'Active group exams: {n}'**
+  String oralGroupActiveLink(int n);
+
+  /// Group oral exam setup screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Group exam'**
+  String get oralGroupSetupTitle;
+
+  /// Setup explanation.
+  ///
+  /// In en, this message translates to:
+  /// **'A QR code and a code appear on the board. Students join from their phones, get a random ticket and see its questions right away. The answer key stays on your phone only and is never sent to the server.'**
+  String get oralGroupSetupIntro;
+
+  /// Setup opened without topics.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick topics first to start a new exam. Active exams are below.'**
+  String get oralGroupNoTopics;
+
+  /// Number of students field label.
+  ///
+  /// In en, this message translates to:
+  /// **'Number of students'**
+  String get oralGroupStudentsLabel;
+
+  /// Number of students helper.
+  ///
+  /// In en, this message translates to:
+  /// **'1–200. This many tickets will be made.'**
+  String get oralGroupStudentsHelper;
+
+  /// Decrease students tooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Decrease'**
+  String get oralGroupStudentsDec;
+
+  /// Increase students tooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Increase'**
+  String get oralGroupStudentsInc;
+
+  /// Preparation time section label.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparation time'**
+  String get oralGroupPrepLabel;
+
+  /// No preparation time.
+  ///
+  /// In en, this message translates to:
+  /// **'None'**
+  String get oralGroupPrepNone;
+
+  /// Preparation chip, minutes.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} min'**
+  String oralGroupPrepMin(int n);
+
+  /// Preparation hint.
+  ///
+  /// In en, this message translates to:
+  /// **'The student sees the ticket at once; this time is only a countdown.'**
+  String get oralGroupPrepHint;
+
+  /// Questions available in the chosen topics.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions in the chosen topics: {n}'**
+  String oralGroupAvailable(int n);
+
+  /// Soft notice: the pool is too small.
+  ///
+  /// In en, this message translates to:
+  /// **'Not enough questions: some tickets will repeat questions'**
+  String get oralGroupRepeatNotice;
+
+  /// Create the group exam.
+  ///
+  /// In en, this message translates to:
+  /// **'Start'**
+  String get oralGroupStart;
+
+  /// Open group exams header.
+  ///
+  /// In en, this message translates to:
+  /// **'Active exams'**
+  String get oralGroupActiveSection;
+
+  /// Finished group exams header.
+  ///
+  /// In en, this message translates to:
+  /// **'Finished (kept for 30 days)'**
+  String get oralGroupFinishedSection;
+
+  /// Exam list row: code and counts.
+  ///
+  /// In en, this message translates to:
+  /// **'Code {code} · joined: {joined} · graded: {graded}'**
+  String oralGroupSessionLine(String code, int joined, int graded);
+
+  /// Exam without a title.
+  ///
+  /// In en, this message translates to:
+  /// **'Group exam'**
+  String get oralGroupNoTitle;
+
+  /// Board: how to join.
+  ///
+  /// In en, this message translates to:
+  /// **'In FORENSIC EXPERT → “Group test”, enter the code or scan the QR:'**
+  String get oralGroupHostJoinHint;
+
+  /// Board: joined students.
+  ///
+  /// In en, this message translates to:
+  /// **'Joined: {x} / {n}'**
+  String oralGroupJoinedCount(int x, int n);
+
+  /// Board tile number.
+  ///
+  /// In en, this message translates to:
+  /// **'No. {n}'**
+  String oralGroupTile(int n);
+
+  /// Ticket status: free.
+  ///
+  /// In en, this message translates to:
+  /// **'free'**
+  String get oralGroupStatusFree;
+
+  /// Ticket status: student joined.
+  ///
+  /// In en, this message translates to:
+  /// **'joined'**
+  String get oralGroupStatusJoined;
+
+  /// Ticket status: student ready.
+  ///
+  /// In en, this message translates to:
+  /// **'ready'**
+  String get oralGroupStatusReady;
+
+  /// Ticket status: graded.
+  ///
+  /// In en, this message translates to:
+  /// **'graded'**
+  String get oralGroupStatusGraded;
+
+  /// Open the queue.
+  ///
+  /// In en, this message translates to:
+  /// **'Queue'**
+  String get oralGroupQueue;
+
+  /// Open the results.
+  ///
+  /// In en, this message translates to:
+  /// **'Results'**
+  String get oralGroupResults;
+
+  /// Finish the exam.
+  ///
+  /// In en, this message translates to:
+  /// **'Finish'**
+  String get oralGroupFinish;
+
+  /// Finish confirm title.
+  ///
+  /// In en, this message translates to:
+  /// **'Finish the exam?'**
+  String get oralGroupFinishTitle;
+
+  /// Finish confirm body.
+  ///
+  /// In en, this message translates to:
+  /// **'New students will not be able to join and the queue closes. Results are kept for 30 days.'**
+  String get oralGroupFinishBody;
+
+  /// Banner: exam finished.
+  ///
+  /// In en, this message translates to:
+  /// **'The exam is finished. Results are kept for 30 days.'**
+  String get oralGroupFinishedBanner;
+
+  /// Cancel in dialogs.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get oralGroupCancel;
+
+  /// Board: scores are never shown.
+  ///
+  /// In en, this message translates to:
+  /// **'Scores are never shown on the board.'**
+  String get oralGroupQrNote;
+
+  /// Queue screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Queue'**
+  String get oralGroupQueueTitle;
+
+  /// Queue is empty.
+  ///
+  /// In en, this message translates to:
+  /// **'Nobody has joined yet.'**
+  String get oralGroupQueueEmpty;
+
+  /// Queue section: ready students.
+  ///
+  /// In en, this message translates to:
+  /// **'Ready ({n})'**
+  String oralGroupSectionReady(int n);
+
+  /// Queue section: preparing students.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparing ({n})'**
+  String oralGroupSectionJoined(int n);
+
+  /// Queue section: graded students.
+  ///
+  /// In en, this message translates to:
+  /// **'Graded ({n})'**
+  String oralGroupSectionGraded(int n);
+
+  /// Queue row: ready time.
+  ///
+  /// In en, this message translates to:
+  /// **'Ready: {time}'**
+  String oralGroupReadyAt(String time);
+
+  /// Queue row: already called.
+  ///
+  /// In en, this message translates to:
+  /// **'called'**
+  String get oralGroupCalledMark;
+
+  /// Grade screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Grading'**
+  String get oralGroupGradeTitle;
+
+  /// Save the grades.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get oralGroupSave;
+
+  /// Snackbar after saving the grades.
+  ///
+  /// In en, this message translates to:
+  /// **'Grade saved: {total} / 100'**
+  String oralGroupSaved(int total);
+
+  /// Menu: remove student from the exam.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove from the exam'**
+  String get oralGroupKick;
+
+  /// Kick confirm title.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove {name} from the exam?'**
+  String oralGroupKickTitle(String name);
+
+  /// Kick confirm body.
+  ///
+  /// In en, this message translates to:
+  /// **'The ticket is freed for another student. A removed student cannot rejoin.'**
+  String get oralGroupKickBody;
+
+  /// Answer key not found locally.
+  ///
+  /// In en, this message translates to:
+  /// **'Answer key not found: the lesson may have changed or failed to load.'**
+  String get oralGroupKeyMissing;
+
+  /// Grade screen: already graded.
+  ///
+  /// In en, this message translates to:
+  /// **'Already graded — you can grade again.'**
+  String get oralGroupGradedBefore;
+
+  /// Results screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Results'**
+  String get oralGroupResultsTitle;
+
+  /// No students joined.
+  ///
+  /// In en, this message translates to:
+  /// **'Nobody has joined yet.'**
+  String get oralGroupResultsEmpty;
+
+  /// Result row: not graded yet.
+  ///
+  /// In en, this message translates to:
+  /// **'not graded'**
+  String get oralGroupNotGraded;
+
+  /// Export results as CSV.
+  ///
+  /// In en, this message translates to:
+  /// **'Share as CSV'**
+  String get oralGroupExport;
+
+  /// CSV header: name.
+  ///
+  /// In en, this message translates to:
+  /// **'Name'**
+  String get oralGroupCsvName;
+
+  /// CSV header: ticket.
+  ///
+  /// In en, this message translates to:
+  /// **'Ticket'**
+  String get oralGroupCsvTicket;
+
+  /// CSV header: question score.
+  ///
+  /// In en, this message translates to:
+  /// **'Question {n}'**
+  String oralGroupCsvQuestion(int n);
+
+  /// CSV header: total.
+  ///
+  /// In en, this message translates to:
+  /// **'Total'**
+  String get oralGroupCsvTotal;
+
+  /// Student: join a group oral exam.
+  ///
+  /// In en, this message translates to:
+  /// **'Join an oral exam'**
+  String get oralJoinTitle;
+
+  /// Student: name field.
+  ///
+  /// In en, this message translates to:
+  /// **'First and last name'**
+  String get oralJoinNameLabel;
+
+  /// Student: name helper.
+  ///
+  /// In en, this message translates to:
+  /// **'2–40 characters. The teacher sees you under this name.'**
+  String get oralJoinNameHelper;
+
+  /// Student: privacy note.
+  ///
+  /// In en, this message translates to:
+  /// **'Only you and the teacher see your scores. Results are deleted after 30 days.'**
+  String get oralJoinNote;
+
+  /// Student: exam screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Oral exam'**
+  String get oralPlayTitle;
+
+  /// Student: own name line.
+  ///
+  /// In en, this message translates to:
+  /// **'Name: {name}'**
+  String oralPlayName(String name);
+
+  /// Student: preparation countdown.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparation time: {time}'**
+  String oralPlayPrepLeft(String time);
+
+  /// Student: preparation over.
+  ///
+  /// In en, this message translates to:
+  /// **'Preparation time is over.'**
+  String get oralPlayPrepDone;
+
+  /// Student: I am ready to answer.
+  ///
+  /// In en, this message translates to:
+  /// **'I am ready to answer'**
+  String get oralPlayReady;
+
+  /// Student: in the queue.
+  ///
+  /// In en, this message translates to:
+  /// **'You are in the queue. Wait for the teacher to call you.'**
+  String get oralPlayWaiting;
+
+  /// Student: called by the teacher.
+  ///
+  /// In en, this message translates to:
+  /// **'The teacher called you'**
+  String get oralPlayCalled;
+
+  /// Student: go to the teacher.
+  ///
+  /// In en, this message translates to:
+  /// **'Go to the teacher.'**
+  String get oralPlayCalledHint;
+
+  /// Student: result header.
+  ///
+  /// In en, this message translates to:
+  /// **'Your result'**
+  String get oralPlayResultTitle;
+
+  /// Student: per-question score.
+  ///
+  /// In en, this message translates to:
+  /// **'Question {n}: {s} / 20'**
+  String oralPlayScoreLine(int n, int s);
+
+  /// Student: exam finished without a grade.
+  ///
+  /// In en, this message translates to:
+  /// **'The exam has finished.'**
+  String get oralPlayFinished;
+
+  /// Oral exam error: unknown code.
+  ///
+  /// In en, this message translates to:
+  /// **'No test or exam with this code. Check it and try again.'**
+  String get oralErrNotFound;
+
+  /// Oral exam error: finished.
+  ///
+  /// In en, this message translates to:
+  /// **'This exam has finished; new students cannot join.'**
+  String get oralErrFinished;
+
+  /// Oral exam error: no free tickets.
+  ///
+  /// In en, this message translates to:
+  /// **'All tickets are taken: this exam is full.'**
+  String get oralErrFull;
+
+  /// Oral exam error: kicked.
+  ///
+  /// In en, this message translates to:
+  /// **'The teacher removed you from this exam.'**
+  String get oralErrKicked;
+
+  /// Oral exam error: name length.
+  ///
+  /// In en, this message translates to:
+  /// **'The name must be 2–40 characters.'**
+  String get oralErrNameLength;
+
+  /// Oral exam error: name characters.
+  ///
+  /// In en, this message translates to:
+  /// **'The name contains characters that are not allowed.'**
+  String get oralErrNameChars;
+
+  /// Oral exam error: name blocked.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a different name.'**
+  String get oralErrNameBlocked;
+
+  /// Oral exam error: too many attempts.
+  ///
+  /// In en, this message translates to:
+  /// **'Too many attempts. Try again in an hour.'**
+  String get oralErrRateLimited;
+
+  /// Oral exam error: teacher joins own exam.
+  ///
+  /// In en, this message translates to:
+  /// **'You are the teacher of this exam and cannot join as a student.'**
+  String get oralErrOwnSession;
+
+  /// Oral exam error: settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Check the settings: 1–200 students, preparation time 0–60 minutes.'**
+  String get oralErrInvalidSettings;
+
+  /// Oral exam error: invalid ticket.
+  ///
+  /// In en, this message translates to:
+  /// **'The tickets are invalid. Try picking the topics again.'**
+  String get oralErrInvalidTicket;
+
+  /// Oral exam error: too many open exams.
+  ///
+  /// In en, this message translates to:
+  /// **'Too many open exams. Finish one first.'**
+  String get oralErrTooMany;
+
+  /// Oral exam error: invalid scores.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid scores: 0–20 for each question.'**
+  String get oralErrInvalidScores;
+
+  /// Oral exam error: not joined.
+  ///
+  /// In en, this message translates to:
+  /// **'You are not in this exam, or the teacher removed you.'**
+  String get oralErrNotJoined;
+
+  /// Oral exam error: action not allowed.
+  ///
+  /// In en, this message translates to:
+  /// **'This is not possible now: the exam has finished or you are already graded.'**
+  String get oralErrNotAllowed;
+
+  /// Oral exam error: code generation failed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not create a code. Please try again.'**
+  String get oralErrTryAgain;
+
+  /// Resume card for the last open oral exam.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue: ticket No. {n}'**
+  String oralResumeCard(int n);
+
+  /// Student: own app-leave count.
+  ///
+  /// In en, this message translates to:
+  /// **'Times you left the app: {n}'**
+  String oralPlayLeaveCount(int n);
+
+  /// Teacher: time of the last app leave.
+  ///
+  /// In en, this message translates to:
+  /// **'last: {time}'**
+  String oralGroupLeftAt(String time);
 }
 
 class _AppLocalizationsDelegate

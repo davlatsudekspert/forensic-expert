@@ -20,6 +20,7 @@ import '../data/local/casebook_store.dart';
 import '../data/local/court_history_store.dart';
 import '../data/local/group_invite_store.dart';
 import '../data/local/oral_exam_store.dart';
+import '../data/local/oral_resume_store.dart';
 import '../data/local/pro_offer_store.dart';
 import '../data/local/profile_store.dart';
 import '../data/local/referral_store.dart';
@@ -36,6 +37,7 @@ import '../data/remote/supabase_class_groups.dart';
 import '../data/remote/supabase_class_quiz.dart';
 import '../data/remote/supabase_lessons.dart';
 import '../data/remote/supabase_moderation.dart';
+import '../data/remote/supabase_oral_group.dart';
 import '../data/remote/supabase_plan.dart';
 import '../data/remote/supabase_professional.dart';
 import '../data/remote/supabase_publications.dart';
@@ -59,6 +61,7 @@ import 'class_quiz.dart';
 import 'court_prep.dart';
 import 'lessons.dart';
 import 'moderation.dart';
+import 'oral_group.dart';
 import 'plan.dart';
 import 'professional.dart';
 import 'providers.dart';
@@ -152,6 +155,9 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
             storageKey: SharedPrefsOralExamStore.teacherKey,
           ),
         ),
+        oralResumeStoreProvider.overrideWithValue(
+          SharedPrefsOralResumeStore(prefs),
+        ),
         courtHistoryStoreProvider.overrideWithValue(
           SharedPrefsCourtHistoryStore(prefs),
         ),
@@ -209,6 +215,9 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
           ),
           classQuizServiceProvider.overrideWithValue(
             SupabaseClassQuizService(config: supabase, auth: auth),
+          ),
+          oralGroupServiceProvider.overrideWithValue(
+            SupabaseOralGroupService(config: supabase, auth: auth),
           ),
           classGroupsServiceProvider.overrideWithValue(
             SupabaseClassGroupsService(config: supabase, auth: auth),

@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../app/lessons.dart';
+import '../../../app/oral_group.dart';
 import '../../../app/routes.dart';
 import '../../../app/teacher_oral.dart';
 import '../../../core/design/theme.dart';
@@ -13,6 +14,8 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/assessment/oral_exam.dart';
 import '../../../domain/lessons/lesson_models.dart';
 import '../../../domain/lessons/lesson_oral.dart';
+import '../../../domain/oral_group/oral_group_models.dart'
+    show OralGroupSession;
 import '../../assessment/presentation/oral_ticket_card.dart';
 import '../../lessons/presentation/lesson_slide_view.dart'
     show lessonSourceGroups, lessonSourceLine;
@@ -47,6 +50,12 @@ class _TeacherOralTopicsScreenState
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
+    final active = [
+      for (final x
+          in ref.watch(oralGroupMySessionsProvider).value?.value ??
+              const <OralGroupSession>[])
+        if (x.isOpen) x,
+    ].length;
     final res = ref.watch(lessonListProvider('')).value;
     final all = res?.value;
     final groups = LessonGrouping.group(all ?? const <LessonSummary>[]);
@@ -93,6 +102,18 @@ class _TeacherOralTopicsScreenState
                   key: const Key('toral.intro'),
                   style: t.bodyMedium?.copyWith(color: c.textSecondary),
                 ),
+                if (active > 0) ...[
+                  const SizedBox(height: FeSpace.xs),
+                  Align(
+                    alignment: AlignmentDirectional.centerStart,
+                    child: TextButton.icon(
+                      key: const Key('toral.activeGroup'),
+                      onPressed: () => context.push(Routes.teacherOralGroup),
+                      icon: const Icon(Icons.podcasts, size: 18),
+                      label: Text(l.oralGroupActiveLink(active)),
+                    ),
+                  ),
+                ],
                 const SizedBox(height: FeSpace.sm),
                 TextField(
                   key: const Key('toral.search'),
@@ -112,25 +133,31 @@ class _TeacherOralTopicsScreenState
             Padding(
               padding: const EdgeInsets.only(top: FeSpace.xs),
               child: FeContentFrame(
-                child: Wrap(
-                  key: const Key('toral.courses'),
-                  spacing: FeSpace.xs,
-                  runSpacing: FeSpace.xs,
-                  children: [
-                    _Chip(
-                      key: const Key('toral.course.all'),
-                      label: l.lessonsAllCourses,
-                      selected: course == null,
-                      onTap: () => setState(() => _course = null),
-                    ),
-                    for (final g in groups)
+                // To‘liq kenglik va boshidan tekislash: aks holda Column
+                // markazlab, chiplar har qatorda bittadan ketardi.
+                child: SizedBox(
+                  width: double.infinity,
+                  child: Wrap(
+                    key: const Key('toral.courses'),
+                    alignment: WrapAlignment.start,
+                    spacing: FeSpace.xs,
+                    runSpacing: FeSpace.xs,
+                    children: [
                       _Chip(
-                        key: Key('toral.course.${g.course}'),
-                        label: _courseLabel(g),
-                        selected: course == g.course,
-                        onTap: () => setState(() => _course = g.course),
+                        key: const Key('toral.course.all'),
+                        label: l.lessonsAllCourses,
+                        selected: course == null,
+                        onTap: () => setState(() => _course = null),
                       ),
-                  ],
+                      for (final g in groups)
+                        _Chip(
+                          key: Key('toral.course.${g.course}'),
+                          label: _courseLabel(g),
+                          selected: course == g.course,
+                          onTap: () => setState(() => _course = g.course),
+                        ),
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -246,6 +273,24 @@ class _TeacherOralTopicsScreenState
                               ),
                         icon: const Icon(Icons.confirmation_number_outlined),
                         label: Text(l.teacherOralBuild),
+                      ),
+                      const SizedBox(height: FeSpace.xs),
+                      // Guruh (QR): alohida qator — tor ekran va 2× shriftda
+                      // ikki tugma yonma-yon sig‘maydi.
+                      OutlinedButton.icon(
+                        key: const Key('toral.group'),
+                        style: OutlinedButton.styleFrom(
+                          minimumSize: const Size.fromHeight(48),
+                        ),
+                        onPressed: _selected.isEmpty
+                            ? null
+                            : () => context.push(
+                                Routes.teacherOralGroupFor(
+                                  topicSelectionKey(_selected),
+                                ),
+                              ),
+                        icon: const Icon(Icons.qr_code_2_rounded),
+                        label: Text(l.oralGroupButton),
                       ),
                     ],
                   ),
@@ -506,7 +551,7 @@ class _TeacherOralExamScreenState extends ConsumerState<TeacherOralExamScreen> {
                     : null,
                 score: st.scores[i],
                 onScore: (v) => ctl.setScore(i, v),
-                answerKey: _SlideKey(question: q),
+                answerKey: OralSlideKey(question: q),
               ),
             ),
         const Divider(),
@@ -585,8 +630,8 @@ class _TeacherOralExamScreenState extends ConsumerState<TeacherOralExamScreen> {
 }
 
 /// Javob kaliti: slayd bandlari (asl matn) va manbasi.
-class _SlideKey extends StatelessWidget {
-  const _SlideKey({required this.question});
+class OralSlideKey extends StatelessWidget {
+  const OralSlideKey({super.key, required this.question});
 
   final LessonOralQuestion question;
 

@@ -12452,4 +12452,314 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
 
   @override
   String get teacherOralKeyNote => toUzNewAlphabet(super.teacherOralKeyNote);
+
+  @override
+  String get oralGroupButton => toUzNewAlphabet(super.oralGroupButton);
+
+  @override
+  String oralGroupActiveLink(int n) =>
+      toUzNewAlphabet(super.oralGroupActiveLink(n));
+
+  @override
+  String get oralGroupSetupTitle => toUzNewAlphabet(super.oralGroupSetupTitle);
+
+  @override
+  String get oralGroupSetupIntro => toUzNewAlphabet(super.oralGroupSetupIntro);
+
+  @override
+  String get oralGroupNoTopics => toUzNewAlphabet(super.oralGroupNoTopics);
+
+  @override
+  String get oralGroupStudentsLabel =>
+      toUzNewAlphabet(super.oralGroupStudentsLabel);
+
+  @override
+  String get oralGroupStudentsHelper =>
+      toUzNewAlphabet(super.oralGroupStudentsHelper);
+
+  @override
+  String get oralGroupStudentsDec =>
+      toUzNewAlphabet(super.oralGroupStudentsDec);
+
+  @override
+  String get oralGroupStudentsInc =>
+      toUzNewAlphabet(super.oralGroupStudentsInc);
+
+  @override
+  String get oralGroupPrepLabel => toUzNewAlphabet(super.oralGroupPrepLabel);
+
+  @override
+  String get oralGroupPrepNone => toUzNewAlphabet(super.oralGroupPrepNone);
+
+  @override
+  String oralGroupPrepMin(int n) => toUzNewAlphabet(super.oralGroupPrepMin(n));
+
+  @override
+  String get oralGroupPrepHint => toUzNewAlphabet(super.oralGroupPrepHint);
+
+  @override
+  String oralGroupAvailable(int n) =>
+      toUzNewAlphabet(super.oralGroupAvailable(n));
+
+  @override
+  String get oralGroupRepeatNotice =>
+      toUzNewAlphabet(super.oralGroupRepeatNotice);
+
+  @override
+  String get oralGroupStart => toUzNewAlphabet(super.oralGroupStart);
+
+  @override
+  String get oralGroupActiveSection =>
+      toUzNewAlphabet(super.oralGroupActiveSection);
+
+  @override
+  String get oralGroupFinishedSection =>
+      toUzNewAlphabet(super.oralGroupFinishedSection);
+
+  @override
+  String oralGroupSessionLine(String code, int joined, int graded) =>
+      toUzNewAlphabet(super.oralGroupSessionLine(code, joined, graded));
+
+  @override
+  String get oralGroupNoTitle => toUzNewAlphabet(super.oralGroupNoTitle);
+
+  @override
+  String get oralGroupHostJoinHint =>
+      toUzNewAlphabet(super.oralGroupHostJoinHint);
+
+  @override
+  String oralGroupJoinedCount(int x, int n) =>
+      toUzNewAlphabet(super.oralGroupJoinedCount(x, n));
+
+  @override
+  String oralGroupTile(int n) => toUzNewAlphabet(super.oralGroupTile(n));
+
+  @override
+  String get oralGroupStatusFree => toUzNewAlphabet(super.oralGroupStatusFree);
+
+  @override
+  String get oralGroupStatusJoined =>
+      toUzNewAlphabet(super.oralGroupStatusJoined);
+
+  @override
+  String get oralGroupStatusReady =>
+      toUzNewAlphabet(super.oralGroupStatusReady);
+
+  @override
+  String get oralGroupStatusGraded =>
+      toUzNewAlphabet(super.oralGroupStatusGraded);
+
+  @override
+  String get oralGroupQueue => toUzNewAlphabet(super.oralGroupQueue);
+
+  @override
+  String get oralGroupResults => toUzNewAlphabet(super.oralGroupResults);
+
+  @override
+  String get oralGroupFinish => toUzNewAlphabet(super.oralGroupFinish);
+
+  @override
+  String get oralGroupFinishTitle =>
+      toUzNewAlphabet(super.oralGroupFinishTitle);
+
+  @override
+  String get oralGroupFinishBody => toUzNewAlphabet(super.oralGroupFinishBody);
+
+  @override
+  String get oralGroupFinishedBanner =>
+      toUzNewAlphabet(super.oralGroupFinishedBanner);
+
+  @override
+  String get oralGroupCancel => toUzNewAlphabet(super.oralGroupCancel);
+
+  @override
+  String get oralGroupQrNote => toUzNewAlphabet(super.oralGroupQrNote);
+
+  @override
+  String get oralGroupQueueTitle => toUzNewAlphabet(super.oralGroupQueueTitle);
+
+  @override
+  String get oralGroupQueueEmpty => toUzNewAlphabet(super.oralGroupQueueEmpty);
+
+  @override
+  String oralGroupSectionReady(int n) =>
+      toUzNewAlphabet(super.oralGroupSectionReady(n));
+
+  @override
+  String oralGroupSectionJoined(int n) =>
+      toUzNewAlphabet(super.oralGroupSectionJoined(n));
+
+  @override
+  String oralGroupSectionGraded(int n) =>
+      toUzNewAlphabet(super.oralGroupSectionGraded(n));
+
+  @override
+  String oralGroupReadyAt(String time) =>
+      toUzNewAlphabet(super.oralGroupReadyAt(time));
+
+  @override
+  String get oralGroupCalledMark => toUzNewAlphabet(super.oralGroupCalledMark);
+
+  @override
+  String get oralGroupGradeTitle => toUzNewAlphabet(super.oralGroupGradeTitle);
+
+  @override
+  String get oralGroupSave => toUzNewAlphabet(super.oralGroupSave);
+
+  @override
+  String oralGroupSaved(int total) =>
+      toUzNewAlphabet(super.oralGroupSaved(total));
+
+  @override
+  String get oralGroupKick => toUzNewAlphabet(super.oralGroupKick);
+
+  @override
+  String oralGroupKickTitle(String name) =>
+      toUzNewAlphabet(super.oralGroupKickTitle(name));
+
+  @override
+  String get oralGroupKickBody => toUzNewAlphabet(super.oralGroupKickBody);
+
+  @override
+  String get oralGroupKeyMissing => toUzNewAlphabet(super.oralGroupKeyMissing);
+
+  @override
+  String get oralGroupGradedBefore =>
+      toUzNewAlphabet(super.oralGroupGradedBefore);
+
+  @override
+  String get oralGroupResultsTitle =>
+      toUzNewAlphabet(super.oralGroupResultsTitle);
+
+  @override
+  String get oralGroupResultsEmpty =>
+      toUzNewAlphabet(super.oralGroupResultsEmpty);
+
+  @override
+  String get oralGroupNotGraded => toUzNewAlphabet(super.oralGroupNotGraded);
+
+  @override
+  String get oralGroupExport => toUzNewAlphabet(super.oralGroupExport);
+
+  @override
+  String get oralGroupCsvName => toUzNewAlphabet(super.oralGroupCsvName);
+
+  @override
+  String get oralGroupCsvTicket => toUzNewAlphabet(super.oralGroupCsvTicket);
+
+  @override
+  String oralGroupCsvQuestion(int n) =>
+      toUzNewAlphabet(super.oralGroupCsvQuestion(n));
+
+  @override
+  String get oralGroupCsvTotal => toUzNewAlphabet(super.oralGroupCsvTotal);
+
+  @override
+  String get oralJoinTitle => toUzNewAlphabet(super.oralJoinTitle);
+
+  @override
+  String get oralJoinNameLabel => toUzNewAlphabet(super.oralJoinNameLabel);
+
+  @override
+  String get oralJoinNameHelper => toUzNewAlphabet(super.oralJoinNameHelper);
+
+  @override
+  String get oralJoinNote => toUzNewAlphabet(super.oralJoinNote);
+
+  @override
+  String get oralPlayTitle => toUzNewAlphabet(super.oralPlayTitle);
+
+  @override
+  String oralPlayName(String name) => toUzNewAlphabet(super.oralPlayName(name));
+
+  @override
+  String oralPlayPrepLeft(String time) =>
+      toUzNewAlphabet(super.oralPlayPrepLeft(time));
+
+  @override
+  String get oralPlayPrepDone => toUzNewAlphabet(super.oralPlayPrepDone);
+
+  @override
+  String get oralPlayReady => toUzNewAlphabet(super.oralPlayReady);
+
+  @override
+  String get oralPlayWaiting => toUzNewAlphabet(super.oralPlayWaiting);
+
+  @override
+  String get oralPlayCalled => toUzNewAlphabet(super.oralPlayCalled);
+
+  @override
+  String get oralPlayCalledHint => toUzNewAlphabet(super.oralPlayCalledHint);
+
+  @override
+  String get oralPlayResultTitle => toUzNewAlphabet(super.oralPlayResultTitle);
+
+  @override
+  String oralPlayScoreLine(int n, int s) =>
+      toUzNewAlphabet(super.oralPlayScoreLine(n, s));
+
+  @override
+  String get oralPlayFinished => toUzNewAlphabet(super.oralPlayFinished);
+
+  @override
+  String get oralErrNotFound => toUzNewAlphabet(super.oralErrNotFound);
+
+  @override
+  String get oralErrFinished => toUzNewAlphabet(super.oralErrFinished);
+
+  @override
+  String get oralErrFull => toUzNewAlphabet(super.oralErrFull);
+
+  @override
+  String get oralErrKicked => toUzNewAlphabet(super.oralErrKicked);
+
+  @override
+  String get oralErrNameLength => toUzNewAlphabet(super.oralErrNameLength);
+
+  @override
+  String get oralErrNameChars => toUzNewAlphabet(super.oralErrNameChars);
+
+  @override
+  String get oralErrNameBlocked => toUzNewAlphabet(super.oralErrNameBlocked);
+
+  @override
+  String get oralErrRateLimited => toUzNewAlphabet(super.oralErrRateLimited);
+
+  @override
+  String get oralErrOwnSession => toUzNewAlphabet(super.oralErrOwnSession);
+
+  @override
+  String get oralErrInvalidSettings =>
+      toUzNewAlphabet(super.oralErrInvalidSettings);
+
+  @override
+  String get oralErrInvalidTicket =>
+      toUzNewAlphabet(super.oralErrInvalidTicket);
+
+  @override
+  String get oralErrTooMany => toUzNewAlphabet(super.oralErrTooMany);
+
+  @override
+  String get oralErrInvalidScores =>
+      toUzNewAlphabet(super.oralErrInvalidScores);
+
+  @override
+  String get oralErrNotJoined => toUzNewAlphabet(super.oralErrNotJoined);
+
+  @override
+  String get oralErrNotAllowed => toUzNewAlphabet(super.oralErrNotAllowed);
+
+  @override
+  String get oralErrTryAgain => toUzNewAlphabet(super.oralErrTryAgain);
+
+  @override
+  String oralResumeCard(int n) => toUzNewAlphabet(super.oralResumeCard(n));
+
+  @override
+  String oralPlayLeaveCount(int n) =>
+      toUzNewAlphabet(super.oralPlayLeaveCount(n));
+
+  @override
+  String oralGroupLeftAt(String time) =>
+      toUzNewAlphabet(super.oralGroupLeftAt(time));
 }

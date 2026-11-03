@@ -17387,5 +17387,480 @@
   "teacherOralKeyNote": "From the lesson slide (original text).",
   "@teacherOralKeyNote": {
     "description": "Under the answer key."
+  },
+  "oralGroupButton": "For a group (QR)",
+  "@oralGroupButton": {
+    "description": "Topic picker: start a QR group oral exam."
+  },
+  "oralGroupActiveLink": "Active group exams: {n}",
+  "@oralGroupActiveLink": {
+    "description": "Topic picker: link to open group exams.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "oralGroupSetupTitle": "Group exam",
+  "@oralGroupSetupTitle": {
+    "description": "Group oral exam setup screen title."
+  },
+  "oralGroupSetupIntro": "A QR code and a code appear on the board. Students join from their phones, get a random ticket and see its questions right away. The answer key stays on your phone only and is never sent to the server.",
+  "@oralGroupSetupIntro": {
+    "description": "Setup explanation."
+  },
+  "oralGroupNoTopics": "Pick topics first to start a new exam. Active exams are below.",
+  "@oralGroupNoTopics": {
+    "description": "Setup opened without topics."
+  },
+  "oralGroupStudentsLabel": "Number of students",
+  "@oralGroupStudentsLabel": {
+    "description": "Number of students field label."
+  },
+  "oralGroupStudentsHelper": "1–200. This many tickets will be made.",
+  "@oralGroupStudentsHelper": {
+    "description": "Number of students helper."
+  },
+  "oralGroupStudentsDec": "Decrease",
+  "@oralGroupStudentsDec": {
+    "description": "Decrease students tooltip."
+  },
+  "oralGroupStudentsInc": "Increase",
+  "@oralGroupStudentsInc": {
+    "description": "Increase students tooltip."
+  },
+  "oralGroupPrepLabel": "Preparation time",
+  "@oralGroupPrepLabel": {
+    "description": "Preparation time section label."
+  },
+  "oralGroupPrepNone": "None",
+  "@oralGroupPrepNone": {
+    "description": "No preparation time."
+  },
+  "oralGroupPrepMin": "{n} min",
+  "@oralGroupPrepMin": {
+    "description": "Preparation chip, minutes.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "oralGroupPrepHint": "The student sees the ticket at once; this time is only a countdown.",
+  "@oralGroupPrepHint": {
+    "description": "Preparation hint."
+  },
+  "oralGroupAvailable": "Questions in the chosen topics: {n}",
+  "@oralGroupAvailable": {
+    "description": "Questions available in the chosen topics.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "oralGroupRepeatNotice": "Not enough questions: some tickets will repeat questions",
+  "@oralGroupRepeatNotice": {
+    "description": "Soft notice: the pool is too small."
+  },
+  "oralGroupStart": "Start",
+  "@oralGroupStart": {
+    "description": "Create the group exam."
+  },
+  "oralGroupActiveSection": "Active exams",
+  "@oralGroupActiveSection": {
+    "description": "Open group exams header."
+  },
+  "oralGroupFinishedSection": "Finished (kept for 30 days)",
+  "@oralGroupFinishedSection": {
+    "description": "Finished group exams header."
+  },
+  "oralGroupSessionLine": "Code {code} · joined: {joined} · graded: {graded}",
+  "@oralGroupSessionLine": {
+    "description": "Exam list row: code and counts.",
+    "placeholders": {
+      "code": {
+        "type": "String"
+      },
+      "joined": {
+        "type": "int"
+      },
+      "graded": {
+        "type": "int"
+      }
+    }
+  },
+  "oralGroupNoTitle": "Group exam",
+  "@oralGroupNoTitle": {
+    "description": "Exam without a title."
+  },
+  "oralGroupHostJoinHint": "In FORENSIC EXPERT → “Group test”, enter the code or scan the QR:",
+  "@oralGroupHostJoinHint": {
+    "description": "Board: how to join."
+  },
+  "oralGroupJoinedCount": "Joined: {x} / {n}",
+  "@oralGroupJoinedCount": {
+    "description": "Board: joined students.",
+    "placeholders": {
+      "x": {
+        "type": "int"
+      },
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "oralGroupTile": "No. {n}",
+  "@oralGroupTile": {
+    "description": "Board tile number.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "oralGroupStatusFree": "free",
+  "@oralGroupStatusFree": {
+    "description": "Ticket status: free."
+  },
+  "oralGroupStatusJoined": "joined",
+  "@oralGroupStatusJoined": {
+    "description": "Ticket status: student joined."
+  },
+  "oralGroupStatusReady": "ready",
+  "@oralGroupStatusReady": {
+    "description": "Ticket status: student ready."
+  },
+  "oralGroupStatusGraded": "graded",
+  "@oralGroupStatusGraded": {
+    "description": "Ticket status: graded."
+  },
+  "oralGroupQueue": "Queue",
+  "@oralGroupQueue": {
+    "description": "Open the queue."
+  },
+  "oralGroupResults": "Results",
+  "@oralGroupResults": {
+    "description": "Open the results."
+  },
+  "oralGroupFinish": "Finish",
+  "@oralGroupFinish": {
+    "description": "Finish the exam."
+  },
+  "oralGroupFinishTitle": "Finish the exam?",
+  "@oralGroupFinishTitle": {
+    "description": "Finish confirm title."
+  },
+  "oralGroupFinishBody": "New students will not be able to join and the queue closes. Results are kept for 30 days.",
+  "@oralGroupFinishBody": {
+    "description": "Finish confirm body."
+  },
+  "oralGroupFinishedBanner": "The exam is finished. Results are kept for 30 days.",
+  "@oralGroupFinishedBanner": {
+    "description": "Banner: exam finished."
+  },
+  "oralGroupCancel": "Cancel",
+  "@oralGroupCancel": {
+    "description": "Cancel in dialogs."
+  },
+  "oralGroupQrNote": "Scores are never shown on the board.",
+  "@oralGroupQrNote": {
+    "description": "Board: scores are never shown."
+  },
+  "oralGroupQueueTitle": "Queue",
+  "@oralGroupQueueTitle": {
+    "description": "Queue screen title."
+  },
+  "oralGroupQueueEmpty": "Nobody has joined yet.",
+  "@oralGroupQueueEmpty": {
+    "description": "Queue is empty."
+  },
+  "oralGroupSectionReady": "Ready ({n})",
+  "@oralGroupSectionReady": {
+    "description": "Queue section: ready students.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "oralGroupSectionJoined": "Preparing ({n})",
+  "@oralGroupSectionJoined": {
+    "description": "Queue section: preparing students.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "oralGroupSectionGraded": "Graded ({n})",
+  "@oralGroupSectionGraded": {
+    "description": "Queue section: graded students.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "oralGroupReadyAt": "Ready: {time}",
+  "@oralGroupReadyAt": {
+    "description": "Queue row: ready time.",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "oralGroupCalledMark": "called",
+  "@oralGroupCalledMark": {
+    "description": "Queue row: already called."
+  },
+  "oralGroupGradeTitle": "Grading",
+  "@oralGroupGradeTitle": {
+    "description": "Grade screen title."
+  },
+  "oralGroupSave": "Save",
+  "@oralGroupSave": {
+    "description": "Save the grades."
+  },
+  "oralGroupSaved": "Grade saved: {total} / 100",
+  "@oralGroupSaved": {
+    "description": "Snackbar after saving the grades.",
+    "placeholders": {
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "oralGroupKick": "Remove from the exam",
+  "@oralGroupKick": {
+    "description": "Menu: remove student from the exam."
+  },
+  "oralGroupKickTitle": "Remove {name} from the exam?",
+  "@oralGroupKickTitle": {
+    "description": "Kick confirm title.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "oralGroupKickBody": "The ticket is freed for another student. A removed student cannot rejoin.",
+  "@oralGroupKickBody": {
+    "description": "Kick confirm body."
+  },
+  "oralGroupKeyMissing": "Answer key not found: the lesson may have changed or failed to load.",
+  "@oralGroupKeyMissing": {
+    "description": "Answer key not found locally."
+  },
+  "oralGroupGradedBefore": "Already graded — you can grade again.",
+  "@oralGroupGradedBefore": {
+    "description": "Grade screen: already graded."
+  },
+  "oralGroupResultsTitle": "Results",
+  "@oralGroupResultsTitle": {
+    "description": "Results screen title."
+  },
+  "oralGroupResultsEmpty": "Nobody has joined yet.",
+  "@oralGroupResultsEmpty": {
+    "description": "No students joined."
+  },
+  "oralGroupNotGraded": "not graded",
+  "@oralGroupNotGraded": {
+    "description": "Result row: not graded yet."
+  },
+  "oralGroupExport": "Share as CSV",
+  "@oralGroupExport": {
+    "description": "Export results as CSV."
+  },
+  "oralGroupCsvName": "Name",
+  "@oralGroupCsvName": {
+    "description": "CSV header: name."
+  },
+  "oralGroupCsvTicket": "Ticket",
+  "@oralGroupCsvTicket": {
+    "description": "CSV header: ticket."
+  },
+  "oralGroupCsvQuestion": "Question {n}",
+  "@oralGroupCsvQuestion": {
+    "description": "CSV header: question score.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "oralGroupCsvTotal": "Total",
+  "@oralGroupCsvTotal": {
+    "description": "CSV header: total."
+  },
+  "oralJoinTitle": "Join an oral exam",
+  "@oralJoinTitle": {
+    "description": "Student: join a group oral exam."
+  },
+  "oralJoinNameLabel": "First and last name",
+  "@oralJoinNameLabel": {
+    "description": "Student: name field."
+  },
+  "oralJoinNameHelper": "2–40 characters. The teacher sees you under this name.",
+  "@oralJoinNameHelper": {
+    "description": "Student: name helper."
+  },
+  "oralJoinNote": "Only you and the teacher see your scores. Results are deleted after 30 days.",
+  "@oralJoinNote": {
+    "description": "Student: privacy note."
+  },
+  "oralPlayTitle": "Oral exam",
+  "@oralPlayTitle": {
+    "description": "Student: exam screen title."
+  },
+  "oralPlayName": "Name: {name}",
+  "@oralPlayName": {
+    "description": "Student: own name line.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "oralPlayPrepLeft": "Preparation time: {time}",
+  "@oralPlayPrepLeft": {
+    "description": "Student: preparation countdown.",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "oralPlayPrepDone": "Preparation time is over.",
+  "@oralPlayPrepDone": {
+    "description": "Student: preparation over."
+  },
+  "oralPlayReady": "I am ready to answer",
+  "@oralPlayReady": {
+    "description": "Student: I am ready to answer."
+  },
+  "oralPlayWaiting": "You are in the queue. Wait for the teacher to call you.",
+  "@oralPlayWaiting": {
+    "description": "Student: in the queue."
+  },
+  "oralPlayCalled": "The teacher called you",
+  "@oralPlayCalled": {
+    "description": "Student: called by the teacher."
+  },
+  "oralPlayCalledHint": "Go to the teacher.",
+  "@oralPlayCalledHint": {
+    "description": "Student: go to the teacher."
+  },
+  "oralPlayResultTitle": "Your result",
+  "@oralPlayResultTitle": {
+    "description": "Student: result header."
+  },
+  "oralPlayScoreLine": "Question {n}: {s} / 20",
+  "@oralPlayScoreLine": {
+    "description": "Student: per-question score.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "s": {
+        "type": "int"
+      }
+    }
+  },
+  "oralPlayFinished": "The exam has finished.",
+  "@oralPlayFinished": {
+    "description": "Student: exam finished without a grade."
+  },
+  "oralErrNotFound": "No test or exam with this code. Check it and try again.",
+  "@oralErrNotFound": {
+    "description": "Oral exam error: unknown code."
+  },
+  "oralErrFinished": "This exam has finished; new students cannot join.",
+  "@oralErrFinished": {
+    "description": "Oral exam error: finished."
+  },
+  "oralErrFull": "All tickets are taken: this exam is full.",
+  "@oralErrFull": {
+    "description": "Oral exam error: no free tickets."
+  },
+  "oralErrKicked": "The teacher removed you from this exam.",
+  "@oralErrKicked": {
+    "description": "Oral exam error: kicked."
+  },
+  "oralErrNameLength": "The name must be 2–40 characters.",
+  "@oralErrNameLength": {
+    "description": "Oral exam error: name length."
+  },
+  "oralErrNameChars": "The name contains characters that are not allowed.",
+  "@oralErrNameChars": {
+    "description": "Oral exam error: name characters."
+  },
+  "oralErrNameBlocked": "Please enter a different name.",
+  "@oralErrNameBlocked": {
+    "description": "Oral exam error: name blocked."
+  },
+  "oralErrRateLimited": "Too many attempts. Try again in an hour.",
+  "@oralErrRateLimited": {
+    "description": "Oral exam error: too many attempts."
+  },
+  "oralErrOwnSession": "You are the teacher of this exam and cannot join as a student.",
+  "@oralErrOwnSession": {
+    "description": "Oral exam error: teacher joins own exam."
+  },
+  "oralErrInvalidSettings": "Check the settings: 1–200 students, preparation time 0–60 minutes.",
+  "@oralErrInvalidSettings": {
+    "description": "Oral exam error: settings."
+  },
+  "oralErrInvalidTicket": "The tickets are invalid. Try picking the topics again.",
+  "@oralErrInvalidTicket": {
+    "description": "Oral exam error: invalid ticket."
+  },
+  "oralErrTooMany": "Too many open exams. Finish one first.",
+  "@oralErrTooMany": {
+    "description": "Oral exam error: too many open exams."
+  },
+  "oralErrInvalidScores": "Invalid scores: 0–20 for each question.",
+  "@oralErrInvalidScores": {
+    "description": "Oral exam error: invalid scores."
+  },
+  "oralErrNotJoined": "You are not in this exam, or the teacher removed you.",
+  "@oralErrNotJoined": {
+    "description": "Oral exam error: not joined."
+  },
+  "oralErrNotAllowed": "This is not possible now: the exam has finished or you are already graded.",
+  "@oralErrNotAllowed": {
+    "description": "Oral exam error: action not allowed."
+  },
+  "oralErrTryAgain": "Could not create a code. Please try again.",
+  "@oralErrTryAgain": {
+    "description": "Oral exam error: code generation failed."
+  },
+  "oralResumeCard": "Continue: ticket No. {n}",
+  "@oralResumeCard": {
+    "description": "Resume card for the last open oral exam.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "oralPlayLeaveCount": "Times you left the app: {n}",
+  "@oralPlayLeaveCount": {
+    "description": "Student: own app-leave count.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "oralGroupLeftAt": "last: {time}",
+  "@oralGroupLeftAt": {
+    "description": "Teacher: time of the last app leave.",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
   }
 }

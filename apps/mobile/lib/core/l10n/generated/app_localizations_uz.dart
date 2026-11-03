@@ -13188,4 +13188,340 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get teacherOralKeyNote => 'Dars slaydidan (asl matn).';
+
+  @override
+  String get oralGroupButton => 'Guruhga (QR)';
+
+  @override
+  String oralGroupActiveLink(int n) {
+    return 'Faol guruh imtihonlari: $n ta';
+  }
+
+  @override
+  String get oralGroupSetupTitle => 'Guruh imtihoni';
+
+  @override
+  String get oralGroupSetupIntro =>
+      'Doskada QR va kod chiqadi. Talabalar telefondan qo‘shilib, tasodifiy bilet oladi va savollarini darhol ko‘radi. Javob kaliti faqat sizning telefoningizda qoladi, serverga yuborilmaydi.';
+
+  @override
+  String get oralGroupNoTopics =>
+      'Yangi imtihon uchun avval mavzularni tanlang. Faol imtihonlar quyida.';
+
+  @override
+  String get oralGroupStudentsLabel => 'Talabalar soni';
+
+  @override
+  String get oralGroupStudentsHelper => '1–200. Shuncha bilet tuziladi.';
+
+  @override
+  String get oralGroupStudentsDec => 'Kamaytirish';
+
+  @override
+  String get oralGroupStudentsInc => 'Ko‘paytirish';
+
+  @override
+  String get oralGroupPrepLabel => 'Tayyorlanish vaqti';
+
+  @override
+  String get oralGroupPrepNone => 'Yo‘q';
+
+  @override
+  String oralGroupPrepMin(int n) {
+    return '$n daqiqa';
+  }
+
+  @override
+  String get oralGroupPrepHint =>
+      'Talaba biletini darhol ko‘radi; bu vaqt faqat sanoq uchun.';
+
+  @override
+  String oralGroupAvailable(int n) {
+    return 'Tanlangan mavzulardagi savollar: $n';
+  }
+
+  @override
+  String get oralGroupRepeatNotice =>
+      'Savollar yetmaydi: ayrim biletlarda savollar takrorlanadi';
+
+  @override
+  String get oralGroupStart => 'Boshlash';
+
+  @override
+  String get oralGroupActiveSection => 'Faol imtihonlar';
+
+  @override
+  String get oralGroupFinishedSection => 'Yakunlanganlar (30 kun saqlanadi)';
+
+  @override
+  String oralGroupSessionLine(String code, int joined, int graded) {
+    return 'Kod $code · qo‘shildi: $joined · baholandi: $graded';
+  }
+
+  @override
+  String get oralGroupNoTitle => 'Guruh imtihoni';
+
+  @override
+  String get oralGroupHostJoinHint =>
+      'FORENSIC EXPERT → «Guruh testi» bo‘limida kodni kiriting yoki QR ni skanerlang:';
+
+  @override
+  String oralGroupJoinedCount(int x, int n) {
+    return 'Qo‘shildi: $x / $n';
+  }
+
+  @override
+  String oralGroupTile(int n) {
+    return '№ $n';
+  }
+
+  @override
+  String get oralGroupStatusFree => 'bo‘sh';
+
+  @override
+  String get oralGroupStatusJoined => 'qo‘shildi';
+
+  @override
+  String get oralGroupStatusReady => 'tayyor';
+
+  @override
+  String get oralGroupStatusGraded => 'baholandi';
+
+  @override
+  String get oralGroupQueue => 'Navbat';
+
+  @override
+  String get oralGroupResults => 'Natijalar';
+
+  @override
+  String get oralGroupFinish => 'Yakunlash';
+
+  @override
+  String get oralGroupFinishTitle => 'Imtihonni yakunlaymizmi?';
+
+  @override
+  String get oralGroupFinishBody =>
+      'Yangi talabalar qo‘shila olmaydi, navbat yopiladi. Natijalar 30 kun saqlanadi.';
+
+  @override
+  String get oralGroupFinishedBanner =>
+      'Imtihon yakunlangan. Natijalar 30 kun saqlanadi.';
+
+  @override
+  String get oralGroupCancel => 'Bekor qilish';
+
+  @override
+  String get oralGroupQrNote => 'Ballar doskada ko‘rsatilmaydi.';
+
+  @override
+  String get oralGroupQueueTitle => 'Navbat';
+
+  @override
+  String get oralGroupQueueEmpty => 'Hozircha hech kim qo‘shilmagan.';
+
+  @override
+  String oralGroupSectionReady(int n) {
+    return 'Tayyor ($n)';
+  }
+
+  @override
+  String oralGroupSectionJoined(int n) {
+    return 'Tayyorlanmoqda ($n)';
+  }
+
+  @override
+  String oralGroupSectionGraded(int n) {
+    return 'Baholanganlar ($n)';
+  }
+
+  @override
+  String oralGroupReadyAt(String time) {
+    return 'Tayyor: $time';
+  }
+
+  @override
+  String get oralGroupCalledMark => 'chaqirilgan';
+
+  @override
+  String get oralGroupGradeTitle => 'Baholash';
+
+  @override
+  String get oralGroupSave => 'Saqlash';
+
+  @override
+  String oralGroupSaved(int total) {
+    return 'Baho saqlandi: $total / 100';
+  }
+
+  @override
+  String get oralGroupKick => 'Imtihondan chiqarish';
+
+  @override
+  String oralGroupKickTitle(String name) {
+    return '$name imtihondan chiqarilsinmi?';
+  }
+
+  @override
+  String get oralGroupKickBody =>
+      'Bilet bo‘shaydi va boshqa talaba oladi. Chiqarilgan talaba qayta qo‘shila olmaydi.';
+
+  @override
+  String get oralGroupKeyMissing =>
+      'Javob kaliti topilmadi: dars o‘zgargan yoki yuklanmagan bo‘lishi mumkin.';
+
+  @override
+  String get oralGroupGradedBefore =>
+      'Avval baholangan — qayta baholash mumkin.';
+
+  @override
+  String get oralGroupResultsTitle => 'Natijalar';
+
+  @override
+  String get oralGroupResultsEmpty => 'Hali hech kim qo‘shilmagan.';
+
+  @override
+  String get oralGroupNotGraded => 'baholanmagan';
+
+  @override
+  String get oralGroupExport => 'CSV sifatida yuborish';
+
+  @override
+  String get oralGroupCsvName => 'Ism';
+
+  @override
+  String get oralGroupCsvTicket => 'Bilet';
+
+  @override
+  String oralGroupCsvQuestion(int n) {
+    return '$n-savol';
+  }
+
+  @override
+  String get oralGroupCsvTotal => 'Jami';
+
+  @override
+  String get oralJoinTitle => 'Og‘zaki imtihonga qo‘shilish';
+
+  @override
+  String get oralJoinNameLabel => 'Ism va familiya';
+
+  @override
+  String get oralJoinNameHelper =>
+      '2–40 belgi. Ustoz sizni shu ism bilan ko‘radi.';
+
+  @override
+  String get oralJoinNote =>
+      'Ballaringizni faqat siz va ustoz ko‘rasiz. Natijalar 30 kundan keyin o‘chiriladi.';
+
+  @override
+  String get oralPlayTitle => 'Og‘zaki imtihon';
+
+  @override
+  String oralPlayName(String name) {
+    return 'Ism: $name';
+  }
+
+  @override
+  String oralPlayPrepLeft(String time) {
+    return 'Tayyorlanish vaqti: $time';
+  }
+
+  @override
+  String get oralPlayPrepDone => 'Tayyorlanish vaqti tugadi.';
+
+  @override
+  String get oralPlayReady => 'Javobga tayyorman';
+
+  @override
+  String get oralPlayWaiting => 'Navbatdasiz. Ustoz sizni chaqirishini kuting.';
+
+  @override
+  String get oralPlayCalled => 'Ustoz sizni chaqirdi';
+
+  @override
+  String get oralPlayCalledHint => 'Ustoz oldiga boring.';
+
+  @override
+  String get oralPlayResultTitle => 'Sizning natijangiz';
+
+  @override
+  String oralPlayScoreLine(int n, int s) {
+    return 'Savol $n: $s / 20';
+  }
+
+  @override
+  String get oralPlayFinished => 'Imtihon yakunlandi.';
+
+  @override
+  String get oralErrNotFound =>
+      'Bu kod bo‘yicha test yoki imtihon topilmadi. Kodni tekshiring.';
+
+  @override
+  String get oralErrFinished =>
+      'Bu imtihon yakunlangan, yangi talabalar qo‘shila olmaydi.';
+
+  @override
+  String get oralErrFull => 'Barcha biletlar band: bu imtihonda joy qolmagan.';
+
+  @override
+  String get oralErrKicked => 'Ustoz sizni bu imtihondan chiqardi.';
+
+  @override
+  String get oralErrNameLength => 'Ism 2–40 belgidan iborat bo‘lsin.';
+
+  @override
+  String get oralErrNameChars => 'Ismda ruxsat etilmagan belgilar bor.';
+
+  @override
+  String get oralErrNameBlocked => 'Boshqa ism yozing.';
+
+  @override
+  String get oralErrRateLimited =>
+      'Urinishlar juda ko‘p. Bir soatdan keyin qayta urinib ko‘ring.';
+
+  @override
+  String get oralErrOwnSession =>
+      'Siz bu imtihonning ustozisiz, talaba sifatida qo‘shila olmaysiz.';
+
+  @override
+  String get oralErrInvalidSettings =>
+      'Sozlamalarni tekshiring: 1–200 talaba, tayyorlanish vaqti 0–60 daqiqa.';
+
+  @override
+  String get oralErrInvalidTicket =>
+      'Biletlar noto‘g‘ri tuzilgan. Mavzularni qayta tanlab ko‘ring.';
+
+  @override
+  String get oralErrTooMany =>
+      'Ochiq imtihonlar juda ko‘p. Avval birini yakunlang.';
+
+  @override
+  String get oralErrInvalidScores => 'Ballar noto‘g‘ri: har bir savolga 0–20.';
+
+  @override
+  String get oralErrNotJoined =>
+      'Siz bu imtihonda emassiz yoki ustoz sizni chiqargan.';
+
+  @override
+  String get oralErrNotAllowed =>
+      'Hozir bu amal mumkin emas: imtihon yakunlangan yoki siz baholangansiz.';
+
+  @override
+  String get oralErrTryAgain =>
+      'Kod yaratib bo‘lmadi. Yana bir bor urinib ko‘ring.';
+
+  @override
+  String oralResumeCard(int n) {
+    return 'Davom etish: Bilet № $n';
+  }
+
+  @override
+  String oralPlayLeaveCount(int n) {
+    return 'Ilovadan chiqishlaringiz: $n';
+  }
+
+  @override
+  String oralGroupLeftAt(String time) {
+    return 'oxirgisi: $time';
+  }
 }

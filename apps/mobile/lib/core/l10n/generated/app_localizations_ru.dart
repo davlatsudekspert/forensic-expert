@@ -13312,4 +13312,341 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get teacherOralKeyNote => 'Из слайда занятия (исходный текст).';
+
+  @override
+  String get oralGroupButton => 'Группе (QR)';
+
+  @override
+  String oralGroupActiveLink(int n) {
+    return 'Активные групповые экзамены: $n';
+  }
+
+  @override
+  String get oralGroupSetupTitle => 'Групповой экзамен';
+
+  @override
+  String get oralGroupSetupIntro =>
+      'На доске появятся QR и код. Студенты заходят с телефона, получают случайный билет и сразу видят вопросы. Ключ ответа остаётся только на вашем телефоне и на сервер не отправляется.';
+
+  @override
+  String get oralGroupNoTopics =>
+      'Для нового экзамена сначала выберите темы. Активные экзамены ниже.';
+
+  @override
+  String get oralGroupStudentsLabel => 'Количество студентов';
+
+  @override
+  String get oralGroupStudentsHelper =>
+      '1–200. Столько билетов будет составлено.';
+
+  @override
+  String get oralGroupStudentsDec => 'Уменьшить';
+
+  @override
+  String get oralGroupStudentsInc => 'Увеличить';
+
+  @override
+  String get oralGroupPrepLabel => 'Время подготовки';
+
+  @override
+  String get oralGroupPrepNone => 'Нет';
+
+  @override
+  String oralGroupPrepMin(int n) {
+    return '$n мин';
+  }
+
+  @override
+  String get oralGroupPrepHint =>
+      'Студент видит билет сразу; это время — только для отсчёта.';
+
+  @override
+  String oralGroupAvailable(int n) {
+    return 'Вопросов в выбранных темах: $n';
+  }
+
+  @override
+  String get oralGroupRepeatNotice =>
+      'Вопросов не хватит: в некоторых билетах вопросы повторятся';
+
+  @override
+  String get oralGroupStart => 'Начать';
+
+  @override
+  String get oralGroupActiveSection => 'Активные экзамены';
+
+  @override
+  String get oralGroupFinishedSection => 'Завершённые (хранятся 30 дней)';
+
+  @override
+  String oralGroupSessionLine(String code, int joined, int graded) {
+    return 'Код $code · зашло: $joined · оценено: $graded';
+  }
+
+  @override
+  String get oralGroupNoTitle => 'Групповой экзамен';
+
+  @override
+  String get oralGroupHostJoinHint =>
+      'В разделе «Групповой тест» FORENSIC EXPERT введите код или отсканируйте QR:';
+
+  @override
+  String oralGroupJoinedCount(int x, int n) {
+    return 'Зашло: $x / $n';
+  }
+
+  @override
+  String oralGroupTile(int n) {
+    return '№ $n';
+  }
+
+  @override
+  String get oralGroupStatusFree => 'свободен';
+
+  @override
+  String get oralGroupStatusJoined => 'зашёл';
+
+  @override
+  String get oralGroupStatusReady => 'готов';
+
+  @override
+  String get oralGroupStatusGraded => 'оценён';
+
+  @override
+  String get oralGroupQueue => 'Очередь';
+
+  @override
+  String get oralGroupResults => 'Результаты';
+
+  @override
+  String get oralGroupFinish => 'Завершить';
+
+  @override
+  String get oralGroupFinishTitle => 'Завершить экзамен?';
+
+  @override
+  String get oralGroupFinishBody =>
+      'Новые студенты не смогут зайти, очередь закроется. Результаты хранятся 30 дней.';
+
+  @override
+  String get oralGroupFinishedBanner =>
+      'Экзамен завершён. Результаты хранятся 30 дней.';
+
+  @override
+  String get oralGroupCancel => 'Отмена';
+
+  @override
+  String get oralGroupQrNote => 'Баллы на доске не показываются.';
+
+  @override
+  String get oralGroupQueueTitle => 'Очередь';
+
+  @override
+  String get oralGroupQueueEmpty => 'Пока никто не зашёл.';
+
+  @override
+  String oralGroupSectionReady(int n) {
+    return 'Готовы ($n)';
+  }
+
+  @override
+  String oralGroupSectionJoined(int n) {
+    return 'Готовятся ($n)';
+  }
+
+  @override
+  String oralGroupSectionGraded(int n) {
+    return 'Оценены ($n)';
+  }
+
+  @override
+  String oralGroupReadyAt(String time) {
+    return 'Готов: $time';
+  }
+
+  @override
+  String get oralGroupCalledMark => 'вызван';
+
+  @override
+  String get oralGroupGradeTitle => 'Оценивание';
+
+  @override
+  String get oralGroupSave => 'Сохранить';
+
+  @override
+  String oralGroupSaved(int total) {
+    return 'Оценка сохранена: $total / 100';
+  }
+
+  @override
+  String get oralGroupKick => 'Удалить из экзамена';
+
+  @override
+  String oralGroupKickTitle(String name) {
+    return 'Удалить $name из экзамена?';
+  }
+
+  @override
+  String get oralGroupKickBody =>
+      'Билет освободится и достанется другому студенту. Удалённый студент не сможет зайти снова.';
+
+  @override
+  String get oralGroupKeyMissing =>
+      'Ключ ответа не найден: занятие могло измениться или не загрузиться.';
+
+  @override
+  String get oralGroupGradedBefore => 'Уже оценён — можно переоценить.';
+
+  @override
+  String get oralGroupResultsTitle => 'Результаты';
+
+  @override
+  String get oralGroupResultsEmpty => 'Пока никто не зашёл.';
+
+  @override
+  String get oralGroupNotGraded => 'не оценён';
+
+  @override
+  String get oralGroupExport => 'Отправить как CSV';
+
+  @override
+  String get oralGroupCsvName => 'Имя';
+
+  @override
+  String get oralGroupCsvTicket => 'Билет';
+
+  @override
+  String oralGroupCsvQuestion(int n) {
+    return 'Вопрос $n';
+  }
+
+  @override
+  String get oralGroupCsvTotal => 'Итого';
+
+  @override
+  String get oralJoinTitle => 'Вход в устный экзамен';
+
+  @override
+  String get oralJoinNameLabel => 'Имя и фамилия';
+
+  @override
+  String get oralJoinNameHelper =>
+      '2–40 символов. Преподаватель увидит вас под этим именем.';
+
+  @override
+  String get oralJoinNote =>
+      'Ваши баллы видите только вы и преподаватель. Результаты удаляются через 30 дней.';
+
+  @override
+  String get oralPlayTitle => 'Устный экзамен';
+
+  @override
+  String oralPlayName(String name) {
+    return 'Имя: $name';
+  }
+
+  @override
+  String oralPlayPrepLeft(String time) {
+    return 'Время подготовки: $time';
+  }
+
+  @override
+  String get oralPlayPrepDone => 'Время подготовки вышло.';
+
+  @override
+  String get oralPlayReady => 'Готов отвечать';
+
+  @override
+  String get oralPlayWaiting =>
+      'Вы в очереди. Дождитесь, когда преподаватель вас вызовет.';
+
+  @override
+  String get oralPlayCalled => 'Преподаватель вас вызвал';
+
+  @override
+  String get oralPlayCalledHint => 'Подойдите к преподавателю.';
+
+  @override
+  String get oralPlayResultTitle => 'Ваш результат';
+
+  @override
+  String oralPlayScoreLine(int n, int s) {
+    return 'Вопрос $n: $s / 20';
+  }
+
+  @override
+  String get oralPlayFinished => 'Экзамен завершён.';
+
+  @override
+  String get oralErrNotFound =>
+      'По этому коду тест или экзамен не найден. Проверьте код.';
+
+  @override
+  String get oralErrFinished =>
+      'Этот экзамен завершён, новые студенты зайти не могут.';
+
+  @override
+  String get oralErrFull =>
+      'Все билеты заняты: мест в этом экзамене не осталось.';
+
+  @override
+  String get oralErrKicked => 'Преподаватель удалил вас из этого экзамена.';
+
+  @override
+  String get oralErrNameLength => 'Имя должно содержать 2–40 символов.';
+
+  @override
+  String get oralErrNameChars => 'В имени есть недопустимые символы.';
+
+  @override
+  String get oralErrNameBlocked => 'Укажите другое имя.';
+
+  @override
+  String get oralErrRateLimited =>
+      'Слишком много попыток. Повторите через час.';
+
+  @override
+  String get oralErrOwnSession =>
+      'Вы — преподаватель этого экзамена и не можете зайти как студент.';
+
+  @override
+  String get oralErrInvalidSettings =>
+      'Проверьте настройки: 1–200 студентов, время подготовки 0–60 минут.';
+
+  @override
+  String get oralErrInvalidTicket =>
+      'Билеты составлены неверно. Попробуйте выбрать темы заново.';
+
+  @override
+  String get oralErrTooMany =>
+      'Слишком много открытых экзаменов. Сначала завершите один.';
+
+  @override
+  String get oralErrInvalidScores => 'Неверные баллы: за каждый вопрос 0–20.';
+
+  @override
+  String get oralErrNotJoined =>
+      'Вы не участвуете в этом экзамене или преподаватель вас удалил.';
+
+  @override
+  String get oralErrNotAllowed =>
+      'Сейчас это действие невозможно: экзамен завершён или вы уже оценены.';
+
+  @override
+  String get oralErrTryAgain => 'Не удалось создать код. Попробуйте ещё раз.';
+
+  @override
+  String oralResumeCard(int n) {
+    return 'Продолжить: билет № $n';
+  }
+
+  @override
+  String oralPlayLeaveCount(int n) {
+    return 'Выходов из приложения: $n';
+  }
+
+  @override
+  String oralGroupLeftAt(String time) {
+    return 'последний: $time';
+  }
 }

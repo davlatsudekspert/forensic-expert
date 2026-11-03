@@ -49,6 +49,11 @@ String classFailureText(AppLocalizations l, ClassFailure f) => switch (f) {
   ClassFailure.notFinished => l.classErrNotFinished,
   ClassFailure.notClosed => l.classErrNotClosed,
   ClassFailure.badReason => l.classErrBadReason,
+  ClassFailure.invalidTicket => l.oralErrInvalidTicket,
+  ClassFailure.invalidScores => l.oralErrInvalidScores,
+  ClassFailure.notJoined => l.oralErrNotJoined,
+  ClassFailure.notAllowed => l.oralErrNotAllowed,
+  ClassFailure.tryAgain => l.oralErrTryAgain,
 };
 
 /// Sinf natijasini CSV fayl sifatida saqlash/ulashish (ustoz paneli va

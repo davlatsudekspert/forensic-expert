@@ -254,6 +254,9 @@ abstract final class Routes {
       '/home/learn/class/play/${Uri.encodeComponent(id)}';
   static const classScan = '/home/learn/class/scan';
 
+  /// Oral qo‘shilish ekranidan: oral havola natijasi qaytariladi.
+  static const classScanBack = '/home/learn/class/scan?back=1';
+
   /// «Ustoz–talaba testi»: kiruvchi havola `/g/<KOD>?a=<test>` (QR).
   static const groupLinkPrefix = '/g/';
   static const groups = '/home/learn/groups';
@@ -312,6 +315,33 @@ abstract final class Routes {
   static const teacherOral = '/home/teacher/oral';
   static String teacherOralTicket(String selectionKey) =>
       '$teacherOral/ticket?t=${Uri.encodeQueryComponent(selectionKey)}';
+
+  /// Ustoz: guruh og‘zaki imtihoni (QR). Hammasi `teacherOral` ostida —
+  /// rejim chegarasi (faqat Ustoz) shu prefiks bo‘yicha ishlaydi.
+  static const teacherOralGroup = '$teacherOral/group';
+  static String teacherOralGroupFor(String selectionKey) =>
+      '$teacherOralGroup?t=${Uri.encodeQueryComponent(selectionKey)}';
+  static String oralGroupHost(String id) =>
+      '$teacherOralGroup/host/${Uri.encodeComponent(id)}';
+  static String oralGroupQueue(String id) =>
+      '$teacherOralGroup/queue/${Uri.encodeComponent(id)}';
+  static String oralGroupGrade(String id, String participantId) =>
+      '$teacherOralGroup/grade/${Uri.encodeComponent(id)}/'
+      '${Uri.encodeComponent(participantId)}';
+  static String oralGroupResults(String id) =>
+      '$teacherOralGroup/results/${Uri.encodeComponent(id)}';
+
+  /// Talaba: guruh og‘zaki imtihoniga qo‘shilish va bilet ekrani.
+  static const oralJoin = '/home/learn/oral-join';
+  static String oralJoinWith(String code, {String? name}) => Uri(
+    path: oralJoin,
+    queryParameters: {
+      'code': code,
+      if (name != null && name.isNotEmpty) 'n': name,
+    },
+  ).toString();
+  static String oralPlay(String id) =>
+      '/home/learn/oral-play/${Uri.encodeComponent(id)}';
 
   // Akkaunt (ixtiyoriy). Email marshrut satriga yozilmaydi — `extra`.
   static const accountSignIn = '/profile/account/sign-in';

@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
 
 import '../../../app/class_quiz.dart';
+import '../../../app/oral_group.dart' show oralGroupServiceProvider;
 import '../../../app/professional.dart' show localProfileProvider;
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
@@ -14,6 +15,9 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart';
+import '../../../domain/oral_group/oral_group_models.dart' show OralName;
+import '../../oral_group/presentation/oral_group_widgets.dart'
+    show OralResumeCard, routeOralScan;
 import '../../professional/presentation/professional_widgets.dart' show FeNote;
 import 'class_quiz_widgets.dart';
 
@@ -150,6 +154,10 @@ class _ClassQuizHubState extends ConsumerState<ClassQuizHubScreen> {
                           ],
                         ],
                       ),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.only(top: FeSpace.sm),
+                      child: OralResumeCard(),
                     ),
                     if (active != null) ...[
                       const SizedBox(height: FeSpace.sm),
@@ -324,24 +332,31 @@ class _ClassJoinState extends ConsumerState<ClassJoinScreen> {
     final l = AppLocalizations.of(context);
     final code = ClassCode.normalize(_code.text);
     final nick = ClassNickname.clean(_nick.text);
-    final nickCheck = ClassNickname.check(nick);
+    // Laqab mijozda bloklanmaydi: kod «Guruh testi»da topilmasa, bu oral
+    // imtihon kodi bo‘lishi mumkin va ismni o‘sha ekran hal qiladi. Server
+    // kodni laqabdan oldin tekshiradi, laqab xatosini o‘zi qaytaradi.
     setState(() {
       _codeError = code == null ? l.classErrBadCode : null;
-      _nickError = switch (nickCheck) {
-        NicknameCheck.ok => null,
-        NicknameCheck.length => l.classErrNickLength,
-        NicknameCheck.chars => l.classErrNickChars,
-        NicknameCheck.blocked => l.classErrNickBlocked,
-      };
+      _nickError = null;
       _error = null;
     });
-    if (code == null || nickCheck != NicknameCheck.ok) return;
+    if (code == null) return;
     setState(() => _busy = true);
     final r = await ref
         .read(classQuizServiceProvider)
         .join(code: code, nickname: nick);
     if (!mounted) return;
     final info = r.value;
+    // Kod «Guruh testi»da yo‘q: bu «Guruh og‘zaki imtihoni» kodi bo‘lishi
+    // mumkin (kodlar to‘qnashmaydi) — shu ekranga ism bilan o‘tamiz.
+    if (info == null &&
+        r.failure == ClassFailure.notFound &&
+        ref.read(oralGroupServiceProvider).isConfigured) {
+      context.pushReplacement(
+        Routes.oralJoinWith(code, name: OralName.fromProfile(nick)),
+      );
+      return;
+    }
     if (info == null) {
       setState(() {
         _busy = false;
@@ -465,7 +480,10 @@ class _ClassJoinState extends ConsumerState<ClassJoinScreen> {
 
 /// QR skaner. Kamera ruxsati rad etilsa — tushunarli matn va qo‘lda kiritish.
 class ClassScanScreen extends StatefulWidget {
-  const ClassScanScreen({super.key});
+  const ClassScanScreen({super.key, this.returnOral = false});
+
+  /// `true` — oral havola `oral:<kod>` bo‘lib qaytariladi (chaqiruvchi hal qiladi).
+  final bool returnOral;
 
   @override
   State<ClassScanScreen> createState() => _ClassScanState();
@@ -487,6 +505,12 @@ class _ClassScanState extends State<ClassScanScreen> {
   void _onDetect(BarcodeCapture capture) {
     if (_done) return;
     for (final b in capture.barcodes) {
+      // Guruh og‘zaki imtihoni QR’i: «Guruh testi» laqab maydonisiz,
+      // to‘g‘ridan-to‘g‘ri uning qo‘shilish ekraniga.
+      if (routeOralScan(context, b.rawValue, popResult: widget.returnOral)) {
+        _done = true;
+        return;
+      }
       final code = ClassCode.fromScanned(b.rawValue);
       if (code != null) {
         _done = true;

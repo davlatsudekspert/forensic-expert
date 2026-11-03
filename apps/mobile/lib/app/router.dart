@@ -20,6 +20,7 @@ import '../domain/knowledge/knowledge_models.dart';
 import '../domain/learn/study_models.dart' show StudyQuizMode;
 import '../domain/library/library_models.dart';
 import '../domain/moderation/moderation_models.dart';
+import '../domain/oral_group/oral_group_models.dart' show OralGroupLink;
 import '../domain/plan/plan_models.dart' show Plan, ProFeature;
 import '../domain/plan/pro_split.dart';
 import '../domain/publications/publication_models.dart';
@@ -81,6 +82,10 @@ import '../features/moderation/presentation/report_screen.dart';
 import '../features/onboarding/presentation/disclaimer_screen.dart';
 import '../features/onboarding/presentation/language_screen.dart';
 import '../features/onboarding/presentation/mode_screen.dart';
+import '../features/oral_group/presentation/oral_group_grade_screen.dart';
+import '../features/oral_group/presentation/oral_group_host_screens.dart';
+import '../features/oral_group/presentation/oral_group_setup_screen.dart';
+import '../features/oral_group/presentation/oral_group_student_screens.dart';
 import '../features/placeholder/presentation/not_found_screen.dart';
 import '../features/pro/presentation/analysis_plan_screen.dart';
 import '../features/pro/presentation/pro_gate.dart'
@@ -286,7 +291,10 @@ final routerProvider = Provider<GoRouter>((ref) {
         final code = ClassCode.extract(state.uri);
         if (code != null) {
           ref.read(pendingClassCodeProvider.notifier).remember(code);
-          final target = Routes.classJoinWith(code);
+          // Guruh og‘zaki imtihoni QR’i: to‘g‘ridan-to‘g‘ri uning ekrani.
+          final target = OralGroupLink.isOral(state.uri)
+              ? Routes.oralJoinWith(code)
+              : Routes.classJoinWith(code);
           return onboardingRedirect(settings, target) ?? target;
         }
         return onboardingRedirect(settings, Routes.classQuiz) ??
@@ -424,6 +432,46 @@ final routerProvider = Provider<GoRouter>((ref) {
                               selectionKey: s.uri.queryParameters['t'] ?? '',
                             ),
                           ),
+                          // Guruh og‘zaki imtihoni (QR): sozlash, doska,
+                          // navbat, baholash, natijalar.
+                          GoRoute(
+                            path: 'group',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => OralGroupSetupScreen(
+                              selectionKey: s.uri.queryParameters['t'] ?? '',
+                            ),
+                            routes: [
+                              GoRoute(
+                                path: 'host/:id',
+                                parentNavigatorKey: rootKey,
+                                builder: (c, s) => OralGroupHostScreen(
+                                  sessionId: s.pathParameters['id']!,
+                                ),
+                              ),
+                              GoRoute(
+                                path: 'queue/:id',
+                                parentNavigatorKey: rootKey,
+                                builder: (c, s) => OralGroupQueueScreen(
+                                  sessionId: s.pathParameters['id']!,
+                                ),
+                              ),
+                              GoRoute(
+                                path: 'grade/:id/:pid',
+                                parentNavigatorKey: rootKey,
+                                builder: (c, s) => OralGroupGradeScreen(
+                                  sessionId: s.pathParameters['id']!,
+                                  participantId: s.pathParameters['pid']!,
+                                ),
+                              ),
+                              GoRoute(
+                                path: 'results/:id',
+                                parentNavigatorKey: rootKey,
+                                builder: (c, s) => OralGroupResultsScreen(
+                                  sessionId: s.pathParameters['id']!,
+                                ),
+                              ),
+                            ],
+                          ),
                         ],
                       ),
                       GoRoute(
@@ -467,6 +515,26 @@ final routerProvider = Provider<GoRouter>((ref) {
                         path: 'exam',
                         builder: (c, s) => const ExamScreen(),
                       ),
+                      // Talaba: guruh og‘zaki imtihoni (QR yoki kod).
+                      GoRoute(
+                        path: 'oral-join',
+                        parentNavigatorKey: rootKey,
+                        builder: (c, s) => StudentTestGate(
+                          child: OralGroupJoinScreen(
+                            initialCode: s.uri.queryParameters['code'],
+                            initialName: s.uri.queryParameters['n'],
+                          ),
+                        ),
+                      ),
+                      GoRoute(
+                        path: 'oral-play/:id',
+                        parentNavigatorKey: rootKey,
+                        builder: (c, s) => StudentTestGate(
+                          child: OralGroupPlayScreen(
+                            sessionId: s.pathParameters['id']!,
+                          ),
+                        ),
+                      ),
                       GoRoute(
                         path: 'class',
                         builder: (c, s) => const ClassQuizHubScreen(),
@@ -495,7 +563,9 @@ final routerProvider = Provider<GoRouter>((ref) {
                           GoRoute(
                             path: 'scan',
                             parentNavigatorKey: rootKey,
-                            builder: (c, s) => const ClassScanScreen(),
+                            builder: (c, s) => ClassScanScreen(
+                              returnOral: s.uri.queryParameters['back'] == '1',
+                            ),
                           ),
                           GoRoute(
                             path: 'host/:id',

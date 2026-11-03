@@ -370,7 +370,14 @@ enum ClassFailure {
   badOption,
   notFinished,
   notClosed,
-  badReason;
+  badReason,
+
+  /// «Guruh og‘zaki imtihoni» (oral_*): bilet/ball/holat xatolari.
+  invalidTicket,
+  invalidScores,
+  notJoined,
+  notAllowed,
+  tryAgain;
 
   static ClassFailure fromServer(Object? code) => switch (code) {
     'bad_code' => badCode,
