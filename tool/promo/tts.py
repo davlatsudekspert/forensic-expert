@@ -16,7 +16,15 @@ async def main():
         voice = spec.get('voice', 'ru-RU-DmitryNeural')
         for line in spec['lines']:
             mp3 = out / f"{line['id']}.mp3"
-            await edge_tts.Communicate(line['ru'], voice, rate='-4%').save(str(mp3))
+            for attempt in range(4):
+                try:
+                    await edge_tts.Communicate(
+                        line['ru'], voice, rate='-4%').save(str(mp3))
+                    break
+                except edge_tts.exceptions.NoAudioReceived:
+                    if attempt == 3:
+                        raise
+                    await asyncio.sleep(3 * (attempt + 1))
             ms = float(subprocess.check_output([
                 'ffprobe', '-v', 'error', '-show_entries', 'format=duration',
                 '-of', 'csv=p=0', str(mp3)]).decode().strip()) * 1000
