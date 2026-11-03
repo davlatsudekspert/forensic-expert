@@ -1,0 +1,24 @@
+# Promo rolik ovozi (ruscha, edge-tts). Faqat qo‘lda ishga tushiriladi;
+# hech narsani commit qilmaydi, natija — 3 kunlik artifact (MP3 + durations).
+# Asosiy branch’dagi nusxa — dispatch uchun; haqiqiy ish ref (feature) dan.
+name: promo-tts
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install --quiet edge-tts==7.0.2
+      - run: sudo apt-get install -y -qq ffmpeg >/dev/null
+      - run: python3 tool/promo/tts.py out tool/promo/narration_ustoz.json tool/promo/narration_talaba.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: promo-tts
+          path: out/
+          retention-days: 3
