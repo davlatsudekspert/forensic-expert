@@ -16,9 +16,9 @@ jobs:
         with: { python-version: "3.12" }
       - run: pip install --quiet edge-tts==7.3.1
       - run: sudo apt-get install -y -qq ffmpeg >/dev/null
-      - run: python3 tool/promo/tts.py out tool/promo/narration_ustoz.json tool/promo/narration_talaba.json
+      - run: python3 tool/promo/tts.py promo_audio tool/promo/narration_*.json
       - uses: actions/upload-artifact@v4
         with:
           name: promo-tts
-          path: out/
+          path: promo_audio/
           retention-days: 3
