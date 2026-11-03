@@ -5,20 +5,20 @@
   {
    "id": "t01",
    "scene": "intro",
-   "ru": "Форэ́нзик Э́кспэрт для студентов: темы, тесты и библиотека — в одном приложении.",
-   "uz": "Talabalar uchun Forensic Expert: mavzular, testlar va kutubxona — bitta ilovada."
+   "ru": "Форэ́нзик Э́кспэрт — ваш помощник в учёбе по судебной медицине и токсикологии: каждый день, к каждому занятию и к экзамену.",
+   "uz": "Forensic Expert — sud tibbiyoti va toksikologiyani o‘rganishda har kungi yordamchingiz: har bir darsga va imtihonga."
   },
   {
    "id": "t02",
    "scene": "desk",
-   "ru": "На главном экране — ваш учебный стол и вопрос дня с источником.",
-   "uz": "Asosiy ekranda — o‘qish stolingiz va manbasi bilan kunning savoli."
+   "ru": "Каждый день — вопрос дня с источником: пять минут, и вы уже повторили важную тему.",
+   "uz": "Har kuni — manbasi bilan kunning savoli: besh daqiqada muhim mavzuni takrorlaysiz."
   },
   {
    "id": "t03",
    "scene": "lessons",
-   "ru": "Все темы по курсам: лекции и практические занятия.",
-   "uz": "Kurslar bo‘yicha barcha mavzular: ma’ruza va amaliy mashg‘ulotlar."
+   "ru": "Перед занятием откройте тему своего курса: лекции и практические занятия всегда под рукой.",
+   "uz": "Darsdan oldin o‘z kursingiz mavzusini oching: ma’ruza va amaliy mashg‘ulotlar doim yoningizda."
   },
   {
    "id": "t04",
@@ -29,14 +29,26 @@
   {
    "id": "t05",
    "scene": "explain",
-   "ru": "К слайдам есть короткое объяснение простым языком — удобно повторять и работать над собой.",
-   "uz": "Slaydlarga sodda tilda qisqa tushuntirish bor — takrorlash va o‘z ustingizda ishlash qulay."
+   "ru": "К каждому слайду — короткое объяснение простым языком: удобно повторять дома и работать над собой.",
+   "uz": "Har bir slaydga sodda tilda qisqa tushuntirish bor: uyda takrorlash va o‘z ustingizda ishlash qulay."
   },
   {
    "id": "t06",
    "scene": "selftest",
-   "ru": "После темы проверьте себя: тест по теме прямо в приложении.",
-   "uz": "Mavzudan keyin o‘zingizni sinang: mavzu testi ilovaning o‘zida."
+   "ru": "После темы проверьте себя тестом: сразу видно, что вы уже знаете, а что нужно повторить.",
+   "uz": "Mavzudan keyin o‘zingizni test bilan sinang: nimani bilishingiz va nimani takrorlash kerakligi darhol ko‘rinadi."
+  },
+  {
+   "id": "t14",
+   "scene": "cards",
+   "ru": "Тесты и карточки помогают закрепить материал и повторить его в удобное время.",
+   "uz": "Testlar va kartochkalar mavzuni mustahkamlashga va xohlagan vaqtda takrorlashga yordam beradi."
+  },
+  {
+   "id": "t15",
+   "scene": "exam",
+   "ru": "Перед экзаменом — режим экзамена: оцениваемые вопросы с источниками.",
+   "uz": "Imtihon oldidan — imtihon rejimi: manbali, baholanadigan savollar."
   },
   {
    "id": "t07",
@@ -77,8 +89,8 @@
   {
    "id": "t09",
    "scene": "outro",
-   "ru": "Форэ́нзик Э́кспэрт. Доказательства. Наука. Точность.",
-   "uz": "Forensic Expert. Dalil. Ilm. Aniqlik."
+   "ru": "Форэ́нзик Э́кспэрт. Учитесь увереннее — каждый день.",
+   "uz": "Forensic Expert. Har kuni — ishonch bilan o‘rganing."
   }
  ]
 }
