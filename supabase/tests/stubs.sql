@@ -26,6 +26,9 @@ alter table storage.objects enable row level security;
 create function storage.foldername(name text) returns text[] language sql as $$
   select string_to_array(name, '/')
 $$;
+-- Supabase Vault (only the view the migrations read).
+create schema vault;
+create table vault.decrypted_secrets (name text, decrypted_secret text);
 grant usage on schema public, auth, storage to authenticated, anon, service_role;
 -- Like Supabase: new functions/tables get privileges for API roles directly.
 alter default privileges in schema public grant execute on functions to anon, authenticated, service_role;

@@ -62,13 +62,14 @@ select pg_temp.expect_42501($q$insert into storage.objects (bucket_id, name)
   values ('teacher-cards', '8d000000-0000-0000-0000-0000000000a1/photo-11111111-1111-4111-8111-111111111112.gif')$q$, 'noto''g''ri kengaytma rad');
 select pg_temp.expect_42501($q$insert into storage.objects (bucket_id, name)
   values ('teacher-cards', '8d000000-0000-0000-0000-0000000000a1/sub/photo-11111111-1111-4111-8111-111111111113.jpg')$q$, 'ichki papka rad');
--- 8 ta chegara (2 ta bor: yana 6 ta mumkin, 9-chisi rad)
+-- 10 ta chegara (20261102130000: fon/cover rasmi qo'shilgach 8 → 10).
+-- 2 ta bor: yana 8 ta mumkin, 11-chisi rad.
 insert into storage.objects (bucket_id, name) select 'teacher-cards',
-  '8d000000-0000-0000-0000-0000000000a1/photo-aaaaaaaa-aaaa-4aaa-8aaa-00000000000' || g || '.jpg' from generate_series(1, 6) g;
+  '8d000000-0000-0000-0000-0000000000a1/photo-aaaaaaaa-aaaa-4aaa-8aaa-00000000000' || g || '.jpg' from generate_series(1, 8) g;
 select pg_temp.expect_42501($q$insert into storage.objects (bucket_id, name)
-  values ('teacher-cards', '8d000000-0000-0000-0000-0000000000a1/photo-aaaaaaaa-aaaa-4aaa-8aaa-000000000009.jpg')$q$, '9-obyekt rad (limit 8)');
+  values ('teacher-cards', '8d000000-0000-0000-0000-0000000000a1/photo-aaaaaaaa-aaaa-4aaa-8aaa-000000000009.jpg')$q$, '11-obyekt rad (limit 10)');
 select pg_temp.check(pg_temp.del($q$delete from storage.objects where bucket_id = 'teacher-cards'
-  and name like '8d000000-0000-0000-0000-0000000000a1/photo-aaaaaaaa%'$q$) = 6, 'egasi o''z obyektlarini o''chira oladi');
+  and name like '8d000000-0000-0000-0000-0000000000a1/photo-aaaaaaaa%'$q$) = 8, 'egasi o''z obyektlarini o''chira oladi');
 
 -- Talaba (ustoz emas) yoza olmaydi
 select pg_temp.as_user(:'s1');

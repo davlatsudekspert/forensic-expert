@@ -1,0 +1,6 @@
+# TEST-ONLY stand-in for pg_cron (supabase/tests/run_local.sh installs it only
+# when the real extension is missing). Jobs are accepted and never run.
+comment = 'test stub for pg_cron'
+default_version = '1.0'
+relocatable = false
+superuser = true

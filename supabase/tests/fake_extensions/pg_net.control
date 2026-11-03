@@ -1,0 +1,5 @@
+# TEST-ONLY stand-in for pg_net (no HTTP calls are made).
+comment = 'test stub for pg_net'
+default_version = '1.0'
+relocatable = false
+superuser = true

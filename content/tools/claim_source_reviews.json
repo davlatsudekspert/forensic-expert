@@ -134,10 +134,10 @@
   },
   {
    "id": "guideline.chem.co_cohb_determination/cautions#3",
-   "text_sha": "32d580453fa0511c",
+   "text_sha": "3b75d6642f5bebec",
    "verdict": "ABSTRACT_ONLY",
    "action": "narrowed",
-   "basis": "delvau2024 is a swine model: the oxygen-administration factor is now marked '(shown in an animal model)'; the other factors are unchanged.",
+   "basis": "delvau2024 is a swine model: the oxygen-administration factor is now marked '(shown in an animal model)'; the other factors are unchanged. Re-bound 2026-11-03: the only edit since review (c112a504) joined abbreviations with suffixes (e.g. «CO ni» → «COni»); wording, meaning and sources unchanged (word-level diff checked).",
    "on": "2026-10-10"
   },
   {
@@ -397,9 +397,9 @@
     "guideline.chem.method_comparison/methods#7": "bdf577d307d91474",
     "guideline.chem.method_comparison/methods#9": "5746a847bf713d6f",
     "guideline.chem.method_comparison/methods#12": "c89d03d03d7626f2",
-    "guideline.chem.method_comparison/methods#15": "07e57c891416cece",
+    "guideline.chem.method_comparison/methods#15": "ed6c6264d61419da",
     "guideline.chem.method_comparison/advantages#3": "9a4aa75135dd0a34",
-    "guideline.chem.method_comparison/limitations#2": "4ce8fb09fee9a20d",
+    "guideline.chem.method_comparison/limitations#2": "be9b92fba7245659",
     "guideline.chem.method_comparison/alternatives#5": "01d7627ad69852d6",
     "guideline.chem.gmt_analysis_scheme/basis#3": "033b89e8b440da28",
     "guideline.chem.gmt_analysis_scheme/limitations#1": "cca23d8e83c6df8e",
@@ -450,7 +450,7 @@
     "guideline.chem.method_comparison/cautions#4": "bfabb91a232e2c3d",
     "guideline.chem.gmt_analysis_scheme/limitations#2": "37bacf88c82b107d",
     "guideline.chem.gmt_cocaine/limitations#2": "30a7c44aa579ea8d",
-    "guideline.chem.gmt_cannabis/limitations#2": "83a32dee622d3ef9",
+    "guideline.chem.gmt_cannabis/limitations#2": "c434043516f3165c",
     "guideline.chem.uvvis_drug_analysis/cautions#4": "b2cec304969046e5"
    }
   },
@@ -475,7 +475,7 @@
    "basis": "SWGDRUG Recommendations v8.2 (official PDF, 2024-06-27) re-read 2026-10-10; passage located and wording compared with the claim: IIIB.3.1.2 and IIIB.3.1.2.1-3 (a Category A technique may not give sufficient selectivity: resolution, sample complexity, low quantity)",
    "on": "2026-10-10",
    "claims": {
-    "guideline.chem.method_comparison/limitations#3": "9427b807ee11192d",
+    "guideline.chem.method_comparison/limitations#3": "e42576751ffef5ec",
     "guideline.chem.method_comparison/factors#7": "e07bf631ffac8802"
    }
   },

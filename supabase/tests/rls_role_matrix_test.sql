@@ -142,6 +142,17 @@ insert into matrix_tables values
  ('public.class_answers',          null,           false, false, 'option_id'),
  ('public.class_reports',          'reporter_id',  false, false, 'reason'),
  ('public.class_join_attempts',    null,           false, false, 'n'),
+ -- «Guruh og‘zaki imtihoni» (20261103010000): no grant, only oral_* RPCs.
+ ('public.oral_sessions',          'teacher_id',   false, false, 'status'),
+ ('public.oral_tickets',           null,           false, false, 'questions'),
+ ('public.oral_participants',      'user_id',      false, false, 'name'),
+ -- «Ustozlar va mutaxassislar» yulduzchalari (20261102080000): RLS, no policy;
+ -- only catalog_* SECURITY DEFINER functions read/write it.
+ ('public.catalog_stars',          'user_id',      false, false, 'created_at'),
+ -- Sarlavha tuzatishi zaxirasi (20261102100000): no grant, no policy.
+ ('public.lesson_topics_title_fix_20261102', null, false, false, 'title'),
+ -- Ovozni oldindan yaratish navbati (20261102170000): no grant, no policy.
+ ('public.tts_prefill_queue',      null,           false, false, 'text'),
  -- «Darslar» (20261018020000): no grant, only lesson_list / lesson_get.
  ('public.lesson_decks',           null,           false, false, 'title'),
  ('public.lesson_topics',          null,           false, false, 'title'),
@@ -373,8 +384,27 @@ values ('60000000-0000-0000-0000-0000000000c1'::uuid,
         '50000000-0000-0000-0000-00000000000d', 'matritsa testi');
 insert into class_join_attempts (key, hour, n)
 values ('u:matrix', date_trunc('hour', now()), 1);
+-- «Guruh og‘zaki imtihoni» rows: a hosts, b holds ticket 1 and is graded.
+insert into oral_sessions (id, teacher_id, code, title, settings)
+values ('60000000-0000-0000-0000-0000000000e1'::uuid,
+        '50000000-0000-0000-0000-00000000000a', '654321', 'Matritsa',
+        '{"ticket_count":1,"prep_seconds":0}'::jsonb);
+insert into oral_tickets (session_id, no, questions)
+values ('60000000-0000-0000-0000-0000000000e1'::uuid, 1,
+        '[{"id":"matrix#1","text":"Matritsa savoli"}]'::jsonb);
+insert into oral_participants (session_id, user_id, name, ticket_no, scores, graded_at)
+values ('60000000-0000-0000-0000-0000000000e1'::uuid,
+        '50000000-0000-0000-0000-00000000000b', 'Matritsa talaba', 1, '{18}', now());
+insert into catalog_stars (target, user_id)
+values ('50000000-0000-0000-0000-00000000000a', '50000000-0000-0000-0000-00000000000b');
+insert into lesson_topics_title_fix_20261102 (topic_id, title, saved_at)
+values ('matrix', 'Matritsa', now());
+insert into tts_prefill_queue (deck_id, slide, text)
+values ('matrix', 0, 'Matritsa ovozi');
 insert into lesson_decks (deck_id, title, deck, slide_count, search_text)
-values ('matrix', 'Matritsa', '{"slides":[{"title":"Matritsa"}]}'::jsonb, 1, 'Matritsa');
+values ('matrix', 'Matritsa',
+        '{"slides":[{"title":"Matritsa","teacher_notes":"MAXFIY USTOZ ESLATMASI"}],"mcq":[{"q":"MAXFIY TEST"}]}'::jsonb,
+        1, 'Matritsa');
 insert into lesson_topics (topic_id, deck_id, course, title, position)
 values ('matrix', 'matrix', 'Matritsa', 'Matritsa', 1);
 -- 20261024040000: hammaga ochiq mavzu (audience = 'all').
@@ -470,10 +500,12 @@ select pg_temp.as_user('50000000-0000-0000-0000-00000000000a');
 select pg_temp.table_matrix('STUDENT');
 -- Own rows: only what policies allow.
 select pg_temp.check((select count(*) = 0 from account_roles), 'STUDENT: sees no roles (has none)');
--- 20261024040000: kirgan foydalanuvchi faqat audience = 'all' darslarni ko'radi.
-select pg_temp.check((select jsonb_array_length(lesson_list(null)) = 1 and lesson_list(null)::text like '%matrix-open%'
-  and lesson_list(null)::text not like '%"topic_id": "matrix"%'), 'STUDENT: lesson_list shows only open (audience=all) topic');
-select pg_temp.expect_42501($q$select lesson_get('matrix')$q$, 'STUDENT: lesson_get (teacher-only topic)');
+-- 20261102090000 (egasi qarori): kirgan har kim yashirin bo'lmagan hamma
+-- mavzuni o'qiydi; «Ustoz eslatmalari» va mcq faqat ustoz roliga.
+select pg_temp.check((select jsonb_array_length(lesson_list(null)) = 2), 'STUDENT: lesson_list shows every non-hidden topic');
+select pg_temp.check((select (lesson_get('matrix')->>'ok')::boolean), 'STUDENT: lesson_get reads a lesson');
+select pg_temp.check((select lesson_get('matrix')::text not like '%MAXFIY USTOZ ESLATMASI%'
+  and not (lesson_get('matrix') -> 'deck' ? 'mcq')), 'STUDENT: lesson_get hides teacher notes and mcq');
 select pg_temp.check((select (lesson_get('matrix-open')->>'ok')::boolean), 'STUDENT: lesson_get open topic');
 select pg_temp.expect_42501($q$select group_create('Talaba guruhi')$q$, 'STUDENT: group_create (teachers only)');
 select pg_temp.expect_42501($q$select group_assignment_board('60000000-0000-0000-0000-0000000000d2')$q$,

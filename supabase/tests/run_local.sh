@@ -2,6 +2,16 @@
 # Local verification of the Supabase migration on a throwaway PostgreSQL 16.
 set -euo pipefail
 PGBIN="${PGBIN:-/usr/lib/postgresql/16/bin}"
+# pg_cron / pg_net are Supabase extensions; a plain PostgreSQL lacks them.
+# Install TEST-ONLY stand-ins (fake_extensions/) when the real ones are missing.
+EXT="$("$PGBIN/pg_config" --sharedir 2>/dev/null || pg_config --sharedir)/extension"
+for e in pg_cron pg_net; do
+  if [ ! -f "$EXT/$e.control" ]; then
+    SUDO=""; [ -w "$EXT" ] || SUDO="sudo"
+    $SUDO cp "$(cd "$(dirname "$0")" && pwd)/fake_extensions/$e.control" \
+             "$(cd "$(dirname "$0")" && pwd)/fake_extensions/$e--1.0.sql" "$EXT/"
+  fi
+done
 D="$(mktemp -d)"
 trap '"$PGBIN/pg_ctl" -D "$D/data" stop -m immediate >/dev/null 2>&1 || true; rm -rf "$D"' EXIT
 HERE="$(cd "$(dirname "$0")" && pwd)"
@@ -26,6 +36,7 @@ $P -d fe -f "$HERE/qa_service_api_test.sql"
 $P -d fe -f "$HERE/class_quiz_test.sql"
 $P -d fe -f "$HERE/class_hardest_detail_test.sql"
 $P -d fe -f "$HERE/class_quiz_self_pace_test.sql"
+$P -d fe -f "$HERE/oral_sessions_test.sql"
 # «Ustoz–talaba testi»: shared variant vectors (also used by the Dart tests).
 FIXTURE="$HERE/../../apps/mobile/test/fixtures/class_group_variant_vectors.json"
 $P -d fe -v fixture="$FIXTURE" -f "$HERE/class_groups_test.sql"

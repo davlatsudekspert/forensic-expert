@@ -208,7 +208,7 @@ select pg_temp.check(:'v'::jsonb->'card'->>'display_name' = 'Dilshod Karimov', '
 select pg_temp.check(not (:'v'::jsonb->'card' ? 'visible') and not (:'v'::jsonb->'card' ? 'consent_at')
   and not (:'v'::jsonb->'card' ? 'hidden_by_admin'), 'talaba javobida ichki kalitlar yo''q');
 select pg_temp.check((select array_agg(k order by k) from jsonb_object_keys(:'v'::jsonb->'card') k)
-  = array['bio','display_name','logo_path','photo_path','socials','teacher_id','updated_at','workplace'],
+  = array['bio','category','cover_path','display_name','founder','logo_path','photo_path','socials','teacher_id','updated_at','workplace'],
   'talaba karta kalitlari aniq ro''yxat');
 select pg_temp.check(teacher_card_get(:'t1') = :'v'::jsonb, 'get == for_group');
 select pg_temp.check(:'v'::text not ilike '%secret.example%', 'email sizmaydi');

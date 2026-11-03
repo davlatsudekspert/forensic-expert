@@ -17,4 +17,7 @@ regexes = [
   # Da'vo–manba auditidagi manba identifikatorlari («"key": "SRC-PMC12845259"»,
   # «SRC-PMC12845259») — ommaviy hujjat raqamlari, sir emas.
   '''^SRC-[A-Z0-9][A-Za-z0-9.\-]*$''',
+  # Qurilmadagi saqlash (SharedPreferences) kalit NOMLARI: «fe.teacher.oralexam.v1»
+  # kabi — sir emas, faqat ilova ichidagi yozuv nomi.
+  '''^fe\.[a-z0-9_]+(\.[a-z0-9_]+)*\.v[0-9]+$''',
 ]
