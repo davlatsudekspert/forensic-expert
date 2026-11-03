@@ -340,3 +340,10 @@ Egasi yuborgan 6-kurs davolash rejasi (7 mavzu, 18+18=36 soat) bo‘yicha: «Dar
 - **Qarorlar (egasi, 2026-11-03):** (1) talaba biletini **qo‘shilishi bilan** ko‘radi, ustoz ixtiyoriy tayyorlanish vaqtini qo‘yadi; javob kaliti talabaga ko‘rinmaydi. (2) Ball qo‘yilgach talaba **o‘z balini darhol** ko‘radi; doskada va boshqalarda ballar ko‘rinmaydi. (3) Serverga yangi jadval/funksiyalar — **ruxsat berildi** (zaxira + migratsiya, keyin ustoz+talaba sinovi, build 57). Roliklar tugagach boshlanadi.
 - Qayta ishlatiladi: «Guruh testi» QR/6 xonali kod, ism bilan qo‘shilish, proyektor rejimi, jonli ro‘yxat; savollar — 56-builddagi mavzu bileti mantig‘i (dars slaydlari).
 - Keyingi kichik tuzatish: mavzu tanlash ekranida kurs tugmalari chapdan zich joylashsin (hozir o‘rtada, bittadan qator).
+
+## 2026-11-03 — Dars ovozi (tts-prefill) holati va egasi qarori
+- Holat (06:10 UTC): navbatda 8622 slayd, tayyor — 15 (oxirgisi 2026-11-02 19:00 UTC); Gemini bepul kunlik limiti tugagan (`quota:true`). 6 slayd `upstream_400` bilan qaytgan (4-kurs-davolash-06: 2, 3, 6, 7, 15; 4-kurs-davolash-01: 0) — ehtimol Gemini xavfsizlik filtri (tekshirilmagan).
+- **Egasi qarori:** hozircha **bepul limitda** davom etiladi (~15–20 slayd/kun); pullik reja (~$32, bir kunda tugaydi) — mablag‘ tushganda egasi aytadi.
+- Aniqlik: ilovada qurilma (device) ovozi bilan zaxira o‘qish YO‘Q — tayyor ovozi yo‘q slaydda limit tugagan bo‘lsa «Tinglash» xato xabarini ko‘rsatadi; «Tushuntirish» matni ekranda o‘qiladi. Variantlar (egasi qarori kerak): telefon ovozi bilan zaxira (o‘zbekcha ovoz deyarli yo‘q) yoki boshqa neyron ovoz (litsenziya shartlari aniqlanmagan).
+- Build 57 ga: tinglash paytida ekran o‘chmaydi (ref-counted keep-awake).
+- Guruh og‘zaki imtihoni: talaba bilet ekranidan chiqsa (ilova fonga o‘tsa) hisoblanadi — `oral_report_leave`, ustoz navbat/baholash ekranida «Ilovadan chiqdi: N marta» ko‘radi (egasi: «AI’dan foydalanmasin»).
