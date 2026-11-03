@@ -1,33 +1,72 @@
 {
-  "video": "talaba",
-  "voice": "ru-RU-SvetlanaNeural",
-  "lines": [
-    {"id": "t01", "scene": "intro",
-     "ru": "Forensic Expert для студентов: темы, тесты и библиотека — в одном приложении.",
-     "uz": "Talabalar uchun Forensic Expert: mavzular, testlar va kutubxona — bitta ilovada."},
-    {"id": "t02", "scene": "desk",
-     "ru": "На главном экране — ваш учебный стол и вопрос дня с источником.",
-     "uz": "Asosiy ekranda — o‘qish stolingiz va manbasi bilan kunning savoli."},
-    {"id": "t03", "scene": "lessons",
-     "ru": "Все темы по курсам: лекции и практические занятия.",
-     "uz": "Kurslar bo‘yicha barcha mavzular: ma’ruza va amaliy mashg‘ulotlar."},
-    {"id": "t04", "scene": "slide",
-     "ru": "Материал основан на учебниках профессора Гиясова: у каждого пункта указаны книга и страница.",
-     "uz": "Material professor G‘iyosov darsliklariga asoslangan: har bir bandda kitob va beti ko‘rsatilgan."},
-    {"id": "t05", "scene": "explain",
-     "ru": "К слайдам есть короткое объяснение простым языком — удобно повторять и работать над собой.",
-     "uz": "Slaydlarga sodda tilda qisqa tushuntirish bor — takrorlash va o‘z ustingizda ishlash qulay."},
-    {"id": "t06", "scene": "selftest",
-     "ru": "После темы проверьте себя: тест по теме прямо в приложении.",
-     "uz": "Mavzudan keyin o‘zingizni sinang: mavzu testi ilovaning o‘zida."},
-    {"id": "t07", "scene": "join",
-     "ru": "На занятии подключайтесь к тесту преподавателя по QR-коду или коду из шести цифр.",
-     "uz": "Darsda ustoz testiga QR-kod yoki 6 xonali kod orqali qo‘shiling."},
-    {"id": "t08", "scene": "library",
-     "ru": "Библиотека: вещества, методики и термины — всё с источниками.",
-     "uz": "Kutubxona: moddalar, usullar va atamalar — hammasi manbasi bilan."},
-    {"id": "t09", "scene": "outro",
-     "ru": "Forensic Expert. Доказательства. Наука. Точность.",
-     "uz": "Forensic Expert. Dalil. Ilm. Aniqlik."}
-  ]
+ "video": "talaba",
+ "voice": "ru-RU-SvetlanaNeural",
+ "lines": [
+  {
+   "id": "t01",
+   "scene": "intro",
+   "ru": "Форэ́нзик Э́кспэрт для студентов: темы, тесты и библиотека — в одном приложении.",
+   "uz": "Talabalar uchun Forensic Expert: mavzular, testlar va kutubxona — bitta ilovada."
+  },
+  {
+   "id": "t02",
+   "scene": "desk",
+   "ru": "На главном экране — ваш учебный стол и вопрос дня с источником.",
+   "uz": "Asosiy ekranda — o‘qish stolingiz va manbasi bilan kunning savoli."
+  },
+  {
+   "id": "t03",
+   "scene": "lessons",
+   "ru": "Все темы по курсам: лекции и практические занятия.",
+   "uz": "Kurslar bo‘yicha barcha mavzular: ma’ruza va amaliy mashg‘ulotlar."
+  },
+  {
+   "id": "t04",
+   "scene": "slide",
+   "ru": "Материал основан на учебниках профессора Гиясова: у каждого пункта указаны книга и страница.",
+   "uz": "Material professor G‘iyosov darsliklariga asoslangan: har bir bandda kitob va beti ko‘rsatilgan."
+  },
+  {
+   "id": "t05",
+   "scene": "explain",
+   "ru": "К слайдам есть короткое объяснение простым языком — удобно повторять и работать над собой.",
+   "uz": "Slaydlarga sodda tilda qisqa tushuntirish bor — takrorlash va o‘z ustingizda ishlash qulay."
+  },
+  {
+   "id": "t06",
+   "scene": "selftest",
+   "ru": "После темы проверьте себя: тест по теме прямо в приложении.",
+   "uz": "Mavzudan keyin o‘zingizni sinang: mavzu testi ilovaning o‘zida."
+  },
+  {
+   "id": "t07",
+   "scene": "join",
+   "ru": "На занятии подключайтесь к тесту преподавателя по QR-коду или коду из шести цифр.",
+   "uz": "Darsda ustoz testiga QR-kod yoki 6 xonali kod orqali qo‘shiling."
+  },
+  {
+   "id": "t08",
+   "scene": "library",
+   "ru": "Библиотека: вещества, методики и термины — всё с источниками.",
+   "uz": "Kutubxona: moddalar, usullar va atamalar — hammasi manbasi bilan."
+  },
+  {
+   "id": "t10",
+   "scene": "thanks",
+   "ru": "Благодарим профессора Гиясова З.А. и всех авторов учебников, на которых построены уроки.",
+   "uz": "Darslar asosi bo‘lgan darsliklar uchun professor G‘iyosov Z.A. va barcha mualliflarga katta rahmat!"
+  },
+  {
+   "id": "t11",
+   "scene": "thanks_note",
+   "ru": "Материалы изложены кратко, своими словами, по содержанию учебников; у каждого пункта указаны книга и страница, а полный текст — в оригинальной книге.",
+   "uz": "Materiallar darsliklar mazmuni asosida, o‘z so‘zlarimiz bilan qisqacha bayon qilingan; har bir bandda kitob va beti ko‘rsatilgan. To‘liq matn — asl kitobda."
+  },
+  {
+   "id": "t09",
+   "scene": "outro",
+   "ru": "Форэ́нзик Э́кспэрт. Доказательства. Наука. Точность.",
+   "uz": "Forensic Expert. Dalil. Ilm. Aniqlik."
+  }
+ ]
 }

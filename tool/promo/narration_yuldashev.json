@@ -1,36 +1,72 @@
 {
-  "video": "yuldashev",
-  "voice": "ru-RU-DmitryNeural",
-  "lines": [
-    {"id": "y01", "scene": "intro",
-     "ru": "Forensic Expert — профессиональный справочник и учебная платформа по судебной экспертизе и токсикологии.",
-     "uz": "Forensic Expert — sud ekspertizasi va toksikologiya bo‘yicha professional ma’lumotnoma va o‘quv platformasi."},
-    {"id": "y02", "scene": "toks",
-     "ru": "Раздел «Toksikologiya» — десятки тем по токсикологической химии для студентов и преподавателей.",
-     "uz": "«Toksikologiya» bo‘limi — talaba va ustozlar uchun toksikologik kimyo bo‘yicha o‘nlab mavzular."},
-    {"id": "y03", "scene": "slide",
-     "ru": "Темы основаны на учебно-методическом комплексе по токсикологической химии Юлдашева З.А. и Умаровой Г.К. — с указанием страницы.",
-     "uz": "Mavzular Yuldashev Z.A. va Umarova G.Q.ning «Toksikologik kimyo» o‘quv-uslubiy majmuasiga asoslangan — beti ko‘rsatilgan."},
-    {"id": "y04", "scene": "gmt",
-     "ru": "Методические карточки по анализу наркотических веществ — опиоиды, кокаин, каннабиноиды, барбитураты — составлены по пособию «Анализ наркотических веществ».",
-     "uz": "Giyohvand moddalar tahlili bo‘yicha usul kartochkalari — opioidlar, kokain, kannabinoidlar, barbituratlar — «Giyohvand moddalar tahlili» qo‘llanmasi asosida."},
-    {"id": "y05", "scene": "isolation",
-     "ru": "Схемы изолирования, качественные реакции и методы анализа собраны в одном месте.",
-     "uz": "Ajratib olish sxemalari, sifat reaksiyalari va tahlil usullari bir joyda jamlangan."},
-    {"id": "y06", "scene": "equipment",
-     "ru": "Раздел оборудования объясняет газовую хромато-масс-спектрометрию, спектрофотометрию и твердофазную экстракцию.",
-     "uz": "Asbob-uskunalar bo‘limi GC-MS, spektrofotometriya va qattiq fazali ekstraksiyani tushuntiradi."},
-    {"id": "y07", "scene": "tests",
-     "ru": "Студенты закрепляют материал тестами, а эксперты готовятся к аттестации.",
-     "uz": "Talabalar testlar bilan mustahkamlaydi, ekspertlar esa attestatsiyaga tayyorlanadi."},
-    {"id": "y08", "scene": "calc",
-     "ru": "Для лаборатории — расчёты: разведение растворов, предел обнаружения и предел количественного определения.",
-     "uz": "Laboratoriya uchun — hisob-kitoblar: eritmalarni suyultirish, aniqlash va miqdoriy aniqlash chegarasi (LOD, LOQ)."},
-    {"id": "y09", "scene": "thanks",
-     "ru": "Благодарим Юлдашева З.А. и соавторов за учебные материалы, на которых построены эти разделы.",
-     "uz": "Ushbu bo‘limlar asosi bo‘lgan o‘quv materiallari uchun Yuldashev Z.A. ustoz va hammualliflarga katta rahmat!"},
-    {"id": "y10", "scene": "outro",
-     "ru": "Forensic Expert. Доказательства. Наука. Точность.",
-     "uz": "Forensic Expert. Dalil. Ilm. Aniqlik."}
-  ]
+ "video": "yuldashev",
+ "voice": "ru-RU-DmitryNeural",
+ "lines": [
+  {
+   "id": "y01",
+   "scene": "intro",
+   "ru": "Форэ́нзик Э́кспэрт — профессиональный справочник и учебная платформа по судебной экспертизе и токсикологии.",
+   "uz": "Forensic Expert — sud ekspertizasi va toksikologiya bo‘yicha professional ma’lumotnoma va o‘quv platformasi."
+  },
+  {
+   "id": "y02",
+   "scene": "toks",
+   "ru": "Раздел «Toksikologiya» — десятки тем по токсикологической химии для студентов и преподавателей.",
+   "uz": "«Toksikologiya» bo‘limi — talaba va ustozlar uchun toksikologik kimyo bo‘yicha o‘nlab mavzular."
+  },
+  {
+   "id": "y03",
+   "scene": "slide",
+   "ru": "Темы основаны на учебно-методическом комплексе по токсикологической химии Юлдашева З.А. и Умаровой Г.К. — с указанием страницы.",
+   "uz": "Mavzular Yuldashev Z.A. va Umarova G.Q.ning «Toksikologik kimyo» o‘quv-uslubiy majmuasiga asoslangan — beti ko‘rsatilgan."
+  },
+  {
+   "id": "y04",
+   "scene": "gmt",
+   "ru": "Методические карточки по анализу наркотических веществ — опиоиды, кокаин, каннабиноиды, барбитураты — составлены по пособию «Анализ наркотических веществ».",
+   "uz": "Giyohvand moddalar tahlili bo‘yicha usul kartochkalari — opioidlar, kokain, kannabinoidlar, barbituratlar — «Giyohvand moddalar tahlili» qo‘llanmasi asosida."
+  },
+  {
+   "id": "y05",
+   "scene": "isolation",
+   "ru": "Схемы изолирования, качественные реакции и методы анализа собраны в одном месте.",
+   "uz": "Ajratib olish sxemalari, sifat reaksiyalari va tahlil usullari bir joyda jamlangan."
+  },
+  {
+   "id": "y06",
+   "scene": "equipment",
+   "ru": "Раздел оборудования объясняет газовую хромато-масс-спектрометрию, спектрофотометрию и твердофазную экстракцию.",
+   "uz": "Asbob-uskunalar bo‘limi GC-MS, spektrofotometriya va qattiq fazali ekstraksiyani tushuntiradi."
+  },
+  {
+   "id": "y07",
+   "scene": "tests",
+   "ru": "Студенты закрепляют материал тестами, а эксперты готовятся к аттестации.",
+   "uz": "Talabalar testlar bilan mustahkamlaydi, ekspertlar esa attestatsiyaga tayyorlanadi."
+  },
+  {
+   "id": "y08",
+   "scene": "calc",
+   "ru": "Для лаборатории — расчёты: разведение растворов, предел обнаружения и предел количественного определения.",
+   "uz": "Laboratoriya uchun — hisob-kitoblar: eritmalarni suyultirish, aniqlash va miqdoriy aniqlash chegarasi (LOD, LOQ)."
+  },
+  {
+   "id": "y09",
+   "scene": "thanks",
+   "ru": "Благодарим Юлдашева З.А. и соавторов за учебные материалы, на которых построены эти разделы.",
+   "uz": "Ushbu bo‘limlar asosi bo‘lgan o‘quv materiallari uchun Yuldashev Z.A. ustoz va hammualliflarga katta rahmat!"
+  },
+  {
+   "id": "y11",
+   "scene": "thanks_note",
+   "ru": "Материалы изложены кратко, своими словами, по содержанию учебных пособий; у каждого пункта указаны книга и страница, а полный текст — в оригинале.",
+   "uz": "Materiallar o‘quv qo‘llanmalari mazmuni asosida, o‘z so‘zlarimiz bilan qisqacha bayon qilingan; har bir bandda kitob va beti ko‘rsatilgan. To‘liq matn — asl kitobda."
+  },
+  {
+   "id": "y10",
+   "scene": "outro",
+   "ru": "Форэ́нзик Э́кспэрт. Доказательства. Наука. Точность.",
+   "uz": "Forensic Expert. Dalil. Ilm. Aniqlik."
+  }
+ ]
 }
