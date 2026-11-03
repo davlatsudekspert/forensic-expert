@@ -68,6 +68,19 @@ void main() {
     final entries = [
       e('Bosilgan (ustoz)', 2, true),
       e('Bosilmagan (mutaxassis)', 1, false),
+      const CatalogEntry(
+        id: 'mine1',
+        kind: CatalogKind.expert,
+        name: 'O‘z kartochkam (1 ta olingan)',
+        stars: 1,
+        mine: true,
+      ),
+      const CatalogEntry(
+        id: 'mine0',
+        kind: CatalogKind.expert,
+        name: 'O‘z kartochkam (hali yo‘q)',
+        mine: true,
+      ),
     ];
     await tester.pumpWidget(
       MaterialApp(

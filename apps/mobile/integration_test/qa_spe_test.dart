@@ -63,9 +63,7 @@ void main() {
       qa.expectText('Walker V.', s);
     });
 
-    await qa.step('Qurilma kartochkasi ochiladi (O‘zbekiston bloki)', (
-      s,
-    ) async {
+    await qa.step('Qurilma kartochkasi ochiladi (markaz e’lonisiz)', (s) async {
       await qa.tapFinder(find.byKey(const Key('method.spe.device')));
       await qa.settle(maxMs: 4000);
       qa.expectText('Qattiq fazali ekstraksiya (SPE) qurilmasi', s);

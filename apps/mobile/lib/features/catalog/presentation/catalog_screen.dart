@@ -243,59 +243,41 @@ class CatalogStarButton extends StatelessWidget {
     final l = AppLocalizations.of(context);
     final t = Theme.of(context).textTheme;
     final on = entry.starred;
+    // O‘z kartochkam: o‘zimga yulduz bosib bo‘lmaydi, lekin boshqalardan olgan
+    // yulduzchalar to‘liq oltin yulduz bilan ko‘rinadi (bo‘sh kontur emas).
+    final filled = entry.mine ? entry.stars > 0 : on;
     const gold = Color(0xFFE0A100);
-    final child = Row(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Icon(
-          on ? Icons.star_rounded : Icons.star_outline_rounded,
-          color: gold,
-          size: large ? 28 : 24,
-        ),
-        const SizedBox(width: FeSpace.xxs),
-        Text(
-          entry.stars.toString(),
-          style: (large ? t.titleMedium : t.titleSmall)?.copyWith(
-            fontWeight: FontWeight.w700,
+    Widget pill({Key? key}) => Container(
+      key: key,
+      constraints: const BoxConstraints(minHeight: FeTouch.minTarget),
+      padding: const EdgeInsets.symmetric(horizontal: FeSpace.sm),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(999),
+        color: gold.withValues(alpha: filled ? 0.15 : 0.08),
+        border: Border.all(color: filled ? gold : gold.withValues(alpha: 0.8)),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(
+            filled ? Icons.star_rounded : Icons.star_outline_rounded,
+            color: gold,
+            size: large ? 28 : 24,
           ),
-        ),
-      ],
-    );
-    if (entry.mine) {
-      // O‘z kartochkam: bosib bo‘lmaydi, lekin boshqalardan olgan yulduzchalar
-      // ustozlardagi kabi to‘liq oltin yulduz va tabletka bilan ko‘rsatiladi.
-      final received = entry.stars > 0;
-      return Semantics(
-        label: l.catStarsCount(entry.stars),
-        child: Container(
-          key: Key('cat.starMine.${entry.id}'),
-          constraints: const BoxConstraints(minHeight: FeTouch.minTarget),
-          padding: const EdgeInsets.symmetric(horizontal: FeSpace.sm),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(999),
-            color: gold.withValues(alpha: received ? 0.15 : 0.08),
-            border: Border.all(
-              color: received ? gold : gold.withValues(alpha: 0.8),
+          const SizedBox(width: FeSpace.xxs),
+          Text(
+            entry.stars.toString(),
+            style: (large ? t.titleMedium : t.titleSmall)?.copyWith(
+              fontWeight: FontWeight.w700,
             ),
           ),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Icon(
-                received ? Icons.star_rounded : Icons.star_outline_rounded,
-                color: gold,
-                size: large ? 28 : 24,
-              ),
-              const SizedBox(width: FeSpace.xxs),
-              Text(
-                entry.stars.toString(),
-                style: (large ? t.titleMedium : t.titleSmall)?.copyWith(
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-            ],
-          ),
-        ),
+        ],
+      ),
+    );
+    if (entry.mine) {
+      return Semantics(
+        label: l.catStarsCount(entry.stars),
+        child: pill(key: Key('cat.starMine.${entry.id}')),
       );
     }
     return Semantics(
@@ -306,16 +288,7 @@ class CatalogStarButton extends StatelessWidget {
         key: Key('cat.star.${entry.id}'),
         borderRadius: BorderRadius.circular(999),
         onTap: onTap,
-        child: Container(
-          constraints: const BoxConstraints(minHeight: FeTouch.minTarget),
-          padding: const EdgeInsets.symmetric(horizontal: FeSpace.sm),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(999),
-            color: gold.withValues(alpha: on ? 0.15 : 0.08),
-            border: Border.all(color: on ? gold : gold.withValues(alpha: 0.8)),
-          ),
-          child: child,
-        ),
+        child: pill(),
       ),
     );
   }
