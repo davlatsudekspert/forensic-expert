@@ -109,6 +109,10 @@ class LessonSourceGroup {
   final List<String> pages;
 }
 
+/// Bandlar manbalari kitob bo‘yicha guruhlangan (ustoz bileti kaliti uchun).
+List<LessonSourceGroup> lessonSourceGroups(Iterable<LessonBullet> bullets) =>
+    _sourceGroups(bullets);
+
 List<LessonSourceGroup> _sourceGroups(Iterable<LessonBullet> bullets) {
   final groups = <String, LessonSourceGroup>{};
   for (final b in bullets) {

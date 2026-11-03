@@ -22910,6 +22910,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Equipment, precautions and the situation in Uzbekistan'**
   String get methodDeviceCard;
+
+  /// Teacher desk card: topic-based oral exam.
+  ///
+  /// In en, this message translates to:
+  /// **'A 5-question ticket by topic, graded by you'**
+  String get teacherOralDeskBody;
+
+  /// Topic picker explanation.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick one or more topics. Each student gets a 5-question ticket from these topics, and questions are not repeated for the next student. You score each question 0–20, 100 in total. Questions and the answer key are taken from your lesson slides.'**
+  String get teacherOralIntro;
+
+  /// How many topics are selected.
+  ///
+  /// In en, this message translates to:
+  /// **'Topics selected: {n}'**
+  String teacherOralSelected(int n);
+
+  /// Open the ticket screen for the selected topics.
+  ///
+  /// In en, this message translates to:
+  /// **'Make a ticket'**
+  String get teacherOralBuild;
+
+  /// Clear the topic selection.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear selection'**
+  String get teacherOralClearSelection;
+
+  /// Shown when no topic is selected yet.
+  ///
+  /// In en, this message translates to:
+  /// **'Select at least one topic first'**
+  String get teacherOralPickHint;
+
+  /// Selected lessons have no usable questions.
+  ///
+  /// In en, this message translates to:
+  /// **'No ticket questions were found in the selected lessons. Pick another topic.'**
+  String get teacherOralNoQuestions;
+
+  /// Go back to the topic picker.
+  ///
+  /// In en, this message translates to:
+  /// **'Change topics'**
+  String get teacherOralChangeTopics;
+
+  /// Under the answer key.
+  ///
+  /// In en, this message translates to:
+  /// **'From the lesson slide (original text).'**
+  String get teacherOralKeyNote;
 }
 
 class _AppLocalizationsDelegate

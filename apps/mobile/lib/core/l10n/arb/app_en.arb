@@ -17346,5 +17346,46 @@
   "methodDeviceCard": "Equipment, precautions and the situation in Uzbekistan",
   "@methodDeviceCard": {
     "description": "Link on a method page to the full equipment card."
+  },
+  "teacherOralDeskBody": "A 5-question ticket by topic, graded by you",
+  "@teacherOralDeskBody": {
+    "description": "Teacher desk card: topic-based oral exam."
+  },
+  "teacherOralIntro": "Pick one or more topics. Each student gets a 5-question ticket from these topics, and questions are not repeated for the next student. You score each question 0–20, 100 in total. Questions and the answer key are taken from your lesson slides.",
+  "@teacherOralIntro": {
+    "description": "Topic picker explanation."
+  },
+  "teacherOralSelected": "Topics selected: {n}",
+  "@teacherOralSelected": {
+    "description": "How many topics are selected.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "teacherOralBuild": "Make a ticket",
+  "@teacherOralBuild": {
+    "description": "Open the ticket screen for the selected topics."
+  },
+  "teacherOralClearSelection": "Clear selection",
+  "@teacherOralClearSelection": {
+    "description": "Clear the topic selection."
+  },
+  "teacherOralPickHint": "Select at least one topic first",
+  "@teacherOralPickHint": {
+    "description": "Shown when no topic is selected yet."
+  },
+  "teacherOralNoQuestions": "No ticket questions were found in the selected lessons. Pick another topic.",
+  "@teacherOralNoQuestions": {
+    "description": "Selected lessons have no usable questions."
+  },
+  "teacherOralChangeTopics": "Change topics",
+  "@teacherOralChangeTopics": {
+    "description": "Go back to the topic picker."
+  },
+  "teacherOralKeyNote": "From the lesson slide (original text).",
+  "@teacherOralKeyNote": {
+    "description": "Under the answer key."
   }
 }

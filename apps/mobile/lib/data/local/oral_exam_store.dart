@@ -7,15 +7,21 @@ import '../../domain/assessment/oral_exam.dart';
 /// Og‘zaki imtihon natijalari va ishlatilgan savollar — bitta JSON qatori,
 /// faqat qurilmada (serverga yuborilmaydi).
 class SharedPrefsOralExamStore implements OralExamStore {
-  SharedPrefsOralExamStore(this._prefs);
+  SharedPrefsOralExamStore(this._prefs, {this.storageKey = assessmentKey});
 
   final SharedPreferences _prefs;
 
-  static const _k = 'fe.assessment.oralexam.v1';
+  /// Mutaxassis: «Bilim va malakani baholash» bileti.
+  static const assessmentKey = 'fe.assessment.oralexam.v1';
+
+  /// Ustoz: mavzu bo‘yicha bilet (alohida — aralashmaydi).
+  static const teacherKey = 'fe.teacher.oralexam.v1';
+
+  final String storageKey;
 
   @override
   OralExamData load() {
-    final s = _prefs.getString(_k);
+    final s = _prefs.getString(storageKey);
     if (s == null) return OralExamData.empty;
     try {
       return OralExamData.fromJson(jsonDecode(s));
@@ -25,5 +31,6 @@ class SharedPrefsOralExamStore implements OralExamStore {
   }
 
   @override
-  Future<void> save(OralExamData data) => _prefs.setString(_k, data.encode());
+  Future<void> save(OralExamData data) =>
+      _prefs.setString(storageKey, data.encode());
 }

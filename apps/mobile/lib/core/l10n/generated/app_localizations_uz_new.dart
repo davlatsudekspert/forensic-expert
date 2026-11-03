@@ -12421,4 +12421,35 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
 
   @override
   String get methodDeviceCard => toUzNewAlphabet(super.methodDeviceCard);
+
+  @override
+  String get teacherOralDeskBody => toUzNewAlphabet(super.teacherOralDeskBody);
+
+  @override
+  String get teacherOralIntro => toUzNewAlphabet(super.teacherOralIntro);
+
+  @override
+  String teacherOralSelected(int n) =>
+      toUzNewAlphabet(super.teacherOralSelected(n));
+
+  @override
+  String get teacherOralBuild => toUzNewAlphabet(super.teacherOralBuild);
+
+  @override
+  String get teacherOralClearSelection =>
+      toUzNewAlphabet(super.teacherOralClearSelection);
+
+  @override
+  String get teacherOralPickHint => toUzNewAlphabet(super.teacherOralPickHint);
+
+  @override
+  String get teacherOralNoQuestions =>
+      toUzNewAlphabet(super.teacherOralNoQuestions);
+
+  @override
+  String get teacherOralChangeTopics =>
+      toUzNewAlphabet(super.teacherOralChangeTopics);
+
+  @override
+  String get teacherOralKeyNote => toUzNewAlphabet(super.teacherOralKeyNote);
 }

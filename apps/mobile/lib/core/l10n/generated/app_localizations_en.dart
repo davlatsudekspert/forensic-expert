@@ -13225,4 +13225,36 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get methodDeviceCard =>
       'Equipment, precautions and the situation in Uzbekistan';
+
+  @override
+  String get teacherOralDeskBody =>
+      'A 5-question ticket by topic, graded by you';
+
+  @override
+  String get teacherOralIntro =>
+      'Pick one or more topics. Each student gets a 5-question ticket from these topics, and questions are not repeated for the next student. You score each question 0–20, 100 in total. Questions and the answer key are taken from your lesson slides.';
+
+  @override
+  String teacherOralSelected(int n) {
+    return 'Topics selected: $n';
+  }
+
+  @override
+  String get teacherOralBuild => 'Make a ticket';
+
+  @override
+  String get teacherOralClearSelection => 'Clear selection';
+
+  @override
+  String get teacherOralPickHint => 'Select at least one topic first';
+
+  @override
+  String get teacherOralNoQuestions =>
+      'No ticket questions were found in the selected lessons. Pick another topic.';
+
+  @override
+  String get teacherOralChangeTopics => 'Change topics';
+
+  @override
+  String get teacherOralKeyNote => 'From the lesson slide (original text).';
 }

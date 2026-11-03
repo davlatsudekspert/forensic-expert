@@ -160,6 +160,7 @@ void main() {
       for (final id in [
         'teachLessons',
         'teachRun',
+        'teachOral',
         'teachGroups',
         'teachResults',
       ]) {

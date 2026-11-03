@@ -98,6 +98,7 @@ enum WorkbenchItemId {
   deskGroup,
   teachLessons,
   teachRun,
+  teachOral,
   teachGroups,
   teachResults,
 }
@@ -317,6 +318,15 @@ abstract final class Workbench {
       route: isTeacher ? Routes.classNew : Routes.teacher,
       title: (l) => l.teacherRunTitle,
       body: (l) => l.teacherRunBody,
+    ),
+    // Yozma test yonida og‘zaki imtihon (egasi, 2026-11-03: «tartibli»).
+    WorkbenchItem(
+      id: WorkbenchItemId.teachOral,
+      icon: Icons.confirmation_number_outlined,
+      hue: FeHues.sage,
+      route: isTeacher ? Routes.teacherOral : Routes.teacher,
+      title: (l) => l.oralExamStart,
+      body: (l) => l.teacherOralDeskBody,
     ),
     WorkbenchItem(
       id: WorkbenchItemId.teachGroups,

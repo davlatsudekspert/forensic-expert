@@ -69,6 +69,7 @@ import 'student_card.dart';
 import 'study.dart';
 import 'support.dart';
 import 'teacher_card.dart';
+import 'teacher_oral.dart';
 import 'tts.dart';
 import 'update_gate.dart';
 import 'user_data.dart';
@@ -144,6 +145,12 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
         ),
         oralExamStoreProvider.overrideWithValue(
           SharedPrefsOralExamStore(prefs),
+        ),
+        teacherOralStoreProvider.overrideWithValue(
+          SharedPrefsOralExamStore(
+            prefs,
+            storageKey: SharedPrefsOralExamStore.teacherKey,
+          ),
         ),
         courtHistoryStoreProvider.overrideWithValue(
           SharedPrefsCourtHistoryStore(prefs),

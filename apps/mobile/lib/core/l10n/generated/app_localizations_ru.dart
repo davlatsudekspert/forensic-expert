@@ -13280,4 +13280,36 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get methodDeviceCard =>
       'Оборудование, меры предосторожности и ситуация в Узбекистане';
+
+  @override
+  String get teacherOralDeskBody =>
+      'Билет из 5 вопросов по теме, оцениваете вы';
+
+  @override
+  String get teacherOralIntro =>
+      'Выберите одну или несколько тем. Каждому студенту выдаётся билет из 5 вопросов по этим темам; следующему студенту вопросы не повторяются. За каждый вопрос вы ставите 0–20 баллов, всего 100. Вопросы и ключ ответа берутся из слайдов вашего занятия.';
+
+  @override
+  String teacherOralSelected(int n) {
+    return 'Выбрано тем: $n';
+  }
+
+  @override
+  String get teacherOralBuild => 'Составить билет';
+
+  @override
+  String get teacherOralClearSelection => 'Сбросить выбор';
+
+  @override
+  String get teacherOralPickHint => 'Сначала отметьте хотя бы одну тему';
+
+  @override
+  String get teacherOralNoQuestions =>
+      'В выбранных занятиях не найдено вопросов для билета. Выберите другую тему.';
+
+  @override
+  String get teacherOralChangeTopics => 'Изменить темы';
+
+  @override
+  String get teacherOralKeyNote => 'Из слайда занятия (исходный текст).';
 }

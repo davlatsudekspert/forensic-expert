@@ -10,6 +10,7 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/assessment/assessment_models.dart';
 import '../../../domain/assessment/oral_exam.dart';
 import 'assessment_screens.dart';
+import 'oral_ticket_card.dart';
 
 /// Og‘zaki imtihon: 5 savollik bilet, har savolga 0–20 ball, jami 100.
 /// Ball qo‘yuvchi (ustoz yoki mutaxassis) telefonni ushlab turadi; natijalar
@@ -300,68 +301,11 @@ class _TicketQuestion extends ConsumerWidget {
   final OralAnswer? answer;
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final l = AppLocalizations.of(context);
-    final c = FeTheme.of(context);
-    final t = Theme.of(context).textTheme;
-    final q = question;
-    final scoreText = (score ?? 0).toString();
-    return FeCard(
-      key: Key('oral.q.$index'),
-      padding: const EdgeInsets.all(FeSpace.sm),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Text(
-            l.oralExamQuestionN(index + 1),
-            style: t.labelMedium?.copyWith(color: c.textSecondary),
-          ),
-          const SizedBox(height: FeSpace.xxs),
-          Text(q?.text ?? '', style: t.titleMedium),
-          const SizedBox(height: FeSpace.xs),
-          Row(
-            children: [
-              Expanded(
-                child: Slider(
-                  key: Key('oral.slider.$index'),
-                  value: (score ?? 0).toDouble(),
-                  max: oralExamMaxPerQuestion.toDouble(),
-                  divisions: oralExamMaxPerQuestion,
-                  label: scoreText,
-                  semanticFormatterCallback: (v) => l.oralExamScore(v.round()),
-                  onChanged: (v) => ref
-                      .read(oralExamProvider.notifier)
-                      .setScore(index, v.round()),
-                ),
-              ),
-              SizedBox(
-                width: 72,
-                child: Text(
-                  score == null ? '—' : '$score / $oralExamMaxPerQuestion',
-                  key: Key('oral.score.$index'),
-                  textAlign: TextAlign.end,
-                  style: t.titleSmall,
-                ),
-              ),
-            ],
-          ),
-          if (score == null)
-            Text(
-              l.oralExamUnscored,
-              style: t.bodySmall?.copyWith(color: c.textSecondary),
-            ),
-          Theme(
-            data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
-            child: ExpansionTile(
-              key: Key('oral.key.$index'),
-              tilePadding: EdgeInsets.zero,
-              childrenPadding: EdgeInsets.zero,
-              title: Text(l.oralExamShowKey, style: t.labelLarge),
-              children: [OralAnswerView(answer: answer)],
-            ),
-          ),
-        ],
-      ),
-    );
-  }
+  Widget build(BuildContext context, WidgetRef ref) => OralTicketQuestionCard(
+    index: index,
+    text: question?.text ?? '',
+    score: score,
+    onScore: (v) => ref.read(oralExamProvider.notifier).setScore(index, v),
+    answerKey: OralAnswerView(answer: answer),
+  );
 }

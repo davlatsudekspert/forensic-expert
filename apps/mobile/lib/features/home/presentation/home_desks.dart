@@ -150,6 +150,7 @@ class TeacherDesk extends ConsumerWidget {
         ),
         _DeskGrid(
           items: Workbench.teacherCards(isTeacher: watchIsTeacher(ref)),
+          stretchLast: true,
         ),
         const _DeskDailyQuestion(),
         const SizedBox(height: FeSpace.xs),
@@ -162,11 +163,13 @@ void _open(BuildContext context, WorkbenchItem item) =>
     item.isTab ? context.go(item.route) : context.push(item.route);
 
 /// 2 ustunli to‘r (tor ekran yoki katta shriftda — bitta ustun; Home’ning
-/// tezkor amallar to‘ri bilan bir xil qoida).
+/// tezkor amallar to‘ri bilan bir xil qoida). [stretchLast] — oxirgi qatorda
+/// yolg‘iz qolgan karta to‘liq kenglikda (bo‘sh katak qolmaydi).
 class _DeskGrid extends StatelessWidget {
-  const _DeskGrid({required this.items});
+  const _DeskGrid({required this.items, this.stretchLast = false});
 
   final List<WorkbenchItem> items;
+  final bool stretchLast;
 
   @override
   Widget build(BuildContext context) {
@@ -187,14 +190,17 @@ class _DeskGrid extends StatelessWidget {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      for (var j = 0; j < columns; j++) ...[
-                        if (j > 0) const SizedBox(width: gap),
-                        Expanded(
-                          child: i + j < items.length
-                              ? _DeskCard(item: items[i + j])
-                              : const SizedBox.shrink(),
-                        ),
-                      ],
+                      if (stretchLast && i == items.length - 1)
+                        Expanded(child: _DeskCard(item: items[i]))
+                      else
+                        for (var j = 0; j < columns; j++) ...[
+                          if (j > 0) const SizedBox(width: gap),
+                          Expanded(
+                            child: i + j < items.length
+                                ? _DeskCard(item: items[i + j])
+                                : const SizedBox.shrink(),
+                          ),
+                        ],
                     ],
                   ),
                 ),

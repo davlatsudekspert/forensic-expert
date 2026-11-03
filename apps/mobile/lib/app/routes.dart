@@ -308,6 +308,11 @@ abstract final class Routes {
   static String lesson(String topicId) =>
       '/home/teacher/lessons/${Uri.encodeComponent(topicId)}';
 
+  /// Ustoz: mavzu bo‘yicha og‘zaki bilet — mavzu tanlash va bilet.
+  static const teacherOral = '/home/teacher/oral';
+  static String teacherOralTicket(String selectionKey) =>
+      '$teacherOral/ticket?t=${Uri.encodeQueryComponent(selectionKey)}';
+
   // Akkaunt (ixtiyoriy). Email marshrut satriga yozilmaydi — `extra`.
   static const accountSignIn = '/profile/account/sign-in';
   static const accountRegister = '/profile/account/register';

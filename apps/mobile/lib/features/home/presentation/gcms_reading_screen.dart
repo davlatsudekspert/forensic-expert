@@ -12,7 +12,7 @@ import '../../professional/presentation/professional_widgets.dart' show FeNote;
 /// «Natijani o‘qish: xromatogramma va mass-spektr» (egasi talabi, 2026-11-01).
 ///
 /// Matn — «Apparatlar bilan ishlash» kursidagi «GC-MS da ishlash usullari:
-/// asoslar» darsidan (Yuldashev Z.O. va boshq. «Giyohvand moddalar tahlili»,
+/// asoslar» darsidan (Yuldashev Z.A. va boshq. «Giyohvand moddalar tahlili»,
 /// 2024; Shimadzu «GC/MS Basics» ochiq sahifalari). Diagrammalar — sxema:
 /// tajriba ma’lumoti emas, intensivlik raqamlari qo‘yilmaydi. Ion
 /// ro‘yxatlari darsdagi tartibda (kamayish tartibida) beriladi.
@@ -22,8 +22,8 @@ class GcmsReadingScreen extends StatelessWidget {
   const GcmsReadingScreen({super.key});
 
   static const source =
-      'Manba: «GC-MS da ishlash usullari: asoslar» darsi — Yuldashev Z.O. va '
-      'boshq. «Giyohvand moddalar tahlili» (2024); Yuldashev Z.O., Umarova '
+      'Manba: «GC-MS da ishlash usullari: asoslar» darsi — Yuldashev Z.A. va '
+      'boshq. «Giyohvand moddalar tahlili» (2024); Yuldashev Z.A., Umarova '
       'G.Q. «Toksikologik kimyo» (2025); Shimadzu «GC/MS Basics».';
 
   static const _sections = <(String, List<String>)>[

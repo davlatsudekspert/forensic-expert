@@ -13156,4 +13156,36 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get methodDeviceCard =>
       'Qurilma, ehtiyot choralari va O‘zbekistondagi holat';
+
+  @override
+  String get teacherOralDeskBody =>
+      'Mavzu bo‘yicha 5 savollik bilet, baholaysiz';
+
+  @override
+  String get teacherOralIntro =>
+      'Bir yoki bir nechta mavzu tanlang. Har talabaga shu mavzulardan 5 ta savollik bilet chiqadi, savollar keyingi talabaga takrorlanmaydi. Har savolga 0–20 ball qo‘yasiz, jami 100. Savol va javob kaliti darsingiz slaydlaridan olinadi.';
+
+  @override
+  String teacherOralSelected(int n) {
+    return 'Tanlandi: $n ta mavzu';
+  }
+
+  @override
+  String get teacherOralBuild => 'Bilet tuzish';
+
+  @override
+  String get teacherOralClearSelection => 'Tanlovni tozalash';
+
+  @override
+  String get teacherOralPickHint => 'Avval kamida bitta mavzuni belgilang';
+
+  @override
+  String get teacherOralNoQuestions =>
+      'Tanlangan darslarda bilet uchun savol topilmadi. Boshqa mavzuni tanlang.';
+
+  @override
+  String get teacherOralChangeTopics => 'Mavzularni o‘zgartirish';
+
+  @override
+  String get teacherOralKeyNote => 'Dars slaydidan (asl matn).';
 }

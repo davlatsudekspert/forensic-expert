@@ -119,6 +119,7 @@ import '../features/shell/presentation/app_shell.dart';
 import '../features/student_card/presentation/student_card_screen.dart';
 import '../features/support/presentation/support_screens.dart';
 import '../features/teacher_card/presentation/teacher_card_screen.dart';
+import '../features/teacher_oral/presentation/teacher_oral_screens.dart';
 import '../features/tools/presentation/gcms_screen.dart';
 import '../features/tools/presentation/module_hub_screen.dart';
 import '../features/tools/presentation/tool_detail_screen.dart';
@@ -321,7 +322,10 @@ final routerProvider = Provider<GoRouter>((ref) {
       final mode = settings.userMode;
       if (mode != null &&
           mode != UserMode.teacher &&
-          (loc == Routes.teacher || loc == Routes.teacherResults)) {
+          (loc == Routes.teacher ||
+              loc == Routes.teacherResults ||
+              loc == Routes.teacherOral ||
+              loc.startsWith('${Routes.teacherOral}/'))) {
         return Routes.home;
       }
       // «Bilim va malakani baholash» — faqat Mutaxassis (egasi, 2026-11-02).
@@ -405,6 +409,22 @@ final routerProvider = Provider<GoRouter>((ref) {
                       GoRoute(
                         path: 'results',
                         builder: (c, s) => const TeacherResultsScreen(),
+                      ),
+                      // To‘liq ekran (pastki menyusiz): imtihon paytida joy
+                      // ko‘proq, «Bilet tuzish» paneli menyu ostida qolmaydi.
+                      GoRoute(
+                        path: 'oral',
+                        parentNavigatorKey: rootKey,
+                        builder: (c, s) => const TeacherOralTopicsScreen(),
+                        routes: [
+                          GoRoute(
+                            path: 'ticket',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => TeacherOralExamScreen(
+                              selectionKey: s.uri.queryParameters['t'] ?? '',
+                            ),
+                          ),
+                        ],
                       ),
                       GoRoute(
                         path: 'lessons',

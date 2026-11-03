@@ -44,6 +44,7 @@ class OralExamResult {
     required this.name,
     required this.questionIds,
     required this.scores,
+    this.title = '',
   });
 
   factory OralExamResult.fromJson(Map<Object?, Object?> j) {
@@ -61,6 +62,7 @@ class OralExamResult {
         j['s'],
         (x) => x is num ? x.toInt().clamp(0, oralExamMaxPerQuestion) : 0,
       ),
+      title: '${j['t'] ?? ''}',
     );
   }
 
@@ -71,6 +73,9 @@ class OralExamResult {
   final List<String> questionIds;
   final List<int> scores;
 
+  /// Ixtiyoriy sarlavha (ustoz bileti: tanlangan mavzular nomi).
+  final String title;
+
   int get total => scores.fold(0, (a, b) => a + b);
 
   Map<String, Object?> toJson() => {
@@ -80,6 +85,7 @@ class OralExamResult {
     'name': name,
     'q': questionIds,
     's': scores,
+    if (title.isNotEmpty) 't': title,
   };
 }
 
