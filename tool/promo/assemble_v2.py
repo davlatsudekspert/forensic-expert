@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Promo montaj v2 (REVISION 1): assemble_v2.py <ustoz|talaba|yuldashev> [k] [audio_dir]
+"""Promo montaj v2 (REVISION 1): assemble_v2.py <ustoz|talaba|yuldashev|ozi> [k] [audio_dir]
  - ilova videosi to'liq balandlikda (888x1920), yumaloq burchak;
  - subtitr: yarim shaffof yumaloq quti (PNG overlay), sahnaga qarab pastda/tepada;
  - yangi audio (durations.json), rahmat kartasi (thanks + thanks_note bitta karta).
@@ -25,15 +25,15 @@ FF=['ffmpeg','-loglevel','error','-y']; FPS=30
 SERIF=f'{FONTS}/source_serif_4/SourceSerif4-Bold.ttf'
 INTER=f'{FONTS}/inter/Inter-SemiBold.ttf'; INTERR=f'{FONTS}/inter/Inter-Regular.ttf'
 def font(p,s): return ImageFont.truetype(p,s)
-OUTRO_SUB={'ustoz':'Dalil · Ilm · Aniqlik','yuldashev':'Dalil · Ilm · Aniqlik','talaba':'Har kuni — ishonch bilan o‘rganing'}[vid]
-INTRO_SUB={'ustoz':'Ustozlar uchun','talaba':'Talabalar uchun','yuldashev':'Toksikologik kimyo'}[vid]
+OUTRO_SUB={'ustoz':'Dalil · Ilm · Aniqlik','yuldashev':'Dalil · Ilm · Aniqlik','talaba':'Har kuni — ishonch bilan o‘rganing','ozi':'Har kuni — ishonch bilan tayyorlaning'}[vid]
+INTRO_SUB={'ustoz':'Ustozlar uchun','talaba':'Talabalar uchun','yuldashev':'Toksikologik kimyo','ozi':'Talabalar uchun'}[vid]
 NOTE=[l for l in nar if l['scene']=='thanks_note'][0]['uz']
 if vid=='yuldashev':
     THANKS='Professor Yuldashev Z.A. va hammualliflarga — ularning o‘quv materiallari talaba va mutaxassislar uchun ishonchli bilim manbai'
     BOOKS=['Toksikologik kimyo modulidan o‘quv-uslubiy majmua (TFI, 2025)','Giyohvand moddalar tahlili. O‘quv qo‘llanma (Toshkent, 2024)']
 else:
     THANKS='Professor G‘iyosov Z.A. va barcha mualliflarga — ularning mehnati talaba va ustozlar uchun ishonchli bilim manbai'
-    if vid=='talaba':
+    if vid in('talaba','ozi'):
         THANKS='Professorlar G‘iyosov\u00a0Z.A., Yuldashev\u00a0Z.A. va barcha mualliflarga — ularning mehnati talaba va ustozlar uchun ishonchli bilim manbai'
     BOOKS=[]
 def base():
@@ -85,7 +85,7 @@ def load_src(name):
     mv,_=marker_time(f'{REC}/{name}.raw.mkv'); assert mv is not None
     return {'raw':f'{REC}/{name}.raw.mkv','m_ep':m_ep,'mv':mv,'scenes':{e['id']:e for e in ev if e['type']=='scene'}}
 MAIN=load_src(vid)
-EXTRAS={'ustoz':['ustoz_extra','ustoz_lit'],'talaba':['talaba_extra','talaba_extra2','talaba_lit','talaba_desk','extra5','extra6'],'yuldashev':['talaba_extra','yuldashev_spe','extra5']}[vid]
+EXTRAS={'ustoz':['ustoz_extra','ustoz_lit'],'talaba':['talaba_extra','talaba_extra2','talaba_lit','talaba_desk','extra5','extra6'],'yuldashev':['talaba_extra','yuldashev_spe','extra5'],'ozi':[]}[vid]
 SRC={sid:MAIN for sid in MAIN['scenes']}
 for nm in EXTRAS:
     if os.path.exists(f'{REC}/{nm}.events.json'):
