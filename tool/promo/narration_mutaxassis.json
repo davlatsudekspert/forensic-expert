@@ -1,0 +1,153 @@
+{
+ "video": "mutaxassis",
+ "voice": "uz-UZ-SardorNeural",
+ "lines": [
+  {
+   "id": "m01",
+   "scene": "intro",
+   "ru": "Forensik Ekspert mutaxassislar uchun. Sud kimyogari va toksikolog ma'lumotnomasi doim qo'l ostida.",
+   "uz": "Forensic Expert mutaxassislar uchun: sud kimyogari va toksikolog ma’lumotnomasi doim qo‘l ostida.",
+   "ru_orig": "Форэ́нзик Э́кспэрт для специалистов: справочник химика-эксперта и токсиколога всегда под рукой."
+  },
+  {
+   "id": "m02",
+   "scene": "subst",
+   "ru": "Moddalar kutubxonasi. Nomi bo'yicha qidiring, kartada esa analitik ma'lumotlar: formula, usullar va metabolitlar.",
+   "uz": "Moddalar kutubxonasi. Nomi bo‘yicha qidiruv, kartada esa analitik ma’lumotlar: formula, usullar, metabolitlar.",
+   "steps": [
+    "Profil → Rejim → «Mutaxassis»",
+    "Qidiruv: modda nomi",
+    "Modda kartasi → «Tahlil»"
+   ],
+   "ru_orig": "Библиотека веществ. Поиск по названию, а в карточке — аналитические данные: формула, методы, метаболиты."
+  },
+  {
+   "id": "m03",
+   "scene": "plan",
+   "ru": "Har bir modda uchun tahlil rejasi bor: qaysi namuna olinadi, qaysi usul qo'llanadi. Hammasi manbalar bilan.",
+   "uz": "Har bir modda uchun tahlil rejasi bor: qaysi namuna, qaysi usul, hammasi manbalar bilan.",
+   "steps": [
+    "Modda → «Tahlil rejasi»",
+    "Namuna va usul",
+    "Manbalar ro‘yxati"
+   ],
+   "ru_orig": "Для каждого вещества есть план анализа: какой образец, какой метод, и всё со ссылками на источники."
+  },
+  {
+   "id": "m04",
+   "scene": "methods",
+   "ru": "Toksikologiya usullari: Ji-Si-Em-Es, El-Si-Em-Es Em-Es, yupqa qatlamli xromatografiya va ultrabinafsha spektrofotometriya. Tavsifi va cheklovlari bilan.",
+   "uz": "Toksikologiya usullari: GC-MS, LC-MS/MS, yupqa qatlamli xromatografiya va UB-spektrofotometriya, tavsifi va cheklovlari bilan.",
+   "steps": [
+    "Kutubxona → «Usullar»",
+    "GC-MS, LC-MS/MS, TLC",
+    "Tavsif va cheklovlar"
+   ],
+   "ru_orig": "Методы токсикологии: ГХ-МС, ЖХ-МС/МС, тонкослойная хроматография и УФ-спектрофотометрия, с описанием и ограничениями."
+  },
+  {
+   "id": "m05",
+   "scene": "cohb",
+   "ru": "Is gazi va karboksigemoglobin. Aniqlash qo'llanmasi: usul tamoyili, xatolar va natijani talqin qilish.",
+   "uz": "Is gazi va karboksigemoglobin. Aniqlash qo‘llanmasi: usul tamoyili, xatolar va talqin.",
+   "steps": [
+    "Qo‘llanmalar → «CO va COHb»",
+    "Usul tamoyili",
+    "Talqin va cheklovlar"
+   ],
+   "ru_orig": "Угарный газ и карбоксигемоглобин. Руководство по определению: принцип метода, ошибки и интерпретация."
+  },
+  {
+   "id": "m06",
+   "scene": "cohb2",
+   "ru": "Asbob va yutilish spektri. Grafikda karboksigemoglobin cho'qqilari ko'rinib turadi.",
+   "uz": "Asbob va yutilish spektri: grafikda karboksigemoglobin cho‘qqilari ko‘rinadi.",
+   "steps": [
+    "Asboblar → UB-spektrofotometr",
+    "COHb spektri"
+   ],
+   "ru_orig": "Прибор и спектр поглощения: на графике видны максимумы карбоксигемоглобина."
+  },
+  {
+   "id": "m07",
+   "scene": "gcms",
+   "ru": "Ji-Si-Em-Es xromatogrammasini o'qish: cho'qqilar, mass-spektrlar va asbob sxemasi. Hammasi ko'rgazmali rasmlar bilan.",
+   "uz": "GC-MS xromatogrammasini o‘qish: cho‘qqilar, mass-spektrlar va asbob sxemasi, ko‘rgazmali rasmlar bilan.",
+   "steps": [
+    "Laboratoriya → «GC-MS o‘qish»",
+    "Cho‘qqilar va spektrlar",
+    "Asbob sxemasi"
+   ],
+   "ru_orig": "Чтение хроматограмм ГХ-МС: пики, масс-спектры и схема прибора, на наглядных рисунках."
+  },
+  {
+   "id": "m08",
+   "scene": "equip",
+   "ru": "Asbob-uskunalar: asbobning vazifasi, parvarishi va ish tartibi.",
+   "uz": "Asbob-uskunalar: asbobning vazifasi, parvarishi va ish tartibi.",
+   "steps": [
+    "«Asbob-uskunalar»",
+    "Asbobni tanlang",
+    "Vazifasi va parvarishi"
+   ],
+   "ru_orig": "Оборудование: назначение прибора, уход за ним и порядок работы."
+  },
+  {
+   "id": "m09",
+   "scene": "calc",
+   "ru": "Laboratoriya kalkulyatorlari. Masalan, suyultirish: Si bir Vi bir teng Si ikki Vi ikki formulasi bo'yicha.",
+   "uz": "Laboratoriya kalkulyatorlari. Masalan, suyultirish: C₁V₁ = C₂V₂ formulasi bo‘yicha.",
+   "steps": [
+    "«Asboblar» bo‘limi",
+    "Kalkulyatorni tanlang",
+    "Qiymatlarni kiriting → natija"
+   ],
+   "ru_orig": "Лабораторные калькуляторы. Например, разбавление по формуле С один V один равно С два V два."
+  },
+  {
+   "id": "m10",
+   "scene": "assess",
+   "ru": "O'zingizni sinang: mutaxassislik bo'yicha testlar va savollar, javoblar tahlili bilan.",
+   "uz": "O‘zingizni sinang: mutaxassislik bo‘yicha testlar va savollar, javoblar tahlili bilan.",
+   "steps": [
+    "«Sudda so‘roq: tayyorgarlik»",
+    "Mutaxassislikni tanlang",
+    "Test → javoblar tahlili"
+   ],
+   "ru_orig": "Проверьте себя: тесты и вопросы по специальности, с разбором ответов."
+  },
+  {
+   "id": "m11",
+   "scene": "court",
+   "ru": "Sudda so'roqqa tayyorgarlik: tamoyillar, savollar va trenajyor.",
+   "uz": "Sudda so‘roqqa tayyorgarlik: tamoyillar, savollar va trenajyor.",
+   "steps": [
+    "«Sud ko‘magi»",
+    "Tamoyillar va savollar",
+    "Trenajyor"
+   ],
+   "ru_orig": "И подготовка к допросу в суде: принципы, вопросы и тренажёр."
+  },
+  {
+   "id": "m12",
+   "scene": "thanks",
+   "ru": "Ilova asosini tashkil etgan darsliklar mualliflariga va hamkasblarga katta rahmat.",
+   "uz": "Ilova asosini tashkil etgan darsliklar mualliflariga va hamkasblarga katta rahmat.",
+   "ru_orig": "Спасибо авторам учебников и коллегам, чьи труды легли в основу приложения."
+  },
+  {
+   "id": "m13",
+   "scene": "thanks_note",
+   "ru": "Materiallar darsliklar mazmuni asosida, o'z so'zlarimiz bilan qisqacha bayon qilingan. Har bir bandda manba ko'rsatilgan.",
+   "uz": "Materiallar darsliklar mazmuni asosida, o‘z so‘zlarimiz bilan qisqacha bayon qilingan; har bir bandda manba ko‘rsatilgan.",
+   "ru_orig": "Материалы изложены кратко, своими словами, по содержанию учебников; у каждого пункта указан источник."
+  },
+  {
+   "id": "m14",
+   "scene": "outro",
+   "ru": "Forensik Ekspert. Dalil. Ilm. Aniqlik.",
+   "uz": "Forensic Expert. Dalil. Ilm. Aniqlik.",
+   "ru_orig": "Форэ́нзик Э́кспэрт. Доказательства. Наука. Точность."
+  }
+ ]
+}
