@@ -23,6 +23,10 @@ on:
         description: "Enable the community Q&A section (FE_QA=true). TEST DISTRIBUTION ONLY — never for a public release build."
         type: boolean
         default: false
+      store_review:
+        description: "App Store REVIEW build: sign-in NOT required to use the app (FE_REQUIRE_LOGIN=false; Apple 5.1.1(v)). For TestFlight/App Review only — tester builds keep the sign-in gate."
+        type: boolean
+        default: false
       play_rollout:
         description: "ONLY roll out the latest DRAFT release on the Google Play INTERNAL track to testers (no build, no other track)"
         type: boolean
@@ -64,6 +68,7 @@ jobs:
       # (NFCSTORE, BugunBor) hech qachon nishon bo‘lmaydi.
       FE_ANDROID_PACKAGE: uz.forensicexpert.forensic_expert
       FE_QA_INPUT: ${{ inputs.qa_community }}
+      FE_STORE_REVIEW: ${{ inputs.store_review }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
@@ -111,6 +116,10 @@ jobs:
           if [ "$FE_QA_INPUT" = "true" ]; then
             DEFINES="$DEFINES --dart-define=FE_QA=true"
             echo "::notice::Community Q&A: ON (test distribution only)"
+          fi
+          if [ "$FE_STORE_REVIEW" = "true" ]; then
+            DEFINES="$DEFINES --dart-define=FE_REQUIRE_LOGIN=false"
+            echo "::notice::Store review build: sign-in NOT required"
           fi
           flutter build appbundle --release $DEFINES
           flutter build apk --release $DEFINES
@@ -252,6 +261,7 @@ jobs:
       FE_SUPABASE_ANON_KEY: ${{ secrets.FE_SUPABASE_ANON_KEY }}
       HAS_GEMINI: ${{ secrets.GEMINI_API_KEY != '' }}
       FE_QA_INPUT: ${{ inputs.qa_community }}
+      FE_STORE_REVIEW: ${{ inputs.store_review }}
     steps:
       - uses: actions/checkout@v4
       - name: Select newest Xcode (26+ required for upload)
@@ -286,6 +296,10 @@ jobs:
           if [ "$FE_QA_INPUT" = "true" ]; then
             DEFINES="$DEFINES --dart-define=FE_QA=true"
             echo "::notice::Community Q&A: ON (test distribution only)"
+          fi
+          if [ "$FE_STORE_REVIEW" = "true" ]; then
+            DEFINES="$DEFINES --dart-define=FE_REQUIRE_LOGIN=false"
+            echo "::notice::Store review build: sign-in NOT required"
           fi
           echo "DEFINES=$DEFINES" >> "$GITHUB_ENV"
           flutter build ios --release --no-codesign $DEFINES
