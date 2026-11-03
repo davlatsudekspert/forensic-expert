@@ -334,3 +334,9 @@ Egasi yuborgan 6-kurs davolash rejasi (7 mavzu, 18+18=36 soat) bo‘yicha: «Dar
 - **Tekshiruv:** unit 7 + widget 9 (320 dp, 2×, uz/ru/en), arxitektura testlari, golden yangilandi (ustoz stoli), to‘liq suite (golden yangilanishidan oldin 3833 o‘tdi), real ilova: teacheroral 26/26, student 46/46, expert 37/37, class 86/86, oral 9/9, oralstudent 3/3.
 - **Chiqarildi:** `15f0b454` (branch `claude/pro-0.4.0`), release-build run #413 → Play internal (versionCode 56, rollout run #414) + TestFlight (review’ga yuborilmagan). Sinalmagan: real telefon.
 - **Play eslatma:** yangi testerlar faqat «Closed testing – Alpha 1» ro‘yxatlariga qo‘shilgan; buildlar faqat ichki trekka chiqadi — ichki test «Тестировщики» da ro‘yxat belgilanishi kerak (egasi qiladi).
+
+## 2026-11-03 — Guruh og‘zaki imtihoni (QR bilan) — egasi qarori, build 57 rejasi
+- **Taklif (egasi):** ustoz talabalar sonini belgilaydi → doskada QR → talabalar skanerlab ismini yozadi → har biriga har xil bilet (1…N) → javobga tayyorlar navbat bo‘lib keladi → ustoz ro‘yxatdan tanlab javobni eshitadi va baholaydi (test kabi).
+- **Qarorlar (egasi, 2026-11-03):** (1) talaba biletini **qo‘shilishi bilan** ko‘radi, ustoz ixtiyoriy tayyorlanish vaqtini qo‘yadi; javob kaliti talabaga ko‘rinmaydi. (2) Ball qo‘yilgach talaba **o‘z balini darhol** ko‘radi; doskada va boshqalarda ballar ko‘rinmaydi. (3) Serverga yangi jadval/funksiyalar — **ruxsat berildi** (zaxira + migratsiya, keyin ustoz+talaba sinovi, build 57). Roliklar tugagach boshlanadi.
+- Qayta ishlatiladi: «Guruh testi» QR/6 xonali kod, ism bilan qo‘shilish, proyektor rejimi, jonli ro‘yxat; savollar — 56-builddagi mavzu bileti mantig‘i (dars slaydlari).
+- Keyingi kichik tuzatish: mavzu tanlash ekranida kurs tugmalari chapdan zich joylashsin (hozir o‘rtada, bittadan qator).
