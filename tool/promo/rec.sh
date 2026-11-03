@@ -47,7 +47,7 @@ sleep 1.5
 touch "$PROMO_READY"
 wait $FPID; RC=$?
 sleep 1
-sleep 3; kill -INT $FF 2>/dev/null; wait $FF 2>/dev/null
+sleep 3; kill -TERM $FF 2>/dev/null; wait $FF 2>/dev/null
 kill $XPID 2>/dev/null
 echo "flutter rc=$RC"
 tail -5 "$PROMO_OUT/$NAME.log"

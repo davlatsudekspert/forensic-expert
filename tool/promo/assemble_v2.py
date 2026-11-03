@@ -25,13 +25,16 @@ FF=['ffmpeg','-loglevel','error','-y']; FPS=30
 SERIF=f'{FONTS}/source_serif_4/SourceSerif4-Bold.ttf'
 INTER=f'{FONTS}/inter/Inter-SemiBold.ttf'; INTERR=f'{FONTS}/inter/Inter-Regular.ttf'
 def font(p,s): return ImageFont.truetype(p,s)
+OUTRO_SUB={'ustoz':'Dalil · Ilm · Aniqlik','yuldashev':'Dalil · Ilm · Aniqlik','talaba':'Har kuni — ishonch bilan o‘rganing'}[vid]
 INTRO_SUB={'ustoz':'Ustozlar uchun','talaba':'Talabalar uchun','yuldashev':'Toksikologik kimyo'}[vid]
 NOTE=[l for l in nar if l['scene']=='thanks_note'][0]['uz']
 if vid=='yuldashev':
-    THANKS='Yuldashev Z.A. ustoz va hammualliflarga — ushbu bo‘limlar asosi bo‘lgan o‘quv materiallari uchun'
+    THANKS='Professor Yuldashev Z.A. va hammualliflarga — ularning o‘quv materiallari talaba va mutaxassislar uchun ishonchli bilim manbai'
     BOOKS=['Toksikologik kimyo modulidan o‘quv-uslubiy majmua (TFI, 2025)','Giyohvand moddalar tahlili. O‘quv qo‘llanma (Toshkent, 2024)']
 else:
-    THANKS='Darslar asosi bo‘lgan darsliklar uchun professor G‘iyosov Z.A. va barcha mualliflarga'
+    THANKS='Professor G‘iyosov Z.A. va barcha mualliflarga — ularning mehnati talaba va ustozlar uchun ishonchli bilim manbai'
+    if vid=='talaba':
+        THANKS='Professorlar G‘iyosov\u00a0Z.A., Yuldashev\u00a0Z.A. va barcha mualliflarga — ularning mehnati talaba va ustozlar uchun ishonchli bilim manbai'
     BOOKS=[]
 def base():
     im=Image.new('RGB',(1080,1920),BG); d=ImageDraw.Draw(im)
@@ -40,7 +43,7 @@ def base():
     return im
 def wrap(d,text,f,maxw):
     out=[];cur=''
-    for w in text.split():
+    for w in text.split(' '):
         t=(cur+' '+w).strip()
         if d.textlength(t,font=f)<=maxw: cur=t
         else: out.append(cur);cur=w
@@ -62,7 +65,7 @@ def card_brand(kind,sub):
     p=f'{TMP}/card_{kind}.png'; im.save(p); return p
 def card_thanks():
     im=base(); d=ImageDraw.Draw(im)
-    y=centered(d,'Rahmat!',250,font(SERIF,190),GOLD)
+    y=centered(d,"Rahmat!",340,font(SERIF,190),GOLD)
     d.line([(440,y+20),(640,y+20)],fill=GOLD,width=3)
     y=centered(d,THANKS,y+70,font(INTER,50),WHITE,maxw=900)+30
     for b in BOOKS:
@@ -76,11 +79,20 @@ def card_thanks():
     for ln in wrap(d,NOTE,f,880): d.text((100,y),ln,font=f,fill=MUTED); y+=52
     p=f'{TMP}/card_thanks.png'; im.save(p); return p
 # ---------------------------------------------------------------- sahnalar
-ev=json.load(open(f'{REC}/{vid}.events.json'))
-m_ep=[e for e in ev if e['type']=='marker'][0]['epoch']
-mv,_=marker_time(f'{REC}/{vid}.raw.mkv'); assert mv is not None
-scenes={e['id']:e for e in ev if e['type']=='scene'}
-def vt(ep): return mv+(ep-m_ep)/1000.0
+def load_src(name):
+    ev=json.load(open(f'{REC}/{name}.events.json'))
+    m_ep=[e for e in ev if e['type']=='marker'][0]['epoch']
+    mv,_=marker_time(f'{REC}/{name}.raw.mkv'); assert mv is not None
+    return {'raw':f'{REC}/{name}.raw.mkv','m_ep':m_ep,'mv':mv,'scenes':{e['id']:e for e in ev if e['type']=='scene'}}
+MAIN=load_src(vid)
+EXTRAS={'ustoz':['ustoz_extra','ustoz_lit'],'talaba':['talaba_extra','talaba_extra2','talaba_lit','talaba_desk','extra5','extra6'],'yuldashev':['talaba_extra','yuldashev_spe','extra5']}[vid]
+SRC={sid:MAIN for sid in MAIN['scenes']}
+for nm in EXTRAS:
+    if os.path.exists(f'{REC}/{nm}.events.json'):
+        ex=load_src(nm)
+        for sid in ex['scenes']: SRC[sid]=ex
+scenes={sid:SRC[sid]['scenes'][sid] for sid in SRC}
+def vt(ep,src): return src['mv']+(ep-src['m_ep'])/1000.0
 AW=888
 mask=Image.new('L',(AW,1920),0); ImageDraw.Draw(mask).rounded_rectangle([0,0,AW-1,1919],radius=44,fill=255); mask.save(f'{TMP}/mask.png')
 def enc(): return ['-c:v','libx264','-preset','veryfast','-crf','12','-pix_fmt','yuv420p']
@@ -89,7 +101,7 @@ def mk_card(name,png,length,fin,fout):
     sh(FF+['-loop','1','-framerate',str(FPS),'-i',png,'-vf',f'fade=t=in:st=0:d={fin}:color={BGHEX},fade=t=out:st={n/FPS-fout:.3f}:d={fout}:color={BGHEX},format=yuv420p','-frames:v',str(n)]+enc()+[out])
     return out,n
 def mk_scene(sc,need,fin=0,fout=0):
-    e=scenes[sc]; a,b=vt(e['start']),vt(e['end']); L=(b-a)/K
+    src=SRC[sc]; e=scenes[sc]; a,b=vt(e['start'],src),vt(e['end'],src); L=(b-a)/K
     total=max(L,need); n=round(total*FPS); out=f'{TMP}/seg_{sc}.mp4'
     pad=max(0.0,total-L)
     fades=''
@@ -98,7 +110,7 @@ def mk_scene(sc,need,fin=0,fout=0):
     tp=f',tpad=stop_mode=clone:stop_duration={pad+0.2:.3f}' if pad>0 else ''
     fc=(f'[1:v]setpts=(PTS-STARTPTS)/{K},fps={FPS}{tp},scale={AW}:1920:flags=lanczos,format=yuva420p[a];'
         f'[2:v]format=gray[m];[a][m]alphamerge[ar];[0:v][ar]overlay=96:0:format=auto,format=yuv420p{fades}[v]')
-    sh(FF+['-f','lavfi','-i',f'color=c={BGHEX}:s=1080x1920:r={FPS}','-ss',f'{a:.3f}','-t',f'{b-a:.3f}','-i',f'{REC}/{vid}.raw.mkv','-loop','1','-framerate',str(FPS),'-i',f'{TMP}/mask.png',
+    sh(FF+['-f','lavfi','-i',f'color=c={BGHEX}:s=1080x1920:r={FPS}','-ss',f'{a:.3f}','-t',f'{b-a:.3f}','-i',src['raw'],'-loop','1','-framerate',str(FPS),'-i',f'{TMP}/mask.png',
           '-filter_complex',fc,'-map','[v]','-frames:v',str(n)]+enc()+[out])
     return out,n,L
 tl=[]; t=0.0; audio=[]; prev_end=-1.0
@@ -120,7 +132,7 @@ for ln in nar:
         tl.append(('thanks',p,n,0.0,card_start)); t=card_start+n/FPS; continue
     if sc=='outro':
         a=max(t+0.2,prev_end+0.25); length=max(3.0,a+d+0.9-t)
-        p,n=mk_card('outro',card_brand('outro',"Dalil · Ilm · Aniqlik"),length,0.5,0.6)
+        p,n=mk_card('outro',card_brand('outro',OUTRO_SUB),length,0.5,0.6)
         tl.append((sc,p,n,0.0,t)); audio.append((ln,a,sc)); prev_end=a+d; t+=n/FPS; continue
     a=max(t+0.15,prev_end+0.25); need=a+d+0.4-t
     p,n,L=mk_scene(sc,need,fin=0.4 if sc==first_scene else 0,fout=0.4 if sc==last_scene and False else 0)
@@ -148,7 +160,7 @@ def sub_png(text,name):
     if len(lines)>2: return None
     w=int(max(dm.textlength(l,font=SF) for l in lines))+72; h=len(lines)*60+52
     im=Image.new('RGBA',(w,h),(0,0,0,0)); d=ImageDraw.Draw(im)
-    d.rounded_rectangle([0,0,w-1,h-1],radius=26,fill=(12,22,32,204))
+    d.rounded_rectangle([0,0,w-1,h-1],radius=26,fill=(12,22,32,224))
     y=26
     for l in lines:
         lw=d.textlength(l,font=SF); d.text(((w-lw)/2,y-4),l,font=SF,fill=(255,255,255,255)); y+=60
@@ -166,7 +178,7 @@ for ln,a,sc in audio:
     for c,r in zip(chunks,res):
         dd=d*len(c)/tot; p,w,h=r
         pos=POS.get(sc,'bottom')
-        y=1690-h if pos=='bottom' else 180
+        y=1850-h  # BITTA qat'iy joy (barcha sahnalar): pastki chekka 1850; «Manba» qatori ochiq qoladi
         subs.append((p,(1080-w)//2,y,x0,x0+dd)); x0+=dd
 ins=[]; fcs=[]; prev='[0:v]'
 for i,(p,x,y,s,e) in enumerate(subs):
