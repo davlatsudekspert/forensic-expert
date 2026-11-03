@@ -88,6 +88,14 @@ void main() {
     expect(find.text('4'), findsOneWidget);
     // O‘z yozuvida bosiladigan tugma yo‘q.
     expect(find.byKey(const Key('cat.star.me')), findsNothing);
+    // Lekin olingan yulduzchalar ko‘rinadi: to‘liq oltin yulduz + son.
+    final mine = find.byKey(const Key('cat.starMine.me'));
+    expect(mine, findsOneWidget);
+    expect(
+      find.descendant(of: mine, matching: find.byIcon(Icons.star_rounded)),
+      findsOneWidget,
+    );
+    expect(find.descendant(of: mine, matching: find.text('2')), findsOneWidget);
   });
 
   testWidgets('talaba: ikkala yorliq; mutaxassislar yorlig‘ida belgi', (

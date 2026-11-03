@@ -262,9 +262,40 @@ class CatalogStarButton extends StatelessWidget {
       ],
     );
     if (entry.mine) {
+      // O‘z kartochkam: bosib bo‘lmaydi, lekin boshqalardan olgan yulduzchalar
+      // ustozlardagi kabi to‘liq oltin yulduz va tabletka bilan ko‘rsatiladi.
+      final received = entry.stars > 0;
       return Semantics(
         label: l.catStarsCount(entry.stars),
-        child: Padding(padding: const EdgeInsets.all(FeSpace.xs), child: child),
+        child: Container(
+          key: Key('cat.starMine.${entry.id}'),
+          constraints: const BoxConstraints(minHeight: FeTouch.minTarget),
+          padding: const EdgeInsets.symmetric(horizontal: FeSpace.sm),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(999),
+            color: gold.withValues(alpha: received ? 0.15 : 0.08),
+            border: Border.all(
+              color: received ? gold : gold.withValues(alpha: 0.8),
+            ),
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(
+                received ? Icons.star_rounded : Icons.star_outline_rounded,
+                color: gold,
+                size: large ? 28 : 24,
+              ),
+              const SizedBox(width: FeSpace.xxs),
+              Text(
+                entry.stars.toString(),
+                style: (large ? t.titleMedium : t.titleSmall)?.copyWith(
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ],
+          ),
+        ),
       );
     }
     return Semantics(
