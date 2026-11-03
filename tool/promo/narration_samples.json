@@ -1,0 +1,19 @@
+{
+  "video": "samples",
+  "voice": "ru-RU-DmitryNeural",
+  "lines": [
+    {"id": "sampleA", "scene": "sample",
+     "ru": "Форэ́нзик Э́кспэрт — приложение для преподавателей судебной медицины и токсикологии.",
+     "uz": "A: o‘sha ruscha ovoz, nom inglizchaga yaqin yozilgan"},
+    {"id": "sampleB", "scene": "sample", "voice": "en-US-AndrewMultilingualNeural",
+     "ru": "Forensic Expert — приложение для преподавателей судебной медицины и токсикологии.",
+     "uz": "B: ikki tilli bitta ovoz"},
+    {"id": "sampleC", "scene": "sample",
+     "ru": "Forensic Expert — приложение для преподавателей судебной медицины и токсикологии.",
+     "parts": [
+       {"text": "Forensic Expert.", "voice": "en-US-AndrewNeural"},
+       {"text": "Приложение для преподавателей судебной медицины и токсикологии.", "voice": "ru-RU-DmitryNeural"}
+     ],
+     "uz": "C: nom — inglizcha ovoz, qolgani — ruscha ovoz"}
+  ]
+}
