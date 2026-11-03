@@ -78,6 +78,15 @@ void main() {
     }
 
     /// Mashqda bitta javob: variant → tekshirish → izoh.
+    // Takrorlash tizimi javob berilgan savollarni «keyinga» suradi; har qadam
+    // toza holatdan boshlanishi uchun progress tozalanadi.
+    Future<void> freshQuiz(String route) async {
+      final notifier = containerOf(tester).read(studyProgressProvider.notifier);
+      final ids = containerOf(tester).read(studyProgressProvider).keys.toList();
+      if (ids.isNotEmpty) await notifier.reset(ids);
+      await open(route);
+    }
+
     Future<void> answerPractice() async {
       await qa.tapFinder(find.byKey(const Key('study.quiz.option.0')));
       await qa.tapFinder(find.byKey(const Key('study.quiz.check')));
@@ -102,9 +111,13 @@ void main() {
           await qa.scrollUntil(
             find.byKey(const Key('study.deck.teaching.toks')),
           );
-          expectKey('study.exam.teaching.toks');
-          expectKey('study.examCount.teaching.toks');
-          if (lang != 'uz') expectKey('study.examUnavailable.teaching.toks');
+          if (lang == 'uz') {
+            expectKey('study.exam.teaching.toks');
+            expectKey('study.examCount.teaching.toks');
+          } else {
+            // Imtihon savollari faqat o‘zbekcha: boshqa tilda tugma yo‘q.
+            expectKey('study.examUnavailable.teaching.toks');
+          }
         });
 
         await qa.step('$tag: hub mixed topics deck', (s) async {
@@ -118,7 +131,7 @@ void main() {
         await qa.step('$tag: practice toks answered with explanation', (
           s,
         ) async {
-          await open(Routes.studyQuiz('teaching.toks'));
+          await freshQuiz(Routes.studyQuiz('teaching.toks'));
           expectKey('study.mode.practice');
           expectKey('study.mode.banner.practice');
           await answerPractice();
@@ -148,7 +161,7 @@ void main() {
                 decks.firstWhere((d) => d.kind == StudyDeckKind.discipline),
           );
           s.notes.add('deck: ${deck.id}');
-          await open(Routes.studyQuiz(deck.id));
+          await freshQuiz(Routes.studyQuiz(deck.id));
           expectKey('study.quiz.stem');
           if (lang != 'en') expectPrefix('study.quote.translated.');
           await answerPractice();
@@ -159,7 +172,7 @@ void main() {
         await qa.step('$tag: mixed deck practice (true/false or MC)', (
           s,
         ) async {
-          await open(Routes.studyQuiz('discipline.mixed'));
+          await freshQuiz(Routes.studyQuiz('discipline.mixed'));
           expectKey('study.quiz.stem');
           await answerPractice();
           await scrollToPrefix('study.explanation.');
@@ -167,7 +180,7 @@ void main() {
         });
 
         await qa.step('$tag: exam', (s) async {
-          await open(Routes.studyQuiz('teaching.toks', exam: true));
+          await freshQuiz(Routes.studyQuiz('teaching.toks', exam: true));
           if (lang != 'uz') {
             expectKey('study.quiz.unavailable');
             return;
@@ -228,11 +241,15 @@ void main() {
           expectKey('glossary.sheet');
           expectKey('glossary.explanation');
           expectKey('glossary.badge.machineDraft');
+          // Oyna yopiladi — aks holda keyingi qadamlar uning ostida qoladi.
+          Navigator.of(tester.element(find.byKey(const Key('glossary.sheet'))))
+              .pop();
+          await qa.settle();
         });
 
         await qa.step('$tag: 320 dp practice explanation', (s) async {
           await qa.setSize(const Size(320, 640));
-          await open(Routes.studyQuiz('teaching.gmt'));
+          await freshQuiz(Routes.studyQuiz('teaching.gmt'));
           await answerPractice();
           await scrollToPrefix('study.explanation.');
           expectPrefix('study.explanation.text.');
@@ -243,13 +260,14 @@ void main() {
           await qa.scrollUntil(
             find.byKey(const Key('study.deck.teaching.gmt')),
           );
-          expectKey('study.exam.teaching.gmt');
+          // Imtihon savollari faqat o‘zbekcha.
+          if (lang == 'uz') expectKey('study.exam.teaching.gmt');
         });
         await qa.setSize(const Size(390, 844));
 
         if (lang == 'uz' && mode == UserMode.student) {
           await qa.step('$tag: counter text style', (s) async {
-            await open(Routes.studyQuiz('teaching.gmt'));
+            await freshQuiz(Routes.studyQuiz('teaching.gmt'));
             expectText(RegExp(r'^1-savol / \d+ ta$'));
           });
         }

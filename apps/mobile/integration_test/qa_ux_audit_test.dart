@@ -75,6 +75,8 @@ void main() {
     });
     // ------------------------------------------- USTOZ PANELI (premium dizayn)
     // Demo sinf serveri (ma’lumot shu qurilmada; demo foydalanuvchi ustoz).
+    // Ustoz sahifalari faqat Ustoz rejimida ochiladi (build 56 dan).
+    await settings().setUserMode(UserMode.teacher);
     await qa.step('USTOZ paneli (ish stolidagi «Ustoz» bo‘limi)', (s) async {
       await open(Routes.teacher);
       qa.expectText(l.teacherPanelTitle, s);
