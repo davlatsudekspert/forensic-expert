@@ -25,8 +25,8 @@ FF=['ffmpeg','-loglevel','error','-y']; FPS=30
 SERIF=f'{FONTS}/source_serif_4/SourceSerif4-Bold.ttf'
 INTER=f'{FONTS}/inter/Inter-SemiBold.ttf'; INTERR=f'{FONTS}/inter/Inter-Regular.ttf'
 def font(p,s): return ImageFont.truetype(p,s)
-OUTRO_SUB={'ustoz':'Dalil · Ilm · Aniqlik','yuldashev':'Dalil · Ilm · Aniqlik','talaba':'Har kuni — ishonch bilan o‘rganing','ozi':'Har kuni — ishonch bilan tayyorlaning'}[vid]
-INTRO_SUB={'ustoz':'Ustozlar uchun','talaba':'Talabalar uchun','yuldashev':'Toksikologik kimyo','ozi':'Talabalar uchun'}[vid]
+OUTRO_SUB={'ustoz':'Dalil · Ilm · Aniqlik','yuldashev':'Dalil · Ilm · Aniqlik','talaba':'Har kuni — ishonch bilan o‘rganing','ozi':'Har kuni — ishonch bilan tayyorlaning','ustoz2':'Dalil · Ilm · Aniqlik'}[vid]
+INTRO_SUB={'ustoz':'Ustozlar uchun','talaba':'Talabalar uchun','yuldashev':'Toksikologik kimyo','ozi':'Talabalar uchun','ustoz2':'Ustozlar uchun'}[vid]
 NOTE=[l for l in nar if l['scene']=='thanks_note'][0]['uz']
 if vid=='yuldashev':
     THANKS='Professor Yuldashev Z.A. va hammualliflarga — ularning o‘quv materiallari talaba va mutaxassislar uchun ishonchli bilim manbai'
@@ -85,7 +85,7 @@ def load_src(name):
     mv,_=marker_time(f'{REC}/{name}.raw.mkv'); assert mv is not None
     return {'raw':f'{REC}/{name}.raw.mkv','m_ep':m_ep,'mv':mv,'scenes':{e['id']:e for e in ev if e['type']=='scene'}}
 MAIN=load_src(vid)
-EXTRAS={'ustoz':['ustoz_extra','ustoz_lit'],'talaba':['talaba_extra','talaba_extra2','talaba_lit','talaba_desk','extra5','extra6'],'yuldashev':['talaba_extra','yuldashev_spe','extra5'],'ozi':[]}[vid]
+EXTRAS={'ustoz':['ustoz_extra','ustoz_lit'],'talaba':['talaba_extra','talaba_extra2','talaba_lit','talaba_desk','extra5','extra6','extra8'],'yuldashev':['talaba_extra','yuldashev_spe','extra5'],'ozi':[],'ustoz2':[]}[vid]
 SRC={sid:MAIN for sid in MAIN['scenes']}
 for nm in EXTRAS:
     if os.path.exists(f'{REC}/{nm}.events.json'):
