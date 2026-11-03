@@ -131,8 +131,10 @@ import '../features/tools/presentation/tool_detail_screen.dart';
 import '../features/tools/presentation/tools_screen.dart';
 import 'class_groups.dart';
 import 'class_quiz.dart';
+import 'login_gate.dart';
 import 'plan.dart' show proEnabledProvider;
 import 'pro_samples.dart' show ProSampleSource;
+import 'providers.dart' show authStateProvider;
 import 'referral.dart';
 import 'routes.dart';
 import 'user_data.dart';
@@ -176,6 +178,8 @@ String? pendingGroupInviteRedirect(
 class _SettingsListenable extends ChangeNotifier {
   _SettingsListenable(Ref ref) {
     ref.listen(settingsControllerProvider, (_, _) => notifyListeners());
+    // Kirish/chiqish — majburiy kirish qoidasi qayta tekshiriladi.
+    ref.listen(authStateProvider, (_, _) => notifyListeners());
   }
 }
 
@@ -265,6 +269,77 @@ final routerProvider = Provider<GoRouter>((ref) {
       ..scheduleFrame();
   }
 
+  String? baseRedirect(BuildContext context, GoRouterState state) {
+    final settings = ref.read(settingsControllerProvider);
+    // Taklif havolasi: kod lokal saqlanadi (attribution — serverda,
+    // akkaunt ochilgach), so‘ng onboarding yoki taklif sahifasi.
+    if (state.uri.path.startsWith(Routes.invitePrefix)) {
+      final code = ReferralLinks.extractCode(state.uri);
+      if (code != null) {
+        unawaited(ref.read(pendingReferralProvider.notifier).remember(code));
+      }
+      return onboardingRedirect(settings, Routes.referral) ?? Routes.referral;
+    }
+    // Sinf havolasi (QR / deep link): kod xotirada saqlanadi, so‘ng
+    // qo‘shilish ekrani (kirish kerak bo‘lsa — o‘sha ekranda so‘raladi).
+    if (state.uri.path.startsWith(Routes.joinPrefix)) {
+      final code = ClassCode.extract(state.uri);
+      if (code != null) {
+        ref.read(pendingClassCodeProvider.notifier).remember(code);
+        // Guruh og‘zaki imtihoni QR’i: to‘g‘ridan-to‘g‘ri uning ekrani.
+        final target = OralGroupLink.isOral(state.uri)
+            ? Routes.oralJoinWith(code)
+            : Routes.classJoinWith(code);
+        return onboardingRedirect(settings, target) ?? target;
+      }
+      return onboardingRedirect(settings, Routes.classQuiz) ?? Routes.classQuiz;
+    }
+    // Guruh QR havolasi (`/g/<KOD>?a=<test>`): taklif DISKDA saqlanadi —
+    // yangi o‘rnatilgan ilovada onboarding/ro‘yxatdan o‘tish davomida
+    // yo‘qolmaydi. Avval Asosiy sahifa (yoki onboarding) chiziladi, so‘ng
+    // qo‘shilish sahifasi ustiga ochiladi (openPendingGroupInvite):
+    // shell hech qachon chizilmagan bo‘lsa, keyingi `go` nested
+    // navigator’da Hero o‘tishini o‘lchamsiz boshlaydi.
+    if (state.uri.path.startsWith(Routes.groupLinkPrefix)) {
+      final inv = GroupCode.fromUri(state.uri);
+      if (inv != null) {
+        ref.read(pendingGroupInviteProvider.notifier).remember(inv);
+        // Bir xil manzil (Asosiy → Asosiy) delegate’ni xabardor qilmaydi.
+        openPendingGroupInvite();
+      }
+      return onboardingRedirect(settings, Routes.home) ??
+          (inv == null ? Routes.groups : Routes.home);
+    }
+    // Pro o‘chiq (FE_PRO yo‘q): «Pro rejasi» ekrani yo‘q — har qanday havola
+    // Asosiyga qaytadi (ilovada to‘lovga oid hech narsa ko‘rinmaydi).
+    if (!ref.read(proEnabledProvider) &&
+        (state.matchedLocation == Routes.pro ||
+            state.matchedLocation.startsWith('${Routes.pro}/'))) {
+      return Routes.home;
+    }
+    // Rejim chegaralari (egasi qarori, 2026-10-24): Ustoz paneli va natijalar
+    // faqat «Ustoz» rejimida. «Darslar» hamma uchun o‘qishga ochiq (egasi
+    // so‘rovi, 2026-11-02); ustoz eslatmalari va guruh testi — faqat ustozda.
+    final loc = state.matchedLocation;
+    final mode = settings.userMode;
+    if (mode != null &&
+        mode != UserMode.teacher &&
+        (loc == Routes.teacher ||
+            loc == Routes.teacherResults ||
+            loc == Routes.teacherOral ||
+            loc.startsWith('${Routes.teacherOral}/'))) {
+      return Routes.home;
+    }
+    // «Bilim va malakani baholash» — faqat Mutaxassis (egasi, 2026-11-02).
+    if (mode != null &&
+        mode != UserMode.professional &&
+        (loc == Routes.assessment || loc.startsWith('${Routes.assessment}/'))) {
+      return Routes.home;
+    }
+    _recordFirstStep(ref, loc);
+    return onboardingRedirect(settings, loc);
+  }
+
   router = GoRouter(
     navigatorKey: rootKey,
     initialLocation:
@@ -275,76 +350,17 @@ final routerProvider = Provider<GoRouter>((ref) {
     // Noma’lum yoki eskirgan havola — tushunarli sahifa va Home tugmasi.
     errorBuilder: (c, s) => const NotFoundScreen(),
     redirect: (context, state) {
+      final base = baseRedirect(context, state);
       final settings = ref.read(settingsControllerProvider);
-      // Taklif havolasi: kod lokal saqlanadi (attribution — serverda,
-      // akkaunt ochilgach), so‘ng onboarding yoki taklif sahifasi.
-      if (state.uri.path.startsWith(Routes.invitePrefix)) {
-        final code = ReferralLinks.extractCode(state.uri);
-        if (code != null) {
-          unawaited(ref.read(pendingReferralProvider.notifier).remember(code));
-        }
-        return onboardingRedirect(settings, Routes.referral) ?? Routes.referral;
-      }
-      // Sinf havolasi (QR / deep link): kod xotirada saqlanadi, so‘ng
-      // qo‘shilish ekrani (kirish kerak bo‘lsa — o‘sha ekranda so‘raladi).
-      if (state.uri.path.startsWith(Routes.joinPrefix)) {
-        final code = ClassCode.extract(state.uri);
-        if (code != null) {
-          ref.read(pendingClassCodeProvider.notifier).remember(code);
-          // Guruh og‘zaki imtihoni QR’i: to‘g‘ridan-to‘g‘ri uning ekrani.
-          final target = OralGroupLink.isOral(state.uri)
-              ? Routes.oralJoinWith(code)
-              : Routes.classJoinWith(code);
-          return onboardingRedirect(settings, target) ?? target;
-        }
-        return onboardingRedirect(settings, Routes.classQuiz) ??
-            Routes.classQuiz;
-      }
-      // Guruh QR havolasi (`/g/<KOD>?a=<test>`): taklif DISKDA saqlanadi —
-      // yangi o‘rnatilgan ilovada onboarding/ro‘yxatdan o‘tish davomida
-      // yo‘qolmaydi. Avval Asosiy sahifa (yoki onboarding) chiziladi, so‘ng
-      // qo‘shilish sahifasi ustiga ochiladi (openPendingGroupInvite):
-      // shell hech qachon chizilmagan bo‘lsa, keyingi `go` nested
-      // navigator’da Hero o‘tishini o‘lchamsiz boshlaydi.
-      if (state.uri.path.startsWith(Routes.groupLinkPrefix)) {
-        final inv = GroupCode.fromUri(state.uri);
-        if (inv != null) {
-          ref.read(pendingGroupInviteProvider.notifier).remember(inv);
-          // Bir xil manzil (Asosiy → Asosiy) delegate’ni xabardor qilmaydi.
-          openPendingGroupInvite();
-        }
-        return onboardingRedirect(settings, Routes.home) ??
-            (inv == null ? Routes.groups : Routes.home);
-      }
-      // Pro o‘chiq (FE_PRO yo‘q): «Pro rejasi» ekrani yo‘q — har qanday havola
-      // Asosiyga qaytadi (ilovada to‘lovga oid hech narsa ko‘rinmaydi).
-      if (!ref.read(proEnabledProvider) &&
-          (state.matchedLocation == Routes.pro ||
-              state.matchedLocation.startsWith('${Routes.pro}/'))) {
-        return Routes.home;
-      }
-      // Rejim chegaralari (egasi qarori, 2026-10-24): Ustoz paneli va natijalar
-      // faqat «Ustoz» rejimida. «Darslar» hamma uchun o‘qishga ochiq (egasi
-      // so‘rovi, 2026-11-02); ustoz eslatmalari va guruh testi — faqat ustozda.
-      final loc = state.matchedLocation;
-      final mode = settings.userMode;
-      if (mode != null &&
-          mode != UserMode.teacher &&
-          (loc == Routes.teacher ||
-              loc == Routes.teacherResults ||
-              loc == Routes.teacherOral ||
-              loc.startsWith('${Routes.teacherOral}/'))) {
-        return Routes.home;
-      }
-      // «Bilim va malakani baholash» — faqat Mutaxassis (egasi, 2026-11-02).
-      if (mode != null &&
-          mode != UserMode.professional &&
-          (loc == Routes.assessment ||
-              loc.startsWith('${Routes.assessment}/'))) {
-        return Routes.home;
-      }
-      _recordFirstStep(ref, loc);
-      return onboardingRedirect(settings, loc);
+      final auth = ref.read(authStateProvider);
+      final gate = loginGateRedirect(
+        enabled: ref.read(loginGateEnabledProvider),
+        onboardingDone: requiredOnboardingStep(settings) == null,
+        signedIn: auth.signedIn,
+        hadSession: ref.read(hadSavedSessionProvider),
+        location: base ?? state.uri.toString(),
+      );
+      return gate ?? base;
     },
     routes: [
       GoRoute(
@@ -513,7 +529,7 @@ final routerProvider = Provider<GoRouter>((ref) {
                       ),
                       GoRoute(
                         path: 'exam',
-                        builder: (c, s) => const ExamScreen(),
+                        builder: (c, s) => const LessonsListScreen(exam: true),
                       ),
                       // Talaba: guruh og‘zaki imtihoni (QR yoki kod).
                       GoRoute(

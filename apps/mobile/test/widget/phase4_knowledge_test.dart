@@ -207,15 +207,14 @@ void main() {
     );
   });
 
-  testWidgets('Student: real manbali kurs, imtihon savollari to‘qilmagan', (
-    tester,
-  ) async {
-    await open(tester, Routes.learn);
-    expect(find.byKey(const Key('learn.course.course.postmortem')), findsOne);
-    expect(find.byKey(const Key('learn.progress')), findsOneWidget);
-    await open(tester, Routes.exam);
-    expect(find.byKey(const Key('exam.empty')), findsOneWidget);
-  });
+  testWidgets(
+    'Student: real manbali kurs (Imtihon rejimi — lessons_test.dart da)',
+    (tester) async {
+      await open(tester, Routes.learn);
+      expect(find.byKey(const Key('learn.course.course.postmortem')), findsOne);
+      expect(find.byKey(const Key('learn.progress')), findsOneWidget);
+    },
+  );
 
   testWidgets('TEST fixture: to‘liq retsept holati (TEST DATA belgisi bilan)', (
     tester,

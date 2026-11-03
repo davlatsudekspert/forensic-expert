@@ -121,7 +121,7 @@ void main() {
       final lines = csv.trim().split('\r\n');
       expect(
         lines.first,
-        'Laqab,Holat,To‘g‘ri javoblar,Savollar soni,Ball (100),Baho,Sarflangan vaqt (soniya)',
+        'Ism,Holat,To‘g‘ri javoblar,Savollar soni,Ball (100),Baho,Sarflangan vaqt (soniya)',
       );
       expect(lines[1], 'Ali,Tugatdi,28,30,93.3,5,754.0');
       expect(lines[2], 'Vali,Tugatdi,21,30,70.0,3,600.0');

@@ -18,6 +18,11 @@ abstract interface class ClassQuizService {
   // ---- ustoz
   Future<ClassResult<List<ClassTopic>>> topics();
 
+  /// Qaysi mavzuda savol bor (id, sarlavha, soni) — HAR BIR kirgan
+  /// foydalanuvchiga (talaba ham): dars oxiridagi test tugmasi uchun.
+  /// Savol matni yoki to‘g‘ri javob qaytmaydi.
+  Future<ClassResult<List<ClassTopic>>> practiceTopics();
+
   Future<ClassResult<ClassSessionInfo>> createSession({
     required String topicId,
     required ClassQuizSettings settings,
@@ -108,6 +113,9 @@ class UnconfiguredClassQuizService implements ClassQuizService {
   Future<ClassResult<ClassQuizMe>> me() async => const ClassResult.fail(_f);
   @override
   Future<ClassResult<List<ClassTopic>>> topics() async =>
+      const ClassResult.fail(_f);
+  @override
+  Future<ClassResult<List<ClassTopic>>> practiceTopics() async =>
       const ClassResult.fail(_f);
   @override
   Future<ClassResult<ClassSessionInfo>> createSession({

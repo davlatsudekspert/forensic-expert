@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/login_gate.dart';
+
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
@@ -20,12 +22,19 @@ import 'professional_widgets.dart';
 class AccountChoiceScreen extends ConsumerWidget {
   const AccountChoiceScreen({super.key});
 
+  Future<void> _signIn(BuildContext context) async {
+    final ok = await context.push<bool>(Routes.welcomeEmailCode);
+    if (ok == true && context.mounted) context.go(Routes.home);
+  }
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
     final configured = ref.watch(authRepositoryProvider).isConfigured;
+    // Majburiy kirish: «Boshlash» (kirmasdan) yo‘q, sarlavha va tugma boshqa.
+    final required = ref.watch(loginGateEnabledProvider);
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
@@ -64,35 +73,39 @@ class AccountChoiceScreen extends ConsumerWidget {
               const SizedBox(height: FeSpace.md),
               Semantics(
                 header: true,
-                child: Text(l.accountReadyTitle, style: t.headlineSmall),
+                child: Text(
+                  required ? l.loginGateTitle : l.accountReadyTitle,
+                  style: t.headlineSmall,
+                ),
               ),
               const SizedBox(height: FeSpace.xs),
               Text(
-                l.accountReadyBody,
+                required ? l.loginGateBody : l.accountReadyBody,
                 style: t.bodyLarge?.copyWith(color: c.textSecondary),
               ),
               const SizedBox(height: FeSpace.xl),
-              FilledButton(
-                key: const Key('account.skip'),
-                onPressed: () => context.go(Routes.home),
-                child: Text(l.accountStartNow),
-              ),
-              const SizedBox(height: FeSpace.sm),
-              OutlinedButton.icon(
-                key: const Key('account.create'),
-                onPressed: configured
-                    ? () async {
-                        final ok = await context.push<bool>(
-                          Routes.welcomeEmailCode,
-                        );
-                        if (ok == true && context.mounted) {
-                          context.go(Routes.home);
-                        }
-                      }
-                    : null,
-                icon: const Icon(Icons.mail_outline),
-                label: Text(l.accountCreateOrSignIn),
-              ),
+              if (!required) ...[
+                FilledButton(
+                  key: const Key('account.skip'),
+                  onPressed: () => context.go(Routes.home),
+                  child: Text(l.accountStartNow),
+                ),
+                const SizedBox(height: FeSpace.sm),
+              ],
+              if (required)
+                FilledButton.icon(
+                  key: const Key('account.create'),
+                  onPressed: () => _signIn(context),
+                  icon: const Icon(Icons.mail_outline),
+                  label: Text(l.loginGateButton),
+                )
+              else
+                OutlinedButton.icon(
+                  key: const Key('account.create'),
+                  onPressed: configured ? () => _signIn(context) : null,
+                  icon: const Icon(Icons.mail_outline),
+                  label: Text(l.accountCreateOrSignIn),
+                ),
               const SizedBox(height: FeSpace.md),
               if (!configured)
                 FeNote(

@@ -182,7 +182,7 @@ void main() {
     final lines = f.content.trim().split('\r\n');
     expect(
       lines.first,
-      'Laqab,Holat,To‘g‘ri javoblar,Savollar soni,Ball (100),Baho,Sarflangan vaqt (soniya)',
+      'Ism,Holat,To‘g‘ri javoblar,Savollar soni,Ball (100),Baho,Sarflangan vaqt (soniya)',
     );
     expect(lines.where((x) => x.contains(',100.0,5,')), hasLength(1));
     expect(lines.where((x) => x.contains(',75.0,3,')), hasLength(1));

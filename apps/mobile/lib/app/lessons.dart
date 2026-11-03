@@ -91,14 +91,14 @@ final lessonScreenGuardProvider = Provider<LessonScreenGuard>(
   (ref) => const PlatformLessonScreenGuard(),
 );
 
-/// Dars bilan bog‘liq test mavzusi (`class_topics` da `deck_id` yoki uning
+/// Dars bilan bog‘liq test mavzusi (`class_practice_topics` da `deck_id` yoki uning
 /// `~ru`/`~en` varianti) bormi. Yuklanayotgan yoki xatoda — `false`.
 final lessonQuizAvailableProvider = Provider.autoDispose.family<bool, String>((
   ref,
   deckId,
 ) {
   if (deckId.isEmpty) return false;
-  final topics = ref.watch(classTopicsProvider).value?.value;
+  final topics = ref.watch(classPracticeTopicsProvider).value?.value;
   if (topics == null) return false;
   final base = ClassQuizBank.baseId(deckId);
   return topics.any((t) => ClassQuizBank.baseId(t.id) == base);

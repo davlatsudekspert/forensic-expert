@@ -233,7 +233,7 @@ void main() {
       );
       expect(
         file.content.split('\r\n').first,
-        'Laqab,Reyting ochkosi,To‘g‘ri javoblar,O‘rtacha javob vaqti (soniya),Ball (100),Baho',
+        'Ism,Reyting ochkosi,To‘g‘ri javoblar,O‘rtacha javob vaqti (soniya),Ball (100),Baho',
       );
       expect(file.content, contains('Ali,1000,1,'));
       expect(file.content, contains(',10.0,${l.scoringGradeBelowMin}'));

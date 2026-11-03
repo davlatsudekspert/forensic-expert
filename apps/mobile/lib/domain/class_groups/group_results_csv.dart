@@ -11,7 +11,7 @@ import 'class_groups_models.dart';
 
 abstract final class GroupResultsCsv {
   static const header =
-      'Laqab,Holat,To‘g‘ri javoblar,Savollar soni,${GradeScaleCsv.scoreHeader},'
+      'Ism,Holat,To‘g‘ri javoblar,Savollar soni,${GradeScaleCsv.scoreHeader},'
       '${GradeScaleCsv.gradeHeader},Sarflangan vaqt (soniya)';
 
   static String _state(BoardState s) => switch (s) {

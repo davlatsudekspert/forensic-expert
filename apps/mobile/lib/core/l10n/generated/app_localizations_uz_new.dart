@@ -12762,4 +12762,26 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   @override
   String oralGroupLeftAt(String time) =>
       toUzNewAlphabet(super.oralGroupLeftAt(time));
+
+  @override
+  String get loginGateTitle => toUzNewAlphabet(super.loginGateTitle);
+
+  @override
+  String get loginGateBody => toUzNewAlphabet(super.loginGateBody);
+
+  @override
+  String get loginGateButton => toUzNewAlphabet(super.loginGateButton);
+
+  @override
+  String get loginGateOffline => toUzNewAlphabet(super.loginGateOffline);
+
+  @override
+  String get admProRevokeTitle => toUzNewAlphabet(super.admProRevokeTitle);
+
+  @override
+  String admProRevokeBody(String email) =>
+      toUzNewAlphabet(super.admProRevokeBody(email));
+
+  @override
+  String get admProRevokeNo => toUzNewAlphabet(super.admProRevokeNo);
 }

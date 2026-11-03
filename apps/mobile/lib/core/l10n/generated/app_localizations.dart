@@ -15990,7 +15990,7 @@ abstract class AppLocalizations {
   /// Hub intro.
   ///
   /// In en, this message translates to:
-  /// **'The teacher shows a 6-digit code and QR on the screen. Students join with a nickname and answer each question before the timer ends.'**
+  /// **'The teacher shows a 6-digit code and QR on the screen. Students join with their name and answer each question before the timer ends.'**
   String get classQuizIntro;
 
   /// Demo adapter banner.
@@ -16044,13 +16044,13 @@ abstract class AppLocalizations {
   /// Field label.
   ///
   /// In en, this message translates to:
-  /// **'Nickname'**
+  /// **'Name'**
   String get classNickLabel;
 
   /// Helper.
   ///
   /// In en, this message translates to:
-  /// **'2–20 characters. The teacher sees only this nickname — not your name or e-mail.'**
+  /// **'2–20 characters. The teacher sees only this name, not your e-mail.'**
   String get classNickHelper;
 
   /// Button.
@@ -16152,7 +16152,7 @@ abstract class AppLocalizations {
   /// Privacy note.
   ///
   /// In en, this message translates to:
-  /// **'The teacher sees only your name. Finished tests are deleted automatically after 30 days. Offensive names can be reported and removed.'**
+  /// **'The teacher sees only this name. Finished tests are deleted automatically after 30 days. Offensive names can be reported and removed.'**
   String get classPrivacyNote;
 
   /// Sign-in card.
@@ -16164,7 +16164,7 @@ abstract class AppLocalizations {
   /// Sign-in body.
   ///
   /// In en, this message translates to:
-  /// **'Your result is tied to your account on the server. Other students and the teacher only see your nickname.'**
+  /// **'Your result is tied to your account on the server. Other students and the teacher only see the name you entered.'**
   String get classSignInBody;
 
   /// Button.
@@ -16272,7 +16272,7 @@ abstract class AppLocalizations {
   /// Reports.
   ///
   /// In en, this message translates to:
-  /// **'{count} nickname report(s) — review the list'**
+  /// **'{count} name report(s) — review the list'**
   String classReportsCount(int count);
 
   /// Button.
@@ -16572,7 +16572,7 @@ abstract class AppLocalizations {
   /// Dialog.
   ///
   /// In en, this message translates to:
-  /// **'Report this nickname?'**
+  /// **'Report this name?'**
   String get classReportTitle;
 
   /// Dialog.
@@ -16590,7 +16590,7 @@ abstract class AppLocalizations {
   /// Report reason sent to the server.
   ///
   /// In en, this message translates to:
-  /// **'Inappropriate nickname'**
+  /// **'Inappropriate name'**
   String get classReportReason;
 
   /// Snackbar.
@@ -16680,19 +16680,19 @@ abstract class AppLocalizations {
   /// Error.
   ///
   /// In en, this message translates to:
-  /// **'Nickname must be 2–20 characters.'**
+  /// **'Name must be 2–20 characters.'**
   String get classErrNickLength;
 
   /// Error.
   ///
   /// In en, this message translates to:
-  /// **'This nickname contains characters that aren’t allowed.'**
+  /// **'This name contains characters that aren’t allowed.'**
   String get classErrNickChars;
 
   /// Error.
   ///
   /// In en, this message translates to:
-  /// **'Please choose a different nickname.'**
+  /// **'Please enter a different name.'**
   String get classErrNickBlocked;
 
   /// Error.
@@ -23516,6 +23516,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'last: {time}'**
   String oralGroupLeftAt(String time);
+
+  /// Required sign-in screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in first'**
+  String get loginGateTitle;
+
+  /// Required sign-in screen explanation.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in with your e-mail (Gmail) to use lessons, tests and groups. A code is sent to your inbox — no password needed.'**
+  String get loginGateBody;
+
+  /// Required sign-in button.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in with e-mail / Gmail'**
+  String get loginGateButton;
+
+  /// Required sign-in, backend not reachable.
+  ///
+  /// In en, this message translates to:
+  /// **'No internet or the service is unavailable. Turn on the internet and try again.'**
+  String get loginGateOffline;
+
+  /// Admin: confirm removing a plan — title.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove the plan?'**
+  String get admProRevokeTitle;
+
+  /// Admin: confirm removing a plan — body.
+  ///
+  /// In en, this message translates to:
+  /// **'{email}: the plan and free trial will be removed.'**
+  String admProRevokeBody(String email);
+
+  /// Admin: keep the plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get admProRevokeNo;
 }
 
 class _AppLocalizationsDelegate

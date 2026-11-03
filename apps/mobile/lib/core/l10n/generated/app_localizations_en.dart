@@ -9167,7 +9167,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get classQuizIntro =>
-      'The teacher shows a 6-digit code and QR on the screen. Students join with a nickname and answer each question before the timer ends.';
+      'The teacher shows a 6-digit code and QR on the screen. Students join with their name and answer each question before the timer ends.';
 
   @override
   String get classDemoBanner =>
@@ -9198,11 +9198,11 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get classNickLabel => 'Nickname';
+  String get classNickLabel => 'Name';
 
   @override
   String get classNickHelper =>
-      '2–20 characters. The teacher sees only this nickname — not your name or e-mail.';
+      '2–20 characters. The teacher sees only this name, not your e-mail.';
 
   @override
   String get classScanAction => 'Scan QR';
@@ -9262,14 +9262,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get classPrivacyNote =>
-      'The teacher sees only your name. Finished tests are deleted automatically after 30 days. Offensive names can be reported and removed.';
+      'The teacher sees only this name. Finished tests are deleted automatically after 30 days. Offensive names can be reported and removed.';
 
   @override
   String get classSignInTitle => 'Sign in to join';
 
   @override
   String get classSignInBody =>
-      'Your result is tied to your account on the server. Other students and the teacher only see your nickname.';
+      'Your result is tied to your account on the server. Other students and the teacher only see the name you entered.';
 
   @override
   String get classSignInAction => 'Sign in';
@@ -9334,7 +9334,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String classReportsCount(int count) {
-    return '$count nickname report(s) — review the list';
+    return '$count name report(s) — review the list';
   }
 
   @override
@@ -9517,7 +9517,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get classOptionChosen => 'your choice';
 
   @override
-  String get classReportTitle => 'Report this nickname?';
+  String get classReportTitle => 'Report this name?';
 
   @override
   String classReportBody(String nickname) {
@@ -9528,7 +9528,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get classReportAction => 'Report';
 
   @override
-  String get classReportReason => 'Inappropriate nickname';
+  String get classReportReason => 'Inappropriate name';
 
   @override
   String get classReportSent => 'Report sent. Thank you.';
@@ -9579,14 +9579,14 @@ class AppLocalizationsEn extends AppLocalizations {
   String get classErrFull => 'This test is full.';
 
   @override
-  String get classErrNickLength => 'Nickname must be 2–20 characters.';
+  String get classErrNickLength => 'Name must be 2–20 characters.';
 
   @override
   String get classErrNickChars =>
-      'This nickname contains characters that aren’t allowed.';
+      'This name contains characters that aren’t allowed.';
 
   @override
-  String get classErrNickBlocked => 'Please choose a different nickname.';
+  String get classErrNickBlocked => 'Please enter a different name.';
 
   @override
   String get classErrInvalidSettings =>
@@ -13592,4 +13592,29 @@ class AppLocalizationsEn extends AppLocalizations {
   String oralGroupLeftAt(String time) {
     return 'last: $time';
   }
+
+  @override
+  String get loginGateTitle => 'Sign in first';
+
+  @override
+  String get loginGateBody =>
+      'Sign in with your e-mail (Gmail) to use lessons, tests and groups. A code is sent to your inbox — no password needed.';
+
+  @override
+  String get loginGateButton => 'Sign in with e-mail / Gmail';
+
+  @override
+  String get loginGateOffline =>
+      'No internet or the service is unavailable. Turn on the internet and try again.';
+
+  @override
+  String get admProRevokeTitle => 'Remove the plan?';
+
+  @override
+  String admProRevokeBody(String email) {
+    return '$email: the plan and free trial will be removed.';
+  }
+
+  @override
+  String get admProRevokeNo => 'Cancel';
 }

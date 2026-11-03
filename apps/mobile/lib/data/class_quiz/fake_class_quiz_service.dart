@@ -303,6 +303,18 @@ class FakeClassQuizBackend {
   ClassQuizMe me(String user) =>
       ClassQuizMe(isTeacher: teachers.contains(user));
 
+  /// Barcha foydalanuvchiga: qaysi mavzuda savol bor. Sinov adapterida demo
+  /// mavzu ham kiradi (haqiqiy server demo savollarni chiqarmaydi).
+  ClassResult<List<ClassTopic>> listPracticeTopics() => ClassResult.ok([
+    for (final t in topics)
+      ClassTopic(
+        id: t.id,
+        title: t.title,
+        count: t.questions.length,
+        isDemo: t.isDemo,
+      ),
+  ]);
+
   ClassResult<List<ClassTopic>> listTopics(String user) {
     if (!teachers.contains(user)) {
       return const ClassResult.fail(ClassFailure.forbidden);
@@ -1159,6 +1171,12 @@ class FakeClassQuizService implements ClassQuizService {
   Future<ClassResult<List<ClassTopic>>> topics() async {
     await backend.ensureLoaded();
     return backend.listTopics(userId);
+  }
+
+  @override
+  Future<ClassResult<List<ClassTopic>>> practiceTopics() async {
+    await backend.ensureLoaded();
+    return backend.listPracticeTopics();
   }
 
   @override

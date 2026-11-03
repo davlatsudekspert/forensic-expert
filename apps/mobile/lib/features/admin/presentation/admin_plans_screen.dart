@@ -65,6 +65,29 @@ class _AdminPlansScreenState extends ConsumerState<AdminPlansScreen> {
       setState(() => _message = l.admProInvalid);
       return;
     }
+    // Olib tashlash — qaytarib bo‘lmaydi (bepul sinov ham o‘chadi): tasdiq.
+    if (revoke) {
+      final ok = await showDialog<bool>(
+        context: context,
+        builder: (dc) => AlertDialog(
+          title: Text(l.admProRevokeTitle),
+          content: Text(l.admProRevokeBody(target)),
+          actions: [
+            TextButton(
+              key: const Key('adminPlans.revoke.no'),
+              onPressed: () => Navigator.of(dc).pop(false),
+              child: Text(l.admProRevokeNo),
+            ),
+            FilledButton(
+              key: const Key('adminPlans.revoke.yes'),
+              onPressed: () => Navigator.of(dc).pop(true),
+              child: Text(l.admProRevoke),
+            ),
+          ],
+        ),
+      );
+      if (ok != true || !mounted) return;
+    }
     final customUntil = _custom && !revoke ? _customUntil() : null;
     if (_custom && !revoke && customUntil == null) {
       setState(() => _message = l.admProBadDuration);

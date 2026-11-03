@@ -237,6 +237,31 @@ void main() {
     expect(find.byKey(const Key('lessons.row.a1')), findsNothing);
   });
 
+  testWidgets(
+    'Imtihon rejimi: talaba mavzuni bosadi — shu mavzuning testi ochiladi',
+    (tester) async {
+      final svc = FakeLessonsService(
+        isTeacher: false,
+        demo: false,
+        decks: {
+          'instr-01': {
+            ..._deck('instr-01', 'instr-deck'),
+            'course': 'Apparatlar bilan ishlash',
+          },
+        },
+      );
+      await open(tester, lessons: svc, teacher: false, path: Routes.exam);
+      // Bo‘sh «savol yo‘q» ekrani emas — mavzular ro‘yxati.
+      expect(find.byKey(const Key('exam.empty')), findsNothing);
+      expect(find.byType(LessonsListScreen), findsOneWidget);
+      await tester.tap(find.byKey(const Key('lessons.row.instr-01')));
+      await tester.pumpAndSettle();
+      // Dars (slaydlar) emas — test ekrani.
+      expect(find.byType(LessonViewerScreen), findsNothing);
+      expect(find.byType(LessonsListScreen), findsNothing);
+    },
+  );
+
   testWidgets('ustoz emas: dars ochiladi, ustoz eslatmalari yo‘q', (
     tester,
   ) async {

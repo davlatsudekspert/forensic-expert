@@ -9222,7 +9222,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get classQuizIntro =>
-      'Преподаватель показывает на экране 6-значный код и QR. Студенты входят под псевдонимом и отвечают на каждый вопрос до конца таймера.';
+      'Преподаватель показывает на экране 6-значный код и QR. Студенты входят, указав имя, и отвечают на каждый вопрос до конца таймера.';
 
   @override
   String get classDemoBanner =>
@@ -9253,11 +9253,11 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get classNickLabel => 'Псевдоним';
+  String get classNickLabel => 'Имя';
 
   @override
   String get classNickHelper =>
-      '2–20 символов. Преподаватель видит только этот псевдоним — не ваше имя и не e-mail.';
+      '2–20 символов. Преподаватель видит только это имя, ваш e-mail не виден.';
 
   @override
   String get classScanAction => 'Сканировать QR';
@@ -9316,14 +9316,14 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get classPrivacyNote =>
-      'Преподаватель видит только ваше имя. Завершённые тесты автоматически удаляются через 30 дней. На неприемлемое имя можно пожаловаться, и оно будет удалено.';
+      'Преподаватель видит только это имя. Завершённые тесты автоматически удаляются через 30 дней. На неприемлемое имя можно пожаловаться, и оно будет удалено.';
 
   @override
   String get classSignInTitle => 'Войдите, чтобы присоединиться';
 
   @override
   String get classSignInBody =>
-      'Ваш результат привязан к аккаунту на сервере. Другие студенты и преподаватель видят только ваш псевдоним.';
+      'Ваш результат привязан к аккаунту на сервере. Другие студенты и преподаватель видят только указанное вами имя.';
 
   @override
   String get classSignInAction => 'Войти в аккаунт';
@@ -9388,7 +9388,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String classReportsCount(int count) {
-    return 'Жалоб на псевдонимы: $count — проверьте список';
+    return 'Жалоб на имена: $count — проверьте список';
   }
 
   @override
@@ -9571,7 +9571,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get classOptionChosen => 'ваш выбор';
 
   @override
-  String get classReportTitle => 'Пожаловаться на этот псевдоним?';
+  String get classReportTitle => 'Пожаловаться на это имя?';
 
   @override
   String classReportBody(String nickname) {
@@ -9582,7 +9582,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get classReportAction => 'Пожаловаться';
 
   @override
-  String get classReportReason => 'Неприемлемый псевдоним';
+  String get classReportReason => 'Неприемлемое имя';
 
   @override
   String get classReportSent => 'Жалоба отправлена. Спасибо.';
@@ -9633,13 +9633,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get classErrFull => 'Тест заполнен.';
 
   @override
-  String get classErrNickLength => 'Псевдоним должен содержать 2–20 символов.';
+  String get classErrNickLength => 'Имя должно содержать 2–20 символов.';
 
   @override
-  String get classErrNickChars => 'В псевдониме есть недопустимые символы.';
+  String get classErrNickChars => 'В имени есть недопустимые символы.';
 
   @override
-  String get classErrNickBlocked => 'Выберите другой псевдоним.';
+  String get classErrNickBlocked => 'Введите другое имя.';
 
   @override
   String get classErrInvalidSettings =>
@@ -13649,4 +13649,29 @@ class AppLocalizationsRu extends AppLocalizations {
   String oralGroupLeftAt(String time) {
     return 'последний: $time';
   }
+
+  @override
+  String get loginGateTitle => 'Сначала войдите';
+
+  @override
+  String get loginGateBody =>
+      'Чтобы пользоваться уроками, тестами и группами, войдите по e-mail (Gmail). Код придёт на почту, пароль не нужен.';
+
+  @override
+  String get loginGateButton => 'Войти по e-mail / Gmail';
+
+  @override
+  String get loginGateOffline =>
+      'Нет интернета или сервис недоступен. Включите интернет и попробуйте снова.';
+
+  @override
+  String get admProRevokeTitle => 'Снять тариф?';
+
+  @override
+  String admProRevokeBody(String email) {
+    return '$email: тариф и пробный период будут удалены.';
+  }
+
+  @override
+  String get admProRevokeNo => 'Отмена';
 }

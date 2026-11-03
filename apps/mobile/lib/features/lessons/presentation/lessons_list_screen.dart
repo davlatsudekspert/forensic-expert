@@ -24,7 +24,11 @@ import 'lesson_viewer_screen.dart' show LessonFailureView;
 /// «Darslar» ro‘yxati: qidiruv (server + tezkor mahalliy filtr), kurs
 /// bo‘yicha guruhlar. Ustoz bo‘lmasa server 403 beradi — do‘stona xabar.
 class LessonsListScreen extends ConsumerStatefulWidget {
-  const LessonsListScreen({super.key});
+  const LessonsListScreen({super.key, this.exam = false});
+
+  /// «Imtihon rejimi»: mavzuni bosganda dars emas, shu mavzuning testi
+  /// (`Routes.groupPractice`) ochiladi. Talaba paneli kartasi shu yerga olib boradi.
+  final bool exam;
 
   @override
   ConsumerState<LessonsListScreen> createState() => _LessonsListScreenState();
@@ -104,62 +108,77 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
     }
 
     return Scaffold(
-      appBar: AppBar(title: FeAppBarTitle(l.lessonsTitle)),
+      appBar: AppBar(
+        title: FeAppBarTitle(widget.exam ? l.deskExamTitle : l.lessonsTitle),
+      ),
       body: Column(
         children: [
-          FeContentFrame(
-            child: Padding(
-              padding: const EdgeInsets.only(
-                top: FeSpace.xs,
-                bottom: FeSpace.xs,
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  const ClassDemoBanner(),
-                  TextField(
-                    key: const Key('lessons.search'),
-                    controller: _ctl,
-                    onTapOutside: (_) => FocusScope.of(context).unfocus(),
-                    onChanged: _onChanged,
-                    textInputAction: TextInputAction.search,
-                    decoration: InputDecoration(
-                      hintText: l.lessonsSearchHint,
-                      prefixIcon: const Icon(Icons.search_rounded),
-                      suffixIcon: _typed.isEmpty
-                          ? null
-                          : IconButton(
-                              key: const Key('lessons.searchClear'),
-                              tooltip: l.lessonsSearchClear,
-                              icon: const Icon(Icons.close_rounded),
-                              onPressed: _clear,
-                            ),
-                    ),
+          // Yuqori qism aylantiriladi (katta shrift + kichik ekranda sig‘adi).
+          ConstrainedBox(
+            constraints: BoxConstraints(
+              maxHeight: MediaQuery.sizeOf(context).height * 0.4,
+            ),
+            child: SingleChildScrollView(
+              keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
+              child: FeContentFrame(
+                child: Padding(
+                  padding: const EdgeInsets.only(
+                    top: FeSpace.xs,
+                    bottom: FeSpace.xs,
                   ),
-                  if (!watchIsTeacher(ref))
-                    Padding(
-                      padding: const EdgeInsets.only(top: FeSpace.xs),
-                      child: Text(
-                        l.lessonsOpenNote,
-                        key: const Key('lessons.openNote'),
-                        style: t.bodySmall?.copyWith(color: c.textSecondary),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      const ClassDemoBanner(),
+                      TextField(
+                        key: const Key('lessons.search'),
+                        controller: _ctl,
+                        onTapOutside: (_) => FocusScope.of(context).unfocus(),
+                        onChanged: _onChanged,
+                        textInputAction: TextInputAction.search,
+                        decoration: InputDecoration(
+                          hintText: l.lessonsSearchHint,
+                          prefixIcon: const Icon(Icons.search_rounded),
+                          suffixIcon: _typed.isEmpty
+                              ? null
+                              : IconButton(
+                                  key: const Key('lessons.searchClear'),
+                                  tooltip: l.lessonsSearchClear,
+                                  icon: const Icon(Icons.close_rounded),
+                                  onPressed: _clear,
+                                ),
+                        ),
                       ),
-                    ),
-                  if (lang != 'uz')
-                    Padding(
-                      padding: const EdgeInsets.only(top: FeSpace.xs),
-                      child: Text(
-                        l.lessonsOriginalUzNote,
-                        key: const Key('lessons.uzNote'),
-                        style: t.bodySmall?.copyWith(color: c.textSecondary),
-                      ),
-                    ),
-                  if (searching)
-                    const Padding(
-                      padding: EdgeInsets.only(top: FeSpace.xs),
-                      child: LinearProgressIndicator(minHeight: 2),
-                    ),
-                ],
+                      if (!watchIsTeacher(ref))
+                        Padding(
+                          padding: const EdgeInsets.only(top: FeSpace.xs),
+                          child: Text(
+                            l.lessonsOpenNote,
+                            key: const Key('lessons.openNote'),
+                            style: t.bodySmall?.copyWith(
+                              color: c.textSecondary,
+                            ),
+                          ),
+                        ),
+                      if (lang != 'uz')
+                        Padding(
+                          padding: const EdgeInsets.only(top: FeSpace.xs),
+                          child: Text(
+                            l.lessonsOriginalUzNote,
+                            key: const Key('lessons.uzNote'),
+                            style: t.bodySmall?.copyWith(
+                              color: c.textSecondary,
+                            ),
+                          ),
+                        ),
+                      if (searching)
+                        const Padding(
+                          padding: EdgeInsets.only(top: FeSpace.xs),
+                          child: LinearProgressIndicator(minHeight: 2),
+                        ),
+                    ],
+                  ),
+                ),
               ),
             ),
           ),
@@ -224,12 +243,17 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
       );
     }
     if (items.isEmpty) {
-      return Center(
-        child: FeEmptyState(
-          key: const Key('lessons.empty'),
-          icon: Icons.slideshow_rounded,
-          body: _typed.isEmpty ? l.lessonsEmpty : l.lessonsNoMatch(_typed),
-        ),
+      // Aylantiriladi: kichik ekran + katta shriftda yozuv sig‘ishi uchun.
+      return ListView(
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
+        padding: const EdgeInsets.symmetric(vertical: FeSpace.xl),
+        children: [
+          FeEmptyState(
+            key: const Key('lessons.empty'),
+            icon: Icons.slideshow_rounded,
+            body: _typed.isEmpty ? l.lessonsEmpty : l.lessonsNoMatch(_typed),
+          ),
+        ],
       );
     }
     final groups = LessonGrouping.group(items);
@@ -255,7 +279,12 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
               for (final g in groups) ...[
                 _CourseHeader(g.course),
                 for (final (i, s) in g.items.indexed)
-                  _LessonRow(summary: s, number: i + 1, lock: locks[s.topicId]),
+                  _LessonRow(
+                    summary: s,
+                    number: i + 1,
+                    lock: locks[s.topicId],
+                    exam: widget.exam,
+                  ),
               ],
             ],
           ),
@@ -310,7 +339,12 @@ class _CourseChip extends StatelessWidget {
 }
 
 class _LessonRow extends StatelessWidget {
-  const _LessonRow({required this.summary, this.number, this.lock});
+  const _LessonRow({
+    required this.summary,
+    this.number,
+    this.lock,
+    this.exam = false,
+  });
 
   final LessonSummary summary;
 
@@ -319,6 +353,9 @@ class _LessonRow extends StatelessWidget {
 
   /// Qulf sababi (`null` — ochiq).
   final ProFeature? lock;
+
+  /// Imtihon rejimi: bosilganda shu mavzuning testi ochiladi.
+  final bool exam;
 
   @override
   Widget build(BuildContext context) {
@@ -336,9 +373,11 @@ class _LessonRow extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: FeSpace.xs),
       child: FeCard(
         key: Key('lessons.row.${summary.topicId}'),
-        onTap: () => lock == null
-            ? context.push(Routes.lesson(summary.topicId))
-            : openPro(context, lock!.requiredPlan),
+        onTap: () => lock != null
+            ? openPro(context, lock!.requiredPlan)
+            : exam
+            ? context.push(Routes.groupPractice(summary.topicId))
+            : context.push(Routes.lesson(summary.topicId)),
         semanticLabel: '${summary.title}. $count',
         padding: const EdgeInsets.symmetric(
           horizontal: FeSpace.md,

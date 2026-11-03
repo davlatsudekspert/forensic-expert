@@ -93,6 +93,12 @@ void main() {
     );
     expect(find.byKey(const Key('adminPlans.row.ali@lab.uz')), findsOneWidget);
     await tapKey(tester, 'adminPlans.remove.ali@lab.uz');
+    // Tasdiq oynasi: «Bekor qilish» hech narsani o‘zgartirmaydi.
+    expect(svc.calls, isNot(contains('set:ali@lab.uz:null')));
+    await tapKey(tester, 'adminPlans.revoke.no');
+    expect(svc.calls, isNot(contains('set:ali@lab.uz:null')));
+    await tapKey(tester, 'adminPlans.remove.ali@lab.uz');
+    await tapKey(tester, 'adminPlans.revoke.yes');
     expect(svc.calls, contains('set:ali@lab.uz:null'));
     expect(find.text('Reja olib tashlandi.'), findsOneWidget);
     expect(find.byKey(const Key('adminPlans.row.ali@lab.uz')), findsNothing);

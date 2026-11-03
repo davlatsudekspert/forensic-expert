@@ -6,6 +6,7 @@ import 'package:android_id/android_id.dart';
 import 'package:crypto/crypto.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/widgets.dart' show AppLifecycleListener;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../core/settings/app_settings.dart';
@@ -84,6 +85,14 @@ class EntitlementsNotifier extends AsyncNotifier<Entitlements> {
 
   @override
   Future<Entitlements> build() async {
+    // Admin reja bergach foydalanuvchi ilovani qayta ishga tushirmasdan
+    // ko‘rsin: ilova fondan qaytganda reja qayta o‘qiladi.
+    final life = AppLifecycleListener(
+      onResume: () {
+        if (ref.mounted) ref.invalidateSelf();
+      },
+    );
+    ref.onDispose(life.dispose);
     final auth = ref.watch(authStateProvider);
     if (!auth.signedIn) {
       _last = null;

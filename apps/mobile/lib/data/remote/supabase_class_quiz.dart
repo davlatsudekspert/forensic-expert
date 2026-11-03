@@ -121,6 +121,15 @@ class SupabaseClassQuizService implements ClassQuizService {
   );
 
   @override
+  Future<ClassResult<List<ClassTopic>>> practiceTopics() async => _map(
+    await _rpc('class_practice_topics', const {}),
+    (m) => [
+      for (final t in (m['items'] as List? ?? const []))
+        ClassTopic.fromJson((t as Map).cast<String, Object?>()),
+    ],
+  );
+
+  @override
   Future<ClassResult<ClassSessionInfo>> createSession({
     required String topicId,
     required ClassQuizSettings settings,

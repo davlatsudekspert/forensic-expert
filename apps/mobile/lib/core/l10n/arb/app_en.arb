@@ -11821,7 +11821,7 @@
   "@classQuizCardSubtitle": {
     "description": "Study hub card subtitle."
   },
-  "classQuizIntro": "The teacher shows a 6-digit code and QR on the screen. Students join with a nickname and answer each question before the timer ends.",
+  "classQuizIntro": "The teacher shows a 6-digit code and QR on the screen. Students join with their name and answer each question before the timer ends.",
   "@classQuizIntro": {
     "description": "Hub intro."
   },
@@ -11862,11 +11862,11 @@
       }
     }
   },
-  "classNickLabel": "Nickname",
+  "classNickLabel": "Name",
   "@classNickLabel": {
     "description": "Field label."
   },
-  "classNickHelper": "2–20 characters. The teacher sees only this nickname — not your name or e-mail.",
+  "classNickHelper": "2–20 characters. The teacher sees only this name, not your e-mail.",
   "@classNickHelper": {
     "description": "Helper."
   },
@@ -11947,7 +11947,7 @@
   "@classStatusFinished": {
     "description": "Status."
   },
-  "classPrivacyNote": "The teacher sees only your name. Finished tests are deleted automatically after 30 days. Offensive names can be reported and removed.",
+  "classPrivacyNote": "The teacher sees only this name. Finished tests are deleted automatically after 30 days. Offensive names can be reported and removed.",
   "@classPrivacyNote": {
     "description": "Privacy note."
   },
@@ -11955,7 +11955,7 @@
   "@classSignInTitle": {
     "description": "Sign-in card."
   },
-  "classSignInBody": "Your result is tied to your account on the server. Other students and the teacher only see your nickname.",
+  "classSignInBody": "Your result is tied to your account on the server. Other students and the teacher only see the name you entered.",
   "@classSignInBody": {
     "description": "Sign-in body."
   },
@@ -12050,7 +12050,7 @@
   "@classWaitingForStudents": {
     "description": "Empty lobby."
   },
-  "classReportsCount": "{count} nickname report(s) — review the list",
+  "classReportsCount": "{count} name report(s) — review the list",
   "@classReportsCount": {
     "description": "Reports.",
     "placeholders": {
@@ -12351,7 +12351,7 @@
   "@classOptionChosen": {
     "description": "Option tag."
   },
-  "classReportTitle": "Report this nickname?",
+  "classReportTitle": "Report this name?",
   "@classReportTitle": {
     "description": "Dialog."
   },
@@ -12368,7 +12368,7 @@
   "@classReportAction": {
     "description": "Button."
   },
-  "classReportReason": "Inappropriate nickname",
+  "classReportReason": "Inappropriate name",
   "@classReportReason": {
     "description": "Report reason sent to the server."
   },
@@ -12428,15 +12428,15 @@
   "@classErrFull": {
     "description": "Error."
   },
-  "classErrNickLength": "Nickname must be 2–20 characters.",
+  "classErrNickLength": "Name must be 2–20 characters.",
   "@classErrNickLength": {
     "description": "Error."
   },
-  "classErrNickChars": "This nickname contains characters that aren’t allowed.",
+  "classErrNickChars": "This name contains characters that aren’t allowed.",
   "@classErrNickChars": {
     "description": "Error."
   },
-  "classErrNickBlocked": "Please choose a different nickname.",
+  "classErrNickBlocked": "Please enter a different name.",
   "@classErrNickBlocked": {
     "description": "Error."
   },
@@ -17862,5 +17862,38 @@
         "type": "String"
       }
     }
+  },
+  "loginGateTitle": "Sign in first",
+  "@loginGateTitle": {
+    "description": "Required sign-in screen title."
+  },
+  "loginGateBody": "Sign in with your e-mail (Gmail) to use lessons, tests and groups. A code is sent to your inbox — no password needed.",
+  "@loginGateBody": {
+    "description": "Required sign-in screen explanation."
+  },
+  "loginGateButton": "Sign in with e-mail / Gmail",
+  "@loginGateButton": {
+    "description": "Required sign-in button."
+  },
+  "loginGateOffline": "No internet or the service is unavailable. Turn on the internet and try again.",
+  "@loginGateOffline": {
+    "description": "Required sign-in, backend not reachable."
+  },
+  "admProRevokeTitle": "Remove the plan?",
+  "@admProRevokeTitle": {
+    "description": "Admin: confirm removing a plan — title."
+  },
+  "admProRevokeBody": "{email}: the plan and free trial will be removed.",
+  "@admProRevokeBody": {
+    "description": "Admin: confirm removing a plan — body.",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "admProRevokeNo": "Cancel",
+  "@admProRevokeNo": {
+    "description": "Admin: keep the plan."
   }
 }

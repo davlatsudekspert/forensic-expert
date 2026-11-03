@@ -9129,7 +9129,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get classQuizIntro =>
-      'Ustoz ekranda 6 xonali kod va QR ko‘rsatadi. Talabalar laqab bilan qo‘shiladi va har bir savolga vaqt tugaguncha javob beradi.';
+      'Ustoz ekranda 6 xonali kod va QR ko‘rsatadi. Talabalar ismini yozib qo‘shiladi va har bir savolga vaqt tugaguncha javob beradi.';
 
   @override
   String get classDemoBanner =>
@@ -9160,11 +9160,11 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String get classNickLabel => 'Laqab';
+  String get classNickLabel => 'Ism';
 
   @override
   String get classNickHelper =>
-      '2–20 belgi. Ustozga faqat shu laqab ko‘rinadi — ismingiz va elektron pochtangiz emas.';
+      '2–20 belgi. Ustoz faqat shu ismni ko‘radi, elektron pochtangiz ko‘rinmaydi.';
 
   @override
   String get classScanAction => 'QR skanerlash';
@@ -9223,14 +9223,14 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get classPrivacyNote =>
-      'Ustoz faqat laqabingizni ko‘radi. Tugagan testlar 30 kundan keyin avtomatik o‘chiriladi. Nomaqbul laqabga shikoyat qilish mumkin, u olib tashlanadi.';
+      'Ustoz faqat shu ismni ko‘radi. Tugagan testlar 30 kundan keyin avtomatik o‘chiriladi. Nomaqbul ismga shikoyat qilish mumkin, u olib tashlanadi.';
 
   @override
   String get classSignInTitle => 'Qo‘shilish uchun hisobga kiring';
 
   @override
   String get classSignInBody =>
-      'Natijangiz serverda hisobingizga bog‘lanadi. Boshqa talabalar va ustoz faqat laqabingizni ko‘radi.';
+      'Natijangiz serverda hisobingizga bog‘lanadi. Boshqa talabalar va ustoz faqat yozgan ismingizni ko‘radi.';
 
   @override
   String get classSignInAction => 'Hisobga kirish';
@@ -9295,7 +9295,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String classReportsCount(int count) {
-    return 'Laqabga shikoyatlar: $count — ro‘yxatni tekshiring';
+    return 'Ismga shikoyatlar: $count — ro‘yxatni tekshiring';
   }
 
   @override
@@ -9478,7 +9478,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get classOptionChosen => 'sizning tanlovingiz';
 
   @override
-  String get classReportTitle => 'Bu laqabga shikoyat qilinsinmi?';
+  String get classReportTitle => 'Bu ismga shikoyat qilinsinmi?';
 
   @override
   String classReportBody(String nickname) {
@@ -9489,7 +9489,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get classReportAction => 'Shikoyat qilish';
 
   @override
-  String get classReportReason => 'Nomaqbul laqab';
+  String get classReportReason => 'Nomaqbul ism';
 
   @override
   String get classReportSent => 'Shikoyat yuborildi. Rahmat.';
@@ -9541,13 +9541,13 @@ class AppLocalizationsUz extends AppLocalizations {
   String get classErrFull => 'Test to‘lgan.';
 
   @override
-  String get classErrNickLength => 'Laqab 2–20 belgidan iborat bo‘lishi kerak.';
+  String get classErrNickLength => 'Ism 2–20 belgidan iborat bo‘lishi kerak.';
 
   @override
-  String get classErrNickChars => 'Laqabda ruxsat etilmagan belgilar bor.';
+  String get classErrNickChars => 'Ismda ruxsat etilmagan belgilar bor.';
 
   @override
-  String get classErrNickBlocked => 'Boshqa laqab tanlang.';
+  String get classErrNickBlocked => 'Boshqa ism yozing.';
 
   @override
   String get classErrInvalidSettings =>
@@ -13524,4 +13524,29 @@ class AppLocalizationsUz extends AppLocalizations {
   String oralGroupLeftAt(String time) {
     return 'oxirgisi: $time';
   }
+
+  @override
+  String get loginGateTitle => 'Avval kiring';
+
+  @override
+  String get loginGateBody =>
+      'Darslar, testlar va guruhlardan foydalanish uchun Gmail (elektron pochta) bilan kiring. Kod pochtangizga yuboriladi, parol kerak emas.';
+
+  @override
+  String get loginGateButton => 'Gmail / email bilan kirish';
+
+  @override
+  String get loginGateOffline =>
+      'Internet yo‘q yoki xizmat ulanmagan. Internetni yoqib, qayta urinib ko‘ring.';
+
+  @override
+  String get admProRevokeTitle => 'Rejani olib tashlaysizmi?';
+
+  @override
+  String admProRevokeBody(String email) {
+    return '$email: reja va bepul sinov muddati o‘chadi.';
+  }
+
+  @override
+  String get admProRevokeNo => 'Bekor qilish';
 }

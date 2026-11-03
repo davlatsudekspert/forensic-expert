@@ -196,7 +196,7 @@ void main() {
       final lines = build().trim().split('\r\n');
       expect(
         lines.first,
-        'Laqab,Reyting ochkosi,To‘g‘ri javoblar,O‘rtacha javob vaqti (soniya),Ball (100),Baho',
+        'Ism,Reyting ochkosi,To‘g‘ri javoblar,O‘rtacha javob vaqti (soniya),Ball (100),Baho',
       );
       expect(lines.first, ClassResultsCsv.header);
       // 2/2 → 100.0 → 5 (tezlik balli 1800 o‘zgarmaydi).

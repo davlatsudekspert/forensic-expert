@@ -60,6 +60,7 @@ import 'class_groups.dart';
 import 'class_quiz.dart';
 import 'court_prep.dart';
 import 'lessons.dart';
+import 'login_gate.dart';
 import 'moderation.dart';
 import 'oral_group.dart';
 import 'plan.dart';
@@ -110,11 +111,25 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
   // Professional tasdiqlash / taqriz — Supabase sozlangan bo‘lsagina.
   final supabase = SupabaseConfig.fromEnvironment();
 
+  // Majburiy kirish: saqlangan sessiya bormi — birinchi kadrdan OLDIN
+  // aniqlanadi va (tarmoq bilan, 3 soniyagacha) tiklanadi, aks holda kirgan
+  // foydalanuvchi bir lahza kirish ekranini ko‘radi.
+  var hadSession = false;
+  if (kRequireLogin && auth.isConfigured && !auth.isTestBackend) {
+    hadSession = await SecureSessionStore().read() != null;
+    if (hadSession) {
+      await auth.restoreSession().timeout(
+        const Duration(seconds: 3),
+        onTimeout: () {},
+      );
+    }
+  }
+
   SchedulerBinding.instance.addPostFrameCallback((_) {
     metrics.mark(PerfMarks.firstFrame);
     // Sessiyani tiklash birinchi kadrdan keyin (tarmoq startup’ni
     // to‘xtatmaydi; oflayn ilmiy funksiyalar bunga bog‘liq emas).
-    unawaited(auth.restoreSession());
+    if (!hadSession) unawaited(auth.restoreSession());
   });
 
   runApp(
@@ -127,6 +142,7 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
         profileStoreProvider.overrideWithValue(profileStore),
         initialProfileProvider.overrideWithValue(profile),
         authRepositoryProvider.overrideWithValue(auth),
+        hadSavedSessionProvider.overrideWithValue(hadSession),
         // Kutilayotgan taklif kodi (deep link) — faqat lokal.
         pendingReferralStoreProvider.overrideWithValue(
           SharedPrefsPendingReferralStore(prefs),

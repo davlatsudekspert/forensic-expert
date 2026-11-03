@@ -106,6 +106,12 @@ final classTopicsProvider =
       (ref) => ref.watch(classQuizServiceProvider).topics(),
     );
 
+/// Savoli bor mavzular — talaba ham o‘qiy oladi (dars oxiridagi test tugmasi).
+final classPracticeTopicsProvider =
+    FutureProvider.autoDispose<ClassResult<List<ClassTopic>>>(
+      (ref) => ref.watch(classQuizServiceProvider).practiceTopics(),
+    );
+
 final classMySessionsProvider =
     FutureProvider.autoDispose<ClassResult<List<ClassSessionInfo>>>(
       (ref) => ref.watch(classQuizServiceProvider).mySessions(),
