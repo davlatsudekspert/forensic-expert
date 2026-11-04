@@ -108,9 +108,14 @@ class _SocialSignInButtonsState extends ConsumerState<SocialSignInButtons> {
                   key: const Key('social.apple'),
                   text: l.socialContinueApple,
                   height: 52,
+                  // Ilova tugmalari bilan bir xil radius; yorug‘ rejimda oq
+                  // chegarali uslub (Apple HIG ruxsat etgan), Google tugmasi
+                  // bilan bir juft bo‘lib, qora massiv ilova ranglaridan
+                  // ajralib turmaydi.
+                  borderRadius: BorderRadius.circular(FeRadius.md),
                   style: dark
                       ? SignInWithAppleButtonStyle.white
-                      : SignInWithAppleButtonStyle.black,
+                      : SignInWithAppleButtonStyle.whiteOutlined,
                   onPressed: enabled
                       ? () => _start(SocialProvider.apple)
                       : null,
@@ -174,7 +179,7 @@ class _GoogleButton extends StatelessWidget {
             disabledBackgroundColor: bg.withValues(alpha: 0.6),
             side: BorderSide(color: border),
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(8),
+              borderRadius: BorderRadius.circular(FeRadius.md),
             ),
             minimumSize: const Size.fromHeight(52),
           ),
