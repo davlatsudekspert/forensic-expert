@@ -32,18 +32,8 @@ class FakeAdminInstituteService implements AdminInstituteService {
     _details[id] = InstituteDetail(
       id: id,
       name: draft.name.trim(),
-      address: draft.address,
-      stir: draft.stir,
-      bank: draft.bank,
-      account: draft.account,
-      mfo: draft.mfo,
-      director: draft.director,
-      phone: draft.phone,
-      contractNo: draft.contractNo,
-      contractDate: draft.contractDate,
       seats: draft.seats,
       months: draft.months,
-      pricePerSeat: draft.pricePerSeat,
       termStart: start,
       termEnd: DateTime(start.year, start.month + draft.months, start.day),
     );
@@ -78,8 +68,6 @@ class FakeAdminInstituteService implements AdminInstituteService {
           revoked: _codes[d.id]!.where((c) => c.revoked).length,
           termStart: d.termStart,
           termEnd: d.termEnd,
-          contractNo: d.contractNo,
-          pricePerSeat: d.pricePerSeat,
         ),
     ]);
   }

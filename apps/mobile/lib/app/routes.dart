@@ -208,7 +208,6 @@ abstract final class Routes {
   static const adminInstitutes = '/profile/admin/institutes';
   static const adminInstituteNew = '/profile/admin/institutes/new';
   static const adminGiftCodes = '/profile/admin/institutes/gift';
-  static const adminLicensor = '/profile/admin/institutes/licensor';
   static String adminInstitute(String id) =>
       '/profile/admin/institutes/${Uri.encodeComponent(id)}';
 

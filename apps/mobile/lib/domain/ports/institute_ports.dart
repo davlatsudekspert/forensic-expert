@@ -61,22 +61,3 @@ class UnconfiguredAdminInstituteService implements AdminInstituteService {
   Future<PlanResult<bool>> revokeCode(String code) async =>
       const PlanResult.fail(PlanFailure.notConfigured);
 }
-
-/// Litsenziar rekvizitlari saqlovi (admin qurilmasida; serverga ketmaydi).
-abstract interface class LicensorProfileStore {
-  LicensorProfile load();
-
-  Future<void> save(LicensorProfile profile);
-}
-
-class InMemoryLicensorProfileStore implements LicensorProfileStore {
-  InMemoryLicensorProfileStore([this._p = LicensorProfile.empty]);
-
-  LicensorProfile _p;
-
-  @override
-  LicensorProfile load() => _p;
-
-  @override
-  Future<void> save(LicensorProfile profile) async => _p = profile;
-}

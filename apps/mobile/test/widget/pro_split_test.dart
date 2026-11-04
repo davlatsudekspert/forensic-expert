@@ -496,7 +496,10 @@ void main() {
         overrides: [..._strict(true).cast()],
       );
       // Moddalar bo‘limi endi bepul (egasi qarori, 2026-11-04); faqat «Usullar» Pro.
-      expect(find.byKey(const Key('library.hub.substances.lock')), findsNothing);
+      expect(
+        find.byKey(const Key('library.hub.substances.lock')),
+        findsNothing,
+      );
       expect(find.byKey(const Key('library.hub.specimens.lock')), findsNothing);
       expect(find.byKey(const Key('library.hub.terms.lock')), findsNothing);
       expect(

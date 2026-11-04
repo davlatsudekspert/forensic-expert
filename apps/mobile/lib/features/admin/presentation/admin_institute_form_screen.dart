@@ -14,16 +14,8 @@ import '../../../domain/admin/institute_models.dart';
 import 'admin_codes_widgets.dart';
 import 'admin_gate.dart';
 
-/// Matn maydonidagi son: bo‘shliq/vergul tashlanadi; noto‘g‘ri — `null`.
-num? parseAmount(String raw) {
-  final s = raw.trim().replaceAll(RegExp(r'\s'), '').replaceAll(',', '.');
-  if (s.isEmpty) return null;
-  final v = num.tryParse(s);
-  return v == null || v < 0 ? null : v;
-}
-
-/// «Yangi institut» formasi: rekvizitlar + o‘rin/oy/narx; jami summa
-/// (o‘rinlar × oylar × narx) avtomatik ko‘rsatiladi. Saqlangach kodlar chiqadi.
+/// «Yangi tashkilot» formasi: nom, o‘rinlar, muddat (oy), boshlanish sanasi.
+/// Saqlangach promokodlar chiqadi.
 class AdminInstituteFormScreen extends ConsumerStatefulWidget {
   const AdminInstituteFormScreen({super.key});
 
@@ -35,18 +27,8 @@ class AdminInstituteFormScreen extends ConsumerStatefulWidget {
 class _AdminInstituteFormScreenState
     extends ConsumerState<AdminInstituteFormScreen> {
   final _name = TextEditingController();
-  final _address = TextEditingController();
-  final _stir = TextEditingController();
-  final _bank = TextEditingController();
-  final _account = TextEditingController();
-  final _mfo = TextEditingController();
-  final _director = TextEditingController();
-  final _phone = TextEditingController();
-  final _contractNo = TextEditingController();
   final _seats = TextEditingController();
   final _months = TextEditingController();
-  final _price = TextEditingController();
-  DateTime? _contractDate;
   DateTime? _termStart;
   bool _busy = false;
   String? _error;
@@ -54,20 +36,7 @@ class _AdminInstituteFormScreenState
 
   @override
   void dispose() {
-    for (final c in [
-      _name,
-      _address,
-      _stir,
-      _bank,
-      _account,
-      _mfo,
-      _director,
-      _phone,
-      _contractNo,
-      _seats,
-      _months,
-      _price,
-    ]) {
+    for (final c in [_name, _seats, _months]) {
       c.dispose();
     }
     super.dispose();
@@ -75,18 +44,8 @@ class _AdminInstituteFormScreenState
 
   InstituteDraft _draft() => InstituteDraft(
     name: _name.text.trim(),
-    address: _address.text.trim(),
-    stir: _stir.text.trim(),
-    bank: _bank.text.trim(),
-    account: _account.text.trim(),
-    mfo: _mfo.text.trim(),
-    director: _director.text.trim(),
-    phone: _phone.text.trim(),
-    contractNo: _contractNo.text.trim(),
-    contractDate: _contractDate,
     seats: int.tryParse(_seats.text.trim()) ?? 0,
     months: int.tryParse(_months.text.trim()) ?? 0,
-    pricePerSeat: parseAmount(_price.text) ?? 0,
     termStart: _termStart,
   );
 
@@ -167,7 +126,6 @@ class _AdminInstituteFormScreenState
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
-    final d = _draft();
     final issued = _issued;
     return AdminGate(
       child: Scaffold(
@@ -200,7 +158,7 @@ class _AdminInstituteFormScreenState
                           onPressed: () => context.pushReplacement(
                             Routes.adminInstitute(issued.instituteId!),
                           ),
-                          child: Text(l.instPdf),
+                          child: Text(l.instOpen),
                         ),
                     ] else ...[
                       _field(
@@ -208,40 +166,6 @@ class _AdminInstituteFormScreenState
                         _name,
                         l.instFName,
                         onChanged: (_) => setState(() {}),
-                      ),
-                      _field('address', _address, l.instFAddress),
-                      _field(
-                        'stir',
-                        _stir,
-                        l.instFStir,
-                        type: TextInputType.number,
-                      ),
-                      _field('bank', _bank, l.instFBank),
-                      _field(
-                        'account',
-                        _account,
-                        l.instFAccount,
-                        type: TextInputType.number,
-                      ),
-                      _field(
-                        'mfo',
-                        _mfo,
-                        l.instFMfo,
-                        type: TextInputType.number,
-                      ),
-                      _field('director', _director, l.instFDirector),
-                      _field(
-                        'phone',
-                        _phone,
-                        l.instFPhone,
-                        type: TextInputType.phone,
-                      ),
-                      _field('contractNo', _contractNo, l.instFContractNo),
-                      _dateButton(
-                        'contractDate',
-                        l.instFContractDate,
-                        _contractDate,
-                        (v) => setState(() => _contractDate = v),
                       ),
                       _field(
                         'seats',
@@ -257,30 +181,11 @@ class _AdminInstituteFormScreenState
                         type: TextInputType.number,
                         onChanged: (_) => setState(() {}),
                       ),
-                      _field(
-                        'price',
-                        _price,
-                        l.instFPrice,
-                        type: const TextInputType.numberWithOptions(
-                          decimal: true,
-                        ),
-                        onChanged: (_) => setState(() {}),
-                      ),
                       _dateButton(
                         'termStart',
                         l.instFTermStart,
                         _termStart,
                         (v) => setState(() => _termStart = v),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(
-                          vertical: FeSpace.xs,
-                        ),
-                        child: Text(
-                          l.instFTotal(formatSom(d.total)),
-                          key: const Key('adminInstForm.total'),
-                          style: t.titleSmall,
-                        ),
                       ),
                       FilledButton(
                         key: const Key('adminInstForm.save'),

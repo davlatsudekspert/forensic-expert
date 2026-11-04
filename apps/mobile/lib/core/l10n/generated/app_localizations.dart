@@ -23613,28 +23613,28 @@ abstract class AppLocalizations {
   /// **'Delete'**
   String get grpDeleteYes;
 
-  /// Profile row + screen title: institute code / promo code.
+  /// Profile row + screen title: promo code.
   ///
   /// In en, this message translates to:
-  /// **'Institute code / promo code'**
+  /// **'Promo code'**
   String get promoRowTitle;
 
   /// Profile row hint when no code is active.
   ///
   /// In en, this message translates to:
-  /// **'A code from a teacher or an institute'**
+  /// **'The promo code you were given'**
   String get promoRowHint;
 
-  /// Promo screen intro (not a payment).
+  /// Promo screen intro.
   ///
   /// In en, this message translates to:
-  /// **'Enter the code given by an institute or a teacher. This is not a payment: the code unlocks teacher features on your account.'**
+  /// **'Enter the promo code you were given. The promo code unlocks teacher features on your account.'**
   String get promoIntro;
 
   /// Promo code field label.
   ///
   /// In en, this message translates to:
-  /// **'Code'**
+  /// **'Promo code'**
   String get promoFieldLabel;
 
   /// Promo code field hint (spaces and dashes are ignored).
@@ -23649,40 +23649,40 @@ abstract class AppLocalizations {
   /// **'Activate'**
   String get promoSubmit;
 
-  /// Promo screen: empty code.
+  /// Promo result text.
   ///
   /// In en, this message translates to:
-  /// **'Enter the code.'**
+  /// **'Enter the promo code.'**
   String get promoEmpty;
 
-  /// Promo result INVALID.
+  /// Promo result text.
   ///
   /// In en, this message translates to:
-  /// **'The code is incorrect'**
+  /// **'The promo code is incorrect'**
   String get promoInvalid;
 
-  /// Promo result USED.
+  /// Promo result text.
   ///
   /// In en, this message translates to:
-  /// **'The code has already been used'**
+  /// **'The promo code has already been used'**
   String get promoUsed;
 
-  /// Promo result ALREADY_YOURS.
+  /// Promo result text.
   ///
   /// In en, this message translates to:
-  /// **'This code is already active on your account.'**
+  /// **'This promo code is already active on your account.'**
   String get promoAlreadyYours;
 
-  /// Promo result EXPIRED.
+  /// Promo result text.
   ///
   /// In en, this message translates to:
-  /// **'The code has expired'**
+  /// **'The promo code has expired'**
   String get promoExpired;
 
-  /// Promo result REVOKED.
+  /// Promo result text.
   ///
   /// In en, this message translates to:
-  /// **'The code has been revoked'**
+  /// **'The promo code has been revoked'**
   String get promoRevoked;
 
   /// Promo result TOO_MANY.
@@ -23697,34 +23697,34 @@ abstract class AppLocalizations {
   /// **'Please sign in first.'**
   String get promoNotSigned;
 
-  /// Promo: no connection.
+  /// Promo result text.
   ///
   /// In en, this message translates to:
   /// **'No connection. Check your network and try again.'**
   String get promoOffline;
 
-  /// Promo: server error.
+  /// Promo result text.
   ///
   /// In en, this message translates to:
-  /// **'Could not check the code. Please try again later.'**
+  /// **'Could not check the promo code. Please try again later.'**
   String get promoError;
 
-  /// Promo OK: {plan} unlocked, {label} is the server label, {date} the end date.
+  /// Promo OK: {label} is the name or gift label, {date} the end date.
   ///
   /// In en, this message translates to:
-  /// **'{plan} unlocked: {label}, until {date}'**
-  String promoOk(String plan, String label, String date);
+  /// **'Promo code accepted: {label}, until {date}'**
+  String promoOk(String label, String date);
 
   /// Promo OK without label/date.
   ///
   /// In en, this message translates to:
-  /// **'{plan} unlocked'**
-  String promoOkShort(String plan);
+  /// **'Promo code accepted'**
+  String get promoOkShort;
 
-  /// Profile: institute that gave access.
+  /// Profile: name of the issuing body, no prefix.
   ///
   /// In en, this message translates to:
-  /// **'Institute: {name}'**
+  /// **'{name}'**
   String promoLabelInstitute(String name);
 
   /// Profile: gift giver.
@@ -23793,22 +23793,22 @@ abstract class AppLocalizations {
   /// **'Still no free slot. Remove another device.'**
   String get devLimitStillFull;
 
-  /// Admin: institutes section title.
+  /// Admin: organizations section title.
   ///
   /// In en, this message translates to:
-  /// **'Institutes'**
+  /// **'Organizations'**
   String get instNavTitle;
 
-  /// Admin: institutes tile hint.
+  /// Admin: organizations tile hint.
   ///
   /// In en, this message translates to:
-  /// **'Licence codes, contract PDF'**
+  /// **'Organizations and promo codes'**
   String get instNavHint;
 
-  /// Admin: new institute.
+  /// Admin: new organization.
   ///
   /// In en, this message translates to:
-  /// **'New institute'**
+  /// **'New organization'**
   String get instNew;
 
   /// Admin: gift promo codes.
@@ -23817,16 +23817,10 @@ abstract class AppLocalizations {
   /// **'Gift promo code'**
   String get instGift;
 
-  /// Admin: licensor details.
+  /// Admin: no organizations.
   ///
   /// In en, this message translates to:
-  /// **'Licensor details'**
-  String get instLicensor;
-
-  /// Admin: no institutes.
-  ///
-  /// In en, this message translates to:
-  /// **'No institutes yet.'**
+  /// **'No organizations yet.'**
   String get instEmpty;
 
   /// Admin: load failed.
@@ -23847,65 +23841,11 @@ abstract class AppLocalizations {
   /// **'until {date}'**
   String instRowUntil(String date);
 
-  /// Form: institute name.
+  /// Form: organization name.
   ///
   /// In en, this message translates to:
-  /// **'Name'**
+  /// **'Organization name'**
   String get instFName;
-
-  /// Form: address.
-  ///
-  /// In en, this message translates to:
-  /// **'Address'**
-  String get instFAddress;
-
-  /// Form: tax ID (STIR).
-  ///
-  /// In en, this message translates to:
-  /// **'Tax ID (STIR)'**
-  String get instFStir;
-
-  /// Form: bank.
-  ///
-  /// In en, this message translates to:
-  /// **'Bank'**
-  String get instFBank;
-
-  /// Form: account number.
-  ///
-  /// In en, this message translates to:
-  /// **'Account number'**
-  String get instFAccount;
-
-  /// Form: MFO.
-  ///
-  /// In en, this message translates to:
-  /// **'MFO'**
-  String get instFMfo;
-
-  /// Form: director.
-  ///
-  /// In en, this message translates to:
-  /// **'Director (full name)'**
-  String get instFDirector;
-
-  /// Form: phone.
-  ///
-  /// In en, this message translates to:
-  /// **'Phone'**
-  String get instFPhone;
-
-  /// Form: contract number.
-  ///
-  /// In en, this message translates to:
-  /// **'Contract number'**
-  String get instFContractNo;
-
-  /// Form: contract date.
-  ///
-  /// In en, this message translates to:
-  /// **'Contract date'**
-  String get instFContractDate;
 
   /// Form: seats.
   ///
@@ -23919,12 +23859,6 @@ abstract class AppLocalizations {
   /// **'Number of months'**
   String get instFMonths;
 
-  /// Form: price per seat per month.
-  ///
-  /// In en, this message translates to:
-  /// **'Price per seat (UZS/month)'**
-  String get instFPrice;
-
   /// Form: start date.
   ///
   /// In en, this message translates to:
@@ -23937,16 +23871,10 @@ abstract class AppLocalizations {
   /// **'Pick a date'**
   String get instFPickDate;
 
-  /// Form: auto total = seats x months x price.
+  /// Form: save and add promo codes.
   ///
   /// In en, this message translates to:
-  /// **'Total: {sum} UZS (seats × months × price)'**
-  String instFTotal(String sum);
-
-  /// Form: save and create codes.
-  ///
-  /// In en, this message translates to:
-  /// **'Save and create codes'**
+  /// **'Save and prepare promo codes'**
   String get instFSave;
 
   /// Form: invalid input.
@@ -23958,25 +23886,25 @@ abstract class AppLocalizations {
   /// Form: server error.
   ///
   /// In en, this message translates to:
-  /// **'Could not save the institute. Try again.'**
+  /// **'Could not save the organization. Try again.'**
   String get instFError;
 
-  /// Institute saved: codes count.
+  /// Organization saved: codes count.
   ///
   /// In en, this message translates to:
-  /// **'Institute saved. {n} codes created.'**
+  /// **'Organization saved. {n} promo codes prepared.'**
   String instCreated(int n);
 
   /// Codes section title.
   ///
   /// In en, this message translates to:
-  /// **'Codes'**
+  /// **'Promo codes'**
   String get instCodesTitle;
 
   /// Codes visible only to admin.
   ///
   /// In en, this message translates to:
-  /// **'Codes are visible to the admin only. Send them to the representative through a private channel only.'**
+  /// **'Promo codes are visible to the admin only. Send them to the representative through a private channel only.'**
   String get instCodesNote;
 
   /// Copy code.
@@ -24006,7 +23934,7 @@ abstract class AppLocalizations {
   /// Codes table: code.
   ///
   /// In en, this message translates to:
-  /// **'Code'**
+  /// **'Promo code'**
   String get instColCode;
 
   /// Codes table: status.
@@ -24036,13 +23964,13 @@ abstract class AppLocalizations {
   /// Revoke the code.
   ///
   /// In en, this message translates to:
-  /// **'Revoke code'**
+  /// **'Revoke promo code'**
   String get instRevoke;
 
   /// Revoke dialog title.
   ///
   /// In en, this message translates to:
-  /// **'Revoke the code?'**
+  /// **'Revoke the promo code?'**
   String get instRevokeTitle;
 
   /// Revoke dialog body.
@@ -24060,16 +23988,16 @@ abstract class AppLocalizations {
   /// Revoked.
   ///
   /// In en, this message translates to:
-  /// **'The code was revoked.'**
+  /// **'The promo code was revoked.'**
   String get instRevokeDone;
 
   /// Revoke: not found or used.
   ///
   /// In en, this message translates to:
-  /// **'The code was not found or is already used.'**
+  /// **'The promo code was not found or is already used.'**
   String get instRevokeNotFound;
 
-  /// Institute term line.
+  /// Organization term line.
   ///
   /// In en, this message translates to:
   /// **'Term: {from} — {to}'**
@@ -24080,24 +24008,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Seats: {seats} · used: {used} · revoked: {revoked}'**
   String instDetailSeats(int seats, int used, int revoked);
-
-  /// Contract PDF button.
-  ///
-  /// In en, this message translates to:
-  /// **'Contract PDF'**
-  String get instPdf;
-
-  /// Contract PDF note.
-  ///
-  /// In en, this message translates to:
-  /// **'Licensor details come from the “Licensor details” setting. Codes go in a separate “Codes sheet” file and are never written into the contract.'**
-  String get instPdfNote;
-
-  /// PDF failed.
-  ///
-  /// In en, this message translates to:
-  /// **'Could not create the PDF. Try again.'**
-  String get instPdfError;
 
   /// Gift: who gives.
   ///
@@ -24123,10 +24033,10 @@ abstract class AppLocalizations {
   /// **'Plan'**
   String get instGiftPlan;
 
-  /// Gift: create.
+  /// Gift: prepare codes.
   ///
   /// In en, this message translates to:
-  /// **'Create codes'**
+  /// **'Prepare promo codes'**
   String get instGiftCreate;
 
   /// Gift: invalid.
@@ -24138,44 +24048,20 @@ abstract class AppLocalizations {
   /// Gift: failed.
   ///
   /// In en, this message translates to:
-  /// **'Could not create the codes.'**
+  /// **'Could not prepare the promo codes.'**
   String get instGiftError;
 
-  /// Gift: created.
+  /// Gift: prepared.
   ///
   /// In en, this message translates to:
-  /// **'{n} codes created.'**
+  /// **'{n} promo codes prepared.'**
   String instGiftDone(int n);
 
-  /// Licensor details: local only.
+  /// Open the organization page.
   ///
   /// In en, this message translates to:
-  /// **'These details are stored on this device only and are placed only into the contract PDF. They are never sent to the server.'**
-  String get instLicNote;
-
-  /// Licensor: transit account.
-  ///
-  /// In en, this message translates to:
-  /// **'Transit account for legal entities'**
-  String get instLicTransit;
-
-  /// Licensor: receiving account.
-  ///
-  /// In en, this message translates to:
-  /// **'Receiving account'**
-  String get instLicAccount;
-
-  /// Licensor: save.
-  ///
-  /// In en, this message translates to:
-  /// **'Save'**
-  String get instLicSave;
-
-  /// Licensor: saved.
-  ///
-  /// In en, this message translates to:
-  /// **'Saved.'**
-  String get instLicSaved;
+  /// **'Open organization page'**
+  String get instOpen;
 }
 
 class _AppLocalizationsDelegate

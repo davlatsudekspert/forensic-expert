@@ -13708,17 +13708,17 @@ class AppLocalizationsRu extends AppLocalizations {
   String get grpDeleteYes => 'Удалить';
 
   @override
-  String get promoRowTitle => 'Код института / промокод';
+  String get promoRowTitle => 'Промокод';
 
   @override
-  String get promoRowHint => 'Код от преподавателя или института';
+  String get promoRowHint => 'Промокод, который вам выдали';
 
   @override
   String get promoIntro =>
-      'Введите код, который выдал институт или преподаватель. Это не оплата: код открывает возможности преподавателя в вашем аккаунте.';
+      'Введите выданный вам промокод. Промокод открывает возможности преподавателя в вашем аккаунте.';
 
   @override
-  String get promoFieldLabel => 'Код';
+  String get promoFieldLabel => 'Промокод';
 
   @override
   String get promoFieldHint => 'Пробелы и дефисы игнорируются';
@@ -13727,22 +13727,23 @@ class AppLocalizationsRu extends AppLocalizations {
   String get promoSubmit => 'Активировать';
 
   @override
-  String get promoEmpty => 'Введите код.';
+  String get promoEmpty => 'Введите промокод.';
 
   @override
-  String get promoInvalid => 'Неверный код';
+  String get promoInvalid => 'Неверный промокод';
 
   @override
-  String get promoUsed => 'Код уже использован';
+  String get promoUsed => 'Промокод уже использован';
 
   @override
-  String get promoAlreadyYours => 'Этот код уже активирован в вашем аккаунте.';
+  String get promoAlreadyYours =>
+      'Этот промокод уже активирован в вашем аккаунте.';
 
   @override
-  String get promoExpired => 'Срок действия кода истёк';
+  String get promoExpired => 'Срок действия промокода истёк';
 
   @override
-  String get promoRevoked => 'Код отозван';
+  String get promoRevoked => 'Промокод отозван';
 
   @override
   String get promoTooMany => 'Слишком много попыток. Повторите позже.';
@@ -13754,21 +13755,19 @@ class AppLocalizationsRu extends AppLocalizations {
   String get promoOffline => 'Нет сети. Проверьте соединение и повторите.';
 
   @override
-  String get promoError => 'Не удалось проверить код. Повторите позже.';
+  String get promoError => 'Не удалось проверить промокод. Повторите позже.';
 
   @override
-  String promoOk(String plan, String label, String date) {
-    return '$plan открыт: $label, до $date';
+  String promoOk(String label, String date) {
+    return 'Промокод принят: $label, до $date';
   }
 
   @override
-  String promoOkShort(String plan) {
-    return '$plan открыт';
-  }
+  String get promoOkShort => 'Промокод принят';
 
   @override
   String promoLabelInstitute(String name) {
-    return 'Институт: $name';
+    return '$name';
   }
 
   @override
@@ -13815,22 +13814,19 @@ class AppLocalizationsRu extends AppLocalizations {
       'Мест всё ещё нет. Удалите ещё одно устройство.';
 
   @override
-  String get instNavTitle => 'Институты';
+  String get instNavTitle => 'Организации';
 
   @override
-  String get instNavHint => 'Коды лицензии, PDF договора';
+  String get instNavHint => 'Организации и промокоды';
 
   @override
-  String get instNew => 'Новый институт';
+  String get instNew => 'Новая организация';
 
   @override
   String get instGift => 'Подарочный промокод';
 
   @override
-  String get instLicensor => 'Реквизиты лицензиара';
-
-  @override
-  String get instEmpty => 'Институтов пока нет.';
+  String get instEmpty => 'Организаций пока нет.';
 
   @override
   String get instLoadError => 'Не удалось загрузить данные. Повторите.';
@@ -13846,34 +13842,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get instFName => 'Название';
-
-  @override
-  String get instFAddress => 'Адрес';
-
-  @override
-  String get instFStir => 'ИНН (STIR)';
-
-  @override
-  String get instFBank => 'Банк';
-
-  @override
-  String get instFAccount => 'Расчётный счёт';
-
-  @override
-  String get instFMfo => 'МФО';
-
-  @override
-  String get instFDirector => 'Руководитель (Ф.И.О.)';
-
-  @override
-  String get instFPhone => 'Телефон';
-
-  @override
-  String get instFContractNo => 'Номер договора';
-
-  @override
-  String get instFContractDate => 'Дата договора';
+  String get instFName => 'Название организации';
 
   @override
   String get instFSeats => 'Количество мест';
@@ -13882,40 +13851,32 @@ class AppLocalizationsRu extends AppLocalizations {
   String get instFMonths => 'Количество месяцев';
 
   @override
-  String get instFPrice => 'Цена одного места (сум/мес.)';
-
-  @override
   String get instFTermStart => 'Дата начала';
 
   @override
   String get instFPickDate => 'Выберите дату';
 
   @override
-  String instFTotal(String sum) {
-    return 'Итого: $sum сум (места × месяцы × цена)';
-  }
-
-  @override
-  String get instFSave => 'Сохранить и создать коды';
+  String get instFSave => 'Сохранить и подготовить промокоды';
 
   @override
   String get instFInvalid =>
       'Укажите название, число мест (1–500) и месяцев (1–60).';
 
   @override
-  String get instFError => 'Не удалось сохранить институт. Повторите.';
+  String get instFError => 'Не удалось сохранить организацию. Повторите.';
 
   @override
   String instCreated(int n) {
-    return 'Институт сохранён. Создано кодов: $n.';
+    return 'Организация сохранена. Подготовлено промокодов: $n.';
   }
 
   @override
-  String get instCodesTitle => 'Коды';
+  String get instCodesTitle => 'Промокоды';
 
   @override
   String get instCodesNote =>
-      'Коды видны только администратору. Передавайте их только представителю по закрытому каналу.';
+      'Промокоды видны только администратору. Передавайте их только представителю по закрытому каналу.';
 
   @override
   String get instCopy => 'Копировать';
@@ -13930,7 +13891,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get instColNo => '№';
 
   @override
-  String get instColCode => 'Код';
+  String get instColCode => 'Промокод';
 
   @override
   String get instColStatus => 'Статус';
@@ -13947,10 +13908,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get instStatusRevoked => 'Отозван';
 
   @override
-  String get instRevoke => 'Отозвать код';
+  String get instRevoke => 'Отозвать промокод';
 
   @override
-  String get instRevokeTitle => 'Отозвать код?';
+  String get instRevokeTitle => 'Отозвать промокод?';
 
   @override
   String instRevokeBody(String code) {
@@ -13961,10 +13922,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get instRevokeKeep => 'Оставить';
 
   @override
-  String get instRevokeDone => 'Код отозван.';
+  String get instRevokeDone => 'Промокод отозван.';
 
   @override
-  String get instRevokeNotFound => 'Код не найден или уже использован.';
+  String get instRevokeNotFound => 'Промокод не найден или уже использован.';
 
   @override
   String instDetailTerm(String from, String to) {
@@ -13975,16 +13936,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String instDetailSeats(int seats, int used, int revoked) {
     return 'Мест: $seats · использовано: $used · отозвано: $revoked';
   }
-
-  @override
-  String get instPdf => 'PDF договора';
-
-  @override
-  String get instPdfNote =>
-      'Реквизиты лицензиара берутся из настройки «Реквизиты лицензиара». Коды — в отдельном файле «Лист кодов», в договор они не вносятся.';
-
-  @override
-  String get instPdfError => 'Не удалось создать PDF. Повторите.';
 
   @override
   String get instGiftFrom => 'От кого';
@@ -13999,33 +13950,20 @@ class AppLocalizationsRu extends AppLocalizations {
   String get instGiftPlan => 'Тариф';
 
   @override
-  String get instGiftCreate => 'Создать коды';
+  String get instGiftCreate => 'Подготовить промокоды';
 
   @override
   String get instGiftInvalid =>
       'Укажите, от кого, количество (1–50) и дни (1–1100).';
 
   @override
-  String get instGiftError => 'Не удалось создать коды.';
+  String get instGiftError => 'Не удалось подготовить промокоды.';
 
   @override
   String instGiftDone(int n) {
-    return 'Создано кодов: $n.';
+    return 'Подготовлено промокодов: $n.';
   }
 
   @override
-  String get instLicNote =>
-      'Эти данные хранятся только на этом устройстве и подставляются только в PDF договора. На сервер не отправляются.';
-
-  @override
-  String get instLicTransit => 'Транзитный счёт для юридических лиц';
-
-  @override
-  String get instLicAccount => 'Счёт получателя';
-
-  @override
-  String get instLicSave => 'Сохранить';
-
-  @override
-  String get instLicSaved => 'Сохранено.';
+  String get instOpen => 'Открыть страницу организации';
 }

@@ -93,6 +93,8 @@ void main() {
     'classSessionLine',
     // «{seconds} s» — soniya belgisi o‘zbekchada ham «s».
     'classSecondsShort',
+    // Promokod bergan tashkilot nomi: faqat {name} (prefikssiz).
+    'promoLabelInstitute',
   };
 
   // ICU argumentlari: `{name}` yoki `{name, select, …}`; select/plural

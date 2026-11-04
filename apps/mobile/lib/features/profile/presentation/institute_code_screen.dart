@@ -13,16 +13,23 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/plan/plan_models.dart';
 import '../../../domain/plan/promo_models.dart';
 import '../../../domain/ports/plan_ports.dart';
-import '../../pro/presentation/pro_gate.dart' show proPlanName;
 
-/// «Institut kodi / promokod» qatori qiymati: faol label + sana, aks holda
+/// «Promokod» qatori qiymati: faol label + sana, aks holda
 /// izoh. Matnda «Pro» so‘zi yo‘q (Pro o‘chiq yig‘mada ham ko‘rinadi).
 String promoRowValue(AppLocalizations l, BuildContext context, Entitlements e) {
   final text = promoAccessText(l, context, e);
   return text ?? l.promoRowHint;
 }
 
-/// «Institut: Nomi, 2027-yil 4-mart gacha» — faol promokod reja bo‘lsa.
+/// Server `label`i («institut: Nomi» / «sovg‘a: Kim») — ko‘rinadigan matn.
+String promoLabelText(AppLocalizations l, PromoLabel label) =>
+    switch (label.kind) {
+      PromoKind.institute => l.promoLabelInstitute(label.name),
+      PromoKind.gift => l.promoLabelGift(label.name),
+      PromoKind.other => label.name,
+    };
+
+/// «Nom, 2027-yil 4-mart gacha» — faol promokod reja bo‘lsa.
 String? promoAccessText(
   AppLocalizations l,
   BuildContext context,
@@ -30,11 +37,7 @@ String? promoAccessText(
 ) {
   final label = PromoLabel.parse(e.label);
   if (label == null || !e.isActive) return null;
-  final head = switch (label.kind) {
-    PromoKind.institute => l.promoLabelInstitute(label.name),
-    PromoKind.gift => l.promoLabelGift(label.name),
-    PromoKind.other => label.name,
-  };
+  final head = promoLabelText(l, label);
   final until = e.expiresAt;
   if (until == null) return head;
   return '$head, ${l.promoUntil(feDate(context, until.toLocal()))}';
@@ -105,10 +108,13 @@ class _InstituteCodeScreenState extends ConsumerState<InstituteCodeScreen> {
       switch (v.result) {
         case PromoResult.ok:
           ok = true;
-          final plan = proPlanName(l, v.plan ?? Plan.teacher);
-          msg = (v.label == null || v.until == null)
-              ? l.promoOkShort(plan)
-              : l.promoOk(plan, v.label!, feDate(context, v.until!.toLocal()));
+          final parsed = PromoLabel.parse(v.label);
+          msg = (parsed == null || v.until == null)
+              ? l.promoOkShort
+              : l.promoOk(
+                  promoLabelText(l, parsed),
+                  feDate(context, v.until!.toLocal()),
+                );
         case PromoResult.invalid:
           msg = l.promoInvalid;
         case PromoResult.used:

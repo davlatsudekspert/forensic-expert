@@ -73,7 +73,7 @@ class PromoLabel {
   final String name;
 
   static final _re = RegExp(
-    r'^\s*(institut|sovg[‘’ʻ`'
+    r'^\s*(institut|tashkilot|sovg[‘’ʻ`'
     "'"
     r']?a)\s*:\s*(.+?)\s*$',
     caseSensitive: false,
@@ -85,7 +85,9 @@ class PromoLabel {
     if (m == null) return PromoLabel(PromoKind.other, label.trim());
     final head = m.group(1)!.toLowerCase();
     return PromoLabel(
-      head == 'institut' ? PromoKind.institute : PromoKind.gift,
+      head == 'institut' || head == 'tashkilot'
+          ? PromoKind.institute
+          : PromoKind.gift,
       m.group(2)!,
     );
   }

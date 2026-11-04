@@ -1,5 +1,5 @@
-// Admin «Institutlar»: ro‘yxat, yangi institut (jami summa), kodlar,
-// bekor qilish, sovg‘a promokod, litsenziar rekvizitlari, shartnoma PDF.
+// Admin «Tashkilotlar»: ro‘yxat, yangi tashkilot (nom + o‘rinlar + muddat),
+// promokodlar, bekor qilish, sovg‘a promokod.
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -9,35 +9,20 @@ import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/data/plan/fake_institute_service.dart';
 import 'package:forensic_expert/domain/admin/admin_models.dart';
 import 'package:forensic_expert/domain/admin/institute_models.dart';
-import 'package:forensic_expert/domain/ports/institute_ports.dart';
 
 import '../helpers/pump_app.dart';
-
-class _RecordingShare implements ContractFileShare {
-  final shared = <PdfAttachment>[];
-
-  @override
-  Future<void> sharePdfs(List<PdfAttachment> files, {String? subject}) async {
-    shared.addAll(files);
-  }
-}
 
 final _inst = InstituteDetail(
   id: 'i1',
   name: 'ADTI',
   seats: 3,
   months: 12,
-  pricePerSeat: 25000,
-  contractNo: '17/2026',
-  contractDate: DateTime(2026, 11, 4),
   termStart: DateTime(2026, 11, 10),
   termEnd: DateTime(2027, 11, 10),
 );
 
 void main() {
   late FakeAdminInstituteService svc;
-  late _RecordingShare share;
-  late InMemoryLicensorProfileStore store;
 
   Future<void> open(
     WidgetTester tester,
@@ -46,8 +31,6 @@ void main() {
     bool seed = true,
   }) async {
     svc = FakeAdminInstituteService();
-    share = _RecordingShare();
-    store = InMemoryLicensorProfileStore();
     if (seed) {
       svc.seed(_inst, [
         const InstituteCode(n: 1, code: 'AAAA111111', revoked: false),
@@ -74,8 +57,6 @@ void main() {
           (ref) async => const AdminDashboard(totals: {}),
         ),
         adminInstituteServiceProvider.overrideWithValue(svc),
-        contractFileShareProvider.overrideWithValue(share),
-        licensorProfileStoreProvider.overrideWithValue(store),
       ],
     );
   }
@@ -100,7 +81,6 @@ void main() {
       Routes.adminInstitutes,
       Routes.adminInstituteNew,
       Routes.adminGiftCodes,
-      Routes.adminLicensor,
       Routes.adminInstitute('i1'),
     ]) {
       testWidgets('admin emas: $loc ochilmaydi', (tester) async {
@@ -118,17 +98,17 @@ void main() {
     ) async {
       await open(tester, Routes.profile, admin: false);
       expect(find.byKey(const Key('profile.admin')), findsNothing);
-      expect(find.text('Institutlar'), findsNothing);
+      expect(find.text('Tashkilotlar'), findsNothing);
     });
 
-    testWidgets('admin panelda «Institutlar» bo‘limi bor', (tester) async {
+    testWidgets('admin panelda «Tashkilotlar» bo‘limi bor', (tester) async {
       await open(tester, Routes.admin);
       await tester.ensureVisible(find.byKey(const Key('admin.nav.institutes')));
       expect(find.byKey(const Key('admin.nav.institutes')), findsOneWidget);
     });
   });
 
-  group('ro‘yxat va yangi institut', () {
+  group('ro‘yxat va yangi tashkilot', () {
     testWidgets('ro‘yxat: nomi, o‘rinlar, ishlatilgan, tugash sanasi', (
       tester,
     ) async {
@@ -139,19 +119,29 @@ void main() {
       expect(find.textContaining('gacha'), findsOneWidget);
     });
 
-    testWidgets('forma: jami summa = o‘rinlar × oylar × narx', (tester) async {
+    testWidgets('forma: faqat nom, o‘rinlar, muddat va boshlanish sanasi', (
+      tester,
+    ) async {
       await open(tester, Routes.adminInstituteNew, seed: false);
-      expect(
-        find.text('Jami summa: 0 so‘m (o‘rinlar × oylar × narx)'),
-        findsOneWidget,
-      );
-      await type(tester, 'adminInstForm.seats', '10');
-      await type(tester, 'adminInstForm.months', '12');
-      await type(tester, 'adminInstForm.price', '25000');
-      expect(
-        find.text('Jami summa: 3 000 000 so‘m (o‘rinlar × oylar × narx)'),
-        findsOneWidget,
-      );
+      for (final k in ['name', 'seats', 'months']) {
+        expect(find.byKey(Key('adminInstForm.$k')), findsOneWidget);
+      }
+      expect(find.byKey(const Key('adminInstForm.termStart')), findsOneWidget);
+      for (final k in [
+        'price',
+        'total',
+        'address',
+        'stir',
+        'bank',
+        'account',
+        'mfo',
+        'director',
+        'phone',
+        'contractNo',
+        'contractDate',
+      ]) {
+        expect(find.byKey(Key('adminInstForm.$k')), findsNothing, reason: k);
+      }
     });
 
     testWidgets('noto‘g‘ri forma: xato, serverga so‘rov yo‘q', (tester) async {
@@ -169,12 +159,11 @@ void main() {
       await type(tester, 'adminInstForm.name', 'ADTI');
       await type(tester, 'adminInstForm.seats', '3');
       await type(tester, 'adminInstForm.months', '12');
-      await type(tester, 'adminInstForm.price', '25000');
       await tapKey(tester, 'adminInstForm.save');
       expect(svc.calls, contains('create:ADTI:3'));
       expect(find.byKey(const Key('adminInstForm.created')), findsOneWidget);
       expect(
-        find.text('Institut saqlandi. 3 ta kod yaratildi.'),
+        find.text('Tashkilot saqlandi. 3 ta promokod tayyorlandi.'),
         findsOneWidget,
       );
       for (var i = 1; i <= 3; i++) {
@@ -208,7 +197,7 @@ void main() {
     });
   });
 
-  group('institut sahifasi', () {
+  group('tashkilot sahifasi', () {
     testWidgets('kodlar jadvali: bo‘sh / ishlatilgan+email / bekor', (
       tester,
     ) async {
@@ -230,10 +219,10 @@ void main() {
     testWidgets('kodni bekor qilish: tasdiq → holat o‘zgaradi', (tester) async {
       await open(tester, Routes.adminInstitute('i1'));
       await tapKey(tester, 'adminInstDetail.revoke.1');
-      expect(find.text('Kodni bekor qilasizmi?'), findsOneWidget);
+      expect(find.text('Promokod bekor qilinsinmi?'), findsOneWidget);
       await tapKey(tester, 'adminInst.revoke.yes');
       expect(svc.calls, contains('revoke:AAAA111111'));
-      expect(find.text('Kod bekor qilindi.'), findsOneWidget);
+      expect(find.text('Promokod bekor qilindi.'), findsOneWidget);
       expect(find.text('Bekor qilingan'), findsNWidgets(2));
       expect(find.byKey(const Key('adminInstDetail.revoke.1')), findsNothing);
     });
@@ -244,29 +233,10 @@ void main() {
       await tapKey(tester, 'adminInst.revoke.no');
       expect(svc.calls.where((c) => c.startsWith('revoke')), isEmpty);
     });
-
-    testWidgets('Shartnoma PDF: ikki fayl (shartnoma + kodlar varag‘i)', (
-      tester,
-    ) async {
-      await open(tester, Routes.adminInstitute('i1'));
-      await tester.ensureVisible(find.byKey(const Key('adminInstDetail.pdf')));
-      await tester.runAsync(() async {
-        await tester.tap(find.byKey(const Key('adminInstDetail.pdf')));
-        await Future<void>.delayed(const Duration(seconds: 2));
-      });
-      await tester.pumpAndSettle();
-      expect(share.shared.length, 2);
-      expect(share.shared.first.fileName, 'Shartnoma_ADTI.pdf');
-      expect(share.shared.last.fileName, 'Kodlar_varagi_ADTI.pdf');
-      for (final f in share.shared) {
-        expect(f.bytes.length, greaterThan(1000));
-        expect(String.fromCharCodes(f.bytes.take(5)), '%PDF-');
-      }
-    });
   });
 
   group('sovg‘a promokod', () {
-    testWidgets('yaratish: kodlar ko‘rinadi', (tester) async {
+    testWidgets('tayyorlash: promokodlar ko‘rinadi', (tester) async {
       await open(tester, Routes.adminGiftCodes, seed: false);
       await type(tester, 'adminGift.from', 'Ali Valiyev');
       await type(tester, 'adminGift.count', '2');
@@ -274,7 +244,7 @@ void main() {
       await tapKey(tester, 'adminGift.plan.premium');
       await tapKey(tester, 'adminGift.create');
       expect(svc.calls, contains('gift:Ali Valiyev:2:90:premium'));
-      expect(find.text('2 ta kod yaratildi.'), findsOneWidget);
+      expect(find.text('2 ta promokod tayyorlandi.'), findsOneWidget);
       expect(find.byKey(const Key('adminGift.codes.row.2')), findsOneWidget);
     });
 
@@ -285,18 +255,6 @@ void main() {
       await tapKey(tester, 'adminGift.create');
       expect(find.byKey(const Key('adminGift.error')), findsOneWidget);
       expect(svc.calls.where((c) => c.startsWith('gift')), isEmpty);
-    });
-  });
-
-  group('litsenziar rekvizitlari', () {
-    testWidgets('qurilmada saqlanadi', (tester) async {
-      await open(tester, Routes.adminLicensor, seed: false);
-      await type(tester, 'adminLic.address', 'Test manzil');
-      await type(tester, 'adminLic.account', '123');
-      await tapKey(tester, 'adminLic.save');
-      expect(find.byKey(const Key('adminLic.saved')), findsOneWidget);
-      expect(store.load().address, 'Test manzil');
-      expect(store.load().account, '123');
     });
   });
 }

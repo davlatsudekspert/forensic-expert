@@ -12,16 +12,8 @@ import '../../../domain/admin/institute_models.dart';
 import 'admin_codes_widgets.dart';
 import 'admin_gate.dart';
 
-/// Fayl nomi uchun xavfsiz qism: lotin harf/raqam, qolgani `_`.
-String fileSlug(String name) {
-  final s = name
-      .replaceAll(RegExp(r'[^A-Za-z0-9]+'), '_')
-      .replaceAll(RegExp(r'^_+|_+$'), '');
-  return s.isEmpty ? 'institut' : s;
-}
-
-/// Institut sahifasi: ma’lumot, kodlar jadvali (№, kod, holati), «Kodni bekor
-/// qilish» va «Shartnoma PDF» (+ alohida «Kodlar varag‘i»).
+/// Tashkilot sahifasi: ma’lumot, promokodlar jadvali (№, kod, holati) va
+/// «Promokodni bekor qilish».
 class AdminInstituteScreen extends ConsumerStatefulWidget {
   const AdminInstituteScreen({super.key, required this.instituteId});
 
@@ -73,38 +65,6 @@ class _AdminInstituteScreenState extends ConsumerState<AdminInstituteScreen> {
         null => l.instLoadError,
       };
     });
-  }
-
-  Future<void> _pdf(InstituteBundle b) async {
-    final l = AppLocalizations.of(context);
-    setState(() {
-      _busy = true;
-      _message = null;
-    });
-    try {
-      final svc = ref.read(contractPdfServiceProvider);
-      final contract = await svc.contract(
-        b.detail,
-        ref.read(licensorProfileProvider),
-      );
-      final sheet = await svc.codesSheet(b.detail, [
-        for (final c in b.codes)
-          if (c.status != InstituteCodeStatus.revoked) c,
-      ]);
-      final slug = fileSlug(b.detail.name);
-      await ref.read(contractFileShareProvider).sharePdfs([
-        PdfAttachment('Shartnoma_$slug.pdf', contract),
-        PdfAttachment('Kodlar_varagi_$slug.pdf', sheet),
-      ]);
-      if (mounted) setState(() => _busy = false);
-    } on Object {
-      if (mounted) {
-        setState(() {
-          _busy = false;
-          _message = l.instPdfError;
-        });
-      }
-    }
   }
 
   String _status(AppLocalizations l, InstituteCode c) => switch (c.status) {
@@ -163,25 +123,7 @@ class _AdminInstituteScreenState extends ConsumerState<AdminInstituteScreen> {
                         key: const Key('adminInstDetail.seats'),
                         style: t.bodyMedium,
                       ),
-                      Text(
-                        l.instFTotal(formatSom(b.detail.total)),
-                        style: t.bodyMedium,
-                      ),
                       const SizedBox(height: FeSpace.sm),
-                      FilledButton.icon(
-                        key: const Key('adminInstDetail.pdf'),
-                        onPressed: _busy ? null : () => _pdf(b),
-                        icon: const Icon(Icons.picture_as_pdf_outlined),
-                        label: Text(l.instPdf),
-                        style: FilledButton.styleFrom(
-                          minimumSize: const Size(0, FeTouch.minTarget),
-                        ),
-                      ),
-                      const SizedBox(height: FeSpace.xs),
-                      Text(
-                        l.instPdfNote,
-                        style: t.bodySmall?.copyWith(color: c.textSecondary),
-                      ),
                       if (_message != null)
                         Padding(
                           padding: const EdgeInsets.only(top: FeSpace.xs),

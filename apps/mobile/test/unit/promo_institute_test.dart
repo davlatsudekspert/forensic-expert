@@ -1,4 +1,4 @@
-// Institut kodi / promokod, qurilmalar limiti va admin institut modeli (sof
+// Promokod, qurilmalar limiti va admin institut modeli (sof
 // parse) + Supabase adapterlarining RPC shartnomasi.
 import 'package:flutter_test/flutter_test.dart';
 import 'package:forensic_expert/data/auth/mock_auth_repository.dart';
@@ -155,25 +155,10 @@ void main() {
     });
   });
 
-  group('institut hisobi', () {
-    test('jami = o‘rinlar × oylar × narx', () {
-      expect(instituteTotal(10, 12, 25000), 3000000);
-      const d = InstituteDraft(
-        name: 'ADTI',
-        seats: 10,
-        months: 12,
-        pricePerSeat: 25000,
-      );
-      expect(d.total, 3000000);
+  group('tashkilot formasi', () {
+    test('forma: nom + o‘rin + muddat', () {
+      const d = InstituteDraft(name: 'ADTI', seats: 10, months: 12);
       expect(d.isValid, isTrue);
-    });
-
-    test('summa formati', () {
-      expect(formatSom(0), '0');
-      expect(formatSom(999), '999');
-      expect(formatSom(1000), '1 000');
-      expect(formatSom(3000000), '3 000 000');
-      expect(formatSom(1234.5), '1 234,50');
     });
 
     test('forma chegaralari', () {
@@ -294,24 +279,28 @@ void main() {
         transport: t,
       );
       final r = await s.create(
-        InstituteDraft(
-          name: ' ADTI ',
-          seats: 2,
-          months: 12,
-          pricePerSeat: 25000,
-          contractNo: '7',
-          contractDate: DateTime(2026, 11, 4),
-        ),
+        const InstituteDraft(name: ' ADTI ', seats: 2, months: 12),
       );
       expect(t.calls.single.path, '/rest/v1/rpc/admin_institute_create');
       final body = t.calls.single.body! as Map;
       expect(body['p_name'], 'ADTI');
       expect(body['p_seats'], 2);
       expect(body['p_months'], 12);
-      expect(body['p_price'], 25000);
-      expect(body['p_contract_no'], '7');
-      expect(body['p_contract_date'], '2026-11-04');
-      expect(body['p_address'], isNull);
+      for (final k in [
+        'p_price',
+        'p_contract_no',
+        'p_contract_date',
+        'p_director',
+        'p_phone',
+        'p_stir',
+        'p_bank',
+        'p_account',
+        'p_mfo',
+        'p_address',
+      ]) {
+        expect(body.containsKey(k), isTrue, reason: k);
+        expect(body[k], isNull, reason: k);
+      }
       expect(r.value!.instituteId, 'i1');
       expect(r.value!.codes, ['AAA', 'BBB']);
     });

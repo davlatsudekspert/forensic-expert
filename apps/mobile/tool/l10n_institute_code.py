@@ -13,37 +13,40 @@ def k(key, desc, uz, ru, en, ph=None):
     K[key] = (desc, uz, ru, en, ph)
 
 
-k('promoRowTitle', 'Profile row + screen title: institute code / promo code.',
-  'Institut kodi / promokod', 'Код института / промокод',
-  'Institute code / promo code')
+k('promoRowTitle', 'Profile row + screen title: promo code.',
+  'Promokod', 'Промокод', 'Promo code')
 k('promoRowHint', 'Profile row hint when no code is active.',
-  'Ustoz yoki institut bergan kod', 'Код от преподавателя или института',
-  'A code from a teacher or an institute')
-k('promoIntro', 'Promo screen intro (not a payment).',
-  'Institut yoki ustoz bergan kodni kiriting. Bu to‘lov emas: kod hisobingizda ustoz imkoniyatlarini ochadi.',
-  'Введите код, который выдал институт или преподаватель. Это не оплата: код открывает возможности преподавателя в вашем аккаунте.',
-  'Enter the code given by an institute or a teacher. This is not a payment: the code unlocks teacher features on your account.')
-k('promoFieldLabel', 'Promo code field label.', 'Kod', 'Код', 'Code')
+  'Sizga berilgan promokod', 'Промокод, который вам выдали',
+  'The promo code you were given')
+k('promoIntro', 'Promo screen intro.',
+  'Sizga berilgan promokodni kiriting. Promokod hisobingizda ustoz imkoniyatlarini ochadi.',
+  'Введите выданный вам промокод. Промокод открывает возможности преподавателя в вашем аккаунте.',
+  'Enter the promo code you were given. The promo code unlocks teacher features on your account.')
+k('promoFieldLabel', 'Promo code field label.', 'Promokod', 'Промокод',
+  'Promo code')
 k('promoFieldHint', 'Promo code field hint (spaces and dashes are ignored).',
   'Bo‘shliq va defis e’tiborsiz', 'Пробелы и дефисы игнорируются',
   'Spaces and dashes are ignored')
 k('promoSubmit', 'Promo screen: activate button.',
   'Faollashtirish', 'Активировать', 'Activate')
-k('promoEmpty', 'Promo screen: empty code.',
-  'Kodni kiriting.', 'Введите код.', 'Enter the code.')
-k('promoInvalid', 'Promo result INVALID.',
-  'Kod noto‘g‘ri', 'Неверный код', 'The code is incorrect')
-k('promoUsed', 'Promo result USED.',
-  'Kod ishlatilgan', 'Код уже использован', 'The code has already been used')
-k('promoAlreadyYours', 'Promo result ALREADY_YOURS.',
-  'Bu kod allaqachon sizning hisobingizda faollashtirilgan.',
-  'Этот код уже активирован в вашем аккаунте.',
-  'This code is already active on your account.')
-k('promoExpired', 'Promo result EXPIRED.',
-  'Kodning muddati tugagan', 'Срок действия кода истёк',
-  'The code has expired')
-k('promoRevoked', 'Promo result REVOKED.',
-  'Kod bekor qilingan', 'Код отозван', 'The code has been revoked')
+k('promoEmpty', 'Promo result text.',
+  'Promokodni kiriting.', 'Введите промокод.',
+  'Enter the promo code.')
+k('promoInvalid', 'Promo result text.',
+  'Promokod noto‘g‘ri', 'Неверный промокод',
+  'The promo code is incorrect')
+k('promoUsed', 'Promo result text.',
+  'Promokod ishlatilgan', 'Промокод уже использован',
+  'The promo code has already been used')
+k('promoAlreadyYours', 'Promo result text.',
+  'Bu promokod allaqachon sizning hisobingizda faollashtirilgan.', 'Этот промокод уже активирован в вашем аккаунте.',
+  'This promo code is already active on your account.')
+k('promoExpired', 'Promo result text.',
+  'Promokodning muddati tugagan', 'Срок действия промокода истёк',
+  'The promo code has expired')
+k('promoRevoked', 'Promo result text.',
+  'Promokod bekor qilingan', 'Промокод отозван',
+  'The promo code has been revoked')
 k('promoTooMany', 'Promo result TOO_MANY.',
   'Juda ko‘p urinish. Keyinroq qayta urinib ko‘ring.',
   'Слишком много попыток. Повторите позже.',
@@ -51,23 +54,21 @@ k('promoTooMany', 'Promo result TOO_MANY.',
 k('promoNotSigned', 'Promo result NOT_SIGNED.',
   'Avval hisobingizga kiring.', 'Сначала войдите в аккаунт.',
   'Please sign in first.')
-k('promoOffline', 'Promo: no connection.',
-  'Internet yo‘q. Aloqani tekshirib, qayta urinib ko‘ring.',
-  'Нет сети. Проверьте соединение и повторите.',
+k('promoOffline', 'Promo result text.',
+  'Internet yo‘q. Aloqani tekshirib, qayta urinib ko‘ring.', 'Нет сети. Проверьте соединение и повторите.',
   'No connection. Check your network and try again.')
-k('promoError', 'Promo: server error.',
-  'Kodni tekshirib bo‘lmadi. Keyinroq qayta urinib ko‘ring.',
-  'Не удалось проверить код. Повторите позже.',
-  'Could not check the code. Please try again later.')
-k('promoOk', 'Promo OK: {plan} unlocked, {label} is the server label, {date} the end date.',
-  '{plan} ochildi: {label}, {date} gacha',
-  '{plan} открыт: {label}, до {date}',
-  '{plan} unlocked: {label}, until {date}',
-  {'plan': S, 'label': S, 'date': S})
+k('promoError', 'Promo result text.',
+  'Promokodni tekshirib bo‘lmadi. Keyinroq qayta urinib ko‘ring.', 'Не удалось проверить промокод. Повторите позже.',
+  'Could not check the promo code. Please try again later.')
+k('promoOk', 'Promo OK: {label} is the name or gift label, {date} the end date.',
+  'Promokod qabul qilindi: {label}, {date} gacha',
+  'Промокод принят: {label}, до {date}',
+  'Promo code accepted: {label}, until {date}',
+  {'label': S, 'date': S})
 k('promoOkShort', 'Promo OK without label/date.',
-  '{plan} ochildi', '{plan} открыт', '{plan} unlocked', {'plan': S})
-k('promoLabelInstitute', 'Profile: institute that gave access.',
-  'Institut: {name}', 'Институт: {name}', 'Institute: {name}', {'name': S})
+  'Promokod qabul qilindi', 'Промокод принят', 'Promo code accepted')
+k('promoLabelInstitute', 'Profile: name of the issuing body, no prefix.',
+  '{name}', '{name}', '{name}', {'name': S})
 k('promoLabelGift', 'Profile: gift giver.',
   'Sovg‘a: {name}', 'Подарок: {name}', 'Gift: {name}', {'name': S})
 k('promoUntil', 'Profile: end date of access.',

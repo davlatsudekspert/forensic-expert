@@ -12,8 +12,8 @@ import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import 'admin_gate.dart';
 
-/// Admin → «Institutlar»: ro‘yxat (nomi, o‘rinlar, ishlatilgan, tugash sanasi)
-/// va «Yangi institut» / «Sovg‘a promokod» / «Litsenziar rekvizitlari».
+/// Admin → «Tashkilotlar»: ro‘yxat (nomi, o‘rinlar, ishlatilgan, tugash sanasi)
+/// va «Yangi tashkilot» / «Sovg‘a promokod».
 /// Server har bir RPC’da identity_admin’ni tekshiradi.
 class AdminInstitutesScreen extends ConsumerWidget {
   const AdminInstitutesScreen({super.key});
@@ -55,27 +55,11 @@ class AdminInstitutesScreen extends ConsumerWidget {
                       ),
                     ),
                     const SizedBox(height: FeSpace.xs),
-                    Row(
-                      children: [
-                        Expanded(
-                          child: OutlinedButton.icon(
-                            key: const Key('adminInst.gift'),
-                            onPressed: () =>
-                                context.push(Routes.adminGiftCodes),
-                            icon: const Icon(Icons.card_giftcard_outlined),
-                            label: Text(l.instGift),
-                          ),
-                        ),
-                        const SizedBox(width: FeSpace.xs),
-                        Expanded(
-                          child: OutlinedButton.icon(
-                            key: const Key('adminInst.licensor'),
-                            onPressed: () => context.push(Routes.adminLicensor),
-                            icon: const Icon(Icons.badge_outlined),
-                            label: Text(l.instLicensor),
-                          ),
-                        ),
-                      ],
+                    OutlinedButton.icon(
+                      key: const Key('adminInst.gift'),
+                      onPressed: () => context.push(Routes.adminGiftCodes),
+                      icon: const Icon(Icons.card_giftcard_outlined),
+                      label: Text(l.instGift),
                     ),
                     const SizedBox(height: FeSpace.sm),
                     switch (list) {

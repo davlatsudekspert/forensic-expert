@@ -1,4 +1,4 @@
-// «Institut kodi / promokod» (profil) va qurilmalar limiti — fake bilan.
+// «Promokod» (profil) va qurilmalar limiti — fake bilan.
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -66,12 +66,12 @@ void main() {
   }
 
   group('profil qatori', () {
-    testWidgets('Pro o‘chiq: «Institut kodi» ko‘rinadi, «Pro rejasi» yo‘q', (
+    testWidgets('Pro o‘chiq: «Promokod» ko‘rinadi, «Pro rejasi» yo‘q', (
       tester,
     ) async {
       await open(tester, location: Routes.profile);
       expect(find.byKey(const Key('profile.instituteCode')), findsOneWidget);
-      expect(find.text('Institut kodi / promokod'), findsOneWidget);
+      expect(find.text('Promokod'), findsOneWidget);
       expect(find.byKey(const Key('profile.plan')), findsNothing);
       expect(find.textContaining(RegExp(r'\bPro\b')), findsNothing);
       await tester.tap(find.byKey(const Key('profile.instituteCode')));
@@ -84,7 +84,7 @@ void main() {
       expect(find.byKey(const Key('profile.instituteCode')), findsNothing);
     });
 
-    testWidgets('faol institut: profilda nomi va sana', (tester) async {
+    testWidgets('faol tashkilot: profilda faqat nomi va sana', (tester) async {
       await open(tester, location: Routes.profile);
       plan.entitlements = Entitlements(
         plan: Plan.teacher,
@@ -99,7 +99,7 @@ void main() {
       await c.read(entitlementsProvider.notifier).refresh();
       await tester.pumpAndSettle();
       expect(
-        find.textContaining('Institut: ADTI, 2027-yil 1-mart gacha'),
+        find.textContaining('ADTI, 2027-yil 1-mart gacha'),
         findsOneWidget,
       );
     });
@@ -117,7 +117,7 @@ void main() {
       expect(promo.calls, contains('redeem:A1B2C3D4E5'));
       expect(
         find.text(
-          'Ustoz Pro ochildi: institut: Test instituti, 2027-yil 1-mart gacha',
+          'Promokod qabul qilindi: Test instituti, 2027-yil 1-mart gacha',
         ),
         findsOneWidget,
       );
@@ -125,7 +125,12 @@ void main() {
       expect(plan.calls.where((c) => c == 'myPlan').length, greaterThan(1));
       expect(find.byKey(const Key('promo.active')), findsOneWidget);
       expect(
-        find.textContaining('Institut: Test instituti, 2027-yil 1-mart gacha'),
+        find.descendant(
+          of: find.byKey(const Key('promo.active')),
+          matching: find.textContaining(
+            'Test instituti, 2027-yil 1-mart gacha',
+          ),
+        ),
         findsOneWidget,
       );
     });
@@ -140,7 +145,7 @@ void main() {
     testWidgets('INVALID: «Kod noto‘g‘ri»', (tester) async {
       await open(tester);
       await submit(tester, 'XXXX');
-      expect(find.text('Kod noto‘g‘ri'), findsOneWidget);
+      expect(find.text('Promokod noto‘g‘ri'), findsOneWidget);
     });
 
     testWidgets('USED: «Kod ishlatilgan»', (tester) async {
@@ -149,7 +154,7 @@ void main() {
         codes: {'USED1': const PromoOutcome(PromoResult.used)},
       );
       await submit(tester, 'used1');
-      expect(find.text('Kod ishlatilgan'), findsOneWidget);
+      expect(find.text('Promokod ishlatilgan'), findsOneWidget);
     });
 
     testWidgets('EXPIRED / REVOKED / TOO_MANY xabarlari', (tester) async {
@@ -162,9 +167,9 @@ void main() {
         },
       );
       await submit(tester, 'exp');
-      expect(find.text('Kodning muddati tugagan'), findsOneWidget);
+      expect(find.text('Promokodning muddati tugagan'), findsOneWidget);
       await submit(tester, 'rev');
-      expect(find.text('Kod bekor qilingan'), findsOneWidget);
+      expect(find.text('Promokod bekor qilingan'), findsOneWidget);
       await submit(tester, 'many');
       expect(
         find.text('Juda ko‘p urinish. Keyinroq qayta urinib ko‘ring.'),
@@ -175,7 +180,7 @@ void main() {
     testWidgets('bo‘sh kod: serverga so‘rov yo‘q', (tester) async {
       final promo = await open(tester);
       await submit(tester, ' - ');
-      expect(find.text('Kodni kiriting.'), findsOneWidget);
+      expect(find.text('Promokodni kiriting.'), findsOneWidget);
       expect(promo.calls.where((c) => c.startsWith('redeem')), isEmpty);
     });
 

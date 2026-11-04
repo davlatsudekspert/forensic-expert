@@ -17942,19 +17942,19 @@
   "@grpDeleteYes": {
     "description": "Delete confirm button."
   },
-  "promoRowTitle": "Institute code / promo code",
+  "promoRowTitle": "Promo code",
   "@promoRowTitle": {
-    "description": "Profile row + screen title: institute code / promo code."
+    "description": "Profile row + screen title: promo code."
   },
-  "promoRowHint": "A code from a teacher or an institute",
+  "promoRowHint": "The promo code you were given",
   "@promoRowHint": {
     "description": "Profile row hint when no code is active."
   },
-  "promoIntro": "Enter the code given by an institute or a teacher. This is not a payment: the code unlocks teacher features on your account.",
+  "promoIntro": "Enter the promo code you were given. The promo code unlocks teacher features on your account.",
   "@promoIntro": {
-    "description": "Promo screen intro (not a payment)."
+    "description": "Promo screen intro."
   },
-  "promoFieldLabel": "Code",
+  "promoFieldLabel": "Promo code",
   "@promoFieldLabel": {
     "description": "Promo code field label."
   },
@@ -17966,29 +17966,29 @@
   "@promoSubmit": {
     "description": "Promo screen: activate button."
   },
-  "promoEmpty": "Enter the code.",
+  "promoEmpty": "Enter the promo code.",
   "@promoEmpty": {
-    "description": "Promo screen: empty code."
+    "description": "Promo result text."
   },
-  "promoInvalid": "The code is incorrect",
+  "promoInvalid": "The promo code is incorrect",
   "@promoInvalid": {
-    "description": "Promo result INVALID."
+    "description": "Promo result text."
   },
-  "promoUsed": "The code has already been used",
+  "promoUsed": "The promo code has already been used",
   "@promoUsed": {
-    "description": "Promo result USED."
+    "description": "Promo result text."
   },
-  "promoAlreadyYours": "This code is already active on your account.",
+  "promoAlreadyYours": "This promo code is already active on your account.",
   "@promoAlreadyYours": {
-    "description": "Promo result ALREADY_YOURS."
+    "description": "Promo result text."
   },
-  "promoExpired": "The code has expired",
+  "promoExpired": "The promo code has expired",
   "@promoExpired": {
-    "description": "Promo result EXPIRED."
+    "description": "Promo result text."
   },
-  "promoRevoked": "The code has been revoked",
+  "promoRevoked": "The promo code has been revoked",
   "@promoRevoked": {
-    "description": "Promo result REVOKED."
+    "description": "Promo result text."
   },
   "promoTooMany": "Too many attempts. Please try again later.",
   "@promoTooMany": {
@@ -18000,19 +18000,16 @@
   },
   "promoOffline": "No connection. Check your network and try again.",
   "@promoOffline": {
-    "description": "Promo: no connection."
+    "description": "Promo result text."
   },
-  "promoError": "Could not check the code. Please try again later.",
+  "promoError": "Could not check the promo code. Please try again later.",
   "@promoError": {
-    "description": "Promo: server error."
+    "description": "Promo result text."
   },
-  "promoOk": "{plan} unlocked: {label}, until {date}",
+  "promoOk": "Promo code accepted: {label}, until {date}",
   "@promoOk": {
-    "description": "Promo OK: {plan} unlocked, {label} is the server label, {date} the end date.",
+    "description": "Promo OK: {label} is the name or gift label, {date} the end date.",
     "placeholders": {
-      "plan": {
-        "type": "String"
-      },
       "label": {
         "type": "String"
       },
@@ -18021,18 +18018,13 @@
       }
     }
   },
-  "promoOkShort": "{plan} unlocked",
+  "promoOkShort": "Promo code accepted",
   "@promoOkShort": {
-    "description": "Promo OK without label/date.",
-    "placeholders": {
-      "plan": {
-        "type": "String"
-      }
-    }
+    "description": "Promo OK without label/date."
   },
-  "promoLabelInstitute": "Institute: {name}",
+  "promoLabelInstitute": "{name}",
   "@promoLabelInstitute": {
-    "description": "Profile: institute that gave access.",
+    "description": "Profile: name of the issuing body, no prefix.",
     "placeholders": {
       "name": {
         "type": "String"
@@ -18103,29 +18095,25 @@
   "@devLimitStillFull": {
     "description": "Device removed but still full."
   },
-  "instNavTitle": "Institutes",
+  "instNavTitle": "Organizations",
   "@instNavTitle": {
-    "description": "Admin: institutes section title."
+    "description": "Admin: organizations section title."
   },
-  "instNavHint": "Licence codes, contract PDF",
+  "instNavHint": "Organizations and promo codes",
   "@instNavHint": {
-    "description": "Admin: institutes tile hint."
+    "description": "Admin: organizations tile hint."
   },
-  "instNew": "New institute",
+  "instNew": "New organization",
   "@instNew": {
-    "description": "Admin: new institute."
+    "description": "Admin: new organization."
   },
   "instGift": "Gift promo code",
   "@instGift": {
     "description": "Admin: gift promo codes."
   },
-  "instLicensor": "Licensor details",
-  "@instLicensor": {
-    "description": "Admin: licensor details."
-  },
-  "instEmpty": "No institutes yet.",
+  "instEmpty": "No organizations yet.",
   "@instEmpty": {
-    "description": "Admin: no institutes."
+    "description": "Admin: no organizations."
   },
   "instLoadError": "Could not load the data. Try again.",
   "@instLoadError": {
@@ -18152,45 +18140,9 @@
       }
     }
   },
-  "instFName": "Name",
+  "instFName": "Organization name",
   "@instFName": {
-    "description": "Form: institute name."
-  },
-  "instFAddress": "Address",
-  "@instFAddress": {
-    "description": "Form: address."
-  },
-  "instFStir": "Tax ID (STIR)",
-  "@instFStir": {
-    "description": "Form: tax ID (STIR)."
-  },
-  "instFBank": "Bank",
-  "@instFBank": {
-    "description": "Form: bank."
-  },
-  "instFAccount": "Account number",
-  "@instFAccount": {
-    "description": "Form: account number."
-  },
-  "instFMfo": "MFO",
-  "@instFMfo": {
-    "description": "Form: MFO."
-  },
-  "instFDirector": "Director (full name)",
-  "@instFDirector": {
-    "description": "Form: director."
-  },
-  "instFPhone": "Phone",
-  "@instFPhone": {
-    "description": "Form: phone."
-  },
-  "instFContractNo": "Contract number",
-  "@instFContractNo": {
-    "description": "Form: contract number."
-  },
-  "instFContractDate": "Contract date",
-  "@instFContractDate": {
-    "description": "Form: contract date."
+    "description": "Form: organization name."
   },
   "instFSeats": "Number of seats",
   "@instFSeats": {
@@ -18200,10 +18152,6 @@
   "@instFMonths": {
     "description": "Form: months."
   },
-  "instFPrice": "Price per seat (UZS/month)",
-  "@instFPrice": {
-    "description": "Form: price per seat per month."
-  },
   "instFTermStart": "Start date",
   "@instFTermStart": {
     "description": "Form: start date."
@@ -18212,41 +18160,32 @@
   "@instFPickDate": {
     "description": "Form: pick a date."
   },
-  "instFTotal": "Total: {sum} UZS (seats × months × price)",
-  "@instFTotal": {
-    "description": "Form: auto total = seats x months x price.",
-    "placeholders": {
-      "sum": {
-        "type": "String"
-      }
-    }
-  },
-  "instFSave": "Save and create codes",
+  "instFSave": "Save and prepare promo codes",
   "@instFSave": {
-    "description": "Form: save and create codes."
+    "description": "Form: save and add promo codes."
   },
   "instFInvalid": "Enter the name, seats (1–500) and months (1–60).",
   "@instFInvalid": {
     "description": "Form: invalid input."
   },
-  "instFError": "Could not save the institute. Try again.",
+  "instFError": "Could not save the organization. Try again.",
   "@instFError": {
     "description": "Form: server error."
   },
-  "instCreated": "Institute saved. {n} codes created.",
+  "instCreated": "Organization saved. {n} promo codes prepared.",
   "@instCreated": {
-    "description": "Institute saved: codes count.",
+    "description": "Organization saved: codes count.",
     "placeholders": {
       "n": {
         "type": "int"
       }
     }
   },
-  "instCodesTitle": "Codes",
+  "instCodesTitle": "Promo codes",
   "@instCodesTitle": {
     "description": "Codes section title."
   },
-  "instCodesNote": "Codes are visible to the admin only. Send them to the representative through a private channel only.",
+  "instCodesNote": "Promo codes are visible to the admin only. Send them to the representative through a private channel only.",
   "@instCodesNote": {
     "description": "Codes visible only to admin."
   },
@@ -18266,7 +18205,7 @@
   "@instColNo": {
     "description": "Codes table: number."
   },
-  "instColCode": "Code",
+  "instColCode": "Promo code",
   "@instColCode": {
     "description": "Codes table: code."
   },
@@ -18291,11 +18230,11 @@
   "@instStatusRevoked": {
     "description": "Code status: revoked."
   },
-  "instRevoke": "Revoke code",
+  "instRevoke": "Revoke promo code",
   "@instRevoke": {
     "description": "Revoke the code."
   },
-  "instRevokeTitle": "Revoke the code?",
+  "instRevokeTitle": "Revoke the promo code?",
   "@instRevokeTitle": {
     "description": "Revoke dialog title."
   },
@@ -18312,17 +18251,17 @@
   "@instRevokeKeep": {
     "description": "Revoke dialog: keep."
   },
-  "instRevokeDone": "The code was revoked.",
+  "instRevokeDone": "The promo code was revoked.",
   "@instRevokeDone": {
     "description": "Revoked."
   },
-  "instRevokeNotFound": "The code was not found or is already used.",
+  "instRevokeNotFound": "The promo code was not found or is already used.",
   "@instRevokeNotFound": {
     "description": "Revoke: not found or used."
   },
   "instDetailTerm": "Term: {from} — {to}",
   "@instDetailTerm": {
-    "description": "Institute term line.",
+    "description": "Organization term line.",
     "placeholders": {
       "from": {
         "type": "String"
@@ -18347,18 +18286,6 @@
       }
     }
   },
-  "instPdf": "Contract PDF",
-  "@instPdf": {
-    "description": "Contract PDF button."
-  },
-  "instPdfNote": "Licensor details come from the “Licensor details” setting. Codes go in a separate “Codes sheet” file and are never written into the contract.",
-  "@instPdfNote": {
-    "description": "Contract PDF note."
-  },
-  "instPdfError": "Could not create the PDF. Try again.",
-  "@instPdfError": {
-    "description": "PDF failed."
-  },
   "instGiftFrom": "Given by",
   "@instGiftFrom": {
     "description": "Gift: who gives."
@@ -18375,45 +18302,29 @@
   "@instGiftPlan": {
     "description": "Gift: plan."
   },
-  "instGiftCreate": "Create codes",
+  "instGiftCreate": "Prepare promo codes",
   "@instGiftCreate": {
-    "description": "Gift: create."
+    "description": "Gift: prepare codes."
   },
   "instGiftInvalid": "Enter who gave it, count (1–50) and days (1–1100).",
   "@instGiftInvalid": {
     "description": "Gift: invalid."
   },
-  "instGiftError": "Could not create the codes.",
+  "instGiftError": "Could not prepare the promo codes.",
   "@instGiftError": {
     "description": "Gift: failed."
   },
-  "instGiftDone": "{n} codes created.",
+  "instGiftDone": "{n} promo codes prepared.",
   "@instGiftDone": {
-    "description": "Gift: created.",
+    "description": "Gift: prepared.",
     "placeholders": {
       "n": {
         "type": "int"
       }
     }
   },
-  "instLicNote": "These details are stored on this device only and are placed only into the contract PDF. They are never sent to the server.",
-  "@instLicNote": {
-    "description": "Licensor details: local only."
-  },
-  "instLicTransit": "Transit account for legal entities",
-  "@instLicTransit": {
-    "description": "Licensor: transit account."
-  },
-  "instLicAccount": "Receiving account",
-  "@instLicAccount": {
-    "description": "Licensor: receiving account."
-  },
-  "instLicSave": "Save",
-  "@instLicSave": {
-    "description": "Licensor: save."
-  },
-  "instLicSaved": "Saved.",
-  "@instLicSaved": {
-    "description": "Licensor: saved."
+  "instOpen": "Open organization page",
+  "@instOpen": {
+    "description": "Open the organization page."
   }
 }

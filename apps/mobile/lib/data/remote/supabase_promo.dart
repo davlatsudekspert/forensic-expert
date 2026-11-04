@@ -81,16 +81,6 @@ class SupabaseAdminInstituteService implements AdminInstituteService {
   @override
   bool get isConfigured => true;
 
-  static String? _s(String v) {
-    final t = v.trim();
-    return t.isEmpty ? null : t;
-  }
-
-  static String _date(DateTime d) =>
-      '${d.year.toString().padLeft(4, '0')}-'
-      '${d.month.toString().padLeft(2, '0')}-'
-      '${d.day.toString().padLeft(2, '0')}';
-
   static PlanResult<IssuedCodes> _issued(Object? v) {
     final m = _map(v);
     if (m == null) return const PlanResult.fail(PlanFailure.server);
@@ -118,17 +108,17 @@ class SupabaseAdminInstituteService implements AdminInstituteService {
       'p_name': d.name.trim(),
       'p_seats': d.seats,
       'p_months': d.months,
-      'p_price': d.pricePerSeat,
+      'p_price': null,
       'p_term_start': d.termStart?.toUtc().toIso8601String(),
-      'p_contract_no': _s(d.contractNo),
-      'p_contract_date': d.contractDate == null ? null : _date(d.contractDate!),
-      'p_director': _s(d.director),
-      'p_phone': _s(d.phone),
-      'p_stir': _s(d.stir),
-      'p_bank': _s(d.bank),
-      'p_account': _s(d.account),
-      'p_mfo': _s(d.mfo),
-      'p_address': _s(d.address),
+      'p_contract_no': null,
+      'p_contract_date': null,
+      'p_director': null,
+      'p_phone': null,
+      'p_stir': null,
+      'p_bank': null,
+      'p_account': null,
+      'p_mfo': null,
+      'p_address': null,
     });
     if (!res.ok) return PlanResult.fail(res.failure!);
     return _issued(res.value);

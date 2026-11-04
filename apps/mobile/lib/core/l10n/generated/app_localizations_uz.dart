@@ -13583,17 +13583,17 @@ class AppLocalizationsUz extends AppLocalizations {
   String get grpDeleteYes => 'O‘chirish';
 
   @override
-  String get promoRowTitle => 'Institut kodi / promokod';
+  String get promoRowTitle => 'Promokod';
 
   @override
-  String get promoRowHint => 'Ustoz yoki institut bergan kod';
+  String get promoRowHint => 'Sizga berilgan promokod';
 
   @override
   String get promoIntro =>
-      'Institut yoki ustoz bergan kodni kiriting. Bu to‘lov emas: kod hisobingizda ustoz imkoniyatlarini ochadi.';
+      'Sizga berilgan promokodni kiriting. Promokod hisobingizda ustoz imkoniyatlarini ochadi.';
 
   @override
-  String get promoFieldLabel => 'Kod';
+  String get promoFieldLabel => 'Promokod';
 
   @override
   String get promoFieldHint => 'Bo‘shliq va defis e’tiborsiz';
@@ -13602,23 +13602,23 @@ class AppLocalizationsUz extends AppLocalizations {
   String get promoSubmit => 'Faollashtirish';
 
   @override
-  String get promoEmpty => 'Kodni kiriting.';
+  String get promoEmpty => 'Promokodni kiriting.';
 
   @override
-  String get promoInvalid => 'Kod noto‘g‘ri';
+  String get promoInvalid => 'Promokod noto‘g‘ri';
 
   @override
-  String get promoUsed => 'Kod ishlatilgan';
+  String get promoUsed => 'Promokod ishlatilgan';
 
   @override
   String get promoAlreadyYours =>
-      'Bu kod allaqachon sizning hisobingizda faollashtirilgan.';
+      'Bu promokod allaqachon sizning hisobingizda faollashtirilgan.';
 
   @override
-  String get promoExpired => 'Kodning muddati tugagan';
+  String get promoExpired => 'Promokodning muddati tugagan';
 
   @override
-  String get promoRevoked => 'Kod bekor qilingan';
+  String get promoRevoked => 'Promokod bekor qilingan';
 
   @override
   String get promoTooMany =>
@@ -13633,21 +13633,19 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get promoError =>
-      'Kodni tekshirib bo‘lmadi. Keyinroq qayta urinib ko‘ring.';
+      'Promokodni tekshirib bo‘lmadi. Keyinroq qayta urinib ko‘ring.';
 
   @override
-  String promoOk(String plan, String label, String date) {
-    return '$plan ochildi: $label, $date gacha';
+  String promoOk(String label, String date) {
+    return 'Promokod qabul qilindi: $label, $date gacha';
   }
 
   @override
-  String promoOkShort(String plan) {
-    return '$plan ochildi';
-  }
+  String get promoOkShort => 'Promokod qabul qilindi';
 
   @override
   String promoLabelInstitute(String name) {
-    return 'Institut: $name';
+    return '$name';
   }
 
   @override
@@ -13695,22 +13693,19 @@ class AppLocalizationsUz extends AppLocalizations {
       'Hali ham joy yo‘q. Yana bir qurilmani chiqaring.';
 
   @override
-  String get instNavTitle => 'Institutlar';
+  String get instNavTitle => 'Tashkilotlar';
 
   @override
-  String get instNavHint => 'Litsenziya kodlari, shartnoma PDF';
+  String get instNavHint => 'Tashkilotlar va promokodlar';
 
   @override
-  String get instNew => 'Yangi institut';
+  String get instNew => 'Yangi tashkilot';
 
   @override
   String get instGift => 'Sovg‘a promokod';
 
   @override
-  String get instLicensor => 'Litsenziar rekvizitlari';
-
-  @override
-  String get instEmpty => 'Hali institut yo‘q.';
+  String get instEmpty => 'Hali tashkilot yo‘q.';
 
   @override
   String get instLoadError =>
@@ -13727,34 +13722,7 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String get instFName => 'Nomi';
-
-  @override
-  String get instFAddress => 'Manzil';
-
-  @override
-  String get instFStir => 'STIR (soliq raqami)';
-
-  @override
-  String get instFBank => 'Bank nomi';
-
-  @override
-  String get instFAccount => 'Hisob raqam';
-
-  @override
-  String get instFMfo => 'MFO (bank kodi)';
-
-  @override
-  String get instFDirector => 'Rahbar F.I.O.';
-
-  @override
-  String get instFPhone => 'Telefon';
-
-  @override
-  String get instFContractNo => 'Shartnoma raqami';
-
-  @override
-  String get instFContractDate => 'Shartnoma sanasi';
+  String get instFName => 'Tashkilot nomi';
 
   @override
   String get instFSeats => 'O‘rinlar soni';
@@ -13763,40 +13731,32 @@ class AppLocalizationsUz extends AppLocalizations {
   String get instFMonths => 'Oylar soni';
 
   @override
-  String get instFPrice => 'Bitta o‘rin narxi (so‘m/oy)';
-
-  @override
   String get instFTermStart => 'Boshlanish sanasi';
 
   @override
   String get instFPickDate => 'Sanani tanlang';
 
   @override
-  String instFTotal(String sum) {
-    return 'Jami summa: $sum so‘m (o‘rinlar × oylar × narx)';
-  }
-
-  @override
-  String get instFSave => 'Saqlash va kodlar yaratish';
+  String get instFSave => 'Saqlash va promokodlar tayyorlash';
 
   @override
   String get instFInvalid =>
       'Nomini, o‘rinlar (1–500) va oylar (1–60) sonini to‘g‘ri kiriting.';
 
   @override
-  String get instFError => 'Institutni saqlab bo‘lmadi. Qayta urinib ko‘ring.';
+  String get instFError => 'Tashkilotni saqlab bo‘lmadi. Qayta urinib ko‘ring.';
 
   @override
   String instCreated(int n) {
-    return 'Institut saqlandi. $n ta kod yaratildi.';
+    return 'Tashkilot saqlandi. $n ta promokod tayyorlandi.';
   }
 
   @override
-  String get instCodesTitle => 'Kodlar';
+  String get instCodesTitle => 'Promokodlar';
 
   @override
   String get instCodesNote =>
-      'Kodlar faqat adminga ko‘rinadi. Ularni faqat vakilga yopiq kanal orqali yuboring.';
+      'Promokodlar faqat adminga ko‘rinadi. Ularni faqat vakilga yopiq kanal orqali yuboring.';
 
   @override
   String get instCopy => 'Nusxalash';
@@ -13811,7 +13771,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get instColNo => '№';
 
   @override
-  String get instColCode => 'Kod';
+  String get instColCode => 'Promokod';
 
   @override
   String get instColStatus => 'Holati';
@@ -13828,10 +13788,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get instStatusRevoked => 'Bekor qilingan';
 
   @override
-  String get instRevoke => 'Kodni bekor qilish';
+  String get instRevoke => 'Promokodni bekor qilish';
 
   @override
-  String get instRevokeTitle => 'Kodni bekor qilasizmi?';
+  String get instRevokeTitle => 'Promokod bekor qilinsinmi?';
 
   @override
   String instRevokeBody(String code) {
@@ -13842,10 +13802,11 @@ class AppLocalizationsUz extends AppLocalizations {
   String get instRevokeKeep => 'Qoldirish';
 
   @override
-  String get instRevokeDone => 'Kod bekor qilindi.';
+  String get instRevokeDone => 'Promokod bekor qilindi.';
 
   @override
-  String get instRevokeNotFound => 'Kod topilmadi yoki allaqachon ishlatilgan.';
+  String get instRevokeNotFound =>
+      'Promokod topilmadi yoki allaqachon ishlatilgan.';
 
   @override
   String instDetailTerm(String from, String to) {
@@ -13856,16 +13817,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String instDetailSeats(int seats, int used, int revoked) {
     return 'O‘rinlar: $seats · ishlatilgan: $used · bekor: $revoked';
   }
-
-  @override
-  String get instPdf => 'Shartnoma PDF';
-
-  @override
-  String get instPdfNote =>
-      'Litsenziar rekvizitlari «Litsenziar rekvizitlari» sozlamasidan olinadi. Kodlar alohida «Kodlar varag‘i» faylida; shartnomaga yozilmaydi.';
-
-  @override
-  String get instPdfError => 'PDF yaratib bo‘lmadi. Qayta urinib ko‘ring.';
 
   @override
   String get instGiftFrom => 'Kim bergan';
@@ -13880,33 +13831,20 @@ class AppLocalizationsUz extends AppLocalizations {
   String get instGiftPlan => 'Reja';
 
   @override
-  String get instGiftCreate => 'Kodlar yaratish';
+  String get instGiftCreate => 'Promokodlar tayyorlash';
 
   @override
   String get instGiftInvalid =>
       'Kim bergan, soni (1–50) va kunlarni (1–1100) to‘g‘ri kiriting.';
 
   @override
-  String get instGiftError => 'Kodlarni yaratib bo‘lmadi.';
+  String get instGiftError => 'Promokodlarni tayyorlab bo‘lmadi.';
 
   @override
   String instGiftDone(int n) {
-    return '$n ta kod yaratildi.';
+    return '$n ta promokod tayyorlandi.';
   }
 
   @override
-  String get instLicNote =>
-      'Bu ma’lumotlar faqat shu qurilmada saqlanadi va faqat shartnoma PDF’iga qo‘yiladi. Serverga yuborilmaydi.';
-
-  @override
-  String get instLicTransit => 'Yuridik shaxslar uchun tranzit hisobi';
-
-  @override
-  String get instLicAccount => 'Qabul qiluvchi hisobi';
-
-  @override
-  String get instLicSave => 'Saqlash';
-
-  @override
-  String get instLicSaved => 'Saqlandi.';
+  String get instOpen => 'Tashkilot sahifasini ochish';
 }

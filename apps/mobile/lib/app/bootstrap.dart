@@ -19,7 +19,6 @@ import '../data/local/assessment_test_stats_store.dart';
 import '../data/local/casebook_store.dart';
 import '../data/local/court_history_store.dart';
 import '../data/local/group_invite_store.dart';
-import '../data/local/licensor_profile_store.dart';
 import '../data/local/oral_exam_store.dart';
 import '../data/local/oral_resume_store.dart';
 import '../data/local/pro_offer_store.dart';
@@ -193,10 +192,6 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
         }),
         proOfferStoreProvider.overrideWithValue(
           SharedPrefsProOfferStore(prefs),
-        ),
-        // Litsenziar rekvizitlari: faqat admin qurilmasida (kodda/gitda yo‘q).
-        licensorProfileStoreProvider.overrideWithValue(
-          SharedPrefsLicensorProfileStore(prefs),
         ),
         // Release’da backend bo‘lmasa reja berilmaydi (demo/Fake emas).
         if (supabase == null && kReleaseMode)

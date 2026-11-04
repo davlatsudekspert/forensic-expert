@@ -28,7 +28,7 @@ import '../domain/referral/referral_models.dart';
 import '../domain/support/support_models.dart';
 import '../features/account/presentation/auth_screens.dart';
 import '../features/admin/presentation/admin_class_tests_screen.dart';
-import '../features/admin/presentation/admin_gift_licensor_screens.dart';
+import '../features/admin/presentation/admin_gift_screen.dart';
 import '../features/admin/presentation/admin_institute_form_screen.dart';
 import '../features/admin/presentation/admin_institute_screen.dart';
 import '../features/admin/presentation/admin_institutes_screen.dart';
@@ -1517,11 +1517,6 @@ final routerProvider = Provider<GoRouter>((ref) {
                             path: 'gift',
                             parentNavigatorKey: rootKey,
                             builder: (c, s) => const AdminGiftCodesScreen(),
-                          ),
-                          GoRoute(
-                            path: 'licensor',
-                            parentNavigatorKey: rootKey,
-                            builder: (c, s) => const AdminLicensorScreen(),
                           ),
                           GoRoute(
                             path: ':id',
