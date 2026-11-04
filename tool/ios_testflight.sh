@@ -91,6 +91,17 @@ codesign -dv --verbose=2 "$APP" 2>&1 | grep -E "Authority=Apple Distribution|Tea
 security cms -D -i "$APP/embedded.mobileprovision" > "$CHECK_DIR/profile.plist"
 /usr/libexec/PlistBuddy -c 'Print :Entitlements:get-task-allow' "$CHECK_DIR/profile.plist" 2>/dev/null | grep -q false \
   || { echo "::error::profile is not an App Store distribution profile"; exit 1; }
+# «Apple bilan kirish» huquqi profilda bo‘lishi shart (yo‘qsa native kirish
+# qurilmada xatoga tushadi — App ID’da Sign in with Apple yoqilmagan bo‘ladi).
+if /usr/libexec/PlistBuddy -c 'Print :Entitlements:com.apple.developer.applesignin' "$CHECK_DIR/profile.plist" >/dev/null 2>&1; then
+  echo "profile: Sign in with Apple — BOR"
+else
+  echo "profile: Sign in with Apple — YO‘Q"
+  if [ "${SOCIAL_SIGNIN:-}" = "true" ]; then
+    echo "::error::provisioning profile has no Sign in with Apple capability — enable it on the App ID (Identifiers → uz.forensicexpert.app) and rebuild"
+    exit 1
+  fi
+fi
 rm -rf "$CHECK_DIR"
 xcrun altool --validate-app -f "$IPA" -t ios \
   --apiKey "$ASC_KEY_ID" --apiIssuer "$ASC_ISSUER_ID" \
