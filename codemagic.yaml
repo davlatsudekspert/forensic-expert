@@ -21,16 +21,6 @@ workflows:
       vars:
         SOCIAL_SIGNIN: "true"
         STORE_REVIEW: "false"
-    # VAQTINCHA (Apple kirish tuzatishini sinash uchun): shu branch’ga push qilinganda
-    # iOS build o‘zi ishga tushadi (ilova yoki build skripti o‘zgarganda). Sinov tugagach OLIB TASHLANADI.
-    triggering:
-      events:
-        - push
-      branch_patterns:
-        - pattern: "claude/pro-0.4.0"
-          include: true
-          source: true
-      cancel_previous_builds: true
     scripts:
       - name: Flutter dependencies
         script: |
