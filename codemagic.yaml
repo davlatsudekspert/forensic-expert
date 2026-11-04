@@ -51,3 +51,59 @@ workflows:
           bash ../../tool/ios_testflight.sh
     artifacts:
       - apps/mobile/build/ios/ipa/*.ipa
+
+  # Android: APK (sinov) + AAB (Play). macOS M2 mashinada ishlaydi (bepul 500
+  # daqiqa shu mashinaga beriladi; Linux uchun bepul daqiqa yo'q).
+  # Guruh `fe_android` (ixtiyoriy, Secure): ANDROID_KEYSTORE_BASE64,
+  # ANDROID_KEYSTORE_PASSWORD, ANDROID_KEY_ALIAS, ANDROID_KEY_PASSWORD.
+  # Ular bo'lmasa APK DEBUG imzo bilan chiqadi (faqat sinov; Google kirish ishlamaydi,
+  # Play'ga yuklab bo'lmaydi).
+  android-release:
+    name: Android APK + AAB
+    instance_type: mac_mini_m2
+    max_build_duration: 45
+    environment:
+      groups:
+        - fe_ios
+        - fe_android
+      flutter: 3.47.6
+      java: 17
+      vars:
+        SOCIAL_SIGNIN: "true"
+        STORE_REVIEW: "false"
+    scripts:
+      - name: Flutter dependencies
+        script: |
+          flutter pub get --enforce-lockfile
+      - name: Release keystore (if provided)
+        script: |
+          if [ -n "$ANDROID_KEYSTORE_BASE64" ]; then
+            echo "$ANDROID_KEYSTORE_BASE64" | base64 --decode > "$CM_BUILD_DIR/upload.jks"
+            echo "FE_KEYSTORE_PATH=$CM_BUILD_DIR/upload.jks" >> "$CM_ENV"
+            echo "FE_KEYSTORE_PASSWORD=$ANDROID_KEYSTORE_PASSWORD" >> "$CM_ENV"
+            echo "FE_KEY_ALIAS=$ANDROID_KEY_ALIAS" >> "$CM_ENV"
+            echo "FE_KEY_PASSWORD=$ANDROID_KEY_PASSWORD" >> "$CM_ENV"
+            echo "ORG_GRADLE_PROJECT_requireReleaseSigning=true" >> "$CM_ENV"
+          else
+            echo "WARNING: no keystore -> DEBUG-signed APK (test only)"
+          fi
+      - name: Build APK and AAB
+        script: |
+          cd apps/mobile
+          DEFINES=""
+          if [ -n "$FE_SUPABASE_URL" ] && [ -n "$FE_SUPABASE_ANON_KEY" ]; then
+            DEFINES="--dart-define=FE_SUPABASE_URL=$FE_SUPABASE_URL --dart-define=FE_SUPABASE_ANON_KEY=$FE_SUPABASE_ANON_KEY --dart-define=FE_AI_REMOTE=true"
+          fi
+          if [ "$STORE_REVIEW" = "true" ]; then
+            DEFINES="$DEFINES --dart-define=FE_REQUIRE_LOGIN=false"
+          fi
+          if [ "$SOCIAL_SIGNIN" = "true" ]; then
+            DEFINES="$DEFINES --dart-define=FE_SOCIAL_SIGNIN=true"
+            DEFINES="$DEFINES --dart-define=GOOGLE_SERVER_CLIENT_ID=49997032746-qtb358q6gkh7gsnsn6drj7oa98b26u25.apps.googleusercontent.com"
+            DEFINES="$DEFINES --dart-define=GOOGLE_IOS_CLIENT_ID=49997032746-e56rnelh90csadojmpmtv6np2ig8jh7m.apps.googleusercontent.com"
+          fi
+          flutter build apk --release $DEFINES
+          flutter build appbundle --release $DEFINES
+    artifacts:
+      - apps/mobile/build/app/outputs/flutter-apk/*.apk
+      - apps/mobile/build/app/outputs/bundle/release/*.aab
