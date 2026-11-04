@@ -13705,4 +13705,326 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get grpDeleteYes => 'Удалить';
+
+  @override
+  String get promoRowTitle => 'Код института / промокод';
+
+  @override
+  String get promoRowHint => 'Код от преподавателя или института';
+
+  @override
+  String get promoIntro =>
+      'Введите код, который выдал институт или преподаватель. Это не оплата: код открывает возможности преподавателя в вашем аккаунте.';
+
+  @override
+  String get promoFieldLabel => 'Код';
+
+  @override
+  String get promoFieldHint => 'Пробелы и дефисы игнорируются';
+
+  @override
+  String get promoSubmit => 'Активировать';
+
+  @override
+  String get promoEmpty => 'Введите код.';
+
+  @override
+  String get promoInvalid => 'Неверный код';
+
+  @override
+  String get promoUsed => 'Код уже использован';
+
+  @override
+  String get promoAlreadyYours => 'Этот код уже активирован в вашем аккаунте.';
+
+  @override
+  String get promoExpired => 'Срок действия кода истёк';
+
+  @override
+  String get promoRevoked => 'Код отозван';
+
+  @override
+  String get promoTooMany => 'Слишком много попыток. Повторите позже.';
+
+  @override
+  String get promoNotSigned => 'Сначала войдите в аккаунт.';
+
+  @override
+  String get promoOffline => 'Нет сети. Проверьте соединение и повторите.';
+
+  @override
+  String get promoError => 'Не удалось проверить код. Повторите позже.';
+
+  @override
+  String promoOk(String plan, String label, String date) {
+    return '$plan открыт: $label, до $date';
+  }
+
+  @override
+  String promoOkShort(String plan) {
+    return '$plan открыт';
+  }
+
+  @override
+  String promoLabelInstitute(String name) {
+    return 'Институт: $name';
+  }
+
+  @override
+  String promoLabelGift(String name) {
+    return 'Подарок: $name';
+  }
+
+  @override
+  String promoUntil(String date) {
+    return 'до $date';
+  }
+
+  @override
+  String get promoActiveTitle => 'Действующий доступ';
+
+  @override
+  String devLimitTitle(int limit) {
+    return 'Этот аккаунт используется на $limit устройствах';
+  }
+
+  @override
+  String get devLimitBody =>
+      'Чтобы добавить это устройство, удалите одно из старых. Пока приложение продолжает работать.';
+
+  @override
+  String devLimitLastSeen(String date) {
+    return 'Последний вход: $date';
+  }
+
+  @override
+  String get devLimitUnknown => 'Устройство';
+
+  @override
+  String get devLimitRemove => 'Удалить';
+
+  @override
+  String get devLimitLater => 'Позже';
+
+  @override
+  String get devLimitRemoveError => 'Не удалось удалить устройство. Повторите.';
+
+  @override
+  String get devLimitStillFull =>
+      'Мест всё ещё нет. Удалите ещё одно устройство.';
+
+  @override
+  String get instNavTitle => 'Институты';
+
+  @override
+  String get instNavHint => 'Коды лицензии, PDF договора';
+
+  @override
+  String get instNew => 'Новый институт';
+
+  @override
+  String get instGift => 'Подарочный промокод';
+
+  @override
+  String get instLicensor => 'Реквизиты лицензиара';
+
+  @override
+  String get instEmpty => 'Институтов пока нет.';
+
+  @override
+  String get instLoadError => 'Не удалось загрузить данные. Повторите.';
+
+  @override
+  String instRowInfo(int seats, int used) {
+    return 'Мест: $seats · использовано: $used';
+  }
+
+  @override
+  String instRowUntil(String date) {
+    return 'до $date';
+  }
+
+  @override
+  String get instFName => 'Название';
+
+  @override
+  String get instFAddress => 'Адрес';
+
+  @override
+  String get instFStir => 'ИНН (STIR)';
+
+  @override
+  String get instFBank => 'Банк';
+
+  @override
+  String get instFAccount => 'Расчётный счёт';
+
+  @override
+  String get instFMfo => 'МФО';
+
+  @override
+  String get instFDirector => 'Руководитель (Ф.И.О.)';
+
+  @override
+  String get instFPhone => 'Телефон';
+
+  @override
+  String get instFContractNo => 'Номер договора';
+
+  @override
+  String get instFContractDate => 'Дата договора';
+
+  @override
+  String get instFSeats => 'Количество мест';
+
+  @override
+  String get instFMonths => 'Количество месяцев';
+
+  @override
+  String get instFPrice => 'Цена одного места (сум/мес.)';
+
+  @override
+  String get instFTermStart => 'Дата начала';
+
+  @override
+  String get instFPickDate => 'Выберите дату';
+
+  @override
+  String instFTotal(String sum) {
+    return 'Итого: $sum сум (места × месяцы × цена)';
+  }
+
+  @override
+  String get instFSave => 'Сохранить и создать коды';
+
+  @override
+  String get instFInvalid =>
+      'Укажите название, число мест (1–500) и месяцев (1–60).';
+
+  @override
+  String get instFError => 'Не удалось сохранить институт. Повторите.';
+
+  @override
+  String instCreated(int n) {
+    return 'Институт сохранён. Создано кодов: $n.';
+  }
+
+  @override
+  String get instCodesTitle => 'Коды';
+
+  @override
+  String get instCodesNote =>
+      'Коды видны только администратору. Передавайте их только представителю по закрытому каналу.';
+
+  @override
+  String get instCopy => 'Копировать';
+
+  @override
+  String get instCopyAll => 'Копировать все';
+
+  @override
+  String get instCopied => 'Скопировано';
+
+  @override
+  String get instColNo => '№';
+
+  @override
+  String get instColCode => 'Код';
+
+  @override
+  String get instColStatus => 'Статус';
+
+  @override
+  String get instStatusFree => 'Свободен';
+
+  @override
+  String instStatusRedeemed(String email) {
+    return 'Использован: $email';
+  }
+
+  @override
+  String get instStatusRevoked => 'Отозван';
+
+  @override
+  String get instRevoke => 'Отозвать код';
+
+  @override
+  String get instRevokeTitle => 'Отозвать код?';
+
+  @override
+  String instRevokeBody(String code) {
+    return '$code: код перестанет работать. Использованный код отозвать нельзя.';
+  }
+
+  @override
+  String get instRevokeKeep => 'Оставить';
+
+  @override
+  String get instRevokeDone => 'Код отозван.';
+
+  @override
+  String get instRevokeNotFound => 'Код не найден или уже использован.';
+
+  @override
+  String instDetailTerm(String from, String to) {
+    return 'Срок: $from — $to';
+  }
+
+  @override
+  String instDetailSeats(int seats, int used, int revoked) {
+    return 'Мест: $seats · использовано: $used · отозвано: $revoked';
+  }
+
+  @override
+  String get instPdf => 'PDF договора';
+
+  @override
+  String get instPdfNote =>
+      'Реквизиты лицензиара берутся из настройки «Реквизиты лицензиара». Коды — в отдельном файле «Лист кодов», в договор они не вносятся.';
+
+  @override
+  String get instPdfError => 'Не удалось создать PDF. Повторите.';
+
+  @override
+  String get instGiftFrom => 'От кого';
+
+  @override
+  String get instGiftCount => 'Количество (1–50)';
+
+  @override
+  String get instGiftDays => 'Дней';
+
+  @override
+  String get instGiftPlan => 'Тариф';
+
+  @override
+  String get instGiftCreate => 'Создать коды';
+
+  @override
+  String get instGiftInvalid =>
+      'Укажите, от кого, количество (1–50) и дни (1–1100).';
+
+  @override
+  String get instGiftError => 'Не удалось создать коды.';
+
+  @override
+  String instGiftDone(int n) {
+    return 'Создано кодов: $n.';
+  }
+
+  @override
+  String get instLicNote =>
+      'Эти данные хранятся только на этом устройстве и подставляются только в PDF договора. На сервер не отправляются.';
+
+  @override
+  String get instLicTransit => 'Транзитный счёт для юридических лиц';
+
+  @override
+  String get instLicAccount => 'Счёт получателя';
+
+  @override
+  String get instLicSave => 'Сохранить';
+
+  @override
+  String get instLicSaved => 'Сохранено.';
 }

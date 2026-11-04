@@ -28,6 +28,10 @@ import '../domain/referral/referral_models.dart';
 import '../domain/support/support_models.dart';
 import '../features/account/presentation/auth_screens.dart';
 import '../features/admin/presentation/admin_class_tests_screen.dart';
+import '../features/admin/presentation/admin_gift_licensor_screens.dart';
+import '../features/admin/presentation/admin_institute_form_screen.dart';
+import '../features/admin/presentation/admin_institute_screen.dart';
+import '../features/admin/presentation/admin_institutes_screen.dart';
 import '../features/admin/presentation/admin_plans_screen.dart';
 import '../features/admin/presentation/admin_screen.dart';
 import '../features/admin/presentation/admin_support_screens.dart';
@@ -104,6 +108,7 @@ import '../features/professional/presentation/account_choice_screen.dart';
 import '../features/professional/presentation/profile_edit_screen.dart';
 import '../features/professional/presentation/review_section.dart';
 import '../features/professional/presentation/verification_screens.dart';
+import '../features/profile/presentation/institute_code_screen.dart';
 import '../features/profile/presentation/legal_screens.dart';
 import '../features/profile/presentation/profile_screen.dart';
 import '../features/profile/presentation/settings_pickers.dart';
@@ -1379,6 +1384,11 @@ final routerProvider = Provider<GoRouter>((ref) {
                     builder: (c, s) => const ModePickerScreen(),
                   ),
                   GoRoute(
+                    path: 'institute-code',
+                    parentNavigatorKey: rootKey,
+                    builder: (c, s) => const InstituteCodeScreen(),
+                  ),
+                  GoRoute(
                     path: 'jurisdiction',
                     parentNavigatorKey: rootKey,
                     builder: (c, s) => const JurisdictionSelectScreen(),
@@ -1492,6 +1502,35 @@ final routerProvider = Provider<GoRouter>((ref) {
                         path: 'tests',
                         parentNavigatorKey: rootKey,
                         builder: (c, s) => const AdminClassTestsScreen(),
+                      ),
+                      GoRoute(
+                        path: 'institutes',
+                        parentNavigatorKey: rootKey,
+                        builder: (c, s) => const AdminInstitutesScreen(),
+                        routes: [
+                          GoRoute(
+                            path: 'new',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => const AdminInstituteFormScreen(),
+                          ),
+                          GoRoute(
+                            path: 'gift',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => const AdminGiftCodesScreen(),
+                          ),
+                          GoRoute(
+                            path: 'licensor',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => const AdminLicensorScreen(),
+                          ),
+                          GoRoute(
+                            path: ':id',
+                            parentNavigatorKey: rootKey,
+                            builder: (c, s) => AdminInstituteScreen(
+                              instituteId: s.pathParameters['id']!,
+                            ),
+                          ),
+                        ],
                       ),
                       GoRoute(
                         path: 'reports',

@@ -13648,4 +13648,325 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get grpDeleteYes => 'Delete';
+
+  @override
+  String get promoRowTitle => 'Institute code / promo code';
+
+  @override
+  String get promoRowHint => 'A code from a teacher or an institute';
+
+  @override
+  String get promoIntro =>
+      'Enter the code given by an institute or a teacher. This is not a payment: the code unlocks teacher features on your account.';
+
+  @override
+  String get promoFieldLabel => 'Code';
+
+  @override
+  String get promoFieldHint => 'Spaces and dashes are ignored';
+
+  @override
+  String get promoSubmit => 'Activate';
+
+  @override
+  String get promoEmpty => 'Enter the code.';
+
+  @override
+  String get promoInvalid => 'The code is incorrect';
+
+  @override
+  String get promoUsed => 'The code has already been used';
+
+  @override
+  String get promoAlreadyYours =>
+      'This code is already active on your account.';
+
+  @override
+  String get promoExpired => 'The code has expired';
+
+  @override
+  String get promoRevoked => 'The code has been revoked';
+
+  @override
+  String get promoTooMany => 'Too many attempts. Please try again later.';
+
+  @override
+  String get promoNotSigned => 'Please sign in first.';
+
+  @override
+  String get promoOffline => 'No connection. Check your network and try again.';
+
+  @override
+  String get promoError => 'Could not check the code. Please try again later.';
+
+  @override
+  String promoOk(String plan, String label, String date) {
+    return '$plan unlocked: $label, until $date';
+  }
+
+  @override
+  String promoOkShort(String plan) {
+    return '$plan unlocked';
+  }
+
+  @override
+  String promoLabelInstitute(String name) {
+    return 'Institute: $name';
+  }
+
+  @override
+  String promoLabelGift(String name) {
+    return 'Gift: $name';
+  }
+
+  @override
+  String promoUntil(String date) {
+    return 'until $date';
+  }
+
+  @override
+  String get promoActiveTitle => 'Active access';
+
+  @override
+  String devLimitTitle(int limit) {
+    return 'This account is used on $limit devices';
+  }
+
+  @override
+  String get devLimitBody =>
+      'To add this device, remove an old one. For now the app keeps working.';
+
+  @override
+  String devLimitLastSeen(String date) {
+    return 'Last sign-in: $date';
+  }
+
+  @override
+  String get devLimitUnknown => 'Device';
+
+  @override
+  String get devLimitRemove => 'Remove';
+
+  @override
+  String get devLimitLater => 'Later';
+
+  @override
+  String get devLimitRemoveError => 'Could not remove the device. Try again.';
+
+  @override
+  String get devLimitStillFull => 'Still no free slot. Remove another device.';
+
+  @override
+  String get instNavTitle => 'Institutes';
+
+  @override
+  String get instNavHint => 'Licence codes, contract PDF';
+
+  @override
+  String get instNew => 'New institute';
+
+  @override
+  String get instGift => 'Gift promo code';
+
+  @override
+  String get instLicensor => 'Licensor details';
+
+  @override
+  String get instEmpty => 'No institutes yet.';
+
+  @override
+  String get instLoadError => 'Could not load the data. Try again.';
+
+  @override
+  String instRowInfo(int seats, int used) {
+    return 'Seats: $seats · used: $used';
+  }
+
+  @override
+  String instRowUntil(String date) {
+    return 'until $date';
+  }
+
+  @override
+  String get instFName => 'Name';
+
+  @override
+  String get instFAddress => 'Address';
+
+  @override
+  String get instFStir => 'Tax ID (STIR)';
+
+  @override
+  String get instFBank => 'Bank';
+
+  @override
+  String get instFAccount => 'Account number';
+
+  @override
+  String get instFMfo => 'MFO';
+
+  @override
+  String get instFDirector => 'Director (full name)';
+
+  @override
+  String get instFPhone => 'Phone';
+
+  @override
+  String get instFContractNo => 'Contract number';
+
+  @override
+  String get instFContractDate => 'Contract date';
+
+  @override
+  String get instFSeats => 'Number of seats';
+
+  @override
+  String get instFMonths => 'Number of months';
+
+  @override
+  String get instFPrice => 'Price per seat (UZS/month)';
+
+  @override
+  String get instFTermStart => 'Start date';
+
+  @override
+  String get instFPickDate => 'Pick a date';
+
+  @override
+  String instFTotal(String sum) {
+    return 'Total: $sum UZS (seats × months × price)';
+  }
+
+  @override
+  String get instFSave => 'Save and create codes';
+
+  @override
+  String get instFInvalid => 'Enter the name, seats (1–500) and months (1–60).';
+
+  @override
+  String get instFError => 'Could not save the institute. Try again.';
+
+  @override
+  String instCreated(int n) {
+    return 'Institute saved. $n codes created.';
+  }
+
+  @override
+  String get instCodesTitle => 'Codes';
+
+  @override
+  String get instCodesNote =>
+      'Codes are visible to the admin only. Send them to the representative through a private channel only.';
+
+  @override
+  String get instCopy => 'Copy';
+
+  @override
+  String get instCopyAll => 'Copy all';
+
+  @override
+  String get instCopied => 'Copied';
+
+  @override
+  String get instColNo => '#';
+
+  @override
+  String get instColCode => 'Code';
+
+  @override
+  String get instColStatus => 'Status';
+
+  @override
+  String get instStatusFree => 'Free';
+
+  @override
+  String instStatusRedeemed(String email) {
+    return 'Used: $email';
+  }
+
+  @override
+  String get instStatusRevoked => 'Revoked';
+
+  @override
+  String get instRevoke => 'Revoke code';
+
+  @override
+  String get instRevokeTitle => 'Revoke the code?';
+
+  @override
+  String instRevokeBody(String code) {
+    return '$code: the code will stop working. A used code cannot be revoked.';
+  }
+
+  @override
+  String get instRevokeKeep => 'Keep';
+
+  @override
+  String get instRevokeDone => 'The code was revoked.';
+
+  @override
+  String get instRevokeNotFound => 'The code was not found or is already used.';
+
+  @override
+  String instDetailTerm(String from, String to) {
+    return 'Term: $from — $to';
+  }
+
+  @override
+  String instDetailSeats(int seats, int used, int revoked) {
+    return 'Seats: $seats · used: $used · revoked: $revoked';
+  }
+
+  @override
+  String get instPdf => 'Contract PDF';
+
+  @override
+  String get instPdfNote =>
+      'Licensor details come from the “Licensor details” setting. Codes go in a separate “Codes sheet” file and are never written into the contract.';
+
+  @override
+  String get instPdfError => 'Could not create the PDF. Try again.';
+
+  @override
+  String get instGiftFrom => 'Given by';
+
+  @override
+  String get instGiftCount => 'Count (1–50)';
+
+  @override
+  String get instGiftDays => 'Days';
+
+  @override
+  String get instGiftPlan => 'Plan';
+
+  @override
+  String get instGiftCreate => 'Create codes';
+
+  @override
+  String get instGiftInvalid =>
+      'Enter who gave it, count (1–50) and days (1–1100).';
+
+  @override
+  String get instGiftError => 'Could not create the codes.';
+
+  @override
+  String instGiftDone(int n) {
+    return '$n codes created.';
+  }
+
+  @override
+  String get instLicNote =>
+      'These details are stored on this device only and are placed only into the contract PDF. They are never sent to the server.';
+
+  @override
+  String get instLicTransit => 'Transit account for legal entities';
+
+  @override
+  String get instLicAccount => 'Receiving account';
+
+  @override
+  String get instLicSave => 'Save';
+
+  @override
+  String get instLicSaved => 'Saved.';
 }

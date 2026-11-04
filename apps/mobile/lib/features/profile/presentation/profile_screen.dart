@@ -11,6 +11,7 @@ import '../../../app/class_quiz.dart' show classIsTeacherProvider;
 import '../../../app/moderation.dart';
 import '../../../app/plan.dart';
 import '../../../app/professional.dart';
+import '../../../app/promo.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../app/student_card.dart';
@@ -37,6 +38,7 @@ import '../../professional/professional_strings.dart';
 import '../../referral/presentation/invite_card.dart';
 import '../../support/presentation/support_widgets.dart';
 import 'avatar_widgets.dart';
+import 'institute_code_screen.dart' show promoRowValue;
 import 'teacher_profile_header.dart';
 
 /// «Reja» qatori qiymati: Bepul / Talaba Pro (sinov) …
@@ -194,6 +196,21 @@ class ProfileScreen extends ConsumerWidget {
                             title: l.adminTitle,
                             value: l.adminProfileHint,
                             onTap: () => context.push(Routes.admin),
+                          ),
+                        // Institut kodi: Pro o‘chiq bo‘lsa ham ko‘rinadi (to‘lov
+                        // emas — ustoz/institut uchun).
+                        if (ref.watch(promoServiceProvider).isConfigured)
+                          _Row(
+                            key: const Key('profile.instituteCode'),
+                            icon: Icons.confirmation_number_outlined,
+                            title: l.promoRowTitle,
+                            value: promoRowValue(
+                              l,
+                              context,
+                              ref.watch(entitlementsProvider).value ??
+                                  Entitlements.none,
+                            ),
+                            onTap: () => context.push(Routes.instituteCode),
                           ),
                         if (!account.emailVerified)
                           _Row(

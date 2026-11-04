@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../app/account.dart';
+import '../../../app/institutes.dart';
 import '../../../app/moderation.dart';
 import '../../../app/plan.dart';
 import '../../../app/qa.dart';
@@ -261,6 +262,14 @@ class _AdminSections extends ConsumerWidget {
           title: l.admProTitle,
           hint: l.admProHint,
           onTap: () => context.push(Routes.adminPlans),
+        ),
+      if (ref.watch(adminInstituteServiceProvider).isConfigured)
+        AdminNavTile(
+          key: const Key('admin.nav.institutes'),
+          icon: Icons.apartment_outlined,
+          title: l.instNavTitle,
+          hint: l.instNavHint,
+          onTap: () => context.push(Routes.adminInstitutes),
         ),
       if (ref.watch(adminPlanServiceProvider).isConfigured)
         AdminNavTile(

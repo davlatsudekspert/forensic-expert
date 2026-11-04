@@ -167,6 +167,7 @@ class Entitlements {
     this.autoRenew = false,
     this.trialAvailable = false,
     this.productId,
+    this.label,
   });
 
   /// Reja yo‘q (mehmon yoki bepul).
@@ -181,6 +182,9 @@ class Entitlements {
     autoRenew: j['auto_renew'] == true,
     trialAvailable: j['trial_available'] == true,
     productId: j['product_id'] as String?,
+    label: j['label'] is String && (j['label']! as String).trim().isNotEmpty
+        ? (j['label']! as String).trim()
+        : null,
   );
 
   final Plan? plan;
@@ -193,6 +197,10 @@ class Entitlements {
   /// Server: bu qurilma ham, bu akkaunt ham sinov olmagan.
   final bool trialAvailable;
   final String? productId;
+
+  /// Server yozuvi: «institut: Nomi» yoki «sovg‘a: Kim» (promokod orqali
+  /// ochilgan reja); boshqa holatda `null`.
+  final String? label;
 
   /// [now] paytida faol reja bormi (muddati tugagan — faol emas).
   bool isActiveAt(DateTime now) =>
@@ -224,7 +232,8 @@ class Entitlements {
       other.expiresAt == expiresAt &&
       other.autoRenew == autoRenew &&
       other.trialAvailable == trialAvailable &&
-      other.productId == productId;
+      other.productId == productId &&
+      other.label == label;
 
   @override
   int get hashCode => Object.hash(
@@ -234,6 +243,7 @@ class Entitlements {
     autoRenew,
     trialAvailable,
     productId,
+    label,
   );
 }
 

@@ -23612,6 +23612,570 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Delete'**
   String get grpDeleteYes;
+
+  /// Profile row + screen title: institute code / promo code.
+  ///
+  /// In en, this message translates to:
+  /// **'Institute code / promo code'**
+  String get promoRowTitle;
+
+  /// Profile row hint when no code is active.
+  ///
+  /// In en, this message translates to:
+  /// **'A code from a teacher or an institute'**
+  String get promoRowHint;
+
+  /// Promo screen intro (not a payment).
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the code given by an institute or a teacher. This is not a payment: the code unlocks teacher features on your account.'**
+  String get promoIntro;
+
+  /// Promo code field label.
+  ///
+  /// In en, this message translates to:
+  /// **'Code'**
+  String get promoFieldLabel;
+
+  /// Promo code field hint (spaces and dashes are ignored).
+  ///
+  /// In en, this message translates to:
+  /// **'Spaces and dashes are ignored'**
+  String get promoFieldHint;
+
+  /// Promo screen: activate button.
+  ///
+  /// In en, this message translates to:
+  /// **'Activate'**
+  String get promoSubmit;
+
+  /// Promo screen: empty code.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the code.'**
+  String get promoEmpty;
+
+  /// Promo result INVALID.
+  ///
+  /// In en, this message translates to:
+  /// **'The code is incorrect'**
+  String get promoInvalid;
+
+  /// Promo result USED.
+  ///
+  /// In en, this message translates to:
+  /// **'The code has already been used'**
+  String get promoUsed;
+
+  /// Promo result ALREADY_YOURS.
+  ///
+  /// In en, this message translates to:
+  /// **'This code is already active on your account.'**
+  String get promoAlreadyYours;
+
+  /// Promo result EXPIRED.
+  ///
+  /// In en, this message translates to:
+  /// **'The code has expired'**
+  String get promoExpired;
+
+  /// Promo result REVOKED.
+  ///
+  /// In en, this message translates to:
+  /// **'The code has been revoked'**
+  String get promoRevoked;
+
+  /// Promo result TOO_MANY.
+  ///
+  /// In en, this message translates to:
+  /// **'Too many attempts. Please try again later.'**
+  String get promoTooMany;
+
+  /// Promo result NOT_SIGNED.
+  ///
+  /// In en, this message translates to:
+  /// **'Please sign in first.'**
+  String get promoNotSigned;
+
+  /// Promo: no connection.
+  ///
+  /// In en, this message translates to:
+  /// **'No connection. Check your network and try again.'**
+  String get promoOffline;
+
+  /// Promo: server error.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not check the code. Please try again later.'**
+  String get promoError;
+
+  /// Promo OK: {plan} unlocked, {label} is the server label, {date} the end date.
+  ///
+  /// In en, this message translates to:
+  /// **'{plan} unlocked: {label}, until {date}'**
+  String promoOk(String plan, String label, String date);
+
+  /// Promo OK without label/date.
+  ///
+  /// In en, this message translates to:
+  /// **'{plan} unlocked'**
+  String promoOkShort(String plan);
+
+  /// Profile: institute that gave access.
+  ///
+  /// In en, this message translates to:
+  /// **'Institute: {name}'**
+  String promoLabelInstitute(String name);
+
+  /// Profile: gift giver.
+  ///
+  /// In en, this message translates to:
+  /// **'Gift: {name}'**
+  String promoLabelGift(String name);
+
+  /// Profile: end date of access.
+  ///
+  /// In en, this message translates to:
+  /// **'until {date}'**
+  String promoUntil(String date);
+
+  /// Promo screen: active access section.
+  ///
+  /// In en, this message translates to:
+  /// **'Active access'**
+  String get promoActiveTitle;
+
+  /// Device limit dialog title.
+  ///
+  /// In en, this message translates to:
+  /// **'This account is used on {limit} devices'**
+  String devLimitTitle(int limit);
+
+  /// Device limit dialog body (soft: app keeps working).
+  ///
+  /// In en, this message translates to:
+  /// **'To add this device, remove an old one. For now the app keeps working.'**
+  String get devLimitBody;
+
+  /// Device list: last sign-in date.
+  ///
+  /// In en, this message translates to:
+  /// **'Last sign-in: {date}'**
+  String devLimitLastSeen(String date);
+
+  /// Device list: no label.
+  ///
+  /// In en, this message translates to:
+  /// **'Device'**
+  String get devLimitUnknown;
+
+  /// Device list: remove button.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove'**
+  String get devLimitRemove;
+
+  /// Device dialog: dismiss.
+  ///
+  /// In en, this message translates to:
+  /// **'Later'**
+  String get devLimitLater;
+
+  /// Device remove failed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not remove the device. Try again.'**
+  String get devLimitRemoveError;
+
+  /// Device removed but still full.
+  ///
+  /// In en, this message translates to:
+  /// **'Still no free slot. Remove another device.'**
+  String get devLimitStillFull;
+
+  /// Admin: institutes section title.
+  ///
+  /// In en, this message translates to:
+  /// **'Institutes'**
+  String get instNavTitle;
+
+  /// Admin: institutes tile hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Licence codes, contract PDF'**
+  String get instNavHint;
+
+  /// Admin: new institute.
+  ///
+  /// In en, this message translates to:
+  /// **'New institute'**
+  String get instNew;
+
+  /// Admin: gift promo codes.
+  ///
+  /// In en, this message translates to:
+  /// **'Gift promo code'**
+  String get instGift;
+
+  /// Admin: licensor details.
+  ///
+  /// In en, this message translates to:
+  /// **'Licensor details'**
+  String get instLicensor;
+
+  /// Admin: no institutes.
+  ///
+  /// In en, this message translates to:
+  /// **'No institutes yet.'**
+  String get instEmpty;
+
+  /// Admin: load failed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not load the data. Try again.'**
+  String get instLoadError;
+
+  /// Admin: institute row info.
+  ///
+  /// In en, this message translates to:
+  /// **'Seats: {seats} · used: {used}'**
+  String instRowInfo(int seats, int used);
+
+  /// Admin: institute term end.
+  ///
+  /// In en, this message translates to:
+  /// **'until {date}'**
+  String instRowUntil(String date);
+
+  /// Form: institute name.
+  ///
+  /// In en, this message translates to:
+  /// **'Name'**
+  String get instFName;
+
+  /// Form: address.
+  ///
+  /// In en, this message translates to:
+  /// **'Address'**
+  String get instFAddress;
+
+  /// Form: tax ID (STIR).
+  ///
+  /// In en, this message translates to:
+  /// **'Tax ID (STIR)'**
+  String get instFStir;
+
+  /// Form: bank.
+  ///
+  /// In en, this message translates to:
+  /// **'Bank'**
+  String get instFBank;
+
+  /// Form: account number.
+  ///
+  /// In en, this message translates to:
+  /// **'Account number'**
+  String get instFAccount;
+
+  /// Form: MFO.
+  ///
+  /// In en, this message translates to:
+  /// **'MFO'**
+  String get instFMfo;
+
+  /// Form: director.
+  ///
+  /// In en, this message translates to:
+  /// **'Director (full name)'**
+  String get instFDirector;
+
+  /// Form: phone.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone'**
+  String get instFPhone;
+
+  /// Form: contract number.
+  ///
+  /// In en, this message translates to:
+  /// **'Contract number'**
+  String get instFContractNo;
+
+  /// Form: contract date.
+  ///
+  /// In en, this message translates to:
+  /// **'Contract date'**
+  String get instFContractDate;
+
+  /// Form: seats.
+  ///
+  /// In en, this message translates to:
+  /// **'Number of seats'**
+  String get instFSeats;
+
+  /// Form: months.
+  ///
+  /// In en, this message translates to:
+  /// **'Number of months'**
+  String get instFMonths;
+
+  /// Form: price per seat per month.
+  ///
+  /// In en, this message translates to:
+  /// **'Price per seat (UZS/month)'**
+  String get instFPrice;
+
+  /// Form: start date.
+  ///
+  /// In en, this message translates to:
+  /// **'Start date'**
+  String get instFTermStart;
+
+  /// Form: pick a date.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick a date'**
+  String get instFPickDate;
+
+  /// Form: auto total = seats x months x price.
+  ///
+  /// In en, this message translates to:
+  /// **'Total: {sum} UZS (seats × months × price)'**
+  String instFTotal(String sum);
+
+  /// Form: save and create codes.
+  ///
+  /// In en, this message translates to:
+  /// **'Save and create codes'**
+  String get instFSave;
+
+  /// Form: invalid input.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter the name, seats (1–500) and months (1–60).'**
+  String get instFInvalid;
+
+  /// Form: server error.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not save the institute. Try again.'**
+  String get instFError;
+
+  /// Institute saved: codes count.
+  ///
+  /// In en, this message translates to:
+  /// **'Institute saved. {n} codes created.'**
+  String instCreated(int n);
+
+  /// Codes section title.
+  ///
+  /// In en, this message translates to:
+  /// **'Codes'**
+  String get instCodesTitle;
+
+  /// Codes visible only to admin.
+  ///
+  /// In en, this message translates to:
+  /// **'Codes are visible to the admin only. Send them to the representative through a private channel only.'**
+  String get instCodesNote;
+
+  /// Copy code.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy'**
+  String get instCopy;
+
+  /// Copy all codes.
+  ///
+  /// In en, this message translates to:
+  /// **'Copy all'**
+  String get instCopyAll;
+
+  /// Copied.
+  ///
+  /// In en, this message translates to:
+  /// **'Copied'**
+  String get instCopied;
+
+  /// Codes table: number.
+  ///
+  /// In en, this message translates to:
+  /// **'#'**
+  String get instColNo;
+
+  /// Codes table: code.
+  ///
+  /// In en, this message translates to:
+  /// **'Code'**
+  String get instColCode;
+
+  /// Codes table: status.
+  ///
+  /// In en, this message translates to:
+  /// **'Status'**
+  String get instColStatus;
+
+  /// Code status: free.
+  ///
+  /// In en, this message translates to:
+  /// **'Free'**
+  String get instStatusFree;
+
+  /// Code status: used by email.
+  ///
+  /// In en, this message translates to:
+  /// **'Used: {email}'**
+  String instStatusRedeemed(String email);
+
+  /// Code status: revoked.
+  ///
+  /// In en, this message translates to:
+  /// **'Revoked'**
+  String get instStatusRevoked;
+
+  /// Revoke the code.
+  ///
+  /// In en, this message translates to:
+  /// **'Revoke code'**
+  String get instRevoke;
+
+  /// Revoke dialog title.
+  ///
+  /// In en, this message translates to:
+  /// **'Revoke the code?'**
+  String get instRevokeTitle;
+
+  /// Revoke dialog body.
+  ///
+  /// In en, this message translates to:
+  /// **'{code}: the code will stop working. A used code cannot be revoked.'**
+  String instRevokeBody(String code);
+
+  /// Revoke dialog: keep.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep'**
+  String get instRevokeKeep;
+
+  /// Revoked.
+  ///
+  /// In en, this message translates to:
+  /// **'The code was revoked.'**
+  String get instRevokeDone;
+
+  /// Revoke: not found or used.
+  ///
+  /// In en, this message translates to:
+  /// **'The code was not found or is already used.'**
+  String get instRevokeNotFound;
+
+  /// Institute term line.
+  ///
+  /// In en, this message translates to:
+  /// **'Term: {from} — {to}'**
+  String instDetailTerm(String from, String to);
+
+  /// Institute seats line.
+  ///
+  /// In en, this message translates to:
+  /// **'Seats: {seats} · used: {used} · revoked: {revoked}'**
+  String instDetailSeats(int seats, int used, int revoked);
+
+  /// Contract PDF button.
+  ///
+  /// In en, this message translates to:
+  /// **'Contract PDF'**
+  String get instPdf;
+
+  /// Contract PDF note.
+  ///
+  /// In en, this message translates to:
+  /// **'Licensor details come from the “Licensor details” setting. Codes go in a separate “Codes sheet” file and are never written into the contract.'**
+  String get instPdfNote;
+
+  /// PDF failed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not create the PDF. Try again.'**
+  String get instPdfError;
+
+  /// Gift: who gives.
+  ///
+  /// In en, this message translates to:
+  /// **'Given by'**
+  String get instGiftFrom;
+
+  /// Gift: count 1-50.
+  ///
+  /// In en, this message translates to:
+  /// **'Count (1–50)'**
+  String get instGiftCount;
+
+  /// Gift: days.
+  ///
+  /// In en, this message translates to:
+  /// **'Days'**
+  String get instGiftDays;
+
+  /// Gift: plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Plan'**
+  String get instGiftPlan;
+
+  /// Gift: create.
+  ///
+  /// In en, this message translates to:
+  /// **'Create codes'**
+  String get instGiftCreate;
+
+  /// Gift: invalid.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter who gave it, count (1–50) and days (1–1100).'**
+  String get instGiftInvalid;
+
+  /// Gift: failed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not create the codes.'**
+  String get instGiftError;
+
+  /// Gift: created.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} codes created.'**
+  String instGiftDone(int n);
+
+  /// Licensor details: local only.
+  ///
+  /// In en, this message translates to:
+  /// **'These details are stored on this device only and are placed only into the contract PDF. They are never sent to the server.'**
+  String get instLicNote;
+
+  /// Licensor: transit account.
+  ///
+  /// In en, this message translates to:
+  /// **'Transit account for legal entities'**
+  String get instLicTransit;
+
+  /// Licensor: receiving account.
+  ///
+  /// In en, this message translates to:
+  /// **'Receiving account'**
+  String get instLicAccount;
+
+  /// Licensor: save.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get instLicSave;
+
+  /// Licensor: saved.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved.'**
+  String get instLicSaved;
 }
 
 class _AppLocalizationsDelegate

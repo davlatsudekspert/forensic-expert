@@ -17941,5 +17941,479 @@
   "grpDeleteYes": "Delete",
   "@grpDeleteYes": {
     "description": "Delete confirm button."
+  },
+  "promoRowTitle": "Institute code / promo code",
+  "@promoRowTitle": {
+    "description": "Profile row + screen title: institute code / promo code."
+  },
+  "promoRowHint": "A code from a teacher or an institute",
+  "@promoRowHint": {
+    "description": "Profile row hint when no code is active."
+  },
+  "promoIntro": "Enter the code given by an institute or a teacher. This is not a payment: the code unlocks teacher features on your account.",
+  "@promoIntro": {
+    "description": "Promo screen intro (not a payment)."
+  },
+  "promoFieldLabel": "Code",
+  "@promoFieldLabel": {
+    "description": "Promo code field label."
+  },
+  "promoFieldHint": "Spaces and dashes are ignored",
+  "@promoFieldHint": {
+    "description": "Promo code field hint (spaces and dashes are ignored)."
+  },
+  "promoSubmit": "Activate",
+  "@promoSubmit": {
+    "description": "Promo screen: activate button."
+  },
+  "promoEmpty": "Enter the code.",
+  "@promoEmpty": {
+    "description": "Promo screen: empty code."
+  },
+  "promoInvalid": "The code is incorrect",
+  "@promoInvalid": {
+    "description": "Promo result INVALID."
+  },
+  "promoUsed": "The code has already been used",
+  "@promoUsed": {
+    "description": "Promo result USED."
+  },
+  "promoAlreadyYours": "This code is already active on your account.",
+  "@promoAlreadyYours": {
+    "description": "Promo result ALREADY_YOURS."
+  },
+  "promoExpired": "The code has expired",
+  "@promoExpired": {
+    "description": "Promo result EXPIRED."
+  },
+  "promoRevoked": "The code has been revoked",
+  "@promoRevoked": {
+    "description": "Promo result REVOKED."
+  },
+  "promoTooMany": "Too many attempts. Please try again later.",
+  "@promoTooMany": {
+    "description": "Promo result TOO_MANY."
+  },
+  "promoNotSigned": "Please sign in first.",
+  "@promoNotSigned": {
+    "description": "Promo result NOT_SIGNED."
+  },
+  "promoOffline": "No connection. Check your network and try again.",
+  "@promoOffline": {
+    "description": "Promo: no connection."
+  },
+  "promoError": "Could not check the code. Please try again later.",
+  "@promoError": {
+    "description": "Promo: server error."
+  },
+  "promoOk": "{plan} unlocked: {label}, until {date}",
+  "@promoOk": {
+    "description": "Promo OK: {plan} unlocked, {label} is the server label, {date} the end date.",
+    "placeholders": {
+      "plan": {
+        "type": "String"
+      },
+      "label": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "promoOkShort": "{plan} unlocked",
+  "@promoOkShort": {
+    "description": "Promo OK without label/date.",
+    "placeholders": {
+      "plan": {
+        "type": "String"
+      }
+    }
+  },
+  "promoLabelInstitute": "Institute: {name}",
+  "@promoLabelInstitute": {
+    "description": "Profile: institute that gave access.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "promoLabelGift": "Gift: {name}",
+  "@promoLabelGift": {
+    "description": "Profile: gift giver.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "promoUntil": "until {date}",
+  "@promoUntil": {
+    "description": "Profile: end date of access.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "promoActiveTitle": "Active access",
+  "@promoActiveTitle": {
+    "description": "Promo screen: active access section."
+  },
+  "devLimitTitle": "This account is used on {limit} devices",
+  "@devLimitTitle": {
+    "description": "Device limit dialog title.",
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "devLimitBody": "To add this device, remove an old one. For now the app keeps working.",
+  "@devLimitBody": {
+    "description": "Device limit dialog body (soft: app keeps working)."
+  },
+  "devLimitLastSeen": "Last sign-in: {date}",
+  "@devLimitLastSeen": {
+    "description": "Device list: last sign-in date.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "devLimitUnknown": "Device",
+  "@devLimitUnknown": {
+    "description": "Device list: no label."
+  },
+  "devLimitRemove": "Remove",
+  "@devLimitRemove": {
+    "description": "Device list: remove button."
+  },
+  "devLimitLater": "Later",
+  "@devLimitLater": {
+    "description": "Device dialog: dismiss."
+  },
+  "devLimitRemoveError": "Could not remove the device. Try again.",
+  "@devLimitRemoveError": {
+    "description": "Device remove failed."
+  },
+  "devLimitStillFull": "Still no free slot. Remove another device.",
+  "@devLimitStillFull": {
+    "description": "Device removed but still full."
+  },
+  "instNavTitle": "Institutes",
+  "@instNavTitle": {
+    "description": "Admin: institutes section title."
+  },
+  "instNavHint": "Licence codes, contract PDF",
+  "@instNavHint": {
+    "description": "Admin: institutes tile hint."
+  },
+  "instNew": "New institute",
+  "@instNew": {
+    "description": "Admin: new institute."
+  },
+  "instGift": "Gift promo code",
+  "@instGift": {
+    "description": "Admin: gift promo codes."
+  },
+  "instLicensor": "Licensor details",
+  "@instLicensor": {
+    "description": "Admin: licensor details."
+  },
+  "instEmpty": "No institutes yet.",
+  "@instEmpty": {
+    "description": "Admin: no institutes."
+  },
+  "instLoadError": "Could not load the data. Try again.",
+  "@instLoadError": {
+    "description": "Admin: load failed."
+  },
+  "instRowInfo": "Seats: {seats} · used: {used}",
+  "@instRowInfo": {
+    "description": "Admin: institute row info.",
+    "placeholders": {
+      "seats": {
+        "type": "int"
+      },
+      "used": {
+        "type": "int"
+      }
+    }
+  },
+  "instRowUntil": "until {date}",
+  "@instRowUntil": {
+    "description": "Admin: institute term end.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "instFName": "Name",
+  "@instFName": {
+    "description": "Form: institute name."
+  },
+  "instFAddress": "Address",
+  "@instFAddress": {
+    "description": "Form: address."
+  },
+  "instFStir": "Tax ID (STIR)",
+  "@instFStir": {
+    "description": "Form: tax ID (STIR)."
+  },
+  "instFBank": "Bank",
+  "@instFBank": {
+    "description": "Form: bank."
+  },
+  "instFAccount": "Account number",
+  "@instFAccount": {
+    "description": "Form: account number."
+  },
+  "instFMfo": "MFO",
+  "@instFMfo": {
+    "description": "Form: MFO."
+  },
+  "instFDirector": "Director (full name)",
+  "@instFDirector": {
+    "description": "Form: director."
+  },
+  "instFPhone": "Phone",
+  "@instFPhone": {
+    "description": "Form: phone."
+  },
+  "instFContractNo": "Contract number",
+  "@instFContractNo": {
+    "description": "Form: contract number."
+  },
+  "instFContractDate": "Contract date",
+  "@instFContractDate": {
+    "description": "Form: contract date."
+  },
+  "instFSeats": "Number of seats",
+  "@instFSeats": {
+    "description": "Form: seats."
+  },
+  "instFMonths": "Number of months",
+  "@instFMonths": {
+    "description": "Form: months."
+  },
+  "instFPrice": "Price per seat (UZS/month)",
+  "@instFPrice": {
+    "description": "Form: price per seat per month."
+  },
+  "instFTermStart": "Start date",
+  "@instFTermStart": {
+    "description": "Form: start date."
+  },
+  "instFPickDate": "Pick a date",
+  "@instFPickDate": {
+    "description": "Form: pick a date."
+  },
+  "instFTotal": "Total: {sum} UZS (seats × months × price)",
+  "@instFTotal": {
+    "description": "Form: auto total = seats x months x price.",
+    "placeholders": {
+      "sum": {
+        "type": "String"
+      }
+    }
+  },
+  "instFSave": "Save and create codes",
+  "@instFSave": {
+    "description": "Form: save and create codes."
+  },
+  "instFInvalid": "Enter the name, seats (1–500) and months (1–60).",
+  "@instFInvalid": {
+    "description": "Form: invalid input."
+  },
+  "instFError": "Could not save the institute. Try again.",
+  "@instFError": {
+    "description": "Form: server error."
+  },
+  "instCreated": "Institute saved. {n} codes created.",
+  "@instCreated": {
+    "description": "Institute saved: codes count.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "instCodesTitle": "Codes",
+  "@instCodesTitle": {
+    "description": "Codes section title."
+  },
+  "instCodesNote": "Codes are visible to the admin only. Send them to the representative through a private channel only.",
+  "@instCodesNote": {
+    "description": "Codes visible only to admin."
+  },
+  "instCopy": "Copy",
+  "@instCopy": {
+    "description": "Copy code."
+  },
+  "instCopyAll": "Copy all",
+  "@instCopyAll": {
+    "description": "Copy all codes."
+  },
+  "instCopied": "Copied",
+  "@instCopied": {
+    "description": "Copied."
+  },
+  "instColNo": "#",
+  "@instColNo": {
+    "description": "Codes table: number."
+  },
+  "instColCode": "Code",
+  "@instColCode": {
+    "description": "Codes table: code."
+  },
+  "instColStatus": "Status",
+  "@instColStatus": {
+    "description": "Codes table: status."
+  },
+  "instStatusFree": "Free",
+  "@instStatusFree": {
+    "description": "Code status: free."
+  },
+  "instStatusRedeemed": "Used: {email}",
+  "@instStatusRedeemed": {
+    "description": "Code status: used by email.",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "instStatusRevoked": "Revoked",
+  "@instStatusRevoked": {
+    "description": "Code status: revoked."
+  },
+  "instRevoke": "Revoke code",
+  "@instRevoke": {
+    "description": "Revoke the code."
+  },
+  "instRevokeTitle": "Revoke the code?",
+  "@instRevokeTitle": {
+    "description": "Revoke dialog title."
+  },
+  "instRevokeBody": "{code}: the code will stop working. A used code cannot be revoked.",
+  "@instRevokeBody": {
+    "description": "Revoke dialog body.",
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "instRevokeKeep": "Keep",
+  "@instRevokeKeep": {
+    "description": "Revoke dialog: keep."
+  },
+  "instRevokeDone": "The code was revoked.",
+  "@instRevokeDone": {
+    "description": "Revoked."
+  },
+  "instRevokeNotFound": "The code was not found or is already used.",
+  "@instRevokeNotFound": {
+    "description": "Revoke: not found or used."
+  },
+  "instDetailTerm": "Term: {from} — {to}",
+  "@instDetailTerm": {
+    "description": "Institute term line.",
+    "placeholders": {
+      "from": {
+        "type": "String"
+      },
+      "to": {
+        "type": "String"
+      }
+    }
+  },
+  "instDetailSeats": "Seats: {seats} · used: {used} · revoked: {revoked}",
+  "@instDetailSeats": {
+    "description": "Institute seats line.",
+    "placeholders": {
+      "seats": {
+        "type": "int"
+      },
+      "used": {
+        "type": "int"
+      },
+      "revoked": {
+        "type": "int"
+      }
+    }
+  },
+  "instPdf": "Contract PDF",
+  "@instPdf": {
+    "description": "Contract PDF button."
+  },
+  "instPdfNote": "Licensor details come from the “Licensor details” setting. Codes go in a separate “Codes sheet” file and are never written into the contract.",
+  "@instPdfNote": {
+    "description": "Contract PDF note."
+  },
+  "instPdfError": "Could not create the PDF. Try again.",
+  "@instPdfError": {
+    "description": "PDF failed."
+  },
+  "instGiftFrom": "Given by",
+  "@instGiftFrom": {
+    "description": "Gift: who gives."
+  },
+  "instGiftCount": "Count (1–50)",
+  "@instGiftCount": {
+    "description": "Gift: count 1-50."
+  },
+  "instGiftDays": "Days",
+  "@instGiftDays": {
+    "description": "Gift: days."
+  },
+  "instGiftPlan": "Plan",
+  "@instGiftPlan": {
+    "description": "Gift: plan."
+  },
+  "instGiftCreate": "Create codes",
+  "@instGiftCreate": {
+    "description": "Gift: create."
+  },
+  "instGiftInvalid": "Enter who gave it, count (1–50) and days (1–1100).",
+  "@instGiftInvalid": {
+    "description": "Gift: invalid."
+  },
+  "instGiftError": "Could not create the codes.",
+  "@instGiftError": {
+    "description": "Gift: failed."
+  },
+  "instGiftDone": "{n} codes created.",
+  "@instGiftDone": {
+    "description": "Gift: created.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "instLicNote": "These details are stored on this device only and are placed only into the contract PDF. They are never sent to the server.",
+  "@instLicNote": {
+    "description": "Licensor details: local only."
+  },
+  "instLicTransit": "Transit account for legal entities",
+  "@instLicTransit": {
+    "description": "Licensor: transit account."
+  },
+  "instLicAccount": "Receiving account",
+  "@instLicAccount": {
+    "description": "Licensor: receiving account."
+  },
+  "instLicSave": "Save",
+  "@instLicSave": {
+    "description": "Licensor: save."
+  },
+  "instLicSaved": "Saved.",
+  "@instLicSaved": {
+    "description": "Licensor: saved."
   }
 }

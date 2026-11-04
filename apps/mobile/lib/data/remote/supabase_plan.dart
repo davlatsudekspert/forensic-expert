@@ -7,9 +7,10 @@ import '../../domain/ports/backend_ports.dart';
 import '../../domain/ports/plan_ports.dart';
 import 'supabase_rest.dart';
 
-/// Umumiy RPC/Edge chaqiruvi (token, xato xaritasi).
-class _PlanRpc {
-  _PlanRpc(this.cfg, this.auth, this.http);
+/// Umumiy RPC/Edge chaqiruvi (token, xato xaritasi). Promokod va institut
+/// adapterlari ham shuni ishlatadi.
+class PlanRpc {
+  PlanRpc(this.cfg, this.auth, this.http);
 
   final SupabaseConfig cfg;
   final AuthRepository auth;
@@ -69,9 +70,9 @@ class SupabasePlanService implements PlanService {
     required SupabaseConfig config,
     required AuthRepository auth,
     RestTransport? transport,
-  }) : _r = _PlanRpc(config, auth, transport ?? HttpClientTransport());
+  }) : _r = PlanRpc(config, auth, transport ?? HttpClientTransport());
 
-  final _PlanRpc _r;
+  final PlanRpc _r;
 
   @override
   bool get isConfigured => true;
@@ -137,9 +138,9 @@ class SupabaseAdminPlanService implements AdminPlanService {
     required SupabaseConfig config,
     required AuthRepository auth,
     RestTransport? transport,
-  }) : _r = _PlanRpc(config, auth, transport ?? HttpClientTransport());
+  }) : _r = PlanRpc(config, auth, transport ?? HttpClientTransport());
 
-  final _PlanRpc _r;
+  final PlanRpc _r;
 
   @override
   bool get isConfigured => true;

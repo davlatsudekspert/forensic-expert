@@ -169,6 +169,9 @@ abstract final class Routes {
   static const profile = '/profile';
   static const profileLanguage = '/profile/language';
   static const profileMode = '/profile/mode';
+
+  /// «Institut kodi / promokod» (Profil; Pro o‘chiq bo‘lsa ham ko‘rinadi).
+  static const instituteCode = '/profile/institute-code';
   static const profileJurisdiction = '/profile/jurisdiction';
   static const profileDisclaimer = '/profile/disclaimer';
   static const privacy = '/profile/privacy';
@@ -200,6 +203,14 @@ abstract final class Routes {
   static const adminAudit = '/profile/admin/audit';
   static const adminPlans = '/profile/admin/plans';
   static const adminClassTests = '/profile/admin/tests';
+
+  /// Admin: institutlar, sovg‘a promokodlari, litsenziar rekvizitlari.
+  static const adminInstitutes = '/profile/admin/institutes';
+  static const adminInstituteNew = '/profile/admin/institutes/new';
+  static const adminGiftCodes = '/profile/admin/institutes/gift';
+  static const adminLicensor = '/profile/admin/institutes/licensor';
+  static String adminInstitute(String id) =>
+      '/profile/admin/institutes/${Uri.encodeComponent(id)}';
 
   /// «Ustozlar va mutaxassislar» katalogi.
   static const catalog = '/home/catalog';

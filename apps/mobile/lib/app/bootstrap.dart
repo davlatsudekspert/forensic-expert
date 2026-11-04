@@ -19,6 +19,7 @@ import '../data/local/assessment_test_stats_store.dart';
 import '../data/local/casebook_store.dart';
 import '../data/local/court_history_store.dart';
 import '../data/local/group_invite_store.dart';
+import '../data/local/licensor_profile_store.dart';
 import '../data/local/oral_exam_store.dart';
 import '../data/local/oral_resume_store.dart';
 import '../data/local/pro_offer_store.dart';
@@ -40,6 +41,7 @@ import '../data/remote/supabase_moderation.dart';
 import '../data/remote/supabase_oral_group.dart';
 import '../data/remote/supabase_plan.dart';
 import '../data/remote/supabase_professional.dart';
+import '../data/remote/supabase_promo.dart';
 import '../data/remote/supabase_publications.dart';
 import '../data/remote/supabase_qa.dart';
 import '../data/remote/supabase_referral.dart';
@@ -59,12 +61,14 @@ import 'catalog.dart';
 import 'class_groups.dart';
 import 'class_quiz.dart';
 import 'court_prep.dart';
+import 'institutes.dart';
 import 'lessons.dart';
 import 'login_gate.dart';
 import 'moderation.dart';
 import 'oral_group.dart';
 import 'plan.dart';
 import 'professional.dart';
+import 'promo.dart';
 import 'providers.dart';
 import 'publications.dart';
 import 'qa.dart';
@@ -190,6 +194,10 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
         proOfferStoreProvider.overrideWithValue(
           SharedPrefsProOfferStore(prefs),
         ),
+        // Litsenziar rekvizitlari: faqat admin qurilmasida (kodda/gitda yo‘q).
+        licensorProfileStoreProvider.overrideWithValue(
+          SharedPrefsLicensorProfileStore(prefs),
+        ),
         // Release’da backend bo‘lmasa reja berilmaydi (demo/Fake emas).
         if (supabase == null && kReleaseMode)
           planServiceProvider.overrideWithValue(
@@ -259,6 +267,13 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
           ),
           adminPlanServiceProvider.overrideWithValue(
             SupabaseAdminPlanService(config: supabase, auth: auth),
+          ),
+          // Institut kodi / promokod va qurilmalar limiti (Pro o‘chiq bo‘lsa ham).
+          promoServiceProvider.overrideWithValue(
+            SupabasePromoService(config: supabase, auth: auth),
+          ),
+          adminInstituteServiceProvider.overrideWithValue(
+            SupabaseAdminInstituteService(config: supabase, auth: auth),
           ),
           qaServiceProvider.overrideWithValue(
             SupabaseQaService(config: supabase, auth: auth),

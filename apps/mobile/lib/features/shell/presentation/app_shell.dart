@@ -9,6 +9,7 @@ import '../../../core/design/tokens.dart';
 import '../../../core/floating_nav_flag.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/widgets/in_bounds_scroll.dart';
+import '../../profile/presentation/device_limit_host.dart';
 import 'floating_nav.dart';
 
 /// Tab yozuvlari uchun maksimal matn masshtabi: tor ekranda (< 360 dp)
@@ -77,14 +78,16 @@ class _AppShellState extends State<AppShell> {
     final l = AppLocalizations.of(context);
     // Android «Back»: boshqa tab ildizida — avval Asosiy tabga qaytadi,
     // ilovadan faqat Asosiy tabdan chiqiladi (tasodifiy chiqish yo‘q).
-    return PopScope(
-      canPop: shell.currentIndex == 0,
-      onPopInvokedWithResult: (didPop, _) {
-        if (!didPop && shell.currentIndex != 0) shell.goBranch(0);
-      },
-      child: floatingNavEnabled
-          ? _floatingScaffold(context, l)
-          : _scaffold(context, l),
+    return DeviceLimitHost(
+      child: PopScope(
+        canPop: shell.currentIndex == 0,
+        onPopInvokedWithResult: (didPop, _) {
+          if (!didPop && shell.currentIndex != 0) shell.goBranch(0);
+        },
+        child: floatingNavEnabled
+            ? _floatingScaffold(context, l)
+            : _scaffold(context, l),
+      ),
     );
   }
 
