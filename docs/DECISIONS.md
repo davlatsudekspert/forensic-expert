@@ -391,3 +391,8 @@ Egasi yuborgan 6-kurs davolash rejasi (7 mavzu, 18+18=36 soat) bo‘yicha: «Dar
 - Narx: so‘mda; bitta ustoz narxi × ustozlar soni × muddat; institut narxi individual Ustoz Pro’dan QIMMATROQ (egasi qarori).
 - Ta’minlovchi: o‘zini o‘zi band qilgan shaxs (ma’lumotnoma 24.08.2026); rekvizitlar gitda saqlanmaydi (faqat admin serverida).
 - Shartnoma blankasi tayyor (Word/PDF), yurist va soliq maslahatchisi ko‘rib chiqishi kerak.
+
+## 2026-11-04 — Shartnoma shabloni tasdiqlandi (egasi)
+- Admin paneldagi avtomatik PDF uchun asos: «Forensic_Expert_Litsenziya_shartnomasi_Tahrirlangan.docx» (Litsenziar = ilovaning huquq egasi; oddiy nomutlaq litsenziya; to‘lov → kodlar → faollashtirish alohida bosqichlar; qaytarish tartibi; 1-ilova).
+- Litsenziar rekvizitlari (bank, manzil, hujjat) gitda saqlanmaydi: admin serverida (faqat admin) turadi, PDF’ga paytida qo‘yiladi. Shaxsni tasdiqlovchi hujjat va JShShIR PDF’ga qo‘yilmaydi (qo‘lda).
+- Imzolashdan oldin «Aniqlashtirish_royxati» bo‘yicha: soliq/QQS, Bepul/Pro faollashuvi, uchinchi tomon ruxsatlari, ma’lumotlarni saqlash muddati va yurist tekshiruvi.
