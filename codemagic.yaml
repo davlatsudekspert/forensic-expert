@@ -104,6 +104,11 @@ workflows:
           fi
           flutter build apk --release $DEFINES
           flutter build appbundle --release $DEFINES
+      - name: APK signature fingerprint (Google sign-in uchun SHA-1 mosligini tekshirish)
+        script: |
+          # Google Cloud'dagi Android mijoz SHA-1 bilan aynan shu bo‘lishi shart.
+          keytool -printcert -jarfile apps/mobile/build/app/outputs/flutter-apk/app-release.apk \
+            | grep -E "Owner|SHA1" || echo "fingerprint olinmadi"
     artifacts:
       - apps/mobile/build/app/outputs/flutter-apk/*.apk
       - apps/mobile/build/app/outputs/bundle/release/*.aab
