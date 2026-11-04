@@ -416,3 +416,6 @@ Bekor qiladi oldingi «alohida karta» yozuvini. Ikki katta bo‘lim:
 2. **Sud-kimyoviy ekspertiza**: ichida — **Toksikologik kimyo** (81 mavzu) va «Apparatlar bilan ishlash».
 3. Biokimyo — o‘zgarmaydi.
 Server kurs nomlari o‘zgarmaydi; faqat ilovadagi guruhlash/ko‘rinadigan nomlar.
+
+## 2026-11-04 — Shartnoma shabloni: egasi qabul qildi
+- Egasi shartnoma shablonini qabul qildi (yurist/soliq tekshiruvi — 6-band — egasining o‘z qarori bilan qabul qilindi). Claude yuridik/soliq tekshiruvini o‘tkazmagan va kafolat bermaydi: soliq/QQS, Bepul/Pro faollashuvi, uchinchi tomon ruxsatlari, ma’lumot saqlash muddati bandlari shartnomada [qavs] bilan belgilangan va birinchi institut bilan imzolashdan oldin egasi tomonidan to‘ldiriladi.
