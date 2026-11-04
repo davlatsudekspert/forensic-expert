@@ -42,6 +42,7 @@ abstract final class ProSplit {
     'toxicology',
     'biochemistry',
     'laboratory',
+    'substances',
   };
 
   /// Bepul bilim sohalari (taksonomiya mavzulari).
@@ -61,6 +62,8 @@ abstract final class ProSplit {
     'toxicology' ||
     'biochemistry' ||
     'laboratory' ||
+    // «Moddalar» bepul (egasi qarori, 2026-11-04); Usullar va qolganlari Pro.
+    'substances' ||
     'learn' => null,
     'ai' => ProFeature.proAi,
     _ => ProFeature.proModules,

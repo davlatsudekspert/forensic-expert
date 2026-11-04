@@ -137,7 +137,6 @@ void main() {
           overrides: [..._strict(true).cast()],
         );
         for (final m in [
-          'substances',
           'methods',
           'reagents',
           'screening',
@@ -158,6 +157,7 @@ void main() {
           'toxicology',
           'biochemistry',
           'laboratory',
+          'substances',
           'learn',
         ]) {
           expect(
