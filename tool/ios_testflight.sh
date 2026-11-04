@@ -91,6 +91,19 @@ codesign -dv --verbose=2 "$APP" 2>&1 | grep -E "Authority=Apple Distribution|Tea
 security cms -D -i "$APP/embedded.mobileprovision" > "$CHECK_DIR/profile.plist"
 /usr/libexec/PlistBuddy -c 'Print :Entitlements:get-task-allow' "$CHECK_DIR/profile.plist" 2>/dev/null | grep -q false \
   || { echo "::error::profile is not an App Store distribution profile"; exit 1; }
+# Imzolangan ILOVANING ichki huquqlari (entitlements) — profil emas, aynan binar.
+# «Apple bilan kirish» binarda bo‘lmasa, qurilmada Apple oynasi xatoga tushadi.
+BIN_ENT="$(codesign -d --entitlements :- "$APP" 2>/dev/null || true)"
+echo "binar huquqlari:" $(echo "$BIN_ENT" | grep -o '<key>[^<]*</key>' | sed 's/<[^>]*>//g' | tr '\n' ' ')
+if echo "$BIN_ENT" | grep -q 'com.apple.developer.applesignin'; then
+  echo "binar: Sign in with Apple — BOR"
+else
+  echo "binar: Sign in with Apple — YO‘Q"
+  if [ "${SOCIAL_SIGNIN:-}" = "true" ]; then
+    echo "::error::signed app binary has no Sign in with Apple entitlement"
+    exit 1
+  fi
+fi
 # «Apple bilan kirish» huquqi profilda bo‘lishi shart (yo‘qsa native kirish
 # qurilmada xatoga tushadi — App ID’da Sign in with Apple yoqilmagan bo‘ladi).
 if /usr/libexec/PlistBuddy -c 'Print :Entitlements:com.apple.developer.applesignin' "$CHECK_DIR/profile.plist" >/dev/null 2>&1; then
