@@ -7,7 +7,6 @@ import 'package:go_router/go_router.dart';
 import '../../../app/class_groups.dart';
 import '../../../app/class_quiz.dart';
 import '../../../app/lessons.dart';
-import '../../../app/plan.dart';
 import '../../../app/routes.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
@@ -770,11 +769,10 @@ class GroupResultScreen extends ConsumerWidget {
             icon: const Icon(Icons.refresh),
             label: Text(l.grpRefresh),
           ),
-        ] else if (!proOpen(ref, ProFeature.groupTestReview)) ...[
-          // Qat’iy Bepul/Pro bo‘linishi (2026-10-31): talaba faqat ballni
-          // ko‘radi; to‘g‘ri javoblar, izoh va xatolar tahlili — Pro.
-          const ProFeatureLock(feature: ProFeature.groupTestReview),
         ] else ...[
+          // Egasi qarori (2026-11-04): ustoz bergan testning natijasi, to‘g‘ri
+          // javoblari va izohi talabaga HAR DOIM bepul — Pro bilan cheklanmaydi.
+          // Ochilish vaqtini ustozning tayinlash sozlamasi belgilaydi (yuqorida).
           FeSectionHeader(l.grpAnswersSection),
           for (final (i, it) in r.items.indexed)
             Padding(

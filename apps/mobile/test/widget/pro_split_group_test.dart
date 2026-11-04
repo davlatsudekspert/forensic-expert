@@ -67,13 +67,13 @@ void main() {
     );
   }
 
-  testWidgets('qat’iy, bepul talaba: ball ko‘rinadi, javoblar/izoh Pro', (
+  testWidgets('qat’iy, bepul talaba: ustoz testi ball va javoblari ochiq', (
     tester,
   ) async {
     await openResult(tester, strict: true);
     expect(find.byKey(const Key('grp.score')), findsOneWidget);
-    expect(find.byKey(const Key('grp.item.0')), findsNothing);
-    expect(find.byKey(const Key('pro.lock.groupTestReview')), findsOneWidget);
+    expect(find.byKey(const Key('grp.item.0')), findsOneWidget);
+    expect(find.byType(ProLockCard), findsNothing);
     expect(tester.takeException(), isNull);
     await closeApp(tester);
   });
