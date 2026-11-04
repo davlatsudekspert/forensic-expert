@@ -1,0 +1,53 @@
+# Codemagic — iOS TestFlight build (GitHub Actions bloklangan bo'lsa zaxira yo'l).
+# Faqat qo'lda ishga tushiriladi (triggering yo'q). Imzolash va yuklash GitHub
+# ish jarayonidagi bilan BIR XIL skript: tool/ios_testflight.sh.
+#
+# Codemagic'da "Environment variables" -> guruh `fe_ios` (barchasi Secure):
+#   ASC_KEY_ID, ASC_ISSUER_ID, ASC_PRIVATE_KEY (.p8 matni), APPLE_TEAM_ID,
+#   FE_SUPABASE_URL, FE_SUPABASE_ANON_KEY
+# Build boshlanganda o'zgaruvchilarni almashtirish mumkin:
+#   SOCIAL_SIGNIN=true|false   (Google + Apple tugmalari)
+#   STORE_REVIEW=true|false    (kirish majburiy emas; faqat App Review build)
+workflows:
+  ios-testflight:
+    name: iOS TestFlight
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    environment:
+      groups:
+        - fe_ios
+      flutter: 3.47.6
+      xcode: latest
+      vars:
+        SOCIAL_SIGNIN: "true"
+        STORE_REVIEW: "false"
+    scripts:
+      - name: Flutter dependencies
+        script: |
+          flutter pub get --enforce-lockfile
+      - name: Compose --dart-define flags
+        script: |
+          cd apps/mobile
+          DEFINES=""
+          if [ -n "$FE_SUPABASE_URL" ] && [ -n "$FE_SUPABASE_ANON_KEY" ]; then
+            DEFINES="--dart-define=FE_SUPABASE_URL=$FE_SUPABASE_URL --dart-define=FE_SUPABASE_ANON_KEY=$FE_SUPABASE_ANON_KEY --dart-define=FE_AI_REMOTE=true"
+          fi
+          if [ "$STORE_REVIEW" = "true" ]; then
+            DEFINES="$DEFINES --dart-define=FE_REQUIRE_LOGIN=false"
+          fi
+          if [ "$SOCIAL_SIGNIN" = "true" ]; then
+            # OAuth client ID lar maxfiy EMAS (Google Cloud, loyiha forensic-expert).
+            DEFINES="$DEFINES --dart-define=FE_SOCIAL_SIGNIN=true"
+            DEFINES="$DEFINES --dart-define=GOOGLE_SERVER_CLIENT_ID=49997032746-qtb358q6gkh7gsnsn6drj7oa98b26u25.apps.googleusercontent.com"
+            DEFINES="$DEFINES --dart-define=GOOGLE_IOS_CLIENT_ID=49997032746-e56rnelh90csadojmpmtv6np2ig8jh7m.apps.googleusercontent.com"
+            echo "GOOGLE_REVERSED_CLIENT_ID = com.googleusercontent.apps.49997032746-e56rnelh90csadojmpmtv6np2ig8jh7m" > ios/Flutter/SocialLocal.xcconfig
+          fi
+          echo "DEFINES=$DEFINES" >> "$CM_ENV"
+      - name: Signed IPA + TestFlight upload
+        script: |
+          cd apps/mobile
+          # TestFlight build raqami har doim oldingidan (419) katta bo'lsin.
+          export GITHUB_RUN_NUMBER=$((600 + BUILD_NUMBER))
+          bash ../../tool/ios_testflight.sh
+    artifacts:
+      - apps/mobile/build/ios/ipa/*.ipa
