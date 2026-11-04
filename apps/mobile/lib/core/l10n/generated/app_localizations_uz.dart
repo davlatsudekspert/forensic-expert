@@ -110,7 +110,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get moduleForensicMedicine => 'Sud tibbiyoti';
 
   @override
-  String get moduleToxicology => 'Toksikologiya';
+  String get moduleToxicology => 'Sud-kimyoviy ekspertiza';
 
   @override
   String get moduleLaboratory => 'Laboratoriya';
@@ -12337,7 +12337,8 @@ class AppLocalizationsUz extends AppLocalizations {
   String get homeCoreMedicineBody => 'Tanatologiya, jarohatlar, o‘lim vaqti';
 
   @override
-  String get homeCoreToxBody => 'Zaharlar, dorilar va giyohvand moddalar';
+  String get homeCoreToxBody =>
+      'Toksikologik kimyo: zaharlar, dorilar va giyohvand moddalar';
 
   @override
   String get homeCoreBiochemBody =>

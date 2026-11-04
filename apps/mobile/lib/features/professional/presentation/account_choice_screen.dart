@@ -11,6 +11,8 @@ import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../account/presentation/auth_screens.dart' show authFailureText;
+import '../../account/presentation/social_sign_in_buttons.dart';
 import '../../onboarding/presentation/onboarding_progress.dart';
 import 'professional_widgets.dart';
 
@@ -105,6 +107,17 @@ class AccountChoiceScreen extends ConsumerWidget {
                   onPressed: configured ? () => _signIn(context) : null,
                   icon: const Icon(Icons.mail_outline),
                   label: Text(l.accountCreateOrSignIn),
+                ),
+              // Apple / Google tugmalari birinchi ekranning o‘zida (bayroq yoqilganda;
+              // o‘chiq bo‘lsa hech narsa chizilmaydi). Kirgach — xuddi pochta yo‘lidek.
+              if (configured)
+                SocialSignInButtons(
+                  onSignedIn: () {
+                    if (context.mounted) context.go(Routes.home);
+                  },
+                  onError: (f) => ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text(authFailureText(l, f))),
+                  ),
                 ),
               const SizedBox(height: FeSpace.md),
               if (!configured)

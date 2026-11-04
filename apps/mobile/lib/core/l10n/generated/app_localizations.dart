@@ -283,7 +283,7 @@ abstract class AppLocalizations {
   /// Home module.
   ///
   /// In en, this message translates to:
-  /// **'Toxicology'**
+  /// **'Forensic chemical examination'**
   String get moduleToxicology;
 
   /// Home module.
@@ -21486,7 +21486,7 @@ abstract class AppLocalizations {
   /// Core disciplines card: toxicology subtitle.
   ///
   /// In en, this message translates to:
-  /// **'Poisons, medicines and narcotics'**
+  /// **'Toxicological chemistry: poisons, medicines and narcotics'**
   String get homeCoreToxBody;
 
   /// Core disciplines card: biochemistry subtitle.

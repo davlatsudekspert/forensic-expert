@@ -110,7 +110,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get moduleForensicMedicine => 'Forensic Medicine';
 
   @override
-  String get moduleToxicology => 'Toxicology';
+  String get moduleToxicology => 'Forensic chemical examination';
 
   @override
   String get moduleLaboratory => 'Laboratory';
@@ -12411,7 +12411,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeCoreMedicineBody => 'Thanatology, injuries, time of death';
 
   @override
-  String get homeCoreToxBody => 'Poisons, medicines and narcotics';
+  String get homeCoreToxBody =>
+      'Toxicological chemistry: poisons, medicines and narcotics';
 
   @override
   String get homeCoreBiochemBody => 'Body fluids and biochemical markers';
