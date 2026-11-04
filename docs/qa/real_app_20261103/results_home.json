@@ -1,0 +1,183 @@
+{
+  "role": "home",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "h01",
+      "title": "Til tanlash",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h01_til_tanlash.png"
+    },
+    {
+      "id": "h02",
+      "title": "Ogohlantirish",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h02_ogohlantirish.png"
+    },
+    {
+      "id": "h03",
+      "title": "Rejim mutaxassis (onboarding)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h03_rejim_mutaxassis_onboarding.png"
+    },
+    {
+      "id": "h04",
+      "title": "Rejim talaba",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h04_rejim_talaba.png"
+    },
+    {
+      "id": "h05",
+      "title": "Hisob tanlovi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h05_hisob_tanlovi.png"
+    },
+    {
+      "id": "h06",
+      "title": "Asosiy talaba",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h06_asosiy_talaba.png"
+    },
+    {
+      "id": "h07",
+      "title": "Asosiy talaba pastda",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h07_asosiy_talaba_pastda.png"
+    },
+    {
+      "id": "h08",
+      "title": "Profil talaba",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h08_profil_talaba.png"
+    },
+    {
+      "id": "h09",
+      "title": "Profil sozlamalar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h09_profil_sozlamalar.png"
+    },
+    {
+      "id": "h10",
+      "title": "Profil oxiri",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h10_profil_oxiri.png"
+    },
+    {
+      "id": "h11",
+      "title": "Ilova haqida",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h11_ilova_haqida.png"
+    },
+    {
+      "id": "h12",
+      "title": "Rejim mutaxassis (Profil)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "h13",
+      "title": "Mutaxassis kirish (MOCK OTP)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h13_mutaxassis_kirish_mock_otp.png"
+    },
+    {
+      "id": "h14",
+      "title": "Asosiy mutaxassis pastda",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h14_asosiy_mutaxassis_pastda.png"
+    },
+    {
+      "id": "h15",
+      "title": "Profil mutaxassis kirgan",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h15_profil_mutaxassis_kirgan.png"
+    },
+    {
+      "id": "h16",
+      "title": "Qorong‘i asosiy",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h16_qorong_i_asosiy.png"
+    },
+    {
+      "id": "h17",
+      "title": "Qorong‘i profil",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h17_qorong_i_profil.png"
+    },
+    {
+      "id": "h18",
+      "title": "Qorong‘i ogohlantirish (o‘qish)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h18_qorong_i_ogohlantirish_o_qish.png"
+    },
+    {
+      "id": "h19",
+      "title": "320 x2 asosiy",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h19_320_x2_asosiy.png"
+    },
+    {
+      "id": "h20",
+      "title": "320 x2 rejim",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h20_320_x2_rejim.png"
+    },
+    {
+      "id": "h21",
+      "title": "320 x2 profil",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h21_320_x2_profil.png"
+    },
+    {
+      "id": "h22",
+      "title": "ru asosiy",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h22_ru_asosiy.png"
+    },
+    {
+      "id": "h23",
+      "title": "ru profil",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h23_ru_profil.png"
+    },
+    {
+      "id": "h24",
+      "title": "en asosiy",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h24_en_asosiy.png"
+    },
+    {
+      "id": "h25",
+      "title": "en profil",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "h25_en_profil.png"
+    }
+  ],
+  "pass": 25,
+  "fail": 0
+}

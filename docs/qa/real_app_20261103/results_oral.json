@@ -1,0 +1,77 @@
+{
+  "role": "oral",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "o01",
+      "title": "Onboarding → Mutaxassis rejimi",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"EXPERT\""
+      ],
+      "screenshot": null
+    },
+    {
+      "id": "o02",
+      "title": "MOCK OTP bilan kirish",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o02_mock_otp_bilan_kirish.png"
+    },
+    {
+      "id": "o03",
+      "title": "«Og‘zaki imtihon (bilet)» ochiladi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o03_og_zaki_imtihon_bilet_ochiladi.png"
+    },
+    {
+      "id": "o04",
+      "title": "Bilet chiqadi: 5 savol, ball qo‘yilmagan, saqlab bo‘lmaydi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o04_bilet_chiqadi_5_savol_ball_qo_yilmagan_s.png"
+    },
+    {
+      "id": "o05",
+      "title": "Slayder bilan 5 savolga ball qo‘yiladi",
+      "result": "PASS",
+      "notes": [
+        "Jami: 50 / 100"
+      ],
+      "screenshot": "o05_slayder_bilan_5_savolga_ball_qo_yiladi.png"
+    },
+    {
+      "id": "o06",
+      "title": "Natija saqlanadi, tarixda ko‘rinadi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o06_natija_saqlanadi_tarixda_ko_rinadi.png"
+    },
+    {
+      "id": "o07",
+      "title": "Keyingi talaba: boshqa bilet (takrorlanmaydi)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o07_keyingi_talaba_boshqa_bilet_takrorlanmay.png"
+    },
+    {
+      "id": "o08",
+      "title": "Javob kaliti ochiladi (ustoz uchun)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o08_javob_kaliti_ochiladi_ustoz_uchun.png"
+    },
+    {
+      "id": "o09",
+      "title": "Tarmoq o‘chiq: oflayn ishladi",
+      "result": "PASS",
+      "notes": [
+        "Bloklangan HTTP urinishlari: 0"
+      ],
+      "screenshot": null
+    }
+  ],
+  "pass": 9,
+  "fail": 0
+}

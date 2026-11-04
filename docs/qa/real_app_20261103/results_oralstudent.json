@@ -1,0 +1,29 @@
+{
+  "role": "oralstudent",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "o01",
+      "title": "Onboarding → Talaba rejimi → Boshlash",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "o02",
+      "title": "Talaba: Asosiyda «Bilim va malakani baholash» yo‘q",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o02_talaba_asosiyda_bilim_va_malakani_bahola.png"
+    },
+    {
+      "id": "o03",
+      "title": "Talaba: imtihon havolasi ochilmaydi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o03_talaba_imtihon_havolasi_ochilmaydi.png"
+    }
+  ],
+  "pass": 3,
+  "fail": 0
+}

@@ -237,11 +237,11 @@ void main() {
     });
 
     test(
-      'kutubxona: moddalar va usullar Pro; namunalar/manbalar/lug‘at bepul',
+      'kutubxona: faqat usullar Pro; moddalar/namunalar/manbalar/lug‘at bepul',
       () {
         expect(
           ProSplit.isFreeLibrarySection(LibrarySection.substances),
-          isFalse,
+          isTrue,
         );
         expect(ProSplit.isFreeLibrarySection(LibrarySection.methods), isFalse);
         expect(ProSplit.isFreeLibrarySection(LibrarySection.specimens), isTrue);

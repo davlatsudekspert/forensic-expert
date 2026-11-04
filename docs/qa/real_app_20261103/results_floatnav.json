@@ -1,0 +1,182 @@
+{
+  "role": "floatnav",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "f01",
+      "title": "Til tanlash",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "f01_til_tanlash.png"
+    },
+    {
+      "id": "f02",
+      "title": "Ogohlantirish",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "f02_ogohlantirish.png"
+    },
+    {
+      "id": "f03",
+      "title": "Rejim",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "f03_rejim.png"
+    },
+    {
+      "id": "f04",
+      "title": "Asosiy yuqori (to‘liq menyu)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "f04_asosiy_yuqori_to_liq_menyu.png"
+    },
+    {
+      "id": "f05",
+      "title": "Asosiy pastga skroll (ixcham menyu)",
+      "result": "PASS",
+      "notes": [
+        "full=Size(358.0, 64.0) compact=Size(296.0, 48.0)"
+      ],
+      "screenshot": "f05_asosiy_pastga_skroll_ixcham_menyu.png"
+    },
+    {
+      "id": "f06",
+      "title": "Asosiy yuqoriga skroll (to‘liq qaytdi)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "f06_asosiy_yuqoriga_skroll_to_liq_qaytdi.png"
+    },
+    {
+      "id": "f07",
+      "title": "Asosiy oxiri (menyu ostida to‘silmaydi)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "f07_asosiy_oxiri_menyu_ostida_to_silmaydi.png"
+    },
+    {
+      "id": "f08",
+      "title": "Kutubxona tugmasi → Kutubxona",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "f08_kutubxona_tugmasi_kutubxona.png"
+    },
+    {
+      "id": "f09",
+      "title": "Kutubxona oxiri",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "f09_kutubxona_oxiri.png"
+    },
+    {
+      "id": "f10",
+      "title": "Vositalar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "f10_vositalar.png"
+    },
+    {
+      "id": "f11",
+      "title": "Vositalar oxiri",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "f11_vositalar_oxiri.png"
+    },
+    {
+      "id": "f12",
+      "title": "AI",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "f12_ai.png"
+    },
+    {
+      "id": "f13",
+      "title": "AI oxiri",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "f13_ai_oxiri.png"
+    },
+    {
+      "id": "f14",
+      "title": "Profil",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "f14_profil.png"
+    },
+    {
+      "id": "f15",
+      "title": "Profil oxiri",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "f15_profil_oxiri.png"
+    },
+    {
+      "id": "f16",
+      "title": "Modda detali",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "f16_modda_detali.png"
+    },
+    {
+      "id": "f17",
+      "title": "Modda detali (birinchi yozuv)",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Macedo AA va boshq. · Analytical methods : advancing methods and appli…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"incb.org\""
+      ],
+      "screenshot": "f17_modda_detali_birinchi_yozuv.png"
+    },
+    {
+      "id": "f18",
+      "title": "Modda detali oxiri",
+      "result": "PASS",
+      "notes": [
+        "LANG? EN:\"Macedo AA va boshq. · Analytical methods : advancing methods and appli…\" | RAW:\"pubchem.ncbi.nlm.nih.gov\" | RAW:\"incb.org\""
+      ],
+      "screenshot": "f18_modda_detali_oxiri.png"
+    },
+    {
+      "id": "f19",
+      "title": "Qorong‘i Asosiy",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "f19_qorong_i_asosiy.png"
+    },
+    {
+      "id": "f20",
+      "title": "Qorong‘i Asosiy pastga (ixcham)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "f20_qorong_i_asosiy_pastga_ixcham.png"
+    },
+    {
+      "id": "f21",
+      "title": "Qorong‘i Profil",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "f21_qorong_i_profil.png"
+    },
+    {
+      "id": "f22",
+      "title": "320 dp Asosiy",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "f22_320_dp_asosiy.png"
+    },
+    {
+      "id": "f23",
+      "title": "320 dp Asosiy pastga",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "f23_320_dp_asosiy_pastga.png"
+    },
+    {
+      "id": "f24",
+      "title": "320 dp ru Asosiy",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "f24_320_dp_ru_asosiy.png"
+    }
+  ],
+  "pass": 24,
+  "fail": 0
+}

@@ -74,10 +74,10 @@ abstract final class ProSplit {
   static bool isFreeKnowledge(KnowledgeKind kind, KnowledgeArea area) =>
       kind == KnowledgeKind.topic && isFreeArea(area);
 
-  /// Kutubxona bo‘limi bepulmi. Moddalar va Usullar — Pro; namunalar
-  /// (provenance), manbalar va lug‘at — doim bepul.
+  /// Kutubxona bo‘limi bepulmi. Faqat Usullar — Pro (egasi qarori,
+  /// 2026-11-04); moddalar, namunalar (provenance), manbalar va lug‘at — bepul.
   static bool isFreeLibrarySection(LibrarySection s) => switch (s) {
-    LibrarySection.substances || LibrarySection.methods => false,
+    LibrarySection.methods => false,
     _ => true,
   };
 

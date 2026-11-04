@@ -1,0 +1,620 @@
+{
+  "role": "class",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "c01",
+      "title": "Onboarding: til",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c01_onboarding_til.png"
+    },
+    {
+      "id": "c02",
+      "title": "Tushundim → rejim tanlash",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c02_tushundim_rejim_tanlash.png"
+    },
+    {
+      "id": "c03",
+      "title": "Rejim: Ustoz → davom",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c03_rejim_ustoz_davom.png"
+    },
+    {
+      "id": "c04",
+      "title": "Davom etish → hisob taklifi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c04_davom_etish_hisob_taklifi.png"
+    },
+    {
+      "id": "c05",
+      "title": "Boshlash → USTOZ Asosiy (yuqori)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c05_boshlash_ustoz_asosiy_yuqori.png"
+    },
+    {
+      "id": "c06",
+      "title": "USTOZ Asosiy (pastga)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c06_ustoz_asosiy_pastga.png"
+    },
+    {
+      "id": "c07",
+      "title": "USTOZ Asosiy (eng pastki)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c07_ustoz_asosiy_eng_pastki.png"
+    },
+    {
+      "id": "c08",
+      "title": "USTOZ Asosiy: «Ustoz stolim» stoli",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c08_ustoz_asosiy_ustoz_stolim_stoli.png"
+    },
+    {
+      "id": "c09",
+      "title": "USTOZ stoli: teachLessons ochiladi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c09_ustoz_stoli_teachlessons_ochiladi.png"
+    },
+    {
+      "id": "c10",
+      "title": "USTOZ stoli: teachLessons (pastga)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c10_ustoz_stoli_teachlessons_pastga.png"
+    },
+    {
+      "id": "c11",
+      "title": "USTOZ stoli: teachRun ochiladi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c11_ustoz_stoli_teachrun_ochiladi.png"
+    },
+    {
+      "id": "c12",
+      "title": "USTOZ stoli: teachRun (pastga)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c12_ustoz_stoli_teachrun_pastga.png"
+    },
+    {
+      "id": "c13",
+      "title": "USTOZ stoli: teachGroups ochiladi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c13_ustoz_stoli_teachgroups_ochiladi.png"
+    },
+    {
+      "id": "c14",
+      "title": "USTOZ stoli: teachGroups (pastga)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c14_ustoz_stoli_teachgroups_pastga.png"
+    },
+    {
+      "id": "c15",
+      "title": "USTOZ stoli: teachResults ochiladi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c15_ustoz_stoli_teachresults_ochiladi.png"
+    },
+    {
+      "id": "c16",
+      "title": "USTOZ stoli: teachResults (pastga)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c16_ustoz_stoli_teachresults_pastga.png"
+    },
+    {
+      "id": "c17",
+      "title": "USTOZ paneli ochiladi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c17_ustoz_paneli_ochiladi.png"
+    },
+    {
+      "id": "c18",
+      "title": "USTOZ paneli (pastga)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c18_ustoz_paneli_pastga.png"
+    },
+    {
+      "id": "c19",
+      "title": "USTOZ: Test o‘tkazish → mavzu tanlash",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c19_ustoz_test_o_tkazish_mavzu_tanlash.png"
+    },
+    {
+      "id": "c20",
+      "title": "USTOZ: qidiruv «toksik»",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c20_ustoz_qidiruv_toksik.png"
+    },
+    {
+      "id": "c21",
+      "title": "USTOZ: mavzu tanlandi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c21_ustoz_mavzu_tanlandi.png"
+    },
+    {
+      "id": "c22",
+      "title": "USTOZ: test yaratildi → kod / QR",
+      "result": "PASS",
+      "notes": [
+        "kod: 312387"
+      ],
+      "screenshot": "c22_ustoz_test_yaratildi_kod_qr.png"
+    },
+    {
+      "id": "c23",
+      "title": "USTOZ: kod / QR (pastga)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c23_ustoz_kod_qr_pastga.png"
+    },
+    {
+      "id": "c24",
+      "title": "USTOZ: Natijalar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c24_ustoz_natijalar.png"
+    },
+    {
+      "id": "c25",
+      "title": "USTOZ: Sinfga qo‘shilish (kod maydoni)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c25_ustoz_sinfga_qo_shilish_kod_maydoni.png"
+    },
+    {
+      "id": "c26",
+      "title": "USTOZ: kirish (MOCK) → Guruhlar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c26_ustoz_kirish_mock_guruhlar.png"
+    },
+    {
+      "id": "c27",
+      "title": "USTOZ: yangi guruh formasi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c27_ustoz_yangi_guruh_formasi.png"
+    },
+    {
+      "id": "c28",
+      "title": "USTOZ: guruh yaratildi",
+      "result": "PASS",
+      "notes": [
+        "guruh kodi: KA4S6TCB"
+      ],
+      "screenshot": "c28_ustoz_guruh_yaratildi.png"
+    },
+    {
+      "id": "c29",
+      "title": "USTOZ: guruh sahifasi (pastga)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c29_ustoz_guruh_sahifasi_pastga.png"
+    },
+    {
+      "id": "c30",
+      "title": "USTOZ: mavzu testi berish → mavzu",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c30_ustoz_mavzu_testi_berish_mavzu.png"
+    },
+    {
+      "id": "c31",
+      "title": "USTOZ: mavzu tanlandi → test berish",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c31_ustoz_mavzu_tanlandi_test_berish.png"
+    },
+    {
+      "id": "c32",
+      "title": "USTOZ: testni berish (yuborish)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c32_ustoz_testni_berish_yuborish.png"
+    },
+    {
+      "id": "c33",
+      "title": "TALABA Asosiy (yuqori)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c33_talaba_asosiy_yuqori.png"
+    },
+    {
+      "id": "c34",
+      "title": "TALABA Asosiy (pastga 1)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c34_talaba_asosiy_pastga_1.png"
+    },
+    {
+      "id": "c35",
+      "title": "TALABA Asosiy (pastga 2)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c35_talaba_asosiy_pastga_2.png"
+    },
+    {
+      "id": "c36",
+      "title": "TALABA Asosiy (eng pastki)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c36_talaba_asosiy_eng_pastki.png"
+    },
+    {
+      "id": "c37",
+      "title": "TALABA: Guruhim (kirishsiz)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c37_talaba_guruhim_kirishsiz.png"
+    },
+    {
+      "id": "c38",
+      "title": "TALABA: kirish (MOCK)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c38_talaba_kirish_mock.png"
+    },
+    {
+      "id": "c39",
+      "title": "TALABA: Sud tibbiyoti (yuqori kartadan)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c39_talaba_sud_tibbiyoti_yuqori_kartadan.png"
+    },
+    {
+      "id": "c40",
+      "title": "TALABA: Sud tibbiyoti (pastga)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c40_talaba_sud_tibbiyoti_pastga.png"
+    },
+    {
+      "id": "c41",
+      "title": "TALABA: Toksikologiya (yuqori kartadan)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c41_talaba_toksikologiya_yuqori_kartadan.png"
+    },
+    {
+      "id": "c42",
+      "title": "TALABA: Toksikologiya (pastga)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c42_talaba_toksikologiya_pastga.png"
+    },
+    {
+      "id": "c43",
+      "title": "TALABA: Biokimyo (yuqori kartadan)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c43_talaba_biokimyo_yuqori_kartadan.png"
+    },
+    {
+      "id": "c44",
+      "title": "TALABA: Biokimyo (pastga)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c44_talaba_biokimyo_pastga.png"
+    },
+    {
+      "id": "c45",
+      "title": "TALABA: Bugungi savol — javob",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c45_talaba_bugungi_savol_javob.png"
+    },
+    {
+      "id": "c46",
+      "title": "TALABA: Darslar va kitoblar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c46_talaba_darslar_va_kitoblar.png"
+    },
+    {
+      "id": "c47",
+      "title": "TALABA: Darslar (pastga)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c47_talaba_darslar_pastga.png"
+    },
+    {
+      "id": "c48",
+      "title": "TALABA: bitta kurs/dars ochish",
+      "result": "PASS",
+      "notes": [
+        "kurslar yo‘q (bo‘sh holat)"
+      ],
+      "screenshot": "c48_talaba_bitta_kurs_dars_ochish.png"
+    },
+    {
+      "id": "c49",
+      "title": "TALABA: dars (ro‘yxatdan biri)",
+      "result": "PASS",
+      "notes": [
+        "dars yozuvi topilmadi"
+      ],
+      "screenshot": "c49_talaba_dars_ro_yxatdan_biri.png"
+    },
+    {
+      "id": "c50",
+      "title": "TALABA: Testlar va kartochkalar",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c50_talaba_testlar_va_kartochkalar.png"
+    },
+    {
+      "id": "c51",
+      "title": "TALABA: mashq (to‘plamlardan ochiladiganini topish)",
+      "result": "PASS",
+      "notes": [
+        "mashq tugmalari: 18"
+      ],
+      "screenshot": "c51_talaba_mashq_to_plamlardan_ochiladiganin.png"
+    },
+    {
+      "id": "c52",
+      "title": "TALABA: mashq savoli 1",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c52_talaba_mashq_savoli_1.png"
+    },
+    {
+      "id": "c53",
+      "title": "TALABA: mashq izohi 1",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c53_talaba_mashq_izohi_1.png"
+    },
+    {
+      "id": "c54",
+      "title": "TALABA: mashq savoli 2",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c54_talaba_mashq_savoli_2.png"
+    },
+    {
+      "id": "c55",
+      "title": "TALABA: mashq izohi 2",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c55_talaba_mashq_izohi_2.png"
+    },
+    {
+      "id": "c56",
+      "title": "TALABA: mashq savoli 3",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c56_talaba_mashq_savoli_3.png"
+    },
+    {
+      "id": "c57",
+      "title": "TALABA: mashq izohi 3",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c57_talaba_mashq_izohi_3.png"
+    },
+    {
+      "id": "c58",
+      "title": "TALABA: Imtihon rejimi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c58_talaba_imtihon_rejimi.png"
+    },
+    {
+      "id": "c59",
+      "title": "TALABA: sinf testiga kod bilan qo‘shilish",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c59_talaba_sinf_testiga_kod_bilan_qo_shilish.png"
+    },
+    {
+      "id": "c60",
+      "title": "TALABA: sinf testi — kutish zali",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c60_talaba_sinf_testi_kutish_zali.png"
+    },
+    {
+      "id": "c61",
+      "title": "TALABA: Guruhim (kirgan holat)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c61_talaba_guruhim_kirgan_holat.png"
+    },
+    {
+      "id": "c62",
+      "title": "TALABA: kod bilan qo‘shilish",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c62_talaba_kod_bilan_qo_shilish.png"
+    },
+    {
+      "id": "c63",
+      "title": "TALABA: taxallus → qo‘shilish",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c63_talaba_taxallus_qo_shilish.png"
+    },
+    {
+      "id": "c64",
+      "title": "TALABA: guruh sahifasi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c64_talaba_guruh_sahifasi.png"
+    },
+    {
+      "id": "c65",
+      "title": "TALABA: guruh testini boshlash",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c65_talaba_guruh_testini_boshlash.png"
+    },
+    {
+      "id": "c66",
+      "title": "TALABA: guruh testi savol 1",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c66_talaba_guruh_testi_savol_1.png"
+    },
+    {
+      "id": "c67",
+      "title": "TALABA: guruh testi savol 2",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c67_talaba_guruh_testi_savol_2.png"
+    },
+    {
+      "id": "c68",
+      "title": "TALABA: guruh testi savol 3",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c68_talaba_guruh_testi_savol_3.png"
+    },
+    {
+      "id": "c69",
+      "title": "TALABA: guruh testi savol 4",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c69_talaba_guruh_testi_savol_4.png"
+    },
+    {
+      "id": "c70",
+      "title": "TALABA: guruh testi savol 5",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c70_talaba_guruh_testi_savol_5.png"
+    },
+    {
+      "id": "c71",
+      "title": "TALABA: guruh testi savol 6",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c71_talaba_guruh_testi_savol_6.png"
+    },
+    {
+      "id": "c72",
+      "title": "TALABA: guruh testi savol 7",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c72_talaba_guruh_testi_savol_7.png"
+    },
+    {
+      "id": "c73",
+      "title": "TALABA: guruh testi savol 8",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c73_talaba_guruh_testi_savol_8.png"
+    },
+    {
+      "id": "c74",
+      "title": "TALABA: guruh testi savol 9",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c74_talaba_guruh_testi_savol_9.png"
+    },
+    {
+      "id": "c75",
+      "title": "TALABA: guruh testi savol 10",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c75_talaba_guruh_testi_savol_10.png"
+    },
+    {
+      "id": "c76",
+      "title": "TALABA: natija (ball)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c76_talaba_natija_ball.png"
+    },
+    {
+      "id": "c77",
+      "title": "TALABA: natija (pastga)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c77_talaba_natija_pastga.png"
+    },
+    {
+      "id": "c78",
+      "title": "320 TALABA Asosiy (yuqori)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c78_320_talaba_asosiy_yuqori.png"
+    },
+    {
+      "id": "c79",
+      "title": "320 TALABA Asosiy (pastga)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c79_320_talaba_asosiy_pastga.png"
+    },
+    {
+      "id": "c80",
+      "title": "320 TALABA Asosiy (pastki)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c80_320_talaba_asosiy_pastki.png"
+    },
+    {
+      "id": "c81",
+      "title": "320 TALABA Guruhim",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c81_320_talaba_guruhim.png"
+    },
+    {
+      "id": "c82",
+      "title": "320 USTOZ paneli",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c82_320_ustoz_paneli.png"
+    },
+    {
+      "id": "c83",
+      "title": "QORONG‘I TALABA Asosiy (yuqori)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c83_qorong_i_talaba_asosiy_yuqori.png"
+    },
+    {
+      "id": "c84",
+      "title": "QORONG‘I TALABA Asosiy (pastga)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c84_qorong_i_talaba_asosiy_pastga.png"
+    },
+    {
+      "id": "c85",
+      "title": "QORONG‘I TALABA Guruhim",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c85_qorong_i_talaba_guruhim.png"
+    },
+    {
+      "id": "c86",
+      "title": "QORONG‘I USTOZ paneli",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "c86_qorong_i_ustoz_paneli.png"
+    }
+  ],
+  "pass": 86,
+  "fail": 0
+}

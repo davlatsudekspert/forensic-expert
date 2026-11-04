@@ -1,0 +1,202 @@
+{
+  "role": "teacheroral",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "t01",
+      "title": "Onboarding: til",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t01_onboarding_til.png"
+    },
+    {
+      "id": "t02",
+      "title": "Tushundim → Rejim: Ustoz",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t02_tushundim_rejim_ustoz.png"
+    },
+    {
+      "id": "t03",
+      "title": "Davom → Boshlash → USTOZ Asosiy",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t03_davom_boshlash_ustoz_asosiy.png"
+    },
+    {
+      "id": "t04",
+      "title": "USTOZ: kirish (MOCK)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "t05",
+      "title": "Asosiy: stolda «Og‘zaki imtihon (bilet)» kartasi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t05_asosiy_stolda_og_zaki_imtihon_bilet_kart.png"
+    },
+    {
+      "id": "t06",
+      "title": "Karta bosildi → mavzu tanlash (izoh ko‘rinadi)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t06_karta_bosildi_mavzu_tanlash_izoh_ko_rina.png"
+    },
+    {
+      "id": "t07",
+      "title": "Demo mavzular ro‘yxatda",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t07_demo_mavzular_ro_yxatda.png"
+    },
+    {
+      "id": "t08",
+      "title": "Qidiruv: «asfiksiya» ro‘yxatni toraytiradi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t08_qidiruv_asfiksiya_ro_yxatni_toraytiradi.png"
+    },
+    {
+      "id": "t09",
+      "title": "Bitta mavzu belgilandi → «Tanlandi: 1»",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t09_bitta_mavzu_belgilandi_tanlandi_1.png"
+    },
+    {
+      "id": "t10",
+      "title": "Yana ikkitasi → «Tanlandi: 3», tugma faol",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t10_yana_ikkitasi_tanlandi_3_tugma_faol.png"
+    },
+    {
+      "id": "t11",
+      "title": "320×640: mavzu tanlash",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t11_320_640_mavzu_tanlash.png"
+    },
+    {
+      "id": "t12",
+      "title": "Bilet tuzish → savollar havzasi",
+      "result": "PASS",
+      "notes": [
+        "havza: 12 savol"
+      ],
+      "screenshot": "t12_bilet_tuzish_savollar_havzasi.png"
+    },
+    {
+      "id": "t13",
+      "title": "Bilet chiqarildi: 5 savol, ball yo‘q, saqlab bo‘lmaydi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t13_bilet_chiqarildi_5_savol_ball_yo_q_saqla.png"
+    },
+    {
+      "id": "t14",
+      "title": "Javob kaliti ochiladi (slayd bandlari + manba)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t14_javob_kaliti_ochiladi_slayd_bandlari_man.png"
+    },
+    {
+      "id": "t15",
+      "title": "Slayderlar bilan 5 savolga ball",
+      "result": "PASS",
+      "notes": [
+        "jami 50"
+      ],
+      "screenshot": "t15_slayderlar_bilan_5_savolga_ball.png"
+    },
+    {
+      "id": "t16",
+      "title": "Ism kiritildi → Saqlash faol",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t16_ism_kiritildi_saqlash_faol.png"
+    },
+    {
+      "id": "t17",
+      "title": "Saqlandi: tarixda ko‘rinadi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t17_saqlandi_tarixda_ko_rinadi.png"
+    },
+    {
+      "id": "t18",
+      "title": "Ikkinchi bilet",
+      "result": "PASS",
+      "notes": [
+        "2-bilet: [demo-toks#2, demo-toks#3, demo-toks#8, demo-toks#6, demo-toks#0]"
+      ],
+      "screenshot": "t18_ikkinchi_bilet.png"
+    },
+    {
+      "id": "t19",
+      "title": "320×640: bilet (kalit ochiq)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t19_320_640_bilet_kalit_ochiq.png"
+    },
+    {
+      "id": "t20",
+      "title": "320×640: bilet (pastga, tarix)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t20_320_640_bilet_pastga_tarix.png"
+    },
+    {
+      "id": "t21",
+      "title": "«Mavzularni o‘zgartirish» → mavzu tanlashga qaytadi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t21_mavzularni_o_zgartirish_mavzu_tanlashga_.png"
+    },
+    {
+      "id": "t22",
+      "title": "Tarmoq o‘chiq: oflayn ishladi",
+      "result": "PASS",
+      "notes": [
+        "Bloklangan HTTP urinishlari: 0"
+      ],
+      "screenshot": null
+    },
+    {
+      "id": "t23",
+      "title": "TALABA: Asosiyda karta yo‘q",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t23_talaba_asosiyda_karta_yo_q.png"
+    },
+    {
+      "id": "t24",
+      "title": "TALABA: /home/teacher/oral Asosiyga qaytaradi",
+      "result": "PASS",
+      "notes": [
+        "joylashuv: /home"
+      ],
+      "screenshot": "t24_talaba_home_teacher_oral_asosiyga_qaytar.png"
+    },
+    {
+      "id": "t25",
+      "title": "MUTAXASSIS: Asosiyda karta yo‘q",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "t25_mutaxassis_asosiyda_karta_yo_q.png"
+    },
+    {
+      "id": "t26",
+      "title": "MUTAXASSIS: /home/teacher/oral Asosiyga qaytaradi",
+      "result": "PASS",
+      "notes": [
+        "joylashuv: /home"
+      ],
+      "screenshot": "t26_mutaxassis_home_teacher_oral_asosiyga_qa.png"
+    }
+  ],
+  "pass": 26,
+  "fail": 0
+}

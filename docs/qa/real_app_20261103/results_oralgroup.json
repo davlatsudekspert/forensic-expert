@@ -1,0 +1,259 @@
+{
+  "role": "oralgroup",
+  "platform": "linux (debug, Xvfb)",
+  "steps": [
+    {
+      "id": "o01",
+      "title": "Onboarding: til",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o01_onboarding_til.png"
+    },
+    {
+      "id": "o02",
+      "title": "Tushundim → Rejim: Ustoz",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o02_tushundim_rejim_ustoz.png"
+    },
+    {
+      "id": "o03",
+      "title": "Davom → Boshlash → USTOZ Asosiy",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o03_davom_boshlash_ustoz_asosiy.png"
+    },
+    {
+      "id": "o04",
+      "title": "USTOZ: kirish (MOCK)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": null
+    },
+    {
+      "id": "o05",
+      "title": "Mavzu tanlash: ikki tugma, mavzusiz «Guruhga (QR)» yopiq",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o05_mavzu_tanlash_ikki_tugma_mavzusiz_guruhg.png"
+    },
+    {
+      "id": "o06",
+      "title": "Kurs chiplari to‘liq kenglikda, chapdan boshlanadi",
+      "result": "PASS",
+      "notes": [
+        "chiplar kengligi 358.0 / ekran 390.0, chap=16.0"
+      ],
+      "screenshot": "o06_kurs_chiplari_to_liq_kenglikda_chapdan_b.png"
+    },
+    {
+      "id": "o07",
+      "title": "320×640: ikki tugma tartibli",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o07_320_640_ikki_tugma_tartibli.png"
+    },
+    {
+      "id": "o08",
+      "title": "Uch mavzu → «Guruhga (QR)» → sozlash",
+      "result": "PASS",
+      "notes": [
+        "mavzular kaliti: demo-asfiksiya,demo-toks,demo-trauma; faol: 0"
+      ],
+      "screenshot": "o08_uch_mavzu_guruhga_qr_sozlash.png"
+    },
+    {
+      "id": "o09",
+      "title": "Sozlash: 5 talaba, 10 daqiqa, takror ogohlantirishi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o09_sozlash_5_talaba_10_daqiqa_takror_ogohla.png"
+    },
+    {
+      "id": "o10",
+      "title": "320×640: sozlash",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o10_320_640_sozlash.png"
+    },
+    {
+      "id": "o11",
+      "title": "Boshlash → doska (QR + kod, 3 DEMO talaba)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o11_boshlash_doska_qr_kod_3_demo_talaba.png"
+    },
+    {
+      "id": "o12",
+      "title": "320×640: doska",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o12_320_640_doska.png"
+    },
+    {
+      "id": "o13",
+      "title": "320×640: doska (pastga: tugmalar)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o13_320_640_doska_pastga_tugmalar.png"
+    },
+    {
+      "id": "o14",
+      "title": "TALABA: QR havolasi (t=oral) qo‘shilish ekranini ochadi",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o14_talaba_qr_havolasi_t_oral_qo_shilish_ekr.png"
+    },
+    {
+      "id": "o15",
+      "title": "TALABA: noto‘g‘ri ism → xato matni",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o15_talaba_noto_g_ri_ism_xato_matni.png"
+    },
+    {
+      "id": "o16",
+      "title": "TALABA: ism kiritildi → bilet ekrani",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o16_talaba_ism_kiritildi_bilet_ekrani.png"
+    },
+    {
+      "id": "o17",
+      "title": "320×640: talaba bileti",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o17_320_640_talaba_bileti.png"
+    },
+    {
+      "id": "o18",
+      "title": "TALABA: «Javobga tayyorman» → Navbatdasiz",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o18_talaba_javobga_tayyorman_navbatdasiz.png"
+    },
+    {
+      "id": "o19",
+      "title": "TALABA: ilovadan chiqdi → qaytdi (ustozga ko‘rinadi)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o19_talaba_ilovadan_chiqdi_qaytdi_ustozga_ko.png"
+    },
+    {
+      "id": "o20",
+      "title": "USTOZ: navbatda talaba «Tayyor» bo‘limida",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o20_ustoz_navbatda_talaba_tayyor_bo_limida.png"
+    },
+    {
+      "id": "o21",
+      "title": "USTOZ: talabani bosdi → chaqirildi, baholash ekrani",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o21_ustoz_talabani_bosdi_chaqirildi_baholash.png"
+    },
+    {
+      "id": "o22",
+      "title": "USTOZ: javob kaliti ochiladi (mahalliy havzadan)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o22_ustoz_javob_kaliti_ochiladi_mahalliy_hav.png"
+    },
+    {
+      "id": "o23",
+      "title": "320×640: baholash",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o23_320_640_baholash.png"
+    },
+    {
+      "id": "o24",
+      "title": "USTOZ: 5 savolga ball → Saqlash → navbat",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o24_ustoz_5_savolga_ball_saqlash_navbat.png"
+    },
+    {
+      "id": "o25",
+      "title": "TALABA: o‘z balini ko‘radi (Jami: x / 100)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o25_talaba_o_z_balini_ko_radi_jami_x_100.png"
+    },
+    {
+      "id": "o26",
+      "title": "USTOZ: doskada «baholandi», ball yo‘q",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o26_ustoz_doskada_baholandi_ball_yo_q.png"
+    },
+    {
+      "id": "o27",
+      "title": "USTOZ: natijalar ro‘yxati",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o27_ustoz_natijalar_ro_yxati.png"
+    },
+    {
+      "id": "o28",
+      "title": "USTOZ: yakunlash (tasdiq bilan)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o28_ustoz_yakunlash_tasdiq_bilan.png"
+    },
+    {
+      "id": "o29",
+      "title": "Faol imtihonlar ro‘yxati (yakunlangan bo‘limda)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o29_faol_imtihonlar_ro_yxati_yakunlangan_bo_.png"
+    },
+    {
+      "id": "o30",
+      "title": "TALABA: noto‘g‘ri kod → tushunarli xato",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o30_talaba_noto_g_ri_kod_tushunarli_xato.png"
+    },
+    {
+      "id": "o31",
+      "title": "Tarmoq o‘chiq: oflayn ishladi",
+      "result": "PASS",
+      "notes": [
+        "Bloklangan HTTP urinishlari: 0"
+      ],
+      "screenshot": null
+    },
+    {
+      "id": "o32",
+      "title": "TALABA: guruh imtihoni ustoz marshrutlari yopiq",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o32_talaba_guruh_imtihoni_ustoz_marshrutlari.png"
+    },
+    {
+      "id": "o33",
+      "title": "TALABA: QR kodni kiritib qo‘shila oladi (join ekrani)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o33_talaba_qr_kodni_kiritib_qo_shila_oladi_j.png"
+    },
+    {
+      "id": "o34",
+      "title": "MUTAXASSIS: guruh imtihoni ustoz marshrutlari yopiq",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o34_mutaxassis_guruh_imtihoni_ustoz_marshrut.png"
+    },
+    {
+      "id": "o35",
+      "title": "MUTAXASSIS: QR kodni kiritib qo‘shila oladi (join ekrani)",
+      "result": "PASS",
+      "notes": [],
+      "screenshot": "o35_mutaxassis_qr_kodni_kiritib_qo_shila_ola.png"
+    }
+  ],
+  "pass": 35,
+  "fail": 0
+}
