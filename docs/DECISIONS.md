@@ -409,3 +409,10 @@ Egasi yuborgan 6-kurs davolash rejasi (7 mavzu, 18+18=36 soat) bo‘yicha: «Dar
 4. Biokimyo
 5. Tibbiy huquq va bioetika (22+ dars)
 Mavzusi yo‘q bo‘limlar (murdalar, tirik shaxslar, sud biologiyasi va genetika, sud gistologiyasi, tibbiy kriminalistika) hozircha ko‘rsatilmaydi. Server kurs nomlari o‘zgarmaydi.
+
+## 2026-11-04 (kechroq) — «Asosiy fanlar» tarkibi qayta aniqlandi (egasi: «sen o‘zing o‘yla, Giyosov kitobida nima bo‘lsa — sud tibbiyoti»)
+Bekor qiladi oldingi «alohida karta» yozuvini. Ikki katta bo‘lim:
+1. **Sud tibbiyoti** (prof. G‘iyosov darsliklari): ichida — fakultet kurslari (Davolash ishi, Pediatriya, Stomatologiya, Tibbiy profilaktika), **Sud-tibbiy toksikologiya**, **Tibbiy huquq va bioetika**.
+2. **Sud-kimyoviy ekspertiza**: ichida — **Toksikologik kimyo** (81 mavzu) va «Apparatlar bilan ishlash».
+3. Biokimyo — o‘zgarmaydi.
+Server kurs nomlari o‘zgarmaydi; faqat ilovadagi guruhlash/ko‘rinadigan nomlar.
