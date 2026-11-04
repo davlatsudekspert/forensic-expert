@@ -58,16 +58,15 @@ flutter build ipa --release --no-codesign ${DEFINES:-} \
   --build-number="${GITHUB_RUN_NUMBER:-1}"
 ARCHIVE="build/ios/archive/Runner.xcarchive"
 [ -d "$ARCHIVE" ] || { echo "::error::archive not found"; exit 1; }
-# Zaxira yo‘l (FE_SIGNED_ARCHIVE=1): imzosiz archive o‘rniga huquqlar (entitlements)
-# archive paytida imzolanadi — «Apple bilan kirish» binarga tushishi uchun.
-if [ "${FE_SIGNED_ARCHIVE:-}" = "1" ]; then
-  echo "imzolangan archive yo‘li"
-  rm -rf "$ARCHIVE"
-  xcodebuild -workspace ios/Runner.xcworkspace -scheme Runner -configuration Release \
-    -destination 'generic/platform=iOS' -archivePath "$ARCHIVE" archive \
-    "${AUTH[@]}" DEVELOPMENT_TEAM="$APPLE_TEAM_ID" CODE_SIGN_STYLE=Automatic \
-    || { echo "::error::signed archive failed"; exit 1; }
-fi
+# `--no-codesign` arxivdagi ilova huquqlarsiz (entitlements) qoladi va eksport ularni
+# qo‘sha olmaydi (jurnal: «Sign in with Apple — YO‘Q»). Arxivdagi ilovani
+# ad-hoc imzo + Runner.entitlements bilan belgilab qo‘yamiz: eksport (Apple Distribution
+# bilan qayta imzolash) shu huquqlarni saqlab qoladi.
+APP_IN_ARCHIVE="$ARCHIVE/Products/Applications/Runner.app"
+[ -d "$APP_IN_ARCHIVE" ] || { echo "::error::Runner.app not found in archive"; exit 1; }
+codesign --force --sign - --entitlements ios/Runner/Runner.entitlements "$APP_IN_ARCHIVE" \
+  || { echo "::error::ad-hoc signing with entitlements failed"; exit 1; }
+echo "arxiv ilovasi huquqlari:" $(codesign -d --entitlements :- "$APP_IN_ARCHIVE" 2>/dev/null | grep -o '<key>[^<]*</key>' | sed 's/<[^>]*>//g' | tr '\n' ' ')
 rm -rf build/ios/ipa
 xcodebuild -exportArchive -archivePath "$ARCHIVE" \
   -exportPath build/ios/ipa \
@@ -110,11 +109,6 @@ if echo "$BIN_ENT" | grep -q 'com.apple.developer.applesignin'; then
 else
   echo "binar: Sign in with Apple — YO‘Q"
   if [ "${SOCIAL_SIGNIN:-}" = "true" ]; then
-    if [ "${FE_SIGNED_ARCHIVE:-}" != "1" ]; then
-      echo "qayta urinish: imzolangan archive bilan"
-      rm -rf "$CHECK_DIR"
-      FE_SIGNED_ARCHIVE=1 exec bash "$0"
-    fi
     echo "::error::signed app binary has no Sign in with Apple entitlement"
     exit 1
   fi
