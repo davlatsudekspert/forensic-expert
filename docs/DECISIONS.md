@@ -382,3 +382,12 @@ Egasi yuborgan 6-kurs davolash rejasi (7 mavzu, 18+18=36 soat) bo‘yicha: «Dar
 - Pullik (talaba): «Tinglash» (audio) va o‘zini tayyorlash (mustaqil test banki, kartochka, imtihon, xatolar tahlili, AI) — Pro.
 - Pro hozir o‘chiq: faqat do‘konga chiqishda (xarid sinalgach) yoqiladi.
 - Institut: ustozlarga Ustoz Pro, talabalar kod bilan a’zo (ustoz testi bepul).
+
+## 2026-11-04 — Institut/promokod: yakuniy loyiha (build 61, hali qurilmagan)
+- Bitta tizim: promokod (institut yoki sovg‘a). Admin paneldan: institut (nomi, manzil, STIR, bank, rahbar, ustozlar soni, muddat, narx) → kodlar avtomatik yaratiladi → shartnoma PDF blankasi avtomatik to‘ldiriladi (1-ilovada kodlar).
+- Kod Profilda kiritiladi (kirish ekrani o‘zgarmaydi); tizim turini taniydi: institut → «Institut: nomi, muddat»; sovg‘a → «Sovg‘a: kim bergan, muddat»; Ustoz Pro ochiladi.
+- Ustoz kodlari bir martalik (Gmail’ga bog‘lanadi), talabalar guruh orqali kiradi, talaba kodi YO‘Q, talabalar soni cheksiz.
+- Qurilmalar limiti: 3 (Pro/institut hisoblari).
+- Narx: so‘mda; bitta ustoz narxi × ustozlar soni × muddat; institut narxi individual Ustoz Pro’dan QIMMATROQ (egasi qarori).
+- Ta’minlovchi: o‘zini o‘zi band qilgan shaxs (ma’lumotnoma 24.08.2026); rekvizitlar gitda saqlanmaydi (faqat admin serverida).
+- Shartnoma blankasi tayyor (Word/PDF), yurist va soliq maslahatchisi ko‘rib chiqishi kerak.
