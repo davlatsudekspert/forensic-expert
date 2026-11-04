@@ -8,9 +8,13 @@ class FakeAdminInstituteService implements AdminInstituteService {
   FakeAdminInstituteService({this.failure});
 
   PlanFailure? failure;
+
+  /// Faqat arxiv/uzaytirish amallari uchun xato (o‘qish ishlayveradi).
+  PlanFailure? actionFailure;
   final calls = <String>[];
   final _details = <String, InstituteDetail>{};
   final _codes = <String, List<InstituteCode>>{};
+  final _archived = <String>{};
   var _seq = 0;
 
   /// Berilgan institut (testlar uchun tayyor ma’lumot).
@@ -68,6 +72,7 @@ class FakeAdminInstituteService implements AdminInstituteService {
           revoked: _codes[d.id]!.where((c) => c.revoked).length,
           termStart: d.termStart,
           termEnd: d.termEnd,
+          archived: _archived.contains(d.id),
         ),
     ]);
   }
@@ -124,5 +129,47 @@ class FakeAdminInstituteService implements AdminInstituteService {
       }
     }
     return const PlanResult.ok(false);
+  }
+
+  @override
+  Future<PlanResult<bool>> setArchived(
+    String id, {
+    required bool archived,
+  }) async {
+    calls.add('archive:$id:$archived');
+    if (actionFailure != null) return PlanResult.fail(actionFailure!);
+    if (failure != null) return PlanResult.fail(failure!);
+    if (!_details.containsKey(id)) {
+      return const PlanResult.fail(PlanFailure.invalid);
+    }
+    archived ? _archived.add(id) : _archived.remove(id);
+    return PlanResult.ok(archived);
+  }
+
+  @override
+  Future<PlanResult<InstituteExtension>> extend(String id, int months) async {
+    calls.add('extend:$id:$months');
+    if (actionFailure != null) return PlanResult.fail(actionFailure!);
+    if (failure != null) return PlanResult.fail(failure!);
+    final d = _details[id];
+    if (d == null || months < 1 || months > 60) {
+      return const PlanResult.fail(PlanFailure.invalid);
+    }
+    final end = d.termEnd ?? DateTime.now();
+    final next = DateTime(end.year, end.month + months, end.day);
+    _details[id] = InstituteDetail(
+      id: d.id,
+      name: d.name,
+      seats: d.seats,
+      months: d.months + months,
+      termStart: d.termStart,
+      termEnd: next,
+    );
+    final used = _codes[id]!
+        .where((c) => c.status == InstituteCodeStatus.redeemed)
+        .length;
+    return PlanResult.ok(
+      InstituteExtension(termEnd: next, plansExtended: used),
+    );
   }
 }

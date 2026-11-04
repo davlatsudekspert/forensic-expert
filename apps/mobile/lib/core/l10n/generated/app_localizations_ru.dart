@@ -13973,4 +13973,60 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get homeTeacherLibraryBody =>
       'Вещества, лаборатория, реагенты, методы, стандарты и дисциплины — в Библиотеке и Инструментах';
+
+  @override
+  String get instArchive => 'В архив';
+
+  @override
+  String get instRestore => 'Вернуть из архива';
+
+  @override
+  String get instArchiveTitle => 'Отправить организацию в архив?';
+
+  @override
+  String get instArchiveBody =>
+      'Коды архивной организации не подойдут новым пользователям. Текущие участники остаются до конца срока. Ничего не удаляется.';
+
+  @override
+  String get instArchiveDone => 'Организация отправлена в архив.';
+
+  @override
+  String get instRestoreDone => 'Организация возвращена из архива.';
+
+  @override
+  String get instArchivedBadge => 'В архиве';
+
+  @override
+  String instArchivedSection(int n) {
+    return 'В архиве ($n)';
+  }
+
+  @override
+  String get instArchivedNote =>
+      'Организация в архиве: её коды не подойдут новым пользователям. Срок продлить можно.';
+
+  @override
+  String get instExtend => 'Продлить срок';
+
+  @override
+  String get instExtendTitle => 'На сколько месяцев продлить срок?';
+
+  @override
+  String instExtendMonths(int n) {
+    return '$n мес.';
+  }
+
+  @override
+  String get instExtendYes => 'Продлить';
+
+  @override
+  String instExtendDone(String date, int n) {
+    return 'Срок продлён: до $date. Срок преподавателей, ввёдших код, тоже обновлён ($n).';
+  }
+
+  @override
+  String get instActionError => 'Не удалось выполнить действие. Повторите.';
+
+  @override
+  String get instDialogCancel => 'Отмена';
 }

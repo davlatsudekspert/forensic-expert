@@ -9,6 +9,7 @@ import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/data/plan/fake_institute_service.dart';
 import 'package:forensic_expert/domain/admin/admin_models.dart';
 import 'package:forensic_expert/domain/admin/institute_models.dart';
+import 'package:forensic_expert/domain/ports/plan_ports.dart';
 
 import '../helpers/pump_app.dart';
 
@@ -233,6 +234,142 @@ void main() {
       await tapKey(tester, 'adminInst.revoke.no');
       expect(svc.calls.where((c) => c.startsWith('revoke')), isEmpty);
     });
+  });
+
+  group('arxiv va uzaytirish', () {
+    testWidgets('arxivga olish: tasdiq matni, bo‘lim, qaytarish', (
+      tester,
+    ) async {
+      await open(tester, Routes.adminInstitute('i1'));
+      expect(find.byKey(const Key('adminInstDetail.restore')), findsNothing);
+      await tapKey(tester, 'adminInstDetail.archive');
+      expect(
+        find.text(
+          'Arxivlangan tashkilot kodlari yangi foydalanuvchiga ishlamaydi. '
+          'Mavjud a’zolar muddati tugaguncha qoladi. Hech narsa o‘chirilmaydi.',
+        ),
+        findsOneWidget,
+      );
+      await tapKey(tester, 'adminInst.archive.yes');
+      expect(svc.calls, contains('archive:i1:true'));
+      expect(find.text('Tashkilot arxivga olindi.'), findsOneWidget);
+      expect(find.byKey(const Key('adminInstDetail.restore')), findsOneWidget);
+      expect(find.byKey(const Key('adminInstDetail.archive')), findsNothing);
+      // Arxivda ham uzaytirish ishlaydi.
+      expect(find.byKey(const Key('adminInstDetail.extend')), findsOneWidget);
+      await tapKey(tester, 'adminInstDetail.restore');
+      expect(svc.calls, contains('archive:i1:false'));
+      expect(find.text('Tashkilot arxivdan qaytarildi.'), findsOneWidget);
+      expect(find.byKey(const Key('adminInstDetail.archive')), findsOneWidget);
+    });
+
+    testWidgets('tasdiqlamasa: so‘rov yo‘q', (tester) async {
+      await open(tester, Routes.adminInstitute('i1'));
+      await tapKey(tester, 'adminInstDetail.archive');
+      await tapKey(tester, 'adminInst.archive.no');
+      expect(svc.calls.where((c) => c.startsWith('archive')), isEmpty);
+    });
+
+    testWidgets('arxiv bo‘limi: yig‘ilgan, ochilganda xiralashgan qator', (
+      tester,
+    ) async {
+      svc = FakeAdminInstituteService();
+      svc.seed(_inst, const []);
+      svc.seed(
+        const InstituteDetail(id: 'i2', name: 'Eski', seats: 1, months: 1),
+        const [],
+      );
+      await svc.setArchived('i2', archived: true);
+      await pumpApp(
+        tester,
+        settings: completedSettings(lang: 'uz'),
+        size: const Size(390, 1600),
+        initialLocation: Routes.adminInstitutes,
+        overrides: [
+          serverAccessProvider.overrideWith(
+            (ref) async => const ServerAccess(isAdmin: true),
+          ),
+          adminInstituteServiceProvider.overrideWithValue(svc),
+        ],
+      );
+      expect(find.byKey(const Key('adminInst.row.i1')), findsOneWidget);
+      expect(find.byKey(const Key('adminInst.row.i2')), findsNothing);
+      expect(find.text('Arxivdagilar (1)'), findsOneWidget);
+      await tapKey(tester, 'adminInst.archivedToggle');
+      expect(find.byKey(const Key('adminInst.row.i2')), findsOneWidget);
+      expect(find.byKey(const Key('adminInst.badge.i2')), findsOneWidget);
+      expect(find.text('Arxivda'), findsOneWidget);
+      await tapKey(tester, 'adminInst.row.i2');
+      expect(find.byKey(const Key('adminInstDetail.restore')), findsOneWidget);
+    });
+
+    testWidgets('uzaytirish: tanlov, yangi sana va xabar', (tester) async {
+      await open(tester, Routes.adminInstitute('i1'));
+      await tapKey(tester, 'adminInstDetail.extend');
+      for (final m in [1, 3, 6, 12]) {
+        expect(find.byKey(Key('adminInst.extend.m.$m')), findsOneWidget);
+      }
+      await tester.tap(find.byKey(const Key('adminInst.extend.m.3')));
+      await tester.pump();
+      await tapKey(tester, 'adminInst.extend.yes');
+      expect(svc.calls, contains('extend:i1:3'));
+      expect(
+        find.textContaining(
+          'Kod kiritgan ustozlarning muddati ham yangilandi (1).',
+        ),
+        findsOneWidget,
+      );
+      expect(find.textContaining('Muddat uzaytirildi:'), findsOneWidget);
+      expect(find.textContaining('2028'), findsWidgets);
+    });
+
+    testWidgets('xato: tushunarli xabar', (tester) async {
+      await open(tester, Routes.adminInstitute('i1'));
+      svc.actionFailure = PlanFailure.server;
+      await tapKey(tester, 'adminInstDetail.extend');
+      await tapKey(tester, 'adminInst.extend.yes');
+      expect(
+        find.text('Amalni bajarib bo‘lmadi. Qayta urinib ko‘ring.'),
+        findsOneWidget,
+      );
+    });
+
+    testWidgets('admin emas: arxiv/uzaytirish tugmalari ko‘rinmaydi', (
+      tester,
+    ) async {
+      await open(tester, Routes.adminInstitute('i1'), admin: false);
+      expect(find.byKey(const Key('adminInstDetail.archive')), findsNothing);
+      expect(find.byKey(const Key('adminInstDetail.extend')), findsNothing);
+    });
+
+    for (final lang in ['uz', 'ru', 'en']) {
+      for (final w in [320.0, 360.0]) {
+        testWidgets('overflow yo‘q: $lang $w', (tester) async {
+          svc = FakeAdminInstituteService();
+          svc.seed(_inst, const []);
+          await pumpApp(
+            tester,
+            settings: completedSettings(lang: lang),
+            size: Size(w, 900),
+            initialLocation: Routes.adminInstitute('i1'),
+            overrides: [
+              serverAccessProvider.overrideWith(
+                (ref) async => const ServerAccess(isAdmin: true),
+              ),
+              adminInstituteServiceProvider.overrideWithValue(svc),
+            ],
+          );
+          await tapKey(tester, 'adminInstDetail.extend');
+          expect(tester.takeException(), isNull);
+          await tapKey(tester, 'adminInst.extend.yes');
+          expect(tester.takeException(), isNull);
+          await tapKey(tester, 'adminInstDetail.archive');
+          expect(tester.takeException(), isNull);
+          await tapKey(tester, 'adminInst.archive.yes');
+          expect(tester.takeException(), isNull);
+        });
+      }
+    }
   });
 
   group('sovg‘a promokod', () {

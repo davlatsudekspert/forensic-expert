@@ -176,4 +176,42 @@ class SupabaseAdminInstituteService implements AdminInstituteService {
     if (m == null) return const PlanResult.fail(PlanFailure.server);
     return PlanResult.ok(m['result'] == 'REVOKED');
   }
+
+  @override
+  Future<PlanResult<bool>> setArchived(
+    String id, {
+    required bool archived,
+  }) async {
+    final res = await _r.rpc('admin_institute_set_archived', {
+      'p_id': id,
+      'p_archived': archived,
+    });
+    if (!res.ok) return PlanResult.fail(res.failure!);
+    final m = _map(res.value);
+    if (m == null) return const PlanResult.fail(PlanFailure.server);
+    if (m['result'] == 'NOT_FOUND') {
+      return const PlanResult.fail(PlanFailure.invalid);
+    }
+    if (m['result'] != 'OK') return const PlanResult.fail(PlanFailure.server);
+    return PlanResult.ok(
+      m['archived'] is bool ? m['archived']! as bool : archived,
+    );
+  }
+
+  @override
+  Future<PlanResult<InstituteExtension>> extend(String id, int months) async {
+    final res = await _r.rpc('admin_institute_extend', {
+      'p_id': id,
+      'p_months': months,
+    });
+    if (!res.ok) return PlanResult.fail(res.failure!);
+    final m = _map(res.value);
+    if (m == null) return const PlanResult.fail(PlanFailure.server);
+    if (m['result'] == 'INVALID' || m['result'] == 'NOT_FOUND') {
+      return const PlanResult.fail(PlanFailure.invalid);
+    }
+    final e = InstituteExtension.tryParse(m);
+    if (e == null) return const PlanResult.fail(PlanFailure.server);
+    return PlanResult.ok(e);
+  }
 }

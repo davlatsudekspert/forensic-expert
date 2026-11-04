@@ -173,6 +173,23 @@ void main() {
       expect(ok(10, 12, name: 'A'), isFalse);
     });
 
+    test('archived: bor bo‘lsa o‘qiladi, eski javobda false', () {
+      expect(
+        InstituteSummary.tryParse({'id': 'a', 'archived': true})!.archived,
+        isTrue,
+      );
+      expect(InstituteSummary.tryParse({'id': 'a'})!.archived, isFalse);
+      expect(
+        InstituteExtension.tryParse({
+          'result': 'OK',
+          'term_end': '2027-12-10T00:00:00Z',
+          'plans_extended': 2,
+        })!.plansExtended,
+        2,
+      );
+      expect(InstituteExtension.tryParse({'result': 'INVALID'}), isNull);
+    });
+
     test('kod holatlari', () {
       final free = InstituteCode.tryParse({'n': 1, 'code': 'AAA'})!;
       final used = InstituteCode.tryParse({
@@ -264,6 +281,49 @@ void main() {
   });
 
   group('SupabaseAdminInstituteService', () {
+    test('arxiv va uzaytirish: RPC nomlari va parametrlari', () async {
+      final auth = await signedInMockAuth();
+      final t = _Transport(
+        (p, b) => p.endsWith('set_archived')
+            ? const RestResponse(200, {'result': 'OK', 'archived': true})
+            : const RestResponse(200, {
+                'result': 'OK',
+                'term_end': '2027-12-10T00:00:00Z',
+                'plans_extended': 3,
+              }),
+      );
+      final s = SupabaseAdminInstituteService(
+        config: _cfg,
+        auth: auth,
+        transport: t,
+      );
+      final a = await s.setArchived('i1', archived: true);
+      expect(a.value, isTrue);
+      expect(t.calls.last.path, '/rest/v1/rpc/admin_institute_set_archived');
+      expect(t.calls.last.body, {'p_id': 'i1', 'p_archived': true});
+      final e = await s.extend('i1', 3);
+      expect(e.value!.plansExtended, 3);
+      expect(t.calls.last.path, '/rest/v1/rpc/admin_institute_extend');
+      expect(t.calls.last.body, {'p_id': 'i1', 'p_months': 3});
+    });
+
+    test('NOT_FOUND / INVALID — invalid xato', () async {
+      final auth = await signedInMockAuth();
+      final t = _Transport(
+        (p, b) => const RestResponse(200, {'result': 'NOT_FOUND'}),
+      );
+      final s = SupabaseAdminInstituteService(
+        config: _cfg,
+        auth: auth,
+        transport: t,
+      );
+      expect(
+        (await s.setArchived('x', archived: false)).failure,
+        PlanFailure.invalid,
+      );
+      expect((await s.extend('x', 1)).failure, PlanFailure.invalid);
+    });
+
     test('admin_institute_create: parametrlar va kodlar', () async {
       final auth = await signedInMockAuth();
       final t = _Transport(

@@ -18334,5 +18334,87 @@
   "homeTeacherLibraryBody": "Substances, laboratory, reagents, methods, standards and disciplines — in Library and Tools",
   "@homeTeacherLibraryBody": {
     "description": "Teacher home: library row hint."
+  },
+  "instArchive": "Archive",
+  "@instArchive": {
+    "description": "Admin: archive organization button."
+  },
+  "instRestore": "Restore from archive",
+  "@instRestore": {
+    "description": "Admin: restore from archive button."
+  },
+  "instArchiveTitle": "Archive this organization?",
+  "@instArchiveTitle": {
+    "description": "Archive confirm title."
+  },
+  "instArchiveBody": "Codes of an archived organization will not work for new users. Current members stay until their term ends. Nothing is deleted.",
+  "@instArchiveBody": {
+    "description": "Archive confirm body."
+  },
+  "instArchiveDone": "The organization was archived.",
+  "@instArchiveDone": {
+    "description": "Archived."
+  },
+  "instRestoreDone": "The organization was restored from the archive.",
+  "@instRestoreDone": {
+    "description": "Restored."
+  },
+  "instArchivedBadge": "Archived",
+  "@instArchivedBadge": {
+    "description": "Archived badge."
+  },
+  "instArchivedSection": "Archived ({n})",
+  "@instArchivedSection": {
+    "description": "Archived section toggle.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "instArchivedNote": "This organization is archived: its codes do not work for new users. The term can still be extended.",
+  "@instArchivedNote": {
+    "description": "Archived organization note."
+  },
+  "instExtend": "Extend term",
+  "@instExtend": {
+    "description": "Admin: extend term button."
+  },
+  "instExtendTitle": "Extend the term by how many months?",
+  "@instExtendTitle": {
+    "description": "Extend dialog title."
+  },
+  "instExtendMonths": "{n} mo",
+  "@instExtendMonths": {
+    "description": "Extend option.",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "instExtendYes": "Extend",
+  "@instExtendYes": {
+    "description": "Extend confirm button."
+  },
+  "instExtendDone": "Term extended until {date}. The term of teachers who entered a code was also updated ({n}).",
+  "@instExtendDone": {
+    "description": "Extended message.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "instActionError": "Could not complete the action. Try again.",
+  "@instActionError": {
+    "description": "Admin action failed."
+  },
+  "instDialogCancel": "Cancel",
+  "@instDialogCancel": {
+    "description": "Dialog cancel."
   }
 }

@@ -25,6 +25,14 @@ abstract interface class AdminInstituteService {
 
   /// `true` — bekor qilindi; `false` — topilmadi yoki allaqachon ishlatilgan.
   Future<PlanResult<bool>> revokeCode(String code);
+
+  /// Arxivga olish / qaytarish. Natija — serverdagi yangi holat (`archived`).
+  /// Topilmasa — [PlanFailure.invalid].
+  Future<PlanResult<bool>> setArchived(String id, {required bool archived});
+
+  /// Muddatni [months] oyga uzaytirish (1–60). Topilmasa/noto‘g‘ri bo‘lsa —
+  /// [PlanFailure.invalid].
+  Future<PlanResult<InstituteExtension>> extend(String id, int months);
 }
 
 class UnconfiguredAdminInstituteService implements AdminInstituteService {
@@ -59,5 +67,15 @@ class UnconfiguredAdminInstituteService implements AdminInstituteService {
 
   @override
   Future<PlanResult<bool>> revokeCode(String code) async =>
+      const PlanResult.fail(PlanFailure.notConfigured);
+
+  @override
+  Future<PlanResult<bool>> setArchived(
+    String id, {
+    required bool archived,
+  }) async => const PlanResult.fail(PlanFailure.notConfigured);
+
+  @override
+  Future<PlanResult<InstituteExtension>> extend(String id, int months) async =>
       const PlanResult.fail(PlanFailure.notConfigured);
 }

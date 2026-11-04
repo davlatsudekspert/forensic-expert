@@ -10,16 +10,74 @@ import '../../../core/l10n/date_format.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../domain/admin/institute_models.dart';
 import 'admin_gate.dart';
 
 /// Admin → «Tashkilotlar»: ro‘yxat (nomi, o‘rinlar, ishlatilgan, tugash sanasi)
 /// va «Yangi tashkilot» / «Sovg‘a promokod».
 /// Server har bir RPC’da identity_admin’ni tekshiradi.
-class AdminInstitutesScreen extends ConsumerWidget {
+class AdminInstitutesScreen extends ConsumerStatefulWidget {
   const AdminInstitutesScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<AdminInstitutesScreen> createState() =>
+      _AdminInstitutesScreenState();
+}
+
+class _AdminInstitutesScreenState extends ConsumerState<AdminInstitutesScreen> {
+  bool _showArchived = false;
+
+  Widget _row(
+    BuildContext context,
+    InstituteSummary i,
+    AppLocalizations l,
+    FeColorTokens c,
+    TextTheme t,
+  ) {
+    final muted = i.archived ? c.textSecondary : null;
+    return Padding(
+      padding: const EdgeInsets.only(bottom: FeSpace.xs),
+      child: Opacity(
+        opacity: i.archived ? 0.65 : 1,
+        child: FeCard(
+          key: Key('adminInst.row.${i.id}'),
+          padding: const EdgeInsets.all(FeSpace.sm),
+          onTap: () => context.push(Routes.adminInstitute(i.id)),
+          child: Row(
+            children: [
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(i.name, style: t.titleSmall?.copyWith(color: muted)),
+                    if (i.archived)
+                      Text(
+                        l.instArchivedBadge,
+                        key: Key('adminInst.badge.${i.id}'),
+                        style: t.labelMedium?.copyWith(color: c.textSecondary),
+                      ),
+                    Text(
+                      l.instRowInfo(i.seats, i.redeemed),
+                      style: t.bodySmall?.copyWith(color: c.textSecondary),
+                    ),
+                    if (i.termEnd != null)
+                      Text(
+                        l.instRowUntil(feDate(context, i.termEnd!)),
+                        style: t.bodySmall?.copyWith(color: c.textSecondary),
+                      ),
+                  ],
+                ),
+              ),
+              Icon(Icons.chevron_right, color: c.textSecondary),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
     final c = FeTheme.of(context);
     final t = Theme.of(context).textTheme;
@@ -74,51 +132,44 @@ class AdminInstitutesScreen extends ConsumerWidget {
                         style: t.bodyMedium?.copyWith(color: c.textSecondary),
                       ),
                       AsyncData(:final value) => Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
-                          for (final i in value!)
-                            Padding(
-                              padding: const EdgeInsets.only(
-                                bottom: FeSpace.xs,
+                          for (final i in value!.where((x) => !x.archived))
+                            _row(context, i, l, c, t),
+                          if (value.any((x) => x.archived)) ...[
+                            InkWell(
+                              key: const Key('adminInst.archivedToggle'),
+                              onTap: () => setState(
+                                () => _showArchived = !_showArchived,
                               ),
-                              child: FeCard(
-                                key: Key('adminInst.row.${i.id}'),
-                                padding: const EdgeInsets.all(FeSpace.sm),
-                                onTap: () =>
-                                    context.push(Routes.adminInstitute(i.id)),
+                              child: ConstrainedBox(
+                                constraints: const BoxConstraints(
+                                  minHeight: FeTouch.minTarget,
+                                ),
                                 child: Row(
                                   children: [
                                     Expanded(
-                                      child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Text(i.name, style: t.titleSmall),
-                                          Text(
-                                            l.instRowInfo(i.seats, i.redeemed),
-                                            style: t.bodySmall?.copyWith(
-                                              color: c.textSecondary,
-                                            ),
-                                          ),
-                                          if (i.termEnd != null)
-                                            Text(
-                                              l.instRowUntil(
-                                                feDate(context, i.termEnd!),
-                                              ),
-                                              style: t.bodySmall?.copyWith(
-                                                color: c.textSecondary,
-                                              ),
-                                            ),
-                                        ],
+                                      child: Text(
+                                        l.instArchivedSection(
+                                          value.where((x) => x.archived).length,
+                                        ),
+                                        style: t.titleSmall,
                                       ),
                                     ),
                                     Icon(
-                                      Icons.chevron_right,
+                                      _showArchived
+                                          ? Icons.expand_less
+                                          : Icons.expand_more,
                                       color: c.textSecondary,
                                     ),
                                   ],
                                 ),
                               ),
                             ),
+                            if (_showArchived)
+                              for (final i in value.where((x) => x.archived))
+                                _row(context, i, l, c, t),
+                          ],
                         ],
                       ),
                       AsyncError() => Text(

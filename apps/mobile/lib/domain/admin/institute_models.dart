@@ -36,6 +36,7 @@ class InstituteSummary {
     required this.revoked,
     this.termStart,
     this.termEnd,
+    this.archived = false,
   });
 
   static InstituteSummary? tryParse(Object? v) {
@@ -50,6 +51,7 @@ class InstituteSummary {
       revoked: _int(v['revoked']),
       termStart: DateTime.tryParse('${v['term_start'] ?? ''}')?.toLocal(),
       termEnd: DateTime.tryParse('${v['term_end'] ?? ''}')?.toLocal(),
+      archived: v['archived'] == true,
     );
   }
 
@@ -60,6 +62,30 @@ class InstituteSummary {
   final int revoked;
   final DateTime? termStart;
   final DateTime? termEnd;
+
+  /// Arxivdagi tashkilot (eski javobda yo‘q bo‘lsa — `false`).
+  final bool archived;
+}
+
+/// `admin_institute_extend` muvaffaqiyatli javobi.
+class InstituteExtension {
+  const InstituteExtension({
+    required this.termEnd,
+    required this.plansExtended,
+  });
+
+  static InstituteExtension? tryParse(Object? v) {
+    if (v is! Map || v['result'] != 'OK') return null;
+    final end = DateTime.tryParse('${v['term_end'] ?? ''}')?.toLocal();
+    if (end == null) return null;
+    return InstituteExtension(
+      termEnd: end,
+      plansExtended: _int(v['plans_extended']),
+    );
+  }
+
+  final DateTime termEnd;
+  final int plansExtended;
 }
 
 /// `admin_institute_get` — tashkilot ma’lumoti (nom, o‘rin, muddat).
@@ -71,6 +97,7 @@ class InstituteDetail {
     this.months = 0,
     this.termStart,
     this.termEnd,
+    this.archived = false,
   });
 
   static InstituteDetail? tryParse(Object? v) {
@@ -84,6 +111,7 @@ class InstituteDetail {
       months: _int(v['months']),
       termStart: DateTime.tryParse('${v['term_start'] ?? ''}')?.toLocal(),
       termEnd: DateTime.tryParse('${v['term_end'] ?? ''}')?.toLocal(),
+      archived: v['archived'] == true,
     );
   }
 
@@ -93,6 +121,7 @@ class InstituteDetail {
   final int months;
   final DateTime? termStart;
   final DateTime? termEnd;
+  final bool archived;
 }
 
 enum InstituteCodeStatus { free, redeemed, revoked }

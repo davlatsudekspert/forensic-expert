@@ -24074,6 +24074,102 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Substances, laboratory, reagents, methods, standards and disciplines — in Library and Tools'**
   String get homeTeacherLibraryBody;
+
+  /// Admin: archive organization button.
+  ///
+  /// In en, this message translates to:
+  /// **'Archive'**
+  String get instArchive;
+
+  /// Admin: restore from archive button.
+  ///
+  /// In en, this message translates to:
+  /// **'Restore from archive'**
+  String get instRestore;
+
+  /// Archive confirm title.
+  ///
+  /// In en, this message translates to:
+  /// **'Archive this organization?'**
+  String get instArchiveTitle;
+
+  /// Archive confirm body.
+  ///
+  /// In en, this message translates to:
+  /// **'Codes of an archived organization will not work for new users. Current members stay until their term ends. Nothing is deleted.'**
+  String get instArchiveBody;
+
+  /// Archived.
+  ///
+  /// In en, this message translates to:
+  /// **'The organization was archived.'**
+  String get instArchiveDone;
+
+  /// Restored.
+  ///
+  /// In en, this message translates to:
+  /// **'The organization was restored from the archive.'**
+  String get instRestoreDone;
+
+  /// Archived badge.
+  ///
+  /// In en, this message translates to:
+  /// **'Archived'**
+  String get instArchivedBadge;
+
+  /// Archived section toggle.
+  ///
+  /// In en, this message translates to:
+  /// **'Archived ({n})'**
+  String instArchivedSection(int n);
+
+  /// Archived organization note.
+  ///
+  /// In en, this message translates to:
+  /// **'This organization is archived: its codes do not work for new users. The term can still be extended.'**
+  String get instArchivedNote;
+
+  /// Admin: extend term button.
+  ///
+  /// In en, this message translates to:
+  /// **'Extend term'**
+  String get instExtend;
+
+  /// Extend dialog title.
+  ///
+  /// In en, this message translates to:
+  /// **'Extend the term by how many months?'**
+  String get instExtendTitle;
+
+  /// Extend option.
+  ///
+  /// In en, this message translates to:
+  /// **'{n} mo'**
+  String instExtendMonths(int n);
+
+  /// Extend confirm button.
+  ///
+  /// In en, this message translates to:
+  /// **'Extend'**
+  String get instExtendYes;
+
+  /// Extended message.
+  ///
+  /// In en, this message translates to:
+  /// **'Term extended until {date}. The term of teachers who entered a code was also updated ({n}).'**
+  String instExtendDone(String date, int n);
+
+  /// Admin action failed.
+  ///
+  /// In en, this message translates to:
+  /// **'Could not complete the action. Try again.'**
+  String get instActionError;
+
+  /// Dialog cancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get instDialogCancel;
 }
 
 class _AppLocalizationsDelegate

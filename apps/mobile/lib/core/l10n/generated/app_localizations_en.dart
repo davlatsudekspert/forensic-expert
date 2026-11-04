@@ -13916,4 +13916,61 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get homeTeacherLibraryBody =>
       'Substances, laboratory, reagents, methods, standards and disciplines — in Library and Tools';
+
+  @override
+  String get instArchive => 'Archive';
+
+  @override
+  String get instRestore => 'Restore from archive';
+
+  @override
+  String get instArchiveTitle => 'Archive this organization?';
+
+  @override
+  String get instArchiveBody =>
+      'Codes of an archived organization will not work for new users. Current members stay until their term ends. Nothing is deleted.';
+
+  @override
+  String get instArchiveDone => 'The organization was archived.';
+
+  @override
+  String get instRestoreDone =>
+      'The organization was restored from the archive.';
+
+  @override
+  String get instArchivedBadge => 'Archived';
+
+  @override
+  String instArchivedSection(int n) {
+    return 'Archived ($n)';
+  }
+
+  @override
+  String get instArchivedNote =>
+      'This organization is archived: its codes do not work for new users. The term can still be extended.';
+
+  @override
+  String get instExtend => 'Extend term';
+
+  @override
+  String get instExtendTitle => 'Extend the term by how many months?';
+
+  @override
+  String instExtendMonths(int n) {
+    return '$n mo';
+  }
+
+  @override
+  String get instExtendYes => 'Extend';
+
+  @override
+  String instExtendDone(String date, int n) {
+    return 'Term extended until $date. The term of teachers who entered a code was also updated ($n).';
+  }
+
+  @override
+  String get instActionError => 'Could not complete the action. Try again.';
+
+  @override
+  String get instDialogCancel => 'Cancel';
 }

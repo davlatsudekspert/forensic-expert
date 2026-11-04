@@ -13854,4 +13854,61 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get homeTeacherLibraryBody =>
       'Moddalar, laboratoriya, reagentlar, usullar, standartlar va fanlar — Kutubxona va Vositalarda';
+
+  @override
+  String get instArchive => 'Arxivga olish';
+
+  @override
+  String get instRestore => 'Arxivdan qaytarish';
+
+  @override
+  String get instArchiveTitle => 'Tashkilot arxivga olinsinmi?';
+
+  @override
+  String get instArchiveBody =>
+      'Arxivlangan tashkilot kodlari yangi foydalanuvchiga ishlamaydi. Mavjud a’zolar muddati tugaguncha qoladi. Hech narsa o‘chirilmaydi.';
+
+  @override
+  String get instArchiveDone => 'Tashkilot arxivga olindi.';
+
+  @override
+  String get instRestoreDone => 'Tashkilot arxivdan qaytarildi.';
+
+  @override
+  String get instArchivedBadge => 'Arxivda';
+
+  @override
+  String instArchivedSection(int n) {
+    return 'Arxivdagilar ($n)';
+  }
+
+  @override
+  String get instArchivedNote =>
+      'Bu tashkilot arxivda: kodlari yangi foydalanuvchiga ishlamaydi. Muddatni uzaytirish mumkin.';
+
+  @override
+  String get instExtend => 'Muddatni uzaytirish';
+
+  @override
+  String get instExtendTitle => 'Muddat necha oyga uzaytirilsin?';
+
+  @override
+  String instExtendMonths(int n) {
+    return '$n oy';
+  }
+
+  @override
+  String get instExtendYes => 'Uzaytirish';
+
+  @override
+  String instExtendDone(String date, int n) {
+    return 'Muddat uzaytirildi: $date gacha. Kod kiritgan ustozlarning muddati ham yangilandi ($n).';
+  }
+
+  @override
+  String get instActionError =>
+      'Amalni bajarib bo‘lmadi. Qayta urinib ko‘ring.';
+
+  @override
+  String get instDialogCancel => 'Bekor qilish';
 }
