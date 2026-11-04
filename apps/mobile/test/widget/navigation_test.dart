@@ -41,7 +41,7 @@ void main() {
     await pumpApp(tester, settings: completedSettings());
     for (final m in [
       'Forensic Medicine',
-      'Toxicology',
+      'Forensic chemical examination',
       'Substances',
       'Forensic AI',
     ]) {
@@ -160,7 +160,7 @@ void main() {
     // Biokimyo) eng tepada (egasi talabi, 2026-10-31), keyin tezkor amallar.
     await pumpApp(tester, settings: completedSettings(mode: UserMode.student));
     expect(find.text('Core disciplines'), findsOneWidget);
-    for (final m in ['forensicMedicine', 'toxicology', 'biochemistry']) {
+    for (final m in ['forensicMedicine', 'toxicology']) {
       expect(find.byKey(Key('home.module.$m')), findsOneWidget);
     }
     // Takrorlar yo‘q (egasi talabi, 2026-11-01): O‘qish — «O‘qish stolim»
@@ -176,7 +176,7 @@ void main() {
     // Kalkulyatorlar, AI va Sudda so‘roq — «Ish stolim»da (takror yo‘q).
     expect(find.byKey(const Key('home.tools')), findsNothing);
     expect(find.byKey(const Key('home.courtPrep')), findsNothing);
-    for (final m in ['forensicMedicine', 'toxicology', 'biochemistry']) {
+    for (final m in ['forensicMedicine', 'toxicology']) {
       expect(find.byKey(Key('home.module.$m')), findsOneWidget);
     }
     expect(

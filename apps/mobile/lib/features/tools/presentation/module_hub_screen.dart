@@ -192,6 +192,15 @@ class ModuleHubScreen extends ConsumerWidget {
                         child: ToolTile(tool: t),
                       ),
                   ],
+                  // Biokimyo «Sud-kimyoviy ekspertiza» bo‘limi ichida (egasi qarori,
+                  // 2026-11-04): bosh ekranda alohida karta emas, shu yerdan ochiladi.
+                  if (category == ToolCategory.toxicology)
+                    _HubLink(
+                      key: const Key('moduleHub.biochemistry'),
+                      icon: Icons.bubble_chart_outlined,
+                      label: l.moduleBiochemistry,
+                      onTap: () => context.push(Routes.biochemistry),
+                    ),
                   // Darslar (prezentatsiya + guruh testi): Ustoz/Mutaxassis
                   // rejimida; kurslar kirish qoidasi ichida.
                   if (category == ToolCategory.toxicology)
@@ -220,7 +229,6 @@ class ModuleHubScreen extends ConsumerWidget {
                         count: count,
                         // Qat’iy bo‘linishda Pro bo‘limlar qulf belgisi bilan.
                         locked: proSectionLocked(ref, switch (id) {
-                          'substances' ||
                           'screening' ||
                           'methods' ||
                           'reagents' ||
@@ -247,14 +255,14 @@ class _HubLink extends StatelessWidget {
     super.key,
     required this.icon,
     required this.label,
-    required this.count,
+    this.count,
     required this.onTap,
     this.locked = false,
   });
 
   final IconData icon;
   final String label;
-  final int count;
+  final int? count;
   final VoidCallback onTap;
   final bool locked;
 
@@ -272,13 +280,15 @@ class _HubLink extends StatelessWidget {
           trailing: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text(
-                '$count',
-                style: FeThemeBuilder.numeric(
-                  t.titleSmall!.copyWith(color: c.textSecondary),
+              if (count != null) ...[
+                Text(
+                  '$count',
+                  style: FeThemeBuilder.numeric(
+                    t.titleSmall!.copyWith(color: c.textSecondary),
+                  ),
                 ),
-              ),
-              const SizedBox(width: FeSpace.xs),
+                const SizedBox(width: FeSpace.xs),
+              ],
               if (locked) ...[
                 ProLockBadge(
                   key: Key(

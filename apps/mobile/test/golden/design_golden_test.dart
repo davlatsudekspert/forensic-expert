@@ -19,7 +19,7 @@ void main() {
       ThemeMode.dark,
       const Size(390, 844),
       1,
-      const Key('home.module.biochemistry'),
+      const Key('home.module.toxicology'),
     ),
     (
       'lux_02_home_resources_en_light',

@@ -530,7 +530,7 @@ class LibraryScreen extends ConsumerWidget {
 
     // Qat’iy bo‘linishda Pro bo‘limlar ko‘rinadi, lekin qulf belgisi bilan.
     ProFeature? lockOf(String id) => switch (id) {
-      'substances' ||
+      // «Moddalar» bepul (egasi qarori, 2026-11-04); Usullar Pro.
       'methods' ||
       'reagents' ||
       'rapid' ||

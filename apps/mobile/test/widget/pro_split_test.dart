@@ -38,10 +38,6 @@ String _methodLocked() => testKnowledgeEntries
     .id;
 String _methodSample() =>
     testKnowledgeEntries.firstWhere((e) => e.kind == KnowledgeKind.method).id;
-String _subLocked() => testLibraryEntries
-    .where((e) => e.section == LibrarySection.substances)
-    .elementAt(2)
-    .id;
 String _subSample() => testLibraryEntries
     .firstWhere((e) => e.section == LibrarySection.substances)
     .id;
@@ -58,11 +54,7 @@ List<(String, ProFeature)> proRoutes() => [
   (Routes.area('histology'), ProFeature.proModules),
   (Routes.module('reagents'), ProFeature.proModules),
   // Kutubxona (Moddalar, Usullar) va yozuvlari — ikki marshrut turi ham.
-  (Routes.librarySection('substances'), ProFeature.proModules),
   (Routes.librarySection('methods'), ProFeature.proModules),
-  (Routes.libraryEntry(_subLocked()), ProFeature.proModules),
-  (Routes.homeSubstance(_subLocked()), ProFeature.proModules),
-  (Routes.homePlan(_subLocked()), ProFeature.proModules),
   // Tadqiqotlar, Huquq, standartlar, yo‘riqnomalar, baholash.
   (Routes.research, ProFeature.proModules),
   (Routes.jurisdictions, ProFeature.proModules),
@@ -503,10 +495,8 @@ void main() {
         initialLocation: Routes.library,
         overrides: [..._strict(true).cast()],
       );
-      expect(
-        find.byKey(const Key('library.hub.substances.lock')),
-        findsOneWidget,
-      );
+      // Moddalar bo‘limi endi bepul (egasi qarori, 2026-11-04); faqat «Usullar» Pro.
+      expect(find.byKey(const Key('library.hub.substances.lock')), findsNothing);
       expect(find.byKey(const Key('library.hub.specimens.lock')), findsNothing);
       expect(find.byKey(const Key('library.hub.terms.lock')), findsNothing);
       expect(

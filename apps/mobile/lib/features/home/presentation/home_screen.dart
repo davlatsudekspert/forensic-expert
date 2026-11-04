@@ -83,7 +83,7 @@ enum HomeModule {
   /// Home’dagi asosiy 12 bo‘lim (rejimga mos tartib). Qolgan sohalar
   /// (gistologiya, yangi muammolar va 20 fan) — «Barcha fanlar» ichida.
   /// Asosiy uch fan — Mutaxassis/Talaba bosh sahifasining tepasida.
-  static const core = [forensicMedicine, toxicology, biochemistry];
+  static const core = [forensicMedicine, toxicology];
 
   static List<HomeModule> orderFor(UserMode? mode) => switch (mode) {
     UserMode.student => const [
