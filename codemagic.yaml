@@ -106,9 +106,15 @@ workflows:
           flutter build appbundle --release $DEFINES
       - name: APK signature fingerprint (Google sign-in uchun SHA-1 mosligini tekshirish)
         script: |
+          # Zamonaviy APK faqat v2/v3 imzoli: keytool emas, apksigner kerak.
           # Google Cloud'dagi Android mijoz SHA-1 bilan aynan shu bo‘lishi shart.
-          keytool -printcert -jarfile apps/mobile/build/app/outputs/flutter-apk/app-release.apk \
-            | grep -E "Owner|SHA1" || echo "fingerprint olinmadi"
+          APKSIGNER="$(ls -d "${ANDROID_SDK_ROOT:-$ANDROID_HOME}"/build-tools/*/apksigner 2>/dev/null | sort -V | tail -1)"
+          if [ -n "$APKSIGNER" ]; then
+            "$APKSIGNER" verify --print-certs apps/mobile/build/app/outputs/flutter-apk/app-release.apk \
+              | grep -E "certificate (DN|SHA-1)" || echo "apksigner natijasi bo‘sh"
+          else
+            echo "apksigner topilmadi"
+          fi
     artifacts:
       - apps/mobile/build/app/outputs/flutter-apk/*.apk
       - apps/mobile/build/app/outputs/bundle/release/*.aab
