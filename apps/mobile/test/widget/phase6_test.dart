@@ -58,40 +58,50 @@ void main() {
   }
 
   group('Home', () {
-    testWidgets('Ustoz: asosiy fanlar, tezkor amallar, ixcham kutubxona qatori', (
-      tester,
-    ) async {
-      // Bo‘limlar to‘ri Ustozda ham yo‘q (egasi qarori, 2026-11-04): bitta
-      // «Ilmiy kutubxona» qatori Kutubxonaga olib boradi.
-      final c = await open(tester, Routes.home, mode: UserMode.teacher);
-      // Yurisdiksiya — Profilda (egasi qarori, 2026-11-01).
-      expect(find.byKey(const Key('home.jurisdiction')), findsNothing);
-      for (final m in ['forensicMedicine', 'toxicology', 'substances', 'methods']) {
-        expect(find.byKey(Key('home.module.$m')), findsOneWidget, reason: m);
-      }
-      for (final m in [
-        'laboratory',
-        'reagents',
-        'screening',
-        'biochemistry',
-        'standardsLaws',
-        'research',
-        'learn',
-        'histology',
-      ]) {
-        expect(find.byKey(Key('home.module.$m')), findsNothing, reason: m);
-      }
-      expect(find.byKey(const Key('home.allDisciplines')), findsNothing);
-      await see(tester, find.byKey(const Key('home.teacherLibrary')));
-      await tester.tap(find.byKey(const Key('home.teacherLibrary')));
-      await tester.pumpAndSettle();
-      expect(find.byType(LibraryScreen), findsOneWidget);
-      c.read(routerProvider).go(Routes.home);
-      await tester.pumpAndSettle();
-      // Yangi foydalanuvchi: bo‘sh «Davom ettirish» bo‘limi ko‘rsatilmaydi.
-      expect(find.byKey(const Key('home.quickEmpty')), findsNothing);
-      expect(find.text('Continue & saved'), findsNothing);
-    });
+    testWidgets(
+      'Ustoz: asosiy fanlar, tezkor amallar, ixcham kutubxona qatori',
+      (tester) async {
+        // Bo‘limlar to‘ri Ustozda ham yo‘q (egasi qarori, 2026-11-04): bitta
+        // «Ilmiy kutubxona» qatori Kutubxonaga olib boradi.
+        final c = await open(tester, Routes.home, mode: UserMode.teacher);
+        // Yurisdiksiya — Profilda (egasi qarori, 2026-11-01).
+        expect(find.byKey(const Key('home.jurisdiction')), findsNothing);
+        for (final m in [
+          'forensicMedicine',
+          'toxicology',
+          'substances',
+          'methods',
+        ]) {
+          expect(find.byKey(Key('home.module.$m')), findsOneWidget, reason: m);
+        }
+        for (final m in [
+          'laboratory',
+          'reagents',
+          'screening',
+          'biochemistry',
+          'standardsLaws',
+          'research',
+          'learn',
+          'histology',
+        ]) {
+          expect(find.byKey(Key('home.module.$m')), findsNothing, reason: m);
+        }
+        expect(find.byKey(const Key('home.allDisciplines')), findsNothing);
+        // «Ustoz minbari» banneri; Kalkulyatorlar va AI — ixcham chiplar.
+        expect(find.byKey(const Key('ustoz.banner')), findsOneWidget);
+        await see(tester, find.byKey(const Key('home.tools')));
+        expect(find.byKey(const Key('home.module.ai')), findsOneWidget);
+        await see(tester, find.byKey(const Key('home.teacherLibrary')));
+        await tester.tap(find.byKey(const Key('home.teacherLibrary')));
+        await tester.pumpAndSettle();
+        expect(find.byType(LibraryScreen), findsOneWidget);
+        c.read(routerProvider).go(Routes.home);
+        await tester.pumpAndSettle();
+        // Yangi foydalanuvchi: bo‘sh «Davom ettirish» bo‘limi ko‘rsatilmaydi.
+        expect(find.byKey(const Key('home.quickEmpty')), findsNothing);
+        expect(find.text('Continue & saved'), findsNothing);
+      },
+    );
 
     testWidgets('yaqinda ko‘rilgan yozuv Home’da (faqat lokal)', (
       tester,

@@ -20,6 +20,7 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/plan/plan_models.dart' show ProFeature;
 import '../../../domain/plan/pro_split.dart';
+import '../../learn/presentation/learn_screens.dart' show ClassQuizEntryCard;
 import '../../pro/presentation/pro_first_offer.dart';
 import '../../pro/presentation/pro_gate.dart'
     show ProLockBadge, proSectionLocked;
@@ -27,6 +28,8 @@ import '../../referral/presentation/invite_card.dart';
 import 'first_steps_card.dart';
 import 'home_desks.dart';
 import 'saved_items.dart';
+import 'student_home.dart';
+import 'teacher_home.dart';
 
 /// Home modullari (professional bo‘limlar). ID’lar marshrut parametri.
 enum HomeModule {
@@ -247,6 +250,11 @@ class HomeScreen extends ConsumerWidget {
     final mode = ref.watch(
       settingsControllerProvider.select((s) => s.userMode),
     );
+    // Talaba: «Mening akademiyam» (egasi qarori, 2026-11-04) — alohida
+    // tarmoq; Ustoz va Mutaxassis bosh sahifalari o‘zgarmaydi.
+    if (mode == UserMode.student) return const _StudentHome();
+    // Ustoz: «Ustoz minbari» (egasi qarori, 2026-11-04) — alohida tarmoq.
+    if (mode == UserMode.teacher) return const _TeacherHome();
     final lean = mode == UserMode.professional || mode == UserMode.student;
     // Takrorlar yo‘q (egasi talabi, 2026-11-01): Kalkulyatorlar — «Vositalar»
     // tabida va Ish stolida, AI — markaziy tugmada, O‘qish — talaba
@@ -300,10 +308,6 @@ class HomeScreen extends ConsumerWidget {
                   // Ekspert: «Ish stolim»; talaba: «O‘qish stolim» (+ kunlik
                   // ma’lumot/savol). Ustoz bosh sahifasi o‘zgarmaydi.
                   // Talaba: o‘z paneli birinchi (egasi so‘rovi, 2026-11-02).
-                  if (mode == UserMode.student) ...[
-                    const StudentDesk(),
-                    const SizedBox(height: FeSpace.lg),
-                  ],
                   // «Bilim va malakani baholash» — faqat Mutaxassisda, eng
                   // tepada (egasi, 2026-11-02).
                   if (mode == UserMode.professional) ...[
@@ -334,9 +338,6 @@ class HomeScreen extends ConsumerWidget {
                   if (mode == UserMode.professional) ...[
                     const ExpertWorkbench(),
                     const SizedBox(height: FeSpace.sm),
-                  ] else if (mode == UserMode.teacher) ...[
-                    const TeacherDesk(),
-                    const SizedBox(height: FeSpace.sm),
                   ],
                   _ActionGrid(actions: actions),
                   if (FeFlags.showTestFixtures) ...[
@@ -356,16 +357,7 @@ class HomeScreen extends ConsumerWidget {
                   // to‘ri o‘rniga bitta ixcham «Ilmiy kutubxona» qatori;
                   // laboratoriya, reagentlar, skrining, standartlar,
                   // tadqiqot, fanlar — Kutubxona va Vositalarda.
-                  if (mode == UserMode.teacher) ...[
-                    const SizedBox(height: FeSpace.sm),
-                    _ResourceTile(
-                      key: const Key('home.teacherLibrary'),
-                      icon: Icons.menu_book_outlined,
-                      title: l.homeTeacherLibraryTitle,
-                      body: l.homeTeacherLibraryBody,
-                      onTap: () => context.go(Routes.library),
-                    ),
-                  ] else if (!lean) ...[
+                  if (!lean) ...[
                     FeSectionHeader(l.homeAreasTitle),
                     _ModuleGrid(modules: modules),
                   ],
@@ -430,6 +422,299 @@ class HomeScreen extends ConsumerWidget {
               ),
             ),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Talaba bosh sahifasi «Mening akademiyam» (egasi qarori, 2026-11-04).
+/// Tartib: sarlavha → banner → qidiruv → Bugungi savol → O‘quv mashg‘ulotlari
+/// → Guruh testi (jonli) → Ilmiy va amaliy bo‘limlar → Ustozlar va
+/// mutaxassislar → Yo‘riqnomalar, Moddalar → Barcha sud-ekspert fanlari →
+/// Birinchi qadamlar, Pro taklifi, Saqlanganlar. «Asosiy fanlar» va
+/// Kutubxona kartasi yo‘q (Kutubxona — pastki menyuda).
+class _StudentHome extends ConsumerWidget {
+  const _StudentHome();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    // Yo‘riqnomalar va Moddalar; O‘qish va AI — boshqa joyda (takror yo‘q).
+    final actions = [
+      for (final a in HomeAction.forMode(UserMode.student))
+        if (a.module != HomeModule.ai && a.module != HomeModule.learn) a,
+    ];
+    const gap = SizedBox(height: FeSpace.sm);
+    return Scaffold(
+      body: SafeArea(
+        top: false,
+        // Suzuvchi menyu: pastki padding ListView’ga beriladi — oxirgi karta
+        // menyu ostida qolmaydi.
+        bottom: false,
+        child: ListView(
+          padding: EdgeInsets.only(
+            bottom: FeSpace.xs + MediaQuery.paddingOf(context).bottom,
+          ),
+          children: [
+            const StudentHomeHeader(),
+            FeContentFrame(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  const SizedBox(height: FeSpace.md),
+                  Column(
+                    key: const Key('desk.student'),
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      const StudentAcademyBanner(),
+                      gap,
+                      FeSearchEntry(
+                        key: const Key('home.search'),
+                        hint: l.searchHint,
+                        prominent: true,
+                        onTap: () => context.push(Routes.search),
+                      ),
+                      gap,
+                      const StudentDailyQuestion(),
+                      FeSectionHeader(
+                        l.studentLearnTitle,
+                        padding: const EdgeInsets.only(
+                          top: FeSpace.lg,
+                          bottom: FeSpace.sm,
+                        ),
+                      ),
+                      const StudentLearnGrid(),
+                      gap,
+                      const ClassQuizEntryCard(),
+                      FeSectionHeader(
+                        l.studentScienceTitle,
+                        padding: const EdgeInsets.only(
+                          top: FeSpace.lg,
+                          bottom: FeSpace.sm,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            const StudentScienceCarousel(),
+            FeContentFrame(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  const SizedBox(height: FeSpace.md),
+                  const _CatalogBanner(),
+                  FeSectionHeader(
+                    l.studentMoreTitle,
+                    padding: const EdgeInsets.only(
+                      top: FeSpace.lg,
+                      bottom: FeSpace.sm,
+                    ),
+                  ),
+                  _ActionGrid(actions: actions),
+                  gap,
+                  const _AllDisciplinesCard(),
+                  if (FeFlags.showTestFixtures) ...[
+                    const SizedBox(height: FeSpace.md),
+                    FeBanner(
+                      icon: Icons.info_outline,
+                      text: l.homePrototypeNotice,
+                    ),
+                  ],
+                  const FirstStepsCard(),
+                  const ProFirstOfferCard(),
+                  const _QuickAccess(),
+                  if (!FeFlags.showTestFixtures &&
+                      FeFlags.contentChannel != 'production') ...[
+                    const SizedBox(height: FeSpace.lg),
+                    _ReviewNotice(
+                      key: const Key('home.pilotNotice'),
+                      text: l.homeTrustNote,
+                    ),
+                  ],
+                  const SizedBox(height: FeSpace.lg),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Ustoz bosh sahifasi «Ustoz minbari» (egasi qarori, 2026-11-04).
+/// Tartib: sarlavha → banner → qidiruv → «Ustoz stolim» (5 karta + Bugungi
+/// savol, o‘zgarishsiz `TeacherDesk`) → «Materiallar va manbalar» (Asosiy
+/// fanlar, Ilmiy kutubxona, Yo‘riqnomalar, Moddalar / Usullar / Kalkulyatorlar
+/// / AI chiplari) → «Boshqa imkoniyatlar» (Sudda so‘roq, katalog, yangi
+/// bo‘limlar, taklif) → shartli bloklar. Hech bir funksiya olib tashlanmagan.
+class _TeacherHome extends ConsumerWidget {
+  const _TeacherHome();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    const gap = SizedBox(height: FeSpace.sm);
+    EdgeInsets head() =>
+        const EdgeInsets.only(top: FeSpace.lg, bottom: FeSpace.sm);
+    return Scaffold(
+      body: SafeArea(
+        top: false,
+        // Suzuvchi menyu: pastki padding ListView’ga beriladi — oxirgi karta
+        // menyu ostida qolmaydi.
+        bottom: false,
+        child: ListView(
+          padding: EdgeInsets.only(
+            bottom: FeSpace.xs + MediaQuery.paddingOf(context).bottom,
+          ),
+          children: [
+            const TeacherHomeHeader(),
+            FeContentFrame(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  const SizedBox(height: FeSpace.md),
+                  const UstozMinbariBanner(),
+                  gap,
+                  FeSearchEntry(
+                    key: const Key('home.search'),
+                    hint: l.searchHint,
+                    prominent: true,
+                    onTap: () => context.push(Routes.search),
+                  ),
+                  const SizedBox(height: FeSpace.lg),
+                  const TeacherDesk(),
+                  FeSectionHeader(l.teacherSectionMaterials, padding: head()),
+                  const _CoreDisciplinesCard(),
+                  gap,
+                  _ResourceTile(
+                    key: const Key('home.teacherLibrary'),
+                    icon: Icons.menu_book_outlined,
+                    title: l.homeTeacherLibraryTitle,
+                    body: l.homeTeacherLibraryBody,
+                    onTap: () => context.go(Routes.library),
+                  ),
+                  gap,
+                  _ResourceTile(
+                    key: const Key('home.guidelines'),
+                    icon: Icons.assignment_outlined,
+                    title: l.guidelinesTitle,
+                    body: l.guidelinesSubtitle,
+                    lock: ProFeature.proModules,
+                    onTap: () => context.push(Routes.guidelines),
+                  ),
+                  gap,
+                  Wrap(
+                    spacing: FeSpace.xs,
+                    runSpacing: FeSpace.xs,
+                    children: [
+                      for (final a in HomeAction.forMode(UserMode.teacher))
+                        _TeacherChip(action: a),
+                    ],
+                  ),
+                  FeSectionHeader(l.teacherSectionMore, padding: head()),
+                  _ResourceTile(
+                    key: const Key('home.courtPrep'),
+                    icon: Icons.gavel_outlined,
+                    title: l.courtTitle,
+                    body: l.courtSubtitle,
+                    lock: ProFeature.courtPrep,
+                    onTap: () => context.push(Routes.courtPrep),
+                  ),
+                  gap,
+                  const _CatalogBanner(),
+                  gap,
+                  const _NewSections(),
+                  const SizedBox(height: FeSpace.md),
+                  const InviteColleagueCard(
+                    key: Key('home.invite'),
+                    compact: true,
+                  ),
+                  if (FeFlags.showTestFixtures) ...[
+                    const SizedBox(height: FeSpace.md),
+                    FeBanner(
+                      icon: Icons.info_outline,
+                      text: l.homePrototypeNotice,
+                    ),
+                  ],
+                  const FirstStepsCard(),
+                  const ProFirstOfferCard(),
+                  const _QuickAccess(),
+                  if (!FeFlags.showTestFixtures &&
+                      FeFlags.contentChannel != 'production') ...[
+                    const SizedBox(height: FeSpace.lg),
+                    _ReviewNotice(
+                      key: const Key('home.pilotNotice'),
+                      text: l.homeTrustNote,
+                    ),
+                  ],
+                  const SizedBox(height: FeSpace.lg),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Ustoz bosh sahifasidagi ixcham tezkor amal (chip): Moddalar, Usullar,
+/// Kalkulyatorlar, Forensic AI — mavjud kalitlar va marshrutlar.
+class _TeacherChip extends ConsumerWidget {
+  const _TeacherChip({required this.action});
+
+  final HomeAction action;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = AppLocalizations.of(context);
+    final c = FeTheme.of(context);
+    final t = Theme.of(context).textTheme;
+    final locked = proSectionLocked(ref, action.proFeature);
+    return Semantics(
+      button: true,
+      child: Material(
+        color: c.accentContainer,
+        shape: StadiumBorder(side: BorderSide(color: c.accentBorder)),
+        child: InkWell(
+          key: action.key,
+          customBorder: const StadiumBorder(),
+          onTap: () => action.isTab
+              ? context.go(action.route)
+              : context.push(action.route),
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(minHeight: 40),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: FeSpace.md - 2,
+                vertical: FeSpace.xs,
+              ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(action.icon, size: 18, color: c.onAccentContainer),
+                  const SizedBox(width: 6),
+                  Flexible(
+                    child: Text(
+                      action.title(l),
+                      style: t.labelLarge?.copyWith(
+                        color: c.onAccentContainer,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                  if (locked) ...[
+                    const SizedBox(width: 6),
+                    ProLockBadge(key: Key('${action.keyName}.lock')),
+                  ],
+                ],
+              ),
+            ),
+          ),
         ),
       ),
     );

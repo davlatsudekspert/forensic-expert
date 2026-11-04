@@ -155,17 +155,24 @@ void main() {
     tester,
   ) async {
     Offset at(String key) => tester.getTopLeft(find.byKey(Key(key)));
-    // Talaba va Mutaxassis: asosiy fanlar (Sud tibbiyoti, Toksikologiya,
-    // Biokimyo) eng tepada (egasi talabi, 2026-10-31), keyin tezkor amallar.
+    // Talaba («Mening akademiyam», egasi qarori, 2026-11-04): «Asosiy fanlar»
+    // kartasi yo‘q. Mutaxassisda asosiy fanlar eng tepada (2026-10-31).
     await pumpApp(tester, settings: completedSettings(mode: UserMode.student));
-    expect(find.text('Core disciplines'), findsOneWidget);
+    expect(find.text('Core disciplines'), findsNothing);
+    expect(find.byKey(const Key('home.core')), findsNothing);
     for (final m in ['forensicMedicine', 'toxicology']) {
-      expect(find.byKey(Key('home.module.$m')), findsOneWidget);
+      expect(find.byKey(Key('home.module.$m')), findsNothing);
     }
     // Takrorlar yo‘q (egasi talabi, 2026-11-01): O‘qish — «O‘qish stolim»
     // ichida; tepada «Yangi bo‘limlar».
     expect(find.byKey(const Key('home.module.learn')), findsNothing);
     expect(find.byKey(const Key('desk.student')), findsOneWidget);
+    // «Ilmiy va amaliy bo‘limlar» (home.new) endi ekran o‘rtasida: skroll bilan.
+    await tester.scrollUntilVisible(
+      find.byKey(const Key('home.new')),
+      300,
+      scrollable: find.byType(Scrollable).first,
+    );
     expect(find.byKey(const Key('home.new')), findsOneWidget);
     expect(find.byKey(const Key('home.tools')), findsNothing);
     // Mutaxassis: asosiy fanlar → Ish stolim → moddalar, usullar,

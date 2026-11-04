@@ -297,6 +297,12 @@ void main() {
         proOfferStoreProvider.overrideWithValue(InMemoryProOfferStore()),
       ],
     );
+    // Talaba Home’ida taklif pastroqda — skroll bilan ko‘rinadi.
+    await tester.scrollUntilVisible(
+      find.text('Study without limits'),
+      300,
+      scrollable: find.byType(Scrollable).first,
+    );
     expect(find.text('Study without limits'), findsOneWidget);
     await tapKey(tester, 'pro.firstOffer.open');
     await tester.pumpAndSettle();

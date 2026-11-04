@@ -12399,7 +12399,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get workbenchLodBody => 'Пределы обнаружения и валидация';
 
   @override
-  String get studentDeskTitle => 'Панель студента';
+  String get studentDeskTitle => 'Моя академия';
 
   @override
   String get deskLessonsTitle => 'Все темы';
@@ -14029,4 +14029,29 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get instDialogCancel => 'Отмена';
+
+  @override
+  String get studentLearnTitle => 'Учебные занятия';
+
+  @override
+  String get studentScienceTitle => 'Научные и практические разделы';
+
+  @override
+  String get studentMoreTitle => 'Дополнительно';
+
+  @override
+  String get teacherBannerTitle => 'Кафедра устаза';
+
+  @override
+  String get teacherBannerTagline => 'Образование • Опыт • Мастерство';
+
+  @override
+  String get teacherBannerSemantics =>
+      'Кафедра устаза: образование, опыт, мастерство';
+
+  @override
+  String get teacherSectionMaterials => 'Материалы и источники';
+
+  @override
+  String get teacherSectionMore => 'Другие возможности';
 }

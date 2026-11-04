@@ -12281,7 +12281,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get workbenchLodBody => 'Aniqlash chegarasi va validatsiya';
 
   @override
-  String get studentDeskTitle => 'Talaba paneli';
+  String get studentDeskTitle => 'Mening akademiyam';
 
   @override
   String get deskLessonsTitle => 'Barcha mavzular';
@@ -13911,4 +13911,29 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get instDialogCancel => 'Bekor qilish';
+
+  @override
+  String get studentLearnTitle => 'O‘quv mashg‘ulotlari';
+
+  @override
+  String get studentScienceTitle => 'Ilmiy va amaliy bo‘limlar';
+
+  @override
+  String get studentMoreTitle => 'Qo‘shimcha';
+
+  @override
+  String get teacherBannerTitle => 'USTOZ MINBARI';
+
+  @override
+  String get teacherBannerTagline => 'Ta’lim • Tajriba • Mahorat';
+
+  @override
+  String get teacherBannerSemantics =>
+      'Ustoz minbari: ta’lim, tajriba, mahorat';
+
+  @override
+  String get teacherSectionMaterials => 'Materiallar va manbalar';
+
+  @override
+  String get teacherSectionMore => 'Boshqa imkoniyatlar';
 }

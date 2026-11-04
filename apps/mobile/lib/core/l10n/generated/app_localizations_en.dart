@@ -12355,7 +12355,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get workbenchLodBody => 'Detection limits and validation';
 
   @override
-  String get studentDeskTitle => 'Student panel';
+  String get studentDeskTitle => 'My Academy';
 
   @override
   String get deskLessonsTitle => 'All topics';
@@ -13973,4 +13973,29 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get instDialogCancel => 'Cancel';
+
+  @override
+  String get studentLearnTitle => 'Study sessions';
+
+  @override
+  String get studentScienceTitle => 'Science and practice';
+
+  @override
+  String get studentMoreTitle => 'More';
+
+  @override
+  String get teacherBannerTitle => 'Teacher’s Podium';
+
+  @override
+  String get teacherBannerTagline => 'Knowledge • Experience • Mastery';
+
+  @override
+  String get teacherBannerSemantics =>
+      'Teacher’s Podium: knowledge, experience, mastery';
+
+  @override
+  String get teacherSectionMaterials => 'Materials and sources';
+
+  @override
+  String get teacherSectionMore => 'More tools';
 }

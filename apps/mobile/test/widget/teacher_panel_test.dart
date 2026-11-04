@@ -31,6 +31,7 @@ void main() {
     );
     expect(find.byKey(const Key('desk.teacher')), findsOneWidget);
     expect(find.text('Ustoz stolim'), findsOneWidget);
+    expect(find.text('USTOZ MINBARI'), findsOneWidget);
     expect(find.text('Ma’ruza prezentatsiyalari'), findsOneWidget);
     // Alohida «Ustoz paneli» kartasi yo‘q: stolning o‘zi panel.
     expect(find.text('Ustoz paneli'), findsNothing);
@@ -95,7 +96,13 @@ void main() {
         initialLocation: Routes.teacher,
       );
       expect(find.byType(TeacherPanelScreen), findsNothing);
-      expect(find.byKey(const Key('home.core')), findsOneWidget);
+      // Talabada «Asosiy fanlar» yo‘q (2026-11-04): Home — «Mening akademiyam».
+      expect(
+        find.byKey(
+          Key(mode == UserMode.student ? 'desk.student' : 'home.core'),
+        ),
+        findsOneWidget,
+      );
     });
   }
 

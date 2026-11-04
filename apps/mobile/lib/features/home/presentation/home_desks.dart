@@ -13,7 +13,6 @@ import '../../../domain/equipment/equipment.dart';
 import '../../../domain/learn/study_models.dart';
 import '../../class_quiz/presentation/teacher_panel_screen.dart'
     show watchIsTeacher;
-import '../../learn/presentation/learn_screens.dart' show ClassQuizEntryCard;
 import '../daily_fact.dart';
 import '../daily_question.dart';
 import '../workbench.dart';
@@ -89,43 +88,6 @@ class ExpertWorkbench extends ConsumerWidget {
           DailyFactCard(fact: fact),
         ],
         const _DeskDailyQuestion(),
-        const SizedBox(height: FeSpace.xs),
-      ],
-    );
-  }
-}
-
-/// Talaba Home: «O‘qish stolim» va «Bugungi savol».
-class StudentDesk extends ConsumerWidget {
-  const StudentDesk({super.key});
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final l = AppLocalizations.of(context);
-    final lang = Localizations.localeOf(context).languageCode;
-    final question = ref.watch(dailyQuestionProvider(lang));
-    return Column(
-      key: const Key('desk.student'),
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        FeSectionHeader(
-          l.studentDeskTitle,
-          padding: const EdgeInsets.only(bottom: FeSpace.xs),
-        ),
-        const ClassQuizEntryCard(),
-        const SizedBox(height: FeSpace.sm),
-        _DeskGrid(items: Workbench.studentCards),
-        const SizedBox(height: FeSpace.sm),
-        const EquipmentCard(group: EquipmentGroup.lab),
-        const DnaCard(),
-        if (question != null) ...[
-          const SizedBox(height: FeSpace.sm),
-          // Kun o‘zgarganda (kalit) javob holati yangidan boshlanadi.
-          DailyQuestionCard(
-            key: ValueKey('daily.q.${question.item.id}'),
-            question: question,
-          ),
-        ],
         const SizedBox(height: FeSpace.xs),
       ],
     );

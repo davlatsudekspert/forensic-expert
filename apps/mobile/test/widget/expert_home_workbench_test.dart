@@ -157,6 +157,7 @@ void main() {
       expect(k('desk.student'), findsNothing);
       expect(k('workbench.view'), findsNothing);
       expect(k('desk.teacher'), findsOneWidget);
+      expect(find.text('USTOZ MINBARI'), findsOneWidget);
       for (final id in [
         'teachLessons',
         'teachRun',
@@ -552,7 +553,7 @@ void main() {
     ]) {
       testWidgets('karta $key mavjud ekranni ochadi', (t) async {
         final c = await pumpHome(t, mode: UserMode.student, catalog: catalog);
-        expect(find.text('Talaba paneli'), findsOneWidget);
+        expect(find.text('Mening akademiyam'), findsOneWidget);
         await tapCard(t, 'workbench.$key');
         expect(path(c), expected);
         expect(t.takeException(), isNull);
@@ -596,9 +597,9 @@ void main() {
           textScale: 2,
         );
         final title = const {
-          'uz': 'Talaba paneli',
-          'ru': 'Панель студента',
-          'en': 'Student panel',
+          'uz': 'Mening akademiyam',
+          'ru': 'Моя академия',
+          'en': 'My Academy',
         }[lang]!;
         await t.scrollUntilVisible(
           find.text(title),

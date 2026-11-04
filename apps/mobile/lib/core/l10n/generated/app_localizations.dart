@@ -21384,7 +21384,7 @@ abstract class AppLocalizations {
   /// Student Home section title: the student's study desk.
   ///
   /// In en, this message translates to:
-  /// **'Student panel'**
+  /// **'My Academy'**
   String get studentDeskTitle;
 
   /// Study desk card: lessons and books.
@@ -24170,6 +24170,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Cancel'**
   String get instDialogCancel;
+
+  /// Student home: section title for the 2x2 study cards.
+  ///
+  /// In en, this message translates to:
+  /// **'Study sessions'**
+  String get studentLearnTitle;
+
+  /// Student home: section title for the horizontal science cards.
+  ///
+  /// In en, this message translates to:
+  /// **'Science and practice'**
+  String get studentScienceTitle;
+
+  /// Student home: section title for the remaining cards.
+  ///
+  /// In en, this message translates to:
+  /// **'More'**
+  String get studentMoreTitle;
+
+  /// Teacher home: banner title (Teacher’s Podium).
+  ///
+  /// In en, this message translates to:
+  /// **'Teacher’s Podium'**
+  String get teacherBannerTitle;
+
+  /// Teacher home: banner tagline.
+  ///
+  /// In en, this message translates to:
+  /// **'Knowledge • Experience • Mastery'**
+  String get teacherBannerTagline;
+
+  /// Teacher home: screen-reader label of the banner.
+  ///
+  /// In en, this message translates to:
+  /// **'Teacher’s Podium: knowledge, experience, mastery'**
+  String get teacherBannerSemantics;
+
+  /// Teacher home: section title for subjects and sources.
+  ///
+  /// In en, this message translates to:
+  /// **'Materials and sources'**
+  String get teacherSectionMaterials;
+
+  /// Teacher home: section title for the remaining cards.
+  ///
+  /// In en, this message translates to:
+  /// **'More tools'**
+  String get teacherSectionMore;
 }
 
 class _AppLocalizationsDelegate

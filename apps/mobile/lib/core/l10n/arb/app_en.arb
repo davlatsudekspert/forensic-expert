@@ -16155,7 +16155,7 @@
   "@workbenchLodBody": {
     "description": "Subtitle: LOD/LOQ and validation."
   },
-  "studentDeskTitle": "Student panel",
+  "studentDeskTitle": "My Academy",
   "@studentDeskTitle": {
     "description": "Student Home section title: the student's study desk."
   },
@@ -18416,5 +18416,37 @@
   "instDialogCancel": "Cancel",
   "@instDialogCancel": {
     "description": "Dialog cancel."
+  },
+  "studentLearnTitle": "Study sessions",
+  "@studentLearnTitle": {
+    "description": "Student home: section title for the 2x2 study cards."
+  },
+  "studentScienceTitle": "Science and practice",
+  "@studentScienceTitle": {
+    "description": "Student home: section title for the horizontal science cards."
+  },
+  "studentMoreTitle": "More",
+  "@studentMoreTitle": {
+    "description": "Student home: section title for the remaining cards."
+  },
+  "teacherBannerTitle": "Teacher’s Podium",
+  "@teacherBannerTitle": {
+    "description": "Teacher home: banner title (Teacher’s Podium)."
+  },
+  "teacherBannerTagline": "Knowledge • Experience • Mastery",
+  "@teacherBannerTagline": {
+    "description": "Teacher home: banner tagline."
+  },
+  "teacherBannerSemantics": "Teacher’s Podium: knowledge, experience, mastery",
+  "@teacherBannerSemantics": {
+    "description": "Teacher home: screen-reader label of the banner."
+  },
+  "teacherSectionMaterials": "Materials and sources",
+  "@teacherSectionMaterials": {
+    "description": "Teacher home: section title for subjects and sources."
+  },
+  "teacherSectionMore": "More tools",
+  "@teacherSectionMore": {
+    "description": "Teacher home: section title for the remaining cards."
   }
 }
