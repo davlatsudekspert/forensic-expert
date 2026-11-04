@@ -13617,4 +13617,35 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get admProRevokeNo => 'Cancel';
+
+  @override
+  String get grpManage => 'Group actions';
+
+  @override
+  String get grpArchive => 'Archive';
+
+  @override
+  String get grpArchiveTitle => 'Archive this group?';
+
+  @override
+  String grpArchiveBody(String name) {
+    return '“$name” will be hidden from the list. Results are kept, but the group cannot be restored from the app.';
+  }
+
+  @override
+  String get grpArchiveYes => 'Archive';
+
+  @override
+  String get grpDelete => 'Delete group';
+
+  @override
+  String get grpDeleteTitle => 'Delete this group?';
+
+  @override
+  String grpDeleteBody(String name) {
+    return '“$name”, its members, assignments and results will be permanently deleted. This cannot be undone.';
+  }
+
+  @override
+  String get grpDeleteYes => 'Delete';
 }

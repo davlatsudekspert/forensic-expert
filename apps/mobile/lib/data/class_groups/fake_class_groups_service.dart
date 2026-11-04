@@ -326,6 +326,14 @@ class FakeClassGroupsBackend {
     return const GroupCall.ok(null);
   }
 
+  GroupCall<void> deleteGroup(String uid, String groupId) {
+    final g = _owned(uid, groupId);
+    if (g == null) return const GroupCall.fail(GroupFailure.forbidden);
+    _groups.remove(g.id);
+    _assignments.removeWhere((_, a) => a.groupId == g.id);
+    return const GroupCall.ok(null);
+  }
+
   Future<GroupCall<GroupAssignment>> createAssignment(
     String uid,
     String groupId,
@@ -837,6 +845,12 @@ class FakeClassGroupsService implements ClassGroupsService {
   @override
   Future<GroupCall<void>> removeMember(String groupId, String memberId) =>
       _as((u) => backend.removeMember(u, groupId, memberId));
+  @override
+  Future<GroupCall<void>> archiveGroup(String groupId) =>
+      _as((u) => backend.deleteGroup(u, groupId));
+  @override
+  Future<GroupCall<void>> deleteGroup(String groupId) =>
+      _as((u) => backend.deleteGroup(u, groupId));
   @override
   Future<GroupCall<GroupAssignment>> createAssignment(
     String groupId,

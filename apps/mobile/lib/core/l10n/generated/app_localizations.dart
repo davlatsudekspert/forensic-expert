@@ -23558,6 +23558,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Cancel'**
   String get admProRevokeNo;
+
+  /// Group screen: menu tooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Group actions'**
+  String get grpManage;
+
+  /// Group menu: archive.
+  ///
+  /// In en, this message translates to:
+  /// **'Archive'**
+  String get grpArchive;
+
+  /// Archive confirm title.
+  ///
+  /// In en, this message translates to:
+  /// **'Archive this group?'**
+  String get grpArchiveTitle;
+
+  /// Archive confirm body.
+  ///
+  /// In en, this message translates to:
+  /// **'“{name}” will be hidden from the list. Results are kept, but the group cannot be restored from the app.'**
+  String grpArchiveBody(String name);
+
+  /// Archive confirm button.
+  ///
+  /// In en, this message translates to:
+  /// **'Archive'**
+  String get grpArchiveYes;
+
+  /// Group menu: delete.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete group'**
+  String get grpDelete;
+
+  /// Delete confirm title.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete this group?'**
+  String get grpDeleteTitle;
+
+  /// Delete confirm body.
+  ///
+  /// In en, this message translates to:
+  /// **'“{name}”, its members, assignments and results will be permanently deleted. This cannot be undone.'**
+  String grpDeleteBody(String name);
+
+  /// Delete confirm button.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get grpDeleteYes;
 }
 
 class _AppLocalizationsDelegate

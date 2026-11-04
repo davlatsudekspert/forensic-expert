@@ -13674,4 +13674,35 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get admProRevokeNo => 'Отмена';
+
+  @override
+  String get grpManage => 'Действия с группой';
+
+  @override
+  String get grpArchive => 'В архив';
+
+  @override
+  String get grpArchiveTitle => 'Отправить группу в архив?';
+
+  @override
+  String grpArchiveBody(String name) {
+    return '«$name» будет скрыта из списка. Результаты сохранятся, но вернуть группу из приложения нельзя.';
+  }
+
+  @override
+  String get grpArchiveYes => 'В архив';
+
+  @override
+  String get grpDelete => 'Удалить группу';
+
+  @override
+  String get grpDeleteTitle => 'Удалить группу?';
+
+  @override
+  String grpDeleteBody(String name) {
+    return '«$name», её участники, задания и результаты будут удалены без возможности восстановления.';
+  }
+
+  @override
+  String get grpDeleteYes => 'Удалить';
 }

@@ -17895,5 +17895,51 @@
   "admProRevokeNo": "Cancel",
   "@admProRevokeNo": {
     "description": "Admin: keep the plan."
+  },
+  "grpManage": "Group actions",
+  "@grpManage": {
+    "description": "Group screen: menu tooltip."
+  },
+  "grpArchive": "Archive",
+  "@grpArchive": {
+    "description": "Group menu: archive."
+  },
+  "grpArchiveTitle": "Archive this group?",
+  "@grpArchiveTitle": {
+    "description": "Archive confirm title."
+  },
+  "grpArchiveBody": "“{name}” will be hidden from the list. Results are kept, but the group cannot be restored from the app.",
+  "@grpArchiveBody": {
+    "description": "Archive confirm body.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "grpArchiveYes": "Archive",
+  "@grpArchiveYes": {
+    "description": "Archive confirm button."
+  },
+  "grpDelete": "Delete group",
+  "@grpDelete": {
+    "description": "Group menu: delete."
+  },
+  "grpDeleteTitle": "Delete this group?",
+  "@grpDeleteTitle": {
+    "description": "Delete confirm title."
+  },
+  "grpDeleteBody": "“{name}”, its members, assignments and results will be permanently deleted. This cannot be undone.",
+  "@grpDeleteBody": {
+    "description": "Delete confirm body.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "grpDeleteYes": "Delete",
+  "@grpDeleteYes": {
+    "description": "Delete confirm button."
   }
 }

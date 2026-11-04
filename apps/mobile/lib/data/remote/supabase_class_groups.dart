@@ -120,6 +120,15 @@ class SupabaseClassGroupsService implements ClassGroupsService {
       );
 
   @override
+  Future<GroupCall<void>> archiveGroup(String groupId) async => _void(
+    await _rpc('group_set_archived', {'p_group': groupId, 'p_archived': true}),
+  );
+
+  @override
+  Future<GroupCall<void>> deleteGroup(String groupId) async =>
+      _void(await _rpc('group_delete', {'p_group': groupId}));
+
+  @override
   Future<GroupCall<GroupAssignment>> createAssignment(
     String groupId,
     AssignmentDraft d,

@@ -13549,4 +13549,35 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get admProRevokeNo => 'Bekor qilish';
+
+  @override
+  String get grpManage => 'Guruh amallari';
+
+  @override
+  String get grpArchive => 'Arxivlash';
+
+  @override
+  String get grpArchiveTitle => 'Guruh arxivlansinmi?';
+
+  @override
+  String grpArchiveBody(String name) {
+    return '«$name» ro‘yxatdan yashiriladi. Natijalar saqlanadi, lekin guruhni ilovadan qaytarib bo‘lmaydi.';
+  }
+
+  @override
+  String get grpArchiveYes => 'Arxivlash';
+
+  @override
+  String get grpDelete => 'Guruhni o‘chirish';
+
+  @override
+  String get grpDeleteTitle => 'Guruh o‘chirilsinmi?';
+
+  @override
+  String grpDeleteBody(String name) {
+    return '«$name», uning a’zolari, vazifalari va natijalari butunlay o‘chadi. Buni qaytarib bo‘lmaydi.';
+  }
+
+  @override
+  String get grpDeleteYes => 'O‘chirish';
 }

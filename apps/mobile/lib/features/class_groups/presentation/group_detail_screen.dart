@@ -87,6 +87,44 @@ class _GroupDetailState extends ConsumerState<GroupDetailScreen> {
     ref.invalidate(groupDetailProvider(widget.groupId));
   }
 
+  Future<void> _manage(GroupDetail d, bool delete) async {
+    final l = AppLocalizations.of(context);
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (c) => AlertDialog(
+        title: Text(delete ? l.grpDeleteTitle : l.grpArchiveTitle),
+        content: Text(
+          delete
+              ? l.grpDeleteBody(d.group.name)
+              : l.grpArchiveBody(d.group.name),
+        ),
+        actions: [
+          TextButton(onPressed: () => c.pop(false), child: Text(l.grpCancel)),
+          FilledButton(
+            key: const Key('grp.manageYes'),
+            onPressed: () => c.pop(true),
+            child: Text(delete ? l.grpDeleteYes : l.grpArchiveYes),
+          ),
+        ],
+      ),
+    );
+    if (ok != true || !mounted) return;
+    final messenger = ScaffoldMessenger.of(context);
+    final service = ref.read(classGroupsServiceProvider);
+    final r = delete
+        ? await service.deleteGroup(d.group.id)
+        : await service.archiveGroup(d.group.id);
+    if (!mounted) return;
+    if (!r.ok) {
+      messenger.showSnackBar(
+        SnackBar(content: Text(groupFailureText(l, r.failure!))),
+      );
+      return;
+    }
+    ref.invalidate(groupListProvider);
+    context.pop();
+  }
+
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
@@ -138,6 +176,26 @@ class _GroupDetailState extends ConsumerState<GroupDetailScreen> {
             child: FeAppBarTitle(d?.group.name ?? l.grpTitle),
           ),
         ),
+        actions: [
+          if (d != null && d.isTeacher)
+            PopupMenuButton<bool>(
+              key: const Key('grp.manageMenu'),
+              tooltip: l.grpManage,
+              onSelected: (delete) => _manage(d, delete),
+              itemBuilder: (_) => [
+                PopupMenuItem(
+                  key: const Key('grp.archive'),
+                  value: false,
+                  child: Text(l.grpArchive),
+                ),
+                PopupMenuItem(
+                  key: const Key('grp.delete'),
+                  value: true,
+                  child: Text(l.grpDelete),
+                ),
+              ],
+            ),
+        ],
       ),
       body: NotificationListener<ScrollNotification>(
         onNotification: _onScroll,

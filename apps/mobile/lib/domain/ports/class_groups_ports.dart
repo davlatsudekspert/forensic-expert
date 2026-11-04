@@ -22,6 +22,13 @@ abstract interface class ClassGroupsService {
 
   Future<GroupCall<void>> removeMember(String groupId, String memberId);
 
+  /// Guruhni arxivlaydi: ustoz va talaba ro‘yxatidan yashiriladi (ma’lumot
+  /// bazada qoladi). Ilovadan qaytarib bo‘lmaydi.
+  Future<GroupCall<void>> archiveGroup(String groupId);
+
+  /// Guruhni butunlay o‘chiradi (a’zolar, vazifalar va natijalar bilan).
+  Future<GroupCall<void>> deleteGroup(String groupId);
+
   Future<GroupCall<GroupAssignment>> createAssignment(
     String groupId,
     AssignmentDraft draft,
@@ -95,6 +102,12 @@ class UnconfiguredClassGroupsService implements ClassGroupsService {
       const GroupCall.fail(_f);
   @override
   Future<GroupCall<void>> removeMember(String groupId, String memberId) async =>
+      const GroupCall.fail(_f);
+  @override
+  Future<GroupCall<void>> archiveGroup(String groupId) async =>
+      const GroupCall.fail(_f);
+  @override
+  Future<GroupCall<void>> deleteGroup(String groupId) async =>
       const GroupCall.fail(_f);
   @override
   Future<GroupCall<GroupAssignment>> createAssignment(
