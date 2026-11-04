@@ -374,3 +374,11 @@ Egasi yuborgan 6-kurs davolash rejasi (7 mavzu, 18+18=36 soat) bo‘yicha: «Dar
 - Kirish o‘zgarmaydi: har kim o‘z Gmail’i bilan (email kod). Umumiy login/parol yo‘q.
 - Talabalar soni cheklanmaydi (shartnomada kelishiladi); muddat shartnomada; narx keyin belgilanadi.
 - Kod: muddat, almashtirish (rotate), admin panelda a’zolar ro‘yxati; ustoz ro‘yxati bo‘yicha Pro ochiladi.
+
+## 2026-11-04 — Bepul/Pro: talaba uchun aniqlashtirish (egasi)
+- Ustoz bergan testda to‘g‘ri javoblar va izoh: ustoz ruxsat bersa — talaba uchun BEPUL (ustozda “javoblarni ko‘rsatish” tanlovi; build 60’da qilinadi).
+- Kutubxona: faqat «Usullar» — Pro; moddalar, namunalar, manbalar, lug‘at — bepul.
+- Mavzularni o‘qish (Bioetika va yangi sud-tibbiy bo‘limlar ham) — hamma uchun bepul.
+- Pullik (talaba): «Tinglash» (audio) va o‘zini tayyorlash (mustaqil test banki, kartochka, imtihon, xatolar tahlili, AI) — Pro.
+- Pro hozir o‘chiq: faqat do‘konga chiqishda (xarid sinalgach) yoqiladi.
+- Institut: ustozlarga Ustoz Pro, talabalar kod bilan a’zo (ustoz testi bepul).
