@@ -1498,7 +1498,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get learnExamEmpty =>
-      'Tekshirilgan imtihon savollari hozircha yo‘q. Savollar avtomatik yaratilmaydi.';
+      'Tekshirilgan imtihon savollari hozircha yo‘q. Savollar avtomatik tuzilmaydi.';
 
   @override
   String get learnExamRetry => 'Qayta urinish';
@@ -3185,7 +3185,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get aiLimMock =>
-      'Namoyish provayderi — haqiqiy AI javobi yaratilmadi.';
+      'Namoyish provayderi — haqiqiy AI javobi tayyorlanmadi.';
 
   @override
   String get instrOriginalTitle => 'Asl nomi';
@@ -3295,7 +3295,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get accountSignIn => 'Kirish';
 
   @override
-  String get accountCreate => 'Hisob yaratish';
+  String get accountCreate => 'Ro‘yxatdan o‘tish';
 
   @override
   String get accountSignOut => 'Chiqish';
@@ -3356,7 +3356,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get accountForgot => 'Parolni unutdingizmi?';
 
   @override
-  String get accountNoAccount => 'Hisob yo‘qmi? Yarating';
+  String get accountNoAccount => 'Hisob yo‘qmi? Ro‘yxatdan o‘ting';
 
   @override
   String get accountHaveAccount => 'Hisobingiz bormi? Kiring';
@@ -3546,7 +3546,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get aiStatusPreview => 'Hozircha mavjud emas';
 
   @override
-  String get aiPreviewPoint1 => 'Hozircha AI javobi yaratilmaydi.';
+  String get aiPreviewPoint1 => 'Hozircha AI javobi tayyorlanmaydi.';
 
   @override
   String get aiPreviewPoint2 =>
@@ -3777,10 +3777,10 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get accountContinueWithoutNote =>
-      'Hisobni keyinroq Profil bo‘limida yaratish mumkin.';
+      'Hisobni keyinroq Profil bo‘limida ro‘yxatdan o‘tish mumkin.';
 
   @override
-  String get accountCreateOrSignIn => 'Hisob yaratish / Kirish';
+  String get accountCreateOrSignIn => 'Ro‘yxatdan o‘tish / Kirish';
 
   @override
   String get accountCloudUnavailable =>
@@ -4548,7 +4548,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get referralSignInBody =>
-      'Shaxsiy kod elektron pochta orqali kirganingizdan so‘ng serverda yaratiladi. Barcha ilmiy ma’lumotlar hisobsiz ham ochiq.';
+      'Shaxsiy kod elektron pochta orqali kirganingizdan so‘ng serverda tayyorlanadi. Barcha ilmiy ma’lumotlar hisobsiz ham ochiq.';
 
   @override
   String get referralNotConfigured =>
@@ -5986,7 +5986,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get supClosedNote =>
-      'Bu murojaat yakunlangan. Yordam kerak bo‘lsa, yangisini yarating.';
+      'Bu murojaat yakunlangan. Yordam kerak bo‘lsa, yangisini yuboring.';
 
   @override
   String get supReplyHint => 'Xabar yozing';
@@ -7331,7 +7331,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get casebookEmptyBody =>
-      'O‘z ishingiz uchun yozuv yarating va yo‘riqnoma kartalaridagi manbali cheklovlarni qo‘shing. Hammasi shu qurilmada qoladi.';
+      'O‘z ishingiz uchun yozuv qo‘shing va yo‘riqnoma kartalaridagi manbali cheklovlarni qo‘shing. Hammasi shu qurilmada qoladi.';
 
   @override
   String get casebookNewEntry => 'Yangi yozuv';
@@ -7411,7 +7411,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get casebookKindAi => 'AI javobi';
 
   @override
-  String get casebookAiUnverified => 'AI tomonidan yaratilgan — tekshirilmagan';
+  String get casebookAiUnverified => 'AI tomonidan tuzilgan — tekshirilmagan';
 
   @override
   String get casebookSourceLabel => 'Manba';
@@ -7439,7 +7439,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get casebookAiAddNote =>
-      'Bu AI matni «AI tomonidan yaratilgan — tekshirilmagan» deb belgilanadi. Tayanishdan oldin manbalar bilan solishtiring.';
+      'Bu AI matni «AI tomonidan tuzilgan — tekshirilmagan» deb belgilanadi. Tayanishdan oldin manbalar bilan solishtiring.';
 
   @override
   String casebookAddedTo(String title) {
@@ -9867,7 +9867,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get grpTeacherTileBody =>
-      'Guruh yarating, mavzu testi bering, natijani jonli kuzating';
+      'Guruh tuzing, mavzu testi bering, natijani jonli kuzating';
 
   @override
   String get grpStudentTileBody =>
@@ -9915,7 +9915,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get grpTeachingEmpty =>
-      'Hozircha guruh yo‘q. Guruh yarating va kodini yoki QR kodini talabalarga ko‘rsating.';
+      'Hozircha guruh yo‘q. Guruh tuzing va kodini yoki QR kodini talabalarga ko‘rsating.';
 
   @override
   String get grpMemberEmpty =>
@@ -9944,7 +9944,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get grpOk => 'Yaxshi';
 
   @override
-  String get grpCreateAction => 'Guruh yaratish';
+  String get grpCreateAction => 'Guruh tuzish';
 
   @override
   String get grpCreateTitle => 'Yangi guruh';
@@ -10630,10 +10630,10 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get grpLessonNoGroups =>
-      'Hali guruhingiz yo‘q. Nom yozing — guruh shu yerning o‘zida yaratiladi.';
+      'Hali guruhingiz yo‘q. Nom yozing — guruh shu yerning o‘zida tuziladi.';
 
   @override
-  String get grpLessonCreateGroup => 'Guruh yaratish';
+  String get grpLessonCreateGroup => 'Guruh tuzish';
 
   @override
   String get grpLessonCancelNew => 'Mavjud guruhni tanlash';
@@ -10853,7 +10853,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get proCtxGroupLimit =>
-      'Bepul rejada bitta guruh bor. Ko‘proq guruh Ustoz Pro bilan yaratiladi.';
+      'Bepul rejada bitta guruh bor. Ko‘proq guruh Ustoz Pro bilan tuziladi.';
 
   @override
   String get proStateFree => 'Bepul reja';
@@ -11844,7 +11844,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String scoringMidtermIntro(int count, int minutes, int days) {
-    return 'Kursni tanlang: uning barcha mavzulari avtomatik tanlanadi. Standart: $count tagacha savol, $minutes daqiqa, $days kun ochiq. Yaratishdan oldin hammasini tahrirlash mumkin.';
+    return 'Kursni tanlang: uning barcha mavzulari avtomatik tanlanadi. Standart: $count tagacha savol, $minutes daqiqa, $days kun ochiq. Tuzishdan oldin hammasini tahrirlash mumkin.';
   }
 
   @override
@@ -13509,7 +13509,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get oralErrTryAgain =>
-      'Kod yaratib bo‘lmadi. Yana bir bor urinib ko‘ring.';
+      'Kod tayyorlab bo‘lmadi. Yana bir bor urinib ko‘ring.';
 
   @override
   String oralResumeCard(int n) {
