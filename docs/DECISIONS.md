@@ -368,3 +368,9 @@ Egasi yuborgan 6-kurs davolash rejasi (7 mavzu, 18+18=36 soat) bo‘yicha: «Dar
 - **Google/Apple kirish:** Supabase’da yoqilgan; build 60 da `FE_SOCIAL_SIGNIN` bilan; real telefonda sinalmagan.
 - **Play tester chegarasi (ichki 100):** 100/100 to‘ldi; ortiqchasi yopiq test (Alpha 1, «Talabalar 2») orqali.
 - **Ochiq ishlar:** Codemagic build natijalari; Alpha 1 → 58; admin ro‘yxatida bo‘sh testlarni yashirish (egasi roziligi kerak); maxfiylik sahifasini GitHub Pages’dan o‘z domeniga ko‘chirish; kod zaxirasi; R2 (MP3 siqish → R2); ru/en kontent tarjimasi (limit tiklangach).
+
+## 2026-11-04 — Xususiy institutlar uchun "institut kodi" (qaror, hali qurilmagan)
+- Model: institutga **Ustoz Pro** beriladi (ustozlar uchun). Talabalar institutning kodi bilan qo‘shiladi va bepul darajada ishlaydi: ustoz bergan testni to‘liq yechadi, natijasini ko‘radi, ma’ruzalarni o‘qiydi (tushuntirishsiz). O‘zi mustaqil tayyorlanmoqchi bo‘lsa (audio, AI tushuntirish va h.k.) o‘zi sotib oladi.
+- Kirish o‘zgarmaydi: har kim o‘z Gmail’i bilan (email kod). Umumiy login/parol yo‘q.
+- Talabalar soni cheklanmaydi (shartnomada kelishiladi); muddat shartnomada; narx keyin belgilanadi.
+- Kod: muddat, almashtirish (rotate), admin panelda a’zolar ro‘yxati; ustoz ro‘yxati bo‘yicha Pro ochiladi.
