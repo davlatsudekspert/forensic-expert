@@ -12,7 +12,26 @@ set -euo pipefail
 KEY_DIR="$(mktemp -d)"
 trap 'rm -rf "$KEY_DIR"; rm -f "$HOME/.appstoreconnect/private_keys/AuthKey_${ASC_KEY_ID}.p8"' EXIT
 KEY_PATH="$KEY_DIR/AuthKey_${ASC_KEY_ID}.p8"
-printf '%s' "$ASC_PRIVATE_KEY" > "$KEY_PATH"
+# Kalit turli ko‘rinishda kelishi mumkin: odatiy PEM, qatorlari uzilgan
+# (bitta qatorga yopishgan) PEM yoki base64 ko‘rinishidagi .p8. Hammasini
+# to‘g‘ri PEM’ga keltiramiz. Qiymat jurnalga chiqarilmaydi.
+python3 - "$KEY_PATH" <<'PY'
+import base64, os, re, sys
+raw = os.environ["ASC_PRIVATE_KEY"].strip().replace("\\n", "\n")
+if "BEGIN" not in raw:
+    try:
+        raw = base64.b64decode(raw, validate=False).decode("utf-8").strip()
+    except Exception:
+        pass
+body = re.sub(r"-----(BEGIN|END)[^-]*-----", "", raw)
+body = re.sub(r"\s+", "", body)
+if not body:
+    sys.exit("ASC_PRIVATE_KEY bo‘sh yoki o‘qib bo‘lmadi")
+lines = [body[i:i + 64] for i in range(0, len(body), 64)]
+pem = "-----BEGIN PRIVATE KEY-----\n" + "\n".join(lines) + "\n-----END PRIVATE KEY-----\n"
+with open(sys.argv[1], "w") as f:
+    f.write(pem)
+PY
 chmod 600 "$KEY_PATH"
 
 cat > "$KEY_DIR/ExportOptions.plist" <<PLIST
