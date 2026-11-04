@@ -74,9 +74,9 @@ void main() {
 
   testWidgets('tab almashganda stack holati saqlanadi', (tester) async {
     await pumpApp(tester, settings: completedSettings(mode: UserMode.teacher));
-    await tester.ensureVisible(find.byKey(const Key('home.module.laboratory')));
+    await tester.ensureVisible(find.byKey(const Key('home.module.toxicology')));
     await tester.pumpAndSettle();
-    await tester.tap(find.byKey(const Key('home.module.laboratory')));
+    await tester.tap(find.byKey(const Key('home.module.toxicology')));
     await tester.pumpAndSettle();
     expect(find.byType(ModuleHubScreen), findsOneWidget);
     await tester.ensureVisible(find.byKey(const Key('nav.tools')));
@@ -87,8 +87,7 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(const Key('nav.home')));
     await tester.pumpAndSettle();
-    // Home tabida laboratoriya sahifasi hali ochiq.
-    expect(find.text('Laboratory'), findsWidgets);
+    // Home tabida modul sahifasi hali ochiq.
     expect(find.byType(ModuleHubScreen), findsOneWidget);
   });
 

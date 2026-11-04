@@ -1,0 +1,11 @@
+-- Tashkilotni arxivga olish/qaytarish va muddatni uzaytirish (egasi, 2026-11-04). Prod’ga qo‘llangan.
+-- * institutes.archived_at; admin_list_institutes `archived` kalitini ham qaytaradi.
+-- * admin_institute_set_archived(p_id, p_archived): arxivlangan tashkilot kodlari yangi foydalanuvchiga ishlamaydi
+--   (redeem_promo_code → REVOKED); mavjud a’zolar muddati tugaguncha qoladi. Hech narsa o‘chirilmaydi.
+-- * admin_institute_extend(p_id, p_months): term_end uzayadi (o‘tib ketgan bo‘lsa — hozirdan), allaqachon
+--   faollashtirgan ustozlarning plans.expires_at ham uzayadi.
+-- Rollback: drop function public.admin_institute_set_archived(uuid,boolean), public.admin_institute_extend(uuid,int);
+--   alter table public.institutes drop column archived_at; (admin_list_institutes/redeem_promo_code — oldingi ta’rif.)
+alter table public.institutes add column if not exists archived_at timestamptz;
+-- (Funksiyalarning to‘liq matni prod’dagi ta’rif bilan bir xil: admin_list_institutes, admin_institute_set_archived,
+--  admin_institute_extend, redeem_promo_code — Supabase migratsiyasi `institutes_archive_extend`.)

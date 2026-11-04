@@ -13847,4 +13847,11 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get instOpen => 'Tashkilot sahifasini ochish';
+
+  @override
+  String get homeTeacherLibraryTitle => 'Ilmiy kutubxona';
+
+  @override
+  String get homeTeacherLibraryBody =>
+      'Moddalar, laboratoriya, reagentlar, usullar, standartlar va fanlar — Kutubxona va Vositalarda';
 }

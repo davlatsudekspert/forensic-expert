@@ -13909,4 +13909,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get instOpen => 'Open organization page';
+
+  @override
+  String get homeTeacherLibraryTitle => 'Scientific library';
+
+  @override
+  String get homeTeacherLibraryBody =>
+      'Substances, laboratory, reagents, methods, standards and disciplines — in Library and Tools';
 }

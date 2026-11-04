@@ -34,12 +34,13 @@ void main() {
     expect(find.text('Ma’ruza prezentatsiyalari'), findsOneWidget);
     // Alohida «Ustoz paneli» kartasi yo‘q: stolning o‘zi panel.
     expect(find.text('Ustoz paneli'), findsNothing);
-    // Stol «Bo‘limlar» to‘ridan oldin.
+    // Stol «Ilmiy kutubxona» qatoridan oldin; 8 kartali to‘r Ustozda yo‘q.
     final desk = find.byKey(const Key('desk.teacher'));
-    final all = find.byKey(const Key('home.allDisciplines'));
-    await tester.ensureVisible(all);
+    final lib = find.byKey(const Key('home.teacherLibrary'));
+    await tester.ensureVisible(lib);
     await tester.pumpAndSettle();
-    expect(tester.getTopLeft(desk).dy, lessThan(tester.getTopLeft(all).dy));
+    expect(tester.getTopLeft(desk).dy, lessThan(tester.getTopLeft(lib).dy));
+    expect(find.byKey(const Key('home.allDisciplines')), findsNothing);
 
     await tapKey(tester, 'workbench.teachRun');
     expect(find.byType(ClassCreateScreen), findsOneWidget);

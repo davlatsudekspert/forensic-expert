@@ -13966,4 +13966,11 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get instOpen => 'Открыть страницу организации';
+
+  @override
+  String get homeTeacherLibraryTitle => 'Научная библиотека';
+
+  @override
+  String get homeTeacherLibraryBody =>
+      'Вещества, лаборатория, реагенты, методы, стандарты и дисциплины — в Библиотеке и Инструментах';
 }

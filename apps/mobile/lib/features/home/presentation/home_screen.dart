@@ -352,7 +352,20 @@ class HomeScreen extends ConsumerWidget {
                   // sahifasida faqat asosiylar; bo‘limlar to‘ri, yo‘riqnomalar,
                   // apparatlar kursi va tezkor kirish — Kutubxonada, taklif —
                   // Profilda. Ustoz bosh sahifasi o‘zgarmaydi.
-                  if (!lean) ...[
+                  // Ustoz (egasi qarori, 2026-11-04): 8 kartali bo‘limlar
+                  // to‘ri o‘rniga bitta ixcham «Ilmiy kutubxona» qatori;
+                  // laboratoriya, reagentlar, skrining, standartlar,
+                  // tadqiqot, fanlar — Kutubxona va Vositalarda.
+                  if (mode == UserMode.teacher) ...[
+                    const SizedBox(height: FeSpace.sm),
+                    _ResourceTile(
+                      key: const Key('home.teacherLibrary'),
+                      icon: Icons.menu_book_outlined,
+                      title: l.homeTeacherLibraryTitle,
+                      body: l.homeTeacherLibraryBody,
+                      onTap: () => context.go(Routes.library),
+                    ),
+                  ] else if (!lean) ...[
                     FeSectionHeader(l.homeAreasTitle),
                     _ModuleGrid(modules: modules),
                   ],

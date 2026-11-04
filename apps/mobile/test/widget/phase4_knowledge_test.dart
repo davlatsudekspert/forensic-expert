@@ -176,9 +176,12 @@ void main() {
     expect(find.byKey(const Key('about.database')), findsOneWidget);
     await open(tester, Routes.home, mode: UserMode.teacher);
     expect(find.byKey(const Key('home.database')), findsNothing);
-    await see(tester, find.byKey(const Key('home.module.screening')));
-    await tester.tap(find.byKey(const Key('home.module.screening')));
-    await tester.pumpAndSettle();
+    // Skrining Ustoz bosh sahifasidan Kutubxona/Vositalarga ko‘chgan.
+    await open(
+      tester,
+      Routes.knowledge(KnowledgeKind.screeningTest.name),
+      mode: UserMode.teacher,
+    );
     expect(find.byKey(const Key('screening.banner')), findsOneWidget);
   });
 

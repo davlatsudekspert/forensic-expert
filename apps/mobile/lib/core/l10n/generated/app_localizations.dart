@@ -24062,6 +24062,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Open organization page'**
   String get instOpen;
+
+  /// Teacher home: compact library row title.
+  ///
+  /// In en, this message translates to:
+  /// **'Scientific library'**
+  String get homeTeacherLibraryTitle;
+
+  /// Teacher home: library row hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Substances, laboratory, reagents, methods, standards and disciplines — in Library and Tools'**
+  String get homeTeacherLibraryBody;
 }
 
 class _AppLocalizationsDelegate

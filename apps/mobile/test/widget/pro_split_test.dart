@@ -125,52 +125,62 @@ void main() {
 
   group('Home: qulf belgilari', () {
     for (final lang in ['uz', 'ru', 'en']) {
-      testWidgets('[$lang] qat’iy: Pro bo‘limlarda qulf, bepul 5 tasida yo‘q', (
-        tester,
-      ) async {
+      testWidgets('[$lang] qat’iy: Ustoz bosh sahifasi', (tester) async {
         await pumpApp(
           tester,
           size: _tall,
-          // Bo‘limlar to‘ri Ustoz bosh sahifasida (Mutaxassis/Talaba —
-          // Kutubxonada; egasi qarori, 2026-11-01).
           settings: completedSettings(lang: lang, mode: UserMode.teacher),
           overrides: [..._strict(true).cast()],
         );
+        // Tezkor amallar: kalkulyatorlar va AI — qulf saqlanadi.
+        expect(find.byKey(const Key('home.tools.lock')), findsOneWidget);
+        expect(find.byKey(const Key('home.module.ai.lock')), findsOneWidget);
+        // Bo‘limlar to‘ri Ustozda yo‘q (egasi qarori, 2026-11-04): olib
+        // tashlangan kartalarda qulf belgisi ham yo‘q; ularning o‘rnida
+        // bitta «Ilmiy kutubxona» qatori.
         for (final m in [
-          'methods',
           'reagents',
           'screening',
           'standardsLaws',
           'research',
-        ]) {
-          expect(
-            find.byKey(Key('home.module.$m.lock'), skipOffstage: false),
-            findsOneWidget,
-            reason: m,
-          );
-        }
-        // Tezkor amallar: kalkulyatorlar va AI.
-        expect(find.byKey(const Key('home.tools.lock')), findsOneWidget);
-        expect(find.byKey(const Key('home.module.ai.lock')), findsOneWidget);
-        for (final m in [
-          'forensicMedicine',
-          'toxicology',
-          'biochemistry',
           'laboratory',
-          'substances',
+          'biochemistry',
           'learn',
         ]) {
+          expect(
+            find.byKey(Key('home.module.$m'), skipOffstage: false),
+            findsNothing,
+            reason: m,
+          );
           expect(
             find.byKey(Key('home.module.$m.lock'), skipOffstage: false),
             findsNothing,
             reason: m,
           );
         }
-        // Pro bo‘limlar ko‘rinadi (yashirilmagan).
         expect(
-          find.byKey(const Key('home.module.reagents'), skipOffstage: false),
+          find.byKey(const Key('home.teacherLibrary'), skipOffstage: false),
           findsOneWidget,
         );
+        expect(
+          find.byKey(
+            const Key('home.teacherLibrary.lock'),
+            skipOffstage: false,
+          ),
+          findsNothing,
+        );
+        // Bepul: Moddalar; Usullar — Pro (o‘zgarmagan).
+        expect(
+          find.byKey(const Key('home.module.methods.lock')),
+          findsOneWidget,
+        );
+        for (final m in ['forensicMedicine', 'toxicology', 'substances']) {
+          expect(
+            find.byKey(Key('home.module.$m.lock'), skipOffstage: false),
+            findsNothing,
+            reason: m,
+          );
+        }
       });
     }
 
@@ -210,13 +220,7 @@ void main() {
           overrides: [..._strict(true).cast()],
         );
         expect(tester.takeException(), isNull, reason: lang);
-        expect(
-          find.byKey(
-            const Key('home.module.reagents.lock'),
-            skipOffstage: false,
-          ),
-          findsOneWidget,
-        );
+        expect(find.byKey(const Key('home.tools.lock')), findsOneWidget);
       }
     });
 
@@ -233,17 +237,16 @@ void main() {
   });
 
   group('Qulfli bo‘lim: namuna + taklif', () {
-    testWidgets('Reagentlar kartasi → qulf, namuna (1–2 yozuv), taklif', (
+    testWidgets('Reagentlar bo‘limi → qulf, namuna (1–2 yozuv), taklif', (
       tester,
     ) async {
       await pumpApp(
         tester,
         size: _tall,
         settings: completedSettings(lang: 'uz', mode: UserMode.teacher),
+        initialLocation: Routes.knowledge('reagent'),
         overrides: [..._strict(true).cast()],
       );
-      await tester.tap(find.byKey(const Key('home.module.reagents')));
-      await tester.pumpAndSettle();
       expect(find.byKey(const Key('pro.lock.proModules')), findsOneWidget);
       expect(find.text('Pro bilan ochish'), findsOneWidget);
       expect(find.byKey(const Key('pro.sample.reagents')), findsOneWidget);

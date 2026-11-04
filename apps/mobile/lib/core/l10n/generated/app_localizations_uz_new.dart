@@ -12397,4 +12397,10 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   @override
   String get instOpen => toUzNewAlphabet(super.instOpen);
 
+  @override
+  String get homeTeacherLibraryTitle => toUzNewAlphabet(super.homeTeacherLibraryTitle);
+
+  @override
+  String get homeTeacherLibraryBody => toUzNewAlphabet(super.homeTeacherLibraryBody);
+
 }
