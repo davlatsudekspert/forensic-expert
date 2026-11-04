@@ -419,3 +419,7 @@ Server kurs nomlari o‘zgarmaydi; faqat ilovadagi guruhlash/ko‘rinadigan noml
 
 ## 2026-11-04 — Shartnoma shabloni: egasi qabul qildi
 - Egasi shartnoma shablonini qabul qildi (yurist/soliq tekshiruvi — 6-band — egasining o‘z qarori bilan qabul qilindi). Claude yuridik/soliq tekshiruvini o‘tkazmagan va kafolat bermaydi: soliq/QQS, Bepul/Pro faollashuvi, uchinchi tomon ruxsatlari, ma’lumot saqlash muddati bandlari shartnomada [qavs] bilan belgilangan va birinchi institut bilan imzolashdan oldin egasi tomonidan to‘ldiriladi.
+
+## 2026-11-04 — Talaba "Mening akademiyam" va Ustoz "USTOZ MINBARI" kodga tatbiq etildi (0.4.2+62)
+- Tasdiqlangan ikki dizayn Flutter'ga o'tkazildi (student_home.dart, teacher_home.dart). Mutaxassis paneli o'zgarmadi (shanba).
+- analyze: toza; asosiy widget/unit testlar o'tdi. Haqiqiy qurilmada sinalmagan.
