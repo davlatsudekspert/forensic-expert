@@ -396,3 +396,8 @@ Egasi yuborgan 6-kurs davolash rejasi (7 mavzu, 18+18=36 soat) bo‘yicha: «Dar
 - Admin paneldagi avtomatik PDF uchun asos: «Forensic_Expert_Litsenziya_shartnomasi_Tahrirlangan.docx» (Litsenziar = ilovaning huquq egasi; oddiy nomutlaq litsenziya; to‘lov → kodlar → faollashtirish alohida bosqichlar; qaytarish tartibi; 1-ilova).
 - Litsenziar rekvizitlari (bank, manzil, hujjat) gitda saqlanmaydi: admin serverida (faqat admin) turadi, PDF’ga paytida qo‘yiladi. Shaxsni tasdiqlovchi hujjat va JShShIR PDF’ga qo‘yilmaydi (qo‘lda).
 - Imzolashdan oldin «Aniqlashtirish_royxati» bo‘yicha: soliq/QQS, Bepul/Pro faollashuvi, uchinchi tomon ruxsatlari, ma’lumotlarni saqlash muddati va yurist tekshiruvi.
+
+## 2026-11-04 — Sud ekspertizasi bo‘limlari: aniqlashtirish (egasi + domla)
+- «Sud-tibbiy toksikologiya» (9 mavzu) ALOHIDA bo‘lim bo‘lib qoladi (Sud-kimyoviy ekspertiza ichiga kirmaydi).
+- «Sud-kimyoviy ekspertiza» ichida: «Toksikologik kimyo» (81 mavzu, prof. Yo‘ldashev majmuasi) — domla tasdig‘i.
+- Bioetika → «Tibbiy huquq va bioetika». Server kurs nomlari o‘zgarmaydi (eski ilovalar nom bilan topadi); faqat ilovada ko‘rinadigan nomlar o‘zgaradi (build 60+).
