@@ -6,14 +6,15 @@
 // * verify:  {action:"verify", email, code} → checks hash (max 5 attempts),
 //   ensures the auth user exists, mints a Supabase session server-side and
 //   returns {access_token, refresh_token, user}.
-// * Limits: 3 codes / email / 10 min, 10 / IP / 10 min, 60 s resend gap.
+// * Limits: 3 codes / email / 10 min, 200 / IP / 10 min, 60 s resend gap.
 // * Never logs codes, emails or tokens. No other product's identity is used.
 import { createClient } from "jsr:@supabase/supabase-js@2";
 
 const TTL_MS = 10 * 60_000;
 const WINDOW_MS = 10 * 60_000;
 const MAX_PER_EMAIL = 3;
-const MAX_PER_IP = 10;
+// 200: a whole class (60+ students) shares one school Wi-Fi public IP; 10 would lock most of them out.
+const MAX_PER_IP = 200;
 const RESEND_GAP_MS = 60_000;
 const MAX_ATTEMPTS = 5;
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
