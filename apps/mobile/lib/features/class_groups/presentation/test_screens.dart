@@ -17,9 +17,7 @@ import '../../../core/widgets/score_grade.dart';
 import '../../../domain/class_groups/class_groups_models.dart';
 import '../../../domain/class_groups/variant_draw.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart' show ClassFailure;
-import '../../../domain/plan/plan_models.dart' show ProFeature;
 import '../../anti_cheat/presentation/anti_cheat_widgets.dart';
-import '../../pro/presentation/pro_gate.dart' show ProFeatureLock;
 import '../../professional/presentation/professional_widgets.dart' show FeNote;
 import 'group_widgets.dart';
 
