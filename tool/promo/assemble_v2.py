@@ -25,10 +25,13 @@ FF=['ffmpeg','-loglevel','error','-y']; FPS=30
 SERIF=f'{FONTS}/source_serif_4/SourceSerif4-Bold.ttf'
 INTER=f'{FONTS}/inter/Inter-SemiBold.ttf'; INTERR=f'{FONTS}/inter/Inter-Regular.ttf'
 def font(p,s): return ImageFont.truetype(p,s)
-OUTRO_SUB={'ustoz':'Dalil · Ilm · Aniqlik','yuldashev':'Dalil · Ilm · Aniqlik','talaba':'Har kuni — ishonch bilan o‘rganing','ozi':'Har kuni — ishonch bilan tayyorlaning','ustoz2':'Dalil · Ilm · Aniqlik'}[vid]
-INTRO_SUB={'ustoz':'Ustozlar uchun','talaba':'Talabalar uchun','yuldashev':'Toksikologik kimyo','ozi':'Talabalar uchun','ustoz2':'Ustozlar uchun'}[vid]
+OUTRO_SUB={'ustoz':'Dalil · Ilm · Aniqlik','yuldashev':'Dalil · Ilm · Aniqlik','talaba':'Har kuni — ishonch bilan o‘rganing','ozi':'Har kuni — ishonch bilan tayyorlaning','ustoz2':'Dalil · Ilm · Aniqlik','mutaxassis':'Dalil · Ilm · Aniqlik'}[vid]
+INTRO_SUB={'ustoz':'Ustozlar uchun','talaba':'Talabalar uchun','yuldashev':'Toksikologik kimyo','ozi':'Talabalar uchun','ustoz2':'Ustozlar uchun','mutaxassis':'Mutaxassislar uchun'}[vid]
 NOTE=[l for l in nar if l['scene']=='thanks_note'][0]['uz']
-if vid=='yuldashev':
+if vid=='mutaxassis':
+    THANKS='Ilova asosini tashkil etgan darsliklar mualliflariga va hamkasblarga — ularning mehnati mutaxassislar uchun ishonchli bilim manbai'
+    BOOKS=[]
+elif vid=='yuldashev':
     THANKS='Professor Yuldashev Z.A. va hammualliflarga — ularning o‘quv materiallari talaba va mutaxassislar uchun ishonchli bilim manbai'
     BOOKS=['Toksikologik kimyo modulidan o‘quv-uslubiy majmua (TFI, 2025)','Giyohvand moddalar tahlili. O‘quv qo‘llanma (Toshkent, 2024)']
 else:
@@ -65,7 +68,7 @@ def card_brand(kind,sub):
     p=f'{TMP}/card_{kind}.png'; im.save(p); return p
 def card_thanks():
     im=base(); d=ImageDraw.Draw(im)
-    y=centered(d,"Rahmat!",340,font(SERIF,190),GOLD)
+    y=centered(d,"Rahmat avtorlarga!" if vid=='mutaxassis' else "Rahmat!",340,font(SERIF,130 if vid=='mutaxassis' else 190),GOLD)
     d.line([(440,y+20),(640,y+20)],fill=GOLD,width=3)
     y=centered(d,THANKS,y+70,font(INTER,50),WHITE,maxw=900)+30
     for b in BOOKS:
@@ -85,7 +88,7 @@ def load_src(name):
     mv,_=marker_time(f'{REC}/{name}.raw.mkv'); assert mv is not None
     return {'raw':f'{REC}/{name}.raw.mkv','m_ep':m_ep,'mv':mv,'scenes':{e['id']:e for e in ev if e['type']=='scene'}}
 MAIN=load_src(vid)
-EXTRAS={'ustoz':['ustoz_extra','ustoz_lit'],'talaba':['talaba_extra','talaba_extra2','talaba_lit','talaba_desk','extra5','extra6','extra8'],'yuldashev':['talaba_extra','yuldashev_spe','extra5'],'ozi':[],'ustoz2':[]}[vid]
+EXTRAS={'ustoz':['ustoz_extra','ustoz_lit'],'talaba':['talaba_extra','talaba_extra2','talaba_lit','talaba_desk','extra5','extra6','extra8'],'yuldashev':['talaba_extra','yuldashev_spe','extra5'],'ozi':[],'ustoz2':['ustoz2b'],'mutaxassis':['mutaxassis_fix']}[vid]
 SRC={sid:MAIN for sid in MAIN['scenes']}
 for nm in EXTRAS:
     if os.path.exists(f'{REC}/{nm}.events.json'):
@@ -168,7 +171,7 @@ def sub_png(text,name):
 subs=[]  # (png,x,y,start,end)
 k=0
 for ln,a,sc in audio:
-    if sc=='thanks' or sc=='thanks_note': continue
+    if sc=='thanks' or sc=='thanks_note' or os.environ.get('NOSUBS'): continue
     d=dur[ln['id']]; maxc=62
     while True:
         chunks=split_sub(ln['uz'],maxc); res=[sub_png(c,f's{k}_{i}') for i,c in enumerate(chunks)]
@@ -186,13 +189,14 @@ for i,(p,x,y,s,e) in enumerate(subs):
     out=f'[v{i}]'
     fcs.append(f"{prev}[{i+1}:v]overlay={x}:{y}:enable='between(t,{s:.3f},{e:.3f})'{out}"); prev=out
 # audio
+if not subs: fcs.append('[0:v]null[vnos]'); prev='[vnos]'
 base_i=len(subs)+1; ain=[]; afl=[]
 for j,(ln,a,sc) in enumerate(audio):
     ain+=['-i',f"{audio_dir}/{ln['id']}.mp3"]; ms=int(a*1000)
     afl.append(f'[{base_i+j}:a]aresample=44100,aformat=channel_layouts=mono,adelay={ms}|{ms}[a{j}]')
 mix=''.join(f'[a{j}]' for j in range(len(audio)))
 afl.append(f'{mix}amix=inputs={len(audio)}:normalize=0:duration=longest,loudnorm=I=-16:TP=-1.5:LRA=11,apad=whole_dur={total:.3f},aformat=channel_layouts=stereo[aout]')
-final=f'{OUT}/FORENSIC_EXPERT_{vid}_ru_uz.mp4'
+final=f'{OUT}/FORENSIC_EXPERT_{vid}_'+('uz_clean' if os.environ.get('NOSUBS') else 'ru_uz')+'.mp4'
 fc=';'.join(fcs+afl)
 sh(FF+['-i',f'{TMP}/video_nosub.mp4']+ins+ain+['-filter_complex',fc,'-map',prev,'-map','[aout]',
    '-c:v','libx264','-crf','18','-preset','slow','-pix_fmt','yuv420p','-r','30','-c:a','aac','-b:a','160k','-t',f'{total:.3f}','-movflags','+faststart',final])

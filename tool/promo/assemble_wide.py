@@ -108,7 +108,7 @@ def load_src(name):
     mv,_=marker_time(f'{REC}/{name}.raw.mkv'); assert mv is not None
     return {'raw':f'{REC}/{name}.raw.mkv','m_ep':m_ep,'mv':mv,'scenes':{e['id']:e for e in ev if e['type']=='scene'}}
 MAIN=load_src(vid)
-EXTRAS={'ustoz':['ustoz_extra','ustoz_lit'],'talaba':['talaba_extra','talaba_extra2','talaba_lit','talaba_desk','extra5','extra6','extra8'],'yuldashev':['talaba_extra','yuldashev_spe','extra5'],'ozi':[],'ustoz2':[]}[vid]
+EXTRAS={'ustoz':['ustoz_extra','ustoz_lit'],'talaba':['talaba_extra','talaba_extra2','talaba_lit','talaba_desk','extra5','extra6','extra8'],'yuldashev':['talaba_extra','yuldashev_spe','extra5'],'ozi':[],'ustoz2':['ustoz2b']}[vid]
 SRC={sid:MAIN for sid in MAIN['scenes']}
 for nm in EXTRAS:
     if os.path.exists(f'{REC}/{nm}.events.json'):
