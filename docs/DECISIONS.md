@@ -401,3 +401,11 @@ Egasi yuborgan 6-kurs davolash rejasi (7 mavzu, 18+18=36 soat) bo‘yicha: «Dar
 - «Sud-tibbiy toksikologiya» (9 mavzu) ALOHIDA bo‘lim bo‘lib qoladi (Sud-kimyoviy ekspertiza ichiga kirmaydi).
 - «Sud-kimyoviy ekspertiza» ichida: «Toksikologik kimyo» (81 mavzu, prof. Yo‘ldashev majmuasi) — domla tasdig‘i.
 - Bioetika → «Tibbiy huquq va bioetika». Server kurs nomlari o‘zgarmaydi (eski ilovalar nom bilan topadi); faqat ilovada ko‘rinadigan nomlar o‘zgaradi (build 60+).
+
+## 2026-11-04 — Bosh ekran «Asosiy fanlar»: YAKUNIY tarkib (egasi, bekor qiladi oldingisini)
+1. Sud tibbiyoti
+2. Sud-tibbiy toksikologiya — ALOHIDA karta (9 mavzu)
+3. Sud-kimyoviy ekspertiza — ichida «Toksikologik kimyo» (81 mavzu); hozirgi «Toksikologiya» kartasi shunga aylanadi
+4. Biokimyo
+5. Tibbiy huquq va bioetika (22+ dars)
+Mavzusi yo‘q bo‘limlar (murdalar, tirik shaxslar, sud biologiyasi va genetika, sud gistologiyasi, tibbiy kriminalistika) hozircha ko‘rsatilmaydi. Server kurs nomlari o‘zgarmaydi.
