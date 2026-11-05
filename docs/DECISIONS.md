@@ -339,4 +339,6 @@ Pro 0.4.0 test buildidan keyin darslar va test savollari RU/EN ga tarjima qilina
 - Sud-kimyo o‘z bo‘limida (Mutaxassis) qoladi; ixtisoslashtirish kursi «Toksikologik kimyo» shu yerda. Nomlar farqlanadi: «Toksikologiya» (fan) ≠ «Toksikologik kimyo» (Mutaxassis kursi).
 - Baholash bo‘limidagi «Sud-kimyogar ekspertiza» nomi o‘zgartirilmaydi.
 - Barcha ekranlar ko‘rib chiqiladi, keraksiz/ortiqcha narsa olib tashlanadi (audit, shanba).
-- Sud-tibbiy ekspertiza bo‘limlari to‘liq qilinadi; hujjatlarda ish joyidagi markaz ham ko‘rsatiladi (hamma ish faqat institutga qilingandek ko‘rinmasin).
+- Sud-tibbiy ekspertiza bo‘limlari to‘liq qilinadi. Markaz nomi hozircha hech qayerda yozilmaydi (ilova butun dunyo uchun); markaz rahbariyati rozi bo‘lgach, kelishilgan holda qo‘shiladi.
+- «Patologik anatomiya» baholash bo‘limida qoladi (3 yo‘nalish: sud-tibbiy, patologik anatomiya, sud-kimyoviy ekspertiza).
+- Sud-tibbiy savollar manbai: egasi Word/PDF beradi yoki rasmiy ro‘yxat saytidan (tmbm.ssv.uz) olinadi.
