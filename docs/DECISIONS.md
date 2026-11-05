@@ -331,3 +331,12 @@ Pro 0.4.0 test buildidan keyin darslar va test savollari RU/EN ga tarjima qilina
 - Toksikologik kimyo kursidagi «Mavjud testlar» to‘g‘ridan-to‘g‘ri `sud_kimyo` savollariga olib boradi.
 - iOS Codemagic: `SKIP_UPLOAD: "false"` (TestFlight'ga avtomatik; App Store/Production'ga yuborilmaydi).
 - Play versiya kodi 63 va 64 band bo‘lgani uchun 0.4.4+65.
+
+## 2026-11-05 (kech) — ADTI kelishuvidan keyingi tuzilma (egasi qarorlari)
+- Ilovaga institut logotipi qo‘yilmaydi.
+- Ustoz/Talaba: ikkita alohida asosiy fan — «Sud tibbiyoti» va «Toksikologiya».
+- Mutaxassis: «Bilim va malakani baholash» (toifa olishga o‘zini tayyorlash) saqlanadi: sud-kimyoviy ekspertiza va sud-tibbiy ekspertiza savollari/testlari (sud-tibbiy savollarini egasi beradi, to‘liq kiritiladi).
+- Sud-kimyo o‘z bo‘limida (Mutaxassis) qoladi; ixtisoslashtirish kursi «Toksikologik kimyo» shu yerda. Nomlar farqlanadi: «Toksikologiya» (fan) ≠ «Toksikologik kimyo» (Mutaxassis kursi).
+- Baholash bo‘limidagi «Sud-kimyogar ekspertiza» nomi o‘zgartirilmaydi.
+- Barcha ekranlar ko‘rib chiqiladi, keraksiz/ortiqcha narsa olib tashlanadi (audit, shanba).
+- Sud-tibbiy ekspertiza bo‘limlari to‘liq qilinadi; hujjatlarda ish joyidagi markaz ham ko‘rsatiladi (hamma ish faqat institutga qilingandek ko‘rinmasin).
