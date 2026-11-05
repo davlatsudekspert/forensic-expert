@@ -22,8 +22,8 @@ workflows:
         SOCIAL_SIGNIN: "true"
         STORE_REVIEW: "false"
         # IPA artefaktda qoladi, TestFlight/App Store'ga YUKLANMAYDI.
-        # Yuklash uchun build oldidan SKIP_UPLOAD ni "false" qiling.
-        SKIP_UPLOAD: "true"
+        # iOS TestFlight'ga avtomatik yuklash YOQILGAN (App Store'ga yuborilmaydi). O'chirish uchun "true".
+        SKIP_UPLOAD: "false"
     scripts:
       - name: Flutter dependencies
         script: |
