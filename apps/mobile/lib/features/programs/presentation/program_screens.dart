@@ -334,7 +334,8 @@ class _ProgramScreenState extends ConsumerState<ProgramScreen> {
                       key: const Key('program.tests'),
                       icon: Icons.fact_check_outlined,
                       title: l.progTests,
-                      onTap: () => context.push(Routes.assessment),
+                      onTap: () =>
+                          context.push(Routes.assessmentSpecialty('sud_kimyo')),
                     ),
                   ],
                   const SizedBox(height: FeSpace.sm),
