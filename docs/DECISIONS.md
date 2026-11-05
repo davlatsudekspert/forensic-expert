@@ -325,3 +325,9 @@ Pro 0.4.0 test buildidan keyin darslar va test savollari RU/EN ga tarjima qilina
 - O‘zini o‘zi taklif qilib bo‘lmaydi. Har bir mukofot audit logga yoziladi, admin bekor qila oladi.
 - Ilovada ko‘rinadigan narsalar: taklif sahifasida «1/3 do‘st Pro oldi» progress va mukofot holati.
 - Pro (xarid) yoqilganda birga ishga tushadi. Hozir o‘chiq: `referral_config.rewards_enabled = false`.
+
+## 2026-11-05 (kech) — Talaba/Ustoz tartibi, kurs testlari, build
+- «Ustozlar va mutaxassislar» kartasi Talaba va Ustoz bosh sahifasida qidiruvdan keyin, tepada (Mutaxassisda baholash kartasidan keyin).
+- Toksikologik kimyo kursidagi «Mavjud testlar» to‘g‘ridan-to‘g‘ri `sud_kimyo` savollariga olib boradi.
+- iOS Codemagic: `SKIP_UPLOAD: "false"` (TestFlight'ga avtomatik; App Store/Production'ga yuborilmaydi).
+- Play versiya kodi 63 va 64 band bo‘lgani uchun 0.4.4+65.
