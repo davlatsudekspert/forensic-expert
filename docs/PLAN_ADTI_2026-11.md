@@ -29,10 +29,11 @@ Bir necha mustaqil tekshiruvchi (eng kuchli model) bir vaqtda, har biri alohida 
 6. Ishonchlilik: yuklama sinovi (200 talaba), oflayn, qulashlar.
 Natija: bitta ustuvorlashtirilgan ro‘yxat (kritik / muhim / yaxshilash) va hajm bahosi.
 
-### A2. iPhone: chap chetdan surib orqaga qaytish (egasi xabari, 5-noyabr)
-- Belgi: iPhone'da ekranni chetdan o‘ngga tortsa oldingi ekranga qaytmayapti (boshqa ilovalarda ishlaydi).
-- Kod bo‘yicha: iOS sahifa o‘tishi Cupertino (to‘g‘ri). Shubha: ko‘p oqimda `context.go(...)` ishlatiladi (guruh, test, natija, og‘zaki navbat) — u tarixni almashtiradi, ostida oldingi ekran bo‘lmaydi, shuning uchun surish ishlamaydi. Tuzatish: batafsil ekranlarni `push` bilan ochish yoki marshrutni ota-marshrut ostiga joylash.
-- Real iPhone'da qaysi ekranlarda ishlamasligini ro‘yxat qilish; har bir tuzatishdan keyin qurilmada tekshirish.
+### A2. iPhone: ekran ichidan o‘ngga surib orqaga qaytish (egasi talabi, 5-noyabr)
+- Talab: ekranning o‘rtasidan/pastidan ham o‘ngga tortsa oldingi ekranga qaytsin (tepadagi strelkani bosmasdan), boshqa ilovalardagidek.
+- Holat: iOS standart surishi faqat eng chap chetdan (~20 nuqta) ishlaydi; kenglik standart tarzda o‘zgarmaydi. Chetdan ishlayaptimi — qurilmada tekshiriladi.
+- Reja: butun ekran bo‘ylab surish-orqaga (iOS) — maxsus qatlam; ziddiyatli joylarda o‘chiriladi (slayder, karusel, rasm kattalashtirish, og‘zaki baholash slayderi, gorizontal ro‘yxatlar); real iPhone'da sinash.
+- Xavf: gorizontal surish elementlari bilan to‘qnashuv; shuning uchun har ekran turi bo‘yicha tekshiriladi.
 
 ### B. O‘quv dasturlarni kiritish (asosiy ish)
 - Institut dasturidagi mavzularni yagona ma’lumot manbaiga olish (hozirgi «Toksikologik kimyo» kursi modeli asosida): kurs → bo‘lim → mavzu.
