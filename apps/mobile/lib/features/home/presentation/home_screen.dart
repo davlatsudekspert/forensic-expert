@@ -464,8 +464,7 @@ class HomeScreen extends ConsumerWidget {
 
 /// Talaba bosh sahifasi «Mening akademiyam» (egasi qarori, 2026-11-04).
 /// Tartib: sarlavha → banner → qidiruv → Bugungi savol → O‘quv mashg‘ulotlari
-/// → Guruh testi (jonli) → Ilmiy va amaliy bo‘limlar → Ustozlar va
-/// mutaxassislar → Yo‘riqnomalar, Moddalar → Barcha sud-ekspert fanlari →
+/// → Guruh testi (jonli) → Ilmiy va amaliy bo‘limlar → Yo‘riqnomalar, Moddalar → Barcha sud-ekspert fanlari →
 /// Birinchi qadamlar, Pro taklifi, Saqlanganlar. «Asosiy fanlar» va
 /// Kutubxona kartasi yo‘q (Kutubxona — pastki menyuda).
 class _StudentHome extends ConsumerWidget {
@@ -510,6 +509,8 @@ class _StudentHome extends ConsumerWidget {
                         onTap: () => context.push(Routes.search),
                       ),
                       gap,
+                      const _CatalogBanner(),
+                      gap,
                       const StudentDailyQuestion(),
                       FeSectionHeader(
                         l.studentLearnTitle,
@@ -538,8 +539,6 @@ class _StudentHome extends ConsumerWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  const SizedBox(height: FeSpace.md),
-                  const _CatalogBanner(),
                   FeSectionHeader(
                     l.studentMoreTitle,
                     padding: const EdgeInsets.only(
@@ -627,6 +626,8 @@ class _TeacherHome extends ConsumerWidget {
                     prominent: true,
                     onTap: () => context.push(Routes.search),
                   ),
+                  gap,
+                  const _CatalogBanner(),
                   const SizedBox(height: FeSpace.lg),
                   const TeacherDesk(),
                   FeSectionHeader(l.teacherSectionMaterials, padding: head()),
@@ -674,8 +675,6 @@ class _TeacherHome extends ConsumerWidget {
                     lock: ProFeature.courtPrep,
                     onTap: () => context.push(Routes.courtPrep),
                   ),
-                  gap,
-                  const _CatalogBanner(),
                   gap,
                   const _NewSections(),
                   const SizedBox(height: FeSpace.md),
