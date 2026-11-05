@@ -21,7 +21,7 @@ workflows:
       vars:
         SOCIAL_SIGNIN: "true"
         STORE_REVIEW: "false"
-        # IPA artefaktda qoladi, TestFlight/App Store'ga YUKLANMAYDI.
+        # SKIP_UPLOAD=true bo'lsa IPA faqat artefaktda qoladi.
         # iOS TestFlight'ga avtomatik yuklash YOQILGAN (App Store'ga yuborilmaydi). O'chirish uchun "true".
         SKIP_UPLOAD: "false"
     scripts:
