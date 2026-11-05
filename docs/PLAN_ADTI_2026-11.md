@@ -29,6 +29,11 @@ Bir necha mustaqil tekshiruvchi (eng kuchli model) bir vaqtda, har biri alohida 
 6. Ishonchlilik: yuklama sinovi (200 talaba), oflayn, qulashlar.
 Natija: bitta ustuvorlashtirilgan ro‘yxat (kritik / muhim / yaxshilash) va hajm bahosi.
 
+### A2. iPhone: chap chetdan surib orqaga qaytish (egasi xabari, 5-noyabr)
+- Belgi: iPhone'da ekranni chetdan o‘ngga tortsa oldingi ekranga qaytmayapti (boshqa ilovalarda ishlaydi).
+- Kod bo‘yicha: iOS sahifa o‘tishi Cupertino (to‘g‘ri). Shubha: ko‘p oqimda `context.go(...)` ishlatiladi (guruh, test, natija, og‘zaki navbat) — u tarixni almashtiradi, ostida oldingi ekran bo‘lmaydi, shuning uchun surish ishlamaydi. Tuzatish: batafsil ekranlarni `push` bilan ochish yoki marshrutni ota-marshrut ostiga joylash.
+- Real iPhone'da qaysi ekranlarda ishlamasligini ro‘yxat qilish; har bir tuzatishdan keyin qurilmada tekshirish.
+
 ### B. O‘quv dasturlarni kiritish (asosiy ish)
 - Institut dasturidagi mavzularni yagona ma’lumot manbaiga olish (hozirgi «Toksikologik kimyo» kursi modeli asosida): kurs → bo‘lim → mavzu.
 - Har bir mavzuni mavjud mazmun, savollar, bilet va audio bilan bog‘lash; bo‘sh joylar «Tayyorlanmoqda» deb ochiq ko‘rsatiladi.
