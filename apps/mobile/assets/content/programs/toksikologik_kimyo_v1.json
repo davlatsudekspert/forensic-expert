@@ -1,0 +1,863 @@
+{
+ "id": "toksikologik_kimyo",
+ "module": "Modul: Toksikologik kimyo",
+ "source_title": "Sud-tibbiy ekspert-kimyogar mutaxassisligi bo‘yicha “Toksikologik kimyo’’ ixtisoslashtirish kursi DASTURI",
+ "version": 2,
+ "topics": [
+  {
+   "id": "tk-01",
+   "n": 1,
+   "title": "O‘zbekiston Respublikasi Sog‘liqni saqlash vazirligi Respublika Sud-tibbiy ekspertiza ilmiy-amaliy markazi tuzilishi va faoliyatini tashkil etish",
+   "group": "g1",
+   "status": "preparing",
+   "links": []
+  },
+  {
+   "id": "tk-02",
+   "n": 2,
+   "title": "Sud-tibbiy ekspert-kimyogarlari, ularning vazifalari, huquq va majburiyatlari. Sud kimyosi ekspertizasini olib borish tartibi. Sud-kimyosi ekspertizasi xulosasi va kimyo-toksikologik tekshiruv aktini yozish qoidalari",
+   "group": "g1",
+   "status": "preparing",
+   "links": []
+  },
+  {
+   "id": "tk-03",
+   "n": 3,
+   "title": "Narkomaniya va toksikomaniya, murakkab narkomaniya va toksikomaniya, polinarkomaniya, politoksikomaniya",
+   "group": "g1",
+   "status": "preparing",
+   "links": []
+  },
+  {
+   "id": "tk-04",
+   "n": 4,
+   "title": "Sud-kimyo ekspertizasining asosiy masalalari, Sud-kimyo ekspertizasi ob’ektlari va tahlillarda qo‘llaniladigan usullar",
+   "group": "g1",
+   "status": "partial",
+   "links": [
+    {
+     "k": "knowledge",
+     "v": "method"
+    }
+   ]
+  },
+  {
+   "id": "tk-05",
+   "n": 5,
+   "title": "Zaharli moddalar, ularning sinflanishi, zaharli moddalarni organizmga tushishi, tarqalishi va chiqarilishi",
+   "group": "g1",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": null
+    }
+   ]
+  },
+  {
+   "id": "tk-06",
+   "n": 6,
+   "title": "Zaharlanish turlari va detoksikatsiyasi",
+   "group": "g1",
+   "status": "preparing",
+   "links": []
+  },
+  {
+   "id": "tk-07",
+   "n": 7,
+   "title": "Zaharlar metabolizmi",
+   "group": "g1",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": null
+    }
+   ]
+  },
+  {
+   "id": "tk-08",
+   "n": 8,
+   "title": "Sud-kimyo ekspertizasi va kimyo-toksikologik tekshiruvlar uchun ob’ektlarni olish, qabul qilish va saqlash",
+   "group": "g2",
+   "status": "preparing",
+   "links": []
+  },
+  {
+   "id": "tk-09",
+   "n": 9,
+   "title": "Dastlabki tekshiruv va namunalarni tahlilga tayyorlash",
+   "group": "g2",
+   "status": "partial",
+   "links": [
+    {
+     "k": "method",
+     "v": "method-lle"
+    },
+    {
+     "k": "method",
+     "v": "method-spe"
+    },
+    {
+     "k": "method",
+     "v": "method-protein-precipitation"
+    },
+    {
+     "k": "method",
+     "v": "method-quechers"
+    }
+   ]
+  },
+  {
+   "id": "tk-10",
+   "n": 10,
+   "title": "Ajratib olingan moddalarni identifikatsiya qilish va ularning miqdorini aniqlashda qo‘llaniladigan uslublar",
+   "group": "g4",
+   "status": "partial",
+   "links": [
+    {
+     "k": "method",
+     "v": "method-identification-criteria"
+    },
+    {
+     "k": "knowledge",
+     "v": "method"
+    }
+   ]
+  },
+  {
+   "id": "tk-11",
+   "n": 11,
+   "title": "Uslublarning validatsiyasi",
+   "group": "g4",
+   "status": "partial",
+   "links": [
+    {
+     "k": "method",
+     "v": "method-validation"
+    },
+    {
+     "k": "tool",
+     "v": "tool.lab.lod_loq"
+    }
+   ]
+  },
+  {
+   "id": "tk-12",
+   "n": 12,
+   "title": "Sud-kimyo tahlillarida G-standartlarini qo‘llash",
+   "group": "g4",
+   "status": "preparing",
+   "links": []
+  },
+  {
+   "id": "tk-13",
+   "n": 13,
+   "title": "Noma’lum zaharlarni umumiy tahlilini o‘tkazish tartibi",
+   "group": "g4",
+   "status": "preparing",
+   "links": []
+  },
+  {
+   "id": "tk-14",
+   "n": 14,
+   "title": "Ekstraksiya va unga ta’sir qiluvchi omillar",
+   "group": "g3",
+   "status": "partial",
+   "links": [
+    {
+     "k": "method",
+     "v": "method-lle"
+    }
+   ]
+  },
+  {
+   "id": "tk-15",
+   "n": 15,
+   "title": "Qattiq fazali ekstraksiya",
+   "group": "g3",
+   "status": "partial",
+   "links": [
+    {
+     "k": "method",
+     "v": "method-spe"
+    },
+    {
+     "k": "equipment",
+     "v": "spe"
+    }
+   ]
+  },
+  {
+   "id": "tk-16",
+   "n": 16,
+   "title": "Sud-kimyo ekspertiza va kimyo-toksikologik tekshiruvlarda ob’ektlarni tahlilga tayyorlash (zaharlarni suv bug‘i yordamida haydash, nordon sharoitda qutbli erituvchilar yordamida bo‘ktirish, organik erituvchilar bilan ekstraksiyalash va biologik ob’ektni mineralizatsiyalash usullarida ajratib olish)",
+   "group": "g3",
+   "status": "partial",
+   "links": [
+    {
+     "k": "method",
+     "v": "method-lle"
+    },
+    {
+     "k": "method",
+     "v": "method-spe"
+    },
+    {
+     "k": "method",
+     "v": "method-quechers"
+    }
+   ]
+  },
+  {
+   "id": "tk-17",
+   "n": 17,
+   "title": "Olingan ajralmalarni oqsil moddalardan tozalash",
+   "group": "g3",
+   "status": "partial",
+   "links": [
+    {
+     "k": "method",
+     "v": "method-protein-precipitation"
+    }
+   ]
+  },
+  {
+   "id": "tk-18",
+   "n": 18,
+   "title": "Tahlilda qo‘llaniladigan uslublar, ularga qo‘yiladigan talablar",
+   "group": "g4",
+   "status": "partial",
+   "links": [
+    {
+     "k": "knowledge",
+     "v": "method"
+    }
+   ]
+  },
+  {
+   "id": "tk-19",
+   "n": 19,
+   "title": "Ajratib olingan moddalarni identifikatsiya qilish va ularning miqdorini aniqlashda kimyoviy usullarni qo‘llash",
+   "group": "g4",
+   "status": "partial",
+   "links": [
+    {
+     "k": "knowledge",
+     "v": "reagent"
+    },
+    {
+     "k": "knowledge",
+     "v": "screeningTest"
+    }
+   ]
+  },
+  {
+   "id": "tk-20",
+   "n": 20,
+   "title": "Ajratib olingan moddalarni identifikatsiya qilish va ularning miqdorini aniqlashda ultrabinafsha spektrofotometriya usulini qo‘llash",
+   "group": "g4",
+   "status": "available",
+   "links": [
+    {
+     "k": "lab",
+     "v": "spectro"
+    },
+    {
+     "k": "method",
+     "v": "method-uvvis"
+    },
+    {
+     "k": "equipment",
+     "v": "uv_vis"
+    }
+   ]
+  },
+  {
+   "id": "tk-21",
+   "n": 21,
+   "title": "Ajratib olingan moddalarni identifikatsiya qilish va ularning miqdorini aniqlashda fotokolorimetriya usulini qo‘llash",
+   "group": "g4",
+   "status": "partial",
+   "links": [
+    {
+     "k": "lab",
+     "v": "spectro"
+    }
+   ]
+  },
+  {
+   "id": "tk-22",
+   "n": 22,
+   "title": "Ajratib olingan moddalarni identifikatsiya qilish va ularning miqdorini aniqlashda IQ-spektrometriya usulini qo‘llash",
+   "group": "g4",
+   "status": "partial",
+   "links": [
+    {
+     "k": "method",
+     "v": "method-spectroscopy"
+    }
+   ]
+  },
+  {
+   "id": "tk-23",
+   "n": 23,
+   "title": "Ajratib olingan moddalarni identifikatsiya qilish va ularning miqdorini aniqlashda xromatografiya usullarini qo‘llash (yupqa qatlam xromatografiyasi, gaz suyuqlik xromatografiyasi, yuqori samarali suyuqlik xromatografiyasi va b.)",
+   "group": "g4",
+   "status": "partial",
+   "links": [
+    {
+     "k": "method",
+     "v": "method-tlc"
+    },
+    {
+     "k": "method",
+     "v": "method-gc-fid"
+    },
+    {
+     "k": "method",
+     "v": "method-hplc"
+    },
+    {
+     "k": "lab",
+     "v": "chromatography"
+    }
+   ]
+  },
+  {
+   "id": "tk-24",
+   "n": 24,
+   "title": "Gaz suyuqlik xromatografiyasi usulida moddalarni derivatizatsiya qilish",
+   "group": "g4",
+   "status": "partial",
+   "links": [
+    {
+     "k": "method",
+     "v": "method-derivatization"
+    }
+   ]
+  },
+  {
+   "id": "tk-25",
+   "n": 25,
+   "title": "Ajratib olingan moddalarni identifikatsiya qilish va ularning miqdorini aniqlashda immunokimyoviy va immunoferment usullarini qo‘llash",
+   "group": "g4",
+   "status": "partial",
+   "links": [
+    {
+     "k": "method",
+     "v": "method-immunoassay"
+    }
+   ]
+  },
+  {
+   "id": "tk-26",
+   "n": 26,
+   "title": "Ajratib olingan moddalarni miqdorini aniqlashda mass-spektrometriya va GX-MS usullarini qo‘llash",
+   "group": "g4",
+   "status": "available",
+   "links": [
+    {
+     "k": "lab",
+     "v": "chromatography"
+    },
+    {
+     "k": "method",
+     "v": "method-gcms"
+    },
+    {
+     "k": "method",
+     "v": "method-lcmsms"
+    },
+    {
+     "k": "method",
+     "v": "method-hrms"
+    }
+   ]
+  },
+  {
+   "id": "tk-27",
+   "n": 27,
+   "title": "Miqdoriy tahlil natijalarining metrologik hisoblashlari",
+   "group": "g4",
+   "status": "partial",
+   "links": [
+    {
+     "k": "method",
+     "v": "method-uncertainty"
+    },
+    {
+     "k": "tool",
+     "v": "tool.lab.lod_loq"
+    },
+    {
+     "k": "tool",
+     "v": "tool.lab.solution"
+    }
+   ]
+  },
+  {
+   "id": "tk-28",
+   "n": 28,
+   "title": "Boshqa tahlil usullari (fluoressensiya, elektroforez)",
+   "group": "g4",
+   "status": "preparing",
+   "links": []
+  },
+  {
+   "id": "tk-29",
+   "n": 29,
+   "title": "Uchuvchi zaharlari identifikatsiya qilish va miqdor tahlili",
+   "group": "g6",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "alcohols_volatiles"
+    },
+    {
+     "k": "method",
+     "v": "method-headspace-gc"
+    }
+   ]
+  },
+  {
+   "id": "tk-30",
+   "n": 30,
+   "title": "Spirtlarni identifikatsiya qilish va miqdor tahlili",
+   "group": "g6",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "alcohols_volatiles"
+    },
+    {
+     "k": "method",
+     "v": "method-headspace-gc"
+    }
+   ]
+  },
+  {
+   "id": "tk-31",
+   "n": 31,
+   "title": "1,4-benzodiazepinlarni identifikatsiya qilish va miqdor tahlili",
+   "group": "g5",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "benzodiazepines"
+    }
+   ]
+  },
+  {
+   "id": "tk-32",
+   "n": 32,
+   "title": "Depressantlarni identifikatsiya qilish va miqdor tahlili",
+   "group": "g5",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "sedatives_hypnotics"
+    },
+    {
+     "k": "substances",
+     "v": "barbiturates"
+    }
+   ]
+  },
+  {
+   "id": "tk-33",
+   "n": 33,
+   "title": "Opiodlar va opiatlarni identifikatsiya qilish va miqdor tahlili",
+   "group": "g5",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "opioids"
+    }
+   ]
+  },
+  {
+   "id": "tk-34",
+   "n": 34,
+   "title": "Kokainni identifikatsiya qilish va miqdor tahlili",
+   "group": "g5",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "stimulants"
+    }
+   ]
+  },
+  {
+   "id": "tk-35",
+   "n": 35,
+   "title": "Kannabisni (nasha) identifikatsiya qilish va miqdor tahlili",
+   "group": "g5",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "cannabinoids"
+    }
+   ]
+  },
+  {
+   "id": "tk-36",
+   "n": 36,
+   "title": "Sintetik kannabionoidlarni (snyus) identifikatsiya qilish va miqdor tahlili",
+   "group": "g5",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "cannabinoids"
+    }
+   ]
+  },
+  {
+   "id": "tk-37",
+   "n": 37,
+   "title": "Amfetaminlarni identifikatsiya qilish va miqdor tahlili",
+   "group": "g5",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "stimulants"
+    }
+   ]
+  },
+  {
+   "id": "tk-38",
+   "n": 38,
+   "title": "Giyohvandlik vositalarini identifikatsiya qilish va miqdor tahlili",
+   "group": "g5",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "opioids"
+    },
+    {
+     "k": "substances",
+     "v": "stimulants"
+    },
+    {
+     "k": "substances",
+     "v": "cannabinoids"
+    }
+   ]
+  },
+  {
+   "id": "tk-39",
+   "n": 39,
+   "title": "Barbitur kislota hosilalarini identifikatsiya qilish va miqdor tahlili",
+   "group": "g5",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "barbiturates"
+    }
+   ]
+  },
+  {
+   "id": "tk-40",
+   "n": 40,
+   "title": "Gallyusinogenlar va psixodeliklarni identifikatsiya qilish va miqdor tahlili",
+   "group": "g5",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "hallucinogens_dissociatives"
+    }
+   ]
+  },
+  {
+   "id": "tk-41",
+   "n": 41,
+   "title": "Antidepressantlarni identifikatsiya qilish va miqdor tahlili",
+   "group": "g5",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "antidepressants"
+    }
+   ]
+  },
+  {
+   "id": "tk-42",
+   "n": 42,
+   "title": "Neyroleptiklarni identifikatsiya qilish va miqdor tahlili",
+   "group": "g5",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "antipsychotics"
+    }
+   ]
+  },
+  {
+   "id": "tk-43",
+   "n": 43,
+   "title": "Psixotrop moddalarni identifikatsiya qilish va miqdor tahlili",
+   "group": "g5",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "antidepressants"
+    },
+    {
+     "k": "substances",
+     "v": "antipsychotics"
+    },
+    {
+     "k": "substances",
+     "v": "anticonvulsants"
+    },
+    {
+     "k": "substances",
+     "v": "sedatives_hypnotics"
+    }
+   ]
+  },
+  {
+   "id": "tk-44",
+   "n": 44,
+   "title": "Dori vositalarni identifikatsiya qilish va miqdor tahlili",
+   "group": "g5",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "pharmaceuticals"
+    }
+   ]
+  },
+  {
+   "id": "tk-45",
+   "n": 45,
+   "title": "Is gazi va metanni identifikatsiya qilish va miqdor tahlili",
+   "group": "g6",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "toxic_gases"
+    }
+   ]
+  },
+  {
+   "id": "tk-46",
+   "n": 46,
+   "title": "Ingalyatsion zaharlarni identifikatsiya qilish va miqdor tahlili",
+   "group": "g6",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "toxic_gases"
+    },
+    {
+     "k": "substances",
+     "v": "alcohols_volatiles"
+    }
+   ]
+  },
+  {
+   "id": "tk-47",
+   "n": 47,
+   "title": "Metall zaharlarni identifikatsiya qilish va miqdor tahlili",
+   "group": "g6",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "metals_inorganic"
+    }
+   ]
+  },
+  {
+   "id": "tk-48",
+   "n": 48,
+   "title": "Soch namunalarida giyohvandlik vositalari va psixotrop moddalarni identifikatsiya qilish va miqdor tahlili",
+   "group": "g6",
+   "status": "preparing",
+   "links": []
+  },
+  {
+   "id": "tk-49",
+   "n": 49,
+   "title": "So‘lak va og‘iz suyuqliklari tahlili",
+   "group": "g6",
+   "status": "preparing",
+   "links": []
+  },
+  {
+   "id": "tk-50",
+   "n": 50,
+   "title": "Dorilarni murda a’zolarida tarqalishi va saqlanishi",
+   "group": "g6",
+   "status": "preparing",
+   "links": []
+  },
+  {
+   "id": "tk-51",
+   "n": 51,
+   "title": "Balzamlangan murda a’zolarida dorilarni identifikatsiya qilish va miqdorini aniqlash",
+   "group": "g6",
+   "status": "preparing",
+   "links": []
+  },
+  {
+   "id": "tk-52",
+   "n": 52,
+   "title": "Alkaloidlarni identifikatsiya qilish va miqdorini aniqlash",
+   "group": "g6",
+   "status": "preparing",
+   "links": []
+  },
+  {
+   "id": "tk-53",
+   "n": 53,
+   "title": "Fosfororganik pestitsidlar va ularning tahlili",
+   "group": "g7",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "pesticides"
+    }
+   ]
+  },
+  {
+   "id": "tk-54",
+   "n": 54,
+   "title": "Karbamin va tiokarbamin hosilasiga mansub moddalar va ularning tahlili",
+   "group": "g7",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "pesticides"
+    }
+   ]
+  },
+  {
+   "id": "tk-55",
+   "n": 55,
+   "title": "Xlororganik moddalar, ularni ob’ektlardan ajratib olish va tahlili",
+   "group": "g7",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "pesticides"
+    }
+   ]
+  },
+  {
+   "id": "tk-56",
+   "n": 56,
+   "title": "Sintetik piretroidlarga oid pestitsidlar, ularni suyuqliklar va bioob’ektlardan ajratib olish va tahlili",
+   "group": "g7",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "pesticides"
+    }
+   ]
+  },
+  {
+   "id": "tk-57",
+   "n": 57,
+   "title": "Pestitsidlarning tahlili",
+   "group": "g7",
+   "status": "partial",
+   "links": [
+    {
+     "k": "substances",
+     "v": "pesticides"
+    },
+    {
+     "k": "method",
+     "v": "method-quechers"
+    }
+   ]
+  },
+  {
+   "id": "tk-58",
+   "n": 58,
+   "title": "Prekursorlar. Giyohvandlik vositalari va psixotrop moddalar sintezidagi ahamiyati va tahlili",
+   "group": "g7",
+   "status": "preparing",
+   "links": []
+  },
+  {
+   "id": "tk-59",
+   "n": 59,
+   "title": "Ayrim kuchli ta’sir qiluvchi moddalar tahlili",
+   "group": "g7",
+   "status": "preparing",
+   "links": []
+  },
+  {
+   "id": "tk-60",
+   "n": 60,
+   "title": "Ayrim moddalar tahlili (gidrozin gidroxlorid, vodorod peroksid, ko‘mir changlari va b.)",
+   "group": "g7",
+   "status": "preparing",
+   "links": []
+  },
+  {
+   "id": "tk-61",
+   "n": 61,
+   "title": "Ichimlik, oqova suv va oziq-ovqat mahsulotlari tahlili",
+   "group": "g7",
+   "status": "preparing",
+   "links": []
+  },
+  {
+   "id": "tk-62",
+   "n": 62,
+   "title": "Alohida usullar yordamida tahlil qilinadigan moddalar",
+   "group": "g7",
+   "status": "preparing",
+   "links": []
+  },
+  {
+   "id": "tk-63",
+   "n": 63,
+   "title": "O‘zbekiston Respublikasi kodekslari, Qonunlari, O‘zbekiston Respublikasi Prezidenti Farmon va qarorlari",
+   "group": "g1",
+   "status": "partial",
+   "links": [
+    {
+     "k": "jurisdictions",
+     "v": null
+    }
+   ],
+   "added_from": "ma'ruza rejasi (surat)"
+  },
+  {
+   "id": "tk-64",
+   "n": 64,
+   "title": "O‘zbekiston Respublikasi Sud-tibbiy ekspertizasi faoliyatini tashkil etish tamoyillari, O‘zbekiston Respublikasi Vazirlar Mahkamasining qarorlari, O‘zbekiston Respublikasi Sog‘liqni saqlash vaziri buyrug‘i",
+   "group": "g1",
+   "status": "preparing",
+   "links": [],
+   "added_from": "ma'ruza rejasi (surat)"
+  }
+ ]
+}

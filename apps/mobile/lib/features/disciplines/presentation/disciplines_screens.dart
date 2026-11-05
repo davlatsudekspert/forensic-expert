@@ -62,6 +62,14 @@ List<HomeModule> modulesOf(ForensicDiscipline d) => switch (d) {
   _ => const [],
 };
 
+/// Fanda ko‘rsatiladigan material bormi: manbali yozuv yoki ilova moduli
+/// (fanlar hubidagi «bo‘sh» qoidasining teskarisi; «Tayyorlanmoqda» uchun).
+bool disciplineHasMaterials(
+  ForensicDiscipline d,
+  KnowledgeRepository knowledge,
+  LibraryRepository library,
+) => modulesOf(d).isNotEmpty || recordCount(d, knowledge, library) > 0;
+
 /// Fanga tegishli manbali yozuvlar soni (sun’iy raqam emas — paketdan).
 int recordCount(
   ForensicDiscipline d,
@@ -169,6 +177,44 @@ bool _ownsModule(ForensicDiscipline d) =>
     d == ForensicDiscipline.forensicToxicology ||
     d == ForensicDiscipline.forensicChemistry;
 
+/// Fan sahifasidagi qo‘shimcha havolalar (mavjud sahifalar; yangi kontent yo‘q).
+typedef _RelatedLink = ({
+  String id,
+  IconData icon,
+  String Function(AppLocalizations) title,
+  String route,
+});
+
+List<_RelatedLink> _relatedLinks(ForensicDiscipline d) {
+  _RelatedLink dna() => (
+    id: 'dna',
+    icon: Icons.biotech_outlined,
+    title: (l) => l.dnaTitle,
+    route: Routes.dna,
+  );
+  _RelatedLink virtopsy() => (
+    id: 'virtopsy',
+    icon: Icons.view_in_ar_outlined,
+    title: (l) => l.homeNewVirtopsy,
+    route: Routes.equipmentItem('virtopsy'),
+  );
+  _RelatedLink equipment() => (
+    id: 'equipment',
+    icon: Icons.precision_manufacturing_outlined,
+    title: (l) => l.equipTitle,
+    route: Routes.equipment,
+  );
+  return switch (d) {
+    ForensicDiscipline.forensicGenetics ||
+    ForensicDiscipline.humanIdentification => [dna()],
+    ForensicDiscipline.forensicMedicine ||
+    ForensicDiscipline.forensicRadiology => [virtopsy()],
+    ForensicDiscipline.forensicChemistry ||
+    ForensicDiscipline.analyticalScience => [equipment()],
+    _ => const [],
+  };
+}
+
 class DisciplineScreen extends ConsumerWidget {
   const DisciplineScreen({super.key, required this.code});
 
@@ -240,6 +286,21 @@ class DisciplineScreen extends ConsumerWidget {
                         // Sud tibbiyoti): chalkashmasligi uchun aniq yoziladi.
                         body: _ownsModule(d) ? null : l.disciplineSharedModule,
                         onTap: () => context.push(m.route),
+                      ),
+                    ],
+                  ],
+                  // Egasi qarori (2026-11-05): DNK, Virtual autopsiya va
+                  // Asbob-uskunalar Mutaxassis «Asosiy»idan olib tashlandi —
+                  // ular o‘z ekspertiza yo‘nalishida mavjud sahifalarga bog‘langan.
+                  if (_relatedLinks(d).isNotEmpty) ...[
+                    if (modules.isEmpty) FeSectionHeader(l.disciplineModules),
+                    for (final r in _relatedLinks(d)) ...[
+                      const SizedBox(height: FeSpace.sm),
+                      _NextStepTile(
+                        key: Key('discipline.link.${r.id}'),
+                        icon: r.icon,
+                        title: r.title(l),
+                        onTap: () => context.push(r.route),
                       ),
                     ],
                   ],

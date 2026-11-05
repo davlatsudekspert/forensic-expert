@@ -37,6 +37,7 @@ import '../features/admin/presentation/admin_screen.dart';
 import '../features/admin/presentation/admin_support_screens.dart';
 import '../features/admin/presentation/admin_verification_screens.dart';
 import '../features/ai/presentation/ai_screen.dart';
+import '../features/areas/presentation/areas_screens.dart';
 import '../features/assessment/presentation/assessment_screens.dart';
 import '../features/assessment/presentation/oral_exam_screen.dart';
 import '../features/casebook/presentation/casebook_screens.dart';
@@ -113,6 +114,7 @@ import '../features/profile/presentation/legal_screens.dart';
 import '../features/profile/presentation/profile_screen.dart';
 import '../features/profile/presentation/settings_pickers.dart';
 import '../features/profile/presentation/sources_authors_screen.dart';
+import '../features/programs/presentation/program_screens.dart';
 import '../features/publications/presentation/moderation_queue_screen.dart';
 import '../features/publications/presentation/my_publications_screen.dart';
 import '../features/publications/presentation/publications_screen.dart';
@@ -417,6 +419,7 @@ final routerProvider = Provider<GoRouter>((ref) {
                   GoRoute(
                     path: 'search',
                     builder: (c, s) => SearchScreen(
+                      libraryOnly: s.uri.queryParameters['scope'] == 'library',
                       initialQuery: s.uri.queryParameters['q'],
                       initialDiscipline: ForensicDiscipline.fromCode(
                         s.uri.queryParameters['d'] ?? '',
@@ -780,6 +783,25 @@ final routerProvider = Provider<GoRouter>((ref) {
                     ),
                   ),
                   GoRoute(
+                    path: 'programs',
+                    builder: (c, s) => const ProgramsListScreen(),
+                    routes: [
+                      GoRoute(
+                        path: ':id',
+                        builder: (c, s) =>
+                            ProgramScreen(id: s.pathParameters['id']!),
+                      ),
+                    ],
+                  ),
+                  GoRoute(
+                    path: 'areas',
+                    builder: (c, s) => const ExpertiseAreasScreen(),
+                  ),
+                  GoRoute(
+                    path: 'methods-devices',
+                    builder: (c, s) => const MethodsDevicesScreen(),
+                  ),
+                  GoRoute(
                     path: 'disciplines',
                     builder: (c, s) => const DisciplinesScreen(),
                     routes: [
@@ -1062,7 +1084,10 @@ final routerProvider = Provider<GoRouter>((ref) {
                       final section? => LibrarySectionGate(
                         section: section,
                         title: section.label(AppLocalizations.of(c)),
-                        child: LibrarySectionScreen(section: section),
+                        child: LibrarySectionScreen(
+                          section: section,
+                          initialGroup: s.uri.queryParameters['group'],
+                        ),
                       ),
                       null => const NotFoundScreen(),
                     },

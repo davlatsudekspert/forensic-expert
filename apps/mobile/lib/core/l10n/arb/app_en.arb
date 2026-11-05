@@ -7405,7 +7405,7 @@
   "@researchOpenInBrowser": {
     "description": "Open a research link in the browser."
   },
-  "disciplinesComingSoon": "Coming soon ({count})",
+  "disciplinesComingSoon": "In preparation ({count})",
   "@disciplinesComingSoon": {
     "description": "Collapsed group of disciplines without records.",
     "placeholders": {
@@ -18448,5 +18448,281 @@
   "teacherSectionMore": "More tools",
   "@teacherSectionMore": {
     "description": "Teacher home: section title for the remaining cards."
+  },
+  "progListTitle": "Learning programmes",
+  "@progListTitle": {
+    "description": "Learning programmes: screen and entry title."
+  },
+  "progListIntro": "Specialisation courses: topic catalogue and available materials.",
+  "@progListIntro": {
+    "description": "Learning programmes: intro line."
+  },
+  "progTkTitle": "Toxicological chemistry",
+  "@progTkTitle": {
+    "description": "Course title: Toxicological chemistry."
+  },
+  "progTkSubtitle": "Specialisation course for forensic medical expert-chemists",
+  "@progTkSubtitle": {
+    "description": "Course description (no duration)."
+  },
+  "progSearchHint": "Search topics",
+  "@progSearchHint": {
+    "description": "Course topic search hint."
+  },
+  "progViewGroups": "Groups",
+  "@progViewGroups": {
+    "description": "Course view toggle: thematic groups."
+  },
+  "progViewOrder": "Programme order",
+  "@progViewOrder": {
+    "description": "Course view toggle: original programme order."
+  },
+  "progStatusAvailable": "Available",
+  "@progStatusAvailable": {
+    "description": "Topic status: material exists."
+  },
+  "progStatusPartial": "Partly available",
+  "@progStatusPartial": {
+    "description": "Topic status: partial material exists."
+  },
+  "progStatusPreparing": "In preparation",
+  "@progStatusPreparing": {
+    "description": "Topic status: not ready yet."
+  },
+  "progTopicsCount": "{count, plural, =1{1 topic} other{{count} topics}}",
+  "@progTopicsCount": {
+    "description": "Number of course topics.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "progSummary": "Available: {available} · Partial: {partial} · In preparation: {preparing}",
+  "@progSummary": {
+    "description": "Course status summary.",
+    "placeholders": {
+      "available": {
+        "type": "int"
+      },
+      "partial": {
+        "type": "int"
+      },
+      "preparing": {
+        "type": "int"
+      }
+    }
+  },
+  "progTitlesUzOnly": "Topic titles are shown as in the original programme (Uzbek); translation is in preparation.",
+  "@progTitlesUzOnly": {
+    "description": "Note: topic titles are in the original Uzbek programme."
+  },
+  "progMaterials": "Available materials",
+  "@progMaterials": {
+    "description": "Sheet title: existing materials for a topic."
+  },
+  "progPartialNote": "These materials only partly cover the topic.",
+  "@progPartialNote": {
+    "description": "Note: linked materials only partly cover the topic."
+  },
+  "progPreparingNote": "Material for this topic is in preparation.",
+  "@progPreparingNote": {
+    "description": "Note: no material for this topic yet."
+  },
+  "progNoResults": "No topics found",
+  "@progNoResults": {
+    "description": "Course search: nothing found."
+  },
+  "progTests": "Existing tests: forensic chemistry",
+  "@progTests": {
+    "description": "Course: link to existing forensic chemistry tests."
+  },
+  "progProfPrep": "Professional training",
+  "@progProfPrep": {
+    "description": "Section title in the forensic chemistry area."
+  },
+  "progGroup1": "Foundations of forensic chemistry and toxicology",
+  "@progGroup1": {
+    "description": "Course thematic group 1."
+  },
+  "progGroup2": "Biological samples and sample preparation",
+  "@progGroup2": {
+    "description": "Course thematic group 2."
+  },
+  "progGroup3": "Extraction, isolation and clean-up methods",
+  "@progGroup3": {
+    "description": "Course thematic group 3."
+  },
+  "progGroup4": "Analytical methods and validation",
+  "@progGroup4": {
+    "description": "Course thematic group 4."
+  },
+  "progGroup5": "Narcotics, psychotropic substances and medicines",
+  "@progGroup5": {
+    "description": "Course thematic group 5."
+  },
+  "progGroup6": "Toxic gases, metals and biological objects",
+  "@progGroup6": {
+    "description": "Course thematic group 6."
+  },
+  "progGroup7": "Pesticides, precursors and other special analyses",
+  "@progGroup7": {
+    "description": "Course thematic group 7."
+  },
+  "areasTitle": "Fields of expertise",
+  "@areasTitle": {
+    "description": "Mutaxassis home: fields of expertise entry and screen title."
+  },
+  "areasHomeBody": "Forensic medicine, chemistry, biology, histology, criminalistics and more",
+  "@areasHomeBody": {
+    "description": "Mutaxassis home: fields of expertise card body."
+  },
+  "areasIntro": "Choose a field: materials, tools and courses are here.",
+  "@areasIntro": {
+    "description": "Fields of expertise screen: intro."
+  },
+  "areaHasMaterials": "Materials available",
+  "@areaHasMaterials": {
+    "description": "Field of expertise: materials exist."
+  },
+  "mdTitle": "Methods and instruments",
+  "@mdTitle": {
+    "description": "Mutaxassis home: methods and instruments entry title."
+  },
+  "mdHomeBody": "Methods and SOPs, equipment, virtual autopsy, GC-MS",
+  "@mdHomeBody": {
+    "description": "Mutaxassis home: methods and instruments card body."
+  },
+  "mdIntro": "Analytical methods, instruments and how to use them.",
+  "@mdIntro": {
+    "description": "Methods and instruments screen: intro."
+  },
+  "refsTitle": "Reference",
+  "@refsTitle": {
+    "description": "Mutaxassis home: reference section title."
+  },
+  "libraryGroupNorms": "Norms and documents",
+  "@libraryGroupNorms": {
+    "description": "Library hub: group of norms and documents."
+  },
+  "libraryGroupEvidence": "Evidence and scientific sources",
+  "@libraryGroupEvidence": {
+    "description": "Library hub: group of evidence and scientific sources."
+  },
+  "libraryGroupMore": "Training and community",
+  "@libraryGroupMore": {
+    "description": "Library hub: group of training and community items."
+  },
+  "librarySearchHint": "Search the library: substance, method, reagent, source",
+  "@librarySearchHint": {
+    "description": "Library hub: search field hint."
+  },
+  "libraryUnitSubstances": "{count, plural, =1{1 substance} other{{count} substances}}",
+  "@libraryUnitSubstances": {
+    "description": "Library card unit: substances.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "libraryUnitMethods": "{count, plural, =1{1 method} other{{count} methods}}",
+  "@libraryUnitMethods": {
+    "description": "Library card unit: methods.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "libraryUnitReagents": "{count, plural, =1{1 reagent} other{{count} reagents}}",
+  "@libraryUnitReagents": {
+    "description": "Library card unit: reagents.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "libraryUnitTests": "{count, plural, =1{1 test} other{{count} tests}}",
+  "@libraryUnitTests": {
+    "description": "Library card unit: screening tests.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "libraryUnitSpecimens": "{count, plural, =1{1 specimen} other{{count} specimens}}",
+  "@libraryUnitSpecimens": {
+    "description": "Library card unit: specimens.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "libraryUnitTerms": "{count, plural, =1{1 term} other{{count} terms}}",
+  "@libraryUnitTerms": {
+    "description": "Library card unit: glossary terms.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "libraryUnitDocuments": "{count, plural, =1{1 document} other{{count} documents}}",
+  "@libraryUnitDocuments": {
+    "description": "Library card unit: documents.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "libraryUnitGuidelines": "{count, plural, =1{1 guideline} other{{count} guidelines}}",
+  "@libraryUnitGuidelines": {
+    "description": "Library card unit: guidelines.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "libraryUnitStudies": "{count, plural, =1{1 study} other{{count} studies}}",
+  "@libraryUnitStudies": {
+    "description": "Library card unit: research records.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "libraryUnitSources": "{count, plural, =1{1 source} other{{count} sources}}",
+  "@libraryUnitSources": {
+    "description": "Library card unit: sources.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "libraryUnitConflicts": "{count, plural, =1{1 conflict} other{{count} conflicts}}",
+  "@libraryUnitConflicts": {
+    "description": "Library card unit: evidence conflicts.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "libraryUnitQuestions": "{count, plural, =1{1 question} other{{count} questions}}",
+  "@libraryUnitQuestions": {
+    "description": "Library card unit: court questions.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   }
 }

@@ -5694,7 +5694,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String disciplinesComingSoon(int count) {
-    return 'Coming soon ($count)';
+    return 'In preparation ($count)';
   }
 
   @override
@@ -13998,4 +13998,267 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get teacherSectionMore => 'More tools';
+
+  @override
+  String get progListTitle => 'Learning programmes';
+
+  @override
+  String get progListIntro =>
+      'Specialisation courses: topic catalogue and available materials.';
+
+  @override
+  String get progTkTitle => 'Toxicological chemistry';
+
+  @override
+  String get progTkSubtitle =>
+      'Specialisation course for forensic medical expert-chemists';
+
+  @override
+  String get progSearchHint => 'Search topics';
+
+  @override
+  String get progViewGroups => 'Groups';
+
+  @override
+  String get progViewOrder => 'Programme order';
+
+  @override
+  String get progStatusAvailable => 'Available';
+
+  @override
+  String get progStatusPartial => 'Partly available';
+
+  @override
+  String get progStatusPreparing => 'In preparation';
+
+  @override
+  String progTopicsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count topics',
+      one: '1 topic',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String progSummary(int available, int partial, int preparing) {
+    return 'Available: $available · Partial: $partial · In preparation: $preparing';
+  }
+
+  @override
+  String get progTitlesUzOnly =>
+      'Topic titles are shown as in the original programme (Uzbek); translation is in preparation.';
+
+  @override
+  String get progMaterials => 'Available materials';
+
+  @override
+  String get progPartialNote => 'These materials only partly cover the topic.';
+
+  @override
+  String get progPreparingNote => 'Material for this topic is in preparation.';
+
+  @override
+  String get progNoResults => 'No topics found';
+
+  @override
+  String get progTests => 'Existing tests: forensic chemistry';
+
+  @override
+  String get progProfPrep => 'Professional training';
+
+  @override
+  String get progGroup1 => 'Foundations of forensic chemistry and toxicology';
+
+  @override
+  String get progGroup2 => 'Biological samples and sample preparation';
+
+  @override
+  String get progGroup3 => 'Extraction, isolation and clean-up methods';
+
+  @override
+  String get progGroup4 => 'Analytical methods and validation';
+
+  @override
+  String get progGroup5 => 'Narcotics, psychotropic substances and medicines';
+
+  @override
+  String get progGroup6 => 'Toxic gases, metals and biological objects';
+
+  @override
+  String get progGroup7 => 'Pesticides, precursors and other special analyses';
+
+  @override
+  String get areasTitle => 'Fields of expertise';
+
+  @override
+  String get areasHomeBody =>
+      'Forensic medicine, chemistry, biology, histology, criminalistics and more';
+
+  @override
+  String get areasIntro =>
+      'Choose a field: materials, tools and courses are here.';
+
+  @override
+  String get areaHasMaterials => 'Materials available';
+
+  @override
+  String get mdTitle => 'Methods and instruments';
+
+  @override
+  String get mdHomeBody =>
+      'Methods and SOPs, equipment, virtual autopsy, GC-MS';
+
+  @override
+  String get mdIntro => 'Analytical methods, instruments and how to use them.';
+
+  @override
+  String get refsTitle => 'Reference';
+
+  @override
+  String get libraryGroupNorms => 'Norms and documents';
+
+  @override
+  String get libraryGroupEvidence => 'Evidence and scientific sources';
+
+  @override
+  String get libraryGroupMore => 'Training and community';
+
+  @override
+  String get librarySearchHint =>
+      'Search the library: substance, method, reagent, source';
+
+  @override
+  String libraryUnitSubstances(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count substances',
+      one: '1 substance',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String libraryUnitMethods(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count methods',
+      one: '1 method',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String libraryUnitReagents(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count reagents',
+      one: '1 reagent',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String libraryUnitTests(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count tests',
+      one: '1 test',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String libraryUnitSpecimens(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count specimens',
+      one: '1 specimen',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String libraryUnitTerms(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count terms',
+      one: '1 term',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String libraryUnitDocuments(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count documents',
+      one: '1 document',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String libraryUnitGuidelines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count guidelines',
+      one: '1 guideline',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String libraryUnitStudies(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count studies',
+      one: '1 study',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String libraryUnitSources(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sources',
+      one: '1 source',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String libraryUnitConflicts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count conflicts',
+      one: '1 conflict',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String libraryUnitQuestions(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count questions',
+      one: '1 question',
+    );
+    return '$_temp0';
+  }
 }

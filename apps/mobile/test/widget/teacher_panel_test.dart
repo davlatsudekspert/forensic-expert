@@ -22,7 +22,7 @@ void main() {
     await tester.pumpAndSettle();
   }
 
-  testWidgets('ustoz rejimi: «Ustoz stolim» — har amal 1 bosishda', (
+  testWidgets('ustoz rejimi: «Ustoz boshqaruvi» — har amal 1 bosishda', (
     tester,
   ) async {
     await pumpApp(
@@ -30,7 +30,7 @@ void main() {
       settings: completedSettings(lang: 'uz', mode: UserMode.teacher),
     );
     expect(find.byKey(const Key('desk.teacher')), findsOneWidget);
-    expect(find.text('Ustoz stolim'), findsOneWidget);
+    expect(find.text('Ustoz boshqaruvi'), findsOneWidget);
     expect(find.text('USTOZ MINBARI'), findsOneWidget);
     expect(find.text('Ma’ruza prezentatsiyalari'), findsOneWidget);
     // Alohida «Ustoz paneli» kartasi yo‘q: stolning o‘zi panel.
@@ -86,7 +86,7 @@ void main() {
         ],
       );
       expect(find.byKey(const Key('desk.teacher')), findsNothing);
-      expect(find.text('Ustoz stolim'), findsNothing);
+      expect(find.text('Ustoz boshqaruvi'), findsNothing);
     });
 
     testWidgets('${mode.name}: /teacher marshruti yopiq', (tester) async {

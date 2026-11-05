@@ -129,6 +129,13 @@ xcrun altool --validate-app -f "$IPA" -t ios \
   --apiKey "$ASC_KEY_ID" --apiIssuer "$ASC_ISSUER_ID" \
   || { echo "::error::App Store validation failed"; exit 1; }
 
+# SKIP_UPLOAD=true: IPA faqat artefakt sifatida qoladi (TestFlight/App Store'ga
+# YUKLANMAYDI) — egasi qarori, 2026-11-05.
+if [ "${SKIP_UPLOAD:-}" = "true" ]; then
+  rm -f "$HOME/.appstoreconnect/private_keys/AuthKey_${ASC_KEY_ID}.p8"
+  echo "SKIP_UPLOAD=true: IPA tayyor, App Store Connect'ga yuklanmadi: $IPA"
+  exit 0
+fi
 xcrun altool --upload-app -f "$IPA" -t ios \
   --apiKey "$ASC_KEY_ID" --apiIssuer "$ASC_ISSUER_ID"
 rm -f "$HOME/.appstoreconnect/private_keys/AuthKey_${ASC_KEY_ID}.p8"

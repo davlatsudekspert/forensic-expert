@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../app/guidelines.dart' show guidelinesProvider;
+import '../../../app/programs.dart' show toxChemProgramId;
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
 import '../../../app/study.dart' show studyCatalogProvider;
@@ -20,6 +21,7 @@ import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/learn/study_models.dart' show StudyDeckKind;
 import '../../../domain/library/library_models.dart';
 import '../../../domain/plan/plan_models.dart' show ProFeature;
+import '../../common/entry_tile.dart';
 import '../../disciplines/presentation/disciplines_screens.dart'
     show DisciplineLessonsSection;
 import '../../knowledge/knowledge_strings.dart';
@@ -201,6 +203,19 @@ class ModuleHubScreen extends ConsumerWidget {
                       label: l.moduleBiochemistry,
                       onTap: () => context.push(Routes.biochemistry),
                     ),
+                  // «Kasbiy tayyorgarlik» → «Toksikologik kimyo» ixtisoslashtirish
+                  // kursi (egasi, 2026-11-05): Sud-kimyoviy ekspertiza ichida.
+                  if (category == ToolCategory.toxicology) ...[
+                    FeSectionHeader(l.progProfPrep),
+                    EntryTile(
+                      key: const Key('moduleHub.program.toxChem'),
+                      icon: Icons.school_outlined,
+                      title: l.progTkTitle,
+                      body: l.progTkSubtitle,
+                      onTap: () =>
+                          context.push(Routes.program(toxChemProgramId)),
+                    ),
+                  ],
                   // Darslar (prezentatsiya + guruh testi): Ustoz/Mutaxassis
                   // rejimida; kurslar kirish qoidasi ichida.
                   if (category == ToolCategory.toxicology)

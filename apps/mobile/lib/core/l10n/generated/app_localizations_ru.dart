@@ -5708,7 +5708,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String disciplinesComingSoon(int count) {
-    return 'Скоро ($count)';
+    return 'Готовится ($count)';
   }
 
   @override
@@ -14054,4 +14054,287 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get teacherSectionMore => 'Другие возможности';
+
+  @override
+  String get progListTitle => 'Учебные программы';
+
+  @override
+  String get progListIntro =>
+      'Курсы специализации: каталог тем и имеющиеся материалы.';
+
+  @override
+  String get progTkTitle => 'Токсикологическая химия';
+
+  @override
+  String get progTkSubtitle =>
+      'Курс специализации по специальности «судебно-медицинский эксперт-химик»';
+
+  @override
+  String get progSearchHint => 'Поиск по темам';
+
+  @override
+  String get progViewGroups => 'Группы';
+
+  @override
+  String get progViewOrder => 'Порядок программы';
+
+  @override
+  String get progStatusAvailable => 'Есть';
+
+  @override
+  String get progStatusPartial => 'Частично есть';
+
+  @override
+  String get progStatusPreparing => 'Готовится';
+
+  @override
+  String progTopicsCount(int count) {
+    return '$count тем';
+  }
+
+  @override
+  String progSummary(int available, int partial, int preparing) {
+    return 'Есть: $available · Частично: $partial · Готовится: $preparing';
+  }
+
+  @override
+  String get progTitlesUzOnly =>
+      'Названия тем даны как в исходной программе (на узбекском); перевод готовится.';
+
+  @override
+  String get progMaterials => 'Имеющиеся материалы';
+
+  @override
+  String get progPartialNote => 'Эти материалы лишь частично охватывают тему.';
+
+  @override
+  String get progPreparingNote => 'Материал по этой теме готовится.';
+
+  @override
+  String get progNoResults => 'Тема не найдена';
+
+  @override
+  String get progTests => 'Имеющиеся тесты: судебная химия';
+
+  @override
+  String get progProfPrep => 'Профессиональная подготовка';
+
+  @override
+  String get progGroup1 =>
+      'Основы судебно-химической экспертизы и токсикологии';
+
+  @override
+  String get progGroup2 => 'Биологические образцы и подготовка к анализу';
+
+  @override
+  String get progGroup3 => 'Методы экстракции, выделения и очистки';
+
+  @override
+  String get progGroup4 => 'Аналитические методы и валидация';
+
+  @override
+  String get progGroup5 =>
+      'Наркотические средства, психотропные вещества и лекарственные препараты';
+
+  @override
+  String get progGroup6 => 'Токсичные газы, металлы и биологические объекты';
+
+  @override
+  String get progGroup7 => 'Пестициды, прекурсоры и другие специальные анализы';
+
+  @override
+  String get areasTitle => 'Направления экспертизы';
+
+  @override
+  String get areasHomeBody =>
+      'Судебная медицина, судебная химия, биология, гистология, криминалистика и др.';
+
+  @override
+  String get areasIntro =>
+      'Выберите направление: материалы, инструменты и курсы.';
+
+  @override
+  String get areaHasMaterials => 'Есть материалы';
+
+  @override
+  String get mdTitle => 'Методы и приборы';
+
+  @override
+  String get mdHomeBody =>
+      'Методы и SOP, оборудование, виртуальная аутопсия, GC-MS';
+
+  @override
+  String get mdIntro => 'Методы анализа, приборы и порядок работы с ними.';
+
+  @override
+  String get refsTitle => 'Справочники';
+
+  @override
+  String get libraryGroupNorms => 'Нормы и документы';
+
+  @override
+  String get libraryGroupEvidence => 'Доказательства и научные источники';
+
+  @override
+  String get libraryGroupMore => 'Подготовка и сообщество';
+
+  @override
+  String get librarySearchHint =>
+      'Поиск в библиотеке: вещество, метод, реагент, источник';
+
+  @override
+  String libraryUnitSubstances(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count вещества',
+      many: '$count веществ',
+      few: '$count вещества',
+      one: '$count вещество',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String libraryUnitMethods(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count метода',
+      many: '$count методов',
+      few: '$count метода',
+      one: '$count метод',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String libraryUnitReagents(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count реагента',
+      many: '$count реагентов',
+      few: '$count реагента',
+      one: '$count реагент',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String libraryUnitTests(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count теста',
+      many: '$count тестов',
+      few: '$count теста',
+      one: '$count тест',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String libraryUnitSpecimens(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count образца',
+      many: '$count образцов',
+      few: '$count образца',
+      one: '$count образец',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String libraryUnitTerms(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count термина',
+      many: '$count терминов',
+      few: '$count термина',
+      one: '$count термин',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String libraryUnitDocuments(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count документа',
+      many: '$count документов',
+      few: '$count документа',
+      one: '$count документ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String libraryUnitGuidelines(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count руководства',
+      many: '$count руководств',
+      few: '$count руководства',
+      one: '$count руководство',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String libraryUnitStudies(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count исследования',
+      many: '$count исследований',
+      few: '$count исследования',
+      one: '$count исследование',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String libraryUnitSources(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count источника',
+      many: '$count источников',
+      few: '$count источника',
+      one: '$count источник',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String libraryUnitConflicts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count противоречия',
+      many: '$count противоречий',
+      few: '$count противоречия',
+      one: '$count противоречие',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String libraryUnitQuestions(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count вопроса',
+      many: '$count вопросов',
+      few: '$count вопроса',
+      one: '$count вопрос',
+    );
+    return '$_temp0';
+  }
 }

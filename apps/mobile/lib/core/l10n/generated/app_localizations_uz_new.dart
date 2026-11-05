@@ -12478,4 +12478,168 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   @override
   String get teacherSectionMore => toUzNewAlphabet(super.teacherSectionMore);
 
+  @override
+  String get progListTitle => toUzNewAlphabet(super.progListTitle);
+
+  @override
+  String get progListIntro => toUzNewAlphabet(super.progListIntro);
+
+  @override
+  String get progTkTitle => toUzNewAlphabet(super.progTkTitle);
+
+  @override
+  String get progTkSubtitle => toUzNewAlphabet(super.progTkSubtitle);
+
+  @override
+  String get progSearchHint => toUzNewAlphabet(super.progSearchHint);
+
+  @override
+  String get progViewGroups => toUzNewAlphabet(super.progViewGroups);
+
+  @override
+  String get progViewOrder => toUzNewAlphabet(super.progViewOrder);
+
+  @override
+  String get progStatusAvailable => toUzNewAlphabet(super.progStatusAvailable);
+
+  @override
+  String get progStatusPartial => toUzNewAlphabet(super.progStatusPartial);
+
+  @override
+  String get progStatusPreparing => toUzNewAlphabet(super.progStatusPreparing);
+
+  @override
+  String progTopicsCount(int count) =>
+      toUzNewAlphabet(super.progTopicsCount(count));
+
+  @override
+  String progSummary(int available, int partial, int preparing) =>
+      toUzNewAlphabet(super.progSummary(available, partial, preparing));
+
+  @override
+  String get progTitlesUzOnly => toUzNewAlphabet(super.progTitlesUzOnly);
+
+  @override
+  String get progMaterials => toUzNewAlphabet(super.progMaterials);
+
+  @override
+  String get progPartialNote => toUzNewAlphabet(super.progPartialNote);
+
+  @override
+  String get progPreparingNote => toUzNewAlphabet(super.progPreparingNote);
+
+  @override
+  String get progNoResults => toUzNewAlphabet(super.progNoResults);
+
+  @override
+  String get progTests => toUzNewAlphabet(super.progTests);
+
+  @override
+  String get progProfPrep => toUzNewAlphabet(super.progProfPrep);
+
+  @override
+  String get progGroup1 => toUzNewAlphabet(super.progGroup1);
+
+  @override
+  String get progGroup2 => toUzNewAlphabet(super.progGroup2);
+
+  @override
+  String get progGroup3 => toUzNewAlphabet(super.progGroup3);
+
+  @override
+  String get progGroup4 => toUzNewAlphabet(super.progGroup4);
+
+  @override
+  String get progGroup5 => toUzNewAlphabet(super.progGroup5);
+
+  @override
+  String get progGroup6 => toUzNewAlphabet(super.progGroup6);
+
+  @override
+  String get progGroup7 => toUzNewAlphabet(super.progGroup7);
+
+  @override
+  String get areasTitle => toUzNewAlphabet(super.areasTitle);
+
+  @override
+  String get areasHomeBody => toUzNewAlphabet(super.areasHomeBody);
+
+  @override
+  String get areasIntro => toUzNewAlphabet(super.areasIntro);
+
+  @override
+  String get areaHasMaterials => toUzNewAlphabet(super.areaHasMaterials);
+
+  @override
+  String get mdTitle => toUzNewAlphabet(super.mdTitle);
+
+  @override
+  String get mdHomeBody => toUzNewAlphabet(super.mdHomeBody);
+
+  @override
+  String get mdIntro => toUzNewAlphabet(super.mdIntro);
+
+  @override
+  String get refsTitle => toUzNewAlphabet(super.refsTitle);
+
+  @override
+  String get libraryGroupNorms => toUzNewAlphabet(super.libraryGroupNorms);
+
+  @override
+  String get libraryGroupEvidence => toUzNewAlphabet(super.libraryGroupEvidence);
+
+  @override
+  String get libraryGroupMore => toUzNewAlphabet(super.libraryGroupMore);
+
+  @override
+  String get librarySearchHint => toUzNewAlphabet(super.librarySearchHint);
+
+  @override
+  String libraryUnitSubstances(int count) =>
+      toUzNewAlphabet(super.libraryUnitSubstances(count));
+
+  @override
+  String libraryUnitMethods(int count) =>
+      toUzNewAlphabet(super.libraryUnitMethods(count));
+
+  @override
+  String libraryUnitReagents(int count) =>
+      toUzNewAlphabet(super.libraryUnitReagents(count));
+
+  @override
+  String libraryUnitTests(int count) =>
+      toUzNewAlphabet(super.libraryUnitTests(count));
+
+  @override
+  String libraryUnitSpecimens(int count) =>
+      toUzNewAlphabet(super.libraryUnitSpecimens(count));
+
+  @override
+  String libraryUnitTerms(int count) =>
+      toUzNewAlphabet(super.libraryUnitTerms(count));
+
+  @override
+  String libraryUnitDocuments(int count) =>
+      toUzNewAlphabet(super.libraryUnitDocuments(count));
+
+  @override
+  String libraryUnitGuidelines(int count) =>
+      toUzNewAlphabet(super.libraryUnitGuidelines(count));
+
+  @override
+  String libraryUnitStudies(int count) =>
+      toUzNewAlphabet(super.libraryUnitStudies(count));
+
+  @override
+  String libraryUnitSources(int count) =>
+      toUzNewAlphabet(super.libraryUnitSources(count));
+
+  @override
+  String libraryUnitConflicts(int count) =>
+      toUzNewAlphabet(super.libraryUnitConflicts(count));
+
+  @override
+  String libraryUnitQuestions(int count) =>
+      toUzNewAlphabet(super.libraryUnitQuestions(count));
+
 }

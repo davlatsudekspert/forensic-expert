@@ -5685,7 +5685,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String disciplinesComingSoon(int count) {
-    return 'Tez orada ($count)';
+    return 'Tayyorlanmoqda ($count)';
   }
 
   @override
@@ -12345,7 +12345,7 @@ class AppLocalizationsUz extends AppLocalizations {
       'Biologik suyuqliklar va biokimyoviy ko‘rsatkichlar';
 
   @override
-  String get teacherDeskTitle => 'Ustoz stolim';
+  String get teacherDeskTitle => 'Ustoz boshqaruvi';
 
   @override
   String get teacherDeskLessonsTitle => 'Ma’ruza prezentatsiyalari';
@@ -13936,4 +13936,191 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get teacherSectionMore => 'Boshqa imkoniyatlar';
+
+  @override
+  String get progListTitle => 'O‘quv dasturlari';
+
+  @override
+  String get progListIntro =>
+      'Ixtisoslashtirish kurslari: mavzular katalogi va mavjud materiallar.';
+
+  @override
+  String get progTkTitle => 'Toksikologik kimyo';
+
+  @override
+  String get progTkSubtitle =>
+      'Sud-tibbiy ekspert-kimyogar mutaxassisligi bo‘yicha ixtisoslashtirish kursi';
+
+  @override
+  String get progSearchHint => 'Mavzu bo‘yicha qidiring';
+
+  @override
+  String get progViewGroups => 'Guruhlar';
+
+  @override
+  String get progViewOrder => 'Dastur tartibi';
+
+  @override
+  String get progStatusAvailable => 'Mavjud';
+
+  @override
+  String get progStatusPartial => 'Qisman mavjud';
+
+  @override
+  String get progStatusPreparing => 'Tayyorlanmoqda';
+
+  @override
+  String progTopicsCount(int count) {
+    return '$count ta mavzu';
+  }
+
+  @override
+  String progSummary(int available, int partial, int preparing) {
+    return 'Mavjud: $available · Qisman: $partial · Tayyorlanmoqda: $preparing';
+  }
+
+  @override
+  String get progTitlesUzOnly =>
+      'Mavzu nomlari asl dasturdagidek o‘zbek tilida; tarjimasi tayyorlanmoqda.';
+
+  @override
+  String get progMaterials => 'Mavjud materiallar';
+
+  @override
+  String get progPartialNote => 'Quyidagi materiallar mavzuni qisman qamraydi.';
+
+  @override
+  String get progPreparingNote => 'Bu mavzu bo‘yicha material tayyorlanmoqda.';
+
+  @override
+  String get progNoResults => 'Mavzu topilmadi';
+
+  @override
+  String get progTests => 'Mavjud testlar: Sud-kimyo';
+
+  @override
+  String get progProfPrep => 'Kasbiy tayyorgarlik';
+
+  @override
+  String get progGroup1 => 'Sud-kimyo ekspertizasi va toksikologiya asoslari';
+
+  @override
+  String get progGroup2 => 'Biologik namunalar va tahlilga tayyorlash';
+
+  @override
+  String get progGroup3 => 'Ekstraksiya, ajratish va tozalash usullari';
+
+  @override
+  String get progGroup4 => 'Analitik tekshiruv usullari va validatsiya';
+
+  @override
+  String get progGroup5 =>
+      'Giyohvandlik vositalari, psixotrop moddalar va dori preparatlari';
+
+  @override
+  String get progGroup6 => 'Zaharli gazlar, metallar va biologik obyektlar';
+
+  @override
+  String get progGroup7 =>
+      'Pestitsidlar, prekursorlar va boshqa maxsus tahlillar';
+
+  @override
+  String get areasTitle => 'Ekspertiza yo‘nalishlari';
+
+  @override
+  String get areasHomeBody =>
+      'Sud tibbiyoti, sud-kimyo, sud-biologiya, gistologiya, kriminalistika va boshqalar';
+
+  @override
+  String get areasIntro =>
+      'Yo‘nalishni tanlang: mavjud materiallar, vositalar va kurslar shu yerda.';
+
+  @override
+  String get areaHasMaterials => 'Materiallar bor';
+
+  @override
+  String get mdTitle => 'Usullar va apparatlar';
+
+  @override
+  String get mdHomeBody =>
+      'Usullar va SOP, asbob-uskunalar, virtual autopsiya, GC-MS';
+
+  @override
+  String get mdIntro => 'Tahlil usullari, apparatlar va ularning ish tartibi.';
+
+  @override
+  String get refsTitle => 'Ma’lumotnomalar';
+
+  @override
+  String get libraryGroupNorms => 'Me’yorlar va hujjatlar';
+
+  @override
+  String get libraryGroupEvidence => 'Dalillar va ilmiy manbalar';
+
+  @override
+  String get libraryGroupMore => 'Tayyorgarlik va hamjamiyat';
+
+  @override
+  String get librarySearchHint =>
+      'Kutubxonadan qidiring: modda, usul, reagent, manba';
+
+  @override
+  String libraryUnitSubstances(int count) {
+    return '$count modda';
+  }
+
+  @override
+  String libraryUnitMethods(int count) {
+    return '$count usul';
+  }
+
+  @override
+  String libraryUnitReagents(int count) {
+    return '$count reagent';
+  }
+
+  @override
+  String libraryUnitTests(int count) {
+    return '$count test';
+  }
+
+  @override
+  String libraryUnitSpecimens(int count) {
+    return '$count namuna';
+  }
+
+  @override
+  String libraryUnitTerms(int count) {
+    return '$count atama';
+  }
+
+  @override
+  String libraryUnitDocuments(int count) {
+    return '$count hujjat';
+  }
+
+  @override
+  String libraryUnitGuidelines(int count) {
+    return '$count yo‘riqnoma';
+  }
+
+  @override
+  String libraryUnitStudies(int count) {
+    return '$count tadqiqot';
+  }
+
+  @override
+  String libraryUnitSources(int count) {
+    return '$count manba';
+  }
+
+  @override
+  String libraryUnitConflicts(int count) {
+    return '$count ziddiyat';
+  }
+
+  @override
+  String libraryUnitQuestions(int count) {
+    return '$count savol';
+  }
 }

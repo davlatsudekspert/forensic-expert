@@ -14,6 +14,7 @@ import '../../../core/widgets/fe_components.dart';
 import '../daily_question.dart';
 import '../workbench.dart';
 import 'home_desks.dart' show DailyQuestionCard;
+import 'panel_banner.dart';
 
 /// Talaba bosh sahifasi («Mening akademiyam», egasi qarori, 2026-11-04) uchun
 /// alohida vidjetlar. FAQAT `UserMode.student`: Ustoz va Mutaxassis ekranlari
@@ -88,112 +89,19 @@ class StudentHomeHeader extends StatelessWidget {
   }
 }
 
-/// Banner: «Mening akademiyam» + «Bugun nimani o‘rganamiz?». Chapda emblema
-/// (shaffof PNG, bo‘sh chetlari kesilgan), radius 20, oltin chegara. Ranglar —
-/// faqat mavzu tokenlaridan (oq va qora temada ham to‘g‘ri).
+/// Banner: «Mening akademiyam» + «Bugun nimani o‘rganamiz?». Ustoz banneri
+/// bilan bir xil [PanelBanner] dizayni (oq/qora mavzuga mos).
 class StudentAcademyBanner extends StatelessWidget {
   const StudentAcademyBanner({super.key});
-
-  // Emblema fayli (512²) ichidagi kerakli kadr: bo‘sh shaffof chetlar kesiladi.
-  // Kadr nisbati 1075:940; rasm kadr kengligining 142.9 % ida, chapga 20.6 %,
-  // yuqoriga 29.8 % (kadr balandligidan) siljitiladi (tasdiqlangan maket).
-  static const _frameAspect = 1075 / 940;
-  static const _imageScale = 1.429;
-  static const _shiftX = 0.206;
-  static const _shiftY = 0.298;
 
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
-    final c = FeTheme.of(context);
-    final t = Theme.of(context).textTheme;
-    final scaler = MediaQuery.textScalerOf(context).clamp(maxScaleFactor: 1.5);
-    return LayoutBuilder(
-      builder: (context, box) {
-        final emblemW = (box.maxWidth * 0.31).clamp(88.0, 114.0);
-        final emblemH = emblemW / _frameAspect;
-        return DecoratedBox(
-          decoration: BoxDecoration(
-            color: c.brandContainer,
-            borderRadius: BorderRadius.circular(FeRadius.card),
-            border: Border.all(color: c.accent.withValues(alpha: 0.6)),
-            boxShadow: FeShadow.card(Theme.of(context).brightness),
-          ),
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(
-              FeSpace.sm,
-              FeSpace.xs + 2,
-              FeSpace.md,
-              FeSpace.xs + 2,
-            ),
-            child: Row(
-              children: [
-                ExcludeSemantics(
-                  child: SizedBox(
-                    width: emblemW,
-                    height: emblemH,
-                    child: Stack(
-                      clipBehavior: Clip.hardEdge,
-                      children: [
-                        Positioned(
-                          left: -_shiftX * emblemW,
-                          top: -_shiftY * emblemH,
-                          width: _imageScale * emblemW,
-                          child: Image.asset(
-                            'assets/brand/student_academy_emblem.png',
-                            fit: BoxFit.contain,
-                            excludeFromSemantics: true,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                const SizedBox(width: FeSpace.xs),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Semantics(
-                        header: true,
-                        child: Text(
-                          l.studentDeskTitle,
-                          textScaler: scaler,
-                          style: t.headlineSmall?.copyWith(
-                            color: c.textPrimary,
-                            fontSize: 26,
-                            height: 1.12,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 6),
-                      ExcludeSemantics(
-                        child: Container(
-                          width: 36,
-                          height: 2,
-                          decoration: BoxDecoration(
-                            color: c.accent,
-                            borderRadius: BorderRadius.circular(2),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 6),
-                      Text(
-                        l.homeGreetingStudent,
-                        textScaler: scaler,
-                        style: t.bodyMedium?.copyWith(
-                          color: c.textSecondary,
-                          height: 1.3,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-        );
-      },
+    return PanelBanner(
+      key: const Key('student.banner'),
+      title: l.studentDeskTitle,
+      tagline: l.homeGreetingStudent,
+      emblem: const StudentEmblemFrame(),
     );
   }
 }

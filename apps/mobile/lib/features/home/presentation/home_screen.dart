@@ -308,38 +308,72 @@ class HomeScreen extends ConsumerWidget {
                   // Ekspert: «Ish stolim»; talaba: «O‘qish stolim» (+ kunlik
                   // ma’lumot/savol). Ustoz bosh sahifasi o‘zgarmaydi.
                   // Talaba: o‘z paneli birinchi (egasi so‘rovi, 2026-11-02).
-                  // «Bilim va malakani baholash» — faqat Mutaxassisda, eng
-                  // tepada (egasi, 2026-11-02).
+                  // «Bilim va malakani baholash» — faqat Mutaxassisda: endi
+                  // yuqori qismda (qidiruvdan keyin, egasi, 2026-11-05).
+                  // Mutaxassis (egasi, 2026-11-05): ixcham tartib — bitta kirish
+                  // «Ekspertiza yo‘nalishlari», «Ish stolim», «Barcha
+                  // sud-ekspert fanlari», «Usullar va apparatlar»,
+                  // «Ma’lumotnomalar». DNK, Virtual autopsiya va
+                  // Asbob-uskunalar o‘z yo‘nalishlarida (kontent o‘chirilmagan).
                   if (mode == UserMode.professional) ...[
                     _ResourceTile(
-                      key: const Key('home.assessment'),
-                      icon: Icons.fact_check_outlined,
-                      title: l.assessmentTitle,
-                      body: l.assessmentSubtitle,
-                      lock: ProFeature.proModules,
-                      onTap: () => context.push(Routes.assessment),
+                      key: const Key('home.areas'),
+                      icon: Icons.account_tree_outlined,
+                      title: l.areasTitle,
+                      body: l.areasHomeBody,
+                      onTap: () => context.push(Routes.areas),
                     ),
-                    const SizedBox(height: FeSpace.lg),
-                  ],
-                  if (coreTop) ...[
-                    FeSectionHeader(
-                      l.homeCoreTitle,
-                      padding: const EdgeInsets.only(bottom: FeSpace.xs),
-                    ),
-                    const _CoreDisciplinesCard(),
-                    // «Barcha fanlar» (gistologiya, kriminalistika …) —
-                    // bo‘limlar to‘ri Kutubxonada bo‘lgani uchun shu yerda.
-                    if (lean) ...[
-                      const SizedBox(height: FeSpace.sm),
-                      const _AllDisciplinesCard(),
+                    // «Asosiy fanlar» (2 ta, egasi qarori 2026-11-05) saqlangan.
+                    if (coreTop) ...[
+                      FeSectionHeader(
+                        l.homeCoreTitle,
+                        padding: const EdgeInsets.only(
+                          top: FeSpace.lg,
+                          bottom: FeSpace.xs,
+                        ),
+                      ),
+                      const _CoreDisciplinesCard(),
                     ],
                     const SizedBox(height: FeSpace.lg),
-                  ],
-                  if (mode == UserMode.professional) ...[
                     const ExpertWorkbench(),
                     const SizedBox(height: FeSpace.sm),
+                    const _AllDisciplinesCard(),
+                    const SizedBox(height: FeSpace.sm),
+                    _ResourceTile(
+                      key: const Key('home.methodsDevices'),
+                      icon: Icons.build_outlined,
+                      title: l.mdTitle,
+                      body: l.mdHomeBody,
+                      onTap: () => context.push(Routes.methodsDevices),
+                    ),
+                    FeSectionHeader(
+                      l.refsTitle,
+                      padding: const EdgeInsets.only(
+                        top: FeSpace.lg,
+                        bottom: FeSpace.xs,
+                      ),
+                    ),
+                    _ActionGrid(
+                      actions: [
+                        HomeAction._module(HomeModule.substances),
+                        HomeAction.guidelines,
+                      ],
+                    ),
+                  ] else ...[
+                    if (coreTop) ...[
+                      FeSectionHeader(
+                        l.homeCoreTitle,
+                        padding: const EdgeInsets.only(bottom: FeSpace.xs),
+                      ),
+                      const _CoreDisciplinesCard(),
+                      if (lean) ...[
+                        const SizedBox(height: FeSpace.sm),
+                        const _AllDisciplinesCard(),
+                      ],
+                      const SizedBox(height: FeSpace.lg),
+                    ],
+                    _ActionGrid(actions: actions),
                   ],
-                  _ActionGrid(actions: actions),
                   if (FeFlags.showTestFixtures) ...[
                     const SizedBox(height: FeSpace.md),
                     FeBanner(
@@ -516,6 +550,14 @@ class _StudentHome extends ConsumerWidget {
                   _ActionGrid(actions: actions),
                   gap,
                   const _AllDisciplinesCard(),
+                  gap,
+                  _ResourceTile(
+                    key: const Key('home.programs'),
+                    icon: Icons.school_outlined,
+                    title: l.progListTitle,
+                    body: l.progListIntro,
+                    onTap: () => context.push(Routes.programs),
+                  ),
                   if (FeFlags.showTestFixtures) ...[
                     const SizedBox(height: FeSpace.md),
                     FeBanner(
@@ -546,7 +588,7 @@ class _StudentHome extends ConsumerWidget {
 }
 
 /// Ustoz bosh sahifasi «Ustoz minbari» (egasi qarori, 2026-11-04).
-/// Tartib: sarlavha → banner → qidiruv → «Ustoz stolim» (5 karta + Bugungi
+/// Tartib: sarlavha → banner → qidiruv → «Ustoz boshqaruvi» (5 karta + Bugungi
 /// savol, o‘zgarishsiz `TeacherDesk`) → «Materiallar va manbalar» (Asosiy
 /// fanlar, Ilmiy kutubxona, Yo‘riqnomalar, Moddalar / Usullar / Kalkulyatorlar
 /// / AI chiplari) → «Boshqa imkoniyatlar» (Sudda so‘roq, katalog, yangi
@@ -605,6 +647,14 @@ class _TeacherHome extends ConsumerWidget {
                     body: l.guidelinesSubtitle,
                     lock: ProFeature.proModules,
                     onTap: () => context.push(Routes.guidelines),
+                  ),
+                  gap,
+                  _ResourceTile(
+                    key: const Key('home.programs'),
+                    icon: Icons.school_outlined,
+                    title: l.progListTitle,
+                    body: l.progListIntro,
+                    onTap: () => context.push(Routes.programs),
                   ),
                   gap,
                   Wrap(
@@ -1499,12 +1549,24 @@ class _HomeHero extends ConsumerWidget {
                         prominent: true,
                         onTap: () => context.push(Routes.search),
                       ),
-                      // Egasi qarori (2026-11-01): Kutubxona — pastki
-                      // menyuda, Yurisdiksiya — Profilda; tepada yangi
-                      // bo‘limlar ko‘rinadi.
+                      // Egasi qarori (2026-11-05): «YANGI BO‘LIMLAR» Asosiydan
+                      // olib tashlandi (DNK, Virtual autopsiya, Asbob-uskunalar
+                      // o‘z yo‘nalishlarida qoladi); o‘rniga — mavjud «Bilim va
+                      // malakani baholash» kartasi, undan keyin «Ustozlar va
+                      // mutaxassislar». Kutubxona — pastki menyuda,
+                      // Yurisdiksiya — Profilda.
                       const SizedBox(height: FeSpace.sm),
-                      const _NewSections(),
-                      const SizedBox(height: FeSpace.sm),
+                      if (mode == UserMode.professional) ...[
+                        _ResourceTile(
+                          key: const Key('home.assessment'),
+                          icon: Icons.fact_check_outlined,
+                          title: l.assessmentTitle,
+                          body: l.assessmentSubtitle,
+                          lock: ProFeature.proModules,
+                          onTap: () => context.push(Routes.assessment),
+                        ),
+                        const SizedBox(height: FeSpace.sm),
+                      ],
                       const _CatalogBanner(),
                     ],
                   ),

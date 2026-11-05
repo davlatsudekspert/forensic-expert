@@ -149,18 +149,25 @@ void main() {
     expect(navBar, findsOneWidget);
   });
 
-  testWidgets('Asosiy tepasida «Yangi bo‘limlar» (qidiruvdan keyin, '
-      'fanlardan oldin); Kutubxona — pastki menyuda', (tester) async {
+  testWidgets('Mutaxassis Asosiy tepasida «Bilim va malakani baholash» '
+      '(qidiruvdan keyin, katalogdan oldin), «Yangi bo‘limlar» yo‘q; '
+      'Kutubxona — pastki menyuda', (tester) async {
     await pumpApp(tester, settings: completedSettings());
-    final row = find.byKey(const Key('home.new'));
+    final row = find.byKey(const Key('home.assessment'));
     expect(row, findsOneWidget);
+    expect(find.byKey(const Key('home.new')), findsNothing);
     expect(find.byKey(const Key('home.library')), findsNothing);
+    final rowTop = tester.getTopLeft(row).dy;
     expect(
-      tester.getTopLeft(row).dy,
+      rowTop,
       greaterThan(tester.getTopLeft(find.byKey(const Key('home.search'))).dy),
     );
     expect(
-      tester.getTopLeft(row).dy,
+      rowTop,
+      lessThan(tester.getTopLeft(find.byKey(const Key('home.catalog'))).dy),
+    );
+    expect(
+      tester.getTopLeft(find.byKey(const Key('home.catalog'))).dy,
       lessThan(
         tester.getTopLeft(find.byKey(const Key('home.module.toxicology'))).dy,
       ),

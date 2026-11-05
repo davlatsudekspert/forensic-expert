@@ -13,6 +13,9 @@ abstract final class Routes {
 
   static const home = '/home';
   static const search = '/home/search';
+
+  /// Kutubxona qidiruvi (faqat kutubxona materiallari).
+  static const librarySearch = '/home/search?scope=library';
   static String searchWith(String query) =>
       Uri(path: search, queryParameters: {'q': query}).toString();
 
@@ -68,6 +71,14 @@ abstract final class Routes {
   static String homeSpecimen(String id) => '/home/specimen/$id';
   static const homeStandards = '/home/standards';
   static const disciplines = '/home/disciplines';
+
+  /// O‘quv dasturlari (ixtisoslashtirish kurslari) va kurs sahifasi.
+  static const programs = '/home/programs';
+  static String program(String id) => '/home/programs/$id';
+
+  /// Mutaxassis: «Ekspertiza yo‘nalishlari» va «Usullar va apparatlar».
+  static const areas = '/home/areas';
+  static const methodsDevices = '/home/methods-devices';
   static String discipline(String code) => '/home/disciplines/$code';
   static const jurisdictions = '/home/jurisdictions';
   static const jurisdictionSelect = '/home/jurisdictions/select';

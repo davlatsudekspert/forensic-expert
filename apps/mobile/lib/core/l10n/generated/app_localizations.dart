@@ -10260,7 +10260,7 @@ abstract class AppLocalizations {
   /// Collapsed group of disciplines without records.
   ///
   /// In en, this message translates to:
-  /// **'Coming soon ({count})'**
+  /// **'In preparation ({count})'**
   String disciplinesComingSoon(int count);
 
   /// Collapsed role picker on the mode screen.
@@ -24218,6 +24218,306 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'More tools'**
   String get teacherSectionMore;
+
+  /// Learning programmes: screen and entry title.
+  ///
+  /// In en, this message translates to:
+  /// **'Learning programmes'**
+  String get progListTitle;
+
+  /// Learning programmes: intro line.
+  ///
+  /// In en, this message translates to:
+  /// **'Specialisation courses: topic catalogue and available materials.'**
+  String get progListIntro;
+
+  /// Course title: Toxicological chemistry.
+  ///
+  /// In en, this message translates to:
+  /// **'Toxicological chemistry'**
+  String get progTkTitle;
+
+  /// Course description (no duration).
+  ///
+  /// In en, this message translates to:
+  /// **'Specialisation course for forensic medical expert-chemists'**
+  String get progTkSubtitle;
+
+  /// Course topic search hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search topics'**
+  String get progSearchHint;
+
+  /// Course view toggle: thematic groups.
+  ///
+  /// In en, this message translates to:
+  /// **'Groups'**
+  String get progViewGroups;
+
+  /// Course view toggle: original programme order.
+  ///
+  /// In en, this message translates to:
+  /// **'Programme order'**
+  String get progViewOrder;
+
+  /// Topic status: material exists.
+  ///
+  /// In en, this message translates to:
+  /// **'Available'**
+  String get progStatusAvailable;
+
+  /// Topic status: partial material exists.
+  ///
+  /// In en, this message translates to:
+  /// **'Partly available'**
+  String get progStatusPartial;
+
+  /// Topic status: not ready yet.
+  ///
+  /// In en, this message translates to:
+  /// **'In preparation'**
+  String get progStatusPreparing;
+
+  /// Number of course topics.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 topic} other{{count} topics}}'**
+  String progTopicsCount(int count);
+
+  /// Course status summary.
+  ///
+  /// In en, this message translates to:
+  /// **'Available: {available} · Partial: {partial} · In preparation: {preparing}'**
+  String progSummary(int available, int partial, int preparing);
+
+  /// Note: topic titles are in the original Uzbek programme.
+  ///
+  /// In en, this message translates to:
+  /// **'Topic titles are shown as in the original programme (Uzbek); translation is in preparation.'**
+  String get progTitlesUzOnly;
+
+  /// Sheet title: existing materials for a topic.
+  ///
+  /// In en, this message translates to:
+  /// **'Available materials'**
+  String get progMaterials;
+
+  /// Note: linked materials only partly cover the topic.
+  ///
+  /// In en, this message translates to:
+  /// **'These materials only partly cover the topic.'**
+  String get progPartialNote;
+
+  /// Note: no material for this topic yet.
+  ///
+  /// In en, this message translates to:
+  /// **'Material for this topic is in preparation.'**
+  String get progPreparingNote;
+
+  /// Course search: nothing found.
+  ///
+  /// In en, this message translates to:
+  /// **'No topics found'**
+  String get progNoResults;
+
+  /// Course: link to existing forensic chemistry tests.
+  ///
+  /// In en, this message translates to:
+  /// **'Existing tests: forensic chemistry'**
+  String get progTests;
+
+  /// Section title in the forensic chemistry area.
+  ///
+  /// In en, this message translates to:
+  /// **'Professional training'**
+  String get progProfPrep;
+
+  /// Course thematic group 1.
+  ///
+  /// In en, this message translates to:
+  /// **'Foundations of forensic chemistry and toxicology'**
+  String get progGroup1;
+
+  /// Course thematic group 2.
+  ///
+  /// In en, this message translates to:
+  /// **'Biological samples and sample preparation'**
+  String get progGroup2;
+
+  /// Course thematic group 3.
+  ///
+  /// In en, this message translates to:
+  /// **'Extraction, isolation and clean-up methods'**
+  String get progGroup3;
+
+  /// Course thematic group 4.
+  ///
+  /// In en, this message translates to:
+  /// **'Analytical methods and validation'**
+  String get progGroup4;
+
+  /// Course thematic group 5.
+  ///
+  /// In en, this message translates to:
+  /// **'Narcotics, psychotropic substances and medicines'**
+  String get progGroup5;
+
+  /// Course thematic group 6.
+  ///
+  /// In en, this message translates to:
+  /// **'Toxic gases, metals and biological objects'**
+  String get progGroup6;
+
+  /// Course thematic group 7.
+  ///
+  /// In en, this message translates to:
+  /// **'Pesticides, precursors and other special analyses'**
+  String get progGroup7;
+
+  /// Mutaxassis home: fields of expertise entry and screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Fields of expertise'**
+  String get areasTitle;
+
+  /// Mutaxassis home: fields of expertise card body.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic medicine, chemistry, biology, histology, criminalistics and more'**
+  String get areasHomeBody;
+
+  /// Fields of expertise screen: intro.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a field: materials, tools and courses are here.'**
+  String get areasIntro;
+
+  /// Field of expertise: materials exist.
+  ///
+  /// In en, this message translates to:
+  /// **'Materials available'**
+  String get areaHasMaterials;
+
+  /// Mutaxassis home: methods and instruments entry title.
+  ///
+  /// In en, this message translates to:
+  /// **'Methods and instruments'**
+  String get mdTitle;
+
+  /// Mutaxassis home: methods and instruments card body.
+  ///
+  /// In en, this message translates to:
+  /// **'Methods and SOPs, equipment, virtual autopsy, GC-MS'**
+  String get mdHomeBody;
+
+  /// Methods and instruments screen: intro.
+  ///
+  /// In en, this message translates to:
+  /// **'Analytical methods, instruments and how to use them.'**
+  String get mdIntro;
+
+  /// Mutaxassis home: reference section title.
+  ///
+  /// In en, this message translates to:
+  /// **'Reference'**
+  String get refsTitle;
+
+  /// Library hub: group of norms and documents.
+  ///
+  /// In en, this message translates to:
+  /// **'Norms and documents'**
+  String get libraryGroupNorms;
+
+  /// Library hub: group of evidence and scientific sources.
+  ///
+  /// In en, this message translates to:
+  /// **'Evidence and scientific sources'**
+  String get libraryGroupEvidence;
+
+  /// Library hub: group of training and community items.
+  ///
+  /// In en, this message translates to:
+  /// **'Training and community'**
+  String get libraryGroupMore;
+
+  /// Library hub: search field hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Search the library: substance, method, reagent, source'**
+  String get librarySearchHint;
+
+  /// Library card unit: substances.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 substance} other{{count} substances}}'**
+  String libraryUnitSubstances(int count);
+
+  /// Library card unit: methods.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 method} other{{count} methods}}'**
+  String libraryUnitMethods(int count);
+
+  /// Library card unit: reagents.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 reagent} other{{count} reagents}}'**
+  String libraryUnitReagents(int count);
+
+  /// Library card unit: screening tests.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 test} other{{count} tests}}'**
+  String libraryUnitTests(int count);
+
+  /// Library card unit: specimens.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 specimen} other{{count} specimens}}'**
+  String libraryUnitSpecimens(int count);
+
+  /// Library card unit: glossary terms.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 term} other{{count} terms}}'**
+  String libraryUnitTerms(int count);
+
+  /// Library card unit: documents.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 document} other{{count} documents}}'**
+  String libraryUnitDocuments(int count);
+
+  /// Library card unit: guidelines.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 guideline} other{{count} guidelines}}'**
+  String libraryUnitGuidelines(int count);
+
+  /// Library card unit: research records.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 study} other{{count} studies}}'**
+  String libraryUnitStudies(int count);
+
+  /// Library card unit: sources.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 source} other{{count} sources}}'**
+  String libraryUnitSources(int count);
+
+  /// Library card unit: evidence conflicts.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 conflict} other{{count} conflicts}}'**
+  String libraryUnitConflicts(int count);
+
+  /// Library card unit: court questions.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 question} other{{count} questions}}'**
+  String libraryUnitQuestions(int count);
 }
 
 class _AppLocalizationsDelegate

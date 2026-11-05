@@ -1,7 +1,7 @@
 name: forensic_expert
 description: "FORENSIC EXPERT — professional forensic reference, education and scientific calculation software."
 publish_to: 'none'
-version: 0.4.2+62
+version: 0.4.3+63
 resolution: workspace
 
 environment:
@@ -72,6 +72,7 @@ flutter:
     - assets/content/equipment/
     - assets/content/worked_examples/
     - assets/content/dna/
+    - assets/content/programs/
     - assets/images/instruments/
     # «Sinfda test» savollar banki (uz/ru/en): tools/class_quiz/import_quiz_bank.py
     - assets/content/class_quiz/

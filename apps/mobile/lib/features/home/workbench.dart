@@ -1,5 +1,8 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../app/professional.dart';
 import '../../app/routes.dart';
@@ -57,10 +60,43 @@ final workbenchSpecialtyProvider = Provider<WorkbenchSpecialty>((ref) {
 /// (egasi talabi, 2026-11-01: ikkalasi ham chiqsin). `null` — profildagi
 /// mutaxassislik (aralash bo‘lsa — sud-tibbiy).
 class WorkbenchViewController extends Notifier<WorkbenchSpecialty?> {
-  @override
-  WorkbenchSpecialty? build() => null;
+  static const _key = 'fe.workbench.view';
 
-  void select(WorkbenchSpecialty v) => state = v;
+  @override
+  WorkbenchSpecialty? build() {
+    unawaited(_restore());
+    return null;
+  }
+
+  /// Oxirgi tanlangan ko‘rinish keyingi kirishda ham tiklanadi (faqat
+  /// qurilmada; sezgir ma’lumot emas).
+  Future<void> _restore() async {
+    try {
+      final p = await SharedPreferences.getInstance();
+      final s = switch (p.getString(_key)) {
+        'medicine' => WorkbenchSpecialty.medicine,
+        'chemistry' => WorkbenchSpecialty.chemistry,
+        _ => null,
+      };
+      if (s != null && ref.mounted && state == null) state = s;
+    } on Object {
+      // Saqlash mavjud emas — profil mutaxassisligi bo‘yicha ko‘rsatiladi.
+    }
+  }
+
+  void select(WorkbenchSpecialty v) {
+    state = v;
+    unawaited(_save(v));
+  }
+
+  Future<void> _save(WorkbenchSpecialty v) async {
+    try {
+      final p = await SharedPreferences.getInstance();
+      await p.setString(_key, v.name);
+    } on Object {
+      // Xotiraga yozilmasa ham joriy tanlov amal qiladi.
+    }
+  }
 }
 
 final workbenchViewProvider =
@@ -352,7 +388,16 @@ abstract final class Workbench {
   /// Oddiy kartalar (kimyo uchun — keng kartadan keyingi qator).
   static List<WorkbenchItem> cardsFor(WorkbenchSpecialty s) => switch (s) {
     WorkbenchSpecialty.medicine => [casebook, courtPrep, calculatorsMed, ai],
-    WorkbenchSpecialty.chemistry => [solutionCalc, lodLoq],
+    // Sud-kimyo stoli (egasi, 2026-11-05): Ish daftari, Sudda so‘roq,
+    // Kalkulyatorlar, Forensic AI + laboratoriya vositalari.
+    WorkbenchSpecialty.chemistry => [
+      casebook,
+      courtPrep,
+      calculatorsMixed,
+      ai,
+      solutionCalc,
+      lodLoq,
+    ],
     WorkbenchSpecialty.mixed => [casebook, labMs, calculatorsMixed, ai],
   };
 }

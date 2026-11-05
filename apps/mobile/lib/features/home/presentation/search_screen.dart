@@ -29,7 +29,16 @@ import '../../tools/tool_strings.dart';
 ///   · TA’LIM · MANBALAR.
 /// * Qidiruv tarixi faqat qurilmada; tozalash mumkin.
 class SearchScreen extends ConsumerStatefulWidget {
-  const SearchScreen({super.key, this.initialQuery, this.initialDiscipline});
+  const SearchScreen({
+    super.key,
+    this.initialQuery,
+    this.initialDiscipline,
+    this.libraryOnly = false,
+  });
+
+  /// Kutubxona qidiruvi: natijalar faqat kutubxona materiallari bilan
+  /// cheklanadi (vositalar va o‘quv materiallari chiqmaydi).
+  final bool libraryOnly;
 
   final String? initialQuery;
 
@@ -39,6 +48,20 @@ class SearchScreen extends ConsumerStatefulWidget {
   @override
   ConsumerState<SearchScreen> createState() => _SearchScreenState();
 }
+
+/// Kutubxona doirasi: vositalar va o‘quv materiallari guruhlari olib tashlanadi.
+AppSearchResult _libraryScoped(AppSearchResult r) => AppSearchResult(
+  {
+    for (final g in SearchGroup.values)
+      g: (g == SearchGroup.tools || g == SearchGroup.learning)
+          ? const <SearchHit>[]
+          : r.groups[g] ?? const <SearchHit>[],
+  },
+  r.latency,
+  disciplines: r.disciplines,
+  discipline: r.discipline,
+  linkedVia: r.linkedVia,
+);
 
 class _SearchScreenState extends ConsumerState<SearchScreen> {
   late final TextEditingController _controller;
@@ -86,7 +109,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
         .search(q, lang: lang, discipline: _discipline);
     if (!mounted || q != _query) return;
     setState(() {
-      _result = r;
+      _result = widget.libraryOnly ? _libraryScoped(r) : r;
       // Yangi so‘rovda bu fan natijasi bo‘lmasa, filtr o‘z-o‘zidan bekor.
       _discipline = r.discipline;
     });

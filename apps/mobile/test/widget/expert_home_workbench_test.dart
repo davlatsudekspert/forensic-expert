@@ -84,7 +84,7 @@ void main() {
       expect(find.text('Sudda so‘roq'), findsOneWidget);
     });
 
-    testWidgets('sud-kimyo/toksikologiya: keng karta + 4 band + 2 karta', (
+    testWidgets('sud-kimyo/toksikologiya: keng karta + 4 band + 6 karta', (
       t,
     ) async {
       await pumpHome(t, specialty: Specialty.forensicToxicology);
@@ -111,9 +111,14 @@ void main() {
       expect(find.text('Barcha usullar va SOP'), findsOneWidget);
       expect(k('workbench.solutionCalc'), findsOneWidget);
       expect(k('workbench.lodLoq'), findsOneWidget);
-      // Takror yo‘q: kimyogarda daftar/sud kartalari yo‘q.
-      expect(k('workbench.casebook'), findsNothing);
-      expect(k('workbench.ai'), findsNothing);
+      // Egasi qarori (2026-11-05): Sud-kimyo stolida ham Ish daftari, Sudda
+      // so‘roq, Kalkulyatorlar va Forensic AI bor.
+      for (final id in ['casebook', 'courtPrep', 'calculators', 'ai']) {
+        expect(k('workbench.$id'), findsOneWidget, reason: id);
+      }
+      // DNK va Asbob-uskunalar Asosiy stoldan olib tashlangan.
+      expect(k('desk.dna'), findsNothing);
+      expect(k('desk.equipment'), findsNothing);
     });
 
     testWidgets('profil yo‘q: sud-tibbiy stol, almashtirgich bilan '
@@ -132,7 +137,7 @@ void main() {
       await t.pumpAndSettle();
       expect(k('workbench.chemistry'), findsOneWidget);
       expect(k('workbench.labMethods'), findsOneWidget);
-      expect(k('workbench.casebook'), findsNothing);
+      expect(k('workbench.casebook'), findsOneWidget);
       expect(k('workbench.favorites'), findsOneWidget);
     });
 
@@ -148,7 +153,7 @@ void main() {
       expect(k('desk.student'), findsOneWidget);
     });
 
-    testWidgets('ustoz Home’i: «Ustoz stolim», ish/o‘qish stoli yo‘q', (
+    testWidgets('ustoz Home’i: «Ustoz boshqaruvi», ish/o‘qish stoli yo‘q', (
       t,
     ) async {
       await pumpHome(t, mode: UserMode.teacher);

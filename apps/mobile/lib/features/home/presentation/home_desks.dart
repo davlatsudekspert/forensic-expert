@@ -73,11 +73,9 @@ class ExpertWorkbench extends ConsumerWidget {
           const _DeathCauseCard(),
           const SizedBox(height: FeSpace.sm),
         ],
-        EquipmentCard(
-          group: chemistry ? EquipmentGroup.lab : EquipmentGroup.morgue,
-        ),
-        const DnaCard(),
-        const SizedBox(height: FeSpace.sm),
+        // DNK ekspertizasi va Asbob-uskunalar kartalari Asosiydan olib
+        // tashlandi (egasi, 2026-11-05): ular «Ekspertiza yo‘nalishlari» va
+        // «Usullar va apparatlar» ichida (`DnaCard`/`EquipmentCard` saqlangan).
         _DeskGrid(items: Workbench.cardsFor(specialty)),
         const SizedBox(height: FeSpace.sm),
         // ★ Tanlanganlar — ikkala stolda ham: foydalanuvchi o‘zi belgilagan
@@ -94,7 +92,7 @@ class ExpertWorkbench extends ConsumerWidget {
   }
 }
 
-/// Ustoz Home: «Ustoz stolim» — darslar (prezentatsiyalar), jonli guruh
+/// Ustoz Home: «Ustoz boshqaruvi» — darslar (prezentatsiyalar), jonli guruh
 /// testi, guruhlar va mavzu testlari, Ustoz paneli (natijalar, CSV).
 class TeacherDesk extends ConsumerWidget {
   const TeacherDesk({super.key});

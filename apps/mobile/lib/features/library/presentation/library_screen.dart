@@ -12,6 +12,7 @@ import '../../../app/providers.dart';
 import '../../../app/publications.dart';
 import '../../../app/qa.dart';
 import '../../../app/routes.dart';
+import '../../../app/user_data.dart';
 import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
@@ -24,6 +25,7 @@ import '../../../domain/plan/plan_models.dart' show ProFeature;
 import '../../../domain/plan/pro_split.dart';
 import '../../evidence/evidence_strings.dart';
 import '../../evidence/presentation/provenance_screens.dart';
+import '../../home/presentation/saved_items.dart' show resolveSavedItems;
 import '../../legal/presentation/instrument_title.dart';
 import '../../legal/presentation/jurisdiction_screens.dart';
 import '../../placeholder/presentation/in_development_view.dart';
@@ -55,9 +57,13 @@ class LibrarySectionScreen extends ConsumerStatefulWidget {
   const LibrarySectionScreen({
     super.key,
     this.section = LibrarySection.substances,
+    this.initialGroup,
   });
 
   final LibrarySection section;
+
+  /// Boshlang‘ich modda guruhi filtri (masalan, kursdan: `opioids`).
+  final String? initialGroup;
 
   @override
   ConsumerState<LibrarySectionScreen> createState() =>
@@ -70,7 +76,7 @@ class _LibrarySectionScreenState extends ConsumerState<LibrarySectionScreen> {
   String _filter = '';
 
   /// Tahririy modda guruhi filtri (null — barchasi).
-  String? _group;
+  late String? _group = widget.initialGroup;
   static const _normalizer = SearchNormalizer();
 
   @override
@@ -542,6 +548,40 @@ class LibraryScreen extends ConsumerWidget {
       _ => null,
     };
 
+    // Har kartada aniq birlik («18 usul», «100 savol»); ma’lumotdagi haqiqiy son.
+    String unit(String id, int n) => switch (id) {
+      'substances' => l.libraryUnitSubstances(n),
+      'methods' => l.libraryUnitMethods(n),
+      'reagents' => l.libraryUnitReagents(n),
+      'rapid' => l.libraryUnitTests(n),
+      'specimens' => l.libraryUnitSpecimens(n),
+      'terms' || 'glossary' => l.libraryUnitTerms(n),
+      'standards' || 'jurisdictions' => l.libraryUnitDocuments(n),
+      'guidelines' => l.libraryUnitGuidelines(n),
+      'research' => l.libraryUnitStudies(n),
+      'references' => l.libraryUnitSources(n),
+      'conflicts' => l.libraryUnitConflicts(n),
+      'court' => l.libraryUnitQuestions(n),
+      _ => l.libraryCount(n),
+    };
+
+    // Guruhlar: mantiq bo‘yicha (ilmiy yozuvlar / me‘yorlar / dalillar / boshqa).
+    List<(String, IconData, String, int)> pick(Set<String> ids) => [
+      for (final x in docs)
+        if (ids.contains(x.$1)) x,
+    ];
+    const normIds = {'standards', 'guidelines', 'jurisdictions'};
+    const evidenceIds = {'research', 'references', 'conflicts'};
+    final norms = pick(normIds);
+    final evidenceGroup = pick(evidenceIds);
+    final more = [
+      for (final x in docs)
+        if (!normIds.contains(x.$1) && !evidenceIds.contains(x.$1)) x,
+    ];
+    final userData = ref.watch(userDataProvider);
+    final recent = resolveSavedItems(context, ref, userData.recentlyViewed);
+    final saved = resolveSavedItems(context, ref, userData.favorites);
+
     Widget tile((String, IconData, String, int) x) {
       final (id, icon, title, count) = x;
       final c = FeTheme.of(context);
@@ -565,7 +605,7 @@ class LibraryScreen extends ConsumerWidget {
                   children: [
                     Text(title, style: Theme.of(context).textTheme.titleSmall),
                     Text(
-                      l.libraryCount(count),
+                      unit(id, count),
                       style: Theme.of(context).textTheme.bodySmall
                           ?.copyWith(color: c.textSecondary),
                     ),
@@ -598,6 +638,26 @@ class LibraryScreen extends ConsumerWidget {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   const SizedBox(height: FeSpace.sm),
+                  // Kutubxonaning o‘z qidiruvi (egasi, 2026-11-05): natijalar
+                  // faqat kutubxona materiallari bo‘yicha.
+                  FeSearchEntry(
+                    key: const Key('library.search'),
+                    hint: l.librarySearchHint,
+                    onTap: () => context.push(Routes.librarySearch),
+                  ),
+                  if (recent.isNotEmpty)
+                    _LibraryChips(
+                      key: const Key('library.recent'),
+                      title: l.homeRecentlyViewed,
+                      items: recent,
+                    ),
+                  if (saved.isNotEmpty)
+                    _LibraryChips(
+                      key: const Key('library.saved'),
+                      title: l.homeFavorites,
+                      items: saved,
+                    ),
+                  const SizedBox(height: FeSpace.xs),
                   Text(
                     l.libraryHubIntro,
                     style: Theme.of(context).textTheme.bodySmall
@@ -607,9 +667,21 @@ class LibraryScreen extends ConsumerWidget {
                   FeSectionHeader(l.libraryGroupScience),
                   for (final x in science)
                     if (x.$4 > 0) tile(x),
-                  FeSectionHeader(l.libraryGroupDocs),
-                  for (final x in docs)
-                    if (x.$4 > 0) tile(x),
+                  if (norms.any((x) => x.$4 > 0)) ...[
+                    FeSectionHeader(l.libraryGroupNorms),
+                    for (final x in norms)
+                      if (x.$4 > 0) tile(x),
+                  ],
+                  if (evidenceGroup.any((x) => x.$4 > 0)) ...[
+                    FeSectionHeader(l.libraryGroupEvidence),
+                    for (final x in evidenceGroup)
+                      if (x.$4 > 0) tile(x),
+                  ],
+                  if (more.any((x) => x.$4 > 0)) ...[
+                    FeSectionHeader(l.libraryGroupMore),
+                    for (final x in more)
+                      if (x.$4 > 0) tile(x),
+                  ],
                   const SizedBox(height: FeSpace.lg),
                 ],
               ),
@@ -696,6 +768,39 @@ class StandardsScreen extends ConsumerWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// Kutubxona hubidagi «Yaqinda ko‘rilganlar» / «Saralanganlar» chiplari.
+class _LibraryChips extends StatelessWidget {
+  const _LibraryChips({super.key, required this.title, required this.items});
+
+  final String title;
+  final List<(String, VoidCallback)> items;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = FeTheme.of(context);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const SizedBox(height: FeSpace.sm),
+        Text(
+          title,
+          style: Theme.of(context).textTheme.labelMedium
+              ?.copyWith(color: c.textSecondary),
+        ),
+        const SizedBox(height: FeSpace.xxs),
+        Wrap(
+          spacing: FeSpace.xs,
+          runSpacing: FeSpace.xs,
+          children: [
+            for (final (label, onTap) in items.take(8))
+              ActionChip(label: Text(label), onPressed: onTap),
+          ],
+        ),
+      ],
     );
   }
 }

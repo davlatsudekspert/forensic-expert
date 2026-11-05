@@ -190,7 +190,11 @@ void main() {
       lessThan(at('home.module.substances').dy),
     );
     expect(find.byKey(const Key('home.module.laboratory')), findsNothing);
-    expect(find.byKey(const Key('home.module.methods')), findsOneWidget);
+    // Mutaxassis (2026-11-05): ixcham tartib — Ekspertiza yo‘nalishlari,
+    // Usullar va apparatlar, Ma’lumotnomalar (Moddalar, Yo‘riqnomalar).
+    expect(find.byKey(const Key('home.areas')), findsOneWidget);
+    expect(find.byKey(const Key('home.methodsDevices')), findsOneWidget);
+    expect(find.byKey(const Key('home.module.methods')), findsNothing);
     expect(find.byKey(const Key('home.module.ai')), findsNothing);
   });
 }
