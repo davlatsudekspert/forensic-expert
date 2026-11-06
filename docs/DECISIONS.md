@@ -354,3 +354,7 @@ Pro 0.4.0 test buildidan keyin darslar va test savollari RU/EN ga tarjima qilina
 - Pro to‘lov bayrog‘i: `kEnableProPaywall = false` (app_config.dart) — test va do‘kon tekshiruvi davomida hamma narsa bepul va ochiq.
 - Ish tartibi: kod → testlar → real ekran rasmlari → egasi ma’qullaydi → faqat build raqami o‘zgargan holda build.
 - Cheklov: tasdiqlanmagan mazmun (yangi fanlar, apparat SOP/FAQ, boshqa davlatlar huquqi) «Tayyorlanmoqda» holatida; uydirma yozilmaydi.
+
+## 2026-11-06 — «Darslar» nomlanishi (Ustoz bosqichi uchun)
+- uz «Darslar», ru «Занятия», en «Lessons» (ma’ruza + amaliy mashg‘ulotni qamraydi). «Ma’ruza prezentatsiyalari» alohida karta bo‘lib qoladi (Лекционные презентации / Lecture Presentations).
+- «Ma’ruza taklif qilish» funksiyasi olib tashlandi. Darslar tuzilmasi: Bioetika → Sud tibbiyoti (4 fakultet + Sud-tibbiy toksikologiya ichki bob) → Farmatsiya (Toksikologik kimyo).
