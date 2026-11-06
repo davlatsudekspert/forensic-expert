@@ -358,3 +358,7 @@ Pro 0.4.0 test buildidan keyin darslar va test savollari RU/EN ga tarjima qilina
 ## 2026-11-06 — «Darslar» nomlanishi (Ustoz bosqichi uchun)
 - uz «Darslar», ru «Занятия», en «Lessons» (ma’ruza + amaliy mashg‘ulotni qamraydi). «Ma’ruza prezentatsiyalari» alohida karta bo‘lib qoladi (Лекционные презентации / Lecture Presentations).
 - «Ma’ruza taklif qilish» funksiyasi olib tashlandi. Darslar tuzilmasi: Bioetika → Sud tibbiyoti (4 fakultet + Sud-tibbiy toksikologiya ichki bob) → Farmatsiya (Toksikologik kimyo).
+
+## 2026-11-06 (keyin) — Tartib o‘zgardi
+- Birinchi USTOZ rejimi tartiblanadi (Ustoz minbari, Darslar tuzilmasi, umumiy Kutubxona, test/imtihon fanlari, Ustoz ish daftari, 3 til), KEYIN Mutaxassis. Ustoz bosqichida Mutaxassis bosh sahifasiga tegilmaydi.
+- Darslar/test fanlari tuzilmasi umumiy (Talaba ham ko‘radi); Talaba bosh sahifasi o‘zgarmaydi.
