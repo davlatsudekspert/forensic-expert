@@ -86,3 +86,13 @@ Aniq sanalar audit natijasidan keyin; hozir va’da qilinmaydi.
 2. Ilovada baholash bo‘limi nomini «Toksikologiya» ga o‘zgartiramizmi?
 3. Institut brendi (logotip) ilovada ko‘rinsinmi, yoki faqat hujjatlardami?
 4. Audit uchun eng kuchli modeldan foydalanamiz (ko‘p resurs sarflaydi) — ruxsat?
+
+## 6. Ustoz bosqichi (Mutaxassis tugagach) — egasi qarorlari, 6-noyabr
+Tartib: avval Mutaxassis (shanba), keyin Ustoz. Ustoz/Talaba rejimiga Mutaxassis tugamaguncha tegilmaydi.
+- Akademik tuzilma (sonlar egasi tomonidan belgilangan, qayta bahslashilmaydi): 1) Bioetika — 24; 2) Sud tibbiyoti: Davolash 88, Pediatriya 72, Stomatologiya 57, Tibbiy profilaktika 17; «Sud-tibbiy toksikologiya» — ichki bob (fakultet emas); 3) Farmatsiya fakulteti — Toksikologik kimyo — 81.
+- «Ma’ruza taklif qilish» funksiyasi OLIB TASHLANDI (shart emas): server jadvali, fayl yuklash, admin tekshiruvi qo‘shilmaydi.
+- Qolgan Ustoz ishlari: Ustoz bosh sahifasi tartibi, Darslar tuzilmasi, umumiy Kutubxona, guruh testi/og‘zaki imtihon/mavzu testlarini yagona fanlar tuzilmasiga moslash, «Ustoz ish daftari», 3 tilli tarjimalar, testlar.
+
+## 7. Xatolar (shanbada, Mutaxassis ishi bilan birga)
+- Kutubxona (iPhone): tugma bosilganda Profil ochilyapti. Kodda: pastki menyu xaritasi (floatingBranches [0,2,3,1,4]) va marshrut tartibi mos; kirish darvozasi sababi emas. Statik tahlil bilan topilmadi — qurilmada takrorlash kerak: qaysi tugma (pastki menyu yoki Asosiy kartasi), qaysi rejim, qaysi build; iPhone ekran yozuvi so‘raladi.
+- iPhone: ekran ichidan o‘ngga surib orqaga qaytish (A2 bandi).
