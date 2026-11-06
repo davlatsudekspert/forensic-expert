@@ -342,3 +342,15 @@ Pro 0.4.0 test buildidan keyin darslar va test savollari RU/EN ga tarjima qilina
 - Sud-tibbiy ekspertiza bo‘limlari to‘liq qilinadi. Markaz nomi hozircha hech qayerda yozilmaydi (ilova butun dunyo uchun); markaz rahbariyati rozi bo‘lgach, kelishilgan holda qo‘shiladi.
 - «Patologik anatomiya» baholash bo‘limida qoladi (3 yo‘nalish: sud-tibbiy, patologik anatomiya, sud-kimyoviy ekspertiza).
 - Sud-tibbiy savollar manbai: egasi Word/PDF beradi yoki rasmiy ro‘yxat saytidan (tmbm.ssv.uz) olinadi.
+
+## 2026-11-06 — Mutaxassis qayta tuzilishi (egasi ko‘rsatmasi)
+- «Ustoz va Talaba» rejimiga TEGILMAYDI (kod va tuzilma). Barcha o‘zgarish faqat «Mutaxassis» rejimiga. Ustoz/Talaba ishlari Mutaxassis tuzilmasi tugab, sinovdan o‘tgach, alohida bosqichda.
+- Asosiy tab 1–4-bloklar joyida (sarlavha, qidiruv, Bilim va malakani baholash, Ustozlar va mutaxassislar). 5-blokdan pastga: xalqaro universal ekspertiza bo‘limlari.
+- Mutaxassisdan «Asosiy fanlar» olib tashlanadi (Toksikologiya va boshqa fanlar faqat Ustoz/Talabada qoladi).
+- «Hamkasbni taklif qilish» Asosiydan olib tashlanib Profilga ko‘chiriladi; «5 daqiqada boshlang» yopiladigan (dismissible).
+- «Apparatlar bilan ishlash kursi» Ma’lumotnomalarga (Asosiy) qaytariladi, 1 bosishda.
+- GC-MS apparat sxemasi Vositalardan olib tashlanadi (faqat Usullar va apparatlar hamda Sud-kimyo bo‘limida). Kalkulyatorlar: Sud tibbiyoti / Toksikologiya / Laboratoriya.
+- Kutubxona 4 qavatli tizimga; manbalar muallif ko‘rsatilgan holda, faqat tekshirilgan iqtiboslar.
+- Pro to‘lov bayrog‘i: `kEnableProPaywall = false` (app_config.dart) — test va do‘kon tekshiruvi davomida hamma narsa bepul va ochiq.
+- Ish tartibi: kod → testlar → real ekran rasmlari → egasi ma’qullaydi → faqat build raqami o‘zgargan holda build.
+- Cheklov: tasdiqlanmagan mazmun (yangi fanlar, apparat SOP/FAQ, boshqa davlatlar huquqi) «Tayyorlanmoqda» holatida; uydirma yozilmaydi.
