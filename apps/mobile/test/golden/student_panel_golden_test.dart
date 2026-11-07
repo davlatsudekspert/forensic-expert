@@ -93,23 +93,26 @@ void main() {
       'student_lessons_davolash_uz',
       Routes.lessons,
       act: (t) async {
-        final chip = find.byKey(
-          const Key('lessons.course.Davolash ishi fakulteti'),
-        );
-        await t.scrollUntilVisible(
-          chip,
-          120,
-          scrollable: find.descendant(
-            of: find.byKey(const Key('lessons.courses')),
-            matching: find.byType(Scrollable),
-          ),
-        );
-        final c = find.descendant(of: chip, matching: find.byType(ChoiceChip));
-        await t.ensureVisible(c);
+        // Tuzilma: Sud tibbiyoti → Davolash fakulteti → mavzular.
+        await t.tap(find.byKey(const Key('lessons.subject.forensic')));
         await t.pumpAndSettle();
-        await t.tap(c);
+        await t.tap(
+          find.byKey(const Key('lessons.faculty.Davolash ishi fakulteti')),
+        );
         await t.pumpAndSettle();
         expect(find.text('Apparatlar bilan ishlash'), findsNothing);
+      },
+    );
+  });
+
+  testWidgets('student_lessons_forensic_uz', (t) async {
+    await shot(
+      t,
+      'student_lessons_forensic_uz',
+      Routes.lessons,
+      act: (t) async {
+        await t.tap(find.byKey(const Key('lessons.subject.forensic')));
+        await t.pumpAndSettle();
       },
     );
   });

@@ -66,7 +66,10 @@ void main() {
 
   for (final mode in [UserMode.student, UserMode.professional]) {
     testWidgets('${mode.name}: Ustoz qatori yo‘q', (tester) async {
-      await pumpApp(tester, settings: completedSettings(lang: 'uz', mode: mode));
+      await pumpApp(
+        tester,
+        settings: completedSettings(lang: 'uz', mode: mode),
+      );
       expect(find.byKey(tile, skipOffstage: false), findsNothing);
       expect(find.byType(HomeScreen), findsOneWidget);
     });

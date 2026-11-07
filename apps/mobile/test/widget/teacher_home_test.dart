@@ -82,19 +82,19 @@ void main() {
 
     testWidgets('bo‘limlar tartibi (yuqoridan pastga)', (t) async {
       await open(t);
+      // Tartib (egasi, 2026-11-07): Ustoz boshqaruvi → Materiallar va manbalar
+      // (DNK/Virtual autopsiya/Asbob-uskunalar, fanlar, kutubxona) → Bugungi savol.
       final order = [
         'ustoz.banner',
         'home.search',
+        'home.catalog',
         'desk.teacher',
-        'desk.dailyQuestion',
+        'home.new',
         'home.core',
         'home.teacherLibrary',
         'home.guidelines',
         'home.module.substances',
-        'home.courtPrep',
-        'home.catalog',
-        'home.new',
-        'home.invite',
+        'desk.dailyQuestion',
       ];
       var prev = -1.0;
       for (final key in order) {
@@ -116,7 +116,7 @@ void main() {
       expect(find.text('Materiallar va manbalar'), findsOneWidget);
       expect(find.text('Sud tibbiyoti'), findsOneWidget);
       expect(find.text('Sud-kimyoviy ekspertiza'), findsOneWidget);
-      await reveal(t, 'home.invite');
+      await reveal(t, 'desk.dailyQuestion');
       expect(k('home.allDisciplines'), findsNothing);
     });
 
@@ -195,12 +195,11 @@ void main() {
         'home.module.methods',
         'home.tools',
         'home.module.ai',
-        'home.courtPrep',
         'home.catalog',
         'home.new.dna',
         'home.new.virtopsy',
         'home.new.equipment',
-        'home.invite',
+        'desk.dailyQuestion',
       ]) {
         await reveal(t, key);
         expect(k(key), findsOneWidget, reason: key);
@@ -213,9 +212,7 @@ void main() {
       ('home.guidelines', Routes.guidelines),
       ('home.tools', Routes.tools),
       ('home.module.ai', Routes.ai),
-      ('home.courtPrep', Routes.courtPrep),
       ('home.catalog', Routes.catalog),
-      ('home.invite', Routes.referral),
     ]) {
       testWidgets('$key → $expected', (t) async {
         final c = await open(t);
@@ -254,14 +251,14 @@ void main() {
               expect(find.text(l.teacherBannerTitle), findsOneWidget);
               expect(find.text(l.teacherBannerTagline), findsOneWidget);
               expect(t.takeException(), isNull);
-              await reveal(t, 'home.invite');
+              await reveal(t, 'desk.dailyQuestion');
               await t.drag(
                 find.byType(Scrollable).first,
                 const Offset(0, -3000),
               );
               await t.pumpAndSettle();
               expect(t.takeException(), isNull);
-              final last = t.getBottomLeft(k('home.invite')).dy;
+              final last = t.getBottomLeft(k('desk.dailyQuestion')).dy;
               final nav = t.getTopLeft(k('nav.ai')).dy;
               expect(last, lessThanOrEqualTo(nav + 8));
             });

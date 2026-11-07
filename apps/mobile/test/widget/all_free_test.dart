@@ -360,8 +360,15 @@ void main() {
       );
     }
 
+    // Darslar tuzilmasi (2026-11-07): fan → (fakultet) → mavzular.
+    Future<void> enter(WidgetTester tester, String subject) async {
+      await tester.tap(find.byKey(Key('lessons.subject.$subject')));
+      await tester.pumpAndSettle();
+    }
+
     testWidgets('bepul: hamma dars qulfli (Pro kerak)', (tester) async {
       await openLessons(tester, Routes.lessons);
+      await enter(tester, 'pharmacy');
       for (final id in [
         'toks-01',
         'toks-02',
@@ -395,6 +402,7 @@ void main() {
       tester,
     ) async {
       await openLessons(tester, Routes.lessons, plan: Plan.teacher);
+      await enter(tester, 'pharmacy');
       expect(lockOn('lessons.row.toks-05'), findsNothing);
     });
 
@@ -407,11 +415,13 @@ void main() {
         plan: Plan.teacher,
         mode: UserMode.professional,
       );
+      await enter(tester, 'devices');
       expect(lockOn('lessons.row.instr-02-uv'), findsOneWidget);
     });
 
     testWidgets('Talaba Pro Ustoz darslarini ochmaydi', (tester) async {
       await openLessons(tester, Routes.lessons, plan: Plan.student);
+      await enter(tester, 'pharmacy');
       expect(lockOn('lessons.row.toks-05'), findsOneWidget);
     });
 

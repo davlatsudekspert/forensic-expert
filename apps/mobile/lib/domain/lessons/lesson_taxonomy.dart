@@ -65,6 +65,27 @@ abstract final class LessonTaxonomy {
     ),
   ];
 
+  /// Kurs tartibi (fan tartibi, so‘ng fan ichidagi o‘rni); noma’lum kurs
+  /// oxirida, o‘z tartibini saqlaydi. Tarjima nomi/alifboga bog‘liq emas.
+  static int orderOf(String course) {
+    for (final s in subjects) {
+      final i = s.allCourses.indexOf(course);
+      if (i >= 0) return s.sortOrder * 100 + i;
+    }
+    return 100000;
+  }
+
+  /// Kurs nomlari ro‘yxatini akademik tartibga soladi (barqaror).
+  static List<T> sortByCourse<T>(Iterable<T> items, String Function(T) course) {
+    final list = items.toList();
+    final idx = {for (var i = 0; i < list.length; i++) list[i]: i};
+    list.sort((a, b) {
+      final c = orderOf(course(a)).compareTo(orderOf(course(b)));
+      return c != 0 ? c : idx[a]!.compareTo(idx[b]!);
+    });
+    return list;
+  }
+
   /// Kursni fanga bog‘laydi (noma’lum yangi kurs — null).
   static LessonSubject? subjectOf(String course) {
     for (final s in subjects) {

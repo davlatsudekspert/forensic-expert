@@ -14,11 +14,13 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/assessment/oral_exam.dart';
 import '../../../domain/lessons/lesson_models.dart';
 import '../../../domain/lessons/lesson_oral.dart';
+import '../../../domain/lessons/lesson_taxonomy.dart';
 import '../../../domain/oral_group/oral_group_models.dart'
     show OralGroupSession;
 import '../../assessment/presentation/oral_ticket_card.dart';
 import '../../lessons/presentation/lesson_slide_view.dart'
     show lessonSourceGroups, lessonSourceLine;
+import '../../lessons/presentation/lessons_list_screen.dart' show courseLabel;
 import '../../lessons/presentation/lesson_viewer_screen.dart'
     show LessonFailureView;
 
@@ -58,7 +60,10 @@ class _TeacherOralTopicsScreenState
     ].length;
     final res = ref.watch(lessonListProvider('')).value;
     final all = res?.value;
-    final groups = LessonGrouping.group(all ?? const <LessonSummary>[]);
+    final groups = LessonTaxonomy.sortByCourse(
+      LessonGrouping.group(all ?? const <LessonSummary>[]),
+      (g) => g.course,
+    );
     final course = groups.any((g) => g.course == _course) ? _course : null;
     final visible = [
       for (final g in groups)
@@ -152,7 +157,7 @@ class _TeacherOralTopicsScreenState
                       for (final g in groups)
                         _Chip(
                           key: Key('toral.course.${g.course}'),
-                          label: _courseLabel(g),
+                          label: _courseLabel(AppLocalizations.of(context), g),
                           selected: course == g.course,
                           onTap: () => setState(() => _course = g.course),
                         ),
@@ -184,7 +189,7 @@ class _TeacherOralTopicsScreenState
                     child: Semantics(
                       header: true,
                       child: Text(
-                        g.course,
+                        courseLabel(AppLocalizations.of(context), g.course),
                         style: t.titleSmall?.copyWith(color: c.accent),
                       ),
                     ),
@@ -304,7 +309,8 @@ class _TeacherOralTopicsScreenState
   }
 }
 
-String _courseLabel(LessonGroup g) => '${g.course} · ${g.items.length}';
+String _courseLabel(AppLocalizations l, LessonGroup g) =>
+    '${courseLabel(l, g.course)} · ${g.items.length}';
 
 String _bulletText(LessonBullet b) => '• ${b.text}';
 

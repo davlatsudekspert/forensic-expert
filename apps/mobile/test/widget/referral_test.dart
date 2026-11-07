@@ -322,19 +322,16 @@ void main() {
       );
     });
 
-    testWidgets('Home’da sokin taklif kartasi bor (Ustoz; Mutaxassis — '
+    testWidgets('Ustoz Home’ida taklif kartasi yo‘q (egasi, 2026-11-07: '
         'Profilda)', (tester) async {
       await pumpApp(
         tester,
         settings: completedSettings(mode: UserMode.teacher),
       );
-      final invite = find.byKey(const Key('home.invite'));
-      await tester.scrollUntilVisible(
-        invite,
-        300,
-        scrollable: find.byType(Scrollable).first,
-      );
-      expect(invite, findsOneWidget);
+      // Ro‘yxat oxirigacha aylantirilganda ham taklif kartasi chiqmaydi.
+      await tester.drag(find.byType(Scrollable).first, const Offset(0, -5000));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const Key('home.invite')), findsNothing);
     });
 
     test('birinchi qadam yo‘llari', () {
