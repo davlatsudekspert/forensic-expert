@@ -7,7 +7,7 @@
    "ABSTRACT_ONLY": 686,
    "NO_LOCATOR": 25,
    "PARTIAL": 73,
-   "SUPPORTED": 1588
+   "SUPPORTED": 1592
   },
   "auto_verdict": {
    "UNSUPPORTED": 1,
@@ -15,7 +15,7 @@
    "ABSTRACT_ONLY": 684,
    "NO_LOCATOR": 25,
    "PARTIAL": 72,
-   "SUPPORTED": 1584
+   "SUPPORTED": 1588
   },
   "by_corpus": {
    "bundle": {
@@ -24,7 +24,7 @@
     "ABSTRACT_ONLY": 9,
     "NO_LOCATOR": 6,
     "PARTIAL": 14,
-    "SUPPORTED": 871
+    "SUPPORTED": 875
    },
    "court_prep": {
     "UNSUPPORTED": 0,
@@ -43,7 +43,7 @@
     "SUPPORTED": 480
    }
   },
-  "claims": 2373,
+  "claims": 2377,
   "reviewed": 46,
   "general_rule_abstract_only_unreviewed": 7
  },
@@ -296,8 +296,8 @@
    "book/tier3/C": 3,
    "database/tier2/C": 202,
    "guideline/tier1/B": 2,
-   "journal_article/tier2/A": 8,
-   "journal_article/tier2/B": 232,
+   "journal_article/tier2/A": 10,
+   "journal_article/tier2/B": 233,
    "journal_article/tier2/C": 68,
    "journal_article/tier2/D": 32,
    "legislation/tier1/A": 8,
@@ -56051,6 +56051,92 @@
    "reasons": [],
    "text_sha": "a3272845fd949e4a",
    "text": "The performance of the SAMElife™ rapid hair screening kit was evaluated for the detection of drugs of abuse in 31 anonymized hair samples, encompassing 217 analyses for morphine, cocaine, amphetamines, buprenorphine, oxy"
+  },
+  {
+   "id": "C-HIS-WOUND-AGE-MARKERS-MARKER-P5",
+   "corpus": "bundle",
+   "container": "his-wound-age-markers",
+   "sources": [
+    {
+     "key": "SRC-PMC8770859",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "a3259a538245956f",
+   "text": "Results: This study sheds light on the role of omics research during the process of wounding, identifying different cytokines and other inflammatory mediators, as well as cells involved in the specific stage of the wound"
+  },
+  {
+   "id": "C-HIS-LUNG-ASPHYXIA-MARKER-P5",
+   "corpus": "bundle",
+   "container": "his-lung-asphyxia",
+   "sources": [
+    {
+     "key": "SRC-PMC10198145",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "0bfdb7d8d7450580",
+   "text": "The development of knowledge in biochemistry and molecular biology has allowed research in forensic pathology to identify some markers useful in immunohistochemical diagnostics of asphyxia deaths."
+  },
+  {
+   "id": "C-HIS-HEAT-BURN-SKIN-MARKER-P5",
+   "corpus": "bundle",
+   "container": "his-heat-burn-skin",
+   "sources": [
+    {
+     "key": "SRC-PMC10932096",
+     "locators": [
+      "RESULTS"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms"
+   ],
+   "reasons": [],
+   "text_sha": "32d1d0895dc62425",
+   "text": "A study regarding the diagnosis of death associated with fire investigated AQP1 and AQP3 expression in the skin and discussed their role in the differential diagnosis of ante- and postmortem burns."
+  },
+  {
+   "id": "C-HIS-BRAIN-HYPOXIA-MARKER-P5",
+   "corpus": "bundle",
+   "container": "his-brain-hypoxia",
+   "sources": [
+    {
+     "key": "SRC-PMC8238305",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "14b642e305a7eef1",
+   "text": ": Discovery of evidence of acute brain ischemia or hypoxia and its differentiation from agonal hypoxia represents a task of interest but extremely difficult in forensic neuropathology."
   }
  ]
 }
