@@ -24596,6 +24596,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Coming soon'**
   String get areasSoonTitle;
+
+  /// Expertise areas: forensic biology and DNA.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic biology and DNA'**
+  String get areaBiologyDna;
 }
 
 class _AppLocalizationsDelegate

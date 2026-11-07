@@ -14301,4 +14301,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get areasSoonTitle => 'Coming soon';
+
+  @override
+  String get areaBiologyDna => 'Forensic biology and DNA';
 }

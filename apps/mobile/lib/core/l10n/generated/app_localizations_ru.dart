@@ -14377,4 +14377,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get areasSoonTitle => 'Скоро';
+
+  @override
+  String get areaBiologyDna => 'Судебная биология и ДНК-анализ';
 }

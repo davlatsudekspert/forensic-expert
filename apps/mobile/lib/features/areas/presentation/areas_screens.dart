@@ -92,15 +92,11 @@ class ExpertiseAreasScreen extends ConsumerWidget {
           child: EntryTile(
             key: const Key('areas.genetics'),
             icon: Icons.hub_outlined,
-            title: l.disciplineName(ForensicDiscipline.forensicGenetics),
+            title: l.areaBiologyDna,
             badge: badge(true),
             onTap: () => context.push(Routes.dna),
           ),
         ),
-      ),
-      byDiscipline(
-        ForensicDiscipline.forensicBiology,
-        Icons.bubble_chart_outlined,
       ),
       byModule(
         HomeModule.histology,

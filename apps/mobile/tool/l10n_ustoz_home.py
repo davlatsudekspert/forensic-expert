@@ -40,6 +40,10 @@ k('teacherNotebookTitle', 'Casebook title in Teacher mode.',
 k('areasSoonTitle', 'Expertise areas: group of areas without content yet.',
   'Tez orada', 'Скоро', 'Coming soon')
 
+k('areaBiologyDna', 'Expertise areas: forensic biology and DNA.',
+  'Sud biologiyasi va DNK', 'Судебная биология и ДНК-анализ',
+  'Forensic biology and DNA')
+
 for i, lang in enumerate(('uz', 'ru', 'en')):
     f = D / f'app_{lang}.arb'
     b = json.loads(f.read_text(encoding='utf-8'),

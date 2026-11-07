@@ -14163,4 +14163,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get areasSoonTitle => 'Tez orada';
+
+  @override
+  String get areaBiologyDna => 'Sud biologiyasi va DNK';
 }
