@@ -10,6 +10,7 @@ import '../../../app/routes.dart';
 import '../../../app/tts.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
+import '../../../data/audio/lesson_audio_remote.dart';
 import '../../../domain/plan/plan_models.dart' show ProFeature;
 import '../../../domain/ports/tts_ports.dart';
 
@@ -29,6 +30,7 @@ class ListenButton extends ConsumerStatefulWidget {
     this.color,
     this.labeled = false,
     this.lang,
+    this.remoteUrl,
     this.autoStart = false,
     this.onFinished,
     this.onStateChanged,
@@ -42,6 +44,9 @@ class ListenButton extends ConsumerStatefulWidget {
 
   /// Matn tili — ovoz shu tilning sof talaffuzida o‘qiydi.
   final String? lang;
+
+  /// Oldindan tayyorlangan ovoz (R2). Topilmasa — odatdagi ovoz xizmati.
+  final String? remoteUrl;
 
   /// `true` — vidjet paydo bo‘lishi bilan o‘zi o‘qiy boshlaydi (dars
   /// «Ovoz tugagach» avto rejimi).
@@ -207,6 +212,18 @@ class _ListenButtonState extends ConsumerState<ListenButton>
     final gen = ++_gen;
     final l = AppLocalizations.of(context);
     _setListen(ListenState.loading);
+    final remoteUrl = widget.remoteUrl;
+    if (remoteUrl != null) {
+      final local = await fetchLessonAudio(remoteUrl);
+      if (!mounted || gen != _gen) return;
+      if (local != null) {
+        _paths = [local];
+        _part = 0;
+        _setListen(ListenState.playing);
+        await _playPart(gen);
+        return;
+      }
+    }
     final TtsAudio audio;
     try {
       audio = await ref

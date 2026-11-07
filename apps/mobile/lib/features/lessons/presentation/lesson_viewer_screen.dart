@@ -17,6 +17,7 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/settings/app_settings.dart' show UserMode;
 import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/fe_components.dart';
+import '../../../data/audio/lesson_audio_remote.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart' show ClassFailure;
 import '../../../domain/lessons/lesson_models.dart';
 import '../../../domain/plan/plan_models.dart';
@@ -831,6 +832,14 @@ class _LessonViewerState extends ConsumerState<LessonViewer>
               total: pages.length,
               listenText: lessonListenText(page),
               listenLang: widget.deck.sourceLang,
+              listenRemoteUrl:
+                  page.kind == LessonPageKind.slide && page.part == 1
+                  ? lessonAudioUrl(
+                      deckId: widget.deck.deckId,
+                      lang: lang,
+                      slide: page.group + 1,
+                    )
+                  : null,
               listenAuto: _voiceAuto,
               onListenFinished: _onListenFinished,
               autoOn: _auto,
@@ -1247,6 +1256,7 @@ class _ControlBar extends StatelessWidget {
     required this.index,
     required this.total,
     required this.listenText,
+    this.listenRemoteUrl,
     this.listenLang,
     this.listenAuto = false,
     this.onListenFinished,
@@ -1265,6 +1275,7 @@ class _ControlBar extends StatelessWidget {
 
   /// Joriy sahifaning «Tinglash» matni (bo‘sh yoki server yo‘q — tugma yo‘q).
   final String listenText;
+  final String? listenRemoteUrl;
   final String? listenLang;
 
   /// «Ovoz tugagach» avto rejimi: har slayd o‘zi o‘qila boshlaydi.
@@ -1330,6 +1341,7 @@ class _ControlBar extends StatelessWidget {
                       onFinished: onListenFinished,
                       text: listenText,
                       lang: listenLang,
+                      remoteUrl: listenRemoteUrl,
                       // Juda tor ekran yoki katta shriftda — faqat belgi.
                       labeled:
                           MediaQuery.sizeOf(context).width >= 300 &&

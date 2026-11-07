@@ -42,8 +42,10 @@ Deno.serve(async (req) => {
     const r = await r2.fetch(`${base}?list-type=2&max-keys=${max}&prefix=${encodeURIComponent(prefix)}`);
     const xml = await r.text();
     if (!r.ok) return json({ error: "r2", status: r.status }, 502);
-    const keys = [...xml.matchAll(/<Key>([^<]*)<\/Key><LastModified>[^<]*<\/LastModified><ETag>[^<]*<\/ETag><Size>(\d+)<\/Size>/g)]
-      .map((m) => ({ key: m[1], size: Number(m[2]) }));
+    const keys = [...xml.matchAll(/<Contents>([\s\S]*?)<\/Contents>/g)].map((c) => ({
+      key: /<Key>([^<]*)<\/Key>/.exec(c[1])?.[1] ?? "",
+      size: Number(/<Size>(\d+)<\/Size>/.exec(c[1])?.[1] ?? 0),
+    }));
     const truncated = /<IsTruncated>true<\/IsTruncated>/.test(xml);
     return json({ count: keys.length, truncated, keys });
   }
