@@ -14157,4 +14157,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get lessonSubjectFacultiesNote => 'Fakultetlar va o‘quv yo‘nalishlari';
+
+  @override
+  String get teacherNotebookTitle => 'Ustoz ish daftari';
 }

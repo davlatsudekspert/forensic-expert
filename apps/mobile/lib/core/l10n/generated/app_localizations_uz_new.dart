@@ -42,7 +42,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get disclaimerBody => toUzNewAlphabet(super.disclaimerBody);
 
   @override
-  String get disclaimerNoConclusions => toUzNewAlphabet(super.disclaimerNoConclusions);
+  String get disclaimerNoConclusions =>
+      toUzNewAlphabet(super.disclaimerNoConclusions);
 
   @override
   String get disclaimerConsult => toUzNewAlphabet(super.disclaimerConsult);
@@ -60,19 +61,22 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get modeProfessional => toUzNewAlphabet(super.modeProfessional);
 
   @override
-  String get modeProfessionalDescription => toUzNewAlphabet(super.modeProfessionalDescription);
+  String get modeProfessionalDescription =>
+      toUzNewAlphabet(super.modeProfessionalDescription);
 
   @override
   String get modeStudent => toUzNewAlphabet(super.modeStudent);
 
   @override
-  String get modeStudentDescription => toUzNewAlphabet(super.modeStudentDescription);
+  String get modeStudentDescription =>
+      toUzNewAlphabet(super.modeStudentDescription);
 
   @override
   String get modeResearch => toUzNewAlphabet(super.modeResearch);
 
   @override
-  String get modeResearchDescription => toUzNewAlphabet(super.modeResearchDescription);
+  String get modeResearchDescription =>
+      toUzNewAlphabet(super.modeResearchDescription);
 
   @override
   String get navHome => toUzNewAlphabet(super.navHome);
@@ -96,7 +100,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get searchUnavailable => toUzNewAlphabet(super.searchUnavailable);
 
   @override
-  String get moduleForensicMedicine => toUzNewAlphabet(super.moduleForensicMedicine);
+  String get moduleForensicMedicine =>
+      toUzNewAlphabet(super.moduleForensicMedicine);
 
   @override
   String get moduleToxicology => toUzNewAlphabet(super.moduleToxicology);
@@ -168,10 +173,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get settingsMode => toUzNewAlphabet(super.settingsMode);
 
   @override
-  String get scientificDatabaseLabel => toUzNewAlphabet(super.scientificDatabaseLabel);
+  String get scientificDatabaseLabel =>
+      toUzNewAlphabet(super.scientificDatabaseLabel);
 
   @override
-  String get scientificDatabaseNotInstalled => toUzNewAlphabet(super.scientificDatabaseNotInstalled);
+  String get scientificDatabaseNotInstalled =>
+      toUzNewAlphabet(super.scientificDatabaseNotInstalled);
 
   @override
   String get appVersionLabel => toUzNewAlphabet(super.appVersionLabel);
@@ -180,7 +187,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get legalSection => toUzNewAlphabet(super.legalSection);
 
   @override
-  String get scientificDisclaimerLink => toUzNewAlphabet(super.scientificDisclaimerLink);
+  String get scientificDisclaimerLink =>
+      toUzNewAlphabet(super.scientificDisclaimerLink);
 
   @override
   String get diagnosticsSection => toUzNewAlphabet(super.diagnosticsSection);
@@ -194,7 +202,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.diagnosticsSettingsLoad(ms));
 
   @override
-  String get diagnosticsNotMeasured => toUzNewAlphabet(super.diagnosticsNotMeasured);
+  String get diagnosticsNotMeasured =>
+      toUzNewAlphabet(super.diagnosticsNotMeasured);
 
   @override
   String get toolsTitle => toUzNewAlphabet(super.toolsTitle);
@@ -215,16 +224,19 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get homeRecentSearches => toUzNewAlphabet(super.homeRecentSearches);
 
   @override
-  String get homeEmptyRecentTools => toUzNewAlphabet(super.homeEmptyRecentTools);
+  String get homeEmptyRecentTools =>
+      toUzNewAlphabet(super.homeEmptyRecentTools);
 
   @override
   String get homeEmptyFavorites => toUzNewAlphabet(super.homeEmptyFavorites);
 
   @override
-  String get homeEmptyRecentSearches => toUzNewAlphabet(super.homeEmptyRecentSearches);
+  String get homeEmptyRecentSearches =>
+      toUzNewAlphabet(super.homeEmptyRecentSearches);
 
   @override
-  String get homeContinueLearning => toUzNewAlphabet(super.homeContinueLearning);
+  String get homeContinueLearning =>
+      toUzNewAlphabet(super.homeContinueLearning);
 
   @override
   String get homeStudyHubBody => toUzNewAlphabet(super.homeStudyHubBody);
@@ -245,10 +257,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get toolsSubtitle => toUzNewAlphabet(super.toolsSubtitle);
 
   @override
-  String get toolCategoryToxicology => toUzNewAlphabet(super.toolCategoryToxicology);
+  String get toolCategoryToxicology =>
+      toUzNewAlphabet(super.toolCategoryToxicology);
 
   @override
-  String get toolCategoryConversions => toUzNewAlphabet(super.toolCategoryConversions);
+  String get toolCategoryConversions =>
+      toUzNewAlphabet(super.toolCategoryConversions);
 
   @override
   String get toolDilutionName => toUzNewAlphabet(super.toolDilutionName);
@@ -305,10 +319,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get toolUnitsDesc => toUzNewAlphabet(super.toolUnitsDesc);
 
   @override
-  String get toolEthanolUnitsName => toUzNewAlphabet(super.toolEthanolUnitsName);
+  String get toolEthanolUnitsName =>
+      toUzNewAlphabet(super.toolEthanolUnitsName);
 
   @override
-  String get toolEthanolUnitsDesc => toUzNewAlphabet(super.toolEthanolUnitsDesc);
+  String get toolEthanolUnitsDesc =>
+      toUzNewAlphabet(super.toolEthanolUnitsDesc);
 
   @override
   String get toolStatusAvailable => toUzNewAlphabet(super.toolStatusAvailable);
@@ -380,19 +396,23 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get calcWarnExceeds => toUzNewAlphabet(super.calcWarnExceeds);
 
   @override
-  String get calcDilutionAssumptionConservation => toUzNewAlphabet(super.calcDilutionAssumptionConservation);
+  String get calcDilutionAssumptionConservation =>
+      toUzNewAlphabet(super.calcDilutionAssumptionConservation);
 
   @override
-  String get calcDilutionAssumptionMixing => toUzNewAlphabet(super.calcDilutionAssumptionMixing);
+  String get calcDilutionAssumptionMixing =>
+      toUzNewAlphabet(super.calcDilutionAssumptionMixing);
 
   @override
-  String get calcDilutionLimitationContraction => toUzNewAlphabet(super.calcDilutionLimitationContraction);
+  String get calcDilutionLimitationContraction =>
+      toUzNewAlphabet(super.calcDilutionLimitationContraction);
 
   @override
   String get calcDefinitional => toUzNewAlphabet(super.calcDefinitional);
 
   @override
-  String get calcNeedsReviewNotice => toUzNewAlphabet(super.calcNeedsReviewNotice);
+  String get calcNeedsReviewNotice =>
+      toUzNewAlphabet(super.calcNeedsReviewNotice);
 
   @override
   String calcResultSemantics(String value) =>
@@ -420,7 +440,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get filterAll => toUzNewAlphabet(super.filterAll);
 
   @override
-  String get libraryEmptyFiltered => toUzNewAlphabet(super.libraryEmptyFiltered);
+  String get libraryEmptyFiltered =>
+      toUzNewAlphabet(super.libraryEmptyFiltered);
 
   @override
   String get detailNames => toUzNewAlphabet(super.detailNames);
@@ -438,10 +459,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get detailMethods => toUzNewAlphabet(super.detailMethods);
 
   @override
-  String get detailConcentrations => toUzNewAlphabet(super.detailConcentrations);
+  String get detailConcentrations =>
+      toUzNewAlphabet(super.detailConcentrations);
 
   @override
-  String get detailInterpretation => toUzNewAlphabet(super.detailInterpretation);
+  String get detailInterpretation =>
+      toUzNewAlphabet(super.detailInterpretation);
 
   @override
   String get detailStability => toUzNewAlphabet(super.detailStability);
@@ -453,7 +476,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get detailReferences => toUzNewAlphabet(super.detailReferences);
 
   @override
-  String get detailEvidenceStatus => toUzNewAlphabet(super.detailEvidenceStatus);
+  String get detailEvidenceStatus =>
+      toUzNewAlphabet(super.detailEvidenceStatus);
 
   @override
   String get detailLastReviewed => toUzNewAlphabet(super.detailLastReviewed);
@@ -465,7 +489,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get detailPlaceholder => toUzNewAlphabet(super.detailPlaceholder);
 
   @override
-  String get detailConcentrationsNote => toUzNewAlphabet(super.detailConcentrationsNote);
+  String get detailConcentrationsNote =>
+      toUzNewAlphabet(super.detailConcentrationsNote);
 
   @override
   String get sourcesButton => toUzNewAlphabet(super.sourcesButton);
@@ -549,10 +574,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get aiSectionAvailable => toUzNewAlphabet(super.aiSectionAvailable);
 
   @override
-  String get aiSectionConsiderations => toUzNewAlphabet(super.aiSectionConsiderations);
+  String get aiSectionConsiderations =>
+      toUzNewAlphabet(super.aiSectionConsiderations);
 
   @override
-  String get aiSectionLimitations => toUzNewAlphabet(super.aiSectionLimitations);
+  String get aiSectionLimitations =>
+      toUzNewAlphabet(super.aiSectionLimitations);
 
   @override
   String get aiSampleInternal => toUzNewAlphabet(super.aiSampleInternal);
@@ -564,10 +591,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get aiSampleLimitation => toUzNewAlphabet(super.aiSampleLimitation);
 
   @override
-  String get aiEvidenceInternalVerified => toUzNewAlphabet(super.aiEvidenceInternalVerified);
+  String get aiEvidenceInternalVerified =>
+      toUzNewAlphabet(super.aiEvidenceInternalVerified);
 
   @override
-  String get aiEvidenceInternalReviewed => toUzNewAlphabet(super.aiEvidenceInternalReviewed);
+  String get aiEvidenceInternalReviewed =>
+      toUzNewAlphabet(super.aiEvidenceInternalReviewed);
 
   @override
   String get aiEvidenceExternal => toUzNewAlphabet(super.aiEvidenceExternal);
@@ -639,10 +668,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get flashcardAgain => toUzNewAlphabet(super.flashcardAgain);
 
   @override
-  String get profileSectionPreferences => toUzNewAlphabet(super.profileSectionPreferences);
+  String get profileSectionPreferences =>
+      toUzNewAlphabet(super.profileSectionPreferences);
 
   @override
-  String get profileSectionAccount => toUzNewAlphabet(super.profileSectionAccount);
+  String get profileSectionAccount =>
+      toUzNewAlphabet(super.profileSectionAccount);
 
   @override
   String get profileSectionAbout => toUzNewAlphabet(super.profileSectionAbout);
@@ -693,34 +724,43 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get moduleHubReference => toUzNewAlphabet(super.moduleHubReference);
 
   @override
-  String get settingsJurisdiction => toUzNewAlphabet(super.settingsJurisdiction);
+  String get settingsJurisdiction =>
+      toUzNewAlphabet(super.settingsJurisdiction);
 
   @override
-  String get jurisdictionPickerIntro => toUzNewAlphabet(super.jurisdictionPickerIntro);
+  String get jurisdictionPickerIntro =>
+      toUzNewAlphabet(super.jurisdictionPickerIntro);
 
   @override
-  String get jurisdictionGroupGlobal => toUzNewAlphabet(super.jurisdictionGroupGlobal);
+  String get jurisdictionGroupGlobal =>
+      toUzNewAlphabet(super.jurisdictionGroupGlobal);
 
   @override
-  String get jurisdictionGroupCountries => toUzNewAlphabet(super.jurisdictionGroupCountries);
+  String get jurisdictionGroupCountries =>
+      toUzNewAlphabet(super.jurisdictionGroupCountries);
 
   @override
-  String get jurisdictionNoContent => toUzNewAlphabet(super.jurisdictionNoContent);
+  String get jurisdictionNoContent =>
+      toUzNewAlphabet(super.jurisdictionNoContent);
 
   @override
   String get jurisdictionCompare => toUzNewAlphabet(super.jurisdictionCompare);
 
   @override
-  String get jurisdictionCompareSoon => toUzNewAlphabet(super.jurisdictionCompareSoon);
+  String get jurisdictionCompareSoon =>
+      toUzNewAlphabet(super.jurisdictionCompareSoon);
 
   @override
-  String get jurisdictionInternationalHint => toUzNewAlphabet(super.jurisdictionInternationalHint);
+  String get jurisdictionInternationalHint =>
+      toUzNewAlphabet(super.jurisdictionInternationalHint);
 
   @override
-  String get detailLayerScientific => toUzNewAlphabet(super.detailLayerScientific);
+  String get detailLayerScientific =>
+      toUzNewAlphabet(super.detailLayerScientific);
 
   @override
-  String get detailLayerScientificNote => toUzNewAlphabet(super.detailLayerScientificNote);
+  String get detailLayerScientificNote =>
+      toUzNewAlphabet(super.detailLayerScientificNote);
 
   @override
   String detailLayerJurisdiction(String name) =>
@@ -730,10 +770,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get detailLegalStatus => toUzNewAlphabet(super.detailLegalStatus);
 
   @override
-  String get detailNationalMethods => toUzNewAlphabet(super.detailNationalMethods);
+  String get detailNationalMethods =>
+      toUzNewAlphabet(super.detailNationalMethods);
 
   @override
-  String get detailChangeJurisdiction => toUzNewAlphabet(super.detailChangeJurisdiction);
+  String get detailChangeJurisdiction =>
+      toUzNewAlphabet(super.detailChangeJurisdiction);
 
   @override
   String get homePilotNotice => toUzNewAlphabet(super.homePilotNotice);
@@ -742,10 +784,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get detailIdentity => toUzNewAlphabet(super.detailIdentity);
 
   @override
-  String get detailMolecularFormula => toUzNewAlphabet(super.detailMolecularFormula);
+  String get detailMolecularFormula =>
+      toUzNewAlphabet(super.detailMolecularFormula);
 
   @override
-  String get detailMolecularWeight => toUzNewAlphabet(super.detailMolecularWeight);
+  String get detailMolecularWeight =>
+      toUzNewAlphabet(super.detailMolecularWeight);
 
   @override
   String get detailIupac => toUzNewAlphabet(super.detailIupac);
@@ -754,16 +798,19 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get detailBiomarker => toUzNewAlphabet(super.detailBiomarker);
 
   @override
-  String get detailTransformationProduct => toUzNewAlphabet(super.detailTransformationProduct);
+  String get detailTransformationProduct =>
+      toUzNewAlphabet(super.detailTransformationProduct);
 
   @override
-  String get detailMetabolismNote => toUzNewAlphabet(super.detailMetabolismNote);
+  String get detailMetabolismNote =>
+      toUzNewAlphabet(super.detailMetabolismNote);
 
   @override
   String get detailExcerpt => toUzNewAlphabet(super.detailExcerpt);
 
   @override
-  String get detailExcerptWithheld => toUzNewAlphabet(super.detailExcerptWithheld);
+  String get detailExcerptWithheld =>
+      toUzNewAlphabet(super.detailExcerptWithheld);
 
   @override
   String get detailProvenance => toUzNewAlphabet(super.detailProvenance);
@@ -773,7 +820,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.detailEvidenceLevel(level));
 
   @override
-  String get detailReviewerStatus => toUzNewAlphabet(super.detailReviewerStatus);
+  String get detailReviewerStatus =>
+      toUzNewAlphabet(super.detailReviewerStatus);
 
   @override
   String get detailReviewsNone => toUzNewAlphabet(super.detailReviewsNone);
@@ -790,7 +838,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.detailVersionValue(claim, pack));
 
   @override
-  String get detailTranslationDraft => toUzNewAlphabet(super.detailTranslationDraft);
+  String get detailTranslationDraft =>
+      toUzNewAlphabet(super.detailTranslationDraft);
 
   @override
   String get detailNoContentYet => toUzNewAlphabet(super.detailNoContentYet);
@@ -800,7 +849,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.detailSourceAccessed(date));
 
   @override
-  String get detailIdentifierVerified => toUzNewAlphabet(super.detailIdentifierVerified);
+  String get detailIdentifierVerified =>
+      toUzNewAlphabet(super.detailIdentifierVerified);
 
   @override
   String detailSourceLicence(String mode) =>
@@ -825,7 +875,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.legalLastVerified(date));
 
   @override
-  String get legalInternationalLayer => toUzNewAlphabet(super.legalInternationalLayer);
+  String get legalInternationalLayer =>
+      toUzNewAlphabet(super.legalInternationalLayer);
 
   @override
   String get legalNotInListNote => toUzNewAlphabet(super.legalNotInListNote);
@@ -844,7 +895,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get libraryNotInstalled => toUzNewAlphabet(super.libraryNotInstalled);
 
   @override
-  String get aboutTrademarkPending => toUzNewAlphabet(super.aboutTrademarkPending);
+  String get aboutTrademarkPending =>
+      toUzNewAlphabet(super.aboutTrademarkPending);
 
   @override
   String get statusDraft => toUzNewAlphabet(super.statusDraft);
@@ -856,10 +908,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get searchGroupReagents => toUzNewAlphabet(super.searchGroupReagents);
 
   @override
-  String get searchGroupScreening => toUzNewAlphabet(super.searchGroupScreening);
+  String get searchGroupScreening =>
+      toUzNewAlphabet(super.searchGroupScreening);
 
   @override
-  String get searchGroupStandardsLaws => toUzNewAlphabet(super.searchGroupStandardsLaws);
+  String get searchGroupStandardsLaws =>
+      toUzNewAlphabet(super.searchGroupStandardsLaws);
 
   @override
   String get moduleBiochemistry => toUzNewAlphabet(super.moduleBiochemistry);
@@ -910,7 +964,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get knowledgeEmpty => toUzNewAlphabet(super.knowledgeEmpty);
 
   @override
-  String get knowledgeNoSourcedContent => toUzNewAlphabet(super.knowledgeNoSourcedContent);
+  String get knowledgeNoSourcedContent =>
+      toUzNewAlphabet(super.knowledgeNoSourcedContent);
 
   @override
   String get knowledgeStatements => toUzNewAlphabet(super.knowledgeStatements);
@@ -929,7 +984,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.knowledgeSourceRef(source));
 
   @override
-  String get knowledgeNotInSource => toUzNewAlphabet(super.knowledgeNotInSource);
+  String get knowledgeNotInSource =>
+      toUzNewAlphabet(super.knowledgeNotInSource);
 
   @override
   String get knowledgeTaxonomy => toUzNewAlphabet(super.knowledgeTaxonomy);
@@ -954,7 +1010,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get reagentSteps => toUzNewAlphabet(super.reagentSteps);
 
   @override
-  String get reagentOrderNotStated => toUzNewAlphabet(super.reagentOrderNotStated);
+  String get reagentOrderNotStated =>
+      toUzNewAlphabet(super.reagentOrderNotStated);
 
   @override
   String get reagentStorage => toUzNewAlphabet(super.reagentStorage);
@@ -975,7 +1032,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get reagentQc => toUzNewAlphabet(super.reagentQc);
 
   @override
-  String get reagentOpenCalculator => toUzNewAlphabet(super.reagentOpenCalculator);
+  String get reagentOpenCalculator =>
+      toUzNewAlphabet(super.reagentOpenCalculator);
 
   @override
   String get screeningBanner => toUzNewAlphabet(super.screeningBanner);
@@ -993,31 +1051,40 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get screeningCutoff => toUzNewAlphabet(super.screeningCutoff);
 
   @override
-  String get screeningSensitivity => toUzNewAlphabet(super.screeningSensitivity);
+  String get screeningSensitivity =>
+      toUzNewAlphabet(super.screeningSensitivity);
 
   @override
-  String get screeningSpecificity => toUzNewAlphabet(super.screeningSpecificity);
+  String get screeningSpecificity =>
+      toUzNewAlphabet(super.screeningSpecificity);
 
   @override
-  String get screeningCrossReactivity => toUzNewAlphabet(super.screeningCrossReactivity);
+  String get screeningCrossReactivity =>
+      toUzNewAlphabet(super.screeningCrossReactivity);
 
   @override
-  String get screeningFalsePositive => toUzNewAlphabet(super.screeningFalsePositive);
+  String get screeningFalsePositive =>
+      toUzNewAlphabet(super.screeningFalsePositive);
 
   @override
-  String get screeningFalseNegative => toUzNewAlphabet(super.screeningFalseNegative);
+  String get screeningFalseNegative =>
+      toUzNewAlphabet(super.screeningFalseNegative);
 
   @override
-  String get screeningLimitations => toUzNewAlphabet(super.screeningLimitations);
+  String get screeningLimitations =>
+      toUzNewAlphabet(super.screeningLimitations);
 
   @override
-  String get screeningConfirmatory => toUzNewAlphabet(super.screeningConfirmatory);
+  String get screeningConfirmatory =>
+      toUzNewAlphabet(super.screeningConfirmatory);
 
   @override
-  String get methodKindScientific => toUzNewAlphabet(super.methodKindScientific);
+  String get methodKindScientific =>
+      toUzNewAlphabet(super.methodKindScientific);
 
   @override
-  String get methodKindInternational => toUzNewAlphabet(super.methodKindInternational);
+  String get methodKindInternational =>
+      toUzNewAlphabet(super.methodKindInternational);
 
   @override
   String get methodKindNational => toUzNewAlphabet(super.methodKindNational);
@@ -1041,29 +1108,33 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get methodTechniques => toUzNewAlphabet(super.methodTechniques);
 
   @override
-  String get methodDocumentVersion => toUzNewAlphabet(super.methodDocumentVersion);
+  String get methodDocumentVersion =>
+      toUzNewAlphabet(super.methodDocumentVersion);
 
   @override
-  String emergingDate(String date) =>
-      toUzNewAlphabet(super.emergingDate(date));
+  String emergingDate(String date) => toUzNewAlphabet(super.emergingDate(date));
 
   @override
-  String get emergingEvidenceType => toUzNewAlphabet(super.emergingEvidenceType);
+  String get emergingEvidenceType =>
+      toUzNewAlphabet(super.emergingEvidenceType);
 
   @override
   String get emergingScopeGlobal => toUzNewAlphabet(super.emergingScopeGlobal);
 
   @override
-  String get evidenceTypeOfficialAlert => toUzNewAlphabet(super.evidenceTypeOfficialAlert);
+  String get evidenceTypeOfficialAlert =>
+      toUzNewAlphabet(super.evidenceTypeOfficialAlert);
 
   @override
-  String get evidenceTypePeerReviewed => toUzNewAlphabet(super.evidenceTypePeerReviewed);
+  String get evidenceTypePeerReviewed =>
+      toUzNewAlphabet(super.evidenceTypePeerReviewed);
 
   @override
   String get evidenceTypeReport => toUzNewAlphabet(super.evidenceTypeReport);
 
   @override
-  String get evidenceTypeStandard => toUzNewAlphabet(super.evidenceTypeStandard);
+  String get evidenceTypeStandard =>
+      toUzNewAlphabet(super.evidenceTypeStandard);
 
   @override
   String get emergingNote => toUzNewAlphabet(super.emergingNote);
@@ -1072,25 +1143,32 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get emergingCatNps => toUzNewAlphabet(super.emergingCatNps);
 
   @override
-  String get emergingCatSyntheticOpioids => toUzNewAlphabet(super.emergingCatSyntheticOpioids);
+  String get emergingCatSyntheticOpioids =>
+      toUzNewAlphabet(super.emergingCatSyntheticOpioids);
 
   @override
-  String get emergingCatStimulants => toUzNewAlphabet(super.emergingCatStimulants);
+  String get emergingCatStimulants =>
+      toUzNewAlphabet(super.emergingCatStimulants);
 
   @override
-  String get emergingCatAnalytical => toUzNewAlphabet(super.emergingCatAnalytical);
+  String get emergingCatAnalytical =>
+      toUzNewAlphabet(super.emergingCatAnalytical);
 
   @override
-  String get emergingCatInterferences => toUzNewAlphabet(super.emergingCatInterferences);
+  String get emergingCatInterferences =>
+      toUzNewAlphabet(super.emergingCatInterferences);
 
   @override
-  String get emergingCatPostmortem => toUzNewAlphabet(super.emergingCatPostmortem);
+  String get emergingCatPostmortem =>
+      toUzNewAlphabet(super.emergingCatPostmortem);
 
   @override
-  String get emergingCatStandards => toUzNewAlphabet(super.emergingCatStandards);
+  String get emergingCatStandards =>
+      toUzNewAlphabet(super.emergingCatStandards);
 
   @override
-  String get emergingCatValidation => toUzNewAlphabet(super.emergingCatValidation);
+  String get emergingCatValidation =>
+      toUzNewAlphabet(super.emergingCatValidation);
 
   @override
   String get emergingCatQuality => toUzNewAlphabet(super.emergingCatQuality);
@@ -1099,16 +1177,20 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get emergingCatAlert => toUzNewAlphabet(super.emergingCatAlert);
 
   @override
-  String get fmTopicDeathInvestigation => toUzNewAlphabet(super.fmTopicDeathInvestigation);
+  String get fmTopicDeathInvestigation =>
+      toUzNewAlphabet(super.fmTopicDeathInvestigation);
 
   @override
-  String get fmTopicCauseMechanismManner => toUzNewAlphabet(super.fmTopicCauseMechanismManner);
+  String get fmTopicCauseMechanismManner =>
+      toUzNewAlphabet(super.fmTopicCauseMechanismManner);
 
   @override
-  String get fmTopicPostmortemChanges => toUzNewAlphabet(super.fmTopicPostmortemChanges);
+  String get fmTopicPostmortemChanges =>
+      toUzNewAlphabet(super.fmTopicPostmortemChanges);
 
   @override
-  String get fmTopicPostmortemInterval => toUzNewAlphabet(super.fmTopicPostmortemInterval);
+  String get fmTopicPostmortemInterval =>
+      toUzNewAlphabet(super.fmTopicPostmortemInterval);
 
   @override
   String get fmTopicAlgorMortis => toUzNewAlphabet(super.fmTopicAlgorMortis);
@@ -1120,19 +1202,23 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get fmTopicLivorMortis => toUzNewAlphabet(super.fmTopicLivorMortis);
 
   @override
-  String get fmTopicDecomposition => toUzNewAlphabet(super.fmTopicDecomposition);
+  String get fmTopicDecomposition =>
+      toUzNewAlphabet(super.fmTopicDecomposition);
 
   @override
   String get fmTopicTrauma => toUzNewAlphabet(super.fmTopicTrauma);
 
   @override
-  String get fmTopicBluntForceInjury => toUzNewAlphabet(super.fmTopicBluntForceInjury);
+  String get fmTopicBluntForceInjury =>
+      toUzNewAlphabet(super.fmTopicBluntForceInjury);
 
   @override
-  String get fmTopicSharpForceInjury => toUzNewAlphabet(super.fmTopicSharpForceInjury);
+  String get fmTopicSharpForceInjury =>
+      toUzNewAlphabet(super.fmTopicSharpForceInjury);
 
   @override
-  String get fmTopicFirearmInjury => toUzNewAlphabet(super.fmTopicFirearmInjury);
+  String get fmTopicFirearmInjury =>
+      toUzNewAlphabet(super.fmTopicFirearmInjury);
 
   @override
   String get fmTopicAsphyxia => toUzNewAlphabet(super.fmTopicAsphyxia);
@@ -1141,10 +1227,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get fmTopicBurns => toUzNewAlphabet(super.fmTopicBurns);
 
   @override
-  String get fmTopicElectricalInjury => toUzNewAlphabet(super.fmTopicElectricalInjury);
+  String get fmTopicElectricalInjury =>
+      toUzNewAlphabet(super.fmTopicElectricalInjury);
 
   @override
-  String get fmTopicHypoHyperthermia => toUzNewAlphabet(super.fmTopicHypoHyperthermia);
+  String get fmTopicHypoHyperthermia =>
+      toUzNewAlphabet(super.fmTopicHypoHyperthermia);
 
   @override
   String get fmTopicDrowning => toUzNewAlphabet(super.fmTopicDrowning);
@@ -1153,31 +1241,37 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get fmTopicAnthropology => toUzNewAlphabet(super.fmTopicAnthropology);
 
   @override
-  String get fmTopicAgeEstimation => toUzNewAlphabet(super.fmTopicAgeEstimation);
+  String get fmTopicAgeEstimation =>
+      toUzNewAlphabet(super.fmTopicAgeEstimation);
 
   @override
-  String get fmTopicSexEstimation => toUzNewAlphabet(super.fmTopicSexEstimation);
+  String get fmTopicSexEstimation =>
+      toUzNewAlphabet(super.fmTopicSexEstimation);
 
   @override
-  String get fmTopicStatureEstimation => toUzNewAlphabet(super.fmTopicStatureEstimation);
+  String get fmTopicStatureEstimation =>
+      toUzNewAlphabet(super.fmTopicStatureEstimation);
 
   @override
   String get fmTopicOdontology => toUzNewAlphabet(super.fmTopicOdontology);
 
   @override
-  String get fmTopicDisasterVictimIdentification => toUzNewAlphabet(super.fmTopicDisasterVictimIdentification);
+  String get fmTopicDisasterVictimIdentification =>
+      toUzNewAlphabet(super.fmTopicDisasterVictimIdentification);
 
   @override
   String get fmTopicHistology => toUzNewAlphabet(super.fmTopicHistology);
 
   @override
-  String get fmTopicPostmortemImaging => toUzNewAlphabet(super.fmTopicPostmortemImaging);
+  String get fmTopicPostmortemImaging =>
+      toUzNewAlphabet(super.fmTopicPostmortemImaging);
 
   @override
   String get compareTitle => toUzNewAlphabet(super.compareTitle);
 
   @override
-  String get compareTopicDrinkDrive => toUzNewAlphabet(super.compareTopicDrinkDrive);
+  String get compareTopicDrinkDrive =>
+      toUzNewAlphabet(super.compareTopicDrinkDrive);
 
   @override
   String get compareNoData => toUzNewAlphabet(super.compareNoData);
@@ -1204,7 +1298,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.compareAuthority(name));
 
   @override
-  String get compareOfficialExcerpt => toUzNewAlphabet(super.compareOfficialExcerpt);
+  String get compareOfficialExcerpt =>
+      toUzNewAlphabet(super.compareOfficialExcerpt);
 
   @override
   String get specimenBreath => toUzNewAlphabet(super.specimenBreath);
@@ -1249,16 +1344,20 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get calcErrorPurity => toUzNewAlphabet(super.calcErrorPurity);
 
   @override
-  String get calcSolutionAssumptionDefinition => toUzNewAlphabet(super.calcSolutionAssumptionDefinition);
+  String get calcSolutionAssumptionDefinition =>
+      toUzNewAlphabet(super.calcSolutionAssumptionDefinition);
 
   @override
-  String get calcSolutionAssumptionInputs => toUzNewAlphabet(super.calcSolutionAssumptionInputs);
+  String get calcSolutionAssumptionInputs =>
+      toUzNewAlphabet(super.calcSolutionAssumptionInputs);
 
   @override
-  String get calcSolutionLimitationRecipe => toUzNewAlphabet(super.calcSolutionLimitationRecipe);
+  String get calcSolutionLimitationRecipe =>
+      toUzNewAlphabet(super.calcSolutionLimitationRecipe);
 
   @override
-  String get calcSolutionLimitationVolume => toUzNewAlphabet(super.calcSolutionLimitationVolume);
+  String get calcSolutionLimitationVolume =>
+      toUzNewAlphabet(super.calcSolutionLimitationVolume);
 
   @override
   String get calcWarnPurity => toUzNewAlphabet(super.calcWarnPurity);
@@ -1278,22 +1377,26 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get legalStatusAmended => toUzNewAlphabet(super.legalStatusAmended);
 
   @override
-  String get legalStatusSuperseded => toUzNewAlphabet(super.legalStatusSuperseded);
+  String get legalStatusSuperseded =>
+      toUzNewAlphabet(super.legalStatusSuperseded);
 
   @override
   String get legalStatusRepealed => toUzNewAlphabet(super.legalStatusRepealed);
 
   @override
-  String get aiExperienceProfessional => toUzNewAlphabet(super.aiExperienceProfessional);
+  String get aiExperienceProfessional =>
+      toUzNewAlphabet(super.aiExperienceProfessional);
 
   @override
   String get aiExperienceTutor => toUzNewAlphabet(super.aiExperienceTutor);
 
   @override
-  String get aiExperienceProfessionalHint => toUzNewAlphabet(super.aiExperienceProfessionalHint);
+  String get aiExperienceProfessionalHint =>
+      toUzNewAlphabet(super.aiExperienceProfessionalHint);
 
   @override
-  String get aiExperienceTutorHint => toUzNewAlphabet(super.aiExperienceTutorHint);
+  String get aiExperienceTutorHint =>
+      toUzNewAlphabet(super.aiExperienceTutorHint);
 
   @override
   String get aiFindSources => toUzNewAlphabet(super.aiFindSources);
@@ -1320,10 +1423,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get learnLevelAll => toUzNewAlphabet(super.learnLevelAll);
 
   @override
-  String get learnLevelFoundation => toUzNewAlphabet(super.learnLevelFoundation);
+  String get learnLevelFoundation =>
+      toUzNewAlphabet(super.learnLevelFoundation);
 
   @override
-  String get learnLevelIntermediate => toUzNewAlphabet(super.learnLevelIntermediate);
+  String get learnLevelIntermediate =>
+      toUzNewAlphabet(super.learnLevelIntermediate);
 
   @override
   String get learnLevelAdvanced => toUzNewAlphabet(super.learnLevelAdvanced);
@@ -1348,7 +1453,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get learnCompleted => toUzNewAlphabet(super.learnCompleted);
 
   @override
-  String get learnCourseSourceNote => toUzNewAlphabet(super.learnCourseSourceNote);
+  String get learnCourseSourceNote =>
+      toUzNewAlphabet(super.learnCourseSourceNote);
 
   @override
   String get learnExam => toUzNewAlphabet(super.learnExam);
@@ -1379,7 +1485,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get moduleResearch => toUzNewAlphabet(super.moduleResearch);
 
   @override
-  String get group_alcohols_volatiles => toUzNewAlphabet(super.group_alcohols_volatiles);
+  String get group_alcohols_volatiles =>
+      toUzNewAlphabet(super.group_alcohols_volatiles);
 
   @override
   String get group_toxic_gases => toUzNewAlphabet(super.group_toxic_gases);
@@ -1394,28 +1501,35 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get group_cannabinoids => toUzNewAlphabet(super.group_cannabinoids);
 
   @override
-  String get group_hallucinogens_dissociatives => toUzNewAlphabet(super.group_hallucinogens_dissociatives);
+  String get group_hallucinogens_dissociatives =>
+      toUzNewAlphabet(super.group_hallucinogens_dissociatives);
 
   @override
-  String get group_benzodiazepines => toUzNewAlphabet(super.group_benzodiazepines);
+  String get group_benzodiazepines =>
+      toUzNewAlphabet(super.group_benzodiazepines);
 
   @override
-  String get group_sedatives_hypnotics => toUzNewAlphabet(super.group_sedatives_hypnotics);
+  String get group_sedatives_hypnotics =>
+      toUzNewAlphabet(super.group_sedatives_hypnotics);
 
   @override
   String get group_barbiturates => toUzNewAlphabet(super.group_barbiturates);
 
   @override
-  String get group_antidepressants => toUzNewAlphabet(super.group_antidepressants);
+  String get group_antidepressants =>
+      toUzNewAlphabet(super.group_antidepressants);
 
   @override
-  String get group_antipsychotics => toUzNewAlphabet(super.group_antipsychotics);
+  String get group_antipsychotics =>
+      toUzNewAlphabet(super.group_antipsychotics);
 
   @override
-  String get group_anticonvulsants => toUzNewAlphabet(super.group_anticonvulsants);
+  String get group_anticonvulsants =>
+      toUzNewAlphabet(super.group_anticonvulsants);
 
   @override
-  String get group_pharmaceuticals => toUzNewAlphabet(super.group_pharmaceuticals);
+  String get group_pharmaceuticals =>
+      toUzNewAlphabet(super.group_pharmaceuticals);
 
   @override
   String get group_adulterants => toUzNewAlphabet(super.group_adulterants);
@@ -1424,7 +1538,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get group_pesticides => toUzNewAlphabet(super.group_pesticides);
 
   @override
-  String get group_metals_inorganic => toUzNewAlphabet(super.group_metals_inorganic);
+  String get group_metals_inorganic =>
+      toUzNewAlphabet(super.group_metals_inorganic);
 
   @override
   String get groupAll => toUzNewAlphabet(super.groupAll);
@@ -1433,16 +1548,20 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get groupEditorialNote => toUzNewAlphabet(super.groupEditorialNote);
 
   @override
-  String get detailAnalyticalMethods => toUzNewAlphabet(super.detailAnalyticalMethods);
+  String get detailAnalyticalMethods =>
+      toUzNewAlphabet(super.detailAnalyticalMethods);
 
   @override
-  String get detailReportedConcentrations => toUzNewAlphabet(super.detailReportedConcentrations);
+  String get detailReportedConcentrations =>
+      toUzNewAlphabet(super.detailReportedConcentrations);
 
   @override
-  String get concentrationNotThreshold => toUzNewAlphabet(super.concentrationNotThreshold);
+  String get concentrationNotThreshold =>
+      toUzNewAlphabet(super.concentrationNotThreshold);
 
   @override
-  String get concentrationSpecimen => toUzNewAlphabet(super.concentrationSpecimen);
+  String get concentrationSpecimen =>
+      toUzNewAlphabet(super.concentrationSpecimen);
 
   @override
   String concentrationContext(String context) =>
@@ -1464,7 +1583,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get relationConfirmedBy => toUzNewAlphabet(super.relationConfirmedBy);
 
   @override
-  String get relationRelatedTopic => toUzNewAlphabet(super.relationRelatedTopic);
+  String get relationRelatedTopic =>
+      toUzNewAlphabet(super.relationRelatedTopic);
 
   @override
   String get relationResearch => toUzNewAlphabet(super.relationResearch);
@@ -1474,8 +1594,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.relationBasis(basis));
 
   @override
-  String researchMore(int count) =>
-      toUzNewAlphabet(super.researchMore(count));
+  String researchMore(int count) => toUzNewAlphabet(super.researchMore(count));
 
   @override
   String get researchTitle => toUzNewAlphabet(super.researchTitle);
@@ -1487,10 +1606,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get researchAll => toUzNewAlphabet(super.researchAll);
 
   @override
-  String get researchPeerReviewed => toUzNewAlphabet(super.researchPeerReviewed);
+  String get researchPeerReviewed =>
+      toUzNewAlphabet(super.researchPeerReviewed);
 
   @override
-  String get researchNotPeerReviewed => toUzNewAlphabet(super.researchNotPeerReviewed);
+  String get researchNotPeerReviewed =>
+      toUzNewAlphabet(super.researchNotPeerReviewed);
 
   @override
   String researchEvidence(String level) =>
@@ -1514,37 +1635,46 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.researchSourceApi(api));
 
   @override
-  String get researchKindJournalArticle => toUzNewAlphabet(super.researchKindJournalArticle);
+  String get researchKindJournalArticle =>
+      toUzNewAlphabet(super.researchKindJournalArticle);
 
   @override
   String get researchKindReview => toUzNewAlphabet(super.researchKindReview);
 
   @override
-  String get researchKindSystematicReview => toUzNewAlphabet(super.researchKindSystematicReview);
+  String get researchKindSystematicReview =>
+      toUzNewAlphabet(super.researchKindSystematicReview);
 
   @override
-  String get researchKindMetaAnalysis => toUzNewAlphabet(super.researchKindMetaAnalysis);
+  String get researchKindMetaAnalysis =>
+      toUzNewAlphabet(super.researchKindMetaAnalysis);
 
   @override
-  String get researchKindCaseReport => toUzNewAlphabet(super.researchKindCaseReport);
+  String get researchKindCaseReport =>
+      toUzNewAlphabet(super.researchKindCaseReport);
 
   @override
-  String get researchKindConferenceAbstract => toUzNewAlphabet(super.researchKindConferenceAbstract);
+  String get researchKindConferenceAbstract =>
+      toUzNewAlphabet(super.researchKindConferenceAbstract);
 
   @override
-  String get researchKindConferencePaper => toUzNewAlphabet(super.researchKindConferencePaper);
+  String get researchKindConferencePaper =>
+      toUzNewAlphabet(super.researchKindConferencePaper);
 
   @override
-  String get researchKindDissertation => toUzNewAlphabet(super.researchKindDissertation);
+  String get researchKindDissertation =>
+      toUzNewAlphabet(super.researchKindDissertation);
 
   @override
   String get researchKindThesis => toUzNewAlphabet(super.researchKindThesis);
 
   @override
-  String get researchKindOfficialReport => toUzNewAlphabet(super.researchKindOfficialReport);
+  String get researchKindOfficialReport =>
+      toUzNewAlphabet(super.researchKindOfficialReport);
 
   @override
-  String get researchKindStandard => toUzNewAlphabet(super.researchKindStandard);
+  String get researchKindStandard =>
+      toUzNewAlphabet(super.researchKindStandard);
 
   @override
   String get imageSchematic => toUzNewAlphabet(super.imageSchematic);
@@ -1563,11 +1693,11 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get imageAttribution => toUzNewAlphabet(super.imageAttribution);
 
   @override
-  String get imageOriginalCaption => toUzNewAlphabet(super.imageOriginalCaption);
+  String get imageOriginalCaption =>
+      toUzNewAlphabet(super.imageOriginalCaption);
 
   @override
-  String imageOpen(String title) =>
-      toUzNewAlphabet(super.imageOpen(title));
+  String imageOpen(String title) => toUzNewAlphabet(super.imageOpen(title));
 
   @override
   String get imageUnavailable => toUzNewAlphabet(super.imageUnavailable);
@@ -1579,13 +1709,15 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get licenseOriginalWork => toUzNewAlphabet(super.licenseOriginalWork);
 
   @override
-  String get licenseFactualDepiction => toUzNewAlphabet(super.licenseFactualDepiction);
+  String get licenseFactualDepiction =>
+      toUzNewAlphabet(super.licenseFactualDepiction);
 
   @override
   String get histologyNote => toUzNewAlphabet(super.histologyNote);
 
   @override
-  String get fieldCaseObservation => toUzNewAlphabet(super.fieldCaseObservation);
+  String get fieldCaseObservation =>
+      toUzNewAlphabet(super.fieldCaseObservation);
 
   @override
   String get fieldComposition => toUzNewAlphabet(super.fieldComposition);
@@ -1648,7 +1780,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get tech_spectroscopy => toUzNewAlphabet(super.tech_spectroscopy);
 
   @override
-  String get tech_samplePreparation => toUzNewAlphabet(super.tech_samplePreparation);
+  String get tech_samplePreparation =>
+      toUzNewAlphabet(super.tech_samplePreparation);
 
   @override
   String get tech_extraction => toUzNewAlphabet(super.tech_extraction);
@@ -1669,43 +1802,55 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get tech_statistics => toUzNewAlphabet(super.tech_statistics);
 
   @override
-  String get methodSection_purpose => toUzNewAlphabet(super.methodSection_purpose);
+  String get methodSection_purpose =>
+      toUzNewAlphabet(super.methodSection_purpose);
 
   @override
   String get methodSection_scope => toUzNewAlphabet(super.methodSection_scope);
 
   @override
-  String get methodSection_analytes => toUzNewAlphabet(super.methodSection_analytes);
+  String get methodSection_analytes =>
+      toUzNewAlphabet(super.methodSection_analytes);
 
   @override
-  String get methodSection_specimens => toUzNewAlphabet(super.methodSection_specimens);
+  String get methodSection_specimens =>
+      toUzNewAlphabet(super.methodSection_specimens);
 
   @override
-  String get methodSection_principle => toUzNewAlphabet(super.methodSection_principle);
+  String get methodSection_principle =>
+      toUzNewAlphabet(super.methodSection_principle);
 
   @override
-  String get methodSection_equipment => toUzNewAlphabet(super.methodSection_equipment);
+  String get methodSection_equipment =>
+      toUzNewAlphabet(super.methodSection_equipment);
 
   @override
-  String get methodSection_reagents => toUzNewAlphabet(super.methodSection_reagents);
+  String get methodSection_reagents =>
+      toUzNewAlphabet(super.methodSection_reagents);
 
   @override
-  String get methodSection_samplePreparation => toUzNewAlphabet(super.methodSection_samplePreparation);
+  String get methodSection_samplePreparation =>
+      toUzNewAlphabet(super.methodSection_samplePreparation);
 
   @override
-  String get methodSection_calibrationQc => toUzNewAlphabet(super.methodSection_calibrationQc);
+  String get methodSection_calibrationQc =>
+      toUzNewAlphabet(super.methodSection_calibrationQc);
 
   @override
-  String get methodSection_workflow => toUzNewAlphabet(super.methodSection_workflow);
+  String get methodSection_workflow =>
+      toUzNewAlphabet(super.methodSection_workflow);
 
   @override
-  String get methodSection_interpretation => toUzNewAlphabet(super.methodSection_interpretation);
+  String get methodSection_interpretation =>
+      toUzNewAlphabet(super.methodSection_interpretation);
 
   @override
-  String get methodSection_limitations => toUzNewAlphabet(super.methodSection_limitations);
+  String get methodSection_limitations =>
+      toUzNewAlphabet(super.methodSection_limitations);
 
   @override
-  String get methodSection_validationStatus => toUzNewAlphabet(super.methodSection_validationStatus);
+  String get methodSection_validationStatus =>
+      toUzNewAlphabet(super.methodSection_validationStatus);
 
   @override
   String get toolPercentName => toUzNewAlphabet(super.toolPercentName);
@@ -1723,10 +1868,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get calcTo => toUzNewAlphabet(super.calcTo);
 
   @override
-  String get calcConvertAssumption => toUzNewAlphabet(super.calcConvertAssumption);
+  String get calcConvertAssumption =>
+      toUzNewAlphabet(super.calcConvertAssumption);
 
   @override
-  String get calcConvertLimitation => toUzNewAlphabet(super.calcConvertLimitation);
+  String get calcConvertLimitation =>
+      toUzNewAlphabet(super.calcConvertLimitation);
 
   @override
   String get calcMolarityMass => toUzNewAlphabet(super.calcMolarityMass);
@@ -1738,7 +1885,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get calcMolarityResult => toUzNewAlphabet(super.calcMolarityResult);
 
   @override
-  String get calcMolarityAssumption => toUzNewAlphabet(super.calcMolarityAssumption);
+  String get calcMolarityAssumption =>
+      toUzNewAlphabet(super.calcMolarityAssumption);
 
   @override
   String get calcPercentBasis => toUzNewAlphabet(super.calcPercentBasis);
@@ -1765,10 +1913,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get calcPercentSolute => toUzNewAlphabet(super.calcPercentSolute);
 
   @override
-  String get calcPercentAssumption => toUzNewAlphabet(super.calcPercentAssumption);
+  String get calcPercentAssumption =>
+      toUzNewAlphabet(super.calcPercentAssumption);
 
   @override
-  String get calcPercentLimitationBasis => toUzNewAlphabet(super.calcPercentLimitationBasis);
+  String get calcPercentLimitationBasis =>
+      toUzNewAlphabet(super.calcPercentLimitationBasis);
 
   @override
   String get calcErrorPercent => toUzNewAlphabet(super.calcErrorPercent);
@@ -1825,10 +1975,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get calcRegSyx => toUzNewAlphabet(super.calcRegSyx);
 
   @override
-  String get calcRegAssumptionOls => toUzNewAlphabet(super.calcRegAssumptionOls);
+  String get calcRegAssumptionOls =>
+      toUzNewAlphabet(super.calcRegAssumptionOls);
 
   @override
-  String get calcRegLimitationRange => toUzNewAlphabet(super.calcRegLimitationRange);
+  String get calcRegLimitationRange =>
+      toUzNewAlphabet(super.calcRegLimitationRange);
 
   @override
   String get calcRegWarnFew => toUzNewAlphabet(super.calcRegWarnFew);
@@ -1849,10 +2001,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get calcLodBasisBlank => toUzNewAlphabet(super.calcLodBasisBlank);
 
   @override
-  String get calcLodBasisResidual => toUzNewAlphabet(super.calcLodBasisResidual);
+  String get calcLodBasisResidual =>
+      toUzNewAlphabet(super.calcLodBasisResidual);
 
   @override
-  String get calcLodBasisIntercept => toUzNewAlphabet(super.calcLodBasisIntercept);
+  String get calcLodBasisIntercept =>
+      toUzNewAlphabet(super.calcLodBasisIntercept);
 
   @override
   String get calcLodLod => toUzNewAlphabet(super.calcLodLod);
@@ -1861,22 +2015,27 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get calcLodLoq => toUzNewAlphabet(super.calcLodLoq);
 
   @override
-  String get calcLodAssumptionSigma => toUzNewAlphabet(super.calcLodAssumptionSigma);
+  String get calcLodAssumptionSigma =>
+      toUzNewAlphabet(super.calcLodAssumptionSigma);
 
   @override
-  String get calcLodAssumptionLinear => toUzNewAlphabet(super.calcLodAssumptionLinear);
+  String get calcLodAssumptionLinear =>
+      toUzNewAlphabet(super.calcLodAssumptionLinear);
 
   @override
-  String get calcLodLimitationOne => toUzNewAlphabet(super.calcLodLimitationOne);
+  String get calcLodLimitationOne =>
+      toUzNewAlphabet(super.calcLodLimitationOne);
 
   @override
-  String get calcLodLimitationVerify => toUzNewAlphabet(super.calcLodLimitationVerify);
+  String get calcLodLimitationVerify =>
+      toUzNewAlphabet(super.calcLodLimitationVerify);
 
   @override
   String get calcLodReference => toUzNewAlphabet(super.calcLodReference);
 
   @override
-  String get calcLodReferenceNote => toUzNewAlphabet(super.calcLodReferenceNote);
+  String get calcLodReferenceNote =>
+      toUzNewAlphabet(super.calcLodReferenceNote);
 
   @override
   String get calcUseRegression => toUzNewAlphabet(super.calcUseRegression);
@@ -1885,13 +2044,16 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get calcErrorSigma => toUzNewAlphabet(super.calcErrorSigma);
 
   @override
-  String get researchKindGuideline => toUzNewAlphabet(super.researchKindGuideline);
+  String get researchKindGuideline =>
+      toUzNewAlphabet(super.researchKindGuideline);
 
   @override
-  String get researchKindValidationStudy => toUzNewAlphabet(super.researchKindValidationStudy);
+  String get researchKindValidationStudy =>
+      toUzNewAlphabet(super.researchKindValidationStudy);
 
   @override
-  String get researchKindCaseSeries => toUzNewAlphabet(super.researchKindCaseSeries);
+  String get researchKindCaseSeries =>
+      toUzNewAlphabet(super.researchKindCaseSeries);
 
   @override
   String get tech_gcMsMs => toUzNewAlphabet(super.tech_gcMsMs);
@@ -1903,10 +2065,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get tech_hrms => toUzNewAlphabet(super.tech_hrms);
 
   @override
-  String get tech_spectrophotometry => toUzNewAlphabet(super.tech_spectrophotometry);
+  String get tech_spectrophotometry =>
+      toUzNewAlphabet(super.tech_spectrophotometry);
 
   @override
-  String get emergingCatBiomarkers => toUzNewAlphabet(super.emergingCatBiomarkers);
+  String get emergingCatBiomarkers =>
+      toUzNewAlphabet(super.emergingCatBiomarkers);
 
   @override
   String get emergingCatMethods => toUzNewAlphabet(super.emergingCatMethods);
@@ -1947,64 +2111,84 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.homeAllDisciplinesBody(count));
 
   @override
-  String get disc_forensicMedicine => toUzNewAlphabet(super.disc_forensicMedicine);
+  String get disc_forensicMedicine =>
+      toUzNewAlphabet(super.disc_forensicMedicine);
 
   @override
-  String get disc_forensicPathology => toUzNewAlphabet(super.disc_forensicPathology);
+  String get disc_forensicPathology =>
+      toUzNewAlphabet(super.disc_forensicPathology);
 
   @override
-  String get disc_clinicalForensicMedicine => toUzNewAlphabet(super.disc_clinicalForensicMedicine);
+  String get disc_clinicalForensicMedicine =>
+      toUzNewAlphabet(super.disc_clinicalForensicMedicine);
 
   @override
-  String get disc_forensicRadiology => toUzNewAlphabet(super.disc_forensicRadiology);
+  String get disc_forensicRadiology =>
+      toUzNewAlphabet(super.disc_forensicRadiology);
 
   @override
-  String get disc_forensicPsychiatry => toUzNewAlphabet(super.disc_forensicPsychiatry);
+  String get disc_forensicPsychiatry =>
+      toUzNewAlphabet(super.disc_forensicPsychiatry);
 
   @override
-  String get disc_forensicToxicology => toUzNewAlphabet(super.disc_forensicToxicology);
+  String get disc_forensicToxicology =>
+      toUzNewAlphabet(super.disc_forensicToxicology);
 
   @override
-  String get disc_forensicChemistry => toUzNewAlphabet(super.disc_forensicChemistry);
+  String get disc_forensicChemistry =>
+      toUzNewAlphabet(super.disc_forensicChemistry);
 
   @override
-  String get disc_forensicBiochemistry => toUzNewAlphabet(super.disc_forensicBiochemistry);
+  String get disc_forensicBiochemistry =>
+      toUzNewAlphabet(super.disc_forensicBiochemistry);
 
   @override
-  String get disc_analyticalScience => toUzNewAlphabet(super.disc_analyticalScience);
+  String get disc_analyticalScience =>
+      toUzNewAlphabet(super.disc_analyticalScience);
 
   @override
-  String get disc_forensicBiology => toUzNewAlphabet(super.disc_forensicBiology);
+  String get disc_forensicBiology =>
+      toUzNewAlphabet(super.disc_forensicBiology);
 
   @override
-  String get disc_forensicGenetics => toUzNewAlphabet(super.disc_forensicGenetics);
+  String get disc_forensicGenetics =>
+      toUzNewAlphabet(super.disc_forensicGenetics);
 
   @override
-  String get disc_forensicHistology => toUzNewAlphabet(super.disc_forensicHistology);
+  String get disc_forensicHistology =>
+      toUzNewAlphabet(super.disc_forensicHistology);
 
   @override
-  String get disc_forensicAnthropology => toUzNewAlphabet(super.disc_forensicAnthropology);
+  String get disc_forensicAnthropology =>
+      toUzNewAlphabet(super.disc_forensicAnthropology);
 
   @override
-  String get disc_forensicOdontology => toUzNewAlphabet(super.disc_forensicOdontology);
+  String get disc_forensicOdontology =>
+      toUzNewAlphabet(super.disc_forensicOdontology);
 
   @override
-  String get disc_forensicMicrobiology => toUzNewAlphabet(super.disc_forensicMicrobiology);
+  String get disc_forensicMicrobiology =>
+      toUzNewAlphabet(super.disc_forensicMicrobiology);
 
   @override
-  String get disc_forensicEntomology => toUzNewAlphabet(super.disc_forensicEntomology);
+  String get disc_forensicEntomology =>
+      toUzNewAlphabet(super.disc_forensicEntomology);
 
   @override
-  String get disc_humanIdentification => toUzNewAlphabet(super.disc_humanIdentification);
+  String get disc_humanIdentification =>
+      toUzNewAlphabet(super.disc_humanIdentification);
 
   @override
-  String get disc_laboratoryQuality => toUzNewAlphabet(super.disc_laboratoryQuality);
+  String get disc_laboratoryQuality =>
+      toUzNewAlphabet(super.disc_laboratoryQuality);
 
   @override
-  String get disc_evidenceHandling => toUzNewAlphabet(super.disc_evidenceHandling);
+  String get disc_evidenceHandling =>
+      toUzNewAlphabet(super.disc_evidenceHandling);
 
   @override
-  String get disc_educationResearch => toUzNewAlphabet(super.disc_educationResearch);
+  String get disc_educationResearch =>
+      toUzNewAlphabet(super.disc_educationResearch);
 
   @override
   String get discGroupMedicine => toUzNewAlphabet(super.discGroupMedicine);
@@ -2032,7 +2216,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.disciplineRecords(count));
 
   @override
-  String get disciplineReferenceOnly => toUzNewAlphabet(super.disciplineReferenceOnly);
+  String get disciplineReferenceOnly =>
+      toUzNewAlphabet(super.disciplineReferenceOnly);
 
   @override
   String get disciplineModules => toUzNewAlphabet(super.disciplineModules);
@@ -2050,7 +2235,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get jurisdictionCurrent => toUzNewAlphabet(super.jurisdictionCurrent);
 
   @override
-  String get jurisdictionLayersTitle => toUzNewAlphabet(super.jurisdictionLayersTitle);
+  String get jurisdictionLayersTitle =>
+      toUzNewAlphabet(super.jurisdictionLayersTitle);
 
   @override
   String get layerGlobalCore => toUzNewAlphabet(super.layerGlobalCore);
@@ -2062,41 +2248,52 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get layerCountryLaw => toUzNewAlphabet(super.layerCountryLaw);
 
   @override
-  String get jurisdictionViewDetails => toUzNewAlphabet(super.jurisdictionViewDetails);
+  String get jurisdictionViewDetails =>
+      toUzNewAlphabet(super.jurisdictionViewDetails);
 
   @override
-  String get jurisdictionWithContent => toUzNewAlphabet(super.jurisdictionWithContent);
+  String get jurisdictionWithContent =>
+      toUzNewAlphabet(super.jurisdictionWithContent);
 
   @override
-  String get jurisdictionSearchHint => toUzNewAlphabet(super.jurisdictionSearchHint);
+  String get jurisdictionSearchHint =>
+      toUzNewAlphabet(super.jurisdictionSearchHint);
 
   @override
-  String get jurisdictionNotVerified => toUzNewAlphabet(super.jurisdictionNotVerified);
+  String get jurisdictionNotVerified =>
+      toUzNewAlphabet(super.jurisdictionNotVerified);
 
   @override
-  String get jurisdictionPilotContent => toUzNewAlphabet(super.jurisdictionPilotContent);
+  String get jurisdictionPilotContent =>
+      toUzNewAlphabet(super.jurisdictionPilotContent);
 
   @override
-  String get jurisdictionNoContentShort => toUzNewAlphabet(super.jurisdictionNoContentShort);
+  String get jurisdictionNoContentShort =>
+      toUzNewAlphabet(super.jurisdictionNoContentShort);
 
   @override
   String jurisdictionChain(String chain) =>
       toUzNewAlphabet(super.jurisdictionChain(chain));
 
   @override
-  String get jurisdictionGlobalWorks => toUzNewAlphabet(super.jurisdictionGlobalWorks);
+  String get jurisdictionGlobalWorks =>
+      toUzNewAlphabet(super.jurisdictionGlobalWorks);
 
   @override
-  String get jurisdictionInstruments => toUzNewAlphabet(super.jurisdictionInstruments);
+  String get jurisdictionInstruments =>
+      toUzNewAlphabet(super.jurisdictionInstruments);
 
   @override
-  String get jurisdictionIntlLayer => toUzNewAlphabet(super.jurisdictionIntlLayer);
+  String get jurisdictionIntlLayer =>
+      toUzNewAlphabet(super.jurisdictionIntlLayer);
 
   @override
-  String get jurisdictionOwnLayer => toUzNewAlphabet(super.jurisdictionOwnLayer);
+  String get jurisdictionOwnLayer =>
+      toUzNewAlphabet(super.jurisdictionOwnLayer);
 
   @override
-  String get jurisdictionCountryNames => toUzNewAlphabet(super.jurisdictionCountryNames);
+  String get jurisdictionCountryNames =>
+      toUzNewAlphabet(super.jurisdictionCountryNames);
 
   @override
   String get docKindLaw => toUzNewAlphabet(super.docKindLaw);
@@ -2132,7 +2329,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get bindingAdvisory => toUzNewAlphabet(super.bindingAdvisory);
 
   @override
-  String get bindingInstitutional => toUzNewAlphabet(super.bindingInstitutional);
+  String get bindingInstitutional =>
+      toUzNewAlphabet(super.bindingInstitutional);
 
   @override
   String get bindingScientific => toUzNewAlphabet(super.bindingScientific);
@@ -2186,8 +2384,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get libraryStandards => toUzNewAlphabet(super.libraryStandards);
 
   @override
-  String libraryCount(int count) =>
-      toUzNewAlphabet(super.libraryCount(count));
+  String libraryCount(int count) => toUzNewAlphabet(super.libraryCount(count));
 
   @override
   String get libraryGroupScience => toUzNewAlphabet(super.libraryGroupScience);
@@ -2208,7 +2405,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get researchPeriodAll => toUzNewAlphabet(super.researchPeriodAll);
 
   @override
-  String get researchPeriodRecent => toUzNewAlphabet(super.researchPeriodRecent);
+  String get researchPeriodRecent =>
+      toUzNewAlphabet(super.researchPeriodRecent);
 
   @override
   String get researchPeriod2010 => toUzNewAlphabet(super.researchPeriod2010);
@@ -2217,7 +2415,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get researchPeriodOlder => toUzNewAlphabet(super.researchPeriodOlder);
 
   @override
-  String get researchDisciplineAll => toUzNewAlphabet(super.researchDisciplineAll);
+  String get researchDisciplineAll =>
+      toUzNewAlphabet(super.researchDisciplineAll);
 
   @override
   String get researchDiscipline => toUzNewAlphabet(super.researchDiscipline);
@@ -2265,7 +2464,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get detailNotYetSourced => toUzNewAlphabet(super.detailNotYetSourced);
 
   @override
-  String get detailJurisdictionShort => toUzNewAlphabet(super.detailJurisdictionShort);
+  String get detailJurisdictionShort =>
+      toUzNewAlphabet(super.detailJurisdictionShort);
 
   @override
   String searchMetaboliteOf(String name) =>
@@ -2275,22 +2475,28 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get aiBlockedOfficial => toUzNewAlphabet(super.aiBlockedOfficial);
 
   @override
-  String get aiJurisdictionRequired => toUzNewAlphabet(super.aiJurisdictionRequired);
+  String get aiJurisdictionRequired =>
+      toUzNewAlphabet(super.aiJurisdictionRequired);
 
   @override
-  String get aiSelectJurisdiction => toUzNewAlphabet(super.aiSelectJurisdiction);
+  String get aiSelectJurisdiction =>
+      toUzNewAlphabet(super.aiSelectJurisdiction);
 
   @override
-  String get aiSectionEvidenceStatus => toUzNewAlphabet(super.aiSectionEvidenceStatus);
+  String get aiSectionEvidenceStatus =>
+      toUzNewAlphabet(super.aiSectionEvidenceStatus);
 
   @override
-  String get aiSampleEvidenceStatus => toUzNewAlphabet(super.aiSampleEvidenceStatus);
+  String get aiSampleEvidenceStatus =>
+      toUzNewAlphabet(super.aiSampleEvidenceStatus);
 
   @override
-  String get aiSectionJurisdiction => toUzNewAlphabet(super.aiSectionJurisdiction);
+  String get aiSectionJurisdiction =>
+      toUzNewAlphabet(super.aiSectionJurisdiction);
 
   @override
-  String get aiSampleJurisdiction => toUzNewAlphabet(super.aiSampleJurisdiction);
+  String get aiSampleJurisdiction =>
+      toUzNewAlphabet(super.aiSampleJurisdiction);
 
   @override
   String get aiSectionRelated => toUzNewAlphabet(super.aiSectionRelated);
@@ -2323,10 +2529,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get tpl_confirmation => toUzNewAlphabet(super.tpl_confirmation);
 
   @override
-  String get tpl_analyticalMethods => toUzNewAlphabet(super.tpl_analyticalMethods);
+  String get tpl_analyticalMethods =>
+      toUzNewAlphabet(super.tpl_analyticalMethods);
 
   @override
-  String get tpl_reportedConcentrations => toUzNewAlphabet(super.tpl_reportedConcentrations);
+  String get tpl_reportedConcentrations =>
+      toUzNewAlphabet(super.tpl_reportedConcentrations);
 
   @override
   String get tpl_interpretation => toUzNewAlphabet(super.tpl_interpretation);
@@ -2356,13 +2564,15 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get tpl_forensicUse => toUzNewAlphabet(super.tpl_forensicUse);
 
   @override
-  String get tpl_samplePreparation => toUzNewAlphabet(super.tpl_samplePreparation);
+  String get tpl_samplePreparation =>
+      toUzNewAlphabet(super.tpl_samplePreparation);
 
   @override
   String get tpl_instrumentation => toUzNewAlphabet(super.tpl_instrumentation);
 
   @override
-  String get tpl_qualitativeQuantitative => toUzNewAlphabet(super.tpl_qualitativeQuantitative);
+  String get tpl_qualitativeQuantitative =>
+      toUzNewAlphabet(super.tpl_qualitativeQuantitative);
 
   @override
   String get tpl_validation => toUzNewAlphabet(super.tpl_validation);
@@ -2377,7 +2587,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get tpl_qc => toUzNewAlphabet(super.tpl_qc);
 
   @override
-  String get tpl_relatedSubstances => toUzNewAlphabet(super.tpl_relatedSubstances);
+  String get tpl_relatedSubstances =>
+      toUzNewAlphabet(super.tpl_relatedSubstances);
 
   @override
   String get tpl_relatedReagents => toUzNewAlphabet(super.tpl_relatedReagents);
@@ -2392,7 +2603,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get tpl_preparation => toUzNewAlphabet(super.tpl_preparation);
 
   @override
-  String get tpl_storageStability => toUzNewAlphabet(super.tpl_storageStability);
+  String get tpl_storageStability =>
+      toUzNewAlphabet(super.tpl_storageStability);
 
   @override
   String get tpl_safety => toUzNewAlphabet(super.tpl_safety);
@@ -2428,16 +2640,20 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get tpl_specimen => toUzNewAlphabet(super.tpl_specimen);
 
   @override
-  String get tpl_collectionContext => toUzNewAlphabet(super.tpl_collectionContext);
+  String get tpl_collectionContext =>
+      toUzNewAlphabet(super.tpl_collectionContext);
 
   @override
-  String get tpl_postmortemLimitations => toUzNewAlphabet(super.tpl_postmortemLimitations);
+  String get tpl_postmortemLimitations =>
+      toUzNewAlphabet(super.tpl_postmortemLimitations);
 
   @override
-  String get tpl_analyticalMethod => toUzNewAlphabet(super.tpl_analyticalMethod);
+  String get tpl_analyticalMethod =>
+      toUzNewAlphabet(super.tpl_analyticalMethod);
 
   @override
-  String get tpl_interpretationLimitations => toUzNewAlphabet(super.tpl_interpretationLimitations);
+  String get tpl_interpretationLimitations =>
+      toUzNewAlphabet(super.tpl_interpretationLimitations);
 
   @override
   String get tpl_definition => toUzNewAlphabet(super.tpl_definition);
@@ -2462,15 +2678,13 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get provStatement => toUzNewAlphabet(super.provStatement);
 
   @override
-  String provLocation(String loc) =>
-      toUzNewAlphabet(super.provLocation(loc));
+  String provLocation(String loc) => toUzNewAlphabet(super.provLocation(loc));
 
   @override
   String get provSource => toUzNewAlphabet(super.provSource);
 
   @override
-  String provTier(String tier) =>
-      toUzNewAlphabet(super.provTier(tier));
+  String provTier(String tier) => toUzNewAlphabet(super.provTier(tier));
 
   @override
   String get provTierA => toUzNewAlphabet(super.provTierA);
@@ -2491,7 +2705,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get reuseNonCommercial => toUzNewAlphabet(super.reuseNonCommercial);
 
   @override
-  String get reuseLicenseRequired => toUzNewAlphabet(super.reuseLicenseRequired);
+  String get reuseLicenseRequired =>
+      toUzNewAlphabet(super.reuseLicenseRequired);
 
   @override
   String get reuseLookup => toUzNewAlphabet(super.reuseLookup);
@@ -2503,13 +2718,16 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get srcLifecycleCurrent => toUzNewAlphabet(super.srcLifecycleCurrent);
 
   @override
-  String get srcLifecycleRetracted => toUzNewAlphabet(super.srcLifecycleRetracted);
+  String get srcLifecycleRetracted =>
+      toUzNewAlphabet(super.srcLifecycleRetracted);
 
   @override
-  String get srcLifecycleSuperseded => toUzNewAlphabet(super.srcLifecycleSuperseded);
+  String get srcLifecycleSuperseded =>
+      toUzNewAlphabet(super.srcLifecycleSuperseded);
 
   @override
-  String get srcLifecycleWithdrawn => toUzNewAlphabet(super.srcLifecycleWithdrawn);
+  String get srcLifecycleWithdrawn =>
+      toUzNewAlphabet(super.srcLifecycleWithdrawn);
 
   @override
   String provCheckedOn(String date) =>
@@ -2562,10 +2780,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.provClaimId(id, v));
 
   @override
-  String get roleForensicToxicology => toUzNewAlphabet(super.roleForensicToxicology);
+  String get roleForensicToxicology =>
+      toUzNewAlphabet(super.roleForensicToxicology);
 
   @override
-  String get roleForensicMedicine => toUzNewAlphabet(super.roleForensicMedicine);
+  String get roleForensicMedicine =>
+      toUzNewAlphabet(super.roleForensicMedicine);
 
   @override
   String get roleLaboratory => toUzNewAlphabet(super.roleLaboratory);
@@ -2610,7 +2830,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get conflictKindOverlap => toUzNewAlphabet(super.conflictKindOverlap);
 
   @override
-  String get conflictKindCharacterisation => toUzNewAlphabet(super.conflictKindCharacterisation);
+  String get conflictKindCharacterisation =>
+      toUzNewAlphabet(super.conflictKindCharacterisation);
 
   @override
   String get conflictQuestion => toUzNewAlphabet(super.conflictQuestion);
@@ -2622,7 +2843,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get conflictStateOpen => toUzNewAlphabet(super.conflictStateOpen);
 
   @override
-  String get conflictStateResolved => toUzNewAlphabet(super.conflictStateResolved);
+  String get conflictStateResolved =>
+      toUzNewAlphabet(super.conflictStateResolved);
 
   @override
   String get conflictNoteLabel => toUzNewAlphabet(super.conflictNoteLabel);
@@ -2718,8 +2940,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get metRoleNote => toUzNewAlphabet(super.metRoleNote);
 
   @override
-  String metParentOf(String name) =>
-      toUzNewAlphabet(super.metParentOf(name));
+  String metParentOf(String name) => toUzNewAlphabet(super.metParentOf(name));
 
   @override
   String get specimensTitle => toUzNewAlphabet(super.specimensTitle);
@@ -2743,14 +2964,14 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get specimenCatTissue => toUzNewAlphabet(super.specimenCatTissue);
 
   @override
-  String get specimenCatKeratinous => toUzNewAlphabet(super.specimenCatKeratinous);
+  String get specimenCatKeratinous =>
+      toUzNewAlphabet(super.specimenCatKeratinous);
 
   @override
   String get specimenCatContent => toUzNewAlphabet(super.specimenCatContent);
 
   @override
-  String specimenRecords(int n) =>
-      toUzNewAlphabet(super.specimenRecords(n));
+  String specimenRecords(int n) => toUzNewAlphabet(super.specimenRecords(n));
 
   @override
   String get detailMeasuredIn => toUzNewAlphabet(super.detailMeasuredIn);
@@ -2795,8 +3016,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get chainNone => toUzNewAlphabet(super.chainNone);
 
   @override
-  String chainBasis(String id) =>
-      toUzNewAlphabet(super.chainBasis(id));
+  String chainBasis(String id) => toUzNewAlphabet(super.chainBasis(id));
 
   @override
   String chainResearchCount(int n) =>
@@ -2826,7 +3046,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.stdVerifiedFrom(date));
 
   @override
-  String get stdTextNotReproduced => toUzNewAlphabet(super.stdTextNotReproduced);
+  String get stdTextNotReproduced =>
+      toUzNewAlphabet(super.stdTextNotReproduced);
 
   @override
   String get reviewTitle => toUzNewAlphabet(super.reviewTitle);
@@ -2877,7 +3098,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get methodPublishedNote => toUzNewAlphabet(super.methodPublishedNote);
 
   @override
-  String get reagentConcentration => toUzNewAlphabet(super.reagentConcentration);
+  String get reagentConcentration =>
+      toUzNewAlphabet(super.reagentConcentration);
 
   @override
   String get reagentSolvent => toUzNewAlphabet(super.reagentSolvent);
@@ -2895,19 +3117,23 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get screeningResultType => toUzNewAlphabet(super.screeningResultType);
 
   @override
-  String get screeningDetectionWindow => toUzNewAlphabet(super.screeningDetectionWindow);
+  String get screeningDetectionWindow =>
+      toUzNewAlphabet(super.screeningDetectionWindow);
 
   @override
-  String get screeningInterference => toUzNewAlphabet(super.screeningInterference);
+  String get screeningInterference =>
+      toUzNewAlphabet(super.screeningInterference);
 
   @override
-  String get evInternationalStandard => toUzNewAlphabet(super.evInternationalStandard);
+  String get evInternationalStandard =>
+      toUzNewAlphabet(super.evInternationalStandard);
 
   @override
   String get evGuideline => toUzNewAlphabet(super.evGuideline);
 
   @override
-  String get evPublishedValidated => toUzNewAlphabet(super.evPublishedValidated);
+  String get evPublishedValidated =>
+      toUzNewAlphabet(super.evPublishedValidated);
 
   @override
   String get evNationalMethod => toUzNewAlphabet(super.evNationalMethod);
@@ -2916,16 +3142,19 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get evLocalSop => toUzNewAlphabet(super.evLocalSop);
 
   @override
-  String get evEducationalSummary => toUzNewAlphabet(super.evEducationalSummary);
+  String get evEducationalSummary =>
+      toUzNewAlphabet(super.evEducationalSummary);
 
   @override
-  String get disciplineSourcedTopics => toUzNewAlphabet(super.disciplineSourcedTopics);
+  String get disciplineSourcedTopics =>
+      toUzNewAlphabet(super.disciplineSourcedTopics);
 
   @override
   String get aiRagAnswer => toUzNewAlphabet(super.aiRagAnswer);
 
   @override
-  String get aiRagJurisdictionNotApplicable => toUzNewAlphabet(super.aiRagJurisdictionNotApplicable);
+  String get aiRagJurisdictionNotApplicable =>
+      toUzNewAlphabet(super.aiRagJurisdictionNotApplicable);
 
   @override
   String get aiLimNotVerified => toUzNewAlphabet(super.aiLimNotVerified);
@@ -2934,8 +3163,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get aiLimConflict => toUzNewAlphabet(super.aiLimConflict);
 
   @override
-  String aiLimRetracted(int n) =>
-      toUzNewAlphabet(super.aiLimRetracted(n));
+  String aiLimRetracted(int n) => toUzNewAlphabet(super.aiLimRetracted(n));
 
   @override
   String get aiLimExpert => toUzNewAlphabet(super.aiLimExpert);
@@ -2973,10 +3201,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.legalDomainRecords(n));
 
   @override
-  String get legalDomainNoContent => toUzNewAlphabet(super.legalDomainNoContent);
+  String get legalDomainNoContent =>
+      toUzNewAlphabet(super.legalDomainNoContent);
 
   @override
-  String get compareTopicControlStatus => toUzNewAlphabet(super.compareTopicControlStatus);
+  String get compareTopicControlStatus =>
+      toUzNewAlphabet(super.compareTopicControlStatus);
 
   @override
   String get ldExpertStatus => toUzNewAlphabet(super.ldExpertStatus);
@@ -2988,10 +3218,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get ldChainOfCustody => toUzNewAlphabet(super.ldChainOfCustody);
 
   @override
-  String get ldSpecimenCollection => toUzNewAlphabet(super.ldSpecimenCollection);
+  String get ldSpecimenCollection =>
+      toUzNewAlphabet(super.ldSpecimenCollection);
 
   @override
-  String get ldDeathInvestigation => toUzNewAlphabet(super.ldDeathInvestigation);
+  String get ldDeathInvestigation =>
+      toUzNewAlphabet(super.ldDeathInvestigation);
 
   @override
   String get ldAutopsy => toUzNewAlphabet(super.ldAutopsy);
@@ -3003,13 +3235,15 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get ldAlcoholDriving => toUzNewAlphabet(super.ldAlcoholDriving);
 
   @override
-  String get ldControlledSubstances => toUzNewAlphabet(super.ldControlledSubstances);
+  String get ldControlledSubstances =>
+      toUzNewAlphabet(super.ldControlledSubstances);
 
   @override
   String get ldReporting => toUzNewAlphabet(super.ldReporting);
 
   @override
-  String get ldLaboratoryStandards => toUzNewAlphabet(super.ldLaboratoryStandards);
+  String get ldLaboratoryStandards =>
+      toUzNewAlphabet(super.ldLaboratoryStandards);
 
   @override
   String get ldRetentionStorage => toUzNewAlphabet(super.ldRetentionStorage);
@@ -3018,7 +3252,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get ldTestimony => toUzNewAlphabet(super.ldTestimony);
 
   @override
-  String get ldQualityAccreditation => toUzNewAlphabet(super.ldQualityAccreditation);
+  String get ldQualityAccreditation =>
+      toUzNewAlphabet(super.ldQualityAccreditation);
 
   @override
   String get deleteLocalData => toUzNewAlphabet(super.deleteLocalData);
@@ -3027,7 +3262,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get deleteLocalDataBody => toUzNewAlphabet(super.deleteLocalDataBody);
 
   @override
-  String get deleteLocalDataConfirm => toUzNewAlphabet(super.deleteLocalDataConfirm);
+  String get deleteLocalDataConfirm =>
+      toUzNewAlphabet(super.deleteLocalDataConfirm);
 
   @override
   String get deleteLocalDataDone => toUzNewAlphabet(super.deleteLocalDataDone);
@@ -3060,7 +3296,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get accountPassword => toUzNewAlphabet(super.accountPassword);
 
   @override
-  String get accountConfirmPassword => toUzNewAlphabet(super.accountConfirmPassword);
+  String get accountConfirmPassword =>
+      toUzNewAlphabet(super.accountConfirmPassword);
 
   @override
   String get accountShowPassword => toUzNewAlphabet(super.accountShowPassword);
@@ -3087,8 +3324,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get passwordRulesTitle => toUzNewAlphabet(super.passwordRulesTitle);
 
   @override
-  String pwRuleMinLength(int n) =>
-      toUzNewAlphabet(super.pwRuleMinLength(n));
+  String pwRuleMinLength(int n) => toUzNewAlphabet(super.pwRuleMinLength(n));
 
   @override
   String get pwRuleLetter => toUzNewAlphabet(super.pwRuleLetter);
@@ -3140,8 +3376,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get forgotSubmit => toUzNewAlphabet(super.forgotSubmit);
 
   @override
-  String forgotSent(int minutes) =>
-      toUzNewAlphabet(super.forgotSent(minutes));
+  String forgotSent(int minutes) => toUzNewAlphabet(super.forgotSent(minutes));
 
   @override
   String get resetTitle => toUzNewAlphabet(super.resetTitle);
@@ -3183,7 +3418,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get authErrCodeExpired => toUzNewAlphabet(super.authErrCodeExpired);
 
   @override
-  String get authErrAlreadyVerified => toUzNewAlphabet(super.authErrAlreadyVerified);
+  String get authErrAlreadyVerified =>
+      toUzNewAlphabet(super.authErrAlreadyVerified);
 
   @override
   String get authErrTooMany => toUzNewAlphabet(super.authErrTooMany);
@@ -3195,7 +3431,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get authErrServer => toUzNewAlphabet(super.authErrServer);
 
   @override
-  String get authErrNotConfigured => toUzNewAlphabet(super.authErrNotConfigured);
+  String get authErrNotConfigured =>
+      toUzNewAlphabet(super.authErrNotConfigured);
 
   @override
   String get authErrRecentLogin => toUzNewAlphabet(super.authErrRecentLogin);
@@ -3210,19 +3447,24 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get deleteAccountBody => toUzNewAlphabet(super.deleteAccountBody);
 
   @override
-  String get deleteAccountLocalNote => toUzNewAlphabet(super.deleteAccountLocalNote);
+  String get deleteAccountLocalNote =>
+      toUzNewAlphabet(super.deleteAccountLocalNote);
 
   @override
-  String get deleteAccountUnderstand => toUzNewAlphabet(super.deleteAccountUnderstand);
+  String get deleteAccountUnderstand =>
+      toUzNewAlphabet(super.deleteAccountUnderstand);
 
   @override
-  String get deleteAccountPassword => toUzNewAlphabet(super.deleteAccountPassword);
+  String get deleteAccountPassword =>
+      toUzNewAlphabet(super.deleteAccountPassword);
 
   @override
-  String get deleteAccountConfirm => toUzNewAlphabet(super.deleteAccountConfirm);
+  String get deleteAccountConfirm =>
+      toUzNewAlphabet(super.deleteAccountConfirm);
 
   @override
-  String get deleteAccountFinalTitle => toUzNewAlphabet(super.deleteAccountFinalTitle);
+  String get deleteAccountFinalTitle =>
+      toUzNewAlphabet(super.deleteAccountFinalTitle);
 
   @override
   String get deleteAccountDone => toUzNewAlphabet(super.deleteAccountDone);
@@ -3249,10 +3491,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get availFilterBody => toUzNewAlphabet(super.availFilterBody);
 
   @override
-  String get availNotConnectedTitle => toUzNewAlphabet(super.availNotConnectedTitle);
+  String get availNotConnectedTitle =>
+      toUzNewAlphabet(super.availNotConnectedTitle);
 
   @override
-  String get availNotConnectedBody => toUzNewAlphabet(super.availNotConnectedBody);
+  String get availNotConnectedBody =>
+      toUzNewAlphabet(super.availNotConnectedBody);
 
   @override
   String get availServiceTitle => toUzNewAlphabet(super.availServiceTitle);
@@ -3303,7 +3547,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get concValueInQuote => toUzNewAlphabet(super.concValueInQuote);
 
   @override
-  String get concLivingPostmortem => toUzNewAlphabet(super.concLivingPostmortem);
+  String get concLivingPostmortem =>
+      toUzNewAlphabet(super.concLivingPostmortem);
 
   @override
   String get concSourceType => toUzNewAlphabet(super.concSourceType);
@@ -3321,7 +3566,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get concSectionResults => toUzNewAlphabet(super.concSectionResults);
 
   @override
-  String get concSectionDiscussion => toUzNewAlphabet(super.concSectionDiscussion);
+  String get concSectionDiscussion =>
+      toUzNewAlphabet(super.concSectionDiscussion);
 
   @override
   String get concStudyContext => toUzNewAlphabet(super.concStudyContext);
@@ -3357,10 +3603,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get calcReferenceLabel => toUzNewAlphabet(super.calcReferenceLabel);
 
   @override
-  String get calcInterpretationLabel => toUzNewAlphabet(super.calcInterpretationLabel);
+  String get calcInterpretationLabel =>
+      toUzNewAlphabet(super.calcInterpretationLabel);
 
   @override
-  String get calcInterpretationValue => toUzNewAlphabet(super.calcInterpretationValue);
+  String get calcInterpretationValue =>
+      toUzNewAlphabet(super.calcInterpretationValue);
 
   @override
   String get statusRejected => toUzNewAlphabet(super.statusRejected);
@@ -3372,7 +3620,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get modeRoleTitle => toUzNewAlphabet(super.modeRoleTitle);
 
   @override
-  String get modeProfessionalNotVerified => toUzNewAlphabet(super.modeProfessionalNotVerified);
+  String get modeProfessionalNotVerified =>
+      toUzNewAlphabet(super.modeProfessionalNotVerified);
 
   @override
   String get modeSwitchNote => toUzNewAlphabet(super.modeSwitchNote);
@@ -3390,16 +3639,19 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get roleForensicExpert => toUzNewAlphabet(super.roleForensicExpert);
 
   @override
-  String get roleForensicPhysician => toUzNewAlphabet(super.roleForensicPhysician);
+  String get roleForensicPhysician =>
+      toUzNewAlphabet(super.roleForensicPhysician);
 
   @override
-  String get roleForensicToxicologist => toUzNewAlphabet(super.roleForensicToxicologist);
+  String get roleForensicToxicologist =>
+      toUzNewAlphabet(super.roleForensicToxicologist);
 
   @override
   String get roleForensicChemist => toUzNewAlphabet(super.roleForensicChemist);
 
   @override
-  String get roleLaboratorySpecialist => toUzNewAlphabet(super.roleLaboratorySpecialist);
+  String get roleLaboratorySpecialist =>
+      toUzNewAlphabet(super.roleLaboratorySpecialist);
 
   @override
   String get rolePathologist => toUzNewAlphabet(super.rolePathologist);
@@ -3408,7 +3660,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get roleGeneticist => toUzNewAlphabet(super.roleGeneticist);
 
   @override
-  String get roleForensicBiochemist => toUzNewAlphabet(super.roleForensicBiochemist);
+  String get roleForensicBiochemist =>
+      toUzNewAlphabet(super.roleForensicBiochemist);
 
   @override
   String get roleAnthropologist => toUzNewAlphabet(super.roleAnthropologist);
@@ -3417,40 +3670,51 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get roleOdontologist => toUzNewAlphabet(super.roleOdontologist);
 
   @override
-  String get roleOtherProfessional => toUzNewAlphabet(super.roleOtherProfessional);
+  String get roleOtherProfessional =>
+      toUzNewAlphabet(super.roleOtherProfessional);
 
   @override
-  String get specForensicMedicine => toUzNewAlphabet(super.specForensicMedicine);
+  String get specForensicMedicine =>
+      toUzNewAlphabet(super.specForensicMedicine);
 
   @override
-  String get specForensicToxicology => toUzNewAlphabet(super.specForensicToxicology);
+  String get specForensicToxicology =>
+      toUzNewAlphabet(super.specForensicToxicology);
 
   @override
-  String get specForensicChemistry => toUzNewAlphabet(super.specForensicChemistry);
+  String get specForensicChemistry =>
+      toUzNewAlphabet(super.specForensicChemistry);
 
   @override
-  String get specAnalyticalLaboratory => toUzNewAlphabet(super.specAnalyticalLaboratory);
+  String get specAnalyticalLaboratory =>
+      toUzNewAlphabet(super.specAnalyticalLaboratory);
 
   @override
-  String get specForensicBiochemistry => toUzNewAlphabet(super.specForensicBiochemistry);
+  String get specForensicBiochemistry =>
+      toUzNewAlphabet(super.specForensicBiochemistry);
 
   @override
-  String get specPathologyHistology => toUzNewAlphabet(super.specPathologyHistology);
+  String get specPathologyHistology =>
+      toUzNewAlphabet(super.specPathologyHistology);
 
   @override
   String get specGeneticsDna => toUzNewAlphabet(super.specGeneticsDna);
 
   @override
-  String get specForensicAnthropology => toUzNewAlphabet(super.specForensicAnthropology);
+  String get specForensicAnthropology =>
+      toUzNewAlphabet(super.specForensicAnthropology);
 
   @override
-  String get specForensicOdontology => toUzNewAlphabet(super.specForensicOdontology);
+  String get specForensicOdontology =>
+      toUzNewAlphabet(super.specForensicOdontology);
 
   @override
-  String get specForensicRadiology => toUzNewAlphabet(super.specForensicRadiology);
+  String get specForensicRadiology =>
+      toUzNewAlphabet(super.specForensicRadiology);
 
   @override
-  String get specForensicPsychology => toUzNewAlphabet(super.specForensicPsychology);
+  String get specForensicPsychology =>
+      toUzNewAlphabet(super.specForensicPsychology);
 
   @override
   String get specForensicBiology => toUzNewAlphabet(super.specForensicBiology);
@@ -3486,25 +3750,31 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get accountChoiceTitle => toUzNewAlphabet(super.accountChoiceTitle);
 
   @override
-  String get accountChoiceSubtitle => toUzNewAlphabet(super.accountChoiceSubtitle);
+  String get accountChoiceSubtitle =>
+      toUzNewAlphabet(super.accountChoiceSubtitle);
 
   @override
-  String get accountContinueWithout => toUzNewAlphabet(super.accountContinueWithout);
+  String get accountContinueWithout =>
+      toUzNewAlphabet(super.accountContinueWithout);
 
   @override
-  String get accountContinueWithoutNote => toUzNewAlphabet(super.accountContinueWithoutNote);
+  String get accountContinueWithoutNote =>
+      toUzNewAlphabet(super.accountContinueWithoutNote);
 
   @override
-  String get accountCreateOrSignIn => toUzNewAlphabet(super.accountCreateOrSignIn);
+  String get accountCreateOrSignIn =>
+      toUzNewAlphabet(super.accountCreateOrSignIn);
 
   @override
-  String get accountCloudUnavailable => toUzNewAlphabet(super.accountCloudUnavailable);
+  String get accountCloudUnavailable =>
+      toUzNewAlphabet(super.accountCloudUnavailable);
 
   @override
   String get accountNeededFor => toUzNewAlphabet(super.accountNeededFor);
 
   @override
-  String get accountNeedVerification => toUzNewAlphabet(super.accountNeedVerification);
+  String get accountNeedVerification =>
+      toUzNewAlphabet(super.accountNeedVerification);
 
   @override
   String get accountNeedReviews => toUzNewAlphabet(super.accountNeedReviews);
@@ -3516,13 +3786,15 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get accountNeedCloudAi => toUzNewAlphabet(super.accountNeedCloudAi);
 
   @override
-  String get accountNeedInstitution => toUzNewAlphabet(super.accountNeedInstitution);
+  String get accountNeedInstitution =>
+      toUzNewAlphabet(super.accountNeedInstitution);
 
   @override
   String get accountFillProfile => toUzNewAlphabet(super.accountFillProfile);
 
   @override
-  String get profileLocalOnlyNote => toUzNewAlphabet(super.profileLocalOnlyNote);
+  String get profileLocalOnlyNote =>
+      toUzNewAlphabet(super.profileLocalOnlyNote);
 
   @override
   String get profileStudentTitle => toUzNewAlphabet(super.profileStudentTitle);
@@ -3534,16 +3806,19 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get profileSaved => toUzNewAlphabet(super.profileSaved);
 
   @override
-  String get profileSectionIdentity => toUzNewAlphabet(super.profileSectionIdentity);
+  String get profileSectionIdentity =>
+      toUzNewAlphabet(super.profileSectionIdentity);
 
   @override
   String get profileSectionWork => toUzNewAlphabet(super.profileSectionWork);
 
   @override
-  String get profileSectionOptional => toUzNewAlphabet(super.profileSectionOptional);
+  String get profileSectionOptional =>
+      toUzNewAlphabet(super.profileSectionOptional);
 
   @override
-  String get profileStudentCannotReview => toUzNewAlphabet(super.profileStudentCannotReview);
+  String get profileStudentCannotReview =>
+      toUzNewAlphabet(super.profileStudentCannotReview);
 
   @override
   String get fieldFullName => toUzNewAlphabet(super.fieldFullName);
@@ -3579,13 +3854,16 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get fieldPosition => toUzNewAlphabet(super.fieldPosition);
 
   @override
-  String get fieldPrimarySpecialty => toUzNewAlphabet(super.fieldPrimarySpecialty);
+  String get fieldPrimarySpecialty =>
+      toUzNewAlphabet(super.fieldPrimarySpecialty);
 
   @override
-  String get fieldAdditionalSpecialties => toUzNewAlphabet(super.fieldAdditionalSpecialties);
+  String get fieldAdditionalSpecialties =>
+      toUzNewAlphabet(super.fieldAdditionalSpecialties);
 
   @override
-  String get fieldYearsExperience => toUzNewAlphabet(super.fieldYearsExperience);
+  String get fieldYearsExperience =>
+      toUzNewAlphabet(super.fieldYearsExperience);
 
   @override
   String get fieldEducation => toUzNewAlphabet(super.fieldEducation);
@@ -3612,10 +3890,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get fieldProInterests => toUzNewAlphabet(super.fieldProInterests);
 
   @override
-  String get fieldShowOrganization => toUzNewAlphabet(super.fieldShowOrganization);
+  String get fieldShowOrganization =>
+      toUzNewAlphabet(super.fieldShowOrganization);
 
   @override
-  String get fieldShowOrganizationHelper => toUzNewAlphabet(super.fieldShowOrganizationHelper);
+  String get fieldShowOrganizationHelper =>
+      toUzNewAlphabet(super.fieldShowOrganizationHelper);
 
   @override
   String get formRequired => toUzNewAlphabet(super.formRequired);
@@ -3651,7 +3931,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get verifVerified => toUzNewAlphabet(super.verifVerified);
 
   @override
-  String get verifChangesRequested => toUzNewAlphabet(super.verifChangesRequested);
+  String get verifChangesRequested =>
+      toUzNewAlphabet(super.verifChangesRequested);
 
   @override
   String get verifRejected => toUzNewAlphabet(super.verifRejected);
@@ -3678,7 +3959,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get verifSuspendedBody => toUzNewAlphabet(super.verifSuspendedBody);
 
   @override
-  String get verifServiceNotConnected => toUzNewAlphabet(super.verifServiceNotConnected);
+  String get verifServiceNotConnected =>
+      toUzNewAlphabet(super.verifServiceNotConnected);
 
   @override
   String get verifHowTitle => toUzNewAlphabet(super.verifHowTitle);
@@ -3711,7 +3993,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get verifSubmitted => toUzNewAlphabet(super.verifSubmitted);
 
   @override
-  String get verifSubmitUnavailable => toUzNewAlphabet(super.verifSubmitUnavailable);
+  String get verifSubmitUnavailable =>
+      toUzNewAlphabet(super.verifSubmitUnavailable);
 
   @override
   String get verifSubmitNote => toUzNewAlphabet(super.verifSubmitNote);
@@ -3725,7 +4008,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.proReviewCount(count));
 
   @override
-  String get proServiceNotConnected => toUzNewAlphabet(super.proServiceNotConnected);
+  String get proServiceNotConnected =>
+      toUzNewAlphabet(super.proServiceNotConnected);
 
   @override
   String get proInvalidInput => toUzNewAlphabet(super.proInvalidInput);
@@ -3759,10 +4043,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get credKindTitle => toUzNewAlphabet(super.credKindTitle);
 
   @override
-  String get credProfessionalCertificate => toUzNewAlphabet(super.credProfessionalCertificate);
+  String get credProfessionalCertificate =>
+      toUzNewAlphabet(super.credProfessionalCertificate);
 
   @override
-  String get credQualificationCertificate => toUzNewAlphabet(super.credQualificationCertificate);
+  String get credQualificationCertificate =>
+      toUzNewAlphabet(super.credQualificationCertificate);
 
   @override
   String get credDiploma => toUzNewAlphabet(super.credDiploma);
@@ -3789,7 +4075,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get credNotUploaded => toUzNewAlphabet(super.credNotUploaded);
 
   @override
-  String get credWillSendOnSubmit => toUzNewAlphabet(super.credWillSendOnSubmit);
+  String get credWillSendOnSubmit =>
+      toUzNewAlphabet(super.credWillSendOnSubmit);
 
   @override
   String get credPickFailed => toUzNewAlphabet(super.credPickFailed);
@@ -3816,7 +4103,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get reviewWhoCanReview => toUzNewAlphabet(super.reviewWhoCanReview);
 
   @override
-  String get reviewScopeNotAssigned => toUzNewAlphabet(super.reviewScopeNotAssigned);
+  String get reviewScopeNotAssigned =>
+      toUzNewAlphabet(super.reviewScopeNotAssigned);
 
   @override
   String get reviewWrite => toUzNewAlphabet(super.reviewWrite);
@@ -3828,7 +4116,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get reviewActApprove => toUzNewAlphabet(super.reviewActApprove);
 
   @override
-  String get reviewActRequestChange => toUzNewAlphabet(super.reviewActRequestChange);
+  String get reviewActRequestChange =>
+      toUzNewAlphabet(super.reviewActRequestChange);
 
   @override
   String get reviewActConflict => toUzNewAlphabet(super.reviewActConflict);
@@ -3843,7 +4132,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get reviewDecApprove => toUzNewAlphabet(super.reviewDecApprove);
 
   @override
-  String get reviewDecRequestChange => toUzNewAlphabet(super.reviewDecRequestChange);
+  String get reviewDecRequestChange =>
+      toUzNewAlphabet(super.reviewDecRequestChange);
 
   @override
   String get reviewDecConflict => toUzNewAlphabet(super.reviewDecConflict);
@@ -3855,13 +4145,16 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get reviewDecReject => toUzNewAlphabet(super.reviewDecReject);
 
   @override
-  String get reviewStateInProgress => toUzNewAlphabet(super.reviewStateInProgress);
+  String get reviewStateInProgress =>
+      toUzNewAlphabet(super.reviewStateInProgress);
 
   @override
-  String get reviewStateProfessional => toUzNewAlphabet(super.reviewStateProfessional);
+  String get reviewStateProfessional =>
+      toUzNewAlphabet(super.reviewStateProfessional);
 
   @override
-  String get reviewStateHumanVerified => toUzNewAlphabet(super.reviewStateHumanVerified);
+  String get reviewStateHumanVerified =>
+      toUzNewAlphabet(super.reviewStateHumanVerified);
 
   @override
   String get reviewStateReReview => toUzNewAlphabet(super.reviewStateReReview);
@@ -3891,7 +4184,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get reviewSubmitted => toUzNewAlphabet(super.reviewSubmitted);
 
   @override
-  String get reviewNotVerification => toUzNewAlphabet(super.reviewNotVerification);
+  String get reviewNotVerification =>
+      toUzNewAlphabet(super.reviewNotVerification);
 
   @override
   String reviewVersionNote(String version) =>
@@ -3911,7 +4205,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get reviewPermSignIn => toUzNewAlphabet(super.reviewPermSignIn);
 
   @override
-  String get reviewPermNotVerified => toUzNewAlphabet(super.reviewPermNotVerified);
+  String get reviewPermNotVerified =>
+      toUzNewAlphabet(super.reviewPermNotVerified);
 
   @override
   String get reviewPermSuspended => toUzNewAlphabet(super.reviewPermSuspended);
@@ -3920,7 +4215,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get reviewPermScope => toUzNewAlphabet(super.reviewPermScope);
 
   @override
-  String get reviewPermStudentMode => toUzNewAlphabet(super.reviewPermStudentMode);
+  String get reviewPermStudentMode =>
+      toUzNewAlphabet(super.reviewPermStudentMode);
 
   @override
   String get layerSource => toUzNewAlphabet(super.layerSource);
@@ -3939,7 +4235,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get layerIdentifierOk => toUzNewAlphabet(super.layerIdentifierOk);
 
   @override
-  String get layerIdentifierPending => toUzNewAlphabet(super.layerIdentifierPending);
+  String get layerIdentifierPending =>
+      toUzNewAlphabet(super.layerIdentifierPending);
 
   @override
   String get layerNotApplicable => toUzNewAlphabet(super.layerNotApplicable);
@@ -3958,16 +4255,19 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get dashboardTitle => toUzNewAlphabet(super.dashboardTitle);
 
   @override
-  String get dashboardOnlyVerified => toUzNewAlphabet(super.dashboardOnlyVerified);
+  String get dashboardOnlyVerified =>
+      toUzNewAlphabet(super.dashboardOnlyVerified);
 
   @override
   String get dashboardQueueEmpty => toUzNewAlphabet(super.dashboardQueueEmpty);
 
   @override
-  String dashboardItemMeta(int claims,
+  String dashboardItemMeta(
+    int claims,
     int sources,
     String level,
-    String version,) =>
+    String version,
+  ) =>
       toUzNewAlphabet(super.dashboardItemMeta(claims, sources, level, version));
 
   @override
@@ -3986,13 +4286,15 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get queueReReview => toUzNewAlphabet(super.queueReReview);
 
   @override
-  String get profileSectionVerification => toUzNewAlphabet(super.profileSectionVerification);
+  String get profileSectionVerification =>
+      toUzNewAlphabet(super.profileSectionVerification);
 
   @override
   String get profileSectionData => toUzNewAlphabet(super.profileSectionData);
 
   @override
-  String get profileStudentVerificationNote => toUzNewAlphabet(super.profileStudentVerificationNote);
+  String get profileStudentVerificationNote =>
+      toUzNewAlphabet(super.profileStudentVerificationNote);
 
   @override
   String get profileNotFilled => toUzNewAlphabet(super.profileNotFilled);
@@ -4007,7 +4309,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get moduleHubSourced => toUzNewAlphabet(super.moduleHubSourced);
 
   @override
-  String get moduleHubSourcedNote => toUzNewAlphabet(super.moduleHubSourcedNote);
+  String get moduleHubSourcedNote =>
+      toUzNewAlphabet(super.moduleHubSourcedNote);
 
   @override
   String get moduleHubOpenAll => toUzNewAlphabet(super.moduleHubOpenAll);
@@ -4020,10 +4323,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get sourceOneTap => toUzNewAlphabet(super.sourceOneTap);
 
   @override
-  String get researchKeyRelevance => toUzNewAlphabet(super.researchKeyRelevance);
+  String get researchKeyRelevance =>
+      toUzNewAlphabet(super.researchKeyRelevance);
 
   @override
-  String get researchLimitationsNote => toUzNewAlphabet(super.researchLimitationsNote);
+  String get researchLimitationsNote =>
+      toUzNewAlphabet(super.researchLimitationsNote);
 
   @override
   String get emailCodeTitle => toUzNewAlphabet(super.emailCodeTitle);
@@ -4048,7 +4353,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.emailCodeResendIn(seconds));
 
   @override
-  String get emailCodeNotProfessional => toUzNewAlphabet(super.emailCodeNotProfessional);
+  String get emailCodeNotProfessional =>
+      toUzNewAlphabet(super.emailCodeNotProfessional);
 
   @override
   String get emailCodeSignedIn => toUzNewAlphabet(super.emailCodeSignedIn);
@@ -4057,7 +4363,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get actionNext => toUzNewAlphabet(super.actionNext);
 
   @override
-  String get profileSectionProfessional => toUzNewAlphabet(super.profileSectionProfessional);
+  String get profileSectionProfessional =>
+      toUzNewAlphabet(super.profileSectionProfessional);
 
   @override
   String get profileStepPersonal => toUzNewAlphabet(super.profileStepPersonal);
@@ -4066,7 +4373,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get profileStepWork => toUzNewAlphabet(super.profileStepWork);
 
   @override
-  String get profileStepProfessional => toUzNewAlphabet(super.profileStepProfessional);
+  String get profileStepProfessional =>
+      toUzNewAlphabet(super.profileStepProfessional);
 
   @override
   String profileStepOf(int step, int total) =>
@@ -4089,7 +4397,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.sourceLinkedRecords(count));
 
   @override
-  String get sourceNoLinkedRecords => toUzNewAlphabet(super.sourceNoLinkedRecords);
+  String get sourceNoLinkedRecords =>
+      toUzNewAlphabet(super.sourceNoLinkedRecords);
 
   @override
   String get sourceNotAttached => toUzNewAlphabet(super.sourceNotAttached);
@@ -4109,8 +4418,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.homeDbHumanVerified(count));
 
   @override
-  String sourcePmid(String id) =>
-      toUzNewAlphabet(super.sourcePmid(id));
+  String sourcePmid(String id) => toUzNewAlphabet(super.sourcePmid(id));
 
   @override
   String get homeStatSubstances => toUzNewAlphabet(super.homeStatSubstances);
@@ -4122,7 +4430,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get homeStatClaims => toUzNewAlphabet(super.homeStatClaims);
 
   @override
-  String get homeStatHumanVerified => toUzNewAlphabet(super.homeStatHumanVerified);
+  String get homeStatHumanVerified =>
+      toUzNewAlphabet(super.homeStatHumanVerified);
 
   @override
   String get homeStatPolicy => toUzNewAlphabet(super.homeStatPolicy);
@@ -4170,7 +4479,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get referralStatJoined => toUzNewAlphabet(super.referralStatJoined);
 
   @override
-  String get referralStatVerified => toUzNewAlphabet(super.referralStatVerified);
+  String get referralStatVerified =>
+      toUzNewAlphabet(super.referralStatVerified);
 
   @override
   String get referralStatPending => toUzNewAlphabet(super.referralStatPending);
@@ -4179,7 +4489,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get referralPrivacyNote => toUzNewAlphabet(super.referralPrivacyNote);
 
   @override
-  String get referralShareSubject => toUzNewAlphabet(super.referralShareSubject);
+  String get referralShareSubject =>
+      toUzNewAlphabet(super.referralShareSubject);
 
   @override
   String referralShareWithLink(String link) =>
@@ -4196,7 +4507,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get referralSignInBody => toUzNewAlphabet(super.referralSignInBody);
 
   @override
-  String get referralNotConfigured => toUzNewAlphabet(super.referralNotConfigured);
+  String get referralNotConfigured =>
+      toUzNewAlphabet(super.referralNotConfigured);
 
   @override
   String get referralLoadError => toUzNewAlphabet(super.referralLoadError);
@@ -4208,7 +4520,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get referralHaveCode => toUzNewAlphabet(super.referralHaveCode);
 
   @override
-  String get referralHaveCodeHint => toUzNewAlphabet(super.referralHaveCodeHint);
+  String get referralHaveCodeHint =>
+      toUzNewAlphabet(super.referralHaveCodeHint);
 
   @override
   String get referralCodeField => toUzNewAlphabet(super.referralCodeField);
@@ -4223,34 +4536,41 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get referralClaimValid => toUzNewAlphabet(super.referralClaimValid);
 
   @override
-  String get referralClaimPending => toUzNewAlphabet(super.referralClaimPending);
+  String get referralClaimPending =>
+      toUzNewAlphabet(super.referralClaimPending);
 
   @override
-  String get referralClaimInvalid => toUzNewAlphabet(super.referralClaimInvalid);
+  String get referralClaimInvalid =>
+      toUzNewAlphabet(super.referralClaimInvalid);
 
   @override
   String get referralClaimSelf => toUzNewAlphabet(super.referralClaimSelf);
 
   @override
-  String get referralClaimAlready => toUzNewAlphabet(super.referralClaimAlready);
+  String get referralClaimAlready =>
+      toUzNewAlphabet(super.referralClaimAlready);
 
   @override
-  String get referralClaimNotEligible => toUzNewAlphabet(super.referralClaimNotEligible);
+  String get referralClaimNotEligible =>
+      toUzNewAlphabet(super.referralClaimNotEligible);
 
   @override
-  String get referralClaimRateLimited => toUzNewAlphabet(super.referralClaimRateLimited);
+  String get referralClaimRateLimited =>
+      toUzNewAlphabet(super.referralClaimRateLimited);
 
   @override
   String get referralClaimSaved => toUzNewAlphabet(super.referralClaimSaved);
 
   @override
-  String get referralClaimOffline => toUzNewAlphabet(super.referralClaimOffline);
+  String get referralClaimOffline =>
+      toUzNewAlphabet(super.referralClaimOffline);
 
   @override
   String get referralClaimFormat => toUzNewAlphabet(super.referralClaimFormat);
 
   @override
-  String get referralProfileRowHint => toUzNewAlphabet(super.referralProfileRowHint);
+  String get referralProfileRowHint =>
+      toUzNewAlphabet(super.referralProfileRowHint);
 
   @override
   String get homeInviteHint => toUzNewAlphabet(super.homeInviteHint);
@@ -4281,7 +4601,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get firstStepsSearch => toUzNewAlphabet(super.firstStepsSearch);
 
   @override
-  String get firstStepsDiscipline => toUzNewAlphabet(super.firstStepsDiscipline);
+  String get firstStepsDiscipline =>
+      toUzNewAlphabet(super.firstStepsDiscipline);
 
   @override
   String get firstStepsSource => toUzNewAlphabet(super.firstStepsSource);
@@ -4399,8 +4720,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get calcRemoveDrink => toUzNewAlphabet(super.calcRemoveDrink);
 
   @override
-  String calcDrinkN(String n) =>
-      toUzNewAlphabet(super.calcDrinkN(n));
+  String calcDrinkN(String n) => toUzNewAlphabet(super.calcDrinkN(n));
 
   @override
   String get calcWidmarkEthanol => toUzNewAlphabet(super.calcWidmarkEthanol);
@@ -4418,25 +4738,31 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get calcWidmarkMax => toUzNewAlphabet(super.calcWidmarkMax);
 
   @override
-  String get calcWidmarkAssumptionDeficit => toUzNewAlphabet(super.calcWidmarkAssumptionDeficit);
+  String get calcWidmarkAssumptionDeficit =>
+      toUzNewAlphabet(super.calcWidmarkAssumptionDeficit);
 
   @override
-  String get calcWidmarkAssumptionBeta => toUzNewAlphabet(super.calcWidmarkAssumptionBeta);
+  String get calcWidmarkAssumptionBeta =>
+      toUzNewAlphabet(super.calcWidmarkAssumptionBeta);
 
   @override
-  String get calcWidmarkAssumptionR => toUzNewAlphabet(super.calcWidmarkAssumptionR);
+  String get calcWidmarkAssumptionR =>
+      toUzNewAlphabet(super.calcWidmarkAssumptionR);
 
   @override
-  String get calcWidmarkLimitation => toUzNewAlphabet(super.calcWidmarkLimitation);
+  String get calcWidmarkLimitation =>
+      toUzNewAlphabet(super.calcWidmarkLimitation);
 
   @override
   String get calcBacMeasured => toUzNewAlphabet(super.calcBacMeasured);
 
   @override
-  String get calcHoursEventToSample => toUzNewAlphabet(super.calcHoursEventToSample);
+  String get calcHoursEventToSample =>
+      toUzNewAlphabet(super.calcHoursEventToSample);
 
   @override
-  String get calcHoursDrinkEndOptional => toUzNewAlphabet(super.calcHoursDrinkEndOptional);
+  String get calcHoursDrinkEndOptional =>
+      toUzNewAlphabet(super.calcHoursDrinkEndOptional);
 
   @override
   String get calcBackMin => toUzNewAlphabet(super.calcBackMin);
@@ -4445,10 +4771,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get calcBackMax => toUzNewAlphabet(super.calcBackMax);
 
   @override
-  String get calcBackAssumptionLinear => toUzNewAlphabet(super.calcBackAssumptionLinear);
+  String get calcBackAssumptionLinear =>
+      toUzNewAlphabet(super.calcBackAssumptionLinear);
 
   @override
-  String get calcBackAssumptionBeta => toUzNewAlphabet(super.calcBackAssumptionBeta);
+  String get calcBackAssumptionBeta =>
+      toUzNewAlphabet(super.calcBackAssumptionBeta);
 
   @override
   String get calcBackLimitation => toUzNewAlphabet(super.calcBackLimitation);
@@ -4475,16 +4803,20 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get calcSerumRatio => toUzNewAlphabet(super.calcSerumRatio);
 
   @override
-  String get calcEthanolBloodHeader => toUzNewAlphabet(super.calcEthanolBloodHeader);
+  String get calcEthanolBloodHeader =>
+      toUzNewAlphabet(super.calcEthanolBloodHeader);
 
   @override
-  String get calcEthanolAssumptionDensity => toUzNewAlphabet(super.calcEthanolAssumptionDensity);
+  String get calcEthanolAssumptionDensity =>
+      toUzNewAlphabet(super.calcEthanolAssumptionDensity);
 
   @override
-  String get calcEthanolAssumptionRatio => toUzNewAlphabet(super.calcEthanolAssumptionRatio);
+  String get calcEthanolAssumptionRatio =>
+      toUzNewAlphabet(super.calcEthanolAssumptionRatio);
 
   @override
-  String get calcEthanolLimitation => toUzNewAlphabet(super.calcEthanolLimitation);
+  String get calcEthanolLimitation =>
+      toUzNewAlphabet(super.calcEthanolLimitation);
 
   @override
   String get calcRectalTemp => toUzNewAlphabet(super.calcRectalTemp);
@@ -4493,19 +4825,22 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get calcAmbientTemp => toUzNewAlphabet(super.calcAmbientTemp);
 
   @override
-  String get calcCorrectiveFactor => toUzNewAlphabet(super.calcCorrectiveFactor);
+  String get calcCorrectiveFactor =>
+      toUzNewAlphabet(super.calcCorrectiveFactor);
 
   @override
   String get calcFactorNakedDry => toUzNewAlphabet(super.calcFactorNakedDry);
 
   @override
-  String get calcFactorNakedMovingAir => toUzNewAlphabet(super.calcFactorNakedMovingAir);
+  String get calcFactorNakedMovingAir =>
+      toUzNewAlphabet(super.calcFactorNakedMovingAir);
 
   @override
   String get calcFactorWetStill => toUzNewAlphabet(super.calcFactorWetStill);
 
   @override
-  String get calcFactorWetFlowing => toUzNewAlphabet(super.calcFactorWetFlowing);
+  String get calcFactorWetFlowing =>
+      toUzNewAlphabet(super.calcFactorWetFlowing);
 
   @override
   String get calcFactorThin => toUzNewAlphabet(super.calcFactorThin);
@@ -4526,24 +4861,27 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get calcHenssgeRange => toUzNewAlphabet(super.calcHenssgeRange);
 
   @override
-  String calcHoursValue(String h) =>
-      toUzNewAlphabet(super.calcHoursValue(h));
+  String calcHoursValue(String h) => toUzNewAlphabet(super.calcHoursValue(h));
 
   @override
   String calcHoursRange(String from, String to) =>
       toUzNewAlphabet(super.calcHoursRange(from, to));
 
   @override
-  String get calcHenssgeAssumptionNormal => toUzNewAlphabet(super.calcHenssgeAssumptionNormal);
+  String get calcHenssgeAssumptionNormal =>
+      toUzNewAlphabet(super.calcHenssgeAssumptionNormal);
 
   @override
-  String get calcHenssgeAssumptionAmbient => toUzNewAlphabet(super.calcHenssgeAssumptionAmbient);
+  String get calcHenssgeAssumptionAmbient =>
+      toUzNewAlphabet(super.calcHenssgeAssumptionAmbient);
 
   @override
-  String get calcHenssgeAssumptionCi => toUzNewAlphabet(super.calcHenssgeAssumptionCi);
+  String get calcHenssgeAssumptionCi =>
+      toUzNewAlphabet(super.calcHenssgeAssumptionCi);
 
   @override
-  String get calcHenssgeLimitation => toUzNewAlphabet(super.calcHenssgeLimitation);
+  String get calcHenssgeLimitation =>
+      toUzNewAlphabet(super.calcHenssgeLimitation);
 
   @override
   String get calcWarnNoCooling => toUzNewAlphabet(super.calcWarnNoCooling);
@@ -4585,7 +4923,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get guidelinesIntro => toUzNewAlphabet(super.guidelinesIntro);
 
   @override
-  String get guidelinesSearchHint => toUzNewAlphabet(super.guidelinesSearchHint);
+  String get guidelinesSearchHint =>
+      toUzNewAlphabet(super.guidelinesSearchHint);
 
   @override
   String get guidelinesEmptyArea => toUzNewAlphabet(super.guidelinesEmptyArea);
@@ -4598,28 +4937,35 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.guidelinesCount(count));
 
   @override
-  String get guidelineAreaForensicMedicine => toUzNewAlphabet(super.guidelineAreaForensicMedicine);
+  String get guidelineAreaForensicMedicine =>
+      toUzNewAlphabet(super.guidelineAreaForensicMedicine);
 
   @override
-  String get guidelineAreaForensicChemistry => toUzNewAlphabet(super.guidelineAreaForensicChemistry);
+  String get guidelineAreaForensicChemistry =>
+      toUzNewAlphabet(super.guidelineAreaForensicChemistry);
 
   @override
-  String get guidelineAreaForensicHistology => toUzNewAlphabet(super.guidelineAreaForensicHistology);
+  String get guidelineAreaForensicHistology =>
+      toUzNewAlphabet(super.guidelineAreaForensicHistology);
 
   @override
-  String get guidelineAreaForensicBiology => toUzNewAlphabet(super.guidelineAreaForensicBiology);
+  String get guidelineAreaForensicBiology =>
+      toUzNewAlphabet(super.guidelineAreaForensicBiology);
 
   @override
-  String get guidelineAreaMedicalCriminalistics => toUzNewAlphabet(super.guidelineAreaMedicalCriminalistics);
+  String get guidelineAreaMedicalCriminalistics =>
+      toUzNewAlphabet(super.guidelineAreaMedicalCriminalistics);
 
   @override
   String get guidelineAreaOther => toUzNewAlphabet(super.guidelineAreaOther);
 
   @override
-  String get guidelineIndependentNote => toUzNewAlphabet(super.guidelineIndependentNote);
+  String get guidelineIndependentNote =>
+      toUzNewAlphabet(super.guidelineIndependentNote);
 
   @override
-  String get guidelineTranslationDraft => toUzNewAlphabet(super.guidelineTranslationDraft);
+  String get guidelineTranslationDraft =>
+      toUzNewAlphabet(super.guidelineTranslationDraft);
 
   @override
   String guidelineFallbackLanguage(String language) =>
@@ -4633,10 +4979,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.guidelineUpdated(date));
 
   @override
-  String get guidelineRelatedTools => toUzNewAlphabet(super.guidelineRelatedTools);
+  String get guidelineRelatedTools =>
+      toUzNewAlphabet(super.guidelineRelatedTools);
 
   @override
-  String get guidelineOpenReference => toUzNewAlphabet(super.guidelineOpenReference);
+  String get guidelineOpenReference =>
+      toUzNewAlphabet(super.guidelineOpenReference);
 
   @override
   String get languageNameUz => toUzNewAlphabet(super.languageNameUz);
@@ -4681,7 +5029,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get aiQuotaUsed => toUzNewAlphabet(super.aiQuotaUsed);
 
   @override
-  String get aiOfflineSourcesTitle => toUzNewAlphabet(super.aiOfflineSourcesTitle);
+  String get aiOfflineSourcesTitle =>
+      toUzNewAlphabet(super.aiOfflineSourcesTitle);
 
   @override
   String aiOfflineSourcesCount(int count) =>
@@ -4691,48 +5040,54 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get aiRetry => toUzNewAlphabet(super.aiRetry);
 
   @override
-  String get relationBasisSourceExcerpt => toUzNewAlphabet(super.relationBasisSourceExcerpt);
+  String get relationBasisSourceExcerpt =>
+      toUzNewAlphabet(super.relationBasisSourceExcerpt);
 
   @override
   String get metaHandle => toUzNewAlphabet(super.metaHandle);
 
   @override
-  String fileSizeKb(String size) =>
-      toUzNewAlphabet(super.fileSizeKb(size));
+  String fileSizeKb(String size) => toUzNewAlphabet(super.fileSizeKb(size));
 
   @override
-  String get disc_forensicSerology => toUzNewAlphabet(super.disc_forensicSerology);
+  String get disc_forensicSerology =>
+      toUzNewAlphabet(super.disc_forensicSerology);
 
   @override
-  String get disc_medicalCriminalistics => toUzNewAlphabet(super.disc_medicalCriminalistics);
+  String get disc_medicalCriminalistics =>
+      toUzNewAlphabet(super.disc_medicalCriminalistics);
 
   @override
   String get disc_traceEvidence => toUzNewAlphabet(super.disc_traceEvidence);
 
   @override
-  String get disc_firearmsBallistics => toUzNewAlphabet(super.disc_firearmsBallistics);
+  String get disc_firearmsBallistics =>
+      toUzNewAlphabet(super.disc_firearmsBallistics);
 
   @override
-  String get disc_questionedDocuments => toUzNewAlphabet(super.disc_questionedDocuments);
+  String get disc_questionedDocuments =>
+      toUzNewAlphabet(super.disc_questionedDocuments);
 
   @override
-  String get disc_digitalForensics => toUzNewAlphabet(super.disc_digitalForensics);
+  String get disc_digitalForensics =>
+      toUzNewAlphabet(super.disc_digitalForensics);
 
   @override
-  String get discGroupCriminalistics => toUzNewAlphabet(super.discGroupCriminalistics);
+  String get discGroupCriminalistics =>
+      toUzNewAlphabet(super.discGroupCriminalistics);
 
   @override
   String get homeGreeting => toUzNewAlphabet(super.homeGreeting);
 
   @override
-  String homeRoleChip(String mode) =>
-      toUzNewAlphabet(super.homeRoleChip(mode));
+  String homeRoleChip(String mode) => toUzNewAlphabet(super.homeRoleChip(mode));
 
   @override
   String get homeAiEntryBody => toUzNewAlphabet(super.homeAiEntryBody);
 
   @override
-  String get homeResourcesHeading => toUzNewAlphabet(super.homeResourcesHeading);
+  String get homeResourcesHeading =>
+      toUzNewAlphabet(super.homeResourcesHeading);
 
   @override
   String get homeLibraryBody => toUzNewAlphabet(super.homeLibraryBody);
@@ -4750,7 +5105,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get pubIntro => toUzNewAlphabet(super.pubIntro);
 
   @override
-  String get pubNotVerifiedNotice => toUzNewAlphabet(super.pubNotVerifiedNotice);
+  String get pubNotVerifiedNotice =>
+      toUzNewAlphabet(super.pubNotVerifiedNotice);
 
   @override
   String get pubSearchHint => toUzNewAlphabet(super.pubSearchHint);
@@ -4843,8 +5199,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get pubDiscipline => toUzNewAlphabet(super.pubDiscipline);
 
   @override
-  String pubVersion(int version) =>
-      toUzNewAlphabet(super.pubVersion(version));
+  String pubVersion(int version) => toUzNewAlphabet(super.pubVersion(version));
 
   @override
   String pubPublishedOn(String date) =>
@@ -4881,13 +5236,15 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get pubReasonPlagiarism => toUzNewAlphabet(super.pubReasonPlagiarism);
 
   @override
-  String get pubReasonPersonalData => toUzNewAlphabet(super.pubReasonPersonalData);
+  String get pubReasonPersonalData =>
+      toUzNewAlphabet(super.pubReasonPersonalData);
 
   @override
   String get pubReasonCopyright => toUzNewAlphabet(super.pubReasonCopyright);
 
   @override
-  String get pubReasonMisinformation => toUzNewAlphabet(super.pubReasonMisinformation);
+  String get pubReasonMisinformation =>
+      toUzNewAlphabet(super.pubReasonMisinformation);
 
   @override
   String get pubReasonAbuse => toUzNewAlphabet(super.pubReasonAbuse);
@@ -4923,7 +5280,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get pubPiiWarning => toUzNewAlphabet(super.pubPiiWarning);
 
   @override
-  String get pubConfirmationsTitle => toUzNewAlphabet(super.pubConfirmationsTitle);
+  String get pubConfirmationsTitle =>
+      toUzNewAlphabet(super.pubConfirmationsTitle);
 
   @override
   String get pubConfirmRights => toUzNewAlphabet(super.pubConfirmRights);
@@ -4938,7 +5296,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get pubSaveDraft => toUzNewAlphabet(super.pubSaveDraft);
 
   @override
-  String get pubSubmitForModeration => toUzNewAlphabet(super.pubSubmitForModeration);
+  String get pubSubmitForModeration =>
+      toUzNewAlphabet(super.pubSubmitForModeration);
 
   @override
   String get pubSubmitHint => toUzNewAlphabet(super.pubSubmitHint);
@@ -4974,12 +5333,10 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get pubQueueEmpty => toUzNewAlphabet(super.pubQueueEmpty);
 
   @override
-  String pubReports(int count) =>
-      toUzNewAlphabet(super.pubReports(count));
+  String pubReports(int count) => toUzNewAlphabet(super.pubReports(count));
 
   @override
-  String pubMoveTo(String status) =>
-      toUzNewAlphabet(super.pubMoveTo(status));
+  String pubMoveTo(String status) => toUzNewAlphabet(super.pubMoveTo(status));
 
   @override
   String get pubCommentLabel => toUzNewAlphabet(super.pubCommentLabel);
@@ -4994,7 +5351,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get pubModerationDone => toUzNewAlphabet(super.pubModerationDone);
 
   @override
-  String get pubInvalidTransition => toUzNewAlphabet(super.pubInvalidTransition);
+  String get pubInvalidTransition =>
+      toUzNewAlphabet(super.pubInvalidTransition);
 
   @override
   String get pubForbidden => toUzNewAlphabet(super.pubForbidden);
@@ -5015,7 +5373,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get aiStatusSignIn => toUzNewAlphabet(super.aiStatusSignIn);
 
   @override
-  String get searchDisciplineFilter => toUzNewAlphabet(super.searchDisciplineFilter);
+  String get searchDisciplineFilter =>
+      toUzNewAlphabet(super.searchDisciplineFilter);
 
   @override
   String get searchDisciplineAll => toUzNewAlphabet(super.searchDisciplineAll);
@@ -5037,10 +5396,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get studySectionTopics => toUzNewAlphabet(super.studySectionTopics);
 
   @override
-  String get studySectionSubstances => toUzNewAlphabet(super.studySectionSubstances);
+  String get studySectionSubstances =>
+      toUzNewAlphabet(super.studySectionSubstances);
 
   @override
-  String get studySectionGuidelines => toUzNewAlphabet(super.studySectionGuidelines);
+  String get studySectionGuidelines =>
+      toUzNewAlphabet(super.studySectionGuidelines);
 
   @override
   String studyDeckCount(int count) =>
@@ -5057,7 +5418,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get studyLoading => toUzNewAlphabet(super.studyLoading);
 
   @override
-  String get studyQuizUnavailable => toUzNewAlphabet(super.studyQuizUnavailable);
+  String get studyQuizUnavailable =>
+      toUzNewAlphabet(super.studyQuizUnavailable);
 
   @override
   String get studyFrontTopic => toUzNewAlphabet(super.studyFrontTopic);
@@ -5102,7 +5464,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get studyOpenEntry => toUzNewAlphabet(super.studyOpenEntry);
 
   @override
-  String get studyOpenSourceDetails => toUzNewAlphabet(super.studyOpenSourceDetails);
+  String get studyOpenSourceDetails =>
+      toUzNewAlphabet(super.studyOpenSourceDetails);
 
   @override
   String studyMoreSources(int count) =>
@@ -5138,7 +5501,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.studyQuizStemSubstance(name));
 
   @override
-  String get studyQuizStemGuideline => toUzNewAlphabet(super.studyQuizStemGuideline);
+  String get studyQuizStemGuideline =>
+      toUzNewAlphabet(super.studyQuizStemGuideline);
 
   @override
   String get studyQuizNote => toUzNewAlphabet(super.studyQuizNote);
@@ -5187,7 +5551,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get notFoundHome => toUzNewAlphabet(super.notFoundHome);
 
   @override
-  String get accountSignInEmailCode => toUzNewAlphabet(super.accountSignInEmailCode);
+  String get accountSignInEmailCode =>
+      toUzNewAlphabet(super.accountSignInEmailCode);
 
   @override
   String get toolsReviewNote => toUzNewAlphabet(super.toolsReviewNote);
@@ -5197,7 +5562,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.searchAllStatus(status));
 
   @override
-  String get researchOpenInBrowser => toUzNewAlphabet(super.researchOpenInBrowser);
+  String get researchOpenInBrowser =>
+      toUzNewAlphabet(super.researchOpenInBrowser);
 
   @override
   String disciplinesComingSoon(int count) =>
@@ -5216,10 +5582,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get analysisIntro => toUzNewAlphabet(super.analysisIntro);
 
   @override
-  String get analysisSpecimensTitle => toUzNewAlphabet(super.analysisSpecimensTitle);
+  String get analysisSpecimensTitle =>
+      toUzNewAlphabet(super.analysisSpecimensTitle);
 
   @override
-  String get analysisSpecimensNote => toUzNewAlphabet(super.analysisSpecimensNote);
+  String get analysisSpecimensNote =>
+      toUzNewAlphabet(super.analysisSpecimensNote);
 
   @override
   String get analysisNoSpecimens => toUzNewAlphabet(super.analysisNoSpecimens);
@@ -5233,33 +5601,40 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.analysisSpecimenMethods(methods));
 
   @override
-  String get analysisScreeningTitle => toUzNewAlphabet(super.analysisScreeningTitle);
+  String get analysisScreeningTitle =>
+      toUzNewAlphabet(super.analysisScreeningTitle);
 
   @override
-  String get analysisScreeningNote => toUzNewAlphabet(super.analysisScreeningNote);
+  String get analysisScreeningNote =>
+      toUzNewAlphabet(super.analysisScreeningNote);
 
   @override
   String analysisConfirmedBy(String methods) =>
       toUzNewAlphabet(super.analysisConfirmedBy(methods));
 
   @override
-  String get analysisConfirmationTitle => toUzNewAlphabet(super.analysisConfirmationTitle);
+  String get analysisConfirmationTitle =>
+      toUzNewAlphabet(super.analysisConfirmationTitle);
 
   @override
   String analysisAfterScreening(String tests) =>
       toUzNewAlphabet(super.analysisAfterScreening(tests));
 
   @override
-  String get analysisMethodsTitle => toUzNewAlphabet(super.analysisMethodsTitle);
+  String get analysisMethodsTitle =>
+      toUzNewAlphabet(super.analysisMethodsTitle);
 
   @override
-  String get analysisMethodsRoleNote => toUzNewAlphabet(super.analysisMethodsRoleNote);
+  String get analysisMethodsRoleNote =>
+      toUzNewAlphabet(super.analysisMethodsRoleNote);
 
   @override
-  String get analysisMethodsNotPaired => toUzNewAlphabet(super.analysisMethodsNotPaired);
+  String get analysisMethodsNotPaired =>
+      toUzNewAlphabet(super.analysisMethodsNotPaired);
 
   @override
-  String get analysisMetabolitesTitle => toUzNewAlphabet(super.analysisMetabolitesTitle);
+  String get analysisMetabolitesTitle =>
+      toUzNewAlphabet(super.analysisMetabolitesTitle);
 
   @override
   String analysisMetaboliteSpecimens(String specimens) =>
@@ -5272,19 +5647,24 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get analysisShowSource => toUzNewAlphabet(super.analysisShowSource);
 
   @override
-  String get specimenSubstancesTitle => toUzNewAlphabet(super.specimenSubstancesTitle);
+  String get specimenSubstancesTitle =>
+      toUzNewAlphabet(super.specimenSubstancesTitle);
 
   @override
-  String get specimenSubstancesNote => toUzNewAlphabet(super.specimenSubstancesNote);
+  String get specimenSubstancesNote =>
+      toUzNewAlphabet(super.specimenSubstancesNote);
 
   @override
-  String get specimenSubstancesNone => toUzNewAlphabet(super.specimenSubstancesNone);
+  String get specimenSubstancesNone =>
+      toUzNewAlphabet(super.specimenSubstancesNone);
 
   @override
-  String get quoteMachineTranslation => toUzNewAlphabet(super.quoteMachineTranslation);
+  String get quoteMachineTranslation =>
+      toUzNewAlphabet(super.quoteMachineTranslation);
 
   @override
-  String get quoteMachineTranslationSemantics => toUzNewAlphabet(super.quoteMachineTranslationSemantics);
+  String get quoteMachineTranslationSemantics =>
+      toUzNewAlphabet(super.quoteMachineTranslationSemantics);
 
   @override
   String quoteOriginalTitle(String title) =>
@@ -5335,7 +5715,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.researchAuthorsEtAl(author));
 
   @override
-  String get sectionComputedProperties => toUzNewAlphabet(super.sectionComputedProperties);
+  String get sectionComputedProperties =>
+      toUzNewAlphabet(super.sectionComputedProperties);
 
   @override
   String get supTitle => toUzNewAlphabet(super.supTitle);
@@ -5372,10 +5753,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get supCatBug => toUzNewAlphabet(super.supCatBug);
 
   @override
-  String get supCatScientificError => toUzNewAlphabet(super.supCatScientificError);
+  String get supCatScientificError =>
+      toUzNewAlphabet(super.supCatScientificError);
 
   @override
-  String get supCatFeatureRequest => toUzNewAlphabet(super.supCatFeatureRequest);
+  String get supCatFeatureRequest =>
+      toUzNewAlphabet(super.supCatFeatureRequest);
 
   @override
   String get supCatTechSupport => toUzNewAlphabet(super.supCatTechSupport);
@@ -5408,8 +5791,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get supMessageHint => toUzNewAlphabet(super.supMessageHint);
 
   @override
-  String supRelated(String id) =>
-      toUzNewAlphabet(super.supRelated(id));
+  String supRelated(String id) => toUzNewAlphabet(super.supRelated(id));
 
   @override
   String get supAttach => toUzNewAlphabet(super.supAttach);
@@ -5495,8 +5877,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.supReportErrorSubject(title));
 
   @override
-  String supMessages(int count) =>
-      toUzNewAlphabet(super.supMessages(count));
+  String supMessages(int count) => toUzNewAlphabet(super.supMessages(count));
 
   @override
   String get supMoreActions => toUzNewAlphabet(super.supMoreActions);
@@ -5588,7 +5969,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get admStatsUnavailable => toUzNewAlphabet(super.admStatsUnavailable);
 
   @override
-  String get admNotAuthorizedTitle => toUzNewAlphabet(super.admNotAuthorizedTitle);
+  String get admNotAuthorizedTitle =>
+      toUzNewAlphabet(super.admNotAuthorizedTitle);
 
   @override
   String get admNotAuthorized => toUzNewAlphabet(super.admNotAuthorized);
@@ -5634,12 +6016,10 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get admStatusChanged => toUzNewAlphabet(super.admStatusChanged);
 
   @override
-  String admAuthor(String email) =>
-      toUzNewAlphabet(super.admAuthor(email));
+  String admAuthor(String email) => toUzNewAlphabet(super.admAuthor(email));
 
   @override
-  String admUnread(int count) =>
-      toUzNewAlphabet(super.admUnread(count));
+  String admUnread(int count) => toUzNewAlphabet(super.admUnread(count));
 
   @override
   String get admUsersSearch => toUzNewAlphabet(super.admUsersSearch);
@@ -5723,7 +6103,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.imageAttrPubchemRdkit(cid));
 
   @override
-  String get imageAttrOriginalSchematic => toUzNewAlphabet(super.imageAttrOriginalSchematic);
+  String get imageAttrOriginalSchematic =>
+      toUzNewAlphabet(super.imageAttrOriginalSchematic);
 
   @override
   String get supRelatedUnknown => toUzNewAlphabet(super.supRelatedUnknown);
@@ -5733,16 +6114,19 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.onbStep(current, total));
 
   @override
-  String get disclaimerIntroTitle => toUzNewAlphabet(super.disclaimerIntroTitle);
+  String get disclaimerIntroTitle =>
+      toUzNewAlphabet(super.disclaimerIntroTitle);
 
   @override
-  String get disclaimerPointReference => toUzNewAlphabet(super.disclaimerPointReference);
+  String get disclaimerPointReference =>
+      toUzNewAlphabet(super.disclaimerPointReference);
 
   @override
   String get disclaimerPointLab => toUzNewAlphabet(super.disclaimerPointLab);
 
   @override
-  String get disclaimerPointMedical => toUzNewAlphabet(super.disclaimerPointMedical);
+  String get disclaimerPointMedical =>
+      toUzNewAlphabet(super.disclaimerPointMedical);
 
   @override
   String get disclaimerFullText => toUzNewAlphabet(super.disclaimerFullText);
@@ -5775,10 +6159,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get homeActLearnBody => toUzNewAlphabet(super.homeActLearnBody);
 
   @override
-  String get homeActGuidelinesBody => toUzNewAlphabet(super.homeActGuidelinesBody);
+  String get homeActGuidelinesBody =>
+      toUzNewAlphabet(super.homeActGuidelinesBody);
 
   @override
-  String get homeActSubstancesBody => toUzNewAlphabet(super.homeActSubstancesBody);
+  String get homeActSubstancesBody =>
+      toUzNewAlphabet(super.homeActSubstancesBody);
 
   @override
   String get homeActMethodsBody => toUzNewAlphabet(super.homeActMethodsBody);
@@ -5802,7 +6188,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get profileSectionHelp => toUzNewAlphabet(super.profileSectionHelp);
 
   @override
-  String get profileSectionAppearance => toUzNewAlphabet(super.profileSectionAppearance);
+  String get profileSectionAppearance =>
+      toUzNewAlphabet(super.profileSectionAppearance);
 
   @override
   String homeAllDisciplinesCount(int count) =>
@@ -5827,13 +6214,16 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get calcLodUnitNote => toUzNewAlphabet(super.calcLodUnitNote);
 
   @override
-  String get calcHenssgeFormulaLow => toUzNewAlphabet(super.calcHenssgeFormulaLow);
+  String get calcHenssgeFormulaLow =>
+      toUzNewAlphabet(super.calcHenssgeFormulaLow);
 
   @override
-  String get calcHenssgeFormulaHigh => toUzNewAlphabet(super.calcHenssgeFormulaHigh);
+  String get calcHenssgeFormulaHigh =>
+      toUzNewAlphabet(super.calcHenssgeFormulaHigh);
 
   @override
-  String get admRolePublicationModerator => toUzNewAlphabet(super.admRolePublicationModerator);
+  String get admRolePublicationModerator =>
+      toUzNewAlphabet(super.admRolePublicationModerator);
 
   @override
   String get rdGlanceTitle => toUzNewAlphabet(super.rdGlanceTitle);
@@ -5858,7 +6248,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get rdGlanceMetabolites => toUzNewAlphabet(super.rdGlanceMetabolites);
 
   @override
-  String get rdGlanceConcentrations => toUzNewAlphabet(super.rdGlanceConcentrations);
+  String get rdGlanceConcentrations =>
+      toUzNewAlphabet(super.rdGlanceConcentrations);
 
   @override
   String get rdGlanceSources => toUzNewAlphabet(super.rdGlanceSources);
@@ -5872,8 +6263,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.rdSourcesCount(count));
 
   @override
-  String rdGlanceMore(int count) =>
-      toUzNewAlphabet(super.rdGlanceMore(count));
+  String rdGlanceMore(int count) => toUzNewAlphabet(super.rdGlanceMore(count));
 
   @override
   String get rdJumpTo => toUzNewAlphabet(super.rdJumpTo);
@@ -5892,13 +6282,16 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get calcBeerAbsorbance => toUzNewAlphabet(super.calcBeerAbsorbance);
 
   @override
-  String get calcBeerAbsorptivityMolar => toUzNewAlphabet(super.calcBeerAbsorptivityMolar);
+  String get calcBeerAbsorptivityMolar =>
+      toUzNewAlphabet(super.calcBeerAbsorptivityMolar);
 
   @override
-  String get calcBeerAbsorptivityMass => toUzNewAlphabet(super.calcBeerAbsorptivityMass);
+  String get calcBeerAbsorptivityMass =>
+      toUzNewAlphabet(super.calcBeerAbsorptivityMass);
 
   @override
-  String get calcBeerConcentration => toUzNewAlphabet(super.calcBeerConcentration);
+  String get calcBeerConcentration =>
+      toUzNewAlphabet(super.calcBeerConcentration);
 
   @override
   String get calcBeerPath => toUzNewAlphabet(super.calcBeerPath);
@@ -5922,22 +6315,27 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get calcBeerErrorBasis => toUzNewAlphabet(super.calcBeerErrorBasis);
 
   @override
-  String get calcBeerAssumptionDefinition => toUzNewAlphabet(super.calcBeerAssumptionDefinition);
+  String get calcBeerAssumptionDefinition =>
+      toUzNewAlphabet(super.calcBeerAssumptionDefinition);
 
   @override
-  String get calcBeerAssumptionBlank => toUzNewAlphabet(super.calcBeerAssumptionBlank);
+  String get calcBeerAssumptionBlank =>
+      toUzNewAlphabet(super.calcBeerAssumptionBlank);
 
   @override
-  String get calcBeerLimitationLinear => toUzNewAlphabet(super.calcBeerLimitationLinear);
+  String get calcBeerLimitationLinear =>
+      toUzNewAlphabet(super.calcBeerLimitationLinear);
 
   @override
-  String get calcBeerLimitationIdentity => toUzNewAlphabet(super.calcBeerLimitationIdentity);
+  String get calcBeerLimitationIdentity =>
+      toUzNewAlphabet(super.calcBeerLimitationIdentity);
 
   @override
   String get calcBeerReference => toUzNewAlphabet(super.calcBeerReference);
 
   @override
-  String get calcBeerRelatedTools => toUzNewAlphabet(super.calcBeerRelatedTools);
+  String get calcBeerRelatedTools =>
+      toUzNewAlphabet(super.calcBeerRelatedTools);
 
   @override
   String get citeCopy => toUzNewAlphabet(super.citeCopy);
@@ -5975,10 +6373,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get citeVerifyNote => toUzNewAlphabet(super.citeVerifyNote);
 
   @override
-  String get guidelineToksAttribution => toUzNewAlphabet(super.guidelineToksAttribution);
+  String get guidelineToksAttribution =>
+      toUzNewAlphabet(super.guidelineToksAttribution);
 
   @override
-  String get studySectionTeaching => toUzNewAlphabet(super.studySectionTeaching);
+  String get studySectionTeaching =>
+      toUzNewAlphabet(super.studySectionTeaching);
 
   @override
   String get studyDeckToks => toUzNewAlphabet(super.studyDeckToks);
@@ -5987,7 +6387,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get studyFrontQuestion => toUzNewAlphabet(super.studyFrontQuestion);
 
   @override
-  String get studyQuizNoteAuthored => toUzNewAlphabet(super.studyQuizNoteAuthored);
+  String get studyQuizNoteAuthored =>
+      toUzNewAlphabet(super.studyQuizNoteAuthored);
 
   @override
   String studySourcePages(String pages) =>
@@ -6001,7 +6402,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get reagentHazardGhs => toUzNewAlphabet(super.reagentHazardGhs);
 
   @override
-  String get reagentHazardGeneral => toUzNewAlphabet(super.reagentHazardGeneral);
+  String get reagentHazardGeneral =>
+      toUzNewAlphabet(super.reagentHazardGeneral);
 
   @override
   String reagentRecipeSource(String title) =>
@@ -6047,10 +6449,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get reagentOriginalHint => toUzNewAlphabet(super.reagentOriginalHint);
 
   @override
-  String get reusePermissionGranted => toUzNewAlphabet(super.reusePermissionGranted);
+  String get reusePermissionGranted =>
+      toUzNewAlphabet(super.reusePermissionGranted);
 
   @override
-  String get guidelineGmtAttribution => toUzNewAlphabet(super.guidelineGmtAttribution);
+  String get guidelineGmtAttribution =>
+      toUzNewAlphabet(super.guidelineGmtAttribution);
 
   @override
   String get studyDeckGmt => toUzNewAlphabet(super.studyDeckGmt);
@@ -6146,10 +6550,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get courtWhereWritten => toUzNewAlphabet(super.courtWhereWritten);
 
   @override
-  String get courtSourceUnverified => toUzNewAlphabet(super.courtSourceUnverified);
+  String get courtSourceUnverified =>
+      toUzNewAlphabet(super.courtSourceUnverified);
 
   @override
-  String get courtSourceUnverifiedNote => toUzNewAlphabet(super.courtSourceUnverifiedNote);
+  String get courtSourceUnverifiedNote =>
+      toUzNewAlphabet(super.courtSourceUnverifiedNote);
 
   @override
   String get courtFollowups => toUzNewAlphabet(super.courtFollowups);
@@ -6170,8 +6576,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get courtExportCopied => toUzNewAlphabet(super.courtExportCopied);
 
   @override
-  String courtLawNote(String date) =>
-      toUzNewAlphabet(super.courtLawNote(date));
+  String courtLawNote(String date) => toUzNewAlphabet(super.courtLawNote(date));
 
   @override
   String get courtBookNote => toUzNewAlphabet(super.courtBookNote);
@@ -6223,16 +6628,19 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get courtPrinciplesBody => toUzNewAlphabet(super.courtPrinciplesBody);
 
   @override
-  String get courtPrinciplesIntro => toUzNewAlphabet(super.courtPrinciplesIntro);
+  String get courtPrinciplesIntro =>
+      toUzNewAlphabet(super.courtPrinciplesIntro);
 
   @override
   String get courtJurisdictionUz => toUzNewAlphabet(super.courtJurisdictionUz);
 
   @override
-  String get courtJurisdictionIntl => toUzNewAlphabet(super.courtJurisdictionIntl);
+  String get courtJurisdictionIntl =>
+      toUzNewAlphabet(super.courtJurisdictionIntl);
 
   @override
-  String get courtJurisdictionChange => toUzNewAlphabet(super.courtJurisdictionChange);
+  String get courtJurisdictionChange =>
+      toUzNewAlphabet(super.courtJurisdictionChange);
 
   @override
   String get courtPendingTopic => toUzNewAlphabet(super.courtPendingTopic);
@@ -6265,10 +6673,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get courtSimYourAnswer => toUzNewAlphabet(super.courtSimYourAnswer);
 
   @override
-  String get courtSimYourAnswerHint => toUzNewAlphabet(super.courtSimYourAnswerHint);
+  String get courtSimYourAnswerHint =>
+      toUzNewAlphabet(super.courtSimYourAnswerHint);
 
   @override
-  String get courtSimEvaluateText => toUzNewAlphabet(super.courtSimEvaluateText);
+  String get courtSimEvaluateText =>
+      toUzNewAlphabet(super.courtSimEvaluateText);
 
   @override
   String get courtSimChoose => toUzNewAlphabet(super.courtSimChoose);
@@ -6290,13 +6700,16 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get courtSimNext => toUzNewAlphabet(super.courtSimNext);
 
   @override
-  String get courtSimOpenQuestion => toUzNewAlphabet(super.courtSimOpenQuestion);
+  String get courtSimOpenQuestion =>
+      toUzNewAlphabet(super.courtSimOpenQuestion);
 
   @override
-  String get courtSimFreeTextNote => toUzNewAlphabet(super.courtSimFreeTextNote);
+  String get courtSimFreeTextNote =>
+      toUzNewAlphabet(super.courtSimFreeTextNote);
 
   @override
-  String get courtSimFlagOverstatement => toUzNewAlphabet(super.courtSimFlagOverstatement);
+  String get courtSimFlagOverstatement =>
+      toUzNewAlphabet(super.courtSimFlagOverstatement);
 
   @override
   String get courtSimFlagEvasion => toUzNewAlphabet(super.courtSimFlagEvasion);
@@ -6311,10 +6724,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get courtCritSources => toUzNewAlphabet(super.courtCritSources);
 
   @override
-  String get courtCritLimitations => toUzNewAlphabet(super.courtCritLimitations);
+  String get courtCritLimitations =>
+      toUzNewAlphabet(super.courtCritLimitations);
 
   @override
-  String get courtCritImpartiality => toUzNewAlphabet(super.courtCritImpartiality);
+  String get courtCritImpartiality =>
+      toUzNewAlphabet(super.courtCritImpartiality);
 
   @override
   String courtScenarioCount(int count) =>
@@ -6369,7 +6784,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get courtAiUnavailable => toUzNewAlphabet(super.courtAiUnavailable);
 
   @override
-  String get courtSimPartialUnverified => toUzNewAlphabet(super.courtSimPartialUnverified);
+  String get courtSimPartialUnverified =>
+      toUzNewAlphabet(super.courtSimPartialUnverified);
 
   @override
   String get courtSimReviewNote => toUzNewAlphabet(super.courtSimReviewNote);
@@ -6387,16 +6803,20 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get glossaryEmpty => toUzNewAlphabet(super.glossaryEmpty);
 
   @override
-  String get glossaryMachineDraft => toUzNewAlphabet(super.glossaryMachineDraft);
+  String get glossaryMachineDraft =>
+      toUzNewAlphabet(super.glossaryMachineDraft);
 
   @override
-  String get glossaryMachineDraftNote => toUzNewAlphabet(super.glossaryMachineDraftNote);
+  String get glossaryMachineDraftNote =>
+      toUzNewAlphabet(super.glossaryMachineDraftNote);
 
   @override
-  String get glossaryStatusTranslated => toUzNewAlphabet(super.glossaryStatusTranslated);
+  String get glossaryStatusTranslated =>
+      toUzNewAlphabet(super.glossaryStatusTranslated);
 
   @override
-  String get glossaryStatusReviewed => toUzNewAlphabet(super.glossaryStatusReviewed);
+  String get glossaryStatusReviewed =>
+      toUzNewAlphabet(super.glossaryStatusReviewed);
 
   @override
   String glossaryOriginal(String language, String term) =>
@@ -6406,10 +6826,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get glossaryKindTerm => toUzNewAlphabet(super.glossaryKindTerm);
 
   @override
-  String get glossaryKindAbbreviation => toUzNewAlphabet(super.glossaryKindAbbreviation);
+  String get glossaryKindAbbreviation =>
+      toUzNewAlphabet(super.glossaryKindAbbreviation);
 
   @override
-  String get glossaryKindIdentifier => toUzNewAlphabet(super.glossaryKindIdentifier);
+  String get glossaryKindIdentifier =>
+      toUzNewAlphabet(super.glossaryKindIdentifier);
 
   @override
   String get glossaryKindFormula => toUzNewAlphabet(super.glossaryKindFormula);
@@ -6421,7 +6843,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get glossaryNoCards => toUzNewAlphabet(super.glossaryNoCards);
 
   @override
-  String get glossaryOpenInGlossary => toUzNewAlphabet(super.glossaryOpenInGlossary);
+  String get glossaryOpenInGlossary =>
+      toUzNewAlphabet(super.glossaryOpenInGlossary);
 
   @override
   String get guidelineTerms => toUzNewAlphabet(super.guidelineTerms);
@@ -6436,7 +6859,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get studyModeExam => toUzNewAlphabet(super.studyModeExam);
 
   @override
-  String get studyModePracticeBanner => toUzNewAlphabet(super.studyModePracticeBanner);
+  String get studyModePracticeBanner =>
+      toUzNewAlphabet(super.studyModePracticeBanner);
 
   @override
   String get studyModeExamBanner => toUzNewAlphabet(super.studyModeExamBanner);
@@ -6449,13 +6873,16 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get studyPracticeOnly => toUzNewAlphabet(super.studyPracticeOnly);
 
   @override
-  String get studyExamUnavailable => toUzNewAlphabet(super.studyExamUnavailable);
+  String get studyExamUnavailable =>
+      toUzNewAlphabet(super.studyExamUnavailable);
 
   @override
-  String get studyExamDraftLanguage => toUzNewAlphabet(super.studyExamDraftLanguage);
+  String get studyExamDraftLanguage =>
+      toUzNewAlphabet(super.studyExamDraftLanguage);
 
   @override
-  String get studyQuizFlashcardsOnly => toUzNewAlphabet(super.studyQuizFlashcardsOnly);
+  String get studyQuizFlashcardsOnly =>
+      toUzNewAlphabet(super.studyQuizFlashcardsOnly);
 
   @override
   String get studyTfQuestion => toUzNewAlphabet(super.studyTfQuestion);
@@ -6477,7 +6904,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.studyExplainTopic(topic));
 
   @override
-  String get studyExplainSourceSays => toUzNewAlphabet(super.studyExplainSourceSays);
+  String get studyExplainSourceSays =>
+      toUzNewAlphabet(super.studyExplainSourceSays);
 
   @override
   String studyExplainSubstance(String name, String formula) =>
@@ -6491,17 +6919,20 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get studyOpenSource => toUzNewAlphabet(super.studyOpenSource);
 
   @override
-  String get studyQuoteTranslated => toUzNewAlphabet(super.studyQuoteTranslated);
+  String get studyQuoteTranslated =>
+      toUzNewAlphabet(super.studyQuoteTranslated);
 
   @override
-  String get studyShowOriginalQuote => toUzNewAlphabet(super.studyShowOriginalQuote);
+  String get studyShowOriginalQuote =>
+      toUzNewAlphabet(super.studyShowOriginalQuote);
 
   @override
   String studySourceSection(String section) =>
       toUzNewAlphabet(super.studySourceSection(section));
 
   @override
-  String get studyExamResultTitle => toUzNewAlphabet(super.studyExamResultTitle);
+  String get studyExamResultTitle =>
+      toUzNewAlphabet(super.studyExamResultTitle);
 
   @override
   String get studyExamReview => toUzNewAlphabet(super.studyExamReview);
@@ -6511,29 +6942,36 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.studyExamPercent(percent));
 
   @override
-  String get studyDeckMixedTopics => toUzNewAlphabet(super.studyDeckMixedTopics);
+  String get studyDeckMixedTopics =>
+      toUzNewAlphabet(super.studyDeckMixedTopics);
 
   @override
-  String get studyDeckMixedSubstances => toUzNewAlphabet(super.studyDeckMixedSubstances);
+  String get studyDeckMixedSubstances =>
+      toUzNewAlphabet(super.studyDeckMixedSubstances);
 
   @override
-  String get studyDeckMixedGuidelines => toUzNewAlphabet(super.studyDeckMixedGuidelines);
+  String get studyDeckMixedGuidelines =>
+      toUzNewAlphabet(super.studyDeckMixedGuidelines);
 
   @override
-  String get glossaryShortExplanation => toUzNewAlphabet(super.glossaryShortExplanation);
+  String get glossaryShortExplanation =>
+      toUzNewAlphabet(super.glossaryShortExplanation);
 
   @override
   String glossaryAbbrevSemantics(String abbr) =>
       toUzNewAlphabet(super.glossaryAbbrevSemantics(abbr));
 
   @override
-  String get trStatusMachineDraft => toUzNewAlphabet(super.trStatusMachineDraft);
+  String get trStatusMachineDraft =>
+      toUzNewAlphabet(super.trStatusMachineDraft);
 
   @override
-  String get trStatusTerminologyChecked => toUzNewAlphabet(super.trStatusTerminologyChecked);
+  String get trStatusTerminologyChecked =>
+      toUzNewAlphabet(super.trStatusTerminologyChecked);
 
   @override
-  String get trStatusClaimChecked => toUzNewAlphabet(super.trStatusClaimChecked);
+  String get trStatusClaimChecked =>
+      toUzNewAlphabet(super.trStatusClaimChecked);
 
   @override
   String get trStatusReviewed => toUzNewAlphabet(super.trStatusReviewed);
@@ -6571,7 +7009,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.trLanguageName(code));
 
   @override
-  String get trQuoteTranslatedLabel => toUzNewAlphabet(super.trQuoteTranslatedLabel);
+  String get trQuoteTranslatedLabel =>
+      toUzNewAlphabet(super.trQuoteTranslatedLabel);
 
   @override
   String trTranslationSemantics(String status) =>
@@ -6587,17 +7026,20 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get trTopicSummaryNote => toUzNewAlphabet(super.trTopicSummaryNote);
 
   @override
-  String get legalTitleUnofficial => toUzNewAlphabet(super.legalTitleUnofficial);
+  String get legalTitleUnofficial =>
+      toUzNewAlphabet(super.legalTitleUnofficial);
 
   @override
   String legalTitleOfficialIn(String language) =>
       toUzNewAlphabet(super.legalTitleOfficialIn(language));
 
   @override
-  String get glossaryLibraryArticles => toUzNewAlphabet(super.glossaryLibraryArticles);
+  String get glossaryLibraryArticles =>
+      toUzNewAlphabet(super.glossaryLibraryArticles);
 
   @override
-  String get trStatusDerivedDraft => toUzNewAlphabet(super.trStatusDerivedDraft);
+  String get trStatusDerivedDraft =>
+      toUzNewAlphabet(super.trStatusDerivedDraft);
 
   @override
   String get casebookTitle => toUzNewAlphabet(super.casebookTitle);
@@ -6606,7 +7048,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get casebookTileHint => toUzNewAlphabet(super.casebookTileHint);
 
   @override
-  String get casebookPrivacyBanner => toUzNewAlphabet(super.casebookPrivacyBanner);
+  String get casebookPrivacyBanner =>
+      toUzNewAlphabet(super.casebookPrivacyBanner);
 
   @override
   String get casebookEmptyTitle => toUzNewAlphabet(super.casebookEmptyTitle);
@@ -6621,10 +7064,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get casebookUntitled => toUzNewAlphabet(super.casebookUntitled);
 
   @override
-  String get casebookEntryTitleField => toUzNewAlphabet(super.casebookEntryTitleField);
+  String get casebookEntryTitleField =>
+      toUzNewAlphabet(super.casebookEntryTitleField);
 
   @override
-  String get casebookCaseRefField => toUzNewAlphabet(super.casebookCaseRefField);
+  String get casebookCaseRefField =>
+      toUzNewAlphabet(super.casebookCaseRefField);
 
   @override
   String get casebookCaseRefHint => toUzNewAlphabet(super.casebookCaseRefHint);
@@ -6651,10 +7096,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get casebookAddLink => toUzNewAlphabet(super.casebookAddLink);
 
   @override
-  String get casebookLinkSearchHint => toUzNewAlphabet(super.casebookLinkSearchHint);
+  String get casebookLinkSearchHint =>
+      toUzNewAlphabet(super.casebookLinkSearchHint);
 
   @override
-  String get casebookLinkNoResults => toUzNewAlphabet(super.casebookLinkNoResults);
+  String get casebookLinkNoResults =>
+      toUzNewAlphabet(super.casebookLinkNoResults);
 
   @override
   String get casebookLinkRemove => toUzNewAlphabet(super.casebookLinkRemove);
@@ -6672,13 +7119,15 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get casebookPickerTitle => toUzNewAlphabet(super.casebookPickerTitle);
 
   @override
-  String get casebookPickerSearchHint => toUzNewAlphabet(super.casebookPickerSearchHint);
+  String get casebookPickerSearchHint =>
+      toUzNewAlphabet(super.casebookPickerSearchHint);
 
   @override
   String get casebookPickerEmpty => toUzNewAlphabet(super.casebookPickerEmpty);
 
   @override
-  String get casebookKindLimitation => toUzNewAlphabet(super.casebookKindLimitation);
+  String get casebookKindLimitation =>
+      toUzNewAlphabet(super.casebookKindLimitation);
 
   @override
   String get casebookKindCaution => toUzNewAlphabet(super.casebookKindCaution);
@@ -6687,25 +7136,29 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get casebookKindAi => toUzNewAlphabet(super.casebookKindAi);
 
   @override
-  String get casebookAiUnverified => toUzNewAlphabet(super.casebookAiUnverified);
+  String get casebookAiUnverified =>
+      toUzNewAlphabet(super.casebookAiUnverified);
 
   @override
   String get casebookSourceLabel => toUzNewAlphabet(super.casebookSourceLabel);
 
   @override
-  String get casebookLocationLabel => toUzNewAlphabet(super.casebookLocationLabel);
+  String get casebookLocationLabel =>
+      toUzNewAlphabet(super.casebookLocationLabel);
 
   @override
   String get casebookPagesLabel => toUzNewAlphabet(super.casebookPagesLabel);
 
   @override
-  String get casebookSourcesLabel => toUzNewAlphabet(super.casebookSourcesLabel);
+  String get casebookSourcesLabel =>
+      toUzNewAlphabet(super.casebookSourcesLabel);
 
   @override
   String get casebookBlockRemove => toUzNewAlphabet(super.casebookBlockRemove);
 
   @override
-  String get casebookAddToCasebook => toUzNewAlphabet(super.casebookAddToCasebook);
+  String get casebookAddToCasebook =>
+      toUzNewAlphabet(super.casebookAddToCasebook);
 
   @override
   String get casebookChooseEntry => toUzNewAlphabet(super.casebookChooseEntry);
@@ -6733,28 +7186,34 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get casebookCopied => toUzNewAlphabet(super.casebookCopied);
 
   @override
-  String get casebookExportDisclaimer => toUzNewAlphabet(super.casebookExportDisclaimer);
+  String get casebookExportDisclaimer =>
+      toUzNewAlphabet(super.casebookExportDisclaimer);
 
   @override
-  String get casebookExportFooter => toUzNewAlphabet(super.casebookExportFooter);
+  String get casebookExportFooter =>
+      toUzNewAlphabet(super.casebookExportFooter);
 
   @override
   String get casebookExportLinks => toUzNewAlphabet(super.casebookExportLinks);
 
   @override
-  String get casebookExportBlocks => toUzNewAlphabet(super.casebookExportBlocks);
+  String get casebookExportBlocks =>
+      toUzNewAlphabet(super.casebookExportBlocks);
 
   @override
   String get casebookDeleteEntry => toUzNewAlphabet(super.casebookDeleteEntry);
 
   @override
-  String get casebookDeleteEntryTitle => toUzNewAlphabet(super.casebookDeleteEntryTitle);
+  String get casebookDeleteEntryTitle =>
+      toUzNewAlphabet(super.casebookDeleteEntryTitle);
 
   @override
-  String get casebookDeleteEntryBody => toUzNewAlphabet(super.casebookDeleteEntryBody);
+  String get casebookDeleteEntryBody =>
+      toUzNewAlphabet(super.casebookDeleteEntryBody);
 
   @override
-  String get casebookDeleteConfirm => toUzNewAlphabet(super.casebookDeleteConfirm);
+  String get casebookDeleteConfirm =>
+      toUzNewAlphabet(super.casebookDeleteConfirm);
 
   @override
   String get casebookCancel => toUzNewAlphabet(super.casebookCancel);
@@ -6772,8 +7231,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get casebookCleared => toUzNewAlphabet(super.casebookCleared);
 
   @override
-  String casebookCount(int n) =>
-      toUzNewAlphabet(super.casebookCount(n));
+  String casebookCount(int n) => toUzNewAlphabet(super.casebookCount(n));
 
   @override
   String casebookBlockCount(int n) =>
@@ -6818,11 +7276,11 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get admVfFieldSpecialty => toUzNewAlphabet(super.admVfFieldSpecialty);
 
   @override
-  String get admVfFieldExperience => toUzNewAlphabet(super.admVfFieldExperience);
+  String get admVfFieldExperience =>
+      toUzNewAlphabet(super.admVfFieldExperience);
 
   @override
-  String admVfYears(int count) =>
-      toUzNewAlphabet(super.admVfYears(count));
+  String admVfYears(int count) => toUzNewAlphabet(super.admVfYears(count));
 
   @override
   String get admVfFieldEducation => toUzNewAlphabet(super.admVfFieldEducation);
@@ -6892,16 +7350,19 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get admVfErrForbidden => toUzNewAlphabet(super.admVfErrForbidden);
 
   @override
-  String get admVfErrNoCredential => toUzNewAlphabet(super.admVfErrNoCredential);
+  String get admVfErrNoCredential =>
+      toUzNewAlphabet(super.admVfErrNoCredential);
 
   @override
-  String get admVfErrUnknownCredential => toUzNewAlphabet(super.admVfErrUnknownCredential);
+  String get admVfErrUnknownCredential =>
+      toUzNewAlphabet(super.admVfErrUnknownCredential);
 
   @override
   String get admVfErrTransition => toUzNewAlphabet(super.admVfErrTransition);
 
   @override
-  String get admVfErrNoApplication => toUzNewAlphabet(super.admVfErrNoApplication);
+  String get admVfErrNoApplication =>
+      toUzNewAlphabet(super.admVfErrNoApplication);
 
   @override
   String get admVfErrMfa => toUzNewAlphabet(super.admVfErrMfa);
@@ -6916,16 +7377,19 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get admVfErrServer => toUzNewAlphabet(super.admVfErrServer);
 
   @override
-  String get admActVerificationsView => toUzNewAlphabet(super.admActVerificationsView);
+  String get admActVerificationsView =>
+      toUzNewAlphabet(super.admActVerificationsView);
 
   @override
   String get legalOpenOnline => toUzNewAlphabet(super.legalOpenOnline);
 
   @override
-  String get legalPublishedNotice => toUzNewAlphabet(super.legalPublishedNotice);
+  String get legalPublishedNotice =>
+      toUzNewAlphabet(super.legalPublishedNotice);
 
   @override
-  String get detailSourcedStatement => toUzNewAlphabet(super.detailSourcedStatement);
+  String get detailSourcedStatement =>
+      toUzNewAlphabet(super.detailSourcedStatement);
 
   @override
   String get proSearchTitle => toUzNewAlphabet(super.proSearchTitle);
@@ -6979,7 +7443,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get proFacetStatus => toUzNewAlphabet(super.proFacetStatus);
 
   @override
-  String get proFacetJurisdiction => toUzNewAlphabet(super.proFacetJurisdiction);
+  String get proFacetJurisdiction =>
+      toUzNewAlphabet(super.proFacetJurisdiction);
 
   @override
   String get proFacetYear => toUzNewAlphabet(super.proFacetYear);
@@ -6989,8 +7454,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.proEvidenceAtLeast(level));
 
   @override
-  String proYearSince(int year) =>
-      toUzNewAlphabet(super.proYearSince(year));
+  String proYearSince(int year) => toUzNewAlphabet(super.proYearSince(year));
 
   @override
   String proFamilyName(String code) =>
@@ -7048,8 +7512,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get proRoleMeasured => toUzNewAlphabet(super.proRoleMeasured);
 
   @override
-  String proViaLabel(String names) =>
-      toUzNewAlphabet(super.proViaLabel(names));
+  String proViaLabel(String names) => toUzNewAlphabet(super.proViaLabel(names));
 
   @override
   String get planEntryTitle => toUzNewAlphabet(super.planEntryTitle);
@@ -7083,7 +7546,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get planSecInstrumental => toUzNewAlphabet(super.planSecInstrumental);
 
   @override
-  String get planSecInterferences => toUzNewAlphabet(super.planSecInterferences);
+  String get planSecInterferences =>
+      toUzNewAlphabet(super.planSecInterferences);
 
   @override
   String get planSecLimits => toUzNewAlphabet(super.planSecLimits);
@@ -7135,8 +7599,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get planNotDefinitive => toUzNewAlphabet(super.planNotDefinitive);
 
   @override
-  String planAbout(String name) =>
-      toUzNewAlphabet(super.planAbout(name));
+  String planAbout(String name) => toUzNewAlphabet(super.planAbout(name));
 
   @override
   String planSourceLine(String title) =>
@@ -7150,8 +7613,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get planNoSource => toUzNewAlphabet(super.planNoSource);
 
   @override
-  String planRoleName(String role) =>
-      toUzNewAlphabet(super.planRoleName(role));
+  String planRoleName(String role) => toUzNewAlphabet(super.planRoleName(role));
 
   @override
   String get planMayHeading => toUzNewAlphabet(super.planMayHeading);
@@ -7168,7 +7630,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.planRemConfirmDocumented(methods));
 
   @override
-  String get planRemConfirmMissing => toUzNewAlphabet(super.planRemConfirmMissing);
+  String get planRemConfirmMissing =>
+      toUzNewAlphabet(super.planRemConfirmMissing);
 
   @override
   String planRemNotThreshold(int count) =>
@@ -7178,7 +7641,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get planRemNotPaired => toUzNewAlphabet(super.planRemNotPaired);
 
   @override
-  String get planRemNothingVerified => toUzNewAlphabet(super.planRemNothingVerified);
+  String get planRemNothingVerified =>
+      toUzNewAlphabet(super.planRemNothingVerified);
 
   @override
   String planRemConflict(int count) =>
@@ -7188,7 +7652,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get planRemNoData => toUzNewAlphabet(super.planRemNoData);
 
   @override
-  String get planReminderFootnote => toUzNewAlphabet(super.planReminderFootnote);
+  String get planReminderFootnote =>
+      toUzNewAlphabet(super.planReminderFootnote);
 
   @override
   String get planCopy => toUzNewAlphabet(super.planCopy);
@@ -7201,7 +7666,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.planExportHeader(name));
 
   @override
-  String get planExportDisclaimer => toUzNewAlphabet(super.planExportDisclaimer);
+  String get planExportDisclaimer =>
+      toUzNewAlphabet(super.planExportDisclaimer);
 
   @override
   String get planExportSources => toUzNewAlphabet(super.planExportSources);
@@ -7214,34 +7680,41 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.planExportStatus(status, level));
 
   @override
-  String get imageOtherSubstanceChip => toUzNewAlphabet(super.imageOtherSubstanceChip);
+  String get imageOtherSubstanceChip =>
+      toUzNewAlphabet(super.imageOtherSubstanceChip);
 
   @override
-  String get imageOtherSubstanceNote => toUzNewAlphabet(super.imageOtherSubstanceNote);
+  String get imageOtherSubstanceNote =>
+      toUzNewAlphabet(super.imageOtherSubstanceNote);
 
   @override
   String get detailMethodRecords => toUzNewAlphabet(super.detailMethodRecords);
 
   @override
-  String get claimFieldSamplePreparation => toUzNewAlphabet(super.claimFieldSamplePreparation);
+  String get claimFieldSamplePreparation =>
+      toUzNewAlphabet(super.claimFieldSamplePreparation);
 
   @override
-  String get claimFieldInstrumentation => toUzNewAlphabet(super.claimFieldInstrumentation);
+  String get claimFieldInstrumentation =>
+      toUzNewAlphabet(super.claimFieldInstrumentation);
 
   @override
   String get claimFieldQc => toUzNewAlphabet(super.claimFieldQc);
 
   @override
-  String get claimFieldInterference => toUzNewAlphabet(super.claimFieldInterference);
+  String get claimFieldInterference =>
+      toUzNewAlphabet(super.claimFieldInterference);
 
   @override
-  String get claimFieldValidation => toUzNewAlphabet(super.claimFieldValidation);
+  String get claimFieldValidation =>
+      toUzNewAlphabet(super.claimFieldValidation);
 
   @override
   String get claimFieldSpecimens => toUzNewAlphabet(super.claimFieldSpecimens);
 
   @override
-  String get claimFieldLimitation => toUzNewAlphabet(super.claimFieldLimitation);
+  String get claimFieldLimitation =>
+      toUzNewAlphabet(super.claimFieldLimitation);
 
   @override
   String get qaTitle => toUzNewAlphabet(super.qaTitle);
@@ -7408,7 +7881,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get qaAnswerHint => toUzNewAlphabet(super.qaAnswerHint);
 
   @override
-  String get qaOnlyVerifiedMayAnswer => toUzNewAlphabet(super.qaOnlyVerifiedMayAnswer);
+  String get qaOnlyVerifiedMayAnswer =>
+      toUzNewAlphabet(super.qaOnlyVerifiedMayAnswer);
 
   @override
   String get qaNoAnswers => toUzNewAlphabet(super.qaNoAnswers);
@@ -7426,7 +7900,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get qaDownvote => toUzNewAlphabet(super.qaDownvote);
 
   @override
-  String get qaOnlyVerifiedMayVote => toUzNewAlphabet(super.qaOnlyVerifiedMayVote);
+  String get qaOnlyVerifiedMayVote =>
+      toUzNewAlphabet(super.qaOnlyVerifiedMayVote);
 
   @override
   String get qaReport => toUzNewAlphabet(super.qaReport);
@@ -7441,7 +7916,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get qaReportHidden => toUzNewAlphabet(super.qaReportHidden);
 
   @override
-  String get qaMachineTranslation => toUzNewAlphabet(super.qaMachineTranslation);
+  String get qaMachineTranslation =>
+      toUzNewAlphabet(super.qaMachineTranslation);
 
   @override
   String get qaShowTranslation => toUzNewAlphabet(super.qaShowTranslation);
@@ -7459,7 +7935,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get qaVerifyIntro => toUzNewAlphabet(super.qaVerifyIntro);
 
   @override
-  String get qaVerifyFileNotStored => toUzNewAlphabet(super.qaVerifyFileNotStored);
+  String get qaVerifyFileNotStored =>
+      toUzNewAlphabet(super.qaVerifyFileNotStored);
 
   @override
   String get qaVerifyRole => toUzNewAlphabet(super.qaVerifyRole);
@@ -7492,16 +7969,19 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.qaVerifyRejected(reason));
 
   @override
-  String get qaReasonNotACredential => toUzNewAlphabet(super.qaReasonNotACredential);
+  String get qaReasonNotACredential =>
+      toUzNewAlphabet(super.qaReasonNotACredential);
 
   @override
   String get qaReasonUnreadable => toUzNewAlphabet(super.qaReasonUnreadable);
 
   @override
-  String get qaReasonRoleMismatch => toUzNewAlphabet(super.qaReasonRoleMismatch);
+  String get qaReasonRoleMismatch =>
+      toUzNewAlphabet(super.qaReasonRoleMismatch);
 
   @override
-  String get qaReasonLowConfidence => toUzNewAlphabet(super.qaReasonLowConfidence);
+  String get qaReasonLowConfidence =>
+      toUzNewAlphabet(super.qaReasonLowConfidence);
 
   @override
   String get qaReasonExpired => toUzNewAlphabet(super.qaReasonExpired);
@@ -7549,8 +8029,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get qaPostRemoved => toUzNewAlphabet(super.qaPostRemoved);
 
   @override
-  String qaScore(int score) =>
-      toUzNewAlphabet(super.qaScore(score));
+  String qaScore(int score) => toUzNewAlphabet(super.qaScore(score));
 
   @override
   String get qaModerationTitle => toUzNewAlphabet(super.qaModerationTitle);
@@ -7559,13 +8038,15 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get qaModerationEmpty => toUzNewAlphabet(super.qaModerationEmpty);
 
   @override
-  String get qaModerationQuestions => toUzNewAlphabet(super.qaModerationQuestions);
+  String get qaModerationQuestions =>
+      toUzNewAlphabet(super.qaModerationQuestions);
 
   @override
   String get qaModerationAnswers => toUzNewAlphabet(super.qaModerationAnswers);
 
   @override
-  String get qaModerationSuspended => toUzNewAlphabet(super.qaModerationSuspended);
+  String get qaModerationSuspended =>
+      toUzNewAlphabet(super.qaModerationSuspended);
 
   @override
   String qaReportsCount(int count) =>
@@ -7602,8 +8083,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get admNavQa => toUzNewAlphabet(super.admNavQa);
 
   @override
-  String admNavQaHint(int count) =>
-      toUzNewAlphabet(super.admNavQaHint(count));
+  String admNavQaHint(int count) => toUzNewAlphabet(super.admNavQaHint(count));
 
   @override
   String get qaRulesOpen => toUzNewAlphabet(super.qaRulesOpen);
@@ -7636,7 +8116,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get qaRulesGood4 => toUzNewAlphabet(super.qaRulesGood4);
 
   @override
-  String get qaRulesForbiddenTitle => toUzNewAlphabet(super.qaRulesForbiddenTitle);
+  String get qaRulesForbiddenTitle =>
+      toUzNewAlphabet(super.qaRulesForbiddenTitle);
 
   @override
   String get qaRulesForbidden1 => toUzNewAlphabet(super.qaRulesForbidden1);
@@ -7678,16 +8159,19 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get provOwnWordsNote => toUzNewAlphabet(super.provOwnWordsNote);
 
   @override
-  String get confirmedSourceBannerTextbook => toUzNewAlphabet(super.confirmedSourceBannerTextbook);
+  String get confirmedSourceBannerTextbook =>
+      toUzNewAlphabet(super.confirmedSourceBannerTextbook);
 
   @override
   String get confirmedSourceChip => toUzNewAlphabet(super.confirmedSourceChip);
 
   @override
-  String get needsConfirmationChip => toUzNewAlphabet(super.needsConfirmationChip);
+  String get needsConfirmationChip =>
+      toUzNewAlphabet(super.needsConfirmationChip);
 
   @override
-  String get needsConfirmationBanner => toUzNewAlphabet(super.needsConfirmationBanner);
+  String get needsConfirmationBanner =>
+      toUzNewAlphabet(super.needsConfirmationBanner);
 
   @override
   String get avatarSemantics => toUzNewAlphabet(super.avatarSemantics);
@@ -7756,14 +8240,15 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get analysisS3Note => toUzNewAlphabet(super.analysisS3Note);
 
   @override
-  String get analysisSectionEmpty => toUzNewAlphabet(super.analysisSectionEmpty);
+  String get analysisSectionEmpty =>
+      toUzNewAlphabet(super.analysisSectionEmpty);
 
   @override
-  String get trPendingTranslation => toUzNewAlphabet(super.trPendingTranslation);
+  String get trPendingTranslation =>
+      toUzNewAlphabet(super.trPendingTranslation);
 
   @override
-  String contactLine(String email) =>
-      toUzNewAlphabet(super.contactLine(email));
+  String contactLine(String email) => toUzNewAlphabet(super.contactLine(email));
 
   @override
   String get repTitle => toUzNewAlphabet(super.repTitle);
@@ -7781,7 +8266,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get repKindComplaint => toUzNewAlphabet(super.repKindComplaint);
 
   @override
-  String get repKindInappropriate => toUzNewAlphabet(super.repKindInappropriate);
+  String get repKindInappropriate =>
+      toUzNewAlphabet(super.repKindInappropriate);
 
   @override
   String get repKindBug => toUzNewAlphabet(super.repKindBug);
@@ -7799,8 +8285,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get repBodyHint => toUzNewAlphabet(super.repBodyHint);
 
   @override
-  String repBodyShort(int min) =>
-      toUzNewAlphabet(super.repBodyShort(min));
+  String repBodyShort(int min) => toUzNewAlphabet(super.repBodyShort(min));
 
   @override
   String get repContact => toUzNewAlphabet(super.repContact);
@@ -7821,8 +8306,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get repInvalid => toUzNewAlphabet(super.repInvalid);
 
   @override
-  String repRateLimited(int n) =>
-      toUzNewAlphabet(super.repRateLimited(n));
+  String repRateLimited(int n) => toUzNewAlphabet(super.repRateLimited(n));
 
   @override
   String get repFailed => toUzNewAlphabet(super.repFailed);
@@ -7879,8 +8363,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get blkItem => toUzNewAlphabet(super.blkItem);
 
   @override
-  String blkSince(String date) =>
-      toUzNewAlphabet(super.blkSince(date));
+  String blkSince(String date) => toUzNewAlphabet(super.blkSince(date));
 
   @override
   String get blkUnblock => toUzNewAlphabet(super.blkUnblock);
@@ -7947,12 +8430,10 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get admxAnonymous => toUzNewAlphabet(super.admxAnonymous);
 
   @override
-  String admxContact(String value) =>
-      toUzNewAlphabet(super.admxContact(value));
+  String admxContact(String value) => toUzNewAlphabet(super.admxContact(value));
 
   @override
-  String admxTarget(String type) =>
-      toUzNewAlphabet(super.admxTarget(type));
+  String admxTarget(String type) => toUzNewAlphabet(super.admxTarget(type));
 
   @override
   String get admxNoteLabel => toUzNewAlphabet(super.admxNoteLabel);
@@ -8012,13 +8493,15 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get admxRemoveAdmin => toUzNewAlphabet(super.admxRemoveAdmin);
 
   @override
-  String get admxRemoveAdminTitle => toUzNewAlphabet(super.admxRemoveAdminTitle);
+  String get admxRemoveAdminTitle =>
+      toUzNewAlphabet(super.admxRemoveAdminTitle);
 
   @override
   String get admxRemoveAdminBody => toUzNewAlphabet(super.admxRemoveAdminBody);
 
   @override
-  String get admxAdminNotSuspendable => toUzNewAlphabet(super.admxAdminNotSuspendable);
+  String get admxAdminNotSuspendable =>
+      toUzNewAlphabet(super.admxAdminNotSuspendable);
 
   @override
   String get admxSuspend => toUzNewAlphabet(super.admxSuspend);
@@ -8030,7 +8513,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get admxSuspendTitle => toUzNewAlphabet(super.admxSuspendTitle);
 
   @override
-  String get admxSuspendConfirmBody => toUzNewAlphabet(super.admxSuspendConfirmBody);
+  String get admxSuspendConfirmBody =>
+      toUzNewAlphabet(super.admxSuspendConfirmBody);
 
   @override
   String get admxRoleGranted => toUzNewAlphabet(super.admxRoleGranted);
@@ -8048,7 +8532,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get admxRoleForbidden => toUzNewAlphabet(super.admxRoleForbidden);
 
   @override
-  String get admxEmailUnconfirmed => toUzNewAlphabet(super.admxEmailUnconfirmed);
+  String get admxEmailUnconfirmed =>
+      toUzNewAlphabet(super.admxEmailUnconfirmed);
 
   @override
   String get admxSelfAdmin => toUzNewAlphabet(super.admxSelfAdmin);
@@ -8057,10 +8542,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get admxLastAdmin => toUzNewAlphabet(super.admxLastAdmin);
 
   @override
-  String get admxCannotSuspendAdmin => toUzNewAlphabet(super.admxCannotSuspendAdmin);
+  String get admxCannotSuspendAdmin =>
+      toUzNewAlphabet(super.admxCannotSuspendAdmin);
 
   @override
-  String get admxCannotSuspendSelf => toUzNewAlphabet(super.admxCannotSuspendSelf);
+  String get admxCannotSuspendSelf =>
+      toUzNewAlphabet(super.admxCannotSuspendSelf);
 
   @override
   String get admxSuspended => toUzNewAlphabet(super.admxSuspended);
@@ -8084,7 +8571,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get admxStatReportsOpen => toUzNewAlphabet(super.admxStatReportsOpen);
 
   @override
-  String get admxStatReportsResolved => toUzNewAlphabet(super.admxStatReportsResolved);
+  String get admxStatReportsResolved =>
+      toUzNewAlphabet(super.admxStatReportsResolved);
 
   @override
   String get admxStatQaQuestions => toUzNewAlphabet(super.admxStatQaQuestions);
@@ -8093,7 +8581,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get admxStatQaAnswers => toUzNewAlphabet(super.admxStatQaAnswers);
 
   @override
-  String get admxStatQaModeration => toUzNewAlphabet(super.admxStatQaModeration);
+  String get admxStatQaModeration =>
+      toUzNewAlphabet(super.admxStatQaModeration);
 
   @override
   String get admxStatBlocks => toUzNewAlphabet(super.admxStatBlocks);
@@ -8138,40 +8627,48 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get admActReportNote => toUzNewAlphabet(super.admActReportNote);
 
   @override
-  String get admActReportResolved => toUzNewAlphabet(super.admActReportResolved);
+  String get admActReportResolved =>
+      toUzNewAlphabet(super.admActReportResolved);
 
   @override
-  String get admActReportReopened => toUzNewAlphabet(super.admActReportReopened);
+  String get admActReportReopened =>
+      toUzNewAlphabet(super.admActReportReopened);
 
   @override
-  String get admActAdminBootstrap => toUzNewAlphabet(super.admActAdminBootstrap);
+  String get admActAdminBootstrap =>
+      toUzNewAlphabet(super.admActAdminBootstrap);
 
   @override
   String get socialOr => toUzNewAlphabet(super.socialOr);
 
   @override
-  String get socialContinueGoogle => toUzNewAlphabet(super.socialContinueGoogle);
+  String get socialContinueGoogle =>
+      toUzNewAlphabet(super.socialContinueGoogle);
 
   @override
   String get socialContinueApple => toUzNewAlphabet(super.socialContinueApple);
 
   @override
-  String get socialErrUnavailable => toUzNewAlphabet(super.socialErrUnavailable);
+  String get socialErrUnavailable =>
+      toUzNewAlphabet(super.socialErrUnavailable);
 
   @override
   String get socialTermsNote => toUzNewAlphabet(super.socialTermsNote);
 
   @override
-  String get deleteAccountSocialNote => toUzNewAlphabet(super.deleteAccountSocialNote);
+  String get deleteAccountSocialNote =>
+      toUzNewAlphabet(super.deleteAccountSocialNote);
 
   @override
-  String get deleteAccountAppleNote => toUzNewAlphabet(super.deleteAccountAppleNote);
+  String get deleteAccountAppleNote =>
+      toUzNewAlphabet(super.deleteAccountAppleNote);
 
   @override
   String get classQuizTitle => toUzNewAlphabet(super.classQuizTitle);
 
   @override
-  String get classQuizCardSubtitle => toUzNewAlphabet(super.classQuizCardSubtitle);
+  String get classQuizCardSubtitle =>
+      toUzNewAlphabet(super.classQuizCardSubtitle);
 
   @override
   String get classQuizIntro => toUzNewAlphabet(super.classQuizIntro);
@@ -8220,14 +8717,14 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get classScanPermission => toUzNewAlphabet(super.classScanPermission);
 
   @override
-  String get classScanUnavailable => toUzNewAlphabet(super.classScanUnavailable);
+  String get classScanUnavailable =>
+      toUzNewAlphabet(super.classScanUnavailable);
 
   @override
   String get classScanManual => toUzNewAlphabet(super.classScanManual);
 
   @override
-  String classResume(String topic) =>
-      toUzNewAlphabet(super.classResume(topic));
+  String classResume(String topic) => toUzNewAlphabet(super.classResume(topic));
 
   @override
   String get classTeacherSection => toUzNewAlphabet(super.classTeacherSection);
@@ -8270,10 +8767,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get classSignInAction => toUzNewAlphabet(super.classSignInAction);
 
   @override
-  String get classTeacherOnlyTitle => toUzNewAlphabet(super.classTeacherOnlyTitle);
+  String get classTeacherOnlyTitle =>
+      toUzNewAlphabet(super.classTeacherOnlyTitle);
 
   @override
-  String get classTeacherOnlyBody => toUzNewAlphabet(super.classTeacherOnlyBody);
+  String get classTeacherOnlyBody =>
+      toUzNewAlphabet(super.classTeacherOnlyBody);
 
   @override
   String get classTopicSection => toUzNewAlphabet(super.classTopicSection);
@@ -8286,7 +8785,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.classQuestionsAvailable(count));
 
   @override
-  String get classSettingsSection => toUzNewAlphabet(super.classSettingsSection);
+  String get classSettingsSection =>
+      toUzNewAlphabet(super.classSettingsSection);
 
   @override
   String get classQuestionCount => toUzNewAlphabet(super.classQuestionCount);
@@ -8295,7 +8795,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get classStudentLimit => toUzNewAlphabet(super.classStudentLimit);
 
   @override
-  String get classSecondsPerQuestion => toUzNewAlphabet(super.classSecondsPerQuestion);
+  String get classSecondsPerQuestion =>
+      toUzNewAlphabet(super.classSecondsPerQuestion);
 
   @override
   String classSecondsShort(int seconds) =>
@@ -8319,7 +8820,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.classJoinedCount(joined, limit));
 
   @override
-  String get classWaitingForStudents => toUzNewAlphabet(super.classWaitingForStudents);
+  String get classWaitingForStudents =>
+      toUzNewAlphabet(super.classWaitingForStudents);
 
   @override
   String classReportsCount(int count) =>
@@ -8504,7 +9006,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get classReportSent => toUzNewAlphabet(super.classReportSent);
 
   @override
-  String get classErrNotConfigured => toUzNewAlphabet(super.classErrNotConfigured);
+  String get classErrNotConfigured =>
+      toUzNewAlphabet(super.classErrNotConfigured);
 
   @override
   String get classErrNotSignedIn => toUzNewAlphabet(super.classErrNotSignedIn);
@@ -8537,7 +9040,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get classErrKicked => toUzNewAlphabet(super.classErrKicked);
 
   @override
-  String get classErrAlreadyStarted => toUzNewAlphabet(super.classErrAlreadyStarted);
+  String get classErrAlreadyStarted =>
+      toUzNewAlphabet(super.classErrAlreadyStarted);
 
   @override
   String get classErrFull => toUzNewAlphabet(super.classErrFull);
@@ -8552,19 +9056,23 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get classErrNickBlocked => toUzNewAlphabet(super.classErrNickBlocked);
 
   @override
-  String get classErrInvalidSettings => toUzNewAlphabet(super.classErrInvalidSettings);
+  String get classErrInvalidSettings =>
+      toUzNewAlphabet(super.classErrInvalidSettings);
 
   @override
-  String get classErrTooManySessions => toUzNewAlphabet(super.classErrTooManySessions);
+  String get classErrTooManySessions =>
+      toUzNewAlphabet(super.classErrTooManySessions);
 
   @override
-  String get classErrNotEnoughQuestions => toUzNewAlphabet(super.classErrNotEnoughQuestions);
+  String get classErrNotEnoughQuestions =>
+      toUzNewAlphabet(super.classErrNotEnoughQuestions);
 
   @override
   String get classErrBadState => toUzNewAlphabet(super.classErrBadState);
 
   @override
-  String get classErrNoParticipants => toUzNewAlphabet(super.classErrNoParticipants);
+  String get classErrNoParticipants =>
+      toUzNewAlphabet(super.classErrNoParticipants);
 
   @override
   String get classErrNotCurrent => toUzNewAlphabet(super.classErrNotCurrent);
@@ -8573,7 +9081,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get classErrTimeOver => toUzNewAlphabet(super.classErrTimeOver);
 
   @override
-  String get classErrAlreadyAnswered => toUzNewAlphabet(super.classErrAlreadyAnswered);
+  String get classErrAlreadyAnswered =>
+      toUzNewAlphabet(super.classErrAlreadyAnswered);
 
   @override
   String get classErrNotFinished => toUzNewAlphabet(super.classErrNotFinished);
@@ -8585,16 +9094,19 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get unverifiedChip => toUzNewAlphabet(super.unverifiedChip);
 
   @override
-  String get legalNationalMethodsEmpty => toUzNewAlphabet(super.legalNationalMethodsEmpty);
+  String get legalNationalMethodsEmpty =>
+      toUzNewAlphabet(super.legalNationalMethodsEmpty);
 
   @override
   String get teacherPanelTitle => toUzNewAlphabet(super.teacherPanelTitle);
 
   @override
-  String get teacherPanelHomeBody => toUzNewAlphabet(super.teacherPanelHomeBody);
+  String get teacherPanelHomeBody =>
+      toUzNewAlphabet(super.teacherPanelHomeBody);
 
   @override
-  String get teacherPanelHomeBodyStudent => toUzNewAlphabet(super.teacherPanelHomeBodyStudent);
+  String get teacherPanelHomeBodyStudent =>
+      toUzNewAlphabet(super.teacherPanelHomeBodyStudent);
 
   @override
   String get teacherPanelIntro => toUzNewAlphabet(super.teacherPanelIntro);
@@ -8630,7 +9142,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get disciplineSearchCta => toUzNewAlphabet(super.disciplineSearchCta);
 
   @override
-  String get disciplineSearchBody => toUzNewAlphabet(super.disciplineSearchBody);
+  String get disciplineSearchBody =>
+      toUzNewAlphabet(super.disciplineSearchBody);
 
   @override
   String get referralHowTitle => toUzNewAlphabet(super.referralHowTitle);
@@ -8651,7 +9164,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get pubEmptyBody => toUzNewAlphabet(super.pubEmptyBody);
 
   @override
-  String get calcWarnZeroMeasured => toUzNewAlphabet(super.calcWarnZeroMeasured);
+  String get calcWarnZeroMeasured =>
+      toUzNewAlphabet(super.calcWarnZeroMeasured);
 
   @override
   String get calcTechInfo => toUzNewAlphabet(super.calcTechInfo);
@@ -8669,10 +9183,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.classSourceLineLocator(author, title, locator));
 
   @override
-  String get classTopicSearchHint => toUzNewAlphabet(super.classTopicSearchHint);
+  String get classTopicSearchHint =>
+      toUzNewAlphabet(super.classTopicSearchHint);
 
   @override
-  String get classTopicGroupOther => toUzNewAlphabet(super.classTopicGroupOther);
+  String get classTopicGroupOther =>
+      toUzNewAlphabet(super.classTopicGroupOther);
 
   @override
   String get classTopicNoMatch => toUzNewAlphabet(super.classTopicNoMatch);
@@ -8689,13 +9205,16 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.ghsPCodesDetails(count));
 
   @override
-  String get studyExamUnavailableHub => toUzNewAlphabet(super.studyExamUnavailableHub);
+  String get studyExamUnavailableHub =>
+      toUzNewAlphabet(super.studyExamUnavailableHub);
 
   @override
-  String get studyQuizAboutPractice => toUzNewAlphabet(super.studyQuizAboutPractice);
+  String get studyQuizAboutPractice =>
+      toUzNewAlphabet(super.studyQuizAboutPractice);
 
   @override
-  String get classLandscapePrompt => toUzNewAlphabet(super.classLandscapePrompt);
+  String get classLandscapePrompt =>
+      toUzNewAlphabet(super.classLandscapePrompt);
 
   @override
   String get classLandscapeYes => toUzNewAlphabet(super.classLandscapeYes);
@@ -8704,10 +9223,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get classLandscapeNo => toUzNewAlphabet(super.classLandscapeNo);
 
   @override
-  String get classParticipantAnswered => toUzNewAlphabet(super.classParticipantAnswered);
+  String get classParticipantAnswered =>
+      toUzNewAlphabet(super.classParticipantAnswered);
 
   @override
-  String get classParticipantWaiting => toUzNewAlphabet(super.classParticipantWaiting);
+  String get classParticipantWaiting =>
+      toUzNewAlphabet(super.classParticipantWaiting);
 
   @override
   String get lessonsTitle => toUzNewAlphabet(super.lessonsTitle);
@@ -8739,10 +9260,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get lessonsRetry => toUzNewAlphabet(super.lessonsRetry);
 
   @override
-  String get lessonsTranslationPending => toUzNewAlphabet(super.lessonsTranslationPending);
+  String get lessonsTranslationPending =>
+      toUzNewAlphabet(super.lessonsTranslationPending);
 
   @override
-  String get lessonsOriginalUzNote => toUzNewAlphabet(super.lessonsOriginalUzNote);
+  String get lessonsOriginalUzNote =>
+      toUzNewAlphabet(super.lessonsOriginalUzNote);
 
   @override
   String get lessonViewerPrev => toUzNewAlphabet(super.lessonViewerPrev);
@@ -8761,13 +9284,16 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get lessonViewerNotes => toUzNewAlphabet(super.lessonViewerNotes);
 
   @override
-  String get lessonViewerNotesEmpty => toUzNewAlphabet(super.lessonViewerNotesEmpty);
+  String get lessonViewerNotesEmpty =>
+      toUzNewAlphabet(super.lessonViewerNotesEmpty);
 
   @override
-  String get lessonViewerProjector => toUzNewAlphabet(super.lessonViewerProjector);
+  String get lessonViewerProjector =>
+      toUzNewAlphabet(super.lessonViewerProjector);
 
   @override
-  String get lessonViewerProjectorExit => toUzNewAlphabet(super.lessonViewerProjectorExit);
+  String get lessonViewerProjectorExit =>
+      toUzNewAlphabet(super.lessonViewerProjectorExit);
 
   @override
   String lessonViewerSource(String source) =>
@@ -8778,13 +9304,15 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.lessonViewerPage(page));
 
   @override
-  String get lessonViewerReferences => toUzNewAlphabet(super.lessonViewerReferences);
+  String get lessonViewerReferences =>
+      toUzNewAlphabet(super.lessonViewerReferences);
 
   @override
   String get lessonViewerExtras => toUzNewAlphabet(super.lessonViewerExtras);
 
   @override
-  String get lessonViewerUncertain => toUzNewAlphabet(super.lessonViewerUncertain);
+  String get lessonViewerUncertain =>
+      toUzNewAlphabet(super.lessonViewerUncertain);
 
   @override
   String lessonViewerSlideLabel(int n) =>
@@ -8935,10 +9463,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get grpTestsSection => toUzNewAlphabet(super.grpTestsSection);
 
   @override
-  String get grpTestsEmptyTeacher => toUzNewAlphabet(super.grpTestsEmptyTeacher);
+  String get grpTestsEmptyTeacher =>
+      toUzNewAlphabet(super.grpTestsEmptyTeacher);
 
   @override
-  String get grpTestsEmptyStudent => toUzNewAlphabet(super.grpTestsEmptyStudent);
+  String get grpTestsEmptyStudent =>
+      toUzNewAlphabet(super.grpTestsEmptyStudent);
 
   @override
   String get grpMembersSection => toUzNewAlphabet(super.grpMembersSection);
@@ -9007,8 +9537,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.grpQuestionsN(count));
 
   @override
-  String grpDueLabel(String date) =>
-      toUzNewAlphabet(super.grpDueLabel(date));
+  String grpDueLabel(String date) => toUzNewAlphabet(super.grpDueLabel(date));
 
   @override
   String get grpVariantLabel => toUzNewAlphabet(super.grpVariantLabel);
@@ -9086,7 +9615,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.grpRevealAfterDueNote(date));
 
   @override
-  String get grpRevealAfterCloseNote => toUzNewAlphabet(super.grpRevealAfterCloseNote);
+  String get grpRevealAfterCloseNote =>
+      toUzNewAlphabet(super.grpRevealAfterCloseNote);
 
   @override
   String get grpJoinTitle => toUzNewAlphabet(super.grpJoinTitle);
@@ -9130,7 +9660,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get grpOwnerOpen => toUzNewAlphabet(super.grpOwnerOpen);
 
   @override
-  String get grpOwnerOtherAccount => toUzNewAlphabet(super.grpOwnerOtherAccount);
+  String get grpOwnerOtherAccount =>
+      toUzNewAlphabet(super.grpOwnerOtherAccount);
 
   @override
   String get grpTestTitle => toUzNewAlphabet(super.grpTestTitle);
@@ -9180,7 +9711,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.grpPreviewDone(score, total));
 
   @override
-  String get grpPreviewNothingSent => toUzNewAlphabet(super.grpPreviewNothingSent);
+  String get grpPreviewNothingSent =>
+      toUzNewAlphabet(super.grpPreviewNothingSent);
 
   @override
   String get grpBackToGroup => toUzNewAlphabet(super.grpBackToGroup);
@@ -9209,14 +9741,14 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get grpNoAnswer => toUzNewAlphabet(super.grpNoAnswer);
 
   @override
-  String grpPage(String page) =>
-      toUzNewAlphabet(super.grpPage(page));
+  String grpPage(String page) => toUzNewAlphabet(super.grpPage(page));
 
   @override
   String get grpErrNotConfigured => toUzNewAlphabet(super.grpErrNotConfigured);
 
   @override
-  String get grpErrSessionExpired => toUzNewAlphabet(super.grpErrSessionExpired);
+  String get grpErrSessionExpired =>
+      toUzNewAlphabet(super.grpErrSessionExpired);
 
   @override
   String get grpErrOffline => toUzNewAlphabet(super.grpErrOffline);
@@ -9261,20 +9793,23 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get grpErrTooManyGroups => toUzNewAlphabet(super.grpErrTooManyGroups);
 
   @override
-  String get grpErrInvalidSettings => toUzNewAlphabet(super.grpErrInvalidSettings);
+  String get grpErrInvalidSettings =>
+      toUzNewAlphabet(super.grpErrInvalidSettings);
 
   @override
   String get grpErrBadDue => toUzNewAlphabet(super.grpErrBadDue);
 
   @override
-  String get grpErrRevealNeedsDue => toUzNewAlphabet(super.grpErrRevealNeedsDue);
+  String get grpErrRevealNeedsDue =>
+      toUzNewAlphabet(super.grpErrRevealNeedsDue);
 
   @override
   String grpErrNotEnoughQuestions(int available) =>
       toUzNewAlphabet(super.grpErrNotEnoughQuestions(available));
 
   @override
-  String get grpErrTooManyAssignments => toUzNewAlphabet(super.grpErrTooManyAssignments);
+  String get grpErrTooManyAssignments =>
+      toUzNewAlphabet(super.grpErrTooManyAssignments);
 
   @override
   String get grpErrClosed => toUzNewAlphabet(super.grpErrClosed);
@@ -9283,7 +9818,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get grpErrPastDue => toUzNewAlphabet(super.grpErrPastDue);
 
   @override
-  String get grpErrAlreadySubmitted => toUzNewAlphabet(super.grpErrAlreadySubmitted);
+  String get grpErrAlreadySubmitted =>
+      toUzNewAlphabet(super.grpErrAlreadySubmitted);
 
   @override
   String get grpErrTimeOver => toUzNewAlphabet(super.grpErrTimeOver);
@@ -9319,8 +9855,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get grpCountSection => toUzNewAlphabet(super.grpCountSection);
 
   @override
-  String grpCountAll(int count) =>
-      toUzNewAlphabet(super.grpCountAll(count));
+  String grpCountAll(int count) => toUzNewAlphabet(super.grpCountAll(count));
 
   @override
   String get grpCustom => toUzNewAlphabet(super.grpCustom);
@@ -9350,15 +9885,13 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get grpOpenSection => toUzNewAlphabet(super.grpOpenSection);
 
   @override
-  String grpDaysN(int days) =>
-      toUzNewAlphabet(super.grpDaysN(days));
+  String grpDaysN(int days) => toUzNewAlphabet(super.grpDaysN(days));
 
   @override
   String get grpPickDate => toUzNewAlphabet(super.grpPickDate);
 
   @override
-  String grpOpenHint(String date) =>
-      toUzNewAlphabet(super.grpOpenHint(date));
+  String grpOpenHint(String date) => toUzNewAlphabet(super.grpOpenHint(date));
 
   @override
   String get grpMixedAction => toUzNewAlphabet(super.grpMixedAction);
@@ -9396,7 +9929,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get grpMixedTitleHint => toUzNewAlphabet(super.grpMixedTitleHint);
 
   @override
-  String get grpMixedPreviewAction => toUzNewAlphabet(super.grpMixedPreviewAction);
+  String get grpMixedPreviewAction =>
+      toUzNewAlphabet(super.grpMixedPreviewAction);
 
   @override
   String grpMixedPreviewTitle(int count) =>
@@ -9409,28 +9943,31 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get grpPracticeBanner => toUzNewAlphabet(super.grpPracticeBanner);
 
   @override
-  String get grpPracticeNothingSent => toUzNewAlphabet(super.grpPracticeNothingSent);
+  String get grpPracticeNothingSent =>
+      toUzNewAlphabet(super.grpPracticeNothingSent);
 
   @override
-  String grpCountMax(int count) =>
-      toUzNewAlphabet(super.grpCountMax(count));
+  String grpCountMax(int count) => toUzNewAlphabet(super.grpCountMax(count));
 
   @override
   String classQuestionCountAll(int n) =>
       toUzNewAlphabet(super.classQuestionCountAll(n));
 
   @override
-  String get classQuestionCountOther => toUzNewAlphabet(super.classQuestionCountOther);
+  String get classQuestionCountOther =>
+      toUzNewAlphabet(super.classQuestionCountOther);
 
   @override
   String classQuestionCountLimited(int n) =>
       toUzNewAlphabet(super.classQuestionCountLimited(n));
 
   @override
-  String get classTranslationPending => toUzNewAlphabet(super.classTranslationPending);
+  String get classTranslationPending =>
+      toUzNewAlphabet(super.classTranslationPending);
 
   @override
-  String get classHardestOpenHint => toUzNewAlphabet(super.classHardestOpenHint);
+  String get classHardestOpenHint =>
+      toUzNewAlphabet(super.classHardestOpenHint);
 
   @override
   String get classDiscussTitle => toUzNewAlphabet(super.classDiscussTitle);
@@ -9448,13 +9985,16 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.classDiscussAnswered(n));
 
   @override
-  String get classDiscussCorrectMark => toUzNewAlphabet(super.classDiscussCorrectMark);
+  String get classDiscussCorrectMark =>
+      toUzNewAlphabet(super.classDiscussCorrectMark);
 
   @override
-  String get classDiscussExplanation => toUzNewAlphabet(super.classDiscussExplanation);
+  String get classDiscussExplanation =>
+      toUzNewAlphabet(super.classDiscussExplanation);
 
   @override
-  String get classDiscussNoExplanation => toUzNewAlphabet(super.classDiscussNoExplanation);
+  String get classDiscussNoExplanation =>
+      toUzNewAlphabet(super.classDiscussNoExplanation);
 
   @override
   String get classDiscussSource => toUzNewAlphabet(super.classDiscussSource);
@@ -9466,7 +10006,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get classDiscussNext => toUzNewAlphabet(super.classDiscussNext);
 
   @override
-  String get classDiscussUnavailable => toUzNewAlphabet(super.classDiscussUnavailable);
+  String get classDiscussUnavailable =>
+      toUzNewAlphabet(super.classDiscussUnavailable);
 
   @override
   String get classDiscussBigFont => toUzNewAlphabet(super.classDiscussBigFont);
@@ -9490,13 +10031,15 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get grpLessonGroupTest => toUzNewAlphabet(super.grpLessonGroupTest);
 
   @override
-  String get grpLessonGroupTestHint => toUzNewAlphabet(super.grpLessonGroupTestHint);
+  String get grpLessonGroupTestHint =>
+      toUzNewAlphabet(super.grpLessonGroupTestHint);
 
   @override
   String get grpLessonTitle => toUzNewAlphabet(super.grpLessonTitle);
 
   @override
-  String get grpLessonGroupSection => toUzNewAlphabet(super.grpLessonGroupSection);
+  String get grpLessonGroupSection =>
+      toUzNewAlphabet(super.grpLessonGroupSection);
 
   @override
   String get grpLessonNewGroup => toUzNewAlphabet(super.grpLessonNewGroup);
@@ -9505,13 +10048,15 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get grpLessonNoGroups => toUzNewAlphabet(super.grpLessonNoGroups);
 
   @override
-  String get grpLessonCreateGroup => toUzNewAlphabet(super.grpLessonCreateGroup);
+  String get grpLessonCreateGroup =>
+      toUzNewAlphabet(super.grpLessonCreateGroup);
 
   @override
   String get grpLessonCancelNew => toUzNewAlphabet(super.grpLessonCancelNew);
 
   @override
-  String get grpLessonTopicSection => toUzNewAlphabet(super.grpLessonTopicSection);
+  String get grpLessonTopicSection =>
+      toUzNewAlphabet(super.grpLessonTopicSection);
 
   @override
   String get grpLessonTopicFixed => toUzNewAlphabet(super.grpLessonTopicFixed);
@@ -9526,16 +10071,20 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get grpLessonPickGroup => toUzNewAlphabet(super.grpLessonPickGroup);
 
   @override
-  String get grpLessonStartedTitle => toUzNewAlphabet(super.grpLessonStartedTitle);
+  String get grpLessonStartedTitle =>
+      toUzNewAlphabet(super.grpLessonStartedTitle);
 
   @override
-  String get grpLessonStartedHint => toUzNewAlphabet(super.grpLessonStartedHint);
+  String get grpLessonStartedHint =>
+      toUzNewAlphabet(super.grpLessonStartedHint);
 
   @override
-  String get grpLessonLiveResults => toUzNewAlphabet(super.grpLessonLiveResults);
+  String get grpLessonLiveResults =>
+      toUzNewAlphabet(super.grpLessonLiveResults);
 
   @override
-  String get grpLessonTeacherPanel => toUzNewAlphabet(super.grpLessonTeacherPanel);
+  String get grpLessonTeacherPanel =>
+      toUzNewAlphabet(super.grpLessonTeacherPanel);
 
   @override
   String get grpLessonJoinLink => toUzNewAlphabet(super.grpLessonJoinLink);
@@ -9556,8 +10105,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get grpColState => toUzNewAlphabet(super.grpColState);
 
   @override
-  String grpRankSpoken(int rank) =>
-      toUzNewAlphabet(super.grpRankSpoken(rank));
+  String grpRankSpoken(int rank) => toUzNewAlphabet(super.grpRankSpoken(rank));
 
   @override
   String get grpBoardClosed => toUzNewAlphabet(super.grpBoardClosed);
@@ -9594,29 +10142,35 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get modeTeacher => toUzNewAlphabet(super.modeTeacher);
 
   @override
-  String get modeTeacherDescription => toUzNewAlphabet(super.modeTeacherDescription);
+  String get modeTeacherDescription =>
+      toUzNewAlphabet(super.modeTeacherDescription);
 
   @override
   String get modeTeacherNote => toUzNewAlphabet(super.modeTeacherNote);
 
   @override
-  String get disciplineLessonsTitle => toUzNewAlphabet(super.disciplineLessonsTitle);
+  String get disciplineLessonsTitle =>
+      toUzNewAlphabet(super.disciplineLessonsTitle);
 
   @override
   String disciplineLessonsBody(int count) =>
       toUzNewAlphabet(super.disciplineLessonsBody(count));
 
   @override
-  String get disciplineLessonGroupTest => toUzNewAlphabet(super.disciplineLessonGroupTest);
+  String get disciplineLessonGroupTest =>
+      toUzNewAlphabet(super.disciplineLessonGroupTest);
 
   @override
-  String get disciplineLessonsTeacherOnly => toUzNewAlphabet(super.disciplineLessonsTeacherOnly);
+  String get disciplineLessonsTeacherOnly =>
+      toUzNewAlphabet(super.disciplineLessonsTeacherOnly);
 
   @override
-  String get disciplineLessonsAll => toUzNewAlphabet(super.disciplineLessonsAll);
+  String get disciplineLessonsAll =>
+      toUzNewAlphabet(super.disciplineLessonsAll);
 
   @override
-  String get homeInstrumentsTitle => toUzNewAlphabet(super.homeInstrumentsTitle);
+  String get homeInstrumentsTitle =>
+      toUzNewAlphabet(super.homeInstrumentsTitle);
 
   @override
   String get homeInstrumentsBody => toUzNewAlphabet(super.homeInstrumentsBody);
@@ -9650,55 +10204,69 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get proFreeAlways => toUzNewAlphabet(super.proFreeAlways);
 
   @override
-  String get proBenefitFullQuizBank => toUzNewAlphabet(super.proBenefitFullQuizBank);
+  String get proBenefitFullQuizBank =>
+      toUzNewAlphabet(super.proBenefitFullQuizBank);
 
   @override
   String get proBenefitExamMode => toUzNewAlphabet(super.proBenefitExamMode);
 
   @override
-  String get proBenefitAllFlashcards => toUzNewAlphabet(super.proBenefitAllFlashcards);
+  String get proBenefitAllFlashcards =>
+      toUzNewAlphabet(super.proBenefitAllFlashcards);
 
   @override
-  String get proBenefitErrorAnalytics => toUzNewAlphabet(super.proBenefitErrorAnalytics);
+  String get proBenefitErrorAnalytics =>
+      toUzNewAlphabet(super.proBenefitErrorAnalytics);
 
   @override
-  String get proBenefitOfflineDownload => toUzNewAlphabet(super.proBenefitOfflineDownload);
+  String get proBenefitOfflineDownload =>
+      toUzNewAlphabet(super.proBenefitOfflineDownload);
 
   @override
-  String get proBenefitAllLessons => toUzNewAlphabet(super.proBenefitAllLessons);
+  String get proBenefitAllLessons =>
+      toUzNewAlphabet(super.proBenefitAllLessons);
 
   @override
-  String get proBenefitUnlimitedGroupTests => toUzNewAlphabet(super.proBenefitUnlimitedGroupTests);
+  String get proBenefitUnlimitedGroupTests =>
+      toUzNewAlphabet(super.proBenefitUnlimitedGroupTests);
 
   @override
-  String get proBenefitResultsCsv => toUzNewAlphabet(super.proBenefitResultsCsv);
+  String get proBenefitResultsCsv =>
+      toUzNewAlphabet(super.proBenefitResultsCsv);
 
   @override
-  String get proBenefitHardestDiscussion => toUzNewAlphabet(super.proBenefitHardestDiscussion);
+  String get proBenefitHardestDiscussion =>
+      toUzNewAlphabet(super.proBenefitHardestDiscussion);
 
   @override
-  String get proBenefitLiveTestLarge => toUzNewAlphabet(super.proBenefitLiveTestLarge);
+  String get proBenefitLiveTestLarge =>
+      toUzNewAlphabet(super.proBenefitLiveTestLarge);
 
   @override
-  String get proBenefitInstrumentsCourseFull => toUzNewAlphabet(super.proBenefitInstrumentsCourseFull);
+  String get proBenefitInstrumentsCourseFull =>
+      toUzNewAlphabet(super.proBenefitInstrumentsCourseFull);
 
   @override
-  String get proBenefitProCalculators => toUzNewAlphabet(super.proBenefitProCalculators);
+  String get proBenefitProCalculators =>
+      toUzNewAlphabet(super.proBenefitProCalculators);
 
   @override
-  String get proBenefitCaseNotebook => toUzNewAlphabet(super.proBenefitCaseNotebook);
+  String get proBenefitCaseNotebook =>
+      toUzNewAlphabet(super.proBenefitCaseNotebook);
 
   @override
   String get proBenefitCourtPrep => toUzNewAlphabet(super.proBenefitCourtPrep);
 
   @override
-  String get proBenefitAiExtended => toUzNewAlphabet(super.proBenefitAiExtended);
+  String get proBenefitAiExtended =>
+      toUzNewAlphabet(super.proBenefitAiExtended);
 
   @override
   String get proCtxAllLessons => toUzNewAlphabet(super.proCtxAllLessons);
 
   @override
-  String get proCtxInstrumentsRest => toUzNewAlphabet(super.proCtxInstrumentsRest);
+  String get proCtxInstrumentsRest =>
+      toUzNewAlphabet(super.proCtxInstrumentsRest);
 
   @override
   String get proCtxGroupLimit => toUzNewAlphabet(super.proCtxGroupLimit);
@@ -9833,7 +10401,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get proFlowCanceled => toUzNewAlphabet(super.proFlowCanceled);
 
   @override
-  String get proFlowStoreNotConfigured => toUzNewAlphabet(super.proFlowStoreNotConfigured);
+  String get proFlowStoreNotConfigured =>
+      toUzNewAlphabet(super.proFlowStoreNotConfigured);
 
   @override
   String get proFlowInvalid => toUzNewAlphabet(super.proFlowInvalid);
@@ -9845,7 +10414,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get proFlowError => toUzNewAlphabet(super.proFlowError);
 
   @override
-  String get proFlowRestoreNothing => toUzNewAlphabet(super.proFlowRestoreNothing);
+  String get proFlowRestoreNothing =>
+      toUzNewAlphabet(super.proFlowRestoreNothing);
 
   @override
   String get proTrialUsedDevice => toUzNewAlphabet(super.proTrialUsedDevice);
@@ -9884,13 +10454,15 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get proPrivacyLink => toUzNewAlphabet(super.proPrivacyLink);
 
   @override
-  String get proOfferStudentTitle => toUzNewAlphabet(super.proOfferStudentTitle);
+  String get proOfferStudentTitle =>
+      toUzNewAlphabet(super.proOfferStudentTitle);
 
   @override
   String get proOfferStudentBody => toUzNewAlphabet(super.proOfferStudentBody);
 
   @override
-  String get proOfferTeacherTitle => toUzNewAlphabet(super.proOfferTeacherTitle);
+  String get proOfferTeacherTitle =>
+      toUzNewAlphabet(super.proOfferTeacherTitle);
 
   @override
   String get proOfferTeacherBody => toUzNewAlphabet(super.proOfferTeacherBody);
@@ -10009,10 +10581,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get proPremiumBack => toUzNewAlphabet(super.proPremiumBack);
 
   @override
-  String get disciplineSharedModule => toUzNewAlphabet(super.disciplineSharedModule);
+  String get disciplineSharedModule =>
+      toUzNewAlphabet(super.disciplineSharedModule);
 
   @override
-  String get disciplineSparseNote => toUzNewAlphabet(super.disciplineSparseNote);
+  String get disciplineSparseNote =>
+      toUzNewAlphabet(super.disciplineSparseNote);
 
   @override
   String get assessmentTitle => toUzNewAlphabet(super.assessmentTitle);
@@ -10024,13 +10598,16 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get assessmentIntro => toUzNewAlphabet(super.assessmentIntro);
 
   @override
-  String get assessmentSpecSudTib => toUzNewAlphabet(super.assessmentSpecSudTib);
+  String get assessmentSpecSudTib =>
+      toUzNewAlphabet(super.assessmentSpecSudTib);
 
   @override
-  String get assessmentSpecPatAnat => toUzNewAlphabet(super.assessmentSpecPatAnat);
+  String get assessmentSpecPatAnat =>
+      toUzNewAlphabet(super.assessmentSpecPatAnat);
 
   @override
-  String get assessmentSpecSudKimyo => toUzNewAlphabet(super.assessmentSpecSudKimyo);
+  String get assessmentSpecSudKimyo =>
+      toUzNewAlphabet(super.assessmentSpecSudKimyo);
 
   @override
   String get assessmentCatC23 => toUzNewAlphabet(super.assessmentCatC23);
@@ -10060,7 +10637,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.assessmentReadyProgress(done, total));
 
   @override
-  String get assessmentSearchHint => toUzNewAlphabet(super.assessmentSearchHint);
+  String get assessmentSearchHint =>
+      toUzNewAlphabet(super.assessmentSearchHint);
 
   @override
   String get assessmentNoResults => toUzNewAlphabet(super.assessmentNoResults);
@@ -10073,13 +10651,15 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.assessmentSourceLine(source));
 
   @override
-  String get assessmentSourceName => toUzNewAlphabet(super.assessmentSourceName);
+  String get assessmentSourceName =>
+      toUzNewAlphabet(super.assessmentSourceName);
 
   @override
   String get assessmentMarkReady => toUzNewAlphabet(super.assessmentMarkReady);
 
   @override
-  String get assessmentUnmarkReady => toUzNewAlphabet(super.assessmentUnmarkReady);
+  String get assessmentUnmarkReady =>
+      toUzNewAlphabet(super.assessmentUnmarkReady);
 
   @override
   String get assessmentReadyChip => toUzNewAlphabet(super.assessmentReadyChip);
@@ -10109,7 +10689,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get assessmentTestList => toUzNewAlphabet(super.assessmentTestList);
 
   @override
-  String get assessmentKeyPending => toUzNewAlphabet(super.assessmentKeyPending);
+  String get assessmentKeyPending =>
+      toUzNewAlphabet(super.assessmentKeyPending);
 
   @override
   String get assessmentCorrect => toUzNewAlphabet(super.assessmentCorrect);
@@ -10126,7 +10707,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.assessmentAnswerSource(src));
 
   @override
-  String get assessmentKeyTeacher => toUzNewAlphabet(super.assessmentKeyTeacher);
+  String get assessmentKeyTeacher =>
+      toUzNewAlphabet(super.assessmentKeyTeacher);
 
   @override
   String get assessmentNext => toUzNewAlphabet(super.assessmentNext);
@@ -10135,7 +10717,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get assessmentFinish => toUzNewAlphabet(super.assessmentFinish);
 
   @override
-  String get assessmentResultTitle => toUzNewAlphabet(super.assessmentResultTitle);
+  String get assessmentResultTitle =>
+      toUzNewAlphabet(super.assessmentResultTitle);
 
   @override
   String assessmentResultScore(int c, int n) =>
@@ -10151,7 +10734,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get assessmentEmpty => toUzNewAlphabet(super.assessmentEmpty);
 
   @override
-  String get assessmentOpenSource => toUzNewAlphabet(super.assessmentOpenSource);
+  String get assessmentOpenSource =>
+      toUzNewAlphabet(super.assessmentOpenSource);
 
   @override
   String assessmentBookPage(String title, int page) =>
@@ -10192,44 +10776,56 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get gcmsUnavailable => toUzNewAlphabet(super.gcmsUnavailable);
 
   @override
-  String get assessmentSourcesTitle => toUzNewAlphabet(super.assessmentSourcesTitle);
+  String get assessmentSourcesTitle =>
+      toUzNewAlphabet(super.assessmentSourcesTitle);
 
   @override
-  String get assessmentSourcesIntro => toUzNewAlphabet(super.assessmentSourcesIntro);
+  String get assessmentSourcesIntro =>
+      toUzNewAlphabet(super.assessmentSourcesIntro);
 
   @override
-  String get assessmentSourcesBooks => toUzNewAlphabet(super.assessmentSourcesBooks);
+  String get assessmentSourcesBooks =>
+      toUzNewAlphabet(super.assessmentSourcesBooks);
 
   @override
-  String get assessmentSourcesTeacher => toUzNewAlphabet(super.assessmentSourcesTeacher);
+  String get assessmentSourcesTeacher =>
+      toUzNewAlphabet(super.assessmentSourcesTeacher);
 
   @override
-  String get assessmentSourcesWeb => toUzNewAlphabet(super.assessmentSourcesWeb);
+  String get assessmentSourcesWeb =>
+      toUzNewAlphabet(super.assessmentSourcesWeb);
 
   @override
   String assessmentBasis(String quote) =>
       toUzNewAlphabet(super.assessmentBasis(quote));
 
   @override
-  String get assessmentAnswerTitle => toUzNewAlphabet(super.assessmentAnswerTitle);
+  String get assessmentAnswerTitle =>
+      toUzNewAlphabet(super.assessmentAnswerTitle);
 
   @override
-  String get assessmentAnswerSoon => toUzNewAlphabet(super.assessmentAnswerSoon);
+  String get assessmentAnswerSoon =>
+      toUzNewAlphabet(super.assessmentAnswerSoon);
 
   @override
-  String get assessmentAnswerGaps => toUzNewAlphabet(super.assessmentAnswerGaps);
+  String get assessmentAnswerGaps =>
+      toUzNewAlphabet(super.assessmentAnswerGaps);
 
   @override
-  String get assessmentAnswerOriginal => toUzNewAlphabet(super.assessmentAnswerOriginal);
+  String get assessmentAnswerOriginal =>
+      toUzNewAlphabet(super.assessmentAnswerOriginal);
 
   @override
-  String get assessmentAnswerUzOnly => toUzNewAlphabet(super.assessmentAnswerUzOnly);
+  String get assessmentAnswerUzOnly =>
+      toUzNewAlphabet(super.assessmentAnswerUzOnly);
 
   @override
-  String get assessmentAnswerSourceLabel => toUzNewAlphabet(super.assessmentAnswerSourceLabel);
+  String get assessmentAnswerSourceLabel =>
+      toUzNewAlphabet(super.assessmentAnswerSourceLabel);
 
   @override
-  String get assessmentAnswerNote => toUzNewAlphabet(super.assessmentAnswerNote);
+  String get assessmentAnswerNote =>
+      toUzNewAlphabet(super.assessmentAnswerNote);
 
   @override
   String get admProCustom => toUzNewAlphabet(super.admProCustom);
@@ -10355,7 +10951,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get classBoardAllDone => toUzNewAlphabet(super.classBoardAllDone);
 
   @override
-  String get classBoardNotStarted => toUzNewAlphabet(super.classBoardNotStarted);
+  String get classBoardNotStarted =>
+      toUzNewAlphabet(super.classBoardNotStarted);
 
   @override
   String get classBoardDone => toUzNewAlphabet(super.classBoardDone);
@@ -10565,7 +11162,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get tcErrSignIn => toUzNewAlphabet(super.tcErrSignIn);
 
   @override
-  String get scoringScore100Label => toUzNewAlphabet(super.scoringScore100Label);
+  String get scoringScore100Label =>
+      toUzNewAlphabet(super.scoringScore100Label);
 
   @override
   String get scoringGradeLabel => toUzNewAlphabet(super.scoringGradeLabel);
@@ -10575,7 +11173,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.scoringGradeApproxTitle(year));
 
   @override
-  String get scoringGradeBelowMin => toUzNewAlphabet(super.scoringGradeBelowMin);
+  String get scoringGradeBelowMin =>
+      toUzNewAlphabet(super.scoringGradeBelowMin);
 
   @override
   String scoringApproxNote(String minPass) =>
@@ -10586,7 +11185,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.scoringRowLine(score, grade));
 
   @override
-  String get scoringSpeedPointsNote => toUzNewAlphabet(super.scoringSpeedPointsNote);
+  String get scoringSpeedPointsNote =>
+      toUzNewAlphabet(super.scoringSpeedPointsNote);
 
   @override
   String get scoringMidtermTitle => toUzNewAlphabet(super.scoringMidtermTitle);
@@ -10612,7 +11212,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.scoringMidtermVariantOff(pool, max));
 
   @override
-  String get scoringMidtermVariantOn => toUzNewAlphabet(super.scoringMidtermVariantOn);
+  String get scoringMidtermVariantOn =>
+      toUzNewAlphabet(super.scoringMidtermVariantOn);
 
   @override
   String get acShuffleHint => toUzNewAlphabet(super.acShuffleHint);
@@ -10625,8 +11226,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get acStudentNote => toUzNewAlphabet(super.acStudentNote);
 
   @override
-  String acLeftCount(int count) =>
-      toUzNewAlphabet(super.acLeftCount(count));
+  String acLeftCount(int count) => toUzNewAlphabet(super.acLeftCount(count));
 
   @override
   String get acFastCorrect => toUzNewAlphabet(super.acFastCorrect);
@@ -10792,8 +11392,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get scdGroupSection => toUzNewAlphabet(super.scdGroupSection);
 
   @override
-  String scdOpenCard(String name) =>
-      toUzNewAlphabet(super.scdOpenCard(name));
+  String scdOpenCard(String name) => toUzNewAlphabet(super.scdOpenCard(name));
 
   @override
   String get scdSheetReport => toUzNewAlphabet(super.scdSheetReport);
@@ -10898,10 +11497,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get proBenefitListen => toUzNewAlphabet(super.proBenefitListen);
 
   @override
-  String get proBenefitGroupReview => toUzNewAlphabet(super.proBenefitGroupReview);
+  String get proBenefitGroupReview =>
+      toUzNewAlphabet(super.proBenefitGroupReview);
 
   @override
-  String get proBenefitTeacherPanel => toUzNewAlphabet(super.proBenefitTeacherPanel);
+  String get proBenefitTeacherPanel =>
+      toUzNewAlphabet(super.proBenefitTeacherPanel);
 
   @override
   String get proSampleTitle => toUzNewAlphabet(super.proSampleTitle);
@@ -10922,13 +11523,16 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get workbenchFactSource => toUzNewAlphabet(super.workbenchFactSource);
 
   @override
-  String get workbenchFactSemantics => toUzNewAlphabet(super.workbenchFactSemantics);
+  String get workbenchFactSemantics =>
+      toUzNewAlphabet(super.workbenchFactSemantics);
 
   @override
-  String get workbenchCasebookTitle => toUzNewAlphabet(super.workbenchCasebookTitle);
+  String get workbenchCasebookTitle =>
+      toUzNewAlphabet(super.workbenchCasebookTitle);
 
   @override
-  String get workbenchCasebookBody => toUzNewAlphabet(super.workbenchCasebookBody);
+  String get workbenchCasebookBody =>
+      toUzNewAlphabet(super.workbenchCasebookBody);
 
   @override
   String get workbenchCourtTitle => toUzNewAlphabet(super.workbenchCourtTitle);
@@ -10940,10 +11544,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get workbenchCalcTitle => toUzNewAlphabet(super.workbenchCalcTitle);
 
   @override
-  String get workbenchCalcMedBody => toUzNewAlphabet(super.workbenchCalcMedBody);
+  String get workbenchCalcMedBody =>
+      toUzNewAlphabet(super.workbenchCalcMedBody);
 
   @override
-  String get workbenchCalcMixedBody => toUzNewAlphabet(super.workbenchCalcMixedBody);
+  String get workbenchCalcMixedBody =>
+      toUzNewAlphabet(super.workbenchCalcMixedBody);
 
   @override
   String get workbenchAiBody => toUzNewAlphabet(super.workbenchAiBody);
@@ -10955,22 +11561,26 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get workbenchLabBody => toUzNewAlphabet(super.workbenchLabBody);
 
   @override
-  String get workbenchLabReagents => toUzNewAlphabet(super.workbenchLabReagents);
+  String get workbenchLabReagents =>
+      toUzNewAlphabet(super.workbenchLabReagents);
 
   @override
-  String get workbenchLabReagentsSub => toUzNewAlphabet(super.workbenchLabReagentsSub);
+  String get workbenchLabReagentsSub =>
+      toUzNewAlphabet(super.workbenchLabReagentsSub);
 
   @override
   String get workbenchLabExpress => toUzNewAlphabet(super.workbenchLabExpress);
 
   @override
-  String get workbenchLabExpressSub => toUzNewAlphabet(super.workbenchLabExpressSub);
+  String get workbenchLabExpressSub =>
+      toUzNewAlphabet(super.workbenchLabExpressSub);
 
   @override
   String get workbenchLabSpectro => toUzNewAlphabet(super.workbenchLabSpectro);
 
   @override
-  String get workbenchLabSpectroSub => toUzNewAlphabet(super.workbenchLabSpectroSub);
+  String get workbenchLabSpectroSub =>
+      toUzNewAlphabet(super.workbenchLabSpectroSub);
 
   @override
   String get workbenchLabMs => toUzNewAlphabet(super.workbenchLabMs);
@@ -10979,10 +11589,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get workbenchLabMsSub => toUzNewAlphabet(super.workbenchLabMsSub);
 
   @override
-  String get workbenchSolutionTitle => toUzNewAlphabet(super.workbenchSolutionTitle);
+  String get workbenchSolutionTitle =>
+      toUzNewAlphabet(super.workbenchSolutionTitle);
 
   @override
-  String get workbenchSolutionBody => toUzNewAlphabet(super.workbenchSolutionBody);
+  String get workbenchSolutionBody =>
+      toUzNewAlphabet(super.workbenchSolutionBody);
 
   @override
   String get workbenchLodTitle => toUzNewAlphabet(super.workbenchLodTitle);
@@ -11021,13 +11633,15 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get dailyQuestionTitle => toUzNewAlphabet(super.dailyQuestionTitle);
 
   @override
-  String get dailyQuestionCorrect => toUzNewAlphabet(super.dailyQuestionCorrect);
+  String get dailyQuestionCorrect =>
+      toUzNewAlphabet(super.dailyQuestionCorrect);
 
   @override
   String get dailyQuestionWrong => toUzNewAlphabet(super.dailyQuestionWrong);
 
   @override
-  String get dailyQuestionExplain => toUzNewAlphabet(super.dailyQuestionExplain);
+  String get dailyQuestionExplain =>
+      toUzNewAlphabet(super.dailyQuestionExplain);
 
   @override
   String referralRewardProgress(int n, int needed) =>
@@ -11041,7 +11655,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get homeCoreTitle => toUzNewAlphabet(super.homeCoreTitle);
 
   @override
-  String get homeCoreMedicineBody => toUzNewAlphabet(super.homeCoreMedicineBody);
+  String get homeCoreMedicineBody =>
+      toUzNewAlphabet(super.homeCoreMedicineBody);
 
   @override
   String get homeCoreToxBody => toUzNewAlphabet(super.homeCoreToxBody);
@@ -11053,16 +11668,20 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get teacherDeskTitle => toUzNewAlphabet(super.teacherDeskTitle);
 
   @override
-  String get teacherDeskLessonsTitle => toUzNewAlphabet(super.teacherDeskLessonsTitle);
+  String get teacherDeskLessonsTitle =>
+      toUzNewAlphabet(super.teacherDeskLessonsTitle);
 
   @override
-  String get teacherDeskLessonsBody => toUzNewAlphabet(super.teacherDeskLessonsBody);
+  String get teacherDeskLessonsBody =>
+      toUzNewAlphabet(super.teacherDeskLessonsBody);
 
   @override
-  String get workbenchViewMedicine => toUzNewAlphabet(super.workbenchViewMedicine);
+  String get workbenchViewMedicine =>
+      toUzNewAlphabet(super.workbenchViewMedicine);
 
   @override
-  String get workbenchViewChemistry => toUzNewAlphabet(super.workbenchViewChemistry);
+  String get workbenchViewChemistry =>
+      toUzNewAlphabet(super.workbenchViewChemistry);
 
   @override
   String get workbenchFavTitle => toUzNewAlphabet(super.workbenchFavTitle);
@@ -11104,7 +11723,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get labHubGcmsScheme => toUzNewAlphabet(super.labHubGcmsScheme);
 
   @override
-  String get labHubGcmsSchemeBody => toUzNewAlphabet(super.labHubGcmsSchemeBody);
+  String get labHubGcmsSchemeBody =>
+      toUzNewAlphabet(super.labHubGcmsSchemeBody);
 
   @override
   String get labHubReading => toUzNewAlphabet(super.labHubReading);
@@ -11146,7 +11766,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get deathHubPoison => toUzNewAlphabet(super.deathHubPoison);
 
   @override
-  String get deathHubIdentification => toUzNewAlphabet(super.deathHubIdentification);
+  String get deathHubIdentification =>
+      toUzNewAlphabet(super.deathHubIdentification);
 
   @override
   String get deathHubHistology => toUzNewAlphabet(super.deathHubHistology);
@@ -11180,7 +11801,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get equipGroupMorgue => toUzNewAlphabet(super.equipGroupMorgue);
 
   @override
-  String get equipIllustrationNote => toUzNewAlphabet(super.equipIllustrationNote);
+  String get equipIllustrationNote =>
+      toUzNewAlphabet(super.equipIllustrationNote);
 
   @override
   String get equipWhat => toUzNewAlphabet(super.equipWhat);
@@ -11219,7 +11841,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get settingsNewAlphabet => toUzNewAlphabet(super.settingsNewAlphabet);
 
   @override
-  String get settingsNewAlphabetHint => toUzNewAlphabet(super.settingsNewAlphabetHint);
+  String get settingsNewAlphabetHint =>
+      toUzNewAlphabet(super.settingsNewAlphabetHint);
 
   @override
   String get dnaTitle => toUzNewAlphabet(super.dnaTitle);
@@ -11256,11 +11879,11 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.dnaStatementCount(n));
 
   @override
-  String dnaCourtCount(int n) =>
-      toUzNewAlphabet(super.dnaCourtCount(n));
+  String dnaCourtCount(int n) => toUzNewAlphabet(super.dnaCourtCount(n));
 
   @override
-  String get dnaPendingTranslation => toUzNewAlphabet(super.dnaPendingTranslation);
+  String get dnaPendingTranslation =>
+      toUzNewAlphabet(super.dnaPendingTranslation);
 
   @override
   String get pmdTitle => toUzNewAlphabet(super.pmdTitle);
@@ -11408,12 +12031,10 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get weBarbBody => toUzNewAlphabet(super.weBarbBody);
 
   @override
-  String weMsBase(String mz) =>
-      toUzNewAlphabet(super.weMsBase(mz));
+  String weMsBase(String mz) => toUzNewAlphabet(super.weMsBase(mz));
 
   @override
-  String weMsMol(String mz) =>
-      toUzNewAlphabet(super.weMsMol(mz));
+  String weMsMol(String mz) => toUzNewAlphabet(super.weMsMol(mz));
 
   @override
   String get weGcmsTitle => toUzNewAlphabet(super.weGcmsTitle);
@@ -11422,10 +12043,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get weGcmsBody => toUzNewAlphabet(super.weGcmsBody);
 
   @override
-  String get workbenchLabAllMethods => toUzNewAlphabet(super.workbenchLabAllMethods);
+  String get workbenchLabAllMethods =>
+      toUzNewAlphabet(super.workbenchLabAllMethods);
 
   @override
-  String get workbenchLabAllMethodsSub => toUzNewAlphabet(super.workbenchLabAllMethodsSub);
+  String get workbenchLabAllMethodsSub =>
+      toUzNewAlphabet(super.workbenchLabAllMethodsSub);
 
   @override
   String get labHubExamples => toUzNewAlphabet(super.labHubExamples);
@@ -11455,10 +12078,12 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get profTeacherFillHint => toUzNewAlphabet(super.profTeacherFillHint);
 
   @override
-  String get profTeacherVisibleOn => toUzNewAlphabet(super.profTeacherVisibleOn);
+  String get profTeacherVisibleOn =>
+      toUzNewAlphabet(super.profTeacherVisibleOn);
 
   @override
-  String get profTeacherVisibleOff => toUzNewAlphabet(super.profTeacherVisibleOff);
+  String get profTeacherVisibleOff =>
+      toUzNewAlphabet(super.profTeacherVisibleOff);
 
   @override
   String get admTestsTitle => toUzNewAlphabet(super.admTestsTitle);
@@ -11479,13 +12104,15 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get admTestsKindLive => toUzNewAlphabet(super.admTestsKindLive);
 
   @override
-  String get admTestsKindAssignment => toUzNewAlphabet(super.admTestsKindAssignment);
+  String get admTestsKindAssignment =>
+      toUzNewAlphabet(super.admTestsKindAssignment);
 
   @override
   String get admTestsNoAvg => toUzNewAlphabet(super.admTestsNoAvg);
 
   @override
-  String get admTestsResultsTitle => toUzNewAlphabet(super.admTestsResultsTitle);
+  String get admTestsResultsTitle =>
+      toUzNewAlphabet(super.admTestsResultsTitle);
 
   @override
   String get admTestsNoStudents => toUzNewAlphabet(super.admTestsNoStudents);
@@ -11502,16 +12129,14 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.admTestsGroup(name));
 
   @override
-  String admTestsCode(String code) =>
-      toUzNewAlphabet(super.admTestsCode(code));
+  String admTestsCode(String code) => toUzNewAlphabet(super.admTestsCode(code));
 
   @override
   String admTestsQuestions(int n) =>
       toUzNewAlphabet(super.admTestsQuestions(n));
 
   @override
-  String admTestsJoined(int n) =>
-      toUzNewAlphabet(super.admTestsJoined(n));
+  String admTestsJoined(int n) => toUzNewAlphabet(super.admTestsJoined(n));
 
   @override
   String admTestsFinished(int done, int total) =>
@@ -11567,8 +12192,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get catVisibleFailed => toUzNewAlphabet(super.catVisibleFailed);
 
   @override
-  String catStarsCount(int n) =>
-      toUzNewAlphabet(super.catStarsCount(n));
+  String catStarsCount(int n) => toUzNewAlphabet(super.catStarsCount(n));
 
   @override
   String disciplinePlannedMore(int n) =>
@@ -11584,7 +12208,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get lessonKindPractice => toUzNewAlphabet(super.lessonKindPractice);
 
   @override
-  String get disciplineLessonsTitleStudent => toUzNewAlphabet(super.disciplineLessonsTitleStudent);
+  String get disciplineLessonsTitleStudent =>
+      toUzNewAlphabet(super.disciplineLessonsTitleStudent);
 
   @override
   String disciplineLessonsBodyStudent(int n) =>
@@ -11594,13 +12219,15 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get lessonAutoVoice => toUzNewAlphabet(super.lessonAutoVoice);
 
   @override
-  String get lessonAutoVoiceRunning => toUzNewAlphabet(super.lessonAutoVoiceRunning);
+  String get lessonAutoVoiceRunning =>
+      toUzNewAlphabet(super.lessonAutoVoiceRunning);
 
   @override
   String get lessonListenDone => toUzNewAlphabet(super.lessonListenDone);
 
   @override
-  String get lessonListenContinue => toUzNewAlphabet(super.lessonListenContinue);
+  String get lessonListenContinue =>
+      toUzNewAlphabet(super.lessonListenContinue);
 
   @override
   String get lessonExplainTitle => toUzNewAlphabet(super.lessonExplainTitle);
@@ -11613,38 +12240,47 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.assessmentMasteredLine(x, y));
 
   @override
-  String get assessmentModesTitle => toUzNewAlphabet(super.assessmentModesTitle);
+  String get assessmentModesTitle =>
+      toUzNewAlphabet(super.assessmentModesTitle);
 
   @override
-  String get assessmentModeRandom => toUzNewAlphabet(super.assessmentModeRandom);
+  String get assessmentModeRandom =>
+      toUzNewAlphabet(super.assessmentModeRandom);
 
   @override
-  String get assessmentModeRandomDesc => toUzNewAlphabet(super.assessmentModeRandomDesc);
+  String get assessmentModeRandomDesc =>
+      toUzNewAlphabet(super.assessmentModeRandomDesc);
 
   @override
-  String get assessmentModeBlocks => toUzNewAlphabet(super.assessmentModeBlocks);
+  String get assessmentModeBlocks =>
+      toUzNewAlphabet(super.assessmentModeBlocks);
 
   @override
-  String get assessmentModeBlocksDesc => toUzNewAlphabet(super.assessmentModeBlocksDesc);
+  String get assessmentModeBlocksDesc =>
+      toUzNewAlphabet(super.assessmentModeBlocksDesc);
 
   @override
   String assessmentModeMistakes(int n) =>
       toUzNewAlphabet(super.assessmentModeMistakes(n));
 
   @override
-  String get assessmentModeMistakesDesc => toUzNewAlphabet(super.assessmentModeMistakesDesc);
+  String get assessmentModeMistakesDesc =>
+      toUzNewAlphabet(super.assessmentModeMistakesDesc);
 
   @override
-  String get assessmentModeMistakesEmpty => toUzNewAlphabet(super.assessmentModeMistakesEmpty);
+  String get assessmentModeMistakesEmpty =>
+      toUzNewAlphabet(super.assessmentModeMistakesEmpty);
 
   @override
   String get assessmentModeExam => toUzNewAlphabet(super.assessmentModeExam);
 
   @override
-  String get assessmentModeExamDesc => toUzNewAlphabet(super.assessmentModeExamDesc);
+  String get assessmentModeExamDesc =>
+      toUzNewAlphabet(super.assessmentModeExamDesc);
 
   @override
-  String get assessmentBlocksPick => toUzNewAlphabet(super.assessmentBlocksPick);
+  String get assessmentBlocksPick =>
+      toUzNewAlphabet(super.assessmentBlocksPick);
 
   @override
   String assessmentBlockRange(int a, int b) =>
@@ -11655,13 +12291,15 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.assessmentBlockBest(c, n));
 
   @override
-  String get assessmentBlockUnsolved => toUzNewAlphabet(super.assessmentBlockUnsolved);
+  String get assessmentBlockUnsolved =>
+      toUzNewAlphabet(super.assessmentBlockUnsolved);
 
   @override
   String get assessmentExamHint => toUzNewAlphabet(super.assessmentExamHint);
 
   @override
-  String get assessmentExamTimeUp => toUzNewAlphabet(super.assessmentExamTimeUp);
+  String get assessmentExamTimeUp =>
+      toUzNewAlphabet(super.assessmentExamTimeUp);
 
   @override
   String assessmentExamTimer(String t) =>
@@ -11674,7 +12312,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get catShowMeExperts => toUzNewAlphabet(super.catShowMeExperts);
 
   @override
-  String get catExpertUnverifiedHint => toUzNewAlphabet(super.catExpertUnverifiedHint);
+  String get catExpertUnverifiedHint =>
+      toUzNewAlphabet(super.catExpertUnverifiedHint);
 
   @override
   String get catVerifiedExpert => toUzNewAlphabet(super.catVerifiedExpert);
@@ -11710,8 +12349,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get oralExamTitle => toUzNewAlphabet(super.oralExamTitle);
 
   @override
-  String oralExamTicketNo(int n) =>
-      toUzNewAlphabet(super.oralExamTicketNo(n));
+  String oralExamTicketNo(int n) => toUzNewAlphabet(super.oralExamTicketNo(n));
 
   @override
   String get oralExamName => toUzNewAlphabet(super.oralExamName);
@@ -11724,15 +12362,13 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get oralExamShowKey => toUzNewAlphabet(super.oralExamShowKey);
 
   @override
-  String oralExamScore(int s) =>
-      toUzNewAlphabet(super.oralExamScore(s));
+  String oralExamScore(int s) => toUzNewAlphabet(super.oralExamScore(s));
 
   @override
   String get oralExamUnscored => toUzNewAlphabet(super.oralExamUnscored);
 
   @override
-  String oralExamTotal(int s) =>
-      toUzNewAlphabet(super.oralExamTotal(s));
+  String oralExamTotal(int s) => toUzNewAlphabet(super.oralExamTotal(s));
 
   @override
   String get oralExamSave => toUzNewAlphabet(super.oralExamSave);
@@ -11741,8 +12377,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get oralExamSaveHint => toUzNewAlphabet(super.oralExamSaveHint);
 
   @override
-  String oralExamSaved(int s) =>
-      toUzNewAlphabet(super.oralExamSaved(s));
+  String oralExamSaved(int s) => toUzNewAlphabet(super.oralExamSaved(s));
 
   @override
   String get oralExamNext => toUzNewAlphabet(super.oralExamNext);
@@ -11761,13 +12396,16 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get oralExamHistory => toUzNewAlphabet(super.oralExamHistory);
 
   @override
-  String get oralExamHistoryEmpty => toUzNewAlphabet(super.oralExamHistoryEmpty);
+  String get oralExamHistoryEmpty =>
+      toUzNewAlphabet(super.oralExamHistoryEmpty);
 
   @override
-  String get oralExamHistoryClear => toUzNewAlphabet(super.oralExamHistoryClear);
+  String get oralExamHistoryClear =>
+      toUzNewAlphabet(super.oralExamHistoryClear);
 
   @override
-  String get oralExamHistoryClearBody => toUzNewAlphabet(super.oralExamHistoryClearBody);
+  String get oralExamHistoryClearBody =>
+      toUzNewAlphabet(super.oralExamHistoryClearBody);
 
   @override
   String get oralExamCancel => toUzNewAlphabet(super.oralExamCancel);
@@ -11798,16 +12436,19 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get teacherOralBuild => toUzNewAlphabet(super.teacherOralBuild);
 
   @override
-  String get teacherOralClearSelection => toUzNewAlphabet(super.teacherOralClearSelection);
+  String get teacherOralClearSelection =>
+      toUzNewAlphabet(super.teacherOralClearSelection);
 
   @override
   String get teacherOralPickHint => toUzNewAlphabet(super.teacherOralPickHint);
 
   @override
-  String get teacherOralNoQuestions => toUzNewAlphabet(super.teacherOralNoQuestions);
+  String get teacherOralNoQuestions =>
+      toUzNewAlphabet(super.teacherOralNoQuestions);
 
   @override
-  String get teacherOralChangeTopics => toUzNewAlphabet(super.teacherOralChangeTopics);
+  String get teacherOralChangeTopics =>
+      toUzNewAlphabet(super.teacherOralChangeTopics);
 
   @override
   String get teacherOralKeyNote => toUzNewAlphabet(super.teacherOralKeyNote);
@@ -11829,16 +12470,20 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get oralGroupNoTopics => toUzNewAlphabet(super.oralGroupNoTopics);
 
   @override
-  String get oralGroupStudentsLabel => toUzNewAlphabet(super.oralGroupStudentsLabel);
+  String get oralGroupStudentsLabel =>
+      toUzNewAlphabet(super.oralGroupStudentsLabel);
 
   @override
-  String get oralGroupStudentsHelper => toUzNewAlphabet(super.oralGroupStudentsHelper);
+  String get oralGroupStudentsHelper =>
+      toUzNewAlphabet(super.oralGroupStudentsHelper);
 
   @override
-  String get oralGroupStudentsDec => toUzNewAlphabet(super.oralGroupStudentsDec);
+  String get oralGroupStudentsDec =>
+      toUzNewAlphabet(super.oralGroupStudentsDec);
 
   @override
-  String get oralGroupStudentsInc => toUzNewAlphabet(super.oralGroupStudentsInc);
+  String get oralGroupStudentsInc =>
+      toUzNewAlphabet(super.oralGroupStudentsInc);
 
   @override
   String get oralGroupPrepLabel => toUzNewAlphabet(super.oralGroupPrepLabel);
@@ -11847,8 +12492,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get oralGroupPrepNone => toUzNewAlphabet(super.oralGroupPrepNone);
 
   @override
-  String oralGroupPrepMin(int n) =>
-      toUzNewAlphabet(super.oralGroupPrepMin(n));
+  String oralGroupPrepMin(int n) => toUzNewAlphabet(super.oralGroupPrepMin(n));
 
   @override
   String get oralGroupPrepHint => toUzNewAlphabet(super.oralGroupPrepHint);
@@ -11858,16 +12502,19 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.oralGroupAvailable(n));
 
   @override
-  String get oralGroupRepeatNotice => toUzNewAlphabet(super.oralGroupRepeatNotice);
+  String get oralGroupRepeatNotice =>
+      toUzNewAlphabet(super.oralGroupRepeatNotice);
 
   @override
   String get oralGroupStart => toUzNewAlphabet(super.oralGroupStart);
 
   @override
-  String get oralGroupActiveSection => toUzNewAlphabet(super.oralGroupActiveSection);
+  String get oralGroupActiveSection =>
+      toUzNewAlphabet(super.oralGroupActiveSection);
 
   @override
-  String get oralGroupFinishedSection => toUzNewAlphabet(super.oralGroupFinishedSection);
+  String get oralGroupFinishedSection =>
+      toUzNewAlphabet(super.oralGroupFinishedSection);
 
   @override
   String oralGroupSessionLine(String code, int joined, int graded) =>
@@ -11877,27 +12524,30 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get oralGroupNoTitle => toUzNewAlphabet(super.oralGroupNoTitle);
 
   @override
-  String get oralGroupHostJoinHint => toUzNewAlphabet(super.oralGroupHostJoinHint);
+  String get oralGroupHostJoinHint =>
+      toUzNewAlphabet(super.oralGroupHostJoinHint);
 
   @override
   String oralGroupJoinedCount(int x, int n) =>
       toUzNewAlphabet(super.oralGroupJoinedCount(x, n));
 
   @override
-  String oralGroupTile(int n) =>
-      toUzNewAlphabet(super.oralGroupTile(n));
+  String oralGroupTile(int n) => toUzNewAlphabet(super.oralGroupTile(n));
 
   @override
   String get oralGroupStatusFree => toUzNewAlphabet(super.oralGroupStatusFree);
 
   @override
-  String get oralGroupStatusJoined => toUzNewAlphabet(super.oralGroupStatusJoined);
+  String get oralGroupStatusJoined =>
+      toUzNewAlphabet(super.oralGroupStatusJoined);
 
   @override
-  String get oralGroupStatusReady => toUzNewAlphabet(super.oralGroupStatusReady);
+  String get oralGroupStatusReady =>
+      toUzNewAlphabet(super.oralGroupStatusReady);
 
   @override
-  String get oralGroupStatusGraded => toUzNewAlphabet(super.oralGroupStatusGraded);
+  String get oralGroupStatusGraded =>
+      toUzNewAlphabet(super.oralGroupStatusGraded);
 
   @override
   String get oralGroupQueue => toUzNewAlphabet(super.oralGroupQueue);
@@ -11909,13 +12559,15 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get oralGroupFinish => toUzNewAlphabet(super.oralGroupFinish);
 
   @override
-  String get oralGroupFinishTitle => toUzNewAlphabet(super.oralGroupFinishTitle);
+  String get oralGroupFinishTitle =>
+      toUzNewAlphabet(super.oralGroupFinishTitle);
 
   @override
   String get oralGroupFinishBody => toUzNewAlphabet(super.oralGroupFinishBody);
 
   @override
-  String get oralGroupFinishedBanner => toUzNewAlphabet(super.oralGroupFinishedBanner);
+  String get oralGroupFinishedBanner =>
+      toUzNewAlphabet(super.oralGroupFinishedBanner);
 
   @override
   String get oralGroupCancel => toUzNewAlphabet(super.oralGroupCancel);
@@ -11972,13 +12624,16 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get oralGroupKeyMissing => toUzNewAlphabet(super.oralGroupKeyMissing);
 
   @override
-  String get oralGroupGradedBefore => toUzNewAlphabet(super.oralGroupGradedBefore);
+  String get oralGroupGradedBefore =>
+      toUzNewAlphabet(super.oralGroupGradedBefore);
 
   @override
-  String get oralGroupResultsTitle => toUzNewAlphabet(super.oralGroupResultsTitle);
+  String get oralGroupResultsTitle =>
+      toUzNewAlphabet(super.oralGroupResultsTitle);
 
   @override
-  String get oralGroupResultsEmpty => toUzNewAlphabet(super.oralGroupResultsEmpty);
+  String get oralGroupResultsEmpty =>
+      toUzNewAlphabet(super.oralGroupResultsEmpty);
 
   @override
   String get oralGroupNotGraded => toUzNewAlphabet(super.oralGroupNotGraded);
@@ -12015,8 +12670,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get oralPlayTitle => toUzNewAlphabet(super.oralPlayTitle);
 
   @override
-  String oralPlayName(String name) =>
-      toUzNewAlphabet(super.oralPlayName(name));
+  String oralPlayName(String name) => toUzNewAlphabet(super.oralPlayName(name));
 
   @override
   String oralPlayPrepLeft(String time) =>
@@ -12075,16 +12729,19 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get oralErrOwnSession => toUzNewAlphabet(super.oralErrOwnSession);
 
   @override
-  String get oralErrInvalidSettings => toUzNewAlphabet(super.oralErrInvalidSettings);
+  String get oralErrInvalidSettings =>
+      toUzNewAlphabet(super.oralErrInvalidSettings);
 
   @override
-  String get oralErrInvalidTicket => toUzNewAlphabet(super.oralErrInvalidTicket);
+  String get oralErrInvalidTicket =>
+      toUzNewAlphabet(super.oralErrInvalidTicket);
 
   @override
   String get oralErrTooMany => toUzNewAlphabet(super.oralErrTooMany);
 
   @override
-  String get oralErrInvalidScores => toUzNewAlphabet(super.oralErrInvalidScores);
+  String get oralErrInvalidScores =>
+      toUzNewAlphabet(super.oralErrInvalidScores);
 
   @override
   String get oralErrNotJoined => toUzNewAlphabet(super.oralErrNotJoined);
@@ -12096,8 +12753,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get oralErrTryAgain => toUzNewAlphabet(super.oralErrTryAgain);
 
   @override
-  String oralResumeCard(int n) =>
-      toUzNewAlphabet(super.oralResumeCard(n));
+  String oralResumeCard(int n) => toUzNewAlphabet(super.oralResumeCard(n));
 
   @override
   String oralPlayLeaveCount(int n) =>
@@ -12222,8 +12878,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.promoLabelGift(name));
 
   @override
-  String promoUntil(String date) =>
-      toUzNewAlphabet(super.promoUntil(date));
+  String promoUntil(String date) => toUzNewAlphabet(super.promoUntil(date));
 
   @override
   String get promoActiveTitle => toUzNewAlphabet(super.promoActiveTitle);
@@ -12277,8 +12932,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.instRowInfo(seats, used));
 
   @override
-  String instRowUntil(String date) =>
-      toUzNewAlphabet(super.instRowUntil(date));
+  String instRowUntil(String date) => toUzNewAlphabet(super.instRowUntil(date));
 
   @override
   String get instFName => toUzNewAlphabet(super.instFName);
@@ -12305,8 +12959,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get instFError => toUzNewAlphabet(super.instFError);
 
   @override
-  String instCreated(int n) =>
-      toUzNewAlphabet(super.instCreated(n));
+  String instCreated(int n) => toUzNewAlphabet(super.instCreated(n));
 
   @override
   String get instCodesTitle => toUzNewAlphabet(super.instCodesTitle);
@@ -12391,17 +13044,18 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get instGiftError => toUzNewAlphabet(super.instGiftError);
 
   @override
-  String instGiftDone(int n) =>
-      toUzNewAlphabet(super.instGiftDone(n));
+  String instGiftDone(int n) => toUzNewAlphabet(super.instGiftDone(n));
 
   @override
   String get instOpen => toUzNewAlphabet(super.instOpen);
 
   @override
-  String get homeTeacherLibraryTitle => toUzNewAlphabet(super.homeTeacherLibraryTitle);
+  String get homeTeacherLibraryTitle =>
+      toUzNewAlphabet(super.homeTeacherLibraryTitle);
 
   @override
-  String get homeTeacherLibraryBody => toUzNewAlphabet(super.homeTeacherLibraryBody);
+  String get homeTeacherLibraryBody =>
+      toUzNewAlphabet(super.homeTeacherLibraryBody);
 
   @override
   String get instArchive => toUzNewAlphabet(super.instArchive);
@@ -12438,8 +13092,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get instExtendTitle => toUzNewAlphabet(super.instExtendTitle);
 
   @override
-  String instExtendMonths(int n) =>
-      toUzNewAlphabet(super.instExtendMonths(n));
+  String instExtendMonths(int n) => toUzNewAlphabet(super.instExtendMonths(n));
 
   @override
   String get instExtendYes => toUzNewAlphabet(super.instExtendYes);
@@ -12467,13 +13120,16 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get teacherBannerTitle => toUzNewAlphabet(super.teacherBannerTitle);
 
   @override
-  String get teacherBannerTagline => toUzNewAlphabet(super.teacherBannerTagline);
+  String get teacherBannerTagline =>
+      toUzNewAlphabet(super.teacherBannerTagline);
 
   @override
-  String get teacherBannerSemantics => toUzNewAlphabet(super.teacherBannerSemantics);
+  String get teacherBannerSemantics =>
+      toUzNewAlphabet(super.teacherBannerSemantics);
 
   @override
-  String get teacherSectionMaterials => toUzNewAlphabet(super.teacherSectionMaterials);
+  String get teacherSectionMaterials =>
+      toUzNewAlphabet(super.teacherSectionMaterials);
 
   @override
   String get teacherSectionMore => toUzNewAlphabet(super.teacherSectionMore);
@@ -12586,7 +13242,8 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get libraryGroupNorms => toUzNewAlphabet(super.libraryGroupNorms);
 
   @override
-  String get libraryGroupEvidence => toUzNewAlphabet(super.libraryGroupEvidence);
+  String get libraryGroupEvidence =>
+      toUzNewAlphabet(super.libraryGroupEvidence);
 
   @override
   String get libraryGroupMore => toUzNewAlphabet(super.libraryGroupMore);
@@ -12643,16 +13300,20 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
       toUzNewAlphabet(super.libraryUnitQuestions(count));
 
   @override
-  String get lessonSubjectBioethics => toUzNewAlphabet(super.lessonSubjectBioethics);
+  String get lessonSubjectBioethics =>
+      toUzNewAlphabet(super.lessonSubjectBioethics);
 
   @override
-  String get lessonSubjectForensic => toUzNewAlphabet(super.lessonSubjectForensic);
+  String get lessonSubjectForensic =>
+      toUzNewAlphabet(super.lessonSubjectForensic);
 
   @override
-  String get lessonSubjectPharmacy => toUzNewAlphabet(super.lessonSubjectPharmacy);
+  String get lessonSubjectPharmacy =>
+      toUzNewAlphabet(super.lessonSubjectPharmacy);
 
   @override
-  String get lessonSubjectDevices => toUzNewAlphabet(super.lessonSubjectDevices);
+  String get lessonSubjectDevices =>
+      toUzNewAlphabet(super.lessonSubjectDevices);
 
   @override
   String get lessonFacultyMed => toUzNewAlphabet(super.lessonFacultyMed);
@@ -12670,9 +13331,14 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String get lessonChapterTox => toUzNewAlphabet(super.lessonChapterTox);
 
   @override
-  String get lessonChapterToxNote => toUzNewAlphabet(super.lessonChapterToxNote);
+  String get lessonChapterToxNote =>
+      toUzNewAlphabet(super.lessonChapterToxNote);
 
   @override
-  String get lessonSubjectFacultiesNote => toUzNewAlphabet(super.lessonSubjectFacultiesNote);
+  String get lessonSubjectFacultiesNote =>
+      toUzNewAlphabet(super.lessonSubjectFacultiesNote);
 
+  @override
+  String get teacherNotebookTitle =>
+      toUzNewAlphabet(super.teacherNotebookTitle);
 }

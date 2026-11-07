@@ -13,6 +13,8 @@ import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/plan/plan_models.dart';
+import '../../casebook/presentation/casebook_screens.dart'
+    show casebookTitleFor;
 import '../../pro/presentation/pro_gate.dart' show proSectionLocked;
 import '../tool_strings.dart';
 import 'tool_tile.dart';
@@ -62,7 +64,12 @@ class ToolsScreen extends ConsumerWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                l.casebookTitle,
+                                casebookTitleFor(
+                                  l,
+                                  ref
+                                      .watch(settingsControllerProvider)
+                                      .userMode,
+                                ),
                                 style: Theme.of(context).textTheme.titleSmall,
                               ),
                               Text(

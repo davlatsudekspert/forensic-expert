@@ -15,6 +15,8 @@ import '../../../core/design/tokens.dart';
 import '../../../core/l10n/date_format.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
+import '../../../core/settings/app_settings.dart' show UserMode;
+import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/casebook/casebook_models.dart';
 import '../../../domain/catalog/tools_catalog.dart';
@@ -23,6 +25,11 @@ import '../../tools/tool_strings.dart';
 import 'casebook_blocks.dart';
 
 /// «Ekspert ish daftari» ro‘yxati. Yozuvlar faqat qurilmada.
+/// «Ish daftari» sarlavhasi: Ustozda «Ustoz ish daftari», boshqalarda
+/// «Ekspert ish daftari» (egasi, 2026-11-07).
+String casebookTitleFor(AppLocalizations l, UserMode? mode) =>
+    mode == UserMode.teacher ? l.teacherNotebookTitle : l.casebookTitle;
+
 class CasebookScreen extends ConsumerWidget {
   const CasebookScreen({super.key});
 
@@ -62,7 +69,9 @@ class CasebookScreen extends ConsumerWidget {
     final entries = ref.watch(casebookProvider);
     return Scaffold(
       appBar: AppBar(
-        title: FeAppBarTitle(l.casebookTitle),
+        title: FeAppBarTitle(
+          casebookTitleFor(l, ref.watch(settingsControllerProvider).userMode),
+        ),
         actions: [
           if (entries.isNotEmpty)
             PopupMenuButton<String>(
@@ -398,7 +407,11 @@ class _CasebookEntryScreenState extends ConsumerState<CasebookEntryScreen> {
     }
     if (_id != null && stored == null) {
       return Scaffold(
-        appBar: AppBar(title: FeAppBarTitle(l.casebookTitle)),
+        appBar: AppBar(
+          title: FeAppBarTitle(
+            casebookTitleFor(l, ref.watch(settingsControllerProvider).userMode),
+          ),
+        ),
         body: FeEmptyState(
           key: const Key('casebook.notFound'),
           icon: Icons.menu_book_outlined,
@@ -415,7 +428,9 @@ class _CasebookEntryScreenState extends ConsumerState<CasebookEntryScreen> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: FeAppBarTitle(l.casebookTitle),
+          title: FeAppBarTitle(
+            casebookTitleFor(l, ref.watch(settingsControllerProvider).userMode),
+          ),
           actions: [
             IconButton(
               key: const Key('casebook.share'),

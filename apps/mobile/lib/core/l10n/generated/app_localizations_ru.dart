@@ -14371,4 +14371,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get lessonSubjectFacultiesNote => 'Факультеты и направления обучения';
+
+  @override
+  String get teacherNotebookTitle => 'Журнал преподавателя';
 }

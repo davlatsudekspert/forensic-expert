@@ -34,6 +34,9 @@ k('lessonChapterTox', 'Chapter: Forensic Toxicology (inside Forensic Medicine).'
 k('lessonChapterToxNote', 'Note: toxicology is an internal chapter.', 'Ichki bob, alohida fakultet emas', 'Внутренняя глава, не отдельный факультет', 'Internal chapter, not a separate faculty')
 k('lessonSubjectFacultiesNote', 'Forensic Medicine: faculties note.', 'Fakultetlar va o‘quv yo‘nalishlari', 'Факультеты и направления обучения', 'Faculties and programs')
 
+k('teacherNotebookTitle', 'Casebook title in Teacher mode.',
+  'Ustoz ish daftari', 'Журнал преподавателя', 'Teacher’s Notebook')
+
 for i, lang in enumerate(('uz', 'ru', 'en')):
     f = D / f'app_{lang}.arb'
     b = json.loads(f.read_text(encoding='utf-8'),

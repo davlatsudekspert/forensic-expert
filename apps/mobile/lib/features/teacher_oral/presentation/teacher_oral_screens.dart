@@ -20,9 +20,9 @@ import '../../../domain/oral_group/oral_group_models.dart'
 import '../../assessment/presentation/oral_ticket_card.dart';
 import '../../lessons/presentation/lesson_slide_view.dart'
     show lessonSourceGroups, lessonSourceLine;
-import '../../lessons/presentation/lessons_list_screen.dart' show courseLabel;
 import '../../lessons/presentation/lesson_viewer_screen.dart'
     show LessonFailureView;
+import '../../lessons/presentation/lessons_list_screen.dart' show courseLabel;
 
 /// Ustoz stolim → «Og‘zaki imtihon (bilet)»: 1) mavzu(lar)ni tanlash
 /// (kurs bo‘yicha, darslar tartibida), 2) «Bilet tuzish».

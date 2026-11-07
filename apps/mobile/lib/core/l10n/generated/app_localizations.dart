@@ -24584,6 +24584,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Faculties and programs'**
   String get lessonSubjectFacultiesNote;
+
+  /// Casebook title in Teacher mode.
+  ///
+  /// In en, this message translates to:
+  /// **'Teacher’s Notebook'**
+  String get teacherNotebookTitle;
 }
 
 class _AppLocalizationsDelegate
