@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_riverpod/misc.dart' show Override;
 import 'package:flutter_test/flutter_test.dart';
+import 'package:forensic_expert/app/class_quiz.dart' show ClassQuizBank;
 import 'package:forensic_expert/app/professional.dart';
 import 'package:forensic_expert/app/providers.dart';
 import 'package:forensic_expert/app/study.dart';
@@ -14,6 +15,8 @@ import 'package:forensic_expert/domain/learn/study_models.dart';
 import 'package:forensic_expert/domain/library/library_models.dart';
 import 'package:forensic_expert/domain/professional/professional_models.dart';
 import 'package:forensic_expert/features/home/daily_fact.dart';
+import 'package:forensic_expert/features/home/daily_question.dart'
+    show dailyQuizBankProvider;
 
 import 'pump_app.dart';
 import 'study_fixtures.dart' show TestLibrary;
@@ -169,6 +172,7 @@ Future<ProviderContainer> pumpHome(
   LibraryRepository? library,
   KnowledgeRepository? knowledge,
   StudyCatalog? catalog,
+  ClassQuizBank quizBank = ClassQuizBank.empty,
   List<Override> extra = const [],
 }) {
   // Fixture’lar faqat o‘z repozitoriyimiz berilmaganda; berilsa — ikkalasi
@@ -199,6 +203,9 @@ Future<ProviderContainer> pumpHome(
         ),
       ],
       if (catalog != null) studyCatalogProvider.overrideWithValue(catalog),
+      // «Bugungi savol» banki aniq beriladi (standart — bo‘sh: katalog
+      // savoli); asset fon yuklanishiga bog‘liq bo‘lmasin.
+      dailyQuizBankProvider.overrideWithValue(quizBank),
       ...extra,
     ],
   );

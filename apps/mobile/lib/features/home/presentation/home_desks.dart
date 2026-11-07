@@ -488,7 +488,11 @@ class _DailyQuestionCardState extends State<DailyQuestionCard> {
             s.section!.resolve(lang),
         ].join(' · '),
     ].join('\n');
-    final sourceLine = '${l.workbenchFactSource}: $source';
+    final machine = item.draftLanguages.contains(lang);
+    final sourceLine = [
+      '${l.workbenchFactSource}: $source',
+      if (machine) l.trStatusMachineDraft,
+    ].join(' · ');
     return FeCard(
       key: const Key('desk.dailyQuestion'),
       child: Column(
@@ -561,7 +565,7 @@ class _DailyQuestionCardState extends State<DailyQuestionCard> {
                   key: const Key('desk.dailyQuestion.explain'),
                   icon: const Icon(Icons.open_in_new, size: 18),
                   label: Text(l.dailyQuestionExplain),
-                  onPressed: () => context.push(Routes.studyQuiz(item.deckId)),
+                  onPressed: () => context.push(dailyQuestionRoute(q)),
                 ),
               ),
             ),

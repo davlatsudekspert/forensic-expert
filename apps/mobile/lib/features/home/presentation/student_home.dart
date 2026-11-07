@@ -149,7 +149,7 @@ class StudentDailyQuestion extends ConsumerWidget {
             child: InkResponse(
               key: const Key('student.dailyQuestion.open'),
               radius: 22,
-              onTap: () => context.push(Routes.studyQuiz(question.item.deckId)),
+              onTap: () => context.push(dailyQuestionRoute(question)),
               child: SizedBox.square(
                 dimension: 36,
                 child: DecoratedBox(
