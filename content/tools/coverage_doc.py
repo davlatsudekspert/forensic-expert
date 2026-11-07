@@ -3,9 +3,11 @@ from collections import Counter, defaultdict
 
 COLS = [("colour_test", "rang"), ("odour_test", "hid"), ("chemical", "kimyo"), ("tlc", "TLC"), ("microcrystal", "kristall"),
         ("uv_spectrum", "UB"), ("photometric", "foto"), ("spectroscopy", "spektr."), ("physical", "t.suyuq."),
-        ("immunoassay", "immuno"), ("instrumental", "instr.")]
+        ("immunoassay", "immuno"), ("instrumental", "instr."), ("isolation", "ajratish")]
 SRC_SHORT = {"SRC-YULDASHEV-GMT-2024": "GMT-2024", "SRC-YULDASHEV-TOKS-2025": "TOKS-2025",
-             "SRC-UNODC-STNAR-13": "UNODC-13", "SRC-SWGDRUG-8-2": "SWGDRUG"}
+             "SRC-UNODC-STNAR-13": "UNODC-13", "SRC-SWGDRUG-8-2": "SWGDRUG",
+             "SRC-RIZAYEV-KETAMIN-2023": "KET-2023", "SRC-RIZAYEV-YUSSX-2023": "YUSSX-2023",
+             "SRC-TFI-ANALIZ-NARK-II-2023": "NARK-II-2023", "SRC-PRIMUXAMEDOVA-AJRATISH-2024": "AJRATISH-2024"}
 
 
 def render(b, subs, by_sub, existing_instr, local_families, seized_groups):
@@ -41,6 +43,10 @@ def render(b, subs, by_sub, existing_instr, local_families, seized_groups):
     w("| TOKS-2025 | Yuldashev Z.A., Umarova G.Q., «Toksikologik kimyo» o‘quv-uslubiy majmua, 2025 (shu ruxsat) | PDF sahifasi (= bosma) |")
     w("| UNODC-13 | UNODC ST/NAR/13/Rev.1 «Rapid Testing Methods of Drugs of Abuse» (rasmiy PDF, bosma 37–52-betlar o‘qilgan) | bosma bet (PDF = bosma + 10) |")
     w("| SWGDRUG | SWGDRUG Recommendations v8.2, Part IIIB (Table 1 bosma 17-b.; IIIB.2–IIIB.5) | bo‘lim raqami + bosma bet |")
+    w("| KET-2023 | Rizayev K.S. va boshq., «Ketaminni biologik suyuqliklardan ajratib olish va tahlil qilish», uslubiy tavsiyanoma, 2023 (mualliflar roziligi, egasi ma’lumoti) | PDF sahifasi (= bosma) |")
+    w("| YUSSX-2023 | Rizayev K.S. va boshq., «Sud-kimyo amaliyotida psixotrop moddalarni YuSSX usulida aniqlash», uslubiy tavsiyanoma, 2023 | bo‘lim raqami (.doc, sahifasiz) |")
+    w("| NARK-II-2023 | «Анализ наркотических веществ. II часть», TFI va Janubiy Qozog‘iston tibbiyot akademiyasi, 2023 | PDF sahifasi (= bosma), jadval raqami |")
+    w("| AJRATISH-2024 | Primuxamedova X.I. va boshq., «Toksikologik kimyo tahlilida zaharli moddalarni guruhlar bo‘yicha bioob’ektlardan ajratish usullari», 2024 (skan) | bosma bet (PDF = bosma + 1) |")
     w("\nEgasining reaktivlar to‘plami (`SRC-OWNER-REAGENTS`) — retseptlar bilan bog‘lash uchun: yozuvlardagi `recipe_ids` mavjud 76 retseptga ishora qiladi (Marki, Mecke, Mandelin, Fröhde, Erdmann, Dragendorff, Wagner, kobalt rodanid, Duquenois, Nessler, Trinder va b.); retsepti yo‘q reaktivlar (Simon, Zimmermann, Vitali–Morin, Fast Blue B, Pauli, Dille–Koppanyi, Ehrlich, van Urk …) nomi bilan keltirilgan, retsept to‘qilmagan.\n")
     w("Har bir yozuvda: matn (uz/ru/en), manba, aniq joyi (`value.locator_i18n` — uch tilda, manba nomi bilan), `evidence_class` (presumptive / supporting / screening / instrumental / physical), `swgdrug_category` (SWGDRUG ning o‘z toifasi, hujjatda bor bo‘lsa), `recipe_ids`. Aniq joyi keltirib bo‘lmagan usul **qo‘shilmagan**.\n")
     w("## 3. Modda bo‘yicha qamrov (usul oilalari soni)\n")

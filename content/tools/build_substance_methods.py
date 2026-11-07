@@ -7,8 +7,9 @@ Idempotent: every artefact created here has the id prefix ``C-SM-`` / ``SRC-YULD
 re-created on each run.
 
 What is written (all inside the existing schema v7 structures):
-  * sources[]         4 sources (two teaching books with written permission on record,
-                      UNODC ST/NAR/13/Rev.1, SWGDRUG v8.2);
+  * sources[]         8 sources (two teaching books with written permission on record,
+                      UNODC ST/NAR/13/Rev.1, SWGDRUG v8.2, and four Uzbek methodological
+                      recommendations / guides 2023–2024 used with the authors' consent);
   * claims[]/citations[]  one claim per (substance, method) with an exact locator; the English
                       sentence is value.excerpt (+ text_translations uz/ru, machine_draft);
                       value carries method_family, evidence_class (presumptive / supporting /
@@ -41,6 +42,7 @@ import substance_methods_data2  # noqa: E402,F401
 import substance_methods_data3  # noqa: E402,F401
 import substance_methods_data4  # noqa: E402,F401
 import substance_methods_data5  # noqa: E402,F401
+import substance_methods_data6  # noqa: E402,F401
 from sm_core import SRC, loc as _loc  # noqa: E402
 from sm_vocab import FAMILY_LABEL, LANGS  # noqa: E402
 from substance_methods_data import E  # noqa: E402
@@ -60,6 +62,7 @@ FIELD = {
     "physical": "melting_point",
     "caveat": "method_caveat",
     "spectroscopy": "spectroscopy",
+    "isolation": "sample_preparation",
 }
 LOCAL_FAMILIES = ["colour_test", "odour_test", "chemical", "tlc", "microcrystal", "uv_spectrum", "photometric",
                   "spectroscopy", "physical", "immunoassay"]
@@ -130,6 +133,73 @@ SOURCES = [
         "identifier_verified": False,
         "language": "en",
         "notes": "SWGDRUG Recommendations v8.2 (2024-06-27), Part IIIB: Table 1 (bosma 17-bet) va IIIB.2–IIIB.5 (bosma 16–21-betlar) o‘qilgan. Doirasi — musodara qilingan giyohvand moddalar (biologik namunalar emas). Toifalar (A/B/C) shu hujjatning o‘z ta’rifi; ilova o‘z hukmini qo‘shmaydi.",
+    },
+    {
+        "source_id": "SRC-RIZAYEV-KETAMIN-2023",
+        "source_type": "book",
+        "source_class": "bookHandbook",
+        "title": "Ketaminni biologik suyuqliklardan ajratib olish va tahlil qilish. Uslubiy tavsiyanoma",
+        "authors": ["Rizayev K.S.", "Iskandarov A.I.", "Yuldashev Z.A.", "Nurmatova M.I.", "Primuxamedova X.I."],
+        "organization": "Toshkent farmatsevtika instituti; Respublika sud-tibbiy ekspertiza ilmiy-amaliy markazi",
+        "publication_year": 2023,
+        "accessed_date": "2026-11-07",
+        "tier": "tier3",
+        "evidence_level": "C",
+        "license_mode": "licenseRequired",
+        "license_agreement_id": "AUTHOR-CONSENT-OWNER-2026-11-07",
+        "identifier_verified": False,
+        "language": "uz",
+        "notes": "Uslubiy tavsiyanoma (15 b., Toshkent 2023). Mualliflar roziligi bilan (egasi ma’lumoti, 2026-11-07; yozma nusxa hujjatlarga qo‘shilishi kerak). Sahifa ko‘rsatkichlari — PDF sahifasi (bosma sahifa bilan bir xil). Matn so‘zma-so‘z ko‘chirilmagan. Ilmiy review kutilmoqda.",
+    },
+    {
+        "source_id": "SRC-RIZAYEV-YUSSX-2023",
+        "source_type": "book",
+        "source_class": "bookHandbook",
+        "title": "Sud-kimyo amaliyotida psixotrop moddalarni YuSSX usulida aniqlash. Uslubiy tavsiyanoma",
+        "authors": ["Rizayev K.S.", "Iskandarov A.I.", "Yuldashev Z.A.", "Zulfikariyeva D.A.", "Primuxamedova X.I."],
+        "organization": "Toshkent farmatsevtika instituti",
+        "publication_year": 2023,
+        "accessed_date": "2026-11-07",
+        "tier": "tier3",
+        "evidence_level": "C",
+        "license_mode": "licenseRequired",
+        "license_agreement_id": "AUTHOR-CONSENT-OWNER-2026-11-07",
+        "identifier_verified": False,
+        "language": "uz",
+        "notes": "Uslubiy tavsiyanoma (Toshkent 2023), faqat .doc nusxa: ko‘rsatkichlar bo‘lim raqami bo‘yicha (masalan, 3.2.1-band), sahifa emas. Mualliflar roziligi bilan (egasi ma’lumoti, 2026-11-07). Xromatogrammalardagi ushlanish vaqtlari matnda yo‘q — kiritilmagan. Ilmiy review kutilmoqda.",
+    },
+    {
+        "source_id": "SRC-TFI-ANALIZ-NARK-II-2023",
+        "source_type": "book",
+        "source_class": "bookHandbook",
+        "title": "Анализ наркотических веществ. II часть. Методическое пособие для лабораторных занятий",
+        "organization": "Ташкентский фармацевтический институт; Южно-Казахстанская медицинская академия",
+        "publication_year": 2023,
+        "accessed_date": "2026-11-07",
+        "tier": "tier3",
+        "evidence_level": "C",
+        "license_mode": "licenseRequired",
+        "license_agreement_id": "AUTHOR-CONSENT-OWNER-2026-11-07",
+        "identifier_verified": False,
+        "language": "ru",
+        "notes": "Laboratoriya mashg‘ulotlari uchun uslubiy qo‘llanma (47 b., Toshkent 2023). Sahifa ko‘rsatkichlari — PDF sahifasi (bosma sahifa bilan bir xil). Buzilgan jadvallar (masalan, 5-jadval, 24-bet) va yorliqsiz qatorlar kiritilmagan. Egasi ma’lumotiga ko‘ra mualliflar roziligi bilan. Ilmiy review kutilmoqda.",
+    },
+    {
+        "source_id": "SRC-PRIMUXAMEDOVA-AJRATISH-2024",
+        "source_type": "book",
+        "source_class": "bookHandbook",
+        "title": "Toksikologik kimyo tahlilida zaharli moddalarni guruhlar bo‘yicha bioob’ektlardan ajratish usullari. Uslubiy qo‘llanma",
+        "authors": ["Primuxamedova X.I.", "Nurmatova M.I.", "Hakimov S.A.", "Salimova M.R."],
+        "organization": "Respublika sud-tibbiy ekspertiza ilmiy-amaliy markazi; Toshkent tibbiyot akademiyasi",
+        "publication_year": 2024,
+        "accessed_date": "2026-11-07",
+        "tier": "tier3",
+        "evidence_level": "C",
+        "license_mode": "licenseRequired",
+        "license_agreement_id": "AUTHOR-CONSENT-OWNER-2026-11-07",
+        "identifier_verified": False,
+        "language": "uz",
+        "notes": "Uslubiy qo‘llanma (46 b., Toshkent 2024, kirill yozuvida), skanerlangan nusxa. Ko‘rsatkichlar — bosma sahifa (PDF sahifasi = bosma + 1). Tuzilishi buzilgan jadval (pestitsidlar, bosma 25-bet) kiritilmagan. Mualliflar roziligi bilan (egasi ma’lumoti, 2026-11-07). Ilmiy review kutilmoqda.",
     },
 ]
 
@@ -313,8 +383,13 @@ def main():
             add_link(sub, "scr-microcrystal-tests", "screened_by", cid)
         elif fam == "tlc":
             add_link(sub, "method-tlc", "analysed_by", cid)
+        elif fam == "spectroscopy" and data.get("methods"):
+            for m in data["methods"]:
+                add_link(sub, m, "analysed_by", cid)
         elif fam in ("uv_spectrum", "photometric", "spectroscopy"):
             add_link(sub, "method-uvvis", "analysed_by", cid)
+        # isolation (sample preparation) entries get no analysed_by link: isolation is not an
+        # analytical method; the substance page shows them in its «Tahlil» section by field.
         elif fam == "immunoassay":
             add_link(sub, data.get("screening_id", "method-immunoassay"), "screened_by", cid)
         elif fam == "instrumental":

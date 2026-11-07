@@ -84,6 +84,10 @@ COLOURS = {
     "dark-pink": ("dark pink", "to‘q pushti", "тёмно-розовый"),
     "lemon-yellow": ("lemon yellow", "limon sariq", "лимонно-жёлтый"),
     "ink-blue": ("blue", "ko‘k", "синий"),
+    "purple-violet": ("purple-violet", "purpur-binafsha", "пурпурно-фиолетовый"),
+    "pinkish-violet": ("pinkish violet", "pushtimtir-binafsha", "розовато-фиолетовый"),
+    "pinkish-lilac": ("pinkish lilac", "pushtimtir-nafarmon", "розовато-лиловый"),
+    "pale-purple-red": ("pale purple-red", "och binafsha-qizil", "бледный пурпурно-красный"),
     "zangori-violet": ("violet with a green-blue tint", "zangori-binafsha", "зеленовато-синевато-фиолетовый"),
 }
 
@@ -257,6 +261,10 @@ PLATES = {
                    "силикагель, обработанный 0,1 моль/л KOH"),
     "paper": ("chromatography paper (DMF-saturated)", "xromatografik qog‘oz (DMF bilan to‘yintirilgan)",
               "хроматографическая бумага (насыщенная ДМФА)"),
+    "silica_g_act": ("activated silica gel G on glass, 0.25 mm, UV-254 visible", "faollashtirilgan silikagel G (shisha), 0,25 mm, UV-254",
+                     "активированный силикагель G на стекле, 0,25 мм, UV-254"),
+    "merck_or_ksk": ("Merck silica gel 60 F254 or Armsorb (KSK silica gel) plates", "Merck silikagel 60 F254 yoki Armsorb (KSK silikagel) plastinkalari",
+                     "пластинки Merck силикагель 60 F254 или Armsorb (силикагель KSK)"),
     "silica_dmf": ("silica gel plate impregnated with dimethylformamide", "dimetilformamid shimdirilgan silikagel plastinka",
                    "пластинка с силикагелем, пропитанная диметилформамидом"),
     "sorbton": ("Sorbton / Sorbfil / Kieselgel G 60", "Sorbton / Sorbfil / Kizelgel G 60", "Сорбтон / Сорбфил / Kieselgel G 60"),
@@ -297,6 +305,18 @@ VIS = {
                         "подкисленный иодоплатинат (оранжево-коричневое пятно), пары иода (тёмно-синее пятно)"),
     "bromophenol_acetic": ("bromophenol blue reagent, then 5% acetic acid", "bromfenol ko‘ki reaktivi, so‘ng 5% sirka kislota",
                            "реактив бромфеноловый синий, затем 5% уксусная кислота"),
+    "uv254_hg_dpc": ("UV light 254 nm (after ammonia vapour); mercury(II) chloride (5%) – diphenylcarbazone (0.01% in chloroform)",
+                     "UB nuri 254 nm (ammiak bug‘idan keyin); simob(II) xlorid (5%) – difenilkarbazon (xloroformda 0,01%)",
+                     "УФ-свет 254 нм (после паров аммиака); хлорид ртути(II) (5%) – дифенилкарбазон (0,01% в хлороформе)"),
+    "dpc_hgso4": ("0.02% diphenylcarbazide in chloroform, then mercury sulfate solution",
+                  "xloroformdagi 0,02% difenilkarbazid, so‘ng simob sulfat eritmasi",
+                  "0,02% раствор дифенилкарбазида в хлороформе, затем раствор сульфата ртути"),
+    "uv254_dragendorff_h2so4": ("UV light 254 nm, then Dragendorff reagent (Munier modification) followed by 20% sulfuric acid",
+                                "UB nuri 254 nm, so‘ng Dragendorf reaktivi (Myunye modifikatsiyasi) va 20% sulfat kislota",
+                                "УФ-свет 254 нм, затем реактив Драгендорфа (модификация Мунье) и 20% серная кислота"),
+    "marquis_or_hno3_etoh": ("Marquis reagent or freshly prepared concentrated nitric acid–ethanol (1:9)",
+                             "Marki reaktivi yoki yangi tayyorlangan konsentrlangan nitrat kislota–etanol (1:9)",
+                             "реактив Марки или свежеприготовленная смесь концентрированной азотной кислоты и этанола (1:9)"),
     "none_stated": ("visualisation not stated in the source", "manbada ochuvchi reagent ko‘rsatilmagan",
                     "проявляющий реагент в источнике не указан"),
 }
@@ -345,6 +365,11 @@ TAG = {
         "Faqat taxminiy natija: hid sub’ektiv kuzatuv bo‘lib, aynanlikni isbotlay olmaydi.",
         "Только предположительный результат: запах — субъективное наблюдение и не устанавливает идентичность.",
     ),
+    "isolation": (
+        "Sample-preparation step: isolation does not detect or identify the substance; the extract must be examined by the methods listed for it, and recovery depends on following the stated pH and solvent.",
+        "Namuna tayyorlash bosqichi: ajratib olish moddani aniqlamaydi va aynanligini ko‘rsatmaydi; ajratma shu modda uchun keltirilgan usullar bilan tekshirilishi kerak, ajralish darajasi esa ko‘rsatilgan pH va erituvchiga rioya qilishga bog‘liq.",
+        "Этап пробоподготовки: изолирование не обнаруживает и не идентифицирует вещество; извлечение исследуют методами, приведёнными для этого вещества, а полнота извлечения зависит от соблюдения указанных pH и растворителя.",
+    ),
     "physical": (
         "Supporting evidence only: a melting point is a general physical characteristic and does not identify a substance by itself.",
         "Faqat yordamchi dalil: suyuqlanish harorati umumiy fizik xarakteristika bo‘lib, moddani o‘zi bilan aniqlamaydi.",
@@ -365,4 +390,5 @@ FAMILY_LABEL = {
     "caveat": ("Known limitation / interference", "Ma’lum cheklov / halaqit beruvchi omil", "Известное ограничение / помеха"),
     "spectroscopy": ("Spectroscopy", "Spektroskopiya", "Спектроскопия"),
     "chemical": ("Chemical reaction", "Kimyoviy reaksiya", "Химическая реакция"),
+    "isolation": ("Isolation from biological material", "Bioob’ektdan ajratib olish", "Изолирование из биологического объекта"),
 }

@@ -30,6 +30,30 @@ SRC = {
                   "SWGDRUG Recommendations, 8.2-versiya (2024)",
                   "SWGDRUG Recommendations, версия 8.2 (2024)"),
     },
+    "KET": {
+        "source_id": "SRC-RIZAYEV-KETAMIN-2023",
+        "short": ("Rizayev et al., «Ketaminni biologik suyuqliklardan ajratib olish va tahlil qilish» (2023)",
+                  "Rizayev K.S. va boshq., «Ketaminni biologik suyuqliklardan ajratib olish va tahlil qilish» (2023)",
+                  "Ризаев К.С. и др., «Выделение кетамина из биологических жидкостей и его анализ» (2023)"),
+    },
+    "YUSSX": {
+        "source_id": "SRC-RIZAYEV-YUSSX-2023",
+        "short": ("Rizayev et al., «Sud-kimyo amaliyotida psixotrop moddalarni YuSSX usulida aniqlash» (2023)",
+                  "Rizayev K.S. va boshq., «Sud-kimyo amaliyotida psixotrop moddalarni YuSSX usulida aniqlash» (2023)",
+                  "Ризаев К.С. и др., «Определение психотропных веществ методом ВЭЖХ в судебно-химической практике» (2023)"),
+    },
+    "NARK": {
+        "source_id": "SRC-TFI-ANALIZ-NARK-II-2023",
+        "short": ("Tashkent Pharmaceutical Institute, «Analysis of narcotic substances, part II» (2023)",
+                  "Toshkent farmatsevtika instituti, «Giyohvand moddalar tahlili. II qism» (2023)",
+                  "Ташкентский фармацевтический институт, «Анализ наркотических веществ. II часть» (2023)"),
+    },
+    "PRIM": {
+        "source_id": "SRC-PRIMUXAMEDOVA-AJRATISH-2024",
+        "short": ("Primuxamedova et al., «Toksikologik kimyo tahlilida zaharli moddalarni guruhlar bo‘yicha bioob’ektlardan ajratish usullari» (2024)",
+                  "Primuxamedova X.I. va boshq., «Toksikologik kimyo tahlilida zaharli moddalarni guruhlar bo‘yicha bioob’ektlardan ajratish usullari» (2024)",
+                  "Примухамедова Х.И. и др., «Методы изолирования ядовитых веществ из биообъектов по группам в токсикологическом химическом анализе» (2024)"),
+    },
 }
 
 PAGE = ("p.", "bet", "с.")
@@ -73,11 +97,26 @@ def loc(key, pdf=None, printed=None, to=None, tbl=None, sec=None):
         elif key == "SWG":
             part = sec  # sec already tri via caller
             part = part[i] if isinstance(part, tuple) else part
+        elif key in ("KET", "NARK"):
+            # printed page = PDF page in both PDFs
+            part = _pgs(lang, pdf, to)
+        elif key == "PRIM":
+            # scanned PDF: printed page = PDF page − 1
+            n = printed
+            part = (f"printed p. {n} (PDF p. {n + 1})" if lang == "en" else
+                    f"bosma {n}-bet (PDF {n + 1}-bet)" if lang == "uz" else
+                    f"печатная с. {n} (PDF с. {n + 1})")
+            if to:
+                part = (f"printed pp. {n}–{to}" if lang == "en" else
+                        f"bosma {n}–{to}-betlar" if lang == "uz" else f"печатные сс. {n}–{to}")
+        elif key == "YUSSX":
+            # .doc without page numbers: section locator, e.g. ("section 3.2.1", "3.2.1-band", "раздел 3.2.1")
+            part = sec[i] if isinstance(sec, tuple) else sec
         else:
             raise KeyError(key)
         if tbl is not None:
             part += {"en": f", Table {tbl}", "uz": f", {tbl}-jadval", "ru": f", табл. {tbl}"}[lang]
-        if sec and key != "SWG":
+        if sec and key not in ("SWG", "YUSSX"):
             s = sec[i] if isinstance(sec, tuple) else sec
             part += f", {s}"
         out[lang] = f"{base}, {part}"
@@ -219,3 +258,15 @@ def generic(subs, family, main, src, loc_, tag, cls, cat=None, recipes=None, rea
     return dict(subs=subs if isinstance(subs, list) else [subs], family=family, text=_join(main, note, tag),
                 src=src, loc=loc_, cls=cls, cat=cat, recipes=recipes or [], reagents=reagents or [],
                 data=data or {}, layer=layer)
+
+
+def ysec(n):
+    """Section locator for the YuSSX recommendation (.doc, no page numbers)."""
+    return (f"section {n}", f"{n}-band", f"раздел {n}")
+
+
+def isolation(subs, main, src, loc_, note=None, data=None):
+    """Isolation / extraction of the substance from biological material (sample preparation step)."""
+    d = {"scope": "substance"}
+    d.update(data or {})
+    return generic(subs, "isolation", main, src, loc_, "isolation", "preparation", note=note, data=d)

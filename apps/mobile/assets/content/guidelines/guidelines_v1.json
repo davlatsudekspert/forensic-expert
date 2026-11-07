@@ -10397,6 +10397,152 @@
     "kennedy2010",
     "skopp2004"
    ]
+  },
+  {
+   "id": "guideline.chem.bioobject_isolation_groups",
+   "discipline_codes": [
+    "forensic_chemistry",
+    "forensic_toxicology"
+   ],
+   "status": "NEEDS_REVIEW",
+   "access": "free",
+   "updated": "2026-11-07",
+   "translation_status": {
+    "uz": "AUTHORED",
+    "ru": "DRAFT",
+    "en": "DRAFT"
+   },
+   "related_tool_ids": [],
+   "term_ids": [
+    "T-TOKS-STEAM-DISTILLATION",
+    "T-TOKS-MINERALIZATION",
+    "T-TOKS-DIALYSIS",
+    "T-TOKS-EXTRACTION",
+    "T-TOKS-ACIDIFIED-WATER-METHOD",
+    "T-TOKS-STAS-OTTO-METHOD"
+   ],
+   "title": {
+    "uz": "Zaharli moddalarni guruhlar bo‘yicha bioob’ektdan ajratib olish",
+    "ru": "Изолирование ядовитых веществ из биологического объекта по группам",
+    "en": "Isolating poisons from biological material by group"
+   },
+   "summary": {
+    "uz": "Ajratib olish usuli zahar guruhiga qarab tanlanadi: uchuvchi zaharlar — suv bug‘i bilan haydash; metall birikmalari — mineralizatsiya; barbituratlar, alkaloidlar va azot saqlovchi sintetik dorilar — nordonlashtirilgan suv yoki spirt, so‘ng pH ga bog‘liq ekstraksiya; pestitsidlar — organik erituvchida bo‘ktirish; mineral kislota, ishqor va tuzlar — suv yoki dializ; ayrim moddalar — o‘ziga xos usul yoki ajratmasdan. Karta Primuxamedova X.I. va boshq. (2024) qo‘llanmasiga, ketamin bo‘yicha uslubiy tavsiyanomaga (2023) va «Giyohvand moddalar tahlili. II qism» qo‘llanmasiga (2023) tayanadi; har bir moddaning «Tekshirish usullari» bo‘limida o‘z guruhi va pH/erituvchi qisqacha ko‘rsatilgan.",
+    "ru": "Метод изолирования выбирают по группе яда: летучие яды — перегонка с водяным паром; соединения металлов — минерализация; барбитураты, алкалоиды и азотсодержащие синтетические препараты — подкисленная вода или спирт с последующей экстракцией, зависящей от pH; пестициды — настаивание с органическим растворителем; минеральные кислоты, щёлочи и соли — вода или диализ; отдельные вещества — особые приёмы или без изолирования. Карточка основана на пособии Примухамедовой Х.И. и др. (2024), методических рекомендациях по кетамину (2023) и пособии «Анализ наркотических веществ. II часть» (2023); в разделе «Методы исследования» каждого вещества кратко указаны его группа, pH и растворитель.",
+    "en": "The isolation method follows the poison group: volatile poisons — steam distillation; metal compounds — mineralisation; barbiturates, alkaloids and nitrogen-containing synthetic drugs — acidified water or alcohol followed by pH-controlled extraction; pesticides — soaking in an organic solvent; mineral acids, alkalis and salts — water or dialysis; some substances — special procedures or no isolation. The card is based on the guide by Primuxamedova X.I. et al. (2024), the ketamine recommendation (2023) and the guide 'Analysis of narcotic substances, part II' (2023); each substance's 'Examination methods' section gives its group, pH and solvent in short."
+   },
+   "sections": [
+    {
+     "key": "basis",
+     "title": {
+      "uz": "Guruhlar",
+      "ru": "Группы",
+      "en": "Groups"
+     },
+     "body": {
+      "uz": "Qo‘llanma zaharli moddalarni bioob’ektdan ajratish usuliga ko‘ra guruhlaydi [prim_ajratish2024] (5–6-b.):\n• 1-guruh — suv bug‘i bilan haydaladigan uchuvchi zaharlar (sianid kislota va tuzlari, xloroform, xloralgidrat, dixloretan, uglerod(IV) xlorid, formaldegid, metil, etil va izoamil spirtlari, fenollar);\n• 2-guruh — ob’ektni oksidlab (mineralizatsiya) ajratiladigan metall birikmalari (qo‘rg‘oshin, kumush, bariy, mishyak, surma, qalay, simob, mis, kadmiy, vismut, talliy, marganes, rux, xrom);\n• 3-guruh — nordonlashtirilgan suv yoki nordonlashtirilgan spirt bilan ajratiladigan moddalar (barbituratlar, alkaloidlar — strixnin, apomorfin, morfin va uning hosilalari, atropin, kokain — va azot saqlovchi sintetik birikmalar);\n• 4-guruh — organik erituvchilar bilan ajratiladigan qishloq xo‘jaligi va sanoat kimyoviy moddalari;\n• 5-guruh — suv bilan (dializ) ajratiladigan suvda yaxshi eriydigan tuzlar, mineral kislotalar, ishqorlar;\n• 6-guruh — ajratmasdan aniqlanadigan moddalar (masalan, is gazi, vodorod sulfid).",
+      "ru": "Пособие группирует ядовитые вещества по способу изолирования из биообъекта [prim_ajratish2024] (с. 5–6):\n• группа 1 — летучие яды, перегоняемые с водяным паром (синильная кислота и её соли, хлороформ, хлоралгидрат, дихлорэтан, тетрахлорид углерода, формальдегид, метиловый, этиловый и изоамиловый спирты, фенолы);\n• группа 2 — соединения металлов, изолируемые окислением объекта (минерализацией) (свинец, серебро, барий, мышьяк, сурьма, олово, ртуть, медь, кадмий, висмут, таллий, марганец, цинк, хром);\n• группа 3 — вещества, изолируемые подкисленной водой или подкисленным спиртом (барбитураты, алкалоиды — стрихнин, апоморфин, морфин и его производные, атропин, кокаин — и азотсодержащие синтетические соединения);\n• группа 4 — сельскохозяйственные и промышленные химические вещества, изолируемые органическими растворителями;\n• группа 5 — хорошо растворимые в воде соли, минеральные кислоты, щёлочи, изолируемые водой (диализом);\n• группа 6 — вещества, определяемые без изолирования (например, оксид углерода, сероводород).",
+      "en": "The guide groups poisons by the way they are isolated from biological material [prim_ajratish2024] (pp. 5–6):\n• group 1 — volatile poisons distilled with steam (hydrocyanic acid and its salts, chloroform, chloral hydrate, dichloroethane, carbon tetrachloride, formaldehyde, methyl, ethyl and isoamyl alcohols, phenols);\n• group 2 — metal compounds isolated by oxidising the object (mineralisation) (lead, silver, barium, arsenic, antimony, tin, mercury, copper, cadmium, bismuth, thallium, manganese, zinc, chromium);\n• group 3 — substances isolated with acidified water or acidified alcohol (barbiturates, alkaloids — strychnine, apomorphine, morphine and its derivatives, atropine, cocaine — and nitrogen-containing synthetic compounds);\n• group 4 — agricultural and industrial chemicals isolated with organic solvents;\n• group 5 — readily water-soluble salts, mineral acids and alkalis isolated with water (dialysis);\n• group 6 — substances determined without isolation (e.g., carbon monoxide, hydrogen sulfide)."
+     },
+     "citations": [
+      "prim_ajratish2024"
+     ]
+    },
+    {
+     "key": "methods",
+     "title": {
+      "uz": "3-guruh: nordonlashtirilgan suv va spirt",
+      "ru": "Группа 3: подкисленная вода и спирт",
+      "en": "Group 3: acidified water and alcohol"
+     },
+     "body": {
+      "uz": "• A.A. Vasilyeva usuli: 100 g maydalangan ob’ekt suv bilan (1:2; o‘simlik ob’ektlari 1:12) aralashtiriladi, oksalat kislota bilan pH 2,0–2,5 ga keltiriladi, 1 soat chayqatib turiladi; kislotali ajratmadan 3 marta 10 ml xloroform — kislotali, neytral va kuchsiz asos moddalar; so‘ng 25% ammoniy gidroksid bilan pH 8,0–9,0 va 3 marta 10 ml xloroform — asos moddalar [prim_ajratish2024] (9–10-b.).\n• V.F. Kramarenko usuli: 0,02 M sulfat kislota (pH 2,5), 2 soat va yana 1 soat bo‘ktirish, sentrifugalash, ammoniy sulfat bilan oqsil va yot moddalardan tozalash; pH 2,0–2,5 da 2 marta 40 ml efir; so‘ng 20% natriy gidroksid bilan pH 8,0–9,0 va 3 marta xloroform [prim_ajratish2024] (10–11-b.).\n• Stas–Otto usuli: 100 g ob’ekt 96% etanol bilan, 10% spirtli oksalat kislota bilan pH 2,0–2,5, 24 soat; spirtli ajratmalar 40 °C da bug‘latilib, oqsillar etanol bilan qayta-qayta cho‘ktiriladi; qoldiq suvda eritilib efir bilan yuviladi, so‘ng 25% ammiak bilan pH 9–10 va xloroform [prim_ajratish2024] (11–12-b.).\n• Barbituratlar: V.I. Popov (sulfat kislotali suv pH 2,0–3,0, Sefadeks G-25), P. Valov (ishqoriy suv, natriy volframat bilan cho‘ktirish), qon va peshobdan pH 2 da xloroform [prim_ajratish2024] (12–14-b.); peshobdan pH 1–2 da efir, so‘ng pH 9 da xloroform–n-butanol (9:1) [nark_analiz2023] (10-b.).\n• Fenotiazinlar (aminazin, qon): oksalat kislota bilan pH 2–3 gacha nordonlashtirilgan etanol, qizdirish, efir bilan yuvish, pH 13 da efir [nark_analiz2023] (18-b.).\n• 1,4-benzodiazepinlar: peshob yoki qonni konsentrlangan xlorid kislota bilan 1 soat gidrolizlab benzofenonlarga o‘tkazish, pH 8–10 da xloroform (B.N. Izotov, I.V. Volkova); a’zolardan pH 2 da nordon suv, xloroform bilan yuvish, pH 9–10 da efir [nark_analiz2023] (24, 27-b.).\n• Ketamin: qon (oksalat kislota) yoki peshob (10% sulfat kislota) pH 3,5–4,5, 2 soat; etilatsetat (qon) yoki xloroform (peshob) bilan ballast moddalardan tozalash, pH 7,5–8,0 da 3 marta xloroform, so‘ng TLC bilan tozalash [rizayev_ketamin2023] (8–9-b.).\n• Kannabinoidlar: so‘lak, qon plazmasi, siydik (ishqoriy gidroliz, so‘ng pH 2–3) va surtmalardan etilatsetat yoki geksan–etilatsetat bilan ajratish [prim_ajratish2024] (15–16-b.).",
+      "ru": "• Метод А.А. Васильевой: 100 г измельчённого объекта смешивают с водой (1:2; растительные объекты 1:12), щавелевой кислотой доводят до pH 2,0–2,5, 1 ч периодически взбалтывают; из кислого извлечения 3 раза по 10 мл хлороформа — кислые, нейтральные и слабоосновные вещества; затем 25% гидроксид аммония до pH 8,0–9,0 и 3 раза по 10 мл хлороформа — основания [prim_ajratish2024] (с. 9–10).\n• Метод В.Ф. Крамаренко: 0,02 М серная кислота (pH 2,5), настаивание 2 ч и ещё 1 ч, центрифугирование, очистка от белков и посторонних веществ сульфатом аммония; при pH 2,0–2,5 эфир 2 раза по 40 мл; затем 20% гидроксид натрия до pH 8,0–9,0 и хлороформ 3 раза [prim_ajratish2024] (с. 10–11).\n• Метод Стаса–Отто: 100 г объекта с 96% этанолом, 10% спиртовой щавелевой кислотой до pH 2,0–2,5, 24 ч; спиртовые извлечения упаривают при 40 °C, белки многократно осаждают этанолом; остаток растворяют в воде, промывают эфиром, затем 25% аммиак до pH 9–10 и хлороформ [prim_ajratish2024] (с. 11–12).\n• Барбитураты: В.И. Попов (вода с серной кислотой pH 2,0–3,0, сефадекс G-25), П. Валов (щелочная вода, осаждение вольфраматом натрия), из крови и мочи хлороформ при pH 2 [prim_ajratish2024] (с. 12–14); из мочи эфир при pH 1–2, затем хлороформ–н-бутанол (9:1) при pH 9 [nark_analiz2023] (с. 10).\n• Фенотиазины (аминазин, кровь): этанол, подкисленный щавелевой кислотой до pH 2–3, нагревание, промывание эфиром, эфир при pH 13 [nark_analiz2023] (с. 18).\n• 1,4-бензодиазепины: гидролиз мочи или крови концентрированной хлористоводородной кислотой 1 ч до бензофенонов, хлороформ при pH 8–10 (Б.Н. Изотов, И.В. Волкова); из органов подкисленная вода pH 2, промывание хлороформом, эфир при pH 9–10 [nark_analiz2023] (с. 24, 27).\n• Кетамин: кровь (щавелевая кислота) или моча (10% серная кислота) pH 3,5–4,5, 2 ч; очистка от балластных веществ этилацетатом (кровь) или хлороформом (моча), хлороформ 3 раза при pH 7,5–8,0, затем очистка TLC [rizayev_ketamin2023] (с. 8–9).\n• Каннабиноиды: извлечение из слюны, плазмы крови, мочи (щелочной гидролиз, затем pH 2–3) и смывов этилацетатом или гексан–этилацетатом [prim_ajratish2024] (с. 15–16).",
+      "en": "• Method of A.A. Vasilyeva: 100 g of minced object mixed with water (1:2; plant material 1:12), oxalic acid to pH 2.0–2.5, shaken from time to time for 1 h; from the acidic extract chloroform 3 × 10 mL — acidic, neutral and weakly basic substances; then 25% ammonium hydroxide to pH 8.0–9.0 and chloroform 3 × 10 mL — bases [prim_ajratish2024] (pp. 9–10).\n• Method of V.F. Kramarenko: 0.02 M sulfuric acid (pH 2.5), soaking for 2 h and again 1 h, centrifugation, clean-up from proteins and foreign matter with ammonium sulfate; ether 2 × 40 mL at pH 2.0–2.5; then 20% sodium hydroxide to pH 8.0–9.0 and chloroform 3 times [prim_ajratish2024] (pp. 10–11).\n• Stas–Otto method: 100 g of object with 96% ethanol, 10% ethanolic oxalic acid to pH 2.0–2.5, 24 h; the ethanolic extracts are evaporated at 40 °C and proteins repeatedly precipitated with ethanol; the residue in water is washed with ether, then 25% ammonia to pH 9–10 and chloroform [prim_ajratish2024] (pp. 11–12).\n• Barbiturates: V.I. Popov (water with sulfuric acid pH 2.0–3.0, Sephadex G-25), P. Valov (alkaline water, precipitation with sodium tungstate), chloroform at pH 2 from blood and urine [prim_ajratish2024] (pp. 12–14); from urine ether at pH 1–2, then chloroform–n-butanol (9:1) at pH 9 [nark_analiz2023] (p. 10).\n• Phenothiazines (chlorpromazine, blood): ethanol acidified with oxalic acid to pH 2–3, heating, ether wash, ether at pH 13 [nark_analiz2023] (p. 18).\n• 1,4-Benzodiazepines: hydrolysis of urine or blood with concentrated hydrochloric acid for 1 h to benzophenones, chloroform at pH 8–10 (B.N. Izotov, I.V. Volkova); from organs acidified water pH 2, chloroform wash, ether at pH 9–10 [nark_analiz2023] (pp. 24, 27).\n• Ketamine: blood (oxalic acid) or urine (10% sulfuric acid) pH 3.5–4.5, 2 h; ballast removal with ethyl acetate (blood) or chloroform (urine), chloroform 3 times at pH 7.5–8.0, then TLC clean-up [rizayev_ketamin2023] (pp. 8–9).\n• Cannabinoids: extraction from saliva, blood plasma, urine (alkaline hydrolysis, then pH 2–3) and swabs with ethyl acetate or hexane–ethyl acetate [prim_ajratish2024] (pp. 15–16)."
+     },
+     "citations": [
+      "prim_ajratish2024",
+      "nark_analiz2023",
+      "rizayev_ketamin2023"
+     ]
+    },
+    {
+     "key": "cautions",
+     "title": {
+      "uz": "Cheklovlar va ehtiyot choralari",
+      "ru": "Ограничения и предостережения",
+      "en": "Limitations and cautions"
+     },
+     "body": {
+      "uz": "• Ajratib olish moddani aniqlamaydi: ajratma keyin rang, mikrokristall, TLC, UB va instrumental usullar bilan tekshiriladi.\n• Usul, muhit yoki reaktiv noto‘g‘ri tanlansa, modda yetarli miqdorda ajralmaydi yoki butunlay yo‘qoladi [prim_ajratish2024] (42-b.).\n• Ajralish darajasi erituvchiga bog‘liq: qo‘llanmada piretroidlar uchun peshobdan 78,30–79,50%, a’zolardan 50,00–51,46% ekstraksiya darajasi keltirilgan [prim_ajratish2024] (29-b.).\n• Vodorod sulfidga gumon bo‘lsa, tahlil 24 soat ichida o‘tkaziladi; chirigan ob’ektda vodorod sulfiddan zaharlanishni aniqlab bo‘lmaydi [prim_ajratish2024] (36–37-b.).\n• Ketaminni ajratishda ballast moddalar ham o‘tadi, shuning uchun ajratma TLC bilan tozalanadi [rizayev_ketamin2023] (9-b.).",
+      "ru": "• Изолирование не обнаруживает вещество: извлечение затем исследуют цветными, микрокристаллоскопическими реакциями, TLC, УФ и инструментальными методами.\n• При неправильном выборе метода, среды или реактивов вещество извлекается в недостаточном количестве или теряется полностью [prim_ajratish2024] (с. 42).\n• Степень извлечения зависит от растворителя: в пособии для пиретроидов приведена степень экстракции из мочи 78,30–79,50%, из органов 50,00–51,46% [prim_ajratish2024] (с. 29).\n• При подозрении на сероводород анализ проводят в течение 24 ч; в гнилостно изменённом объекте отравление сероводородом установить нельзя [prim_ajratish2024] (с. 36–37).\n• При изолировании кетамина переходят и балластные вещества, поэтому извлечение очищают TLC [rizayev_ketamin2023] (с. 9).",
+      "en": "• Isolation does not detect the substance: the extract is then examined by colour, microcrystal, TLC, UV and instrumental methods.\n• If the method, medium or reagents are chosen wrongly, the substance is recovered in insufficient amount or lost completely [prim_ajratish2024] (p. 42).\n• Recovery depends on the solvent: for pyrethroids the guide gives extraction of 78.30–79.50% from urine and 50.00–51.46% from organs [prim_ajratish2024] (p. 29).\n• If hydrogen sulfide is suspected the analysis is done within 24 h; in a putrefied object poisoning by hydrogen sulfide cannot be established [prim_ajratish2024] (pp. 36–37).\n• Ballast substances are co-extracted with ketamine, so the extract is cleaned up by TLC [rizayev_ketamin2023] (p. 9)."
+     },
+     "citations": [
+      "prim_ajratish2024",
+      "rizayev_ketamin2023"
+     ]
+    },
+    {
+     "key": "alternatives",
+     "title": {
+      "uz": "Boshqa guruhlar",
+      "ru": "Другие группы",
+      "en": "Other groups"
+     },
+     "body": {
+      "uz": "• 1-guruh: ob’ekt suv bilan bo‘tqa holiga keltirilib, oksalat yoki vino-tosh kislota bilan pH 2,0–2,5 da suv bug‘i bilan haydaladi; birinchi 3 ml distillyat 2 ml 2% natriy ishqori ostiga (sianid kislota uchun), ikkinchi 25 ml — boshqa uchuvchi zaharlar uchun; miqdoriy tahlil uchun 300 ml gacha to‘liq haydaladi [prim_ajratish2024] (7–8-b.).\n• 2-guruh: 100 g ob’ekt Kyeldal kolbasida konsentrlangan sulfat va nitrat kislotalar hamda suv aralashmasi (75 ml) bilan mineralizatsiya, oksidlovchilarni formaldegid bilan denitratsiya (difenilamin bilan nazorat); simob uchun jigar va buyrakni nitrat va sulfat kislotalar bilan destruksiya [prim_ajratish2024] (16–19-b.).\n• 5-guruh: suv bilan bo‘ktirish yoki pergamentli stakanda 4–6 soatlik almashinuvlar bilan dializ; dializat avval kuchli kislota va ishqorga indikatorlar bilan tekshiriladi [prim_ajratish2024] (21–24-b.).\n• 4-guruh: pestitsidlar organik erituvchida bo‘ktiriladi, masalan karbofos — pH 1 da benzol, 3 marta [prim_ajratish2024] (26-b.).\n• O‘ziga xos usullar (tetraetilqo‘rg‘oshin, brom, yod, ftor) va ajratmasdan aniqlanadigan moddalar (vodorod sulfid — ochilmagan idishda qo‘rg‘oshin atsetat va lakmus qog‘ozi; is gazi — qondagi karboksigemoglobin spektrofotometriyasi) [prim_ajratish2024] (34–42-b.).",
+      "ru": "• Группа 1: объект доводят водой до кашицы и перегоняют с водяным паром при pH 2,0–2,5 (щавелевая или винная кислота); первые 3 мл дистиллята собирают под 2 мл 2% гидроксида натрия (на синильную кислоту), вторые 25 мл — на остальные летучие яды; для количественного определения перегоняют полностью до 300 мл [prim_ajratish2024] (с. 7–8).\n• Группа 2: минерализация 100 г объекта в колбе Кьельдаля смесью концентрированных серной и азотной кислот с водой (75 мл), денитрация окислителей формальдегидом (контроль дифениламином); для ртути — деструкция печени и почки азотной и серной кислотами [prim_ajratish2024] (с. 16–19).\n• Группа 5: настаивание с водой или диализ в стакане с пергаментом со сменой воды через 4–6 ч; диализат сначала проверяют индикаторами на сильные кислоты и щёлочи [prim_ajratish2024] (с. 21–24).\n• Группа 4: пестициды настаивают с органическим растворителем, например карбофос — бензол при pH 1, 3 раза [prim_ajratish2024] (с. 26).\n• Особые приёмы (тетраэтилсвинец, бром, йод, фтор) и вещества без изолирования (сероводород — бумажки с ацетатом свинца и лакмусом в неоткрытой таре; оксид углерода — спектрофотометрия карбоксигемоглобина в крови) [prim_ajratish2024] (с. 34–42).",
+      "en": "• Group 1: the object is made into a slurry with water and steam-distilled at pH 2.0–2.5 (oxalic or tartaric acid); the first 3 mL of distillate are collected under 2 mL of 2% sodium hydroxide (for hydrocyanic acid), the second 25 mL for the other volatile poisons; for quantitation complete distillation up to 300 mL [prim_ajratish2024] (pp. 7–8).\n• Group 2: mineralisation of 100 g of object in a Kjeldahl flask with a mixture of concentrated sulfuric and nitric acids and water (75 mL), denitration of oxidants with formaldehyde (checked with diphenylamine); for mercury — destruction of liver and kidney with nitric and sulfuric acids [prim_ajratish2024] (pp. 16–19).\n• Group 5: soaking in water or dialysis in a parchment-closed beaker with the water changed every 4–6 h; the dialysate is first checked with indicators for strong acids and alkalis [prim_ajratish2024] (pp. 21–24).\n• Group 4: pesticides are soaked in an organic solvent, e.g. karbofos — benzene at pH 1, 3 times [prim_ajratish2024] (p. 26).\n• Special procedures (tetraethyl lead, bromine, iodine, fluorine) and substances determined without isolation (hydrogen sulfide — lead acetate and litmus papers in the unopened container; carbon monoxide — spectrophotometry of carboxyhaemoglobin in blood) [prim_ajratish2024] (pp. 34–42)."
+     },
+     "citations": [
+      "prim_ajratish2024"
+     ]
+    }
+   ],
+   "keywords": {
+    "uz": [
+     "ajratib olish",
+     "bioob’ekt",
+     "nordonlashtirilgan suv",
+     "Stas–Otto",
+     "Vasilyeva",
+     "Kramarenko",
+     "mineralizatsiya",
+     "dializ",
+     "suv bug‘i bilan haydash",
+     "ekstraksiya pH"
+    ],
+    "ru": [
+     "изолирование",
+     "биообъект",
+     "подкисленная вода",
+     "Стас–Отто",
+     "Васильева",
+     "Крамаренко",
+     "минерализация",
+     "диализ",
+     "перегонка с водяным паром",
+     "pH экстракции"
+    ],
+    "en": [
+     "isolation",
+     "biological material",
+     "acidified water",
+     "Stas–Otto",
+     "Vasilyeva",
+     "Kramarenko",
+     "mineralisation",
+     "dialysis",
+     "steam distillation",
+     "extraction pH"
+    ]
+   },
+   "reference_keys": [
+    "prim_ajratish2024",
+    "nark_analiz2023",
+    "rizayev_ketamin2023"
+   ]
   }
  ],
  "references": [
@@ -13730,6 +13876,73 @@
    "used_for": "Biohazard handling (pp. 5-6), wet-item storage and drying (pp. 9-11), packaging best practices (p. 15), storage temperature categories (p. 16), chain-of-custody definition and records (pp. 24-25), transfer and resealing (p. 32).",
    "verified_via": "Full text of the PDF downloaded from nvlpubs.nist.gov and read; DOI resolved via doi.org handle API and Crossref",
    "verified_on": "2026-10-10"
+  },
+  {
+   "type": "teaching_material",
+   "doi": null,
+   "pmid": null,
+   "url": null,
+   "place": "Toshkent",
+   "rights": "mualliflar roziligi bilan (egasi ma’lumoti, 2026-11-07); barcha uchun bepul",
+   "verified_via": "Owner-supplied copy; title page and imprint read directly",
+   "verified_on": "2026-11-07",
+   "key": "prim_ajratish2024",
+   "authors": [
+    "Primuxamedova XI",
+    "Nurmatova MI",
+    "Hakimov SA",
+    "Salimova MR"
+   ],
+   "title": "Toksikologik kimyo tahlilida zaharli moddalarni guruhlar bo‘yicha bioob’ektlardan ajratish usullari. Uslubiy qo‘llanma",
+   "publisher": "TIBBIYOT NASHRIYOTI MATBAA UYI; Respublika sud-tibbiy ekspertiza ilmiy-amaliy markazi",
+   "year": 2024,
+   "pages_total": "46",
+   "note": "Methodological guide (46 pp., Cyrillic Uzbek), scanned copy; page numbers cited are the printed page numbers (PDF page = printed + 1). Paraphrased, no long verbatim passages; garbled tables omitted.",
+   "used_for": "Grouping of poisons by isolation method; acidified water/alcohol methods (Vasilyeva, Kramarenko, Stas–Otto), barbiturate and cannabinoid isolation, steam distillation, mineralisation, dialysis, organic-solvent soaking, special procedures, hydrogen sulfide and carbon monoxide."
+  },
+  {
+   "type": "teaching_material",
+   "doi": null,
+   "pmid": null,
+   "url": null,
+   "place": "Toshkent",
+   "rights": "mualliflar roziligi bilan (egasi ma’lumoti, 2026-11-07); barcha uchun bepul",
+   "verified_via": "Owner-supplied copy; title page and imprint read directly",
+   "verified_on": "2026-11-07",
+   "key": "nark_analiz2023",
+   "authors": [
+    "Tashkent Pharmaceutical Institute"
+   ],
+   "title": "Анализ наркотических веществ. II часть. Методическое пособие для лабораторных занятий",
+   "publisher": "Ташкентский фармацевтический институт; Южно-Казахстанская медицинская академия",
+   "year": 2023,
+   "pages_total": "47",
+   "note": "Laboratory methodological guide (Russian, 47 pp.); page numbers = PDF pages (identical to printed). Paraphrased; garbled tables omitted.",
+   "used_for": "Isolation of barbiturates, chlorpromazine and 1,4-benzodiazepines from biological fluids and organs (pH, solvents, hydrolysis)."
+  },
+  {
+   "type": "teaching_material",
+   "doi": null,
+   "pmid": null,
+   "url": null,
+   "place": "Toshkent",
+   "rights": "mualliflar roziligi bilan (egasi ma’lumoti, 2026-11-07); barcha uchun bepul",
+   "verified_via": "Owner-supplied copy; title page and imprint read directly",
+   "verified_on": "2026-11-07",
+   "key": "rizayev_ketamin2023",
+   "authors": [
+    "Rizayev KS",
+    "Iskandarov AI",
+    "Yuldashev ZA",
+    "Nurmatova MI",
+    "Primuxamedova XI"
+   ],
+   "title": "Ketaminni biologik suyuqliklardan ajratib olish va tahlil qilish. Uslubiy tavsiyanoma",
+   "publisher": "Toshkent farmatsevtika instituti; Respublika sud-tibbiy ekspertiza ilmiy-amaliy markazi",
+   "year": 2023,
+   "pages_total": "15",
+   "note": "Methodological recommendation (15 pp.); page numbers = PDF pages (identical to printed). Paraphrased.",
+   "used_for": "Isolation of ketamine from blood and urine and TLC clean-up."
   }
  ]
 }
