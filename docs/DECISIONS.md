@@ -362,3 +362,13 @@ Pro 0.4.0 test buildidan keyin darslar va test savollari RU/EN ga tarjima qilina
 ## 2026-11-06 (keyin) — Tartib o‘zgardi
 - Birinchi USTOZ rejimi tartiblanadi (Ustoz minbari, Darslar tuzilmasi, umumiy Kutubxona, test/imtihon fanlari, Ustoz ish daftari, 3 til), KEYIN Mutaxassis. Ustoz bosqichida Mutaxassis bosh sahifasiga tegilmaydi.
 - Darslar/test fanlari tuzilmasi umumiy (Talaba ham ko‘radi); Talaba bosh sahifasi o‘zgarmaydi.
+
+## 2026-11-07 — Audio (R2), tarjima, natijalar eksporti (yangi sessiya uchun holat)
+
+- **Audio navbati (Gemini):** `tts_prefill_queue` 8622 slayd, 223 tayyor (~2,6%). Sabab: Gemini Free kvotasi — har TTS modelga 10 so‘rov/kun (yordamchi tekshirgan, loyiha «Default Gemini Project»). Tier 1: 100/kun/model (~28 kun, ~$57–190). Qaror (egasi): o‘zbekcha audio hozircha bepul (sekin), do‘konga chiqqach pullik API.
+- **R2:** bucket `forensic-expert-media` (EEUR, 2026-11-04), 92 fayl/118 MB (mazmuni tekshirilmagan), ommaviy URL `https://pub-c98fba3748ef4acf8dd1600b2b325ab6.r2.dev` (r2.dev — faqat sinov; do‘kondan oldin custom domen), CORS `*` ochiq. Account ID `31c4b3d8ece4b65de515debc4552334a`. Ilova/server hali R2 ga ulanmagan.
+- **R2 yozish tokeni:** egasi muhit sozlamalariga qo‘yadi (Network secret: host `api.cloudflare.com`, Bearer; yoki env `CLOUDFLARE_R2_TOKEN`). Faqat YANGI sessiya o‘qiydi. Skrinshotda ochiq qolgan eski token/S3 kalitlar egasi tomonidan roll qilinishi kerak. Ilova serveri uchun keyin Supabase sirlari: `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, `R2_BUCKET`, `R2_PUBLIC_BASE_URL`.
+- **Reja (token kelgach):** rus/ingliz dars audiosini bepul Edge TTS (`ru-RU-DmitryNeural`, `en-US-…Neural`; sandbox’da `edge_tts` + proksi CA bilan ishlaydi) bilan yaratib R2 ga yuklash; ilova avval R2 dan, bo‘lmasa Gemini’dan o‘qiydi.
+- **Tarjima (ma’ruzalar RU/EN):** jadval `public.lesson_deck_translations` (additiv), yordamchi `deck_strings`, `deck_translation_check`; agent yo‘riqnomasi `tools/slides/i18n_pilot/AGENT_BRIEF.md`. 1-to‘lqin 21 deck (davolash/pediatriya) tayyor; 2-to‘lqin 24 bioetika deck; qolgan ~180 deck. Status `needs_expert_review`; shubhali joylar `flags`da. Ilova hali tarjimani o‘qimaydi (`lesson_get` + viewer o‘zgarishi kerak).
+- **Pilot PPTX (RU/EN):** `ktp26-u-38`, `toks-21-toks-ksantin`; manbalar `tools/slides/i18n_pilot/`; audit hisoboti egasiga yuborilgan.
+- **Natijalar eksporti:** Excel/PDF/CSV varag‘i (`results_export_sheet.dart`), commit a22bbe02. Build 67 — faqat egasi ruxsatidan keyin.
