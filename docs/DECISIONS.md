@@ -372,3 +372,9 @@ Pro 0.4.0 test buildidan keyin darslar va test savollari RU/EN ga tarjima qilina
 - **Tarjima (ma’ruzalar RU/EN):** jadval `public.lesson_deck_translations` (additiv), yordamchi `deck_strings`, `deck_translation_check`; agent yo‘riqnomasi `tools/slides/i18n_pilot/AGENT_BRIEF.md`. 1-to‘lqin 21 deck (davolash/pediatriya) tayyor; 2-to‘lqin 24 bioetika deck; qolgan ~180 deck. Status `needs_expert_review`; shubhali joylar `flags`da. Ilova hali tarjimani o‘qimaydi (`lesson_get` + viewer o‘zgarishi kerak).
 - **Pilot PPTX (RU/EN):** `ktp26-u-38`, `toks-21-toks-ksantin`; manbalar `tools/slides/i18n_pilot/`; audit hisoboti egasiga yuborilgan.
 - **Natijalar eksporti:** Excel/PDF/CSV varag‘i (`results_export_sheet.dart`), commit a22bbe02. Build 67 — faqat egasi ruxsatidan keyin.
+
+## 2026-11-07 — Yangi manbalar: mualliflar roziligi
+- Manbalar: Rizayev K.S. va boshq. «Ketaminni biologik suyuqliklardan ajratib olish va tahlil qilish» (2023); Rizayev K.S. va boshq. «Sud-kimyo amaliyotida psixotrop moddalarni YuSSX usulida aniqlash» (2023); «Анализ наркотических веществ, II часть» (TFI, 2023); Primuxamedova X.I., Nurmatova M.I., Hakimov S.A., Salimova M.R. «Toksikologik kimyo tahlilida zaharli moddalarni guruhlar bo‘yicha bioob’ektlardan ajratish usullari» (2024).
+- Rozilik: egasi mualliflardan **og‘zaki** rozilik olgan (egasi so‘zi, 2026-11-07). Yozma nusxa yo‘q. Ichki identifikator `AUTHOR-CONSENT-OWNER-2026-11-07` shu yozuvga ishora qiladi.
+- «Manbalar va mualliflar» sahifasida Primuxamedova X.I. va Nurmatova M.I. Prof. Z.A. Yuldashevdan keyin ko‘rsatiladi (mualliflar o‘zlari xohlagan, egasi so‘zi).
+- Qoida: ABY nomi ishlatilmaydi; reaktiv tayyorlash retseptlari kiritilmaydi; hamma yozuv NEEDS_REVIEW.
