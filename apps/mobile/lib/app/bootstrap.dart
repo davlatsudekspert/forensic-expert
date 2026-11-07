@@ -232,14 +232,23 @@ Future<void> bootstrap({List<Override> testOverrides = const []}) async {
           supportServiceProvider.overrideWithValue(
             SupabaseSupportService(config: supabase, auth: auth),
           ),
-          classQuizServiceProvider.overrideWithValue(
-            SupabaseClassQuizService(config: supabase, auth: auth),
+          // Savollar ilova tilida (ru/en tarjima jadvali; yo‘q — asl).
+          classQuizServiceProvider.overrideWith(
+            (ref) => SupabaseClassQuizService(
+              config: supabase,
+              auth: auth,
+              lang: () => ref.read(uiLanguageProvider),
+            ),
           ),
           oralGroupServiceProvider.overrideWithValue(
             SupabaseOralGroupService(config: supabase, auth: auth),
           ),
-          classGroupsServiceProvider.overrideWithValue(
-            SupabaseClassGroupsService(config: supabase, auth: auth),
+          classGroupsServiceProvider.overrideWith(
+            (ref) => SupabaseClassGroupsService(
+              config: supabase,
+              auth: auth,
+              lang: () => ref.read(uiLanguageProvider),
+            ),
           ),
           teacherCardServiceProvider.overrideWithValue(
             SupabaseTeacherCardService(config: supabase, auth: auth),

@@ -289,10 +289,20 @@ final knowledgeRepositoryProvider = Provider<KnowledgeRepository>((ref) {
   return LocaleFilteredKnowledgeRepository(inner, _uiLanguageCode(locale));
 });
 
+/// Interfeys tili kodi (`uz`/`ru`/`en`, …) — MaterialApp tanlovi bilan bir xil.
+final uiLanguageProvider = Provider<String>(
+  (ref) => _uiLanguageCode(
+    ref.watch(settingsControllerProvider.select((s) => s.locale)),
+  ),
+);
+
 /// Interfeys tili. Foydalanuvchi hali tanlamagan bo‘lsa (birinchi ishga
 /// tushirish) — qurilma tili, agar u qo‘llanmasa `en`: MaterialApp ham xuddi
 /// shunday tanlaydi.
-String _uiLanguageCode(Locale? chosen) {
+String _uiLanguageCode(Locale? chosen) => uiLanguageCode(chosen);
+
+/// Interfeys tili kodi (yuqoridagi qoida; boshqa providerlar uchun ochiq).
+String uiLanguageCode(Locale? chosen) {
   if (chosen != null) return chosen.languageCode;
   for (final l in PlatformDispatcher.instance.locales) {
     if (SupportedLanguages.codes.contains(l.languageCode)) {

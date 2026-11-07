@@ -5,6 +5,7 @@ import '../../domain/class_groups/class_groups_models.dart';
 import '../../domain/class_quiz/class_quiz_models.dart' show ClassHardDetail;
 import '../../domain/ports/backend_ports.dart';
 import '../../domain/ports/class_groups_ports.dart';
+import 'class_quiz_localizer.dart';
 import 'supabase_rest.dart';
 
 /// «Ustoz–talaba testi» uchun Supabase adapteri.
@@ -21,12 +22,30 @@ class SupabaseClassGroupsService implements ClassGroupsService {
     required SupabaseConfig config,
     required this.auth,
     RestTransport? transport,
+    String Function()? lang,
   }) : _cfg = config,
-       _http = transport ?? HttpClientTransport();
+       _http = transport ?? HttpClientTransport() {
+    _l10n = ClassQuizLocalizer(
+      config: config,
+      auth: auth,
+      transport: _http,
+      lang: lang ?? () => 'uz',
+    );
+  }
 
   final SupabaseConfig _cfg;
   final AuthRepository auth;
   final RestTransport _http;
+  late final ClassQuizLocalizer _l10n;
+
+  /// Savol matni qaytaradigan RPC’lar — ilova tiliga (ru/en) o‘giriladi
+  /// (`class_quiz_question_translations`; yo‘q bo‘lsa — asl matn).
+  static const _questionRpcs = {
+    'group_assignment_open',
+    'group_assignment_preview',
+    'group_assignment_result',
+    'group_assignment_hardest_detail',
+  };
 
   @override
   bool get isConfigured => true;
@@ -64,6 +83,7 @@ class SupabaseClassGroupsService implements ClassGroupsService {
       if (m['ok'] == false) {
         return GroupCall.fail(GroupFailure.fromServer(m['error']), m);
       }
+      if (_questionRpcs.contains(name)) await _l10n.localizeTree(r.json);
       return GroupCall.ok(m);
     } on FormatException {
       return const GroupCall.fail(GroupFailure.server);

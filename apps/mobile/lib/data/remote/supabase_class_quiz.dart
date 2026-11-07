@@ -4,6 +4,7 @@ import 'dart:io';
 import '../../domain/class_quiz/class_quiz_models.dart';
 import '../../domain/ports/backend_ports.dart';
 import '../../domain/ports/class_quiz_ports.dart';
+import 'class_quiz_localizer.dart';
 import 'supabase_rest.dart';
 
 /// «Sinfda test» uchun Supabase adapteri.
@@ -22,17 +23,39 @@ import 'supabase_rest.dart';
 /// Realtime: SDK’siz REST mijoz va yopiq RLS tufayli polling (2 s) — qarang
 /// `docs/CLASS_QUIZ.md`. Kutilgan xatolar `{ok:false,error}` ko‘rinishida
 /// keladi; huquq xatosi HTTP 403/401.
+///
+/// Ilova tili ru/en bo‘lsa savollar [ClassQuizLocalizer] orqali tarjima
+/// jadvalidan ko‘rsatiladi (yo‘q bo‘lsa — asl o‘zbekcha). Bankdagi
+/// `<id>~ru`/`<id>~en` mavzu nusxalari tanlash ro‘yxatlaridan yashiriladi:
+/// ular o‘zbekcha matnning takrori, tarjima endi UI tili bo‘yicha.
 class SupabaseClassQuizService implements ClassQuizService {
   SupabaseClassQuizService({
     required SupabaseConfig config,
     required this.auth,
     RestTransport? transport,
+    String Function()? lang,
   }) : _cfg = config,
-       _http = transport ?? HttpClientTransport();
+       _http = transport ?? HttpClientTransport() {
+    _l10n = ClassQuizLocalizer(
+      config: config,
+      auth: auth,
+      transport: _http,
+      lang: lang ?? () => 'uz',
+    );
+  }
 
   final SupabaseConfig _cfg;
   final AuthRepository auth;
   final RestTransport _http;
+  late final ClassQuizLocalizer _l10n;
+
+  /// Savol matni qaytaradigan RPC’lar — javob ilova tiliga o‘giriladi.
+  static const _questionRpcs = {
+    'class_session_state',
+    'class_teacher_dashboard',
+    'class_hardest_detail',
+    'class_my_results',
+  };
 
   @override
   bool get isConfigured => true;
@@ -70,6 +93,7 @@ class SupabaseClassQuizService implements ClassQuizService {
       }
       if (!r.ok) return const ClassResult.fail(ClassFailure.server);
       final j = r.json;
+      if (_questionRpcs.contains(name)) await _l10n.localizeTree(j);
       if (j is List) {
         return ClassResult.ok({'items': j});
       }
@@ -112,22 +136,30 @@ class SupabaseClassQuizService implements ClassQuizService {
       _map(await _rpc('class_status', const {}), ClassQuizMe.fromJson);
 
   @override
-  Future<ClassResult<List<ClassTopic>>> topics() async => _map(
-    await _rpc('class_topics', const {}),
-    (m) => [
-      for (final t in (m['items'] as List? ?? const []))
-        ClassTopic.fromJson((t as Map).cast<String, Object?>()),
-    ],
-  );
+  Future<ClassResult<List<ClassTopic>>> topics() async =>
+      _topicList(await _rpc('class_topics', const {}));
 
   @override
-  Future<ClassResult<List<ClassTopic>>> practiceTopics() async => _map(
-    await _rpc('class_practice_topics', const {}),
-    (m) => [
-      for (final t in (m['items'] as List? ?? const []))
-        ClassTopic.fromJson((t as Map).cast<String, Object?>()),
-    ],
-  );
+  Future<ClassResult<List<ClassTopic>>> practiceTopics() async =>
+      _topicList(await _rpc('class_practice_topics', const {}));
+
+  Future<ClassResult<List<ClassTopic>>> _topicList(
+    ClassResult<Map<String, Object?>> r,
+  ) async {
+    final parsed = _map(
+      r,
+      (m) => [
+        for (final t in (m['items'] as List? ?? const []))
+          ClassTopic.fromJson((t as Map).cast<String, Object?>()),
+      ],
+    );
+    final list = parsed.value;
+    if (list == null) return parsed;
+    final titles = list.isEmpty
+        ? const <String, String>{}
+        : await _l10n.topicTitles();
+    return ClassResult.ok(localizeClassTopics(list, titles));
+  }
 
   @override
   Future<ClassResult<ClassSessionInfo>> createSession({
@@ -274,14 +306,46 @@ class SupabaseClassQuizService implements ClassQuizService {
   Future<ClassResult<List<Map<String, Object?>>>> practiceQuestions(
     String topicId, {
     int count = 10,
-  }) async => _map(
-    await _rpc('class_practice_questions', {
-      'p_topic': topicId,
-      'p_count': count,
-    }),
-    (m) => [
-      for (final q in (m['items'] as List? ?? const []))
-        if (q is Map) q.cast<String, Object?>(),
-    ],
-  );
+  }) async {
+    final r = _map(
+      await _rpc('class_practice_questions', {
+        'p_topic': topicId,
+        'p_count': count,
+      }),
+      (m) => [
+        for (final q in (m['items'] as List? ?? const []))
+          if (q is Map) q.cast<String, Object?>(),
+      ],
+    );
+    final rows = r.value;
+    // Asl tartibdagi bank yozuvlari: tarjima jadvalidan bitta so‘rov bilan.
+    if (rows != null) await _l10n.localizeBankRows(rows);
+    return r;
+  }
+}
+
+/// Server mavzulari ro‘yxati UI tili uchun: `<id>~ru`/`<id>~en` nusxalari
+/// (asl mavzusi ro‘yxatda bo‘lsa) olib tashlanadi — ular o‘zbekcha savollar
+/// takrori, tarjima endi ilova tili bo‘yicha ustiga qo‘yiladi. Eski sessiya
+/// va topshiriqlar shu id’larga bog‘langan holda ishlayveradi (faqat
+/// tanlash ro‘yxatidan yashiriladi). [titles] — deck id → tarjima nomi.
+List<ClassTopic> localizeClassTopics(
+  List<ClassTopic> topics,
+  Map<String, String> titles,
+) {
+  final ids = {for (final t in topics) t.id};
+  return [
+    for (final t in topics)
+      if (!t.id.contains('~') || !ids.contains(t.id.split('~').first))
+        switch (titles[t.id.split('~').first]) {
+          final String title when !t.id.contains('~') => ClassTopic(
+            id: t.id,
+            title: title,
+            count: t.count,
+            isDemo: t.isDemo,
+            course: t.course,
+          ),
+          _ => t,
+        },
+  ];
 }

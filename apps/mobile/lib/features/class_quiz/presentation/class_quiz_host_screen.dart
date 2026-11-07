@@ -335,8 +335,18 @@ class _TopicGroupData {
   final items = <_TopicChoice>[];
 }
 
-String _choiceTitle(ClassTopic t, ClassQuizBank bank, String lang) =>
-    bank.meta(t.id)?.title(ClassQuizBank.variantLang(t.id)) ?? t.title;
+/// Mavzu nomi: til varianti bo‘lsa — bankdagi o‘sha til nomi; asl mavzu
+/// ru/en interfeysda — bankda tarjima nomi bo‘lsa u, bo‘lmasa server nomi
+/// (server tarjima nomini qo‘ygan bo‘lishi mumkin), aks holda o‘zbekcha.
+String _choiceTitle(ClassTopic t, ClassQuizBank bank, String lang) {
+  final m = bank.meta(t.id);
+  final vl = ClassQuizBank.variantLang(t.id);
+  if (m == null) return t.title;
+  if (vl != 'uz' || lang == 'uz') return m.title(vl);
+  final local = m.title(lang);
+  if (local != m.title('uz')) return local;
+  return t.title.trim().isEmpty ? local : t.title;
+}
 
 /// Mavzularni kurs/fan bo‘yicha guruhlaydi. Bir mavzuning til variantlari
 /// (`<id>`, `<id>~ru`, `<id>~en`) bitta qatorga yig‘iladi — ilova tilidagi
