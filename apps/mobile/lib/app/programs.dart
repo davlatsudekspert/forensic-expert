@@ -45,6 +45,8 @@ String programLinkRoute(ProgramLink l) {
     'equipment' => Routes.equipmentItem(v!),
     'knowledge' => Routes.knowledge(v!),
     'jurisdictions' => Routes.jurisdictions,
+    // Ma’ruza: «Darslar»dagi ko‘rgich (slaydlar + oxirida test).
+    'lesson' => Routes.lesson(v!),
     _ => Routes.home,
   };
 }

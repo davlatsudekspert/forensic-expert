@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../app/class_quiz.dart' show classQuizBankProvider;
+import '../../../app/lessons.dart' show lessonListProvider;
+import '../../../app/plan.dart' show lessonLocksProvider;
 import '../../../app/programs.dart';
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
@@ -13,9 +16,12 @@ import '../../../core/settings/app_settings.dart' show UserMode;
 import '../../../core/settings/settings_controller.dart'
     show settingsControllerProvider;
 import '../../../core/widgets/fe_components.dart';
+import '../../../domain/lessons/lesson_models.dart'
+    show LessonGrouping, LessonSummary;
 import '../../../domain/programs/program_models.dart';
 import '../../common/entry_tile.dart';
 import '../../evidence/evidence_strings.dart' show EvidenceStrings;
+import '../../pro/presentation/pro_gate.dart' show openPro;
 
 /// «O‘quv dasturlari»: ixtisoslashtirish kurslari ro‘yxati (Ustoz, Talaba).
 /// Hozir bitta kurs — «Toksikologik kimyo». Davomiylik hech qayerda yo‘q.
@@ -119,6 +125,8 @@ class _ProgramScreenState extends ConsumerState<ProgramScreen> {
         return l.equipTitle;
       case 'jurisdictions':
         return l.jurisdictionsTitle;
+      case 'lesson':
+        return _lessonTitle(v!, lang);
       case 'knowledge':
         return switch (v) {
           'reagent' => l.moduleReagents,
@@ -129,12 +137,73 @@ class _ProgramScreenState extends ConsumerState<ProgramScreen> {
     return v ?? '';
   }
 
+  /// Ma’ruza nomi: ilova tilidagi tarjima (dars bankida tayyor bo‘lsa),
+  /// aks holda «Darslar»dagi asl nom; ro‘yxat yuklanmagan — bank nomi.
+  String _lessonTitle(String id, String lang) {
+    final meta = ref.read(classQuizBankProvider).value?.meta(id);
+    final tr = meta?.titles[lang];
+    if (lang != 'uz' && tr != null && !meta!.isTranslationPending(lang)) {
+      return tr;
+    }
+    for (final s
+        in ref.read(lessonListProvider('')).value?.value ??
+            const <LessonSummary>[]) {
+      if (s.topicId == id) return LessonGrouping.titleParts(s.title).main;
+    }
+    return meta?.title('uz') ?? id;
+  }
+
+  /// Havolani ochadi; ma’ruza Pro qulfida bo‘lsa — «Darslar»dagidek Pro
+  /// sahifasi (ko‘rgich ham qulfni o‘zi tekshiradi).
+  void _go(ProgramLink k) {
+    final locks = k.isLesson ? ref.read(lessonLocksProvider) : null;
+    final lock = locks?[k.value];
+    if (lock != null) {
+      openPro(context, lock.requiredPlan);
+    } else {
+      context.push(programLinkRoute(k));
+    }
+  }
+
+  Widget _linkTile(
+    BuildContext sheet,
+    ProgramLink k,
+    AppLocalizations l,
+    String lang,
+  ) {
+    final locked =
+        k.isLesson &&
+        (ref.read(lessonLocksProvider)?.containsKey(k.value) ?? false);
+    return Padding(
+      padding: const EdgeInsets.only(bottom: FeSpace.xs),
+      child: EntryTile(
+        key: Key('program.link.${k.kind}.${k.value ?? ''}'),
+        icon: k.isLesson
+            ? (locked ? Icons.lock_outline : Icons.slideshow_rounded)
+            : Icons.open_in_new_rounded,
+        title: _linkLabel(l, k, lang),
+        onTap: () {
+          Navigator.of(sheet).pop();
+          _go(k);
+        },
+      ),
+    );
+  }
+
   void _open(ProgramTopic t, AppLocalizations l, String lang) {
     if (t.links.isEmpty) return;
     if (t.links.length == 1 && t.status == ProgramTopicStatus.available) {
-      context.push(programLinkRoute(t.links.first));
+      _go(t.links.first);
       return;
     }
+    final lectures = [
+      for (final k in t.links)
+        if (k.isLesson) k,
+    ];
+    final others = [
+      for (final k in t.links)
+        if (!k.isLesson) k,
+    ];
     showModalBottomSheet<void>(
       context: context,
       showDragHandle: true,
@@ -165,22 +234,20 @@ class _ProgramScreenState extends ConsumerState<ProgramScreen> {
                         ?.copyWith(color: FeTheme.of(sheet).textSecondary),
                   ),
                 const SizedBox(height: FeSpace.sm),
-                FeSectionHeader(
-                  l.progMaterials,
-                  padding: const EdgeInsets.only(bottom: FeSpace.xs),
-                ),
-                for (final k in t.links)
-                  Padding(
+                if (lectures.isNotEmpty) ...[
+                  FeSectionHeader(
+                    l.progLectures,
                     padding: const EdgeInsets.only(bottom: FeSpace.xs),
-                    child: EntryTile(
-                      icon: Icons.open_in_new_rounded,
-                      title: _linkLabel(l, k, lang),
-                      onTap: () {
-                        Navigator.of(sheet).pop();
-                        context.push(programLinkRoute(k));
-                      },
-                    ),
                   ),
+                  for (final k in lectures) _linkTile(sheet, k, l, lang),
+                ],
+                if (others.isNotEmpty) ...[
+                  FeSectionHeader(
+                    l.progMaterials,
+                    padding: const EdgeInsets.only(bottom: FeSpace.xs),
+                  ),
+                  for (final k in others) _linkTile(sheet, k, l, lang),
+                ],
               ],
             ),
           ),
@@ -222,7 +289,19 @@ class _ProgramScreenState extends ConsumerState<ProgramScreen> {
                 children: [
                   Text(t.title, style: tt.bodyMedium),
                   const SizedBox(height: FeSpace.xxs),
-                  StateChip(label: label, tone: tone),
+                  Wrap(
+                    spacing: FeSpace.xs,
+                    runSpacing: FeSpace.xxs,
+                    children: [
+                      StateChip(label: label, tone: tone),
+                      if (t.lessonIds.isNotEmpty)
+                        StateChip(
+                          key: Key('program.lectures.${t.id}'),
+                          label: l.progLectureCount(t.lessonIds.length),
+                          tone: 0,
+                        ),
+                    ],
+                  ),
                 ],
               ),
             ),
@@ -279,6 +358,10 @@ class _ProgramScreenState extends ConsumerState<ProgramScreen> {
         ref.watch(settingsControllerProvider.select((s) => s.userMode)) ==
         UserMode.professional;
     final program = ref.watch(toxChemProgramProvider).value;
+    // Ma’ruza nomlari va Pro qulflari («Darslar» bilan bir manba).
+    ref
+      ..watch(lessonLocksProvider)
+      ..watch(classQuizBankProvider);
     final q = _norm(_query.text.trim());
     final topics = [
       for (final x in program?.topics ?? const <ProgramTopic>[])

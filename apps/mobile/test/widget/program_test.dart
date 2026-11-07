@@ -37,11 +37,11 @@ void main() {
       expect(p.groupIds.fold<int>(0, (a, g) => a + p.inGroup(g).length), 64);
     });
 
-    test('holatlar haqiqiy: mavjud 2, qisman 43, tayyorlanmoqda 19', () {
+    test('holatlar haqiqiy: mavjud 43, qisman 11, tayyorlanmoqda 10', () {
       final p = load();
-      expect(p.count(ProgramTopicStatus.available), 2);
-      expect(p.count(ProgramTopicStatus.partial), 43);
-      expect(p.count(ProgramTopicStatus.preparing), 19);
+      expect(p.count(ProgramTopicStatus.available), 43);
+      expect(p.count(ProgramTopicStatus.partial), 11);
+      expect(p.count(ProgramTopicStatus.preparing), 10);
       // Havolasi yo‘q mavzu — albatta «tayyorlanmoqda»; havolasi bor — yo‘q.
       for (final t in p.topics) {
         expect(
@@ -49,6 +49,53 @@ void main() {
           t.status == ProgramTopicStatus.preparing,
           reason: t.id,
         );
+      }
+    });
+
+    test('ma’ruzalar: har id dars bankida bor, mavzuga 1–3 ta, '
+        'ma’ruzali mavzu «tayyorlanmoqda» emas', () {
+      final p = load();
+      final bank =
+          ((jsonDecode(
+                    File('assets/content/class_quiz/class_quiz_bank.json')
+                        .readAsStringSync(),
+                  ) as Map)['topics']
+                  as List)
+              .map((t) => (t as Map)['id'] as String)
+              .toSet();
+      final used = <String>{};
+      for (final t in p.topics) {
+        final ids = t.lessonIds;
+        expect(ids.length, lessThanOrEqualTo(3), reason: t.id);
+        for (final id in ids) {
+          expect(bank, contains(id), reason: '${t.id} → $id');
+          expect(
+            RegExp(r'^(toks-\d\d-|sud-toks-\d\d$|instr-)').hasMatch(id),
+            isTrue,
+            reason: id,
+          );
+        }
+        if (ids.isNotEmpty) {
+          expect(t.status, isNot(ProgramTopicStatus.preparing), reason: t.id);
+        }
+        used.addAll(ids);
+      }
+      expect(p.topics.where((t) => t.lessonIds.isNotEmpty).length, 48);
+      expect(used.where((x) => x.startsWith('sud-toks-')).length, 6);
+      // Mazmun bo‘yicha aniq moslik (namuna).
+      Iterable<String> of(String id) =>
+          p.topics.firstWhere((t) => t.id == id).lessonIds;
+      expect(of('tk-01'), ['toks-02-toks-sud-kimyo-ekspertizasi']);
+      expect(of('tk-03'), ['toks-30-toks-gv-umumiy', 'sud-toks-08']);
+      expect(of('tk-34'), ['toks-34-toks-kokain']);
+      expect(of('tk-16'), [
+        'toks-05-toks-suv-bugi-sianid',
+        'toks-17-toks-qutbli-erituvchilar',
+        'toks-09-toks-mineralizatsiya',
+      ]);
+      // Mos ma’ruza yo‘q mavzular (soch, so‘lak, G-standart …).
+      for (final id in ['tk-12', 'tk-28', 'tk-48', 'tk-49', 'tk-61']) {
+        expect(of(id), isEmpty, reason: id);
       }
     });
 
@@ -122,7 +169,7 @@ void main() {
       expect(k('program.count'), findsOneWidget);
       expect(find.text('64 ta mavzu'), findsOneWidget);
       expect(
-        find.text('Mavjud: 2 · Qisman: 43 · Tayyorlanmoqda: 19'),
+        find.text('Mavjud: 43 · Qisman: 11 · Tayyorlanmoqda: 10'),
         findsOneWidget,
       );
       expect(

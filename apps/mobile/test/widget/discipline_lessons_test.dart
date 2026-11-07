@@ -150,7 +150,7 @@ void main() {
   });
 
   testWidgets(
-    'mutaxassis, rol yo‘q — faqat ochiq «Apparatlar», test tugmasiz',
+    'mutaxassis, rol yo‘q — «Apparatlar» va Toksikologik kimyo, test tugmasiz',
     (tester) async {
       await open(tester, code: 'forensic_toxicology', teacher: false);
       expect(find.byKey(const Key('discipline.lessonsBody')), findsOneWidget);
@@ -158,7 +158,15 @@ void main() {
         find.byKey(const Key('discipline.lesson.instr-01')),
         findsOneWidget,
       );
-      expect(find.byKey(const Key('discipline.lesson.toks-01')), findsNothing);
+      // Sud-kimyoviy ekspertiza ma’ruzalari Mutaxassisga ham (2026-11-07).
+      expect(
+        find.byKey(const Key('discipline.lesson.toks-01')),
+        findsOneWidget,
+      );
+      expect(
+        find.byKey(const Key('discipline.lessonTest.toks-01')),
+        findsNothing,
+      );
       expect(
         find.byKey(const Key('discipline.lessonTest.instr-01')),
         findsNothing,
@@ -217,7 +225,7 @@ void main() {
       expect(find.byKey(const Key('discipline.lessonsBody')), findsOneWidget);
       expect(
         find.byKey(const Key('discipline.lesson.toks-01')),
-        mode == UserMode.teacher ? findsOneWidget : findsNothing,
+        findsOneWidget,
       );
       expect(
         find.byKey(const Key('discipline.lesson.instr-01')),

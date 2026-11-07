@@ -12732,4 +12732,14 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   @override
   String get resultsExportCsvBody => toUzNewAlphabet(super.resultsExportCsvBody);
 
+  @override
+  String get progLectures => toUzNewAlphabet(super.progLectures);
+
+  @override
+  String progLectureCount(int count) =>
+      toUzNewAlphabet(super.progLectureCount(count));
+
+  @override
+  String get disciplineCourseList => toUzNewAlphabet(super.disciplineCourseList);
+
 }

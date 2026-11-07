@@ -18855,5 +18855,22 @@
   "resultsExportCsvBody": "Plain-text table",
   "@resultsExportCsvBody": {
     "description": "Results export: CSV hint."
+  },
+  "progLectures": "Lectures: slides and test",
+  "@progLectures": {
+    "description": "Program topic sheet: section with the matching lectures."
+  },
+  "progLectureCount": "{count, plural, =1{1 lecture} other{{count} lectures}}",
+  "@progLectureCount": {
+    "description": "Program topic chip: number of matching lectures.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "disciplineCourseList": "Lessons list",
+  "@disciplineCourseList": {
+    "description": "Discipline page: open the lessons list of one course."
   }
 }

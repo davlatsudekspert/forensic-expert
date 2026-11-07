@@ -14219,4 +14219,15 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get resultsExportCsvBody => 'Oddiy matnli jadval';
+
+  @override
+  String get progLectures => 'Ma’ruzalar: slayd va test';
+
+  @override
+  String progLectureCount(int count) {
+    return '$count ta ma’ruza';
+  }
+
+  @override
+  String get disciplineCourseList => 'Darslar ro‘yxati';
 }

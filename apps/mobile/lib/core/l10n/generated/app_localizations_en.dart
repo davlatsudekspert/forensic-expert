@@ -14357,4 +14357,21 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get resultsExportCsvBody => 'Plain-text table';
+
+  @override
+  String get progLectures => 'Lectures: slides and test';
+
+  @override
+  String progLectureCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count lectures',
+      one: '1 lecture',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get disciplineCourseList => 'Lessons list';
 }

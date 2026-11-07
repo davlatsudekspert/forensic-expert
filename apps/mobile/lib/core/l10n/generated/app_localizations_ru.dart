@@ -14434,4 +14434,15 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get resultsExportCsvBody => 'Простая текстовая таблица';
+
+  @override
+  String get progLectures => 'Лекции: слайды и тест';
+
+  @override
+  String progLectureCount(int count) {
+    return 'Лекций: $count';
+  }
+
+  @override
+  String get disciplineCourseList => 'Список уроков';
 }

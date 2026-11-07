@@ -2,39 +2,70 @@
  "id": "toksikologik_kimyo",
  "module": "Modul: Toksikologik kimyo",
  "source_title": "Sud-tibbiy ekspert-kimyogar mutaxassisligi bo‘yicha “Toksikologik kimyo’’ ixtisoslashtirish kursi DASTURI",
- "version": 2,
+ "version": 3,
  "topics": [
   {
    "id": "tk-01",
    "n": 1,
    "title": "O‘zbekiston Respublikasi Sog‘liqni saqlash vazirligi Respublika Sud-tibbiy ekspertiza ilmiy-amaliy markazi tuzilishi va faoliyatini tashkil etish",
    "group": "g1",
-   "status": "preparing",
-   "links": []
+   "status": "partial",
+   "links": [
+    {
+     "k": "lesson",
+     "v": "toks-02-toks-sud-kimyo-ekspertizasi"
+    }
+   ]
   },
   {
    "id": "tk-02",
    "n": 2,
    "title": "Sud-tibbiy ekspert-kimyogarlari, ularning vazifalari, huquq va majburiyatlari. Sud kimyosi ekspertizasini olib borish tartibi. Sud-kimyosi ekspertizasi xulosasi va kimyo-toksikologik tekshiruv aktini yozish qoidalari",
    "group": "g1",
-   "status": "preparing",
-   "links": []
+   "status": "available",
+   "links": [
+    {
+     "k": "lesson",
+     "v": "toks-02-toks-sud-kimyo-ekspertizasi"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-47-toks-lab-etika"
+    }
+   ]
   },
   {
    "id": "tk-03",
    "n": 3,
    "title": "Narkomaniya va toksikomaniya, murakkab narkomaniya va toksikomaniya, polinarkomaniya, politoksikomaniya",
    "group": "g1",
-   "status": "preparing",
-   "links": []
+   "status": "available",
+   "links": [
+    {
+     "k": "lesson",
+     "v": "toks-30-toks-gv-umumiy"
+    },
+    {
+     "k": "lesson",
+     "v": "sud-toks-08"
+    }
+   ]
   },
   {
    "id": "tk-04",
    "n": 4,
    "title": "Sud-kimyo ekspertizasining asosiy masalalari, Sud-kimyo ekspertizasi ob’ektlari va tahlillarda qo‘llaniladigan usullar",
    "group": "g1",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-01-toks-kirish"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-45-toks-instrumental"
+    },
     {
      "k": "knowledge",
      "v": "method"
@@ -46,8 +77,16 @@
    "n": 5,
    "title": "Zaharli moddalar, ularning sinflanishi, zaharli moddalarni organizmga tushishi, tarqalishi va chiqarilishi",
    "group": "g1",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-01-toks-kirish"
+    },
+    {
+     "k": "lesson",
+     "v": "sud-toks-02"
+    },
     {
      "k": "substances",
      "v": null
@@ -59,16 +98,37 @@
    "n": 6,
    "title": "Zaharlanish turlari va detoksikatsiyasi",
    "group": "g1",
-   "status": "preparing",
-   "links": []
+   "status": "available",
+   "links": [
+    {
+     "k": "lesson",
+     "v": "toks-44-toks-detoksikatsiya"
+    },
+    {
+     "k": "lesson",
+     "v": "sud-toks-01"
+    }
+   ]
   },
   {
    "id": "tk-07",
    "n": 7,
    "title": "Zaharlar metabolizmi",
    "group": "g1",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-01-toks-kirish"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-44-toks-detoksikatsiya"
+    },
+    {
+     "k": "lesson",
+     "v": "sud-toks-02"
+    },
     {
      "k": "substances",
      "v": null
@@ -80,16 +140,33 @@
    "n": 8,
    "title": "Sud-kimyo ekspertizasi va kimyo-toksikologik tekshiruvlar uchun ob’ektlarni olish, qabul qilish va saqlash",
    "group": "g2",
-   "status": "preparing",
-   "links": []
+   "status": "available",
+   "links": [
+    {
+     "k": "lesson",
+     "v": "toks-04-toks-ashyoviy-dalil"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-46-toks-lab-kirish"
+    }
+   ]
   },
   {
    "id": "tk-09",
    "n": 9,
    "title": "Dastlabki tekshiruv va namunalarni tahlilga tayyorlash",
    "group": "g2",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-48-toks-lab-dastlabki"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-04-toks-ashyoviy-dalil"
+    },
     {
      "k": "method",
      "v": "method-lle"
@@ -113,8 +190,12 @@
    "n": 10,
    "title": "Ajratib olingan moddalarni identifikatsiya qilish va ularning miqdorini aniqlashda qo‘llaniladigan uslublar",
    "group": "g4",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-45-toks-instrumental"
+    },
     {
      "k": "method",
      "v": "method-identification-criteria"
@@ -155,16 +236,33 @@
    "n": 13,
    "title": "Noma’lum zaharlarni umumiy tahlilini o‘tkazish tartibi",
    "group": "g4",
-   "status": "preparing",
-   "links": []
+   "status": "available",
+   "links": [
+    {
+     "k": "lesson",
+     "v": "toks-60-toks-lab-nomalum-1"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-75-toks-lab-nomalum-2"
+    }
+   ]
   },
   {
    "id": "tk-14",
    "n": 14,
    "title": "Ekstraksiya va unga ta’sir qiluvchi omillar",
    "group": "g3",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-16-toks-ekstraksiya"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-61-toks-lab-ekstraksiya"
+    },
     {
      "k": "method",
      "v": "method-lle"
@@ -193,8 +291,20 @@
    "n": 16,
    "title": "Sud-kimyo ekspertiza va kimyo-toksikologik tekshiruvlarda ob’ektlarni tahlilga tayyorlash (zaharlarni suv bug‘i yordamida haydash, nordon sharoitda qutbli erituvchilar yordamida bo‘ktirish, organik erituvchilar bilan ekstraksiyalash va biologik ob’ektni mineralizatsiyalash usullarida ajratib olish)",
    "group": "g3",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-05-toks-suv-bugi-sianid"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-17-toks-qutbli-erituvchilar"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-09-toks-mineralizatsiya"
+    },
     {
      "k": "method",
      "v": "method-lle"
@@ -214,8 +324,16 @@
    "n": 17,
    "title": "Olingan ajralmalarni oqsil moddalardan tozalash",
    "group": "g3",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-16-toks-ekstraksiya"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-61-toks-lab-ekstraksiya"
+    },
     {
      "k": "method",
      "v": "method-protein-precipitation"
@@ -227,8 +345,12 @@
    "n": 18,
    "title": "Tahlilda qo‘llaniladigan uslublar, ularga qo‘yiladigan talablar",
    "group": "g4",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-45-toks-instrumental"
+    },
     {
      "k": "knowledge",
      "v": "method"
@@ -242,6 +364,10 @@
    "group": "g4",
    "status": "partial",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-20-toks-alkaloid-indol"
+    },
     {
      "k": "knowledge",
      "v": "reagent"
@@ -259,6 +385,14 @@
    "group": "g4",
    "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-45-toks-instrumental"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-64-toks-lab-indol"
+    },
     {
      "k": "lab",
      "v": "spectro"
@@ -278,8 +412,16 @@
    "n": 21,
    "title": "Ajratib olingan moddalarni identifikatsiya qilish va ularning miqdorini aniqlashda fotokolorimetriya usulini qo‘llash",
    "group": "g4",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-45-toks-instrumental"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-68-toks-lab-novokain"
+    },
     {
      "k": "lab",
      "v": "spectro"
@@ -304,8 +446,16 @@
    "n": 23,
    "title": "Ajratib olingan moddalarni identifikatsiya qilish va ularning miqdorini aniqlashda xromatografiya usullarini qo‘llash (yupqa qatlam xromatografiyasi, gaz suyuqlik xromatografiyasi, yuqori samarali suyuqlik xromatografiyasi va b.)",
    "group": "g4",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-45-toks-instrumental"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-53-toks-lab-spirt-gsx"
+    },
     {
      "k": "method",
      "v": "method-tlc"
@@ -342,8 +492,12 @@
    "n": 25,
    "title": "Ajratib olingan moddalarni identifikatsiya qilish va ularning miqdorini aniqlashda immunokimyoviy va immunoferment usullarini qo‘llash",
    "group": "g4",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-15-toks-sud-biokimyo"
+    },
     {
      "k": "method",
      "v": "method-immunoassay"
@@ -357,6 +511,10 @@
    "group": "g4",
    "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "instr-03-gcms-asoslar"
+    },
     {
      "k": "lab",
      "v": "chromatography"
@@ -409,8 +567,20 @@
    "n": 29,
    "title": "Uchuvchi zaharlari identifikatsiya qilish va miqdor tahlili",
    "group": "g6",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-05-toks-suv-bugi-sianid"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-06-toks-ikkinchi-distillat"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-07-toks-alkilgalogenidlar"
+    },
     {
      "k": "substances",
      "v": "alcohols_volatiles"
@@ -426,8 +596,20 @@
    "n": 30,
    "title": "Spirtlarni identifikatsiya qilish va miqdor tahlili",
    "group": "g6",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-08-toks-spirtlar"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-52-toks-lab-spirt-kimyo"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-53-toks-lab-spirt-gsx"
+    },
     {
      "k": "substances",
      "v": "alcohols_volatiles"
@@ -443,8 +625,16 @@
    "n": 31,
    "title": "1,4-benzodiazepinlarni identifikatsiya qilish va miqdor tahlili",
    "group": "g5",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-29-toks-benzodiazepin"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-77-toks-lab-benzodiazepin"
+    },
     {
      "k": "substances",
      "v": "benzodiazepines"
@@ -458,6 +648,14 @@
    "group": "g5",
    "status": "partial",
    "links": [
+    {
+     "k": "lesson",
+     "v": "sud-toks-07"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-26-toks-barbiturat-1"
+    },
     {
      "k": "substances",
      "v": "sedatives_hypnotics"
@@ -473,8 +671,20 @@
    "n": 33,
    "title": "Opiodlar va opiatlarni identifikatsiya qilish va miqdor tahlili",
    "group": "g5",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-31-toks-opiy-morfin"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-32-toks-yarimsintetik-opiat"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-33-toks-sintetik-opioid"
+    },
     {
      "k": "substances",
      "v": "opioids"
@@ -486,8 +696,12 @@
    "n": 34,
    "title": "Kokainni identifikatsiya qilish va miqdor tahlili",
    "group": "g5",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-34-toks-kokain"
+    },
     {
      "k": "substances",
      "v": "stimulants"
@@ -499,8 +713,16 @@
    "n": 35,
    "title": "Kannabisni (nasha) identifikatsiya qilish va miqdor tahlili",
    "group": "g5",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-35-toks-kannabinoid"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-80-toks-lab-kannabis"
+    },
     {
      "k": "substances",
      "v": "cannabinoids"
@@ -515,6 +737,10 @@
    "status": "partial",
    "links": [
     {
+     "k": "lesson",
+     "v": "sud-toks-08"
+    },
+    {
      "k": "substances",
      "v": "cannabinoids"
     }
@@ -525,8 +751,16 @@
    "n": 37,
    "title": "Amfetaminlarni identifikatsiya qilish va miqdor tahlili",
    "group": "g5",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-37-toks-fenilalkilamin-sintetik"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-81-toks-lab-fenilalkilamin-prekursor"
+    },
     {
      "k": "substances",
      "v": "stimulants"
@@ -538,8 +772,16 @@
    "n": 38,
    "title": "Giyohvandlik vositalarini identifikatsiya qilish va miqdor tahlili",
    "group": "g5",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-30-toks-gv-umumiy"
+    },
+    {
+     "k": "lesson",
+     "v": "sud-toks-08"
+    },
     {
      "k": "substances",
      "v": "opioids"
@@ -559,8 +801,20 @@
    "n": 39,
    "title": "Barbitur kislota hosilalarini identifikatsiya qilish va miqdor tahlili",
    "group": "g5",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-26-toks-barbiturat-1"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-27-toks-barbiturat-2"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-76-toks-lab-barbiturat"
+    },
     {
      "k": "substances",
      "v": "barbiturates"
@@ -572,8 +826,12 @@
    "n": 40,
    "title": "Gallyusinogenlar va psixodeliklarni identifikatsiya qilish va miqdor tahlili",
    "group": "g5",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-38-toks-gallyusinogen"
+    },
     {
      "k": "substances",
      "v": "hallucinogens_dissociatives"
@@ -585,8 +843,16 @@
    "n": 41,
    "title": "Antidepressantlarni identifikatsiya qilish va miqdor tahlili",
    "group": "g5",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-25-toks-antidepressant-diuretik"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-71-toks-lab-antidepressant"
+    },
     {
      "k": "substances",
      "v": "antidepressants"
@@ -598,8 +864,16 @@
    "n": 42,
    "title": "Neyroleptiklarni identifikatsiya qilish va miqdor tahlili",
    "group": "g5",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-28-toks-fenotiazin"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-78-toks-lab-fenotiazin"
+    },
     {
      "k": "substances",
      "v": "antipsychotics"
@@ -613,6 +887,14 @@
    "group": "g5",
    "status": "partial",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-30-toks-gv-umumiy"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-26-toks-barbiturat-1"
+    },
     {
      "k": "substances",
      "v": "antidepressants"
@@ -636,8 +918,20 @@
    "n": 44,
    "title": "Dori vositalarni identifikatsiya qilish va miqdor tahlili",
    "group": "g5",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-18-toks-fenatsetin-salitsilat"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-24-toks-azotli-sintetik"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-69-toks-lab-nsaid"
+    },
     {
      "k": "substances",
      "v": "pharmaceuticals"
@@ -649,8 +943,20 @@
    "n": 45,
    "title": "Is gazi va metanni identifikatsiya qilish va miqdor tahlili",
    "group": "g6",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-14-toks-is-gazi"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-59-toks-lab-cohb"
+    },
+    {
+     "k": "lesson",
+     "v": "sud-toks-05"
+    },
     {
      "k": "substances",
      "v": "toxic_gases"
@@ -679,8 +985,20 @@
    "n": 47,
    "title": "Metall zaharlarni identifikatsiya qilish va miqdor tahlili",
    "group": "g6",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-09-toks-mineralizatsiya"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-13-toks-as-hg"
+    },
+    {
+     "k": "lesson",
+     "v": "sud-toks-04"
+    },
     {
      "k": "substances",
      "v": "metals_inorganic"
@@ -724,16 +1042,37 @@
    "n": 52,
    "title": "Alkaloidlarni identifikatsiya qilish va miqdorini aniqlash",
    "group": "g6",
-   "status": "preparing",
-   "links": []
+   "status": "available",
+   "links": [
+    {
+     "k": "lesson",
+     "v": "toks-20-toks-alkaloid-indol"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-22-toks-piridin-piperidin"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-23-toks-tropan-xinolin"
+    }
+   ]
   },
   {
    "id": "tk-53",
    "n": 53,
    "title": "Fosfororganik pestitsidlar va ularning tahlili",
    "group": "g7",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-42-toks-pestitsid-fob"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-73-toks-lab-fob"
+    },
     {
      "k": "substances",
      "v": "pesticides"
@@ -745,8 +1084,12 @@
    "n": 54,
    "title": "Karbamin va tiokarbamin hosilasiga mansub moddalar va ularning tahlili",
    "group": "g7",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-42-toks-pestitsid-fob"
+    },
     {
      "k": "substances",
      "v": "pesticides"
@@ -758,8 +1101,16 @@
    "n": 55,
    "title": "Xlororganik moddalar, ularni ob’ektlardan ajratib olish va tahlili",
    "group": "g7",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-42-toks-pestitsid-fob"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-73-toks-lab-fob"
+    },
     {
      "k": "substances",
      "v": "pesticides"
@@ -771,8 +1122,16 @@
    "n": 56,
    "title": "Sintetik piretroidlarga oid pestitsidlar, ularni suyuqliklar va bioob’ektlardan ajratib olish va tahlili",
    "group": "g7",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-43-toks-piretroid"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-74-toks-lab-piretroid"
+    },
     {
      "k": "substances",
      "v": "pesticides"
@@ -784,8 +1143,16 @@
    "n": 57,
    "title": "Pestitsidlarning tahlili",
    "group": "g7",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-42-toks-pestitsid-fob"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-73-toks-lab-fob"
+    },
     {
      "k": "substances",
      "v": "pesticides"
@@ -801,8 +1168,21 @@
    "n": 58,
    "title": "Prekursorlar. Giyohvandlik vositalari va psixotrop moddalar sintezidagi ahamiyati va tahlili",
    "group": "g7",
-   "status": "preparing",
-   "links": []
+   "status": "available",
+   "links": [
+    {
+     "k": "lesson",
+     "v": "toks-39-toks-prekursor-1"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-40-toks-prekursor-2"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-81-toks-lab-fenilalkilamin-prekursor"
+    }
+   ]
   },
   {
    "id": "tk-59",
@@ -841,8 +1221,16 @@
    "n": 63,
    "title": "O‘zbekiston Respublikasi kodekslari, Qonunlari, O‘zbekiston Respublikasi Prezidenti Farmon va qarorlari",
    "group": "g1",
-   "status": "partial",
+   "status": "available",
    "links": [
+    {
+     "k": "lesson",
+     "v": "toks-03-toks-meyoriy-hujjatlar"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-30-toks-gv-umumiy"
+    },
     {
      "k": "jurisdictions",
      "v": null
@@ -855,8 +1243,17 @@
    "n": 64,
    "title": "O‘zbekiston Respublikasi Sud-tibbiy ekspertizasi faoliyatini tashkil etish tamoyillari, O‘zbekiston Respublikasi Vazirlar Mahkamasining qarorlari, O‘zbekiston Respublikasi Sog‘liqni saqlash vaziri buyrug‘i",
    "group": "g1",
-   "status": "preparing",
-   "links": [],
+   "status": "available",
+   "links": [
+    {
+     "k": "lesson",
+     "v": "toks-03-toks-meyoriy-hujjatlar"
+    },
+    {
+     "k": "lesson",
+     "v": "toks-02-toks-sud-kimyo-ekspertizasi"
+    }
+   ],
    "added_from": "ma'ruza rejasi (surat)"
   }
  ]

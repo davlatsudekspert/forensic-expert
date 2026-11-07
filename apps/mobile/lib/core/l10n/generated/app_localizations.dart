@@ -24692,6 +24692,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Plain-text table'**
   String get resultsExportCsvBody;
+
+  /// Program topic sheet: section with the matching lectures.
+  ///
+  /// In en, this message translates to:
+  /// **'Lectures: slides and test'**
+  String get progLectures;
+
+  /// Program topic chip: number of matching lectures.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 lecture} other{{count} lectures}}'**
+  String progLectureCount(int count);
+
+  /// Discipline page: open the lessons list of one course.
+  ///
+  /// In en, this message translates to:
+  /// **'Lessons list'**
+  String get disciplineCourseList;
 }
 
 class _AppLocalizationsDelegate

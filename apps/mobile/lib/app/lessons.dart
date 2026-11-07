@@ -8,6 +8,7 @@ import '../data/lessons/fake_lessons_service.dart';
 import '../data/lessons/narration_overlay.dart';
 import '../domain/class_quiz/class_quiz_models.dart' show ClassResult;
 import '../domain/lessons/lesson_models.dart';
+import '../domain/lessons/lesson_taxonomy.dart';
 import '../domain/ports/lessons_ports.dart';
 import 'class_quiz.dart';
 
@@ -32,14 +33,17 @@ final lessonListProvider = FutureProvider.autoDispose
           .list(query: query.isEmpty ? null : query);
       final items = res.value;
       if (items == null) return res;
-      // Rejimlar aralashmaydi: Ustoz — ustoz darslari; Mutaxassis — faqat
-      // «Apparatlar bilan ishlash»; Talaba — hamma mavzu (o‘qish, tinglash,
+      // Rejimlar aralashmaydi: Ustoz — ustoz darslari; Mutaxassis —
+      // «Apparatlar bilan ishlash» va Sud-kimyoviy ekspertiza ma’ruzalari
+      // (Toksikologik kimyo, Sud-tibbiy toksikologiya; egasi, 2026-11-07);
+      // Talaba — hamma mavzu (o‘qish, tinglash,
       // o‘zi test yechish; egasi so‘rovi, 2026-11-02).
       return ClassResult.ok([
         for (final s in items)
           if (switch (mode) {
             UserMode.teacher => s.course != openLessonCourse,
-            UserMode.professional => s.course == openLessonCourse,
+            UserMode.professional =>
+              LessonTaxonomy.professionalCourses.contains(s.course),
             UserMode.student => true,
             _ => false,
           })

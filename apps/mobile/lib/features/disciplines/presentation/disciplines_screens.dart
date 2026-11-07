@@ -17,12 +17,14 @@ import '../../../core/settings/settings_controller.dart'
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
 import '../../../domain/lessons/lesson_models.dart';
+import '../../../domain/lessons/lesson_taxonomy.dart';
 import '../../../domain/library/library_models.dart';
 import '../../../domain/plan/plan_models.dart' show ProFeature;
 import '../../class_quiz/presentation/teacher_panel_screen.dart'
     show watchIsTeacher;
 import '../../home/presentation/home_screen.dart' show HomeModule;
 import '../../knowledge/knowledge_strings.dart';
+import '../../lessons/presentation/lessons_list_screen.dart' show courseLabel;
 import '../../pro/presentation/pro_gate.dart' show openPro;
 import '../discipline_strings.dart';
 
@@ -488,16 +490,38 @@ class _NextStepTile extends StatelessWidget {
 /// tanlaganda shu fan prezentatsiyalari va har dars ostida «Guruh testi».
 /// Kurs nomlari — server seed’idagi (tools/lessons/build_lessons_seed.py)
 /// o‘zbekcha nomlar; toksikologiya kurslari ro‘yxati, qolgani — sud tibbiyoti.
-const _toxicologyCourses = {'Toksikologik kimyo', 'Apparatlar bilan ishlash'};
+/// «Sud-tibbiy toksikologiya» (sud tibbiyoti ichki bobi) ikkala sahifada:
+/// Sud-kimyoviy ekspertizada ham (egasi, 2026-11-07). Tartib — shu ro‘yxat.
+const _toxicologyCourses = [
+  LessonTaxonomy.toxChem,
+  LessonTaxonomy.forensicToxChapter,
+  LessonTaxonomy.devices,
+];
 
 bool lessonCourseInDiscipline(String course, ForensicDiscipline d) {
   final tox = _toxicologyCourses.contains(course);
   return switch (d) {
     ForensicDiscipline.forensicToxicology ||
     ForensicDiscipline.forensicChemistry => tox,
-    ForensicDiscipline.forensicMedicine => !tox,
+    ForensicDiscipline.forensicMedicine =>
+      !tox || course == LessonTaxonomy.forensicToxChapter,
     _ => false,
   };
+}
+
+/// Kurslar tartibi: toksikologiya sahifasida — Toksikologik kimyo, Sud-tibbiy
+/// toksikologiya, Apparatlar; boshqa kurslar server tartibida.
+List<LessonGroup> _orderedGroups(List<LessonGroup> groups) {
+  int rank(LessonGroup g) {
+    final i = _toxicologyCourses.indexOf(g.course);
+    return i < 0 ? _toxicologyCourses.length : i;
+  }
+
+  final idx = {for (var i = 0; i < groups.length; i++) groups[i]: i};
+  return [...groups]..sort((a, b) {
+    final c = rank(a).compareTo(rank(b));
+    return c != 0 ? c : idx[a]!.compareTo(idx[b]!);
+  });
 }
 
 /// Modul sahifasi (Toksikologiya) uchun shu «Darslar» bo‘limi.
@@ -560,6 +584,7 @@ List<Widget> _lessonsSection(
       ),
     ];
   }
+  final tox = d != ForensicDiscipline.forensicMedicine;
   final groups = LessonGrouping.group(items);
   return [
     FeSectionHeader(
@@ -572,7 +597,7 @@ List<Widget> _lessonsSection(
       key: const Key('discipline.lessonsBody'),
       style: t.bodySmall?.copyWith(color: c.textSecondary),
     ),
-    for (final g in groups)
+    for (final g in tox ? _orderedGroups(groups) : groups)
       _CourseLessons(
         key: Key('discipline.course.${g.course}'),
         group: g,
@@ -633,7 +658,7 @@ class _CourseLessonsState extends State<_CourseLessons> {
           child: Semantics(
             header: true,
             child: Text(
-              '${widget.group.course} · ${all.length}',
+              '${courseLabel(l, widget.group.course)} · ${all.length}',
               style: t.titleSmall?.copyWith(color: c.accent),
             ),
           ),
@@ -675,16 +700,26 @@ class _CourseLessonsState extends State<_CourseLessons> {
               }
             },
           ),
-        if (rest > 0)
-          Align(
-            alignment: AlignmentDirectional.centerStart,
-            child: TextButton.icon(
-              key: Key('discipline.lessonsMore.${widget.group.course}'),
-              onPressed: () => setState(() => _expanded = true),
-              icon: const Icon(Icons.expand_more_rounded),
-              label: Text(l.disciplineLessonsMore(rest)),
+        Wrap(
+          spacing: FeSpace.xs,
+          children: [
+            if (rest > 0)
+              TextButton.icon(
+                key: Key('discipline.lessonsMore.${widget.group.course}'),
+                onPressed: () => setState(() => _expanded = true),
+                icon: const Icon(Icons.expand_more_rounded),
+                label: Text(l.disciplineLessonsMore(rest)),
+              ),
+            // Shu kursning to‘liq «Darslar» ro‘yxati (qidiruv bilan).
+            TextButton.icon(
+              key: Key('discipline.courseList.${widget.group.course}'),
+              onPressed: () =>
+                  context.push(Routes.lessonsCourse(widget.group.course)),
+              icon: const Icon(Icons.list_alt_rounded),
+              label: Text(l.disciplineCourseList),
             ),
-          ),
+          ],
+        ),
       ],
     );
   }

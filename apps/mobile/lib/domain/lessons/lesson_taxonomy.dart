@@ -41,6 +41,10 @@ abstract final class LessonTaxonomy {
   static const toxChem = 'Toksikologik kimyo';
   static const devices = 'Apparatlar bilan ishlash';
 
+  /// Mutaxassis rejimidagi kurslar: «Apparatlar bilan ishlash» va
+  /// Sud-kimyoviy ekspertiza ma’ruzalari (egasi, 2026-11-07).
+  static const professionalCourses = {toxChem, forensicToxChapter, devices};
+
   static const subjects = <LessonSubject>[
     // Bioetika — Sud tibbiyoti ichida, birinchi bo‘lim (egasi, 2026-11-07:
     // darsliklarda, jumladan G‘iyosov kitobida ham shu tartib).

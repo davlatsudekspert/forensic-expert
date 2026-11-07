@@ -11,8 +11,11 @@ enum ProgramTopicStatus { available, partial, preparing }
 class ProgramLink {
   const ProgramLink(this.kind, this.value);
 
-  /// `method` | `substances` | `lab` | `tool` | `equipment` | `knowledge`.
+  /// `method` | `substances` | `lab` | `tool` | `equipment` | `knowledge` |
+  /// `jurisdictions` | `lesson` (ma’ruza `topicId`: toks-NN, sud-toks-NN).
   final String kind;
+
+  bool get isLesson => kind == 'lesson';
   final String? value;
 }
 
@@ -37,6 +40,12 @@ class ProgramTopic {
   final String groupId;
   final ProgramTopicStatus status;
   final List<ProgramLink> links;
+
+  /// Mavzuga mos ma’ruzalar (`topicId`), dastur tartibida.
+  List<String> get lessonIds => [
+    for (final l in links)
+      if (l.isLesson && l.value != null) l.value!,
+  ];
 }
 
 class Program {
