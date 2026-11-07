@@ -4,12 +4,12 @@
 
 ## 1. Umumiy natija
 
-- Paketdagi moddalar: **140**.
-- Kamida 1 ta **mahalliy (GC-MS/LC-MS/MS talab qilmaydigan)** usuli manba va aniq joyi bilan hujjatlashtirilgan moddalar: **56**.
-- Kamida 3 xil usul oilasi hujjatlashtirilgan: **27** ta modda (amitriptyline, amphetamine, butalbital, chlorpromazine, cocaine, codeine, diazepam, diphenhydramine, ephedrine, fentanyl, haloperidol, heroin, ibuprofen, ketamine, lsd, mda, mdea, mdma, methadone, methamphetamine, morphine, oxazepam, pentobarbital, phenazepam, phenobarbital, salicylic-acid, secobarbital).
-- Yangi yozuvlar (claim): **435** (shundan 60 tasi — modda bo‘yicha umumiy «identifikatsiya usullari» xulosasi).
-- Usul oilalari bo‘yicha yozuvlar: 3 caveat, 17 chemical, 129 colour_test, 3 immunoassay, 37 instrumental, 37 isolation, 26 microcrystal, 3 odour_test, 9 photometric, 5 physical, 5 spectroscopy, 63 tlc, 36 uv_spectrum.
-- Hujjatlashtirilmagan moddalar: **84** (4-bo‘lim).
+- Paketdagi moddalar: **156**.
+- Kamida 1 ta **mahalliy (GC-MS/LC-MS/MS talab qilmaydigan)** usuli manba va aniq joyi bilan hujjatlashtirilgan moddalar: **66**.
+- Kamida 3 xil usul oilasi hujjatlashtirilgan: **37** ta modda (amitriptyline, amobarbital, amphetamine, barbital, butalbital, butobarbital, chlordiazepoxide, chlorpromazine, cocaine, codeine, diazepam, diphenhydramine, ephedrine, ergometrine, ergotamine, fentanyl, haloperidol, heroin, hexobarbital, ibuprofen, ketamine, levomepromazine, lsd, mda, mdea, mdma, methadone, methamphetamine, morphine, nitrazepam, oxazepam, pentobarbital, phenazepam, phenobarbital, promethazine, salicylic-acid, secobarbital).
+- Yangi yozuvlar (claim): **572** (shundan 76 tasi — modda bo‘yicha umumiy «identifikatsiya usullari» xulosasi).
+- Usul oilalari bo‘yicha yozuvlar: 3 caveat, 18 chemical, 154 colour_test, 3 immunoassay, 51 instrumental, 69 isolation, 37 microcrystal, 3 odour_test, 16 photometric, 5 physical, 9 spectroscopy, 75 tlc, 51 uv_spectrum.
+- Hujjatlashtirilmagan moddalar: **90** (4-bo‘lim).
 
 ## 2. Manbalar (faqat ruxsat etilganlari)
 
@@ -33,35 +33,49 @@ Har bir yozuvda: matn (uz/ru/en), manba, aniq joyi (`value.locator_i18n` — uch
 | Modda | Guruh | rang | hid | kimyo | TLC | kristall | UB | foto | spektr. | t.suyuq. | immuno | instr. | ajratish | Manbalar | Adabiyotdagi instr. havolalar |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 6-mam | opioids |  |  |  |  |  |  |  |  |  | 1 | 1 |  | GMT-2024 | 1 |
+| acetamiprid | pesticides |  |  |  |  |  |  |  |  |  |  |  | 3 | AJRATISH-2024 |  |
 | acetone | alcohols_volatiles |  |  | 1 |  |  | 1 |  |  |  |  | 2 |  | NARK-II-2023, TOKS-2025 | 2 |
 | amitriptyline | antidepressants | 1 |  |  | 1 | 1 | 1 |  |  |  |  | 1 |  | TOKS-2025 | 2 |
 | ammonia | toxic_gases |  |  |  |  |  |  |  |  |  |  |  | 1 | AJRATISH-2024 |  |
+| amobarbital | barbiturates | 1 |  |  | 2 | 2 | 1 | 1 |  |  |  | 2 | 3 | AJRATISH-2024, NARK-II-2023, YUSSX-2023 |  |
 | amphetamine | stimulants | 4 |  |  | 1 |  | 1 |  |  |  |  | 2 |  | GMT-2024, UNODC-13, YUSSX-2023 | 1 |
 | arsenic-trioxide | metals_inorganic |  |  | 1 |  |  |  |  |  |  |  |  | 1 | AJRATISH-2024, TOKS-2025 | 1 |
+| barbital | barbiturates | 1 |  |  | 1 | 2 | 1 | 1 |  |  |  | 2 | 3 | AJRATISH-2024, NARK-II-2023, YUSSX-2023 |  |
+| benzobarbital | barbiturates |  |  |  |  |  |  |  |  |  |  |  | 1 | AJRATISH-2024 |  |
 | benzoylecgonine | stimulants |  |  |  | 1 |  |  |  |  |  |  |  |  | GMT-2024 |  |
 | butalbital | barbiturates | 5 |  |  | 2 | 2 | 1 |  |  |  |  | 2 | 3 | AJRATISH-2024, GMT-2024, NARK-II-2023, UNODC-13, YUSSX-2023 |  |
+| butobarbital | barbiturates | 1 |  |  | 1 | 2 | 1 |  |  |  |  | 1 | 3 | AJRATISH-2024, NARK-II-2023, YUSSX-2023 |  |
 | carbon-monoxide | toxic_gases |  |  |  |  |  |  | 1 | 1 |  |  |  |  | AJRATISH-2024, TOKS-2025 | 1 |
 | cbd | cannabinoids | 3 |  |  | 2 |  |  |  |  |  |  |  |  | GMT-2024, SWGDRUG | 1 |
+| chlordiazepoxide | benzodiazepines | 6 |  |  | 2 | 1 | 3 |  | 1 |  |  | 2 | 3 | NARK-II-2023, YUSSX-2023 |  |
 | chloroform | alcohols_volatiles |  |  | 1 |  |  |  |  |  |  |  |  | 1 | AJRATISH-2024, TOKS-2025 | 3 |
 | chlorpromazine | antipsychotics | 12 |  |  | 2 | 2 | 2 | 1 | 1 |  |  | 1 | 1 | GMT-2024, NARK-II-2023, YUSSX-2023 | 1 |
 | chlorpyrifos | pesticides |  |  | 1 | 1 |  |  |  |  |  |  |  |  | TOKS-2025 |  |
 | cocaine | stimulants | 3 | 1 |  | 1 | 1 | 1 |  |  |  |  | 1 | 1 | AJRATISH-2024, GMT-2024, UNODC-13 |  |
 | codeine | opioids | 6 |  |  | 4 | 1 | 1 |  |  | 1 |  | 1 | 1 | AJRATISH-2024, GMT-2024, UNODC-13 |  |
+| cypermethrin | pesticides |  |  |  |  |  |  |  |  |  |  |  | 1 | AJRATISH-2024 |  |
+| deltamethrin | pesticides |  |  |  |  |  |  |  |  |  |  |  | 1 | AJRATISH-2024 |  |
 | diazepam | benzodiazepines | 5 |  |  | 3 | 2 | 2 | 1 | 1 |  |  | 2 | 3 | GMT-2024, NARK-II-2023, UNODC-13, YUSSX-2023 | 1 |
 | diazinon | pesticides |  |  | 1 | 1 |  |  |  |  |  |  |  |  | TOKS-2025 | 2 |
 | diphenhydramine | pharmaceuticals | 4 |  |  | 1 |  | 1 |  |  |  |  |  |  | TOKS-2025 | 1 |
 | doxepin | antidepressants |  |  |  |  |  |  |  |  |  |  | 1 |  | TOKS-2025 |  |
 | ephedrine | stimulants | 3 |  |  | 2 | 1 | 1 |  |  |  |  |  |  | GMT-2024 | 1 |
+| ergometrine | pharmaceuticals | 1 |  |  | 1 |  | 1 | 2 |  |  |  | 1 | 2 | AJRATISH-2024, GMT-2024, NARK-II-2023 |  |
+| ergotamine | pharmaceuticals | 1 |  |  | 1 |  | 1 | 2 |  |  |  | 1 | 2 | AJRATISH-2024, GMT-2024, NARK-II-2023 |  |
 | ethanol | alcohols_volatiles |  |  | 1 |  |  |  |  |  |  |  | 1 |  | TOKS-2025 | 3 |
+| fenpropathrin | pesticides |  |  |  |  |  |  |  |  |  |  |  | 1 | AJRATISH-2024 |  |
 | fentanyl | opioids | 2 |  |  | 1 |  | 1 |  |  |  |  | 1 |  | GMT-2024 | 1 |
 | fluoxetine | antidepressants |  |  |  | 1 |  |  |  |  |  |  |  |  | TOKS-2025 | 1 |
 | haloperidol | antipsychotics | 3 |  |  | 1 |  | 1 |  |  |  |  |  |  | GMT-2024 | 1 |
 | heroin | opioids | 6 | 1 |  | 3 | 1 | 1 |  |  | 1 | 1 | 1 | 1 | AJRATISH-2024, GMT-2024, UNODC-13 | 2 |
+| hexobarbital | barbiturates | 1 |  |  |  | 2 | 1 | 1 |  |  |  | 1 | 3 | AJRATISH-2024, NARK-II-2023, YUSSX-2023 |  |
 | hydrogen-cyanide | toxic_gases |  |  | 1 |  |  |  |  |  |  |  |  | 1 | AJRATISH-2024, TOKS-2025 | 1 |
 | hydrogen-sulfide | toxic_gases |  |  | 2 |  |  |  |  |  |  |  |  |  | AJRATISH-2024, TOKS-2025 | 1 |
 | ibuprofen | pharmaceuticals | 1 |  |  | 1 |  | 1 |  |  | 1 |  |  |  | TOKS-2025 |  |
+| imidacloprid | pesticides |  |  |  |  |  |  |  |  |  |  |  | 3 | AJRATISH-2024 |  |
 | imipramine | antidepressants |  |  |  |  |  |  |  |  |  |  | 1 |  | TOKS-2025 | 1 |
 | ketamine | hallucinogens_dissociatives | 2 |  |  | 2 | 1 | 2 | 1 |  |  |  | 2 | 2 | GMT-2024, KET-2023 | 1 |
+| levomepromazine | antipsychotics | 4 |  |  | 1 |  | 2 |  | 1 |  |  | 1 |  | NARK-II-2023, YUSSX-2023 |  |
 | lidocaine | pharmaceuticals |  |  |  |  | 1 |  |  |  |  |  |  |  | TOKS-2025 | 1 |
 | lorazepam | benzodiazepines | 1 |  |  |  |  |  |  |  |  |  |  |  | UNODC-13 | 1 |
 | lsd | hallucinogens_dissociatives | 3 |  |  | 1 |  | 1 |  |  |  |  |  |  | GMT-2024, UNODC-13 | 1 |
@@ -76,6 +90,7 @@ Har bir yozuvda: matn (uz/ru/en), manba, aniq joyi (`value.locator_i18n` — uch
 | midazolam | benzodiazepines | 1 |  |  |  |  |  |  |  |  |  |  |  | UNODC-13 | 1 |
 | mirtazapine | antidepressants |  |  |  | 1 |  | 1 |  |  |  |  |  |  | TOKS-2025 |  |
 | morphine | opioids | 7 |  |  | 4 | 2 | 1 | 1 |  |  | 1 | 2 | 1 | AJRATISH-2024, GMT-2024, UNODC-13 | 1 |
+| nitrazepam | benzodiazepines | 2 |  |  | 2 | 2 | 2 |  | 1 |  |  | 2 | 3 | NARK-II-2023, YUSSX-2023 |  |
 | nortriptyline | antidepressants |  |  |  | 1 | 1 |  |  |  |  |  | 1 |  | TOKS-2025 | 1 |
 | oxazepam | benzodiazepines | 3 |  |  | 3 | 1 | 1 | 1 | 1 |  |  | 2 | 3 | GMT-2024, NARK-II-2023, UNODC-13, YUSSX-2023 |  |
 | parathion | pesticides |  |  | 1 | 1 |  |  |  |  |  |  |  |  | TOKS-2025 |  |
@@ -84,6 +99,7 @@ Har bir yozuvda: matn (uz/ru/en), manba, aniq joyi (`value.locator_i18n` — uch
 | phenazepam | benzodiazepines | 2 |  |  | 4 | 1 | 2 | 1 | 1 | 1 |  |  | 2 | GMT-2024, NARK-II-2023 |  |
 | phenobarbital | barbiturates | 5 |  |  | 2 | 3 | 2 | 1 |  | 1 |  | 3 | 3 | AJRATISH-2024, GMT-2024, NARK-II-2023, UNODC-13, YUSSX-2023 | 1 |
 | phosphine | toxic_gases |  |  | 1 |  |  |  |  |  |  |  |  |  | TOKS-2025 |  |
+| promethazine | pharmaceuticals | 7 |  | 1 | 1 |  | 2 |  | 1 |  |  | 1 |  | NARK-II-2023, YUSSX-2023 |  |
 | psilocybin | hallucinogens_dissociatives |  |  |  |  |  | 1 |  |  |  |  |  |  | GMT-2024 | 1 |
 | salicylic-acid | pharmaceuticals | 3 | 1 |  |  |  | 1 |  |  |  |  |  |  | TOKS-2025 |  |
 | secobarbital | barbiturates | 5 |  |  | 2 | 2 | 1 |  |  |  |  | 2 | 3 | AJRATISH-2024, GMT-2024, NARK-II-2023, UNODC-13, YUSSX-2023 |  |
@@ -104,12 +120,13 @@ Bu moddalar uchun ruxsat etilgan manbalarda (yuqoridagi 4 ta) aniq joyi bilan ma
 - **anticonvulsants** (6): carbamazepine, gabapentin, lamotrigine, phenytoin, pregabalin, valproic-acid
 - **antidepressants** (6): bupropion, citalopram, doxepin, imipramine, sertraline, trazodone
 - **antipsychotics** (4): clozapine, olanzapine, quetiapine, risperidone
+- **barbiturates** (1): benzobarbital
 - **benzodiazepines** (9): 7-aminoclonazepam, alprazolam, bromazolam, clonazepam, etizolam, flualprazolam, flunitrazepam, nordiazepam, temazepam
 - **cannabinoids** (5): 11-oh-thc, adb-butinaca, jwh-018, mdmb-4en-pinaca, thc-cooh
 - **hallucinogens_dissociatives** (2): 2c-b, ghb
 - **metals_inorganic** (1): mercury
 - **opioids** (21): acetylfentanyl, alfentanil, buprenorphine, carfentanil, dextromethorphan, etonitazene, etonitazepyne, furanylfentanyl, hydrocodone, hydromorphone, isotonitazene, loperamide, metonitazene, mitragynine, norfentanyl, oxycodone, oxymorphone, protonitazene, sufentanil, tapentadol, tramadol
-- **pesticides** (6): aldicarb, aluminium-phosphide, brodifacoum, carbofuran, glyphosate, paraquat
+- **pesticides** (11): acetamiprid, aldicarb, aluminium-phosphide, brodifacoum, carbofuran, cypermethrin, deltamethrin, fenpropathrin, glyphosate, imidacloprid, paraquat
 - **pharmaceuticals** (6): colchicine, digoxin, metformin, paracetamol, propranolol, verapamil
 - **sedatives_hypnotics** (2): zolpidem, zopiclone
 - **stimulants** (6): alpha-pvp, cathinone, cocaethylene, mdpv, mephedrone, methylphenidate

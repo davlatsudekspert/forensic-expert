@@ -43,6 +43,7 @@ import substance_methods_data3  # noqa: E402,F401
 import substance_methods_data4  # noqa: E402,F401
 import substance_methods_data5  # noqa: E402,F401
 import substance_methods_data6  # noqa: E402,F401
+import substance_methods_data7  # noqa: E402,F401
 from sm_core import SRC, loc as _loc  # noqa: E402
 from sm_vocab import FAMILY_LABEL, LANGS  # noqa: E402
 from substance_methods_data import E  # noqa: E402
