@@ -12684,4 +12684,34 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   @override
   String get areaBiologyDna => toUzNewAlphabet(super.areaBiologyDna);
 
+  @override
+  String get legalNormsTitle => toUzNewAlphabet(super.legalNormsTitle);
+
+  @override
+  String get legalNormsBody => toUzNewAlphabet(super.legalNormsBody);
+
+  @override
+  String get legalNormsReview => toUzNewAlphabet(super.legalNormsReview);
+
+  @override
+  String get legalNormsLangNote => toUzNewAlphabet(super.legalNormsLangNote);
+
+  @override
+  String get legalNormsNone => toUzNewAlphabet(super.legalNormsNone);
+
+  @override
+  String get legalStatusNotYet => toUzNewAlphabet(super.legalStatusNotYet);
+
+  @override
+  String legalNormArticle(String article) =>
+      toUzNewAlphabet(super.legalNormArticle(article));
+
+  @override
+  String legalInForceFrom(String date) =>
+      toUzNewAlphabet(super.legalInForceFrom(date));
+
+  @override
+  String legalInForceUntil(String date) =>
+      toUzNewAlphabet(super.legalInForceUntil(date));
+
 }

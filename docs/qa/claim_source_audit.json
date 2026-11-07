@@ -300,7 +300,7 @@
    "journal_article/tier2/B": 236,
    "journal_article/tier2/C": 69,
    "journal_article/tier2/D": 32,
-   "legislation/tier1/A": 8,
+   "legislation/tier1/A": 12,
    "report/tier3/C": 1,
    "report/tier3/E": 1
   },
@@ -565,6 +565,42 @@
     "level": "A",
     "type": "legislation",
     "title": "21 CFR Part 1308 — Schedules of Controlled Substances",
+    "why": [
+     "a legal instrument has no study-design level; A conflates legal authority with scientific evidence"
+    ]
+   },
+   {
+    "source_id": "SRC-UZ-JK",
+    "level": "A",
+    "type": "legislation",
+    "title": "Уголовный кодекс Республики Узбекистан",
+    "why": [
+     "a legal instrument has no study-design level; A conflates legal authority with scientific evidence"
+    ]
+   },
+   {
+    "source_id": "SRC-UZ-JPK",
+    "level": "A",
+    "type": "legislation",
+    "title": "Уголовно-процессуальный кодекс Республики Узбекистан",
+    "why": [
+     "a legal instrument has no study-design level; A conflates legal authority with scientific evidence"
+    ]
+   },
+   {
+    "source_id": "SRC-UZ-LAW-1152",
+    "level": "A",
+    "type": "legislation",
+    "title": "O‘zbekiston Respublikasining «Sud-ekspertlik faoliyati to‘g‘risida»gi Qonuni",
+    "why": [
+     "a legal instrument has no study-design level; A conflates legal authority with scientific evidence"
+    ]
+   },
+   {
+    "source_id": "SRC-UZ-LAW-249",
+    "level": "A",
+    "type": "legislation",
+    "title": "O‘zbekiston Respublikasining «Sud ekspertizasi to‘g‘risida»gi Qonuni",
     "why": [
      "a legal instrument has no study-design level; A conflates legal authority with scientific evidence"
     ]

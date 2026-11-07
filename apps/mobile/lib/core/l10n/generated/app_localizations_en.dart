@@ -14304,4 +14304,39 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get areaBiologyDna => 'Forensic biology and DNA';
+
+  @override
+  String get legalNormsTitle => 'Forensic expertise norms';
+
+  @override
+  String get legalNormsBody =>
+      'Expert rights, duties and liability; ordering an examination and the conclusion';
+
+  @override
+  String get legalNormsReview =>
+      'Awaiting legal review. The short summary does not replace the official text — see the official link for the full text.';
+
+  @override
+  String get legalNormsLangNote => 'Summaries are in Uzbek.';
+
+  @override
+  String get legalNormsNone => 'No verified norms for this jurisdiction.';
+
+  @override
+  String get legalStatusNotYet => 'Not yet in force';
+
+  @override
+  String legalNormArticle(String article) {
+    return 'Art. $article';
+  }
+
+  @override
+  String legalInForceFrom(String date) {
+    return 'In force from $date';
+  }
+
+  @override
+  String legalInForceUntil(String date) {
+    return 'In force until $date';
+  }
 }

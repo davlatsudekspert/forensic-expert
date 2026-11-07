@@ -115,7 +115,7 @@ Levels grade the PUBLICATION TYPE only; the criterion is in code, not in the dat
 | journal_article/tier2/B | 236 |
 | journal_article/tier2/C | 69 |
 | journal_article/tier2/D | 32 |
-| legislation/tier1/A | 8 |
+| legislation/tier1/A | 12 |
 | report/tier3/C | 1 |
 | report/tier3/E | 1 |
 
@@ -153,6 +153,10 @@ Sources whose level is ungrounded or inconsistent with their own title / type:
 | SRC-PMC9863810 Atypical Fentanyl Transdermal Patch Consumption and Fataliti | B | title says case report/series but level is not D; title says (narrative) review but level is A/B (the pipeline rule gives C) |
 | SRC-PMID-26364197 Is it worth carrying out determination of N-butane in postmo | C | title says case report/series but level is not D |
 | SRC-US-21CFR1308 21 CFR Part 1308 — Schedules of Controlled Substances | A | a legal instrument has no study-design level; A conflates legal authority with scientific evidence |
+| SRC-UZ-JK Уголовный кодекс Республики Узбекистан | A | a legal instrument has no study-design level; A conflates legal authority with scientific evidence |
+| SRC-UZ-JPK Уголовно-процессуальный кодекс Республики Узбекистан | A | a legal instrument has no study-design level; A conflates legal authority with scientific evidence |
+| SRC-UZ-LAW-1152 O‘zbekiston Respublikasining «Sud-ekspertlik faoliyati to‘g‘ | A | a legal instrument has no study-design level; A conflates legal authority with scientific evidence |
+| SRC-UZ-LAW-249 O‘zbekiston Respublikasining «Sud ekspertizasi to‘g‘risida»g | A | a legal instrument has no study-design level; A conflates legal authority with scientific evidence |
 | SRC-UZ-LAW-813-I Закон Республики Узбекистан «О наркотических средствах и пси | A | a legal instrument has no study-design level; A conflates legal authority with scientific evidence |
 
 ## Full table

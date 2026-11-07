@@ -11639,6 +11639,70 @@
    "license_mode": "openReuse",
    "identifier_verified": true,
    "notes": "Litsenziya (PMC BioC API): CC BY. Jumla asl matndan (ABSTRACT) dasturiy ajratilgan; kuratsiya: phase5/curation_manual.json."
+  },
+  {
+   "source_id": "SRC-UZ-JPK",
+   "source_type": "legislation",
+   "title": "Уголовно-процессуальный кодекс Республики Узбекистан",
+   "organization": "O‘zbekiston Respublikasi",
+   "official_url": "https://lex.uz/uz/docs/111460",
+   "accessed_date": "2026-11-07",
+   "tier": "tier1",
+   "evidence_level": "A",
+   "license_mode": "citeOnly",
+   "identifier_verified": true,
+   "language": "uz",
+   "sha256": "301463c8b83390fbd055efbf4b2f90048dafbd6c565deba19ec761d9334063a0",
+   "source_version": "2026-11-07",
+   "notes": "Rasmiy hujjat (mualliflik huquqi obyekti emas). Retrieved 2026-11-07. JPK, lex.uz/uz/docs/111460; matn o‘zbek kirillida o‘qildi (2026-11-07). effective_from — o‘qilgan tahrir sanasi; amaldagi tahrirni yurist tekshirsin."
+  },
+  {
+   "source_id": "SRC-UZ-JK",
+   "source_type": "legislation",
+   "title": "Уголовный кодекс Республики Узбекистан",
+   "organization": "O‘zbekiston Respublikasi",
+   "official_url": "https://lex.uz/uz/docs/111457",
+   "accessed_date": "2026-11-07",
+   "tier": "tier1",
+   "evidence_level": "A",
+   "license_mode": "citeOnly",
+   "identifier_verified": true,
+   "language": "ru",
+   "sha256": "8157d561a8034365585be77effa4744e53047fccc285acfd590028256adcf2e2",
+   "source_version": "2026-11-07",
+   "notes": "Rasmiy hujjat (mualliflik huquqi obyekti emas). Retrieved 2026-11-07. JK, lex.uz/uz/docs/111457; matn rus tilida o‘qildi (2026-11-07). effective_from — o‘qilgan tahrir sanasi."
+  },
+  {
+   "source_id": "SRC-UZ-LAW-1152",
+   "source_type": "legislation",
+   "title": "O‘zbekiston Respublikasining «Sud-ekspertlik faoliyati to‘g‘risida»gi Qonuni",
+   "organization": "O‘zbekiston Respublikasi",
+   "official_url": "https://lex.uz/uz/docs/8265035",
+   "accessed_date": "2026-11-07",
+   "tier": "tier1",
+   "evidence_level": "A",
+   "license_mode": "citeOnly",
+   "identifier_verified": true,
+   "language": "uz",
+   "sha256": "d269190d758a891d42bc9547bbc6a51111ae7aa527f982cf8d32f87bc1042fd9",
+   "source_version": "2026-11-07",
+   "notes": "Rasmiy hujjat (mualliflik huquqi obyekti emas). Retrieved 2026-11-07. Kuchga kirish sanasi 2026-12-13 — lex.uz izohiga ko‘ra (qonunning 58-moddasi: rasmiy e’londan 6 oy o‘tgach). Yurist tekshirsin."
+  },
+  {
+   "source_id": "SRC-UZ-LAW-249",
+   "source_type": "legislation",
+   "title": "O‘zbekiston Respublikasining «Sud ekspertizasi to‘g‘risida»gi Qonuni",
+   "organization": "O‘zbekiston Respublikasi",
+   "official_url": "https://lex.uz/uz/docs/1633102",
+   "accessed_date": "2026-11-07",
+   "tier": "tier1",
+   "evidence_level": "A",
+   "license_mode": "citeOnly",
+   "identifier_verified": true,
+   "language": "uz",
+   "sha256": "3a77627f7fc321facaeb91cfc83752e3feb93507152ff707b03739b6d97f585b",
+   "source_version": "2026-11-07",
+   "notes": "Rasmiy hujjat (mualliflik huquqi obyekti emas). Retrieved 2026-11-07. O‘RQ-1152 ga asosan 2026-12-13 dan kuchini yo‘qotadi (lex.uz izohi)."
   }
  ],
  "substances": [
@@ -46362,6 +46426,89 @@
    "date_precision": "day",
    "internal_title_note": "uz/ru titles are the official names on lex.uz (uz-Cyrl docs/86044 transliterated to Latin; ru docs/86028), read 2026-10-09; en is unofficial.",
    "internal_note": "№ 813-I — consolidated text retrieved 2026-10-04 (ru docs/86028; uz docs/86044). Law text has no entry-into-force clause; effective_from holds the verified consolidated edition date, UI shows publication date instead (NEEDS LEGAL REVIEW)."
+  },
+  {
+   "instrument_id": "UZ-JPK",
+   "jurisdiction_id": "UZ",
+   "instrument_type": "law",
+   "titles": {
+    "uz": "O‘zbekiston Respublikasining Jinoyat-protsessual kodeksi",
+    "ru": "Уголовно-процессуальный кодекс Республики Узбекистан"
+   },
+   "translation_status": "machine_draft",
+   "official_source_id": "SRC-UZ-JPK",
+   "official_reference": "22.09.1994",
+   "effective_from": "2026-11-07",
+   "version": "2026-11-07",
+   "last_verified_at": "2026-11-07",
+   "legal_status": "in_force",
+   "publication_date": "1994-09-22",
+   "language": "uz",
+   "review_status": "NEEDS_REVIEW",
+   "date_precision": "day",
+   "internal_note": "JPK, lex.uz/uz/docs/111460; matn o‘zbek kirillida o‘qildi (2026-11-07). effective_from — o‘qilgan tahrir sanasi; amaldagi tahrirni yurist tekshirsin. NEEDS LEGAL REVIEW."
+  },
+  {
+   "instrument_id": "UZ-JK",
+   "jurisdiction_id": "UZ",
+   "instrument_type": "law",
+   "titles": {
+    "uz": "O‘zbekiston Respublikasining Jinoyat kodeksi",
+    "ru": "Уголовный кодекс Республики Узбекистан"
+   },
+   "translation_status": "machine_draft",
+   "official_source_id": "SRC-UZ-JK",
+   "official_reference": "22.09.1994",
+   "effective_from": "2026-11-07",
+   "version": "2026-11-07",
+   "last_verified_at": "2026-11-07",
+   "legal_status": "in_force",
+   "publication_date": "1994-09-22",
+   "language": "ru",
+   "review_status": "NEEDS_REVIEW",
+   "date_precision": "day",
+   "internal_note": "JK, lex.uz/uz/docs/111457; matn rus tilida o‘qildi (2026-11-07). effective_from — o‘qilgan tahrir sanasi. NEEDS LEGAL REVIEW."
+  },
+  {
+   "instrument_id": "UZ-LAW-1152",
+   "jurisdiction_id": "UZ",
+   "instrument_type": "law",
+   "titles": {
+    "uz": "O‘zbekiston Respublikasining «Sud-ekspertlik faoliyati to‘g‘risida»gi Qonuni"
+   },
+   "translation_status": "machine_draft",
+   "official_source_id": "SRC-UZ-LAW-1152",
+   "official_reference": "11.06.2026, № O‘RQ-1152",
+   "effective_from": "2026-12-13",
+   "version": "2026-11-07",
+   "last_verified_at": "2026-11-07",
+   "legal_status": "in_force",
+   "publication_date": "2026-06-11",
+   "language": "uz",
+   "review_status": "NEEDS_REVIEW",
+   "date_precision": "day",
+   "internal_note": "Kuchga kirish sanasi 2026-12-13 — lex.uz izohiga ko‘ra (qonunning 58-moddasi: rasmiy e’londan 6 oy o‘tgach). Yurist tekshirsin. NEEDS LEGAL REVIEW."
+  },
+  {
+   "instrument_id": "UZ-LAW-249",
+   "jurisdiction_id": "UZ",
+   "instrument_type": "law",
+   "titles": {
+    "uz": "O‘zbekiston Respublikasining «Sud ekspertizasi to‘g‘risida»gi Qonuni"
+   },
+   "translation_status": "machine_draft",
+   "official_source_id": "SRC-UZ-LAW-249",
+   "official_reference": "01.06.2010, № O‘RQ-249",
+   "effective_from": "2026-11-07",
+   "effective_to": "2026-12-13",
+   "version": "2026-11-07",
+   "last_verified_at": "2026-11-07",
+   "legal_status": "in_force",
+   "publication_date": "2010-06-01",
+   "language": "uz",
+   "review_status": "NEEDS_REVIEW",
+   "date_precision": "day",
+   "internal_note": "O‘RQ-1152 ga asosan 2026-12-13 dan kuchini yo‘qotadi (lex.uz izohi). NEEDS LEGAL REVIEW."
   }
  ],
  "rules": [
@@ -48280,6 +48427,861 @@
    },
    "effective_from": "2026-10-04",
    "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JPK-67",
+   "instrument_id": "UZ-JPK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jpk-67",
+   "article_section": "67-modda",
+   "value": {
+    "article": "67",
+    "title_uz": "Ekspert",
+    "summary_uz": "Ekspertning ish yuritishdagi protsessual maqomi.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JPK-68",
+   "instrument_id": "UZ-JPK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jpk-68",
+   "article_section": "68-modda",
+   "value": {
+    "article": "68",
+    "title_uz": "Ekspertning huquq va majburiyatlari (1-qism 21.11.2024 ЎРҚ-1003 tahririda)",
+    "summary_uz": "HUQUQLARI: ekspertiza predmetiga oid ish materiallari bilan tanishish, ulardan ko‘chirma olish; qo‘shimcha materiallar va tekshirish obyektlari taqdim etilishi haqida iltimosnoma berish; tergov harakatlarida organ ruxsati bilan qatnashish va ishtirokchilarga predmetga oid savollar berish; sud muhokamasida dalillarni tekshirishda qatnashish, sud ruxsati bilan savol berish; o‘z xulosasida so‘ralmagan, lekin ish uchun muhim masalalar bo‘yicha ham fikr bildirish; xulosasi noto‘g‘ri talqin qilingani haqida bayonot berish; ish yuritish tilini bilmasa, ona tilida xulosa berish va tarjimondan foydalanish; organ qarorlari yoki harakatlari (harakatsizligi) huquqini buzsa, shikoyat qilish. MAJBURIYATLARI (2-qism): JPK 76 va 78-moddalardagi asoslar bo‘lsa, o‘zini-o‘zi rad etish haqida darhol arz qilish; obyektlarni har tomonlama va to‘liq tekshirish, savollar bo‘yicha asosli va xolisona yozma xulosa berish; chaqiruv bo‘yicha shaxsan kelish; xulosasini tushuntirish va qo‘shimcha savollarga javob berish; ma’lumotlarni oshkor qilmaslik; obyektlar va materiallar saqlanishini ta’minlash; tartibga rioya qilish. Uzrsiz kelmasa, qonunda nazarda tutilgan javobgarlikka tortilishi mumkin. Qonunga havola: eski «Sud ekspertizasi to‘g‘risida»gi Qonun 15 va 16-moddalari (13.12.2026 dan yangi O‘RQ-1152 ning 25 va 26-moddalari). (Matn kirillda o‘qildi, lex.uz; mazmun qisqartirib berildi.)",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JPK-78",
+   "instrument_id": "UZ-JPK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jpk-78",
+   "article_section": "78-modda",
+   "value": {
+    "article": "78",
+    "title_uz": "Ekspertning ishda ishtirok etishiga monelik qiladigan holatlar",
+    "summary_uz": "Ekspert ishtirokini istisno qiluvchi holatlar (rad etish asoslari).",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JPK-138",
+   "instrument_id": "UZ-JPK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jpk-138",
+   "article_section": "138-modda",
+   "value": {
+    "article": "138",
+    "title_uz": "Murdani ko‘zdan kechirish",
+    "summary_uz": "Murdani ko‘zdan kechirish tartibi (sud-tibbiy ishtirok).",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JPK-148-152-148",
+   "instrument_id": "UZ-JPK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jpk-148-152-148",
+   "article_section": "148–152 (148¹)-modda",
+   "value": {
+    "article": "148–152 (148¹)",
+    "title_uz": "Murdani ekshumatsiya qilish: asoslar, tartib, bayonnoma, qayta ko‘mish",
+    "summary_uz": "Ekshumatsiyaning asoslari va protsessual tartibi, bayonnoma va qayta ko‘mish.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JPK-172",
+   "instrument_id": "UZ-JPK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jpk-172",
+   "article_section": "172-modda",
+   "value": {
+    "article": "172",
+    "title_uz": "Ekspertiza tayinlash uchun asoslar",
+    "summary_uz": "Ish uchun muhim holatlar fan, texnika, san’at yoki kasb bo‘yicha maxsus bilim bilan tekshirib aniqlanadigan bo‘lsa, ekspertiza tayinlanadi. Ekspertga qo‘yilgan savollar va uning xulosasi uning maxsus bilimi doirasidan chiqmaydi. Ekspertizani idoraviy tekshiruv yoki mutaxassis maslahati bilan almashtirib bo‘lmaydi.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JPK-173",
+   "instrument_id": "UZ-JPK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jpk-173",
+   "article_section": "173-modda",
+   "value": {
+    "article": "173",
+    "title_uz": "Ekspertiza tayinlash va o‘tkazishning shartliligi",
+    "summary_uz": "Ekspertiza majburiy bo‘ladigan holatlar, jumladan: o‘lim sababi, yetkazilgan tan jarohatlarining xususiyati va og‘irlik darajasi; jinsiy aloqa, homiladorlik va homilani sun’iy tushirish belgilari; gumon qilinuvchi/ayblanuvchi/sudlanuvchi/jabrlanuvchining yoshi (hujjat yo‘q yoki shubhali bo‘lsa); ruhiy va jismoniy holat va o‘z harakatlarini idrok etish layoqati (ro‘yxat to‘liq emas).",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JPK-174",
+   "instrument_id": "UZ-JPK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jpk-174",
+   "article_section": "174-modda",
+   "value": {
+    "article": "174",
+    "title_uz": "Ekspert etib tayinlanadigan shaxslar",
+    "summary_uz": "Ekspert bo‘lishi mumkin bo‘lgan shaxslar.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JPK-176-176",
+   "instrument_id": "UZ-JPK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jpk-176-176",
+   "article_section": "176, 176¹-modda",
+   "value": {
+    "article": "176, 176¹",
+    "title_uz": "Qo‘shimcha va qayta ekspertizalar; ekspertlar komissiyasi",
+    "summary_uz": "Qo‘shimcha/qayta ekspertiza tayinlash va komissiya tomonidan o‘tkazilishi.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JPK-177",
+   "instrument_id": "UZ-JPK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jpk-177",
+   "article_section": "177-modda",
+   "value": {
+    "article": "177",
+    "title_uz": "Komissiyaviy ekspertiza",
+    "summary_uz": "Har bir ekspert tekshiruvni to‘liq hajmda o‘tkazadi; natijani birga tahlil qiladi; umumiy fikr bo‘lsa birgalikdagi xulosa, kelishmovchilikda har biri alohida xulosa beradi.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JPK-178",
+   "instrument_id": "UZ-JPK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jpk-178",
+   "article_section": "178-modda",
+   "value": {
+    "article": "178",
+    "title_uz": "Kompleks ekspertiza",
+    "summary_uz": "Turli sohalardagi ekspertlar ishtirokidagi ekspertiza.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JPK-179",
+   "instrument_id": "UZ-JPK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jpk-179",
+   "article_section": "179-modda",
+   "value": {
+    "article": "179",
+    "title_uz": "Gumon qilinuvchi, ayblanuvchi, sudlanuvchining huquqlari",
+    "summary_uz": "Ekspertiza tayinlash va o‘tkazishdagi huquqlari.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JPK-180",
+   "instrument_id": "UZ-JPK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jpk-180",
+   "article_section": "180-modda",
+   "value": {
+    "article": "180",
+    "title_uz": "Ekspertiza tayinlash to‘g‘risidagi qaror yoki ajrim",
+    "summary_uz": "Qaror/ajrim tarkibi va savollar.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JPK-181",
+   "instrument_id": "UZ-JPK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jpk-181",
+   "article_section": "181-modda",
+   "value": {
+    "article": "181",
+    "title_uz": "Ekspertiza o‘tkazishda majburlov chegarasi",
+    "summary_uz": "Ekspertiza paytida majburlash chegaralari.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JPK-182-183",
+   "instrument_id": "UZ-JPK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jpk-182-183",
+   "article_section": "182–183-modda",
+   "value": {
+    "article": "182–183",
+    "title_uz": "Ekspertizani ekspert muassasasida yoki tashqarida o‘tkazish",
+    "summary_uz": "Davlat sud-ekspertiza muassasasi yoki boshqa tashkilotda/tashqarida o‘tkazish tartibi.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JPK-184",
+   "instrument_id": "UZ-JPK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jpk-184",
+   "article_section": "184-modda",
+   "value": {
+    "article": "184",
+    "title_uz": "Ekspertning yoki ekspertlar komissiyasining xulosasi",
+    "summary_uz": "Xulosa har bir ekspert imzosi bilan tasdiqlanadi; xulosada: sana va joy, ekspertiza asosi, tayinlagan organ, ekspert haqida ma’lumotlar (F.I.Sh., ma’lumoti, ixtisosligi, ish staji, ilmiy darajasi, lavozimi), bila turib noto‘g‘ri xulosa bergani va ma’lumotni oshkor qilgani uchun jinoiy javobgarlik haqida ogohlantirilganligi, qo‘yilgan savollar, taqdim etilgan ob’ektlar, ishtirok etganlar, qo‘llangan usullar va hokazo ko‘rsatiladi.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JPK-186",
+   "instrument_id": "UZ-JPK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jpk-186",
+   "article_section": "186-modda",
+   "value": {
+    "article": "186",
+    "title_uz": "Ekspertni so‘roq qilish",
+    "summary_uz": "Ekspertdan tushuntirish olish.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JPK-187",
+   "instrument_id": "UZ-JPK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jpk-187",
+   "article_section": "187-modda",
+   "value": {
+    "article": "187",
+    "title_uz": "Ekspert xulosasini baholash",
+    "summary_uz": "Xulosaning boshqa dalillar qatorida baholanishi.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JPK-195",
+   "instrument_id": "UZ-JPK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jpk-195",
+   "article_section": "195-modda",
+   "value": {
+    "article": "195",
+    "title_uz": "Ekspert tomonidan tajriba uchun namunalar olish",
+    "summary_uz": "Namunalar olish tartibi.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JPK-265",
+   "instrument_id": "UZ-JPK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jpk-265",
+   "article_section": "265-modda",
+   "value": {
+    "article": "265",
+    "title_uz": "Sud ekspertizasini o‘tkazish uchun shaxsni tibbiy muassasaga joylashtirish",
+    "summary_uz": "Asoslar va muddatlar.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JPK-446-447",
+   "instrument_id": "UZ-JPK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jpk-446-447",
+   "article_section": "446–447-modda",
+   "value": {
+    "article": "446–447",
+    "title_uz": "Sud bosqichida ekspertiza; ekspert tekshiruvi uchun namunalar olish",
+    "summary_uz": "Sud muhokamasida ekspertiza va namunalar.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JPK-567-568",
+   "instrument_id": "UZ-JPK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jpk-567-568",
+   "article_section": "567–568-modda",
+   "value": {
+    "article": "567–568",
+    "title_uz": "Sud-psixiatriya ekspertizasi va u aniqlaydigan masalalar",
+    "summary_uz": "Ruhiy holat ekspertizasi va savollari.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JK-17",
+   "instrument_id": "UZ-JK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jk-17",
+   "article_section": "17-modda",
+   "value": {
+    "article": "17",
+    "title_uz": "Jismoniy shaxslarning javobgarligi",
+    "summary_uz": "Javobgarlik 16 yoshdan; 14 yoshdan ayrim moddalar bo‘yicha, jumladan 97, 98, 104–106, 118 va boshqalar (ro‘yxat moddada). Yosh aniqlash ekspertizasi bilan bog‘liq.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JK-18",
+   "instrument_id": "UZ-JK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jk-18",
+   "article_section": "18-modda",
+   "value": {
+    "article": "18",
+    "title_uz": "Aqli rasolik",
+    "summary_uz": "Aqli rasol — qilmish paytida harakatlarining ijtimoiy xavfli xususiyatini anglagan va ularni boshqargan shaxs. Surunkali yoki vaqtinchalik ruhiy buzilish, aqli zaiflik yoki boshqa ruhiy buzilish tufayli anglay olmagan shaxs javobgar emas; unga majburiy tibbiy choralar qo‘llanishi mumkin (sud-psixiatriya ekspertizasi).",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JK-92-96",
+   "instrument_id": "UZ-JK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jk-92-96",
+   "article_section": "92–96-modda",
+   "value": {
+    "article": "92–96",
+    "title_uz": "Majburiy tibbiy xarakterdagi choralar",
+    "summary_uz": "Umumiy asos, turlari, tayinlash, uzaytirish/o‘zgartirish/tugatish, jazo bilan birga qo‘llash.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JK-97",
+   "instrument_id": "UZ-JK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jk-97",
+   "article_section": "97-modda",
+   "value": {
+    "article": "97",
+    "title_uz": "Qasddan odam o‘ldirish",
+    "summary_uz": "O‘lim sababi va mexanizmi — sud-tibbiy ekspertiza predmeti.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JK-104",
+   "instrument_id": "UZ-JK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jk-104",
+   "article_section": "104-modda",
+   "value": {
+    "article": "104",
+    "title_uz": "Qasddan og‘ir tan jarohati",
+    "summary_uz": "Og‘ir: hayot uchun xavfli yoki ko‘rish, nutq, eshitish, a’zo yoki uning funksiyasining to‘liq yo‘qolishi, ruhiy yoki boshqa sog‘liq buzilishi bilan umumiy mehnatga layoqatning barqaror yo‘qolishi 33% dan ortiq, homila tushishi yoki tananing yuvilmas buzilishi (JK 126¹ belgilari bo‘lmasa). 1-qism: ozodlikni cheklash yoki ozodlikdan mahrum qilish 3–5 yil.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JK-105",
+   "instrument_id": "UZ-JK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jk-105",
+   "article_section": "105-modda",
+   "value": {
+    "article": "105",
+    "title_uz": "Qasddan o‘rta og‘ir tan jarohati",
+    "summary_uz": "Hayot uchun xavfli emas, 104-modda oqibatlarisiz, lekin sog‘liqning 21 kundan ortiq, 4 oydan oshmagan uzoq buzilishi yoki umumiy mehnatga layoqatning sezilarli barqaror yo‘qolishi 10–33%. Jazo turlari moddada.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JK-109",
+   "instrument_id": "UZ-JK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jk-109",
+   "article_section": "109-modda",
+   "value": {
+    "article": "109",
+    "title_uz": "Qasddan yengil tan jarohati",
+    "summary_uz": "1-qism 2024-yil 7-oktabrdagi ЗРУ-972 qonuni bilan chiqarilgan. 2-qism: sog‘liqning qisqa muddatli buzilishi 6 kundan ortiq, 21 kundan oshmagan yoki mehnatga layoqatning ahamiyatsiz barqaror yo‘qolishi. Jarima 25–50 BHM va boshqa jazolar moddada.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JK-111",
+   "instrument_id": "UZ-JK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jk-111",
+   "article_section": "111-modda",
+   "value": {
+    "article": "111",
+    "title_uz": "Ehtiyotsizlik oqibatida o‘rta og‘ir yoki og‘ir tan jarohati",
+    "summary_uz": "1-qism: o‘rta og‘ir; 2-qism: og‘ir (ehtiyotsizlik).",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JK-238",
+   "instrument_id": "UZ-JK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jk-238",
+   "article_section": "238-modda",
+   "value": {
+    "article": "238",
+    "title_uz": "Yolg‘on guvohlik berish (ekspertga nisbatan: bila turib yolg‘on xulosa berish)",
+    "summary_uz": "1-qism: guvoh yoki jabrlanuvchining bila turib yolg‘on ko‘rsatuvi yoki ekspertning bila turib yolg‘on xulosasi, shuningdek tarjimonning bila turib noto‘g‘ri tarjimasi (surishtiruv, dastlabki tergov yoki sudda) — jazo: 300 soatgacha majburiy jamoat ishlari, yoki 1–3 yil ozodlikni cheklash, yoki 3 yilgacha ozodlikdan mahrum qilish. 2-qism: guvoh/jabrlanuvchini yolg‘on ko‘rsatuvga, ekspertni yolg‘on xulosaga, tarjimonni yolg‘on tarjimaga pora bilan og‘dirish yoki ruhiy/jismoniy ta’sir bilan majburlash — 3–5 yil ozodlikni cheklash yoki 3–5 yil ozodlikdan mahrum qilish. 3-qism: uyushgan guruh manfaatida yoki og‘ir/o‘ta og‘ir jinoyatda ayblash bilan bog‘liq bo‘lsa — 5–8 yil ozodlikdan mahrum qilish. JPK bilan bog‘lanish: JPK 68-moddaning 2 va 4-qismlari. Matn rus tilida o‘qildi (lex.uz, JK 238-modda, 2018-yil 4-aprel ZRU-470 tahriri).",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JK-240",
+   "instrument_id": "UZ-JK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jk-240",
+   "article_section": "240-modda",
+   "value": {
+    "article": "240",
+    "title_uz": "Jinoyat protsessi ishtirokchilarining zimmasiga yuklangan majburiyatlarni bajarishdan bo‘yin tovlash (ekspertga nisbatan: xulosa berishdan bosh tortish yoki bo‘yin tovlash)",
+    "summary_uz": "1-qism: guvoh yoki jabrlanuvchining ko‘rsatuv berishdan, ekspertning xulosa berishdan bosh tortishi yoki bo‘yin tovlashi (dastlabki tekshiruv, surishtiruv, dastlabki tergov yoki sudda) — jazo: bazaviy hisoblash miqdorining 25 baravarigacha jarima yoki 360 soatgacha majburiy jamoat ishlari. 2-qism: gumon qilinuvchi, ayblanuvchi yoki sudlanuvchining yaqin qarindoshlari va o‘z ustidan ko‘rsatuv berishdan bosh tortgan guvoh javobgar bo‘lmaydi. JPK bilan bog‘lanish: JPK 68-moddaning 4-qismi. Matn rus tilida o‘qildi (lex.uz, JK 240-modda; 1-qism sanksiyasi 2019-yil 3-dekabr ZRU-586 tahriri). Eslatma: 239-modda (surishtiruv/tergov ma’lumotlarini oshkor qilish) ham ekspertga tegishli — ekspert ma’lumotni oshkor qilmaslik majburiyatiga ega; jazo: 50 BHM gacha jarima, yoki 3 yilgacha axloq tuzatish ishlari, yoki 1–3 yil ozodlikni cheklash, yoki 3 yilgacha ozodlikdan mahrum qilish.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-JK-118",
+   "instrument_id": "UZ-JK",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-jk-118",
+   "article_section": "118-modda",
+   "value": {
+    "article": "118",
+    "title_uz": "Zo‘rlash",
+    "summary_uz": "Jinsiy zo‘ravonlik ishlarida sud-tibbiy ekspertiza (jinsiy aloqa belgilari, jarohatlar).",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-LAW-1152-8",
+   "instrument_id": "UZ-LAW-1152",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-law-1152-8",
+   "article_section": "8-modda",
+   "value": {
+    "article": "8",
+    "title_uz": "Sud ekspertining mustaqilligi printsipi",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-12-13",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-LAW-1152-9",
+   "instrument_id": "UZ-LAW-1152",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-law-1152-9",
+   "article_section": "9-modda",
+   "value": {
+    "article": "9",
+    "title_uz": "Sud-ekspertiza tadqiqotlarining xolisligi, har tomonlamaligi va to‘liqligi printsipi",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-12-13",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-LAW-1152-10",
+   "instrument_id": "UZ-LAW-1152",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-law-1152-10",
+   "article_section": "10-modda",
+   "value": {
+    "article": "10",
+    "title_uz": "Kasbiy sirni saqlash printsipi",
+    "summary_uz": "Ekspert sirni saqlashi bilan JPK 68 va JK 239 ga bog‘liq.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-12-13",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-LAW-1152-12-13",
+   "instrument_id": "UZ-LAW-1152",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-law-1152-12-13",
+   "article_section": "12–13-modda",
+   "value": {
+    "article": "12–13",
+    "title_uz": "Sud eksperti; kasbiy va malakaviy talablar",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-12-13",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-LAW-1152-14",
+   "instrument_id": "UZ-LAW-1152",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-law-1152-14",
+   "article_section": "14-modda",
+   "value": {
+    "article": "14",
+    "title_uz": "Sud ekspertlarining davlat reyestri",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-12-13",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-LAW-1152-16",
+   "instrument_id": "UZ-LAW-1152",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-law-1152-16",
+   "article_section": "16-modda",
+   "value": {
+    "article": "16",
+    "title_uz": "Davlat sud-ekspertiza muassasasi",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-12-13",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-LAW-1152-25",
+   "instrument_id": "UZ-LAW-1152",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-law-1152-25",
+   "article_section": "25-modda",
+   "value": {
+    "article": "25",
+    "title_uz": "Sud ekspertining huquqlari",
+    "summary_uz": "Ish materiallari bilan tanishish va ko‘chirma olish; qo‘shimcha materiallar/obyektlar so‘rash; boshqa ekspert va mutaxassislarni jalb etish haqida rahbarga iltimosnoma; tergov harakati va sud muhokamasida organ ruxsati bilan ishtirok etib savol berish; moddiy, yozma, raqamli dalillarni ko‘zdan kechirish; shartnoma asosida tadqiqot o‘tkazish; protokollarni so‘rab olish; xavfsizlikni ta’minlashni talab qilish; xulosada so‘ralmagan muhim masalalar bo‘yicha ham fikr bildirish; xulosasi noto‘g‘ri talqin qilinsa, bayonnomaga bayonot kiritish (to‘liq ro‘yxat rasmiy matnda).",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-12-13",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-LAW-1152-26",
+   "instrument_id": "UZ-LAW-1152",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-law-1152-26",
+   "article_section": "26-modda",
+   "value": {
+    "article": "26",
+    "title_uz": "Sud ekspertining majburiyatlari",
+    "summary_uz": "Rad etish asoslari bo‘lsa darhol xabar berish; obyektlarni har tomonlama va to‘liq tekshirish, asosli va xolisona xulosa berish; chaqiruv bo‘yicha shaxsan yoki videokonferensiya orqali ishtirok etish; xulosani tushuntirish; ma’lumotni oshkor qilmaslik; obyekt va materiallar saqlanishini ta’minlash; talablar va kasb etikasiga rioya. Taqiqlar: ishtirokchilar bilan shaxsiy aloqa, mustaqil material to‘plash, obyektni organ roziligisiz yo‘q qilish yoki o‘zgartirish va h.k. (to‘liq ro‘yxat rasmiy matnda).",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-12-13",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-LAW-1152-27",
+   "instrument_id": "UZ-LAW-1152",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-law-1152-27",
+   "article_section": "27-modda",
+   "value": {
+    "article": "27",
+    "title_uz": "Sud ekspertining ish materiallari yuzasidan sud ekspertizasini o‘tkazishiga doir cheklovlar",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-12-13",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-LAW-1152-32-34",
+   "instrument_id": "UZ-LAW-1152",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-law-1152-32-34",
+   "article_section": "32–34-modda",
+   "value": {
+    "article": "32–34",
+    "title_uz": "Ekspertiza o‘tkazish asoslari va muddatlari; to‘xtatib turish; qo‘shimcha va qayta ekspertizalar",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-12-13",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-LAW-1152-35-37",
+   "instrument_id": "UZ-LAW-1152",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-law-1152-35-37",
+   "article_section": "35–37-modda",
+   "value": {
+    "article": "35–37",
+    "title_uz": "Ekspertlar komissiyasi; komissiyaviy va kompleks ekspertiza",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-12-13",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-LAW-1152-38",
+   "instrument_id": "UZ-LAW-1152",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-law-1152-38",
+   "article_section": "38-modda",
+   "value": {
+    "article": "38",
+    "title_uz": "Ekspertiza o‘tkazilayotganda protsess ishtirokchilarining hozir bo‘lishi",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-12-13",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-LAW-1152-39",
+   "instrument_id": "UZ-LAW-1152",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-law-1152-39",
+   "article_section": "39-modda",
+   "value": {
+    "article": "39",
+    "title_uz": "Sud ekspertining xulosasi",
+    "summary_uz": "Har bir ekspert imzosi bilan tasdiqlanadi. Xulosada, jumladan, ekspert BILA TURIB YOLG‘ON XULOSA BERGANLIGI, tergov/surishtiruv ma’lumotlarini va yopiq sud majlisi tafsilotlarini ruxsatsiz OSHKOR QILGANLIGI, shuningdek xulosa berishni RAD ETGANLIGI yoki bo‘yin tovlaganligi uchun JINOIY JAVOBGARLIK to‘g‘risida ogohlantirilgani ko‘rsatilishi shart (JK 238, 239, 240 ga mos). Boshqa talablar: sana va joy, asos, tayinlagan organ, ekspert va muassasa ma’lumotlari, savollar, obyektlar, hozir bo‘lgan shaxslar, usullar, natijalar va h.k. (to‘liq ro‘yxat rasmiy matnda).",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-12-13",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-LAW-1152-40",
+   "instrument_id": "UZ-LAW-1152",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-law-1152-40",
+   "article_section": "40-modda",
+   "value": {
+    "article": "40",
+    "title_uz": "Ekspert fikri",
+    "summary_uz": "Yangi tushuncha: sud ekspertizasi tayinlanmagan holda ham beriladigan fikr (tadqiqot buyurtmachisi uchun).",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-12-13",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-LAW-1152-41",
+   "instrument_id": "UZ-LAW-1152",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-law-1152-41",
+   "article_section": "41-modda",
+   "value": {
+    "article": "41",
+    "title_uz": "Xulosa yoki ekspert fikrini berishning iloji yo‘qligi to‘g‘risidagi ma’lumotnoma",
+    "summary_uz": "Savollarni maxsus bilim bilan hal qilib bo‘lmasa, obyektlar yaroqsiz/yetarli bo‘lmasa, yoki shart-sharoit va uskunalar bo‘lmasa, asoslangan ma’lumotnoma tuziladi (sabablarning to‘liq ro‘yxati rasmiy matnda).",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-12-13",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-LAW-1152-44-45",
+   "instrument_id": "UZ-LAW-1152",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-law-1152-44-45",
+   "article_section": "44–45-modda",
+   "value": {
+    "article": "44–45",
+    "title_uz": "Tadqiqot uslubiyotlarining davlat reyestri; validatsiya",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-12-13",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-LAW-1152-48-49",
+   "instrument_id": "UZ-LAW-1152",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-law-1152-48-49",
+   "article_section": "48–49-modda",
+   "value": {
+    "article": "48–49",
+    "title_uz": "Ekspertlarni tayyorlash va qayta tayyorlash; malaka oshirish",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-12-13",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-LAW-1152-54",
+   "instrument_id": "UZ-LAW-1152",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-law-1152-54",
+   "article_section": "54-modda",
+   "value": {
+    "article": "54",
+    "title_uz": "Qonunchilikni buzganlik uchun javobgarlik",
+    "summary_uz": "Umumiy norma: aybdor shaxslar belgilangan tartibda javobgar bo‘ladi. Jinoiy javobgarlik JK 238, 239, 240 da.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-12-13",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-LAW-1152-58",
+   "instrument_id": "UZ-LAW-1152",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-law-1152-58",
+   "article_section": "58-modda",
+   "value": {
+    "article": "58",
+    "title_uz": "Kuchga kirishi",
+    "summary_uz": "Rasmiy e’londan 6 oy o‘tgach (lex.uz izohiga ko‘ra 13.12.2026).",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-12-13",
+   "review_status": "NEEDS_REVIEW"
+  },
+  {
+   "rule_id": "R-UZ-LAW-249-15-16",
+   "instrument_id": "UZ-LAW-249",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-law-249-15-16",
+   "article_section": "15–16-modda",
+   "value": {
+    "article": "15–16",
+    "title_uz": "Sud ekspertining huquqlari va majburiyatlari",
+    "summary_uz": "JPK 68-modda shu moddalarga havola qiladi. 2026-12-13 dan yangi qonunning 25 va 26-moddalari amal qiladi.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW",
+   "effective_to": "2026-12-13"
+  },
+  {
+   "rule_id": "R-UZ-LAW-249-31",
+   "instrument_id": "UZ-LAW-249",
+   "rule_type": "procedure_requirement",
+   "subject_type": "expert_norm",
+   "subject_id": "r-uz-law-249-31",
+   "article_section": "31-modda",
+   "value": {
+    "article": "31",
+    "title_uz": "Qonunchilikni buzganlik uchun javobgarlik",
+    "summary_uz": "Umumiy norma; jinoiy javobgarlik JK 238–240 da.",
+    "summary_basis": "Qisqartirilgan mazmun (o‘z so‘zlarim bilan); rasmiy matn o‘rnini bosmaydi."
+   },
+   "effective_from": "2026-11-07",
+   "review_status": "NEEDS_REVIEW",
+   "effective_to": "2026-12-13"
   }
  ],
  "topics": [

@@ -18780,5 +18780,56 @@
   "areaBiologyDna": "Forensic biology and DNA",
   "@areaBiologyDna": {
     "description": "Expertise areas: forensic biology and DNA."
+  },
+  "legalNormsTitle": "Forensic expertise norms",
+  "@legalNormsTitle": {
+    "description": "Jurisdiction: forensic expertise norms screen title."
+  },
+  "legalNormsBody": "Expert rights, duties and liability; ordering an examination and the conclusion",
+  "@legalNormsBody": {
+    "description": "Jurisdiction: norms entry subtitle."
+  },
+  "legalNormsReview": "Awaiting legal review. The short summary does not replace the official text — see the official link for the full text.",
+  "@legalNormsReview": {
+    "description": "Banner: norms are summaries awaiting legal review."
+  },
+  "legalNormsLangNote": "Summaries are in Uzbek.",
+  "@legalNormsLangNote": {
+    "description": "Note: summaries are in Uzbek only."
+  },
+  "legalNormsNone": "No verified norms for this jurisdiction.",
+  "@legalNormsNone": {
+    "description": "No norms recorded for this jurisdiction."
+  },
+  "legalStatusNotYet": "Not yet in force",
+  "@legalStatusNotYet": {
+    "description": "Instrument status: not yet in force."
+  },
+  "legalNormArticle": "Art. {article}",
+  "@legalNormArticle": {
+    "description": "Article label.",
+    "placeholders": {
+      "article": {
+        "type": "String"
+      }
+    }
+  },
+  "legalInForceFrom": "In force from {date}",
+  "@legalInForceFrom": {
+    "description": "Chip: in force from date.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "legalInForceUntil": "In force until {date}",
+  "@legalInForceUntil": {
+    "description": "Chip: in force until date.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
   }
 }

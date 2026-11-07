@@ -14380,4 +14380,39 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get areaBiologyDna => 'Судебная биология и ДНК-анализ';
+
+  @override
+  String get legalNormsTitle => 'Нормы судебной экспертизы';
+
+  @override
+  String get legalNormsBody =>
+      'Права, обязанности и ответственность эксперта; назначение экспертизы и заключение';
+
+  @override
+  String get legalNormsReview =>
+      'Ожидается проверка юриста. Краткое содержание не заменяет официальный текст — полный текст по официальной ссылке.';
+
+  @override
+  String get legalNormsLangNote => 'Краткое содержание — на узбекском языке.';
+
+  @override
+  String get legalNormsNone => 'Для этой юрисдикции подтверждённых норм нет.';
+
+  @override
+  String get legalStatusNotYet => 'Ещё не вступил в силу';
+
+  @override
+  String legalNormArticle(String article) {
+    return 'Статья $article';
+  }
+
+  @override
+  String legalInForceFrom(String date) {
+    return 'Действует с $date';
+  }
+
+  @override
+  String legalInForceUntil(String date) {
+    return 'Действует до $date';
+  }
 }

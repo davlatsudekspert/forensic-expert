@@ -74,6 +74,7 @@ import '../features/learn/presentation/learn_screens.dart';
 import '../features/learn/presentation/study_screens.dart';
 import '../features/legal/presentation/compare_screen.dart';
 import '../features/legal/presentation/jurisdiction_screens.dart';
+import '../features/legal/presentation/norms_screen.dart';
 import '../features/lessons/presentation/lesson_viewer_screen.dart';
 import '../features/lessons/presentation/lessons_list_screen.dart';
 import '../features/library/presentation/entry_detail_screen.dart';
@@ -836,6 +837,18 @@ final routerProvider = Provider<GoRouter>((ref) {
                             id: s.pathParameters['id']!,
                           ),
                         ),
+                        routes: [
+                          GoRoute(
+                            path: 'norms',
+                            builder: (c, s) => _proModule(
+                              c,
+                              title: AppLocalizations.of(c).legalNormsTitle,
+                              child: JurisdictionNormsScreen(
+                                id: s.pathParameters['id']!,
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),

@@ -24602,6 +24602,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Forensic biology and DNA'**
   String get areaBiologyDna;
+
+  /// Jurisdiction: forensic expertise norms screen title.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic expertise norms'**
+  String get legalNormsTitle;
+
+  /// Jurisdiction: norms entry subtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Expert rights, duties and liability; ordering an examination and the conclusion'**
+  String get legalNormsBody;
+
+  /// Banner: norms are summaries awaiting legal review.
+  ///
+  /// In en, this message translates to:
+  /// **'Awaiting legal review. The short summary does not replace the official text — see the official link for the full text.'**
+  String get legalNormsReview;
+
+  /// Note: summaries are in Uzbek only.
+  ///
+  /// In en, this message translates to:
+  /// **'Summaries are in Uzbek.'**
+  String get legalNormsLangNote;
+
+  /// No norms recorded for this jurisdiction.
+  ///
+  /// In en, this message translates to:
+  /// **'No verified norms for this jurisdiction.'**
+  String get legalNormsNone;
+
+  /// Instrument status: not yet in force.
+  ///
+  /// In en, this message translates to:
+  /// **'Not yet in force'**
+  String get legalStatusNotYet;
+
+  /// Article label.
+  ///
+  /// In en, this message translates to:
+  /// **'Art. {article}'**
+  String legalNormArticle(String article);
+
+  /// Chip: in force from date.
+  ///
+  /// In en, this message translates to:
+  /// **'In force from {date}'**
+  String legalInForceFrom(String date);
+
+  /// Chip: in force until date.
+  ///
+  /// In en, this message translates to:
+  /// **'In force until {date}'**
+  String legalInForceUntil(String date);
 }
 
 class _AppLocalizationsDelegate

@@ -14166,4 +14166,39 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get areaBiologyDna => 'Sud biologiyasi va DNK';
+
+  @override
+  String get legalNormsTitle => 'Sud-ekspertiza normalari';
+
+  @override
+  String get legalNormsBody =>
+      'Ekspertning huquq, majburiyat va javobgarligi; ekspertiza tayinlash va xulosa';
+
+  @override
+  String get legalNormsReview =>
+      'Yurist tekshiruvi kutilmoqda. Qisqartirilgan mazmun rasmiy matn o‘rnini bosmaydi — to‘liq matn uchun rasmiy havolaga qarang.';
+
+  @override
+  String get legalNormsLangNote => 'Qisqa mazmun o‘zbek tilida.';
+
+  @override
+  String get legalNormsNone => 'Bu yurisdiksiya uchun tasdiqlangan norma yo‘q.';
+
+  @override
+  String get legalStatusNotYet => 'Hali kuchga kirmagan';
+
+  @override
+  String legalNormArticle(String article) {
+    return '$article-modda';
+  }
+
+  @override
+  String legalInForceFrom(String date) {
+    return '$date dan amal qiladi';
+  }
+
+  @override
+  String legalInForceUntil(String date) {
+    return '$date gacha amalda';
+  }
 }

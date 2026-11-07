@@ -18,6 +18,7 @@ import '../../../core/widgets/fe_data_components.dart';
 import '../../../domain/jurisdiction/jurisdiction_catalog.dart';
 import '../../evidence/presentation/localized_content.dart';
 import 'instrument_title.dart';
+import 'norms_screen.dart';
 
 /// Global yurisdiksiya qatlami (PHASE 6).
 ///
@@ -486,6 +487,23 @@ class JurisdictionDetailScreen extends ConsumerWidget {
                     // PHASE 10: huquqiy domenlar — har biri bo‘yicha shu
                     // yurisdiksiyada yozuv bor-yo‘qligi (yo‘q = tasdiqlangan
                     // kontent yo‘q; boshqa davlat bilan to‘ldirilmaydi).
+                    if (resolver.rules.any(
+                      (r) =>
+                          r.subjectType == kExpertNormSubject &&
+                          own.any((i) => i.id == r.instrumentId),
+                    ))
+                      ListTile(
+                        key: const Key('jurisdiction.norms'),
+                        contentPadding: EdgeInsets.zero,
+                        leading: Icon(Icons.balance, color: c.accent),
+                        title: Text(l.legalNormsTitle),
+                        subtitle: Text(
+                          l.legalNormsBody,
+                          style: t.bodySmall?.copyWith(color: c.textSecondary),
+                        ),
+                        trailing: const Icon(Icons.chevron_right),
+                        onTap: () => context.push(Routes.jurisdictionNorms(id)),
+                      ),
                     FeSectionHeader(l.legalDomainsTitle),
                     for (final d in LegalDomain.values)
                       () {
@@ -570,7 +588,14 @@ class InstrumentCard extends ConsumerWidget {
       if (i.effectiveTo != null) (l.instrEffectiveTo, date(i.effectiveTo!)),
       if (i.lastAmendedAt != null) (l.instrAmended, date(i.lastAmendedAt!)),
       (l.instrVersion, i.version),
-      (l.instrLegalStatus, l.legalStatusLabel(i.legalStatus)),
+      (
+        l.instrLegalStatus,
+        // Sanalardan aniq: hali kuchga kirmagan hujjat «kuchda» deb
+        // ko‘rsatilmaydi.
+        normTimingOf(i, DateTime.now()) == NormTiming.notYet
+            ? l.legalStatusNotYet
+            : l.legalStatusLabel(i.legalStatus),
+      ),
       // Qiymat ustunida — bosh harf bilan («Rasmiy til: Rus», «rus» emas);
       // gap ichida («… rus tilida») kichik harf saqlanadi.
       if (i.language != null)
