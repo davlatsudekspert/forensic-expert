@@ -14201,4 +14201,22 @@ class AppLocalizationsUz extends AppLocalizations {
   String legalInForceUntil(String date) {
     return '$date gacha amalda';
   }
+
+  @override
+  String get resultsExportExcel => 'Excel (.xlsx)';
+
+  @override
+  String get resultsExportExcelBody => 'Jadval: saralash va tahrirlash uchun';
+
+  @override
+  String get resultsExportPdf => 'PDF';
+
+  @override
+  String get resultsExportPdfBody => 'Chop etish va yuborish uchun';
+
+  @override
+  String get resultsExportCsv => 'CSV';
+
+  @override
+  String get resultsExportCsvBody => 'Oddiy matnli jadval';
 }

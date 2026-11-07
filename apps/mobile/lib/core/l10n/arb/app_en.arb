@@ -18831,5 +18831,29 @@
         "type": "String"
       }
     }
+  },
+  "resultsExportExcel": "Excel (.xlsx)",
+  "@resultsExportExcel": {
+    "description": "Results export: Excel option."
+  },
+  "resultsExportExcelBody": "Spreadsheet: for sorting and editing",
+  "@resultsExportExcelBody": {
+    "description": "Results export: Excel hint."
+  },
+  "resultsExportPdf": "PDF",
+  "@resultsExportPdf": {
+    "description": "Results export: PDF option."
+  },
+  "resultsExportPdfBody": "For printing and sending",
+  "@resultsExportPdfBody": {
+    "description": "Results export: PDF hint."
+  },
+  "resultsExportCsv": "CSV",
+  "@resultsExportCsv": {
+    "description": "Results export: CSV option."
+  },
+  "resultsExportCsvBody": "Plain-text table",
+  "@resultsExportCsvBody": {
+    "description": "Results export: CSV hint."
   }
 }

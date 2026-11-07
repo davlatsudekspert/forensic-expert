@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -16,6 +17,13 @@ import '../helpers/pump_app.dart';
 /// Yangilash:
 /// `flutter test test/golden/class_podium_golden_test.dart --update-goldens`
 class _NoShare implements ClassFileShare {
+  @override
+  Future<void> shareFile({
+    required String fileName,
+    required Uint8List bytes,
+    required String mimeType,
+    String? subject,
+  }) async {}
   @override
   Future<void> shareCsv({
     required String fileName,

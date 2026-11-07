@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../app/class_quiz.dart';
 import '../../../app/plan.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../domain/class_groups/class_groups_models.dart';
 import '../../../domain/class_groups/group_results_csv.dart';
 import '../../../domain/plan/plan_models.dart';
 import '../../pro/presentation/pro_gate.dart';
+import '../../results_export/presentation/results_export_sheet.dart';
 
 /// Guruh testi natijalarini CSV (reestr: «Ball (100)», «Baho») sifatida
 /// ulashish. Natijalar CSV — Ustoz Pro (tugma ko‘rinadi, qulfli), jonli sinf
@@ -22,16 +22,16 @@ Future<void> exportGroupResultsCsv(
     return;
   }
   final l = AppLocalizations.of(context);
-  await ref
-      .read(classFileShareProvider)
-      .shareCsv(
-        fileName: GroupResultsCsv.fileName(DateTime.now()),
-        content: GroupResultsCsv.build(
-          board.ranked.map((x) => x.row),
-          belowMinLabel: l.scoringGradeBelowMin,
-        ),
-        subject: l.classCsvSubject,
-      );
+  await showResultsExportSheet(
+    context,
+    ref,
+    csvFileName: GroupResultsCsv.fileName(DateTime.now()),
+    csv: GroupResultsCsv.build(
+      board.ranked.map((x) => x.row),
+      belowMinLabel: l.scoringGradeBelowMin,
+    ),
+    title: l.classCsvSubject,
+  );
 }
 
 /// «CSV» tugmasi (ustoz natijalar ekrani).

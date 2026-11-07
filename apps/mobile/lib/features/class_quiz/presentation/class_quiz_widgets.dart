@@ -17,6 +17,7 @@ import '../../../domain/class_groups/variant_draw.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart';
 import '../../../domain/plan/plan_models.dart';
 import '../../pro/presentation/pro_gate.dart';
+import '../../results_export/presentation/results_export_sheet.dart';
 
 /// Xato kodini foydalanuvchiga tushunarli o‘zbekcha (yoki tanlangan til)
 /// matniga aylantiradi. Texnik kod ko‘rsatilmaydi.
@@ -70,7 +71,6 @@ Future<void> exportClassResultsCsv(
   }
   final l = AppLocalizations.of(context);
   final messenger = ScaffoldMessenger.of(context);
-  final share = ref.read(classFileShareProvider);
   final r = await ref.read(classQuizServiceProvider).exportResults(s.id);
   final ex = r.value;
   if (ex == null) {
@@ -79,14 +79,17 @@ Future<void> exportClassResultsCsv(
     );
     return;
   }
-  await share.shareCsv(
-    fileName: ClassResultsCsv.fileName(s.code, DateTime.now()),
-    content: ClassResultsCsv.build(
+  if (!context.mounted) return;
+  await showResultsExportSheet(
+    context,
+    ref,
+    csvFileName: ClassResultsCsv.fileName(s.code, DateTime.now()),
+    csv: ClassResultsCsv.build(
       ex.rows,
       total: ex.session.total,
       belowMinLabel: l.scoringGradeBelowMin,
     ),
-    subject: l.classCsvSubject,
+    title: l.classCsvSubject,
   );
 }
 

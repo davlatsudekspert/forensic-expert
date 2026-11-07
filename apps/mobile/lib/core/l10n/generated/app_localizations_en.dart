@@ -14339,4 +14339,22 @@ class AppLocalizationsEn extends AppLocalizations {
   String legalInForceUntil(String date) {
     return 'In force until $date';
   }
+
+  @override
+  String get resultsExportExcel => 'Excel (.xlsx)';
+
+  @override
+  String get resultsExportExcelBody => 'Spreadsheet: for sorting and editing';
+
+  @override
+  String get resultsExportPdf => 'PDF';
+
+  @override
+  String get resultsExportPdfBody => 'For printing and sending';
+
+  @override
+  String get resultsExportCsv => 'CSV';
+
+  @override
+  String get resultsExportCsvBody => 'Plain-text table';
 }

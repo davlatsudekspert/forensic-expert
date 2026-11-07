@@ -14,6 +14,13 @@ import '../helpers/class_groups_world.dart';
 import '../helpers/pump_app.dart' show testDefaultPlan;
 
 class _FakeShare implements ClassFileShare {
+  @override
+  Future<void> shareFile({
+    required String fileName,
+    required Uint8List bytes,
+    required String mimeType,
+    String? subject,
+  }) async {}
   final shared = <({String name, String content})>[];
 
   @override
@@ -173,6 +180,8 @@ void main() {
       lessThan(tester.getRect(find.byKey(const Key('nav.floating'))).top),
     );
     await tester.tap(csvBtn);
+    await frames(tester);
+    await tester.tap(find.byKey(const Key('results.export.csv')));
     await frames(tester);
     final f = share.shared.single;
     expect(

@@ -14415,4 +14415,23 @@ class AppLocalizationsRu extends AppLocalizations {
   String legalInForceUntil(String date) {
     return 'Действует до $date';
   }
+
+  @override
+  String get resultsExportExcel => 'Excel (.xlsx)';
+
+  @override
+  String get resultsExportExcelBody =>
+      'Таблица: для сортировки и редактирования';
+
+  @override
+  String get resultsExportPdf => 'PDF';
+
+  @override
+  String get resultsExportPdfBody => 'Для печати и отправки';
+
+  @override
+  String get resultsExportCsv => 'CSV';
+
+  @override
+  String get resultsExportCsvBody => 'Простая текстовая таблица';
 }

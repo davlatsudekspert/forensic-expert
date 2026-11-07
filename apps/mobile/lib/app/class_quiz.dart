@@ -209,6 +209,14 @@ abstract interface class ClassFileShare {
     required String content,
     String? subject,
   });
+
+  /// Ikkilik fayl (Excel/PDF) — tizim ulashish oynasi.
+  Future<void> shareFile({
+    required String fileName,
+    required Uint8List bytes,
+    required String mimeType,
+    String? subject,
+  });
 }
 
 class NativeClassFileShare implements ClassFileShare {
@@ -230,6 +238,22 @@ class NativeClassFileShare implements ClassFileShare {
             name: fileName,
           ),
         ],
+        fileNameOverrides: [fileName],
+        subject: subject,
+      ),
+    );
+  }
+
+  @override
+  Future<void> shareFile({
+    required String fileName,
+    required Uint8List bytes,
+    required String mimeType,
+    String? subject,
+  }) async {
+    await SharePlus.instance.share(
+      ShareParams(
+        files: [XFile.fromData(bytes, mimeType: mimeType, name: fileName)],
         fileNameOverrides: [fileName],
         subject: subject,
       ),

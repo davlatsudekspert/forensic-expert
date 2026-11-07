@@ -246,6 +246,13 @@ Act calcSample(String toolId) => seq([
 
 class _Share implements ClassFileShare {
   @override
+  Future<void> shareFile({
+    required String fileName,
+    required Uint8List bytes,
+    required String mimeType,
+    String? subject,
+  }) async {}
+  @override
   Future<void> shareCsv({
     required String fileName,
     required String content,

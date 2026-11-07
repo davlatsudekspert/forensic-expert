@@ -5,7 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../app/class_quiz.dart'
-    show ClassScreenAwake, classFileShareProvider, classScreenAwakeProvider;
+    show ClassScreenAwake, classScreenAwakeProvider;
 import '../../../app/oral_group.dart';
 import '../../../app/plan.dart';
 import '../../../app/routes.dart';
@@ -20,6 +20,7 @@ import '../../../domain/plan/plan_models.dart';
 import '../../class_quiz/presentation/class_quiz_widgets.dart'
     show ClassCodeBanner, ClassQr, ClassTeacherGate;
 import '../../pro/presentation/pro_gate.dart' show openPro;
+import '../../results_export/presentation/results_export_sheet.dart';
 import 'oral_group_widgets.dart';
 
 /// Stream natijasidan oxirgi yaxshi qiymatni saqlaydi: bitta polling xatosi
@@ -623,19 +624,19 @@ class _ResultsBody extends ConsumerWidget {
     final l = AppLocalizations.of(context);
     final messenger = ScaffoldMessenger.of(context);
     try {
-      await ref
-          .read(classFileShareProvider)
-          .shareCsv(
-            fileName: OralGroupCsv.fileName(st.session.code, DateTime.now()),
-            content: OralGroupCsv.build(
-              st.participants,
-              nameLabel: l.oralGroupCsvName,
-              ticketLabel: l.oralGroupCsvTicket,
-              totalLabel: l.oralGroupCsvTotal,
-              questionLabel: l.oralGroupCsvQuestion,
-            ),
-            subject: l.oralGroupResultsTitle,
-          );
+      await showResultsExportSheet(
+        context,
+        ref,
+        csvFileName: OralGroupCsv.fileName(st.session.code, DateTime.now()),
+        csv: OralGroupCsv.build(
+          st.participants,
+          nameLabel: l.oralGroupCsvName,
+          ticketLabel: l.oralGroupCsvTicket,
+          totalLabel: l.oralGroupCsvTotal,
+          questionLabel: l.oralGroupCsvQuestion,
+        ),
+        title: l.oralGroupResultsTitle,
+      );
     } on Object {
       messenger.showSnackBar(SnackBar(content: Text(l.classErrServer)));
     }

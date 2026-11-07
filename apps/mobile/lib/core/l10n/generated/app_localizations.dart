@@ -24656,6 +24656,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'In force until {date}'**
   String legalInForceUntil(String date);
+
+  /// Results export: Excel option.
+  ///
+  /// In en, this message translates to:
+  /// **'Excel (.xlsx)'**
+  String get resultsExportExcel;
+
+  /// Results export: Excel hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Spreadsheet: for sorting and editing'**
+  String get resultsExportExcelBody;
+
+  /// Results export: PDF option.
+  ///
+  /// In en, this message translates to:
+  /// **'PDF'**
+  String get resultsExportPdf;
+
+  /// Results export: PDF hint.
+  ///
+  /// In en, this message translates to:
+  /// **'For printing and sending'**
+  String get resultsExportPdfBody;
+
+  /// Results export: CSV option.
+  ///
+  /// In en, this message translates to:
+  /// **'CSV'**
+  String get resultsExportCsv;
+
+  /// Results export: CSV hint.
+  ///
+  /// In en, this message translates to:
+  /// **'Plain-text table'**
+  String get resultsExportCsvBody;
 }
 
 class _AppLocalizationsDelegate

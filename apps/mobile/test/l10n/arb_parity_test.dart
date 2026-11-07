@@ -35,6 +35,10 @@ void main() {
     'reagentUnitG',
     'languageOptionSemantics',
     // Ustoz kartasi (2026-10-31): tarmoq brend nomlari va namunaviy havola.
+    // Fayl formatlari nomlari (Excel/PDF/CSV) — barcha tillarda bir xil.
+    'resultsExportExcel',
+    'resultsExportPdf',
+    'resultsExportCsv',
     'tcNetTelegram',
     'tcNetInstagram',
     'tcNetYoutube',

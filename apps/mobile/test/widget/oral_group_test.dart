@@ -2,6 +2,7 @@
 // natijalar; talaba qo‘shilish → bilet → tayyor → chaqirildi → o‘z bali;
 // server xatolari; rol himoyasi; 320 dp / 2× shrift (uz/ru/en).
 import 'dart:math' as math;
+import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -77,6 +78,13 @@ final _decks = {
 };
 
 class _FakeShare implements ClassFileShare {
+  @override
+  Future<void> shareFile({
+    required String fileName,
+    required Uint8List bytes,
+    required String mimeType,
+    String? subject,
+  }) async {}
   final shared = <({String name, String content})>[];
 
   @override
@@ -362,6 +370,7 @@ void main() {
       expect(find.text('Ali Valiyev'), findsOne);
       expect(find.text('75 / 100'), findsOne);
       await _tap(tester, _key('oralgroup.export'));
+      await _tap(tester, find.byKey(const Key('results.export.csv')));
       expect(w.share.shared, hasLength(1));
       expect(w.share.shared.single.name, startsWith('og_zaki_imtihon_'));
       expect(

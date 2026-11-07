@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -16,6 +17,13 @@ import 'package:forensic_expert/domain/ports/class_quiz_ports.dart';
 import '../helpers/pump_app.dart';
 
 class _FakeShare implements ClassFileShare {
+  @override
+  Future<void> shareFile({
+    required String fileName,
+    required Uint8List bytes,
+    required String mimeType,
+    String? subject,
+  }) async {}
   final shared = <({String name, String content})>[];
 
   @override
@@ -225,6 +233,8 @@ void main() {
       expect(find.textContaining('qarzdor'), findsNothing);
       await tester.ensureVisible(find.byKey(const Key('class.exportButton')));
       await tester.tap(find.byKey(const Key('class.exportButton')));
+      await _frames(tester);
+      await tester.tap(find.byKey(const Key('results.export.csv')));
       await _frames(tester);
       final file = w.share.shared.single;
       expect(
