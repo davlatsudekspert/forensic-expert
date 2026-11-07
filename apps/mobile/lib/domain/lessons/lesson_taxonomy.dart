@@ -1,5 +1,5 @@
-/// Darslar akademik tuzilmasi (egasi, 2026-11-07): 1) Bioetika (mustaqil fan),
-/// 2) Sud tibbiyoti (4 fakultet + ichki bob «Sud-tibbiy toksikologiya»),
+/// Darslar akademik tuzilmasi (egasi, 2026-11-07): 1) Sud tibbiyoti (Bioetika
+/// birinchi bo‘lim + 4 fakultet + ichki bob «Sud-tibbiy toksikologiya»),
 /// 3) Farmatsiya fakulteti — Toksikologik kimyo. Tartib `sortOrder` bilan,
 /// tarjima qilingan nomga yoki alifboga bog‘liq emas. [course] — serverdagi
 /// barqaror kurs nomi (identifikator), ekranda tilga qarab ko‘rsatiladi.
@@ -42,15 +42,12 @@ abstract final class LessonTaxonomy {
   static const devices = 'Apparatlar bilan ishlash';
 
   static const subjects = <LessonSubject>[
-    LessonSubject(
-      id: LessonSubjectId.bioethics,
-      sortOrder: 1,
-      courses: [bioethics],
-    ),
+    // Bioetika — Sud tibbiyoti ichida, birinchi bo‘lim (egasi, 2026-11-07:
+    // darsliklarda, jumladan G‘iyosov kitobida ham shu tartib).
     LessonSubject(
       id: LessonSubjectId.forensic,
       sortOrder: 2,
-      courses: [medicine, pediatrics, dentistry, prevention],
+      courses: [bioethics, medicine, pediatrics, dentistry, prevention],
       chapter: forensicToxChapter,
     ),
     LessonSubject(

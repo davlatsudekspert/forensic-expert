@@ -239,11 +239,9 @@ void main() {
     );
     await open(tester, lessons: svc);
     double top(String key) => tester.getTopLeft(find.byKey(Key(key))).dy;
-    // 1-daraja: Bioetika → Sud tibbiyoti → Farmatsiya (Toksikologik kimyo).
-    expect(
-      top('lessons.subject.bioethics'),
-      lessThan(top('lessons.subject.forensic')),
-    );
+    // 1-daraja: Sud tibbiyoti → Farmatsiya (Toksikologik kimyo); Bioetika
+    // alohida fan emas — Sud tibbiyoti ichida birinchi bo‘lim.
+    expect(find.byKey(const Key('lessons.subject.bioethics')), findsNothing);
     expect(
       top('lessons.subject.forensic'),
       lessThan(top('lessons.subject.pharmacy')),
@@ -253,8 +251,9 @@ void main() {
     expect(find.byKey(const Key('lessons.chapter')), findsNothing);
     await tester.tap(find.byKey(const Key('lessons.subject.forensic')));
     await tester.pumpAndSettle();
-    // 2-daraja: 4 fakultet shu tartibda, so‘ng ichki bob.
+    // 2-daraja: Bioetika, 4 fakultet shu tartibda, so‘ng ichki bob.
     final keys = [
+      'lessons.faculty.Bioetika',
       'lessons.faculty.Davolash ishi fakulteti',
       'lessons.faculty.Pediatriya fakulteti',
       'lessons.faculty.Stomatologiya fakulteti',
