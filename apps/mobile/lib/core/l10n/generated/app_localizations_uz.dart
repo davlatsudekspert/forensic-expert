@@ -14160,4 +14160,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get teacherNotebookTitle => 'Ustoz ish daftari';
+
+  @override
+  String get areasSoonTitle => 'Tez orada';
 }

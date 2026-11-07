@@ -43,7 +43,7 @@ void main() {
       initialLocation: Routes.pro,
       proEnabled: false,
     );
-    expect(find.byKey(const Key('home.core')), findsOneWidget);
+    expect(find.byKey(const Key('home.areas')), findsOneWidget);
   });
 
   testWidgets('Ustoz: guruh yaratish qulfsiz', (t) async {

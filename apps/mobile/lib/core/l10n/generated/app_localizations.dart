@@ -24590,6 +24590,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Teacher’s Notebook'**
   String get teacherNotebookTitle;
+
+  /// Expertise areas: group of areas without content yet.
+  ///
+  /// In en, this message translates to:
+  /// **'Coming soon'**
+  String get areasSoonTitle;
 }
 
 class _AppLocalizationsDelegate

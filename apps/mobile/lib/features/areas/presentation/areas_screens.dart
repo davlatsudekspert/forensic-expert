@@ -32,27 +32,95 @@ class ExpertiseAreasScreen extends ConsumerWidget {
       label: has ? l.areaHasMaterials : l.progStatusPreparing,
       tone: has ? 0 : 2,
     );
-    Widget byModule(HomeModule m, IconData icon, {required String key}) =>
+    // (tayyor?, kartа) — tayyorlar yuqorida, mazmuni yo‘qlari «Tez orada»
+    // guruhida (egasi, 2026-11-06: bo‘sh bo‘limlar va’da qilinmaydi).
+    (bool, Widget) byModule(
+      HomeModule m,
+      IconData icon, {
+      required String key,
+    }) => (
+      true,
+      Padding(
+        padding: const EdgeInsets.only(bottom: FeSpace.xs),
+        child: EntryTile(
+          key: Key(key),
+          icon: icon,
+          title: m.label(l),
+          badge: badge(true),
+          onTap: () => context.push(m.route),
+        ),
+      ),
+    );
+    (bool, Widget) byDiscipline(ForensicDiscipline d, IconData icon) {
+      final has = disciplineHasMaterials(d, knowledge, library);
+      return (
+        has,
         Padding(
           padding: const EdgeInsets.only(bottom: FeSpace.xs),
           child: EntryTile(
-            key: Key(key),
+            key: Key('areas.${d.code}'),
             icon: icon,
-            title: m.label(l),
-            badge: badge(true),
-            onTap: () => context.push(m.route),
+            title: l.disciplineName(d),
+            badge: badge(has),
+            onTap: () => context.push(Routes.discipline(d.code)),
           ),
-        );
-    Widget byDiscipline(ForensicDiscipline d, IconData icon) => Padding(
-      padding: const EdgeInsets.only(bottom: FeSpace.xs),
-      child: EntryTile(
-        key: Key('areas.${d.code}'),
-        icon: icon,
-        title: l.disciplineName(d),
-        badge: badge(disciplineHasMaterials(d, knowledge, library)),
-        onTap: () => context.push(Routes.discipline(d.code)),
+        ),
+      );
+    }
+
+    // Tartib: sud-kimyo (asosiy), sud tibbiyoti, patologiya, genetika/DNK,
+    // biologiya, gistologiya, kriminalistika, radiologiya.
+    final entries = <(bool, Widget)>[
+      byModule(
+        HomeModule.toxicology,
+        Icons.science_outlined,
+        key: 'areas.chemistry',
       ),
-    );
+      byModule(
+        HomeModule.forensicMedicine,
+        Icons.monitor_heart_outlined,
+        key: 'areas.medicine',
+      ),
+      byDiscipline(
+        ForensicDiscipline.forensicPathology,
+        Icons.biotech_outlined,
+      ),
+      (
+        true,
+        Padding(
+          padding: const EdgeInsets.only(bottom: FeSpace.xs),
+          child: EntryTile(
+            key: const Key('areas.genetics'),
+            icon: Icons.hub_outlined,
+            title: l.disciplineName(ForensicDiscipline.forensicGenetics),
+            badge: badge(true),
+            onTap: () => context.push(Routes.dna),
+          ),
+        ),
+      ),
+      byDiscipline(
+        ForensicDiscipline.forensicBiology,
+        Icons.bubble_chart_outlined,
+      ),
+      byModule(
+        HomeModule.histology,
+        Icons.blur_on_outlined,
+        key: 'areas.histology',
+      ),
+      byDiscipline(ForensicDiscipline.medicalCriminalistics, Icons.fingerprint),
+      byDiscipline(
+        ForensicDiscipline.forensicRadiology,
+        Icons.view_in_ar_outlined,
+      ),
+    ];
+    final ready = [
+      for (final e in entries)
+        if (e.$1) e.$2,
+    ];
+    final soon = [
+      for (final e in entries)
+        if (!e.$1) e.$2,
+    ];
 
     return Scaffold(
       appBar: AppBar(title: FeAppBarTitle(l.areasTitle)),
@@ -70,49 +138,17 @@ class ExpertiseAreasScreen extends ConsumerWidget {
                     text: l.areasIntro,
                   ),
                   const SizedBox(height: FeSpace.sm),
-                  byModule(
-                    HomeModule.forensicMedicine,
-                    Icons.monitor_heart_outlined,
-                    key: 'areas.medicine',
-                  ),
-                  byDiscipline(
-                    ForensicDiscipline.forensicPathology,
-                    Icons.biotech_outlined,
-                  ),
-                  byModule(
-                    HomeModule.toxicology,
-                    Icons.science_outlined,
-                    key: 'areas.chemistry',
-                  ),
-                  byDiscipline(
-                    ForensicDiscipline.forensicBiology,
-                    Icons.bubble_chart_outlined,
-                  ),
-                  byModule(
-                    HomeModule.histology,
-                    Icons.blur_on_outlined,
-                    key: 'areas.histology',
-                  ),
-                  byDiscipline(
-                    ForensicDiscipline.medicalCriminalistics,
-                    Icons.fingerprint,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: FeSpace.xs),
-                    child: EntryTile(
-                      key: const Key('areas.genetics'),
-                      icon: Icons.hub_outlined,
-                      title: l.disciplineName(
-                        ForensicDiscipline.forensicGenetics,
+                  ...ready,
+                  if (soon.isNotEmpty) ...[
+                    FeSectionHeader(
+                      l.areasSoonTitle,
+                      padding: const EdgeInsets.only(
+                        top: FeSpace.md,
+                        bottom: FeSpace.xs,
                       ),
-                      badge: badge(true),
-                      onTap: () => context.push(Routes.dna),
                     ),
-                  ),
-                  byDiscipline(
-                    ForensicDiscipline.forensicRadiology,
-                    Icons.view_in_ar_outlined,
-                  ),
+                    ...soon,
+                  ],
                   const SizedBox(height: FeSpace.xs),
                   EntryTile(
                     key: const Key('areas.all'),

@@ -37,6 +37,9 @@ k('lessonSubjectFacultiesNote', 'Forensic Medicine: faculties note.', 'Fakultetl
 k('teacherNotebookTitle', 'Casebook title in Teacher mode.',
   'Ustoz ish daftari', 'Журнал преподавателя', 'Teacher’s Notebook')
 
+k('areasSoonTitle', 'Expertise areas: group of areas without content yet.',
+  'Tez orada', 'Скоро', 'Coming soon')
+
 for i, lang in enumerate(('uz', 'ru', 'en')):
     f = D / f'app_{lang}.arb'
     b = json.loads(f.read_text(encoding='utf-8'),

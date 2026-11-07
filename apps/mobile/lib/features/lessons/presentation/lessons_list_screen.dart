@@ -25,7 +25,11 @@ import 'lesson_viewer_screen.dart' show LessonFailureView;
 /// «Darslar» ro‘yxati: qidiruv (server + tezkor mahalliy filtr), kurs
 /// bo‘yicha guruhlar. Ustoz bo‘lmasa server 403 beradi — do‘stona xabar.
 class LessonsListScreen extends ConsumerStatefulWidget {
-  const LessonsListScreen({super.key, this.exam = false});
+  const LessonsListScreen({super.key, this.exam = false, this.initialCourse});
+
+  /// Boshlang‘ich kurs (barqaror nom): ro‘yxat to‘g‘ridan-to‘g‘ri shu kursda
+  /// ochiladi (Mutaxassis: «Apparatlar bilan ishlash», 1 bosish).
+  final String? initialCourse;
 
   /// «Imtihon rejimi»: mavzuni bosganda dars emas, shu mavzuning testi
   /// (`Routes.groupPractice`) ochiladi. Talaba paneli kartasi shu yerga olib boradi.
@@ -44,6 +48,17 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
   /// Tanlangan fan (2-daraja: Sud tibbiyoti ichida) va kurs/fakultet.
   LessonSubjectId? _subject;
   String? _course;
+
+  @override
+  void initState() {
+    super.initState();
+    final c = widget.initialCourse;
+    if (c != null && c.isNotEmpty) {
+      _course = c;
+      final sub = LessonTaxonomy.subjectOf(c);
+      if (sub != null && !sub.isLeaf) _subject = sub.id;
+    }
+  }
 
   /// Qidiruv kechikishi (testlarda ham shu qiymat).
   static const debounceDelay = Duration(milliseconds: 350);

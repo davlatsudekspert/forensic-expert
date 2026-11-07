@@ -14298,4 +14298,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get teacherNotebookTitle => 'Teacher’s Notebook';
+
+  @override
+  String get areasSoonTitle => 'Coming soon';
 }

@@ -25,16 +25,16 @@ void main() {
   setUpAll(() => testDefaultPlan = Plan.expert);
   tearDownAll(() => testDefaultPlan = null);
 
-  testWidgets('mutaxassis: Vositalar → GC-MS; rasm bilan izoh va «model emas» '
+  testWidgets('mutaxassis: GC-MS sahifasi; rasm bilan izoh va «model emas» '
       'eslatmasi doim ko‘rinadi; qismlar 1–10 panelda', (tester) async {
     await pumpApp(
       tester,
       settings: completedSettings(lang: 'uz'),
       overrides: _overrides(),
-      initialLocation: Routes.tools,
+      initialLocation: Routes.gcms,
     );
-    await tester.tap(_key('tools.gcms'));
     await tester.pumpAndSettle();
+    // Vositalardan olib tashlangan (2026-11-06); sahifa o‘zi ishlaydi.
     expect(_key('gcms.image'), findsOne);
     expect(find.text('Sxematik tasvir — aniq model emas'), findsOne);
     expect(
@@ -129,7 +129,7 @@ void main() {
         overrides: _overrides(),
         initialLocation: Routes.tools,
       );
-      expect(_key('tools.gcms'), findsNothing);
+      expect(_key('tools.gcms'), findsNothing); // hech bir rejimda yo‘q
       await tester.pumpWidget(const SizedBox());
     }
   });

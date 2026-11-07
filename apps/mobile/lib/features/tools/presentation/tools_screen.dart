@@ -8,14 +8,12 @@ import '../../../core/design/theme.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
-import '../../../core/settings/app_settings.dart';
 import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/catalog/tools_catalog.dart';
 import '../../../domain/plan/plan_models.dart';
 import '../../casebook/presentation/casebook_screens.dart'
     show casebookTitleFor;
-import '../../pro/presentation/pro_gate.dart' show proSectionLocked;
 import '../tool_strings.dart';
 import 'tool_tile.dart';
 
@@ -84,43 +82,9 @@ class ToolsScreen extends ConsumerWidget {
                       ],
                     ),
                   ),
-                  // Apparat sxemasi (LabGuide paketi): Mutaxassis rejimida.
-                  if (ref.watch(settingsControllerProvider).userMode ==
-                      UserMode.professional) ...[
-                    const SizedBox(height: FeSpace.xs),
-                    FeCard(
-                      key: const Key('tools.gcms'),
-                      onTap: () => context.push(Routes.gcms),
-                      child: Row(
-                        children: [
-                          Icon(
-                            proSectionLocked(ref, ProFeature.proTools)
-                                ? Icons.lock_outline
-                                : Icons.biotech_outlined,
-                            color: c.accent,
-                          ),
-                          const SizedBox(width: FeSpace.sm),
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  l.gcmsTitle,
-                                  style: Theme.of(context).textTheme.titleSmall,
-                                ),
-                                Text(
-                                  l.gcmsEntryHint,
-                                  style: Theme.of(context).textTheme.bodySmall
-                                      ?.copyWith(color: c.textSecondary),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Icon(Icons.chevron_right, color: c.textSecondary),
-                        ],
-                      ),
-                    ),
-                  ],
+                  // GC-MS apparat sxemasi Vositalardan olib tashlandi (egasi,
+                  // 2026-11-06): u «Usullar va apparatlar» va Sud-kimyo
+                  // laboratoriya usullari ichida (Routes.gcms).
                   for (final category in ToolCategory.values) ...[
                     FeSectionHeader(l.toolCategoryName(category)),
                     for (final tool in ToolsCatalog.inCategory(category))

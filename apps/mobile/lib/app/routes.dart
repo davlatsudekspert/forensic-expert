@@ -329,6 +329,10 @@ abstract final class Routes {
 
   /// «Darslar» (ustoz): ro‘yxat va bitta darsni ko‘rish.
   static const lessons = '/home/teacher/lessons';
+
+  /// «Darslar» ro‘yxati bitta kurs ochiq holda (masalan, Apparatlar kursi).
+  static String lessonsCourse(String course) =>
+      Uri(path: lessons, queryParameters: {'course': course}).toString();
   static String lesson(String topicId) =>
       '/home/teacher/lessons/${Uri.encodeComponent(topicId)}';
 

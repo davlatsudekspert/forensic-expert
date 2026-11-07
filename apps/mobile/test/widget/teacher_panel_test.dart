@@ -113,7 +113,7 @@ void main() {
       // Talabada «Asosiy fanlar» yo‘q (2026-11-04): Home — «Mening akademiyam».
       expect(
         find.byKey(
-          Key(mode == UserMode.student ? 'desk.student' : 'home.core'),
+          Key(mode == UserMode.student ? 'desk.student' : 'home.areas'),
         ),
         findsOneWidget,
       );

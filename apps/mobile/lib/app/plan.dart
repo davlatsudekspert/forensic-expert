@@ -17,6 +17,7 @@ import '../domain/lessons/lesson_models.dart';
 import '../domain/plan/plan_models.dart';
 import '../domain/plan/pro_split.dart';
 import '../domain/ports/plan_ports.dart';
+import 'app_config.dart';
 import 'lessons.dart';
 import 'providers.dart';
 import 'support.dart' show isAdminProvider;
@@ -119,11 +120,15 @@ class EntitlementsNotifier extends AsyncNotifier<Entitlements> {
 /// Qat’iy Bepul/Pro bo‘linishi yoqilganmi. Standart — [kProStrict] (yig‘ish
 /// bayrog‘i `FE_PRO_STRICT`, standart o‘chiq); masofadan yoqilmaydi. Testlarda
 /// `overrideWithValue` bilan almashtiriladi.
-final proStrictProvider = Provider<bool>((ref) => kProStrict);
+final proStrictProvider = Provider<bool>(
+  (ref) => kProStrict && kEnableProPaywall,
+);
 
 /// Pro yoqilganmi ([kProEnabled]; testlarda almashtiriladi). O‘chiq bo‘lsa
 /// [proAllowedProvider] har doim `true`.
-final proEnabledProvider = Provider<bool>((ref) => kProEnabled);
+final proEnabledProvider = Provider<bool>(
+  (ref) => kProEnabled && kEnableProPaywall,
+);
 
 /// [feature] ochiqmi (yuklanayotgan yoki xatoda — yopiq).
 ///

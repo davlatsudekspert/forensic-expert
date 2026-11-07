@@ -18,6 +18,7 @@ import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/brand_mark.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/knowledge/knowledge_models.dart';
+import '../../../domain/lessons/lesson_taxonomy.dart';
 import '../../../domain/plan/plan_models.dart' show ProFeature;
 import '../../../domain/plan/pro_split.dart';
 import '../../learn/presentation/learn_screens.dart' show ClassQuizEntryCard;
@@ -323,22 +324,13 @@ class HomeScreen extends ConsumerWidget {
                       body: l.areasHomeBody,
                       onTap: () => context.push(Routes.areas),
                     ),
-                    // «Asosiy fanlar» (2 ta, egasi qarori 2026-11-05) saqlangan.
-                    if (coreTop) ...[
-                      FeSectionHeader(
-                        l.homeCoreTitle,
-                        padding: const EdgeInsets.only(
-                          top: FeSpace.lg,
-                          bottom: FeSpace.xs,
-                        ),
-                      ),
-                      const _CoreDisciplinesCard(),
-                    ],
+                    // «Asosiy fanlar» Mutaxassisdan olib tashlandi (egasi,
+                    // 2026-11-06): Toksikologiya va boshqa fanlar — Ustoz/Talabada.
                     const SizedBox(height: FeSpace.lg),
                     const ExpertWorkbench(),
                     const SizedBox(height: FeSpace.sm),
-                    const _AllDisciplinesCard(),
-                    const SizedBox(height: FeSpace.sm),
+                    // «Barcha sud-ekspert fanlari» — Ekspertiza yo‘nalishlari
+                    // ichida (takror yo‘q).
                     _ResourceTile(
                       key: const Key('home.methodsDevices'),
                       icon: Icons.build_outlined,
@@ -358,6 +350,18 @@ class HomeScreen extends ConsumerWidget {
                         HomeAction._module(HomeModule.substances),
                         HomeAction.guidelines,
                       ],
+                    ),
+                    // Apparatlar bilan ishlash kursi qaytarildi (1 bosish).
+                    const SizedBox(height: FeSpace.sm),
+                    _ResourceTile(
+                      key: const Key('home.instruments'),
+                      icon: Icons.biotech_outlined,
+                      title: l.homeInstrumentsTitle,
+                      body: l.homeInstrumentsBody,
+                      lock: ProFeature.instrumentsCourseFull,
+                      onTap: () => context.push(
+                        Routes.lessonsCourse(LessonTaxonomy.devices),
+                      ),
                     ),
                   ] else ...[
                     if (coreTop) ...[

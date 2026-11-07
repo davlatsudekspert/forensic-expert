@@ -19,7 +19,7 @@ void main() {
       ThemeMode.dark,
       const Size(390, 844),
       1,
-      const Key('home.module.toxicology'),
+      const Key('home.areas'),
     ),
     (
       'lux_02_home_resources_en_light',
@@ -27,7 +27,7 @@ void main() {
       ThemeMode.light,
       const Size(390, 844),
       1,
-      const Key('home.allDisciplines'),
+      const Key('home.methodsDevices'),
     ),
     (
       'lux_03_home_areas_ru_320_x2',
@@ -35,7 +35,7 @@ void main() {
       ThemeMode.light,
       const Size(320, 640),
       2,
-      const Key('home.module.toxicology'),
+      const Key('home.areas'),
     ),
     (
       'lux_04_home_resources_ru_dark_320_x2',
@@ -43,7 +43,7 @@ void main() {
       ThemeMode.dark,
       const Size(320, 640),
       2,
-      const Key('home.allDisciplines'),
+      const Key('home.methodsDevices'),
     ),
   ];
 

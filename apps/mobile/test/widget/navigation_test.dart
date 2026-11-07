@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:forensic_expert/app/routes.dart';
 import 'package:forensic_expert/core/settings/app_settings.dart';
 import 'package:forensic_expert/core/settings/settings_repository.dart';
 import 'package:forensic_expert/features/ai/presentation/ai_screen.dart';
@@ -39,12 +40,10 @@ void main() {
 
   testWidgets('Home modullari va Global Search kirish nuqtasi', (tester) async {
     await pumpApp(tester, settings: completedSettings());
-    for (final m in [
-      'Forensic Medicine',
-      'Forensic chemical examination',
-      'Substances',
-      'Forensic AI',
-    ]) {
+    // Mutaxassis Asosiyda (2026-11-06): fanlar kartalari yo‘q — ular
+    // Ekspertiza yo‘nalishlari ichida; Ma’lumotnomalar va Ish stolim bor.
+    expect(find.byKey(const Key('home.areas')), findsOneWidget);
+    for (final m in ['Substances', 'Forensic AI']) {
       // Ekspert «Ish stolim»i ham «Forensic AI» kartasini beradi.
       expect(
         find.text(m),
@@ -61,10 +60,12 @@ void main() {
 
   testWidgets('modul sahifasi mavjud manbali yozuvlarni ko‘rsatadi '
       '(bo‘sh holat emas)', (tester) async {
-    await pumpApp(tester, settings: completedSettings());
-    await tester.ensureVisible(find.byKey(const Key('home.module.toxicology')));
-    await tester.pumpAndSettle();
-    await tester.tap(find.byKey(const Key('home.module.toxicology')));
+    await pumpApp(
+      tester,
+      settings: completedSettings(),
+      initialLocation: Routes.areas,
+    );
+    await tester.tap(find.byKey(const Key('areas.chemistry')));
     await tester.pumpAndSettle();
     expect(find.byKey(const Key('moduleHub.sourcedNote')), findsOneWidget);
     expect(find.byKey(const Key('moduleHub.substances')), findsOneWidget);
@@ -154,7 +155,6 @@ void main() {
   testWidgets('rejimga qarab Home tezkor amallari va bo‘limlar tartibi', (
     tester,
   ) async {
-    Offset at(String key) => tester.getTopLeft(find.byKey(Key(key)));
     // Talaba («Mening akademiyam», egasi qarori, 2026-11-04): «Asosiy fanlar»
     // kartasi yo‘q. Mutaxassisda asosiy fanlar eng tepada (2026-10-31).
     await pumpApp(tester, settings: completedSettings(mode: UserMode.student));
@@ -178,22 +178,21 @@ void main() {
     // Mutaxassis: asosiy fanlar → Ish stolim → moddalar, usullar,
     // kalkulyatorlar, AI.
     await pumpApp(tester, settings: completedSettings());
-    expect(find.text('Core disciplines'), findsOneWidget);
+    // «Asosiy fanlar» Mutaxassisdan olib tashlandi (2026-11-06).
+    expect(find.text('Core disciplines'), findsNothing);
     // Kalkulyatorlar, AI va Sudda so‘roq — «Ish stolim»da (takror yo‘q).
     expect(find.byKey(const Key('home.tools')), findsNothing);
     expect(find.byKey(const Key('home.courtPrep')), findsNothing);
     for (final m in ['forensicMedicine', 'toxicology']) {
-      expect(find.byKey(Key('home.module.$m')), findsOneWidget);
+      expect(find.byKey(Key('home.module.$m')), findsNothing);
     }
-    expect(
-      at('home.module.forensicMedicine').dy,
-      lessThan(at('home.module.substances').dy),
-    );
     expect(find.byKey(const Key('home.module.laboratory')), findsNothing);
     // Mutaxassis (2026-11-05): ixcham tartib — Ekspertiza yo‘nalishlari,
     // Usullar va apparatlar, Ma’lumotnomalar (Moddalar, Yo‘riqnomalar).
     expect(find.byKey(const Key('home.areas')), findsOneWidget);
     expect(find.byKey(const Key('home.methodsDevices')), findsOneWidget);
+    // Apparatlar bilan ishlash kursi Ma’lumotnomalarda (1 bosish).
+    expect(find.byKey(const Key('home.instruments')), findsOneWidget);
     expect(find.byKey(const Key('home.module.methods')), findsNothing);
     expect(find.byKey(const Key('home.module.ai')), findsNothing);
   });

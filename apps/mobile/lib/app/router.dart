@@ -500,7 +500,9 @@ final routerProvider = Provider<GoRouter>((ref) {
                       ),
                       GoRoute(
                         path: 'lessons',
-                        builder: (c, s) => const LessonsListScreen(),
+                        builder: (c, s) => LessonsListScreen(
+                          initialCourse: s.uri.queryParameters['course'],
+                        ),
                         routes: [
                           GoRoute(
                             path: ':id',

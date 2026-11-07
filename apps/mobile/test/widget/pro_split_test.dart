@@ -297,9 +297,12 @@ void main() {
         tester,
         size: _tall,
         settings: completedSettings(lang: 'uz'),
+        initialLocation: Routes.areas,
         overrides: [..._strict(true).cast()],
       );
-      await tester.tap(find.byKey(const Key('home.module.forensicMedicine')));
+      // Mutaxassis Asosiyda «Asosiy fanlar» yo‘q (2026-11-06): Sud tibbiyoti
+      // Ekspertiza yo‘nalishlari ichida.
+      await tester.tap(find.byKey(const Key('areas.medicine')));
       await tester.pumpAndSettle();
       expect(find.byType(ProLockCard), findsNothing);
       expect(find.byKey(const Key('fm.coverage')), findsOneWidget);
@@ -345,7 +348,7 @@ void main() {
       );
       expect(lockOn('tool.tool.lab.dilution'), findsOneWidget);
       expect(lockOn('tool.tool.lab.percent'), findsOneWidget);
-      expect(lockOn('tools.gcms'), findsOneWidget);
+      expect(find.byKey(const Key('tools.gcms')), findsNothing);
     });
   });
 

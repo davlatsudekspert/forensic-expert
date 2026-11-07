@@ -168,9 +168,7 @@ void main() {
     );
     expect(
       tester.getTopLeft(find.byKey(const Key('home.catalog'))).dy,
-      lessThan(
-        tester.getTopLeft(find.byKey(const Key('home.module.toxicology'))).dy,
-      ),
+      lessThan(tester.getTopLeft(find.byKey(const Key('home.areas'))).dy),
     );
     await tester.tap(find.byKey(const Key('nav.library')));
     await tester.pumpAndSettle();

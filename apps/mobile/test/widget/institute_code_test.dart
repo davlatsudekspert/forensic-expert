@@ -240,7 +240,7 @@ void main() {
       await tester.tap(find.byKey(const Key('devLimit.later')));
       await tester.pumpAndSettle();
       expect(find.byKey(const Key('devLimit.dialog')), findsNothing);
-      expect(find.byKey(const Key('home.core')), findsOneWidget);
+      expect(find.byKey(const Key('home.areas')), findsOneWidget);
     });
 
     testWidgets('server xatosi: jim, oyna yo‘q', (tester) async {

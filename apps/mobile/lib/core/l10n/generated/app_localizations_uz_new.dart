@@ -13341,4 +13341,7 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   @override
   String get teacherNotebookTitle =>
       toUzNewAlphabet(super.teacherNotebookTitle);
+
+  @override
+  String get areasSoonTitle => toUzNewAlphabet(super.areasSoonTitle);
 }
