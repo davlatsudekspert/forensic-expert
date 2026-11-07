@@ -10,7 +10,7 @@ import '../../../app/routes.dart';
 import '../../../app/tts.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
-import '../../../data/audio/lesson_audio_remote.dart';
+import '../../../app/lesson_audio.dart';
 import '../../../domain/plan/plan_models.dart' show ProFeature;
 import '../../../domain/ports/tts_ports.dart';
 

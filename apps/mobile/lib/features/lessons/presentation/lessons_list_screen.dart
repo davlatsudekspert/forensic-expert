@@ -52,6 +52,13 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
   @override
   void initState() {
     super.initState();
+    // Ro‘yxat xotirada bo‘lsa — darhol ko‘rsatiladi va fonda yangilanadi
+    // (eski qiymat yangisi kelguncha qoladi).
+    if (ref.read(lessonListProvider('')).hasValue) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) ref.invalidate(lessonListProvider(''));
+      });
+    }
     final c = widget.initialCourse;
     if (c != null && c.isNotEmpty) {
       _course = c;
@@ -299,6 +306,7 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
     }
     if (rows.isEmpty) {
       return ListView(
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
         padding: const EdgeInsets.symmetric(vertical: FeSpace.xl),
         children: [
           FeEmptyState(
@@ -310,6 +318,7 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
       );
     }
     return ListView(
+      keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
       key: const Key('lessons.structure'),
       padding: EdgeInsets.fromLTRB(
         0,
@@ -519,7 +528,7 @@ class _StructureRow extends StatelessWidget {
                   horizontal: FeSpace.sm,
                   vertical: 2,
                 ),
-                child: Text('$count', style: t.labelMedium),
+                child: Text(count.toString(), style: t.labelMedium),
               ),
             ),
             Icon(Icons.chevron_right_rounded, color: c.textSecondary),

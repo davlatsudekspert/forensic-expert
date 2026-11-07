@@ -8,7 +8,7 @@ import '../../../app/class_quiz.dart';
 import '../../../core/design/tokens.dart';
 import '../../../core/l10n/date_format.dart';
 import '../../../core/l10n/generated/app_localizations.dart';
-import '../../../data/results_export/results_pdf.dart';
+import '../../../app/results_export.dart';
 import '../../../domain/results_export/results_table.dart';
 import '../../../domain/results_export/results_xlsx.dart';
 

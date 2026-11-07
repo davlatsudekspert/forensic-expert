@@ -17,7 +17,7 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/settings/app_settings.dart' show UserMode;
 import '../../../core/settings/settings_controller.dart';
 import '../../../core/widgets/fe_components.dart';
-import '../../../data/audio/lesson_audio_remote.dart';
+import '../../../app/lesson_audio.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart' show ClassFailure;
 import '../../../domain/lessons/lesson_models.dart';
 import '../../../domain/plan/plan_models.dart';
