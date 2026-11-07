@@ -11551,6 +11551,94 @@
    "license_mode": "openReuse",
    "identifier_verified": true,
    "notes": "Litsenziya (PMC BioC API): CC BY. Jumla asl matndan (ABSTRACT) dasturiy ajratilgan; kuratsiya: phase5/curation_manual.json."
+  },
+  {
+   "source_id": "SRC-PMC12532691",
+   "source_type": "journal_article",
+   "title": "Fatal and nonfatal sharp force injuries to the limbs: a study of forensic autopsies in Sweden (2010-2019)",
+   "authors": [
+    "Mittendorf AF",
+    "Högberg NR",
+    "Joensuu T",
+    "Robinson Y",
+    "Wingren CJ",
+    "Rezaie AR"
+   ],
+   "journal": "International journal of legal medicine",
+   "publication_year": 2025,
+   "doi": "10.1007/s00414-025-03554-7",
+   "pmid": "40608122",
+   "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12532691/",
+   "accessed_date": "2026-10-05",
+   "tier": "tier2",
+   "evidence_level": "B",
+   "license_mode": "openReuse",
+   "identifier_verified": true,
+   "notes": "Litsenziya (PMC BioC API): CC BY. Jumla asl matndan (ABSTRACT) dasturiy ajratilgan; kuratsiya: phase5/curation_manual.json."
+  },
+  {
+   "source_id": "SRC-PMC10531952",
+   "source_type": "journal_article",
+   "title": "Exploring the Potential of Proteome Analysis as a Promising Tool for Evaluation of Sudden Cardiac Death (SCD) in Forensic Settings: A Literature Review",
+   "authors": [
+    "Sacco MA",
+    "Gualtieri S",
+    "Calanna L",
+    "Ricci P",
+    "Aquila I"
+   ],
+   "journal": "International journal of molecular sciences",
+   "publication_year": 2023,
+   "doi": "10.3390/ijms241814351",
+   "pmid": "37762655",
+   "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10531952/",
+   "accessed_date": "2026-10-05",
+   "tier": "tier2",
+   "evidence_level": "C",
+   "license_mode": "openReuse",
+   "identifier_verified": true,
+   "notes": "Litsenziya (PMC BioC API): CC BY. Jumla asl matndan (RESULTS) dasturiy ajratilgan; kuratsiya: phase5/curation_manual.json."
+  },
+  {
+   "source_id": "SRC-PMC12325459",
+   "source_type": "journal_article",
+   "title": "Autopsy characteristics of deaths due to pulmonary thromboembolism in northern and western denmark: a 10-year retrospective study",
+   "authors": [
+    "Christensen MR",
+    "Larsen AB",
+    "Boel LWT"
+   ],
+   "journal": "Forensic science, medicine, and pathology",
+   "publication_year": 2025,
+   "doi": "10.1007/s12024-024-00922-4",
+   "pmid": "39621285",
+   "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12325459/",
+   "accessed_date": "2026-10-05",
+   "tier": "tier2",
+   "evidence_level": "B",
+   "license_mode": "openReuse",
+   "identifier_verified": true,
+   "notes": "Litsenziya (PMC BioC API): CC BY. Jumla asl matndan (ABSTRACT) dasturiy ajratilgan; kuratsiya: phase5/curation_manual.json."
+  },
+  {
+   "source_id": "SRC-PMC12325412",
+   "source_type": "journal_article",
+   "title": "Identifying latent subgroups of primary head injury: an explorative latent class analysis on neuropathologically examined medico-legal autopsy cases",
+   "authors": [
+    "Laakko E",
+    "Oura P"
+   ],
+   "journal": "Forensic science, medicine, and pathology",
+   "publication_year": 2025,
+   "doi": "10.1007/s12024-024-00913-5",
+   "pmid": "39542972",
+   "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12325412/",
+   "accessed_date": "2026-10-05",
+   "tier": "tier2",
+   "evidence_level": "B",
+   "license_mode": "openReuse",
+   "identifier_verified": true,
+   "notes": "Litsenziya (PMC BioC API): CC BY. Jumla asl matndan (ABSTRACT) dasturiy ajratilgan; kuratsiya: phase5/curation_manual.json."
   }
  ],
  "substances": [
@@ -41424,6 +41512,66 @@
     "excerpt": ": Discovery of evidence of acute brain ischemia or hypoxia and its differentiation from agonal hypoxia represents a task of interest but extremely difficult in forensic neuropathology.",
     "section": "ABSTRACT"
    }
+  },
+  {
+   "claim_id": "C-FM-SHARP-FORCE-DEFINITION-P5",
+   "entity_type": "topic",
+   "entity_id": "fm-sharp-force",
+   "field": "definition",
+   "domain": "fm",
+   "declared_status": "NEEDS_REVIEW",
+   "evidence_level": "B",
+   "layer": "international_scientific",
+   "is_structured_value": false,
+   "value": {
+    "excerpt": "Sharp force injuries display varying patterns depending on the manner of death (homicide, suicide, accidental).",
+    "section": "ABSTRACT"
+   }
+  },
+  {
+   "claim_id": "C-FM-SUDDEN-CARDIAC-DEATH-DEFINITION-P5",
+   "entity_type": "topic",
+   "entity_id": "fm-sudden-cardiac-death",
+   "field": "definition",
+   "domain": "fm",
+   "declared_status": "NEEDS_REVIEW",
+   "evidence_level": "C",
+   "layer": "international_scientific",
+   "is_structured_value": false,
+   "value": {
+    "excerpt": "Evaluation of cases of sudden cardiac death always requires an autopsy, visualization of the severity of coronary artery disease, and evaluation of the specific case.",
+    "section": "RESULTS"
+   }
+  },
+  {
+   "claim_id": "C-FM-PULMONARY-EMBOLISM-DEFINITION-P5",
+   "entity_type": "topic",
+   "entity_id": "fm-pulmonary-embolism",
+   "field": "definition",
+   "domain": "fm",
+   "declared_status": "NEEDS_REVIEW",
+   "evidence_level": "B",
+   "layer": "international_scientific",
+   "is_structured_value": false,
+   "value": {
+    "excerpt": "Because pulmonary thromboembolism (PTE) has an inherent high risk of sudden and unexpected death, this condition is a classic entity in forensic casework.",
+    "section": "ABSTRACT"
+   }
+  },
+  {
+   "claim_id": "C-FM-TRAUMATIC-BRAIN-INJURY-DEFINITION-P5",
+   "entity_type": "topic",
+   "entity_id": "fm-traumatic-brain-injury",
+   "field": "definition",
+   "domain": "fm",
+   "declared_status": "NEEDS_REVIEW",
+   "evidence_level": "B",
+   "layer": "international_scientific",
+   "is_structured_value": false,
+   "value": {
+    "excerpt": "Traumatic brain injury (TBI) is a significant global health concern and frequently encountered in medico-legal autopsies.",
+    "section": "ABSTRACT"
+   }
   }
  ],
  "citations": [
@@ -46021,6 +46169,26 @@
    "claim_id": "C-HIS-BRAIN-HYPOXIA-MARKER-P5",
    "source_id": "SRC-PMC8238305",
    "locator": "ABSTRACT"
+  },
+  {
+   "claim_id": "C-FM-SHARP-FORCE-DEFINITION-P5",
+   "source_id": "SRC-PMC12532691",
+   "locator": "ABSTRACT"
+  },
+  {
+   "claim_id": "C-FM-SUDDEN-CARDIAC-DEATH-DEFINITION-P5",
+   "source_id": "SRC-PMC10531952",
+   "locator": "RESULTS"
+  },
+  {
+   "claim_id": "C-FM-PULMONARY-EMBOLISM-DEFINITION-P5",
+   "source_id": "SRC-PMC12325459",
+   "locator": "ABSTRACT"
+  },
+  {
+   "claim_id": "C-FM-TRAUMATIC-BRAIN-INJURY-DEFINITION-P5",
+   "source_id": "SRC-PMC12325412",
+   "locator": "ABSTRACT"
   }
  ],
  "instruments": [
@@ -48589,6 +48757,46 @@
     "ru": "Гипоксически-ишемические изменения мозга (гистология)",
     "uz": "Miya gipoksik-ishemik o‘zgarishlar (gistologiya)"
    }
+  },
+  {
+   "topic_id": "fm-sharp-force",
+   "area": "forensicMedicine",
+   "names": {
+    "en": "Sharp force injuries",
+    "ru": "Колото-резаные повреждения",
+    "uz": "Kesuvchi va sanchuvchi jarohatlar"
+   },
+   "discipline": "forensic_pathology"
+  },
+  {
+   "topic_id": "fm-sudden-cardiac-death",
+   "area": "forensicMedicine",
+   "names": {
+    "en": "Sudden cardiac death",
+    "ru": "Внезапная сердечная смерть",
+    "uz": "To‘satdan yurak o‘limi"
+   },
+   "discipline": "forensic_pathology"
+  },
+  {
+   "topic_id": "fm-pulmonary-embolism",
+   "area": "forensicMedicine",
+   "names": {
+    "en": "Fatal pulmonary embolism",
+    "ru": "Тромбоэмболия лёгочной артерии со смертельным исходом",
+    "uz": "O‘pka arteriyasi emboliyasidan o‘lim"
+   },
+   "discipline": "forensic_pathology"
+  },
+  {
+   "topic_id": "fm-traumatic-brain-injury",
+   "area": "forensicMedicine",
+   "names": {
+    "en": "Traumatic brain injury (autopsy)",
+    "ru": "Черепно-мозговая травма (вскрытие)",
+    "uz": "Bosh miya travmasi (otopsiya)"
+   },
+   "discipline": "forensic_pathology"
   }
  ],
  "methods": [

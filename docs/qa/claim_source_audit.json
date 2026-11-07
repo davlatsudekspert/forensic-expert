@@ -7,7 +7,7 @@
    "ABSTRACT_ONLY": 686,
    "NO_LOCATOR": 25,
    "PARTIAL": 73,
-   "SUPPORTED": 1592
+   "SUPPORTED": 1596
   },
   "auto_verdict": {
    "UNSUPPORTED": 1,
@@ -15,7 +15,7 @@
    "ABSTRACT_ONLY": 684,
    "NO_LOCATOR": 25,
    "PARTIAL": 72,
-   "SUPPORTED": 1588
+   "SUPPORTED": 1592
   },
   "by_corpus": {
    "bundle": {
@@ -24,7 +24,7 @@
     "ABSTRACT_ONLY": 9,
     "NO_LOCATOR": 6,
     "PARTIAL": 14,
-    "SUPPORTED": 875
+    "SUPPORTED": 879
    },
    "court_prep": {
     "UNSUPPORTED": 0,
@@ -43,7 +43,7 @@
     "SUPPORTED": 480
    }
   },
-  "claims": 2377,
+  "claims": 2381,
   "reviewed": 46,
   "general_rule_abstract_only_unreviewed": 7
  },
@@ -297,8 +297,8 @@
    "database/tier2/C": 202,
    "guideline/tier1/B": 2,
    "journal_article/tier2/A": 10,
-   "journal_article/tier2/B": 233,
-   "journal_article/tier2/C": 68,
+   "journal_article/tier2/B": 236,
+   "journal_article/tier2/C": 69,
    "journal_article/tier2/D": 32,
    "legislation/tier1/A": 8,
    "report/tier3/C": 1,
@@ -56137,6 +56137,92 @@
    "reasons": [],
    "text_sha": "14b642e305a7eef1",
    "text": ": Discovery of evidence of acute brain ischemia or hypoxia and its differentiation from agonal hypoxia represents a task of interest but extremely difficult in forensic neuropathology."
+  },
+  {
+   "id": "C-FM-SHARP-FORCE-DEFINITION-P5",
+   "corpus": "bundle",
+   "container": "fm-sharp-force",
+   "sources": [
+    {
+     "key": "SRC-PMC12532691",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "759e9bda44ddcf90",
+   "text": "Sharp force injuries display varying patterns depending on the manner of death (homicide, suicide, accidental)."
+  },
+  {
+   "id": "C-FM-SUDDEN-CARDIAC-DEATH-DEFINITION-P5",
+   "corpus": "bundle",
+   "container": "fm-sudden-cardiac-death",
+   "sources": [
+    {
+     "key": "SRC-PMC10531952",
+     "locators": [
+      "RESULTS"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [
+    "numbers_or_norms"
+   ],
+   "reasons": [],
+   "text_sha": "ed39da44ed8567de",
+   "text": "Evaluation of cases of sudden cardiac death always requires an autopsy, visualization of the severity of coronary artery disease, and evaluation of the specific case."
+  },
+  {
+   "id": "C-FM-PULMONARY-EMBOLISM-DEFINITION-P5",
+   "corpus": "bundle",
+   "container": "fm-pulmonary-embolism",
+   "sources": [
+    {
+     "key": "SRC-PMC12325459",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "20b16e473cbaae4c",
+   "text": "Because pulmonary thromboembolism (PTE) has an inherent high risk of sudden and unexpected death, this condition is a classic entity in forensic casework."
+  },
+  {
+   "id": "C-FM-TRAUMATIC-BRAIN-INJURY-DEFINITION-P5",
+   "corpus": "bundle",
+   "container": "fm-traumatic-brain-injury",
+   "sources": [
+    {
+     "key": "SRC-PMC12325412",
+     "locators": [
+      "ABSTRACT"
+     ],
+     "level": "fulltext"
+    }
+   ],
+   "auto_verdict": "SUPPORTED",
+   "verdict": "SUPPORTED",
+   "reviewed": false,
+   "flags": [],
+   "reasons": [],
+   "text_sha": "831fb0b93a555652",
+   "text": "Traumatic brain injury (TBI) is a significant global health concern and frequently encountered in medico-legal autopsies."
   }
  ]
 }

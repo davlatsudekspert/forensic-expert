@@ -931,6 +931,73 @@
   "allow_methods": false
  },
  {
+  "target": "fm-sharp-force|definition",
+  "entity": "fm-sharp-force",
+  "field": "definition",
+  "query": "\"sharp force\" injury stab incised wound forensic autopsy",
+  "patterns": [
+   "sharp[- ]force|stab|incised|cut wound|stabbing",
+   "wound|injur|forensic|autops"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-sudden-cardiac-death|definition",
+  "entity": "fm-sudden-cardiac-death",
+  "field": "definition",
+  "query": "sudden cardiac death autopsy coronary artery disease forensic",
+  "patterns": [
+   "sudden (cardiac )?death",
+   "coronary|myocard|cardiac|heart",
+   "autops|forensic|post-?mortem"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-pulmonary-embolism|definition",
+  "entity": "fm-pulmonary-embolism",
+  "field": "definition",
+  "query": "fatal pulmonary embolism autopsy sudden death forensic",
+  "patterns": [
+   "pulmonary (thrombo)?embol",
+   "autops|forensic|post-?mortem|death|fatal"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-electrical-injury|definition",
+  "entity": "fm-electrical-injury",
+  "field": "definition",
+  "query": "electrical injury fatal autopsy findings electrocution forensic",
+  "patterns": [
+   "electr(ical|ocution)",
+   "injur|death|fatal|autops|forensic|burn"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-sudden-infant-death|definition",
+  "entity": "fm-sudden-infant-death",
+  "field": "definition",
+  "query": "sudden infant death syndrome autopsy investigation",
+  "patterns": [
+   "sudden (unexpected )?(infant|death in infancy)|SIDS|SUDI",
+   "autops|investigat|diagnos|unexplained"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "fm-traumatic-brain-injury|definition",
+  "entity": "fm-traumatic-brain-injury",
+  "field": "definition",
+  "query": "traumatic brain injury forensic autopsy diffuse axonal injury",
+  "patterns": [
+   "traumatic brain injur|head injur|craniocerebral",
+   "autops|forensic|post-?mortem|pathology|axonal|haemorrhage|hemorrhage"
+  ],
+  "allow_methods": false
+ },
+ {
   "target": "his-sampling|principle",
   "entity": "his-sampling",
   "field": "principle",

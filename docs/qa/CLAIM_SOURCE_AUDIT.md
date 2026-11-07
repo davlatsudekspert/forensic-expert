@@ -13,10 +13,10 @@ Verdict = `reviewed` verdict if a ledger entry matches the claim text, otherwise
 | ABSTRACT_ONLY | 9 | 167 | 510 | 686 |
 | NO_LOCATOR | 6 | 0 | 19 | 25 |
 | PARTIAL | 14 | 38 | 21 | 73 |
-| SUPPORTED | 875 | 237 | 480 | 1592 |
-| **claims** | 905 | 442 | 1030 | 2377 |
+| SUPPORTED | 879 | 237 | 480 | 1596 |
+| **claims** | 909 | 442 | 1030 | 2381 |
 
-Automatic verdicts only (before human review overrides): UNSUPPORTED 1, SCOPE_MISMATCH 7, ABSTRACT_ONLY 684, NO_LOCATOR 25, PARTIAL 72, SUPPORTED 1588.
+Automatic verdicts only (before human review overrides): UNSUPPORTED 1, SCOPE_MISMATCH 7, ABSTRACT_ONLY 684, NO_LOCATOR 25, PARTIAL 72, SUPPORTED 1592.
 Reviewed claims (ledger, text hash matches): 46; stale review entries: 0; orphan entries: 0.
 
 Baseline (before fixes): UNSUPPORTED 1, SCOPE_MISMATCH 10, ABSTRACT_ONLY 569, NO_LOCATOR 76, PARTIAL 56, SUPPORTED 1085.
@@ -112,8 +112,8 @@ Levels grade the PUBLICATION TYPE only; the criterion is in code, not in the dat
 | database/tier2/C | 202 |
 | guideline/tier1/B | 2 |
 | journal_article/tier2/A | 10 |
-| journal_article/tier2/B | 233 |
-| journal_article/tier2/C | 68 |
+| journal_article/tier2/B | 236 |
+| journal_article/tier2/C | 69 |
 | journal_article/tier2/D | 32 |
 | legislation/tier1/A | 8 |
 | report/tier3/C | 1 |
@@ -2536,4 +2536,8 @@ Sources whose level is ungrounded or inconsistent with their own title / type:
 | `C-HIS-LUNG-ASPHYXIA-MARKER-P5` | SRC-PMC10198145 | ABSTRACT | SUPPORTED |  |
 | `C-HIS-HEAT-BURN-SKIN-MARKER-P5` | SRC-PMC10932096 | RESULTS | SUPPORTED | numbers_or_norms |
 | `C-HIS-BRAIN-HYPOXIA-MARKER-P5` | SRC-PMC8238305 | ABSTRACT | SUPPORTED |  |
+| `C-FM-SHARP-FORCE-DEFINITION-P5` | SRC-PMC12532691 | ABSTRACT | SUPPORTED |  |
+| `C-FM-SUDDEN-CARDIAC-DEATH-DEFINITION-P5` | SRC-PMC10531952 | RESULTS | SUPPORTED | numbers_or_norms |
+| `C-FM-PULMONARY-EMBOLISM-DEFINITION-P5` | SRC-PMC12325459 | ABSTRACT | SUPPORTED |  |
+| `C-FM-TRAUMATIC-BRAIN-INJURY-DEFINITION-P5` | SRC-PMC12325412 | ABSTRACT | SUPPORTED |  |
 

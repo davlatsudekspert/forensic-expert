@@ -139,6 +139,18 @@ FMQ = [
 for ent, field, q, pats in FMQ:
     t(f"{ent}|{field}", ent, field, q, pats)
 
+# ---- E2. Sud patologiyasi (2026-11-07, egasi: patologiya to‘ldirilsin) ------
+FMP = [
+ ("fm-sharp-force", "definition", '"sharp force" injury stab incised wound forensic autopsy', [r"sharp[- ]force|stab|incised|cut wound|stabbing", r"wound|injur|forensic|autops"]),
+ ("fm-sudden-cardiac-death", "definition", 'sudden cardiac death autopsy coronary artery disease forensic', [r"sudden (cardiac )?death", r"coronary|myocard|cardiac|heart", r"autops|forensic|post-?mortem"]),
+ ("fm-pulmonary-embolism", "definition", 'fatal pulmonary embolism autopsy sudden death forensic', [r"pulmonary (thrombo)?embol", r"autops|forensic|post-?mortem|death|fatal"]),
+ ("fm-electrical-injury", "definition", 'electrical injury fatal autopsy findings electrocution forensic', [r"electr(ical|ocution)", r"injur|death|fatal|autops|forensic|burn"]),
+ ("fm-sudden-infant-death", "definition", 'sudden infant death syndrome autopsy investigation', [r"sudden (unexpected )?(infant|death in infancy)|SIDS|SUDI", r"autops|investigat|diagnos|unexplained"]),
+ ("fm-traumatic-brain-injury", "definition", 'traumatic brain injury forensic autopsy diffuse axonal injury', [r"traumatic brain injur|head injur|craniocerebral", r"autops|forensic|post-?mortem|pathology|axonal|haemorrhage|hemorrhage"]),
+]
+for ent, field, q, pats in FMP:
+    t(f"{ent}|{field}", ent, field, q, pats)
+
 # ---- F. Sud gistologiyasi ----------------------------------------------------
 HIS = [
  ("his-sampling", "principle", 'forensic histology sampling autopsy tissue samples', [r"histolog", r"sampl", r"autops|tissue|organ"]),

@@ -3,14 +3,15 @@
 pilot/bundle.json ga qo‘shadi — butun paketni qayta yig‘masdan (assemble_pilot
 keyingi qo‘lda bosqichlarni (guidelines, tahlil, p7–p10) qayta ishlamaydi).
 Idempotent: allaqachon bor ID lar o‘tkazib yuboriladi.
-Mavzular: his-wound-age-markers, his-lung-asphyxia, his-heat-burn-skin,
+Mavzular (gistologiya + sud patologiyasi): his-wound-age-markers, his-lung-asphyxia, his-heat-burn-skin,
 his-brain-hypoxia (hammasi NEEDS_REVIEW)."""
 import json, os, sys
 os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 sys.path[:0] = ["tools", "tools/p5"]
 import assemble_p5  # noqa: E402
 
-NEW = ["his-wound-age-markers", "his-lung-asphyxia", "his-heat-burn-skin", "his-brain-hypoxia"]
+NEW = (["his-wound-age-markers", "his-lung-asphyxia", "his-heat-burn-skin", "his-brain-hypoxia"]
+       + ["fm-sharp-force", "fm-sudden-cardiac-death", "fm-pulmonary-embolism", "fm-traumatic-brain-injury"])
 P = "pilot/bundle.json"
 b = json.load(open(P))
 existing = ({t["topic_id"] for t in b["topics"]} | {m["method_id"] for m in b["methods"]}
@@ -31,6 +32,9 @@ new_src = [s for sid, s in out["sources"].items() if sid in need_src and sid not
 new_topics = [t for t in out["topics"] if t["topic_id"] in tk and t["topic_id"] not in have_t]
 new_links = [l for l in out["links"] if json.dumps(l, sort_keys=True) not in {json.dumps(x, sort_keys=True) for x in b["links"]}
              and (l.get("claim_id") in cl_ids or any(t in json.dumps(l) for t in NEW))]
+for t in new_topics:  # Sud patologiyasi: aniq fan (enum’ga bog‘lanmagan fm-* mavzular uchun)
+    if t["topic_id"].startswith("fm-") and "discipline" not in t:
+        t["discipline"] = "forensic_pathology"
 b["topics"] += new_topics; b["claims"] += new_claims; b["citations"] += new_cit
 b["sources"] += new_src; b["links"] += new_links
 json.dump(b, open(P, "w"), ensure_ascii=False, indent=1)
