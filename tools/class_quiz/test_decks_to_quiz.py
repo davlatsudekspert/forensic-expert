@@ -112,8 +112,8 @@ class ImporterUzOnly(unittest.TestCase):
     def test_groups(self):
         cases = {
             "toks-05-x": "toksikologik-kimyo",
-            "ktp26-davolash-M1": "ktp-2026-davolash",
-            "ktp26-pediatriya-M6": "ktp-2026-pediatriya",
+            "ktp26-davolash-M1": "sud-tibbiyoti-4-davolash",
+            "ktp26-pediatriya-M6": "sud-tibbiyoti-4-pediatriya",
             "ktp26-stomatologiya-M1": "ktp-2026-stomatologiya",
             "ktp26-u-03": "sud-tibbiyoti-ktp-2026",
             "4-kurs-davolash-06": "sud-tibbiyoti-4-davolash",

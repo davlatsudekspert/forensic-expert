@@ -71,48 +71,39 @@ GROUPS = [
         },
     ),
     (
-        r"^4-kurs-davolash-",
+        r"^(4-kurs-davolash|6-kurs-davolash|ktp26-davolash)-",
         "sud-tibbiyoti-4-davolash",
         {
-            "uz": "Sud tibbiyoti · Davolash ishi",
-            "ru": "Судебная медицина · Лечебное дело",
-            "en": "Forensic medicine · General Medicine",
+            "uz": "Davolash ishi",
+            "ru": "Лечебное дело",
+            "en": "General Medicine",
         },
     ),
     (
-        r"^4-kurs-pediatriya-",
+        r"^(4-kurs-pediatriya|ktp26-pediatriya)-",
         "sud-tibbiyoti-4-pediatriya",
         {
-            "uz": "Sud tibbiyoti · Pediatriya",
-            "ru": "Судебная медицина · Педиатрия",
-            "en": "Forensic medicine · Paediatrics",
+            "uz": "Pediatriya",
+            "ru": "Педиатрия",
+            "en": "Paediatrics",
         },
     ),
     (
         r"^5-kurs-tibbiy-profilaktika-",
         "sud-tibbiyoti-5-tibbiy-profilaktika",
         {
-            "uz": "Sud tibbiyoti · Tibbiy profilaktika",
-            "ru": "Судебная медицина · Медико-профилактическое дело",
-            "en": "Forensic medicine · Preventive Medicine",
-        },
-    ),
-    (
-        r"^6-kurs-davolash-",
-        "sud-tibbiyoti-6-davolash",
-        {
-            "uz": "Tibbiy huquq · Davolash ishi",
-            "ru": "Медицинское право · Лечебное дело",
-            "en": "Medical law · General Medicine",
+            "uz": "Tibbiy profilaktika",
+            "ru": "Медико-профилактическое дело",
+            "en": "Preventive Medicine",
         },
     ),
     (
         r"^ktp26-u-",
         "sud-tibbiyoti-ktp-2026",
         {
-            "uz": "Sud tibbiyoti · KTP 2026 (umumiy mavzular)",
-            "ru": "Судебная медицина · КТП 2026 (общие темы)",
-            "en": "Forensic medicine · 2026 curriculum (common topics)",
+            "uz": "Sud tibbiyoti (umumiy mavzular)",
+            "ru": "Судебная медицина (общие темы)",
+            "en": "Forensic medicine (common topics)",
         },
     ),
     (
@@ -134,30 +125,12 @@ GROUPS = [
         },
     ),
     (
-        r"^ktp26-davolash-",
-        "ktp-2026-davolash",
-        {
-            "uz": "Davolash ishi fakulteti · KTP 2026",
-            "ru": "Лечебный факультет · КТП 2026",
-            "en": "General Medicine faculty · 2026 curriculum",
-        },
-    ),
-    (
-        r"^ktp26-pediatriya-",
-        "ktp-2026-pediatriya",
-        {
-            "uz": "Pediatriya fakulteti · KTP 2026",
-            "ru": "Педиатрический факультет · КТП 2026",
-            "en": "Paediatrics faculty · 2026 curriculum",
-        },
-    ),
-    (
         r"^ktp26-stomatologiya-",
         "ktp-2026-stomatologiya",
         {
-            "uz": "Stomatologiya fakulteti · KTP 2026",
-            "ru": "Стоматологический факультет · КТП 2026",
-            "en": "Dentistry faculty · 2026 curriculum",
+            "uz": "Stomatologiya",
+            "ru": "Стоматология",
+            "en": "Dentistry",
         },
     ),
 ]

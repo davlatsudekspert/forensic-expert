@@ -111,7 +111,7 @@ void main() {
       final l = lookupAppLocalizations(const Locale('uz'));
       // Kurs/fan guruhlari (yopiq) — sarlavhalar ko‘rinadi.
       expect(
-        find.text('Sud tibbiyoti · Davolash ishi'),
+        find.text('Davolash ishi'),
         findsOneWidget,
       );
       expect(find.text('Bioetika'), findsOneWidget);
