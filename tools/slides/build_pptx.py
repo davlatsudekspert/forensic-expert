@@ -15,11 +15,14 @@ MX = Inches(0.7)  # overscan uchun chekka
 
 STR = {
     "uz": {"page": "-bet", "pages": "betlar", "source": "Manba", "subtitle": "Sud tibbiyoti · ma’ruza taqdimoti",
-           "extras": "Qiziqarli ma’lumotlar", "quiz": "Bilimingizni sinang", "nq": "{n} ta test savoli",
+           "observation": "Kuzatuv", "extras": "Qiziqarli ma’lumotlar", "quiz": "Bilimingizni sinang", "nq": "{n} ta test savoli",
            "q": "Savol {i} / {n}", "a": "Javob {i}: {c}", "refs": "Adabiyotlar", "check": "Tekshirish kerak (manbada noaniq)"},
     "en": {"page": "p.", "pages": "pp.", "source": "Source", "subtitle": "Forensic medicine · lecture presentation",
-           "extras": "Did you know?", "quiz": "Quiz", "nq": "{n} quiz questions",
+           "observation": "Observation", "extras": "Did you know?", "quiz": "Quiz", "nq": "{n} quiz questions",
            "q": "Question {i} / {n}", "a": "Answer {i}: {c}", "refs": "References", "check": "Verify (uncertain in source)"},
+    "ru": {"page": "с.", "pages": "с.", "source": "Источник", "subtitle": "Судебная медицина · лекционная презентация",
+           "observation": "Наблюдение", "extras": "Интересные сведения", "quiz": "Проверьте свои знания", "nq": "{n} тестовых вопросов",
+           "q": "Вопрос {i} / {n}", "a": "Ответ {i}: {c}", "refs": "Литература", "check": "Проверить (неясно в источнике)"},
 }
 
 
@@ -61,6 +64,8 @@ def _srcline(items, lang="uz"):
             by[k].append(p)
     if lang == "en":
         return "; ".join(f"{a}, {t}, pp. {', '.join(ps)}" for (a, t), ps in by.items())
+    if lang == "ru":
+        return "; ".join(f"{a}, {t}, с. {', '.join(ps)}" for (a, t), ps in by.items())
     return "; ".join(f"{a}., {t}, betlar: {', '.join(ps)}" for (a, t), ps in by.items())
 
 
@@ -141,6 +146,7 @@ def _diagram_basic(slide, d, x, y, w, h):
 BLUE = RGBColor(0x1F, 0x4E, 0x79)
 RICH = ("steps", "compare", "tree", "facts", "reaction", "cycle")
 EMU_IN = 914400
+_CUR = ["uz"]  # joriy til (diagramma yorliqlari uchun)
 
 
 def _est_lines(text, size, w_in):
@@ -152,6 +158,9 @@ def _est_lines(text, size, w_in):
 def _fit(texts, w_in, h_in, hi, lo, spacing=1.25):
     """Matnlar (w_in x h_in) ga sig'adigan eng katta shrift (pt)."""
     for sz in range(int(hi), int(lo) - 1, -1):
+        # eng uzun so'z qatorga sig'masa (so'z o'rtasidan bo'linib ketadi) — shriftni kichraytiramiz
+        if any(len(w) * sz * 0.62 / 72 > w_in for t in texts for w in str(t).split()) and sz > int(lo):
+            continue
         lines = sum(_est_lines(t, sz, w_in) for t in texts)
         if lines * sz * spacing / 72 <= h_in:
             return sz
@@ -320,7 +329,7 @@ def _d_reaction(slide, d, x, y, w, h):
         _text(slide, x + sw, ay - Inches(0.85), aw, Inches(0.78), cond, _fit([cond], aw / EMU_IN - 0.1, 0.7, 13, 9), INK, True, align=PP_ALIGN.CENTER, anchor=MSO_ANCHOR.BOTTOM)
     if obs:
         o = _card(slide, x, y + h - oh, w, oh, RGBColor(0xFF, 0xF6, 0xD6), GOLD)
-        _paras(o, [[("Kuzatuv:  ", 13, NAVY, True), (obs, _fit([obs], w / EMU_IN - 1.8, oh / EMU_IN - 0.1, 15, 10), INK, False)]], margin=0.15)
+        _paras(o, [[(STR.get(_CUR[0], STR["uz"]).get("observation", "Kuzatuv") + ":  ", 13, NAVY, True), (obs, _fit([obs], w / EMU_IN - 1.8, oh / EMU_IN - 0.1, 15, 10), INK, False)]], margin=0.15)
     return True
 
 
@@ -413,6 +422,7 @@ def _clean_ref(t):
 
 def build(data, out_path, lang=None):
     lang = lang or data.get("lang") or "uz"
+    _CUR[0] = lang
     L = STR.get(lang, STR["uz"])
     prs = Presentation(); prs.slide_width, prs.slide_height = W, H
     topic = data.get("topic", "")
@@ -424,7 +434,7 @@ def build(data, out_path, lang=None):
     s = prs.slides.add_slide(prs.slide_layouts[6])
     _box(s, 0, 0, W, H, NAVY); _box(s, MX, Inches(4.45), Inches(3), Inches(0.08), GOLD)
     _text(s, MX, Inches(1.9), W - 2 * MX, Inches(2.4), topic, 40, WHITE, True, "Georgia", anchor=MSO_ANCHOR.BOTTOM)
-    _text(s, MX, Inches(4.75), W - 2 * MX, Inches(0.6), L["subtitle"], 20, GOLD)
+    _text(s, MX, Inches(4.75), W - 2 * MX, Inches(0.6), data.get("subtitle") or L["subtitle"], 20, GOLD)
     for sl in slides:
         n += 1
         s = _frame(prs, sl["title"], n, total, topic)
@@ -452,13 +462,18 @@ def build(data, out_path, lang=None):
         _bullets(s, [{"text": e["text"]} for e in extras], MX, Inches(1.6), W - 2 * MX, Inches(5.2), 18)
     n += 1
     s = _frame(prs, L["refs"], n, total, topic)
-    refs = {}
+    refs, trs = {}, {}
     for x in data.get("sources", []):
         k = ((x.get("author") or "").rstrip("."), x.get("title") or "", x.get("year") or "")
         refs.setdefault(k, [])
+        if x.get("title_tr"):
+            trs[k] = x["title_tr"]
         if x.get("pages") and x["pages"] not in refs[k]:
             refs[k].append(str(x["pages"]))
-    items = [{"text": _clean_ref(f"{a}. {t}. {y}. {'; '.join(ps)}")} for (a, t, y), ps in refs.items()]
+    def _t(a, t, y):
+        tr = trs.get((a, t, y))
+        return f"{t} [{tr}]" if tr else t
+    items = [{"text": _clean_ref(f"{a}. {_t(a, t, y)}. {y}. {'; '.join(ps)}")} for (a, t, y), ps in refs.items()]
     _bullets(s, items, MX, Inches(1.6), W - 2 * MX, Inches(5.2), 20 if len(items) <= 4 else (16 if len(items) <= 7 else 13), 8)
     prs.save(out_path)
     return out_path
