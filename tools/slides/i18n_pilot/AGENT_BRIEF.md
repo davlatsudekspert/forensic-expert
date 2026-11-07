@@ -48,3 +48,9 @@ Har til uchun bir xil flag yozish shart emas (asosan ruscha uchun yozing, ingliz
 
 ## Hisobot (agentning yakuniy javobi, juda qisqa)
 Har deck uchun bir qator: `deck_id | N bo'lak | ru ok/en ok | flaglar soni | muhim flaglar (1-3 ta, qisqa)`. Boshqa matn yozmang.
+
+## XAVFSIZLIK (muhim, oldingi to'lqinda xato bo'lgan)
+- Uzun massivni bir necha chaqiruvda saqlasangiz: birinchi chaqiruv INSERT, qolganlari `update public.lesson_deck_translations set strings = strings || '<QISM>'::jsonb where deck_id = '<DECK>' and lang = '<LANG>';`
+  — `WHERE deck_id = ... AND lang = ...` MAJBURIY. WHEREsiz UPDATE yozmang (boshqa decklar buziladi).
+- Faqat o'zingizga berilgan deck_id lar bilan ishlang; boshqa qatorlarga tegmang.
+- Har til uchun oxirida `deck_translation_check` — `ok = true` (uzunlik `expected` ga teng).
