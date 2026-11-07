@@ -63,7 +63,7 @@ class FakeLessonsService implements LessonsService {
   }
 
   @override
-  Future<ClassResult<LessonDeck>> get(String topicId) async {
+  Future<ClassResult<LessonDeck>> get(String topicId, {String? lang}) async {
     if (failure != null) return ClassResult.fail(failure!);
     final j = _decks[topicId];
     if (j == null) return const ClassResult.fail(ClassFailure.notFound);

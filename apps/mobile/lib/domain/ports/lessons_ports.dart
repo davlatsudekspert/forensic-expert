@@ -11,7 +11,8 @@ abstract interface class LessonsService {
   /// Ro‘yxat; [query] — server qidiruvi (sarlavha va slayd matni).
   Future<ClassResult<List<LessonSummary>>> list({String? query});
 
-  Future<ClassResult<LessonDeck>> get(String topicId);
+  /// [lang] — ru/en bo‘lsa, mashina tarjimasi (ekspert tekshiruvi kutilmoqda) qo‘yiladi.
+  Future<ClassResult<LessonDeck>> get(String topicId, {String? lang});
 }
 
 /// Backend yo‘q — hech narsa soxtalashtirilmaydi.
@@ -28,6 +29,6 @@ class UnconfiguredLessonsService implements LessonsService {
       const ClassResult.fail(ClassFailure.notConfigured);
 
   @override
-  Future<ClassResult<LessonDeck>> get(String topicId) async =>
+  Future<ClassResult<LessonDeck>> get(String topicId, {String? lang}) async =>
       const ClassResult.fail(ClassFailure.notConfigured);
 }

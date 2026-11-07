@@ -54,7 +54,14 @@ final narrationSourceProvider = Provider<NarrationSource>(
 
 final lessonDeckProvider = FutureProvider.autoDispose
     .family<ClassResult<LessonDeck>, String>((ref, topicId) async {
-      final res = await ref.watch(lessonsServiceProvider).get(topicId);
+      final lang = ref.watch(
+        settingsControllerProvider.select(
+          (s) => s.locale?.languageCode ?? 'uz',
+        ),
+      );
+      final res = await ref
+          .watch(lessonsServiceProvider)
+          .get(topicId, lang: lang);
       final deck = res.value;
       if (deck == null || deck.deckId.isEmpty) return res;
       final items = await ref.watch(narrationSourceProvider).load(deck.deckId);

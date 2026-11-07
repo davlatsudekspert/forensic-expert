@@ -86,8 +86,13 @@ class SupabaseLessonsService implements LessonsService {
   }
 
   @override
-  Future<ClassResult<LessonDeck>> get(String topicId) async {
-    final r = await _rpc('lesson_get', {'p_topic_id': topicId});
+  Future<ClassResult<LessonDeck>> get(String topicId, {String? lang}) async {
+    final r = (lang == 'ru' || lang == 'en')
+        ? await _rpc('lesson_get_localized', {
+            'p_topic_id': topicId,
+            'p_lang': lang,
+          })
+        : await _rpc('lesson_get', {'p_topic_id': topicId});
     if (!r.ok) return ClassResult.fail(r.failure!);
     final v = r.value;
     if (v is! Map) return const ClassResult.fail(ClassFailure.server);
