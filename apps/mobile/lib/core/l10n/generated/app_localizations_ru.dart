@@ -12467,11 +12467,11 @@ class AppLocalizationsRu extends AppLocalizations {
   String get teacherDeskTitle => 'Стол преподавателя';
 
   @override
-  String get teacherDeskLessonsTitle => 'Лекционные презентации';
+  String get teacherDeskLessonsTitle => 'Занятия';
 
   @override
   String get teacherDeskLessonsBody =>
-      'Темы по дисциплинам и курсам — показ на проекторе';
+      'Лекционные презентации — темы, показ на проекторе';
 
   @override
   String get workbenchViewMedicine => 'Судмедэксперт';

@@ -12348,11 +12348,11 @@ class AppLocalizationsUz extends AppLocalizations {
   String get teacherDeskTitle => 'Ustoz boshqaruvi';
 
   @override
-  String get teacherDeskLessonsTitle => 'Ma’ruza prezentatsiyalari';
+  String get teacherDeskLessonsTitle => 'Darslar';
 
   @override
   String get teacherDeskLessonsBody =>
-      'Fan va kurs bo‘yicha mavzular — proyektorda ko‘rsatish';
+      'Ma’ruza prezentatsiyalari — mavzular, proyektorda ko‘rsatish';
 
   @override
   String get workbenchViewMedicine => 'Sud-tibbiy';

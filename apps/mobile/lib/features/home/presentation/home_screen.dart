@@ -629,8 +629,14 @@ class _TeacherHome extends ConsumerWidget {
                   gap,
                   const _CatalogBanner(),
                   const SizedBox(height: FeSpace.lg),
-                  const TeacherDesk(),
+                  // Ustoz boshqaruvi: 4 karta + ixcham «Natijalar» (egasi,
+                  // 2026-11-07). «Bugungi savol» — materiallardan keyin.
+                  const TeacherDesk(showDailyQuestion: false),
                   FeSectionHeader(l.teacherSectionMaterials, padding: head()),
+                  // DNK ekspertizasi, Virtual autopsiya, Asbob-uskunalar —
+                  // «Yangi bo‘limlar»dan shu yerga ko‘chirildi.
+                  const _NewSections(showTitle: false),
+                  gap,
                   const _CoreDisciplinesCard(),
                   gap,
                   _ResourceTile(
@@ -666,22 +672,8 @@ class _TeacherHome extends ConsumerWidget {
                         _TeacherChip(action: a),
                     ],
                   ),
-                  FeSectionHeader(l.teacherSectionMore, padding: head()),
-                  _ResourceTile(
-                    key: const Key('home.courtPrep'),
-                    icon: Icons.gavel_outlined,
-                    title: l.courtTitle,
-                    body: l.courtSubtitle,
-                    lock: ProFeature.courtPrep,
-                    onTap: () => context.push(Routes.courtPrep),
-                  ),
-                  gap,
-                  const _NewSections(),
-                  const SizedBox(height: FeSpace.md),
-                  const InviteColleagueCard(
-                    key: Key('home.invite'),
-                    compact: true,
-                  ),
+                  const SizedBox(height: FeSpace.lg),
+                  const TeacherDailyQuestion(),
                   if (FeFlags.showTestFixtures) ...[
                     const SizedBox(height: FeSpace.md),
                     FeBanner(
@@ -1669,7 +1661,10 @@ class _HeroPatternPainter extends CustomPainter {
 /// «Yangi bo‘limlar»: DNK, virtual autopsiya (KT/MRT), asbob-uskunalar —
 /// rasmli kichik kartalar, birinchi ekranda.
 class _NewSections extends ConsumerWidget {
-  const _NewSections();
+  const _NewSections({this.showTitle = true});
+
+  /// Ustoz minbarida sarlavha — «Materiallar va manbalar» bo‘limi o‘zi.
+  final bool showTitle;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -1691,11 +1686,13 @@ class _NewSections extends ConsumerWidget {
       key: const Key('home.new'),
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Text(
-          l.homeNewTitle,
-          style: t.labelLarge?.copyWith(color: c.accent, letterSpacing: 0.6),
-        ),
-        const SizedBox(height: FeSpace.xs),
+        if (showTitle) ...[
+          Text(
+            l.homeNewTitle,
+            style: t.labelLarge?.copyWith(color: c.accent, letterSpacing: 0.6),
+          ),
+          const SizedBox(height: FeSpace.xs),
+        ],
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

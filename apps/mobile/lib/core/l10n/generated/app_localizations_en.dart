@@ -12421,11 +12421,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get teacherDeskTitle => 'My teaching desk';
 
   @override
-  String get teacherDeskLessonsTitle => 'Lecture presentations';
+  String get teacherDeskLessonsTitle => 'Lessons';
 
   @override
   String get teacherDeskLessonsBody =>
-      'Topics by subject and course — show on the projector';
+      'Lecture presentations — topics, show on the projector';
 
   @override
   String get workbenchViewMedicine => 'Forensic medicine';

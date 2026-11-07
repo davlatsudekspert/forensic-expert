@@ -95,7 +95,11 @@ class ExpertWorkbench extends ConsumerWidget {
 /// Ustoz Home: «Ustoz boshqaruvi» — darslar (prezentatsiyalar), jonli guruh
 /// testi, guruhlar va mavzu testlari, Ustoz paneli (natijalar, CSV).
 class TeacherDesk extends ConsumerWidget {
-  const TeacherDesk({super.key});
+  const TeacherDesk({super.key, this.showDailyQuestion = true});
+
+  /// Ustoz minbarida «Bugungi savol» «Materiallar va manbalar»dan keyin
+  /// alohida ko‘rsatiladi (egasi, 2026-11-07).
+  final bool showDailyQuestion;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -112,11 +116,24 @@ class TeacherDesk extends ConsumerWidget {
           items: Workbench.teacherCards(isTeacher: watchIsTeacher(ref)),
           stretchLast: true,
         ),
-        const _DeskDailyQuestion(),
+        const SizedBox(height: FeSpace.sm),
+        _DeskGrid(
+          items: [Workbench.teacherResults(isTeacher: watchIsTeacher(ref))],
+          stretchLast: true,
+        ),
+        if (showDailyQuestion) const _DeskDailyQuestion(),
         const SizedBox(height: FeSpace.xs),
       ],
     );
   }
+}
+
+/// Ustoz minbari: «Bugungi savol» kartasi (stoldan alohida joylanadi).
+class TeacherDailyQuestion extends StatelessWidget {
+  const TeacherDailyQuestion({super.key});
+
+  @override
+  Widget build(BuildContext context) => const _DeskDailyQuestion();
 }
 
 void _open(BuildContext context, WorkbenchItem item) =>

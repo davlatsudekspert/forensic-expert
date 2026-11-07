@@ -32,7 +32,11 @@ void main() {
     expect(find.byKey(const Key('desk.teacher')), findsOneWidget);
     expect(find.text('Ustoz boshqaruvi'), findsOneWidget);
     expect(find.text('USTOZ MINBARI'), findsOneWidget);
-    expect(find.text('Ma’ruza prezentatsiyalari'), findsOneWidget);
+    expect(find.text('Darslar'), findsOneWidget);
+    expect(
+      find.text('Ma’ruza prezentatsiyalari — mavzular, proyektorda ko‘rsatish'),
+      findsOneWidget,
+    );
     // Alohida «Ustoz paneli» kartasi yo‘q: stolning o‘zi panel.
     expect(find.text('Ustoz paneli'), findsNothing);
     // Stol «Ilmiy kutubxona» qatoridan oldin; 8 kartali to‘r Ustozda yo‘q.
@@ -42,6 +46,16 @@ void main() {
     await tester.pumpAndSettle();
     expect(tester.getTopLeft(desk).dy, lessThan(tester.getTopLeft(lib).dy));
     expect(find.byKey(const Key('home.allDisciplines')), findsNothing);
+    // Ustoz minbari tartibi (egasi, 2026-11-07): «Sudda so‘roq» va taklif
+    // kartasi bosh sahifada yo‘q; DNK/Virtual autopsiya/Asbob-uskunalar
+    // «Materiallar va manbalar»da; «Bugungi savol» materiallardan keyin.
+    expect(find.byKey(const Key('home.courtPrep')), findsNothing);
+    expect(find.byKey(const Key('home.invite')), findsNothing);
+    expect(find.text('YANGI BO‘LIMLAR'), findsNothing);
+    final virt = find.byKey(const Key('home.new.virtopsy'));
+    await tester.ensureVisible(virt);
+    await tester.pumpAndSettle();
+    expect(tester.getTopLeft(virt).dy, greaterThan(tester.getTopLeft(desk).dy));
 
     await tapKey(tester, 'workbench.teachRun');
     expect(find.byType(ClassCreateScreen), findsOneWidget);

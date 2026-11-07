@@ -21501,16 +21501,16 @@ abstract class AppLocalizations {
   /// **'My teaching desk'**
   String get teacherDeskTitle;
 
-  /// Teacher desk card: lecture slide decks.
+  /// Teacher desk card: lessons.
   ///
   /// In en, this message translates to:
-  /// **'Lecture presentations'**
+  /// **'Lessons'**
   String get teacherDeskLessonsTitle;
 
-  /// Teacher desk card subtitle: lecture slide decks by course and topic.
+  /// Teacher desk card: lessons body.
   ///
   /// In en, this message translates to:
-  /// **'Topics by subject and course — show on the projector'**
+  /// **'Lecture presentations — topics, show on the projector'**
   String get teacherDeskLessonsBody;
 
   /// Expert workbench switch: forensic medical expert view.

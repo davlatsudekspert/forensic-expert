@@ -372,15 +372,19 @@ abstract final class Workbench {
       title: (l) => l.grpTitle,
       body: (l) => l.grpTeacherTileBody,
     ),
-    WorkbenchItem(
-      id: WorkbenchItemId.teachResults,
-      icon: Icons.insights_outlined,
-      hue: FeHues.indigo,
-      route: isTeacher ? Routes.teacherResults : Routes.teacher,
-      title: (l) => l.teacherResultsTitle,
-      body: (l) => l.teacherResultsBody,
-    ),
   ];
+
+  /// «Natijalar» — Ustoz stolida to‘rtta asosiy kartadan keyin ixcham qator
+  /// (egasi, 2026-11-07: 4 karta; natijalarga kirish yo‘qolmasin).
+  static WorkbenchItem teacherResults({required bool isTeacher}) =>
+      WorkbenchItem(
+        id: WorkbenchItemId.teachResults,
+        icon: Icons.insights_outlined,
+        hue: FeHues.indigo,
+        route: isTeacher ? Routes.teacherResults : Routes.teacher,
+        title: (l) => l.teacherResultsTitle,
+        body: (l) => l.teacherResultsBody,
+      );
 
   /// Talaba stoli kartalari (tartib o‘zgarmas).
   static final studentCards = [deskLessons, deskTests, deskExam, deskGroup];
