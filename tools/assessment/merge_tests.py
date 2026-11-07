@@ -83,5 +83,10 @@ bundle['testsSource'] = {
     'url': 'https://tmbm.ssv.uz/post/category/questions_test',
     'retrieved': '2026-10-25',
 }
+i18n_path = os.path.join(data, 'tests_i18n.json')
+if os.path.exists(i18n_path):  # RU (rasmiy/llm) va EN versiyalari — apply_tests_i18n.py
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from apply_tests_i18n import apply as apply_i18n
+    apply_i18n(json.load(open(i18n_path, encoding='utf8')), bundle)
 json.dump(bundle, open(target, 'w', encoding='utf8'), ensure_ascii=False, separators=(',', ':'))
 print(stats)

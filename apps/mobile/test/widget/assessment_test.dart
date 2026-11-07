@@ -402,6 +402,48 @@ void main() {
     expect(_key('home.assessment'), findsNothing);
   });
 
+  testWidgets('test mashqi interfeys tilida: ru — rasmiy/mashina belgisi, '
+      'en — mashina tarjimasi belgisi; uz — belgisiz', (tester) async {
+    final spec =
+        ((jsonDecode(_pack) as Map<String, Object?>)['specialties']! as List)
+            .cast<Map<String, Object?>>()
+            .firstWhere((s) => s['id'] == 'sud_kimyo');
+    final tests = (spec['tests']! as List).cast<Map<String, Object?>>();
+    const tab = {'uz': 'Testlar', 'ru': 'Тесты', 'en': 'Tests'};
+    for (final lang in ['ru', 'en', 'uz']) {
+      await pumpApp(
+        tester,
+        settings: completedSettings(lang: lang),
+        overrides: _overrides(),
+        initialLocation: Routes.assessmentSpecialty('sud_kimyo'),
+      );
+      await tester.tap(find.text(tab[lang]!));
+      await tester.pumpAndSettle();
+      await tester.tap(_key('assessment.testStart'));
+      await tester.pumpAndSettle();
+      final field = lang == 'uz' ? 'text' : 'text_$lang';
+      final byText = {for (final t in tests) t[field]! as String: t};
+      final shown = find.byWidgetPredicate(
+        (w) => w is Text && byText.containsKey(w.data),
+      );
+      expect(shown, findsOne, reason: lang);
+      final t = byText[(tester.widget(shown) as Text).data]!;
+      final src = _key('assessment.test.textSource');
+      final want = switch (lang) {
+        'ru' when t['ru_src'] == 'official' => 'Официальный текст',
+        'ru' => 'Автоматический перевод — не проверен',
+        'en' => 'Machine translation — not reviewed',
+        _ => null,
+      };
+      if (want == null) {
+        expect(src, findsNothing);
+      } else {
+        expect((tester.widget(src) as Text).data, want);
+      }
+      await tester.pumpWidget(const SizedBox());
+    }
+  });
+
   testWidgets('ustozda yo‘q; mutaxassisda ru/en nomlar', (tester) async {
     await pumpApp(
       tester,

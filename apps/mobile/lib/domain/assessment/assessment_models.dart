@@ -94,6 +94,18 @@ class AssessmentKeySource {
   final String url;
 }
 
+/// Test matni qaysi manbadan ko‘rsatilmoqda.
+enum AssessmentTextSource {
+  /// Asl o‘zbekcha rasmiy matn.
+  original,
+
+  /// Rasmiy tarjima (tmbm.ssv.uz ruscha ro‘yxati).
+  official,
+
+  /// Mashina tarjimasi — tekshirilmagan.
+  machine,
+}
+
 /// Test savoli: 4 variant; [key] — to‘g‘ri variant indeksi (tasdiqlanmagan
 /// bo‘lsa `null` va savol baholanadigan mashqqa kirmaydi).
 @immutable
@@ -105,16 +117,40 @@ class AssessmentTestQuestion {
     required this.options,
     required this.key,
     required this.keySource,
+    this.textSource = AssessmentTextSource.original,
   });
 
-  factory AssessmentTestQuestion.fromJson(Map<String, Object?> j) {
+  /// [lang] — interfeys tili (`uz`/`ru`/`en`). Shu tildagi matn va 4 variant
+  /// bo‘lsa (variantlar tartibi o‘zbekcha bilan bir xil, [key] o‘zgarmaydi)
+  /// o‘sha ko‘rsatiladi, aks holda asl o‘zbekcha matn.
+  factory AssessmentTestQuestion.fromJson(
+    Map<String, Object?> j, {
+    String lang = 'uz',
+  }) {
     final k = j['key'];
     final src = j['keySrc'];
+    var text = _s(j['text']);
+    var options = [for (final o in _list(j['options'])) _s(o)];
+    var textSource = AssessmentTextSource.original;
+    if (lang == 'ru' || lang == 'en') {
+      final lt = _s(j['text_$lang']);
+      final lo = [for (final o in _list(j['options_$lang'])) _s(o)];
+      if (lt.isNotEmpty &&
+          lo.length == options.length &&
+          lo.every((o) => o.isNotEmpty)) {
+        text = lt;
+        options = lo;
+        textSource = _s(j['${lang}_src']) == 'official'
+            ? AssessmentTextSource.official
+            : AssessmentTextSource.machine;
+      }
+    }
     return AssessmentTestQuestion(
       id: _s(j['id']),
       number: j['n'] is num ? (j['n']! as num).toInt() : 0,
-      text: _s(j['text']),
-      options: [for (final o in _list(j['options'])) _s(o)],
+      text: text,
+      options: options,
+      textSource: textSource,
       key: k is num && k >= 0 && k < 4 ? k.toInt() : null,
       keySource: src is Map
           ? AssessmentKeySource.fromJson(src.cast<String, Object?>())
@@ -128,6 +164,7 @@ class AssessmentTestQuestion {
   final List<String> options;
   final int? key;
   final AssessmentKeySource? keySource;
+  final AssessmentTextSource textSource;
 
   bool get graded => key != null && options.length == 4;
 }
@@ -141,19 +178,21 @@ class AssessmentSpecialty {
     this.tests = const [],
   });
 
-  factory AssessmentSpecialty.fromJson(Map<String, Object?> j) =>
-      AssessmentSpecialty(
-        id: _s(j['id']),
-        title: _s(j['title']),
-        categories: [
-          for (final c in _list(j['categories']))
-            AssessmentCategory.fromJson(_map(c)),
-        ],
-        tests: [
-          for (final t in _list(j['tests']))
-            AssessmentTestQuestion.fromJson(_map(t)),
-        ],
-      );
+  factory AssessmentSpecialty.fromJson(
+    Map<String, Object?> j, {
+    String lang = 'uz',
+  }) => AssessmentSpecialty(
+    id: _s(j['id']),
+    title: _s(j['title']),
+    categories: [
+      for (final c in _list(j['categories']))
+        AssessmentCategory.fromJson(_map(c)),
+    ],
+    tests: [
+      for (final t in _list(j['tests']))
+        AssessmentTestQuestion.fromJson(_map(t), lang: lang),
+    ],
+  );
 
   final String id;
   final String title;
@@ -177,11 +216,15 @@ class AssessmentSpecialty {
 class AssessmentBundle {
   const AssessmentBundle({required this.source, required this.specialties});
 
-  factory AssessmentBundle.fromJson(Map<String, Object?> j) => AssessmentBundle(
+  /// [lang] — testlar ko‘rsatiladigan til (yo‘q bo‘lsa o‘zbekcha).
+  factory AssessmentBundle.fromJson(
+    Map<String, Object?> j, {
+    String lang = 'uz',
+  }) => AssessmentBundle(
     source: AssessmentSource.fromJson(_map(j['source'])),
     specialties: [
       for (final s in _list(j['specialties']))
-        AssessmentSpecialty.fromJson(_map(s)),
+        AssessmentSpecialty.fromJson(_map(s), lang: lang),
     ],
   );
 

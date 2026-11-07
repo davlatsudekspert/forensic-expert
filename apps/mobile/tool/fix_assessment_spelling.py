@@ -12,7 +12,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 MAP = json.loads((ROOT / 'tool/assessment_spelling_map.json').read_text('utf-8'))
 PHRASES = {'porsial but': 'parsial bug‘'}
 WORDS = {k: v for k, v in MAP.items() if v}
-SKIP_KEYS = {'id', 'source', 'sources', 'keySrc', 'url', 'page', 'spec', 'lang'}
+SKIP_KEYS = {'id', 'source', 'sources', 'keySrc', 'url', 'page', 'spec', 'lang',
+             'text_ru', 'options_ru', 'text_en', 'options_en', 'ru_src', 'en_src'}  # faqat UZ matn
 AP = "‘ʻ’'ʼ"
 pat = re.compile(r'(?<![\w' + AP + r'])(' + '|'.join(
     sorted(map(re.escape, WORDS), key=len, reverse=True)) + r')(?![\w' + AP + r'])',

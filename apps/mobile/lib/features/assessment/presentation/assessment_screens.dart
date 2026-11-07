@@ -739,6 +739,16 @@ class _TestBody extends StatelessWidget {
         Text(l.assessmentQuestionNo(question.number), style: t.labelMedium),
         const SizedBox(height: FeSpace.xs),
         Text(question.text, style: t.titleMedium),
+        if (question.textSource != AssessmentTextSource.original) ...[
+          const SizedBox(height: FeSpace.xs),
+          Text(
+            question.textSource == AssessmentTextSource.official
+                ? l.trStatusOfficial
+                : l.trStatusMachineDraft,
+            key: const Key('assessment.test.textSource'),
+            style: t.bodySmall?.copyWith(color: c.textSecondary),
+          ),
+        ],
         const SizedBox(height: FeSpace.md),
         for (var i = 0; i < question.options.length; i++) ...[
           _OptionTile(

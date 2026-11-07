@@ -64,3 +64,6 @@ RU/EN: javob matni o‘zbekcha (CLAUDE.md: avval faqat o‘zbekcha); RU/EN foyda
 * 482 ta kalitsiz test: ko‘pi klinik holatga tashxis qo‘llash (patanatomiya 286–401) — mahalliy qo‘llanma (masalan, Зайратьянц «Формулировка патологоанатомического диагноза» yoki O‘zbekiston kafedrasi) kerak.
 * Og‘zaki javoblar: qolgan partiyalar (pat_anat 16–42; ~320 savol) yozilmagan — ilovada «Javob tez kunda qo‘shiladi». Egasi ruxsat berganda **Sonnet** bilan davom etiladi (pipeline pastda).
 * Eski reja: patologik anatomiya uchun mahalliy kitob yo‘q.
+
+## Testlarning RU/EN versiyalari (2026-11-07)
+Rasmiy ruscha testlar (tmbm.ssv.uz PDF) bilan moslashtirish va inglizcha tarjima: `docs/ASSESSMENT_RU_ALIGNMENT.md`. Ilova testlarni interfeys tilida ko‘rsatadi (tarjima yo‘q bo‘lsa — o‘zbekcha); rasmiy/mashina tarjimasi belgisi savol ostida.

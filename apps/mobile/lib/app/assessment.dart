@@ -5,9 +5,11 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../core/settings/settings_controller.dart';
 import '../domain/assessment/assessment_models.dart';
 import '../domain/assessment/assessment_test_stats.dart';
 import '../domain/assessment/oral_exam.dart';
+import 'providers.dart' show uiLanguageCode;
 
 /// Rasmiy og‘zaki imtihon savollari paketi (ilovaga qo‘shilgan, oflayn).
 const assessmentAsset = 'assets/content/assessment/assessment_v1.json';
@@ -17,11 +19,20 @@ final assessmentLoaderProvider = Provider<Future<String> Function()>(
       () => rootBundle.loadString(assessmentAsset),
 );
 
+/// Testlar interfeys tilida (ru/en bo‘lsa; yo‘q matn — o‘zbekcha).
+final assessmentLangProvider = Provider<String>(
+  (ref) => uiLanguageCode(
+    ref.watch(settingsControllerProvider.select((s) => s.locale)),
+  ),
+);
+
 final assessmentProvider = FutureProvider<AssessmentBundle>((ref) async {
+  final lang = ref.watch(assessmentLangProvider);
   try {
     final text = await ref.watch(assessmentLoaderProvider)();
     return AssessmentBundle.fromJson(
       (jsonDecode(text) as Map).cast<String, Object?>(),
+      lang: lang,
     );
   } on Object {
     // Buzilgan yoki yo‘q paket — bo‘sh bo‘lim (soxta kontent yo‘q).

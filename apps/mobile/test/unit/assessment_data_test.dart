@@ -81,4 +81,80 @@ void main() {
     }
     expect(graded, greaterThan(700));
   });
+
+  group('testlar tili (ru/en, yo‘q bo‘lsa uz)', () {
+    Map<String, Object?> q0() => {
+      'id': 'x.t.001',
+      'n': 1,
+      'text': 'Savol',
+      'options': ['a', 'b', 'c', 'd'],
+      'key': 2,
+      'text_ru': 'Вопрос',
+      'options_ru': ['а', 'б', 'в', 'г'],
+      'ru_src': 'official',
+      'text_en': 'Question',
+      'options_en': ['A', 'B', 'C', 'D'],
+      'en_src': 'llm',
+    };
+
+    test('ru — rasmiy, en — mashina tarjimasi, kalit o‘zgarmaydi', () {
+      final ru = AssessmentTestQuestion.fromJson(q0(), lang: 'ru');
+      expect(ru.text, 'Вопрос');
+      expect(ru.options, ['а', 'б', 'в', 'г']);
+      expect(ru.textSource, AssessmentTextSource.official);
+      expect(ru.key, 2);
+      final en = AssessmentTestQuestion.fromJson(q0(), lang: 'en');
+      expect(en.text, 'Question');
+      expect(en.textSource, AssessmentTextSource.machine);
+      final uz = AssessmentTestQuestion.fromJson(q0());
+      expect(uz.text, 'Savol');
+      expect(uz.textSource, AssessmentTextSource.original);
+    });
+
+    test('tarjima yo‘q yoki variantlar to‘liq emas — o‘zbekcha', () {
+      final j = q0()
+        ..remove('text_en')
+        ..['options_ru'] = ['а', 'б'];
+      for (final lang in ['ru', 'en']) {
+        final q = AssessmentTestQuestion.fromJson(j, lang: lang);
+        expect(q.text, 'Savol');
+        expect(q.options, ['a', 'b', 'c', 'd']);
+        expect(q.textSource, AssessmentTextSource.original);
+      }
+    });
+
+    test('haqiqiy paket: barcha testlar ru va en da, 4 variant, kalit bir xil', () {
+      final raw = (jsonDecode(
+        File('assets/content/assessment/assessment_v1.json').readAsStringSync(),
+      ) as Map).cast<String, Object?>();
+      final uz = AssessmentBundle.fromJson(raw);
+      var official = 0;
+      for (final lang in ['ru', 'en']) {
+        final b = AssessmentBundle.fromJson(raw, lang: lang);
+        for (final s in b.specialties) {
+          final base = uz.specialty(s.id)!.tests;
+          expect(s.tests.length, base.length);
+          for (var i = 0; i < s.tests.length; i++) {
+            final t = s.tests[i];
+            expect(
+              t.textSource,
+              isNot(AssessmentTextSource.original),
+              reason: '${t.id} $lang',
+            );
+            expect(t.options.length, 4, reason: t.id);
+            expect(t.key, base[i].key, reason: t.id);
+            expect(t.text, isNot(base[i].text), reason: t.id);
+            if (lang == 'ru' && t.textSource == AssessmentTextSource.official) {
+              official++;
+            }
+            if (lang == 'en') {
+              expect(t.textSource, AssessmentTextSource.machine);
+            }
+          }
+        }
+      }
+      // Rasmiy RU bilan tasdiqlangan juftlar (docs/ASSESSMENT_RU_ALIGNMENT.md).
+      expect(official, greaterThan(800));
+    });
+  });
 }
