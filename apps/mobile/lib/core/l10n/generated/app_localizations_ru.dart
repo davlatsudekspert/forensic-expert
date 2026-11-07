@@ -9777,7 +9777,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get classTopicSearchHint => 'Поиск темы или курса';
+  String get classTopicSearchHint => 'Поиск темы или предмета';
 
   @override
   String get classTopicGroupOther => 'Другие темы';

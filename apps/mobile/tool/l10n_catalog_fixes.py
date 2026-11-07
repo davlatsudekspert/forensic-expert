@@ -51,9 +51,9 @@ NEW = {
         {"author": S, "title": S, "locator": S},
     ),
     "classTopicSearchHint": (
-        "Mavzu yoki kursni qidiring",
-        "Поиск темы или курса",
-        "Search a topic or course",
+        "Mavzu yoki fanni qidiring",
+        "Поиск темы или предмета",
+        "Search a topic or subject",
         "Search field above the grouped topic list (teacher, new class quiz).",
         None,
     ),

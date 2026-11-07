@@ -23,6 +23,7 @@ import 'class_hardest_screen.dart';
 import 'class_quiz_self_pace.dart';
 import 'class_quiz_widgets.dart';
 import 'class_seconds_picker.dart';
+import 'class_topic_groups.dart';
 
 /// Yangi sinf testi: mavzu, savollar soni, talaba chegarasi, har savolga vaqt.
 class ClassCreateScreen extends StatelessWidget {
@@ -129,7 +130,13 @@ class _CreateBodyState extends ConsumerState<_CreateBody> {
     } else {
       final enough =
           selected != null && selected.count >= ClassQuizRules.minQuestions;
-      final groups = _groupTopics(list, bank, lang, l, _query);
+      final groups = groupClassTopics(
+        list,
+        bank,
+        lang,
+        l.classTopicGroupOther,
+        _query,
+      );
       body = Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -186,7 +193,7 @@ class _CreateBodyState extends ConsumerState<_CreateBody> {
               style: t.labelMedium?.copyWith(color: c.textSecondary),
             ),
             Text(
-              _choiceTitle(selected, bank, lang),
+              classChoiceTitle(selected, bank, lang),
               key: const Key('class.selectedTopic'),
               style: t.titleSmall,
             ),
@@ -293,131 +300,6 @@ class _CreateBodyState extends ConsumerState<_CreateBody> {
   }
 }
 
-/// Ro‘yxatdagi bitta mavzu: server/qurilma mavzusi (tanlangan til varianti)
-/// va bankdagi metama’lumoti.
-class _TopicChoice {
-  const _TopicChoice({
-    required this.topic,
-    required this.title,
-    this.meta,
-    this.untranslatedTitle = false,
-  });
-
-  final ClassTopic topic;
-  final String title;
-  final ClassQuizBankTopicMeta? meta;
-
-  /// Til varianti sarlavhasi asl o‘zbekcha sarlavha bilan aynan bir xil
-  /// (bank metama’lumoti yo‘q mavzular uchun: tarjima qilinmagan belgisi).
-  final bool untranslatedTitle;
-
-  /// Tarjimasi hali yo‘q: boshqa tilda asl o‘zbekcha matn ko‘rsatiladi.
-  bool get translationPending {
-    final vl = ClassQuizBank.variantLang(topic.id);
-    if (vl == 'uz') return false;
-    return meta?.isTranslationPending(vl) ?? untranslatedTitle;
-  }
-
-  /// Savollar avtomatik tarjima (ru/en, tekshirilmagan) bo‘lsa — belgi.
-  bool get machineTranslated {
-    final vl = ClassQuizBank.variantLang(topic.id);
-    if (translationPending) return false;
-    return meta?.isMachineTranslation(vl) ?? (vl != 'uz');
-  }
-}
-
-class _TopicGroupData {
-  _TopicGroupData(this.id, this.title, this.order);
-
-  final String id;
-  final String title;
-  final int order;
-  final items = <_TopicChoice>[];
-}
-
-/// Mavzu nomi: til varianti bo‘lsa — bankdagi o‘sha til nomi; asl mavzu
-/// ru/en interfeysda — bankda tarjima nomi bo‘lsa u, bo‘lmasa server nomi
-/// (server tarjima nomini qo‘ygan bo‘lishi mumkin), aks holda o‘zbekcha.
-String _choiceTitle(ClassTopic t, ClassQuizBank bank, String lang) {
-  final m = bank.meta(t.id);
-  final vl = ClassQuizBank.variantLang(t.id);
-  if (m == null) return t.title;
-  if (vl != 'uz' || lang == 'uz') return m.title(vl);
-  final local = m.title(lang);
-  if (local != m.title('uz')) return local;
-  return t.title.trim().isEmpty ? local : t.title;
-}
-
-/// Mavzularni kurs/fan bo‘yicha guruhlaydi. Bir mavzuning til variantlari
-/// (`<id>`, `<id>~ru`, `<id>~en`) bitta qatorga yig‘iladi — ilova tilidagi
-/// variant tanlanadi (bo‘lmasa — asl o‘zbekcha).
-List<_TopicGroupData> _groupTopics(
-  List<ClassTopic> topics,
-  ClassQuizBank bank,
-  String lang,
-  AppLocalizations l,
-  String query,
-) {
-  final byBase = <String, Map<String, ClassTopic>>{};
-  for (final t in topics) {
-    final variants = byBase.putIfAbsent(ClassQuizBank.baseId(t.id), () => {});
-    variants[ClassQuizBank.variantLang(t.id)] = t;
-  }
-  final q = query.trim().toLowerCase();
-  final groups = <String, _TopicGroupData>{};
-  for (final e in byBase.entries) {
-    final v = e.value;
-    final topic = v[lang] ?? v['uz'] ?? v.values.first;
-    final meta = bank.meta(e.key);
-    final g = meta == null ? null : bank.group(meta.groupId);
-    // Bank meta’si yo‘q mavzular: dars kursi bo‘yicha (bo‘lmasa — «Boshqa»).
-    final course = g == null ? topic.course.trim() : '';
-    final gid = g?.id ?? (course.isEmpty ? '_other' : 'course:$course');
-    final group = groups.putIfAbsent(
-      gid,
-      () => _TopicGroupData(
-        gid,
-        g?.title(lang) ?? (course.isEmpty ? l.classTopicGroupOther : course),
-        g?.order ??
-            (course.isEmpty ? 1 << 20 : (1 << 19) + course.hashCode % 1000),
-      ),
-    );
-    final title = _choiceTitle(topic, bank, lang);
-    if (q.isNotEmpty &&
-        !title.toLowerCase().contains(q) &&
-        !group.title.toLowerCase().contains(q)) {
-      continue;
-    }
-    group.items.add(
-      _TopicChoice(
-        topic: topic,
-        title: title,
-        meta: meta,
-        untranslatedTitle:
-            meta == null &&
-            ClassQuizBank.variantLang(topic.id) != 'uz' &&
-            v['uz'] != null &&
-            v['uz']!.title == topic.title,
-      ),
-    );
-  }
-  final out =
-      [
-        for (final g in groups.values)
-          if (g.items.isNotEmpty) g,
-      ]..sort((a, b) {
-        final c = a.order.compareTo(b.order);
-        return c != 0 ? c : a.title.compareTo(b.title);
-      });
-  for (final g in out) {
-    g.items.sort((a, b) {
-      final c = (a.meta?.number ?? 0).compareTo(b.meta?.number ?? 0);
-      return c != 0 ? c : a.title.compareTo(b.title);
-    });
-  }
-  return out;
-}
-
 class _TopicGroup extends StatelessWidget {
   const _TopicGroup({
     super.key,
@@ -461,7 +343,7 @@ class _TopicCard extends StatelessWidget {
     required this.onTap,
   });
 
-  final _TopicChoice item;
+  final ClassTopicChoice item;
   final bool selected;
   final VoidCallback onTap;
 

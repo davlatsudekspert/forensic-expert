@@ -16926,7 +16926,7 @@ abstract class AppLocalizations {
   /// Search field above the grouped topic list (teacher, new class quiz).
   ///
   /// In en, this message translates to:
-  /// **'Search a topic or course'**
+  /// **'Search a topic or subject'**
   String get classTopicSearchHint;
 
   /// Group title for topics without a course/subject in the question bank index.

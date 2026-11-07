@@ -9685,7 +9685,7 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String get classTopicSearchHint => 'Mavzu yoki kursni qidiring';
+  String get classTopicSearchHint => 'Mavzu yoki fanni qidiring';
 
   @override
   String get classTopicGroupOther => 'Boshqa mavzular';

@@ -9725,7 +9725,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get classTopicSearchHint => 'Search a topic or course';
+  String get classTopicSearchHint => 'Search a topic or subject';
 
   @override
   String get classTopicGroupOther => 'Other topics';

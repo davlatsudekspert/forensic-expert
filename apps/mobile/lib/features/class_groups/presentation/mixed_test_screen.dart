@@ -14,6 +14,8 @@ import '../../../core/widgets/fe_components.dart';
 import '../../../domain/class_groups/variant_draw.dart';
 import '../../../domain/class_quiz/class_quiz_models.dart' show ClassTopic;
 import '../../../domain/plan/plan_models.dart';
+import '../../class_quiz/presentation/class_topic_groups.dart'
+    show groupClassTopics;
 import '../../pro/presentation/pro_gate.dart' show openPro;
 import 'group_widgets.dart';
 import 'midterm_preset.dart';
@@ -28,9 +30,10 @@ class MixedSource {
   final List<ClassTopic> topics;
 }
 
-/// Manbalar: savollar banki guruhlari (Darslar bilan bir xil: Davolash ishi,
-/// Pediatriya, Tibbiy profilaktika, Bioetika, …) — ilova tilidagi
-/// variantlar; guruhga kirmaganlari — «Boshqa mavzular».
+/// Manbalar: «Test o‘tkazish» bilan bir xil yagona ro‘yxat (fakultet/fan:
+/// Bioetika, Davolash ishi, Pediatriya, Tibbiy profilaktika, …; bank va
+/// server guruhlari birlashgan, takrorsiz) — ilova tilidagi variantlar;
+/// hech qaysi guruhga kirmaganlari — «Boshqa mavzular» (`other`).
 List<MixedSource> mixedSources(
   ClassQuizBank bank,
   List<ClassTopic> server,
@@ -42,23 +45,12 @@ List<MixedSource> mixedSources(
       if (ClassQuizBank.variantLang(t.id) == lang) t,
   ];
   final pool = inLang.isEmpty ? server : inLang;
-  final used = <String>{};
-  final out = <MixedSource>[];
-  for (final g in bank.groups) {
-    final ts = [
-      for (final m in bank.topics.where((m) => m.groupId == g.id))
-        ?pool.where((t) => ClassQuizBank.baseId(t.id) == m.id).firstOrNull,
-    ];
-    if (ts.isEmpty) continue;
-    used.addAll(ts.map((t) => t.id));
-    out.add(MixedSource(g.id, g.title(lang), ts));
-  }
-  final rest = [
-    for (final t in pool)
-      if (!used.contains(t.id)) t,
+  return [
+    for (final g in groupClassTopics(pool, bank, lang, otherTitle, ''))
+      MixedSource(g.id == '_other' ? 'other' : g.id, g.title, [
+        for (final x in g.items) x.topic,
+      ]),
   ];
-  if (rest.isNotEmpty) out.add(MixedSource('other', otherTitle, rest));
-  return out;
 }
 
 /// Avtomatik nom: «Umumiy test: A · B…».
