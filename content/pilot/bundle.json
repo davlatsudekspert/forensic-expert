@@ -11483,6 +11483,74 @@
    "license_mode": "openReuse",
    "identifier_verified": true,
    "notes": "Litsenziya (Europe PMC / PMC BioC): CC BY. Jumla asl matndan (ABSTRACT) ajratilgan (analysis_fill)."
+  },
+  {
+   "source_id": "SRC-PMC10198145",
+   "source_type": "journal_article",
+   "title": "Molecular Autopsy in Asphyxia Deaths: Diagnostic Perspectives of miRNAs in the Evaluation of Hypoxia Response",
+   "authors": [
+    "Scopetti M",
+    "Padovano M",
+    "Manetti F",
+    "Di Fazio N",
+    "Radaelli D",
+    "D'Errico S"
+   ],
+   "journal": "International journal of medical sciences",
+   "publication_year": 2023,
+   "doi": "10.7150/ijms.79539",
+   "pmid": "37213668",
+   "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10198145/",
+   "accessed_date": "2026-10-05",
+   "tier": "tier2",
+   "evidence_level": "B",
+   "license_mode": "openReuse",
+   "identifier_verified": true,
+   "notes": "Litsenziya (PMC BioC API): CC BY. Jumla asl matndan (ABSTRACT) dasturiy ajratilgan; kuratsiya: phase5/curation_manual.json."
+  },
+  {
+   "source_id": "SRC-PMC10932096",
+   "source_type": "journal_article",
+   "title": "Application of Aquaporins as Markers in Forensic Pathology: A Systematic Review of the Literature",
+   "authors": [
+    "Alfieri L",
+    "Montana A",
+    "Frisoni P",
+    "D'Errico S",
+    "Neri M"
+   ],
+   "journal": "International journal of molecular sciences",
+   "publication_year": 2024,
+   "doi": "10.3390/ijms25052664",
+   "pmid": "38473914",
+   "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10932096/",
+   "accessed_date": "2026-10-05",
+   "tier": "tier2",
+   "evidence_level": "A",
+   "license_mode": "openReuse",
+   "identifier_verified": true,
+   "notes": "Litsenziya (PMC BioC API): CC BY. Jumla asl matndan (RESULTS) dasturiy ajratilgan; kuratsiya: phase5/curation_manual.json."
+  },
+  {
+   "source_id": "SRC-PMC8238305",
+   "source_type": "journal_article",
+   "title": "Immunohistochemistry in postmortem diagnosis of acute cerebral hypoxia and ischemia: A systematic review",
+   "authors": [
+    "Barranco R",
+    "Bonsignore A",
+    "Ventura F"
+   ],
+   "journal": "Medicine",
+   "publication_year": 2021,
+   "doi": "10.1097/MD.0000000000026486",
+   "pmid": "34160462",
+   "official_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8238305/",
+   "accessed_date": "2026-10-05",
+   "tier": "tier2",
+   "evidence_level": "A",
+   "license_mode": "openReuse",
+   "identifier_verified": true,
+   "notes": "Litsenziya (PMC BioC API): CC BY. Jumla asl matndan (ABSTRACT) dasturiy ajratilgan; kuratsiya: phase5/curation_manual.json."
   }
  ],
  "substances": [
@@ -41296,6 +41364,66 @@
     "excerpt": "The performance of the SAMElife™ rapid hair screening kit was evaluated for the detection of drugs of abuse in 31 anonymized hair samples, encompassing 217 analyses for morphine, cocaine, amphetamines, buprenorphine, oxycodone, fentanyl, and methadone.",
     "section": "ABSTRACT"
    }
+  },
+  {
+   "claim_id": "C-HIS-WOUND-AGE-MARKERS-MARKER-P5",
+   "entity_type": "topic",
+   "entity_id": "his-wound-age-markers",
+   "field": "marker",
+   "domain": "fm",
+   "declared_status": "NEEDS_REVIEW",
+   "evidence_level": "A",
+   "layer": "international_scientific",
+   "is_structured_value": false,
+   "value": {
+    "excerpt": "Results: This study sheds light on the role of omics research during the process of wounding, identifying different cytokines and other inflammatory mediators, as well as cells involved in the specific stage of the wound healing process, show great use in estimating the age of a wound.",
+    "section": "ABSTRACT"
+   }
+  },
+  {
+   "claim_id": "C-HIS-LUNG-ASPHYXIA-MARKER-P5",
+   "entity_type": "topic",
+   "entity_id": "his-lung-asphyxia",
+   "field": "marker",
+   "domain": "fm",
+   "declared_status": "NEEDS_REVIEW",
+   "evidence_level": "B",
+   "layer": "international_scientific",
+   "is_structured_value": false,
+   "value": {
+    "excerpt": "The development of knowledge in biochemistry and molecular biology has allowed research in forensic pathology to identify some markers useful in immunohistochemical diagnostics of asphyxia deaths.",
+    "section": "ABSTRACT"
+   }
+  },
+  {
+   "claim_id": "C-HIS-HEAT-BURN-SKIN-MARKER-P5",
+   "entity_type": "topic",
+   "entity_id": "his-heat-burn-skin",
+   "field": "marker",
+   "domain": "fm",
+   "declared_status": "NEEDS_REVIEW",
+   "evidence_level": "A",
+   "layer": "international_scientific",
+   "is_structured_value": false,
+   "value": {
+    "excerpt": "A study regarding the diagnosis of death associated with fire investigated AQP1 and AQP3 expression in the skin and discussed their role in the differential diagnosis of ante- and postmortem burns.",
+    "section": "RESULTS"
+   }
+  },
+  {
+   "claim_id": "C-HIS-BRAIN-HYPOXIA-MARKER-P5",
+   "entity_type": "topic",
+   "entity_id": "his-brain-hypoxia",
+   "field": "marker",
+   "domain": "fm",
+   "declared_status": "NEEDS_REVIEW",
+   "evidence_level": "A",
+   "layer": "international_scientific",
+   "is_structured_value": false,
+   "value": {
+    "excerpt": ": Discovery of evidence of acute brain ischemia or hypoxia and its differentiation from agonal hypoxia represents a task of interest but extremely difficult in forensic neuropathology.",
+    "section": "ABSTRACT"
+   }
   }
  ],
  "citations": [
@@ -45873,6 +46001,26 @@
    "claim_id": "C-AS-BUPRENORPHINE-IMMUNOASSAY_SCREEN-01",
    "source_id": "SRC-PMC13335650",
    "locator": "ABSTRACT"
+  },
+  {
+   "claim_id": "C-HIS-WOUND-AGE-MARKERS-MARKER-P5",
+   "source_id": "SRC-PMC8770859",
+   "locator": "ABSTRACT"
+  },
+  {
+   "claim_id": "C-HIS-LUNG-ASPHYXIA-MARKER-P5",
+   "source_id": "SRC-PMC10198145",
+   "locator": "ABSTRACT"
+  },
+  {
+   "claim_id": "C-HIS-HEAT-BURN-SKIN-MARKER-P5",
+   "source_id": "SRC-PMC10932096",
+   "locator": "RESULTS"
+  },
+  {
+   "claim_id": "C-HIS-BRAIN-HYPOXIA-MARKER-P5",
+   "source_id": "SRC-PMC8238305",
+   "locator": "ABSTRACT"
   }
  ],
  "instruments": [
@@ -48404,6 +48552,42 @@
     "en": "Rigor mortis",
     "ru": "Трупное окоченение",
     "uz": "Murda qotishi (rigor mortis)"
+   }
+  },
+  {
+   "topic_id": "his-wound-age-markers",
+   "area": "histology",
+   "names": {
+    "en": "Wound age markers (histology)",
+    "ru": "Маркеры давности ран (гистология)",
+    "uz": "Jarohat yoshi belgilari (gistologiya)"
+   }
+  },
+  {
+   "topic_id": "his-lung-asphyxia",
+   "area": "histology",
+   "names": {
+    "en": "Asphyxia: immunohistochemical markers",
+    "ru": "Асфиксия: иммуногистохимические маркеры",
+    "uz": "Asfiksiya: immunogistokimyoviy belgilar"
+   }
+  },
+  {
+   "topic_id": "his-heat-burn-skin",
+   "area": "histology",
+   "names": {
+    "en": "Burn vitality in skin (histology)",
+    "ru": "Прижизненность ожогов кожи (гистология)",
+    "uz": "Teri kuyishining hayotiyligi (gistologiya)"
+   }
+  },
+  {
+   "topic_id": "his-brain-hypoxia",
+   "area": "histology",
+   "names": {
+    "en": "Brain hypoxic-ischaemic changes (histology)",
+    "ru": "Гипоксически-ишемические изменения мозга (гистология)",
+    "uz": "Miya gipoksik-ishemik o‘zgarishlar (gistologiya)"
    }
   }
  ],

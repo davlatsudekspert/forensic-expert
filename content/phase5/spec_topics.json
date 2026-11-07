@@ -1033,6 +1033,54 @@
   "allow_methods": false
  },
  {
+  "target": "his-wound-age-markers|marker",
+  "entity": "his-wound-age-markers",
+  "field": "marker",
+  "query": "wound age estimation immunohistochemistry markers forensic skin",
+  "patterns": [
+   "wound age|age of (the )?wound|wound healing|wound timing",
+   "immunohistochem|histolog|inflammat|neutrophil|macrophage|marker",
+   "estimat|determin|time|age"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "his-lung-asphyxia|marker",
+  "entity": "his-lung-asphyxia",
+  "field": "marker",
+  "query": "asphyxia lung histology forensic hypoxia markers autopsy",
+  "patterns": [
+   "asphyxia|hypoxi|suffocation|strangulation",
+   "lung|pulmonary|histolog|immunohistochem|marker",
+   "forensic|post-?mortem|autops"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "his-heat-burn-skin|marker",
+  "entity": "his-heat-burn-skin",
+  "field": "marker",
+  "query": "burn vitality histology skin forensic heat injury",
+  "patterns": [
+   "burn|thermal|heat",
+   "skin|histolog|vital|immunohistochem",
+   "forensic|post-?mortem|autops|vitality"
+  ],
+  "allow_methods": false
+ },
+ {
+  "target": "his-brain-hypoxia|marker",
+  "entity": "his-brain-hypoxia",
+  "field": "marker",
+  "query": "brain histology hypoxic ischemic postmortem forensic neuropathology",
+  "patterns": [
+   "brain|cerebral|neuron",
+   "hypoxi|ischemi|ischaemi|histolog|immunohistochem",
+   "forensic|post-?mortem|autops"
+  ],
+  "allow_methods": false
+ },
+ {
   "target": "his-sids|limitation",
   "entity": "his-sids",
   "field": "limitation",

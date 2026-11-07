@@ -150,6 +150,10 @@ HIS = [
  ("his-putrefaction-artifact", "limitation", 'putrefaction autolysis artifacts histology postmortem', [r"autoly|putrefact|decompos", r"artifact|artefact|interpret|histolog"]),
  ("his-fat-embolism", "marker", 'fat embolism postmortem histology "Oil Red O" OR Sudan', [r"fat embolism", r"Oil Red O|Sudan|lung|pulmonary|stain"]),
  ("his-drowning", "limitation", 'drowning lung histology forensic emphysema aquosum', [r"drowning", r"histolog|lung|alveol|emphysema"]),
+ ("his-wound-age-markers", "marker", 'wound age estimation immunohistochemistry markers forensic skin', [r"wound age|age of (the )?wound|wound healing|wound timing", r"immunohistochem|histolog|inflammat|neutrophil|macrophage|marker", r"estimat|determin|time|age"]),
+ ("his-lung-asphyxia", "marker", 'asphyxia lung histology forensic hypoxia markers autopsy', [r"asphyxia|hypoxi|suffocation|strangulation", r"lung|pulmonary|histolog|immunohistochem|marker", r"forensic|post-?mortem|autops"]),
+ ("his-heat-burn-skin", "marker", 'burn vitality histology skin forensic heat injury', [r"burn|thermal|heat", r"skin|histolog|vital|immunohistochem", r"forensic|post-?mortem|autops|vitality"]),
+ ("his-brain-hypoxia", "marker", 'brain histology hypoxic ischemic postmortem forensic neuropathology', [r"brain|cerebral|neuron", r"hypoxi|ischemi|ischaemi|histolog|immunohistochem", r"forensic|post-?mortem|autops"]),
  ("his-sids", "limitation", 'histology sudden death heart conduction system autopsy', [r"histolog", r"sudden (cardiac )?death", r"heart|cardiac|myocard"]),
 ]
 for ent, field, q, pats in HIS:

@@ -261,6 +261,10 @@ NAMES = {
     "his-mi-early": ("Early myocardial infarction (histology)", "Ранний инфаркт миокарда (гистология)", "Erta miokard infarkti (gistologiya)"),
     "his-putrefaction-artifact": ("Artefacts and interpretation limits", "Артефакты и ограничения интерпретации", "Artefaktlar va talqin cheklovlari"),
     "his-fat-embolism": ("Fat embolism (histology)", "Жировая эмболия (гистология)", "Yog‘ emboliyasi (gistologiya)"),
+    "his-wound-age-markers": ("Wound age markers (histology)", "Маркеры давности ран (гистология)", "Jarohat yoshi belgilari (gistologiya)"),
+    "his-lung-asphyxia": ("Asphyxia: immunohistochemical markers", "Асфиксия: иммуногистохимические маркеры", "Asfiksiya: immunogistokimyoviy belgilar"),
+    "his-heat-burn-skin": ("Burn vitality in skin (histology)", "Прижизненность ожогов кожи (гистология)", "Teri kuyishining hayotiyligi (gistologiya)"),
+    "his-brain-hypoxia": ("Brain hypoxic-ischaemic changes (histology)", "Гипоксически-ишемические изменения мозга (гистология)", "Miya gipoksik-ishemik o‘zgarishlar (gistologiya)"),
     # biokimyo
     "bio-vitreous-sodium-chloride": ("Vitreous sodium and chloride", "Натрий и хлор стекловидного тела", "Shishasimon tana natriy va xlori"),
     "bio-vitreous-urea-creatinine": ("Vitreous urea and creatinine", "Мочевина и креатинин стекловидного тела", "Shishasimon tana mochevina va kreatinini"),
