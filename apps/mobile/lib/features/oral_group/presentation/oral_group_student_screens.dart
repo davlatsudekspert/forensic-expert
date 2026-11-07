@@ -8,6 +8,7 @@ import '../../../app/class_quiz.dart'
     show classScannerAvailableProvider, pendingClassCodeProvider;
 import '../../../app/keep_awake.dart';
 import '../../../app/oral_group.dart';
+import '../../../app/oral_i18n.dart';
 import '../../../app/professional.dart' show localProfileProvider;
 import '../../../app/providers.dart';
 import '../../../app/routes.dart';
@@ -461,7 +462,13 @@ class _Ticket extends ConsumerWidget {
                           ),
                         ),
                         const SizedBox(height: FeSpace.xxs),
-                        Text(s.questions[i].text, style: t.titleMedium),
+                        Text(
+                          ref.watch(
+                            oralGroupQuestionTextProvider(s.questions[i]),
+                          ),
+                          key: Key('oralgroup.qtext.$i'),
+                          style: t.titleMedium,
+                        ),
                         if (s.isGraded &&
                             s.scores != null &&
                             i < s.scores!.length) ...[

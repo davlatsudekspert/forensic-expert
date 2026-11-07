@@ -18,6 +18,7 @@ class OralTicketQuestionCard extends StatelessWidget {
     required this.onScore,
     required this.answerKey,
     this.caption,
+    this.sourceNote,
   });
 
   final int index;
@@ -32,6 +33,9 @@ class OralTicketQuestionCard extends StatelessWidget {
 
   /// Savol ustidagi qo‘shimcha izoh (masalan, mavzu nomi).
   final String? caption;
+
+  /// Matn manbasi izohi (masalan, «Avtomatik tarjima — tekshirilmagan»).
+  final String? sourceNote;
 
   @override
   Widget build(BuildContext context) {
@@ -54,6 +58,15 @@ class OralTicketQuestionCard extends StatelessWidget {
           ),
           const SizedBox(height: FeSpace.xxs),
           Text(text, style: t.titleMedium),
+          if (sourceNote != null && sourceNote!.isNotEmpty)
+            Padding(
+              padding: const EdgeInsets.only(top: FeSpace.xxs),
+              child: Text(
+                sourceNote!,
+                key: Key('oral.q.$index.source'),
+                style: t.bodySmall?.copyWith(color: c.textSecondary),
+              ),
+            ),
           const SizedBox(height: FeSpace.xs),
           Row(
             children: [

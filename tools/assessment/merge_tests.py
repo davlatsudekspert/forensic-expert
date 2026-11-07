@@ -88,5 +88,9 @@ if os.path.exists(i18n_path):  # RU (rasmiy/llm) va EN versiyalari — apply_tes
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     from apply_tests_i18n import apply as apply_i18n
     apply_i18n(json.load(open(i18n_path, encoding='utf8')), bundle)
+if os.path.exists(os.path.join(data, 'oral_llm_i18n.json')):  # og‘zaki savollar RU/EN — apply_oral_i18n.py
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from apply_oral_i18n import apply as apply_oral_i18n
+    apply_oral_i18n(data, bundle)
 json.dump(bundle, open(target, 'w', encoding='utf8'), ensure_ascii=False, separators=(',', ':'))
 print(stats)

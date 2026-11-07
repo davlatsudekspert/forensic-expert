@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../app/oral_group.dart';
+import '../../../app/oral_i18n.dart';
 import '../../../app/routes.dart';
 import '../../../app/teacher_oral.dart';
 import '../../../core/design/theme.dart';
@@ -221,7 +222,9 @@ class _GradeBodyState extends ConsumerState<_GradeBody> {
             padding: const EdgeInsets.only(bottom: FeSpace.sm),
             child: OralTicketQuestionCard(
               index: i,
-              text: ticket.questions[i].text,
+              text: ref.watch(
+                oralGroupQuestionTextProvider(ticket.questions[i]),
+              ),
               score: sc[i],
               onScore: (v) => setState(() {
                 final next = [...sc];

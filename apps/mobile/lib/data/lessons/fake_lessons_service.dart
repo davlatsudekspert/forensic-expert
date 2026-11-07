@@ -11,7 +11,12 @@ class FakeLessonsService implements LessonsService {
     Map<String, Map<String, Object?>>? decks,
     this.failure,
     this.openCourses = const {'Apparatlar bilan ishlash'},
+    this.localizedDecks = const {},
   }) : _decks = decks ?? sampleLessonDecks;
+
+  /// Tarjima qilingan decklar (`lesson_get_localized` kabi): til → mavzu →
+  /// deck JSON. Yo‘q bo‘lsa — asl deck.
+  final Map<String, Map<String, Map<String, Object?>>> localizedDecks;
 
   final bool isTeacher;
 
@@ -65,7 +70,7 @@ class FakeLessonsService implements LessonsService {
   @override
   Future<ClassResult<LessonDeck>> get(String topicId, {String? lang}) async {
     if (failure != null) return ClassResult.fail(failure!);
-    final j = _decks[topicId];
+    final j = localizedDecks[lang]?[topicId] ?? _decks[topicId];
     if (j == null) return const ClassResult.fail(ClassFailure.notFound);
     if (isTeacher) return ClassResult.ok(LessonDeck.fromJson(j));
     // Server kabi: ustoz bo‘lmaganga «Ustoz eslatmalari» berilmaydi.

@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../core/settings/settings_controller.dart';
 import '../domain/assessment/oral_exam.dart';
 import '../domain/class_quiz/class_quiz_models.dart' show ClassFailure;
 import '../domain/lessons/lesson_models.dart';
@@ -58,7 +59,14 @@ final teacherOralPoolProvider = FutureProvider.autoDispose
         for (final x in key.split(','))
           if (x.trim().isNotEmpty) x.trim(),
       ];
+      final lang = ref.watch(
+        settingsControllerProvider.select(
+          (s) => s.locale?.languageCode ?? 'uz',
+        ),
+      );
+      final translated = lang == 'ru' || lang == 'en';
       final decks = <LessonDeck>[];
+      final questions = <String, LessonOralQuestion>{};
       ClassFailure? failure;
       for (final id in ids) {
         final r = await ref.watch(lessonDeckProvider(id).future);
@@ -68,11 +76,18 @@ final teacherOralPoolProvider = FutureProvider.autoDispose
           continue;
         }
         decks.add(d);
+        // Tarjima qilingan deck: savollar tuzilmasi (id’lar) o‘zbekcha
+        // deck’dan — biletlar, tarix va guruh imtihoni barcha tillarda mos.
+        final uz = translated
+            ? (await ref.watch(lessonDeckUzProvider(id).future)).value
+            : null;
+        for (final q
+            in uz == null
+                ? lessonOralQuestions(d)
+                : lessonOralQuestionsLocalized(uz, d)) {
+          questions[q.id] = q;
+        }
       }
-      final questions = <String, LessonOralQuestion>{
-        for (final d in decks)
-          for (final q in lessonOralQuestions(d)) q.id: q,
-      };
       return TeacherOralPool(
         topics: decks,
         questions: questions,

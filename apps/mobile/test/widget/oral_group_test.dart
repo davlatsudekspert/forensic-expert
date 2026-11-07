@@ -121,8 +121,9 @@ class _World {
           for (var t = 0; t < tickets; t++)
             [
               for (var q = 0; q < 5; q++)
+                // Darsda yo‘q mavzu: matn serverdagi kabi ko‘rinadi.
                 OralGroupQuestion(
-                  id: 'a1#${t * 5 + q + 1}',
+                  id: 'x9#${t * 5 + q + 1}',
                   text: 'Bilet ${t + 1} savol ${q + 1}',
                 ),
             ],

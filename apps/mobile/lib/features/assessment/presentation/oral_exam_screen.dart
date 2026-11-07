@@ -304,6 +304,15 @@ class _TicketQuestion extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) => OralTicketQuestionCard(
     index: index,
     text: question?.text ?? '',
+    sourceNote: switch (question?.textSource) {
+      AssessmentTextSource.official => AppLocalizations.of(
+        context,
+      ).trStatusOfficial,
+      AssessmentTextSource.machine => AppLocalizations.of(
+        context,
+      ).trStatusMachineDraft,
+      _ => null,
+    },
     score: score,
     onScore: (v) => ref.read(oralExamProvider.notifier).setScore(index, v),
     answerKey: OralAnswerView(answer: answer),

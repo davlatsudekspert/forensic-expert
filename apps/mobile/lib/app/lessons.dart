@@ -68,6 +68,14 @@ final lessonDeckProvider = FutureProvider.autoDispose
       return ClassResult.ok(applyNarration(deck, items));
     });
 
+/// Darsning asl (o‘zbekcha) deck’i — tarjima qilingan deck bilan bir xil
+/// tuzilmani tanlash uchun (og‘zaki bilet savollari id’lari). Tushuntirishlar
+/// (narration) qo‘shilmaydi.
+final lessonDeckUzProvider = FutureProvider.autoDispose
+    .family<ClassResult<LessonDeck>, String>(
+      (ref, topicId) => ref.watch(lessonsServiceProvider).get(topicId),
+    );
+
 /// Ko‘rish oynasida skrinshot/yozib olishni cheklash (Android FLAG_SECURE;
 /// iOS’da ishonchli usul yo‘q). Testlarda almashtiriladi.
 abstract interface class LessonScreenGuard {

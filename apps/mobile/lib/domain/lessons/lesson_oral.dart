@@ -46,12 +46,30 @@ final _service = RegExp(
   'o${_ap}quv holat|vaziyatli masala|voqea tahlili|amaliy (?:keys|holat|mashq|ish)|'
   '\\d+-(?:keys|holat)|keys\\b|'
   'diqqat|eslatma|uyga vazifa|mustaqil (?:ish|ta${_ap}lim)|'
-  '(?:foydalanilgan )?adabiyot|glossariy|trening|mashq\\b|«?charxpalak'
+  '(?:foydalanilgan )?adabiyot|glossariy|trening|mashq\\b|«?charxpalak|'
+  // Tarjima qilingan (ru/en) deck: o‘zbekcha deck topilmasa ham xizmat
+  // slaydlari savol bo‘lmasin.
+  'введение(?:\\s*[:.—–-]|\$)|заключение(?:\\s*[:.—–-]|\$)|выводы?(?=\$|[\\s:.,—–-])|итог(?=\$|[\\s:.,—–-])|'
+  'повторение(?=\$|[\\s:.,—–-])|контрольные вопросы|тестовые вопросы|вопросы(?=\$|[\\s:.,—–-])|'
+  'план (?:лекции|занятия|темы)|план(?=\$|[\\s:.,—–-])|цель занятия|цел[ьи](?=\$|[\\s:.,—–-])|'
+  'ожидаемые результаты|ситуационная задача|разбор случая|кейс(?=\$|[\\s:.,—–-])|'
+  'внимание|примечание|домашнее задание|самостоятельная работа|'
+  '(?:использованная )?литература|глоссарий|тренинг|упражнение(?=\$|[\\s:.,—–-])|'
+  'introduction(?:\\s*[:.—–-]|\$)|conclusions?\\b|summary\\b|review\\b|'
+  'quick question|control questions|test questions|questions\\b|'
+  '(?:lecture|lesson|session) (?:plan|outline)|outline\\b|plan\\b|'
+  '(?:aims?|objectives?|learning outcomes|expected outcomes)\\b|'
+  'case (?:study|analysis)|case\\b|attention\\b|note\\b|homework|'
+  'independent (?:work|study)|references|(?:recommended )?reading|glossary|'
+  'training\\b|exercise\\b'
   ')',
   caseSensitive: false,
 );
 
-final _continued = RegExp(r'\s*\((?:davomi|davom)\)\s*$', caseSensitive: false);
+final _continued = RegExp(
+  r'\s*\((?:davomi|davom|продолжение|окончание|cont\.?|continued)\)\s*$',
+  caseSensitive: false,
+);
 
 /// «2-bo‘lim: …», «11-jadval: …» kabi raqamli boshlovchi.
 final _numberedPrefix = RegExp(
@@ -59,10 +77,26 @@ final _numberedPrefix = RegExp(
   caseSensitive: false,
 );
 
-/// Slayd sarlavhasidan savol matni; savol bo‘lmasa — bo‘sh.
-String lessonOralQuestionText(String title) {
+/// Tarjima qilingan sarlavhadagi raqamli boshlovchi («Раздел 2: …»,
+/// «Table 11: …»).
+final _numberedPrefixI18n = RegExp(
+  r'^(?:раздел|таблицы?|часть|section|tables?|part)\s+\d+'
+  r'(?:\s*(?:и|and)\s*\d+)?\s*[:.—–-]\s*',
+  caseSensitive: false,
+);
+
+/// Sarlavhaning toza ko‘rinishi (davomi belgisi va raqamli boshlovchisiz),
+/// xizmat slaydi tekshirilmaydi: tarjima qilingan deck’dan savol matni uchun.
+String lessonOralSlideTitle(String title) {
   var t = title.trim().replaceFirst(_continued, '').trim();
   t = t.replaceFirst(_numberedPrefix, '').trim();
+  t = t.replaceFirst(_numberedPrefixI18n, '').trim();
+  return t;
+}
+
+/// Slayd sarlavhasidan savol matni; savol bo‘lmasa — bo‘sh.
+String lessonOralQuestionText(String title) {
+  final t = lessonOralSlideTitle(title);
   if (t.length < 4 || _service.hasMatch(t)) return '';
   return t;
 }
@@ -100,6 +134,50 @@ List<LessonOralQuestion> lessonOralQuestions(LessonDeck deck) {
     );
   }
   return out;
+}
+
+/// Tarjima qilingan deck bo‘yicha savollar: tuzilma (qaysi slayd savol,
+/// qaysilari «davomi» sifatida qo‘shiladi, id’lar) asl o‘zbekcha [uz] deck’dan
+/// olinadi — shunda id’lar barcha tillarda bir xil (guruh imtihoni, tarix);
+/// matn va bandlar [localized] deck’ning o‘sha slaydlaridan. Tarjima deck’i
+/// yo‘q yoki slaydlar soni mos kelmasa — o‘zbekcha savollar.
+List<LessonOralQuestion> lessonOralQuestionsLocalized(
+  LessonDeck uz,
+  LessonDeck? localized,
+) {
+  final base = lessonOralQuestions(uz);
+  final loc = localized;
+  if (loc == null ||
+      identical(loc, uz) ||
+      loc.slides.length != uz.slides.length) {
+    return base;
+  }
+  final topic = uz.topicId;
+  // Har savolga tegishli slayd indekslari (lessonOralQuestions qoidasi).
+  final slidesOf = <String, List<int>>{};
+  final byText = <String, String>{};
+  for (final (i, s) in uz.slides.indexed) {
+    final text = lessonOralQuestionText(s.title);
+    if (text.isEmpty || s.bullets.isEmpty) continue;
+    final norm = text.toLowerCase();
+    final id = byText.putIfAbsent(norm, () => '$topic#$i');
+    (slidesOf[id] ??= []).add(i);
+  }
+  return [
+    for (final q in base)
+      () {
+        final idx = slidesOf[q.id] ?? const <int>[];
+        if (idx.isEmpty) return q;
+        final title = lessonOralSlideTitle(loc.slides[idx.first].title);
+        final bullets = [for (final i in idx) ...loc.slides[i].bullets];
+        return LessonOralQuestion(
+          id: q.id,
+          topicId: q.topicId,
+          text: title.isEmpty ? q.text : title,
+          bullets: bullets.isEmpty ? q.bullets : bullets,
+        );
+      }(),
+  ];
 }
 
 /// Tanlangan mavzular uchun bilet: har mavzudan navbat bilan (savollar

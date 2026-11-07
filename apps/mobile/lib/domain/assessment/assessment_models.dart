@@ -3,7 +3,8 @@ import 'package:flutter/foundation.dart';
 /// «Bilim va malakani baholash»: malaka toifalari uchun rasmiy og‘zaki imtihon
 /// savollari ro‘yxati. Javoblar rasmiy manbada yo‘q: ular alohida, adabiyot
 /// (kitob, bet, iqtibos) asosida yoziladi va to‘qilmaydi.
-/// Savollar rasmiy hujjatning o‘zbekcha matni (tarjima qilinmaydi).
+/// Savollar rasmiy hujjatning o‘zbekcha matni; RU — rasmiy ruscha ro‘yxat
+/// (mos kelganda) yoki mashina tarjimasi, EN — mashina tarjimasi.
 @immutable
 class AssessmentSource {
   const AssessmentSource({
@@ -32,18 +33,40 @@ class AssessmentQuestion {
     required this.id,
     required this.number,
     required this.text,
+    this.textSource = AssessmentTextSource.original,
   });
 
-  factory AssessmentQuestion.fromJson(Map<String, Object?> j) =>
-      AssessmentQuestion(
-        id: _s(j['id']),
-        number: j['n'] is num ? (j['n']! as num).toInt() : 0,
-        text: _s(j['text']),
-      );
+  /// [lang] — interfeys tili (`uz`/`ru`/`en`). Shu tildagi matn bo‘lsa
+  /// (`text_ru`/`text_en`) o‘sha ko‘rsatiladi, aks holda asl o‘zbekcha matn.
+  factory AssessmentQuestion.fromJson(
+    Map<String, Object?> j, {
+    String lang = 'uz',
+  }) {
+    var text = _s(j['text']);
+    var source = AssessmentTextSource.original;
+    if (lang == 'ru' || lang == 'en') {
+      final lt = _s(j['text_$lang']).trim();
+      if (lt.isNotEmpty) {
+        text = lt;
+        source = _s(j['${lang}_src']) == 'official'
+            ? AssessmentTextSource.official
+            : AssessmentTextSource.machine;
+      }
+    }
+    return AssessmentQuestion(
+      id: _s(j['id']),
+      number: j['n'] is num ? (j['n']! as num).toInt() : 0,
+      text: text,
+      textSource: source,
+    );
+  }
 
   final String id;
   final int number;
+
+  /// Interfeys tilidagi matn (tarjima bo‘lmasa — asl o‘zbekcha).
   final String text;
+  final AssessmentTextSource textSource;
 }
 
 /// Malaka toifasi guruhi: `c23` — uchinchi va ikkinchi, `c1` — birinchi,
@@ -52,14 +75,16 @@ class AssessmentQuestion {
 class AssessmentCategory {
   const AssessmentCategory({required this.id, required this.questions});
 
-  factory AssessmentCategory.fromJson(Map<String, Object?> j) =>
-      AssessmentCategory(
-        id: _s(j['id']),
-        questions: [
-          for (final q in _list(j['questions']))
-            AssessmentQuestion.fromJson(_map(q)),
-        ],
-      );
+  factory AssessmentCategory.fromJson(
+    Map<String, Object?> j, {
+    String lang = 'uz',
+  }) => AssessmentCategory(
+    id: _s(j['id']),
+    questions: [
+      for (final q in _list(j['questions']))
+        AssessmentQuestion.fromJson(_map(q), lang: lang),
+    ],
+  );
 
   final String id;
   final List<AssessmentQuestion> questions;
@@ -186,7 +211,7 @@ class AssessmentSpecialty {
     title: _s(j['title']),
     categories: [
       for (final c in _list(j['categories']))
-        AssessmentCategory.fromJson(_map(c)),
+        AssessmentCategory.fromJson(_map(c), lang: lang),
     ],
     tests: [
       for (final t in _list(j['tests']))
