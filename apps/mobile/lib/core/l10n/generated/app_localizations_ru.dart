@@ -10054,7 +10054,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get grpNameHelper =>
-      'Например: «4 курс, 2 группа». Студенты видят это название.';
+      'Например: «Лечебное дело, 2 группа». Студенты видят это название.';
 
   @override
   String get grpAssignAction => 'Дать тест по теме';

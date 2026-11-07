@@ -111,10 +111,10 @@ void main() {
       final l = lookupAppLocalizations(const Locale('uz'));
       // Kurs/fan guruhlari (yopiq) — sarlavhalar ko‘rinadi.
       expect(
-        find.text('Sud tibbiyoti · 4-kurs, davolash ishi'),
+        find.text('Sud tibbiyoti · Davolash ishi'),
         findsOneWidget,
       );
-      expect(find.text('Bioetika · 2-kurs'), findsOneWidget);
+      expect(find.text('Bioetika'), findsOneWidget);
       expect(find.text(l.classDemoChip), findsNothing);
       // Til variantlari bitta qatorga yig‘ilgan: ru/en kartasi yo‘q.
       await tester.enterText(

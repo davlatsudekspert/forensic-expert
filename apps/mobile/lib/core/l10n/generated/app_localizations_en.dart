@@ -10001,7 +10001,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get grpNameHelper =>
-      'For example: “4th year, group 2”. Students see this name.';
+      'For example: “General Medicine, group 2”. Students see this name.';
 
   @override
   String get grpAssignAction => 'Give a topic test';

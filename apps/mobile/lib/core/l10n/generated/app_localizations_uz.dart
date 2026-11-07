@@ -9954,7 +9954,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get grpNameHelper =>
-      'Masalan: «4-kurs, 2-guruh». Talabalar shu nomni ko‘radi.';
+      'Masalan: «Davolash ishi, 2-guruh». Talabalar shu nomni ko‘radi.';
 
   @override
   String get grpAssignAction => 'Mavzu testi berish';

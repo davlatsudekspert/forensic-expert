@@ -17388,7 +17388,7 @@ abstract class AppLocalizations {
   /// Helper.
   ///
   /// In en, this message translates to:
-  /// **'For example: “4th year, group 2”. Students see this name.'**
+  /// **'For example: “General Medicine, group 2”. Students see this name.'**
   String get grpNameHelper;
 
   /// Primary button.
