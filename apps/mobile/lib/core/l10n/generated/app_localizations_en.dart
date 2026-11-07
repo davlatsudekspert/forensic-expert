@@ -11290,7 +11290,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get assessmentIntro =>
-      'Official oral-exam question lists and practice tests by specialty and qualification category.';
+      'Official oral-exam question lists and practice tests by specialty.';
 
   @override
   String get assessmentSpecSudTib => 'Forensic medical examination';
@@ -11302,13 +11302,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get assessmentSpecSudKimyo => 'Forensic chemical examination';
 
   @override
-  String get assessmentCatC23 => 'Third and second category';
+  String get assessmentCatC23 => 'Level 1';
 
   @override
-  String get assessmentCatC1 => 'First category';
+  String get assessmentCatC1 => 'Level 2';
 
   @override
-  String get assessmentCatC0 => 'Highest category';
+  String get assessmentCatC0 => 'Level 3';
 
   @override
   String get assessmentTabOral => 'Oral questions';

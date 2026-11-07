@@ -11216,7 +11216,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get assessmentIntro =>
-      'Mutaxassislik va malaka toifalari bo‘yicha rasmiy og‘zaki imtihon savollari ro‘yxati va test mashqlari.';
+      'Mutaxassisliklar bo‘yicha rasmiy og‘zaki imtihon savollari ro‘yxati va test mashqlari.';
 
   @override
   String get assessmentSpecSudTib => 'Sud-tibbiy ekspertiza';
@@ -11228,13 +11228,13 @@ class AppLocalizationsUz extends AppLocalizations {
   String get assessmentSpecSudKimyo => 'Sud-kimyogar ekspertiza';
 
   @override
-  String get assessmentCatC23 => 'Uchinchi va ikkinchi toifa';
+  String get assessmentCatC23 => '1-daraja';
 
   @override
-  String get assessmentCatC1 => 'Birinchi toifa';
+  String get assessmentCatC1 => '2-daraja';
 
   @override
-  String get assessmentCatC0 => 'Oliy toifa';
+  String get assessmentCatC0 => '3-daraja';
 
   @override
   String get assessmentTabOral => 'Og‘zaki savollar';

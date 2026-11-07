@@ -11336,7 +11336,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get assessmentIntro =>
-      'Официальные перечни вопросов устного экзамена и тренировочные тесты по специальностям и квалификационным категориям.';
+      'Официальные перечни вопросов устного экзамена и тренировочные тесты по специальностям.';
 
   @override
   String get assessmentSpecSudTib => 'Судебно-медицинская экспертиза';
@@ -11348,13 +11348,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get assessmentSpecSudKimyo => 'Судебно-химическая экспертиза';
 
   @override
-  String get assessmentCatC23 => 'Третья и вторая категория';
+  String get assessmentCatC23 => 'Уровень 1';
 
   @override
-  String get assessmentCatC1 => 'Первая категория';
+  String get assessmentCatC1 => 'Уровень 2';
 
   @override
-  String get assessmentCatC0 => 'Высшая категория';
+  String get assessmentCatC0 => 'Уровень 3';
 
   @override
   String get assessmentTabOral => 'Устные вопросы';

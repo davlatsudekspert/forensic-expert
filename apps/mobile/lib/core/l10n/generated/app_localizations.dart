@@ -19512,7 +19512,7 @@ abstract class AppLocalizations {
   /// Hub intro line.
   ///
   /// In en, this message translates to:
-  /// **'Official oral-exam question lists and practice tests by specialty and qualification category.'**
+  /// **'Official oral-exam question lists and practice tests by specialty.'**
   String get assessmentIntro;
 
   /// Specialty: forensic medical examination.
@@ -19536,19 +19536,19 @@ abstract class AppLocalizations {
   /// Qualification category group: third and second.
   ///
   /// In en, this message translates to:
-  /// **'Third and second category'**
+  /// **'Level 1'**
   String get assessmentCatC23;
 
   /// Qualification category: first.
   ///
   /// In en, this message translates to:
-  /// **'First category'**
+  /// **'Level 2'**
   String get assessmentCatC1;
 
   /// Qualification category: highest.
   ///
   /// In en, this message translates to:
-  /// **'Highest category'**
+  /// **'Level 3'**
   String get assessmentCatC0;
 
   /// Tab: oral exam questions.
