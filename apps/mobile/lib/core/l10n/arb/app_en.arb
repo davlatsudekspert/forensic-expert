@@ -12683,7 +12683,7 @@
   },
   "lessonsTitle": "Lessons",
   "@lessonsTitle": {
-    "description": "Teacher panel card and screen title: lecture presentations."
+    "description": "Lessons screen title."
   },
   "lessonsTeacherBody": "Lecture presentations — view and projector only",
   "@lessonsTeacherBody": {
@@ -18724,5 +18724,49 @@
         "type": "int"
       }
     }
+  },
+  "lessonSubjectBioethics": "Bioethics",
+  "@lessonSubjectBioethics": {
+    "description": "Lessons: subject Bioethics."
+  },
+  "lessonSubjectForensic": "Forensic Medicine",
+  "@lessonSubjectForensic": {
+    "description": "Lessons: subject Forensic Medicine."
+  },
+  "lessonSubjectPharmacy": "Faculty of Pharmacy — Toxicological Chemistry",
+  "@lessonSubjectPharmacy": {
+    "description": "Lessons: Pharmacy faculty, Toxicological Chemistry."
+  },
+  "lessonSubjectDevices": "Working with instruments",
+  "@lessonSubjectDevices": {
+    "description": "Lessons: working with instruments."
+  },
+  "lessonFacultyMed": "General Medicine Faculty",
+  "@lessonFacultyMed": {
+    "description": "Faculty: General Medicine."
+  },
+  "lessonFacultyPeds": "Faculty of Pediatrics",
+  "@lessonFacultyPeds": {
+    "description": "Faculty: Pediatrics."
+  },
+  "lessonFacultyDent": "Faculty of Dentistry",
+  "@lessonFacultyDent": {
+    "description": "Faculty: Dentistry."
+  },
+  "lessonFacultyPrev": "Faculty of Preventive Medicine",
+  "@lessonFacultyPrev": {
+    "description": "Faculty: Preventive Medicine."
+  },
+  "lessonChapterTox": "Forensic Toxicology",
+  "@lessonChapterTox": {
+    "description": "Chapter: Forensic Toxicology (inside Forensic Medicine)."
+  },
+  "lessonChapterToxNote": "Internal chapter, not a separate faculty",
+  "@lessonChapterToxNote": {
+    "description": "Note: toxicology is an internal chapter."
+  },
+  "lessonSubjectFacultiesNote": "Faculties and programs",
+  "@lessonSubjectFacultiesNote": {
+    "description": "Forensic Medicine: faculties note."
   }
 }

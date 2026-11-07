@@ -18,6 +18,22 @@ k('teacherDeskLessonsBody', 'Teacher desk card: lessons body.',
   'Лекционные презентации — темы, показ на проекторе',
   'Lecture presentations — topics, show on the projector')
 
+k('lessonsTitle', 'Lessons screen title.', 'Darslar', 'Занятия', 'Lessons')
+k('lessonSubjectBioethics', 'Lessons: subject Bioethics.', 'Bioetika', 'Биоэтика', 'Bioethics')
+k('lessonSubjectForensic', 'Lessons: subject Forensic Medicine.', 'Sud tibbiyoti', 'Судебная медицина', 'Forensic Medicine')
+k('lessonSubjectPharmacy', 'Lessons: Pharmacy faculty, Toxicological Chemistry.',
+  'Farmatsiya fakulteti — Toksikologik kimyo',
+  'Фармацевтический факультет — Токсикологическая химия',
+  'Faculty of Pharmacy — Toxicological Chemistry')
+k('lessonSubjectDevices', 'Lessons: working with instruments.', 'Apparatlar bilan ishlash', 'Работа на приборах', 'Working with instruments')
+k('lessonFacultyMed', 'Faculty: General Medicine.', 'Davolash fakulteti', 'Лечебный факультет', 'General Medicine Faculty')
+k('lessonFacultyPeds', 'Faculty: Pediatrics.', 'Pediatriya fakulteti', 'Педиатрический факультет', 'Faculty of Pediatrics')
+k('lessonFacultyDent', 'Faculty: Dentistry.', 'Stomatologiya fakulteti', 'Стоматологический факультет', 'Faculty of Dentistry')
+k('lessonFacultyPrev', 'Faculty: Preventive Medicine.', 'Tibbiy profilaktika fakulteti', 'Медико-профилактический факультет', 'Faculty of Preventive Medicine')
+k('lessonChapterTox', 'Chapter: Forensic Toxicology (inside Forensic Medicine).', 'Sud-tibbiy toksikologiya', 'Судебно-медицинская токсикология', 'Forensic Toxicology')
+k('lessonChapterToxNote', 'Note: toxicology is an internal chapter.', 'Ichki bob, alohida fakultet emas', 'Внутренняя глава, не отдельный факультет', 'Internal chapter, not a separate faculty')
+k('lessonSubjectFacultiesNote', 'Forensic Medicine: faculties note.', 'Fakultetlar va o‘quv yo‘nalishlari', 'Факультеты и направления обучения', 'Faculties and programs')
+
 for i, lang in enumerate(('uz', 'ru', 'en')):
     f = D / f'app_{lang}.arb'
     b = json.loads(f.read_text(encoding='utf-8'),

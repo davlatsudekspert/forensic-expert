@@ -14123,4 +14123,38 @@ class AppLocalizationsUz extends AppLocalizations {
   String libraryUnitQuestions(int count) {
     return '$count savol';
   }
+
+  @override
+  String get lessonSubjectBioethics => 'Bioetika';
+
+  @override
+  String get lessonSubjectForensic => 'Sud tibbiyoti';
+
+  @override
+  String get lessonSubjectPharmacy =>
+      'Farmatsiya fakulteti — Toksikologik kimyo';
+
+  @override
+  String get lessonSubjectDevices => 'Apparatlar bilan ishlash';
+
+  @override
+  String get lessonFacultyMed => 'Davolash fakulteti';
+
+  @override
+  String get lessonFacultyPeds => 'Pediatriya fakulteti';
+
+  @override
+  String get lessonFacultyDent => 'Stomatologiya fakulteti';
+
+  @override
+  String get lessonFacultyPrev => 'Tibbiy profilaktika fakulteti';
+
+  @override
+  String get lessonChapterTox => 'Sud-tibbiy toksikologiya';
+
+  @override
+  String get lessonChapterToxNote => 'Ichki bob, alohida fakultet emas';
+
+  @override
+  String get lessonSubjectFacultiesNote => 'Fakultetlar va o‘quv yo‘nalishlari';
 }

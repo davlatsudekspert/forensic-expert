@@ -185,8 +185,14 @@ void main() {
     expect(find.byType(LessonsListScreen), findsOneWidget);
     expect(find.text('4-kurs · Davolash'), findsOneWidget);
     expect(find.text('5-kurs'), findsOneWidget);
+    // Tuzilma: noma’lum kurslar to‘g‘ridan-to‘g‘ri qator (soni bilan).
+    expect(find.byKey(const Key('lessons.structure')), findsOneWidget);
+    await tester.tap(find.byKey(const Key('lessons.course.4-kurs · Davolash')));
+    await tester.pumpAndSettle();
     expect(find.byKey(const Key('lessons.row.a1')), findsOneWidget);
-    expect(find.text('3 ta slayd'), findsNWidgets(2));
+    expect(find.text('3 ta slayd'), findsOneWidget);
+    await tester.tap(find.byKey(const Key('lessons.back')));
+    await tester.pumpAndSettle();
 
     // Slayd matni bo‘yicha: sarlavhada yo‘q, serverda bor.
     await tester.enterText(find.byKey(const Key('lessons.search')), 'Oqim');
@@ -205,7 +211,64 @@ void main() {
     expect(find.byKey(const Key('lessons.empty')), findsOneWidget);
     await tester.tap(find.byKey(const Key('lessons.searchClear')));
     await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const Key('lessons.course.5-kurs')));
+    await tester.pumpAndSettle();
     expect(find.byKey(const Key('lessons.row.b1')), findsOneWidget);
+  });
+
+  testWidgets('Darslar: akademik tuzilma tartibi (egasi, 2026-11-07)', (
+    tester,
+  ) async {
+    Map<String, Object?> d(String id, String course) => {
+      ..._deck(id, '$id-deck'),
+      'course': course,
+    };
+    final svc = FakeLessonsService(
+      isTeacher: true,
+      demo: false,
+      decks: {
+        // Ataylab tartibsiz beriladi: tartib ma’lumot tartibiga bog‘liq emas.
+        'k1': d('k1', 'Toksikologik kimyo'),
+        't1': d('t1', 'Tibbiy profilaktika fakulteti'),
+        'x1': d('x1', 'Sud-tibbiy toksikologiya'),
+        's1': d('s1', 'Stomatologiya fakulteti'),
+        'p1': d('p1', 'Pediatriya fakulteti'),
+        'd1': d('d1', 'Davolash ishi fakulteti'),
+        'b1': d('b1', 'Bioetika'),
+      },
+    );
+    await open(tester, lessons: svc);
+    double top(String key) => tester.getTopLeft(find.byKey(Key(key))).dy;
+    // 1-daraja: Bioetika → Sud tibbiyoti → Farmatsiya (Toksikologik kimyo).
+    expect(
+      top('lessons.subject.bioethics'),
+      lessThan(top('lessons.subject.forensic')),
+    );
+    expect(
+      top('lessons.subject.forensic'),
+      lessThan(top('lessons.subject.pharmacy')),
+    );
+    expect(find.text('Farmatsiya fakulteti — Toksikologik kimyo'), findsOne);
+    // «Sud-tibbiy toksikologiya» 1-darajada fakultet sifatida chiqmaydi.
+    expect(find.byKey(const Key('lessons.chapter')), findsNothing);
+    await tester.tap(find.byKey(const Key('lessons.subject.forensic')));
+    await tester.pumpAndSettle();
+    // 2-daraja: 4 fakultet shu tartibda, so‘ng ichki bob.
+    final keys = [
+      'lessons.faculty.Davolash ishi fakulteti',
+      'lessons.faculty.Pediatriya fakulteti',
+      'lessons.faculty.Stomatologiya fakulteti',
+      'lessons.faculty.Tibbiy profilaktika fakulteti',
+      'lessons.chapter',
+    ];
+    for (var i = 0; i + 1 < keys.length; i++) {
+      expect(top(keys[i]), lessThan(top(keys[i + 1])), reason: keys[i]);
+    }
+    expect(find.text('Ichki bob, alohida fakultet emas'), findsOneWidget);
+    // 3-daraja: bob ichidagi mavzu.
+    await tester.tap(find.byKey(const Key('lessons.chapter')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('lessons.row.x1')), findsOneWidget);
   });
 
   testWidgets('ro‘yxat: ustoz emas — faqat ochiq kurslar va izoh', (
@@ -233,6 +296,8 @@ void main() {
       },
     );
     await open(tester, lessons: svc, teacher: false);
+    await tester.tap(find.byKey(const Key('lessons.subject.devices')));
+    await tester.pumpAndSettle();
     expect(find.byKey(const Key('lessons.row.instr-01')), findsOneWidget);
     expect(find.byKey(const Key('lessons.row.a1')), findsNothing);
   });
@@ -254,6 +319,8 @@ void main() {
       // Bo‘sh «savol yo‘q» ekrani emas — mavzular ro‘yxati.
       expect(find.byKey(const Key('exam.empty')), findsNothing);
       expect(find.byType(LessonsListScreen), findsOneWidget);
+      await tester.tap(find.byKey(const Key('lessons.subject.devices')));
+      await tester.pumpAndSettle();
       await tester.tap(find.byKey(const Key('lessons.row.instr-01')));
       await tester.pumpAndSettle();
       // Dars (slaydlar) emas — test ekrani.
@@ -619,6 +686,10 @@ void main() {
         tester,
       ) async {
         await open(tester, size: size, deckId: 'hali-yoq');
+        await tester.tap(
+          find.byKey(const Key('lessons.course.4-kurs · Davolash')),
+        );
+        await tester.pumpAndSettle();
         expect(find.byKey(const Key('lessons.row.a1')), findsOneWidget);
         expect(tester.takeException(), isNull);
         await tester.tap(find.byKey(const Key('lessons.row.a1')));

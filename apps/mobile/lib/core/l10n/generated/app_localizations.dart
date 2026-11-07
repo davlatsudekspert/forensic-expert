@@ -17001,7 +17001,7 @@ abstract class AppLocalizations {
   /// **'Waiting'**
   String get classParticipantWaiting;
 
-  /// Teacher panel card and screen title: lecture presentations.
+  /// Lessons screen title.
   ///
   /// In en, this message translates to:
   /// **'Lessons'**
@@ -24518,6 +24518,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count, plural, =1{1 question} other{{count} questions}}'**
   String libraryUnitQuestions(int count);
+
+  /// Lessons: subject Bioethics.
+  ///
+  /// In en, this message translates to:
+  /// **'Bioethics'**
+  String get lessonSubjectBioethics;
+
+  /// Lessons: subject Forensic Medicine.
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic Medicine'**
+  String get lessonSubjectForensic;
+
+  /// Lessons: Pharmacy faculty, Toxicological Chemistry.
+  ///
+  /// In en, this message translates to:
+  /// **'Faculty of Pharmacy — Toxicological Chemistry'**
+  String get lessonSubjectPharmacy;
+
+  /// Lessons: working with instruments.
+  ///
+  /// In en, this message translates to:
+  /// **'Working with instruments'**
+  String get lessonSubjectDevices;
+
+  /// Faculty: General Medicine.
+  ///
+  /// In en, this message translates to:
+  /// **'General Medicine Faculty'**
+  String get lessonFacultyMed;
+
+  /// Faculty: Pediatrics.
+  ///
+  /// In en, this message translates to:
+  /// **'Faculty of Pediatrics'**
+  String get lessonFacultyPeds;
+
+  /// Faculty: Dentistry.
+  ///
+  /// In en, this message translates to:
+  /// **'Faculty of Dentistry'**
+  String get lessonFacultyDent;
+
+  /// Faculty: Preventive Medicine.
+  ///
+  /// In en, this message translates to:
+  /// **'Faculty of Preventive Medicine'**
+  String get lessonFacultyPrev;
+
+  /// Chapter: Forensic Toxicology (inside Forensic Medicine).
+  ///
+  /// In en, this message translates to:
+  /// **'Forensic Toxicology'**
+  String get lessonChapterTox;
+
+  /// Note: toxicology is an internal chapter.
+  ///
+  /// In en, this message translates to:
+  /// **'Internal chapter, not a separate faculty'**
+  String get lessonChapterToxNote;
+
+  /// Forensic Medicine: faculties note.
+  ///
+  /// In en, this message translates to:
+  /// **'Faculties and programs'**
+  String get lessonSubjectFacultiesNote;
 }
 
 class _AppLocalizationsDelegate

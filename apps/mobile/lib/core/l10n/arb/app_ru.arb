@@ -2816,7 +2816,7 @@
   "classLandscapeNo": "Нет",
   "classParticipantAnswered": "Ответил",
   "classParticipantWaiting": "Ожидание",
-  "lessonsTitle": "Уроки",
+  "lessonsTitle": "Занятия",
   "lessonsTeacherBody": "Лекционные презентации — только просмотр и проектор",
   "lessonsSearchHint": "Поиск по урокам",
   "lessonsSearchClear": "Очистить поиск",
@@ -4092,5 +4092,16 @@
   "libraryUnitStudies": "{count, plural, one{{count} исследование} few{{count} исследования} many{{count} исследований} other{{count} исследования}}",
   "libraryUnitSources": "{count, plural, one{{count} источник} few{{count} источника} many{{count} источников} other{{count} источника}}",
   "libraryUnitConflicts": "{count, plural, one{{count} противоречие} few{{count} противоречия} many{{count} противоречий} other{{count} противоречия}}",
-  "libraryUnitQuestions": "{count, plural, one{{count} вопрос} few{{count} вопроса} many{{count} вопросов} other{{count} вопроса}}"
+  "libraryUnitQuestions": "{count, plural, one{{count} вопрос} few{{count} вопроса} many{{count} вопросов} other{{count} вопроса}}",
+  "lessonSubjectBioethics": "Биоэтика",
+  "lessonSubjectForensic": "Судебная медицина",
+  "lessonSubjectPharmacy": "Фармацевтический факультет — Токсикологическая химия",
+  "lessonSubjectDevices": "Работа на приборах",
+  "lessonFacultyMed": "Лечебный факультет",
+  "lessonFacultyPeds": "Педиатрический факультет",
+  "lessonFacultyDent": "Стоматологический факультет",
+  "lessonFacultyPrev": "Медико-профилактический факультет",
+  "lessonChapterTox": "Судебно-медицинская токсикология",
+  "lessonChapterToxNote": "Внутренняя глава, не отдельный факультет",
+  "lessonSubjectFacultiesNote": "Факультеты и направления обучения"
 }

@@ -12642,4 +12642,37 @@ class AppLocalizationsUzNew extends AppLocalizationsUz {
   String libraryUnitQuestions(int count) =>
       toUzNewAlphabet(super.libraryUnitQuestions(count));
 
+  @override
+  String get lessonSubjectBioethics => toUzNewAlphabet(super.lessonSubjectBioethics);
+
+  @override
+  String get lessonSubjectForensic => toUzNewAlphabet(super.lessonSubjectForensic);
+
+  @override
+  String get lessonSubjectPharmacy => toUzNewAlphabet(super.lessonSubjectPharmacy);
+
+  @override
+  String get lessonSubjectDevices => toUzNewAlphabet(super.lessonSubjectDevices);
+
+  @override
+  String get lessonFacultyMed => toUzNewAlphabet(super.lessonFacultyMed);
+
+  @override
+  String get lessonFacultyPeds => toUzNewAlphabet(super.lessonFacultyPeds);
+
+  @override
+  String get lessonFacultyDent => toUzNewAlphabet(super.lessonFacultyDent);
+
+  @override
+  String get lessonFacultyPrev => toUzNewAlphabet(super.lessonFacultyPrev);
+
+  @override
+  String get lessonChapterTox => toUzNewAlphabet(super.lessonChapterTox);
+
+  @override
+  String get lessonChapterToxNote => toUzNewAlphabet(super.lessonChapterToxNote);
+
+  @override
+  String get lessonSubjectFacultiesNote => toUzNewAlphabet(super.lessonSubjectFacultiesNote);
+
 }

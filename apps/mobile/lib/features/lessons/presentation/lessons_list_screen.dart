@@ -13,6 +13,7 @@ import '../../../core/l10n/generated/app_localizations.dart';
 import '../../../core/layout/responsive.dart';
 import '../../../core/widgets/fe_components.dart';
 import '../../../domain/lessons/lesson_models.dart';
+import '../../../domain/lessons/lesson_taxonomy.dart';
 import '../../../domain/plan/plan_models.dart';
 import '../../class_quiz/presentation/class_quiz_widgets.dart'
     show ClassDemoBanner;
@@ -40,7 +41,8 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
   String _typed = '';
   String _server = '';
 
-  /// Tanlangan kurs/fakultet (`null` — hammasi).
+  /// Tanlangan fan (2-daraja: Sud tibbiyoti ichida) va kurs/fakultet.
+  LessonSubjectId? _subject;
   String? _course;
 
   /// Qidiruv kechikishi (testlarda ham shu qiymat).
@@ -95,12 +97,14 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
       }
     }
     final lang = Localizations.localeOf(context).languageCode;
-    final courses = [
+    final counts = {
       for (final g in LessonGrouping.group(all ?? const <LessonSummary>[]))
-        (g.course, g.items.length),
-    ];
-    final course = courses.any((x) => x.$1 == _course) ? _course : null;
-    if (items != null && course != null) {
+        g.course: g.items.length,
+    };
+    final course = counts.containsKey(_course) ? _course : null;
+    // Qidiruv — butun bazadan (tuzilmadan qat’i nazar).
+    final browse = _typed.isEmpty && course == null;
+    if (items != null && course != null && _typed.isEmpty) {
       items = [
         for (final s in items)
           if (s.course == course) s,
@@ -182,35 +186,140 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
               ),
             ),
           ),
-          if (courses.length > 1)
-            SizedBox(
-              height: 48,
-              child: ListView(
-                key: const Key('lessons.courses'),
-                scrollDirection: Axis.horizontal,
-                keyboardDismissBehavior:
-                    ScrollViewKeyboardDismissBehavior.onDrag,
-                padding: const EdgeInsets.symmetric(horizontal: FeSpace.md),
-                children: [
-                  _CourseChip(
-                    key: const Key('lessons.course.all'),
-                    label: l.lessonsAllCourses,
-                    selected: course == null,
-                    onTap: () => setState(() => _course = null),
-                  ),
-                  for (final (name, n) in courses)
-                    _CourseChip(
-                      key: Key('lessons.course.$name'),
-                      label: [name, '$n'].join(' · '),
-                      selected: course == name,
-                      onTap: () => setState(() => _course = name),
-                    ),
-                ],
-              ),
+          if (_typed.isEmpty && (course != null || _subject != null))
+            _BackRow(
+              label: _backLabel(l, course),
+              onTap: () => setState(() {
+                if (course != null) {
+                  _course = null;
+                  final sub = LessonTaxonomy.subjectOf(course);
+                  if (sub == null || sub.isLeaf) _subject = null;
+                } else {
+                  _subject = null;
+                }
+              }),
             ),
-          Expanded(child: _body(context, base, items)),
+          Expanded(child: _body(context, base, items, browse, counts)),
         ],
       ),
+    );
+  }
+
+  String _backLabel(AppLocalizations l, String? course) {
+    if (course != null && _subject != null) {
+      return subjectTitle(l, _subject!);
+    }
+    return l.lessonsTitle;
+  }
+
+  /// 1–2-daraja: fanlar → (Sud tibbiyoti) fakultetlar va ichki bob.
+  Widget _structure(BuildContext context, Map<String, int> counts) {
+    final l = AppLocalizations.of(context);
+    final t = Theme.of(context).textTheme;
+    final c = FeTheme.of(context);
+    final rows = <Widget>[];
+    if (_subject == null) {
+      for (final s in LessonTaxonomy.subjects) {
+        final n = s.allCourses.fold<int>(0, (a, x) => a + (counts[x] ?? 0));
+        if (n == 0) continue;
+        rows.add(
+          _StructureRow(
+            key: Key('lessons.subject.${s.id.name}'),
+            title: subjectTitle(l, s.id),
+            subtitle: s.id == LessonSubjectId.forensic
+                ? l.lessonSubjectFacultiesNote
+                : null,
+            count: n,
+            onTap: () => setState(() {
+              if (s.isLeaf) {
+                _subject = null;
+                _course = s.courses.first;
+              } else {
+                _subject = s.id;
+              }
+            }),
+          ),
+        );
+      }
+      final known = {for (final s in LessonTaxonomy.subjects) ...s.allCourses};
+      for (final e in counts.entries) {
+        if (known.contains(e.key)) continue;
+        rows.add(
+          _StructureRow(
+            key: Key('lessons.course.${e.key}'),
+            title: courseLabel(l, e.key),
+            count: e.value,
+            onTap: () => setState(() => _course = e.key),
+          ),
+        );
+      }
+    } else {
+      final s = LessonTaxonomy.subjects.firstWhere((x) => x.id == _subject);
+      for (final course in s.courses) {
+        final n = counts[course] ?? 0;
+        if (n == 0) continue;
+        rows.add(
+          _StructureRow(
+            key: Key('lessons.faculty.$course'),
+            title: courseLabel(l, course),
+            count: n,
+            onTap: () => setState(() => _course = course),
+          ),
+        );
+      }
+      final ch = s.chapter;
+      if (ch != null && (counts[ch] ?? 0) > 0) {
+        rows.add(const SizedBox(height: FeSpace.xs));
+        rows.add(
+          _StructureRow(
+            key: const Key('lessons.chapter'),
+            icon: Icons.menu_book_outlined,
+            title: courseLabel(l, ch),
+            subtitle: l.lessonChapterToxNote,
+            count: counts[ch]!,
+            onTap: () => setState(() => _course = ch),
+          ),
+        );
+      }
+    }
+    if (rows.isEmpty) {
+      return ListView(
+        padding: const EdgeInsets.symmetric(vertical: FeSpace.xl),
+        children: [
+          FeEmptyState(
+            key: const Key('lessons.empty'),
+            icon: Icons.slideshow_rounded,
+            body: l.lessonsEmpty,
+          ),
+        ],
+      );
+    }
+    return ListView(
+      key: const Key('lessons.structure'),
+      padding: EdgeInsets.fromLTRB(
+        0,
+        FeSpace.xs,
+        0,
+        FeSpace.lg + MediaQuery.paddingOf(context).bottom,
+      ),
+      children: [
+        FeContentFrame(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              if (_subject != null)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: FeSpace.sm),
+                  child: Text(
+                    subjectTitle(l, _subject!),
+                    style: t.titleMedium?.copyWith(color: c.textPrimary),
+                  ),
+                ),
+              ...rows,
+            ],
+          ),
+        ),
+      ],
     );
   }
 
@@ -218,6 +327,8 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
     BuildContext context,
     AsyncValue<dynamic> base,
     List<LessonSummary>? items,
+    bool browse,
+    Map<String, int> counts,
   ) {
     final l = AppLocalizations.of(context);
     final failure = ref.watch(lessonListProvider('')).value?.failure;
@@ -242,6 +353,7 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
         children: [FeListSkeleton(rows: 4, semanticLabel: l.lessonsTitle)],
       );
     }
+    if (browse) return _structure(context, counts);
     if (items.isEmpty) {
       // Aylantiriladi: kichik ekran + katta shriftda yozuv sig‘ishi uchun.
       return ListView(
@@ -277,7 +389,9 @@ class _LessonsListScreenState extends ConsumerState<LessonsListScreen> {
                   child: ProFeatureLock(feature: f),
                 ),
               for (final g in groups) ...[
-                _CourseHeader(g.course),
+                _CourseHeader(
+                  courseLabel(AppLocalizations.of(context), g.course),
+                ),
                 for (final (i, s) in g.items.indexed)
                   _LessonRow(
                     summary: s,
@@ -313,30 +427,114 @@ class _CourseHeader extends StatelessWidget {
   }
 }
 
-class _CourseChip extends StatelessWidget {
-  const _CourseChip({
-    super.key,
-    required this.label,
-    required this.selected,
-    required this.onTap,
-  });
+/// «‹ Orqaga» qatori (2–3-darajadan yuqoriga).
+class _BackRow extends StatelessWidget {
+  const _BackRow({required this.label, required this.onTap});
 
   final String label;
-  final bool selected;
   final VoidCallback onTap;
 
   @override
-  Widget build(BuildContext context) => Padding(
-    padding: const EdgeInsetsDirectional.only(end: FeSpace.xs),
-    child: Center(
-      child: ChoiceChip(
+  Widget build(BuildContext context) => Align(
+    alignment: AlignmentDirectional.centerStart,
+    child: Padding(
+      padding: const EdgeInsets.symmetric(horizontal: FeSpace.xs),
+      child: TextButton.icon(
+        key: const Key('lessons.back'),
+        onPressed: onTap,
+        icon: const Icon(Icons.chevron_left_rounded),
         label: Text(label),
-        selected: selected,
-        onSelected: (_) => onTap(),
       ),
     ),
   );
 }
+
+/// Fan / fakultet / bob qatori: nom, (izoh), mavzular soni.
+class _StructureRow extends StatelessWidget {
+  const _StructureRow({
+    super.key,
+    required this.title,
+    required this.count,
+    required this.onTap,
+    this.subtitle,
+    this.icon,
+  });
+
+  final String title;
+  final String? subtitle;
+  final int count;
+  final IconData? icon;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final t = Theme.of(context).textTheme;
+    final c = FeTheme.of(context);
+    return Padding(
+      padding: const EdgeInsets.only(bottom: FeSpace.xs),
+      child: FeCard(
+        onTap: onTap,
+        child: Row(
+          children: [
+            if (icon != null) ...[
+              Icon(icon, color: c.accent),
+              const SizedBox(width: FeSpace.sm),
+            ],
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(title, style: t.titleSmall),
+                  if (subtitle != null)
+                    Text(
+                      subtitle!,
+                      style: t.bodySmall?.copyWith(color: c.textSecondary),
+                    ),
+                ],
+              ),
+            ),
+            const SizedBox(width: FeSpace.sm),
+            DecoratedBox(
+              decoration: BoxDecoration(
+                color: c.surfaceSunken,
+                borderRadius: BorderRadius.circular(FeRadius.pill),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: FeSpace.sm,
+                  vertical: 2,
+                ),
+                child: Text('$count', style: t.labelMedium),
+              ),
+            ),
+            Icon(Icons.chevron_right_rounded, color: c.textSecondary),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Fan nomi (tilga qarab).
+String subjectTitle(AppLocalizations l, LessonSubjectId id) => switch (id) {
+  LessonSubjectId.bioethics => l.lessonSubjectBioethics,
+  LessonSubjectId.forensic => l.lessonSubjectForensic,
+  LessonSubjectId.pharmacy => l.lessonSubjectPharmacy,
+  LessonSubjectId.devices => l.lessonSubjectDevices,
+};
+
+/// Kurs (fakultet/bob) nomi: serverdagi barqaror nom → joriy til.
+String courseLabel(AppLocalizations l, String course) => switch (course) {
+  LessonTaxonomy.bioethics => l.lessonSubjectBioethics,
+  LessonTaxonomy.medicine => l.lessonFacultyMed,
+  LessonTaxonomy.pediatrics => l.lessonFacultyPeds,
+  LessonTaxonomy.dentistry => l.lessonFacultyDent,
+  LessonTaxonomy.prevention => l.lessonFacultyPrev,
+  LessonTaxonomy.forensicToxChapter => l.lessonChapterTox,
+  LessonTaxonomy.toxChem => l.lessonSubjectPharmacy,
+  LessonTaxonomy.devices => l.lessonSubjectDevices,
+  _ => course,
+};
 
 class _LessonRow extends StatelessWidget {
   const _LessonRow({

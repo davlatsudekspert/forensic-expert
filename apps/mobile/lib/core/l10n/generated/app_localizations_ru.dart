@@ -9821,7 +9821,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get classParticipantWaiting => 'Ожидание';
 
   @override
-  String get lessonsTitle => 'Уроки';
+  String get lessonsTitle => 'Занятия';
 
   @override
   String get lessonsTeacherBody =>
@@ -14337,4 +14337,38 @@ class AppLocalizationsRu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get lessonSubjectBioethics => 'Биоэтика';
+
+  @override
+  String get lessonSubjectForensic => 'Судебная медицина';
+
+  @override
+  String get lessonSubjectPharmacy =>
+      'Фармацевтический факультет — Токсикологическая химия';
+
+  @override
+  String get lessonSubjectDevices => 'Работа на приборах';
+
+  @override
+  String get lessonFacultyMed => 'Лечебный факультет';
+
+  @override
+  String get lessonFacultyPeds => 'Педиатрический факультет';
+
+  @override
+  String get lessonFacultyDent => 'Стоматологический факультет';
+
+  @override
+  String get lessonFacultyPrev => 'Медико-профилактический факультет';
+
+  @override
+  String get lessonChapterTox => 'Судебно-медицинская токсикология';
+
+  @override
+  String get lessonChapterToxNote => 'Внутренняя глава, не отдельный факультет';
+
+  @override
+  String get lessonSubjectFacultiesNote => 'Факультеты и направления обучения';
 }

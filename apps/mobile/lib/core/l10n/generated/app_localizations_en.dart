@@ -14261,4 +14261,38 @@ class AppLocalizationsEn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get lessonSubjectBioethics => 'Bioethics';
+
+  @override
+  String get lessonSubjectForensic => 'Forensic Medicine';
+
+  @override
+  String get lessonSubjectPharmacy =>
+      'Faculty of Pharmacy — Toxicological Chemistry';
+
+  @override
+  String get lessonSubjectDevices => 'Working with instruments';
+
+  @override
+  String get lessonFacultyMed => 'General Medicine Faculty';
+
+  @override
+  String get lessonFacultyPeds => 'Faculty of Pediatrics';
+
+  @override
+  String get lessonFacultyDent => 'Faculty of Dentistry';
+
+  @override
+  String get lessonFacultyPrev => 'Faculty of Preventive Medicine';
+
+  @override
+  String get lessonChapterTox => 'Forensic Toxicology';
+
+  @override
+  String get lessonChapterToxNote => 'Internal chapter, not a separate faculty';
+
+  @override
+  String get lessonSubjectFacultiesNote => 'Faculties and programs';
 }
