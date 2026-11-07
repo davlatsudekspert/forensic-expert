@@ -54,6 +54,40 @@ class SourcesAuthorsScreen extends StatelessWidget {
       ],
     ),
     (
+      'Sud-kimyo uslubiy qo‘llanmalari (2023–2024)',
+      [
+        (
+          'Primuxamedova X.I.',
+          'Respublika sud-tibbiy ekspertiza ilmiy-amaliy markazi, sud-kimyo '
+              'bo‘limi mudiri',
+        ),
+        (
+          'Nurmatova M.I.',
+          'Toshkent farmatsevtika instituti, Toksikologik kimyo kafedrasi '
+              'v.v.b. dotsent, f.f.b.f.d. (PhD)',
+        ),
+        (
+          'Qo‘llanmalar',
+          '«Toksikologik kimyo tahlilida zaharli moddalarni guruhlar bo‘yicha '
+              'bioob’ektlardan ajratish usullari» (2024); «Ketaminni biologik '
+              'suyuqliklardan ajratib olish va tahlil qilish» (2023); '
+              '«Sud-kimyo amaliyotida psixotrop moddalarni YuSSX usulida '
+              'aniqlash» (2023)',
+        ),
+        ('Eslatma', 'Mualliflarning roziligi bilan foydalanilgan.'),
+      ],
+    ),
+    (
+      'Jahon adabiyotlari',
+      [
+        (
+          'Manbalar',
+          'UNODC, Rapid Testing Methods of Drugs of Abuse (ST/NAR/13/Rev.1); '
+              'SWGDRUG Recommendations, 8.2-versiya (2024)',
+        ),
+      ],
+    ),
+    (
       'Ilova muallifi',
       [('Muallif', 'Yo‘ldashali Abduraxmonov Toshtemirovich')],
     ),
