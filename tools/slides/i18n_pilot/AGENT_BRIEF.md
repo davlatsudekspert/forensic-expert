@@ -49,6 +49,14 @@ Har til uchun bir xil flag yozish shart emas (asosan ruscha uchun yozing, ingliz
 ## Hisobot (agentning yakuniy javobi, juda qisqa)
 Har deck uchun bir qator: `deck_id | N bo'lak | ru ok/en ok | flaglar soni | muhim flaglar (1-3 ta, qisqa)`. Boshqa matn yozmang.
 
+## KAM CHAQIRUV (egasi har bir SQL chaqiruvni qo'lda tasdiqlaydi — iloji boricha kam!)
+- Har deck uchun faqat 2 ta SQL chaqiruv:
+  1) O'qish: `select i, kind, txt from public.deck_strings(...) order by i;` (mavjud qatorlarni alohida tekshirmang — ustiga yozasiz).
+  2) Yozish + tekshirish BITTA chaqiruvda (bir query matnida `;` bilan): ru INSERT … ON CONFLICT DO UPDATE; en INSERT … ON CONFLICT DO UPDATE;
+     `select 'ru' l,* from public.deck_translation_check('<DECK>','ru') union all select 'en',* from public.deck_translation_check('<DECK>','en');`
+- Tarjimani avval to'liq tayyorlang, keyin bitta yozish chaqiruvi. Qismlarga bo'lmang.
+- Faqat check `ok=false` bo'lsa — 1 ta tuzatish chaqiruvi.
+
 ## XAVFSIZLIK (muhim, oldingi to'lqinda xato bo'lgan)
 - Uzun massivni bir necha chaqiruvda saqlasangiz: birinchi chaqiruv INSERT, qolganlari `update public.lesson_deck_translations set strings = strings || '<QISM>'::jsonb where deck_id = '<DECK>' and lang = '<LANG>';`
   — `WHERE deck_id = ... AND lang = ...` MAJBURIY. WHEREsiz UPDATE yozmang (boshqa decklar buziladi).
